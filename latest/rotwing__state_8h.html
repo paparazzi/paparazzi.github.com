@@ -646,7 +646,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00190">190</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotwing__state_8c_source.html#l00138">bool_disable_hover_motors</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00058">GUIDANCE_H_MODE_NAV</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00104">HorizontalGuidance::mode</a>, <a class="el" href="rotwing__state_8c_source.html#l00240">rotwing_check_set_current_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00466">rotwing_state_set_fw_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00433">rotwing_state_set_hover_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00543">rotwing_state_skewer()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00384">rotwing_switch_state()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization_8h_source.html#l00104">Stabilization::att_submode</a>, <a class="el" href="rotwing__state_8c_source.html#l00138">bool_disable_hover_motors</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00058">GUIDANCE_H_MODE_NAV</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00056">GUIDANCE_H_MODE_NONE</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00104">HorizontalGuidance::mode</a>, <a class="el" href="stabilization_8h_source.html#l00103">Stabilization::mode</a>, <a class="el" href="rotwing__state_8c_source.html#l00242">rotwing_check_set_current_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00468">rotwing_state_set_fw_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00435">rotwing_state_set_hover_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00545">rotwing_state_skewer()</a>, <a class="el" href="rotwing__state_8c_source.html#l00386">rotwing_switch_state()</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8h_source.html#l00047">STABILIZATION_ATT_SUBMODE_FORWARD</a>, and <a class="el" href="stabilization_8h_source.html#l00041">STABILIZATION_MODE_ATTITUDE</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -687,11 +687,11 @@ wing_angle_deg_sp</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00217">217</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00219">219</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotwing__state_8h_source.html#l00048">RotwingState::desired_state</a>, <a class="el" href="rotwing__state_8c_source.html#l00125">rotwing_state</a>, <a class="el" href="rotwing__state_8h_source.html#l00037">ROTWING_STATE_FW_HOV_MOT_OFF</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00225">rotwing_request_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00227">rotwing_request_configuration()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -722,9 +722,9 @@ wing_angle_deg_sp</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00225">225</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00227">227</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotwing__state_8c_source.html#l00217">request_rotwing_state()</a>, <a class="el" href="rotwing__state_8h_source.html#l00044">ROTWING_CONFIGURATION_EFFICIENT</a>, <a class="el" href="rotwing__state_8h_source.html#l00042">ROTWING_CONFIGURATION_HOVER</a>, <a class="el" href="rotwing__state_8h_source.html#l00043">ROTWING_CONFIGURATION_HYBRID</a>, <a class="el" href="rotwing__state_8h_source.html#l00037">ROTWING_STATE_FW_HOV_MOT_OFF</a>, <a class="el" href="rotwing__state_8h_source.html#l00033">ROTWING_STATE_HOVER</a>, and <a class="el" href="rotwing__state_8h_source.html#l00034">ROTWING_STATE_SKEWING</a>.</p>
+<p class="reference">References <a class="el" href="rotwing__state_8c_source.html#l00219">request_rotwing_state()</a>, <a class="el" href="rotwing__state_8h_source.html#l00044">ROTWING_CONFIGURATION_EFFICIENT</a>, <a class="el" href="rotwing__state_8h_source.html#l00042">ROTWING_CONFIGURATION_HOVER</a>, <a class="el" href="rotwing__state_8h_source.html#l00043">ROTWING_CONFIGURATION_HYBRID</a>, <a class="el" href="rotwing__state_8h_source.html#l00037">ROTWING_STATE_FW_HOV_MOT_OFF</a>, <a class="el" href="rotwing__state_8h_source.html#l00033">ROTWING_STATE_HOVER</a>, and <a class="el" href="rotwing__state_8h_source.html#l00034">ROTWING_STATE_SKEWING</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -755,7 +755,7 @@ wing_angle_deg_sp</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00563">563</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00565">565</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
 <p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00483">ACT_FEEDBACK_UAVCAN_ID</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rotwing__state_8c_source.html#l00127">rotwing_state_skewing</a>, <a class="el" href="rotwing__state_8h_source.html#l00074">RotWingStateSkewing::servo_pprz_cmd</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, <a class="el" href="rotwing__state_8h_source.html#l00073">RotWingStateSkewing::wing_angle_deg</a>, and <a class="el" href="rotwing__state_8h_source.html#l00072">RotWingStateSkewing::wing_angle_deg_sp</a>.</p>
 
@@ -784,7 +784,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00138">138</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00639">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00190">periodic_rotwing_state()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00508">rotwing_state_set_state_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00641">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00190">periodic_rotwing_state()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00510">rotwing_state_set_state_settings()</a>.</p>
 
 </div>
 </div>
@@ -810,7 +810,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00137">137</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00639">guidance_indi_hybrid_set_wls_settings()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00508">rotwing_state_set_state_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00641">guidance_indi_hybrid_set_wls_settings()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00510">rotwing_state_set_state_settings()</a>.</p>
 
 </div>
 </div>
@@ -836,7 +836,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00123">123</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00170">init_rotwing_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00217">request_rotwing_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00240">rotwing_check_set_current_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00447">rotwing_state_set_skewing_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00543">rotwing_state_skewer()</a>, <a class="el" href="rotwing__state_8c_source.html#l00384">rotwing_switch_state()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00157">send_rotating_wing_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00170">init_rotwing_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00219">request_rotwing_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00242">rotwing_check_set_current_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00449">rotwing_state_set_skewing_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00545">rotwing_state_skewer()</a>, <a class="el" href="rotwing__state_8c_source.html#l00386">rotwing_switch_state()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00157">send_rotating_wing_state()</a>.</p>
 
 </div>
 </div>
@@ -862,7 +862,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00135">135</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00433">rotwing_state_set_hover_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00435">rotwing_state_set_hover_settings()</a>.</p>
 
 </div>
 </div>
@@ -888,7 +888,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00123">123</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00480">rotwing_state_set_fw_hov_mot_idle_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00494">rotwing_state_set_fw_hov_mot_off_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00466">rotwing_state_set_fw_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00433">rotwing_state_set_hover_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00447">rotwing_state_set_skewing_settings()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00508">rotwing_state_set_state_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00482">rotwing_state_set_fw_hov_mot_idle_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00496">rotwing_state_set_fw_hov_mot_off_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00468">rotwing_state_set_fw_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00435">rotwing_state_set_hover_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00449">rotwing_state_set_skewing_settings()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00510">rotwing_state_set_state_settings()</a>.</p>
 
 </div>
 </div>
@@ -914,7 +914,7 @@ wing_angle_deg_sp</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00123">123</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00639">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00170">init_rotwing_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00240">rotwing_check_set_current_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00606">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00508">rotwing_state_set_state_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00563">rotwing_state_skew_actuator_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00543">rotwing_state_skewer()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00157">send_rotating_wing_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00641">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00170">init_rotwing_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00242">rotwing_check_set_current_state()</a>, <a class="el" href="rotwing__state_8c_source.html#l00608">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00510">rotwing_state_set_state_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00565">rotwing_state_skew_actuator_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00545">rotwing_state_skewer()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00157">send_rotating_wing_state()</a>.</p>
 
 </div>
 </div>
@@ -924,7 +924,7 @@ wing_angle_deg_sp</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_df6c04e8f1089b06484d278c14f01724.html">rot_wing_drone</a></li><li class="navelem"><a class="el" href="rotwing__state_8h.html">rotwing_state.h</a></li>
-    <li class="footer">Generated on Wed May 22 2024 08:48:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 22 2024 13:05:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
