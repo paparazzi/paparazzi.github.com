@@ -1,5 +1,5 @@
 <map id="stateGetNedToBodyQuat_f" name="stateGetNedToBodyQuat_f">
-<area shape="rect" id="node1" title="Get vehicle body attitude quaternion (float)." alt="" coords="999,574,1193,601"/>
+<area shape="rect" id="node1" title="Get vehicle body attitude quaternion (float)." alt="" coords="999,611,1193,638"/>
 <area shape="rect" id="node2" href="$guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="762,5,921,47"/>
 <area shape="rect" id="node3" href="$eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="760,71,923,112"/>
 <area shape="rect" id="node4" href="$eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="746,137,937,163"/>
@@ -10,30 +10,32 @@
 <area shape="rect" id="node11" href="$mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="756,407,927,448"/>
 <area shape="rect" id="node14" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="773,473,910,499"/>
 <area shape="rect" id="node17" href="$rot__wing__automation_8c.html#aa7c1befad26f07177137801ac975b832" title=" " alt="" coords="755,523,928,550"/>
-<area shape="rect" id="node18" href="$eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="732,574,951,601"/>
-<area shape="rect" id="node20" href="$stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="773,625,910,651"/>
-<area shape="rect" id="node22" href="$rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="805,675,878,702"/>
-<area shape="rect" id="node24" href="$ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="754,726,929,753"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="761,777,921,819"/>
-<area shape="rect" id="node27" href="$stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="510,865,670,907"/>
-<area shape="rect" id="node31" href="$stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="761,895,921,936"/>
-<area shape="rect" id="node32" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="747,961,935,987"/>
-<area shape="rect" id="node33" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="775,1012,908,1053"/>
-<area shape="rect" id="node35" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="796,1078,887,1105"/>
-<area shape="rect" id="node37" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="750,1129,933,1155"/>
+<area shape="rect" id="node18" href="$rotwing__state_8c.html#ac650c6d110da08a54283fc49a8bf2503" title=" " alt="" coords="769,575,913,616"/>
+<area shape="rect" id="node20" href="$eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="732,641,951,667"/>
+<area shape="rect" id="node22" href="$stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="773,691,910,718"/>
+<area shape="rect" id="node24" href="$rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="805,742,878,769"/>
+<area shape="rect" id="node26" href="$ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="754,793,929,819"/>
+<area shape="rect" id="node28" href="$stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="761,844,921,885"/>
+<area shape="rect" id="node29" href="$stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="510,932,670,973"/>
+<area shape="rect" id="node33" href="$stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="761,961,921,1003"/>
+<area shape="rect" id="node34" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="747,1027,935,1054"/>
+<area shape="rect" id="node35" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="775,1079,908,1120"/>
+<area shape="rect" id="node37" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="796,1145,887,1171"/>
+<area shape="rect" id="node39" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="750,1195,933,1222"/>
 <area shape="rect" id="node5" href="$eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="504,129,676,171"/>
-<area shape="rect" id="node10" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="517,313,663,339"/>
-<area shape="rect" id="node12" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="539,363,641,390"/>
-<area shape="rect" id="node13" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="523,414,657,441"/>
-<area shape="rect" id="node15" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="519,465,661,491"/>
-<area shape="rect" id="node16" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="496,515,684,542"/>
-<area shape="rect" id="node19" href="$eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="518,567,662,608"/>
-<area shape="rect" id="node21" href="$stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="509,633,671,659"/>
-<area shape="rect" id="node23" href="$rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="503,683,677,710"/>
-<area shape="rect" id="node25" href="$ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="515,734,665,761"/>
-<area shape="rect" id="node28" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#aaff770beb67d0854a99599724b3042a5" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="288,865,448,907"/>
-<area shape="rect" id="node29" href="$stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="184,873,240,899"/>
-<area shape="rect" id="node30" href="$stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="5,873,136,899"/>
-<area shape="rect" id="node34" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="496,1019,684,1046"/>
-<area shape="rect" id="node36" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="543,1078,637,1105"/>
+<area shape="rect" id="node10" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="517,321,663,347"/>
+<area shape="rect" id="node12" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="539,371,641,398"/>
+<area shape="rect" id="node13" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="523,422,657,449"/>
+<area shape="rect" id="node15" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="519,473,661,499"/>
+<area shape="rect" id="node16" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="496,523,684,550"/>
+<area shape="rect" id="node19" href="$rotwing__state_8c.html#aeb77669ee7369ed49ea36c28ce578d72" title=" " alt="" coords="505,574,675,601"/>
+<area shape="rect" id="node21" href="$eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="518,625,662,667"/>
+<area shape="rect" id="node23" href="$stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="509,691,671,718"/>
+<area shape="rect" id="node25" href="$rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="503,742,677,769"/>
+<area shape="rect" id="node27" href="$ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="515,793,665,819"/>
+<area shape="rect" id="node30" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#aaff770beb67d0854a99599724b3042a5" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="288,932,448,973"/>
+<area shape="rect" id="node31" href="$stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="184,939,240,966"/>
+<area shape="rect" id="node32" href="$stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="5,939,136,966"/>
+<area shape="rect" id="node36" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="496,1086,684,1113"/>
+<area shape="rect" id="node38" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="543,1145,637,1171"/>
 </map>

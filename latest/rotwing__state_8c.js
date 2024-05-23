@@ -29,6 +29,7 @@ var rotwing__state_8c =
     [ "rotwing_request_configuration", "rotwing__state_8c.html#ad19cf26f397e69733d93cbbb6e602af2", null ],
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096", null ],
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a33785e979e73223db3953cb3b8a711dd", null ],
+    [ "rotwing_state_free_processor", "rotwing__state_8c.html#ac650c6d110da08a54283fc49a8bf2503", null ],
     [ "rotwing_state_set_fw_hov_mot_idle_settings", "rotwing__state_8c.html#ae95c74d2cb0aa9671bb8b91c2be75a45", null ],
     [ "rotwing_state_set_fw_hov_mot_off_settings", "rotwing__state_8c.html#a7f1c3561f0de6a0fe9de94d1067edea8", null ],
     [ "rotwing_state_set_fw_settings", "rotwing__state_8c.html#a0f88954289df284f3e8af5ee6d8f2b69", null ],

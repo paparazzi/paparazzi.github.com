@@ -2,7 +2,8 @@ var rotwing__state_8h =
 [
     [ "RotwingState", "rotwing__state_8h.html#structRotwingState", [
       [ "current_state", "rotwing__state_8h.html#a04635a66ed4ee062f51525e9e4b8f65c", null ],
-      [ "desired_state", "rotwing__state_8h.html#a45940f39030709543b6f55d785deadd5", null ]
+      [ "desired_state", "rotwing__state_8h.html#a45940f39030709543b6f55d785deadd5", null ],
+      [ "requested_config", "rotwing__state_8h.html#a33f2f7adca8187fd6afb84f502a0f438", null ]
     ] ],
     [ "RotWingStateSettings", "rotwing__state_8h.html#structRotWingStateSettings", [
       [ "force_forward", "rotwing__state_8h.html#a17d09cc7a4a8d31780dd44453ac766ee", null ],
@@ -23,6 +24,7 @@ var rotwing__state_8h =
       [ "wing_angle_deg_sp", "rotwing__state_8h.html#a71690d826075d1d63b7794625b621d2a", null ]
     ] ],
     [ "ROTWING_CONFIGURATION_EFFICIENT", "rotwing__state_8h.html#afa13f4b2f313bf35a88b4526b25eff00", null ],
+    [ "ROTWING_CONFIGURATION_FREE", "rotwing__state_8h.html#ada134e2643336b68ab2da60603f981df", null ],
     [ "ROTWING_CONFIGURATION_HOVER", "rotwing__state_8h.html#ad4005aabef594b9ea86b7c6cbaf60bc0", null ],
     [ "ROTWING_CONFIGURATION_HYBRID", "rotwing__state_8h.html#a2e32268bba268bb733ad212b5200a06a", null ],
     [ "ROTWING_STATE_FREE", "rotwing__state_8h.html#afee150803a6024395d1bfabee893e609", null ],

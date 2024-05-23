@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__rot_wing_automation.html#functions__rot_wing_automation":[1,370,2],
+"module__rot_wing_automation.html#module_load_example__rot_wing_automation":[1,370,0],
 "module__rot_wing_automation.html#module_xml__rot_wing_automation":[1,370,2,0],
 "module__rotorcraft_cam.html":[1,49],
 "module__rotorcraft_cam.html#configuration__rotorcraft_cam":[1,49,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga":[1,110,2,0],
 "module__telemetry_intermcu.html":[1,111],
 "module__telemetry_intermcu.html#configuration__telemetry_intermcu":[1,111,1],
-"module__telemetry_intermcu.html#functions__telemetry_intermcu":[1,111,2],
-"module__telemetry_intermcu.html#module_load_example__telemetry_intermcu":[1,111,0],
-"module__telemetry_intermcu.html#module_xml__telemetry_intermcu":[1,111,2,0]
+"module__telemetry_intermcu.html#functions__telemetry_intermcu":[1,111,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,206,1,0],
+"module__imu_matek_h743_slim.html":[1,207],
 "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,207,0],
 "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,207,0,0],
 "module__imu_mpu6000.html":[1,208],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,250,2,0],
 "module__light.html":[1,252],
 "module__light.html#configuration__light":[1,252,1],
-"module__light.html#functions__light":[1,252,2],
-"module__light.html#module_load_example__light":[1,252,0],
-"module__light.html#module_xml__light":[1,252,2,0]
+"module__light.html#functions__light":[1,252,2]
 };

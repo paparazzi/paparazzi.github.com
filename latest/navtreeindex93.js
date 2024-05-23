@@ -1,5 +1,7 @@
 var NAVTREEINDEX93 =
 {
+"ins__float__invariant_8h.html#structinv__measures":[12,0,1,0,6,2,17,1],
+"ins__float__invariant_8h.html#structinv__measures":[12,0,1,0,6,37,23,1],
 "ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,2,17,0],
 "ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,37,23,0],
 "ins__float__invariant_8h_source.html":[12,0,1,0,6,37,23],
@@ -247,7 +249,5 @@ var NAVTREEINDEX93 =
 "ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e":[12,0,1,0,6,37,31,25],
 "ins__int_8c.html#aebf7f4ccc7178584470b5d54e9e83f92":[12,0,1,0,6,37,31,8],
 "ins__int_8c.html#af8c616627ecbb4860e359944c97dc718":[12,0,1,0,6,37,31,33],
-"ins__int_8c.html#afa50262a1e494235831469694c69b177":[12,0,1,0,6,37,31,31],
-"ins__int_8c_source.html":[12,0,1,0,6,37,31],
-"ins__int_8h.html":[12,0,1,0,6,37,32]
+"ins__int_8c.html#afa50262a1e494235831469694c69b177":[12,0,1,0,6,37,31,31]
 };

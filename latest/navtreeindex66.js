@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f":[12,0,1,0,0,0,3,0],
+"group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f":[9,5,0],
 "group__config.html#gafc999784304892d5ef32584c73cdbc71":[12,0,1,0,0,0,3,9],
 "group__config.html#gafc999784304892d5ef32584c73cdbc71":[9,5,9],
 "group__i2c.html":[9,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850":[9,9,1,0,148],
 "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850":[12,0,1,0,4,5,56],
 "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850":[12,0,1,0,4,6,141],
-"group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[9,9,1,0,58],
-"group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[12,0,1,0,4,6,51],
-"group__math__algebra__float.html#ga082a3591f2701fdcc77609946f1457ad":[9,9,1,0,7]
+"group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[9,9,1,0,58]
 };

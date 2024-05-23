@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__direct_memory_logger.html#functions__direct_memory_logger":[1,254,2],
+"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,254,0],
 "module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,254,2,0],
 "module__distributed_circular_formation.html":[1,460],
 "module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,460,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,163,0],
 "module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c":[1,163,2,0],
 "module__gps_ubx_ucenter.html":[1,164],
-"module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,164,1],
-"module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter":[1,164,2],
-"module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter":[1,164,0]
+"module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,164,1]
 };

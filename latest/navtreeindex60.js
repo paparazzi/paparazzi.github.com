@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"globals_vars_s.html":[12,1,2,19],
+"globals_vars_t.html":[12,1,2,20],
 "globals_vars_u.html":[12,1,2,21],
 "globals_vars_v.html":[12,1,2,22],
 "globals_vars_w.html":[12,1,2,23],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "gps_8h.html#a61d8a6f16de4a00066cb7026aff117da":[12,0,1,0,6,29,2,1,4],
 "gps_8h.html#a62bc223d24475ca9f5ba01a4dbdf59c5":[12,0,1,0,6,29,2,2,0],
 "gps_8h.html#a633c8ce658bc87ebf74d5640b6f9b77b":[12,0,1,0,6,29,2,28],
-"gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe":[12,0,1,0,6,29,2,15],
-"gps_8h.html#a65cd647ec71c018db01d700fb36efe8c":[12,0,1,0,6,29,2,4,3],
-"gps_8h.html#a6a5c8e5b6995940dbf460753aca9d68e":[12,0,1,0,6,29,2,4,7]
+"gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe":[12,0,1,0,6,29,2,15]
 };

@@ -18,6 +18,7 @@ var eff__scheduling__rot__wing_8c =
     [ "stabilization_indi_set_wls_settings", "eff__scheduling__rot__wing_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2", null ],
     [ "wing_position_cb", "eff__scheduling__rot__wing_8c.html#ad616616784d17dad05980d1f9ef4303e", null ],
     [ "eff_sched_p", "eff__scheduling__rot__wing_8c.html#a5f1036bfa14a180c6113283cca476e56", null ],
+    [ "eff_sched_pusher_time", "eff__scheduling__rot__wing_8c.html#ac1ca2c16fc942a58b3eda2290794c858", null ],
     [ "eff_sched_var", "eff__scheduling__rot__wing_8c.html#a63556a574330b5de51b6f46e0f2e92d1", null ],
     [ "eff_scheduling_rot_wing_lift_d", "eff__scheduling__rot__wing_8c.html#ad932f2eabb23a82d6e803ad0150eb710", null ],
     [ "wing_position_ev", "eff__scheduling__rot__wing_8c.html#aae95f0c99e5a489d1081cc99201e1578", null ]

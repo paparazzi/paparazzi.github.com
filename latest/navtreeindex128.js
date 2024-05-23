@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"max1168_8c.html#adad993f2bbd2ca52aea0b0f97931863a":[12,0,1,0,7,84,3],
+"max1168_8c.html#aff870d25144f1b71cb4d7f558c21bd9d":[12,0,1,0,7,84,8],
 "max1168_8c_source.html":[12,0,1,0,7,84],
 "max1168_8h.html":[12,0,1,0,7,85],
 "max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0":[12,0,1,0,7,85,18],
@@ -83,8 +85,8 @@ var NAVTREEINDEX128 =
 "max7456_8c.html#ab6448fcf9ae22d27c05ce676582075dc":[12,0,1,0,6,20,0,24],
 "max7456_8c.html#ab6589475b928e58fdf044d03783fcb54":[12,0,1,0,6,20,0,12],
 "max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f":[12,0,1,0,6,20,0,20],
-"max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,20,0,0,1],
 "max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,8,6,0,1],
+"max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,20,0,0,1],
 "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd":[12,0,1,0,6,20,0,10],
 "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda3bf421e589163ab40526b2b873b18f62":[12,0,1,0,6,20,0,10,4],
 "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda43e7c26b8df0104b9f389e32ac3f72c7":[12,0,1,0,6,20,0,10,0],
@@ -103,8 +105,8 @@ var NAVTREEINDEX128 =
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,8,6,0,2],
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,20,0,0,2],
 "max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20":[12,0,1,0,6,20,0,15],
-"max7456_8c.html#structMATRIX":[12,0,1,0,6,20,0,1],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
+"max7456_8c.html#structMATRIX":[12,0,1,0,6,20,0,1],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,8,6,0],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,20,0,0],
 "max7456_8c_source.html":[12,0,1,0,6,20,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "median__filter_8h.html#acd05707df38c78d3a0c0a8b8d4e0058f":[12,0,1,0,2,7,21],
 "median__filter_8h.html#ad61bfbd8d8c78596232bc97571732570":[12,0,1,0,2,7,20],
 "median__filter_8h.html#structMedianFilter3Float":[12,0,1,0,2,7,3],
-"median__filter_8h.html#structMedianFilter3Int":[12,0,1,0,2,7,1],
-"median__filter_8h.html#structMedianFilterFloat":[12,0,1,0,2,7,2],
-"median__filter_8h.html#structMedianFilterInt":[12,0,1,0,2,7,0]
+"median__filter_8h.html#structMedianFilter3Int":[12,0,1,0,2,7,1]
 };
