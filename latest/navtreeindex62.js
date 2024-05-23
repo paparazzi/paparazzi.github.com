@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"gps__piksi_8c_source.html":[12,0,1,0,6,29,12],
 "gps__piksi_8h.html":[12,0,1,0,6,29,13],
 "gps__piksi_8h.html#a0eb39777eac135c917af2eed39cce7f1":[12,0,1,0,6,29,13,1],
 "gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729":[12,0,1,0,6,29,13,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "gps__ubx_8c.html#ab186501d688a68a9911c601caf4d853c":[12,0,1,0,6,29,22,25],
 "gps__ubx_8c.html#ab3be7fdb9eae93ba80f43b848cdb7416":[12,0,1,0,6,29,22,26],
 "gps__ubx_8c.html#ab8a1ae369ce7cf86237a481e4ac496ca":[12,0,1,0,6,29,22,38],
-"gps__ubx_8c.html#ac32e988000943747468d5fa2a5bbfe3b":[12,0,1,0,6,29,22,33],
-"gps__ubx_8c.html#ad8bf41737e9c4e26b7b148be46c5498e":[12,0,1,0,6,29,22,39]
+"gps__ubx_8c.html#ac32e988000943747468d5fa2a5bbfe3b":[12,0,1,0,6,29,22,33]
 };

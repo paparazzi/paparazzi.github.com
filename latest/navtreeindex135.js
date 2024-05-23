@@ -1,5 +1,6 @@
 var NAVTREEINDEX135 =
 {
+"module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,207,0],
 "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,207,0,0],
 "module__imu_mpu6000.html":[1,208],
 "module__imu_mpu6000.html#configuration__imu_mpu6000":[1,208,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX135 =
 "module__light.html#configuration__light":[1,252,1],
 "module__light.html#functions__light":[1,252,2],
 "module__light.html#module_load_example__light":[1,252,0],
-"module__light.html#module_xml__light":[1,252,2,0],
-"module__light_scheduler.html":[1,253]
+"module__light.html#module_xml__light":[1,252,2,0]
 };

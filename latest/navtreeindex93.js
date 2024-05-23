@@ -1,5 +1,6 @@
 var NAVTREEINDEX93 =
 {
+"ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,2,17,0],
 "ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,37,23,0],
 "ins__float__invariant_8h_source.html":[12,0,1,0,6,37,23],
 "ins__float__invariant__wrapper_8c.html":[12,0,1,0,6,37,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX93 =
 "ins__int_8c.html#af8c616627ecbb4860e359944c97dc718":[12,0,1,0,6,37,31,33],
 "ins__int_8c.html#afa50262a1e494235831469694c69b177":[12,0,1,0,6,37,31,31],
 "ins__int_8c_source.html":[12,0,1,0,6,37,31],
-"ins__int_8h.html":[12,0,1,0,6,37,32],
-"ins__int_8h.html#a01b85d3295bc283aac03af14d8e481de":[12,0,1,0,6,37,32,4]
+"ins__int_8h.html":[12,0,1,0,6,37,32]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__light_scheduler.html":[1,253],
 "module__light_scheduler.html#configuration__light_scheduler":[1,253,1],
 "module__light_scheduler.html#functions__light_scheduler":[1,253,2],
 "module__light_scheduler.html#module_load_example__light_scheduler":[1,253,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__nav_spiral_3d.html":[1,338],
 "module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,338,1],
 "module__nav_spiral_3d.html#functions__nav_spiral_3d":[1,338,2],
-"module__nav_spiral_3d.html#module_load_example__nav_spiral_3d":[1,338,0],
-"module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,338,2,0]
+"module__nav_spiral_3d.html#module_load_example__nav_spiral_3d":[1,338,0]
 };

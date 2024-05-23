@@ -1,5 +1,6 @@
 var NAVTREEINDEX115 =
 {
+"lsm303d__regs_8h.html#ac3f73e63174e71bbee95fd43b7a1e304":[12,0,1,0,7,73,73],
 "lsm303d__regs_8h.html#ac8b6681ed502ceb387624a806ae0a92e":[12,0,1,0,7,73,11],
 "lsm303d__regs_8h.html#ac950157746810db6dbb1806d9c15776f":[12,0,1,0,7,73,57],
 "lsm303d__regs_8h.html#aca8e18462835fdba17e2ee7066bf872b":[12,0,1,0,7,73,7],
@@ -44,8 +45,8 @@ var NAVTREEINDEX115 =
 "lsm303d__spi_8h.html#a156507f0889e5fdab594d71e7c485027":[12,0,1,0,7,75,4],
 "lsm303d__spi_8h.html#a1964fbd63e0704237a0b49a4bdae158e":[12,0,1,0,7,75,0,7],
 "lsm303d__spi_8h.html#a1d07b5d2352114945362a660d7bb13a9":[12,0,1,0,7,75,0,5],
-"lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,2,1],
 "lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,1,1],
+"lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,2,1],
 "lsm303d__spi_8h.html#a46caf9f0043d121b803f30e9f8627f8d":[12,0,1,0,7,75,5],
 "lsm303d__spi_8h.html#a4d7252cf04efa1bd4d299764a4ac3d27":[12,0,1,0,7,75,0,4],
 "lsm303d__spi_8h.html#a59de795e77f96d73a03d679aeb4cf94e":[12,0,1,0,7,75,0,8],
@@ -54,8 +55,8 @@ var NAVTREEINDEX115 =
 "lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8":[12,0,1,0,7,75,0,2],
 "lsm303d__spi_8h.html#a8b2bbc4ff09e5ad5f1ac172c7395d5ca":[12,0,1,0,7,75,0,10],
 "lsm303d__spi_8h.html#aa02c102c0cd7e116f0f83be3d8483bca":[12,0,1,0,7,75,0,3],
-"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,1,0],
 "lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
+"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,1,0],
 "lsm303d__spi_8h.html#ab4e49df07264189a6344fe0772d14f9f":[12,0,1,0,7,75,7],
 "lsm303d__spi_8h.html#ac0b025eef4f446e794b523ba01e7d657":[12,0,1,0,7,75,0,11],
 "lsm303d__spi_8h.html#acc0fb5544dfd864c48344999d9e7e7cb":[12,0,1,0,7,75,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX115 =
 "lsm6ds33_8h.html#a8ea78bb9e5806993f1441f683d56188f":[12,0,1,0,7,80,4],
 "lsm6ds33_8h.html#a96ae1d080c7a48440bb8ba508894aef8":[12,0,1,0,7,80,6],
 "lsm6ds33_8h.html#a97caaa6d268650c7198d26ddbbd6c2ad":[12,0,1,0,7,80,21],
-"lsm6ds33_8h.html#aa0cd0cfa87ce6210cadff41179c11a65":[12,0,1,0,7,80,18],
-"lsm6ds33_8h.html#aa9ce7bf6862cab674b83f0a3e3c77ce3":[12,0,1,0,7,80,30]
+"lsm6ds33_8h.html#aa0cd0cfa87ce6210cadff41179c11a65":[12,0,1,0,7,80,18]
 };

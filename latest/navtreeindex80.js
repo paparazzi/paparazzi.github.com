@@ -1,5 +1,6 @@
 var NAVTREEINDEX80 =
 {
+"hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,19,12,8],
 "hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,19,12,3],
 "hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,19,12,6],
 "hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,19,12,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX80 =
 "high__speed__logger__direct__memory_8c.html#a4c2406e1801a3e53a6395948be08b57e":[12,0,1,0,6,42,5,60],
 "high__speed__logger__direct__memory_8c.html#a505acbcfa5f466fea3d39fa956a06074":[12,0,1,0,6,42,5,7],
 "high__speed__logger__direct__memory_8c.html#a52fd4207a7fa718b2de8e2b5f9dac559":[12,0,1,0,6,42,5,48],
-"high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44":[12,0,1,0,6,42,5,22],
-"high__speed__logger__direct__memory_8c.html#a5c0fb4e1f5b4d9f5f529c8dd6e25be44":[12,0,1,0,6,42,5,55]
+"high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44":[12,0,1,0,6,42,5,22]
 };

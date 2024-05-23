@@ -3184,6 +3184,13 @@ var onboard_modules =
         [ "Raw pano_unwrap.xml file:", "module__pano_unwrap.html#module_xml__pano_unwrap", null ]
       ] ]
     ] ],
+    [ "parachute module", "module__parachute.html", [
+      [ "Example for airframe file", "module__parachute.html#module_load_example__parachute", null ],
+      [ "Module configuration options", "module__parachute.html#configuration__parachute", null ],
+      [ "Module functions", "module__parachute.html#functions__parachute", [
+        [ "Raw parachute.xml file:", "module__parachute.html#module_xml__parachute", null ]
+      ] ]
+    ] ],
     [ "pca9685 module", "module__pca9685.html", [
       [ "Example for airframe file", "module__pca9685.html#module_load_example__pca9685", null ],
       [ "Module functions", "module__pca9685.html#functions__pca9685", [
