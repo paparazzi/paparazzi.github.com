@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__nav_spiral_3d.html":[1,338],
+"module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,338,1],
 "module__nav_spiral_3d.html#functions__nav_spiral_3d":[1,338,2],
 "module__nav_spiral_3d.html#module_load_example__nav_spiral_3d":[1,338,0],
 "module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,338,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "module__relative_localization_filter.html#module_xml__relative_localization_filter":[1,492,1,0],
 "module__rng.html":[1,270],
 "module__rng.html#module_load_example__rng":[1,270,0],
-"module__rng.html#module_xml__rng":[1,270,0,0],
-"module__rot_wing_automation.html":[1,370],
-"module__rot_wing_automation.html#configuration__rot_wing_automation":[1,370,1]
+"module__rng.html#module_xml__rng":[1,270,0,0]
 };

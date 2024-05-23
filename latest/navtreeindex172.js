@@ -1,5 +1,7 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,193],
+"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,32],
 "paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,46],
 "paparazzi_messages.html#WIND_CLEAR":[2,2,6],
 "paparazzi_messages.html#WIND_INFO":[2,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX172 =
 "pfc__actuators_8c.html#structpfc__actuator__t":[12,0,1,0,6,10,0,0],
 "pfc__actuators_8c.html#structpfc__actuators__t":[12,0,1,0,6,10,0,1],
 "pfc__actuators_8c_source.html":[12,0,1,0,6,10,0],
-"pfc__actuators_8h.html":[12,0,1,0,6,10,1],
-"pfc__actuators_8h.html#a5427595c53f8bae09c346eaffc347162":[12,0,1,0,6,10,1,0],
-"pfc__actuators_8h.html#a59a669d5b957b6fe4b19882cba6e9690":[12,0,1,0,6,10,1,2]
+"pfc__actuators_8h.html":[12,0,1,0,6,10,1]
 };

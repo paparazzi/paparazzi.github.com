@@ -197,6 +197,8 @@ Macros</h2></td></tr>
 <tr class="separator:a1f5ab3b277c3bfa3043523b4f29506e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5bf9986f362a7dddb4c5f91a2c7d184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#ab5bf9986f362a7dddb4c5f91a2c7d184">GUIDANCE_INDI_DESCEND_SPEED_FWD</a>&#160;&#160;&#160;-4.0</td></tr>
 <tr class="separator:ab5bf9986f362a7dddb4c5f91a2c7d184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229667ae1ca2b80014b4e44d046c7bad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#a229667ae1ca2b80014b4e44d046c7bad">GUIDANCE_INDI_MAX_LAT_ACCEL</a>&#160;&#160;&#160;9.81</td></tr>
+<tr class="separator:a229667ae1ca2b80014b4e44d046c7bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaa349592d6471628d81841525be1844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#aeaa349592d6471628d81841525be1844">GUIDANCE_INDI_VEL_SP_ID</a>&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td></tr>
 <tr class="separator:aeaa349592d6471628d81841525be1844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -282,6 +284,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab734280d84c6c8c2bf7a398e8c0177de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbf0d721f775293cc953c71dc69be5b7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#abbf0d721f775293cc953c71dc69be5b7">euler_cmd</a></td></tr>
 <tr class="separator:abbf0d721f775293cc953c71dc69be5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9962c0ce85be6933617ac1b6d964b95"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#af9962c0ce85be6933617ac1b6d964b95">du_gih</a> [GUIDANCE_INDI_HYBRID_U]</td></tr>
+<tr class="separator:af9962c0ce85be6933617ac1b6d964b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0feadcd36da1b3a804d75dc567f4a83"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#af0feadcd36da1b3a804d75dc567f4a83">v_gih</a> [3]</td></tr>
 <tr class="separator:af0feadcd36da1b3a804d75dc567f4a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa68dd272625818f0aeea37630a25490a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8c.html#aa68dd272625818f0aeea37630a25490a">filter_cutoff</a> = <a class="el" href="guidance__indi__hybrid_8c.html#aabdf5197f9c3258629ccee0bed08645b">GUIDANCE_INDI_FILTER_CUTOFF</a></td></tr>
@@ -422,6 +426,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a229667ae1ca2b80014b4e44d046c7bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229667ae1ca2b80014b4e44d046c7bad">&#9670;&nbsp;</a></span>GUIDANCE_INDI_MAX_LAT_ACCEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GUIDANCE_INDI_MAX_LAT_ACCEL&#160;&#160;&#160;9.81</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00166">166</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+
+</div>
+</div>
 <a id="a69f0c186c919cfa3160c6f58370142bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69f0c186c919cfa3160c6f58370142bb">&#9670;&nbsp;</a></span>GUIDANCE_INDI_POS_GAIN</h2>
 
@@ -498,7 +518,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00224">224</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00230">230</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -559,9 +579,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00681">681</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00689">689</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00145">RotorcraftNavigation::climb_vspeed</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00165">climb_vspeed_fwd</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00146">RotorcraftNavigation::descend_vspeed</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00166">descend_vspeed_fwd</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00145">RotorcraftNavigation::climb_vspeed</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00169">climb_vspeed_fwd</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00146">RotorcraftNavigation::descend_vspeed</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00170">descend_vspeed_fwd</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -601,9 +621,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00342">342</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00348">348</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">accely_filt</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00175">eulers_zxy</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00213">filter_cutoff</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00214">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00216">guidance_indi_hybrid_heading_sp</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">pitch_filt</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00180">roll_filt</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00178">thrust_act</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">thrust_filt</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">thrust_in</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00187">accely_filt</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">eulers_zxy</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">filter_cutoff</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00220">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00222">guidance_indi_hybrid_heading_sp</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00185">pitch_filt</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">roll_filt</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">thrust_act</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00186">thrust_filt</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00225">thrust_in</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -648,7 +668,7 @@ Variables</h2></td></tr>
 
 <p>Call upon entering indi guidance. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00342">342</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00348">348</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -688,7 +708,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The derivative of lift w.r.t. pitch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00814">814</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00822">822</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 <p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00070">gih_params</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00078">guidance_indi_hybrid_params::liftd_asq</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00080">guidance_indi_hybrid_params::liftd_p50</a>, and <a class="el" href="guidance__indi__hybrid_8h_source.html#l00079">guidance_indi_hybrid_params::liftd_p80</a>.</p>
 
@@ -725,9 +745,9 @@ Variables</h2></td></tr>
 
 <p>Init function. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">300</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">306</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00213">filter_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">Ga</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00214">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00224">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">pitch_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00180">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00290">send_guidance_indi_debug()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00177">thrust_dyn</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">thrust_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00846">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00226">vel_sp_ev</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00187">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">filter_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00192">Ga</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00220">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00230">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00185">pitch_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00296">send_guidance_indi_debug()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">thrust_dyn</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00186">thrust_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00854">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00232">vel_sp_ev</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -767,9 +787,9 @@ Variables</h2></td></tr>
 <p>Low pass the accelerometer measurements to remove noise from vibrations. </p>
 <p>The roll and pitch also need to be filtered to synchronize them with the acceleration Called as a periodic function with PERIODIC_FREQ </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">788</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">796</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00222">ACCEL_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">accely_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00175">eulers_zxy</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">guidance_indi_airspeed_filt</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">pitch_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00180">roll_filt</a>, <a class="el" href="state_8h_source.html#l00953">stateGetAccelBody_i()</a>, <a class="el" href="state_8h_source.html#l01038">stateGetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00222">ACCEL_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00187">accely_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">eulers_zxy</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">guidance_indi_airspeed_filt</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00185">pitch_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">roll_filt</a>, <a class="el" href="state_8h_source.html#l00953">stateGetAccelBody_i()</a>, <a class="el" href="state_8h_source.html#l01038">stateGetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -827,7 +847,7 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>stabilization setpoint structure</dd></dl>
 <p>main indi guidance function </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00342">342</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00348">348</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -875,7 +895,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00681">681</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00689">689</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -913,9 +933,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00290">290</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00296">296</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -964,11 +984,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">235</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">241</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00189">euler_cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00221">gi_speed_sp</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00123">sp_accel</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00193">euler_cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00227">gi_speed_sp</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00123">sp_accel</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -1019,11 +1039,11 @@ Variables</h2></td></tr>
 
 <p>ABI callback that obtains the velocity setpoint from a module. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00846">846</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00854">854</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00228">indi_vel_sp</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00229">time_of_vel_sp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00234">indi_vel_sp</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">time_of_vel_sp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1062,9 +1082,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">183</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00187">187</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">guidance_indi_propagate_filters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">guidance_indi_propagate_filters()</a>.</p>
 
 </div>
 </div>
@@ -1080,9 +1100,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00165">165</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00169">169</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00681">bound_vz_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00689">bound_vz_sp()</a>.</p>
 
 </div>
 </div>
@@ -1098,9 +1118,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00166">166</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00170">170</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00681">bound_vz_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00689">bound_vz_sp()</a>.</p>
 
 </div>
 </div>
@@ -1116,9 +1136,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">184</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">188</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00580">rotwing_state_free_processor()</a>.</p>
+
+</div>
+</div>
+<a id="af9962c0ce85be6933617ac1b6d964b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9962c0ce85be6933617ac1b6d964b95">&#9670;&nbsp;</a></span>du_gih</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float du_gih[GUIDANCE_INDI_HYBRID_U]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00195">195</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1134,9 +1170,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">188</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00192">192</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">send_guidance_indi_hybrid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">send_guidance_indi_hybrid()</a>.</p>
 
 </div>
 </div>
@@ -1154,9 +1190,9 @@ Variables</h2></td></tr>
 
 <p>state eulers in zxy order </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00172">172</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00176">176</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00082">guidance_indi_calcg_wing()</a>, <a class="el" href="rotwing__state_8c_source.html#l00711">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">guidance_indi_propagate_filters()</a>, <a class="el" href="rot__wing__automation_8c_source.html#l00139">rot_wing_vis_transition()</a>, <a class="el" href="rotwing__state_8c_source.html#l00580">rotwing_state_free_processor()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00082">guidance_indi_calcg_wing()</a>, <a class="el" href="rotwing__state_8c_source.html#l00711">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">guidance_indi_propagate_filters()</a>, <a class="el" href="rot__wing__automation_8c_source.html#l00139">rot_wing_vis_transition()</a>, <a class="el" href="rotwing__state_8c_source.html#l00580">rotwing_state_free_processor()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>.</p>
 
 </div>
 </div>
@@ -1172,9 +1208,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">179</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">183</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">send_guidance_indi_hybrid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">send_guidance_indi_hybrid()</a>.</p>
 
 </div>
 </div>
@@ -1190,9 +1226,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00213">213</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">219</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -1228,9 +1264,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">188</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00192">192</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -1246,9 +1282,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">219</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00225">225</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">send_guidance_indi_hybrid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">send_guidance_indi_hybrid()</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1321,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00001">1</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00814">guidance_indi_get_liftd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00822">guidance_indi_get_liftd()</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1337,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00216">216</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00222">222</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1317,9 +1353,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">184</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">188</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">guidance_indi_propagate_filters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">guidance_indi_propagate_filters()</a>.</p>
 
 </div>
 </div>
@@ -1335,9 +1371,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00214">214</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00220">220</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -1369,9 +1405,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00216">216</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00222">222</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1441,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00171">171</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00175">175</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1457,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00172">172</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00176">176</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1439,7 +1475,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00089">89</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00128">guidance_indi_hybrid_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00130">guidance_indi_hybrid_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -1455,9 +1491,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00227">227</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00233">233</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00846">vel_sp_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00854">vel_sp_cb()</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1509,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00168">168</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00172">172</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1489,9 +1525,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">181</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00185">185</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">guidance_indi_propagate_filters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">guidance_indi_propagate_filters()</a>.</p>
 
 </div>
 </div>
@@ -1507,9 +1543,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00180">180</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00184">184</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00788">guidance_indi_propagate_filters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00796">guidance_indi_propagate_filters()</a>.</p>
 
 </div>
 </div>
@@ -1527,7 +1563,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00120">120</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">send_guidance_indi_hybrid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">send_guidance_indi_hybrid()</a>.</p>
 
 </div>
 </div>
@@ -1559,9 +1595,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00178">178</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">182</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>.</p>
 
 </div>
 </div>
@@ -1577,9 +1613,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00177">177</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">181</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -1595,9 +1631,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">182</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00186">186</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -1613,9 +1649,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">219</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00225">225</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>.</p>
 
 </div>
 </div>
@@ -1631,7 +1667,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00216">216</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00222">222</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1647,9 +1683,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00229">229</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">235</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00846">vel_sp_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00854">vel_sp_cb()</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1701,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00210">210</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00216">216</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__tailsitter_8c_source.html#l00041">guidance_indi_calcg_wing()</a>.</p>
 
@@ -1683,9 +1719,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00226">226</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00232">232</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -1695,7 +1731,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi__hybrid_8c.html">guidance_indi_hybrid.c</a></li>
-    <li class="footer">Generated on Thu May 23 2024 11:42:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 23 2024 19:59:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

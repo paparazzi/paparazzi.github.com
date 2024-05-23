@@ -1,5 +1,7 @@
 var NAVTREEINDEX92 =
 {
+"ins__ekf2_8cpp.html#ad7f02ccead622cae5023cc8323db00cb":[12,0,1,0,6,37,18,24],
+"ins__ekf2_8cpp.html#ad84c4e5df160b1e170812a80cb61e9f9":[12,0,1,0,6,37,18,62],
 "ins__ekf2_8cpp.html#add6410bbc9ad1c73df8d91c03aa50cec":[12,0,1,0,6,37,18,12],
 "ins__ekf2_8cpp.html#adfd7a7b836b78f066f0d6d8cd453c8d2":[12,0,1,0,6,37,18,72],
 "ins__ekf2_8cpp.html#ae046aca72b84e24b4494c5709c940afb":[12,0,1,0,6,37,18,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX92 =
 "ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,2,17,2],
 "ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,37,23,2],
 "ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,2,17,3],
-"ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,37,23,3],
-"ins__float__invariant_8h.html#structinv__gains":[12,0,1,0,6,2,17,4],
-"ins__float__invariant_8h.html#structinv__gains":[12,0,1,0,6,37,23,4]
+"ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,37,23,3]
 };

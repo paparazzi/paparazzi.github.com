@@ -199,11 +199,11 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="uav__recovery_8c.html#aeb19d3dd881fdd134582bf54daecf9a6">uav_recovery.c</a>
 , <a class="el" href="uav__recovery_8h.html#aeb19d3dd881fdd134582bf54daecf9a6">uav_recovery.h</a>
 </li>
-<li>calculateCrc()
-: <a class="el" href="cc2500__frsky__x_8c.html#a74b7c623e8494053e65ec2a833b6af6e">cc2500_frsky_x.c</a>
-</li>
 <li>calculateCRC()
 : <a class="el" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce">vn200_serial.c</a>
+</li>
+<li>calculateCrc()
+: <a class="el" href="cc2500__frsky__x_8c.html#a74b7c623e8494053e65ec2a833b6af6e">cc2500_frsky_x.c</a>
 </li>
 <li>calculateCrc8()
 : <a class="el" href="esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4">esc_dshot.c</a>
@@ -1752,19 +1752,19 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>CLOUD_SENSOR_BORDER_THRESHOLD
 : <a class="el" href="cloud__sensor_8c.html#a8caffe0b48a072416f194381758076d7">cloud_sensor.c</a>
 </li>
-<li>CLOUD_SENSOR_CALIB_ALPHA
-: <a class="el" href="cloud__sensor_8c.html#aa180abe1209e5c5d7da2e72075db5a61">cloud_sensor.c</a>
-</li>
 <li>cloud_sensor_calib_alpha
 : <a class="el" href="cloud__sensor_8c.html#af8342efcf5e79d8793ee8f2df100ba06">cloud_sensor.c</a>
 , <a class="el" href="cloud__sensor_8h.html#af8342efcf5e79d8793ee8f2df100ba06">cloud_sensor.h</a>
 </li>
-<li>CLOUD_SENSOR_CALIB_BETA
-: <a class="el" href="cloud__sensor_8c.html#afdf279c0e76af432fe3d55cb086fb9be">cloud_sensor.c</a>
+<li>CLOUD_SENSOR_CALIB_ALPHA
+: <a class="el" href="cloud__sensor_8c.html#aa180abe1209e5c5d7da2e72075db5a61">cloud_sensor.c</a>
 </li>
 <li>cloud_sensor_calib_beta
 : <a class="el" href="cloud__sensor_8c.html#ad37cbeadc9a1af681d81571a10cec921">cloud_sensor.c</a>
 , <a class="el" href="cloud__sensor_8h.html#ad37cbeadc9a1af681d81571a10cec921">cloud_sensor.h</a>
+</li>
+<li>CLOUD_SENSOR_CALIB_BETA
+: <a class="el" href="cloud__sensor_8c.html#afdf279c0e76af432fe3d55cb086fb9be">cloud_sensor.c</a>
 </li>
 <li>cloud_sensor_callback()
 : <a class="el" href="cloud__sensor_8h.html#a73f248890a2a193f55f460606f6bae9d">cloud_sensor.h</a>
@@ -1834,11 +1834,13 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="cloud__sensor_8c.html#a7d486e5732a28ea7707863ecd669c15b">cloud_sensor.c</a>
 </li>
 <li>cloud_sensor_tau
-: <a class="el" href="cloud__sensor_8h.html#a5182c137f578613e7a4c6a14287b8658">cloud_sensor.h</a>
-, <a class="el" href="cloud__sensor_8c.html#a5182c137f578613e7a4c6a14287b8658">cloud_sensor.c</a>
+: <a class="el" href="cloud__sensor_8c.html#a5182c137f578613e7a4c6a14287b8658">cloud_sensor.c</a>
 </li>
 <li>CLOUD_SENSOR_TAU
 : <a class="el" href="cloud__sensor_8c.html#a72c6104016b4da586928b43f001b444a">cloud_sensor.c</a>
+</li>
+<li>cloud_sensor_tau
+: <a class="el" href="cloud__sensor_8h.html#a5182c137f578613e7a4c6a14287b8658">cloud_sensor.h</a>
 </li>
 <li>cloud_sensor_threshold
 : <a class="el" href="cloud__sensor_8c.html#a22095a1ac0951be7f34bc65bdb7a3a0d">cloud_sensor.c</a>
@@ -2197,13 +2199,13 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>color_U_min
 : <a class="el" href="snake__gate__detection_8c.html#a085553c5664fe346406680ca8b9c4676">snake_gate_detection.c</a>
 </li>
-<li>color_UM
-: <a class="el" href="detect__gate_8c.html#af4f0cfa1154072a5f43337c170ea94f3">detect_gate.c</a>
-, <a class="el" href="detect__gate_8h.html#af4f0cfa1154072a5f43337c170ea94f3">detect_gate.h</a>
-</li>
 <li>color_Um
 : <a class="el" href="detect__gate_8c.html#a231e9845ab1ac427d0795addae86565f">detect_gate.c</a>
 , <a class="el" href="detect__gate_8h.html#a231e9845ab1ac427d0795addae86565f">detect_gate.h</a>
+</li>
+<li>color_UM
+: <a class="el" href="detect__gate_8c.html#af4f0cfa1154072a5f43337c170ea94f3">detect_gate.c</a>
+, <a class="el" href="detect__gate_8h.html#af4f0cfa1154072a5f43337c170ea94f3">detect_gate.h</a>
 </li>
 <li>color_V_max
 : <a class="el" href="snake__gate__detection_8c.html#a8f430c2b23ed49640e85741cace3cca7">snake_gate_detection.c</a>
@@ -3459,7 +3461,7 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 23 2024 11:42:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 23 2024 19:59:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
