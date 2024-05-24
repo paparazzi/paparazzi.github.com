@@ -1,7 +1,7 @@
 var halconf_8h =
 [
     [ "_CHIBIOS_HAL_CONF_", "group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84", null ],
-    [ "_CHIBIOS_HAL_CONF_VER_8_0_", "group__HAL__CONF.html#gae4d2ee57d42f6bf6ab17cf6ea78fbf4e", null ],
+    [ "_CHIBIOS_HAL_CONF_VER_8_4_", "group__HAL__CONF.html#gaf8237f3d00eec30ca14f7e1e5005ebea", null ],
     [ "ADC_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#gac0893cb47e338c2dabad34b974a0a88d", null ],
     [ "ADC_USE_WAIT", "group__HAL__CONF.html#ga39e892a4090185fbdda9bb105bc03b4f", null ],
     [ "CAN_ENFORCE_USE_CALLBACKS", "group__HAL__CONF.html#gad4933b8609e6e61d34785dfc4ea4718f", null ],
@@ -37,7 +37,8 @@ var halconf_8h =
     [ "I2C_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#ga7125642404a6fd3d4985d1cb6e1b7b0a", null ],
     [ "MAC_USE_EVENTS", "group__HAL__CONF.html#ga887da1c1383a9e7b45c4464877a7e05e", null ],
     [ "MAC_USE_ZERO_COPY", "group__HAL__CONF.html#gad763d9426413cf2fe3922ebb8578bc59", null ],
-    [ "MMC_NICE_WAITING", "group__HAL__CONF.html#ga3087dfffa81dd8a0a80ee92746e65fe2", null ],
+    [ "MMC_IDLE_TIMEOUT_MS", "group__HAL__CONF.html#gabe6955a99e195dcad14215afb60a1f75", null ],
+    [ "MMC_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#ga775af43fd2d91555a6786d8c7c91fb0c", null ],
     [ "PAL_USE_CALLBACKS", "group__HAL__CONF.html#ga7f6b7a1d53c34840c28812d66317791a", null ],
     [ "PAL_USE_WAIT", "group__HAL__CONF.html#ga208046a85e4e6a358c2c6590449f76af", null ],
     [ "SDC_INIT_OCR", "group__HAL__CONF.html#ga6a5f20ab8b47c26bb88687cf22452218", null ],

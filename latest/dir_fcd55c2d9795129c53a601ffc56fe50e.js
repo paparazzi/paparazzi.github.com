@@ -38,6 +38,8 @@ var dir_fcd55c2d9795129c53a601ffc56fe50e =
     [ "imu_mpu9250_spi.h", "imu__mpu9250__spi_8h.html", "imu__mpu9250__spi_8h" ],
     [ "imu_nps.c", "imu__nps_8c.html", "imu__nps_8c" ],
     [ "imu_nps.h", "imu__nps_8h.html", "imu__nps_8h" ],
+    [ "imu_pixhawk6x.c", "imu__pixhawk6x_8c.html", "imu__pixhawk6x_8c" ],
+    [ "imu_pixhawk6x.h", "imu__pixhawk6x_8h.html", "imu__pixhawk6x_8h" ],
     [ "imu_px4fmu.c", "imu__px4fmu_8c.html", "imu__px4fmu_8c" ],
     [ "imu_px4fmu.h", "imu__px4fmu_8h.html", "imu__px4fmu_8h" ],
     [ "imu_px4fmu_v2.4.c", "imu__px4fmu__v2_84_8c.html", "imu__px4fmu__v2_84_8c" ],

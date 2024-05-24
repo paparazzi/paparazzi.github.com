@@ -126,10 +126,11 @@ $(document).ready(function(){initNavTree('invensense3_8h.html',''); initResizabl
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2peripherals_2invensense3_8hdep" alt=""/></div>
 <map name="asw_2airborne_2peripherals_2invensense3_8hdep" id="asw_2airborne_2peripherals_2invensense3_8hdep">
-<area shape="rect" title="Driver for the Invensense V3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="183,5,357,47"/>
+<area shape="rect" title="Driver for the Invensense V3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="277,5,452,47"/>
 <area shape="rect" href="imu__cube_8c.html" title="Driver for the IMU&#39;s in the Cube autopilots." alt="" coords="5,95,164,136"/>
 <area shape="rect" href="imu__icm42688_8c.html" title="Driver module for the Invensense v3 IMU ICM42688." alt="" coords="189,95,351,136"/>
-<area shape="rect" href="invensense3_8c.html" title="Driver for the Invensense v3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="376,95,551,136"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html" title=" " alt="" coords="376,95,545,136"/>
+<area shape="rect" href="invensense3_8c.html" title="Driver for the Invensense v3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="569,95,744,136"/>
 </map>
 </div>
 </div>
@@ -867,7 +868,7 @@ SPI specific configuration. </td></tr>
 
 <p class="reference">References <a class="el" href="invensense3_8h_source.html#l00160">invensense3_t::bus</a>, <a class="el" href="invensense3_8h_source.html#l00170">invensense3_t::config_idx</a>, <a class="el" href="invensense3_8h_source.html#l00157">invensense3_t::device</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="invensense3__regs_8h_source.html#l00184">INV3_WHOAMI_ICM40605</a>, <a class="el" href="invensense3__regs_8h_source.html#l00185">INV3_WHOAMI_ICM40609</a>, <a class="el" href="invensense3__regs_8h_source.html#l00186">INV3_WHOAMI_ICM42605</a>, <a class="el" href="invensense3__regs_8h_source.html#l00187">INV3_WHOAMI_ICM42688</a>, <a class="el" href="invensense3__regs_8h_source.html#l00188">INV3_WHOAMI_IIM42652</a>, <a class="el" href="invensense3__regs_8h_source.html#l00181">INV3REG_BANK_SEL</a>, <a class="el" href="invensense3__regs_8h_source.html#l00052">INV3REG_FIFO_COUNTH</a>, <a class="el" href="invensense3_8c_source.html#l00837">invensense3_config()</a>, <a class="el" href="invensense3_8h_source.html#l00067">INVENSENSE3_CONFIG</a>, <a class="el" href="invensense3_8c_source.html#l00216">invensense3_fifo_sample_size</a>, <a class="el" href="invensense3_8c_source.html#l00558">invensense3_fix_config()</a>, <a class="el" href="invensense3_8h_source.html#l00061">INVENSENSE3_I2C</a>, <a class="el" href="invensense3_8h_source.html#l00087">INVENSENSE3_ICM40605</a>, <a class="el" href="invensense3_8h_source.html#l00088">INVENSENSE3_ICM40609</a>, <a class="el" href="invensense3_8h_source.html#l00089">INVENSENSE3_ICM42605</a>, <a class="el" href="invensense3_8h_source.html#l00091">INVENSENSE3_ICM42688</a>, <a class="el" href="invensense3_8h_source.html#l00066">INVENSENSE3_IDLE</a>, <a class="el" href="invensense3_8h_source.html#l00090">INVENSENSE3_IIM42652</a>, <a class="el" href="invensense3_8c_source.html#l00458">invensense3_parse_fifo_data()</a>, <a class="el" href="invensense3_8c_source.html#l00530">invensense3_parse_reg_data()</a>, <a class="el" href="invensense3_8h_source.html#l00074">INVENSENSE3_PARSER_FIFO</a>, <a class="el" href="invensense3_8h_source.html#l00073">INVENSENSE3_PARSER_REGISTERS</a>, <a class="el" href="invensense3_8c_source.html#l00763">invensense3_register_read()</a>, <a class="el" href="invensense3_8h_source.html#l00068">INVENSENSE3_RUNNING</a>, <a class="el" href="invensense3_8h_source.html#l00060">INVENSENSE3_SPI</a>, <a class="el" href="esc__dshot_8c_source.html#l00109">Min</a>, <a class="el" href="detect__gate_8c_source.html#l00085">n_samples</a>, <a class="el" href="invensense3_8h_source.html#l00158">invensense3_t::parser</a>, <a class="el" href="invensense3_8h_source.html#l00169">invensense3_t::register_bank</a>, <a class="el" href="invensense3_8h_source.html#l00165">invensense3_t::rx_buffer</a>, <a class="el" href="invensense3_8h_source.html#l00167">invensense3_t::rx_length</a>, <a class="el" href="invensense3_8h_source.html#l00181">invensense3_t::sample_size</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00100">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, <a class="el" href="invensense3_8h_source.html#l00156">invensense3_t::status</a>, <a class="el" href="invensense3_8h_source.html#l00171">invensense3_t::timer</a>, and <a class="el" href="invensense3_8h_source.html#l00166">invensense3_t::tx_buffer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00142">imu_cube_event()</a>, and <a class="el" href="imu__icm42688_8c_source.html#l00071">imu_icm42688_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00142">imu_cube_event()</a>, <a class="el" href="imu__icm42688_8c_source.html#l00071">imu_icm42688_event()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00119">imu_pixhawk6x_event()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -906,9 +907,10 @@ SPI specific configuration. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3_8h_a618187bb7ae8caf2eedffec9a9cbf3db_icgraph.png" border="0" usemap="#ainvensense3_8h_a618187bb7ae8caf2eedffec9a9cbf3db_icgraph" alt=""/></div>
 <map name="ainvensense3_8h_a618187bb7ae8caf2eedffec9a9cbf3db_icgraph" id="ainvensense3_8h_a618187bb7ae8caf2eedffec9a9cbf3db_icgraph">
-<area shape="rect" title="Should be called in the event thread." alt="" coords="216,31,364,57"/>
-<area shape="rect" href="imu__cube_8c.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="22,5,151,32"/>
-<area shape="rect" href="imu__icm42688_8c.html#a00b084d952654080f2befd301104b13a" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" title="Should be called in the event thread." alt="" coords="223,56,371,83"/>
+<area shape="rect" href="imu__cube_8c.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="25,5,155,32"/>
+<area shape="rect" href="imu__icm42688_8c.html#a00b084d952654080f2befd301104b13a" title=" " alt="" coords="9,56,171,83"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html#af615f367e491a8eddf123da8ccf19b85" title=" " alt="" coords="5,107,175,133"/>
 </map>
 </div>
 
@@ -942,7 +944,7 @@ SPI specific configuration. </td></tr>
 
 <p class="reference">References <a class="el" href="invensense3_8h_source.html#l00177">invensense3_t::accel_odr</a>, <a class="el" href="invensense3_8h_source.html#l00160">invensense3_t::bus</a>, <a class="el" href="invensense3_8h_source.html#l00170">invensense3_t::config_idx</a>, <a class="el" href="invensense3_8h_source.html#l00157">invensense3_t::device</a>, <a class="el" href="invensense3_8h_source.html#l00173">invensense3_t::gyro_odr</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="invensense3_8h_source.html#l00066">INVENSENSE3_IDLE</a>, <a class="el" href="invensense3_8h_source.html#l00080">INVENSENSE3_SAMPLE_SIZE_PK3</a>, <a class="el" href="invensense3_8h_source.html#l00060">INVENSENSE3_SPI</a>, <a class="el" href="invensense3_8h_source.html#l00086">INVENSENSE3_UNKOWN</a>, <a class="el" href="esc__dshot_8c_source.html#l00109">Min</a>, <a class="el" href="invensense3_8h_source.html#l00169">invensense3_t::register_bank</a>, <a class="el" href="invensense3_8h_source.html#l00165">invensense3_t::rx_buffer</a>, <a class="el" href="invensense3_8h_source.html#l00167">invensense3_t::rx_length</a>, <a class="el" href="invensense3_8h_source.html#l00182">invensense3_t::sample_numbers</a>, <a class="el" href="invensense3_8h_source.html#l00181">invensense3_t::sample_size</a>, <a class="el" href="invensense3_8c_source.html#l00981">samples_from_odr()</a>, <a class="el" href="spi_8h_source.html#l00075">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00084">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00123">SPIDiv16</a>, <a class="el" href="spi_8h_source.html#l00090">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00112">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="invensense3_8h_source.html#l00156">invensense3_t::status</a>, and <a class="el" href="invensense3_8h_source.html#l00166">invensense3_t::tx_buffer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00044">imu_cube_init()</a>, and <a class="el" href="imu__icm42688_8c_source.html#l00044">imu_icm42688_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00044">imu_cube_init()</a>, <a class="el" href="imu__icm42688_8c_source.html#l00044">imu_icm42688_init()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00039">imu_pixhawk6x_init()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -961,9 +963,10 @@ SPI specific configuration. </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3_8h_afb15165a32a9461870f3e701c1771e0b_icgraph.png" border="0" usemap="#ainvensense3_8h_afb15165a32a9461870f3e701c1771e0b_icgraph" alt=""/></div>
 <map name="ainvensense3_8h_afb15165a32a9461870f3e701c1771e0b_icgraph" id="ainvensense3_8h_afb15165a32a9461870f3e701c1771e0b_icgraph">
-<area shape="rect" title="Initialize the invensense v3 sensor instance." alt="" coords="200,31,332,57"/>
-<area shape="rect" href="imu__cube_8c.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="22,5,135,32"/>
-<area shape="rect" href="imu__icm42688_8c.html#a8a1f8135cb291a0070ecbe78ccddfdf1" title=" " alt="" coords="5,56,152,83"/>
+<area shape="rect" title="Initialize the invensense v3 sensor instance." alt="" coords="207,56,339,83"/>
+<area shape="rect" href="imu__cube_8c.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="25,5,139,32"/>
+<area shape="rect" href="imu__icm42688_8c.html#a8a1f8135cb291a0070ecbe78ccddfdf1" title=" " alt="" coords="9,56,155,83"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html#accde32895e055b5a41c2473f7e091067" title=" " alt="" coords="5,107,159,133"/>
 </map>
 </div>
 
@@ -1002,7 +1005,7 @@ SPI specific configuration. </td></tr>
 
 <p class="reference">References <a class="el" href="invensense3_8h_source.html#l00160">invensense3_t::bus</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="invensense3__regs_8h_source.html#l00052">INV3REG_FIFO_COUNTH</a>, <a class="el" href="invensense3__regs_8h_source.html#l00049">INV3REG_TEMP_DATA1</a>, <a class="el" href="invensense3__regs_8h_source.html#l00146">INV3REG_WHO_AM_I</a>, <a class="el" href="invensense3_8c_source.html#l00837">invensense3_config()</a>, <a class="el" href="invensense3_8h_source.html#l00067">INVENSENSE3_CONFIG</a>, <a class="el" href="invensense3_8c_source.html#l00216">invensense3_fifo_sample_size</a>, <a class="el" href="invensense3_8h_source.html#l00061">INVENSENSE3_I2C</a>, <a class="el" href="invensense3_8h_source.html#l00066">INVENSENSE3_IDLE</a>, <a class="el" href="invensense3_8h_source.html#l00074">INVENSENSE3_PARSER_FIFO</a>, <a class="el" href="invensense3_8h_source.html#l00073">INVENSENSE3_PARSER_REGISTERS</a>, <a class="el" href="invensense3_8c_source.html#l00763">invensense3_register_read()</a>, <a class="el" href="invensense3_8h_source.html#l00068">INVENSENSE3_RUNNING</a>, <a class="el" href="invensense3_8h_source.html#l00060">INVENSENSE3_SPI</a>, <a class="el" href="esc__dshot_8c_source.html#l00109">Min</a>, <a class="el" href="invensense3_8h_source.html#l00158">invensense3_t::parser</a>, <a class="el" href="invensense3_8h_source.html#l00182">invensense3_t::sample_numbers</a>, <a class="el" href="invensense3_8h_source.html#l00181">invensense3_t::sample_size</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="invensense3_8h_source.html#l00156">invensense3_t::status</a>, and <a class="el" href="invensense3_8h_source.html#l00171">invensense3_t::timer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00131">imu_cube_periodic()</a>, and <a class="el" href="imu__icm42688_8c_source.html#l00066">imu_icm42688_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00131">imu_cube_periodic()</a>, <a class="el" href="imu__icm42688_8c_source.html#l00066">imu_icm42688_periodic()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00112">imu_pixhawk6x_periodic()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1030,9 +1033,10 @@ SPI specific configuration. </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3_8h_a0b9771396c3e1f672d42ea863cd624f1_icgraph.png" border="0" usemap="#ainvensense3_8h_a0b9771396c3e1f672d42ea863cd624f1_icgraph" alt=""/></div>
 <map name="ainvensense3_8h_a0b9771396c3e1f672d42ea863cd624f1_icgraph" id="ainvensense3_8h_a0b9771396c3e1f672d42ea863cd624f1_icgraph">
-<area shape="rect" title="Should be called periodically to request sensor readings." alt="" coords="231,31,393,57"/>
-<area shape="rect" href="imu__cube_8c.html#a28edd767495c5986bcbcba863b0f25e1" title=" " alt="" coords="22,5,166,32"/>
-<area shape="rect" href="imu__icm42688_8c.html#a490a83476688402dd0ad1e4401ba97bf" title=" " alt="" coords="5,56,183,83"/>
+<area shape="rect" title="Should be called periodically to request sensor readings." alt="" coords="237,56,400,83"/>
+<area shape="rect" href="imu__cube_8c.html#a28edd767495c5986bcbcba863b0f25e1" title=" " alt="" coords="25,5,169,32"/>
+<area shape="rect" href="imu__icm42688_8c.html#a490a83476688402dd0ad1e4401ba97bf" title=" " alt="" coords="9,56,186,83"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html#afb8372132c62ca65ad81c9c90665c3e0" title=" " alt="" coords="5,107,189,133"/>
 </map>
 </div>
 
@@ -1044,7 +1048,7 @@ SPI specific configuration. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="invensense3_8h.html">invensense3.h</a></li>
-    <li class="footer">Generated on Fri May 24 2024 13:36:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 19:34:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

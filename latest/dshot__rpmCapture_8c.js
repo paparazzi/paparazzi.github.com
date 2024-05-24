@@ -3,7 +3,7 @@ var dshot__rpmCapture_8c =
     [ "nullptr", "dshot__rpmCapture_8c.html#ab979d9d4b4923f7c54d6caa6e1a61936", null ],
     [ "SWTICH_TO_CAPTURE_BASE_TIMOUT", "dshot__rpmCapture_8c.html#ae435049a79d5606c4c29205faacb90e9", null ],
     [ "buildDmaConfig", "dshot__rpmCapture_8c.html#a3e3f18c4bd1e9762049acb037c321d24", null ],
-    [ "dmaErrCb", "dshot__rpmCapture_8c.html#a45ccc2e2eac485fa09a85271017a458d", null ],
+    [ "dmaErrCb", "dshot__rpmCapture_8c.html#a4d3792f496bfa66a873a965b9bdf030d", null ],
     [ "dshotRpmCaptureStart", "dshot__rpmCapture_8c.html#a443d38d898c711c618e5181b92e4d3b7", null ],
     [ "dshotRpmCaptureStop", "dshot__rpmCapture_8c.html#ac178c957f873e5d949cce08921ce8490", null ],
     [ "dshotRpmCatchErps", "dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51", null ],

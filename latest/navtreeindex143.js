@@ -1,9 +1,5 @@
 var NAVTREEINDEX143 =
 {
-"mpu9250__regs_8h.html#a886b8c3aee5414fd6441dee84db5ec97ae307469aa1590462310cab5787d2a3ca":[12,0,1,0,7,101,74,3],
-"mpu9250__regs_8h.html#a886b8c3aee5414fd6441dee84db5ec97ae6452449a30cc4fcfaa71f668de37df8":[12,0,1,0,7,101,74,6],
-"mpu9250__regs_8h.html#a8b1f5d75e722cf092e4263bfa8c2d878":[12,0,1,0,7,101,38],
-"mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373e":[12,0,1,0,7,101,70],
 "mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373ea02ba9f7afd38b26e8bc3a7a74cea2c11":[12,0,1,0,7,101,70,3],
 "mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373ea3054399eeec7da1a99d5d3623d8c7390":[12,0,1,0,7,101,70,0],
 "mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373ea9db42e7de8915468af56dfaf7343eaf5":[12,0,1,0,7,101,70,1],
@@ -76,8 +72,8 @@ var NAVTREEINDEX143 =
 "mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f":[12,0,1,0,7,103,8],
 "mpu9250__spi_8h.html#a8dc8003465b7482470f4a0cbb09162b5":[12,0,1,0,7,103,3],
 "mpu9250__spi_8h.html#aacd69bb71fd7707e60ffb0d4494cdd14":[12,0,1,0,7,103,0,7],
-"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,2,1],
 "mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,1,0],
+"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,2,1],
 "mpu9250__spi_8h.html#ab18fbb08c6cdf28dc9941409cc1f8ab2":[12,0,1,0,7,103,0,8],
 "mpu9250__spi_8h.html#abd46fc21482208fb51aa03d4ca966ab0":[12,0,1,0,7,103,4],
 "mpu9250__spi_8h.html#ac2dd10aae108d1259b0d5bcb9258fdc2":[12,0,1,0,7,103,0,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX143 =
 "ms5611__spi_8h.html#ac381942933d86255a7abe38fcef1ce28":[12,0,1,0,7,112,0,6],
 "ms5611__spi_8h.html#ac9198d857286e8fd2fbdfac49d492481":[12,0,1,0,7,112,0,7],
 "ms5611__spi_8h.html#ad675f17b7fb527f6170b5a18bf09b5bd":[12,0,1,0,7,112,5],
-"ms5611__spi_8h.html#af13fcce5dd7dd39aa88d5ddc1c6184ed":[12,0,1,0,7,112,0,3]
+"ms5611__spi_8h.html#af13fcce5dd7dd39aa88d5ddc1c6184ed":[12,0,1,0,7,112,0,3],
+"ms5611__spi_8h.html#structMs5611__Spi":[12,0,1,0,7,112,0],
+"ms5611__spi_8h_source.html":[12,0,1,0,7,112],
+"msg__queue_8c.html":[12,0,1,0,6,42,0,0],
+"msg__queue_8c.html#a0f51e84b25a2e05a3b905dcf826c4446":[12,0,1,0,6,42,0,0,6]
 };

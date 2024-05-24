@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* USB mass storage configuration */</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="usbStorage_8c.html#a31c73d476eb4aef478f20c016b4f6761">   64</a></span>&#160;<span class="keyword">static</span> <a class="code" href="structUSBMassStorageConfig.html">USBMassStorageConfig</a> <a class="code" href="usbStorage_8c.html#a31c73d476eb4aef478f20c016b4f6761">msdConfig</a> = {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  &amp;USBD1,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  (BaseBlockDevice *) &amp;SDCD1,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  (BaseBlockDevice *) &amp;SDLOG_SDIO,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="usb__msd_8h.html#a73e814d361e117119a425401b39dd7ad">USB_MS_DATA_EP</a>,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  &amp;<a class="code" href="usbStorage_8c.html#a61324eacdf529369618ac16356918c47">usbActivity</a>,</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="stringliteral">&quot;Pprz_sd&quot;</span>,</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="comment">/* connect sdcard sdc interface sdio */</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b">sdio_connect</a>() == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e">sdio_connect</a>(&amp;SDLOG_SDIO) == <span class="keyword">false</span>) {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    chThdExit(MSG_TIMEOUT);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
@@ -277,8 +277,8 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div class="ttc" id="amain__chibios_8h_html"><div class="ttname"><a href="main__chibios_8h.html">main_chibios.h</a></div></div>
 <div class="ttc" id="amcu_8h_html"><div class="ttname"><a href="mcu_8h.html">mcu.h</a></div><div class="ttdoc">Arch independent mcu ( Micro Controller Unit ) utilities.</div></div>
 <div class="ttc" id="asdio_8h_html"><div class="ttname"><a href="sdio_8h.html">sdio.h</a></div><div class="ttdoc">arch independent SDIO API</div></div>
-<div class="ttc" id="asdio__arch_8c_html_a55d0f878fb169bbdd445d86648ee562b"><div class="ttname"><a href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b">sdio_connect</a></div><div class="ttdeci">bool sdio_connect(void)</div><div class="ttdoc">Connect a SD card on SDIO peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00048">sdio_arch.c:48</a></div></div>
-<div class="ttc" id="asdlog__chibios_8c_html_a9f9b049b6368d8306e16bad97dd30b91"><div class="ttname"><a href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91">sdlog_chibios_finish</a></div><div class="ttdeci">void sdlog_chibios_finish(const bool flush)</div><div class="ttdef"><b>Definition:</b> <a href="sdlog__chibios_8c_source.html#l00218">sdlog_chibios.c:218</a></div></div>
+<div class="ttc" id="asdio__arch_8c_html_a2c7a19d188134c5cc92b8384d9c5328e"><div class="ttname"><a href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e">sdio_connect</a></div><div class="ttdeci">bool sdio_connect(SDCDriver *sdc)</div><div class="ttdoc">Connect a SD card on SDIO peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00048">sdio_arch.c:48</a></div></div>
+<div class="ttc" id="asdlog__chibios_8c_html_a9f9b049b6368d8306e16bad97dd30b91"><div class="ttname"><a href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91">sdlog_chibios_finish</a></div><div class="ttdeci">void sdlog_chibios_finish(const bool flush)</div><div class="ttdef"><b>Definition:</b> <a href="sdlog__chibios_8c_source.html#l00207">sdlog_chibios.c:207</a></div></div>
 <div class="ttc" id="asdlog__chibios_8h_html"><div class="ttname"><a href="sdlog__chibios_8h.html">sdlog_chibios.h</a></div></div>
 <div class="ttc" id="astructUSBMassStorageConfig_html"><div class="ttname"><a href="structUSBMassStorageConfig.html">USBMassStorageConfig</a></div><div class="ttdoc">Driver configuration structure.</div><div class="ttdef"><b>Definition:</b> <a href="usb__msd_8h_source.html#l00123">usb_msd.h:123</a></div></div>
 <div class="ttc" id="ausbStorage_8c_html_a03e36a472f457f472fc7031d798eac45"><div class="ttname"><a href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">thdUsbStorage</a></div><div class="ttdeci">static void thdUsbStorage(void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="usbStorage_8c_source.html#l00100">usbStorage.c:100</a></div></div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="usbStorage_8c.html">usbStorage.c</a></li>
-    <li class="footer">Generated on Fri May 24 2024 13:36:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 19:34:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"actuators__spektrum_8h.html#abb2976a5407c78fb22f74d2c631dc2c8":[12,0,1,0,6,0,20,5],
+"actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2":[12,0,1,0,6,0,20,0,1],
+"actuators__spektrum_8h.html#structActuatorsSpektrum":[12,0,1,0,6,0,20,0],
 "actuators__spektrum_8h_source.html":[12,0,1,0,6,0,20],
 "actuators__sts3032_8c.html":[12,0,1,0,6,0,21],
 "actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f":[12,0,1,0,6,0,21,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "ads1114_8h.html#adddacca05183c4dfb80c7accbc04c584":[12,0,1,0,7,1,11],
 "ads1114_8h.html#af1ae9279a23301b436a1faccfc6e8f66":[12,0,1,0,7,1,30],
 "ads1114_8h.html#af3cf6229205824d52016065afa83b4fb":[12,0,1,0,7,1,8],
-"ads1114_8h.html#af852e9f5c21120ead07e885e3f38a37b":[12,0,1,0,7,1,17],
-"ads1114_8h.html#structads1114__periph":[12,0,1,0,7,1,0],
-"ads1114_8h_source.html":[12,0,1,0,7,1],
-"ads1220_8c.html":[12,0,1,0,7,2]
+"ads1114_8h.html#af852e9f5c21120ead07e885e3f38a37b":[12,0,1,0,7,1,17]
 };

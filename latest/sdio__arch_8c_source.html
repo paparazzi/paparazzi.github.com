@@ -128,9 +128,9 @@ $(document).ready(function(){initNavTree('sdio__arch_8c_source.html',''); initRe
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#ad6c8f6f188bd7bc2ed529f0ba75582f9">   45</a></span>&#160;<span class="keyword">static</span> <span class="keyword">enum</span> {<a class="code" href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba679ee5320d66c8322e310daeb2ee99b8">STOP</a>, <a class="code" href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba20391dd2915a0e64343d24c2f2e40b95">CONNECT</a>} <a class="code" href="sdio__arch_8c.html#ad6c8f6f188bd7bc2ed529f0ba75582f9">cnxState</a> = <a class="code" href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba679ee5320d66c8322e310daeb2ee99b8">STOP</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b">   48</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b">sdio_connect</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e">   48</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e">sdio_connect</a>(<a class="code" href="sdio_8h.html#abc967e01f81177c1dffbea49b37fc4a8">SDCDriver</a> *sdc)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (!sdc_lld_is_card_inserted(NULL)) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (!sdc_lld_is_card_inserted(sdc)) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
@@ -140,12 +140,12 @@ $(document).ready(function(){initNavTree('sdio__arch_8c_source.html',''); initRe
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Try only 3 times to prevent hanging</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    sdcStart(&amp;SDCD1, NULL);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (sdcConnect(&amp;SDCD1) == HAL_SUCCESS) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    sdcStart(sdc, NULL);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (sdcConnect(sdc) == HAL_SUCCESS) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="sdio__arch_8c.html#ad6c8f6f188bd7bc2ed529f0ba75582f9">cnxState</a> = <a class="code" href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba20391dd2915a0e64343d24c2f2e40b95">CONNECT</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    sdcStop(&amp;SDCD1);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    sdcStop(sdc);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    chThdSleepMilliseconds(100);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
@@ -153,32 +153,33 @@ $(document).ready(function(){initNavTree('sdio__arch_8c_source.html',''); initRe
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877">   73</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877">sdio_disconnect</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782">   73</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782">sdio_disconnect</a>(<a class="code" href="sdio_8h.html#abc967e01f81177c1dffbea49b37fc4a8">SDCDriver</a> *sdc)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sdio__arch_8c.html#ad6c8f6f188bd7bc2ed529f0ba75582f9">cnxState</a> == <a class="code" href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba679ee5320d66c8322e310daeb2ee99b8">STOP</a>) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (sdcDisconnect(&amp;SDCD1)) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (sdcDisconnect(sdc)) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  sdcStop(&amp;SDCD1);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  sdcStop(sdc);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="sdio__arch_8c.html#ad6c8f6f188bd7bc2ed529f0ba75582f9">cnxState</a> = <a class="code" href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba679ee5320d66c8322e310daeb2ee99b8">STOP</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#a46b5eac7cb18806fb22adf89e65141e1">   86</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdio__arch_8c.html#a46b5eac7cb18806fb22adf89e65141e1">is_card_inserted</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="sdio__arch_8c.html#ade01ac5cf1689603f55555c7e1550e4a">   86</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdio__arch_8c.html#ade01ac5cf1689603f55555c7e1550e4a">is_card_inserted</a>(<a class="code" href="sdio_8h.html#abc967e01f81177c1dffbea49b37fc4a8">SDCDriver</a> *sdc)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> sdc_lld_is_card_inserted(NULL);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> sdc_lld_is_card_inserted(sdc);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="ttc" id="agpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div><div class="ttdoc">Some architecture independent helper functions for GPIOs.</div></div>
 <div class="ttc" id="asdio_8h_html"><div class="ttname"><a href="sdio_8h.html">sdio.h</a></div><div class="ttdoc">arch independent SDIO API</div></div>
+<div class="ttc" id="asdio_8h_html_abc967e01f81177c1dffbea49b37fc4a8"><div class="ttname"><a href="sdio_8h.html#abc967e01f81177c1dffbea49b37fc4a8">SDCDriver</a></div><div class="ttdeci">struct SDCDriver SDCDriver</div><div class="ttdef"><b>Definition:</b> <a href="sdio_8h_source.html#l00001">sdio.h:30</a></div></div>
 <div class="ttc" id="asdio__arch_8c_html_a06fc87d81c62e9abb8790b6e5713c55ba20391dd2915a0e64343d24c2f2e40b95"><div class="ttname"><a href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba20391dd2915a0e64343d24c2f2e40b95">CONNECT</a></div><div class="ttdeci">@ CONNECT</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00045">sdio_arch.c:45</a></div></div>
 <div class="ttc" id="asdio__arch_8c_html_a06fc87d81c62e9abb8790b6e5713c55ba679ee5320d66c8322e310daeb2ee99b8"><div class="ttname"><a href="sdio__arch_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba679ee5320d66c8322e310daeb2ee99b8">STOP</a></div><div class="ttdeci">@ STOP</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00045">sdio_arch.c:45</a></div></div>
-<div class="ttc" id="asdio__arch_8c_html_a1aaca4bd6a01a576869aa133f5fe0877"><div class="ttname"><a href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877">sdio_disconnect</a></div><div class="ttdeci">bool sdio_disconnect(void)</div><div class="ttdoc">Disconnect a SD card on SDIO peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00073">sdio_arch.c:73</a></div></div>
-<div class="ttc" id="asdio__arch_8c_html_a46b5eac7cb18806fb22adf89e65141e1"><div class="ttname"><a href="sdio__arch_8c.html#a46b5eac7cb18806fb22adf89e65141e1">is_card_inserted</a></div><div class="ttdeci">bool is_card_inserted(void)</div><div class="ttdoc">Check if a SD card is inserted.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00086">sdio_arch.c:86</a></div></div>
-<div class="ttc" id="asdio__arch_8c_html_a55d0f878fb169bbdd445d86648ee562b"><div class="ttname"><a href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b">sdio_connect</a></div><div class="ttdeci">bool sdio_connect(void)</div><div class="ttdoc">Connect a SD card on SDIO peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00048">sdio_arch.c:48</a></div></div>
+<div class="ttc" id="asdio__arch_8c_html_a2c7a19d188134c5cc92b8384d9c5328e"><div class="ttname"><a href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e">sdio_connect</a></div><div class="ttdeci">bool sdio_connect(SDCDriver *sdc)</div><div class="ttdoc">Connect a SD card on SDIO peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00048">sdio_arch.c:48</a></div></div>
 <div class="ttc" id="asdio__arch_8c_html_ad6c8f6f188bd7bc2ed529f0ba75582f9"><div class="ttname"><a href="sdio__arch_8c.html#ad6c8f6f188bd7bc2ed529f0ba75582f9">cnxState</a></div><div class="ttdeci">static enum @0 cnxState</div></div>
+<div class="ttc" id="asdio__arch_8c_html_ade01ac5cf1689603f55555c7e1550e4a"><div class="ttname"><a href="sdio__arch_8c.html#ade01ac5cf1689603f55555c7e1550e4a">is_card_inserted</a></div><div class="ttdeci">bool is_card_inserted(SDCDriver *sdc)</div><div class="ttdoc">Check if a SD card is inserted.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00086">sdio_arch.c:86</a></div></div>
+<div class="ttc" id="asdio__arch_8c_html_af6dbef3fa5acad94ac78155c3dea1782"><div class="ttname"><a href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782">sdio_disconnect</a></div><div class="ttdeci">bool sdio_disconnect(SDCDriver *sdc)</div><div class="ttdoc">Disconnect a SD card on SDIO peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="sdio__arch_8c_source.html#l00073">sdio_arch.c:73</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="astd_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="astd_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
@@ -189,7 +190,7 @@ $(document).ready(function(){initNavTree('sdio__arch_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sdio__arch_8c.html">sdio_arch.c</a></li>
-    <li class="footer">Generated on Fri May 24 2024 13:36:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 19:34:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

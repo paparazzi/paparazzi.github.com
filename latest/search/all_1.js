@@ -79,7 +79,7 @@ var searchData=
   ['_5fbutton_5fpin_77',['_BUTTON_PIN',['../cc2500__settings_8c.html#a551d743103b59b83409b006d5ca458d7',1,'cc2500_settings.c']]],
   ['_5fcan_5frun_5frx_5fcallback_78',['_can_run_rx_callback',['../can__arch_8c.html#a29e5282665581fc7533fb24eb96bf30c',1,'_can_run_rx_callback(uint32_t id, uint8_t *buf, uint8_t len):&#160;can.c'],['../can_8c.html#a29e5282665581fc7533fb24eb96bf30c',1,'_can_run_rx_callback(uint32_t id, uint8_t *buf, uint8_t len):&#160;can.c']]],
   ['_5fchibios_5fhal_5fconf_5f_79',['_CHIBIOS_HAL_CONF_',['../group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84',1,'halconf.h']]],
-  ['_5fchibios_5fhal_5fconf_5fver_5f8_5f0_5f_80',['_CHIBIOS_HAL_CONF_VER_8_0_',['../group__HAL__CONF.html#gae4d2ee57d42f6bf6ab17cf6ea78fbf4e',1,'halconf.h']]],
+  ['_5fchibios_5fhal_5fconf_5fver_5f8_5f4_5f_80',['_CHIBIOS_HAL_CONF_VER_8_4_',['../group__HAL__CONF.html#gaf8237f3d00eec30ca14f7e1e5005ebea',1,'halconf.h']]],
   ['_5fchibios_5frt_5fconf_5f_81',['_CHIBIOS_RT_CONF_',['../group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f',1,'chconf.h']]],
   ['_5fchibios_5frt_5fconf_5fver_5f7_5f0_5f_82',['_CHIBIOS_RT_CONF_VER_7_0_',['../group__config.html#ga4d90d456801e0adb9b5789884699c60f',1,'chconf.h']]],
   ['_5fchvsnprintf_83',['_chvsnprintf',['../group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26',1,'printf.c']]],

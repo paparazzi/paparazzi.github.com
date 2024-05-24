@@ -1425,6 +1425,12 @@ var onboard_modules =
         [ "Raw imu_openpilot_revo_nano.xml file:", "module__imu_openpilot_revo_nano.html#module_xml__imu_openpilot_revo_nano", null ]
       ] ]
     ] ],
+    [ "imu_pixhawk6x module", "module__imu_pixhawk6x.html", [
+      [ "Example for airframe file", "module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x", null ],
+      [ "Module functions", "module__imu_pixhawk6x.html#functions__imu_pixhawk6x", [
+        [ "Raw imu_pixhawk6x.xml file:", "module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x", null ]
+      ] ]
+    ] ],
     [ "imu_px4fmu_v1.7 module", "module__imu_px4fmu_v1_7.html", [
       [ "Example for airframe file", "module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7", null ],
       [ "Module configuration options", "module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7", null ],

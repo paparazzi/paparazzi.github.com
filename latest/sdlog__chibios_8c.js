@@ -1,6 +1,5 @@
 var sdlog__chibios_8c =
 [
-    [ "DefaultAdcOfVoltage", "sdlog__chibios_8c.html#a03d90924160b7c7b2c069eb0b22764f2", null ],
     [ "SDLOG_AUTO_FLUSH_PERIOD", "sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4", null ],
     [ "SDLOG_CONTIGUOUS_STORAGE_MEM", "sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6", null ],
     [ "SDLOG_START_DELAY", "sdlog__chibios_8c.html#abb202e6b58d213508879a54bf05251bb", null ],
@@ -9,7 +8,6 @@ var sdlog__chibios_8c =
     [ "logger_log_msg_up", "sdlog__chibios_8c.html#a6f2735648e3811dabee7dc1e995fb175", null ],
     [ "null_byte_function", "sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690", null ],
     [ "null_function", "sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca", null ],
-    [ "powerOutageIsr", "sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74", null ],
     [ "sdlog_check_free_space", "sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9", null ],
     [ "sdlog_chibios_finish", "sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91", null ],
     [ "sdlog_chibios_init", "sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a", null ],
@@ -17,18 +15,13 @@ var sdlog__chibios_8c =
     [ "sdlog_transmit", "sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9", null ],
     [ "sdlog_transmit_buffer", "sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421", null ],
     [ "send_sdlog_status", "sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102", null ],
-    [ "thd_bat_survey", "sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731", null ],
     [ "thd_startlog", "sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109", null ],
-    [ "THD_WORKING_AREA", "sdlog__chibios_8c.html#ab0bee2b698df718ac9c34f76b0b4c322", null ],
     [ "chibios_sdlog", "sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63", null ],
     [ "chibios_sdlog_filenames", "sdlog__chibios_8c.html#ae10f69027b3fe9dc11978cbb6039f038", null ],
     [ "chibios_sdlog_status", "sdlog__chibios_8c.html#ab122ffe1193ca648bef2f1e5947aeb1d", null ],
     [ "NO_FILE_NAME", "sdlog__chibios_8c.html#ac4906480516463672f35682ae66f139b", null ],
-    [ "powerOutageListener", "sdlog__chibios_8c.html#aa1f82d465033fcb9e099049cb9bdc785", null ],
-    [ "powerOutageSource", "sdlog__chibios_8c.html#a7d247e5ccfb8b9a4bb1eb4fe13c8fd53", null ],
     [ "PPRZ_LOG_DIR", "sdlog__chibios_8c.html#a9988fa9164781fcdba3d62a105567140", null ],
     [ "PPRZ_LOG_NAME", "sdlog__chibios_8c.html#ace5244a4001a7470da6fafbb2b4be96e", null ],
     [ "pprzLogFile", "sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d", null ],
-    [ "sdOk", "sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71", null ],
-    [ "V_ALERT", "sdlog__chibios_8c.html#a93ed7af6c2763727abe70e57dbf2ca77", null ]
+    [ "sdOk", "sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71", null ]
 ];

@@ -210,6 +210,7 @@ var cube_2orange_2board_8h =
     [ "LINE_VDD_5V_PERIPH_OC", "cube_2orange_2board_8h.html#a9430f62fc707c7ae1161ddcaec818daa", null ],
     [ "LINE_VDD_BACKUP_VALID", "cube_2orange_2board_8h.html#a81ab8d71d932105e5b48f6f287689399", null ],
     [ "LINE_VDD_BRICK_VALID", "cube_2orange_2board_8h.html#aba8547f7e414a3d39ca8f8f3cb936caa", null ],
+    [ "MCUCONF_H7", "cube_2orange_2board_8h.html#a81c5563f3602a0c9cab6fee27d54f668", null ],
     [ "PA00_UART4_TX", "cube_2orange_2board_8h.html#a95cb54c7e3019bd698852475bb257195", null ],
     [ "PA01_UART4_RX", "cube_2orange_2board_8h.html#a8d06c48cb48224a770daed70d18efea3", null ],
     [ "PA02_ADC1", "cube_2orange_2board_8h.html#a3bebbc5ecacec096ac504979e2f149bd", null ],

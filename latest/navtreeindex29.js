@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"cc2500__smartport_8c.html#a14bd13726365e4d1657a4ef547058909":[12,0,1,0,6,56,0,20,0,0],
+"cc2500__smartport_8c.html#a1e27caac04195f159dcd9e65ac2a8ca3":[12,0,1,0,6,56,0,20,13],
+"cc2500__smartport_8c.html#a25c89eefa21629f2aa404974b8bd67ad":[12,0,1,0,6,56,0,20,8],
 "cc2500__smartport_8c.html#a2ad1ff1cc261c1961bf8d4f37846f580":[12,0,1,0,6,56,0,20,12],
 "cc2500__smartport_8c.html#a34331e4923adaea6cc4633276350fb47":[12,0,1,0,6,56,0,20,10],
 "cc2500__smartport_8c.html#a3f1e34d3c2e9c97a2b2bb2ed736ca7b5":[12,0,1,0,6,56,0,20,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX29 =
 "chibios_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9":[12,0,1,0,0,0,7,1],
 "chibios_2led__hw_8h.html#aa9479a9a1c2367d23cb3df268c826148":[12,0,1,0,0,0,7,2],
 "chibios_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b":[12,0,1,0,0,0,7,9],
-"chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[12,0,1,0,0,0,7,10],
-"chibios_2led__hw_8h_source.html":[12,0,1,0,0,0,7],
-"chibios_2mcu__arch_8c.html":[12,0,1,0,0,0,8],
-"chibios_2mcu__arch_8c.html#a0e8e546b23061d763841bfe2f6d3a8b4":[12,0,1,0,0,0,8,0]
+"chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[12,0,1,0,0,0,7,10]
 };

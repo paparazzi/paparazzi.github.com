@@ -98,6 +98,7 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; value=&quot;10&quot; unit=&quot;s&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; value=&quot;50&quot; unit=&quot;Mo&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_PREFLIGHT_ERROR&quot; value=&quot;FALSE&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SDLOG_SDIO&quot; value=&quot;SDCDx&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__logger_sd_chibios"></a>
@@ -105,6 +106,8 @@ Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
+<li><b>name:</b> <code>SDLOG_SDIO</code> <b>value:</b> <em>SDCDx</em> <br  />
+ Description: The SDC device which the SD card is connected to. Default: SDCD1</li>
 <li><b>name:</b> <code>SDLOG_LED</code> <b>value:</b> <em>none|num</em> <br  />
  Description: LED number or 'none' to disable. Default: none</li>
 </ul>
@@ -167,6 +170,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">      <span class="keyword">Files</span> <span class="keyword">are</span> <span class="keyword">written</span> <span class="keyword">on</span> <span class="keyword">a</span> <span class="keyword">FAT</span> <span class="keyword">file</span> <span class="keyword">system</span> <span class="keyword">using</span> <span class="keyword">the</span> <span class="keyword">FatFS</span> <span class="keyword">library</span> <span class="keyword">and</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">accessed</span></div>
 <div class="line">      <span class="keyword">by</span> <span class="keyword">using</span> <span class="keyword">the</span> <span class="keyword">autopilot</span> <span class="keyword">as</span> <span class="keyword">a</span> <span class="keyword">mass</span> <span class="keyword">storage</span> (<span class="keyword">plug</span> <span class="keyword">USB</span> <span class="keyword">while</span> <span class="keyword">the</span> <span class="keyword">board</span> <span class="keyword">is</span> <span class="keyword">running</span>).</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_SDIO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SDCDx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The SDC device which the SD card is connected to. Default: SDCD1&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none|num&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number or &#39;none&#39; to disable. Default: none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_START_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;30&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_AUTO_FLUSH_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Data flush period. Shorter period may decrease performances. Default: 10s&quot;</span>/&gt;</div>
@@ -189,8 +193,17 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;sdlog_chibios_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;INFO_MSG_UP&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;logger_log_msg_up(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">    <span class="comment">&lt;!-- LED --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SDLOG_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(SDLOG_LED),none)&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- SDMMC device --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_SDIO&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SDCD1&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_SDIO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SDLOG_SDIO_UPPER)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FATFS_HAL_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SDLOG_SDIO_UPPER)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SDLOG_SDIO_UPPER)&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Files --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/sdLog.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/msg_queue.c&quot;</span>/&gt;</div>
@@ -199,6 +212,8 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/usb_msd.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/usbStorage.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdio_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Configuration --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_USE_RTC&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_FATFS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;HAL_USE_RTC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq (,$(findstring $(SDLOG_USE_RTC),0 FALSE))&quot;</span>/&gt;</div>
@@ -213,7 +228,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 24 2024 13:36:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 19:34:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
