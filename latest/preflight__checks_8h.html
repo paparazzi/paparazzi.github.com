@@ -147,7 +147,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a44147825b488fa3cf8ebb75192f9415c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a preflight error used inside the preflight checking functions.  <a href="preflight__checks_8h.html#a44147825b488fa3cf8ebb75192f9415c">More...</a><br /></td></tr>
 <tr class="separator:a44147825b488fa3cf8ebb75192f9415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec4f63b2733608607f6a20188368783"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="preflight__checks_8h.html#adec4f63b2733608607f6a20188368783">preflight_warning</a> (struct <a class="el" href="preflight__checks_8h.html#structpreflight__result__t">preflight_result_t</a> *result, const char *fmt,...)</td></tr>
-<tr class="memdesc:adec4f63b2733608607f6a20188368783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a preflight error used inside the preflight checking functions.  <a href="preflight__checks_8h.html#adec4f63b2733608607f6a20188368783">More...</a><br /></td></tr>
+<tr class="memdesc:adec4f63b2733608607f6a20188368783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a preflight warning used inside the preflight checking functions.  <a href="preflight__checks_8h.html#adec4f63b2733608607f6a20188368783">More...</a><br /></td></tr>
 <tr class="separator:adec4f63b2733608607f6a20188368783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b367b7eff152e0b65185b1192056985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="preflight__checks_8h.html#a6b367b7eff152e0b65185b1192056985">preflight_success</a> (struct <a class="el" href="preflight__checks_8h.html#structpreflight__result__t">preflight_result_t</a> *result, const char *fmt,...)</td></tr>
 <tr class="memdesc:a6b367b7eff152e0b65185b1192056985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a preflight success used inside the preflight checking functions.  <a href="preflight__checks_8h.html#a6b367b7eff152e0b65185b1192056985">More...</a><br /></td></tr>
@@ -157,6 +157,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a9294b87de38a4acdbe6319383646e5b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="preflight__checks_8h.html#a9294b87de38a4acdbe6319383646e5b0">preflight_bypass</a></td></tr>
 <tr class="separator:a9294b87de38a4acdbe6319383646e5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bb3b2aeab6067d5b53af010085f2bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="preflight__checks_8h.html#ab2bb3b2aeab6067d5b53af010085f2bf">preflight_ground_done</a></td></tr>
+<tr class="separator:ab2bb3b2aeab6067d5b53af010085f2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Freek van Tienen <a href="#" onclick="location.href='mai'+'lto:'+'fre'+'ek'+'.v.'+'ti'+'ene'+'n@'+'gma'+'il'+'.co'+'m'; return false;">freek<span style="display: none;">.nosp@m.</span>.v.t<span style="display: none;">.nosp@m.</span>ienen<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> Adds preflight checks for takeoff </dd></dl>
@@ -293,9 +295,9 @@ next</td>
 <dd>
 false When one or more preflight checks fail </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00075">75</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00082">82</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="preflight__checks_8h_source.html#l00036">preflight_result_t::fail_cnt</a>, <a class="el" href="preflight__checks_8h_source.html#l00044">preflight_check_t::func</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="preflight__checks_8h_source.html#l00035">preflight_result_t::max_len</a>, <a class="el" href="preflight__checks_8h_source.html#l00034">preflight_result_t::message</a>, <a class="el" href="preflight__checks_8h_source.html#l00045">preflight_check_t::next</a>, <a class="el" href="preflight__checks_8c_source.html#l00043">PREFLIGHT_CHECK_INFO_TIMEOUT</a>, <a class="el" href="preflight__checks_8c_source.html#l00033">PREFLIGHT_CHECK_MAX_MSGBUF</a>, <a class="el" href="preflight__checks_8c_source.html#l00038">PREFLIGHT_CHECK_SEPERATOR</a>, <a class="el" href="preflight__checks_8c_source.html#l00052">preflight_head</a>, <a class="el" href="preflight__checks_8h_source.html#l00038">preflight_result_t::success_cnt</a>, and <a class="el" href="preflight__checks_8h_source.html#l00037">preflight_result_t::warning_cnt</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="preflight__checks_8h_source.html#l00036">preflight_result_t::fail_cnt</a>, <a class="el" href="preflight__checks_8h_source.html#l00044">preflight_check_t::func</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="preflight__checks_8h_source.html#l00035">preflight_result_t::max_len</a>, <a class="el" href="preflight__checks_8h_source.html#l00034">preflight_result_t::message</a>, <a class="el" href="preflight__checks_8h_source.html#l00045">preflight_check_t::next</a>, <a class="el" href="preflight__checks_8c_source.html#l00043">PREFLIGHT_CHECK_INFO_TIMEOUT</a>, <a class="el" href="preflight__checks_8c_source.html#l00033">PREFLIGHT_CHECK_MAX_MSGBUF</a>, <a class="el" href="preflight__checks_8c_source.html#l00038">PREFLIGHT_CHECK_SEPERATOR</a>, <a class="el" href="preflight__checks_8c_source.html#l00166">preflight_error()</a>, <a class="el" href="preflight__checks_8c_source.html#l00057">preflight_ground_done</a>, <a class="el" href="preflight__checks_8c_source.html#l00059">preflight_head</a>, <a class="el" href="preflight__checks_8c_source.html#l00250">preflight_success()</a>, <a class="el" href="preflight__checks_8h_source.html#l00038">preflight_result_t::success_cnt</a>, and <a class="el" href="preflight__checks_8h_source.html#l00037">preflight_result_t::warning_cnt</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00268">autopilot_arming_motors_on()</a>, and <a class="el" href="autopilot_8c_source.html#l00245">autopilot_set_motors_on()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -305,8 +307,10 @@ false When one or more preflight checks fail </dd></dl>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="preflight__checks_8h_ae885b124c74b27558830de225c7f82c6_cgraph.png" border="0" usemap="#apreflight__checks_8h_ae885b124c74b27558830de225c7f82c6_cgraph" alt=""/></div>
 <map name="apreflight__checks_8h_ae885b124c74b27558830de225c7f82c6_cgraph" id="apreflight__checks_8h_ae885b124c74b27558830de225c7f82c6_cgraph">
-<area shape="rect" title="Perform all the preflight checks." alt="" coords="5,5,127,32"/>
+<area shape="rect" title="Perform all the preflight checks." alt="" coords="5,56,127,83"/>
 <area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="175,5,320,32"/>
+<area shape="rect" href="preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="190,56,305,83"/>
+<area shape="rect" href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="180,107,315,133"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -384,9 +388,9 @@ false When one or more preflight checks fail </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00060">60</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00067">67</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
 
-<p class="reference">References <a class="el" href="preflight__checks_8h_source.html#l00044">preflight_check_t::func</a>, <a class="el" href="preflight__checks_8h_source.html#l00045">preflight_check_t::next</a>, and <a class="el" href="preflight__checks_8c_source.html#l00052">preflight_head</a>.</p>
+<p class="reference">References <a class="el" href="preflight__checks_8h_source.html#l00044">preflight_check_t::func</a>, <a class="el" href="preflight__checks_8h_source.html#l00045">preflight_check_t::next</a>, and <a class="el" href="preflight__checks_8c_source.html#l00059">preflight_head</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="agl__dist_8c_source.html#l00070">agl_dist_init()</a>, <a class="el" href="electrical_8c_source.html#l00128">electrical_init()</a>, <a class="el" href="gps_8c_source.html#l00321">gps_init()</a>, <a class="el" href="imu__heater_8c_source.html#l00127">imu_heater_init()</a>, <a class="el" href="airspeed__ms45xx__i2c_8c_source.html#l00194">ms45xx_i2c_init()</a>, <a class="el" href="pfc__actuators_8c_source.html#l00140">pfc_actuators_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00198">sdlog_chibios_init()</a>, and <a class="el" href="state_8c_source.html#l00057">stateInit()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -456,11 +460,11 @@ false When one or more preflight checks fail </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00150">150</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00166">166</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
 
 <p class="reference">References <a class="el" href="preflight__checks_8h_source.html#l00036">preflight_result_t::fail_cnt</a>, <a class="el" href="preflight__checks_8h_source.html#l00035">preflight_result_t::max_len</a>, <a class="el" href="preflight__checks_8h_source.html#l00034">preflight_result_t::message</a>, and <a class="el" href="preflight__checks_8c_source.html#l00038">PREFLIGHT_CHECK_SEPERATOR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pfc__actuators_8c_source.html#l00268">pfc_actuators_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pfc__actuators_8c_source.html#l00268">pfc_actuators_cb()</a>, and <a class="el" href="preflight__checks_8c_source.html#l00082">preflight_check()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -468,9 +472,37 @@ false When one or more preflight checks fail </dd></dl>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="preflight__checks_8h_a44147825b488fa3cf8ebb75192f9415c_icgraph.png" border="0" usemap="#apreflight__checks_8h_a44147825b488fa3cf8ebb75192f9415c_icgraph" alt=""/></div>
 <map name="apreflight__checks_8h_a44147825b488fa3cf8ebb75192f9415c_icgraph" id="apreflight__checks_8h_a44147825b488fa3cf8ebb75192f9415c_icgraph">
-<area shape="rect" title="Register a preflight error used inside the preflight checking functions." alt="" coords="372,5,487,32"/>
-<area shape="rect" href="pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2" title="Check the actuators with feedback." alt="" coords="192,5,324,32"/>
-<area shape="rect" href="pfc__actuators_8c.html#a5427595c53f8bae09c346eaffc347162" title="Register the preflight checks for the actuators." alt="" coords="5,5,144,32"/>
+<area shape="rect" title="Register a preflight error used inside the preflight checking functions." alt="" coords="1372,191,1487,218"/>
+<area shape="rect" href="pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2" title="Check the actuators with feedback." alt="" coords="1192,166,1324,193"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="1197,217,1319,243"/>
+<area shape="rect" href="pfc__actuators_8c.html#a5427595c53f8bae09c346eaffc347162" title="Register the preflight checks for the actuators." alt="" coords="970,166,1109,193"/>
+<area shape="rect" href="autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="935,217,1144,243"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="948,406,1131,433"/>
+<area shape="rect" href="autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="695,71,873,112"/>
+<area shape="rect" href="rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title=" " alt="" coords="458,5,611,47"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="461,71,608,112"/>
+<area shape="rect" href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="691,179,877,220"/>
+<area shape="rect" href="boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="691,289,877,315"/>
+<area shape="rect" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="717,340,851,381"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="687,406,881,433"/>
+<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="681,457,887,499"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="721,523,847,550"/>
+<area shape="rect" href="rotorcraft_2navigation_8h.html#abb5b5b70fd1fe437f42847bb103aa952" title=" " alt="" coords="724,574,844,601"/>
+<area shape="rect" href="rotorcraft_2navigation_8h.html#abf64106cb814fd5078fba37a4bc6bc65" title=" " alt="" coords="729,625,839,651"/>
+<area shape="rect" href="boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="436,137,633,163"/>
+<area shape="rect" href="boards_2disco_2actuators_8c.html#a0181db6b0eea7688d52e6b73b141549b" title=" " alt="" coords="444,187,625,214"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7" title="Failsafe checks." alt="" coords="467,239,603,280"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="444,305,625,331"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a81fb1ff1aa94a36356fd9ed6e2c72c61" title="Initialization function." alt="" coords="458,356,611,397"/>
+<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,422,616,449"/>
+<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="475,473,594,499"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="449,523,621,550"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="453,574,616,601"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922" title="Takeoff from lat long location." alt="" coords="221,523,383,550"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="471,625,598,651"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="216,599,388,626"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="221,650,383,677"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a15715a5e523bc1763a8acf867b26461c" title=" " alt="" coords="5,599,168,626"/>
 </map>
 </div>
 
@@ -518,11 +550,11 @@ false When one or more preflight checks fail </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00234">234</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00250">250</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
 
 <p class="reference">References <a class="el" href="preflight__checks_8h_source.html#l00038">preflight_result_t::success_cnt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pfc__actuators_8c_source.html#l00268">pfc_actuators_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pfc__actuators_8c_source.html#l00268">pfc_actuators_cb()</a>, and <a class="el" href="preflight__checks_8c_source.html#l00082">preflight_check()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -530,9 +562,37 @@ false When one or more preflight checks fail </dd></dl>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="preflight__checks_8h_a6b367b7eff152e0b65185b1192056985_icgraph.png" border="0" usemap="#apreflight__checks_8h_a6b367b7eff152e0b65185b1192056985_icgraph" alt=""/></div>
 <map name="apreflight__checks_8h_a6b367b7eff152e0b65185b1192056985_icgraph" id="apreflight__checks_8h_a6b367b7eff152e0b65185b1192056985_icgraph">
-<area shape="rect" title="Register a preflight success used inside the preflight checking functions." alt="" coords="372,5,507,32"/>
-<area shape="rect" href="pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2" title="Check the actuators with feedback." alt="" coords="192,5,324,32"/>
-<area shape="rect" href="pfc__actuators_8c.html#a5427595c53f8bae09c346eaffc347162" title="Register the preflight checks for the actuators." alt="" coords="5,5,144,32"/>
+<area shape="rect" title="Register a preflight success used inside the preflight checking functions." alt="" coords="1372,191,1507,218"/>
+<area shape="rect" href="pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2" title="Check the actuators with feedback." alt="" coords="1192,166,1324,193"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="1197,217,1319,243"/>
+<area shape="rect" href="pfc__actuators_8c.html#a5427595c53f8bae09c346eaffc347162" title="Register the preflight checks for the actuators." alt="" coords="970,166,1109,193"/>
+<area shape="rect" href="autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="935,217,1144,243"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="948,406,1131,433"/>
+<area shape="rect" href="autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="695,71,873,112"/>
+<area shape="rect" href="rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title=" " alt="" coords="458,5,611,47"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="461,71,608,112"/>
+<area shape="rect" href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="691,179,877,220"/>
+<area shape="rect" href="boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="691,289,877,315"/>
+<area shape="rect" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="717,340,851,381"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="687,406,881,433"/>
+<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="681,457,887,499"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="721,523,847,550"/>
+<area shape="rect" href="rotorcraft_2navigation_8h.html#abb5b5b70fd1fe437f42847bb103aa952" title=" " alt="" coords="724,574,844,601"/>
+<area shape="rect" href="rotorcraft_2navigation_8h.html#abf64106cb814fd5078fba37a4bc6bc65" title=" " alt="" coords="729,625,839,651"/>
+<area shape="rect" href="boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="436,137,633,163"/>
+<area shape="rect" href="boards_2disco_2actuators_8c.html#a0181db6b0eea7688d52e6b73b141549b" title=" " alt="" coords="444,187,625,214"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7" title="Failsafe checks." alt="" coords="467,239,603,280"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="444,305,625,331"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a81fb1ff1aa94a36356fd9ed6e2c72c61" title="Initialization function." alt="" coords="458,356,611,397"/>
+<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,422,616,449"/>
+<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="475,473,594,499"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="449,523,621,550"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="453,574,616,601"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922" title="Takeoff from lat long location." alt="" coords="221,523,383,550"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="471,625,598,651"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="216,599,388,626"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="221,650,383,677"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a15715a5e523bc1763a8acf867b26461c" title=" " alt="" coords="5,599,168,626"/>
 </map>
 </div>
 
@@ -570,7 +630,7 @@ false When one or more preflight checks fail </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Register a preflight error used inside the preflight checking functions. </p>
+<p>Register a preflight warning used inside the preflight checking functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">result</td><td>Where the error gets registered </td></tr>
@@ -580,7 +640,7 @@ false When one or more preflight checks fail </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00192">192</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00208">208</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
 
 <p class="reference">References <a class="el" href="preflight__checks_8h_source.html#l00035">preflight_result_t::max_len</a>, <a class="el" href="preflight__checks_8h_source.html#l00034">preflight_result_t::message</a>, <a class="el" href="preflight__checks_8c_source.html#l00038">PREFLIGHT_CHECK_SEPERATOR</a>, and <a class="el" href="preflight__checks_8h_source.html#l00037">preflight_result_t::warning_cnt</a>.</p>
 
@@ -607,9 +667,35 @@ false When one or more preflight checks fail </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00050">50</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00056">56</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00268">autopilot_arming_motors_on()</a>, and <a class="el" href="autopilot_8c_source.html#l00245">autopilot_set_motors_on()</a>.</p>
+
+</div>
+</div>
+<a id="ab2bb3b2aeab6067d5b53af010085f2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2bb3b2aeab6067d5b53af010085f2bf">&#9670;&nbsp;</a></span>preflight_ground_done</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool preflight_ground_done</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="preflight__checks_8c_source.html#l00057">57</a> of file <a class="el" href="preflight__checks_8c_source.html">preflight_checks.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="preflight__checks_8c_source.html#l00082">preflight_check()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +705,7 @@ false When one or more preflight checks fail </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_24cf6086042171dbb948d3baa866052c.html">checks</a></li><li class="navelem"><a class="el" href="preflight__checks_8h.html">preflight_checks.h</a></li>
-    <li class="footer">Generated on Fri May 24 2024 07:59:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 13:36:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

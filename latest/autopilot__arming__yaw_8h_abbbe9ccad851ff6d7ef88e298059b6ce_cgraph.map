@@ -1,12 +1,14 @@
 <map id="autopilot_arming_check_motors_on" name="autopilot_arming_check_motors_on">
 <area shape="rect" id="node1" title="State machine to check if motors should be turned ON or OFF." alt="" coords="5,165,184,207"/>
 <area shape="rect" id="node2" href="$autopilot__arming__yaw_8h.html#a9a3f76ba0d3ace35cce5ed473bad8284" title="Checks all arm requirements and returns true if OK and false otherwise." alt="" coords="247,5,426,47"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="232,71,441,98"/>
-<area shape="rect" id="node5" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="676,97,821,123"/>
-<area shape="rect" id="node6" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="261,173,413,199"/>
-<area shape="rect" id="node7" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="245,223,429,250"/>
-<area shape="rect" id="node8" href="$autopilot_8c.html#a26de92899cae6ff28c3420315f10802d" title="set in_flight flag" alt="" coords="253,274,420,301"/>
-<area shape="rect" id="node10" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="271,325,403,351"/>
-<area shape="rect" id="node4" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="498,71,619,98"/>
-<area shape="rect" id="node9" href="$autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent" alt="" coords="489,267,628,308"/>
+<area shape="rect" id="node3" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="232,122,441,149"/>
+<area shape="rect" id="node5" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="676,71,821,98"/>
+<area shape="rect" id="node8" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="261,173,413,199"/>
+<area shape="rect" id="node9" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="245,223,429,250"/>
+<area shape="rect" id="node10" href="$autopilot_8c.html#a26de92899cae6ff28c3420315f10802d" title="set in_flight flag" alt="" coords="253,274,420,301"/>
+<area shape="rect" id="node12" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="271,325,403,351"/>
+<area shape="rect" id="node4" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="498,122,619,149"/>
+<area shape="rect" id="node6" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="691,122,806,149"/>
+<area shape="rect" id="node7" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="681,173,816,199"/>
+<area shape="rect" id="node11" href="$autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent" alt="" coords="489,267,628,308"/>
 </map>

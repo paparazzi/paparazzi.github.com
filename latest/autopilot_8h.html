@@ -451,7 +451,7 @@ enable/disable RC input </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00268">268</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00050">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00075">preflight_check()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00056">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00082">preflight_check()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -461,9 +461,11 @@ enable/disable RC input </td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph.png" border="0" usemap="#aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph" id="aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph">
-<area shape="rect" title="Start or stop the motors during arming May not happen when preflight checks are failing." alt="" coords="5,5,215,32"/>
-<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="263,5,384,32"/>
+<area shape="rect" title="Start or stop the motors during arming May not happen when preflight checks are failing." alt="" coords="5,56,215,83"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="263,56,384,83"/>
 <area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="432,5,577,32"/>
+<area shape="rect" href="preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="447,56,562,83"/>
+<area shape="rect" href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="437,107,572,133"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -675,11 +677,13 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="453,151,588,178"/>
 <area shape="rect" href="rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181" title="Includes generated code from tuning_rc.xml." alt="" coords="239,477,332,503"/>
 <area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="429,317,612,343"/>
-<area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="660,289,856,315"/>
-<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="697,343,819,370"/>
-<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="904,281,1057,323"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="905,216,1056,257"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="908,347,1053,374"/>
+<area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="660,287,856,314"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="697,371,819,398"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="904,280,1057,321"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="905,215,1056,256"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="908,346,1053,373"/>
+<area shape="rect" href="preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="923,397,1038,423"/>
+<area shape="rect" href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="913,447,1048,474"/>
 <area shape="rect" href="fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="681,57,835,99"/>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="661,123,855,150"/>
 </map>
@@ -1435,13 +1439,15 @@ enable/disable RC input </td></tr>
 <div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph.png" border="0" usemap="#aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph" alt=""/></div>
 <map name="aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph" id="aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph">
-<area shape="rect" title="Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibili..." alt="" coords="5,100,140,141"/>
-<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="188,107,371,134"/>
+<area shape="rect" title="Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibili..." alt="" coords="5,125,140,167"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="188,133,371,159"/>
 <area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="419,78,615,105"/>
-<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="456,133,577,159"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="456,162,577,189"/>
 <area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="663,5,816,47"/>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="664,71,815,112"/>
 <area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="667,137,812,163"/>
+<area shape="rect" href="preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="682,187,797,214"/>
+<area shape="rect" href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="672,238,807,265"/>
 </map>
 </div>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1555,7 +1561,7 @@ false The preflight checks are failed</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00245">245</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00232">autopilot_force_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00050">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00075">preflight_check()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00232">autopilot_force_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00056">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00082">preflight_check()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="autopilot_8c_source.html#l00297">autopilot_set_kill_throttle()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00212">autopilot_static_set_mode()</a>, <a class="el" href="mavlink_8c_source.html#l00228">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00228">NavKillThrottle()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00232">NavResurrect()</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1565,12 +1571,14 @@ false The preflight checks are failed</dd></dl>
 <div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph.png" border="0" usemap="#aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph" id="aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph">
-<area shape="rect" title="Start or stop motors May have no effect if motors has auto&#45;start based on throttle setpoint or when t..." alt="" coords="5,107,188,134"/>
+<area shape="rect" title="Start or stop motors May have no effect if motors has auto&#45;start based on throttle setpoint or when t..." alt="" coords="5,133,188,159"/>
 <area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="236,78,432,105"/>
-<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="273,133,395,159"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="273,162,395,189"/>
 <area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="480,5,633,47"/>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="481,71,632,112"/>
 <area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="484,137,629,163"/>
+<area shape="rect" href="preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="499,187,614,214"/>
+<area shape="rect" href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="489,238,624,265"/>
 </map>
 </div>
 <div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1769,7 +1777,7 @@ false The preflight checks are failed</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="autopilot_8h.html">autopilot.h</a></li>
-    <li class="footer">Generated on Fri May 24 2024 07:58:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 13:36:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

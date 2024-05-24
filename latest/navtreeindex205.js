@@ -1,5 +1,8 @@
 var NAVTREEINDEX205 =
 {
+"stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f":[12,0,1,0,0,3,0,11,9],
+"stm32_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0":[12,0,1,0,0,3,0,11,27],
+"stm32_2mcu__periph_2spi__arch_8c.html#afff4df9fc6fd8f73287979945d18b9a0":[12,0,1,0,0,3,0,11,1,7],
 "stm32_2mcu__periph_2spi__arch_8c.html#structlocm3__spi__comm":[12,0,1,0,0,3,0,11,0],
 "stm32_2mcu__periph_2spi__arch_8c.html#structspi__periph__dma":[12,0,1,0,0,3,0,11,1],
 "stm32_2mcu__periph_2spi__arch_8c_source.html":[12,0,1,0,0,3,0,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX205 =
 "structmavlink__msg__req.html":[11,0,748],
 "structmavlink__msg__req.html#a3c6c47d6984e480bcc081421aafcadbf":[11,0,748,0],
 "structmavlink__msg__req.html#a3c862e7aa51b613dd4c3c5b0c248d575":[11,0,748,3],
-"structmavlink__msg__req.html#a7d455d095228e29a9ef984493d0e2e58":[11,0,748,1],
-"structmavlink__msg__req.html#ab0e1592470bf3835f03a0601d5dbd92d":[11,0,748,2],
-"structmicrorl__t.html":[11,0,763],
-"structmicrorl__t.html#a18e2fba2530cb005709f921f33229895":[11,0,763,9]
+"structmavlink__msg__req.html#a7d455d095228e29a9ef984493d0e2e58":[11,0,748,1]
 };

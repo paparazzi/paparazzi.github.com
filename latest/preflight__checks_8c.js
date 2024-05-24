@@ -1,6 +1,7 @@
 var preflight__checks_8c =
 [
     [ "PREFLIGHT_CHECK_BYPASS", "preflight__checks_8c.html#a291565ca5a21a0002073cf57685272c7", null ],
+    [ "PREFLIGHT_CHECK_GROUND", "preflight__checks_8c.html#ad68c8663f4cd744779f8b7855308ae16", null ],
     [ "PREFLIGHT_CHECK_INFO_TIMEOUT", "preflight__checks_8c.html#a219d80869eca8885aea9a96328a5e6fd", null ],
     [ "PREFLIGHT_CHECK_MAX_MSGBUF", "preflight__checks_8c.html#af401c9eb4fc6e626045433ea506f368a", null ],
     [ "PREFLIGHT_CHECK_SEPERATOR", "preflight__checks_8c.html#ad269e2d18f01f95199479a936693448a", null ],
@@ -10,5 +11,6 @@ var preflight__checks_8c =
     [ "preflight_success", "preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985", null ],
     [ "preflight_warning", "preflight__checks_8c.html#adec4f63b2733608607f6a20188368783", null ],
     [ "preflight_bypass", "preflight__checks_8c.html#a9294b87de38a4acdbe6319383646e5b0", null ],
+    [ "preflight_ground_done", "preflight__checks_8c.html#ab2bb3b2aeab6067d5b53af010085f2bf", null ],
     [ "preflight_head", "preflight__checks_8c.html#ac61b553e92c1a38d089f754955d24272", null ]
 ];
