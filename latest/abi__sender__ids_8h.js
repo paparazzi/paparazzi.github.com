@@ -61,6 +61,7 @@ var abi__sender__ids_8h =
     [ "GPS_SIM_ID", "abi__sender__ids_8h.html#abe4784b9e9eabf0081f418020b94a6cc", null ],
     [ "GPS_SIRF_ID", "abi__sender__ids_8h.html#a864dd488fc70fbf528f67b1b7850abac", null ],
     [ "GPS_SKYTRAQ_ID", "abi__sender__ids_8h.html#a471ce92aee6e3f614222522be973aa53", null ],
+    [ "GPS_UBX2_ID", "abi__sender__ids_8h.html#a42b78123470cf7beedb064fa8fb6347f", null ],
     [ "GPS_UBX_ID", "abi__sender__ids_8h.html#acf3cb8ecc014c5b1d2224b6ff412eeff", null ],
     [ "GPS_UDP_ID", "abi__sender__ids_8h.html#a6c37428c56c512a740e1278f2142f3fd", null ],
     [ "GPS_VECTORNAV_ID", "abi__sender__ids_8h.html#aea3adf53558f0d0fda6e9aec6044f009", null ],

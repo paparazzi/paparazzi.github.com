@@ -1,14 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"microrl_8h.html#a86b2b2d4eda22067d85d2287c118e2d8":[12,0,1,0,0,0,1,1,0,1,22],
-"microrl_8h.html#a90af0bf5deb4739725dac73126ba9ca0":[12,0,1,0,0,0,1,1,0,1,36],
-"microrl_8h.html#a956032c368753239e3513499d0474bf2":[12,0,1,0,0,0,1,1,0,1,21],
-"microrl_8h.html#a9a40d7394542a4e58274ba086119204d":[12,0,1,0,0,0,1,1,0,1,0,0],
-"microrl_8h.html#a9e336bbc8d6c9e20517da19cfe46d973":[12,0,1,0,0,0,1,1,0,1,8],
-"microrl_8h.html#aa15d938f881d47f53bef3927b0f878d4":[12,0,1,0,0,0,1,1,0,1,43],
-"microrl_8h.html#aa326905cea393d426a44531a1bce61bb":[12,0,1,0,0,0,1,1,0,1,13],
-"microrl_8h.html#aa43a2c3e40c49bdf4f097e17e43daa60":[12,0,1,0,0,0,1,1,0,1,35],
-"microrl_8h.html#aa62e1831c95c764d5c383cf2720c8622":[12,0,1,0,0,0,1,1,0,1,31],
 "microrl_8h.html#aa64a1174b55ce1d1a39eb1ecaaa9f1cf":[12,0,1,0,0,0,1,1,0,1,6],
 "microrl_8h.html#aaf080aa1c6d9ae8733ec685a2ebbb89d":[12,0,1,0,0,0,1,1,0,1,16],
 "microrl_8h.html#ab096f8bf8d9350e60716732e444f2f6b":[12,0,1,0,0,0,1,1,0,1,9],
@@ -249,5 +240,14 @@ var NAVTREEINDEX130 =
 "module__actuators_ostrich.html#module_load_example__actuators_ostrich":[1,13,0],
 "module__actuators_ostrich.html#module_xml__actuators_ostrich":[1,13,2,0],
 "module__actuators_pwm.html":[1,14],
-"module__actuators_pwm.html#module_load_example__actuators_pwm":[1,14,0]
+"module__actuators_pwm.html#module_load_example__actuators_pwm":[1,14,0],
+"module__actuators_pwm.html#module_xml__actuators_pwm":[1,14,0,0],
+"module__actuators_sbus.html":[1,15],
+"module__actuators_sbus.html#configuration__actuators_sbus":[1,15,1],
+"module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0],
+"module__actuators_sbus.html#module_xml__actuators_sbus":[1,15,1,0],
+"module__actuators_spektrum.html":[1,16],
+"module__actuators_spektrum.html#configuration__actuators_spektrum":[1,16,1],
+"module__actuators_spektrum.html#module_load_example__actuators_spektrum":[1,16,0],
+"module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,16,1,0]
 };

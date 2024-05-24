@@ -1,14 +1,5 @@
 var NAVTREEINDEX199 =
 {
-"softi2c_8c.html#a8b43506a6bd1d7ef7c84faff6e7bccd6":[12,0,1,0,5,13,0,2],
-"softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58":[12,0,1,0,5,13,7],
-"softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e":[12,0,1,0,5,13,17],
-"softi2c_8c.html#aa853ffab24fb8f7d390aab2cf94136e9":[12,0,1,0,5,13,13],
-"softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f":[12,0,1,0,5,13,16],
-"softi2c_8c.html#ab4880f0789022edb0bb763f339d65e59":[12,0,1,0,5,13,0,3],
-"softi2c_8c.html#ab869dd47e98b55836a1306b35d04c031":[12,0,1,0,5,13,0,0],
-"softi2c_8c.html#ad79611e343df497c46cf9647fcb0e394":[12,0,1,0,5,13,0,5],
-"softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f":[12,0,1,0,5,13,9],
 "softi2c_8c.html#ad9ca3783f48014b8ec90db656d667dcc":[12,0,1,0,5,13,0,6],
 "softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0":[12,0,1,0,5,13,19],
 "softi2c_8c.html#aec892d5f421d666723fb58c9132e7088":[12,0,1,0,5,13,20],
@@ -249,5 +240,14 @@ var NAVTREEINDEX199 =
 "sst25vfxxxx_8h.html#a3c73b27a33b8a4b1de75dc1c8ddb9785":[12,0,1,0,7,126,20],
 "sst25vfxxxx_8h.html#a4f1d5cb01ec45490d365f9bfcfc7bed3":[12,0,1,0,7,126,24],
 "sst25vfxxxx_8h.html#a4ffa0c5d3c5d83e1864c8e18a7611cdd":[12,0,1,0,7,126,0,2],
-"sst25vfxxxx_8h.html#a5176254063edecec07a175efcbf07623":[12,0,1,0,7,126,23]
+"sst25vfxxxx_8h.html#a5176254063edecec07a175efcbf07623":[12,0,1,0,7,126,23],
+"sst25vfxxxx_8h.html#a5a59ea666265299fffd16e9dc0b7ff07":[12,0,1,0,7,126,10],
+"sst25vfxxxx_8h.html#a60b9e89bdfe50ccfd04250700218193d":[12,0,1,0,7,126,17],
+"sst25vfxxxx_8h.html#a65c99ccf97d64066c87918bf83b2d090":[12,0,1,0,7,126,4],
+"sst25vfxxxx_8h.html#a689e276a39cc314fd9b964d3117860a4":[12,0,1,0,7,126,14],
+"sst25vfxxxx_8h.html#a69ab7c63663a167e1f6375f615b60299":[12,0,1,0,7,126,0,4],
+"sst25vfxxxx_8h.html#a757f1ab0707fae777626840e8067a1a1":[12,0,1,0,7,126,22],
+"sst25vfxxxx_8h.html#a7aa20e972d6ca69084348f6fb21270b9":[12,0,1,0,7,126,0,9],
+"sst25vfxxxx_8h.html#a7f02b91306284197c23a3a2457f109ce":[12,0,1,0,7,126,21],
+"sst25vfxxxx_8h.html#a86ae22b5d5fb6be6634b478b85700774":[12,0,1,0,7,126,15]
 };

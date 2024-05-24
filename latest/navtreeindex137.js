@@ -1,14 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__nav_spiral_3d.html":[1,338],
-"module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,338,1],
-"module__nav_spiral_3d.html#functions__nav_spiral_3d":[1,338,2],
-"module__nav_spiral_3d.html#module_load_example__nav_spiral_3d":[1,338,0],
-"module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,338,2,0],
-"module__nav_survey_disc.html":[1,339],
-"module__nav_survey_disc.html#module_load_example__nav_survey_disc":[1,339,0],
-"module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,339,0,0],
-"module__nav_survey_hybrid.html":[1,340],
 "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,340,1],
 "module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,340,2],
 "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,340,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX137 =
 "module__relative_localization_filter.html#module_xml__relative_localization_filter":[1,492,1,0],
 "module__rng.html":[1,270],
 "module__rng.html#module_load_example__rng":[1,270,0],
-"module__rng.html#module_xml__rng":[1,270,0,0]
+"module__rng.html#module_xml__rng":[1,270,0,0],
+"module__rot_wing_automation.html":[1,370],
+"module__rot_wing_automation.html#configuration__rot_wing_automation":[1,370,1],
+"module__rot_wing_automation.html#functions__rot_wing_automation":[1,370,2],
+"module__rot_wing_automation.html#module_load_example__rot_wing_automation":[1,370,0],
+"module__rot_wing_automation.html#module_xml__rot_wing_automation":[1,370,2,0],
+"module__rotorcraft_cam.html":[1,49],
+"module__rotorcraft_cam.html#configuration__rotorcraft_cam":[1,49,1],
+"module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam":[1,49,3],
+"module__rotorcraft_cam.html#functions__rotorcraft_cam":[1,49,2]
 };

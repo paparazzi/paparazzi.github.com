@@ -24,7 +24,6 @@ var gps_8c =
     [ "send_gps_int", "gps_8c.html#a6d23eecfe781f0c056b6168f2c9d79cd", null ],
     [ "send_gps_lla", "gps_8c.html#a759fae606fdb1c49a324d700e29282ff", null ],
     [ "send_gps_rtk", "gps_8c.html#af37edd466be7d8387d8fd6ca42a6ac9b", null ],
-    [ "send_gps_rxmrtcm", "gps_8c.html#ab18ae177901bcfb8e7ac79113ab9b8f3", null ],
     [ "send_gps_sol", "gps_8c.html#aff19d069394eabda725637cba722afcd", null ],
     [ "send_svinfo", "gps_8c.html#adce46b1d3eb549af6f1358bdcb25599d", null ],
     [ "send_svinfo_available", "gps_8c.html#a7eb08958254a390bf626ecfd6dbf37de", null ],
@@ -36,6 +35,5 @@ var gps_8c =
     [ "gps_relposned", "gps_8c.html#aef81e629eb219c35b87a62b95e93fbf1", null ],
     [ "gps_time_sync", "gps_8c.html#a4cd3856a89c7a6a56135788fa9f33922", null ],
     [ "month_days", "gps_8c.html#a53b5fc3ccb3b489527e585cc6d8a1878", null ],
-    [ "multi_gps_mode", "gps_8c.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd", null ],
-    [ "rtcm_man", "gps_8c.html#ae9ccee2c335081dd63a37c05fc63c9a8", null ]
+    [ "multi_gps_mode", "gps_8c.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd", null ]
 ];

@@ -1,14 +1,5 @@
 var NAVTREEINDEX159 =
 {
-"nps__sensor__gyro_8h.html#abc8ed8074236f9b5d5014d1ae29463fb":[12,0,1,1,1,46,0,6],
-"nps__sensor__gyro_8h.html#abd0dd56cb514f1ee32b7b20532e03f5f":[12,0,1,1,1,46,0,1],
-"nps__sensor__gyro_8h.html#acb96f1a5e06e44dc4e86057de43a9381":[12,0,1,1,1,46,0,10],
-"nps__sensor__gyro_8h.html#structNpsSensorGyro":[12,0,1,1,1,46,0],
-"nps__sensor__gyro_8h_source.html":[12,0,1,1,1,46],
-"nps__sensor__mag_8c.html":[12,0,1,1,1,47],
-"nps__sensor__mag_8c.html#a43dcedd3c66527ec2635d4081bcaa7d5":[12,0,1,1,1,47,0],
-"nps__sensor__mag_8c.html#afd402828074c485d02f9ceb00e384b03":[12,0,1,1,1,47,1],
-"nps__sensor__mag_8c_source.html":[12,0,1,1,1,47],
 "nps__sensor__mag_8h.html":[12,0,1,1,1,48],
 "nps__sensor__mag_8h.html#a05dfb5585294ee3dd1145c2a4e05936a":[12,0,1,1,1,48,0,4],
 "nps__sensor__mag_8h.html#a33e737a5274fd95a4cd5c8d519d33986":[12,0,1,1,1,48,0,7],
@@ -249,5 +240,14 @@ var NAVTREEINDEX159 =
 "nucleo144__f767zi_8h.html#a9f35b196f10e4942483d526f7f25df31":[12,0,1,0,1,17,0,2,111],
 "nucleo144__f767zi_8h.html#a9fbc674ce2e0b67af3e150f79033dd75":[12,0,1,0,1,17,0,2,105],
 "nucleo144__f767zi_8h.html#aa2cba51a641c42207ffeab4679d63cbe":[12,0,1,0,1,17,0,2,11],
-"nucleo144__f767zi_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa":[12,0,1,0,1,17,0,2,152]
+"nucleo144__f767zi_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa":[12,0,1,0,1,17,0,2,152],
+"nucleo144__f767zi_8h.html#aa678ac896b751ceebec5b735eaf47f9f":[12,0,1,0,1,17,0,2,31],
+"nucleo144__f767zi_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,17,0,2,59],
+"nucleo144__f767zi_8h.html#aa74338bcd6fb2d92e8da4797d14dea13":[12,0,1,0,1,17,0,2,153],
+"nucleo144__f767zi_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,17,0,2,13],
+"nucleo144__f767zi_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae":[12,0,1,0,1,17,0,2,79],
+"nucleo144__f767zi_8h.html#aa8a0c223a98c12a3591c1213c9d30365":[12,0,1,0,1,17,0,2,200],
+"nucleo144__f767zi_8h.html#aaaf3b422873946314dfec6703a3a5580":[12,0,1,0,1,17,0,2,143],
+"nucleo144__f767zi_8h.html#aabdfad895e4e3a16cdf8226a64aa0ed5":[12,0,1,0,1,17,0,2,177],
+"nucleo144__f767zi_8h.html#aacb25658dac32427d98a3c7b5449c1a5":[12,0,1,0,1,17,0,2,40]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"module__telemetry_intermcu.html#configuration__telemetry_intermcu":[1,111,1],
-"module__telemetry_intermcu.html#functions__telemetry_intermcu":[1,111,2],
-"module__telemetry_intermcu.html#module_load_example__telemetry_intermcu":[1,111,0],
-"module__telemetry_intermcu.html#module_xml__telemetry_intermcu":[1,111,2,0],
-"module__telemetry_ivy.html":[1,112],
-"module__telemetry_ivy.html#functions__telemetry_ivy":[1,112,1],
-"module__telemetry_ivy.html#module_load_example__telemetry_ivy":[1,112,0],
-"module__telemetry_ivy.html#module_xml__telemetry_ivy":[1,112,1,0],
-"module__telemetry_nps.html":[1,113],
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,113,1],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,113,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,113,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX139 =
 "modules_2datalink_2superbitrf_8c.html#a9a69ba9efc00c1aff78c3e51f3898ba7":[12,0,1,0,6,15,27,3],
 "modules_2datalink_2superbitrf_8c.html#a9aa9d540ed2788aac45b1d93ceb7b4b1":[12,0,1,0,6,15,27,24],
 "modules_2datalink_2superbitrf_8c.html#aa41ef7c3699946caa90d3cc65d0263aa":[12,0,1,0,6,15,27,27],
-"modules_2datalink_2superbitrf_8c.html#aaf55d217cae95639a912876ea383e8d3":[12,0,1,0,6,15,27,30]
+"modules_2datalink_2superbitrf_8c.html#aaf55d217cae95639a912876ea383e8d3":[12,0,1,0,6,15,27,30],
+"modules_2datalink_2superbitrf_8c.html#ab7cad7b2b636d70ece62e9cede876603":[12,0,1,0,6,15,27,28],
+"modules_2datalink_2superbitrf_8c.html#abefd806148689ae7eddc86cf9d0e9d21":[12,0,1,0,6,15,27,10],
+"modules_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7":[12,0,1,0,6,15,27,9],
+"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,15,27,4],
+"modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd":[12,0,1,0,6,15,27,19],
+"modules_2datalink_2superbitrf_8c.html#ade7ef70ed43ea8f759a330486554d623":[12,0,1,0,6,15,27,22],
+"modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6":[12,0,1,0,6,15,27,20],
+"modules_2datalink_2superbitrf_8c.html#aea7ea8b9ec1ac799365284824757d827":[12,0,1,0,6,15,27,0],
+"modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e":[12,0,1,0,6,15,27,17]
 };

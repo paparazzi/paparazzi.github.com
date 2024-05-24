@@ -1,14 +1,5 @@
 var NAVTREEINDEX101 =
 {
-"krooz__sd_8h.html#a2a54c61fdf127b1714490f565d5f656d":[12,0,1,0,1,35,115],
-"krooz__sd_8h.html#a2a8241c19fc58341f2cac4db9d699c3a":[12,0,1,0,1,35,175],
-"krooz__sd_8h.html#a2be35c400a0dc670434bad6960fb877f":[12,0,1,0,1,35,25],
-"krooz__sd_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95":[12,0,1,0,1,35,193],
-"krooz__sd_8h.html#a2da3460f53dc7c99a5bcf837ee234dc8":[12,0,1,0,1,35,130],
-"krooz__sd_8h.html#a3198255891fdd15ac1f67d79506908dd":[12,0,1,0,1,35,129],
-"krooz__sd_8h.html#a3345ce1ba187b37f40ed26a0800f17e6":[12,0,1,0,1,35,69],
-"krooz__sd_8h.html#a342eee19f66562516414e255f3db4cc4":[12,0,1,0,1,35,86],
-"krooz__sd_8h.html#a345f7e7ea14339c4e1fab93846675d5e":[12,0,1,0,1,35,118],
 "krooz__sd_8h.html#a3527010cfbb35e98ab1bba9ded57da14":[12,0,1,0,1,35,88],
 "krooz__sd_8h.html#a37154c806d85fb9f9158f86bb55e9ee0":[12,0,1,0,1,35,42],
 "krooz__sd_8h.html#a37def755123d949a1f843b002daa9408":[12,0,1,0,1,35,173],
@@ -249,5 +240,14 @@ var NAVTREEINDEX101 =
 "l3g4200__regs_8h.html#a95ebd8112908dde934d8c8960cde87c0":[12,0,1,0,7,57,21],
 "l3g4200__regs_8h.html#a9a9e5a30407c66be38c4a9a523ddc6f8":[12,0,1,0,7,57,27],
 "l3g4200__regs_8h.html#aaff974063184ba89198061e944c819be":[12,0,1,0,7,57,14],
-"l3g4200__regs_8h.html#ab419a71641b0399bf58981567af3d6c1":[12,0,1,0,7,57,11]
+"l3g4200__regs_8h.html#ab419a71641b0399bf58981567af3d6c1":[12,0,1,0,7,57,11],
+"l3g4200__regs_8h.html#ac63e4704b37c785d0f9dd8e9ed7777a7":[12,0,1,0,7,57,29],
+"l3g4200__regs_8h.html#ac63e4704b37c785d0f9dd8e9ed7777a7a350387340e7269a1d9b744568faf7102":[12,0,1,0,7,57,29,3],
+"l3g4200__regs_8h.html#ac63e4704b37c785d0f9dd8e9ed7777a7a431fb4217989cc09910f7ebfa6423d0b":[12,0,1,0,7,57,29,2],
+"l3g4200__regs_8h.html#ac63e4704b37c785d0f9dd8e9ed7777a7a7420ab1e71931ec5fc8c18df61db369b":[12,0,1,0,7,57,29,0],
+"l3g4200__regs_8h.html#ac63e4704b37c785d0f9dd8e9ed7777a7a7ffc733ae59c09b24ef97a3930452efd":[12,0,1,0,7,57,29,1],
+"l3g4200__regs_8h.html#acc12ce90fbedef3816e0fb08384e7d09":[12,0,1,0,7,57,1],
+"l3g4200__regs_8h.html#ace61f064d68bfe2b5d6fa160c8834def":[12,0,1,0,7,57,5],
+"l3g4200__regs_8h.html#ace6917af704c089ccf3ff8dd743dc26e":[12,0,1,0,7,57,19],
+"l3g4200__regs_8h.html#ace6fb7ea18f5956c8d4ae021e6b4770d":[12,0,1,0,7,57,18]
 };

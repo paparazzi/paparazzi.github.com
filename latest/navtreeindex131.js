@@ -1,14 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__actuators_pwm.html#module_xml__actuators_pwm":[1,14,0,0],
-"module__actuators_sbus.html":[1,15],
-"module__actuators_sbus.html#configuration__actuators_sbus":[1,15,1],
-"module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0],
-"module__actuators_sbus.html#module_xml__actuators_sbus":[1,15,1,0],
-"module__actuators_spektrum.html":[1,16],
-"module__actuators_spektrum.html#configuration__actuators_spektrum":[1,16,1],
-"module__actuators_spektrum.html#module_load_example__actuators_spektrum":[1,16,0],
-"module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,16,1,0],
 "module__actuators_sts3032.html":[1,17],
 "module__actuators_sts3032.html#configuration__actuators_sts3032":[1,17,1],
 "module__actuators_sts3032.html#functions__actuators_sts3032":[1,17,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX131 =
 "module__baro_sim.html#module_load_example__baro_sim":[1,399,0],
 "module__baro_sim.html#module_xml__baro_sim":[1,399,1,0],
 "module__bat_checker.html":[1,140],
-"module__bat_checker.html#configuration__bat_checker":[1,140,1]
+"module__bat_checker.html#configuration__bat_checker":[1,140,1],
+"module__bat_checker.html#functions__bat_checker":[1,140,2],
+"module__bat_checker.html#module_load_example__bat_checker":[1,140,0],
+"module__bat_checker.html#module_xml__bat_checker":[1,140,2,0],
+"module__bat_voltage_ardrone2.html":[1,400],
+"module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,400,1],
+"module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,400,0],
+"module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,400,1,0],
+"module__battery_monitor.html":[1,21],
+"module__battery_monitor.html#configuration__battery_monitor":[1,21,1]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb":[12,0,1,0,4,7,19],
-"group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb":[12,0,1,0,4,8,122],
-"group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb":[9,9,1,3,139],
-"group__math__algebra__int.html#ga74c648c60043d591701181030daec64e":[12,0,1,0,4,8,81],
-"group__math__algebra__int.html#ga74c648c60043d591701181030daec64e":[9,9,1,3,98],
-"group__math__algebra__int.html#ga78c97bb51a4486cff673bf9995b8fdb0":[12,0,1,0,4,8,62],
-"group__math__algebra__int.html#ga78c97bb51a4486cff673bf9995b8fdb0":[9,9,1,3,79],
-"group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e":[9,9,1,3,29],
-"group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e":[12,0,1,0,4,8,12],
 "group__math__algebra__int.html#ga7a246ed59b41685b79922379c91f5f08":[12,0,1,0,4,8,86],
 "group__math__algebra__int.html#ga7a246ed59b41685b79922379c91f5f08":[9,9,1,3,103],
 "group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84":[12,0,1,0,4,8,119],
@@ -249,5 +240,14 @@ var NAVTREEINDEX70 =
 "group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250":[12,0,1,0,4,11,16],
 "group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250":[9,9,2,1,22],
 "group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88":[12,0,1,0,4,10,18],
-"group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88":[12,0,1,0,4,11,12]
+"group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88":[12,0,1,0,4,11,12],
+"group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88":[9,9,2,1,18],
+"group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952":[12,0,1,0,4,10,19],
+"group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952":[12,0,1,0,4,11,13],
+"group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952":[9,9,2,1,19],
+"group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08":[12,0,1,0,4,10,6],
+"group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08":[12,0,1,0,4,11,3],
+"group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08":[9,9,2,1,9],
+"group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9":[12,0,1,0,4,10,5],
+"group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9":[12,0,1,0,4,11,2]
 };

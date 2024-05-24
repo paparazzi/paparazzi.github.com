@@ -1,14 +1,5 @@
 var NAVTREEINDEX86 =
 {
-"hott__gam_8h.html#a42786c82ded32b763ebb9f41b6bacf78":[12,0,1,0,6,35,3,0,6],
-"hott__gam_8h.html#a44a34f82902ad56167b4b31a2712c1cb":[12,0,1,0,6,35,3,0,41],
-"hott__gam_8h.html#a548fb992133389fb246efb4e1afdce27":[12,0,1,0,6,35,3,0,13],
-"hott__gam_8h.html#a628de8202cae5b484af1cbe3f7280a28":[12,0,1,0,6,35,3,0,33],
-"hott__gam_8h.html#a65e4706fd4ee1156730753f1ea74fdee":[12,0,1,0,6,35,3,0,20],
-"hott__gam_8h.html#a72488f40d845bd2ac9dd4d6560d4c3e8":[12,0,1,0,6,35,3,2],
-"hott__gam_8h.html#a7e03a5584c1cb6e38a5b607f935838de":[12,0,1,0,6,35,3,0,3],
-"hott__gam_8h.html#a8650aa05c61f39eecc419287e47cccaa":[12,0,1,0,6,35,3,0,36],
-"hott__gam_8h.html#a88dab98903308788dc2b67b12beca6ae":[12,0,1,0,6,35,3,0,18],
 "hott__gam_8h.html#a8a41e5abdeb83d36d4b1abc04c2883ee":[12,0,1,0,6,35,3,0,39],
 "hott__gam_8h.html#a8b60be3f3c06a394281ffd4ae32121a1":[12,0,1,0,6,35,3,0,32],
 "hott__gam_8h.html#a8c1b379a0e17913a1f7711d9166535ee":[12,0,1,0,6,35,3,0,21],
@@ -249,5 +240,14 @@ var NAVTREEINDEX86 =
 "humid__sht__i2c_8c.html#a69b6ec0fe918280602fd52013d39e212":[12,0,1,0,6,44,25,5],
 "humid__sht__i2c_8c.html#a86de6332edd251577f523a93c64144a2":[12,0,1,0,6,44,25,13],
 "humid__sht__i2c_8c.html#a9250bbec811cdbcc7c024e084dacc33f":[12,0,1,0,6,44,25,3],
-"humid__sht__i2c_8c.html#ab7360b54e1d1d8f2f4a8219461c1ba74":[12,0,1,0,6,44,25,4]
+"humid__sht__i2c_8c.html#ab7360b54e1d1d8f2f4a8219461c1ba74":[12,0,1,0,6,44,25,4],
+"humid__sht__i2c_8c.html#acf9593453090510f26c2d4aa179ad4bc":[12,0,1,0,6,44,25,0],
+"humid__sht__i2c_8c.html#acff442bab9b6b43dc173ce20ada54422":[12,0,1,0,6,44,25,14],
+"humid__sht__i2c_8c.html#ad52c52ca36e2d9bad2918adee20b2a54":[12,0,1,0,6,44,25,9],
+"humid__sht__i2c_8c.html#aebb59623691f8f575810941203d0557b":[12,0,1,0,6,44,25,10],
+"humid__sht__i2c_8c.html#af24941c60c0a44907c005d3b57626373":[12,0,1,0,6,44,25,8],
+"humid__sht__i2c_8c_source.html":[12,0,1,0,6,44,25],
+"humid__sht__i2c_8h.html":[12,0,1,0,6,44,26],
+"humid__sht__i2c_8h.html#a06f1dd9477b7e2609b5a50eecaa0064d":[12,0,1,0,6,44,26,4],
+"humid__sht__i2c_8h.html#a0c5a258aa8c9bfc72655377a353ef66d":[12,0,1,0,6,44,26,3]
 };

@@ -2,6 +2,7 @@ var gps__ubx_8h_structGpsUbx =
 [
     [ "ck_a", "gps__ubx_8h.html#af60e30d905e5ec46775a57eeb2025df9", null ],
     [ "ck_b", "gps__ubx_8h.html#a1be0000a5b6ffa38d85f75f7dd78433e", null ],
+    [ "dev", "gps__ubx_8h.html#aa0f8f1e2011481276e3e0f2131701c4a", null ],
     [ "error_cnt", "gps__ubx_8h.html#ac25b1e02b2516fc07cdf47a8acab7d89", null ],
     [ "error_last", "gps__ubx_8h.html#ae2861c04c3c0c9810eb094f56d562685", null ],
     [ "len", "gps__ubx_8h.html#a06e462850fe08f5c24755cc9ca51c374", null ],
@@ -11,7 +12,6 @@ var gps__ubx_8h_structGpsUbx =
     [ "msg_id", "gps__ubx_8h.html#ad15e6c63399f49d452488bdccc36c43a", null ],
     [ "msg_idx", "gps__ubx_8h.html#afca7648c3c8903a265e718dc2355515b", null ],
     [ "pacc_valid", "gps__ubx_8h.html#ac3615a0e097f0eb6e8e8821bda7dcd37", null ],
-    [ "reset", "gps__ubx_8h.html#a5d094735f6bae96b8b6b9166e9bac93b", null ],
     [ "send_ck_a", "gps__ubx_8h.html#acf5c53341a4d57b0fa38002d23383fac", null ],
     [ "send_ck_b", "gps__ubx_8h.html#ac3d319fca342935bb319a453eb0fe2e6", null ],
     [ "sol_flags", "gps__ubx_8h.html#aaeaeac2bb5d5e8d95240f0c2c3f81c5f", null ],

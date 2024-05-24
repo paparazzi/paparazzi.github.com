@@ -1,14 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0":[1,206,1],
-"module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,206,0],
-"module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,206,1,0],
-"module__imu_matek_h743_slim.html":[1,207],
-"module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,207,0],
-"module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,207,0,0],
-"module__imu_mpu6000.html":[1,208],
-"module__imu_mpu6000.html#configuration__imu_mpu6000":[1,208,1],
-"module__imu_mpu6000.html#functions__imu_mpu6000":[1,208,2],
 "module__imu_mpu6000.html#module_load_example__imu_mpu6000":[1,208,0],
 "module__imu_mpu6000.html#module_xml__imu_mpu6000":[1,208,2,0],
 "module__imu_mpu6000_hmc5883.html":[1,209],
@@ -249,5 +240,14 @@ var NAVTREEINDEX135 =
 "module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx":[1,250,2],
 "module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx":[1,250,0],
 "module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,250,2,0],
-"module__light.html":[1,252]
+"module__light.html":[1,252],
+"module__light.html#configuration__light":[1,252,1],
+"module__light.html#functions__light":[1,252,2],
+"module__light.html#module_load_example__light":[1,252,0],
+"module__light.html#module_xml__light":[1,252,2,0],
+"module__light_scheduler.html":[1,253],
+"module__light_scheduler.html#configuration__light_scheduler":[1,253,1],
+"module__light_scheduler.html#functions__light_scheduler":[1,253,2],
+"module__light_scheduler.html#module_load_example__light_scheduler":[1,253,0],
+"module__light_scheduler.html#module_xml__light_scheduler":[1,253,2,0]
 };

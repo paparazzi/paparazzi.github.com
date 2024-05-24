@@ -1,14 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f":[12,0,1,0,0,0,3,0],
-"group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f":[9,5,0],
-"group__config.html#gafc999784304892d5ef32584c73cdbc71":[12,0,1,0,0,0,3,9],
-"group__config.html#gafc999784304892d5ef32584c73cdbc71":[9,5,9],
-"group__i2c.html":[9,0,0],
-"group__i2c.html#a05faedf401286bc8e6a4a25c949af3e3":[9,0,0,2,6],
-"group__i2c.html#a295b2671835ae06b28905433cd1096ee":[9,0,0,0,0],
-"group__i2c.html#a2d907f3b03aa19fa2300a5f92ece5317":[9,0,0,2,8],
-"group__i2c.html#a4b1270562d3320ff0151bd7856ec0c6e":[9,0,0,1,0],
 "group__i2c.html#a4c6670323a9702604059336fbfc771fe":[9,0,0,1,6],
 "group__i2c.html#a4e572be9f28f1037d7c749a223329aaf":[9,0,0,1,10],
 "group__i2c.html#a53b3cfd6febadfef15cdd1136adb20a5":[9,0,0,0,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850":[9,9,1,0,148],
 "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850":[12,0,1,0,4,5,56],
 "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850":[12,0,1,0,4,6,141],
-"group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[9,9,1,0,58]
+"group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[9,9,1,0,58],
+"group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[12,0,1,0,4,6,51],
+"group__math__algebra__float.html#ga082a3591f2701fdcc77609946f1457ad":[9,9,1,0,7],
+"group__math__algebra__float.html#ga082a3591f2701fdcc77609946f1457ad":[12,0,1,0,4,6,0],
+"group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[9,9,1,0,129],
+"group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[12,0,1,0,4,5,40],
+"group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[12,0,1,0,4,6,122],
+"group__math__algebra__float.html#ga0a76eb680a60ea46d382cee034fbfeb8":[9,9,1,0,14],
+"group__math__algebra__float.html#ga0a76eb680a60ea46d382cee034fbfeb8":[12,0,1,0,4,6,7],
+"group__math__algebra__float.html#ga0a7d59fb7d31456ca480a31fec6deb19":[9,9,1,0,88]
 };

@@ -132,7 +132,7 @@ Event Functions</h2>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="gps__ubx_8h.html#a60cc421235ca64ccb77e1ebc09290845">gps_ubx_periodic_check()</a><ul>
+<li><a class="el" href="gps__ubx_8c.html#a05643ea76223b3bb0c06b2ceafcab315">gps_ubx_periodic_check()</a><ul>
 <li>Frequency in Hz: <em>1</em>.</li>
 <li>Autorun: <em>TRUE</em> <br  />
  Periodic function automatically starts after init.</li>
@@ -181,7 +181,7 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_ublox&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;Hotstart|Warmstart|Coldstart&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;gps/gps_ubx&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;gps_ubx.reset&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;reset&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;Hotstart|Warmstart|Coldstart&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;gps/gps_ubx&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;gps_ubx_reset&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;reset&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
@@ -198,33 +198,51 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_ubx_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;HITL_UBX&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_ubx_parse_HITL_UBX(buf)&quot;</span>/&gt; </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(GPS_PORT)&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(GPS_BAUD)&quot;</span>/&gt;</div>
-<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_ubx.c&quot;</span>/&gt;</div>
 <div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- GPS Ublox 1 --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(GPS_PORT)&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(GPS_BAUD)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(UBX_GPS_PORT_UPPER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX_GPS_PORT_LOWER)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX_GPS_PORT_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(UBX_GPS_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX_GPS_BAUD)&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- GPS Ublox 2 --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX2_GPS_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(GPS2_PORT)&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX2_GPS_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(GPS2_BAUD)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(UBX2_GPS_PORT_UPPER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_PORT)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX2_GPS_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX2_GPS_PORT_LOWER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_PORT)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(UBX2_GPS_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX2_GPS_BAUD)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_BAUD)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_UBX_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_PORT)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">      <span class="keyword">ifdef</span> <span class="keyword">SECONDARY_GPS</span></div>
-<div class="line">      <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> $(<span class="keyword">SECONDARY_GPS</span>), <span class="keyword">ublox</span>))</div>
-<div class="line">      # <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">secondary</span> <span class="keyword">GPS</span></div>
-<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_SECONDARY_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
-<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DSECONDARY_GPS</span>=<span class="keyword">GPS_UBX</span></div>
+<div class="line">        <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox2</span>, $(<span class="keyword">SECONDARY_GPS</span>)))</div>
+<div class="line">          # <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">secondary</span> <span class="keyword">GPS</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_SECONDARY_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DSECONDARY_GPS</span>=<span class="keyword">GPS_UBX2</span></div>
+<div class="line">        <span class="keyword">else</span> <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox</span>, $(<span class="keyword">SECONDARY_GPS</span>)))</div>
+<div class="line">          # <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">secondary</span> <span class="keyword">GPS</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_SECONDARY_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DSECONDARY_GPS</span>=<span class="keyword">GPS_UBX</span></div>
+<div class="line">        <span class="keyword">endif</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox2</span>, $(<span class="keyword">PRIMARY_GPS</span>)))</div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_GPS</span>=<span class="keyword">GPS_UBX2</span></div>
+<div class="line">        <span class="keyword">else</span> <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox</span>, $(<span class="keyword">PRIMARY_GPS</span>)))</div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_GPS</span>=<span class="keyword">GPS_UBX</span></div>
+<div class="line">        <span class="keyword">endif</span></div>
 <div class="line">      <span class="keyword">else</span></div>
-<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
-<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_GPS</span>=<span class="keyword">GPS_UBX</span></div>
-<div class="line">      <span class="keyword">endif</span></div>
-<div class="line">      <span class="keyword">else</span></div>
-<div class="line">      # <span class="keyword">plain</span> <span class="keyword">old</span> <span class="keyword">single</span> <span class="keyword">GPS</span> <span class="keyword">usage</span></div>
-<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
+<div class="line">        # <span class="keyword">plain</span> <span class="keyword">old</span> <span class="keyword">single</span> <span class="keyword">GPS</span> <span class="keyword">usage</span></div>
+<div class="line">        $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
 <div class="line">      <span class="keyword">endif</span></div>
 <div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PRIMARY_GPS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;GPS_UBX&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART2&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart2&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart2&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -236,7 +254,7 @@ Raw gps_ublox.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu May 23 2024 19:59:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 24 2024 07:59:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

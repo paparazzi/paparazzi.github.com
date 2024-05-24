@@ -1,14 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"holybro__kakute__f7_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750":[12,0,1,0,1,8,0,1,80],
-"holybro__kakute__f7_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b":[12,0,1,0,1,8,0,1,36],
-"holybro__kakute__f7_8h.html#a0bbce43be56577bdd23c83ec945fb44c":[12,0,1,0,1,8,0,1,87],
-"holybro__kakute__f7_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,8,0,1,3],
-"holybro__kakute__f7_8h.html#a0d5b57671b99c1c787bce7ea23b44133":[12,0,1,0,1,8,0,1,86],
-"holybro__kakute__f7_8h.html#a0ea4845cec9e43fa49b1169d0c2c32d5":[12,0,1,0,1,8,0,1,7],
-"holybro__kakute__f7_8h.html#a1102abe6725b0ff8c4c4a248dd46e976":[12,0,1,0,1,8,0,1,83],
-"holybro__kakute__f7_8h.html#a133a8bd30af31224040168c0edacb37d":[12,0,1,0,1,8,0,1,138],
-"holybro__kakute__f7_8h.html#a1365ea029b2ef8463ee8c0865b81749b":[12,0,1,0,1,8,0,1,27],
 "holybro__kakute__f7_8h.html#a192437e223012d0a12e92c878e3c2877":[12,0,1,0,1,8,0,1,112],
 "holybro__kakute__f7_8h.html#a1a657746fc043e286c637302b06024a1":[12,0,1,0,1,8,0,1,124],
 "holybro__kakute__f7_8h.html#a1af3b0681135879303164ffd4953257b":[12,0,1,0,1,8,0,1,43],
@@ -249,5 +240,14 @@ var NAVTREEINDEX85 =
 "hott__gam_8h.html#a2ae3167d6e4e1536424e71f44805f187":[12,0,1,0,6,35,3,0,4],
 "hott__gam_8h.html#a2b24b07cffa6fddd7404a9ec22c3eaeb":[12,0,1,0,6,35,3,0,19],
 "hott__gam_8h.html#a2f774796d1a287dcaa6e1a8f38457215":[12,0,1,0,6,35,3,0,7],
-"hott__gam_8h.html#a3ef347171c4dd36aada74dcbff047b2c":[12,0,1,0,6,35,3,0,40]
+"hott__gam_8h.html#a3ef347171c4dd36aada74dcbff047b2c":[12,0,1,0,6,35,3,0,40],
+"hott__gam_8h.html#a42786c82ded32b763ebb9f41b6bacf78":[12,0,1,0,6,35,3,0,6],
+"hott__gam_8h.html#a44a34f82902ad56167b4b31a2712c1cb":[12,0,1,0,6,35,3,0,41],
+"hott__gam_8h.html#a548fb992133389fb246efb4e1afdce27":[12,0,1,0,6,35,3,0,13],
+"hott__gam_8h.html#a628de8202cae5b484af1cbe3f7280a28":[12,0,1,0,6,35,3,0,33],
+"hott__gam_8h.html#a65e4706fd4ee1156730753f1ea74fdee":[12,0,1,0,6,35,3,0,20],
+"hott__gam_8h.html#a72488f40d845bd2ac9dd4d6560d4c3e8":[12,0,1,0,6,35,3,2],
+"hott__gam_8h.html#a7e03a5584c1cb6e38a5b607f935838de":[12,0,1,0,6,35,3,0,3],
+"hott__gam_8h.html#a8650aa05c61f39eecc419287e47cccaa":[12,0,1,0,6,35,3,0,36],
+"hott__gam_8h.html#a88dab98903308788dc2b67b12beca6ae":[12,0,1,0,6,35,3,0,18]
 };
