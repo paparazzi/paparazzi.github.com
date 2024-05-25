@@ -17,5 +17,5 @@ var rotorcraft__cam_8h =
     [ "rotorcraft_cam_mode", "rotorcraft__cam_8h.html#a4f854e9e805596e5127d9045839b5fdc", null ],
     [ "rotorcraft_cam_pan", "rotorcraft__cam_8h.html#a51ace79b92e7c5ab69438597883a4c8c", null ],
     [ "rotorcraft_cam_tilt", "rotorcraft__cam_8h.html#a6565dd8f5371a7c2509896667262fbea", null ],
-    [ "rotorcraft_cam_tilt_pwm", "rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8", null ]
+    [ "rotorcraft_cam_tilt_pprz", "rotorcraft__cam_8h.html#a77f115302ac1074cb4d251fec1bc1afe", null ]
 ];

@@ -783,7 +783,7 @@ var searchData=
   ['rotorcraft_5fcam_5fstick_5fparse_21827',['ROTORCRAFT_CAM_STICK_PARSE',['../rotorcraft__cam_8h.html#ab3875c4e3d448ab26de9817c68d80f21',1,'rotorcraft_cam.h']]],
   ['rotorcraft_5fcam_5fstick_5ftilt_5finc_21828',['ROTORCRAFT_CAM_STICK_TILT_INC',['../rotorcraft__cam_8h.html#abc571d6b199150468ea05e30a1f6d3f6',1,'rotorcraft_cam.h']]],
   ['rotorcraft_5fcam_5ftilt_21829',['rotorcraft_cam_tilt',['../rotorcraft__cam_8c.html#a6565dd8f5371a7c2509896667262fbea',1,'rotorcraft_cam_tilt():&#160;rotorcraft_cam.c'],['../rotorcraft__cam_8h.html#a6565dd8f5371a7c2509896667262fbea',1,'rotorcraft_cam_tilt():&#160;rotorcraft_cam.c']]],
-  ['rotorcraft_5fcam_5ftilt_5fpwm_21830',['rotorcraft_cam_tilt_pwm',['../rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8',1,'rotorcraft_cam_tilt_pwm():&#160;rotorcraft_cam.c'],['../rotorcraft__cam_8c.html#adda457c04709dca302b7342870c93dc8',1,'rotorcraft_cam_tilt_pwm():&#160;rotorcraft_cam.c']]],
+  ['rotorcraft_5fcam_5ftilt_5fpprz_21830',['rotorcraft_cam_tilt_pprz',['../rotorcraft__cam_8h.html#a77f115302ac1074cb4d251fec1bc1afe',1,'rotorcraft_cam_tilt_pprz():&#160;rotorcraft_cam.c'],['../rotorcraft__cam_8c.html#a77f115302ac1074cb4d251fec1bc1afe',1,'rotorcraft_cam_tilt_pprz():&#160;rotorcraft_cam.c']]],
   ['rotorcraft_5fcam_5fuse_5fpan_21831',['ROTORCRAFT_CAM_USE_PAN',['../rotorcraft__cam_8h.html#a17b684c400fcff7720d1096e2cba7a74',1,'rotorcraft_cam.h']]],
   ['rotorcraft_5fcam_5fuse_5ftilt_21832',['ROTORCRAFT_CAM_USE_TILT',['../rotorcraft__cam_8h.html#a2d9ecb115620709d71bf6fbdf71e0608',1,'rotorcraft_cam.h']]],
   ['rotorcraft_5fcommands_5fthrough_5fmodule_21833',['ROTORCRAFT_COMMANDS_THROUGH_MODULE',['../glide__wing__lock_8h.html#af688353e9277038d0e14900750e70f98',1,'glide_wing_lock.h']]],
