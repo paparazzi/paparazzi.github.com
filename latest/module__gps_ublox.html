@@ -213,7 +213,6 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(UBX2_GPS_PORT_UPPER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_PORT)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX2_GPS_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX2_GPS_PORT_LOWER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_PORT)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(UBX2_GPS_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UBX2_GPS_BAUD)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_BAUD)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_UBX_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(UBX2_GPS_PORT)$(SECONDARY_GPS),)&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">      <span class="keyword">ifdef</span> <span class="keyword">SECONDARY_GPS</span></div>
@@ -221,6 +220,7 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">          # <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">secondary</span> <span class="keyword">GPS</span></div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_SECONDARY_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DSECONDARY_GPS</span>=<span class="keyword">GPS_UBX2</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_UBX_NB</span>=2</div>
 <div class="line">        <span class="keyword">else</span> <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox</span>, $(<span class="keyword">SECONDARY_GPS</span>)))</div>
 <div class="line">          # <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">secondary</span> <span class="keyword">GPS</span></div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_SECONDARY_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
@@ -230,6 +230,7 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">        <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox2</span>, $(<span class="keyword">PRIMARY_GPS</span>)))</div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_GPS</span>=<span class="keyword">GPS_UBX2</span></div>
+<div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_UBX_NB</span>=2</div>
 <div class="line">        <span class="keyword">else</span> <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> <span class="keyword">ublox</span>, $(<span class="keyword">PRIMARY_GPS</span>)))</div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DGPS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/gps/gps_ubx.h\&quot;</span></div>
 <div class="line">          $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_GPS</span>=<span class="keyword">GPS_UBX</span></div>
@@ -254,7 +255,7 @@ Raw gps_ublox.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed May 29 2024 12:34:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 30 2024 07:29:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
