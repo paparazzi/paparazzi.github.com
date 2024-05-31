@@ -54,6 +54,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "baro_sim.h", "baro__sim_8h.html", "baro__sim_8h" ],
     [ "bat_voltage_ardrone2.c", "bat__voltage__ardrone2_8c.html", "bat__voltage__ardrone2_8c" ],
     [ "bat_voltage_ardrone2.h", "bat__voltage__ardrone2_8h.html", "bat__voltage__ardrone2_8h" ],
+    [ "battery_uavcan.c", "battery__uavcan_8c.html", "battery__uavcan_8c" ],
+    [ "battery_uavcan.h", "battery__uavcan_8h.html", "battery__uavcan_8h" ],
     [ "ezcurrent.c", "ezcurrent_8c.html", "ezcurrent_8c" ],
     [ "ezcurrent.h", "ezcurrent_8h.html", "ezcurrent_8h" ],
     [ "generic_uart.c", "generic__uart_8c.html", "generic__uart_8c" ],

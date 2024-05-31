@@ -2628,6 +2628,12 @@ var onboard_modules =
         [ "Raw bat_voltage_ardrone2.xml file:", "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2", null ]
       ] ]
     ] ],
+    [ "battery_uavcan module", "module__battery_uavcan.html", [
+      [ "Example for airframe file", "module__battery_uavcan.html#module_load_example__battery_uavcan", null ],
+      [ "Module functions", "module__battery_uavcan.html#functions__battery_uavcan", [
+        [ "Raw battery_uavcan.xml file:", "module__battery_uavcan.html#module_xml__battery_uavcan", null ]
+      ] ]
+    ] ],
     [ "ezcurrent module", "module__ezcurrent.html", [
       [ "Example for airframe file", "module__ezcurrent.html#module_load_example__ezcurrent", null ],
       [ "Module configuration options", "module__ezcurrent.html#configuration__ezcurrent", null ],
