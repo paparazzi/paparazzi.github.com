@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__digital_cam_servo.html#functions__digital_cam_servo":[1,134,2],
+"module__digital_cam_servo.html#module_load_example__digital_cam_servo":[1,134,0],
 "module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,134,2,0],
 "module__digital_cam_shoot_rc.html":[1,135],
 "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,135,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__gps_sirf.html#configuration__gps_sirf":[1,160,1],
 "module__gps_sirf.html#functions__gps_sirf":[1,160,2],
 "module__gps_sirf.html#module_load_example__gps_sirf":[1,160,0],
-"module__gps_sirf.html#module_xml__gps_sirf":[1,160,2,0],
-"module__gps_skytraq.html":[1,161],
-"module__gps_skytraq.html#configuration__gps_skytraq":[1,161,1]
+"module__gps_sirf.html#module_xml__gps_sirf":[1,160,2,0]
 };

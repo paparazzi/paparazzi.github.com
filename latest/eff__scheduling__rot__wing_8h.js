@@ -44,6 +44,7 @@ var eff__scheduling__rot__wing_8h =
     [ "eff_scheduling_rot_wing_init", "eff__scheduling__rot__wing_8h.html#a160bdad8355b622e3634294c818e7e45", null ],
     [ "eff_scheduling_rot_wing_periodic", "eff__scheduling__rot__wing_8h.html#a5e05be74b9c83ef5f2146ecaf885af41", null ],
     [ "eff_sched_pusher_time", "eff__scheduling__rot__wing_8h.html#ac1ca2c16fc942a58b3eda2290794c858", null ],
+    [ "roll_eff_scaling", "eff__scheduling__rot__wing_8h.html#a6c7df14d0b39db178ce2b6e0fdff6669", null ],
     [ "rotation_angle_setpoint_deg", "eff__scheduling__rot__wing_8h.html#a8c9f2b5a055440408d72b9eed34d3f87", null ],
     [ "rotation_cmd", "eff__scheduling__rot__wing_8h.html#ac122cce6b57a3b628a0a94ccb622b341", null ]
 ];

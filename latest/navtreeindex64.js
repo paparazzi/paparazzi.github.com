@@ -1,12 +1,14 @@
 var NAVTREEINDEX64 =
 {
+"group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a":[12,0,1,0,6,42,0,2,4],
+"group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a":[12,0,1,0,6,42,0,3,2],
 "group__chprintf.html#gac4d09f4bc1ab5e0292782974b8c5b4b5":[9,10,3],
 "group__chprintf.html#gac4d09f4bc1ab5e0292782974b8c5b4b5":[12,0,1,0,6,42,0,2,0],
 "group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e":[9,10,13],
 "group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e":[12,0,1,0,6,42,0,2,10],
 "group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[9,10,6],
-"group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[12,0,1,0,6,42,0,2,3],
 "group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[12,0,1,0,6,42,0,3,1],
+"group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[12,0,1,0,6,42,0,2,3],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[9,10,8],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[12,0,1,0,6,42,0,2,5],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[12,0,1,0,6,42,0,3,3],
@@ -144,8 +146,8 @@ var NAVTREEINDEX64 =
 "group__config.html#gad22892d2984f5289c63f963622e7f2af":[9,5,13],
 "group__config.html#gad2d97ed4d8ef5f773295ab0dff750c3a":[12,0,1,0,0,0,3,3],
 "group__config.html#gad2d97ed4d8ef5f773295ab0dff750c3a":[9,5,3],
-"group__config.html#gad39f51eec096df2b73444e8fad5cfd11":[12,0,1,0,0,0,3,42],
 "group__config.html#gad39f51eec096df2b73444e8fad5cfd11":[9,5,42],
+"group__config.html#gad39f51eec096df2b73444e8fad5cfd11":[12,0,1,0,0,0,3,42],
 "group__config.html#gad54d32365f5c593cff704acb33a2032a":[12,0,1,0,0,0,3,47],
 "group__config.html#gad54d32365f5c593cff704acb33a2032a":[9,5,47],
 "group__config.html#gad602fd2546073869a10859158d865b9b":[12,0,1,0,0,0,3,63],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964":[9,0,0,19],
 "group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964":[12,0,1,0,5,5,5],
 "group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964":[12,0,1,0,5,6,16],
-"group__i2c.html#gab31a87ef6e90ddd08be846de32e8a442":[9,0,0,11],
-"group__i2c.html#gab31a87ef6e90ddd08be846de32e8a442":[12,0,1,0,5,6,8],
-"group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3":[9,0,0,15]
+"group__i2c.html#gab31a87ef6e90ddd08be846de32e8a442":[9,0,0,11]
 };

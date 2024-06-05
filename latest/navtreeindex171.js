@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"paparazzi_messages.html#DGPS_RAW":[2,1,10],
+"paparazzi_messages.html#DIVERGENCE":[2,0,205],
 "paparazzi_messages.html#DL_EMERGENCY_CMD":[2,2,37],
 "paparazzi_messages.html#DL_SETTING":[2,2,24],
 "paparazzi_messages.html#DL_VALUE":[2,0,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#TEMP_ADC":[2,0,143],
 "paparazzi_messages.html#TEMP_TCOUPLE":[2,0,121],
 "paparazzi_messages.html#TEMT_STATUS":[2,0,92],
-"paparazzi_messages.html#THROTTLE_CURVE":[2,0,102],
-"paparazzi_messages.html#TIME":[2,0,208],
-"paparazzi_messages.html#TIMESTAMP":[2,0,124]
+"paparazzi_messages.html#THROTTLE_CURVE":[2,0,102]
 };

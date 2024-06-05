@@ -1,5 +1,11 @@
 var NAVTREEINDEX204 =
 {
+"stabilization__attitude__heli__indi_8c.html#a5513a45fbe4d5693369e5e3b220d8b51":[12,0,1,0,3,2,2,8,0],
+"stabilization__attitude__heli__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42":[12,0,1,0,3,2,2,8,52],
+"stabilization__attitude__heli__indi_8c.html#a5dd9caeb5d15e40ddb2e3be637e74396":[12,0,1,0,3,2,2,8,49],
+"stabilization__attitude__heli__indi_8c.html#a5f7f5ff3ebdee68b4da66e31a3584c17":[12,0,1,0,3,2,2,8,18],
+"stabilization__attitude__heli__indi_8c.html#a66941864a37a2b86a4065fe01c2ad382":[12,0,1,0,3,2,2,8,51],
+"stabilization__attitude__heli__indi_8c.html#a6ddaae48b455e296c368e0e569ecb7fa":[12,0,1,0,3,2,2,8,6],
 "stabilization__attitude__heli__indi_8c.html#a6de5648c64b8ed73974217b06956498b":[12,0,1,0,3,2,2,8,24],
 "stabilization__attitude__heli__indi_8c.html#a7217d5be0ab89723c9896d37d4f2cf2b":[12,0,1,0,3,2,2,8,26],
 "stabilization__attitude__heli__indi_8c.html#a79877044d938df5e85e72f71006af500":[12,0,1,0,3,2,2,8,32],
@@ -243,11 +249,5 @@ var NAVTREEINDEX204 =
 "stabilization__attitude__ref__euler__int_8c.html#a0d93c149b0777920a61387dbb073fe4c":[12,0,1,0,3,2,2,25,20],
 "stabilization__attitude__ref__euler__int_8c.html#a215bd0f15e33a9d2e43a791a9235a50d":[12,0,1,0,3,2,2,25,19],
 "stabilization__attitude__ref__euler__int_8c.html#a2a439d1023dcffd458271d54cace5a95":[12,0,1,0,3,2,2,25,15],
-"stabilization__attitude__ref__euler__int_8c.html#a2ac5bff782c48503fe18b885f38f0f90":[12,0,1,0,3,2,2,25,3],
-"stabilization__attitude__ref__euler__int_8c.html#a2ffd7ebe36c7ed3fc6d5bc478dff0848":[12,0,1,0,3,2,2,25,23],
-"stabilization__attitude__ref__euler__int_8c.html#a33aba348bdb40cec6290d75d0d177ae5":[12,0,1,0,3,2,2,25,21],
-"stabilization__attitude__ref__euler__int_8c.html#a3648a2db6089a671cea8cd02db4b48c1":[12,0,1,0,3,2,2,25,17],
-"stabilization__attitude__ref__euler__int_8c.html#a3e275d7b55d03f7498022dc91ddfdbf4":[12,0,1,0,3,2,2,25,6],
-"stabilization__attitude__ref__euler__int_8c.html#a3ea4fc9c50e7b597184a93bc8e7a5248":[12,0,1,0,3,2,2,25,11],
-"stabilization__attitude__ref__euler__int_8c.html#a3f8d6b617f4443c111163584c48c9794":[12,0,1,0,3,2,2,25,2]
+"stabilization__attitude__ref__euler__int_8c.html#a2ac5bff782c48503fe18b885f38f0f90":[12,0,1,0,3,2,2,25,3]
 };

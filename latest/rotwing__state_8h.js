@@ -43,6 +43,7 @@ var rotwing__state_8h =
     [ "periodic_rotwing_state", "rotwing__state_8h.html#aeb77669ee7369ed49ea36c28ce578d72", null ],
     [ "request_rotwing_state", "rotwing__state_8h.html#a3b07a93ace6d1e15fe02ee21f86e6c83", null ],
     [ "rotwing_request_configuration", "rotwing__state_8h.html#ad19cf26f397e69733d93cbbb6e602af2", null ],
+    [ "rotwing_state_hover_motors_running", "rotwing__state_8h.html#a193394bc5b357951cc100d7c10f252be", null ],
     [ "rotwing_state_skew_actuator_periodic", "rotwing__state_8h.html#a36607fb6052d0d3d523115f5c73896fe", null ],
     [ "bool_disable_hover_motors", "rotwing__state_8h.html#a723eede8f1726f8738c848d4dd3f6e36", null ],
     [ "hover_motors_active", "rotwing__state_8h.html#aca15855fbc2f0477422f68ffc15c46d4", null ],

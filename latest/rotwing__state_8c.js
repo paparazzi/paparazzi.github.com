@@ -7,6 +7,7 @@ var rotwing__state_8c =
     [ "ROTWING_HALF_SKEW_COUNTER", "rotwing__state_8c.html#ad1960df90dd413da88205c7ddae81f3c", null ],
     [ "ROTWING_HOV_MOT_OFF_COUNTER", "rotwing__state_8c.html#adcbe92832ca4feddb59e5a2129ea39cf", null ],
     [ "ROTWING_HOV_MOT_OFF_RPM_TH", "rotwing__state_8c.html#a433aaa5fd39ed76767989d1a969de1a8", null ],
+    [ "ROTWING_HOV_MOT_RUN_RPM_TH", "rotwing__state_8c.html#a725270a52a256ebb68ed0a69573c98c5", null ],
     [ "ROTWING_MAX_QUAD_AIRSPEED", "rotwing__state_8c.html#a3e1025e5b3f1b045432ba4170b1e3283", null ],
     [ "ROTWING_MIN_FW_COUNTER", "rotwing__state_8c.html#a3a37e4ed5d15d6410818da03a40329e2", null ],
     [ "ROTWING_MIN_FW_SKEW_ANGLE_DEG", "rotwing__state_8c.html#a3486e35a80e8f03dc38c9c16ff68566e", null ],
@@ -30,6 +31,7 @@ var rotwing__state_8c =
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096", null ],
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a33785e979e73223db3953cb3b8a711dd", null ],
     [ "rotwing_state_free_processor", "rotwing__state_8c.html#ac650c6d110da08a54283fc49a8bf2503", null ],
+    [ "rotwing_state_hover_motors_running", "rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be", null ],
     [ "rotwing_state_set_fw_hov_mot_idle_settings", "rotwing__state_8c.html#ae95c74d2cb0aa9671bb8b91c2be75a45", null ],
     [ "rotwing_state_set_fw_hov_mot_off_settings", "rotwing__state_8c.html#a7f1c3561f0de6a0fe9de94d1067edea8", null ],
     [ "rotwing_state_set_fw_settings", "rotwing__state_8c.html#a0f88954289df284f3e8af5ee6d8f2b69", null ],
@@ -52,5 +54,6 @@ var rotwing__state_8c =
     [ "rotwing_state_max_hover_speed", "rotwing__state_8c.html#a50a59286f4329a38b80ddd8a0c72734c", null ],
     [ "rotwing_state_settings", "rotwing__state_8c.html#a07b46b2795d324fc2774999d6a4b37c2", null ],
     [ "rotwing_state_skewing", "rotwing__state_8c.html#a5e6de09c521ca498b85269305e600cc4", null ],
-    [ "rotwing_state_skewing_counter", "rotwing__state_8c.html#a688aeba281deb8aef9babc7025adbc66", null ]
+    [ "rotwing_state_skewing_counter", "rotwing__state_8c.html#a688aeba281deb8aef9babc7025adbc66", null ],
+    [ "Wu_gih_original", "rotwing__state_8c.html#a0c18c7d94d279693139bd1f63142069c", null ]
 ];

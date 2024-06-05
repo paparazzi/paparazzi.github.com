@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__imu_heater.html#functions__imu_heater":[1,202,2],
+"module__imu_heater.html#module_load_example__imu_heater":[1,202,0],
 "module__imu_heater.html#module_xml__imu_heater":[1,202,2,0],
 "module__imu_icm42688.html":[1,203],
 "module__imu_icm42688.html#configuration__imu_icm42688":[1,203,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__lidar_lite.html#functions__lidar_lite":[1,247,2],
 "module__lidar_lite.html#module_load_example__lidar_lite":[1,247,0],
 "module__lidar_lite.html#module_xml__lidar_lite":[1,247,2,0],
-"module__lidar_sf11.html":[1,248],
-"module__lidar_sf11.html#configuration__lidar_sf11":[1,248,1],
-"module__lidar_sf11.html#functions__lidar_sf11":[1,248,2]
+"module__lidar_sf11.html":[1,248]
 };

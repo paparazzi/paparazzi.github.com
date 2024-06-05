@@ -22,6 +22,7 @@ var stabilization__indi_8c =
     [ "stabilization_indi_rate_run", "stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233", null ],
     [ "stabilization_indi_set_wls_settings", "stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2", null ],
     [ "sum_g1_g2", "stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2", null ],
+    [ "acceleration_body_x_filter", "stabilization__indi_8c.html#a126ae8a48443d5581c404f635d3bda20", null ],
     [ "acceleration_lowpass_filter", "stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943", null ],
     [ "act_dyn_discrete", "stabilization__indi_8c.html#ab035369ed04b28d724833c9884d88ea4", null ],
     [ "act_first_order_cutoff", "stabilization__indi_8c.html#aaf97d6f89fcdaa70835f0c4b8b8fbc23", null ],

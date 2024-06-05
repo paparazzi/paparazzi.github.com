@@ -89,12 +89,13 @@ var searchData=
   ['ws2812cfg_42275',['WS2812CFG',['../light__ws2812__arch_8c.html#a4b6fbf364f9a7e049559d80cc523c7b5',1,'light_ws2812_arch.c']]],
   ['ws2812d_42276',['WS2812D',['../light__ws2812__arch_8c.html#a1592178bd1150d30d1f9572eccd39615',1,'light_ws2812_arch.c']]],
   ['wu_42277',['Wu',['../oneloop__andi_8c.html#accb6f16c8d4dbff07fd975eeadf4af3c',1,'oneloop_andi.c']]],
-  ['wv_42278',['Wv',['../oneloop__andi_8c.html#ac13a994124c11e9a6d1abd6dec1a8803',1,'Wv():&#160;oneloop_andi.c'],['../stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d',1,'Wv():&#160;stabilization_indi.c']]],
-  ['wv_5fwls_42279',['Wv_wls',['../oneloop__andi_8c.html#a31720de7bec5f6515b0248caf05d28b4',1,'oneloop_andi.c']]],
-  ['wx_42280',['WX',['../namespacemesonh_1_1mesonh__atmosphere.html#a6aa7d4c9f1e80ada0f30cd20a19311ce',1,'mesonh::mesonh_atmosphere']]],
-  ['wx_42281',['wx',['../gvf__parametric__3d__lissajous_8h.html#a96759c4ebf82903213053214be33a798',1,'gvf_par_3d_lis_par']]],
-  ['wy_42282',['WY',['../namespacemesonh_1_1mesonh__atmosphere.html#a2595c6326c2359b40106df2fa0999394',1,'mesonh::mesonh_atmosphere']]],
-  ['wy_42283',['wy',['../gvf__parametric__3d__lissajous_8h.html#a0b331b8788e1781e056c149f7aec7a76',1,'gvf_par_3d_lis_par']]],
-  ['wz_42284',['wz',['../gvf__parametric__3d__lissajous_8h.html#acd9820024fc11dd6f086151c015dd51a',1,'gvf_par_3d_lis_par']]],
-  ['wz_42285',['WZ',['../namespacemesonh_1_1mesonh__atmosphere.html#ac631a3701652758e7985146f01820085',1,'mesonh::mesonh_atmosphere']]]
+  ['wu_5fgih_5foriginal_42278',['Wu_gih_original',['../rotwing__state_8c.html#a0c18c7d94d279693139bd1f63142069c',1,'rotwing_state.c']]],
+  ['wv_42279',['Wv',['../oneloop__andi_8c.html#ac13a994124c11e9a6d1abd6dec1a8803',1,'Wv():&#160;oneloop_andi.c'],['../stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d',1,'Wv():&#160;stabilization_indi.c']]],
+  ['wv_5fwls_42280',['Wv_wls',['../oneloop__andi_8c.html#a31720de7bec5f6515b0248caf05d28b4',1,'oneloop_andi.c']]],
+  ['wx_42281',['WX',['../namespacemesonh_1_1mesonh__atmosphere.html#a6aa7d4c9f1e80ada0f30cd20a19311ce',1,'mesonh::mesonh_atmosphere']]],
+  ['wx_42282',['wx',['../gvf__parametric__3d__lissajous_8h.html#a96759c4ebf82903213053214be33a798',1,'gvf_par_3d_lis_par']]],
+  ['wy_42283',['WY',['../namespacemesonh_1_1mesonh__atmosphere.html#a2595c6326c2359b40106df2fa0999394',1,'mesonh::mesonh_atmosphere']]],
+  ['wy_42284',['wy',['../gvf__parametric__3d__lissajous_8h.html#a0b331b8788e1781e056c149f7aec7a76',1,'gvf_par_3d_lis_par']]],
+  ['wz_42285',['wz',['../gvf__parametric__3d__lissajous_8h.html#acd9820024fc11dd6f086151c015dd51a',1,'gvf_par_3d_lis_par']]],
+  ['wz_42286',['WZ',['../namespacemesonh_1_1mesonh__atmosphere.html#ac631a3701652758e7985146f01820085',1,'mesonh::mesonh_atmosphere']]]
 ];
