@@ -1,7 +1,5 @@
 var NAVTREEINDEX206 =
 {
-"stabilization__indi_8h.html#a3099f5d69f8b2b84a9b1f7685f325adb":[12,0,1,0,3,2,2,35,7],
-"stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047":[12,0,1,0,3,2,2,35,15],
 "stabilization__indi_8h.html#a4e72c194dd0e8195c9a54998f7c174e7":[12,0,1,0,3,2,2,35,20],
 "stabilization__indi_8h.html#a58b9d284732ce9ce4df89c8cb5027fb2":[12,0,1,0,3,2,2,35,12],
 "stabilization__indi_8h.html#a74bfd6faffeed6e40628ce846f8119fd":[12,0,1,0,3,2,2,35,10],
@@ -61,8 +59,8 @@ var NAVTREEINDEX206 =
 "stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20":[12,0,1,0,3,2,2,37,2,14],
 "stabilization__indi__simple_8h.html#a701c67af1ddf7f0a80a22e6719c993a1":[12,0,1,0,3,2,2,37,1,5],
 "stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4":[12,0,1,0,3,2,2,37,2,15],
-"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,37,0,1],
 "stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,35,0,1],
+"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,37,0,1],
 "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,2,37,2,2],
 "stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,2,37,1,4],
 "stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,37,0,0],
@@ -81,8 +79,8 @@ var NAVTREEINDEX206 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,37,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,37,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,37,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,37,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,35,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,37,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,37],
 "stabilization__oneloop_8c.html":[12,0,1,0,3,2,2,38],
 "stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,38,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX206 =
 "stm32_2mcu__periph_2adc__arch_8c.html":[12,0,1,0,0,3,0,0],
 "stm32_2mcu__periph_2adc__arch_8c.html#a006a3e3f3935299ac3dfc03cb283c41e":[12,0,1,0,0,3,0,0,2],
 "stm32_2mcu__periph_2adc__arch_8c.html#a0a5a43d5ad57bb96dd80927c6bef75fd":[12,0,1,0,0,3,0,0,14],
-"stm32_2mcu__periph_2adc__arch_8c.html#a1958792a1b40f1a5a1b3440613da1a21":[12,0,1,0,0,3,0,0,0]
+"stm32_2mcu__periph_2adc__arch_8c.html#a1958792a1b40f1a5a1b3440613da1a21":[12,0,1,0,0,3,0,0,0],
+"stm32_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824":[12,0,1,0,0,3,0,0,6],
+"stm32_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0":[12,0,1,0,0,3,0,0,7]
 };

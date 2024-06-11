@@ -1,7 +1,5 @@
 var NAVTREEINDEX95 =
 {
-"intermcu__dl_8c.html#a1c1dcd938c8994f397cab17772b15d3f":[12,0,1,0,6,15,17,3],
-"intermcu__dl_8c.html#a2efff3165b0d4eddb2f01d93b456aed3":[12,0,1,0,6,15,17,2],
 "intermcu__dl_8c.html#a88a0036361c3680adee00030e08b426c":[12,0,1,0,6,15,17,1],
 "intermcu__dl_8c.html#aa2278c7683eae72130accc7a81fae303":[12,0,1,0,6,15,17,0],
 "intermcu__dl_8c.html#aa9e2fa8d6a08ff49e1476a72a6e363ca":[12,0,1,0,6,15,17,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX95 =
 "invensense2__regs_8h.html#a84221434e87b607adab576ac5c685020":[12,0,1,0,7,45,135],
 "invensense2__regs_8h.html#a88291d9f680d6a717d9f227922de33c8":[12,0,1,0,7,45,4],
 "invensense2__regs_8h.html#a893c54703c22a67ee156f622f51d51dd":[12,0,1,0,7,45,101],
-"invensense2__regs_8h.html#a89f7aec2a9404f37e812ff904605babd":[12,0,1,0,7,45,49]
+"invensense2__regs_8h.html#a89f7aec2a9404f37e812ff904605babd":[12,0,1,0,7,45,49],
+"invensense2__regs_8h.html#a8c7a4a4b5bc5d28139048214365febd7":[12,0,1,0,7,45,104],
+"invensense2__regs_8h.html#a8ca2f79f7f150078677a9bcee4242ef8":[12,0,1,0,7,45,127]
 };

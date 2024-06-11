@@ -1,7 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,367,1],
-"module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,367,2],
 "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,367,0],
 "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,367,2,0],
 "module__range_forcefield.html":[1,493],
@@ -249,5 +247,7 @@ var NAVTREEINDEX138 =
 "module__tag_tracking.html#module_load_example__tag_tracking":[1,68,0],
 "module__tag_tracking.html#module_xml__tag_tracking":[1,68,3,0],
 "module__takeoff_detect.html":[1,351],
-"module__takeoff_detect.html#configuration__takeoff_detect":[1,351,1]
+"module__takeoff_detect.html#configuration__takeoff_detect":[1,351,1],
+"module__takeoff_detect.html#functions__takeoff_detect":[1,351,2],
+"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,351,0]
 };

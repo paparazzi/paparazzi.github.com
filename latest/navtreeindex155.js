@@ -1,7 +1,5 @@
 var NAVTREEINDEX155 =
 {
-"navdata_8h.html#structnavdata__measure__t":[12,0,1,0,1,1,7,0],
-"navdata_8h.html#structnavdata__t":[12,0,1,0,1,1,7,2],
 "navdata_8h_source.html":[12,0,1,0,1,1,7],
 "navstik__1_80_8h.html":[12,0,1,0,1,48],
 "navstik__1_80_8h.html#a01ac9d2f00660408bcc8c809020904f9":[12,0,1,0,1,48,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX155 =
 "naze32__common_8h.html#acdfc946654870dc7013b6f8b9d9e5a24":[12,0,1,0,1,49,72],
 "naze32__common_8h.html#acdff8432bd4f84cbc5ed4832ac36eca7":[12,0,1,0,1,49,64],
 "naze32__common_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e":[12,0,1,0,1,49,65],
-"naze32__common_8h.html#ad2aa2755e250074295573801fe54cf9a":[12,0,1,0,1,49,15]
+"naze32__common_8h.html#ad2aa2755e250074295573801fe54cf9a":[12,0,1,0,1,49,15],
+"naze32__common_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce":[12,0,1,0,1,49,30],
+"naze32__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,49,8]
 };

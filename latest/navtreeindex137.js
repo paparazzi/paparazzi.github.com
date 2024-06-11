@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,334,2],
-"module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,334,1],
 "module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,334,0],
 "module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,334,2,0],
 "module__nav_rover_base.html":[1,335],
@@ -249,5 +247,7 @@ var NAVTREEINDEX137 =
 "module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,366,2],
 "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,366,0],
 "module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,366,2,0],
-"module__radio_control_superbitrf_rc.html":[1,367]
+"module__radio_control_superbitrf_rc.html":[1,367],
+"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,367,1],
+"module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,367,2]
 };
