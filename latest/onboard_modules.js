@@ -2628,12 +2628,6 @@ var onboard_modules =
         [ "Raw bat_voltage_ardrone2.xml file:", "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2", null ]
       ] ]
     ] ],
-    [ "battery_uavcan module", "module__battery_uavcan.html", [
-      [ "Example for airframe file", "module__battery_uavcan.html#module_load_example__battery_uavcan", null ],
-      [ "Module functions", "module__battery_uavcan.html#functions__battery_uavcan", [
-        [ "Raw battery_uavcan.xml file:", "module__battery_uavcan.html#module_xml__battery_uavcan", null ]
-      ] ]
-    ] ],
     [ "ezcurrent module", "module__ezcurrent.html", [
       [ "Example for airframe file", "module__ezcurrent.html#module_load_example__ezcurrent", null ],
       [ "Module configuration options", "module__ezcurrent.html#configuration__ezcurrent", null ],
@@ -2707,6 +2701,13 @@ var onboard_modules =
       [ "Module configuration options", "module__opticflow_pmw3901.html#configuration__opticflow_pmw3901", null ],
       [ "Module functions", "module__opticflow_pmw3901.html#functions__opticflow_pmw3901", [
         [ "Raw opticflow_pmw3901.xml file:", "module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901", null ]
+      ] ]
+    ] ],
+    [ "power_uavcan module", "module__power_uavcan.html", [
+      [ "Example for airframe file", "module__power_uavcan.html#module_load_example__power_uavcan", null ],
+      [ "Module configuration options", "module__power_uavcan.html#configuration__power_uavcan", null ],
+      [ "Module functions", "module__power_uavcan.html#functions__power_uavcan", [
+        [ "Raw power_uavcan.xml file:", "module__power_uavcan.html#module_xml__power_uavcan", null ]
       ] ]
     ] ],
     [ "range_sensor_uavcan module", "module__range_sensor_uavcan.html", [
