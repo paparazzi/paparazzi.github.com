@@ -1,5 +1,8 @@
 var sys__id__auto__doublets_8c =
 [
+    [ "SYS_ID_AUTO_DOUBLETS_INTERVAL", "sys__id__auto__doublets_8c.html#a55ce904db62ad0ecbc5dc96b44c04b02", null ],
+    [ "SYS_ID_AUTO_DOUBLETS_REPEATS", "sys__id__auto__doublets_8c.html#a099e7f8e6b56c6dc629d852f4a5a565a", null ],
+    [ "SYS_ID_AUTO_DOUBLETS_TIME", "sys__id__auto__doublets_8c.html#aea731ba26af8a60753e8029e7ce954ec", null ],
     [ "init_sys_id_auto_doublets", "sys__id__auto__doublets_8c.html#a879945c53653084453e0ded13e63ea0e", null ],
     [ "perform_sys_id_auto_doublets", "sys__id__auto__doublets_8c.html#a90a05a1bd79875b3fe751a7953dbc828", null ],
     [ "periodic_sys_id_auto_doublets", "sys__id__auto__doublets_8c.html#a7eef44a298aed40e2af0c80fd3b2d946", null ],
