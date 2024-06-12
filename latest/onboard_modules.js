@@ -95,6 +95,13 @@ var onboard_modules =
         [ "Raw actuators_esc32.xml file:", "module__actuators_esc32.html#module_xml__actuators_esc32", null ]
       ] ]
     ] ],
+    [ "actuators_faulhaber module", "module__actuators_faulhaber.html", [
+      [ "Example for airframe file", "module__actuators_faulhaber.html#module_load_example__actuators_faulhaber", null ],
+      [ "Module configuration options", "module__actuators_faulhaber.html#configuration__actuators_faulhaber", null ],
+      [ "Module functions", "module__actuators_faulhaber.html#functions__actuators_faulhaber", [
+        [ "Raw actuators_faulhaber.xml file:", "module__actuators_faulhaber.html#module_xml__actuators_faulhaber", null ]
+      ] ]
+    ] ],
     [ "actuators_hitl module", "module__actuators_hitl.html", [
       [ "Example for airframe file", "module__actuators_hitl.html#module_load_example__actuators_hitl", null ],
       [ "Module configuration options", "module__actuators_hitl.html#configuration__actuators_hitl", null ],

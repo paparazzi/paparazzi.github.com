@@ -10,6 +10,8 @@ var dir_70fcbe4bfac1daf70a9a1cc8a4943db9 =
     [ "actuators_dummy.h", "actuators__dummy_8h.html", "actuators__dummy_8h" ],
     [ "actuators_esc32.c", "actuators__esc32_8c.html", "actuators__esc32_8c" ],
     [ "actuators_esc32.h", "actuators__esc32_8h.html", "actuators__esc32_8h" ],
+    [ "actuators_faulhaber.c", "actuators__faulhaber_8c.html", "actuators__faulhaber_8c" ],
+    [ "actuators_faulhaber.h", "actuators__faulhaber_8h.html", "actuators__faulhaber_8h" ],
     [ "actuators_hitl.c", "actuators__hitl_8c.html", "actuators__hitl_8c" ],
     [ "actuators_hitl.h", "actuators__hitl_8h.html", "actuators__hitl_8h" ],
     [ "actuators_md25.c", "actuators__md25_8c.html", "actuators__md25_8c" ],

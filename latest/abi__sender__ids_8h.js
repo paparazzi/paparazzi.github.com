@@ -3,6 +3,7 @@ var abi__sender__ids_8h =
     [ "ACCEL_SP_FCR_ID", "abi__sender__ids_8h.html#a1048a5bb86fd2926327b1e13844b1279", null ],
     [ "ACT_FEEDBACK_BOARD_ID", "abi__sender__ids_8h.html#a82abdacacccab7910a7e4dd77cb2519a", null ],
     [ "ACT_FEEDBACK_DSHOT_ID", "abi__sender__ids_8h.html#aa0ceb400915254a7217e07d06d53164f", null ],
+    [ "ACT_FEEDBACK_FAULHABER_ID", "abi__sender__ids_8h.html#ac88263d37ba3b4af16786514aaa31af5", null ],
     [ "ACT_FEEDBACK_RPM_SENSOR_ID", "abi__sender__ids_8h.html#a76425b4ca8a4be7999de690897e41eb6", null ],
     [ "ACT_FEEDBACK_UAVCAN_ID", "abi__sender__ids_8h.html#afa84b6fb34e23a56f3748abe4981d6e3", null ],
     [ "AGL_LIDAR_LITE_ID", "abi__sender__ids_8h.html#ab91de3993845bafafb1dd1395dea222b", null ],
