@@ -137,17 +137,19 @@ $(document).ready(function(){initNavTree('actuators__faulhaber_8h_source.html','
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#a73b907c01227cd1984a85f7f3c94c34b">   53</a></span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__faulhaber_8h.html#afbc7098516997f6c3ced6743dc06ac10">actuators_faulhaber_SetMode</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if USE_NPS</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberInit() {}</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define ActuatorFaulhaberSet(_i, _v) {}</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberCommit()  {}</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#a15f72d500dd9c2314c2ba888337c2641">   61</a></span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberInit() actuators_faulhaber_init()</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#a964d1d5ae5e5b12cf91cd6640e50fb28">   62</a></span>&#160;<span class="preprocessor">#define ActuatorFaulhaberSet(_i, _v) { faulhaber.setpoint_position = ((get_servo_max_FAULHABER(0)-_v) + get_servo_min_FAULHABER(0))*1000.0f; }</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#ae69f7a5529fb6b1dcf53001305a64d5d">   63</a></span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberCommit()  {}</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_FAULHABER_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#a388ac434159d37e3ed3fba493c895345">   56</a></span>&#160;<span class="preprocessor">#define ACTUATORS_FAULHABER_COMMAND_SCALE 1000.0f</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if USE_NPS</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberInit() {}</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define ActuatorFaulhaberSet(_i, _v) {}</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberCommit()  {}</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#a15f72d500dd9c2314c2ba888337c2641">   63</a></span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberInit() actuators_faulhaber_init()</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#a964d1d5ae5e5b12cf91cd6640e50fb28">   64</a></span>&#160;<span class="preprocessor">#define ActuatorFaulhaberSet(_i, _v) { faulhaber.setpoint_position = ((get_servo_max_FAULHABER(0)-_v) + get_servo_min_FAULHABER(0))*ACTUATORS_FAULHABER_COMMAND_SCALE; }</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="actuators__faulhaber_8h.html#ae69f7a5529fb6b1dcf53001305a64d5d">   65</a></span>&#160;<span class="preprocessor">#define ActuatorsFaulhaberCommit()  {}</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_FAULHABER_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aactuators__faulhaber_8h_html_a2f4ad17816dfbc0dd401970b07e18e0a"><div class="ttname"><a href="actuators__faulhaber_8h.html#a2f4ad17816dfbc0dd401970b07e18e0a">faulhaber_t::real_position</a></div><div class="ttdeci">int32_t real_position</div><div class="ttdef"><b>Definition:</b> <a href="actuators__faulhaber_8h_source.html#l00046">actuators_faulhaber.h:46</a></div></div>
 <div class="ttc" id="aactuators__faulhaber_8h_html_a51a6848f02cd6b0e522c9178247d01ef"><div class="ttname"><a href="actuators__faulhaber_8h.html#a51a6848f02cd6b0e522c9178247d01ef">actuators_faulhaber_event</a></div><div class="ttdeci">void actuators_faulhaber_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="actuators__faulhaber_8c_source.html#l00327">actuators_faulhaber.c:327</a></div></div>
 <div class="ttc" id="aactuators__faulhaber_8h_html_a5734810e1a3f4640ea7f8854573c7c91"><div class="ttname"><a href="actuators__faulhaber_8h.html#a5734810e1a3f4640ea7f8854573c7c91">faulhaber_t::target_position</a></div><div class="ttdeci">int32_t target_position</div><div class="ttdef"><b>Definition:</b> <a href="actuators__faulhaber_8h_source.html#l00045">actuators_faulhaber.h:45</a></div></div>
@@ -175,7 +177,7 @@ $(document).ready(function(){initNavTree('actuators__faulhaber_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__faulhaber_8h.html">actuators_faulhaber.h</a></li>
-    <li class="footer">Generated on Wed Jun 12 2024 07:29:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 13 2024 14:43:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

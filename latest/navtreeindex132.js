@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__baro_board_common.html#functions__baro_board_common":[1,394,2],
+"module__baro_board_common.html#module_load_example__baro_board_common":[1,394,0],
 "module__baro_board_common.html#module_xml__baro_board_common":[1,394,2,0],
 "module__baro_ets.html":[1,395],
 "module__baro_ets.html#configuration__baro_ets":[1,395,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__demo_module.html#module_xml__demo_module":[1,461,1,0],
 "module__dfu_command.html":[1,462],
 "module__dfu_command.html#functions__dfu_command":[1,462,1],
-"module__dfu_command.html#module_load_example__dfu_command":[1,462,0],
-"module__dfu_command.html#module_xml__dfu_command":[1,462,1,0],
-"module__digital_cam.html":[1,130]
+"module__dfu_command.html#module_load_example__dfu_command":[1,462,0]
 };

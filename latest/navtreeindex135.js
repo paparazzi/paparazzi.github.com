@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__imu_bmi088_i2c.html":[1,197],
+"module__imu_bmi088_i2c.html#configuration__imu_bmi088_i2c":[1,197,1],
 "module__imu_bmi088_i2c.html#functions__imu_bmi088_i2c":[1,197,2],
 "module__imu_bmi088_i2c.html#module_load_example__imu_bmi088_i2c":[1,197,0],
 "module__imu_bmi088_i2c.html#module_xml__imu_bmi088_i2c":[1,197,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,290,0],
 "module__ir_mlx.html#module_xml__ir_mlx":[1,290,1,0],
 "module__jevois.html":[1,419],
-"module__jevois.html#configuration__jevois":[1,419,1],
-"module__jevois.html#functions__jevois":[1,419,2],
-"module__jevois.html#module_load_example__jevois":[1,419,0]
+"module__jevois.html#configuration__jevois":[1,419,1]
 };

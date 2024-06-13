@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"discrete__ekf_8h.html#a8456a0f21ab38aca40f3b4cafa6053c1":[12,0,1,0,6,59,1,3],
 "discrete__ekf_8h.html#a9d444c0f848243db1a16f1a942f20d8d":[12,0,1,0,6,59,1,0,8],
 "discrete__ekf_8h.html#aa19653bab243560b8aa8d3fd23e5c50c":[12,0,1,0,6,59,1,0,4],
 "discrete__ekf_8h.html#aa64b422c775f4769d485963f91ffe905":[12,0,1,0,6,59,1,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "dshot__rpmCapture_8h.html#structDshotDmaStreamChan":[12,0,1,0,0,0,1,0,7,0],
 "dshot__rpmCapture_8h.html#structDshotRpmCapture":[12,0,1,0,0,0,1,0,7,4],
 "dshot__rpmCapture_8h.html#structDshotRpmCaptureConfig":[12,0,1,0,0,0,1,0,7,3],
-"dshot__rpmCapture_8h.html#structDshotRpmCaptureDmaBuffer":[12,0,1,0,0,0,1,0,7,2],
-"dshot__rpmCapture_8h.html#structDshotRpmCaptureOneChannelDmaBuffer":[12,0,1,0,0,0,1,0,7,1]
+"dshot__rpmCapture_8h.html#structDshotRpmCaptureDmaBuffer":[12,0,1,0,0,0,1,0,7,2]
 };

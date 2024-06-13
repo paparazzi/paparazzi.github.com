@@ -8,6 +8,7 @@ var guidance__indi__hybrid_8c =
     [ "GUIDANCE_INDI_LIFTD_P50", "guidance__indi__hybrid_8c.html#a945db3508eec97c51c7260e0c55da1ef", null ],
     [ "GUIDANCE_INDI_LIFTD_P80", "guidance__indi__hybrid_8c.html#af4ea2de4c5c630e5de071877aeff1e07", null ],
     [ "GUIDANCE_INDI_MAX_LAT_ACCEL", "guidance__indi__hybrid_8c.html#a229667ae1ca2b80014b4e44d046c7bad", null ],
+    [ "GUIDANCE_INDI_MAX_PUSHER_INCREMENT", "guidance__indi__hybrid_8c.html#ab7075a5c8e24a75385c757635479ca99", null ],
     [ "GUIDANCE_INDI_POS_GAIN", "guidance__indi__hybrid_8c.html#a69f0c186c919cfa3160c6f58370142bb", null ],
     [ "GUIDANCE_INDI_POS_GAINZ", "guidance__indi__hybrid_8c.html#ad6f52208c55c4a6966691272b84887c0", null ],
     [ "GUIDANCE_INDI_SPEED_GAIN", "guidance__indi__hybrid_8c.html#af97bf00bfb251541ea611bac98d9f92f", null ],

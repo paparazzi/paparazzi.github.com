@@ -1,5 +1,7 @@
 var NAVTREEINDEX139 =
 {
+"module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,449,0],
+"module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,449,2,0],
 "module__sys_id_wave.html":[1,450],
 "module__sys_id_wave.html#configuration__sys_id_wave":[1,450,1],
 "module__sys_id_wave.html#functions__sys_id_wave":[1,450,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX139 =
 "module__wls.html":[1,505],
 "module__wls.html#configuration__wls":[1,505,1],
 "module__wls.html#module_load_example__wls":[1,505,0],
-"module__wls.html#module_xml__wls":[1,505,1,0],
-"module__xtend_rssi.html":[1,126],
-"module__xtend_rssi.html#configuration__xtend_rssi":[1,126,1]
+"module__wls.html#module_xml__wls":[1,505,1,0]
 };

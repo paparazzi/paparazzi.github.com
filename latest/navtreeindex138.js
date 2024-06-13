@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,361,3,0],
+"module__radio_control_hott.html":[1,362],
 "module__radio_control_hott.html#configuration__radio_control_hott":[1,362,1],
 "module__radio_control_hott.html#functions__radio_control_hott":[1,362,2],
 "module__radio_control_hott.html#module_load_example__radio_control_hott":[1,362,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "module__sys_id_chirp.html#module_xml__sys_id_chirp":[1,448,2,0],
 "module__sys_id_doublet.html":[1,449],
 "module__sys_id_doublet.html#configuration__sys_id_doublet":[1,449,1],
-"module__sys_id_doublet.html#functions__sys_id_doublet":[1,449,2],
-"module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,449,0],
-"module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,449,2,0]
+"module__sys_id_doublet.html#functions__sys_id_doublet":[1,449,2]
 };

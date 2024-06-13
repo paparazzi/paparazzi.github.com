@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"cf__deck__multi__ranger_8h.html#a580f0b30e559460505edfb2c90dd8e8f":[12,0,1,0,6,57,1,1],
 "cf__deck__multi__ranger_8h.html#a9e2d42d9e59cd4622247712fc2f259b7":[12,0,1,0,6,57,1,0],
 "cf__deck__multi__ranger_8h.html#ab23c504c8c7175c03a791e85d8c721a6":[12,0,1,0,6,57,1,2],
 "cf__deck__multi__ranger_8h_source.html":[12,0,1,0,6,57,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "chibios_2modules_2actuators_2actuators__pwm__arch_8h.html":[12,0,1,0,0,0,1,0,3],
 "chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989":[12,0,1,0,0,0,1,0,3,4],
 "chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4":[12,0,1,0,0,0,1,0,3,2],
-"chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f":[12,0,1,0,0,0,1,0,3,0],
-"chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b":[12,0,1,0,0,0,1,0,3,1]
+"chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f":[12,0,1,0,0,0,1,0,3,0]
 };

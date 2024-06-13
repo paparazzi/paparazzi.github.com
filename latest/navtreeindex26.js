@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"booz__pwm__arch_8c_source.html":[12,0,1,0,0,2,1,1,0],
 "booz__pwm__arch_8h.html":[12,0,1,0,0,2,1,1,1],
 "booz__pwm__arch_8h.html#a2d2ccb8f22cd65a76c8ddfee55ba8c94":[12,0,1,0,0,2,1,1,1,3],
 "booz__pwm__arch_8h.html#a55eb970a23e8299877dccc37844e0a77":[12,0,1,0,0,2,1,1,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "cc2500__compat_8c.html#af1fb6da0c755c6227790af1e8e202456":[12,0,1,0,6,56,0,2,24],
 "cc2500__compat_8c.html#af26fe9c3dc6864698f8999825d63cb18":[12,0,1,0,6,56,0,2,12],
 "cc2500__compat_8c.html#afc9797e5e9c3c85f61acfb05ef3a69e0":[12,0,1,0,6,56,0,2,4],
-"cc2500__compat_8c.html#afee63fd0ba43781073ba2f857badeeca":[12,0,1,0,6,56,0,2,29],
-"cc2500__compat_8c_source.html":[12,0,1,0,6,56,0,2]
+"cc2500__compat_8c.html#afee63fd0ba43781073ba2f857badeeca":[12,0,1,0,6,56,0,2,29]
 };

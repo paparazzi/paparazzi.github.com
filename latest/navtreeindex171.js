@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"paparazzi_messages.html#CAM":[2,0,16],
+"paparazzi_messages.html#CAMERA_PAYLOAD":[2,0,106],
 "paparazzi_messages.html#CAMERA_PAYLOAD_DL":[2,1,29],
 "paparazzi_messages.html#CAMERA_SNAPSHOT":[2,0,123],
 "paparazzi_messages.html#CAMERA_SNAPSHOT_DL":[2,1,30],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#SOLAR_RADIATION":[2,0,114],
 "paparazzi_messages.html#SONAR":[2,0,217],
 "paparazzi_messages.html#STAB_ATTITUDE":[2,0,197],
-"paparazzi_messages.html#STAB_ATTITUDE_FLOAT":[2,0,125],
-"paparazzi_messages.html#STAB_ATTITUDE_INT":[2,0,135],
-"paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137]
+"paparazzi_messages.html#STAB_ATTITUDE_FLOAT":[2,0,125]
 };

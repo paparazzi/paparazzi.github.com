@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__dfu_command.html#module_xml__dfu_command":[1,462,1,0],
+"module__digital_cam.html":[1,130],
 "module__digital_cam.html#module_load_example__digital_cam":[1,130,0],
 "module__digital_cam.html#module_xml__digital_cam":[1,130,0,0],
 "module__digital_cam_common.html":[1,131],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__gps_mediatek_diy.html":[1,155],
 "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,155,1],
 "module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,155,2],
-"module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,155,0],
-"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,155,2,0],
-"module__gps_nmea.html":[1,156]
+"module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,155,0]
 };

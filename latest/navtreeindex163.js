@@ -1,5 +1,7 @@
 var NAVTREEINDEX163 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#a41936b81e5fd08241408ac46193ae51a":[12,0,1,0,1,17,0,1,246],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#a42a8bb439be9c6c643c7ab48f02ee662":[12,0,1,0,1,17,0,1,155],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c":[12,0,1,0,1,17,0,1,287],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#a42b7db6a710541cd0e38fca6537b1546":[12,0,1,0,1,17,0,1,291],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#a4331268b38458a2ad2cb4ff49021e371":[12,0,1,0,1,17,0,1,105],
@@ -247,7 +249,5 @@ var NAVTREEINDEX163 =
 "obstacle__avoidance_8c.html#a0a28a09e3430fbe26927a800e3fd6cb9":[12,0,1,0,6,48,2,74],
 "obstacle__avoidance_8c.html#a156dd5c713412e468c2ba8ff9c528bc4":[12,0,1,0,6,48,2,7],
 "obstacle__avoidance_8c.html#a1d912c2313bd615c412ef423cfdc4403":[12,0,1,0,6,48,2,41],
-"obstacle__avoidance_8c.html#a2029df2883c895fdf319c16ba6d26632":[12,0,1,0,6,48,2,22],
-"obstacle__avoidance_8c.html#a20392982ad3eb535d8ec82e29c2da82f":[12,0,1,0,6,48,2,29],
-"obstacle__avoidance_8c.html#a21413e24a9fb5a67dc927272e9a16280":[12,0,1,0,6,48,2,47]
+"obstacle__avoidance_8c.html#a2029df2883c895fdf319c16ba6d26632":[12,0,1,0,6,48,2,22]
 };

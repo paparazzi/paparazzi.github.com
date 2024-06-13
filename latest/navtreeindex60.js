@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"gps_8h.html#ae6f83b7c4582aa1b72911052783e7338":[12,0,1,0,6,29,2,0,3],
 "gps_8h.html#ae8fb92d17057871cd091ad4bc190c56f":[12,0,1,0,6,29,2,16],
 "gps_8h.html#ae9f9449dccc1b1f9404d44246245ef7b":[12,0,1,0,6,29,2,1,19],
 "gps_8h.html#aebc3a177501ee0144c68d19cd59c9ce0":[12,0,1,0,6,29,2,1,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "gps__sirf_8c.html#a2c15b78f4363cb5a2c3949ba8472d7d0":[12,0,1,0,6,29,18,1,4],
 "gps__sirf_8c.html#a330113ff0aaee5a0afdb881cc947c9a4":[12,0,1,0,6,29,18,1,30],
 "gps__sirf_8c.html#a398b3d6d9aec36c308e01dc8c2d122b3":[12,0,1,0,6,29,18,1,25],
-"gps__sirf_8c.html#a3a7ac1db2ed1bc0d0e75e0aa60255e25":[12,0,1,0,6,29,18,1,27],
-"gps__sirf_8c.html#a3b992a8bf38eed75cc34721c234ff68b":[12,0,1,0,6,29,18,1,12]
+"gps__sirf_8c.html#a3a7ac1db2ed1bc0d0e75e0aa60255e25":[12,0,1,0,6,29,18,1,27]
 };

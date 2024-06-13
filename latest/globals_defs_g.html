@@ -438,8 +438,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 , <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a414493de8389b7908e5e8b6723a5fdd3">gpio_arch.h</a>
 </li>
 <li>GPIO21
-: <a class="el" href="gpio__def_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_def.h</a>
-, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_arch.h</a>
+: <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_arch.h</a>
+, <a class="el" href="gpio__def_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_def.h</a>
 </li>
 <li>GPIO22
 : <a class="el" href="gpio__def_8h.html#abdcdabfb67b100b20bd0326d730b69bb">gpio_def.h</a>
@@ -873,9 +873,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 : <a class="el" href="gps__ubx_8c.html#a35ca2a7a61d33ad148da82464549e769">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ENABLE_NMEA_DATA_MASK
-: <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
-, <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
+: <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
 , <a class="el" href="gps__ubx__ucenter_8c.html#a795637c038061d50a428834973f875ef">gps_ubx_ucenter.c</a>
+, <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
 </li>
 <li>GPS_UBX_ERR_CHECKSUM
 : <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
@@ -890,8 +890,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 , <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_OUT_OF_SYNC
-: <a class="el" href="rtcm3_8h.html#af2686e059a3acebbbe398e9bd7fb155c">rtcm3.h</a>
-, <a class="el" href="gps__ubx_8c.html#af2686e059a3acebbbe398e9bd7fb155c">gps_ubx.c</a>
+: <a class="el" href="gps__ubx_8c.html#af2686e059a3acebbbe398e9bd7fb155c">gps_ubx.c</a>
+, <a class="el" href="rtcm3_8h.html#af2686e059a3acebbbe398e9bd7fb155c">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_OVERRUN
 : <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
@@ -1126,8 +1126,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 , <a class="el" href="guidance__indi__hybrid_8c.html#aabdf5197f9c3258629ccee0bed08645b">guidance_indi_hybrid.c</a>
 </li>
 <li>GUIDANCE_INDI_LIFTD_ASQ
-: <a class="el" href="guidance__indi__hybrid_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8">guidance_indi_hybrid.c</a>
-, <a class="el" href="oneloop__andi_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8">oneloop_andi.c</a>
+: <a class="el" href="oneloop__andi_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8">oneloop_andi.c</a>
+, <a class="el" href="guidance__indi__hybrid_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8">guidance_indi_hybrid.c</a>
 </li>
 <li>GUIDANCE_INDI_LIFTD_P50
 : <a class="el" href="guidance__indi__hybrid_8c.html#a945db3508eec97c51c7260e0c55da1ef">guidance_indi_hybrid.c</a>
@@ -1143,6 +1143,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 <li>GUIDANCE_INDI_MAX_PITCH
 : <a class="el" href="guidance__indi__hybrid__quadplane_8h.html#a59489af898bc65644abb6ed6dd33a757">guidance_indi_hybrid_quadplane.h</a>
 , <a class="el" href="guidance__indi__hybrid__tailsitter_8h.html#a59489af898bc65644abb6ed6dd33a757">guidance_indi_hybrid_tailsitter.h</a>
+</li>
+<li>GUIDANCE_INDI_MAX_PUSHER_INCREMENT
+: <a class="el" href="guidance__indi__hybrid_8c.html#ab7075a5c8e24a75385c757635479ca99">guidance_indi_hybrid.c</a>
 </li>
 <li>GUIDANCE_INDI_MIN_PITCH
 : <a class="el" href="guidance__indi__hybrid__quadplane_8h.html#a64e3decdab99fca06278c4d76ac8111b">guidance_indi_hybrid_quadplane.h</a>
@@ -1714,7 +1717,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 12 2024 07:29:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 13 2024 14:43:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

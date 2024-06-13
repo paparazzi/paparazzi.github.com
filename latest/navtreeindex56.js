@@ -1,5 +1,6 @@
 var NAVTREEINDEX56 =
 {
+"flight__gear_8h.html#a42d58cf8d7b73c610be5187432af171c":[12,0,1,1,1,1,1,22],
 "flight__gear_8h.html#a43537bfce6fcfbfb6a2da50df7cd1509":[12,0,1,1,1,1,0,10],
 "flight__gear_8h.html#a44a71f349186a5f18275b99f3506b107":[12,0,1,1,1,1,0,12],
 "flight__gear_8h.html#a44af3458690a416c034a09b2d9dc6519":[12,0,1,1,1,1,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX56 =
 "frsky__x_8h.html#a420db54c377c71cbf6815b32a8fe7c7f":[12,0,1,0,6,15,14,5],
 "frsky__x_8h.html#a4846bb3b4508d4210c8f8192ca2aa55b":[12,0,1,0,6,15,14,2],
 "frsky__x_8h.html#a54a9ffe33d0c91beb0f99a229ca4b46f":[12,0,1,0,6,15,14,1,2],
-"frsky__x_8h.html#a5f9612b157349f8ed5bac981fcf10ebc":[12,0,1,0,6,15,14,1,0],
-"frsky__x_8h.html#a60a92dbb3af10529efdb07d77a59dcc4":[12,0,1,0,6,15,14,1,4]
+"frsky__x_8h.html#a5f9612b157349f8ed5bac981fcf10ebc":[12,0,1,0,6,15,14,1,0]
 };

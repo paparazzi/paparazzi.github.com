@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319":[9,0,0,4],
 "group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319":[12,0,1,0,5,6,1],
 "group__i2c.html#ga20e1122a73affcddc3adfd904799e612":[9,0,0,13],
 "group__i2c.html#ga20e1122a73affcddc3adfd904799e612":[12,0,1,0,5,5,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "group__math__algebra__float.html#ga18846a42efecdeae5dab64fbd8645eb9":[9,9,1,0,25],
 "group__math__algebra__float.html#ga18846a42efecdeae5dab64fbd8645eb9":[12,0,1,0,4,6,18],
 "group__math__algebra__float.html#ga2002d50ff30d8c76d3525ceb83f59fc6":[9,9,1,0,15],
-"group__math__algebra__float.html#ga2002d50ff30d8c76d3525ceb83f59fc6":[12,0,1,0,4,6,8],
-"group__math__algebra__float.html#ga2209f7781fa014668eae2909541acb43":[9,9,1,0,68]
+"group__math__algebra__float.html#ga2002d50ff30d8c76d3525ceb83f59fc6":[12,0,1,0,4,6,8]
 };

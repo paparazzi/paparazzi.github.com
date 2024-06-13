@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__denoising_8h.html#a4d4fa43a6b28d9f07e48685dc7343929":[12,0,1,0,1,2,0,0,7,0,0],
 "avi__isp__denoising_8h.html#a52954b9a42a6db900d0472213d2e5174":[12,0,1,0,1,2,0,0,7,13,9],
 "avi__isp__denoising_8h.html#a5537bb1dff7fff4b7a5c4ac24468379c":[12,0,1,0,1,2,0,0,7,3,0],
 "avi__isp__denoising_8h.html#a5a6061c5844490dcffafb4715a09266c":[12,0,1,0,1,2,0,0,7,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__alpha":[12,0,1,0,1,2,0,0,11,7],
 "avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__bayer__cfa":[12,0,1,0,1,2,0,0,11,0],
 "avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__beta":[12,0,1,0,1,2,0,0,11,8],
-"avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__h":[12,0,1,0,1,2,0,0,11,4],
-"avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__h__inv":[12,0,1,0,1,2,0,0,11,6]
+"avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__h":[12,0,1,0,1,2,0,0,11,4]
 };

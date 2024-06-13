@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288cab4aa34a6b685160bab134f72142767eb":[12,0,1,0,6,56,0,19,14,4],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288cab9fc8a1a3b721f907fccdc8888b3d9e2":[12,0,1,0,6,56,0,19,14,6],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288cabaff0e1021f81bf447e2cb503785dab7":[12,0,1,0,6,56,0,19,14,18],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288cabbe996bc7bfb2f8f80d40a4aa2fec6f9":[12,0,1,0,6,56,0,19,14,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "cf__deck__multi__ranger_8c.html#structcf__deck__multi__ranger":[12,0,1,0,6,57,0,1],
 "cf__deck__multi__ranger_8c_source.html":[12,0,1,0,6,57,0],
 "cf__deck__multi__ranger_8h.html":[12,0,1,0,6,57,1],
-"cf__deck__multi__ranger_8h.html#a00ceae2d603edae676315c5be02df5ab":[12,0,1,0,6,57,1,3],
-"cf__deck__multi__ranger_8h.html#a580f0b30e559460505edfb2c90dd8e8f":[12,0,1,0,6,57,1,1]
+"cf__deck__multi__ranger_8h.html#a00ceae2d603edae676315c5be02df5ab":[12,0,1,0,6,57,1,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"elle0_2baro__board_8h_source.html":[12,0,1,0,1,7,0],
 "elle0__1_80_8h.html":[12,0,1,0,1,32],
 "elle0__1_80_8h_source.html":[12,0,1,0,1,32],
 "elle0__1_82_8h.html":[12,0,1,0,1,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "energy__ctrl_8h.html#a081acd8e49b957c270368dee018ae415":[12,0,1,0,3,1,0,1,3],
 "energy__ctrl_8h.html#a09f63f36c513da12a9022e1528b056b8":[12,0,1,0,3,1,0,1,2],
 "energy__ctrl_8h.html#a0dca445d8becd2c52c40371c2ec0dd08":[12,0,1,0,3,1,0,1,30],
-"energy__ctrl_8h.html#a1008ba6babcf9bde8ecab1d13ba5ce65":[12,0,1,0,3,1,0,1,18],
-"energy__ctrl_8h.html#a27403650da5f17d80033412147990473":[12,0,1,0,3,1,0,1,26]
+"energy__ctrl_8h.html#a1008ba6babcf9bde8ecab1d13ba5ce65":[12,0,1,0,3,1,0,1,18]
 };

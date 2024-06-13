@@ -89,7 +89,13 @@ $(document).ready(function(){initNavTree('module__actuators_faulhaber.html','');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Actuators Driver for the Faulhaber controller</b></p>
-<p>No detailed description...</p>
+<p>Currently initialization is done manually. Set mode to:</p><ul>
+<li>2</li>
+<li>4</li>
+<li>2 (it will home slowly)</li>
+<li>Wait until homing is finished!</li>
+<li>Back to 1 and the wing will move</li>
+</ul>
 <h1><a class="anchor" id="module_load_example__actuators_faulhaber"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_faulhaber&quot;</span>&gt;</div>
@@ -149,6 +155,13 @@ Raw actuators_faulhaber.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Actuators</span> <span class="keyword">Driver</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">Faulhaber</span> <span class="keyword">controller</span></div>
+<div class="line">      <span class="keyword">Currently</span> <span class="keyword">initialization</span> <span class="keyword">is</span> <span class="keyword">done</span> <span class="keyword">manually.</span></div>
+<div class="line">      <span class="keyword">Set</span> <span class="keyword">mode</span> <span class="keyword">to:</span></div>
+<div class="line">       - 2</div>
+<div class="line">       - 4</div>
+<div class="line">       - 2 (<span class="keyword">it</span> <span class="keyword">will</span> <span class="keyword">home</span> <span class="keyword">slowly</span>)</div>
+<div class="line">       - <span class="keyword">Wait</span> <span class="keyword">until</span> <span class="keyword">homing</span> <span class="keyword">is</span> <span class="keyword">finished</span>!</div>
+<div class="line">       - <span class="keyword">Back</span> <span class="keyword">to</span> 1 <span class="keyword">and</span> <span class="keyword">the</span> <span class="keyword">wing</span> <span class="keyword">will</span> <span class="keyword">move</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FAULHABER_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART port (default UART4)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
@@ -195,7 +208,7 @@ Raw actuators_faulhaber.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Jun 12 2024 07:29:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 13 2024 14:43:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -8,6 +8,7 @@ var actuators__faulhaber_8h =
       [ "target_position", "actuators__faulhaber_8h.html#a5734810e1a3f4640ea7f8854573c7c91", null ]
     ] ],
     [ "ActuatorFaulhaberSet", "actuators__faulhaber_8h.html#a964d1d5ae5e5b12cf91cd6640e50fb28", null ],
+    [ "ACTUATORS_FAULHABER_COMMAND_SCALE", "actuators__faulhaber_8h.html#a388ac434159d37e3ed3fba493c895345", null ],
     [ "ActuatorsFaulhaberCommit", "actuators__faulhaber_8h.html#ae69f7a5529fb6b1dcf53001305a64d5d", null ],
     [ "ActuatorsFaulhaberInit", "actuators__faulhaber_8h.html#a15f72d500dd9c2314c2ba888337c2641", null ],
     [ "faulhaber_modes_t", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026", [

@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__actuators_bebop.html#module_load_example__actuators_bebop":[1,4,0],
+"module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,1,0],
 "module__actuators_disco.html":[1,5],
 "module__actuators_disco.html#module_load_example__actuators_disco":[1,5,0],
 "module__actuators_disco.html#module_xml__actuators_disco":[1,5,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__baro_board.html#module_load_example__baro_board":[1,393,0],
 "module__baro_board.html#module_xml__baro_board":[1,393,1,0],
 "module__baro_board_common.html":[1,394],
-"module__baro_board_common.html#configuration__baro_board_common":[1,394,1],
-"module__baro_board_common.html#functions__baro_board_common":[1,394,2],
-"module__baro_board_common.html#module_load_example__baro_board_common":[1,394,0]
+"module__baro_board_common.html#configuration__baro_board_common":[1,394,1]
 };
