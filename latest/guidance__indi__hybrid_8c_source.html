@@ -625,7 +625,7 @@ $(document).ready(function(){initNavTree('guidance__indi__hybrid_8c_source.html'
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  <span class="keywordtype">float</span> thrust_vect[3];</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="preprocessor">#if GUIDANCE_INDI_HYBRID_U &gt; 3</span></div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  thrust_vect[0] = <a class="code" href="guidance__indi__hybrid_8c.html#af9962c0ce85be6933617ac1b6d964b95">du_gih</a>[3];</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  <span class="keywordflow">if</span> (thrust_vect[0] &gt; MAX_PUSHER_INCREMENT*<a class="code" href="guidance__indi__hybrid_8h.html#a4b2fe5eaaf1c6b474eb17225903ba57c">guidance_indi_thrust_x_eff</a>) {</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  <span class="keywordflow">if</span> (thrust_vect[0] &gt; <a class="code" href="guidance__indi__hybrid_8c.html#ab7075a5c8e24a75385c757635479ca99">GUIDANCE_INDI_MAX_PUSHER_INCREMENT</a>*<a class="code" href="guidance__indi__hybrid_8h.html#a4b2fe5eaaf1c6b474eb17225903ba57c">guidance_indi_thrust_x_eff</a>) {</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    thrust_vect[0] = <a class="code" href="guidance__indi__hybrid_8c.html#ab7075a5c8e24a75385c757635479ca99">GUIDANCE_INDI_MAX_PUSHER_INCREMENT</a>*<a class="code" href="guidance__indi__hybrid_8h.html#a4b2fe5eaaf1c6b474eb17225903ba57c">guidance_indi_thrust_x_eff</a>;</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  }</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">#else</span></div>
@@ -1164,7 +1164,7 @@ $(document).ready(function(){initNavTree('guidance__indi__hybrid_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi__hybrid_8c.html">guidance_indi_hybrid.c</a></li>
-    <li class="footer">Generated on Thu Jun 13 2024 14:43:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 14 2024 13:16:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
