@@ -178,6 +178,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a28a3aa7ed36fb838f27a1d7533793ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a28a3aa7ed36fb838f27a1d7533793ef2">stabilization_indi_set_wls_settings</a> (void)</td></tr>
 <tr class="memdesc:a28a3aa7ed36fb838f27a1d7533793ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that sets the u_min, u_max and u_pref if function not elsewhere defined.  <a href="stabilization__indi_8h.html#a28a3aa7ed36fb838f27a1d7533793ef2">More...</a><br /></td></tr>
 <tr class="separator:a28a3aa7ed36fb838f27a1d7533793ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8021b702bcac984446af046b0691e578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a8021b702bcac984446af046b0691e578">stabilization_indi_update_filt_freq</a> (float freq)</td></tr>
+<tr class="separator:a8021b702bcac984446af046b0691e578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -215,6 +217,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa9b259b8bcede01f9497459615608d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26af36c957621d1c4301561740eea35f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="stabilization__indi__simple_8h.html#structIndi__gains">Indi_gains</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a26af36c957621d1c4301561740eea35f">indi_gains</a></td></tr>
 <tr class="separator:a26af36c957621d1c4301561740eea35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a63eb7e63c2850386999bda201f719"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#ae6a63eb7e63c2850386999bda201f719">stabilization_indi_filter_freq</a></td></tr>
+<tr class="separator:ae6a63eb7e63c2850386999bda201f719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structIndi__gains" id="structIndi__gains"></a>
@@ -334,7 +338,7 @@ rate</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00736">736</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00748">748</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -357,7 +361,7 @@ rate</td>
 <p>Function that resets important values upon engaging INDI. </p>
 <p>Don't reset inputs and filters, because it is unlikely to switch stabilization in flight, and there are multiple modes that use (the same) stabilization. Resetting the controller is not so nice when you are flying. FIXME: Ideally we should detect when coming from something that is not INDI </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00433">433</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00435">435</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -379,7 +383,7 @@ rate</td>
 
 <p>Function that initializes important values upon engaging INDI. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00361">361</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00363">363</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -442,7 +446,7 @@ rate</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00497">497</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00509">509</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -464,7 +468,7 @@ rate</td>
 
 <p>Function that sets the u_min, u_max and u_pref if function not elsewhere defined. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00704">704</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00716">716</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 <p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00150">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00166">act_pref</a>, <a class="el" href="stabilization__indi_8c_source.html#l00209">actuator_state_filt_vect</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00149">eff_sched_pusher_time</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00057">GUIDANCE_H_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00058">GUIDANCE_H_MODE_NAV</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00104">HorizontalGuidance::mode</a>, <a class="el" href="stabilization__indi_8c_source.html#l00080">STABILIZATION_INDI_THROTTLE_LIMIT_AIRSPEED_FWD</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00108">u_max_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00107">u_min_stab_indi</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00109">u_pref_stab_indi</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -477,6 +481,41 @@ rate</td>
 <area shape="rect" title="Function that sets the u_min, u_max and u_pref if function not elsewhere defined." alt="" coords="5,5,143,47"/>
 <area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="191,13,337,39"/>
 <area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="385,13,537,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8021b702bcac984446af046b0691e578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8021b702bcac984446af046b0691e578">&#9670;&nbsp;</a></span>stabilization_indi_update_filt_freq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stabilization_indi_update_filt_freq </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>freq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00446">446</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">References <a class="el" href="low__pass__filter_8h_source.html#l00057">init_first_order_low_pass()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="stabilization__indi_8c_source.html#l00291">rates_filt_fo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00220">stabilization_indi_filter_freq</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization__indi_8h_a8021b702bcac984446af046b0691e578_cgraph.png" border="0" usemap="#astabilization__indi_8h_a8021b702bcac984446af046b0691e578_cgraph" alt=""/></div>
+<map name="astabilization__indi_8h_a8021b702bcac984446af046b0691e578_cgraph" id="astabilization__indi_8h_a8021b702bcac984446af046b0691e578_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,139,65"/>
+<area shape="rect" href="low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="187,5,369,32"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="198,56,358,83"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="417,56,583,83"/>
 </map>
 </div>
 
@@ -505,7 +544,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00150">150</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00361">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00704">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00363">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -531,7 +570,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00166">166</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00704">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -557,7 +596,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00209">209</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00138">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00266">eff_scheduling_rot_wing_update_cmd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00283">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00727">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00361">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00497">stabilization_indi_rate_run()</a>, and <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00423">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00138">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00266">eff_scheduling_rot_wing_update_cmd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00283">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00727">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00363">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00509">stabilization_indi_rate_run()</a>, and <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00423">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -605,7 +644,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00111">111</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00138">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00361">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00497">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00138">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00363">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00509">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -629,9 +668,9 @@ rate</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00274">274</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00276">276</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__falcon_8c_source.html#l00049">eff_scheduling_falcon_init()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00113">eff_scheduling_falcon_report()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00373">eff_scheduling_rot_wing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00333">eff_scheduling_rot_wing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00381">eff_scheduling_rot_wing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00283">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00389">eff_scheduling_rot_wing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00355">eff_scheduling_rot_wing_update_rudder_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00727">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00298">send_eff_mat_g_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00361">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00935">sum_g1_g2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__falcon_8c_source.html#l00049">eff_scheduling_falcon_init()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00113">eff_scheduling_falcon_report()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00373">eff_scheduling_rot_wing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00333">eff_scheduling_rot_wing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00381">eff_scheduling_rot_wing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00283">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00389">eff_scheduling_rot_wing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00355">eff_scheduling_rot_wing_update_rudder_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00727">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00300">send_eff_mat_g_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00363">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00947">sum_g1_g2()</a>.</p>
 
 </div>
 </div>
@@ -657,7 +696,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00123">123</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00736">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00497">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00748">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00509">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -713,6 +752,32 @@ rate</td>
 
 </div>
 </div>
+<a id="ae6a63eb7e63c2850386999bda201f719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a63eb7e63c2850386999bda201f719">&#9670;&nbsp;</a></span>stabilization_indi_filter_freq</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stabilization_indi_filter_freq</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00220">220</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">stabilization_indi_update_filt_freq()</a>.</p>
+
+</div>
+</div>
 <a id="aa9b259b8bcede01f9497459615608d78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9b259b8bcede01f9497459615608d78">&#9670;&nbsp;</a></span>stablization_indi_yaw_dist_limit</h2>
 
@@ -737,7 +802,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00205">205</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00497">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00509">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -829,7 +894,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00108">108</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00704">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -855,7 +920,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00107">107</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00704">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -881,7 +946,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00109">109</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00704">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -891,7 +956,7 @@ rate</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__indi_8h.html">stabilization_indi.h</a></li>
-    <li class="footer">Generated on Fri Jun 14 2024 14:33:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 14 2024 14:48:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
