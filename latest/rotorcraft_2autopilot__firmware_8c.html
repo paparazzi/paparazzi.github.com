@@ -199,6 +199,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2bb31e995242a89c837b4eda1d08fe57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57">autopilot_firmware_init</a> (void)</td></tr>
 <tr class="memdesc:a2bb31e995242a89c837b4eda1d08fe57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57">More...</a><br /></td></tr>
 <tr class="separator:a2bb31e995242a89c837b4eda1d08fe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c54f26fedcf128f909c7cc5dc071353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2autopilot__firmware_8c.html#a4c54f26fedcf128f909c7cc5dc071353">autopilot_send_mode</a> (void)</td></tr>
+<tr class="memdesc:a4c54f26fedcf128f909c7cc5dc071353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report autopilot mode on default downlink channel.  <a href="rotorcraft_2autopilot__firmware_8c.html#a4c54f26fedcf128f909c7cc5dc071353">More...</a><br /></td></tr>
+<tr class="separator:a4c54f26fedcf128f909c7cc5dc071353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af571252a9b9c534b5fe24a4ef4d20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2autopilot__firmware_8c.html#a0af571252a9b9c534b5fe24a4ef4d20d">autopilot_event</a> (void)</td></tr>
 <tr class="memdesc:a0af571252a9b9c534b5fe24a4ef4d20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">autopilot event function  <a href="rotorcraft_2autopilot__firmware_8c.html#a0af571252a9b9c534b5fe24a4ef4d20d">More...</a><br /></td></tr>
 <tr class="separator:a0af571252a9b9c534b5fe24a4ef4d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,7 +330,7 @@ Variables</h2></td></tr>
 <p>in flight check utility function </p>
 <p>Check if airframe is in flight. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00288">288</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">295</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
 <p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">autopilot_in_flight_counter</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00072">AUTOPILOT_IN_FLIGHT_MIN_THRUST</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00057">AUTOPILOT_IN_FLIGHT_TIME</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, and <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -370,7 +373,7 @@ Variables</h2></td></tr>
 <p>Autopilot event check function.</p>
 <p>used for automatic ground detection </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00265">265</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00272">272</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00081">autopilot_ground_detection()</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -486,7 +489,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="state_8h_source.html#l01038">stateGetAccelNed_f()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00077">THRESHOLD_GROUND_DETECT</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00265">autopilot_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00272">autopilot_event()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -537,7 +540,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">autopilot_in_flight_counter</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00067">AUTOPILOT_IN_FLIGHT_MIN_ACCEL</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00062">AUTOPILOT_IN_FLIGHT_MIN_SPEED</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00072">AUTOPILOT_IN_FLIGHT_MIN_THRUST</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00057">AUTOPILOT_IN_FLIGHT_TIME</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01038">stateGetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l00908">stateGetSpeedNed_f()</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00288">autopilot_check_in_flight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">autopilot_check_in_flight()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -587,9 +590,45 @@ Variables</h2></td></tr>
 <p>reset in_flight counter </p>
 <p>reset in_flight counter actual implementation is firmware dependent </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00281">281</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00288">288</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">autopilot_in_flight_counter</a>.</p>
+
+</div>
+</div>
+<a id="a4c54f26fedcf128f909c7cc5dc071353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c54f26fedcf128f909c7cc5dc071353">&#9670;&nbsp;</a></span>autopilot_send_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void autopilot_send_mode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report autopilot mode on default downlink channel. </p>
+<p>Report autopilot mode on default downlink channel. </p>
+
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00261">261</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2autopilot__firmware_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph" alt=""/></div>
+<map name="arotorcraft_2autopilot__firmware_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph" id="arotorcraft_2autopilot__firmware_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph">
+<area shape="rect" title="Report autopilot mode on default downlink channel." alt="" coords="5,5,168,32"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a261bd78437dcd415525d72019aac4a89" title=" " alt="" coords="216,5,316,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -632,11 +671,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="state_8h_source.html#l00953">stateGetAccelBody_i()</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_cgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_cgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_cgraph" id="arotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,179,57"/>
@@ -645,11 +684,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="435,56,600,83"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_icgraph" id="arotorcraft_2autopilot__firmware_8c_a661acab8931d63576772359cda38acc2_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,400,32"/>
@@ -698,11 +737,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="electrical_8h_source.html#l00054">Electrical::avg_cnt</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::avg_power</a>, <a class="el" href="electrical_8h_source.html#l00048">Electrical::charge</a>, <a class="el" href="electrical_8h_source.html#l00047">Electrical::current</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::energy</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph" id="arotorcraft_2autopilot__firmware_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,332,32"/>
@@ -751,11 +790,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_BFP_OF_REAL</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra_8h_source.html#l00715">EULERS_BFP_OF_REAL</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">eulers_zxy</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00060">guidance_v</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00077">HorizontalGuidanceSetpoint::heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00073">HorizontalGuidanceSetpoint::pos</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00108">HorizontalGuidance::sp</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00872">stateGetSpeedEnu_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00050">VerticalGuidance::z_sp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_cgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_cgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_cgraph" id="arotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_cgraph">
 <area shape="rect" title=" " alt="" coords="5,240,79,267"/>
@@ -787,11 +826,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="609,528,755,555"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_icgraph" id="arotorcraft_2autopilot__firmware_8c_acaec1d6d2a2c682a3236c28974830807_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,300,32"/>
@@ -840,11 +879,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::gspeed</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, and <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_cgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_cgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_cgraph" id="arotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_cgraph">
 <area shape="rect" title=" " alt="" coords="5,61,111,87"/>
@@ -864,11 +903,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="886,192,1026,233"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_icgraph" id="arotorcraft_2autopilot__firmware_8c_aaf2444e723981dbebaac51823933f101_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,332,32"/>
@@ -915,11 +954,11 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00238">238</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_ac3a22fbb464a954a16dd9a0babb698d0_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_ac3a22fbb464a954a16dd9a0babb698d0_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_ac3a22fbb464a954a16dd9a0babb698d0_icgraph" id="arotorcraft_2autopilot__firmware_8c_ac3a22fbb464a954a16dd9a0babb698d0_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,381,32"/>
@@ -968,11 +1007,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__intermcu_8h_source.html#l00040">RADIO_KILL_SWITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00042">RADIO_MODE</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_a746550846cb8534829bb35efb78190a9_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_a746550846cb8534829bb35efb78190a9_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_a746550846cb8534829bb35efb78190a9_icgraph" id="arotorcraft_2autopilot__firmware_8c_a746550846cb8534829bb35efb78190a9_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,365,32"/>
@@ -1020,16 +1059,17 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="autopilot_8h_source.html#l00067">pprz_autopilot::arming_status</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::fix</a>, <a class="el" href="radio__control_8h_source.html#l00064">RadioControl::frame_rate</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00060">guidance_v</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00104">HorizontalGuidance::mode</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00044">VerticalGuidance::mode</a>, <a class="el" href="motor__mixing_8c_source.html#l00094">motor_mixing</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="motor__mixing_8h_source.html#l00042">MotorMixing::nb_failure</a>, <a class="el" href="motor__mixing_8h_source.html#l00041">MotorMixing::nb_saturation</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, <a class="el" href="electrical_8h_source.html#l00046">Electrical::vboard</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00261">autopilot_send_mode()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2autopilot__firmware_8c_a261bd78437dcd415525d72019aac4a89_icgraph.png" border="0" usemap="#arotorcraft_2autopilot__firmware_8c_a261bd78437dcd415525d72019aac4a89_icgraph" alt=""/></div>
 <map name="arotorcraft_2autopilot__firmware_8c_a261bd78437dcd415525d72019aac4a89_icgraph" id="arotorcraft_2autopilot__firmware_8c_a261bd78437dcd415525d72019aac4a89_icgraph">
-<area shape="rect" title=" " alt="" coords="227,5,327,32"/>
+<area shape="rect" title=" " alt="" coords="227,31,327,57"/>
 <area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="5,5,179,32"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a4c54f26fedcf128f909c7cc5dc071353" title="Report autopilot mode on default downlink channel." alt="" coords="11,56,173,83"/>
 </map>
 </div>
 
@@ -1058,7 +1098,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">50</a> of file <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00288">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00281">autopilot_reset_in_flight_counter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00242">autopilot_firmware_init()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00288">autopilot_reset_in_flight_counter()</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1126,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft_2autopilot__firmware_8c.html">autopilot_firmware.c</a></li>
-    <li class="footer">Generated on Fri Jun 14 2024 17:29:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 15 2024 09:34:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
