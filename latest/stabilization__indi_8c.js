@@ -71,7 +71,6 @@ var stabilization__indi_8c =
     [ "num_thrusters_x", "stabilization__indi_8c.html#a97d5c15989730f58dd1f6ad7a84a29fb", null ],
     [ "q_filt", "stabilization__indi_8c.html#a5ac8c1bac787aa8dd5ac7cedf7df8c4e", null ],
     [ "r_filt", "stabilization__indi_8c.html#a4ac9ff1a86e6ed214eb20621f830265c", null ],
-    [ "rate_vect_prev", "stabilization__indi_8c.html#aa3d85604a5084e7824f4a74c24c6ed42", null ],
     [ "rates_filt_fo", "stabilization__indi_8c.html#a362a37014aa4bb541a8de211a70ba00e", null ],
     [ "stab_att_sp_euler", "stabilization__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],
