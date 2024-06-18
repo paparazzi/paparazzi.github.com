@@ -125,90 +125,101 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8c_sourc
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">modules/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c">send_actuators</a>(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_actuators_raw(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// Downlink the actuators raw driver values</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> v[ACTUATORS_NB] = {0};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ACTUATORS_NB; i++) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    v[i] = actuators[i].driver_val;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  pprz_msg_send_ACTUATORS(trans, <a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, AC_ID , ACTUATORS_NB, v);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  pprz_msg_send_ACTUATORS_RAW(trans, <a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, AC_ID , ACTUATORS_NB, v);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">struct </span>actuator_t actuators[ACTUATORS_NB];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// Can be used to directly control each actuator from the control algorithm</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> actuators_pprz[ACTUATORS_NB];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> actuators_delay_time;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span>   actuators_delay_done;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#if defined ACTUATORS_START_DELAY &amp;&amp; ! defined SITL</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  actuators_delay_done = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(actuators_delay_time);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  actuators_delay_done = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  actuators_delay_time = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Init macro from generated airframe.h</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#if (defined INTERMCU_AP)</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// TODO ApOnlyActuatorsInit();</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#elif (defined INTERMCU_FBW)</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  AllActuatorsInit();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c">send_actuators</a>(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Downlink the actuators pprz actuator values</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> v[ACTUATORS_NB] = {0};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ACTUATORS_NB; i++) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    v[i] = actuators[i].pprz_val;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  pprz_msg_send_ACTUATORS(trans, <a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, AC_ID , ACTUATORS_NB, v);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">struct </span>actuator_t actuators[ACTUATORS_NB];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// Can be used to directly control each actuator from the control algorithm</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> actuators_pprz[ACTUATORS_NB];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> actuators_delay_time;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">bool</span>   actuators_delay_done;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#if defined ACTUATORS_START_DELAY &amp;&amp; ! defined SITL</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  actuators_delay_done = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(actuators_delay_time);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">// default, init all actuators</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  AllActuatorsInit();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// TODO ApOnlyActuatorsInit();</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">register_periodic_telemetry</a>(<a class="code" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">DefaultPeriodic</a>, PPRZ_MSG_ID_ACTUATORS, <a class="code" href="demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c">send_actuators</a>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if USE_COMMANDS</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> trimmed_commands[COMMANDS_NB];</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; COMMANDS_NB; i++) {trimmed_commands[i] = <a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[i];}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  actuators_delay_done = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  actuators_delay_time = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Init macro from generated airframe.h</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if (defined INTERMCU_AP)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// TODO ApOnlyActuatorsInit();</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#elif (defined INTERMCU_FBW)</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  AllActuatorsInit();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// default, init all actuators</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  AllActuatorsInit();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// TODO ApOnlyActuatorsInit();</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">register_periodic_telemetry</a>(<a class="code" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">DefaultPeriodic</a>, PPRZ_MSG_ID_ACTUATORS_RAW, send_actuators_raw);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">register_periodic_telemetry</a>(<a class="code" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">DefaultPeriodic</a>, PPRZ_MSG_ID_ACTUATORS, <a class="code" href="demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c">send_actuators</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifdef COMMAND_ROLL</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  trimmed_commands[COMMAND_ROLL] += ClipAbs(<a class="code" href="commands_8c.html#a9aa55e047af522d7df3a329d39a08ac4">command_roll_trim</a>, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / 10);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_ROLL */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef COMMAND_PITCH</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  trimmed_commands[COMMAND_PITCH] += ClipAbs(<a class="code" href="commands_8c.html#a2bd7d4068b07bb952c488cff7cf7c933">command_pitch_trim</a>, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / 10);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_PITCH */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#ifdef COMMAND_YAW</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  trimmed_commands[COMMAND_YAW] += ClipAbs(<a class="code" href="commands_8c.html#ad3d42178a77e1d084ffad1faa32c7505">command_yaw_trim</a>, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_YAW */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#if (defined INTERMCU_AP)</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17">intermcu_send_commands</a>(trimmed_commands, <a class="code" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a>());</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// TODO SetApOnlyActuatorsFromCommands(ap_commands, autopilot_get_mode());</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#elif (defined INTERMCU_FBW)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  SetActuatorsFromCommands(trimmed_commands, <a class="code" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a>());</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// default, apply all commands</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  SetActuatorsFromCommands(trimmed_commands, <a class="code" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a>());</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// TODO SetApOnlyActuatorsFromCommands(ap_commands, autopilot_get_mode());</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// USE_COMMANDS</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#else </span><span class="comment">// No command_laws section or no actuators</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">  127</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">  128</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if USE_COMMANDS</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> trimmed_commands[COMMANDS_NB];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; COMMANDS_NB; i++) {trimmed_commands[i] = <a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[i];}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#ifdef COMMAND_ROLL</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  trimmed_commands[COMMAND_ROLL] += ClipAbs(<a class="code" href="commands_8c.html#a9aa55e047af522d7df3a329d39a08ac4">command_roll_trim</a>, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / 10);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_ROLL */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifdef COMMAND_PITCH</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  trimmed_commands[COMMAND_PITCH] += ClipAbs(<a class="code" href="commands_8c.html#a2bd7d4068b07bb952c488cff7cf7c933">command_pitch_trim</a>, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / 10);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_PITCH */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#ifdef COMMAND_YAW</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  trimmed_commands[COMMAND_YAW] += ClipAbs(<a class="code" href="commands_8c.html#ad3d42178a77e1d084ffad1faa32c7505">command_yaw_trim</a>, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_YAW */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#if (defined INTERMCU_AP)</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17">intermcu_send_commands</a>(trimmed_commands, <a class="code" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a>());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// TODO SetApOnlyActuatorsFromCommands(ap_commands, autopilot_get_mode());</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#elif (defined INTERMCU_FBW)</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  SetActuatorsFromCommands(trimmed_commands, <a class="code" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a>());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">// default, apply all commands</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  SetActuatorsFromCommands(trimmed_commands, <a class="code" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a>());</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">// TODO SetApOnlyActuatorsFromCommands(ap_commands, autopilot_get_mode());</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// USE_COMMANDS</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#else </span><span class="comment">// No command_laws section or no actuators</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">  138</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aautopilot_8c_html_a23af2ac2d4bcb9b71c869a409de61cc4"><div class="ttname"><a href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a></div><div class="ttdeci">uint8_t autopilot_get_mode(void)</div><div class="ttdoc">get autopilot mode</div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00222">autopilot.c:222</a></div></div>
 <div class="ttc" id="acommands_8c_html_a2bd7d4068b07bb952c488cff7cf7c933"><div class="ttname"><a href="commands_8c.html#a2bd7d4068b07bb952c488cff7cf7c933">command_pitch_trim</a></div><div class="ttdeci">pprz_t command_pitch_trim</div><div class="ttdef"><b>Definition:</b> <a href="commands_8c_source.html#l00034">commands.c:34</a></div></div>
 <div class="ttc" id="acommands_8c_html_a929b1098e1af3f34ee056eeed9227136"><div class="ttname"><a href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a></div><div class="ttdeci">pprz_t commands[COMMANDS_NB]</div><div class="ttdef"><b>Definition:</b> <a href="commands_8c_source.html#l00030">commands.c:30</a></div></div>
@@ -219,8 +230,8 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8c_sourc
 <div class="ttc" id="aintermcu__ap_8c_html_ae453063ef52eca0ba54eb284d6dfdd17"><div class="ttname"><a href="intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17">intermcu_send_commands</a></div><div class="ttdeci">void intermcu_send_commands(pprz_t *command_values, uint8_t ap_mode)</div><div class="ttdoc">send command vector over intermcu link instead of actuators</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8c_source.html#l00129">intermcu_ap.c:129</a></div></div>
 <div class="ttc" id="aintermcu__ap_8h_html"><div class="ttname"><a href="intermcu__ap_8h.html">intermcu_ap.h</a></div><div class="ttdoc">Inter-MCU on the AP side.</div></div>
 <div class="ttc" id="amain__fbw_8h_html"><div class="ttname"><a href="main__fbw_8h.html">main_fbw.h</a></div><div class="ttdoc">Fly By Wire:</div></div>
-<div class="ttc" id="amodules_2actuators_2actuators_8c_html_a1c91d56a3813a303fa5f0d80197e3b8b"><div class="ttname"><a href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a></div><div class="ttdeci">void actuators_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators_8c_source.html#l00128">actuators.c:128</a></div></div>
-<div class="ttc" id="amodules_2actuators_2actuators_8c_html_a7ba1bde30e3a87694e878b244de10c47"><div class="ttname"><a href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a></div><div class="ttdeci">void actuators_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators_8c_source.html#l00127">actuators.c:127</a></div></div>
+<div class="ttc" id="amodules_2actuators_2actuators_8c_html_a1c91d56a3813a303fa5f0d80197e3b8b"><div class="ttname"><a href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a></div><div class="ttdeci">void actuators_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators_8c_source.html#l00139">actuators.c:139</a></div></div>
+<div class="ttc" id="amodules_2actuators_2actuators_8c_html_a7ba1bde30e3a87694e878b244de10c47"><div class="ttname"><a href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a></div><div class="ttdeci">void actuators_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators_8c_source.html#l00138">actuators.c:138</a></div></div>
 <div class="ttc" id="amodules_2actuators_2actuators_8h_html"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers).</div></div>
 <div class="ttc" id="apaparazzi_8h_html_a3fd988f23519b41e9aea4d38bfb45e1c"><div class="ttname"><a href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a></div><div class="ttdeci">int16_t pprz_t</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00006">paparazzi.h:6</a></div></div>
 <div class="ttc" id="apaparazzi_8h_html_a54d332726575cca5fb2774bfcfbe36a9"><div class="ttname"><a href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a></div><div class="ttdeci">#define MAX_PPRZ</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00008">paparazzi.h:8</a></div></div>
@@ -238,7 +249,7 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8c_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators_8c.html">actuators.c</a></li>
-    <li class="footer">Generated on Tue Jun 18 2024 10:49:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 18 2024 11:52:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

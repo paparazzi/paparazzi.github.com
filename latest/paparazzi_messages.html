@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#COMMANDS">COMMANDS (ID 102)</a></li>
 <li class="level2"><a href="#FBW_STATUS">FBW_STATUS (ID 103)</a></li>
 <li class="level2"><a href="#ADC">ADC (ID 104)</a></li>
-<li class="level2"><a href="#ACTUATORS">ACTUATORS (ID 105)</a></li>
+<li class="level2"><a href="#ACTUATORS_RAW">ACTUATORS_RAW (ID 105)</a></li>
 <li class="level2"><a href="#BLUEGIGA">BLUEGIGA (ID 106)</a></li>
 <li class="level2"><a href="#THROTTLE_CURVE">THROTTLE_CURVE (ID 107)</a></li>
 <li class="level2"><a href="#PIKSI_HEARTBEAT">PIKSI_HEARTBEAT (ID 108)</a></li>
@@ -256,6 +256,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#AHRS_REF_QUAT">AHRS_REF_QUAT (ID 169)</a></li>
 <li class="level2"><a href="#INS_EKF2_EXT">INS_EKF2_EXT (ID 170)</a></li>
 <li class="level2"><a href="#AHRS_BIAS">AHRS_BIAS (ID 171)</a></li>
+<li class="level2"><a href="#ACTUATORS">ACTUATORS (ID 172)</a></li>
 <li class="level2"><a href="#AHRS_EULER">AHRS_EULER (ID 173)</a></li>
 <li class="level2"><a href="#AHRS_MEASUREMENT_EULER">AHRS_MEASUREMENT_EULER (ID 174)</a></li>
 <li class="level2"><a href="#WT">WT (ID 175)</a></li>
@@ -267,6 +268,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#ROTATING_WING_STATE">ROTATING_WING_STATE (ID 181)</a></li>
 <li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
 <li class="level2"><a href="#GUIDANCE">GUIDANCE (ID 184)</a></li>
+<li class="level2"><a href="#WLS_v">WLS_v (ID 187)</a></li>
+<li class="level2"><a href="#WLS_u">WLS_u (ID 188)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
@@ -2184,8 +2187,8 @@ ADC (ID 104)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">values   </td><td class="markdownTableBodyNone">uint16[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="ACTUATORS"></a>
-ACTUATORS (ID 105)</h2>
+<h2><a class="anchor" id="ACTUATORS_RAW"></a>
+ACTUATORS_RAW (ID 105)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -3596,6 +3599,14 @@ AHRS_BIAS (ID 171)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">mag_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">mGauss   </td><td class="markdownTableBodyNone">Magnetometer z-bias in mGauss   </td></tr>
 </table>
+<h2><a class="anchor" id="ACTUATORS"></a>
+ACTUATORS (ID 172)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">values   </td><td class="markdownTableBodyNone">int16[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h2><a class="anchor" id="AHRS_EULER"></a>
 AHRS_EULER (ID 173)</h2>
 <table class="markdownTable">
@@ -3784,6 +3795,36 @@ GUIDANCE (ID 184)</h2>
 <td class="markdownTableBodyNone">jerk_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">jerk_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="WLS_v"></a>
+WLS_v (ID 187)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">gamma   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">iter   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">v   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Wv   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="WLS_u"></a>
+WLS_u (ID 188)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Wu   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">u_pref   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">u_min   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">u_max   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">u   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
 AHRS_LKF (ID 193)</h2>
@@ -6914,7 +6955,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 18 2024 10:50:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 18 2024 11:52:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
