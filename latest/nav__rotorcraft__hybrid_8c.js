@@ -1,8 +1,8 @@
 var nav__rotorcraft__hybrid_8c =
 [
     [ "NAV_HYBRID_GOTO_MAX_SPEED", "nav__rotorcraft__hybrid_8c.html#a708e4ec6361470d102b003b3d0e1920e", null ],
-    [ "NAV_HYBRID_GOTO_MODE", "nav__rotorcraft__hybrid_8c.html#a2fc4dd18fd765de4df8ad7124e879af9", null ],
     [ "NAV_HYBRID_MAX_AIRSPEED", "nav__rotorcraft__hybrid_8c.html#a2aed7a8b038f8d24004c9a968f24c99f", null ],
+    [ "NAV_HYBRID_MAX_BANK", "nav__rotorcraft__hybrid_8c.html#a3d2386d0c2b6361bcc576c03c97319ad", null ],
     [ "NAV_HYBRID_MAX_DECELERATION", "nav__rotorcraft__hybrid_8c.html#ab3514cb7de1bb326395a5e9880de2a0c", null ],
     [ "NAV_HYBRID_NAV_CIRCLE_DIST", "nav__rotorcraft__hybrid_8c.html#a44da0a2e276dab69c0ee178ece7fe222", null ],
     [ "NAV_HYBRID_NAV_LINE_DIST", "nav__rotorcraft__hybrid_8c.html#a4457d85826ef57cc8bee53db2021db43", null ],
@@ -16,7 +16,6 @@ var nav__rotorcraft__hybrid_8c =
     [ "force_forward", "nav__rotorcraft__hybrid_8c.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "nav_goto_max_speed", "nav__rotorcraft__hybrid_8c.html#aa21e909e57b2b8d1ddf4dfa9dc7bd6c8", null ],
     [ "nav_hybrid_line_gain", "nav__rotorcraft__hybrid_8c.html#a7defc24dac87ddbef7078bd183fe5320", null ],
-    [ "nav_hybrid_max_bank", "nav__rotorcraft__hybrid_8c.html#a4dd3ab9fd2855d24402fe5c9ef087ab2", null ],
     [ "nav_hybrid_pos_gain", "nav__rotorcraft__hybrid_8c.html#a88469ac8f4bed17b355a3ffb90f5ee14", null ],
     [ "nav_max_deceleration_sp", "nav__rotorcraft__hybrid_8c.html#a016b21b84495b64eed8e59f0264e32de", null ],
     [ "nav_max_speed", "nav__rotorcraft__hybrid_8c.html#a4b690e8c1727436ef525302049b1e823", null ]

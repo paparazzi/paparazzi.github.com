@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logger_5fuart_5fparse_29904',['logger_uart_parse',['../namespacelogger__uart__parse.html',1,'']]]
+  ['logger_5fuart_5fparse_29869',['logger_uart_parse',['../namespacelogger__uart__parse.html',1,'']]]
 ];

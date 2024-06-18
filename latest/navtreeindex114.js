@@ -249,5 +249,5 @@ var NAVTREEINDEX114 =
 "lsm6ds33__i2c_8h.html#a87207bcdb47c2d7be96a8005f81ffe9b":[12,0,1,0,7,82,0,6],
 "lsm6ds33__i2c_8h.html#a9106acb39d21133d8910d11995882632":[12,0,1,0,7,82,0,5],
 "lsm6ds33__i2c_8h.html#a9183ec936fa269fa9795e46a8adda1ac":[12,0,1,0,7,82,0,3],
-"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,82,2,1]
+"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,82,1,0]
 };
