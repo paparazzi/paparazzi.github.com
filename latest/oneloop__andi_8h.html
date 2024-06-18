@@ -179,6 +179,11 @@ Macros</h2></td></tr>
 <tr class="separator:ad2493c7384798b6068806a9b9a20640d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61c6acc1df1a24298fe39aca96349bc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a61c6acc1df1a24298fe39aca96349bc0">ANDI_G_SCALING</a>&#160;&#160;&#160;1000.0f</td></tr>
 <tr class="separator:a61c6acc1df1a24298fe39aca96349bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7141d2f6f55016f9d056f325ba3fb8a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a7141d2f6f55016f9d056f325ba3fb8a3">CTRL_ANDI</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a7141d2f6f55016f9d056f325ba3fb8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control types.  <a href="oneloop__andi_8h.html#a7141d2f6f55016f9d056f325ba3fb8a3">More...</a><br /></td></tr>
+<tr class="separator:a7141d2f6f55016f9d056f325ba3fb8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4884f2dc59f0811158b84ca27f35af7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a4884f2dc59f0811158b84ca27f35af7f">CTRL_INDI</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4884f2dc59f0811158b84ca27f35af7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -186,9 +191,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:accb008a2b3851434c56824df7b7b8c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function of Oneloop ANDI controller <br  />
   <a href="oneloop__andi_8h.html#accb008a2b3851434c56824df7b7b8c15">More...</a><br /></td></tr>
 <tr class="separator:accb008a2b3851434c56824df7b7b8c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc520a1793d4fa59654715e75b139ccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#acc520a1793d4fa59654715e75b139ccb">oneloop_andi_enter</a> (bool half_loop_sp)</td></tr>
-<tr class="memdesc:acc520a1793d4fa59654715e75b139ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that resets important values upon engaging Oneloop ANDI.  <a href="oneloop__andi_8h.html#acc520a1793d4fa59654715e75b139ccb">More...</a><br /></td></tr>
-<tr class="separator:acc520a1793d4fa59654715e75b139ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8efaa4745d7aef6b89e29643f43718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a1a8efaa4745d7aef6b89e29643f43718">oneloop_andi_enter</a> (bool half_loop_sp, int ctrl_type)</td></tr>
+<tr class="memdesc:a1a8efaa4745d7aef6b89e29643f43718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that resets important values upon engaging Oneloop ANDI.  <a href="oneloop__andi_8h.html#a1a8efaa4745d7aef6b89e29643f43718">More...</a><br /></td></tr>
+<tr class="separator:a1a8efaa4745d7aef6b89e29643f43718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bf6173807834294cbb3da36e379cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a78bf6173807834294cbb3da36e379cc0">oneloop_andi_set_failsafe_setpoint</a> (void)</td></tr>
+<tr class="separator:a78bf6173807834294cbb3da36e379cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86a6264b40528bbf108446e1081a2ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a86a6264b40528bbf108446e1081a2ff0">oneloop_andi_run</a> (bool in_flight, bool half_loop, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> PSA_des, int rm_order_h, int rm_order_v)</td></tr>
 <tr class="memdesc:a86a6264b40528bbf108446e1081a2ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function that runs the controller and performs control allocation.  <a href="oneloop__andi_8h.html#a86a6264b40528bbf108446e1081a2ff0">More...</a><br /></td></tr>
 <tr class="separator:a86a6264b40528bbf108446e1081a2ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +224,28 @@ Variables</h2></td></tr>
 <tr class="separator:aa1942a87e52e6589bd350bcc3fa19440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabb86f48bc32521a2b9f351d1f463a1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#acabb86f48bc32521a2b9f351d1f463a1">psi_des_deg</a></td></tr>
 <tr class="separator:acabb86f48bc32521a2b9f351d1f463a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ffa0ba910099cbd2a2ff812ffed456"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#aa3ffa0ba910099cbd2a2ff812ffed456">heading_manual</a></td></tr>
+<tr class="separator:aa3ffa0ba910099cbd2a2ff812ffed456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3e06b818acab0fe0c5cf08bd9ed694"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#ada3e06b818acab0fe0c5cf08bd9ed694">yaw_stick_in_auto</a></td></tr>
+<tr class="separator:ada3e06b818acab0fe0c5cf08bd9ed694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843142192ad221c1433825d72ee73e3c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a843142192ad221c1433825d72ee73e3c">fwd_sideslip_gain</a></td></tr>
+<tr class="separator:a843142192ad221c1433825d72ee73e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a570f6e547821d329abdf88fa2f43f2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a2a570f6e547821d329abdf88fa2f43f2">eulers_zxy_des</a></td></tr>
+<tr class="separator:a2a570f6e547821d329abdf88fa2f43f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410282f6636e9807befe44fcf71fc0bd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a410282f6636e9807befe44fcf71fc0bd">psi_des_rad</a></td></tr>
+<tr class="separator:a410282f6636e9807befe44fcf71fc0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7697e638b570277713d5651ecdcaee30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a7697e638b570277713d5651ecdcaee30">chirp_on</a></td></tr>
+<tr class="separator:a7697e638b570277713d5651ecdcaee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d55623669a5839d1a4cd063bd5f693"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a63d55623669a5839d1a4cd063bd5f693">f0_chirp</a></td></tr>
+<tr class="separator:a63d55623669a5839d1a4cd063bd5f693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d0e54464765750706109510a0307b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a84d0e54464765750706109510a0307b5">f1_chirp</a></td></tr>
+<tr class="separator:a84d0e54464765750706109510a0307b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534838907113fdde7c5524c0eee03930"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a534838907113fdde7c5524c0eee03930">t_chirp</a></td></tr>
+<tr class="separator:a534838907113fdde7c5524c0eee03930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eff0dfbc28e29186dc16c1c313389d4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a8eff0dfbc28e29186dc16c1c313389d4">A_chirp</a></td></tr>
+<tr class="separator:a8eff0dfbc28e29186dc16c1c313389d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98988d6f3db02b846d1116c3bcb79d3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a98988d6f3db02b846d1116c3bcb79d3a">chirp_axis</a></td></tr>
+<tr class="separator:a98988d6f3db02b846d1116c3bcb79d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220bb859f2933240f886cccc7394368a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="oneloop__andi_8h.html#structguidance__indi__hybrid__params">guidance_indi_hybrid_params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a220bb859f2933240f886cccc7394368a">gih_params</a></td></tr>
 <tr class="separator:a220bb859f2933240f886cccc7394368a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0975dd5198f47a9c645f2716ae848235"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oneloop__andi_8h.html#a0975dd5198f47a9c645f2716ae848235">force_forward</a></td></tr>
@@ -339,7 +368,7 @@ speed_gainz</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00078">78</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00095">95</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -382,7 +411,7 @@ vel[3]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00085">85</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00102">102</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -419,7 +448,7 @@ vel[3]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00091">91</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00108">108</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -462,7 +491,7 @@ att_d[3]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00098">98</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00115">115</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -499,7 +528,7 @@ att_d[3]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00103">103</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00120">120</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for OneloopGeneral:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -513,6 +542,12 @@ att_d[3]</td>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a48c08d9edc27cdce8a37941aa90cb54f"></a>int</td>
+<td class="fieldname">
+ctrl_type</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a6cfaf83b79f7d3f2e72b41d9f5df830a"></a>struct <a class="el" href="oneloop__andi_8h.html#structOneloopGuidanceRef">OneloopGuidanceRef</a></td>
 <td class="fieldname">
@@ -559,7 +594,7 @@ sta_state</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00114">114</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00132">132</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -596,7 +631,7 @@ zeta</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00119">119</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00137">137</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -633,7 +668,7 @@ k3[3]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00124">124</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00142">142</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -749,9 +784,43 @@ k3</td>
 
 </div>
 </div>
+<a id="a7141d2f6f55016f9d056f325ba3fb8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7141d2f6f55016f9d056f325ba3fb8a3">&#9670;&nbsp;</a></span>CTRL_ANDI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CTRL_ANDI&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control types. </p>
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00057">57</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+
+</div>
+</div>
+<a id="a4884f2dc59f0811158b84ca27f35af7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4884f2dc59f0811158b84ca27f35af7f">&#9670;&nbsp;</a></span>CTRL_INDI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CTRL_INDI&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8h_source.html#l00058">58</a> of file <a class="el" href="oneloop__andi_8h_source.html">oneloop_andi.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="acc520a1793d4fa59654715e75b139ccb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc520a1793d4fa59654715e75b139ccb">&#9670;&nbsp;</a></span>oneloop_andi_enter()</h2>
+<a id="a1a8efaa4745d7aef6b89e29643f43718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a8efaa4745d7aef6b89e29643f43718">&#9670;&nbsp;</a></span>oneloop_andi_enter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,8 +829,18 @@ k3</td>
           <td class="memname">void oneloop_andi_enter </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>half_loop_sp</em></td><td>)</td>
+          <td class="paramname"><em>half_loop_sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ctrl_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -769,44 +848,38 @@ k3</td>
 <p>Function that resets important values upon engaging Oneloop ANDI. </p>
 <p>FIXME: Ideally we should distinguish between the "stabilization" and "guidance" needs because it is unlikely to switch stabilization in flight, and there are multiple modes that use (the same) stabilization. Resetting the controller is not so nice when you are flying. </p>
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01098">1098</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01126">1126</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="oneloop__andi_8h_source.html#l00052">ANDI_OUTPUTS</a>, <a class="el" href="oneloop__andi_8c_source.html#l00419">ang_acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00092">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00094">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00095">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00093">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8c_source.html#l01435">calc_normalization()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00405">eulers_zxy</a>, <a class="el" href="oneloop__andi_8c_source.html#l00404">eulers_zxy_des</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00104">OneloopGeneral::half_loop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00991">init_filter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00420">lin_acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00418">model_pred</a>, <a class="el" href="oneloop__andi_8c_source.html#l00388">nav_target</a>, <a class="el" href="oneloop__andi_8c_source.html#l00384">oneloop_andi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00407">psi_des_deg</a>, <a class="el" href="oneloop__andi_8c_source.html#l00406">psi_des_rad</a>, <a class="el" href="oneloop__andi_8h_source.html#l00107">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8c_source.html#l01377">sum_g1g2_1l()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<p class="reference">References <a class="el" href="oneloop__andi_8h_source.html#l00052">ANDI_OUTPUTS</a>, <a class="el" href="oneloop__andi_8c_source.html#l00356">ang_acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00109">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00111">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00112">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00110">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8c_source.html#l01556">calc_normalization()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00122">OneloopGeneral::ctrl_type</a>, <a class="el" href="oneloop__andi_8c_source.html#l00338">eulers_zxy</a>, <a class="el" href="oneloop__andi_8c_source.html#l00337">eulers_zxy_des</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00121">OneloopGeneral::half_loop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01013">init_filter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00357">lin_acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00355">model_pred</a>, <a class="el" href="oneloop__andi_8c_source.html#l00320">nav_target</a>, <a class="el" href="oneloop__andi_8c_source.html#l00316">oneloop_andi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00341">psi_des_deg</a>, <a class="el" href="oneloop__andi_8c_source.html#l00340">psi_des_rad</a>, <a class="el" href="oneloop__andi_8h_source.html#l00125">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8c_source.html#l01459">sum_g1g2_1l()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__oneloop_8c_source.html#l00034">guidance_h_run_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01479">oneloop_from_nav()</a>, and <a class="el" href="stabilization__oneloop_8c_source.html#l00030">stabilization_attitude_enter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01764">chirp_call()</a>, <a class="el" href="guidance__oneloop_8c_source.html#l00034">guidance_h_run_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01607">oneloop_from_nav()</a>, and <a class="el" href="stabilization__oneloop_8c_source.html#l00030">stabilization_attitude_enter()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="oneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_cgraph.png" border="0" usemap="#aoneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_cgraph" alt=""/></div>
-<map name="aoneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_cgraph" id="aoneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_cgraph">
-<area shape="rect" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="5,401,156,428"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="204,148,349,174"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="216,350,337,377"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="221,401,333,428"/>
-<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="237,764,317,790"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="223,814,331,841"/>
-<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="660,350,800,377"/>
-<area shape="rect" href="oneloop__andi_8c.html#a942b91944e3bab77745b6c47ae0c6f2f" title=" " alt="" coords="445,46,532,73"/>
-<area shape="rect" href="oneloop__andi_8c.html#a022786dd61e329cc9259492f11c1ba08" title="Error Controller Gain Design." alt="" coords="445,97,532,124"/>
-<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="433,148,544,174"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad313d7996a86e13a2f0c1352473a2981" title=" " alt="" coords="445,198,532,225"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac2b96351213227cc6fca5e2632dac8b6" title=" " alt="" coords="445,249,532,276"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="433,300,544,326"/>
-<area shape="rect" href="oneloop__andi_8c.html#a10ce6b4c1e233def8ac07ea0c4466890" title=" " alt="" coords="445,350,532,377"/>
-<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="433,401,544,428"/>
-<area shape="rect" href="oneloop__andi_8c.html#af42f6349829436d09187fb9dabe1b74d" title=" " alt="" coords="440,452,537,478"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="440,502,537,529"/>
-<area shape="rect" href="oneloop__andi_8c.html#ade145c37e6deff69377d9d45c7969db0" title=" " alt="" coords="440,553,537,580"/>
-<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="440,604,537,630"/>
-<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="440,654,537,681"/>
-<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="446,705,531,732"/>
-<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="418,756,559,798"/>
-<area shape="rect" href="low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="397,822,580,849"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="409,873,569,900"/>
-<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="628,764,832,790"/>
-<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="647,873,813,900"/>
+<div class="center"><img src="oneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_cgraph.png" border="0" usemap="#aoneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_cgraph" alt=""/></div>
+<map name="aoneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_cgraph" id="aoneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_cgraph">
+<area shape="rect" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="5,262,156,289"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="204,60,349,86"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="216,212,337,238"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="221,262,333,289"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="237,393,317,420"/>
+<area shape="rect" href="oneloop__andi_8c.html#a842e4d02438726712a762e685d7cacb5" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="223,444,331,470"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="637,212,777,238"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="422,34,533,61"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="422,85,533,112"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="422,136,533,162"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="422,186,533,213"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="422,237,533,264"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="429,288,526,314"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="429,338,526,365"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="429,389,526,416"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="435,440,520,466"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="407,491,548,532"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="397,557,557,584"/>
+<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="605,498,809,525"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="625,557,790,584"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -814,24 +887,28 @@ k3</td>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="oneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_icgraph.png" border="0" usemap="#aoneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_icgraph" alt=""/></div>
-<map name="aoneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_icgraph" id="aoneloop__andi_8h_acc520a1793d4fa59654715e75b139ccb_icgraph">
-<area shape="rect" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="949,99,1100,125"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="736,48,901,75"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="747,99,890,125"/>
-<area shape="rect" href="stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="739,150,899,191"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="511,5,676,32"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="503,56,684,83"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="248,56,451,83"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,19,200,45"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="13,69,192,96"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="499,149,688,176"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#aaff770beb67d0854a99599724b3042a5" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="513,201,673,242"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="298,107,401,133"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="301,157,398,184"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="50,132,155,159"/>
-<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="321,208,377,235"/>
-<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="37,208,168,235"/>
+<div class="center"><img src="oneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_icgraph.png" border="0" usemap="#aoneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_icgraph" alt=""/></div>
+<map name="aoneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_icgraph" id="aoneloop__andi_8h_a1a8efaa4745d7aef6b89e29643f43718_icgraph">
+<area shape="rect" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="949,81,1100,108"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac26c34025ecb029941bb42302325ca62" title=" " alt="" coords="777,5,861,32"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="31,56,174,83"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="736,107,901,133"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="739,206,899,247"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6d4db60ee32c86bf768d4422e524c993" title="Function to generate the reference signals for the oneloop controller." alt="" coords="525,5,662,32"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="281,5,418,32"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="9,5,197,32"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="511,107,676,133"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="503,157,684,184"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="248,152,451,179"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,117,200,144"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="13,168,192,195"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="499,213,688,240"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#aaff770beb67d0854a99599724b3042a5" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="513,275,673,317"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="298,203,401,229"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="301,253,398,280"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="50,241,155,268"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="321,304,377,331"/>
+<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="37,304,168,331"/>
 </map>
 </div>
 
@@ -856,9 +933,9 @@ k3</td>
 <p>Init function of Oneloop ANDI controller <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01048">1048</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01074">1074</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="oneloop__andi_8c_source.html#l00156">act_dynamics</a>, <a class="el" href="oneloop__andi_8c_source.html#l00398">actuator_state_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00394">andi_du</a>, <a class="el" href="oneloop__andi_8c_source.html#l00395">andi_du_n</a>, <a class="el" href="oneloop__andi_8h_source.html#l00035">ANDI_NUM_ACT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00048">ANDI_NUM_ACT_TOT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00052">ANDI_OUTPUTS</a>, <a class="el" href="oneloop__andi_8c_source.html#l00393">andi_u</a>, <a class="el" href="oneloop__andi_8c_source.html#l00419">ang_acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00092">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00094">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00095">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00093">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8c_source.html#l00447">bwls_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l01435">calc_normalization()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="oneloop__andi_8c_source.html#l00404">eulers_zxy_des</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00446">g1g2_1l</a>, <a class="el" href="oneloop__andi_8h_source.html#l00104">OneloopGeneral::half_loop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00991">init_filter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00420">lin_acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00418">model_pred</a>, <a class="el" href="oneloop__andi_8c_source.html#l00388">nav_target</a>, <a class="el" href="oneloop__andi_8c_source.html#l00396">nu</a>, <a class="el" href="oneloop__andi_8c_source.html#l00384">oneloop_andi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00460">positive_non_zero()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00318">send_eff_mat_g_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00356">send_guidance_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00331">send_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00107">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8c_source.html#l01377">sum_g1g2_1l()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<p class="reference">References <a class="el" href="oneloop__andi_8c_source.html#l00169">act_dynamics</a>, <a class="el" href="oneloop__andi_8c_source.html#l00330">actuator_state_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00326">andi_du</a>, <a class="el" href="oneloop__andi_8c_source.html#l00327">andi_du_n</a>, <a class="el" href="oneloop__andi_8h_source.html#l00035">ANDI_NUM_ACT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00048">ANDI_NUM_ACT_TOT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00052">ANDI_OUTPUTS</a>, <a class="el" href="oneloop__andi_8c_source.html#l00325">andi_u</a>, <a class="el" href="oneloop__andi_8c_source.html#l00356">ang_acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00109">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00111">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00112">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00110">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8c_source.html#l00396">bwls_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l01556">calc_normalization()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00057">CTRL_ANDI</a>, <a class="el" href="oneloop__andi_8h_source.html#l00122">OneloopGeneral::ctrl_type</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="oneloop__andi_8c_source.html#l00337">eulers_zxy_des</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00395">g1g2_1l</a>, <a class="el" href="oneloop__andi_8h_source.html#l00121">OneloopGeneral::half_loop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01013">init_filter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00357">lin_acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00355">model_pred</a>, <a class="el" href="oneloop__andi_8c_source.html#l00320">nav_target</a>, <a class="el" href="oneloop__andi_8c_source.html#l00328">nu</a>, <a class="el" href="oneloop__andi_8c_source.html#l00316">oneloop_andi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00495">positive_non_zero()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00414">send_eff_mat_g_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00452">send_guidance_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00427">send_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00485">send_oneloop_debug()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00125">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8c_source.html#l01459">sum_g1g2_1l()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -866,37 +943,33 @@ k3</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="oneloop__andi_8h_accb008a2b3851434c56824df7b7b8c15_cgraph.png" border="0" usemap="#aoneloop__andi_8h_accb008a2b3851434c56824df7b7b8c15_cgraph" alt=""/></div>
 <map name="aoneloop__andi_8h_accb008a2b3851434c56824df7b7b8c15_cgraph" id="aoneloop__andi_8h_accb008a2b3851434c56824df7b7b8c15_cgraph">
-<area shape="rect" title="Init function of Oneloop ANDI controller" alt="" coords="5,568,143,594"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="227,10,373,37"/>
-<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="720,390,860,417"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="239,416,361,442"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="244,466,356,493"/>
-<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="260,517,340,544"/>
-<area shape="rect" href="oneloop__andi_8c.html#a04b70e47b7660a579e6962640174c6b7" title="Initialize Position of Poles." alt="" coords="257,568,343,594"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="199,618,401,645"/>
-<area shape="rect" href="oneloop__andi_8c.html#af07eddf492c68385f0bba14a837cc46a" title=" " alt="" coords="191,669,409,696"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac627e584385e73338d8bc27a19d28f9c" title=" " alt="" coords="193,720,407,746"/>
-<area shape="rect" href="oneloop__andi_8c.html#ae20e34f35b3cade56ec25786ca50ab7c" title=" " alt="" coords="227,770,373,797"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="246,821,354,848"/>
-<area shape="rect" href="oneloop__andi_8c.html#a942b91944e3bab77745b6c47ae0c6f2f" title=" " alt="" coords="505,112,592,138"/>
-<area shape="rect" href="oneloop__andi_8c.html#a022786dd61e329cc9259492f11c1ba08" title="Error Controller Gain Design." alt="" coords="505,162,592,189"/>
-<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="493,213,604,240"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad313d7996a86e13a2f0c1352473a2981" title=" " alt="" coords="505,264,592,290"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac2b96351213227cc6fca5e2632dac8b6" title=" " alt="" coords="505,314,592,341"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="493,365,604,392"/>
-<area shape="rect" href="oneloop__andi_8c.html#a10ce6b4c1e233def8ac07ea0c4466890" title=" " alt="" coords="505,416,592,442"/>
-<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="493,466,604,493"/>
-<area shape="rect" href="oneloop__andi_8c.html#af42f6349829436d09187fb9dabe1b74d" title=" " alt="" coords="500,517,597,544"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="500,568,597,594"/>
-<area shape="rect" href="oneloop__andi_8c.html#ade145c37e6deff69377d9d45c7969db0" title=" " alt="" coords="500,618,597,645"/>
-<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="500,669,597,696"/>
-<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="500,720,597,746"/>
-<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="506,770,591,797"/>
-<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="478,822,619,863"/>
-<area shape="rect" href="low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="457,888,640,914"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="469,938,629,965"/>
-<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="688,829,892,856"/>
-<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="707,938,873,965"/>
+<area shape="rect" title="Init function of Oneloop ANDI controller" alt="" coords="5,469,143,496"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="227,5,373,32"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="697,259,837,285"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="239,292,361,319"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="244,343,356,369"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="260,444,340,471"/>
+<area shape="rect" href="oneloop__andi_8c.html#a04b70e47b7660a579e6962640174c6b7" title="Initialize Position of Poles." alt="" coords="257,393,343,420"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="199,495,401,521"/>
+<area shape="rect" href="oneloop__andi_8c.html#af07eddf492c68385f0bba14a837cc46a" title=" " alt="" coords="191,545,409,572"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac627e584385e73338d8bc27a19d28f9c" title=" " alt="" coords="193,596,407,623"/>
+<area shape="rect" href="oneloop__andi_8c.html#ae20e34f35b3cade56ec25786ca50ab7c" title=" " alt="" coords="227,647,373,673"/>
+<area shape="rect" href="oneloop__andi_8c.html#ae45b54ec7e7dff3ee5e0142736a78ad9" title=" " alt="" coords="221,697,379,724"/>
+<area shape="rect" href="oneloop__andi_8c.html#a842e4d02438726712a762e685d7cacb5" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="246,748,354,775"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="482,107,593,133"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="482,157,593,184"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="482,208,593,235"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="482,259,593,285"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="482,309,593,336"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="489,360,586,387"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="489,411,586,437"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="489,461,586,488"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="495,512,580,539"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="467,563,608,605"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="457,629,617,656"/>
+<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="665,571,869,597"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="685,629,850,656"/>
+<area shape="rect" href="oneloop__andi_8c.html#a88d21fc62af2896e1b49b66b188cf461" title=" " alt="" coords="489,697,586,724"/>
 </map>
 </div>
 
@@ -985,11 +1058,11 @@ k3</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01129">1129</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01158">1158</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="oneloop__andi_8c_source.html#l00399">a_thrust</a>, <a class="el" href="oneloop__andi_8h_source.html#l00081">OneloopGuidanceRef::acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00088">OneloopGuidanceState::acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00398">actuator_state_1l</a>, <a class="el" href="oneloop__andi_8h_source.html#l00035">ANDI_NUM_ACT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00092">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00094">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00095">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00093">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8c_source.html#l00447">bwls_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00389">dt_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00405">eulers_zxy</a>, <a class="el" href="oneloop__andi_8c_source.html#l00404">eulers_zxy_des</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00105">OneloopGeneral::gui_ref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00106">OneloopGeneral::gui_state</a>, <a class="el" href="oneloop__andi_8h_source.html#l00082">OneloopGuidanceRef::jer</a>, <a class="el" href="oneloop__andi_8h_source.html#l00120">Gains3rdOrder::k1</a>, <a class="el" href="oneloop__andi_8h_source.html#l00121">Gains3rdOrder::k2</a>, <a class="el" href="oneloop__andi_8h_source.html#l00125">Gains2ndOrder::k2</a>, <a class="el" href="oneloop__andi_8h_source.html#l00122">Gains3rdOrder::k3</a>, <a class="el" href="oneloop__andi_8h_source.html#l00126">Gains2ndOrder::k3</a>, <a class="el" href="oneloop__andi_8c_source.html#l00437">k_att_rm</a>, <a class="el" href="oneloop__andi_8c_source.html#l00439">k_head_rm</a>, <a class="el" href="oneloop__andi_8c_source.html#l00441">k_pos_rm</a>, <a class="el" href="oneloop__andi_8c_source.html#l00236">max_a_nav</a>, <a class="el" href="oneloop__andi_8c_source.html#l00242">max_j_nav</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="oneloop__andi_8c_source.html#l00248">max_v_nav</a>, <a class="el" href="oneloop__andi_8c_source.html#l00388">nav_target</a>, <a class="el" href="oneloop__andi_8c_source.html#l00384">oneloop_andi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="oneloop__andi_8h_source.html#l00079">OneloopGuidanceRef::pos</a>, <a class="el" href="oneloop__andi_8h_source.html#l00086">OneloopGuidanceState::pos</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00406">psi_des_rad</a>, <a class="el" href="oneloop__andi_8c_source.html#l00408">psi_vec</a>, <a class="el" href="radio__control_8h_source.html#l00094">radio_control_get()</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="oneloop__andi_8c_source.html#l00448">ratio_u_un</a>, <a class="el" href="oneloop__andi_8c_source.html#l00449">ratio_vn_v</a>, <a class="el" href="oneloop__andi_8c_source.html#l00768">rm_1st_pos()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00789">rm_2nd()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00746">rm_2nd_pos()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00667">rm_3rd()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00630">rm_3rd_attitude()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00717">rm_3rd_pos()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00107">OneloopGeneral::sta_ref</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="oneloop__andi_8c_source.html#l00387">use_increment</a>, <a class="el" href="oneloop__andi_8h_source.html#l00080">OneloopGuidanceRef::vel</a>, <a class="el" href="oneloop__andi_8h_source.html#l00087">OneloopGuidanceState::vel</a>, <a class="el" href="oneloop__andi_8c_source.html#l00187">Wv</a>, <a class="el" href="oneloop__andi_8c_source.html#l00188">Wv_wls</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="oneloop__andi_8c_source.html#l00367">A_chirp</a>, <a class="el" href="oneloop__andi_8c_source.html#l00331">a_thrust</a>, <a class="el" href="oneloop__andi_8h_source.html#l00098">OneloopGuidanceRef::acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00105">OneloopGuidanceState::acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00330">actuator_state_1l</a>, <a class="el" href="oneloop__andi_8h_source.html#l00035">ANDI_NUM_ACT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00109">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00111">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00112">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00110">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8c_source.html#l00396">bwls_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00368">chirp_axis</a>, <a class="el" href="oneloop__andi_8c_source.html#l01764">chirp_call()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00361">chirp_first_call</a>, <a class="el" href="oneloop__andi_8c_source.html#l00360">chirp_on</a>, <a class="el" href="oneloop__andi_8c_source.html#l00321">dt_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00338">eulers_zxy</a>, <a class="el" href="oneloop__andi_8c_source.html#l00337">eulers_zxy_des</a>, <a class="el" href="oneloop__andi_8c_source.html#l00364">f0_chirp</a>, <a class="el" href="oneloop__andi_8c_source.html#l00365">f1_chirp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00607">float_vect_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00123">OneloopGeneral::gui_ref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00124">OneloopGeneral::gui_state</a>, <a class="el" href="oneloop__andi_8c_source.html#l00343">heading_manual</a>, <a class="el" href="oneloop__andi_8h_source.html#l00099">OneloopGuidanceRef::jer</a>, <a class="el" href="oneloop__andi_8h_source.html#l00138">Gains3rdOrder::k1</a>, <a class="el" href="oneloop__andi_8h_source.html#l00139">Gains3rdOrder::k2</a>, <a class="el" href="oneloop__andi_8h_source.html#l00140">Gains3rdOrder::k3</a>, <a class="el" href="oneloop__andi_8c_source.html#l00385">k_att_rm</a>, <a class="el" href="oneloop__andi_8c_source.html#l00387">k_pos_rm</a>, <a class="el" href="oneloop__andi_8c_source.html#l00268">max_a_nav</a>, <a class="el" href="oneloop__andi_8c_source.html#l00274">max_j_nav</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="oneloop__andi_8c_source.html#l00154">max_r</a>, <a class="el" href="oneloop__andi_8c_source.html#l00280">max_v_nav</a>, <a class="el" href="oneloop__andi_8c_source.html#l00320">nav_target</a>, <a class="el" href="oneloop__andi_8c_source.html#l00316">oneloop_andi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00241">ONELOOP_ANDI_MAX_PHI</a>, <a class="el" href="oneloop__andi_8c_source.html#l00247">ONELOOP_ANDI_MAX_THETA</a>, <a class="el" href="oneloop__andi_8c_source.html#l01645">oneloop_andi_sideslip()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00369">p_ref_0</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="oneloop__andi_8h_source.html#l00096">OneloopGuidanceRef::pos</a>, <a class="el" href="oneloop__andi_8h_source.html#l00103">OneloopGuidanceState::pos</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00341">psi_des_deg</a>, <a class="el" href="oneloop__andi_8c_source.html#l00340">psi_des_rad</a>, <a class="el" href="oneloop__andi_8c_source.html#l00342">psi_vec</a>, <a class="el" href="radio__control_8h_source.html#l00094">radio_control_get()</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="oneloop__andi_8c_source.html#l00397">ratio_u_un</a>, <a class="el" href="oneloop__andi_8c_source.html#l00398">ratio_vn_v</a>, <a class="el" href="oneloop__andi_8c_source.html#l00770">rm_1st_pos()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00748">rm_2nd_pos()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00632">rm_3rd_attitude()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00719">rm_3rd_pos()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00125">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8c_source.html#l00363">t_0_chirp</a>, <a class="el" href="oneloop__andi_8c_source.html#l00366">t_chirp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="oneloop__andi_8c_source.html#l00362">time_elapsed_chirp</a>, <a class="el" href="oneloop__andi_8c_source.html#l00319">use_increment</a>, <a class="el" href="oneloop__andi_8h_source.html#l00097">OneloopGuidanceRef::vel</a>, <a class="el" href="oneloop__andi_8h_source.html#l00104">OneloopGuidanceState::vel</a>, <a class="el" href="oneloop__andi_8c_source.html#l00200">Wv</a>, <a class="el" href="oneloop__andi_8c_source.html#l00201">Wv_wls</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="oneloop__andi_8c_source.html#l00344">yaw_stick_in_auto</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -997,23 +1070,47 @@ k3</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="oneloop__andi_8h_a6d4db60ee32c86bf768d4422e524c993_cgraph.png" border="0" usemap="#aoneloop__andi_8h_a6d4db60ee32c86bf768d4422e524c993_cgraph" alt=""/></div>
 <map name="aoneloop__andi_8h_a6d4db60ee32c86bf768d4422e524c993_cgraph" id="aoneloop__andi_8h_a6d4db60ee32c86bf768d4422e524c993_cgraph">
-<area shape="rect" title="Function to generate the reference signals for the oneloop controller." alt="" coords="5,194,143,221"/>
-<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="387,17,511,43"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="197,245,319,271"/>
-<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="191,295,325,322"/>
-<area shape="rect" href="oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="209,42,307,69"/>
-<area shape="rect" href="oneloop__andi_8c.html#aee2673b358d1bee44c3dbc56bfcb12c7" title="Reference Model Definition for 2nd order system." alt="" coords="223,346,293,373"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="207,93,309,119"/>
-<area shape="rect" href="oneloop__andi_8c.html#a7ec8f7884b0a2f587cd439989be4aaf3" title="Reference Model Definition for 3rd order system." alt="" coords="224,397,292,423"/>
-<area shape="rect" href="oneloop__andi_8c.html#a20ab7b965735469de2cca4dbe192aa0f" title="Reference Model Definition for 3rd order system with attitude conversion functions." alt="" coords="195,194,321,221"/>
-<area shape="rect" href="oneloop__andi_8c.html#acae0258231eeae5ebf534d6e6b8b37b4" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="209,143,307,170"/>
-<area shape="rect" href="oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="417,118,480,145"/>
-<area shape="rect" href="oneloop__andi_8c.html#adf76ce54e272b606e421b21cda319bb2" title="Integrate in time 3D array." alt="" coords="397,169,501,195"/>
-<area shape="rect" href="oneloop__andi_8c.html#adc368e81ebd03f8783b5296eed2e0d46" title="Scale a 3D array to within a 3D bound." alt="" coords="389,67,509,94"/>
-<area shape="rect" href="group__math__algebra__float.html#gad3e4fbe2ede8f068d46f7c617227e3f1" title="||a||" alt="" coords="579,42,705,69"/>
-<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="572,93,712,119"/>
-<area shape="rect" href="oneloop__andi_8c.html#a23b0938a3f96997ca1b9a33725465395" title="Attitude Euler to Rates Conversion Function." alt="" coords="379,220,518,261"/>
-<area shape="rect" href="oneloop__andi_8c.html#acd17c1487b17b6c4a8a37fea7ade6bff" title="Attitude Rates to Euler Conversion Function." alt="" coords="373,285,524,327"/>
+<area shape="rect" title="Function to generate the reference signals for the oneloop controller." alt="" coords="5,841,143,868"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac26c34025ecb029941bb42302325ca62" title=" " alt="" coords="232,512,316,539"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="616,436,737,463"/>
+<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="419,917,543,944"/>
+<area shape="rect" href="group__math__algebra__float.html#gad3e4fbe2ede8f068d46f7c617227e3f1" title="||a||" alt="" coords="613,867,740,893"/>
+<area shape="rect" href="oneloop__andi_8c.html#a4fd32c2d7c9698c6b91eb13728483069" title="Function to calculate corrections for sideslip." alt="" coords="191,1019,357,1045"/>
+<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="207,1069,341,1096"/>
+<area shape="rect" href="oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="225,867,323,893"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="223,765,325,792"/>
+<area shape="rect" href="oneloop__andi_8c.html#a20ab7b965735469de2cca4dbe192aa0f" title="Reference Model Definition for 3rd order system with attitude conversion functions." alt="" coords="211,968,337,995"/>
+<area shape="rect" href="oneloop__andi_8c.html#acae0258231eeae5ebf534d6e6b8b37b4" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="225,816,323,843"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0ed573cdbe62693d73001508484203ca" title="Function to perform position and attitude chirps." alt="" coords="439,132,523,159"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="408,487,553,513"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="405,537,556,564"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad908361ab4230c348da8d45bb4d6d132" title="Function to calculate the acceleration reference during the chirp." alt="" coords="615,56,739,83"/>
+<area shape="rect" href="oneloop__andi_8c.html#a656f174de043fa184d8bd7000cacc60e" title="Function to calculate the jerk reference during the chirp." alt="" coords="617,107,737,133"/>
+<area shape="rect" href="oneloop__andi_8c.html#a9aaf375cae7abe38bfe30c9cbc8c2498" title="Function to calculate the position reference during the chirp." alt="" coords="615,157,739,184"/>
+<area shape="rect" href="oneloop__andi_8c.html#aa4bf518f8eb37453d51fd18210d37c4c" title="Function to calculate the velocity reference during the chirp." alt="" coords="615,5,739,32"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1037,487,1177,513"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="604,487,749,513"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="621,537,733,564"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="637,816,717,843"/>
+<area shape="rect" href="oneloop__andi_8c.html#a842e4d02438726712a762e685d7cacb5" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="623,588,731,615"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="822,613,933,640"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="822,664,933,691"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="822,715,933,741"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="822,309,933,336"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="822,360,933,387"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="829,411,926,437"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="829,461,926,488"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="829,512,926,539"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="835,563,920,589"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="807,817,948,858"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="797,883,957,909"/>
+<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="1005,824,1209,851"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="1025,883,1190,909"/>
+<area shape="rect" href="oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="449,867,512,893"/>
+<area shape="rect" href="oneloop__andi_8c.html#adf76ce54e272b606e421b21cda319bb2" title="Integrate in time 3D array." alt="" coords="429,816,533,843"/>
+<area shape="rect" href="oneloop__andi_8c.html#adc368e81ebd03f8783b5296eed2e0d46" title="Scale a 3D array to within a 3D bound." alt="" coords="421,765,541,792"/>
+<area shape="rect" href="oneloop__andi_8c.html#a23b0938a3f96997ca1b9a33725465395" title="Attitude Euler to Rates Conversion Function." alt="" coords="411,1034,550,1075"/>
+<area shape="rect" href="oneloop__andi_8c.html#acd17c1487b17b6c4a8a37fea7ade6bff" title="Attitude Rates to Euler Conversion Function." alt="" coords="405,969,556,1010"/>
 </map>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1088,11 +1185,11 @@ k3</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01231">1231</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01279">1279</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="oneloop__andi_8c_source.html#l00399">a_thrust</a>, <a class="el" href="oneloop__andi_8h_source.html#l00081">OneloopGuidanceRef::acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00088">OneloopGuidanceState::acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00162">act_max</a>, <a class="el" href="oneloop__andi_8c_source.html#l00168">act_min</a>, <a class="el" href="oneloop__andi_8c_source.html#l00398">actuator_state_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00394">andi_du</a>, <a class="el" href="oneloop__andi_8c_source.html#l00395">andi_du_n</a>, <a class="el" href="oneloop__andi_8h_source.html#l00035">ANDI_NUM_ACT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00048">ANDI_NUM_ACT_TOT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00052">ANDI_OUTPUTS</a>, <a class="el" href="oneloop__andi_8c_source.html#l00393">andi_u</a>, <a class="el" href="oneloop__andi_8c_source.html#l00419">ang_acc</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00039">AP_MODE_ATTITUDE_DIRECT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00092">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00099">OneloopStabilizationState::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00094">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00101">OneloopStabilizationState::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00095">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00093">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00100">OneloopStabilizationState::att_d</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="oneloop__andi_8c_source.html#l00447">bwls_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l01435">calc_normalization()</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="oneloop__andi_8c_source.html#l00413">du_max_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00412">du_min_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00414">du_pref_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00861">ec_2rd()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00812">ec_3rd()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00832">ec_3rd_att()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00405">eulers_zxy</a>, <a class="el" href="oneloop__andi_8c_source.html#l00404">eulers_zxy_des</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00556">float_vect_sum()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00446">g1g2_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00411">gamma_wls</a>, <a class="el" href="oneloop__andi_8c_source.html#l01359">get_act_state_oneloop()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00105">OneloopGeneral::gui_ref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00106">OneloopGeneral::gui_state</a>, <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00082">OneloopGuidanceRef::jer</a>, <a class="el" href="oneloop__andi_8h_source.html#l00120">Gains3rdOrder::k1</a>, <a class="el" href="oneloop__andi_8h_source.html#l00121">Gains3rdOrder::k2</a>, <a class="el" href="oneloop__andi_8h_source.html#l00125">Gains2ndOrder::k2</a>, <a class="el" href="oneloop__andi_8h_source.html#l00122">Gains3rdOrder::k3</a>, <a class="el" href="oneloop__andi_8h_source.html#l00126">Gains2ndOrder::k3</a>, <a class="el" href="oneloop__andi_8c_source.html#l00436">k_att_e</a>, <a class="el" href="oneloop__andi_8c_source.html#l00438">k_head_e</a>, <a class="el" href="oneloop__andi_8c_source.html#l00440">k_pos_e</a>, <a class="el" href="low__pass__filter_8h_source.html#l00042">FirstOrderLowPass::last_out</a>, <a class="el" href="oneloop__andi_8c_source.html#l00420">lin_acc</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="oneloop__andi_8c_source.html#l00396">nu</a>, <a class="el" href="oneloop__andi_8c_source.html#l00099">num_thrusters_oneloop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00415">number_iter</a>, <a class="el" href="oneloop__andi_8c_source.html#l00384">oneloop_andi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00205">ONELOOP_ANDI_DEBUG_MODE</a>, <a class="el" href="oneloop__andi_8c_source.html#l01023">oneloop_andi_propagate_filters()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01129">oneloop_andi_RM()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="oneloop__andi_8h_source.html#l00079">OneloopGuidanceRef::pos</a>, <a class="el" href="oneloop__andi_8h_source.html#l00086">OneloopGuidanceState::pos</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00407">psi_des_deg</a>, <a class="el" href="oneloop__andi_8c_source.html#l00406">psi_des_rad</a>, <a class="el" href="oneloop__andi_8c_source.html#l00453">rates_filt_fo</a>, <a class="el" href="oneloop__andi_8c_source.html#l00448">ratio_u_un</a>, <a class="el" href="oneloop__andi_8h_source.html#l00107">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00108">OneloopGeneral::sta_state</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00908">stateGetSpeedNed_f()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01377">sum_g1g2_1l()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="oneloop__andi_8c_source.html#l00200">u_pref</a>, <a class="el" href="oneloop__andi_8c_source.html#l00387">use_increment</a>, <a class="el" href="oneloop__andi_8h_source.html#l00080">OneloopGuidanceRef::vel</a>, <a class="el" href="oneloop__andi_8h_source.html#l00087">OneloopGuidanceState::vel</a>, <a class="el" href="wls__alloc_8c_source.html#l00108">wls_alloc()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00194">Wu</a>, <a class="el" href="oneloop__andi_8c_source.html#l00188">Wv_wls</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="oneloop__andi_8c_source.html#l00331">a_thrust</a>, <a class="el" href="oneloop__andi_8h_source.html#l00098">OneloopGuidanceRef::acc</a>, <a class="el" href="oneloop__andi_8h_source.html#l00105">OneloopGuidanceState::acc</a>, <a class="el" href="oneloop__andi_8c_source.html#l00169">act_dynamics</a>, <a class="el" href="oneloop__andi_8c_source.html#l00175">act_max</a>, <a class="el" href="oneloop__andi_8c_source.html#l00181">act_min</a>, <a class="el" href="oneloop__andi_8c_source.html#l00330">actuator_state_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00326">andi_du</a>, <a class="el" href="oneloop__andi_8c_source.html#l00327">andi_du_n</a>, <a class="el" href="oneloop__andi_8h_source.html#l00054">ANDI_G_SCALING</a>, <a class="el" href="oneloop__andi_8h_source.html#l00035">ANDI_NUM_ACT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00048">ANDI_NUM_ACT_TOT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00052">ANDI_OUTPUTS</a>, <a class="el" href="oneloop__andi_8c_source.html#l00325">andi_u</a>, <a class="el" href="oneloop__andi_8c_source.html#l00356">ang_acc</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00039">AP_MODE_ATTITUDE_DIRECT</a>, <a class="el" href="oneloop__andi_8h_source.html#l00109">OneloopStabilizationRef::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00116">OneloopStabilizationState::att</a>, <a class="el" href="oneloop__andi_8h_source.html#l00111">OneloopStabilizationRef::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00118">OneloopStabilizationState::att_2d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00112">OneloopStabilizationRef::att_3d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00110">OneloopStabilizationRef::att_d</a>, <a class="el" href="oneloop__andi_8h_source.html#l00117">OneloopStabilizationState::att_d</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="oneloop__andi_8c_source.html#l00396">bwls_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l01556">calc_normalization()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00360">chirp_on</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="oneloop__andi_8h_source.html#l00057">CTRL_ANDI</a>, <a class="el" href="oneloop__andi_8h_source.html#l00058">CTRL_INDI</a>, <a class="el" href="oneloop__andi_8h_source.html#l00122">OneloopGeneral::ctrl_type</a>, <a class="el" href="oneloop__andi_8c_source.html#l00349">du_max_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00348">du_min_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00350">du_pref_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00814">ec_3rd()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00834">ec_3rd_att()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00338">eulers_zxy</a>, <a class="el" href="oneloop__andi_8c_source.html#l00337">eulers_zxy_des</a>, <a class="el" href="oneloop__andi_8c_source.html#l00402">filt_veloc_ned</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00556">float_vect_sum()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00395">g1g2_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00393">g2_1l</a>, <a class="el" href="oneloop__andi_8c_source.html#l00332">g2_ff</a>, <a class="el" href="oneloop__andi_8c_source.html#l00347">gamma_wls</a>, <a class="el" href="oneloop__andi_8c_source.html#l01441">get_act_state_oneloop()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00123">OneloopGeneral::gui_ref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00124">OneloopGeneral::gui_state</a>, <a class="el" href="oneloop__andi_8c_source.html#l00343">heading_manual</a>, <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00099">OneloopGuidanceRef::jer</a>, <a class="el" href="oneloop__andi_8h_source.html#l00138">Gains3rdOrder::k1</a>, <a class="el" href="oneloop__andi_8h_source.html#l00139">Gains3rdOrder::k2</a>, <a class="el" href="oneloop__andi_8h_source.html#l00140">Gains3rdOrder::k3</a>, <a class="el" href="oneloop__andi_8c_source.html#l00384">k_att_e</a>, <a class="el" href="oneloop__andi_8c_source.html#l00389">k_att_e_indi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00386">k_pos_e</a>, <a class="el" href="oneloop__andi_8c_source.html#l00390">k_pos_e_indi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00357">lin_acc</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="oneloop__andi_8c_source.html#l00328">nu</a>, <a class="el" href="oneloop__andi_8c_source.html#l00099">num_thrusters_oneloop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00352">number_iter</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="oneloop__andi_8c_source.html#l00316">oneloop_andi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00223">ONELOOP_ANDI_AC_HAS_PUSHER</a>, <a class="el" href="oneloop__andi_8c_source.html#l00218">ONELOOP_ANDI_DEBUG_MODE</a>, <a class="el" href="oneloop__andi_8c_source.html#l00241">ONELOOP_ANDI_MAX_PHI</a>, <a class="el" href="oneloop__andi_8c_source.html#l00247">ONELOOP_ANDI_MAX_THETA</a>, <a class="el" href="oneloop__andi_8c_source.html#l00237">ONELOOP_ANDI_PHI_IDX</a>, <a class="el" href="oneloop__andi_8c_source.html#l01043">oneloop_andi_propagate_filters()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00227">ONELOOP_ANDI_PUSHER_IDX</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00244">ONELOOP_ANDI_THETA_IDX</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00351">pitch_pref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00096">OneloopGuidanceRef::pos</a>, <a class="el" href="oneloop__andi_8h_source.html#l00103">OneloopGuidanceState::pos</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="oneloop__andi_8c_source.html#l00341">psi_des_deg</a>, <a class="el" href="oneloop__andi_8c_source.html#l00340">psi_des_rad</a>, <a class="el" href="rc__datalink_8h_source.html#l00045">RADIO_AUX4</a>, <a class="el" href="rc__datalink_8h_source.html#l00047">RADIO_AUX5</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="oneloop__andi_8c_source.html#l00403">rates_filt_bt</a>, <a class="el" href="oneloop__andi_8c_source.html#l00397">ratio_u_un</a>, <a class="el" href="oneloop__andi_8h_source.html#l00125">OneloopGeneral::sta_ref</a>, <a class="el" href="oneloop__andi_8h_source.html#l00126">OneloopGeneral::sta_state</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01459">sum_g1g2_1l()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="oneloop__andi_8c_source.html#l00250">theta_pref_max</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, <a class="el" href="oneloop__andi_8c_source.html#l00213">u_pref</a>, <a class="el" href="oneloop__andi_8c_source.html#l00319">use_increment</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, <a class="el" href="oneloop__andi_8h_source.html#l00097">OneloopGuidanceRef::vel</a>, <a class="el" href="oneloop__andi_8h_source.html#l00104">OneloopGuidanceState::vel</a>, <a class="el" href="wls__alloc_8c_source.html#l00108">wls_alloc()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00207">Wu</a>, <a class="el" href="oneloop__andi_8c_source.html#l00201">Wv_wls</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01479">oneloop_from_nav()</a>, and <a class="el" href="stabilization__oneloop_8c_source.html#l00035">stabilization_attitude_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01607">oneloop_from_nav()</a>, and <a class="el" href="stabilization__oneloop_8c_source.html#l00035">stabilization_attitude_run()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1100,56 +1197,56 @@ k3</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="oneloop__andi_8h_a86a6264b40528bbf108446e1081a2ff0_cgraph.png" border="0" usemap="#aoneloop__andi_8h_a86a6264b40528bbf108446e1081a2ff0_cgraph" alt=""/></div>
 <map name="aoneloop__andi_8h_a86a6264b40528bbf108446e1081a2ff0_cgraph" id="aoneloop__andi_8h_a86a6264b40528bbf108446e1081a2ff0_cgraph">
-<area shape="rect" title="Main function that runs the controller and performs control allocation." alt="" coords="5,1188,143,1214"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="215,174,361,201"/>
-<area shape="rect" href="oneloop__andi_8c.html#a951cb266b45fd50fd93ddf6b4624d153" title="Error Controller Definition for 2rd order system." alt="" coords="255,656,321,682"/>
-<area shape="rect" href="oneloop__andi_8c.html#a30a9db0f462cea6f64387df28700b52d" title="Error Controller Definition for 3rd order system." alt="" coords="255,706,321,733"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e2ff436265e81e75f7d74580f7da63e" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="243,934,333,961"/>
-<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="673,1010,797,1037"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="465,808,586,834"/>
-<area shape="rect" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="196,1213,380,1240"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="203,1340,373,1366"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="232,402,344,429"/>
-<area shape="rect" href="oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="197,1496,379,1538"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6d4db60ee32c86bf768d4422e524c993" title="Function to generate the reference signals for the oneloop controller." alt="" coords="219,1162,357,1189"/>
-<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="191,1562,385,1589"/>
-<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="204,1613,372,1640"/>
-<area shape="rect" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="210,1664,366,1690"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="234,1714,342,1741"/>
-<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="247,1765,329,1792"/>
-<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="665,352,805,378"/>
-<area shape="rect" href="oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="704,1061,767,1088"/>
-<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="433,1416,617,1442"/>
-<area shape="rect" href="oneloop__andi_8c.html#a942b91944e3bab77745b6c47ae0c6f2f" title=" " alt="" coords="482,352,569,378"/>
-<area shape="rect" href="oneloop__andi_8c.html#a022786dd61e329cc9259492f11c1ba08" title="Error Controller Gain Design." alt="" coords="482,402,569,429"/>
-<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="470,453,581,480"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad313d7996a86e13a2f0c1352473a2981" title=" " alt="" coords="482,504,569,530"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac2b96351213227cc6fca5e2632dac8b6" title=" " alt="" coords="482,554,569,581"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="470,605,581,632"/>
-<area shape="rect" href="oneloop__andi_8c.html#a10ce6b4c1e233def8ac07ea0c4466890" title=" " alt="" coords="482,656,569,682"/>
-<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="470,706,581,733"/>
-<area shape="rect" href="oneloop__andi_8c.html#af42f6349829436d09187fb9dabe1b74d" title=" " alt="" coords="477,48,574,74"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="477,98,574,125"/>
-<area shape="rect" href="oneloop__andi_8c.html#ade145c37e6deff69377d9d45c7969db0" title=" " alt="" coords="477,149,574,176"/>
-<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="477,200,574,226"/>
-<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="477,250,574,277"/>
-<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="483,301,568,328"/>
-<area shape="rect" href="oneloop__andi_8c.html#ab4593fc438daf954a267626af1124263" title="Function that calculates the model prediction for the complementary filter." alt="" coords="477,1533,573,1560"/>
-<area shape="rect" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="450,1584,601,1610"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="445,1634,605,1661"/>
-<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="450,1686,601,1727"/>
-<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="455,1467,595,1508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="465,1314,586,1341"/>
-<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="458,1365,593,1392"/>
-<area shape="rect" href="oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="477,1010,574,1037"/>
-<area shape="rect" href="oneloop__andi_8c.html#aee2673b358d1bee44c3dbc56bfcb12c7" title="Reference Model Definition for 2nd order system." alt="" coords="490,1112,561,1138"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="475,1061,576,1088"/>
-<area shape="rect" href="oneloop__andi_8c.html#a7ec8f7884b0a2f587cd439989be4aaf3" title="Reference Model Definition for 3rd order system." alt="" coords="491,1264,559,1290"/>
-<area shape="rect" href="oneloop__andi_8c.html#a20ab7b965735469de2cca4dbe192aa0f" title="Reference Model Definition for 3rd order system with attitude conversion functions." alt="" coords="462,1162,589,1189"/>
-<area shape="rect" href="oneloop__andi_8c.html#acae0258231eeae5ebf534d6e6b8b37b4" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="476,1213,575,1240"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="446,1752,605,1778"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="439,1802,612,1829"/>
-<area shape="rect" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="445,1853,606,1880"/>
+<area shape="rect" title="Main function that runs the controller and performs control allocation." alt="" coords="5,1171,143,1197"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="215,449,361,476"/>
+<area shape="rect" href="oneloop__andi_8c.html#a30a9db0f462cea6f64387df28700b52d" title="Error Controller Definition for 3rd order system." alt="" coords="255,500,321,527"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e2ff436265e81e75f7d74580f7da63e" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="243,1145,333,1172"/>
+<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="686,943,810,969"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="465,1095,586,1121"/>
+<area shape="rect" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="196,1196,380,1223"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="203,1247,373,1273"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="232,233,344,260"/>
+<area shape="rect" href="oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="197,1391,379,1433"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6d4db60ee32c86bf768d4422e524c993" title="Function to generate the reference signals for the oneloop controller." alt="" coords="219,841,357,868"/>
+<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="191,1457,385,1484"/>
+<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="204,1508,372,1535"/>
+<area shape="rect" href="oneloop__andi_8c.html#a842e4d02438726712a762e685d7cacb5" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="234,1559,342,1585"/>
+<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="247,1689,329,1716"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="678,233,818,260"/>
+<area shape="rect" href="oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="717,993,779,1020"/>
+<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="433,1247,617,1273"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="470,157,581,184"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="470,208,581,235"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="470,259,581,285"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="470,309,581,336"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="470,360,581,387"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="477,411,574,437"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="477,5,574,32"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="477,56,574,83"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="483,107,568,133"/>
+<area shape="rect" href="oneloop__andi_8c.html#a479993531b5c84f098d5ae303d1b1dc2" title="Function that calculates the model prediction for the complementary filter." alt="" coords="477,1297,573,1324"/>
+<area shape="rect" href="group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int)." alt="" coords="447,1348,604,1375"/>
+<area shape="rect" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="450,1399,601,1425"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="452,1449,599,1476"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="445,1500,605,1527"/>
+<area shape="rect" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="447,1551,603,1577"/>
+<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="450,1602,601,1643"/>
+<area shape="rect" href="group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="670,1399,826,1425"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="672,1449,824,1476"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="665,1500,831,1527"/>
+<area shape="rect" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="667,1551,829,1577"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac26c34025ecb029941bb42302325ca62" title=" " alt="" coords="483,639,567,665"/>
+<area shape="rect" href="group__math__algebra__float.html#gad3e4fbe2ede8f068d46f7c617227e3f1" title="||a||" alt="" coords="462,689,589,716"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="465,740,586,767"/>
+<area shape="rect" href="oneloop__andi_8c.html#a4fd32c2d7c9698c6b91eb13728483069" title="Function to calculate corrections for sideslip." alt="" coords="442,791,609,817"/>
+<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="458,588,593,615"/>
+<area shape="rect" href="oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="477,1044,574,1071"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="475,892,576,919"/>
+<area shape="rect" href="oneloop__andi_8c.html#a20ab7b965735469de2cca4dbe192aa0f" title="Reference Model Definition for 3rd order system with attitude conversion functions." alt="" coords="462,943,589,969"/>
+<area shape="rect" href="oneloop__andi_8c.html#acae0258231eeae5ebf534d6e6b8b37b4" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="476,993,575,1020"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="446,1668,605,1695"/>
+<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="439,1719,612,1745"/>
+<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="457,1769,594,1796"/>
 </map>
 </div>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1164,6 +1261,24 @@ k3</td>
 <area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="5,56,193,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a78bf6173807834294cbb3da36e379cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bf6173807834294cbb3da36e379cc0">&#9670;&nbsp;</a></span>oneloop_andi_set_failsafe_setpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oneloop_andi_set_failsafe_setpoint </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1185,9 +1300,9 @@ k3</td>
 
 <p>Function that maps navigation inputs to the oneloop controller for the generated autopilot. </p>
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01479">1479</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l01607">1607</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00127">RotorcraftNavigation::carrot</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00137">RotorcraftNavigation::climb</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00139">RotorcraftNavigation::nav_altitude</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00100">NAV_SETPOINT_MODE_POS</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00101">NAV_SETPOINT_MODE_SPEED</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00094">NAV_VERTICAL_MODE_ALT</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00093">NAV_VERTICAL_MODE_CLIMB</a>, <a class="el" href="oneloop__andi_8c_source.html#l01098">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00123">RotorcraftNavigation::setpoint_mode</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00128">RotorcraftNavigation::speed</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00220">SPEED_FLOAT_OF_BFP</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00122">RotorcraftNavigation::vertical_mode</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00137">RotorcraftNavigation::climb</a>, <a class="el" href="oneloop__andi_8h_source.html#l00122">OneloopGeneral::ctrl_type</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00139">RotorcraftNavigation::nav_altitude</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00100">NAV_SETPOINT_MODE_POS</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00101">NAV_SETPOINT_MODE_SPEED</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00094">NAV_VERTICAL_MODE_ALT</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00093">NAV_VERTICAL_MODE_CLIMB</a>, <a class="el" href="oneloop__andi_8c_source.html#l00316">oneloop_andi</a>, <a class="el" href="oneloop__andi_8c_source.html#l01126">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00123">RotorcraftNavigation::setpoint_mode</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00128">RotorcraftNavigation::speed</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00220">SPEED_FLOAT_OF_BFP</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00126">RotorcraftNavigation::target</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00122">RotorcraftNavigation::vertical_mode</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1195,62 +1310,88 @@ k3</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="oneloop__andi_8h_a6736554ab99b39f3562226f60b49efc8_cgraph.png" border="0" usemap="#aoneloop__andi_8h_a6736554ab99b39f3562226f60b49efc8_cgraph" alt=""/></div>
 <map name="aoneloop__andi_8h_a6736554ab99b39f3562226f60b49efc8_cgraph" id="aoneloop__andi_8h_a6736554ab99b39f3562226f60b49efc8_cgraph">
-<area shape="rect" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="5,1206,148,1233"/>
-<area shape="rect" href="oneloop__andi_8c.html#acc520a1793d4fa59654715e75b139ccb" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="196,835,347,862"/>
-<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="203,1206,340,1233"/>
-<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="408,1597,576,1623"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="419,911,565,938"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="669,983,790,1010"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="436,502,548,529"/>
-<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="452,249,532,275"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="438,861,546,887"/>
-<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="869,477,1009,503"/>
-<area shape="rect" href="oneloop__andi_8c.html#a942b91944e3bab77745b6c47ae0c6f2f" title=" " alt="" coords="686,426,773,453"/>
-<area shape="rect" href="oneloop__andi_8c.html#a022786dd61e329cc9259492f11c1ba08" title="Error Controller Gain Design." alt="" coords="686,477,773,503"/>
-<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="674,527,785,554"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad313d7996a86e13a2f0c1352473a2981" title=" " alt="" coords="686,578,773,605"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac2b96351213227cc6fca5e2632dac8b6" title=" " alt="" coords="686,629,773,655"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="674,679,785,706"/>
-<area shape="rect" href="oneloop__andi_8c.html#a10ce6b4c1e233def8ac07ea0c4466890" title=" " alt="" coords="686,730,773,757"/>
-<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="674,781,785,807"/>
-<area shape="rect" href="oneloop__andi_8c.html#af42f6349829436d09187fb9dabe1b74d" title=" " alt="" coords="681,122,778,149"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="681,173,778,199"/>
-<area shape="rect" href="oneloop__andi_8c.html#ade145c37e6deff69377d9d45c7969db0" title=" " alt="" coords="681,223,778,250"/>
-<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="681,274,778,301"/>
-<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="681,325,778,351"/>
-<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="687,375,772,402"/>
-<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="659,5,800,47"/>
-<area shape="rect" href="low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="638,71,821,98"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="649,831,809,858"/>
-<area shape="rect" href="oneloop__andi_8c.html#a951cb266b45fd50fd93ddf6b4624d153" title="Error Controller Definition for 2rd order system." alt="" coords="459,1181,525,1207"/>
-<area shape="rect" href="oneloop__andi_8c.html#a30a9db0f462cea6f64387df28700b52d" title="Error Controller Definition for 3rd order system." alt="" coords="459,1231,525,1258"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e2ff436265e81e75f7d74580f7da63e" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="447,1394,537,1421"/>
-<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="877,1369,1001,1395"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="669,1673,790,1699"/>
-<area shape="rect" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="400,1546,584,1573"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="407,962,577,989"/>
-<area shape="rect" href="oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="401,1064,583,1105"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6d4db60ee32c86bf768d4422e524c993" title="Function to generate the reference signals for the oneloop controller." alt="" coords="423,1343,561,1370"/>
-<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="395,1130,589,1157"/>
-<area shape="rect" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="414,1445,570,1471"/>
-<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="451,1013,533,1039"/>
-<area shape="rect" href="oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="908,1419,971,1446"/>
-<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="637,933,821,959"/>
-<area shape="rect" href="oneloop__andi_8c.html#ab4593fc438daf954a267626af1124263" title="Function that calculates the model prediction for the complementary filter." alt="" coords="681,1034,777,1061"/>
-<area shape="rect" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="654,1085,805,1111"/>
-<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="654,1136,805,1177"/>
-<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="659,1201,799,1243"/>
-<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="662,1470,797,1497"/>
-<area shape="rect" href="oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="681,1369,778,1395"/>
-<area shape="rect" href="oneloop__andi_8c.html#aee2673b358d1bee44c3dbc56bfcb12c7" title="Reference Model Definition for 2nd order system." alt="" coords="694,1521,765,1547"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="679,1419,780,1446"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="643,1723,816,1750"/>
+<area shape="rect" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="5,831,148,858"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="856,324,1007,351"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="196,831,333,858"/>
+<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="395,1379,563,1406"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="1055,780,1200,807"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="1067,263,1188,290"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="1071,1034,1183,1060"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="1087,387,1167,414"/>
+<area shape="rect" href="oneloop__andi_8c.html#a842e4d02438726712a762e685d7cacb5" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="1073,831,1181,858"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1456,1008,1596,1035"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="1273,1236,1383,1263"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="1273,831,1383,858"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="1273,882,1383,908"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="1273,932,1383,959"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="1273,983,1383,1010"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="1279,1034,1377,1060"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="1279,1084,1377,1111"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="1279,1135,1377,1162"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="1285,1186,1371,1212"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="1257,380,1399,421"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="1248,594,1408,620"/>
+<area shape="rect" href="oneloop__andi_8c.html#a30a9db0f462cea6f64387df28700b52d" title="Error Controller Definition for 3rd order system." alt="" coords="446,856,511,883"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e2ff436265e81e75f7d74580f7da63e" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="433,552,524,579"/>
+<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="869,451,993,478"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="655,603,777,630"/>
+<area shape="rect" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="387,1118,571,1144"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="394,958,563,984"/>
+<area shape="rect" href="oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="387,1052,570,1093"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6d4db60ee32c86bf768d4422e524c993" title="Function to generate the reference signals for the oneloop controller." alt="" coords="410,248,547,275"/>
+<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="381,704,576,731"/>
+<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="437,755,520,782"/>
+<area shape="rect" href="oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="900,375,963,402"/>
+<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="624,907,808,934"/>
+<area shape="rect" href="oneloop__andi_8c.html#a479993531b5c84f098d5ae303d1b1dc2" title="Function that calculates the model prediction for the complementary filter." alt="" coords="668,1227,764,1254"/>
+<area shape="rect" href="group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int)." alt="" coords="637,1278,795,1304"/>
+<area shape="rect" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="641,1008,791,1035"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="643,1059,789,1086"/>
+<area shape="rect" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="638,1110,794,1136"/>
+<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="641,1161,791,1202"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac26c34025ecb029941bb42302325ca62" title=" " alt="" coords="674,198,758,224"/>
+<area shape="rect" href="group__math__algebra__float.html#gad3e4fbe2ede8f068d46f7c617227e3f1" title="||a||" alt="" coords="653,46,779,72"/>
+<area shape="rect" href="oneloop__andi_8c.html#a4fd32c2d7c9698c6b91eb13728483069" title="Function to calculate corrections for sideslip." alt="" coords="633,96,799,123"/>
+<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="649,147,783,174"/>
+<area shape="rect" href="oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="667,451,765,478"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="665,350,767,376"/>
+<area shape="rect" href="oneloop__andi_8c.html#a20ab7b965735469de2cca4dbe192aa0f" title="Reference Model Definition for 3rd order system with attitude conversion functions." alt="" coords="653,400,779,427"/>
+<area shape="rect" href="oneloop__andi_8c.html#acae0258231eeae5ebf534d6e6b8b37b4" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="667,248,765,275"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="637,704,795,731"/>
+<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="629,1379,803,1406"/>
+<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="647,755,785,782"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a8eff0dfbc28e29186dc16c1c313389d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eff0dfbc28e29186dc16c1c313389d4">&#9670;&nbsp;</a></span>A_chirp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float A_chirp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00367">367</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
+
+</div>
+</div>
 <a id="ae22fe28f936daf28c5b72fa02501a182"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae22fe28f936daf28c5b72fa02501a182">&#9670;&nbsp;</a></span>act_state_filt_vect_1l</h2>
 
@@ -1293,9 +1434,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00398">398</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00330">330</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01453">calc_model()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01359">get_act_state_oneloop()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01048">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01129">oneloop_andi_RM()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00331">send_oneloop_andi()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01377">sum_g1g2_1l()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01574">calc_model()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01441">get_act_state_oneloop()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00427">send_oneloop_andi()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01459">sum_g1g2_1l()</a>.</p>
 
 </div>
 </div>
@@ -1319,9 +1460,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00394">394</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00326">326</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01048">oneloop_andi_init()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
 
 </div>
 </div>
@@ -1345,9 +1486,137 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00393">393</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00325">325</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01359">get_act_state_oneloop()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01048">oneloop_andi_init()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01441">get_act_state_oneloop()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01645">oneloop_andi_sideslip()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00485">send_oneloop_debug()</a>.</p>
+
+</div>
+</div>
+<a id="a98988d6f3db02b846d1116c3bcb79d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98988d6f3db02b846d1116c3bcb79d3a">&#9670;&nbsp;</a></span>chirp_axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> chirp_axis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00368">368</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+</div>
+</div>
+<a id="a7697e638b570277713d5651ecdcaee30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7697e638b570277713d5651ecdcaee30">&#9670;&nbsp;</a></span>chirp_on</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chirp_on</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00360">360</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01764">chirp_call()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
+
+</div>
+</div>
+<a id="a2a570f6e547821d329abdf88fa2f43f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a570f6e547821d329abdf88fa2f43f2">&#9670;&nbsp;</a></span>eulers_zxy_des</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> eulers_zxy_des</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00332">332</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01126">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
+
+</div>
+</div>
+<a id="a63d55623669a5839d1a4cd063bd5f693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d55623669a5839d1a4cd063bd5f693">&#9670;&nbsp;</a></span>f0_chirp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float f0_chirp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00364">364</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
+
+</div>
+</div>
+<a id="a84d0e54464765750706109510a0307b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d0e54464765750706109510a0307b5">&#9670;&nbsp;</a></span>f1_chirp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float f1_chirp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00365">365</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
 
 </div>
 </div>
@@ -1377,6 +1646,32 @@ k3</td>
 
 </div>
 </div>
+<a id="a843142192ad221c1433825d72ee73e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843142192ad221c1433825d72ee73e3c">&#9670;&nbsp;</a></span>fwd_sideslip_gain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float fwd_sideslip_gain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00284">284</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01645">oneloop_andi_sideslip()</a>.</p>
+
+</div>
+</div>
 <a id="a352f06b221e04ab07375357a9eae29db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a352f06b221e04ab07375357a9eae29db">&#9670;&nbsp;</a></span>g1g2_1l</h2>
 
@@ -1397,9 +1692,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00446">446</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00395">395</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01453">calc_model()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01048">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00318">send_eff_mat_g_oneloop_andi()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01377">sum_g1g2_1l()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01574">calc_model()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00414">send_eff_mat_g_oneloop_andi()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01459">sum_g1g2_1l()</a>.</p>
 
 </div>
 </div>
@@ -1425,7 +1720,33 @@ k3</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00001">1</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00829">guidance_indi_get_liftd()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00829">guidance_indi_get_liftd()</a>.</p>
+
+</div>
+</div>
+<a id="aa3ffa0ba910099cbd2a2ff812ffed456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ffa0ba910099cbd2a2ff812ffed456">&#9670;&nbsp;</a></span>heading_manual</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool heading_manual</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00343">343</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
 
 </div>
 </div>
@@ -1449,9 +1770,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
 
 </div>
 </div>
@@ -1475,9 +1796,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01129">oneloop_andi_RM()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
 
 </div>
 </div>
@@ -1501,10 +1822,6 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
-
 </div>
 </div>
 <a id="a51856ce2c16bf83a66868f87746201d3"></a>
@@ -1526,10 +1843,6 @@ k3</td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01129">oneloop_andi_RM()</a>.</p>
 
 </div>
 </div>
@@ -1553,9 +1866,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
 
 </div>
 </div>
@@ -1579,9 +1892,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01129">oneloop_andi_RM()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
 
 </div>
 </div>
@@ -1605,9 +1918,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00396">396</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00328">328</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01048">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00331">send_oneloop_andi()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00427">send_oneloop_andi()</a>.</p>
 
 </div>
 </div>
@@ -1631,9 +1944,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00356">356</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00313">313</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01098">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01048">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01129">oneloop_andi_RM()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00331">send_oneloop_andi()</a>, and <a class="el" href="stabilization__oneloop_8c_source.html#l00035">stabilization_attitude_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01764">chirp_call()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01126">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01074">oneloop_andi_init()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01043">oneloop_andi_propagate_filters()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01607">oneloop_from_nav()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00452">send_guidance_oneloop_andi()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00427">send_oneloop_andi()</a>, and <a class="el" href="stabilization__oneloop_8c_source.html#l00035">stabilization_attitude_run()</a>.</p>
 
 </div>
 </div>
@@ -1657,9 +1970,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1683,9 +1996,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1709,9 +2022,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1735,9 +2048,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1761,9 +2074,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1787,9 +2100,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1813,9 +2126,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1839,9 +2152,9 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00420">420</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00369">369</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00920">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00887">init_poles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l00919">init_controller()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00872">init_poles()</a>.</p>
 
 </div>
 </div>
@@ -1865,9 +2178,87 @@ k3</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00407">407</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00341">341</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01098">oneloop_andi_enter()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01126">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
+
+</div>
+</div>
+<a id="a410282f6636e9807befe44fcf71fc0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410282f6636e9807befe44fcf71fc0bd">&#9670;&nbsp;</a></span>psi_des_rad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float psi_des_rad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00340">340</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01126">oneloop_andi_enter()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01279">oneloop_andi_run()</a>.</p>
+
+</div>
+</div>
+<a id="a534838907113fdde7c5524c0eee03930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534838907113fdde7c5524c0eee03930">&#9670;&nbsp;</a></span>t_chirp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float t_chirp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00366">366</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01764">chirp_call()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01700">chirp_pos()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
+
+</div>
+</div>
+<a id="ada3e06b818acab0fe0c5cf08bd9ed694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3e06b818acab0fe0c5cf08bd9ed694">&#9670;&nbsp;</a></span>yaw_stick_in_auto</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool yaw_stick_in_auto</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oneloop__andi_8c_source.html#l00344">344</a> of file <a class="el" href="oneloop__andi_8c_source.html">oneloop_andi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01158">oneloop_andi_RM()</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +2268,7 @@ k3</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_b5c66705c4237c797173b8bf768a0b10.html">oneloop</a></li><li class="navelem"><a class="el" href="oneloop__andi_8h.html">oneloop_andi.h</a></li>
-    <li class="footer">Generated on Tue Jun 18 2024 09:24:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 18 2024 10:50:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
