@@ -1,6 +1,5 @@
 var NAVTREEINDEX171 =
 {
-"paparazzi_messages.html#AHRS_QUAT_INT":[2,0,152],
 "paparazzi_messages.html#AHRS_REF_QUAT":[2,0,164],
 "paparazzi_messages.html#AIRCRAFTS":[2,2,2],
 "paparazzi_messages.html#AIRCRAFTS_REQ":[2,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#RAW_DATALINK":[2,2,27],
 "paparazzi_messages.html#RC":[2,0,96],
 "paparazzi_messages.html#RC_3CH":[2,1,33],
-"paparazzi_messages.html#RC_3CH_":[2,0,47]
+"paparazzi_messages.html#RC_3CH_":[2,0,47],
+"paparazzi_messages.html#RC_4CH":[2,1,34]
 };

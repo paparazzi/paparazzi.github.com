@@ -1,6 +1,5 @@
 var NAVTREEINDEX200 =
 {
-"servos__nil_8h.html#a3f3dc2facc39f9d40f3fae4b4c9f3d93":[12,0,1,0,0,2,8,3],
 "servos__nil_8h.html#a49853fbbf7f4c5d50207763da45af5ad":[12,0,1,0,0,2,8,0],
 "servos__nil_8h_source.html":[12,0,1,0,0,2,8],
 "settings_8c.html":[12,0,1,0,6,13,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX200 =
 "sim_2modules_2actuators_2actuators__dshot__arch_8c_source.html":[12,0,1,0,0,2,1,0,0],
 "sim_2modules_2actuators_2actuators__dshot__arch_8h.html":[12,0,1,0,0,2,1,0,1],
 "sim_2modules_2actuators_2actuators__dshot__arch_8h_source.html":[12,0,1,0,0,2,1,0,1],
-"sim_2modules_2actuators_2actuators__dualpwm__arch_8c.html":[12,0,1,0,0,2,1,0,2]
+"sim_2modules_2actuators_2actuators__dualpwm__arch_8c.html":[12,0,1,0,0,2,1,0,2],
+"sim_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a40854a0e0bb6575b76e4bb7d02d24c42":[12,0,1,0,0,2,1,0,2,0]
 };

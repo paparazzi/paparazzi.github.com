@@ -1,6 +1,5 @@
 var NAVTREEINDEX89 =
 {
-"imu__mpu6000__hmc5883_8h.html#structImuMpu6000Hmc5883":[12,0,1,0,6,36,27,0],
 "imu__mpu6000__hmc5883_8h_source.html":[12,0,1,0,6,36,27],
 "imu__mpu60x0__i2c_8c.html":[12,0,1,0,6,36,28],
 "imu__mpu60x0__i2c_8c.html#a06d943f6ded5d400bb6cbb7dec54d00f":[12,0,1,0,6,36,28,2],
@@ -90,12 +89,12 @@ var NAVTREEINDEX89 =
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,35,0,5],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,33,0,5],
-"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,35,0,1],
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,33,0,1],
+"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,35,0,1],
 "imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,36,35,1],
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,36,35,4],
-"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,36,33,0,2],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,36,35,0,2],
+"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,36,33,0,2],
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,35,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,36,35,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,35,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX89 =
 "input__capture__arch_8c.html#a16eefa9a6dbd30560e5f63a1ffb39a2a":[12,0,1,0,0,0,0,9,22],
 "input__capture__arch_8c.html#a1fc9b007197f3888e1f7864246105d2d":[12,0,1,0,0,0,0,9,19],
 "input__capture__arch_8c.html#a29557bafbd2146880ddd056f63d509cd":[12,0,1,0,0,0,0,9,5],
-"input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190":[12,0,1,0,0,0,0,9,28]
+"input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190":[12,0,1,0,0,0,0,9,28],
+"input__capture__arch_8c.html#a2e227042d594efcadde1da621fdda34b":[12,0,1,0,0,0,0,9,6]
 };
