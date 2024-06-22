@@ -2,7 +2,9 @@ var tag__tracking_8c =
 [
     [ "tag_tracking", "tag__tracking_8c.html#structtag__tracking", [
       [ "body_to_cam", "tag__tracking_8c.html#ac35b9c7cfded1403880e40939ba553e5", null ],
+      [ "body_to_cam_quat", "tag__tracking_8c.html#a9b1840c10d91b56a2c8c78b2826d4da5", null ],
       [ "cam_pos", "tag__tracking_8c.html#a6c4711d5f23390d04d135d7796dc3bef", null ],
+      [ "cam_to_tag_quat", "tag__tracking_8c.html#af4ac18339da57d472f8ede48979d982d", null ],
       [ "id", "tag__tracking_8c.html#ae21518f75ec3279579a7087b41721e73", null ],
       [ "meas", "tag__tracking_8c.html#a3005d5a49b792e6400c167f8dca520bc", null ],
       [ "timeout", "tag__tracking_8c.html#a600661383f86fa46bd01eb668badd704", null ],
@@ -31,7 +33,6 @@ var tag__tracking_8c =
     [ "TAG_TRACKING_MAX_OFFSET", "tag__tracking_8c.html#adfb4b4954b6e0f332bd0077ff95e5efb", null ],
     [ "TAG_TRACKING_MAX_SPEED", "tag__tracking_8c.html#ab968f2e6123650069366c49a9ce050c8", null ],
     [ "TAG_TRACKING_MAX_VZ", "tag__tracking_8c.html#a3487d5af5334f474e0fa9fbec9b02f32", null ],
-    [ "TAG_TRACKING_NB_WP_MAX", "tag__tracking_8c.html#aff29581bbb449d121e0f772ed111b0ee", null ],
     [ "TAG_TRACKING_P0_POS", "tag__tracking_8c.html#ab39d341debcf8477183b021ba1a476bf", null ],
     [ "TAG_TRACKING_P0_SPEED", "tag__tracking_8c.html#ae2efb8f1e83fc3ce1c53d2bc43cb4dec", null ],
     [ "TAG_TRACKING_PREDICT_TIME", "tag__tracking_8c.html#a5541bf3c467a4f3802f600dce0d41c5d", null ],
@@ -41,7 +42,8 @@ var tag__tracking_8c =
     [ "TAG_UNUSED_ID", "tag__tracking_8c.html#ac4c57db43412d9f966729aaf862201b6", null ],
     [ "tag_track_cb", "tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c", null ],
     [ "tag_tracking_compute_speed", "tag__tracking_8c.html#aee8b9e7c75b96e12da36873bb5537078", null ],
-    [ "tag_tracking_get", "tag__tracking_8c.html#adb757135cb0a3f138af326468d29ce88", null ],
+    [ "tag_tracking_get", "tag__tracking_8c.html#a4112efb3e59711c1958fb0d8f1049e0b", null ],
+    [ "tag_tracking_get_heading", "tag__tracking_8c.html#af150cf7b0bc994c05d0cc6853759ab52", null ],
     [ "tag_tracking_init", "tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f", null ],
     [ "tag_tracking_parse_target_pos", "tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b", null ],
     [ "tag_tracking_propagate", "tag__tracking_8c.html#a515d25df867da9a8b951ae75aa23aa56", null ],
@@ -54,8 +56,9 @@ var tag__tracking_8c =
     [ "tag_tracking_set_predict_time", "tag__tracking_8c.html#ab14b8d7feae9152b2331e53139124cb5", null ],
     [ "tag_tracking_set_setting_id", "tag__tracking_8c.html#a65b701898141ca963fe29eba4d633194", null ],
     [ "update_tag_position", "tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0", null ],
-    [ "update_wp", "tag__tracking_8c.html#aa7608b3930af273915683de96495138d", null ],
+    [ "update_wp", "tag__tracking_8c.html#a9ae894efab232670d0c7b2845b3061fd", null ],
     [ "dummy", "tag__tracking_8c.html#a747f62b615967c2d858bd5999b66b839", null ],
+    [ "rot_x_quat", "tag__tracking_8c.html#ae6af17c827da0a6fa3ceab3a0e956cdd", null ],
     [ "tag_infos", "tag__tracking_8c.html#ab6688bcb3d8aff669c92ac75500271fa", null ],
     [ "tag_track_dt", "tag__tracking_8c.html#a1cb1d6638c8a8567de4dbe5df87ff389", null ],
     [ "tag_track_ev", "tag__tracking_8c.html#a13fbc2b65fbb89f5ab9ce18d181200a7", null ],
@@ -64,5 +67,6 @@ var tag__tracking_8c =
     [ "tag_tracking_motion_type", "tag__tracking_8c.html#a570bc36d7f494d33356053882b1af7fa", null ],
     [ "tag_tracking_predict_time", "tag__tracking_8c.html#a431b69531d008b1b33f1f7f2f1184838", null ],
     [ "tag_tracking_setting_id", "tag__tracking_8c.html#a113efded94d864ee818b0a82cb8980d4", null ],
-    [ "wp_track", "tag__tracking_8c.html#a57e1b5ecd255706f976ed538f37fd77a", null ]
+    [ "tag_tracking_wps_len", "tag__tracking_8c.html#a8d6fcda931ff4c9a16988fb21ac8d4fe", null ],
+    [ "wp_track", "tag__tracking_8c.html#ae72eea1f9c7d86bc57b90ec78b7d20e9", null ]
 ];

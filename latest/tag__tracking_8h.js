@@ -1,15 +1,18 @@
 var tag__tracking_8h =
 [
     [ "tag_tracking_public", "tag__tracking_8h.html#structtag__tracking__public", [
+      [ "body_to_tag_quat", "tag__tracking_8h.html#ade507e433154df25b6abff0d2a4faff8", null ],
       [ "kp", "tag__tracking_8h.html#afdd7c197c5d3ebc0226e5ceedfc2dd15", null ],
       [ "kpz", "tag__tracking_8h.html#a30661dda691fe1c38677a47a7f47b2a4", null ],
       [ "motion_type", "tag__tracking_8h.html#aee5aa9fdf745390d124b3d4593c1e071", null ],
+      [ "ned_to_tag_quat", "tag__tracking_8h.html#a0b03b6eadc997ef667825c4ba3a431e7", null ],
       [ "pos", "tag__tracking_8h.html#a5605ca401fc30ae478d6674b53f08259", null ],
       [ "predict_time", "tag__tracking_8h.html#aae56409391618c1d67ea899592301cb8", null ],
       [ "speed", "tag__tracking_8h.html#af1df379f845f54b257ae2740e23fc2dd", null ],
       [ "speed_cmd", "tag__tracking_8h.html#ab540c4ce781e93ea9d5d0562def79467", null ],
       [ "status", "tag__tracking_8h.html#a68cc840f504639c4382c67baf0a3199d", null ]
     ] ],
+    [ "TAG_TRACKING_ANY", "tag__tracking_8h.html#a3e3d776a7dd8e6d213ec90b04107a6f6", null ],
     [ "TAG_TRACKING_DISABLE", "tag__tracking_8h.html#a4b17d6f696029973f473ffb0d52f15f6", null ],
     [ "TAG_TRACKING_FIXED_POS", "tag__tracking_8h.html#a9580cf81291ed5b5d09c2f9763534117", null ],
     [ "TAG_TRACKING_LOST", "tag__tracking_8h.html#ae501bda3616ad876220a41b5806815bf", null ],
@@ -18,7 +21,8 @@ var tag__tracking_8h =
     [ "TAG_TRACKING_RUNNING", "tag__tracking_8h.html#a58c7a8f18e62d73134e7b9f66aa57e9d", null ],
     [ "TAG_TRACKING_SEARCHING", "tag__tracking_8h.html#ade0c5150612fe61b105a8f6a940290d5", null ],
     [ "tag_tracking_compute_speed", "tag__tracking_8h.html#aee8b9e7c75b96e12da36873bb5537078", null ],
-    [ "tag_tracking_get", "tag__tracking_8h.html#adb757135cb0a3f138af326468d29ce88", null ],
+    [ "tag_tracking_get", "tag__tracking_8h.html#a4112efb3e59711c1958fb0d8f1049e0b", null ],
+    [ "tag_tracking_get_heading", "tag__tracking_8h.html#af150cf7b0bc994c05d0cc6853759ab52", null ],
     [ "tag_tracking_init", "tag__tracking_8h.html#ae8ad8786977532faf623e55ca22aaa24", null ],
     [ "tag_tracking_parse_target_pos", "tag__tracking_8h.html#a863781f1ab73455b0d2ed5915f87f52b", null ],
     [ "tag_tracking_propagate", "tag__tracking_8h.html#ad53c3e47ba608228515aaf622284a862", null ],

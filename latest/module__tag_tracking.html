@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('module__tag_tracking.html',''); initRe
 <div class="title"><a class="el" href="tag__tracking_8c.html#structtag__tracking">tag_tracking</a> module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Track poistion of a tag (ArUco, QRcode, ...) detected by an onboard camera</b></p>
+<div class="textblock"><p><b>Track position of a tag (ArUco, QRcode, ...) detected by an onboard camera</b></p>
 <p>The tag detection and pose computation is done outside of the module, only the estimation by fusion of AHRS and visual detection with a Kalman filter is performed in this module</p>
 <h1><a class="anchor" id="module_load_example__tag_tracking"></a>
 Example for airframe file</h1>
@@ -99,8 +99,8 @@ Module configuration options</h1>
 Airframe file section</h2>
 <ul>
 <li><b>section</b> name: <code>TAG_TRACKING</code> prefix: <code>TAG_TRACKING_</code> <ul>
-<li><b>name</b> <code>WP</code> <b>value:</b> <em>WP_TAG</em> <br  />
- Description: if defined, update the position of the waypoint at the location of the tag; if TAG waypoint exists in flight plan, it is used by default</li>
+<li><b>name</b> <code>WPS</code> <b>value:</b> <em>[{.wp_id=WP_TAG, .tag_id=42}, ...]</em> <br  />
+ Description: Array of structs. If defined, update the position of the waypoints at the location of the tags</li>
 <li><b>name</b> <code>SIM_WP</code> <b>value:</b> <em>WP_TARGET</em> <br  />
  Description: designate a waypoint to be used as virtual tag in simulation; if TARGET waypoint exists in flight plan, it is used by default</li>
 <li><b>name</b> <code>BODY_TO_CAM_PHI</code> <b>value:</b> <em>0.</em> <br  />
@@ -195,11 +195,11 @@ Raw tag_tracking.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tag_tracking&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;computer_vision&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">Track</span> <span class="keyword">poistion</span> <span class="keyword">of</span> <span class="keyword">a</span> <span class="keyword">tag</span> (<span class="keyword">ArUco</span>, <span class="keyword">QRcode</span>, ...) <span class="keyword">detected</span> <span class="keyword">by</span> <span class="keyword">an</span> <span class="keyword">onboard</span> <span class="keyword">camera</span></div>
+<div class="line">      <span class="keyword">Track</span> <span class="keyword">position</span> <span class="keyword">of</span> <span class="keyword">a</span> <span class="keyword">tag</span> (<span class="keyword">ArUco</span>, <span class="keyword">QRcode</span>, ...) <span class="keyword">detected</span> <span class="keyword">by</span> <span class="keyword">an</span> <span class="keyword">onboard</span> <span class="keyword">camera</span></div>
 <div class="line">      <span class="keyword">The</span> <span class="keyword">tag</span> <span class="keyword">detection</span> <span class="keyword">and</span> <span class="keyword">pose</span> <span class="keyword">computation</span> <span class="keyword">is</span> <span class="keyword">done</span> <span class="keyword">outside</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">module</span>, <span class="keyword">only</span> <span class="keyword">the</span> <span class="keyword">estimation</span> <span class="keyword">by</span> <span class="keyword">fusion</span> <span class="keyword">of</span> <span class="keyword">AHRS</span> <span class="keyword">and</span> <span class="keyword">visual</span> <span class="keyword">detection</span> <span class="keyword">with</span> <span class="keyword">a</span> <span class="keyword">Kalman</span> <span class="keyword">filter</span> <span class="keyword">is</span> <span class="keyword">performed</span> <span class="keyword">in</span> <span class="keyword">this</span> <span class="keyword">module</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TAG_TRACKING&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;TAG_TRACKING_&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;WP_TAG&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;if defined, update the position of the waypoint at the location of the tag; if TAG waypoint exists in flight plan, it is used by default&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WPS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[{.wp_id=WP_TAG, .tag_id=42}, ...]&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Array of structs. If defined, update the position of the waypoints at the location of the tags&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIM_WP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;WP_TARGET&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;designate a waypoint to be used as virtual tag in simulation; if TARGET waypoint exists in flight plan, it is used by default&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PHI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;rotation from body to cam frame (phi)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_THETA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;rotation from body to cam frame (theta)&quot;</span>/&gt;</div>
@@ -254,7 +254,7 @@ Raw tag_tracking.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Jun 22 2024 12:53:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 22 2024 14:38:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
