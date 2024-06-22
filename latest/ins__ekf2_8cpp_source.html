@@ -1005,71 +1005,73 @@ $(document).ready(function(){initNavTree('ins__ekf2_8cpp_source.html',''); initR
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;  gps_msg.yaw_offset = 0;</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="preprocessor">#elif defined(INS_EKF2_GPS_YAW_OFFSET)</span></div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  <span class="keywordflow">if</span>(ISFINITE(<a class="code" href="gps_8c.html#aef81e629eb219c35b87a62b95e93fbf1">gps_relposned</a>.<a class="code" href="gps_8h.html#ac75555afc7849d77e974d7b307bb5985">relPosHeading</a>)) {</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    gps_msg.yaw = wrap_pi(RadOfDeg(<a class="code" href="gps_8c.html#aef81e629eb219c35b87a62b95e93fbf1">gps_relposned</a>.<a class="code" href="gps_8h.html#ac75555afc7849d77e974d7b307bb5985">relPosHeading</a>));</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    gps_msg.yaw = wrap_pi(RadOfDeg(<a class="code" href="gps_8c.html#aef81e629eb219c35b87a62b95e93fbf1">gps_relposned</a>.<a class="code" href="gps_8h.html#ac75555afc7849d77e974d7b307bb5985">relPosHeading</a> - INS_EKF2_GPS_YAW_OFFSET));</div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    gps_msg.yaw = NAN;</div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;  }</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  gps_msg.yaw_offset = INS_EKF2_GPS_YAW_OFFSET;</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;  gps_msg.yaw = NAN;</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;  gps_msg.yaw_offset = NAN;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  gps_msg.fix_type = gps_s-&gt;<a class="code" href="gps_8h.html#afeffb02bdd18d27a87e96bb77175168f">fix</a>;</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  gps_msg.eph = gps_s-&gt;<a class="code" href="gps_8h.html#a507f711c224173c17a15e645a21befcd">hacc</a> / 100.0;</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  gps_msg.epv = gps_s-&gt;<a class="code" href="gps_8h.html#aac1ba72a9c275ba426edb075b4b3575e">vacc</a> / 100.0;</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  gps_msg.sacc = gps_s-&gt;<a class="code" href="gps_8h.html#a2cad112343a238676da447e83d46f4be">sacc</a> / 100.0;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  gps_msg.vel_m_s = gps_s-&gt;<a class="code" href="gps_8h.html#aa2ab49f1a4a8aae71b3929e2c8aad7ba">gspeed</a> / 100.0;</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;  <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a> ned_vel = <a class="code" href="gps_8c.html#a21eacfaec32fc8d222f3824b96f68efb">ned_vel_float_from_gps</a>(gps_s);</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;  gps_msg.vel_ned(0) = ned_vel.<a class="code" href="pprz__geodetic__float_8h.html#abf0c66f74455fb7afa6470765d1dca56">x</a>;</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;  gps_msg.vel_ned(1) = ned_vel.<a class="code" href="pprz__geodetic__float_8h.html#af9886cfc8aa06ca66f993ac42500c4a7">y</a>;</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  gps_msg.vel_ned(2) = ned_vel.<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;  gps_msg.vel_ned_valid = bit_is_set(gps_s-&gt;<a class="code" href="gps_8h.html#aa49d58cc2ab1865f2a3c938a405a392a">valid_fields</a>, <a class="code" href="gps_8h.html#a4531ee774c9d527018070ea34331b6ca">GPS_VALID_VEL_NED_BIT</a>);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;  gps_msg.nsats = gps_s-&gt;<a class="code" href="gps_8h.html#af6d2ba472d4430528868fd65b9d0c59c">num_sv</a>;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  gps_msg.pdop = gps_s-&gt;<a class="code" href="gps_8h.html#a796d3d22856c1865abb3256a64e5b6de">pdop</a>;</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160; </div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  <a class="code" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">ekf</a>.setGpsData(gps_msg);</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;}</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160; </div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="comment">/* Update INS based on Optical Flow information */</span></div>
-<div class="line"><a name="l00958"></a><span class="lineno"><a class="line" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">  958</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">optical_flow_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id __attribute__((unused)),</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp,</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_x,</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_y,</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_x __attribute__((unused)),</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_y __attribute__((unused)),</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;                            <span class="keywordtype">float</span> quality,</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                            <span class="keywordtype">float</span> size_divergence __attribute__((unused)))</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;{</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  flowSample sample;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  sample.time_us = stamp;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160; </div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  <span class="comment">// Wait for two measurements in order to integrate</span></div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a> &lt;= 0) {</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a> = stamp;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  }</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160; </div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;  <span class="comment">// Calculate the timestamp</span></div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  sample.dt = (stamp - <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a>);</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;  <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a> = stamp;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160; </div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;  <span class="comment">/* Build integrated flow and gyro messages for filter</span></div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="comment">  NOTE: pure rotations should result in same flow_x and</span></div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="comment">  gyro_roll and same flow_y and gyro_pitch */</span></div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;  Vector2f flowdata;</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;  flowdata(0) = RadOfDeg(flow_y) * (1e-6 *</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;                                    sample.dt);                       <span class="comment">// INTEGRATED FLOW AROUND Y AXIS (RIGHT -X, LEFT +X)</span></div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;  flowdata(1) = - RadOfDeg(flow_x) * (1e-6 *</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                                      sample.dt);                     <span class="comment">// INTEGRATED FLOW AROUND X AXIS (FORWARD +Y, BACKWARD -Y)</span></div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160; </div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  sample.quality = quality;                     <span class="comment">// quality indicator between 0 and 255</span></div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  sample.flow_xy_rad =</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    flowdata;                   <span class="comment">// measured delta angle of the image about the X and Y body axes (rad), RH rotaton is positive</span></div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  sample.gyro_xyz = Vector3f{NAN, NAN, NAN};    <span class="comment">// measured delta angle of the inertial frame about the body axes obtained from rate gyro measurements (rad), RH rotation is positive</span></div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160; </div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  <span class="comment">// Update the optical flow data based on the callback</span></div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  <a class="code" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">ekf</a>.setOpticalFlowData(sample);</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;}</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160; </div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="comment">// Offset also needs to be substracted from the heading (this is for roll/pitch angle limits)</span></div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;  gps_msg.yaw_offset = RadOfDeg(INS_EKF2_GPS_YAW_OFFSET);</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  gps_msg.yaw = NAN;</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  gps_msg.yaw_offset = NAN;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  gps_msg.fix_type = gps_s-&gt;<a class="code" href="gps_8h.html#afeffb02bdd18d27a87e96bb77175168f">fix</a>;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  gps_msg.eph = gps_s-&gt;<a class="code" href="gps_8h.html#a507f711c224173c17a15e645a21befcd">hacc</a> / 100.0;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  gps_msg.epv = gps_s-&gt;<a class="code" href="gps_8h.html#aac1ba72a9c275ba426edb075b4b3575e">vacc</a> / 100.0;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;  gps_msg.sacc = gps_s-&gt;<a class="code" href="gps_8h.html#a2cad112343a238676da447e83d46f4be">sacc</a> / 100.0;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;  gps_msg.vel_m_s = gps_s-&gt;<a class="code" href="gps_8h.html#aa2ab49f1a4a8aae71b3929e2c8aad7ba">gspeed</a> / 100.0;</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;  <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a> ned_vel = <a class="code" href="gps_8c.html#a21eacfaec32fc8d222f3824b96f68efb">ned_vel_float_from_gps</a>(gps_s);</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  gps_msg.vel_ned(0) = ned_vel.<a class="code" href="pprz__geodetic__float_8h.html#abf0c66f74455fb7afa6470765d1dca56">x</a>;</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;  gps_msg.vel_ned(1) = ned_vel.<a class="code" href="pprz__geodetic__float_8h.html#af9886cfc8aa06ca66f993ac42500c4a7">y</a>;</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;  gps_msg.vel_ned(2) = ned_vel.<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  gps_msg.vel_ned_valid = bit_is_set(gps_s-&gt;<a class="code" href="gps_8h.html#aa49d58cc2ab1865f2a3c938a405a392a">valid_fields</a>, <a class="code" href="gps_8h.html#a4531ee774c9d527018070ea34331b6ca">GPS_VALID_VEL_NED_BIT</a>);</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;  gps_msg.nsats = gps_s-&gt;<a class="code" href="gps_8h.html#af6d2ba472d4430528868fd65b9d0c59c">num_sv</a>;</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  gps_msg.pdop = gps_s-&gt;<a class="code" href="gps_8h.html#a796d3d22856c1865abb3256a64e5b6de">pdop</a>;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160; </div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <a class="code" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">ekf</a>.setGpsData(gps_msg);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;}</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160; </div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;<span class="comment">/* Update INS based on Optical Flow information */</span></div>
+<div class="line"><a name="l00960"></a><span class="lineno"><a class="line" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">  960</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">optical_flow_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id __attribute__((unused)),</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp,</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_x,</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_y,</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_x __attribute__((unused)),</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                            <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_y __attribute__((unused)),</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                            <span class="keywordtype">float</span> quality,</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;                            <span class="keywordtype">float</span> size_divergence __attribute__((unused)))</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;{</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  flowSample sample;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  sample.time_us = stamp;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160; </div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  <span class="comment">// Wait for two measurements in order to integrate</span></div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a> &lt;= 0) {</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a> = stamp;</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;  }</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160; </div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;  <span class="comment">// Calculate the timestamp</span></div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;  sample.dt = (stamp - <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a>);</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;  <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>.<a class="code" href="ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e">flow_stamp</a> = stamp;</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160; </div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;  <span class="comment">/* Build integrated flow and gyro messages for filter</span></div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="comment">  NOTE: pure rotations should result in same flow_x and</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="comment">  gyro_roll and same flow_y and gyro_pitch */</span></div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;  Vector2f flowdata;</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;  flowdata(0) = RadOfDeg(flow_y) * (1e-6 *</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                                    sample.dt);                       <span class="comment">// INTEGRATED FLOW AROUND Y AXIS (RIGHT -X, LEFT +X)</span></div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  flowdata(1) = - RadOfDeg(flow_x) * (1e-6 *</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                                      sample.dt);                     <span class="comment">// INTEGRATED FLOW AROUND X AXIS (FORWARD +Y, BACKWARD -Y)</span></div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160; </div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  sample.quality = quality;                     <span class="comment">// quality indicator between 0 and 255</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  sample.flow_xy_rad =</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    flowdata;                   <span class="comment">// measured delta angle of the image about the X and Y body axes (rad), RH rotaton is positive</span></div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  sample.gyro_xyz = Vector3f{NAN, NAN, NAN};    <span class="comment">// measured delta angle of the inertial frame about the body axes obtained from rate gyro measurements (rad), RH rotation is positive</span></div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160; </div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;  <span class="comment">// Update the optical flow data based on the callback</span></div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  <a class="code" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">ekf</a>.setOpticalFlowData(sample);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;}</div>
 <div class="ttc" id="aabi_8h_html"><div class="ttname"><a href="abi_8h.html">abi.h</a></div><div class="ttdoc">Main include for ABI (AirBorneInterface).</div></div>
 <div class="ttc" id="aabi__common_8h_html_structabi__struct"><div class="ttname"><a href="abi__common_8h.html#structabi__struct">abi_struct</a></div><div class="ttdoc">Event structure to store callbacks in a linked list.</div><div class="ttdef"><b>Definition:</b> <a href="abi__common_8h_source.html#l00067">abi_common.h:67</a></div></div>
 <div class="ttc" id="aahrs_8h_html_a6c0ffb77ca98604b9b7618e28cd12b8f"><div class="ttname"><a href="ahrs_8h.html#a6c0ffb77ca98604b9b7618e28cd12b8f">AHRS_COMP_ID_EKF2</a></div><div class="ttdeci">#define AHRS_COMP_ID_EKF2</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8h_source.html#l00044">ahrs.h:44</a></div></div>
@@ -1163,7 +1165,7 @@ $(document).ready(function(){initNavTree('ins__ekf2_8cpp_source.html',''); initR
 <div class="ttc" id="ains__ekf2_8cpp_html_a359b827ae64da4b578ea9e25e273ba18"><div class="ttname"><a href="ins__ekf2_8cpp.html#a359b827ae64da4b578ea9e25e273ba18">ins_ekf2_remove_gps</a></div><div class="ttdeci">void ins_ekf2_remove_gps(int32_t mode)</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00726">ins_ekf2.cpp:726</a></div></div>
 <div class="ttc" id="ains__ekf2_8cpp_html_a35fe77bf44c50dfd7f7d4e332fc525a8"><div class="ttname"><a href="ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8">send_ins_ekf2_ext</a></div><div class="ttdeci">static void send_ins_ekf2_ext(struct transport_tx *trans, struct link_device *dev)</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00398">ins_ekf2.cpp:398</a></div></div>
 <div class="ttc" id="ains__ekf2_8cpp_html_a38cb06612986df226f29ce29c93450e8"><div class="ttname"><a href="ins__ekf2_8cpp.html#a38cb06612986df226f29ce29c93450e8">temperature_ev</a></div><div class="ttdeci">static abi_event temperature_ev</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00278">ins_ekf2.cpp:278</a></div></div>
-<div class="ttc" id="ains__ekf2_8cpp_html_a3ee22d5c97c601731a135c1104958a4f"><div class="ttname"><a href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">optical_flow_cb</a></div><div class="ttdeci">static void optical_flow_cb(uint8_t sender_id, uint32_t stamp, int32_t flow_x, int32_t flow_y, int32_t flow_der_x, int32_t flow_der_y, float quality, float size_divergence)</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00958">ins_ekf2.cpp:958</a></div></div>
+<div class="ttc" id="ains__ekf2_8cpp_html_a3ee22d5c97c601731a135c1104958a4f"><div class="ttname"><a href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">optical_flow_cb</a></div><div class="ttdeci">static void optical_flow_cb(uint8_t sender_id, uint32_t stamp, int32_t flow_x, int32_t flow_y, int32_t flow_der_x, int32_t flow_der_y, float quality, float size_divergence)</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00960">ins_ekf2.cpp:960</a></div></div>
 <div class="ttc" id="ains__ekf2_8cpp_html_a4092df9bf43189e1c89451043b71ae13"><div class="ttname"><a href="ins__ekf2_8cpp.html#a4092df9bf43189e1c89451043b71ae13">INS_EKF2_TEMPERATURE_ID</a></div><div class="ttdeci">#define INS_EKF2_TEMPERATURE_ID</div><div class="ttdoc">default temperature sensor to use in INS</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00110">ins_ekf2.cpp:110</a></div></div>
 <div class="ttc" id="ains__ekf2_8cpp_html_a427c912f7a529096c80572478647c5cf"><div class="ttname"><a href="ins__ekf2_8cpp.html#a427c912f7a529096c80572478647c5cf">INS_EKF2_VDIST_SENSOR_TYPE</a></div><div class="ttdeci">#define INS_EKF2_VDIST_SENSOR_TYPE</div><div class="ttdoc">The EKF2 primary vertical distance sensor type.</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00070">ins_ekf2.cpp:70</a></div></div>
 <div class="ttc" id="ains__ekf2_8cpp_html_a44d506760598e8c18e5da6e52dfc6b0d"><div class="ttname"><a href="ins__ekf2_8cpp.html#a44d506760598e8c18e5da6e52dfc6b0d">mag_ev</a></div><div class="ttdeci">static abi_event mag_ev</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8cpp_source.html#l00282">ins_ekf2.cpp:282</a></div></div>
@@ -1278,7 +1280,7 @@ $(document).ready(function(){initNavTree('ins__ekf2_8cpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__ekf2_8cpp.html">ins_ekf2.cpp</a></li>
-    <li class="footer">Generated on Tue Jun 18 2024 11:52:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 22 2024 12:52:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

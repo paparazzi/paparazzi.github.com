@@ -732,7 +732,9 @@ var onboard_modules =
     ] ],
     [ "mavlink module", "module__mavlink.html", [
       [ "Example for airframe file", "module__mavlink.html#module_load_example__mavlink", null ],
-      [ "Module configuration options", "module__mavlink.html#configuration__mavlink", null ],
+      [ "Module configuration options", "module__mavlink.html#configuration__mavlink", [
+        [ "Configure Options", "module__mavlink.html#configure", null ]
+      ] ],
       [ "Module functions", "module__mavlink.html#functions__mavlink", [
         [ "Raw mavlink.xml file:", "module__mavlink.html#module_xml__mavlink", null ]
       ] ]
@@ -1209,9 +1211,7 @@ var onboard_modules =
     ] ],
     [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
       [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
-      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", [
-        [ "Airframe file section", "module__filter_1euro_imu.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
       [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
         [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
       ] ]
@@ -1258,12 +1258,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -1341,6 +1341,7 @@ var onboard_modules =
     [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
       [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
       [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", [
+        [ "Airframe file section", "module__imu_lisa_m_v2_1.html#af_section", null ],
         [ ".1 Raw imu_lisa_m_v2.1.xml file:", "module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2", null ]
       ] ]
     ] ],
@@ -1390,18 +1391,8 @@ var onboard_modules =
     ] ],
     [ "imu_mpu9250_i2c module", "module__imu_mpu9250_i2c.html", [
       [ "Example for airframe file", "module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c", null ],
-      [ "Module configuration options", "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c", [
-        [ "Configure Options", "module__imu_mpu9250_i2c.html#configure", null ],
-        [ "Define Options", "module__imu_mpu9250_i2c.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c", null ],
       [ "Module functions", "module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c", [
-        [ "Init Functions", "module__imu_mpu9250_i2c.html#init_functions", null ],
-        [ "Event Functions", "module__imu_mpu9250_i2c.html#event_functions", null ],
-        [ "Periodic Functions", "module__imu_mpu9250_i2c.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__imu_mpu9250_i2c.html#files", [
-        [ "Header Files", "module__imu_mpu9250_i2c.html#headers", null ],
-        [ "Source Files", "module__imu_mpu9250_i2c.html#sources", null ],
         [ "Raw imu_mpu9250_i2c.xml file:", "module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c", null ]
       ] ]
     ] ],
@@ -2597,8 +2588,17 @@ var onboard_modules =
     ] ],
     [ "baro_mpl3115 module", "module__baro_mpl3115.html", [
       [ "Example for airframe file", "module__baro_mpl3115.html#module_load_example__baro_mpl3115", null ],
-      [ "Module configuration options", "module__baro_mpl3115.html#configuration__baro_mpl3115", null ],
+      [ "Module configuration options", "module__baro_mpl3115.html#configuration__baro_mpl3115", [
+        [ "Define Options", "module__baro_mpl3115.html#define", null ]
+      ] ],
       [ "Module functions", "module__baro_mpl3115.html#functions__baro_mpl3115", [
+        [ "Init Functions", "module__baro_mpl3115.html#init_functions", null ],
+        [ "Event Functions", "module__baro_mpl3115.html#event_functions", null ],
+        [ "Periodic Functions", "module__baro_mpl3115.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__baro_mpl3115.html#files", [
+        [ "Header Files", "module__baro_mpl3115.html#headers", null ],
+        [ "Source Files", "module__baro_mpl3115.html#sources", null ],
         [ "Raw baro_mpl3115.xml file:", "module__baro_mpl3115.html#module_xml__baro_mpl3115", null ]
       ] ]
     ] ],

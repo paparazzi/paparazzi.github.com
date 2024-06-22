@@ -1,5 +1,12 @@
 var NAVTREEINDEX133 =
 {
+"module__demo_module.html#functions__demo_module":[1,461,1],
+"module__demo_module.html#module_load_example__demo_module":[1,461,0],
+"module__demo_module.html#module_xml__demo_module":[1,461,1,0],
+"module__dfu_command.html":[1,462],
+"module__dfu_command.html#functions__dfu_command":[1,462,1],
+"module__dfu_command.html#module_load_example__dfu_command":[1,462,0],
+"module__dfu_command.html#module_xml__dfu_command":[1,462,1,0],
 "module__digital_cam.html":[1,130],
 "module__digital_cam.html#module_load_example__digital_cam":[1,130,0],
 "module__digital_cam.html#module_xml__digital_cam":[1,130,0,0],
@@ -154,7 +161,6 @@ var NAVTREEINDEX133 =
 "module__fdm_rover.html#module_load_example__fdm_rover":[1,148,0],
 "module__fdm_rover.html#module_xml__fdm_rover":[1,148,0,0],
 "module__filter_1euro_imu.html":[1,183],
-"module__filter_1euro_imu.html#af_section":[1,183,1,0],
 "module__filter_1euro_imu.html#configuration__filter_1euro_imu":[1,183,1],
 "module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,183,2],
 "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,183,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX133 =
 "module__gps_intermcu.html":[1,154],
 "module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,154,2],
 "module__gps_intermcu.html#functions__gps_intermcu":[1,154,1],
-"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,154,0],
-"module__gps_intermcu.html#module_xml__gps_intermcu":[1,154,2,0],
-"module__gps_mediatek_diy.html":[1,155],
-"module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,155,1],
-"module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,155,2],
-"module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,155,0],
-"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,155,2,0]
+"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,154,0]
 };

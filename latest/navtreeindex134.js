@@ -1,5 +1,11 @@
 var NAVTREEINDEX134 =
 {
+"module__gps_intermcu.html#module_xml__gps_intermcu":[1,154,2,0],
+"module__gps_mediatek_diy.html":[1,155],
+"module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,155,1],
+"module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,155,2],
+"module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,155,0],
+"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,155,2,0],
 "module__gps_nmea.html":[1,156],
 "module__gps_nmea.html#configuration__gps_nmea":[1,156,1],
 "module__gps_nmea.html#functions__gps_nmea":[1,156,2],
@@ -231,9 +237,9 @@ var NAVTREEINDEX134 =
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,190,0],
 "module__imu_aspirin_v1_0.html":[1,191],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,191,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,191,0,0],
 "module__imu_aspirin_v1_5.html":[1,192],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,192,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,192,0,0],
 "module__imu_aspirin_v2_1.html":[1,193],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,193,0],
 "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,193,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX134 =
 "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,195,1],
 "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,195,2],
 "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common":[1,195,0],
-"module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common":[1,195,2,0],
-"module__imu_bebop.html":[1,196],
-"module__imu_bebop.html#configuration__imu_bebop":[1,196,1],
-"module__imu_bebop.html#functions__imu_bebop":[1,196,2],
-"module__imu_bebop.html#module_load_example__imu_bebop":[1,196,0],
-"module__imu_bebop.html#module_xml__imu_bebop":[1,196,2,0],
-"module__imu_bmi088_i2c.html":[1,197]
+"module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common":[1,195,2,0]
 };
