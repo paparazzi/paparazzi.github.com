@@ -168,6 +168,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6baa1605862f58c8d23bb54b6487913e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb4d98f4686f18ac9111291ba7afda77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf_8h.html#abb4d98f4686f18ac9111291ba7afda77">gvf_control_2D</a> (float ke, float kn, float e, struct <a class="el" href="gvf_8h.html#structgvf__grad">gvf_grad</a> *, struct <a class="el" href="gvf_8h.html#structgvf__Hess">gvf_Hess</a> *)</td></tr>
 <tr class="separator:abb4d98f4686f18ac9111291ba7afda77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d87809fec710967557d01e54c4ab865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf_8h.html#a7d87809fec710967557d01e54c4ab865">gvf_set_speed</a> (float speed)</td></tr>
+<tr class="separator:a7d87809fec710967557d01e54c4ab865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9626476a684a76d27cfcb0828e25f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf_8h.html#a4d9626476a684a76d27cfcb0828e25f9">gvf_set_align</a> (bool align)</td></tr>
+<tr class="separator:a4d9626476a684a76d27cfcb0828e25f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8efa9dd9d07def4d644d56b2d1fed6e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf_8h.html#a8efa9dd9d07def4d644d56b2d1fed6e2">gvf_set_direction</a> (<a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
 <tr class="separator:a8efa9dd9d07def4d644d56b2d1fed6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94baf63a088a68d4ccec888736d975b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf_8h.html#a94baf63a088a68d4ccec888736d975b1">gvf_line_XY_heading</a> (float x, float y, float <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
@@ -223,9 +227,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00047">47</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00050">50</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a7dc9e5281daf20087be0fbb3ff2d41e6"></a>bool</td>
+<td class="fieldname">
+align</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a0e63f9cdee0f1822f27fd383d1ad1af8"></a>float</td>
 <td class="fieldname">
@@ -256,6 +266,12 @@ omega</td>
 s</td>
 <td class="fielddoc">
 </td></tr>
+<tr><td class="fieldtype">
+<a id="a2853994ca7b3e9cd1ebde9cf01097e4d"></a>float</td>
+<td class="fieldname">
+speed</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -272,7 +288,7 @@ s</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00057">57</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00062">62</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -309,7 +325,7 @@ py_dot</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00072">72</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00077">77</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -340,7 +356,7 @@ type</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00085">85</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00090">90</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -389,7 +405,7 @@ y2</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00095">95</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00100">100</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -426,7 +442,7 @@ nz</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00101">101</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00106">106</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -540,7 +556,7 @@ H33</td>
 <tr><td class="fieldname"><a id="a5e61057ce8c51b9efe7810e885a5e608ac157bdf0b85a40d2619cbc8bc1ae5fe2"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00065">65</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8h_source.html#l00070">70</a> of file <a class="el" href="gvf_8h_source.html">gvf.h</a>.</p>
 
 </div>
 </div>
@@ -589,11 +605,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00129">129</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00131">131</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00129">RotorcraftNavigation::accel</a>, <a class="el" href="gvf_8h_source.html#l00058">gvf_st::course</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">get_sys_time_msec()</a>, <a class="el" href="gvf__common_8c_source.html#l00024">gvf_c_info</a>, <a class="el" href="gvf__common_8c_source.html#l00023">gvf_c_omega</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf__low__level__control_8c_source.html#l00052">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__low__level__control_8c_source.html#l00035">gvf_low_level_getState()</a>, <a class="el" href="gvf_8c_source.html#l00039">gvf_state</a>, <a class="el" href="gvf_8c_source.html#l00046">gvf_t0</a>, <a class="el" href="gvf_8h_source.html#l00102">gvf_Hess::H11</a>, <a class="el" href="gvf_8h_source.html#l00103">gvf_Hess::H12</a>, <a class="el" href="gvf_8h_source.html#l00105">gvf_Hess::H21</a>, <a class="el" href="gvf_8h_source.html#l00106">gvf_Hess::H22</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="gvf__common_8h_source.html#l00044">gvf_common_params::kappa</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="gvf_8h_source.html#l00096">gvf_grad::nx</a>, <a class="el" href="gvf_8h_source.html#l00097">gvf_grad::ny</a>, <a class="el" href="gvf_8h_source.html#l00051">gvf_con::omega</a>, <a class="el" href="gvf__common_8h_source.html#l00033">gvf_common_omega::omega</a>, <a class="el" href="gvf__common_8h_source.html#l00046">gvf_common_params::ori_err</a>, <a class="el" href="gvf_8h_source.html#l00059">gvf_st::px_dot</a>, <a class="el" href="gvf_8h_source.html#l00060">gvf_st::py_dot</a>, <a class="el" href="gvf_8h_source.html#l00052">gvf_con::s</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00128">RotorcraftNavigation::speed</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00129">RotorcraftNavigation::accel</a>, <a class="el" href="gvf_8h_source.html#l00057">gvf_con::align</a>, <a class="el" href="gvf_8h_source.html#l00063">gvf_st::course</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">get_sys_time_msec()</a>, <a class="el" href="gvf__common_8c_source.html#l00024">gvf_c_info</a>, <a class="el" href="gvf__common_8c_source.html#l00023">gvf_c_omega</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf__low__level__control_8c_source.html#l00052">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__low__level__control_8c_source.html#l00035">gvf_low_level_getState()</a>, <a class="el" href="gvf_8c_source.html#l00039">gvf_state</a>, <a class="el" href="gvf_8c_source.html#l00046">gvf_t0</a>, <a class="el" href="gvf_8h_source.html#l00107">gvf_Hess::H11</a>, <a class="el" href="gvf_8h_source.html#l00108">gvf_Hess::H12</a>, <a class="el" href="gvf_8h_source.html#l00110">gvf_Hess::H21</a>, <a class="el" href="gvf_8h_source.html#l00111">gvf_Hess::H22</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="gvf__common_8h_source.html#l00044">gvf_common_params::kappa</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00101">NAV_SETPOINT_MODE_SPEED</a>, <a class="el" href="gvf_8h_source.html#l00101">gvf_grad::nx</a>, <a class="el" href="gvf_8h_source.html#l00102">gvf_grad::ny</a>, <a class="el" href="gvf_8h_source.html#l00054">gvf_con::omega</a>, <a class="el" href="gvf__common_8h_source.html#l00033">gvf_common_omega::omega</a>, <a class="el" href="gvf__common_8h_source.html#l00046">gvf_common_params::ori_err</a>, <a class="el" href="gvf_8h_source.html#l00064">gvf_st::px_dot</a>, <a class="el" href="gvf_8h_source.html#l00065">gvf_st::py_dot</a>, <a class="el" href="gvf_8h_source.html#l00056">gvf_con::s</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00123">RotorcraftNavigation::setpoint_mode</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00128">RotorcraftNavigation::speed</a>, <a class="el" href="gvf_8h_source.html#l00055">gvf_con::speed</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00400">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00240">gvf_line()</a>, and <a class="el" href="gvf_8c_source.html#l00450">gvf_sin_XY_alpha()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00433">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00273">gvf_line()</a>, and <a class="el" href="gvf_8c_source.html#l00483">gvf_sin_XY_alpha()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -688,9 +704,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00439">439</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00472">472</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8c_source.html#l00400">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8c_source.html#l00433">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -779,11 +795,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00400">400</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00433">433</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8h_source.html#l00050">gvf_con::error</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8c_source.html#l00129">gvf_control_2D()</a>, <a class="el" href="gvf__ellipse_8c_source.html#l00063">gvf_ellipse_info()</a>, <a class="el" href="gvf__ellipse_8c_source.html#l00059">gvf_ellipse_par</a>, <a class="el" href="gvf_8c_source.html#l00049">gvf_plen</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00048">gvf_con::ke</a>, <a class="el" href="gvf__ellipse_8h_source.html#l00043">gvf_ell_par::ke</a>, <a class="el" href="gvf__ellipse_8h_source.html#l00044">gvf_ell_par::kn</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, and <a class="el" href="gvf_8h_source.html#l00073">gvf_tra::type</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8h_source.html#l00053">gvf_con::error</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8c_source.html#l00131">gvf_control_2D()</a>, <a class="el" href="gvf__ellipse_8c_source.html#l00063">gvf_ellipse_info()</a>, <a class="el" href="gvf__ellipse_8c_source.html#l00059">gvf_ellipse_par</a>, <a class="el" href="gvf_8c_source.html#l00049">gvf_plen</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00051">gvf_con::ke</a>, <a class="el" href="gvf__ellipse_8h_source.html#l00043">gvf_ell_par::ke</a>, <a class="el" href="gvf__ellipse_8h_source.html#l00044">gvf_ell_par::kn</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, and <a class="el" href="gvf_8h_source.html#l00078">gvf_tra::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="gvf_8c_source.html#l00439">gvf_ellipse_wp()</a>, and <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">gvf_nav_survey_polygon_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="gvf_8c_source.html#l00472">gvf_ellipse_wp()</a>, and <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">gvf_nav_survey_polygon_run()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -858,7 +874,7 @@ H33</td>
 
 <p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00116">116</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00048">gvf_con::ke</a>, <a class="el" href="gvf_8h_source.html#l00049">gvf_con::kn</a>, <a class="el" href="actuators__asctec__v2_8h_source.html#l00033">NONE</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gvf_8h_source.html#l00052">gvf_con::s</a>, <a class="el" href="gvf_8c_source.html#l00054">send_gvf()</a>, and <a class="el" href="gvf_8h_source.html#l00073">gvf_tra::type</a>.</p>
+<p class="reference">References <a class="el" href="gvf_8h_source.html#l00057">gvf_con::align</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00051">gvf_con::ke</a>, <a class="el" href="gvf_8h_source.html#l00052">gvf_con::kn</a>, <a class="el" href="actuators__asctec__v2_8h_source.html#l00033">NONE</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gvf_8h_source.html#l00056">gvf_con::s</a>, <a class="el" href="gvf_8c_source.html#l00054">send_gvf()</a>, <a class="el" href="gvf_8h_source.html#l00055">gvf_con::speed</a>, and <a class="el" href="gvf_8h_source.html#l00078">gvf_tra::type</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -901,9 +917,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00295">295</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00328">328</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf_8c_source.html#l00271">gvf_line_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="gvf_8c_source.html#l00304">gvf_line_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -977,9 +993,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00385">385</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00418">418</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8c_source.html#l00264">gvf_line_XY_heading()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8c_source.html#l00297">gvf_line_XY_heading()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1064,11 +1080,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00271">271</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00304">304</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf_8c_source.html#l00264">gvf_line_XY_heading()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00043">gvf_segment</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="gvf_8h_source.html#l00086">gvf_seg::seg</a>, <a class="el" href="gvf_8h_source.html#l00087">gvf_seg::x1</a>, <a class="el" href="gvf_8h_source.html#l00089">gvf_seg::x2</a>, <a class="el" href="gvf_8h_source.html#l00088">gvf_seg::y1</a>, and <a class="el" href="gvf_8h_source.html#l00090">gvf_seg::y2</a>.</p>
+<p class="reference">References <a class="el" href="gvf_8c_source.html#l00297">gvf_line_XY_heading()</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00043">gvf_segment</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="gvf_8h_source.html#l00091">gvf_seg::seg</a>, <a class="el" href="gvf_8h_source.html#l00092">gvf_seg::x1</a>, <a class="el" href="gvf_8h_source.html#l00094">gvf_seg::x2</a>, <a class="el" href="gvf_8h_source.html#l00093">gvf_seg::y1</a>, and <a class="el" href="gvf_8h_source.html#l00095">gvf_seg::y2</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00295">gvf_line_wp1_wp2()</a>, and <a class="el" href="gvf_8c_source.html#l00349">gvf_segment_XY1_XY2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00328">gvf_line_wp1_wp2()</a>, and <a class="el" href="gvf_8c_source.html#l00382">gvf_segment_XY1_XY2()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1162,11 +1178,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00264">264</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00297">297</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8c_source.html#l00240">gvf_line()</a>, <a class="el" href="gvf_8c_source.html#l00233">gvf_set_direction()</a>, and <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>.</p>
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8c_source.html#l00273">gvf_line()</a>, <a class="el" href="gvf_8c_source.html#l00266">gvf_set_direction()</a>, and <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00385">gvf_line_wp_heading()</a>, and <a class="el" href="gvf_8c_source.html#l00271">gvf_line_XY1_XY2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00418">gvf_line_wp_heading()</a>, and <a class="el" href="gvf_8c_source.html#l00304">gvf_line_XY1_XY2()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1267,9 +1283,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00333">333</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00366">366</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__MS5534A_8c_source.html#l00202">d1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00202">d2</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00309">gvf_segment_loop_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="baro__MS5534A_8c_source.html#l00202">d1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00202">d2</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00342">gvf_segment_loop_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -1367,11 +1383,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00309">309</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00342">342</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00202">d1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00202">d2</a>, <a class="el" href="gvf_8c_source.html#l00240">gvf_line()</a>, <a class="el" href="gvf_8c_source.html#l00043">gvf_segment</a>, <a class="el" href="gvf_8c_source.html#l00233">gvf_set_direction()</a>, <a class="el" href="gvf_8c_source.html#l00085">out_of_segment_area()</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="gvf_8h_source.html#l00086">gvf_seg::seg</a>, <a class="el" href="gvf_8h_source.html#l00087">gvf_seg::x1</a>, <a class="el" href="gvf_8h_source.html#l00089">gvf_seg::x2</a>, <a class="el" href="gvf_8h_source.html#l00088">gvf_seg::y1</a>, and <a class="el" href="gvf_8h_source.html#l00090">gvf_seg::y2</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00202">d1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00202">d2</a>, <a class="el" href="gvf_8c_source.html#l00273">gvf_line()</a>, <a class="el" href="gvf_8c_source.html#l00043">gvf_segment</a>, <a class="el" href="gvf_8c_source.html#l00266">gvf_set_direction()</a>, <a class="el" href="gvf_8c_source.html#l00085">out_of_segment_area()</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="gvf_8h_source.html#l00091">gvf_seg::seg</a>, <a class="el" href="gvf_8h_source.html#l00092">gvf_seg::x1</a>, <a class="el" href="gvf_8h_source.html#l00094">gvf_seg::x2</a>, <a class="el" href="gvf_8h_source.html#l00093">gvf_seg::y1</a>, and <a class="el" href="gvf_8h_source.html#l00095">gvf_seg::y2</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00333">gvf_segment_loop_wp1_wp2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00366">gvf_segment_loop_wp1_wp2()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1455,9 +1471,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00371">371</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00404">404</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00349">gvf_segment_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00382">gvf_segment_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1544,11 +1560,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00349">349</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00382">382</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf_8c_source.html#l00271">gvf_line_XY1_XY2()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, and <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>.</p>
+<p class="reference">References <a class="el" href="gvf_8c_source.html#l00304">gvf_line_XY1_XY2()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, and <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00042">gvf_nav_points()</a>, and <a class="el" href="gvf_8c_source.html#l00371">gvf_segment_wp1_wp2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00042">gvf_nav_points()</a>, and <a class="el" href="gvf_8c_source.html#l00404">gvf_segment_wp1_wp2()</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1609,6 +1625,28 @@ H33</td>
 
 </div>
 </div>
+<a id="a4d9626476a684a76d27cfcb0828e25f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9626476a684a76d27cfcb0828e25f9">&#9670;&nbsp;</a></span>gvf_set_align()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvf_set_align </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>align</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00259">259</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvf_8h_source.html#l00057">gvf_con::align</a>, and <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>.</p>
+
+</div>
+</div>
 <a id="a8efa9dd9d07def4d644d56b2d1fed6e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8efa9dd9d07def4d644d56b2d1fed6e2">&#9670;&nbsp;</a></span>gvf_set_direction()</h2>
 
@@ -1625,11 +1663,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00233">233</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00266">266</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8h_source.html#l00052">gvf_con::s</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
+<p class="reference">References <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8h_source.html#l00056">gvf_con::s</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00264">gvf_line_XY_heading()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00236">gvf_nav_direction_circle()</a>, and <a class="el" href="gvf_8c_source.html#l00309">gvf_segment_loop_XY1_XY2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00297">gvf_line_XY_heading()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00236">gvf_nav_direction_circle()</a>, and <a class="el" href="gvf_8c_source.html#l00342">gvf_segment_loop_XY1_XY2()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -1651,6 +1689,28 @@ H33</td>
 <area shape="rect" href="gvf_8c.html#ab89de481d1873a1230bebc3f7602650c" title=" " alt="" coords="716,157,927,184"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a7d87809fec710967557d01e54c4ab865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d87809fec710967557d01e54c4ab865">&#9670;&nbsp;</a></span>gvf_set_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvf_set_speed </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00253">253</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, and <a class="el" href="gvf_8h_source.html#l00055">gvf_con::speed</a>.</p>
 
 </div>
 </div>
@@ -1698,9 +1758,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00475">475</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00508">508</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00450">gvf_sin_XY_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00483">gvf_sin_XY_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -1789,9 +1849,9 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00498">498</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00531">531</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00450">gvf_sin_XY_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf_8c_source.html#l00483">gvf_sin_XY_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
@@ -1886,11 +1946,11 @@ H33</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00450">450</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00483">483</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8h_source.html#l00050">gvf_con::error</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8c_source.html#l00129">gvf_control_2D()</a>, <a class="el" href="gvf_8c_source.html#l00049">gvf_plen</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf__sin_8c_source.html#l00069">gvf_sin_info()</a>, <a class="el" href="gvf__sin_8c_source.html#l00064">gvf_sin_par</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00048">gvf_con::ke</a>, <a class="el" href="gvf__sin_8h_source.html#l00044">gvf_s_par::ke</a>, <a class="el" href="gvf__sin_8h_source.html#l00045">gvf_s_par::kn</a>, <a class="el" href="gvf_8h_source.html#l00074">gvf_tra::p</a>, and <a class="el" href="gvf_8h_source.html#l00073">gvf_tra::type</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="gvf_8h_source.html#l00053">gvf_con::error</a>, <a class="el" href="gvf_8c_source.html#l00036">gvf_control</a>, <a class="el" href="gvf_8c_source.html#l00131">gvf_control_2D()</a>, <a class="el" href="gvf_8c_source.html#l00049">gvf_plen</a>, <a class="el" href="gvf_8c_source.html#l00050">gvf_plen_wps</a>, <a class="el" href="gvf__sin_8c_source.html#l00069">gvf_sin_info()</a>, <a class="el" href="gvf__sin_8c_source.html#l00064">gvf_sin_par</a>, <a class="el" href="gvf_8c_source.html#l00042">gvf_trajectory</a>, <a class="el" href="gvf_8h_source.html#l00051">gvf_con::ke</a>, <a class="el" href="gvf__sin_8h_source.html#l00044">gvf_s_par::ke</a>, <a class="el" href="gvf__sin_8h_source.html#l00045">gvf_s_par::kn</a>, <a class="el" href="gvf_8h_source.html#l00079">gvf_tra::p</a>, and <a class="el" href="gvf_8h_source.html#l00078">gvf_tra::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00475">gvf_sin_wp1_wp2()</a>, and <a class="el" href="gvf_8c_source.html#l00498">gvf_sin_wp_alpha()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00508">gvf_sin_wp1_wp2()</a>, and <a class="el" href="gvf_8c_source.html#l00531">gvf_sin_wp_alpha()</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -1969,7 +2029,7 @@ H33</td>
 
 <p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00036">36</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="gvf_8c_source.html#l00129">gvf_control_2D()</a>, <a class="el" href="gvf_8c_source.html#l00400">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00116">gvf_init()</a>, <a class="el" href="gvf_8c_source.html#l00240">gvf_line()</a>, <a class="el" href="gvf_8c_source.html#l00233">gvf_set_direction()</a>, <a class="el" href="gvf_8c_source.html#l00450">gvf_sin_XY_alpha()</a>, and <a class="el" href="gvf_8c_source.html#l00054">send_gvf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="gvf_8c_source.html#l00131">gvf_control_2D()</a>, <a class="el" href="gvf_8c_source.html#l00433">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00116">gvf_init()</a>, <a class="el" href="gvf_8c_source.html#l00273">gvf_line()</a>, <a class="el" href="gvf_8c_source.html#l00259">gvf_set_align()</a>, <a class="el" href="gvf_8c_source.html#l00266">gvf_set_direction()</a>, <a class="el" href="gvf_8c_source.html#l00253">gvf_set_speed()</a>, <a class="el" href="gvf_8c_source.html#l00483">gvf_sin_XY_alpha()</a>, and <a class="el" href="gvf_8c_source.html#l00054">send_gvf()</a>.</p>
 
 </div>
 </div>
@@ -1995,7 +2055,7 @@ H33</td>
 
 <p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00039">39</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00129">gvf_control_2D()</a>, and <a class="el" href="gvf__low__level__control_8c_source.html#l00035">gvf_low_level_getState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf_8c_source.html#l00131">gvf_control_2D()</a>, and <a class="el" href="gvf__low__level__control_8c_source.html#l00035">gvf_low_level_getState()</a>.</p>
 
 </div>
 </div>
@@ -2021,7 +2081,7 @@ H33</td>
 
 <p class="definition">Definition at line <a class="el" href="gvf_8c_source.html#l00042">42</a> of file <a class="el" href="gvf_8c_source.html">gvf.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf__ellipse_8c_source.html#l00063">gvf_ellipse_info()</a>, <a class="el" href="gvf_8c_source.html#l00439">gvf_ellipse_wp()</a>, <a class="el" href="gvf_8c_source.html#l00400">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00116">gvf_init()</a>, <a class="el" href="gvf_8c_source.html#l00240">gvf_line()</a>, <a class="el" href="gvf__line_8c_source.html#l00062">gvf_line_info()</a>, <a class="el" href="gvf_8c_source.html#l00295">gvf_line_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00385">gvf_line_wp_heading()</a>, <a class="el" href="gvf_8c_source.html#l00271">gvf_line_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00333">gvf_segment_loop_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00371">gvf_segment_wp1_wp2()</a>, <a class="el" href="gvf__sin_8c_source.html#l00069">gvf_sin_info()</a>, <a class="el" href="gvf_8c_source.html#l00475">gvf_sin_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00498">gvf_sin_wp_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00450">gvf_sin_XY_alpha()</a>, and <a class="el" href="gvf_8c_source.html#l00054">send_gvf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf__ellipse_8c_source.html#l00063">gvf_ellipse_info()</a>, <a class="el" href="gvf_8c_source.html#l00472">gvf_ellipse_wp()</a>, <a class="el" href="gvf_8c_source.html#l00433">gvf_ellipse_XY()</a>, <a class="el" href="gvf_8c_source.html#l00116">gvf_init()</a>, <a class="el" href="gvf_8c_source.html#l00273">gvf_line()</a>, <a class="el" href="gvf__line_8c_source.html#l00062">gvf_line_info()</a>, <a class="el" href="gvf_8c_source.html#l00328">gvf_line_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00418">gvf_line_wp_heading()</a>, <a class="el" href="gvf_8c_source.html#l00304">gvf_line_XY1_XY2()</a>, <a class="el" href="gvf_8c_source.html#l00366">gvf_segment_loop_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00404">gvf_segment_wp1_wp2()</a>, <a class="el" href="gvf__sin_8c_source.html#l00069">gvf_sin_info()</a>, <a class="el" href="gvf_8c_source.html#l00508">gvf_sin_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00531">gvf_sin_wp_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00483">gvf_sin_XY_alpha()</a>, and <a class="el" href="gvf_8c_source.html#l00054">send_gvf()</a>.</p>
 
 </div>
 </div>
@@ -2031,7 +2091,7 @@ H33</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4ee91589357a83ed771c51844e853db2.html">guidance</a></li><li class="navelem"><a class="el" href="dir_f11651931491444d54c9510df68bbdd5.html">gvf</a></li><li class="navelem"><a class="el" href="gvf_8h.html">gvf.h</a></li>
-    <li class="footer">Generated on Fri Jul 5 2024 21:17:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 12 2024 15:47:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -732,9 +732,7 @@ var onboard_modules =
     ] ],
     [ "mavlink module", "module__mavlink.html", [
       [ "Example for airframe file", "module__mavlink.html#module_load_example__mavlink", null ],
-      [ "Module configuration options", "module__mavlink.html#configuration__mavlink", [
-        [ "Configure Options", "module__mavlink.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__mavlink.html#configuration__mavlink", null ],
       [ "Module functions", "module__mavlink.html#functions__mavlink", [
         [ "Raw mavlink.xml file:", "module__mavlink.html#module_xml__mavlink", null ]
       ] ]
@@ -844,8 +842,15 @@ var onboard_modules =
     ] ],
     [ "xtend_rssi module", "module__xtend_rssi.html", [
       [ "Example for airframe file", "module__xtend_rssi.html#module_load_example__xtend_rssi", null ],
-      [ "Module configuration options", "module__xtend_rssi.html#configuration__xtend_rssi", null ],
+      [ "Module configuration options", "module__xtend_rssi.html#configuration__xtend_rssi", [
+        [ "Configure Options", "module__xtend_rssi.html#configure", null ]
+      ] ],
       [ "Module functions", "module__xtend_rssi.html#functions__xtend_rssi", [
+        [ "Periodic Functions", "module__xtend_rssi.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__xtend_rssi.html#files", [
+        [ "Header Files", "module__xtend_rssi.html#headers", null ],
+        [ "Source Files", "module__xtend_rssi.html#sources", null ],
         [ "Raw xtend_rssi.xml file:", "module__xtend_rssi.html#module_xml__xtend_rssi", null ]
       ] ]
     ] ],
@@ -1250,28 +1255,28 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
-    ] ],
-    [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
       ] ]
     ] ],
+    [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+    ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1341,7 +1346,6 @@ var onboard_modules =
     [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
       [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
       [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", [
-        [ "Airframe file section", "module__imu_lisa_m_v2_1.html#af_section", null ],
         [ ".1 Raw imu_lisa_m_v2.1.xml file:", "module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2", null ]
       ] ]
     ] ],
@@ -2588,17 +2592,8 @@ var onboard_modules =
     ] ],
     [ "baro_mpl3115 module", "module__baro_mpl3115.html", [
       [ "Example for airframe file", "module__baro_mpl3115.html#module_load_example__baro_mpl3115", null ],
-      [ "Module configuration options", "module__baro_mpl3115.html#configuration__baro_mpl3115", [
-        [ "Define Options", "module__baro_mpl3115.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__baro_mpl3115.html#configuration__baro_mpl3115", null ],
       [ "Module functions", "module__baro_mpl3115.html#functions__baro_mpl3115", [
-        [ "Init Functions", "module__baro_mpl3115.html#init_functions", null ],
-        [ "Event Functions", "module__baro_mpl3115.html#event_functions", null ],
-        [ "Periodic Functions", "module__baro_mpl3115.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__baro_mpl3115.html#files", [
-        [ "Header Files", "module__baro_mpl3115.html#headers", null ],
-        [ "Source Files", "module__baro_mpl3115.html#sources", null ],
         [ "Raw baro_mpl3115.xml file:", "module__baro_mpl3115.html#module_xml__baro_mpl3115", null ]
       ] ]
     ] ],
@@ -2837,7 +2832,9 @@ var onboard_modules =
     ] ],
     [ "stabilization_indi_simple module", "module__stabilization_indi_simple.html", [
       [ "Example for airframe file", "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple", null ],
-      [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", null ],
+      [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", [
+        [ "Airframe file section", "module__stabilization_indi_simple.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__stabilization_indi_simple.html#functions__stabilization_indi_simple", [
         [ "Raw stabilization_indi_simple.xml file:", "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple", null ]
       ] ]
@@ -2960,8 +2957,12 @@ var onboard_modules =
     ] ],
     [ "air_data module", "module__air_data.html", [
       [ "Example for airframe file", "module__air_data.html#module_load_example__air_data", null ],
-      [ "Module configuration options", "module__air_data.html#configuration__air_data", null ],
-      [ "Module functions", "module__air_data.html#functions__air_data", null ],
+      [ "Module configuration options", "module__air_data.html#configuration__air_data", [
+        [ "Define Options", "module__air_data.html#define", null ]
+      ] ],
+      [ "Module functions", "module__air_data.html#functions__air_data", [
+        [ "Init Functions", "module__air_data.html#init_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__air_data.html#datalink_functions__air_data", [
         [ "Raw air_data.xml file:", "module__air_data.html#module_xml__air_data", null ]
       ] ]
@@ -3094,6 +3095,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__glide_wing_lock.html#module_load_example__glide_wing_lock", null ],
       [ "Module configuration options", "module__glide_wing_lock.html#configuration__glide_wing_lock", null ],
       [ "Module functions", "module__glide_wing_lock.html#functions__glide_wing_lock", [
+        [ "Event Functions", "module__glide_wing_lock.html#event_functions", null ],
         [ "Raw glide_wing_lock.xml file:", "module__glide_wing_lock.html#module_xml__glide_wing_lock", null ]
       ] ]
     ] ],

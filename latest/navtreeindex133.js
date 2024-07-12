@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__demo_module.html":[1,461],
 "module__demo_module.html#functions__demo_module":[1,461,1],
 "module__demo_module.html#module_load_example__demo_module":[1,461,0],
 "module__demo_module.html#module_xml__demo_module":[1,461,1,0],
@@ -220,9 +221,10 @@ var NAVTREEINDEX133 =
 "module__geo_mag.html#module_xml__geo_mag":[1,469,1,0],
 "module__glide_wing_lock.html":[1,470],
 "module__glide_wing_lock.html#configuration__glide_wing_lock":[1,470,1],
+"module__glide_wing_lock.html#event_functions":[1,470,2,0],
 "module__glide_wing_lock.html#functions__glide_wing_lock":[1,470,2],
 "module__glide_wing_lock.html#module_load_example__glide_wing_lock":[1,470,0],
-"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,470,2,0],
+"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,470,2,1],
 "module__gpio_ext_common.html":[1,149],
 "module__gpio_ext_common.html#module_load_example__gpio_ext_common":[1,149,0],
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,149,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__gps_furuno.html#module_load_example__gps_furuno":[1,153,0],
 "module__gps_furuno.html#module_xml__gps_furuno":[1,153,2,0],
 "module__gps_intermcu.html":[1,154],
-"module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,154,2],
-"module__gps_intermcu.html#functions__gps_intermcu":[1,154,1],
-"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,154,0]
+"module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,154,2]
 };

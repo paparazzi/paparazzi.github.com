@@ -1,5 +1,13 @@
 var NAVTREEINDEX132 =
 {
+"module__baro_bmp3.html#module_xml__baro_bmp3":[1,392,2,0],
+"module__baro_board.html":[1,393],
+"module__baro_board.html#configuration__baro_board":[1,393,1],
+"module__baro_board.html#module_load_example__baro_board":[1,393,0],
+"module__baro_board.html#module_xml__baro_board":[1,393,1,0],
+"module__baro_board_common.html":[1,394],
+"module__baro_board_common.html#configuration__baro_board_common":[1,394,1],
+"module__baro_board_common.html#functions__baro_board_common":[1,394,2],
 "module__baro_board_common.html#module_load_example__baro_board_common":[1,394,0],
 "module__baro_board_common.html#module_xml__baro_board_common":[1,394,2,0],
 "module__baro_ets.html":[1,395],
@@ -14,16 +22,9 @@ var NAVTREEINDEX132 =
 "module__baro_hca.html#module_xml__baro_hca":[1,396,2,0],
 "module__baro_mpl3115.html":[1,397],
 "module__baro_mpl3115.html#configuration__baro_mpl3115":[1,397,1],
-"module__baro_mpl3115.html#define":[1,397,1,0],
-"module__baro_mpl3115.html#event_functions":[1,397,2,1],
-"module__baro_mpl3115.html#files":[1,397,3],
 "module__baro_mpl3115.html#functions__baro_mpl3115":[1,397,2],
-"module__baro_mpl3115.html#headers":[1,397,3,0],
-"module__baro_mpl3115.html#init_functions":[1,397,2,0],
 "module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,397,0],
-"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,397,3,2],
-"module__baro_mpl3115.html#periodic_functions":[1,397,2,2],
-"module__baro_mpl3115.html#sources":[1,397,3,1],
+"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,397,2,0],
 "module__baro_ms5534a.html":[1,388],
 "module__baro_ms5534a.html#functions__baro_ms5534a":[1,388,1],
 "module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,388,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__decawave_anchorless_communication.html":[1,127],
 "module__decawave_anchorless_communication.html#functions__decawave_anchorless_communication":[1,127,1],
 "module__decawave_anchorless_communication.html#module_load_example__decawave_anchorless_communication":[1,127,0],
-"module__decawave_anchorless_communication.html#module_xml__decawave_anchorless_communication":[1,127,1,0],
-"module__demo_module.html":[1,461]
+"module__decawave_anchorless_communication.html#module_xml__decawave_anchorless_communication":[1,127,1,0]
 };

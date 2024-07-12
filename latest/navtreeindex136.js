@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__jevois.html#module_load_example__jevois":[1,419,0],
 "module__jevois.html#module_xml__jevois":[1,419,2,0],
 "module__jevois_mavlink.html":[1,420],
 "module__jevois_mavlink.html#functions__jevois_mavlink":[1,420,1],
@@ -149,7 +150,6 @@ var NAVTREEINDEX136 =
 "module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,482,1,0],
 "module__mavlink.html":[1,109],
 "module__mavlink.html#configuration__mavlink":[1,109,1],
-"module__mavlink.html#configure":[1,109,1,0],
 "module__mavlink.html#functions__mavlink":[1,109,2],
 "module__mavlink.html#module_load_example__mavlink":[1,109,0],
 "module__mavlink.html#module_xml__mavlink":[1,109,2,0],

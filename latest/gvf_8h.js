@@ -1,11 +1,13 @@
 var gvf_8h =
 [
     [ "gvf_con", "gvf_8h.html#structgvf__con", [
+      [ "align", "gvf_8h.html#a7dc9e5281daf20087be0fbb3ff2d41e6", null ],
       [ "error", "gvf_8h.html#a0e63f9cdee0f1822f27fd383d1ad1af8", null ],
       [ "ke", "gvf_8h.html#a01c8f9b9e753f291c05e4ce3cda5f9c2", null ],
       [ "kn", "gvf_8h.html#ac9b60793a20f866e4877a9a92e3b8e0f", null ],
       [ "omega", "gvf_8h.html#aeff4aeb0554025e3633548201ee291d7", null ],
-      [ "s", "gvf_8h.html#a3ec80a36f1f7ecfd1924f0bcba7a349b", null ]
+      [ "s", "gvf_8h.html#a3ec80a36f1f7ecfd1924f0bcba7a349b", null ],
+      [ "speed", "gvf_8h.html#a2853994ca7b3e9cd1ebde9cf01097e4d", null ]
     ] ],
     [ "gvf_st", "gvf_8h.html#structgvf__st", [
       [ "course", "gvf_8h.html#ab760c6ce880beb9bf71f153dd415ae0e", null ],
@@ -59,7 +61,9 @@ var gvf_8h =
     [ "gvf_segment_loop_XY1_XY2", "gvf_8h.html#a2a80f941eb0ac816db8dce5ca5980935", null ],
     [ "gvf_segment_wp1_wp2", "gvf_8h.html#a65ea456ee52f4a9dca24c2c617114152", null ],
     [ "gvf_segment_XY1_XY2", "gvf_8h.html#a1d3d6f723a14fdd4a934b5d3483fb451", null ],
+    [ "gvf_set_align", "gvf_8h.html#a4d9626476a684a76d27cfcb0828e25f9", null ],
     [ "gvf_set_direction", "gvf_8h.html#a8efa9dd9d07def4d644d56b2d1fed6e2", null ],
+    [ "gvf_set_speed", "gvf_8h.html#a7d87809fec710967557d01e54c4ab865", null ],
     [ "gvf_sin_wp1_wp2", "gvf_8h.html#a5f88bca8a1324a1770c56ed8ae3ed8a1", null ],
     [ "gvf_sin_wp_alpha", "gvf_8h.html#a685f52908809609c5eb79676d03cd69e", null ],
     [ "gvf_sin_XY_alpha", "gvf_8h.html#a9af1a61d98cb2c59282573ecadeb364d", null ],

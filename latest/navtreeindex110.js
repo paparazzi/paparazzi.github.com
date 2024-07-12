@@ -1,5 +1,11 @@
 var NAVTREEINDEX110 =
 {
+"lisa__mx__common_8h.html#ae718fb13d2500192855c74e78e6c9c5e":[12,0,1,0,1,44,98],
+"lisa__mx__common_8h.html#ae74a702840b15e71530a2716b1ef497c":[12,0,1,0,1,44,195],
+"lisa__mx__common_8h.html#ae7940e40ba006e85377292fc82afdb9e":[12,0,1,0,1,44,50],
+"lisa__mx__common_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,44,192],
+"lisa__mx__common_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70":[12,0,1,0,1,44,172],
+"lisa__mx__common_8h.html#aeffb1efc9c3b1504553532d99093578a":[12,0,1,0,1,44,32],
 "lisa__mx__common_8h.html#af107a457e0d8e5e7c9910ef5e6f45317":[12,0,1,0,1,44,122],
 "lisa__mx__common_8h.html#af2e121d4d9900180af09be67e9b044ae":[12,0,1,0,1,44,129],
 "lisa__mx__common_8h.html#af31a40aaf52c73f41d4131d60bf22a63":[12,0,1,0,1,44,151],
@@ -243,11 +249,5 @@ var NAVTREEINDEX110 =
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a01b2a27910cfaed8a40043c8efe1e9a4":[12,0,1,0,1,13,0,0,1,160],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a02086c51746a93818f7b50d8d184bdfc":[12,0,1,0,1,13,0,0,1,219],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a0212e8071f0240410c1c341389596a7b":[12,0,1,0,1,13,0,0,1,84],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a02ab064f32c429288dce0b15b2e443a1":[12,0,1,0,1,13,0,0,1,231],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a02b4e3e6222baab7ee448cbbb2273370":[12,0,1,0,1,13,0,0,1,135],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a02c568ae2c758034cdf478f81b447af3":[12,0,1,0,1,13,0,0,1,230],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a0324f80d5775896053a81432c0475ac3":[12,0,1,0,1,13,0,0,1,12],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a0330335b8223bb2fd7b30a8bf6748a25":[12,0,1,0,1,13,0,0,1,208],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a035ea0d8259c0f89306c6a7d344705f2":[12,0,1,0,1,13,0,0,1,53],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a050fc59913309402f34dd2ea6ab3cdf8":[12,0,1,0,1,13,0,0,1,228]
+"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a02ab064f32c429288dce0b15b2e443a1":[12,0,1,0,1,13,0,0,1,231]
 };

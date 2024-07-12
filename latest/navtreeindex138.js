@@ -172,6 +172,7 @@ var NAVTREEINDEX138 =
 "module__stabilization_indi.html#module_load_example__stabilization_indi":[1,431,0],
 "module__stabilization_indi.html#module_xml__stabilization_indi":[1,431,2,0],
 "module__stabilization_indi_simple.html":[1,432],
+"module__stabilization_indi_simple.html#af_section":[1,432,1,0],
 "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple":[1,432,1],
 "module__stabilization_indi_simple.html#functions__stabilization_indi_simple":[1,432,2],
 "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple":[1,432,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "module__sys_id_chirp.html#module_xml__sys_id_chirp":[1,448,2,0],
 "module__sys_id_doublet.html":[1,449],
 "module__sys_id_doublet.html#configuration__sys_id_doublet":[1,449,1],
-"module__sys_id_doublet.html#functions__sys_id_doublet":[1,449,2],
-"module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,449,0]
+"module__sys_id_doublet.html#functions__sys_id_doublet":[1,449,2]
 };

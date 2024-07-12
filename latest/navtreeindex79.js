@@ -1,5 +1,11 @@
 var NAVTREEINDEX79 =
 {
+"hal__stm32__dma_8c_source.html":[12,0,1,0,0,0,0,5],
+"hal__stm32__dma_8h.html":[12,0,1,0,0,0,0,6],
+"hal__stm32__dma_8h.html#a0b4e7a953d80f9bfea313dc56f062698":[12,0,1,0,0,0,0,6,0,8],
+"hal__stm32__dma_8h.html#a0eeaca4a9d0494d44986bc443aa6c80c":[12,0,1,0,0,0,0,6,34],
+"hal__stm32__dma_8h.html#a11d3ac679daeb58d0cec0a4e6ca59010":[12,0,1,0,0,0,0,6,2],
+"hal__stm32__dma_8h.html#a14d513f93c406203a86e1f93096f7edd":[12,0,1,0,0,0,0,6,14],
 "hal__stm32__dma_8h.html#a1acf9aea6377ae53d1f66faed9dfc918":[12,0,1,0,0,0,0,6,18],
 "hal__stm32__dma_8h.html#a1acf9aea6377ae53d1f66faed9dfc918a08d9b4550917e08e7eb4ef12be66b112":[12,0,1,0,0,0,0,6,18,1],
 "hal__stm32__dma_8h.html#a1acf9aea6377ae53d1f66faed9dfc918a5d2a1abac5afbf64a2ec0e9495394229":[12,0,1,0,0,0,0,6,18,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX79 =
 "high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db":[12,0,1,0,6,42,5,34],
 "high__speed__logger__direct__memory_8c.html#aef14cb0b7724c47ddd230c64a57a7004":[12,0,1,0,6,42,5,15],
 "high__speed__logger__direct__memory_8c.html#aefaf4b09a745736700f62d961c79c5ec":[12,0,1,0,6,42,5,10],
-"high__speed__logger__direct__memory_8c.html#af6678d0a2636057a3984e67ba0b655c5":[12,0,1,0,6,42,5,44],
-"high__speed__logger__direct__memory_8c.html#afd0f786af2e70f2a97493b2b674a4124":[12,0,1,0,6,42,5,12],
-"high__speed__logger__direct__memory_8c.html#afdd9fd13586250efcd63cb728a19e7cc":[12,0,1,0,6,42,5,43],
-"high__speed__logger__direct__memory_8c_source.html":[12,0,1,0,6,42,5],
-"high__speed__logger__direct__memory_8h.html":[12,0,1,0,6,42,6],
-"high__speed__logger__direct__memory_8h.html#a0293c5b5614338d2045193c5e38fc9e6":[12,0,1,0,6,42,6,17],
-"high__speed__logger__direct__memory_8h.html#a04adb430229e9cb602498ef5f26e3d3e":[12,0,1,0,6,42,6,26]
+"high__speed__logger__direct__memory_8c.html#af6678d0a2636057a3984e67ba0b655c5":[12,0,1,0,6,42,5,44]
 };

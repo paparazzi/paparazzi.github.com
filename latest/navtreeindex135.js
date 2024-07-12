@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common":[1,195,0],
+"module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common":[1,195,2,0],
 "module__imu_bebop.html":[1,196],
 "module__imu_bebop.html#configuration__imu_bebop":[1,196,1],
 "module__imu_bebop.html#functions__imu_bebop":[1,196,2],
@@ -41,10 +43,9 @@ var NAVTREEINDEX135 =
 "module__imu_icm42688.html#module_load_example__imu_icm42688":[1,204,0],
 "module__imu_icm42688.html#module_xml__imu_icm42688":[1,204,2,0],
 "module__imu_lisa_m_v2_1.html":[1,205],
-"module__imu_lisa_m_v2_1.html#af_section":[1,205,1,0],
 "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1":[1,205,1],
 "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1":[1,205,0],
-"module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2":[1,205,1,1],
+"module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2":[1,205,1,0],
 "module__imu_lisa_mx_v2_1.html":[1,206],
 "module__imu_lisa_mx_v2_1.html#module_load_example__imu_lisa_mx_v2_1":[1,206,0],
 "module__imu_lisa_mx_v2_1.html#module_xml__imu_lisa_mx_v2":[1,206,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX135 =
 "module__ir_mlx.html#module_xml__ir_mlx":[1,290,1,0],
 "module__jevois.html":[1,419],
 "module__jevois.html#configuration__jevois":[1,419,1],
-"module__jevois.html#functions__jevois":[1,419,2],
-"module__jevois.html#module_load_example__jevois":[1,419,0]
+"module__jevois.html#functions__jevois":[1,419,2]
 };
