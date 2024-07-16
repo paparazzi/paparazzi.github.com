@@ -1,5 +1,6 @@
 var NAVTREEINDEX79 =
 {
+"hal__stm32__dma_8c.html#afb99e25bf4d6137920caaa45a6472771":[12,0,1,0,0,0,0,5,8],
 "hal__stm32__dma_8c_source.html":[12,0,1,0,0,0,0,5],
 "hal__stm32__dma_8h.html":[12,0,1,0,0,0,0,6],
 "hal__stm32__dma_8h.html#a0b4e7a953d80f9bfea313dc56f062698":[12,0,1,0,0,0,0,6,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX79 =
 "high__speed__logger__direct__memory_8c.html#aec11780c443a9a6fe5d78d70fb3087ea":[12,0,1,0,6,42,5,50],
 "high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db":[12,0,1,0,6,42,5,34],
 "high__speed__logger__direct__memory_8c.html#aef14cb0b7724c47ddd230c64a57a7004":[12,0,1,0,6,42,5,15],
-"high__speed__logger__direct__memory_8c.html#aefaf4b09a745736700f62d961c79c5ec":[12,0,1,0,6,42,5,10],
-"high__speed__logger__direct__memory_8c.html#af6678d0a2636057a3984e67ba0b655c5":[12,0,1,0,6,42,5,44]
+"high__speed__logger__direct__memory_8c.html#aefaf4b09a745736700f62d961c79c5ec":[12,0,1,0,6,42,5,10]
 };

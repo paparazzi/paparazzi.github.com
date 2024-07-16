@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,154,2],
 "module__gps_intermcu.html#functions__gps_intermcu":[1,154,1],
 "module__gps_intermcu.html#module_load_example__gps_intermcu":[1,154,0],
 "module__gps_intermcu.html#module_xml__gps_intermcu":[1,154,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,194,0],
 "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2":[1,194,0,0],
 "module__imu_aspirin_v2_common.html":[1,195],
-"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,195,1],
-"module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,195,2]
+"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,195,1]
 };

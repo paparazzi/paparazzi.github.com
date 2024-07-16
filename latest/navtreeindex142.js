@@ -1,5 +1,6 @@
 var NAVTREEINDEX142 =
 {
+"mpu60x0__regs_8h.html#a54e149ce6462def099a5a5e50b286d6a":[12,0,1,0,7,94,22],
 "mpu60x0__regs_8h.html#a568a7bd12b0c2e3da34c8e376547b75f":[12,0,1,0,7,94,16],
 "mpu60x0__regs_8h.html#a571e003bb3201f379ec4626fbd4a61a8":[12,0,1,0,7,94,49],
 "mpu60x0__regs_8h.html#a5722443012392a96bd3061d512a1d990":[12,0,1,0,7,94,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX142 =
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0a9d39d9cdac8b373644eee659bf104cdf":[12,0,1,0,7,100,5,4],
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0aba94a0e0677ff18c0a9cbdf1a36274a7":[12,0,1,0,7,100,5,5],
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0abf2bd2aeff9e7eb91cae444864e45962":[12,0,1,0,7,100,5,3],
-"mpu9250__i2c_8h.html#af3800437fede0b62d65f56b7cb1d129d":[12,0,1,0,7,100,0,3],
-"mpu9250__i2c_8h.html#structMpu9250__I2c":[12,0,1,0,7,100,0]
+"mpu9250__i2c_8h.html#af3800437fede0b62d65f56b7cb1d129d":[12,0,1,0,7,100,0,3]
 };
