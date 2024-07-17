@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jpeg_5fencoder_5fstructure_42724',['JPEG_ENCODER_STRUCTURE',['../jpeg_8c.html#aeaa801875a23172197e322bd9ec460ec',1,'jpeg.c']]]
+  ['jpeg_5fencoder_5fstructure_42734',['JPEG_ENCODER_STRUCTURE',['../jpeg_8c.html#aeaa801875a23172197e322bd9ec460ec',1,'jpeg.c']]]
 ];

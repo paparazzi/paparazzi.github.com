@@ -95,17 +95,17 @@ $(document).ready(function(){initNavTree('module__wls.html',''); initResizable()
 <h1><a class="anchor" id="module_load_example__wls"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;wls&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;WLS_N_U&quot; value=&quot;4&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;WLS_N_V&quot; value=&quot;4&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;WLS_N_U_MAX&quot; value=&quot;4&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;WLS_N_V_MAX&quot; value=&quot;4&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__wls"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>WLS_N_U</code> <b>value:</b> <em>4</em> <br  />
+<li><b>name:</b> <code>WLS_N_U_MAX</code> <b>value:</b> <em>4</em> <br  />
  Description: size of the control output vector (default: 6)</li>
-<li><b>name:</b> <code>WLS_N_V</code> <b>value:</b> <em>4</em> <br  />
+<li><b>name:</b> <code>WLS_N_V_MAX</code> <b>value:</b> <em>4</em> <br  />
  Description: size of the control objectives vector (default: 4)</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
@@ -138,8 +138,8 @@ Raw wls.xml file:</h2>
 <div class="line">      <span class="keyword">The</span> <span class="keyword">size</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">matrix</span> (<span class="keyword">output</span> <span class="keyword">vs.</span> <span class="keyword">objectives</span>) <span class="keyword">must</span> <span class="keyword">be</span> <span class="keyword">defined</span> <span class="keyword">large</span></div>
 <div class="line">      <span class="keyword">enough</span> <span class="keyword">for</span> <span class="keyword">all</span> <span class="keyword">the</span> <span class="keyword">controllers</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_N_U&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;size of the control output vector (default: 6)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_N_V&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;size of the control objectives vector (default: 4)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_N_U_MAX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;size of the control output vector (default: 6)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_N_V_MAX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;size of the control objectives vector (default: 4)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;wls_alloc.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;math/wls&quot;</span>/&gt;</div>
@@ -159,7 +159,7 @@ Raw wls.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Jul 16 2024 11:42:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 17 2024 19:08:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX194 =
 {
-"rotorcraft_2autopilot__static_8h_source.html":[12,0,1,0,3,2,16],
 "rotorcraft_2autopilot__utils_8c.html":[12,0,1,0,3,2,17],
 "rotorcraft_2autopilot__utils_8c.html#a2f9b6238e103bdbb862abb30b05768f2":[12,0,1,0,3,2,17,0],
 "rotorcraft_2autopilot__utils_8c_source.html":[12,0,1,0,3,2,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX194 =
 "rotorcraft_2navigation_8h.html#a5760e8d83b959120a40a8f27a4d072ae":[12,0,1,0,3,2,21,0,6],
 "rotorcraft_2navigation_8h.html#a5801dbe08f7119215fdcb571e9bc7137":[12,0,1,0,3,2,21,38],
 "rotorcraft_2navigation_8h.html#a5be4bc152fe795b4dc93f0799f05a21c":[12,0,1,0,3,2,21,54],
-"rotorcraft_2navigation_8h.html#a5db4abfe6235766ae345c1f4f85b5a49":[12,0,1,0,3,2,21,23]
+"rotorcraft_2navigation_8h.html#a5db4abfe6235766ae345c1f4f85b5a49":[12,0,1,0,3,2,21,23],
+"rotorcraft_2navigation_8h.html#a64a3814d1672e69989f80701a0ff5749":[12,0,1,0,3,2,21,65]
 };

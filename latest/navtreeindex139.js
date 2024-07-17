@@ -1,6 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"module__sys_id_doublet.html#functions__sys_id_doublet":[1,449,2],
 "module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,449,0],
 "module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,449,2,0],
 "module__sys_id_wave.html":[1,450],
@@ -249,5 +248,6 @@ var NAVTREEINDEX139 =
 "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo":[1,375,1,0],
 "module__wls.html":[1,505],
 "module__wls.html#configuration__wls":[1,505,1],
-"module__wls.html#module_load_example__wls":[1,505,0]
+"module__wls.html#module_load_example__wls":[1,505,0],
+"module__wls.html#module_xml__wls":[1,505,1,0]
 };

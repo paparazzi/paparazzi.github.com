@@ -268,8 +268,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#ROTATING_WING_STATE">ROTATING_WING_STATE (ID 181)</a></li>
 <li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
 <li class="level2"><a href="#GUIDANCE">GUIDANCE (ID 184)</a></li>
-<li class="level2"><a href="#WLS_v">WLS_v (ID 187)</a></li>
-<li class="level2"><a href="#WLS_u">WLS_u (ID 188)</a></li>
+<li class="level2"><a href="#WLS_V">WLS_V (ID 187)</a></li>
+<li class="level2"><a href="#WLS_U">WLS_U (ID 188)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
@@ -3796,34 +3796,38 @@ GUIDANCE (ID 184)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">jerk_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="WLS_v"></a>
-WLS_v (ID 187)</h2>
+<h2><a class="anchor" id="WLS_V"></a>
+WLS_V (ID 187)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">loop   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">gamma   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">iter   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">v   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">iter   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">v   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Wv   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="WLS_u"></a>
-WLS_u (ID 188)</h2>
+<h2><a class="anchor" id="WLS_U"></a>
+WLS_U (ID 188)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">loop   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Wu   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">u_pref   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">u_min   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">u_max   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">u_min   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">u_max   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">u   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
@@ -6955,7 +6959,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 16 2024 11:42:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 17 2024 19:08:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX171 =
 {
-"pano__unwrap_8h.html#ae9bc10516a9dbcb0feede01dc2159f38":[12,0,1,0,6,51,1,0,9],
 "pano__unwrap_8h.html#aeb2b6500bf59e9ad47a04ad9593873d9":[12,0,1,0,6,51,1,0,0],
 "pano__unwrap_8h.html#af61036767c133efffe89db6eee3ac1ba":[12,0,1,0,6,51,1,0,6],
 "pano__unwrap_8h.html#structpano__unwrap__t":[12,0,1,0,6,51,1,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#NEW_AIRCRAFT":[2,2,0],
 "paparazzi_messages.html#NEXT_MISSION":[2,1,26],
 "paparazzi_messages.html#NPS_GYRO_BIAS":[2,0,226],
-"paparazzi_messages.html#NPS_POS_LLH":[2,0,222]
+"paparazzi_messages.html#NPS_POS_LLH":[2,0,222],
+"paparazzi_messages.html#NPS_RATE_ATTITUDE":[2,0,225]
 };

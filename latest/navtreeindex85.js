@@ -1,6 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"humid__dpicco_8c.html#a6e3e12fe9e161831e968d30afb48197f":[12,0,1,0,6,44,15,1],
 "humid__dpicco_8c.html#a90595ebb9b16becacd49a56614c8a51d":[12,0,1,0,6,44,15,7],
 "humid__dpicco_8c.html#a97d55136395826e61d57497ff78bb203":[12,0,1,0,6,44,15,8],
 "humid__dpicco_8c.html#aa5d92a1b06d3b655cc24cf681c8530a0":[12,0,1,0,6,44,15,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX85 =
 "humid__sht__uart_8c.html":[12,0,1,0,6,44,27],
 "humid__sht__uart_8c.html#a2346a61d0dfc1512f95f350d4f6d858c":[12,0,1,0,6,44,27,4],
 "humid__sht__uart_8c.html#a24ccb0d3307ade52bfb1c68cf4b4bad6":[12,0,1,0,6,44,27,8],
-"humid__sht__uart_8c.html#a42870837efe17fd5bf0a411d2e56330b":[12,0,1,0,6,44,27,1]
+"humid__sht__uart_8c.html#a42870837efe17fd5bf0a411d2e56330b":[12,0,1,0,6,44,27,1],
+"humid__sht__uart_8c.html#a73fae161c1291d629d3ddd86f3c8d4ba":[12,0,1,0,6,44,27,0]
 };

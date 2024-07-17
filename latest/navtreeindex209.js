@@ -1,11 +1,5 @@
 var NAVTREEINDEX209 =
 {
-"structStabilizationSetpoint.html#afd83fc3898955c055fa4ea646dfd1eb1":[11,0,965,3],
-"structThrustSetpoint.html":[11,0,1009],
-"structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb":[11,0,1009,2],
-"structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784":[11,0,1009,0],
-"structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82":[11,0,1009,1],
-"structUSBMassStorageConfig.html":[11,0,1029],
 "structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,1029,3],
 "structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa":[11,0,1029,0],
 "structUSBMassStorageConfig.html#a4a36198660a33ab658a397f5512d0117":[11,0,1029,4],
@@ -249,5 +243,11 @@ var NAVTREEINDEX209 =
 "sys__id__chirp_8c.html#ab2dbc93f5ec917b752365ea03b7ac88c":[12,0,1,0,6,69,8,29],
 "sys__id__chirp_8c.html#ab47f99f3185651b0506231118cbe64d5":[12,0,1,0,6,69,8,23],
 "sys__id__chirp_8c.html#ab58514cddee23e1a72d465763b68f90f":[12,0,1,0,6,69,8,5],
-"sys__id__chirp_8c.html#abe4370df5ad98d6d4b39b2098a1deafc":[12,0,1,0,6,69,8,30]
+"sys__id__chirp_8c.html#abe4370df5ad98d6d4b39b2098a1deafc":[12,0,1,0,6,69,8,30],
+"sys__id__chirp_8c.html#ac48ecacb13409b9eb1a728ebe74ba271":[12,0,1,0,6,69,8,17],
+"sys__id__chirp_8c.html#ad0615cb08ee9d4ffdebaf5c777027c58":[12,0,1,0,6,69,8,31],
+"sys__id__chirp_8c.html#ad255f355f6f935c955a2237c76eb34a9":[12,0,1,0,6,69,8,3],
+"sys__id__chirp_8c.html#adcb98efd2f03586518ffbb29f2d24100":[12,0,1,0,6,69,8,6],
+"sys__id__chirp_8c.html#aeaacc8de78b225d2ae3fcbf2bea70cb1":[12,0,1,0,6,69,8,2],
+"sys__id__chirp_8c.html#aeb7ec911b8f81318e1d622ef78645adf":[12,0,1,0,6,69,8,14]
 };

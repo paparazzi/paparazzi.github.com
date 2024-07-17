@@ -25,7 +25,5 @@ var stabilization__indi_8h =
     [ "thrust_bx_act_dyn", "stabilization__indi_8h.html#af99a0439f0598bdbce1ad28854646f6e", null ],
     [ "thrust_bx_eff", "stabilization__indi_8h.html#af7b49650aef8a59b88d8b9e68aabb915", null ],
     [ "thrust_bx_state_filt", "stabilization__indi_8h.html#a02b1d1b2b1052dff0707a5218f5346ad", null ],
-    [ "u_max_stab_indi", "stabilization__indi_8h.html#a4e72c194dd0e8195c9a54998f7c174e7", null ],
-    [ "u_min_stab_indi", "stabilization__indi_8h.html#a1bf96e7b61db53738987e9fb9d5c4d40", null ],
-    [ "u_pref_stab_indi", "stabilization__indi_8h.html#a875453c949e1d95c4be77b9dd151334c", null ]
+    [ "wls_stab_p", "stabilization__indi_8h.html#a546e72854d2955d0296f0fb5455be6e5", null ]
 ];

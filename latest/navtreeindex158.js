@@ -1,6 +1,5 @@
 var NAVTREEINDEX158 =
 {
-"nps__ins_8h.html#a37df16d56213486a430d45f925225c71":[12,0,1,1,1,20,2],
 "nps__ins_8h.html#a89c3c505d205dced5e7dc45d0e629cb8":[12,0,1,1,1,20,3],
 "nps__ins_8h_source.html":[12,0,1,1,1,20],
 "nps__ivy_8c.html":[12,0,1,1,1,21],
@@ -249,5 +248,6 @@ var NAVTREEINDEX158 =
 "nps__sensor__aoa_8h.html#a2faff1ee09f26cd702c72210b4141ea5":[12,0,1,1,1,40,1],
 "nps__sensor__aoa_8h.html#a3880b2401ced3f332b3060287a035c60":[12,0,1,1,1,40,0,0],
 "nps__sensor__aoa_8h.html#a5b3e1ff67eea7f7d54de8b23edeadfef":[12,0,1,1,1,40,0,4],
-"nps__sensor__aoa_8h.html#a6d75cb54d04c9450fae8674b674de0d0":[12,0,1,1,1,40,0,3]
+"nps__sensor__aoa_8h.html#a6d75cb54d04c9450fae8674b674de0d0":[12,0,1,1,1,40,0,3],
+"nps__sensor__aoa_8h.html#a87145eebf2e27eb2685e92d8eb19cd11":[12,0,1,1,1,40,0,2]
 };

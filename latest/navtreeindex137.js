@@ -1,6 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__nav_hybrid.html#module_load_example__nav_hybrid":[1,327,0],
 "module__nav_hybrid.html#module_xml__nav_hybrid":[1,327,2,0],
 "module__nav_lace.html":[1,328],
 "module__nav_lace.html#functions__nav_lace":[1,328,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX137 =
 "module__radio_control_datalink.html#configuration__radio_control_datalink":[1,361,1],
 "module__radio_control_datalink.html#datalink_functions__radio_control_datalink":[1,361,3],
 "module__radio_control_datalink.html#functions__radio_control_datalink":[1,361,2],
-"module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,361,0]
+"module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,361,0],
+"module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,361,3,0]
 };

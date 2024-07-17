@@ -1,6 +1,5 @@
 var NAVTREEINDEX159 =
 {
-"nps__sensor__aoa_8h.html#a87145eebf2e27eb2685e92d8eb19cd11":[12,0,1,1,1,40,0,2],
 "nps__sensor__aoa_8h.html#ab056d374750deb68e36476dfc1cc3280":[12,0,1,1,1,40,0,1],
 "nps__sensor__aoa_8h.html#aff4573dfb3981359e087728798b18c23":[12,0,1,1,1,40,2],
 "nps__sensor__aoa_8h.html#structNpsSensorAngleOfAttack":[12,0,1,1,1,40,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX159 =
 "nucleo144__f767zi_8h.html#a4f939402a3adf6008ed5ca06dbd030b9":[12,0,1,0,1,17,0,2,107],
 "nucleo144__f767zi_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1":[12,0,1,0,1,17,0,2,49],
 "nucleo144__f767zi_8h.html#a549d4d49d1b0093e0e56bb63cb6f9729":[12,0,1,0,1,17,0,2,162],
-"nucleo144__f767zi_8h.html#a563096bba11519983f91f64d70b14e47":[12,0,1,0,1,17,0,2,203]
+"nucleo144__f767zi_8h.html#a563096bba11519983f91f64d70b14e47":[12,0,1,0,1,17,0,2,203],
+"nucleo144__f767zi_8h.html#a57082fbd09cf4ffb36ede12de84055f5":[12,0,1,0,1,17,0,2,66]
 };

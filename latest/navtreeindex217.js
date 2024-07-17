@@ -1,11 +1,5 @@
 var NAVTREEINDEX217 =
 {
-"tawaki_2chibios_2v1_81_2board_8h.html#aab8038de3d21529a7480df46cc7e6cff":[12,0,1,0,1,21,0,2,0,226],
-"tawaki_2chibios_2v1_81_2board_8h.html#aac8d81f4dcaccc62e3ce20a8ee1efd9d":[12,0,1,0,1,21,0,2,0,110],
-"tawaki_2chibios_2v1_81_2board_8h.html#aacae5f2ece1c97ebcf350821165fae68":[12,0,1,0,1,21,0,2,0,356],
-"tawaki_2chibios_2v1_81_2board_8h.html#aad04be48709eddb0e215dbe9ee1bd511":[12,0,1,0,1,21,0,2,0,70],
-"tawaki_2chibios_2v1_81_2board_8h.html#aad7ccbfca9d4bd146d0d48ad6473912e":[12,0,1,0,1,21,0,2,0,444],
-"tawaki_2chibios_2v1_81_2board_8h.html#aad98b9168836e3221989de95ffe90040":[12,0,1,0,1,21,0,2,0,321],
 "tawaki_2chibios_2v1_81_2board_8h.html#aaddc843efed03effa9394c3892a74eec":[12,0,1,0,1,21,0,2,0,162],
 "tawaki_2chibios_2v1_81_2board_8h.html#aae5f458b9f230693fafe40f0b3c916ea":[12,0,1,0,1,21,0,2,0,340],
 "tawaki_2chibios_2v1_81_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d":[12,0,1,0,1,21,0,2,0,171],
@@ -249,5 +243,11 @@ var NAVTREEINDEX217 =
 "tawaki_2chibios_2v2_80_2board_8h.html#a305583d4af7de1c879b6e01fb8894a82":[12,0,1,0,1,21,0,3,0,164],
 "tawaki_2chibios_2v2_80_2board_8h.html#a31822e2355c12e62dc4365e67a2e0ef9":[12,0,1,0,1,21,0,3,0,146],
 "tawaki_2chibios_2v2_80_2board_8h.html#a31c60a45057bad2923129e5510790c9b":[12,0,1,0,1,21,0,3,0,296],
-"tawaki_2chibios_2v2_80_2board_8h.html#a3273dfec2b12617595e1aa85f6206961":[12,0,1,0,1,21,0,3,0,343]
+"tawaki_2chibios_2v2_80_2board_8h.html#a3273dfec2b12617595e1aa85f6206961":[12,0,1,0,1,21,0,3,0,343],
+"tawaki_2chibios_2v2_80_2board_8h.html#a32770ebb67e9c7ff6ce165259765d471":[12,0,1,0,1,21,0,3,0,454],
+"tawaki_2chibios_2v2_80_2board_8h.html#a3290bbd4ec84b8df262c65f53c0a7d40":[12,0,1,0,1,21,0,3,0,26],
+"tawaki_2chibios_2v2_80_2board_8h.html#a32c10c25f4813e91109c1e17840033c7":[12,0,1,0,1,21,0,3,0,285],
+"tawaki_2chibios_2v2_80_2board_8h.html#a3375cce5eb38770027d1f875b567b6f9":[12,0,1,0,1,21,0,3,0,237],
+"tawaki_2chibios_2v2_80_2board_8h.html#a33a7bf0e7675a0aecb353cc992b61d8c":[12,0,1,0,1,21,0,3,0,286],
+"tawaki_2chibios_2v2_80_2board_8h.html#a33c45c908a9d289e01ef04e96a6a2b51":[12,0,1,0,1,21,0,3,0,180]
 };

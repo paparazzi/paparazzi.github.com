@@ -16,6 +16,8 @@ var stabilization__indi_8c =
     [ "send_ahrs_ref_quat", "stabilization__indi_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474", null ],
     [ "send_att_full_indi", "stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046", null ],
     [ "send_eff_mat_g_indi", "stabilization__indi_8c.html#a0a4f5220886acc0e4b8a29ff7cc3ec2c", null ],
+    [ "send_wls_u_stab", "stabilization__indi_8c.html#a5eea5d3feace0b4d69af6bfc10cc80be", null ],
+    [ "send_wls_v_stab", "stabilization__indi_8c.html#a3c30ad8e4326ea16f41b0fa43d582449", null ],
     [ "stabilization_indi_attitude_run", "stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39", null ],
     [ "stabilization_indi_enter", "stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52", null ],
     [ "stabilization_indi_init", "stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b", null ],
@@ -62,11 +64,9 @@ var stabilization__indi_8c =
     [ "indi_u", "stabilization__indi_8c.html#aed042e627d7cf7c6e7c6cdfe931ba077", null ],
     [ "indi_use_adaptive", "stabilization__indi_8c.html#abf1ef333c752f3f24a26a3efaede5fea", null ],
     [ "indi_v", "stabilization__indi_8c.html#ae44b57fc0adf11ab14e901f470cf5c1e", null ],
-    [ "indi_Wu", "stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047", null ],
     [ "measurement_lowpass_filters", "stabilization__indi_8c.html#a7e036da0df750a9e226b1b76460e816a", null ],
     [ "mu1", "stabilization__indi_8c.html#a50a59a3b98a91407f8977476c536ad5c", null ],
     [ "mu2", "stabilization__indi_8c.html#a8d40a3641e3c554e472f17e19dbf965d", null ],
-    [ "num_iter", "stabilization__indi_8c.html#aec2269ddcef2faf5f35a7257ba3b8f0b", null ],
     [ "num_thrusters", "stabilization__indi_8c.html#a437607c8c74d6f8e47eab1333468dae5", null ],
     [ "num_thrusters_x", "stabilization__indi_8c.html#a97d5c15989730f58dd1f6ad7a84a29fb", null ],
     [ "q_filt", "stabilization__indi_8c.html#a5ac8c1bac787aa8dd5ac7cedf7df8c4e", null ],
@@ -77,8 +77,5 @@ var stabilization__indi_8c =
     [ "stabilization_att_indi_cmd", "stabilization__indi_8c.html#a1ab1b3a18a465440c67159c392970573", null ],
     [ "stabilization_indi_filter_freq", "stabilization__indi_8c.html#ae6a63eb7e63c2850386999bda201f719", null ],
     [ "stablization_indi_yaw_dist_limit", "stabilization__indi_8c.html#aa9b259b8bcede01f9497459615608d78", null ],
-    [ "u_max_stab_indi", "stabilization__indi_8c.html#a4e72c194dd0e8195c9a54998f7c174e7", null ],
-    [ "u_min_stab_indi", "stabilization__indi_8c.html#a1bf96e7b61db53738987e9fb9d5c4d40", null ],
-    [ "u_pref_stab_indi", "stabilization__indi_8c.html#a875453c949e1d95c4be77b9dd151334c", null ],
-    [ "Wv", "stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d", null ]
+    [ "wls_stab_p", "stabilization__indi_8c.html#a546e72854d2955d0296f0fb5455be6e5", null ]
 ];
