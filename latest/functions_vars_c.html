@@ -600,13 +600,13 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="guidance__pid_8h.html#ab6f349fceba4962f7645a286bea08913">GuidancePID</a>
 </li>
 <li>cmd_elevator
-: <a class="el" href="eff__scheduling__rot__wing_8h.html#a20e4d4c587b2149c93b29279e62eabd3">rot_wing_eff_sched_var_t</a>
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a20e4d4c587b2149c93b29279e62eabd3">rot_wing_eff_sched_var_t</a>
 </li>
 <li>cmd_pusher
-: <a class="el" href="eff__scheduling__rot__wing_8h.html#a8637165a00daea4ceb18743bdb8eb421">rot_wing_eff_sched_var_t</a>
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a8637165a00daea4ceb18743bdb8eb421">rot_wing_eff_sched_var_t</a>
 </li>
 <li>cmd_pusher_scaled
-: <a class="el" href="eff__scheduling__rot__wing_8h.html#ad06a3ca03a7a5d36f6eec55963367528">rot_wing_eff_sched_var_t</a>
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#ad06a3ca03a7a5d36f6eec55963367528">rot_wing_eff_sched_var_t</a>
 </li>
 <li>cmd_seq_id
 : <a class="el" href="esc32_8c.html#a2ee432819c24a3aa1fd71203987eaec2">esc32_private</a>
@@ -615,7 +615,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="intermcu_8h.html#a4e0e7d125aeed74ed674e44456b44c2e">intermcu_t</a>
 </li>
 <li>cmd_T_mean_scaled
-: <a class="el" href="eff__scheduling__rot__wing_8h.html#a4961c1a19fa8b5abf7033e507c53b07e">rot_wing_eff_sched_var_t</a>
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a4961c1a19fa8b5abf7033e507c53b07e">rot_wing_eff_sched_var_t</a>
 </li>
 <li>cmd_thrust
 : <a class="el" href="guidance__pid_8h.html#a22251e6c4984f8efdb41308feb484a3e">GuidancePID</a>
@@ -844,10 +844,16 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#af355d1305603e72b0689d18c84565bee">AhrsIntCmplQuat</a>
 </li>
 <li>cosr
-: <a class="el" href="eff__scheduling__rot__wing_8h.html#a0e6c6fce1cc6d7637ab0b0fda0695b5d">rot_wing_eff_sched_var_t</a>
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a0e6c6fce1cc6d7637ab0b0fda0695b5d">rot_wing_eff_sched_var_t</a>
+, <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a73b34f97b04a7891de686c0dbbc3e550">RW_skew</a>
 </li>
 <li>cosr2
-: <a class="el" href="eff__scheduling__rot__wing_8h.html#aa6b26464c2bd9cfeda43d4610167c6c6">rot_wing_eff_sched_var_t</a>
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#aa6b26464c2bd9cfeda43d4610167c6c6">rot_wing_eff_sched_var_t</a>
+, <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a9317cc36650ab68cf78fed3a0464b732">RW_skew</a>
+</li>
+<li>cosr3
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#ad737d99b91821549a691e96d12624581">rot_wing_eff_sched_var_t</a>
+, <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a6f0913227a3653ac2ff0e4fffe9a425e">RW_skew</a>
 </li>
 <li>costheta
 : <a class="el" href="notch__filter__float_8h.html#a28207984540bd09480b1963a2afa9e21">SecondOrderNotchFilter</a>
@@ -893,9 +899,15 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#adfa45a844b28a87b280ea0c58295f7fb">locm3_spi_comm</a>
 , <a class="el" href="group__spi.html#a1ffecb70c8f221ab1296d06e61448485">spi_transaction</a>
 </li>
+<li>cphi
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a907ade1624f614aaebb762f1774e1d80">RW_attitude</a>
+</li>
 <li>cpol
 : <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#a6a0ef6f70f04cd3952e0161c6e855cc2">locm3_spi_comm</a>
 , <a class="el" href="group__spi.html#a1c63fdf45b423a121cf0666a8aaa2539">spi_transaction</a>
+</li>
+<li>cpsi
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a75272fc2c8f8dec576e7a0a72120cada">RW_attitude</a>
 </li>
 <li>cpu
 : <a class="el" href="digital__cam_2catia_2protocol_8h.html#a6713d659f03079a3b7cb56fd94b26a1c">mora_status_union::mora_status_struct</a>
@@ -952,6 +964,9 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 </li>
 <li>csw
 : <a class="el" href="usb__msd_8h.html#ab19a459d95b1b47cb5232c44c3473657">USBMassStorageDriver</a>
+</li>
+<li>ctheta
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a55f0064a60b1b706da3f5378a7a7b559">RW_attitude</a>
 </li>
 <li>ctrl1
 : <a class="el" href="lps25h_8h.html#ab8924e262c879f3bf52723883811fcd3">Lps25hConfig</a>
@@ -1037,7 +1052,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="imu_8h.html#a17e36f1f2f2e9c03de668e0429f0d517">imu_mag_t</a>
 </li>
 <li>current_state
-: <a class="el" href="rotwing__state_8h.html#a04635a66ed4ee062f51525e9e4b8f65c">RotwingState</a>
+: <a class="el" href="rotwing__state__V2_8h.html#a04635a66ed4ee062f51525e9e4b8f65c">RotwingState</a>
 </li>
 <li>current_temperature
 : <a class="el" href="meteo__stick_8h.html#a84b90fb9f263e982669a1320d7777b87">MeteoStick</a>
@@ -1091,7 +1106,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 17 2024 19:08:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 18 2024 12:47:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

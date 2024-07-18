@@ -96,7 +96,8 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="group__math__algebra__int.html#ab792ef065eb18b07aaf87d22109862c1">Int32RMat</a>
 , <a class="el" href="nav__survey__poly__rotorcraft_8c.html#aac60a3e9158de0a939538303cb109f4a">Line</a>
 , <a class="el" href="linear__kalman__filter_8h.html#a5c53714cefcff29393bb1ea697ec1f86">linear_kalman_filter</a>
-, <a class="el" href="eff__scheduling__rot__wing_8h.html#af7fe55b59cea14880269192c7b7e8588">rot_wing_eff_sched_param_t</a>
+, <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#af7fe55b59cea14880269192c7b7e8588">rot_wing_eff_sched_param_t</a>
+, <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#af2323554344259aebdef19d17667fe0e">RW_Model</a>
 </li>
 <li>m_attitude
 : <a class="el" href="imu__chimu_8h.html#a13f981baccf5efff5a84165af3e853da">CHIMU_PARSER_DATA</a>
@@ -332,10 +333,10 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="opticflow__calculator_8h.html#a302a13897d69528d8fd0f36c2a192854">opticflow_t</a>
 </li>
 <li>max_v_climb
-: <a class="el" href="rotwing__state_8h.html#a015eec2f536a8ba1113b02df266959a3">RotWingStateSettings</a>
+: <a class="el" href="rotwing__state__V2_8h.html#a015eec2f536a8ba1113b02df266959a3">RotWingStateSettings</a>
 </li>
 <li>max_v_descend
-: <a class="el" href="rotwing__state_8h.html#a79bbeccde20e89186e4de36941149616">RotWingStateSettings</a>
+: <a class="el" href="rotwing__state__V2_8h.html#a79bbeccde20e89186e4de36941149616">RotWingStateSettings</a>
 </li>
 <li>max_vel
 : <a class="el" href="range__forcefield_8h.html#acd8295bac35b1ab129336de483f2881c">range_forcefield_param_t</a>
@@ -354,6 +355,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="navdata_8h.html#af603afee3f442d69002b9de4eb8781fc">bmp180_calib_t</a>
 , <a class="el" href="structDSHOTDriver.html#a3b35fde29418ecbf8e38120484c2b058">DSHOTDriver</a>
 , <a class="el" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">MsgQueue</a>
+</li>
+<li>mB
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#ae03c6e20a9690ccb69d8988c4a63dba7">RW_Model</a>
 </li>
 <li>mc
 : <a class="el" href="bmp085_8h.html#aa0dabca72be046db44d132009de1a700">Bmp085Calib</a>
@@ -441,6 +445,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="median__filter_8h.html#a93cc2aaa94ed81dd12aa36a7f01faf45">MedianFilter3Float</a>
 , <a class="el" href="median__filter_8h.html#a80a82ce3f7f2f5cda12feae1ea17c929">MedianFilter3Int</a>
 </li>
+<li>mF
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a90a02ad338b7a5b50aba7236ebf3d032">RW_Model</a>
+</li>
 <li>mfg_id
 : <a class="el" href="cyrf6936_8h.html#acdcddf8d259f958e10152dda328b8f4b">Cyrf6936</a>
 </li>
@@ -504,6 +511,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>mixture
 : <a class="el" href="flight__gear_8h.html#ad24a3a680081502c7eebd494cf1f0237">FGNetCtrls</a>
+</li>
+<li>mL
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a29ed6f1b096a44271dbe6de487aa5ad5">RW_Model</a>
 </li>
 <li>mod
 : <a class="el" href="pprz__doublet_8h.html#a8759961e28559d72b9fdb0482024e325">doublet_t</a>
@@ -605,6 +615,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>motors_on
 : <a class="el" href="autopilot_8h.html#a0c4ab6f27858dfb519c474a5df894969">pprz_autopilot</a>
 </li>
+<li>mP
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a1c041e1c3d6112601e6082839b548823">RW_Model</a>
+</li>
 <li>mp_osi
 : <a class="el" href="flight__gear_8h.html#a79bf94b3687ecd90defa5f198ee8874f">FGNetFDM</a>
 </li>
@@ -618,6 +631,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="imu__mpu60x0__i2c_8h.html#aa740baedc08188687c2bc4bdd1e6e1a0">ImuMpu60x0</a>
 , <a class="el" href="imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5">ImuMpu9250</a>
 , <a class="el" href="imu__px4fmu_8h.html#ae9d72b5d7fae79662629c370a52caa01">ImuPx4fmu</a>
+</li>
+<li>mR
+: <a class="el" href="eff__scheduling__rot__wing__V2_8h.html#a8e8554e8f5caa9381dd4015cf4a5e931">RW_Model</a>
 </li>
 <li>msg
 : <a class="el" href="jevois_8c.html#aa732f610bb8788850bd724b858013382">jevois_t</a>
@@ -751,7 +767,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 17 2024 19:08:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 18 2024 12:47:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

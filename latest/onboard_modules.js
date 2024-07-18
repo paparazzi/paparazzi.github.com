@@ -648,6 +648,13 @@ var onboard_modules =
         [ "Raw eff_scheduling_rot_wing.xml file:", "module__eff_scheduling_rot_wing.html#module_xml__eff_scheduling_rot_wing", null ]
       ] ]
     ] ],
+    [ "eff_scheduling_rot_wing_v2 module", "module__eff_scheduling_rot_wing_v2.html", [
+      [ "Example for airframe file", "module__eff_scheduling_rot_wing_v2.html#module_load_example__eff_scheduling_rot_wing_v2", null ],
+      [ "Module configuration options", "module__eff_scheduling_rot_wing_v2.html#configuration__eff_scheduling_rot_wing_v2", null ],
+      [ "Module functions", "module__eff_scheduling_rot_wing_v2.html#functions__eff_scheduling_rot_wing_v2", [
+        [ "Raw eff_scheduling_rot_wing_V2.xml file:", "module__eff_scheduling_rot_wing_v2.html#module_xml__eff_scheduling_rot_wing_v2", null ]
+      ] ]
+    ] ],
     [ "follow_me module", "module__follow_me.html", [
       [ "Example for airframe file", "module__follow_me.html#module_load_example__follow_me", null ],
       [ "Module configuration options", "module__follow_me.html#configuration__follow_me", null ],
@@ -2432,6 +2439,13 @@ var onboard_modules =
       [ "Module configuration options", "module__rotwing_state.html#configuration__rotwing_state", null ],
       [ "Module functions", "module__rotwing_state.html#functions__rotwing_state", [
         [ "Raw rotwing_state.xml file:", "module__rotwing_state.html#module_xml__rotwing_state", null ]
+      ] ]
+    ] ],
+    [ "rotwing_state_v2 module", "module__rotwing_state_v2.html", [
+      [ "Example for airframe file", "module__rotwing_state_v2.html#module_load_example__rotwing_state_v2", null ],
+      [ "Module configuration options", "module__rotwing_state_v2.html#configuration__rotwing_state_v2", null ],
+      [ "Module functions", "module__rotwing_state_v2.html#functions__rotwing_state_v2", [
+        [ "Raw rotwing_state_V2.xml file:", "module__rotwing_state_v2.html#module_xml__rotwing_state_v2", null ]
       ] ]
     ] ],
     [ "wing_rotation_adc_sensor module", "module__wing_rotation_adc_sensor.html", [
