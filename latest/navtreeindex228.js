@@ -1,5 +1,6 @@
 var NAVTREEINDEX228 =
 {
+"usb__msd_8h.html#structPACK__STRUCT__STRUCT":[12,0,1,0,6,42,0,7,0],
 "usb__msd_8h.html#structPACK__STRUCT__STRUCT":[12,0,1,0,6,42,0,6,0],
 "usb__msd_8h.html#structUSBMassStorageDriver":[12,0,1,0,6,42,0,7,2],
 "usb__msd_8h_source.html":[12,0,1,0,6,42,0,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX228 =
 "video__device_8h.html":[12,0,1,0,7,128],
 "video__device_8h.html#a16e7c506a3c1c5c05d272ae8fb59088a":[12,0,1,0,7,128,1,4],
 "video__device_8h.html#a293f1b6d26bc94a29f09d118466ff457":[12,0,1,0,7,128,1,0],
-"video__device_8h.html#a2c5f2a0cf3ddc41ef822800c51218804":[12,0,1,0,7,128,2,12],
-"video__device_8h.html#a330c255582dde51ceef02d389f7c5723":[12,0,1,0,7,128,3]
+"video__device_8h.html#a2c5f2a0cf3ddc41ef822800c51218804":[12,0,1,0,7,128,2,12]
 };

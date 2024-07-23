@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__ahrs_common.html#functions__ahrs_common":[1,27,2],
 "module__ahrs_common.html#module_load_example__ahrs_common":[1,27,0],
 "module__ahrs_common.html#module_xml__ahrs_common":[1,27,2,0],
 "module__ahrs_float_cmpl_quat.html":[1,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__board_tawaki_2_0.html":[1,44],
 "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
 "module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
-"module__cam_point.html":[1,47],
-"module__cam_point.html#functions__cam_point":[1,47,1]
+"module__cam_point.html":[1,47]
 };

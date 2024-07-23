@@ -1,12 +1,13 @@
 var NAVTREEINDEX197 =
 {
+"rotwing__state__V2_8h.html#af240d5cd72abcb84dd6769a7ef5c297d":[12,0,1,0,6,60,5,17],
 "rotwing__state__V2_8h.html#af33fac71608471782b64755836a8c76f":[12,0,1,0,6,60,5,18],
 "rotwing__state__V2_8h.html#af78564f68f03ee710e770650eb57010d":[12,0,1,0,6,60,3,1,5],
 "rotwing__state__V2_8h.html#af78564f68f03ee710e770650eb57010d":[12,0,1,0,6,60,5,1,5],
 "rotwing__state__V2_8h.html#afa13f4b2f313bf35a88b4526b25eff00":[12,0,1,0,6,60,5,3],
 "rotwing__state__V2_8h.html#afee150803a6024395d1bfabee893e609":[12,0,1,0,6,60,5,7],
-"rotwing__state__V2_8h.html#structRotWingStateSettings":[12,0,1,0,6,60,3,1],
 "rotwing__state__V2_8h.html#structRotWingStateSettings":[12,0,1,0,6,60,5,1],
+"rotwing__state__V2_8h.html#structRotWingStateSettings":[12,0,1,0,6,60,3,1],
 "rotwing__state__V2_8h.html#structRotWingStateSkewing":[12,0,1,0,6,60,3,2],
 "rotwing__state__V2_8h.html#structRotWingStateSkewing":[12,0,1,0,6,60,5,2],
 "rotwing__state__V2_8h.html#structRotwingState":[12,0,1,0,6,60,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX197 =
 "rover__guidance__holonomic_8c.html#a403d1cbff12b659af484fcd8f9c4b437":[12,0,1,0,3,3,0,2,4],
 "rover__guidance__holonomic_8c.html#a6bfc5d39a496e8a2ddbf5448dd610916":[12,0,1,0,3,3,0,2,2],
 "rover__guidance__holonomic_8c.html#a70e751b339e56d256a5393c443f508ce":[12,0,1,0,3,3,0,2,10],
-"rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3":[12,0,1,0,3,3,0,2,11],
-"rover__guidance__holonomic_8c.html#aa0cd35f1088f9e822fc414e23e02cab6":[12,0,1,0,3,3,0,2,1]
+"rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3":[12,0,1,0,3,3,0,2,11]
 };

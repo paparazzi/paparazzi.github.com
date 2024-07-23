@@ -1184,6 +1184,9 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <li>INS_EKF2_MAX_FLOW_RATE
 : <a class="el" href="ins__ekf2_8cpp.html#a54ec87da45ce6e027f8f4b2a390e0719">ins_ekf2.cpp</a>
 </li>
+<li>INS_EKF2_MAX_REL_LENGTH_ERROR
+: <a class="el" href="ins__ekf2_8cpp.html#a301b62debcfaaa03dd500c8119e09700">ins_ekf2.cpp</a>
+</li>
 <li>INS_EKF2_MIN_FLOW_QUALITY
 : <a class="el" href="ins__ekf2_8cpp.html#aa2818d0eed1ea35f99c77e40cf12533d">ins_ekf2.cpp</a>
 </li>
@@ -1458,8 +1461,8 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 : <a class="el" href="ahrs__sim_8c.html#a4ed952896c549e2304de785adfda2bf9">ahrs_sim.c</a>
 </li>
 <li>INS_PT_GPS_ID
-: <a class="el" href="ins__gps__passthrough__utm_8c.html#ab1e863c87d1bb6d66b67eacfe17e922c">ins_gps_passthrough_utm.c</a>
-, <a class="el" href="ins__gps__passthrough_8c.html#ab1e863c87d1bb6d66b67eacfe17e922c">ins_gps_passthrough.c</a>
+: <a class="el" href="ins__gps__passthrough_8c.html#ab1e863c87d1bb6d66b67eacfe17e922c">ins_gps_passthrough.c</a>
+, <a class="el" href="ins__gps__passthrough__utm_8c.html#ab1e863c87d1bb6d66b67eacfe17e922c">ins_gps_passthrough_utm.c</a>
 </li>
 <li>INS_PT_IMU_ID
 : <a class="el" href="ins__gps__passthrough_8c.html#a81e22864d736d2fa7c57a94bf322eed8">ins_gps_passthrough.c</a>
@@ -1548,8 +1551,8 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 , <a class="el" href="lsm303dlhc__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">lsm303dlhc_i2c.c</a>
 , <a class="el" href="lsm6ds33__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">lsm6ds33_i2c.c</a>
 , <a class="el" href="mpu60x0__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">mpu60x0_i2c.c</a>
-, <a class="el" href="ak8963_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">ak8963.c</a>
 , <a class="el" href="mpu60x0__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">mpu60x0_spi.c</a>
+, <a class="el" href="adxl345__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">adxl345_spi.c</a>
 , <a class="el" href="mpu9250__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">mpu9250_i2c.c</a>
 , <a class="el" href="mpu9250__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">mpu9250_spi.c</a>
 , <a class="el" href="ms2100_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">ms2100.c</a>
@@ -1559,7 +1562,7 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 , <a class="el" href="ist8310_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">ist8310.c</a>
 , <a class="el" href="hmc58xx_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">hmc58xx.c</a>
 , <a class="el" href="bmi088__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">bmi088_i2c.c</a>
-, <a class="el" href="adxl345__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">adxl345_spi.c</a>
+, <a class="el" href="ak8963_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">ak8963.c</a>
 , <a class="el" href="adxl345__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">adxl345_i2c.c</a>
 , <a class="el" href="ezcurrent_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">ezcurrent.c</a>
 , <a class="el" href="imu__mpu9250__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">imu_mpu9250_spi.c</a>
@@ -1614,11 +1617,11 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <li>INT32_EULERS_DOT_321_OF_RATES
 : <a class="el" href="group__math__algebra__int.html#ga359628ce78b4c873eb6e648fd82a4acd">pprz_algebra_int.h</a>
 </li>
-<li>INT32_EULERS_DOT_OF_RATES
-: <a class="el" href="group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d">pprz_algebra_int.h</a>
-</li>
 <li>int32_eulers_dot_of_rates
 : <a class="el" href="group__math__algebra__int.html#gab40f6c5026831fe7afb9bd0236713df2">pprz_algebra_int.h</a>
+</li>
+<li>INT32_EULERS_DOT_OF_RATES
+: <a class="el" href="group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d">pprz_algebra_int.h</a>
 </li>
 <li>INT32_EULERS_LSHIFT
 : <a class="el" href="group__math__algebra__int.html#gab95c15b48f7f46eab39d4482df9f7c62">pprz_algebra_int.h</a>
@@ -1737,11 +1740,11 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <li>INT32_RMAT_COMP_INV
 : <a class="el" href="group__math__algebra__int.html#ga24baf88f9a3ca8016fdf5bc40b4f8570">pprz_algebra_int.h</a>
 </li>
-<li>INT32_RMAT_OF_EULERS
-: <a class="el" href="group__math__algebra__int.html#gafff0280f8ca7d9accdb4db59511b2e8d">pprz_algebra_int.h</a>
-</li>
 <li>int32_rmat_of_eulers
 : <a class="el" href="group__math__algebra__int.html#ga5fc8ef9a241c8a47e26b0e143884807b">pprz_algebra_int.h</a>
+</li>
+<li>INT32_RMAT_OF_EULERS
+: <a class="el" href="group__math__algebra__int.html#gafff0280f8ca7d9accdb4db59511b2e8d">pprz_algebra_int.h</a>
 </li>
 <li>INT32_RMAT_OF_EULERS_312
 : <a class="el" href="group__math__algebra__int.html#ga870272b71562d3d586e02fb38ab8826c">pprz_algebra_int.h</a>
@@ -2805,7 +2808,7 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 22 2024 16:02:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 23 2024 09:13:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

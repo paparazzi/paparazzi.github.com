@@ -1,5 +1,6 @@
 var NAVTREEINDEX127 =
 {
+"mavlink_8c.html#a682a3d23388ee49da7232e7501664a5b":[12,0,1,0,6,15,21,32],
 "mavlink_8c.html#a68dca5c274abd4bd53d3f2f7cb85c14c":[12,0,1,0,6,15,21,1],
 "mavlink_8c.html#a69b29097db843b873c8b348c837cfd03":[12,0,1,0,6,15,21,16],
 "mavlink_8c.html#a69b54d7a5d0429f7bcd39568475a598b":[12,0,1,0,6,15,21,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX127 =
 "max7456_8h.html#ab6448fcf9ae22d27c05ce676582075dc":[12,0,1,0,6,20,1,3],
 "max7456_8h.html#aced31f57be7c424c3c56f09970a42812":[12,0,1,0,6,20,1,6],
 "max7456_8h_source.html":[12,0,1,0,6,20,1],
-"max7456__regs_8h.html":[12,0,1,0,6,20,2],
-"max7456__regs_8h.html#a012ce3ca459504e88c3a18ba01cf8cb2":[12,0,1,0,6,20,2,40]
+"max7456__regs_8h.html":[12,0,1,0,6,20,2]
 };

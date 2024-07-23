@@ -28,6 +28,7 @@ var ins__ekf2_8cpp =
     [ "INS_EKF2_IMU_POS_Z", "ins__ekf2_8cpp.html#a273721cdce710e4bc22a1756671cce2d", null ],
     [ "INS_EKF2_MAG_ID", "ins__ekf2_8cpp.html#abb23ae0b7e109cbec72d45bc447d5568", null ],
     [ "INS_EKF2_MAX_FLOW_RATE", "ins__ekf2_8cpp.html#a54ec87da45ce6e027f8f4b2a390e0719", null ],
+    [ "INS_EKF2_MAX_REL_LENGTH_ERROR", "ins__ekf2_8cpp.html#a301b62debcfaaa03dd500c8119e09700", null ],
     [ "INS_EKF2_MIN_FLOW_QUALITY", "ins__ekf2_8cpp.html#aa2818d0eed1ea35f99c77e40cf12533d", null ],
     [ "INS_EKF2_OF_ID", "ins__ekf2_8cpp.html#ad090a04a8816087ea4f3e8ec0eb6f31e", null ],
     [ "INS_EKF2_RANGE_MAIN_AGL", "ins__ekf2_8cpp.html#a548fd3d1a15bd060c2a721b23d144b44", null ],

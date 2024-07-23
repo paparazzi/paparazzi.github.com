@@ -1,5 +1,6 @@
 var NAVTREEINDEX208 =
 {
+"stabilization__indi__simple_8h.html#ac485a99bf760844a871e965bf92d96f8":[12,0,1,0,3,2,2,37,1,7],
 "stabilization__indi__simple_8h.html#ad855728941014914e87de5b636ad1a7b":[12,0,1,0,3,2,2,37,1,0],
 "stabilization__indi__simple_8h.html#aded0520120adfd64d960796a458cb38b":[12,0,1,0,3,2,2,37,2,3],
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,37,2,11],
@@ -196,8 +197,8 @@ var NAVTREEINDEX208 =
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baa5aea661a147e9fe25d5c2a2d48a51e7":[12,0,1,0,0,3,0,1,3,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baf9b37238aba13fc136c5f0cce2db1838":[12,0,1,0,0,3,0,1,3,0],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9":[12,0,1,0,0,3,0,1,1],
-"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,3,0,1,1,1],
+"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,3,0,1],
 "stm32_2mcu__periph_2gpio__arch_8c.html":[12,0,1,0,0,3,0,4],
 "stm32_2mcu__periph_2gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2":[12,0,1,0,0,3,0,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX208 =
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a303821e177e52ec03d248bbc8e70fbd3":[12,0,1,0,0,3,0,8,3],
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a3a5e286c91b791f687a78db23b7145e2":[12,0,1,0,0,3,0,8,1],
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a45920a6a88c45cb2cb798b01306707a2":[12,0,1,0,0,3,0,8,2],
-"stm32_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[12,0,1,0,0,3,0,8,0],
-"stm32_2mcu__periph_2pwm__input__arch_8c_source.html":[12,0,1,0,0,3,0,8]
+"stm32_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[12,0,1,0,0,3,0,8,0]
 };
