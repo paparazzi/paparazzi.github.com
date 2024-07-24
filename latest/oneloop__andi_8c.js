@@ -59,7 +59,6 @@ var oneloop__andi_8c =
     [ "send_eff_mat_guid_oneloop_andi", "oneloop__andi_8c.html#a88c2d1b30f776b3152d76a86013d8232", null ],
     [ "send_eff_mat_stab_oneloop_andi", "oneloop__andi_8c.html#a787378b2891aa8eed851e00f78ec27c1", null ],
     [ "send_guidance_oneloop_andi", "oneloop__andi_8c.html#ac627e584385e73338d8bc27a19d28f9c", null ],
-    [ "send_oneloop_actuator_state", "oneloop__andi_8c.html#a8e91499bd421d9d8e1d62427c376a09b", null ],
     [ "send_oneloop_andi", "oneloop__andi_8c.html#ae20e34f35b3cade56ec25786ca50ab7c", null ],
     [ "send_oneloop_debug", "oneloop__andi_8c.html#ae45b54ec7e7dff3ee5e0142736a78ad9", null ],
     [ "vect_bound_nd", "oneloop__andi_8c.html#adc368e81ebd03f8783b5296eed2e0d46", null ],

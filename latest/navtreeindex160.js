@@ -1,5 +1,6 @@
 var NAVTREEINDEX160 =
 {
+"nps__sensor__mag_8h.html#structNpsSensorMag":[12,0,1,1,1,48,0],
 "nps__sensor__mag_8h_source.html":[12,0,1,1,1,48],
 "nps__sensor__sideslip_8c.html":[12,0,1,1,1,49],
 "nps__sensor__sideslip_8c.html#a255f019d1992f6770471565fd4cf35fe":[12,0,1,1,1,49,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX160 =
 "nucleo144__f767zi_8h.html#ab692c93371d232ee70eb8266b0792877":[12,0,1,0,1,17,0,2,131],
 "nucleo144__f767zi_8h.html#ab7bd2a31afc7c8fd38b24511bd1c073c":[12,0,1,0,1,17,0,2,28],
 "nucleo144__f767zi_8h.html#abbd91072dca14f3f3733e4dda439b11e":[12,0,1,0,1,17,0,2,65],
-"nucleo144__f767zi_8h.html#abdf3f086a6274a36ead16fc540d4a05c":[12,0,1,0,1,17,0,2,80],
-"nucleo144__f767zi_8h.html#abed465f8e9387dc4c034b1d71989043c":[12,0,1,0,1,17,0,2,140]
+"nucleo144__f767zi_8h.html#abdf3f086a6274a36ead16fc540d4a05c":[12,0,1,0,1,17,0,2,80]
 };

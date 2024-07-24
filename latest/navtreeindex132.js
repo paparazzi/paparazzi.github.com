@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__ahrs_common.html#configuration__ahrs_common":[1,27,1],
 "module__ahrs_common.html#functions__ahrs_common":[1,27,2],
 "module__ahrs_common.html#module_load_example__ahrs_common":[1,27,0],
 "module__ahrs_common.html#module_xml__ahrs_common":[1,27,2,0],
@@ -43,7 +44,9 @@ var NAVTREEINDEX132 =
 "module__air_data.html":[1,453],
 "module__air_data.html#configuration__air_data":[1,453,1],
 "module__air_data.html#datalink_functions__air_data":[1,453,3],
+"module__air_data.html#define":[1,453,1,0],
 "module__air_data.html#functions__air_data":[1,453,2],
+"module__air_data.html#init_functions":[1,453,2,0],
 "module__air_data.html#module_load_example__air_data":[1,453,0],
 "module__air_data.html#module_xml__air_data":[1,453,3,0],
 "module__airborne_ant_track.html":[1,454],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0],
 "module__board_tawaki_2_0.html":[1,44],
 "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
-"module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
-"module__cam_point.html":[1,47],
-"module__cam_point.html#functions__cam_point":[1,47,1],
-"module__cam_point.html#module_load_example__cam_point":[1,47,0]
+"module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0]
 };

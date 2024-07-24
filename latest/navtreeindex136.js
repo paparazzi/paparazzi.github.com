@@ -1,5 +1,8 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi":[1,215,2,0],
+"module__imu_nps.html":[1,216],
+"module__imu_nps.html#functions__imu_nps":[1,216,1],
 "module__imu_nps.html#module_load_example__imu_nps":[1,216,0],
 "module__imu_nps.html#module_xml__imu_nps":[1,216,1,0],
 "module__imu_openpilot_revo.html":[1,217],
@@ -246,8 +249,5 @@ var NAVTREEINDEX136 =
 "module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,262,2],
 "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,262,0],
 "module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,262,3,0],
-"module__logger_sd_spi_direct.html":[1,263],
-"module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct":[1,263,1],
-"module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,263,3],
-"module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,263,2]
+"module__logger_sd_spi_direct.html":[1,263]
 };

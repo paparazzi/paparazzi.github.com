@@ -395,7 +395,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__cv_blob_locator.html#module_load_example__cv_blob_locator", null ],
       [ "Module configuration options", "module__cv_blob_locator.html#configuration__cv_blob_locator", null ],
       [ "Module functions", "module__cv_blob_locator.html#functions__cv_blob_locator", [
-        [ "Event Functions", "module__cv_blob_locator.html#event_functions", null ],
         [ "Raw cv_blob_locator.xml file:", "module__cv_blob_locator.html#module_xml__cv_blob_locator", null ]
       ] ]
     ] ],
@@ -698,9 +697,7 @@ var onboard_modules =
     ] ],
     [ "shift_tracking module", "module__shift_tracking.html", [
       [ "Example for airframe file", "module__shift_tracking.html#module_load_example__shift_tracking", null ],
-      [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", [
-        [ "Airframe file section", "module__shift_tracking.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", null ],
       [ "Module functions", "module__shift_tracking.html#functions__shift_tracking", [
         [ "Raw shift_tracking.xml file:", "module__shift_tracking.html#module_xml__shift_tracking", null ]
       ] ]
@@ -838,9 +835,7 @@ var onboard_modules =
     ] ],
     [ "telemetry_w5100 module", "module__telemetry_w5100.html", [
       [ "Example for airframe file", "module__telemetry_w5100.html#module_load_example__telemetry_w5100", null ],
-      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", [
-        [ "Configure Options", "module__telemetry_w5100.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", null ],
       [ "Module functions", "module__telemetry_w5100.html#functions__telemetry_w5100", [
         [ "Raw telemetry_w5100.xml file:", "module__telemetry_w5100.html#module_xml__telemetry_w5100", null ]
       ] ]
@@ -854,8 +849,15 @@ var onboard_modules =
     ] ],
     [ "xtend_rssi module", "module__xtend_rssi.html", [
       [ "Example for airframe file", "module__xtend_rssi.html#module_load_example__xtend_rssi", null ],
-      [ "Module configuration options", "module__xtend_rssi.html#configuration__xtend_rssi", null ],
+      [ "Module configuration options", "module__xtend_rssi.html#configuration__xtend_rssi", [
+        [ "Configure Options", "module__xtend_rssi.html#configure", null ]
+      ] ],
       [ "Module functions", "module__xtend_rssi.html#functions__xtend_rssi", [
+        [ "Periodic Functions", "module__xtend_rssi.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__xtend_rssi.html#files", [
+        [ "Header Files", "module__xtend_rssi.html#headers", null ],
+        [ "Source Files", "module__xtend_rssi.html#sources", null ],
         [ "Raw xtend_rssi.xml file:", "module__xtend_rssi.html#module_xml__xtend_rssi", null ]
       ] ]
     ] ],
@@ -1268,12 +1270,12 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
@@ -2747,16 +2749,8 @@ var onboard_modules =
     ] ],
     [ "temp_adc module", "module__temp_adc.html", [
       [ "Example for airframe file", "module__temp_adc.html#module_load_example__temp_adc", null ],
-      [ "Module configuration options", "module__temp_adc.html#configuration__temp_adc", [
-        [ "Define Options", "module__temp_adc.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__temp_adc.html#configuration__temp_adc", null ],
       [ "Module functions", "module__temp_adc.html#functions__temp_adc", [
-        [ "Init Functions", "module__temp_adc.html#init_functions", null ],
-        [ "Periodic Functions", "module__temp_adc.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__temp_adc.html#files", [
-        [ "Header Files", "module__temp_adc.html#headers", null ],
-        [ "Source Files", "module__temp_adc.html#sources", null ],
         [ "Raw temp_adc.xml file:", "module__temp_adc.html#module_xml__temp_adc", null ]
       ] ]
     ] ],
@@ -2852,7 +2846,9 @@ var onboard_modules =
     ] ],
     [ "stabilization_indi_simple module", "module__stabilization_indi_simple.html", [
       [ "Example for airframe file", "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple", null ],
-      [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", null ],
+      [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", [
+        [ "Airframe file section", "module__stabilization_indi_simple.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__stabilization_indi_simple.html#functions__stabilization_indi_simple", [
         [ "Raw stabilization_indi_simple.xml file:", "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple", null ]
       ] ]
@@ -2975,8 +2971,12 @@ var onboard_modules =
     ] ],
     [ "air_data module", "module__air_data.html", [
       [ "Example for airframe file", "module__air_data.html#module_load_example__air_data", null ],
-      [ "Module configuration options", "module__air_data.html#configuration__air_data", null ],
-      [ "Module functions", "module__air_data.html#functions__air_data", null ],
+      [ "Module configuration options", "module__air_data.html#configuration__air_data", [
+        [ "Define Options", "module__air_data.html#define", null ]
+      ] ],
+      [ "Module functions", "module__air_data.html#functions__air_data", [
+        [ "Init Functions", "module__air_data.html#init_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__air_data.html#datalink_functions__air_data", [
         [ "Raw air_data.xml file:", "module__air_data.html#module_xml__air_data", null ]
       ] ]
@@ -3109,6 +3109,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__glide_wing_lock.html#module_load_example__glide_wing_lock", null ],
       [ "Module configuration options", "module__glide_wing_lock.html#configuration__glide_wing_lock", null ],
       [ "Module functions", "module__glide_wing_lock.html#functions__glide_wing_lock", [
+        [ "Event Functions", "module__glide_wing_lock.html#event_functions", null ],
         [ "Raw glide_wing_lock.xml file:", "module__glide_wing_lock.html#module_xml__glide_wing_lock", null ]
       ] ]
     ] ],

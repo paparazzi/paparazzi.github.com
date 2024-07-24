@@ -1,5 +1,6 @@
 var NAVTREEINDEX99 =
 {
+"ist8310_8h.html#structIST8310":[12,0,1,0,7,50,0],
 "ist8310_8h.html#unionIST8310_8data":[12,0,1,0,7,50,1],
 "ist8310_8h_source.html":[12,0,1,0,7,50],
 "ist8310__regs_8h.html":[12,0,1,0,7,51],
@@ -248,6 +249,5 @@ var NAVTREEINDEX99 =
 "jevois__mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3":[12,0,1,0,6,63,0,2,11],
 "jevois__mavlink_8c.html#structvision__relative__position__struct":[12,0,1,0,6,12,22,0],
 "jevois__mavlink_8c.html#structvision__relative__position__struct":[12,0,1,0,6,63,0,2,1],
-"jevois__mavlink_8c.html#structvisual__target__struct":[12,0,1,0,6,63,0,2,0],
-"jevois__mavlink_8c_source.html":[12,0,1,0,6,63,0,2]
+"jevois__mavlink_8c.html#structvisual__target__struct":[12,0,1,0,6,63,0,2,0]
 };
