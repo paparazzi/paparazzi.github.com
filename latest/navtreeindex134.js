@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__eff_scheduling_falcon.html#functions__eff_scheduling_falcon":[1,93,1],
 "module__eff_scheduling_falcon.html#module_load_example__eff_scheduling_falcon":[1,93,0],
 "module__eff_scheduling_falcon.html#module_xml__eff_scheduling_falcon":[1,93,1,0],
 "module__eff_scheduling_generic.html":[1,94],
@@ -135,10 +134,9 @@ var NAVTREEINDEX134 =
 "module__geo_mag.html#module_xml__geo_mag":[1,471,1,0],
 "module__glide_wing_lock.html":[1,472],
 "module__glide_wing_lock.html#configuration__glide_wing_lock":[1,472,1],
-"module__glide_wing_lock.html#event_functions":[1,472,2,0],
 "module__glide_wing_lock.html#functions__glide_wing_lock":[1,472,2],
 "module__glide_wing_lock.html#module_load_example__glide_wing_lock":[1,472,0],
-"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,472,2,1],
+"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,472,2,0],
 "module__gpio_ext_common.html":[1,150],
 "module__gpio_ext_common.html#module_load_example__gpio_ext_common":[1,150,0],
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,150,0,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX134 =
 "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,170,0],
 "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw":[1,170,2,0],
 "module__guidance_hybrid.html":[1,171],
-"module__guidance_hybrid.html#functions__guidance_hybrid":[1,171,1]
+"module__guidance_hybrid.html#functions__guidance_hybrid":[1,171,1],
+"module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,171,0],
+"module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,171,1,0]
 };

@@ -94,13 +94,13 @@ $(document).ready(function(){initNavTree('module__imu_icm42688.html',''); initRe
 <h1><a class="anchor" id="module_load_example__imu_icm42688"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_icm42688&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INVENSENSE3_GYRO_AAF&quot; value=&quot;977&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INVENSENSE3_ACCEL_AAF&quot; value=&quot;213&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;IMU_SPI_DEV&quot; value=&quot;spi1&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;IMU_SPI_SLAVE_IDX&quot; value=&quot;SPI_SLAVE0&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;IMU_ODR&quot; default=&quot;4KHZ&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;GYRO_RANGE&quot; default=&quot;500DPS&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;ACCEL_RANGE&quot; default=&quot;2G&quot; /&gt;\n\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;ACCEL_RANGE&quot; default=&quot;2G&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;GYRO_AAF&quot; value=&quot;977&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;ACCEL_AAF&quot; value=&quot;213&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__imu_icm42688"></a>
 Module configuration options</h1>
@@ -117,14 +117,10 @@ Configure Options</h2>
  Description: Gyro range (invensense3.h:114)</li>
 <li><b>name:</b> <code>ACCEL_RANGE</code> <b>value:</b> <em>None</em> <br  />
  Description: Accel range (invensense3.h:145)</li>
-</ul>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
-<ul>
-<li><b>name:</b> <code>INVENSENSE3_GYRO_AAF</code> <b>value:</b> <em>977</em> <br  />
- Description: Anti-aliasing filter</li>
-<li><b>name:</b> <code>INVENSENSE3_ACCEL_AAF</code> <b>value:</b> <em>213</em> <br  />
- Description: Anti-aliasing filter</li>
+<li><b>name:</b> <code>GYRO_AAF</code> <b>value:</b> <em>977</em> <br  />
+ Description: Gyro anti-aliasing filter</li>
+<li><b>name:</b> <code>ACCEL_AAF</code> <b>value:</b> <em>213</em> <br  />
+ Description: Accel anti-aliasing filter</li>
 </ul>
 <h1><a class="anchor" id="functions__imu_icm42688"></a>
 Module functions</h1>
@@ -179,9 +175,8 @@ Raw imu_icm42688.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_ODR&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;4KHZ&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Output data rate of ACCEL and GYRO (invensense3.h:95/126)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;500DPS&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Gyro range (invensense3.h:114)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;2G&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Accel range (invensense3.h:145)&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_GYRO_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;977&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Anti-aliasing filter&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;213&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Anti-aliasing filter&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;977&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Gyro anti-aliasing filter&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;213&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Accel anti-aliasing filter&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">i2c</span>,<span class="keyword">spi_master</span>,<span class="keyword">imu_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -199,8 +194,10 @@ Raw imu_icm42688.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;spi1&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;lower|upper&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI_SLAVE0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_ODR&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;4KHZ&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;500DPS&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;2G&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;2000DPS&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;8G&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_AAF&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;977&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_AAF&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;213&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(IMU_SPI_DEV_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(IMU_SPI_DEV_UPPER)&quot;</span>/&gt;</div>
@@ -211,9 +208,8 @@ Raw imu_icm42688.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_ODR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_ODR_$(IMU_ODR)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_GYRO_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;INVENSENSE3_GYRO_RANGE_$(GYRO_RANGE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_RANGE_$(ACCEL_RANGE)&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_GYRO_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;977&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;213&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_GYRO_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(GYRO_AAF)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INVENSENSE3_ACCEL_AAF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(ACCEL_AAF)&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense3.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_icm42688.c&quot;</span>/&gt;</div>
@@ -226,7 +222,7 @@ Raw imu_icm42688.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Jul 23 2024 09:13:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 24 2024 08:52:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
