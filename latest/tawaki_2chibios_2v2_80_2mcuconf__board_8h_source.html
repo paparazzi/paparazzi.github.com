@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v2_80_2mcuconf__board
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a29204b81c265dd6e124fbcf12a2c8d6f">  123</a></span>&#160;<span class="preprocessor">#define STM32_SW                            STM32_SW_PLL1_P_CK</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#if HAL_USE_RTC</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define STM32_RTCSEL                        STM32_RTCSEL_HSE_1M_CK</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define STM32_RTCSEL                        STM32_RTCSEL_LSI_CK</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a945eb1f70822303bd0191ef633e5eaca">  128</a></span>&#160;<span class="preprocessor">#define STM32_RTCSEL                        STM32_RTCSEL_NOCLK</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -672,15 +672,16 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v2_80_2mcuconf__board
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="comment">// #define CH_HEAP_USE_TLSF 0 // if 0 or undef, chAlloc will be used</span></div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="comment">// #define CONSOLE_DEV_SD SD3</span></div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160; </div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MCUCONF_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00585"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a17d20632810c9bb1601a19973977f55c">  585</a></span>&#160;<span class="preprocessor">#define HAL_USE_RTC     TRUE</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MCUCONF_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a602d89a86e137af83bdeb12fdb83ab8.html">tawaki</a></li><li class="navelem"><a class="el" href="dir_dde4e65440e7233a57508cfa01e8df78.html">chibios</a></li><li class="navelem"><a class="el" href="dir_73fd8c806e6a2bef79ba3936d0df6d69.html">v2.0</a></li><li class="navelem"><a class="el" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html">mcuconf_board.h</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:35:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 26 2024 11:34:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

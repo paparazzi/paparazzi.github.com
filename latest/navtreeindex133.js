@@ -1,7 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__cam_point.html":[1,47],
-"module__cam_point.html#functions__cam_point":[1,47,1],
 "module__cam_point.html#module_load_example__cam_point":[1,47,0],
 "module__cam_point.html#module_xml__cam_point":[1,47,1,0],
 "module__cam_roll.html":[1,48],
@@ -81,9 +79,10 @@ var NAVTREEINDEX133 =
 "module__current_sensor.html#module_xml__current_sensor":[1,461,1,0],
 "module__cv_blob_locator.html":[1,57],
 "module__cv_blob_locator.html#configuration__cv_blob_locator":[1,57,1],
+"module__cv_blob_locator.html#event_functions":[1,57,2,0],
 "module__cv_blob_locator.html#functions__cv_blob_locator":[1,57,2],
 "module__cv_blob_locator.html#module_load_example__cv_blob_locator":[1,57,0],
-"module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,57,2,0],
+"module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,57,2,1],
 "module__cv_colorfilter.html":[1,58],
 "module__cv_colorfilter.html#configuration__cv_colorfilter":[1,58,1],
 "module__cv_colorfilter.html#functions__cv_colorfilter":[1,58,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX133 =
 "module__eff_scheduling_cyfoam.html":[1,92],
 "module__eff_scheduling_cyfoam.html#functions__eff_scheduling_cyfoam":[1,92,1],
 "module__eff_scheduling_cyfoam.html#module_load_example__eff_scheduling_cyfoam":[1,92,0],
-"module__eff_scheduling_cyfoam.html#module_xml__eff_scheduling_cyfoam":[1,92,1,0]
+"module__eff_scheduling_cyfoam.html#module_xml__eff_scheduling_cyfoam":[1,92,1,0],
+"module__eff_scheduling_falcon.html":[1,93]
 };

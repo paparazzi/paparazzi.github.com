@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct":[1,263,1],
-"module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,263,3],
 "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,263,2],
 "module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,263,0],
 "module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,263,3,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX137 =
 "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,349,0],
 "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,349,2,0],
 "module__nav_trinity.html":[1,350],
-"module__nav_trinity.html#functions__nav_trinity":[1,350,1]
+"module__nav_trinity.html#functions__nav_trinity":[1,350,1],
+"module__nav_trinity.html#module_load_example__nav_trinity":[1,350,0],
+"module__nav_trinity.html#module_xml__nav_trinity":[1,350,1,0]
 };
