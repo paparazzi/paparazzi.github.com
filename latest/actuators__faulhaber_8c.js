@@ -9,6 +9,8 @@ var actuators__faulhaber_8c =
       [ "node_nb", "actuators__faulhaber_8c.html#a76117766d613024e85eb309a19af408a", null ],
       [ "state", "actuators__faulhaber_8c.html#ab2801d4f23674fa0cc182bde44f2763b", null ]
     ] ],
+    [ "FAULHABER_MAX_VELOCITY", "actuators__faulhaber_8c.html#a818223ade7dcb410c3bd0f1c93e9b0ed", null ],
+    [ "FAULHABER_P_GAIN", "actuators__faulhaber_8c.html#a97697b0921dc230bba12003c7a857ca8", null ],
     [ "GET_CRC", "actuators__faulhaber_8c.html#a79d85b3d7bd8112d4ac9b42ee71e96c0", null ],
     [ "GET_DATA", "actuators__faulhaber_8c.html#a13ab22ef9bde2e934b4a6f931065af4a", null ],
     [ "GET_EOF", "actuators__faulhaber_8c.html#a90d922144ac73b2846832d697c3503c7", null ],

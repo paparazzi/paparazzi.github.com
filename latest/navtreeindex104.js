@@ -1,5 +1,10 @@
 var NAVTREEINDEX104 =
 {
+"lidar__sf11_8c_source.html":[12,0,1,0,6,40,2],
+"lidar__sf11_8h.html":[12,0,1,0,6,40,3],
+"lidar__sf11_8h.html#a2a53d4d1ad730158bc7c0349a8292a5a":[12,0,1,0,6,40,3,0,3],
+"lidar__sf11_8h.html#a33e7a34971e620ee9d1acab000cef8dd":[12,0,1,0,6,40,3,4],
+"lidar__sf11_8h.html#a3d331a95801e14dd3c20b8331394bc65":[12,0,1,0,6,40,3,0,4],
 "lidar__sf11_8h.html#a3f6a565ddb62870d5b278b0dc9f53559":[12,0,1,0,6,40,3,1],
 "lidar__sf11_8h.html#a3f6a565ddb62870d5b278b0dc9f53559a1dbaf717008f830d5759ea37c116cd6b":[12,0,1,0,6,40,3,1,0],
 "lidar__sf11_8h.html#a3f6a565ddb62870d5b278b0dc9f53559a48885c25f597416dee259e0b6b0b7311":[12,0,1,0,6,40,3,1,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX104 =
 "linux_2mcu__periph_2i2c__arch_8c.html#afaa3639ea39744b3c4ad34e2c902ec87":[12,0,1,0,0,1,0,4,1],
 "linux_2mcu__periph_2i2c__arch_8c.html#structi2c__thread__t":[12,0,1,0,0,1,0,4,0],
 "linux_2mcu__periph_2i2c__arch_8c_source.html":[12,0,1,0,0,1,0,4],
-"linux_2mcu__periph_2i2c__arch_8h.html":[12,0,1,0,0,1,0,5],
-"linux_2mcu__periph_2i2c__arch_8h_source.html":[12,0,1,0,0,1,0,5],
-"linux_2mcu__periph_2pipe__arch_8c.html":[12,0,1,0,0,1,0,7],
-"linux_2mcu__periph_2pipe__arch_8c.html#a14ca8427ac6e9b1b03837df635720873":[12,0,1,0,0,1,0,7,5],
-"linux_2mcu__periph_2pipe__arch_8c.html#a367d93fecef4749b70739ea1d568c814":[12,0,1,0,0,1,0,7,8],
-"linux_2mcu__periph_2pipe__arch_8c.html#a77593bf739144ac35c87e55646a93685":[12,0,1,0,0,1,0,7,1]
+"linux_2mcu__periph_2i2c__arch_8h.html":[12,0,1,0,0,1,0,5]
 };

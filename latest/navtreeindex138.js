@@ -1,5 +1,10 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,349,2,0],
+"module__nav_trinity.html":[1,350],
+"module__nav_trinity.html#functions__nav_trinity":[1,350,1],
+"module__nav_trinity.html#module_load_example__nav_trinity":[1,350,0],
+"module__nav_trinity.html#module_xml__nav_trinity":[1,350,1,0],
 "module__nav_vertical_raster.html":[1,351],
 "module__nav_vertical_raster.html#module_load_example__nav_vertical_raster":[1,351,0],
 "module__nav_vertical_raster.html#module_xml__nav_vertical_raster":[1,351,0,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX138 =
 "module__rssi.html#datalink_functions__rssi":[1,313,2],
 "module__rssi.html#functions__rssi":[1,313,1],
 "module__rssi.html#module_load_example__rssi":[1,313,0],
-"module__rssi.html#module_xml__rssi":[1,313,2,0],
-"module__rust_demo_module.html":[1,498],
-"module__rust_demo_module.html#functions__rust_demo_module":[1,498,1],
-"module__rust_demo_module.html#module_load_example__rust_demo_module":[1,498,0],
-"module__rust_demo_module.html#module_xml__rust_demo_module":[1,498,1,0],
-"module__scheduling_indi_simple.html":[1,103]
+"module__rssi.html#module_xml__rssi":[1,313,2,0]
 };

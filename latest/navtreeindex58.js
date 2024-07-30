@@ -1,5 +1,10 @@
 var NAVTREEINDEX58 =
 {
+"gain__scheduling_8h.html#a4e89953041f33d51c4b1b6c588a66ff8":[12,0,1,0,6,14,23,1],
+"gain__scheduling_8h.html#a5b3f2ec9266c8b0bd6d859d5c9790492":[12,0,1,0,6,14,23,3],
+"gain__scheduling_8h.html#a7b045557d7f51816377cc0d20d99f344":[12,0,1,0,6,14,23,2],
+"gain__scheduling_8h.html#ae7be3ffc700495dfdf7aa7631a5713f6":[12,0,1,0,6,14,23,0],
+"gain__scheduling_8h_source.html":[12,0,1,0,6,14,23],
 "gas__engine__idle__trim_8c.html":[12,0,1,0,6,25,0],
 "gas__engine__idle__trim_8c.html#a0289581c0f5029d21102407a6e7bfb8f":[12,0,1,0,6,25,0,2],
 "gas__engine__idle__trim_8c.html#a94ca399ac855a3d2ad807666da92df33":[12,0,1,0,6,25,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX58 =
 "globals_defs_n.html":[12,1,6,14],
 "globals_defs_o.html":[12,1,6,15],
 "globals_defs_p.html":[12,1,6,16],
-"globals_defs_q.html":[12,1,6,17],
-"globals_defs_r.html":[12,1,6,18],
-"globals_defs_s.html":[12,1,6,19],
-"globals_defs_t.html":[12,1,6,20],
-"globals_defs_u.html":[12,1,6,21],
-"globals_defs_v.html":[12,1,6,22]
+"globals_defs_q.html":[12,1,6,17]
 };

@@ -1,11 +1,16 @@
 var actuators__faulhaber_8h =
 [
     [ "faulhaber_t", "actuators__faulhaber_8h.html#structfaulhaber__t", [
+      [ "homing_completed", "actuators__faulhaber_8h.html#a7658886255a7c4aaa475a0e1c0211ba5", null ],
+      [ "max_velocity", "actuators__faulhaber_8h.html#a13925596544a8fa6f8c6ddf8e7b99bf5", null ],
       [ "mode", "actuators__faulhaber_8h.html#a73b907c01227cd1984a85f7f3c94c34b", null ],
+      [ "p_gain", "actuators__faulhaber_8h.html#a11db5cd4d0d94e3b2011e944d81c7027", null ],
+      [ "position_ready", "actuators__faulhaber_8h.html#accdcc92f4f9066fa71104dd78bc52131", null ],
       [ "real_position", "actuators__faulhaber_8h.html#a2f4ad17816dfbc0dd401970b07e18e0a", null ],
       [ "setpoint_position", "actuators__faulhaber_8h.html#a7d8993e08ceac31a3131e0fe682263d6", null ],
       [ "state", "actuators__faulhaber_8h.html#ab355c8972e448aa8c24835137cd7a1e7", null ],
-      [ "target_position", "actuators__faulhaber_8h.html#a5734810e1a3f4640ea7f8854573c7c91", null ]
+      [ "target_reached", "actuators__faulhaber_8h.html#a64d9eddb9416704d3ffda01bdf696796", null ],
+      [ "target_velocity", "actuators__faulhaber_8h.html#a8e34c1a2cd50b149d1224d7be62428ea", null ]
     ] ],
     [ "ActuatorFaulhaberSet", "actuators__faulhaber_8h.html#a964d1d5ae5e5b12cf91cd6640e50fb28", null ],
     [ "ACTUATORS_FAULHABER_COMMAND_SCALE", "actuators__faulhaber_8h.html#a388ac434159d37e3ed3fba493c895345", null ],
@@ -13,10 +18,8 @@ var actuators__faulhaber_8h =
     [ "ActuatorsFaulhaberInit", "actuators__faulhaber_8h.html#a15f72d500dd9c2314c2ba888337c2641", null ],
     [ "faulhaber_modes_t", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026", [
       [ "FH_MODE_INIT", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ad08e4ba37e2357572d3bf75dd95dd521", null ],
-      [ "FH_MODE_IDLE", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a6eafec40d012eb60f542c51e59f86268", null ],
-      [ "FH_MODE_HOME", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026aee0c363c455314a40125ff54db912875", null ],
-      [ "FH_MODE_POSITION", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a4a416637bf5973575a073a229608c315", null ],
-      [ "FH_MODE_ENABLE", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ac2b965a6595c2f0216b25eb036e425a3", null ]
+      [ "FH_MODE_VELOCITY", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a751fc1210ab48d9e2a081dfe4d94cf2f", null ],
+      [ "FH_MODE_ERROR", "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a7367281f82803ba55f956a9d81fa30ef", null ]
     ] ],
     [ "actuators_faulhaber_event", "actuators__faulhaber_8h.html#a51a6848f02cd6b0e522c9178247d01ef", null ],
     [ "actuators_faulhaber_init", "actuators__faulhaber_8h.html#af272406e147a11c8a048c6c6d545ec63", null ],

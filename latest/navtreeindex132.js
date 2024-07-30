@@ -1,5 +1,10 @@
 var NAVTREEINDEX132 =
 {
+"module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart":[1,26,1],
+"module__ahrs_chimu_uart.html#functions__ahrs_chimu_uart":[1,26,2],
+"module__ahrs_chimu_uart.html#module_load_example__ahrs_chimu_uart":[1,26,0],
+"module__ahrs_chimu_uart.html#module_xml__ahrs_chimu_uart":[1,26,2,0],
+"module__ahrs_common.html":[1,27],
 "module__ahrs_common.html#configuration__ahrs_common":[1,27,1],
 "module__ahrs_common.html#functions__ahrs_common":[1,27,2],
 "module__ahrs_common.html#module_load_example__ahrs_common":[1,27,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX132 =
 "module__board_tawaki.html":[1,43],
 "module__board_tawaki.html#configuration__board_tawaki":[1,43,1],
 "module__board_tawaki.html#module_load_example__board_tawaki":[1,43,0],
-"module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0],
-"module__board_tawaki_2_0.html":[1,44],
-"module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
-"module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
-"module__cam_point.html":[1,47],
-"module__cam_point.html#functions__cam_point":[1,47,1]
+"module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0]
 };

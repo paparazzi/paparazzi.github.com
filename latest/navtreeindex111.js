@@ -1,5 +1,10 @@
 var NAVTREEINDEX111 =
 {
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a435d9f491e67d7efbb91a6fbe4dd91cc":[12,0,1,0,1,13,0,0,0,191],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f":[12,0,1,0,1,13,0,0,0,118],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a":[12,0,1,0,1,13,0,0,0,61],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a45fd509a564bfc24e344e734c5d968b8":[12,0,1,0,1,13,0,0,0,208],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a47952951048cb682536ff38cb754cf74":[12,0,1,0,1,13,0,0,0,181],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a482794539449d37c65de123d0d629acb":[12,0,1,0,1,13,0,0,0,8],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae":[12,0,1,0,1,13,0,0,0,209],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a4b4704c54d5cf8ef8432944f5c3aa686":[12,0,1,0,1,13,0,0,0,196],
@@ -244,10 +249,5 @@ var NAVTREEINDEX111 =
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a5339fe32096faad20bbcf31d2d5b45d1":[12,0,1,0,1,13,0,0,1,238],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a54203015c2973969adee1dd719010d3a":[12,0,1,0,1,13,0,0,1,85],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a5498cae29922990f276ed50f25b90884":[12,0,1,0,1,13,0,0,1,181],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a554728f749ad9aca0102d189cc6bb9e7":[12,0,1,0,1,13,0,0,1,166],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0":[12,0,1,0,1,13,0,0,1,190],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a56a0c40fe1260ca2265cc01d42668ca7":[12,0,1,0,1,13,0,0,1,255],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a58845293676556a52d2046a00bcfbf9c":[12,0,1,0,1,13,0,0,1,72],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a58e21948e78c6cf50c04e64363637dd4":[12,0,1,0,1,13,0,0,1,10],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a59976b6c28b2561d2b6bd7e3940ea377":[12,0,1,0,1,13,0,0,1,197]
+"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a554728f749ad9aca0102d189cc6bb9e7":[12,0,1,0,1,13,0,0,1,166]
 };

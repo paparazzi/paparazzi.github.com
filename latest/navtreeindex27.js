@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"cc2500__compat_8c.html#aea8aeb9534d8bc8aa76eb53007dfcb8a":[12,0,1,0,6,56,0,2,10],
+"cc2500__compat_8c.html#af1fb6da0c755c6227790af1e8e202456":[12,0,1,0,6,56,0,2,24],
+"cc2500__compat_8c.html#af26fe9c3dc6864698f8999825d63cb18":[12,0,1,0,6,56,0,2,12],
+"cc2500__compat_8c.html#afc9797e5e9c3c85f61acfb05ef3a69e0":[12,0,1,0,6,56,0,2,4],
+"cc2500__compat_8c.html#afee63fd0ba43781073ba2f857badeeca":[12,0,1,0,6,56,0,2,29],
 "cc2500__compat_8c_source.html":[12,0,1,0,6,56,0,2],
 "cc2500__compat_8h.html":[12,0,1,0,6,56,0,3],
 "cc2500__compat_8h.html#a01817905acb43331ed4bc62ad18dab60":[12,0,1,0,6,56,0,3,20],
@@ -175,8 +180,8 @@ var NAVTREEINDEX27 =
 "cc2500__frsky__shared_8h.html#a08484161bfc8fc25f6587deed5438215":[12,0,1,0,6,56,0,7,1],
 "cc2500__frsky__shared_8h.html#a1793c116abf6558778081081eebefbf7":[12,0,1,0,6,56,0,7,10],
 "cc2500__frsky__shared_8h.html#a54bcae7a22dd669bf121c7c626e399dc":[12,0,1,0,6,56,0,7,9],
-"cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046":[12,0,1,0,6,56,0,7,3],
 "cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046":[12,0,1,0,6,56,0,7,4],
+"cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046":[12,0,1,0,6,56,0,7,3],
 "cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18":[12,0,1,0,6,56,0,7,8],
 "cc2500__frsky__shared_8h.html#a9edc11533b4625815af2ca31c562061e":[12,0,1,0,6,56,0,7,2],
 "cc2500__frsky__shared_8h.html#aad78fae7846fe4f56409cb30fa52947a":[12,0,1,0,6,56,0,7,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX27 =
 "cc2500__frsky__x_8c.html#uniontelemetrySequenceMarker__s":[12,0,1,0,6,56,0,8,1],
 "cc2500__frsky__x_8c_source.html":[12,0,1,0,6,56,0,8],
 "cc2500__frsky__x_8h.html":[12,0,1,0,6,56,0,9],
-"cc2500__frsky__x_8h.html#a09aedfa0332a58b4e89a15471892e08d":[12,0,1,0,6,56,0,9,2],
-"cc2500__frsky__x_8h.html#a0a92ce2d56739c0fa719bf7bbe5f0594":[12,0,1,0,6,56,0,9,0],
-"cc2500__frsky__x_8h.html#a90776c7143b1e75512e9bf975aca774e":[12,0,1,0,6,56,0,9,1],
-"cc2500__frsky__x_8h.html#aaa0d6bdd7091f3e1afc2422c4892e19e":[12,0,1,0,6,56,0,9,3],
-"cc2500__frsky__x_8h.html#ad435317cfefce3e2c1a339bd163a828a":[12,0,1,0,6,56,0,9,4],
-"cc2500__frsky__x_8h_source.html":[12,0,1,0,6,56,0,9]
+"cc2500__frsky__x_8h.html#a09aedfa0332a58b4e89a15471892e08d":[12,0,1,0,6,56,0,9,2]
 };

@@ -138,14 +138,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ae1b293ada5a2ef8e2d8b156e63562026"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026">faulhaber_modes_t</a> { <br />
-&#160;&#160;<a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ad08e4ba37e2357572d3bf75dd95dd521">FH_MODE_INIT</a>
-, <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a6eafec40d012eb60f542c51e59f86268">FH_MODE_IDLE</a>
-, <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026aee0c363c455314a40125ff54db912875">FH_MODE_HOME</a>
-, <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a4a416637bf5973575a073a229608c315">FH_MODE_POSITION</a>
-, <br />
-&#160;&#160;<a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ac2b965a6595c2f0216b25eb036e425a3">FH_MODE_ENABLE</a>
-<br />
+<tr class="memitem:ae1b293ada5a2ef8e2d8b156e63562026"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026">faulhaber_modes_t</a> { <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ad08e4ba37e2357572d3bf75dd95dd521">FH_MODE_INIT</a>
+, <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a751fc1210ab48d9e2a081dfe4d94cf2f">FH_MODE_VELOCITY</a>
+, <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a7367281f82803ba55f956a9d81fa30ef">FH_MODE_ERROR</a>
  }</td></tr>
 <tr class="separator:ae1b293ada5a2ef8e2d8b156e63562026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -182,39 +177,69 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00040">40</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00038">38</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a7658886255a7c4aaa475a0e1c0211ba5"></a>bool</td>
+<td class="fieldname">
+homing_completed</td>
+<td class="fielddoc">
+Once the homing is completed. </td></tr>
+<tr><td class="fieldtype">
+<a id="a13925596544a8fa6f8c6ddf8e7b99bf5"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+max_velocity</td>
+<td class="fielddoc">
+The maximum velocity of the controller. </td></tr>
 <tr><td class="fieldtype">
 <a id="a73b907c01227cd1984a85f7f3c94c34b"></a>enum <a class="el" href="actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026">faulhaber_modes_t</a></td>
 <td class="fieldname">
 mode</td>
 <td class="fielddoc">
-</td></tr>
+Current mode of the controller. </td></tr>
+<tr><td class="fieldtype">
+<a id="a11db5cd4d0d94e3b2011e944d81c7027"></a>float</td>
+<td class="fieldname">
+p_gain</td>
+<td class="fielddoc">
+The proportional gain of the velocity controller. </td></tr>
+<tr><td class="fieldtype">
+<a id="accdcc92f4f9066fa71104dd78bc52131"></a>bool</td>
+<td class="fieldname">
+position_ready</td>
+<td class="fielddoc">
+Ready for receiving (new) positions. </td></tr>
 <tr><td class="fieldtype">
 <a id="a2f4ad17816dfbc0dd401970b07e18e0a"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 real_position</td>
 <td class="fielddoc">
-</td></tr>
+The real position from the feedback of the controller. </td></tr>
 <tr><td class="fieldtype">
 <a id="a7d8993e08ceac31a3131e0fe682263d6"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 setpoint_position</td>
 <td class="fielddoc">
-</td></tr>
+The setpoint position controlled from the actuator. </td></tr>
 <tr><td class="fieldtype">
 <a id="ab355c8972e448aa8c24835137cd7a1e7"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 state</td>
 <td class="fielddoc">
-</td></tr>
+The state of the mode. </td></tr>
 <tr><td class="fieldtype">
-<a id="a5734810e1a3f4640ea7f8854573c7c91"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<a id="a64d9eddb9416704d3ffda01bdf696796"></a>bool</td>
 <td class="fieldname">
-target_position</td>
+target_reached</td>
 <td class="fielddoc">
-</td></tr>
+When the target position is reached. </td></tr>
+<tr><td class="fieldtype">
+<a id="a8e34c1a2cd50b149d1224d7be62428ea"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+target_velocity</td>
+<td class="fielddoc">
+The target velocity send to the controller. </td></tr>
 </table>
 
 </div>
@@ -246,7 +271,7 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00064">64</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00069">69</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +287,7 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00056">56</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00061">61</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +306,7 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00065">65</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00070">70</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
 
 </div>
 </div>
@@ -300,7 +325,7 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00063">63</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00068">68</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
 
 </div>
 </div>
@@ -318,10 +343,8 @@ target_position</td>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026ad08e4ba37e2357572d3bf75dd95dd521"></a>FH_MODE_INIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026a6eafec40d012eb60f542c51e59f86268"></a>FH_MODE_IDLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026aee0c363c455314a40125ff54db912875"></a>FH_MODE_HOME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026a4a416637bf5973575a073a229608c315"></a>FH_MODE_POSITION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026ac2b965a6595c2f0216b25eb036e425a3"></a>FH_MODE_ENABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026a751fc1210ab48d9e2a081dfe4d94cf2f"></a>FH_MODE_VELOCITY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1b293ada5a2ef8e2d8b156e63562026a7367281f82803ba55f956a9d81fa30ef"></a>FH_MODE_ERROR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8h_source.html#l00032">32</a> of file <a class="el" href="actuators__faulhaber_8h_source.html">actuators_faulhaber.h</a>.</p>
@@ -345,9 +368,9 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00327">327</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00373">373</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00035">faulhaber_dev</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00047">faulhaber_p</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00309">faulhaber_parse_msg()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00092">faulhaber_parser()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00090">GOT_FULL_PACKET</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00038">faulhaber_parser_t::state</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00314">uart_getch()</a>, and <a class="el" href="actuators__faulhaber_8c_source.html#l00083">UINIT</a>.</p>
+<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00045">faulhaber_dev</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00058">faulhaber_p</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00339">faulhaber_parse_msg()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00103">faulhaber_parser()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00101">GOT_FULL_PACKET</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00049">faulhaber_parser_t::state</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00314">uart_getch()</a>, and <a class="el" href="actuators__faulhaber_8c_source.html#l00094">UINIT</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -382,9 +405,9 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00156">156</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00167">167</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00048">faulhaber</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00047">faulhaber_p</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00033">FH_MODE_INIT</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00041">faulhaber_t::mode</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00044">faulhaber_t::setpoint_position</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00038">faulhaber_parser_t::state</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00042">faulhaber_t::state</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00045">faulhaber_t::target_position</a>, and <a class="el" href="actuators__faulhaber_8c_source.html#l00083">UINIT</a>.</p>
+<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00059">faulhaber</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00042">FAULHABER_MAX_VELOCITY</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00058">faulhaber_p</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00037">FAULHABER_P_GAIN</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00033">FH_MODE_INIT</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00049">faulhaber_t::homing_completed</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00043">faulhaber_t::max_velocity</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00039">faulhaber_t::mode</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00042">faulhaber_t::p_gain</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00050">faulhaber_t::position_ready</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00046">faulhaber_t::real_position</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00045">faulhaber_t::setpoint_position</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00049">faulhaber_parser_t::state</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00040">faulhaber_t::state</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00051">faulhaber_t::target_reached</a>, and <a class="el" href="actuators__faulhaber_8c_source.html#l00094">UINIT</a>.</p>
 
 </div>
 </div>
@@ -404,9 +427,9 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00167">167</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00182">182</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00048">faulhaber</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00035">faulhaber_dev</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00065">faulhaber_send_command()</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00037">FH_MODE_ENABLE</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00035">FH_MODE_HOME</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00034">FH_MODE_IDLE</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00033">FH_MODE_INIT</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00036">FH_MODE_POSITION</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00041">faulhaber_t::mode</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00044">faulhaber_t::setpoint_position</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00042">faulhaber_t::state</a>, and <a class="el" href="actuators__faulhaber_8h_source.html#l00045">faulhaber_t::target_position</a>.</p>
+<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00059">faulhaber</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00045">faulhaber_dev</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00076">faulhaber_send_command()</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00035">FH_MODE_ERROR</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00033">FH_MODE_INIT</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00034">FH_MODE_VELOCITY</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00049">faulhaber_t::homing_completed</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00056">last_time</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00043">faulhaber_t::max_velocity</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00039">faulhaber_t::mode</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00042">faulhaber_t::p_gain</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00046">faulhaber_t::real_position</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00045">faulhaber_t::setpoint_position</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00040">faulhaber_t::state</a>, and <a class="el" href="actuators__faulhaber_8h_source.html#l00047">faulhaber_t::target_velocity</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -414,8 +437,9 @@ target_position</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__faulhaber_8h_ae6d47e2d26846abcb444791cb793a01d_cgraph.png" border="0" usemap="#aactuators__faulhaber_8h_ae6d47e2d26846abcb444791cb793a01d_cgraph" alt=""/></div>
 <map name="aactuators__faulhaber_8h_ae6d47e2d26846abcb444791cb793a01d_cgraph" id="aactuators__faulhaber_8h_ae6d47e2d26846abcb444791cb793a01d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,157,90"/>
+<area shape="rect" title=" " alt="" coords="5,74,157,115"/>
 <area shape="rect" href="actuators__faulhaber_8c.html#a04d946294fa65b0df1b773938e0435be" title=" " alt="" coords="205,56,400,83"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="230,107,375,133"/>
 <area shape="rect" href="actuators__faulhaber_8c.html#ac86e2c3cd6bb735c6d2c13bbae5a97ee" title=" " alt="" coords="465,5,583,32"/>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="468,56,580,83"/>
 <area shape="rect" href="uart_8c.html#a28a378d8f12e11fc3f4dac7eb9252d6e" title=" " alt="" coords="448,107,600,133"/>
@@ -440,9 +464,9 @@ target_position</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00338">338</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00384">384</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00048">faulhaber</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00041">faulhaber_t::mode</a>, <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, and <a class="el" href="actuators__faulhaber_8h_source.html#l00042">faulhaber_t::state</a>.</p>
+<p class="reference">References <a class="el" href="actuators__faulhaber_8c_source.html#l00059">faulhaber</a>, <a class="el" href="actuators__faulhaber_8h_source.html#l00039">faulhaber_t::mode</a>, <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, and <a class="el" href="actuators__faulhaber_8h_source.html#l00040">faulhaber_t::state</a>.</p>
 
 </div>
 </div>
@@ -467,9 +491,9 @@ target_position</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00035">35</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__faulhaber_8c_source.html#l00045">45</a> of file <a class="el" href="actuators__faulhaber_8c_source.html">actuators_faulhaber.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__faulhaber_8c_source.html#l00156">actuators_faulhaber_init()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00167">actuators_faulhaber_periodic()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00338">actuators_faulhaber_SetMode()</a>, and <a class="el" href="actuators__faulhaber_8c_source.html#l00309">faulhaber_parse_msg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__faulhaber_8c_source.html#l00167">actuators_faulhaber_init()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00182">actuators_faulhaber_periodic()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00384">actuators_faulhaber_SetMode()</a>, and <a class="el" href="actuators__faulhaber_8c_source.html#l00339">faulhaber_parse_msg()</a>.</p>
 
 </div>
 </div>
@@ -479,7 +503,7 @@ target_position</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__faulhaber_8h.html">actuators_faulhaber.h</a></li>
-    <li class="footer">Generated on Fri Jul 26 2024 15:02:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 30 2024 09:06:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

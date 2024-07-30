@@ -1,5 +1,10 @@
 var NAVTREEINDEX116 =
 {
+"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00a95d62cdc08121002ebeaa8537bdeacff":[12,0,1,0,7,83,65,2],
+"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00aaec1c9e5fecf2286ddfd037db56bf08d":[12,0,1,0,7,83,65,6],
+"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00ac0b590b3729ee5edb002b1d96766dae5":[12,0,1,0,7,83,65,4],
+"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00afb37f901c413e7ad3dd5f498d6aa3567":[12,0,1,0,7,83,65,0],
+"lsm6ds33__regs_8h.html#a870e1b454eb77764f2301c7fee90c035":[12,0,1,0,7,83,8],
 "lsm6ds33__regs_8h.html#a8efeb3a172c29150db287f244d9a48e1":[12,0,1,0,7,83,29],
 "lsm6ds33__regs_8h.html#a989e8b122143fc1b6569d6fc817f259e":[12,0,1,0,7,83,51],
 "lsm6ds33__regs_8h.html#aa24d7252ae4b64695fa7731aa3cea4d8":[12,0,1,0,7,83,17],
@@ -244,10 +249,5 @@ var NAVTREEINDEX116 =
 "main__chibios_8h.html#ab187dc37cfd9ba19180b8d99905dd2e3":[12,0,1,0,18,0],
 "main__chibios_8h_source.html":[12,0,1,0,18],
 "main__demo1_8c.html":[12,0,1,0,3,5,0],
-"main__demo1_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,5,0,0],
-"main__demo1_8c_source.html":[12,0,1,0,3,5,0],
-"main__demo2_8c.html":[12,0,1,0,3,5,1],
-"main__demo2_8c.html#a791eaf74023b4de8d10fbfe0de040ed8":[12,0,1,0,3,5,1,2],
-"main__demo2_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,5,1,0],
-"main__demo2_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1":[12,0,1,0,3,5,1,1]
+"main__demo1_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,5,0,0]
 };
