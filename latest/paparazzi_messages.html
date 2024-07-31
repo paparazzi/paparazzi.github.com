@@ -136,7 +136,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#RLFILTER">RLFILTER (ID 48)</a></li>
 <li class="level2"><a href="#WP_MOVED_ENU">WP_MOVED_ENU (ID 49)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS_">WINDTURBINE_STATUS_ (ID 50)</a></li>
-<li class="level2"><a href="#RC_3CH_">RC_3CH_ (ID 51)</a></li>
 <li class="level2"><a href="#MPPT">MPPT (ID 52)</a></li>
 <li class="level2"><a href="#DEBUG_VECT">DEBUG_VECT (ID 53)</a></li>
 <li class="level2"><a href="#AIRSPEED">AIRSPEED (ID 54)</a></li>
@@ -365,9 +364,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#CAMERA_SNAPSHOT_DL">CAMERA_SNAPSHOT_DL (ID 35)</a></li>
 <li class="level2"><a href="#GUIDED_SETPOINT_NED">GUIDED_SETPOINT_NED (ID 40)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS">WINDTURBINE_STATUS (ID 50)</a></li>
-<li class="level2"><a href="#RC_3CH">RC_3CH (ID 51)</a></li>
-<li class="level2"><a href="#RC_4CH">RC_4CH (ID 52)</a></li>
-<li class="level2"><a href="#RC_5CH">RC_5CH (ID 53)</a></li>
 <li class="level2"><a href="#EXTERNAL_POSE">EXTERNAL_POSE (ID 54)</a></li>
 <li class="level2"><a href="#EXTERNAL_POSE_SMALL">EXTERNAL_POSE_SMALL (ID 55)</a></li>
 <li class="level2"><a href="#REMOTE_GPS_LOCAL">REMOTE_GPS_LOCAL (ID 56)</a></li>
@@ -377,6 +373,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#HITL_GPS">HITL_GPS (ID 71)</a></li>
 <li class="level2"><a href="#HITL_UBX">HITL_UBX (ID 72)</a></li>
 <li class="level2"><a href="#HITL_AIR_DATA">HITL_AIR_DATA (ID 73)</a></li>
+<li class="level2"><a href="#RC_UP">RC_UP (ID 74)</a></li>
 <li class="level2"><a href="#KITE_COMMAND">KITE_COMMAND (ID 96)</a></li>
 <li class="level2"><a href="#PAYLOAD_COMMAND">PAYLOAD_COMMAND (ID 97)</a></li>
 <li class="level2"><a href="#SET_ACTUATOR">SET_ACTUATOR (ID 100)</a></li>
@@ -1274,18 +1271,6 @@ WINDTURBINE_STATUS_ (ID 50)</h2>
 <td class="markdownTableBodyNone">sync_itow   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cycle_time   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2><a class="anchor" id="RC_3CH_"></a>
-RC_3CH_ (ID 51)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">throttle_mode   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">byte_mask   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">roll   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pitch   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="MPPT"></a>
 MPPT (ID 52)</h2>
@@ -5534,56 +5519,6 @@ WINDTURBINE_STATUS (ID 50)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cycle_time   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="RC_3CH"></a>
-RC_3CH (ID 51)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">throttle_mode   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">byte_mask   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">roll   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pitch   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2><a class="anchor" id="RC_4CH"></a>
-RC_4CH (ID 52)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">throttle   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">roll   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pitch   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">yaw   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2><a class="anchor" id="RC_5CH"></a>
-RC_5CH (ID 53)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">throttle   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">roll   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pitch   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">yaw   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">kill   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2><a class="anchor" id="EXTERNAL_POSE"></a>
 EXTERNAL_POSE (ID 54)</h2>
 <p>Position, speed and orientation in local frame from a remote vision system</p>
@@ -5806,6 +5741,16 @@ HITL_AIR_DATA (ID 73)</h2>
 <td class="markdownTableBodyNone">update_flag   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bit 0: baro, bit 1: airspeed, bit 2: aoa, bit 3: sideslip    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="RC_UP"></a>
+RC_UP (ID 74)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">channels   </td><td class="markdownTableBodyNone">int8[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="KITE_COMMAND"></a>
 KITE_COMMAND (ID 96)</h2>
@@ -6944,7 +6889,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 30 2024 09:06:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 31 2024 08:22:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
