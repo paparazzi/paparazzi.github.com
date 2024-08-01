@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('jevois_8c_source.html',''); initResiza
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">bool</span> first = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">char</span> out[<a class="code" href="jevois_8c.html#ad29a2f3a311c4adb39f30e6598517114">JEVOIS_MAX_LEN</a>];</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; strlen(in)+1; i++) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> ((in[i] &gt; <span class="charliteral">&#39;0&#39;</span> &amp;&amp; in[i] &lt; <span class="charliteral">&#39;9&#39;</span>) || in[i] == <span class="charliteral">&#39;-&#39;</span>) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> ((in[i] &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; in[i] &lt; <span class="charliteral">&#39;9&#39;</span>) || in[i] == <span class="charliteral">&#39;-&#39;</span>) {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      out[j++] = in[i];</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      first = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (first || in[i] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
@@ -650,7 +650,7 @@ $(document).ready(function(){initNavTree('jevois_8c_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="dir_a975c919dcb72580e31cb51fbd2aacf9.html">cameras</a></li><li class="navelem"><a class="el" href="jevois_8c.html">jevois.c</a></li>
-    <li class="footer">Generated on Thu Aug 1 2024 10:38:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 1 2024 12:26:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
