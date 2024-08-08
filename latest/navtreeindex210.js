@@ -1,5 +1,7 @@
 var NAVTREEINDEX210 =
 {
+"structHorizontalGuidanceSetpoint.html#a902dfeb0c0690d6b80c472b1ae695f61":[11,0,600,2],
+"structHorizontalGuidanceSetpoint.html#a9e870dc90ef3a852138bfe455885426c":[11,0,600,0],
 "structHorizontalGuidanceSetpoint.html#abf09060f037f857c6f12d08970aca3ae":[11,0,600,5],
 "structIndiController__int.html":[11,0,638],
 "structIndiController__int.html#a053595e6dba820bac8537d74ed7c6a3a":[11,0,638,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX210 =
 "sys__id__auto__doublets_8c_source.html":[12,0,1,0,6,69,6],
 "sys__id__auto__doublets_8h.html":[12,0,1,0,6,69,7],
 "sys__id__auto__doublets_8h.html#a7eef44a298aed40e2af0c80fd3b2d946":[12,0,1,0,6,69,7,1],
-"sys__id__auto__doublets_8h.html#a879945c53653084453e0ded13e63ea0e":[12,0,1,0,6,69,7,0],
-"sys__id__auto__doublets_8h.html#aa989a6a6aa96c056468d91432e69b9b4":[12,0,1,0,6,69,7,3],
-"sys__id__auto__doublets_8h.html#ad666811f7c6ccb50afcc1d13567f36d9":[12,0,1,0,6,69,7,2]
+"sys__id__auto__doublets_8h.html#a879945c53653084453e0ded13e63ea0e":[12,0,1,0,6,69,7,0]
 };

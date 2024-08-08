@@ -1,5 +1,11 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_file.html#module_load_example__logger_file":[1,261,0],
+"module__logger_file.html#module_xml__logger_file":[1,261,2,0],
+"module__logger_sd_chibios.html":[1,262],
+"module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,262,1],
+"module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,262,3],
+"module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,262,2],
 "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,262,0],
 "module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,262,3,0],
 "module__logger_sd_spi_direct.html":[1,263],
@@ -243,11 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,347,2],
 "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft":[1,347,0],
 "module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,347,2,0],
-"module__nav_survey_zamboni.html":[1,348],
-"module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni":[1,348,0],
-"module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni":[1,348,0,0],
-"module__nav_takeoff_and_landing.html":[1,349],
-"module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing":[1,349,1],
-"module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing":[1,349,2],
-"module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,349,0]
+"module__nav_survey_zamboni.html":[1,348]
 };

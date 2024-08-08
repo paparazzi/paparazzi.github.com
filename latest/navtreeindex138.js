@@ -1,5 +1,11 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni":[1,348,0],
+"module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni":[1,348,0,0],
+"module__nav_takeoff_and_landing.html":[1,349],
+"module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing":[1,349,1],
+"module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing":[1,349,2],
+"module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,349,0],
 "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,349,2,0],
 "module__nav_trinity.html":[1,350],
 "module__nav_trinity.html#functions__nav_trinity":[1,350,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX138 =
 "module__rpm_sensor.html":[1,418],
 "module__rpm_sensor.html#configuration__rpm_sensor":[1,418,1],
 "module__rpm_sensor.html#functions__rpm_sensor":[1,418,2],
-"module__rpm_sensor.html#module_load_example__rpm_sensor":[1,418,0],
-"module__rpm_sensor.html#module_xml__rpm_sensor":[1,418,2,0],
-"module__rssi.html":[1,313],
-"module__rssi.html#datalink_functions__rssi":[1,313,2],
-"module__rssi.html#functions__rssi":[1,313,1],
-"module__rssi.html#module_load_example__rssi":[1,313,0],
-"module__rssi.html#module_xml__rssi":[1,313,2,0]
+"module__rpm_sensor.html#module_load_example__rpm_sensor":[1,418,0]
 };

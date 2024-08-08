@@ -1,5 +1,11 @@
 var NAVTREEINDEX139 =
 {
+"module__rpm_sensor.html#module_xml__rpm_sensor":[1,418,2,0],
+"module__rssi.html":[1,313],
+"module__rssi.html#datalink_functions__rssi":[1,313,2],
+"module__rssi.html#functions__rssi":[1,313,1],
+"module__rssi.html#module_load_example__rssi":[1,313,0],
+"module__rssi.html#module_xml__rssi":[1,313,2,0],
 "module__rust_demo_module.html":[1,498],
 "module__rust_demo_module.html#functions__rust_demo_module":[1,498,1],
 "module__rust_demo_module.html#module_load_example__rust_demo_module":[1,498,0],
@@ -33,7 +39,6 @@ var NAVTREEINDEX139 =
 "module__shell.html#module_load_example__shell":[1,83,0],
 "module__shell.html#module_xml__shell":[1,83,2,0],
 "module__shift_tracking.html":[1,104],
-"module__shift_tracking.html#af_section":[1,104,1,0],
 "module__shift_tracking.html#configuration__shift_tracking":[1,104,1],
 "module__shift_tracking.html#functions__shift_tracking":[1,104,2],
 "module__shift_tracking.html#module_load_example__shift_tracking":[1,104,0],
@@ -161,10 +166,12 @@ var NAVTREEINDEX139 =
 "module__switch_uart.html#module_load_example__switch_uart":[1,448,0],
 "module__switch_uart.html#module_xml__switch_uart":[1,448,1,0],
 "module__sys_id_auto_doublets.html":[1,449],
+"module__sys_id_auto_doublets.html#af_section":[1,449,1,0],
 "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,449,1],
 "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,449,2],
+"module__sys_id_auto_doublets.html#init_functions":[1,449,2,0],
 "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,449,0],
-"module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,449,2,0],
+"module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,449,2,1],
 "module__sys_id_chirp.html":[1,450],
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,450,1],
 "module__sys_id_chirp.html#functions__sys_id_chirp":[1,450,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX139 =
 "module__telemetry_nps_secure.html#configuration__telemetry_nps_secure":[1,116,1],
 "module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,116,0],
 "module__telemetry_nps_secure.html#module_xml__telemetry_nps_secure":[1,116,1,0],
-"module__telemetry_secure_common.html":[1,117],
-"module__telemetry_secure_common.html#configuration__telemetry_secure_common":[1,117,1],
-"module__telemetry_secure_common.html#module_load_example__telemetry_secure_common":[1,117,0],
-"module__telemetry_secure_common.html#module_xml__telemetry_secure_common":[1,117,1,0],
-"module__telemetry_sim.html":[1,118],
-"module__telemetry_sim.html#functions__telemetry_sim":[1,118,1],
-"module__telemetry_sim.html#module_load_example__telemetry_sim":[1,118,0],
-"module__telemetry_sim.html#module_xml__telemetry_sim":[1,118,1,0]
+"module__telemetry_secure_common.html":[1,117]
 };

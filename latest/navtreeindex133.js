@@ -1,5 +1,11 @@
 var NAVTREEINDEX133 =
 {
+"module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,42,0],
+"module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing":[1,42,1,0],
+"module__board_tawaki.html":[1,43],
+"module__board_tawaki.html#configuration__board_tawaki":[1,43,1],
+"module__board_tawaki.html#module_load_example__board_tawaki":[1,43,0],
+"module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0],
 "module__board_tawaki_2_0.html":[1,44],
 "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
 "module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
@@ -84,10 +90,9 @@ var NAVTREEINDEX133 =
 "module__current_sensor.html#module_xml__current_sensor":[1,461,1,0],
 "module__cv_blob_locator.html":[1,57],
 "module__cv_blob_locator.html#configuration__cv_blob_locator":[1,57,1],
-"module__cv_blob_locator.html#event_functions":[1,57,2,0],
 "module__cv_blob_locator.html#functions__cv_blob_locator":[1,57,2],
 "module__cv_blob_locator.html#module_load_example__cv_blob_locator":[1,57,0],
-"module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,57,2,1],
+"module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,57,2,0],
 "module__cv_colorfilter.html":[1,58],
 "module__cv_colorfilter.html#configuration__cv_colorfilter":[1,58,1],
 "module__cv_colorfilter.html#functions__cv_colorfilter":[1,58,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX133 =
 "module__dw1000_arduino.html#configuration__dw1000_arduino":[1,129,1],
 "module__dw1000_arduino.html#functions__dw1000_arduino":[1,129,2],
 "module__dw1000_arduino.html#module_load_example__dw1000_arduino":[1,129,0],
-"module__dw1000_arduino.html#module_xml__dw1000_arduino":[1,129,2,0],
-"module__e_identification_fr.html":[1,467],
-"module__e_identification_fr.html#configuration__e_identification_fr":[1,467,1],
-"module__e_identification_fr.html#functions__e_identification_fr":[1,467,2],
-"module__e_identification_fr.html#module_load_example__e_identification_fr":[1,467,0],
-"module__e_identification_fr.html#module_xml__e_identification_fr":[1,467,2,0]
+"module__dw1000_arduino.html#module_xml__dw1000_arduino":[1,129,2,0]
 };

@@ -111,8 +111,16 @@ var onboard_modules =
     ] ],
     [ "actuators_md25 module", "module__actuators_md25.html", [
       [ "Example for airframe file", "module__actuators_md25.html#module_load_example__actuators_md25", null ],
-      [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", null ],
+      [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", [
+        [ "Configure Options", "module__actuators_md25.html#configure", null ]
+      ] ],
       [ "Module functions", "module__actuators_md25.html#functions__actuators_md25", [
+        [ "Event Functions", "module__actuators_md25.html#event_functions", null ],
+        [ "Periodic Functions", "module__actuators_md25.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__actuators_md25.html#files", [
+        [ "Header Files", "module__actuators_md25.html#headers", null ],
+        [ "Source Files", "module__actuators_md25.html#sources", null ],
         [ "Raw actuators_md25.xml file:", "module__actuators_md25.html#module_xml__actuators_md25", null ]
       ] ]
     ] ],
@@ -395,7 +403,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__cv_blob_locator.html#module_load_example__cv_blob_locator", null ],
       [ "Module configuration options", "module__cv_blob_locator.html#configuration__cv_blob_locator", null ],
       [ "Module functions", "module__cv_blob_locator.html#functions__cv_blob_locator", [
-        [ "Event Functions", "module__cv_blob_locator.html#event_functions", null ],
         [ "Raw cv_blob_locator.xml file:", "module__cv_blob_locator.html#module_xml__cv_blob_locator", null ]
       ] ]
     ] ],
@@ -698,9 +705,7 @@ var onboard_modules =
     ] ],
     [ "shift_tracking module", "module__shift_tracking.html", [
       [ "Example for airframe file", "module__shift_tracking.html#module_load_example__shift_tracking", null ],
-      [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", [
-        [ "Airframe file section", "module__shift_tracking.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", null ],
       [ "Module functions", "module__shift_tracking.html#functions__shift_tracking", [
         [ "Raw shift_tracking.xml file:", "module__shift_tracking.html#module_xml__shift_tracking", null ]
       ] ]
@@ -838,9 +843,7 @@ var onboard_modules =
     ] ],
     [ "telemetry_w5100 module", "module__telemetry_w5100.html", [
       [ "Example for airframe file", "module__telemetry_w5100.html#module_load_example__telemetry_w5100", null ],
-      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", [
-        [ "Configure Options", "module__telemetry_w5100.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", null ],
       [ "Module functions", "module__telemetry_w5100.html#functions__telemetry_w5100", [
         [ "Raw telemetry_w5100.xml file:", "module__telemetry_w5100.html#module_xml__telemetry_w5100", null ]
       ] ]
@@ -1214,7 +1217,9 @@ var onboard_modules =
     ] ],
     [ "heli_throttle_curve module", "module__heli_throttle_curve.html", [
       [ "Example for airframe file", "module__heli_throttle_curve.html#module_load_example__heli_throttle_curve", null ],
-      [ "Module configuration options", "module__heli_throttle_curve.html#configuration__heli_throttle_curve", null ],
+      [ "Module configuration options", "module__heli_throttle_curve.html#configuration__heli_throttle_curve", [
+        [ "Define Options", "module__heli_throttle_curve.html#define", null ]
+      ] ],
       [ "Module functions", "module__heli_throttle_curve.html#functions__heli_throttle_curve", [
         [ "Raw heli_throttle_curve.xml file:", "module__heli_throttle_curve.html#module_xml__heli_throttle_curve", null ]
       ] ]
@@ -1260,12 +1265,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
@@ -1276,12 +1281,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -2747,16 +2752,8 @@ var onboard_modules =
     ] ],
     [ "temp_adc module", "module__temp_adc.html", [
       [ "Example for airframe file", "module__temp_adc.html#module_load_example__temp_adc", null ],
-      [ "Module configuration options", "module__temp_adc.html#configuration__temp_adc", [
-        [ "Define Options", "module__temp_adc.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__temp_adc.html#configuration__temp_adc", null ],
       [ "Module functions", "module__temp_adc.html#functions__temp_adc", [
-        [ "Init Functions", "module__temp_adc.html#init_functions", null ],
-        [ "Periodic Functions", "module__temp_adc.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__temp_adc.html#files", [
-        [ "Header Files", "module__temp_adc.html#headers", null ],
-        [ "Source Files", "module__temp_adc.html#sources", null ],
         [ "Raw temp_adc.xml file:", "module__temp_adc.html#module_xml__temp_adc", null ]
       ] ]
     ] ],
@@ -2947,8 +2944,11 @@ var onboard_modules =
     ] ],
     [ "sys_id_auto_doublets module", "module__sys_id_auto_doublets.html", [
       [ "Example for airframe file", "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets", null ],
-      [ "Module configuration options", "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets", null ],
+      [ "Module configuration options", "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets", [
+        [ "Airframe file section", "module__sys_id_auto_doublets.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets", [
+        [ "Init Functions", "module__sys_id_auto_doublets.html#init_functions", null ],
         [ "Raw sys_id_auto_doublets.xml file:", "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets", null ]
       ] ]
     ] ],

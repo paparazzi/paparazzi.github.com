@@ -14,6 +14,7 @@ var preflight__checks_8h =
     [ "preflight_check_f", "preflight__checks_8h.html#adc1fcc5727ba3f47726c03a34cc9ada6", null ],
     [ "preflight_check", "preflight__checks_8h.html#ae885b124c74b27558830de225c7f82c6", null ],
     [ "preflight_check_register", "preflight__checks_8h.html#ae94a1bda9186c9cfcde529873ce73550", null ],
+    [ "preflight_checks_log_bypass", "preflight__checks_8h.html#ab552f68f4e89fec7e37124298fc63d37", null ],
     [ "preflight_error", "preflight__checks_8h.html#a44147825b488fa3cf8ebb75192f9415c", null ],
     [ "preflight_success", "preflight__checks_8h.html#a6b367b7eff152e0b65185b1192056985", null ],
     [ "preflight_warning", "preflight__checks_8h.html#adec4f63b2733608607f6a20188368783", null ],
