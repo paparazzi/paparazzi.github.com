@@ -111,16 +111,8 @@ var onboard_modules =
     ] ],
     [ "actuators_md25 module", "module__actuators_md25.html", [
       [ "Example for airframe file", "module__actuators_md25.html#module_load_example__actuators_md25", null ],
-      [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", [
-        [ "Configure Options", "module__actuators_md25.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", null ],
       [ "Module functions", "module__actuators_md25.html#functions__actuators_md25", [
-        [ "Event Functions", "module__actuators_md25.html#event_functions", null ],
-        [ "Periodic Functions", "module__actuators_md25.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__actuators_md25.html#files", [
-        [ "Header Files", "module__actuators_md25.html#headers", null ],
-        [ "Source Files", "module__actuators_md25.html#sources", null ],
         [ "Raw actuators_md25.xml file:", "module__actuators_md25.html#module_xml__actuators_md25", null ]
       ] ]
     ] ],
@@ -933,6 +925,7 @@ var onboard_modules =
     [ "digital_cam_uart module", "module__digital_cam_uart.html", [
       [ "Example for airframe file", "module__digital_cam_uart.html#module_load_example__digital_cam_uart", null ],
       [ "Module functions", "module__digital_cam_uart.html#functions__digital_cam_uart", [
+        [ "Event Functions", "module__digital_cam_uart.html#event_functions", null ],
         [ "Raw digital_cam_uart.xml file:", "module__digital_cam_uart.html#module_xml__digital_cam_uart", null ]
       ] ]
     ] ],
@@ -1217,9 +1210,7 @@ var onboard_modules =
     ] ],
     [ "heli_throttle_curve module", "module__heli_throttle_curve.html", [
       [ "Example for airframe file", "module__heli_throttle_curve.html#module_load_example__heli_throttle_curve", null ],
-      [ "Module configuration options", "module__heli_throttle_curve.html#configuration__heli_throttle_curve", [
-        [ "Define Options", "module__heli_throttle_curve.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__heli_throttle_curve.html#configuration__heli_throttle_curve", null ],
       [ "Module functions", "module__heli_throttle_curve.html#functions__heli_throttle_curve", [
         [ "Raw heli_throttle_curve.xml file:", "module__heli_throttle_curve.html#module_xml__heli_throttle_curve", null ]
       ] ]
@@ -1273,15 +1264,16 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
+      [ "Files", "module__imu_aspirin_v2_1.html#files", [
         [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
       ] ]
     ] ],
@@ -1741,9 +1733,17 @@ var onboard_modules =
     ] ],
     [ "logger_sd_spi_direct module", "module__logger_sd_spi_direct.html", [
       [ "Example for airframe file", "module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct", null ],
-      [ "Module configuration options", "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct", null ],
-      [ "Module functions", "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct", null ],
+      [ "Module configuration options", "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct", [
+        [ "Configure Options", "module__logger_sd_spi_direct.html#configure", null ],
+        [ "Define Options", "module__logger_sd_spi_direct.html#define", null ]
+      ] ],
+      [ "Module functions", "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct", [
+        [ "Init Functions", "module__logger_sd_spi_direct.html#init_functions", null ],
+        [ "Periodic Functions", "module__logger_sd_spi_direct.html#periodic_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct", [
+        [ "Header Files", "module__logger_sd_spi_direct.html#headers", null ],
+        [ "Source Files", "module__logger_sd_spi_direct.html#sources", null ],
         [ "Raw logger_sd_spi_direct.xml file:", "module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct", null ]
       ] ]
     ] ],
@@ -2944,11 +2944,8 @@ var onboard_modules =
     ] ],
     [ "sys_id_auto_doublets module", "module__sys_id_auto_doublets.html", [
       [ "Example for airframe file", "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets", null ],
-      [ "Module configuration options", "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets", [
-        [ "Airframe file section", "module__sys_id_auto_doublets.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets", null ],
       [ "Module functions", "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets", [
-        [ "Init Functions", "module__sys_id_auto_doublets.html#init_functions", null ],
         [ "Raw sys_id_auto_doublets.xml file:", "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets", null ]
       ] ]
     ] ],
@@ -3221,7 +3218,9 @@ var onboard_modules =
     ] ],
     [ "parachute module", "module__parachute.html", [
       [ "Example for airframe file", "module__parachute.html#module_load_example__parachute", null ],
-      [ "Module configuration options", "module__parachute.html#configuration__parachute", null ],
+      [ "Module configuration options", "module__parachute.html#configuration__parachute", [
+        [ "Airframe file section", "module__parachute.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__parachute.html#functions__parachute", [
         [ "Raw parachute.xml file:", "module__parachute.html#module_xml__parachute", null ]
       ] ]

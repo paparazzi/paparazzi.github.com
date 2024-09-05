@@ -1,5 +1,7 @@
 var NAVTREEINDEX139 =
 {
+"module__rpm_sensor.html#functions__rpm_sensor":[1,418,2],
+"module__rpm_sensor.html#module_load_example__rpm_sensor":[1,418,0],
 "module__rpm_sensor.html#module_xml__rpm_sensor":[1,418,2,0],
 "module__rssi.html":[1,313],
 "module__rssi.html#datalink_functions__rssi":[1,313,2],
@@ -166,12 +168,10 @@ var NAVTREEINDEX139 =
 "module__switch_uart.html#module_load_example__switch_uart":[1,448,0],
 "module__switch_uart.html#module_xml__switch_uart":[1,448,1,0],
 "module__sys_id_auto_doublets.html":[1,449],
-"module__sys_id_auto_doublets.html#af_section":[1,449,1,0],
 "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,449,1],
 "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,449,2],
-"module__sys_id_auto_doublets.html#init_functions":[1,449,2,0],
 "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,449,0],
-"module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,449,2,1],
+"module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,449,2,0],
 "module__sys_id_chirp.html":[1,450],
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,450,1],
 "module__sys_id_chirp.html#functions__sys_id_chirp":[1,450,2],

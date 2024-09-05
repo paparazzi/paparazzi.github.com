@@ -1,10 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__imu_mpu9250_i2c.html":[1,214],
-"module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c":[1,214,1],
-"module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c":[1,214,2],
-"module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,214,0],
-"module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,214,2,0],
 "module__imu_mpu9250_spi.html":[1,215],
 "module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi":[1,215,1],
 "module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi":[1,215,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX136 =
 "module__logger_dataflash.html#module_xml__logger_dataflash":[1,260,2,0],
 "module__logger_file.html":[1,261],
 "module__logger_file.html#configuration__logger_file":[1,261,1],
-"module__logger_file.html#functions__logger_file":[1,261,2]
+"module__logger_file.html#functions__logger_file":[1,261,2],
+"module__logger_file.html#module_load_example__logger_file":[1,261,0],
+"module__logger_file.html#module_xml__logger_file":[1,261,2,0],
+"module__logger_sd_chibios.html":[1,262],
+"module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,262,1],
+"module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,262,3]
 };
