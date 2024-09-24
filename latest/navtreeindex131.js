@@ -224,6 +224,7 @@ var NAVTREEINDEX131 =
 "module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,17,1,0],
 "module__actuators_sts3032.html":[1,18],
 "module__actuators_sts3032.html#configuration__actuators_sts3032":[1,18,1],
+"module__actuators_sts3032.html#configure":[1,18,1,0],
 "module__actuators_sts3032.html#functions__actuators_sts3032":[1,18,2],
 "module__actuators_sts3032.html#module_load_example__actuators_sts3032":[1,18,0],
 "module__actuators_sts3032.html#module_xml__actuators_sts3032":[1,18,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi":[1,25,1],
 "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi":[1,25,2],
 "module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi":[1,25,0],
-"module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi":[1,25,2,0],
-"module__ahrs_chimu_uart.html":[1,26]
+"module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi":[1,25,2,0]
 };

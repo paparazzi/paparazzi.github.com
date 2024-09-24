@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0],
 "module__board_tawaki_2_0.html":[1,44],
 "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
 "module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
@@ -206,10 +207,9 @@ var NAVTREEINDEX133 =
 "module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,137,0],
 "module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc":[1,137,2,0],
 "module__digital_cam_uart.html":[1,138],
-"module__digital_cam_uart.html#event_functions":[1,138,1,0],
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,138,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,138,0],
-"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,138,1,1],
+"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,138,1,0],
 "module__digital_cam_video.html":[1,139],
 "module__digital_cam_video.html#functions__digital_cam_video":[1,139,1],
 "module__digital_cam_video.html#module_load_example__digital_cam_video":[1,139,0],

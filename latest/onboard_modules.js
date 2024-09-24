@@ -147,7 +147,9 @@ var onboard_modules =
     ] ],
     [ "actuators_sts3032 module", "module__actuators_sts3032.html", [
       [ "Example for airframe file", "module__actuators_sts3032.html#module_load_example__actuators_sts3032", null ],
-      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", null ],
+      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", [
+        [ "Configure Options", "module__actuators_sts3032.html#configure", null ]
+      ] ],
       [ "Module functions", "module__actuators_sts3032.html#functions__actuators_sts3032", [
         [ "Raw actuators_sts3032.xml file:", "module__actuators_sts3032.html#module_xml__actuators_sts3032", null ]
       ] ]
@@ -925,7 +927,6 @@ var onboard_modules =
     [ "digital_cam_uart module", "module__digital_cam_uart.html", [
       [ "Example for airframe file", "module__digital_cam_uart.html#module_load_example__digital_cam_uart", null ],
       [ "Module functions", "module__digital_cam_uart.html#functions__digital_cam_uart", [
-        [ "Event Functions", "module__digital_cam_uart.html#event_functions", null ],
         [ "Raw digital_cam_uart.xml file:", "module__digital_cam_uart.html#module_xml__digital_cam_uart", null ]
       ] ]
     ] ],
@@ -1264,16 +1265,15 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
-    ] ],
-    [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
       ] ]
     ] ],
+    [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+    ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Files", "module__imu_aspirin_v2_1.html#files", [
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
         [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
       ] ]
     ] ],
@@ -1417,8 +1417,17 @@ var onboard_modules =
     ] ],
     [ "imu_openpilot_revo module", "module__imu_openpilot_revo.html", [
       [ "Example for airframe file", "module__imu_openpilot_revo.html#module_load_example__imu_openpilot_revo", null ],
-      [ "Module configuration options", "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo", null ],
+      [ "Module configuration options", "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo", [
+        [ "Airframe file section", "module__imu_openpilot_revo.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__imu_openpilot_revo.html#functions__imu_openpilot_revo", [
+        [ "Init Functions", "module__imu_openpilot_revo.html#init_functions", null ],
+        [ "Event Functions", "module__imu_openpilot_revo.html#event_functions", null ],
+        [ "Periodic Functions", "module__imu_openpilot_revo.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__imu_openpilot_revo.html#files", [
+        [ "Header Files", "module__imu_openpilot_revo.html#headers", null ],
+        [ "Source Files", "module__imu_openpilot_revo.html#sources", null ],
         [ "Raw imu_openpilot_revo.xml file:", "module__imu_openpilot_revo.html#module_xml__imu_openpilot_revo", null ]
       ] ]
     ] ],
@@ -1733,17 +1742,9 @@ var onboard_modules =
     ] ],
     [ "logger_sd_spi_direct module", "module__logger_sd_spi_direct.html", [
       [ "Example for airframe file", "module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct", null ],
-      [ "Module configuration options", "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct", [
-        [ "Configure Options", "module__logger_sd_spi_direct.html#configure", null ],
-        [ "Define Options", "module__logger_sd_spi_direct.html#define", null ]
-      ] ],
-      [ "Module functions", "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct", [
-        [ "Init Functions", "module__logger_sd_spi_direct.html#init_functions", null ],
-        [ "Periodic Functions", "module__logger_sd_spi_direct.html#periodic_functions", null ]
-      ] ],
+      [ "Module configuration options", "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct", null ],
+      [ "Module functions", "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct", null ],
       [ "Datalink Functions", "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct", [
-        [ "Header Files", "module__logger_sd_spi_direct.html#headers", null ],
-        [ "Source Files", "module__logger_sd_spi_direct.html#sources", null ],
         [ "Raw logger_sd_spi_direct.xml file:", "module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct", null ]
       ] ]
     ] ],
@@ -2305,7 +2306,9 @@ var onboard_modules =
     ] ],
     [ "optical_flow_mateksys_3901_l0x module", "module__optical_flow_mateksys_3901_l0x.html", [
       [ "Example for airframe file", "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x", null ],
-      [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", null ],
+      [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", [
+        [ "Define Options", "module__optical_flow_mateksys_3901_l0x.html#define", null ]
+      ] ],
       [ "Module functions", "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x", [
         [ "Raw optical_flow_mateksys_3901_l0x.xml file:", "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x", null ]
       ] ]
@@ -3218,9 +3221,7 @@ var onboard_modules =
     ] ],
     [ "parachute module", "module__parachute.html", [
       [ "Example for airframe file", "module__parachute.html#module_load_example__parachute", null ],
-      [ "Module configuration options", "module__parachute.html#configuration__parachute", [
-        [ "Airframe file section", "module__parachute.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__parachute.html#configuration__parachute", null ],
       [ "Module functions", "module__parachute.html#functions__parachute", [
         [ "Raw parachute.xml file:", "module__parachute.html#module_xml__parachute", null ]
       ] ]
