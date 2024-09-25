@@ -782,7 +782,7 @@ $(document).ready(function(){initNavTree('ekf__aw_8cpp_source.html',''); initRes
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160; </div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="comment">// Calculate Angle of Attack</span></div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keywordtype">float</span> aoa = atan2f(w, fabsf(u) &lt; 1.E-5 ? 1<a class="code" href="group__math__geodetic__utm.html#ga07484107e6d9fdf38b53edf631d6511d">E</a>-5 : u); <span class="comment">// Protected alpha calculation</span></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordtype">float</span> sat_aoa;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordtype">float</span> sat_aoa = 0;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  Bound(sat_aoa, <a class="code" href="ekf__aw_8cpp.html#a6fddc70e5c5cb4d77e0b6280159ec720">deg2rad</a> * <a class="code" href="ekf__aw_8cpp.html#aaf1887e4424b64368e905fb2ce8ddffc">EKF_AW_AOA_MIN_ANGLE</a>, <a class="code" href="ekf__aw_8cpp.html#a6fddc70e5c5cb4d77e0b6280159ec720">deg2rad</a> * <a class="code" href="ekf__aw_8cpp.html#a88d3de5512234a019eb297bb2909ed38">EKF_AW_AOA_MAX_ANGLE</a>); <span class="comment">// Saturate alpha</span></div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <span class="keywordtype">float</span> tan_aoa = tanf(aoa);</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160; </div>
@@ -1927,7 +1927,7 @@ $(document).ready(function(){initNavTree('ekf__aw_8cpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="ekf__aw_8cpp.html">ekf_aw.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 11:20:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 25 2024 07:58:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
