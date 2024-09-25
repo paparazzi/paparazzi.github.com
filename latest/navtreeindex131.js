@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"mission__common_8c.html#a6a886a1e7ba0bd3d1b89a15184fee2bd":[12,0,1,0,6,45,4,11],
+"mission__common_8c.html#a6bc6421e3873d2b4d620bc33e1e90446":[12,0,1,0,6,45,4,6],
 "mission__common_8c.html#a8ae82a35d851ba67a7d044f4950db583":[12,0,1,0,6,45,4,18],
 "mission__common_8c.html#a8cfd722b32d9d6683e562b437e15d8bc":[12,0,1,0,6,45,4,2],
 "mission__common_8c.html#a9006fa3835ff34e0797a733b8423b00d":[12,0,1,0,6,45,4,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__agl_dist.html#module_xml__agl_dist":[1,423,2,0],
 "module__ahrs_chimu_spi.html":[1,25],
 "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi":[1,25,1],
-"module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi":[1,25,2],
-"module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi":[1,25,0],
-"module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi":[1,25,2,0]
+"module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi":[1,25,2]
 };

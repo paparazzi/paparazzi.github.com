@@ -1,5 +1,7 @@
 var NAVTREEINDEX209 =
 {
+"stm32_2mcu__periph_2i2c__arch_8h_source.html":[12,0,1,0,0,3,0,7],
+"stm32_2mcu__periph_2pwm__input__arch_8c.html":[12,0,1,0,0,3,0,8],
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a303821e177e52ec03d248bbc8e70fbd3":[12,0,1,0,0,3,0,8,3],
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a3a5e286c91b791f687a78db23b7145e2":[12,0,1,0,0,3,0,8,1],
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a45920a6a88c45cb2cb798b01306707a2":[12,0,1,0,0,3,0,8,2],
@@ -11,8 +13,8 @@ var NAVTREEINDEX209 =
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,3,0,9,2,3],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,0,0,12,2,5],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,3,0,9,2,5],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,0,0,12,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
+"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,0,0,12,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[12,0,1,0,0,3,0,9,1],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f":[12,0,1,0,0,3,0,9,0],
 "stm32_2mcu__periph_2pwm__input__arch_8h_source.html":[12,0,1,0,0,3,0,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX209 =
 "structDSHOTDriver.html#adc0661fe630b9a902d9228864c4cf77b":[11,0,454,2],
 "structHorizontalGuidanceSetpoint.html":[11,0,600],
 "structHorizontalGuidanceSetpoint.html#a1c60f08391fc5f86b0b0276d10f3812a":[11,0,600,6],
-"structHorizontalGuidanceSetpoint.html#a47d7eee694eeefe375dcf58a632f5c37":[11,0,600,4],
-"structHorizontalGuidanceSetpoint.html#a75b6a5ffd5e710cfe2f935778b19e210":[11,0,600,3],
-"structHorizontalGuidanceSetpoint.html#a8a0927f7d2ded811f5edf8ef5f51205d":[11,0,600,1]
+"structHorizontalGuidanceSetpoint.html#a47d7eee694eeefe375dcf58a632f5c37":[11,0,600,4]
 };

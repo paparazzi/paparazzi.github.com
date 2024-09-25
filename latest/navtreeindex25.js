@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"bmp3__i2c_8h.html#a3643d7753ab79dce2874699dde2aa311":[12,0,1,0,7,29,0,4],
+"bmp3__i2c_8h.html#a3cccca1f01cb29ef3d7fde56243996bb":[12,0,1,0,7,29,4],
 "bmp3__i2c_8h.html#a4b62bf5c4d48e93927fd507e58b5183c":[12,0,1,0,7,29,0,9],
 "bmp3__i2c_8h.html#a7d28435e54d38c62a58d078c08eed5bf":[12,0,1,0,7,29,3],
 "bmp3__i2c_8h.html#a86c922df4dd57ae7307de359c1d8bfb9":[12,0,1,0,7,29,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "boards_2disco_2actuators_8h.html#ae6153795b5ac8e840dfe148c38779be5":[12,0,1,0,1,6,1,14],
 "boards_2disco_2actuators_8h.html#aeb057c553733dd6256e39bd132450157":[12,0,1,0,1,6,1,10],
 "boards_2disco_2actuators_8h.html#aee9c4499f32c1157c62c8d2a47f600d7":[12,0,1,0,1,6,1,17],
-"boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a":[12,0,1,0,1,6,1,16],
-"boards_2disco_2actuators_8h.html#structActuatorsDisco":[12,0,1,0,1,6,1,0],
-"boards_2disco_2actuators_8h_source.html":[12,0,1,0,1,6,1]
+"boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a":[12,0,1,0,1,6,1,16]
 };

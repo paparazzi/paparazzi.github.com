@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__board_tawaki.html#configuration__board_tawaki":[1,43,1],
+"module__board_tawaki.html#module_load_example__board_tawaki":[1,43,0],
 "module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0],
 "module__board_tawaki_2_0.html":[1,44],
 "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__dw1000_arduino.html#module_xml__dw1000_arduino":[1,129,2,0],
 "module__e_identification_fr.html":[1,467],
 "module__e_identification_fr.html#configuration__e_identification_fr":[1,467,1],
-"module__e_identification_fr.html#functions__e_identification_fr":[1,467,2],
-"module__e_identification_fr.html#module_load_example__e_identification_fr":[1,467,0],
-"module__e_identification_fr.html#module_xml__e_identification_fr":[1,467,2,0]
+"module__e_identification_fr.html#functions__e_identification_fr":[1,467,2]
 };

@@ -97,6 +97,7 @@ var NAVTREEINDEX2 =
 "actuators__faulhaber_8c.html#a13ab22ef9bde2e934b4a6f931065af4a":[12,0,1,0,6,0,10,4],
 "actuators__faulhaber_8c.html#a17189ece259b3a94ed47a82cf13215ef":[12,0,1,0,6,0,10,6],
 "actuators__faulhaber_8c.html#a3635824a6120e2e7123f97f71f8724aa":[12,0,1,0,6,0,10,0,1],
+"actuators__faulhaber_8c.html#a4062e188b9f59ab77a0193e7e42eb5e3":[12,0,1,0,6,0,10,16],
 "actuators__faulhaber_8c.html#a51a6848f02cd6b0e522c9178247d01ef":[12,0,1,0,6,0,10,12],
 "actuators__faulhaber_8c.html#a564761e2ee7d84605c3feed4fcc5ecd3":[12,0,1,0,6,0,10,0,3],
 "actuators__faulhaber_8c.html#a653e9c382c3dd3bc892d52ee41b52103":[12,0,1,0,6,0,10,20],
@@ -114,7 +115,6 @@ var NAVTREEINDEX2 =
 "actuators__faulhaber_8c.html#a97697b0921dc230bba12003c7a857ca8":[12,0,1,0,6,0,10,2],
 "actuators__faulhaber_8c.html#ab2801d4f23674fa0cc182bde44f2763b":[12,0,1,0,6,0,10,0,6],
 "actuators__faulhaber_8c.html#abfc00382a55511a37880168354473bbd":[12,0,1,0,6,0,10,0,4],
-"actuators__faulhaber_8c.html#ac86e2c3cd6bb735c6d2c13bbae5a97ee":[12,0,1,0,6,0,10,16],
 "actuators__faulhaber_8c.html#acf2b3ac1e2d0d363ee44a9ea14426156":[12,0,1,0,6,0,10,17],
 "actuators__faulhaber_8c.html#ad7a6c990f186a94859aac0492081a84a":[12,0,1,0,6,0,10,0,2],
 "actuators__faulhaber_8c.html#ae6d47e2d26846abcb444791cb793a01d":[12,0,1,0,6,0,10,14],
@@ -142,6 +142,8 @@ var NAVTREEINDEX2 =
 "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026":[12,0,1,0,6,0,11,5],
 "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a7367281f82803ba55f956a9d81fa30ef":[12,0,1,0,6,0,11,5,2],
 "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a751fc1210ab48d9e2a081dfe4d94cf2f":[12,0,1,0,6,0,11,5,1],
+"actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026a764a16a924dc43f8c3e4a706f9d158e6":[12,0,1,0,6,0,11,5,4],
+"actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ab7b00ffed7f6345ec00b6e089f6f8e80":[12,0,1,0,6,0,11,5,3],
 "actuators__faulhaber_8h.html#ae1b293ada5a2ef8e2d8b156e63562026ad08e4ba37e2357572d3bf75dd95dd521":[12,0,1,0,6,0,11,5,0],
 "actuators__faulhaber_8h.html#ae69f7a5529fb6b1dcf53001305a64d5d":[12,0,1,0,6,0,11,3],
 "actuators__faulhaber_8h.html#ae6d47e2d26846abcb444791cb793a01d":[12,0,1,0,6,0,11,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "actuators__ostrich_8h.html#ad9fba7aad473e25e20425a90e650a8c7":[12,0,1,0,6,0,17,3],
 "actuators__ostrich_8h.html#ae47b4a3b2d75b6b733eb0f9c5d72a372":[12,0,1,0,6,0,17,5],
 "actuators__ostrich_8h.html#ae6c3c8331ecd7eec19eeeeb655d7a7fb":[12,0,1,0,6,0,17,1],
-"actuators__ostrich_8h.html#aff23ffae054eb5d6bd6371c851c3f889":[12,0,1,0,6,0,17,4],
-"actuators__ostrich_8h.html#structActuatorsOstrich":[12,0,1,0,6,0,17,0],
-"actuators__ostrich_8h_source.html":[12,0,1,0,6,0,17]
+"actuators__ostrich_8h.html#aff23ffae054eb5d6bd6371c851c3f889":[12,0,1,0,6,0,17,4]
 };

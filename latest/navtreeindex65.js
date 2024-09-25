@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"group__config.html#ga185a9549f0d212530070e806680c4949":[12,0,1,0,0,0,3,17],
+"group__config.html#ga185a9549f0d212530070e806680c4949":[9,5,17],
 "group__config.html#ga1bd0fe5d119a7de890025214ae249c1d":[9,5,61],
 "group__config.html#ga1bd0fe5d119a7de890025214ae249c1d":[12,0,1,0,0,0,3,61],
 "group__config.html#ga20a364f069f854ccdba167f2cca2526f":[12,0,1,0,0,0,3,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX65 =
 "group__i2c.html#structi2c__periph":[9,0,0,1],
 "group__i2c.html#structi2c__transaction":[9,0,0,0],
 "group__math.html":[9,9],
-"group__math__algebra.html":[9,9,1],
-"group__math__algebra__double.html":[9,9,1,2],
-"group__math__algebra__double.html#a00c6a387099e94f2eed59fcdae3a5e28":[9,9,1,2,5,1]
+"group__math__algebra.html":[9,9,1]
 };

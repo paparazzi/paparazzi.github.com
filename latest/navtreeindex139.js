@@ -1,5 +1,7 @@
 var NAVTREEINDEX139 =
 {
+"module__rpm_sensor.html":[1,418],
+"module__rpm_sensor.html#configuration__rpm_sensor":[1,418,1],
 "module__rpm_sensor.html#functions__rpm_sensor":[1,418,2],
 "module__rpm_sensor.html#module_load_example__rpm_sensor":[1,418,0],
 "module__rpm_sensor.html#module_xml__rpm_sensor":[1,418,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX139 =
 "module__telemetry_nps.html#module_xml__telemetry_nps":[1,115,2,0],
 "module__telemetry_nps_secure.html":[1,116],
 "module__telemetry_nps_secure.html#configuration__telemetry_nps_secure":[1,116,1],
-"module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,116,0],
-"module__telemetry_nps_secure.html#module_xml__telemetry_nps_secure":[1,116,1,0],
-"module__telemetry_secure_common.html":[1,117]
+"module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,116,0]
 };

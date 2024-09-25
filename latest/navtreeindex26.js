@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"boards_2disco_2actuators_8h.html#structActuatorsDisco":[12,0,1,0,1,6,1,0],
+"boards_2disco_2actuators_8h_source.html":[12,0,1,0,1,6,1],
 "boards_2disco_2board_8c.html":[12,0,1,0,1,6,2],
 "boards_2disco_2board_8c.html#a161f380e3fa5363245deb13194d4780d":[12,0,1,0,1,6,2,2],
 "boards_2disco_2board_8c_source.html":[12,0,1,0,1,6,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "cc2500__compat_8c.html#acd79985136a05b258fa9585116a23f3c":[12,0,1,0,6,56,0,2,9],
 "cc2500__compat_8c.html#ad4c71641946465d236a9acdbeccb79d4":[12,0,1,0,6,56,0,2,15],
 "cc2500__compat_8c.html#addb30534411fed2d3dca3f7f8d9a6b5a":[12,0,1,0,6,56,0,2,2],
-"cc2500__compat_8c.html#ae056691019449acd93551413144617cc":[12,0,1,0,6,56,0,2,14],
-"cc2500__compat_8c.html#ae42b2686d9acfb8b82f63ffb7cb5c600":[12,0,1,0,6,56,0,2,27],
-"cc2500__compat_8c.html#ae97a0bb0f6cab9aca87bfb796b8125cc":[12,0,1,0,6,56,0,2,18]
+"cc2500__compat_8c.html#ae056691019449acd93551413144617cc":[12,0,1,0,6,56,0,2,14]
 };

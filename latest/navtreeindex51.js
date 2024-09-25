@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"eff__scheduling__rot__wing__V2_8h.html#structrot__wing__eff__sched__param__t":[12,0,1,0,6,14,17,0],
+"eff__scheduling__rot__wing__V2_8h.html#structrot__wing__eff__sched__param__t":[12,0,1,0,6,14,19,0],
 "eff__scheduling__rot__wing__V2_8h.html#structrot__wing__eff__sched__var__t":[12,0,1,0,6,14,17,1],
 "eff__scheduling__rot__wing__V2_8h.html#structrot__wing__eff__sched__var__t":[12,0,1,0,6,14,19,1],
 "eff__scheduling__rot__wing__V2_8h.html#structwing__model":[12,0,1,0,6,14,19,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "ekf__aw_8h.html#abef530ba9595470483ad200c4c32799d":[12,0,1,0,6,44,10,1,1],
 "ekf__aw_8h.html#ad253343b447072c050c28d1a0fee1e15":[12,0,1,0,6,44,10,1,0],
 "ekf__aw_8h.html#adefcc4e572f7a93e9ca9337a5c52d5a8":[12,0,1,0,6,44,10,26],
-"ekf__aw_8h.html#ae1292f60a75d31f3e6a54eaa13227e87":[12,0,1,0,6,44,10,0,0],
-"ekf__aw_8h.html#ae3a2033e1072171823cd3e36ecc55caf":[12,0,1,0,6,44,10,0,3],
-"ekf__aw_8h.html#ae480fe5a9237002e4590900166bf41d7":[12,0,1,0,6,44,10,10]
+"ekf__aw_8h.html#ae1292f60a75d31f3e6a54eaa13227e87":[12,0,1,0,6,44,10,0,0]
 };

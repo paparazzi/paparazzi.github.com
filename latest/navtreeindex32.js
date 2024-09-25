@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"chimera_2chibios_2v1_80_2board_8h.html#a595859ebc3ee27c61f6dbb3778ae3cf6":[12,0,1,0,1,3,0,0,0,156],
+"chimera_2chibios_2v1_80_2board_8h.html#a595f6a672815fba68c0974f6f0265d93":[12,0,1,0,1,3,0,0,0,279],
 "chimera_2chibios_2v1_80_2board_8h.html#a59e56db89b32b995df0a075f69f49ba6":[12,0,1,0,1,3,0,0,0,117],
 "chimera_2chibios_2v1_80_2board_8h.html#a5a0c693411f19b22f94fa6faa551bc6c":[12,0,1,0,1,3,0,0,0,73],
 "chimera_2chibios_2v1_80_2board_8h.html#a5aa0933b6c770aa41a93ce09e35b078d":[12,0,1,0,1,3,0,0,0,457],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "chimera_2chibios_2v1_80_2board_8h.html#af258f0d872991b9a1d8a1292440fb8a8":[12,0,1,0,1,3,0,0,0,226],
 "chimera_2chibios_2v1_80_2board_8h.html#af2a05bfa8d9e3b4dd06f7a0fd4653aaa":[12,0,1,0,1,3,0,0,0,56],
 "chimera_2chibios_2v1_80_2board_8h.html#af405d486ccb51c99a1252dfa4495363b":[12,0,1,0,1,3,0,0,0,396],
-"chimera_2chibios_2v1_80_2board_8h.html#af492779bf051f349f9235bf1d7a91e52":[12,0,1,0,1,3,0,0,0,290],
-"chimera_2chibios_2v1_80_2board_8h.html#af52b7d735e33cb119ac602e54530d966":[12,0,1,0,1,3,0,0,0,90],
-"chimera_2chibios_2v1_80_2board_8h.html#af5bb5a3881d52766bd4d90aaadb30b34":[12,0,1,0,1,3,0,0,0,269]
+"chimera_2chibios_2v1_80_2board_8h.html#af492779bf051f349f9235bf1d7a91e52":[12,0,1,0,1,3,0,0,0,290]
 };

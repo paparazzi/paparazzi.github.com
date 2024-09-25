@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__denoising_8h.html#a2d18a26121bd6444230d8e768026ea80":[12,0,1,0,1,2,0,0,7,21,1],
+"avi__isp__denoising_8h.html#a317012da9efc933d2429f6b979cc5fd2":[12,0,1,0,1,2,0,0,7,13,12],
 "avi__isp__denoising_8h.html#a3f818306785aec9c218af57976617f6d":[12,0,1,0,1,2,0,0,7,10,0],
 "avi__isp__denoising_8h.html#a3fab2529b03d65b55fbf49ac58ec7a13":[12,0,1,0,1,2,0,0,7,25,0],
 "avi__isp__denoising_8h.html#a4374afa4d42a1a212dce679b23ff82c6":[12,0,1,0,1,2,0,0,7,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w__inv_8____unnamed157____":[12,0,1,0,1,2,0,0,11,19],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem_8____unnamed167____":[12,0,1,0,1,2,0,0,11,24],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem__regs":[12,0,1,0,1,2,0,0,11,13],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem_8____unnamed165____":[12,0,1,0,1,2,0,0,11,23],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem__regs":[12,0,1,0,1,2,0,0,11,11],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__offset__x__y_8____unnamed149____":[12,0,1,0,1,2,0,0,11,15]
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem_8____unnamed165____":[12,0,1,0,1,2,0,0,11,23]
 };

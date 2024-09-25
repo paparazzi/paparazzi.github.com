@@ -1,5 +1,7 @@
 var NAVTREEINDEX208 =
 {
+"stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df":[12,0,1,0,3,2,2,37,2,7],
+"stabilization__indi__simple_8h.html#aa69c49fd27efda8cdffa87087f0f0dd4":[12,0,1,0,3,2,2,37,2,12],
 "stabilization__indi__simple_8h.html#aad408aa55ec7cd11f1354db45fa08c39":[12,0,1,0,3,2,2,37,3],
 "stabilization__indi__simple_8h.html#ab67e9db78639b858f3605e0c23ee2808":[12,0,1,0,3,2,2,37,2,1],
 "stabilization__indi__simple_8h.html#ab7d1e27c6059abe21e47ced97e3b89e5":[12,0,1,0,3,2,2,37,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX208 =
 "stm32_2mcu__periph_2i2c__arch_8c.html#aeb7a802ff0a0f20d4799074071714846":[12,0,1,0,0,3,0,6,22],
 "stm32_2mcu__periph_2i2c__arch_8c.html#af6c16ded89419dcadd6d658416e9f55c":[12,0,1,0,0,3,0,6,16],
 "stm32_2mcu__periph_2i2c__arch_8c_source.html":[12,0,1,0,0,3,0,6],
-"stm32_2mcu__periph_2i2c__arch_8h.html":[12,0,1,0,0,3,0,7],
-"stm32_2mcu__periph_2i2c__arch_8h_source.html":[12,0,1,0,0,3,0,7],
-"stm32_2mcu__periph_2pwm__input__arch_8c.html":[12,0,1,0,0,3,0,8]
+"stm32_2mcu__periph_2i2c__arch_8h.html":[12,0,1,0,0,3,0,7]
 };
