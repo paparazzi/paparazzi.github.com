@@ -42,6 +42,7 @@ var power__uavcan_8c =
     [ "power_uavcan_battery_cb", "power__uavcan_8c.html#a0f53560745b431a34d02e210f06ae423", null ],
     [ "power_uavcan_circuit_cb", "power__uavcan_8c.html#a29223ab4f7905172bcdcafb0e147fcea", null ],
     [ "power_uavcan_init", "power__uavcan_8c.html#ab60b03d993c38a9d0971869eb04aca30", null ],
+    [ "power_uavcan_send_power_device", "power__uavcan_8c.html#a4dbb87f7da717beeb9361a182e84a852", null ],
     [ "batteries", "power__uavcan_8c.html#ab5781a2ee3e8864f9c35f9d568017b38", null ],
     [ "battery_circuits", "power__uavcan_8c.html#a02ad87f05393277515f658808c4a40f2", null ],
     [ "circuit_uavcan_ev", "power__uavcan_8c.html#a9a9c02345748753e8fdaef17c180df07", null ],

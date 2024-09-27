@@ -1,5 +1,7 @@
 var NAVTREEINDEX201 =
 {
+"serial__port_8c.html#a7c12181b2e8dc912219651ff42d22e42":[12,0,1,0,0,1,6,3],
+"serial__port_8c.html#a82fce4c6435c1524dd934d40c26330bf":[12,0,1,0,0,1,6,0],
 "serial__port_8c.html#a8af70d2ac65676d6dd797b3a0f5de1a9":[12,0,1,0,0,1,6,5],
 "serial__port_8c.html#a9e425ef705476c0a778712761281a232":[12,0,1,0,0,1,6,10],
 "serial__port_8c.html#ab7728b553a2579a9bd70e11fec0bbbc4":[12,0,1,0,0,1,6,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX201 =
 "sim_2mcu__periph_2pipe__arch_8h.html":[12,0,1,0,0,2,0,7],
 "sim_2mcu__periph_2pipe__arch_8h.html#a1bd4f7d2f38f1431556af6d199de4511":[12,0,1,0,0,2,0,7,1],
 "sim_2mcu__periph_2pipe__arch_8h.html#a921cef724df3f5d0f6f43d102a584544":[12,0,1,0,0,2,0,7,0],
-"sim_2mcu__periph_2pipe__arch_8h_source.html":[12,0,1,0,0,2,0,7],
-"sim_2mcu__periph_2rng__arch_8c.html":[12,0,1,0,0,2,0,8],
-"sim_2mcu__periph_2rng__arch_8c.html#a2a25baf68bfa99b354145cf2de467ab0":[12,0,1,0,0,2,0,8,0]
+"sim_2mcu__periph_2pipe__arch_8h_source.html":[12,0,1,0,0,2,0,7]
 };

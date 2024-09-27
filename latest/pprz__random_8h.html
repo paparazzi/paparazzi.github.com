@@ -115,12 +115,13 @@ $(document).ready(function(){initNavTree('pprz__random_8h.html',''); initResizab
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__random_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2math_2pprz__random_8hdep" alt=""/></div>
 <map name="asw_2airborne_2math_2pprz__random_8hdep" id="asw_2airborne_2math_2pprz__random_8hdep">
-<area shape="rect" title=" " alt="" coords="376,5,544,47"/>
+<area shape="rect" title=" " alt="" coords="473,5,641,47"/>
 <area shape="rect" href="pprz__random_8c.html" title=" " alt="" coords="5,102,173,143"/>
 <area shape="rect" href="actuators__uavcan_8c.html" title="UAVCan actuators using RAWCOMMAND message and ESC_STATUS telemetry." alt="" coords="198,95,357,151"/>
 <area shape="rect" href="imu__heater_8c.html" title="IMU heater module which can actuate a resistor heater through GPIO or IOMCU." alt="" coords="381,102,539,143"/>
-<area shape="rect" href="sys__id__chirp_8c.html" title=" " alt="" coords="563,95,730,151"/>
-<area shape="rect" href="sys__id__wave_8c.html" title=" " alt="" coords="754,95,921,151"/>
+<area shape="rect" href="power__uavcan_8c.html" title="Power sensors on the uavcan bus." alt="" coords="563,102,749,143"/>
+<area shape="rect" href="sys__id__chirp_8c.html" title=" " alt="" coords="773,95,939,151"/>
+<area shape="rect" href="sys__id__wave_8c.html" title=" " alt="" coords="963,95,1130,151"/>
 </map>
 </div>
 </div>
@@ -156,7 +157,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">get_sys_time_msec()</a>, and <a class="el" href="eff__scheduling__rot__wing__V2_8c_source.html#l00381">time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00391">actuators_uavcan_init()</a>, and <a class="el" href="sys__id__chirp_8c_source.html#l00192">sys_id_chirp_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00391">actuators_uavcan_init()</a>, <a class="el" href="power__uavcan_8c_source.html#l00259">power_uavcan_init()</a>, and <a class="el" href="sys__id__chirp_8c_source.html#l00192">sys_id_chirp_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -175,9 +176,10 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__random_8h_a694be11ffe08b609fe1b268a9e469aa2_icgraph.png" border="0" usemap="#apprz__random_8h_a694be11ffe08b609fe1b268a9e469aa2_icgraph" alt=""/></div>
 <map name="apprz__random_8h_a694be11ffe08b609fe1b268a9e469aa2_icgraph" id="apprz__random_8h_a694be11ffe08b609fe1b268a9e469aa2_icgraph">
-<area shape="rect" title=" " alt="" coords="219,31,319,57"/>
+<area shape="rect" title=" " alt="" coords="219,56,319,83"/>
 <area shape="rect" href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda" title="Initialize an uavcan interface." alt="" coords="5,5,171,32"/>
-<area shape="rect" href="sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733" title=" " alt="" coords="23,56,153,83"/>
+<area shape="rect" href="power__uavcan_8c.html#ab60b03d993c38a9d0971869eb04aca30" title=" " alt="" coords="16,56,160,83"/>
+<area shape="rect" href="sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733" title=" " alt="" coords="23,107,153,133"/>
 </map>
 </div>
 
@@ -252,7 +254,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="pprz__random_8c_source.html#l00045">45</a> of file <a class="el" href="pprz__random_8c_source.html">pprz_random.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00122">actuators_uavcan_next_telem()</a>, <a class="el" href="imu__heater_8c_source.html#l00163">imu_heater_periodic()</a>, and <a class="el" href="pprz__random_8c_source.html#l00053">rand_gaussian()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00122">actuators_uavcan_next_telem()</a>, <a class="el" href="imu__heater_8c_source.html#l00163">imu_heater_periodic()</a>, <a class="el" href="power__uavcan_8c_source.html#l00105">power_uavcan_send_power_device()</a>, and <a class="el" href="pprz__random_8c_source.html#l00053">rand_gaussian()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -260,18 +262,20 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__random_8h_ac6450383e0b401411ff36c479aa7f608_icgraph.png" border="0" usemap="#apprz__random_8h_ac6450383e0b401411ff36c479aa7f608_icgraph" alt=""/></div>
 <map name="apprz__random_8h_ac6450383e0b401411ff36c479aa7f608_icgraph" id="apprz__random_8h_ac6450383e0b401411ff36c479aa7f608_icgraph">
-<area shape="rect" title=" " alt="" coords="1081,71,1191,98"/>
-<area shape="rect" href="actuators__uavcan_8c.html#a6368e277fcc4c5b563051fe1961c6832" title=" " alt="" coords="860,5,1033,47"/>
-<area shape="rect" href="imu__heater_8c.html#ab26ee97f1a4e4f761a490c5a75d45150" title="High speed heater periodic This calculates the temperature average and in case of GPIO heater it will..." alt="" coords="869,71,1024,98"/>
-<area shape="rect" href="pprz__random_8c.html#a7ebb0b06e73a9d5e4389020dada0743d" title=" " alt="" coords="889,122,1005,149"/>
+<area shape="rect" title=" " alt="" coords="1109,101,1219,127"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a6368e277fcc4c5b563051fe1961c6832" title=" " alt="" coords="874,5,1047,47"/>
+<area shape="rect" href="imu__heater_8c.html#ab26ee97f1a4e4f761a490c5a75d45150" title="High speed heater periodic This calculates the temperature average and in case of GPIO heater it will..." alt="" coords="883,71,1038,98"/>
+<area shape="rect" href="power__uavcan_8c.html#a4dbb87f7da717beeb9361a182e84a852" title=" " alt="" coords="860,123,1061,164"/>
+<area shape="rect" href="pprz__random_8c.html#a7ebb0b06e73a9d5e4389020dada0743d" title=" " alt="" coords="903,189,1019,215"/>
 <area shape="rect" href="actuators__uavcan_8c.html#a15a349fbc68fcd9525ddf5b0188a8689" title=" " alt="" coords="608,13,812,39"/>
 <area shape="rect" href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda" title="Initialize an uavcan interface." alt="" coords="395,13,560,39"/>
-<area shape="rect" href="sys__id__chirp_8c.html#ab58514cddee23e1a72d465763b68f90f" title=" " alt="" coords="618,122,802,149"/>
-<area shape="rect" href="sys__id__chirp_8c.html#adcb98efd2f03586518ffbb29f2d24100" title=" " alt="" coords="432,169,523,195"/>
-<area shape="rect" href="sys__id__chirp_8c.html#a7a6c12c89f553927efebc882475406ac" title=" " alt="" coords="5,177,136,203"/>
-<area shape="rect" href="sys__id__chirp_8c.html#a97959e77b226051e613b196f0cf9f7e7" title=" " alt="" coords="433,219,522,246"/>
-<area shape="rect" href="sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733" title=" " alt="" coords="412,67,543,94"/>
-<area shape="rect" href="sys__id__chirp_8c.html#a5231f5464d0fb971765403cf0660e84b" title=" " alt="" coords="184,169,347,211"/>
+<area shape="rect" href="power__uavcan_8c.html#ab60b03d993c38a9d0971869eb04aca30" title=" " alt="" coords="638,130,782,157"/>
+<area shape="rect" href="sys__id__chirp_8c.html#ab58514cddee23e1a72d465763b68f90f" title=" " alt="" coords="618,189,802,215"/>
+<area shape="rect" href="sys__id__chirp_8c.html#adcb98efd2f03586518ffbb29f2d24100" title=" " alt="" coords="432,214,523,241"/>
+<area shape="rect" href="sys__id__chirp_8c.html#a7a6c12c89f553927efebc882475406ac" title=" " alt="" coords="5,222,136,249"/>
+<area shape="rect" href="sys__id__chirp_8c.html#a97959e77b226051e613b196f0cf9f7e7" title=" " alt="" coords="433,265,522,291"/>
+<area shape="rect" href="sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733" title=" " alt="" coords="412,113,543,139"/>
+<area shape="rect" href="sys__id__chirp_8c.html#a5231f5464d0fb971765403cf0660e84b" title=" " alt="" coords="184,215,347,256"/>
 </map>
 </div>
 
@@ -283,7 +287,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__random_8h.html">pprz_random.h</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 09:01:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 27 2024 13:44:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
