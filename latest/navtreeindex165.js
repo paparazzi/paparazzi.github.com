@@ -96,7 +96,7 @@ var NAVTREEINDEX165 =
 "onboard_modules.html#modules_category_orange_avoider":[1,0,33],
 "onboard_modules.html#modules_category_radio_control":[1,0,34],
 "onboard_modules.html#modules_category_range_finder":[1,0,35],
-"onboard_modules.html#modules_category_rot_wing_drone":[1,0,36],
+"onboard_modules.html#modules_category_rotwing_drone":[1,0,36],
 "onboard_modules.html#modules_category_sensors":[1,0,37],
 "onboard_modules.html#modules_category_sonar":[1,0,38],
 "onboard_modules.html#modules_category_stabilization":[1,0,39],

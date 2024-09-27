@@ -454,10 +454,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 , <a class="el" href="rng_8h.html#a820694eb7a21338e91e79f50a3a241ea">rng.h</a>
 , <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea">rng_arch.c</a>
 </li>
-<li>rot_wing_vis_transition()
-: <a class="el" href="rot__wing__automation_8h.html#aa7c1befad26f07177137801ac975b832">rot_wing_automation.h</a>
-, <a class="el" href="rot__wing__automation_8c.html#aa7c1befad26f07177137801ac975b832">rot_wing_automation.c</a>
-</li>
 <li>RotateAndTranslateToWorld()
 : <a class="el" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169">nav_survey_poly_osam.c</a>
 , <a class="el" href="nav__survey__hybrid_8c.html#a41e74ee7dfb2efa8690b325d91137e59">nav_survey_hybrid.c</a>
@@ -527,9 +523,9 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 </li>
 <li>rotwing_state_skew_actuator_periodic()
 : <a class="el" href="rotwing__state__V2_8h.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state_V2.h</a>
-, <a class="el" href="rotwing__state_8h.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state.h</a>
-, <a class="el" href="rotwing__state_8c.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state.c</a>
 , <a class="el" href="rotwing__state__V2_8c.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state_V2.c</a>
+, <a class="el" href="rotwing__state_8c.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state.c</a>
+, <a class="el" href="rotwing__state_8h.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state.h</a>
 </li>
 <li>rotwing_state_skewer()
 : <a class="el" href="rotwing__state__V2_8c.html#aad12195d52a6e354db43b1316df033bb">rotwing_state_V2.c</a>
@@ -539,13 +535,17 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 : <a class="el" href="rotwing__state_8c.html#a1c22a756e481c679525540a7dd07b345">rotwing_state.c</a>
 , <a class="el" href="rotwing__state__V2_8c.html#a1c22a756e481c679525540a7dd07b345">rotwing_state_V2.c</a>
 </li>
+<li>rotwing_vis_transition()
+: <a class="el" href="rotwing__automation_8c.html#a2d9aadbe8c7e14ceee55c37578fd5fc4">rotwing_automation.c</a>
+, <a class="el" href="rotwing__automation_8h.html#a2d9aadbe8c7e14ceee55c37578fd5fc4">rotwing_automation.h</a>
+</li>
 <li>rover_guidance_enter()
 : <a class="el" href="rover__guidance_8c.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.c</a>
 , <a class="el" href="rover__guidance_8h.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.h</a>
 </li>
 <li>rover_guidance_holonomic_set_speed_igain()
-: <a class="el" href="rover__guidance__holonomic_8c.html#ae49b3b5e2e2fdb245d57134c6b5c51b7">rover_guidance_holonomic.c</a>
-, <a class="el" href="rover__guidance__holonomic_8h.html#ae49b3b5e2e2fdb245d57134c6b5c51b7">rover_guidance_holonomic.h</a>
+: <a class="el" href="rover__guidance__holonomic_8h.html#ae49b3b5e2e2fdb245d57134c6b5c51b7">rover_guidance_holonomic.h</a>
+, <a class="el" href="rover__guidance__holonomic_8c.html#ae49b3b5e2e2fdb245d57134c6b5c51b7">rover_guidance_holonomic.c</a>
 </li>
 <li>rover_guidance_holonomic_set_turn_igain()
 : <a class="el" href="rover__guidance__holonomic_8c.html#ad86297e199fe43546b3915c63df1936e">rover_guidance_holonomic.c</a>
@@ -564,8 +564,8 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 , <a class="el" href="rover__guidance_8h.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.h</a>
 </li>
 <li>rover_guidance_set_speed_igain()
-: <a class="el" href="rover__guidance_8h.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.h</a>
-, <a class="el" href="rover__guidance_8c.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.c</a>
+: <a class="el" href="rover__guidance_8c.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.c</a>
+, <a class="el" href="rover__guidance_8h.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.h</a>
 </li>
 <li>rover_guidance_set_turn_igain()
 : <a class="el" href="rover__guidance_8c.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e">rover_guidance.c</a>
@@ -796,7 +796,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 27 2024 14:22:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 27 2024 14:47:23 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

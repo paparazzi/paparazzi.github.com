@@ -4,7 +4,7 @@ var ekf__aw__wrapper_8c =
     [ "EKF_AW_QUICK_CONVERGENCE", "ekf__aw__wrapper_8c.html#a0c515336ce7d7cb4f3a0761deadcf0fa", null ],
     [ "EKF_AW_QUICK_CONVERGENCE_TIME", "ekf__aw__wrapper_8c.html#ace8a4c3119500f9d878f11664b7cf1d4", null ],
     [ "EKF_AW_WRAPPER_RANDOM_INPUTS", "ekf__aw__wrapper_8c.html#a4aedad25127d04f58e0c8922f6addee4", null ],
-    [ "EKF_AW_WRAPPER_ROT_WING", "ekf__aw__wrapper_8c.html#a501815d004344b25d02b256c6b53d95b", null ],
+    [ "EKF_AW_WRAPPER_ROTWING", "ekf__aw__wrapper_8c.html#aae451f57287d6ae869b31f6445d7162e", null ],
     [ "PERIODIC_FREQUENCY_AIRSPEED_EKF", "ekf__aw__wrapper_8c.html#af083e01c6390b5961a1e6e2891ddb145", null ],
     [ "PERIODIC_FREQUENCY_AIRSPEED_EKF_FETCH", "ekf__aw__wrapper_8c.html#ad84df1dfa796cc7a9d08a04b9225cf3e", null ],
     [ "debug_vect", "ekf__aw__wrapper_8c.html#a88d21fc62af2896e1b49b66b188cf461", null ],

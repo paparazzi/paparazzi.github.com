@@ -37,7 +37,7 @@ var onboard_modules =
       [ "Orange_Avoider modules", "onboard_modules.html#modules_category_orange_avoider", null ],
       [ "Radio_Control modules", "onboard_modules.html#modules_category_radio_control", null ],
       [ "Range_Finder modules", "onboard_modules.html#modules_category_range_finder", null ],
-      [ "Rot_Wing_Drone modules", "onboard_modules.html#modules_category_rot_wing_drone", null ],
+      [ "Rotwing_Drone modules", "onboard_modules.html#modules_category_rotwing_drone", null ],
       [ "Sensors modules", "onboard_modules.html#modules_category_sensors", null ],
       [ "Sonar modules", "onboard_modules.html#modules_category_sonar", null ],
       [ "Stabilization modules", "onboard_modules.html#modules_category_stabilization", null ],
@@ -643,18 +643,18 @@ var onboard_modules =
         [ "Raw eff_scheduling_nederdrone.xml file:", "module__eff_scheduling_nederdrone.html#module_xml__eff_scheduling_nederdrone", null ]
       ] ]
     ] ],
-    [ "eff_scheduling_rot_wing module", "module__eff_scheduling_rot_wing.html", [
-      [ "Example for airframe file", "module__eff_scheduling_rot_wing.html#module_load_example__eff_scheduling_rot_wing", null ],
-      [ "Module configuration options", "module__eff_scheduling_rot_wing.html#configuration__eff_scheduling_rot_wing", null ],
-      [ "Module functions", "module__eff_scheduling_rot_wing.html#functions__eff_scheduling_rot_wing", [
-        [ "Raw eff_scheduling_rot_wing.xml file:", "module__eff_scheduling_rot_wing.html#module_xml__eff_scheduling_rot_wing", null ]
+    [ "eff_scheduling_rotwing module", "module__eff_scheduling_rotwing.html", [
+      [ "Example for airframe file", "module__eff_scheduling_rotwing.html#module_load_example__eff_scheduling_rotwing", null ],
+      [ "Module configuration options", "module__eff_scheduling_rotwing.html#configuration__eff_scheduling_rotwing", null ],
+      [ "Module functions", "module__eff_scheduling_rotwing.html#functions__eff_scheduling_rotwing", [
+        [ "Raw eff_scheduling_rotwing.xml file:", "module__eff_scheduling_rotwing.html#module_xml__eff_scheduling_rotwing", null ]
       ] ]
     ] ],
-    [ "eff_scheduling_rot_wing_v2 module", "module__eff_scheduling_rot_wing_v2.html", [
-      [ "Example for airframe file", "module__eff_scheduling_rot_wing_v2.html#module_load_example__eff_scheduling_rot_wing_v2", null ],
-      [ "Module configuration options", "module__eff_scheduling_rot_wing_v2.html#configuration__eff_scheduling_rot_wing_v2", null ],
-      [ "Module functions", "module__eff_scheduling_rot_wing_v2.html#functions__eff_scheduling_rot_wing_v2", [
-        [ "Raw eff_scheduling_rot_wing_V2.xml file:", "module__eff_scheduling_rot_wing_v2.html#module_xml__eff_scheduling_rot_wing_v2", null ]
+    [ "eff_scheduling_rotwing_v2 module", "module__eff_scheduling_rotwing_v2.html", [
+      [ "Example for airframe file", "module__eff_scheduling_rotwing_v2.html#module_load_example__eff_scheduling_rotwing_v2", null ],
+      [ "Module configuration options", "module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2", null ],
+      [ "Module functions", "module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2", [
+        [ "Raw eff_scheduling_rotwing_V2.xml file:", "module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2", null ]
       ] ]
     ] ],
     [ "follow_me module", "module__follow_me.html", [
@@ -2433,11 +2433,11 @@ var onboard_modules =
         [ "Raw teraranger_one.xml file:", "module__teraranger_one.html#module_xml__teraranger_one", null ]
       ] ]
     ] ],
-    [ "rot_wing_automation module", "module__rot_wing_automation.html", [
-      [ "Example for airframe file", "module__rot_wing_automation.html#module_load_example__rot_wing_automation", null ],
-      [ "Module configuration options", "module__rot_wing_automation.html#configuration__rot_wing_automation", null ],
-      [ "Module functions", "module__rot_wing_automation.html#functions__rot_wing_automation", [
-        [ "Raw rot_wing_automation.xml file:", "module__rot_wing_automation.html#module_xml__rot_wing_automation", null ]
+    [ "rotwing_automation module", "module__rotwing_automation.html", [
+      [ "Example for airframe file", "module__rotwing_automation.html#module_load_example__rotwing_automation", null ],
+      [ "Module configuration options", "module__rotwing_automation.html#configuration__rotwing_automation", null ],
+      [ "Module functions", "module__rotwing_automation.html#functions__rotwing_automation", [
+        [ "Raw rotwing_automation.xml file:", "module__rotwing_automation.html#module_xml__rotwing_automation", null ]
       ] ]
     ] ],
     [ "rotwing_state module", "module__rotwing_state.html", [

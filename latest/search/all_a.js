@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['i_10629',['I',['../cc2500__compat_8h.html#a804da2b94b3275491a448f5b318e1b97',1,'pidGains_s::I()'],['../eff__scheduling__rot__wing__V2_8h.html#structI',1,'I'],['../trilateration_8c.html#a145f61de888f096c52a2945234a407b0',1,'I():&#160;trilateration.c']]],
+  ['i_10629',['I',['../cc2500__compat_8h.html#a804da2b94b3275491a448f5b318e1b97',1,'pidGains_s::I()'],['../eff__scheduling__rotwing__V2_8h.html#structI',1,'I'],['../trilateration_8c.html#a145f61de888f096c52a2945234a407b0',1,'I():&#160;trilateration.c']]],
   ['i_10630',['i',['../high__pass__filter_8h.html#af693f49196c6e83ae874e5ef0d0a55c1',1,'FourthOrderHighPass::i()'],['../low__pass__filter_8h.html#af724a38e8d130297d1b58315ffa3a688',1,'SecondOrderLowPass::i()'],['../low__pass__filter_8h.html#adfeb2766a030a1345532cf0e31c9437a',1,'SecondOrderLowPass_int::i()'],['../stabilization__attitude__common__float_8h.html#af92656755f70798294413b0e009aac53',1,'FloatAttitudeGains::i()'],['../stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669',1,'Int32AttitudeGains::i()'],['../rover__guidance_8h.html#a84be25fddcd69db9d44c99cc62f062e3',1,'RoverGuidancePID::i()'],['../rover__guidance__holonomic_8h.html#a57c8bdf0b25f0fecb50b3724a34138dd',1,'RoverHoloGuidancePID::i()'],['../digital__cam_2catia_2protocol_8h.html#a84fd5a6b454d55a58ca0f5e923c23105',1,'dc_shot_union::i()']]],
-  ['i_10631',['I',['../eff__scheduling__rot__wing__V2_8h.html#af930c69c8d7c838b517974659142c834',1,'RW_Model::I()'],['../optical__flow__functions_8h.html#a49065260e692807bd9812c67fd1f60d9',1,'GainsPID::I()']]],
+  ['i_10631',['I',['../eff__scheduling__rotwing__V2_8h.html#af930c69c8d7c838b517974659142c834',1,'RW_Model::I()'],['../optical__flow__functions_8h.html#a49065260e692807bd9812c67fd1f60d9',1,'GainsPID::I()']]],
   ['i1mux_10632',['i1mux',['../ads1220_8h.html#a6d576e92fe61e84c226f0ad236dcc659',1,'Ads1220Config']]],
   ['i2c_20interface_10633',['I2C Interface',['../group__i2c.html',1,'']]],
   ['i2c_20module_10634',['i2c module',['../module__i2c.html',1,'onboard_modules']]],
@@ -799,9 +799,9 @@ var searchData=
   ['init_5fpoint_11425',['init_point',['../nav__bungee__takeoff_8c.html#a944276a739ae332f4d1135be7b97c04e',1,'nav_bungee_takeoff.c']]],
   ['init_5fpoles_11426',['init_poles',['../oneloop__andi_8c.html#a04b70e47b7660a579e6962640174c6b7',1,'oneloop_andi.c']]],
   ['init_5frandom_11427',['init_random',['../pprz__random_8c.html#a694be11ffe08b609fe1b268a9e469aa2',1,'init_random(void):&#160;pprz_random.c'],['../pprz__random_8h.html#a694be11ffe08b609fe1b268a9e469aa2',1,'init_random(void):&#160;pprz_random.c']]],
-  ['init_5frot_5fwing_5fautomation_11428',['init_rot_wing_automation',['../rot__wing__automation_8c.html#a9b4c709d5a5ac1584550b551bdaa99c2',1,'init_rot_wing_automation(void):&#160;rot_wing_automation.c'],['../rot__wing__automation_8h.html#a9b4c709d5a5ac1584550b551bdaa99c2',1,'init_rot_wing_automation(void):&#160;rot_wing_automation.c']]],
+  ['init_5frotwing_5fautomation_11428',['init_rotwing_automation',['../rotwing__automation_8c.html#a88e565a209461091f3a0ff2237abbe4b',1,'init_rotwing_automation(void):&#160;rotwing_automation.c'],['../rotwing__automation_8h.html#a88e565a209461091f3a0ff2237abbe4b',1,'init_rotwing_automation(void):&#160;rotwing_automation.c']]],
   ['init_5frotwing_5fstate_11429',['init_rotwing_state',['../rotwing__state_8c.html#a04708a9a7f4e87ab6c12d7a47beeb4bd',1,'init_rotwing_state(void):&#160;rotwing_state.c'],['../rotwing__state_8h.html#a04708a9a7f4e87ab6c12d7a47beeb4bd',1,'init_rotwing_state(void):&#160;rotwing_state.c'],['../rotwing__state__V2_8c.html#a04708a9a7f4e87ab6c12d7a47beeb4bd',1,'init_rotwing_state(void):&#160;rotwing_state_V2.c'],['../rotwing__state__V2_8h.html#a04708a9a7f4e87ab6c12d7a47beeb4bd',1,'init_rotwing_state(void):&#160;rotwing_state.c']]],
-  ['init_5frw_5fmodel_11430',['init_RW_Model',['../eff__scheduling__rot__wing__V2_8c.html#ac46a2224ae7cd5dec61b68679d7aedbb',1,'eff_scheduling_rot_wing_V2.c']]],
+  ['init_5frw_5fmodel_11430',['init_RW_Model',['../eff__scheduling__rotwing__V2_8c.html#ac46a2224ae7cd5dec61b68679d7aedbb',1,'eff_scheduling_rotwing_V2.c']]],
   ['init_5fsecond_5forder_5flow_5fpass_11431',['init_second_order_low_pass',['../low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37',1,'low_pass_filter.h']]],
   ['init_5fsecond_5forder_5flow_5fpass_5fint_11432',['init_second_order_low_pass_int',['../low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332',1,'low_pass_filter.h']]],
   ['init_5fstate_11433',['init_state',['../ahrs__madgwick_8c.html#ad83a81c0586755098baa52a61599a2b8',1,'ahrs_madgwick.c']]],
@@ -2074,11 +2074,11 @@ var searchData=
   ['ivy_5frequest_5fcallback_12700',['ivy_request_callback',['../namespacemesonh_1_1mesonh.html#aef251ddc79590313502558e310a3678e',1,'mesonh::mesonh']]],
   ['ivy_5ftp_12701',['ivy_tp',['../ivy__dl_8c.html#a1f85674103d97e5e86374583269e4e41',1,'ivy_tp():&#160;ivy_dl.c'],['../ivy__dl_8h.html#a1f85674103d97e5e86374583269e4e41',1,'ivy_tp():&#160;ivy_dl.c']]],
   ['ivyptr_12702',['ivyPtr',['../nps__ivy_8c.html#a77070846c45266eff23ca490d831c560',1,'nps_ivy.c']]],
-  ['ixx_12703',['Ixx',['../eff__scheduling__rot__wing__V2_8h.html#a6a30a4389a92d75140934b189092535f',1,'rot_wing_eff_sched_var_t']]],
-  ['ixx_5fbody_12704',['Ixx_body',['../eff__scheduling__rot__wing__V2_8h.html#a31592b10160b656f6d1e42d8403fd5df',1,'rot_wing_eff_sched_param_t']]],
-  ['ixx_5fwing_12705',['Ixx_wing',['../eff__scheduling__rot__wing__V2_8h.html#ad0f3aaba927457d3bb0962a08c2f025d',1,'rot_wing_eff_sched_param_t']]],
-  ['iyy_12706',['Iyy',['../eff__scheduling__rot__wing__V2_8h.html#ae3040cf3d276c8e1476d98a01139137e',1,'rot_wing_eff_sched_var_t']]],
-  ['iyy_5fbody_12707',['Iyy_body',['../eff__scheduling__rot__wing__V2_8h.html#a9b997e1bcb107a1e8022bc1d73e23406',1,'rot_wing_eff_sched_param_t']]],
-  ['iyy_5fwing_12708',['Iyy_wing',['../eff__scheduling__rot__wing__V2_8h.html#ad2aa7d960c4d5fd18a662aa6f5aff9d1',1,'rot_wing_eff_sched_param_t']]],
-  ['izz_12709',['Izz',['../eff__scheduling__rot__wing__V2_8h.html#a9cd33df91406509b532efd57da32e110',1,'rot_wing_eff_sched_param_t']]]
+  ['ixx_12703',['Ixx',['../eff__scheduling__rotwing__V2_8h.html#a94721147fc525c0fbb3b0521e7b34b16',1,'rotwing_eff_sched_var_t']]],
+  ['ixx_5fbody_12704',['Ixx_body',['../eff__scheduling__rotwing__V2_8h.html#a53839cfdf786ef43f4516ecef53b2926',1,'rotwing_eff_sched_param_t']]],
+  ['ixx_5fwing_12705',['Ixx_wing',['../eff__scheduling__rotwing__V2_8h.html#af5830b8dac305d4dbc074f80ab37b1bb',1,'rotwing_eff_sched_param_t']]],
+  ['iyy_12706',['Iyy',['../eff__scheduling__rotwing__V2_8h.html#afa96ee343cb3215268f94df834c76c93',1,'rotwing_eff_sched_var_t']]],
+  ['iyy_5fbody_12707',['Iyy_body',['../eff__scheduling__rotwing__V2_8h.html#ae59c390a4286eef373075b37684e2c90',1,'rotwing_eff_sched_param_t']]],
+  ['iyy_5fwing_12708',['Iyy_wing',['../eff__scheduling__rotwing__V2_8h.html#a5de94b73b88df4d5467fbadfc3a5a598',1,'rotwing_eff_sched_param_t']]],
+  ['izz_12709',['Izz',['../eff__scheduling__rotwing__V2_8h.html#a80a37b9549f69ef4b47e6dbc33c97d87',1,'rotwing_eff_sched_param_t']]]
 ];

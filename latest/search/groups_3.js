@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['double_20algebra_56838',['Double Algebra',['../group__math__algebra__double.html',1,'']]],
-  ['double_20geodetic_20functions_56839',['Double Geodetic functions',['../group__math__geodetic__double.html',1,'']]]
+  ['double_20algebra_56839',['Double Algebra',['../group__math__algebra__double.html',1,'']]],
+  ['double_20geodetic_20functions_56840',['Double Geodetic functions',['../group__math__geodetic__double.html',1,'']]]
 ];
