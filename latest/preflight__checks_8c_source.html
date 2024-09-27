@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('preflight__checks_8c_source.html','');
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (error_msg[i] == <a class="code" href="preflight__checks_8c.html#ad269e2d18f01f95199479a936693448a">PREFLIGHT_CHECK_SEPERATOR</a> || i == (<a class="code" href="preflight__checks_8c.html#af401c9eb4fc6e626045433ea506f368a">PREFLIGHT_CHECK_MAX_MSGBUF</a> - result.<a class="code" href="preflight__checks_8h.html#a5783da94bb6c8202c1454106e02afda4">max_len</a>)) {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          DOWNLINK_SEND_INFO_MSG(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, i - last_sendi, &amp;error_msg[last_sendi]);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#if FLIGHTRECORDER_SDLOG</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          pprz_msg_send_INFO_MSG(&amp;<a class="code" href="pprzlog__tp_8c.html#a48b3307b74120ec7e9eb7dd155383814">pprzlog_tp</a>.trans_tx, &amp;flightrecorder_sdlog.device, AC_ID, strlen(error_msg[last_sendi]), error_msg[last_sendi]);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          pprz_msg_send_INFO_MSG(&amp;<a class="code" href="pprzlog__tp_8c.html#a48b3307b74120ec7e9eb7dd155383814">pprzlog_tp</a>.trans_tx, &amp;flightrecorder_sdlog.device, AC_ID, i - last_sendi, &amp;error_msg[last_sendi]);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;          last_sendi = i + 1;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('preflight__checks_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_24cf6086042171dbb948d3baa866052c.html">checks</a></li><li class="navelem"><a class="el" href="preflight__checks_8c.html">preflight_checks.c</a></li>
-    <li class="footer">Generated on Wed Sep 25 2024 18:52:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 27 2024 09:01:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
