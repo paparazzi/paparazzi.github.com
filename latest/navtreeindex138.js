@@ -1,5 +1,8 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_survey_rectangle_rotorcraft.html":[1,347],
+"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,347,1],
+"module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,347,2],
 "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft":[1,347,0],
 "module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,347,2,0],
 "module__nav_survey_zamboni.html":[1,348],
@@ -246,8 +249,5 @@ var NAVTREEINDEX138 =
 "module__rotwing_state.html#module_load_example__rotwing_state":[1,374,0],
 "module__rotwing_state.html#module_xml__rotwing_state":[1,374,2,0],
 "module__rotwing_state_v2.html":[1,375],
-"module__rotwing_state_v2.html#configuration__rotwing_state_v2":[1,375,1],
-"module__rotwing_state_v2.html#functions__rotwing_state_v2":[1,375,2],
-"module__rotwing_state_v2.html#module_load_example__rotwing_state_v2":[1,375,0],
-"module__rotwing_state_v2.html#module_xml__rotwing_state_v2":[1,375,2,0]
+"module__rotwing_state_v2.html#configuration__rotwing_state_v2":[1,375,1]
 };

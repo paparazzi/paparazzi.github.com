@@ -1,13 +1,16 @@
 var NAVTREEINDEX115 =
 {
+"lsm303dlhc__i2c_8h.html#a1673448ee7064c989d02579c534f6b66":[12,0,1,0,7,78,1,0],
+"lsm303dlhc__i2c_8h.html#a1860e64a60d63a98969f293cf20f8c83":[12,0,1,0,7,78,0,2],
+"lsm303dlhc__i2c_8h.html#a2b4ad59cad2d1657c4adbcf815eb78e6":[12,0,1,0,7,78,7],
 "lsm303dlhc__i2c_8h.html#a2f600ac276e7ed6eb74c55228e96ce11":[12,0,1,0,7,78,6],
 "lsm303dlhc__i2c_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,78,2,1],
 "lsm303dlhc__i2c_8h.html#a4b33179ee6e6df1fd4904581266e5963":[12,0,1,0,7,78,5],
 "lsm303dlhc__i2c_8h.html#a55ec285370f4f9ee716bd68cef220af6":[12,0,1,0,7,78,0,1],
 "lsm303dlhc__i2c_8h.html#a691472da21e2d52aac3e32823184c7b3":[12,0,1,0,7,78,0,4],
 "lsm303dlhc__i2c_8h.html#a6ceb86d9cb1540c6eed31177d6994d77":[12,0,1,0,7,78,0,5],
-"lsm303dlhc__i2c_8h.html#a741f63d12d767bb3fd2b0251ed839499":[12,0,1,0,7,78,1,1],
 "lsm303dlhc__i2c_8h.html#a741f63d12d767bb3fd2b0251ed839499":[12,0,1,0,7,78,3,1],
+"lsm303dlhc__i2c_8h.html#a741f63d12d767bb3fd2b0251ed839499":[12,0,1,0,7,78,1,1],
 "lsm303dlhc__i2c_8h.html#a77e16e80a2f36277b41270fa3d620225":[12,0,1,0,7,78,0,3],
 "lsm303dlhc__i2c_8h.html#a8c1c3c8e4597f906ad88c3c869828ee2":[12,0,1,0,7,78,0,6],
 "lsm303dlhc__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,78,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX115 =
 "lsm6ds33__regs_8h.html#a7fbb3117150cbe354874bc80ee36c850":[12,0,1,0,7,83,33],
 "lsm6ds33__regs_8h.html#a8481a8a31ad2f1d4abb840cb545e9404":[12,0,1,0,7,83,6],
 "lsm6ds33__regs_8h.html#a850cb2251a80589915b6c9ba24c89b93":[12,0,1,0,7,83,32],
-"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00":[12,0,1,0,7,83,65],
-"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00a00e5560e53ddc2cdd31241a5a676e82d":[12,0,1,0,7,83,65,5],
-"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00a393c9f26f88c6b322cdec04c81b8d140":[12,0,1,0,7,83,65,7],
-"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00a7ca463a066603706967b15cc84ceab87":[12,0,1,0,7,83,65,3]
+"lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00":[12,0,1,0,7,83,65]
 };

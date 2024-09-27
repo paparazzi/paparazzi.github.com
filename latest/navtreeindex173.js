@@ -1,5 +1,8 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#SURVEY":[2,0,24],
+"paparazzi_messages.html#SURVEY_STATUS":[2,2,29],
+"paparazzi_messages.html#SVINFO":[2,0,22],
 "paparazzi_messages.html#SVSINFO":[2,2,15],
 "paparazzi_messages.html#SWARM_FISH":[2,0,72],
 "paparazzi_messages.html#SYS_MON":[2,0,30],
@@ -246,8 +249,5 @@ var NAVTREEINDEX173 =
 "peripherals_2mcp355x_8h.html#a43936b2cebe162bd29e00181b0282a91":[12,0,1,0,7,87,2],
 "peripherals_2mcp355x_8h.html#a5b584e55031878ca6be005e63162cc3c":[12,0,1,0,7,87,4],
 "peripherals_2mcp355x_8h_source.html":[12,0,1,0,7,87],
-"pfc__actuators_8c.html":[12,0,1,0,6,10,0],
-"pfc__actuators_8c.html#a068799efe1e8c55bf274e0ed4806e973":[12,0,1,0,6,10,0,0,2],
-"pfc__actuators_8c.html#a084c3f4f64e5fa523107b5cdcca48249":[12,0,1,0,6,10,0,0,1],
-"pfc__actuators_8c.html#a1e1342575362d68601c0171cf552f1da":[12,0,1,0,6,10,0,1,8]
+"pfc__actuators_8c.html":[12,0,1,0,6,10,0]
 };

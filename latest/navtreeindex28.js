@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"cc2500__frsky__x_8c.html#structtelemetrySequenceMarkerData__s":[12,0,1,0,6,56,0,8,0],
+"cc2500__frsky__x_8c.html#uniontelemetrySequenceMarker__s":[12,0,1,0,6,56,0,8,1],
+"cc2500__frsky__x_8c_source.html":[12,0,1,0,6,56,0,8],
 "cc2500__frsky__x_8h.html":[12,0,1,0,6,56,0,9],
 "cc2500__frsky__x_8h.html#a09aedfa0332a58b4e89a15471892e08d":[12,0,1,0,6,56,0,9,2],
 "cc2500__frsky__x_8h.html#a0a92ce2d56739c0fa719bf7bbe5f0594":[12,0,1,0,6,56,0,9,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX28 =
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca00c9b737ce0594fb8d876fb44cee9f00":[12,0,1,0,6,56,0,19,14,21],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca060a6c5fa416d18ec2d09b8a16d48b19":[12,0,1,0,6,56,0,19,14,1],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca1187fe3b84abe0e1ed8e81beac4f8971":[12,0,1,0,6,56,0,19,14,0],
-"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca21ab4738266ffc5847e73f304418faa6":[12,0,1,0,6,56,0,19,14,14],
-"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca24f9411e657b3a72115f43dd04fab7eb":[12,0,1,0,6,56,0,19,14,16],
-"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca296be2281d72e8fcaa5442a3d658469e":[12,0,1,0,6,56,0,19,14,7],
-"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca348363c0cc3821cbd268209d283141e9":[12,0,1,0,6,56,0,19,14,8]
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca21ab4738266ffc5847e73f304418faa6":[12,0,1,0,6,56,0,19,14,14]
 };

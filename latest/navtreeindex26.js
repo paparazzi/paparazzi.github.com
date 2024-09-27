@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"boards_2disco_2actuators_8h.html#aeb057c553733dd6256e39bd132450157":[12,0,1,0,1,6,1,10],
+"boards_2disco_2actuators_8h.html#aee9c4499f32c1157c62c8d2a47f600d7":[12,0,1,0,1,6,1,17],
+"boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a":[12,0,1,0,1,6,1,16],
 "boards_2disco_2actuators_8h.html#structActuatorsDisco":[12,0,1,0,1,6,1,0],
 "boards_2disco_2actuators_8h_source.html":[12,0,1,0,1,6,1],
 "boards_2disco_2board_8c.html":[12,0,1,0,1,6,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "cc2500__compat_8c.html#ab83337d972e5d33b9adbe4c06ffc642b":[12,0,1,0,6,56,0,2,13],
 "cc2500__compat_8c.html#aba941619bd16a3071dea1dc4611b8b55":[12,0,1,0,6,56,0,2,25],
 "cc2500__compat_8c.html#acc61717cfc2498f47df604de3f0278e9":[12,0,1,0,6,56,0,2,17],
-"cc2500__compat_8c.html#acd79985136a05b258fa9585116a23f3c":[12,0,1,0,6,56,0,2,9],
-"cc2500__compat_8c.html#ad4c71641946465d236a9acdbeccb79d4":[12,0,1,0,6,56,0,2,15],
-"cc2500__compat_8c.html#addb30534411fed2d3dca3f7f8d9a6b5a":[12,0,1,0,6,56,0,2,2],
-"cc2500__compat_8c.html#ae056691019449acd93551413144617cc":[12,0,1,0,6,56,0,2,14]
+"cc2500__compat_8c.html#acd79985136a05b258fa9585116a23f3c":[12,0,1,0,6,56,0,2,9]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem_8____unnamed167____":[12,0,1,0,1,2,0,0,11,24],
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem__regs":[12,0,1,0,1,2,0,0,11,13],
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem_8____unnamed165____":[12,0,1,0,1,2,0,0,11,23],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem__regs":[12,0,1,0,1,2,0,0,11,11],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__offset__x__y_8____unnamed149____":[12,0,1,0,1,2,0,0,11,15],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__regs":[12,0,1,0,1,2,0,0,11,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__cfa":[12,0,1,0,1,2,0,0,15,10],
 "avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__x__center":[12,0,1,0,1,2,0,0,15,3],
 "avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__x__squared":[12,0,1,0,1,2,0,0,15,4],
-"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__y__center":[12,0,1,0,1,2,0,0,15,5],
-"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__y__squared":[12,0,1,0,1,2,0,0,15,6],
-"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__radius__squared":[12,0,1,0,1,2,0,0,15,7],
-"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__increments__log2":[12,0,1,0,1,2,0,0,15,8]
+"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__y__center":[12,0,1,0,1,2,0,0,15,5]
 };

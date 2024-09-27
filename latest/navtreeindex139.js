@@ -1,5 +1,8 @@
 var NAVTREEINDEX139 =
 {
+"module__rotwing_state_v2.html#functions__rotwing_state_v2":[1,375,2],
+"module__rotwing_state_v2.html#module_load_example__rotwing_state_v2":[1,375,0],
+"module__rotwing_state_v2.html#module_xml__rotwing_state_v2":[1,375,2,0],
 "module__rpm_sensor.html":[1,418],
 "module__rpm_sensor.html#configuration__rpm_sensor":[1,418,1],
 "module__rpm_sensor.html#functions__rpm_sensor":[1,418,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX139 =
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,115,1],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,115,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,115,0],
-"module__telemetry_nps.html#module_xml__telemetry_nps":[1,115,2,0],
-"module__telemetry_nps_secure.html":[1,116],
-"module__telemetry_nps_secure.html#configuration__telemetry_nps_secure":[1,116,1],
-"module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,116,0]
+"module__telemetry_nps.html#module_xml__telemetry_nps":[1,115,2,0]
 };

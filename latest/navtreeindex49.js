@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"dshot__rpmCapture_8h.html#aaac9b266eb1fb8124f0cff73a176ae51":[12,0,1,0,0,0,1,0,7,15],
+"dshot__rpmCapture_8h.html#ab5af9fe4b2fe79d4dcf45def79949c57":[12,0,1,0,0,0,1,0,7,5],
+"dshot__rpmCapture_8h.html#ac178c957f873e5d949cce08921ce8490":[12,0,1,0,0,0,1,0,7,14],
 "dshot__rpmCapture_8h.html#ad912e72d7010fb6c84bae4e613730c1e":[12,0,1,0,0,0,1,0,7,4,4],
 "dshot__rpmCapture_8h.html#ae855e0747f041845fb3cc3037ec1b5ac":[12,0,1,0,0,0,1,0,7,3,2],
 "dshot__rpmCapture_8h.html#ae870cbb20c4aff555035114cd13dbe91":[12,0,1,0,0,0,1,0,7,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "eff__scheduling__nederdrone_8c.html#a589d7cc043343cbec34147b7098e9c68":[12,0,1,0,6,14,14,19],
 "eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3":[12,0,1,0,6,14,14,12],
 "eff__scheduling__nederdrone_8c.html#a6d8b48e4c3eda7d829c92311de245ca7":[12,0,1,0,6,14,14,7],
-"eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557":[12,0,1,0,6,14,14,14],
-"eff__scheduling__nederdrone_8c.html#a795f37f85952049056a49dc48a0a18ce":[12,0,1,0,6,14,14,3],
-"eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10":[12,0,1,0,6,14,14,5],
-"eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7":[12,0,1,0,6,14,14,6]
+"eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557":[12,0,1,0,6,14,14,14]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"ami601_8c.html#a7e426abe308781deb72e818563885b29":[12,0,1,0,7,15,6],
+"ami601_8c.html#ac874428a3b55c32c041740e641b4140d":[12,0,1,0,7,15,8],
+"ami601_8c.html#ae7463fd146ebc78226c539dda2d89ffa":[12,0,1,0,7,15,4],
 "ami601_8c_source.html":[12,0,1,0,7,15],
 "ami601_8h.html":[12,0,1,0,7,16],
 "ami601_8h.html#a034123f9c550089777327ad920b63ba6":[12,0,1,0,7,16,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX10 =
 "apogee_2chibios_2v1_80_2board_8h.html#a3690a0a2d199eaa84ccf706971d2de13":[12,0,1,0,1,0,0,0,0,84],
 "apogee_2chibios_2v1_80_2board_8h.html#a37154c806d85fb9f9158f86bb55e9ee0":[12,0,1,0,1,0,0,0,0,153],
 "apogee_2chibios_2v1_80_2board_8h.html#a379c1a8b8230163bc5fc57abb44146d1":[12,0,1,0,1,0,0,0,0,277],
-"apogee_2chibios_2v1_80_2board_8h.html#a39192c18809ac7cd77522b0e193fabb0":[12,0,1,0,1,0,0,0,0,575],
-"apogee_2chibios_2v1_80_2board_8h.html#a39e2ee062fe107c637e7c70c87bbbae4":[12,0,1,0,1,0,0,0,0,495],
-"apogee_2chibios_2v1_80_2board_8h.html#a39f5bc8c5a9ae9112cb64d4075b8be5a":[12,0,1,0,1,0,0,0,0,573],
-"apogee_2chibios_2v1_80_2board_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737":[12,0,1,0,1,0,0,0,0,558]
+"apogee_2chibios_2v1_80_2board_8h.html#a39192c18809ac7cd77522b0e193fabb0":[12,0,1,0,1,0,0,0,0,575]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__chroma_8h.html#unionavi__isp__chroma__offset__gu":[12,0,1,0,1,2,0,0,3,7],
+"avi__isp__chroma_8h.html#unionavi__isp__chroma__offset__ry":[12,0,1,0,1,2,0,0,3,5],
+"avi__isp__chroma_8h_source.html":[12,0,1,0,1,2,0,0,3],
 "avi__isp__chromatic__aberration_8h.html":[12,0,1,0,1,2,0,0,4],
 "avi__isp__chromatic__aberration_8h.html#a00e69d8743066d61ec5f81802dfee0c7":[12,0,1,0,1,2,0,0,4,9,33],
 "avi__isp__chromatic__aberration_8h.html#a03a858f03b6f80d03a282236042cfdfc":[12,0,1,0,1,2,0,0,4,9,38],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__denoising_8h.html#a1757617d389d2d681e5b672f6eef7e5c":[12,0,1,0,1,2,0,0,7,24,0],
 "avi__isp__denoising_8h.html#a1c38f3e1f6e2f79a9706c61909efbe45":[12,0,1,0,1,2,0,0,7,13,4],
 "avi__isp__denoising_8h.html#a1ebdeea2077bab5773797cee7012a42e":[12,0,1,0,1,2,0,0,7,27],
-"avi__isp__denoising_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,7,14,0],
-"avi__isp__denoising_8h.html#a24c3b607572f383198a13b070f0b5c46":[12,0,1,0,1,2,0,0,7,16,1],
-"avi__isp__denoising_8h.html#a263c599aa64563c14e04e8efe57ec3f5":[12,0,1,0,1,2,0,0,7,17,1],
-"avi__isp__denoising_8h.html#a2d1514b85154a4052285c7fc367053bd":[12,0,1,0,1,2,0,0,7,17,0]
+"avi__isp__denoising_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,7,14,0]
 };

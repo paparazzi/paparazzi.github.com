@@ -1,5 +1,8 @@
 var NAVTREEINDEX90 =
 {
+"imu__mpu9250__spi_8c.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,34,19],
+"imu__mpu9250__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,6,36,34,11],
+"imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,34,13],
 "imu__mpu9250__spi_8c_source.html":[12,0,1,0,6,36,34],
 "imu__mpu9250__spi_8h.html":[12,0,1,0,6,36,35],
 "imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380":[12,0,1,0,6,36,33,0,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX90 =
 "input__capture__arch_8h.html#aca9497a53989999c74a69f6f33a3e6ab":[12,0,1,0,0,0,0,10,4],
 "input__capture__arch_8h.html#ad77322db9ff63842442fb2c606aeaed4":[12,0,1,0,0,0,0,10,0,4],
 "input__capture__arch_8h.html#structTimICConfig":[12,0,1,0,0,0,0,10,0],
-"input__capture__arch_8h.html#structTimICDriver":[12,0,1,0,0,0,0,10,1],
-"input__capture__arch_8h_source.html":[12,0,1,0,0,0,0,10],
-"ins_8c.html":[12,0,1,0,6,37,10],
-"ins_8c.html#a411137a7e479e805af842cc3215748e3":[12,0,1,0,6,37,10,4]
+"input__capture__arch_8h.html#structTimICDriver":[12,0,1,0,0,0,0,10,1]
 };
