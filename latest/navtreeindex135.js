@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__guidance_energy.html#configuration__guidance_energy":[1,169,1],
+"module__guidance_energy.html#functions__guidance_energy":[1,169,2],
 "module__guidance_energy.html#module_load_example__guidance_energy":[1,169,0],
 "module__guidance_energy.html#module_xml__guidance_energy":[1,169,2,0],
 "module__guidance_full_pid_fw.html":[1,170],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_mpu9250.html":[1,213],
 "module__imu_mpu9250.html#configuration__imu_mpu9250":[1,213,1],
 "module__imu_mpu9250.html#functions__imu_mpu9250":[1,213,2],
-"module__imu_mpu9250.html#module_load_example__imu_mpu9250":[1,213,0],
-"module__imu_mpu9250.html#module_xml__imu_mpu9250":[1,213,2,0],
-"module__imu_mpu9250_i2c.html":[1,214]
+"module__imu_mpu9250.html#module_load_example__imu_mpu9250":[1,213,0]
 };

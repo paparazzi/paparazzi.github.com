@@ -1,5 +1,7 @@
 var NAVTREEINDEX203 =
 {
+"snake__gate__detection_8c.html#aef693c11bfcfa77faaaefba6304e4308":[12,0,1,0,6,12,34,22],
+"snake__gate__detection_8c.html#af0a705296aaf7b8f6e785debb166d907":[12,0,1,0,6,12,34,32],
 "snake__gate__detection_8c.html#af1277b5afcda89127b598dbf4a266725":[12,0,1,0,6,12,34,34],
 "snake__gate__detection_8c.html#af52943a5b43fcf170e3267d9e4c9ed7c":[12,0,1,0,6,12,34,1],
 "snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c":[12,0,1,0,6,12,34,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX203 =
 "spektrum__radio_8h.html#a9fd86154b023cbc8a9981059db36497b":[12,0,1,0,6,56,21,1],
 "spektrum__radio_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c":[12,0,1,0,6,56,21,3],
 "spektrum__radio_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29":[12,0,1,0,6,56,21,11],
-"spektrum__radio_8h.html#ac5d768a757f013a44c96ecf92287888e":[12,0,1,0,6,56,21,8],
-"spektrum__radio_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8":[12,0,1,0,6,56,21,4],
-"spektrum__radio_8h.html#ad1edc5e4829c731875a561a35a12830f":[12,0,1,0,6,56,21,17]
+"spektrum__radio_8h.html#ac5d768a757f013a44c96ecf92287888e":[12,0,1,0,6,56,21,8]
 };

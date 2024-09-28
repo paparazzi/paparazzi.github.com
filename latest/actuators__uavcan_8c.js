@@ -12,6 +12,8 @@ var actuators__uavcan_8c =
       [ "timestamp", "actuators__uavcan_8c.html#a5258ced5a9a3c26bf7abc6c06c144fff", null ],
       [ "voltage", "actuators__uavcan_8c.html#a93e39cb253b2c7f71bdd8f1ff5e63d29", null ]
     ] ],
+    [ "ACTUATORS_UAVCAN_CMD_DIV", "actuators__uavcan_8c.html#accc20c3a91218ebc296e990001c58385", null ],
+    [ "ACTUATORS_UAVCAN_RAW_DIV", "actuators__uavcan_8c.html#a04f51871ee1fb51b86d86d8a181f407e", null ],
     [ "UAVCAN_ACTUATORS_USE_CURRENT", "actuators__uavcan_8c.html#a95d5d112abcc0f1031cc08731e37bda7", null ],
     [ "UAVCAN_CMD_UNUSED", "actuators__uavcan_8c.html#ad372e9594fdbdb703a9850f529d47049", null ],
     [ "UAVCAN_EQUIPMENT_ACTUATOR_ARRAYCOMMAND_ID", "actuators__uavcan_8c.html#a50ab991e713d12af7194f4f0fb88b39c", null ],

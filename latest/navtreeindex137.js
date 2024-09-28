@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_dataflash.html":[1,260],
+"module__logger_dataflash.html#configuration__logger_dataflash":[1,260,1],
 "module__logger_dataflash.html#functions__logger_dataflash":[1,260,2],
 "module__logger_dataflash.html#module_load_example__logger_dataflash":[1,260,0],
 "module__logger_dataflash.html#module_xml__logger_dataflash":[1,260,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,345,1],
 "module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,345,0],
 "module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,345,1,0],
-"module__nav_survey_polygon.html":[1,346],
-"module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,346,0],
-"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,346,0,0]
+"module__nav_survey_polygon.html":[1,346]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__denoising_8h.html#a1ebdeea2077bab5773797cee7012a42e":[12,0,1,0,1,2,0,0,7,27],
+"avi__isp__denoising_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,7,14,0],
 "avi__isp__denoising_8h.html#a24c3b607572f383198a13b070f0b5c46":[12,0,1,0,1,2,0,0,7,16,1],
 "avi__isp__denoising_8h.html#a263c599aa64563c14e04e8efe57ec3f5":[12,0,1,0,1,2,0,0,7,17,1],
 "avi__isp__denoising_8h.html#a2d1514b85154a4052285c7fc367053bd":[12,0,1,0,1,2,0,0,7,17,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__beta_8____unnamed163____":[12,0,1,0,1,2,0,0,11,22],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed155____":[12,0,1,0,1,2,0,0,11,18],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed159____":[12,0,1,0,1,2,0,0,11,20],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed151____":[12,0,1,0,1,2,0,0,11,16],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w_8____unnamed153____":[12,0,1,0,1,2,0,0,11,17],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w__inv_8____unnamed157____":[12,0,1,0,1,2,0,0,11,19]
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed151____":[12,0,1,0,1,2,0,0,11,16]
 };

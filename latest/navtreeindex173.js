@@ -1,5 +1,7 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#STEREO_IMG":[2,0,215],
+"paparazzi_messages.html#SUPERBITRF":[2,0,67],
 "paparazzi_messages.html#SURVEY":[2,0,24],
 "paparazzi_messages.html#SURVEY_STATUS":[2,2,29],
 "paparazzi_messages.html#SVINFO":[2,0,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX173 =
 "peripherals_2mcp355x_8h.html#a432cd0706e314361d3602ac9528f2a05":[12,0,1,0,7,87,0],
 "peripherals_2mcp355x_8h.html#a43309b519e20c3a78b08cbae9ce2775a":[12,0,1,0,7,87,1],
 "peripherals_2mcp355x_8h.html#a43936b2cebe162bd29e00181b0282a91":[12,0,1,0,7,87,2],
-"peripherals_2mcp355x_8h.html#a5b584e55031878ca6be005e63162cc3c":[12,0,1,0,7,87,4],
-"peripherals_2mcp355x_8h_source.html":[12,0,1,0,7,87],
-"pfc__actuators_8c.html":[12,0,1,0,6,10,0]
+"peripherals_2mcp355x_8h.html#a5b584e55031878ca6be005e63162cc3c":[12,0,1,0,7,87,4]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX224 =
 {
+"tawaki__v2_80_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf":[12,0,1,0,1,21,0,3,2,110],
+"tawaki__v2_80_8h.html#aea377e267c55bbc84cb912db0764d937":[12,0,1,0,1,21,0,3,2,85],
 "tawaki__v2_80_8h.html#aead66bc65b8e434c97f28429baeb2800":[12,0,1,0,1,21,0,3,2,116],
 "tawaki__v2_80_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70":[12,0,1,0,1,21,0,3,2,163],
 "tawaki__v2_80_8h.html#aec52babc287e1d061dec870b9f43b083":[12,0,1,0,1,21,0,3,2,224],
@@ -247,7 +249,5 @@ var NAVTREEINDEX224 =
 "textons_8c.html#a8c8eda34950f8de3c4a9e02f8b68faad":[12,0,1,0,6,12,38,31],
 "textons_8c.html#a8fdcafb366ca03df825616e0a3450d7a":[12,0,1,0,6,12,38,29],
 "textons_8c.html#a91386c15d9ad570b03fc0f33a10de703":[12,0,1,0,6,12,38,37],
-"textons_8c.html#a934c7714e1c12aa027f5b26430ae6976":[12,0,1,0,6,12,38,33],
-"textons_8c.html#a99b36a3cb5143fc6eacbfa6049842535":[12,0,1,0,6,12,38,17],
-"textons_8c.html#a9aac17744a22b5c17774f5e2b35aa5b3":[12,0,1,0,6,12,38,5]
+"textons_8c.html#a934c7714e1c12aa027f5b26430ae6976":[12,0,1,0,6,12,38,33]
 };

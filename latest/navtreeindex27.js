@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"cc2500__compat_8c.html#acc61717cfc2498f47df604de3f0278e9":[12,0,1,0,6,56,0,2,17],
+"cc2500__compat_8c.html#acd79985136a05b258fa9585116a23f3c":[12,0,1,0,6,56,0,2,9],
 "cc2500__compat_8c.html#ad4c71641946465d236a9acdbeccb79d4":[12,0,1,0,6,56,0,2,15],
 "cc2500__compat_8c.html#addb30534411fed2d3dca3f7f8d9a6b5a":[12,0,1,0,6,56,0,2,2],
 "cc2500__compat_8c.html#ae056691019449acd93551413144617cc":[12,0,1,0,6,56,0,2,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "cc2500__frsky__x_8c.html#af99b33aa0fccb95d790cf31e47e3fd66":[12,0,1,0,6,56,0,8,31],
 "cc2500__frsky__x_8c.html#afa4b2a6f3ccaa84253da422580e236a8":[12,0,1,0,6,56,0,8,2,0],
 "cc2500__frsky__x_8c.html#afdd10484a39362be7278ee0e37ccb6fb":[12,0,1,0,6,56,0,8,15],
-"cc2500__frsky__x_8c.html#structtelemetryBuffer__s":[12,0,1,0,6,56,0,8,3],
-"cc2500__frsky__x_8c.html#structtelemetryData__s":[12,0,1,0,6,56,0,8,2],
-"cc2500__frsky__x_8c.html#structtelemetryPayload__s":[12,0,1,0,6,56,0,8,4]
+"cc2500__frsky__x_8c.html#structtelemetryBuffer__s":[12,0,1,0,6,56,0,8,3]
 };

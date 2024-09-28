@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"guidance__v__ref_8h.html#a998c4eb852a2028e28e2987a31d783ad":[12,0,1,0,3,2,0,26,2],
+"guidance__v__ref_8h.html#ab36885cc677b3d2a0f89c148ffe6e9ba":[12,0,1,0,3,2,0,26,8],
 "guidance__v__ref_8h.html#ab8d8d8003fbd1c3d31ee72827ea1e25e":[12,0,1,0,3,2,0,26,9],
 "guidance__v__ref_8h.html#af5b4bf2932d63454e537de13ae5f58f3":[12,0,1,0,3,2,0,26,11],
 "guidance__v__ref_8h_source.html":[12,0,1,0,3,2,0,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "gvf__parametric__2d__bezier__splines_8h_source.html":[12,0,1,0,6,31,1,0,1],
 "gvf__parametric__2d__trefoil_8c.html":[12,0,1,0,6,31,1,0,2],
 "gvf__parametric__2d__trefoil_8c.html#a015bff889b48464d7e789752d4914ec4":[12,0,1,0,6,31,1,0,2,0],
-"gvf__parametric__2d__trefoil_8c.html#a1bd04ff33fc033fa1232f05faa7205c2":[12,0,1,0,6,31,1,0,2,7],
-"gvf__parametric__2d__trefoil_8c.html#a2e907f18b75a6e1ac5b9c547d3bea9dc":[12,0,1,0,6,31,1,0,2,2],
-"gvf__parametric__2d__trefoil_8c.html#a3343009a37eee9dbdc9e1415a4cabacb":[12,0,1,0,6,31,1,0,2,8]
+"gvf__parametric__2d__trefoil_8c.html#a1bd04ff33fc033fa1232f05faa7205c2":[12,0,1,0,6,31,1,0,2,7]
 };

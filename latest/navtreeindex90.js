@@ -1,5 +1,7 @@
 var NAVTREEINDEX90 =
 {
+"imu__mpu9250__spi_8c.html#ac9f9794de9fa148ba59d805527430b9a":[12,0,1,0,6,36,34,6],
+"imu__mpu9250__spi_8c.html#ad1a6777c4c01ff1231ea7a95fe476304":[12,0,1,0,6,36,34,16],
 "imu__mpu9250__spi_8c.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,34,19],
 "imu__mpu9250__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,6,36,34,11],
 "imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,34,13],
@@ -14,8 +16,8 @@ var NAVTREEINDEX90 =
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,35,0,5],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,33,0,5],
-"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,33,0,1],
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,35,0,1],
+"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,33,0,1],
 "imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,36,35,1],
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,36,35,4],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,36,33,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX90 =
 "input__capture__arch_8h.html#abe8a4771f963c5965caeb2902a7a85b9":[12,0,1,0,0,0,0,10,1,1],
 "input__capture__arch_8h.html#abf2a6bb745890971e18b540a46d3eaea":[12,0,1,0,0,0,0,10,0,8],
 "input__capture__arch_8h.html#aca9497a53989999c74a69f6f33a3e6ab":[12,0,1,0,0,0,0,10,4],
-"input__capture__arch_8h.html#ad77322db9ff63842442fb2c606aeaed4":[12,0,1,0,0,0,0,10,0,4],
-"input__capture__arch_8h.html#structTimICConfig":[12,0,1,0,0,0,0,10,0],
-"input__capture__arch_8h.html#structTimICDriver":[12,0,1,0,0,0,0,10,1]
+"input__capture__arch_8h.html#ad77322db9ff63842442fb2c606aeaed4":[12,0,1,0,0,0,0,10,0,4]
 };

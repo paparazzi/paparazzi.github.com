@@ -1,5 +1,7 @@
 var NAVTREEINDEX91 =
 {
+"input__capture__arch_8h.html#structTimICConfig":[12,0,1,0,0,0,0,10,0],
+"input__capture__arch_8h.html#structTimICDriver":[12,0,1,0,0,0,0,10,1],
 "input__capture__arch_8h_source.html":[12,0,1,0,0,0,0,10],
 "ins_8c.html":[12,0,1,0,6,37,10],
 "ins_8c.html#a411137a7e479e805af842cc3215748e3":[12,0,1,0,6,37,10,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX91 =
 "ins__ext__pose_8h_source.html":[12,0,1,0,6,37,21],
 "ins__float__invariant_8c.html":[12,0,1,0,6,37,22],
 "ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10":[12,0,1,0,6,37,22,0],
-"ins__float__invariant_8c.html#a13fc1b4c93e8bcbc055c5a147129a03d":[12,0,1,0,6,37,22,28],
-"ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b":[12,0,1,0,6,37,22,26],
-"ins__float__invariant_8c.html#a154f513c1439635845a845d89de32e6e":[12,0,1,0,6,37,22,2]
+"ins__float__invariant_8c.html#a13fc1b4c93e8bcbc055c5a147129a03d":[12,0,1,0,6,37,22,28]
 };

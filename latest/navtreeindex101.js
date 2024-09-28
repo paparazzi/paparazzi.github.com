@@ -1,5 +1,7 @@
 var NAVTREEINDEX101 =
 {
+"krooz__sd_8h.html#aa5441a38066de616a7ce5dc93aa85111":[12,0,1,0,1,35,15],
+"krooz__sd_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,35,55],
 "krooz__sd_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,35,28],
 "krooz__sd_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae":[12,0,1,0,1,35,77],
 "krooz__sd_8h.html#aab670f5e43a2f39e063fe8280dad4c5d":[12,0,1,0,1,35,184],
@@ -247,7 +249,5 @@ var NAVTREEINDEX101 =
 "l3gd20__spi_8h.html#unionL3gd20__Spi_8data__rates":[12,0,1,0,7,61,1],
 "l3gd20__spi_8h_source.html":[12,0,1,0,7,61],
 "laser__range__array_8c.html":[12,0,1,0,6,57,2],
-"laser__range__array_8c.html#a06ddedcbdbbe11dcbd5966ac250337b2":[12,0,1,0,6,57,2,4],
-"laser__range__array_8c.html#a2ddd27d910d26f1e73f1bb877dff9086":[12,0,1,0,6,57,2,0,0],
-"laser__range__array_8c.html#a4a21741aaaaae8280054c448b5dd51a7":[12,0,1,0,6,57,2,5]
+"laser__range__array_8c.html#a06ddedcbdbbe11dcbd5966ac250337b2":[12,0,1,0,6,57,2,4]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX140 =
 {
+"module__telemetry_nps.html#module_load_example__telemetry_nps":[1,115,0],
+"module__telemetry_nps.html#module_xml__telemetry_nps":[1,115,2,0],
 "module__telemetry_nps_secure.html":[1,116],
 "module__telemetry_nps_secure.html#configuration__telemetry_nps_secure":[1,116,1],
 "module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,116,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX140 =
 "modules_2datalink_2superbitrf_8c.html#aea7ea8b9ec1ac799365284824757d827":[12,0,1,0,6,15,27,0],
 "modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e":[12,0,1,0,6,15,27,17],
 "modules_2datalink_2superbitrf_8c_source.html":[12,0,1,0,6,15,27],
-"modules_2datalink_2superbitrf_8h.html":[12,0,1,0,6,15,28],
-"modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,6,15,28,0,1],
-"modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,0,2,1,2,1,0,1]
+"modules_2datalink_2superbitrf_8h.html":[12,0,1,0,6,15,28]
 };

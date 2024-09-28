@@ -1,5 +1,7 @@
 var NAVTREEINDEX226 =
 {
+"traffic__info_8c.html#a613e84a3cdf3fbb12be8f2de43e6bff1":[12,0,1,0,6,46,15,12],
+"traffic__info_8c.html#adc09508a7a14d47c2d28cb1190a3cd48":[12,0,1,0,6,46,15,13],
 "traffic__info_8c_source.html":[12,0,1,0,6,46,15],
 "traffic__info_8h.html":[12,0,1,0,6,46,16],
 "traffic__info_8h.html#aa556f49efe565705c817f8a7c01f97a9":[12,0,1,0,6,46,16,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX226 =
 "udp__socket_8c.html#a880fa97951db20259b4529699893301e":[12,0,1,0,0,1,8,7],
 "udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72":[12,0,1,0,0,1,8,2],
 "udp__socket_8c.html#a968ba5df87b2dece7b826a87bb7752f0":[12,0,1,0,0,1,8,8],
-"udp__socket_8c.html#aecfcc8613d12918640f626ebe55e169d":[12,0,1,0,0,1,8,5],
-"udp__socket_8c.html#aff2184a096095f4e82c587a922678e42":[12,0,1,0,0,1,8,4],
-"udp__socket_8c_source.html":[12,0,1,0,0,1,8]
+"udp__socket_8c.html#aecfcc8613d12918640f626ebe55e169d":[12,0,1,0,0,1,8,5]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX134 =
 {
+"module__dw1000_arduino.html#module_load_example__dw1000_arduino":[1,129,0],
+"module__dw1000_arduino.html#module_xml__dw1000_arduino":[1,129,2,0],
 "module__e_identification_fr.html":[1,467],
 "module__e_identification_fr.html#configuration__e_identification_fr":[1,467,1],
 "module__e_identification_fr.html#functions__e_identification_fr":[1,467,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX134 =
 "module__guidance_basic_fw.html#functions__guidance_basic_fw":[1,168,2],
 "module__guidance_basic_fw.html#module_load_example__guidance_basic_fw":[1,168,0],
 "module__guidance_basic_fw.html#module_xml__guidance_basic_fw":[1,168,2,0],
-"module__guidance_energy.html":[1,169],
-"module__guidance_energy.html#configuration__guidance_energy":[1,169,1],
-"module__guidance_energy.html#functions__guidance_energy":[1,169,2]
+"module__guidance_energy.html":[1,169]
 };

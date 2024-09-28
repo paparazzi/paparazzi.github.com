@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__board_matek_f765_wing.html":[1,42],
+"module__board_matek_f765_wing.html#configuration__board_matek_f765_wing":[1,42,1],
 "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,42,0],
 "module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing":[1,42,1,0],
 "module__board_tawaki.html":[1,43],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__dust_gp2y.html#module_xml__dust_gp2y":[1,281,1,0],
 "module__dw1000_arduino.html":[1,129],
 "module__dw1000_arduino.html#configuration__dw1000_arduino":[1,129,1],
-"module__dw1000_arduino.html#functions__dw1000_arduino":[1,129,2],
-"module__dw1000_arduino.html#module_load_example__dw1000_arduino":[1,129,0],
-"module__dw1000_arduino.html#module_xml__dw1000_arduino":[1,129,2,0]
+"module__dw1000_arduino.html#functions__dw1000_arduino":[1,129,2]
 };

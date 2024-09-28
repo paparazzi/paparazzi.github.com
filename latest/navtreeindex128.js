@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"max7456_8c.html#structVECTOR":[12,0,1,0,6,8,6,0],
+"max7456_8c.html#structVECTOR":[12,0,1,0,6,20,0,0],
 "max7456_8c_source.html":[12,0,1,0,6,20,0],
 "max7456_8h.html":[12,0,1,0,6,20,1],
 "max7456_8h.html#a1d6d4401863cba472802654472781050":[12,0,1,0,6,20,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "mcuconf__h7_8h.html#a6b4a662792401dae73ae072183bd8e02":[12,0,1,0,0,0,11,68],
 "mcuconf__h7_8h.html#a6b6ca59555984afc95185e5061879851":[12,0,1,0,0,0,11,196],
 "mcuconf__h7_8h.html#a6d1ec953e37faf6fa7c861b06e7ed790":[12,0,1,0,0,0,11,5],
-"mcuconf__h7_8h.html#a6f066eafb341c481f419dc609e1cd147":[12,0,1,0,0,0,11,162],
-"mcuconf__h7_8h.html#a6f3f6d6fa204b07d1f9d0aaaab8eb770":[12,0,1,0,0,0,11,295],
-"mcuconf__h7_8h.html#a6f5d3dfc7539503f8639d4be5b81928d":[12,0,1,0,0,0,11,292]
+"mcuconf__h7_8h.html#a6f066eafb341c481f419dc609e1cd147":[12,0,1,0,0,0,11,162]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX169 =
 {
+"openpilot__revo__nano_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,56,6],
+"openpilot__revo__nano_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32":[12,0,1,0,1,56,33],
 "openpilot__revo__nano_8h.html#a9bc80e11e3a131466e4a223108b55b6c":[12,0,1,0,1,56,29],
 "openpilot__revo__nano_8h.html#a9c90f2615bc6566f45e326285819f6d4":[12,0,1,0,1,56,71],
 "openpilot__revo__nano_8h.html#a9d66c24ba631c924123fe12d89aae695":[12,0,1,0,1,56,101],
@@ -247,7 +249,5 @@ var NAVTREEINDEX169 =
 "optical__flow__landing_8c.html#a8d19fc9e54c7d49a0f9a46df5b3fffe0":[12,0,1,0,6,14,30,46],
 "optical__flow__landing_8c.html#a8f9312e31916e79187f1000c3add2201":[12,0,1,0,6,14,30,92],
 "optical__flow__landing_8c.html#a900b0336b231dbc0555dddc5e3331b46":[12,0,1,0,6,14,30,96],
-"optical__flow__landing_8c.html#a9308622ab987cd91e350be5cc56a3697":[12,0,1,0,6,14,30,77],
-"optical__flow__landing_8c.html#a930fc2d7668ebfeaf878439804b73478":[12,0,1,0,6,14,30,36],
-"optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa":[12,0,1,0,6,14,30,52]
+"optical__flow__landing_8c.html#a9308622ab987cd91e350be5cc56a3697":[12,0,1,0,6,14,30,77]
 };
