@@ -1,5 +1,10 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_survey_poly_rotorcraft.html":[1,345],
+"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,345,1],
+"module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,345,0],
+"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,345,1,0],
+"module__nav_survey_polygon.html":[1,346],
 "module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,346,0],
 "module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,346,0,0],
 "module__nav_survey_rectangle_rotorcraft.html":[1,347],
@@ -244,10 +249,5 @@ var NAVTREEINDEX138 =
 "module__rotwing_automation.html#configuration__rotwing_automation":[1,373,1],
 "module__rotwing_automation.html#functions__rotwing_automation":[1,373,2],
 "module__rotwing_automation.html#module_load_example__rotwing_automation":[1,373,0],
-"module__rotwing_automation.html#module_xml__rotwing_automation":[1,373,2,0],
-"module__rotwing_state.html":[1,374],
-"module__rotwing_state.html#configuration__rotwing_state":[1,374,1],
-"module__rotwing_state.html#functions__rotwing_state":[1,374,2],
-"module__rotwing_state.html#module_load_example__rotwing_state":[1,374,0],
-"module__rotwing_state.html#module_xml__rotwing_state":[1,374,2,0]
+"module__rotwing_automation.html#module_xml__rotwing_automation":[1,373,2,0]
 };

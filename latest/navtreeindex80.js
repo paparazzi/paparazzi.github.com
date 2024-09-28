@@ -1,5 +1,10 @@
 var NAVTREEINDEX80 =
 {
+"hal__stm32__dma_8h.html#ad255236c42982a3368342bbfeee0c783":[12,0,1,0,0,0,0,6,37],
+"hal__stm32__dma_8h.html#ad32ef0fae7a72db672fef3984913783a":[12,0,1,0,0,0,0,6,15],
+"hal__stm32__dma_8h.html#ad7de09dcfb19a64efc06ffbd75ce66e8":[12,0,1,0,0,0,0,6,36],
+"hal__stm32__dma_8h.html#adab05ea9473647d746e27e5846c0109f":[12,0,1,0,0,0,0,6,10],
+"hal__stm32__dma_8h.html#ae7fe744b4555b16685be693a574b8a9e":[12,0,1,0,0,0,0,6,0,5],
 "hal__stm32__dma_8h.html#afb99e25bf4d6137920caaa45a6472771":[12,0,1,0,0,0,0,6,32],
 "hal__stm32__dma_8h.html#structDMAConfig":[12,0,1,0,0,0,0,6,0],
 "hal__stm32__dma_8h.html#structDMADriver":[12,0,1,0,0,0,0,6,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX80 =
 "hmc5843_8c.html#a2c38f68b878a6bfcb87ce07314d7ff68":[12,0,1,0,7,38,2],
 "hmc5843_8c.html#a46613c2c46ce03746f184a11df775d6a":[12,0,1,0,7,38,4],
 "hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b":[12,0,1,0,7,38,6],
-"hmc5843_8c.html#ad409605fabe125b1d222acb94a3f480f":[12,0,1,0,7,38,0],
-"hmc5843_8c.html#ae2e07f4c71bdc3f01c46f1a37005e82c":[12,0,1,0,7,38,1],
-"hmc5843_8c.html#af07ba9764727d8692eb33cd271080cdc":[12,0,1,0,7,38,5],
-"hmc5843_8c_source.html":[12,0,1,0,7,38],
-"hmc5843_8h.html":[12,0,1,0,7,39],
-"hmc5843_8h.html#a059b2d3f6a79da34e90955c1d3bf79b5":[12,0,1,0,7,39,10]
+"hmc5843_8c.html#ad409605fabe125b1d222acb94a3f480f":[12,0,1,0,7,38,0]
 };

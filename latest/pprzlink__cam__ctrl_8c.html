@@ -85,8 +85,7 @@ $(document).ready(function(){initNavTree('pprzlink__cam__ctrl_8c.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pprzlink_cam_ctrl.c File Reference</div>  </div>
 </div><!--header-->
@@ -155,16 +154,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a833f16388be36136f5d7d173200d5e95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprzlink__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">dc_send_command</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cmd)</td></tr>
 <tr class="memdesc:a833f16388be36136f5d7d173200d5e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Command To Camera.  <a href="pprzlink__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">More...</a><br /></td></tr>
 <tr class="separator:a833f16388be36136f5d7d173200d5e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992f1bd54d8c536b164d6ec0938be95d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprzlink__cam__ctrl_8c.html#a992f1bd54d8c536b164d6ec0938be95d">pprzlink_cam_ctrl_set_expo</a> (float expo)</td></tr>
-<tr class="separator:a992f1bd54d8c536b164d6ec0938be95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc4f0de8fa4eb74fb0e2f5619dcc096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprzlink__cam__ctrl_8c.html#afdc4f0de8fa4eb74fb0e2f5619dcc096">dc_set_expo</a> (float expo)</td></tr>
+<tr class="separator:afdc4f0de8fa4eb74fb0e2f5619dcc096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87e09ce1e5ea0b5208f50d11227c2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprzlink__cam__ctrl_8c.html#aa87e09ce1e5ea0b5208f50d11227c2cd">dc_expo_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:aa87e09ce1e5ea0b5208f50d11227c2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:afadc314add86a23906ad4d0609606227"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprzlink__cam__ctrl_8c.html#afadc314add86a23906ad4d0609606227">digital_cam_exposure</a></td></tr>
-<tr class="memdesc:afadc314add86a23906ad4d0609606227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set expo setting.  <a href="pprzlink__cam__ctrl_8c.html#afadc314add86a23906ad4d0609606227">More...</a><br /></td></tr>
-<tr class="separator:afadc314add86a23906ad4d0609606227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aa87e09ce1e5ea0b5208f50d11227c2cd"></a>
@@ -183,9 +176,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00070">70</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00068">68</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00032">digital_cam_exposure</a>.</p>
+<p class="reference">References <a class="el" href="dc_8c_source.html#l00072">dc_exposure</a>.</p>
 
 </div>
 </div>
@@ -207,9 +200,9 @@ Variables</h2></td></tr>
 
 <p>Send Command To Camera. </p>
 
-<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00046">46</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00044">44</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="dc_8c_source.html#l00189">dc_send_command_common()</a>, <a class="el" href="dc_8c_source.html#l00104">dc_send_shot_position()</a>, and <a class="el" href="dc_8h_source.html#l00100">DC_SHOOT</a>.</p>
+<p class="reference">References <a class="el" href="dc_8c_source.html#l00192">dc_send_command_common()</a>, <a class="el" href="dc_8c_source.html#l00106">dc_send_shot_position()</a>, and <a class="el" href="dc_8h_source.html#l00102">DC_SHOOT</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -245,6 +238,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="afdc4f0de8fa4eb74fb0e2f5619dcc096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc4f0de8fa4eb74fb0e2f5619dcc096">&#9670;&nbsp;</a></span>dc_set_expo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dc_set_expo </td>
+          <td>(</td>
+          <td class="paramtype">float expo&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00058">58</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
+
+<p class="reference">References <a class="el" href="dc_8c_source.html#l00072">dc_exposure</a>, and <a class="el" href="extra__pprz__dl_8c_source.html#l00057">extra_pprz_tp</a>.</p>
+
+</div>
+</div>
 <a id="a180192eec8773a7fd3b14cb1beefeb8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a180192eec8773a7fd3b14cb1beefeb8f">&#9670;&nbsp;</a></span>pprzlink_cam_ctrl_init()</h2>
 
@@ -261,9 +276,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00034">34</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00032">32</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00032">digital_cam_exposure</a>.</p>
+<p class="reference">References <a class="el" href="dc_8c_source.html#l00072">dc_exposure</a>, and <a class="el" href="pprzlink__cam__ctrl_8h_source.html#l00037">PPRZLINK_CAM_AUTO_EXPO</a>.</p>
 
 </div>
 </div>
@@ -285,9 +300,9 @@ Variables</h2></td></tr>
 
 <p>Periodic. </p>
 
-<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00039">39</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00037">37</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="dc_8c_source.html#l00274">dc_periodic()</a>.</p>
+<p class="reference">References <a class="el" href="dc_8c_source.html#l00279">dc_periodic()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -324,56 +339,13 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a992f1bd54d8c536b164d6ec0938be95d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992f1bd54d8c536b164d6ec0938be95d">&#9670;&nbsp;</a></span>pprzlink_cam_ctrl_set_expo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pprzlink_cam_ctrl_set_expo </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>expo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00060">60</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00032">digital_cam_exposure</a>, and <a class="el" href="extra__pprz__dl_8c_source.html#l00057">extra_pprz_tp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="afadc314add86a23906ad4d0609606227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afadc314add86a23906ad4d0609606227">&#9670;&nbsp;</a></span>digital_cam_exposure</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float digital_cam_exposure</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set expo setting. </p>
-
-<p class="definition">Definition at line <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00032">32</a> of file <a class="el" href="pprzlink__cam__ctrl_8c_source.html">pprzlink_cam_ctrl.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00070">dc_expo_cb()</a>, <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00034">pprzlink_cam_ctrl_init()</a>, and <a class="el" href="pprzlink__cam__ctrl_8c_source.html#l00060">pprzlink_cam_ctrl_set_expo()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="pprzlink__cam__ctrl_8c.html">pprzlink_cam_ctrl.c</a></li>
-    <li class="footer">Generated on Sat Sep 28 2024 12:57:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 28 2024 21:19:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

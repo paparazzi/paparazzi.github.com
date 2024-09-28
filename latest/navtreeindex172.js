@@ -1,5 +1,11 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#CAMERA_PAYLOAD":[2,0,106],
+"paparazzi_messages.html#CAMERA_PAYLOAD_DL":[2,1,29],
+"paparazzi_messages.html#CAMERA_SNAPSHOT":[2,0,123],
+"paparazzi_messages.html#CAMERA_SNAPSHOT_DL":[2,1,30],
+"paparazzi_messages.html#CAM_POINT":[2,0,58],
+"paparazzi_messages.html#CAM_STATUS":[2,2,13],
 "paparazzi_messages.html#CHIRP":[2,0,42],
 "paparazzi_messages.html#CIRCLE":[2,0,18],
 "paparazzi_messages.html#CIRCLE_STATUS":[2,2,20],
@@ -243,11 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#STAB_ATTITUDE":[2,0,202],
 "paparazzi_messages.html#STAB_ATTITUDE_FLOAT":[2,0,125],
 "paparazzi_messages.html#STAB_ATTITUDE_INT":[2,0,135],
-"paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137],
-"paparazzi_messages.html#STAB_ATTITUDE_REF_INT":[2,0,136],
-"paparazzi_messages.html#STATE_FILTER_STATUS":[2,0,218],
-"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9],
-"paparazzi_messages.html#STEREOCAM_FOLLOW_ME":[2,4,12],
-"paparazzi_messages.html#STEREOCAM_STATE":[2,4,11],
-"paparazzi_messages.html#STEREOCAM_VELOCITY":[2,4,10]
+"paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137]
 };

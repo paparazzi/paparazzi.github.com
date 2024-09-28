@@ -32,6 +32,7 @@ var nav__survey__hybrid_8c =
     [ "MaxFloat", "nav__survey__hybrid_8c.html#a75197b2a5458093f02e396c7429f64ad", null ],
     [ "MinFloat", "nav__survey__hybrid_8c.html#a81eb8d41067d9dbbd7d939bbed2befda", null ],
     [ "SURVEY_HYBRID_APPROACHING_TIME", "nav__survey__hybrid_8c.html#a12bc619ddbcca46a1f7699d3e0aecf6e", null ],
+    [ "SURVEY_HYBRID_ENTRY_CIRCLE", "nav__survey__hybrid_8c.html#a774bd9d8c84279a4cf4b6ffe725aac81", null ],
     [ "SURVEY_HYBRID_ENTRY_DISTANCE", "nav__survey__hybrid_8c.html#a3097b2404d96d98d1e5f2cf04c1248c8", null ],
     [ "SURVEY_HYBRID_HALF_SWEEP_ENABLED", "nav__survey__hybrid_8c.html#ab6bc654343268f616fc4f82cee912407", null ],
     [ "SURVEY_HYBRID_MAX_POLYGON_SIZE", "nav__survey__hybrid_8c.html#a86a5b6529ce02f1f15b228d907415bdc", null ],

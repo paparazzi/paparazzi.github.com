@@ -1,5 +1,10 @@
 var NAVTREEINDEX78 =
 {
+"guidance__v__ref_8h.html#a3d96f130f69bd6fa87c9eb2ca2ec4640":[12,0,1,0,3,2,0,26,4],
+"guidance__v__ref_8h.html#a56ce61e48bdd6a1384b5d330e79d38d6":[12,0,1,0,3,2,0,26,6],
+"guidance__v__ref_8h.html#a5b8b80ea3763966e346d43553da36b49":[12,0,1,0,3,2,0,26,3],
+"guidance__v__ref_8h.html#a61ea35c28ade47f77f09a012aa0f4fe4":[12,0,1,0,3,2,0,26,10],
+"guidance__v__ref_8h.html#a9438c4ab465cec426023d9fc3fb9cb07":[12,0,1,0,3,2,0,26,7],
 "guidance__v__ref_8h.html#a998c4eb852a2028e28e2987a31d783ad":[12,0,1,0,3,2,0,26,2],
 "guidance__v__ref_8h.html#ab36885cc677b3d2a0f89c148ffe6e9ba":[12,0,1,0,3,2,0,26,8],
 "guidance__v__ref_8h.html#ab8d8d8003fbd1c3d31ee72827ea1e25e":[12,0,1,0,3,2,0,26,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX78 =
 "gvf__parametric__2d__bezier__splines_8h.html#aca8ffdf5b11603eeca6d90f023ae4424":[12,0,1,0,6,31,1,0,1,1,1],
 "gvf__parametric__2d__bezier__splines_8h.html#ae749e87aa5e2af17a8cca87498df9df0":[12,0,1,0,6,31,1,0,1,3],
 "gvf__parametric__2d__bezier__splines_8h.html#afe68b463eb3b368c52440260ccf17273":[12,0,1,0,6,31,1,0,1,1,0],
-"gvf__parametric__2d__bezier__splines_8h.html#structbezier__t":[12,0,1,0,6,31,1,0,1,1],
-"gvf__parametric__2d__bezier__splines_8h.html#structgvf__par__2d__bezier__par":[12,0,1,0,6,31,1,0,1,0],
-"gvf__parametric__2d__bezier__splines_8h_source.html":[12,0,1,0,6,31,1,0,1],
-"gvf__parametric__2d__trefoil_8c.html":[12,0,1,0,6,31,1,0,2],
-"gvf__parametric__2d__trefoil_8c.html#a015bff889b48464d7e789752d4914ec4":[12,0,1,0,6,31,1,0,2,0],
-"gvf__parametric__2d__trefoil_8c.html#a1bd04ff33fc033fa1232f05faa7205c2":[12,0,1,0,6,31,1,0,2,7]
+"gvf__parametric__2d__bezier__splines_8h.html#structbezier__t":[12,0,1,0,6,31,1,0,1,1]
 };

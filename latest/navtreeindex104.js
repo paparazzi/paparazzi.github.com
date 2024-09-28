@@ -1,5 +1,10 @@
 var NAVTREEINDEX104 =
 {
+"lidar__lite_8h.html#add3ed99cbeac571344a0501b2fec24e6":[12,0,1,0,6,40,1,0,5],
+"lidar__lite_8h.html#ae6e777bd68d24a5c7effc1c21dbd2622":[12,0,1,0,6,40,1,0,4],
+"lidar__lite_8h.html#af963b51aa16d3dd51fb442fe423bc3c6":[12,0,1,0,6,40,1,6],
+"lidar__lite_8h.html#structLidarLite":[12,0,1,0,6,40,1,0],
+"lidar__lite_8h_source.html":[12,0,1,0,6,40,1],
 "lidar__sf11_8c.html":[12,0,1,0,6,40,2],
 "lidar__sf11_8c.html#a33e7a34971e620ee9d1acab000cef8dd":[12,0,1,0,6,40,2,2],
 "lidar__sf11_8c.html#a445c98445fd275bd7ef2d9cc33aa71a3":[12,0,1,0,6,40,2,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX104 =
 "linux_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8":[12,0,1,0,0,1,0,3,2],
 "linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7":[12,0,1,0,0,1,0,3,1],
 "linux_2mcu__periph_2gpio__arch_8h.html#adf5626a74ea3720f4e640a960f5c947a":[12,0,1,0,0,1,0,3,4],
-"linux_2mcu__periph_2gpio__arch_8h_source.html":[12,0,1,0,0,1,0,3],
-"linux_2mcu__periph_2i2c__arch_8c.html":[12,0,1,0,0,1,0,4],
-"linux_2mcu__periph_2i2c__arch_8c.html#a06cd65e0487bf672f1e279eaf0e2f276":[12,0,1,0,0,1,0,4,2],
-"linux_2mcu__periph_2i2c__arch_8c.html#a096bc72d165ba77a4e27e1a5ea396433":[12,0,1,0,0,1,0,4,6],
-"linux_2mcu__periph_2i2c__arch_8c.html#a46a234837b8ff65f988feb269b967623":[12,0,1,0,0,1,0,4,7],
-"linux_2mcu__periph_2i2c__arch_8c.html#a65753435877d5834344b0ad663aaa8cf":[12,0,1,0,0,1,0,4,4]
+"linux_2mcu__periph_2gpio__arch_8h_source.html":[12,0,1,0,0,1,0,3]
 };

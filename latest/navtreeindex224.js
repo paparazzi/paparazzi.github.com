@@ -1,5 +1,15 @@
 var NAVTREEINDEX224 =
 {
+"tawaki__v2_80_8h.html#ae195dcd60fc388e78a8d7073cc7c7060":[12,0,1,0,1,21,0,3,2,38],
+"tawaki__v2_80_8h.html#ae2a2de6309f53c472915a4ec002a94d5":[12,0,1,0,1,21,0,3,2,65],
+"tawaki__v2_80_8h.html#ae2fd7d9fbe28f2e0fd5c6b3582dcd883":[12,0,1,0,1,21,0,3,2,168],
+"tawaki__v2_80_8h.html#ae38e9ec70c5cc25cd94ee6fdee56c640":[12,0,1,0,1,21,0,3,2,27],
+"tawaki__v2_80_8h.html#ae6268765f5e7d988d7a7eef8000c4f23":[12,0,1,0,1,21,0,3,2,6],
+"tawaki__v2_80_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a":[12,0,1,0,1,21,0,3,2,208],
+"tawaki__v2_80_8h.html#ae74a702840b15e71530a2716b1ef497c":[12,0,1,0,1,21,0,3,2,198],
+"tawaki__v2_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,21,0,3,2,195],
+"tawaki__v2_80_8h.html#ae95899c782166bf67a3fbbee511ab475":[12,0,1,0,1,21,0,3,2,92],
+"tawaki__v2_80_8h.html#ae9aa038e4d4911598529f87bce46c082":[12,0,1,0,1,21,0,3,2,37],
 "tawaki__v2_80_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf":[12,0,1,0,1,21,0,3,2,110],
 "tawaki__v2_80_8h.html#aea377e267c55bbc84cb912db0764d937":[12,0,1,0,1,21,0,3,2,85],
 "tawaki__v2_80_8h.html#aead66bc65b8e434c97f28429baeb2800":[12,0,1,0,1,21,0,3,2,116],
@@ -239,15 +249,5 @@ var NAVTREEINDEX224 =
 "textons_8c.html#a38c42458d6c8409b91d27227f297229d":[12,0,1,0,6,12,38,1],
 "textons_8c.html#a5f00de43dd5ab23d5aaea3333937ce48":[12,0,1,0,6,12,38,12],
 "textons_8c.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7":[12,0,1,0,6,12,38,39],
-"textons_8c.html#a637e42f623ef0ee9ebd5a45a21c54e56":[12,0,1,0,6,12,38,36],
-"textons_8c.html#a6d2b99999b3e2213453a8050abaedb18":[12,0,1,0,6,12,38,35],
-"textons_8c.html#a6da202ca26862bd404352c44f08b19b9":[12,0,1,0,6,12,38,38],
-"textons_8c.html#a6ec615e06f4e31eb5260754933d2e661":[12,0,1,0,6,12,38,4],
-"textons_8c.html#a73515c3cec3be7f534b5c2af9f191d12":[12,0,1,0,6,12,38,32],
-"textons_8c.html#a808afb1f7ef3d3d06e7bb967399e0ddd":[12,0,1,0,6,12,38,11],
-"textons_8c.html#a89ba1b117446ed4075635e5d26107819":[12,0,1,0,6,12,38,15],
-"textons_8c.html#a8c8eda34950f8de3c4a9e02f8b68faad":[12,0,1,0,6,12,38,31],
-"textons_8c.html#a8fdcafb366ca03df825616e0a3450d7a":[12,0,1,0,6,12,38,29],
-"textons_8c.html#a91386c15d9ad570b03fc0f33a10de703":[12,0,1,0,6,12,38,37],
-"textons_8c.html#a934c7714e1c12aa027f5b26430ae6976":[12,0,1,0,6,12,38,33]
+"textons_8c.html#a637e42f623ef0ee9ebd5a45a21c54e56":[12,0,1,0,6,12,38,36]
 };

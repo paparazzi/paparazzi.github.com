@@ -1,5 +1,10 @@
 var NAVTREEINDEX139 =
 {
+"module__rotwing_state.html":[1,374],
+"module__rotwing_state.html#configuration__rotwing_state":[1,374,1],
+"module__rotwing_state.html#functions__rotwing_state":[1,374,2],
+"module__rotwing_state.html#module_load_example__rotwing_state":[1,374,0],
+"module__rotwing_state.html#module_xml__rotwing_state":[1,374,2,0],
 "module__rotwing_state_v2.html":[1,375],
 "module__rotwing_state_v2.html#configuration__rotwing_state_v2":[1,375,1],
 "module__rotwing_state_v2.html#functions__rotwing_state_v2":[1,375,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX139 =
 "module__telemetry_intermcu.html#module_load_example__telemetry_intermcu":[1,113,0],
 "module__telemetry_intermcu.html#module_xml__telemetry_intermcu":[1,113,2,0],
 "module__telemetry_ivy.html":[1,114],
-"module__telemetry_ivy.html#functions__telemetry_ivy":[1,114,1],
-"module__telemetry_ivy.html#module_load_example__telemetry_ivy":[1,114,0],
-"module__telemetry_ivy.html#module_xml__telemetry_ivy":[1,114,1,0],
-"module__telemetry_nps.html":[1,115],
-"module__telemetry_nps.html#configuration__telemetry_nps":[1,115,1],
-"module__telemetry_nps.html#functions__telemetry_nps":[1,115,2]
+"module__telemetry_ivy.html#functions__telemetry_ivy":[1,114,1]
 };
