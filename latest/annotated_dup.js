@@ -910,7 +910,6 @@ var annotated_dup =
     [ "Rm3100.data", "rm3100_8h.html#unionRm3100_8data", "rm3100_8h_unionRm3100_8data" ],
     [ "rotation_history_ring_buffer_t", "pose__history_8c.html#structrotation__history__ring__buffer__t", "pose__history_8c_structrotation__history__ring__buffer__t" ],
     [ "RotorcraftNavigation", "rotorcraft_2navigation_8h.html#structRotorcraftNavigation", "rotorcraft_2navigation_8h_structRotorcraftNavigation" ],
-    [ "rotwing_automation", "rotwing__automation_8h.html#structrotwing__automation", "rotwing__automation_8h_structrotwing__automation" ],
     [ "rotwing_eff_sched_param_t", "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__param__t", "eff__scheduling__rotwing__V2_8h_structrotwing__eff__sched__param__t" ],
     [ "rotwing_eff_sched_var_t", "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__var__t", "eff__scheduling__rotwing__V2_8h_structrotwing__eff__sched__var__t" ],
     [ "RotwingState", "rotwing__state__V2_8h.html#structRotwingState", "rotwing__state__V2_8h_structRotwingState" ],

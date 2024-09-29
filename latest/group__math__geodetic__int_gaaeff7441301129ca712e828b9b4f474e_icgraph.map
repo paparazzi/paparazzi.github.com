@@ -1,52 +1,52 @@
 <map id="ecef_of_enu_pos_i" name="ecef_of_enu_pos_i">
-<area shape="rect" id="node1" title="Convert a local ENU position to ECEF." alt="" coords="1103,309,1245,336"/>
-<area shape="rect" id="node2" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="912,259,1055,285"/>
-<area shape="rect" id="node8" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="694,309,859,336"/>
-<area shape="rect" id="node23" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="703,949,851,976"/>
-<area shape="rect" id="node3" href="$group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e" title=" " alt="" coords="689,208,864,235"/>
-<area shape="rect" id="node5" href="$group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title=" " alt="" coords="689,259,864,285"/>
-<area shape="rect" id="node4" href="$group__state__position.html#gabc6da063ed27f46a4ae3d03c4722ad65" title="Get position in ECEF coordinates (float)." alt="" coords="471,208,641,235"/>
-<area shape="rect" id="node6" href="$group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int)." alt="" coords="471,259,641,285"/>
+<area shape="rect" id="node1" title="Convert a local ENU position to ECEF." alt="" coords="1103,325,1245,352"/>
+<area shape="rect" id="node2" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="912,275,1055,301"/>
+<area shape="rect" id="node8" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="694,325,859,352"/>
+<area shape="rect" id="node24" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="703,949,851,976"/>
+<area shape="rect" id="node3" href="$group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e" title=" " alt="" coords="689,224,864,251"/>
+<area shape="rect" id="node5" href="$group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title=" " alt="" coords="689,275,864,301"/>
+<area shape="rect" id="node4" href="$group__state__position.html#gabc6da063ed27f46a4ae3d03c4722ad65" title="Get position in ECEF coordinates (float)." alt="" coords="471,224,641,251"/>
+<area shape="rect" id="node6" href="$group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int)." alt="" coords="471,275,641,301"/>
 <area shape="rect" id="node7" href="$ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="228,5,415,32"/>
-<area shape="rect" id="node9" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="476,309,636,336"/>
-<area shape="rect" id="node10" href="$dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="287,208,356,235"/>
-<area shape="rect" id="node13" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="248,259,395,285"/>
-<area shape="rect" id="node14" href="$dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken." alt="" coords="237,309,406,336"/>
-<area shape="rect" id="node15" href="$mavlink_8c.html#a69b29097db843b873c8b348c837cfd03" title=" " alt="" coords="241,361,401,402"/>
-<area shape="rect" id="node16" href="$meteo__stick_8c.html#ad5954e5de0c4ce81c9ce6c9ad1c89766" title="Funnction to send over different transport and device." alt="" coords="233,427,409,453"/>
-<area shape="rect" id="node17" href="$exif__module_8c.html#a91b0ae74e7e4da70fb5021ff6aacd6f0" title=" " alt="" coords="247,477,396,504"/>
-<area shape="rect" id="node18" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="288,56,355,83"/>
-<area shape="rect" id="node19" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="286,107,357,133"/>
-<area shape="rect" id="node20" href="$cloud__sensor_8c.html#a6210f5adad0e1806b71ce588993904bf" title=" " alt="" coords="231,157,412,184"/>
-<area shape="rect" id="node21" href="$nav_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude" alt="" coords="249,747,394,773"/>
-<area shape="rect" id="node22" href="$nav_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude" alt="" coords="237,528,405,555"/>
-<area shape="rect" id="node11" href="$dc_8c.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode." alt="" coords="49,183,128,209"/>
-<area shape="rect" id="node12" href="$dc_8c.html#a9b9f345170fec78f561c6a7a74d1e6d3" title="Sets the dc control in distance mode." alt="" coords="39,233,138,260"/>
-<area shape="rect" id="node24" href="$nav_2waypoints_8c.html#a99eb42987dd9c48be7a9b0eb13737d79" title="Get latitude of waypoint in deg." alt="" coords="473,949,639,976"/>
-<area shape="rect" id="node26" href="$nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="489,1421,623,1448"/>
-<area shape="rect" id="node30" href="$nav_2waypoints_8c.html#a7e084d884dfa3c91233a393dcfd15b01" title="Get longitude of waypoint in deg." alt="" coords="472,1484,640,1511"/>
-<area shape="rect" id="node32" href="$nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference)" alt="" coords="489,1560,623,1587"/>
-<area shape="rect" id="node34" href="$nav_2waypoints_8c.html#aecc0b78adf0a0c13f31298dc4d17b9f6" title=" " alt="" coords="484,823,628,849"/>
-<area shape="rect" id="node36" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="486,1152,626,1179"/>
+<area shape="rect" id="node9" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="476,325,636,352"/>
+<area shape="rect" id="node10" href="$dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="287,56,356,83"/>
+<area shape="rect" id="node14" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="248,107,395,133"/>
+<area shape="rect" id="node15" href="$dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken." alt="" coords="237,157,406,184"/>
+<area shape="rect" id="node16" href="$mavlink_8c.html#a69b29097db843b873c8b348c837cfd03" title=" " alt="" coords="241,209,401,250"/>
+<area shape="rect" id="node17" href="$meteo__stick_8c.html#ad5954e5de0c4ce81c9ce6c9ad1c89766" title="Funnction to send over different transport and device." alt="" coords="233,275,409,301"/>
+<area shape="rect" id="node18" href="$exif__module_8c.html#a91b0ae74e7e4da70fb5021ff6aacd6f0" title=" " alt="" coords="247,325,396,352"/>
+<area shape="rect" id="node19" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="288,376,355,403"/>
+<area shape="rect" id="node20" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="286,427,357,453"/>
+<area shape="rect" id="node21" href="$cloud__sensor_8c.html#a6210f5adad0e1806b71ce588993904bf" title=" " alt="" coords="231,477,412,504"/>
+<area shape="rect" id="node22" href="$nav_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude" alt="" coords="249,629,394,656"/>
+<area shape="rect" id="node23" href="$nav_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude" alt="" coords="237,528,405,555"/>
+<area shape="rect" id="node11" href="$dc_8c.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode." alt="" coords="49,5,128,32"/>
+<area shape="rect" id="node12" href="$dc_8c.html#a9b9f345170fec78f561c6a7a74d1e6d3" title="Sets the dc control in distance mode." alt="" coords="39,56,138,83"/>
+<area shape="rect" id="node13" href="$dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144" title="Stop dc control." alt="" coords="53,107,125,133"/>
+<area shape="rect" id="node25" href="$nav_2waypoints_8c.html#a99eb42987dd9c48be7a9b0eb13737d79" title="Get latitude of waypoint in deg." alt="" coords="473,949,639,976"/>
+<area shape="rect" id="node27" href="$nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="489,1000,623,1027"/>
+<area shape="rect" id="node31" href="$nav_2waypoints_8c.html#a7e084d884dfa3c91233a393dcfd15b01" title="Get longitude of waypoint in deg." alt="" coords="472,1329,640,1356"/>
+<area shape="rect" id="node33" href="$nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference)" alt="" coords="489,1481,623,1508"/>
+<area shape="rect" id="node35" href="$nav_2waypoints_8c.html#aecc0b78adf0a0c13f31298dc4d17b9f6" title=" " alt="" coords="484,823,628,849"/>
+<area shape="rect" id="node37" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="486,1228,626,1255"/>
 <area shape="rect" id="node44" href="$nav_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4" title=" " alt="" coords="481,887,631,913"/>
-<area shape="rect" id="node47" href="$nav_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="485,659,627,685"/>
-<area shape="rect" id="node25" href="$nav_2waypoints_8c.html#aff1a8c5b31bc6ee294b5f4e43b9527fb" title="Get latitude of waypoint in rad." alt="" coords="240,949,403,976"/>
-<area shape="rect" id="node27" href="$datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title=" " alt="" coords="252,1421,391,1448"/>
-<area shape="rect" id="node29" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="252,1472,391,1499"/>
-<area shape="rect" id="node28" href="$datalink_2missionlib_2waypoints_8c.html#a632dcb46c33f5cf3726652ee477ff9bc" title=" " alt="" coords="5,1389,172,1430"/>
-<area shape="rect" id="node31" href="$nav_2waypoints_8c.html#a562790c04bfc9029c5ab2b62bb7fd8b0" title="Get longitude of waypoint in rad." alt="" coords="239,1523,404,1549"/>
-<area shape="rect" id="node33" href="$stereocam_2stereocam__follow__me_2follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848" title=" " alt="" coords="276,1573,367,1600"/>
-<area shape="rect" id="node35" href="$cv__georeference_8c.html#a230ffda49b65d6b6963063af8ab73e00" title=" " alt="" coords="241,797,401,824"/>
-<area shape="rect" id="node37" href="$ctrl_2follow__me_8c.html#a5c3112293f2a4d98f2ddb0d937011a36" title="periodic function" alt="" coords="247,1051,396,1077"/>
-<area shape="rect" id="node38" href="$ctrl_2follow__me_8c.html#a7e5c2903825aa9815752b1fd8105dc15" title="run function" alt="" coords="250,1101,393,1128"/>
-<area shape="rect" id="node39" href="$nav__takeoff__and__landing__rotorcraft_8c.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="235,1152,407,1179"/>
-<area shape="rect" id="node40" href="$stereocam__droplet_8c.html#a304b77dceeec4285bad836b9bbced42d" title=" " alt="" coords="220,1203,423,1229"/>
-<area shape="rect" id="node41" href="$approach__moving__target_8c.html#af246048b589bd0805fa74939e9751e0e" title=" " alt="" coords="254,1253,389,1280"/>
-<area shape="rect" id="node42" href="$rotwing__automation_8c.html#aed4d974eb29cc7738ca05ef79207a848" title=" " alt="" coords="226,1305,417,1346"/>
-<area shape="rect" id="node43" href="$nav_2waypoints_8c.html#a8d575cfbc187cac4cae8049873821e96" title="initialize global and local waypoints" alt="" coords="263,1000,380,1027"/>
+<area shape="rect" id="node47" href="$nav_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="485,709,627,736"/>
+<area shape="rect" id="node26" href="$nav_2waypoints_8c.html#aff1a8c5b31bc6ee294b5f4e43b9527fb" title="Get latitude of waypoint in rad." alt="" coords="240,949,403,976"/>
+<area shape="rect" id="node28" href="$datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title=" " alt="" coords="252,1051,391,1077"/>
+<area shape="rect" id="node30" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="252,1000,391,1027"/>
+<area shape="rect" id="node29" href="$datalink_2missionlib_2waypoints_8c.html#a632dcb46c33f5cf3726652ee477ff9bc" title=" " alt="" coords="5,1221,172,1262"/>
+<area shape="rect" id="node32" href="$nav_2waypoints_8c.html#a562790c04bfc9029c5ab2b62bb7fd8b0" title="Get longitude of waypoint in rad." alt="" coords="239,1456,404,1483"/>
+<area shape="rect" id="node34" href="$stereocam_2stereocam__follow__me_2follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848" title=" " alt="" coords="276,1507,367,1533"/>
+<area shape="rect" id="node36" href="$cv__georeference_8c.html#a230ffda49b65d6b6963063af8ab73e00" title=" " alt="" coords="241,797,401,824"/>
+<area shape="rect" id="node38" href="$ctrl_2follow__me_8c.html#a5c3112293f2a4d98f2ddb0d937011a36" title="periodic function" alt="" coords="247,1101,396,1128"/>
+<area shape="rect" id="node39" href="$ctrl_2follow__me_8c.html#a7e5c2903825aa9815752b1fd8105dc15" title="run function" alt="" coords="250,1152,393,1179"/>
+<area shape="rect" id="node40" href="$nav__takeoff__and__landing__rotorcraft_8c.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="235,1203,407,1229"/>
+<area shape="rect" id="node41" href="$stereocam__droplet_8c.html#a304b77dceeec4285bad836b9bbced42d" title=" " alt="" coords="220,1253,423,1280"/>
+<area shape="rect" id="node42" href="$approach__moving__target_8c.html#af246048b589bd0805fa74939e9751e0e" title=" " alt="" coords="254,1304,389,1331"/>
+<area shape="rect" id="node43" href="$nav_2waypoints_8c.html#a8d575cfbc187cac4cae8049873821e96" title="initialize global and local waypoints" alt="" coords="263,1355,380,1381"/>
 <area shape="rect" id="node45" href="$tag__tracking_8c.html#a9ae894efab232670d0c7b2845b3061fd" title=" " alt="" coords="42,873,135,900"/>
-<area shape="rect" id="node46" href="$nav_2waypoints_8c.html#aa759c25e1ecc60cc27a614e366ab05a4" title=" " alt="" coords="237,848,405,875"/>
+<area shape="rect" id="node46" href="$nav_2waypoints_8c.html#aa759c25e1ecc60cc27a614e366ab05a4" title=" " alt="" coords="237,899,405,925"/>
 <area shape="rect" id="node48" href="$cv__georeference_8c.html#a551f2542023388240a3573ca7e223aec" title=" " alt="" coords="249,579,394,605"/>
-<area shape="rect" id="node49" href="$avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05" title=" " alt="" coords="240,681,403,722"/>
-<area shape="rect" id="node50" href="$nav_2waypoints_8c.html#a41c11ce8ceec9d5d0e4062c7040afcb5" title=" " alt="" coords="241,629,401,656"/>
+<area shape="rect" id="node49" href="$avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05" title=" " alt="" coords="240,731,403,773"/>
+<area shape="rect" id="node50" href="$nav_2waypoints_8c.html#a41c11ce8ceec9d5d0e4062c7040afcb5" title=" " alt="" coords="241,680,401,707"/>
 </map>
