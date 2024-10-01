@@ -956,6 +956,12 @@ var onboard_modules =
         [ "Raw bat_checker.xml file:", "module__bat_checker.html#module_xml__bat_checker", null ]
       ] ]
     ] ],
+    [ "can_fuelcell module", "module__can_fuelcell.html", [
+      [ "Example for airframe file", "module__can_fuelcell.html#module_load_example__can_fuelcell", null ],
+      [ "Module functions", "module__can_fuelcell.html#functions__can_fuelcell", [
+        [ "Raw can_fuelcell.xml file:", "module__can_fuelcell.html#module_xml__can_fuelcell", null ]
+      ] ]
+    ] ],
     [ "electrical module", "module__electrical.html", [
       [ "Example for airframe file", "module__electrical.html#module_load_example__electrical", null ],
       [ "Module functions", "module__electrical.html#functions__electrical", [

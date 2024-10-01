@@ -1028,6 +1028,7 @@ var annotated_dup =
     [ "TypeKalman", "alt__filter_8h.html#structTypeKalman", "alt__filter_8h_structTypeKalman" ],
     [ "uart_periph", "uart_8h.html#structuart__periph", "uart_8h_structuart__periph" ],
     [ "uavcan_circuit_battery_t", "power__uavcan_8c.html#structuavcan__circuit__battery__t", "power__uavcan_8c_structuavcan__circuit__battery__t" ],
+    [ "uavcan_equipment_fuelcell", "can__fuelcell_8c.html#structuavcan__equipment__fuelcell", "can__fuelcell_8c_structuavcan__equipment__fuelcell" ],
     [ "uavcan_equipment_power_BatteryInfo", "power__uavcan_8c.html#structuavcan__equipment__power__BatteryInfo", "power__uavcan_8c_structuavcan__equipment__power__BatteryInfo" ],
     [ "uavcan_equipment_power_CircuitStatus", "power__uavcan_8c.html#structuavcan__equipment__power__CircuitStatus", "power__uavcan_8c_structuavcan__equipment__power__CircuitStatus" ],
     [ "uavcan_event_t", "chibios_2modules_2uavcan_2uavcan_8h.html#structuavcan__event__t", "chibios_2modules_2uavcan_2uavcan_8h_structuavcan__event__t" ],

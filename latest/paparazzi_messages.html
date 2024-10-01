@@ -276,6 +276,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
 <li class="level2"><a href="#INS">INS (ID 198)</a></li>
+<li class="level2"><a href="#FUELCELL">FUELCELL (ID 199)</a></li>
 <li class="level2"><a href="#IMU_GYRO">IMU_GYRO (ID 200)</a></li>
 <li class="level2"><a href="#IMU_MAG">IMU_MAG (ID 201)</a></li>
 <li class="level2"><a href="#IMU_ACCEL">IMU_ACCEL (ID 202)</a></li>
@@ -3987,6 +3988,30 @@ INS (ID 198)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ins_zdd   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="FUELCELL"></a>
+FUELCELL (ID 199)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pressure   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">%   </td><td class="markdownTableBodyNone">Cylinder Pressure Percentage    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">press_reg   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Bar   </td><td class="markdownTableBodyNone">Regulator Output Voltage    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">volt_bat   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">V   </td><td class="markdownTableBodyNone">Support Battery    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">power_out   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">W   </td><td class="markdownTableBodyNone">Total Output Power    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">power_cell   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">W   </td><td class="markdownTableBodyNone">Fuell Cell Power    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">power_batt   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">W   </td><td class="markdownTableBodyNone">Battery Power    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">PSU <a class="el" href="group__state__interface.html#structState" title="Structure holding vehicle state data.">State</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">error   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Main error code    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">suberror   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Subcode   </td></tr>
+</table>
 <h2><a class="anchor" id="IMU_GYRO"></a>
 IMU_GYRO (ID 200)</h2>
 <table class="markdownTable">
@@ -6904,7 +6929,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Sep 29 2024 07:10:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 1 2024 06:21:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
