@@ -1,5 +1,14 @@
 var NAVTREEINDEX204 =
 {
+"spektrum__arch_8c.html":[12,0,1,0,0,2,1,4,2],
+"spektrum__arch_8c.html#a58c16366fa7fc51e87cf7c7bbdf54c4a":[12,0,1,0,0,2,1,4,2,1],
+"spektrum__arch_8c.html#a7cddcc569654d438e16b99e54abf6c64":[12,0,1,0,0,2,1,4,2,0],
+"spektrum__arch_8c.html#a810cf91cfd60192ced1dd83f38bc4abc":[12,0,1,0,0,2,1,4,2,4],
+"spektrum__arch_8c.html#af991dac26ce4e2a25ad25045fe86e782":[12,0,1,0,0,2,1,4,2,2],
+"spektrum__arch_8c.html#aff8033ce4ec3eca45caafb45d2ba6760":[12,0,1,0,0,2,1,4,2,3],
+"spektrum__arch_8c_source.html":[12,0,1,0,0,2,1,4,2],
+"spektrum__radio_8h.html":[12,0,1,0,6,56,21],
+"spektrum__radio_8h.html#a0a504ca751f60fabf7900b13916561a6":[12,0,1,0,6,56,21,16],
 "spektrum__radio_8h.html#a2fab1464ab1748edb2a45a08cf7c422a":[12,0,1,0,6,56,21,12],
 "spektrum__radio_8h.html#a393c67e7c336f4e58413e3cb07378511":[12,0,1,0,6,56,21,15],
 "spektrum__radio_8h.html#a5fdc4625435a1756d996da7867bddc18":[12,0,1,0,6,56,21,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX204 =
 "stabilization__adaptive_8c.html#a178cc08a2556c8dae1575679f54fb434":[12,0,1,0,3,1,1,0,34],
 "stabilization__adaptive_8c.html#a17a99d4b8497a414130bab98ce903361":[12,0,1,0,3,1,1,0,48],
 "stabilization__adaptive_8c.html#a184a150e98a139a3e0e5cc6e9bc340a0":[12,0,1,0,3,1,1,0,69],
-"stabilization__adaptive_8c.html#a1a9d01860baaca511072b7a720a975e2":[12,0,1,0,3,1,1,0,0,5],
-"stabilization__adaptive_8c.html#a2264ab6854d89933eea18804b3217cd3":[12,0,1,0,3,1,1,0,57],
-"stabilization__adaptive_8c.html#a240757b5d62f88f7eb1a65bdf477e0b4":[12,0,1,0,3,1,1,0,1],
-"stabilization__adaptive_8c.html#a27446f9f99d35f2d1e8e180ffd9f1f16":[12,0,1,0,3,1,1,0,68],
-"stabilization__adaptive_8c.html#a284af756c7c924a50a135f888b204c47":[12,0,1,0,3,1,1,0,4],
-"stabilization__adaptive_8c.html#a2a6e64591b76914e2b387ccf54aebb08":[12,0,1,0,3,1,1,0,24],
-"stabilization__adaptive_8c.html#a2e320928cc3b0072acf2f55d23061c1b":[12,0,1,0,3,1,1,0,41],
-"stabilization__adaptive_8c.html#a3089af988e859b52e09a747f52da1199":[12,0,1,0,3,1,1,0,60],
-"stabilization__adaptive_8c.html#a32a80a87573b0fdb2faed1546b40ff64":[12,0,1,0,3,1,1,0,52],
-"stabilization__adaptive_8c.html#a32ff0f8ef82c3d882051a3b504cb2f51":[12,0,1,0,3,1,1,0,64]
+"stabilization__adaptive_8c.html#a1a9d01860baaca511072b7a720a975e2":[12,0,1,0,3,1,1,0,0,5]
 };

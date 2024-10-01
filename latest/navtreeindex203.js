@@ -1,5 +1,14 @@
 var NAVTREEINDEX203 =
 {
+"snake__gate__detection_8c.html#a2a7e3319e85fd12b99f5c03652b46333":[12,0,1,0,6,12,34,25],
+"snake__gate__detection_8c.html#a2e27c9ea9d9281096fd4ae3dff59ebcd":[12,0,1,0,6,12,34,35],
+"snake__gate__detection_8c.html#a4b676c1bc0ae93fd3cf0a83e71a485c5":[12,0,1,0,6,12,34,31],
+"snake__gate__detection_8c.html#a4fc05622300f85dd1b71353c16923ca6":[12,0,1,0,6,12,34,8],
+"snake__gate__detection_8c.html#a4ffbd7d116c633fda2c1957ca42cadb9":[12,0,1,0,6,12,34,10],
+"snake__gate__detection_8c.html#a557e23d808a52633032263860c2e41ac":[12,0,1,0,6,12,34,38],
+"snake__gate__detection_8c.html#a579db38318e65b5f71517ec9de5e749d":[12,0,1,0,6,12,34,33],
+"snake__gate__detection_8c.html#a6f4b4ad6fe02036ec21c3ad960c041bd":[12,0,1,0,6,12,34,21],
+"snake__gate__detection_8c.html#a7153b5e7598a025203aa5d9e14e14c10":[12,0,1,0,6,12,34,36],
 "snake__gate__detection_8c.html#a7c57ce6e2713cf42378f4509e80faef1":[12,0,1,0,6,12,34,26],
 "snake__gate__detection_8c.html#a80623b87b2a8a4430c0bb894bb4c709c":[12,0,1,0,6,12,34,3],
 "snake__gate__detection_8c.html#a864922da035b3c31db233b17ccc345d8":[12,0,1,0,6,12,34,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX203 =
 "spektrum_8h.html#aff8033ce4ec3eca45caafb45d2ba6760":[12,0,1,0,6,56,20,10],
 "spektrum_8h.html#structspektrum__sat__t":[12,0,1,0,6,56,20,0],
 "spektrum_8h.html#structspektrum__t":[12,0,1,0,6,56,20,1],
-"spektrum_8h_source.html":[12,0,1,0,6,56,20],
-"spektrum__arch_8c.html":[12,0,1,0,0,2,1,4,2],
-"spektrum__arch_8c.html#a58c16366fa7fc51e87cf7c7bbdf54c4a":[12,0,1,0,0,2,1,4,2,1],
-"spektrum__arch_8c.html#a7cddcc569654d438e16b99e54abf6c64":[12,0,1,0,0,2,1,4,2,0],
-"spektrum__arch_8c.html#a810cf91cfd60192ced1dd83f38bc4abc":[12,0,1,0,0,2,1,4,2,4],
-"spektrum__arch_8c.html#af991dac26ce4e2a25ad25045fe86e782":[12,0,1,0,0,2,1,4,2,2],
-"spektrum__arch_8c.html#aff8033ce4ec3eca45caafb45d2ba6760":[12,0,1,0,0,2,1,4,2,3],
-"spektrum__arch_8c_source.html":[12,0,1,0,0,2,1,4,2],
-"spektrum__radio_8h.html":[12,0,1,0,6,56,21],
-"spektrum__radio_8h.html#a0a504ca751f60fabf7900b13916561a6":[12,0,1,0,6,56,21,16]
+"spektrum_8h_source.html":[12,0,1,0,6,56,20]
 };

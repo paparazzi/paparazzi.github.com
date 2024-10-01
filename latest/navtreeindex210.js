@@ -1,5 +1,14 @@
 var NAVTREEINDEX210 =
 {
+"stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b":[12,0,1,0,0,3,10,27],
+"stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124":[12,0,1,0,0,3,10,44],
+"stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b":[12,0,1,0,0,3,10,16],
+"stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36":[12,0,1,0,0,3,10,17],
+"stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1":[12,0,1,0,0,3,10,14],
+"stm32_2usb__ser__hw_8c.html#ae3001fd8504f8ad30ee40a958da7bf0c":[12,0,1,0,0,3,10,12],
+"stm32_2usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946":[12,0,1,0,0,3,10,21],
+"stm32_2usb__ser__hw_8c.html#ae608f21143f9de6b9d8ffec85681e81f":[12,0,1,0,0,3,10,2],
+"stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84":[12,0,1,0,0,3,10,34],
 "stm32_2usb__ser__hw_8c.html#af34cf0c102eb4cf7bc0df82cd25bf8ad":[12,0,1,0,0,3,10,45],
 "stm32_2usb__ser__hw_8c.html#af5328a6344acb61e9eb9a2797b80d005":[12,0,1,0,0,3,10,30],
 "stm32_2usb__ser__hw_8c.html#af67b401d141ad215f5eb4da16750c14c":[12,0,1,0,0,3,10,43],
@@ -240,14 +249,5 @@ var NAVTREEINDEX210 =
 "switch__uart_8c.html#a401eedc08b81ee7fb028235a4042fb43":[12,0,1,0,6,68,4,1],
 "switch__uart_8c.html#a46df0d91ec178ca0e7d2341856039248":[12,0,1,0,6,68,4,3],
 "switch__uart_8c.html#a745cc51a03d7b005f5435a42fc54f286":[12,0,1,0,6,68,4,5],
-"switch__uart_8c.html#aca6e2644d3a1608bd8e93c13cb80be7c":[12,0,1,0,6,68,4,2],
-"switch__uart_8c.html#af9f61a48346362fb9d62bfc724b03133":[12,0,1,0,6,68,4,0],
-"switch__uart_8c_source.html":[12,0,1,0,6,68,4],
-"switch__uart_8h.html":[12,0,1,0,6,68,5],
-"switch__uart_8h.html#a0eef3721cb0f2b7873e1932bcabf472b":[12,0,1,0,6,68,5,3],
-"switch__uart_8h.html#a35c3e6555bcb3b8a89c1df39e73d03a4":[12,0,1,0,6,68,5,0],
-"switch__uart_8h.html#a401eedc08b81ee7fb028235a4042fb43":[12,0,1,0,6,68,5,1],
-"switch__uart_8h.html#a745cc51a03d7b005f5435a42fc54f286":[12,0,1,0,6,68,5,4],
-"switch__uart_8h.html#aca6e2644d3a1608bd8e93c13cb80be7c":[12,0,1,0,6,68,5,2],
-"switch__uart_8h_source.html":[12,0,1,0,6,68,5]
+"switch__uart_8c.html#aca6e2644d3a1608bd8e93c13cb80be7c":[12,0,1,0,6,68,4,2]
 };
