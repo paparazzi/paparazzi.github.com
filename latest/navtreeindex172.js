@@ -1,5 +1,6 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#AIRSPEED_WIND_ESTIMATOR_EKF":[2,0,184],
 "paparazzi_messages.html#AIR_DATA":[2,0,209],
 "paparazzi_messages.html#AIR_PROX":[2,3,1],
 "paparazzi_messages.html#ALERT_CLASS":[2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#RLFILTER":[2,0,45],
 "paparazzi_messages.html#ROTATING_WING_STATE":[2,0,176],
 "paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,163],
-"paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,50],
-"paparazzi_messages.html#ROTORCRAFT_CMD":[2,0,138]
+"paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,50]
 };

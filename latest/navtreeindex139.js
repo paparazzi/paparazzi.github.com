@@ -1,5 +1,6 @@
 var NAVTREEINDEX139 =
 {
+"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,370,1],
 "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,370,2],
 "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,370,0],
 "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,370,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX139 =
 "module__system_core.html#module_xml__system_core":[1,86,1,0],
 "module__tag_tracking.html":[1,69],
 "module__tag_tracking.html#configuration__tag_tracking":[1,69,1],
-"module__tag_tracking.html#datalink_functions__tag_tracking":[1,69,3],
-"module__tag_tracking.html#functions__tag_tracking":[1,69,2]
+"module__tag_tracking.html#datalink_functions__tag_tracking":[1,69,3]
 };

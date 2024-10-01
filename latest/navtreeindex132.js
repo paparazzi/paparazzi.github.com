@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__actuators_pwm.html":[1,15],
 "module__actuators_pwm.html#module_load_example__actuators_pwm":[1,15,0],
 "module__actuators_pwm.html#module_xml__actuators_pwm":[1,15,0,0],
 "module__actuators_sbus.html":[1,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__baro_scp_i2c.html#module_xml__baro_scp_i2c":[1,403,2,0],
 "module__baro_sim.html":[1,404],
 "module__baro_sim.html#functions__baro_sim":[1,404,1],
-"module__baro_sim.html#module_load_example__baro_sim":[1,404,0],
-"module__baro_sim.html#module_xml__baro_sim":[1,404,1,0]
+"module__baro_sim.html#module_load_example__baro_sim":[1,404,0]
 };

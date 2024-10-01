@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_rover_base.html#functions__nav_rover_base":[1,338,1],
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,338,0],
 "module__nav_rover_base.html#module_xml__nav_rover_base":[1,338,2,0],
 "module__nav_skid_landing.html":[1,339],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,369,2],
 "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,369,0],
 "module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,369,2,0],
-"module__radio_control_superbitrf_rc.html":[1,370],
-"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,370,1]
+"module__radio_control_superbitrf_rc.html":[1,370]
 };

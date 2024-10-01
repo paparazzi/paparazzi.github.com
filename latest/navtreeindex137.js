@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"module__lidar_tfmini.html#functions__lidar_tfmini":[1,252,2],
 "module__lidar_tfmini.html#module_load_example__lidar_tfmini":[1,252,0],
 "module__lidar_tfmini.html#module_xml__lidar_tfmini":[1,252,2,0],
 "module__lidar_tfmini_i2c.html":[1,253],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,337,0],
 "module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,337,2,0],
 "module__nav_rover_base.html":[1,338],
-"module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,338,2],
-"module__nav_rover_base.html#functions__nav_rover_base":[1,338,1]
+"module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,338,2]
 };

@@ -16,6 +16,7 @@ var mavlink_8c =
     [ "mavlink_send_attitude_quaternion", "mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb", null ],
     [ "mavlink_send_autopilot_version", "mavlink_8c.html#a1297c21f1829da1a6e581aa98929e494", null ],
     [ "mavlink_send_battery_status", "mavlink_8c.html#a69b54d7a5d0429f7bcd39568475a598b", null ],
+    [ "mavlink_send_extended_sys_state", "mavlink_8c.html#aa0d593a178a88f863b34f9cb1e60dc87", null ],
     [ "mavlink_send_global_position_int", "mavlink_8c.html#a69b29097db843b873c8b348c837cfd03", null ],
     [ "mavlink_send_gps_global_origin", "mavlink_8c.html#a4371947509e8a4bdaaecfcb382e6a889", null ],
     [ "mavlink_send_gps_raw_int", "mavlink_8c.html#a45bb8314829a986bef34a96d1d19e18a", null ],

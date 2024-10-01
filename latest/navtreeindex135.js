@@ -1,5 +1,6 @@
 var NAVTREEINDEX135 =
 {
+"module__gps_ublox.html":[1,165],
 "module__gps_ublox.html#configuration__gps_ublox":[1,165,1],
 "module__gps_ublox.html#datalink_functions__gps_ublox":[1,165,3],
 "module__gps_ublox.html#functions__gps_ublox":[1,165,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_heater.html#module_load_example__imu_heater":[1,205,0],
 "module__imu_heater.html#module_xml__imu_heater":[1,205,2,0],
 "module__imu_icm42688.html":[1,206],
-"module__imu_icm42688.html#configuration__imu_icm42688":[1,206,1],
-"module__imu_icm42688.html#functions__imu_icm42688":[1,206,2]
+"module__imu_icm42688.html#configuration__imu_icm42688":[1,206,1]
 };

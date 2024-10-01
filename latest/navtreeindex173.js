@@ -1,5 +1,6 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#ROTORCRAFT_CMD":[2,0,138],
 "paparazzi_messages.html#ROTORCRAFT_FP":[2,0,142],
 "paparazzi_messages.html#ROTORCRAFT_FP_MIN":[2,0,204],
 "paparazzi_messages.html#ROTORCRAFT_NAV_STATUS":[2,0,154],
@@ -248,6 +249,5 @@ var NAVTREEINDEX173 =
 "pca9685__i2c_8c.html#ae94011d14a9fef277872b43f92dac970":[12,0,1,0,6,52,0,29],
 "pca9685__i2c_8c.html#ae9a63233195518604d614f097e3722ab":[12,0,1,0,6,52,0,34],
 "pca9685__i2c_8c.html#aeac1c01cccdbbdd40555bfba64ed08d1":[12,0,1,0,6,52,0,11],
-"pca9685__i2c_8c.html#aec8a9df8e9bb1659bbe79e9abad331c2":[12,0,1,0,6,52,0,21],
-"pca9685__i2c_8c.html#aef170f8765cb2f7edbb06af7856d1c3f":[12,0,1,0,6,52,0,0]
+"pca9685__i2c_8c.html#aec8a9df8e9bb1659bbe79e9abad331c2":[12,0,1,0,6,52,0,21]
 };

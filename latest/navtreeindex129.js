@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"mcuconf__h7_8h.html#a52f31c7a5818aefe570bdc913d6d034b":[12,0,1,0,0,0,11,126],
 "mcuconf__h7_8h.html#a5339fe32096faad20bbcf31d2d5b45d1":[12,0,1,0,0,0,11,281],
 "mcuconf__h7_8h.html#a5682aa4fa2c0d025643fda57fad873e7":[12,0,1,0,0,0,11,213],
 "mcuconf__h7_8h.html#a56a0c40fe1260ca2265cc01d42668ca7":[12,0,1,0,0,0,11,301],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "median__filter_8h.html#ad61bfbd8d8c78596232bc97571732570":[12,0,1,0,2,7,20],
 "median__filter_8h.html#structMedianFilter3Float":[12,0,1,0,2,7,3],
 "median__filter_8h.html#structMedianFilter3Int":[12,0,1,0,2,7,1],
-"median__filter_8h.html#structMedianFilterFloat":[12,0,1,0,2,7,2],
-"median__filter_8h.html#structMedianFilterInt":[12,0,1,0,2,7,0]
+"median__filter_8h.html#structMedianFilterFloat":[12,0,1,0,2,7,2]
 };
