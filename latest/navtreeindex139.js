@@ -1,5 +1,12 @@
 var NAVTREEINDEX139 =
 {
+"module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,368,2,0],
+"module__radio_control_spektrum.html":[1,369],
+"module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,369,1],
+"module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,369,2],
+"module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,369,0],
+"module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,369,2,0],
+"module__radio_control_superbitrf_rc.html":[1,370],
 "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,370,1],
 "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,370,2],
 "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,370,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX139 =
 "module__syslink_dl.html#configuration__syslink_dl":[1,502,1],
 "module__syslink_dl.html#functions__syslink_dl":[1,502,2],
 "module__syslink_dl.html#module_load_example__syslink_dl":[1,502,0],
-"module__syslink_dl.html#module_xml__syslink_dl":[1,502,2,0],
-"module__system_core.html":[1,86],
-"module__system_core.html#functions__system_core":[1,86,1],
-"module__system_core.html#module_load_example__system_core":[1,86,0],
-"module__system_core.html#module_xml__system_core":[1,86,1,0],
-"module__tag_tracking.html":[1,69],
-"module__tag_tracking.html#configuration__tag_tracking":[1,69,1],
-"module__tag_tracking.html#datalink_functions__tag_tracking":[1,69,3]
+"module__syslink_dl.html#module_xml__syslink_dl":[1,502,2,0]
 };

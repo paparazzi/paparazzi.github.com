@@ -1,5 +1,12 @@
 var NAVTREEINDEX134 =
 {
+"module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,136,2,0],
+"module__digital_cam_shoot_rc.html":[1,137],
+"module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,137,1],
+"module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc":[1,137,2],
+"module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,137,0],
+"module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc":[1,137,2,0],
+"module__digital_cam_uart.html":[1,138],
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,138,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,138,0],
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,138,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX134 =
 "module__gps_sim.html#module_xml__gps_sim":[1,162,1,0],
 "module__gps_sirf.html":[1,163],
 "module__gps_sirf.html#configuration__gps_sirf":[1,163,1],
-"module__gps_sirf.html#functions__gps_sirf":[1,163,2],
-"module__gps_sirf.html#module_load_example__gps_sirf":[1,163,0],
-"module__gps_sirf.html#module_xml__gps_sirf":[1,163,2,0],
-"module__gps_skytraq.html":[1,164],
-"module__gps_skytraq.html#configuration__gps_skytraq":[1,164,1],
-"module__gps_skytraq.html#functions__gps_skytraq":[1,164,2],
-"module__gps_skytraq.html#module_load_example__gps_skytraq":[1,164,0],
-"module__gps_skytraq.html#module_xml__gps_skytraq":[1,164,2,0]
+"module__gps_sirf.html#functions__gps_sirf":[1,163,2]
 };

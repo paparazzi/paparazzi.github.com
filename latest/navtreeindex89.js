@@ -1,5 +1,12 @@
 var NAVTREEINDEX89 =
 {
+"imu__chimu_8h.html#a04e90c9524d501cf0148a5e2b1652f3b":[12,0,1,0,6,37,5,37],
+"imu__chimu_8h.html#a07b123ab9c6f47d0268b036e1e800355":[12,0,1,0,6,37,5,1,2],
+"imu__chimu_8h.html#a08dd555ba493bbd9d289c3f3a67ebf87":[12,0,1,0,6,37,5,36],
+"imu__chimu_8h.html#a0a62dec0f8bc2b7633ba0699fac00510":[12,0,1,0,6,37,5,4,3],
+"imu__chimu_8h.html#a0d74fd7c8956a8be0cd2379d12fb1066":[12,0,1,0,6,37,5,31],
+"imu__chimu_8h.html#a13f981baccf5efff5a84165af3e853da":[12,0,1,0,6,37,5,5,7],
+"imu__chimu_8h.html#a14982b7c3b220a15d0211b720a22f9e5":[12,0,1,0,6,37,5,5,13],
 "imu__chimu_8h.html#a16117144980855bff670f5b42958bd1b":[12,0,1,0,6,37,5,5,9],
 "imu__chimu_8h.html#a18b09515aee60d52a79df0c4b05d934d":[12,0,1,0,6,37,5,49],
 "imu__chimu_8h.html#a1acae8bf88c074ec79798e4384ba75e7":[12,0,1,0,6,37,5,4,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX89 =
 "imu__mpu9250_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,31,0],
 "imu__mpu9250_8h_source.html":[12,0,1,0,6,36,31],
 "imu__mpu9250__i2c_8c.html":[12,0,1,0,6,36,32],
-"imu__mpu9250__i2c_8c.html#a0c0ada82bd9bfa782cc3a9691240b025":[12,0,1,0,6,36,32,4],
-"imu__mpu9250__i2c_8c.html#a0ecc59c6c3586c98cb7a7e9d88142237":[12,0,1,0,6,36,32,7],
-"imu__mpu9250__i2c_8c.html#a17a732f1b13f3b91998a31687935d4ec":[12,0,1,0,6,36,32,1],
-"imu__mpu9250__i2c_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,32,12],
-"imu__mpu9250__i2c_8c.html#a52a80f596bb94890641d5eb3194d9d4c":[12,0,1,0,6,36,32,8],
-"imu__mpu9250__i2c_8c.html#a5bebb3b96b3829735bd1f0ebea0d278a":[12,0,1,0,6,36,32,0],
-"imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,36,32,11],
-"imu__mpu9250__i2c_8c.html#aba20ea126e07ee2e23c1bea054869cae":[12,0,1,0,6,36,32,9]
+"imu__mpu9250__i2c_8c.html#a0c0ada82bd9bfa782cc3a9691240b025":[12,0,1,0,6,36,32,4]
 };

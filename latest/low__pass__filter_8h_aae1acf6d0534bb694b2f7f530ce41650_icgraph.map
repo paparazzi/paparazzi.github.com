@@ -1,29 +1,30 @@
 <map id="update_butterworth_2_low_pass" name="update_butterworth_2_low_pass">
-<area shape="rect" id="node1" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="877,385,1028,427"/>
+<area shape="rect" id="node1" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="877,421,1028,463"/>
 <area shape="rect" id="node2" href="$adaptive__notch__filter_8h.html#a3ad0de765c2e3fc304911f8297ad9f21" title="Update a second order adaptive notch filter." alt="" coords="657,5,815,47"/>
 <area shape="rect" id="node3" href="$airspeed__uavcan_8c.html#a0148a8aa0bf9dfd7f55e8fe27ea74347" title=" " alt="" coords="659,71,813,98"/>
 <area shape="rect" id="node5" href="$eff__scheduling__rotwing__V2_8c.html#a8beaabd2283365e94e7c5c9c0e05489f" title=" " alt="" coords="650,123,822,164"/>
 <area shape="rect" id="node7" href="$ekf__aw__wrapper_8c.html#a4409a4d1d990ac89d4adfa292e0f1682" title=" " alt="" coords="651,189,821,215"/>
 <area shape="rect" id="node8" href="$stabilization__indi__simple_8c.html#ac0d13e690fd500a3c737add9bf8a8574" title="Update butterworth filter for p, q and r of a FloatRates struct." alt="" coords="696,239,776,266"/>
-<area shape="rect" id="node12" href="$guidance__indi_8c.html#a777bf559723c4e1ba1e9ae8d51572fff" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="643,291,829,332"/>
-<area shape="rect" id="node13" href="$guidance__indi__hybrid__quadplane_8c.html#a1736298c0e0c9e6c9db4ee211cd11b9a" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="643,356,829,397"/>
-<area shape="rect" id="node14" href="$imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="665,422,807,449"/>
-<area shape="rect" id="node16" href="$imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="668,473,804,499"/>
-<area shape="rect" id="node17" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="675,523,797,550"/>
-<area shape="rect" id="node18" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="664,574,808,601"/>
-<area shape="rect" id="node19" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="645,625,827,667"/>
-<area shape="rect" id="node23" href="$airspeed__sdp3x_8c.html#ad9a54cedd689655b7da28d76dbf60ac5" title=" " alt="" coords="683,691,789,718"/>
-<area shape="rect" id="node24" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="669,743,803,784"/>
+<area shape="rect" id="node12" href="$ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d" title="Filter the vertical acceleration with a low cutoff frequency." alt="" coords="660,291,812,332"/>
+<area shape="rect" id="node13" href="$guidance__indi_8c.html#a777bf559723c4e1ba1e9ae8d51572fff" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="643,356,829,397"/>
+<area shape="rect" id="node14" href="$guidance__indi__hybrid__quadplane_8c.html#a1736298c0e0c9e6c9db4ee211cd11b9a" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="643,421,829,463"/>
+<area shape="rect" id="node15" href="$imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="665,487,807,514"/>
+<area shape="rect" id="node17" href="$imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="668,538,804,565"/>
+<area shape="rect" id="node18" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="675,589,797,615"/>
+<area shape="rect" id="node19" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="664,639,808,666"/>
+<area shape="rect" id="node20" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="645,691,827,732"/>
+<area shape="rect" id="node24" href="$airspeed__sdp3x_8c.html#ad9a54cedd689655b7da28d76dbf60ac5" title=" " alt="" coords="683,757,789,783"/>
+<area shape="rect" id="node25" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="669,808,803,849"/>
 <area shape="rect" id="node4" href="$airspeed__uavcan_8c.html#add8fef6742f9898bfb3c6ea203df890f" title=" " alt="" coords="429,71,589,98"/>
 <area shape="rect" id="node6" href="$eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="423,123,595,164"/>
 <area shape="rect" id="node9" href="$stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca" title="This is a Least Mean Squares adaptive filter It estimates the actuator effectiveness online,..." alt="" coords="447,214,570,241"/>
 <area shape="rect" id="node10" href="$stabilization__indi__simple_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title="Does the INDI calculations." alt="" coords="214,232,347,273"/>
 <area shape="rect" id="node11" href="$stabilization__indi__simple_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title="runs stabilization indi" alt="" coords="5,232,139,273"/>
-<area shape="rect" id="node15" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="471,447,546,474"/>
-<area shape="rect" id="node20" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="440,633,577,659"/>
-<area shape="rect" id="node21" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="209,607,352,634"/>
-<area shape="rect" id="node22" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="187,658,375,685"/>
-<area shape="rect" id="node25" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="442,709,575,751"/>
-<area shape="rect" id="node27" href="$stabilization__rate__indi_8c.html#a407235bde22206e1a5dac29a60eb2cfb" title=" " alt="" coords="441,775,576,816"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="187,717,375,743"/>
+<area shape="rect" id="node16" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="471,513,546,539"/>
+<area shape="rect" id="node21" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="440,698,577,725"/>
+<area shape="rect" id="node22" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="209,673,352,699"/>
+<area shape="rect" id="node23" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="187,723,375,750"/>
+<area shape="rect" id="node26" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="442,775,575,816"/>
+<area shape="rect" id="node28" href="$stabilization__rate__indi_8c.html#a407235bde22206e1a5dac29a60eb2cfb" title=" " alt="" coords="441,840,576,881"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="187,782,375,809"/>
 </map>

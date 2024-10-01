@@ -1,5 +1,12 @@
 var NAVTREEINDEX65 =
 {
+"group__chprintf.html#unionsynchronous__print__arg__t_8____unnamed297____":[9,10,1],
+"group__common__inttypes.html":[9,1],
+"group__common__inttypes.html#ga350c6fc928e3bdc6c6486268ac8fb269":[12,0,1,0,6,29,0,0,3],
+"group__common__inttypes.html#ga350c6fc928e3bdc6c6486268ac8fb269":[9,1,2],
+"group__common__inttypes.html#ga3f7e2bcbb0b4c338f3c4f6c937cd4234":[12,0,1,0,6,29,0,0,7],
+"group__common__inttypes.html#ga3f7e2bcbb0b4c338f3c4f6c937cd4234":[9,1,6],
+"group__common__inttypes.html#ga92c50087ca0e64fa93fc59402c55f8ca":[12,0,1,0,6,29,0,0,8],
 "group__common__inttypes.html#ga92c50087ca0e64fa93fc59402c55f8ca":[9,1,7],
 "group__common__inttypes.html#ga9e382f207c65ca13ab4ae98363aeda80":[12,0,1,0,6,29,0,0,4],
 "group__common__inttypes.html#ga9e382f207c65ca13ab4ae98363aeda80":[9,1,3],
@@ -20,8 +27,8 @@ var NAVTREEINDEX65 =
 "group__config.html#ga03c17b48d4f0444046d41102acb3a54b":[9,5,28],
 "group__config.html#ga04e4e037498950df8bdef88bdd199494":[12,0,1,0,0,0,3,59],
 "group__config.html#ga04e4e037498950df8bdef88bdd199494":[9,5,59],
-"group__config.html#ga06cdb9f25ea2f420b632ba9c19dd4d2d":[12,0,1,0,0,0,3,35],
 "group__config.html#ga06cdb9f25ea2f420b632ba9c19dd4d2d":[9,5,35],
+"group__config.html#ga06cdb9f25ea2f420b632ba9c19dd4d2d":[12,0,1,0,0,0,3,35],
 "group__config.html#ga0968280d9bbbcda48177d14d77058737":[12,0,1,0,0,0,3,44],
 "group__config.html#ga0968280d9bbbcda48177d14d77058737":[9,5,44],
 "group__config.html#ga10585bbb78d4b11d82814f38181e5a3a":[12,0,1,0,0,0,3,50],
@@ -242,12 +249,5 @@ var NAVTREEINDEX65 =
 "group__i2c.html#gaf94ae876d37b80660572b725fffa7b0b":[12,0,1,0,5,6,17],
 "group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6":[9,0,0,22],
 "group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6":[12,0,1,0,5,5,6],
-"group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6":[12,0,1,0,5,6,19],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca02e1f3f2236638eb8744e0bbdbd2eca8":[9,0,0,10,7],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca02e1f3f2236638eb8744e0bbdbd2eca8":[12,0,1,0,5,6,7,7],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca2cf1ba6e816d830423dc780397d7b890":[9,0,0,10,3],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca2cf1ba6e816d830423dc780397d7b890":[12,0,1,0,5,6,7,3],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca755d669413869602fb4d468ab90700f3":[9,0,0,10,10],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca755d669413869602fb4d468ab90700f3":[12,0,1,0,5,6,7,10],
-"group__i2c.html#gga9bec282875cd65e00172e875ef785beca7ba21258d186209c66f9813bcd91011f":[9,0,0,10,9]
+"group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6":[12,0,1,0,5,6,19]
 };

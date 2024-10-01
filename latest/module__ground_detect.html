@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Paparazzi UAS: ground_detect_sensor module</title>
+<title>Paparazzi UAS: ground_detect module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('module__ground_detect_sensor.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('module__ground_detect.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,50 +85,56 @@ $(document).ready(function(){initNavTree('module__ground_detect_sensor.html','')
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">ground_detect_sensor module </div>  </div>
+<div class="title">ground_detect module </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Ground detection module to detect ground</b></p>
 <p>No detailed description...</p>
-<h1><a class="anchor" id="module_load_example__ground_detect_sensor"></a>
+<h1><a class="anchor" id="module_load_example__ground_detect"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect_sensor&quot;</span>&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_GROUND_DETECT_INDI_THRUST&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GROUND_DETECT_SENSOR_SPECIFIC_THRUST_THRESHOLD&quot; value=&quot;-5.0&quot; /&gt;\n\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GROUND_DETECT_SPECIFIC_THRUST_THRESHOLD&quot; value=&quot;-5.0&quot; /&gt;\n\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_GROUND_DETECT_AGL_DIST&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GROUND_DETECT_SENSOR_AGL_MIN_VALUE&quot; value=&quot;0.1&quot; /&gt;\n    \n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GROUND_DETECT_SENSOR_COUNTER_TRIGGER&quot; value=&quot;10&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GROUND_DETECT_AGL_MIN_VALUE&quot; value=&quot;0.1&quot; /&gt;\n\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GROUND_DETECT_COUNTER_TRIGGER&quot; value=&quot;10&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="configuration__ground_detect_sensor"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__ground_detect"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
 <li><b>name:</b> <code>USE_GROUND_DETECT_INDI_THRUST</code> <b>value:</b> <em>1</em> <br  />
  Description: Use INDI thrust less than 50 percent as detection</li>
-<li><b>name:</b> <code>GROUND_DETECT_SENSOR_SPECIFIC_THRUST_THRESHOLD</code> <b>value:</b> <em>-5.0</em> <br  />
+<li><b>name:</b> <code>GROUND_DETECT_SPECIFIC_THRUST_THRESHOLD</code> <b>value:</b> <em>-5.0</em> <br  />
  Description: [m/s2] positive down</li>
 <li><b>name:</b> <code>USE_GROUND_DETECT_AGL_DIST</code> <b>value:</b> <em>0</em> <br  />
  Description: Use agl_dist_filtered</li>
-<li><b>name:</b> <code>GROUND_DETECT_SENSOR_AGL_MIN_VALUE</code> <b>value:</b> <em>0.1</em> <br  />
+<li><b>name:</b> <code>GROUND_DETECT_AGL_MIN_VALUE</code> <b>value:</b> <em>0.1</em> <br  />
  Description: AGL value low enough to be used as ground detection [m]</li>
-<li><b>name:</b> <code>GROUND_DETECT_SENSOR_COUNTER_TRIGGER</code> <b>value:</b> <em>10</em> <br  />
+<li><b>name:</b> <code>GROUND_DETECT_COUNTER_TRIGGER</code> <b>value:</b> <em>10</em> <br  />
  Description: Number of times a trigger must be valid to accept ground detection.</li>
 </ul>
-<h1><a class="anchor" id="functions__ground_detect_sensor"></a>
+<h1><a class="anchor" id="functions__ground_detect"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="ground__detect__sensor_8c.html#a81943488e5ce5c2e8cc3b052d3b28e94">ground_detect_sensor_init()</a></li>
+<li><a class="el" href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">ground_detect_init()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="ground__detect__sensor_8c.html#a886d9c744f1a2be4899430145bdb4ec8">ground_detect_sensor_periodic()</a><ul>
+<li><a class="el" href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">ground_detect_periodic()</a><ul>
 <li>Frequency in Hz: <em>50</em> </li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
+<li><a class="el" href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d" title="Filter the vertical acceleration with a low cutoff frequency.">ground_detect_filter_accel()</a><ul>
+<li>Running at maximum module frequency.</li>
 <li>Autorun: <em>LOCK</em> <br  />
  Periodic function automatically starts after init and can't be stopped.</li>
 </ul>
@@ -140,36 +146,41 @@ Files</h1>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="ground__detect__sensor_8h.html">ground_detect_sensor.h</a></li>
+<li><a class="el" href="ground__detect_8h.html">ground_detect.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="ground__detect__sensor_8c.html">modules/nav/ground_detect_sensor.c</a></li>
+<li><a class="el" href="ground__detect_8c.html">modules/nav/ground_detect.c</a></li>
 </ul>
-<h2><a class="anchor" id="module_xml__ground_detect_sensor"></a>
-Raw ground_detect_sensor.xml file:</h2>
+<h2><a class="anchor" id="module_xml__ground_detect"></a>
+Raw ground_detect.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">module</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;module.dtd&quot;</span>&gt;</div>
-<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect_sensor&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;nav&quot;</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;nav&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">Ground</span> <span class="keyword">detection</span> <span class="keyword">module</span> <span class="keyword">to</span> <span class="keyword">detect</span> <span class="keyword">ground</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_GROUND_DETECT_INDI_THRUST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Use INDI thrust less than 50 percent as detection&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_DETECT_SENSOR_SPECIFIC_THRUST_THRESHOLD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;-5.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;[m/s2] positive down&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_DETECT_SPECIFIC_THRUST_THRESHOLD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;-5.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;[m/s2] positive down&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_GROUND_DETECT_AGL_DIST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Use agl_dist_filtered&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_DETECT_SENSOR_AGL_MIN_VALUE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AGL value low enough to be used as ground detection [m]&quot;</span>/&gt;</div>
-<div class="line">    </div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_DETECT_SENSOR_COUNTER_TRIGGER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Number of times a trigger must be valid to accept ground detection.&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_DETECT_AGL_MIN_VALUE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AGL value low enough to be used as ground detection [m]&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_DETECT_COUNTER_TRIGGER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Number of times a trigger must be valid to accept ground detection.&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect_sensor.h&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ground_detect_sensor_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ground_detect_sensor_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;50&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ground_detect_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ground_detect_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;50&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ground_detect_filter_accel()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect_sensor.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ground_detect.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;512&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_GROUND_DETECT_INDI_THRUST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART0&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INDI_OUTPUTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INDI_NUM_ACT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
@@ -182,7 +193,7 @@ Raw ground_detect_sensor.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Oct 1 2024 09:32:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 1 2024 10:59:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

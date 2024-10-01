@@ -1,5 +1,12 @@
 var NAVTREEINDEX80 =
 {
+"hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65":[12,0,1,0,0,0,0,6,17,2],
+"hal__stm32__dma_8h.html#a7dc5ac969f764c9b0178d51e2c93c50b":[12,0,1,0,0,0,0,6,1,4],
+"hal__stm32__dma_8h.html#a8133d4f34ac8f8b977500fbce56f9fb3":[12,0,1,0,0,0,0,6,0,4],
+"hal__stm32__dma_8h.html#a853f47fc596886119b818dbc674864ea":[12,0,1,0,0,0,0,6,0,11],
+"hal__stm32__dma_8h.html#a894cb2cd4c2860565a1709d0531c1a45":[12,0,1,0,0,0,0,6,24],
+"hal__stm32__dma_8h.html#a8b82a5dd975f854d1492dc269940b533":[12,0,1,0,0,0,0,6,0,9],
+"hal__stm32__dma_8h.html#a8f430e28139985cf70ecc9033e236474":[12,0,1,0,0,0,0,6,8],
 "hal__stm32__dma_8h.html#a9219d807ef245446ffc9a430d742d976":[12,0,1,0,0,0,0,6,41],
 "hal__stm32__dma_8h.html#a951186f351c4c543b5b79dec5a64559f":[12,0,1,0,0,0,0,6,11],
 "hal__stm32__dma_8h.html#a99f2edb78afaf70f082854b29ae50666":[12,0,1,0,0,0,0,6,1,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX80 =
 "high__speed__logger__spi__link_8c.html#a38bd10864e67fa36fe67d772bdec2c9e":[12,0,1,0,6,42,7,2],
 "high__speed__logger__spi__link_8c.html#a5415a1e7a1b569b44b00d72321bbb165":[12,0,1,0,6,42,7,1],
 "high__speed__logger__spi__link_8c.html#a5f71f68924d08e716c4a4ad4c5f79b5d":[12,0,1,0,6,42,7,3],
-"high__speed__logger__spi__link_8c.html#a6d864b0871704b93acb09da317ecee9f":[12,0,1,0,6,42,7,7],
-"high__speed__logger__spi__link_8c.html#ab1ebc903cd5df96b984a7016f84e705f":[12,0,1,0,6,42,7,0],
-"high__speed__logger__spi__link_8c.html#ad1b0d1b2e9768d9374bf9f02b3ae3724":[12,0,1,0,6,42,7,8],
-"high__speed__logger__spi__link_8c_source.html":[12,0,1,0,6,42,7],
-"high__speed__logger__spi__link_8h.html":[12,0,1,0,6,42,8],
-"high__speed__logger__spi__link_8h.html#a080057cb37ed72696b4ce26738850f47":[12,0,1,0,6,42,8,0,12],
-"high__speed__logger__spi__link_8h.html#a10b837de87b5c91442369cefb1b9da9c":[12,0,1,0,6,42,8,0,9],
-"high__speed__logger__spi__link_8h.html#a21031472bd33dd0491a3df8c065d2507":[12,0,1,0,6,42,8,0,8]
+"high__speed__logger__spi__link_8c.html#a6d864b0871704b93acb09da317ecee9f":[12,0,1,0,6,42,7,7]
 };

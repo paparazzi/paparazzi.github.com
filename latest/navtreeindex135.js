@@ -1,5 +1,12 @@
 var NAVTREEINDEX135 =
 {
+"module__gps_sirf.html#module_load_example__gps_sirf":[1,163,0],
+"module__gps_sirf.html#module_xml__gps_sirf":[1,163,2,0],
+"module__gps_skytraq.html":[1,164],
+"module__gps_skytraq.html#configuration__gps_skytraq":[1,164,1],
+"module__gps_skytraq.html#functions__gps_skytraq":[1,164,2],
+"module__gps_skytraq.html#module_load_example__gps_skytraq":[1,164,0],
+"module__gps_skytraq.html#module_xml__gps_skytraq":[1,164,2,0],
 "module__gps_ublox.html":[1,165],
 "module__gps_ublox.html#configuration__gps_ublox":[1,165,1],
 "module__gps_ublox.html#datalink_functions__gps_ublox":[1,165,3],
@@ -21,11 +28,11 @@ var NAVTREEINDEX135 =
 "module__gps_udp.html#functions__gps_udp":[1,168,2],
 "module__gps_udp.html#module_load_example__gps_udp":[1,168,0],
 "module__gps_udp.html#module_xml__gps_udp":[1,168,2,0],
-"module__ground_detect_sensor.html":[1,318],
-"module__ground_detect_sensor.html#configuration__ground_detect_sensor":[1,318,1],
-"module__ground_detect_sensor.html#functions__ground_detect_sensor":[1,318,2],
-"module__ground_detect_sensor.html#module_load_example__ground_detect_sensor":[1,318,0],
-"module__ground_detect_sensor.html#module_xml__ground_detect_sensor":[1,318,2,0],
+"module__ground_detect.html":[1,318],
+"module__ground_detect.html#configuration__ground_detect":[1,318,1],
+"module__ground_detect.html#functions__ground_detect":[1,318,2],
+"module__ground_detect.html#module_load_example__ground_detect":[1,318,0],
+"module__ground_detect.html#module_xml__ground_detect":[1,318,2,0],
 "module__gsm.html":[1,474],
 "module__gsm.html#functions__gsm":[1,474,1],
 "module__gsm.html#module_load_example__gsm":[1,474,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_disco.html#module_xml__imu_disco":[1,203,2,0],
 "module__imu_elle0.html":[1,204],
 "module__imu_elle0.html#module_load_example__imu_elle0":[1,204,0],
-"module__imu_elle0.html#module_xml__imu_elle0":[1,204,0,0],
-"module__imu_heater.html":[1,205],
-"module__imu_heater.html#configuration__imu_heater":[1,205,1],
-"module__imu_heater.html#functions__imu_heater":[1,205,2],
-"module__imu_heater.html#module_load_example__imu_heater":[1,205,0],
-"module__imu_heater.html#module_xml__imu_heater":[1,205,2,0],
-"module__imu_icm42688.html":[1,206],
-"module__imu_icm42688.html#configuration__imu_icm42688":[1,206,1]
+"module__imu_elle0.html#module_xml__imu_elle0":[1,204,0,0]
 };

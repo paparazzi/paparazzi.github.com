@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Paparazzi UAS: sw/airborne/modules/nav/ground_detect_sensor.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/nav/ground_detect.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('ground__detect__sensor_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('ground__detect_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,10 +85,10 @@ $(document).ready(function(){initNavTree('ground__detect__sensor_8h_source.html'
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ground_detect_sensor.h</div>  </div>
+<div class="title">ground_detect.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="ground__detect__sensor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="ground__detect_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2023 Dennis van Wijngaarden &lt;D.C.vanWijngaarden@tudelft.nl&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This file is part of paparazzi</span></div>
@@ -108,28 +108,34 @@ $(document).ready(function(){initNavTree('ground__detect__sensor_8h_source.html'
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef GROUND_DETECT_SENSOR_H</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define GROUND_DETECT_SENSOR_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef GROUND_DETECT_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define GROUND_DETECT_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ground__detect__sensor_8h.html#a81943488e5ce5c2e8cc3b052d3b28e94">ground_detect_sensor_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ground__detect__sensor_8h.html#a886d9c744f1a2be4899430145bdb4ec8">ground_detect_sensor_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ground__detect_8h.html#ae126960bb71d572903476eb005810563">ground_detect_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ground__detect_8h.html#aaf88d7ae62ae8e21f41792485585bcab">ground_detect_periodic</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="ground__detect__sensor_8h.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="ground__detect_8h.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GROUND_DETECT_SENSOR_H</span></div>
-<div class="ttc" id="aground__detect__sensor_8h_html_a81943488e5ce5c2e8cc3b052d3b28e94"><div class="ttname"><a href="ground__detect__sensor_8h.html#a81943488e5ce5c2e8cc3b052d3b28e94">ground_detect_sensor_init</a></div><div class="ttdeci">void ground_detect_sensor_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect__sensor_8c_source.html#l00053">ground_detect_sensor.c:53</a></div></div>
-<div class="ttc" id="aground__detect__sensor_8h_html_a886d9c744f1a2be4899430145bdb4ec8"><div class="ttname"><a href="ground__detect__sensor_8h.html#a886d9c744f1a2be4899430145bdb4ec8">ground_detect_sensor_periodic</a></div><div class="ttdeci">void ground_detect_sensor_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor.c:62</a></div></div>
-<div class="ttc" id="aground__detect__sensor_8h_html_a8878e5a02ad504f37f53d03557f8bd0a"><div class="ttname"><a href="ground__detect__sensor_8h.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a></div><div class="ttdeci">bool ground_detect(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect__sensor_8c_source.html#l00058">ground_detect_sensor.c:58</a></div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ground__detect_8h.html#a1644979ae47115c76c97cf2d5793e71d">ground_detect_filter_accel</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="ground__detect_8h.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GROUND_DETECT_H</span></div>
+<div class="ttc" id="aground__detect_8h_html_a1644979ae47115c76c97cf2d5793e71d"><div class="ttname"><a href="ground__detect_8h.html#a1644979ae47115c76c97cf2d5793e71d">ground_detect_filter_accel</a></div><div class="ttdeci">void ground_detect_filter_accel(void)</div><div class="ttdoc">Filter the vertical acceleration with a low cutoff frequency.</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00148">ground_detect.c:148</a></div></div>
+<div class="ttc" id="aground__detect_8h_html_a3d55aa41d11d2ee42e7e9b55fe4070b5"><div class="ttname"><a href="ground__detect_8h.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a></div><div class="ttdeci">bool disarm_on_not_in_flight</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00054">ground_detect.c:54</a></div></div>
+<div class="ttc" id="aground__detect_8h_html_a8878e5a02ad504f37f53d03557f8bd0a"><div class="ttname"><a href="ground__detect_8h.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a></div><div class="ttdeci">bool ground_detect(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00068">ground_detect.c:68</a></div></div>
+<div class="ttc" id="aground__detect_8h_html_aaf88d7ae62ae8e21f41792485585bcab"><div class="ttname"><a href="ground__detect_8h.html#aaf88d7ae62ae8e21f41792485585bcab">ground_detect_periodic</a></div><div class="ttdeci">void ground_detect_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00079">ground_detect.c:79</a></div></div>
+<div class="ttc" id="aground__detect_8h_html_ae126960bb71d572903476eb005810563"><div class="ttname"><a href="ground__detect_8h.html#ae126960bb71d572903476eb005810563">ground_detect_init</a></div><div class="ttdeci">void ground_detect_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00061">ground_detect.c:61</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="ground__detect__sensor_8h.html">ground_detect_sensor.h</a></li>
-    <li class="footer">Generated on Tue Oct 1 2024 09:31:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="ground__detect_8h.html">ground_detect.h</a></li>
+    <li class="footer">Generated on Tue Oct 1 2024 10:59:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

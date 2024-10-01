@@ -1,5 +1,12 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#AHRS_QUAT_INT":[2,0,152],
+"paparazzi_messages.html#AHRS_REF_QUAT":[2,0,164],
+"paparazzi_messages.html#AIRCRAFTS":[2,2,2],
+"paparazzi_messages.html#AIRCRAFTS_REQ":[2,2,3],
+"paparazzi_messages.html#AIRCRAFT_DIE":[2,2,1],
+"paparazzi_messages.html#AIRSPEED":[2,0,50],
+"paparazzi_messages.html#AIRSPEED_RAW":[2,0,133],
 "paparazzi_messages.html#AIRSPEED_WIND_ESTIMATOR_EKF":[2,0,184],
 "paparazzi_messages.html#AIR_DATA":[2,0,209],
 "paparazzi_messages.html#AIR_PROX":[2,3,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#PPRZ_MODE":[2,0,9],
 "paparazzi_messages.html#RANGEFINDER":[2,0,26],
 "paparazzi_messages.html#RATE_LOOP":[2,0,131],
-"paparazzi_messages.html#RAW_DATALINK":[2,2,27],
-"paparazzi_messages.html#RC":[2,0,96],
-"paparazzi_messages.html#RC_UP":[2,1,42],
-"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,35],
-"paparazzi_messages.html#RLFILTER":[2,0,45],
-"paparazzi_messages.html#ROTATING_WING_STATE":[2,0,176],
-"paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,163],
-"paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,50]
+"paparazzi_messages.html#RAW_DATALINK":[2,2,27]
 };

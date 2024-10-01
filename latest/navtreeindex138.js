@@ -1,5 +1,12 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_rotorcraft.html":[1,337],
+"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,337,2],
+"module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,337,1],
+"module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,337,0],
+"module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,337,2,0],
+"module__nav_rover_base.html":[1,338],
+"module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,338,2],
 "module__nav_rover_base.html#functions__nav_rover_base":[1,338,1],
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,338,0],
 "module__nav_rover_base.html#module_xml__nav_rover_base":[1,338,2,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX138 =
 "module__radio_control_sbus_dual.html":[1,368],
 "module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual":[1,368,1],
 "module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual":[1,368,2],
-"module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,368,0],
-"module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,368,2,0],
-"module__radio_control_spektrum.html":[1,369],
-"module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,369,1],
-"module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,369,2],
-"module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,369,0],
-"module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,369,2,0],
-"module__radio_control_superbitrf_rc.html":[1,370]
+"module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,368,0]
 };

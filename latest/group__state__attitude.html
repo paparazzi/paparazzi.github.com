@@ -482,7 +482,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="state_8h_source.html#l00368">State::ned_to_body_orientation</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cv__target__localization_8c_source.html#l00133">detection_cb()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l01176">ekf_run()</a>, <a class="el" href="ins__flow_8c_source.html#l01493">gps_cb()</a>, <a class="el" href="nav__catapult_8c_source.html#l00102">nav_catapult_highrate_module()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00417">process_data()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00230">unwrap_LUT()</a>, <a class="el" href="tag__tracking_8c_source.html#l00250">update_tag_position()</a>, <a class="el" href="wind__estimation__quadrotor_8c_source.html#l00133">wind_estimation_quadrotor_periodic()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00292">wind_estimator_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cv__target__localization_8c_source.html#l00133">detection_cb()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l01176">ekf_run()</a>, <a class="el" href="ins__flow_8c_source.html#l01493">gps_cb()</a>, <a class="el" href="ground__detect_8c_source.html#l00079">ground_detect_periodic()</a>, <a class="el" href="nav__catapult_8c_source.html#l00102">nav_catapult_highrate_module()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00417">process_data()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00230">unwrap_LUT()</a>, <a class="el" href="tag__tracking_8c_source.html#l00250">update_tag_position()</a>, <a class="el" href="wind__estimation__quadrotor_8c_source.html#l00133">wind_estimation_quadrotor_periodic()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00292">wind_estimator_periodic()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -503,27 +503,28 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__state__attitude_ga6eb4f715759518e5703890eca116ce8d_icgraph.png" border="0" usemap="#agroup__state__attitude_ga6eb4f715759518e5703890eca116ce8d_icgraph" alt=""/></div>
 <map name="agroup__state__attitude_ga6eb4f715759518e5703890eca116ce8d_icgraph" id="agroup__state__attitude_ga6eb4f715759518e5703890eca116ce8d_icgraph">
-<area shape="rect" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="675,249,872,276"/>
+<area shape="rect" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="675,275,872,301"/>
 <area shape="rect" href="cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="474,5,579,32"/>
 <area shape="rect" href="ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="491,56,562,83"/>
 <area shape="rect" href="ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="493,107,560,133"/>
-<area shape="rect" href="nav__catapult_8c.html#afc9cb27f8b568c7117d4fc7bfd09afbc" title=" " alt="" coords="443,158,610,199"/>
-<area shape="rect" href="dw1000__arduino_8c.html#acac53dcc1b2e1d953c1642b3b15afe4c" title=" " alt="" coords="473,275,581,301"/>
-<area shape="rect" href="ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="470,224,583,251"/>
-<area shape="rect" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title=" " alt="" coords="475,325,578,352"/>
-<area shape="rect" href="tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="449,376,604,403"/>
-<area shape="rect" href="wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c" title=" " alt="" coords="427,427,627,469"/>
-<area shape="rect" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="435,493,618,520"/>
+<area shape="rect" href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8" title=" " alt="" coords="439,157,614,184"/>
+<area shape="rect" href="nav__catapult_8c.html#afc9cb27f8b568c7117d4fc7bfd09afbc" title=" " alt="" coords="443,209,610,250"/>
+<area shape="rect" href="dw1000__arduino_8c.html#acac53dcc1b2e1d953c1642b3b15afe4c" title=" " alt="" coords="473,325,581,352"/>
+<area shape="rect" href="ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="470,275,583,301"/>
+<area shape="rect" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title=" " alt="" coords="475,376,578,403"/>
+<area shape="rect" href="tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="449,427,604,453"/>
+<area shape="rect" href="wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c" title=" " alt="" coords="427,478,627,519"/>
+<area shape="rect" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="435,544,618,571"/>
 <area shape="rect" href="cv__target__localization_8c.html#a985eb3daada07ed9f76cf8dceb5300b4" title=" " alt="" coords="199,5,370,32"/>
 <area shape="rect" href="ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="217,56,352,83"/>
-<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="233,140,336,167"/>
-<area shape="rect" href="dw1000__arduino_8c.html#acd30e60aae354572abb40c0cc89eb6d3" title=" " alt="" coords="198,224,371,251"/>
-<area shape="rect" href="dw1000__arduino_8c.html#a37cdd8b01baa07937d73541c2a0da01e" title=" " alt="" coords="191,275,379,301"/>
-<area shape="rect" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title=" " alt="" coords="238,325,331,352"/>
-<area shape="rect" href="pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6" title=" " alt="" coords="5,325,143,352"/>
-<area shape="rect" href="tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="232,376,337,403"/>
-<area shape="rect" href="tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="211,427,358,469"/>
-<area shape="rect" href="tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="9,376,139,403"/>
+<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="233,165,336,192"/>
+<area shape="rect" href="dw1000__arduino_8c.html#acd30e60aae354572abb40c0cc89eb6d3" title=" " alt="" coords="198,275,371,301"/>
+<area shape="rect" href="dw1000__arduino_8c.html#a37cdd8b01baa07937d73541c2a0da01e" title=" " alt="" coords="191,325,379,352"/>
+<area shape="rect" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title=" " alt="" coords="238,376,331,403"/>
+<area shape="rect" href="pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6" title=" " alt="" coords="5,376,143,403"/>
+<area shape="rect" href="tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="232,427,337,453"/>
+<area shape="rect" href="tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="211,478,358,519"/>
+<area shape="rect" href="tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="9,427,139,453"/>
 </map>
 </div>
 
@@ -1027,7 +1028,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 1 2024 09:32:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 1 2024 10:59:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

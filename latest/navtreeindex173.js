@@ -1,5 +1,12 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#RC":[2,0,96],
+"paparazzi_messages.html#RC_UP":[2,1,42],
+"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,35],
+"paparazzi_messages.html#RLFILTER":[2,0,45],
+"paparazzi_messages.html#ROTATING_WING_STATE":[2,0,176],
+"paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,163],
+"paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,50],
 "paparazzi_messages.html#ROTORCRAFT_CMD":[2,0,138],
 "paparazzi_messages.html#ROTORCRAFT_FP":[2,0,142],
 "paparazzi_messages.html#ROTORCRAFT_FP_MIN":[2,0,204],
@@ -242,12 +249,5 @@ var NAVTREEINDEX173 =
 "pca9685__i2c_8c.html#ada32320a5455b7f334e68559e5ecd409":[12,0,1,0,6,52,0,27],
 "pca9685__i2c_8c.html#adb9d5b122da6466149bd30e6874529b9":[12,0,1,0,6,52,0,17],
 "pca9685__i2c_8c.html#adc190dd56a2bdb224ce24ca7f43bfbba":[12,0,1,0,6,52,0,44],
-"pca9685__i2c_8c.html#add8e38cb1cb194e0030f3c011ce346b0":[12,0,1,0,6,52,0,84],
-"pca9685__i2c_8c.html#ae2eb9087edbd68fc3b3acc4fa0ca3ddc":[12,0,1,0,6,52,0,20],
-"pca9685__i2c_8c.html#ae5eab228db6eb05df4b9113064466f4f":[12,0,1,0,6,52,0,30],
-"pca9685__i2c_8c.html#ae791207105943245e56dd69e783783fa":[12,0,1,0,6,52,0,63],
-"pca9685__i2c_8c.html#ae94011d14a9fef277872b43f92dac970":[12,0,1,0,6,52,0,29],
-"pca9685__i2c_8c.html#ae9a63233195518604d614f097e3722ab":[12,0,1,0,6,52,0,34],
-"pca9685__i2c_8c.html#aeac1c01cccdbbdd40555bfba64ed08d1":[12,0,1,0,6,52,0,11],
-"pca9685__i2c_8c.html#aec8a9df8e9bb1659bbe79e9abad331c2":[12,0,1,0,6,52,0,21]
+"pca9685__i2c_8c.html#add8e38cb1cb194e0030f3c011ce346b0":[12,0,1,0,6,52,0,84]
 };

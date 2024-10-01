@@ -1,5 +1,12 @@
 var NAVTREEINDEX101 =
 {
+"krooz__sd_8h.html#a7ae5162492c27a9f944435eb96e1cdec":[12,0,1,0,1,35,51],
+"krooz__sd_8h.html#a7bed267bab62113c6593e804a4d0f2f0":[12,0,1,0,1,35,150],
+"krooz__sd_8h.html#a7ca4d622269db724a3af09d3625280ee":[12,0,1,0,1,35,105],
+"krooz__sd_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8":[12,0,1,0,1,35,153],
+"krooz__sd_8h.html#a805db6bfa3f9b900dba5126297a28875":[12,0,1,0,1,35,116],
+"krooz__sd_8h.html#a8120c84f2eae450b56339d66f362c86e":[12,0,1,0,1,35,22],
+"krooz__sd_8h.html#a81a706c185f561248908b837ec5fd9d2":[12,0,1,0,1,35,178],
 "krooz__sd_8h.html#a8498429e77239ef33e38cf77eeafdb02":[12,0,1,0,1,35,162],
 "krooz__sd_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,35,74],
 "krooz__sd_8h.html#a86dd5efb4b90dc269b6334cd30d2af81":[12,0,1,0,1,35,24],
@@ -242,12 +249,5 @@ var NAVTREEINDEX101 =
 "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a95594e6783916718e10fd6fa80bba186":[12,0,1,0,7,59,21,15],
 "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aa7e602497067bdbbb69ebef39b9fa0d1":[12,0,1,0,7,59,21,0],
 "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aab0e1198f84c1ba81ff85c9f54b042c5":[12,0,1,0,7,59,21,4],
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aaf3947871d3d81fe284a20b63b5822a5":[12,0,1,0,7,59,21,13],
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0abdbf0f44f1291375208200cdd530ad35":[12,0,1,0,7,59,21,7],
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad1ca318525b4ddc0fb3dbae403b9bb52":[12,0,1,0,7,59,21,9],
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad777a823250306c466fd2f01cca802ec":[12,0,1,0,7,59,21,1],
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad8881c116fae084ca5600f2c875c2a12":[12,0,1,0,7,59,21,6],
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0adf77651e19b54b4a8d1688cb0b3cf172":[12,0,1,0,7,59,21,14],
-"l3gd20__regs_8h.html#afcdcc06c194213e1b2cc11c1fdf97c8f":[12,0,1,0,7,59,14],
-"l3gd20__regs_8h_source.html":[12,0,1,0,7,59]
+"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aaf3947871d3d81fe284a20b63b5822a5":[12,0,1,0,7,59,21,13]
 };
