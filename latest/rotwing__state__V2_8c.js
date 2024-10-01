@@ -42,7 +42,11 @@ var rotwing__state__V2_8c =
     [ "rotwing_switch_state", "rotwing__state__V2_8c.html#a1c22a756e481c679525540a7dd07b345", null ],
     [ "send_rotating_wing_state", "rotwing__state__V2_8c.html#ab8f72a98676fba24f38387c5a706b612", null ],
     [ "bool_disable_hover_motors", "rotwing__state__V2_8c.html#a723eede8f1726f8738c848d4dd3f6e36", null ],
+    [ "demo_skew", "rotwing__state__V2_8c.html#ac49a772ae9b0ce90a612344cf586c549", null ],
+    [ "freq_skew_demo", "rotwing__state__V2_8c.html#a64d4fa7358e5adbf7ba2840b00ef3b51", null ],
     [ "hover_motors_active", "rotwing__state__V2_8c.html#aca15855fbc2f0477422f68ffc15c46d4", null ],
+    [ "max_skew_demo", "rotwing__state__V2_8c.html#a4100cb8055fd0f207893e1a9815780c8", null ],
+    [ "min_skew_demo", "rotwing__state__V2_8c.html#a665a7f64337742c8011447870c06881c", null ],
     [ "rotwing_state", "rotwing__state__V2_8c.html#a410cc2e2f073306c80fc9425c9be1154", null ],
     [ "rotwing_state_feedback_ev", "rotwing__state__V2_8c.html#adca906a1130565de36ef9e3a6aeee5f8", null ],
     [ "rotwing_state_fw_counter", "rotwing__state__V2_8c.html#a68f7d7f3599dc78e45de43cdc72bc0db", null ],
@@ -54,5 +58,6 @@ var rotwing__state__V2_8c =
     [ "rotwing_state_max_hover_speed", "rotwing__state__V2_8c.html#a50a59286f4329a38b80ddd8a0c72734c", null ],
     [ "rotwing_state_settings", "rotwing__state__V2_8c.html#a07b46b2795d324fc2774999d6a4b37c2", null ],
     [ "rotwing_state_skewing", "rotwing__state__V2_8c.html#a5e6de09c521ca498b85269305e600cc4", null ],
-    [ "rotwing_state_skewing_counter", "rotwing__state__V2_8c.html#a688aeba281deb8aef9babc7025adbc66", null ]
+    [ "rotwing_state_skewing_counter", "rotwing__state__V2_8c.html#a688aeba281deb8aef9babc7025adbc66", null ],
+    [ "time_step_skew_demo", "rotwing__state__V2_8c.html#ac52e9f3c526ad07c25f9063d7052a446", null ]
 ];
