@@ -218,13 +218,13 @@ $(document).ready(function(){initNavTree('gvf_8c_source.html',''); initResizable
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">// GENERIC TRAJECTORY CONTROLLER</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302">  131</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302">gvf_control_2D</a>(<span class="keywordtype">float</span> ke, <span class="keywordtype">float</span> kn, <span class="keywordtype">float</span> e,</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302">  131</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302">gvf_control_2D</a>(<span class="keywordtype">float</span> ke, <span class="keywordtype">float</span> kn __attribute__((unused)), <span class="keywordtype">float</span> e,</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    <span class="keyword">struct</span> <a class="code" href="gvf_8h.html#structgvf__grad">gvf_grad</a> *grad, <span class="keyword">struct</span> <a class="code" href="gvf_8h.html#structgvf__Hess">gvf_Hess</a> *hess)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="gvf_8c.html#af49a661079a79710b0b3a4a3844c180c">gvf_t0</a> = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">get_sys_time_msec</a>();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="gvf__low__level__control_8c.html#ae27d2fdd26aa5b984a27c86c77544ac7">gvf_low_level_getState</a>();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="airspeed__uADC_8c.html#a07e858c64561f8f3465da2ba434ccd1f">course</a> = <a class="code" href="gvf_8c.html#a8627db83a7e07235b19db8742f0aaa64">gvf_state</a>.<a class="code" href="gvf_8h.html#ab760c6ce880beb9bf71f153dd415ae0e">course</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="airspeed__uADC_8c.html#a07e858c64561f8f3465da2ba434ccd1f">course</a> __attribute__((unused)) = <a class="code" href="gvf_8c.html#a8627db83a7e07235b19db8742f0aaa64">gvf_state</a>.<a class="code" href="gvf_8h.html#ab760c6ce880beb9bf71f153dd415ae0e">course</a>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">float</span> px_dot = <a class="code" href="gvf_8c.html#a8627db83a7e07235b19db8742f0aaa64">gvf_state</a>.<a class="code" href="gvf_8h.html#aba150373aae175094a7fb3dbe2bf2e95">px_dot</a>;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">float</span> py_dot = <a class="code" href="gvf_8c.html#a8627db83a7e07235b19db8742f0aaa64">gvf_state</a>.<a class="code" href="gvf_8h.html#a0f9d463e0584f5216571e0074eda8d60">py_dot</a>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
@@ -266,8 +266,8 @@ $(document).ready(function(){initNavTree('gvf_8c_source.html',''); initResizable
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">float</span> md_dot_const = -(md_x * pd_dot_dot_y - md_y * pd_dot_dot_x)</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                       / norm_pd_dot;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">float</span> md_dot_x =  md_y * md_dot_const;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">float</span> md_dot_y = -md_x * md_dot_const;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">float</span> md_dot_x __attribute__((unused)) =  md_y * md_dot_const;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">float</span> md_dot_y __attribute__((unused))= -md_x * md_dot_const;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">  #if defined(ROTORCRAFT_FIRMWARE)</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
@@ -755,7 +755,7 @@ $(document).ready(function(){initNavTree('gvf_8c_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4ee91589357a83ed771c51844e853db2.html">guidance</a></li><li class="navelem"><a class="el" href="dir_f11651931491444d54c9510df68bbdd5.html">gvf</a></li><li class="navelem"><a class="el" href="gvf_8c.html">gvf.c</a></li>
-    <li class="footer">Generated on Wed Oct 2 2024 09:14:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 2 2024 13:11:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

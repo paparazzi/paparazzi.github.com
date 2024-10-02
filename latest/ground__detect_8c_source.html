@@ -110,128 +110,130 @@ $(document).ready(function(){initNavTree('ground__detect_8c_source.html',''); in
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ground__detect_8h.html">ground_detect.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stabilization__indi_8h.html">firmwares/rotorcraft/stabilization/stabilization_indi.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="low__pass__filter_8h.html">filters/low_pass_filter.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2autopilot__firmware_8h.html">firmwares/rotorcraft/autopilot_firmware.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_INDI_THRUST</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stabilization__indi_8h.html">firmwares/rotorcraft/stabilization/stabilization_indi.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_AGL_DIST</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agl__dist_8h.html">modules/sonar/agl_dist.h</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef GROUND_DETECT_AGL_MIN_VALUE</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define GROUND_DETECT_AGL_MIN_VALUE 0.1</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="low__pass__filter_8h.html">filters/low_pass_filter.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2autopilot__firmware_8h.html">firmwares/rotorcraft/autopilot_firmware.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_INDI_THRUST</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stabilization__indi_8h.html">firmwares/rotorcraft/stabilization/stabilization_indi.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_AGL_DIST</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agl__dist_8h.html">modules/sonar/agl_dist.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef GROUND_DETECT_AGL_MIN_VALUE</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define GROUND_DETECT_AGL_MIN_VALUE 0.1</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;pprzlink/messages.h&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html">modules/datalink/downlink.h</a>&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694">   47</a></span>&#160;<span class="preprocessor">#define GROUND_DETECT_COUNTER_TRIGGER 5</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// Cutoff frequency of accelerometer filter in Hz</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b">   50</a></span>&#160;<span class="preprocessor">#define GROUND_DETECT_FILT_FREQ 5.0</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">   52</a></span>&#160;<a class="code" href="low__pass__filter_8h.html#structSecondOrderLowPass">Butterworth2LowPass</a> <a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">   56</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">   57</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#af28baac88d8808e75c042a3d34962ba7">   59</a></span>&#160;<span class="preprocessor">#define DEBUG_GROUND_DETECT TRUE</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">ground_detect_init</a>()</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">float</span> tau = 1.0 / (2.0 * M_PI * <a class="code" href="ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b">GROUND_DETECT_FILT_FREQ</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">float</span> sample_time = 1.0 / PERIODIC_FREQUENCY;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610">init_butterworth_2_low_pass</a>(&amp;<a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>, tau, sample_time, 0.0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a">   68</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// TODO: use standard pprz ground detection interface</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// bool autopilot_ground_detection(void) {</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//   RunOnceEvery(10, printf(&quot;Running!\n&quot;););</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//   return ground_detected;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// }</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">ground_detect_periodic</a>()</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// Evaluate thrust given (less than hover thrust)</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Use the control effectiveness in thrust in order to estimate the thrust delivered (only works for multicopters)</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">float</span> specific_thrust = 0.0; <span class="comment">// m/s2</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; INDI_NUM_ACT; i++) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    specific_thrust += <a class="code" href="stabilization__indi_8c.html#aadec734a354c9ca37ceea556f59bcf8c">actuator_state_filt_vect</a>[i] * <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] * -((<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>) <a class="code" href="stabilization__indi_8c.html#a3099f5d69f8b2b84a9b1f7685f325adb">act_is_servo</a>[i] - 1);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// vertical component</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">float</span> spec_thrust_down;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatRMat">FloatRMat</a> *ned_to_body_rmat = <a class="code" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d">stateGetNedToBodyRMat_f</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  spec_thrust_down = ned_to_body_rmat-&gt;<a class="code" href="group__math__algebra__float.html#abd9f2e74dda76a23609e84a211e04967">m</a>[8] * specific_thrust;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// Evaluate vertical speed (close to zero, not at terminal velocity)</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">float</span> vspeed_ned = <a class="code" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2">stateGetSpeedNed_f</a>()-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Detect free fall (to be done, rearm?)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;pprzlink/messages.h&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html">modules/datalink/downlink.h</a>&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694">   46</a></span>&#160;<span class="preprocessor">#define GROUND_DETECT_COUNTER_TRIGGER 5</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Cutoff frequency of accelerometer filter in Hz</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b">   49</a></span>&#160;<span class="preprocessor">#define GROUND_DETECT_FILT_FREQ 5.0</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">   51</a></span>&#160;<a class="code" href="low__pass__filter_8h.html#structSecondOrderLowPass">Butterworth2LowPass</a> <a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">   53</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">   55</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">   56</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#af28baac88d8808e75c042a3d34962ba7">   58</a></span>&#160;<span class="preprocessor">#define DEBUG_GROUND_DETECT TRUE</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">ground_detect_init</a>()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">float</span> tau = 1.0 / (2.0 * M_PI * <a class="code" href="ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b">GROUND_DETECT_FILT_FREQ</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">float</span> sample_time = 1.0 / PERIODIC_FREQUENCY;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610">init_butterworth_2_low_pass</a>(&amp;<a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>, tau, sample_time, 0.0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a">   67</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// TODO: use standard pprz ground detection interface</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// bool autopilot_ground_detection(void) {</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//   RunOnceEvery(10, printf(&quot;Running!\n&quot;););</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//   return ground_detected;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// }</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">ground_detect_periodic</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// Evaluate thrust given (less than hover thrust)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// Use the control effectiveness in thrust in order to estimate the thrust delivered (only works for multicopters)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">float</span> specific_thrust = 0.0; <span class="comment">// m/s2</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_INDI_THRUST</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; INDI_NUM_ACT; i++) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    specific_thrust += <a class="code" href="stabilization__indi_8c.html#aadec734a354c9ca37ceea556f59bcf8c">actuator_state_filt_vect</a>[i] * <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] * -((<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>) <a class="code" href="stabilization__indi_8c.html#a3099f5d69f8b2b84a9b1f7685f325adb">act_is_servo</a>[i] - 1);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// vertical component</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">float</span> spec_thrust_down;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatRMat">FloatRMat</a> *ned_to_body_rmat = <a class="code" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d">stateGetNedToBodyRMat_f</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  spec_thrust_down = ned_to_body_rmat-&gt;<a class="code" href="group__math__algebra__float.html#abd9f2e74dda76a23609e84a211e04967">m</a>[8] * specific_thrust;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">// Evaluate vertical speed (close to zero, not at terminal velocity)</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">float</span> vspeed_ned = <a class="code" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2">stateGetSpeedNed_f</a>()-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Detect noise level (to be done)</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Detect free fall (to be done, rearm?)</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// Detect ground based on AND of all triggers</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> ((fabsf(vspeed_ned) &lt; 5.0)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      &amp;&amp; (spec_thrust_down &gt; -5.0)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      &amp;&amp; (fabsf(<a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>.<a class="code" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">o</a>[0]) &lt; 2.0)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;#<span class="keywordflow">if</span> USE_GROUND_DETECT_AGL_DIST</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      &amp;&amp; (<a class="code" href="agl__dist_8c.html#a0c5066f2e95aee60ec3c37ea032accd2">agl_dist_valid</a> &amp;&amp; (<a class="code" href="agl__dist_8c.html#a3b3587b1ee645fffb2b8671c351bd551">agl_dist_value_filtered</a> &lt; GROUND_DETECT_AGL_MIN_VALUE))</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;#endif</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;     ) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> += 1;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> &gt; <a class="code" href="ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694">GROUND_DETECT_COUNTER_TRIGGER</a>) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a>) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16">autopilot_set_motors_on</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> = 0;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifdef DEBUG_GROUND_DETECT</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">float</span> payload[7];</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  payload[0] = vspeed_ned;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  payload[1] = spec_thrust_down;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  payload[2] = <a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>.<a class="code" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">o</a>[0];</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  payload[3] = <a class="code" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe">stateGetAccelNed_f</a>()-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_AGL_DIST</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  payload[4] = <a class="code" href="agl__dist_8c.html#a0c5066f2e95aee60ec3c37ea032accd2">agl_dist_valid</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  payload[5] = <a class="code" href="agl__dist_8c.html#a3b3587b1ee645fffb2b8671c351bd551">agl_dist_value_filtered</a>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  payload[4] = 0;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  payload[5] = 0;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  payload[6] = 1.f * <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  RunOnceEvery(10, {DOWNLINK_SEND_PAYLOAD_FLOAT(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, 7, payload);});</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d">  148</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d">ground_detect_filter_accel</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a> *accel = <a class="code" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe">stateGetAccelNed_f</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650">update_butterworth_2_low_pass</a>(&amp;<a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>, accel-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// Detect noise level (to be done)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// Detect ground based on AND of all triggers</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">if</span> ((fabsf(vspeed_ned) &lt; 5.0)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      &amp;&amp; (spec_thrust_down &gt; -5.0)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      &amp;&amp; (fabsf(<a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>.<a class="code" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">o</a>[0]) &lt; 2.0)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;#<span class="keywordflow">if</span> USE_GROUND_DETECT_AGL_DIST</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      &amp;&amp; (<a class="code" href="agl__dist_8c.html#a0c5066f2e95aee60ec3c37ea032accd2">agl_dist_valid</a> &amp;&amp; (<a class="code" href="agl__dist_8c.html#a3b3587b1ee645fffb2b8671c351bd551">agl_dist_value_filtered</a> &lt; GROUND_DETECT_AGL_MIN_VALUE))</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;#endif</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;     ) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> += 1;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> &gt; <a class="code" href="ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694">GROUND_DETECT_COUNTER_TRIGGER</a>) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a>) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16">autopilot_set_motors_on</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> = 0;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#ifdef DEBUG_GROUND_DETECT</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">float</span> payload[7];</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  payload[0] = vspeed_ned;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  payload[1] = spec_thrust_down;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  payload[2] = <a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>.<a class="code" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">o</a>[0];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  payload[3] = <a class="code" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe">stateGetAccelNed_f</a>()-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#if USE_GROUND_DETECT_AGL_DIST</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  payload[4] = <a class="code" href="agl__dist_8c.html#a0c5066f2e95aee60ec3c37ea032accd2">agl_dist_valid</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  payload[5] = <a class="code" href="agl__dist_8c.html#a3b3587b1ee645fffb2b8671c351bd551">agl_dist_value_filtered</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  payload[4] = 0;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  payload[5] = 0;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  payload[6] = 1.f * <a class="code" href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  RunOnceEvery(10, {DOWNLINK_SEND_PAYLOAD_FLOAT(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, 7, payload);});</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d">  150</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d">ground_detect_filter_accel</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a> *accel = <a class="code" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe">stateGetAccelNed_f</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650">update_butterworth_2_low_pass</a>(&amp;<a class="code" href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a>, accel-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a94d097a2ada72ec6638bcc7bcabbbd66">z</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 <div class="ttc" id="aagl__dist_8c_html_a0c5066f2e95aee60ec3c37ea032accd2"><div class="ttname"><a href="agl__dist_8c.html#a0c5066f2e95aee60ec3c37ea032accd2">agl_dist_valid</a></div><div class="ttdeci">float agl_dist_valid</div><div class="ttdef"><b>Definition:</b> <a href="agl__dist_8c_source.html#l00033">agl_dist.c:33</a></div></div>
 <div class="ttc" id="aagl__dist_8c_html_a3b3587b1ee645fffb2b8671c351bd551"><div class="ttname"><a href="agl__dist_8c.html#a3b3587b1ee645fffb2b8671c351bd551">agl_dist_value_filtered</a></div><div class="ttdeci">float agl_dist_value_filtered</div><div class="ttdef"><b>Definition:</b> <a href="agl__dist_8c_source.html#l00035">agl_dist.c:35</a></div></div>
 <div class="ttc" id="aagl__dist_8h_html"><div class="ttname"><a href="agl__dist_8h.html">agl_dist.h</a></div><div class="ttdoc">Bind to agl ABI message and provide a filtered value to be used in flight plans.</div></div>
@@ -239,16 +241,16 @@ $(document).ready(function(){initNavTree('ground__detect_8c_source.html',''); in
 <div class="ttc" id="adownlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry.</div></div>
 <div class="ttc" id="adownlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00045">downlink.h:45</a></div></div>
 <div class="ttc" id="adownlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00041">downlink.h:41</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a09144a75e5bfb996e7c3b4e294fa86cc"><div class="ttname"><a href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a></div><div class="ttdeci">Butterworth2LowPass accel_filter</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00052">ground_detect.c:52</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a1644979ae47115c76c97cf2d5793e71d"><div class="ttname"><a href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d">ground_detect_filter_accel</a></div><div class="ttdeci">void ground_detect_filter_accel(void)</div><div class="ttdoc">Filter the vertical acceleration with a low cutoff frequency.</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00148">ground_detect.c:148</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a3d55aa41d11d2ee42e7e9b55fe4070b5"><div class="ttname"><a href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a></div><div class="ttdeci">bool disarm_on_not_in_flight</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00054">ground_detect.c:54</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a40f2b8b4c7f532afbc89df480abc1a1b"><div class="ttname"><a href="ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b">GROUND_DETECT_FILT_FREQ</a></div><div class="ttdeci">#define GROUND_DETECT_FILT_FREQ</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00050">ground_detect.c:50</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a4983a85c4a523c6e195ee12da1f73694"><div class="ttname"><a href="ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694">GROUND_DETECT_COUNTER_TRIGGER</a></div><div class="ttdeci">#define GROUND_DETECT_COUNTER_TRIGGER</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00047">ground_detect.c:47</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a4c008341e7019ccb73ce715d8ff090f9"><div class="ttname"><a href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">ground_detect_init</a></div><div class="ttdeci">void ground_detect_init()</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00061">ground_detect.c:61</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a81e5a94b63ef2cd200aa261a7321dcf1"><div class="ttname"><a href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a></div><div class="ttdeci">bool ground_detected</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00057">ground_detect.c:57</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_a8878e5a02ad504f37f53d03557f8bd0a"><div class="ttname"><a href="ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a></div><div class="ttdeci">bool ground_detect(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00068">ground_detect.c:68</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_aaec3cd97712876a5e9ff70559b1fca26"><div class="ttname"><a href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a></div><div class="ttdeci">int32_t counter</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00056">ground_detect.c:56</a></div></div>
-<div class="ttc" id="aground__detect_8c_html_adfc70ed837d0b3066745bc6fd071adc8"><div class="ttname"><a href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">ground_detect_periodic</a></div><div class="ttdeci">void ground_detect_periodic()</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00079">ground_detect.c:79</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a09144a75e5bfb996e7c3b4e294fa86cc"><div class="ttname"><a href="ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc">accel_filter</a></div><div class="ttdeci">Butterworth2LowPass accel_filter</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00051">ground_detect.c:51</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a1644979ae47115c76c97cf2d5793e71d"><div class="ttname"><a href="ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d">ground_detect_filter_accel</a></div><div class="ttdeci">void ground_detect_filter_accel(void)</div><div class="ttdoc">Filter the vertical acceleration with a low cutoff frequency.</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00150">ground_detect.c:150</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a3d55aa41d11d2ee42e7e9b55fe4070b5"><div class="ttname"><a href="ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5">disarm_on_not_in_flight</a></div><div class="ttdeci">bool disarm_on_not_in_flight</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00053">ground_detect.c:53</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a40f2b8b4c7f532afbc89df480abc1a1b"><div class="ttname"><a href="ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b">GROUND_DETECT_FILT_FREQ</a></div><div class="ttdeci">#define GROUND_DETECT_FILT_FREQ</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00049">ground_detect.c:49</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a4983a85c4a523c6e195ee12da1f73694"><div class="ttname"><a href="ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694">GROUND_DETECT_COUNTER_TRIGGER</a></div><div class="ttdeci">#define GROUND_DETECT_COUNTER_TRIGGER</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00046">ground_detect.c:46</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a4c008341e7019ccb73ce715d8ff090f9"><div class="ttname"><a href="ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9">ground_detect_init</a></div><div class="ttdeci">void ground_detect_init()</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00060">ground_detect.c:60</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a81e5a94b63ef2cd200aa261a7321dcf1"><div class="ttname"><a href="ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1">ground_detected</a></div><div class="ttdeci">bool ground_detected</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00056">ground_detect.c:56</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_a8878e5a02ad504f37f53d03557f8bd0a"><div class="ttname"><a href="ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a">ground_detect</a></div><div class="ttdeci">bool ground_detect(void)</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00067">ground_detect.c:67</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_aaec3cd97712876a5e9ff70559b1fca26"><div class="ttname"><a href="ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a></div><div class="ttdeci">int32_t counter</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00055">ground_detect.c:55</a></div></div>
+<div class="ttc" id="aground__detect_8c_html_adfc70ed837d0b3066745bc6fd071adc8"><div class="ttname"><a href="ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8">ground_detect_periodic</a></div><div class="ttdeci">void ground_detect_periodic()</div><div class="ttdef"><b>Definition:</b> <a href="ground__detect_8c_source.html#l00078">ground_detect.c:78</a></div></div>
 <div class="ttc" id="aground__detect_8h_html"><div class="ttname"><a href="ground__detect_8h.html">ground_detect.h</a></div></div>
 <div class="ttc" id="agroup__math__algebra__float_html_abd9f2e74dda76a23609e84a211e04967"><div class="ttname"><a href="group__math__algebra__float.html#abd9f2e74dda76a23609e84a211e04967">FloatRMat::m</a></div><div class="ttdeci">float m[3 *3]</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00078">pprz_algebra_float.h:78</a></div></div>
 <div class="ttc" id="agroup__math__algebra__float_html_structFloatRMat"><div class="ttname"><a href="group__math__algebra__float.html#structFloatRMat">FloatRMat</a></div><div class="ttdoc">rotation matrix</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00077">pprz_algebra_float.h:77</a></div></div>
@@ -276,7 +278,7 @@ $(document).ready(function(){initNavTree('ground__detect_8c_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="ground__detect_8c.html">ground_detect.c</a></li>
-    <li class="footer">Generated on Wed Oct 2 2024 09:14:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 2 2024 13:11:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
