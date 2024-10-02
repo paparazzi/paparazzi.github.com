@@ -218,8 +218,6 @@ Variables</h2></td></tr>
 <tr class="separator:a02b1d1b2b1052dff0707a5218f5346ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a147581e222fb8f9b1cb2d3479a05aa01"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a147581e222fb8f9b1cb2d3479a05aa01">act_pref</a> [INDI_NUM_ACT]</td></tr>
 <tr class="separator:a147581e222fb8f9b1cb2d3479a05aa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ab8eb217dc373419dff7079543da047"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a> [INDI_NUM_ACT]</td></tr>
-<tr class="separator:a4ab8eb217dc373419dff7079543da047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b259b8bcede01f9497459615608d78"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#aa9b259b8bcede01f9497459615608d78">stablization_indi_yaw_dist_limit</a></td></tr>
 <tr class="memdesc:aa9b259b8bcede01f9497459615608d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limit the maximum specific moment that can be compensated (units rad/s^2)  <a href="stabilization__indi_8h.html#aa9b259b8bcede01f9497459615608d78">More...</a><br /></td></tr>
 <tr class="separator:aa9b259b8bcede01f9497459615608d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,7 +241,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00050">50</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00049">49</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for Indi_gains:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -736,30 +734,6 @@ rate</td>
 
 </div>
 </div>
-<a id="a4ab8eb217dc373419dff7079543da047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ab8eb217dc373419dff7079543da047">&#9670;&nbsp;</a></span>indi_Wu</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float indi_Wu[INDI_NUM_ACT]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
-
-</div>
-</div>
 <a id="ae6a63eb7e63c2850386999bda201f719"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6a63eb7e63c2850386999bda201f719">&#9670;&nbsp;</a></span>stabilization_indi_filter_freq</h2>
 
@@ -902,7 +876,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00001">1</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00304">send_wls_u_stab()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00300">send_wls_v_stab()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00728">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00304">send_wls_u_stab()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00300">send_wls_v_stab()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00728">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -912,7 +886,7 @@ rate</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__indi_8h.html">stabilization_indi.h</a></li>
-    <li class="footer">Generated on Tue Oct 1 2024 13:33:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 2 2024 08:02:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

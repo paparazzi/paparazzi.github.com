@@ -19,7 +19,6 @@ var stabilization__indi_8h =
     [ "g1g2", "stabilization__indi_8h.html#a58b9d284732ce9ce4df89c8cb5027fb2", null ],
     [ "indi_gains", "stabilization__indi_8h.html#a26af36c957621d1c4301561740eea35f", null ],
     [ "indi_use_adaptive", "stabilization__indi_8h.html#abf1ef333c752f3f24a26a3efaede5fea", null ],
-    [ "indi_Wu", "stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047", null ],
     [ "stabilization_indi_filter_freq", "stabilization__indi_8h.html#ae6a63eb7e63c2850386999bda201f719", null ],
     [ "stablization_indi_yaw_dist_limit", "stabilization__indi_8h.html#aa9b259b8bcede01f9497459615608d78", null ],
     [ "thrust_bx_act_dyn", "stabilization__indi_8h.html#af99a0439f0598bdbce1ad28854646f6e", null ],

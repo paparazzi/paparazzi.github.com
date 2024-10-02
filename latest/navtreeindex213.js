@@ -1,11 +1,5 @@
 var NAVTREEINDEX213 =
 {
-"takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8a64b6463f8cdc5ea7a87a7a2d230f9ba0":[12,0,1,0,6,47,79,5,2],
-"takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8ae278f78b316913c44eaf48c2b959dd7a":[12,0,1,0,6,47,79,5,0],
-"takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8aed099911820079317902ee9d8242cb7a":[12,0,1,0,6,47,79,5,1],
-"takeoff__detect_8c.html#ae4ecd72a6a1aa21c820285960fab79c4":[12,0,1,0,6,47,79,6],
-"takeoff__detect_8c.html#structtakeoff__detect__struct":[12,0,1,0,6,47,79,0],
-"takeoff__detect_8c_source.html":[12,0,1,0,6,47,79],
 "takeoff__detect_8h.html":[12,0,1,0,6,47,80],
 "takeoff__detect_8h.html#a06e2c8e9dfe36613c4773f5c01303b0a":[12,0,1,0,6,47,80,1],
 "takeoff__detect_8h.html#ac84acb06ac4c5fe795c9673523a1efbf":[12,0,1,0,6,47,80,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX213 =
 "tawaki_2chibios_2common_2mcuconf__board_8h.html#a84197e5ed8ac37628137ae10b1e55a80":[12,0,1,0,1,21,0,0,0,62],
 "tawaki_2chibios_2common_2mcuconf__board_8h.html#a841def6dae41ef14c28273dc71c917df":[12,0,1,0,1,21,0,0,0,52],
 "tawaki_2chibios_2common_2mcuconf__board_8h.html#a8433ca3b26de12e90ad85d24ddc146ae":[12,0,1,0,1,21,0,0,0,49],
-"tawaki_2chibios_2common_2mcuconf__board_8h.html#a876384340e8cf5cdd01d4292fa89e8c9":[12,0,1,0,1,21,0,0,0,219]
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a876384340e8cf5cdd01d4292fa89e8c9":[12,0,1,0,1,21,0,0,0,219],
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a877fa83cee0173d5f451b77e59180725":[12,0,1,0,1,21,0,0,0,96],
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a87dac50603730367a564c5ba63c6e9a1":[12,0,1,0,1,21,0,0,0,47],
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a88c6094436973474db53e155b3ebfe74":[12,0,1,0,1,21,0,0,0,210],
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a88ed161000188baad76db684cf751f17":[12,0,1,0,1,21,0,0,0,307],
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a8949d18b87dbd8844bbe634ade2fc48d":[12,0,1,0,1,21,0,0,0,60],
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#a89d7461cb369d4e15e59937bb9481366":[12,0,1,0,1,21,0,0,0,80]
 };

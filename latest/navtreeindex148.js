@@ -1,10 +1,5 @@
 var NAVTREEINDEX148 =
 {
-"mt9f002__regs_8h.html#adab7ec071565b9349b0fc8a305af35a4":[12,0,1,0,1,2,7,602],
-"mt9f002__regs_8h.html#adb3229abe9f8c26a0ecd133c26b1c429":[12,0,1,0,1,2,7,334],
-"mt9f002__regs_8h.html#adbc97c4005e213c51041d25c6b1f6d18":[12,0,1,0,1,2,7,221],
-"mt9f002__regs_8h.html#adbd50fc4b8c2975df025d668fc1d21f8":[12,0,1,0,1,2,7,446],
-"mt9f002__regs_8h.html#adc6faee264012cbeaf15413589a67ba7":[12,0,1,0,1,2,7,170],
 "mt9f002__regs_8h.html#adce59259c0a2587092944430a256e9eb":[12,0,1,0,1,2,7,288],
 "mt9f002__regs_8h.html#add44a96a05d0dc74329332db96610b26":[12,0,1,0,1,2,7,367],
 "mt9f002__regs_8h.html#addc8f8df7bb9ec6f74df2828ccc53656":[12,0,1,0,1,2,7,434],
@@ -249,5 +244,10 @@ var NAVTREEINDEX148 =
 "my__debug__servo_8h_source.html":[12,0,1,0,0,3,7],
 "namespacemembers.html":[10,0],
 "namespacemembers_func.html":[10,1],
-"namespacemembers_vars.html":[10,2]
+"namespacemembers_vars.html":[10,2],
+"nav_2waypoints_8c.html":[12,0,1,0,6,47,81],
+"nav_2waypoints_8c.html#a06e472d86d2a78197e9094b3329077fb":[12,0,1,0,6,47,81,2],
+"nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b":[12,0,1,0,6,47,81,14],
+"nav_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c":[12,0,1,0,6,47,81,28],
+"nav_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb":[12,0,1,0,6,47,81,33]
 };
