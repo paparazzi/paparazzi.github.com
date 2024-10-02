@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('actuators__uavcan2_8h_source.html','')
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="actuators__uavcan2_8h.html#a812aa5ef42cc20702386b0cba2baa60f">   35</a></span>&#160;<span class="preprocessor">#define ActuatorsUavcan2Init() actuators_uavcan_init(&amp;uavcan2)</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="actuators__uavcan2_8h.html#a813ae1de8f9e82c10a429585ee8bf4fb">   36</a></span>&#160;<span class="preprocessor">#define ActuatorUavcan2Set(_i, _v) { actuators_uavcan2_values[_i] = _v; }</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="actuators__uavcan2_8h.html#aa8dccd9e51ac1fe95cf4221b6d293ee8">   37</a></span>&#160;<span class="preprocessor">#define ActuatorsUavcan2Commit()  actuators_uavcan_commit(&amp;uavcan2, actuators_uavcan2_values, SERVOS_UAVCAN2_NB)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="actuators__uavcan2_8h.html#aa8dccd9e51ac1fe95cf4221b6d293ee8">   37</a></span>&#160;<span class="preprocessor">#define ActuatorsUavcan2Commit()  RunOnceEvery(ACTUATORS_UAVCAN_RAW_DIV,actuators_uavcan_commit(&amp;uavcan2, actuators_uavcan2_values, SERVOS_UAVCAN2_NB))</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_UAVCAN2_H */</span><span class="preprocessor"></span></div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('actuators__uavcan2_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__uavcan2_8h.html">actuators_uavcan2.h</a></li>
-    <li class="footer">Generated on Wed Oct 2 2024 08:02:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 2 2024 09:14:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

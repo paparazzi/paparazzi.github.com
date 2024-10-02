@@ -114,7 +114,7 @@ Macros</h2></td></tr>
 <tr class="separator:a703455ed55c9596539678050e220a1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf59b97daad7d56c4b64360e2094941b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan1_8h.html#abf59b97daad7d56c4b64360e2094941b">ActuatorUavcan1Set</a>(_i,  _v)&#160;&#160;&#160;{ <a class="el" href="actuators__uavcan1_8h.html#ad7cce2e7da835a8efe0f28fc42f5ef78">actuators_uavcan1_values</a>[_i] = _v; }</td></tr>
 <tr class="separator:abf59b97daad7d56c4b64360e2094941b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadad43630e6833cb222a1c591567a607"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan1_8h.html#aadad43630e6833cb222a1c591567a607">ActuatorsUavcan1Commit</a>()&#160;&#160;&#160;<a class="el" href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">actuators_uavcan_commit</a>(&amp;uavcan1, <a class="el" href="actuators__uavcan1_8h.html#ad7cce2e7da835a8efe0f28fc42f5ef78">actuators_uavcan1_values</a>, SERVOS_UAVCAN1_NB)</td></tr>
+<tr class="memitem:aadad43630e6833cb222a1c591567a607"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan1_8h.html#aadad43630e6833cb222a1c591567a607">ActuatorsUavcan1Commit</a>()&#160;&#160;&#160;RunOnceEvery(<a class="el" href="actuators__uavcan_8h.html#a04f51871ee1fb51b86d86d8a181f407e">ACTUATORS_UAVCAN_RAW_DIV</a>,<a class="el" href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">actuators_uavcan_commit</a>(&amp;uavcan1, <a class="el" href="actuators__uavcan1_8h.html#ad7cce2e7da835a8efe0f28fc42f5ef78">actuators_uavcan1_values</a>, SERVOS_UAVCAN1_NB))</td></tr>
 <tr class="separator:aadad43630e6833cb222a1c591567a607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -134,7 +134,7 @@ Variables</h2></td></tr>
           <td class="memname">#define ActuatorsUavcan1Commit</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">actuators_uavcan_commit</a>(&amp;uavcan1, <a class="el" href="actuators__uavcan1_8h.html#ad7cce2e7da835a8efe0f28fc42f5ef78">actuators_uavcan1_values</a>, SERVOS_UAVCAN1_NB)</td>
+          <td>&#160;&#160;&#160;RunOnceEvery(<a class="el" href="actuators__uavcan_8h.html#a04f51871ee1fb51b86d86d8a181f407e">ACTUATORS_UAVCAN_RAW_DIV</a>,<a class="el" href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">actuators_uavcan_commit</a>(&amp;uavcan1, <a class="el" href="actuators__uavcan1_8h.html#ad7cce2e7da835a8efe0f28fc42f5ef78">actuators_uavcan1_values</a>, SERVOS_UAVCAN1_NB))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,7 +223,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__uavcan1_8h.html">actuators_uavcan1.h</a></li>
-    <li class="footer">Generated on Wed Oct 2 2024 08:02:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 2 2024 09:14:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

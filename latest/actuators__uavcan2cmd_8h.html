@@ -114,7 +114,7 @@ Macros</h2></td></tr>
 <tr class="separator:aacf371301745fa6a70322eb37dd0a2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a39dc6ec69898dcce5a16320160c2a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan2cmd_8h.html#a0a39dc6ec69898dcce5a16320160c2a3">ActuatorUavcan2CmdSet</a>(_i,  _v)&#160;&#160;&#160;{ <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>[_i] = _v; }</td></tr>
 <tr class="separator:a0a39dc6ec69898dcce5a16320160c2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dd9e852e6db95a6cba24486eeadf02b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan2cmd_8h.html#a6dd9e852e6db95a6cba24486eeadf02b">ActuatorsUavcan2CmdCommit</a>()&#160;&#160;&#160;<a class="el" href="actuators__uavcan_8h.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a>(&amp;uavcan2, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, SERVOS_UAVCAN2CMD_NB)</td></tr>
+<tr class="memitem:a6dd9e852e6db95a6cba24486eeadf02b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan2cmd_8h.html#a6dd9e852e6db95a6cba24486eeadf02b">ActuatorsUavcan2CmdCommit</a>()&#160;&#160;&#160;RunOnceEvery(<a class="el" href="actuators__uavcan_8h.html#accc20c3a91218ebc296e990001c58385">ACTUATORS_UAVCAN_CMD_DIV</a>,<a class="el" href="actuators__uavcan_8h.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a>(&amp;uavcan2, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, SERVOS_UAVCAN2CMD_NB))</td></tr>
 <tr class="separator:a6dd9e852e6db95a6cba24486eeadf02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -134,7 +134,7 @@ Variables</h2></td></tr>
           <td class="memname">#define ActuatorsUavcan2CmdCommit</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="actuators__uavcan_8h.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a>(&amp;uavcan2, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, SERVOS_UAVCAN2CMD_NB)</td>
+          <td>&#160;&#160;&#160;RunOnceEvery(<a class="el" href="actuators__uavcan_8h.html#accc20c3a91218ebc296e990001c58385">ACTUATORS_UAVCAN_CMD_DIV</a>,<a class="el" href="actuators__uavcan_8h.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a>(&amp;uavcan2, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, SERVOS_UAVCAN2CMD_NB))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,7 +225,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__uavcan2cmd_8h.html">actuators_uavcan2cmd.h</a></li>
-    <li class="footer">Generated on Wed Oct 2 2024 08:02:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 2 2024 09:14:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
