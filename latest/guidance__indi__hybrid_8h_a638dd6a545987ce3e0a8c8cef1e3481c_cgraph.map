@@ -1,10 +1,16 @@
 <map id="guidance_indi_enter" name="guidance_indi_enter">
-<area shape="rect" id="node1" title="Call upon entering indi guidance." alt="" coords="5,42,159,69"/>
-<area shape="rect" id="node2" href="$low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="237,5,379,47"/>
-<area shape="rect" id="node4" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="207,71,409,98"/>
-<area shape="rect" id="node3" href="$low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="457,13,661,39"/>
-<area shape="rect" id="node5" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,71,643,98"/>
-<area shape="rect" id="node6" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="709,71,883,98"/>
-<area shape="rect" id="node7" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="931,46,1086,73"/>
-<area shape="rect" id="node8" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="931,97,1087,123"/>
+<area shape="rect" id="node1" title="Call upon entering indi guidance." alt="" coords="5,93,159,120"/>
+<area shape="rect" id="node2" href="$group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="216,5,400,32"/>
+<area shape="rect" id="node3" href="$low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="237,57,379,98"/>
+<area shape="rect" id="node5" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="207,123,409,149"/>
+<area shape="rect" id="node10" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="211,173,405,200"/>
+<area shape="rect" id="node4" href="$low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="457,64,661,91"/>
+<area shape="rect" id="node6" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,123,643,149"/>
+<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="709,123,883,149"/>
+<area shape="rect" id="node8" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="931,72,1086,99"/>
+<area shape="rect" id="node9" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="931,123,1087,149"/>
+<area shape="rect" id="node11" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="480,173,639,200"/>
+<area shape="rect" id="node12" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="714,173,878,200"/>
+<area shape="rect" id="node13" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="931,173,1086,200"/>
+<area shape="rect" id="node14" href="$group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="936,224,1081,251"/>
 </map>

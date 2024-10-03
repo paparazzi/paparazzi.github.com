@@ -1,7 +1,7 @@
 var qmc5883l_8h =
 [
     [ "Qmc5883l", "qmc5883l_8h.html#structQmc5883l", [
-      [ "data", "qmc5883l_8h.html#a8cc94c94a03ac3ecab2f61e74bc4d2ed", null ],
+      [ "data", "qmc5883l_8h.html#ae9a1906304409849005f36d6a26f701e", null ],
       [ "data_available", "qmc5883l_8h.html#a1887a51a641fdecbaa550b4ebc666270", null ],
       [ "data_rate", "qmc5883l_8h.html#af426c98218520934b306958770fc6ea1", null ],
       [ "i2c_p", "qmc5883l_8h.html#a4352c9fa6a994360c23fc5c8555f91f0", null ],

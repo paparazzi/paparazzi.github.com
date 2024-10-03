@@ -3718,21 +3718,26 @@ FMS_TIME (ID 180)</h2>
 </table>
 <h2><a class="anchor" id="ROTATING_WING_STATE"></a>
 ROTATING_WING_STATE (ID 181)</h2>
+<p><a class="el" href="group__state__interface.html#structState" title="Structure holding vehicle state data.">State</a> of the rotating wing navigation and skew control.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">current_state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">QUAD, SKEW, FW_THRUST, FW_IDLE, FW, FREE   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">FORCE_HOVER, REQ_HOVER, FORCE_FW, REQ_FW, FREE   </td><td class="markdownTableBodyNone">Current state    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">desired_state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">QUAD, SKEW, FW_THRUST, FW_IDLE, FW, FREE   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">nav_state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">FORCE_HOVER, REQ_HOVER, FORCE_FW, REQ_FW, FREE   </td><td class="markdownTableBodyNone">Current requeted state by NAV    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">wing_angle_deg   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">status   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Bitmask containing status information    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">wing_angle_deg_sp   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">meas_skew_angle   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone">Current measured skew angle    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ADC_position   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">sp_skew_angle   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone">Target skew angle    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pprz_cmd   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">nav_airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Target navigation airspeed before bounding    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">min_airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Minimum airspeed bound for NAV    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">max_airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Maximum airspeed bound for NAV   </td></tr>
 </table>
 <h2><a class="anchor" id="DOUBLET"></a>
 DOUBLET (ID 183)</h2>
@@ -6929,7 +6934,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 2 2024 13:12:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 3 2024 12:01:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

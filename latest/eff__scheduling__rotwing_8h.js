@@ -2,6 +2,7 @@ var eff__scheduling__rotwing_8h =
 [
     [ "rotwing_eff_sched_param_t", "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__param__t", [
       [ "d_rudder_d_pprz", "eff__scheduling__rotwing__V2_8h.html#a798734538843c605aad9f86a25bb8145", null ],
+      [ "DMdpprz_hover_pitch", "eff__scheduling__rotwing__V2_8h.html#ad85d8e2073910b3bb947abab7495b26b", null ],
       [ "DMdpprz_hover_roll", "eff__scheduling__rotwing__V2_8h.html#a0e6bfb06a0f82797246ffcf6a79c1155", null ],
       [ "hover_roll_pitch_coef", "eff__scheduling__rotwing__V2_8h.html#aaac78eb0473dd7a8ff209d2c500ec001", null ],
       [ "hover_roll_roll_coef", "eff__scheduling__rotwing__V2_8h.html#afd11789d80fc7535ac51c87251982280", null ],
@@ -44,8 +45,10 @@ var eff__scheduling__rotwing_8h =
     ] ],
     [ "eff_scheduling_rotwing_init", "eff__scheduling__rotwing_8h.html#ab2dcedfcf1d84e9abe6f3e140d047ea9", null ],
     [ "eff_scheduling_rotwing_periodic", "eff__scheduling__rotwing_8h.html#ad07d6465b5984ad54d8f45c4729ec5b8", null ],
+    [ "eff_sched_p", "eff__scheduling__rotwing_8h.html#a92c1c93ceecb2794850a21fbcb70e976", null ],
     [ "eff_sched_pusher_time", "eff__scheduling__rotwing_8h.html#ac1ca2c16fc942a58b3eda2290794c858", null ],
-    [ "roll_eff_scaling", "eff__scheduling__rotwing_8h.html#a6c7df14d0b39db178ce2b6e0fdff6669", null ],
+    [ "roll_eff_slider", "eff__scheduling__rotwing_8h.html#a70f6bc85082d6d7b569e18c0b721bfaa", null ],
     [ "rotation_angle_setpoint_deg", "eff__scheduling__rotwing_8h.html#a8c9f2b5a055440408d72b9eed34d3f87", null ],
-    [ "rotation_cmd", "eff__scheduling__rotwing_8h.html#ac122cce6b57a3b628a0a94ccb622b341", null ]
+    [ "rotation_cmd", "eff__scheduling__rotwing_8h.html#ac122cce6b57a3b628a0a94ccb622b341", null ],
+    [ "rw_flap_offset", "eff__scheduling__rotwing_8h.html#a715eb2da268e8eed8877a5d8e7621cbc", null ]
 ];

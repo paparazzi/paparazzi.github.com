@@ -1,14 +1,21 @@
 var guidance__indi__hybrid_8h =
 [
     [ "guidance_indi_hybrid_params", "oneloop__andi_8h.html#structguidance__indi__hybrid__params", [
+      [ "climb_vspeed_fwd", "oneloop__andi_8h.html#a46b274574e10649449a87bef254d89e6", null ],
+      [ "climb_vspeed_quad", "oneloop__andi_8h.html#a36d34334a789247a56bf6dd727621770", null ],
+      [ "descend_vspeed_fwd", "oneloop__andi_8h.html#a6120d1dc20c74e644183e7172f281f1a", null ],
+      [ "descend_vspeed_quad", "oneloop__andi_8h.html#ab55115a3ea6a9dfa84f4f132727e30eb", null ],
       [ "heading_bank_gain", "oneloop__andi_8h.html#ab0f838c5e85c69a4ee6826f7f7a5365f", null ],
       [ "liftd_asq", "oneloop__andi_8h.html#af8df41640da5a1c2b01a11f900d7836b", null ],
       [ "liftd_p50", "oneloop__andi_8h.html#a29cf0cb2984b72f46f8b01ddfc01d882", null ],
       [ "liftd_p80", "oneloop__andi_8h.html#a6e4a9d40b757dfabf2f09d16db20b11e", null ],
+      [ "max_airspeed", "oneloop__andi_8h.html#aa5d2c8c6d84fcf7a5ae01d40be03114e", null ],
+      [ "min_airspeed", "oneloop__andi_8h.html#ae3095937fbec199808e1de172f6e256d", null ],
       [ "pos_gain", "oneloop__andi_8h.html#a78de0db7bd0d4a2daa638181c7f0d3ec", null ],
       [ "pos_gainz", "oneloop__andi_8h.html#a145c18215ca9665c9a2de1233e3733ab", null ],
       [ "speed_gain", "oneloop__andi_8h.html#a6ece91f994e2efe0830c3d23f74003cf", null ],
-      [ "speed_gainz", "oneloop__andi_8h.html#afaa6cd5aa4f3ba90c662f22609d3dcb3", null ]
+      [ "speed_gainz", "oneloop__andi_8h.html#afaa6cd5aa4f3ba90c662f22609d3dcb3", null ],
+      [ "stall_protect_gain", "oneloop__andi_8h.html#a1f21f4deae1d433d2e70a80598966cb2", null ]
     ] ],
     [ "GuidanceIndiHybrid_HMode", "guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf", [
       [ "GUIDANCE_INDI_HYBRID_H_POS", "guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa8d4d191381626dd97830deb98dc1dece", null ],
@@ -26,11 +33,13 @@ var guidance__indi__hybrid_8h =
     [ "guidance_indi_init", "guidance__indi__hybrid_8h.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8h.html#af4d00187ad311670f06d0dbbd8acb278", null ],
     [ "guidance_indi_run_mode", "guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87", null ],
+    [ "guidance_indi_set_min_max_airspeed", "guidance__indi__hybrid_8h.html#adb6a3ce54f8ea2d6e707fdb5246d5dfc", null ],
+    [ "coordinated_turn_use_accel", "guidance__indi__hybrid_8h.html#aeedd5797a15621483f6e842d1ef94fe4", null ],
     [ "force_forward", "guidance__indi__hybrid_8h.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "gi_speed_sp", "guidance__indi__hybrid_8h.html#a27af36ef93fea1d415ff80db057b47e9", null ],
+    [ "gi_unbounded_airspeed_sp", "guidance__indi__hybrid_8h.html#ad1f6f478ce19e0a71062dbdade542a8f", null ],
     [ "gih_params", "guidance__indi__hybrid_8h.html#a220bb859f2933240f886cccc7394368a", null ],
     [ "guidance_indi_airspeed_filtering", "guidance__indi__hybrid_8h.html#af19fdcf0b0b3ba9f2240c28403611248", null ],
-    [ "guidance_indi_max_airspeed", "guidance__indi__hybrid_8h.html#ada2fc126082d216494a972d8ecff1e30", null ],
     [ "guidance_indi_max_bank", "guidance__indi__hybrid_8h.html#a313939905cd50d33f06f8fb9d6960d10", null ],
     [ "guidance_indi_min_pitch", "guidance__indi__hybrid_8h.html#a2fe10e27780836aaeffde34631eb03db", null ],
     [ "guidance_indi_pitch_pref_deg", "guidance__indi__hybrid_8h.html#a5c73b14ab34c58b909ec04ba54d5758a", null ],

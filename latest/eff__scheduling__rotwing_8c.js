@@ -1,6 +1,7 @@
 var eff__scheduling__rotwing_8c =
 [
     [ "WING_ROTATION_CAN_ROTWING_ID", "eff__scheduling__rotwing_8c.html#a6848fdace4808fc1675940f2eba48a8f", null ],
+    [ "bound_or_zero", "eff__scheduling__rotwing_8c.html#ac5da65aa35229cae0923cf441a8ed434", null ],
     [ "eff_scheduling_rotwing_init", "eff__scheduling__rotwing_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9", null ],
     [ "eff_scheduling_rotwing_periodic", "eff__scheduling__rotwing_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8", null ],
     [ "eff_scheduling_rotwing_schedule_liftd", "eff__scheduling__rotwing_8c.html#a75cf4e5cfad22197bd6eab09cc2aacc3", null ],
@@ -21,6 +22,6 @@ var eff__scheduling__rotwing_8c =
     [ "eff_sched_pusher_time", "eff__scheduling__rotwing_8c.html#ac1ca2c16fc942a58b3eda2290794c858", null ],
     [ "eff_sched_var", "eff__scheduling__rotwing_8c.html#a5d698b8f15183c20237f9c6f5275f72a", null ],
     [ "eff_scheduling_rotwing_lift_d", "eff__scheduling__rotwing_8c.html#a5a17ae118a806b0b28b23d914489e717", null ],
-    [ "roll_eff_scaling", "eff__scheduling__rotwing_8c.html#a6c7df14d0b39db178ce2b6e0fdff6669", null ],
+    [ "rw_flap_offset", "eff__scheduling__rotwing_8c.html#a715eb2da268e8eed8877a5d8e7621cbc", null ],
     [ "wing_position_ev", "eff__scheduling__rotwing_8c.html#aae95f0c99e5a489d1081cc99201e1578", null ]
 ];

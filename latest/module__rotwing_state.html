@@ -98,11 +98,7 @@ Module configuration options</h1>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
 <ul>
-<li><b>section</b> name: <code>ROTWING_STATE</code> prefix: <code>ROTWING_STATE_</code> <ul>
-<li><b>name</b> <code>USE_ROTATION_REF_MODEL</code> <b>value:</b> <em>FALSE</em> <br  />
- Description: Slow down the wing rotation with a reference model</li>
-</ul>
-</li>
+<li><b>section</b> name: <code>ROTWING_STATE</code> prefix: <code>ROTWING_STATE_</code> </li>
 </ul>
 <h1><a class="anchor" id="functions__rotwing_state"></a>
 Module functions</h1>
@@ -110,19 +106,13 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="rotwing__state_8c.html#a04708a9a7f4e87ab6c12d7a47beeb4bd">init_rotwing_state()</a></li>
+<li><a class="el" href="rotwing__state_8c.html#a5187c7100a4e54eb7d052892fbafd06e">rotwing_state_init()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="rotwing__state_8c.html#aeb77669ee7369ed49ea36c28ce578d72">periodic_rotwing_state()</a><ul>
-<li>Frequency in Hz: <em>50</em> </li>
-<li>Autorun: <em>LOCK</em> <br  />
- Periodic function automatically starts after init and can't be stopped.</li>
-</ul>
-</li>
-<li><a class="el" href="rotwing__state_8c.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state_skew_actuator_periodic()</a><ul>
+<li><a class="el" href="rotwing__state_8c.html#aea48320cf6f1fd18ec0a0046b46c9c73">rotwing_state_periodic()</a><ul>
 <li>Running at maximum module frequency.</li>
 <li>Autorun: <em>LOCK</em> <br  />
  Periodic function automatically starts after init and can't be stopped.</li>
@@ -149,26 +139,28 @@ Raw rotwing_state.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">keeps</span> <span class="keyword">track</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">current</span> <span class="keyword">state</span> <span class="keyword">of</span> <span class="keyword">a</span> <span class="keyword">rotating</span> <span class="keyword">wing</span> <span class="keyword">drone</span> <span class="keyword">and</span> <span class="keyword">desired</span> <span class="keyword">state</span> <span class="keyword">set</span> <span class="keyword">by</span> <span class="keyword">the</span> <span class="keyword">RC</span> <span class="keyword">or</span> <span class="keyword">flightplan.</span> <span class="keyword">Paramters</span> <span class="keyword">are</span> <span class="keyword">being</span> <span class="keyword">scheduled</span> <span class="keyword">in</span> <span class="keyword">each</span> <span class="keyword">change</span> <span class="keyword">of</span> <span class="keyword">a</span> <span class="keyword">current</span> <span class="keyword">state</span> <span class="keyword">and</span> <span class="keyword">desired</span> <span class="keyword">state.</span> <span class="keyword">Functions</span> <span class="keyword">are</span> <span class="keyword">defined</span> <span class="keyword">in</span> <span class="keyword">this</span> <span class="keyword">module</span> <span class="keyword">to</span> <span class="keyword">call</span> <span class="keyword">the</span> <span class="keyword">actual</span> <span class="keyword">state</span> <span class="keyword">and</span> <span class="keyword">desired</span> <span class="keyword">state</span> <span class="keyword">and</span> <span class="keyword">set</span> <span class="keyword">a</span> <span class="keyword">desired</span> <span class="keyword">state.</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_STATE&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;ROTWING_STATE_&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ROTATION_REF_MODEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Slow down the wing rotation with a reference model&quot;</span>/&gt;</div>
+<div class="line">    </div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;RotWingState&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state_skewing.wing_angle_deg_sp&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;90&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;skew angle&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state_skewing.force_rotation_angle&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;force_skew&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state_max_hover_speed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;25&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;hover_speed&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;hover_motors_active&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;h_motors_active&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;bool_disable_hover_motors&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;h_motors_disable&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;RotWing&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.nav_state&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FORCE_HOVER|REQ_HOVER|FORCE_FW|REQ_FW|FREE&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;nav_state&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.fw_min_airspeed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;fw_min_airspeed&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.cruise_airspeed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;cruise_airspeed&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.force_skew&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;force_skew&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.sp_skew_angle_deg&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;90&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;sp_skew_angle&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.fail_skew_angle&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;OFF|ON&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;fail_skew&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.fail_hover_motor&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;OFF|ON&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;fail_hover&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotwing_state.fail_pusher_motor&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;OFF|ON&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;fail_pusher&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotwing_state.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;init_rotwing_state()&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;periodic_rotwing_state()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;50&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rotwing_state_skew_actuator_periodic()&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rotwing_state_init()&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rotwing_state_periodic()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotwing_state.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -180,7 +172,7 @@ Raw rotwing_state.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 2 2024 13:12:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 3 2024 12:01:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,20 +1,22 @@
 <map id="stateGetPositionNed_f" name="stateGetPositionNed_f">
-<area shape="rect" id="node1" title="Get position in local NED coordinates (float)." alt="" coords="735,376,903,403"/>
-<area shape="rect" id="node2" href="$obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2" title=" " alt="" coords="516,5,669,32"/>
-<area shape="rect" id="node4" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="540,56,645,83"/>
-<area shape="rect" id="node6" href="$ekf__aw__wrapper_8c.html#adf97980c1fce5d86052db0b10025c70d" title=" " alt="" coords="499,107,687,133"/>
-<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="502,157,683,184"/>
-<area shape="rect" id="node11" href="$rotorcraft_2guidance_2guidance__v_8c.html#a726df520277832e62c3f28e00518394b" title="Enter GUIDED mode control." alt="" coords="499,208,687,235"/>
-<area shape="rect" id="node14" href="$logger__file_8c.html#aabde24b05774e16f4347f675ca00704f" title="Write CSV row Write values at this timestamp to log file." alt="" coords="512,259,673,285"/>
-<area shape="rect" id="node16" href="$mavlink_8c.html#acf27b8ebaf73137224cee8453df530a8" title=" " alt="" coords="517,310,668,351"/>
-<area shape="rect" id="node19" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="524,427,661,453"/>
+<area shape="rect" id="node1" title="Get position in local NED coordinates (float)." alt="" coords="780,427,948,453"/>
+<area shape="rect" id="node2" href="$obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2" title=" " alt="" coords="539,5,692,32"/>
+<area shape="rect" id="node4" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="563,56,668,83"/>
+<area shape="rect" id="node6" href="$ekf__aw__wrapper_8c.html#adf97980c1fce5d86052db0b10025c70d" title=" " alt="" coords="521,107,709,133"/>
+<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="525,157,706,184"/>
+<area shape="rect" id="node11" href="$rotorcraft_2guidance_2guidance__v_8c.html#a726df520277832e62c3f28e00518394b" title="Enter GUIDED mode control." alt="" coords="521,208,709,235"/>
+<area shape="rect" id="node14" href="$logger__file_8c.html#aabde24b05774e16f4347f675ca00704f" title="Write CSV row Write values at this timestamp to log file." alt="" coords="535,259,696,285"/>
+<area shape="rect" id="node16" href="$mavlink_8c.html#acf27b8ebaf73137224cee8453df530a8" title=" " alt="" coords="540,310,691,351"/>
+<area shape="rect" id="node19" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="547,427,684,453"/>
 <area shape="rect" id="node20" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="278,411,421,437"/>
-<area shape="rect" id="node22" href="$ins__flow_8c.html#a55c722921bb81fa0d3a9767dd6d787bf" title=" " alt="" coords="530,477,655,504"/>
-<area shape="rect" id="node24" href="$rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3" title=" " alt="" coords="500,528,685,555"/>
-<area shape="rect" id="node25" href="$ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="536,579,649,605"/>
-<area shape="rect" id="node27" href="$tag__tracking_8c.html#aee8b9e7c75b96e12da36873bb5537078" title="Control function." alt="" coords="509,630,676,671"/>
-<area shape="rect" id="node28" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="507,695,678,737"/>
-<area shape="rect" id="node29" href="$tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="515,761,670,788"/>
+<area shape="rect" id="node22" href="$ins__flow_8c.html#a55c722921bb81fa0d3a9767dd6d787bf" title=" " alt="" coords="553,477,678,504"/>
+<area shape="rect" id="node24" href="$rotwing__state_8c.html#ae046087f644a3e732de4bd9a920dd5d5" title=" " alt="" coords="533,529,697,570"/>
+<area shape="rect" id="node25" href="$rotwing__state_8c.html#acd4da143c5743a15ee87b61e4753d60e" title=" " alt="" coords="499,595,732,621"/>
+<area shape="rect" id="node26" href="$rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3" title=" " alt="" coords="523,645,708,672"/>
+<area shape="rect" id="node27" href="$ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="559,696,672,723"/>
+<area shape="rect" id="node29" href="$tag__tracking_8c.html#aee8b9e7c75b96e12da36873bb5537078" title="Control function." alt="" coords="532,747,699,789"/>
+<area shape="rect" id="node30" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="530,813,701,854"/>
+<area shape="rect" id="node31" href="$tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="538,879,693,905"/>
 <area shape="rect" id="node3" href="$obstacle__avoidance_8c.html#a510b29d4d94a1e5cbe6aa87b57386f93" title=" " alt="" coords="294,5,405,32"/>
 <area shape="rect" id="node5" href="$cv__target__localization_8c.html#a985eb3daada07ed9f76cf8dceb5300b4" title=" " alt="" coords="264,56,435,83"/>
 <area shape="rect" id="node8" href="$rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="248,157,451,184"/>
@@ -27,8 +29,8 @@
 <area shape="rect" id="node18" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="282,360,417,387"/>
 <area shape="rect" id="node21" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="255,461,443,488"/>
 <area shape="rect" id="node23" href="$ins__flow_8c.html#aaec1213e138f25bd822716c107ecde5e" title=" " alt="" coords="286,512,413,539"/>
-<area shape="rect" id="node26" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="298,579,401,605"/>
-<area shape="rect" id="node30" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="297,732,402,759"/>
-<area shape="rect" id="node32" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="276,783,423,825"/>
-<area shape="rect" id="node31" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="37,732,168,759"/>
+<area shape="rect" id="node28" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="298,696,401,723"/>
+<area shape="rect" id="node32" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="297,849,402,876"/>
+<area shape="rect" id="node34" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="276,901,423,942"/>
+<area shape="rect" id="node33" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="37,849,168,876"/>
 </map>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX230 =
 {
-"vl53l1x__api_8c.html#a2512e4284d9f5489bacd29b3757d5f7c":[12,0,1,0,7,132,24],
 "vl53l1x__api_8c.html#a2683994745dae072f34e56e31d991dc8":[12,0,1,0,7,132,34],
 "vl53l1x__api_8c.html#a2c2712e30ef7022410a78af61ee64770":[12,0,1,0,7,132,4],
 "vl53l1x__api_8c.html#a3193a952dc2159c8ae3e4092ea6d5eeb":[12,0,1,0,7,132,13],
@@ -202,7 +201,6 @@ var NAVTREEINDEX230 =
 "vl53l5cx__api_8h.html#a051760c0e61473de4ce559145bfa67bb":[12,0,1,0,7,137,43],
 "vl53l5cx__api_8h.html#a0653c49a236b5435b0781fc211bb2c5c":[12,0,1,0,7,137,62],
 "vl53l5cx__api_8h.html#a06bcbf0056e46d3b018f25366d89d180":[12,0,1,0,7,137,32],
-"vl53l5cx__api_8h.html#a074564d22e0f117c72aede4f88931172":[12,0,1,0,7,137,1,2],
 "vl53l5cx__api_8h.html#a07697c23a574ae8d89053cec278aaffd":[12,0,1,0,7,137,36],
 "vl53l5cx__api_8h.html#a079e466eff793073f2b6af17c33be40f":[12,0,1,0,7,137,3,3],
 "vl53l5cx__api_8h.html#a09cc536a14f7a4c4bd7ce655905703b8":[12,0,1,0,7,137,87],
@@ -238,6 +236,7 @@ var NAVTREEINDEX230 =
 "vl53l5cx__api_8h.html#a3cdbcee9312eb0598d35c5abb2ad0ffd":[12,0,1,0,7,137,3,5],
 "vl53l5cx__api_8h.html#a3e83045e58927a10a79effb68c96f74c":[12,0,1,0,7,137,0,0],
 "vl53l5cx__api_8h.html#a419b7ed9750ca3cd1e4d90c3f4b19d41":[12,0,1,0,7,137,41],
+"vl53l5cx__api_8h.html#a434f7c9ad39fd163b2983851257c9f77":[12,0,1,0,7,137,1,2],
 "vl53l5cx__api_8h.html#a473699d83c054e1b69b3fd5da6c0dc54":[12,0,1,0,7,137,92],
 "vl53l5cx__api_8h.html#a490701882596a5661694c99cb1f7997e":[12,0,1,0,7,137,75],
 "vl53l5cx__api_8h.html#a4a4c326deb4c14e7d21dfa25b522c0b9":[12,0,1,0,7,137,95],
@@ -249,5 +248,6 @@ var NAVTREEINDEX230 =
 "vl53l5cx__api_8h.html#a599dcce2998a6b40b1e38e8c6006cb0a":[12,0,1,0,7,137,4,2],
 "vl53l5cx__api_8h.html#a5b229a80f9fa4844734e44de676dc29e":[12,0,1,0,7,137,6],
 "vl53l5cx__api_8h.html#a5bff9b93053a03f931212cc3ece7bc2b":[12,0,1,0,7,137,65],
-"vl53l5cx__api_8h.html#a5e1717554c332796a684da3c03359742":[12,0,1,0,7,137,51]
+"vl53l5cx__api_8h.html#a5e1717554c332796a684da3c03359742":[12,0,1,0,7,137,51],
+"vl53l5cx__api_8h.html#a61ca5298b7bab2563060eb619fa85b49":[12,0,1,0,7,137,24]
 };
