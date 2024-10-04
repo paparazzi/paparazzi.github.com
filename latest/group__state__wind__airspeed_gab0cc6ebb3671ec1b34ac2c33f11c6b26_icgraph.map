@@ -1,5 +1,5 @@
 <map id="stateGetAirspeed_f" name="stateGetAirspeed_f">
-<area shape="rect" id="node1" title="Get airspeed (float)." alt="" coords="729,777,876,804"/>
+<area shape="rect" id="node1" title="Get airspeed (float)." alt="" coords="729,807,876,833"/>
 <area shape="rect" id="node2" href="$air__data_8c.html#abdd14cec10b066ee747da35cbab63334" title="Parse datalink wind info message." alt="" coords="471,5,673,32"/>
 <area shape="rect" id="node3" href="$guidance__indi__hybrid_8c.html#abff8a99c2d28f03e60476e60abaf1354" title=" " alt="" coords="519,56,625,83"/>
 <area shape="rect" id="node4" href="$scheduling__indi__simple_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="500,107,644,149"/>
@@ -24,10 +24,11 @@
 <area shape="rect" id="node30" href="$rotwing__state__V2_8c.html#a1c22a756e481c679525540a7dd07b345" title=" " alt="" coords="492,1193,652,1220"/>
 <area shape="rect" id="node31" href="$eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="463,1244,681,1271"/>
 <area shape="rect" id="node33" href="$fixedwing_2autopilot__firmware_8c.html#a66607b1cbf8f7535ab395e10f531e989" title=" " alt="" coords="514,1295,630,1321"/>
-<area shape="rect" id="node36" href="$nav__smooth_8c.html#a659c7f0a0b4b273c6ef464afa8d07e6d" title=" " alt="" coords="515,1345,629,1372"/>
-<area shape="rect" id="node37" href="$stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2" title="Function that sets the u_min, u_max and u_pref if function not elsewhere defined." alt="" coords="503,1397,641,1438"/>
-<area shape="rect" id="node38" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop." alt="" coords="507,1463,637,1489"/>
-<area shape="rect" id="node40" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="481,1513,663,1540"/>
+<area shape="rect" id="node36" href="$rotwing__state__V2_8c.html#ab8f72a98676fba24f38387c5a706b612" title=" " alt="" coords="497,1346,647,1387"/>
+<area shape="rect" id="node38" href="$nav__smooth_8c.html#a659c7f0a0b4b273c6ef464afa8d07e6d" title=" " alt="" coords="515,1412,629,1439"/>
+<area shape="rect" id="node39" href="$stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2" title="Function that sets the u_min, u_max and u_pref if function not elsewhere defined." alt="" coords="503,1463,641,1505"/>
+<area shape="rect" id="node40" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop." alt="" coords="507,1529,637,1556"/>
+<area shape="rect" id="node42" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="481,1580,663,1607"/>
 <area shape="rect" id="node7" href="$eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="242,229,414,270"/>
 <area shape="rect" id="node9" href="$eff__scheduling__rotwing_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="242,294,414,335"/>
 <area shape="rect" id="node19" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="277,781,379,808"/>
@@ -38,5 +39,6 @@
 <area shape="rect" id="node32" href="$eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="256,1233,400,1274"/>
 <area shape="rect" id="node34" href="$fixedwing_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="241,1299,415,1325"/>
 <area shape="rect" id="node35" href="$autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function." alt="" coords="45,1299,153,1325"/>
-<area shape="rect" id="node39" href="$fixedwing_2autopilot__static_8c.html#a315546d9034361bbc6970b3792dc8b67" title=" " alt="" coords="274,1463,382,1489"/>
+<area shape="rect" id="node37" href="$rotwing__state__V2_8c.html#a04708a9a7f4e87ab6c12d7a47beeb4bd" title=" " alt="" coords="259,1353,397,1380"/>
+<area shape="rect" id="node41" href="$fixedwing_2autopilot__static_8c.html#a315546d9034361bbc6970b3792dc8b67" title=" " alt="" coords="274,1529,382,1556"/>
 </map>

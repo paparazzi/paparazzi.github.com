@@ -322,7 +322,7 @@ var searchData=
   ['gibbs_5fcor_8934',['gibbs_cor',['../ahrs__float__mlkf_8h.html#a8b9b8f512d62e94fa204d788467406e3',1,'AhrsMlkf']]],
   ['gih_5fcoordinated_5fturn_5fmax_5fairspeed_8935',['gih_coordinated_turn_max_airspeed',['../guidance__indi__hybrid_8c.html#a53f3b53c80a75ddd11dd40e28cba3515',1,'guidance_indi_hybrid.c']]],
   ['gih_5fcoordinated_5fturn_5fmin_5fairspeed_8936',['gih_coordinated_turn_min_airspeed',['../guidance__indi__hybrid_8c.html#a377136f88540aa274fda3fcc9cb439d7',1,'guidance_indi_hybrid.c']]],
-  ['gih_5fparams_8937',['gih_params',['../oneloop__andi_8h.html#a220bb859f2933240f886cccc7394368a',1,'gih_params():&#160;guidance_indi_hybrid.c'],['../guidance__indi__hybrid_8c.html#a220bb859f2933240f886cccc7394368a',1,'gih_params():&#160;guidance_indi_hybrid.c'],['../guidance__indi__hybrid_8h.html#a220bb859f2933240f886cccc7394368a',1,'gih_params():&#160;guidance_indi_hybrid.h']]],
+  ['gih_5fparams_8937',['gih_params',['../oneloop__andi_8h.html#a220bb859f2933240f886cccc7394368a',1,'gih_params():&#160;guidance_indi_hybrid.c'],['../guidance__indi__hybrid_8c.html#a220bb859f2933240f886cccc7394368a',1,'gih_params():&#160;guidance_indi_hybrid.c'],['../guidance__indi__hybrid_8h.html#a220bb859f2933240f886cccc7394368a',1,'gih_params():&#160;guidance_indi_hybrid.c']]],
   ['glide_5fwing_5flock_20module_8938',['glide_wing_lock module',['../module__glide_wing_lock.html',1,'onboard_modules']]],
   ['glide_5fwing_5flock_2ec_8939',['glide_wing_lock.c',['../glide__wing__lock_8c.html',1,'']]],
   ['glide_5fwing_5flock_2eh_8940',['glide_wing_lock.h',['../glide__wing__lock_8h.html',1,'']]],
