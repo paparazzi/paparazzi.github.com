@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"flight__gear_8h.html#a5b1a78307c7c2577065261ff94cda500":[12,0,1,1,1,1,1,9],
 "flight__gear_8h.html#a5b81e87dfc7926543313d1c40ff89100":[12,0,1,1,1,1,0,51],
 "flight__gear_8h.html#a5c7a435e697e3346412beebaab9b56db":[12,0,1,1,1,1,14],
 "flight__gear_8h.html#a5e1f34cae92b657d227c95cd4364db20":[12,0,1,1,1,1,0,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "frsky__x_8h.html#structfifo__t":[12,0,1,0,0,3,10,0],
 "frsky__x_8h.html#structfrsky__x__serial__periph":[12,0,1,0,6,15,14,1],
 "frsky__x_8h_source.html":[12,0,1,0,6,15,14],
-"functions.html":[11,2,0,0],
-"functions.html":[11,2,0]
+"functions.html":[11,2,0,0]
 };

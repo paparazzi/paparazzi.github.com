@@ -1,5 +1,7 @@
 var NAVTREEINDEX209 =
 {
+"stm32_2mcu__periph_2adc__arch_8c.html#acd02461f91550e084771478dfdd1ca54":[12,0,1,0,0,3,0,0,11],
+"stm32_2mcu__periph_2adc__arch_8c.html#ad0eb89a1ba54932bcb9f202b2581fee2":[12,0,1,0,0,3,0,0,3],
 "stm32_2mcu__periph_2adc__arch_8c.html#ae30d4e1614f32f3245b1f2311f0f8737":[12,0,1,0,0,3,0,0,13],
 "stm32_2mcu__periph_2adc__arch_8c.html#af155701fd8bbfe59180a00810911d34e":[12,0,1,0,0,3,0,0,10],
 "stm32_2mcu__periph_2adc__arch_8c_source.html":[12,0,1,0,0,3,0,0],
@@ -12,8 +14,8 @@ var NAVTREEINDEX209 =
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baa5aea661a147e9fe25d5c2a2d48a51e7":[12,0,1,0,0,3,0,1,3,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baf9b37238aba13fc136c5f0cce2db1838":[12,0,1,0,0,3,0,1,3,0],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9":[12,0,1,0,0,3,0,1,1],
-"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,3,0,1,1,1],
+"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,3,0,1],
 "stm32_2mcu__periph_2gpio__arch_8c.html":[12,0,1,0,0,3,0,4],
 "stm32_2mcu__periph_2gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2":[12,0,1,0,0,3,0,4,0],
@@ -72,8 +74,8 @@ var NAVTREEINDEX209 =
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,3,0,9,2,3],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,0,0,12,2,5],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,3,0,9,2,5],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,0,0,12,2,4],
+"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[12,0,1,0,0,3,0,9,1],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f":[12,0,1,0,0,3,0,9,0],
 "stm32_2mcu__periph_2pwm__input__arch_8h_source.html":[12,0,1,0,0,3,0,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX209 =
 "stm32_2peripherals_2max1168__arch_8h_source.html":[12,0,1,0,0,3,2,3],
 "stm32_2usb__ser__hw_8c.html":[12,0,1,0,0,3,10],
 "stm32_2usb__ser__hw_8c.html#a0479d91765cee306c29db9e366752051":[12,0,1,0,0,3,10,35],
-"stm32_2usb__ser__hw_8c.html#a081c07a88a2108ff93ef4cae8a08806a":[12,0,1,0,0,3,10,11],
-"stm32_2usb__ser__hw_8c.html#a0c454689009c64ad0aac673f632f99b9":[12,0,1,0,0,3,10,40],
-"stm32_2usb__ser__hw_8c.html#a12493139993bcd851cdfb44eb0abae57":[12,0,1,0,0,3,10,42]
+"stm32_2usb__ser__hw_8c.html#a081c07a88a2108ff93ef4cae8a08806a":[12,0,1,0,0,3,10,11]
 };

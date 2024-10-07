@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_fish.html#configuration__nav_fish":[1,325,1],
+"module__nav_fish.html#functions__nav_fish":[1,325,2],
 "module__nav_fish.html#module_load_example__nav_fish":[1,325,0],
 "module__nav_fish.html#module_xml__nav_fish":[1,325,2,0],
 "module__nav_flower.html":[1,326],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "module__px4flow.html#module_load_example__px4flow":[1,357,0],
 "module__px4flow.html#module_xml__px4flow":[1,357,2,0],
 "module__px4flow_i2c.html":[1,358],
-"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,358,1],
-"module__px4flow_i2c.html#functions__px4flow_i2c":[1,358,2],
-"module__px4flow_i2c.html#module_load_example__px4flow_i2c":[1,358,0]
+"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,358,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX140 =
 {
+"module__switch_servo.html#module_xml__switch_servo":[1,447,2,0],
+"module__switch_uart.html":[1,448],
 "module__switch_uart.html#functions__switch_uart":[1,448,1],
 "module__switch_uart.html#module_load_example__switch_uart":[1,448,0],
 "module__switch_uart.html#module_xml__switch_uart":[1,448,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX140 =
 "module__wind_estimator.html#module_xml__wind_estimator":[1,303,1,0],
 "module__wind_gfi.html":[1,304],
 "module__wind_gfi.html#functions__wind_gfi":[1,304,1],
-"module__wind_gfi.html#module_load_example__wind_gfi":[1,304,0],
-"module__wind_gfi.html#module_xml__wind_gfi":[1,304,1,0],
-"module__windturbine.html":[1,305]
+"module__wind_gfi.html#module_load_example__wind_gfi":[1,304,0]
 };

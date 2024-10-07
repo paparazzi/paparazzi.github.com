@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__gps_datalink.html#datalink_functions__gps_datalink":[1,154,2],
+"module__gps_datalink.html#functions__gps_datalink":[1,154,1],
 "module__gps_datalink.html#module_load_example__gps_datalink":[1,154,0],
 "module__gps_datalink.html#module_xml__gps_datalink":[1,154,2,0],
 "module__gps_furuno.html":[1,155],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_aspirin_i2c_v1_5.html":[1,192],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,192,0],
 "module__imu_aspirin_v1_0.html":[1,193],
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,193,0],
-"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,193,0,0],
-"module__imu_aspirin_v1_5.html":[1,194]
+"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,193,0]
 };

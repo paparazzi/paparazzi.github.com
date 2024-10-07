@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d":[12,0,1,0,6,42,0,2,8],
 "group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d":[12,0,1,0,6,42,0,3,6],
 "group__chprintf.html#ga741317a25ba4d8c7bcc132bd2ccabac1":[9,10,10],
 "group__chprintf.html#ga741317a25ba4d8c7bcc132bd2ccabac1":[12,0,1,0,6,42,0,2,7],
@@ -23,8 +24,8 @@ var NAVTREEINDEX65 =
 "group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e":[9,10,13],
 "group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e":[12,0,1,0,6,42,0,2,10],
 "group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[9,10,6],
-"group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[12,0,1,0,6,42,0,3,1],
 "group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[12,0,1,0,6,42,0,2,3],
+"group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010":[12,0,1,0,6,42,0,3,1],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[9,10,8],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[12,0,1,0,6,42,0,2,5],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[12,0,1,0,6,42,0,3,3],
@@ -52,8 +53,8 @@ var NAVTREEINDEX65 =
 "group__config.html":[9,5],
 "group__config.html#ga01fa48cf866c26bad886a15c37571f99":[12,0,1,0,0,0,3,67],
 "group__config.html#ga01fa48cf866c26bad886a15c37571f99":[9,5,67],
-"group__config.html#ga033f2f0ca73bee1d11095d27e5e6b007":[9,5,30],
 "group__config.html#ga033f2f0ca73bee1d11095d27e5e6b007":[12,0,1,0,0,0,3,30],
+"group__config.html#ga033f2f0ca73bee1d11095d27e5e6b007":[9,5,30],
 "group__config.html#ga03c17b48d4f0444046d41102acb3a54b":[12,0,1,0,0,0,3,28],
 "group__config.html#ga03c17b48d4f0444046d41102acb3a54b":[9,5,28],
 "group__config.html#ga04e4e037498950df8bdef88bdd199494":[12,0,1,0,0,0,3,59],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "group__i2c.html#ga4757adc18b278c40ced0d79f4e104460":[12,0,1,0,5,6,0],
 "group__i2c.html#ga4d31410b7d9628074bd8984dfc2fd10d":[9,0,0,8],
 "group__i2c.html#ga4d31410b7d9628074bd8984dfc2fd10d":[12,0,1,0,5,6,5],
-"group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367":[9,0,0,21],
-"group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367":[12,0,1,0,5,6,18]
+"group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367":[9,0,0,21]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__actuators_ardrone2.html":[1,2],
+"module__actuators_ardrone2.html#module_load_example__actuators_ardrone2":[1,2,0],
 "module__actuators_ardrone2.html#module_xml__actuators_ardrone2":[1,2,0,0],
 "module__actuators_asctec_v2.html":[1,3],
 "module__actuators_asctec_v2.html#configuration__actuators_asctec_v2":[1,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__baro_bmp280_i2c.html#functions__baro_bmp280_i2c":[1,393,2],
 "module__baro_bmp280_i2c.html#module_load_example__baro_bmp280_i2c":[1,393,0],
 "module__baro_bmp280_i2c.html#module_xml__baro_bmp280_i2c":[1,393,2,0],
-"module__baro_bmp3.html":[1,394],
-"module__baro_bmp3.html#configuration__baro_bmp3":[1,394,1],
-"module__baro_bmp3.html#functions__baro_bmp3":[1,394,2]
+"module__baro_bmp3.html":[1,394]
 };

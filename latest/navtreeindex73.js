@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"group__spi.html#gadbddceb6a0fdd14592a2ffe9644a87a9":[9,0,1,8],
 "group__spi.html#gadbddceb6a0fdd14592a2ffe9644a87a9":[12,0,1,0,5,16,7],
 "group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70":[12,0,1,0,0,0,0,16,6],
 "group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70":[9,0,1,26],
@@ -16,8 +17,8 @@ var NAVTREEINDEX73 =
 "group__spi.html#gaf58a9c9069d93bd0664d2197c87ce9ff":[12,0,1,0,5,16,3],
 "group__spi.html#gaf5b653936008438cdaad284e3aff2f22":[9,0,1,9],
 "group__spi.html#gaf5b653936008438cdaad284e3aff2f22":[12,0,1,0,5,16,8],
-"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,0,0,16,13],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[9,0,1,32],
+"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,0,0,16,13],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,1,0,11,12],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,2,0,9,2],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,3,0,11,19],
@@ -172,12 +173,12 @@ var NAVTREEINDEX73 =
 "group__state__interface.html#a91cb53c4708d25d296b9844e3055992c":[9,4,7,0],
 "group__state__interface.html#a91cb53c4708d25d296b9844e3055992c":[9,4,8,0],
 "group__state__interface.html#ac816bc9e56dde04e26318cba12267f57":[9,4,6,34],
-"group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba":[9,4,10],
 "group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba":[12,0,1,0,28,32],
+"group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba":[9,4,10],
 "group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba":[12,0,1,0,29,163],
-"group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a":[12,0,1,0,29,110],
 "group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a":[9,4,9],
 "group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a":[12,0,1,0,28,31],
+"group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a":[12,0,1,0,29,110],
 "group__state__interface.html#structState":[9,4,6],
 "group__state__interface.html#unionState_8windspeed__f":[9,4,8],
 "group__state__interface.html#unionState_8windspeed__i":[9,4,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "group__state__position.html#ga8d0d992132c462c79867a8b5feab2aa1":[12,0,1,0,29,13],
 "group__state__position.html#ga8d0d992132c462c79867a8b5feab2aa1":[9,4,0,4],
 "group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e":[9,4,0,12],
-"group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e":[12,0,1,0,28,14],
-"group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e":[12,0,1,0,29,51]
+"group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e":[12,0,1,0,28,14]
 };

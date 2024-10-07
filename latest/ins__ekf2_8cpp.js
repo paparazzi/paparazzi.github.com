@@ -49,6 +49,7 @@ var ins__ekf2_8cpp =
     [ "ins_ekf2_publish_attitude", "ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed", null ],
     [ "ins_ekf2_remove_gps", "ins__ekf2_8cpp.html#a359b827ae64da4b578ea9e25e273ba18", null ],
     [ "ins_ekf2_update", "ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b", null ],
+    [ "ins_reset_altitude_ref", "ins__ekf2_8cpp.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
     [ "ins_reset_local_origin", "ins__ekf2_8cpp.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "mag_cb", "ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02", null ],
     [ "optical_flow_cb", "ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f", null ],

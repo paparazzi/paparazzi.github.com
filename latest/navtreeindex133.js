@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__baro_bmp3.html#configuration__baro_bmp3":[1,394,1],
+"module__baro_bmp3.html#functions__baro_bmp3":[1,394,2],
 "module__baro_bmp3.html#module_load_example__baro_bmp3":[1,394,0],
 "module__baro_bmp3.html#module_xml__baro_bmp3":[1,394,2,0],
 "module__baro_board.html":[1,395],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__datalink_common.html#module_load_example__datalink_common":[1,107,0],
 "module__datalink_common.html#module_xml__datalink_common":[1,107,2,0],
 "module__dc_ctrl_parrot_mykonos.html":[1,130],
-"module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos":[1,130,1],
-"module__dc_ctrl_parrot_mykonos.html#functions__dc_ctrl_parrot_mykonos":[1,130,2],
-"module__dc_ctrl_parrot_mykonos.html#module_load_example__dc_ctrl_parrot_mykonos":[1,130,0]
+"module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos":[1,130,1]
 };

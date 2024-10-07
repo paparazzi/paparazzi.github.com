@@ -22,6 +22,7 @@ var eff__scheduling__rotwing_8c =
     [ "eff_sched_pusher_time", "eff__scheduling__rotwing_8c.html#ac1ca2c16fc942a58b3eda2290794c858", null ],
     [ "eff_sched_var", "eff__scheduling__rotwing_8c.html#a5d698b8f15183c20237f9c6f5275f72a", null ],
     [ "eff_scheduling_rotwing_lift_d", "eff__scheduling__rotwing_8c.html#a5a17ae118a806b0b28b23d914489e717", null ],
+    [ "roll_eff_slider", "eff__scheduling__rotwing_8c.html#a70f6bc85082d6d7b569e18c0b721bfaa", null ],
     [ "rw_flap_offset", "eff__scheduling__rotwing_8c.html#a715eb2da268e8eed8877a5d8e7621cbc", null ],
     [ "wing_position_ev", "eff__scheduling__rotwing_8c.html#aae95f0c99e5a489d1081cc99201e1578", null ]
 ];
