@@ -1,12 +1,26 @@
 var common__flight__plan_8c =
 [
+    [ "common_flight_plan_init", "common__flight__plan_8c.html#ab4ea00d9afaff6cc43b34f5c27eea85a", null ],
+    [ "get_last_block", "common__flight__plan_8c.html#a4415f516bebe6fea7056df32d168faed", null ],
+    [ "get_last_stage", "common__flight__plan_8c.html#a2d83e4fd746cd8d96c7bf2ad162ee267", null ],
+    [ "get_nav_block", "common__flight__plan_8c.html#aab061f2e08fcc6855145d96c71d77439", null ],
+    [ "get_nav_stage", "common__flight__plan_8c.html#a369045cc00dad54bbc176aed3dbab9ea", null ],
     [ "nav_goto_block", "common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2", null ],
+    [ "nav_goto_next_block", "common__flight__plan_8c.html#ae066d45c079b5ef63cb3396b40c6bb40", null ],
+    [ "nav_goto_next_stage", "common__flight__plan_8c.html#a1985b09fefa596836ded1ea11ab50834", null ],
     [ "nav_init_block", "common__flight__plan_8c.html#aa3cbfa3c23e459645a8e67b1bb4a1bef", null ],
+    [ "nav_return", "common__flight__plan_8c.html#a2226cec9d0d2957daccf0d81ed872c9c", null ],
+    [ "set_nav_block", "common__flight__plan_8c.html#a4aec75973e2e42ac8781313ff0b4dde5", null ],
+    [ "set_nav_stage", "common__flight__plan_8c.html#a6ab7ed56c012c7c59c198f699546029f", null ],
     [ "block_time", "common__flight__plan_8c.html#ae3eebf6396d9b2539b27b9477c46724d", null ],
     [ "last_block", "common__flight__plan_8c.html#a5d3ddba0962294e6c33573f86c4b1eec", null ],
     [ "last_stage", "common__flight__plan_8c.html#a731227193d590af31f6ab76fcd4f6543", null ],
     [ "nav_block", "common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be", null ],
     [ "nav_stage", "common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49", null ],
+    [ "private_last_block", "common__flight__plan_8c.html#a049273ee2adb1510803cd91ede3fc963", null ],
+    [ "private_last_stage", "common__flight__plan_8c.html#a3c1a55ddb20d860d6601eabc2cccd60d", null ],
+    [ "private_nav_block", "common__flight__plan_8c.html#a0dbcefe2d80f8e966f0926e21d6e0afb", null ],
+    [ "private_nav_stage", "common__flight__plan_8c.html#a0d8e32e1e5d7b51a53b80c847f7fcecf", null ],
     [ "stage_time", "common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0", null ],
     [ "UNUSED", "common__flight__plan_8c.html#a9314d7061c454ecf2111d3965db8f23f", null ]
 ];

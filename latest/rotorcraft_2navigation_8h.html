@@ -292,6 +292,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a5801dbe08f7119215fdcb571e9bc7137"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2navigation_8h.html#a5801dbe08f7119215fdcb571e9bc7137">NavHeading</a>&#160;&#160;&#160;<a class="el" href="rover_2navigation_8h.html#abf18f00b953eff1d3133af7252e32379">nav_set_heading_rad</a></td></tr>
 <tr class="memdesc:a5801dbe08f7119215fdcb571e9bc7137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the heading of the rotorcraft, nothing else.  <a href="rotorcraft_2navigation_8h.html#a5801dbe08f7119215fdcb571e9bc7137">More...</a><br /></td></tr>
 <tr class="separator:a5801dbe08f7119215fdcb571e9bc7137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af150f704b8414699b4a2978027c01faf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2navigation_8h.html#af150f704b8414699b4a2978027c01faf">NavSetMaxSpeed</a>(_speed)</td></tr>
+<tr class="memdesc:af150f704b8414699b4a2978027c01faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum speed.  <a href="rotorcraft_2navigation_8h.html#af150f704b8414699b4a2978027c01faf">More...</a><br /></td></tr>
+<tr class="separator:af150f704b8414699b4a2978027c01faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade046c5227910bd6f3ea18f9b4d6c514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2navigation_8h.html#ade046c5227910bd6f3ea18f9b4d6c514">nav_IncreaseShift</a>(x)&#160;&#160;&#160;{}</td></tr>
 <tr class="separator:ade046c5227910bd6f3ea18f9b4d6c514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1dfe610bee226ce313ba07538805322"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2navigation_8h.html#ae1dfe610bee226ce313ba07538805322">nav_SetNavRadius</a>(x)&#160;&#160;&#160;{}</td></tr>
@@ -503,6 +506,12 @@ maximum squared distance to home wp before going to failsafe mode </td></tr>
 fp_altitude</td>
 <td class="fielddoc">
 altitude setpoint from flight plan (in meters) </td></tr>
+<tr><td class="fieldtype">
+<a id="a24d4a255610075fa7e9ad0db2311b003"></a>float</td>
+<td class="fieldname">
+fp_max_speed</td>
+<td class="fielddoc">
+maximum speed setpoint from flight plan (in m/s), negative value means unset or invalid, do not use </td></tr>
 <tr><td class="fieldtype">
 <a id="ab975d69af42dfb744d7faee808abd8b0"></a>float</td>
 <td class="fieldname">
@@ -724,7 +733,7 @@ vertical_mode</td>
 <p>Get current altitude reference for local coordinates. </p>
 <p>This is the ground_alt from the flight plan at first, but might be updated later through a call to <a class="el" href="rotorcraft_2navigation_8h.html#a1b58af4e8c7d8f13f39c63a25570ccd6">NavSetGroundReferenceHere()</a> or <a class="el" href="rotorcraft_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b">NavSetAltitudeReferenceHere()</a>, e.g. in the GeoInit flight plan block. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00191">191</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00192">192</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +754,7 @@ vertical_mode</td>
 
 <p>Get current altitude above MSL. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00182">182</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00183">183</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +775,7 @@ vertical_mode</td>
 
 <p>Get current height above reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00184">184</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00185">185</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +796,7 @@ vertical_mode</td>
 
 <p>Get current x (east) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00178">178</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00179">179</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +817,7 @@ vertical_mode</td>
 
 <p>Get current y (north) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00180">180</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00181">181</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +985,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00375">375</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00380">380</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -996,7 +1005,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00376">376</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00381">381</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1210,7 @@ vertical_mode</td>
 <div class="ttc" id="arotorcraft_2navigation_8h_html_a3ac219d1851e1cb4cde6eaa37785e7ec"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#a3ac219d1851e1cb4cde6eaa37785e7ec">NAV_SETPOINT_MODE_ATTITUDE</a></div><div class="ttdeci">#define NAV_SETPOINT_MODE_ATTITUDE</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8h_source.html#l00103">navigation.h:103</a></div></div>
 <div class="ttc" id="arotorcraft_2navigation_8h_html_aa85876c19920ba6b92711789680365a6"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#aa85876c19920ba6b92711789680365a6">NAV_HORIZONTAL_MODE_ATTITUDE</a></div><div class="ttdeci">#define NAV_HORIZONTAL_MODE_ATTITUDE</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8h_source.html#l00088">navigation.h:88</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00256">256</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00257">257</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1240,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00249">249</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00250">250</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1256,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00244">244</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00245">245</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1272,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00245">245</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00246">246</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1291,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00225">225</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00226">226</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1318,7 +1327,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00390">390</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00395">395</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1336,7 +1345,7 @@ vertical_mode</td>
 
 <p>Set the heading of the rotorcraft, nothing else. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00289">289</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00290">290</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1391,7 @@ vertical_mode</td>
 <div class="ttc" id="apprz__geodetic__float_8h_html_ae17fe4c9b5d766b04cb0e73ee5115caf"><div class="ttname"><a href="pprz__geodetic__float_8h.html#ae17fe4c9b5d766b04cb0e73ee5115caf">LtpDef_f::hmsl</a></div><div class="ttdeci">float hmsl</div><div class="ttdoc">Height above mean sea level in meters.</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00097">pprz_geodetic_float.h:97</a></div></div>
 <div class="ttc" id="arotorcraft_2navigation_8h_html_a1612ea0e1474e49b800cb3f497096523"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#a1612ea0e1474e49b800cb3f497096523">flight_altitude</a></div><div class="ttdeci">float flight_altitude</div><div class="ttdoc">Dynamically adjustable, reset to nav_altitude when it is changing.</div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00074">nav.c:74</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00377">377</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00382">382</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1398,7 +1407,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00241">241</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00242">242</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1423,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00238">238</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00239">239</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1439,32 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00240">240</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00241">241</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+
+</div>
+</div>
+<a id="af150f704b8414699b4a2978027c01faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af150f704b8414699b4a2978027c01faf">&#9670;&nbsp;</a></span>NavSetMaxSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NavSetMaxSpeed</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_speed</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    {  \</div>
+<div class="line">    nav.fp_max_speed = _speed;    \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Set maximum speed. </p>
+
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00293">293</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1480,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00243">243</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00244">244</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1465,7 +1499,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00224">224</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00225">225</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1536,7 @@ vertical_mode</td>
 </div><!-- fragment -->
 <p>Set the vertical mode to altitude control with the specified altitude setpoint and climb pre-command. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00270">270</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00271">271</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1558,7 @@ vertical_mode</td>
 
 <p>Unused compat macros. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00385">385</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00390">390</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1549,7 +1583,7 @@ vertical_mode</td>
 </div><!-- fragment -->
 <p>Set the climb control to auto-throttle with the specified pitch pre-command. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00264">264</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00265">265</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1577,7 +1611,7 @@ vertical_mode</td>
 </div><!-- fragment -->
 <p>Set the vertical mode to climb control with the specified climb setpoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00276">276</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00277">277</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1638,7 @@ vertical_mode</td>
 </div><!-- fragment -->
 <p>Set the vertical mode to fixed throttle with the specified setpoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00283">283</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00284">284</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1742,7 +1776,7 @@ vertical_mode</td>
 <p>Computes squared distance to the HOME waypoint potentially sets <a class="el" href="common__nav_8h.html#a40345348447d2bf9b3462286f0b95a4f">too_far_from_home</a>.</p>
 <p>Updates <a class="el" href="common__nav_8h.html#aaa0755e7078e30953f14178d3dcd90ee">dist2_to_home</a> and potentially sets <a class="el" href="common__nav_8h.html#a40345348447d2bf9b3462286f0b95a4f">too_far_from_home</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00327">327</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00326">326</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -1764,7 +1798,7 @@ vertical_mode</td>
 
 <p>Returns squared horizontal distance to given point. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00309">309</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00308">308</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -1786,7 +1820,7 @@ vertical_mode</td>
 
 <p>Returns squared horizontal distance to given waypoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00319">319</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00318">318</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1853,7 @@ vertical_mode</td>
 <p>Check the time spent in a radius of 'ARRIVED_AT_WAYPOINT' around a wp <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00181">181</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00180">180</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00055">ARRIVED_AT_WAYPOINT</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00199">ENU_BFP_OF_REAL</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00139">float_vect2_norm()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT_VECT3_ZERO</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
 
@@ -1882,7 +1916,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00268">268</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00267">267</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>.</p>
 
@@ -1914,11 +1948,11 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00283">283</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00282">282</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00134">float_vect2_norm2()</a>, <a class="el" href="nav_8h_source.html#l00191">NavVerticalAltitudeMode</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00075">pos_diff</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00204">nav_land_run()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00362">NavGlide()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00204">nav_land_run()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00367">NavGlide()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -2024,7 +2058,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00278">278</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00277">277</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2052,9 +2086,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00345">345</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00350">350</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00154">RotorcraftNavigation::nav_oval_init</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00155">RotorcraftNavigation::nav_oval_init</a>.</p>
 
 </div>
 </div>
@@ -2074,7 +2108,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00116">116</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00115">115</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2094,7 +2128,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00122">122</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00121">121</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2136,7 +2170,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00400">400</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00399">399</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2174,7 +2208,7 @@ vertical_mode</td>
 
 <p>Register functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00393">393</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00392">392</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2204,7 +2238,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00405">405</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00404">404</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2227,9 +2261,9 @@ vertical_mode</td>
 <p>Registering functions. </p>
 <p>Registering functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00388">388</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00387">387</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00149">RotorcraftNavigation::nav_stage_init</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00035">nav_stage_init()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00150">RotorcraftNavigation::nav_stage_init</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00035">nav_stage_init()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__rotorcraft__base_8c_source.html#l00298">nav_rotorcraft_init()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2275,7 +2309,7 @@ vertical_mode</td>
 
 <p>Reset the altitude reference to the current GPS alt. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00242">242</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00241">241</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2297,7 +2331,7 @@ vertical_mode</td>
 
 <p>Reset the geographic reference to the current GPS fix. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00235">235</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00234">234</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2317,7 +2351,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00166">166</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00165">165</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2337,7 +2371,7 @@ vertical_mode</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00381">381</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00380">380</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2359,7 +2393,7 @@ vertical_mode</td>
 
 <p>Set heading to the current yaw angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00376">376</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00375">375</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2381,7 +2415,7 @@ vertical_mode</td>
 
 <p>Set nav_heading in degrees. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00345">345</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00344">344</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2404,7 +2438,7 @@ vertical_mode</td>
 <p>heading utility functions </p>
 <p>heading utility functions </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00338">338</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00337">337</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2436,7 +2470,7 @@ vertical_mode</td>
 
 <p>Set heading to point towards x,y position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00351">351</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00350">350</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2458,7 +2492,7 @@ vertical_mode</td>
 
 <p>Set heading in the direction of the target. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00370">370</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">369</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2480,7 +2514,7 @@ vertical_mode</td>
 
 <p>Set heading in the direction of a waypoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00364">364</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00363">363</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 </div>
 </div>
@@ -2518,9 +2552,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00315">315</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00320">320</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00152">RotorcraftNavigation::nav_approaching</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_approaching</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -2582,9 +2616,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00324">324</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00329">329</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00152">RotorcraftNavigation::nav_approaching</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_approaching</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -2640,9 +2674,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00335">335</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00340">340</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_circle</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00154">RotorcraftNavigation::nav_circle</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -2700,9 +2734,9 @@ vertical_mode</td>
 
 <p>Nav glide routine. </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00362">362</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00367">367</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00283">nav_glide_points()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00282">nav_glide_points()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -2758,9 +2792,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00297">297</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00302">302</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00150">RotorcraftNavigation::nav_goto</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00151">RotorcraftNavigation::nav_goto</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -2806,7 +2840,7 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00228">228</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00229">229</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00222">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2855,7 +2889,7 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00232">232</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00233">233</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00222">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>.</p>
 
@@ -2930,9 +2964,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00306">306</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00311">311</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00151">RotorcraftNavigation::nav_route</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00152">RotorcraftNavigation::nav_route</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -2994,9 +3028,9 @@ vertical_mode</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00350">350</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00355">355</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00155">RotorcraftNavigation::nav_oval</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00156">RotorcraftNavigation::nav_oval</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -3069,7 +3103,7 @@ vertical_mode</td>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00001">1</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8h_source.html#l00345">nav_oval_init()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00315">NavApproaching()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00324">NavApproachingFrom()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00335">NavCircleWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00297">NavGotoWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00306">NavSegment()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00350">Oval()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8h_source.html#l00350">nav_oval_init()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00320">NavApproaching()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00329">NavApproachingFrom()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00340">NavCircleWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00302">NavGotoWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00311">NavSegment()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00355">Oval()</a>.</p>
 
 </div>
 </div>
@@ -3079,7 +3113,7 @@ vertical_mode</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft_2navigation_8h.html">navigation.h</a></li>
-    <li class="footer">Generated on Fri Oct 4 2024 06:54:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 7 2024 11:32:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -8,6 +8,7 @@ var rotorcraft_2navigation_8h_structRotorcraftNavigation =
     [ "dist2_to_home", "rotorcraft_2navigation_8h.html#a4e4de9e10721304a4413fb1aac2cb63c", null ],
     [ "failsafe_mode_dist2", "rotorcraft_2navigation_8h.html#a5760e8d83b959120a40a8f27a4d072ae", null ],
     [ "fp_altitude", "rotorcraft_2navigation_8h.html#ad4985c0eab1295fdc345c680be5be491", null ],
+    [ "fp_max_speed", "rotorcraft_2navigation_8h.html#a24d4a255610075fa7e9ad0db2311b003", null ],
     [ "heading", "rotorcraft_2navigation_8h.html#ab975d69af42dfb744d7faee808abd8b0", null ],
     [ "horizontal_mode", "rotorcraft_2navigation_8h.html#a4ce28277bc41cf19f00470dad20965c9", null ],
     [ "nav_altitude", "rotorcraft_2navigation_8h.html#a9b450061e302020a7c81b38336875ce2", null ],
