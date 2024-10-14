@@ -1,6 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__ins_xsens700.html#module_xml__ins_xsens700":[1,247,2,0],
 "module__intermcu_iomcu.html":[1,248],
 "module__intermcu_iomcu.html#configuration__intermcu_iomcu":[1,248,1],
 "module__intermcu_iomcu.html#module_load_example__intermcu_iomcu":[1,248,0],
@@ -17,6 +16,7 @@ var NAVTREEINDEX137 =
 "module__ir_mlx.html#module_xml__ir_mlx":[1,292,1,0],
 "module__jevois.html":[1,421],
 "module__jevois.html#configuration__jevois":[1,421,1],
+"module__jevois.html#define":[1,421,1,0],
 "module__jevois.html#functions__jevois":[1,421,2],
 "module__jevois.html#module_load_example__jevois":[1,421,0],
 "module__jevois.html#module_xml__jevois":[1,421,2,0],

@@ -70,7 +70,10 @@ var onboard_modules =
       ] ]
     ] ],
     [ "actuators_disco module", "module__actuators_disco.html", [
-      [ "Example for airframe file", "module__actuators_disco.html#module_load_example__actuators_disco", [
+      [ "Example for airframe file", "module__actuators_disco.html#module_load_example__actuators_disco", null ],
+      [ "Files", "module__actuators_disco.html#files", [
+        [ "Header Files", "module__actuators_disco.html#headers", null ],
+        [ "Source Files", "module__actuators_disco.html#sources", null ],
         [ "Raw actuators_disco.xml file:", "module__actuators_disco.html#module_xml__actuators_disco", null ]
       ] ]
     ] ],
@@ -147,9 +150,7 @@ var onboard_modules =
     ] ],
     [ "actuators_sts3032 module", "module__actuators_sts3032.html", [
       [ "Example for airframe file", "module__actuators_sts3032.html#module_load_example__actuators_sts3032", null ],
-      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", [
-        [ "Configure Options", "module__actuators_sts3032.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", null ],
       [ "Module functions", "module__actuators_sts3032.html#functions__actuators_sts3032", [
         [ "Raw actuators_sts3032.xml file:", "module__actuators_sts3032.html#module_xml__actuators_sts3032", null ]
       ] ]
@@ -614,7 +615,9 @@ var onboard_modules =
     ] ],
     [ "ctrl_windtunnel module", "module__ctrl_windtunnel.html", [
       [ "Example for airframe file", "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel", null ],
-      [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", null ],
+      [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", [
+        [ "Airframe file section", "module__ctrl_windtunnel.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__ctrl_windtunnel.html#functions__ctrl_windtunnel", [
         [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
       ] ]
@@ -1043,8 +1046,12 @@ var onboard_modules =
     ] ],
     [ "gps_mediatek_diy module", "module__gps_mediatek_diy.html", [
       [ "Example for airframe file", "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy", null ],
-      [ "Module configuration options", "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy", null ],
+      [ "Module configuration options", "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy", [
+        [ "Configure Options", "module__gps_mediatek_diy.html#configure", null ]
+      ] ],
       [ "Module functions", "module__gps_mediatek_diy.html#functions__gps_mediatek_diy", [
+        [ "Event Functions", "module__gps_mediatek_diy.html#event_functions", null ],
+        [ "Periodic Functions", "module__gps_mediatek_diy.html#periodic_functions", null ],
         [ "Raw gps_mediatek_diy.xml file:", "module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy", null ]
       ] ]
     ] ],
@@ -1263,12 +1270,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
@@ -1423,17 +1430,8 @@ var onboard_modules =
     ] ],
     [ "imu_openpilot_revo module", "module__imu_openpilot_revo.html", [
       [ "Example for airframe file", "module__imu_openpilot_revo.html#module_load_example__imu_openpilot_revo", null ],
-      [ "Module configuration options", "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo", [
-        [ "Airframe file section", "module__imu_openpilot_revo.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo", null ],
       [ "Module functions", "module__imu_openpilot_revo.html#functions__imu_openpilot_revo", [
-        [ "Init Functions", "module__imu_openpilot_revo.html#init_functions", null ],
-        [ "Event Functions", "module__imu_openpilot_revo.html#event_functions", null ],
-        [ "Periodic Functions", "module__imu_openpilot_revo.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__imu_openpilot_revo.html#files", [
-        [ "Header Files", "module__imu_openpilot_revo.html#headers", null ],
-        [ "Source Files", "module__imu_openpilot_revo.html#sources", null ],
         [ "Raw imu_openpilot_revo.xml file:", "module__imu_openpilot_revo.html#module_xml__imu_openpilot_revo", null ]
       ] ]
     ] ],
@@ -2312,9 +2310,7 @@ var onboard_modules =
     ] ],
     [ "optical_flow_mateksys_3901_l0x module", "module__optical_flow_mateksys_3901_l0x.html", [
       [ "Example for airframe file", "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x", null ],
-      [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", [
-        [ "Define Options", "module__optical_flow_mateksys_3901_l0x.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", null ],
       [ "Module functions", "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x", [
         [ "Raw optical_flow_mateksys_3901_l0x.xml file:", "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x", null ]
       ] ]
@@ -2378,7 +2374,9 @@ var onboard_modules =
     ] ],
     [ "radio_control_intermcu module", "module__radio_control_intermcu.html", [
       [ "Example for airframe file", "module__radio_control_intermcu.html#module_load_example__radio_control_intermcu", null ],
-      [ "Module functions", "module__radio_control_intermcu.html#functions__radio_control_intermcu", null ],
+      [ "Module functions", "module__radio_control_intermcu.html#functions__radio_control_intermcu", [
+        [ "Init Functions", "module__radio_control_intermcu.html#init_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu", [
         [ "Raw radio_control_intermcu.xml file:", "module__radio_control_intermcu.html#module_xml__radio_control_intermcu", null ]
       ] ]
@@ -2761,7 +2759,9 @@ var onboard_modules =
     ] ],
     [ "jevois module", "module__jevois.html", [
       [ "Example for airframe file", "module__jevois.html#module_load_example__jevois", null ],
-      [ "Module configuration options", "module__jevois.html#configuration__jevois", null ],
+      [ "Module configuration options", "module__jevois.html#configuration__jevois", [
+        [ "Define Options", "module__jevois.html#define", null ]
+      ] ],
       [ "Module functions", "module__jevois.html#functions__jevois", [
         [ "Raw jevois.xml file:", "module__jevois.html#module_xml__jevois", null ]
       ] ]

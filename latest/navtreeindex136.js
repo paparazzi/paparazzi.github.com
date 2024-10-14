@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,191,0],
+"module__imu_aspirin_i2c_v1_5.html":[1,192],
+"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,192,0],
+"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,192,0,0],
+"module__imu_aspirin_v1_0.html":[1,193],
+"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,193,0],
 "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,193,0,0],
 "module__imu_aspirin_v1_5.html":[1,194],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,194,0],
@@ -102,17 +108,10 @@ var NAVTREEINDEX136 =
 "module__imu_nps.html#module_load_example__imu_nps":[1,217,0],
 "module__imu_nps.html#module_xml__imu_nps":[1,217,1,0],
 "module__imu_openpilot_revo.html":[1,218],
-"module__imu_openpilot_revo.html#af_section":[1,218,1,0],
 "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo":[1,218,1],
-"module__imu_openpilot_revo.html#event_functions":[1,218,2,1],
-"module__imu_openpilot_revo.html#files":[1,218,3],
 "module__imu_openpilot_revo.html#functions__imu_openpilot_revo":[1,218,2],
-"module__imu_openpilot_revo.html#headers":[1,218,3,0],
-"module__imu_openpilot_revo.html#init_functions":[1,218,2,0],
 "module__imu_openpilot_revo.html#module_load_example__imu_openpilot_revo":[1,218,0],
-"module__imu_openpilot_revo.html#module_xml__imu_openpilot_revo":[1,218,3,2],
-"module__imu_openpilot_revo.html#periodic_functions":[1,218,2,2],
-"module__imu_openpilot_revo.html#sources":[1,218,3,1],
+"module__imu_openpilot_revo.html#module_xml__imu_openpilot_revo":[1,218,2,0],
 "module__imu_openpilot_revo_nano.html":[1,219],
 "module__imu_openpilot_revo_nano.html#configuration__imu_openpilot_revo_nano":[1,219,1],
 "module__imu_openpilot_revo_nano.html#functions__imu_openpilot_revo_nano":[1,219,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX136 =
 "module__ins_xsens700.html":[1,247],
 "module__ins_xsens700.html#configuration__ins_xsens700":[1,247,1],
 "module__ins_xsens700.html#functions__ins_xsens700":[1,247,2],
-"module__ins_xsens700.html#module_load_example__ins_xsens700":[1,247,0]
+"module__ins_xsens700.html#module_load_example__ins_xsens700":[1,247,0],
+"module__ins_xsens700.html#module_xml__ins_xsens700":[1,247,2,0]
 };

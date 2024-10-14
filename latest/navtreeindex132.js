@@ -12,8 +12,11 @@ var NAVTREEINDEX132 =
 "module__actuators_bebop.html#module_load_example__actuators_bebop":[1,4,0],
 "module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,1,0],
 "module__actuators_disco.html":[1,5],
+"module__actuators_disco.html#files":[1,5,1],
+"module__actuators_disco.html#headers":[1,5,1,0],
 "module__actuators_disco.html#module_load_example__actuators_disco":[1,5,0],
-"module__actuators_disco.html#module_xml__actuators_disco":[1,5,0,0],
+"module__actuators_disco.html#module_xml__actuators_disco":[1,5,1,2],
+"module__actuators_disco.html#sources":[1,5,1,1],
 "module__actuators_dshot.html":[1,6],
 "module__actuators_dshot.html#configuration__actuators_dshot":[1,6,1],
 "module__actuators_dshot.html#module_load_example__actuators_dshot":[1,6,0],
@@ -63,7 +66,6 @@ var NAVTREEINDEX132 =
 "module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,17,1,0],
 "module__actuators_sts3032.html":[1,18],
 "module__actuators_sts3032.html#configuration__actuators_sts3032":[1,18,1],
-"module__actuators_sts3032.html#configure":[1,18,1,0],
 "module__actuators_sts3032.html#functions__actuators_sts3032":[1,18,2],
 "module__actuators_sts3032.html#module_load_example__actuators_sts3032":[1,18,0],
 "module__actuators_sts3032.html#module_xml__actuators_sts3032":[1,18,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__baro_bmp280_i2c.html":[1,393],
 "module__baro_bmp280_i2c.html#configuration__baro_bmp280_i2c":[1,393,1],
 "module__baro_bmp280_i2c.html#functions__baro_bmp280_i2c":[1,393,2],
-"module__baro_bmp280_i2c.html#module_load_example__baro_bmp280_i2c":[1,393,0],
-"module__baro_bmp280_i2c.html#module_xml__baro_bmp280_i2c":[1,393,2,0],
-"module__baro_bmp3.html":[1,394]
+"module__baro_bmp280_i2c.html#module_load_example__baro_bmp280_i2c":[1,393,0]
 };

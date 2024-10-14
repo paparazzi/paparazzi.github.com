@@ -1,6 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"module__px4flow_i2c.html#functions__px4flow_i2c":[1,358,2],
 "module__px4flow_i2c.html#module_load_example__px4flow_i2c":[1,358,0],
 "module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,358,2,0],
 "module__radio_control_cc2500_frsky.html":[1,361],
@@ -27,6 +26,7 @@ var NAVTREEINDEX139 =
 "module__radio_control_intermcu.html":[1,365],
 "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,365,2],
 "module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,365,1],
+"module__radio_control_intermcu.html#init_functions":[1,365,1,0],
 "module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,365,0],
 "module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,365,2,0],
 "module__radio_control_ppm.html":[1,366],

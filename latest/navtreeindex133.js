@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__baro_bmp280_i2c.html#module_xml__baro_bmp280_i2c":[1,393,2,0],
+"module__baro_bmp3.html":[1,394],
 "module__baro_bmp3.html#configuration__baro_bmp3":[1,394,1],
 "module__baro_bmp3.html#functions__baro_bmp3":[1,394,2],
 "module__baro_bmp3.html#module_load_example__baro_bmp3":[1,394,0],
@@ -168,6 +170,7 @@ var NAVTREEINDEX133 =
 "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,90,0],
 "module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,90,1,0],
 "module__ctrl_windtunnel.html":[1,91],
+"module__ctrl_windtunnel.html#af_section":[1,91,1,0],
 "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,91,1],
 "module__ctrl_windtunnel.html#functions__ctrl_windtunnel":[1,91,2],
 "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel":[1,91,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__datalink_common.html":[1,107],
 "module__datalink_common.html#datalink_functions__datalink_common":[1,107,2],
 "module__datalink_common.html#functions__datalink_common":[1,107,1],
-"module__datalink_common.html#module_load_example__datalink_common":[1,107,0],
-"module__datalink_common.html#module_xml__datalink_common":[1,107,2,0],
-"module__dc_ctrl_parrot_mykonos.html":[1,130],
-"module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos":[1,130,1]
+"module__datalink_common.html#module_load_example__datalink_common":[1,107,0]
 };

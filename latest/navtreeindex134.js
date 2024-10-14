@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__datalink_common.html#module_xml__datalink_common":[1,107,2,0],
+"module__dc_ctrl_parrot_mykonos.html":[1,130],
+"module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos":[1,130,1],
 "module__dc_ctrl_parrot_mykonos.html#functions__dc_ctrl_parrot_mykonos":[1,130,2],
 "module__dc_ctrl_parrot_mykonos.html#module_load_example__dc_ctrl_parrot_mykonos":[1,130,0],
 "module__dc_ctrl_parrot_mykonos.html#module_xml__dc_ctrl_parrot_mykonos":[1,130,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "module__gps.html":[1,153],
 "module__gps.html#configuration__gps":[1,153,1],
 "module__gps.html#datalink_functions__gps":[1,153,3],
-"module__gps.html#functions__gps":[1,153,2],
-"module__gps.html#module_load_example__gps":[1,153,0],
-"module__gps.html#module_xml__gps":[1,153,3,0],
-"module__gps_datalink.html":[1,154]
+"module__gps.html#functions__gps":[1,153,2]
 };

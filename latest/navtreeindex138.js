@@ -146,7 +146,6 @@ var NAVTREEINDEX138 =
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,102,2,0],
 "module__optical_flow_mateksys_3901_l0x.html":[1,356],
 "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,356,1],
-"module__optical_flow_mateksys_3901_l0x.html#define":[1,356,1,0],
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,356,2],
 "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,356,0],
 "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,356,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX138 =
 "module__px4flow.html#module_load_example__px4flow":[1,357,0],
 "module__px4flow.html#module_xml__px4flow":[1,357,2,0],
 "module__px4flow_i2c.html":[1,358],
-"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,358,1]
+"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,358,1],
+"module__px4flow_i2c.html#functions__px4flow_i2c":[1,358,2]
 };

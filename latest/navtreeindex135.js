@@ -1,5 +1,8 @@
 var NAVTREEINDEX135 =
 {
+"module__gps.html#module_load_example__gps":[1,153,0],
+"module__gps.html#module_xml__gps":[1,153,3,0],
+"module__gps_datalink.html":[1,154],
 "module__gps_datalink.html#datalink_functions__gps_datalink":[1,154,2],
 "module__gps_datalink.html#functions__gps_datalink":[1,154,1],
 "module__gps_datalink.html#module_load_example__gps_datalink":[1,154,0],
@@ -16,9 +19,12 @@ var NAVTREEINDEX135 =
 "module__gps_intermcu.html#module_xml__gps_intermcu":[1,156,2,0],
 "module__gps_mediatek_diy.html":[1,157],
 "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,157,1],
+"module__gps_mediatek_diy.html#configure":[1,157,1,0],
+"module__gps_mediatek_diy.html#event_functions":[1,157,2,0],
 "module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,157,2],
 "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,157,0],
-"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,157,2,0],
+"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,157,2,2],
+"module__gps_mediatek_diy.html#periodic_functions":[1,157,2,1],
 "module__gps_nmea.html":[1,158],
 "module__gps_nmea.html#configuration__gps_nmea":[1,158,1],
 "module__gps_nmea.html#functions__gps_nmea":[1,158,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_aspirin_i2c_common.html#module_load_example__imu_aspirin_i2c_common":[1,190,0],
 "module__imu_aspirin_i2c_common.html#module_xml__imu_aspirin_i2c_common":[1,190,2,0],
 "module__imu_aspirin_i2c_v1_0.html":[1,191],
-"module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,191,1],
-"module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,191,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,191,1,0],
-"module__imu_aspirin_i2c_v1_5.html":[1,192],
-"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,192,0],
-"module__imu_aspirin_v1_0.html":[1,193],
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,193,0]
+"module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,191,1]
 };
