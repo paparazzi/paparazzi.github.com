@@ -1,5 +1,6 @@
 var NAVTREEINDEX209 =
 {
+"stm32_2mcu__periph_2adc__arch_8c.html#acb8d31c98314a35feab1015801bec854":[12,0,1,0,0,3,0,0,5],
 "stm32_2mcu__periph_2adc__arch_8c.html#acd02461f91550e084771478dfdd1ca54":[12,0,1,0,0,3,0,0,11],
 "stm32_2mcu__periph_2adc__arch_8c.html#ad0eb89a1ba54932bcb9f202b2581fee2":[12,0,1,0,0,3,0,0,3],
 "stm32_2mcu__periph_2adc__arch_8c.html#ae30d4e1614f32f3245b1f2311f0f8737":[12,0,1,0,0,3,0,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX209 =
 "stm32_2peripherals_2max1168__arch_8h.html":[12,0,1,0,0,3,2,3],
 "stm32_2peripherals_2max1168__arch_8h_source.html":[12,0,1,0,0,3,2,3],
 "stm32_2usb__ser__hw_8c.html":[12,0,1,0,0,3,10],
-"stm32_2usb__ser__hw_8c.html#a0479d91765cee306c29db9e366752051":[12,0,1,0,0,3,10,35],
-"stm32_2usb__ser__hw_8c.html#a081c07a88a2108ff93ef4cae8a08806a":[12,0,1,0,0,3,10,11]
+"stm32_2usb__ser__hw_8c.html#a0479d91765cee306c29db9e366752051":[12,0,1,0,0,3,10,35]
 };

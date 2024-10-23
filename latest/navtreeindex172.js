@@ -1,5 +1,6 @@
 var NAVTREEINDEX172 =
 {
+"pano__unwrap_8c.html#a8211df47f3da92f7ac1c794b961c2058":[12,0,1,0,6,51,0,7],
 "pano__unwrap_8c.html#a830da9bbb44ec93a5e027d51bfd3e2ad":[12,0,1,0,6,51,0,22],
 "pano__unwrap_8c.html#a8dfc9f820dd405b4c3026b19ac1f0ef2":[12,0,1,0,6,51,0,15],
 "pano__unwrap_8c.html#a9e46ddee0e821f8e4cd1d893f5c2b0ce":[12,0,1,0,6,51,0,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#KEY_EXCHANGE_UAV":[2,0,227],
 "paparazzi_messages.html#KITE_COMMAND":[2,1,43],
 "paparazzi_messages.html#LIDAR":[2,0,222],
-"paparazzi_messages.html#LINK_REPORT":[2,2,34],
-"paparazzi_messages.html#LOGGER_STATUS":[2,0,87]
+"paparazzi_messages.html#LINK_REPORT":[2,2,34]
 };

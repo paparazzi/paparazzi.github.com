@@ -12,6 +12,7 @@ var nav__rotorcraft__hybrid_8c =
     [ "NAV_HYBRID_SOFT_ACCELERATION", "nav__rotorcraft__hybrid_8c.html#a3a39f9988bc73b57631f5be730bd6e7d", null ],
     [ "NAV_HYBRID_SPEED_MARGIN", "nav__rotorcraft__hybrid_8c.html#abbdd57976fe05da42eb3def5ab9afb67", null ],
     [ "NAV_MAX_SPEED", "nav__rotorcraft__hybrid_8c.html#ae6686e7bfe6768f1d68ef806d4305ecb", null ],
+    [ "max_speed_for_deceleration", "nav__rotorcraft__hybrid_8c.html#aa49fe15bd9c2b2fca5bcdac6419e1e1e", null ],
     [ "nav_hybrid_approaching", "nav__rotorcraft__hybrid_8c.html#a960e28bb04f19cdf3d5812d750b7cb1a", null ],
     [ "nav_hybrid_circle", "nav__rotorcraft__hybrid_8c.html#a210468f3ae4a285e3c53c432044a6863", null ],
     [ "nav_hybrid_goto", "nav__rotorcraft__hybrid_8c.html#a342a4deb3398a85a7e59d72d7bee0cf8", null ],
