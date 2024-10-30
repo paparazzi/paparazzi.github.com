@@ -205,7 +205,7 @@ Raw eff_scheduling_rotwing.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_IXX_WING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_IYY_WING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_M&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_DM_DPPRZ_HOVER_PITCH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_DM_DPPRZ_HOVER_PITCH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_DM_DPPRZ_HOVER_ROLL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_HOVER_ROLL_PITCH_COEF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_HOVER_ROLL_ROLL_COEF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
@@ -220,6 +220,14 @@ Raw eff_scheduling_rotwing.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_K_LIFT_WING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_K_LIFT_FUSELAGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_EFF_SCHED_K_LIFT_TAIL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID_USE_WLS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID_U&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;9&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID_V&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_WLS_PRIORITIES&quot;</span>   <span class="keyword">value</span>=<span class="stringliteral">&quot;{1000, 1000, 10, 100, 100}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_WLS_WU&quot;</span>           <span class="keyword">value</span>=<span class="stringliteral">&quot;{1.3, 1.3, 1.3, 1.3, 1.0, 1.0, 1.0, 1.0, 1.0}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_MAX_PITCH&quot;</span>        <span class="keyword">value</span>=<span class="stringliteral">&quot;20.0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_MIN_PITCH&quot;</span>        <span class="keyword">value</span>=<span class="stringliteral">&quot;-20.0&quot;</span>/&gt;</div>
+<div class="line">      </div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -230,7 +238,7 @@ Raw eff_scheduling_rotwing.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 23 2024 08:12:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 15:51:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

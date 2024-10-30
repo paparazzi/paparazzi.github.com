@@ -33,7 +33,7 @@ var guidance__indi__hybrid_8h =
     [ "guidance_indi_init", "guidance__indi__hybrid_8h.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8h.html#af4d00187ad311670f06d0dbbd8acb278", null ],
     [ "guidance_indi_run_mode", "guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87", null ],
-    [ "guidance_indi_set_min_max_airspeed", "guidance__indi__hybrid_8h.html#adb6a3ce54f8ea2d6e707fdb5246d5dfc", null ],
+    [ "guidance_set_min_max_airspeed", "guidance__indi__hybrid_8h.html#a7ebc56a7fea2d1f9657533ea079ba78d", null ],
     [ "coordinated_turn_use_accel", "guidance__indi__hybrid_8h.html#aeedd5797a15621483f6e842d1ef94fe4", null ],
     [ "force_forward", "guidance__indi__hybrid_8h.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "gi_speed_sp", "guidance__indi__hybrid_8h.html#a27af36ef93fea1d415ff80db057b47e9", null ],

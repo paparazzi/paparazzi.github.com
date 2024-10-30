@@ -1,5 +1,8 @@
 var NAVTREEINDEX70 =
 {
+"group__math__algebra__int.html#ga930576f090a11e3c53c8269ee2e26834":[12,0,1,0,4,8,89],
+"group__math__algebra__int.html#ga94a38d44fd404382eb1bdfd826b487c8":[9,9,1,3,31],
+"group__math__algebra__int.html#ga94a38d44fd404382eb1bdfd826b487c8":[12,0,1,0,4,8,14],
 "group__math__algebra__int.html#ga9677b4a259ecd2f62dc9aed614d1ea28":[9,9,1,3,89],
 "group__math__algebra__int.html#ga9677b4a259ecd2f62dc9aed614d1ea28":[12,0,1,0,4,8,72],
 "group__math__algebra__int.html#ga97a013036d6fb63391408d5f5305467c":[9,9,1,3,60],
@@ -106,8 +109,8 @@ var NAVTREEINDEX70 =
 "group__math__algebra__int.html#gaef47a12f44fa61c62554c90ff21bb23e":[9,9,1,3,38],
 "group__math__algebra__int.html#gaef47a12f44fa61c62554c90ff21bb23e":[12,0,1,0,4,8,21],
 "group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e":[12,0,1,0,4,7,3],
-"group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e":[12,0,1,0,4,8,101],
 "group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e":[9,9,1,3,118],
+"group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e":[12,0,1,0,4,8,101],
 "group__math__algebra__int.html#gaf56c05ba9678f73f6a139ca9e5264898":[9,9,1,3,22],
 "group__math__algebra__int.html#gaf56c05ba9678f73f6a139ca9e5264898":[12,0,1,0,4,8,5],
 "group__math__algebra__int.html#gaf665ad3da6b5c3589c19d7bdc66e8fc4":[9,9,1,3,111],
@@ -246,8 +249,5 @@ var NAVTREEINDEX70 =
 "group__math__geodetic__int.html#a6d4bf413c00434d016a1e35ae4d1cc86":[9,9,2,2,4,3],
 "group__math__geodetic__int.html#a6fa81363139469c813164c4804f9103d":[9,9,2,2,5,2],
 "group__math__geodetic__int.html#a739ec29a00be297c17af34fff298f487":[9,9,2,2,0,0],
-"group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356":[9,9,2,2,2,1],
-"group__math__geodetic__int.html#a8fd7f9d553aa492f1f4b54677e80dc51":[9,9,2,2,5,0],
-"group__math__geodetic__int.html#a93a85f5eec8041c8b6e8bcef4b977de5":[9,9,2,2,4,1],
-"group__math__geodetic__int.html#aa40b0f6775ba4dd5cbd5e1b0050cb21f":[9,9,2,2,0,1]
+"group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356":[9,9,2,2,2,1]
 };

@@ -2444,13 +2444,6 @@ var onboard_modules =
         [ "Raw rotwing_state.xml file:", "module__rotwing_state.html#module_xml__rotwing_state", null ]
       ] ]
     ] ],
-    [ "rotwing_state_v2 module", "module__rotwing_state_v2.html", [
-      [ "Example for airframe file", "module__rotwing_state_v2.html#module_load_example__rotwing_state_v2", null ],
-      [ "Module configuration options", "module__rotwing_state_v2.html#configuration__rotwing_state_v2", null ],
-      [ "Module functions", "module__rotwing_state_v2.html#functions__rotwing_state_v2", [
-        [ "Raw rotwing_state_V2.xml file:", "module__rotwing_state_v2.html#module_xml__rotwing_state_v2", null ]
-      ] ]
-    ] ],
     [ "wing_rotation_adc_sensor module", "module__wing_rotation_adc_sensor.html", [
       [ "Example for airframe file", "module__wing_rotation_adc_sensor.html#module_load_example__wing_rotation_adc_sensor", null ],
       [ "Module configuration options", "module__wing_rotation_adc_sensor.html#configuration__wing_rotation_adc_sensor", null ],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX60 =
 {
+"gpio__def_8h.html#a134f840f4efbdb994ea47eecde306153":[12,0,1,0,0,0,0,4,36],
+"gpio__def_8h.html#a1471cf2ee224d707874fa19c68b3d5dc":[12,0,1,0,0,0,0,4,19],
+"gpio__def_8h.html#a1a96368c99d63b0e715b7e0421f4a209":[12,0,1,0,0,0,0,4,27],
 "gpio__def_8h.html#a1dfa6e5489489f2797d3d80c718716ce":[12,0,1,0,0,0,0,4,4],
 "gpio__def_8h.html#a209f1a013588f481824ff0f57d2fc21e":[12,0,1,0,0,0,0,4,8],
 "gpio__def_8h.html#a20f88dbc839eb32b5fec903474befdd7":[12,0,1,0,0,0,0,4,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX60 =
 "gps_8h.html#structGpsRelposNED":[12,0,1,0,6,29,2,3],
 "gps_8h.html#structGpsState":[12,0,1,0,6,29,2,1],
 "gps_8h.html#structGpsTimeSync":[12,0,1,0,6,29,2,2],
-"gps_8h.html#structSVinfo":[12,0,1,0,6,29,2,0],
-"gps_8h_source.html":[12,0,1,0,6,29,2],
-"gps__datalink_8c.html":[12,0,1,0,6,29,3],
-"gps__datalink_8c.html#a1e6d7409319941de2bbdc55911c8ba4c":[12,0,1,0,6,29,3,3]
+"gps_8h.html#structSVinfo":[12,0,1,0,6,29,2,0]
 };

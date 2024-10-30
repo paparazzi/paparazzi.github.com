@@ -1,6 +1,5 @@
 var rotwing__state_8c =
 [
-    [ "AIRSPEED_IMPORTANCE_IN_FORWARD_WEIGHT", "rotwing__state_8c.html#a78e33cb22391187591dd40431725af17", null ],
     [ "ROTWING_FW_SKEW_ANGLE", "rotwing__state_8c.html#a27d1e2fe6f01c1a14181f54fe55c9544", null ],
     [ "ROTWING_FW_STALL_TIMEOUT", "rotwing__state_8c.html#a1a7b9f696d8dd4f2f8bbd13d5c365ffd", null ],
     [ "ROTWING_MIN_AIRSPEED_SLOPE_START_ANGLE", "rotwing__state_8c.html#a44d326cb1a1b01c6ea40bdbf0d1b4bc6", null ],
@@ -8,19 +7,16 @@ var rotwing__state_8c =
     [ "ROTWING_QUAD_IDLE_MIN_THRUST", "rotwing__state_8c.html#a93d6beb55d1f3fcbb0baa26dbaf8664b", null ],
     [ "ROTWING_QUAD_IDLE_TIMEOUT", "rotwing__state_8c.html#ade98be7ba4fb3828b7cc97bd92f2aea2", null ],
     [ "ROTWING_QUAD_MIN_RPM", "rotwing__state_8c.html#a9fce884b9347b48a246c086302d58630", null ],
-    [ "ROTWING_QUAD_PREF_PITCH", "rotwing__state_8c.html#a145d4cb1e54adfb1a4651a53b55762ef", null ],
     [ "ROTWING_RPM_TIMEOUT", "rotwing__state_8c.html#a0645bf23bf04e97cb5c34d86a1f10ffb", null ],
-    [ "ROTWING_SKEW_ANGLE_STEP", "rotwing__state_8c.html#ae078da8e946677dc95eb1339de4967a8", null ],
     [ "ROTWING_SKEW_BACK_MARGIN", "rotwing__state_8c.html#a721bfbfbfe57234b4c6260957710aacd", null ],
     [ "ROTWING_SKEW_REF_MODEL_MAX_DIFF", "rotwing__state_8c.html#a0b17bf5895fafec4741262d662ffb695", null ],
     [ "ROTWING_STATE_ACT_FEEDBACK_ID", "rotwing__state_8c.html#ad1391e301d22e94d2f094e91c85630bd", null ],
     [ "SERVO_BMOTOR_PUSH_IDX", "rotwing__state_8c.html#a744a977efd4b8247c4a803d4b9539741", null ],
     [ "SERVO_BROTATION_MECH_IDX", "rotwing__state_8c.html#a968b5f46df3b12299ca24e62a09bfe6d", null ],
-    [ "guidance_indi_hybrid_set_wls_settings", "rotwing__state_8c.html#ae6f2842f21741d11d4bb8c91da691381", null ],
     [ "rotwing_state_choose_circle_direction", "rotwing__state_8c.html#ae046087f644a3e732de4bd9a920dd5d5", null ],
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096", null ],
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a33785e979e73223db3953cb3b8a711dd", null ],
-    [ "rotwing_state_hover_motors_idling", "rotwing__state_8c.html#ac0c20774acf6a987e68ace0813461fb8", null ],
+    [ "rotwing_state_hover_motors_idling", "rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79", null ],
     [ "rotwing_state_hover_motors_running", "rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be", null ],
     [ "rotwing_state_init", "rotwing__state_8c.html#a5187c7100a4e54eb7d052892fbafd06e", null ],
     [ "rotwing_state_periodic", "rotwing__state_8c.html#aea48320cf6f1fd18ec0a0046b46c9c73", null ],
@@ -31,6 +27,5 @@ var rotwing__state_8c =
     [ "rotwing_state_update_WP_height", "rotwing__state_8c.html#af26916d6057d1b576cb4df4131eaedf5", null ],
     [ "send_rotating_wing_state", "rotwing__state_8c.html#ab8f72a98676fba24f38387c5a706b612", null ],
     [ "rotwing_state", "rotwing__state_8c.html#ae33fd5787b7c43008cd695534aef71b1", null ],
-    [ "rotwing_state_feedback_ev", "rotwing__state_8c.html#adca906a1130565de36ef9e3a6aeee5f8", null ],
-    [ "Wu_gih_original", "rotwing__state_8c.html#a5aebe80ae96dd2a1ac3e410965eeaeae", null ]
+    [ "rotwing_state_feedback_ev", "rotwing__state_8c.html#adca906a1130565de36ef9e3a6aeee5f8", null ]
 ];

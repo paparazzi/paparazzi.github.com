@@ -31,6 +31,8 @@ var rotwing__state_8h =
       [ "skew_angle_valid", "rotwing__state_8h.html#a676987019a6ee749ec429b405b1c56bc", null ],
       [ "skew_forced", "rotwing__state_8h.html#a98da0e4af7b9d61e22c238acb49ffede", null ]
     ] ],
+    [ "ROTWING_QUAD_PREF_PITCH", "rotwing__state_8h.html#a145d4cb1e54adfb1a4651a53b55762ef", null ],
+    [ "ROTWING_SKEW_ANGLE_STEP", "rotwing__state_8h.html#ae078da8e946677dc95eb1339de4967a8", null ],
     [ "rotwing_states_t", "rotwing__state_8h.html#ae1f91e813cdc0fd4e4c491e3d166b687", [
       [ "ROTWING_STATE_FORCE_HOVER", "rotwing__state_8h.html#ae1f91e813cdc0fd4e4c491e3d166b687af0ff99cfb65510a0ae85c4b204a86763", null ],
       [ "ROTWING_STATE_REQUEST_HOVER", "rotwing__state_8h.html#ae1f91e813cdc0fd4e4c491e3d166b687acbdc3aa235d3f566b420db28b3d0a959", null ],
@@ -39,6 +41,7 @@ var rotwing__state_8h =
       [ "ROTWING_STATE_FREE", "rotwing__state_8h.html#ae1f91e813cdc0fd4e4c491e3d166b687a42093eb92562371445e2f83242c49d95", null ]
     ] ],
     [ "rotwing_state_choose_circle_direction", "rotwing__state_8h.html#ae046087f644a3e732de4bd9a920dd5d5", null ],
+    [ "rotwing_state_hover_motors_idling", "rotwing__state_8h.html#a6f2548c6bcef89af1eeca92bd4adff79", null ],
     [ "rotwing_state_hover_motors_running", "rotwing__state_8h.html#a193394bc5b357951cc100d7c10f252be", null ],
     [ "rotwing_state_init", "rotwing__state_8h.html#a5187c7100a4e54eb7d052892fbafd06e", null ],
     [ "rotwing_state_periodic", "rotwing__state_8h.html#aea48320cf6f1fd18ec0a0046b46c9c73", null ],

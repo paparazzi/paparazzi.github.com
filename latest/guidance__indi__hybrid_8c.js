@@ -30,7 +30,7 @@ var guidance__indi__hybrid_8c =
     [ "guidance_indi_propagate_filters", "guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e", null ],
     [ "guidance_indi_run_mode", "guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52", null ],
-    [ "guidance_indi_set_min_max_airspeed", "guidance__indi__hybrid_8c.html#adb6a3ce54f8ea2d6e707fdb5246d5dfc", null ],
+    [ "guidance_set_min_max_airspeed", "guidance__indi__hybrid_8c.html#a7ebc56a7fea2d1f9657533ea079ba78d", null ],
     [ "send_eff_mat_guid_indi_hybrid", "guidance__indi__hybrid_8c.html#ae3bf6677065e6f1b410b585994fcf3e0", null ],
     [ "send_guidance_indi_hybrid", "guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70", null ],
     [ "vel_sp_cb", "guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8", null ],

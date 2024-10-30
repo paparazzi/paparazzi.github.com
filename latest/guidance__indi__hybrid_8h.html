@@ -146,8 +146,8 @@ $(document).ready(function(){initNavTree('guidance__indi__hybrid_8h.html',''); i
 <area shape="rect" href="guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="5,117,180,173"/>
 <area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="204,109,371,180"/>
 <area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html" title=" " alt="" coords="395,109,561,180"/>
-<area shape="rect" href="scheduling__indi__simple_8c.html" title=" " alt="" coords="585,117,744,173"/>
-<area shape="rect" href="rotwing__state_8c.html" title=" " alt="" coords="768,117,940,173"/>
+<area shape="rect" href="eff__scheduling__rotwing_8c.html" title=" " alt="" coords="585,117,744,173"/>
+<area shape="rect" href="scheduling__indi__simple_8c.html" title=" " alt="" coords="768,117,927,173"/>
 </map>
 </div>
 </div>
@@ -188,8 +188,8 @@ Functions</h2></td></tr>
 <tr class="separator:af4d00187ad311670f06d0dbbd8acb278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a505237cd381745af8b20a0d896b81e87"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87">guidance_indi_run_mode</a> (bool in_flight, struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *gh, struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *gv, enum <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf">GuidanceIndiHybrid_HMode</a> h_mode, enum <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007">GuidanceIndiHybrid_VMode</a> v_mode)</td></tr>
 <tr class="separator:a505237cd381745af8b20a0d896b81e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6a3ce54f8ea2d6e707fdb5246d5dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#adb6a3ce54f8ea2d6e707fdb5246d5dfc">guidance_indi_set_min_max_airspeed</a> (float min_airspeed, float <a class="el" href="guidance__hybrid_8h.html#a8272b2bcae7d65113297afe886600fc8">max_airspeed</a>)</td></tr>
-<tr class="separator:adb6a3ce54f8ea2d6e707fdb5246d5dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebc56a7fea2d1f9657533ea079ba78d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a7ebc56a7fea2d1f9657533ea079ba78d">guidance_set_min_max_airspeed</a> (float min_airspeed, float <a class="el" href="guidance__hybrid_8h.html#a8272b2bcae7d65113297afe886600fc8">max_airspeed</a>)</td></tr>
+<tr class="separator:a7ebc56a7fea2d1f9657533ea079ba78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -537,9 +537,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00465">465</a> of file <a class="el" href="eff__scheduling__rotwing_8c_source.html">eff_scheduling_rotwing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00469">469</a> of file <a class="el" href="eff__scheduling__rotwing_8c_source.html">eff_scheduling_rotwing.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00448">eff_scheduling_rotwing_lift_d</a>.</p>
+<p class="reference">References <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00452">eff_scheduling_rotwing_lift_d</a>.</p>
 
 </div>
 </div>
@@ -673,14 +673,14 @@ stall_protect_gain</td>
 
 </div>
 </div>
-<a id="adb6a3ce54f8ea2d6e707fdb5246d5dfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb6a3ce54f8ea2d6e707fdb5246d5dfc">&#9670;&nbsp;</a></span>guidance_indi_set_min_max_airspeed()</h2>
+<a id="a7ebc56a7fea2d1f9657533ea079ba78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebc56a7fea2d1f9657533ea079ba78d">&#9670;&nbsp;</a></span>guidance_set_min_max_airspeed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void guidance_indi_set_min_max_airspeed </td>
+          <td class="memname">void guidance_set_min_max_airspeed </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>min_airspeed</em>, </td>
@@ -701,15 +701,15 @@ stall_protect_gain</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00414">414</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00194">rotwing_state_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00176">rotwing_state_periodic()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__indi__hybrid_8h_adb6a3ce54f8ea2d6e707fdb5246d5dfc_icgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_adb6a3ce54f8ea2d6e707fdb5246d5dfc_icgraph" alt=""/></div>
-<map name="aguidance__indi__hybrid_8h_adb6a3ce54f8ea2d6e707fdb5246d5dfc_icgraph" id="aguidance__indi__hybrid_8h_adb6a3ce54f8ea2d6e707fdb5246d5dfc_icgraph">
-<area shape="rect" title=" " alt="" coords="224,5,395,47"/>
+<div class="center"><img src="guidance__indi__hybrid_8h_a7ebc56a7fea2d1f9657533ea079ba78d_icgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_a7ebc56a7fea2d1f9657533ea079ba78d_icgraph" alt=""/></div>
+<map name="aguidance__indi__hybrid_8h_a7ebc56a7fea2d1f9657533ea079ba78d_icgraph" id="aguidance__indi__hybrid_8h_a7ebc56a7fea2d1f9657533ea079ba78d_icgraph">
+<area shape="rect" title=" " alt="" coords="224,5,400,47"/>
 <area shape="rect" href="rotwing__state_8c.html#aea48320cf6f1fd18ec0a0046b46c9c73" title=" " alt="" coords="5,13,176,39"/>
 </map>
 </div>
@@ -815,7 +815,7 @@ stall_protect_gain</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00244">244</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00194">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00119">send_rotating_wing_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00176">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00102">send_rotating_wing_state()</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1045,7 @@ stall_protect_gain</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi__hybrid_8h.html">guidance_indi_hybrid.h</a></li>
-    <li class="footer">Generated on Wed Oct 23 2024 08:12:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 15:51:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
