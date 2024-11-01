@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c_source.html',''); ini
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef USE_AIRSPEED_ADC</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="airspeed__adc_8c.html#afc95f2b1180c25a5724cc02a21737d4b">   34</a></span>&#160;<span class="preprocessor">#define USE_AIRSPEED_ADC TRUE</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="airspeed__adc_8c.html#afc95f2b1180c25a5724cc02a21737d4b">USE_AIRSPEED_ADC</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="airspeed__adc_8c.html#afc95f2b1180c25a5724cc02a21737d4b">USE_AIRSPEED_ADC</a>)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if !defined AIRSPEED_ADC_QUADRATIC_SCALE &amp;&amp; !defined AIRSPEED_ADC_SCALE</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#error &quot;You need to define either AIRSPEED_ADC_QUADRATIC_SCALE or AIRSPEED_ADC_SCALE (linear).&quot;</span></div>
@@ -198,6 +198,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c_source.html',''); ini
 <div class="ttc" id="aairspeed__adc_8h_html_structAirspeedAdc"><div class="ttname"><a href="airspeed__adc_8h.html#structAirspeedAdc">AirspeedAdc</a></div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00031">airspeed_adc.h:31</a></div></div>
 <div class="ttc" id="achibios_2mcu__periph_2adc__arch_8c_html_a289883844d6749adab1cee5aabe41824"><div class="ttname"><a href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a></div><div class="ttdeci">void adc_buf_channel(uint8_t adc_channel, struct adc_buf *s, uint8_t av_nb_sample)</div><div class="ttdoc">Link between ChibiOS ADC drivers and Paparazzi adc_buffers.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00312">adc_arch.c:312</a></div></div>
 <div class="ttc" id="agroup__state__wind__airspeed_html_ga2ede5795eaec38206e25b8850ee40f63"><div class="ttname"><a href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(float airspeed)</div><div class="ttdoc">Set airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01309">state.h:1309</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -205,7 +206,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__adc_8c.html">airspeed_adc.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

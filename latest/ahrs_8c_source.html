@@ -119,11 +119,11 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html',''); initResizabl
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef PRIMARY_AHRS</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#error &quot;PRIMARY_AHRS not set!&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef SECONDARY_AHRS</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;PRINT_CONFIG_VAR(SECONDARY_AHRS)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(SECONDARY_AHRS)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="ahrs_8c.html#a769b2fb50d45f52c9bcc46600509b80b">   45</a></span>&#160;<span class="preprocessor">#define __RegisterAhrs(_x) _x ## _register()</span></div>
@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html',''); initResizabl
 <div class="ttc" id="aahrs__aligner_8h_html"><div class="ttname"><a href="ahrs__aligner_8h.html">ahrs_aligner.h</a></div><div class="ttdoc">Interface to align the AHRS via low-passed measurements at startup.</div></div>
 <div class="ttc" id="aahrs__chimu_8h_html_a100248ab1eaacc626e56add84dc1857f"><div class="ttname"><a href="ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a></div><div class="ttdeci">#define PRIMARY_AHRS</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__chimu_8h_source.html#l00040">ahrs_chimu.h:40</a></div></div>
 <div class="ttc" id="anps__radio__control__spektrum_8c_html_a1f658a7d21dc9b85b8009cedb0a1aef6"><div class="ttname"><a href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a></div><div class="ttdeci">static uint32_t idx</div><div class="ttdef"><b>Definition:</b> <a href="nps__radio__control__spektrum_8c_source.html#l00105">nps_radio_control_spektrum.c:105</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="astd_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="astd_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
@@ -212,7 +213,7 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs_8c.html">ahrs.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

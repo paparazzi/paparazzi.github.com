@@ -61,6 +61,47 @@ var oneloop__andi_8h =
       [ "k2", "oneloop__andi_8h.html#a4f56a556dbf406affb21a1ea3e65c14a", null ],
       [ "k3", "oneloop__andi_8h.html#ae8bb07c64dfe01a679d9184d6012390f", null ]
     ] ],
+    [ "CF4_t", "oneloop__andi_8h.html#structCF4__t", [
+      [ "feedback", "oneloop__andi_8h.html#ac311d46b862ecde791986a5fe3f3e702", null ],
+      [ "feedback_filt", "oneloop__andi_8h.html#a624396ffe7788192fddfe9b7a9c05bf1", null ],
+      [ "freq", "oneloop__andi_8h.html#a885af4719dd2119a3458f52765c581fb", null ],
+      [ "freq_set", "oneloop__andi_8h.html#a2498188224b30ee2849086f2f98c9745", null ],
+      [ "model", "oneloop__andi_8h.html#a45ee8eaa2526a01cbf13fc5f2aa1e598", null ],
+      [ "model_filt", "oneloop__andi_8h.html#a63724ab5c333207bf5c5dbb826a1b439", null ],
+      [ "out", "oneloop__andi_8h.html#af972b3333084a6a6612207de1af6c1e2", null ],
+      [ "tau", "oneloop__andi_8h.html#a59cf05f2376e4034857caf54ebcfe280", null ]
+    ] ],
+    [ "CF2_t", "oneloop__andi_8h.html#structCF2__t", [
+      [ "feedback", "oneloop__andi_8h.html#a244a6aafbc83b1c23f6e195fb63d80bd", null ],
+      [ "feedback_filt", "oneloop__andi_8h.html#a1c8e421367f8991543423ced6d65af81", null ],
+      [ "freq", "oneloop__andi_8h.html#a2dc85e4554f66a0edde0062c0e76c0a3", null ],
+      [ "freq_set", "oneloop__andi_8h.html#a1e65d591764816620afa1d073ae9ffaa", null ],
+      [ "model", "oneloop__andi_8h.html#acfc982ad6aed18f4eb1b8879dda54d92", null ],
+      [ "model_filt", "oneloop__andi_8h.html#afbe4348c4fd5772f96112deb7d0d8f04", null ],
+      [ "out", "oneloop__andi_8h.html#a36b968068cd814c4fc8ec309fc1d50f2", null ],
+      [ "tau", "oneloop__andi_8h.html#af52203114beecc2196d9b1e124df8fc6", null ]
+    ] ],
+    [ "Oneloop_CF_t", "oneloop__andi_8h.html#structOneloop__CF__t", [
+      [ "ax", "oneloop__andi_8h.html#ae3d8e2fb44dcb91fdfc5a4d808cf195b", null ],
+      [ "ay", "oneloop__andi_8h.html#ab90ef00d38de4a94b1baca0e44a073c6", null ],
+      [ "az", "oneloop__andi_8h.html#a3d51a29cd43a2c27781ab603bc38421f", null ],
+      [ "p", "oneloop__andi_8h.html#a72ecd9fa5d2dbc0ad4ba9ad6d49f183b", null ],
+      [ "p_dot", "oneloop__andi_8h.html#ae527acf4acb8983f4fa23eaae37df6d0", null ],
+      [ "q", "oneloop__andi_8h.html#ac68e1bf76811669d8aa107d543a2bb19", null ],
+      [ "q_dot", "oneloop__andi_8h.html#a1808b61e3b79dfdd1ff5cd2af39ef57b", null ],
+      [ "r", "oneloop__andi_8h.html#ac96ea8edb860fcc591b93b9681275e80", null ],
+      [ "r_dot", "oneloop__andi_8h.html#ad538b32574df10ad5614da1b1aaa0f7c", null ]
+    ] ],
+    [ "notch_axis_t", "oneloop__andi_8h.html#structnotch__axis__t", [
+      [ "bandwidth", "oneloop__andi_8h.html#a3caa458371c86f64e0808278be65d415", null ],
+      [ "filter", "oneloop__andi_8h.html#ad1f7743c214b7011ae480386faeb30a1", null ],
+      [ "freq", "oneloop__andi_8h.html#a5f4d5cb6f06dbc8e362fe13af4ce8bf2", null ]
+    ] ],
+    [ "Oneloop_notch_t", "oneloop__andi_8h.html#structOneloop__notch__t", [
+      [ "pitch", "oneloop__andi_8h.html#a97b4c09c735cbc9593e062182f97b2b6", null ],
+      [ "roll", "oneloop__andi_8h.html#ac4973e7b8ec3e79effb60330c58989cb", null ],
+      [ "yaw", "oneloop__andi_8h.html#a0f728d55a1bd92f460ea1248e1cb6a74", null ]
+    ] ],
     [ "ANDI_G_SCALING", "oneloop__andi_8h.html#a61c6acc1df1a24298fe39aca96349bc0", null ],
     [ "ANDI_NUM_ACT", "oneloop__andi_8h.html#a615cabf06239821e16868da30d7c7835", null ],
     [ "ANDI_NUM_ACT_TOT", "oneloop__andi_8h.html#aa0836f863a9acfbb74f77503b47cc139", null ],
@@ -69,6 +110,7 @@ var oneloop__andi_8h =
     [ "ANDI_OUTPUTS", "oneloop__andi_8h.html#ad2493c7384798b6068806a9b9a20640d", null ],
     [ "CTRL_ANDI", "oneloop__andi_8h.html#a7141d2f6f55016f9d056f325ba3fb8a3", null ],
     [ "CTRL_INDI", "oneloop__andi_8h.html#a4884f2dc59f0811158b84ca27f35af7f", null ],
+    [ "guidance_set_min_max_airspeed", "oneloop__andi_8h.html#a7ebc56a7fea2d1f9657533ea079ba78d", null ],
     [ "oneloop_andi_enter", "oneloop__andi_8h.html#a1a8efaa4745d7aef6b89e29643f43718", null ],
     [ "oneloop_andi_init", "oneloop__andi_8h.html#accb008a2b3851434c56824df7b7b8c15", null ],
     [ "oneloop_andi_read_rc", "oneloop__andi_8h.html#a037a42846b4c0b00fcb1c5a10c2c07c7", null ],
@@ -81,6 +123,7 @@ var oneloop__andi_8h =
     [ "actuator_state_1l", "oneloop__andi_8h.html#ae767ef515cbb5bc849b0604ebeed5760", null ],
     [ "andi_du", "oneloop__andi_8h.html#aa1942a87e52e6589bd350bcc3fa19440", null ],
     [ "andi_u", "oneloop__andi_8h.html#a7ecf1f528e54549a2f4ad2d7a74a3328", null ],
+    [ "cf", "oneloop__andi_8h.html#a81766378a3c137f131c1aaea1cd529cc", null ],
     [ "chirp_axis", "oneloop__andi_8h.html#a98988d6f3db02b846d1116c3bcb79d3a", null ],
     [ "chirp_on", "oneloop__andi_8h.html#a7697e638b570277713d5651ecdcaee30", null ],
     [ "ctrl_off", "oneloop__andi_8h.html#a49f9b412e252c6010068271f84abc50a", null ],
@@ -89,6 +132,7 @@ var oneloop__andi_8h =
     [ "f1_chirp", "oneloop__andi_8h.html#a84d0e54464765750706109510a0307b5", null ],
     [ "fwd_sideslip_gain", "oneloop__andi_8h.html#a843142192ad221c1433825d72ee73e3c", null ],
     [ "g1g2_1l", "oneloop__andi_8h.html#a352f06b221e04ab07375357a9eae29db", null ],
+    [ "gi_unbounded_airspeed_sp", "oneloop__andi_8h.html#ad1f6f478ce19e0a71062dbdade542a8f", null ],
     [ "gih_params", "oneloop__andi_8h.html#a220bb859f2933240f886cccc7394368a", null ],
     [ "heading_manual", "oneloop__andi_8h.html#aa3ffa0ba910099cbd2a2ff812ffed456", null ],
     [ "k_as", "oneloop__andi_8h.html#ad3f1e9a590231060fd03e5d3292bae9a", null ],

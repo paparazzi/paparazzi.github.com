@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('main__ap_8c_source.html',''); initResi
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* if PRINT_CONFIG is defined, print some config options */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;PRINT_CONFIG_VAR(PERIODIC_FREQUENCY)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(PERIODIC_FREQUENCY)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/* SYS_TIME_FREQUENCY/PERIODIC_FREQUENCY should be an integer, otherwise the timer will not be correct */</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if !(SYS_TIME_FREQUENCY/PERIODIC_FREQUENCY*PERIODIC_FREQUENCY == SYS_TIME_FREQUENCY)</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#warning &quot;The SYS_TIME_FREQUENCY can not be divided by PERIODIC_FREQUENCY. Make sure this is the case for correct timing.&quot;</span></div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('main__ap_8c_source.html',''); initResi
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if (TELEMETRY_FREQUENCY &gt; SYS_TIME_FREQUENCY) || !(SYS_TIME_FREQUENCY/TELEMETRY_FREQUENCY*TELEMETRY_FREQUENCY == SYS_TIME_FREQUENCY)</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#warning &quot;The TELEMETRY_FREQUENCY can not be faster than the SYS_TIME_FREQUENCY and needs to be dividable by the SYS_TIME_FREQUENCY.&quot;</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;PRINT_CONFIG_VAR(TELEMETRY_FREQUENCY)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(TELEMETRY_FREQUENCY)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if USE_AHRS &amp;&amp; USE_IMU &amp;&amp; (defined AHRS_PROPAGATE_FREQUENCY)</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#if (AHRS_PROPAGATE_FREQUENCY &gt; PERIODIC_FREQUENCY)</span></div>
@@ -250,6 +250,7 @@ $(document).ready(function(){initNavTree('main__ap_8c_source.html',''); initResi
 <div class="ttc" id="amain__ap_8c_html_af696e7aad7de29e4eb43523e3f4526bd"><div class="ttname"><a href="main__ap_8c.html#af696e7aad7de29e4eb43523e3f4526bd">SYS_PERIOD</a></div><div class="ttdeci">#define SYS_PERIOD</div><div class="ttdef"><b>Definition:</b> <a href="main__ap_8c_source.html#l00075">main_ap.c:75</a></div></div>
 <div class="ttc" id="amain__ap_8h_html"><div class="ttname"><a href="main__ap_8h.html">main_ap.h</a></div><div class="ttdoc">Autopilot main loop.</div></div>
 <div class="ttc" id="anps__autopilot_8h_html"><div class="ttname"><a href="nps__autopilot_8h.html">nps_autopilot.h</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="asys__time_8c_html_a3ababed8b6819006aaf919a663efe8cd"><div class="ttname"><a href="sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd">sys_time_register_timer</a></div><div class="ttdeci">tid_t sys_time_register_timer(float duration, sys_time_cb cb)</div><div class="ttdoc">Register a new system timer.</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8c_source.html#l00043">sys_time.c:43</a></div></div>
 <div class="ttc" id="asys__time_8c_html_a47c219332312321b7b2bc31ed6a23ba9"><div class="ttname"><a href="sys__time_8c.html#a47c219332312321b7b2bc31ed6a23ba9">sys_time_register_timer_offset</a></div><div class="ttdeci">tid_t sys_time_register_timer_offset(tid_t timer, float offset, sys_time_cb cb)</div><div class="ttdoc">Register a new system timer with an fixed offset from another one.</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8c_source.html#l00059">sys_time.c:59</a></div></div>
 <div class="ttc" id="asys__time_8h_html_a51e98e20394934c8db19022ab2adc4c1"><div class="ttname"><a href="sys__time_8h.html#a51e98e20394934c8db19022ab2adc4c1">sys_time_check_and_ack_timer</a></div><div class="ttdeci">static bool sys_time_check_and_ack_timer(tid_t id)</div><div class="ttdoc">Check if timer has elapsed.</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00123">sys_time.h:123</a></div></div>
@@ -260,7 +261,7 @@ $(document).ready(function(){initNavTree('main__ap_8c_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="main__ap_8c.html">main_ap.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -118,9 +118,9 @@ $(document).ready(function(){initNavTree('imu__mpu6000__hmc5883_8c_source.html',
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* SPI/I2C defaults set in subsystem makefile, can be configured from airframe file */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;PRINT_CONFIG_VAR(IMU_MPU_SPI_SLAVE_IDX)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;PRINT_CONFIG_VAR(IMU_MPU_SPI_DEV)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;PRINT_CONFIG_VAR(IMU_HMC_I2C_DEV)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(IMU_MPU_SPI_SLAVE_IDX)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(IMU_MPU_SPI_DEV)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(IMU_HMC_I2C_DEV)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/* MPU60x0 gyro/accel internal lowpass frequency */</span></div>
@@ -143,65 +143,65 @@ $(document).ready(function(){initNavTree('imu__mpu6000__hmc5883_8c_source.html',
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#error Non-default PERIODIC_FREQUENCY: please define IMU_MPU_LOWPASS_FILTER and IMU_MPU_SMPLRT_DIV.</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000_8c.html#a34197bbb228b6994c05be573d333d74e">IMU_MPU_LOWPASS_FILTER</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000_8c.html#a408cb225a79d319e1b2ceeb6331b2dc1">IMU_MPU_SMPLRT_DIV</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000_8c.html#a34197bbb228b6994c05be573d333d74e">IMU_MPU_LOWPASS_FILTER</a>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000_8c.html#a408cb225a79d319e1b2ceeb6331b2dc1">IMU_MPU_SMPLRT_DIV</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000_8h.html#a26e4ccd24281fa404cf1959858ca10bf">IMU_MPU_GYRO_RANGE</a>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000_8h.html#a7c0229d06494ef4074857d8ed4f277e1">IMU_MPU_ACCEL_RANGE</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000_8h.html#a26e4ccd24281fa404cf1959858ca10bf">IMU_MPU_GYRO_RANGE</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000_8h.html#a7c0229d06494ef4074857d8ed4f277e1">IMU_MPU_ACCEL_RANGE</a>)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// Default channels order</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_CHAN_X</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#ad6966952ce0485e5bffbc0d8132fa5df">   69</a></span>&#160;<span class="preprocessor">#define IMU_MPU_CHAN_X 0</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#ad6966952ce0485e5bffbc0d8132fa5df">IMU_MPU_CHAN_X</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#ad6966952ce0485e5bffbc0d8132fa5df">IMU_MPU_CHAN_X</a>)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_CHAN_Y</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#abd2159bb1b3c82cedfd894e7812574e5">   73</a></span>&#160;<span class="preprocessor">#define IMU_MPU_CHAN_Y 1</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#abd2159bb1b3c82cedfd894e7812574e5">IMU_MPU_CHAN_Y</a>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#abd2159bb1b3c82cedfd894e7812574e5">IMU_MPU_CHAN_Y</a>)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_CHAN_Z</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#ae2feb7343d2916d4ac7950010ef0018f">   77</a></span>&#160;<span class="preprocessor">#define IMU_MPU_CHAN_Z 2</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#ae2feb7343d2916d4ac7950010ef0018f">IMU_MPU_CHAN_Z</a>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#ae2feb7343d2916d4ac7950010ef0018f">IMU_MPU_CHAN_Z</a>)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_X_SIGN</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#a5e1306dffd68a877b676de9d785a279a">   82</a></span>&#160;<span class="preprocessor">#define IMU_MPU_X_SIGN 1</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a5e1306dffd68a877b676de9d785a279a">IMU_MPU_X_SIGN</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a5e1306dffd68a877b676de9d785a279a">IMU_MPU_X_SIGN</a>)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_Y_SIGN</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#ae2a24b4ddc832d0f2111b384e0ff722e">   86</a></span>&#160;<span class="preprocessor">#define IMU_MPU_Y_SIGN 1</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#ae2a24b4ddc832d0f2111b384e0ff722e">IMU_MPU_Y_SIGN</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#ae2a24b4ddc832d0f2111b384e0ff722e">IMU_MPU_Y_SIGN</a>)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_Z_SIGN</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#a1542fbc0f6f147a0993f3b89bc410469">   90</a></span>&#160;<span class="preprocessor">#define IMU_MPU_Z_SIGN 1</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a1542fbc0f6f147a0993f3b89bc410469">IMU_MPU_Z_SIGN</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a1542fbc0f6f147a0993f3b89bc410469">IMU_MPU_Z_SIGN</a>)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/* mag by default rotated by 90deg around z axis relative to MPU */</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#ifndef IMU_HMC_CHAN_X</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#a802939ddfdf31199a1e9c2d821b2a513">   96</a></span>&#160;<span class="preprocessor">#define IMU_HMC_CHAN_X 1</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a802939ddfdf31199a1e9c2d821b2a513">IMU_HMC_CHAN_X</a>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a802939ddfdf31199a1e9c2d821b2a513">IMU_HMC_CHAN_X</a>)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifndef IMU_HMC_CHAN_Y</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#a36489f003cea9fda6f12e6d8e9b2538d">  100</a></span>&#160;<span class="preprocessor">#define IMU_HMC_CHAN_Y 0</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a36489f003cea9fda6f12e6d8e9b2538d">IMU_HMC_CHAN_Y</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a36489f003cea9fda6f12e6d8e9b2538d">IMU_HMC_CHAN_Y</a>)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifndef IMU_HMC_CHAN_Z</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#aa0c68fe97ff5dc4caca839d96e849569">  104</a></span>&#160;<span class="preprocessor">#define IMU_HMC_CHAN_Z 2</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#aa0c68fe97ff5dc4caca839d96e849569">IMU_HMC_CHAN_Z</a>)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#aa0c68fe97ff5dc4caca839d96e849569">IMU_HMC_CHAN_Z</a>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#ifndef IMU_HMC_X_SIGN</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#aed1044a8809f460ff983d231cb8a9849">  109</a></span>&#160;<span class="preprocessor">#define IMU_HMC_X_SIGN 1</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#aed1044a8809f460ff983d231cb8a9849">IMU_HMC_X_SIGN</a>)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#aed1044a8809f460ff983d231cb8a9849">IMU_HMC_X_SIGN</a>)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#ifndef IMU_HMC_Y_SIGN</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#a2fa9b02daff22a9e05af5dae54d874bb">  113</a></span>&#160;<span class="preprocessor">#define IMU_HMC_Y_SIGN -1</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a2fa9b02daff22a9e05af5dae54d874bb">IMU_HMC_Y_SIGN</a>)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#a2fa9b02daff22a9e05af5dae54d874bb">IMU_HMC_Y_SIGN</a>)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#ifndef IMU_HMC_Z_SIGN</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="imu__mpu6000__hmc5883_8c.html#aefbdd3e7a29096d80e1c3d72e624e947">  117</a></span>&#160;<span class="preprocessor">#define IMU_HMC_Z_SIGN 1</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu6000__hmc5883_8c.html#aefbdd3e7a29096d80e1c3d72e624e947">IMU_HMC_Z_SIGN</a>)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu6000__hmc5883_8c.html#aefbdd3e7a29096d80e1c3d72e624e947">IMU_HMC_Z_SIGN</a>)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">struct </span><a class="code" href="imu__mpu6000__hmc5883_8h.html#structImuMpu6000Hmc5883">ImuMpu6000Hmc5883</a> <a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>;</div>
@@ -324,6 +324,7 @@ $(document).ready(function(){initNavTree('imu__mpu6000__hmc5883_8c_source.html',
 <div class="ttc" id="ampu60x0__spi_8h_html_a4dc523e1273f43a107e19768465c1963"><div class="ttname"><a href="mpu60x0__spi_8h.html#a4dc523e1273f43a107e19768465c1963">Mpu60x0_Spi::data_rates</a></div><div class="ttdeci">union Mpu60x0_Spi::@342 data_rates</div></div>
 <div class="ttc" id="ampu60x0__spi_8h_html_ab3afb083a7e2aebe259e155720138e4f"><div class="ttname"><a href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f">mpu60x0_spi_periodic</a></div><div class="ttdeci">static void mpu60x0_spi_periodic(struct Mpu60x0_Spi *mpu)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi.h:78</a></div></div>
 <div class="ttc" id="ampu60x0__spi_8h_html_abe8a83a00ae2547cf20e8f5b0181bef0"><div class="ttname"><a href="mpu60x0__spi_8h.html#abe8a83a00ae2547cf20e8f5b0181bef0">Mpu60x0_Spi::data_accel</a></div><div class="ttdeci">union Mpu60x0_Spi::@341 data_accel</div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="aspi_8h_html"><div class="ttname"><a href="spi_8h.html">spi.h</a></div><div class="ttdoc">Architecture independent SPI (Serial Peripheral Interface) API.</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
@@ -333,7 +334,7 @@ $(document).ready(function(){initNavTree('imu__mpu6000__hmc5883_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu6000__hmc5883_8c.html">imu_mpu6000_hmc5883.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

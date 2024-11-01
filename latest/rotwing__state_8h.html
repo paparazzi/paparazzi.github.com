@@ -113,9 +113,10 @@ $(document).ready(function(){initNavTree('rotwing__state_8h.html',''); initResiz
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2rotwing__drone_2rotwing__state_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2rotwing__drone_2rotwing__state_8hdep" id="asw_2airborne_2modules_2rotwing__drone_2rotwing__state_8hdep">
-<area shape="rect" title=" " alt="" coords="93,5,265,61"/>
-<area shape="rect" href="eff__scheduling__rotwing_8c.html" title=" " alt="" coords="5,109,164,165"/>
-<area shape="rect" href="rotwing__state_8c.html" title=" " alt="" coords="188,109,360,165"/>
+<area shape="rect" title=" " alt="" coords="221,5,393,61"/>
+<area shape="rect" href="oneloop__andi_8c.html" title=" " alt="" coords="5,109,204,165"/>
+<area shape="rect" href="eff__scheduling__rotwing_8c.html" title=" " alt="" coords="228,109,387,165"/>
+<area shape="rect" href="rotwing__state_8c.html" title=" " alt="" coords="411,109,583,165"/>
 </map>
 </div>
 </div>
@@ -585,7 +586,7 @@ skew_forced: 1</td>
 
 <p class="reference">References <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8c_source.html#l00035">ROTWING_QUAD_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, and <a class="el" href="rotwing__state_8c_source.html#l00099">rotwing_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00503">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00176">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00102">send_rotating_wing_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01870">G1G2_oneloop()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00503">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00176">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00102">send_rotating_wing_state()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -604,11 +605,33 @@ skew_forced: 1</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph.png" border="0" usemap="#arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph" alt=""/></div>
 <map name="arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph" id="arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph">
-<area shape="rect" title=" " alt="" coords="411,64,565,105"/>
-<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="197,5,357,47"/>
-<area shape="rect" href="rotwing__state_8c.html#aea48320cf6f1fd18ec0a0046b46c9c73" title=" " alt="" coords="192,71,363,98"/>
-<area shape="rect" href="rotwing__state_8c.html#ab8f72a98676fba24f38387c5a706b612" title=" " alt="" coords="203,123,352,164"/>
-<area shape="rect" href="rotwing__state_8c.html#a5187c7100a4e54eb7d052892fbafd06e" title=" " alt="" coords="5,130,144,157"/>
+<area shape="rect" title=" " alt="" coords="1367,336,1521,377"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="1175,255,1292,282"/>
+<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="1153,307,1313,348"/>
+<area shape="rect" href="rotwing__state_8c.html#aea48320cf6f1fd18ec0a0046b46c9c73" title=" " alt="" coords="1148,373,1319,399"/>
+<area shape="rect" href="rotwing__state_8c.html#ab8f72a98676fba24f38387c5a706b612" title=" " alt="" coords="1159,424,1308,465"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="949,255,1100,282"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="281,306,418,333"/>
+<area shape="rect" href="oneloop__andi_8c.html#accb008a2b3851434c56824df7b7b8c15" title="Init function of Oneloop ANDI controller" alt="" coords="956,205,1093,231"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac26c34025ecb029941bb42302325ca62" title=" " alt="" coords="777,306,861,333"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="31,255,174,282"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="736,205,901,231"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="739,75,899,116"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1928abb30177b1b340e61d0d324716df" title="Function to generate the reference signals for the oneloop controller." alt="" coords="525,306,662,333"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="9,306,197,333"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="511,205,676,231"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="503,154,684,181"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="248,159,451,186"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,181,200,207"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="13,130,192,157"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="499,82,688,109"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#aaff770beb67d0854a99599724b3042a5" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="513,5,673,47"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="298,109,401,135"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="301,58,398,85"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="50,75,155,102"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="321,7,377,34"/>
+<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="37,7,168,34"/>
+<area shape="rect" href="rotwing__state_8c.html#a5187c7100a4e54eb7d052892fbafd06e" title=" " alt="" coords="955,431,1094,458"/>
 </map>
 </div>
 
@@ -941,7 +964,7 @@ skew_forced: 1</td>
 
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00098">98</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00503">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00365">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00402">rotwing_state_hover_motors_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00129">rotwing_state_init()</a>, <a class="el" href="rotwing__state_8c_source.html#l00176">rotwing_state_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00419">rotwing_state_pusher_motor_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00436">rotwing_state_set()</a>, <a class="el" href="rotwing__state_8c_source.html#l00428">rotwing_state_skew_angle_valid()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00102">send_rotating_wing_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l01870">G1G2_oneloop()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00503">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01629">oneloop_andi_run()</a>, <a class="el" href="rotwing__state_8c_source.html#l00365">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00402">rotwing_state_hover_motors_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00129">rotwing_state_init()</a>, <a class="el" href="rotwing__state_8c_source.html#l00176">rotwing_state_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00419">rotwing_state_pusher_motor_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00436">rotwing_state_set()</a>, <a class="el" href="rotwing__state_8c_source.html#l00428">rotwing_state_skew_angle_valid()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00102">send_rotating_wing_state()</a>.</p>
 
 </div>
 </div>
@@ -951,7 +974,7 @@ skew_forced: 1</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4af85dec26241e8232a868b2a8878f9e.html">rotwing_drone</a></li><li class="navelem"><a class="el" href="rotwing__state_8h.html">rotwing_state.h</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

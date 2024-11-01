@@ -1,5 +1,10 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,189,2,0],
+"module__imu_aspirin_i2c_common.html":[1,190],
+"module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common":[1,190,1],
+"module__imu_aspirin_i2c_common.html#functions__imu_aspirin_i2c_common":[1,190,2],
+"module__imu_aspirin_i2c_common.html#module_load_example__imu_aspirin_i2c_common":[1,190,0],
 "module__imu_aspirin_i2c_common.html#module_xml__imu_aspirin_i2c_common":[1,190,2,0],
 "module__imu_aspirin_i2c_v1_0.html":[1,191],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,191,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX136 =
 "module__ins_vn100.html#module_load_example__ins_vn100":[1,245,0],
 "module__ins_vn100.html#module_xml__ins_vn100":[1,245,2,0],
 "module__ins_xsens.html":[1,246],
-"module__ins_xsens.html#configuration__ins_xsens":[1,246,1],
-"module__ins_xsens.html#functions__ins_xsens":[1,246,2],
-"module__ins_xsens.html#module_load_example__ins_xsens":[1,246,0],
-"module__ins_xsens.html#module_xml__ins_xsens":[1,246,2,0],
-"module__ins_xsens700.html":[1,247],
-"module__ins_xsens700.html#configuration__ins_xsens700":[1,247,1]
+"module__ins_xsens.html#configuration__ins_xsens":[1,246,1]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX139 =
 {
+"module__px4flow.html":[1,357],
+"module__px4flow.html#configuration__px4flow":[1,357,1],
+"module__px4flow.html#functions__px4flow":[1,357,2],
+"module__px4flow.html#module_load_example__px4flow":[1,357,0],
+"module__px4flow.html#module_xml__px4flow":[1,357,2,0],
 "module__px4flow_i2c.html":[1,358],
 "module__px4flow_i2c.html#configuration__px4flow_i2c":[1,358,1],
 "module__px4flow_i2c.html#functions__px4flow_i2c":[1,358,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX139 =
 "module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,444,2],
 "module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,444,0],
 "module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,444,2,0],
-"module__switch_servo.html":[1,446],
-"module__switch_servo.html#configuration__switch_servo":[1,446,1],
-"module__switch_servo.html#functions__switch_servo":[1,446,2],
-"module__switch_servo.html#module_load_example__switch_servo":[1,446,0],
-"module__switch_servo.html#module_xml__switch_servo":[1,446,2,0],
-"module__switch_uart.html":[1,447]
+"module__switch_servo.html":[1,446]
 };

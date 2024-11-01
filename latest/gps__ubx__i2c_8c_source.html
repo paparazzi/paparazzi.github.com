@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('gps__ubx__i2c_8c_source.html',''); ini
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifndef GPS_UBX_I2C_DEV</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#error &quot;GPS_UBX_I2C_DEV needs to be defined (e.g. to i2c1)&quot;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;PRINT_CONFIG_VAR(GPS_UBX_I2C_DEV)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(GPS_UBX_I2C_DEV)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="gps__ubx__i2c_8c.html#a4f9fe9c5d784562d78946ec77ca97d5b">   46</a></span>&#160;<span class="preprocessor">#define GPS_I2C_ADDR_NB_AVAIL_BYTES 0xFD    </span></div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="gps__ubx__i2c_8c.html#a0b354408bd0f6377c33481e87da95eba">   47</a></span>&#160;<span class="preprocessor">#define GPS_I2C_ADDR_DATA 0xFF            </span></div>
@@ -360,6 +360,7 @@ $(document).ready(function(){initNavTree('gps__ubx__i2c_8c_source.html',''); ini
 <div class="ttc" id="agroup__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a></div><div class="ttdeci">@ I2CTransDone</div><div class="ttdoc">transaction set to done by user level</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00060">i2c.h:59</a></div></div>
 <div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API.</div></div>
 <div class="ttc" id="ains__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00257">ins_alt_float.c:257</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="aserial_8c_html_a6f8059414f0228f0256115e024eeed4b"><div class="ttname"><a href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00026">serial.c:26</a></div></div>
 <div class="ttc" id="astd_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="astd_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
@@ -372,7 +373,7 @@ $(document).ready(function(){initNavTree('gps__ubx__i2c_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__ubx__i2c_8c.html">gps_ubx_i2c.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

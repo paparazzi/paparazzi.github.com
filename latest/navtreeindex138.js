@@ -1,5 +1,10 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_catapult.html#module_xml__nav_catapult":[1,322,2,0],
+"module__nav_cube.html":[1,323],
+"module__nav_cube.html#module_load_example__nav_cube":[1,323,0],
+"module__nav_cube.html#module_xml__nav_cube":[1,323,0,0],
+"module__nav_drop.html":[1,324],
 "module__nav_drop.html#module_load_example__nav_drop":[1,324,0],
 "module__nav_drop.html#module_xml__nav_drop":[1,324,0,0],
 "module__nav_fish.html":[1,325],
@@ -244,10 +249,5 @@ var NAVTREEINDEX138 =
 "module__px4_gimbal.html#configuration__px4_gimbal":[1,494,1],
 "module__px4_gimbal.html#functions__px4_gimbal":[1,494,2],
 "module__px4_gimbal.html#module_load_example__px4_gimbal":[1,494,0],
-"module__px4_gimbal.html#module_xml__px4_gimbal":[1,494,2,0],
-"module__px4flow.html":[1,357],
-"module__px4flow.html#configuration__px4flow":[1,357,1],
-"module__px4flow.html#functions__px4flow":[1,357,2],
-"module__px4flow.html#module_load_example__px4flow":[1,357,0],
-"module__px4flow.html#module_xml__px4flow":[1,357,2,0]
+"module__px4_gimbal.html#module_xml__px4_gimbal":[1,494,2,0]
 };

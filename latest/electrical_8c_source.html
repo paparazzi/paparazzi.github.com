@@ -144,11 +144,11 @@ $(document).ready(function(){initNavTree('electrical_8c_source.html',''); initRe
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifndef TAKEOFF_BAT_LEVEL</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="electrical_8c.html#aa6a4248794975c30aee23af064ce8a21">   61</a></span>&#160;<span class="preprocessor">#define TAKEOFF_BAT_LEVEL LOW_BAT_LEVEL</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="electrical_8c.html#aa6a4248794975c30aee23af064ce8a21">TAKEOFF_BAT_LEVEL</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="electrical_8c.html#aa6a4248794975c30aee23af064ce8a21">TAKEOFF_BAT_LEVEL</a>)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="electrical_8h.html#a479a2b46ea741517cdd5ec8bddf09777">LOW_BAT_LEVEL</a>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="electrical_8h.html#a750ae88746939044885e47e1c11ea136">CRITIC_BAT_LEVEL</a>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="electrical_8c.html#ae718155e6e9f20accaa19604a341f982">MIN_BAT_LEVEL</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="electrical_8h.html#a479a2b46ea741517cdd5ec8bddf09777">LOW_BAT_LEVEL</a>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="electrical_8h.html#a750ae88746939044885e47e1c11ea136">CRITIC_BAT_LEVEL</a>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="electrical_8c.html#ae718155e6e9f20accaa19604a341f982">MIN_BAT_LEVEL</a>)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifndef VoltageOfAdc</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="electrical_8c.html#a3a244669d0d9c86f4339f5d6fe83fdb9">   70</a></span>&#160;<span class="preprocessor">#define VoltageOfAdc(adc) DefaultVoltageOfAdc(adc)</span></div>
@@ -163,14 +163,14 @@ $(document).ready(function(){initNavTree('electrical_8c_source.html',''); initRe
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifndef CURRENT_ESTIMATION_NONLINEARITY</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">   80</a></span>&#160;<span class="preprocessor">#define CURRENT_ESTIMATION_NONLINEARITY 1.2</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">CURRENT_ESTIMATION_NONLINEARITY</a>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">CURRENT_ESTIMATION_NONLINEARITY</a>)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if defined MILLIAMP_AT_FULL_THROTTLE &amp;&amp; !defined MILLIAMP_AT_IDLE_THROTTLE</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Assuming 0 mA at idle throttle&quot;</span>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="preprocessor">#define MILLIAMP_AT_IDLE_THROTTLE 0</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;PRINT_CONFIG_VAR(MILLIAMP_AT_IDLE_THROTTLE)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(MILLIAMP_AT_IDLE_THROTTLE)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/* Main external structure */</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">struct </span><a class="code" href="electrical_8h.html#structElectrical">Electrical</a> <a class="code" href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>;</div>
@@ -396,6 +396,7 @@ $(document).ready(function(){initNavTree('electrical_8c_source.html',''); initRe
 <div class="ttc" id="aelectrical_8h_html_ad820bea20a4fa50e139b7fb1b1762014"><div class="ttname"><a href="electrical_8h.html#ad820bea20a4fa50e139b7fb1b1762014">Electrical::bat_critical</a></div><div class="ttdeci">bool bat_critical</div><div class="ttdoc">battery critical status</div><div class="ttdef"><b>Definition:</b> <a href="electrical_8h_source.html#l00051">electrical.h:51</a></div></div>
 <div class="ttc" id="aelectrical_8h_html_structElectrical"><div class="ttname"><a href="electrical_8h.html#structElectrical">Electrical</a></div><div class="ttdef"><b>Definition:</b> <a href="electrical_8h_source.html#l00044">electrical.h:44</a></div></div>
 <div class="ttc" id="ains__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="apaparazzi_8h_html_a54d332726575cca5fb2774bfcfbe36a9"><div class="ttname"><a href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a></div><div class="ttdeci">#define MAX_PPRZ</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00008">paparazzi.h:8</a></div></div>
 <div class="ttc" id="apreflight__checks_8c_html_a44147825b488fa3cf8ebb75192f9415c"><div class="ttname"><a href="preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c">preflight_error</a></div><div class="ttdeci">void preflight_error(struct preflight_result_t *result, const char *fmt,...)</div><div class="ttdoc">Register a preflight error used inside the preflight checking functions.</div><div class="ttdef"><b>Definition:</b> <a href="preflight__checks_8c_source.html#l00173">preflight_checks.c:173</a></div></div>
 <div class="ttc" id="apreflight__checks_8c_html_a6b367b7eff152e0b65185b1192056985"><div class="ttname"><a href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985">preflight_success</a></div><div class="ttdeci">void preflight_success(struct preflight_result_t *result, const char *fmt,...)</div><div class="ttdoc">Register a preflight success used inside the preflight checking functions.</div><div class="ttdef"><b>Definition:</b> <a href="preflight__checks_8c_source.html#l00257">preflight_checks.c:257</a></div></div>
@@ -411,7 +412,7 @@ $(document).ready(function(){initNavTree('electrical_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f40bc035e2479aed27dd3b0d2c095b9e.html">energy</a></li><li class="navelem"><a class="el" href="electrical_8c.html">electrical.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -20,11 +20,14 @@ var eff__scheduling__rotwing__V2_8c =
     [ "ele_min", "eff__scheduling__rotwing__V2_8c.html#a1a378cb44ac3cf8bccee84cd1e5eb382", null ],
     [ "eulers_zxy_RW_EFF", "eff__scheduling__rotwing__V2_8c.html#a2d10be8491211ff976412860be0dc7e3", null ],
     [ "flt_cut", "eff__scheduling__rotwing__V2_8c.html#ac530121a21faae32f908016773b9cca1", null ],
+    [ "flt_cut_ap", "eff__scheduling__rotwing__V2_8c.html#a31faa07d73ed2c0707503b9fe1d37353", null ],
     [ "G1_RW", "eff__scheduling__rotwing__V2_8c.html#a0d1e461bdffa57a1f473a494fb6572ef", null ],
     [ "G2_RW", "eff__scheduling__rotwing__V2_8c.html#a0345389c913639828e0e10aad0408c37", null ],
+    [ "roll_eff", "eff__scheduling__rotwing__V2_8c.html#a5bb87b3eb49525d4735c37d3da5d27df", null ],
     [ "RW", "eff__scheduling__rotwing__V2_8c.html#a43ec5dc733f4765113c0e4fec43f1977", null ],
     [ "skew_filt", "eff__scheduling__rotwing__V2_8c.html#a89c310c50918a2ee8ddec4c8e78759d7", null ],
     [ "skew_meas", "eff__scheduling__rotwing__V2_8c.html#ae6418b7d4d79ac54a564057b09a8ee4c", null ],
     [ "time", "eff__scheduling__rotwing__V2_8c.html#a2652b019234e09e83322c0255d4e744a", null ],
-    [ "wing_position_ev", "eff__scheduling__rotwing__V2_8c.html#aae95f0c99e5a489d1081cc99201e1578", null ]
+    [ "wing_position_ev", "eff__scheduling__rotwing__V2_8c.html#aae95f0c99e5a489d1081cc99201e1578", null ],
+    [ "yaw_eff", "eff__scheduling__rotwing__V2_8c.html#a951c29f2f67e77a18d37780060278769", null ]
 ];

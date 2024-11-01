@@ -137,11 +137,11 @@ $(document).ready(function(){initNavTree('imu__px4fmu_8c_source.html',''); initR
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#error Non-default PERIODIC_FREQUENCY: please define PX4FMU_LOWPASS_FILTER and PX4FMU_SMPLRT_DIV.</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;PRINT_CONFIG_VAR(PX4FMU_LOWPASS_FILTER)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;PRINT_CONFIG_VAR(PX4FMU_SMPLRT_DIV)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(PX4FMU_LOWPASS_FILTER)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(PX4FMU_SMPLRT_DIV)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__px4fmu_8h.html#a2f4611a7920f8d484a0fba703f65c6f4">PX4FMU_GYRO_RANGE</a>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__px4fmu_8h.html#ae853dcfe722b7064ca2750ae43f5f9e0">PX4FMU_ACCEL_RANGE</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__px4fmu_8h.html#a2f4611a7920f8d484a0fba703f65c6f4">PX4FMU_GYRO_RANGE</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__px4fmu_8h.html#ae853dcfe722b7064ca2750ae43f5f9e0">PX4FMU_ACCEL_RANGE</a>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span><a class="code" href="imu__px4fmu_8h.html#structImuPx4fmu">ImuPx4fmu</a> <a class="code" href="imu__px4fmu_8c.html#adaaa39d066b1968f299152e2ee1d0651">imu_px4fmu</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
@@ -248,6 +248,7 @@ $(document).ready(function(){initNavTree('imu__px4fmu_8c_source.html',''); initR
 <div class="ttc" id="ampu60x0__spi_8h_html_a4dc523e1273f43a107e19768465c1963"><div class="ttname"><a href="mpu60x0__spi_8h.html#a4dc523e1273f43a107e19768465c1963">Mpu60x0_Spi::data_rates</a></div><div class="ttdeci">union Mpu60x0_Spi::@342 data_rates</div></div>
 <div class="ttc" id="ampu60x0__spi_8h_html_ab3afb083a7e2aebe259e155720138e4f"><div class="ttname"><a href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f">mpu60x0_spi_periodic</a></div><div class="ttdeci">static void mpu60x0_spi_periodic(struct Mpu60x0_Spi *mpu)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi.h:78</a></div></div>
 <div class="ttc" id="ampu60x0__spi_8h_html_abe8a83a00ae2547cf20e8f5b0181bef0"><div class="ttname"><a href="mpu60x0__spi_8h.html#abe8a83a00ae2547cf20e8f5b0181bef0">Mpu60x0_Spi::data_accel</a></div><div class="ttdeci">union Mpu60x0_Spi::@341 data_accel</div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="aspi_8h_html"><div class="ttname"><a href="spi_8h.html">spi.h</a></div><div class="ttdoc">Architecture independent SPI (Serial Peripheral Interface) API.</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -256,7 +257,7 @@ $(document).ready(function(){initNavTree('imu__px4fmu_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__px4fmu_8c.html">imu_px4fmu.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

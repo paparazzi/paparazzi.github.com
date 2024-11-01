@@ -1,5 +1,10 @@
 var NAVTREEINDEX132 =
 {
+"mission__rotorcraft__nav_8c.html#aa8f5e01954042e24fc602d1de265a30f":[12,0,1,0,6,45,7,4],
+"mission__rotorcraft__nav_8c.html#aedba4c29429aa444a63b6fa63b666016":[12,0,1,0,6,45,7,14],
+"mission__rotorcraft__nav_8c.html#af52e94b6fc7933932b718c6489d4a549":[12,0,1,0,6,45,7,12],
+"mission__rotorcraft__nav_8c_source.html":[12,0,1,0,6,45,7],
+"module__actuators.html":[1,1],
 "module__actuators.html#functions__actuators":[1,1,1],
 "module__actuators.html#module_load_example__actuators":[1,1,0],
 "module__actuators.html#module_xml__actuators":[1,1,1,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX132 =
 "module__baro_amsys.html#functions__baro_amsys":[1,390,2],
 "module__baro_amsys.html#module_load_example__baro_amsys":[1,390,0],
 "module__baro_amsys.html#module_xml__baro_amsys":[1,390,2,0],
-"module__baro_bmp.html":[1,391],
-"module__baro_bmp.html#configuration__baro_bmp":[1,391,1],
-"module__baro_bmp.html#functions__baro_bmp":[1,391,2],
-"module__baro_bmp.html#module_load_example__baro_bmp":[1,391,0],
-"module__baro_bmp.html#module_xml__baro_bmp":[1,391,2,0],
-"module__baro_bmp280_i2c.html":[1,392]
+"module__baro_bmp.html":[1,391]
 };

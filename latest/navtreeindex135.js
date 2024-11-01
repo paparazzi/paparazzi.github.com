@@ -1,5 +1,10 @@
 var NAVTREEINDEX135 =
 {
+"module__gpio_ext_pca95xx.html":[1,152],
+"module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx":[1,152,1],
+"module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx":[1,152,0],
+"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,152,1,0],
+"module__gps.html":[1,153],
 "module__gps.html#configuration__gps":[1,153,1],
 "module__gps.html#datalink_functions__gps":[1,153,3],
 "module__gps.html#functions__gps":[1,153,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_aspirin_common.html":[1,189],
 "module__imu_aspirin_common.html#configuration__imu_aspirin_common":[1,189,1],
 "module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,189,2],
-"module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,189,0],
-"module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,189,2,0],
-"module__imu_aspirin_i2c_common.html":[1,190],
-"module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common":[1,190,1],
-"module__imu_aspirin_i2c_common.html#functions__imu_aspirin_i2c_common":[1,190,2],
-"module__imu_aspirin_i2c_common.html#module_load_example__imu_aspirin_i2c_common":[1,190,0]
+"module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,189,0]
 };

@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('baro__ms5611__i2c_8c_source.html','');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifndef MS5611_TYPE_MS5607</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="baro__ms5611__i2c_8c.html#a09e6be02316a271b42e7988e9c9b790c">   51</a></span>&#160;<span class="preprocessor">#define MS5611_TYPE_MS5607 FALSE</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="baro__ms5611__i2c_8c.html#a09e6be02316a271b42e7988e9c9b790c">MS5611_TYPE_MS5607</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="baro__ms5611__i2c_8c.html#a09e6be02316a271b42e7988e9c9b790c">MS5611_TYPE_MS5607</a>)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">struct </span><a class="code" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> <a class="code" href="baro__ms5611__i2c_8c.html#a2c58ff8f9484363a0bb727e2b63f2dc0">baro_ms5611</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -252,6 +252,7 @@ $(document).ready(function(){initNavTree('baro__ms5611__i2c_8c_source.html','');
 <div class="ttc" id="ams5611__i2c_8h_html_a7db71ce7b9baba37f736f293d97b3484"><div class="ttname"><a href="ms5611__i2c_8h.html#a7db71ce7b9baba37f736f293d97b3484">Ms5611_I2c::data_available</a></div><div class="ttdeci">volatile bool data_available</div><div class="ttdoc">data ready flag</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00042">ms5611_i2c.h:42</a></div></div>
 <div class="ttc" id="ams5611__i2c_8h_html_afd983ecb3762c55be45097cb634174bd"><div class="ttname"><a href="ms5611__i2c_8h.html#afd983ecb3762c55be45097cb634174bd">Ms5611_I2c::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00041">ms5611_i2c.h:41</a></div></div>
 <div class="ttc" id="ams5611__i2c_8h_html_structMs5611__I2c"><div class="ttname"><a href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00036">ms5611_i2c.h:36</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="apprz__isa_8h_html"><div class="ttname"><a href="pprz__isa_8h.html">pprz_isa.h</a></div><div class="ttdoc">Paparazzi atmospheric pressure conversion utilities.</div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
 <div class="ttc" id="asys__time_8h_html_a2e86fdabba99a0ac8f6409e0d1e694a3"><div class="ttname"><a href="sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3">sys_time::nb_sec</a></div><div class="ttdeci">volatile uint32_t nb_sec</div><div class="ttdoc">full seconds since startup</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00072">sys_time.h:72</a></div></div>
@@ -264,7 +265,7 @@ $(document).ready(function(){initNavTree('baro__ms5611__i2c_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__ms5611__i2c_8c.html">baro_ms5611_i2c.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

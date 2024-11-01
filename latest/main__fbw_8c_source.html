@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html',''); initRes
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="main__fbw_8c.html#a78999b158f7adedebd44829411f69d53">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="main__fbw_8c.html#a78999b158f7adedebd44829411f69d53">fbw_motors_on</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* if PRINT_CONFIG is defined, print some config options */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;PRINT_CONFIG_VAR(PERIODIC_FREQUENCY)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(PERIODIC_FREQUENCY)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/* SYS_TIME_FREQUENCY/PERIODIC_FREQUENCY should be an integer, otherwise the timer will not be correct */</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if !(SYS_TIME_FREQUENCY/PERIODIC_FREQUENCY*PERIODIC_FREQUENCY == SYS_TIME_FREQUENCY)</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#warning &quot;The SYS_TIME_FREQUENCY can not be divided by PERIODIC_FREQUENCY. Make sure this is the case for correct timing.&quot;</span></div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html',''); initRes
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/* TELEMETRY_FREQUENCY is defined in generated/periodic_telemetry.h</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * defaults to 60Hz or set by TELEMETRY_FREQUENCY configure option in airframe file</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;PRINT_CONFIG_VAR(TELEMETRY_FREQUENCY)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(TELEMETRY_FREQUENCY)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="main__fbw_8c.html#a2a75feb3d89bd30c622f1b444dfb2ecc">   59</a></span>&#160;<a class="code" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> <a class="code" href="main__fbw_8c.html#a2a75feb3d89bd30c622f1b444dfb2ecc">periodic_tid</a>;       </div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html',''); initRes
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifndef MAIN_FBW_RC_ID</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="main__fbw_8c.html#a9cf2f0a827baf726b7dd61a19f9e265d">   68</a></span>&#160;<span class="preprocessor">#define MAIN_FBW_RC_ID ABI_BROADCAST</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="main__fbw_8c.html#a9cf2f0a827baf726b7dd61a19f9e265d">MAIN_FBW_RC_ID</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="main__fbw_8c.html#a9cf2f0a827baf726b7dd61a19f9e265d">MAIN_FBW_RC_ID</a>)</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="main__fbw_8c.html#ad60be3b55721e6ed2db813c544401981">   71</a></span>&#160;static <a class="code" href="abi__common_8h.html#structabi__struct">abi_event</a> <a class="code" href="main__fbw_8c.html#ad60be3b55721e6ed2db813c544401981">rc_ev</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;static <span class="keywordtype">void</span> <a class="code" href="main__fbw_8c.html#a3200567e5b9d942f5998e9c30550cea2">rc_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="code" href="radio__control_8h.html#structRadioControl">RadioControl</a> *rc);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
@@ -376,6 +376,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html',''); initRes
 <div class="ttc" id="amain__fbw_8h_html_aceb657ad51a850a59166bab21f85c819"><div class="ttname"><a href="main__fbw_8h.html#aceb657ad51a850a59166bab21f85c819">FBW_MODE_MANUAL</a></div><div class="ttdeci">#define FBW_MODE_MANUAL</div><div class="ttdef"><b>Definition:</b> <a href="main__fbw_8h_source.html#l00068">main_fbw.h:68</a></div></div>
 <div class="ttc" id="amain__fbw_8h_html_ae592cfc625e6b21adc57b1eddc15f9f1"><div class="ttname"><a href="main__fbw_8h.html#ae592cfc625e6b21adc57b1eddc15f9f1">FBW_MODE_AUTO</a></div><div class="ttdeci">#define FBW_MODE_AUTO</div><div class="ttdef"><b>Definition:</b> <a href="main__fbw_8h_source.html#l00069">main_fbw.h:69</a></div></div>
 <div class="ttc" id="amain__fbw_8h_html_af9f3b5db2d73fb91df097b6a9285432d"><div class="ttname"><a href="main__fbw_8h.html#af9f3b5db2d73fb91df097b6a9285432d">RADIO_FBW_MODE</a></div><div class="ttdeci">#define RADIO_FBW_MODE</div><div class="ttdoc">Switching between FBW and autopilot is done with RADIO_FBW_MODE: default is to re-use RADIO_MODE.</div><div class="ttdef"><b>Definition:</b> <a href="main__fbw_8h_source.html#l00065">main_fbw.h:65</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="apaparazzi_8h_html_aa403b9f7966b26d3ec9a52303deda944"><div class="ttname"><a href="paparazzi_8h.html#aa403b9f7966b26d3ec9a52303deda944">MIN_PPRZ</a></div><div class="ttdeci">#define MIN_PPRZ</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00009">paparazzi.h:9</a></div></div>
 <div class="ttc" id="aradio__control_8c_html_a8fe61a8aa3f1859efec4bb06bc1134dc"><div class="ttname"><a href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a></div><div class="ttdeci">struct RadioControl radio_control</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00001">radio_control.c:33</a></div></div>
 <div class="ttc" id="aradio__control_8h_html_a49d0c23f0651ada64ce2cfb001f7c47c"><div class="ttname"><a href="radio__control_8h.html#a49d0c23f0651ada64ce2cfb001f7c47c">RC_REALLY_LOST</a></div><div class="ttdeci">#define RC_REALLY_LOST</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00051">radio_control.h:51</a></div></div>
@@ -395,7 +396,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="main__fbw_8c.html">main_fbw.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c_source.html','');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;generated/modules.h&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* SPI defaults set in subsystem makefile, can be configured from airframe file */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;PRINT_CONFIG_VAR(IMU_MPU9250_SPI_SLAVE_IDX)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;PRINT_CONFIG_VAR(IMU_MPU9250_SPI_DEV)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(IMU_MPU9250_SPI_SLAVE_IDX)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(IMU_MPU9250_SPI_DEV)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if !defined IMU_MPU9250_GYRO_LOWPASS_FILTER &amp;&amp; !defined IMU_MPU9250_ACCEL_LOWPASS_FILTER &amp;&amp; !defined  IMU_MPU9250_SMPLRT_DIV</span></div>
@@ -149,39 +149,39 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c_source.html','');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#warning &quot;Non-default PERIODIC_FREQUENCY: please define IMU_MPU9250_GYRO_LOWPASS_FILTER, IMU_MPU9250_ACCEL_LOWPASS_FILTER and IMU_MPU9250_SMPLRT_DIV.&quot;</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#abfcf6b8a46dd1240e88121fc8d206449">IMU_MPU9250_SMPLRT_DIV</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#a0c0ada82bd9bfa782cc3a9691240b025">IMU_MPU9250_GYRO_LOWPASS_FILTER</a>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#a5bebb3b96b3829735bd1f0ebea0d278a">IMU_MPU9250_ACCEL_LOWPASS_FILTER</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#abfcf6b8a46dd1240e88121fc8d206449">IMU_MPU9250_SMPLRT_DIV</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#a0c0ada82bd9bfa782cc3a9691240b025">IMU_MPU9250_GYRO_LOWPASS_FILTER</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#a5bebb3b96b3829735bd1f0ebea0d278a">IMU_MPU9250_ACCEL_LOWPASS_FILTER</a>)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__i2c_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__i2c_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__i2c_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__i2c_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// Default channels order</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_CHAN_X</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#a17a732f1b13f3b91998a31687935d4ec">   78</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_CHAN_X 0</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#a17a732f1b13f3b91998a31687935d4ec">IMU_MPU9250_CHAN_X</a>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#a17a732f1b13f3b91998a31687935d4ec">IMU_MPU9250_CHAN_X</a>)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_CHAN_Y</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#ac92e1ef7e72f1ab6e6a11d2c946c3128">   82</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_CHAN_Y 1</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#ac92e1ef7e72f1ab6e6a11d2c946c3128">IMU_MPU9250_CHAN_Y</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#ac92e1ef7e72f1ab6e6a11d2c946c3128">IMU_MPU9250_CHAN_Y</a>)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_CHAN_Z</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#ac8db3e78c1698a004ce4034d32de70c4">   86</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_CHAN_Z 2</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#ac8db3e78c1698a004ce4034d32de70c4">IMU_MPU9250_CHAN_Z</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#ac8db3e78c1698a004ce4034d32de70c4">IMU_MPU9250_CHAN_Z</a>)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_X_SIGN</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#a0ecc59c6c3586c98cb7a7e9d88142237">   91</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_X_SIGN 1</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#a0ecc59c6c3586c98cb7a7e9d88142237">IMU_MPU9250_X_SIGN</a>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#a0ecc59c6c3586c98cb7a7e9d88142237">IMU_MPU9250_X_SIGN</a>)</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_Y_SIGN</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#a52a80f596bb94890641d5eb3194d9d4c">   95</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_Y_SIGN 1</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#a52a80f596bb94890641d5eb3194d9d4c">IMU_MPU9250_Y_SIGN</a>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#a52a80f596bb94890641d5eb3194d9d4c">IMU_MPU9250_Y_SIGN</a>)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_Z_SIGN</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#aba20ea126e07ee2e23c1bea054869cae">   99</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_Z_SIGN 1</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__mpu9250__spi_8c.html#aba20ea126e07ee2e23c1bea054869cae">IMU_MPU9250_Z_SIGN</a>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__mpu9250__spi_8c.html#aba20ea126e07ee2e23c1bea054869cae">IMU_MPU9250_Z_SIGN</a>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifndef IMU_MPU9250_READ_MAG</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8c.html#ac9f9794de9fa148ba59d805527430b9a">  104</a></span>&#160;<span class="preprocessor">#define IMU_MPU9250_READ_MAG TRUE</span></div>
@@ -454,6 +454,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c_source.html','');
 <div class="ttc" id="ampu9250__spi_8c_html_a25639b20570605066b6657b09fde96bc"><div class="ttname"><a href="mpu9250__spi_8c.html#a25639b20570605066b6657b09fde96bc">mpu9250_spi_init</a></div><div class="ttdeci">void mpu9250_spi_init(struct Mpu9250_Spi *mpu, struct spi_periph *spi_p, uint8_t slave_idx)</div><div class="ttdef"><b>Definition:</b> <a href="mpu9250__spi_8c_source.html#l00031">mpu9250_spi.c:31</a></div></div>
 <div class="ttc" id="ampu9250__spi_8c_html_af55574284fdd7772b638aa9c58093050"><div class="ttname"><a href="mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050">mpu9250_spi_event</a></div><div class="ttdeci">void mpu9250_spi_event(struct Mpu9250_Spi *mpu)</div><div class="ttdef"><b>Definition:</b> <a href="mpu9250__spi_8c_source.html#l00109">mpu9250_spi.c:109</a></div></div>
 <div class="ttc" id="ampu9250__spi_8h_html_a7084b87018d7fa1b0693a41d01bc3f7f"><div class="ttname"><a href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f">mpu9250_spi_periodic</a></div><div class="ttdeci">static void mpu9250_spi_periodic(struct Mpu9250_Spi *mpu)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized</div><div class="ttdef"><b>Definition:</b> <a href="mpu9250__spi_8h_source.html#l00077">mpu9250_spi.h:77</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="aspi_8h_html"><div class="ttname"><a href="spi_8h.html">spi.h</a></div><div class="ttdoc">Architecture independent SPI (Serial Peripheral Interface) API.</div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
 <div class="ttc" id="asys__time_8h_html_af486c2fb33d8d33645256a9970eb056e"><div class="ttname"><a href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e">get_sys_time_float</a></div><div class="ttdeci">static float get_sys_time_float(void)</div><div class="ttdoc">Get the time in seconds since startup.</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00138">sys_time.h:138</a></div></div>
@@ -466,7 +467,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__spi_8c.html">imu_mpu9250_spi.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

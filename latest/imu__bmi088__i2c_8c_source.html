@@ -114,60 +114,60 @@ $(document).ready(function(){initNavTree('imu__bmi088__i2c_8c_source.html',''); 
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sys__time_8h.html">mcu_periph/sys_time.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">modules/core/abi.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8h.html#abf08902ed78d7c6de76f93ed1b197cfa">IMU_BMI088_GYRO_RANGE</a>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8h.html#aef1201f662e9eb326b945ea2496381bd">IMU_BMI088_ACCEL_RANGE</a>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8h.html#abf08902ed78d7c6de76f93ed1b197cfa">IMU_BMI088_GYRO_RANGE</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8h.html#aef1201f662e9eb326b945ea2496381bd">IMU_BMI088_ACCEL_RANGE</a>)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_GYRO_ODR</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#aea59dc83e8198fd3f64e006e2b40927f">   38</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_GYRO_ODR BMI088_GYRO_ODR_1000_BW_116</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#aea59dc83e8198fd3f64e006e2b40927f">IMU_BMI088_GYRO_ODR</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#aea59dc83e8198fd3f64e006e2b40927f">IMU_BMI088_GYRO_ODR</a>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_ACCEL_ODR</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04">   43</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_ACCEL_ODR BMI088_ACCEL_ODR_1600</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04">IMU_BMI088_ACCEL_ODR</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04">IMU_BMI088_ACCEL_ODR</a>)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_ACCEL_BW</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#a58e021f954acbc368ab61b10187b73a9">   48</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_ACCEL_BW BMI088_ACCEL_BW_OSR4</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#a58e021f954acbc368ab61b10187b73a9">IMU_BMI088_ACCEL_BW</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#a58e021f954acbc368ab61b10187b73a9">IMU_BMI088_ACCEL_BW</a>)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_GYRO_I2C_ADDR</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#aad369f7f45201febc1cb87362f849be2">   53</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_GYRO_I2C_ADDR BMI088_GYRO_ADDR</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#aad369f7f45201febc1cb87362f849be2">IMU_BMI088_GYRO_I2C_ADDR</a>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#aad369f7f45201febc1cb87362f849be2">IMU_BMI088_GYRO_I2C_ADDR</a>)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_ACCEL_I2C_ADDR</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#a0ff684e86ac2b546c3e200b93e3b152f">   58</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_ACCEL_I2C_ADDR BMI088_ACCEL_ADDR</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#a0ff684e86ac2b546c3e200b93e3b152f">IMU_BMI088_ACCEL_I2C_ADDR</a>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#a0ff684e86ac2b546c3e200b93e3b152f">IMU_BMI088_ACCEL_I2C_ADDR</a>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// Default channels order</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_CHAN_X</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#ae31dad292071b6bc59cd603995b678db">   64</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_CHAN_X 0</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#ae31dad292071b6bc59cd603995b678db">IMU_BMI088_CHAN_X</a>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#ae31dad292071b6bc59cd603995b678db">IMU_BMI088_CHAN_X</a>)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_CHAN_Y</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f">   68</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_CHAN_Y 1</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f">IMU_BMI088_CHAN_Y</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f">IMU_BMI088_CHAN_Y</a>)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_CHAN_Z</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#ae0ab324487209dea4c4c7cc51de85cc7">   72</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_CHAN_Z 2</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#ae0ab324487209dea4c4c7cc51de85cc7">IMU_BMI088_CHAN_Z</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#ae0ab324487209dea4c4c7cc51de85cc7">IMU_BMI088_CHAN_Z</a>)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_X_SIGN</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92">   77</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_X_SIGN 1</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92">IMU_BMI088_X_SIGN</a>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92">IMU_BMI088_X_SIGN</a>)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_Y_SIGN</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#a5141393ad8ef1bab37a0cf52066816df">   81</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_Y_SIGN 1</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#a5141393ad8ef1bab37a0cf52066816df">IMU_BMI088_Y_SIGN</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#a5141393ad8ef1bab37a0cf52066816df">IMU_BMI088_Y_SIGN</a>)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifndef IMU_BMI088_Z_SIGN</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="imu__bmi088__i2c_8c.html#a14fa1a3ea4056e70eae64237e0d1f49b">   85</a></span>&#160;<span class="preprocessor">#define IMU_BMI088_Z_SIGN 1</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="imu__bmi088__i2c_8c.html#a14fa1a3ea4056e70eae64237e0d1f49b">IMU_BMI088_Z_SIGN</a>)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="imu__bmi088__i2c_8c.html#a14fa1a3ea4056e70eae64237e0d1f49b">IMU_BMI088_Z_SIGN</a>)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">struct </span><a class="code" href="imu__bmi088__i2c_8h.html#structImuBmi088">ImuBmi088</a> <a class="code" href="imu__bmi088__i2c_8c.html#aa392dce0f33c559a6dd2a12865db721b">imu_bmi088</a>;</div>
@@ -269,6 +269,7 @@ $(document).ready(function(){initNavTree('imu__bmi088__i2c_8c_source.html',''); 
 <div class="ttc" id="aimu__bmi088__i2c_8h_html_abf08902ed78d7c6de76f93ed1b197cfa"><div class="ttname"><a href="imu__bmi088__i2c_8h.html#abf08902ed78d7c6de76f93ed1b197cfa">IMU_BMI088_GYRO_RANGE</a></div><div class="ttdeci">#define IMU_BMI088_GYRO_RANGE</div><div class="ttdef"><b>Definition:</b> <a href="imu__bmi088__i2c_8h_source.html#l00039">imu_bmi088_i2c.h:39</a></div></div>
 <div class="ttc" id="aimu__bmi088__i2c_8h_html_aef1201f662e9eb326b945ea2496381bd"><div class="ttname"><a href="imu__bmi088__i2c_8h.html#aef1201f662e9eb326b945ea2496381bd">IMU_BMI088_ACCEL_RANGE</a></div><div class="ttdeci">#define IMU_BMI088_ACCEL_RANGE</div><div class="ttdef"><b>Definition:</b> <a href="imu__bmi088__i2c_8h_source.html#l00043">imu_bmi088_i2c.h:43</a></div></div>
 <div class="ttc" id="aimu__bmi088__i2c_8h_html_structImuBmi088"><div class="ttname"><a href="imu__bmi088__i2c_8h.html#structImuBmi088">ImuBmi088</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__bmi088__i2c_8h_source.html#l00046">imu_bmi088_i2c.h:46</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
@@ -278,7 +279,7 @@ $(document).ready(function(){initNavTree('imu__bmi088__i2c_8c_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__bmi088__i2c_8c.html">imu_bmi088_i2c.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

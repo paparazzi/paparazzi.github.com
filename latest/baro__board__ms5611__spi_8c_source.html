@@ -126,8 +126,8 @@ $(document).ready(function(){initNavTree('baro__board__ms5611__spi_8c_source.htm
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#error &quot;For MS5611 BARO_PERIODIC_FREQUENCY has to be &lt;= 100&quot;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;PRINT_CONFIG_VAR(BB_MS5611_SLAVE_IDX)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;PRINT_CONFIG_VAR(BB_MS5611_SPI_DEV)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(BB_MS5611_SLAVE_IDX)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(BB_MS5611_SPI_DEV)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifndef BB_MS5611_TYPE_MS5607</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="baro__board__ms5611__spi_8c.html#a4ff576c8f1aeccfcbe960067683f487b">   51</a></span>&#160;<span class="preprocessor">#define BB_MS5611_TYPE_MS5607 FALSE</span></div>
@@ -220,6 +220,7 @@ $(document).ready(function(){initNavTree('baro__board__ms5611__spi_8c_source.htm
 <div class="ttc" id="ams5611__spi_8h_html_a950b89b21f5e7b97df350ec56ed1bdc9"><div class="ttname"><a href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9">ms5611_spi_periodic</a></div><div class="ttdeci">static void ms5611_spi_periodic(struct Ms5611_Spi *ms)</div><div class="ttdoc">convenience function</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00071">ms5611_spi.h:71</a></div></div>
 <div class="ttc" id="ams5611__spi_8h_html_ab4c6c2de49c518a7232c9a28e5cfaaae"><div class="ttname"><a href="ms5611__spi_8h.html#ab4c6c2de49c518a7232c9a28e5cfaaae">Ms5611_Spi::data_available</a></div><div class="ttdeci">volatile bool data_available</div><div class="ttdoc">data ready flag</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00044">ms5611_spi.h:44</a></div></div>
 <div class="ttc" id="ams5611__spi_8h_html_structMs5611__Spi"><div class="ttname"><a href="ms5611__spi_8h.html#structMs5611__Spi">Ms5611_Spi</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00036">ms5611_spi.h:36</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
 <div class="ttc" id="asys__time_8h_html_a2e86fdabba99a0ac8f6409e0d1e694a3"><div class="ttname"><a href="sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3">sys_time::nb_sec</a></div><div class="ttdeci">volatile uint32_t nb_sec</div><div class="ttdoc">full seconds since startup</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00072">sys_time.h:72</a></div></div>
@@ -232,7 +233,7 @@ $(document).ready(function(){initNavTree('baro__board__ms5611__spi_8c_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="baro__board__ms5611__spi_8c.html">baro_board_ms5611_spi.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

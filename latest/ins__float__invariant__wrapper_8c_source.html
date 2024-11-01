@@ -164,20 +164,20 @@ $(document).ready(function(){initNavTree('ins__float__invariant__wrapper_8c_sour
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="ins__float__invariant__wrapper_8c.html#a6d6af0def65630dc2790e2b2192bcc60">   83</a></span>&#160;<span class="preprocessor">#define INS_FINV_BARO_ID ABI_BROADCAST</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ins__float__invariant__wrapper_8c.html#a6d6af0def65630dc2790e2b2192bcc60">INS_FINV_BARO_ID</a>)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="ins__float__invariant__wrapper_8c.html#a6d6af0def65630dc2790e2b2192bcc60">INS_FINV_BARO_ID</a>)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#ifndef INS_FINV_IMU_ID</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="ins__float__invariant__wrapper_8c.html#a74e49213337756d87ac3bb49ab010c21">   90</a></span>&#160;<span class="preprocessor">#define INS_FINV_IMU_ID ABI_BROADCAST</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ins__float__invariant__wrapper_8c.html#a74e49213337756d87ac3bb49ab010c21">INS_FINV_IMU_ID</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="ins__float__invariant__wrapper_8c.html#a74e49213337756d87ac3bb49ab010c21">INS_FINV_IMU_ID</a>)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if USE_MAGNETOMETER</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifndef INS_FINV_MAG_ID</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="ins__float__invariant__wrapper_8c.html#a391591cec07df7da04c0e93b725c3c9a">   97</a></span>&#160;<span class="preprocessor">#define INS_FINV_MAG_ID ABI_BROADCAST</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ins__float__invariant__wrapper_8c.html#a391591cec07df7da04c0e93b725c3c9a">INS_FINV_MAG_ID</a>)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="ins__float__invariant__wrapper_8c.html#a391591cec07df7da04c0e93b725c3c9a">INS_FINV_MAG_ID</a>)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;INS invariant use GPS heading as magnetometer&quot;</span>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('ins__float__invariant__wrapper_8c_sour
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#ifndef INS_FINV_GPS_ID</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="ins__float__invariant__wrapper_8c.html#a8504ee23c191facacdb42d25cb919463">  108</a></span>&#160;<span class="preprocessor">#define INS_FINV_GPS_ID GPS_MULTI_ID</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ins__float__invariant__wrapper_8c.html#a8504ee23c191facacdb42d25cb919463">INS_FINV_GPS_ID</a>)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="ins__float__invariant__wrapper_8c.html#a8504ee23c191facacdb42d25cb919463">INS_FINV_GPS_ID</a>)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="ins__float__invariant__wrapper_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">  112</a></span>&#160;static <a class="code" href="abi__common_8h.html#structabi__struct">abi_event</a> <a class="code" href="ins__float__invariant__wrapper_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">baro_ev</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="ins__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">  113</a></span>&#160;static <a class="code" href="abi__common_8h.html#structabi__struct">abi_event</a> <a class="code" href="ins__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">gyro_ev</a>;</div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('ins__float__invariant__wrapper_8c_sour
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  last_stamp = stamp;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using fixed INS_PROPAGATE_FREQUENCY for INS float_invariant propagation.&quot;</span>)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  PRINT_CONFIG_VAR(INS_PROPAGATE_FREQUENCY)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(INS_PROPAGATE_FREQUENCY)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> dt = 1. / (INS_PROPAGATE_FREQUENCY);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f">ins_float_invariant_propagate</a>(&amp;gyro_f, &amp;<a class="code" href="ins__float__invariant__wrapper_8c.html#adb306f2c0044aa52b5119043779e53c4">ins_finv_accel</a>, dt);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -374,6 +374,7 @@ $(document).ready(function(){initNavTree('ins__float__invariant__wrapper_8c_sour
 <div class="ttc" id="ains__float__invariant__wrapper_8h_html"><div class="ttname"><a href="ins__float__invariant__wrapper_8h.html">ins_float_invariant_wrapper.h</a></div><div class="ttdoc">Paparazzi specific wrapper to run INVARIANT filter.</div></div>
 <div class="ttc" id="ains__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
 <div class="ttc" id="amain__demo5_8c_html_ad690ee00a2cf77bbaaf89c3f1ef110d4"><div class="ttname"><a href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">foo</a></div><div class="ttdeci">uint16_t foo</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00058">main_demo5.c:58</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
 <div class="ttc" id="astm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00072">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
@@ -390,7 +391,7 @@ $(document).ready(function(){initNavTree('ins__float__invariant__wrapper_8c_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__float__invariant__wrapper_8c.html">ins_float_invariant_wrapper.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8c_source.html',''); in
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_AWB_VERBOSE</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a6962194dc67d93f19be5944ca662f622">   36</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_AWB_VERBOSE 0</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a6962194dc67d93f19be5944ca662f622">BEBOP_AE_AWB_VERBOSE</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a6962194dc67d93f19be5944ca662f622">BEBOP_AE_AWB_VERBOSE</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#aee52c6162d4b084290ed778856a1ded4">   40</a></span>&#160;<span class="preprocessor">#define PRINT(string,...) fprintf(stderr, &quot;[bebop_ae_awb-&gt;%s()] &quot;</span> string,__FUNCTION__ , ##__VA_ARGS__)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
@@ -143,37 +143,37 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8c_source.html',''); in
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_EXPOSURE_GAIN</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#afa17363f98102a3670927b7579c3a2d5">   60</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_EXPOSURE_GAIN 0.8</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#afa17363f98102a3670927b7579c3a2d5">BEBOP_AE_EXPOSURE_GAIN</a>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#afa17363f98102a3670927b7579c3a2d5">BEBOP_AE_EXPOSURE_GAIN</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// Bin index to be considered as the center of the brightness bins</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_MIDDLE_INDEX</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#ac03bc735ad889f022030dc90c879a676">   66</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_MIDDLE_INDEX 160</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#ac03bc735ad889f022030dc90c879a676">BEBOP_AE_MIDDLE_INDEX</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#ac03bc735ad889f022030dc90c879a676">BEBOP_AE_MIDDLE_INDEX</a>)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// Proportion of dark bins to ignore in the computation of the autoexposure</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_DARK_IGNORE</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a3997f925d1f521c066239fcd5e56aaff">   72</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_DARK_IGNORE 0.4</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a3997f925d1f521c066239fcd5e56aaff">BEBOP_AE_DARK_IGNORE</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a3997f925d1f521c066239fcd5e56aaff">BEBOP_AE_DARK_IGNORE</a>)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// Proportion of bright bins to ignore in the computation of the autoexposure</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_BRIGHT_IGNORE</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a0965587f24710502521831097dd67912">   78</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_BRIGHT_IGNORE 0.2</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a0965587f24710502521831097dd67912">BEBOP_AE_BRIGHT_IGNORE</a>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a0965587f24710502521831097dd67912">BEBOP_AE_BRIGHT_IGNORE</a>)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// Number of dark bins to consider as dark in the autoexposure</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_DARK_BINS</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a83c198ad9b99805a56d56f95530d7496">   84</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_DARK_BINS 80</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a83c198ad9b99805a56d56f95530d7496">BEBOP_AE_DARK_BINS</a>)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a83c198ad9b99805a56d56f95530d7496">BEBOP_AE_DARK_BINS</a>)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// Number of bright bins to consider as bright in autoexposure</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#ifndef BEBOP_AE_BRIGHT_BINS</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#adab9ff5d5f09a1224daca8f576be4216">   90</a></span>&#160;<span class="preprocessor">#define BEBOP_AE_BRIGHT_BINS 20</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#adab9ff5d5f09a1224daca8f576be4216">BEBOP_AE_BRIGHT_BINS</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#adab9ff5d5f09a1224daca8f576be4216">BEBOP_AE_BRIGHT_BINS</a>)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#ifndef BEBOP_AUTO_WHITE_BALANCE</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a63d09bf64e982cb48cc90e09a1a8c42b">   95</a></span>&#160;<span class="preprocessor">#define BEBOP_AUTO_WHITE_BALANCE true</span></div>
@@ -183,49 +183,49 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8c_source.html',''); in
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_MIN_GAINS</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a431070d74fa5294c177086edbf30553b">  100</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_MIN_GAINS 1.0</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;PRINT_CONFIG_VAR(BEBOP_AE_MIN_GAINS)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(BEBOP_AE_MIN_GAINS)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">// Maximum gain for AWB</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_MAX_GAINS</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#ac5b4f8f8c0fc007532af027921931cb2">  106</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_MAX_GAINS 63.5</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#ac5b4f8f8c0fc007532af027921931cb2">BEBOP_AWB_MAX_GAINS</a>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#ac5b4f8f8c0fc007532af027921931cb2">BEBOP_AWB_MAX_GAINS</a>)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//Gain to apply to AWB changes</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_GAIN</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa">  112</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_GAIN 0.5</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa">BEBOP_AWB_GAIN</a>)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa">BEBOP_AWB_GAIN</a>)</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// Activates gain scheduling for the AWB, helps to handle fast changes in brightness</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_GAIN_SCHEDULING</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#acd20764e5659ac9f4ea6287cb872f778">  118</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_GAIN_SCHEDULING false</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#acd20764e5659ac9f4ea6287cb872f778">BEBOP_AWB_GAIN_SCHEDULING</a>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#acd20764e5659ac9f4ea6287cb872f778">BEBOP_AWB_GAIN_SCHEDULING</a>)</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">// Target white balance</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_GAIN_SCHEDULING_TARGET</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a707f8ab3c5c1f285ee2d3d132abd3374">  124</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_GAIN_SCHEDULING_TARGET 10.0</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a707f8ab3c5c1f285ee2d3d132abd3374">BEBOP_AWB_GAIN_SCHEDULING_TARGET</a>)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a707f8ab3c5c1f285ee2d3d132abd3374">BEBOP_AWB_GAIN_SCHEDULING_TARGET</a>)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">// Tolerance around the target exposure outside of which gain scheduling is activated</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#ab487bd252afd24e060c02a6220a3f25b">  130</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE 7.5</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#ab487bd252afd24e060c02a6220a3f25b">BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE</a>)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#ab487bd252afd24e060c02a6220a3f25b">BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE</a>)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">// Step size of the AWB gain scheduling correction</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_GAIN_SCHEDULING_STEP</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#aaae03e0ab491a3d110ea32204578e0f2">  136</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_GAIN_SCHEDULING_STEP 0.02</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#aaae03e0ab491a3d110ea32204578e0f2">BEBOP_AWB_GAIN_SCHEDULING_STEP</a>)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#aaae03e0ab491a3d110ea32204578e0f2">BEBOP_AWB_GAIN_SCHEDULING_STEP</a>)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">// Minimum number of grey pixels in image, when lower, the AWB is reset</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#ifndef BEBOP_AWB_MIN_GREY_PIXELS</span></div>
 <div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8c.html#a43c8b73a010780ce9c15f74c5acea122">  142</a></span>&#160;<span class="preprocessor">#define BEBOP_AWB_MIN_GREY_PIXELS 1000</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="bebop__ae__awb_8c.html#a43c8b73a010780ce9c15f74c5acea122">BEBOP_AWB_MIN_GREY_PIXELS</a>)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code" href="bebop__ae__awb_8c.html#a43c8b73a010780ce9c15f74c5acea122">BEBOP_AWB_MIN_GREY_PIXELS</a>)</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">struct </span><a class="code" href="bebop__ae__awb_8h.html#structae__setting__t">ae_setting_t</a> <a class="code" href="bebop__ae__awb_8c.html#a59c5ab043c16221c42ac40f1244e323e">ae_set</a>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">struct </span><a class="code" href="bebop__ae__awb_8h.html#structawb__setting__t">awb_setting_t</a> <a class="code" href="bebop__ae__awb_8c.html#a8ca8bb5f3e3abe4795ae2a3b08026dbd">awb_set</a>;</div>
@@ -508,6 +508,7 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8c_source.html',''); in
 <div class="ttc" id="amt9f002_8h_html_a98e5afa1af2e8e927cf8f981551d25dd"><div class="ttname"><a href="mt9f002_8h.html#a98e5afa1af2e8e927cf8f981551d25dd">mt9f002_t::gain_blue</a></div><div class="ttdeci">float gain_blue</div><div class="ttdoc">Gain for the Blue pixels [1., 63.50].</div><div class="ttdef"><b>Definition:</b> <a href="mt9f002_8h_source.html#l00156">mt9f002.h:156</a></div></div>
 <div class="ttc" id="amt9f002_8h_html_ae6458dba0ec9c3ab06f8a0b8dc976169"><div class="ttname"><a href="mt9f002_8h.html#ae6458dba0ec9c3ab06f8a0b8dc976169">mt9f002_t::real_exposure</a></div><div class="ttdeci">float real_exposure</div><div class="ttdoc">Real exposure time in ms.</div><div class="ttdef"><b>Definition:</b> <a href="mt9f002_8h_source.html#l00153">mt9f002.h:153</a></div></div>
 <div class="ttc" id="amt9f002__nps_8c_html_a2dddf501a96514b39bdd9a07839b79eb"><div class="ttname"><a href="mt9f002__nps_8c.html#a2dddf501a96514b39bdd9a07839b79eb">front_camera</a></div><div class="ttdeci">#define front_camera</div><div class="ttdef"><b>Definition:</b> <a href="mt9f002__nps_8c_source.html#l00003">mt9f002_nps.c:3</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdoc">Typedef defining 8 bit char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00103">vl53l1_types.h:103</a></div></div>
@@ -517,7 +518,7 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8c_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="bebop__ae__awb_8c.html">bebop_ae_awb.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

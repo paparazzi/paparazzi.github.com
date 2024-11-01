@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('tfmini__i2c_8c_source.html',''); initR
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef TFMINI_I2C_DEV</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#error TFMINI_I2C_DEV needs to be defined</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;PRINT_CONFIG_VAR(TFMINI_I2C_DEV)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(TFMINI_I2C_DEV)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* TODO: not all possible sensor features are implemented(Yet), only basic functionality to get distance */</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
@@ -334,6 +334,7 @@ $(document).ready(function(){initNavTree('tfmini__i2c_8c_source.html',''); initR
 <div class="ttc" id="agroup__math__algebra__float_html_a98f8790d7dbb4d3ef03e99cdf27f844e"><div class="ttname"><a href="group__math__algebra__float.html#a98f8790d7dbb4d3ef03e99cdf27f844e">FloatEulers::theta</a></div><div class="ttdeci">float theta</div><div class="ttdoc">in radians</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00086">pprz_algebra_float.h:86</a></div></div>
 <div class="ttc" id="agroup__state__attitude_html_ga9a5e6bac6e7d78e1b33430e73344615b"><div class="ttname"><a href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a></div><div class="ttdeci">static struct FloatEulers * stateGetNedToBodyEulers_f(void)</div><div class="ttdoc">Get vehicle body attitude euler angles (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01143">state.h:1143</a></div></div>
 <div class="ttc" id="agroup__state__position_html_ga545d479db45e1a9711e59736b6d1309b"><div class="ttname"><a href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b">stateGetPositionEnu_f</a></div><div class="ttdeci">static struct EnuCoor_f * stateGetPositionEnu_f(void)</div><div class="ttdoc">Get position in local ENU coordinates (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00719">state.h:719</a></div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="apprz__geodetic__float_8h_html_af45d8ff67563a7c7bf0c7883aa0f3e3a"><div class="ttname"><a href="pprz__geodetic__float_8h.html#af45d8ff67563a7c7bf0c7883aa0f3e3a">EnuCoor_f::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">in meters</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00075">pprz_geodetic_float.h:75</a></div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
 <div class="ttc" id="astm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00072">usb_ser_hw.c:74</a></div></div>
@@ -373,7 +374,7 @@ $(document).ready(function(){initNavTree('tfmini__i2c_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f4ca31d105c4342227373714bf7859c8.html">lidar</a></li><li class="navelem"><a class="el" href="tfmini__i2c_8c.html">tfmini_i2c.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

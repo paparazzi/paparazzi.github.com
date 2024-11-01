@@ -122,10 +122,10 @@ $(document).ready(function(){initNavTree('usb__tunnel_8c_source.html',''); initR
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#error USB_TUNNEL_UART not defined. Add &lt;configure name=&quot;TUNNEL_PORT&quot;</span> value=&quot;UARTx&quot;/&gt;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;PRINT_CONFIG_VAR(USB_TUNNEL_UART)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(USB_TUNNEL_UART)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;PRINT_CONFIG_VAR(TUNNEL_RX_LED)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;PRINT_CONFIG_VAR(TUNNEL_TX_LED)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(TUNNEL_RX_LED)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(TUNNEL_TX_LED)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="usb__tunnel_8c.html#ad8468070a9db37b05ec8c5cadfbfc733">   50</a></span>&#160;<span class="preprocessor">#define BLINK_MIN 100</span></div>
@@ -194,6 +194,7 @@ $(document).ready(function(){initNavTree('usb__tunnel_8c_source.html',''); initR
 <div class="ttc" id="alinux_2mcu__periph_2uart__arch_8c_html_a663f41657d0ad8e115fc7709b071d749"><div class="ttname"><a href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749">uart_char_available</a></div><div class="ttdeci">int uart_char_available(struct uart_periph *p)</div><div class="ttdoc">Check UART for available chars in receive buffer.</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2uart__arch_8c_source.html#l00357">uart_arch.c:357</a></div></div>
 <div class="ttc" id="alinux_2mcu__periph_2uart__arch_8c_html_adb9a60ec94a31a08e6454ccf64f24039"><div class="ttname"><a href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039">uart_getch</a></div><div class="ttdeci">uint8_t uart_getch(struct uart_periph *p)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2uart__arch_8c_source.html#l00348">uart_arch.c:348</a></div></div>
 <div class="ttc" id="amcu_8h_html"><div class="ttname"><a href="mcu_8h.html">mcu.h</a></div><div class="ttdoc">Arch independent mcu ( Micro Controller Unit ) utilities.</div></div>
+<div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
 <div class="ttc" id="aserial_8c_html_a6f8059414f0228f0256115e024eeed4b"><div class="ttname"><a href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00026">serial.c:26</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="astm32_2usb__ser__hw_8c_html_a15c895e4456578b3ca2818c1e17c832a"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event</a></div><div class="ttdeci">void VCOM_event(void)</div><div class="ttdoc">Poll usb (required by libopencm3).</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00468">usb_ser_hw.c:468</a></div></div>
@@ -218,7 +219,7 @@ $(document).ready(function(){initNavTree('usb__tunnel_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_38ba296eae9b9ece8d4ed735450fba0a.html">setup</a></li><li class="navelem"><a class="el" href="usb__tunnel_8c.html">usb_tunnel.c</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 08:43:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 1 2024 17:02:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
