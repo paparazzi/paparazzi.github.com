@@ -1,5 +1,7 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#HITL_UBX":[2,1,40],
+"paparazzi_messages.html#HOVER_LOOP":[2,0,141],
 "paparazzi_messages.html#HTM_STATUS":[2,0,110],
 "paparazzi_messages.html#HYBRID_GUIDANCE":[2,0,21],
 "paparazzi_messages.html#H_CTL_A":[2,0,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX173 =
 "pc__sim_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,57,1],
 "pc__sim_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,57,5],
 "pc__sim_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,57,0],
-"pc__sim_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,57,4],
-"pc__sim_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,57,3],
-"pc__sim_8h.html#ab68f28871d18c17e7e70ae63277d37c2":[12,0,1,0,1,57,2]
+"pc__sim_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,57,4]
 };

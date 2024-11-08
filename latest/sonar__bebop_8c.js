@@ -9,6 +9,7 @@ var sonar__bebop_8c =
     [ "SONAR_BEBOP_TRANSITION_COUNT", "sonar__bebop_8c.html#a6017153886b228ceea828e5d7333a20b", null ],
     [ "SONAR_BEBOP_TRANSITION_HIGH_TO_LOW", "sonar__bebop_8c.html#ab5d4a93ccc6b9424f012526922b6344c", null ],
     [ "SONAR_BEBOP_TRANSITION_LOW_TO_HIGH", "sonar__bebop_8c.html#aa1a2721b9d1a8086bff14fb86548bc7c", null ],
+    [ "sonar_bebop_event", "sonar__bebop_8c.html#afcc89300bb53968976ced7a95fd2e19a", null ],
     [ "sonar_bebop_init", "sonar__bebop_8c.html#a23dcc242803b0762d120696ddd57e98f", null ],
     [ "sonar_bebop_read", "sonar__bebop_8c.html#a523295c3c567273e2db300652a282f1f", null ],
     [ "adc_buffer", "sonar__bebop_8c.html#abdb18941dabfefeb513b80bc952ce9d5", null ],
@@ -18,5 +19,6 @@ var sonar__bebop_8c =
     [ "sonar_bebop_spi_d", "sonar__bebop_8c.html#a0ccbb2cc5950621f61f55dae4d43ed67", null ],
     [ "sonar_bebop_spi_t", "sonar__bebop_8c.html#a7ba2b0245503312b971d86da22c40897", null ],
     [ "sonar_bebop_spike_timer", "sonar__bebop_8c.html#a4b68c7c64a460ae1cf5e4d479ee4bdbc", null ],
-    [ "sonar_filt", "sonar__bebop_8c.html#abd34fc7a6186364fcafd5199f924ee68", null ]
+    [ "sonar_filt", "sonar__bebop_8c.html#abd34fc7a6186364fcafd5199f924ee68", null ],
+    [ "sonar_mutex", "sonar__bebop_8c.html#aeeb2c1aef5cb502ae4f76ace0dc4592b", null ]
 ];

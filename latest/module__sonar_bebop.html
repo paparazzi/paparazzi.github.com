@@ -121,6 +121,12 @@ Init Functions</h2>
 <ul>
 <li><a class="el" href="sonar__bebop_8c.html#a23dcc242803b0762d120696ddd57e98f">sonar_bebop_init()</a></li>
 </ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="sonar__bebop_8c.html#afcc89300bb53968976ced7a95fd2e19a">sonar_bebop_event()</a></li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -159,11 +165,10 @@ Raw sonar_bebop.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;sonar_bebop_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;sonar_bebop_event()&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|sim&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sonar_bebop.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sonar_bebop.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI0&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ADC0&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -176,7 +181,7 @@ Raw sonar_bebop.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Nov 5 2024 12:04:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 8 2024 14:10:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

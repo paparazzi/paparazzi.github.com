@@ -151,6 +151,10 @@ Macros</h2></td></tr>
 <tr class="separator:a18cd622b0de3516e2b3f697a5f005680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13238850064c31c0da2195fa38098e62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__sensor__sonar_8c.html#a13238850064c31c0da2195fa38098e62">NPS_SONAR_OFFSET</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a13238850064c31c0da2195fa38098e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f8d1b319a55ddfc4f744f6dd55ed8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__sensor__sonar_8c.html#a84f8d1b319a55ddfc4f744f6dd55ed8e">NPS_SONAR_MIN_DIST</a>&#160;&#160;&#160;0.1<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:a84f8d1b319a55ddfc4f744f6dd55ed8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e642251cd22e6738167b6153303df91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__sensor__sonar_8c.html#a9e642251cd22e6738167b6153303df91">NPS_SONAR_MAX_DIST</a>&#160;&#160;&#160;7.0f</td></tr>
+<tr class="separator:a9e642251cd22e6738167b6153303df91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -179,6 +183,38 @@ Functions</h2></td></tr>
 <p>10Hz default </p>
 
 <p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00040">40</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
+
+</div>
+</div>
+<a id="a9e642251cd22e6738167b6153303df91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e642251cd22e6738167b6153303df91">&#9670;&nbsp;</a></span>NPS_SONAR_MAX_DIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NPS_SONAR_MAX_DIST&#160;&#160;&#160;7.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00057">57</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
+
+</div>
+</div>
+<a id="a84f8d1b319a55ddfc4f744f6dd55ed8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f8d1b319a55ddfc4f744f6dd55ed8e">&#9670;&nbsp;</a></span>NPS_SONAR_MIN_DIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NPS_SONAR_MIN_DIST&#160;&#160;&#160;0.1<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00053">53</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
 
 </div>
 </div>
@@ -243,7 +279,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00053">53</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00060">60</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
 
 <p class="reference">References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00045">NPS_SONAR_NOISE_STD_DEV</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00049">NPS_SONAR_OFFSET</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00135">sonar</a>, and <a class="el" href="eff__scheduling__rotwing__V2_8c_source.html#l00400">time</a>.</p>
 
@@ -290,9 +326,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00063">63</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__sensor__sonar_8c_source.html#l00070">70</a> of file <a class="el" href="nps__sensor__sonar_8c_source.html">nps_sensor_sonar.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__random_8c_source.html#l00109">get_gaussian_noise()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00040">NPS_SONAR_DT</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00135">sonar</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__random_8c_source.html#l00109">get_gaussian_noise()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00040">NPS_SONAR_DT</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00057">NPS_SONAR_MAX_DIST</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00053">NPS_SONAR_MIN_DIST</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00135">sonar</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__sensors_8c_source.html#l00025">nps_sensors_run_step()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -329,7 +365,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__sensor__sonar_8c.html">nps_sensor_sonar.c</a></li>
-    <li class="footer">Generated on Tue Nov 5 2024 12:04:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 8 2024 14:10:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

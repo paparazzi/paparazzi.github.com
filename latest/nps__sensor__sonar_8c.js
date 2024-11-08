@@ -1,6 +1,8 @@
 var nps__sensor__sonar_8c =
 [
     [ "NPS_SONAR_DT", "nps__sensor__sonar_8c.html#a698645a30e8022ea650a1de18bfdb545", null ],
+    [ "NPS_SONAR_MAX_DIST", "nps__sensor__sonar_8c.html#a9e642251cd22e6738167b6153303df91", null ],
+    [ "NPS_SONAR_MIN_DIST", "nps__sensor__sonar_8c.html#a84f8d1b319a55ddfc4f744f6dd55ed8e", null ],
     [ "NPS_SONAR_NOISE_STD_DEV", "nps__sensor__sonar_8c.html#a18cd622b0de3516e2b3f697a5f005680", null ],
     [ "NPS_SONAR_OFFSET", "nps__sensor__sonar_8c.html#a13238850064c31c0da2195fa38098e62", null ],
     [ "nps_sensor_sonar_init", "nps__sensor__sonar_8c.html#a7d9c95a4ab117fe0e86cc57779e4d14f", null ],

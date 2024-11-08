@@ -1,5 +1,11 @@
 var NAVTREEINDEX208 =
 {
+"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,35,0,0],
+"stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b":[12,0,1,0,3,2,2,37,5],
+"stabilization__indi__simple_8h.html#a9cd57664d6985e67d18ce07a319b903e":[12,0,1,0,3,2,2,37,1,2],
+"stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df":[12,0,1,0,3,2,2,37,2,7],
+"stabilization__indi__simple_8h.html#aa69c49fd27efda8cdffa87087f0f0dd4":[12,0,1,0,3,2,2,37,2,12],
+"stabilization__indi__simple_8h.html#aad408aa55ec7cd11f1354db45fa08c39":[12,0,1,0,3,2,2,37,3],
 "stabilization__indi__simple_8h.html#ab67e9db78639b858f3605e0c23ee2808":[12,0,1,0,3,2,2,37,2,1],
 "stabilization__indi__simple_8h.html#ab7d1e27c6059abe21e47ced97e3b89e5":[12,0,1,0,3,2,2,37,8],
 "stabilization__indi__simple_8h.html#abd520cccf7a02ac228329fc554c67fa2":[12,0,1,0,3,2,2,37,2,8],
@@ -9,8 +15,8 @@ var NAVTREEINDEX208 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,37,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,37,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,37,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,35,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,37,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,35,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,37],
 "stabilization__oneloop_8c.html":[12,0,1,0,3,2,2,38],
 "stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,38,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX208 =
 "stm32_2mcu__periph_2i2c__arch_8c.html#acd2a78f0920821b186bfc72bcc979592":[12,0,1,0,0,3,0,6,0],
 "stm32_2mcu__periph_2i2c__arch_8c.html#adae4775f2b00a92a80db113d15ecefe9":[12,0,1,0,0,3,0,6,23],
 "stm32_2mcu__periph_2i2c__arch_8c.html#adbf5d19069cf17b5f0821eab05e31540":[12,0,1,0,0,3,0,6,17],
-"stm32_2mcu__periph_2i2c__arch_8c.html#aeb7a802ff0a0f20d4799074071714846":[12,0,1,0,0,3,0,6,22],
-"stm32_2mcu__periph_2i2c__arch_8c.html#af6c16ded89419dcadd6d658416e9f55c":[12,0,1,0,0,3,0,6,16],
-"stm32_2mcu__periph_2i2c__arch_8c_source.html":[12,0,1,0,0,3,0,6],
-"stm32_2mcu__periph_2i2c__arch_8h.html":[12,0,1,0,0,3,0,7],
-"stm32_2mcu__periph_2i2c__arch_8h_source.html":[12,0,1,0,0,3,0,7],
-"stm32_2mcu__periph_2pwm__input__arch_8c.html":[12,0,1,0,0,3,0,8],
-"stm32_2mcu__periph_2pwm__input__arch_8c.html#a303821e177e52ec03d248bbc8e70fbd3":[12,0,1,0,0,3,0,8,3]
+"stm32_2mcu__periph_2i2c__arch_8c.html#aeb7a802ff0a0f20d4799074071714846":[12,0,1,0,0,3,0,6,22]
 };
