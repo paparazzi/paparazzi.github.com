@@ -74,6 +74,7 @@ var mpu60x0__regs_8h =
     [ "MPU60X0_SIG_COND_RESET", "mpu60x0__regs_8h.html#a728170e530b6994de25d18357f6980f2", null ],
     [ "MPU60X0_SPI_READ", "mpu60x0__regs_8h.html#a663b819552fd9a7c35ebb937cabdb9f1", null ],
     [ "MPU60X0_WHOAMI_REPLY", "mpu60x0__regs_8h.html#a110bb08b8f156e231f790434d8c06a3d", null ],
+    [ "MPU6500_WHOAMI_REPLY", "mpu60x0__regs_8h.html#a018476d1106ed01a68ca1fd11efc29fd", null ],
     [ "Mpu60x0ACCDLPF", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786", [
       [ "MPU60X0_DLPF_ACC_1046HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a36f4afcf6314d5f5513b611ad2cbe739", null ],
       [ "MPU60X0_DLPF_ACC_218HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786adb15736092f0a3458047c36d3ee8a2ac", null ],

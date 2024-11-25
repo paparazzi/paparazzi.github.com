@@ -1,24 +1,8 @@
 var bmp280__regs_8h =
 [
-    [ "bmp280_reg_calib_data", "bmp280__regs_8h.html#structbmp280__reg__calib__data", [
-      [ "dig_p1", "bmp280__regs_8h.html#ad11d511b44a8668574e4728030f87bd8", null ],
-      [ "dig_p2", "bmp280__regs_8h.html#a714d5fdc657b9611771211854bbbe287", null ],
-      [ "dig_p3", "bmp280__regs_8h.html#aff9b083a6822be0ef330fbf345212e92", null ],
-      [ "dig_p4", "bmp280__regs_8h.html#af21b05e455eab2d93ef86f17a82ed758", null ],
-      [ "dig_p5", "bmp280__regs_8h.html#aa2b9705c32bb28e552ca39953eb5be62", null ],
-      [ "dig_p6", "bmp280__regs_8h.html#afa20056399b1c28caed0fdbda33a7803", null ],
-      [ "dig_p7", "bmp280__regs_8h.html#a183527b066b014cb1a215f676fd12977", null ],
-      [ "dig_p8", "bmp280__regs_8h.html#a8ffbe4a09d989cc6bbb14360ef95c5ad", null ],
-      [ "dig_p9", "bmp280__regs_8h.html#aedaf50eb108a1599fe5753055f822b5f", null ],
-      [ "dig_t1", "bmp280__regs_8h.html#a8e7bd387fc1452a385e73eb398ae63a3", null ],
-      [ "dig_t2", "bmp280__regs_8h.html#a871b2b58b682bcf4305dc42b0bba460a", null ],
-      [ "dig_t3", "bmp280__regs_8h.html#a9b446f5ab298a2cc709576d3f4643b8d", null ],
-      [ "t_fine", "bmp280__regs_8h.html#ab2de47db0d1c2054d12e1b5e8349e4d9", null ]
-    ] ],
     [ "BMP280_ALL", "bmp280__regs_8h.html#a3df97b01a90f1339449838597f426870", null ],
     [ "BMP280_CALIB_DATA_LEN", "bmp280__regs_8h.html#a8f9c1d5f63a452553947af8e5d16895f", null ],
     [ "BMP280_CALIB_LSB_DATA_ADDR", "bmp280__regs_8h.html#a59137702b89594b36a4698bf0fbbe8c7", null ],
-    [ "BMP280_CHIP_ID", "bmp280__regs_8h.html#aa29aaafdd798a1593a4b536f0ed7c9c2", null ],
     [ "BMP280_CHIP_ID_REG_ADDR", "bmp280__regs_8h.html#a53724c33dbc35237090f5d341eb8d206", null ],
     [ "BMP280_COMPENSATION", "bmp280__regs_8h.html#a6743a82c0e6b2732510b9def022477fa", null ],
     [ "BMP280_CONCAT_BYTES", "bmp280__regs_8h.html#ab127cf1fefbcc8cd7990510c9cb574dd", null ],
@@ -82,6 +66,7 @@ var bmp280__regs_8h =
     [ "BMP280_POWER_NORMAL_MODE", "bmp280__regs_8h.html#afcc7ce11f38e10e85066c8ac1447cb2c", null ],
     [ "BMP280_POWER_SLEEP_MODE", "bmp280__regs_8h.html#a65097220f460f55a7ae50fdca7b805e6", null ],
     [ "BMP280_PRESS", "bmp280__regs_8h.html#a79b7d118d1e032c80454240a751567b1", null ],
+    [ "BMP280_READ_FLAG", "bmp280__regs_8h.html#a81a95f785927580a83e335eb0b938789", null ],
     [ "BMP280_RESET_REG_ADDR", "bmp280__regs_8h.html#a8f3d1fbe4bbb38860687f081f0a3d214", null ],
     [ "BMP280_RESET_VAL", "bmp280__regs_8h.html#a5c0bf19206c3fac48ca0dc28dd58ad16", null ],
     [ "BMP280_SLEEP_MODE", "bmp280__regs_8h.html#a7250f5095499e8f2ea850e785b69c083", null ],
@@ -90,12 +75,5 @@ var bmp280__regs_8h =
     [ "BMP280_T_LSB_REG_ADDR", "bmp280__regs_8h.html#a184fb54990017dd691a6c9a93c4e2e78", null ],
     [ "BMP280_T_MSB_REG_ADDR", "bmp280__regs_8h.html#a6d27497e0dc707db3d98ad0dd849bf72", null ],
     [ "BMP280_T_XLSB_REG_ADDR", "bmp280__regs_8h.html#a95f48e4d52664d8eec40e6a364a704fe", null ],
-    [ "BMP280_TEMP", "bmp280__regs_8h.html#af8138932cfa78536e6580796d6a4de10", null ],
-    [ "Bmp280Status", "bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7b", [
-      [ "BMP280_STATUS_UNINIT", "bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba80877d3b7c7024970d2304e33cd344a3", null ],
-      [ "BMP280_STATUS_GET_CALIB", "bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba530fb563928463f3ab417ada171a2986", null ],
-      [ "BMP280_STATUS_CONFIGURE", "bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7bac837fb6d26b67ae3b98dabb2d4d1bce0", null ],
-      [ "BMP280_STATUS_READ_STATUS_REG", "bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba4cd22c1c42fc85c12cb390326ea17704", null ],
-      [ "BMP280_STATUS_READ_DATA_REGS", "bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba02d11bde0b8ca80e2916c7cd542cbc20", null ]
-    ] ]
+    [ "BMP280_TEMP", "bmp280__regs_8h.html#af8138932cfa78536e6580796d6a4de10", null ]
 ];

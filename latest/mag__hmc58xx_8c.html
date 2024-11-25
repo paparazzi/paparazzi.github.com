@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('mag__hmc58xx_8c.html',''); initResizab
 <area shape="rect" title=" " alt="" coords="687,423,741,449"/>
 <area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="561,266,694,293"/>
 <area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="173,266,353,293"/>
-<area shape="rect" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers." alt="" coords="377,259,536,300"/>
+<area shape="rect" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="377,259,536,300"/>
 <area shape="rect" title=" " alt="" coords="509,348,677,375"/>
 <area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="100,348,256,375"/>
 <area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="280,348,433,375"/>
@@ -292,7 +292,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00085">85</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="hmc58xx_8h.html#a7ce3846d231eb551b91c726c3a086838">Hmc58xx::data</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00036">HMC58XX_CHAN_X</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00045">HMC58XX_CHAN_X_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00039">HMC58XX_CHAN_Y</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00048">HMC58XX_CHAN_Y_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00042">HMC58XX_CHAN_Z</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00051">HMC58XX_CHAN_Z_SIGN</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00120">mag_hmc58xx_report()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00209">MAG_HMC58XX_SENDER_ID</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
+<p class="reference">References <a class="el" href="hmc58xx_8h.html#a3a5446a4c0753dd6bdd9da47da0d10c2">Hmc58xx::data</a>, <a class="el" href="hmc58xx_8h_source.html#l00067">Hmc58xx::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00036">HMC58XX_CHAN_X</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00045">HMC58XX_CHAN_X_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00039">HMC58XX_CHAN_Y</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00048">HMC58XX_CHAN_Y_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00042">HMC58XX_CHAN_Z</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00051">HMC58XX_CHAN_Z_SIGN</a>, <a class="el" href="hmc58xx_8c_source.html#l00160">hmc58xx_event()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00120">mag_hmc58xx_report()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00209">MAG_HMC58XX_SENDER_ID</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -331,7 +331,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00066">66</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_BFP_OF_REAL</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00409">int32_rmat_of_eulers</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_BFP_OF_REAL</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00083">hmc58xx_init()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00409">int32_rmat_of_eulers</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -365,7 +365,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00080">80</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>.</p>
+<p class="reference">References <a class="el" href="hmc58xx_8h_source.html#l00087">hmc58xx_periodic()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -404,7 +404,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00120">120</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="hmc58xx_8h.html#a7ce3846d231eb551b91c726c3a086838">Hmc58xx::data</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00036">HMC58XX_CHAN_X</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00045">HMC58XX_CHAN_X_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00039">HMC58XX_CHAN_Y</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00048">HMC58XX_CHAN_Y_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00042">HMC58XX_CHAN_Z</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00051">HMC58XX_CHAN_Z_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00209">MAG_HMC58XX_SENDER_ID</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="hmc58xx_8h.html#a3a5446a4c0753dd6bdd9da47da0d10c2">Hmc58xx::data</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00036">HMC58XX_CHAN_X</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00045">HMC58XX_CHAN_X_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00039">HMC58XX_CHAN_Y</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00048">HMC58XX_CHAN_Y_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00042">HMC58XX_CHAN_Z</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00051">HMC58XX_CHAN_Z_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00064">mag_hmc58xx</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00209">MAG_HMC58XX_SENDER_ID</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00085">mag_hmc58xx_module_event()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -446,7 +446,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="mag__hmc58xx_8c.html">mag_hmc58xx.c</a></li>
-    <li class="footer">Generated on Fri Nov 8 2024 14:10:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 25 2024 21:57:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

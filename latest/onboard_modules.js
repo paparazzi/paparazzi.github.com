@@ -2559,11 +2559,11 @@ var onboard_modules =
         [ "Raw baro_bmp.xml file:", "module__baro_bmp.html#module_xml__baro_bmp", null ]
       ] ]
     ] ],
-    [ "baro_bmp280_i2c module", "module__baro_bmp280_i2c.html", [
-      [ "Example for airframe file", "module__baro_bmp280_i2c.html#module_load_example__baro_bmp280_i2c", null ],
-      [ "Module configuration options", "module__baro_bmp280_i2c.html#configuration__baro_bmp280_i2c", null ],
-      [ "Module functions", "module__baro_bmp280_i2c.html#functions__baro_bmp280_i2c", [
-        [ "Raw baro_bmp280_i2c.xml file:", "module__baro_bmp280_i2c.html#module_xml__baro_bmp280_i2c", null ]
+    [ "baro_bmp280 module", "module__baro_bmp280.html", [
+      [ "Example for airframe file", "module__baro_bmp280.html#module_load_example__baro_bmp280", null ],
+      [ "Module configuration options", "module__baro_bmp280.html#configuration__baro_bmp280", null ],
+      [ "Module functions", "module__baro_bmp280.html#functions__baro_bmp280", [
+        [ "Raw baro_bmp280.xml file:", "module__baro_bmp280.html#module_xml__baro_bmp280", null ]
       ] ]
     ] ],
     [ "baro_bmp3 module", "module__baro_bmp3.html", [
@@ -2666,6 +2666,11 @@ var onboard_modules =
       [ "Module configuration options", "module__mag_hmc58xx.html#configuration__mag_hmc58xx", null ],
       [ "Module functions", "module__mag_hmc58xx.html#functions__mag_hmc58xx", [
         [ "Raw mag_hmc58xx.xml file:", "module__mag_hmc58xx.html#module_xml__mag_hmc58xx", null ]
+      ] ]
+    ] ],
+    [ "mag_hmc59xx module", "module__mag_hmc59xx.html", [
+      [ "Example for airframe file", "module__mag_hmc59xx.html#module_load_example__mag_hmc59xx", [
+        [ "Raw mag_hmc59xx.xml file:", "module__mag_hmc59xx.html#module_xml__mag_hmc59xx", null ]
       ] ]
     ] ],
     [ "mag_ist8310 module", "module__mag_ist8310.html", [

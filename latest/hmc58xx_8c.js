@@ -4,6 +4,8 @@ var hmc58xx_8c =
     [ "HMC58XX_DEFAULT_GN", "hmc58xx_8c.html#a035c2f50aad18e10db025c532b0d65ce", null ],
     [ "HMC58XX_DEFAULT_MD", "hmc58xx_8c.html#aa058757dd96b25f4220e3d97465ca0c3", null ],
     [ "HMC58XX_DEFAULT_MS", "hmc58xx_8c.html#a4b941e1292efc13b3f7b660ea636c1d0", null ],
+    [ "HMC58XX_DEFAULT_SA", "hmc58xx_8c.html#a07ff7e658a24d00505e96895d72a4372", null ],
+    [ "HMC58XX_DEFAULT_TC", "hmc58xx_8c.html#a0d59dc885e8bb3f9cef2eae6c7b2205c", null ],
     [ "HMC58XX_STARTUP_DELAY", "hmc58xx_8c.html#a50cbc190f24e1b03ee72a4176cb3181d", null ],
     [ "Int16FromBuf", "hmc58xx_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966", null ],
     [ "hmc58xx_event", "hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b", null ],
