@@ -97,6 +97,7 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SEND_INVARIANT_FILTER&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_FINV_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_FINV_MAG_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;AHRS_FINV_TYPE&quot; value=&quot;AHRS_PRIMARY|AHRS_SECONDARY&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -105,6 +106,8 @@ Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
+<li><b>name:</b> <code>AHRS_FINV_TYPE</code> <b>value:</b> <em>AHRS_PRIMARY|AHRS_SECONDARY</em> <br  />
+ Description: set if the AHRS is the primary source (default) or one of the secondary sources</li>
 <li><b>name:</b> <code>USE_MAGNETOMETER</code> <b>value:</b> <em>TRUE</em> <br  />
  Description: set to FALSE to disable magnetometer</li>
 <li><b>name:</b> <code>AHRS_ALIGNER_LED</code> <b>value:</b> <em>1</em> <br  />
@@ -120,8 +123,22 @@ Define Options</h2>
 <li><b>name:</b> <code>AHRS_FINV_MAG_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: ABI sender id of magnetometer to use</li>
 </ul>
+<h1><a class="anchor" id="functions__ahrs_float_invariant"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71">ahrs_finv_wrapper_init()</a></li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
+<h2><a class="anchor" id="headers"></a>
+Header Files</h2>
+<p>The following headers are automatically included in modules.h</p>
+<ul>
+<li><a class="el" href="ahrs__float__invariant__wrapper_8h.html">ahrs_float_invariant_wrapper.h</a></li>
+</ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
@@ -137,6 +154,7 @@ Raw ahrs_float_invariant.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">AHRS</span> <span class="keyword">using</span> <span class="keyword">invariant</span> <span class="keyword">filter.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_FINV_TYPE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;AHRS_PRIMARY|AHRS_SECONDARY&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set if the AHRS is the primary source (default) or one of the secondary sources&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_MAGNETOMETER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set to FALSE to disable magnetometer&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_ALIGNER_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number to indicate AHRS alignment, none to disable (default is board dependent)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SEND_INVARIANT_FILTER&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;send INV_FILTER message for debugging&quot;</span>/&gt;</div>
@@ -146,7 +164,8 @@ Raw ahrs_float_invariant.xml file:</h2>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;invariant&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;AHRS INV&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;ahrs_finv_enable&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;modules/ahrs/ahrs_float_invariant_wrapper&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;DISABLE|ENABLE&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;enable&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;ahrs_float_inv.reset&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;reset&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1.&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;0.01&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;ahrs_float_inv.gains.lx&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;lx&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;modules/ahrs/ahrs_float_invariant&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;AHRS_INV_LX&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1.&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;0.01&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;ahrs_float_inv.gains.ly&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;ly&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;AHRS_INV_LY&quot;</span>/&gt;</div>
@@ -164,31 +183,18 @@ Raw ahrs_float_invariant.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">ahrs_common</span>,@<span class="keyword">imu</span>,@<span class="keyword">mag</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">ahrs</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ahrs_float_invariant_wrapper.h&quot;</span>/&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ahrs_finv_wrapper_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_MAGNETOMETER&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_MAGNETOMETER&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq (,$(findstring $(USE_MAGNETOMETER),0 FALSE))&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ahrs_float_invariant.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ahrs_float_invariant_wrapper.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PRIMARY_AHRS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ahrs_float_invariant&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/ahrs/ahrs_float_invariant_wrapper.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_FINV_TYPE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;AHRS_PRIMARY&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
-<div class="line"><span class="keyword">ifdef</span> <span class="keyword">SECONDARY_AHRS</span></div>
-<div class="line"><span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> $(<span class="keyword">SECONDARY_AHRS</span>), <span class="keyword">invariant</span> <span class="keyword">float_invariant</span>))</div>
-<div class="line"># <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">secondary</span> <span class="keyword">AHRS</span></div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DAHRS_SECONDARY_TYPE_H</span>=\<span class="stringliteral">&quot;modules/ahrs/ahrs_float_invariant_wrapper.h\&quot;</span></div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DSECONDARY_AHRS</span>=<span class="keyword">ahrs_float_invariant</span></div>
-<div class="line"><span class="keyword">else</span></div>
-<div class="line"># <span class="keyword">this</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">primary</span> <span class="keyword">AHRS</span></div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DAHRS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/ahrs/ahrs_float_invariant_wrapper.h\&quot;</span></div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_AHRS</span>=<span class="keyword">ahrs_float_invariant</span></div>
-<div class="line"><span class="keyword">endif</span></div>
-<div class="line"><span class="keyword">else</span></div>
-<div class="line"># <span class="keyword">plain</span> <span class="keyword">old</span> <span class="keyword">single</span> <span class="keyword">AHRS</span> <span class="keyword">usage</span></div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DAHRS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/ahrs/ahrs_float_invariant_wrapper.h\&quot;</span></div>
-<div class="line"><span class="keyword">endif</span></div>
-<div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -198,7 +204,7 @@ Raw ahrs_float_invariant.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:40:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

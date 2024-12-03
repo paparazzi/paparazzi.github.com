@@ -16,10 +16,11 @@ var ins__mekf__wind__wrapper_8c =
     [ "gyro_cb", "ins__mekf__wind__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d", null ],
     [ "incidence_cb", "ins__mekf__wind__wrapper_8c.html#a896330e2da292c75ca65a644566050ad", null ],
     [ "ins_mekf_wind_wrapper_init", "ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb", null ],
-    [ "ins_reset_altitude_ref", "ins__mekf__wind__wrapper_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
-    [ "ins_reset_local_origin", "ins__mekf__wind__wrapper_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "mag_cb", "ins__mekf__wind__wrapper_8c.html#a49cc1e545848b85016af530049991c02", null ],
     [ "pressure_diff_cb", "ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be", null ],
+    [ "reset_cb", "ins__mekf__wind__wrapper_8c.html#a29bc0d0a045fa74e40c7416ea492d521", null ],
+    [ "reset_ref", "ins__mekf__wind__wrapper_8c.html#a4567d4212b4638e2d25778ab0a3f3795", null ],
+    [ "reset_vertical_ref", "ins__mekf__wind__wrapper_8c.html#a090d79622986fa2852a2c2610efa54e8", null ],
     [ "send_euler", "ins__mekf__wind__wrapper_8c.html#abcc3fa84d1a2a749aed66a3ebd79ea54", null ],
     [ "send_filter_status", "ins__mekf__wind__wrapper_8c.html#a85585514fc863f0407a3f5e85ad9d398", null ],
     [ "send_inv_filter", "ins__mekf__wind__wrapper_8c.html#a13fc1b4c93e8bcbc055c5a147129a03d", null ],
@@ -37,5 +38,6 @@ var ins__mekf__wind__wrapper_8c =
     [ "ins_mekf_wind_accel", "ins__mekf__wind__wrapper_8c.html#a95a4feb1b056f618007eff30b2e712d4", null ],
     [ "last_imu_stamp", "ins__mekf__wind__wrapper_8c.html#a7834cee9ef671f12c835b0621d6064fd", null ],
     [ "mag_ev", "ins__mekf__wind__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d", null ],
-    [ "pressure_diff_ev", "ins__mekf__wind__wrapper_8c.html#a6042a25d47f60da070c43391990eb157", null ]
+    [ "pressure_diff_ev", "ins__mekf__wind__wrapper_8c.html#a6042a25d47f60da070c43391990eb157", null ],
+    [ "reset_ev", "ins__mekf__wind__wrapper_8c.html#a52d502cd15c4894b5b32abd8aba97386", null ]
 ];

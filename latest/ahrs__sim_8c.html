@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('ahrs__sim_8c.html',''); initResizable(
 <area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="912,259,1104,285"/>
 <area shape="rect" title=" " alt="" coords="769,95,929,121"/>
 <area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="679,95,745,121"/>
-<area shape="rect" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations." alt="" coords="5,333,160,360"/>
+<area shape="rect" href="ahrs_8h.html" title=" " alt="" coords="5,333,160,360"/>
 <area shape="rect" title=" " alt="" coords="482,408,537,435"/>
 <area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="763,333,882,360"/>
 <area shape="rect" title=" " alt="" coords="815,408,878,435"/>
@@ -141,8 +141,6 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a631ce4de5e99850af24482335a960acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf">update_ahrs_from_sim</a> (void)</td></tr>
 <tr class="separator:a631ce4de5e99850af24482335a960acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe985eebaeb618b0da18f4964f52e758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__sim_8c.html#abe985eebaeb618b0da18f4964f52e758">ahrs_sim_register</a> (void)</td></tr>
-<tr class="separator:abe985eebaeb618b0da18f4964f52e758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -201,39 +199,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abe985eebaeb618b0da18f4964f52e758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe985eebaeb618b0da18f4964f52e758">&#9670;&nbsp;</a></span>ahrs_sim_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_sim_register </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00064">64</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs_8c_source.html#l00062">ahrs_register_impl()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph.png" border="0" usemap="#aahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph" alt=""/></div>
-<map name="aahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph" id="aahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,144,32"/>
-<area shape="rect" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation." alt="" coords="192,5,335,32"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a631ce4de5e99850af24482335a960acf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a631ce4de5e99850af24482335a960acf">&#9670;&nbsp;</a></span>update_ahrs_from_sim()</h2>
 
@@ -252,17 +217,17 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00052">52</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__sim_8c.html#ad0537dfc8e7b1504a61bd86cf944e774">sim_p</a>, <a class="el" href="ahrs__sim_8c.html#ae73eb249a7855e34f52f6b873bb64807">sim_phi</a>, <a class="el" href="ahrs__sim_8c.html#a944f26a7ad5a7811d8b671cd5d5b2dce">sim_psi</a>, <a class="el" href="ahrs__sim_8c.html#a1d08d1f86a284110ac777ccb661113af">sim_q</a>, <a class="el" href="ahrs__sim_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">sim_r</a>, <a class="el" href="ahrs__sim_8c.html#ad38c7c220eeb11d884a7c4c6779f3bda">sim_theta</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="ahrs__sim_8c.html#ad0537dfc8e7b1504a61bd86cf944e774">sim_p</a>, <a class="el" href="ahrs__sim_8c.html#ae73eb249a7855e34f52f6b873bb64807">sim_phi</a>, <a class="el" href="ahrs__sim_8c.html#a944f26a7ad5a7811d8b671cd5d5b2dce">sim_psi</a>, <a class="el" href="ahrs__sim_8c.html#a1d08d1f86a284110ac777ccb661113af">sim_q</a>, <a class="el" href="ahrs__sim_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">sim_r</a>, <a class="el" href="ahrs__sim_8c.html#ad38c7c220eeb11d884a7c4c6779f3bda">sim_theta</a>, <a class="el" href="state_8h_source.html#l01346">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01267">stateSetNedToBodyEulers_f()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph.png" border="0" usemap="#aahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph" alt=""/></div>
 <map name="aahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph" id="aahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,176,57"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="245,5,404,32"/>
-<area shape="rect" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="224,56,425,83"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="245,5,404,32"/>
+<area shape="rect" href="group__state__attitude.html#ga5fa6ea4465237100512211a7bc8be549" title="Set vehicle body attitude from euler angles (float)." alt="" coords="224,56,425,83"/>
 <area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="473,56,640,83"/>
 </map>
 </div>
@@ -452,7 +417,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__sim_8c.html">ahrs_sim.c</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

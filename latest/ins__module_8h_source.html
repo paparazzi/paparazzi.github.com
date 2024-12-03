@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('ins__module_8h_source.html',''); initR
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#ac5da428408b44b6b22e510c36f7f2bc7">handle_ins_msg</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec">parse_ins_msg</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#a9ea3d2bf0a03b37852747429c24bee61">parse_ins_msg</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;pprzlink/pprzlink_device.h&quot;</span></div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('ins__module_8h_source.html',''); initR
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a>) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec">parse_ins_msg</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="ins__module_8h.html#a9ea3d2bf0a03b37852747429c24bee61">parse_ins_msg</a>();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    handler();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
@@ -201,8 +201,8 @@ $(document).ready(function(){initNavTree('ins__module_8h_source.html',''); initR
 <div class="ttc" id="ains__module_8h_html_a81ec12c20410fa078a450bdbdd3eb584"><div class="ttname"><a href="ins__module_8h.html#a81ec12c20410fa078a450bdbdd3eb584">ins_mx</a></div><div class="ttdeci">INS_FORMAT ins_mx</div></div>
 <div class="ttc" id="ains__module_8h_html_a8ad9d86df432b5781940d3e8d4ed38d8"><div class="ttname"><a href="ins__module_8h.html#a8ad9d86df432b5781940d3e8d4ed38d8">ins_x</a></div><div class="ttdeci">INS_FORMAT ins_x</div></div>
 <div class="ttc" id="ains__module_8h_html_a8b9d20805bf2e2f6650b54e078430b54"><div class="ttname"><a href="ins__module_8h.html#a8b9d20805bf2e2f6650b54e078430b54">ins_ax</a></div><div class="ttdeci">INS_FORMAT ins_ax</div></div>
-<div class="ttc" id="ains__module_8h_html_a8cb976f9e02352af6815c51a4b18faec"><div class="ttname"><a href="ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec">parse_ins_msg</a></div><div class="ttdeci">void parse_ins_msg(void)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__chimu__spi_8c_source.html#l00107">ahrs_chimu_spi.c:107</a></div></div>
 <div class="ttc" id="ains__module_8h_html_a98b23c9aa0e47bb2d1274d658f94b03f"><div class="ttname"><a href="ins__module_8h.html#a98b23c9aa0e47bb2d1274d658f94b03f">ins_phi</a></div><div class="ttdeci">INS_FORMAT ins_phi</div></div>
+<div class="ttc" id="ains__module_8h_html_a9ea3d2bf0a03b37852747429c24bee61"><div class="ttname"><a href="ins__module_8h.html#a9ea3d2bf0a03b37852747429c24bee61">parse_ins_msg</a></div><div class="ttdeci">void parse_ins_msg(void)</div><div class="ttdef"><b>Definition:</b> <a href="ins__vn100_8c_source.html#l00185">ins_vn100.c:185</a></div></div>
 <div class="ttc" id="ains__module_8h_html_aaad33cf3a9fa4147998f107a03f75757"><div class="ttname"><a href="ins__module_8h.html#aaad33cf3a9fa4147998f107a03f75757">ins_vx</a></div><div class="ttdeci">INS_FORMAT ins_vx</div></div>
 <div class="ttc" id="ains__module_8h_html_aaae2db83ca84ec0c21435a6c0892912c"><div class="ttname"><a href="ins__module_8h.html#aaae2db83ca84ec0c21435a6c0892912c">ins_vz</a></div><div class="ttdeci">INS_FORMAT ins_vz</div></div>
 <div class="ttc" id="ains__module_8h_html_ab6f79c13aa2681ec2b99e99982ff17e8"><div class="ttname"><a href="ins__module_8h.html#ab6f79c13aa2681ec2b99e99982ff17e8">ins_vy</a></div><div class="ttdeci">INS_FORMAT ins_vy</div></div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('ins__module_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__module_8h.html">ins_module.h</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

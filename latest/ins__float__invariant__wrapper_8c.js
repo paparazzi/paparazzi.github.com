@@ -13,6 +13,7 @@ var ins__float__invariant__wrapper_8c =
     [ "gyro_cb", "ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d", null ],
     [ "ins_float_invariant_wrapper_init", "ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3", null ],
     [ "mag_cb", "ins__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02", null ],
+    [ "reset_cb", "ins__float__invariant__wrapper_8c.html#a7073ffd305497faea455dff249d36950", null ],
     [ "send_filter_status", "ins__float__invariant__wrapper_8c.html#a85585514fc863f0407a3f5e85ad9d398", null ],
     [ "send_ins_ref", "ins__float__invariant__wrapper_8c.html#a6f4ee4900038e15bf441a679acfa913a", null ],
     [ "accel_ev", "ins__float__invariant__wrapper_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826", null ],
@@ -23,5 +24,6 @@ var ins__float__invariant__wrapper_8c =
     [ "gyro_ev", "ins__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546", null ],
     [ "ins_finv_accel", "ins__float__invariant__wrapper_8c.html#adb306f2c0044aa52b5119043779e53c4", null ],
     [ "ins_finv_last_stamp", "ins__float__invariant__wrapper_8c.html#ad5afde2b0cc359b8843aa0a694b8f39b", null ],
-    [ "mag_ev", "ins__float__invariant__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d", null ]
+    [ "mag_ev", "ins__float__invariant__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d", null ],
+    [ "reset_ev", "ins__float__invariant__wrapper_8c.html#a52d502cd15c4894b5b32abd8aba97386", null ]
 ];

@@ -4,8 +4,6 @@ var dir_12fb52dac4e3837dec02c6544f4d82f8 =
     [ "alt_filter.h", "alt__filter_8h.html", "alt__filter_8h" ],
     [ "hf_float.c", "hf__float_8c.html", "hf__float_8c" ],
     [ "hf_float.h", "hf__float_8h.html", "hf__float_8h" ],
-    [ "imu_chimu.c", "imu__chimu_8c.html", "imu__chimu_8c" ],
-    [ "imu_chimu.h", "imu__chimu_8h.html", "imu__chimu_8h" ],
     [ "imu_temp_ctrl.c", "imu__temp__ctrl_8c.html", "imu__temp__ctrl_8c" ],
     [ "imu_temp_ctrl.h", "imu__temp__ctrl_8h.html", "imu__temp__ctrl_8h" ],
     [ "imu_xsens.c", "imu__xsens_8c.html", "imu__xsens_8c" ],

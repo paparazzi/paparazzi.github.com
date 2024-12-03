@@ -109,64 +109,43 @@ $(document).ready(function(){initNavTree('ahrs_8h_source.html',''); initResizabl
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Boston, MA 02111-1307, USA.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef AHRS_H</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define AHRS_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a9c78aeef8865b35bc9a437b54e12dfe9">   32</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_NONE       0</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a63da16e6f8b1dcbf32463f65e4e65b3c">   33</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_GENERIC    1</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a79fedb02151669711a29673ad05b7c25">   34</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_IR         2</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="ahrs_8h.html#abd307013c9cebf5acb863508fa6117b6">   35</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_ICQ        3</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a4de79af62464f5857950ce8304023c66">   36</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_ICE        4</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a6d60812743024c0df43b533fb8d382d8">   37</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_FC         4</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a5e8bd19f8579adcddf87b8db9e46285f">   38</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_DCM        6</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a65cb5f57e9a3629a670ebdbb55a801d6">   39</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_FINV       7</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a24e3083873a4d8d42003ad5d85bc3313">   40</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_MLKF       8</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="ahrs_8h.html#adcc79066b47a71e8115512261368fb5d">   41</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_GX3        9</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a6547cc8641774e01088b496e85b9eca5">   42</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_CHIMU     10</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a81b520c4344d0bb4d1534c79c72cf21f">   43</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_VECTORNAV 11</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a6c0ffb77ca98604b9b7618e28cd12b8f">   44</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_EKF2      12</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a338ae43054983594471c0c92a24b8ce0">   45</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_MADGWICK  13</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a0540aedcbf1000d0a610d4b626d85d93">   46</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_FLOW      14</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/* include actual (primary) implementation header */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef AHRS_TYPE_H</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include AHRS_TYPE_H</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/* include secondary implementation header */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef AHRS_SECONDARY_TYPE_H</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include AHRS_SECONDARY_TYPE_H</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a0a63d1c89a30259dd98411413c5d9997">   58</a></span>&#160;<span class="keyword">typedef</span> bool (*<a class="code" href="ahrs_8h.html#a0a63d1c89a30259dd98411413c5d9997">AhrsEnableOutput</a>)(bool);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/* for settings when using secondary AHRS */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="ahrs_8h.html#a55c10b138384c73b63df1f84cb75c4ff">ahrs_output_idx</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ahrs_8h.html#a3d1e9af59a49b4a13e84adbb37d0efec">ahrs_register_impl</a>(<a class="code" href="ahrs_8h.html#a0a63d1c89a30259dd98411413c5d9997">AhrsEnableOutput</a> enable);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ahrs_8h.html#ad933997851f19f057be2d3c1d4b5b5d0">ahrs_switch</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AHRS_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aahrs_8h_html_a0a63d1c89a30259dd98411413c5d9997"><div class="ttname"><a href="ahrs_8h.html#a0a63d1c89a30259dd98411413c5d9997">AhrsEnableOutput</a></div><div class="ttdeci">bool(* AhrsEnableOutput)(bool)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8h_source.html#l00058">ahrs.h:58</a></div></div>
-<div class="ttc" id="aahrs_8h_html_a3d1e9af59a49b4a13e84adbb37d0efec"><div class="ttname"><a href="ahrs_8h.html#a3d1e9af59a49b4a13e84adbb37d0efec">ahrs_register_impl</a></div><div class="ttdeci">void ahrs_register_impl(AhrsEnableOutput enable)</div><div class="ttdoc">Register an AHRS implementation.</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00062">ahrs.c:62</a></div></div>
-<div class="ttc" id="aahrs_8h_html_a55c10b138384c73b63df1f84cb75c4ff"><div class="ttname"><a href="ahrs_8h.html#a55c10b138384c73b63df1f84cb75c4ff">ahrs_output_idx</a></div><div class="ttdeci">uint8_t ahrs_output_idx</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00060">ahrs.c:60</a></div></div>
-<div class="ttc" id="aahrs_8h_html_aa3721663c9df7c7af5613486a3566afb"><div class="ttname"><a href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a></div><div class="ttdeci">void ahrs_init(void)</div><div class="ttdoc">AHRS initialization.</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00073">ahrs.c:73</a></div></div>
-<div class="ttc" id="aahrs_8h_html_ad933997851f19f057be2d3c1d4b5b5d0"><div class="ttname"><a href="ahrs_8h.html#ad933997851f19f057be2d3c1d4b5b5d0">ahrs_switch</a></div><div class="ttdeci">int ahrs_switch(uint8_t idx)</div><div class="ttdoc">Switch to the output of another AHRS impl.</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00093">ahrs.c:93</a></div></div>
-<div class="ttc" id="anps__radio__control__spektrum_8c_html_a1f658a7d21dc9b85b8009cedb0a1aef6"><div class="ttname"><a href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a></div><div class="ttdeci">static uint32_t idx</div><div class="ttdef"><b>Definition:</b> <a href="nps__radio__control__spektrum_8c_source.html#l00105">nps_radio_control_spektrum.c:105</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef AHRS_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define AHRS_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a893839b1b31c1c1d828124c40d0bf83d">   31</a></span>&#160;<span class="preprocessor">#define AHRS_DISABLE    0</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="ahrs_8h.html#aa8645346e4170f13b6e6209a4528b610">   32</a></span>&#160;<span class="preprocessor">#define AHRS_PRIMARY    1</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a783aff85f52bb8fc99b26c61fe88f312">   33</a></span>&#160;<span class="preprocessor">#define AHRS_SECONDARY  2</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a9c78aeef8865b35bc9a437b54e12dfe9">   35</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_NONE       0</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a63da16e6f8b1dcbf32463f65e4e65b3c">   36</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_GENERIC    1</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a79fedb02151669711a29673ad05b7c25">   37</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_IR         2</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="ahrs_8h.html#abd307013c9cebf5acb863508fa6117b6">   38</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_ICQ        3</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a4de79af62464f5857950ce8304023c66">   39</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_ICE        4</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a6d60812743024c0df43b533fb8d382d8">   40</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_FC         4</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a5e8bd19f8579adcddf87b8db9e46285f">   41</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_DCM        6</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a65cb5f57e9a3629a670ebdbb55a801d6">   42</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_FINV       7</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a24e3083873a4d8d42003ad5d85bc3313">   43</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_MLKF       8</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="ahrs_8h.html#adcc79066b47a71e8115512261368fb5d">   44</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_GX3        9</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// CHIMU (10) is not supported anymore</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a81b520c4344d0bb4d1534c79c72cf21f">   46</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_VECTORNAV 11</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a6c0ffb77ca98604b9b7618e28cd12b8f">   47</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_EKF2      12</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a338ae43054983594471c0c92a24b8ce0">   48</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_MADGWICK  13</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="ahrs_8h.html#a0540aedcbf1000d0a610d4b626d85d93">   49</a></span>&#160;<span class="preprocessor">#define AHRS_COMP_ID_FLOW      14</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AHRS_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aahrs_8h_html_aa3721663c9df7c7af5613486a3566afb"><div class="ttname"><a href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a></div><div class="ttdeci">void ahrs_init(void)</div><div class="ttdoc">AHRS initialization.</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00032">ahrs.c:32</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs_8h.html">ahrs.h</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

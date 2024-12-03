@@ -1,6 +1,6 @@
 var ahrs__vectornav__wrapper_8h =
 [
-    [ "PRIMARY_AHRS", "ahrs__vectornav__wrapper_8h.html#a100248ab1eaacc626e56add84dc1857f", null ],
-    [ "ahrs_vectornav_is_enabled", "ahrs__vectornav__wrapper_8h.html#a32bbfa5ae17900bd2aef1cc4d47ae02f", null ],
-    [ "ahrs_vectornav_register", "ahrs__vectornav__wrapper_8h.html#a67821e4f24335d5924bdb33a11c661e0", null ]
+    [ "ahrs_vectornav_wrapper_enable", "ahrs__vectornav__wrapper_8h.html#ab2ae1dc8fcbafe92ec7311e15104367c", null ],
+    [ "ahrs_vectornav_wrapper_init", "ahrs__vectornav__wrapper_8h.html#a0e0ab8a84e08440c618956746bb8fb4b", null ],
+    [ "ahrs_vectornav_enable", "ahrs__vectornav__wrapper_8h.html#a82f3dc78095618dd7622c9cd69b28a1e", null ]
 ];

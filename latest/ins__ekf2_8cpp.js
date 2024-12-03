@@ -49,10 +49,11 @@ var ins__ekf2_8cpp =
     [ "ins_ekf2_publish_attitude", "ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed", null ],
     [ "ins_ekf2_remove_gps", "ins__ekf2_8cpp.html#a359b827ae64da4b578ea9e25e273ba18", null ],
     [ "ins_ekf2_update", "ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b", null ],
-    [ "ins_reset_altitude_ref", "ins__ekf2_8cpp.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
-    [ "ins_reset_local_origin", "ins__ekf2_8cpp.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "mag_cb", "ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02", null ],
     [ "optical_flow_cb", "ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f", null ],
+    [ "reset_cb", "ins__ekf2_8cpp.html#a29bc0d0a045fa74e40c7416ea492d521", null ],
+    [ "reset_ref", "ins__ekf2_8cpp.html#a4567d4212b4638e2d25778ab0a3f3795", null ],
+    [ "reset_vertical_ref", "ins__ekf2_8cpp.html#a090d79622986fa2852a2c2610efa54e8", null ],
     [ "send_ahrs_bias", "ins__ekf2_8cpp.html#afcaf83e494c099d08de45255037c3769", null ],
     [ "send_ahrs_quat", "ins__ekf2_8cpp.html#ac6dea028352d916df62df0a02965c756", null ],
     [ "send_external_pose_down", "ins__ekf2_8cpp.html#ae272d2b42a54b734aa093467c0912059", null ],
@@ -74,6 +75,7 @@ var ins__ekf2_8cpp =
     [ "gyro_int_ev", "ins__ekf2_8cpp.html#a596ba14822e0851b21aff8465a9c32f6", null ],
     [ "mag_ev", "ins__ekf2_8cpp.html#a44d506760598e8c18e5da6e52dfc6b0d", null ],
     [ "optical_flow_ev", "ins__ekf2_8cpp.html#a141009974fbc44658bdd3334ff2e1d62", null ],
+    [ "reset_ev", "ins__ekf2_8cpp.html#a52d502cd15c4894b5b32abd8aba97386", null ],
     [ "sample_ev", "ins__ekf2_8cpp.html#adfd7a7b836b78f066f0d6d8cd453c8d2", null ],
     [ "temperature_ev", "ins__ekf2_8cpp.html#a38cb06612986df226f29ce29c93450e8", null ]
 ];

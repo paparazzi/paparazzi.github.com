@@ -14,9 +14,10 @@ var ins__skeleton_8c =
     [ "ins_module_update_gps", "ins__skeleton_8c.html#ac73bf250ba772215adbe88d71bec0a8f", null ],
     [ "ins_module_wrapper_init", "ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc", null ],
     [ "ins_ned_to_state", "ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e", null ],
-    [ "ins_reset_local_origin", "ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
+    [ "reset_cb", "ins__skeleton_8c.html#a7073ffd305497faea455dff249d36950", null ],
     [ "accel_ev", "ins__skeleton_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826", null ],
     [ "baro_ev", "ins__skeleton_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702", null ],
     [ "gps_ev", "ins__skeleton_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
-    [ "ins_module", "ins__skeleton_8c.html#ae3ad45d1449f0072980c3b17c6ca781a", null ]
+    [ "ins_module", "ins__skeleton_8c.html#ae3ad45d1449f0072980c3b17c6ca781a", null ],
+    [ "reset_ev", "ins__skeleton_8c.html#a52d502cd15c4894b5b32abd8aba97386", null ]
 ];

@@ -165,7 +165,7 @@ Macros</h2></td></tr>
 <tr class="separator:af30142156368c178d0cc4ba6f3c6da98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664c4baae63d9cfc449c9086b576ef5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8c.html#a664c4baae63d9cfc449c9086b576ef5d">APPROACH_MOVING_TARGET_RELVEL_GAIN</a>&#160;&#160;&#160;1.0</td></tr>
 <tr class="separator:a664c4baae63d9cfc449c9086b576ef5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89cbb74e30b15cc075925cfaab3313d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8c.html#a89cbb74e30b15cc075925cfaab3313d5">DEBUG_AMT</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memitem:a89cbb74e30b15cc075925cfaab3313d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8c.html#a89cbb74e30b15cc075925cfaab3313d5">DEBUG_AMT</a>&#160;&#160;&#160;<a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="separator:a89cbb74e30b15cc075925cfaab3313d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -384,7 +384,7 @@ des_vel</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEBUG_AMT&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
+          <td class="memname">#define DEBUG_AMT&#160;&#160;&#160;<a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -648,7 +648,7 @@ des_vel</td>
 
 <p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00142">142</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00177">waypoint_set_enu()</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00177">waypoint_set_enu()</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -656,14 +656,15 @@ des_vel</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="approach__moving__target_8c_af246048b589bd0805fa74939e9751e0e_cgraph.png" border="0" usemap="#aapproach__moving__target_8c_af246048b589bd0805fa74939e9751e0e_cgraph" alt=""/></div>
 <map name="aapproach__moving__target_8c_af246048b589bd0805fa74939e9751e0e_cgraph" id="aapproach__moving__target_8c_af246048b589bd0805fa74939e9751e0e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,140,57"/>
-<area shape="rect" href="nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="188,31,328,57"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="376,31,524,57"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="572,5,715,32"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="591,56,695,83"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="763,5,909,32"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="782,56,890,83"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="783,107,889,133"/>
+<area shape="rect" title=" " alt="" coords="5,56,140,83"/>
+<area shape="rect" href="nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="188,56,328,83"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="376,56,524,83"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="578,5,721,32"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="597,56,701,83"/>
+<area shape="rect" href="group__state__position.html#gaaf56e2d484fe8e197a63c30841db7186" title="Get the coordinate NED frame origin (int)" alt="" coords="572,107,727,133"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="775,5,921,32"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="794,56,902,83"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="795,107,901,133"/>
 </map>
 </div>
 
@@ -803,7 +804,7 @@ des_vel</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="approach__moving__target_8c.html">approach_moving_target.c</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

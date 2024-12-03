@@ -1,5 +1,16 @@
 var NAVTREEINDEX80 =
 {
+"hackhd_8c.html#af31f6b41a7221c6e1a4881879a07d161":[12,0,1,0,6,19,11,1],
+"hackhd_8c.html#af32d92b29b1c7179834f3877c59069d1":[12,0,1,0,6,19,11,10],
+"hackhd_8c_source.html":[12,0,1,0,6,19,11],
+"hackhd_8h.html":[12,0,1,0,6,19,12],
+"hackhd_8h.html#a547a4c3830f83d2e5fc804317fcf67b3":[12,0,1,0,6,19,12,0,4],
+"hackhd_8h.html#a6018ba71219478bbe72ca662e80c0aee":[12,0,1,0,6,19,12,0,5],
+"hackhd_8h.html#a6ff0090c5d817fe5384d164ec0c63561":[12,0,1,0,6,19,12,4],
+"hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83":[12,0,1,0,6,19,12,0,0],
+"hackhd_8h.html#a810a7d5a2238159f421cb8c74718422e":[12,0,1,0,6,19,12,1],
+"hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,19,12,8],
+"hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,19,12,3],
 "hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,19,12,6],
 "hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,19,12,0,2],
 "hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06":[12,0,1,0,6,19,12,7],
@@ -238,16 +249,5 @@ var NAVTREEINDEX80 =
 "high__speed__logger__direct__memory_8c.html#a1ec9bed1a229be7be1c30b971ac19148":[12,0,1,0,6,42,5,8],
 "high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3":[12,0,1,0,6,42,5,24],
 "high__speed__logger__direct__memory_8c.html#a2034ae0d8b7e2561e4d3298485dbd663":[12,0,1,0,6,42,5,64],
-"high__speed__logger__direct__memory_8c.html#a2305feff659b35bd3c839234846d8a6b":[12,0,1,0,6,42,5,49],
-"high__speed__logger__direct__memory_8c.html#a263a3ca74d86aa43af1e8f509dee5210":[12,0,1,0,6,42,5,13],
-"high__speed__logger__direct__memory_8c.html#a2f15d32f0c99e5973bd69d075ff03507":[12,0,1,0,6,42,5,6],
-"high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488":[12,0,1,0,6,42,5,52],
-"high__speed__logger__direct__memory_8c.html#a35eff149a50c56971231854af0d5582b":[12,0,1,0,6,42,5,51],
-"high__speed__logger__direct__memory_8c.html#a3d16f1884eb221df576779b4432750c8":[12,0,1,0,6,42,5,54],
-"high__speed__logger__direct__memory_8c.html#a4c2406e1801a3e53a6395948be08b57e":[12,0,1,0,6,42,5,60],
-"high__speed__logger__direct__memory_8c.html#a505acbcfa5f466fea3d39fa956a06074":[12,0,1,0,6,42,5,7],
-"high__speed__logger__direct__memory_8c.html#a52fd4207a7fa718b2de8e2b5f9dac559":[12,0,1,0,6,42,5,48],
-"high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44":[12,0,1,0,6,42,5,22],
-"high__speed__logger__direct__memory_8c.html#a5c0fb4e1f5b4d9f5f529c8dd6e25be44":[12,0,1,0,6,42,5,55],
-"high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7":[12,0,1,0,6,42,5,19]
+"high__speed__logger__direct__memory_8c.html#a2305feff659b35bd3c839234846d8a6b":[12,0,1,0,6,42,5,49]
 };

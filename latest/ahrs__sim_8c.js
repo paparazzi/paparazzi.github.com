@@ -2,7 +2,6 @@ var ahrs__sim_8c =
 [
     [ "INS_PITCH_NEUTRAL_DEFAULT", "ahrs__sim_8c.html#a4ed952896c549e2304de785adfda2bf9", null ],
     [ "INS_ROLL_NEUTRAL_DEFAULT", "ahrs__sim_8c.html#ae6d192ab41d6346816347a696bdd6dd1", null ],
-    [ "ahrs_sim_register", "ahrs__sim_8c.html#abe985eebaeb618b0da18f4964f52e758", null ],
     [ "update_ahrs_from_sim", "ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf", null ],
     [ "ins_pitch_neutral", "ahrs__sim_8c.html#ac5803b6353ae28ae52ab9284d222d8d5", null ],
     [ "ins_roll_neutral", "ahrs__sim_8c.html#a70b61a4232cbf0e9acbde8d9b62ce1c5", null ],

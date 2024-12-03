@@ -1,5 +1,16 @@
 var NAVTREEINDEX86 =
 {
+"hott__gam_8h.html#a16a637ffd93097cc9111b94e6704dab5":[12,0,1,0,6,35,3,0,16],
+"hott__gam_8h.html#a19a71715f8aeabc745a60155630615f8":[12,0,1,0,6,35,3,0,30],
+"hott__gam_8h.html#a1ef698b8680531976e287351d2a54c1f":[12,0,1,0,6,35,3,0,43],
+"hott__gam_8h.html#a221244730e4f96c650f744645a79b43a":[12,0,1,0,6,35,3,1],
+"hott__gam_8h.html#a2a0d6a13c50e0544aed177075f6b9298":[12,0,1,0,6,35,3,0,14],
+"hott__gam_8h.html#a2ae3167d6e4e1536424e71f44805f187":[12,0,1,0,6,35,3,0,4],
+"hott__gam_8h.html#a2b24b07cffa6fddd7404a9ec22c3eaeb":[12,0,1,0,6,35,3,0,19],
+"hott__gam_8h.html#a2f774796d1a287dcaa6e1a8f38457215":[12,0,1,0,6,35,3,0,7],
+"hott__gam_8h.html#a3ef347171c4dd36aada74dcbff047b2c":[12,0,1,0,6,35,3,0,40],
+"hott__gam_8h.html#a42786c82ded32b763ebb9f41b6bacf78":[12,0,1,0,6,35,3,0,6],
+"hott__gam_8h.html#a44a34f82902ad56167b4b31a2712c1cb":[12,0,1,0,6,35,3,0,41],
 "hott__gam_8h.html#a548fb992133389fb246efb4e1afdce27":[12,0,1,0,6,35,3,0,13],
 "hott__gam_8h.html#a628de8202cae5b484af1cbe3f7280a28":[12,0,1,0,6,35,3,0,33],
 "hott__gam_8h.html#a65e4706fd4ee1156730753f1ea74fdee":[12,0,1,0,6,35,3,0,20],
@@ -238,16 +249,5 @@ var NAVTREEINDEX86 =
 "humid__sht__i2c_8c.html":[12,0,1,0,6,44,25],
 "humid__sht__i2c_8c.html#a11c4af7e28d24d0936c26b5f9e1ba5cc":[12,0,1,0,6,44,25,15],
 "humid__sht__i2c_8c.html#a133780437c8764efa4db6a401a877544":[12,0,1,0,6,44,25,16],
-"humid__sht__i2c_8c.html#a16cb663c8ec27ad019c89362c8e7b1c4":[12,0,1,0,6,44,25,1],
-"humid__sht__i2c_8c.html#a1ee81659bc27e2a5d7e769639a5503f7":[12,0,1,0,6,44,25,7],
-"humid__sht__i2c_8c.html#a1f5adfcee4f4e827edb1a8940851f72a":[12,0,1,0,6,44,25,12],
-"humid__sht__i2c_8c.html#a290a25e7e2decf8bf93c136292c2de3f":[12,0,1,0,6,44,25,11],
-"humid__sht__i2c_8c.html#a3c574dcb10c81020630db2286edbeaad":[12,0,1,0,6,44,25,6],
-"humid__sht__i2c_8c.html#a51ca48f45944e4d28691592760d796c9":[12,0,1,0,6,44,25,2],
-"humid__sht__i2c_8c.html#a69b6ec0fe918280602fd52013d39e212":[12,0,1,0,6,44,25,5],
-"humid__sht__i2c_8c.html#a86de6332edd251577f523a93c64144a2":[12,0,1,0,6,44,25,13],
-"humid__sht__i2c_8c.html#a9250bbec811cdbcc7c024e084dacc33f":[12,0,1,0,6,44,25,3],
-"humid__sht__i2c_8c.html#ab7360b54e1d1d8f2f4a8219461c1ba74":[12,0,1,0,6,44,25,4],
-"humid__sht__i2c_8c.html#acf9593453090510f26c2d4aa179ad4bc":[12,0,1,0,6,44,25,0],
-"humid__sht__i2c_8c.html#acff442bab9b6b43dc173ce20ada54422":[12,0,1,0,6,44,25,14]
+"humid__sht__i2c_8c.html#a16cb663c8ec27ad019c89362c8e7b1c4":[12,0,1,0,6,44,25,1]
 };

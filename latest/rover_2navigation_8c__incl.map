@@ -1,47 +1,47 @@
 <map id="sw/airborne/firmwares/rover/navigation.c" name="sw/airborne/firmwares/rover/navigation.c">
-<area shape="rect" id="node1" title="Rover navigation functions." alt="" coords="2465,5,2632,47"/>
-<area shape="rect" id="node2" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="1073,95,1283,121"/>
-<area shape="rect" id="node12" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="627,259,694,285"/>
-<area shape="rect" id="node13" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="685,423,865,449"/>
-<area shape="rect" id="node20" href="$autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="1573,177,1665,203"/>
-<area shape="rect" id="node27" href="$pprz__debug_8h.html" title=" " alt="" coords="3433,95,3542,121"/>
-<area shape="rect" id="node28" href="$gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="2049,177,2193,203"/>
-<area shape="rect" id="node32" href="$ins_8h.html" title="Integrated Navigation System interface." alt="" coords="487,177,623,203"/>
-<area shape="rect" id="node33" title=" " alt="" coords="3017,259,3177,285"/>
-<area shape="rect" id="node34" title=" " alt="" coords="3567,95,3739,121"/>
-<area shape="rect" id="node35" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2515,177,2726,203"/>
-<area shape="rect" id="node36" title=" " alt="" coords="3201,259,3357,285"/>
-<area shape="rect" id="node41" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2960,341,3100,367"/>
-<area shape="rect" id="node44" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2586,95,2799,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="1172,587,1227,613"/>
-<area shape="rect" id="node4" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1011,333,1161,375"/>
-<area shape="rect" id="node18" href="$nav_2waypoints_8h.html" title=" " alt="" coords="951,259,1141,285"/>
-<area shape="rect" id="node19" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="1237,497,1404,539"/>
-<area shape="rect" id="node5" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="986,423,1111,449"/>
-<area shape="rect" id="node6" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="211,423,366,449"/>
-<area shape="rect" id="node7" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="247,505,365,531"/>
-<area shape="rect" id="node8" title=" " alt="" coords="5,587,68,613"/>
-<area shape="rect" id="node10" title=" " alt="" coords="212,587,280,613"/>
-<area shape="rect" id="node11" title=" " alt="" coords="65,505,222,531"/>
-<area shape="rect" id="node9" title=" " alt="" coords="392,587,463,613"/>
-<area shape="rect" id="node16" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="836,333,987,375"/>
-<area shape="rect" id="node17" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="543,333,709,375"/>
-<area shape="rect" id="node14" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="757,505,911,531"/>
-<area shape="rect" id="node15" title=" " alt="" coords="1537,505,1608,531"/>
-<area shape="rect" id="node21" href="$paparazzi_8h.html" title=" " alt="" coords="1809,259,1907,285"/>
-<area shape="rect" id="node23" title=" " alt="" coords="1982,259,2142,285"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1556,259,1683,285"/>
-<area shape="rect" id="node25" title=" " alt="" coords="1215,259,1373,285"/>
-<area shape="rect" id="node26" title=" " alt="" coords="1397,259,1532,285"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1913,341,2000,367"/>
-<area shape="rect" id="node29" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="2267,259,2441,285"/>
-<area shape="rect" id="node30" title=" " alt="" coords="2127,341,2253,367"/>
-<area shape="rect" id="node31" title=" " alt="" coords="2277,333,2439,375"/>
-<area shape="rect" id="node37" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2516,259,2720,285"/>
-<area shape="rect" id="node39" href="$pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2744,259,2943,285"/>
-<area shape="rect" id="node38" title=" " alt="" coords="2565,341,2727,367"/>
-<area shape="rect" id="node40" title=" " alt="" coords="2751,341,2935,367"/>
-<area shape="rect" id="node42" title=" " alt="" coords="3047,423,3221,449"/>
-<area shape="rect" id="node43" title=" " alt="" coords="2830,423,3022,449"/>
-<area shape="rect" id="node45" title=" " alt="" coords="2750,169,2894,211"/>
+<area shape="rect" id="node1" title="Rover navigation functions." alt="" coords="1598,5,1765,47"/>
+<area shape="rect" id="node2" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="1425,95,1636,121"/>
+<area shape="rect" id="node12" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="395,259,461,285"/>
+<area shape="rect" id="node13" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="603,423,783,449"/>
+<area shape="rect" id="node20" href="$autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="1209,177,1301,203"/>
+<area shape="rect" id="node27" href="$pprz__debug_8h.html" title=" " alt="" coords="1292,95,1401,121"/>
+<area shape="rect" id="node28" href="$gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="1619,177,1763,203"/>
+<area shape="rect" id="node32" href="$ins_8h.html" title="Integrated Navigation System interface." alt="" coords="184,259,320,285"/>
+<area shape="rect" id="node33" title=" " alt="" coords="2552,259,2712,285"/>
+<area shape="rect" id="node34" title=" " alt="" coords="1770,95,1942,121"/>
+<area shape="rect" id="node35" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2169,177,2380,203"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2737,259,2893,285"/>
+<area shape="rect" id="node41" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="3037,341,3177,367"/>
+<area shape="rect" id="node44" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2781,95,2995,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="1210,587,1265,613"/>
+<area shape="rect" id="node4" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1049,333,1199,375"/>
+<area shape="rect" id="node18" href="$nav_2waypoints_8h.html" title=" " alt="" coords="1029,259,1219,285"/>
+<area shape="rect" id="node19" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="1421,497,1587,539"/>
+<area shape="rect" id="node5" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="996,423,1121,449"/>
+<area shape="rect" id="node6" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="183,423,337,449"/>
+<area shape="rect" id="node7" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="221,505,339,531"/>
+<area shape="rect" id="node8" title=" " alt="" coords="185,587,247,613"/>
+<area shape="rect" id="node10" title=" " alt="" coords="18,587,86,613"/>
+<area shape="rect" id="node11" title=" " alt="" coords="39,505,196,531"/>
+<area shape="rect" id="node9" title=" " alt="" coords="309,587,379,613"/>
+<area shape="rect" id="node16" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="874,333,1025,375"/>
+<area shape="rect" id="node17" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="466,333,633,375"/>
+<area shape="rect" id="node14" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="645,505,798,531"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1326,505,1397,531"/>
+<area shape="rect" id="node21" href="$paparazzi_8h.html" title=" " alt="" coords="1294,259,1391,285"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1669,259,1829,285"/>
+<area shape="rect" id="node24" title=" " alt="" coords="486,259,613,285"/>
+<area shape="rect" id="node25" title=" " alt="" coords="637,259,795,285"/>
+<area shape="rect" id="node26" title=" " alt="" coords="819,259,954,285"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1670,341,1757,367"/>
+<area shape="rect" id="node29" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1904,259,2077,285"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1883,341,2010,367"/>
+<area shape="rect" id="node31" title=" " alt="" coords="2034,333,2195,375"/>
+<area shape="rect" id="node37" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2102,259,2306,285"/>
+<area shape="rect" id="node39" href="$pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2330,259,2529,285"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2271,341,2433,367"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2457,341,2641,367"/>
+<area shape="rect" id="node42" title=" " alt="" coords="3019,423,3194,449"/>
+<area shape="rect" id="node43" title=" " alt="" coords="3219,423,3411,449"/>
+<area shape="rect" id="node45" title=" " alt="" coords="2925,169,3069,211"/>
 </map>

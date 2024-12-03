@@ -208,12 +208,12 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#if USE_AIRSPEED_AMSYS</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(<a class="code" href="airspeed__amsys_8c.html#a79c8b995649dffc12ce3f264553bc8f9">airspeed_amsys</a>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a>(MODULE_AIRSPEED_AMSYS_ID, <a class="code" href="airspeed__amsys_8c.html#a79c8b995649dffc12ce3f264553bc8f9">airspeed_amsys</a>);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#elif !defined USE_NPS</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">extern</span> <span class="keywordtype">float</span> sim_air_speed;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(sim_air_speed);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a>(MODULE_AIRSPEED_AMSYS_ID, sim_air_speed);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SITL</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="comment">//New value available</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#if USE_AIRSPEED</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(<a class="code" href="airspeed__amsys_8c.html#a79c8b995649dffc12ce3f264553bc8f9">airspeed_amsys</a>);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <a class="code" href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a>(MODULE_AIRSPEED_AMSYS_ID, <a class="code" href="airspeed__amsys_8c.html#a79c8b995649dffc12ce3f264553bc8f9">airspeed_amsys</a>);</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#ifdef AIRSPEED_AMSYS_SYNC_SEND</span></div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <a class="code" href="airspeed__amsys_8c.html#aad98861def0c5e327efd870515793da0">airspeed_amsys_downlink</a>();</div>
@@ -353,7 +353,7 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div class="ttc" id="agroup__i2c_html_ga9e7c3ccd9ba7415486bfb2e52eaa3964"><div class="ttname"><a href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964">i2c_receive</a></div><div class="ttdeci">bool i2c_receive(struct i2c_periph *p, struct i2c_transaction *t, uint8_t s_addr, uint16_t len)</div><div class="ttdoc">Submit a read only transaction.</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8c_source.html#l00334">i2c.c:334</a></div></div>
 <div class="ttc" id="agroup__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a></div><div class="ttdeci">@ I2CTransDone</div><div class="ttdoc">transaction set to done by user level</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00060">i2c.h:59</a></div></div>
 <div class="ttc" id="agroup__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure.</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
-<div class="ttc" id="agroup__state__wind__airspeed_html_ga2ede5795eaec38206e25b8850ee40f63"><div class="ttname"><a href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(float airspeed)</div><div class="ttdoc">Set airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01309">state.h:1309</a></div></div>
+<div class="ttc" id="agroup__state__wind__airspeed_html_gae607b9737122008e72eef0c6f6babc7d"><div class="ttname"><a href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(uint16_t id, float airspeed)</div><div class="ttdoc">Set airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01486">state.h:1486</a></div></div>
 <div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API.</div></div>
 <div class="ttc" id="ains__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
@@ -365,7 +365,7 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__amsys_8c.html">airspeed_amsys.c</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

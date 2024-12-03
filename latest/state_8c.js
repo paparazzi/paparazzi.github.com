@@ -31,6 +31,13 @@ var state_8c =
     [ "stateCalcSpeedNed_i", "group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5", null ],
     [ "stateCalcVerticalWindspeed_f", "group__state__wind__airspeed.html#gaf5cbdfa616e875ce4f648ab97a03a8e1", null ],
     [ "stateCalcVerticalWindspeed_i", "group__state__wind__airspeed.html#gaac50ef79934dbcc8abf99aa3be288c5a", null ],
+    [ "stateGetEcefOrigin_f", "group__state__position.html#ga6414433849d575af08e5d1bca8f4a835", null ],
+    [ "stateGetEcefOrigin_i", "group__state__position.html#gaf54a860cc402c1b101ecef3a22e557ac", null ],
+    [ "stateGetHmslOrigin_f", "group__state__position.html#gab71b0c08c234cae995f233798803ef37", null ],
+    [ "stateGetHmslOrigin_i", "group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4", null ],
+    [ "stateGetLlaOrigin_f", "group__state__position.html#gad3bcde8aa8347f025930b02e18bc4b73", null ],
+    [ "stateGetLlaOrigin_i", "group__state__position.html#gac491aeb964dcf66df867c43d61241f40", null ],
     [ "stateInit", "group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a", null ],
+    [ "stateSetInputFilter", "group__state__interface.html#ga7403b6b3d463d71a8356f93b60dda4e9", null ],
     [ "state", "group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba", null ]
 ];

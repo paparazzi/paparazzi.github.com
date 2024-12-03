@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('airspeed__ets_8c_source.html',''); ini
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#elif !defined USE_NPS</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">extern</span> <span class="keywordtype">float</span> sim_air_speed;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(sim_air_speed);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a>(MODULE_AIRSPEED_ETS_ID, sim_air_speed);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SITL</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('airspeed__ets_8c_source.html',''); ini
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    AbiSendMsgAIRSPEED(<a class="code" href="abi__sender__ids_8h.html#a58aad6ced16b11a8ce7dd32a8f9363ab">AIRSPEED_ETS_ID</a>, <a class="code" href="airspeed__ets_8c.html#a513caa9626faf5f98e1c53e64299f668">airspeed_ets</a>);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#if USE_AIRSPEED_ETS</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(<a class="code" href="airspeed__ets_8c.html#a513caa9626faf5f98e1c53e64299f668">airspeed_ets</a>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a>(MODULE_AIRSPEED_ETS_ID, <a class="code" href="airspeed__ets_8c.html#a513caa9626faf5f98e1c53e64299f668">airspeed_ets</a>);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="airspeed__ets_8c.html#a513caa9626faf5f98e1c53e64299f668">airspeed_ets</a> = 0.0;</div>
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('airspeed__ets_8c_source.html',''); ini
 <div class="ttc" id="agroup__math__geodetic__int_html_a083f5d7acd142e12865d9f4a918fee07"><div class="ttname"><a href="group__math__geodetic__int.html#a083f5d7acd142e12865d9f4a918fee07">LlaCoor_i::lat</a></div><div class="ttdeci">int32_t lat</div><div class="ttdoc">in degrees*1e7</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00060">pprz_geodetic_int.h:60</a></div></div>
 <div class="ttc" id="agroup__math__geodetic__int_html_a52586e90ccb7aa5f0960bcb480bfcaa3"><div class="ttname"><a href="group__math__geodetic__int.html#a52586e90ccb7aa5f0960bcb480bfcaa3">NedCoor_i::z</a></div><div class="ttdeci">int32_t z</div><div class="ttdoc">Down.</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00071">pprz_geodetic_int.h:71</a></div></div>
 <div class="ttc" id="agroup__math__geodetic__int_html_ad6a02c197a16ad76cf794e6e4935f5c9"><div class="ttname"><a href="group__math__geodetic__int.html#ad6a02c197a16ad76cf794e6e4935f5c9">LlaCoor_i::lon</a></div><div class="ttdeci">int32_t lon</div><div class="ttdoc">in degrees*1e7</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00061">pprz_geodetic_int.h:61</a></div></div>
-<div class="ttc" id="agroup__state__wind__airspeed_html_ga2ede5795eaec38206e25b8850ee40f63"><div class="ttname"><a href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(float airspeed)</div><div class="ttdoc">Set airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01309">state.h:1309</a></div></div>
+<div class="ttc" id="agroup__state__wind__airspeed_html_gae607b9737122008e72eef0c6f6babc7d"><div class="ttname"><a href="group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(uint16_t id, float airspeed)</div><div class="ttdoc">Set airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01486">state.h:1486</a></div></div>
 <div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API.</div></div>
 <div class="ttc" id="ains__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
 <div class="ttc" id="aoneloop__andi_8c_html_ade3b7b0e14ee1f1bbe3cb8c2703cdbaa"><div class="ttname"><a href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a></div><div class="ttdeci">PRINT_CONFIG_VAR(ONELOOP_ANDI_FILT_CUTOFF)</div></div>
@@ -431,7 +431,7 @@ $(document).ready(function(){initNavTree('airspeed__ets_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__ets_8c.html">airspeed_ets.c</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

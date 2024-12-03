@@ -9,7 +9,7 @@ var ins__module_8h =
     [ "handle_ins_msg", "ins__module_8h.html#ac5da428408b44b6b22e510c36f7f2bc7", null ],
     [ "ins_event_check_and_handle", "ins__module_8h.html#ac34266139fe4658afe3bd0992441431a", null ],
     [ "parse_ins_buffer", "ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884", null ],
-    [ "parse_ins_msg", "ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec", null ],
+    [ "parse_ins_msg", "ins__module_8h.html#a9ea3d2bf0a03b37852747429c24bee61", null ],
     [ "ins_ax", "ins__module_8h.html#a8b9d20805bf2e2f6650b54e078430b54", null ],
     [ "ins_ay", "ins__module_8h.html#a557d2f2616820b7c8ca7128048fbaaf0", null ],
     [ "ins_az", "ins__module_8h.html#a6d32f38b168332331f5b42ca5f2911fe", null ],

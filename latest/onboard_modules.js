@@ -194,20 +194,6 @@ var onboard_modules =
         [ "Raw mcp355x.xml file:", "module__mcp355x.html#module_xml__mcp355x", null ]
       ] ]
     ] ],
-    [ "ahrs_chimu_spi module", "module__ahrs_chimu_spi.html", [
-      [ "Example for airframe file", "module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi", null ],
-      [ "Module configuration options", "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi", null ],
-      [ "Module functions", "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi", [
-        [ "Raw ahrs_chimu_spi.xml file:", "module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi", null ]
-      ] ]
-    ] ],
-    [ "ahrs_chimu_uart module", "module__ahrs_chimu_uart.html", [
-      [ "Example for airframe file", "module__ahrs_chimu_uart.html#module_load_example__ahrs_chimu_uart", null ],
-      [ "Module configuration options", "module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart", null ],
-      [ "Module functions", "module__ahrs_chimu_uart.html#functions__ahrs_chimu_uart", [
-        [ "Raw ahrs_chimu_uart.xml file:", "module__ahrs_chimu_uart.html#module_xml__ahrs_chimu_uart", null ]
-      ] ]
-    ] ],
     [ "ahrs_common module", "module__ahrs_common.html", [
       [ "Example for airframe file", "module__ahrs_common.html#module_load_example__ahrs_common", null ],
       [ "Module configuration options", "module__ahrs_common.html#configuration__ahrs_common", null ],
@@ -217,25 +203,29 @@ var onboard_modules =
     ] ],
     [ "ahrs_float_cmpl_quat module", "module__ahrs_float_cmpl_quat.html", [
       [ "Example for airframe file", "module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat", null ],
-      [ "Module configuration options", "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat", [
+      [ "Module configuration options", "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat", null ],
+      [ "Module functions", "module__ahrs_float_cmpl_quat.html#functions__ahrs_float_cmpl_quat", [
         [ "Raw ahrs_float_cmpl_quat.xml file:", "module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat", null ]
       ] ]
     ] ],
     [ "ahrs_float_cmpl_rmat module", "module__ahrs_float_cmpl_rmat.html", [
       [ "Example for airframe file", "module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat", null ],
-      [ "Module configuration options", "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat", [
+      [ "Module configuration options", "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat", null ],
+      [ "Module functions", "module__ahrs_float_cmpl_rmat.html#functions__ahrs_float_cmpl_rmat", [
         [ "Raw ahrs_float_cmpl_rmat.xml file:", "module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat", null ]
       ] ]
     ] ],
     [ "ahrs_float_dcm module", "module__ahrs_float_dcm.html", [
       [ "Example for airframe file", "module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm", null ],
-      [ "Module configuration options", "module__ahrs_float_dcm.html#configuration__ahrs_float_dcm", [
+      [ "Module configuration options", "module__ahrs_float_dcm.html#configuration__ahrs_float_dcm", null ],
+      [ "Module functions", "module__ahrs_float_dcm.html#functions__ahrs_float_dcm", [
         [ "Raw ahrs_float_dcm.xml file:", "module__ahrs_float_dcm.html#module_xml__ahrs_float_dcm", null ]
       ] ]
     ] ],
     [ "ahrs_float_invariant module", "module__ahrs_float_invariant.html", [
       [ "Example for airframe file", "module__ahrs_float_invariant.html#module_load_example__ahrs_float_invariant", null ],
-      [ "Module configuration options", "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant", [
+      [ "Module configuration options", "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant", null ],
+      [ "Module functions", "module__ahrs_float_invariant.html#functions__ahrs_float_invariant", [
         [ "Raw ahrs_float_invariant.xml file:", "module__ahrs_float_invariant.html#module_xml__ahrs_float_invariant", null ]
       ] ]
     ] ],
@@ -247,13 +237,15 @@ var onboard_modules =
     ] ],
     [ "ahrs_int_cmpl_quat module", "module__ahrs_int_cmpl_quat.html", [
       [ "Example for airframe file", "module__ahrs_int_cmpl_quat.html#module_load_example__ahrs_int_cmpl_quat", null ],
-      [ "Module configuration options", "module__ahrs_int_cmpl_quat.html#configuration__ahrs_int_cmpl_quat", [
+      [ "Module configuration options", "module__ahrs_int_cmpl_quat.html#configuration__ahrs_int_cmpl_quat", null ],
+      [ "Module functions", "module__ahrs_int_cmpl_quat.html#functions__ahrs_int_cmpl_quat", [
         [ "Raw ahrs_int_cmpl_quat.xml file:", "module__ahrs_int_cmpl_quat.html#module_xml__ahrs_int_cmpl_quat", null ]
       ] ]
     ] ],
     [ "ahrs_madgwick module", "module__ahrs_madgwick.html", [
       [ "Example for airframe file", "module__ahrs_madgwick.html#module_load_example__ahrs_madgwick", null ],
-      [ "Module configuration options", "module__ahrs_madgwick.html#configuration__ahrs_madgwick", [
+      [ "Module configuration options", "module__ahrs_madgwick.html#configuration__ahrs_madgwick", null ],
+      [ "Module functions", "module__ahrs_madgwick.html#functions__ahrs_madgwick", [
         [ "Raw ahrs_madgwick.xml file:", "module__ahrs_madgwick.html#module_xml__ahrs_madgwick", null ]
       ] ]
     ] ],
@@ -1495,9 +1487,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "ins module", "module__ins.html", [
-      [ "Example for airframe file", "module__ins.html#module_load_example__ins", null ],
-      [ "Module configuration options", "module__ins.html#configuration__ins", null ],
-      [ "Module functions", "module__ins.html#functions__ins", [
+      [ "Example for airframe file", "module__ins.html#module_load_example__ins", [
         [ "Raw ins.xml file:", "module__ins.html#module_xml__ins", null ]
       ] ]
     ] ],
@@ -1538,8 +1528,7 @@ var onboard_modules =
     ] ],
     [ "ins_extended module", "module__ins_extended.html", [
       [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
-      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", null ],
-      [ "Module functions", "module__ins_extended.html#functions__ins_extended", [
+      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
         [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
       ] ]
     ] ],
@@ -1564,17 +1553,21 @@ var onboard_modules =
       ] ]
     ] ],
     [ "ins_hff module", "module__ins_hff.html", [
-      [ "Example for airframe file", "module__ins_hff.html#module_load_example__ins_hff", null ],
-      [ "Module configuration options", "module__ins_hff.html#configuration__ins_hff", null ],
-      [ "Module functions", "module__ins_hff.html#functions__ins_hff", [
+      [ "Example for airframe file", "module__ins_hff.html#module_load_example__ins_hff", [
         [ "Raw ins_hff.xml file:", "module__ins_hff.html#module_xml__ins_hff", null ]
       ] ]
     ] ],
     [ "ins_hff_extended module", "module__ins_hff_extended.html", [
       [ "Example for airframe file", "module__ins_hff_extended.html#module_load_example__ins_hff_extended", null ],
-      [ "Module configuration options", "module__ins_hff_extended.html#configuration__ins_hff_extended", null ],
-      [ "Module functions", "module__ins_hff_extended.html#functions__ins_hff_extended", [
+      [ "Module configuration options", "module__ins_hff_extended.html#configuration__ins_hff_extended", [
         [ "Raw ins_hff_extended.xml file:", "module__ins_hff_extended.html#module_xml__ins_hff_extended", null ]
+      ] ]
+    ] ],
+    [ "ins_int_common module", "module__ins_int_common.html", [
+      [ "Example for airframe file", "module__ins_int_common.html#module_load_example__ins_int_common", null ],
+      [ "Module configuration options", "module__ins_int_common.html#configuration__ins_int_common", null ],
+      [ "Module functions", "module__ins_int_common.html#functions__ins_int_common", [
+        [ "Raw ins_int_common.xml file:", "module__ins_int_common.html#module_xml__ins_int_common", null ]
       ] ]
     ] ],
     [ "ins_mekf_wind module", "module__ins_mekf_wind.html", [
@@ -1591,8 +1584,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "ins_sim module", "module__ins_sim.html", [
-      [ "Example for airframe file", "module__ins_sim.html#module_load_example__ins_sim", null ],
-      [ "Module functions", "module__ins_sim.html#functions__ins_sim", [
+      [ "Example for airframe file", "module__ins_sim.html#module_load_example__ins_sim", [
         [ "Raw ins_sim.xml file:", "module__ins_sim.html#module_xml__ins_sim", null ]
       ] ]
     ] ],

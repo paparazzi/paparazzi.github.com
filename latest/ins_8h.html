@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('ins_8h.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ins.h File Reference</div>  </div>
@@ -96,7 +97,6 @@ $(document).ready(function(){initNavTree('ins_8h.html',''); initResizable(); });
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__int_8h_source.html">math/pprz_geodetic_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,22 +104,19 @@ $(document).ready(function(){initNavTree('ins_8h.html',''); initResizable(); });
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2ins_2ins_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2ins_2ins_8h" id="asw_2airborne_2modules_2ins_2ins_8h">
-<area shape="rect" title="Integrated Navigation System interface." alt="" coords="215,5,374,47"/>
-<area shape="rect" title=" " alt="" coords="435,408,490,435"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="43,169,194,211"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="649,259,841,285"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="411,95,477,121"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="325,259,451,285"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="158,259,301,285"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="627,333,783,360"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="151,333,305,360"/>
-<area shape="rect" title=" " alt="" coords="329,333,399,360"/>
-<area shape="rect" title=" " alt="" coords="899,408,962,435"/>
-<area shape="rect" title=" " alt="" coords="1041,408,1111,435"/>
-<area shape="rect" title=" " alt="" coords="698,408,766,435"/>
-<area shape="rect" title=" " alt="" coords="859,333,1016,360"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="461,169,611,211"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="270,169,437,211"/>
+<area shape="rect" title="Integrated Navigation System interface." alt="" coords="110,5,269,47"/>
+<area shape="rect" title=" " alt="" coords="213,333,267,360"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="114,95,265,136"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="648,184,840,211"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="27,184,152,211"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="283,184,426,211"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="550,259,706,285"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="278,259,431,285"/>
+<area shape="rect" title=" " alt="" coords="455,259,526,285"/>
+<area shape="rect" title=" " alt="" coords="674,333,737,360"/>
+<area shape="rect" title=" " alt="" coords="579,333,650,360"/>
+<area shape="rect" title=" " alt="" coords="761,333,829,360"/>
+<area shape="rect" title=" " alt="" coords="832,259,989,285"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -157,45 +154,109 @@ $(document).ready(function(){initNavTree('ins_8h.html',''); initResizable(); });
 <area shape="rect" href="ins__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="1389,184,1558,240"/>
 <area shape="rect" href="ins__float__invariant__wrapper_8c.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="1389,288,1558,344"/>
 <area shape="rect" href="ins__flow_8c.html" title=" " alt="" coords="1582,191,1741,233"/>
-<area shape="rect" href="ins__int_8c.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="2205,191,2363,233"/>
-<area shape="rect" href="ahrs__chimu_8h.html" title=" " alt="" coords="2387,191,2546,233"/>
-<area shape="rect" href="ahrs__chimu__spi_8c.html" title=" " alt="" coords="2440,295,2611,337"/>
-<area shape="rect" href="ahrs__chimu__uart_8c.html" title=" " alt="" coords="2622,191,2799,233"/>
-<area shape="rect" href="ins__skeleton_8c.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="2823,191,2982,233"/>
-<area shape="rect" href="ins__vectornav_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3006,191,3165,233"/>
-<area shape="rect" href="ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3189,191,3400,233"/>
-<area shape="rect" href="ins__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3189,295,3400,337"/>
+<area shape="rect" href="ins__int_8c.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="2207,191,2366,233"/>
+<area shape="rect" href="ins__skeleton_8c.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="2814,191,2973,233"/>
+<area shape="rect" href="ins__vectornav_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2997,191,3155,233"/>
+<area shape="rect" href="ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3180,191,3391,233"/>
+<area shape="rect" href="ins__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3180,295,3391,337"/>
 <area shape="rect" href="nav_8c.html" title="Fixedwing functions to compute navigation." alt="" coords="3541,191,3707,233"/>
 </map>
 </div>
 </div>
 <p><a href="ins_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a934c1d2f20ce5164fcd1e20713707fe8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a934c1d2f20ce5164fcd1e20713707fe8">INS_RESET_REF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a934c1d2f20ce5164fcd1e20713707fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">flags for INS reset  <a href="ins_8h.html#a934c1d2f20ce5164fcd1e20713707fe8">More...</a><br /></td></tr>
+<tr class="separator:a934c1d2f20ce5164fcd1e20713707fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a079e7dfbbc74783ed6824551bfd395"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a2a079e7dfbbc74783ed6824551bfd395">INS_RESET_VERTICAL_REF</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a2a079e7dfbbc74783ed6824551bfd395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f7a23c753c62fc508477b3dc4e132c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a44f7a23c753c62fc508477b3dc4e132c">INS_RESET_VERTICAL_POS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a44f7a23c753c62fc508477b3dc4e132c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc56ebae0ecb48d1d9117e3ca8ec2961"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#acc56ebae0ecb48d1d9117e3ca8ec2961">INS_RESET_UTM_ZONE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:acc56ebae0ecb48d1d9117e3ca8ec2961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a14cb66a86c67d8b9216a8c12f58c311b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_reset_local_origin</a> (void)</td></tr>
-<tr class="memdesc:a14cb66a86c67d8b9216a8c12f58c311b"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS local origin reset.  <a href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b">More...</a><br /></td></tr>
-<tr class="separator:a14cb66a86c67d8b9216a8c12f58c311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa389e650ab7aa5a7f4650afde6358d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">ins_reset_altitude_ref</a> (void)</td></tr>
-<tr class="memdesc:aa389e650ab7aa5a7f4650afde6358d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS altitude reference reset.  <a href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">More...</a><br /></td></tr>
-<tr class="separator:aa389e650ab7aa5a7f4650afde6358d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a209f27fb545f1034247e2cfbc0dd2214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a209f27fb545f1034247e2cfbc0dd2214">ins_reset_vertical_pos</a> (void)</td></tr>
-<tr class="memdesc:a209f27fb545f1034247e2cfbc0dd2214"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS vertical position reset.  <a href="ins_8h.html#a209f27fb545f1034247e2cfbc0dd2214">More...</a><br /></td></tr>
-<tr class="separator:a209f27fb545f1034247e2cfbc0dd2214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef690805a610864d3aa76b10d138298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#acef690805a610864d3aa76b10d138298">ins_reset_utm_zone</a> (struct <a class="el" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a> *utm)</td></tr>
-<tr class="memdesc:acef690805a610864d3aa76b10d138298"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS utm zone reset.  <a href="ins_8h.html#acef690805a610864d3aa76b10d138298">More...</a><br /></td></tr>
-<tr class="separator:acef690805a610864d3aa76b10d138298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9ba03cf9d41e4536c73f218d3439e76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76">ins_init_origin_i_from_flightplan</a> (struct <a class="el" href="group__math__geodetic__int.html#structLtpDef__i">LtpDef_i</a> *<a class="el" href="gps__datalink_8c.html#ae45b690c21285f18321b1a319823e7a6">ltp_def</a>)</td></tr>
-<tr class="memdesc:ac9ba03cf9d41e4536c73f218d3439e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the local origin (ltp_def in fixed point) from flight plan position  <a href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76">More...</a><br /></td></tr>
-<tr class="separator:ac9ba03cf9d41e4536c73f218d3439e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8475390022276357e9dc950539afc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a6d8475390022276357e9dc950539afc4">ins_init_origin_i_from_flightplan</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> id, struct <a class="el" href="group__math__geodetic__int.html#structLtpDef__i">LtpDef_i</a> *<a class="el" href="gps__datalink_8c.html#ae45b690c21285f18321b1a319823e7a6">ltp_def</a>)</td></tr>
+<tr class="memdesc:a6d8475390022276357e9dc950539afc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the local origin (ltp_def in fixed point) from flight plan position  <a href="ins_8h.html#a6d8475390022276357e9dc950539afc4">More...</a><br /></td></tr>
+<tr class="separator:a6d8475390022276357e9dc950539afc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Integrated Navigation System interface. </p>
 
 <p class="definition">Definition in file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac9ba03cf9d41e4536c73f218d3439e76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9ba03cf9d41e4536c73f218d3439e76">&#9670;&nbsp;</a></span>ins_init_origin_i_from_flightplan()</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a934c1d2f20ce5164fcd1e20713707fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934c1d2f20ce5164fcd1e20713707fe8">&#9670;&nbsp;</a></span>INS_RESET_REF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INS_RESET_REF&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>flags for INS reset </p>
+
+<p class="definition">Definition at line <a class="el" href="ins_8h_source.html#l00036">36</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
+
+</div>
+</div>
+<a id="acc56ebae0ecb48d1d9117e3ca8ec2961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc56ebae0ecb48d1d9117e3ca8ec2961">&#9670;&nbsp;</a></span>INS_RESET_UTM_ZONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INS_RESET_UTM_ZONE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ins_8h_source.html#l00039">39</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
+
+</div>
+</div>
+<a id="a44f7a23c753c62fc508477b3dc4e132c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f7a23c753c62fc508477b3dc4e132c">&#9670;&nbsp;</a></span>INS_RESET_VERTICAL_POS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INS_RESET_VERTICAL_POS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ins_8h_source.html#l00038">38</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
+
+</div>
+</div>
+<a id="a2a079e7dfbbc74783ed6824551bfd395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a079e7dfbbc74783ed6824551bfd395">&#9670;&nbsp;</a></span>INS_RESET_VERTICAL_REF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INS_RESET_VERTICAL_REF&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ins_8h_source.html#l00037">37</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a6d8475390022276357e9dc950539afc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8475390022276357e9dc950539afc4">&#9670;&nbsp;</a></span>ins_init_origin_i_from_flightplan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,30 +264,40 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void ins_init_origin_i_from_flightplan </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__math__geodetic__int.html#structLtpDef__i">LtpDef_i</a> *&#160;</td>
-          <td class="paramname"><em>ltp_def</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__geodetic__int.html#structLtpDef__i">LtpDef_i</a> *&#160;</td>
+          <td class="paramname"><em>ltp_def</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>initialize the local origin (ltp_def in fixed point) from flight plan position </p>
 
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00039">39</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00033">33</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, and <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, and <a class="el" href="state_8h_source.html#l00519">stateSetLocalOrigin_i()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__int_8c_source.html#l00203">ins_int_init()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00214">ins_module_wrapper_init()</a>, and <a class="el" href="ins__vectornav_8c_source.html#l00167">ins_vectornav_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__int_8c_source.html#l00207">ins_int_init()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00212">ins_module_wrapper_init()</a>, and <a class="el" href="ins__vectornav_8c_source.html#l00167">ins_vectornav_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_ac9ba03cf9d41e4536c73f218d3439e76_cgraph.png" border="0" usemap="#ains_8h_ac9ba03cf9d41e4536c73f218d3439e76_cgraph" alt=""/></div>
-<map name="ains_8h_ac9ba03cf9d41e4536c73f218d3439e76_cgraph" id="ains_8h_ac9ba03cf9d41e4536c73f218d3439e76_cgraph">
+<div class="center"><img src="ins_8h_a6d8475390022276357e9dc950539afc4_cgraph.png" border="0" usemap="#ains_8h_a6d8475390022276357e9dc950539afc4_cgraph" alt=""/></div>
+<map name="ains_8h_a6d8475390022276357e9dc950539afc4_cgraph" id="ains_8h_a6d8475390022276357e9dc950539afc4_cgraph">
 <area shape="rect" title="initialize the local origin (ltp_def in fixed point) from flight plan position" alt="" coords="5,78,168,119"/>
 <area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="227,60,365,87"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="216,111,376,137"/>
+<area shape="rect" href="group__state__position.html#ga42ec780d70c42ac75c6e214533b3204c" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="216,111,376,137"/>
 <area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="457,31,561,57"/>
 <area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="424,82,595,123"/>
 <area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="643,5,751,32"/>
@@ -238,8 +309,8 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_ac9ba03cf9d41e4536c73f218d3439e76_icgraph.png" border="0" usemap="#ains_8h_ac9ba03cf9d41e4536c73f218d3439e76_icgraph" alt=""/></div>
-<map name="ains_8h_ac9ba03cf9d41e4536c73f218d3439e76_icgraph" id="ains_8h_ac9ba03cf9d41e4536c73f218d3439e76_icgraph">
+<div class="center"><img src="ins_8h_a6d8475390022276357e9dc950539afc4_icgraph.png" border="0" usemap="#ains_8h_a6d8475390022276357e9dc950539afc4_icgraph" alt=""/></div>
+<map name="ains_8h_a6d8475390022276357e9dc950539afc4_icgraph" id="ains_8h_a6d8475390022276357e9dc950539afc4_icgraph">
 <area shape="rect" title="initialize the local origin (ltp_def in fixed point) from flight plan position" alt="" coords="239,49,401,90"/>
 <area shape="rect" href="ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="51,5,145,32"/>
 <area shape="rect" href="ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="5,56,191,83"/>
@@ -249,225 +320,13 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa389e650ab7aa5a7f4650afde6358d86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa389e650ab7aa5a7f4650afde6358d86">&#9670;&nbsp;</a></span>ins_reset_altitude_ref()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_reset_altitude_ref </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>INS altitude reference reset. </p>
-<p>Reset only vertical reference to the current altitude. Does nothing if not implemented by specific INS algorithm. </p>
-
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00065">65</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00309">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00311">ekf2</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00176">GpsFixValid</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::hmsl</a>, <a class="el" href="ins__alt__float_8c_source.html#l00053">ins_altf</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00137">ins_float_inv</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00059">ins_gp</a>, <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8c_source.html#l00436">lla_int_from_gps()</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::ltp_def</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00050">InsGpsPassthrough::ltp_def</a>, <a class="el" href="ins__int_8h_source.html#l00040">InsInt::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__alt__float_8h_source.html#l00041">InsAltFloat::reset_alt_ref</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00233">State::utm_origin_f</a>, <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00241">nav_reset_alt()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph.png" border="0" usemap="#ains_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph" alt=""/></div>
-<map name="ains_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph" id="ains_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph">
-<area shape="rect" title="INS altitude reference reset." alt="" coords="5,85,168,112"/>
-<area shape="rect" href="gps_8c.html#a5d388b9aaf3cf2b7eee50ab6581fb0fe" title="Get GPS lla (integer) Converted on the fly if not available." alt="" coords="245,9,376,36"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="241,60,380,87"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="231,111,391,137"/>
-<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="216,161,405,188"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="487,31,591,57"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="453,82,624,123"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="672,5,780,32"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="673,56,779,83"/>
-</map>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_aa389e650ab7aa5a7f4650afde6358d86_icgraph.png" border="0" usemap="#ains_8h_aa389e650ab7aa5a7f4650afde6358d86_icgraph" alt=""/></div>
-<map name="ains_8h_aa389e650ab7aa5a7f4650afde6358d86_icgraph" id="ains_8h_aa389e650ab7aa5a7f4650afde6358d86_icgraph">
-<area shape="rect" title="INS altitude reference reset." alt="" coords="164,5,327,32"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#a3288149314aa748ce8aa507335f50bfd" title=" " alt="" coords="5,5,116,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a14cb66a86c67d8b9216a8c12f58c311b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14cb66a86c67d8b9216a8c12f58c311b">&#9670;&nbsp;</a></span>ins_reset_local_origin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_reset_local_origin </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>INS local origin reset. </p>
-<p>Reset horizontal and vertical reference to the current position. Does nothing if not implemented by specific INS algorithm.</p>
-<p>INS local origin reset. </p>
-
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00055">55</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8c_source.html#l00465">ecef_int_from_gps()</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ecef_pos</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00309">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00311">ekf2</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00161">FLOAT_VECT3_ZERO</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00176">GpsFixValid</a>, <a class="el" href="ins__int_8h_source.html#l00048">InsInt::hf_realign</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::hmsl</a>, <a class="el" href="ins__alt__float_8c_source.html#l00053">ins_altf</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00137">ins_float_inv</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00059">ins_gp</a>, <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00046">ins_mekf_wind_wrapper_Reset</a>, <a class="el" href="ins__skeleton_8c_source.html#l00070">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00189">ins_module_reset_local_origin()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8c_source.html#l00436">lla_int_from_gps()</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_def</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00050">InsGpsPassthrough::ltp_def</a>, <a class="el" href="ins__int_8h_source.html#l00040">InsInt::ltp_def</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00142">InsFlow::ltp_initialized</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00051">InsGpsPassthrough::ltp_initialized</a>, <a class="el" href="ins__int_8h_source.html#l00041">InsInt::ltp_initialized</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, <a class="el" href="ins__alt__float_8h_source.html#l00042">InsAltFloat::origin_initialized</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__alt__float_8h_source.html#l00041">InsAltFloat::reset_alt_ref</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="gps_8c_source.html#l00549">utm_float_from_gps()</a>, and <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01493">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00201">ins_alt_float_update_gps()</a>, <a class="el" href="ins__int_8c_source.html#l00399">ins_int_update_gps()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00234">nav_reset_reference()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph.png" border="0" usemap="#ains_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" alt=""/></div>
-<map name="ains_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" id="ains_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph">
-<area shape="rect" title="INS local origin reset." alt="" coords="5,199,168,225"/>
-<area shape="rect" href="gps_8c.html#aa1cf7efa927fe3fe8a07e97f8e58b746" title="Get GPS ecef pos (integer) Converted on the fly if not available." alt="" coords="239,5,382,32"/>
-<area shape="rect" href="ins__skeleton_8c.html#a2bd55249dfa83c5c38b83adb0d581697" title=" " alt="" coords="223,57,398,98"/>
-<area shape="rect" href="gps_8c.html#a5d388b9aaf3cf2b7eee50ab6581fb0fe" title="Get GPS lla (integer) Converted on the fly if not available." alt="" coords="245,123,376,149"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title=" " alt="" coords="235,173,386,200"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="241,224,380,251"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="231,275,391,301"/>
-<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="216,325,405,352"/>
-<area shape="rect" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="235,376,387,403"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="487,140,591,167"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="453,191,624,233"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="672,107,780,133"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="673,157,779,184"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="487,257,591,284"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="672,224,780,251"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="673,275,779,301"/>
-</map>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_a14cb66a86c67d8b9216a8c12f58c311b_icgraph.png" border="0" usemap="#ains_8h_a14cb66a86c67d8b9216a8c12f58c311b_icgraph" alt=""/></div>
-<map name="ains_8h_a14cb66a86c67d8b9216a8c12f58c311b_icgraph" id="ains_8h_a14cb66a86c67d8b9216a8c12f58c311b_icgraph">
-<area shape="rect" title="INS local origin reset." alt="" coords="564,81,727,108"/>
-<area shape="rect" href="ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="391,5,458,32"/>
-<area shape="rect" href="ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title=" " alt="" coords="333,56,516,83"/>
-<area shape="rect" href="ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="351,107,498,133"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#a1886ff619a5c03dc6c54729f301fa62e" title="Reset the geographic reference to the current GPS fix." alt="" coords="347,157,502,184"/>
-<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="183,5,285,32"/>
-<area shape="rect" href="ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="201,56,267,83"/>
-<area shape="rect" href="ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="5,56,135,83"/>
-<area shape="rect" href="ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="201,107,267,133"/>
-<area shape="rect" href="ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="23,107,117,133"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="acef690805a610864d3aa76b10d138298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acef690805a610864d3aa76b10d138298">&#9670;&nbsp;</a></span>ins_reset_utm_zone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_reset_utm_zone </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a> *&#160;</td>
-          <td class="paramname"><em>utm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>INS utm zone reset. </p>
-<p>Reset UTM zone according the the actual position. Only used with fixedwing firmware. Can be overwritte by specifc INS implementation. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">utm</td><td>initial utm zone, returns the corrected utm position </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00070">70</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
-
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00344">lla_of_utm_f()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00087">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00102">nav_reset_utm_zone()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_acef690805a610864d3aa76b10d138298_cgraph.png" border="0" usemap="#ains_8h_acef690805a610864d3aa76b10d138298_cgraph" alt=""/></div>
-<map name="ains_8h_acef690805a610864d3aa76b10d138298_cgraph" id="ains_8h_acef690805a610864d3aa76b10d138298_cgraph">
-<area shape="rect" title="INS utm zone reset." alt="" coords="5,64,157,91"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="249,13,351,40"/>
-<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="205,64,395,91"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="249,115,351,141"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="443,5,649,32"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="476,57,616,98"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="470,123,622,149"/>
-</map>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins_8h_acef690805a610864d3aa76b10d138298_icgraph.png" border="0" usemap="#ains_8h_acef690805a610864d3aa76b10d138298_icgraph" alt=""/></div>
-<map name="ains_8h_acef690805a610864d3aa76b10d138298_icgraph" id="ains_8h_acef690805a610864d3aa76b10d138298_icgraph">
-<area shape="rect" title="INS utm zone reset." alt="" coords="211,5,363,32"/>
-<area shape="rect" href="common__nav_8c.html#a9147dda4ed788fcde6cbb065e304e037" title="Reset the UTM zone to current GPS fix." alt="" coords="5,5,163,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a209f27fb545f1034247e2cfbc0dd2214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a209f27fb545f1034247e2cfbc0dd2214">&#9670;&nbsp;</a></span>ins_reset_vertical_pos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_reset_vertical_pos </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>INS vertical position reset. </p>
-<p>Reset only vertical position to zero. Does nothing if not implemented by specific INS algorithm. </p>
-
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00067">67</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, and <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins_8h.html">ins.h</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

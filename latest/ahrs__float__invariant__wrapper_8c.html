@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('ahrs__float__invariant__wrapper_8c.htm
 <map name="asw_2airborne_2modules_2ahrs_2ahrs__float__invariant__wrapper_8c" id="asw_2airborne_2modules_2ahrs_2ahrs__float__invariant__wrapper_8c">
 <area shape="rect" title="Paparazzi specific wrapper to run INVARIANT ahrs filter." alt="" coords="973,5,1160,61"/>
 <area shape="rect" href="ahrs__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT ahrs filter." alt="" coords="451,109,629,151"/>
-<area shape="rect" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations." alt="" coords="989,295,1144,322"/>
+<area shape="rect" href="ahrs_8h.html" title=" " alt="" coords="989,295,1144,322"/>
 <area shape="rect" title=" " alt="" coords="5,467,163,493"/>
 <area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1472,117,1619,143"/>
 <area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1196,295,1369,322"/>
@@ -154,8 +154,6 @@ $(document).ready(function(){initNavTree('ahrs__float__invariant__wrapper_8c.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac0c3f70d716ce73823ecd1877f179499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#ac0c3f70d716ce73823ecd1877f179499">AHRS_FINV_OUTPUT_ENABLED</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
-<tr class="separator:ac0c3f70d716ce73823ecd1877f179499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0a2caafc4d04f6a85a695cc57359194"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#aa0a2caafc4d04f6a85a695cc57359194">AHRS_FINV_IMU_ID</a>&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td></tr>
 <tr class="memdesc:aa0a2caafc4d04f6a85a695cc57359194"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMU (gyro, accel)  <a href="ahrs__float__invariant__wrapper_8c.html#aa0a2caafc4d04f6a85a695cc57359194">More...</a><br /></td></tr>
 <tr class="separator:aa0a2caafc4d04f6a85a695cc57359194"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,16 +183,15 @@ Functions</h2></td></tr>
 <tr class="separator:abb508f672663ab1485eae5b9e1799f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e8744a32b22245ff10f367b2b7c6b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3">geo_mag_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">h</a>)</td></tr>
 <tr class="separator:ab4e8744a32b22245ff10f367b2b7c6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde602ba3d2f60b53ed5df45d5663b7a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#acde602ba3d2f60b53ed5df45d5663b7a">ahrs_float_invariant_enable_output</a> (bool enable)</td></tr>
-<tr class="separator:acde602ba3d2f60b53ed5df45d5663b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af929b6f9cb8695819d29bdacca1f24f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0">ahrs_float_invariant_register</a> (void)</td></tr>
-<tr class="separator:af929b6f9cb8695819d29bdacca1f24f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e905958a1cda4561a50727d1bd5b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71">ahrs_finv_wrapper_init</a> (void)</td></tr>
+<tr class="separator:a24e905958a1cda4561a50727d1bd5b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544a5ae54f93325b8dfe7c420a4deddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#a544a5ae54f93325b8dfe7c420a4deddd">ahrs_float_invariant_wrapper_enable</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> enable)</td></tr>
+<tr class="separator:a544a5ae54f93325b8dfe7c420a4deddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad07deb30efa690c6021f4ac7f099fe08"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#ad07deb30efa690c6021f4ac7f099fe08">ahrs_finv_output_enabled</a></td></tr>
-<tr class="memdesc:ad07deb30efa690c6021f4ac7f099fe08"><td class="mdescLeft">&#160;</td><td class="mdescRight">if TRUE with push the estimation results to the state interface  <a href="ahrs__float__invariant__wrapper_8c.html#ad07deb30efa690c6021f4ac7f099fe08">More...</a><br /></td></tr>
-<tr class="separator:ad07deb30efa690c6021f4ac7f099fe08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fde29b3ce49a842232ba43b8c94e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#a19fde29b3ce49a842232ba43b8c94e82">ahrs_finv_enable</a></td></tr>
+<tr class="separator:a19fde29b3ce49a842232ba43b8c94e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d78d46db1d431dd8ca692dcfc791455"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__invariant__wrapper_8c.html#a2d78d46db1d431dd8ca692dcfc791455">ahrs_finv_last_stamp</a> = 0</td></tr>
 <tr class="memdesc:a2d78d46db1d431dd8ca692dcfc791455"><td class="mdescLeft">&#160;</td><td class="mdescRight">last gyro msg timestamp  <a href="ahrs__float__invariant__wrapper_8c.html#a2d78d46db1d431dd8ca692dcfc791455">More...</a><br /></td></tr>
 <tr class="separator:a2d78d46db1d431dd8ca692dcfc791455"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +227,7 @@ Variables</h2></td></tr>
 
 <p>IMU (gyro, accel) </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00095">95</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00091">91</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
 </div>
 </div>
@@ -248,23 +245,7 @@ Variables</h2></td></tr>
 
 <p>magnetometer </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00101">101</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
-
-</div>
-</div>
-<a id="ac0c3f70d716ce73823ecd1877f179499"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0c3f70d716ce73823ecd1877f179499">&#9670;&nbsp;</a></span>AHRS_FINV_OUTPUT_ENABLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AHRS_FINV_OUTPUT_ENABLED&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00036">36</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00097">97</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
 </div>
 </div>
@@ -309,11 +290,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00146">146</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00142">142</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00228">ahrs_float_invariant_update_accel()</a>, and <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -332,64 +313,21 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph" id="aahrs__float__invariant__wrapper_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,283,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,301,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="acde602ba3d2f60b53ed5df45d5663b7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acde602ba3d2f60b53ed5df45d5663b7a">&#9670;&nbsp;</a></span>ahrs_float_invariant_enable_output()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool ahrs_float_invariant_enable_output </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00191">191</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00041">ahrs_finv_output_enabled</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__invariant__wrapper_8c_acde602ba3d2f60b53ed5df45d5663b7a_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_acde602ba3d2f60b53ed5df45d5663b7a_icgraph" alt=""/></div>
-<map name="aahrs__float__invariant__wrapper_8c_acde602ba3d2f60b53ed5df45d5663b7a_icgraph" id="aahrs__float__invariant__wrapper_8c_acde602ba3d2f60b53ed5df45d5663b7a_icgraph">
-<area shape="rect" title=" " alt="" coords="204,5,355,47"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="af929b6f9cb8695819d29bdacca1f24f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af929b6f9cb8695819d29bdacca1f24f0">&#9670;&nbsp;</a></span>ahrs_float_invariant_register()</h2>
+<a id="a24e905958a1cda4561a50727d1bd5b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e905958a1cda4561a50727d1bd5b71">&#9670;&nbsp;</a></span>ahrs_finv_wrapper_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_float_invariant_register </td>
+          <td class="memname">void ahrs_finv_wrapper_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -398,66 +336,112 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">214</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">202</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00058">ABI_BROADCAST</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00146">accel_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00107">accel_ev</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00095">AHRS_FINV_IMU_ID</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00101">AHRS_FINV_MAG_ID</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00036">AHRS_FINV_OUTPUT_ENABLED</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00041">ahrs_finv_output_enabled</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00191">ahrs_float_invariant_enable_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00131">ahrs_float_invariant_init()</a>, <a class="el" href="ahrs_8c_source.html#l00062">ahrs_register_impl()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00168">aligner_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00108">aligner_ev</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00186">geo_mag_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00109">geo_mag_ev</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00116">gyro_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00106">gyro_ev</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00157">mag_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00105">mag_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00051">send_att()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00077">send_filter_status()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00069">send_geo_mag()</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00058">ABI_BROADCAST</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00142">accel_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00103">accel_ev</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00091">AHRS_FINV_IMU_ID</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00097">AHRS_FINV_MAG_ID</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00131">ahrs_float_invariant_init()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00227">ahrs_float_invariant_wrapper_enable()</a>, <a class="el" href="ahrs_8h_source.html#l00032">AHRS_PRIMARY</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00164">aligner_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00104">aligner_ev</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00182">geo_mag_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00105">geo_mag_ev</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00112">gyro_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00102">gyro_ev</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00153">mag_cb()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00101">mag_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00047">send_att()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00073">send_filter_status()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00065">send_geo_mag()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__float__invariant__wrapper_8c_a24e905958a1cda4561a50727d1bd5b71_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a24e905958a1cda4561a50727d1bd5b71_cgraph" alt=""/></div>
+<map name="aahrs__float__invariant__wrapper_8c_a24e905958a1cda4561a50727d1bd5b71_cgraph" id="aahrs__float__invariant__wrapper_8c_a24e905958a1cda4561a50727d1bd5b71_cgraph">
+<area shape="rect" title=" " alt="" coords="5,407,175,433"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="285,67,363,93"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#ab5d132b80575171fde6e0cbcfbba025a" title=" " alt="" coords="482,349,661,376"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a544a5ae54f93325b8dfe7c420a4deddd" title=" " alt="" coords="249,126,399,167"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="279,291,369,317"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3" title=" " alt="" coords="272,208,376,235"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="287,407,361,433"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="287,457,361,484"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="223,508,425,535"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title=" " alt="" coords="285,559,363,585"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a85585514fc863f0407a3f5e85ad9d398" title=" " alt="" coords="255,609,393,636"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a75bc5b3d5a5f89d58c4127b5d729599a" title=" " alt="" coords="264,660,384,687"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#adf04601dfa1d9de3b52a803d96f5ed2a" title=" " alt="" coords="496,50,647,91"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title=" " alt="" coords="739,341,887,368"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="977,341,1121,368"/>
+<area shape="rect" href="group__state__interface.html#ga7403b6b3d463d71a8356f93b60dda4e9" title="set the input filter for a specified type of data." alt="" coords="500,116,643,143"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#a4111f176cb3e28593c2ff388169a86f9" title=" " alt="" coords="496,218,647,259"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="473,283,669,325"/>
+<area shape="rect" href="ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title=" " alt="" coords="738,145,889,186"/>
+<area shape="rect" href="ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement." alt="" coords="973,174,1124,215"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1202,236,1361,263"/>
+<area shape="rect" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="963,57,1134,98"/>
+<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="976,5,1121,32"/>
+<area shape="rect" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="957,123,1140,149"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place" alt="" coords="1198,181,1365,208"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="1426,236,1554,263"/>
+<area shape="rect" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title=" " alt="" coords="1423,181,1557,208"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="1216,39,1347,65"/>
+<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="1188,89,1375,116"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="734,240,893,267"/>
+<area shape="rect" href="group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="717,291,909,317"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="970,291,1127,317"/>
+<area shape="rect" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="552,167,591,193"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="496,401,647,442"/>
+<area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="493,467,649,493"/>
+<area shape="rect" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="495,517,647,544"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#a87598eb88ed06febda6397f5fbb5c937" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error )" alt="" coords="762,443,865,469"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="736,696,891,723"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="749,544,877,571"/>
+<area shape="rect" href="pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta." alt="" coords="738,645,889,672"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title=" " alt="" coords="983,443,1115,469"/>
+<area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="983,493,1115,520"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="969,645,1129,672"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion." alt="" coords="967,544,1131,571"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="988,595,1109,621"/>
+<area shape="rect" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="990,696,1107,723"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="986,747,1111,773"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="988,797,1109,824"/>
+<area shape="rect" href="ahrs__float__invariant_8c.html#af934d0ab33f95b74c4a59bcf3532d736" title=" " alt="" coords="496,569,647,610"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="498,685,645,712"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a544a5ae54f93325b8dfe7c420a4deddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544a5ae54f93325b8dfe7c420a4deddd">&#9670;&nbsp;</a></span>ahrs_float_invariant_wrapper_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ahrs_float_invariant_wrapper_enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00227">227</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00037">ahrs_finv_enable</a>, <a class="el" href="state_8h_source.html#l00144">STATE_INPUT_ATTITUDE</a>, <a class="el" href="state_8h_source.html#l00145">STATE_INPUT_RATES</a>, and <a class="el" href="state_8c_source.html#l00085">stateSetInputFilter()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__invariant__wrapper_8c_af929b6f9cb8695819d29bdacca1f24f0_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_af929b6f9cb8695819d29bdacca1f24f0_cgraph" alt=""/></div>
-<map name="aahrs__float__invariant__wrapper_8c_af929b6f9cb8695819d29bdacca1f24f0_cgraph" id="aahrs__float__invariant__wrapper_8c_af929b6f9cb8695819d29bdacca1f24f0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,505,156,546"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="266,177,345,204"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#acde602ba3d2f60b53ed5df45d5663b7a" title=" " alt="" coords="230,241,381,282"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#ab5d132b80575171fde6e0cbcfbba025a" title=" " alt="" coords="463,359,642,385"/>
-<area shape="rect" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation." alt="" coords="234,537,377,564"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="261,307,350,333"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3" title=" " alt="" coords="253,588,357,615"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="269,436,342,463"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="269,639,342,665"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="204,689,407,716"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title=" " alt="" coords="513,577,592,604"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a85585514fc863f0407a3f5e85ad9d398" title=" " alt="" coords="237,740,374,767"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a75bc5b3d5a5f89d58c4127b5d729599a" title=" " alt="" coords="245,791,365,817"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#adf04601dfa1d9de3b52a803d96f5ed2a" title=" " alt="" coords="477,162,628,203"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title=" " alt="" coords="721,359,869,385"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="958,359,1102,385"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#a4111f176cb3e28593c2ff388169a86f9" title=" " alt="" coords="477,227,628,269"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="455,293,651,334"/>
-<area shape="rect" href="ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title=" " alt="" coords="719,158,870,199"/>
-<area shape="rect" href="ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement." alt="" coords="955,242,1105,283"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1183,195,1342,221"/>
-<area shape="rect" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="945,23,1115,65"/>
-<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="957,89,1103,116"/>
-<area shape="rect" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="939,140,1121,167"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place" alt="" coords="1179,249,1346,276"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="1407,195,1535,221"/>
-<area shape="rect" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title=" " alt="" coords="1404,249,1539,276"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="1197,5,1328,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="1169,56,1356,83"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="715,257,874,284"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="699,308,891,335"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="951,308,1109,335"/>
-<area shape="rect" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="533,628,572,655"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="477,511,628,553"/>
-<area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="475,409,631,436"/>
-<area shape="rect" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="477,460,629,487"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#a87598eb88ed06febda6397f5fbb5c937" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error )" alt="" coords="743,688,846,715"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="717,739,872,765"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="731,637,859,664"/>
-<area shape="rect" href="pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta." alt="" coords="719,515,870,541"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title=" " alt="" coords="964,815,1096,841"/>
-<area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="964,764,1096,791"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="950,612,1110,639"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion." alt="" coords="948,663,1112,689"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="969,713,1091,740"/>
-<area shape="rect" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="971,561,1089,588"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="967,460,1093,487"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="969,511,1091,537"/>
-<area shape="rect" href="ahrs__float__invariant_8c.html#af934d0ab33f95b74c4a59bcf3532d736" title=" " alt="" coords="477,679,628,721"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="479,745,626,772"/>
+<div class="center"><img src="ahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_cgraph" alt=""/></div>
+<map name="aahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_cgraph" id="aahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="group__state__interface.html#ga7403b6b3d463d71a8356f93b60dda4e9" title="set the input filter for a specified type of data." alt="" coords="204,13,347,39"/>
+</map>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_icgraph" alt=""/></div>
+<map name="aahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_icgraph" id="aahrs__float__invariant__wrapper_8c_a544a5ae54f93325b8dfe7c420a4deddd_icgraph">
+<area shape="rect" title=" " alt="" coords="223,5,373,47"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,13,175,39"/>
 </map>
 </div>
 
@@ -515,16 +499,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00168">168</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00164">164</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00156">ahrs_float_invariant_align()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00200">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00156">ahrs_float_invariant_align()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00190">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_cgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_cgraph" id="aahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_cgraph">
 <area shape="rect" title=" " alt="" coords="5,248,95,275"/>
@@ -542,20 +526,20 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title=" " alt="" coords="1275,181,1417,208"/>
 <area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="885,68,1016,95"/>
 <area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="857,17,1044,44"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="403,331,562,357"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="387,280,579,307"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="403,331,562,357"/>
+<area shape="rect" href="group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="387,280,579,307"/>
 <area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="639,291,797,317"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_icgraph" id="aahrs__float__invariant__wrapper_8c_abb508f672663ab1485eae5b9e1799f21_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,293,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,312,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -587,35 +571,35 @@ Variables</h2></td></tr>
 
 <p>Compute body orientation and rates from imu orientation and rates. </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00200">200</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00190">190</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00041">ahrs_finv_output_enabled</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00042">inv_state::bias</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00095">AhrsFloatInv::cmd</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00065">inv_command::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00093">AhrsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01093">stateSetNedToBodyQuat_f()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00042">inv_state::bias</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00095">AhrsFloatInv::cmd</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00065">inv_command::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00093">AhrsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l01346">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01253">stateSetNedToBodyQuat_f()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00168">aligner_cb()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00116">gyro_cb()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph" alt=""/></div>
-<map name="aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph" id="aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph">
-<area shape="rect" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="5,23,201,65"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="266,5,425,32"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="249,56,441,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="489,56,647,83"/>
-</map>
-</div>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00164">aligner_cb()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00112">gyro_cb()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph" alt=""/></div>
+<map name="aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph" id="aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_cgraph">
+<area shape="rect" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="5,23,201,65"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="266,5,425,32"/>
+<area shape="rect" href="group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="249,56,441,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="489,56,647,83"/>
+</map>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_icgraph" id="aahrs__float__invariant__wrapper_8c_a2e90a05e5a4ca369d0308bb72e68171d_icgraph">
-<area shape="rect" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="341,23,537,65"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="204,5,293,32"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="212,56,285,83"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,23,156,65"/>
+<area shape="rect" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="360,23,556,65"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="223,5,312,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="231,56,304,83"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,31,175,57"/>
 </map>
 </div>
 
@@ -655,31 +639,31 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00186">186</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00182">182</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, and <a class="el" href="ahrs__float__invariant_8h_source.html#l00101">AhrsFloatInv::mag_h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_cgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_cgraph" id="aahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,109,32"/>
 <area shape="rect" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="157,5,196,32"/>
 </map>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_icgraph" id="aahrs__float__invariant__wrapper_8c_ab4e8744a32b22245ff10f367b2b7c6b3_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,308,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,327,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -728,16 +712,16 @@ Variables</h2></td></tr>
 <p>Call ahrs_float_invariant_propagate on new gyro measurements. </p>
 <p>Since acceleration measurement is also needed for propagation, use the last stored accel from #ahrs_finv_accel. </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00116">116</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00112">112</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00043">ahrs_finv_last_stamp</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00170">ahrs_float_invariant_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00055">AHRS_PROPAGATE_FREQUENCY</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00200">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00039">ahrs_finv_last_stamp</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00170">ahrs_float_invariant_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00055">AHRS_PROPAGATE_FREQUENCY</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00190">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph" id="aahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph">
 <area shape="rect" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="5,541,79,568"/>
@@ -761,20 +745,20 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="634,259,751,285"/>
 <area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="630,309,755,336"/>
 <area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="632,360,753,387"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="387,512,546,539"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="371,563,563,589"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="387,512,546,539"/>
+<area shape="rect" href="group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="371,563,563,589"/>
 <area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="614,563,771,589"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph" id="aahrs__float__invariant__wrapper_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph">
-<area shape="rect" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="204,13,277,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="223,5,296,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -820,31 +804,31 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00157">157</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00153">153</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00236">ahrs_float_invariant_update_mag()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_cgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_cgraph" id="aahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,79,39"/>
 <area shape="rect" href="ahrs__float__invariant_8c.html#af934d0ab33f95b74c4a59bcf3532d736" title=" " alt="" coords="127,5,277,47"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_icgraph" id="aahrs__float__invariant__wrapper_8c_a49cc1e545848b85016af530049991c02_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,277,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,296,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -884,31 +868,31 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00051">51</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00047">47</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00044">ahrs_finv_id</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra_8h_source.html#l00715">EULERS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00688">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00093">AhrsFloatInv::state</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00040">ahrs_finv_id</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra_8h_source.html#l00715">EULERS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00688">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00093">AhrsFloatInv::state</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph" id="aahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,84,32"/>
 <area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="132,5,287,32"/>
 </map>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph" id="aahrs__float__invariant__wrapper_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,283,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,301,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -948,31 +932,31 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00077">77</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00073">73</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00044">ahrs_finv_id</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00043">ahrs_finv_last_stamp</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00040">ahrs_finv_id</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00039">ahrs_finv_last_stamp</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00102">AhrsFloatInv::is_aligned</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_cgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_cgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_cgraph" id="aahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,143,32"/>
 <area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="191,5,337,32"/>
 </map>
 </div>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_icgraph" id="aahrs__float__invariant__wrapper_8c_a85585514fc863f0407a3f5e85ad9d398_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,341,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,360,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -1012,20 +996,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00069">69</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00065">65</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00044">ahrs_finv_id</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00101">AhrsFloatInv::mag_h</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00040">ahrs_finv_id</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00095">ahrs_float_inv</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00101">AhrsFloatInv::mag_h</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__invariant__wrapper_8c_a75bc5b3d5a5f89d58c4127b5d729599a_icgraph.png" border="0" usemap="#aahrs__float__invariant__wrapper_8c_a75bc5b3d5a5f89d58c4127b5d729599a_icgraph" alt=""/></div>
 <map name="aahrs__float__invariant__wrapper_8c_a75bc5b3d5a5f89d58c4127b5d729599a_icgraph" id="aahrs__float__invariant__wrapper_8c_a75bc5b3d5a5f89d58c4127b5d729599a_icgraph">
-<area shape="rect" title=" " alt="" coords="204,13,324,39"/>
-<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="223,5,343,32"/>
+<area shape="rect" href="ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
 
@@ -1052,9 +1036,27 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00107">107</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00103">103</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
+
+</div>
+</div>
+<a id="a19fde29b3ce49a842232ba43b8c94e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fde29b3ce49a842232ba43b8c94e82">&#9670;&nbsp;</a></span>ahrs_finv_enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ahrs_finv_enable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00037">37</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00227">ahrs_float_invariant_wrapper_enable()</a>.</p>
 
 </div>
 </div>
@@ -1078,9 +1080,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00044">44</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00040">40</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00051">send_att()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00077">send_filter_status()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00069">send_geo_mag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00047">send_att()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00073">send_filter_status()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00065">send_geo_mag()</a>.</p>
 
 </div>
 </div>
@@ -1106,37 +1108,9 @@ Variables</h2></td></tr>
 
 <p>last gyro msg timestamp </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00043">43</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00039">39</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00116">gyro_cb()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00077">send_filter_status()</a>.</p>
-
-</div>
-</div>
-<a id="ad07deb30efa690c6021f4ac7f099fe08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad07deb30efa690c6021f4ac7f099fe08">&#9670;&nbsp;</a></span>ahrs_finv_output_enabled</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ahrs_finv_output_enabled</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>if TRUE with push the estimation results to the state interface </p>
-
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00041">41</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00191">ahrs_float_invariant_enable_output()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00200">compute_body_orientation_and_rates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00112">gyro_cb()</a>, and <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00073">send_filter_status()</a>.</p>
 
 </div>
 </div>
@@ -1160,9 +1134,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00108">108</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00104">104</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1186,9 +1160,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00109">109</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00105">105</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1212,9 +1186,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00106">106</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00102">102</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1238,9 +1212,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00105">105</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00101">101</a> of file <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html">ahrs_float_invariant_wrapper.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00214">ahrs_float_invariant_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00202">ahrs_finv_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1224,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__invariant__wrapper_8c.html">ahrs_float_invariant_wrapper.c</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

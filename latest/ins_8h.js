@@ -1,8 +1,8 @@
 var ins_8h =
 [
-    [ "ins_init_origin_i_from_flightplan", "ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76", null ],
-    [ "ins_reset_altitude_ref", "ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
-    [ "ins_reset_local_origin", "ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
-    [ "ins_reset_utm_zone", "ins_8h.html#acef690805a610864d3aa76b10d138298", null ],
-    [ "ins_reset_vertical_pos", "ins_8h.html#a209f27fb545f1034247e2cfbc0dd2214", null ]
+    [ "INS_RESET_REF", "ins_8h.html#a934c1d2f20ce5164fcd1e20713707fe8", null ],
+    [ "INS_RESET_UTM_ZONE", "ins_8h.html#acc56ebae0ecb48d1d9117e3ca8ec2961", null ],
+    [ "INS_RESET_VERTICAL_POS", "ins_8h.html#a44f7a23c753c62fc508477b3dc4e132c", null ],
+    [ "INS_RESET_VERTICAL_REF", "ins_8h.html#a2a079e7dfbbc74783ed6824551bfd395", null ],
+    [ "ins_init_origin_i_from_flightplan", "ins_8h.html#a6d8475390022276357e9dc950539afc4", null ]
 ];

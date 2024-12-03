@@ -1,6 +1,5 @@
 var ahrs_8h =
 [
-    [ "AHRS_COMP_ID_CHIMU", "ahrs_8h.html#a6547cc8641774e01088b496e85b9eca5", null ],
     [ "AHRS_COMP_ID_DCM", "ahrs_8h.html#a5e8bd19f8579adcddf87b8db9e46285f", null ],
     [ "AHRS_COMP_ID_EKF2", "ahrs_8h.html#a6c0ffb77ca98604b9b7618e28cd12b8f", null ],
     [ "AHRS_COMP_ID_FC", "ahrs_8h.html#a6d60812743024c0df43b533fb8d382d8", null ],
@@ -15,9 +14,8 @@ var ahrs_8h =
     [ "AHRS_COMP_ID_MLKF", "ahrs_8h.html#a24e3083873a4d8d42003ad5d85bc3313", null ],
     [ "AHRS_COMP_ID_NONE", "ahrs_8h.html#a9c78aeef8865b35bc9a437b54e12dfe9", null ],
     [ "AHRS_COMP_ID_VECTORNAV", "ahrs_8h.html#a81b520c4344d0bb4d1534c79c72cf21f", null ],
-    [ "AhrsEnableOutput", "ahrs_8h.html#a0a63d1c89a30259dd98411413c5d9997", null ],
-    [ "ahrs_init", "ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb", null ],
-    [ "ahrs_register_impl", "ahrs_8h.html#a3d1e9af59a49b4a13e84adbb37d0efec", null ],
-    [ "ahrs_switch", "ahrs_8h.html#ad933997851f19f057be2d3c1d4b5b5d0", null ],
-    [ "ahrs_output_idx", "ahrs_8h.html#a55c10b138384c73b63df1f84cb75c4ff", null ]
+    [ "AHRS_DISABLE", "ahrs_8h.html#a893839b1b31c1c1d828124c40d0bf83d", null ],
+    [ "AHRS_PRIMARY", "ahrs_8h.html#aa8645346e4170f13b6e6209a4528b610", null ],
+    [ "AHRS_SECONDARY", "ahrs_8h.html#a783aff85f52bb8fc99b26c61fe88f312", null ],
+    [ "ahrs_init", "ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb", null ]
 ];

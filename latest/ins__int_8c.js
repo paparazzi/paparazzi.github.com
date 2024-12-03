@@ -21,11 +21,12 @@ var ins__int_8c =
     [ "ins_int_propagate", "ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29", null ],
     [ "ins_int_update_gps", "ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3", null ],
     [ "ins_ned_to_state", "ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e", null ],
-    [ "ins_reset_altitude_ref", "ins__int_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
-    [ "ins_reset_local_origin", "ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
-    [ "ins_reset_vertical_pos", "ins__int_8c.html#a209f27fb545f1034247e2cfbc0dd2214", null ],
     [ "ins_update_from_vff", "ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c", null ],
     [ "pos_est_cb", "ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e", null ],
+    [ "reset_cb", "ins__int_8c.html#a29bc0d0a045fa74e40c7416ea492d521", null ],
+    [ "reset_ref", "ins__int_8c.html#a4567d4212b4638e2d25778ab0a3f3795", null ],
+    [ "reset_vertical_pos", "ins__int_8c.html#aaa81fd49fa15ef7ecc96001272b5fc83", null ],
+    [ "reset_vertical_ref", "ins__int_8c.html#a090d79622986fa2852a2c2610efa54e8", null ],
     [ "send_ins", "ins__int_8c.html#a2ba079af519dd03472aa3e6019b3a91f", null ],
     [ "send_ins_ref", "ins__int_8c.html#a6f4ee4900038e15bf441a679acfa913a", null ],
     [ "send_ins_z", "ins__int_8c.html#a779c8daa5c837af54a2a999a8e3cae24", null ],
@@ -36,5 +37,6 @@ var ins__int_8c =
     [ "gps_ev", "ins__int_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
     [ "ins_int", "ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de", null ],
     [ "pos_est_ev", "ins__int_8c.html#a38c4c392b7fffcb65556c85643c63d06", null ],
+    [ "reset_ev", "ins__int_8c.html#a52d502cd15c4894b5b32abd8aba97386", null ],
     [ "vel_est_ev", "ins__int_8c.html#a8fb4043a3bc3293ea248889a5f99a1ff", null ]
 ];

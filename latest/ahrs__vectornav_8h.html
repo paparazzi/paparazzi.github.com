@@ -275,7 +275,7 @@ VN status. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00068">68</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="vn200__serial_8h_source.html#l00088">VNData::accel</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00056">AhrsVectornav::accel_i</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00062">ahrs_vectornav_is_enabled()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00125">ahrs_vectornav_propagate()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::gyro</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00057">AhrsVectornav::gyro_i</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00375">IMU_VECTORNAV_ID</a>, <a class="el" href="vn200__serial_8h_source.html#l00062">VNPacket::msg_available</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="vn200__serial_8c_source.html#l00113">vn200_event()</a>, <a class="el" href="vn200__serial_8c_source.html#l00184">vn200_read_message()</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00052">AhrsVectornav::vn_freq</a>, and <a class="el" href="ahrs__vectornav_8h_source.html#l00049">AhrsVectornav::vn_packet</a>.</p>
+<p class="reference">References <a class="el" href="vn200__serial_8h_source.html#l00088">VNData::accel</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00056">AhrsVectornav::accel_i</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00123">ahrs_vectornav_propagate()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::gyro</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00057">AhrsVectornav::gyro_i</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00375">IMU_VECTORNAV_ID</a>, <a class="el" href="vn200__serial_8h_source.html#l00062">VNPacket::msg_available</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="vn200__serial_8c_source.html#l00113">vn200_event()</a>, <a class="el" href="vn200__serial_8c_source.html#l00184">vn200_read_message()</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00052">AhrsVectornav::vn_freq</a>, and <a class="el" href="ahrs__vectornav_8h_source.html#l00049">AhrsVectornav::vn_packet</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -283,26 +283,25 @@ VN status. </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8h_a36bc2168f7e5f7d7a416978206b62098_cgraph.png" border="0" usemap="#aahrs__vectornav_8h_a36bc2168f7e5f7d7a416978206b62098_cgraph" alt=""/></div>
 <map name="aahrs__vectornav_8h_a36bc2168f7e5f7d7a416978206b62098_cgraph" id="aahrs__vectornav_8h_a36bc2168f7e5f7d7a416978206b62098_cgraph">
-<area shape="rect" title="Event handling for Vectornav." alt="" coords="5,208,172,235"/>
-<area shape="rect" href="ahrs__vectornav__wrapper_8c.html#a32bbfa5ae17900bd2aef1cc4d47ae02f" title=" " alt="" coords="220,107,419,133"/>
-<area shape="rect" href="ahrs__vectornav_8c.html#a372720f51165cb35510d524d12881555" title="Read received data." alt="" coords="222,157,417,184"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="246,208,393,235"/>
-<area shape="rect" href="vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title=" " alt="" coords="266,259,373,285"/>
-<area shape="rect" href="vn200__serial_8c.html#a13f1a793a1a690aa4ff89764262c3644" title="Read received message and populate data struct with new measurements." alt="" coords="237,309,401,336"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="485,5,640,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix." alt="" coords="487,56,639,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="481,107,644,133"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="483,157,642,184"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="467,208,659,235"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="707,107,873,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="921,107,1067,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="711,208,869,235"/>
-<area shape="rect" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title=" " alt="" coords="491,259,634,285"/>
-<area shape="rect" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine." alt="" coords="737,259,843,285"/>
-<area shape="rect" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum." alt="" coords="949,259,1039,285"/>
-<area shape="rect" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message." alt="" coords="1115,259,1223,285"/>
-<area shape="rect" href="vn200__serial_8c.html#a8691ed20ea97b2e193d9daf4501799bd" title="Check INS status." alt="" coords="485,309,640,336"/>
-<area shape="rect" href="vn200__serial_8c.html#a43111461bc87c4acc7776c1066392596" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1),..." alt="" coords="481,361,644,402"/>
+<area shape="rect" title="Event handling for Vectornav." alt="" coords="5,233,172,260"/>
+<area shape="rect" href="ahrs__vectornav_8c.html#a372720f51165cb35510d524d12881555" title="Read received data." alt="" coords="220,157,415,184"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="244,208,391,235"/>
+<area shape="rect" href="vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title=" " alt="" coords="264,259,371,285"/>
+<area shape="rect" href="vn200__serial_8c.html#a13f1a793a1a690aa4ff89764262c3644" title="Read received message and populate data struct with new measurements." alt="" coords="235,309,399,336"/>
+<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="481,5,636,32"/>
+<area shape="rect" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix." alt="" coords="483,56,635,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="477,107,640,133"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="479,157,638,184"/>
+<area shape="rect" href="group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="463,208,655,235"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="703,107,869,133"/>
+<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="917,107,1063,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="707,208,865,235"/>
+<area shape="rect" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title=" " alt="" coords="487,259,630,285"/>
+<area shape="rect" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine." alt="" coords="733,259,839,285"/>
+<area shape="rect" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum." alt="" coords="945,259,1035,285"/>
+<area shape="rect" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message." alt="" coords="1111,259,1219,285"/>
+<area shape="rect" href="vn200__serial_8c.html#a8691ed20ea97b2e193d9daf4501799bd" title="Check INS status." alt="" coords="481,309,636,336"/>
+<area shape="rect" href="vn200__serial_8c.html#a43111461bc87c4acc7776c1066392596" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1),..." alt="" coords="477,361,640,402"/>
 </map>
 </div>
 
@@ -326,11 +325,11 @@ VN status. </td></tr>
 
 <p>Initialize Vectornav struct. </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00096">96</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00094">94</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ahrs__vectornav_8h_source.html#l00056">AhrsVectornav::accel_i</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00063">VNPacket::chksm_error</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="vn200__serial_8h_source.html#l00071">VNPacket::framing_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00064">VNPacket::hdr_error</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00289">INT32_VECT3_ZERO</a>, <a class="el" href="vn200__serial_8h_source.html#l00062">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8h_source.html#l00067">VNPacket::msg_idx</a>, <a class="el" href="vn200__serial_8h_source.html#l00070">VNPacket::noise_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00069">VNPacket::overrun_error</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00039">send_vn_info()</a>, <a class="el" href="vn200__serial_8h_source.html#l00066">VNPacket::status</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00052">AhrsVectornav::vn_freq</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00049">AhrsVectornav::vn_packet</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00051">AhrsVectornav::vn_status</a>, <a class="el" href="vn200__serial_8h_source.html#l00054">VNMsgSync</a>, and <a class="el" href="vn200__serial_8h_source.html#l00078">VNNotTracking</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00066">ahrs_vectornav_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00051">ahrs_vectornav_wrapper_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -350,8 +349,8 @@ VN status. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8h_a9bb0623445b9bc979f54088663e1defb_icgraph.png" border="0" usemap="#aahrs__vectornav_8h_a9bb0623445b9bc979f54088663e1defb_icgraph" alt=""/></div>
 <map name="aahrs__vectornav_8h_a9bb0623445b9bc979f54088663e1defb_icgraph" id="aahrs__vectornav_8h_a9bb0623445b9bc979f54088663e1defb_icgraph">
-<area shape="rect" title="Initialize Vectornav struct." alt="" coords="232,5,383,32"/>
-<area shape="rect" href="ahrs__vectornav__wrapper_8c.html#a67821e4f24335d5924bdb33a11c661e0" title=" " alt="" coords="5,5,184,32"/>
+<area shape="rect" title="Initialize Vectornav struct." alt="" coords="264,5,415,32"/>
+<area shape="rect" href="ahrs__vectornav__wrapper_8c.html#a0e0ab8a84e08440c618956746bb8fb4b" title=" " alt="" coords="5,5,216,32"/>
 </map>
 </div>
 
@@ -375,9 +374,9 @@ VN status. </td></tr>
 
 <p>Read received data. </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00125">125</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00123">123</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00087">VNData::attitude</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00060">AhrsVectornav::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00477">float_quat_of_eulers()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00150">float_rmat_ratemult()</a>, <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::gyro</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01093">stateSetNedToBodyQuat_f()</a>, and <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00087">VNData::attitude</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00060">AhrsVectornav::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00477">float_quat_of_eulers()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00150">float_rmat_ratemult()</a>, <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::gyro</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="state_8h_source.html#l01346">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01253">stateSetNedToBodyQuat_f()</a>, and <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ahrs__vectornav_8c_source.html#l00068">ahrs_vectornav_event()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -391,8 +390,8 @@ VN status. </td></tr>
 <area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="267,5,421,32"/>
 <area shape="rect" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix." alt="" coords="268,56,420,83"/>
 <area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="263,107,425,133"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="265,157,423,184"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="248,208,440,235"/>
+<area shape="rect" href="group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="265,157,423,184"/>
+<area shape="rect" href="group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="248,208,440,235"/>
 <area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="488,107,655,133"/>
 <area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="703,107,848,133"/>
 <area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="493,208,650,235"/>
@@ -435,7 +434,7 @@ VN status. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00001">1</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__vectornav_8c_source.html#l00068">ahrs_vectornav_event()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00096">ahrs_vectornav_init()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00125">ahrs_vectornav_propagate()</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00045">send_euler()</a>, and <a class="el" href="ahrs__vectornav_8c_source.html#l00039">send_vn_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__vectornav_8c_source.html#l00068">ahrs_vectornav_event()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00094">ahrs_vectornav_init()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00123">ahrs_vectornav_propagate()</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00041">send_euler()</a>, and <a class="el" href="ahrs__vectornav_8c_source.html#l00039">send_vn_info()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +444,7 @@ VN status. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__vectornav_8h.html">ahrs_vectornav.h</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 14:28:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 21:39:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

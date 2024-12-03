@@ -36,8 +36,6 @@ var ins__ext__pose_8c =
     [ "ins_ext_pose_init_from_flightplan", "ins__ext__pose_8c.html#a5b1b5f3b7d6727a82053b50734df20c9", null ],
     [ "ins_ext_pose_msg_update", "ins__ext__pose_8c.html#a2cf4c08743ac4888adb7cc158cc97f72", null ],
     [ "ins_ext_pose_run", "ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb", null ],
-    [ "ins_reset_altitude_ref", "ins__ext__pose_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
-    [ "ins_reset_local_origin", "ins__ext__pose_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "send_ahrs_bias", "ins__ext__pose_8c.html#afcaf83e494c099d08de45255037c3769", null ],
     [ "send_external_pose_down", "ins__ext__pose_8c.html#ae272d2b42a54b734aa093467c0912059", null ],
     [ "send_ins", "ins__ext__pose_8c.html#a2ba079af519dd03472aa3e6019b3a91f", null ],

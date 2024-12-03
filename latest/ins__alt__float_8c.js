@@ -15,11 +15,13 @@ var ins__alt__float_8c =
     [ "ins_alt_float_init", "ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274", null ],
     [ "ins_alt_float_update_baro", "ins__alt__float_8c.html#afb6a5cd07b6574dfb93f023aecfcec5d", null ],
     [ "ins_alt_float_update_gps", "ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e", null ],
-    [ "ins_reset_altitude_ref", "ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
-    [ "ins_reset_local_origin", "ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
+    [ "reset_cb", "ins__alt__float_8c.html#a29bc0d0a045fa74e40c7416ea492d521", null ],
+    [ "reset_ref", "ins__alt__float_8c.html#a4567d4212b4638e2d25778ab0a3f3795", null ],
+    [ "reset_vertical_ref", "ins__alt__float_8c.html#a090d79622986fa2852a2c2610efa54e8", null ],
     [ "accel_ev", "ins__alt__float_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826", null ],
     [ "baro_ev", "ins__alt__float_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702", null ],
     [ "gps_ev", "ins__alt__float_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
     [ "ins_altf", "ins__alt__float_8c.html#aa856711c8028cde137345c4d9ebd83fa", null ],
-    [ "p", "ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905", null ]
+    [ "p", "ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905", null ],
+    [ "reset_ev", "ins__alt__float_8c.html#a52d502cd15c4894b5b32abd8aba97386", null ]
 ];
