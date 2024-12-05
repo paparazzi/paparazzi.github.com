@@ -273,6 +273,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#WLS_V">WLS_V (ID 187)</a></li>
 <li class="level2"><a href="#WLS_U">WLS_U (ID 188)</a></li>
 <li class="level2"><a href="#MISSION_ITEM">MISSION_ITEM (ID 189)</a></li>
+<li class="level2"><a href="#ACTUATORS_T4_IN">ACTUATORS_T4_IN (ID 190)</a></li>
+<li class="level2"><a href="#ACTUATORS_T4_OUT">ACTUATORS_T4_OUT (ID 191)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
@@ -327,7 +329,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#PPRZ_DEBUG">PPRZ_DEBUG (ID 247)</a></li>
 <li class="level2"><a href="#BATTERY_MONITOR">BATTERY_MONITOR (ID 248)</a></li>
 <li class="level2"><a href="#GPS_RXMRTCM">GPS_RXMRTCM (ID 249)</a></li>
-<li class="level2"><a href="#GPS_RTK">GPS_RTK (ID 251)</a></li>
+<li class="level2"><a href="#GPS_RELPOS">GPS_RELPOS (ID 251)</a></li>
 <li class="level2"><a href="#GPS_SMALL">GPS_SMALL (ID 252)</a></li>
 <li class="level2"><a href="#I2C_ERRORS">I2C_ERRORS (ID 253)</a></li>
 <li class="level2"><a href="#DCF_THETA">DCF_THETA (ID 254)</a></li>
@@ -3798,11 +3800,11 @@ GUIDANCE (ID 184)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">acc_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">jerk_N   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">jerk_N_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">jerk_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">jerk_E_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">jerk_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">jerk_D_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="EFF_MAT_STAB"></a>
 EFF_MAT_STAB (ID 185)</h2>
@@ -3883,6 +3885,146 @@ MISSION_ITEM (ID 189)</h2>
 <td class="markdownTableBodyNone">lon   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">alt   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="ACTUATORS_T4_IN"></a>
+ACTUATORS_T4_IN (ID 190)</h2>
+<p>Received informational data from T4 Actuator Board, only used for debugging and logging</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_1_rpm   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">rpm   </td><td class="markdownTableBodyNone">ESC 1 RPM telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_2_rpm   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">rpm   </td><td class="markdownTableBodyNone">ESC 2 RPM telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_3_rpm   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">rpm   </td><td class="markdownTableBodyNone">ESC 3 RPM telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_4_rpm   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">rpm   </td><td class="markdownTableBodyNone">ESC 4 RPM telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_1_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 1 angle telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_2_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 2 angle telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_3_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 3 angle telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_4_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 4 angle telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_5_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 5 angle telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_6_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 6 angle telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_7_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 7 angle telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_8_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 8 angle telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_9_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 9 angle telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_10_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 10 angle telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_11_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 11 angle telemetry    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_12_angle   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 12 angle telemetry    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">actuators_t4_missed_packets   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Number of missed packets on T4 communication bus    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">actuators_t4_message_frequency   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Refresh rate of the incoming messages from T4 hardware module    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">actuators_t4_rolling_msg_in   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">T4 incoming rolling message content    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">actuators_t4_rolling_msg_in_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">T4 incoming rolling message ID    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_1_err_code   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 1 error code    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_2_err_code   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 2 error code    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_3_err_code   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 3 error code    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_4_err_code   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 4 error code    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_1_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 1 load    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_2_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 2 load    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_3_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 3 load    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_4_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 4 load    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_5_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 5 load    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_6_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 6 load    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_7_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 7 load    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_8_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">servo 8 load    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_9_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Servo 9 load    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_10_load   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Servo 10 load    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bitmask_servo_health   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Bitmask of servo health status    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_1_current   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 1 current in mA    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_2_current   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 2 current in mA    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_3_current   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 3 current in mA    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_4_current   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 4 current in mA    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_1_voltage   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 1 voltage in mV    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_2_voltage   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 2 voltage in mV    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_3_voltage   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 3 voltage in mV    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_4_voltage   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC 4 voltage in mV   </td></tr>
+</table>
+<h2><a class="anchor" id="ACTUATORS_T4_OUT"></a>
+ACTUATORS_T4_OUT (ID 191)</h2>
+<p>Transmitted commanded data to a T4 actuator board, only used for debugging and logging</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_arm   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ESC arming status bitmask    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_arm   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Servo arming status bitmask    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_1_dshot_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">dshot   </td><td class="markdownTableBodyNone">ESC 1 DShot commands    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_2_dshot_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">dshot   </td><td class="markdownTableBodyNone">ESC 2 DShot commands    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">esc_3_dshot_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">dshot   </td><td class="markdownTableBodyNone">ESC 3 DShot commands    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esc_4_dshot_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">dshot   </td><td class="markdownTableBodyNone">ESC 4 DShot commands    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_1_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 1 angle command    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_2_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 2 angle command    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_3_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 3 angle command    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_4_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 4 angle command    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_5_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 5 angle command    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_6_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 6 angle command    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_7_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 7 angle command    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_8_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 8 angle command    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_9_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 9 angle command    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_10_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 10 angle command    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">servo_11_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 10 angle command    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">servo_12_angle_cmd   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">1e2_deg   </td><td class="markdownTableBodyNone">Servo 10 angle command    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">actuators_t4_rolling_msg_out   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">T4 output rolling message content    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">actuators_t4_rolling_msg_out_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">T4 output Rolling message ID   </td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
 AHRS_LKF (ID 193)</h2>
@@ -4893,41 +5035,35 @@ GPS_RXMRTCM (ID 249)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Crc1087   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="GPS_RTK"></a>
-GPS_RTK (ID 251)</h2>
+<h2><a class="anchor" id="GPS_RELPOS"></a>
+GPS_RELPOS (ID 251)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">iTOW   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">reference_id   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Reference station identification    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">refStationId   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">tow   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone">Time of week (GPS)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">relPosN   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">cm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">posN   </td><td class="markdownTableBodyNone">double   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Relative position North to the reference station    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">relPosE   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">cm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">posE   </td><td class="markdownTableBodyNone">double   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Relative position East to the reference station    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">relPosD   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">cm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">posD   </td><td class="markdownTableBodyNone">double   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Relative position Down to the reference station    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">relPosHPN   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">distance   </td><td class="markdownTableBodyNone">double   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Relative distance to the reference station    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">relPosHPE   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">heading   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone">Relative heading to the reference station    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">relPosHPD   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">posAccN   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Position accuracy North    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">accN   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">posAccE   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Position accuracy East    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">accE   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">posAccD   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Position accuracy Down    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">accD   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">distanceAcc   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Distance accuracy    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">carrSoln   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, RTK FLOAT, RTK FIX   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">relPosValid   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">FALSE, TRUE   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">diffSoln   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, DGPS   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">gnssFixOK   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, 3D   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">headingAcc   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone">Heading accuracy   </td></tr>
 </table>
 <h2><a class="anchor" id="GPS_SMALL"></a>
 GPS_SMALL (ID 252)</h2>
@@ -6953,7 +7089,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2024 21:40:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 5 2024 13:05:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

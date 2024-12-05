@@ -1,5 +1,6 @@
 var NAVTREEINDEX231 =
 {
+"vl53l5cx__api_8h.html#afb473e09933d048b046cfa23b0e7b53a":[12,0,1,0,7,137,0,6],
 "vl53l5cx__api_8h.html#structBlock__header_8____unnamed354____":[12,0,1,0,7,137,4],
 "vl53l5cx__api_8h.html#structVL53L5CX__Configuration":[12,0,1,0,7,137,0],
 "vl53l5cx__api_8h.html#structVL53L5CX__ResultsData":[12,0,1,0,7,137,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX231 =
 "wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a2388a5bb81725cef3e4b25bc9aa34398":[12,0,1,0,6,73,0,4,5],
 "wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a32adb23063c5f3fa6835193654755a4f":[12,0,1,0,6,73,0,4,2],
 "wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a611aed47ba2e58b169bf9deded04db24":[12,0,1,0,6,73,0,4,0],
-"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a998b887ac451d124211bdebdbc8f399b":[12,0,1,0,6,73,0,4,1],
-"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73aa14f2633c708d0d27656e6ea0561e8d1":[12,0,1,0,6,73,0,4,4]
+"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a998b887ac451d124211bdebdbc8f399b":[12,0,1,0,6,73,0,4,1]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX140 =
 {
-"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,353,0],
 "module__takeoff_detect.html#module_xml__takeoff_detect":[1,353,2,0],
 "module__target_pos.html":[1,103],
 "module__target_pos.html#configuration__target_pos":[1,103,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX140 =
 "modules_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad":[12,0,1,0,6,15,27,11],
 "modules_2datalink_2superbitrf_8c.html#a099e591914a4f6d65cdaa9b55fea1193":[12,0,1,0,6,15,27,1],
 "modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618":[12,0,1,0,6,15,27,16],
-"modules_2datalink_2superbitrf_8c.html#a3a9e5f574332d7a10a4fa95fde4467c9":[12,0,1,0,6,15,27,2]
+"modules_2datalink_2superbitrf_8c.html#a3a9e5f574332d7a10a4fa95fde4467c9":[12,0,1,0,6,15,27,2],
+"modules_2datalink_2superbitrf_8c.html#a3dba487ecc02fb6e7bdde994032fd795":[12,0,1,0,6,15,27,13]
 };

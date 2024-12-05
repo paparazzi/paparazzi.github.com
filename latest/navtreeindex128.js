@@ -1,6 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea557065ef84f4f0f26c25fcd6daecca8a":[12,0,1,0,6,20,0,9,10],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea79175d482e70a2b47a31e831204ffd44":[12,0,1,0,6,20,0,9,8],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7ea512690c92f844fa9e0623e4a08eb3":[12,0,1,0,6,20,0,9,0],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27":[12,0,1,0,6,20,0,9,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX128 =
 "mcuconf__h7_8h.html#a47d90eaca23f3eea99d74d1bb3539541":[12,0,1,0,0,0,11,226],
 "mcuconf__h7_8h.html#a485bc2ee744fdaef5ce756b2e37e0513":[12,0,1,0,0,0,11,17],
 "mcuconf__h7_8h.html#a4a16b64d2275521cea28f9684f040904":[12,0,1,0,0,0,11,6],
-"mcuconf__h7_8h.html#a4d7890ef7b4b607b90eb9eafae504f0d":[12,0,1,0,0,0,11,232]
+"mcuconf__h7_8h.html#a4d7890ef7b4b607b90eb9eafae504f0d":[12,0,1,0,0,0,11,232],
+"mcuconf__h7_8h.html#a4f49346cf0c36ac85466517ceff6299b":[12,0,1,0,0,0,11,279]
 };

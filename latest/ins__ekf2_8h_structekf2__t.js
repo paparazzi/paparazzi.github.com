@@ -14,5 +14,7 @@ var ins__ekf2_8h_structekf2__t =
     [ "mag_fusion_type", "ins__ekf2_8h.html#a109e056c613f8ea2b594c07ae903cff2", null ],
     [ "qnh", "ins__ekf2_8h.html#ae14072e84b6532f202fb933bc35bb9f7", null ],
     [ "quat_reset_counter", "ins__ekf2_8h.html#ae372cc2d584068cad7143e5b555812c9", null ],
+    [ "rel_heading", "ins__ekf2_8h.html#aa275ab5d2d555dc3a66d873c38be91f5", null ],
+    [ "rel_heading_valid", "ins__ekf2_8h.html#a127360eb368449302f10be3a5e7138cf", null ],
     [ "temp", "ins__ekf2_8h.html#ab09fd245a9686cf45aa2eeb1a120e4dd", null ]
 ];

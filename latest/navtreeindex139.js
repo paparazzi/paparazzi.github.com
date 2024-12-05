@@ -1,6 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,368,2],
 "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,368,0],
 "module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,368,2,0],
 "module__radio_control_superbitrf_rc.html":[1,369],
@@ -249,5 +248,6 @@ var NAVTREEINDEX139 =
 "module__tag_tracking.html#module_xml__tag_tracking":[1,67,3,0],
 "module__takeoff_detect.html":[1,353],
 "module__takeoff_detect.html#configuration__takeoff_detect":[1,353,1],
-"module__takeoff_detect.html#functions__takeoff_detect":[1,353,2]
+"module__takeoff_detect.html#functions__takeoff_detect":[1,353,2],
+"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,353,0]
 };

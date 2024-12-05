@@ -1,5 +1,6 @@
 var NAVTREEINDEX234 =
 {
+"xsens__parser_8c.html#a934ca0061f712fc5b516fb27f5ee24a1":[12,0,1,0,6,37,57,2],
 "xsens__parser_8c.html#a9d0046af933b2f7d8eb98e697b678c6a":[12,0,1,0,6,37,57,0],
 "xsens__parser_8c.html#aeb457d2fb42319908f48ab6713852cd4":[12,0,1,0,6,37,57,1],
 "xsens__parser_8c_source.html":[12,0,1,0,6,37,57],

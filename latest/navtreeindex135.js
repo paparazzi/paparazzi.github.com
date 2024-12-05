@@ -1,6 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__gps_sirf.html#configuration__gps_sirf":[1,161,1],
 "module__gps_sirf.html#functions__gps_sirf":[1,161,2],
 "module__gps_sirf.html#module_load_example__gps_sirf":[1,161,0],
 "module__gps_sirf.html#module_xml__gps_sirf":[1,161,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX135 =
 "module__imu_disco.html#functions__imu_disco":[1,201,2],
 "module__imu_disco.html#module_load_example__imu_disco":[1,201,0],
 "module__imu_disco.html#module_xml__imu_disco":[1,201,2,0],
-"module__imu_elle0.html":[1,202]
+"module__imu_elle0.html":[1,202],
+"module__imu_elle0.html#module_load_example__imu_elle0":[1,202,0]
 };

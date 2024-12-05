@@ -126,7 +126,8 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GYRO_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_ACCEL_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_MAG_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RELPOS_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__ins_ekf2"></a>
 Module configuration options</h1>
@@ -199,8 +200,10 @@ Define Options</h2>
  Description: ABI sensor ID used ad input for acceleration measurements</li>
 <li><b>name:</b> <code>INS_EKF2_MAG_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: ABI sensor ID used as input for magnetic measurements</li>
-<li><b>name:</b> <code>INS_EKF2_GPS_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
+<li><b>name:</b> <code>INS_EKF2_GPS_ID</code> <b>value:</b> <em>GPS_MULTI_ID</em> <br  />
  Description: ABI sensor ID used ad input for GPS measurements</li>
+<li><b>name:</b> <code>INS_EKF2_RELPOS_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
+ Description: ABI sensor ID used ad input for Relative Position heading measurements</li>
 </ul>
 <h1><a class="anchor" id="functions__ins_ekf2"></a>
 Module functions</h1>
@@ -307,7 +310,8 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GYRO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used as input for gyro measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_ACCEL_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for acceleration measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_MAG_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used as input for magnetic measurements&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for GPS measurements&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;GPS_MULTI_ID&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for GPS measurements&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RELPOS_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for Relative Position heading measurements&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;INS&quot;</span>&gt;</div>
@@ -380,7 +384,7 @@ Raw ins_ekf2.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Dec 3 2024 21:40:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 5 2024 13:05:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

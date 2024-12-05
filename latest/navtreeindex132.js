@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__actuators_md25.html#module_load_example__actuators_md25":[1,12,0],
 "module__actuators_md25.html#module_xml__actuators_md25":[1,12,2,0],
 "module__actuators_nps.html":[1,13],
 "module__actuators_nps.html#module_load_example__actuators_nps":[1,13,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi":[1,399,2,0],
 "module__baro_scp_i2c.html":[1,400],
 "module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,400,1],
-"module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,400,2]
+"module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,400,2],
+"module__baro_scp_i2c.html#module_load_example__baro_scp_i2c":[1,400,0]
 };

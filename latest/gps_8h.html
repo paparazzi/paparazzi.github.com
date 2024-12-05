@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('gps_8h.html',''); initResizable(); });
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__int_8h_source.html">math/pprz_geodetic_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__float_8h_source.html">math/pprz_geodetic_float.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__geodetic__double_8h_source.html">math/pprz_geodetic_double.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,25 +109,27 @@ $(document).ready(function(){initNavTree('gps_8h.html',''); initResizable(); });
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2gps_2gps_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2gps_2gps_8h" id="asw_2airborne_2modules_2gps_2gps_8h">
-<area shape="rect" title="Device independent GPS code (interface)" alt="" coords="288,5,446,47"/>
-<area shape="rect" title=" " alt="" coords="220,348,274,375"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="76,95,226,136"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="292,95,442,136"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="826,184,999,211"/>
-<area shape="rect" title=" " alt="" coords="518,102,678,129"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="226,184,351,211"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="58,184,201,211"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="568,266,724,293"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="56,266,209,293"/>
-<area shape="rect" title=" " alt="" coords="800,266,870,293"/>
-<area shape="rect" title=" " alt="" coords="717,348,780,375"/>
-<area shape="rect" title=" " alt="" coords="610,348,681,375"/>
-<area shape="rect" title=" " alt="" coords="838,348,906,375"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="568,184,723,211"/>
-<area shape="rect" title=" " alt="" coords="335,266,492,293"/>
-<area shape="rect" title=" " alt="" coords="946,266,1033,293"/>
-<area shape="rect" title=" " alt="" coords="1057,266,1184,293"/>
-<area shape="rect" title=" " alt="" coords="1208,259,1369,300"/>
+<area shape="rect" title="Device independent GPS code (interface)" alt="" coords="863,5,1021,47"/>
+<area shape="rect" title=" " alt="" coords="591,437,645,464"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="763,184,913,225"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="497,184,648,225"/>
+<area shape="rect" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations." alt="" coords="515,95,665,136"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="942,273,1115,300"/>
+<area shape="rect" title=" " alt="" coords="1473,102,1633,129"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="547,273,673,300"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="697,273,840,300"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="265,355,421,382"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="599,355,752,382"/>
+<area shape="rect" title=" " alt="" coords="828,355,899,382"/>
+<area shape="rect" title=" " alt="" coords="5,437,68,464"/>
+<area shape="rect" title=" " alt="" coords="308,437,379,464"/>
+<area shape="rect" title=" " alt="" coords="175,437,243,464"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="115,273,270,300"/>
+<area shape="rect" title=" " alt="" coords="83,355,241,382"/>
+<area shape="rect" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra." alt="" coords="252,191,421,218"/>
+<area shape="rect" title=" " alt="" coords="1160,355,1247,382"/>
+<area shape="rect" title=" " alt="" coords="1271,355,1397,382"/>
+<area shape="rect" title=" " alt="" coords="975,348,1136,389"/>
 </map>
 </div>
 </div>
@@ -143,9 +146,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structGpsTimeSync"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#structGpsTimeSync">GpsTimeSync</a></td></tr>
 <tr class="memdesc:structGpsTimeSync"><td class="mdescLeft">&#160;</td><td class="mdescRight">data structure for GPS time sync  <a href="gps_8h.html#structGpsTimeSync">More...</a><br /></td></tr>
 <tr class="separator:structGpsTimeSync"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structGpsRelposNED"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#structGpsRelposNED">GpsRelposNED</a></td></tr>
-<tr class="memdesc:structGpsRelposNED"><td class="mdescLeft">&#160;</td><td class="mdescRight">data structures for GPS with RTK capabilities  <a href="gps_8h.html#structGpsRelposNED">More...</a><br /></td></tr>
-<tr class="separator:structGpsRelposNED"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structRelPosNED"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#structRelPosNED">RelPosNED</a></td></tr>
+<tr class="separator:structRelPosNED"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -269,8 +271,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a00bcdc4a49e0e8f7ac48f2d77113f4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd">multi_gps_mode</a></td></tr>
 <tr class="separator:a00bcdc4a49e0e8f7ac48f2d77113f4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef81e629eb219c35b87a62b95e93fbf1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gps_8h.html#structGpsRelposNED">GpsRelposNED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#aef81e629eb219c35b87a62b95e93fbf1">gps_relposned</a></td></tr>
-<tr class="separator:aef81e629eb219c35b87a62b95e93fbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf954024f8e0433b21db7439c5bee9d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a></td></tr>
 <tr class="memdesc:a5cf954024f8e0433b21db7439c5bee9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">global GPS state  <a href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">More...</a><br /></td></tr>
 <tr class="separator:a5cf954024f8e0433b21db7439c5bee9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +295,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>data structure for Space Vehicle Information of a single satellite </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00076">76</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00077">77</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -351,7 +351,7 @@ Satellite ID. </td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>data structure for GPS information </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00086">86</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00087">87</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for GpsState:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -550,7 +550,7 @@ GPS week. </td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>data structure for GPS time sync </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00121">121</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00122">122</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -575,124 +575,80 @@ fractional ns remainder of tow [ms], range -500000 .. 500000 </td></tr>
 
 </div>
 </div>
-<a name="structGpsRelposNED" id="structGpsRelposNED"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structGpsRelposNED">&#9670;&nbsp;</a></span>GpsRelposNED</h2>
+<a name="structRelPosNED" id="structRelPosNED"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structRelPosNED">&#9670;&nbsp;</a></span>RelPosNED</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GpsRelposNED</td>
+          <td class="memname">struct RelPosNED</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>data structures for GPS with RTK capabilities </p>
-
+<div class="textblock">
 <p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00128">128</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
-</div><table class="fieldtable">
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for RelPosNED:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structRelPosNED__coll__graph.png" border="0" usemap="#aRelPosNED_coll__map" alt="Collaboration graph"/></div>
+<map name="aRelPosNED_coll__map" id="aRelPosNED_coll__map">
+<area shape="rect" title=" " alt="" coords="5,109,100,136"/>
+<area shape="rect" title=" " alt="" coords="23,5,82,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a3bdf813f5cc98e49692bfb72830cbd02"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<a id="a5c3468bb11337890afd4a8aa2dcaddea"></a>double</td>
 <td class="fieldname">
-accD</td>
+distance</td>
 <td class="fielddoc">
-</td></tr>
+Relative distance to the reference station in meters. </td></tr>
 <tr><td class="fieldtype">
-<a id="a4789265cbf7c59088d9c7275aeb35f35"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<a id="a0c25f6baa5db7e5bac7081419be2cad9"></a>float</td>
 <td class="fieldname">
-accE</td>
+distance_acc</td>
 <td class="fielddoc">
-</td></tr>
+Distance accuracy in meters. </td></tr>
 <tr><td class="fieldtype">
-<a id="add67b5af8aaa529d18ae9b60b337f27a"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<a id="a2b9ab0c9c761a1b096921dd3866090af"></a>float</td>
 <td class="fieldname">
-accN</td>
+heading</td>
 <td class="fielddoc">
-</td></tr>
+Relative heading to the reference station in radians. </td></tr>
 <tr><td class="fieldtype">
-<a id="aaabdd36bffe942920e2bfeabfcfa7676"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a id="a4a4e01a9d057d0fc6da4cefd98a19ac0"></a>float</td>
 <td class="fieldname">
-carrSoln</td>
+heading_acc</td>
 <td class="fielddoc">
-</td></tr>
+Heading accuracy in radians. </td></tr>
 <tr><td class="fieldtype">
-<a id="a809675aa0ebb803cfb7afe99c314e0a3"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a id="abc282f456458ab66f33bb73917e94eb5"></a>struct <a class="el" href="group__math__geodetic__double.html#structNedCoor__d">NedCoor_d</a></td>
 <td class="fieldname">
-diffSoln</td>
+pos</td>
 <td class="fielddoc">
-</td></tr>
+Relative postion to the reference station in meters. </td></tr>
 <tr><td class="fieldtype">
-<a id="a36f2e6dddae1df1155683822e73c3d4d"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a id="a9d6c0678ca4d3d002ab470aa619781a8"></a>struct <a class="el" href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a></td>
 <td class="fieldname">
-gnssFixOK</td>
+pos_acc</td>
 <td class="fielddoc">
-</td></tr>
+Position accuracy in meters. </td></tr>
 <tr><td class="fieldtype">
-<a id="a231fde6bd2e42a9de50253ae4fb94c5a"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<a id="af0557dd1f8df40d0e239550b9eb3df10"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
-iTOW</td>
+reference_id</td>
 <td class="fielddoc">
-</td></tr>
+Reference station identification. </td></tr>
 <tr><td class="fieldtype">
-<a id="a1a37a0ac518858500eb685327a1e8f76"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a id="a7ee8efc05fe7d48333fb16825cb76df2"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
-refStationId</td>
+tow</td>
 <td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ac0f2667703a0d8f46fc91fa82f6d9589"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
-<td class="fieldname">
-relPosD</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ac0a4052ee1274bfd6aaf173d28417979"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
-<td class="fieldname">
-relPosE</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ac75555afc7849d77e974d7b307bb5985"></a>float</td>
-<td class="fieldname">
-relPosHeading</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="acfb05effce10c8aa378dccb3ac820011"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
-<td class="fieldname">
-relPosHPD</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="aefd22ed8cf7b2f1e0088fb6ce085ec34"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
-<td class="fieldname">
-relPosHPE</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a99902b8572da45ec09a010e4e1ffd3c1"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
-<td class="fieldname">
-relPosHPN</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ab4a550ba4140a16f458f5be8df5523f0"></a>float</td>
-<td class="fieldname">
-relPosLength</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a5d5bac94fc2d642aafb9edb97f8da1bf"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
-<td class="fieldname">
-relPosN</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ab13c1e193763d6d9eef87e00b1e958cc"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
-<td class="fieldname">
-relPosValid</td>
-<td class="fielddoc">
-</td></tr>
+Time of week (GPS) in ms. </td></tr>
 </table>
 
 </div>
@@ -714,7 +670,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00068">68</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00069">69</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +690,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00069">69</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00070">70</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +708,7 @@ relPosValid</td>
 
 <p>2D GPS fix </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00042">42</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00043">43</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +726,7 @@ relPosValid</td>
 
 <p>3D GPS fix </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00043">43</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00044">44</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +744,7 @@ relPosValid</td>
 
 <p>DGPS fix. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00044">44</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00045">45</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +762,7 @@ relPosValid</td>
 
 <p>No GPS fix. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00041">41</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00042">42</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -824,7 +780,7 @@ relPosValid</td>
 
 <p>RTK GPS fix. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00045">45</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00046">46</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -840,7 +796,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00059">59</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00060">60</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +812,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00060">60</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00061">61</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +828,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00061">61</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00062">62</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +844,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00056">56</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00057">57</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -906,7 +862,7 @@ relPosValid</td>
 
 <p>GPS timeout in seconds in case of communication loss with GPS module. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00185">185</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00177">177</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -922,7 +878,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00053">53</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00054">54</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +894,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00052">52</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00053">53</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +910,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00047">47</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00048">48</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -970,7 +926,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00048">48</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00049">49</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -986,7 +942,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00049">49</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00050">50</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +958,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00050">50</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00051">51</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +974,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00051">51</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00052">52</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +993,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00176">176</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00168">168</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1013,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00070">70</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00071">71</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1032,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00178">178</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00170">170</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1048,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00064">64</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00065">65</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1122,14 +1078,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ecef position in float (m) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00390">gps_inject_data()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00418">gps_inject_data()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a633c8ce658bc87ebf74d5640b6f9b77b_cgraph.png" border="0" usemap="#agps_8h_a633c8ce658bc87ebf74d5640b6f9b77b_cgraph" alt=""/></div>
 <map name="agps_8h_a633c8ce658bc87ebf74d5640b6f9b77b_cgraph" id="agps_8h_a633c8ce658bc87ebf74d5640b6f9b77b_cgraph">
 <area shape="rect" title="Get GPS ecef pos (float) Converted on the fly if not available." alt="" coords="5,5,160,32"/>
@@ -1164,14 +1120,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ecef position in cm </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__gps__passthrough_8c_source.html#l00082">gps_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00281">ins_float_invariant_reset_ref()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00446">ins_float_invariant_update_gps()</a>, <a class="el" href="ins__int_8c_source.html#l00422">ins_int_update_gps()</a>, and <a class="el" href="ins__gps__passthrough_8c_source.html#l00178">reset_ref()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_aa1cf7efa927fe3fe8a07e97f8e58b746_icgraph.png" border="0" usemap="#agps_8h_aa1cf7efa927fe3fe8a07e97f8e58b746_icgraph" alt=""/></div>
 <map name="agps_8h_aa1cf7efa927fe3fe8a07e97f8e58b746_icgraph" id="agps_8h_aa1cf7efa927fe3fe8a07e97f8e58b746_icgraph">
 <area shape="rect" title="Get GPS ecef pos (integer) Converted on the fly if not available." alt="" coords="751,137,893,163"/>
@@ -1217,14 +1173,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ecef velocity in float (m/s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00439">gps_cb()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00446">ins_float_invariant_update_gps()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a49df20d7b72ae1248ef22fba32c467b9_icgraph.png" border="0" usemap="#agps_8h_a49df20d7b72ae1248ef22fba32c467b9_icgraph" alt=""/></div>
 <map name="agps_8h_a49df20d7b72ae1248ef22fba32c467b9_icgraph" id="agps_8h_a49df20d7b72ae1248ef22fba32c467b9_icgraph">
 <area shape="rect" title="Get GPS ecef velocity (float) Converted on the fly if not available." alt="" coords="643,35,824,61"/>
@@ -1263,14 +1219,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ecef velocity in cm/s </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__gps__passthrough_8c_source.html#l00082">gps_cb()</a>, and <a class="el" href="ins__int_8c_source.html#l00422">ins_int_update_gps()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5dc6e3f966bdb5440ffe748d7a0f80c3_icgraph.png" border="0" usemap="#agps_8h_a5dc6e3f966bdb5440ffe748d7a0f80c3_icgraph" alt=""/></div>
 <map name="agps_8h_a5dc6e3f966bdb5440ffe748d7a0f80c3_icgraph" id="agps_8h_a5dc6e3f966bdb5440ffe748d7a0f80c3_icgraph">
 <area shape="rect" title="Get GPS ecef velocity (integer) Converted on the fly if not available." alt="" coords="576,31,745,57"/>
@@ -1327,16 +1283,16 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of days since navigation epoch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00611">611</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00639">639</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00603">month_days</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00631">month_days</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00621">gps_week_number()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00649">gps_week_number()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph.png" border="0" usemap="#agps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph" alt=""/></div>
 <map name="agps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph" id="agps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph">
 <area shape="rect" title="Number of days since navigation epoch (6 January 1980)" alt="" coords="977,5,1111,32"/>
@@ -1369,14 +1325,14 @@ relPosValid</td>
 <p>Check if GPS fix is valid. </p>
 <p>If GPS_FIX_TIMEOUT is configured, check for 3D fix with timeout, otherwise, returns the last value from GPS module </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00282">282</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00295">295</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8h_source.html#l00106">GpsState::fix</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, and <a class="el" href="gps_8h_source.html#l00204">gps_time_since_last_3dfix()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, and <a class="el" href="gps_8h_source.html#l00196">gps_time_since_last_3dfix()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_adacd42babc7bbccac91aaffd58e2ae0d_cgraph.png" border="0" usemap="#agps_8h_adacd42babc7bbccac91aaffd58e2ae0d_cgraph" alt=""/></div>
 <map name="agps_8h_adacd42babc7bbccac91aaffd58e2ae0d_cgraph" id="agps_8h_adacd42babc7bbccac91aaffd58e2ae0d_cgraph">
 <area shape="rect" title="Check if GPS fix is valid." alt="" coords="5,35,112,61"/>
@@ -1411,9 +1367,9 @@ relPosValid</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00194">194</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00186">186</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8h_source.html#l00176">GpsFixValid</a>.</p>
+<p class="reference">References <a class="el" href="gps_8h_source.html#l00168">GpsFixValid</a>.</p>
 
 </div>
 </div>
@@ -1435,31 +1391,32 @@ relPosValid</td>
 
 <p>initialize the global GPS state </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00321">321</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00350">350</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00058">ABI_BROADCAST</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::cacc</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8c_source.html#l00295">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00294">gps_ev</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_NONE</a>, <a class="el" href="navstik__1_80_8h_source.html#l00058">GPS_POWER_GPIO</a>, <a class="el" href="gps_8c_source.html#l00071">gps_relposned</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::hacc</a>, <a class="el" href="gps_8h_source.html#l00113">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00114">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00115">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00116">GpsState::last_msg_time</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00052">LED_OFF</a>, <a class="el" href="gps_8c_source.html#l00077">multi_gps_mode</a>, <a class="el" href="gps_8h_source.html#l00064">MULTI_GPS_MODE</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gps_8h_source.html#l00138">GpsRelposNED::relPosHeading</a>, <a class="el" href="gps_8c_source.html#l00137">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00177">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00205">send_gps_lla()</a>, <a class="el" href="gps_8c_source.html#l00163">send_gps_rtk()</a>, <a class="el" href="gps_8c_source.html#l00228">send_gps_sol()</a>, <a class="el" href="gps_8c_source.html#l00109">send_svinfo()</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::vacc</a>, <a class="el" href="gps_8h_source.html#l00087">GpsState::valid_fields</a>, and <a class="el" href="gps_8h_source.html#l00107">GpsState::week</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00058">ABI_BROADCAST</a>, <a class="el" href="gps_8h_source.html#l00104">GpsState::cacc</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="gps_8c_source.html#l00308">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00307">gps_ev</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_NONE</a>, <a class="el" href="navstik__1_80_8h_source.html#l00058">GPS_POWER_GPIO</a>, <a class="el" href="gps_8c_source.html#l00334">gps_relpos_cb()</a>, <a class="el" href="gps_8c_source.html#l00333">gps_relpos_ev</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::hacc</a>, <a class="el" href="gps_8h_source.html#l00114">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00115">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00116">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00052">LED_OFF</a>, <a class="el" href="gps_8c_source.html#l00082">multi_gps_mode</a>, <a class="el" href="gps_8h_source.html#l00065">MULTI_GPS_MODE</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gps_8c_source.html#l00142">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00190">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00218">send_gps_lla()</a>, <a class="el" href="gps_8c_source.html#l00168">send_gps_relpos()</a>, <a class="el" href="gps_8c_source.html#l00241">send_gps_sol()</a>, <a class="el" href="gps_8c_source.html#l00114">send_svinfo()</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00102">GpsState::vacc</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::valid_fields</a>, and <a class="el" href="gps_8h_source.html#l00108">GpsState::week</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph.png" border="0" usemap="#agps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph" alt=""/></div>
 <map name="agps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph" id="agps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph">
-<area shape="rect" title="initialize the global GPS state" alt="" coords="5,233,79,260"/>
+<area shape="rect" title="initialize the global GPS state" alt="" coords="5,259,79,285"/>
 <area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="157,5,299,32"/>
 <area shape="rect" href="gps_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="195,56,261,83"/>
-<area shape="rect" href="preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="139,107,317,133"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="127,157,329,184"/>
-<area shape="rect" href="gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600" title=" " alt="" coords="187,259,269,285"/>
-<area shape="rect" href="gps_8c.html#a6d23eecfe781f0c056b6168f2c9d79cd" title=" " alt="" coords="175,208,281,235"/>
-<area shape="rect" href="gps_8c.html#a759fae606fdb1c49a324d700e29282ff" title=" " alt="" coords="175,309,281,336"/>
-<area shape="rect" href="gps_8c.html#af37edd466be7d8387d8fd6ca42a6ac9b" title=" " alt="" coords="174,360,282,387"/>
-<area shape="rect" href="gps_8c.html#aff19d069394eabda725637cba722afcd" title=" " alt="" coords="173,411,283,437"/>
-<area shape="rect" href="gps_8c.html#adce46b1d3eb549af6f1358bdcb25599d" title="send SVINFO message (regardless of state)" alt="" coords="411,399,511,425"/>
+<area shape="rect" href="gps_8c.html#a7b460b3361720c68cecb5ac2227e079f" title=" " alt="" coords="171,107,285,133"/>
+<area shape="rect" href="preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="139,157,317,184"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="127,208,329,235"/>
+<area shape="rect" href="gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600" title=" " alt="" coords="187,309,269,336"/>
+<area shape="rect" href="gps_8c.html#a6d23eecfe781f0c056b6168f2c9d79cd" title=" " alt="" coords="175,259,281,285"/>
+<area shape="rect" href="gps_8c.html#a759fae606fdb1c49a324d700e29282ff" title=" " alt="" coords="175,360,281,387"/>
+<area shape="rect" href="gps_8c.html#aef1653a3b46934c63259e5dafbf16306" title=" " alt="" coords="163,411,293,437"/>
+<area shape="rect" href="gps_8c.html#aff19d069394eabda725637cba722afcd" title=" " alt="" coords="173,461,283,488"/>
+<area shape="rect" href="gps_8c.html#adce46b1d3eb549af6f1358bdcb25599d" title="send SVINFO message (regardless of state)" alt="" coords="411,449,511,476"/>
 <area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="387,56,534,83"/>
-<area shape="rect" href="gps_8c.html#a7eb08958254a390bf626ecfd6dbf37de" title="send SVINFO message if updated." alt="" coords="377,233,544,260"/>
-<area shape="rect" href="gps_8c.html#a4fff1fd94429e7d036ba27af86a8c5ed" title="Convenience function to get utm position in int from GPS structure." alt="" coords="391,284,531,311"/>
-<area shape="rect" href="gps_8c.html#a938ba23671abdae703d2b14b930b55b8" title=" " alt="" coords="592,272,711,299"/>
+<area shape="rect" href="gps_8c.html#a7eb08958254a390bf626ecfd6dbf37de" title="send SVINFO message if updated." alt="" coords="377,284,544,311"/>
+<area shape="rect" href="gps_8c.html#a4fff1fd94429e7d036ba27af86a8c5ed" title="Convenience function to get utm position in int from GPS structure." alt="" coords="391,335,531,361"/>
+<area shape="rect" href="gps_8c.html#a938ba23671abdae703d2b14b930b55b8" title=" " alt="" coords="592,323,711,349"/>
 </map>
 </div>
 
@@ -1500,16 +1457,16 @@ relPosValid</td>
 <p>GPS packet injection (default empty) </p>
 <p>GPS packet injection (default empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00390">390</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00418">418</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gps__piksi_8c_source.html#l00396">gps_piksi_write()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00103">sbp_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00452">ecef_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00396">gps_parse_GPS_INJECT()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00480">ecef_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00424">gps_parse_GPS_INJECT()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph.png" border="0" usemap="#agps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph" alt=""/></div>
 <map name="agps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph" id="agps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph">
 <area shape="rect" title="GPS packet injection (default empty)" alt="" coords="5,5,129,32"/>
@@ -1517,11 +1474,11 @@ relPosValid</td>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="348,5,460,32"/>
 </map>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph.png" border="0" usemap="#agps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" alt=""/></div>
 <map name="agps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" id="agps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph">
 <area shape="rect" title="GPS packet injection (default empty)" alt="" coords="224,31,348,57"/>
@@ -1548,14 +1505,14 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00396">396</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00424">424</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00390">gps_inject_data()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00418">gps_inject_data()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph.png" border="0" usemap="#agps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph" alt=""/></div>
 <map name="agps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph" id="agps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,176,32"/>
@@ -1581,7 +1538,7 @@ relPosValid</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 </div>
 </div>
@@ -1604,16 +1561,16 @@ relPosValid</td>
 <p>Periodic GPS check. </p>
 <p>Marks GPS as lost when no GPS message was received for GPS_TIMEOUT seconds </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00266">266</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00279">279</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8h_source.html#l00088">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00185">GPS_TIMEOUT</a>, <a class="el" href="gps_8h_source.html#l00116">GpsState::last_msg_time</a>, and <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>.</p>
+<p class="reference">References <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00177">GPS_TIMEOUT</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, and <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dw1000__arduino_8c_source.html#l00568">dw1000_arduino_periodic()</a>, and <a class="el" href="gps__ubx_8c_source.html#l00700">gps_ubx_periodic_check()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="dw1000__arduino_8c_source.html#l00568">dw1000_arduino_periodic()</a>, and <a class="el" href="gps__ubx_8c_source.html#l00695">gps_ubx_periodic_check()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph.png" border="0" usemap="#agps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph" alt=""/></div>
 <map name="agps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph" id="agps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph">
 <area shape="rect" title="Periodic GPS check." alt="" coords="241,31,391,57"/>
@@ -1650,16 +1607,16 @@ relPosValid</td>
 
 <p>Returns the time since last 3D fix in seconds (float) </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00204">204</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00196">196</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00113">GpsState::last_3dfix_ticks</a>, and <a class="el" href="gps_8h_source.html#l00114">GpsState::last_3dfix_time</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="gps_8h_source.html#l00114">GpsState::last_3dfix_ticks</a>, and <a class="el" href="gps_8h_source.html#l00115">GpsState::last_3dfix_time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00282">gps_fix_valid()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00295">gps_fix_valid()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a1813d66f77ab6872c1972d7d86776c9d_icgraph.png" border="0" usemap="#agps_8h_a1813d66f77ab6872c1972d7d86776c9d_icgraph" alt=""/></div>
 <map name="agps_8h_a1813d66f77ab6872c1972d7d86776c9d_icgraph" id="agps_8h_a1813d66f77ab6872c1972d7d86776c9d_icgraph">
 <area shape="rect" title="Returns the time since last 3D fix in seconds (float)" alt="" coords="160,5,315,47"/>
@@ -1688,27 +1645,27 @@ relPosValid</td>
 <p>Convert time in <a class="el" href="sys__time_8h.html#structsys__time">sys_time</a> ticks to GPS time of week. </p>
 <p>The resolution is <a class="el" href="sys__time_8h.html#a8a4f7ef3bbea802072d4f4b618aae996" title="sys_time_timer resolution in seconds">sys_time.resolution</a> </p><dl class="section return"><dt>Returns</dt><dd>GPS tow in ms </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00365">365</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00393">393</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00070">gps_time_sync</a>, <a class="el" href="sys__time_8h_source.html#l00167">msec_of_sys_time_ticks()</a>, <a class="el" href="gps_8c_source.html#l00066">MSEC_PER_WEEK</a>, <a class="el" href="gps_8h_source.html#l00124">GpsTimeSync::t0_ticks</a>, and <a class="el" href="gps_8h_source.html#l00122">GpsTimeSync::t0_tow</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00075">gps_time_sync</a>, <a class="el" href="sys__time_8h_source.html#l00167">msec_of_sys_time_ticks()</a>, <a class="el" href="gps_8c_source.html#l00071">MSEC_PER_WEEK</a>, <a class="el" href="gps_8h_source.html#l00125">GpsTimeSync::t0_ticks</a>, and <a class="el" href="gps_8h_source.html#l00123">GpsTimeSync::t0_tow</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="traffic__info_8h_source.html#l00261">acInfoSetPositionEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00207">acInfoSetPositionEnu_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00243">acInfoSetPositionLla_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00189">acInfoSetPositionLla_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00225">acInfoSetPositionUtm_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00171">acInfoSetPositionUtm_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00297">acInfoSetVelocityEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00279">acInfoSetVelocityEnu_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00076">parse_acinfo_dl()</a>, <a class="el" href="target__pos_8c_source.html#l00122">target_parse_target_pos()</a>, and <a class="el" href="windturbine_8c_source.html#l00041">windturbine_periodic()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph.png" border="0" usemap="#agps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph" alt=""/></div>
 <map name="agps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph" id="agps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph">
 <area shape="rect" title="Convert time in sys_time ticks to GPS time of week." alt="" coords="5,5,187,32"/>
 <area shape="rect" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title=" " alt="" coords="235,5,416,32"/>
 </map>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph.png" border="0" usemap="#agps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph" alt=""/></div>
 <map name="agps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph" id="agps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph">
 <area shape="rect" title="Convert time in sys_time ticks to GPS time of week." alt="" coords="233,259,415,285"/>
@@ -1771,27 +1728,27 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of weeks since navigation epoch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00621">621</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00649">649</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00611">gps_day_number()</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00639">gps_day_number()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps__ubx_8c_source.html#l00181">gps_ubx_parse_nav_pvt()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="gps__ubx_8c_source.html#l00180">gps_ubx_parse_nav_pvt()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph.png" border="0" usemap="#agps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph" alt=""/></div>
 <map name="agps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph" id="agps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph">
 <area shape="rect" title="Number of weeks since navigation epoch (6 January 1980)" alt="" coords="5,5,149,32"/>
 <area shape="rect" href="gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7" title="Number of days since navigation epoch (6 January 1980)" alt="" coords="197,5,331,32"/>
 </map>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph.png" border="0" usemap="#agps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph" alt=""/></div>
 <map name="agps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph" id="agps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph">
 <area shape="rect" title="Number of weeks since navigation epoch (6 January 1980)" alt="" coords="785,5,929,32"/>
@@ -1829,7 +1786,7 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lla position in float (rad), altitude ellipsoid (m) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 </div>
 </div>
@@ -1858,14 +1815,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lla position (lat,lon: deg*1e7; alt: mm over ellipsoid) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00973">gps_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00281">ins_float_invariant_reset_ref()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00640">reset_ref()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00654">reset_vertical_ref()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00987">gps_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00281">ins_float_invariant_reset_ref()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00654">reset_ref()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00668">reset_vertical_ref()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5d388b9aaf3cf2b7eee50ab6581fb0fe_icgraph.png" border="0" usemap="#agps_8h_a5d388b9aaf3cf2b7eee50ab6581fb0fe_icgraph" alt=""/></div>
 <map name="agps_8h_a5d388b9aaf3cf2b7eee50ab6581fb0fe_icgraph" id="agps_8h_a5d388b9aaf3cf2b7eee50ab6581fb0fe_icgraph">
 <area shape="rect" title="Get GPS lla (integer) Converted on the fly if not available." alt="" coords="512,81,643,108"/>
@@ -1907,14 +1864,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ned velocity in float (m/s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00973">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00216">ins_alt_float_update_gps()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00446">ins_float_invariant_update_gps()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00987">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00216">ins_alt_float_update_gps()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00446">ins_float_invariant_update_gps()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a21eacfaec32fc8d222f3824b96f68efb_icgraph.png" border="0" usemap="#agps_8h_a21eacfaec32fc8d222f3824b96f68efb_icgraph" alt=""/></div>
 <map name="agps_8h_a21eacfaec32fc8d222f3824b96f68efb_icgraph" id="agps_8h_a21eacfaec32fc8d222f3824b96f68efb_icgraph">
 <area shape="rect" title="Get GPS ned velocity (float) Converted on the fly if not available." alt="" coords="580,56,757,83"/>
@@ -1956,7 +1913,7 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ned velocity in cm/s </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 </div>
 </div>
@@ -1997,14 +1954,14 @@ relPosValid</td>
 <dl class="section return"><dt>Returns</dt><dd>utm position in float, altitude hmsl.</dd></dl>
 <p>Convenience function to get utm position in float from GPS structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__gps__passthrough__utm_8c_source.html#l00050">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00216">ins_alt_float_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00281">ins_float_invariant_reset_ref()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00446">ins_float_invariant_update_gps()</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00133">reset_ref()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph.png" border="0" usemap="#agps_8h_a1343b41c94f919a6a593b958b275683f_icgraph" alt=""/></div>
 <map name="agps_8h_a1343b41c94f919a6a593b958b275683f_icgraph" id="agps_8h_a1343b41c94f919a6a593b958b275683f_icgraph">
 <area shape="rect" title="Convenience function to get utm position in float from GPS structure." alt="" coords="799,129,951,156"/>
@@ -2061,14 +2018,14 @@ relPosValid</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>utm position in fixed point (cm), altitude hmsl (mm). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00409">409</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00437">437</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00137">send_gps()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00142">send_gps()</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph.png" border="0" usemap="#agps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph" alt=""/></div>
 <map name="agps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph" id="agps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph">
 <area shape="rect" title="Convenience function to get utm position in int from GPS structure." alt="" coords="257,5,397,32"/>
@@ -2104,33 +2061,7 @@ relPosValid</td>
 
 <p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00001">1</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="airspeed__ets_8c_source.html#l00184">airspeed_ets_read_event()</a>, <a class="el" href="alt__filter_8c_source.html#l00061">alt_filter_periodic()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00069">ArduIMU_periodicGPS()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="baro__sim_8c_source.html#l00040">baro_sim_periodic()</a>, <a class="el" href="nav__fish_8c_source.html#l00403">calculate_new_heading()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00397">cloud_sensor_callback()</a>, <a class="el" href="dc_8c_source.html#l00106">dc_send_shot_position()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00651">error_output()</a>, <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00059">geo_mag_event()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="gps_8c_source.html#l00295">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00282">gps_fix_valid()</a>, <a class="el" href="gps_8c_source.html#l00321">gps_init()</a>, <a class="el" href="gps_8c_source.html#l00266">gps_periodic_check()</a>, <a class="el" href="gps__sim_8c_source.html#l00025">gps_sim_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps_8h_source.html#l00204">gps_time_since_last_3dfix()</a>, <a class="el" href="ins__vectornav__wrapper_8c_source.html#l00031">gps_vectornav_init()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="hf__float_8c_source.html#l00541">hff_update_gps()</a>, <a class="el" href="max7456_8c_source.html#l00276">home_direction()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00281">ins_float_invariant_reset_ref()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00301">ins_float_invariant_reset_vertical_ref()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00116">ins_vectornav_monitor()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00248">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00230">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00221">ins_vectornav_set_sacc()</a>, <a class="el" href="mavlink_8c_source.html#l00748">mavlink_send_gps_raw_int()</a>, <a class="el" href="mavlink_8c_source.html#l00786">mavlink_send_gps_status()</a>, <a class="el" href="meteo__stick_8c_source.html#l00170">meteo_stick_send_data()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="common__nav_8c_source.html#l00107">nav_reset_utm_zone()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00010">nps_sensor_gps_init()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>, <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00064">put_alt()</a>, <a class="el" href="ins__flow_8c_source.html#l00657">reset_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00133">reset_ref()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00144">reset_vertical_ref()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00218">send_cloud_sensor_data()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00194">send_fp_min()</a>, <a class="el" href="gps_8c_source.html#l00137">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00177">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00205">send_gps_lla()</a>, <a class="el" href="gps_8c_source.html#l00228">send_gps_sol()</a>, <a class="el" href="autopilot_8c_source.html#l00087">send_minimal_com()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>, <a class="el" href="gps_8c_source.html#l00109">send_svinfo()</a>, <a class="el" href="gps_8c_source.html#l00121">send_svinfo_available()</a>, <a class="el" href="gps_8c_source.html#l00097">send_svinfo_id()</a>, <a class="el" href="nav__smooth_8c_source.html#l00183">snav_on_time()</a>, <a class="el" href="tcas_8c_source.html#l00117">tcas_periodic_task_1Hz()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00282">thd_startlog()</a>, and <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>.</p>
-
-</div>
-</div>
-<a id="aef81e629eb219c35b87a62b95e93fbf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef81e629eb219c35b87a62b95e93fbf1">&#9670;&nbsp;</a></span>gps_relposned</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="gps_8h.html#structGpsRelposNED">GpsRelposNED</a> gps_relposned</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00001">1</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00973">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00321">gps_init()</a>, <a class="el" href="gps__ubx_8c_source.html#l00414">gps_ubx_parse_nav_relposned()</a>, and <a class="el" href="gps_8c_source.html#l00163">send_gps_rtk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="airspeed__ets_8c_source.html#l00184">airspeed_ets_read_event()</a>, <a class="el" href="alt__filter_8c_source.html#l00061">alt_filter_periodic()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00069">ArduIMU_periodicGPS()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="baro__sim_8c_source.html#l00040">baro_sim_periodic()</a>, <a class="el" href="nav__fish_8c_source.html#l00403">calculate_new_heading()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00397">cloud_sensor_callback()</a>, <a class="el" href="dc_8c_source.html#l00106">dc_send_shot_position()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00651">error_output()</a>, <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00059">geo_mag_event()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00295">gps_fix_valid()</a>, <a class="el" href="gps_8c_source.html#l00350">gps_init()</a>, <a class="el" href="gps_8c_source.html#l00279">gps_periodic_check()</a>, <a class="el" href="gps__sim_8c_source.html#l00025">gps_sim_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps_8h_source.html#l00196">gps_time_since_last_3dfix()</a>, <a class="el" href="ins__vectornav__wrapper_8c_source.html#l00031">gps_vectornav_init()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="hf__float_8c_source.html#l00541">hff_update_gps()</a>, <a class="el" href="max7456_8c_source.html#l00276">home_direction()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00281">ins_float_invariant_reset_ref()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00301">ins_float_invariant_reset_vertical_ref()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00116">ins_vectornav_monitor()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00248">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00230">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00221">ins_vectornav_set_sacc()</a>, <a class="el" href="mavlink_8c_source.html#l00748">mavlink_send_gps_raw_int()</a>, <a class="el" href="mavlink_8c_source.html#l00786">mavlink_send_gps_status()</a>, <a class="el" href="meteo__stick_8c_source.html#l00170">meteo_stick_send_data()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="common__nav_8c_source.html#l00107">nav_reset_utm_zone()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00010">nps_sensor_gps_init()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>, <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00064">put_alt()</a>, <a class="el" href="ins__flow_8c_source.html#l00657">reset_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00133">reset_ref()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00144">reset_vertical_ref()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00218">send_cloud_sensor_data()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00194">send_fp_min()</a>, <a class="el" href="gps_8c_source.html#l00142">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00190">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00218">send_gps_lla()</a>, <a class="el" href="gps_8c_source.html#l00241">send_gps_sol()</a>, <a class="el" href="autopilot_8c_source.html#l00087">send_minimal_com()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>, <a class="el" href="gps_8c_source.html#l00114">send_svinfo()</a>, <a class="el" href="gps_8c_source.html#l00126">send_svinfo_available()</a>, <a class="el" href="gps_8c_source.html#l00102">send_svinfo_id()</a>, <a class="el" href="nav__smooth_8c_source.html#l00183">snav_on_time()</a>, <a class="el" href="tcas_8c_source.html#l00117">tcas_periodic_task_1Hz()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00282">thd_startlog()</a>, and <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +2087,7 @@ relPosValid</td>
 
 <p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00001">1</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00295">gps_cb()</a>, and <a class="el" href="gps_8c_source.html#l00365">gps_tow_from_sys_ticks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00308">gps_cb()</a>, and <a class="el" href="gps_8c_source.html#l00393">gps_tow_from_sys_ticks()</a>.</p>
 
 </div>
 </div>
@@ -2180,9 +2111,9 @@ relPosValid</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00077">77</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00082">82</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00321">gps_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00350">gps_init()</a>.</p>
 
 </div>
 </div>
@@ -2192,7 +2123,7 @@ relPosValid</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps_8h.html">gps.h</a></li>
-    <li class="footer">Generated on Tue Dec 3 2024 21:39:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 5 2024 13:05:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
