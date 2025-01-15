@@ -1,21 +1,40 @@
 <map id="actuators_ardrone_commit" name="actuators_ardrone_commit">
-<area shape="rect" id="node1" title=" " alt="" coords="5,310,203,337"/>
-<area shape="rect" id="node2" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="261,227,447,268"/>
-<area shape="rect" id="node16" href="$boards_2ardrone_2actuators_8c.html#a3e18bc7da29945523e0b38e96549ef24" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0." alt="" coords="251,386,457,413"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="511,82,695,109"/>
-<area shape="rect" id="node4" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="511,133,694,159"/>
-<area shape="rect" id="node12" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="558,183,647,210"/>
-<area shape="rect" id="node13" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="563,234,642,261"/>
-<area shape="rect" id="node14" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="564,285,641,311"/>
-<area shape="rect" id="node15" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="531,335,674,362"/>
-<area shape="rect" id="node5" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="751,78,947,105"/>
-<area shape="rect" id="node8" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="788,162,909,189"/>
-<area shape="rect" id="node6" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="997,5,1151,47"/>
-<area shape="rect" id="node7" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="999,71,1149,112"/>
-<area shape="rect" id="node9" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1001,137,1147,163"/>
-<area shape="rect" id="node10" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="1017,187,1131,214"/>
-<area shape="rect" id="node11" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="1007,238,1141,265"/>
-<area shape="rect" id="node17" href="$boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title=" " alt="" coords="505,386,700,413"/>
-<area shape="rect" id="node19" href="$navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="1033,411,1115,438"/>
-<area shape="rect" id="node18" href="$boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format)" alt="" coords="748,386,949,413"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,290,203,315"/>
+<area shape="rect" id="Node000002" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="261,208,447,248"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,287,272,250,274,255,149,292"/>
+<area shape="rect" id="Node000016" href="$boards_2ardrone_2actuators_8c.html#a3e18bc7da29945523e0b38e96549ef24" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0." alt="" coords="251,363,457,389"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="149,313,297,357,296,362,148,318"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="511,67,695,93"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,206,428,153,465,125,504,102,520,95,522,100,507,106,468,130,431,158,376,210"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="511,117,694,142"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="389,206,442,178,504,151,528,143,529,148,506,156,445,183,391,210"/>
+<area shape="rect" id="Node000012" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="558,166,647,191"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="447,207,544,187,545,193,448,212"/>
+<area shape="rect" id="Node000013" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="563,215,642,241"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="448,225,550,225,550,231,448,231"/>
+<area shape="rect" id="Node000014" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="564,265,641,290"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="448,244,551,265,550,270,447,249"/>
+<area shape="rect" id="Node000015" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="531,314,674,339"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="393,246,446,273,506,299,533,308,531,313,504,304,443,278,390,251"/>
+<area shape="rect" id="Node000005" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="751,77,947,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="681,114,757,102,757,107,682,119"/>
+<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="788,158,909,183"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="679,139,775,156,774,161,679,145"/>
+<area shape="rect" id="Node000006" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="997,5,1151,45"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="894,74,989,47,990,52,895,79"/>
+<area shape="rect" id="Node000007" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="999,69,1149,109"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="947,87,985,87,985,92,947,92"/>
+<area shape="rect" id="Node000009" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1001,134,1147,159"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="909,162,987,153,988,158,910,167"/>
+<area shape="rect" id="Node000010" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="1017,183,1131,209"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="910,175,1004,185,1003,191,909,180"/>
+<area shape="rect" id="Node000011" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="1007,233,1141,258"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="889,181,1023,226,1021,231,887,186"/>
+<area shape="rect" id="Node000017" href="$boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title=" " alt="" coords="505,363,700,389"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="458,373,491,373,491,379,458,379"/>
+<area shape="rect" id="Node000019" href="$navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="1033,389,1115,414"/>
+<area shape="poly" id="edge19_Node000016_Node000019" title=" " alt="" coords="417,386,506,399,651,406,795,408,1019,402,1019,407,795,413,651,412,505,404,416,391"/>
+<area shape="rect" id="Node000018" href="$boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format)" alt="" coords="748,363,949,389"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="700,373,734,373,734,379,700,379"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="950,385,1019,393,1018,398,949,390"/>
 </map>

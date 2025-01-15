@@ -1,52 +1,111 @@
 <map id="mavlink_event" name="mavlink_event">
-<area shape="rect" id="node1" title="Event MAVLink calls." alt="" coords="5,901,124,928"/>
-<area shape="rect" id="node2" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="419,394,624,435"/>
-<area shape="rect" id="node38" href="$mission__manager_8c.html#a68ddd91a505c2317c818d632a2009304" title=" " alt="" coords="172,923,371,965"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="699,477,851,504"/>
-<area shape="rect" id="node4" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="683,528,867,555"/>
-<area shape="rect" id="node5" href="$autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt." alt="" coords="692,579,859,621"/>
-<area shape="rect" id="node6" href="$autopilot__guided_8c.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode." alt="" coords="676,5,875,32"/>
-<area shape="rect" id="node7" href="$autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt." alt="" coords="692,57,859,98"/>
-<area shape="rect" id="node8" href="$autopilot__guided_8c.html#a113a26863eee267edc78f72876ec8f69" title="Set velocity and heading setpoints in GUIDED mode." alt="" coords="672,123,879,149"/>
-<area shape="rect" id="node9" href="$autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode" alt="" coords="700,224,851,251"/>
-<area shape="rect" id="node13" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="684,173,867,200"/>
-<area shape="rect" id="node21" href="$group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED." alt="" coords="955,429,1095,456"/>
-<area shape="rect" id="node27" href="$rc__datalink_8c.html#ad43c77dccb7abd9f6616848d9caa0e32" title="Decode datalink message to get rc values with RC_UP message." alt="" coords="695,275,855,301"/>
-<area shape="rect" id="node28" href="$mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1" title=" " alt="" coords="672,325,879,352"/>
-<area shape="rect" id="node29" href="$group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4" title="Get the HMSL of the frame origin (int)" alt="" coords="694,747,857,773"/>
-<area shape="rect" id="node30" href="$group__state__position.html#gaaf56e2d484fe8e197a63c30841db7186" title="Get the coordinate NED frame origin (int)" alt="" coords="1171,645,1325,672"/>
-<area shape="rect" id="node31" href="$nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference)" alt="" coords="709,696,842,723"/>
-<area shape="rect" id="node35" href="$nav_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude" alt="" coords="699,427,852,453"/>
-<area shape="rect" id="node10" href="$fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="948,275,1101,317"/>
-<area shape="rect" id="node11" href="$autopilot_8c.html#a1c3d19dfa21f8e97526cb4d4b9ed5897" title="send autopilot mode actual implementation is firmware dependent" alt="" coords="943,341,1106,368"/>
-<area shape="rect" id="node12" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="927,224,1122,251"/>
-<area shape="rect" id="node14" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="927,173,1123,200"/>
-<area shape="rect" id="node17" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="964,89,1085,116"/>
-<area shape="rect" id="node15" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="1171,231,1325,273"/>
-<area shape="rect" id="node16" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="1173,166,1323,207"/>
-<area shape="rect" id="node18" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1175,115,1321,141"/>
-<area shape="rect" id="node19" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="1191,13,1305,40"/>
-<area shape="rect" id="node20" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="1181,64,1315,91"/>
-<area shape="rect" id="node22" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1397,455,1501,481"/>
-<area shape="rect" id="node25" href="$group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="1172,531,1324,557"/>
-<area shape="rect" id="node23" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1573,429,1681,456"/>
-<area shape="rect" id="node24" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1575,480,1680,507"/>
-<area shape="rect" id="node26" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1373,505,1525,532"/>
-<area shape="rect" id="node32" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="951,696,1099,723"/>
-<area shape="rect" id="node33" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1177,747,1319,773"/>
-<area shape="rect" id="node34" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1196,696,1300,723"/>
-<area shape="rect" id="node36" href="$nav_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates" alt="" coords="955,556,1094,583"/>
-<area shape="rect" id="node37" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="1178,480,1318,507"/>
-<area shape="rect" id="node39" href="$blocks_8c.html#a736f2e555912fca000d0751dedb4e00f" title=" " alt="" coords="430,1046,613,1087"/>
-<area shape="rect" id="node40" href="$mission__manager_8c.html#ae84f48d5a61636d61507ccc7f1f9e128" title=" " alt="" coords="684,1015,867,1057"/>
-<area shape="rect" id="node47" href="$datalink_2missionlib_2waypoints_8c.html#a632dcb46c33f5cf3726652ee477ff9bc" title=" " alt="" coords="438,891,605,933"/>
-<area shape="rect" id="node42" href="$mission__manager_8c.html#ad638b64fc964531fab6a78e1bb8e24d3" title=" " alt="" coords="695,950,855,991"/>
-<area shape="rect" id="node44" href="$blocks_8c.html#a32f0b7d220e811165e54c8d7195e6b80" title=" " alt="" coords="698,1197,853,1224"/>
-<area shape="rect" id="node45" href="$blocks_8c.html#abe128e10b21d503391ddfdb06f31699e" title=" " alt="" coords="698,1081,853,1122"/>
-<area shape="rect" id="node46" href="$common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title=" " alt="" coords="713,1147,837,1173"/>
-<area shape="rect" id="node41" href="$sys__time_8c.html#ac2ade8af0c9fbbf866026d99d60f9769" title="Cancel a system timer by id." alt="" coords="939,1023,1111,1049"/>
-<area shape="rect" id="node43" href="$sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer." alt="" coords="935,957,1115,984"/>
-<area shape="rect" id="node48" href="$datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title=" " alt="" coords="706,899,845,925"/>
-<area shape="rect" id="node49" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="705,848,845,875"/>
-<area shape="rect" id="node50" href="$nav_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title=" " alt="" coords="709,797,841,824"/>
+<area shape="rect" id="Node000001" title="Event MAVLink calls." alt="" coords="5,884,124,909"/>
+<area shape="rect" id="Node000002" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="419,386,624,426"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,882,490,434,494,438,80,885"/>
+<area shape="rect" id="Node000041" href="$mission__manager_8c.html#a68ddd91a505c2317c818d632a2009304" title=" " alt="" coords="172,905,371,945"/>
+<area shape="poly" id="edge41_Node000001_Node000041" title=" " alt="" coords="125,902,159,907,158,912,124,907"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="699,468,851,493"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="581,424,673,453,707,462,705,467,671,458,579,429"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="683,517,867,543"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="549,424,604,464,673,502,697,511,695,516,671,507,601,468,546,428"/>
+<area shape="rect" id="Node000005" href="$autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt." alt="" coords="692,567,859,607"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="540,425,594,488,632,523,673,553,685,559,682,564,671,558,628,527,591,492,536,428"/>
+<area shape="rect" id="Node000006" href="$autopilot__guided_8c.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode." alt="" coords="676,5,875,31"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="522,385,533,319,558,226,577,176,602,127,633,81,670,41,679,35,682,39,674,45,637,84,606,129,582,178,563,228,538,320,527,386"/>
+<area shape="rect" id="Node000007" href="$autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt." alt="" coords="692,55,859,95"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="524,385,539,330,567,255,587,214,610,175,638,138,670,105,679,99,682,103,674,109,642,141,615,178,592,217,572,257,545,332,530,387"/>
+<area shape="rect" id="Node000008" href="$autopilot__guided_8c.html#a113a26863eee267edc78f72876ec8f69" title="Set velocity and heading setpoints in GUIDED mode." alt="" coords="672,120,879,145"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="526,385,544,337,573,275,615,210,641,180,670,155,678,149,681,154,674,159,645,184,619,213,578,277,548,339,531,387"/>
+<area shape="rect" id="Node000009" href="$autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode" alt="" coords="700,219,851,244"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="535,384,589,319,627,283,671,253,686,246,688,251,673,258,631,287,593,323,539,388"/>
+<area shape="rect" id="Node000013" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="684,169,867,195"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="529,385,550,346,580,297,621,246,645,223,671,204,681,198,684,202,673,208,648,227,625,250,585,300,554,348,534,387"/>
+<area shape="rect" id="Node000021" href="$group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED." alt="" coords="955,432,1095,457"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="624,396,746,394,813,397,879,403,928,413,974,425,973,430,927,418,878,409,813,402,746,400,624,402"/>
+<area shape="rect" id="Node000027" href="$rc__datalink_8c.html#ad43c77dccb7abd9f6616848d9caa0e32" title="Decode datalink message to get rc values with RC_UP message." alt="" coords="695,268,855,293"/>
+<area shape="poly" id="edge26_Node000002_Node000027" title=" " alt="" coords="545,384,600,342,635,321,671,302,690,295,692,300,673,307,637,325,603,347,548,388"/>
+<area shape="rect" id="Node000028" href="$mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1" title=" " alt="" coords="672,317,879,343"/>
+<area shape="poly" id="edge27_Node000002_Node000028" title=" " alt="" coords="589,383,718,344,720,349,590,388"/>
+<area shape="rect" id="Node000029" href="$group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4" title="Get the HMSL of the frame origin (int)" alt="" coords="694,732,857,757"/>
+<area shape="poly" id="edge28_Node000002_Node000029" title=" " alt="" coords="529,426,542,484,569,564,588,606,612,648,640,686,674,719,683,725,680,730,670,723,636,689,607,651,583,609,564,566,537,486,523,427"/>
+<area shape="rect" id="Node000030" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="1171,632,1325,657"/>
+<area shape="poly" id="edge29_Node000002_Node000030" title=" " alt="" coords="532,425,550,468,580,522,621,575,646,598,673,617,711,631,763,641,892,651,1033,652,1157,648,1157,653,1033,657,892,657,762,647,710,636,671,622,642,602,617,579,575,525,545,470,527,427"/>
+<area shape="rect" id="Node000031" href="$nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference)" alt="" coords="709,683,842,708"/>
+<area shape="poly" id="edge30_Node000002_Node000031" title=" " alt="" coords="531,425,549,473,578,537,619,604,645,634,674,661,697,675,694,680,670,665,641,638,615,607,573,540,544,475,526,427"/>
+<area shape="rect" id="Node000038" href="$nav_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude" alt="" coords="699,419,852,444"/>
+<area shape="poly" id="edge35_Node000002_Node000038" title=" " alt="" coords="624,414,685,420,685,425,624,419"/>
+<area shape="rect" id="Node000010" href="$fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="948,269,1101,309"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="832,241,935,265,934,271,831,247"/>
+<area shape="rect" id="Node000011" href="$autopilot_8c.html#a1c3d19dfa21f8e97526cb4d4b9ed5897" title="send autopilot mode actual implementation is firmware dependent" alt="" coords="943,333,1106,359"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="852,240,880,253,897,270,905,287,913,303,928,319,940,326,938,330,925,323,909,306,900,289,892,273,877,258,850,245"/>
+<area shape="rect" id="Node000012" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="927,219,1122,244"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="851,229,913,229,913,234,851,234"/>
+<area shape="rect" id="Node000014" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="927,169,1123,195"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="867,179,913,179,913,185,867,185"/>
+<area shape="rect" id="Node000017" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="964,87,1085,112"/>
+<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="833,167,878,154,981,115,983,120,880,159,834,172"/>
+<area shape="rect" id="Node000015" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="1171,226,1325,266"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1081,192,1123,203,1175,219,1173,224,1122,209,1079,197"/>
+<area shape="rect" id="Node000016" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="1173,162,1323,202"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="1123,179,1159,179,1159,185,1123,185"/>
+<area shape="rect" id="Node000018" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1175,112,1321,137"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1086,104,1162,112,1161,118,1085,109"/>
+<area shape="rect" id="Node000019" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="1191,13,1305,39"/>
+<area shape="poly" id="edge18_Node000017_Node000019" title=" " alt="" coords="1062,84,1170,47,1192,40,1193,45,1172,53,1064,89"/>
+<area shape="rect" id="Node000020" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="1181,63,1315,88"/>
+<area shape="poly" id="edge19_Node000017_Node000020" title=" " alt="" coords="1085,90,1167,81,1167,87,1086,95"/>
+<area shape="rect" id="Node000022" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1397,459,1501,484"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="1095,446,1384,465,1384,470,1095,452"/>
+<area shape="rect" id="Node000025" href="$group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="1172,532,1324,557"/>
+<area shape="poly" id="edge24_Node000021_Node000025" title=" " alt="" coords="1049,455,1104,485,1172,517,1193,525,1191,530,1170,522,1102,490,1047,460"/>
+<area shape="rect" id="Node000023" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1573,435,1681,460"/>
+<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="1501,462,1559,454,1560,459,1502,467"/>
+<area shape="rect" id="Node000024" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1575,484,1680,509"/>
+<area shape="poly" id="edge23_Node000022_Node000024" title=" " alt="" coords="1502,476,1561,485,1561,490,1501,481"/>
+<area shape="rect" id="Node000026" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1373,508,1525,533"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="1324,533,1359,529,1360,534,1325,538"/>
+<area shape="rect" id="Node000032" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="951,683,1099,708"/>
+<area shape="poly" id="edge31_Node000031_Node000032" title=" " alt="" coords="842,693,937,693,937,698,842,698"/>
+<area shape="poly" id="edge34_Node000032_Node000030" title=" " alt="" coords="1081,680,1177,658,1179,663,1082,685"/>
+<area shape="rect" id="Node000033" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1177,732,1319,757"/>
+<area shape="poly" id="edge32_Node000032_Node000033" title=" " alt="" coords="1083,705,1177,726,1176,732,1082,711"/>
+<area shape="rect" id="Node000035" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1196,683,1300,708"/>
+<area shape="poly" id="edge33_Node000032_Node000035" title=" " alt="" coords="1099,693,1182,693,1182,698,1099,698"/>
+<area shape="rect" id="Node000039" href="$nav_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates" alt="" coords="955,532,1094,557"/>
+<area shape="poly" id="edge36_Node000038_Node000039" title=" " alt="" coords="845,442,880,453,944,486,997,522,994,526,942,491,878,458,844,447"/>
+<area shape="poly" id="edge40_Node000039_Node000030" title=" " alt="" coords="1055,555,1207,624,1205,629,1053,560"/>
+<area shape="rect" id="Node000040" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="1178,483,1318,508"/>
+<area shape="poly" id="edge37_Node000039_Node000040" title=" " alt="" coords="1082,529,1176,508,1177,514,1083,535"/>
+<area shape="poly" id="edge38_Node000040_Node000022" title=" " alt="" coords="1318,484,1383,476,1384,482,1319,490"/>
+<area shape="poly" id="edge39_Node000040_Node000026" title=" " alt="" coords="1319,501,1360,507,1360,512,1318,507"/>
+<area shape="rect" id="Node000042" href="$blocks_8c.html#a736f2e555912fca000d0751dedb4e00f" title=" " alt="" coords="430,1025,613,1065"/>
+<area shape="poly" id="edge42_Node000041_Node000042" title=" " alt="" coords="309,942,420,1001,456,1017,454,1022,418,1006,306,947"/>
+<area shape="rect" id="Node000043" href="$mission__manager_8c.html#ae84f48d5a61636d61507ccc7f1f9e128" title=" " alt="" coords="684,994,867,1034"/>
+<area shape="poly" id="edge50_Node000041_Node000043" title=" " alt="" coords="372,940,671,993,670,998,371,945"/>
+<area shape="rect" id="Node000055" href="$datalink_2missionlib_2waypoints_8c.html#a632dcb46c33f5cf3726652ee477ff9bc" title=" " alt="" coords="438,873,605,913"/>
+<area shape="poly" id="edge51_Node000041_Node000055" title=" " alt="" coords="370,909,424,902,425,908,371,915"/>
+<area shape="poly" id="edge43_Node000042_Node000043" title=" " alt="" coords="612,1031,670,1024,670,1029,613,1036"/>
+<area shape="rect" id="Node000045" href="$mission__manager_8c.html#ad638b64fc964531fab6a78e1bb8e24d3" title=" " alt="" coords="695,930,855,970"/>
+<area shape="poly" id="edge45_Node000042_Node000045" title=" " alt="" coords="566,1022,671,980,693,972,694,977,673,984,568,1027"/>
+<area shape="rect" id="Node000049" href="$blocks_8c.html#a32f0b7d220e811165e54c8d7195e6b80" title=" " alt="" coords="698,1172,853,1197"/>
+<area shape="poly" id="edge47_Node000042_Node000049" title=" " alt="" coords="544,1063,600,1111,635,1137,673,1158,690,1165,688,1170,671,1163,632,1141,596,1115,541,1067"/>
+<area shape="rect" id="Node000050" href="$blocks_8c.html#abe128e10b21d503391ddfdb06f31699e" title=" " alt="" coords="698,1058,853,1098"/>
+<area shape="poly" id="edge48_Node000042_Node000050" title=" " alt="" coords="613,1054,685,1063,684,1069,612,1059"/>
+<area shape="rect" id="Node000051" href="$common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title=" " alt="" coords="713,1123,837,1148"/>
+<area shape="poly" id="edge49_Node000042_Node000051" title=" " alt="" coords="565,1062,673,1107,703,1117,701,1122,671,1113,563,1067"/>
+<area shape="rect" id="Node000044" href="$sys__time_8c.html#ac2ade8af0c9fbbf866026d99d60f9769" title="Cancel a system timer by id." alt="" coords="939,1001,1111,1027"/>
+<area shape="poly" id="edge44_Node000043_Node000044" title=" " alt="" coords="867,1011,925,1011,925,1017,867,1017"/>
+<area shape="rect" id="Node000046" href="$sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer." alt="" coords="935,937,1115,963"/>
+<area shape="poly" id="edge46_Node000045_Node000046" title=" " alt="" coords="855,947,921,947,921,953,855,953"/>
+<area shape="poly" id="edge55_Node000055_Node000029" title=" " alt="" coords="540,870,595,819,631,791,671,768,691,759,693,764,673,772,634,796,598,823,543,874"/>
+<area shape="poly" id="edge52_Node000055_Node000043" title=" " alt="" coords="553,911,608,945,673,980,691,987,689,992,671,984,605,950,550,915"/>
+<area shape="poly" id="edge53_Node000055_Node000045" title=" " alt="" coords="606,909,682,926,681,932,604,914"/>
+<area shape="rect" id="Node000056" href="$datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title=" " alt="" coords="706,880,845,905"/>
+<area shape="poly" id="edge54_Node000055_Node000056" title=" " alt="" coords="605,890,692,890,692,895,605,895"/>
+<area shape="rect" id="Node000059" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="705,831,845,856"/>
+<area shape="poly" id="edge56_Node000055_Node000059" title=" " alt="" coords="604,874,696,856,697,861,605,879"/>
+<area shape="rect" id="Node000060" href="$nav_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title=" " alt="" coords="709,781,841,807"/>
+<area shape="poly" id="edge58_Node000055_Node000060" title=" " alt="" coords="557,870,610,843,671,817,700,808,701,813,673,822,612,848,560,875"/>
+<area shape="poly" id="edge57_Node000059_Node000032" title=" " alt="" coords="845,829,877,817,914,794,949,768,1001,716,1005,720,952,772,917,799,880,822,847,834"/>
+<area shape="poly" id="edge59_Node000060_Node000039" title=" " alt="" coords="841,785,860,778,877,768,896,746,905,724,911,699,924,670,964,613,1001,566,1006,569,968,616,929,673,916,701,910,726,901,749,880,772,862,783,842,790"/>
 </map>

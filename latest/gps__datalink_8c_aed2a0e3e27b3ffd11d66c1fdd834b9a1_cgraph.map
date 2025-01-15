@@ -1,10 +1,18 @@
 <map id="gps_datalink_parse_EXTERNAL_POSE_SMALL" name="gps_datalink_parse_EXTERNAL_POSE_SMALL">
-<area shape="rect" id="node1" title="Parse the EXTERNAL_POSE_SMALL message and publish as GPS through ABI." alt="" coords="5,74,193,115"/>
-<area shape="rect" id="node2" href="$gps__datalink_8c.html#abc548e6359a5d430877db4ce4ced1ed6" title="Publish the GPS data." alt="" coords="241,81,400,108"/>
-<area shape="rect" id="node3" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF." alt="" coords="448,5,600,32"/>
-<area shape="rect" id="node4" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="648,31,795,57"/>
-<area shape="rect" id="node5" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="451,107,597,133"/>
-<area shape="rect" id="node6" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="472,157,576,184"/>
-<area shape="rect" id="node7" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="667,132,775,159"/>
-<area shape="rect" id="node8" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="669,183,774,209"/>
+<area shape="rect" id="Node000001" title="Parse the EXTERNAL_POSE_SMALL message and publish as GPS through ABI." alt="" coords="5,74,193,114"/>
+<area shape="rect" id="Node000002" href="$gps__datalink_8c.html#abc548e6359a5d430877db4ce4ced1ed6" title="Publish the GPS data." alt="" coords="241,81,400,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,91,228,91,228,97,193,97"/>
+<area shape="rect" id="Node000003" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF." alt="" coords="448,5,600,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,79,475,33,477,38,357,84"/>
+<area shape="rect" id="Node000004" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="648,31,795,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="400,81,634,52,634,57,400,87"/>
+<area shape="rect" id="Node000005" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="451,107,597,132"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="400,101,437,106,436,111,400,107"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="472,156,576,181"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="353,104,449,142,469,149,467,154,447,147,351,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="600,25,635,30,634,35,600,30"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="667,131,775,156"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="576,159,654,149,654,155,577,165"/>
+<area shape="rect" id="Node000008" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="669,180,774,205"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="577,172,655,182,655,187,576,178"/>
 </map>

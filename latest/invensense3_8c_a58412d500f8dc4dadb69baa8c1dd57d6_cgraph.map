@@ -1,8 +1,15 @@
 <map id="invensense3_reset_fifo" name="invensense3_reset_fifo">
-<area shape="rect" id="node1" title="Reset FIFO (can be useful in some situations)" alt="" coords="5,31,177,57"/>
-<area shape="rect" id="node2" href="$invensense3_8c.html#ac05f10030c3a473424198aed2a786eed" title="Write a register based on a combined bank/regsiter value." alt="" coords="225,23,387,65"/>
-<area shape="rect" id="node3" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="672,5,775,32"/>
-<area shape="rect" id="node5" href="$invensense3_8c.html#a5997f23694a35613e49e420902abe0b7" title="Select the correct register bank." alt="" coords="435,31,624,57"/>
-<area shape="rect" id="node6" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="677,68,770,95"/>
-<area shape="rect" id="node4" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="823,5,916,32"/>
+<area shape="rect" id="Node000001" title="Reset FIFO (can be useful in some situations)" alt="" coords="5,29,177,55"/>
+<area shape="rect" id="Node000002" href="$invensense3_8c.html#ac05f10030c3a473424198aed2a786eed" title="Write a register based on a combined bank/regsiter value." alt="" coords="225,22,387,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,39,212,39,212,45,178,45"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="672,5,775,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,21,434,14,529,11,624,14,658,14,658,20,624,19,529,16,435,19,387,26"/>
+<area shape="rect" id="Node000005" href="$invensense3_8c.html#a5997f23694a35613e49e420902abe0b7" title="Select the correct register bank." alt="" coords="435,29,624,55"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,39,421,39,421,45,387,45"/>
+<area shape="rect" id="Node000006" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="677,55,770,80"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="387,58,435,65,557,70,663,68,663,73,557,76,434,70,386,63"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="823,5,916,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="775,15,809,15,809,21,775,21"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="624,28,658,23,659,29,624,33"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="624,52,663,57,663,62,624,57"/>
 </map>

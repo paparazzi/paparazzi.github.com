@@ -1,15 +1,27 @@
 <map id="sw/airborne/peripherals/ms5611_regs.h" name="sw/airborne/peripherals/ms5611_regs.h">
-<area shape="rect" id="node1" title="Register definitions for MS5611 barometer." alt="" coords="347,5,522,47"/>
-<area shape="rect" id="node2" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="347,95,522,136"/>
-<area shape="rect" id="node3" href="$ms5611_8c.html" title="MS5611 and MS5607 barometer driver common functions (I2C and SPI)." alt="" coords="149,184,323,225"/>
-<area shape="rect" id="node4" href="$ms5611__i2c_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="347,184,522,225"/>
-<area shape="rect" id="node9" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="777,184,951,225"/>
-<area shape="rect" id="node5" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="5,273,200,315"/>
-<area shape="rect" id="node6" href="$baro__ms5611__i2c_8h.html" title=" " alt="" coords="225,273,431,315"/>
-<area shape="rect" id="node8" href="$ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="455,273,630,315"/>
-<area shape="rect" id="node7" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C." alt="" coords="225,363,431,404"/>
-<area shape="rect" id="node10" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="655,273,849,315"/>
-<area shape="rect" id="node11" href="$baro__ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="874,273,1081,315"/>
-<area shape="rect" id="node13" href="$ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="1105,273,1279,315"/>
-<area shape="rect" id="node12" href="$baro__ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="875,363,1080,404"/>
+<area shape="rect" id="Node000001" title="Register definitions for MS5611 barometer." alt="" coords="347,5,522,45"/>
+<area shape="rect" id="Node000002" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="347,93,522,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,59,437,93,432,93,432,59"/>
+<area shape="rect" id="Node000003" href="$ms5611_8c.html" title="MS5611 and MS5607 barometer driver common functions (I2C and SPI)." alt="" coords="149,181,323,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,141,281,184,278,179,377,136"/>
+<area shape="rect" id="Node000004" href="$ms5611__i2c_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="347,181,522,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="437,147,437,181,432,181,432,147"/>
+<area shape="rect" id="Node000009" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="777,181,951,221"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="536,132,777,180,776,185,535,137"/>
+<area shape="rect" id="Node000005" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="5,269,200,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="349,227,176,272,175,267,348,222"/>
+<area shape="rect" id="Node000006" href="$baro__ms5611__i2c_8h.html" title=" " alt="" coords="225,269,431,309"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="402,232,353,271,350,267,399,228"/>
+<area shape="rect" id="Node000008" href="$ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="455,269,630,309"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="471,228,520,267,517,271,468,232"/>
+<area shape="rect" id="Node000007" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C." alt="" coords="225,357,431,397"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="331,323,331,357,325,357,325,323"/>
+<area shape="rect" id="Node000010" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="655,269,849,309"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="830,232,778,271,775,267,826,228"/>
+<area shape="rect" id="Node000011" href="$baro__ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="874,269,1081,309"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="901,228,954,267,951,271,898,232"/>
+<area shape="rect" id="Node000013" href="$ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="1105,269,1279,309"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="950,222,1121,267,1120,272,948,227"/>
+<area shape="rect" id="Node000012" href="$baro__ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="875,357,1080,397"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="980,323,980,357,975,357,975,323"/>
 </map>

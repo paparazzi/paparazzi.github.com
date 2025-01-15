@@ -1,9 +1,16 @@
 <map id="stateSetNedToBodyRMat_f" name="stateSetNedToBodyRMat_f">
-<area shape="rect" id="node1" title="Set vehicle body attitude from rotation matrix (float)." alt="" coords="667,35,861,61"/>
-<area shape="rect" id="node2" href="$ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="432,5,619,32"/>
-<area shape="rect" id="node4" href="$ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="446,57,605,98"/>
-<area shape="rect" id="node3" href="$ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="227,5,384,32"/>
-<area shape="rect" id="node5" href="$ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="261,60,350,87"/>
-<area shape="rect" id="node7" href="$ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="269,111,342,137"/>
-<area shape="rect" id="node6" href="$ahrs__float__dcm__wrapper_8c.html#a012ca9a13f78c875aca0f18116a15560" title=" " alt="" coords="5,85,179,112"/>
+<area shape="rect" id="Node000001" title="Set vehicle body attitude from rotation matrix (float)." alt="" coords="667,35,861,60"/>
+<area shape="rect" id="Node000002" href="$ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="432,5,619,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,36,619,32,619,27,653,31"/>
+<area shape="rect" id="Node000004" href="$ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="446,55,605,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="653,63,605,69,605,63,653,58"/>
+<area shape="rect" id="Node000003" href="$ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="227,5,384,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,21,384,21,384,15,418,15"/>
+<area shape="rect" id="Node000005" href="$ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="261,59,350,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="432,76,350,75,350,69,432,71"/>
+<area shape="rect" id="Node000007" href="$ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="269,108,342,133"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="433,97,343,116,342,111,432,92"/>
+<area shape="rect" id="Node000006" href="$ahrs__float__dcm__wrapper_8c.html#a012ca9a13f78c875aca0f18116a15560" title=" " alt="" coords="5,84,179,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="247,81,179,89,178,84,247,76"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="255,118,179,109,179,104,255,112"/>
 </map>

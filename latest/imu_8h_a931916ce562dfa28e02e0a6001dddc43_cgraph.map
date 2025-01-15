@@ -1,17 +1,32 @@
 <map id="imu_SetBodyToImuCurrent" name="imu_SetBodyToImuCurrent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,188,200,215"/>
-<area shape="rect" id="node2" href="$imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="267,97,432,138"/>
-<area shape="rect" id="node9" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="499,209,667,236"/>
-<area shape="rect" id="node13" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="248,213,451,240"/>
-<area shape="rect" id="node14" href="$group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac" title="Test if attitudes are valid." alt="" coords="274,264,425,291"/>
-<area shape="rect" id="node3" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="515,5,651,32"/>
-<area shape="rect" id="node4" href="$group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb" title="Composition (multiplication) of two rotation matrices." alt="" coords="501,56,664,83"/>
-<area shape="rect" id="node5" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="502,107,663,133"/>
-<area shape="rect" id="node8" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="499,157,666,184"/>
-<area shape="rect" id="node6" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="718,107,885,133"/>
-<area shape="rect" id="node7" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="939,107,1089,133"/>
-<area shape="rect" id="node10" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="715,209,888,236"/>
-<area shape="rect" id="node11" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="937,159,1091,185"/>
-<area shape="rect" id="node12" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="936,209,1092,236"/>
-<area shape="rect" id="node15" href="$group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0" title="Test if orientations are valid." alt="" coords="503,264,663,291"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,184,200,209"/>
+<area shape="rect" id="Node000002" href="$imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="267,94,432,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,181,275,136,277,141,142,186"/>
+<area shape="rect" id="Node000009" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="499,205,667,231"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="200,190,320,189,451,194,503,200,503,206,450,199,320,194,200,195"/>
+<area shape="rect" id="Node000013" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="248,209,451,235"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="200,204,235,208,234,213,200,209"/>
+<area shape="rect" id="Node000014" href="$group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac" title="Test if attitudes are valid." alt="" coords="274,259,425,284"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="138,207,249,245,278,253,277,258,247,250,137,212"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="515,5,651,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,91,438,65,498,40,519,32,520,37,500,44,441,70,389,96"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb" title="Composition (multiplication) of two rotation matrices." alt="" coords="501,55,664,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="432,95,505,80,506,85,433,100"/>
+<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="502,104,663,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="433,112,488,113,488,118,433,118"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="499,153,666,179"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="433,130,512,148,511,153,432,135"/>
+<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="718,104,885,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="664,114,705,114,705,119,664,119"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="939,104,1089,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="885,114,925,114,925,119,885,119"/>
+<area shape="rect" id="Node000010" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="715,205,888,231"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="667,215,701,215,701,221,667,221"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="937,156,1091,181"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="856,203,945,182,946,187,857,208"/>
+<area shape="rect" id="Node000012" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="936,205,1092,231"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="888,215,922,215,922,221,888,221"/>
+<area shape="poly" id="edge13_Node000013_Node000009" title=" " alt="" coords="451,218,485,217,485,222,451,223"/>
+<area shape="rect" id="Node000015" href="$group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0" title="Test if orientations are valid." alt="" coords="503,259,663,284"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="425,269,489,269,489,274,425,274"/>
 </map>

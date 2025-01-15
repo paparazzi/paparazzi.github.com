@@ -57,9 +57,9 @@ var imu_8h =
       [ "mags", "imu_8h.html#aa6f435142522bcca80d62d93547f1e49", null ]
     ] ],
     [ "IMU_MAX_SENSORS", "imu_8h.html#ac541b6850c6b0318e71f450feb15cd52", null ],
-    [ "imu_get_accel", "imu_8h.html#a0f8ac241eeb395920f1d8edf8f0c7cf0", null ],
-    [ "imu_get_gyro", "imu_8h.html#a304a000b998533803b0d079c86e8f915", null ],
-    [ "imu_get_mag", "imu_8h.html#aeb392db1b0ad7340d0d32a78acea9e1e", null ],
+    [ "imu_get_accel", "imu_8h.html#a3bd2915a3c4a0e7965c5163398f3d00c", null ],
+    [ "imu_get_gyro", "imu_8h.html#a278e4263e3d1726cc0dd03ed8689f197", null ],
+    [ "imu_get_mag", "imu_8h.html#a9d352d575dc0e30a32e31b1b6fcd6211", null ],
     [ "imu_init", "imu_8h.html#a86a06fe7a9831292bd92867da2d12f80", null ],
     [ "imu_ResetBodyToImu", "imu_8h.html#ac9f5713ed33725e176e0501ecbe715a9", null ],
     [ "imu_set_defaults_accel", "imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba", null ],

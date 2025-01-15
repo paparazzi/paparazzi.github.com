@@ -1,17 +1,37 @@
 <map id="debug_snd_evt_nl" name="debug_snd_evt_nl">
-<area shape="rect" id="node1" title=" " alt="" coords="1575,195,1713,221"/>
-<area shape="rect" id="node2" href="$usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="1336,5,1527,32"/>
-<area shape="rect" id="node10" href="$usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command." alt="" coords="1340,57,1523,98"/>
-<area shape="rect" id="node11" href="$usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command." alt="" coords="1344,122,1519,163"/>
-<area shape="rect" id="node12" href="$usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command." alt="" coords="1344,187,1519,229"/>
-<area shape="rect" id="node13" href="$usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command." alt="" coords="1343,253,1519,294"/>
-<area shape="rect" id="node14" href="$usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command." alt="" coords="1346,318,1517,359"/>
-<area shape="rect" id="node15" href="$usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block." alt="" coords="1097,311,1279,353"/>
-<area shape="rect" id="node3" href="$usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block." alt="" coords="1088,195,1288,221"/>
-<area shape="rect" id="node4" href="$usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="Mass storage thread that processes commands." alt="" coords="877,289,1040,316"/>
-<area shape="rect" id="node5" href="$usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver." alt="" coords="748,289,829,316"/>
-<area shape="rect" id="node6" href="$usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title=" " alt="" coords="577,289,700,316"/>
-<area shape="rect" id="node7" href="$usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title=" " alt="" coords="411,289,529,316"/>
-<area shape="rect" id="node8" href="$usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title=" " alt="" coords="192,289,363,316"/>
-<area shape="rect" id="node9" href="$sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a" title=" " alt="" coords="5,289,144,316"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1575,191,1713,216"/>
+<area shape="rect" id="Node000002" href="$usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="1336,5,1527,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1629,179,1589,112,1560,76,1525,46,1501,33,1503,28,1528,41,1564,72,1594,109,1634,177"/>
+<area shape="rect" id="Node000010" href="$usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command." alt="" coords="1340,55,1523,95"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1619,183,1577,146,1525,110,1500,98,1502,93,1528,105,1581,142,1622,179"/>
+<area shape="rect" id="Node000011" href="$usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command." alt="" coords="1344,119,1519,159"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1587,189,1498,162,1499,157,1589,184"/>
+<area shape="rect" id="Node000012" href="$usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command." alt="" coords="1344,183,1519,223"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="1561,206,1519,206,1519,201,1561,201"/>
+<area shape="rect" id="Node000013" href="$usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command." alt="" coords="1343,247,1519,287"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1589,223,1499,250,1498,245,1587,218"/>
+<area shape="rect" id="Node000014" href="$usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command." alt="" coords="1346,311,1517,351"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="1622,228,1581,265,1528,302,1502,314,1500,309,1525,297,1577,261,1619,224"/>
+<area shape="rect" id="Node000015" href="$usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block." alt="" coords="1097,305,1279,345"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="1635,230,1620,263,1597,301,1566,338,1528,366,1490,380,1450,387,1410,389,1369,385,1294,369,1233,347,1235,342,1295,363,1370,380,1410,383,1450,382,1489,375,1525,361,1563,334,1593,298,1615,260,1631,228"/>
+<area shape="rect" id="Node000003" href="$usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block." alt="" coords="1088,191,1288,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1352,38,1337,46,1291,81,1252,122,1200,192,1195,189,1248,118,1288,77,1335,41,1350,33"/>
+<area shape="rect" id="Node000004" href="$usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="Mass storage thread that processes commands." alt="" coords="877,284,1040,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1144,224,992,286,990,281,1142,219"/>
+<area shape="rect" id="Node000005" href="$usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver." alt="" coords="748,284,829,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="863,299,829,299,829,294,863,294"/>
+<area shape="rect" id="Node000006" href="$usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title=" " alt="" coords="577,284,700,309"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="734,299,700,299,700,294,734,294"/>
+<area shape="rect" id="Node000007" href="$usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title=" " alt="" coords="411,284,529,309"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="563,299,530,299,530,294,563,294"/>
+<area shape="rect" id="Node000008" href="$usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title=" " alt="" coords="192,284,363,309"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="397,299,363,299,363,294,397,294"/>
+<area shape="rect" id="Node000009" href="$sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a" title=" " alt="" coords="5,284,144,309"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="178,299,144,299,144,294,178,294"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="1353,103,1337,110,1263,153,1207,193,1204,188,1260,148,1335,105,1350,98"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="1342,166,1238,193,1237,188,1341,160"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="1330,206,1288,206,1288,201,1330,201"/>
+<area shape="poly" id="edge16_Node000013_Node000003" title=" " alt="" coords="1341,246,1237,219,1238,214,1342,241"/>
+<area shape="poly" id="edge18_Node000014_Node000003" title=" " alt="" coords="1350,309,1335,302,1260,258,1204,218,1207,214,1263,254,1337,297,1353,304"/>
+<area shape="poly" id="edge20_Node000015_Node000004" title=" " alt="" coords="1082,314,1040,309,1040,304,1083,309"/>
 </map>

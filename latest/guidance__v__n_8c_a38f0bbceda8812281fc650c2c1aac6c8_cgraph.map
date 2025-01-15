@@ -1,9 +1,17 @@
 <map id="v_ctl_climb_loop" name="v_ctl_climb_loop">
-<area shape="rect" id="node1" title="Auto&#45;throttle inner loop." alt="" coords="5,31,136,57"/>
-<area shape="rect" id="node2" href="$guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a" title=" " alt="" coords="192,5,311,32"/>
-<area shape="rect" id="node7" href="$guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285" title=" " alt="" coords="184,56,319,83"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="368,5,520,32"/>
-<area shape="rect" id="node4" href="$group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float)." alt="" coords="367,56,521,83"/>
-<area shape="rect" id="node5" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="569,56,728,83"/>
-<area shape="rect" id="node6" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="776,56,924,83"/>
+<area shape="rect" id="Node000001" title="Auto&#45;throttle inner loop." alt="" coords="5,31,136,56"/>
+<area shape="rect" id="Node000002" href="$guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a" title=" " alt="" coords="192,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,32,178,26,179,31,137,37"/>
+<area shape="rect" id="Node000007" href="$guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285" title=" " alt="" coords="184,55,319,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="137,49,170,54,169,59,136,55"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="368,5,520,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,15,354,15,354,21,311,21"/>
+<area shape="rect" id="Node000004" href="$group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="367,55,521,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="302,28,381,49,380,54,301,33"/>
+<area shape="rect" id="Node000005" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="569,55,728,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="522,65,556,65,556,70,522,70"/>
+<area shape="rect" id="Node000006" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="776,55,924,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="729,65,762,65,762,70,729,70"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="301,52,380,32,381,37,302,57"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="319,65,353,65,353,70,319,70"/>
 </map>

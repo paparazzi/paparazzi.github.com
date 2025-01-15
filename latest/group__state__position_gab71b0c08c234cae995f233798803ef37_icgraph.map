@@ -1,19 +1,35 @@
 <map id="stateGetHmslOrigin_f" name="stateGetHmslOrigin_f">
-<area shape="rect" id="node1" title="Get the HMSL of the frame origin (float)" alt="" coords="669,173,832,200"/>
-<area shape="rect" id="node2" href="$ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="503,5,570,32"/>
-<area shape="rect" id="node4" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="465,57,608,98"/>
-<area shape="rect" id="node7" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="452,123,621,149"/>
-<area shape="rect" id="node10" href="$common__nav_8c.html#a3288149314aa748ce8aa507335f50bfd" title="Reset the altitude reference to the current GPS alt." alt="" coords="481,173,592,200"/>
-<area shape="rect" id="node11" href="$common__nav_8c.html#a1886ff619a5c03dc6c54729f301fa62e" title="Reset the geographic reference to the current GPS fix." alt="" coords="459,224,614,251"/>
-<area shape="rect" id="node12" href="$rotorcraft_2navigation_8c.html#afe6d4a5dd1de94f57126d27a6baac58f" title=" " alt="" coords="471,275,602,301"/>
-<area shape="rect" id="node16" href="$air__data_8c.html#aca0d080f4ac927cd0096741f520e68bf" title=" " alt="" coords="471,325,602,352"/>
-<area shape="rect" id="node3" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="196,5,404,32"/>
-<area shape="rect" id="node5" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="267,64,333,91"/>
-<area shape="rect" id="node6" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="5,57,148,98"/>
-<area shape="rect" id="node8" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="249,119,351,145"/>
-<area shape="rect" id="node9" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="233,169,367,196"/>
-<area shape="rect" id="node13" href="$rotorcraft_2navigation_8c.html#a4722a6d624ce0bb547c43724e2bb9f71" title=" " alt="" coords="263,275,337,301"/>
-<area shape="rect" id="node14" href="$rotorcraft_2navigation_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation." alt="" coords="31,249,122,276"/>
-<area shape="rect" id="node15" href="$rotorcraft_2navigation_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="7,300,147,327"/>
-<area shape="rect" id="node17" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="249,325,351,352"/>
+<area shape="rect" id="Node000001" title="Get the HMSL of the frame origin (float)" alt="" coords="669,169,832,195"/>
+<area shape="rect" id="Node000002" href="$ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="503,5,570,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,160,685,102,655,72,620,46,595,34,569,26,571,21,597,29,623,41,658,68,689,99,736,157"/>
+<area shape="rect" id="Node000004" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="465,55,608,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="717,164,620,110,593,98,595,93,623,105,719,159"/>
+<area shape="rect" id="Node000007" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="452,120,621,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="681,169,592,148,593,143,682,164"/>
+<area shape="rect" id="Node000010" href="$common__nav_8c.html#a3288149314aa748ce8aa507335f50bfd" title="Reset the altitude reference to the current GPS alt." alt="" coords="481,169,592,195"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="655,185,592,185,592,179,655,179"/>
+<area shape="rect" id="Node000011" href="$common__nav_8c.html#a1886ff619a5c03dc6c54729f301fa62e" title="Reset the geographic reference to the current GPS fix." alt="" coords="459,219,614,244"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="682,200,593,221,592,216,681,195"/>
+<area shape="rect" id="Node000012" href="$rotorcraft_2navigation_8c.html#afe6d4a5dd1de94f57126d27a6baac58f" title=" " alt="" coords="471,268,602,293"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="720,204,675,231,622,258,588,270,586,265,620,253,672,227,717,200"/>
+<area shape="rect" id="Node000016" href="$air__data_8c.html#aca0d080f4ac927cd0096741f520e68bf" title=" " alt="" coords="471,317,602,343"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="733,207,686,257,656,284,623,307,594,320,592,315,620,302,653,280,683,254,729,204"/>
+<area shape="rect" id="Node000003" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="196,5,404,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,21,404,21,404,15,490,15"/>
+<area shape="rect" id="Node000005" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="267,63,333,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="452,78,334,78,334,73,452,73"/>
+<area shape="rect" id="Node000006" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="5,55,148,95"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="253,78,148,78,148,73,253,73"/>
+<area shape="rect" id="Node000008" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="249,116,351,141"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="438,134,352,132,352,127,438,128"/>
+<area shape="rect" id="Node000009" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="233,165,367,191"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="457,151,368,168,367,163,456,145"/>
+<area shape="rect" id="Node000013" href="$rotorcraft_2navigation_8c.html#a4722a6d624ce0bb547c43724e2bb9f71" title=" " alt="" coords="263,268,337,293"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="457,283,337,283,337,278,457,278"/>
+<area shape="rect" id="Node000014" href="$rotorcraft_2navigation_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation." alt="" coords="31,244,122,269"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="249,278,122,264,122,259,249,273"/>
+<area shape="rect" id="Node000015" href="$rotorcraft_2navigation_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="7,293,147,319"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="249,289,147,301,147,295,248,284"/>
+<area shape="rect" id="Node000017" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="249,317,351,343"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="457,333,352,333,352,327,457,327"/>
 </map>

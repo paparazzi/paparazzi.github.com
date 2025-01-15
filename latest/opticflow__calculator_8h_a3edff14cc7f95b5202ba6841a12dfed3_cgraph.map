@@ -1,48 +1,108 @@
 <map id="calc_fast9_lukas_kanade" name="calc_fast9_lukas_kanade">
-<area shape="rect" id="node1" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="5,456,188,483"/>
-<area shape="rect" id="node2" href="$act__fast_8c.html#ac19c04b1275447322d4739824fa76d42" title="Do an ACT&#45;FAST corner detection." alt="" coords="284,56,359,83"/>
-<area shape="rect" id="node6" href="$linear__flow__fit_8c.html#a6e7943196456df15d5f62bee064b38a8" title="Analyze a flow field, retrieving information on relative velocities and rotations,..." alt="" coords="250,212,393,239"/>
-<area shape="rect" id="node7" href="$linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness,..." alt="" coords="246,263,397,305"/>
-<area shape="rect" id="node14" href="$opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting." alt="" coords="279,329,363,356"/>
-<area shape="rect" id="node15" href="$fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection." alt="" coords="499,107,601,133"/>
-<area shape="rect" id="node16" href="$size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners." alt="" coords="244,380,399,407"/>
-<area shape="rect" id="node17" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same." alt="" coords="271,431,372,457"/>
-<area shape="rect" id="node18" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="953,427,1064,453"/>
-<area shape="rect" id="node19" href="$image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="461,883,639,909"/>
-<area shape="rect" id="node22" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="246,657,397,684"/>
-<area shape="rect" id="node24" href="$image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="265,708,377,735"/>
-<area shape="rect" id="node25" href="$image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale." alt="" coords="245,759,398,785"/>
-<area shape="rect" id="node26" href="$opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title=" " alt="" coords="236,157,407,184"/>
-<area shape="rect" id="node28" href="$lucas__kanade_8c.html#a6a8349de0d6e2015151312034c07ed0d" title=" " alt="" coords="271,556,372,583"/>
-<area shape="rect" id="node39" href="$opticflow__calculator_8c.html#a3332fc643e3c25e5ac27404e75b14299" title=" " alt="" coords="243,912,399,939"/>
-<area shape="rect" id="node46" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish." alt="" coords="271,963,371,989"/>
-<area shape="rect" id="node3" href="$fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel." alt="" coords="479,5,621,32"/>
-<area shape="rect" id="node5" href="$image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location." alt="" coords="469,56,631,83"/>
-<area shape="rect" id="node4" href="$fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation." alt="" coords="713,56,855,83"/>
-<area shape="rect" id="node8" href="$linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field." alt="" coords="475,209,625,250"/>
-<area shape="rect" id="node9" href="$linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness,..." alt="" coords="476,275,624,301"/>
-<area shape="rect" id="node10" href="$pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition." alt="" coords="726,224,842,251"/>
-<area shape="rect" id="node13" href="$pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver." alt="" coords="705,275,863,301"/>
-<area shape="rect" id="node11" href="$pprz__matrix__decomp__float_8c.html#ac7066d363876a03bf650ffdb803aa9df" title=" " alt="" coords="983,199,1034,225"/>
-<area shape="rect" id="node12" href="$pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions." alt="" coords="975,249,1042,276"/>
-<area shape="rect" id="node20" href="$image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image." alt="" coords="700,933,868,960"/>
-<area shape="rect" id="node21" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="923,908,1095,935"/>
-<area shape="rect" id="node23" href="$image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="455,933,645,960"/>
-<area shape="rect" id="node27" href="$opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column." alt="" coords="505,157,595,184"/>
-<area shape="rect" id="node29" href="$image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation." alt="" coords="712,629,856,656"/>
-<area shape="rect" id="node30" href="$image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="717,731,851,757"/>
-<area shape="rect" id="node31" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image." alt="" coords="736,528,832,555"/>
-<area shape="rect" id="node32" href="$image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]." alt="" coords="719,781,849,808"/>
-<area shape="rect" id="node33" href="$image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="722,832,846,859"/>
-<area shape="rect" id="node34" href="$image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="693,579,875,605"/>
-<area shape="rect" id="node35" href="$lucas__kanade_8c.html#aec51a5433258fa6d3608ae6a76531945" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="485,680,615,707"/>
-<area shape="rect" id="node36" href="$image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="493,477,607,504"/>
-<area shape="rect" id="node37" href="$image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements." alt="" coords="713,477,855,504"/>
-<area shape="rect" id="node38" href="$image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding." alt="" coords="709,427,859,453"/>
-<area shape="rect" id="node40" href="$undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates." alt="" coords="474,985,626,1026"/>
-<area shape="rect" id="node43" href="$undistortion_8c.html#a8de5dc518fd2c56789b57c9561b190e8" title="Transform normalized coordinates to distorted pixel coordinates." alt="" coords="467,1078,633,1119"/>
-<area shape="rect" id="node41" href="$undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method." alt="" coords="709,984,859,1011"/>
-<area shape="rect" id="node42" href="$undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates." alt="" coords="704,1035,864,1061"/>
-<area shape="rect" id="node44" href="$undistortion_8c.html#a8e2c52fb82e4e3ee37c424ce13d03c29" title="Distort normalized image coordinates with the invertible Dhane method." alt="" coords="717,1085,851,1112"/>
-<area shape="rect" id="node45" href="$undistortion_8c.html#a44a90a0656990482d07b3d8ac7928ea6" title="Transform normalized coordinates to pixel coordinates." alt="" coords="704,1136,864,1163"/>
+<area shape="rect" id="Node000001" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="5,447,188,472"/>
+<area shape="rect" id="Node000002" href="$act__fast_8c.html#ac19c04b1275447322d4739824fa76d42" title="Do an ACT&#45;FAST corner detection." alt="" coords="284,55,359,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,446,106,385,128,292,146,241,169,189,198,141,234,97,251,85,270,76,272,81,254,89,238,101,203,144,174,192,151,242,133,294,111,386,102,447"/>
+<area shape="rect" id="Node000006" href="$linear__flow__fit_8c.html#a6e7943196456df15d5f62bee064b38a8" title="Analyze a flow field, retrieving information on relative velocities and rotations,..." alt="" coords="250,208,393,233"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="100,446,116,406,144,352,184,294,208,267,234,244,245,237,248,241,238,248,211,271,188,297,149,355,121,409,105,448"/>
+<area shape="rect" id="Node000007" href="$linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness,..." alt="" coords="246,258,397,298"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="105,445,155,380,192,342,234,308,244,302,247,307,238,312,196,346,159,384,109,448"/>
+<area shape="rect" id="Node000014" href="$opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting." alt="" coords="279,323,363,348"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="111,444,163,402,198,378,235,357,265,345,267,350,237,362,201,382,166,406,114,448"/>
+<area shape="rect" id="Node000015" href="$fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection." alt="" coords="499,104,601,129"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="96,446,105,389,127,304,145,259,168,215,198,175,234,141,264,124,295,111,362,98,428,97,485,102,485,107,427,102,362,103,297,116,266,129,238,145,202,178,173,218,149,261,132,306,110,390,102,447"/>
+<area shape="rect" id="Node000016" href="$size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners." alt="" coords="244,372,399,397"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="130,444,235,406,259,399,261,404,237,411,132,449"/>
+<area shape="rect" id="Node000017" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same." alt="" coords="271,421,372,447"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="188,446,257,439,257,444,189,452"/>
+<area shape="rect" id="Node000018" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="953,420,1064,445"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="155,469,209,477,274,480,341,474,374,467,405,456,420,445,429,431,437,417,453,404,512,377,564,359,612,349,658,346,705,349,755,356,875,378,926,393,971,411,969,416,925,398,874,383,755,361,705,354,658,351,613,355,566,364,514,382,456,408,441,420,433,434,424,448,408,460,376,472,342,480,274,486,209,482,154,475"/>
+<area shape="rect" id="Node000019" href="$image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="461,869,639,895"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="111,470,162,523,198,552,237,578,262,589,285,594,327,597,368,603,388,613,409,631,427,658,436,685,437,712,434,738,432,764,433,790,440,816,457,843,480,861,477,865,453,846,435,818,427,791,427,764,429,737,432,711,430,686,423,660,405,634,385,618,366,608,327,602,284,600,260,594,235,583,195,557,159,526,107,474"/>
+<area shape="rect" id="Node000022" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="246,645,397,671"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="108,471,156,542,194,586,238,624,262,638,260,642,234,628,190,589,152,546,103,474"/>
+<area shape="rect" id="Node000024" href="$image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="265,695,377,720"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="105,471,120,512,148,568,187,628,211,656,238,680,254,690,251,694,234,684,207,660,183,632,143,571,116,514,100,473"/>
+<area shape="rect" id="Node000025" href="$image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale." alt="" coords="245,744,398,769"/>
+<area shape="poly" id="edge27_Node000001_Node000025" title=" " alt="" coords="103,472,116,520,142,590,160,628,182,665,208,699,238,729,246,735,243,740,234,733,204,703,177,668,155,630,137,592,111,522,98,473"/>
+<area shape="rect" id="Node000026" href="$opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title=" " alt="" coords="236,156,407,181"/>
+<area shape="poly" id="edge28_Node000001_Node000026" title=" " alt="" coords="99,445,112,398,138,330,178,257,204,223,234,193,246,185,249,190,238,197,208,227,183,260,143,332,117,400,104,447"/>
+<area shape="rect" id="Node000028" href="$lucas__kanade_8c.html#adc6992dd246333565509c082600de8d2" title=" " alt="" coords="271,544,372,569"/>
+<area shape="poly" id="edge31_Node000001_Node000028" title=" " alt="" coords="128,470,280,536,278,541,126,475"/>
+<area shape="rect" id="Node000039" href="$opticflow__calculator_8c.html#a3332fc643e3c25e5ac27404e75b14299" title=" " alt="" coords="243,896,399,921"/>
+<area shape="poly" id="edge53_Node000001_Node000039" title=" " alt="" coords="105,472,155,599,194,689,238,779,272,836,305,883,300,886,268,839,234,782,189,691,150,601,100,474"/>
+<area shape="rect" id="Node000046" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish." alt="" coords="271,945,371,971"/>
+<area shape="poly" id="edge60_Node000001_Node000046" title=" " alt="" coords="100,472,102,550,108,608,118,673,135,742,159,810,193,875,238,931,260,945,257,949,234,935,189,877,154,812,130,743,113,674,102,609,97,550,95,472"/>
+<area shape="rect" id="Node000003" href="$fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel." alt="" coords="479,5,621,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,57,476,31,477,36,360,62"/>
+<area shape="rect" id="Node000005" href="$image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location." alt="" coords="469,55,631,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="359,65,455,65,455,70,359,70"/>
+<area shape="rect" id="Node000004" href="$fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation." alt="" coords="713,55,855,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="611,28,710,49,709,54,610,33"/>
+<area shape="rect" id="Node000008" href="$linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field." alt="" coords="475,203,625,243"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="396,258,461,242,462,247,397,263"/>
+<area shape="rect" id="Node000009" href="$linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness,..." alt="" coords="476,268,624,293"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="397,276,462,277,462,282,397,282"/>
+<area shape="rect" id="Node000010" href="$pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition." alt="" coords="726,219,842,244"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="610,265,712,244,713,249,611,271"/>
+<area shape="rect" id="Node000013" href="$pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver." alt="" coords="705,268,863,293"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="625,278,691,278,691,283,625,283"/>
+<area shape="rect" id="Node000011" href="$pprz__matrix__decomp__float_8c.html#ac7066d363876a03bf650ffdb803aa9df" title=" " alt="" coords="983,195,1034,220"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="842,223,969,209,970,214,843,228"/>
+<area shape="rect" id="Node000012" href="$pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions." alt="" coords="975,244,1042,269"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="843,235,962,249,961,254,842,241"/>
+<area shape="poly" id="edge15_Node000015_Node000004" title=" " alt="" coords="601,103,709,80,711,85,602,109"/>
+<area shape="rect" id="Node000020" href="$image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image." alt="" coords="700,919,868,944"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="611,892,710,913,709,918,610,897"/>
+<area shape="rect" id="Node000021" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="923,893,1095,919"/>
+<area shape="poly" id="edge22_Node000019_Node000021" title=" " alt="" coords="639,884,909,898,909,903,639,889"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="868,919,909,915,909,920,869,924"/>
+<area shape="rect" id="Node000023" href="$image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="455,919,645,944"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="394,669,409,680,428,709,436,738,437,766,433,795,430,822,430,850,438,877,457,904,462,909,458,913,453,908,433,879,425,851,424,822,428,794,431,766,431,738,423,711,405,684,390,673"/>
+<area shape="poly" id="edge25_Node000023_Node000020" title=" " alt="" coords="645,929,686,929,686,934,645,934"/>
+<area shape="poly" id="edge30_Node000026_Node000015" title=" " alt="" coords="377,153,485,129,486,134,379,159"/>
+<area shape="rect" id="Node000027" href="$opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column." alt="" coords="505,153,595,179"/>
+<area shape="poly" id="edge29_Node000026_Node000027" title=" " alt="" coords="407,165,491,164,491,169,407,170"/>
+<area shape="poly" id="edge33_Node000028_Node000018" title=" " alt="" coords="345,542,405,501,418,487,427,474,437,461,453,449,515,422,581,404,649,394,717,391,782,393,843,398,943,414,942,420,843,403,782,398,717,396,650,399,583,409,517,427,456,454,441,465,432,477,423,491,408,505,348,546"/>
+<area shape="rect" id="Node000029" href="$image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation." alt="" coords="712,617,856,643"/>
+<area shape="poly" id="edge32_Node000028_Node000029" title=" " alt="" coords="373,563,455,577,699,615,698,620,454,582,372,568"/>
+<area shape="rect" id="Node000030" href="$image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="717,719,851,744"/>
+<area shape="poly" id="edge34_Node000028_Node000030" title=" " alt="" coords="373,566,392,574,409,587,421,602,427,618,431,648,436,676,444,689,456,701,484,718,515,731,580,745,646,748,705,743,705,748,646,753,580,750,513,736,482,723,453,705,439,692,431,678,426,649,422,619,416,605,405,591,389,579,371,570"/>
+<area shape="rect" id="Node000031" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image." alt="" coords="736,519,832,544"/>
+<area shape="poly" id="edge35_Node000028_Node000031" title=" " alt="" coords="372,551,722,532,723,537,372,557"/>
+<area shape="rect" id="Node000032" href="$image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]." alt="" coords="719,768,849,793"/>
+<area shape="poly" id="edge36_Node000028_Node000032" title=" " alt="" coords="373,565,392,574,409,587,424,609,430,632,430,676,430,697,432,717,440,736,456,755,485,774,517,787,551,796,587,801,656,801,717,793,718,799,656,806,586,806,550,801,516,792,483,778,453,759,435,739,427,718,424,697,425,676,425,633,419,611,405,590,389,578,371,569"/>
+<area shape="rect" id="Node000033" href="$image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="722,817,846,843"/>
+<area shape="poly" id="edge37_Node000028_Node000033" title=" " alt="" coords="373,564,392,573,409,587,427,617,434,646,433,676,429,704,426,732,427,759,436,785,456,809,474,819,498,826,563,835,638,836,708,833,708,838,638,841,563,840,497,832,472,824,453,813,431,787,421,760,420,732,424,704,428,675,429,647,422,619,405,590,389,578,371,569"/>
+<area shape="rect" id="Node000034" href="$image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="693,568,875,593"/>
+<area shape="poly" id="edge38_Node000028_Node000034" title=" " alt="" coords="372,557,679,573,679,578,372,562"/>
+<area shape="rect" id="Node000035" href="$lucas__kanade_8c.html#ade0d457b31d464e5e9c2e8ca6309474e" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="485,667,615,692"/>
+<area shape="poly" id="edge39_Node000028_Node000035" title=" " alt="" coords="370,567,408,587,424,602,433,617,441,631,456,645,483,659,480,664,453,649,437,635,428,620,420,605,405,591,368,572"/>
+<area shape="rect" id="Node000036" href="$image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="493,464,607,489"/>
+<area shape="poly" id="edge47_Node000028_Node000036" title=" " alt="" coords="356,541,454,506,497,491,499,496,456,511,358,546"/>
+<area shape="poly" id="edge41_Node000035_Node000018" title=" " alt="" coords="615,688,674,693,741,691,810,679,843,668,873,652,899,633,921,609,957,556,982,502,998,458,1003,460,987,504,962,559,925,613,902,637,876,656,845,672,811,684,741,697,674,698,615,693"/>
+<area shape="poly" id="edge40_Node000035_Node000029" title=" " alt="" coords="610,664,709,643,710,648,611,669"/>
+<area shape="poly" id="edge42_Node000035_Node000030" title=" " alt="" coords="609,689,714,713,713,718,607,695"/>
+<area shape="poly" id="edge43_Node000035_Node000031" title=" " alt="" coords="561,664,613,611,651,580,692,553,722,541,724,546,695,558,654,584,617,615,564,668"/>
+<area shape="poly" id="edge44_Node000035_Node000032" title=" " alt="" coords="573,690,627,721,694,753,719,761,717,767,692,758,625,725,570,694"/>
+<area shape="poly" id="edge45_Node000035_Node000033" title=" " alt="" coords="564,690,617,744,654,776,695,802,712,810,710,815,692,807,651,780,613,748,560,694"/>
+<area shape="poly" id="edge46_Node000035_Node000034" title=" " alt="" coords="571,664,625,634,692,602,714,595,716,600,694,607,627,638,574,669"/>
+<area shape="poly" id="edge50_Node000036_Node000031" title=" " alt="" coords="606,487,723,515,722,520,604,492"/>
+<area shape="rect" id="Node000037" href="$image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements." alt="" coords="713,469,855,495"/>
+<area shape="poly" id="edge48_Node000036_Node000037" title=" " alt="" coords="608,475,699,477,699,483,608,481"/>
+<area shape="rect" id="Node000038" href="$image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding." alt="" coords="709,420,859,445"/>
+<area shape="poly" id="edge51_Node000036_Node000038" title=" " alt="" coords="607,463,702,445,703,450,608,469"/>
+<area shape="poly" id="edge49_Node000037_Node000018" title=" " alt="" coords="842,467,939,445,940,450,843,472"/>
+<area shape="poly" id="edge52_Node000038_Node000018" title=" " alt="" coords="860,430,939,430,939,435,860,435"/>
+<area shape="rect" id="Node000040" href="$undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates." alt="" coords="474,969,626,1009"/>
+<area shape="poly" id="edge54_Node000039_Node000040" title=" " alt="" coords="373,919,408,930,456,953,478,961,476,966,454,958,406,935,372,924"/>
+<area shape="rect" id="Node000043" href="$undistortion_8c.html#a8de5dc518fd2c56789b57c9561b190e8" title="Transform normalized coordinates to distorted pixel coordinates." alt="" coords="467,1059,633,1099"/>
+<area shape="poly" id="edge57_Node000039_Node000043" title=" " alt="" coords="389,919,408,931,427,952,435,974,442,996,457,1019,496,1050,493,1054,453,1022,437,998,430,976,422,955,405,935,386,924"/>
+<area shape="rect" id="Node000041" href="$undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method." alt="" coords="709,968,859,993"/>
+<area shape="poly" id="edge55_Node000040_Node000041" title=" " alt="" coords="626,983,695,981,695,986,627,989"/>
+<area shape="rect" id="Node000042" href="$undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates." alt="" coords="704,1017,864,1043"/>
+<area shape="poly" id="edge56_Node000040_Node000042" title=" " alt="" coords="627,999,698,1012,697,1017,626,1005"/>
+<area shape="rect" id="Node000044" href="$undistortion_8c.html#a8e2c52fb82e4e3ee37c424ce13d03c29" title="Distort normalized image coordinates with the invertible Dhane method." alt="" coords="717,1067,851,1092"/>
+<area shape="poly" id="edge58_Node000043_Node000044" title=" " alt="" coords="633,1077,703,1077,703,1082,633,1082"/>
+<area shape="rect" id="Node000045" href="$undistortion_8c.html#a44a90a0656990482d07b3d8ac7928ea6" title="Transform normalized coordinates to pixel coordinates." alt="" coords="704,1116,864,1141"/>
+<area shape="poly" id="edge59_Node000043_Node000045" title=" " alt="" coords="633,1094,710,1110,709,1116,632,1099"/>
 </map>

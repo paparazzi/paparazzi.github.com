@@ -21,10 +21,6 @@ var nav__trinity_8c =
     [ "NAV_TRINITY_LWC_ID", "nav__trinity_8c.html#a487a04b7a515ed9756b613b3ede2e404", null ],
     [ "NAV_TRINITY_RECOVER_MAX_TURN", "nav__trinity_8c.html#a2b3c6885c0df60172d9ff6b0ca8157cc", null ],
     [ "RotationDir", "nav__trinity_8c.html#ac3397850d31ee59c768442cee8d3ad0d", [
-      [ "LACE_LEFT", "nav__lace_8c.html#ac3397850d31ee59c768442cee8d3ad0dac870881f1813a0996b4c30db95c81c17", null ],
-      [ "LACE_RIGHT", "nav__lace_8c.html#ac3397850d31ee59c768442cee8d3ad0daaa950fb9e4df768ea681d9560e8885a7", null ],
-      [ "RSTT_LEFT", "nav__rosette_8c.html#ac3397850d31ee59c768442cee8d3ad0da5ee44fce5a30554839ca0661042d5b0e", null ],
-      [ "RSTT_RIGHT", "nav__rosette_8c.html#ac3397850d31ee59c768442cee8d3ad0dabc27fa1534aa88e4af504222eff9909e", null ],
       [ "TRINITY_LEFT", "nav__trinity_8c.html#ac3397850d31ee59c768442cee8d3ad0da498cbb63b9cc1539de049c90e4860451", null ],
       [ "TRINITY_RIGHT", "nav__trinity_8c.html#ac3397850d31ee59c768442cee8d3ad0da018ae5377ff0443e013e410e39c0e6b4", null ]
     ] ],

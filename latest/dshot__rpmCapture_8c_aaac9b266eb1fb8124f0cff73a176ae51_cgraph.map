@@ -1,18 +1,33 @@
 <map id="dshotRpmCatchErps" name="dshotRpmCatchErps">
-<area shape="rect" id="node1" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="5,132,159,159"/>
-<area shape="rect" id="node2" href="$hal__stm32__dma_8h.html#a6e67217a77cfebb8961f992e5f85f8da" title=" " alt="" coords="207,5,405,32"/>
-<area shape="rect" id="node3" href="$hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30" title="Starts a DMA transaction." alt="" coords="237,56,375,83"/>
-<area shape="rect" id="node7" href="$hal__stm32__dma_8c.html#ac2bef3d2e495afefdd5fb7585e9ebf81" title="Stops an ongoing transaction." alt="" coords="235,107,377,133"/>
-<area shape="rect" id="node9" href="$dshot__rpmCapture_8c.html#a1373cdf0419ab22527dc4e5709135c49" title="convert DMA buffer full of pulse length into raw ERPS frame" alt="" coords="221,157,391,184"/>
-<area shape="rect" id="node10" href="$dshot__rpmCapture_8c.html#a5d315c80fe968d1b01583ca9bbe369ef" title="start the DMA capture" alt="" coords="255,208,357,235"/>
-<area shape="rect" id="node14" href="$dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022" title="stop the DMA capture" alt="" coords="255,259,357,285"/>
-<area shape="rect" id="node4" href="$hal__stm32__dma_8c.html#a572bb7d0ec656fb7a86d18f319b43db8" title="Starts a DMA transaction." alt="" coords="473,56,615,83"/>
-<area shape="rect" id="node5" href="$hal__stm32__dma_8c.html#aca730123d24b378683330626bd0f7603" title="Starts a DMA transaction." alt="" coords="683,56,857,83"/>
-<area shape="rect" id="node6" href="$hal__stm32__dma_8c.html#a8b001b838d393609f358cdaeff7c6bb2" title=" " alt="" coords="905,56,1155,83"/>
-<area shape="rect" id="node8" href="$hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction." alt="" coords="458,107,630,133"/>
-<area shape="rect" id="node11" href="$timerDmaCache_8c.html#a3e4be0aff366297301619eb9041ebc35" title=" " alt="" coords="453,157,635,184"/>
-<area shape="rect" id="node13" href="$input__capture__arch_8c.html#a4bba4ce9ff6278f324c6dc95df5622bf" title="start to capture" alt="" coords="475,208,613,235"/>
-<area shape="rect" id="node12" href="$timerDmaCache_8c.html#ab3f50b7e1fff277d6847fe0602d64544" title=" " alt="" coords="697,157,843,184"/>
-<area shape="rect" id="node15" href="$input__capture__arch_8c.html#a9d2e93c6aede9747fa79ef150d1e314c" title=" " alt="" coords="481,259,607,285"/>
-<area shape="rect" id="node16" href="$input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190" title="stop to capture" alt="" coords="477,309,611,336"/>
+<area shape="rect" id="Node000001" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="5,129,159,155"/>
+<area shape="rect" id="Node000002" href="$hal__stm32__dma_8h.html#a6e67217a77cfebb8961f992e5f85f8da" title=" " alt="" coords="207,5,405,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,127,140,84,171,60,205,40,222,33,224,38,208,44,174,64,143,88,97,131"/>
+<area shape="rect" id="Node000003" href="$hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30" title="Starts a DMA transaction." alt="" coords="237,55,375,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,127,206,89,232,81,234,86,208,94,112,132"/>
+<area shape="rect" id="Node000007" href="$hal__stm32__dma_8c.html#ac2bef3d2e495afefdd5fb7585e9ebf81" title="Stops an ongoing transaction." alt="" coords="235,104,377,129"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="159,131,221,124,222,129,159,136"/>
+<area shape="rect" id="Node000009" href="$dshot__rpmCapture_8c.html#a1373cdf0419ab22527dc4e5709135c49" title="convert DMA buffer full of pulse length into raw ERPS frame" alt="" coords="221,153,391,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="159,148,207,153,207,158,159,153"/>
+<area shape="rect" id="Node000010" href="$dshot__rpmCapture_8c.html#a5d315c80fe968d1b01583ca9bbe369ef" title="start the DMA capture" alt="" coords="255,203,357,228"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="113,152,208,189,242,199,241,204,206,194,111,157"/>
+<area shape="rect" id="Node000014" href="$dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022" title="stop the DMA capture" alt="" coords="255,252,357,277"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="97,153,143,195,174,218,208,238,242,251,241,256,206,243,171,223,140,199,94,157"/>
+<area shape="rect" id="Node000004" href="$hal__stm32__dma_8c.html#a572bb7d0ec656fb7a86d18f319b43db8" title="Starts a DMA transaction." alt="" coords="473,55,615,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,65,459,65,459,70,375,70"/>
+<area shape="rect" id="Node000005" href="$hal__stm32__dma_8c.html#aca730123d24b378683330626bd0f7603" title="Starts a DMA transaction." alt="" coords="683,55,857,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="615,65,669,65,669,70,615,70"/>
+<area shape="rect" id="Node000006" href="$hal__stm32__dma_8c.html#a8b001b838d393609f358cdaeff7c6bb2" title=" " alt="" coords="905,55,1155,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="857,65,891,65,891,70,857,70"/>
+<area shape="rect" id="Node000008" href="$hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction." alt="" coords="458,104,630,129"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="377,114,444,114,444,119,377,119"/>
+<area shape="rect" id="Node000011" href="$timerDmaCache_8c.html#a3e4be0aff366297301619eb9041ebc35" title=" " alt="" coords="453,153,635,179"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="357,202,468,179,469,184,358,207"/>
+<area shape="rect" id="Node000013" href="$input__capture__arch_8c.html#a4bba4ce9ff6278f324c6dc95df5622bf" title="start to capture" alt="" coords="475,203,613,228"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="358,213,462,213,462,218,358,218"/>
+<area shape="rect" id="Node000012" href="$timerDmaCache_8c.html#ab3f50b7e1fff277d6847fe0602d64544" title=" " alt="" coords="697,153,843,179"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="635,163,683,163,683,169,635,169"/>
+<area shape="rect" id="Node000015" href="$input__capture__arch_8c.html#a9d2e93c6aede9747fa79ef150d1e314c" title=" " alt="" coords="481,252,607,277"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="357,262,467,262,467,267,357,267"/>
+<area shape="rect" id="Node000016" href="$input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190" title="stop to capture" alt="" coords="477,301,611,327"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="357,272,470,296,468,301,356,278"/>
 </map>

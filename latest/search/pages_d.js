@@ -1,17 +1,16 @@
 var searchData=
 [
-  ['object_5ftracking_20module_57201',['object_tracking module',['../module__object_tracking.html',1,'onboard_modules']]],
-  ['obstacle_5favoidance_20module_57202',['obstacle_avoidance module',['../module__obstacle_avoidance.html',1,'onboard_modules']]],
-  ['onboard_20modules_57203',['Onboard Modules',['../onboard_modules.html',1,'']]],
-  ['oneloop_5fandi_20module_57204',['oneloop_andi module',['../module__oneloop_andi.html',1,'onboard_modules']]],
-  ['opa_5fcontroller_20module_57205',['opa_controller module',['../module__opa_controller.html',1,'onboard_modules']]],
-  ['openlog_20module_57206',['openlog module',['../module__openlog.html',1,'onboard_modules']]],
-  ['optical_5fflow_5fhover_20module_57207',['optical_flow_hover module',['../module__optical_flow_hover.html',1,'onboard_modules']]],
-  ['optical_5fflow_5flanding_20module_57208',['optical_flow_landing module',['../module__optical_flow_landing.html',1,'onboard_modules']]],
-  ['optical_5fflow_5fmateksys_5f3901_5fl0x_20module_57209',['optical_flow_mateksys_3901_l0x module',['../module__optical_flow_mateksys_3901_l0x.html',1,'onboard_modules']]],
-  ['opticflow_5fhover_20module_57210',['opticflow_hover module',['../module__opticflow_hover.html',1,'onboard_modules']]],
-  ['opticflow_5fpmw3901_20module_57211',['opticflow_pmw3901 module',['../module__opticflow_pmw3901.html',1,'onboard_modules']]],
-  ['orange_5favoider_20module_57212',['orange_avoider module',['../module__orange_avoider.html',1,'onboard_modules']]],
-  ['orange_5favoider_5fguided_20module_57213',['orange_avoider_guided module',['../module__orange_avoider_guided.html',1,'onboard_modules']]],
-  ['osd_5fmax7456_20module_57214',['osd_max7456 module',['../module__osd_max7456.html',1,'onboard_modules']]]
+  ['hackhd_20module_0',['hackhd module',['../module__hackhd.html',1,'onboard_modules']]],
+  ['haclc_20module_1',['haclc module',['../module__haclc.html',1,'onboard_modules']]],
+  ['hard_5ffault_5frecovery_20module_2',['hard_fault_recovery module',['../module__hard_fault_recovery.html',1,'onboard_modules']]],
+  ['heli_5fswashplate_5fmixing_20module_3',['heli_swashplate_mixing module',['../module__heli_swashplate_mixing.html',1,'onboard_modules']]],
+  ['heli_5fthrottle_5fcurve_20module_4',['heli_throttle_curve module',['../module__heli_throttle_curve.html',1,'onboard_modules']]],
+  ['hott_5ftelemetry_20module_5',['hott_telemetry module',['../module__hott_telemetry.html',1,'onboard_modules']]],
+  ['humid_5fdpicco_20module_6',['humid_dpicco module',['../module__humid_dpicco.html',1,'onboard_modules']]],
+  ['humid_5fhih_20module_7',['humid_hih module',['../module__humid_hih.html',1,'onboard_modules']]],
+  ['humid_5fhtm_5fb71_20module_8',['humid_htm_b71 module',['../module__humid_htm_b71.html',1,'onboard_modules']]],
+  ['humid_5fpcap01_20module_9',['humid_pcap01 module',['../module__humid_pcap01.html',1,'onboard_modules']]],
+  ['humid_5fsht_20module_10',['humid_sht module',['../module__humid_sht.html',1,'onboard_modules']]],
+  ['humid_5fsht_5fi2c_20module_11',['humid_sht_i2c module',['../module__humid_sht_i2c.html',1,'onboard_modules']]],
+  ['humid_5fsht_5fuart_20module_12',['humid_sht_uart module',['../module__humid_sht_uart.html',1,'onboard_modules']]]
 ];

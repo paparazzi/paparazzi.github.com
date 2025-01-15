@@ -13,7 +13,7 @@ var cv__detect__color__object_8c =
     [ "color_object_detector_init", "cv__detect__color__object_8c.html#aaaa68a4d10f42cf735a96f4ab74ec29a", null ],
     [ "color_object_detector_periodic", "cv__detect__color__object_8c.html#a9e98bd5e517e04efba87d5fb9df01069", null ],
     [ "find_object_centroid", "cv__detect__color__object_8c.html#acee4eb52ef122f8716ae34f8e8d0284e", null ],
-    [ "object_detector", "cv__detect__color__object_8c.html#a20bf39f5246d08925a8a0f6bd28936d6", null ],
+    [ "object_detector", "cv__detect__color__object_8c.html#a4593a0772f2efe6e4b5288a6bdd9e545", null ],
     [ "object_detector1", "cv__detect__color__object_8c.html#ade11a2723b6ec09cb5cb68c6216d2cd4", null ],
     [ "object_detector2", "cv__detect__color__object_8c.html#a86617228f975e5259d055fc8e37f266b", null ],
     [ "cod_cb_max1", "cv__detect__color__object_8c.html#a829efe2335f030822042cb3db69c3c5f", null ],

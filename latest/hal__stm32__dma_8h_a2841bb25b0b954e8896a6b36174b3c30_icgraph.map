@@ -1,10 +1,17 @@
 <map id="dmaStartTransfert" name="dmaStartTransfert">
-<area shape="rect" id="node1" title="Starts a DMA transaction." alt="" coords="673,97,812,123"/>
-<area shape="rect" id="node2" href="$dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="463,71,617,98"/>
-<area shape="rect" id="node7" href="$light__ws2812__arch_8c.html#a77c4ae9d967234a1c215b097f18241c8" title=" " alt="" coords="455,122,625,149"/>
-<area shape="rect" id="node3" href="$esc__dshot_8c.html#aafcf93c9111243dacc7dba592f4a5731" title="send throttle order" alt="" coords="267,71,397,98"/>
-<area shape="rect" id="node4" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3" title=" " alt="" coords="27,5,188,47"/>
-<area shape="rect" id="node5" href="$esc__dshot_8c.html#ae32fad965a334445cdaf6473b8da4cf3" title="send special order to one of the ESC (BHELIX, KISS, ...)" alt="" coords="5,71,209,98"/>
-<area shape="rect" id="node6" href="$esc__dshot_8c.html#a6c927d850e9e56e92af5028e516247fa" title="send throttle packed order to all of the ESCs" alt="" coords="33,122,181,149"/>
-<area shape="rect" id="node8" href="$light__scheduler_8c.html#a8306780e037cc4384e8a0a33da77bf8b" title=" " alt="" coords="257,122,407,149"/>
+<area shape="rect" id="Node000001" title="Starts a DMA transaction." alt="" coords="673,95,812,121"/>
+<area shape="rect" id="Node000002" href="$dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="463,70,617,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="659,100,617,95,617,90,660,95"/>
+<area shape="rect" id="Node000007" href="$light__ws2812__arch_8c.html#a77c4ae9d967234a1c215b097f18241c8" title=" " alt="" coords="455,119,625,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="660,120,626,125,625,119,659,115"/>
+<area shape="rect" id="Node000003" href="$esc__dshot_8c.html#aafcf93c9111243dacc7dba592f4a5731" title="send throttle order" alt="" coords="267,70,397,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,85,397,85,397,80,449,80"/>
+<area shape="rect" id="Node000004" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3" title=" " alt="" coords="27,5,188,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="268,69,185,48,187,43,269,64"/>
+<area shape="rect" id="Node000005" href="$esc__dshot_8c.html#ae32fad965a334445cdaf6473b8da4cf3" title="send special order to one of the ESC (BHELIX, KISS, ...)" alt="" coords="5,70,209,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="253,85,210,85,210,80,253,80"/>
+<area shape="rect" id="Node000006" href="$esc__dshot_8c.html#a6c927d850e9e56e92af5028e516247fa" title="send throttle packed order to all of the ESCs" alt="" coords="33,119,181,145"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="261,101,167,122,165,117,260,96"/>
+<area shape="rect" id="Node000008" href="$light__scheduler_8c.html#a8306780e037cc4384e8a0a33da77bf8b" title=" " alt="" coords="257,119,407,145"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="441,135,407,135,407,129,441,129"/>
 </map>

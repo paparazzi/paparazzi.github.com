@@ -1,12 +1,29 @@
 <map id="float_quat_derivative" name="float_quat_derivative">
-<area shape="rect" id="node1" title="Quaternion derivative from rotational velocity." alt="" coords="964,64,1124,91"/>
-<area shape="rect" id="node2" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="719,5,916,32"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="732,57,903,98"/>
-<area shape="rect" id="node7" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="753,123,881,149"/>
-<area shape="rect" id="node3" href="$ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="540,5,613,32"/>
-<area shape="rect" id="node4" href="$ahrs__madgwick__wrapper_8c.html#a06b534ff4be4d76ebf117fcc7a00b1d8" title=" " alt="" coords="223,5,435,32"/>
-<area shape="rect" id="node6" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="483,64,671,91"/>
-<area shape="rect" id="node8" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="501,115,652,157"/>
-<area shape="rect" id="node9" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="292,123,365,149"/>
-<area shape="rect" id="node10" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,123,175,149"/>
+<area shape="rect" id="Node000001" title="Quaternion derivative from rotational velocity." alt="" coords="964,92,1124,117"/>
+<area shape="rect" id="Node000002" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="719,5,916,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1007,88,915,46,875,33,876,28,917,41,1009,83"/>
+<area shape="rect" id="Node000005" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="732,55,903,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="950,95,903,89,903,84,950,90"/>
+<area shape="rect" id="Node000007" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="753,120,881,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="951,119,882,127,881,122,950,114"/>
+<area shape="rect" id="Node000011" href="$ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="753,176,881,201"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1003,125,917,161,863,178,861,173,915,155,1001,121"/>
+<area shape="rect" id="Node000003" href="$ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="540,5,613,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="705,21,613,21,613,15,705,15"/>
+<area shape="rect" id="Node000004" href="$ahrs__madgwick__wrapper_8c.html#a06b534ff4be4d76ebf117fcc7a00b1d8" title=" " alt="" coords="223,5,435,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="526,21,435,21,435,15,526,15"/>
+<area shape="rect" id="Node000006" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="483,63,671,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="718,78,671,78,671,73,718,73"/>
+<area shape="rect" id="Node000008" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="501,113,652,153"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="739,135,652,135,652,130,739,130"/>
+<area shape="rect" id="Node000009" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="292,120,365,145"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="488,135,365,135,365,130,488,130"/>
+<area shape="rect" id="Node000010" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,120,175,145"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="278,135,175,135,175,130,278,130"/>
+<area shape="rect" id="Node000012" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="505,177,648,217"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="739,194,648,197,648,192,739,189"/>
+<area shape="rect" id="Node000013" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="292,184,365,209"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="491,199,366,199,366,194,491,194"/>
+<area shape="rect" id="Node000014" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="19,177,161,217"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="278,199,162,199,162,194,278,194"/>
 </map>

@@ -1,6 +1,10 @@
 <map id="actuators_ardrone_set_pwm" name="actuators_ardrone_set_pwm">
-<area shape="rect" id="node1" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0." alt="" coords="5,31,212,57"/>
-<area shape="rect" id="node2" href="$boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title=" " alt="" coords="260,5,455,32"/>
-<area shape="rect" id="node4" href="$navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="752,31,835,57"/>
-<area shape="rect" id="node3" href="$boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format)" alt="" coords="503,5,704,32"/>
+<area shape="rect" id="Node000001" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0." alt="" coords="5,31,212,56"/>
+<area shape="rect" id="Node000002" href="$boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title=" " alt="" coords="260,5,455,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,30,246,27,246,32,212,35"/>
+<area shape="rect" id="Node000004" href="$navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="752,31,835,56"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="212,41,738,41,738,46,212,46"/>
+<area shape="rect" id="Node000003" href="$boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format)" alt="" coords="503,5,704,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="455,15,489,15,489,21,455,21"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="699,28,739,33,738,39,699,33"/>
 </map>

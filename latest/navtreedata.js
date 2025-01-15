@@ -26,7 +26,3334 @@ var NAVTREE =
 [
   [ "Paparazzi UAS", "index.html", [
     [ "MAIN README", "index.html", "index" ],
-    [ "Onboard Modules", "onboard_modules.html", "onboard_modules" ],
+    [ "Onboard Modules", "onboard_modules.html", [
+      [ "List of available modules", "onboard_modules.html#modules_list", [
+        [ "Actuators modules", "onboard_modules.html#modules_category_actuators", null ],
+        [ "Adcs modules", "onboard_modules.html#modules_category_adcs", null ],
+        [ "Ahrs modules", "onboard_modules.html#modules_category_ahrs", null ],
+        [ "Benchmark modules", "onboard_modules.html#modules_category_benchmark", null ],
+        [ "Boards modules", "onboard_modules.html#modules_category_boards", null ],
+        [ "Cam_Control modules", "onboard_modules.html#modules_category_cam_control", null ],
+        [ "Checks modules", "onboard_modules.html#modules_category_checks", null ],
+        [ "Com modules", "onboard_modules.html#modules_category_com", null ],
+        [ "Computer_Vision modules", "onboard_modules.html#modules_category_computer_vision", null ],
+        [ "Control modules", "onboard_modules.html#modules_category_control", null ],
+        [ "Core modules", "onboard_modules.html#modules_category_core", null ],
+        [ "Ctrl modules", "onboard_modules.html#modules_category_ctrl", null ],
+        [ "Datalink modules", "onboard_modules.html#modules_category_datalink", null ],
+        [ "Decawave modules", "onboard_modules.html#modules_category_decawave", null ],
+        [ "Digital_Cam modules", "onboard_modules.html#modules_category_digital_cam", null ],
+        [ "Energy modules", "onboard_modules.html#modules_category_energy", null ],
+        [ "Fdm modules", "onboard_modules.html#modules_category_fdm", null ],
+        [ "Gpio_Ext modules", "onboard_modules.html#modules_category_gpio_ext", null ],
+        [ "Gps modules", "onboard_modules.html#modules_category_gps", null ],
+        [ "Guidance modules", "onboard_modules.html#modules_category_guidance", null ],
+        [ "Helicopter modules", "onboard_modules.html#modules_category_helicopter", null ],
+        [ "Imu modules", "onboard_modules.html#modules_category_imu", null ],
+        [ "Ins modules", "onboard_modules.html#modules_category_ins", null ],
+        [ "Intermcu modules", "onboard_modules.html#modules_category_intermcu", null ],
+        [ "Lidar modules", "onboard_modules.html#modules_category_lidar", null ],
+        [ "Light modules", "onboard_modules.html#modules_category_light", null ],
+        [ "Loggers modules", "onboard_modules.html#modules_category_loggers", null ],
+        [ "Mcu_Periph modules", "onboard_modules.html#modules_category_mcu_periph", null ],
+        [ "Meteo modules", "onboard_modules.html#modules_category_meteo", null ],
+        [ "Mission modules", "onboard_modules.html#modules_category_mission", null ],
+        [ "Multi modules", "onboard_modules.html#modules_category_multi", null ],
+        [ "Nav modules", "onboard_modules.html#modules_category_nav", null ],
+        [ "Optical_Flow modules", "onboard_modules.html#modules_category_optical_flow", null ],
+        [ "Orange_Avoider modules", "onboard_modules.html#modules_category_orange_avoider", null ],
+        [ "Radio_Control modules", "onboard_modules.html#modules_category_radio_control", null ],
+        [ "Range_Finder modules", "onboard_modules.html#modules_category_range_finder", null ],
+        [ "Rotwing_Drone modules", "onboard_modules.html#modules_category_rotwing_drone", null ],
+        [ "Sensors modules", "onboard_modules.html#modules_category_sensors", null ],
+        [ "Sonar modules", "onboard_modules.html#modules_category_sonar", null ],
+        [ "Stabilization modules", "onboard_modules.html#modules_category_stabilization", null ],
+        [ "Stereocam modules", "onboard_modules.html#modules_category_stereocam", null ],
+        [ "Switching modules", "onboard_modules.html#modules_category_switching", null ],
+        [ "System_Identification modules", "onboard_modules.html#modules_category_system_identification", null ],
+        [ "Misc modules", "onboard_modules.html#modules_category_misc", null ]
+      ] ],
+      [ "actuators module", "module__actuators.html", [
+        [ "Example for airframe file", "module__actuators.html#module_load_example__actuators", null ],
+        [ "Module functions", "module__actuators.html#functions__actuators", [
+          [ "Raw actuators.xml file:", "module__actuators.html#module_xml__actuators", null ]
+        ] ]
+      ] ],
+      [ "actuators_ardrone2 module", "module__actuators_ardrone2.html", [
+        [ "Example for airframe file", "module__actuators_ardrone2.html#module_load_example__actuators_ardrone2", [
+          [ "Raw actuators_ardrone2.xml file:", "module__actuators_ardrone2.html#module_xml__actuators_ardrone2", null ]
+        ] ]
+      ] ],
+      [ "actuators_asctec_v2 module", "module__actuators_asctec_v2.html", [
+        [ "Example for airframe file", "module__actuators_asctec_v2.html#module_load_example__actuators_asctec_v2", null ],
+        [ "Module configuration options", "module__actuators_asctec_v2.html#configuration__actuators_asctec_v2", [
+          [ "Raw actuators_asctec_v2.xml file:", "module__actuators_asctec_v2.html#module_xml__actuators_asctec_v2", null ]
+        ] ]
+      ] ],
+      [ "actuators_bebop module", "module__actuators_bebop.html", [
+        [ "Example for airframe file", "module__actuators_bebop.html#module_load_example__actuators_bebop", null ],
+        [ "Module configuration options", "module__actuators_bebop.html#configuration__actuators_bebop", [
+          [ "Raw actuators_bebop.xml file:", "module__actuators_bebop.html#module_xml__actuators_bebop", null ]
+        ] ]
+      ] ],
+      [ "actuators_disco module", "module__actuators_disco.html", [
+        [ "Example for airframe file", "module__actuators_disco.html#module_load_example__actuators_disco", [
+          [ "Raw actuators_disco.xml file:", "module__actuators_disco.html#module_xml__actuators_disco", null ]
+        ] ]
+      ] ],
+      [ "actuators_dshot module", "module__actuators_dshot.html", [
+        [ "Example for airframe file", "module__actuators_dshot.html#module_load_example__actuators_dshot", null ],
+        [ "Module configuration options", "module__actuators_dshot.html#configuration__actuators_dshot", [
+          [ "Raw actuators_dshot.xml file:", "module__actuators_dshot.html#module_xml__actuators_dshot", null ]
+        ] ]
+      ] ],
+      [ "actuators_dualpwm module", "module__actuators_dualpwm.html", [
+        [ "Example for airframe file", "module__actuators_dualpwm.html#module_load_example__actuators_dualpwm", [
+          [ "Raw actuators_dualpwm.xml file:", "module__actuators_dualpwm.html#module_xml__actuators_dualpwm", null ]
+        ] ]
+      ] ],
+      [ "actuators_dummy module", "module__actuators_dummy.html", [
+        [ "Example for airframe file", "module__actuators_dummy.html#module_load_example__actuators_dummy", [
+          [ "Raw actuators_dummy.xml file:", "module__actuators_dummy.html#module_xml__actuators_dummy", null ]
+        ] ]
+      ] ],
+      [ "actuators_esc32 module", "module__actuators_esc32.html", [
+        [ "Example for airframe file", "module__actuators_esc32.html#module_load_example__actuators_esc32", [
+          [ "Raw actuators_esc32.xml file:", "module__actuators_esc32.html#module_xml__actuators_esc32", null ]
+        ] ]
+      ] ],
+      [ "actuators_faulhaber module", "module__actuators_faulhaber.html", [
+        [ "Example for airframe file", "module__actuators_faulhaber.html#module_load_example__actuators_faulhaber", null ],
+        [ "Module configuration options", "module__actuators_faulhaber.html#configuration__actuators_faulhaber", null ],
+        [ "Module functions", "module__actuators_faulhaber.html#functions__actuators_faulhaber", [
+          [ "Raw actuators_faulhaber.xml file:", "module__actuators_faulhaber.html#module_xml__actuators_faulhaber", null ]
+        ] ]
+      ] ],
+      [ "actuators_hitl module", "module__actuators_hitl.html", [
+        [ "Example for airframe file", "module__actuators_hitl.html#module_load_example__actuators_hitl", null ],
+        [ "Module configuration options", "module__actuators_hitl.html#configuration__actuators_hitl", null ],
+        [ "Module functions", "module__actuators_hitl.html#functions__actuators_hitl", [
+          [ "Raw actuators_hitl.xml file:", "module__actuators_hitl.html#module_xml__actuators_hitl", null ]
+        ] ]
+      ] ],
+      [ "actuators_md25 module", "module__actuators_md25.html", [
+        [ "Example for airframe file", "module__actuators_md25.html#module_load_example__actuators_md25", null ],
+        [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", null ],
+        [ "Module functions", "module__actuators_md25.html#functions__actuators_md25", [
+          [ "Raw actuators_md25.xml file:", "module__actuators_md25.html#module_xml__actuators_md25", null ]
+        ] ]
+      ] ],
+      [ "actuators_nps module", "module__actuators_nps.html", [
+        [ "Example for airframe file", "module__actuators_nps.html#module_load_example__actuators_nps", [
+          [ "Raw actuators_nps.xml file:", "module__actuators_nps.html#module_xml__actuators_nps", null ]
+        ] ]
+      ] ],
+      [ "actuators_ostrich module", "module__actuators_ostrich.html", [
+        [ "Example for airframe file", "module__actuators_ostrich.html#module_load_example__actuators_ostrich", null ],
+        [ "Module configuration options", "module__actuators_ostrich.html#configuration__actuators_ostrich", null ],
+        [ "Module functions", "module__actuators_ostrich.html#functions__actuators_ostrich", [
+          [ "Raw actuators_ostrich.xml file:", "module__actuators_ostrich.html#module_xml__actuators_ostrich", null ]
+        ] ]
+      ] ],
+      [ "actuators_pwm module", "module__actuators_pwm.html", [
+        [ "Example for airframe file", "module__actuators_pwm.html#module_load_example__actuators_pwm", [
+          [ "Raw actuators_pwm.xml file:", "module__actuators_pwm.html#module_xml__actuators_pwm", null ]
+        ] ]
+      ] ],
+      [ "actuators_sbus module", "module__actuators_sbus.html", [
+        [ "Example for airframe file", "module__actuators_sbus.html#module_load_example__actuators_sbus", null ],
+        [ "Module configuration options", "module__actuators_sbus.html#configuration__actuators_sbus", [
+          [ "Raw actuators_sbus.xml file:", "module__actuators_sbus.html#module_xml__actuators_sbus", null ]
+        ] ]
+      ] ],
+      [ "actuators_spektrum module", "module__actuators_spektrum.html", [
+        [ "Example for airframe file", "module__actuators_spektrum.html#module_load_example__actuators_spektrum", null ],
+        [ "Module configuration options", "module__actuators_spektrum.html#configuration__actuators_spektrum", [
+          [ "Raw actuators_spektrum.xml file:", "module__actuators_spektrum.html#module_xml__actuators_spektrum", null ]
+        ] ]
+      ] ],
+      [ "actuators_sts3032 module", "module__actuators_sts3032.html", [
+        [ "Example for airframe file", "module__actuators_sts3032.html#module_load_example__actuators_sts3032", null ],
+        [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", null ],
+        [ "Module functions", "module__actuators_sts3032.html#functions__actuators_sts3032", [
+          [ "Raw actuators_sts3032.xml file:", "module__actuators_sts3032.html#module_xml__actuators_sts3032", null ]
+        ] ]
+      ] ],
+      [ "actuators_uavcan module", "module__actuators_uavcan.html", [
+        [ "Example for airframe file", "module__actuators_uavcan.html#module_load_example__actuators_uavcan", null ],
+        [ "Module configuration options", "module__actuators_uavcan.html#configuration__actuators_uavcan", [
+          [ "Raw actuators_uavcan.xml file:", "module__actuators_uavcan.html#module_xml__actuators_uavcan", null ]
+        ] ]
+      ] ],
+      [ "motor_mixing module", "module__motor_mixing.html", [
+        [ "Example for airframe file", "module__motor_mixing.html#module_load_example__motor_mixing", null ],
+        [ "Module configuration options", "module__motor_mixing.html#configuration__motor_mixing", null ],
+        [ "Module functions", "module__motor_mixing.html#functions__motor_mixing", [
+          [ "Raw motor_mixing.xml file:", "module__motor_mixing.html#module_xml__motor_mixing", null ]
+        ] ]
+      ] ],
+      [ "adc_generic module", "module__adc_generic.html", [
+        [ "Example for airframe file", "module__adc_generic.html#module_load_example__adc_generic", null ],
+        [ "Module configuration options", "module__adc_generic.html#configuration__adc_generic", null ],
+        [ "Module functions", "module__adc_generic.html#functions__adc_generic", [
+          [ "Raw adc_generic.xml file:", "module__adc_generic.html#module_xml__adc_generic", null ]
+        ] ]
+      ] ],
+      [ "battery_monitor module", "module__battery_monitor.html", [
+        [ "Example for airframe file", "module__battery_monitor.html#module_load_example__battery_monitor", null ],
+        [ "Module configuration options", "module__battery_monitor.html#configuration__battery_monitor", null ],
+        [ "Module functions", "module__battery_monitor.html#functions__battery_monitor", [
+          [ "Raw battery_monitor.xml file:", "module__battery_monitor.html#module_xml__battery_monitor", null ]
+        ] ]
+      ] ],
+      [ "max11040 module", "module__max11040.html", [
+        [ "Example for airframe file", "module__max11040.html#module_load_example__max11040", null ],
+        [ "Module functions", "module__max11040.html#functions__max11040", [
+          [ "Raw max11040.xml file:", "module__max11040.html#module_xml__max11040", null ]
+        ] ]
+      ] ],
+      [ "mcp355x module", "module__mcp355x.html", [
+        [ "Example for airframe file", "module__mcp355x.html#module_load_example__mcp355x", null ],
+        [ "Module functions", "module__mcp355x.html#functions__mcp355x", [
+          [ "Raw mcp355x.xml file:", "module__mcp355x.html#module_xml__mcp355x", null ]
+        ] ]
+      ] ],
+      [ "ahrs_common module", "module__ahrs_common.html", [
+        [ "Example for airframe file", "module__ahrs_common.html#module_load_example__ahrs_common", null ],
+        [ "Module configuration options", "module__ahrs_common.html#configuration__ahrs_common", null ],
+        [ "Module functions", "module__ahrs_common.html#functions__ahrs_common", [
+          [ "Raw ahrs_common.xml file:", "module__ahrs_common.html#module_xml__ahrs_common", null ]
+        ] ]
+      ] ],
+      [ "ahrs_float_cmpl_quat module", "module__ahrs_float_cmpl_quat.html", [
+        [ "Example for airframe file", "module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat", null ],
+        [ "Module configuration options", "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat", null ],
+        [ "Module functions", "module__ahrs_float_cmpl_quat.html#functions__ahrs_float_cmpl_quat", [
+          [ "Raw ahrs_float_cmpl_quat.xml file:", "module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat", null ]
+        ] ]
+      ] ],
+      [ "ahrs_float_cmpl_rmat module", "module__ahrs_float_cmpl_rmat.html", [
+        [ "Example for airframe file", "module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat", null ],
+        [ "Module configuration options", "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat", null ],
+        [ "Module functions", "module__ahrs_float_cmpl_rmat.html#functions__ahrs_float_cmpl_rmat", [
+          [ "Raw ahrs_float_cmpl_rmat.xml file:", "module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat", null ]
+        ] ]
+      ] ],
+      [ "ahrs_float_dcm module", "module__ahrs_float_dcm.html", [
+        [ "Example for airframe file", "module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm", null ],
+        [ "Module configuration options", "module__ahrs_float_dcm.html#configuration__ahrs_float_dcm", null ],
+        [ "Module functions", "module__ahrs_float_dcm.html#functions__ahrs_float_dcm", [
+          [ "Raw ahrs_float_dcm.xml file:", "module__ahrs_float_dcm.html#module_xml__ahrs_float_dcm", null ]
+        ] ]
+      ] ],
+      [ "ahrs_float_invariant module", "module__ahrs_float_invariant.html", [
+        [ "Example for airframe file", "module__ahrs_float_invariant.html#module_load_example__ahrs_float_invariant", null ],
+        [ "Module configuration options", "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant", null ],
+        [ "Module functions", "module__ahrs_float_invariant.html#functions__ahrs_float_invariant", [
+          [ "Raw ahrs_float_invariant.xml file:", "module__ahrs_float_invariant.html#module_xml__ahrs_float_invariant", null ]
+        ] ]
+      ] ],
+      [ "ahrs_float_mlkf module", "module__ahrs_float_mlkf.html", [
+        [ "Example for airframe file", "module__ahrs_float_mlkf.html#module_load_example__ahrs_float_mlkf", null ],
+        [ "Module configuration options", "module__ahrs_float_mlkf.html#configuration__ahrs_float_mlkf", [
+          [ "Raw ahrs_float_mlkf.xml file:", "module__ahrs_float_mlkf.html#module_xml__ahrs_float_mlkf", null ]
+        ] ]
+      ] ],
+      [ "ahrs_int_cmpl_quat module", "module__ahrs_int_cmpl_quat.html", [
+        [ "Example for airframe file", "module__ahrs_int_cmpl_quat.html#module_load_example__ahrs_int_cmpl_quat", null ],
+        [ "Module configuration options", "module__ahrs_int_cmpl_quat.html#configuration__ahrs_int_cmpl_quat", null ],
+        [ "Module functions", "module__ahrs_int_cmpl_quat.html#functions__ahrs_int_cmpl_quat", [
+          [ "Raw ahrs_int_cmpl_quat.xml file:", "module__ahrs_int_cmpl_quat.html#module_xml__ahrs_int_cmpl_quat", null ]
+        ] ]
+      ] ],
+      [ "ahrs_madgwick module", "module__ahrs_madgwick.html", [
+        [ "Example for airframe file", "module__ahrs_madgwick.html#module_load_example__ahrs_madgwick", null ],
+        [ "Module configuration options", "module__ahrs_madgwick.html#configuration__ahrs_madgwick", null ],
+        [ "Module functions", "module__ahrs_madgwick.html#functions__ahrs_madgwick", [
+          [ "Raw ahrs_madgwick.xml file:", "module__ahrs_madgwick.html#module_xml__ahrs_madgwick", null ]
+        ] ]
+      ] ],
+      [ "ahrs_sim module", "module__ahrs_sim.html", [
+        [ "Example for airframe file", "module__ahrs_sim.html#module_load_example__ahrs_sim", null ],
+        [ "Module functions", "module__ahrs_sim.html#functions__ahrs_sim", [
+          [ "Raw ahrs_sim.xml file:", "module__ahrs_sim.html#module_xml__ahrs_sim", null ]
+        ] ]
+      ] ],
+      [ "ahrs_vectornav module", "module__ahrs_vectornav.html", [
+        [ "Example for airframe file", "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav", null ],
+        [ "Module configuration options", "module__ahrs_vectornav.html#configuration__ahrs_vectornav", null ],
+        [ "Module functions", "module__ahrs_vectornav.html#functions__ahrs_vectornav", [
+          [ "Raw ahrs_vectornav.xml file:", "module__ahrs_vectornav.html#module_xml__ahrs_vectornav", null ]
+        ] ]
+      ] ],
+      [ "flight_benchmark module", "module__flight_benchmark.html", [
+        [ "Example for airframe file", "module__flight_benchmark.html#module_load_example__flight_benchmark", null ],
+        [ "Module configuration options", "module__flight_benchmark.html#configuration__flight_benchmark", null ],
+        [ "Module functions", "module__flight_benchmark.html#functions__flight_benchmark", [
+          [ "Raw flight_benchmark.xml file:", "module__flight_benchmark.html#module_xml__flight_benchmark", null ]
+        ] ]
+      ] ],
+      [ "i2c_abuse_test module", "module__i2c_abuse_test.html", [
+        [ "Example for airframe file", "module__i2c_abuse_test.html#module_load_example__i2c_abuse_test", null ],
+        [ "Module functions", "module__i2c_abuse_test.html#functions__i2c_abuse_test", [
+          [ "Raw i2c_abuse_test.xml file:", "module__i2c_abuse_test.html#module_xml__i2c_abuse_test", null ]
+        ] ]
+      ] ],
+      [ "imu_quality_assessment module", "module__imu_quality_assessment.html", [
+        [ "Example for airframe file", "module__imu_quality_assessment.html#module_load_example__imu_quality_assessment", null ],
+        [ "Module functions", "module__imu_quality_assessment.html#functions__imu_quality_assessment", [
+          [ "Raw imu_quality_assessment.xml file:", "module__imu_quality_assessment.html#module_xml__imu_quality_assessment", null ]
+        ] ]
+      ] ],
+      [ "board_matek_f405_wing module", "module__board_matek_f405_wing.html", [
+        [ "Example for airframe file", "module__board_matek_f405_wing.html#module_load_example__board_matek_f405_wing", [
+          [ "Raw board_matek_f405_wing.xml file:", "module__board_matek_f405_wing.html#module_xml__board_matek_f405_wing", null ]
+        ] ]
+      ] ],
+      [ "board_matek_f765_car module", "module__board_matek_f765_car.html", [
+        [ "Example for airframe file", "module__board_matek_f765_car.html#module_load_example__board_matek_f765_car", null ],
+        [ "Module configuration options", "module__board_matek_f765_car.html#configuration__board_matek_f765_car", [
+          [ "Raw board_matek_f765_car.xml file:", "module__board_matek_f765_car.html#module_xml__board_matek_f765_car", null ]
+        ] ]
+      ] ],
+      [ "board_matek_f765_wing module", "module__board_matek_f765_wing.html", [
+        [ "Example for airframe file", "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing", null ],
+        [ "Module configuration options", "module__board_matek_f765_wing.html#configuration__board_matek_f765_wing", [
+          [ "Raw board_matek_f765_wing.xml file:", "module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing", null ]
+        ] ]
+      ] ],
+      [ "board_tawaki module", "module__board_tawaki.html", [
+        [ "Example for airframe file", "module__board_tawaki.html#module_load_example__board_tawaki", null ],
+        [ "Module configuration options", "module__board_tawaki.html#configuration__board_tawaki", [
+          [ "Raw board_tawaki.xml file:", "module__board_tawaki.html#module_xml__board_tawaki", null ]
+        ] ]
+      ] ],
+      [ "board_tawaki_2.0 module", "module__board_tawaki_2_0.html", [
+        [ "Example for airframe file", "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0", [
+          [ ".0 Raw board_tawaki_2.0.xml file:", "module__board_tawaki_2_0.html#module_xml__board_tawaki_2", null ]
+        ] ]
+      ] ],
+      [ "opa_controller module", "module__opa_controller.html", [
+        [ "Example for airframe file", "module__opa_controller.html#module_load_example__opa_controller", null ],
+        [ "Module functions", "module__opa_controller.html#functions__opa_controller", [
+          [ "Raw opa_controller.xml file:", "module__opa_controller.html#module_xml__opa_controller", null ]
+        ] ]
+      ] ],
+      [ "power_switch module", "module__power_switch.html", [
+        [ "Example for airframe file", "module__power_switch.html#module_load_example__power_switch", null ],
+        [ "Module functions", "module__power_switch.html#functions__power_switch", [
+          [ "Raw power_switch.xml file:", "module__power_switch.html#module_xml__power_switch", null ]
+        ] ]
+      ] ],
+      [ "cam_point module", "module__cam_point.html", [
+        [ "Example for airframe file", "module__cam_point.html#module_load_example__cam_point", null ],
+        [ "Module functions", "module__cam_point.html#functions__cam_point", [
+          [ "Raw cam_point.xml file:", "module__cam_point.html#module_xml__cam_point", null ]
+        ] ]
+      ] ],
+      [ "cam_roll module", "module__cam_roll.html", [
+        [ "Example for airframe file", "module__cam_roll.html#module_load_example__cam_roll", null ],
+        [ "Module functions", "module__cam_roll.html#functions__cam_roll", [
+          [ "Raw cam_roll.xml file:", "module__cam_roll.html#module_xml__cam_roll", null ]
+        ] ]
+      ] ],
+      [ "cam_segment module", "module__cam_segment.html", [
+        [ "Example for airframe file", "module__cam_segment.html#module_load_example__cam_segment", null ],
+        [ "Module functions", "module__cam_segment.html#functions__cam_segment", [
+          [ "Raw cam_segment.xml file:", "module__cam_segment.html#module_xml__cam_segment", null ]
+        ] ]
+      ] ],
+      [ "rotorcraft_cam module", "module__rotorcraft_cam.html", [
+        [ "Example for airframe file", "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam", null ],
+        [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", null ],
+        [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", null ],
+        [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", [
+          [ "Raw rotorcraft_cam.xml file:", "module__rotorcraft_cam.html#module_xml__rotorcraft_cam", null ]
+        ] ]
+      ] ],
+      [ "pfc_actuators module", "module__pfc_actuators.html", [
+        [ "Example for airframe file", "module__pfc_actuators.html#module_load_example__pfc_actuators", null ],
+        [ "Module configuration options", "module__pfc_actuators.html#configuration__pfc_actuators", null ],
+        [ "Module functions", "module__pfc_actuators.html#functions__pfc_actuators", [
+          [ "Raw pfc_actuators.xml file:", "module__pfc_actuators.html#module_xml__pfc_actuators", null ]
+        ] ]
+      ] ],
+      [ "preflight_checks module", "module__preflight_checks.html", [
+        [ "Example for airframe file", "module__preflight_checks.html#module_load_example__preflight_checks", null ],
+        [ "Module configuration options", "module__preflight_checks.html#configuration__preflight_checks", [
+          [ "Raw preflight_checks.xml file:", "module__preflight_checks.html#module_xml__preflight_checks", null ]
+        ] ]
+      ] ],
+      [ "generic_com module", "module__generic_com.html", [
+        [ "Example for airframe file", "module__generic_com.html#module_load_example__generic_com", null ],
+        [ "Module configuration options", "module__generic_com.html#configuration__generic_com", null ],
+        [ "Module functions", "module__generic_com.html#functions__generic_com", [
+          [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
+        ] ]
+      ] ],
+      [ "usb_serial_stm32_example1 module", "module__usb_serial_stm32_example1.html", [
+        [ "Example for airframe file", "module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1", null ],
+        [ "Module functions", "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1", [
+          [ "Raw usb_serial_stm32_example1.xml file:", "module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1", null ]
+        ] ]
+      ] ],
+      [ "usb_serial_stm32_example2 module", "module__usb_serial_stm32_example2.html", [
+        [ "Example for airframe file", "module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2", null ],
+        [ "Module functions", "module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2", [
+          [ "Raw usb_serial_stm32_example2.xml file:", "module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2", null ]
+        ] ]
+      ] ],
+      [ "bebop_ae_awb module", "module__bebop_ae_awb.html", [
+        [ "Example for airframe file", "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb", null ],
+        [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", null ],
+        [ "Module functions", "module__bebop_ae_awb.html#functions__bebop_ae_awb", [
+          [ "Raw bebop_ae_awb.xml file:", "module__bebop_ae_awb.html#module_xml__bebop_ae_awb", null ]
+        ] ]
+      ] ],
+      [ "cv_blob_locator module", "module__cv_blob_locator.html", [
+        [ "Example for airframe file", "module__cv_blob_locator.html#module_load_example__cv_blob_locator", null ],
+        [ "Module configuration options", "module__cv_blob_locator.html#configuration__cv_blob_locator", null ],
+        [ "Module functions", "module__cv_blob_locator.html#functions__cv_blob_locator", [
+          [ "Raw cv_blob_locator.xml file:", "module__cv_blob_locator.html#module_xml__cv_blob_locator", null ]
+        ] ]
+      ] ],
+      [ "cv_colorfilter module", "module__cv_colorfilter.html", [
+        [ "Example for airframe file", "module__cv_colorfilter.html#module_load_example__cv_colorfilter", null ],
+        [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", null ],
+        [ "Module functions", "module__cv_colorfilter.html#functions__cv_colorfilter", [
+          [ "Raw cv_colorfilter.xml file:", "module__cv_colorfilter.html#module_xml__cv_colorfilter", null ]
+        ] ]
+      ] ],
+      [ "cv_detect_color_object module", "module__cv_detect_color_object.html", [
+        [ "Example for airframe file", "module__cv_detect_color_object.html#module_load_example__cv_detect_color_object", null ],
+        [ "Module configuration options", "module__cv_detect_color_object.html#configuration__cv_detect_color_object", null ],
+        [ "Module functions", "module__cv_detect_color_object.html#functions__cv_detect_color_object", [
+          [ "Raw cv_detect_color_object.xml file:", "module__cv_detect_color_object.html#module_xml__cv_detect_color_object", null ]
+        ] ]
+      ] ],
+      [ "cv_detect_contour module", "module__cv_detect_contour.html", [
+        [ "Example for airframe file", "module__cv_detect_contour.html#module_load_example__cv_detect_contour", null ],
+        [ "Module configuration options", "module__cv_detect_contour.html#configuration__cv_detect_contour", null ],
+        [ "Module functions", "module__cv_detect_contour.html#functions__cv_detect_contour", [
+          [ "Raw cv_detect_contour.xml file:", "module__cv_detect_contour.html#module_xml__cv_detect_contour", null ]
+        ] ]
+      ] ],
+      [ "cv_detect_gate module", "module__cv_detect_gate.html", [
+        [ "Example for airframe file", "module__cv_detect_gate.html#module_load_example__cv_detect_gate", null ],
+        [ "Module configuration options", "module__cv_detect_gate.html#configuration__cv_detect_gate", null ],
+        [ "Module functions", "module__cv_detect_gate.html#functions__cv_detect_gate", [
+          [ "Raw cv_detect_gate.xml file:", "module__cv_detect_gate.html#module_xml__cv_detect_gate", null ]
+        ] ]
+      ] ],
+      [ "cv_detect_window module", "module__cv_detect_window.html", [
+        [ "Example for airframe file", "module__cv_detect_window.html#module_load_example__cv_detect_window", null ],
+        [ "Module configuration options", "module__cv_detect_window.html#configuration__cv_detect_window", null ],
+        [ "Module functions", "module__cv_detect_window.html#functions__cv_detect_window", [
+          [ "Raw cv_detect_window.xml file:", "module__cv_detect_window.html#module_xml__cv_detect_window", null ]
+        ] ]
+      ] ],
+      [ "cv_georeference module", "module__cv_georeference.html", [
+        [ "Example for airframe file", "module__cv_georeference.html#module_load_example__cv_georeference", null ],
+        [ "Module functions", "module__cv_georeference.html#functions__cv_georeference", [
+          [ "Raw cv_georeference.xml file:", "module__cv_georeference.html#module_xml__cv_georeference", null ]
+        ] ]
+      ] ],
+      [ "cv_opencvdemo module", "module__cv_opencvdemo.html", [
+        [ "Example for airframe file", "module__cv_opencvdemo.html#module_load_example__cv_opencvdemo", null ],
+        [ "Module configuration options", "module__cv_opencvdemo.html#configuration__cv_opencvdemo", null ],
+        [ "Module functions", "module__cv_opencvdemo.html#functions__cv_opencvdemo", [
+          [ "Raw cv_opencvdemo.xml file:", "module__cv_opencvdemo.html#module_xml__cv_opencvdemo", null ]
+        ] ]
+      ] ],
+      [ "cv_opticflow module", "module__cv_opticflow.html", [
+        [ "Example for airframe file", "module__cv_opticflow.html#module_load_example__cv_opticflow", null ],
+        [ "Module configuration options", "module__cv_opticflow.html#configuration__cv_opticflow", null ],
+        [ "Module functions", "module__cv_opticflow.html#functions__cv_opticflow", [
+          [ "Raw cv_opticflow.xml file:", "module__cv_opticflow.html#module_xml__cv_opticflow", null ]
+        ] ]
+      ] ],
+      [ "cv_target_localization module", "module__cv_target_localization.html", [
+        [ "Example for airframe file", "module__cv_target_localization.html#module_load_example__cv_target_localization", null ],
+        [ "Module configuration options", "module__cv_target_localization.html#configuration__cv_target_localization", null ],
+        [ "Module functions", "module__cv_target_localization.html#functions__cv_target_localization", [
+          [ "Raw cv_target_localization.xml file:", "module__cv_target_localization.html#module_xml__cv_target_localization", null ]
+        ] ]
+      ] ],
+      [ "cv_textons module", "module__cv_textons.html", [
+        [ "Example for airframe file", "module__cv_textons.html#module_load_example__cv_textons", null ],
+        [ "Module configuration options", "module__cv_textons.html#configuration__cv_textons", null ],
+        [ "Module functions", "module__cv_textons.html#functions__cv_textons", [
+          [ "Raw cv_textons.xml file:", "module__cv_textons.html#module_xml__cv_textons", null ]
+        ] ]
+      ] ],
+      [ "cv_undistort_image module", "module__cv_undistort_image.html", [
+        [ "Example for airframe file", "module__cv_undistort_image.html#module_load_example__cv_undistort_image", null ],
+        [ "Module configuration options", "module__cv_undistort_image.html#configuration__cv_undistort_image", null ],
+        [ "Module functions", "module__cv_undistort_image.html#functions__cv_undistort_image", [
+          [ "Raw cv_undistort_image.xml file:", "module__cv_undistort_image.html#module_xml__cv_undistort_image", null ]
+        ] ]
+      ] ],
+      [ "tag_tracking module", "module__tag_tracking.html", [
+        [ "Example for airframe file", "module__tag_tracking.html#module_load_example__tag_tracking", null ],
+        [ "Module configuration options", "module__tag_tracking.html#configuration__tag_tracking", null ],
+        [ "Module functions", "module__tag_tracking.html#functions__tag_tracking", null ],
+        [ "Datalink Functions", "module__tag_tracking.html#datalink_functions__tag_tracking", [
+          [ "Raw tag_tracking.xml file:", "module__tag_tracking.html#module_xml__tag_tracking", null ]
+        ] ]
+      ] ],
+      [ "video_capture module", "module__video_capture.html", [
+        [ "Example for airframe file", "module__video_capture.html#module_load_example__video_capture", null ],
+        [ "Module configuration options", "module__video_capture.html#configuration__video_capture", null ],
+        [ "Module functions", "module__video_capture.html#functions__video_capture", [
+          [ "Raw video_capture.xml file:", "module__video_capture.html#module_xml__video_capture", null ]
+        ] ]
+      ] ],
+      [ "video_exif module", "module__video_exif.html", [
+        [ "Example for airframe file", "module__video_exif.html#module_load_example__video_exif", null ],
+        [ "Module functions", "module__video_exif.html#functions__video_exif", [
+          [ "Raw video_exif.xml file:", "module__video_exif.html#module_xml__video_exif", null ]
+        ] ]
+      ] ],
+      [ "video_rtp_stream module", "module__video_rtp_stream.html", [
+        [ "Example for airframe file", "module__video_rtp_stream.html#module_load_example__video_rtp_stream", null ],
+        [ "Module configuration options", "module__video_rtp_stream.html#configuration__video_rtp_stream", null ],
+        [ "Module functions", "module__video_rtp_stream.html#functions__video_rtp_stream", [
+          [ "Raw video_rtp_stream.xml file:", "module__video_rtp_stream.html#module_xml__video_rtp_stream", null ]
+        ] ]
+      ] ],
+      [ "video_thread module", "module__video_thread.html", [
+        [ "Example for airframe file", "module__video_thread.html#module_load_example__video_thread", null ],
+        [ "Module configuration options", "module__video_thread.html#configuration__video_thread", null ],
+        [ "Module functions", "module__video_thread.html#functions__video_thread", [
+          [ "Raw video_thread.xml file:", "module__video_thread.html#module_xml__video_thread", null ]
+        ] ]
+      ] ],
+      [ "video_usb_logger module", "module__video_usb_logger.html", [
+        [ "Example for airframe file", "module__video_usb_logger.html#module_load_example__video_usb_logger", null ],
+        [ "Module configuration options", "module__video_usb_logger.html#configuration__video_usb_logger", null ],
+        [ "Module functions", "module__video_usb_logger.html#functions__video_usb_logger", [
+          [ "Raw video_usb_logger.xml file:", "module__video_usb_logger.html#module_xml__video_usb_logger", null ]
+        ] ]
+      ] ],
+      [ "control module", "module__control.html", [
+        [ "Example for airframe file", "module__control.html#module_load_example__control", [
+          [ "Raw control.xml file:", "module__control.html#module_xml__control", null ]
+        ] ]
+      ] ],
+      [ "control_adaptive module", "module__control_adaptive.html", [
+        [ "Example for airframe file", "module__control_adaptive.html#module_load_example__control_adaptive", [
+          [ "Raw control_adaptive.xml file:", "module__control_adaptive.html#module_xml__control_adaptive", null ]
+        ] ]
+      ] ],
+      [ "control_energy module", "module__control_energy.html", [
+        [ "Example for airframe file", "module__control_energy.html#module_load_example__control_energy", [
+          [ "Raw control_energy.xml file:", "module__control_energy.html#module_xml__control_energy", null ]
+        ] ]
+      ] ],
+      [ "control_energyadaptive module", "module__control_energyadaptive.html", [
+        [ "Example for airframe file", "module__control_energyadaptive.html#module_load_example__control_energyadaptive", [
+          [ "Raw control_energyadaptive.xml file:", "module__control_energyadaptive.html#module_xml__control_energyadaptive", null ]
+        ] ]
+      ] ],
+      [ "control_new module", "module__control_new.html", [
+        [ "Example for airframe file", "module__control_new.html#module_load_example__control_new", [
+          [ "Raw control_new.xml file:", "module__control_new.html#module_xml__control_new", null ]
+        ] ]
+      ] ],
+      [ "pwm_meas module", "module__pwm_meas.html", [
+        [ "Example for airframe file", "module__pwm_meas.html#module_load_example__pwm_meas", null ],
+        [ "Module configuration options", "module__pwm_meas.html#configuration__pwm_meas", null ],
+        [ "Module functions", "module__pwm_meas.html#functions__pwm_meas", [
+          [ "Raw pwm_meas.xml file:", "module__pwm_meas.html#module_xml__pwm_meas", null ]
+        ] ]
+      ] ],
+      [ "settings module", "module__settings.html", [
+        [ "Example for airframe file", "module__settings.html#module_load_example__settings", null ],
+        [ "Module functions", "module__settings.html#functions__settings", null ],
+        [ "Datalink Functions", "module__settings.html#datalink_functions__settings", [
+          [ "Raw settings.xml file:", "module__settings.html#module_xml__settings", null ]
+        ] ]
+      ] ],
+      [ "settings_rc module", "module__settings_rc.html", [
+        [ "Example for airframe file", "module__settings_rc.html#module_load_example__settings_rc", [
+          [ "Raw settings_rc.xml file:", "module__settings_rc.html#module_xml__settings_rc", null ]
+        ] ]
+      ] ],
+      [ "shell module", "module__shell.html", [
+        [ "Example for airframe file", "module__shell.html#module_load_example__shell", null ],
+        [ "Module configuration options", "module__shell.html#configuration__shell", null ],
+        [ "Module functions", "module__shell.html#functions__shell", [
+          [ "Raw shell.xml file:", "module__shell.html#module_xml__shell", null ]
+        ] ]
+      ] ],
+      [ "state_interface module", "module__state_interface.html", [
+        [ "Example for airframe file", "module__state_interface.html#module_load_example__state_interface", null ],
+        [ "Module functions", "module__state_interface.html#functions__state_interface", [
+          [ "Raw state_interface.xml file:", "module__state_interface.html#module_xml__state_interface", null ]
+        ] ]
+      ] ],
+      [ "sys_mon module", "module__sys_mon.html", [
+        [ "Example for airframe file", "module__sys_mon.html#module_load_example__sys_mon", null ],
+        [ "Module functions", "module__sys_mon.html#functions__sys_mon", [
+          [ "Raw sys_mon.xml file:", "module__sys_mon.html#module_xml__sys_mon", null ]
+        ] ]
+      ] ],
+      [ "system_core module", "module__system_core.html", [
+        [ "Example for airframe file", "module__system_core.html#module_load_example__system_core", null ],
+        [ "Module functions", "module__system_core.html#functions__system_core", [
+          [ "Raw system_core.xml file:", "module__system_core.html#module_xml__system_core", null ]
+        ] ]
+      ] ],
+      [ "trig_test module", "module__trig_test.html", [
+        [ "Example for airframe file", "module__trig_test.html#module_load_example__trig_test", null ],
+        [ "Module functions", "module__trig_test.html#functions__trig_test", [
+          [ "Raw trig_test.xml file:", "module__trig_test.html#module_xml__trig_test", null ]
+        ] ]
+      ] ],
+      [ "approach_moving_target module", "module__approach_moving_target.html", [
+        [ "Example for airframe file", "module__approach_moving_target.html#module_load_example__approach_moving_target", null ],
+        [ "Module configuration options", "module__approach_moving_target.html#configuration__approach_moving_target", null ],
+        [ "Module functions", "module__approach_moving_target.html#functions__approach_moving_target", [
+          [ "Raw approach_moving_target.xml file:", "module__approach_moving_target.html#module_xml__approach_moving_target", null ]
+        ] ]
+      ] ],
+      [ "ctrl_module_innerloop_demo module", "module__ctrl_module_innerloop_demo.html", [
+        [ "Example for airframe file", "module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo", null ],
+        [ "Module functions", "module__ctrl_module_innerloop_demo.html#functions__ctrl_module_innerloop_demo", [
+          [ "Raw ctrl_module_innerloop_demo.xml file:", "module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo", null ]
+        ] ]
+      ] ],
+      [ "ctrl_module_outerloop_demo module", "module__ctrl_module_outerloop_demo.html", [
+        [ "Example for airframe file", "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo", null ],
+        [ "Module functions", "module__ctrl_module_outerloop_demo.html#functions__ctrl_module_outerloop_demo", [
+          [ "Raw ctrl_module_outerloop_demo.xml file:", "module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo", null ]
+        ] ]
+      ] ],
+      [ "ctrl_windtunnel module", "module__ctrl_windtunnel.html", [
+        [ "Example for airframe file", "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel", null ],
+        [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", null ],
+        [ "Module functions", "module__ctrl_windtunnel.html#functions__ctrl_windtunnel", [
+          [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
+        ] ]
+      ] ],
+      [ "eff_scheduling_cyfoam module", "module__eff_scheduling_cyfoam.html", [
+        [ "Example for airframe file", "module__eff_scheduling_cyfoam.html#module_load_example__eff_scheduling_cyfoam", null ],
+        [ "Module functions", "module__eff_scheduling_cyfoam.html#functions__eff_scheduling_cyfoam", [
+          [ "Raw eff_scheduling_cyfoam.xml file:", "module__eff_scheduling_cyfoam.html#module_xml__eff_scheduling_cyfoam", null ]
+        ] ]
+      ] ],
+      [ "eff_scheduling_falcon module", "module__eff_scheduling_falcon.html", [
+        [ "Example for airframe file", "module__eff_scheduling_falcon.html#module_load_example__eff_scheduling_falcon", null ],
+        [ "Module functions", "module__eff_scheduling_falcon.html#functions__eff_scheduling_falcon", [
+          [ "Raw eff_scheduling_falcon.xml file:", "module__eff_scheduling_falcon.html#module_xml__eff_scheduling_falcon", null ]
+        ] ]
+      ] ],
+      [ "eff_scheduling_generic module", "module__eff_scheduling_generic.html", [
+        [ "Example for airframe file", "module__eff_scheduling_generic.html#module_load_example__eff_scheduling_generic", null ],
+        [ "Module functions", "module__eff_scheduling_generic.html#functions__eff_scheduling_generic", [
+          [ "Raw eff_scheduling_generic.xml file:", "module__eff_scheduling_generic.html#module_xml__eff_scheduling_generic", null ]
+        ] ]
+      ] ],
+      [ "eff_scheduling_nederdrone module", "module__eff_scheduling_nederdrone.html", [
+        [ "Example for airframe file", "module__eff_scheduling_nederdrone.html#module_load_example__eff_scheduling_nederdrone", null ],
+        [ "Module functions", "module__eff_scheduling_nederdrone.html#functions__eff_scheduling_nederdrone", [
+          [ "Raw eff_scheduling_nederdrone.xml file:", "module__eff_scheduling_nederdrone.html#module_xml__eff_scheduling_nederdrone", null ]
+        ] ]
+      ] ],
+      [ "eff_scheduling_rotwing module", "module__eff_scheduling_rotwing.html", [
+        [ "Example for airframe file", "module__eff_scheduling_rotwing.html#module_load_example__eff_scheduling_rotwing", null ],
+        [ "Module configuration options", "module__eff_scheduling_rotwing.html#configuration__eff_scheduling_rotwing", null ],
+        [ "Module functions", "module__eff_scheduling_rotwing.html#functions__eff_scheduling_rotwing", [
+          [ "Raw eff_scheduling_rotwing.xml file:", "module__eff_scheduling_rotwing.html#module_xml__eff_scheduling_rotwing", null ]
+        ] ]
+      ] ],
+      [ "eff_scheduling_rotwing_v2 module", "module__eff_scheduling_rotwing_v2.html", [
+        [ "Example for airframe file", "module__eff_scheduling_rotwing_v2.html#module_load_example__eff_scheduling_rotwing_v2", null ],
+        [ "Module configuration options", "module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2", null ],
+        [ "Module functions", "module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2", [
+          [ "Raw eff_scheduling_rotwing_V2.xml file:", "module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2", null ]
+        ] ]
+      ] ],
+      [ "follow_me module", "module__follow_me.html", [
+        [ "Example for airframe file", "module__follow_me.html#module_load_example__follow_me", null ],
+        [ "Module configuration options", "module__follow_me.html#configuration__follow_me", null ],
+        [ "Module functions", "module__follow_me.html#functions__follow_me", null ],
+        [ "Datalink Functions", "module__follow_me.html#datalink_functions__follow_me", [
+          [ "Raw follow_me.xml file:", "module__follow_me.html#module_xml__follow_me", null ]
+        ] ]
+      ] ],
+      [ "gain_scheduling module", "module__gain_scheduling.html", [
+        [ "Example for airframe file", "module__gain_scheduling.html#module_load_example__gain_scheduling", null ],
+        [ "Module functions", "module__gain_scheduling.html#functions__gain_scheduling", [
+          [ "Raw gain_scheduling.xml file:", "module__gain_scheduling.html#module_xml__gain_scheduling", null ]
+        ] ]
+      ] ],
+      [ "object_tracking module", "module__object_tracking.html", [
+        [ "Example for airframe file", "module__object_tracking.html#module_load_example__object_tracking", null ],
+        [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", null ],
+        [ "Module functions", "module__object_tracking.html#functions__object_tracking", [
+          [ "Raw object_tracking.xml file:", "module__object_tracking.html#module_xml__object_tracking", null ]
+        ] ]
+      ] ],
+      [ "optical_flow_hover module", "module__optical_flow_hover.html", [
+        [ "Example for airframe file", "module__optical_flow_hover.html#module_load_example__optical_flow_hover", null ],
+        [ "Module functions", "module__optical_flow_hover.html#functions__optical_flow_hover", [
+          [ "Raw optical_flow_hover.xml file:", "module__optical_flow_hover.html#module_xml__optical_flow_hover", null ]
+        ] ]
+      ] ],
+      [ "optical_flow_landing module", "module__optical_flow_landing.html", [
+        [ "Example for airframe file", "module__optical_flow_landing.html#module_load_example__optical_flow_landing", null ],
+        [ "Module configuration options", "module__optical_flow_landing.html#configuration__optical_flow_landing", null ],
+        [ "Module functions", "module__optical_flow_landing.html#functions__optical_flow_landing", [
+          [ "Raw optical_flow_landing.xml file:", "module__optical_flow_landing.html#module_xml__optical_flow_landing", null ]
+        ] ]
+      ] ],
+      [ "scheduling_indi_simple module", "module__scheduling_indi_simple.html", [
+        [ "Example for airframe file", "module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple", null ],
+        [ "Module functions", "module__scheduling_indi_simple.html#functions__scheduling_indi_simple", [
+          [ "Raw scheduling_indi_simple.xml file:", "module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple", null ]
+        ] ]
+      ] ],
+      [ "shift_tracking module", "module__shift_tracking.html", [
+        [ "Example for airframe file", "module__shift_tracking.html#module_load_example__shift_tracking", null ],
+        [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", null ],
+        [ "Module functions", "module__shift_tracking.html#functions__shift_tracking", [
+          [ "Raw shift_tracking.xml file:", "module__shift_tracking.html#module_xml__shift_tracking", null ]
+        ] ]
+      ] ],
+      [ "target_pos module", "module__target_pos.html", [
+        [ "Example for airframe file", "module__target_pos.html#module_load_example__target_pos", null ],
+        [ "Module configuration options", "module__target_pos.html#configuration__target_pos", null ],
+        [ "Module functions", "module__target_pos.html#functions__target_pos", null ],
+        [ "Datalink Functions", "module__target_pos.html#datalink_functions__target_pos", [
+          [ "Raw target_pos.xml file:", "module__target_pos.html#module_xml__target_pos", null ]
+        ] ]
+      ] ],
+      [ "vertical_ctrl_module_demo module", "module__vertical_ctrl_module_demo.html", [
+        [ "Example for airframe file", "module__vertical_ctrl_module_demo.html#module_load_example__vertical_ctrl_module_demo", null ],
+        [ "Module configuration options", "module__vertical_ctrl_module_demo.html#configuration__vertical_ctrl_module_demo", null ],
+        [ "Module functions", "module__vertical_ctrl_module_demo.html#functions__vertical_ctrl_module_demo", [
+          [ "Raw vertical_ctrl_module_demo.xml file:", "module__vertical_ctrl_module_demo.html#module_xml__vertical_ctrl_module_demo", null ]
+        ] ]
+      ] ],
+      [ "datalink_common module", "module__datalink_common.html", [
+        [ "Example for airframe file", "module__datalink_common.html#module_load_example__datalink_common", null ],
+        [ "Module functions", "module__datalink_common.html#functions__datalink_common", null ],
+        [ "Datalink Functions", "module__datalink_common.html#datalink_functions__datalink_common", [
+          [ "Raw datalink_common.xml file:", "module__datalink_common.html#module_xml__datalink_common", null ]
+        ] ]
+      ] ],
+      [ "extra_dl module", "module__extra_dl.html", [
+        [ "Example for airframe file", "module__extra_dl.html#module_load_example__extra_dl", null ],
+        [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", null ],
+        [ "Module functions", "module__extra_dl.html#functions__extra_dl", [
+          [ "Raw extra_dl.xml file:", "module__extra_dl.html#module_xml__extra_dl", null ]
+        ] ]
+      ] ],
+      [ "fbw_datalink module", "module__fbw_datalink.html", [
+        [ "Example for airframe file", "module__fbw_datalink.html#module_load_example__fbw_datalink", null ],
+        [ "Module configuration options", "module__fbw_datalink.html#configuration__fbw_datalink", [
+          [ "Raw fbw_datalink.xml file:", "module__fbw_datalink.html#module_xml__fbw_datalink", null ]
+        ] ]
+      ] ],
+      [ "mavlink module", "module__mavlink.html", [
+        [ "Example for airframe file", "module__mavlink.html#module_load_example__mavlink", null ],
+        [ "Module configuration options", "module__mavlink.html#configuration__mavlink", null ],
+        [ "Module functions", "module__mavlink.html#functions__mavlink", [
+          [ "Raw mavlink.xml file:", "module__mavlink.html#module_xml__mavlink", null ]
+        ] ]
+      ] ],
+      [ "mavlink_decoder module", "module__mavlink_decoder.html", [
+        [ "Example for airframe file", "module__mavlink_decoder.html#module_load_example__mavlink_decoder", null ],
+        [ "Module configuration options", "module__mavlink_decoder.html#configuration__mavlink_decoder", null ],
+        [ "Module functions", "module__mavlink_decoder.html#functions__mavlink_decoder", [
+          [ "Raw mavlink_decoder.xml file:", "module__mavlink_decoder.html#module_xml__mavlink_decoder", null ]
+        ] ]
+      ] ],
+      [ "telemetry_bluegiga module", "module__telemetry_bluegiga.html", [
+        [ "Example for airframe file", "module__telemetry_bluegiga.html#module_load_example__telemetry_bluegiga", null ],
+        [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", null ],
+        [ "Module functions", "module__telemetry_bluegiga.html#functions__telemetry_bluegiga", [
+          [ "Raw telemetry_bluegiga.xml file:", "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga", null ]
+        ] ]
+      ] ],
+      [ "telemetry_intermcu module", "module__telemetry_intermcu.html", [
+        [ "Example for airframe file", "module__telemetry_intermcu.html#module_load_example__telemetry_intermcu", null ],
+        [ "Module configuration options", "module__telemetry_intermcu.html#configuration__telemetry_intermcu", null ],
+        [ "Module functions", "module__telemetry_intermcu.html#functions__telemetry_intermcu", [
+          [ "Raw telemetry_intermcu.xml file:", "module__telemetry_intermcu.html#module_xml__telemetry_intermcu", null ]
+        ] ]
+      ] ],
+      [ "telemetry_ivy module", "module__telemetry_ivy.html", [
+        [ "Example for airframe file", "module__telemetry_ivy.html#module_load_example__telemetry_ivy", null ],
+        [ "Module functions", "module__telemetry_ivy.html#functions__telemetry_ivy", [
+          [ "Raw telemetry_ivy.xml file:", "module__telemetry_ivy.html#module_xml__telemetry_ivy", null ]
+        ] ]
+      ] ],
+      [ "telemetry_nps module", "module__telemetry_nps.html", [
+        [ "Example for airframe file", "module__telemetry_nps.html#module_load_example__telemetry_nps", null ],
+        [ "Module configuration options", "module__telemetry_nps.html#configuration__telemetry_nps", null ],
+        [ "Module functions", "module__telemetry_nps.html#functions__telemetry_nps", [
+          [ "Raw telemetry_nps.xml file:", "module__telemetry_nps.html#module_xml__telemetry_nps", null ]
+        ] ]
+      ] ],
+      [ "telemetry_nps_secure module", "module__telemetry_nps_secure.html", [
+        [ "Example for airframe file", "module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure", null ],
+        [ "Module configuration options", "module__telemetry_nps_secure.html#configuration__telemetry_nps_secure", [
+          [ "Raw telemetry_nps_secure.xml file:", "module__telemetry_nps_secure.html#module_xml__telemetry_nps_secure", null ]
+        ] ]
+      ] ],
+      [ "telemetry_secure_common module", "module__telemetry_secure_common.html", [
+        [ "Example for airframe file", "module__telemetry_secure_common.html#module_load_example__telemetry_secure_common", null ],
+        [ "Module configuration options", "module__telemetry_secure_common.html#configuration__telemetry_secure_common", [
+          [ "Raw telemetry_secure_common.xml file:", "module__telemetry_secure_common.html#module_xml__telemetry_secure_common", null ]
+        ] ]
+      ] ],
+      [ "telemetry_sim module", "module__telemetry_sim.html", [
+        [ "Example for airframe file", "module__telemetry_sim.html#module_load_example__telemetry_sim", null ],
+        [ "Module functions", "module__telemetry_sim.html#functions__telemetry_sim", [
+          [ "Raw telemetry_sim.xml file:", "module__telemetry_sim.html#module_xml__telemetry_sim", null ]
+        ] ]
+      ] ],
+      [ "telemetry_superbitrf module", "module__telemetry_superbitrf.html", [
+        [ "Example for airframe file", "module__telemetry_superbitrf.html#module_load_example__telemetry_superbitrf", null ],
+        [ "Module functions", "module__telemetry_superbitrf.html#functions__telemetry_superbitrf", [
+          [ "Raw telemetry_superbitrf.xml file:", "module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf", null ]
+        ] ]
+      ] ],
+      [ "telemetry_transparent module", "module__telemetry_transparent.html", [
+        [ "Example for airframe file", "module__telemetry_transparent.html#module_load_example__telemetry_transparent", null ],
+        [ "Module configuration options", "module__telemetry_transparent.html#configuration__telemetry_transparent", null ],
+        [ "Module functions", "module__telemetry_transparent.html#functions__telemetry_transparent", [
+          [ "Raw telemetry_transparent.xml file:", "module__telemetry_transparent.html#module_xml__telemetry_transparent", null ]
+        ] ]
+      ] ],
+      [ "telemetry_transparent_frsky_x module", "module__telemetry_transparent_frsky_x.html", [
+        [ "Example for airframe file", "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x", null ],
+        [ "Module functions", "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x", [
+          [ "Raw telemetry_transparent_frsky_x.xml file:", "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x", null ]
+        ] ]
+      ] ],
+      [ "telemetry_transparent_gec module", "module__telemetry_transparent_gec.html", [
+        [ "Example for airframe file", "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec", null ],
+        [ "Module functions", "module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec", [
+          [ "Raw telemetry_transparent_gec.xml file:", "module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec", null ]
+        ] ]
+      ] ],
+      [ "telemetry_transparent_udp module", "module__telemetry_transparent_udp.html", [
+        [ "Example for airframe file", "module__telemetry_transparent_udp.html#module_load_example__telemetry_transparent_udp", null ],
+        [ "Module configuration options", "module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp", null ],
+        [ "Module functions", "module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp", [
+          [ "Raw telemetry_transparent_udp.xml file:", "module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp", null ]
+        ] ]
+      ] ],
+      [ "telemetry_transparent_usb module", "module__telemetry_transparent_usb.html", [
+        [ "Example for airframe file", "module__telemetry_transparent_usb.html#module_load_example__telemetry_transparent_usb", [
+          [ "Raw telemetry_transparent_usb.xml file:", "module__telemetry_transparent_usb.html#module_xml__telemetry_transparent_usb", null ]
+        ] ]
+      ] ],
+      [ "telemetry_w5100 module", "module__telemetry_w5100.html", [
+        [ "Example for airframe file", "module__telemetry_w5100.html#module_load_example__telemetry_w5100", null ],
+        [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", null ],
+        [ "Module functions", "module__telemetry_w5100.html#functions__telemetry_w5100", [
+          [ "Raw telemetry_w5100.xml file:", "module__telemetry_w5100.html#module_xml__telemetry_w5100", null ]
+        ] ]
+      ] ],
+      [ "telemetry_xbee_api module", "module__telemetry_xbee_api.html", [
+        [ "Example for airframe file", "module__telemetry_xbee_api.html#module_load_example__telemetry_xbee_api", null ],
+        [ "Module configuration options", "module__telemetry_xbee_api.html#configuration__telemetry_xbee_api", null ],
+        [ "Module functions", "module__telemetry_xbee_api.html#functions__telemetry_xbee_api", [
+          [ "Raw telemetry_xbee_api.xml file:", "module__telemetry_xbee_api.html#module_xml__telemetry_xbee_api", null ]
+        ] ]
+      ] ],
+      [ "xtend_rssi module", "module__xtend_rssi.html", [
+        [ "Example for airframe file", "module__xtend_rssi.html#module_load_example__xtend_rssi", null ],
+        [ "Module configuration options", "module__xtend_rssi.html#configuration__xtend_rssi", null ],
+        [ "Module functions", "module__xtend_rssi.html#functions__xtend_rssi", [
+          [ "Raw xtend_rssi.xml file:", "module__xtend_rssi.html#module_xml__xtend_rssi", null ]
+        ] ]
+      ] ],
+      [ "decawave_anchorless_communication module", "module__decawave_anchorless_communication.html", [
+        [ "Example for airframe file", "module__decawave_anchorless_communication.html#module_load_example__decawave_anchorless_communication", null ],
+        [ "Module functions", "module__decawave_anchorless_communication.html#functions__decawave_anchorless_communication", [
+          [ "Raw decawave_anchorless_communication.xml file:", "module__decawave_anchorless_communication.html#module_xml__decawave_anchorless_communication", null ]
+        ] ]
+      ] ],
+      [ "dw1000_arduino module", "module__dw1000_arduino.html", [
+        [ "Example for airframe file", "module__dw1000_arduino.html#module_load_example__dw1000_arduino", null ],
+        [ "Module configuration options", "module__dw1000_arduino.html#configuration__dw1000_arduino", null ],
+        [ "Module functions", "module__dw1000_arduino.html#functions__dw1000_arduino", [
+          [ "Raw dw1000_arduino.xml file:", "module__dw1000_arduino.html#module_xml__dw1000_arduino", null ]
+        ] ]
+      ] ],
+      [ "dc_ctrl_parrot_mykonos module", "module__dc_ctrl_parrot_mykonos.html", [
+        [ "Example for airframe file", "module__dc_ctrl_parrot_mykonos.html#module_load_example__dc_ctrl_parrot_mykonos", null ],
+        [ "Module configuration options", "module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos", null ],
+        [ "Module functions", "module__dc_ctrl_parrot_mykonos.html#functions__dc_ctrl_parrot_mykonos", [
+          [ "Raw dc_ctrl_parrot_mykonos.xml file:", "module__dc_ctrl_parrot_mykonos.html#module_xml__dc_ctrl_parrot_mykonos", null ]
+        ] ]
+      ] ],
+      [ "digital_cam module", "module__digital_cam.html", [
+        [ "Example for airframe file", "module__digital_cam.html#module_load_example__digital_cam", [
+          [ "Raw digital_cam.xml file:", "module__digital_cam.html#module_xml__digital_cam", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_common module", "module__digital_cam_common.html", [
+        [ "Example for airframe file", "module__digital_cam_common.html#module_load_example__digital_cam_common", null ],
+        [ "Module configuration options", "module__digital_cam_common.html#configuration__digital_cam_common", null ],
+        [ "Module functions", "module__digital_cam_common.html#functions__digital_cam_common", [
+          [ "Raw digital_cam_common.xml file:", "module__digital_cam_common.html#module_xml__digital_cam_common", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_gpio module", "module__digital_cam_gpio.html", [
+        [ "Example for airframe file", "module__digital_cam_gpio.html#module_load_example__digital_cam_gpio", null ],
+        [ "Module configuration options", "module__digital_cam_gpio.html#configuration__digital_cam_gpio", null ],
+        [ "Module functions", "module__digital_cam_gpio.html#functions__digital_cam_gpio", [
+          [ "Raw digital_cam_gpio.xml file:", "module__digital_cam_gpio.html#module_xml__digital_cam_gpio", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_i2c module", "module__digital_cam_i2c.html", [
+        [ "Example for airframe file", "module__digital_cam_i2c.html#module_load_example__digital_cam_i2c", null ],
+        [ "Module configuration options", "module__digital_cam_i2c.html#configuration__digital_cam_i2c", null ],
+        [ "Module functions", "module__digital_cam_i2c.html#functions__digital_cam_i2c", null ],
+        [ "Datalink Functions", "module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c", [
+          [ "Raw digital_cam_i2c.xml file:", "module__digital_cam_i2c.html#module_xml__digital_cam_i2c", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_pprzlink module", "module__digital_cam_pprzlink.html", [
+        [ "Example for airframe file", "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink", null ],
+        [ "Module functions", "module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink", null ],
+        [ "Datalink Functions", "module__digital_cam_pprzlink.html#datalink_functions__digital_cam_pprzlink", [
+          [ "Raw digital_cam_pprzlink.xml file:", "module__digital_cam_pprzlink.html#module_xml__digital_cam_pprzlink", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_servo module", "module__digital_cam_servo.html", [
+        [ "Example for airframe file", "module__digital_cam_servo.html#module_load_example__digital_cam_servo", null ],
+        [ "Module configuration options", "module__digital_cam_servo.html#configuration__digital_cam_servo", null ],
+        [ "Module functions", "module__digital_cam_servo.html#functions__digital_cam_servo", [
+          [ "Raw digital_cam_servo.xml file:", "module__digital_cam_servo.html#module_xml__digital_cam_servo", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_shoot_rc module", "module__digital_cam_shoot_rc.html", [
+        [ "Example for airframe file", "module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc", null ],
+        [ "Module configuration options", "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc", null ],
+        [ "Module functions", "module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc", [
+          [ "Raw digital_cam_shoot_rc.xml file:", "module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_uart module", "module__digital_cam_uart.html", [
+        [ "Example for airframe file", "module__digital_cam_uart.html#module_load_example__digital_cam_uart", null ],
+        [ "Module functions", "module__digital_cam_uart.html#functions__digital_cam_uart", [
+          [ "Raw digital_cam_uart.xml file:", "module__digital_cam_uart.html#module_xml__digital_cam_uart", null ]
+        ] ]
+      ] ],
+      [ "digital_cam_video module", "module__digital_cam_video.html", [
+        [ "Example for airframe file", "module__digital_cam_video.html#module_load_example__digital_cam_video", null ],
+        [ "Module functions", "module__digital_cam_video.html#functions__digital_cam_video", [
+          [ "Raw digital_cam_video.xml file:", "module__digital_cam_video.html#module_xml__digital_cam_video", null ]
+        ] ]
+      ] ],
+      [ "hackhd module", "module__hackhd.html", [
+        [ "Example for airframe file", "module__hackhd.html#module_load_example__hackhd", null ],
+        [ "Module configuration options", "module__hackhd.html#configuration__hackhd", null ],
+        [ "Module functions", "module__hackhd.html#functions__hackhd", [
+          [ "Raw hackhd.xml file:", "module__hackhd.html#module_xml__hackhd", null ]
+        ] ]
+      ] ],
+      [ "mppt module", "module__mppt.html", [
+        [ "Example for airframe file", "module__mppt.html#module_load_example__mppt", null ],
+        [ "Module functions", "module__mppt.html#functions__mppt", [
+          [ "Raw MPPT.xml file:", "module__mppt.html#module_xml__mppt", null ]
+        ] ]
+      ] ],
+      [ "bat_checker module", "module__bat_checker.html", [
+        [ "Example for airframe file", "module__bat_checker.html#module_load_example__bat_checker", null ],
+        [ "Module configuration options", "module__bat_checker.html#configuration__bat_checker", null ],
+        [ "Module functions", "module__bat_checker.html#functions__bat_checker", [
+          [ "Raw bat_checker.xml file:", "module__bat_checker.html#module_xml__bat_checker", null ]
+        ] ]
+      ] ],
+      [ "can_fuelcell module", "module__can_fuelcell.html", [
+        [ "Example for airframe file", "module__can_fuelcell.html#module_load_example__can_fuelcell", null ],
+        [ "Module functions", "module__can_fuelcell.html#functions__can_fuelcell", [
+          [ "Raw can_fuelcell.xml file:", "module__can_fuelcell.html#module_xml__can_fuelcell", null ]
+        ] ]
+      ] ],
+      [ "electrical module", "module__electrical.html", [
+        [ "Example for airframe file", "module__electrical.html#module_load_example__electrical", null ],
+        [ "Module functions", "module__electrical.html#functions__electrical", [
+          [ "Raw electrical.xml file:", "module__electrical.html#module_xml__electrical", null ]
+        ] ]
+      ] ],
+      [ "fdm_crrcsim module", "module__fdm_crrcsim.html", [
+        [ "Example for airframe file", "module__fdm_crrcsim.html#module_load_example__fdm_crrcsim", [
+          [ "Raw fdm_crrcsim.xml file:", "module__fdm_crrcsim.html#module_xml__fdm_crrcsim", null ]
+        ] ]
+      ] ],
+      [ "fdm_fixedwing_sim module", "module__fdm_fixedwing_sim.html", [
+        [ "Example for airframe file", "module__fdm_fixedwing_sim.html#module_load_example__fdm_fixedwing_sim", [
+          [ "Raw fdm_fixedwing_sim.xml file:", "module__fdm_fixedwing_sim.html#module_xml__fdm_fixedwing_sim", null ]
+        ] ]
+      ] ],
+      [ "fdm_gazebo module", "module__fdm_gazebo.html", [
+        [ "Example for airframe file", "module__fdm_gazebo.html#module_load_example__fdm_gazebo", null ],
+        [ "Module configuration options", "module__fdm_gazebo.html#configuration__fdm_gazebo", [
+          [ "Raw fdm_gazebo.xml file:", "module__fdm_gazebo.html#module_xml__fdm_gazebo", null ]
+        ] ]
+      ] ],
+      [ "fdm_jsbsim module", "module__fdm_jsbsim.html", [
+        [ "Example for airframe file", "module__fdm_jsbsim.html#module_load_example__fdm_jsbsim", null ],
+        [ "Module configuration options", "module__fdm_jsbsim.html#configuration__fdm_jsbsim", [
+          [ "Raw fdm_jsbsim.xml file:", "module__fdm_jsbsim.html#module_xml__fdm_jsbsim", null ]
+        ] ]
+      ] ],
+      [ "fdm_pybullet module", "module__fdm_pybullet.html", [
+        [ "Example for airframe file", "module__fdm_pybullet.html#module_load_example__fdm_pybullet", null ],
+        [ "Module configuration options", "module__fdm_pybullet.html#configuration__fdm_pybullet", [
+          [ "Raw fdm_pybullet.xml file:", "module__fdm_pybullet.html#module_xml__fdm_pybullet", null ]
+        ] ]
+      ] ],
+      [ "fdm_rover module", "module__fdm_rover.html", [
+        [ "Example for airframe file", "module__fdm_rover.html#module_load_example__fdm_rover", [
+          [ "Raw fdm_rover.xml file:", "module__fdm_rover.html#module_xml__fdm_rover", null ]
+        ] ]
+      ] ],
+      [ "gpio_ext_common module", "module__gpio_ext_common.html", [
+        [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", [
+          [ "Raw gpio_ext_common.xml file:", "module__gpio_ext_common.html#module_xml__gpio_ext_common", null ]
+        ] ]
+      ] ],
+      [ "gpio_ext_pca95xx module", "module__gpio_ext_pca95xx.html", [
+        [ "Example for airframe file", "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx", null ],
+        [ "Module configuration options", "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx", [
+          [ "Raw gpio_ext_pca95xx.xml file:", "module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx", null ]
+        ] ]
+      ] ],
+      [ "gps module", "module__gps.html", [
+        [ "Example for airframe file", "module__gps.html#module_load_example__gps", null ],
+        [ "Module configuration options", "module__gps.html#configuration__gps", null ],
+        [ "Module functions", "module__gps.html#functions__gps", null ],
+        [ "Datalink Functions", "module__gps.html#datalink_functions__gps", [
+          [ "Raw gps.xml file:", "module__gps.html#module_xml__gps", null ]
+        ] ]
+      ] ],
+      [ "gps_datalink module", "module__gps_datalink.html", [
+        [ "Example for airframe file", "module__gps_datalink.html#module_load_example__gps_datalink", null ],
+        [ "Module functions", "module__gps_datalink.html#functions__gps_datalink", null ],
+        [ "Datalink Functions", "module__gps_datalink.html#datalink_functions__gps_datalink", [
+          [ "Raw gps_datalink.xml file:", "module__gps_datalink.html#module_xml__gps_datalink", null ]
+        ] ]
+      ] ],
+      [ "gps_furuno module", "module__gps_furuno.html", [
+        [ "Example for airframe file", "module__gps_furuno.html#module_load_example__gps_furuno", null ],
+        [ "Module configuration options", "module__gps_furuno.html#configuration__gps_furuno", null ],
+        [ "Module functions", "module__gps_furuno.html#functions__gps_furuno", [
+          [ "Raw gps_furuno.xml file:", "module__gps_furuno.html#module_xml__gps_furuno", null ]
+        ] ]
+      ] ],
+      [ "gps_intermcu module", "module__gps_intermcu.html", [
+        [ "Example for airframe file", "module__gps_intermcu.html#module_load_example__gps_intermcu", null ],
+        [ "Module functions", "module__gps_intermcu.html#functions__gps_intermcu", null ],
+        [ "Datalink Functions", "module__gps_intermcu.html#datalink_functions__gps_intermcu", [
+          [ "Raw gps_intermcu.xml file:", "module__gps_intermcu.html#module_xml__gps_intermcu", null ]
+        ] ]
+      ] ],
+      [ "gps_mediatek_diy module", "module__gps_mediatek_diy.html", [
+        [ "Example for airframe file", "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy", null ],
+        [ "Module configuration options", "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy", null ],
+        [ "Module functions", "module__gps_mediatek_diy.html#functions__gps_mediatek_diy", [
+          [ "Raw gps_mediatek_diy.xml file:", "module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy", null ]
+        ] ]
+      ] ],
+      [ "gps_nmea module", "module__gps_nmea.html", [
+        [ "Example for airframe file", "module__gps_nmea.html#module_load_example__gps_nmea", null ],
+        [ "Module configuration options", "module__gps_nmea.html#configuration__gps_nmea", null ],
+        [ "Module functions", "module__gps_nmea.html#functions__gps_nmea", [
+          [ "Raw gps_nmea.xml file:", "module__gps_nmea.html#module_xml__gps_nmea", null ]
+        ] ]
+      ] ],
+      [ "gps_nps module", "module__gps_nps.html", [
+        [ "Example for airframe file", "module__gps_nps.html#module_load_example__gps_nps", null ],
+        [ "Module functions", "module__gps_nps.html#functions__gps_nps", [
+          [ "Raw gps_nps.xml file:", "module__gps_nps.html#module_xml__gps_nps", null ]
+        ] ]
+      ] ],
+      [ "gps_optitrack module", "module__gps_optitrack.html", [
+        [ "Example for airframe file", "module__gps_optitrack.html#module_load_example__gps_optitrack", [
+          [ "Raw gps_optitrack.xml file:", "module__gps_optitrack.html#module_xml__gps_optitrack", null ]
+        ] ]
+      ] ],
+      [ "gps_piksi module", "module__gps_piksi.html", [
+        [ "Example for airframe file", "module__gps_piksi.html#module_load_example__gps_piksi", null ],
+        [ "Module configuration options", "module__gps_piksi.html#configuration__gps_piksi", null ],
+        [ "Module functions", "module__gps_piksi.html#functions__gps_piksi", [
+          [ "Raw gps_piksi.xml file:", "module__gps_piksi.html#module_xml__gps_piksi", null ]
+        ] ]
+      ] ],
+      [ "gps_sim module", "module__gps_sim.html", [
+        [ "Example for airframe file", "module__gps_sim.html#module_load_example__gps_sim", null ],
+        [ "Module functions", "module__gps_sim.html#functions__gps_sim", [
+          [ "Raw gps_sim.xml file:", "module__gps_sim.html#module_xml__gps_sim", null ]
+        ] ]
+      ] ],
+      [ "gps_sirf module", "module__gps_sirf.html", [
+        [ "Example for airframe file", "module__gps_sirf.html#module_load_example__gps_sirf", null ],
+        [ "Module configuration options", "module__gps_sirf.html#configuration__gps_sirf", null ],
+        [ "Module functions", "module__gps_sirf.html#functions__gps_sirf", [
+          [ "Raw gps_sirf.xml file:", "module__gps_sirf.html#module_xml__gps_sirf", null ]
+        ] ]
+      ] ],
+      [ "gps_skytraq module", "module__gps_skytraq.html", [
+        [ "Example for airframe file", "module__gps_skytraq.html#module_load_example__gps_skytraq", null ],
+        [ "Module configuration options", "module__gps_skytraq.html#configuration__gps_skytraq", null ],
+        [ "Module functions", "module__gps_skytraq.html#functions__gps_skytraq", [
+          [ "Raw gps_skytraq.xml file:", "module__gps_skytraq.html#module_xml__gps_skytraq", null ]
+        ] ]
+      ] ],
+      [ "gps_ublox module", "module__gps_ublox.html", [
+        [ "Example for airframe file", "module__gps_ublox.html#module_load_example__gps_ublox", null ],
+        [ "Module configuration options", "module__gps_ublox.html#configuration__gps_ublox", null ],
+        [ "Module functions", "module__gps_ublox.html#functions__gps_ublox", null ],
+        [ "Datalink Functions", "module__gps_ublox.html#datalink_functions__gps_ublox", [
+          [ "Raw gps_ublox.xml file:", "module__gps_ublox.html#module_xml__gps_ublox", null ]
+        ] ]
+      ] ],
+      [ "gps_ubx_i2c module", "module__gps_ubx_i2c.html", [
+        [ "Example for airframe file", "module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c", null ],
+        [ "Module configuration options", "module__gps_ubx_i2c.html#configuration__gps_ubx_i2c", null ],
+        [ "Module functions", "module__gps_ubx_i2c.html#functions__gps_ubx_i2c", [
+          [ "Raw gps_ubx_i2c.xml file:", "module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c", null ]
+        ] ]
+      ] ],
+      [ "gps_ubx_ucenter module", "module__gps_ubx_ucenter.html", [
+        [ "Example for airframe file", "module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter", null ],
+        [ "Module configuration options", "module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter", null ],
+        [ "Module functions", "module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter", [
+          [ "Raw gps_ubx_ucenter.xml file:", "module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter", null ]
+        ] ]
+      ] ],
+      [ "gps_udp module", "module__gps_udp.html", [
+        [ "Example for airframe file", "module__gps_udp.html#module_load_example__gps_udp", null ],
+        [ "Module configuration options", "module__gps_udp.html#configuration__gps_udp", null ],
+        [ "Module functions", "module__gps_udp.html#functions__gps_udp", [
+          [ "Raw gps_udp.xml file:", "module__gps_udp.html#module_xml__gps_udp", null ]
+        ] ]
+      ] ],
+      [ "guidance_basic_fw module", "module__guidance_basic_fw.html", [
+        [ "Example for airframe file", "module__guidance_basic_fw.html#module_load_example__guidance_basic_fw", null ],
+        [ "Module configuration options", "module__guidance_basic_fw.html#configuration__guidance_basic_fw", null ],
+        [ "Module functions", "module__guidance_basic_fw.html#functions__guidance_basic_fw", [
+          [ "Raw guidance_basic_fw.xml file:", "module__guidance_basic_fw.html#module_xml__guidance_basic_fw", null ]
+        ] ]
+      ] ],
+      [ "guidance_energy module", "module__guidance_energy.html", [
+        [ "Example for airframe file", "module__guidance_energy.html#module_load_example__guidance_energy", null ],
+        [ "Module configuration options", "module__guidance_energy.html#configuration__guidance_energy", null ],
+        [ "Module functions", "module__guidance_energy.html#functions__guidance_energy", [
+          [ "Raw guidance_energy.xml file:", "module__guidance_energy.html#module_xml__guidance_energy", null ]
+        ] ]
+      ] ],
+      [ "guidance_full_pid_fw module", "module__guidance_full_pid_fw.html", [
+        [ "Example for airframe file", "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw", null ],
+        [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", null ],
+        [ "Module functions", "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw", [
+          [ "Raw guidance_full_pid_fw.xml file:", "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw", null ]
+        ] ]
+      ] ],
+      [ "guidance_hybrid module", "module__guidance_hybrid.html", [
+        [ "Example for airframe file", "module__guidance_hybrid.html#module_load_example__guidance_hybrid", null ],
+        [ "Module functions", "module__guidance_hybrid.html#functions__guidance_hybrid", [
+          [ "Raw guidance_hybrid.xml file:", "module__guidance_hybrid.html#module_xml__guidance_hybrid", null ]
+        ] ]
+      ] ],
+      [ "guidance_indi module", "module__guidance_indi.html", [
+        [ "Example for airframe file", "module__guidance_indi.html#module_load_example__guidance_indi", null ],
+        [ "Module functions", "module__guidance_indi.html#functions__guidance_indi", [
+          [ "Raw guidance_indi.xml file:", "module__guidance_indi.html#module_xml__guidance_indi", null ]
+        ] ]
+      ] ],
+      [ "guidance_indi_hybrid module", "module__guidance_indi_hybrid.html", [
+        [ "Example for airframe file", "module__guidance_indi_hybrid.html#module_load_example__guidance_indi_hybrid", null ],
+        [ "Module configuration options", "module__guidance_indi_hybrid.html#configuration__guidance_indi_hybrid", null ],
+        [ "Module functions", "module__guidance_indi_hybrid.html#functions__guidance_indi_hybrid", [
+          [ "Raw guidance_indi_hybrid.xml file:", "module__guidance_indi_hybrid.html#module_xml__guidance_indi_hybrid", null ]
+        ] ]
+      ] ],
+      [ "guidance_indi_hybrid_quadplane module", "module__guidance_indi_hybrid_quadplane.html", [
+        [ "Example for airframe file", "module__guidance_indi_hybrid_quadplane.html#module_load_example__guidance_indi_hybrid_quadplane", null ],
+        [ "Module functions", "module__guidance_indi_hybrid_quadplane.html#functions__guidance_indi_hybrid_quadplane", [
+          [ "Raw guidance_indi_hybrid_quadplane.xml file:", "module__guidance_indi_hybrid_quadplane.html#module_xml__guidance_indi_hybrid_quadplane", null ]
+        ] ]
+      ] ],
+      [ "guidance_indi_hybrid_tailsitter module", "module__guidance_indi_hybrid_tailsitter.html", [
+        [ "Example for airframe file", "module__guidance_indi_hybrid_tailsitter.html#module_load_example__guidance_indi_hybrid_tailsitter", [
+          [ "Raw guidance_indi_hybrid_tailsitter.xml file:", "module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter", null ]
+        ] ]
+      ] ],
+      [ "guidance_oneloop module", "module__guidance_oneloop.html", [
+        [ "Example for airframe file", "module__guidance_oneloop.html#module_load_example__guidance_oneloop", [
+          [ "Raw guidance_oneloop.xml file:", "module__guidance_oneloop.html#module_xml__guidance_oneloop", null ]
+        ] ]
+      ] ],
+      [ "guidance_pid_rotorcraft module", "module__guidance_pid_rotorcraft.html", [
+        [ "Example for airframe file", "module__guidance_pid_rotorcraft.html#module_load_example__guidance_pid_rotorcraft", null ],
+        [ "Module configuration options", "module__guidance_pid_rotorcraft.html#configuration__guidance_pid_rotorcraft", null ],
+        [ "Module functions", "module__guidance_pid_rotorcraft.html#functions__guidance_pid_rotorcraft", [
+          [ "Raw guidance_pid_rotorcraft.xml file:", "module__guidance_pid_rotorcraft.html#module_xml__guidance_pid_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "guidance_rotorcraft module", "module__guidance_rotorcraft.html", [
+        [ "Example for airframe file", "module__guidance_rotorcraft.html#module_load_example__guidance_rotorcraft", null ],
+        [ "Module functions", "module__guidance_rotorcraft.html#functions__guidance_rotorcraft", [
+          [ "Raw guidance_rotorcraft.xml file:", "module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "guidance_rover module", "module__guidance_rover.html", [
+        [ "Example for airframe file", "module__guidance_rover.html#module_load_example__guidance_rover", null ],
+        [ "Module functions", "module__guidance_rover.html#functions__guidance_rover", [
+          [ "Raw guidance_rover.xml file:", "module__guidance_rover.html#module_xml__guidance_rover", null ]
+        ] ]
+      ] ],
+      [ "guidance_rover_holonomic module", "module__guidance_rover_holonomic.html", [
+        [ "Example for airframe file", "module__guidance_rover_holonomic.html#module_load_example__guidance_rover_holonomic", null ],
+        [ "Module functions", "module__guidance_rover_holonomic.html#functions__guidance_rover_holonomic", [
+          [ "Raw guidance_rover_holonomic.xml file:", "module__guidance_rover_holonomic.html#module_xml__guidance_rover_holonomic", null ]
+        ] ]
+      ] ],
+      [ "guidance_rover_steering module", "module__guidance_rover_steering.html", [
+        [ "Example for airframe file", "module__guidance_rover_steering.html#module_load_example__guidance_rover_steering", null ],
+        [ "Module functions", "module__guidance_rover_steering.html#functions__guidance_rover_steering", [
+          [ "Raw guidance_rover_steering.xml file:", "module__guidance_rover_steering.html#module_xml__guidance_rover_steering", null ]
+        ] ]
+      ] ],
+      [ "heli_swashplate_mixing module", "module__heli_swashplate_mixing.html", [
+        [ "Example for airframe file", "module__heli_swashplate_mixing.html#module_load_example__heli_swashplate_mixing", null ],
+        [ "Module functions", "module__heli_swashplate_mixing.html#functions__heli_swashplate_mixing", [
+          [ "Raw heli_swashplate_mixing.xml file:", "module__heli_swashplate_mixing.html#module_xml__heli_swashplate_mixing", null ]
+        ] ]
+      ] ],
+      [ "heli_throttle_curve module", "module__heli_throttle_curve.html", [
+        [ "Example for airframe file", "module__heli_throttle_curve.html#module_load_example__heli_throttle_curve", null ],
+        [ "Module configuration options", "module__heli_throttle_curve.html#configuration__heli_throttle_curve", null ],
+        [ "Module functions", "module__heli_throttle_curve.html#functions__heli_throttle_curve", [
+          [ "Raw heli_throttle_curve.xml file:", "module__heli_throttle_curve.html#module_xml__heli_throttle_curve", null ]
+        ] ]
+      ] ],
+      [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
+        [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
+        [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
+        [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
+          [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
+        ] ]
+      ] ],
+      [ "imu_apogee module", "module__imu_apogee.html", [
+        [ "Example for airframe file", "module__imu_apogee.html#module_load_example__imu_apogee", null ],
+        [ "Module functions", "module__imu_apogee.html#functions__imu_apogee", [
+          [ "Raw imu_apogee.xml file:", "module__imu_apogee.html#module_xml__imu_apogee", null ]
+        ] ]
+      ] ],
+      [ "imu_apogee_mpu9150 module", "module__imu_apogee_mpu9150.html", [
+        [ "Example for airframe file", "module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150", null ],
+        [ "Module configuration options", "module__imu_apogee_mpu9150.html#configuration__imu_apogee_mpu9150", [
+          [ "Airframe file section", "module__imu_apogee_mpu9150.html#af_section", null ]
+        ] ],
+        [ "Files", "module__imu_apogee_mpu9150.html#files", [
+          [ "Header Files", "module__imu_apogee_mpu9150.html#headers", null ],
+          [ "Source Files", "module__imu_apogee_mpu9150.html#sources", null ],
+          [ "Raw imu_apogee_mpu9150.xml file:", "module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150", null ]
+        ] ]
+      ] ],
+      [ "imu_ardrone2 module", "module__imu_ardrone2.html", [
+        [ "Example for airframe file", "module__imu_ardrone2.html#module_load_example__imu_ardrone2", null ],
+        [ "Module functions", "module__imu_ardrone2.html#functions__imu_ardrone2", [
+          [ "Raw imu_ardrone2.xml file:", "module__imu_ardrone2.html#module_xml__imu_ardrone2", null ]
+        ] ]
+      ] ],
+      [ "imu_aspirin_common module", "module__imu_aspirin_common.html", [
+        [ "Example for airframe file", "module__imu_aspirin_common.html#module_load_example__imu_aspirin_common", null ],
+        [ "Module configuration options", "module__imu_aspirin_common.html#configuration__imu_aspirin_common", null ],
+        [ "Module functions", "module__imu_aspirin_common.html#functions__imu_aspirin_common", [
+          [ "Raw imu_aspirin_common.xml file:", "module__imu_aspirin_common.html#module_xml__imu_aspirin_common", null ]
+        ] ]
+      ] ],
+      [ "imu_aspirin_i2c_common module", "module__imu_aspirin_i2c_common.html", [
+        [ "Example for airframe file", "module__imu_aspirin_i2c_common.html#module_load_example__imu_aspirin_i2c_common", null ],
+        [ "Module configuration options", "module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common", null ],
+        [ "Module functions", "module__imu_aspirin_i2c_common.html#functions__imu_aspirin_i2c_common", [
+          [ "Raw imu_aspirin_i2c_common.xml file:", "module__imu_aspirin_i2c_common.html#module_xml__imu_aspirin_i2c_common", null ]
+        ] ]
+      ] ],
+      [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+      ] ],
+      [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
+      ] ],
+      [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
+      ] ],
+      [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      ] ],
+      [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+          [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+        ] ]
+      ] ],
+      [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      ] ],
+      [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
+        [ "Module configuration options", "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common", null ],
+        [ "Module functions", "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common", [
+          [ "Raw imu_aspirin_v2_common.xml file:", "module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common", null ]
+        ] ]
+      ] ],
+      [ "imu_bebop module", "module__imu_bebop.html", [
+        [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
+        [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
+        [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
+          [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
+        ] ]
+      ] ],
+      [ "imu_bmi088_i2c module", "module__imu_bmi088_i2c.html", [
+        [ "Example for airframe file", "module__imu_bmi088_i2c.html#module_load_example__imu_bmi088_i2c", null ],
+        [ "Module configuration options", "module__imu_bmi088_i2c.html#configuration__imu_bmi088_i2c", null ],
+        [ "Module functions", "module__imu_bmi088_i2c.html#functions__imu_bmi088_i2c", [
+          [ "Raw imu_bmi088_i2c.xml file:", "module__imu_bmi088_i2c.html#module_xml__imu_bmi088_i2c", null ]
+        ] ]
+      ] ],
+      [ "imu_chimera module", "module__imu_chimera.html", [
+        [ "Example for airframe file", "module__imu_chimera.html#module_load_example__imu_chimera", [
+          [ "Raw imu_chimera.xml file:", "module__imu_chimera.html#module_xml__imu_chimera", null ]
+        ] ]
+      ] ],
+      [ "imu_common module", "module__imu_common.html", [
+        [ "Example for airframe file", "module__imu_common.html#module_load_example__imu_common", null ],
+        [ "Module configuration options", "module__imu_common.html#configuration__imu_common", null ],
+        [ "Module functions", "module__imu_common.html#functions__imu_common", [
+          [ "Raw imu_common.xml file:", "module__imu_common.html#module_xml__imu_common", null ]
+        ] ]
+      ] ],
+      [ "imu_cube module", "module__imu_cube.html", [
+        [ "Example for airframe file", "module__imu_cube.html#module_load_example__imu_cube", null ],
+        [ "Module functions", "module__imu_cube.html#functions__imu_cube", [
+          [ "Raw imu_cube.xml file:", "module__imu_cube.html#module_xml__imu_cube", null ]
+        ] ]
+      ] ],
+      [ "imu_disco module", "module__imu_disco.html", [
+        [ "Example for airframe file", "module__imu_disco.html#module_load_example__imu_disco", null ],
+        [ "Module configuration options", "module__imu_disco.html#configuration__imu_disco", null ],
+        [ "Module functions", "module__imu_disco.html#functions__imu_disco", [
+          [ "Raw imu_disco.xml file:", "module__imu_disco.html#module_xml__imu_disco", null ]
+        ] ]
+      ] ],
+      [ "imu_elle0 module", "module__imu_elle0.html", [
+        [ "Example for airframe file", "module__imu_elle0.html#module_load_example__imu_elle0", [
+          [ "Raw imu_elle0.xml file:", "module__imu_elle0.html#module_xml__imu_elle0", null ]
+        ] ]
+      ] ],
+      [ "imu_heater module", "module__imu_heater.html", [
+        [ "Example for airframe file", "module__imu_heater.html#module_load_example__imu_heater", null ],
+        [ "Module configuration options", "module__imu_heater.html#configuration__imu_heater", null ],
+        [ "Module functions", "module__imu_heater.html#functions__imu_heater", [
+          [ "Raw imu_heater.xml file:", "module__imu_heater.html#module_xml__imu_heater", null ]
+        ] ]
+      ] ],
+      [ "imu_icm42688 module", "module__imu_icm42688.html", [
+        [ "Example for airframe file", "module__imu_icm42688.html#module_load_example__imu_icm42688", null ],
+        [ "Module configuration options", "module__imu_icm42688.html#configuration__imu_icm42688", null ],
+        [ "Module functions", "module__imu_icm42688.html#functions__imu_icm42688", [
+          [ "Raw imu_icm42688.xml file:", "module__imu_icm42688.html#module_xml__imu_icm42688", null ]
+        ] ]
+      ] ],
+      [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
+        [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
+        [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", [
+          [ ".1 Raw imu_lisa_m_v2.1.xml file:", "module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2", null ]
+        ] ]
+      ] ],
+      [ "imu_lisa_mx_v2.1 module", "module__imu_lisa_mx_v2_1.html", [
+        [ "Example for airframe file", "module__imu_lisa_mx_v2_1.html#module_load_example__imu_lisa_mx_v2_1", [
+          [ ".1 Raw imu_lisa_mx_v2.1.xml file:", "module__imu_lisa_mx_v2_1.html#module_xml__imu_lisa_mx_v2", null ]
+        ] ]
+      ] ],
+      [ "imu_lisa_s_v1.0 module", "module__imu_lisa_s_v1_0.html", [
+        [ "Example for airframe file", "module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0", null ],
+        [ "Module configuration options", "module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0", [
+          [ ".0 Raw imu_lisa_s_v1.0.xml file:", "module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1", null ]
+        ] ]
+      ] ],
+      [ "imu_matek_h743_slim module", "module__imu_matek_h743_slim.html", [
+        [ "Example for airframe file", "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim", [
+          [ "Raw imu_matek_h743_slim.xml file:", "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim", null ]
+        ] ]
+      ] ],
+      [ "imu_mpu6000 module", "module__imu_mpu6000.html", [
+        [ "Example for airframe file", "module__imu_mpu6000.html#module_load_example__imu_mpu6000", null ],
+        [ "Module configuration options", "module__imu_mpu6000.html#configuration__imu_mpu6000", null ],
+        [ "Module functions", "module__imu_mpu6000.html#functions__imu_mpu6000", [
+          [ "Raw imu_mpu6000.xml file:", "module__imu_mpu6000.html#module_xml__imu_mpu6000", null ]
+        ] ]
+      ] ],
+      [ "imu_mpu6000_hmc5883 module", "module__imu_mpu6000_hmc5883.html", [
+        [ "Example for airframe file", "module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883", null ],
+        [ "Module configuration options", "module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883", null ],
+        [ "Module functions", "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883", [
+          [ "Raw imu_mpu6000_hmc5883.xml file:", "module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883", null ]
+        ] ]
+      ] ],
+      [ "imu_mpu60x0_i2c module", "module__imu_mpu60x0_i2c.html", [
+        [ "Example for airframe file", "module__imu_mpu60x0_i2c.html#module_load_example__imu_mpu60x0_i2c", null ],
+        [ "Module configuration options", "module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c", null ],
+        [ "Module functions", "module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c", [
+          [ "Raw imu_mpu60x0_i2c.xml file:", "module__imu_mpu60x0_i2c.html#module_xml__imu_mpu60x0_i2c", null ]
+        ] ]
+      ] ],
+      [ "imu_mpu9250 module", "module__imu_mpu9250.html", [
+        [ "Example for airframe file", "module__imu_mpu9250.html#module_load_example__imu_mpu9250", null ],
+        [ "Module configuration options", "module__imu_mpu9250.html#configuration__imu_mpu9250", null ],
+        [ "Module functions", "module__imu_mpu9250.html#functions__imu_mpu9250", [
+          [ "Init Functions", "module__imu_mpu9250.html#init_functions", null ],
+          [ "Periodic Functions", "module__imu_mpu9250.html#periodic_functions", null ],
+          [ "Raw imu_mpu9250.xml file:", "module__imu_mpu9250.html#module_xml__imu_mpu9250", null ]
+        ] ]
+      ] ],
+      [ "imu_mpu9250_i2c module", "module__imu_mpu9250_i2c.html", [
+        [ "Example for airframe file", "module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c", null ],
+        [ "Module configuration options", "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c", null ],
+        [ "Module functions", "module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c", [
+          [ "Raw imu_mpu9250_i2c.xml file:", "module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c", null ]
+        ] ]
+      ] ],
+      [ "imu_mpu9250_spi module", "module__imu_mpu9250_spi.html", [
+        [ "Example for airframe file", "module__imu_mpu9250_spi.html#module_load_example__imu_mpu9250_spi", null ],
+        [ "Module configuration options", "module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi", null ],
+        [ "Module functions", "module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi", [
+          [ "Raw imu_mpu9250_spi.xml file:", "module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi", null ]
+        ] ]
+      ] ],
+      [ "imu_nps module", "module__imu_nps.html", [
+        [ "Example for airframe file", "module__imu_nps.html#module_load_example__imu_nps", null ],
+        [ "Module functions", "module__imu_nps.html#functions__imu_nps", [
+          [ "Raw imu_nps.xml file:", "module__imu_nps.html#module_xml__imu_nps", null ]
+        ] ]
+      ] ],
+      [ "imu_openpilot_revo module", "module__imu_openpilot_revo.html", [
+        [ "Example for airframe file", "module__imu_openpilot_revo.html#module_load_example__imu_openpilot_revo", null ],
+        [ "Module configuration options", "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo", null ],
+        [ "Module functions", "module__imu_openpilot_revo.html#functions__imu_openpilot_revo", [
+          [ "Raw imu_openpilot_revo.xml file:", "module__imu_openpilot_revo.html#module_xml__imu_openpilot_revo", null ]
+        ] ]
+      ] ],
+      [ "imu_openpilot_revo_nano module", "module__imu_openpilot_revo_nano.html", [
+        [ "Example for airframe file", "module__imu_openpilot_revo_nano.html#module_load_example__imu_openpilot_revo_nano", null ],
+        [ "Module configuration options", "module__imu_openpilot_revo_nano.html#configuration__imu_openpilot_revo_nano", null ],
+        [ "Module functions", "module__imu_openpilot_revo_nano.html#functions__imu_openpilot_revo_nano", [
+          [ "Raw imu_openpilot_revo_nano.xml file:", "module__imu_openpilot_revo_nano.html#module_xml__imu_openpilot_revo_nano", null ]
+        ] ]
+      ] ],
+      [ "imu_pixhawk6x module", "module__imu_pixhawk6x.html", [
+        [ "Example for airframe file", "module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x", null ],
+        [ "Module functions", "module__imu_pixhawk6x.html#functions__imu_pixhawk6x", [
+          [ "Raw imu_pixhawk6x.xml file:", "module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x", null ]
+        ] ]
+      ] ],
+      [ "imu_px4fmu_v1.7 module", "module__imu_px4fmu_v1_7.html", [
+        [ "Example for airframe file", "module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7", null ],
+        [ "Module configuration options", "module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7", null ],
+        [ "Module functions", "module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7", [
+          [ ".7 Raw imu_px4fmu_v1.7.xml file:", "module__imu_px4fmu_v1_7.html#module_xml__imu_px4fmu_v1", null ]
+        ] ]
+      ] ],
+      [ "imu_px4fmu_v2.4 module", "module__imu_px4fmu_v2_4.html", [
+        [ "Example for airframe file", "module__imu_px4fmu_v2_4.html#module_load_example__imu_px4fmu_v2_4", null ],
+        [ "Module configuration options", "module__imu_px4fmu_v2_4.html#configuration__imu_px4fmu_v2_4", null ],
+        [ "Module functions", "module__imu_px4fmu_v2_4.html#functions__imu_px4fmu_v2_4", [
+          [ ".4 Raw imu_px4fmu_v2.4.xml file:", "module__imu_px4fmu_v2_4.html#module_xml__imu_px4fmu_v2", null ]
+        ] ]
+      ] ],
+      [ "imu_sim module", "module__imu_sim.html", [
+        [ "Example for airframe file", "module__imu_sim.html#module_load_example__imu_sim", [
+          [ "Raw imu_sim.xml file:", "module__imu_sim.html#module_xml__imu_sim", null ]
+        ] ]
+      ] ],
+      [ "imu_vectornav module", "module__imu_vectornav.html", [
+        [ "Example for airframe file", "module__imu_vectornav.html#module_load_example__imu_vectornav", null ],
+        [ "Module configuration options", "module__imu_vectornav.html#configuration__imu_vectornav", null ],
+        [ "Module functions", "module__imu_vectornav.html#functions__imu_vectornav", [
+          [ "Raw imu_vectornav.xml file:", "module__imu_vectornav.html#module_xml__imu_vectornav", null ]
+        ] ]
+      ] ],
+      [ "alt_filter module", "module__alt_filter.html", [
+        [ "Example for airframe file", "module__alt_filter.html#module_load_example__alt_filter", null ],
+        [ "Module functions", "module__alt_filter.html#functions__alt_filter", [
+          [ "Raw alt_filter.xml file:", "module__alt_filter.html#module_xml__alt_filter", null ]
+        ] ]
+      ] ],
+      [ "imu_temp_ctrl module", "module__imu_temp_ctrl.html", [
+        [ "Example for airframe file", "module__imu_temp_ctrl.html#module_load_example__imu_temp_ctrl", null ],
+        [ "Module configuration options", "module__imu_temp_ctrl.html#configuration__imu_temp_ctrl", null ],
+        [ "Module functions", "module__imu_temp_ctrl.html#functions__imu_temp_ctrl", [
+          [ "Raw imu_temp_ctrl.xml file:", "module__imu_temp_ctrl.html#module_xml__imu_temp_ctrl", null ]
+        ] ]
+      ] ],
+      [ "imu_xsens module", "module__imu_xsens.html", [
+        [ "Example for airframe file", "module__imu_xsens.html#module_load_example__imu_xsens", null ],
+        [ "Module configuration options", "module__imu_xsens.html#configuration__imu_xsens", null ],
+        [ "Module functions", "module__imu_xsens.html#functions__imu_xsens", [
+          [ "Raw imu_xsens.xml file:", "module__imu_xsens.html#module_xml__imu_xsens", null ]
+        ] ]
+      ] ],
+      [ "ins module", "module__ins.html", [
+        [ "Example for airframe file", "module__ins.html#module_load_example__ins", [
+          [ "Raw ins.xml file:", "module__ins.html#module_xml__ins", null ]
+        ] ]
+      ] ],
+      [ "ins_alt_float module", "module__ins_alt_float.html", [
+        [ "Example for airframe file", "module__ins_alt_float.html#module_load_example__ins_alt_float", null ],
+        [ "Module configuration options", "module__ins_alt_float.html#configuration__ins_alt_float", null ],
+        [ "Module functions", "module__ins_alt_float.html#functions__ins_alt_float", [
+          [ "Raw ins_alt_float.xml file:", "module__ins_alt_float.html#module_xml__ins_alt_float", null ]
+        ] ]
+      ] ],
+      [ "ins_arduimu module", "module__ins_arduimu.html", [
+        [ "Example for airframe file", "module__ins_arduimu.html#module_load_example__ins_arduimu", null ],
+        [ "Module functions", "module__ins_arduimu.html#functions__ins_arduimu", [
+          [ "Raw ins_arduimu.xml file:", "module__ins_arduimu.html#module_xml__ins_arduimu", null ]
+        ] ]
+      ] ],
+      [ "ins_arduimu_basic module", "module__ins_arduimu_basic.html", [
+        [ "Example for airframe file", "module__ins_arduimu_basic.html#module_load_example__ins_arduimu_basic", null ],
+        [ "Module configuration options", "module__ins_arduimu_basic.html#configuration__ins_arduimu_basic", null ],
+        [ "Module functions", "module__ins_arduimu_basic.html#functions__ins_arduimu_basic", [
+          [ "Raw ins_arduimu_basic.xml file:", "module__ins_arduimu_basic.html#module_xml__ins_arduimu_basic", null ]
+        ] ]
+      ] ],
+      [ "ins_ekf2 module", "module__ins_ekf2.html", [
+        [ "Example for airframe file", "module__ins_ekf2.html#module_load_example__ins_ekf2", null ],
+        [ "Module configuration options", "module__ins_ekf2.html#configuration__ins_ekf2", null ],
+        [ "Module functions", "module__ins_ekf2.html#functions__ins_ekf2", null ],
+        [ "Datalink Functions", "module__ins_ekf2.html#datalink_functions__ins_ekf2", [
+          [ "Raw ins_ekf2.xml file:", "module__ins_ekf2.html#module_xml__ins_ekf2", null ]
+        ] ]
+      ] ],
+      [ "ins_ext_pose module", "module__ins_ext_pose.html", [
+        [ "Example for airframe file", "module__ins_ext_pose.html#module_load_example__ins_ext_pose", null ],
+        [ "Module functions", "module__ins_ext_pose.html#functions__ins_ext_pose", null ],
+        [ "Datalink Functions", "module__ins_ext_pose.html#datalink_functions__ins_ext_pose", [
+          [ "Raw ins_ext_pose.xml file:", "module__ins_ext_pose.html#module_xml__ins_ext_pose", null ]
+        ] ]
+      ] ],
+      [ "ins_extended module", "module__ins_extended.html", [
+        [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
+        [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
+          [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
+        ] ]
+      ] ],
+      [ "ins_float_invariant module", "module__ins_float_invariant.html", [
+        [ "Example for airframe file", "module__ins_float_invariant.html#module_load_example__ins_float_invariant", null ],
+        [ "Module configuration options", "module__ins_float_invariant.html#configuration__ins_float_invariant", null ],
+        [ "Module functions", "module__ins_float_invariant.html#functions__ins_float_invariant", [
+          [ "Raw ins_float_invariant.xml file:", "module__ins_float_invariant.html#module_xml__ins_float_invariant", null ]
+        ] ]
+      ] ],
+      [ "ins_flow module", "module__ins_flow.html", [
+        [ "Example for airframe file", "module__ins_flow.html#module_load_example__ins_flow", null ],
+        [ "Module functions", "module__ins_flow.html#functions__ins_flow", [
+          [ "Raw ins_flow.xml file:", "module__ins_flow.html#module_xml__ins_flow", null ]
+        ] ]
+      ] ],
+      [ "ins_gps_passthrough module", "module__ins_gps_passthrough.html", [
+        [ "Example for airframe file", "module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough", null ],
+        [ "Module configuration options", "module__ins_gps_passthrough.html#configuration__ins_gps_passthrough", null ],
+        [ "Module functions", "module__ins_gps_passthrough.html#functions__ins_gps_passthrough", [
+          [ "Raw ins_gps_passthrough.xml file:", "module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough", null ]
+        ] ]
+      ] ],
+      [ "ins_hff module", "module__ins_hff.html", [
+        [ "Example for airframe file", "module__ins_hff.html#module_load_example__ins_hff", [
+          [ "Raw ins_hff.xml file:", "module__ins_hff.html#module_xml__ins_hff", null ]
+        ] ]
+      ] ],
+      [ "ins_hff_extended module", "module__ins_hff_extended.html", [
+        [ "Example for airframe file", "module__ins_hff_extended.html#module_load_example__ins_hff_extended", null ],
+        [ "Module configuration options", "module__ins_hff_extended.html#configuration__ins_hff_extended", [
+          [ "Raw ins_hff_extended.xml file:", "module__ins_hff_extended.html#module_xml__ins_hff_extended", null ]
+        ] ]
+      ] ],
+      [ "ins_int_common module", "module__ins_int_common.html", [
+        [ "Example for airframe file", "module__ins_int_common.html#module_load_example__ins_int_common", null ],
+        [ "Module configuration options", "module__ins_int_common.html#configuration__ins_int_common", null ],
+        [ "Module functions", "module__ins_int_common.html#functions__ins_int_common", [
+          [ "Raw ins_int_common.xml file:", "module__ins_int_common.html#module_xml__ins_int_common", null ]
+        ] ]
+      ] ],
+      [ "ins_mekf_wind module", "module__ins_mekf_wind.html", [
+        [ "Example for airframe file", "module__ins_mekf_wind.html#module_load_example__ins_mekf_wind", null ],
+        [ "Module configuration options", "module__ins_mekf_wind.html#configuration__ins_mekf_wind", null ],
+        [ "Module functions", "module__ins_mekf_wind.html#functions__ins_mekf_wind", [
+          [ "Raw ins_mekf_wind.xml file:", "module__ins_mekf_wind.html#module_xml__ins_mekf_wind", null ]
+        ] ]
+      ] ],
+      [ "ins_nps module", "module__ins_nps.html", [
+        [ "Example for airframe file", "module__ins_nps.html#module_load_example__ins_nps", null ],
+        [ "Module functions", "module__ins_nps.html#functions__ins_nps", [
+          [ "Raw ins_nps.xml file:", "module__ins_nps.html#module_xml__ins_nps", null ]
+        ] ]
+      ] ],
+      [ "ins_sim module", "module__ins_sim.html", [
+        [ "Example for airframe file", "module__ins_sim.html#module_load_example__ins_sim", [
+          [ "Raw ins_sim.xml file:", "module__ins_sim.html#module_xml__ins_sim", null ]
+        ] ]
+      ] ],
+      [ "ins_skeleton module", "module__ins_skeleton.html", [
+        [ "Example for airframe file", "module__ins_skeleton.html#module_load_example__ins_skeleton", null ],
+        [ "Module configuration options", "module__ins_skeleton.html#configuration__ins_skeleton", null ],
+        [ "Module functions", "module__ins_skeleton.html#functions__ins_skeleton", [
+          [ "Raw ins_skeleton.xml file:", "module__ins_skeleton.html#module_xml__ins_skeleton", null ]
+        ] ]
+      ] ],
+      [ "ins_vectornav module", "module__ins_vectornav.html", [
+        [ "Example for airframe file", "module__ins_vectornav.html#module_load_example__ins_vectornav", null ],
+        [ "Module configuration options", "module__ins_vectornav.html#configuration__ins_vectornav", null ],
+        [ "Module functions", "module__ins_vectornav.html#functions__ins_vectornav", [
+          [ "Raw ins_vectornav.xml file:", "module__ins_vectornav.html#module_xml__ins_vectornav", null ]
+        ] ]
+      ] ],
+      [ "ins_vn100 module", "module__ins_vn100.html", [
+        [ "Example for airframe file", "module__ins_vn100.html#module_load_example__ins_vn100", null ],
+        [ "Module configuration options", "module__ins_vn100.html#configuration__ins_vn100", null ],
+        [ "Module functions", "module__ins_vn100.html#functions__ins_vn100", [
+          [ "Raw ins_vn100.xml file:", "module__ins_vn100.html#module_xml__ins_vn100", null ]
+        ] ]
+      ] ],
+      [ "ins_xsens module", "module__ins_xsens.html", [
+        [ "Example for airframe file", "module__ins_xsens.html#module_load_example__ins_xsens", null ],
+        [ "Module configuration options", "module__ins_xsens.html#configuration__ins_xsens", null ],
+        [ "Module functions", "module__ins_xsens.html#functions__ins_xsens", [
+          [ "Raw ins_xsens.xml file:", "module__ins_xsens.html#module_xml__ins_xsens", null ]
+        ] ]
+      ] ],
+      [ "ins_xsens700 module", "module__ins_xsens700.html", [
+        [ "Example for airframe file", "module__ins_xsens700.html#module_load_example__ins_xsens700", null ],
+        [ "Module configuration options", "module__ins_xsens700.html#configuration__ins_xsens700", null ],
+        [ "Module functions", "module__ins_xsens700.html#functions__ins_xsens700", [
+          [ "Raw ins_xsens700.xml file:", "module__ins_xsens700.html#module_xml__ins_xsens700", null ]
+        ] ]
+      ] ],
+      [ "intermcu_iomcu module", "module__intermcu_iomcu.html", [
+        [ "Example for airframe file", "module__intermcu_iomcu.html#module_load_example__intermcu_iomcu", null ],
+        [ "Module configuration options", "module__intermcu_iomcu.html#configuration__intermcu_iomcu", [
+          [ "Raw intermcu_iomcu.xml file:", "module__intermcu_iomcu.html#module_xml__intermcu_iomcu", null ]
+        ] ]
+      ] ],
+      [ "intermcu_uart module", "module__intermcu_uart.html", [
+        [ "Example for airframe file", "module__intermcu_uart.html#module_load_example__intermcu_uart", null ],
+        [ "Module configuration options", "module__intermcu_uart.html#configuration__intermcu_uart", null ],
+        [ "Module functions", "module__intermcu_uart.html#functions__intermcu_uart", null ],
+        [ "Datalink Functions", "module__intermcu_uart.html#datalink_functions__intermcu_uart", [
+          [ "Raw intermcu_uart.xml file:", "module__intermcu_uart.html#module_xml__intermcu_uart", null ]
+        ] ]
+      ] ],
+      [ "lidar_lite module", "module__lidar_lite.html", [
+        [ "Example for airframe file", "module__lidar_lite.html#module_load_example__lidar_lite", null ],
+        [ "Module configuration options", "module__lidar_lite.html#configuration__lidar_lite", null ],
+        [ "Module functions", "module__lidar_lite.html#functions__lidar_lite", [
+          [ "Raw lidar_lite.xml file:", "module__lidar_lite.html#module_xml__lidar_lite", null ]
+        ] ]
+      ] ],
+      [ "lidar_sf11 module", "module__lidar_sf11.html", [
+        [ "Example for airframe file", "module__lidar_sf11.html#module_load_example__lidar_sf11", null ],
+        [ "Module configuration options", "module__lidar_sf11.html#configuration__lidar_sf11", null ],
+        [ "Module functions", "module__lidar_sf11.html#functions__lidar_sf11", [
+          [ "Raw lidar_sf11.xml file:", "module__lidar_sf11.html#module_xml__lidar_sf11", null ]
+        ] ]
+      ] ],
+      [ "lidar_tfmini module", "module__lidar_tfmini.html", [
+        [ "Example for airframe file", "module__lidar_tfmini.html#module_load_example__lidar_tfmini", null ],
+        [ "Module configuration options", "module__lidar_tfmini.html#configuration__lidar_tfmini", null ],
+        [ "Module functions", "module__lidar_tfmini.html#functions__lidar_tfmini", [
+          [ "Raw lidar_tfmini.xml file:", "module__lidar_tfmini.html#module_xml__lidar_tfmini", null ]
+        ] ]
+      ] ],
+      [ "lidar_tfmini_i2c module", "module__lidar_tfmini_i2c.html", [
+        [ "Example for airframe file", "module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c", null ],
+        [ "Module configuration options", "module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c", null ],
+        [ "Module functions", "module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c", [
+          [ "Raw lidar_tfmini_i2c.xml file:", "module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c", null ]
+        ] ]
+      ] ],
+      [ "lidar_vl53l5cx module", "module__lidar_vl53l5cx.html", [
+        [ "Example for airframe file", "module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx", null ],
+        [ "Module configuration options", "module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx", null ],
+        [ "Module functions", "module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx", [
+          [ "Raw lidar_vl53l5cx.xml file:", "module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx", null ]
+        ] ]
+      ] ],
+      [ "led_safety_status module", "module__led_safety_status.html", [
+        [ "Example for airframe file", "module__led_safety_status.html#module_load_example__led_safety_status", null ],
+        [ "Module functions", "module__led_safety_status.html#functions__led_safety_status", [
+          [ "Raw led_safety_status.xml file:", "module__led_safety_status.html#module_xml__led_safety_status", null ]
+        ] ]
+      ] ],
+      [ "light module", "module__light.html", [
+        [ "Example for airframe file", "module__light.html#module_load_example__light", null ],
+        [ "Module configuration options", "module__light.html#configuration__light", null ],
+        [ "Module functions", "module__light.html#functions__light", [
+          [ "Raw light.xml file:", "module__light.html#module_xml__light", null ]
+        ] ]
+      ] ],
+      [ "light_scheduler module", "module__light_scheduler.html", [
+        [ "Example for airframe file", "module__light_scheduler.html#module_load_example__light_scheduler", null ],
+        [ "Module configuration options", "module__light_scheduler.html#configuration__light_scheduler", null ],
+        [ "Module functions", "module__light_scheduler.html#functions__light_scheduler", [
+          [ "Raw light_scheduler.xml file:", "module__light_scheduler.html#module_xml__light_scheduler", null ]
+        ] ]
+      ] ],
+      [ "direct_memory_logger module", "module__direct_memory_logger.html", [
+        [ "Example for airframe file", "module__direct_memory_logger.html#module_load_example__direct_memory_logger", null ],
+        [ "Module configuration options", "module__direct_memory_logger.html#configuration__direct_memory_logger", null ],
+        [ "Module functions", "module__direct_memory_logger.html#functions__direct_memory_logger", [
+          [ "Raw direct_memory_logger.xml file:", "module__direct_memory_logger.html#module_xml__direct_memory_logger", null ]
+        ] ]
+      ] ],
+      [ "flight_recorder module", "module__flight_recorder.html", [
+        [ "Example for airframe file", "module__flight_recorder.html#module_load_example__flight_recorder", null ],
+        [ "Module configuration options", "module__flight_recorder.html#configuration__flight_recorder", null ],
+        [ "Module functions", "module__flight_recorder.html#functions__flight_recorder", null ],
+        [ "Datalink Functions", "module__flight_recorder.html#datalink_functions__flight_recorder", [
+          [ "Raw flight_recorder.xml file:", "module__flight_recorder.html#module_xml__flight_recorder", null ]
+        ] ]
+      ] ],
+      [ "logger_control_effectiveness module", "module__logger_control_effectiveness.html", [
+        [ "Example for airframe file", "module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness", null ],
+        [ "Module configuration options", "module__logger_control_effectiveness.html#configuration__logger_control_effectiveness", null ],
+        [ "Module functions", "module__logger_control_effectiveness.html#functions__logger_control_effectiveness", [
+          [ "Raw logger_control_effectiveness.xml file:", "module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness", null ]
+        ] ]
+      ] ],
+      [ "logger_dataflash module", "module__logger_dataflash.html", [
+        [ "Example for airframe file", "module__logger_dataflash.html#module_load_example__logger_dataflash", null ],
+        [ "Module configuration options", "module__logger_dataflash.html#configuration__logger_dataflash", null ],
+        [ "Module functions", "module__logger_dataflash.html#functions__logger_dataflash", [
+          [ "Raw logger_dataflash.xml file:", "module__logger_dataflash.html#module_xml__logger_dataflash", null ]
+        ] ]
+      ] ],
+      [ "logger_file module", "module__logger_file.html", [
+        [ "Example for airframe file", "module__logger_file.html#module_load_example__logger_file", null ],
+        [ "Module configuration options", "module__logger_file.html#configuration__logger_file", null ],
+        [ "Module functions", "module__logger_file.html#functions__logger_file", [
+          [ "Raw logger_file.xml file:", "module__logger_file.html#module_xml__logger_file", null ]
+        ] ]
+      ] ],
+      [ "logger_sd_chibios module", "module__logger_sd_chibios.html", [
+        [ "Example for airframe file", "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios", null ],
+        [ "Module configuration options", "module__logger_sd_chibios.html#configuration__logger_sd_chibios", null ],
+        [ "Module functions", "module__logger_sd_chibios.html#functions__logger_sd_chibios", null ],
+        [ "Datalink Functions", "module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios", [
+          [ "Raw logger_sd_chibios.xml file:", "module__logger_sd_chibios.html#module_xml__logger_sd_chibios", null ]
+        ] ]
+      ] ],
+      [ "logger_sd_spi_direct module", "module__logger_sd_spi_direct.html", [
+        [ "Example for airframe file", "module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct", null ],
+        [ "Module configuration options", "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct", null ],
+        [ "Module functions", "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct", null ],
+        [ "Datalink Functions", "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct", [
+          [ "Raw logger_sd_spi_direct.xml file:", "module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct", null ]
+        ] ]
+      ] ],
+      [ "logger_spi_link module", "module__logger_spi_link.html", [
+        [ "Example for airframe file", "module__logger_spi_link.html#module_load_example__logger_spi_link", null ],
+        [ "Module configuration options", "module__logger_spi_link.html#configuration__logger_spi_link", null ],
+        [ "Module functions", "module__logger_spi_link.html#functions__logger_spi_link", [
+          [ "Raw logger_spi_link.xml file:", "module__logger_spi_link.html#module_xml__logger_spi_link", null ]
+        ] ]
+      ] ],
+      [ "logger_uart module", "module__logger_uart.html", [
+        [ "Example for airframe file", "module__logger_uart.html#module_load_example__logger_uart", null ],
+        [ "Module configuration options", "module__logger_uart.html#configuration__logger_uart", null ],
+        [ "Module functions", "module__logger_uart.html#functions__logger_uart", [
+          [ "Raw logger_uart.xml file:", "module__logger_uart.html#module_xml__logger_uart", null ]
+        ] ]
+      ] ],
+      [ "openlog module", "module__openlog.html", [
+        [ "Example for airframe file", "module__openlog.html#module_load_example__openlog", null ],
+        [ "Module functions", "module__openlog.html#functions__openlog", [
+          [ "Raw openlog.xml file:", "module__openlog.html#module_xml__openlog", null ]
+        ] ]
+      ] ],
+      [ "pprzlog module", "module__pprzlog.html", [
+        [ "Example for airframe file", "module__pprzlog.html#module_load_example__pprzlog", null ],
+        [ "Module functions", "module__pprzlog.html#functions__pprzlog", [
+          [ "Raw pprzlog.xml file:", "module__pprzlog.html#module_xml__pprzlog", null ]
+        ] ]
+      ] ],
+      [ "adc module", "module__adc.html", [
+        [ "Example for airframe file", "module__adc.html#module_load_example__adc", [
+          [ "Raw adc.xml file:", "module__adc.html#module_xml__adc", null ]
+        ] ]
+      ] ],
+      [ "dac module", "module__dac.html", [
+        [ "Example for airframe file", "module__dac.html#module_load_example__dac", [
+          [ "Raw dac.xml file:", "module__dac.html#module_xml__dac", null ]
+        ] ]
+      ] ],
+      [ "i2c module", "module__i2c.html", [
+        [ "Example for airframe file", "module__i2c.html#module_load_example__i2c", [
+          [ "Raw i2c.xml file:", "module__i2c.html#module_xml__i2c", null ]
+        ] ]
+      ] ],
+      [ "mcu module", "module__mcu.html", [
+        [ "Example for airframe file", "module__mcu.html#module_load_example__mcu", null ],
+        [ "Module functions", "module__mcu.html#functions__mcu", [
+          [ "Raw mcu.xml file:", "module__mcu.html#module_xml__mcu", null ]
+        ] ]
+      ] ],
+      [ "pipe module", "module__pipe.html", [
+        [ "Example for airframe file", "module__pipe.html#module_load_example__pipe", null ],
+        [ "Module configuration options", "module__pipe.html#configuration__pipe", [
+          [ "Raw pipe.xml file:", "module__pipe.html#module_xml__pipe", null ]
+        ] ]
+      ] ],
+      [ "rng module", "module__rng.html", [
+        [ "Example for airframe file", "module__rng.html#module_load_example__rng", [
+          [ "Raw rng.xml file:", "module__rng.html#module_xml__rng", null ]
+        ] ]
+      ] ],
+      [ "spi_master module", "module__spi_master.html", [
+        [ "Example for airframe file", "module__spi_master.html#module_load_example__spi_master", [
+          [ "Raw spi_master.xml file:", "module__spi_master.html#module_xml__spi_master", null ]
+        ] ]
+      ] ],
+      [ "sys_time module", "module__sys_time.html", [
+        [ "Example for airframe file", "module__sys_time.html#module_load_example__sys_time", null ],
+        [ "Module configuration options", "module__sys_time.html#configuration__sys_time", [
+          [ "Raw sys_time.xml file:", "module__sys_time.html#module_xml__sys_time", null ]
+        ] ]
+      ] ],
+      [ "uart module", "module__uart.html", [
+        [ "Example for airframe file", "module__uart.html#module_load_example__uart", [
+          [ "Raw uart.xml file:", "module__uart.html#module_xml__uart", null ]
+        ] ]
+      ] ],
+      [ "udp module", "module__udp.html", [
+        [ "Example for airframe file", "module__udp.html#module_load_example__udp", [
+          [ "Raw udp.xml file:", "module__udp.html#module_xml__udp", null ]
+        ] ]
+      ] ],
+      [ "charge_sens module", "module__charge_sens.html", [
+        [ "Example for airframe file", "module__charge_sens.html#module_load_example__charge_sens", null ],
+        [ "Module functions", "module__charge_sens.html#functions__charge_sens", [
+          [ "Raw charge_sens.xml file:", "module__charge_sens.html#module_xml__charge_sens", null ]
+        ] ]
+      ] ],
+      [ "cloud_sensor module", "module__cloud_sensor.html", [
+        [ "Example for airframe file", "module__cloud_sensor.html#module_load_example__cloud_sensor", null ],
+        [ "Module functions", "module__cloud_sensor.html#functions__cloud_sensor", null ],
+        [ "Datalink Functions", "module__cloud_sensor.html#datalink_functions__cloud_sensor", [
+          [ "Raw cloud_sensor.xml file:", "module__cloud_sensor.html#module_xml__cloud_sensor", null ]
+        ] ]
+      ] ],
+      [ "cloud_sim module", "module__cloud_sim.html", [
+        [ "Example for airframe file", "module__cloud_sim.html#module_load_example__cloud_sim", null ],
+        [ "Module functions", "module__cloud_sim.html#functions__cloud_sim", [
+          [ "Raw cloud_sim.xml file:", "module__cloud_sim.html#module_xml__cloud_sim", null ]
+        ] ]
+      ] ],
+      [ "dust_gp2y module", "module__dust_gp2y.html", [
+        [ "Example for airframe file", "module__dust_gp2y.html#module_load_example__dust_gp2y", null ],
+        [ "Module functions", "module__dust_gp2y.html#functions__dust_gp2y", [
+          [ "Raw dust_gp2y.xml file:", "module__dust_gp2y.html#module_xml__dust_gp2y", null ]
+        ] ]
+      ] ],
+      [ "ekf_aw module", "module__ekf_aw.html", [
+        [ "Example for airframe file", "module__ekf_aw.html#module_load_example__ekf_aw", null ],
+        [ "Module configuration options", "module__ekf_aw.html#configuration__ekf_aw", null ],
+        [ "Module functions", "module__ekf_aw.html#functions__ekf_aw", [
+          [ "Raw ekf_aw.xml file:", "module__ekf_aw.html#module_xml__ekf_aw", null ]
+        ] ]
+      ] ],
+      [ "geiger_counter module", "module__geiger_counter.html", [
+        [ "Example for airframe file", "module__geiger_counter.html#module_load_example__geiger_counter", null ],
+        [ "Module functions", "module__geiger_counter.html#functions__geiger_counter", [
+          [ "Raw geiger_counter.xml file:", "module__geiger_counter.html#module_xml__geiger_counter", null ]
+        ] ]
+      ] ],
+      [ "humid_dpicco module", "module__humid_dpicco.html", [
+        [ "Example for airframe file", "module__humid_dpicco.html#module_load_example__humid_dpicco", null ],
+        [ "Module functions", "module__humid_dpicco.html#functions__humid_dpicco", [
+          [ "Raw humid_dpicco.xml file:", "module__humid_dpicco.html#module_xml__humid_dpicco", null ]
+        ] ]
+      ] ],
+      [ "humid_hih module", "module__humid_hih.html", [
+        [ "Example for airframe file", "module__humid_hih.html#module_load_example__humid_hih", null ],
+        [ "Module functions", "module__humid_hih.html#functions__humid_hih", [
+          [ "Raw humid_hih.xml file:", "module__humid_hih.html#module_xml__humid_hih", null ]
+        ] ]
+      ] ],
+      [ "humid_htm_b71 module", "module__humid_htm_b71.html", [
+        [ "Example for airframe file", "module__humid_htm_b71.html#module_load_example__humid_htm_b71", null ],
+        [ "Module configuration options", "module__humid_htm_b71.html#configuration__humid_htm_b71", null ],
+        [ "Module functions", "module__humid_htm_b71.html#functions__humid_htm_b71", [
+          [ "Raw humid_htm_b71.xml file:", "module__humid_htm_b71.html#module_xml__humid_htm_b71", null ]
+        ] ]
+      ] ],
+      [ "humid_pcap01 module", "module__humid_pcap01.html", [
+        [ "Example for airframe file", "module__humid_pcap01.html#module_load_example__humid_pcap01", null ],
+        [ "Module functions", "module__humid_pcap01.html#functions__humid_pcap01", [
+          [ "Raw humid_pcap01.xml file:", "module__humid_pcap01.html#module_xml__humid_pcap01", null ]
+        ] ]
+      ] ],
+      [ "humid_sht module", "module__humid_sht.html", [
+        [ "Example for airframe file", "module__humid_sht.html#module_load_example__humid_sht", null ],
+        [ "Module configuration options", "module__humid_sht.html#configuration__humid_sht", null ],
+        [ "Module functions", "module__humid_sht.html#functions__humid_sht", [
+          [ "Raw humid_sht.xml file:", "module__humid_sht.html#module_xml__humid_sht", null ]
+        ] ]
+      ] ],
+      [ "humid_sht_i2c module", "module__humid_sht_i2c.html", [
+        [ "Example for airframe file", "module__humid_sht_i2c.html#module_load_example__humid_sht_i2c", null ],
+        [ "Module configuration options", "module__humid_sht_i2c.html#configuration__humid_sht_i2c", null ],
+        [ "Module functions", "module__humid_sht_i2c.html#functions__humid_sht_i2c", [
+          [ "Raw humid_sht_i2c.xml file:", "module__humid_sht_i2c.html#module_xml__humid_sht_i2c", null ]
+        ] ]
+      ] ],
+      [ "humid_sht_uart module", "module__humid_sht_uart.html", [
+        [ "Example for airframe file", "module__humid_sht_uart.html#module_load_example__humid_sht_uart", null ],
+        [ "Module configuration options", "module__humid_sht_uart.html#configuration__humid_sht_uart", null ],
+        [ "Module functions", "module__humid_sht_uart.html#functions__humid_sht_uart", [
+          [ "Raw humid_sht_uart.xml file:", "module__humid_sht_uart.html#module_xml__humid_sht_uart", null ]
+        ] ]
+      ] ],
+      [ "ir_mlx module", "module__ir_mlx.html", [
+        [ "Example for airframe file", "module__ir_mlx.html#module_load_example__ir_mlx", null ],
+        [ "Module functions", "module__ir_mlx.html#functions__ir_mlx", [
+          [ "Raw ir_mlx.xml file:", "module__ir_mlx.html#module_xml__ir_mlx", null ]
+        ] ]
+      ] ],
+      [ "light_solar module", "module__light_solar.html", [
+        [ "Example for airframe file", "module__light_solar.html#module_load_example__light_solar", null ],
+        [ "Module functions", "module__light_solar.html#functions__light_solar", [
+          [ "Raw light_solar.xml file:", "module__light_solar.html#module_xml__light_solar", null ]
+        ] ]
+      ] ],
+      [ "light_temt module", "module__light_temt.html", [
+        [ "Example for airframe file", "module__light_temt.html#module_load_example__light_temt", null ],
+        [ "Module functions", "module__light_temt.html#functions__light_temt", [
+          [ "Raw light_temt.xml file:", "module__light_temt.html#module_xml__light_temt", null ]
+        ] ]
+      ] ],
+      [ "meteo_france_daq module", "module__meteo_france_daq.html", [
+        [ "Example for airframe file", "module__meteo_france_daq.html#module_load_example__meteo_france_daq", null ],
+        [ "Module functions", "module__meteo_france_daq.html#functions__meteo_france_daq", null ],
+        [ "Datalink Functions", "module__meteo_france_daq.html#datalink_functions__meteo_france_daq", [
+          [ "Raw meteo_france_DAQ.xml file:", "module__meteo_france_daq.html#module_xml__meteo_france_daq", null ]
+        ] ]
+      ] ],
+      [ "meteo_stick module", "module__meteo_stick.html", [
+        [ "Example for airframe file", "module__meteo_stick.html#module_load_example__meteo_stick", null ],
+        [ "Module configuration options", "module__meteo_stick.html#configuration__meteo_stick", null ],
+        [ "Module functions", "module__meteo_stick.html#functions__meteo_stick", [
+          [ "Raw meteo_stick.xml file:", "module__meteo_stick.html#module_xml__meteo_stick", null ]
+        ] ]
+      ] ],
+      [ "mf_ptu module", "module__mf_ptu.html", [
+        [ "Example for airframe file", "module__mf_ptu.html#module_load_example__mf_ptu", null ],
+        [ "Module configuration options", "module__mf_ptu.html#configuration__mf_ptu", null ],
+        [ "Module functions", "module__mf_ptu.html#functions__mf_ptu", [
+          [ "Raw mf_ptu.xml file:", "module__mf_ptu.html#module_xml__mf_ptu", null ]
+        ] ]
+      ] ],
+      [ "temp_lm75 module", "module__temp_lm75.html", [
+        [ "Example for airframe file", "module__temp_lm75.html#module_load_example__temp_lm75", null ],
+        [ "Module functions", "module__temp_lm75.html#functions__temp_lm75", [
+          [ "Raw temp_lm75.xml file:", "module__temp_lm75.html#module_xml__temp_lm75", null ]
+        ] ]
+      ] ],
+      [ "temp_tcouple_adc module", "module__temp_tcouple_adc.html", [
+        [ "Example for airframe file", "module__temp_tcouple_adc.html#module_load_example__temp_tcouple_adc", null ],
+        [ "Module functions", "module__temp_tcouple_adc.html#functions__temp_tcouple_adc", [
+          [ "Raw temp_tcouple_adc.xml file:", "module__temp_tcouple_adc.html#module_xml__temp_tcouple_adc", null ]
+        ] ]
+      ] ],
+      [ "temp_temod module", "module__temp_temod.html", [
+        [ "Example for airframe file", "module__temp_temod.html#module_load_example__temp_temod", null ],
+        [ "Module configuration options", "module__temp_temod.html#configuration__temp_temod", null ],
+        [ "Module functions", "module__temp_temod.html#functions__temp_temod", [
+          [ "Raw temp_temod.xml file:", "module__temp_temod.html#module_xml__temp_temod", null ]
+        ] ]
+      ] ],
+      [ "temp_tmp102 module", "module__temp_tmp102.html", [
+        [ "Example for airframe file", "module__temp_tmp102.html#module_load_example__temp_tmp102", null ],
+        [ "Module functions", "module__temp_tmp102.html#functions__temp_tmp102", [
+          [ "Raw temp_tmp102.xml file:", "module__temp_tmp102.html#module_xml__temp_tmp102", null ]
+        ] ]
+      ] ],
+      [ "wind_estimation_quadrotor module", "module__wind_estimation_quadrotor.html", [
+        [ "Example for airframe file", "module__wind_estimation_quadrotor.html#module_load_example__wind_estimation_quadrotor", null ],
+        [ "Module configuration options", "module__wind_estimation_quadrotor.html#configuration__wind_estimation_quadrotor", null ],
+        [ "Module functions", "module__wind_estimation_quadrotor.html#functions__wind_estimation_quadrotor", [
+          [ "Raw wind_estimation_quadrotor.xml file:", "module__wind_estimation_quadrotor.html#module_xml__wind_estimation_quadrotor", null ]
+        ] ]
+      ] ],
+      [ "wind_estimator module", "module__wind_estimator.html", [
+        [ "Example for airframe file", "module__wind_estimator.html#module_load_example__wind_estimator", null ],
+        [ "Module functions", "module__wind_estimator.html#functions__wind_estimator", [
+          [ "Raw wind_estimator.xml file:", "module__wind_estimator.html#module_xml__wind_estimator", null ]
+        ] ]
+      ] ],
+      [ "wind_gfi module", "module__wind_gfi.html", [
+        [ "Example for airframe file", "module__wind_gfi.html#module_load_example__wind_gfi", null ],
+        [ "Module functions", "module__wind_gfi.html#functions__wind_gfi", [
+          [ "Raw wind_gfi.xml file:", "module__wind_gfi.html#module_xml__wind_gfi", null ]
+        ] ]
+      ] ],
+      [ "windturbine module", "module__windturbine.html", [
+        [ "Example for airframe file", "module__windturbine.html#module_load_example__windturbine", null ],
+        [ "Module functions", "module__windturbine.html#functions__windturbine", [
+          [ "Raw windturbine.xml file:", "module__windturbine.html#module_xml__windturbine", null ]
+        ] ]
+      ] ],
+      [ "copilot module", "module__copilot.html", [
+        [ "Example for airframe file", "module__copilot.html#module_load_example__copilot", null ],
+        [ "Module functions", "module__copilot.html#functions__copilot", null ],
+        [ "Datalink Functions", "module__copilot.html#datalink_functions__copilot", [
+          [ "Raw copilot.xml file:", "module__copilot.html#module_xml__copilot", null ]
+        ] ]
+      ] ],
+      [ "mission_common module", "module__mission_common.html", [
+        [ "Example for airframe file", "module__mission_common.html#module_load_example__mission_common", null ],
+        [ "Module configuration options", "module__mission_common.html#configuration__mission_common", null ],
+        [ "Module functions", "module__mission_common.html#functions__mission_common", null ],
+        [ "Datalink Functions", "module__mission_common.html#datalink_functions__mission_common", [
+          [ "Raw mission_common.xml file:", "module__mission_common.html#module_xml__mission_common", null ]
+        ] ]
+      ] ],
+      [ "mission_fw module", "module__mission_fw.html", [
+        [ "Example for airframe file", "module__mission_fw.html#module_load_example__mission_fw", [
+          [ "Raw mission_fw.xml file:", "module__mission_fw.html#module_xml__mission_fw", null ]
+        ] ]
+      ] ],
+      [ "mission_rotorcraft module", "module__mission_rotorcraft.html", [
+        [ "Example for airframe file", "module__mission_rotorcraft.html#module_load_example__mission_rotorcraft", [
+          [ "Raw mission_rotorcraft.xml file:", "module__mission_rotorcraft.html#module_xml__mission_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "drop_zone module", "module__drop_zone.html", [
+        [ "Example for airframe file", "module__drop_zone.html#module_load_example__drop_zone", [
+          [ "Raw drop_zone.xml file:", "module__drop_zone.html#module_xml__drop_zone", null ]
+        ] ]
+      ] ],
+      [ "follow module", "module__follow.html", [
+        [ "Example for airframe file", "module__follow.html#module_load_example__follow", null ],
+        [ "Module configuration options", "module__follow.html#configuration__follow", null ],
+        [ "Module functions", "module__follow.html#functions__follow", [
+          [ "Raw follow.xml file:", "module__follow.html#module_xml__follow", null ]
+        ] ]
+      ] ],
+      [ "formation_flight module", "module__formation_flight.html", [
+        [ "Example for airframe file", "module__formation_flight.html#module_load_example__formation_flight", null ],
+        [ "Module functions", "module__formation_flight.html#functions__formation_flight", null ],
+        [ "Datalink Functions", "module__formation_flight.html#datalink_functions__formation_flight", [
+          [ "Raw formation_flight.xml file:", "module__formation_flight.html#module_xml__formation_flight", null ]
+        ] ]
+      ] ],
+      [ "potential module", "module__potential.html", [
+        [ "Example for airframe file", "module__potential.html#module_load_example__potential", null ],
+        [ "Module functions", "module__potential.html#functions__potential", [
+          [ "Raw potential.xml file:", "module__potential.html#module_xml__potential", null ]
+        ] ]
+      ] ],
+      [ "rssi module", "module__rssi.html", [
+        [ "Example for airframe file", "module__rssi.html#module_load_example__rssi", null ],
+        [ "Module functions", "module__rssi.html#functions__rssi", null ],
+        [ "Datalink Functions", "module__rssi.html#datalink_functions__rssi", [
+          [ "Raw rssi.xml file:", "module__rssi.html#module_xml__rssi", null ]
+        ] ]
+      ] ],
+      [ "tcas module", "module__tcas.html", [
+        [ "Example for airframe file", "module__tcas.html#module_load_example__tcas", null ],
+        [ "Module functions", "module__tcas.html#functions__tcas", null ],
+        [ "Datalink Functions", "module__tcas.html#datalink_functions__tcas", [
+          [ "Raw tcas.xml file:", "module__tcas.html#module_xml__tcas", null ]
+        ] ]
+      ] ],
+      [ "traffic_info module", "module__traffic_info.html", [
+        [ "Example for airframe file", "module__traffic_info.html#module_load_example__traffic_info", null ],
+        [ "Module functions", "module__traffic_info.html#functions__traffic_info", null ],
+        [ "Datalink Functions", "module__traffic_info.html#datalink_functions__traffic_info", [
+          [ "Raw traffic_info.xml file:", "module__traffic_info.html#module_xml__traffic_info", null ]
+        ] ]
+      ] ],
+      [ "ballistic_touchdown module", "module__ballistic_touchdown.html", [
+        [ "Example for airframe file", "module__ballistic_touchdown.html#module_load_example__ballistic_touchdown", null ],
+        [ "Module functions", "module__ballistic_touchdown.html#functions__ballistic_touchdown", [
+          [ "Raw ballistic_touchdown.xml file:", "module__ballistic_touchdown.html#module_xml__ballistic_touchdown", null ]
+        ] ]
+      ] ],
+      [ "ground_detect module", "module__ground_detect.html", [
+        [ "Example for airframe file", "module__ground_detect.html#module_load_example__ground_detect", null ],
+        [ "Module configuration options", "module__ground_detect.html#configuration__ground_detect", null ],
+        [ "Module functions", "module__ground_detect.html#functions__ground_detect", [
+          [ "Raw ground_detect.xml file:", "module__ground_detect.html#module_xml__ground_detect", null ]
+        ] ]
+      ] ],
+      [ "nav_basic_fw module", "module__nav_basic_fw.html", [
+        [ "Example for airframe file", "module__nav_basic_fw.html#module_load_example__nav_basic_fw", null ],
+        [ "Module configuration options", "module__nav_basic_fw.html#configuration__nav_basic_fw", null ],
+        [ "Module functions", "module__nav_basic_fw.html#functions__nav_basic_fw", null ],
+        [ "Datalink Functions", "module__nav_basic_fw.html#datalink_functions__nav_basic_fw", [
+          [ "Raw nav_basic_fw.xml file:", "module__nav_basic_fw.html#module_xml__nav_basic_fw", null ]
+        ] ]
+      ] ],
+      [ "nav_basic_rotorcraft module", "module__nav_basic_rotorcraft.html", [
+        [ "Example for airframe file", "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft", null ],
+        [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", [
+          [ "Raw nav_basic_rotorcraft.xml file:", "module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "nav_bungee_takeoff module", "module__nav_bungee_takeoff.html", [
+        [ "Example for airframe file", "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff", null ],
+        [ "Module configuration options", "module__nav_bungee_takeoff.html#configuration__nav_bungee_takeoff", [
+          [ "Raw nav_bungee_takeoff.xml file:", "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff", null ]
+        ] ]
+      ] ],
+      [ "nav_catapult module", "module__nav_catapult.html", [
+        [ "Example for airframe file", "module__nav_catapult.html#module_load_example__nav_catapult", null ],
+        [ "Module configuration options", "module__nav_catapult.html#configuration__nav_catapult", null ],
+        [ "Module functions", "module__nav_catapult.html#functions__nav_catapult", [
+          [ "Raw nav_catapult.xml file:", "module__nav_catapult.html#module_xml__nav_catapult", null ]
+        ] ]
+      ] ],
+      [ "nav_cube module", "module__nav_cube.html", [
+        [ "Example for airframe file", "module__nav_cube.html#module_load_example__nav_cube", [
+          [ "Raw nav_cube.xml file:", "module__nav_cube.html#module_xml__nav_cube", null ]
+        ] ]
+      ] ],
+      [ "nav_drop module", "module__nav_drop.html", [
+        [ "Example for airframe file", "module__nav_drop.html#module_load_example__nav_drop", [
+          [ "Raw nav_drop.xml file:", "module__nav_drop.html#module_xml__nav_drop", null ]
+        ] ]
+      ] ],
+      [ "nav_fish module", "module__nav_fish.html", [
+        [ "Example for airframe file", "module__nav_fish.html#module_load_example__nav_fish", null ],
+        [ "Module configuration options", "module__nav_fish.html#configuration__nav_fish", null ],
+        [ "Module functions", "module__nav_fish.html#functions__nav_fish", [
+          [ "Raw nav_fish.xml file:", "module__nav_fish.html#module_xml__nav_fish", null ]
+        ] ]
+      ] ],
+      [ "nav_flower module", "module__nav_flower.html", [
+        [ "Example for airframe file", "module__nav_flower.html#module_load_example__nav_flower", null ],
+        [ "Module functions", "module__nav_flower.html#functions__nav_flower", [
+          [ "Raw nav_flower.xml file:", "module__nav_flower.html#module_xml__nav_flower", null ]
+        ] ]
+      ] ],
+      [ "nav_gls module", "module__nav_gls.html", [
+        [ "Example for airframe file", "module__nav_gls.html#module_load_example__nav_gls", [
+          [ "Raw nav_gls.xml file:", "module__nav_gls.html#module_xml__nav_gls", null ]
+        ] ]
+      ] ],
+      [ "nav_heli_spinup module", "module__nav_heli_spinup.html", [
+        [ "Example for airframe file", "module__nav_heli_spinup.html#module_load_example__nav_heli_spinup", [
+          [ "Raw nav_heli_spinup.xml file:", "module__nav_heli_spinup.html#module_xml__nav_heli_spinup", null ]
+        ] ]
+      ] ],
+      [ "nav_hybrid module", "module__nav_hybrid.html", [
+        [ "Example for airframe file", "module__nav_hybrid.html#module_load_example__nav_hybrid", null ],
+        [ "Module configuration options", "module__nav_hybrid.html#configuration__nav_hybrid", null ],
+        [ "Module functions", "module__nav_hybrid.html#functions__nav_hybrid", [
+          [ "Raw nav_hybrid.xml file:", "module__nav_hybrid.html#module_xml__nav_hybrid", null ]
+        ] ]
+      ] ],
+      [ "nav_lace module", "module__nav_lace.html", [
+        [ "Example for airframe file", "module__nav_lace.html#module_load_example__nav_lace", null ],
+        [ "Module functions", "module__nav_lace.html#functions__nav_lace", [
+          [ "Raw nav_lace.xml file:", "module__nav_lace.html#module_xml__nav_lace", null ]
+        ] ]
+      ] ],
+      [ "nav_launcher module", "module__nav_launcher.html", [
+        [ "Example for airframe file", "module__nav_launcher.html#module_load_example__nav_launcher", [
+          [ "Raw nav_launcher.xml file:", "module__nav_launcher.html#module_xml__nav_launcher", null ]
+        ] ]
+      ] ],
+      [ "nav_line module", "module__nav_line.html", [
+        [ "Example for airframe file", "module__nav_line.html#module_load_example__nav_line", null ],
+        [ "Module functions", "module__nav_line.html#functions__nav_line", [
+          [ "Raw nav_line.xml file:", "module__nav_line.html#module_xml__nav_line", null ]
+        ] ]
+      ] ],
+      [ "nav_line_border module", "module__nav_line_border.html", [
+        [ "Example for airframe file", "module__nav_line_border.html#module_load_example__nav_line_border", [
+          [ "Raw nav_line_border.xml file:", "module__nav_line_border.html#module_xml__nav_line_border", null ]
+        ] ]
+      ] ],
+      [ "nav_line_osam module", "module__nav_line_osam.html", [
+        [ "Example for airframe file", "module__nav_line_osam.html#module_load_example__nav_line_osam", [
+          [ "Raw nav_line_osam.xml file:", "module__nav_line_osam.html#module_xml__nav_line_osam", null ]
+        ] ]
+      ] ],
+      [ "nav_poles module", "module__nav_poles.html", [
+        [ "Example for airframe file", "module__nav_poles.html#module_load_example__nav_poles", [
+          [ "Raw nav_poles.xml file:", "module__nav_poles.html#module_xml__nav_poles", null ]
+        ] ]
+      ] ],
+      [ "nav_rosette module", "module__nav_rosette.html", [
+        [ "Example for airframe file", "module__nav_rosette.html#module_load_example__nav_rosette", null ],
+        [ "Module functions", "module__nav_rosette.html#functions__nav_rosette", [
+          [ "Raw nav_rosette.xml file:", "module__nav_rosette.html#module_xml__nav_rosette", null ]
+        ] ]
+      ] ],
+      [ "nav_rotorcraft module", "module__nav_rotorcraft.html", [
+        [ "Example for airframe file", "module__nav_rotorcraft.html#module_load_example__nav_rotorcraft", null ],
+        [ "Module functions", "module__nav_rotorcraft.html#functions__nav_rotorcraft", null ],
+        [ "Datalink Functions", "module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft", [
+          [ "Raw nav_rotorcraft.xml file:", "module__nav_rotorcraft.html#module_xml__nav_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "nav_rover_base module", "module__nav_rover_base.html", [
+        [ "Example for airframe file", "module__nav_rover_base.html#module_load_example__nav_rover_base", null ],
+        [ "Module functions", "module__nav_rover_base.html#functions__nav_rover_base", null ],
+        [ "Datalink Functions", "module__nav_rover_base.html#datalink_functions__nav_rover_base", [
+          [ "Raw nav_rover_base.xml file:", "module__nav_rover_base.html#module_xml__nav_rover_base", null ]
+        ] ]
+      ] ],
+      [ "nav_skid_landing module", "module__nav_skid_landing.html", [
+        [ "Example for airframe file", "module__nav_skid_landing.html#module_load_example__nav_skid_landing", null ],
+        [ "Module configuration options", "module__nav_skid_landing.html#configuration__nav_skid_landing", [
+          [ "Raw nav_skid_landing.xml file:", "module__nav_skid_landing.html#module_xml__nav_skid_landing", null ]
+        ] ]
+      ] ],
+      [ "nav_smooth module", "module__nav_smooth.html", [
+        [ "Example for airframe file", "module__nav_smooth.html#module_load_example__nav_smooth", [
+          [ "Raw nav_smooth.xml file:", "module__nav_smooth.html#module_xml__nav_smooth", null ]
+        ] ]
+      ] ],
+      [ "nav_spiral module", "module__nav_spiral.html", [
+        [ "Example for airframe file", "module__nav_spiral.html#module_load_example__nav_spiral", null ],
+        [ "Module configuration options", "module__nav_spiral.html#configuration__nav_spiral", [
+          [ "Raw nav_spiral.xml file:", "module__nav_spiral.html#module_xml__nav_spiral", null ]
+        ] ]
+      ] ],
+      [ "nav_spiral_3d module", "module__nav_spiral_3d.html", [
+        [ "Example for airframe file", "module__nav_spiral_3d.html#module_load_example__nav_spiral_3d", null ],
+        [ "Module configuration options", "module__nav_spiral_3d.html#configuration__nav_spiral_3d", null ],
+        [ "Module functions", "module__nav_spiral_3d.html#functions__nav_spiral_3d", [
+          [ "Raw nav_spiral_3D.xml file:", "module__nav_spiral_3d.html#module_xml__nav_spiral_3d", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_disc module", "module__nav_survey_disc.html", [
+        [ "Example for airframe file", "module__nav_survey_disc.html#module_load_example__nav_survey_disc", [
+          [ "Raw nav_survey_disc.xml file:", "module__nav_survey_disc.html#module_xml__nav_survey_disc", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_hybrid module", "module__nav_survey_hybrid.html", [
+        [ "Example for airframe file", "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid", null ],
+        [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", null ],
+        [ "Module functions", "module__nav_survey_hybrid.html#functions__nav_survey_hybrid", [
+          [ "Raw nav_survey_hybrid.xml file:", "module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_poly_osam module", "module__nav_survey_poly_osam.html", [
+        [ "Example for airframe file", "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam", null ],
+        [ "Module configuration options", "module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam", [
+          [ "Raw nav_survey_poly_osam.xml file:", "module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_poly_rotorcraft module", "module__nav_survey_poly_rotorcraft.html", [
+        [ "Example for airframe file", "module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft", null ],
+        [ "Module configuration options", "module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft", [
+          [ "Raw nav_survey_poly_rotorcraft.xml file:", "module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_polygon module", "module__nav_survey_polygon.html", [
+        [ "Example for airframe file", "module__nav_survey_polygon.html#module_load_example__nav_survey_polygon", [
+          [ "Raw nav_survey_polygon.xml file:", "module__nav_survey_polygon.html#module_xml__nav_survey_polygon", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_rectangle_rotorcraft module", "module__nav_survey_rectangle_rotorcraft.html", [
+        [ "Example for airframe file", "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft", null ],
+        [ "Module configuration options", "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft", null ],
+        [ "Module functions", "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft", [
+          [ "Raw nav_survey_rectangle_rotorcraft.xml file:", "module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "nav_survey_zamboni module", "module__nav_survey_zamboni.html", [
+        [ "Example for airframe file", "module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni", [
+          [ "Raw nav_survey_zamboni.xml file:", "module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni", null ]
+        ] ]
+      ] ],
+      [ "nav_takeoff_and_landing module", "module__nav_takeoff_and_landing.html", [
+        [ "Example for airframe file", "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing", null ],
+        [ "Module configuration options", "module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing", null ],
+        [ "Module functions", "module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing", [
+          [ "Raw nav_takeoff_and_landing.xml file:", "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing", null ]
+        ] ]
+      ] ],
+      [ "nav_trinity module", "module__nav_trinity.html", [
+        [ "Example for airframe file", "module__nav_trinity.html#module_load_example__nav_trinity", null ],
+        [ "Module functions", "module__nav_trinity.html#functions__nav_trinity", [
+          [ "Raw nav_trinity.xml file:", "module__nav_trinity.html#module_xml__nav_trinity", null ]
+        ] ]
+      ] ],
+      [ "nav_vertical_raster module", "module__nav_vertical_raster.html", [
+        [ "Example for airframe file", "module__nav_vertical_raster.html#module_load_example__nav_vertical_raster", [
+          [ "Raw nav_vertical_raster.xml file:", "module__nav_vertical_raster.html#module_xml__nav_vertical_raster", null ]
+        ] ]
+      ] ],
+      [ "navigation module", "module__navigation.html", [
+        [ "Example for airframe file", "module__navigation.html#module_load_example__navigation", [
+          [ "Raw navigation.xml file:", "module__navigation.html#module_xml__navigation", null ]
+        ] ]
+      ] ],
+      [ "takeoff_detect module", "module__takeoff_detect.html", [
+        [ "Example for airframe file", "module__takeoff_detect.html#module_load_example__takeoff_detect", null ],
+        [ "Module configuration options", "module__takeoff_detect.html#configuration__takeoff_detect", null ],
+        [ "Module functions", "module__takeoff_detect.html#functions__takeoff_detect", [
+          [ "Raw takeoff_detect.xml file:", "module__takeoff_detect.html#module_xml__takeoff_detect", null ]
+        ] ]
+      ] ],
+      [ "tune_airspeed module", "module__tune_airspeed.html", [
+        [ "Example for airframe file", "module__tune_airspeed.html#module_load_example__tune_airspeed", null ],
+        [ "Module configuration options", "module__tune_airspeed.html#configuration__tune_airspeed", [
+          [ "Raw tune_airspeed.xml file:", "module__tune_airspeed.html#module_xml__tune_airspeed", null ]
+        ] ]
+      ] ],
+      [ "optical_flow_mateksys_3901_l0x module", "module__optical_flow_mateksys_3901_l0x.html", [
+        [ "Example for airframe file", "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x", null ],
+        [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", null ],
+        [ "Module functions", "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x", [
+          [ "Raw optical_flow_mateksys_3901_l0x.xml file:", "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x", null ]
+        ] ]
+      ] ],
+      [ "px4flow module", "module__px4flow.html", [
+        [ "Example for airframe file", "module__px4flow.html#module_load_example__px4flow", null ],
+        [ "Module configuration options", "module__px4flow.html#configuration__px4flow", null ],
+        [ "Module functions", "module__px4flow.html#functions__px4flow", [
+          [ "Raw px4flow.xml file:", "module__px4flow.html#module_xml__px4flow", null ]
+        ] ]
+      ] ],
+      [ "px4flow_i2c module", "module__px4flow_i2c.html", [
+        [ "Example for airframe file", "module__px4flow_i2c.html#module_load_example__px4flow_i2c", null ],
+        [ "Module configuration options", "module__px4flow_i2c.html#configuration__px4flow_i2c", null ],
+        [ "Module functions", "module__px4flow_i2c.html#functions__px4flow_i2c", [
+          [ "Raw px4flow_i2c.xml file:", "module__px4flow_i2c.html#module_xml__px4flow_i2c", null ]
+        ] ]
+      ] ],
+      [ "orange_avoider module", "module__orange_avoider.html", [
+        [ "Example for airframe file", "module__orange_avoider.html#module_load_example__orange_avoider", null ],
+        [ "Module configuration options", "module__orange_avoider.html#configuration__orange_avoider", null ],
+        [ "Module functions", "module__orange_avoider.html#functions__orange_avoider", [
+          [ "Raw orange_avoider.xml file:", "module__orange_avoider.html#module_xml__orange_avoider", null ]
+        ] ]
+      ] ],
+      [ "orange_avoider_guided module", "module__orange_avoider_guided.html", [
+        [ "Example for airframe file", "module__orange_avoider_guided.html#module_load_example__orange_avoider_guided", null ],
+        [ "Module configuration options", "module__orange_avoider_guided.html#configuration__orange_avoider_guided", null ],
+        [ "Module functions", "module__orange_avoider_guided.html#functions__orange_avoider_guided", [
+          [ "Raw orange_avoider_guided.xml file:", "module__orange_avoider_guided.html#module_xml__orange_avoider_guided", null ]
+        ] ]
+      ] ],
+      [ "radio_control_cc2500_frsky module", "module__radio_control_cc2500_frsky.html", [
+        [ "Example for airframe file", "module__radio_control_cc2500_frsky.html#module_load_example__radio_control_cc2500_frsky", null ],
+        [ "Module configuration options", "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky", null ],
+        [ "Module functions", "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky", [
+          [ "Raw radio_control_cc2500_frsky.xml file:", "module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky", null ]
+        ] ]
+      ] ],
+      [ "radio_control_common module", "module__radio_control_common.html", [
+        [ "Example for airframe file", "module__radio_control_common.html#module_load_example__radio_control_common", null ],
+        [ "Module configuration options", "module__radio_control_common.html#configuration__radio_control_common", null ],
+        [ "Module functions", "module__radio_control_common.html#functions__radio_control_common", [
+          [ "Raw radio_control_common.xml file:", "module__radio_control_common.html#module_xml__radio_control_common", null ]
+        ] ]
+      ] ],
+      [ "radio_control_datalink module", "module__radio_control_datalink.html", [
+        [ "Example for airframe file", "module__radio_control_datalink.html#module_load_example__radio_control_datalink", null ],
+        [ "Module configuration options", "module__radio_control_datalink.html#configuration__radio_control_datalink", null ],
+        [ "Module functions", "module__radio_control_datalink.html#functions__radio_control_datalink", null ],
+        [ "Datalink Functions", "module__radio_control_datalink.html#datalink_functions__radio_control_datalink", [
+          [ "Raw radio_control_datalink.xml file:", "module__radio_control_datalink.html#module_xml__radio_control_datalink", null ]
+        ] ]
+      ] ],
+      [ "radio_control_hott module", "module__radio_control_hott.html", [
+        [ "Example for airframe file", "module__radio_control_hott.html#module_load_example__radio_control_hott", null ],
+        [ "Module configuration options", "module__radio_control_hott.html#configuration__radio_control_hott", null ],
+        [ "Module functions", "module__radio_control_hott.html#functions__radio_control_hott", [
+          [ "Raw radio_control_hott.xml file:", "module__radio_control_hott.html#module_xml__radio_control_hott", null ]
+        ] ]
+      ] ],
+      [ "radio_control_intermcu module", "module__radio_control_intermcu.html", [
+        [ "Example for airframe file", "module__radio_control_intermcu.html#module_load_example__radio_control_intermcu", null ],
+        [ "Module functions", "module__radio_control_intermcu.html#functions__radio_control_intermcu", null ],
+        [ "Datalink Functions", "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu", [
+          [ "Raw radio_control_intermcu.xml file:", "module__radio_control_intermcu.html#module_xml__radio_control_intermcu", null ]
+        ] ]
+      ] ],
+      [ "radio_control_ppm module", "module__radio_control_ppm.html", [
+        [ "Example for airframe file", "module__radio_control_ppm.html#module_load_example__radio_control_ppm", null ],
+        [ "Module configuration options", "module__radio_control_ppm.html#configuration__radio_control_ppm", null ],
+        [ "Module functions", "module__radio_control_ppm.html#functions__radio_control_ppm", [
+          [ "Raw radio_control_ppm.xml file:", "module__radio_control_ppm.html#module_xml__radio_control_ppm", null ]
+        ] ]
+      ] ],
+      [ "radio_control_sbus module", "module__radio_control_sbus.html", [
+        [ "Example for airframe file", "module__radio_control_sbus.html#module_load_example__radio_control_sbus", null ],
+        [ "Module configuration options", "module__radio_control_sbus.html#configuration__radio_control_sbus", null ],
+        [ "Module functions", "module__radio_control_sbus.html#functions__radio_control_sbus", [
+          [ "Raw radio_control_sbus.xml file:", "module__radio_control_sbus.html#module_xml__radio_control_sbus", null ]
+        ] ]
+      ] ],
+      [ "radio_control_sbus_dual module", "module__radio_control_sbus_dual.html", [
+        [ "Example for airframe file", "module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual", null ],
+        [ "Module configuration options", "module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual", null ],
+        [ "Module functions", "module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual", [
+          [ "Raw radio_control_sbus_dual.xml file:", "module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual", null ]
+        ] ]
+      ] ],
+      [ "radio_control_spektrum module", "module__radio_control_spektrum.html", [
+        [ "Example for airframe file", "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum", null ],
+        [ "Module configuration options", "module__radio_control_spektrum.html#configuration__radio_control_spektrum", null ],
+        [ "Module functions", "module__radio_control_spektrum.html#functions__radio_control_spektrum", [
+          [ "Raw radio_control_spektrum.xml file:", "module__radio_control_spektrum.html#module_xml__radio_control_spektrum", null ]
+        ] ]
+      ] ],
+      [ "radio_control_superbitrf_rc module", "module__radio_control_superbitrf_rc.html", [
+        [ "Example for airframe file", "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc", null ],
+        [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", null ],
+        [ "Module functions", "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc", [
+          [ "Raw radio_control_superbitrf_rc.xml file:", "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc", null ]
+        ] ]
+      ] ],
+      [ "cf_deck_multi_ranger module", "module__cf_deck_multi_ranger.html", [
+        [ "Example for airframe file", "module__cf_deck_multi_ranger.html#module_load_example__cf_deck_multi_ranger", null ],
+        [ "Module configuration options", "module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger", null ],
+        [ "Module functions", "module__cf_deck_multi_ranger.html#functions__cf_deck_multi_ranger", [
+          [ "Raw cf_deck_multi_ranger.xml file:", "module__cf_deck_multi_ranger.html#module_xml__cf_deck_multi_ranger", null ]
+        ] ]
+      ] ],
+      [ "laser_range_array module", "module__laser_range_array.html", [
+        [ "Example for airframe file", "module__laser_range_array.html#module_load_example__laser_range_array", null ],
+        [ "Module configuration options", "module__laser_range_array.html#configuration__laser_range_array", null ],
+        [ "Module functions", "module__laser_range_array.html#functions__laser_range_array", [
+          [ "Raw laser_range_array.xml file:", "module__laser_range_array.html#module_xml__laser_range_array", null ]
+        ] ]
+      ] ],
+      [ "teraranger_one module", "module__teraranger_one.html", [
+        [ "Example for airframe file", "module__teraranger_one.html#module_load_example__teraranger_one", null ],
+        [ "Module configuration options", "module__teraranger_one.html#configuration__teraranger_one", null ],
+        [ "Module functions", "module__teraranger_one.html#functions__teraranger_one", [
+          [ "Raw teraranger_one.xml file:", "module__teraranger_one.html#module_xml__teraranger_one", null ]
+        ] ]
+      ] ],
+      [ "rotwing_state module", "module__rotwing_state.html", [
+        [ "Example for airframe file", "module__rotwing_state.html#module_load_example__rotwing_state", null ],
+        [ "Module configuration options", "module__rotwing_state.html#configuration__rotwing_state", null ],
+        [ "Module functions", "module__rotwing_state.html#functions__rotwing_state", [
+          [ "Raw rotwing_state.xml file:", "module__rotwing_state.html#module_xml__rotwing_state", null ]
+        ] ]
+      ] ],
+      [ "wing_rotation_adc_sensor module", "module__wing_rotation_adc_sensor.html", [
+        [ "Example for airframe file", "module__wing_rotation_adc_sensor.html#module_load_example__wing_rotation_adc_sensor", null ],
+        [ "Module configuration options", "module__wing_rotation_adc_sensor.html#configuration__wing_rotation_adc_sensor", null ],
+        [ "Module functions", "module__wing_rotation_adc_sensor.html#functions__wing_rotation_adc_sensor", [
+          [ "Raw wing_rotation_adc_sensor.xml file:", "module__wing_rotation_adc_sensor.html#module_xml__wing_rotation_adc_sensor", null ]
+        ] ]
+      ] ],
+      [ "wing_rotation_controller_servo module", "module__wing_rotation_controller_servo.html", [
+        [ "Example for airframe file", "module__wing_rotation_controller_servo.html#module_load_example__wing_rotation_controller_servo", null ],
+        [ "Module functions", "module__wing_rotation_controller_servo.html#functions__wing_rotation_controller_servo", [
+          [ "Raw wing_rotation_controller_servo.xml file:", "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo", null ]
+        ] ]
+      ] ],
+      [ "aoa_adc module", "module__aoa_adc.html", [
+        [ "Example for airframe file", "module__aoa_adc.html#module_load_example__aoa_adc", null ],
+        [ "Module configuration options", "module__aoa_adc.html#configuration__aoa_adc", null ],
+        [ "Module functions", "module__aoa_adc.html#functions__aoa_adc", [
+          [ "Raw AOA_adc.xml file:", "module__aoa_adc.html#module_xml__aoa_adc", null ]
+        ] ]
+      ] ],
+      [ "aoa_pwm module", "module__aoa_pwm.html", [
+        [ "Example for airframe file", "module__aoa_pwm.html#module_load_example__aoa_pwm", null ],
+        [ "Module configuration options", "module__aoa_pwm.html#configuration__aoa_pwm", null ],
+        [ "Module functions", "module__aoa_pwm.html#functions__aoa_pwm", [
+          [ "Raw AOA_pwm.xml file:", "module__aoa_pwm.html#module_xml__aoa_pwm", null ]
+        ] ]
+      ] ],
+      [ "airspeed_adc module", "module__airspeed_adc.html", [
+        [ "Example for airframe file", "module__airspeed_adc.html#module_load_example__airspeed_adc", null ],
+        [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", null ],
+        [ "Module functions", "module__airspeed_adc.html#functions__airspeed_adc", [
+          [ "Raw airspeed_adc.xml file:", "module__airspeed_adc.html#module_xml__airspeed_adc", null ]
+        ] ]
+      ] ],
+      [ "airspeed_ads1114 module", "module__airspeed_ads1114.html", [
+        [ "Example for airframe file", "module__airspeed_ads1114.html#module_load_example__airspeed_ads1114", null ],
+        [ "Module functions", "module__airspeed_ads1114.html#functions__airspeed_ads1114", [
+          [ "Raw airspeed_ads1114.xml file:", "module__airspeed_ads1114.html#module_xml__airspeed_ads1114", null ]
+        ] ]
+      ] ],
+      [ "airspeed_amsys module", "module__airspeed_amsys.html", [
+        [ "Example for airframe file", "module__airspeed_amsys.html#module_load_example__airspeed_amsys", null ],
+        [ "Module configuration options", "module__airspeed_amsys.html#configuration__airspeed_amsys", null ],
+        [ "Module functions", "module__airspeed_amsys.html#functions__airspeed_amsys", [
+          [ "Raw airspeed_amsys.xml file:", "module__airspeed_amsys.html#module_xml__airspeed_amsys", null ]
+        ] ]
+      ] ],
+      [ "airspeed_ets module", "module__airspeed_ets.html", [
+        [ "Example for airframe file", "module__airspeed_ets.html#module_load_example__airspeed_ets", null ],
+        [ "Module configuration options", "module__airspeed_ets.html#configuration__airspeed_ets", null ],
+        [ "Module functions", "module__airspeed_ets.html#functions__airspeed_ets", [
+          [ "Raw airspeed_ets.xml file:", "module__airspeed_ets.html#module_xml__airspeed_ets", null ]
+        ] ]
+      ] ],
+      [ "airspeed_ms45xx_i2c module", "module__airspeed_ms45xx_i2c.html", [
+        [ "Example for airframe file", "module__airspeed_ms45xx_i2c.html#module_load_example__airspeed_ms45xx_i2c", null ],
+        [ "Module configuration options", "module__airspeed_ms45xx_i2c.html#configuration__airspeed_ms45xx_i2c", null ],
+        [ "Module functions", "module__airspeed_ms45xx_i2c.html#functions__airspeed_ms45xx_i2c", [
+          [ "Raw airspeed_ms45xx_i2c.xml file:", "module__airspeed_ms45xx_i2c.html#module_xml__airspeed_ms45xx_i2c", null ]
+        ] ]
+      ] ],
+      [ "airspeed_otf module", "module__airspeed_otf.html", [
+        [ "Example for airframe file", "module__airspeed_otf.html#module_load_example__airspeed_otf", null ],
+        [ "Module configuration options", "module__airspeed_otf.html#configuration__airspeed_otf", null ],
+        [ "Module functions", "module__airspeed_otf.html#functions__airspeed_otf", [
+          [ "Raw airspeed_otf.xml file:", "module__airspeed_otf.html#module_xml__airspeed_otf", null ]
+        ] ]
+      ] ],
+      [ "airspeed_sdp3x module", "module__airspeed_sdp3x.html", [
+        [ "Example for airframe file", "module__airspeed_sdp3x.html#module_load_example__airspeed_sdp3x", null ],
+        [ "Module configuration options", "module__airspeed_sdp3x.html#configuration__airspeed_sdp3x", null ],
+        [ "Module functions", "module__airspeed_sdp3x.html#functions__airspeed_sdp3x", [
+          [ "Raw airspeed_sdp3x.xml file:", "module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x", null ]
+        ] ]
+      ] ],
+      [ "airspeed_uadc module", "module__airspeed_uadc.html", [
+        [ "Example for airframe file", "module__airspeed_uadc.html#module_load_example__airspeed_uadc", null ],
+        [ "Module configuration options", "module__airspeed_uadc.html#configuration__airspeed_uadc", null ],
+        [ "Module functions", "module__airspeed_uadc.html#functions__airspeed_uadc", [
+          [ "Raw airspeed_uADC.xml file:", "module__airspeed_uadc.html#module_xml__airspeed_uadc", null ]
+        ] ]
+      ] ],
+      [ "airspeed_uavcan module", "module__airspeed_uavcan.html", [
+        [ "Example for airframe file", "module__airspeed_uavcan.html#module_load_example__airspeed_uavcan", null ],
+        [ "Module configuration options", "module__airspeed_uavcan.html#configuration__airspeed_uavcan", null ],
+        [ "Module functions", "module__airspeed_uavcan.html#functions__airspeed_uavcan", [
+          [ "Raw airspeed_uavcan.xml file:", "module__airspeed_uavcan.html#module_xml__airspeed_uavcan", null ]
+        ] ]
+      ] ],
+      [ "alt_srf08 module", "module__alt_srf08.html", [
+        [ "Example for airframe file", "module__alt_srf08.html#module_load_example__alt_srf08", null ],
+        [ "Module functions", "module__alt_srf08.html#functions__alt_srf08", [
+          [ "Raw alt_srf08.xml file:", "module__alt_srf08.html#module_xml__alt_srf08", null ]
+        ] ]
+      ] ],
+      [ "baro_ms5534a module", "module__baro_ms5534a.html", [
+        [ "Example for airframe file", "module__baro_ms5534a.html#module_load_example__baro_ms5534a", null ],
+        [ "Module functions", "module__baro_ms5534a.html#functions__baro_ms5534a", [
+          [ "Raw baro_MS5534A.xml file:", "module__baro_ms5534a.html#module_xml__baro_ms5534a", null ]
+        ] ]
+      ] ],
+      [ "baro_amsys module", "module__baro_amsys.html", [
+        [ "Example for airframe file", "module__baro_amsys.html#module_load_example__baro_amsys", null ],
+        [ "Module configuration options", "module__baro_amsys.html#configuration__baro_amsys", null ],
+        [ "Module functions", "module__baro_amsys.html#functions__baro_amsys", [
+          [ "Raw baro_amsys.xml file:", "module__baro_amsys.html#module_xml__baro_amsys", null ]
+        ] ]
+      ] ],
+      [ "baro_bmp module", "module__baro_bmp.html", [
+        [ "Example for airframe file", "module__baro_bmp.html#module_load_example__baro_bmp", null ],
+        [ "Module configuration options", "module__baro_bmp.html#configuration__baro_bmp", null ],
+        [ "Module functions", "module__baro_bmp.html#functions__baro_bmp", [
+          [ "Raw baro_bmp.xml file:", "module__baro_bmp.html#module_xml__baro_bmp", null ]
+        ] ]
+      ] ],
+      [ "baro_bmp280 module", "module__baro_bmp280.html", [
+        [ "Example for airframe file", "module__baro_bmp280.html#module_load_example__baro_bmp280", null ],
+        [ "Module configuration options", "module__baro_bmp280.html#configuration__baro_bmp280", null ],
+        [ "Module functions", "module__baro_bmp280.html#functions__baro_bmp280", [
+          [ "Raw baro_bmp280.xml file:", "module__baro_bmp280.html#module_xml__baro_bmp280", null ]
+        ] ]
+      ] ],
+      [ "baro_bmp3 module", "module__baro_bmp3.html", [
+        [ "Example for airframe file", "module__baro_bmp3.html#module_load_example__baro_bmp3", null ],
+        [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", null ],
+        [ "Module functions", "module__baro_bmp3.html#functions__baro_bmp3", [
+          [ "Raw baro_bmp3.xml file:", "module__baro_bmp3.html#module_xml__baro_bmp3", null ]
+        ] ]
+      ] ],
+      [ "baro_board module", "module__baro_board.html", [
+        [ "Example for airframe file", "module__baro_board.html#module_load_example__baro_board", null ],
+        [ "Module configuration options", "module__baro_board.html#configuration__baro_board", [
+          [ "Raw baro_board.xml file:", "module__baro_board.html#module_xml__baro_board", null ]
+        ] ]
+      ] ],
+      [ "baro_board_common module", "module__baro_board_common.html", [
+        [ "Example for airframe file", "module__baro_board_common.html#module_load_example__baro_board_common", null ],
+        [ "Module configuration options", "module__baro_board_common.html#configuration__baro_board_common", null ],
+        [ "Module functions", "module__baro_board_common.html#functions__baro_board_common", [
+          [ "Raw baro_board_common.xml file:", "module__baro_board_common.html#module_xml__baro_board_common", null ]
+        ] ]
+      ] ],
+      [ "baro_ets module", "module__baro_ets.html", [
+        [ "Example for airframe file", "module__baro_ets.html#module_load_example__baro_ets", null ],
+        [ "Module configuration options", "module__baro_ets.html#configuration__baro_ets", null ],
+        [ "Module functions", "module__baro_ets.html#functions__baro_ets", [
+          [ "Raw baro_ets.xml file:", "module__baro_ets.html#module_xml__baro_ets", null ]
+        ] ]
+      ] ],
+      [ "baro_hca module", "module__baro_hca.html", [
+        [ "Example for airframe file", "module__baro_hca.html#module_load_example__baro_hca", null ],
+        [ "Module configuration options", "module__baro_hca.html#configuration__baro_hca", null ],
+        [ "Module functions", "module__baro_hca.html#functions__baro_hca", [
+          [ "Raw baro_hca.xml file:", "module__baro_hca.html#module_xml__baro_hca", null ]
+        ] ]
+      ] ],
+      [ "baro_mpl3115 module", "module__baro_mpl3115.html", [
+        [ "Example for airframe file", "module__baro_mpl3115.html#module_load_example__baro_mpl3115", null ],
+        [ "Module configuration options", "module__baro_mpl3115.html#configuration__baro_mpl3115", null ],
+        [ "Module functions", "module__baro_mpl3115.html#functions__baro_mpl3115", [
+          [ "Raw baro_mpl3115.xml file:", "module__baro_mpl3115.html#module_xml__baro_mpl3115", null ]
+        ] ]
+      ] ],
+      [ "baro_ms5611_i2c module", "module__baro_ms5611_i2c.html", [
+        [ "Example for airframe file", "module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c", null ],
+        [ "Module configuration options", "module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c", null ],
+        [ "Module functions", "module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c", [
+          [ "Raw baro_ms5611_i2c.xml file:", "module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c", null ]
+        ] ]
+      ] ],
+      [ "baro_ms5611_spi module", "module__baro_ms5611_spi.html", [
+        [ "Example for airframe file", "module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi", null ],
+        [ "Module configuration options", "module__baro_ms5611_spi.html#configuration__baro_ms5611_spi", null ],
+        [ "Module functions", "module__baro_ms5611_spi.html#functions__baro_ms5611_spi", [
+          [ "Raw baro_ms5611_spi.xml file:", "module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi", null ]
+        ] ]
+      ] ],
+      [ "baro_scp_i2c module", "module__baro_scp_i2c.html", [
+        [ "Example for airframe file", "module__baro_scp_i2c.html#module_load_example__baro_scp_i2c", null ],
+        [ "Module configuration options", "module__baro_scp_i2c.html#configuration__baro_scp_i2c", null ],
+        [ "Module functions", "module__baro_scp_i2c.html#functions__baro_scp_i2c", [
+          [ "Raw baro_scp_i2c.xml file:", "module__baro_scp_i2c.html#module_xml__baro_scp_i2c", null ]
+        ] ]
+      ] ],
+      [ "baro_sim module", "module__baro_sim.html", [
+        [ "Example for airframe file", "module__baro_sim.html#module_load_example__baro_sim", null ],
+        [ "Module functions", "module__baro_sim.html#functions__baro_sim", [
+          [ "Raw baro_sim.xml file:", "module__baro_sim.html#module_xml__baro_sim", null ]
+        ] ]
+      ] ],
+      [ "bat_voltage_ardrone2 module", "module__bat_voltage_ardrone2.html", [
+        [ "Example for airframe file", "module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2", null ],
+        [ "Module functions", "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2", [
+          [ "Raw bat_voltage_ardrone2.xml file:", "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2", null ]
+        ] ]
+      ] ],
+      [ "ezcurrent module", "module__ezcurrent.html", [
+        [ "Example for airframe file", "module__ezcurrent.html#module_load_example__ezcurrent", null ],
+        [ "Module configuration options", "module__ezcurrent.html#configuration__ezcurrent", null ],
+        [ "Module functions", "module__ezcurrent.html#functions__ezcurrent", [
+          [ "Raw ezcurrent.xml file:", "module__ezcurrent.html#module_xml__ezcurrent", null ]
+        ] ]
+      ] ],
+      [ "generic_uart_sensor module", "module__generic_uart_sensor.html", [
+        [ "Example for airframe file", "module__generic_uart_sensor.html#module_load_example__generic_uart_sensor", null ],
+        [ "Module configuration options", "module__generic_uart_sensor.html#configuration__generic_uart_sensor", [
+          [ "Configure Options", "module__generic_uart_sensor.html#configure", null ],
+          [ "Define Options", "module__generic_uart_sensor.html#define", null ]
+        ] ],
+        [ "Module functions", "module__generic_uart_sensor.html#functions__generic_uart_sensor", [
+          [ "Event Functions", "module__generic_uart_sensor.html#event_functions", null ],
+          [ "Raw generic_uart_sensor.xml file:", "module__generic_uart_sensor.html#module_xml__generic_uart_sensor", null ]
+        ] ]
+      ] ],
+      [ "mag_hmc5843 module", "module__mag_hmc5843.html", [
+        [ "Example for airframe file", "module__mag_hmc5843.html#module_load_example__mag_hmc5843", null ],
+        [ "Module configuration options", "module__mag_hmc5843.html#configuration__mag_hmc5843", null ],
+        [ "Module functions", "module__mag_hmc5843.html#functions__mag_hmc5843", [
+          [ "Raw mag_hmc5843.xml file:", "module__mag_hmc5843.html#module_xml__mag_hmc5843", null ]
+        ] ]
+      ] ],
+      [ "mag_hmc58xx module", "module__mag_hmc58xx.html", [
+        [ "Example for airframe file", "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx", null ],
+        [ "Module configuration options", "module__mag_hmc58xx.html#configuration__mag_hmc58xx", null ],
+        [ "Module functions", "module__mag_hmc58xx.html#functions__mag_hmc58xx", [
+          [ "Raw mag_hmc58xx.xml file:", "module__mag_hmc58xx.html#module_xml__mag_hmc58xx", null ]
+        ] ]
+      ] ],
+      [ "mag_hmc59xx module", "module__mag_hmc59xx.html", [
+        [ "Example for airframe file", "module__mag_hmc59xx.html#module_load_example__mag_hmc59xx", [
+          [ "Raw mag_hmc59xx.xml file:", "module__mag_hmc59xx.html#module_xml__mag_hmc59xx", null ]
+        ] ]
+      ] ],
+      [ "mag_ist8310 module", "module__mag_ist8310.html", [
+        [ "Example for airframe file", "module__mag_ist8310.html#module_load_example__mag_ist8310", null ],
+        [ "Module configuration options", "module__mag_ist8310.html#configuration__mag_ist8310", null ],
+        [ "Module functions", "module__mag_ist8310.html#functions__mag_ist8310", [
+          [ "Raw mag_ist8310.xml file:", "module__mag_ist8310.html#module_xml__mag_ist8310", null ]
+        ] ]
+      ] ],
+      [ "mag_lis3mdl module", "module__mag_lis3mdl.html", [
+        [ "Example for airframe file", "module__mag_lis3mdl.html#module_load_example__mag_lis3mdl", null ],
+        [ "Module configuration options", "module__mag_lis3mdl.html#configuration__mag_lis3mdl", null ],
+        [ "Module functions", "module__mag_lis3mdl.html#functions__mag_lis3mdl", [
+          [ "Raw mag_lis3mdl.xml file:", "module__mag_lis3mdl.html#module_xml__mag_lis3mdl", null ]
+        ] ]
+      ] ],
+      [ "mag_pitot_uart module", "module__mag_pitot_uart.html", [
+        [ "Example for airframe file", "module__mag_pitot_uart.html#module_load_example__mag_pitot_uart", null ],
+        [ "Module configuration options", "module__mag_pitot_uart.html#configuration__mag_pitot_uart", null ],
+        [ "Module functions", "module__mag_pitot_uart.html#functions__mag_pitot_uart", [
+          [ "Raw mag_pitot_uart.xml file:", "module__mag_pitot_uart.html#module_xml__mag_pitot_uart", null ]
+        ] ]
+      ] ],
+      [ "mag_qmc5883l module", "module__mag_qmc5883l.html", [
+        [ "Example for airframe file", "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l", null ],
+        [ "Module configuration options", "module__mag_qmc5883l.html#configuration__mag_qmc5883l", null ],
+        [ "Module functions", "module__mag_qmc5883l.html#functions__mag_qmc5883l", [
+          [ "Raw mag_qmc5883l.xml file:", "module__mag_qmc5883l.html#module_xml__mag_qmc5883l", null ]
+        ] ]
+      ] ],
+      [ "mag_rm3100 module", "module__mag_rm3100.html", [
+        [ "Example for airframe file", "module__mag_rm3100.html#module_load_example__mag_rm3100", null ],
+        [ "Module configuration options", "module__mag_rm3100.html#configuration__mag_rm3100", null ],
+        [ "Module functions", "module__mag_rm3100.html#functions__mag_rm3100", [
+          [ "Raw mag_rm3100.xml file:", "module__mag_rm3100.html#module_xml__mag_rm3100", null ]
+        ] ]
+      ] ],
+      [ "nps_hitl_sensors module", "module__nps_hitl_sensors.html", [
+        [ "Example for airframe file", "module__nps_hitl_sensors.html#module_load_example__nps_hitl_sensors", [
+          [ "Raw nps_hitl_sensors.xml file:", "module__nps_hitl_sensors.html#module_xml__nps_hitl_sensors", null ]
+        ] ]
+      ] ],
+      [ "opticflow_pmw3901 module", "module__opticflow_pmw3901.html", [
+        [ "Example for airframe file", "module__opticflow_pmw3901.html#module_load_example__opticflow_pmw3901", null ],
+        [ "Module configuration options", "module__opticflow_pmw3901.html#configuration__opticflow_pmw3901", null ],
+        [ "Module functions", "module__opticflow_pmw3901.html#functions__opticflow_pmw3901", [
+          [ "Raw opticflow_pmw3901.xml file:", "module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901", null ]
+        ] ]
+      ] ],
+      [ "power_uavcan module", "module__power_uavcan.html", [
+        [ "Example for airframe file", "module__power_uavcan.html#module_load_example__power_uavcan", null ],
+        [ "Module configuration options", "module__power_uavcan.html#configuration__power_uavcan", null ],
+        [ "Module functions", "module__power_uavcan.html#functions__power_uavcan", [
+          [ "Raw power_uavcan.xml file:", "module__power_uavcan.html#module_xml__power_uavcan", null ]
+        ] ]
+      ] ],
+      [ "range_sensor_uavcan module", "module__range_sensor_uavcan.html", [
+        [ "Example for airframe file", "module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan", null ],
+        [ "Module functions", "module__range_sensor_uavcan.html#functions__range_sensor_uavcan", [
+          [ "Raw range_sensor_uavcan.xml file:", "module__range_sensor_uavcan.html#module_xml__range_sensor_uavcan", null ]
+        ] ]
+      ] ],
+      [ "rpm_sensor module", "module__rpm_sensor.html", [
+        [ "Example for airframe file", "module__rpm_sensor.html#module_load_example__rpm_sensor", null ],
+        [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],
+        [ "Module functions", "module__rpm_sensor.html#functions__rpm_sensor", [
+          [ "Raw rpm_sensor.xml file:", "module__rpm_sensor.html#module_xml__rpm_sensor", null ]
+        ] ]
+      ] ],
+      [ "sensors_hitl module", "module__sensors_hitl.html", [
+        [ "Example for airframe file", "module__sensors_hitl.html#module_load_example__sensors_hitl", null ],
+        [ "Module configuration options", "module__sensors_hitl.html#configuration__sensors_hitl", null ],
+        [ "Module functions", "module__sensors_hitl.html#functions__sensors_hitl", null ],
+        [ "Datalink Functions", "module__sensors_hitl.html#datalink_functions__sensors_hitl", [
+          [ "Raw sensors_hitl.xml file:", "module__sensors_hitl.html#module_xml__sensors_hitl", null ]
+        ] ]
+      ] ],
+      [ "temp_adc module", "module__temp_adc.html", [
+        [ "Example for airframe file", "module__temp_adc.html#module_load_example__temp_adc", null ],
+        [ "Module configuration options", "module__temp_adc.html#configuration__temp_adc", null ],
+        [ "Module functions", "module__temp_adc.html#functions__temp_adc", [
+          [ "Raw temp_adc.xml file:", "module__temp_adc.html#module_xml__temp_adc", null ]
+        ] ]
+      ] ],
+      [ "jevois module", "module__jevois.html", [
+        [ "Example for airframe file", "module__jevois.html#module_load_example__jevois", null ],
+        [ "Module configuration options", "module__jevois.html#configuration__jevois", null ],
+        [ "Module functions", "module__jevois.html#functions__jevois", [
+          [ "Raw jevois.xml file:", "module__jevois.html#module_xml__jevois", null ]
+        ] ]
+      ] ],
+      [ "jevois_mavlink module", "module__jevois_mavlink.html", [
+        [ "Example for airframe file", "module__jevois_mavlink.html#module_load_example__jevois_mavlink", null ],
+        [ "Module functions", "module__jevois_mavlink.html#functions__jevois_mavlink", [
+          [ "Raw jevois_mavlink.xml file:", "module__jevois_mavlink.html#module_xml__jevois_mavlink", null ]
+        ] ]
+      ] ],
+      [ "agl_dist module", "module__agl_dist.html", [
+        [ "Example for airframe file", "module__agl_dist.html#module_load_example__agl_dist", null ],
+        [ "Module configuration options", "module__agl_dist.html#configuration__agl_dist", null ],
+        [ "Module functions", "module__agl_dist.html#functions__agl_dist", [
+          [ "Raw agl_dist.xml file:", "module__agl_dist.html#module_xml__agl_dist", null ]
+        ] ]
+      ] ],
+      [ "sonar_adc module", "module__sonar_adc.html", [
+        [ "Example for airframe file", "module__sonar_adc.html#module_load_example__sonar_adc", null ],
+        [ "Module configuration options", "module__sonar_adc.html#configuration__sonar_adc", null ],
+        [ "Module functions", "module__sonar_adc.html#functions__sonar_adc", [
+          [ "Raw sonar_adc.xml file:", "module__sonar_adc.html#module_xml__sonar_adc", null ]
+        ] ]
+      ] ],
+      [ "sonar_bebop module", "module__sonar_bebop.html", [
+        [ "Example for airframe file", "module__sonar_bebop.html#module_load_example__sonar_bebop", null ],
+        [ "Module configuration options", "module__sonar_bebop.html#configuration__sonar_bebop", null ],
+        [ "Module functions", "module__sonar_bebop.html#functions__sonar_bebop", [
+          [ "Raw sonar_bebop.xml file:", "module__sonar_bebop.html#module_xml__sonar_bebop", null ]
+        ] ]
+      ] ],
+      [ "sonar_pwm module", "module__sonar_pwm.html", [
+        [ "Example for airframe file", "module__sonar_pwm.html#module_load_example__sonar_pwm", null ],
+        [ "Module configuration options", "module__sonar_pwm.html#configuration__sonar_pwm", null ],
+        [ "Module functions", "module__sonar_pwm.html#functions__sonar_pwm", [
+          [ "Raw sonar_pwm.xml file:", "module__sonar_pwm.html#module_xml__sonar_pwm", null ]
+        ] ]
+      ] ],
+      [ "sonar_vl53l1x module", "module__sonar_vl53l1x.html", [
+        [ "Example for airframe file", "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x", null ],
+        [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", null ],
+        [ "Module functions", "module__sonar_vl53l1x.html#functions__sonar_vl53l1x", [
+          [ "Raw sonar_vl53l1x.xml file:", "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x", null ]
+        ] ]
+      ] ],
+      [ "stabilization_adaptive_fw module", "module__stabilization_adaptive_fw.html", [
+        [ "Example for airframe file", "module__stabilization_adaptive_fw.html#module_load_example__stabilization_adaptive_fw", null ],
+        [ "Module configuration options", "module__stabilization_adaptive_fw.html#configuration__stabilization_adaptive_fw", null ],
+        [ "Module functions", "module__stabilization_adaptive_fw.html#functions__stabilization_adaptive_fw", [
+          [ "Raw stabilization_adaptive_fw.xml file:", "module__stabilization_adaptive_fw.html#module_xml__stabilization_adaptive_fw", null ]
+        ] ]
+      ] ],
+      [ "stabilization_attitude_fw module", "module__stabilization_attitude_fw.html", [
+        [ "Example for airframe file", "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw", null ],
+        [ "Module configuration options", "module__stabilization_attitude_fw.html#configuration__stabilization_attitude_fw", null ],
+        [ "Module functions", "module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw", [
+          [ "Raw stabilization_attitude_fw.xml file:", "module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw", null ]
+        ] ]
+      ] ],
+      [ "stabilization_float_euler module", "module__stabilization_float_euler.html", [
+        [ "Example for airframe file", "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler", null ],
+        [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", null ],
+        [ "Module functions", "module__stabilization_float_euler.html#functions__stabilization_float_euler", [
+          [ "Raw stabilization_float_euler.xml file:", "module__stabilization_float_euler.html#module_xml__stabilization_float_euler", null ]
+        ] ]
+      ] ],
+      [ "stabilization_float_quat module", "module__stabilization_float_quat.html", [
+        [ "Example for airframe file", "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat", null ],
+        [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", null ],
+        [ "Module functions", "module__stabilization_float_quat.html#functions__stabilization_float_quat", [
+          [ "Raw stabilization_float_quat.xml file:", "module__stabilization_float_quat.html#module_xml__stabilization_float_quat", null ]
+        ] ]
+      ] ],
+      [ "stabilization_heli_indi module", "module__stabilization_heli_indi.html", [
+        [ "Example for airframe file", "module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi", null ],
+        [ "Module configuration options", "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi", null ],
+        [ "Module functions", "module__stabilization_heli_indi.html#functions__stabilization_heli_indi", [
+          [ "Raw stabilization_heli_indi.xml file:", "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi", null ]
+        ] ]
+      ] ],
+      [ "stabilization_indi module", "module__stabilization_indi.html", [
+        [ "Example for airframe file", "module__stabilization_indi.html#module_load_example__stabilization_indi", null ],
+        [ "Module configuration options", "module__stabilization_indi.html#configuration__stabilization_indi", null ],
+        [ "Module functions", "module__stabilization_indi.html#functions__stabilization_indi", [
+          [ "Raw stabilization_indi.xml file:", "module__stabilization_indi.html#module_xml__stabilization_indi", null ]
+        ] ]
+      ] ],
+      [ "stabilization_indi_simple module", "module__stabilization_indi_simple.html", [
+        [ "Example for airframe file", "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple", null ],
+        [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", null ],
+        [ "Module functions", "module__stabilization_indi_simple.html#functions__stabilization_indi_simple", [
+          [ "Raw stabilization_indi_simple.xml file:", "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple", null ]
+        ] ]
+      ] ],
+      [ "stabilization_int_euler module", "module__stabilization_int_euler.html", [
+        [ "Example for airframe file", "module__stabilization_int_euler.html#module_load_example__stabilization_int_euler", null ],
+        [ "Module configuration options", "module__stabilization_int_euler.html#configuration__stabilization_int_euler", null ],
+        [ "Module functions", "module__stabilization_int_euler.html#functions__stabilization_int_euler", [
+          [ "Raw stabilization_int_euler.xml file:", "module__stabilization_int_euler.html#module_xml__stabilization_int_euler", null ]
+        ] ]
+      ] ],
+      [ "stabilization_int_quat module", "module__stabilization_int_quat.html", [
+        [ "Example for airframe file", "module__stabilization_int_quat.html#module_load_example__stabilization_int_quat", null ],
+        [ "Module configuration options", "module__stabilization_int_quat.html#configuration__stabilization_int_quat", null ],
+        [ "Module functions", "module__stabilization_int_quat.html#functions__stabilization_int_quat", [
+          [ "Raw stabilization_int_quat.xml file:", "module__stabilization_int_quat.html#module_xml__stabilization_int_quat", null ]
+        ] ]
+      ] ],
+      [ "stabilization_oneloop module", "module__stabilization_oneloop.html", [
+        [ "Example for airframe file", "module__stabilization_oneloop.html#module_load_example__stabilization_oneloop", [
+          [ "Raw stabilization_oneloop.xml file:", "module__stabilization_oneloop.html#module_xml__stabilization_oneloop", null ]
+        ] ]
+      ] ],
+      [ "stabilization_passthrough module", "module__stabilization_passthrough.html", [
+        [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", [
+          [ "Raw stabilization_passthrough.xml file:", "module__stabilization_passthrough.html#module_xml__stabilization_passthrough", null ]
+        ] ]
+      ] ],
+      [ "stabilization_rate module", "module__stabilization_rate.html", [
+        [ "Example for airframe file", "module__stabilization_rate.html#module_load_example__stabilization_rate", null ],
+        [ "Module configuration options", "module__stabilization_rate.html#configuration__stabilization_rate", null ],
+        [ "Module functions", "module__stabilization_rate.html#functions__stabilization_rate", [
+          [ "Raw stabilization_rate.xml file:", "module__stabilization_rate.html#module_xml__stabilization_rate", null ]
+        ] ]
+      ] ],
+      [ "stabilization_rate_indi module", "module__stabilization_rate_indi.html", [
+        [ "Example for airframe file", "module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi", null ],
+        [ "Module functions", "module__stabilization_rate_indi.html#functions__stabilization_rate_indi", [
+          [ "Raw stabilization_rate_indi.xml file:", "module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi", null ]
+        ] ]
+      ] ],
+      [ "stabilization_rotorcraft module", "module__stabilization_rotorcraft.html", [
+        [ "Example for airframe file", "module__stabilization_rotorcraft.html#module_load_example__stabilization_rotorcraft", null ],
+        [ "Module configuration options", "module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft", null ],
+        [ "Module functions", "module__stabilization_rotorcraft.html#functions__stabilization_rotorcraft", [
+          [ "Raw stabilization_rotorcraft.xml file:", "module__stabilization_rotorcraft.html#module_xml__stabilization_rotorcraft", null ]
+        ] ]
+      ] ],
+      [ "stereocam module", "module__stereocam.html", [
+        [ "Example for airframe file", "module__stereocam.html#module_load_example__stereocam", null ],
+        [ "Module configuration options", "module__stereocam.html#configuration__stereocam", null ],
+        [ "Module functions", "module__stereocam.html#functions__stereocam", [
+          [ "Raw stereocam.xml file:", "module__stereocam.html#module_xml__stereocam", null ]
+        ] ]
+      ] ],
+      [ "stereocam_droplet module", "module__stereocam_droplet.html", [
+        [ "Example for airframe file", "module__stereocam_droplet.html#module_load_example__stereocam_droplet", null ],
+        [ "Module functions", "module__stereocam_droplet.html#functions__stereocam_droplet", [
+          [ "Raw stereocam_droplet.xml file:", "module__stereocam_droplet.html#module_xml__stereocam_droplet", null ]
+        ] ]
+      ] ],
+      [ "stereocam_follow_me module", "module__stereocam_follow_me.html", [
+        [ "Example for airframe file", "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me", [
+          [ "Raw stereocam_follow_me.xml file:", "module__stereocam_follow_me.html#module_xml__stereocam_follow_me", null ]
+        ] ]
+      ] ],
+      [ "stereocam_nav_line_avoid module", "module__stereocam_nav_line_avoid.html", [
+        [ "Example for airframe file", "module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid", null ],
+        [ "Module configuration options", "module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid", null ],
+        [ "Module functions", "module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid", [
+          [ "Raw stereocam_nav_line_avoid.xml file:", "module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid", null ]
+        ] ]
+      ] ],
+      [ "auto1_commands module", "module__auto1_commands.html", [
+        [ "Example for airframe file", "module__auto1_commands.html#module_load_example__auto1_commands", null ],
+        [ "Module functions", "module__auto1_commands.html#functions__auto1_commands", [
+          [ "Raw auto1_commands.xml file:", "module__auto1_commands.html#module_xml__auto1_commands", null ]
+        ] ]
+      ] ],
+      [ "switch_servo module", "module__switch_servo.html", [
+        [ "Example for airframe file", "module__switch_servo.html#module_load_example__switch_servo", null ],
+        [ "Module configuration options", "module__switch_servo.html#configuration__switch_servo", null ],
+        [ "Module functions", "module__switch_servo.html#functions__switch_servo", [
+          [ "Raw switch_servo.xml file:", "module__switch_servo.html#module_xml__switch_servo", null ]
+        ] ]
+      ] ],
+      [ "switch_uart module", "module__switch_uart.html", [
+        [ "Example for airframe file", "module__switch_uart.html#module_load_example__switch_uart", null ],
+        [ "Module functions", "module__switch_uart.html#functions__switch_uart", [
+          [ "Raw switch_uart.xml file:", "module__switch_uart.html#module_xml__switch_uart", null ]
+        ] ]
+      ] ],
+      [ "sys_id_auto_doublets module", "module__sys_id_auto_doublets.html", [
+        [ "Example for airframe file", "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets", null ],
+        [ "Module configuration options", "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets", null ],
+        [ "Module functions", "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets", [
+          [ "Raw sys_id_auto_doublets.xml file:", "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets", null ]
+        ] ]
+      ] ],
+      [ "sys_id_chirp module", "module__sys_id_chirp.html", [
+        [ "Example for airframe file", "module__sys_id_chirp.html#module_load_example__sys_id_chirp", null ],
+        [ "Module configuration options", "module__sys_id_chirp.html#configuration__sys_id_chirp", null ],
+        [ "Module functions", "module__sys_id_chirp.html#functions__sys_id_chirp", [
+          [ "Raw sys_id_chirp.xml file:", "module__sys_id_chirp.html#module_xml__sys_id_chirp", null ]
+        ] ]
+      ] ],
+      [ "sys_id_doublet module", "module__sys_id_doublet.html", [
+        [ "Example for airframe file", "module__sys_id_doublet.html#module_load_example__sys_id_doublet", null ],
+        [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", null ],
+        [ "Module functions", "module__sys_id_doublet.html#functions__sys_id_doublet", [
+          [ "Raw sys_id_doublet.xml file:", "module__sys_id_doublet.html#module_xml__sys_id_doublet", null ]
+        ] ]
+      ] ],
+      [ "sys_id_wave module", "module__sys_id_wave.html", [
+        [ "Example for airframe file", "module__sys_id_wave.html#module_load_example__sys_id_wave", null ],
+        [ "Module configuration options", "module__sys_id_wave.html#configuration__sys_id_wave", null ],
+        [ "Module functions", "module__sys_id_wave.html#functions__sys_id_wave", [
+          [ "Raw sys_id_wave.xml file:", "module__sys_id_wave.html#module_xml__sys_id_wave", null ]
+        ] ]
+      ] ],
+      [ "air_data module", "module__air_data.html", [
+        [ "Example for airframe file", "module__air_data.html#module_load_example__air_data", null ],
+        [ "Module configuration options", "module__air_data.html#configuration__air_data", null ],
+        [ "Module functions", "module__air_data.html#functions__air_data", null ],
+        [ "Datalink Functions", "module__air_data.html#datalink_functions__air_data", [
+          [ "Raw air_data.xml file:", "module__air_data.html#module_xml__air_data", null ]
+        ] ]
+      ] ],
+      [ "airborne_ant_track module", "module__airborne_ant_track.html", [
+        [ "Example for airframe file", "module__airborne_ant_track.html#module_load_example__airborne_ant_track", null ],
+        [ "Module functions", "module__airborne_ant_track.html#functions__airborne_ant_track", [
+          [ "Raw airborne_ant_track.xml file:", "module__airborne_ant_track.html#module_xml__airborne_ant_track", null ]
+        ] ]
+      ] ],
+      [ "autopilot_gnc module", "module__autopilot_gnc.html", [
+        [ "Example for airframe file", "module__autopilot_gnc.html#module_load_example__autopilot_gnc", null ],
+        [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", null ],
+        [ "Datalink Functions", "module__autopilot_gnc.html#datalink_functions__autopilot_gnc", [
+          [ "Raw autopilot_gnc.xml file:", "module__autopilot_gnc.html#module_xml__autopilot_gnc", null ]
+        ] ]
+      ] ],
+      [ "autopilot_gnc_fw module", "module__autopilot_gnc_fw.html", [
+        [ "Example for airframe file", "module__autopilot_gnc_fw.html#module_load_example__autopilot_gnc_fw", null ],
+        [ "Module functions", "module__autopilot_gnc_fw.html#functions__autopilot_gnc_fw", [
+          [ "Raw autopilot_gnc_fw.xml file:", "module__autopilot_gnc_fw.html#module_xml__autopilot_gnc_fw", null ]
+        ] ]
+      ] ],
+      [ "autopilot_guided module", "module__autopilot_guided.html", [
+        [ "Example for airframe file", "module__autopilot_guided.html#module_load_example__autopilot_guided", null ],
+        [ "Datalink Functions", "module__autopilot_guided.html#datalink_functions__autopilot_guided", [
+          [ "Raw autopilot_guided.xml file:", "module__autopilot_guided.html#module_xml__autopilot_guided", null ]
+        ] ]
+      ] ],
+      [ "bebop_cam module", "module__bebop_cam.html", [
+        [ "Example for airframe file", "module__bebop_cam.html#module_load_example__bebop_cam", null ],
+        [ "Module configuration options", "module__bebop_cam.html#configuration__bebop_cam", null ],
+        [ "Module functions", "module__bebop_cam.html#functions__bebop_cam", [
+          [ "Raw bebop_cam.xml file:", "module__bebop_cam.html#module_xml__bebop_cam", null ]
+        ] ]
+      ] ],
+      [ "collective_tracking_control module", "module__collective_tracking_control.html", [
+        [ "Example for airframe file", "module__collective_tracking_control.html#module_load_example__collective_tracking_control", null ],
+        [ "Module configuration options", "module__collective_tracking_control.html#configuration__collective_tracking_control", null ],
+        [ "Module functions", "module__collective_tracking_control.html#functions__collective_tracking_control", null ],
+        [ "Datalink Functions", "module__collective_tracking_control.html#datalink_functions__collective_tracking_control", [
+          [ "Raw collective_tracking_control.xml file:", "module__collective_tracking_control.html#module_xml__collective_tracking_control", null ]
+        ] ]
+      ] ],
+      [ "collective_tracking_control_target module", "module__collective_tracking_control_target.html", [
+        [ "Example for airframe file", "module__collective_tracking_control_target.html#module_load_example__collective_tracking_control_target", null ],
+        [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", null ],
+        [ "Module functions", "module__collective_tracking_control_target.html#functions__collective_tracking_control_target", null ],
+        [ "Datalink Functions", "module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target", [
+          [ "Raw collective_tracking_control_target.xml file:", "module__collective_tracking_control_target.html#module_xml__collective_tracking_control_target", null ]
+        ] ]
+      ] ],
+      [ "current_sensor module", "module__current_sensor.html", [
+        [ "Example for airframe file", "module__current_sensor.html#module_load_example__current_sensor", null ],
+        [ "Module configuration options", "module__current_sensor.html#configuration__current_sensor", [
+          [ "Raw current_sensor.xml file:", "module__current_sensor.html#module_xml__current_sensor", null ]
+        ] ]
+      ] ],
+      [ "cv_qrcode module", "module__cv_qrcode.html", [
+        [ "Example for airframe file", "module__cv_qrcode.html#module_load_example__cv_qrcode", null ],
+        [ "Module configuration options", "module__cv_qrcode.html#configuration__cv_qrcode", null ],
+        [ "Module functions", "module__cv_qrcode.html#functions__cv_qrcode", [
+          [ "Raw cv_qrcode.xml file:", "module__cv_qrcode.html#module_xml__cv_qrcode", null ]
+        ] ]
+      ] ],
+      [ "demo_module module", "module__demo_module.html", [
+        [ "Example for airframe file", "module__demo_module.html#module_load_example__demo_module", null ],
+        [ "Module functions", "module__demo_module.html#functions__demo_module", [
+          [ "Raw demo_module.xml file:", "module__demo_module.html#module_xml__demo_module", null ]
+        ] ]
+      ] ],
+      [ "dfu_command module", "module__dfu_command.html", [
+        [ "Example for airframe file", "module__dfu_command.html#module_load_example__dfu_command", null ],
+        [ "Module functions", "module__dfu_command.html#functions__dfu_command", [
+          [ "Raw dfu_command.xml file:", "module__dfu_command.html#module_xml__dfu_command", null ]
+        ] ]
+      ] ],
+      [ "distributed_circular_formation module", "module__distributed_circular_formation.html", [
+        [ "Example for airframe file", "module__distributed_circular_formation.html#module_load_example__distributed_circular_formation", null ],
+        [ "Module configuration options", "module__distributed_circular_formation.html#configuration__distributed_circular_formation", null ],
+        [ "Module functions", "module__distributed_circular_formation.html#functions__distributed_circular_formation", null ],
+        [ "Datalink Functions", "module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation", [
+          [ "Raw distributed_circular_formation.xml file:", "module__distributed_circular_formation.html#module_xml__distributed_circular_formation", null ]
+        ] ]
+      ] ],
+      [ "dragspeed module", "module__dragspeed.html", [
+        [ "Example for airframe file", "module__dragspeed.html#module_load_example__dragspeed", null ],
+        [ "Module configuration options", "module__dragspeed.html#configuration__dragspeed", null ],
+        [ "Module functions", "module__dragspeed.html#functions__dragspeed", [
+          [ "Usage instructions", "module__dragspeed.html#autotoc_md7", null ],
+          [ "Calibration from flight plan", "module__dragspeed.html#autotoc_md8", null ],
+          [ "Example results", "module__dragspeed.html#autotoc_md9", null ],
+          [ "Raw dragspeed.xml file:", "module__dragspeed.html#module_xml__dragspeed", null ]
+        ] ]
+      ] ],
+      [ "e_identification_fr module", "module__e_identification_fr.html", [
+        [ "Example for airframe file", "module__e_identification_fr.html#module_load_example__e_identification_fr", null ],
+        [ "Module configuration options", "module__e_identification_fr.html#configuration__e_identification_fr", null ],
+        [ "Module functions", "module__e_identification_fr.html#functions__e_identification_fr", [
+          [ "Raw e_identification_fr.xml file:", "module__e_identification_fr.html#module_xml__e_identification_fr", null ]
+        ] ]
+      ] ],
+      [ "esc32 module", "module__esc32.html", [
+        [ "Example for airframe file", "module__esc32.html#module_load_example__esc32", null ],
+        [ "Module configuration options", "module__esc32.html#configuration__esc32", null ],
+        [ "Module functions", "module__esc32.html#functions__esc32", [
+          [ "Raw esc32.xml file:", "module__esc32.html#module_xml__esc32", null ]
+        ] ]
+      ] ],
+      [ "fc_rotor module", "module__fc_rotor.html", [
+        [ "Example for airframe file", "module__fc_rotor.html#module_load_example__fc_rotor", null ],
+        [ "Module functions", "module__fc_rotor.html#functions__fc_rotor", null ],
+        [ "Datalink Functions", "module__fc_rotor.html#datalink_functions__fc_rotor", [
+          [ "Raw fc_rotor.xml file:", "module__fc_rotor.html#module_xml__fc_rotor", null ]
+        ] ]
+      ] ],
+      [ "gas_engine_idle module", "module__gas_engine_idle.html", [
+        [ "Example for airframe file", "module__gas_engine_idle.html#module_load_example__gas_engine_idle", null ],
+        [ "Module functions", "module__gas_engine_idle.html#functions__gas_engine_idle", [
+          [ "Raw gas_engine_idle.xml file:", "module__gas_engine_idle.html#module_xml__gas_engine_idle", null ]
+        ] ]
+      ] ],
+      [ "geo_mag module", "module__geo_mag.html", [
+        [ "Example for airframe file", "module__geo_mag.html#module_load_example__geo_mag", null ],
+        [ "Module functions", "module__geo_mag.html#functions__geo_mag", [
+          [ "Raw geo_mag.xml file:", "module__geo_mag.html#module_xml__geo_mag", null ]
+        ] ]
+      ] ],
+      [ "glide_wing_lock module", "module__glide_wing_lock.html", [
+        [ "Example for airframe file", "module__glide_wing_lock.html#module_load_example__glide_wing_lock", null ],
+        [ "Module configuration options", "module__glide_wing_lock.html#configuration__glide_wing_lock", null ],
+        [ "Module functions", "module__glide_wing_lock.html#functions__glide_wing_lock", [
+          [ "Raw glide_wing_lock.xml file:", "module__glide_wing_lock.html#module_xml__glide_wing_lock", null ]
+        ] ]
+      ] ],
+      [ "gsm module", "module__gsm.html", [
+        [ "Example for airframe file", "module__gsm.html#module_load_example__gsm", null ],
+        [ "Module functions", "module__gsm.html#functions__gsm", [
+          [ "Raw gsm.xml file:", "module__gsm.html#module_xml__gsm", null ]
+        ] ]
+      ] ],
+      [ "gumstix_qr_code_spi_link module", "module__gumstix_qr_code_spi_link.html", [
+        [ "Example for airframe file", "module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link", null ],
+        [ "Module functions", "module__gumstix_qr_code_spi_link.html#functions__gumstix_qr_code_spi_link", [
+          [ "Raw gumstix_qr_code_spi_link.xml file:", "module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link", null ]
+        ] ]
+      ] ],
+      [ "gvf_common module", "module__gvf_common.html", [
+        [ "Example for airframe file", "module__gvf_common.html#module_load_example__gvf_common", [
+          [ "Raw gvf_common.xml file:", "module__gvf_common.html#module_xml__gvf_common", null ]
+        ] ]
+      ] ],
+      [ "gvf_module module", "module__gvf_module.html", [
+        [ "Example for airframe file", "module__gvf_module.html#module_load_example__gvf_module", null ],
+        [ "Module configuration options", "module__gvf_module.html#configuration__gvf_module", null ],
+        [ "Module functions", "module__gvf_module.html#functions__gvf_module", [
+          [ "Raw gvf_module.xml file:", "module__gvf_module.html#module_xml__gvf_module", null ]
+        ] ]
+      ] ],
+      [ "gvf_parametric module", "module__gvf_parametric.html", [
+        [ "Example for airframe file", "module__gvf_parametric.html#module_load_example__gvf_parametric", null ],
+        [ "Module functions", "module__gvf_parametric.html#functions__gvf_parametric", [
+          [ "Raw gvf_parametric.xml file:", "module__gvf_parametric.html#module_xml__gvf_parametric", null ]
+        ] ]
+      ] ],
+      [ "haclc module", "module__haclc.html", [
+        [ "Example for airframe file", "module__haclc.html#module_load_example__haclc", [
+          [ "Raw haclc.xml file:", "module__haclc.html#module_xml__haclc", null ]
+        ] ]
+      ] ],
+      [ "hard_fault_recovery module", "module__hard_fault_recovery.html", [
+        [ "Example for airframe file", "module__hard_fault_recovery.html#module_load_example__hard_fault_recovery", null ],
+        [ "Module configuration options", "module__hard_fault_recovery.html#configuration__hard_fault_recovery", [
+          [ "Raw hard_fault_recovery.xml file:", "module__hard_fault_recovery.html#module_xml__hard_fault_recovery", null ]
+        ] ]
+      ] ],
+      [ "hott_telemetry module", "module__hott_telemetry.html", [
+        [ "Example for airframe file", "module__hott_telemetry.html#module_load_example__hott_telemetry", null ],
+        [ "Module configuration options", "module__hott_telemetry.html#configuration__hott_telemetry", null ],
+        [ "Module functions", "module__hott_telemetry.html#functions__hott_telemetry", [
+          [ "Raw hott_telemetry.xml file:", "module__hott_telemetry.html#module_xml__hott_telemetry", null ]
+        ] ]
+      ] ],
+      [ "joystick module", "module__joystick.html", [
+        [ "Example for airframe file", "module__joystick.html#module_load_example__joystick", null ],
+        [ "Module functions", "module__joystick.html#functions__joystick", null ],
+        [ "Datalink Functions", "module__joystick.html#datalink_functions__joystick", [
+          [ "Raw joystick.xml file:", "module__joystick.html#module_xml__joystick", null ]
+        ] ]
+      ] ],
+      [ "mag_calib_ukf module", "module__mag_calib_ukf.html", [
+        [ "Example for airframe file", "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf", null ],
+        [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", null ],
+        [ "Module functions", "module__mag_calib_ukf.html#functions__mag_calib_ukf", [
+          [ "Raw mag_calib_ukf.xml file:", "module__mag_calib_ukf.html#module_xml__mag_calib_ukf", null ]
+        ] ]
+      ] ],
+      [ "math module", "module__math.html", [
+        [ "Example for airframe file", "module__math.html#module_load_example__math", null ],
+        [ "Module functions", "module__math.html#functions__math", [
+          [ "Raw math.xml file:", "module__math.html#module_xml__math", null ]
+        ] ]
+      ] ],
+      [ "mav_course_exercise module", "module__mav_course_exercise.html", [
+        [ "Example for airframe file", "module__mav_course_exercise.html#module_load_example__mav_course_exercise", null ],
+        [ "Dependencies", "module__mav_course_exercise.html#dependencies__mav_course_exercise", [
+          [ "Raw mav_course_exercise.xml file:", "module__mav_course_exercise.html#module_xml__mav_course_exercise", null ]
+        ] ]
+      ] ],
+      [ "obstacle_avoidance module", "module__obstacle_avoidance.html", [
+        [ "Example for airframe file", "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance", null ],
+        [ "Module functions", "module__obstacle_avoidance.html#functions__obstacle_avoidance", [
+          [ "Raw obstacle_avoidance.xml file:", "module__obstacle_avoidance.html#module_xml__obstacle_avoidance", null ]
+        ] ]
+      ] ],
+      [ "oneloop_andi module", "module__oneloop_andi.html", [
+        [ "Example for airframe file", "module__oneloop_andi.html#module_load_example__oneloop_andi", null ],
+        [ "Module functions", "module__oneloop_andi.html#functions__oneloop_andi", [
+          [ "Raw oneloop_andi.xml file:", "module__oneloop_andi.html#module_xml__oneloop_andi", null ]
+        ] ]
+      ] ],
+      [ "opticflow_hover module", "module__opticflow_hover.html", [
+        [ "Example for airframe file", "module__opticflow_hover.html#module_load_example__opticflow_hover", null ],
+        [ "Module configuration options", "module__opticflow_hover.html#configuration__opticflow_hover", null ],
+        [ "Module functions", "module__opticflow_hover.html#functions__opticflow_hover", [
+          [ "Raw opticflow_hover.xml file:", "module__opticflow_hover.html#module_xml__opticflow_hover", null ]
+        ] ]
+      ] ],
+      [ "osd_max7456 module", "module__osd_max7456.html", [
+        [ "Example for airframe file", "module__osd_max7456.html#module_load_example__osd_max7456", null ],
+        [ "Module configuration options", "module__osd_max7456.html#configuration__osd_max7456", null ],
+        [ "Module functions", "module__osd_max7456.html#functions__osd_max7456", [
+          [ "Raw osd_max7456.xml file:", "module__osd_max7456.html#module_xml__osd_max7456", null ]
+        ] ]
+      ] ],
+      [ "pano_unwrap module", "module__pano_unwrap.html", [
+        [ "Example for airframe file", "module__pano_unwrap.html#module_load_example__pano_unwrap", null ],
+        [ "Module configuration options", "module__pano_unwrap.html#configuration__pano_unwrap", null ],
+        [ "Module functions", "module__pano_unwrap.html#functions__pano_unwrap", [
+          [ "Raw pano_unwrap.xml file:", "module__pano_unwrap.html#module_xml__pano_unwrap", null ]
+        ] ]
+      ] ],
+      [ "parachute module", "module__parachute.html", [
+        [ "Example for airframe file", "module__parachute.html#module_load_example__parachute", null ],
+        [ "Module configuration options", "module__parachute.html#configuration__parachute", null ],
+        [ "Module functions", "module__parachute.html#functions__parachute", [
+          [ "Raw parachute.xml file:", "module__parachute.html#module_xml__parachute", null ]
+        ] ]
+      ] ],
+      [ "pca9685 module", "module__pca9685.html", [
+        [ "Example for airframe file", "module__pca9685.html#module_load_example__pca9685", null ],
+        [ "Module functions", "module__pca9685.html#functions__pca9685", [
+          [ "Raw pca9685.xml file:", "module__pca9685.html#module_xml__pca9685", null ]
+        ] ]
+      ] ],
+      [ "photogrammetry_calculator module", "module__photogrammetry_calculator.html", [
+        [ "Example for airframe file", "module__photogrammetry_calculator.html#module_load_example__photogrammetry_calculator", null ],
+        [ "Module functions", "module__photogrammetry_calculator.html#functions__photogrammetry_calculator", [
+          [ "Raw photogrammetry_calculator.xml file:", "module__photogrammetry_calculator.html#module_xml__photogrammetry_calculator", null ]
+        ] ]
+      ] ],
+      [ "pose_history module", "module__pose_history.html", [
+        [ "Example for airframe file", "module__pose_history.html#module_load_example__pose_history", null ],
+        [ "Module configuration options", "module__pose_history.html#configuration__pose_history", null ],
+        [ "Module functions", "module__pose_history.html#functions__pose_history", [
+          [ "Raw pose_history.xml file:", "module__pose_history.html#module_xml__pose_history", null ]
+        ] ]
+      ] ],
+      [ "px4_flash module", "module__px4_flash.html", [
+        [ "Example for airframe file", "module__px4_flash.html#module_load_example__px4_flash", null ],
+        [ "Module configuration options", "module__px4_flash.html#configuration__px4_flash", null ],
+        [ "Module functions", "module__px4_flash.html#functions__px4_flash", [
+          [ "Raw px4_flash.xml file:", "module__px4_flash.html#module_xml__px4_flash", null ]
+        ] ]
+      ] ],
+      [ "px4_gimbal module", "module__px4_gimbal.html", [
+        [ "Example for airframe file", "module__px4_gimbal.html#module_load_example__px4_gimbal", null ],
+        [ "Module configuration options", "module__px4_gimbal.html#configuration__px4_gimbal", null ],
+        [ "Module functions", "module__px4_gimbal.html#functions__px4_gimbal", [
+          [ "Raw px4_gimbal.xml file:", "module__px4_gimbal.html#module_xml__px4_gimbal", null ]
+        ] ]
+      ] ],
+      [ "range_forcefield module", "module__range_forcefield.html", [
+        [ "Example for airframe file", "module__range_forcefield.html#module_load_example__range_forcefield", null ],
+        [ "Module configuration options", "module__range_forcefield.html#configuration__range_forcefield", null ],
+        [ "Module functions", "module__range_forcefield.html#functions__range_forcefield", [
+          [ "Raw range_forcefield.xml file:", "module__range_forcefield.html#module_xml__range_forcefield", null ]
+        ] ]
+      ] ],
+      [ "relative_localization_filter module", "module__relative_localization_filter.html", [
+        [ "Example for airframe file", "module__relative_localization_filter.html#module_load_example__relative_localization_filter", null ],
+        [ "Module functions", "module__relative_localization_filter.html#functions__relative_localization_filter", [
+          [ "Raw relative_localization_filter.xml file:", "module__relative_localization_filter.html#module_xml__relative_localization_filter", null ]
+        ] ]
+      ] ],
+      [ "rust_demo_module module", "module__rust_demo_module.html", [
+        [ "Example for airframe file", "module__rust_demo_module.html#module_load_example__rust_demo_module", null ],
+        [ "Module functions", "module__rust_demo_module.html#functions__rust_demo_module", [
+          [ "Raw rust_demo_module.xml file:", "module__rust_demo_module.html#module_xml__rust_demo_module", null ]
+        ] ]
+      ] ],
+      [ "servo_tester module", "module__servo_tester.html", [
+        [ "Example for airframe file", "module__servo_tester.html#module_load_example__servo_tester", null ],
+        [ "Module configuration options", "module__servo_tester.html#configuration__servo_tester", null ],
+        [ "Module functions", "module__servo_tester.html#functions__servo_tester", [
+          [ "Raw servo_tester.xml file:", "module__servo_tester.html#module_xml__servo_tester", null ]
+        ] ]
+      ] ],
+      [ "spektrum_soft_bind module", "module__spektrum_soft_bind.html", [
+        [ "Example for airframe file", "module__spektrum_soft_bind.html#module_load_example__spektrum_soft_bind", null ],
+        [ "Module functions", "module__spektrum_soft_bind.html#functions__spektrum_soft_bind", [
+          [ "Raw spektrum_soft_bind.xml file:", "module__spektrum_soft_bind.html#module_xml__spektrum_soft_bind", null ]
+        ] ]
+      ] ],
+      [ "syslink_dl module", "module__syslink_dl.html", [
+        [ "Example for airframe file", "module__syslink_dl.html#module_load_example__syslink_dl", null ],
+        [ "Module configuration options", "module__syslink_dl.html#configuration__syslink_dl", null ],
+        [ "Module functions", "module__syslink_dl.html#functions__syslink_dl", [
+          [ "Raw syslink_dl.xml file:", "module__syslink_dl.html#module_xml__syslink_dl", null ]
+        ] ]
+      ] ],
+      [ "time_countdown module", "module__time_countdown.html", [
+        [ "Example for airframe file", "module__time_countdown.html#module_load_example__time_countdown", null ],
+        [ "Module configuration options", "module__time_countdown.html#configuration__time_countdown", null ],
+        [ "Module functions", "module__time_countdown.html#functions__time_countdown", [
+          [ "Raw time_countdown.xml file:", "module__time_countdown.html#module_xml__time_countdown", null ]
+        ] ]
+      ] ],
+      [ "tlsf module", "module__tlsf.html", [
+        [ "Example for airframe file", "module__tlsf.html#module_load_example__tlsf", null ],
+        [ "Module configuration options", "module__tlsf.html#configuration__tlsf", null ],
+        [ "Module functions", "module__tlsf.html#functions__tlsf", [
+          [ "Raw tlsf.xml file:", "module__tlsf.html#module_xml__tlsf", null ]
+        ] ]
+      ] ],
+      [ "uav_recovery module", "module__uav_recovery.html", [
+        [ "Example for airframe file", "module__uav_recovery.html#module_load_example__uav_recovery", null ],
+        [ "Module configuration options", "module__uav_recovery.html#configuration__uav_recovery", null ],
+        [ "Module functions", "module__uav_recovery.html#functions__uav_recovery", [
+          [ "Raw uav_recovery.xml file:", "module__uav_recovery.html#module_xml__uav_recovery", null ]
+        ] ]
+      ] ],
+      [ "uavcan module", "module__uavcan.html", [
+        [ "Example for airframe file", "module__uavcan.html#module_load_example__uavcan", null ],
+        [ "Module configuration options", "module__uavcan.html#configuration__uavcan", null ],
+        [ "Module functions", "module__uavcan.html#functions__uavcan", [
+          [ "Raw uavcan.xml file:", "module__uavcan.html#module_xml__uavcan", null ]
+        ] ]
+      ] ],
+      [ "wedgebug module", "module__wedgebug.html", [
+        [ "Example for airframe file", "module__wedgebug.html#module_load_example__wedgebug", null ],
+        [ "Module configuration options", "module__wedgebug.html#configuration__wedgebug", null ],
+        [ "Module functions", "module__wedgebug.html#functions__wedgebug", [
+          [ "Raw wedgebug.xml file:", "module__wedgebug.html#module_xml__wedgebug", null ]
+        ] ]
+      ] ],
+      [ "wls module", "module__wls.html", [
+        [ "Example for airframe file", "module__wls.html#module_load_example__wls", null ],
+        [ "Module configuration options", "module__wls.html#configuration__wls", [
+          [ "Raw wls.xml file:", "module__wls.html#module_xml__wls", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Paparazzi Messages", "paparazzi_messages.html", [
       [ "Telemetry Messages", "paparazzi_messages.html#TELEMETRY_CLASS", [
         [ "AUTOPILOT_VERSION (ID 1)", "paparazzi_messages.html#AUTOPILOT_VERSION", null ],
@@ -405,15 +3732,15 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Paparazzi Technical Primers", "primer.html", null ],
-    [ "Math library", "md_sw_airborne_math_README.html", [
-      [ "HOWTO install a shared library to use in other projects", "md_sw_airborne_math_README.html#autotoc_md11", null ],
-      [ "HOWTO use the shared library", "md_sw_airborne_math_README.html#autotoc_md12", null ]
+    [ "Math library", "md_sw_2airborne_2math_2README.html", [
+      [ "HOWTO install a shared library to use in other projects", "md_sw_2airborne_2math_2README.html#autotoc_md11", null ],
+      [ "HOWTO use the shared library", "md_sw_2airborne_2math_2README.html#autotoc_md12", null ]
     ] ],
-    [ "CATIA", "md_sw_airborne_modules_digital_cam_catia_README.html", null ],
-    [ "E-Identification-FR", "md_sw_airborne_modules_e_identification_fr_README.html", null ],
+    [ "CATIA", "md_sw_2airborne_2modules_2digital__cam_2catia_2README.html", null ],
+    [ "E-Identification-FR", "md_sw_2airborne_2modules_2e__identification__fr_2README.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bibliography", "citelist.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespace Members", "namespacemembers.html", [
       [ "All", "namespacemembers.html", null ],
       [ "Functions", "namespacemembers_func.html", null ],
@@ -452,235 +3779,221 @@ var NAVTREEINDEX =
 "actuators__ostrich_8h.html#structActuatorsOstrich",
 "adc_8h.html#a926cfe25c54a1c6ac36923aeac21223a",
 "adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1",
-"ahrs__float__dcm_8h.html#af3805644883f041141e5f764ba1007ac",
-"ahrs__int__cmpl__quat_8h.html#ae0197c423673a52d3c97ecd7c57c67cd",
-"airspeed__amsys_8c.html#a5ab512571f05d2d4155b7dcdd014ee04",
-"ak8963_8h.html#a471aef643dffc975b8d2b488a8e05a49",
-"aoa__adc_8h_source.html",
-"apogee_2chibios_2v1_80_2board_8h.html#a4d64dd11840e3239f711bb9622fdbbf2",
-"apogee_2chibios_2v1_80_2board_8h.html#aacb25658dac32427d98a3c7b5449c1a5",
-"apogee_2chibios_2v1_80_2mcuconf__board_8h.html#a29204b81c265dd6e124fbcf12a2c8d6f",
-"apogee__1_80_8h.html#a166470e13d9423555f00bf7cc19e2958",
-"arch_2chibios_2board_8c.html",
-"autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a5d9b03165b6d8bb49b125baa065bdc39",
-"avi__isp__chromatic__aberration_8h.html#a941683291ea38173c54938362520cb6a",
-"avi__isp__denoising_8h.html#abf1a0ac1bedfa185ca762ef82abdb8ec",
-"avi__isp__lens__shading__correction_8h.html#a10310dca968cc80cc38f71b5d1847ebd",
-"avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6",
-"baro__bmp280_8c.html#a56a1810f9a1561f66ef4ea248a1eac87",
-"baro__scp__i2c_8h.html#a2fe023fc4063f461db08521dd732f13a",
-"bluegiga_8c.html#a65367c2226921460d9a5cde98a5e2e7e",
-"bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6",
-"bmp3__regs_8h.html#a04ca7f8cdc1dd22d98be390e5c0a9e9e",
-"c_09_09_8cpp.html#a63ce4f64887b9307317aee5baae6b18f",
-"cc2500__compat_8c.html#aa2dc70526e6d3d2eb6c4c392835bdcd7",
-"cc2500__frsky__x_8c.html#af99b33aa0fccb95d790cf31e47e3fd66",
-"cc2500__settings_8h.html#a10e677159c55765cec6a006a8d551b7b",
-"cf__deck__multi__ranger_8c.html#a9e2d42d9e59cd4622247712fc2f259b7",
-"chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a423ad9e13d0f4776ad590240cdaa658c",
-"chimera_2chibios_2v1_80_2board_8h.html#a56bd28f6e0196ba628c2abb0bc0f9158",
-"chimera_2chibios_2v1_80_2board_8h.html#aea5d5893a607ff4a990f0e309897d976",
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#aa8147974425e64e44807e01638739cd6",
-"chimera_8h.html#ae2a2de6309f53c472915a4ec002a94d5",
-"cloud__sensor_8h.html#a0ad5e90b7356d999781ab2688f879e8e",
-"copilot_8h.html#a6b499341ba7e3a9f3a628e767ef27d02",
-"crazyflie_2chibios_2v2_81_2board_8h.html#a356a8c63034c31d48ed836fd40089f9a",
-"crazyflie_2chibios_2v2_81_2board_8h.html#ae072525e87fc13c6a60009d2b03bfe42",
-"crazyflie_2chibios_2v2_81_2mcuconf__board_8h.html#ac53bd5c2b11b39ed0691812bf91b6144",
-"ctc_8h.html#acfc8966474f9495c804b18ff05c6f201",
-"cube_2orange_2board_8h.html#a2884e12bdac792f9f34cf3e1b511a252",
-"cube_2orange_2board_8h.html#aa019726230902e124ce65fc02b81e29d",
-"cv__blob__locator_8h.html#acae974e325e0e2e08b37f88ba8a7abd6",
-"cyrf6936__regs_8h.html#ae429fde50937f5338649d8556bdce7ed",
-"decawave__anchorless__communication_8c.html#acd88101a6b3b04216e131b2e6aca1939",
-"dir_1444106569909aede49a887d28257b90.html",
-"disco_8h.html",
-"dshot__rpmCapture_8c.html#a4d3792f496bfa66a873a965b9bdf030d",
-"eff__scheduling__cyfoam_8h.html",
-"eff__scheduling__rotwing__V2_8h.html#ab00382d19f8e1f3592022548de69ab6a",
-"ekf__aw_8h.html",
-"elle0__common_8h.html#a2bfe3742638f101571e96416b9e73123",
-"esc32_8c.html",
-"esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea6aa162395ef21513587d3abf592bd4d3",
-"fixedwing_2autopilot__generated_8h.html#ae22ba131f3568b0ef1e9b5b57bdf74ab",
-"flight__gear_8h.html#a69d43035869a26c6a408b83b86a56fc0",
-"functions_l.html",
-"geo__mag_8c_source.html",
-"gpio__def_8h.html#a62fa810782439ccd99ea38f7ed500a94",
-"gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843",
-"gps__sirf_8c.html#aaffb487be7f17dcbac0c54a4873ee416",
-"gps__ubx__i2c_8h.html#a28524f5571f237044d705d691ccc01ecaef0e8230f175e0d1e004dc1d2f860f9b",
-"group__HAL__CONF.html#gac58fde738d018b1233a5441ae4c6245b",
-"group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e",
-"group__i2c.html#gada60bb500eb1c9e4858ad1cc4f657d6f",
-"group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349",
-"group__math__algebra__float.html#gaea9b0b59e52744d3a7cb09729332c559",
-"group__math__algebra__int.html#a0083938b7e369efce5ebf120840a38d2",
-"group__math__algebra__int.html#ga97a013036d6fb63391408d5f5305467c",
+"ahrs__float__dcm_8h_source.html",
+"ahrs__int__cmpl__quat_8h.html#af3768c1f00b145b806effacd65202653",
+"airspeed__amsys_8c.html#a7454f0006a20439a1abe61c9040eabd6",
+"ak8963_8h.html#ab07053fcb6afcb4d09e8f337b615d383",
+"aoa__pwm_8c.html#a2ba3b9042068f30280fb39813bf2638e",
+"apogee_2chibios_2v1_80_2board_8h.html#a571e48678b32bd21d93bdd74968adcf6",
+"apogee_2chibios_2v1_80_2board_8h.html#ac2d232942c883917b79fd1229e788f2d",
+"apogee_2chibios_2v1_80_2mcuconf__board_8h.html#a742ec02fd96ff66ed1de33aef54f0707",
+"apogee__1_80_8h.html#aa64d6812e84e3875d3747aeb000cb49c",
+"autopilot_8c.html#a26de92899cae6ff28c3420315f10802d",
+"avi__isp__chroma_8h.html#a78a8111fd68952b3634bc9ca6f647e79",
+"avi__isp__dead__pixel__correction_8h.html#a45e416c87ef9cf45a65bd0398dd0024f",
+"avi__isp__green__imbalance_8h.html#a12c344dec92cd5f77ea63d29807bf9b9",
+"avi__isp__statistics__bayer_8h.html#a6197cbc141faca4bd1d30884b2a241a9",
+"baro__MS5534A_8c.html#a33edcc7fcd680338e39f36a495b62dae",
+"baro__mpl3115_8c.html#a331552d75986998b7d0da9617ae95d4a",
+"bebop_8h.html#af55f6a570be98106b333e120ca8caa09",
+"bmi088__i2c_8h.html#afe1607e71ab10ff21cf8acdd8b5dba61",
+"bmp280__regs_8h.html#a21c4ccba6ec5bf2309a3c15447214dfb",
+"boards_2ardrone_2board_8c_source.html",
+"cc2500_8c.html#a4b534dc22648d7f7eaa5213e6af265b7",
+"cc2500__frsky__shared_8c.html#a1ce71bdbc5532b3ef7b69338a692dce3",
+"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a46cdbec29b7f361b45360589a3e68366",
+"cc3d_8h.html#ac0c0f49372826a78db46d0cca8d76d25",
+"chibios_2mcu__periph_2sys__time__arch_8h.html#a00812d07b0afb483c2a6d949fd7639e0",
+"chimera_2chibios_2v1_80_2board_8h.html#a435d9f491e67d7efbb91a6fbe4dd91cc",
+"chimera_2chibios_2v1_80_2board_8h.html#ac36714460f63388431cedf21174591b0",
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a811cfbd049f0ab00976def9593849d32",
+"chimera_8h.html#aace877e382bb988e286679d3283814ff",
+"cloud__sensor_8c.html#structMedianFilter",
+"copilot_8h.html#a6f66771f594519e6d3b8efd400ec4162",
+"crazyflie_2chibios_2v2_81_2board_8h.html#a4f3ddfceb0be1ba87d7fa30921dce4c9",
+"crazyflie_2chibios_2v2_81_2board_8h_source.html",
+"crazyflie_2chibios_2v2_81_2mcuconf__board_8h.html#af1635e93ba4b8de905dfc7558fc043a3",
+"ctrl_2follow__me_8h.html#aaebeffb2f699c27b054373b128908c32",
+"cube_2orange_2board_8h.html#a4e825cf4ee90d3ec8df9da8d88244150",
+"cube_2orange_2board_8h.html#ac2731a5acaaba2e69d2fdee921762ec5",
+"cv__georeference_8c.html#a8ca6a8eec4a9f50545fac171325df5e9",
+"dc_8c.html#a9e037646096fde04d53a985c23094e98",
+"detect__gate_8c.html",
+"dir_5e9153041680afc3c016fd52fa730b56.html",
+"discrete__ekf__no__north_8c.html#a54feb03fb84b0175bc26baa217a482dea8254bd18580e4da01bfdce8b4fd293c2",
+"dw1000__arduino_8c.html#a191bf77a3407e7ca8474b7d7cbcecbb7",
+"eff__scheduling__rotwing_8c.html#a5aebe80ae96dd2a1ac3e410965eeaeae",
+"ekf__aw_8cpp.html#a0db13027c8e9b1f659744ff9136bc80a",
+"ekf__aw__wrapper_8c.html#a3bab4fad2bd66d6591a4f7dbbe504e40",
+"elle0__common_8h.html#ad2aa2755e250074295573801fe54cf9a",
+"esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610ade351cf4069c0aaf477d54421a736c14",
+"ffconf_8h.html#a1726418a7d765c3ae4da9c43d2349151",
+"fixedwing_2guidance_2guidance__v_8h.html#ac57d0222b7dcef37b5319177ffe6ffdc",
+"follow_8c.html#a767f3bb6f219f9f50a74deb8eadbbea1",
+"gec_8h.html#a9bb5b7264af11868fbe186511e439e9d",
+"globals_func_e.html",
+"gps_8c.html#aecfbb0c93bf922dbdf59468045a5fd35",
+"gps__nmea_8h.html#aecae9343d4c7cd5ab15441a233a075de",
+"gps__skytraq_8h.html#structGpsSkytraq",
+"gps__udp_8c.html#a65dc6843eec8ce49717e2e2238d898cb",
+"group__config.html#ga6d88c5f6523d72281f22fdf58671261d",
+"group__math__algebra__float.html#ga3e14b0798bbad05e64ed477c027d1411",
+"group__math__algebra__int.html#ab617257f46107ac52602d44e6b8f274c",
 "group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa",
-"group__math__isa.html#ga2c519345c6647d01ad1fdb34f02009db",
-"group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70",
-"group__state__position.html#ga73c0b4f12fdae6871047024c32034cf1",
-"group__state__wind__airspeed.html#ga0590484a2ed6e379d0c126e3aa767dc4",
-"guidance__OA_8h.html#structopticflow__stab__t",
-"guidance__indi__hybrid_8c.html#a1dd904caf75df70108fbf333279f5ee6",
-"guidance__v__adapt_8c.html#aa810b91c591c30594a11b3100b09f73c",
-"gvf__ellipse_8h.html#a79aee526ebb50d0edc37282948987757",
-"hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83",
-"high__speed__logger__direct__memory_8c.html#a52fd4207a7fa718b2de8e2b5f9dac559",
-"holybro_2kakute__f7_2board_8h.html#a0f5d50c45d8d3cc39e6e54ae99061fd4",
-"holybro_2kakute__f7_2board_8h.html#a91200c23541cf2829d91f9aeb9114f76",
-"holybro_2kakute__f7_2mcuconf__board_8h.html#a389d0701902663f45e60555f50065a06",
-"holybro__kakute__f7_8h.html#a0586532d3b207eaa44f525856e359f1d",
-"hott__gam_8h.html#a2f774796d1a287dcaa6e1a8f38457215",
-"humid__sht__i2c_8c.html#a9250bbec811cdbcc7c024e084dacc33f",
-"image_8h.html#ac063f65c5d6915e5f154c64dfc3e3b96",
-"imu__aspirin__i2c_8c.html#a15394594a2ff3d526d3adf8ea72fd6d5",
-"imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2",
-"input__capture__arch_8h.html#a8341690ca547a47a5d670c2766e7762bae0fbfd1131f0d11883a724e1d6ddfc61",
-"ins__ext__pose_8c.html#ae08d274a06cbe2aa13f6f423e4b94fc0",
-"ins__flow_8c.html#a759d111fc39d57e5ae8a1afb25277861",
-"ins__mekf__wind_8cpp.html#a5e41bde7a8640b36661849630f4de312",
-"ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e",
-"intermcu__dl_8h.html#a2efff3165b0d4eddb2f01d93b456aed3",
-"invensense2__regs_8h.html#a9985dff9037abf8a3604b898ae211ad2",
-"invensense3__regs_8h.html#a3c74ad20227017ae0eb99787a58f13da",
-"ir__mlx_8h.html#a76604b115855851177887708e56a17d8",
-"jevois_8h.html#aaabffd8949fd232243751b5dbf121d60",
-"krooz__sd_8h.html#a7bed267bab62113c6593e804a4d0f2f0",
-"l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad1ca318525b4ddc0fb3dbae403b9bb52",
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a2b5d34aeac1b12c901e2fed5952ae29d",
-"libisp__config_8h.html#ab21377b8f63e0d742be756d5422ca545",
-"linux_2mcu__periph_2adc__arch_8c.html",
-"lis3mdl_8h.html#a3926e635c7cc81ed4eeca7ea2d2b34e0",
-"lisa__m__1_80_8h.html#ab37486d076e92bdba138972435110093",
-"lisa__m__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377",
-"lisa__mx_2chibios_2v2_81_2mcuconf__board_8h.html",
-"lisa__mx_2chibios_2v2_81_2mcuconf__board_8h.html#af1ebeaa7aa7da2abc838900d137f12f0",
-"lisa__mxs_2chibios_2v1_80_2board_8h.html#a133a8bd30af31224040168c0edacb37d",
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a2b5d34aeac1b12c901e2fed5952ae29d",
-"lisa__s__1_80_8h.html#a37def755123d949a1f843b002daa9408",
-"lps25h__i2c_8c.html#a07d2a2d31c41197cc5f261189196d323",
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4",
-"lsm6ds33__regs_8h.html#a2172752687515815dc25eeaed2df5fba",
-"mag__rm3100_8h.html#a26ab3fdf595f92d12032e6842bfaef21",
-"matekF765-WING_8h.html#a6d4c2edd87f51477b61d0be05c1bb433",
-"matek__f405__wing__v1_8h.html#a745f443c330c61471cba9ced96957efb",
-"mateksys_2F765-WING_2board_8h.html#a34042d9376b61102a4aabbcc27e8e5e0",
-"mateksys_2F765-WING_2board_8h.html#a9e397e7be2534f6438e90ed3a540b8ee",
-"mateksys_2F765-WING_2mcuconf__board_8h.html#a2bf6f75268559ffdb5d7f9b53a319267",
-"mateksys_2F765-WING_2mcuconf__board_8h.html#af9be48d9e825a860764b4a928124f046",
-"mateksys_2FC-H743-SLIM_2board_8h.html#a661e8cfbebd6d79c68c6ddc27ae01931",
-"mateksys_2FC-H743-SLIM_2board_8h.html#adabec78f27083e37332047a7ec044289",
-"mateksys_2FC-H743-SLIM_2mcuconf__board_8h.html#a7a2aae071a6b7909bee7a1a7b1595b98",
-"mav__exercise_8c.html#a0111a459dae5b767ece1246ad1d1032e",
-"max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea79175d482e70a2b47a31e831204ffd44",
-"mcuconf__h7_8h.html#a4f813225df0ad5553219db6d5d9694da",
-"median__filter_8h.html#ac56f32eac42c0b05ac22862377de1b0a",
-"microrl_8h.html#a69310e4e582fc8600774d1beb367262e",
-"module__actuators_md25.html#module_xml__actuators_md25",
-"module__baro_scp_i2c.html#module_xml__baro_scp_i2c",
-"module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc",
-"module__gps_sirf.html#functions__gps_sirf",
-"module__imu_elle0.html#module_xml__imu_elle0",
-"module__lidar_tfmini.html#functions__lidar_tfmini",
-"module__nav_rotorcraft.html#module_xml__nav_rotorcraft",
-"module__radio_control_spektrum.html#module_load_example__radio_control_spektrum",
-"module__takeoff_detect.html#module_xml__takeoff_detect",
-"modules_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86",
-"mpl3115_8h.html#a18b4e7a11042c8ec2e1c62229dbb1ae1",
-"mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a2b9a9607ff52acdfcd1a7f19b3e99d88",
-"mpu9250__regs_8h.html#a5aa06cba0c33a42a69af855b1e749c95",
-"ms5611__regs_8h.html#af22c2ea21d0cf2025145b3bb2283bac8",
-"mt9f002__regs_8h.html#a1436bcd0aadfd78b36564b7131294a5f",
-"mt9f002__regs_8h.html#a825fac8049b922f7d57a519311137fb7",
-"mt9f002__regs_8h.html#ae2e7cd6cd51cb50b85d89c0f73229ecd",
-"nav_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5",
-"nav_8h.html#a9f9ad9045eda753a7ea58359bd6a0581",
-"nav__fish_8c.html#ab9a8bb00a06dbafb592bff25bd036b7b",
-"nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271",
-"nav__smooth_8c.html#aba6783d74346f84a9f6b369bfee275d0",
-"nav__survey__poly__rotorcraft_8c.html#a369fb753abd22e08ec5990479b0dcbcf",
-"nav__survey__zamboni_8h.html#abbbd491f02969720d86cef7778d1e03e",
-"navdata_8h.html#ae43ceafaca46ba7374afd15ed5b3b15a",
-"naze32__common_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0",
-"nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21",
-"nps__main_8h.html#a09501c15e6e1dd4d027eb3fc37787a4c",
-"nps__sensor__gps_8h.html#a201dec4451cf538ab6a5cf5a2e201530",
-"nucleo144__f767zi_8h.html#a720d34950af7c141340f0e3e18abd55c",
-"nucleo_2144__f767zi_2board_8h.html#a3a9c140fe6c1ad026b8d02f2c7096225",
-"nucleo_2144__f767zi_2board_8h.html#aab8038de3d21529a7480df46cc7e6cff",
-"nucleo_2144__f767zi_2mcuconf__board_8h.html#a50966593f2981b405801d73dda3283f8",
-"obstacle__avoidance_8c.html#a53290242178aea1256bfde6beba0d989",
-"oneloop__andi_8c.html#aa3a43f814c0c40b90c26387b58f80017",
-"opa__ap__1_80_8h.html#a193da435f8b5249362114662814aad99",
-"opa__ftd__1_80_8h.html#ab8668b847469a8d3041eb77d7f1e5a78",
-"openpilot__revo__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380",
-"optical__flow__hover_8c.html#a9d679a7239c78ac04b60693343e4c472",
-"opticflow__calculator_8c.html#a5fc097f3ccf99a708563cf7a33626ec6",
-"pano__unwrap_8c.html#a7fb6faa30c3712178c0b0ec873a5f710",
-"paparazzi_messages.html#KEY_EXCHANGE_UAV",
-"pca9685__i2c_8c.html#a25e3383eac0c53506d81f55acb06efc5",
-"pipe_8h.html#a9321cb9d258dc7cf5d63c1a826cb4da8",
-"pprz__chirp_8h.html#structchirp__t",
-"pprz__trig__int_8h.html#a0a931bbe72494fad16bc758af0db7332",
-"px4__flash_2protocol_8h.html#ab300ebecfbec9f6a18239faf9b196765",
-"px4fmu_2chibios_2v2_84_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a",
-"px4fmu_2chibios_2v2_84_2mcuconf__board_8h.html#a639272943cb5b9bdcbd78e5ced2b52a0",
-"px4fmu_2chibios_2v4_80_2board_8h.html#a32c10c25f4813e91109c1e17840033c7",
-"px4fmu_2chibios_2v4_80_2board_8h.html#aa844e5d0bf71100db46516b14c6b36bf",
-"px4fmu_2chibios_2v4_80_2mcuconf__board_8h.html#a639272943cb5b9bdcbd78e5ced2b52a0",
-"px4fmu_2chibios_2v5_80_2board_8h.html#a23736b1190828ee470867fcff3b4cc75",
-"px4fmu_2chibios_2v5_80_2board_8h.html#a7d210835415e4de1a6063cf7334a8079",
-"px4fmu_2chibios_2v5_80_2board_8h.html#aeb801b8d3b63fcb4e272355b4e51c3ad",
-"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a9bd8243c565cf0d8128ca9cc00bc1a4d",
-"px4fmu_2chibios_2v6x_2board_8h.html#a394d82a01dbe17b746a23bf02600daf4",
-"px4fmu_2chibios_2v6x_2board_8h.html#a97b0a5aa045efc48190b27f857ea5cc8",
-"px4fmu_8h.html#a4d767633a35c612f195676cc9389f6d8",
-"px4fmu__2_84_8h.html#a1d0bc863ec3717e7ed493491c0f82b24",
-"px4fmu__4_80_8h.html#a85ec476fd51af473dba49e30e47b9129",
-"qmc5883l_8h.html#a198d38c9c7088e6c50512655a039e6aea77f839e81c86ed3f32849cc80432fd23",
-"rc__intermcu_8c.html#ac9fea4cfb071bc7a85ec2a05ef0a88f3",
-"rotorcraft_2autopilot__static_8h.html#ab6ce21c89b3540050089f5249f64933d",
-"rotorcraft_2navigation_8h.html#a4e4de9e10721304a4413fb1aac2cb63c",
-"rover_2autopilot__rc__helpers_8h.html#a7769f1bee81960265c7c0bb2980d1edd",
-"rover__guidance__steering_8c.html#ac69bcf60f43fa5aaa6dd39af1a68e529",
-"sbus__common_8c.html#a20366ad7a6b48e4b2128333c030b7820",
-"sdcard__spi_8h.html#a8b59f6433086866c7e5ac3062250f72c",
-"servo__tester_8c_source.html",
-"sim_2mcu__periph_2udp__arch_8h.html",
-"softi2c_8c.html#a5cd10bf498ada800946930e00af165ec",
-"sst25vfxxxx_8h.html#a1852cfed46b101ba2925ae3ba2781b5e",
-"stabilization__adaptive_8h.html#a2264ab6854d89933eea18804b3217cd3",
-"stabilization__attitude__quat__float_8h.html#aa066df70b492860abd3a29b3922f8760",
-"stabilization__attitude__ref__quat__int_8h.html#a02273e0f3571facf59a24d27dcb7f606",
-"stabilization__rate_8h.html#a93010f40e7ffb36bf45936cc6c34f6b7",
-"stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3",
-"structgec__transport.html#aa6775803d984a4fed7cd59187589334c",
-"sys__id__chirp_8h.html#a9a8ceb9a469a363cc0e3a937b4053ca7",
-"syslink_8h.html#structsyslink__parse__state",
-"tawaki_2chibios_2common_2mcuconf__board_8h.html#a0a2a10496ad437bb1bf6bf23892148e4",
-"tawaki_2chibios_2common_2mcuconf__board_8h.html#ad19de93466026d8b03a895cae792bce9",
-"tawaki_2chibios_2v1_80_2board_8h.html#a550cc5b6fe19171e28792645acc9f7ef",
-"tawaki_2chibios_2v1_80_2board_8h.html#ac719d98dff19725770e3eee97b9697ad",
-"tawaki_2chibios_2v1_81_2board_8h.html#a42f2ef726fc7a48b6038eee382c93c63",
-"tawaki_2chibios_2v1_81_2board_8h.html#ab1944546bb1658916d6b07eb95cf51f3",
-"tawaki_2chibios_2v2_80_2board_8h.html#a3290bbd4ec84b8df262c65f53c0a7d40",
-"tawaki_2chibios_2v2_80_2board_8h.html#aa3173e832897abcaabd31a8d567bc095",
-"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a2e86000358460638b91377b49baf2a58",
-"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#af5e7dd5c5bd6b91423c84da0f38b7821",
-"tawaki__v2_80_8h.html#a034561fd5908f11482038f2bad8e0836",
-"tcas_8h.html#a07deba9c3568731e07896ae2612e46a1",
-"textons_8h.html#aba987c616eb0f83d63d1689238f4f7b6",
-"trilateration_8h.html#a97f0436650276f98507bed287f66f0c6",
-"undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2",
-"usb__msd_8h_source.html",
-"video__device_8h.html#a44bf9ccc04ee62fd4808222ee1f467c0",
-"vl53l1x__api_8h.html#a4e4ee95b70dcb375cdc9f63e8434e41f",
-"vl53l5cx__api_8h.html#aebed7f478104d4772b5bfee00743a257",
-"wedgebug_8c.html#a16a89172fa5251985574e36b3b364a7e",
-"wind__estimation__quadrotor_8c.html#afdb4078f92a8c82b607a2e685a63183d",
-"xsens_8h.html#a47f12136c89e8cc13ff45e72caab8a19"
+"group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa9502bb1de8d8491ceb5443ef51c4f4a",
+"group__state__wind__airspeed.html#gabe8ffad9238290321c5b3495d3ea61c4",
+"guidance__h__ref_8h.html#a5678a7ba89f6b2900826c485e0cec175",
+"guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87",
+"guidance__v__n_8h.html#a835abe20bb35bfafe93b7dc691452558",
+"gvf__parametric_8h.html#a89f09c7f1b3aa6378e7c2f904f50d917",
+"hal__stm32__dma_8h.html#a7800b180e982e73e2a3e8c23eb92a0ac",
+"high__speed__logger__spi__link_8c.html#a2b4341a957c0c01b6b056ad76db74219",
+"holybro_2kakute__f7_2board_8h.html#a33b9cbda86163e55e01772d767403b8c",
+"holybro_2kakute__f7_2board_8h.html#abd636939af0d0f352271334fb41fcee0",
+"holybro_2kakute__f7_2mcuconf__board_8h.html#a6f98734dec400e9829474c6a9ad607be",
+"holybro__kakute__f7_8h.html#ada248ea908ea4ee30983b56d29af8380",
+"humid__pcap01_8h.html#a21462bf42fd8ffa2009e2c9dcfd7778b",
+"i2c__smbus_8h.html#a4cf424f52753c3afe4ee9713c96358a2",
+"imu_8h.html#a86c26b2e762731fa6c0a5dccb2773710",
+"imu__heater_8h.html#ad69653cfc0f057f3ff1824b6ba0965f9",
+"imu__quality__assessment_8h.html#a59685537e3b49989d467fe6bdc126efe",
+"ins__ekf2_8cpp.html#a54ec87da45ce6e027f8f4b2a390e0719",
+"ins__float__invariant_8h.html#aa1f2eff40eddfce7040b6bf5cb3f215c",
+"ins__gps__passthrough_8c_source.html",
+"ins__mekf__wind_8h.html#a959ac9da682640cdcd53ad72179f64b8",
+"ins__vn100_8h.html#a9d4bc643bab7246d44f8bb16f888e203",
+"invensense2_8h.html#afa662d6304feb50221b6596bbc655d3ca572162212666e26bee3065c534263819",
+"invensense3_8h.html#a2e45b4b480cd489c9080f7ba81939bd2ab772099f70abfcead5a67bab196a5005",
+"iomcu_8c.html#a070b535219869bf2c3b47fa4389a0553",
+"itg3200_8h.html#a3453f190818c5265b91d834d6a6489e8",
+"jpeg_8c.html#ab1b1ba75dd7b4aa62451fdc5621bb339",
+"l3g4200__regs_8h.html#ad2deaef0a23f0a875296110976bbfbec",
+"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a0b3f4734d9855324ef89b57cb9858e49",
+"libisp_8h.html#structlibisp__context",
+"linux_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b",
+"lis3mdl_8h.html#a059b0e3fa760bde676246f4dc125e0b0",
+"lisa__m__2_80_8h.html#a4285bdd58098064c3bab3976a78b26fa",
+"lisa__mx_2chibios_2v2_81_2board_8h.html#a39f5bc8c5a9ae9112cb64d4075b8be5a",
+"lisa__mx_2chibios_2v2_81_2mcuconf__board_8h.html#a6d5f6197c12d2a74a041b54d6e1b80a2",
+"lisa__mx__common_8h.html#a9edea038e84fe10c9a71436253cc8ea1",
+"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a02ab064f32c429288dce0b15b2e443a1",
+"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56",
+"lps25h_8h.html#structLps25hConfig",
+"lsm303d__spi_8h.html#unionLsm303d__Spi_8data__mag",
+"lsm6ds33__regs_8h.html#a1f9ba8c71a1abf28199a36aca384b6b2a27cd76eb71c21bc808adc16880fcbdd1",
+"mag__rm3100_8c.html#af6712887d1119a50605ca3c452357ef5",
+"matekF765-WING_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a",
+"mateksys_2F765-WING_2board_8h.html#a1304c508f7d7872fcb0f5d12fdd85868",
+"mateksys_2F765-WING_2board_8h.html#a75d4448f752198b2480769efe2e8c4a4",
+"mateksys_2F765-WING_2board_8h.html#af8ba42765acb4065b99df6a29ad65cf2",
+"mateksys_2F765-WING_2mcuconf__board_8h.html#aa8147974425e64e44807e01638739cd6",
+"mateksys_2FC-H743-SLIM_2board_8h.html#a469a3523d75d1b4a286abff88c3486d5",
+"mateksys_2FC-H743-SLIM_2board_8h.html#aad98b9168836e3221989de95ffe90040",
+"mateksys_2FC-H743-SLIM_2mcuconf__board_8h.html#a38fe6fb696c105d6e048bde844db0224",
+"mateksys_2FC-H743-SLIM_2mcuconf__board_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56",
+"max1167__hw_8h.html#a5f51267ad4ab657ec9cd9f9014e2e0aa",
+"mcuconf__h7_8h.html#a13462d0d032371255cf0e1b1b627965a",
+"mcuconf__h7_8h.html#adfdd029a5a6ccdf27dbb44496687794a",
+"mf__ptu_8c.html#a6b3bb3313a038d38337454d2f5a4611a",
+"mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6",
+"module__autopilot_gnc_fw.html#module_load_example__autopilot_gnc_fw",
+"module__cv_qrcode.html#module_xml__cv_qrcode",
+"module__generic_uart_sensor.html#configure",
+"module__imu_apogee.html#functions__imu_apogee",
+"module__ins_sim.html#module_load_example__ins_sim",
+"module__mppt.html#functions__mppt",
+"module__pprzlog.html#module_load_example__pprzlog",
+"module__state_interface.html#module_load_example__state_interface",
+"module__video_thread.html#module_xml__video_thread",
+"modules_2ins_2ins__arduimu__basic_8c.html#ac5803b6353ae28ae52ab9284d222d8d5",
+"mpu60x0__regs_8h.html",
+"mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f",
+"ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1",
+"mt9f002_8h.html#aa1e09e3bbb34e6f084cf490573ca1f32",
+"mt9f002__regs_8h.html#a64257a7a847b9c42097250bee0ccffeb",
+"mt9f002__regs_8h.html#ac06fde0945c81c2987040144409c47b5",
+"mt9v117__regs_8h.html#a94093c425549c3d9e2672ad8a8ef3707",
+"nav_8c.html#afe6d4a5dd1de94f57126d27a6baac58f",
+"nav__cube_8h.html#ad7637c9fa919586f3ff632e0ce9354a7",
+"nav__launcher_8c_source.html",
+"nav__skid__landing_8c.html#a2aae2c09e6529ffb6a38e840d38d86d2",
+"nav__survey__poly__osam_8h.html#a3f0a828321d370684ff070c6606c5346",
+"nav__survey__zamboni_8h.html#a32dac0f6a4b06acbd79c192f0b075c19",
+"navdata_8h.html#aeb8403cd5da7c3bf2437611fc0c78866",
+"nps__atmosphere_8c.html",
+"nps__fdm__gazebo_8cpp.html#ad26152f6e70e106dc8a68b452a326f77",
+"nps__radio__control_8c.html#a2a652ae30e8858d65f3e811509a795dd",
+"nps__sensor__sonar_8c.html#a9e642251cd22e6738167b6153303df91",
+"nucleo_2144__f767zi_2board_8h.html#a0b48fb055b827f15fe3b2ffec125f655",
+"nucleo_2144__f767zi_2board_8h.html#a77763a298201914708efb2c8e3081717",
+"nucleo_2144__f767zi_2board_8h.html#aff75485cf888840b92ecd4609fe2128c",
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ac7822898d25e5d7f57e19db582c2291e",
+"onboard_modules.html#modules_category_radio_control",
+"oneloop__andi_8h.html#a6bf7675a6b1dc50b46b973f4837e3607",
+"opa__ftd__1_80_8h.html#a5ab66f34d0a05ab9b8080edaed3ddaa3",
+"openpilot__revo__1_80_8h.html#aeffb1efc9c3b1504553532d99093578a",
+"optical__flow__landing_8c.html#a1a6a8f45fd92fb7ccf4a74ad728f9d2f",
+"opticflow__calculator_8h.html#a1e4ae6d4816b337a16747a2c072572ec",
+"paparazzi_messages.html#AIRSPEED_WIND_ESTIMATOR_EKF",
+"paparazzi_messages.html#ROTORCRAFT_CAM_STICK",
+"pca9685__i2c_8c.html#aec8a9df8e9bb1659bbe79e9abad331c2",
+"point_8c.html#a9895f1d4ef4cfecb7738442ac220f590",
+"pprz__geodetic__float_8c.html#a671737b382191d58f5a35e724a394079",
+"preflight__checks_8c.html#ab2bb3b2aeab6067d5b53af010085f2bf",
+"px4__gimbal_8h_source.html",
+"px4fmu_2chibios_2v2_84_2board_8h.html#acc19e345342d6130dc5351e4dcd15fea",
+"px4fmu_2chibios_2v2_84_2mcuconf__board_8h.html#ad5644ee22605eb7f136b390dba9f9725",
+"px4fmu_2chibios_2v4_80_2board_8h.html#a6a6cd142a0c0cde9125352343a8e6005",
+"px4fmu_2chibios_2v4_80_2board_8h.html#af94b0bdfc59710b9d0253a62ae626000",
+"px4fmu_2chibios_2v4_80_2mcuconf__board_8h.html#ad6490250ce5cb87946f86aa6abdc00b5",
+"px4fmu_2chibios_2v5_80_2board_8h.html#a51579a87323b6142c8dc31915a64c819",
+"px4fmu_2chibios_2v5_80_2board_8h.html#ab2868c2e00e021550259ea4c6524e195",
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a39152e644ea1cbe066a9ea6df3be7f73",
+"px4fmu_2chibios_2v6x_2board_8h.html#a04c59399cd6408e550745f68b5ff76e1",
+"px4fmu_2chibios_2v6x_2board_8h.html#a6465703c4f516932fa91fe2bb409402e",
+"px4fmu_2chibios_2v6x_2board_8h.html#ad16dfcfb4a90d9b761e03c3ac6aadd2e",
+"px4fmu__1_87_8h.html#a5c71cefbac7158c9005191835cc22eed",
+"px4fmu__4_80_8h.html#a74a73d71b5a66c3cfea6788e42674c94",
+"qr__code_8h.html#ac2cd906083090c455a8cf7bb2b491dee",
+"reg__avi_8h.html",
+"rotorcraft_2guidance_2guidance__h_8c.html#a8e334308c59e5430c7dd0ac7e222f07b",
+"rotorcraft_2navigation_8h.html#a9a7362fb69d3c4f02fb33f9b93d3f34e",
+"rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897",
+"rover__guidance__steering_8h.html#structsr__cmd__t",
+"sbus__common_8h.html#ae8a17057cacb6e3b645d16793db3e21f",
+"sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782",
+"settings_8h.html#aaaafb969ffa6ec451b6bb2facd5736ee",
+"sim_2modules_2core_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513",
+"sonar__adc_8h.html#a1573024bf2c354bfc4a4953bb59185f3",
+"sst25vfxxxx_8h_source.html",
+"stabilization__attitude_8c.html#a86f0d47644538be1345aab19c7dc3de4",
+"stabilization__attitude__quat__int_8c.html#ae9d5ca7fafbaf2bb14f4a640fd1114ab",
+"stabilization__direct_8c.html#af43c431cfa3e85865f1adb9ccde42403",
+"stereo__avoid_8h.html#ace7b98c58ff30c23353ae3d546f69475",
+"structIndiController__int.html",
+"sys__id__chirp_8c.html",
+"syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7",
+"target__pos_8h.html#a8c6e507cfbd20a7871fbec9e45344c83",
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#aa8147974425e64e44807e01638739cd6",
+"tawaki_2chibios_2v1_80_2board_8h.html#a41045e1a3870d3eb864a2f34b03fc120",
+"tawaki_2chibios_2v1_80_2board_8h.html#ab0c2d8db616bd87f6f9b7e047a8ec9f2",
+"tawaki_2chibios_2v1_81_2board_8h.html#a30d06bc9557205f838d0356e6e5f6efd",
+"tawaki_2chibios_2v1_81_2board_8h.html#a9d61369d9a94b72fceba7e1627a22251",
+"tawaki_2chibios_2v2_80_2board_8h.html#a1ed30438f4fb7a84e66b0de2ad448126",
+"tawaki_2chibios_2v2_80_2board_8h.html#a8fc78a800d7405307d3548217a0d1304",
+"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a13462d0d032371255cf0e1b1b627965a",
+"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#ad5644ee22605eb7f136b390dba9f9725",
+"tawaki__v2_80_8h.html#a192437e223012d0a12e92c878e3c2877",
+"temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a",
+"tfmini__i2c_8c.html#abbecbd82ffc2457e3a734b0d32db8fb7",
+"uart__cam__ctrl_8c.html#ae75663ea754199a5cbef7335ec93a87b",
+"usb__msd_8c.html#a599361dc53930016e0ff2f9e22ca527e",
+"v4l2_8h.html#a4fd152448286ca6538fbfe4376c9e0c7",
+"video__usb__logger_8h_source.html",
+"vl53l1x__nonblocking_8c.html#a5a86352c48d28857538713dba0f210c5",
+"vn200__serial_8h.html#a3709ecf0c3ff1d89dfeab606a6ad5eb7",
+"wedgebug_8c.html#a94ee40c89cb54968c8c4424eb38e9c27",
+"wind__estimator_8h.html#aa4b8b32a971ea93e3ab37d896ded45af"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

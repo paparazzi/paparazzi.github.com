@@ -1,17 +1,51 @@
 <map id="get_dist2_to_point" name="get_dist2_to_point">
-<area shape="rect" id="node1" title="Returns squared horizontal distance to given point." alt="" coords="921,175,1064,202"/>
-<area shape="rect" id="node2" href="$rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="704,48,873,75"/>
-<area shape="rect" id="node8" href="$nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="747,124,830,151"/>
-<area shape="rect" id="node13" href="$nav__rotorcraft__hybrid_8c.html#a342a4deb3398a85a7e59d72d7bee0cf8" title="Implement basic nav function for the hybrid case." alt="" coords="499,226,630,252"/>
-<area shape="rect" id="node14" href="$nav__rotorcraft__hybrid_8c.html#a46cf0dc6f9a25e42377471eaeec36704" title=" " alt="" coords="497,276,632,303"/>
-<area shape="rect" id="node15" href="$nav__rotorcraft__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,175,832,202"/>
-<area shape="rect" id="node3" href="$rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="473,23,656,50"/>
-<area shape="rect" id="node4" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,23,188,50"/>
-<area shape="rect" id="node5" href="$nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation (circle around HOME)" alt="" coords="285,23,376,50"/>
-<area shape="rect" id="node7" href="$nav_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="261,74,401,100"/>
-<area shape="rect" id="node6" href="$fixedwing_2autopilot__static_8c.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course." alt="" coords="33,74,160,100"/>
-<area shape="rect" id="node9" href="$rotorcraft_2navigation_8c.html#a6db8dffd444086b98f7efd0cb97d3aae" title="Registering functions." alt="" coords="482,175,647,202"/>
-<area shape="rect" id="node11" href="$nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="260,124,401,151"/>
-<area shape="rect" id="node10" href="$nav__rotorcraft__hybrid_8c.html#ab0f5b29a3e6700f427eb6f9f6ddea67a" title="Init and register nav functions." alt="" coords="236,226,425,252"/>
-<area shape="rect" id="node12" href="$nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="273,175,388,202"/>
+<area shape="rect" id="Node000001" title="Returns squared horizontal distance to given point." alt="" coords="921,274,1064,300"/>
+<area shape="rect" id="Node000002" href="$rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="704,57,873,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="975,264,932,199,903,162,872,128,842,104,812,85,815,80,845,99,875,124,907,159,936,196,979,261"/>
+<area shape="rect" id="Node000008" href="$nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="747,138,830,164"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="967,266,924,228,872,189,824,166,827,161,875,185,928,224,970,262"/>
+<area shape="rect" id="Node000014" href="$nav__rover__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title="Implement basic nav function." alt="" coords="747,450,830,476"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="975,313,931,362,875,416,817,453,814,448,872,412,928,359,971,309"/>
+<area shape="rect" id="Node000015" href="$nav__rotorcraft__hybrid_8c.html#a342a4deb3398a85a7e59d72d7bee0cf8" title="Implement basic nav function for the hybrid case." alt="" coords="499,325,630,350"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="908,300,630,333,630,327,907,294"/>
+<area shape="rect" id="Node000016" href="$nav__rotorcraft__hybrid_8c.html#a46cf0dc6f9a25e42377471eaeec36704" title=" " alt="" coords="497,276,632,301"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="908,290,632,291,632,286,907,285"/>
+<area shape="rect" id="Node000017" href="$nav__rotorcraft__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,200,832,225"/>
+<area shape="poly" id="edge23_Node000001_Node000017" title=" " alt="" coords="943,272,823,228,825,223,945,267"/>
+<area shape="rect" id="Node000018" href="$nav__rover__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,376,832,401"/>
+<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="962,309,875,359,828,378,826,373,872,354,959,305"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="473,24,656,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="690,58,650,52,651,46,691,52"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,24,188,49"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="494,24,425,14,331,8,236,14,154,26,154,21,236,8,331,3,426,8,494,18"/>
+<area shape="rect" id="Node000005" href="$nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation (circle around HOME)" alt="" coords="285,73,376,98"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="491,55,377,79,375,74,490,49"/>
+<area shape="rect" id="Node000007" href="$nav_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="261,24,401,49"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="460,39,401,39,401,34,460,34"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="271,76,157,52,158,46,273,71"/>
+<area shape="rect" id="Node000006" href="$fixedwing_2autopilot__static_8c.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course." alt="" coords="33,73,160,98"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="272,88,160,88,160,83,272,83"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="247,39,188,39,188,34,247,34"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="257,55,158,76,157,70,256,49"/>
+<area shape="rect" id="Node000009" href="$rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897" title="Register functions." alt="" coords="482,125,647,150"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="734,150,647,145,648,140,734,145"/>
+<area shape="rect" id="Node000010" href="$rotorcraft_2navigation_8c.html#a6db8dffd444086b98f7efd0cb97d3aae" title="Registering functions." alt="" coords="482,226,647,252"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="744,171,599,229,597,224,742,166"/>
+<area shape="rect" id="Node000012" href="$nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="260,176,401,201"/>
+<area shape="poly" id="edge16_Node000008_Node000012" title=" " alt="" coords="740,137,699,124,656,115,564,103,524,105,474,115,438,127,404,144,351,178,348,173,401,139,436,122,473,110,523,100,564,98,656,110,701,119,742,131"/>
+<area shape="rect" id="Node000011" href="$nav__rotorcraft__hybrid_8c.html#ab0f5b29a3e6700f427eb6f9f6ddea67a" title="Init and register nav functions." alt="" coords="236,276,425,301"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="491,257,392,278,391,273,490,252"/>
+<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="491,226,389,204,391,198,492,221"/>
+<area shape="rect" id="Node000013" href="$nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="273,401,388,426"/>
+<area shape="poly" id="edge15_Node000010_Node000013" title=" " alt="" coords="487,259,475,265,346,402,342,399,472,261,484,254"/>
+<area shape="poly" id="edge18_Node000014_Node000013" title=" " alt="" coords="734,472,614,477,543,475,473,467,410,450,358,429,360,424,412,445,474,462,544,470,614,472,734,466"/>
+<area shape="poly" id="edge20_Node000015_Node000011" title=" " alt="" coords="490,325,391,304,392,299,491,320"/>
+<area shape="poly" id="edge22_Node000016_Node000011" title=" " alt="" coords="484,291,425,291,425,286,484,286"/>
+<area shape="poly" id="edge24_Node000017_Node000009" title=" " alt="" coords="735,198,603,153,604,148,737,193"/>
+<area shape="poly" id="edge25_Node000017_Node000010" title=" " alt="" coords="732,222,648,232,647,227,731,216"/>
+<area shape="poly" id="edge26_Node000017_Node000012" title=" " alt="" coords="732,212,401,195,402,189,732,207"/>
+<area shape="poly" id="edge30_Node000018_Node000013" title=" " alt="" coords="732,394,388,413,388,408,731,389"/>
+<area shape="rect" id="Node000019" href="$nav__rover__base_8c.html#afd0e05357829985f3000d7456e66ef61" title=" " alt="" coords="524,426,605,452"/>
+<area shape="poly" id="edge28_Node000018_Node000019" title=" " alt="" coords="732,404,606,433,605,427,731,398"/>
+<area shape="poly" id="edge29_Node000019_Node000013" title=" " alt="" coords="510,436,388,423,388,417,510,431"/>
 </map>

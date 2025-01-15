@@ -1,10 +1,17 @@
 <map id="waypoint_set_xy_i" name="waypoint_set_xy_i">
-<area shape="rect" id="node1" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="5,56,148,83"/>
-<area shape="rect" id="node2" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="196,56,344,83"/>
-<area shape="rect" id="node3" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="398,5,541,32"/>
-<area shape="rect" id="node5" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="417,56,521,83"/>
-<area shape="rect" id="node8" href="$group__state__position.html#gaaf56e2d484fe8e197a63c30841db7186" title="Get the coordinate NED frame origin (int)" alt="" coords="392,107,547,133"/>
-<area shape="rect" id="node4" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="595,5,741,32"/>
-<area shape="rect" id="node6" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="614,56,722,83"/>
-<area shape="rect" id="node7" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="615,107,721,133"/>
+<area shape="rect" id="Node000001" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="5,55,148,80"/>
+<area shape="rect" id="Node000002" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="196,55,344,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,65,182,65,182,70,148,70"/>
+<area shape="rect" id="Node000003" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="398,5,541,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="321,52,403,31,405,37,323,57"/>
+<area shape="rect" id="Node000005" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="417,55,521,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="344,65,404,65,404,70,344,70"/>
+<area shape="rect" id="Node000008" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="392,104,547,129"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="323,77,405,98,403,103,321,83"/>
+<area shape="rect" id="Node000004" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="595,5,741,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="541,15,581,15,581,21,541,21"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="614,55,722,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="522,65,600,65,600,70,522,70"/>
+<area shape="rect" id="Node000007" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="615,104,721,129"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="522,77,604,98,602,103,520,83"/>
 </map>

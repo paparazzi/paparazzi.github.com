@@ -1,9 +1,15 @@
 <map id="setFromEperiod" name="setFromEperiod">
-<area shape="rect" id="node1" title="initialize from eperiod in microseconds" alt="" coords="5,31,129,57"/>
-<area shape="rect" id="node2" href="$dshot__erps_8c.html#acb22452fd87664b3cf9836dc1603b946" title="encode packet from eperiod" alt="" coords="177,5,308,32"/>
-<area shape="rect" id="node4" href="$dshot__erps_8c.html#a49ae5a3416bbaf67b53377240b2e9510" title="encode eperiod" alt="" coords="183,56,303,83"/>
-<area shape="rect" id="node3" href="$dshot__erps_8c.html#a45ebc0e26825bbe386f3922c1c2c1b87" title="calculate crc4" alt="" coords="391,5,440,32"/>
-<area shape="rect" id="node5" href="$dshot__erps_8c.html#a320ed69346de182d9fbd02bcc2f63204" title="encode eperiod to 20 bits GCR of grey value" alt="" coords="356,56,475,83"/>
-<area shape="rect" id="node6" href="$dshot__erps_8c.html#a3f05d92fdb2193219eff830087d541cc" title="encode 16 bit value to 20 bits GCR" alt="" coords="527,31,617,57"/>
-<area shape="rect" id="node7" href="$dshot__erps_8c.html#a90f045135c4e7930f330a14af57cc0fe" title="get grey binary value from natural binary" alt="" coords="523,81,621,108"/>
+<area shape="rect" id="Node000001" title="initialize from eperiod in microseconds" alt="" coords="5,31,129,56"/>
+<area shape="rect" id="Node000002" href="$dshot__erps_8c.html#acb22452fd87664b3cf9836dc1603b946" title="encode packet from eperiod" alt="" coords="177,5,308,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,32,163,27,164,32,130,37"/>
+<area shape="rect" id="Node000004" href="$dshot__erps_8c.html#a49ae5a3416bbaf67b53377240b2e9510" title="encode eperiod" alt="" coords="183,55,303,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,49,169,55,168,60,129,54"/>
+<area shape="rect" id="Node000003" href="$dshot__erps_8c.html#a45ebc0e26825bbe386f3922c1c2c1b87" title="calculate crc4" alt="" coords="391,5,440,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,15,377,15,377,21,308,21"/>
+<area shape="rect" id="Node000005" href="$dshot__erps_8c.html#a320ed69346de182d9fbd02bcc2f63204" title="encode eperiod to 20 bits GCR of grey value" alt="" coords="356,55,475,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="303,65,342,65,342,70,303,70"/>
+<area shape="rect" id="Node000006" href="$dshot__erps_8c.html#a3f05d92fdb2193219eff830087d541cc" title="encode 16 bit value to 20 bits GCR" alt="" coords="527,29,617,55"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="474,55,513,49,514,54,475,60"/>
+<area shape="rect" id="Node000007" href="$dshot__erps_8c.html#a90f045135c4e7930f330a14af57cc0fe" title="get grey binary value from natural binary" alt="" coords="523,79,621,104"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="475,74,509,79,509,84,474,79"/>
 </map>

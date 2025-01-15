@@ -4,7 +4,7 @@ var structmicrorl__t =
     [ "cmdline", "structmicrorl__t.html#a47fca889ee33f37bc2b28c2ef4c2bd6f", null ],
     [ "cursor", "structmicrorl__t.html#a9bcb0263e2569f03189f58de89029669", null ],
     [ "execute", "structmicrorl__t.html#a36a42f9b1789f76862ca253a4ab43ccc", null ],
-    [ "get_completion", "structmicrorl__t.html#af3096655b4d087f06a0f3d4efc85ff0c", null ],
+    [ "get_completion", "structmicrorl__t.html#a56fc92f37518e28ae9db2bf4a1dcead5", null ],
     [ "print", "structmicrorl__t.html#a822eb4301765cd1da243e5ff6151e487", null ],
     [ "prompt_str", "structmicrorl__t.html#a3625491a7903d6390eb7e3695e226464", null ],
     [ "ring_hist", "structmicrorl__t.html#a3fe2afffc2bdb16e168fcacdc192e5e2", null ],

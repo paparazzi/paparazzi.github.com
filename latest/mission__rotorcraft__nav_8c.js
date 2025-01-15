@@ -12,7 +12,5 @@ var mission__rotorcraft__nav_8c =
     [ "mission_wait_pattern", "mission__rotorcraft__nav_8c.html#a10c09d53a7656ca864dbde4d2d90ac5f", null ],
     [ "dt_navigation", "mission__rotorcraft__nav_8c.html#a92032860fee41019bb05444dec447451", null ],
     [ "last_mission_wp", "mission__rotorcraft__nav_8c.html#a1321a2dedf3de994e9385774ed7c2abb", null ],
-    [ "mission_wait_started", "mission__rotorcraft__nav_8c.html#af52e94b6fc7933932b718c6489d4a549", null ],
-    [ "mission_wait_time", "mission__rotorcraft__nav_8c.html#a18e5d2e22addab5db40e7b6088229a0b", null ],
-    [ "mission_wait_wp", "mission__rotorcraft__nav_8c.html#aedba4c29429aa444a63b6fa63b666016", null ]
+    [ "mission_wait_started", "mission__rotorcraft__nav_8c.html#af52e94b6fc7933932b718c6489d4a549", null ]
 ];

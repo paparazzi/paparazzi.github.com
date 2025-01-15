@@ -1,29 +1,58 @@
 <map id="cloud_sensor_callback" name="cloud_sensor_callback">
-<area shape="rect" id="node1" title="End median filter function." alt="" coords="5,216,173,243"/>
-<area shape="rect" id="node2" href="$cloud__sensor_8c.html#a2abc3b31244af775988e183ab759f232" title=" " alt="" coords="257,13,367,40"/>
-<area shape="rect" id="node3" href="$cloud__sensor_8c.html#a633cacb6d19e704b1fc12fc68afcb96a" title=" " alt="" coords="230,64,394,91"/>
-<area shape="rect" id="node6" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="485,241,591,268"/>
-<area shape="rect" id="node7" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="239,165,385,192"/>
-<area shape="rect" id="node8" href="$pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float)" alt="" coords="277,115,347,141"/>
-<area shape="rect" id="node10" href="$cloud__sensor_8c.html#a6210f5adad0e1806b71ce588993904bf" title=" " alt="" coords="221,368,403,395"/>
-<area shape="rect" id="node22" href="$cloud__sensor_8c.html#a270010d63bed51e78f15725f0337d66e" title=" " alt="" coords="267,317,357,344"/>
-<area shape="rect" id="node23" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float)." alt="" coords="227,431,397,457"/>
-<area shape="rect" id="node27" href="$pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float)." alt="" coords="267,267,357,293"/>
-<area shape="rect" id="node4" href="$cloud__sensor_8c.html#a3bff373772ac78e738dd26907cd44e5c" title="Median filter function." alt="" coords="458,5,618,32"/>
-<area shape="rect" id="node5" href="$low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="468,57,608,98"/>
-<area shape="rect" id="node9" href="$pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float)" alt="" coords="507,123,569,149"/>
-<area shape="rect" id="node11" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="458,364,618,391"/>
-<area shape="rect" id="node12" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="673,361,839,388"/>
-<area shape="rect" id="node13" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1119,332,1261,359"/>
-<area shape="rect" id="node15" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="891,361,1034,388"/>
-<area shape="rect" id="node16" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="911,260,1015,287"/>
-<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="911,412,1014,439"/>
-<area shape="rect" id="node14" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1341,332,1488,359"/>
-<area shape="rect" id="node17" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1136,271,1244,297"/>
-<area shape="rect" id="node18" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1137,220,1243,247"/>
-<area shape="rect" id="node20" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1087,404,1293,431"/>
-<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1120,455,1260,497"/>
-<area shape="rect" id="node24" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="451,456,625,483"/>
-<area shape="rect" id="node25" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="705,463,807,489"/>
-<area shape="rect" id="node26" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="887,513,1039,540"/>
+<area shape="rect" id="Node000001" title="End median filter function." alt="" coords="5,212,173,237"/>
+<area shape="rect" id="Node000002" href="$cloud__sensor_8c.html#a2abc3b31244af775988e183ab759f232" title=" " alt="" coords="257,13,367,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,211,111,178,138,134,175,87,220,48,243,36,245,41,223,52,179,91,143,137,116,180,99,213"/>
+<area shape="rect" id="Node000003" href="$cloud__sensor_8c.html#a633cacb6d19e704b1fc12fc68afcb96a" title=" " alt="" coords="230,63,394,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,210,146,155,181,124,220,97,233,91,235,95,223,102,184,128,150,159,102,214"/>
+<area shape="rect" id="Node000006" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="485,237,591,263"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="174,227,471,244,471,249,173,232"/>
+<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="239,161,385,187"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="146,209,242,187,243,192,147,214"/>
+<area shape="rect" id="Node000008" href="$pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float)" alt="" coords="277,112,347,137"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="107,210,157,178,220,146,262,132,264,137,222,151,160,183,110,214"/>
+<area shape="rect" id="Node000010" href="$cloud__sensor_8c.html#a6210f5adad0e1806b71ce588993904bf" title=" " alt="" coords="221,361,403,387"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="103,236,151,289,185,320,223,346,239,354,237,359,220,351,181,324,147,293,99,239"/>
+<area shape="rect" id="Node000022" href="$cloud__sensor_8c.html#a270010d63bed51e78f15725f0337d66e" title=" " alt="" coords="267,312,357,337"/>
+<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="111,235,161,266,222,297,255,308,254,313,220,302,158,270,108,240"/>
+<area shape="rect" id="Node000023" href="$group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="227,423,397,448"/>
+<area shape="poly" id="edge23_Node000001_Node000023" title=" " alt="" coords="99,236,145,310,181,356,223,396,256,415,254,420,220,400,177,359,140,313,95,239"/>
+<area shape="rect" id="Node000027" href="$pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float)." alt="" coords="267,263,357,288"/>
+<area shape="poly" id="edge28_Node000001_Node000027" title=" " alt="" coords="147,235,254,260,253,265,146,240"/>
+<area shape="rect" id="Node000004" href="$cloud__sensor_8c.html#a3bff373772ac78e738dd26907cd44e5c" title="Median filter function." alt="" coords="458,5,618,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="362,60,474,31,475,37,364,65"/>
+<area shape="rect" id="Node000005" href="$low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="468,55,608,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="395,73,454,73,454,78,395,78"/>
+<area shape="rect" id="Node000009" href="$pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float)" alt="" coords="507,120,569,145"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="348,123,493,128,493,134,348,129"/>
+<area shape="rect" id="Node000011" href="$group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="458,357,618,383"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="403,370,444,369,444,374,403,375"/>
+<area shape="rect" id="Node000012" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="673,355,839,380"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="618,366,660,366,660,371,618,372"/>
+<area shape="rect" id="Node000013" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1119,327,1261,352"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="810,352,886,339,1000,333,1105,333,1105,339,1001,338,887,345,811,357"/>
+<area shape="rect" id="Node000015" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="891,355,1034,380"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="839,365,878,365,878,370,839,370"/>
+<area shape="rect" id="Node000016" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="911,253,1015,279"/>
+<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="779,352,885,296,916,282,918,287,888,300,781,357"/>
+<area shape="rect" id="Node000019" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="911,404,1014,429"/>
+<area shape="poly" id="edge19_Node000012_Node000019" title=" " alt="" coords="810,377,899,399,897,404,809,383"/>
+<area shape="rect" id="Node000014" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1341,327,1488,352"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1262,337,1328,337,1328,342,1262,342"/>
+<area shape="poly" id="edge15_Node000015_Node000013" title=" " alt="" coords="1034,356,1105,347,1105,352,1035,361"/>
+<area shape="rect" id="Node000017" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1136,265,1244,291"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1015,266,1122,272,1122,277,1015,271"/>
+<area shape="rect" id="Node000018" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1137,216,1243,241"/>
+<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="1015,255,1123,237,1124,242,1015,260"/>
+<area shape="rect" id="Node000020" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1087,397,1293,423"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="1014,413,1073,411,1073,416,1014,418"/>
+<area shape="rect" id="Node000021" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1120,447,1260,487"/>
+<area shape="poly" id="edge21_Node000019_Node000021" title=" " alt="" coords="1015,425,1107,446,1106,451,1014,431"/>
+<area shape="rect" id="Node000024" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="451,448,625,473"/>
+<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="398,442,437,447,437,452,397,448"/>
+<area shape="rect" id="Node000025" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="705,455,807,480"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="626,461,691,463,691,468,626,466"/>
+<area shape="poly" id="edge27_Node000025_Node000021" title=" " alt="" coords="808,465,1106,465,1106,470,808,470"/>
+<area shape="rect" id="Node000026" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="887,505,1039,531"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="808,477,897,499,896,505,807,482"/>
+<area shape="poly" id="edge29_Node000027_Node000006" title=" " alt="" coords="357,268,471,255,472,260,358,273"/>
 </map>

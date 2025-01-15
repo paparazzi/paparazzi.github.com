@@ -1,17 +1,39 @@
 <map id="float_vect_smul" name="float_vect_smul">
-<area shape="rect" id="node1" title="o = a * s" alt="" coords="748,132,873,159"/>
-<area shape="rect" id="node2" href="$ins__ext__pose_8c.html#a1b3f39c61aed12b2d4bd10428442876d" title=" " alt="" coords="583,5,666,32"/>
-<area shape="rect" id="node4" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="563,56,686,83"/>
-<area shape="rect" id="node5" href="$pprz__rk__float_8h.html#adf59a02242f08eba730c793cd28fd826" title="First&#45;Order Runge&#45;Kutta." alt="" coords="549,107,700,133"/>
-<area shape="rect" id="node6" href="$pprz__rk__float_8h.html#a9c77effa76d4e4713cbc671a128afe61" title="Second&#45;Order Runge&#45;Kutta." alt="" coords="549,157,700,184"/>
-<area shape="rect" id="node7" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta." alt="" coords="549,208,700,235"/>
-<area shape="rect" id="node14" href="$trilateration_8c.html#a75efebbc2c0e7a954e0dde46bf4978d5" title="Init internal trilateration structures." alt="" coords="561,263,688,289"/>
-<area shape="rect" id="node3" href="$ins__ext__pose_8c.html#abbcffd26caf977ce3b016c01c6cba731" title=" " alt="" coords="383,5,462,32"/>
-<area shape="rect" id="node8" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="347,135,498,177"/>
-<area shape="rect" id="node11" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="351,201,494,242"/>
-<area shape="rect" id="node9" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="223,143,296,169"/>
-<area shape="rect" id="node10" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,143,175,169"/>
-<area shape="rect" id="node12" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="223,208,296,235"/>
-<area shape="rect" id="node13" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="19,201,161,242"/>
-<area shape="rect" id="node15" href="$dw1000__arduino_8c.html#a1d567be05d71df280c5ed392dc999b1f" title=" " alt="" coords="344,267,501,293"/>
+<area shape="rect" id="Node000001" title="o = a * s" alt="" coords="856,133,981,159"/>
+<area shape="rect" id="Node000002" href="$ins__ext__pose_8c.html#a1b3f39c61aed12b2d4bd10428442876d" title=" " alt="" coords="691,7,774,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="896,125,857,86,807,48,773,33,775,28,809,44,860,82,899,121"/>
+<area shape="rect" id="Node000004" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="671,59,794,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="879,130,807,98,775,87,777,82,809,93,881,125"/>
+<area shape="rect" id="Node000009" href="$pprz__rk__float_8h.html#adf59a02242f08eba730c793cd28fd826" title="First&#45;Order Runge&#45;Kutta." alt="" coords="657,108,808,133"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="842,138,808,134,809,128,843,133"/>
+<area shape="rect" id="Node000010" href="$pprz__rk__float_8h.html#a9c77effa76d4e4713cbc671a128afe61" title="Second&#45;Order Runge&#45;Kutta." alt="" coords="657,157,808,183"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="843,158,809,163,808,158,842,153"/>
+<area shape="rect" id="Node000011" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta." alt="" coords="657,207,808,232"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="879,167,809,196,774,209,772,204,807,192,876,162"/>
+<area shape="rect" id="Node000018" href="$trilateration_8c.html#a75efebbc2c0e7a954e0dde46bf4978d5" title="Init internal trilateration structures." alt="" coords="669,260,796,285"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="898,171,859,209,809,246,775,262,772,257,807,241,855,204,894,167"/>
+<area shape="rect" id="Node000003" href="$ins__ext__pose_8c.html#abbcffd26caf977ce3b016c01c6cba731" title=" " alt="" coords="491,5,570,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="678,22,570,21,570,16,678,16"/>
+<area shape="rect" id="Node000005" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="464,55,597,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="658,75,597,77,597,71,658,70"/>
+<area shape="rect" id="Node000006" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="256,14,389,54"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="450,62,389,50,390,45,451,57"/>
+<area shape="rect" id="Node000008" href="$stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="241,79,404,104"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="450,84,404,88,404,82,450,79"/>
+<area shape="rect" id="Node000007" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,21,193,47"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="242,37,193,37,193,31,242,31"/>
+<area shape="rect" id="Node000012" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="455,135,606,175"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="678,205,594,178,595,173,679,200"/>
+<area shape="rect" id="Node000015" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="459,199,602,239"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="643,222,602,222,602,217,643,217"/>
+<area shape="rect" id="Node000013" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="286,143,359,168"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="442,158,359,158,359,153,442,153"/>
+<area shape="rect" id="Node000014" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="15,143,184,168"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="272,158,184,158,184,153,272,153"/>
+<area shape="rect" id="Node000016" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="286,207,359,232"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="446,222,360,222,360,217,446,217"/>
+<area shape="rect" id="Node000017" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="28,199,171,239"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="272,222,171,222,171,217,272,217"/>
+<area shape="rect" id="Node000019" href="$dw1000__arduino_8c.html#a1d567be05d71df280c5ed392dc999b1f" title=" " alt="" coords="452,264,609,289"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="655,277,609,278,609,272,655,272"/>
 </map>

@@ -1,15 +1,27 @@
 <map id="sw/airborne/peripherals/mpu9250_regs.h" name="sw/airborne/peripherals/mpu9250_regs.h">
-<area shape="rect" id="node1" title="Register and address definitions for MPU&#45;9250." alt="" coords="298,5,473,47"/>
-<area shape="rect" id="node2" href="$mpu9250_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI)." alt="" coords="298,95,473,136"/>
-<area shape="rect" id="node3" href="$mpu9250_8c.html" title="MPU&#45;9250 driver common functions (I2C and SPI)." alt="" coords="99,184,274,225"/>
-<area shape="rect" id="node4" href="$mpu9250__i2c_8h.html" title="Driver for the MPU&#45;9250 using I2C." alt="" coords="298,184,473,225"/>
-<area shape="rect" id="node10" href="$mpu9250__spi_8h.html" title="Driver for the MPU&#45;9250 using SPI." alt="" coords="606,184,781,225"/>
-<area shape="rect" id="node5" href="$imu__mpu9250_8h.html" title=" " alt="" coords="5,273,165,315"/>
-<area shape="rect" id="node7" href="$imu__mpu9250__i2c_8h.html" title="IMU driver for the MPU9250 using I2C." alt="" coords="189,273,376,315"/>
-<area shape="rect" id="node9" href="$mpu9250__i2c_8c.html" title="Driver for the MPU&#45;9250 using I2C." alt="" coords="401,273,575,315"/>
-<area shape="rect" id="node6" href="$imu__mpu9250_8c.html" title=" " alt="" coords="6,363,165,404"/>
-<area shape="rect" id="node8" href="$imu__mpu9250__i2c_8c.html" title="IMU driver for the MPU9250 using I2C." alt="" coords="190,363,375,404"/>
-<area shape="rect" id="node11" href="$imu__mpu9250__spi_8h.html" title="IMU driver for the MPU9250 using SPI." alt="" coords="600,273,787,315"/>
-<area shape="rect" id="node13" href="$mpu9250__spi_8c.html" title="Driver for the MPU&#45;9250 using SPI." alt="" coords="811,273,986,315"/>
-<area shape="rect" id="node12" href="$imu__mpu9250__spi_8c.html" title="IMU driver for the MPU9250 using SPI." alt="" coords="601,363,786,404"/>
+<area shape="rect" id="Node000001" title="Register and address definitions for MPU&#45;9250." alt="" coords="298,5,473,45"/>
+<area shape="rect" id="Node000002" href="$mpu9250_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI)." alt="" coords="298,93,473,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="388,59,388,93,383,93,383,59"/>
+<area shape="rect" id="Node000003" href="$mpu9250_8c.html" title="MPU&#45;9250 driver common functions (I2C and SPI)." alt="" coords="99,181,274,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,141,231,184,229,179,328,136"/>
+<area shape="rect" id="Node000004" href="$mpu9250__i2c_8h.html" title="Driver for the MPU&#45;9250 using I2C." alt="" coords="298,181,473,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,147,388,181,383,181,383,147"/>
+<area shape="rect" id="Node000010" href="$mpu9250__spi_8h.html" title="Driver for the MPU&#45;9250 using SPI." alt="" coords="606,181,781,221"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="467,134,627,179,625,184,465,140"/>
+<area shape="rect" id="Node000005" href="$imu__mpu9250_8h.html" title=" " alt="" coords="5,269,165,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="307,228,152,272,150,267,305,223"/>
+<area shape="rect" id="Node000007" href="$imu__mpu9250__i2c_8h.html" title="IMU driver for the MPU9250 using I2C." alt="" coords="189,269,376,309"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="354,232,307,271,304,267,350,228"/>
+<area shape="rect" id="Node000009" href="$mpu9250__i2c_8c.html" title="Driver for the MPU&#45;9250 using I2C." alt="" coords="401,269,575,309"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="420,228,467,267,464,271,417,232"/>
+<area shape="rect" id="Node000006" href="$imu__mpu9250_8c.html" title=" " alt="" coords="6,357,165,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="88,323,88,357,83,357,83,323"/>
+<area shape="rect" id="Node000008" href="$imu__mpu9250__i2c_8c.html" title="IMU driver for the MPU9250 using I2C." alt="" coords="190,357,375,397"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="285,323,285,357,280,357,280,323"/>
+<area shape="rect" id="Node000011" href="$imu__mpu9250__spi_8h.html" title="IMU driver for the MPU9250 using SPI." alt="" coords="600,269,787,309"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="696,235,696,269,691,269,691,235"/>
+<area shape="rect" id="Node000013" href="$mpu9250__spi_8c.html" title="Driver for the MPU&#45;9250 using SPI." alt="" coords="811,269,986,309"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="752,224,855,267,853,272,750,229"/>
+<area shape="rect" id="Node000012" href="$imu__mpu9250__spi_8c.html" title="IMU driver for the MPU9250 using SPI." alt="" coords="601,357,786,397"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="696,323,696,357,691,357,691,323"/>
 </map>

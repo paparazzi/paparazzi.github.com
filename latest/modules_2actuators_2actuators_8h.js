@@ -10,7 +10,7 @@ var modules_2actuators_2actuators_8h =
       [ "rpm", "modules_2actuators_2actuators_8h.html#a25edb2720f6e479a47a6bb74b10d0256", null ],
       [ "set", "modules_2actuators_2actuators_8h.html#a3d40a68fe99dde3cf4c85c1cb1d2b15b", null ]
     ] ],
-    [ "act_feedback_set_t", "modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t", [
+    [ "act_feedback_t::act_feedback_set_t", "modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t", [
       [ "position", "modules_2actuators_2actuators_8h.html#a28ef1daca4f83b94650f5e12ae0adac6", null ],
       [ "rpm", "modules_2actuators_2actuators_8h.html#a24f27beefe678936255666a7fe68d845", null ]
     ] ],

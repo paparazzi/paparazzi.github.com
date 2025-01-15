@@ -47,12 +47,6 @@ var modules_2datalink_2superbitrf_8h =
     [ "SUPERBITRF_SYNC_RECV_TIME", "modules_2datalink_2superbitrf_8h.html#ae6fdf2460ffaf5330e8a9fffd465d4f1", null ],
     [ "SUPERBITRF_TX_BUFFER_SIZE", "modules_2datalink_2superbitrf_8h.html#a57ebae970a132e79970b3214a70a959b", null ],
     [ "dsm_protocol", "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3", [
-      [ "DSM_DSM2_1", "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635", null ],
-      [ "DSM_DSM2_2", "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb", null ],
-      [ "DSM_DSM2P", "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902", null ],
-      [ "DSM_DSMXP", "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed", null ],
-      [ "DSM_DSMX_1", "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ad50815fefeb8e69fa4c70dd71edd41d7", null ],
-      [ "DSM_DSMX_2", "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a", null ],
       [ "DSM_DSM2_1", "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635", null ],
       [ "DSM_DSM2_2", "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb", null ],
       [ "DSM_DSM2P", "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902", null ],

@@ -1,8 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"ahrs__float__dcm_8h.html#af3805644883f041141e5f764ba1007ac":[12,0,1,0,6,2,9,0,10],
-"ahrs__float__dcm_8h.html#af6ae5229becb1414fbef533329174466":[12,0,1,0,6,2,9,14],
-"ahrs__float__dcm_8h.html#structAhrsFloatDCM":[12,0,1,0,6,2,9,0],
 "ahrs__float__dcm_8h_source.html":[12,0,1,0,6,2,9],
 "ahrs__float__dcm__algebra_8h.html":[12,0,1,0,6,2,10],
 "ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124":[12,0,1,0,6,2,10,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX6 =
 "ahrs__int__cmpl__quat_8h.html#ab86bb2cef3f3250caa731bf7444b82aa":[12,0,1,0,6,2,23,6],
 "ahrs__int__cmpl__quat_8h.html#ab914ddc258b412ca789fb4de68fb5180":[12,0,1,0,6,2,23,0,11],
 "ahrs__int__cmpl__quat_8h.html#ac7ceba3dd76d68435d752209115992d3":[12,0,1,0,6,2,23,7],
-"ahrs__int__cmpl__quat_8h.html#acff4e760ef1ce2ce022e71439a1e8b23":[12,0,1,0,6,2,23,0,23]
+"ahrs__int__cmpl__quat_8h.html#acff4e760ef1ce2ce022e71439a1e8b23":[12,0,1,0,6,2,23,0,23],
+"ahrs__int__cmpl__quat_8h.html#ae0197c423673a52d3c97ecd7c57c67cd":[12,0,1,0,6,2,23,14],
+"ahrs__int__cmpl__quat_8h.html#af157b638d627a07ce3b8c86436c0ce4c":[12,0,1,0,6,2,23,4],
+"ahrs__int__cmpl__quat_8h.html#af355d1305603e72b0689d18c84565bee":[12,0,1,0,6,2,23,0,6]
 };

@@ -1,15 +1,32 @@
 <map id="sw/airborne/peripherals/lsm6ds33_i2c.h" name="sw/airborne/peripherals/lsm6ds33_i2c.h">
-<area shape="rect" id="node1" title="Driver for the accelerometer and gyrometer LSM6DS33." alt="" coords="585,5,759,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="563,259,618,285"/>
-<area shape="rect" id="node3" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="467,95,647,121"/>
-<area shape="rect" id="node10" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="696,95,829,121"/>
-<area shape="rect" id="node12" href="$lsm6ds33_8h.html" title="LSM6DS33 accelerometer and gyrometer driver I2C interface." alt="" coords="269,95,443,121"/>
-<area shape="rect" id="node4" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="193,177,349,203"/>
-<area shape="rect" id="node8" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="571,177,725,203"/>
-<area shape="rect" id="node9" title=" " alt="" coords="425,177,495,203"/>
-<area shape="rect" id="node5" title=" " alt="" coords="329,259,391,285"/>
-<area shape="rect" id="node6" title=" " alt="" coords="142,259,213,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="237,259,305,285"/>
-<area shape="rect" id="node11" title=" " alt="" coords="800,177,968,203"/>
-<area shape="rect" id="node13" href="$lsm6ds33__regs_8h.html" title="Register defs for ST LSM6DS33 3D accelerometer and gyroscope." alt="" coords="5,169,168,211"/>
+<area shape="rect" id="Node000001" title="Driver for the accelerometer and gyrometer LSM6DS33." alt="" coords="585,5,759,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="563,255,618,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="760,41,853,65,900,81,941,101,974,123,994,148,999,162,999,177,993,193,982,209,957,226,920,240,875,251,823,258,718,267,632,269,632,264,718,261,823,253,874,246,919,235,955,222,978,205,988,190,993,176,994,163,990,151,970,127,938,105,897,86,852,70,759,46"/>
+<area shape="rect" id="Node000003" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="467,93,647,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="646,48,587,88,584,83,643,43"/>
+<area shape="rect" id="Node000010" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="696,93,829,119"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="696,44,741,82,737,86,692,48"/>
+<area shape="rect" id="Node000012" href="$lsm6ds33_8h.html" title="LSM6DS33 accelerometer and gyrometer driver I2C interface." alt="" coords="269,93,443,119"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="597,48,416,93,415,87,596,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="559,119,557,158,563,206,578,242,573,244,557,207,552,159,553,119"/>
+<area shape="rect" id="Node000004" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="193,174,349,199"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="516,121,326,173,325,168,515,116"/>
+<area shape="rect" id="Node000008" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="571,174,725,199"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="572,117,626,163,623,167,569,121"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="425,174,495,199"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="545,121,487,167,483,163,541,117"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="318,197,550,253,549,259,317,202"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="329,255,391,280"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="286,198,338,244,335,248,282,202"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="142,255,213,280"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="259,202,203,248,200,244,255,197"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="237,255,305,280"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="273,200,273,241,268,241,268,200"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="642,201,609,245,605,242,637,198"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="766,120,761,162,753,186,739,208,716,229,688,245,632,262,631,257,686,240,713,225,735,205,748,184,756,161,760,119"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="800,174,968,199"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="782,117,856,164,853,169,779,121"/>
+<area shape="poly" id="edge16_Node000012_Node000002" title=" " alt="" coords="362,118,380,160,396,184,415,205,447,225,483,241,550,258,549,263,481,246,445,230,412,209,391,187,376,163,357,120"/>
+<area shape="rect" id="Node000013" href="$lsm6ds33__regs_8h.html" title="Register defs for ST LSM6DS33 3D accelerometer and gyroscope." alt="" coords="5,167,168,207"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="318,121,165,165,164,160,316,116"/>
 </map>

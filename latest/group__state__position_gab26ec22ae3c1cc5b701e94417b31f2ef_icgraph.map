@@ -1,19 +1,56 @@
 <map id="stateSetLocalUtmOrigin_f" name="stateSetLocalUtmOrigin_f">
-<area shape="rect" id="node1" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="860,355,1049,381"/>
-<area shape="rect" id="node2" href="$ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="5,532,135,559"/>
-<area shape="rect" id="node3" href="$ins__float__invariant_8c.html#a337aa9b464c923af97d19ec0bfdb6f02" title=" " alt="" coords="379,125,550,152"/>
-<area shape="rect" id="node5" href="$ins__float__invariant_8c.html#a0de87ebf8474ef66ec575a76f5dc9e48" title=" " alt="" coords="637,173,779,214"/>
-<area shape="rect" id="node7" href="$ins__float__invariant_8c.html#ae44b89c28e32ae0729c4712350b02d11" title=" " alt="" coords="637,238,779,279"/>
-<area shape="rect" id="node8" href="$ins__gps__passthrough__utm_8c.html#a65b4389487e1468dd9245eacf2ce07b3" title=" " alt="" coords="615,304,801,331"/>
-<area shape="rect" id="node9" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="604,355,812,381"/>
-<area shape="rect" id="node10" href="$ins__xsens700_8c.html#a64e4b82474cd276233aa574b26c41443" title=" " alt="" coords="639,405,777,432"/>
-<area shape="rect" id="node11" href="$ins__xsens_8c.html#a20c9835f49df2ea11e85e95c53d8ab2c" title=" " alt="" coords="651,456,765,483"/>
-<area shape="rect" id="node12" href="$common__nav_8c.html#a9147dda4ed788fcde6cbb065e304e037" title="Reset the UTM zone to current GPS fix." alt="" coords="629,507,787,533"/>
-<area shape="rect" id="node13" href="$ins__alt__float_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="668,557,748,584"/>
-<area shape="rect" id="node17" href="$ins__alt__float_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="640,608,776,635"/>
-<area shape="rect" id="node4" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="183,147,325,189"/>
-<area shape="rect" id="node6" href="$ins__float__invariant__wrapper_8c.html#a7073ffd305497faea455dff249d36950" title=" " alt="" coords="426,180,503,207"/>
-<area shape="rect" id="node14" href="$ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title=" " alt="" coords="373,532,556,559"/>
-<area shape="rect" id="node16" href="$ins__alt__float_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="426,583,503,609"/>
-<area shape="rect" id="node15" href="$ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="221,532,287,559"/>
+<area shape="rect" id="Node000001" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="875,364,1064,390"/>
+<area shape="rect" id="Node000002" href="$ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="5,514,135,539"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="964,351,956,282,935,192,917,145,893,100,863,60,825,27,805,16,787,10,753,11,716,19,670,28,592,31,524,29,405,25,350,29,297,44,242,72,185,118,163,148,143,194,126,251,111,313,88,433,76,514,70,513,82,432,105,312,121,249,138,192,158,145,181,114,240,68,295,39,349,24,404,19,524,24,592,26,669,22,715,14,752,5,788,5,807,11,828,23,867,56,898,97,922,142,940,190,961,281,969,350"/>
+<area shape="rect" id="Node000003" href="$ins__float__invariant_8c.html#a337aa9b464c923af97d19ec0bfdb6f02" title=" " alt="" coords="445,162,615,187"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="953,353,934,318,905,277,869,238,825,206,774,185,720,174,666,169,616,169,616,163,666,164,721,168,776,180,828,201,872,234,909,274,938,315,958,351"/>
+<area shape="rect" id="Node000005" href="$ins__float__invariant_8c.html#a0de87ebf8474ef66ec575a76f5dc9e48" title=" " alt="" coords="677,101,819,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="955,353,935,312,906,262,869,209,825,162,798,143,801,139,828,158,873,206,910,259,939,310,959,350"/>
+<area shape="rect" id="Node000007" href="$ins__float__invariant_8c.html#ae44b89c28e32ae0729c4712350b02d11" title=" " alt="" coords="677,37,819,77"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="959,352,944,298,917,229,877,155,853,121,825,91,809,79,812,75,828,87,857,118,882,153,921,226,949,296,964,350"/>
+<area shape="rect" id="Node000008" href="$ins__gps__passthrough__utm_8c.html#a65b4389487e1468dd9245eacf2ce07b3" title=" " alt="" coords="193,364,380,390"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="941,400,890,429,859,443,827,453,755,465,680,467,606,462,534,452,408,422,320,392,321,387,410,417,535,447,606,457,680,462,754,460,826,448,857,438,887,424,938,395"/>
+<area shape="rect" id="Node000009" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="183,640,391,666"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="963,404,945,449,918,504,879,559,855,583,828,603,794,618,748,630,634,646,507,654,391,656,391,651,506,649,633,641,747,625,792,613,825,599,852,579,875,556,913,502,940,447,958,402"/>
+<area shape="rect" id="Node000010" href="$ins__xsens700_8c.html#a64e4b82474cd276233aa574b26c41443" title=" " alt="" coords="679,315,817,340"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="898,364,805,343,806,338,899,359"/>
+<area shape="rect" id="Node000011" href="$ins__xsens_8c.html#a20c9835f49df2ea11e85e95c53d8ab2c" title=" " alt="" coords="691,364,805,390"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="861,380,806,380,806,374,861,374"/>
+<area shape="rect" id="Node000012" href="$common__nav_8c.html#a9147dda4ed788fcde6cbb065e304e037" title="Reset the UTM zone to current GPS fix." alt="" coords="669,414,827,439"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="899,395,806,416,805,411,898,390"/>
+<area shape="rect" id="Node000013" href="$ins__alt__float_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="708,515,788,540"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="947,402,895,449,828,498,788,517,785,513,825,493,892,445,944,398"/>
+<area shape="rect" id="Node000017" href="$ins__gps__passthrough__utm_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="708,266,788,291"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="934,360,884,332,826,305,788,292,789,286,828,300,886,327,936,355"/>
+<area shape="rect" id="Node000019" href="$ins__mekf__wind__wrapper_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="708,715,788,740"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="967,404,954,465,929,546,911,589,888,632,861,671,828,706,810,718,789,725,787,720,807,713,825,702,857,668,884,629,906,587,924,544,949,464,962,403"/>
+<area shape="rect" id="Node000021" href="$ins__alt__float_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="680,564,816,590"/>
+<area shape="poly" id="edge26_Node000001_Node000021" title=" " alt="" coords="956,404,906,478,870,519,828,554,803,567,801,562,825,550,866,515,902,474,952,401"/>
+<area shape="rect" id="Node000022" href="$ins__gps__passthrough__utm_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="680,216,816,242"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="946,356,894,306,861,279,825,255,800,244,802,239,828,251,864,274,898,302,950,352"/>
+<area shape="rect" id="Node000023" href="$ins__mekf__wind__wrapper_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="680,666,816,691"/>
+<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="963,404,946,455,919,520,880,588,856,620,828,649,796,668,794,663,825,644,852,616,875,585,914,517,942,453,958,403"/>
+<area shape="rect" id="Node000004" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="215,128,358,168"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,166,358,158,358,153,431,161"/>
+<area shape="rect" id="Node000006" href="$ins__float__invariant__wrapper_8c.html#a7073ffd305497faea455dff249d36950" title=" " alt="" coords="491,108,569,134"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="662,124,569,124,569,118,662,118"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="478,129,359,143,358,137,477,124"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="667,84,570,112,568,107,665,78"/>
+<area shape="rect" id="Node000014" href="$ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title=" " alt="" coords="439,515,621,540"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="694,530,621,530,621,525,694,525"/>
+<area shape="rect" id="Node000016" href="$ins__alt__float_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="491,564,569,590"/>
+<area shape="poly" id="edge18_Node000013_Node000016" title=" " alt="" coords="695,542,570,571,568,566,694,537"/>
+<area shape="rect" id="Node000015" href="$ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="253,514,320,539"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="425,530,320,529,320,524,425,525"/>
+<area shape="poly" id="edge17_Node000015_Node000002" title=" " alt="" coords="240,529,135,529,135,524,240,524"/>
+<area shape="poly" id="edge19_Node000016_Node000002" title=" " alt="" coords="477,578,344,570,182,553,123,542,124,537,183,548,344,565,478,573"/>
+<area shape="rect" id="Node000018" href="$ins__gps__passthrough__utm_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="491,266,569,291"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="694,281,569,281,569,276,694,276"/>
+<area shape="poly" id="edge22_Node000018_Node000008" title=" " alt="" coords="486,299,320,367,318,362,484,294"/>
+<area shape="rect" id="Node000020" href="$ins__mekf__wind__wrapper_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="491,666,569,691"/>
+<area shape="poly" id="edge24_Node000019_Node000020" title=" " alt="" coords="694,718,568,690,570,684,695,713"/>
+<area shape="poly" id="edge25_Node000020_Node000009" title=" " alt="" coords="477,676,390,667,391,661,478,670"/>
+<area shape="poly" id="edge27_Node000021_Node000016" title=" " alt="" coords="666,580,569,580,569,574,666,574"/>
+<area shape="poly" id="edge29_Node000022_Node000018" title=" " alt="" coords="678,247,570,272,568,267,677,242"/>
+<area shape="poly" id="edge31_Node000023_Node000020" title=" " alt="" coords="666,681,569,681,569,676,666,676"/>
 </map>

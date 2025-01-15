@@ -1,7 +1,12 @@
 <map id="viewing_angle" name="viewing_angle">
-<area shape="rect" id="node1" title="calculates a uav&#39;s viewing angle on another uav" alt="" coords="636,31,752,57"/>
-<area shape="rect" id="node2" href="$nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs" alt="" coords="439,5,588,32"/>
-<area shape="rect" id="node5" href="$nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his" alt="" coords="441,56,586,83"/>
-<area shape="rect" id="node3" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="216,31,391,57"/>
-<area shape="rect" id="node4" href="$nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="5,31,168,57"/>
+<area shape="rect" id="Node000001" title="calculates a uav&#39;s viewing angle on another uav" alt="" coords="636,31,752,56"/>
+<area shape="rect" id="Node000002" href="$nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs" alt="" coords="439,5,588,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="622,36,588,31,589,26,623,31"/>
+<area shape="rect" id="Node000005" href="$nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his" alt="" coords="441,55,586,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="623,55,587,60,586,55,622,50"/>
+<area shape="rect" id="Node000003" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="216,31,391,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,31,391,35,391,30,424,26"/>
+<area shape="rect" id="Node000004" href="$nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="5,31,168,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="202,46,168,46,168,41,202,41"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="427,60,391,56,391,51,428,55"/>
 </map>

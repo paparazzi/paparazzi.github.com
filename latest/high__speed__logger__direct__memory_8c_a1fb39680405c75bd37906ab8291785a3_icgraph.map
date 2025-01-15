@@ -1,7 +1,13 @@
 <map id="memory_read_values" name="memory_read_values">
-<area shape="rect" id="node1" title="Function sending a request to read some values in memory." alt="" coords="671,78,833,105"/>
-<area shape="rect" id="node2" href="$high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="440,53,623,79"/>
-<area shape="rect" id="node3" href="$high__speed__logger__direct__memory_8c.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module." alt="" coords="5,5,193,47"/>
-<area shape="rect" id="node4" href="$high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART." alt="" coords="241,53,392,79"/>
-<area shape="rect" id="node5" href="$high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="7,82,192,109"/>
+<area shape="rect" id="Node000001" title="Function sending a request to read some values in memory." alt="" coords="671,77,833,102"/>
+<area shape="rect" id="Node000002" href="$high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="440,51,623,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="656,81,622,77,623,72,657,76"/>
+<area shape="rect" id="Node000003" href="$high__speed__logger__direct__memory_8c.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module." alt="" coords="5,5,193,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,51,392,41,289,33,193,29,194,24,290,28,392,36,458,46"/>
+<area shape="rect" id="Node000004" href="$high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART." alt="" coords="241,51,392,77"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="426,67,392,67,392,61,426,61"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="231,51,193,45,194,39,232,46"/>
+<area shape="rect" id="Node000005" href="$high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="7,81,192,106"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="228,79,192,83,192,78,227,73"/>
+<area shape="poly" id="edge6_Node000005_Node000001" title=" " alt="" coords="206,90,670,87,670,92,206,95"/>
 </map>

@@ -1,12 +1,25 @@
 <map id="start_new_log" name="start_new_log">
-<area shape="rect" id="node1" title="Function starting a new log." alt="" coords="5,56,119,83"/>
-<area shape="rect" id="node2" href="$high__speed__logger__direct__memory_8c.html#a1e06decc6f0910512368a830d768ff26" title="Function adding an array to the local buffer." alt="" coords="172,5,324,32"/>
-<area shape="rect" id="node3" href="$high__speed__logger__direct__memory_8c.html#aefaf4b09a745736700f62d961c79c5ec" title="Function adding a Byte to the local buffer." alt="" coords="400,9,547,36"/>
-<area shape="rect" id="node4" href="$high__speed__logger__direct__memory_8c.html#a6bc6a35c58f24903133a97a18a5b01bd" title="Function erasing the entire memory." alt="" coords="167,107,329,149"/>
-<area shape="rect" id="node5" href="$high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7" title="Function sending a request to erase the entire memory." alt="" coords="377,115,569,141"/>
-<area shape="rect" id="node8" href="$high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44" title="Function sending a request to fetch the status Byte of the memory." alt="" coords="386,64,561,91"/>
-<area shape="rect" id="node10" href="$high__speed__logger__direct__memory_8c.html#a94bf902b935af9c00b2d9ed517c5c42f" title="Function sending a request to set the writte enable flag in the memory." alt="" coords="396,165,551,192"/>
-<area shape="rect" id="node6" href="$high__speed__logger__direct__memory_8c.html#a84afd2348780c5f53d632f91ce2e5524" title="generic allback function for SPI transactions" alt="" coords="630,162,787,203"/>
-<area shape="rect" id="node7" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="662,111,755,137"/>
-<area shape="rect" id="node9" href="$high__speed__logger__direct__memory_8c.html#a0a415ac86c3fc2209521f1f9779e5f61" title="Callback function decrypting the status Byte of the memory." alt="" coords="617,60,800,87"/>
+<area shape="rect" id="Node000001" title="Function starting a new log." alt="" coords="5,56,119,81"/>
+<area shape="rect" id="Node000002" href="$high__speed__logger__direct__memory_8c.html#a1e06decc6f0910512368a830d768ff26" title="Function adding an array to the local buffer." alt="" coords="172,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,53,187,32,188,37,110,58"/>
+<area shape="rect" id="Node000003" href="$high__speed__logger__direct__memory_8c.html#aefaf4b09a745736700f62d961c79c5ec" title="Function adding a Byte to the local buffer." alt="" coords="400,9,547,35"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="119,61,329,39,386,32,387,37,330,45,119,66"/>
+<area shape="rect" id="Node000004" href="$high__speed__logger__direct__memory_8c.html#a6bc6a35c58f24903133a97a18a5b01bd" title="Function erasing the entire memory." alt="" coords="167,106,329,146"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="105,79,170,99,169,104,103,84"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="324,17,386,18,386,23,324,22"/>
+<area shape="rect" id="Node000005" href="$high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7" title="Function sending a request to erase the entire memory." alt="" coords="377,113,569,139"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="330,123,364,123,364,129,330,129"/>
+<area shape="rect" id="Node000008" href="$high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44" title="Function sending a request to fetch the status Byte of the memory." alt="" coords="386,64,561,89"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="329,106,401,90,402,95,330,111"/>
+<area shape="rect" id="Node000010" href="$high__speed__logger__direct__memory_8c.html#a94bf902b935af9c00b2d9ed517c5c42f" title="Function sending a request to set the writte enable flag in the memory." alt="" coords="396,163,551,188"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="330,141,402,157,401,162,329,146"/>
+<area shape="rect" id="Node000006" href="$high__speed__logger__direct__memory_8c.html#a84afd2348780c5f53d632f91ce2e5524" title="generic allback function for SPI transactions" alt="" coords="630,159,787,199"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="531,136,617,156,616,161,530,141"/>
+<area shape="rect" id="Node000007" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="662,109,755,135"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="570,122,648,120,649,126,570,127"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="541,87,649,108,648,113,540,92"/>
+<area shape="rect" id="Node000009" href="$high__speed__logger__direct__memory_8c.html#a0a415ac86c3fc2209521f1f9779e5f61" title="Callback function decrypting the status Byte of the memory." alt="" coords="617,60,800,85"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="561,73,604,72,604,77,561,78"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="551,174,616,175,616,180,551,179"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="530,160,648,133,649,138,531,165"/>
 </map>

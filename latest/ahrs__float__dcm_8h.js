@@ -31,8 +31,5 @@ var ahrs__float__dcm_8h =
     [ "ahrs_dcm_update_accel", "ahrs__float__dcm_8h.html#a9e8f7f86867387eac6081a8b23ea9533", null ],
     [ "ahrs_dcm_update_gps", "ahrs__float__dcm_8h.html#af6ae5229becb1414fbef533329174466", null ],
     [ "ahrs_dcm_update_mag", "ahrs__float__dcm_8h.html#a28f19eadfba62ddde0404977ec9b808a", null ],
-    [ "ahrs_dcm", "ahrs__float__dcm_8h.html#abe6f07e47a8e6e8f95b62082e009821a", null ],
-    [ "imu_health", "ahrs__float__dcm_8h.html#a0ccfe632303e7d147366d3d714b1537e", null ],
-    [ "renorm_blowup_count", "ahrs__float__dcm_8h.html#ab0d3aa1869bc70eb2b0190c3912690e7", null ],
-    [ "renorm_sqrt_count", "ahrs__float__dcm_8h.html#a1814455019292840abf28c91a27f2080", null ]
+    [ "ahrs_dcm", "ahrs__float__dcm_8h.html#abe6f07e47a8e6e8f95b62082e009821a", null ]
 ];

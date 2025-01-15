@@ -1,19 +1,42 @@
 <map id="sw/airborne/peripherals/hmc58xx.c" name="sw/airborne/peripherals/hmc58xx.c">
-<area shape="rect" id="node1" title="Driver for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="169,5,344,47"/>
-<area shape="rect" id="node2" href="$hmc58xx_8h.html" title=" " alt="" coords="171,95,342,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="250,348,305,375"/>
-<area shape="rect" id="node14" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="724,177,898,203"/>
-<area shape="rect" id="node4" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="90,177,223,203"/>
-<area shape="rect" id="node6" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="266,177,446,203"/>
-<area shape="rect" id="node13" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="470,169,629,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="72,266,240,293"/>
-<area shape="rect" id="node7" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="545,266,701,293"/>
-<area shape="rect" id="node11" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="316,266,469,293"/>
-<area shape="rect" id="node12" title=" " alt="" coords="725,266,796,293"/>
-<area shape="rect" id="node8" title=" " alt="" coords="501,348,564,375"/>
-<area shape="rect" id="node9" title=" " alt="" coords="588,348,658,375"/>
-<area shape="rect" id="node10" title=" " alt="" coords="682,348,750,375"/>
-<area shape="rect" id="node15" title=" " alt="" coords="820,266,906,293"/>
-<area shape="rect" id="node16" title=" " alt="" coords="930,266,1057,293"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1081,259,1242,300"/>
+<area shape="rect" id="Node000001" title="Driver for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="168,5,342,45"/>
+<area shape="rect" id="Node000002" href="$hmc58xx_8h.html" title=" " alt="" coords="170,93,340,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,46,258,79,252,79,252,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="249,343,304,368"/>
+<area shape="poly" id="edge23_Node000001_Node000003" title=" " alt="" coords="204,48,163,67,118,94,76,127,41,168,21,202,10,232,11,262,28,293,41,304,61,314,116,330,179,341,235,348,235,353,178,346,115,335,59,319,38,308,23,296,6,263,5,231,16,199,37,165,72,123,115,89,161,62,202,43"/>
+<area shape="rect" id="Node000014" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="723,174,896,199"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="321,43,758,168,756,173,319,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,121,121,139,98,152,78,169,51,199,35,230,32,245,33,260,39,276,49,293,61,303,79,312,128,328,236,347,235,352,127,333,77,317,58,307,45,296,34,279,28,262,27,245,30,228,47,196,74,165,95,148,119,134,169,116"/>
+<area shape="rect" id="Node000004" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="88,174,222,199"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="242,121,182,167,179,163,238,117"/>
+<area shape="rect" id="Node000006" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="265,174,445,199"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="271,117,331,163,328,167,268,121"/>
+<area shape="rect" id="Node000013" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="469,167,628,207"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="298,116,465,161,464,166,297,121"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="132,202,101,220,72,242,62,255,56,268,55,280,61,293,72,302,88,311,134,326,236,346,235,351,133,332,86,316,69,307,57,296,50,281,50,266,57,252,68,239,98,215,129,197"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="71,262,239,287"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="158,200,158,248,152,248,152,200"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="345,201,325,226,305,256,291,294,283,330,277,329,286,292,300,253,320,222,341,198"/>
+<area shape="rect" id="Node000007" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="544,262,700,287"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="392,197,574,255,572,260,390,202"/>
+<area shape="rect" id="Node000011" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="314,262,468,287"/>
+<area shape="poly" id="edge13_Node000006_Node000011" title=" " alt="" coords="362,198,383,248,378,250,357,201"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="724,262,794,287"/>
+<area shape="poly" id="edge15_Node000006_Node000012" title=" " alt="" coords="417,197,713,252,721,255,719,260,712,257,416,202"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="572,290,318,347,317,342,571,285"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="500,343,562,368"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="610,290,556,336,553,332,606,285"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="586,343,657,368"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="624,288,624,329,619,329,619,288"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="681,343,749,368"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="637,285,692,332,689,336,634,290"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="375,290,306,337,303,333,372,285"/>
+<area shape="poly" id="edge20_Node000014_Node000003" title=" " alt="" coords="723,202,630,222,580,238,533,257,518,266,508,276,497,287,481,297,439,315,395,330,318,349,317,344,394,325,437,310,479,292,494,283,504,273,515,262,531,252,579,233,628,217,722,197"/>
+<area shape="poly" id="edge19_Node000014_Node000012" title=" " alt="" coords="805,201,775,251,771,248,800,198"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="818,262,905,287"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="819,198,849,248,845,251,814,201"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="929,262,1056,287"/>
+<area shape="poly" id="edge21_Node000014_Node000016" title=" " alt="" coords="835,197,956,254,954,258,833,202"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1080,255,1241,295"/>
+<area shape="poly" id="edge22_Node000014_Node000017" title=" " alt="" coords="857,197,1071,249,1069,254,856,202"/>
 </map>

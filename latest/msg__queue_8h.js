@@ -26,5 +26,5 @@ var msg__queue_8h =
     [ "msgqueue_pop_timeout", "msg__queue_8h.html#a38dd61b3d9daa051032159c2473eb2cc", null ],
     [ "msgqueue_send", "msg__queue_8h.html#a6b457b8a24d51625e782035fe54622a7", null ],
     [ "msgqueue_send_timeout", "msg__queue_8h.html#aa9c85548b02609202975402ff7efcd64", null ],
-    [ "msgqueue_strerror", "msg__queue_8h.html#a02b60cd9d385e0df6f8baad94c6ba0e4", null ]
+    [ "msgqueue_strerror", "msg__queue_8h.html#a4ced6141b6f23e910e27ac508e917227", null ]
 ];

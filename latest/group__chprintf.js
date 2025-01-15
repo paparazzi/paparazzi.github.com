@@ -5,7 +5,7 @@ var group__chprintf =
       [ "destBuf", "group__chprintf.html#a6bee625095270dcc4ae17f343108ec6a", null ],
       [ "fmt", "group__chprintf.html#a747c94e3c3cc1476e9810800e1db053b", null ]
     ] ],
-    [ "synchronous_print_arg_t.__unnamed297__", "group__chprintf.html#unionsynchronous__print__arg__t_8____unnamed297____", [
+    [ "synchronous_print_arg_t.__unnamed298__", "group__chprintf.html#unionsynchronous__print__arg__t_8____unnamed298____", [
       [ "chp", "group__chprintf.html#a59fcb956ca6369b0e24a225d7e26c795", null ],
       [ "size", "group__chprintf.html#af7bd60b75b29d79b660a2859395c1a24", null ]
     ] ],
@@ -19,8 +19,8 @@ var group__chprintf =
     [ "chvsnprintf", "group__chprintf.html#ga561a2515db27520c8a995f2f2213aed4", null ],
     [ "directchprintf", "group__chprintf.html#ga741317a25ba4d8c7bcc132bd2ccabac1", null ],
     [ "directchvprintf", "group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d", null ],
-    [ "long_to_string_with_divisor", "group__chprintf.html#ga083a2bdcd3b67b7be94900e8affc57b8", null ],
-    [ "ltoa", "group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e", null ],
+    [ "long_to_string_with_divisor", "group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450", null ],
+    [ "ltoa", "group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9", null ],
     [ "serialPrint", "group__chprintf.html#gad8b1843bc1a848126a7633f4aa1add5c", null ],
     [ "smchsnprintf", "group__chprintf.html#ga508e06db6508345345c73a5523343bed", null ],
     [ "smchvsnprintf", "group__chprintf.html#ga9199aabf4df69c18ea85d1030d44ce68", null ],

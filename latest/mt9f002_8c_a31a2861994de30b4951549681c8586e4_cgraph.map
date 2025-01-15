@@ -1,7 +1,11 @@
 <map id="mt9f002_parallel_stage2" name="mt9f002_parallel_stage2">
-<area shape="rect" id="node1" title="Configure stage 2 for parallel connection." alt="" coords="5,31,189,57"/>
-<area shape="rect" id="node2" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="237,31,320,57"/>
-<area shape="rect" id="node3" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="368,31,533,57"/>
-<area shape="rect" id="node4" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="581,5,727,32"/>
-<area shape="rect" id="node5" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="607,56,701,83"/>
+<area shape="rect" id="Node000001" title="Configure stage 2 for parallel connection." alt="" coords="5,31,189,56"/>
+<area shape="rect" id="Node000002" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="237,31,320,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,41,224,41,224,46,190,46"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="368,31,533,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,41,354,41,354,46,320,46"/>
+<area shape="rect" id="Node000004" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="581,5,727,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="533,30,567,26,568,31,534,36"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="607,55,701,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="534,50,593,58,593,63,533,56"/>
 </map>

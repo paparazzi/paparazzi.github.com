@@ -23,7 +23,7 @@ var v4l2_8h =
     [ "v4l2_image_free", "v4l2_8h.html#a865e07dd33caf3bb71a3b90834b308c3", null ],
     [ "v4l2_image_get", "v4l2_8h.html#a5f8eea1ef0eb13865ad6753e02f4a283", null ],
     [ "v4l2_image_get_nonblock", "v4l2_8h.html#ae6f6d19b986aa3a1a1ba6c5e4390b8e1", null ],
-    [ "v4l2_init", "v4l2_8h.html#a1f683e79a4639d4e189f059f6c4ae268", null ],
+    [ "v4l2_init", "v4l2_8h.html#acd57dca0b131257ddea718336575a65f", null ],
     [ "v4l2_init_subdev", "v4l2_8h.html#a3798643b3e99cd32ef724fc928d92e51", null ],
     [ "v4l2_start_capture", "v4l2_8h.html#a4efccaca5c6c386d09e315ccfcaa3581", null ],
     [ "v4l2_stop_capture", "v4l2_8h.html#ac793d6bd02a9c7b138146a848bf93bea", null ]

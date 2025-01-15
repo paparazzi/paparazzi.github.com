@@ -14,7 +14,7 @@ var cc2500__smartport_8c =
     [ "initSmartPortSensors", "cc2500__smartport_8c.html#af96c106b53f8cc26baeb4bb27cc5e5f9", null ],
     [ "initSmartPortTelemetryExternal", "cc2500__smartport_8c.html#a25c89eefa21629f2aa404974b8bd67ad", null ],
     [ "processSmartPortTelemetry", "cc2500__smartport_8c.html#acf3a8d1078f5695a69662408caf80a1c", null ],
-    [ "smartPortDataReceive", "cc2500__smartport_8c.html#a34331e4923adaea6cc4633276350fb47", null ],
+    [ "smartPortDataReceive", "cc2500__smartport_8c.html#a638b36c094a745e53a80e56d5c93c146", null ],
     [ "smartPortSendPackage", "cc2500__smartport_8c.html#ac88c2c7956aedb0ac01db630bc714dce", null ],
     [ "frSkyDataIdTable", "cc2500__smartport_8c.html#a2ad1ff1cc261c1961bf8d4f37846f580", null ],
     [ "frSkyDataIdTableInfo", "cc2500__smartport_8c.html#a1e27caac04195f159dcd9e65ac2a8ca3", null ],

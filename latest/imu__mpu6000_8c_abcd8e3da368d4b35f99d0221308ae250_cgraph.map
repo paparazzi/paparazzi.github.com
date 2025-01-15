@@ -1,13 +1,25 @@
 <map id="imu_mpu_spi_init" name="imu_mpu_spi_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,143,133"/>
-<area shape="rect" id="node2" href="$imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="191,56,365,83"/>
-<area shape="rect" id="node8" href="$imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="193,107,363,133"/>
-<area shape="rect" id="node10" href="$mpu60x0__spi_8c.html#a85fc80c0c35e284d326d17fca254620c" title=" " alt="" coords="209,187,347,213"/>
-<area shape="rect" id="node3" href="$imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="437,5,553,32"/>
-<area shape="rect" id="node4" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="427,107,563,133"/>
-<area shape="rect" id="node5" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="414,56,575,83"/>
-<area shape="rect" id="node6" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="624,56,791,83"/>
-<area shape="rect" id="node7" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="839,56,988,83"/>
-<area shape="rect" id="node9" href="$imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="439,157,550,184"/>
-<area shape="rect" id="node11" href="$mpu60x0_8c.html#a18e7053e4b28374edb52fcad20e78096" title=" " alt="" coords="413,209,576,250"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,143,129"/>
+<area shape="rect" id="Node000002" href="$imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="191,55,365,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,101,211,81,212,86,128,107"/>
+<area shape="rect" id="Node000008" href="$imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="193,104,363,129"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="143,114,179,114,179,119,143,119"/>
+<area shape="rect" id="Node000010" href="$mpu60x0__spi_8c.html#a85fc80c0c35e284d326d17fca254620c" title=" " alt="" coords="209,181,347,207"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="110,127,232,174,230,179,108,132"/>
+<area shape="rect" id="Node000003" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="437,5,553,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,52,424,31,426,36,335,57"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="427,104,563,129"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="335,77,426,98,424,104,334,83"/>
+<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="414,55,575,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="366,65,400,65,400,70,366,70"/>
+<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="624,55,791,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="575,65,610,65,610,70,575,70"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="839,55,988,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="791,65,825,65,825,70,791,70"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="364,114,413,114,413,119,364,119"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="334,101,424,80,426,86,335,107"/>
+<area shape="rect" id="Node000009" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="439,153,550,179"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="335,127,427,148,425,153,334,132"/>
+<area shape="rect" id="Node000011" href="$mpu60x0_8c.html#a18e7053e4b28374edb52fcad20e78096" title=" " alt="" coords="413,203,576,243"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="347,201,400,208,399,213,347,206"/>
 </map>

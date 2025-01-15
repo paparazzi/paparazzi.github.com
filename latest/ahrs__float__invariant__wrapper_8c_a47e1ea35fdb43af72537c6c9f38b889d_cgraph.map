@@ -1,26 +1,50 @@
 <map id="gyro_cb" name="gyro_cb">
-<area shape="rect" id="node1" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="5,541,79,568"/>
-<area shape="rect" id="node2" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="149,353,300,394"/>
-<area shape="rect" id="node19" href="$ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="127,505,323,546"/>
-<area shape="rect" id="node23" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="147,571,303,597"/>
-<area shape="rect" id="node24" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="149,621,301,648"/>
-<area shape="rect" id="node3" href="$ahrs__float__invariant_8c.html#a87598eb88ed06febda6397f5fbb5c937" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error )" alt="" coords="415,208,518,235"/>
-<area shape="rect" id="node6" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="389,360,544,387"/>
-<area shape="rect" id="node7" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="387,411,546,437"/>
-<area shape="rect" id="node9" href="$ahrs__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title=" " alt="" coords="393,461,541,488"/>
-<area shape="rect" id="node11" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="403,107,531,133"/>
-<area shape="rect" id="node15" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta." alt="" coords="391,309,542,336"/>
-<area shape="rect" id="node4" href="$group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title=" " alt="" coords="627,208,759,235"/>
-<area shape="rect" id="node5" href="$group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="627,157,759,184"/>
-<area shape="rect" id="node8" href="$group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="629,411,757,437"/>
-<area shape="rect" id="node10" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="621,461,765,488"/>
-<area shape="rect" id="node12" href="$group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="613,107,773,133"/>
-<area shape="rect" id="node13" href="$ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion." alt="" coords="611,5,775,32"/>
-<area shape="rect" id="node14" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="632,56,753,83"/>
-<area shape="rect" id="node16" href="$group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="634,259,751,285"/>
-<area shape="rect" id="node17" href="$group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="630,309,755,336"/>
-<area shape="rect" id="node18" href="$group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="632,360,753,387"/>
-<area shape="rect" id="node20" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="387,512,546,539"/>
-<area shape="rect" id="node21" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="371,563,563,589"/>
-<area shape="rect" id="node22" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="614,563,771,589"/>
+<area shape="rect" id="Node000001" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="5,528,79,553"/>
+<area shape="rect" id="Node000002" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="149,343,300,383"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,526,191,392,194,396,58,530"/>
+<area shape="rect" id="Node000019" href="$ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="127,491,323,531"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="78,532,113,527,114,532,79,538"/>
+<area shape="rect" id="Node000023" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="147,556,303,581"/>
+<area shape="poly" id="edge23_Node000001_Node000023" title=" " alt="" coords="79,544,134,552,133,557,78,549"/>
+<area shape="rect" id="Node000024" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="149,605,301,631"/>
+<area shape="poly" id="edge24_Node000001_Node000024" title=" " alt="" coords="61,551,91,572,128,592,147,599,145,604,126,596,88,576,58,556"/>
+<area shape="rect" id="Node000003" href="$ahrs__float__invariant_8c.html#a87598eb88ed06febda6397f5fbb5c937" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error )" alt="" coords="415,203,518,228"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="257,341,431,233,434,238,260,345"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="389,351,544,376"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="300,361,376,361,376,366,300,366"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="387,400,546,425"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="301,376,391,395,390,400,300,381"/>
+<area shape="rect" id="Node000009" href="$ahrs__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title=" " alt="" coords="393,449,541,475"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="262,381,313,408,372,434,398,443,396,448,370,439,311,413,259,386"/>
+<area shape="rect" id="Node000011" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="403,104,531,129"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="239,341,293,271,369,188,434,135,437,139,372,192,297,274,243,345"/>
+<area shape="rect" id="Node000015" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta." alt="" coords="391,301,542,327"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="300,345,390,327,391,332,301,351"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title=" " alt="" coords="627,203,759,228"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="518,213,613,213,613,218,518,218"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="627,153,759,179"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="518,202,620,179,621,184,519,207"/>
+<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="629,400,757,425"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="546,410,615,410,615,415,546,415"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="621,449,765,475"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="541,459,606,459,606,465,541,465"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="526,127,621,148,620,153,525,132"/>
+<area shape="rect" id="Node000012" href="$group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="613,104,773,129"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="531,114,599,114,599,119,531,119"/>
+<area shape="rect" id="Node000013" href="$ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion." alt="" coords="611,5,775,31"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="488,102,542,71,610,40,629,32,631,37,612,44,545,76,490,106"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="632,55,753,80"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="525,101,620,80,621,86,526,107"/>
+<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="634,252,751,277"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="525,299,620,278,621,283,526,304"/>
+<area shape="rect" id="Node000017" href="$group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="630,301,755,327"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="542,311,617,311,617,317,542,317"/>
+<area shape="rect" id="Node000018" href="$group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="632,351,753,376"/>
+<area shape="poly" id="edge18_Node000015_Node000018" title=" " alt="" coords="526,324,621,345,620,350,525,329"/>
+<area shape="rect" id="Node000020" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="387,499,546,524"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="323,509,374,509,374,514,323,514"/>
+<area shape="rect" id="Node000021" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="371,548,563,573"/>
+<area shape="poly" id="edge21_Node000019_Node000021" title=" " alt="" coords="324,529,391,543,389,548,322,534"/>
+<area shape="rect" id="Node000022" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="614,548,771,573"/>
+<area shape="poly" id="edge22_Node000021_Node000022" title=" " alt="" coords="563,558,600,558,600,563,563,563"/>
 </map>

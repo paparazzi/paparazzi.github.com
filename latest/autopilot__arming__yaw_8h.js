@@ -5,10 +5,6 @@ var autopilot__arming__yaw_8h =
     [ "YAW_MUST_BE_CENTERED", "autopilot__arming__yaw_8h.html#a1420d02e762bc62f5c261705752df798", null ],
     [ "YAW_MUST_BE_PUSHED", "autopilot__arming__yaw_8h.html#a985af152303a23c900222c385d70bbc0", null ],
     [ "arming_state", "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e", [
-      [ "STATE_UNINIT", "autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea0075eeb0f3377fa2dad84d3656ab8c6d", null ],
-      [ "STATE_WAITING", "autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ead79a43d70eda33549c20a9f8490e44c1", null ],
-      [ "STATE_STARTABLE", "autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea24f6e80cf467a5b4794d30a177066352", null ],
-      [ "STATE_MOTORS_ON", "autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea5d9b03165b6d8bb49b125baa065bdc39", null ],
       [ "STATUS_INITIALISE_RC", "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3", null ],
       [ "STATUS_MOTORS_RC_KILLED", "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea12b582789a09bb23f5ee317a1b70ee62", null ],
       [ "STATUS_MOTORS_AUTOMATICALLY_OFF", "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea2303f080c0faeba87f42132d8f1ee8e3", null ],

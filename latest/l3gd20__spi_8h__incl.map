@@ -1,19 +1,41 @@
 <map id="sw/airborne/peripherals/l3gd20_spi.h" name="sw/airborne/peripherals/l3gd20_spi.h">
-<area shape="rect" id="node1" title="Driver for L3GD20 3&#45;axis gyroscope from ST using SPI." alt="" coords="437,5,612,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="401,266,456,293"/>
-<area shape="rect" id="node3" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="255,95,435,121"/>
-<area shape="rect" id="node10" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="569,95,702,121"/>
-<area shape="rect" id="node16" href="$l3gd20_8h.html" title="ST L3GD20 3&#45;axis gyroscope driver common interface (I2C and SPI)." alt="" coords="861,95,1015,121"/>
-<area shape="rect" id="node4" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="51,177,207,203"/>
-<area shape="rect" id="node8" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="231,177,384,203"/>
-<area shape="rect" id="node9" title=" " alt="" coords="555,266,625,293"/>
-<area shape="rect" id="node5" title=" " alt="" coords="97,266,160,293"/>
-<area shape="rect" id="node6" title=" " alt="" coords="184,266,255,293"/>
-<area shape="rect" id="node7" title=" " alt="" coords="5,266,73,293"/>
-<area shape="rect" id="node11" title=" " alt="" coords="611,177,779,203"/>
-<area shape="rect" id="node12" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="803,177,977,203"/>
-<area shape="rect" id="node13" title=" " alt="" coords="716,266,803,293"/>
-<area shape="rect" id="node14" title=" " alt="" coords="827,266,953,293"/>
-<area shape="rect" id="node15" title=" " alt="" coords="977,259,1139,300"/>
-<area shape="rect" id="node17" href="$l3gd20__regs_8h.html" title="ST L3GD20 3&#45;axis gyroscope register definitions." alt="" coords="1001,169,1144,211"/>
+<area shape="rect" id="Node000001" title="Driver for L3GD20 3&#45;axis gyroscope from ST using SPI." alt="" coords="437,5,612,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="401,262,456,287"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,47,440,250,435,248,515,45"/>
+<area shape="rect" id="Node000003" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="255,93,435,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="483,48,385,90,383,85,480,43"/>
+<area shape="rect" id="Node000010" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="569,93,702,119"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="553,43,609,83,606,87,550,48"/>
+<area shape="rect" id="Node000016" href="$l3gd20_8h.html" title="ST L3GD20 3&#45;axis gyroscope driver common interface (I2C and SPI)." alt="" coords="861,93,1015,119"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="613,41,865,88,864,93,612,46"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="359,117,379,138,398,165,416,208,426,247,421,249,411,210,393,168,375,142,355,121"/>
+<area shape="rect" id="Node000004" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="51,174,207,199"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="314,121,174,172,172,167,312,116"/>
+<area shape="rect" id="Node000008" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="231,174,384,199"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="342,120,321,163,316,160,337,118"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="555,262,625,287"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="363,117,563,252,560,256,360,121"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="170,197,389,259,387,264,168,202"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="97,262,160,287"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="131,200,131,248,126,248,126,200"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="184,262,255,287"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="143,198,198,250,195,254,139,201"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,262,73,287"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="118,201,64,254,60,250,115,198"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="325,197,402,251,399,256,322,202"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="623,121,455,255,452,251,619,117"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="611,174,779,199"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="646,117,680,161,676,164,642,120"/>
+<area shape="rect" id="Node000012" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="803,174,977,199"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="673,116,841,167,839,172,672,121"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="830,202,792,209,470,268,469,263,791,204,830,197"/>
+<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="850,202,639,262,638,257,849,197"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="716,262,803,287"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="874,202,790,257,787,252,871,197"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="827,262,953,287"/>
+<area shape="poly" id="edge19_Node000012_Node000014" title=" " alt="" coords="893,200,893,248,887,248,887,200"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="977,255,1139,295"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="914,197,1010,246,1008,251,911,202"/>
+<area shape="rect" id="Node000017" href="$l3gd20__regs_8h.html" title="ST L3GD20 3&#45;axis gyroscope register definitions." alt="" coords="1001,167,1144,207"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="959,117,1030,157,1027,162,957,121"/>
 </map>

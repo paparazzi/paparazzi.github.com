@@ -3,7 +3,7 @@ var msg__queue_8c =
     [ "MsgPtrLen", "msg__queue_8c.html#unionMsgPtrLen", [
       [ "msg_ptr_len", "msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519", null ]
     ] ],
-    [ "MsgPtrLen.__unnamed295__", "msg__queue_8c.html#structMsgPtrLen_8____unnamed295____", [
+    [ "MsgPtrLen.__unnamed296__", "msg__queue_8c.html#structMsgPtrLen_8____unnamed296____", [
       [ "len", "msg__queue_8c.html#af5a8e923f8cd24b56b3bab32358cc58a", null ],
       [ "ptrOfst", "msg__queue_8c.html#a155d9a6df1242df7a3fe0039e1a10625", null ]
     ] ],
@@ -17,6 +17,6 @@ var msg__queue_8c =
     [ "msgqueue_pop_timeout", "msg__queue_8c.html#a38dd61b3d9daa051032159c2473eb2cc", null ],
     [ "msgqueue_send", "msg__queue_8c.html#a6b457b8a24d51625e782035fe54622a7", null ],
     [ "msgqueue_send_timeout", "msg__queue_8c.html#aa9c85548b02609202975402ff7efcd64", null ],
-    [ "msgqueue_strerror", "msg__queue_8c.html#a458fcde3b3a9e960d56fdc25b71a3c0f", null ],
+    [ "msgqueue_strerror", "msg__queue_8c.html#ab5b801aea90f9fe4fb3eb7964a899e79", null ],
     [ "_strerror", "msg__queue_8c.html#ab387da4a277d7554ae465bb937203ca2", null ]
 ];

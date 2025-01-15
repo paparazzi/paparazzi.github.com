@@ -42,15 +42,7 @@ var nav__survey__hybrid_8c =
       [ "Init", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
       [ "Entry", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
       [ "Sweep", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],
-      [ "Turn", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a0c1b9bb2e704447170944d00fcca57a3", null ],
-      [ "Init", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
-      [ "Entry", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
-      [ "Sweep", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],
-      [ "SweepCircle", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c", null ],
-      [ "Init", "nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
-      [ "Entry", "nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
-      [ "Sweep", "nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],
-      [ "Turn", "nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a0c1b9bb2e704447170944d00fcca57a3", null ]
+      [ "Turn", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a0c1b9bb2e704447170944d00fcca57a3", null ]
     ] ],
     [ "CrossProductZ", "nav__survey__hybrid_8c.html#a280fb891cb889f89a5a25e444d85daf3", null ],
     [ "EvaluateLineForX", "nav__survey__hybrid_8c.html#a369fb753abd22e08ec5990479b0dcbcf", null ],

@@ -36,7 +36,7 @@ var hal__stm32__dma_8h =
     [ "dmacallback_t", "hal__stm32__dma_8h.html#a4f600faf9e80543de2b70846c1b0ac20", null ],
     [ "DMADriver", "hal__stm32__dma_8h.html#a4f340e0c4539dbb5edca715d0f3ea1ed", null ],
     [ "dmaerrorcallback_t", "hal__stm32__dma_8h.html#a14d513f93c406203a86e1f93096f7edd", null ],
-    [ "dmanextcallback_t", "hal__stm32__dma_8h.html#ad32ef0fae7a72db672fef3984913783a", null ],
+    [ "dmanextcallback_t", "hal__stm32__dma_8h.html#a176fe31dc2af806b9b031698614b5384", null ],
     [ "dmadirection_t", "hal__stm32__dma_8h.html#a1ea0c1960f4d9371456c693a92d3a9b6", [
       [ "DMA_DIR_P2M", "hal__stm32__dma_8h.html#a1ea0c1960f4d9371456c693a92d3a9b6aa16d0f454a3af72ebe5d131aaf368ec4", null ],
       [ "DMA_DIR_M2P", "hal__stm32__dma_8h.html#a1ea0c1960f4d9371456c693a92d3a9b6a792692a483b45e2f7e09f04527e41bb8", null ],
@@ -65,7 +65,7 @@ var hal__stm32__dma_8h =
     [ "_dma_isr_full_code", "hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c", null ],
     [ "_dma_isr_half_code", "hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12", null ],
     [ "dma_lld_get_registers", "hal__stm32__dma_8h.html#a7d2a1b39d48f993bdb81c97e111b7e9f", null ],
-    [ "dma_lld_set_next_double_buffer", "hal__stm32__dma_8h.html#a894cb2cd4c2860565a1709d0531c1a45", null ],
+    [ "dma_lld_set_next_double_buffer", "hal__stm32__dma_8h.html#a220f761839ecd74b6f8257a04bda34b1", null ],
     [ "dma_lld_start", "hal__stm32__dma_8h.html#a314dc8ae166424fb13a9961a6c88263e", null ],
     [ "dma_lld_start_transfert", "hal__stm32__dma_8h.html#aca730123d24b378683330626bd0f7603", null ],
     [ "dma_lld_stop", "hal__stm32__dma_8h.html#a704b8cd98d0823960e5e3048ee5dfbba", null ],

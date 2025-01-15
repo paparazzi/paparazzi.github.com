@@ -1,16 +1,30 @@
 <map id="imu_bebop_event" name="imu_bebop_event">
-<area shape="rect" id="node1" title="Handle all the events of the Navstik IMU components." alt="" coords="5,107,144,133"/>
-<area shape="rect" id="node2" href="$ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title=" " alt="" coords="215,5,330,32"/>
-<area shape="rect" id="node5" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="199,56,346,83"/>
-<area shape="rect" id="node6" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="203,107,342,133"/>
-<area shape="rect" id="node7" href="$mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title=" " alt="" coords="196,157,349,184"/>
-<area shape="rect" id="node12" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="192,209,353,236"/>
-<area shape="rect" id="node3" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="677,23,793,49"/>
-<area shape="rect" id="node4" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="871,49,964,76"/>
-<area shape="rect" id="node8" href="$mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title=" " alt="" coords="401,77,599,104"/>
-<area shape="rect" id="node10" href="$mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use." alt="" coords="417,157,583,184"/>
-<area shape="rect" id="node9" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="683,76,786,103"/>
-<area shape="rect" id="node11" href="$mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU." alt="" coords="647,146,823,187"/>
-<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="417,211,583,237"/>
-<area shape="rect" id="node14" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="660,212,809,239"/>
+<area shape="rect" id="Node000001" title="Handle all the events of the Navstik IMU components." alt="" coords="5,104,144,129"/>
+<area shape="rect" id="Node000002" href="$ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title=" " alt="" coords="215,5,330,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,102,135,71,191,40,208,33,210,38,193,44,138,76,94,106"/>
+<area shape="rect" id="Node000005" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="199,55,346,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,101,207,81,208,86,127,107"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="203,104,342,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="144,114,189,114,189,119,144,119"/>
+<area shape="rect" id="Node000007" href="$mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title=" " alt="" coords="196,153,349,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="127,127,208,147,207,153,126,132"/>
+<area shape="rect" id="Node000012" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="192,204,353,229"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="94,127,138,158,193,189,213,197,211,202,191,194,135,162,91,132"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="677,21,793,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,17,663,29,663,34,330,23"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="871,48,964,73"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="793,40,857,49,856,54,793,45"/>
+<area shape="rect" id="Node000008" href="$mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title=" " alt="" coords="401,76,599,101"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="314,151,352,138,450,104,452,109,354,143,316,156"/>
+<area shape="rect" id="Node000010" href="$mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use." alt="" coords="417,153,583,179"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="349,163,403,163,403,169,349,169"/>
+<area shape="rect" id="Node000009" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="683,73,786,99"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="599,85,669,84,669,89,599,90"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="786,76,856,66,857,72,787,82"/>
+<area shape="rect" id="Node000011" href="$mpu60x0__spi_8c.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU." alt="" coords="647,142,823,182"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="584,162,633,161,633,166,584,167"/>
+<area shape="rect" id="Node000013" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="417,205,583,231"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="354,214,403,215,403,220,354,220"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="660,207,809,232"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="584,216,646,216,646,221,584,221"/>
 </map>

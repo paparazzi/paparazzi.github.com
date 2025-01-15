@@ -1,13 +1,23 @@
 <map id="calc_edgeflow_tot" name="calc_edgeflow_tot">
-<area shape="rect" id="node1" title="Run the optical flow with EDGEFLOW on a new image frame." alt="" coords="5,157,144,184"/>
-<area shape="rect" id="node2" href="$edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260" title="Calc_previous_frame_nr; adaptive Time Horizon." alt="" coords="211,5,388,32"/>
-<area shape="rect" id="node3" href="$edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms." alt="" coords="192,56,407,83"/>
-<area shape="rect" id="node5" href="$edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63" title="Calculate a edge/gradient histogram for each dimension of the image." alt="" coords="203,107,396,133"/>
-<area shape="rect" id="node6" href="$edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339" title="Draws edgehistogram, displacement and linefit directly on the image for debugging (only for edgeflow ..." alt="" coords="223,157,375,184"/>
-<area shape="rect" id="node9" href="$edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db" title="getAmountPeaks, calculates the amount of peaks in a edge histogram" alt="" coords="233,208,366,235"/>
-<area shape="rect" id="node10" href="$edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88" title="Fits a linear model to an array with pixel displacements with least squares." alt="" coords="266,259,333,285"/>
-<area shape="rect" id="node11" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish." alt="" coords="249,309,349,336"/>
-<area shape="rect" id="node4" href="$edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e" title="Calculate minimum of an array." alt="" coords="469,56,574,83"/>
-<area shape="rect" id="node7" href="$image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image." alt="" coords="455,157,588,184"/>
-<area shape="rect" id="node8" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="636,157,808,184"/>
+<area shape="rect" id="Node000001" title="Run the optical flow with EDGEFLOW on a new image frame." alt="" coords="5,153,144,179"/>
+<area shape="rect" id="Node000002" href="$edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260" title="Calc_previous_frame_nr; adaptive Time Horizon." alt="" coords="211,5,388,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,151,124,97,155,66,191,40,204,33,207,38,193,44,158,70,128,100,86,155"/>
+<area shape="rect" id="Node000003" href="$edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms." alt="" coords="192,55,407,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,151,134,120,191,89,212,81,214,86,193,94,137,124,93,155"/>
+<area shape="rect" id="Node000005" href="$edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63" title="Calculate a edge/gradient histogram for each dimension of the image." alt="" coords="203,104,396,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="133,151,227,130,228,135,134,156"/>
+<area shape="rect" id="Node000006" href="$edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339" title="Draws edgehistogram, displacement and linefit directly on the image for debugging (only for edgeflow ..." alt="" coords="223,153,375,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="144,163,210,163,210,169,144,169"/>
+<area shape="rect" id="Node000009" href="$edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db" title="getAmountPeaks, calculates the amount of peaks in a edge histogram" alt="" coords="233,203,366,228"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="134,176,228,197,227,202,133,181"/>
+<area shape="rect" id="Node000010" href="$edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88" title="Fits a linear model to an array with pixel displacements with least squares." alt="" coords="266,252,333,277"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="94,177,137,207,193,237,253,255,252,260,191,242,135,211,91,181"/>
+<area shape="rect" id="Node000011" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish." alt="" coords="249,301,349,327"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="86,177,128,231,158,261,193,286,236,303,234,308,191,291,155,265,124,234,82,180"/>
+<area shape="rect" id="Node000004" href="$edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e" title="Calculate minimum of an array." alt="" coords="469,55,574,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="407,65,455,65,455,70,407,70"/>
+<area shape="rect" id="Node000007" href="$image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image." alt="" coords="455,153,588,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="376,163,441,163,441,169,376,169"/>
+<area shape="rect" id="Node000008" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="636,153,808,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="588,163,622,163,622,169,588,169"/>
 </map>

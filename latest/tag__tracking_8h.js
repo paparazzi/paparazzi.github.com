@@ -21,7 +21,7 @@ var tag__tracking_8h =
     [ "TAG_TRACKING_RUNNING", "tag__tracking_8h.html#a58c7a8f18e62d73134e7b9f66aa57e9d", null ],
     [ "TAG_TRACKING_SEARCHING", "tag__tracking_8h.html#ade0c5150612fe61b105a8f6a940290d5", null ],
     [ "tag_tracking_compute_speed", "tag__tracking_8h.html#aee8b9e7c75b96e12da36873bb5537078", null ],
-    [ "tag_tracking_get", "tag__tracking_8h.html#a4112efb3e59711c1958fb0d8f1049e0b", null ],
+    [ "tag_tracking_get", "tag__tracking_8h.html#a1de8ca33f9819c68244186f98b1b71e7", null ],
     [ "tag_tracking_get_heading", "tag__tracking_8h.html#af150cf7b0bc994c05d0cc6853759ab52", null ],
     [ "tag_tracking_get_motion_type", "tag__tracking_8h.html#a50034b1e8acedcfbd2a312196f0249e4", null ],
     [ "tag_tracking_get_status", "tag__tracking_8h.html#ada5b7b5dad70e72f56b277c99806fdc6", null ],

@@ -1,20 +1,44 @@
 <map id="sw/airborne/peripherals/adxl345_spi.c" name="sw/airborne/peripherals/adxl345_spi.c">
-<area shape="rect" id="node1" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="445,5,620,47"/>
-<area shape="rect" id="node2" href="$adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="457,95,608,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="447,355,501,382"/>
-<area shape="rect" id="node4" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="256,184,436,211"/>
-<area shape="rect" id="node11" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="795,184,929,211"/>
-<area shape="rect" id="node17" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="511,184,674,211"/>
-<area shape="rect" id="node5" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="51,266,207,293"/>
-<area shape="rect" id="node9" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="283,266,436,293"/>
-<area shape="rect" id="node10" title=" " alt="" coords="688,355,759,382"/>
-<area shape="rect" id="node6" title=" " alt="" coords="97,355,160,382"/>
-<area shape="rect" id="node7" title=" " alt="" coords="184,355,255,382"/>
-<area shape="rect" id="node8" title=" " alt="" coords="5,355,73,382"/>
-<area shape="rect" id="node12" title=" " alt="" coords="839,266,1007,293"/>
-<area shape="rect" id="node13" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1031,266,1205,293"/>
-<area shape="rect" id="node14" title=" " alt="" coords="944,355,1031,382"/>
-<area shape="rect" id="node15" title=" " alt="" coords="1055,355,1181,382"/>
-<area shape="rect" id="node16" title=" " alt="" coords="1205,348,1367,389"/>
-<area shape="rect" id="node18" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="613,259,764,300"/>
+<area shape="rect" id="Node000001" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="445,5,620,45"/>
+<area shape="rect" id="Node000002" href="$adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="457,93,608,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="535,46,535,79,530,79,530,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="447,350,501,375"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,135,502,182,484,266,478,336,472,336,479,265,497,181,519,133"/>
+<area shape="rect" id="Node000004" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="256,181,436,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="489,136,387,178,385,173,487,131"/>
+<area shape="rect" id="Node000011" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="795,181,929,207"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="609,130,801,176,800,181,608,135"/>
+<area shape="rect" id="Node000017" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="511,181,674,207"/>
+<area shape="poly" id="edge22_Node000002_Node000017" title=" " alt="" coords="549,132,578,169,573,172,545,135"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="323,209,295,228,282,241,272,256,266,275,272,293,287,310,306,324,348,344,393,354,433,359,432,364,392,359,346,349,303,329,284,314,268,296,260,275,268,254,278,238,291,224,320,205"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="51,262,207,287"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="315,209,174,260,172,255,313,204"/>
+<area shape="rect" id="Node000009" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="283,262,436,287"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="351,206,358,248,352,249,345,207"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="688,350,759,375"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="373,204,686,342,684,347,371,209"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="176,285,434,349,433,354,174,290"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="97,350,160,375"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="131,288,131,336,126,336,126,288"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="184,350,255,375"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="143,286,198,338,195,342,139,289"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,350,73,375"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="118,289,64,342,60,338,115,286"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="376,285,449,340,446,344,373,290"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="858,209,827,252,805,277,778,297,710,328,638,348,570,358,515,363,515,358,570,353,637,342,708,323,775,292,801,273,823,249,853,205"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="839,262,1007,287"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="873,205,908,250,904,253,869,208"/>
+<area shape="rect" id="Node000013" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1031,262,1205,287"/>
+<area shape="poly" id="edge16_Node000011_Node000013" title=" " alt="" coords="900,204,1068,255,1067,260,898,209"/>
+<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="1062,290,1020,297,732,336,516,360,515,355,731,331,1019,292,1061,285"/>
+<area shape="poly" id="edge18_Node000013_Node000010" title=" " alt="" coords="1066,290,773,353,771,348,1065,285"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="944,350,1031,375"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="1102,290,1018,345,1015,340,1099,285"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1055,350,1181,375"/>
+<area shape="poly" id="edge20_Node000013_Node000015" title=" " alt="" coords="1121,288,1121,336,1115,336,1115,288"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1205,343,1367,383"/>
+<area shape="poly" id="edge21_Node000013_Node000016" title=" " alt="" coords="1142,285,1238,334,1236,339,1139,290"/>
+<area shape="poly" id="edge23_Node000017_Node000003" title=" " alt="" coords="587,208,492,340,488,337,582,205"/>
+<area shape="rect" id="Node000018" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="613,255,764,295"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="609,205,657,244,653,248,605,209"/>
 </map>

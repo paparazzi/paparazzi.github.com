@@ -1,23 +1,49 @@
 <map id="orientationSetEulers_f" name="orientationSetEulers_f">
-<area shape="rect" id="node1" title="Set vehicle body attitude from euler angles (float)." alt="" coords="680,165,847,192"/>
-<area shape="rect" id="node2" href="$ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="456,5,607,32"/>
-<area shape="rect" id="node3" href="$imu__bebop_8c.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="470,56,593,83"/>
-<area shape="rect" id="node4" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="494,107,569,133"/>
-<area shape="rect" id="node5" href="$imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="449,158,614,199"/>
-<area shape="rect" id="node10" href="$ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct." alt="" coords="461,224,602,251"/>
-<area shape="rect" id="node11" href="$mag__pitot__uart_8c.html#a03ba8318975b305c3484f67ba8fe988a" title=" " alt="" coords="473,275,589,301"/>
-<area shape="rect" id="node12" href="$group__state__attitude.html#ga5fa6ea4465237100512211a7bc8be549" title="Set vehicle body attitude from euler angles (float)." alt="" coords="431,393,632,420"/>
-<area shape="rect" id="node6" href="$imu_8c.html#a931916ce562dfa28e02e0a6001dddc43" title=" " alt="" coords="188,64,383,91"/>
-<area shape="rect" id="node7" href="$imu_8c.html#ac50fba336ca2c337f240bab0db44f64e" title=" " alt="" coords="202,115,369,141"/>
-<area shape="rect" id="node8" href="$imu_8c.html#a88ec31da12a499ee7b47fe11b4ccfa4e" title=" " alt="" coords="202,165,369,192"/>
-<area shape="rect" id="node9" href="$imu_8c.html#a3e25b56c5719a23e494568696083459e" title=" " alt="" coords="193,216,377,243"/>
-<area shape="rect" id="node13" href="$modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f" title=" " alt="" coords="224,267,347,293"/>
-<area shape="rect" id="node14" href="$arch_2sim_2modules_2ins_2ins__arduimu_8c.html#a9084095772fef629b46485b78cb1fd7a" title=" " alt="" coords="217,317,354,344"/>
-<area shape="rect" id="node15" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="250,368,321,395"/>
-<area shape="rect" id="node17" href="$modules_2ins_2ins__arduimu_8c.html#a78c0ed4113166dc7fa861569f0899d07" title=" " alt="" coords="197,419,373,445"/>
-<area shape="rect" id="node18" href="$ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title=" " alt="" coords="200,469,371,496"/>
-<area shape="rect" id="node19" href="$ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde" title=" " alt="" coords="199,520,371,547"/>
-<area shape="rect" id="node21" href="$ins__vn100_8c.html#a579de7597d4a8e23e8577ca9745c385d" title=" " alt="" coords="215,571,356,597"/>
-<area shape="rect" id="node16" href="$ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="5,368,140,395"/>
-<area shape="rect" id="node20" href="$ins__module_8h.html#ac5da428408b44b6b22e510c36f7f2bc7" title=" " alt="" coords="9,520,136,547"/>
+<area shape="rect" id="Node000001" title="Set vehicle body attitude from euler angles (float)." alt="" coords="883,161,1049,187"/>
+<area shape="rect" id="Node000002" href="$ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="659,5,809,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="946,152,899,97,868,68,833,44,808,33,810,28,836,40,871,64,903,93,950,148"/>
+<area shape="rect" id="Node000003" href="$imu__bebop_8c.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="673,55,795,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="936,155,889,123,834,94,795,81,797,76,836,89,892,119,939,151"/>
+<area shape="rect" id="Node000004" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="697,104,771,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="900,161,771,128,772,123,901,155"/>
+<area shape="rect" id="Node000005" href="$imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="651,154,817,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="869,177,817,177,817,171,869,171"/>
+<area shape="rect" id="Node000010" href="$ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct." alt="" coords="663,219,805,244"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="901,193,787,221,785,216,900,187"/>
+<area shape="rect" id="Node000011" href="$mag__pitot__uart_8c.html#a03ba8318975b305c3484f67ba8fe988a" title=" " alt="" coords="676,268,792,293"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="938,197,892,228,836,258,793,272,791,267,834,253,889,224,936,193"/>
+<area shape="rect" id="Node000012" href="$group__state__attitude.html#ga5fa6ea4465237100512211a7bc8be549" title="Set vehicle body attitude from euler angles (float)." alt="" coords="633,408,835,433"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="945,199,749,410,745,406,941,195"/>
+<area shape="rect" id="Node000006" href="$imu_8c.html#a931916ce562dfa28e02e0a6001dddc43" title=" " alt="" coords="391,63,585,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="648,151,632,143,617,132,608,121,598,111,584,102,556,91,558,86,587,97,602,107,611,118,621,128,635,138,651,146"/>
+<area shape="rect" id="Node000007" href="$imu_8c.html#ac50fba336ca2c337f240bab0db44f64e" title=" " alt="" coords="405,112,571,137"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="638,157,552,140,553,135,639,152"/>
+<area shape="rect" id="Node000008" href="$imu_8c.html#a88ec31da12a499ee7b47fe11b4ccfa4e" title=" " alt="" coords="405,161,571,187"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="638,177,571,177,571,171,638,171"/>
+<area shape="rect" id="Node000009" href="$imu_8c.html#a3e25b56c5719a23e494568696083459e" title=" " alt="" coords="396,211,580,236"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="639,196,553,213,552,208,638,191"/>
+<area shape="rect" id="Node000013" href="$modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f" title=" " alt="" coords="427,260,549,285"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="710,400,656,349,622,322,584,299,549,286,551,281,586,294,625,317,660,345,714,396"/>
+<area shape="rect" id="Node000014" href="$arch_2sim_2modules_2ins_2ins__arduimu_8c.html#a9084095772fef629b46485b78cb1fd7a" title=" " alt="" coords="419,309,557,335"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="698,403,646,375,584,348,548,337,550,332,586,344,648,371,701,399"/>
+<area shape="rect" id="Node000015" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="453,359,523,384"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="656,408,523,381,524,376,657,403"/>
+<area shape="rect" id="Node000017" href="$modules_2ins_2ins__arduimu_8c.html#a78c0ed4113166dc7fa861569f0899d07" title=" " alt="" coords="400,408,576,433"/>
+<area shape="poly" id="edge16_Node000012_Node000017" title=" " alt="" coords="620,423,576,423,576,418,620,418"/>
+<area shape="rect" id="Node000018" href="$ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title=" " alt="" coords="403,457,573,483"/>
+<area shape="poly" id="edge17_Node000012_Node000018" title=" " alt="" coords="657,439,553,460,552,455,656,433"/>
+<area shape="rect" id="Node000019" href="$ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde" title=" " alt="" coords="402,507,574,532"/>
+<area shape="poly" id="edge18_Node000012_Node000019" title=" " alt="" coords="701,443,648,471,586,498,550,509,548,504,584,493,646,466,698,438"/>
+<area shape="rect" id="Node000021" href="$ins__xsens700_8c.html#a8011d2c59733cc2b3ba2110bf3675bde" title=" " alt="" coords="402,556,574,581"/>
+<area shape="poly" id="edge20_Node000012_Node000021" title=" " alt="" coords="714,445,660,497,625,524,587,547,558,558,556,553,584,542,622,520,656,493,710,441"/>
+<area shape="rect" id="Node000024" href="$ins__vn100_8c.html#a579de7597d4a8e23e8577ca9745c385d" title=" " alt="" coords="417,605,559,631"/>
+<area shape="poly" id="edge23_Node000012_Node000024" title=" " alt="" coords="721,447,699,481,669,521,631,562,587,596,560,608,558,604,584,592,627,558,664,518,695,478,716,444"/>
+<area shape="rect" id="Node000016" href="$ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="208,359,343,384"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="439,374,343,374,343,369,439,369"/>
+<area shape="rect" id="Node000020" href="$ins__module_8h.html#ac5da428408b44b6b22e510c36f7f2bc7" title=" " alt="" coords="212,507,339,532"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="388,522,339,522,339,517,388,517"/>
+<area shape="rect" id="Node000022" href="$ins__xsens700_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title=" " alt="" coords="212,556,339,581"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="388,571,339,571,339,566,388,566"/>
+<area shape="rect" id="Node000023" href="$ins__xsens700_8c.html#af5b103447ab6c24b2ad38714d258b262" title=" " alt="" coords="5,556,160,581"/>
+<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="198,571,160,571,160,566,198,566"/>
 </map>

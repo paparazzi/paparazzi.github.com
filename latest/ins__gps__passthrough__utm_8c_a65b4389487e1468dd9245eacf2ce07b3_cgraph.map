@@ -1,13 +1,68 @@
 <map id="ins_gps_passthrough_init" name="ins_gps_passthrough_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,157,192,184"/>
-<area shape="rect" id="node2" href="$ins__gps__passthrough__utm_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="245,107,312,133"/>
-<area shape="rect" id="node4" href="$group__state__position.html#ga7c435652a5180cf0b38f7a381ae5daa8" title="Set position from UTM coordinates (float)." alt="" coords="370,5,538,32"/>
-<area shape="rect" id="node7" href="$ins__gps__passthrough__utm_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="240,208,317,235"/>
-<area shape="rect" id="node9" href="$group__state__position.html#gab26ec22ae3c1cc5b701e94417b31f2ef" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="591,233,780,260"/>
-<area shape="rect" id="node3" href="$gps_8c.html#a21eacfaec32fc8d222f3824b96f68efb" title="Get GPS ned velocity (float) Converted on the fly if not available." alt="" coords="365,56,543,83"/>
-<area shape="rect" id="node5" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="377,107,531,133"/>
-<area shape="rect" id="node6" href="$gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="609,171,761,197"/>
-<area shape="rect" id="node8" href="$ins__gps__passthrough__utm_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="414,208,494,235"/>
-<area shape="rect" id="node10" href="$ins__gps__passthrough__utm_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="386,259,522,285"/>
-<area shape="rect" id="node11" href="$group__state__position.html#ga12c0195aada34d33153bb0f9ff8844c8" title="Get the coordinate UTM frame origin (int)" alt="" coords="607,284,764,311"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,165,192,191"/>
+<area shape="rect" id="Node000002" href="$ins__gps__passthrough__utm_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="245,115,312,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,163,231,138,233,143,145,168"/>
+<area shape="rect" id="Node000016" href="$group__state__position.html#ga7c435652a5180cf0b38f7a381ae5daa8" title="Set position from UTM coordinates (float)." alt="" coords="370,16,538,41"/>
+<area shape="poly" id="edge35_Node000001_Node000016" title=" " alt="" coords="120,163,239,100,301,72,364,50,389,42,391,48,366,55,303,77,241,104,123,168"/>
+<area shape="rect" id="Node000027" href="$ins__gps__passthrough__utm_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="240,267,317,292"/>
+<area shape="poly" id="edge27_Node000001_Node000027" title=" " alt="" coords="124,189,245,258,242,262,121,193"/>
+<area shape="rect" id="Node000029" href="$group__state__position.html#gab26ec22ae3c1cc5b701e94417b31f2ef" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="591,267,780,292"/>
+<area shape="poly" id="edge34_Node000001_Node000029" title=" " alt="" coords="175,188,543,251,601,262,600,267,542,257,174,193"/>
+<area shape="rect" id="Node000003" href="$gps_8c.html#a21eacfaec32fc8d222f3824b96f68efb" title="Get GPS ned velocity (float) Converted on the fly if not available." alt="" coords="365,65,543,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,115,365,99,392,92,393,97,366,105,313,120"/>
+<area shape="poly" id="edge16_Node000002_Node000016" title=" " alt="" coords="289,112,321,81,364,50,378,44,380,49,367,55,324,85,293,116"/>
+<area shape="rect" id="Node000017" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="377,115,531,140"/>
+<area shape="poly" id="edge17_Node000002_Node000017" title=" " alt="" coords="312,125,362,125,362,130,312,130"/>
+<area shape="rect" id="Node000018" href="$gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="609,217,761,243"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="313,134,366,149,618,212,616,217,365,154,312,139"/>
+<area shape="rect" id="Node000004" href="$gps_8c.html#aa7f0888726c4ca1b93e9b80d69669139" title="Get GPS ned velocity (integer) Converted on the fly if not available." alt="" coords="603,65,768,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="543,75,589,75,589,81,543,81"/>
+<area shape="rect" id="Node000005" href="$group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title=" " alt="" coords="828,64,979,89"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="768,75,814,75,814,80,768,80"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="834,113,973,139"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="744,88,832,108,831,113,743,93"/>
+<area shape="rect" id="Node000014" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="830,11,977,36"/>
+<area shape="poly" id="edge14_Node000004_Node000014" title=" " alt="" coords="736,63,838,37,840,42,737,68"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1060,55,1164,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="979,71,1046,68,1046,73,979,76"/>
+<area shape="rect" id="Node000009" href="$group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="1027,105,1197,145"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="960,87,1014,99,1013,105,959,92"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1269,13,1377,39"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1164,55,1255,37,1256,42,1165,60"/>
+<area shape="rect" id="Node000008" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1270,63,1375,88"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1164,67,1256,70,1256,75,1164,72"/>
+<area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="973,123,1013,123,1013,128,973,128"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1060,169,1164,195"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="952,136,1051,163,1050,168,951,141"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1269,120,1377,145"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1164,167,1255,146,1256,151,1165,173"/>
+<area shape="rect" id="Node000013" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1270,169,1375,195"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="1164,179,1256,179,1256,185,1164,185"/>
+<area shape="rect" id="Node000015" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1039,5,1185,31"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="977,19,1025,18,1025,23,977,24"/>
+<area shape="rect" id="Node000019" href="$group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM." alt="" coords="852,276,955,301"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="738,240,781,251,846,270,844,275,779,257,736,245"/>
+<area shape="rect" id="Node000026" href="$group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="830,210,977,250"/>
+<area shape="poly" id="edge26_Node000018_Node000026" title=" " alt="" coords="761,227,816,227,816,233,761,233"/>
+<area shape="rect" id="Node000020" href="$group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title=" " alt="" coords="1059,276,1165,301"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="955,286,1045,286,1045,291,955,291"/>
+<area shape="rect" id="Node000023" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1061,333,1163,359"/>
+<area shape="poly" id="edge23_Node000019_Node000023" title=" " alt="" coords="951,299,1053,327,1051,332,950,304"/>
+<area shape="rect" id="Node000021" href="$pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title=" " alt="" coords="1245,219,1400,244"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="1159,273,1262,245,1263,250,1160,279"/>
+<area shape="rect" id="Node000022" href="$pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title=" " alt="" coords="1253,269,1393,309"/>
+<area shape="poly" id="edge22_Node000020_Node000022" title=" " alt="" coords="1166,286,1239,286,1239,291,1166,291"/>
+<area shape="rect" id="Node000024" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1247,333,1399,359"/>
+<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="1164,343,1233,343,1233,349,1164,349"/>
+<area shape="rect" id="Node000025" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1253,383,1393,423"/>
+<area shape="poly" id="edge25_Node000023_Node000025" title=" " alt="" coords="1160,356,1240,378,1239,383,1159,361"/>
+<area shape="rect" id="Node000028" href="$ins__gps__passthrough__utm_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="414,267,494,292"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="317,277,400,277,400,282,317,282"/>
+<area shape="rect" id="Node000030" href="$ins__gps__passthrough__utm_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="386,316,522,341"/>
+<area shape="poly" id="edge31_Node000027_Node000030" title=" " alt="" coords="318,288,366,302,393,310,392,315,365,307,317,293"/>
+<area shape="poly" id="edge30_Node000028_Node000018" title=" " alt="" coords="494,268,611,243,612,248,495,274"/>
+<area shape="poly" id="edge29_Node000028_Node000029" title=" " alt="" coords="494,277,577,277,577,282,494,282"/>
+<area shape="poly" id="edge33_Node000030_Node000029" title=" " alt="" coords="514,313,611,292,612,298,515,319"/>
+<area shape="rect" id="Node000031" href="$group__state__position.html#ga8be4058317687975144fc40bd5ee9848" title="Get the coordinate UTM frame origin (int)" alt="" coords="607,316,764,341"/>
+<area shape="poly" id="edge32_Node000030_Node000031" title=" " alt="" coords="522,326,593,326,593,331,522,331"/>
 </map>

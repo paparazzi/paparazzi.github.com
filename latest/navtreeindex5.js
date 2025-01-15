@@ -221,9 +221,7 @@ var NAVTREEINDEX5 =
 "ahrs__float__dcm_8c_source.html":[12,0,1,0,6,2,8],
 "ahrs__float__dcm_8h.html":[12,0,1,0,6,2,9],
 "ahrs__float__dcm_8h.html#a085ad70d62a69cf92b8e08b27b9e60d1":[12,0,1,0,6,2,9,12],
-"ahrs__float__dcm_8h.html#a0ccfe632303e7d147366d3d714b1537e":[12,0,1,0,6,2,9,17],
 "ahrs__float__dcm_8h.html#a0e92ccb86ece01180a52a4cd7da0860a":[12,0,1,0,6,2,9,0,4],
-"ahrs__float__dcm_8h.html#a1814455019292840abf28c91a27f2080":[12,0,1,0,6,2,9,19],
 "ahrs__float__dcm_8h.html#a1f759bdb110191cd919fa1dbc465f84a":[12,0,1,0,6,2,9,0,7],
 "ahrs__float__dcm_8h.html#a28bef6d72c3eeb78beaa36afb5202716":[12,0,1,0,6,2,9,0,5],
 "ahrs__float__dcm_8h.html#a28f19eadfba62ddde0404977ec9b808a":[12,0,1,0,6,2,9,15],
@@ -241,7 +239,6 @@ var NAVTREEINDEX5 =
 "ahrs__float__dcm_8h.html#a9e675ac200130d5d78546711dcb887a3":[12,0,1,0,6,2,9,0,8],
 "ahrs__float__dcm_8h.html#a9e8f7f86867387eac6081a8b23ea9533":[12,0,1,0,6,2,9,13],
 "ahrs__float__dcm_8h.html#aae8cc61944a9c33bfbc8067f39060ad8":[12,0,1,0,6,2,9,0,6],
-"ahrs__float__dcm_8h.html#ab0d3aa1869bc70eb2b0190c3912690e7":[12,0,1,0,6,2,9,18],
 "ahrs__float__dcm_8h.html#abe6f07e47a8e6e8f95b62082e009821a":[12,0,1,0,6,2,9,16],
 "ahrs__float__dcm_8h.html#ac19ef4cf9dfcc61561addd93a8c41a5e":[12,0,1,0,6,2,9,10],
 "ahrs__float__dcm_8h.html#aca3c9e529eec0dcbf5ac2e4240391068":[12,0,1,0,6,2,9,7],
@@ -249,5 +246,8 @@ var NAVTREEINDEX5 =
 "ahrs__float__dcm_8h.html#add6357441f20327a6508da7f6036d2faa6f2e250a2bbaa296e0e27d656f825694":[12,0,1,0,6,2,9,9,0],
 "ahrs__float__dcm_8h.html#add6357441f20327a6508da7f6036d2faaee734b08e5a84d31a30fa9841265535f":[12,0,1,0,6,2,9,9,1],
 "ahrs__float__dcm_8h.html#ae08a572174030d02c09ad3f30cf63e1d":[12,0,1,0,6,2,9,0,3],
-"ahrs__float__dcm_8h.html#aea9dd7972c8f6c2381b1541b964b3893":[12,0,1,0,6,2,9,4]
+"ahrs__float__dcm_8h.html#aea9dd7972c8f6c2381b1541b964b3893":[12,0,1,0,6,2,9,4],
+"ahrs__float__dcm_8h.html#af3805644883f041141e5f764ba1007ac":[12,0,1,0,6,2,9,0,10],
+"ahrs__float__dcm_8h.html#af6ae5229becb1414fbef533329174466":[12,0,1,0,6,2,9,14],
+"ahrs__float__dcm_8h.html#structAhrsFloatDCM":[12,0,1,0,6,2,9,0]
 };

@@ -1,19 +1,38 @@
 <map id="nav_periodic_task" name="nav_periodic_task">
-<area shape="rect" id="node1" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="5,132,145,159"/>
-<area shape="rect" id="node2" href="$rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="193,107,376,133"/>
-<area shape="rect" id="node17" href="$nav_8c.html#afe6d4a5dd1de94f57126d27a6baac58f" title=" " alt="" coords="219,157,350,184"/>
-<area shape="rect" id="node3" href="$rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="424,81,593,108"/>
-<area shape="rect" id="node5" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="832,107,999,133"/>
-<area shape="rect" id="node4" href="$rotorcraft_2navigation_8c.html#aa7992cd3005e9daab2dda14f2950249b" title="Returns squared horizontal distance to given point." alt="" coords="641,81,784,108"/>
-<area shape="rect" id="node6" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="1047,107,1217,133"/>
-<area shape="rect" id="node7" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1285,5,1389,32"/>
-<area shape="rect" id="node10" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1456,107,1609,133"/>
-<area shape="rect" id="node11" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1265,157,1408,184"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="1266,56,1407,83"/>
-<area shape="rect" id="node14" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1285,208,1388,235"/>
-<area shape="rect" id="node8" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1479,5,1587,32"/>
-<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1480,56,1585,83"/>
-<area shape="rect" id="node12" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1457,157,1609,184"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1457,208,1609,235"/>
-<area shape="rect" id="node16" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1463,259,1603,301"/>
+<area shape="rect" id="Node000001" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="5,131,145,156"/>
+<area shape="rect" id="Node000002" href="$rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="193,105,376,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,132,179,128,180,133,146,138"/>
+<area shape="rect" id="Node000017" href="$nav_8c.html#afe6d4a5dd1de94f57126d27a6baac58f" title=" " alt="" coords="219,155,350,180"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="146,149,206,156,205,161,145,154"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="424,80,593,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,105,410,101,411,106,376,110"/>
+<area shape="rect" id="Node000005" href="$group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="832,105,999,131"/>
+<area shape="poly" id="edge18_Node000002_Node000005" title=" " alt="" coords="376,115,818,115,818,121,376,121"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2navigation_8c.html#aa7992cd3005e9daab2dda14f2950249b" title="Returns squared horizontal distance to given point." alt="" coords="641,80,784,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="594,90,628,90,628,95,594,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="785,99,819,103,818,109,784,104"/>
+<area shape="rect" id="Node000006" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="1047,105,1217,131"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="999,115,1033,115,1033,121,999,121"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1285,5,1389,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1151,103,1202,72,1264,40,1280,33,1282,38,1266,44,1204,77,1154,107"/>
+<area shape="rect" id="Node000010" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1456,104,1609,129"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="1218,115,1442,114,1442,120,1218,120"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1265,156,1408,181"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="1185,128,1272,150,1271,155,1184,133"/>
+<area shape="rect" id="Node000013" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="1266,55,1407,80"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="1184,103,1271,81,1272,86,1185,108"/>
+<area shape="rect" id="Node000014" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1285,205,1388,231"/>
+<area shape="poly" id="edge15_Node000006_Node000014" title=" " alt="" coords="1154,129,1204,159,1266,192,1282,198,1280,203,1264,196,1202,164,1151,133"/>
+<area shape="rect" id="Node000008" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1479,5,1587,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1389,15,1465,15,1465,21,1389,21"/>
+<area shape="rect" id="Node000009" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1480,55,1585,80"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1388,28,1469,49,1467,54,1387,33"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1457,156,1609,181"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1408,166,1443,166,1443,171,1408,171"/>
+<area shape="poly" id="edge13_Node000013_Node000009" title=" " alt="" coords="1408,65,1466,65,1466,70,1408,70"/>
+<area shape="poly" id="edge14_Node000013_Node000010" title=" " alt="" coords="1388,77,1469,98,1467,103,1387,83"/>
+<area shape="rect" id="Node000015" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1457,205,1609,231"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1388,215,1443,215,1443,221,1388,221"/>
+<area shape="rect" id="Node000016" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1463,255,1603,295"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="1382,228,1451,249,1450,254,1380,233"/>
 </map>

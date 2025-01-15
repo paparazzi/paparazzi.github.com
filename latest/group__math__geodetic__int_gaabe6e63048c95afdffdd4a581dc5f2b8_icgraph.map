@@ -1,52 +1,105 @@
 <map id="ecef_of_enu_vect_i" name="ecef_of_enu_vect_i">
-<area shape="rect" id="node1" title="Rotate a vector from ENU to ECEF." alt="" coords="1124,257,1271,284"/>
-<area shape="rect" id="node2" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF." alt="" coords="924,165,1076,192"/>
-<area shape="rect" id="node4" href="$gps__datalink_8c.html#abc548e6359a5d430877db4ce4ced1ed6" title="Publish the GPS data." alt="" coords="715,165,874,192"/>
-<area shape="rect" id="node8" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="929,312,1071,339"/>
-<area shape="rect" id="node44" href="$group__math__geodetic__int.html#gab146002b10face50bd92576ce4882f1d" title="Rotate a vector from NED to ECEF." alt="" coords="927,719,1073,745"/>
-<area shape="rect" id="node3" href="$group__math__geodetic__int.html#gae9f3682f00d7754900a2f737dde98164" title="Convert a point in local NED to ECEF." alt="" coords="719,115,871,141"/>
-<area shape="rect" id="node5" href="$gps__datalink_8c.html#a1e6d7409319941de2bbdc55911c8ba4c" title="Parse the full EXTERNAL_POSE message and publish as GPS through ABI." alt="" coords="497,27,645,69"/>
-<area shape="rect" id="node6" href="$gps__datalink_8c.html#aed2a0e3e27b3ffd11d66c1fdd834b9a1" title="Parse the EXTERNAL_POSE_SMALL message and publish as GPS through ABI." alt="" coords="477,93,665,134"/>
-<area shape="rect" id="node7" href="$gps__datalink_8c.html#a22e6a1eebb70356993012b6353da9cc2" title=" " alt="" coords="488,158,655,199"/>
-<area shape="rect" id="node9" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="723,275,866,301"/>
-<area shape="rect" id="node14" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="489,325,654,352"/>
-<area shape="rect" id="node27" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="497,643,645,669"/>
-<area shape="rect" id="node10" href="$group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e" title=" " alt="" coords="484,224,659,251"/>
-<area shape="rect" id="node12" href="$group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title=" " alt="" coords="484,275,659,301"/>
-<area shape="rect" id="node11" href="$group__state__position.html#gabc6da063ed27f46a4ae3d03c4722ad65" title="Get position in ECEF coordinates (float)." alt="" coords="259,224,429,251"/>
-<area shape="rect" id="node13" href="$group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int)." alt="" coords="259,275,429,301"/>
-<area shape="rect" id="node15" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="264,325,424,352"/>
-<area shape="rect" id="node16" href="$dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="73,107,143,133"/>
-<area shape="rect" id="node17" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="35,157,181,184"/>
-<area shape="rect" id="node18" href="$dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken." alt="" coords="23,208,193,235"/>
-<area shape="rect" id="node19" href="$mavlink_8c.html#a69b29097db843b873c8b348c837cfd03" title=" " alt="" coords="28,259,188,301"/>
-<area shape="rect" id="node20" href="$meteo__stick_8c.html#ad5954e5de0c4ce81c9ce6c9ad1c89766" title="Funnction to send over different transport and device." alt="" coords="20,325,196,352"/>
-<area shape="rect" id="node21" href="$exif__module_8c.html#a91b0ae74e7e4da70fb5021ff6aacd6f0" title=" " alt="" coords="33,376,183,403"/>
-<area shape="rect" id="node22" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="75,427,141,453"/>
-<area shape="rect" id="node23" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="73,5,143,32"/>
-<area shape="rect" id="node24" href="$cloud__sensor_8c.html#a6210f5adad0e1806b71ce588993904bf" title=" " alt="" coords="17,56,199,83"/>
-<area shape="rect" id="node25" href="$nav_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude" alt="" coords="35,477,181,504"/>
-<area shape="rect" id="node26" href="$nav_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude" alt="" coords="24,528,192,555"/>
-<area shape="rect" id="node28" href="$nav_2waypoints_8c.html#a99eb42987dd9c48be7a9b0eb13737d79" title="Get latitude of waypoint in deg." alt="" coords="261,920,427,947"/>
-<area shape="rect" id="node30" href="$nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="277,668,411,695"/>
-<area shape="rect" id="node33" href="$nav_2waypoints_8c.html#a7e084d884dfa3c91233a393dcfd15b01" title="Get longitude of waypoint in deg." alt="" coords="260,719,428,745"/>
-<area shape="rect" id="node35" href="$nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference)" alt="" coords="277,789,411,816"/>
-<area shape="rect" id="node38" href="$nav_2waypoints_8c.html#aecc0b78adf0a0c13f31298dc4d17b9f6" title=" " alt="" coords="272,617,416,644"/>
-<area shape="rect" id="node40" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="274,869,414,896"/>
-<area shape="rect" id="node42" href="$nav_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4" title=" " alt="" coords="269,503,419,529"/>
-<area shape="rect" id="node43" href="$nav_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="273,567,415,593"/>
-<area shape="rect" id="node29" href="$nav_2waypoints_8c.html#aff1a8c5b31bc6ee294b5f4e43b9527fb" title="Get latitude of waypoint in rad." alt="" coords="27,949,189,976"/>
-<area shape="rect" id="node31" href="$datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title=" " alt="" coords="39,680,177,707"/>
-<area shape="rect" id="node32" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="39,629,177,656"/>
-<area shape="rect" id="node34" href="$nav_2waypoints_8c.html#a562790c04bfc9029c5ab2b62bb7fd8b0" title="Get longitude of waypoint in rad." alt="" coords="25,731,191,757"/>
-<area shape="rect" id="node36" href="$stereocam_2stereocam__follow__me_2follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848" title=" " alt="" coords="63,848,153,875"/>
-<area shape="rect" id="node37" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="5,782,211,823"/>
-<area shape="rect" id="node39" href="$cv__georeference_8c.html#a230ffda49b65d6b6963063af8ab73e00" title=" " alt="" coords="28,579,188,605"/>
-<area shape="rect" id="node41" href="$ctrl_2follow__me_8c.html#a5c3112293f2a4d98f2ddb0d937011a36" title="periodic function" alt="" coords="33,899,183,925"/>
-<area shape="rect" id="node45" href="$gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843" title=" " alt="" coords="715,693,874,720"/>
-<area shape="rect" id="node47" href="$group__state__acceleration.html#ga539c730e2fbf144e23135c782a6f110c" title=" " alt="" coords="716,744,873,771"/>
-<area shape="rect" id="node49" href="$group__state__velocity.html#gaffc02a426245fb56dd5769ee90ab23de" title=" " alt="" coords="713,795,876,821"/>
-<area shape="rect" id="node46" href="$gps__furuno_8c.html#abad503c594db519e60515d9ac597f742" title=" " alt="" coords="485,693,658,720"/>
-<area shape="rect" id="node48" href="$group__state__acceleration.html#gace87c8e2eac995ea2d6491bd30299e56" title="Get acceleration in ECEF coordinates (int)." alt="" coords="495,744,647,771"/>
-<area shape="rect" id="node50" href="$group__state__velocity.html#gad4db814df4151e3327171002d1cda8d5" title="Get ground speed in ECEF coordinates (int)." alt="" coords="493,795,650,821"/>
+<area shape="rect" id="Node000001" title="Rotate a vector from ENU to ECEF." alt="" coords="1107,231,1253,257"/>
+<area shape="rect" id="Node000002" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF." alt="" coords="907,141,1059,166"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1138,228,1010,168,1012,164,1140,223"/>
+<area shape="rect" id="Node000004" href="$gps__datalink_8c.html#abc548e6359a5d430877db4ce4ced1ed6" title="Publish the GPS data." alt="" coords="695,141,853,166"/>
+<area shape="poly" id="edge53_Node000001_Node000004" title=" " alt="" coords="1108,231,832,169,833,163,1110,226"/>
+<area shape="rect" id="Node000008" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="911,285,1054,310"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1120,263,1031,287,1030,282,1118,258"/>
+<area shape="rect" id="Node000094" href="$group__math__geodetic__int.html#gab146002b10face50bd92576ce4882f1d" title="Rotate a vector from NED to ECEF." alt="" coords="909,657,1056,682"/>
+<area shape="poly" id="edge42_Node000001_Node000094" title=" " alt="" coords="1169,270,992,658,987,656,1165,268"/>
+<area shape="rect" id="Node000003" href="$group__math__geodetic__int.html#gae9f3682f00d7754900a2f737dde98164" title="Convert a point in local NED to ECEF." alt="" coords="698,91,850,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="914,140,828,119,829,114,916,135"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="893,156,853,156,853,151,893,151"/>
+<area shape="rect" id="Node000005" href="$gps__datalink_8c.html#a1e6d7409319941de2bbdc55911c8ba4c" title="Parse the full EXTERNAL_POSE message and publish as GPS through ABI." alt="" coords="473,5,621,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="699,137,688,130,671,112,663,94,655,76,640,59,620,48,623,43,643,55,659,73,668,92,675,109,691,126,702,133"/>
+<area shape="rect" id="Node000006" href="$gps__datalink_8c.html#aed2a0e3e27b3ffd11d66c1fdd834b9a1" title="Parse the EXTERNAL_POSE_SMALL message and publish as GPS through ABI." alt="" coords="453,69,641,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="714,139,618,112,620,107,716,134"/>
+<area shape="rect" id="Node000007" href="$gps__datalink_8c.html#a22e6a1eebb70356993012b6353da9cc2" title=" " alt="" coords="464,133,631,173"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="681,156,631,156,631,151,681,151"/>
+<area shape="rect" id="Node000009" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="703,247,845,273"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="897,285,845,275,846,270,898,280"/>
+<area shape="rect" id="Node000016" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="465,297,630,322"/>
+<area shape="poly" id="edge25_Node000008_Node000016" title=" " alt="" coords="897,302,630,310,630,304,897,297"/>
+<area shape="rect" id="Node000043" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="473,558,621,583"/>
+<area shape="poly" id="edge26_Node000008_Node000043" title=" " alt="" coords="951,320,570,560,567,556,948,315"/>
+<area shape="rect" id="Node000010" href="$group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e" title=" " alt="" coords="460,247,635,273"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="689,263,635,263,635,257,689,257"/>
+<area shape="rect" id="Node000012" href="$group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title=" " alt="" coords="460,198,635,223"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="701,247,606,226,607,221,702,242"/>
+<area shape="poly" id="edge13_Node000009_Node000016" title=" " alt="" coords="702,278,607,299,606,294,701,273"/>
+<area shape="rect" id="Node000011" href="$group__state__position.html#gaaf2ec6d57063dc0a1c9c90dfcb1cbde2" title="Get position in ECEF coordinates (float)." alt="" coords="235,247,405,273"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="446,263,405,263,405,257,446,257"/>
+<area shape="rect" id="Node000013" href="$group__state__position.html#ga42be9e4a0550bf670ff4975aec623d48" title="Get position in ECEF coordinates (int)." alt="" coords="235,198,405,223"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="446,213,405,213,405,208,446,208"/>
+<area shape="rect" id="Node000017" href="$group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="240,297,400,322"/>
+<area shape="poly" id="edge14_Node000016_Node000017" title=" " alt="" coords="451,312,400,312,400,307,451,307"/>
+<area shape="rect" id="Node000018" href="$dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="61,271,131,297"/>
+<area shape="poly" id="edge15_Node000017_Node000018" title=" " alt="" coords="226,301,131,291,131,285,226,296"/>
+<area shape="rect" id="Node000026" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="23,321,169,346"/>
+<area shape="poly" id="edge16_Node000017_Node000026" title=" " alt="" coords="226,322,170,328,169,323,226,317"/>
+<area shape="rect" id="Node000027" href="$mavlink_8c.html#a69b29097db843b873c8b348c837cfd03" title=" " alt="" coords="16,371,176,411"/>
+<area shape="poly" id="edge17_Node000017_Node000027" title=" " alt="" coords="272,329,153,373,151,368,270,324"/>
+<area shape="rect" id="Node000030" href="$meteo__stick_8c.html#ad5954e5de0c4ce81c9ce6c9ad1c89766" title="Funnction to send over different transport and device." alt="" coords="8,25,184,50"/>
+<area shape="poly" id="edge18_Node000017_Node000030" title=" " alt="" coords="238,291,233,286,213,257,205,229,205,200,208,172,212,144,211,117,204,90,185,63,170,52,173,48,189,59,208,88,217,116,217,145,214,173,210,200,211,228,218,255,237,282,242,287"/>
+<area shape="rect" id="Node000033" href="$exif__module_8c.html#a91b0ae74e7e4da70fb5021ff6aacd6f0" title=" " alt="" coords="21,74,171,99"/>
+<area shape="poly" id="edge19_Node000017_Node000033" title=" " alt="" coords="239,291,233,286,217,264,209,241,208,197,208,154,200,133,185,113,170,102,173,97,189,109,205,131,213,153,214,197,214,240,221,261,237,282,242,287"/>
+<area shape="rect" id="Node000034" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="63,123,129,149"/>
+<area shape="poly" id="edge20_Node000017_Node000034" title=" " alt="" coords="240,292,233,286,220,270,212,254,208,222,204,191,197,176,185,162,158,147,129,140,130,135,160,142,188,158,202,174,209,190,214,221,218,253,224,267,237,282,244,288"/>
+<area shape="rect" id="Node000036" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="61,173,131,198"/>
+<area shape="poly" id="edge21_Node000017_Node000036" title=" " alt="" coords="244,293,233,286,216,267,208,247,201,229,185,211,159,198,131,191,132,186,161,193,188,207,205,226,213,245,221,264,236,282,247,289"/>
+<area shape="rect" id="Node000037" href="$cloud__sensor_8c.html#a6210f5adad0e1806b71ce588993904bf" title=" " alt="" coords="5,222,187,247"/>
+<area shape="poly" id="edge22_Node000017_Node000037" title=" " alt="" coords="257,295,234,286,209,274,186,261,151,250,153,245,188,256,212,269,236,282,258,290"/>
+<area shape="rect" id="Node000040" href="$nav_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude" alt="" coords="23,485,169,510"/>
+<area shape="poly" id="edge23_Node000017_Node000040" title=" " alt="" coords="303,335,239,417,188,474,162,487,160,482,185,470,235,413,299,331"/>
+<area shape="rect" id="Node000041" href="$nav_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude" alt="" coords="12,435,180,461"/>
+<area shape="poly" id="edge24_Node000017_Node000041" title=" " alt="" coords="300,334,252,380,221,404,188,425,157,438,155,433,185,420,218,400,248,376,296,330"/>
+<area shape="rect" id="Node000044" href="$nav_2waypoints_8c.html#a99eb42987dd9c48be7a9b0eb13737d79" title="Get latitude of waypoint in deg." alt="" coords="237,633,403,658"/>
+<area shape="poly" id="edge27_Node000043_Node000044" title=" " alt="" coords="476,590,454,597,431,610,406,622,370,635,369,630,404,618,428,605,452,592,474,585"/>
+<area shape="rect" id="Node000046" href="$nav_2waypoints_8c.html#a3c92e53204c086a9e9104c84fe8b09ac" title="Get LLA coordinates of waypoint." alt="" coords="253,682,387,707"/>
+<area shape="poly" id="edge29_Node000043_Node000046" title=" " alt="" coords="463,591,455,597,439,614,432,633,424,652,407,671,384,684,381,680,404,667,419,650,427,631,435,611,452,593,461,587"/>
+<area shape="rect" id="Node000052" href="$nav_2waypoints_8c.html#a7e084d884dfa3c91233a393dcfd15b01" title="Get longitude of waypoint in deg." alt="" coords="236,534,404,559"/>
+<area shape="poly" id="edge32_Node000043_Node000052" title=" " alt="" coords="459,564,404,558,404,553,460,559"/>
+<area shape="rect" id="Node000054" href="$nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference)" alt="" coords="253,583,387,609"/>
+<area shape="poly" id="edge34_Node000043_Node000054" title=" " alt="" coords="460,583,387,591,386,586,459,578"/>
+<area shape="rect" id="Node000059" href="$nav_2waypoints_8c.html#aecc0b78adf0a0c13f31298dc4d17b9f6" title=" " alt="" coords="248,731,392,757"/>
+<area shape="poly" id="edge36_Node000043_Node000059" title=" " alt="" coords="463,591,455,597,443,611,436,626,432,657,428,690,420,706,407,722,390,733,387,729,404,718,416,703,423,688,427,657,431,625,438,608,451,593,459,587"/>
+<area shape="rect" id="Node000063" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="250,781,390,806"/>
+<area shape="poly" id="edge37_Node000043_Node000063" title=" " alt="" coords="463,590,455,597,439,617,432,638,432,682,431,726,424,749,407,771,391,783,388,778,403,767,419,746,426,725,426,682,427,637,435,615,451,593,460,586"/>
+<area shape="rect" id="Node000075" href="$nav_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4" title=" " alt="" coords="245,485,395,510"/>
+<area shape="poly" id="edge38_Node000043_Node000075" title=" " alt="" coords="498,556,405,524,367,513,368,507,406,519,500,551"/>
+<area shape="rect" id="Node000081" href="$nav_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="249,435,391,461"/>
+<area shape="poly" id="edge40_Node000043_Node000081" title=" " alt="" coords="519,551,468,512,404,474,375,463,377,458,406,470,471,508,523,547"/>
+<area shape="rect" id="Node000045" href="$nav_2waypoints_8c.html#aff1a8c5b31bc6ee294b5f4e43b9527fb" title="Get latitude of waypoint in rad." alt="" coords="15,633,177,658"/>
+<area shape="poly" id="edge28_Node000044_Node000045" title=" " alt="" coords="223,648,178,648,178,643,223,643"/>
+<area shape="rect" id="Node000047" href="$datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title=" " alt="" coords="27,731,165,757"/>
+<area shape="poly" id="edge30_Node000046_Node000047" title=" " alt="" coords="249,713,155,734,154,729,248,708"/>
+<area shape="rect" id="Node000051" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="27,682,165,707"/>
+<area shape="poly" id="edge31_Node000046_Node000051" title=" " alt="" coords="239,697,166,697,166,692,239,692"/>
+<area shape="rect" id="Node000053" href="$nav_2waypoints_8c.html#a562790c04bfc9029c5ab2b62bb7fd8b0" title="Get longitude of waypoint in rad." alt="" coords="13,534,179,559"/>
+<area shape="poly" id="edge33_Node000052_Node000053" title=" " alt="" coords="222,549,179,549,179,544,222,544"/>
+<area shape="rect" id="Node000055" href="$stereocam_2stereocam__follow__me_2follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848" title=" " alt="" coords="51,583,141,609"/>
+<area shape="poly" id="edge35_Node000054_Node000055" title=" " alt="" coords="240,599,142,599,142,593,240,593"/>
+<area shape="poly" id="edge39_Node000075_Node000040" title=" " alt="" coords="231,500,169,500,169,495,231,495"/>
+<area shape="poly" id="edge41_Node000081_Node000041" title=" " alt="" coords="235,451,180,451,180,445,235,445"/>
+<area shape="rect" id="Node000095" href="$gps_8c.html#a5dc6e3f966bdb5440ffe748d7a0f80c3" title="Get GPS ecef velocity (integer) Converted on the fly if not available." alt="" coords="689,779,859,805"/>
+<area shape="poly" id="edge43_Node000094_Node000095" title=" " alt="" coords="950,692,860,746,799,782,796,777,857,742,948,687"/>
+<area shape="rect" id="Node000107" href="$gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843" title=" " alt="" coords="695,607,853,633"/>
+<area shape="poly" id="edge47_Node000094_Node000107" title=" " alt="" coords="914,656,828,635,829,630,916,651"/>
+<area shape="rect" id="Node000109" href="$group__state__acceleration.html#ga539c730e2fbf144e23135c782a6f110c" title=" " alt="" coords="695,657,853,682"/>
+<area shape="poly" id="edge49_Node000094_Node000109" title=" " alt="" coords="896,672,853,672,853,667,896,667"/>
+<area shape="rect" id="Node000111" href="$group__state__velocity.html#gaffc02a426245fb56dd5769ee90ab23de" title=" " alt="" coords="693,706,855,731"/>
+<area shape="poly" id="edge51_Node000094_Node000111" title=" " alt="" coords="916,688,829,709,828,703,914,683"/>
+<area shape="rect" id="Node000096" href="$gps_8c.html#a49df20d7b72ae1248ef22fba32c467b9" title="Get GPS ecef velocity (float) Converted on the fly if not available." alt="" coords="457,755,638,781"/>
+<area shape="poly" id="edge44_Node000095_Node000096" title=" " alt="" coords="676,784,638,780,638,775,676,779"/>
+<area shape="rect" id="Node000102" href="$ins__gps__passthrough_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="514,805,581,830"/>
+<area shape="poly" id="edge45_Node000095_Node000102" title=" " alt="" coords="676,806,581,816,580,811,676,800"/>
+<area shape="rect" id="Node000104" href="$ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="474,854,621,879"/>
+<area shape="poly" id="edge46_Node000095_Node000104" title=" " alt="" coords="731,812,642,845,603,857,601,851,641,840,729,807"/>
+<area shape="rect" id="Node000108" href="$gps__furuno_8c.html#abad503c594db519e60515d9ac597f742" title=" " alt="" coords="461,607,634,633"/>
+<area shape="poly" id="edge48_Node000107_Node000108" title=" " alt="" coords="681,623,634,623,634,617,681,617"/>
+<area shape="rect" id="Node000110" href="$group__state__acceleration.html#ga287112d9fc7013974a0e8cdfb6d99c4a" title="Get acceleration in ECEF coordinates (int)." alt="" coords="471,657,623,682"/>
+<area shape="poly" id="edge50_Node000109_Node000110" title=" " alt="" coords="681,672,624,672,624,667,681,667"/>
+<area shape="rect" id="Node000112" href="$group__state__velocity.html#gadb8181fbb948cd3c3f0748611c259049" title="Get ground speed in ECEF coordinates (int)." alt="" coords="469,706,626,731"/>
+<area shape="poly" id="edge52_Node000111_Node000112" title=" " alt="" coords="679,721,626,721,626,716,679,716"/>
 </map>

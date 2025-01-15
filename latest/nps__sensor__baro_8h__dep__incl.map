@@ -1,29 +1,62 @@
 <map id="sw/simulator/nps/nps_sensor_baro.h" name="sw/simulator/nps/nps_sensor_baro.h">
-<area shape="rect" id="node1" title=" " alt="" coords="728,5,888,47"/>
-<area shape="rect" id="node2" href="$nps__sensor__baro_8c.html" title=" " alt="" coords="5,184,165,225"/>
-<area shape="rect" id="node3" href="$nps__sensors_8h.html" title=" " alt="" coords="1359,95,1519,136"/>
-<area shape="rect" id="node4" href="$gps__sim__nps_8c.html" title=" " alt="" coords="2934,184,3093,225"/>
-<area shape="rect" id="node5" href="$imu__nps_8c.html" title=" " alt="" coords="3117,184,3275,225"/>
-<area shape="rect" id="node6" href="$nps__autopilot__fixedwing_8c.html" title=" " alt="" coords="3299,184,3466,225"/>
-<area shape="rect" id="node7" href="$nps__autopilot__rotorcraft_8c.html" title=" " alt="" coords="189,184,355,225"/>
-<area shape="rect" id="node8" href="$nps__autopilot__rover_8c.html" title=" " alt="" coords="379,184,539,225"/>
-<area shape="rect" id="node9" href="$nps__hitl__sensors_8c.html" title=" " alt="" coords="296,273,456,315"/>
-<area shape="rect" id="node10" href="$nps__ivy_8c.html" title=" " alt="" coords="480,273,640,315"/>
-<area shape="rect" id="node11" href="$nps__ivy_8h.html" title=" " alt="" coords="664,184,824,225"/>
-<area shape="rect" id="node14" href="$nps__main__hitl_8c.html" title=" " alt="" coords="1032,273,1192,315"/>
-<area shape="rect" id="node15" href="$nps__main_8h.html" title=" " alt="" coords="848,184,1008,225"/>
-<area shape="rect" id="node18" href="$nps__sensor__accel_8c.html" title=" " alt="" coords="1083,184,1243,225"/>
-<area shape="rect" id="node19" href="$nps__sensor__airspeed_8c.html" title="Simulated airspeed for NPS simulator." alt="" coords="1267,184,1427,225"/>
-<area shape="rect" id="node20" href="$nps__sensor__aoa_8c.html" title="Simulated Angle of Attack of the Wind for NPS simulator." alt="" coords="1451,184,1611,225"/>
-<area shape="rect" id="node21" href="$nps__sensor__gps_8c.html" title=" " alt="" coords="1635,184,1795,225"/>
-<area shape="rect" id="node22" href="$nps__sensor__gyro_8c.html" title=" " alt="" coords="1819,184,1979,225"/>
-<area shape="rect" id="node23" href="$nps__sensor__mag_8c.html" title=" " alt="" coords="2003,184,2163,225"/>
-<area shape="rect" id="node24" href="$nps__sensor__sideslip_8c.html" title="Simulated Angle of Attack of the Wind for NPS simulator." alt="" coords="2187,184,2347,225"/>
-<area shape="rect" id="node25" href="$nps__sensor__sonar_8c.html" title="Simulated sonar for NPS simulator." alt="" coords="2371,184,2531,225"/>
-<area shape="rect" id="node26" href="$nps__sensor__temperature_8c.html" title=" " alt="" coords="2555,184,2725,225"/>
-<area shape="rect" id="node27" href="$nps__sensors_8c.html" title=" " alt="" coords="2749,184,2909,225"/>
-<area shape="rect" id="node12" href="$nps__atmosphere_8c.html" title="Atmosphere model (pressure, wind) for NPS." alt="" coords="664,273,824,315"/>
-<area shape="rect" id="node13" href="$nps__main__common_8c.html" title=" " alt="" coords="848,273,1008,315"/>
-<area shape="rect" id="node16" href="$nps__flightgear_8c.html" title=" " alt="" coords="1216,273,1376,315"/>
-<area shape="rect" id="node17" href="$nps__main__sitl_8c.html" title=" " alt="" coords="1400,273,1560,315"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="728,5,888,45"/>
+<area shape="rect" id="Node000002" href="$nps__sensor__baro_8c.html" title=" " alt="" coords="5,181,165,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="718,51,164,184,163,179,716,46"/>
+<area shape="rect" id="Node000003" href="$nps__sensors_8h.html" title=" " alt="" coords="1359,93,1519,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="902,37,1359,99,1358,104,902,42"/>
+<area shape="poly" id="edge26_Node000003_Node000002" title=" " alt="" coords="1345,120,751,145,420,163,178,184,166,186,165,180,177,179,419,158,751,139,1345,115"/>
+<area shape="rect" id="Node000004" href="$gps__sim__nps_8c.html" title=" " alt="" coords="2934,181,3093,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1533,111,1775,112,2119,120,2517,141,2722,157,2922,179,2934,180,2933,186,2921,184,2721,163,2517,146,2119,126,1775,118,1533,117"/>
+<area shape="rect" id="Node000005" href="$imu__nps_8c.html" title=" " alt="" coords="3117,181,3275,221"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1532,114,2318,134,2773,153,2962,165,3106,179,3117,180,3116,186,3105,184,2962,171,2772,159,2317,140,1532,119"/>
+<area shape="rect" id="Node000006" href="$nps__autopilot__fixedwing_8c.html" title=" " alt="" coords="3299,181,3466,221"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1532,113,1896,120,2403,133,2914,152,3127,165,3288,179,3299,180,3299,185,3288,184,3127,170,2914,158,2403,138,1896,126,1532,119"/>
+<area shape="rect" id="Node000007" href="$nps__autopilot__rotorcraft_8c.html" title=" " alt="" coords="189,181,355,221"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="1345,119,1164,124,921,136,645,155,367,184,355,186,355,180,366,179,645,150,921,130,1164,119,1345,114"/>
+<area shape="rect" id="Node000008" href="$nps__autopilot__rover_8c.html" title=" " alt="" coords="379,181,539,221"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="1345,121,997,141,778,159,558,184,539,187,538,181,557,179,778,154,997,136,1344,116"/>
+<area shape="rect" id="Node000009" href="$nps__hitl__sensors_8c.html" title=" " alt="" coords="296,269,456,309"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="1345,118,1167,122,951,132,746,152,663,166,601,184,586,192,577,202,567,213,552,224,496,251,440,272,438,267,494,246,549,219,563,209,573,198,583,188,599,179,662,161,745,146,951,126,1167,116,1345,113"/>
+<area shape="rect" id="Node000010" href="$nps__ivy_8c.html" title=" " alt="" coords="480,269,640,309"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="1345,117,1177,119,975,128,876,136,785,148,709,164,653,184,627,202,604,225,572,271,568,267,600,221,623,198,651,179,708,158,784,143,875,131,974,122,1176,113,1345,111"/>
+<area shape="rect" id="Node000011" href="$nps__ivy_8h.html" title=" " alt="" coords="664,181,824,221"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="1345,125,1114,148,836,184,825,186,824,181,836,179,1113,143,1345,120"/>
+<area shape="rect" id="Node000014" href="$nps__main__hitl_8c.html" title=" " alt="" coords="1032,269,1192,309"/>
+<area shape="poly" id="edge22_Node000003_Node000014" title=" " alt="" coords="1345,121,1266,128,1185,139,1115,158,1090,169,1073,183,1067,193,1065,203,1069,226,1081,248,1096,268,1092,271,1077,251,1064,227,1060,203,1062,191,1069,180,1087,165,1113,152,1184,134,1266,122,1345,116"/>
+<area shape="rect" id="Node000015" href="$nps__main_8h.html" title=" " alt="" coords="848,181,1008,221"/>
+<area shape="poly" id="edge15_Node000003_Node000015" title=" " alt="" coords="1345,132,1027,184,1009,187,1008,182,1026,179,1344,126"/>
+<area shape="rect" id="Node000018" href="$nps__sensor__accel_8c.html" title=" " alt="" coords="1083,181,1243,221"/>
+<area shape="poly" id="edge23_Node000003_Node000018" title=" " alt="" coords="1366,140,1224,184,1222,179,1365,135"/>
+<area shape="rect" id="Node000019" href="$nps__sensor__airspeed_8c.html" title="Simulated airspeed for NPS simulator." alt="" coords="1267,181,1427,221"/>
+<area shape="poly" id="edge24_Node000003_Node000019" title=" " alt="" coords="1410,145,1369,183,1365,179,1407,141"/>
+<area shape="rect" id="Node000020" href="$nps__sensor__aoa_8c.html" title="Simulated Angle of Attack of the Wind for NPS simulator." alt="" coords="1451,181,1611,221"/>
+<area shape="poly" id="edge25_Node000003_Node000020" title=" " alt="" coords="1471,141,1512,179,1508,183,1467,145"/>
+<area shape="rect" id="Node000021" href="$nps__sensor__gps_8c.html" title=" " alt="" coords="1635,181,1795,221"/>
+<area shape="poly" id="edge27_Node000003_Node000021" title=" " alt="" coords="1513,135,1655,179,1653,184,1511,140"/>
+<area shape="rect" id="Node000022" href="$nps__sensor__gyro_8c.html" title=" " alt="" coords="1819,181,1979,221"/>
+<area shape="poly" id="edge28_Node000003_Node000022" title=" " alt="" coords="1533,128,1807,179,1819,181,1818,186,1806,184,1532,134"/>
+<area shape="rect" id="Node000023" href="$nps__sensor__mag_8c.html" title=" " alt="" coords="2003,181,2163,221"/>
+<area shape="poly" id="edge29_Node000003_Node000023" title=" " alt="" coords="1533,121,1743,144,1991,179,2003,181,2002,186,1990,184,1742,150,1532,126"/>
+<area shape="rect" id="Node000024" href="$nps__sensor__sideslip_8c.html" title="Simulated Angle of Attack of the Wind for NPS simulator." alt="" coords="2187,181,2347,221"/>
+<area shape="poly" id="edge30_Node000003_Node000024" title=" " alt="" coords="1533,117,1820,139,1998,156,2175,179,2187,181,2186,186,2174,184,1997,161,1820,144,1532,123"/>
+<area shape="rect" id="Node000025" href="$nps__sensor__sonar_8c.html" title="Simulated sonar for NPS simulator." alt="" coords="2371,181,2531,221"/>
+<area shape="poly" id="edge31_Node000003_Node000025" title=" " alt="" coords="1533,115,1896,134,2127,152,2359,179,2371,180,2370,186,2358,184,2126,157,1896,139,1532,120"/>
+<area shape="rect" id="Node000026" href="$nps__sensor__temperature_8c.html" title=" " alt="" coords="2555,181,2725,221"/>
+<area shape="poly" id="edge32_Node000003_Node000026" title=" " alt="" coords="1533,114,1719,119,1970,130,2255,149,2543,179,2555,180,2554,186,2542,184,2255,155,1970,135,1719,124,1533,119"/>
+<area shape="rect" id="Node000027" href="$nps__sensors_8c.html" title=" " alt="" coords="2749,181,2909,221"/>
+<area shape="poly" id="edge33_Node000003_Node000027" title=" " alt="" coords="1533,112,1748,115,2047,125,2390,144,2566,160,2738,179,2750,180,2749,186,2737,184,2565,165,2390,150,2047,130,1748,120,1532,117"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="692,230,601,272,599,267,690,225"/>
+<area shape="rect" id="Node000012" href="$nps__atmosphere_8c.html" title="Atmosphere model (pressure, wind) for NPS." alt="" coords="664,269,824,309"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="747,235,747,269,741,269,741,235"/>
+<area shape="rect" id="Node000013" href="$nps__main__common_8c.html" title=" " alt="" coords="848,269,1008,309"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="798,225,889,267,887,272,796,230"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="838,222,1032,267,1031,272,837,227"/>
+<area shape="poly" id="edge17_Node000015_Node000009" title=" " alt="" coords="835,224,731,239,650,248,569,257,468,272,457,274,456,269,468,267,569,252,649,243,730,234,834,219"/>
+<area shape="poly" id="edge18_Node000015_Node000010" title=" " alt="" coords="835,227,641,272,640,267,834,222"/>
+<area shape="poly" id="edge19_Node000015_Node000013" title=" " alt="" coords="931,235,931,269,925,269,925,235"/>
+<area shape="poly" id="edge20_Node000015_Node000014" title=" " alt="" coords="982,225,1073,267,1071,272,980,230"/>
+<area shape="rect" id="Node000016" href="$nps__flightgear_8c.html" title=" " alt="" coords="1216,269,1376,309"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1022,222,1216,267,1215,272,1021,227"/>
+<area shape="rect" id="Node000017" href="$nps__main__sitl_8c.html" title=" " alt="" coords="1400,269,1560,309"/>
+<area shape="poly" id="edge21_Node000015_Node000017" title=" " alt="" coords="1022,213,1388,267,1400,269,1399,274,1388,272,1021,218"/>
 </map>

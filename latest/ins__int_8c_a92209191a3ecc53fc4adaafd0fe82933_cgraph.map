@@ -1,27 +1,53 @@
 <map id="baro_cb" name="baro_cb">
-<area shape="rect" id="node1" title=" " alt="" coords="5,173,79,200"/>
-<area shape="rect" id="node2" href="$ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c" title="update ins state from vertical filter" alt="" coords="133,5,287,32"/>
-<area shape="rect" id="node3" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="138,57,282,98"/>
-<area shape="rect" id="node4" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="127,123,293,149"/>
-<area shape="rect" id="node16" href="$pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float)." alt="" coords="165,173,255,200"/>
-<area shape="rect" id="node18" href="$vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af" title=" " alt="" coords="165,224,255,251"/>
-<area shape="rect" id="node19" href="$vf__float_8c.html#a067f2a1bed73d1940c35450706a56265" title=" " alt="" coords="165,275,255,301"/>
-<area shape="rect" id="node21" href="$vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49" title=" " alt="" coords="147,329,273,356"/>
-<area shape="rect" id="node5" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="341,123,512,149"/>
-<area shape="rect" id="node6" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="591,20,695,47"/>
-<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="783,121,936,148"/>
-<area shape="rect" id="node10" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="572,172,715,199"/>
-<area shape="rect" id="node12" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="573,71,714,97"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="592,223,695,249"/>
-<area shape="rect" id="node7" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="805,20,913,47"/>
-<area shape="rect" id="node8" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="807,71,912,97"/>
-<area shape="rect" id="node11" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="783,172,935,199"/>
-<area shape="rect" id="node14" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="783,223,935,249"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="789,274,929,315"/>
-<area shape="rect" id="node17" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="374,173,479,200"/>
-<area shape="rect" id="node20" href="$vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a" title="Update altitude." alt="" coords="369,275,485,301"/>
-<area shape="rect" id="node22" href="$vf__extended__float_8c.html#aa7f8c70d85481ee00728646ab5d82e2a" title=" " alt="" coords="345,337,508,364"/>
-<area shape="rect" id="node23" href="$vf__extended__float_8c.html#a31bb1d175d080d2e051c93c1d2564413" title="Update sensor &quot;with&quot; offset (baro, sonar)." alt="" coords="560,339,727,365"/>
-<area shape="rect" id="node24" href="$vf__extended__float_8c.html#a83945f80d58c4d2844f3b3339ff28193" title=" " alt="" coords="775,340,944,367"/>
-<area shape="rect" id="node25" href="$vf__extended__float_8c.html#a4713ab66140969c6086d08ab69b70109" title="Update obstacle height." alt="" coords="992,340,1137,367"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,169,79,195"/>
+<area shape="rect" id="Node000002" href="$ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c" title="update ins state from vertical filter" alt="" coords="133,5,287,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,168,72,108,95,72,125,41,135,35,138,39,128,45,99,75,77,110,50,170"/>
+<area shape="rect" id="Node000003" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="138,55,282,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="53,167,84,137,125,105,136,99,139,104,128,110,88,141,57,171"/>
+<area shape="rect" id="Node000004" href="$group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="127,120,293,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="78,169,126,154,151,147,153,152,127,159,80,174"/>
+<area shape="rect" id="Node000016" href="$pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float)." alt="" coords="165,169,255,195"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="79,179,151,179,151,185,79,185"/>
+<area shape="rect" id="Node000018" href="$vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af" title=" " alt="" coords="165,219,255,244"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="80,190,154,212,152,217,78,195"/>
+<area shape="rect" id="Node000019" href="$vf__float_8c.html#a067f2a1bed73d1940c35450706a56265" title=" " alt="" coords="165,268,255,293"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="56,193,87,223,128,253,152,264,150,269,125,258,83,227,53,197"/>
+<area shape="rect" id="Node000021" href="$vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49" title=" " alt="" coords="147,321,273,347"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="51,194,79,247,101,278,128,304,144,313,141,318,125,308,97,281,74,250,46,196"/>
+<area shape="rect" id="Node000005" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="341,119,512,144"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="293,129,328,129,328,135,293,135"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="591,17,695,43"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="445,116,495,85,559,52,578,44,579,49,561,56,498,89,448,121"/>
+<area shape="rect" id="Node000009" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="783,116,936,141"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="512,128,769,127,769,132,512,133"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="572,168,715,193"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="484,141,574,162,573,168,483,147"/>
+<area shape="rect" id="Node000012" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="573,67,714,92"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="480,116,576,93,577,98,481,121"/>
+<area shape="rect" id="Node000013" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="592,217,695,243"/>
+<area shape="poly" id="edge14_Node000005_Node000013" title=" " alt="" coords="485,142,513,154,529,167,538,179,547,191,561,202,580,212,578,216,559,207,543,195,534,182,525,170,511,159,483,147"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="805,17,913,43"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="696,27,792,27,792,33,696,33"/>
+<area shape="rect" id="Node000008" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="807,67,912,92"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="696,39,794,62,793,67,695,44"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="783,167,935,192"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="715,178,770,177,770,183,715,183"/>
+<area shape="poly" id="edge12_Node000012_Node000008" title=" " alt="" coords="715,77,793,77,793,82,715,82"/>
+<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="700,89,790,110,789,116,699,95"/>
+<area shape="rect" id="Node000014" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="783,216,935,241"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="695,227,770,227,770,232,695,232"/>
+<area shape="rect" id="Node000015" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="789,266,929,306"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="694,240,777,262,775,267,692,245"/>
+<area shape="rect" id="Node000017" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="374,169,479,195"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="256,179,360,179,360,185,256,185"/>
+<area shape="rect" id="Node000020" href="$vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a" title="Update altitude." alt="" coords="369,268,485,293"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="256,278,355,278,355,283,256,283"/>
+<area shape="rect" id="Node000022" href="$vf__extended__float_8c.html#aa7f8c70d85481ee00728646ab5d82e2a" title=" " alt="" coords="345,328,508,353"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="274,333,332,335,332,340,274,339"/>
+<area shape="rect" id="Node000023" href="$vf__extended__float_8c.html#a31bb1d175d080d2e051c93c1d2564413" title="Update sensor &quot;with&quot; offset (baro, sonar)." alt="" coords="560,329,727,355"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="508,339,546,339,546,344,508,344"/>
+<area shape="rect" id="Node000024" href="$vf__extended__float_8c.html#a83945f80d58c4d2844f3b3339ff28193" title=" " alt="" coords="775,331,944,356"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="727,340,761,340,761,345,727,345"/>
+<area shape="rect" id="Node000025" href="$vf__extended__float_8c.html#a4713ab66140969c6086d08ab69b70109" title="Update obstacle height." alt="" coords="992,331,1137,356"/>
+<area shape="poly" id="edge26_Node000024_Node000025" title=" " alt="" coords="944,341,978,341,978,346,944,346"/>
 </map>

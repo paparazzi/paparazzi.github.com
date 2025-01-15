@@ -1,26 +1,66 @@
 <map id="stateSetPositionNed_f" name="stateSetPositionNed_f">
-<area shape="rect" id="node1" title="Set position from local NED coordinates (float)." alt="" coords="987,137,1153,164"/>
-<area shape="rect" id="node2" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="830,8,901,35"/>
-<area shape="rect" id="node4" href="$ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="593,208,722,235"/>
-<area shape="rect" id="node5" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="794,63,937,105"/>
-<area shape="rect" id="node8" href="$ins__mekf__wind__wrapper_8c.html#a83584ab974d0141a5807832d8d5f907a" title="update state interface" alt="" coords="792,137,939,164"/>
-<area shape="rect" id="node12" href="$nps__autopilot_8h.html#a636593c9bb6482b2a36d64bef4975310" title=" " alt="" coords="795,256,936,283"/>
-<area shape="rect" id="node3" href="$ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="590,5,725,32"/>
-<area shape="rect" id="node6" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="621,56,694,83"/>
-<area shape="rect" id="node7" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="347,49,490,90"/>
-<area shape="rect" id="node9" href="$ins__mekf__wind__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="613,107,702,133"/>
-<area shape="rect" id="node11" href="$ins__mekf__wind__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_mekf_wind_propagate on new gyro measurements." alt="" coords="621,157,694,184"/>
-<area shape="rect" id="node10" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="315,136,523,163"/>
-<area shape="rect" id="node13" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="591,335,723,361"/>
-<area shape="rect" id="node21" href="$nps__autopilot_8h.html#a12870aaa609d4860004be3cec4c8cf2a" title=" " alt="" coords="571,259,744,285"/>
-<area shape="rect" id="node14" href="$ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="349,436,488,463"/>
-<area shape="rect" id="node17" href="$ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="345,284,492,311"/>
-<area shape="rect" id="node19" href="$ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e" title=" " alt="" coords="159,335,254,361"/>
-<area shape="rect" id="node20" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="161,385,252,412"/>
-<area shape="rect" id="node15" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="167,436,246,463"/>
-<area shape="rect" id="node16" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="5,360,99,387"/>
-<area shape="rect" id="node18" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="173,284,240,311"/>
-<area shape="rect" id="node22" href="$nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title=" " alt="" coords="329,233,508,260"/>
-<area shape="rect" id="node23" href="$nps__main__sitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title=" " alt="" coords="147,233,267,260"/>
-<area shape="rect" id="node24" href="$nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="25,233,79,260"/>
+<area shape="rect" id="Node000001" title="Set position from local NED coordinates (float)." alt="" coords="1052,128,1219,153"/>
+<area shape="rect" id="Node000002" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="895,8,966,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1107,121,1060,85,1003,50,965,34,967,29,1005,45,1063,81,1110,117"/>
+<area shape="rect" id="Node000004" href="$ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="658,203,787,228"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1057,159,1004,169,788,207,787,202,1004,163,1056,153"/>
+<area shape="rect" id="Node000005" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="859,59,1002,99"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1078,127,997,102,999,97,1080,121"/>
+<area shape="rect" id="Node000008" href="$ins__mekf__wind__wrapper_8c.html#a83584ab974d0141a5807832d8d5f907a" title="update state interface" alt="" coords="857,128,1004,153"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1038,143,1004,143,1004,138,1038,138"/>
+<area shape="rect" id="Node000012" href="$nps__autopilot__rover_8c.html#a636593c9bb6482b2a36d64bef4975310" title=" " alt="" coords="860,252,1001,277"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1103,163,954,254,952,249,1100,158"/>
+<area shape="rect" id="Node000003" href="$ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="655,5,790,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="881,23,790,22,790,16,882,17"/>
+<area shape="rect" id="Node000006" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="686,55,759,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="846,77,760,72,760,67,846,72"/>
+<area shape="rect" id="Node000007" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="413,43,555,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="672,69,556,67,556,62,672,64"/>
+<area shape="rect" id="Node000009" href="$ins__mekf__wind__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="678,104,767,129"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="843,133,767,124,768,119,844,128"/>
+<area shape="rect" id="Node000011" href="$ins__mekf__wind__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_mekf_wind_propagate on new gyro measurements." alt="" coords="686,153,759,179"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="844,154,760,164,759,159,843,149"/>
+<area shape="rect" id="Node000010" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="380,108,588,133"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="664,120,588,122,588,116,664,115"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="672,159,551,136,552,131,673,154"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="863,251,776,231,778,225,864,246"/>
+<area shape="rect" id="Node000013" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="657,404,789,429"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="903,288,743,406,740,402,900,283"/>
+<area shape="rect" id="Node000021" href="$ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="657,252,789,277"/>
+<area shape="poly" id="edge25_Node000012_Node000021" title=" " alt="" coords="846,267,789,267,789,262,846,262"/>
+<area shape="rect" id="Node000026" href="$nps__autopilot__rover_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title=" " alt="" coords="636,305,809,331"/>
+<area shape="poly" id="edge32_Node000012_Node000026" title=" " alt="" coords="868,283,773,308,772,303,866,278"/>
+<area shape="rect" id="Node000014" href="$ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="415,355,553,380"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="647,404,546,383,547,377,648,399"/>
+<area shape="rect" id="Node000017" href="$ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="411,404,557,429"/>
+<area shape="poly" id="edge18_Node000013_Node000017" title=" " alt="" coords="643,419,558,419,558,414,643,414"/>
+<area shape="rect" id="Node000019" href="$ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e" title=" " alt="" coords="192,453,287,479"/>
+<area shape="poly" id="edge21_Node000013_Node000019" title=" " alt="" coords="650,435,588,445,422,460,287,467,287,462,422,455,588,439,649,429"/>
+<area shape="rect" id="Node000020" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="194,504,285,529"/>
+<area shape="poly" id="edge23_Node000013_Node000020" title=" " alt="" coords="679,437,589,467,505,485,422,499,285,515,285,510,421,494,504,480,587,462,678,432"/>
+<area shape="rect" id="Node000015" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="200,355,279,380"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="401,370,279,370,279,365,401,365"/>
+<area shape="rect" id="Node000016" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="5,428,99,453"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="187,382,148,395,76,430,74,426,146,390,186,377"/>
+<area shape="rect" id="Node000018" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="206,404,273,429"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="396,419,273,419,273,414,396,414"/>
+<area shape="poly" id="edge20_Node000018_Node000016" title=" " alt="" coords="193,425,99,437,99,432,192,420"/>
+<area shape="poly" id="edge22_Node000019_Node000016" title=" " alt="" coords="178,460,99,450,99,444,179,455"/>
+<area shape="poly" id="edge24_Node000020_Node000016" title=" " alt="" coords="180,505,146,494,73,456,75,451,148,489,181,500"/>
+<area shape="rect" id="Node000022" href="$ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="445,256,523,281"/>
+<area shape="poly" id="edge26_Node000021_Node000022" title=" " alt="" coords="643,269,523,271,523,265,643,263"/>
+<area shape="rect" id="Node000024" href="$ins__skeleton_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="447,157,521,183"/>
+<area shape="poly" id="edge28_Node000021_Node000024" title=" " alt="" coords="648,249,635,243,619,231,610,220,601,208,587,198,553,184,520,177,521,172,555,179,589,193,605,204,614,216,623,228,637,238,650,245"/>
+<area shape="rect" id="Node000025" href="$ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="451,207,517,232"/>
+<area shape="poly" id="edge30_Node000021_Node000025" title=" " alt="" coords="642,252,517,228,518,223,643,247"/>
+<area shape="rect" id="Node000023" href="$ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="147,207,332,232"/>
+<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="431,261,302,235,303,229,432,256"/>
+<area shape="poly" id="edge29_Node000024_Node000023" title=" " alt="" coords="434,183,303,209,302,204,433,177"/>
+<area shape="poly" id="edge31_Node000025_Node000023" title=" " alt="" coords="437,222,332,222,332,217,437,217"/>
+<area shape="rect" id="Node000027" href="$nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title=" " alt="" coords="395,305,573,331"/>
+<area shape="poly" id="edge33_Node000026_Node000027" title=" " alt="" coords="622,321,573,321,573,315,622,315"/>
+<area shape="rect" id="Node000028" href="$nps__main__sitl_8c.html#a245c6d75dd48b11ac0047073dc4f818a" title=" " alt="" coords="179,305,299,331"/>
+<area shape="poly" id="edge34_Node000027_Node000028" title=" " alt="" coords="381,321,300,321,300,315,381,315"/>
+<area shape="rect" id="Node000029" href="$nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="25,305,79,331"/>
+<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="165,321,79,321,79,315,165,315"/>
 </map>

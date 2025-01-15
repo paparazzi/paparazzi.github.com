@@ -1,18 +1,33 @@
 <map id="sw/airborne/firmwares/rotorcraft/autopilot_rc_helpers.h" name="sw/airborne/firmwares/rotorcraft/autopilot_rc_helpers.h">
-<area shape="rect" id="node1" title="Some helper functions to check RC sticks." alt="" coords="963,5,1129,61"/>
-<area shape="rect" id="node2" href="$autopilot__arming__common_8h.html" title="Arming procedure for rotorcraft, common definitions." alt="" coords="196,117,363,173"/>
-<area shape="rect" id="node9" href="$rotorcraft_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="387,117,553,173"/>
-<area shape="rect" id="node10" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="577,117,744,173"/>
-<area shape="rect" id="node11" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="768,117,935,173"/>
-<area shape="rect" id="node12" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="959,117,1133,173"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC." alt="" coords="1158,109,1329,180"/>
-<area shape="rect" id="node14" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="1353,117,1523,173"/>
-<area shape="rect" id="node15" href="$stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="1547,117,1729,173"/>
-<area shape="rect" id="node16" href="$rover_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1753,124,1921,165"/>
-<area shape="rect" id="node3" href="$autopilot__arming__switch_8h.html" title="Arm the motors using a switch." alt="" coords="5,228,172,284"/>
-<area shape="rect" id="node4" href="$autopilot__arming__throttle_8h.html" title="Automatically arm the motors when applying throttle." alt="" coords="196,228,363,284"/>
-<area shape="rect" id="node5" href="$autopilot__arming__yaw_8h.html" title="Arm the motors by with max yaw stick." alt="" coords="387,228,553,284"/>
-<area shape="rect" id="node6" href="$autopilot__arming_8h.html" title="Arming procedure for rotorcraft Several options can be selected:" alt="" coords="387,332,553,388"/>
-<area shape="rect" id="node7" href="$rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="292,436,459,492"/>
-<area shape="rect" id="node8" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="483,436,649,492"/>
+<area shape="rect" id="Node000001" title="Some helper functions to check RC sticks." alt="" coords="963,5,1129,60"/>
+<area shape="rect" id="Node000002" href="$autopilot__arming__common_8h.html" title="Arming procedure for rotorcraft, common definitions." alt="" coords="196,115,363,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="949,41,832,48,688,61,532,82,376,111,349,118,348,113,375,105,531,76,688,56,832,43,949,35"/>
+<area shape="rect" id="Node000009" href="$rotorcraft_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="387,115,553,170"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="949,46,770,70,668,88,567,111,541,118,540,113,565,105,667,83,769,65,949,41"/>
+<area shape="rect" id="Node000010" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="577,115,744,170"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="950,59,757,111,735,118,733,113,756,105,949,54"/>
+<area shape="rect" id="Node000011" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="768,115,935,170"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="988,69,900,117,898,113,985,64"/>
+<area shape="rect" id="Node000012" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="959,115,1133,170"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1049,74,1049,115,1043,115,1043,74"/>
+<area shape="rect" id="Node000013" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC." alt="" coords="1158,108,1329,177"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1108,65,1183,105,1180,110,1105,69"/>
+<area shape="rect" id="Node000014" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="1353,115,1523,170"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1144,54,1341,105,1365,113,1363,118,1340,111,1142,59"/>
+<area shape="rect" id="Node000015" href="$stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="1547,115,1729,170"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1143,41,1326,66,1432,84,1536,105,1563,113,1561,118,1535,111,1431,89,1326,71,1143,47"/>
+<area shape="rect" id="Node000016" href="$rover_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1753,123,1921,163"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="1144,35,1265,42,1414,55,1578,75,1741,105,1790,120,1789,125,1740,111,1578,81,1414,60,1264,47,1143,40"/>
+<area shape="rect" id="Node000003" href="$autopilot__arming__switch_8h.html" title="Arm the motors using a switch." alt="" coords="5,225,172,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,179,137,227,134,223,220,175"/>
+<area shape="rect" id="Node000004" href="$autopilot__arming__throttle_8h.html" title="Automatically arm the motors when applying throttle." alt="" coords="196,225,363,280"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="282,184,282,225,277,225,277,184"/>
+<area shape="rect" id="Node000005" href="$autopilot__arming__yaw_8h.html" title="Arm the motors by with max yaw stick." alt="" coords="387,225,553,280"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="339,175,424,223,422,227,336,179"/>
+<area shape="rect" id="Node000006" href="$autopilot__arming_8h.html" title="Arming procedure for rotorcraft Several options can be selected:" alt="" coords="387,328,553,383"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="473,294,473,328,467,328,467,294"/>
+<area shape="rect" id="Node000007" href="$rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="292,431,459,485"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="438,394,402,432,398,429,434,391"/>
+<area shape="rect" id="Node000008" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="483,431,649,485"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="506,391,543,429,539,432,503,394"/>
 </map>

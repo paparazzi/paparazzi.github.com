@@ -1,20 +1,42 @@
 <map id="stateSetAccelBody_i" name="stateSetAccelBody_i">
-<area shape="rect" id="node1" title="Set acceleration in Body coordinates (int)." alt="" coords="659,175,813,201"/>
-<area shape="rect" id="node2" href="$ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="477,19,555,45"/>
-<area shape="rect" id="node4" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="481,77,551,104"/>
-<area shape="rect" id="node6" href="$ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="421,145,611,172"/>
-<area shape="rect" id="node10" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="445,197,587,238"/>
-<area shape="rect" id="node13" href="$ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="447,263,585,289"/>
-<area shape="rect" id="node16" href="$ins__skeleton_8c.html#a0beee2dfe3232be75bafb5f5dbd4d3ef" title=" " alt="" coords="431,313,601,340"/>
-<area shape="rect" id="node3" href="$ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="241,5,371,32"/>
-<area shape="rect" id="node5" href="$ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="239,56,373,83"/>
-<area shape="rect" id="node7" href="$ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="255,107,357,133"/>
-<area shape="rect" id="node9" href="$ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="257,157,355,184"/>
-<area shape="rect" id="node8" href="$ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="45,127,151,153"/>
-<area shape="rect" id="node11" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="269,208,343,235"/>
-<area shape="rect" id="node12" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="27,197,169,238"/>
-<area shape="rect" id="node14" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="267,263,345,289"/>
-<area shape="rect" id="node15" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="51,263,145,289"/>
-<area shape="rect" id="node17" href="$ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="267,313,345,340"/>
-<area shape="rect" id="node18" href="$ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="5,313,191,340"/>
+<area shape="rect" id="Node000001" title="Set acceleration in Body coordinates (int)." alt="" coords="711,156,865,181"/>
+<area shape="rect" id="Node000002" href="$ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="529,7,607,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="768,147,723,95,694,68,661,46,634,34,607,27,608,22,636,29,664,41,697,64,727,91,772,143"/>
+<area shape="rect" id="Node000004" href="$ins__gps__passthrough_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="529,56,607,81"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="757,150,713,122,662,95,607,78,608,73,664,90,716,117,760,146"/>
+<area shape="rect" id="Node000006" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="533,105,603,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="718,155,603,129,604,123,719,150"/>
+<area shape="rect" id="Node000008" href="$ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="473,156,663,181"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="697,171,663,171,663,166,697,166"/>
+<area shape="rect" id="Node000012" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="497,209,639,249"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="728,188,640,212,639,207,727,182"/>
+<area shape="rect" id="Node000015" href="$ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="499,277,637,303"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="764,193,719,228,664,263,621,280,619,275,661,258,716,224,761,189"/>
+<area shape="rect" id="Node000018" href="$ins__skeleton_8c.html#a0beee2dfe3232be75bafb5f5dbd4d3ef" title=" " alt="" coords="483,335,653,360"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="774,194,730,255,699,288,664,316,621,337,619,332,661,312,695,284,725,251,770,191"/>
+<area shape="rect" id="Node000003" href="$ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="267,5,397,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="515,22,397,21,397,16,515,16"/>
+<area shape="rect" id="Node000005" href="$ins__gps__passthrough_8c.html#a65b4389487e1468dd9245eacf2ce07b3" title=" " alt="" coords="239,55,425,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="515,71,426,71,426,65,515,66"/>
+<area shape="rect" id="Node000007" href="$ins__ext__pose_8c.html#aa0bf8e8aad184e5324c34d15f376f2bb" title=" " alt="" coords="265,104,399,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="519,120,400,120,400,114,519,115"/>
+<area shape="rect" id="Node000009" href="$ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="281,153,383,179"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="460,170,383,169,383,164,460,165"/>
+<area shape="rect" id="Node000011" href="$ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="283,203,381,228"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="490,187,381,208,380,203,489,181"/>
+<area shape="rect" id="Node000010" href="$ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="45,171,151,196"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="267,173,151,182,151,177,267,168"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="269,210,151,193,151,188,270,204"/>
+<area shape="rect" id="Node000013" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="295,252,369,277"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="483,244,369,262,368,257,483,239"/>
+<area shape="rect" id="Node000014" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="27,237,169,277"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="281,266,169,262,170,256,281,260"/>
+<area shape="rect" id="Node000016" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="293,301,371,327"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="485,301,372,313,371,307,485,296"/>
+<area shape="rect" id="Node000017" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="51,301,145,327"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="279,317,145,317,145,311,279,311"/>
+<area shape="rect" id="Node000019" href="$ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="293,351,371,376"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="469,357,372,363,372,358,469,351"/>
+<area shape="rect" id="Node000020" href="$ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="5,351,191,376"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="279,366,191,366,191,361,279,361"/>
 </map>

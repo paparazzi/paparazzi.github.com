@@ -1,52 +1,105 @@
 <map id="sw/airborne/modules/nav/common_flight_plan.h" name="sw/airborne/modules/nav/common_flight_plan.h">
-<area shape="rect" id="node1" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="3882,5,4081,47"/>
-<area shape="rect" id="node2" href="$nav_8h.html" title="Fixedwing Navigation library." alt="" coords="4043,199,4210,240"/>
-<area shape="rect" id="node45" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="3703,102,3873,143"/>
-<area shape="rect" id="node46" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="3898,102,4065,143"/>
-<area shape="rect" id="node47" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="4089,102,4284,143"/>
-<area shape="rect" id="node48" href="$blocks_8c.html" title="PPRZ specific mission block implementation." alt="" coords="4309,95,4467,151"/>
-<area shape="rect" id="node49" href="$common__flight__plan_8c.html" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="4492,102,4689,143"/>
-<area shape="rect" id="node50" href="$common__nav_8h.html" title=" " alt="" coords="2549,102,2707,143"/>
-<area shape="rect" id="node3" href="$fixedwing_2autopilot__firmware_8c.html" title="Fixedwing specific autopilot interface and initialization." alt="" coords="7163,288,7330,344"/>
-<area shape="rect" id="node4" href="$fixedwing_2autopilot__static_8c.html" title=" " alt="" coords="7354,288,7521,344"/>
-<area shape="rect" id="node5" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles." alt="" coords="7545,288,7745,344"/>
-<area shape="rect" id="node6" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles." alt="" coords="7770,295,8009,337"/>
-<area shape="rect" id="node7" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles." alt="" coords="8033,295,8287,337"/>
-<area shape="rect" id="node8" href="$nav_8c.html" title="Fixedwing functions to compute navigation." alt="" coords="8311,295,8478,337"/>
-<area shape="rect" id="node9" href="$stabilization__adaptive_8c.html" title="Fixed wing adaptive control." alt="" coords="453,288,635,344"/>
-<area shape="rect" id="node10" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control." alt="" coords="659,288,834,344"/>
-<area shape="rect" id="node11" href="$flight__benchmark_8c.html" title=" " alt="" coords="859,295,1085,337"/>
-<area shape="rect" id="node12" href="$cam__roll_8c.html" title=" " alt="" coords="1110,295,1287,337"/>
-<area shape="rect" id="node13" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="1312,295,1525,337"/>
-<area shape="rect" id="node14" href="$rc__settings_8c.html" title=" " alt="" coords="1550,295,1709,337"/>
-<area shape="rect" id="node15" href="$shift__tracking_8c.html" title=" " alt="" coords="1733,295,1891,337"/>
-<area shape="rect" id="node16" href="$nav__survey__polygon__gvf_8c.html" title=" " alt="" coords="1916,288,2087,344"/>
-<area shape="rect" id="node17" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="2111,295,2270,337"/>
-<area shape="rect" id="node18" href="$ins__gps__passthrough__utm_8c.html" title="Simply passes GPS UTM position and velocity through to the state interface." alt="" coords="2295,295,2524,337"/>
-<area shape="rect" id="node19" href="$copilot__fixedwing_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="224,295,429,337"/>
-<area shape="rect" id="node20" href="$mission__fw__nav_8c.html" title="mission navigation for fixedwing aircraft" alt="" coords="5,295,200,337"/>
-<area shape="rect" id="node21" href="$formation_8c.html" title="library for formation flight" alt="" coords="2549,295,2707,337"/>
-<area shape="rect" id="node22" href="$potential_8h.html" title="flying with potential field to avoid collision" alt="" coords="2731,295,2890,337"/>
-<area shape="rect" id="node23" href="$tcas_8c.html" title="Collision avoidance library." alt="" coords="2914,295,3073,337"/>
-<area shape="rect" id="node24" href="$nav__bungee__takeoff_8c.html" title="Takeoff functions for bungee takeoff." alt="" coords="3097,295,3293,337"/>
-<area shape="rect" id="node25" href="$nav__catapult_8c.html" title=" " alt="" coords="3317,295,3475,337"/>
-<area shape="rect" id="node26" href="$nav__cube_8c.html" title="Fixedwing Navigation in a cube towards a center." alt="" coords="3499,295,3658,337"/>
-<area shape="rect" id="node27" href="$nav__drop_8h.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed." alt="" coords="3682,295,3841,337"/>
-<area shape="rect" id="node28" href="$nav__flower_8c.html" title="from OSAM advanced navigation routines" alt="" coords="3865,295,4023,337"/>
-<area shape="rect" id="node29" href="$nav__gls_8c.html" title="gps landing system" alt="" coords="4047,295,4206,337"/>
-<area shape="rect" id="node30" href="$nav__lace_8c.html" title=" " alt="" coords="4230,295,4389,337"/>
-<area shape="rect" id="node31" href="$nav__launcher_8c.html" title="Pneumatic launcher system See video of the system: https://www.youtube.com/watch?v=qc1uwH&#45;8Dbw Launch..." alt="" coords="4413,295,4571,337"/>
-<area shape="rect" id="node32" href="$nav__line_8c.html" title="Fixedwing navigation along a line with nice U&#45;turns." alt="" coords="4595,295,4754,337"/>
-<area shape="rect" id="node33" href="$nav__line__border_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction" alt="" coords="4779,295,4947,337"/>
-<area shape="rect" id="node34" href="$nav__line__osam_8c.html" title="Flight line from OSAM advanced navigation routines." alt="" coords="4971,295,5133,337"/>
-<area shape="rect" id="node35" href="$nav__rosette_8c.html" title="Adaptive flower pattern for cloud exploration." alt="" coords="5158,295,5317,337"/>
-<area shape="rect" id="node36" href="$nav__skid__landing_8c.html" title="Landing on skidpads See video of the landing: https://www.youtube.com/watch?v=aYrB7s3oeX4 Standard la..." alt="" coords="5341,295,5520,337"/>
-<area shape="rect" id="node37" href="$nav__smooth_8c.html" title="Smooth navigation to wp_a along an arc (around wp_cd), a segment (from wp_rd to wp_ta) and a second a..." alt="" coords="5545,295,5703,337"/>
-<area shape="rect" id="node38" href="$nav__spiral_8c.html" title="Fixedwing navigation in a spiral/helix." alt="" coords="5727,295,5886,337"/>
-<area shape="rect" id="node39" href="$nav__spiral__3D_8c.html" title="Fixedwing navigation in a 3D spiral." alt="" coords="5910,295,6069,337"/>
-<area shape="rect" id="node40" href="$nav__survey__disc_8c.html" title=" " alt="" coords="6093,295,6267,337"/>
-<area shape="rect" id="node41" href="$nav__survey__poly__osam_8c.html" title=" " alt="" coords="6291,288,6455,344"/>
-<area shape="rect" id="node42" href="$nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart." alt="" coords="6479,295,6678,337"/>
-<area shape="rect" id="node43" href="$nav__survey__rectangle_8h.html" title=" " alt="" coords="6702,295,6911,337"/>
-<area shape="rect" id="node44" href="$nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings." alt="" coords="6936,295,7139,337"/>
+<area shape="rect" id="Node000001" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="3882,5,4081,45"/>
+<area shape="rect" id="Node000002" href="$nav_8h.html" title="Fixedwing Navigation library." alt="" coords="4043,196,4210,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3869,39,3789,53,3752,63,3720,75,3696,89,3682,105,3680,124,3693,146,3715,163,3749,177,3792,188,3841,197,3947,208,4043,212,4043,217,3946,213,3841,202,3791,194,3748,182,3713,168,3689,150,3675,125,3677,103,3692,85,3718,70,3750,58,3788,48,3868,34"/>
+<area shape="rect" id="Node000054" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="3703,101,3873,141"/>
+<area shape="poly" id="edge45_Node000001_Node000054" title=" " alt="" coords="3931,54,3828,103,3826,98,3929,49"/>
+<area shape="rect" id="Node000079" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="3898,101,4065,141"/>
+<area shape="poly" id="edge46_Node000001_Node000079" title=" " alt="" coords="3984,59,3984,101,3979,101,3979,59"/>
+<area shape="rect" id="Node000083" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="4089,101,4284,141"/>
+<area shape="poly" id="edge47_Node000001_Node000083" title=" " alt="" coords="4036,48,4146,98,4144,103,4034,53"/>
+<area shape="rect" id="Node000084" href="$blocks_8c.html" title="PPRZ specific mission block implementation." alt="" coords="4309,93,4467,148"/>
+<area shape="poly" id="edge48_Node000001_Node000084" title=" " alt="" coords="4091,45,4297,91,4309,94,4308,99,4295,96,4090,51"/>
+<area shape="rect" id="Node000085" href="$common__flight__plan_8c.html" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="4492,101,4689,141"/>
+<area shape="poly" id="edge49_Node000001_Node000085" title=" " alt="" coords="4095,36,4276,59,4480,91,4516,98,4515,103,4480,96,4276,64,4094,41"/>
+<area shape="rect" id="Node000086" href="$common__nav_8h.html" title=" " alt="" coords="2549,101,2707,141"/>
+<area shape="poly" id="edge50_Node000001_Node000086" title=" " alt="" coords="3868,37,2708,117,2707,111,3868,32"/>
+<area shape="rect" id="Node000003" href="$fixedwing_2autopilot__firmware_8c.html" title="Fixedwing specific autopilot interface and initialization." alt="" coords="7163,284,7330,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="4224,215,4844,221,5758,234,6637,254,6960,266,7151,281,7164,283,7163,289,7150,287,6960,272,6637,259,5758,239,4844,227,4224,221"/>
+<area shape="rect" id="Node000004" href="$fixedwing_2autopilot__static_8c.html" title=" " alt="" coords="7354,284,7521,339"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="4224,215,4880,221,5854,232,6794,252,7139,265,7343,281,7354,283,7354,289,7342,287,7139,271,6793,257,5854,238,4880,226,4224,221"/>
+<area shape="rect" id="Node000005" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles." alt="" coords="7545,284,7745,339"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="4223,215,4913,221,5948,234,6948,254,7316,267,7534,281,7545,283,7544,288,7533,287,7316,272,6948,259,5948,239,4913,227,4223,221"/>
+<area shape="rect" id="Node000006" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles." alt="" coords="7770,291,8009,331"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="4224,215,6058,236,7130,255,7525,268,7758,281,7807,289,7806,294,7757,287,7524,273,7129,261,6058,241,4224,221"/>
+<area shape="rect" id="Node000007" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles." alt="" coords="8033,291,8287,331"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="4224,215,5001,222,6189,235,7344,255,7770,267,8022,281,8073,289,8072,294,8021,287,7770,273,7344,260,6189,240,5001,227,4224,221"/>
+<area shape="rect" id="Node000008" href="$nav_8c.html" title="Fixedwing functions to compute navigation." alt="" coords="8311,291,8478,331"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="4224,215,5050,217,6327,226,6983,234,7571,246,8030,261,8193,271,8300,281,8336,289,8335,294,8300,287,8192,276,8030,267,7571,251,6983,240,6327,231,5050,222,4224,220"/>
+<area shape="rect" id="Node000009" href="$stabilization__adaptive_8c.html" title="Fixed wing adaptive control." alt="" coords="453,284,635,339"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="4030,221,3327,226,2269,238,1247,258,870,271,648,287,635,289,635,283,648,281,870,266,1247,252,2269,232,3327,220,4030,215"/>
+<area shape="rect" id="Node000010" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control." alt="" coords="659,284,834,339"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="4030,221,3363,226,2368,238,1408,258,1055,271,847,287,835,289,834,283,846,281,1055,266,1408,253,2368,233,3363,221,4030,215"/>
+<area shape="rect" id="Node000011" href="$flight__benchmark_8c.html" title=" " alt="" coords="859,291,1085,331"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="4030,220,3464,221,2615,228,2165,236,1741,248,1375,265,1099,287,1052,294,1052,289,1098,281,1375,259,1741,243,2165,231,2615,223,3464,215,4030,214"/>
+<area shape="rect" id="Node000012" href="$cam__roll_8c.html" title=" " alt="" coords="1110,291,1287,331"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="4030,221,3446,228,2593,241,1777,261,1477,273,1300,287,1263,294,1262,289,1300,281,1477,268,1777,256,2593,236,3446,223,4030,216"/>
+<area shape="rect" id="Node000013" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="1312,291,1525,331"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="4029,220,3537,222,2816,231,2437,240,2080,251,1771,267,1539,287,1495,294,1494,289,1538,281,1771,261,2079,246,2437,234,2816,226,3537,217,4029,215"/>
+<area shape="rect" id="Node000014" href="$rc__settings_8c.html" title=" " alt="" coords="1550,291,1709,331"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="4030,219,3568,220,2900,226,2549,234,2220,247,1936,264,1722,287,1688,294,1687,289,1721,281,1935,258,2219,241,2549,229,2900,221,3568,214,4030,214"/>
+<area shape="rect" id="Node000015" href="$shift__tracking_8c.html" title=" " alt="" coords="1733,291,1891,331"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="4030,220,3600,221,2985,229,2663,237,2361,249,2101,265,1904,287,1870,294,1869,289,1904,281,2100,260,2360,244,2663,232,2984,224,3600,216,4030,214"/>
+<area shape="rect" id="Node000016" href="$nav__survey__polygon__gvf_8c.html" title=" " alt="" coords="1916,284,2087,339"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="4030,220,3634,224,3076,233,2512,253,2278,268,2100,287,2088,289,2087,284,2100,281,2277,263,2512,248,3076,228,3634,218,4030,215"/>
+<area shape="rect" id="Node000017" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="2111,291,2270,331"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="4029,220,3665,224,3160,234,2653,254,2442,269,2283,287,2250,294,2249,289,2282,281,2442,263,2653,249,3160,229,3665,219,4029,215"/>
+<area shape="rect" id="Node000018" href="$ins__gps__passthrough__utm_8c.html" title="Simply passes GPS UTM position and velocity through to the state interface." alt="" coords="2295,291,2524,331"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="4029,222,3280,244,2851,263,2673,274,2538,287,2492,294,2491,289,2537,281,2673,269,2851,257,3280,238,4029,217"/>
+<area shape="rect" id="Node000019" href="$copilot__fixedwing_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="224,291,429,331"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="4030,221,3290,226,2168,238,1079,258,678,271,442,287,400,294,399,289,441,281,678,266,1079,253,2167,233,3290,221,4030,215"/>
+<area shape="rect" id="Node000020" href="$mission__fw__nav_8c.html" title="mission navigation for fixedwing aircraft" alt="" coords="5,291,200,331"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="4030,220,3249,225,2054,236,893,256,465,270,313,278,212,287,172,294,171,289,212,281,313,273,464,265,893,251,2054,231,3249,220,4029,215"/>
+<area shape="rect" id="Node000021" href="$formation_8c.html" title="library for formation flight" alt="" coords="2549,291,2707,331"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="4030,222,3745,228,3367,241,2993,260,2838,272,2720,287,2687,294,2686,289,2720,281,2837,267,2992,255,3366,235,3744,223,4030,216"/>
+<area shape="rect" id="Node000022" href="$potential_8h.html" title="flying with potential field to avoid collision" alt="" coords="2731,291,2890,331"/>
+<area shape="poly" id="edge21_Node000002_Node000022" title=" " alt="" coords="4030,223,3454,244,3135,262,3003,274,2903,287,2870,294,2869,289,2902,281,3003,269,3135,257,3454,238,4030,217"/>
+<area shape="rect" id="Node000024" href="$tcas_8c.html" title="Collision avoidance library." alt="" coords="2914,291,3073,331"/>
+<area shape="poly" id="edge22_Node000002_Node000024" title=" " alt="" coords="4030,219,3853,222,3617,231,3352,251,3217,267,3086,287,3053,294,3052,289,3085,281,3217,262,3352,246,3617,226,3853,216,4030,214"/>
+<area shape="rect" id="Node000025" href="$nav__bungee__takeoff_8c.html" title="Takeoff functions for bungee takeoff." alt="" coords="3097,291,3293,331"/>
+<area shape="poly" id="edge23_Node000002_Node000025" title=" " alt="" coords="4029,223,3707,242,3507,260,3306,287,3268,294,3267,289,3305,281,3506,255,3707,237,4029,218"/>
+<area shape="rect" id="Node000026" href="$nav__catapult_8c.html" title=" " alt="" coords="3317,291,3475,331"/>
+<area shape="poly" id="edge24_Node000002_Node000026" title=" " alt="" coords="4030,225,3783,245,3636,263,3489,287,3457,294,3456,289,3487,281,3635,257,3783,240,4030,220"/>
+<area shape="rect" id="Node000027" href="$nav__cube_8c.html" title="Fixedwing Navigation in a cube towards a center." alt="" coords="3499,291,3658,331"/>
+<area shape="poly" id="edge25_Node000002_Node000027" title=" " alt="" coords="4030,230,3862,253,3671,287,3641,294,3640,289,3670,281,3861,247,4030,225"/>
+<area shape="rect" id="Node000028" href="$nav__drop_8h.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed." alt="" coords="3682,291,3841,331"/>
+<area shape="poly" id="edge26_Node000002_Node000028" title=" " alt="" coords="4034,242,3854,287,3827,294,3826,289,3853,281,4033,237"/>
+<area shape="rect" id="Node000030" href="$nav__flower_8c.html" title="from OSAM advanced navigation routines" alt="" coords="3865,291,4023,331"/>
+<area shape="poly" id="edge27_Node000002_Node000030" title=" " alt="" coords="4079,245,3982,294,3980,289,4076,240"/>
+<area shape="rect" id="Node000031" href="$nav__gls_8c.html" title="gps landing system" alt="" coords="4047,291,4206,331"/>
+<area shape="poly" id="edge28_Node000002_Node000031" title=" " alt="" coords="4129,250,4129,291,4124,291,4124,250"/>
+<area shape="rect" id="Node000032" href="$nav__lace_8c.html" title=" " alt="" coords="4230,291,4389,331"/>
+<area shape="poly" id="edge29_Node000002_Node000032" title=" " alt="" coords="4177,240,4274,289,4271,294,4174,245"/>
+<area shape="rect" id="Node000033" href="$nav__launcher_8c.html" title="Pneumatic launcher system See video of the system: https://www.youtube.com/watch?v=qc1uwH&#45;8Dbw Launch..." alt="" coords="4413,291,4571,331"/>
+<area shape="poly" id="edge30_Node000002_Node000033" title=" " alt="" coords="4221,237,4402,281,4428,289,4427,294,4401,287,4220,242"/>
+<area shape="rect" id="Node000034" href="$nav__line_8c.html" title="Fixedwing navigation along a line with nice U&#45;turns." alt="" coords="4595,291,4754,331"/>
+<area shape="poly" id="edge31_Node000002_Node000034" title=" " alt="" coords="4224,225,4393,247,4585,281,4614,289,4613,294,4583,287,4392,253,4223,230"/>
+<area shape="rect" id="Node000035" href="$nav__line__border_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction" alt="" coords="4779,291,4947,331"/>
+<area shape="poly" id="edge32_Node000002_Node000035" title=" " alt="" coords="4224,220,4471,240,4619,258,4767,281,4800,289,4798,294,4766,287,4619,263,4471,246,4223,225"/>
+<area shape="rect" id="Node000036" href="$nav__line__osam_8c.html" title="Flight line from OSAM advanced navigation routines." alt="" coords="4971,291,5133,331"/>
+<area shape="poly" id="edge33_Node000002_Node000036" title=" " alt="" coords="4224,216,4367,222,4551,233,4755,252,4959,281,4992,289,4991,294,4958,287,4754,257,4551,238,4367,227,4224,222"/>
+<area shape="rect" id="Node000037" href="$nav__rosette_8c.html" title="Adaptive flower pattern for cloud exploration." alt="" coords="5158,291,5317,331"/>
+<area shape="poly" id="edge34_Node000002_Node000037" title=" " alt="" coords="4224,214,4398,217,4628,226,4886,247,5017,262,5146,281,5178,289,5177,294,5145,287,5017,267,4886,252,4627,232,4398,222,4224,220"/>
+<area shape="rect" id="Node000038" href="$nav__skid__landing_8c.html" title="Landing on skidpads See video of the landing: https://www.youtube.com/watch?v=aYrB7s3oeX4 Standard la..." alt="" coords="5341,291,5520,331"/>
+<area shape="poly" id="edge35_Node000002_Node000038" title=" " alt="" coords="4224,214,4426,215,4701,224,5014,244,5174,260,5330,281,5366,289,5365,294,5329,287,5173,266,5014,249,4701,229,4426,220,4224,219"/>
+<area shape="rect" id="Node000039" href="$nav__smooth_8c.html" title="Smooth navigation to wp_a along an arc (around wp_cd), a segment (from wp_rd to wp_ta) and a second a..." alt="" coords="5545,291,5703,331"/>
+<area shape="poly" id="edge36_Node000002_Node000039" title=" " alt="" coords="4224,216,4509,223,4886,235,5260,255,5415,267,5532,281,5566,289,5565,294,5532,287,5414,272,5259,260,4886,241,4508,228,4224,222"/>
+<area shape="rect" id="Node000040" href="$nav__spiral_8c.html" title="Fixedwing navigation in a spiral/helix." alt="" coords="5727,291,5886,331"/>
+<area shape="poly" id="edge37_Node000002_Node000040" title=" " alt="" coords="4224,216,4542,221,4973,232,5403,252,5581,265,5716,281,5750,289,5749,294,5716,287,5581,271,5403,257,4973,238,4542,226,4224,221"/>
+<area shape="rect" id="Node000041" href="$nav__spiral__3D_8c.html" title="Fixedwing navigation in a 3D spiral." alt="" coords="5910,291,6069,331"/>
+<area shape="poly" id="edge38_Node000002_Node000041" title=" " alt="" coords="4224,215,4575,219,5059,230,5544,249,5746,264,5899,281,5932,289,5931,294,5898,287,5746,269,5544,255,5059,235,4575,225,4224,221"/>
+<area shape="rect" id="Node000042" href="$nav__survey__disc_8c.html" title=" " alt="" coords="6093,291,6267,331"/>
+<area shape="poly" id="edge39_Node000002_Node000042" title=" " alt="" coords="4224,215,4608,219,5145,229,5686,249,5911,263,6082,281,6118,289,6117,294,6081,287,5911,269,5686,254,5145,234,4608,224,4224,220"/>
+<area shape="rect" id="Node000043" href="$nav__survey__poly__osam_8c.html" title=" " alt="" coords="6291,284,6455,339"/>
+<area shape="poly" id="edge40_Node000002_Node000043" title=" " alt="" coords="4224,215,4642,217,5237,225,5547,234,5838,245,6089,261,6279,281,6291,284,6291,289,6278,287,6089,266,5838,251,5547,239,5237,231,4642,222,4224,220"/>
+<area shape="rect" id="Node000044" href="$nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart." alt="" coords="6479,291,6678,331"/>
+<area shape="poly" id="edge41_Node000002_Node000044" title=" " alt="" coords="4224,215,4675,217,5324,227,5664,235,5984,247,6260,262,6468,281,6509,289,6508,294,6468,287,6260,267,5984,252,5664,240,5324,232,4675,223,4224,220"/>
+<area shape="rect" id="Node000045" href="$nav__survey__rectangle_8h.html" title=" " alt="" coords="6702,291,6911,331"/>
+<area shape="poly" id="edge42_Node000002_Node000045" title=" " alt="" coords="4224,215,4710,217,5420,225,5794,234,6146,245,6450,261,6679,281,6722,289,6721,294,6678,287,6449,266,6146,251,5794,239,5420,231,4710,222,4224,220"/>
+<area shape="rect" id="Node000047" href="$nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings." alt="" coords="6936,291,7139,331"/>
+<area shape="poly" id="edge44_Node000002_Node000047" title=" " alt="" coords="4224,214,4751,215,5533,222,5946,230,6335,242,6671,259,6924,281,6966,289,6965,294,6924,287,6671,264,6335,248,5946,236,5533,227,4751,220,4224,220"/>
+<area shape="poly" id="edge43_Node000045_Node000002" title=" " alt="" coords="6732,291,6702,287,6468,266,6157,250,5797,239,5414,230,4693,222,4210,220,4210,215,4693,217,5415,225,5797,233,6158,245,6469,261,6703,281,6732,286"/>
+<area shape="poly" id="edge51_Node000086_Node000002" title=" " alt="" coords="2721,125,4043,207,4043,212,2721,130"/>
+<area shape="poly" id="edge52_Node000086_Node000019" title=" " alt="" coords="2535,127,2194,138,1677,164,1378,185,1066,212,750,246,442,287,402,294,401,289,441,281,750,240,1065,207,1378,180,1676,159,2193,132,2535,121"/>
+<area shape="poly" id="edge53_Node000086_Node000020" title=" " alt="" coords="2535,125,2251,130,1835,142,1348,163,1097,179,851,199,670,216,530,232,391,254,213,287,178,294,177,289,211,281,390,249,530,227,670,210,850,193,1096,174,1348,158,1834,136,2250,125,2535,120"/>
 </map>

@@ -1,42 +1,121 @@
 <map id="nps_fdm_init" name="nps_fdm_init">
-<area shape="rect" id="node1" title="NPS FDM rover init." alt="" coords="5,740,112,767"/>
-<area shape="rect" id="node2" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="207,284,301,311"/>
-<area shape="rect" id="node16" href="$high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca" title="Init first order high pass filter." alt="" coords="160,563,348,589"/>
-<area shape="rect" id="node17" href="$low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="163,613,345,640"/>
-<area shape="rect" id="node18" href="$nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim." alt="" coords="207,664,301,691"/>
-<area shape="rect" id="node22" href="$nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,715,287,741"/>
-<area shape="rect" id="node24" href="$nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title=" " alt="" coords="202,765,306,792"/>
-<area shape="rect" id="node25" href="$nps__fdm__pybullet_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="183,867,325,893"/>
-<area shape="rect" id="node37" href="$nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title=" " alt="" coords="211,917,297,944"/>
-<area shape="rect" id="node38" href="$nps__fdm__pybullet_8c.html#a0ece8bc37dcf7241f7bc02f721c5c304" title=" " alt="" coords="207,968,301,995"/>
-<area shape="rect" id="node40" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="189,1019,319,1045"/>
-<area shape="rect" id="node3" href="$group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="645,385,815,412"/>
-<area shape="rect" id="node4" href="$nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="431,157,562,184"/>
-<area shape="rect" id="node5" href="$nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="421,208,572,235"/>
-<area shape="rect" id="node6" href="$nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="426,259,567,285"/>
-<area shape="rect" id="node7" href="$nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="427,309,566,336"/>
-<area shape="rect" id="node8" href="$nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="396,360,597,387"/>
-<area shape="rect" id="node9" href="$nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="402,411,591,437"/>
-<area shape="rect" id="node10" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="676,715,784,741"/>
-<area shape="rect" id="node11" href="$nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="433,512,560,539"/>
-<area shape="rect" id="node12" href="$group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="419,56,575,83"/>
-<area shape="rect" id="node14" href="$group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="421,5,572,32"/>
-<area shape="rect" id="node13" href="$group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="652,56,808,83"/>
-<area shape="rect" id="node15" href="$group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="655,5,805,32"/>
-<area shape="rect" id="node19" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="443,664,551,691"/>
-<area shape="rect" id="node20" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="446,563,547,589"/>
-<area shape="rect" id="node21" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="437,613,556,640"/>
-<area shape="rect" id="node23" href="$group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="419,715,574,741"/>
-<area shape="rect" id="node26" href="$nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176" title=" " alt="" coords="461,1019,533,1045"/>
-<area shape="rect" id="node29" href="$nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737" title=" " alt="" coords="445,1069,548,1096"/>
-<area shape="rect" id="node30" href="$nps__fdm__pybullet_8c.html#abcd39a610d09098059d3f60e2d88ce36" title=" " alt="" coords="446,1120,547,1147"/>
-<area shape="rect" id="node31" href="$nps__fdm__pybullet_8c.html#ab019172d149e62f3890de381d88c3b7a" title=" " alt="" coords="453,765,541,792"/>
-<area shape="rect" id="node33" href="$nps__fdm__pybullet_8c.html#ae10cefa4fa9411b06942fbd7d3abefae" title=" " alt="" coords="460,816,533,843"/>
-<area shape="rect" id="node35" href="$nps__fdm__pybullet_8c.html#aeb81f930608d444f932802bb71efc1ce" title=" " alt="" coords="689,892,771,919"/>
-<area shape="rect" id="node36" href="$nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921" title=" " alt="" coords="461,917,532,944"/>
-<area shape="rect" id="node27" href="$group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9" title=" " alt="" coords="657,1069,803,1096"/>
-<area shape="rect" id="node28" href="$group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="655,993,805,1020"/>
-<area shape="rect" id="node32" href="$group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632" title="Composition (multiplication) of two quaternions." alt="" coords="657,765,803,792"/>
-<area shape="rect" id="node34" href="$group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="652,816,808,843"/>
-<area shape="rect" id="node39" href="$nps__fdm__pybullet_8c.html#ad7e507a71c4e68632586cf20071c69bf" title=" " alt="" coords="431,1171,562,1197"/>
+<area shape="rect" id="Node000001" title="NPS FDM rover init." alt="" coords="5,727,112,752"/>
+<area shape="rect" id="Node000002" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="207,280,301,305"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,726,95,608,123,525,158,442,196,372,234,315,238,318,201,374,162,444,128,527,100,609,66,727"/>
+<area shape="rect" id="Node000016" href="$high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca" title="Init first order high pass filter." alt="" coords="160,455,348,480"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="59,726,66,681,82,618,112,550,133,518,158,491,167,484,170,489,162,495,137,521,117,552,87,620,71,682,64,727"/>
+<area shape="rect" id="Node000017" href="$low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="163,504,345,529"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="60,726,70,689,89,639,118,586,136,561,158,540,167,534,170,538,162,544,140,565,122,589,94,641,75,691,65,727"/>
+<area shape="rect" id="Node000018" href="$nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim." alt="" coords="207,553,301,579"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="63,725,96,660,124,622,159,589,193,573,195,578,161,594,128,625,100,663,67,728"/>
+<area shape="rect" id="Node000022" href="$nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,652,287,677"/>
+<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="82,724,159,688,206,673,208,678,161,692,84,729"/>
+<area shape="rect" id="Node000024" href="$nps__fdm__fixedwing__sim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,603,287,628"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="67,725,104,682,130,659,159,638,182,628,207,620,208,625,184,633,161,643,133,663,108,686,71,728"/>
+<area shape="rect" id="Node000025" href="$nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location." alt="" coords="221,800,287,825"/>
+<area shape="poly" id="edge29_Node000001_Node000025" title=" " alt="" coords="84,750,161,786,208,800,206,805,159,791,81,754"/>
+<area shape="rect" id="Node000031" href="$nps__fdm__pybullet_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,751,287,776"/>
+<area shape="poly" id="edge38_Node000001_Node000031" title=" " alt="" coords="112,743,208,755,207,760,112,748"/>
+<area shape="rect" id="Node000032" href="$nps__fdm__rover_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,701,287,727"/>
+<area shape="poly" id="edge42_Node000001_Node000032" title=" " alt="" coords="112,730,207,717,208,723,112,735"/>
+<area shape="rect" id="Node000033" href="$nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title=" " alt="" coords="202,849,306,875"/>
+<area shape="poly" id="edge46_Node000001_Node000033" title=" " alt="" coords="71,750,108,793,133,816,161,836,190,848,188,853,159,840,130,820,104,796,67,754"/>
+<area shape="rect" id="Node000034" href="$nps__fdm__pybullet_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="183,1047,325,1072"/>
+<area shape="poly" id="edge47_Node000001_Node000034" title=" " alt="" coords="70,751,240,1034,236,1036,66,754"/>
+<area shape="rect" id="Node000046" href="$nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title=" " alt="" coords="211,1096,297,1121"/>
+<area shape="poly" id="edge66_Node000001_Node000046" title=" " alt="" coords="62,752,64,812,75,901,87,950,105,998,130,1043,162,1083,179,1094,199,1102,197,1107,176,1099,158,1087,125,1046,100,1001,82,952,70,902,58,812,57,752"/>
+<area shape="rect" id="Node000047" href="$nps__fdm__pybullet_8c.html#a0ece8bc37dcf7241f7bc02f721c5c304" title=" " alt="" coords="207,1220,301,1245"/>
+<area shape="poly" id="edge67_Node000001_Node000047" title=" " alt="" coords="64,752,70,814,87,910,116,1023,137,1079,162,1133,193,1175,228,1209,224,1213,189,1179,158,1135,132,1081,111,1025,81,912,65,815,58,752"/>
+<area shape="rect" id="Node000049" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="189,1269,319,1295"/>
+<area shape="poly" id="edge70_Node000001_Node000049" title=" " alt="" coords="63,752,70,851,87,1003,101,1083,117,1156,138,1216,149,1239,162,1256,178,1268,174,1272,158,1260,145,1242,133,1218,112,1158,95,1084,82,1004,65,852,58,753"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="645,379,815,404"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,278,279,248,309,210,348,171,371,155,395,142,451,121,499,111,522,112,546,118,599,142,628,164,652,191,673,221,689,252,713,315,726,365,721,366,708,316,685,255,668,223,648,194,624,168,596,147,544,123,521,118,499,117,452,126,397,147,373,160,351,176,313,213,284,251,265,281"/>
+<area shape="rect" id="Node000004" href="$nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="431,603,562,628"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,304,306,362,350,442,363,486,366,523,374,556,383,573,398,589,420,603,417,608,394,593,378,576,369,558,361,524,358,487,346,444,301,365,262,307"/>
+<area shape="rect" id="Node000005" href="$nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="421,156,572,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="268,278,322,236,357,212,395,192,417,183,419,188,397,196,360,217,325,240,271,282"/>
+<area shape="rect" id="Node000006" href="$nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="426,205,567,231"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="288,277,395,241,428,232,429,237,397,246,290,282"/>
+<area shape="rect" id="Node000007" href="$nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="427,255,566,280"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="301,285,413,273,414,279,302,290"/>
+<area shape="rect" id="Node000008" href="$nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="396,304,597,329"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="302,295,382,303,382,308,301,300"/>
+<area shape="rect" id="Node000009" href="$nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="402,353,591,379"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="289,303,397,339,426,347,424,353,395,345,288,308"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="676,701,784,727"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="271,303,325,345,360,369,397,389,427,400,453,405,502,407,548,413,573,424,599,441,627,468,651,500,688,568,713,635,726,687,721,688,707,636,683,570,647,503,623,472,596,445,570,428,547,419,501,413,452,410,425,405,395,394,357,373,322,350,268,308"/>
+<area shape="rect" id="Node000011" href="$nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="433,553,560,579"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="266,304,304,363,350,442,363,472,369,496,378,518,398,540,421,553,419,558,394,544,374,521,364,498,358,473,346,445,299,366,262,307"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="419,5,575,31"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="256,279,271,234,298,169,338,100,364,69,394,41,405,34,408,39,398,45,368,72,343,103,302,172,276,236,261,281"/>
+<area shape="rect" id="Node000014" href="$group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="421,55,572,80"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="259,278,277,243,306,194,346,142,394,97,421,83,424,87,398,101,350,146,311,197,282,245,264,281"/>
+<area shape="rect" id="Node000013" href="$group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="652,5,808,31"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="575,15,638,15,638,21,575,21"/>
+<area shape="rect" id="Node000015" href="$group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="655,55,805,80"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="572,65,641,65,641,70,572,70"/>
+<area shape="poly" id="edge21_Node000018_Node000011" title=" " alt="" coords="301,563,420,563,420,569,301,569"/>
+<area shape="rect" id="Node000019" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="443,652,551,677"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="302,571,326,578,349,589,365,602,374,615,383,627,397,638,430,652,428,657,395,643,379,631,370,618,361,605,347,594,324,583,300,576"/>
+<area shape="rect" id="Node000020" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="446,455,547,480"/>
+<area shape="poly" id="edge19_Node000018_Node000020" title=" " alt="" coords="300,557,324,550,347,540,361,528,370,516,379,503,395,490,432,475,434,480,397,495,383,507,374,519,365,532,349,544,326,555,302,562"/>
+<area shape="rect" id="Node000021" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="437,504,556,529"/>
+<area shape="poly" id="edge20_Node000018_Node000021" title=" " alt="" coords="301,554,423,529,424,534,302,559"/>
+<area shape="poly" id="edge23_Node000022_Node000019" title=" " alt="" coords="288,662,429,662,429,667,288,667"/>
+<area shape="rect" id="Node000023" href="$group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="419,701,574,727"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="288,669,421,696,419,701,287,674"/>
+<area shape="poly" id="edge25_Node000023_Node000010" title=" " alt="" coords="574,711,662,711,662,717,574,717"/>
+<area shape="poly" id="edge27_Node000024_Node000019" title=" " alt="" coords="288,619,430,648,429,654,287,625"/>
+<area shape="poly" id="edge28_Node000024_Node000023" title=" " alt="" coords="288,617,319,625,349,638,365,651,374,664,383,676,397,688,411,694,408,699,395,692,379,680,370,667,361,655,347,643,317,630,287,622"/>
+<area shape="poly" id="edge33_Node000025_Node000004" title=" " alt="" coords="287,809,318,803,346,787,360,769,367,752,369,714,372,677,379,657,394,639,417,624,420,629,398,643,384,660,377,678,375,715,372,753,365,772,350,791,320,808,288,815"/>
+<area shape="poly" id="edge34_Node000025_Node000011" title=" " alt="" coords="287,810,319,803,333,796,346,787,363,763,371,739,372,715,369,690,367,665,368,640,376,614,394,589,419,573,422,578,398,593,381,617,373,641,372,665,375,690,377,715,376,740,368,766,350,791,336,801,320,808,288,815"/>
+<area shape="poly" id="edge35_Node000025_Node000023" title=" " alt="" coords="287,806,317,799,347,786,361,775,370,762,379,750,395,737,411,729,414,734,397,742,383,753,374,766,365,778,349,791,319,804,288,811"/>
+<area shape="rect" id="Node000026" href="$group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place" alt="" coords="406,948,587,973"/>
+<area shape="poly" id="edge30_Node000025_Node000026" title=" " alt="" coords="288,812,320,820,350,836,361,848,368,861,374,887,380,912,387,923,398,935,404,939,401,944,394,939,382,927,375,914,369,888,363,863,357,851,346,840,318,825,287,817"/>
+<area shape="rect" id="Node000028" href="$group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title=" " alt="" coords="457,800,536,825"/>
+<area shape="poly" id="edge32_Node000025_Node000028" title=" " alt="" coords="288,810,444,810,444,815,288,815"/>
+<area shape="rect" id="Node000029" href="$group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title=" " alt="" coords="455,849,539,875"/>
+<area shape="poly" id="edge36_Node000025_Node000029" title=" " alt="" coords="288,817,441,848,440,853,287,822"/>
+<area shape="rect" id="Node000030" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="419,751,575,776"/>
+<area shape="poly" id="edge37_Node000025_Node000030" title=" " alt="" coords="287,803,419,776,421,781,288,809"/>
+<area shape="rect" id="Node000027" href="$group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="655,948,805,973"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="588,958,641,958,641,963,588,963"/>
+<area shape="poly" id="edge39_Node000031_Node000019" title=" " alt="" coords="287,757,317,750,347,737,361,725,370,713,379,700,395,688,428,674,430,679,397,692,383,704,374,716,365,729,349,742,319,755,288,762"/>
+<area shape="poly" id="edge40_Node000031_Node000023" title=" " alt="" coords="287,754,419,727,421,732,288,759"/>
+<area shape="poly" id="edge41_Node000031_Node000030" title=" " alt="" coords="288,761,405,761,405,766,288,766"/>
+<area shape="poly" id="edge43_Node000032_Node000019" title=" " alt="" coords="287,705,429,676,430,681,288,710"/>
+<area shape="poly" id="edge44_Node000032_Node000023" title=" " alt="" coords="288,711,405,711,405,717,288,717"/>
+<area shape="poly" id="edge45_Node000032_Node000030" title=" " alt="" coords="288,718,421,745,419,750,287,723"/>
+<area shape="rect" id="Node000035" href="$nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176" title=" " alt="" coords="461,1145,533,1171"/>
+<area shape="poly" id="edge48_Node000034_Node000035" title=" " alt="" coords="321,1070,349,1082,365,1095,374,1108,383,1120,397,1132,422,1142,448,1149,447,1155,420,1148,395,1136,379,1124,370,1111,361,1099,347,1087,318,1074"/>
+<area shape="rect" id="Node000038" href="$nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737" title=" " alt="" coords="445,1047,548,1072"/>
+<area shape="poly" id="edge51_Node000034_Node000038" title=" " alt="" coords="325,1057,432,1057,432,1062,325,1062"/>
+<area shape="rect" id="Node000039" href="$nps__fdm__pybullet_8c.html#abcd39a610d09098059d3f60e2d88ce36" title=" " alt="" coords="446,997,547,1023"/>
+<area shape="poly" id="edge53_Node000034_Node000039" title=" " alt="" coords="317,1044,432,1020,433,1025,318,1049"/>
+<area shape="rect" id="Node000040" href="$nps__fdm__pybullet_8c.html#ab019172d149e62f3890de381d88c3b7a" title=" " alt="" coords="453,899,541,924"/>
+<area shape="poly" id="edge55_Node000034_Node000040" title=" " alt="" coords="264,1045,317,991,354,960,395,934,439,918,440,923,397,939,357,965,320,995,268,1048"/>
+<area shape="rect" id="Node000042" href="$nps__fdm__pybullet_8c.html#ae10cefa4fa9411b06942fbd7d3abefae" title=" " alt="" coords="460,1096,533,1121"/>
+<area shape="poly" id="edge58_Node000034_Node000042" title=" " alt="" coords="318,1069,447,1096,446,1101,317,1075"/>
+<area shape="rect" id="Node000044" href="$nps__fdm__pybullet_8c.html#aeb81f930608d444f932802bb71efc1ce" title=" " alt="" coords="689,1220,771,1245"/>
+<area shape="poly" id="edge65_Node000034_Node000044" title=" " alt="" coords="326,1068,350,1083,364,1102,371,1122,372,1161,375,1198,382,1215,398,1231,430,1249,466,1261,504,1267,542,1269,617,1261,679,1247,680,1252,617,1266,543,1274,504,1273,465,1266,428,1254,394,1235,378,1218,369,1200,367,1161,366,1123,360,1104,346,1087,323,1072"/>
+<area shape="rect" id="Node000045" href="$nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921" title=" " alt="" coords="461,1195,532,1220"/>
+<area shape="poly" id="edge62_Node000034_Node000045" title=" " alt="" coords="326,1069,350,1083,361,1095,368,1108,374,1134,380,1158,387,1170,398,1181,422,1195,449,1202,447,1207,420,1200,394,1185,382,1173,375,1160,369,1135,363,1110,357,1098,346,1087,324,1074"/>
+<area shape="rect" id="Node000036" href="$group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9" title=" " alt="" coords="657,1047,803,1072"/>
+<area shape="poly" id="edge49_Node000035_Node000036" title=" " alt="" coords="532,1152,564,1145,596,1132,610,1120,619,1108,629,1095,644,1082,659,1075,661,1079,647,1087,633,1099,624,1111,614,1124,599,1136,566,1150,533,1157"/>
+<area shape="rect" id="Node000037" href="$group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="655,1171,805,1196"/>
+<area shape="poly" id="edge50_Node000035_Node000037" title=" " alt="" coords="533,1159,641,1171,641,1176,533,1164"/>
+<area shape="poly" id="edge52_Node000038_Node000036" title=" " alt="" coords="548,1057,643,1057,643,1062,548,1062"/>
+<area shape="poly" id="edge54_Node000039_Node000036" title=" " alt="" coords="548,1018,656,1041,655,1046,547,1023"/>
+<area shape="poly" id="edge56_Node000040_Node000003" title=" " alt="" coords="540,908,570,901,596,885,615,863,626,841,632,819,634,797,635,749,643,689,718,417,724,418,648,691,640,749,639,798,637,820,631,843,619,866,599,889,572,906,542,913"/>
+<area shape="rect" id="Node000041" href="$group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632" title="Composition (multiplication) of two quaternions." alt="" coords="657,899,803,924"/>
+<area shape="poly" id="edge57_Node000040_Node000041" title=" " alt="" coords="541,909,643,909,643,914,541,914"/>
+<area shape="poly" id="edge60_Node000042_Node000010" title=" " alt="" coords="533,1106,566,1100,582,1093,595,1083,614,1060,625,1038,630,1016,631,994,631,945,635,917,643,886,678,804,712,738,717,740,683,806,648,888,640,918,637,945,637,994,635,1017,630,1040,619,1063,599,1087,585,1097,568,1105,534,1111"/>
+<area shape="rect" id="Node000043" href="$group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="652,1096,808,1121"/>
+<area shape="poly" id="edge59_Node000042_Node000043" title=" " alt="" coords="534,1106,638,1106,638,1111,534,1111"/>
+<area shape="poly" id="edge61_Node000042_Node000044" title=" " alt="" coords="534,1109,567,1116,599,1132,616,1151,624,1170,631,1189,647,1207,677,1221,674,1226,644,1211,627,1192,619,1172,612,1154,596,1136,565,1121,533,1114"/>
+<area shape="poly" id="edge63_Node000045_Node000037" title=" " alt="" coords="532,1201,640,1190,641,1195,532,1206"/>
+<area shape="poly" id="edge64_Node000045_Node000044" title=" " alt="" coords="532,1208,675,1224,674,1229,532,1214"/>
+<area shape="poly" id="edge68_Node000047_Node000044" title=" " alt="" coords="302,1242,349,1255,373,1266,397,1274,452,1283,497,1286,541,1282,597,1274,644,1263,686,1248,688,1253,645,1268,598,1279,541,1288,497,1291,452,1288,395,1279,371,1271,347,1261,301,1247"/>
+<area shape="rect" id="Node000048" href="$nps__fdm__pybullet_8c.html#ad7e507a71c4e68632586cf20071c69bf" title=" " alt="" coords="431,1347,562,1372"/>
+<area shape="poly" id="edge69_Node000047_Node000048" title=" " alt="" coords="302,1236,327,1244,350,1256,366,1273,375,1291,382,1309,398,1325,423,1339,421,1344,394,1329,378,1312,370,1294,362,1276,346,1260,325,1249,301,1241"/>
 </map>

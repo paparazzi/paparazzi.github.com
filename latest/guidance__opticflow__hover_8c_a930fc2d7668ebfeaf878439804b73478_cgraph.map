@@ -1,52 +1,123 @@
 <map id="guidance_module_run" name="guidance_module_run">
-<area shape="rect" id="node1" title="Main guidance loop." alt="" coords="5,607,171,633"/>
-<area shape="rect" id="node2" href="$rotorcraft_2guidance_2guidance__v_8c.html#af7b4baa154425fe61d4807656a01ab06" title="Guidance vertical run functions." alt="" coords="251,115,375,141"/>
-<area shape="rect" id="node9" href="$stabilization_8c.html#ab4450b06845c4fe82ea4d45c2e2d4b20" title=" " alt="" coords="229,607,397,633"/>
-<area shape="rect" id="node10" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="219,1099,407,1125"/>
-<area shape="rect" id="node3" href="$rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector" alt="" coords="484,107,628,149"/>
-<area shape="rect" id="node5" href="$guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title=" " alt="" coords="501,5,611,32"/>
-<area shape="rect" id="node6" href="$guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function." alt="" coords="501,56,611,83"/>
-<area shape="rect" id="node7" href="$group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int)." alt="" coords="481,173,631,200"/>
-<area shape="rect" id="node4" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="705,119,901,145"/>
-<area shape="rect" id="node8" href="$group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title=" " alt="" coords="726,173,881,200"/>
-<area shape="rect" id="node11" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="487,275,625,317"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="487,763,625,805"/>
-<area shape="rect" id="node14" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="471,646,641,687"/>
-<area shape="rect" id="node19" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="725,755,882,781"/>
-<area shape="rect" id="node21" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="710,817,897,844"/>
-<area shape="rect" id="node22" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="477,931,635,973"/>
-<area shape="rect" id="node23" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="723,909,884,936"/>
-<area shape="rect" id="node24" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="722,979,885,1005"/>
-<area shape="rect" id="node25" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="708,1039,899,1065"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="495,1200,617,1227"/>
-<area shape="rect" id="node27" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="497,1251,615,1277"/>
-<area shape="rect" id="node28" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="464,1301,648,1328"/>
-<area shape="rect" id="node29" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="484,1352,628,1379"/>
-<area shape="rect" id="node30" href="$group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="475,1403,637,1429"/>
-<area shape="rect" id="node31" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="482,1453,630,1480"/>
-<area shape="rect" id="node32" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="487,1504,625,1531"/>
-<area shape="rect" id="node33" href="$group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="492,1555,620,1581"/>
-<area shape="rect" id="node34" href="$group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="497,1605,615,1632"/>
-<area shape="rect" id="node35" href="$group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="493,1656,619,1683"/>
-<area shape="rect" id="node36" href="$pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="500,1149,612,1176"/>
-<area shape="rect" id="node37" href="$pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="749,1124,858,1151"/>
-<area shape="rect" id="node38" href="$rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title=" " alt="" coords="477,1808,635,1835"/>
-<area shape="rect" id="node39" href="$stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="481,1859,631,1885"/>
-<area shape="rect" id="node40" href="$stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="728,1944,879,1971"/>
-<area shape="rect" id="node41" href="$stabilization_8c.html#af997ac8db0c8ededc57d411e8caa47b2" title=" " alt="" coords="733,1999,873,2025"/>
-<area shape="rect" id="node42" href="$stabilization_8c.html#a933a2abf3187537a85e675731038606c" title=" " alt="" coords="734,1787,873,1813"/>
-<area shape="rect" id="node43" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="489,1910,623,1951"/>
-<area shape="rect" id="node44" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="706,1892,901,1919"/>
-<area shape="rect" id="node45" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="476,341,636,368"/>
-<area shape="rect" id="node46" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="477,392,635,419"/>
-<area shape="rect" id="node47" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="455,443,657,469"/>
-<area shape="rect" id="node48" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="455,493,657,520"/>
-<area shape="rect" id="node49" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="459,544,653,571"/>
-<area shape="rect" id="node50" href="$stabilization_8c.html#aff1c34e4df8582150dd77b44ae73a1db" title=" " alt="" coords="489,595,623,621"/>
-<area shape="rect" id="node12" href="$attitude__ref__saturate__naive_8h.html#aa0f93b3e44169518f24759b497a97275" title=" " alt="" coords="736,355,871,397"/>
-<area shape="rect" id="node15" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="726,552,881,579"/>
-<area shape="rect" id="node16" href="$group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="738,603,869,629"/>
-<area shape="rect" id="node17" href="$group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="723,653,883,680"/>
-<area shape="rect" id="node18" href="$group__math__algebra__float.html#gaf1db25a69e0a8c04c7a9987a4455d164" title="Delta rotation quaternion with constant angular rates." alt="" coords="721,704,886,731"/>
-<area shape="rect" id="node20" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="724,501,883,528"/>
+<area shape="rect" id="Node000001" title="Main guidance loop." alt="" coords="5,1444,171,1470"/>
+<area shape="rect" id="Node000002" href="$rotorcraft_2guidance_2guidance__v_8c.html#af7b4baa154425fe61d4807656a01ab06" title="Guidance vertical run functions." alt="" coords="251,260,375,286"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,1444,304,299,309,300,94,1445"/>
+<area shape="rect" id="Node000040" href="$stabilization_8c.html#ab4450b06845c4fe82ea4d45c2e2d4b20" title=" " alt="" coords="229,1494,397,1519"/>
+<area shape="poly" id="edge20_Node000001_Node000040" title=" " alt="" coords="147,1467,241,1488,240,1493,146,1472"/>
+<area shape="rect" id="Node000041" href="$stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="219,1444,407,1470"/>
+<area shape="poly" id="edge21_Node000001_Node000041" title=" " alt="" coords="171,1454,205,1454,205,1460,171,1460"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2guidance_2guidance__v_8c.html#a36be79d9f4bcf491d74b2d2aff08ae8f" title="Set guidance setpoint from NAV and run hover loop." alt="" coords="473,184,639,210"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,258,500,211,502,217,355,263"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2guidance_2guidance__v_8c.html#ab70c96d9d4fe5ee6f1329e048b22b1f5" title="Run GUIDED mode control." alt="" coords="715,83,890,108"/>
+<area shape="poly" id="edge13_Node000002_Node000004" title=" " alt="" coords="326,258,379,214,415,190,454,169,516,146,581,127,701,104,702,109,582,132,518,151,456,174,418,195,382,219,329,262"/>
+<area shape="rect" id="Node000006" href="$guidance__oneloop_8c.html#a7869486cd541cafcbccf5a1c0e3ea842" title=" " alt="" coords="948,32,1119,58"/>
+<area shape="poly" id="edge14_Node000002_Node000006" title=" " alt="" coords="316,259,332,221,361,168,401,114,426,89,453,69,518,39,587,18,658,7,730,3,798,5,863,10,968,27,967,32,862,15,798,10,730,8,659,12,588,24,520,44,456,74,429,93,405,117,365,171,337,223,321,261"/>
+<area shape="rect" id="Node000009" href="$guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint." alt="" coords="957,278,1110,318"/>
+<area shape="poly" id="edge17_Node000002_Node000009" title=" " alt="" coords="329,284,381,327,417,349,456,365,578,396,628,403,676,404,724,401,775,393,899,365,948,347,991,323,994,328,950,352,901,370,776,398,725,406,676,410,628,408,577,401,454,370,414,353,378,331,325,288"/>
+<area shape="rect" id="Node000010" href="$group__state__position.html#ga4752a89e7113d6df02299c5c6df11387" title="Get position in local NED coordinates (int)." alt="" coords="950,83,1117,108"/>
+<area shape="poly" id="edge18_Node000002_Node000010" title=" " alt="" coords="320,259,370,193,409,155,453,123,514,91,569,70,619,57,668,51,718,51,771,55,900,68,966,78,965,83,900,73,771,60,718,56,668,57,620,62,570,75,517,96,456,127,412,159,374,197,324,262"/>
+<area shape="rect" id="Node000024" href="$stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="958,184,1109,210"/>
+<area shape="poly" id="edge19_Node000002_Node000024" title=" " alt="" coords="375,280,476,292,608,299,680,298,754,294,828,284,899,269,928,259,956,245,1003,216,1006,220,959,250,930,264,901,274,829,290,755,299,681,304,608,304,476,297,374,286"/>
+<area shape="rect" id="Node000030" href="$rotorcraft_2guidance_2guidance__v_8c.html#a0f2c0608e9949e1d68952c3491a30a83" title=" " alt="" coords="463,438,649,463"/>
+<area shape="poly" id="edge15_Node000002_Node000030" title=" " alt="" coords="325,284,376,347,414,384,456,416,486,431,484,435,453,421,410,388,372,351,321,288"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="581,182,704,125,746,110,748,115,706,130,583,187"/>
+<area shape="poly" id="edge9_Node000003_Node000006" title=" " alt="" coords="566,182,620,125,659,93,704,68,762,50,822,39,880,35,934,34,934,40,881,40,822,44,763,55,706,73,662,97,623,129,569,186"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="578,207,634,240,669,256,706,269,767,283,829,291,943,298,943,303,828,297,766,288,705,274,667,261,631,244,575,212"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="616,182,959,109,960,114,618,187"/>
+<area shape="poly" id="edge12_Node000003_Node000024" title=" " alt="" coords="639,194,944,194,944,200,639,200"/>
+<area shape="rect" id="Node000025" href="$guidance__oneloop_8c.html#a642dab951988b0727ee833c94db9e428" title=" " alt="" coords="720,235,885,260"/>
+<area shape="poly" id="edge8_Node000003_Node000025" title=" " alt="" coords="619,207,727,230,726,235,618,212"/>
+<area shape="poly" id="edge4_Node000004_Node000006" title=" " alt="" coords="861,80,961,58,962,63,862,86"/>
+<area shape="poly" id="edge5_Node000004_Node000009" title=" " alt="" coords="820,106,1001,267,997,271,816,110"/>
+<area shape="poly" id="edge6_Node000004_Node000010" title=" " alt="" coords="890,93,936,93,936,98,890,98"/>
+<area shape="poly" id="edge7_Node000004_Node000024" title=" " alt="" coords="834,106,992,176,990,181,832,111"/>
+<area shape="rect" id="Node000038" href="$group__state__acceleration.html#gafd59b768a512d6ef454bf882fb5f9101" title="Get acceleration in NED coordinates (int)." alt="" coords="727,463,878,488"/>
+<area shape="poly" id="edge16_Node000030_Node000038" title=" " alt="" coords="649,457,714,464,713,469,649,463"/>
+<area shape="poly" id="edge63_Node000041_Node000038" title=" " alt="" coords="311,1444,314,1276,320,1144,330,998,347,849,372,712,388,652,407,600,428,557,453,524,471,512,497,502,563,487,640,478,713,474,714,480,640,484,564,492,498,507,473,517,457,528,433,559,412,602,393,654,377,713,353,850,336,998,325,1145,319,1277,317,1444"/>
+<area shape="rect" id="Node000042" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="487,885,625,925"/>
+<area shape="poly" id="edge22_Node000041_Node000042" title=" " alt="" coords="311,1444,311,1359,316,1295,326,1223,342,1147,368,1071,404,999,427,966,453,935,472,920,476,925,456,939,431,969,409,1001,373,1073,348,1148,331,1224,321,1296,316,1359,316,1444"/>
+<area shape="rect" id="Node000044" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="487,949,625,989"/>
+<area shape="poly" id="edge23_Node000041_Node000044" title=" " alt="" coords="312,1444,317,1370,324,1315,335,1253,353,1188,378,1123,411,1061,453,1006,473,990,476,994,457,1010,415,1064,383,1125,358,1190,341,1254,329,1316,322,1370,317,1444"/>
+<area shape="rect" id="Node000045" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="471,1064,641,1104"/>
+<area shape="poly" id="edge24_Node000041_Node000045" title=" " alt="" coords="313,1444,324,1386,348,1300,367,1252,390,1205,418,1160,453,1120,468,1108,472,1113,457,1124,423,1163,395,1208,372,1255,353,1302,329,1387,318,1445"/>
+<area shape="rect" id="Node000050" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="724,1018,881,1043"/>
+<area shape="poly" id="edge37_Node000041_Node000050" title=" " alt="" coords="311,1444,314,1373,321,1321,332,1264,349,1204,374,1146,408,1094,453,1050,486,1029,522,1015,560,1006,598,1002,673,1003,738,1012,737,1018,673,1009,599,1007,561,1012,524,1020,488,1034,456,1054,413,1097,379,1149,354,1206,337,1265,326,1322,320,1373,316,1444"/>
+<area shape="rect" id="Node000053" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="709,1099,896,1124"/>
+<area shape="poly" id="edge38_Node000041_Node000053" title=" " alt="" coords="314,1443,326,1393,351,1320,370,1280,393,1242,420,1206,453,1176,495,1157,556,1141,695,1119,696,1124,557,1146,497,1162,456,1181,424,1210,397,1245,375,1283,356,1322,331,1394,319,1445"/>
+<area shape="rect" id="Node000054" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="477,1229,635,1269"/>
+<area shape="poly" id="edge27_Node000041_Node000054" title=" " alt="" coords="319,1443,369,1370,408,1325,453,1286,474,1273,477,1277,456,1290,412,1329,374,1373,324,1446"/>
+<area shape="rect" id="Node000058" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="722,1183,883,1208"/>
+<area shape="poly" id="edge41_Node000041_Node000058" title=" " alt="" coords="314,1443,328,1398,354,1334,373,1300,395,1268,422,1239,453,1215,486,1198,520,1186,593,1174,664,1173,726,1178,725,1184,663,1178,593,1179,522,1191,488,1203,456,1219,426,1243,400,1271,377,1303,359,1336,333,1400,320,1445"/>
+<area shape="rect" id="Node000059" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="721,1251,884,1276"/>
+<area shape="poly" id="edge42_Node000041_Node000059" title=" " alt="" coords="324,1442,377,1394,414,1367,453,1344,517,1318,584,1298,707,1272,708,1277,585,1303,519,1323,456,1349,417,1372,381,1398,328,1446"/>
+<area shape="rect" id="Node000062" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="707,1330,898,1355"/>
+<area shape="poly" id="edge43_Node000041_Node000062" title=" " alt="" coords="331,1442,385,1410,454,1380,514,1364,577,1353,693,1342,694,1347,577,1358,516,1369,456,1385,387,1415,334,1447"/>
+<area shape="rect" id="Node000063" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="495,1395,617,1420"/>
+<area shape="poly" id="edge31_Node000041_Node000063" title=" " alt="" coords="375,1442,481,1420,482,1425,377,1447"/>
+<area shape="rect" id="Node000064" href="$stabilization__attitude__quat__int_8c.html#a5f08e1e27279036002bf2b3c2a2bed07" title=" " alt="" coords="495,1444,617,1470"/>
+<area shape="poly" id="edge32_Node000041_Node000064" title=" " alt="" coords="407,1454,482,1454,482,1460,407,1460"/>
+<area shape="rect" id="Node000065" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="497,1494,615,1519"/>
+<area shape="poly" id="edge33_Node000041_Node000065" title=" " alt="" coords="377,1467,484,1489,483,1494,375,1472"/>
+<area shape="rect" id="Node000066" href="$stabilization__attitude__quat__int_8c.html#a875fc7c74f5183e8724d1c742cd52f66" title=" " alt="" coords="497,1543,615,1568"/>
+<area shape="poly" id="edge34_Node000041_Node000066" title=" " alt="" coords="383,1467,408,1479,424,1491,433,1504,442,1517,456,1528,485,1541,483,1546,453,1533,438,1520,428,1507,420,1495,405,1483,380,1472"/>
+<area shape="rect" id="Node000067" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="464,1592,648,1618"/>
+<area shape="poly" id="edge35_Node000041_Node000067" title=" " alt="" coords="390,1468,408,1479,420,1491,427,1504,433,1530,439,1555,445,1566,456,1578,465,1584,462,1588,453,1582,441,1569,434,1557,428,1531,422,1506,416,1494,405,1483,387,1472"/>
+<area shape="rect" id="Node000068" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="961,1668,1105,1694"/>
+<area shape="poly" id="edge36_Node000041_Node000068" title=" " alt="" coords="392,1468,408,1479,423,1498,430,1518,432,1557,434,1594,441,1611,456,1627,481,1637,527,1646,659,1660,947,1676,947,1681,658,1666,526,1651,480,1642,453,1631,437,1614,429,1595,427,1557,425,1519,419,1501,405,1483,389,1472"/>
+<area shape="rect" id="Node000069" href="$group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="475,2011,637,2036"/>
+<area shape="poly" id="edge39_Node000041_Node000069" title=" " alt="" coords="395,1468,409,1479,421,1499,430,1524,438,1585,438,1657,434,1736,430,1814,430,1886,438,1947,446,1971,457,1990,470,2002,467,2006,453,1993,441,1973,433,1948,425,1887,425,1814,429,1735,433,1657,433,1585,424,1525,416,1501,405,1483,392,1472"/>
+<area shape="rect" id="Node000070" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="959,1910,1107,1935"/>
+<area shape="poly" id="edge40_Node000041_Node000070" title=" " alt="" coords="395,1468,409,1479,420,1497,427,1519,434,1575,434,1642,430,1713,427,1784,428,1848,436,1901,445,1921,457,1936,472,1947,491,1955,543,1967,606,1971,677,1969,825,1955,953,1935,953,1940,826,1960,677,1974,606,1976,542,1972,490,1961,469,1952,453,1940,440,1924,431,1903,422,1849,421,1784,425,1713,429,1641,429,1576,422,1521,415,1499,405,1483,392,1472"/>
+<area shape="rect" id="Node000071" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="487,2060,625,2086"/>
+<area shape="poly" id="edge44_Node000041_Node000071" title=" " alt="" coords="395,1468,409,1479,422,1501,431,1529,440,1597,439,1677,433,1765,428,1852,427,1932,435,1999,444,2025,457,2046,475,2060,472,2065,453,2049,439,2028,430,2000,421,1932,422,1851,428,1764,433,1677,434,1597,426,1530,417,1503,405,1483,392,1472"/>
+<area shape="rect" id="Node000072" href="$group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="492,2110,620,2135"/>
+<area shape="poly" id="edge45_Node000041_Node000072" title=" " alt="" coords="395,1468,409,1479,423,1503,433,1533,442,1607,440,1695,433,1789,427,1884,425,1971,433,2044,443,2073,457,2095,480,2112,477,2116,453,2099,438,2075,428,2045,420,1971,421,1884,428,1789,435,1694,436,1607,428,1534,418,1505,405,1483,392,1472"/>
+<area shape="rect" id="Node000073" href="$group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="497,2159,615,2184"/>
+<area shape="poly" id="edge46_Node000041_Node000073" title=" " alt="" coords="395,1468,409,1479,424,1505,435,1537,441,1575,443,1617,441,1712,433,1814,425,1916,423,2010,426,2052,432,2089,442,2120,457,2145,469,2156,485,2163,483,2168,466,2160,453,2148,437,2123,427,2090,420,2053,418,2011,420,1916,428,1814,436,1712,438,1617,436,1575,429,1538,419,1507,405,1483,392,1472"/>
+<area shape="rect" id="Node000074" href="$group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="493,2208,619,2234"/>
+<area shape="poly" id="edge47_Node000041_Node000074" title=" " alt="" coords="395,1468,409,1479,425,1507,436,1541,443,1582,445,1627,442,1729,433,1839,424,1948,421,2050,424,2095,430,2134,441,2168,457,2194,468,2204,481,2211,479,2216,465,2208,453,2197,436,2170,425,2136,418,2095,416,2050,419,1948,428,1838,437,1729,440,1627,437,1582,431,1543,420,1509,405,1483,392,1472"/>
+<area shape="rect" id="Node000075" href="$pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="500,2258,612,2283"/>
+<area shape="poly" id="edge48_Node000041_Node000075" title=" " alt="" coords="395,1468,409,1479,426,1509,438,1546,445,1589,447,1638,443,1747,433,1864,423,1982,419,2090,421,2138,428,2181,440,2217,457,2245,471,2256,488,2264,486,2269,468,2261,453,2248,435,2219,423,2182,416,2139,413,2090,417,1981,428,1864,438,1746,442,1638,439,1590,433,1547,421,1511,405,1483,392,1472"/>
+<area shape="rect" id="Node000076" href="$pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="748,2283,857,2308"/>
+<area shape="poly" id="edge50_Node000041_Node000076" title=" " alt="" coords="395,1468,409,1479,427,1511,439,1551,445,1597,447,1650,440,1768,427,1895,415,2020,410,2136,414,2186,422,2230,436,2266,457,2294,489,2317,526,2332,567,2339,608,2340,689,2329,755,2310,757,2316,690,2334,608,2345,566,2344,525,2337,487,2322,453,2298,431,2269,417,2231,408,2187,405,2136,409,2020,422,1894,435,1767,442,1650,440,1598,434,1552,422,1513,405,1483,392,1472"/>
+<area shape="rect" id="Node000077" href="$rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title=" " alt="" coords="477,2359,635,2384"/>
+<area shape="poly" id="edge51_Node000041_Node000077" title=" " alt="" coords="395,1468,409,1479,428,1512,441,1554,449,1602,451,1656,447,1778,435,1909,423,2041,418,2163,420,2217,427,2265,439,2306,457,2338,470,2350,466,2354,453,2341,434,2308,421,2266,415,2217,412,2163,417,2040,430,1909,442,1778,446,1656,443,1602,436,1555,423,1514,405,1483,392,1472"/>
+<area shape="rect" id="Node000079" href="$stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="481,2408,631,2434"/>
+<area shape="poly" id="edge52_Node000041_Node000079" title=" " alt="" coords="395,1468,409,1479,429,1515,443,1559,450,1611,453,1669,447,1799,433,1940,419,2080,413,2210,416,2268,423,2319,436,2362,457,2395,470,2407,467,2411,453,2399,432,2364,418,2320,410,2268,408,2210,414,2080,427,1939,441,1799,448,1669,445,1611,438,1560,425,1517,405,1483,392,1472"/>
+<area shape="rect" id="Node000090" href="$stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="727,1774,878,1799"/>
+<area shape="poly" id="edge53_Node000041_Node000090" title=" " alt="" coords="394,1468,409,1479,430,1512,438,1545,437,1578,432,1610,426,1643,426,1674,434,1704,457,1734,474,1745,498,1755,564,1769,640,1778,714,1782,714,1788,640,1783,563,1775,497,1760,471,1750,453,1738,430,1706,421,1674,421,1642,426,1610,432,1577,433,1545,425,1514,405,1483,391,1472"/>
+<area shape="rect" id="Node000091" href="$stabilization_8c.html#af997ac8db0c8ededc57d411e8caa47b2" title=" " alt="" coords="733,1694,873,1719"/>
+<area shape="poly" id="edge54_Node000041_Node000091" title=" " alt="" coords="393,1468,409,1479,426,1504,434,1529,434,1555,431,1580,429,1605,430,1628,438,1651,456,1672,487,1693,520,1709,556,1719,593,1724,667,1726,732,1719,732,1724,667,1731,593,1730,555,1724,518,1714,484,1698,453,1676,434,1653,425,1629,424,1604,426,1579,429,1555,428,1530,421,1506,405,1483,390,1472"/>
+<area shape="rect" id="Node000097" href="$stabilization_8c.html#a933a2abf3187537a85e675731038606c" title=" " alt="" coords="733,1859,872,1884"/>
+<area shape="poly" id="edge56_Node000041_Node000097" title=" " alt="" coords="395,1468,409,1479,426,1503,437,1526,444,1550,446,1574,441,1621,429,1668,418,1714,415,1759,418,1781,425,1802,438,1824,456,1844,487,1867,522,1883,560,1893,599,1898,675,1896,742,1885,743,1890,676,1901,598,1903,559,1898,520,1888,485,1872,453,1848,434,1827,420,1805,413,1782,410,1759,413,1713,424,1667,435,1620,441,1574,439,1551,432,1528,421,1506,405,1483,391,1472"/>
+<area shape="rect" id="Node000099" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="489,1794,623,1834"/>
+<area shape="poly" id="edge58_Node000041_Node000099" title=" " alt="" coords="394,1468,409,1479,433,1517,443,1554,442,1590,435,1627,429,1663,427,1700,435,1737,457,1774,479,1792,475,1796,453,1777,430,1738,422,1700,424,1663,430,1626,436,1590,437,1554,429,1519,405,1483,391,1472"/>
+<area shape="rect" id="Node000149" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="705,1908,900,1934"/>
+<area shape="poly" id="edge68_Node000041_Node000149" title=" " alt="" coords="395,1468,409,1479,419,1496,426,1516,433,1568,434,1629,431,1695,428,1760,429,1820,438,1869,446,1888,456,1902,472,1912,494,1919,553,1928,622,1930,692,1928,692,1933,622,1935,552,1933,493,1924,470,1916,453,1906,441,1890,433,1871,424,1821,423,1760,425,1695,428,1629,428,1568,421,1518,414,1498,405,1483,391,1472"/>
+<area shape="rect" id="Node000125" href="$group__state__rate.html#gaf712020339c342d39ce714802ab155c0" title="Get vehicle body angular rate (float)." alt="" coords="476,539,636,564"/>
+<area shape="poly" id="edge64_Node000041_Node000125" title=" " alt="" coords="312,1444,317,1286,324,1161,336,1023,353,883,378,754,393,696,411,646,430,605,453,574,462,566,466,570,457,577,435,608,416,649,398,698,383,755,359,884,341,1024,329,1162,322,1286,317,1444"/>
+<area shape="rect" id="Node000153" href="$group__state__rate.html#gaa06b41002d0092717b594a99b2bf7582" title="Get vehicle body angular rate (int)." alt="" coords="477,588,635,614"/>
+<area shape="poly" id="edge65_Node000041_Node000153" title=" " alt="" coords="312,1444,318,1294,326,1176,339,1046,357,914,381,792,396,739,412,692,431,653,453,623,463,614,467,618,457,627,436,655,417,694,401,740,386,793,362,915,344,1047,331,1177,323,1294,317,1444"/>
+<area shape="rect" id="Node000081" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="455,638,657,663"/>
+<area shape="poly" id="edge66_Node000041_Node000081" title=" " alt="" coords="312,1444,320,1301,342,1068,360,945,384,831,414,736,433,700,453,673,456,669,460,673,457,676,437,703,419,738,389,832,365,946,347,1069,325,1301,317,1444"/>
+<area shape="rect" id="Node000086" href="$group__state__attitude.html#ga40d15f52fa56369375a61cdf41ed970a" title="Get vehicle body attitude euler angles (int)." alt="" coords="455,687,657,712"/>
+<area shape="poly" id="edge67_Node000041_Node000086" title=" " alt="" coords="312,1444,321,1309,344,1091,363,976,387,869,416,781,434,747,453,722,457,718,460,722,457,725,438,750,421,784,392,871,368,977,350,1092,326,1310,317,1444"/>
+<area shape="rect" id="Node000155" href="$group__state__attitude.html#ga0f4332db7889a3b90f3f2fe4cbe0d2fb" title="Get vehicle body attitude quaternion (int)." alt="" coords="459,736,653,762"/>
+<area shape="poly" id="edge69_Node000041_Node000155" title=" " alt="" coords="312,1444,323,1317,347,1114,366,1007,390,908,418,826,435,795,453,771,457,767,460,771,457,775,439,798,423,829,395,909,371,1008,353,1115,328,1317,317,1444"/>
+<area shape="rect" id="Node000032" href="$group__state__attitude.html#ga573863695fd1d07537756dbea2a0aa2e" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="458,786,654,811"/>
+<area shape="poly" id="edge70_Node000041_Node000032" title=" " alt="" coords="312,1444,324,1326,350,1138,369,1038,392,947,420,872,436,842,453,821,457,817,460,821,457,824,440,845,425,874,398,948,374,1039,356,1138,329,1326,318,1445"/>
+<area shape="rect" id="Node000128" href="$stabilization_8c.html#aff1c34e4df8582150dd77b44ae73a1db" title=" " alt="" coords="489,835,623,860"/>
+<area shape="poly" id="edge71_Node000041_Node000128" title=" " alt="" coords="313,1444,326,1333,354,1161,373,1070,396,986,422,918,437,891,453,871,475,856,478,861,456,875,441,894,427,920,401,988,378,1071,359,1162,331,1334,318,1444"/>
+<area shape="poly" id="edge25_Node000045_Node000050" title=" " alt="" coords="641,1063,729,1043,730,1049,642,1068"/>
+<area shape="poly" id="edge26_Node000045_Node000053" title=" " alt="" coords="642,1091,696,1097,695,1102,641,1096"/>
+<area shape="poly" id="edge28_Node000054_Node000058" title=" " alt="" coords="635,1229,729,1209,731,1214,636,1235"/>
+<area shape="poly" id="edge29_Node000054_Node000059" title=" " alt="" coords="636,1251,707,1255,707,1261,635,1256"/>
+<area shape="poly" id="edge30_Node000054_Node000062" title=" " alt="" coords="611,1267,756,1322,754,1327,609,1272"/>
+<area shape="poly" id="edge49_Node000075_Node000076" title=" " alt="" coords="612,2273,734,2286,734,2291,612,2279"/>
+<area shape="poly" id="edge55_Node000091_Node000068" title=" " alt="" coords="873,1696,948,1688,948,1693,873,1701"/>
+<area shape="poly" id="edge57_Node000097_Node000070" title=" " alt="" coords="862,1882,962,1904,961,1909,861,1887"/>
+<area shape="poly" id="edge59_Node000099_Node000090" title=" " alt="" coords="622,1804,713,1794,714,1799,623,1810"/>
+<area shape="poly" id="edge60_Node000099_Node000091" title=" " alt="" coords="602,1792,759,1722,761,1727,604,1797"/>
+<area shape="poly" id="edge61_Node000099_Node000097" title=" " alt="" coords="623,1827,735,1853,733,1858,622,1832"/>
+<area shape="poly" id="edge62_Node000099_Node000149" title=" " alt="" coords="590,1832,643,1863,706,1893,731,1902,729,1907,704,1898,641,1868,587,1837"/>
 </map>

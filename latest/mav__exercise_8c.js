@@ -7,16 +7,7 @@ var mav__exercise_8c =
       [ "SAFE", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac", null ],
       [ "OBSTACLE_FOUND", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
       [ "OUT_OF_BOUNDS", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "HOLD", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a", null ],
-      [ "SAFE", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac", null ],
-      [ "OBSTACLE_FOUND", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
-      [ "SEARCH_FOR_SAFE_HEADING", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1", null ],
-      [ "OUT_OF_BOUNDS", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "SAFE", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac", null ],
-      [ "OBSTACLE_FOUND", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
-      [ "SEARCH_FOR_SAFE_HEADING", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1", null ],
-      [ "OUT_OF_BOUNDS", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "REENTER_ARENA", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30", null ]
+      [ "HOLD", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a", null ]
     ] ],
     [ "calculateForwards", "mav__exercise_8c.html#a4e5570532574857283bde2f3437c5375", null ],
     [ "color_detection_cb", "mav__exercise_8c.html#a0111a459dae5b767ece1246ad1d1032e", null ],

@@ -1,52 +1,111 @@
 <map id="sw/airborne/filters/low_pass_filter.h" name="sw/airborne/filters/low_pass_filter.h">
-<area shape="rect" id="node1" title="Simple first order low pass filter with bilinear transform." alt="" coords="2554,5,2693,47"/>
-<area shape="rect" id="node2" href="$adaptive__notch__filter_8h.html" title="Adaptive notch filter." alt="" coords="5,109,180,151"/>
-<area shape="rect" id="node3" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="204,102,371,158"/>
-<area shape="rect" id="node4" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="395,102,569,158"/>
-<area shape="rect" id="node5" href="$guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="593,95,760,165"/>
-<area shape="rect" id="node6" href="$oneloop__andi_8c.html" title=" " alt="" coords="189,213,388,269"/>
-<area shape="rect" id="node7" href="$oneloop__andi_8h.html" title=" " alt="" coords="835,102,1033,158"/>
-<area shape="rect" id="node11" href="$eff__scheduling__rotwing__V2_8c.html" title=" " alt="" coords="855,213,1013,269"/>
-<area shape="rect" id="node12" href="$stabilization__attitude__heli__indi_8c.html" title="Helicopter quaternion INDI attitude stabilization." alt="" coords="1107,95,1278,165"/>
-<area shape="rect" id="node13" href="$stabilization__indi_8c.html" title=" " alt="" coords="1302,102,1473,158"/>
-<area shape="rect" id="node14" href="$stabilization__indi__simple_8c.html" title=" " alt="" coords="1037,213,1236,269"/>
-<area shape="rect" id="node15" href="$stabilization__indi__simple_8h.html" title=" " alt="" coords="1547,102,1747,158"/>
-<area shape="rect" id="node19" href="$approach__moving__target_8c.html" title=" " alt="" coords="2447,102,2613,158"/>
-<area shape="rect" id="node20" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="2637,109,2796,151"/>
-<area shape="rect" id="node40" href="$hf__float_8c.html" title="Horizontal filter (x,y) to estimate position and velocity." alt="" coords="5032,221,5191,262"/>
-<area shape="rect" id="node41" href="$jevois__mavlink_8c.html" title=" " alt="" coords="5215,213,5394,269"/>
-<area shape="rect" id="node42" href="$cloud__sensor_8c.html" title="Get data from Cloud Sensor." alt="" coords="2923,109,3089,151"/>
-<area shape="rect" id="node43" href="$ekf__aw__wrapper_8c.html" title=" " alt="" coords="3114,109,3303,151"/>
-<area shape="rect" id="node44" href="$ground__detect_8c.html" title="Ground detection module." alt="" coords="3328,109,3487,151"/>
-<area shape="rect" id="node45" href="$airspeed__ms45xx__i2c_8c.html" title="Airspeed sensor module using the MS45xxDO digital pressure sensor via I2C." alt="" coords="3511,109,3743,151"/>
-<area shape="rect" id="node46" href="$airspeed__sdp3x_8c.html" title="Airspeed driver for the SDP3X pressure sensor via I2C." alt="" coords="3768,109,3961,151"/>
-<area shape="rect" id="node47" href="$rpm__sensor_8c.html" title=" " alt="" coords="3985,109,4152,151"/>
-<area shape="rect" id="node48" href="$sys__id__chirp_8c.html" title=" " alt="" coords="4176,102,4343,158"/>
-<area shape="rect" id="node49" href="$sys__id__wave_8c.html" title=" " alt="" coords="4367,102,4533,158"/>
-<area shape="rect" id="node50" href="$nps__fdm__gazebo_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using Gazebo." alt="" coords="4558,109,4718,151"/>
-<area shape="rect" id="node8" href="$guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="403,317,569,373"/>
-<area shape="rect" id="node9" href="$guidance__oneloop_8h.html" title="A dummy guidance mode to run the oneloop_andi controller." alt="" coords="463,213,629,269"/>
-<area shape="rect" id="node10" href="$stabilization__oneloop_8c.html" title=" " alt="" coords="654,213,830,269"/>
-<area shape="rect" id="node16" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="1261,221,1455,262"/>
-<area shape="rect" id="node17" href="$scheduling__indi__simple_8c.html" title=" " alt="" coords="1472,317,1631,373"/>
-<area shape="rect" id="node18" href="$scheduling__indi__simple_8h.html" title=" " alt="" coords="1531,213,1689,269"/>
-<area shape="rect" id="node21" href="$max1167__hw_8c.html" title=" " alt="" coords="2539,221,2697,262"/>
-<area shape="rect" id="node22" href="$imu__aspirin__arch_8c.html" title=" " alt="" coords="2721,213,2912,269"/>
-<area shape="rect" id="node23" href="$imu__aspirin__arch_8h.html" title=" " alt="" coords="2131,213,2321,269"/>
-<area shape="rect" id="node24" href="$imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="2147,325,2305,366"/>
-<area shape="rect" id="node25" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="2637,421,2796,463"/>
-<area shape="rect" id="node26" href="$imu__apogee_8h.html" title="Driver for the IMU on the Apogee board." alt="" coords="3246,221,3417,262"/>
-<area shape="rect" id="node27" href="$navdata_8c.html" title="ARDrone2 navdata aquisition driver." alt="" coords="3441,221,3587,262"/>
-<area shape="rect" id="node28" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="3611,221,3830,262"/>
-<area shape="rect" id="node29" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="3854,213,4025,269"/>
-<area shape="rect" id="node30" href="$ahrs__aligner_8c.html" title="Low&#45;pass IMU measurements at startup to align the AHRS." alt="" coords="4049,221,4208,262"/>
-<area shape="rect" id="node31" href="$imu__quality__assessment_8c.html" title=" " alt="" coords="4232,213,4412,269"/>
-<area shape="rect" id="node32" href="$mag__calib__ukf_8c.html" title=" " alt="" coords="4436,221,4640,262"/>
-<area shape="rect" id="node33" href="$gps__datalink_8c.html" title="GPS system based on datalink." alt="" coords="4664,221,4823,262"/>
-<area shape="rect" id="node34" href="$qr__code__spi__link_8c.html" title=" " alt="" coords="4847,213,5008,269"/>
-<area shape="rect" id="node35" href="$hott__eam_8h.html" title="Graupner HOTT electric air module description." alt="" coords="1713,221,1872,262"/>
-<area shape="rect" id="node36" href="$imu_8c.html" title="Inertial Measurement Unit interface." alt="" coords="1896,221,2055,262"/>
-<area shape="rect" id="node37" href="$imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="2963,325,3145,366"/>
-<area shape="rect" id="node38" href="$imu__aspirin__2__spi_8h.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="2937,221,3121,262"/>
-<area shape="rect" id="node39" href="$imu__aspirin__i2c_8c.html" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="2346,221,2514,262"/>
+<area shape="rect" id="Node000001" title="Simple first order low pass filter with bilinear transform." alt="" coords="2554,5,2693,45"/>
+<area shape="rect" id="Node000002" href="$adaptive__notch__filter_8h.html" title="Adaptive notch filter." alt="" coords="5,108,180,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2540,30,2037,36,1303,49,601,69,343,81,192,96,139,111,138,105,191,91,343,76,601,63,1303,44,2037,31,2540,25"/>
+<area shape="rect" id="Node000003" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="204,101,371,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2540,30,2073,37,1399,50,757,69,521,82,382,96,354,103,353,98,382,91,521,77,756,64,1399,45,2073,32,2540,25"/>
+<area shape="rect" id="Node000004" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="395,101,569,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2540,29,2147,29,1580,36,1282,44,1003,56,762,73,581,96,551,103,550,98,580,91,762,68,1002,50,1282,38,1580,30,2147,23,2540,23"/>
+<area shape="rect" id="Node000005" href="$guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="593,93,760,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2541,29,2182,31,1673,40,1406,48,1157,60,942,76,780,96,761,100,760,95,779,91,941,70,1156,55,1406,43,1672,35,2182,26,2541,24"/>
+<area shape="rect" id="Node000006" href="$oneloop__andi_8c.html" title=" " alt="" coords="189,211,388,265"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2540,30,2137,37,1581,50,1075,69,904,82,851,89,823,96,807,111,799,128,791,148,773,165,727,189,686,202,647,208,610,210,532,207,486,208,434,213,389,221,388,216,434,208,486,202,532,201,610,204,647,203,684,197,725,184,770,161,786,145,794,126,802,107,821,91,850,83,903,76,1074,64,1581,44,2137,32,2540,25"/>
+<area shape="rect" id="Node000007" href="$oneloop__andi_8h.html" title=" " alt="" coords="835,101,1033,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2540,30,2229,36,1799,47,1367,66,1187,80,1052,96,1017,103,1016,98,1051,91,1187,75,1367,61,1799,42,2229,30,2540,25"/>
+<area shape="rect" id="Node000011" href="$eff__scheduling__rotwing__V2_8c.html" title=" " alt="" coords="855,211,1013,265"/>
+<area shape="poly" id="edge23_Node000001_Node000011" title=" " alt="" coords="2540,29,2205,29,1753,36,1529,44,1333,56,1182,73,1130,84,1097,96,1079,110,1070,126,1062,145,1047,165,1015,191,982,213,979,208,1012,186,1043,161,1057,142,1065,124,1075,106,1094,91,1129,79,1181,68,1332,51,1529,39,1753,31,2205,24,2540,23"/>
+<area shape="rect" id="Node000012" href="$stabilization__attitude__heli__indi_8c.html" title="Helicopter quaternion INDI attitude stabilization." alt="" coords="1107,93,1278,163"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="2540,30,2273,36,1911,47,1552,67,1403,80,1290,96,1279,98,1278,93,1290,91,1402,75,1552,61,1911,42,2272,30,2540,25"/>
+<area shape="rect" id="Node000013" href="$stabilization__indi_8c.html" title=" " alt="" coords="1302,101,1473,155"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="2540,32,2007,52,1709,71,1585,83,1492,96,1461,103,1460,98,1491,91,1585,77,1708,66,2006,47,2540,26"/>
+<area shape="rect" id="Node000014" href="$stabilization__indi__simple_8c.html" title=" " alt="" coords="1037,211,1236,265"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="2540,30,2295,35,1981,47,1829,55,1696,66,1594,80,1559,87,1537,96,1520,111,1512,128,1504,147,1486,165,1454,183,1425,194,1372,202,1317,204,1249,213,1237,216,1236,211,1248,208,1317,199,1372,197,1424,189,1452,178,1483,161,1499,144,1507,126,1516,107,1534,91,1558,82,1593,74,1695,61,1829,50,1981,41,2295,30,2540,25"/>
+<area shape="rect" id="Node000015" href="$stabilization__indi__simple_8h.html" title=" " alt="" coords="1547,101,1747,155"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="2541,38,1748,119,1747,114,2540,33"/>
+<area shape="rect" id="Node000019" href="$approach__moving__target_8c.html" title=" " alt="" coords="2447,101,2613,155"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="2599,57,2556,102,2553,99,2595,53"/>
+<area shape="rect" id="Node000020" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="2637,108,2796,148"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="2652,54,2701,106,2697,110,2648,57"/>
+<area shape="rect" id="Node000071" href="$hf__float_8c.html" title="Horizontal filter (x,y) to estimate position and velocity." alt="" coords="5032,218,5191,258"/>
+<area shape="poly" id="edge49_Node000001_Node000071" title=" " alt="" coords="2707,44,2759,64,2809,91,2827,110,2838,129,2848,146,2867,160,2907,169,2985,176,3232,187,3564,193,3939,197,4649,200,4899,203,5021,208,5055,215,5054,221,5020,213,4898,208,4649,206,3939,202,3564,198,3232,192,2985,181,2906,174,2865,165,2844,150,2833,131,2823,113,2806,95,2757,68,2705,49"/>
+<area shape="rect" id="Node000081" href="$jevois__mavlink_8c.html" title=" " alt="" coords="5215,211,5394,265"/>
+<area shape="poly" id="edge55_Node000001_Node000081" title=" " alt="" coords="2707,35,2783,55,2821,71,2857,91,2875,109,2885,128,2894,146,2912,160,2955,170,3038,177,3300,189,3654,195,4053,199,4808,201,5073,203,5204,208,5215,210,5214,215,5203,213,5073,209,4808,206,4053,204,3653,201,3300,194,3037,183,2954,175,2910,165,2890,149,2880,131,2871,113,2854,95,2819,76,2781,61,2706,40"/>
+<area shape="rect" id="Node000089" href="$cloud__sensor_8c.html" title="Get data from Cloud Sensor." alt="" coords="2923,108,3089,148"/>
+<area shape="poly" id="edge50_Node000001_Node000089" title=" " alt="" coords="2706,42,2904,91,2952,105,2950,110,2903,96,2705,47"/>
+<area shape="rect" id="Node000090" href="$ekf__aw__wrapper_8c.html" title=" " alt="" coords="3114,108,3303,148"/>
+<area shape="poly" id="edge51_Node000001_Node000090" title=" " alt="" coords="2707,31,2889,53,2996,70,3103,91,3156,105,3154,111,3101,96,2995,75,2889,58,2706,37"/>
+<area shape="rect" id="Node000091" href="$ground__detect_8c.html" title="Ground detection module." alt="" coords="3328,108,3487,148"/>
+<area shape="poly" id="edge52_Node000001_Node000091" title=" " alt="" coords="2707,25,2827,30,2979,41,3148,60,3316,91,3363,105,3362,110,3315,96,3147,66,2979,46,2826,35,2706,31"/>
+<area shape="rect" id="Node000092" href="$airspeed__ms45xx__i2c_8c.html" title="Airspeed sensor module using the MS45xxDO digital pressure sensor via I2C." alt="" coords="3511,108,3743,148"/>
+<area shape="poly" id="edge53_Node000001_Node000092" title=" " alt="" coords="2707,25,2856,30,3054,41,3276,61,3500,91,3565,105,3564,111,3499,96,3276,66,3053,47,2856,36,2707,31"/>
+<area shape="rect" id="Node000093" href="$airspeed__sdp3x_8c.html" title="Airspeed driver for the SDP3X pressure sensor via I2C." alt="" coords="3768,108,3961,148"/>
+<area shape="poly" id="edge54_Node000001_Node000093" title=" " alt="" coords="2707,26,3240,47,3538,66,3662,78,3756,91,3813,105,3812,111,3755,96,3661,83,3538,72,3240,53,2706,32"/>
+<area shape="rect" id="Node000094" href="$rpm__sensor_8c.html" title=" " alt="" coords="3985,108,4152,148"/>
+<area shape="poly" id="edge56_Node000001_Node000094" title=" " alt="" coords="2706,25,2978,30,3344,41,3709,61,3860,74,3975,91,4024,105,4023,110,3973,96,3859,80,3708,66,3344,46,2978,35,2706,30"/>
+<area shape="rect" id="Node000095" href="$sys__id__chirp_8c.html" title=" " alt="" coords="4176,101,4343,155"/>
+<area shape="poly" id="edge57_Node000001_Node000095" title=" " alt="" coords="2707,24,3012,28,3434,38,3857,57,4032,72,4165,91,4194,98,4193,103,4164,96,4032,78,3856,63,3434,43,3012,33,2707,30"/>
+<area shape="rect" id="Node000096" href="$sys__id__wave_8c.html" title=" " alt="" coords="4367,101,4533,155"/>
+<area shape="poly" id="edge58_Node000001_Node000096" title=" " alt="" coords="2707,24,3046,26,3523,34,3772,43,4004,54,4205,70,4356,91,4385,98,4383,103,4355,96,4204,76,4004,60,3771,48,3523,40,3046,31,2707,29"/>
+<area shape="rect" id="Node000097" href="$nps__fdm__gazebo_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using Gazebo." alt="" coords="4558,108,4718,148"/>
+<area shape="poly" id="edge59_Node000001_Node000097" title=" " alt="" coords="2706,23,3079,23,3612,30,3890,38,4152,51,4377,68,4547,91,4596,105,4594,110,4545,96,4376,73,4152,56,3890,44,3611,36,3079,29,2706,29"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="835,161,817,165,702,184,612,191,522,198,406,213,389,216,388,211,406,208,521,193,611,186,702,178,816,160,834,156"/>
+<area shape="rect" id="Node000008" href="$guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="403,313,569,368"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="835,161,817,165,780,170,733,171,624,172,569,175,519,182,479,194,452,213,445,223,442,235,444,261,454,288,468,312,464,314,450,290,439,263,437,235,440,221,448,209,477,189,518,177,568,170,623,167,733,166,780,164,816,160,834,156"/>
+<area shape="rect" id="Node000009" href="$guidance__oneloop_8h.html" title="A dummy guidance mode to run the oneloop_andi controller." alt="" coords="463,211,629,265"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="830,162,817,165,630,217,629,211,816,160,829,157"/>
+<area shape="rect" id="Node000010" href="$stabilization__oneloop_8c.html" title=" " alt="" coords="654,211,830,265"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="876,165,790,213,788,208,874,160"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="937,170,937,210,931,210,931,170"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="526,279,504,315,499,312,521,276"/>
+<area shape="poly" id="edge17_Node000015_Node000014" title=" " alt="" coords="1546,161,1529,165,1451,181,1389,190,1249,213,1237,216,1236,211,1248,208,1388,185,1450,176,1528,160,1545,156"/>
+<area shape="rect" id="Node000016" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="1261,218,1455,258"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="1565,163,1410,220,1408,215,1563,158"/>
+<area shape="rect" id="Node000017" href="$scheduling__indi__simple_8c.html" title=" " alt="" coords="1472,313,1631,368"/>
+<area shape="poly" id="edge19_Node000015_Node000017" title=" " alt="" coords="1569,164,1542,185,1520,212,1513,237,1516,264,1525,289,1536,312,1531,314,1520,291,1511,265,1508,236,1516,209,1538,181,1566,160"/>
+<area shape="rect" id="Node000018" href="$scheduling__indi__simple_8h.html" title=" " alt="" coords="1531,211,1689,265"/>
+<area shape="poly" id="edge20_Node000015_Node000018" title=" " alt="" coords="1636,170,1622,211,1617,210,1631,168"/>
+<area shape="poly" id="edge21_Node000018_Node000017" title=" " alt="" coords="1590,279,1569,315,1564,312,1585,276"/>
+<area shape="rect" id="Node000021" href="$max1167__hw_8c.html" title=" " alt="" coords="2539,218,2697,258"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="2692,160,2637,220,2633,216,2688,156"/>
+<area shape="rect" id="Node000022" href="$imu__aspirin__arch_8c.html" title=" " alt="" coords="2721,211,2912,265"/>
+<area shape="poly" id="edge26_Node000020_Node000022" title=" " alt="" coords="2745,156,2794,209,2790,212,2742,160"/>
+<area shape="rect" id="Node000023" href="$imu__aspirin__arch_8h.html" title=" " alt="" coords="2131,211,2321,265"/>
+<area shape="poly" id="edge27_Node000020_Node000023" title=" " alt="" coords="2658,155,2625,165,2544,183,2480,192,2416,199,2334,213,2322,216,2321,211,2334,208,2415,194,2480,187,2543,178,2624,160,2656,150"/>
+<area shape="rect" id="Node000024" href="$imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="2147,321,2305,361"/>
+<area shape="poly" id="edge42_Node000020_Node000024" title=" " alt="" coords="2660,155,2625,165,2574,171,2510,172,2358,167,2283,168,2214,174,2158,188,2136,199,2120,212,2112,225,2110,236,2120,264,2132,281,2147,296,2181,318,2178,323,2144,300,2128,284,2116,267,2105,237,2107,223,2116,209,2134,194,2156,183,2213,169,2283,163,2359,162,2510,166,2574,166,2624,160,2658,150"/>
+<area shape="rect" id="Node000025" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="2637,416,2796,456"/>
+<area shape="poly" id="edge41_Node000020_Node000025" title=" " alt="" coords="2773,150,2803,160,2837,165,2882,168,2988,169,3041,172,3089,178,3129,190,3157,209,3184,249,3191,269,3194,289,3192,309,3186,329,3160,370,3135,388,3099,403,3054,414,3003,423,2895,433,2796,437,2796,432,2894,428,3003,418,3053,409,3097,398,3133,384,3156,366,3181,327,3187,308,3189,289,3186,270,3179,251,3153,213,3127,195,3088,184,3040,177,2988,175,2882,173,2837,171,2801,165,2771,156"/>
+<area shape="rect" id="Node000026" href="$imu__apogee_8h.html" title="Driver for the IMU on the Apogee board." alt="" coords="3246,218,3417,258"/>
+<area shape="poly" id="edge30_Node000020_Node000026" title=" " alt="" coords="2779,150,2816,160,2930,180,3021,187,3112,192,3228,208,3262,215,3261,221,3227,213,3111,198,3021,192,2930,185,2815,165,2777,155"/>
+<area shape="rect" id="Node000029" href="$navdata_8c.html" title="ARDrone2 navdata aquisition driver." alt="" coords="3441,218,3587,258"/>
+<area shape="poly" id="edge31_Node000020_Node000029" title=" " alt="" coords="2778,150,2816,160,2908,176,2987,183,3122,186,3257,187,3336,194,3429,208,3460,215,3458,221,3428,213,3336,199,3257,192,3122,191,2986,189,2907,181,2815,165,2776,155"/>
+<area shape="rect" id="Node000030" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="3611,218,3830,258"/>
+<area shape="poly" id="edge32_Node000020_Node000030" title=" " alt="" coords="2777,150,2816,160,2934,179,3034,189,3123,192,3206,191,3379,190,3481,195,3600,208,3642,215,3641,221,3599,213,3480,200,3379,195,3206,197,3123,198,3034,194,2933,185,2815,165,2776,155"/>
+<area shape="rect" id="Node000031" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="3854,211,4025,265"/>
+<area shape="poly" id="edge33_Node000020_Node000031" title=" " alt="" coords="2777,150,2816,160,2970,183,3102,193,3218,194,3328,189,3437,184,3554,183,3687,189,3842,208,3854,210,3853,215,3842,213,3686,195,3554,188,3437,190,3328,195,3218,199,3102,199,2970,189,2815,165,2775,155"/>
+<area shape="rect" id="Node000032" href="$ahrs__aligner_8c.html" title="Low&#45;pass IMU measurements at startup to align the AHRS." alt="" coords="4049,218,4208,258"/>
+<area shape="poly" id="edge34_Node000020_Node000032" title=" " alt="" coords="2777,150,2816,160,2999,187,3156,197,3295,196,3425,189,3555,181,3695,178,3852,186,4037,208,4071,215,4070,221,4036,213,3852,191,3695,184,3555,187,3425,194,3295,201,3156,202,2999,192,2815,165,2775,155"/>
+<area shape="rect" id="Node000033" href="$imu__quality__assessment_8c.html" title=" " alt="" coords="4232,211,4412,265"/>
+<area shape="poly" id="edge35_Node000020_Node000033" title=" " alt="" coords="2777,150,2816,160,2926,178,3027,191,3207,202,3367,201,3516,193,3666,183,3827,179,4008,185,4110,194,4221,208,4232,210,4231,215,4220,213,4109,199,4008,190,3827,184,3666,189,3517,198,3367,206,3207,208,3027,196,2925,183,2815,165,2775,155"/>
+<area shape="rect" id="Node000034" href="$mag__calib__ukf_8c.html" title=" " alt="" coords="4436,218,4640,258"/>
+<area shape="poly" id="edge36_Node000020_Node000034" title=" " alt="" coords="2777,150,2816,160,2888,170,2971,178,3166,188,3386,191,3619,191,4073,190,4268,195,4425,208,4466,215,4465,221,4424,213,4268,201,4073,196,3619,196,3386,196,3165,193,2971,184,2887,176,2815,165,2775,155"/>
+<area shape="rect" id="Node000035" href="$gps__datalink_8c.html" title="GPS system based on datalink." alt="" coords="4664,218,4823,258"/>
+<area shape="poly" id="edge37_Node000020_Node000035" title=" " alt="" coords="2776,150,2816,160,2898,172,2993,180,3215,189,3467,190,3733,188,4000,184,4252,184,4474,191,4570,198,4653,208,4687,215,4686,221,4652,213,4570,203,4474,196,4252,190,4000,190,3733,193,3467,196,3215,194,2993,185,2897,177,2815,165,2775,155"/>
+<area shape="rect" id="Node000036" href="$qr__code__spi__link_8c.html" title=" " alt="" coords="4847,211,5008,265"/>
+<area shape="poly" id="edge38_Node000020_Node000036" title=" " alt="" coords="2776,150,2816,160,2906,173,3011,182,3255,191,3532,192,3825,188,4118,184,4395,183,4639,190,4745,197,4836,208,4847,210,4846,215,4835,213,4744,203,4639,195,4395,189,4118,189,3825,194,3532,197,3255,196,3011,187,2906,178,2815,165,2775,155"/>
+<area shape="rect" id="Node000037" href="$hott__eam_8h.html" title="Graupner HOTT electric air module description." alt="" coords="1713,218,1872,258"/>
+<area shape="poly" id="edge39_Node000020_Node000037" title=" " alt="" coords="2661,155,2625,165,2514,184,2418,193,2334,195,2255,193,2091,192,1996,198,1884,213,1852,220,1851,215,1883,208,1995,193,2091,186,2255,188,2334,190,2418,188,2513,179,2624,160,2659,150"/>
+<area shape="rect" id="Node000038" href="$imu_8c.html" title="Inertial Measurement Unit interface." alt="" coords="1896,218,2055,258"/>
+<area shape="poly" id="edge40_Node000020_Node000038" title=" " alt="" coords="2660,155,2625,165,2542,181,2472,189,2350,193,2229,196,2158,201,2074,213,2041,220,2040,215,2074,208,2157,196,2228,190,2350,188,2471,184,2542,176,2624,160,2658,150"/>
+<area shape="rect" id="Node000039" href="$imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="2963,321,3145,361"/>
+<area shape="poly" id="edge43_Node000020_Node000039" title=" " alt="" coords="2780,150,2816,160,2888,167,2983,170,3030,174,3074,180,3110,191,3135,209,3143,223,3145,237,3135,267,3113,299,3086,323,3082,319,3109,295,3130,264,3140,236,3138,225,3131,212,3107,196,3073,185,3030,179,2982,175,2887,172,2815,165,2778,155"/>
+<area shape="rect" id="Node000040" href="$imu__aspirin__2__spi_8h.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="2937,218,3121,258"/>
+<area shape="poly" id="edge44_Node000020_Node000040" title=" " alt="" coords="2785,150,2975,215,2973,220,2783,155"/>
+<area shape="rect" id="Node000041" href="$imu__aspirin__i2c_8c.html" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="2346,218,2514,258"/>
+<area shape="poly" id="edge46_Node000020_Node000041" title=" " alt="" coords="2655,155,2481,220,2479,215,2653,150"/>
+<area shape="poly" id="edge47_Node000020_Node000071" title=" " alt="" coords="2776,150,2816,160,2915,174,3029,183,3295,193,3597,193,3917,188,4237,183,4540,181,4807,188,4922,196,5021,208,5055,215,5054,221,5020,213,4921,202,4806,194,4539,187,4237,188,3917,194,3598,198,3295,198,3029,189,2914,179,2815,165,2775,155"/>
+<area shape="poly" id="edge48_Node000020_Node000081" title=" " alt="" coords="2800,148,2866,160,2972,170,3094,177,3376,184,3696,184,4035,181,4374,178,4694,180,4976,188,5098,197,5204,208,5215,210,5214,215,5203,213,5098,202,4976,194,4693,185,4374,184,4035,186,3696,189,3376,189,3093,182,2971,175,2866,165,2799,154"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="2229,279,2229,320,2223,320,2223,279"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="2319,357,2637,417,2636,422,2318,362"/>
+<area shape="poly" id="edge45_Node000040_Node000039" title=" " alt="" coords="3039,271,3052,320,3047,321,3034,272"/>
 </map>

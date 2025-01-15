@@ -1,52 +1,121 @@
 <map id="sw/airborne/boards/bebop/isp/libisp.c" name="sw/airborne/boards/bebop/isp/libisp.c">
-<area shape="rect" id="node1" title=" " alt="" coords="1984,5,2131,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="4431,601,4502,628"/>
-<area shape="rect" id="node4" title=" " alt="" coords="147,273,218,300"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1843,95,1906,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1930,95,1998,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="3755,676,3826,703"/>
-<area shape="rect" id="node8" title=" " alt="" coords="2116,95,2191,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="2215,95,2318,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="2343,95,2431,121"/>
-<area shape="rect" id="node11" href="$libisp_8h.html" title=" " alt="" coords="2023,95,2092,121"/>
-<area shape="rect" id="node46" href="$libisp__config_8h.html" title=" " alt="" coords="4768,177,4883,203"/>
-<area shape="rect" id="node12" href="$reg__avi_8h.html" title=" " alt="" coords="2016,177,2099,203"/>
-<area shape="rect" id="node32" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2)" alt="" coords="4198,169,4389,211"/>
-<area shape="rect" id="node13" href="$avi__isp__vlformat__32to40_8h.html" title=" " alt="" coords="438,266,623,307"/>
-<area shape="rect" id="node14" href="$avi__isp__chain__bayer__inter_8h.html" title=" " alt="" coords="647,266,811,307"/>
-<area shape="rect" id="node15" href="$avi__isp__pedestal_8h.html" title=" " alt="" coords="836,273,1033,300"/>
-<area shape="rect" id="node16" href="$avi__isp__green__imbalance_8h.html" title=" " alt="" coords="1058,266,1225,307"/>
-<area shape="rect" id="node17" href="$avi__isp__dead__pixel__correction_8h.html" title=" " alt="" coords="1249,266,1410,307"/>
-<area shape="rect" id="node18" href="$avi__isp__statistics__bayer_8h.html" title=" " alt="" coords="1434,266,1622,307"/>
-<area shape="rect" id="node19" href="$avi__isp__denoising_8h.html" title=" " alt="" coords="1646,273,1850,300"/>
-<area shape="rect" id="node20" href="$avi__isp__lens__shading__correction_8h.html" title=" " alt="" coords="1874,266,2038,307"/>
-<area shape="rect" id="node21" href="$avi__isp__chromatic__aberration_8h.html" title=" " alt="" coords="2063,266,2257,307"/>
-<area shape="rect" id="node22" href="$avi__isp__bayer_8h.html" title=" " alt="" coords="2282,273,2459,300"/>
-<area shape="rect" id="node23" href="$avi__isp__color__correction_8h.html" title=" " alt="" coords="2483,266,2645,307"/>
-<area shape="rect" id="node24" href="$avi__isp__vlformat__40to32_8h.html" title=" " alt="" coords="2669,266,2854,307"/>
-<area shape="rect" id="node25" href="$avi__isp__gamma__corrector_8h.html" title=" " alt="" coords="2879,266,3057,307"/>
-<area shape="rect" id="node26" href="$avi__isp__chroma_8h.html" title=" " alt="" coords="3082,273,3273,300"/>
-<area shape="rect" id="node27" href="$avi__isp__statistics__yuv_8h.html" title=" " alt="" coords="3297,266,3485,307"/>
-<area shape="rect" id="node28" href="$avi__isp__chain__yuv__inter_8h.html" title=" " alt="" coords="3509,266,3673,307"/>
-<area shape="rect" id="node29" href="$avi__isp__edge__enhancement__color__reduction__filter_8h.html" title=" " alt="" coords="3697,259,3922,315"/>
-<area shape="rect" id="node30" href="$avi__isp__i3d__lut_8h.html" title=" " alt="" coords="3945,266,4095,307"/>
-<area shape="rect" id="node31" href="$avi__isp__drop_8h.html" title=" " alt="" coords="243,273,413,300"/>
-<area shape="rect" id="node33" title=" " alt="" coords="4544,273,4693,300"/>
-<area shape="rect" id="node34" title=" " alt="" coords="4170,273,4254,300"/>
-<area shape="rect" id="node35" title=" " alt="" coords="4089,363,4180,389"/>
-<area shape="rect" id="node36" title=" " alt="" coords="4366,676,4421,703"/>
-<area shape="rect" id="node37" href="$image_8h.html" title="Image helper functions like resizing, color filter, converters..." alt="" coords="4278,266,4469,307"/>
-<area shape="rect" id="node38" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="4219,363,4285,389"/>
-<area shape="rect" id="node39" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="4170,527,4350,553"/>
-<area shape="rect" id="node42" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="3901,527,4093,553"/>
-<area shape="rect" id="node43" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="4298,437,4449,479"/>
-<area shape="rect" id="node44" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="3829,437,3979,479"/>
-<area shape="rect" id="node45" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="4055,437,4222,479"/>
-<area shape="rect" id="node40" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="3919,601,4075,628"/>
-<area shape="rect" id="node41" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="4151,601,4305,628"/>
-<area shape="rect" id="node47" href="$mt9f002_8h.html" title="Initialization and configuration of the MT9F002 CMOS Chip." alt="" coords="4709,527,4891,553"/>
-<area shape="rect" id="node48" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="4729,601,4863,628"/>
-<area shape="rect" id="node50" title=" " alt="" coords="4887,601,5047,628"/>
-<area shape="rect" id="node49" title=" " alt="" coords="4712,676,4880,703"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1984,5,2131,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,72,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1984,30,1610,35,1062,47,502,66,268,80,91,96,86,97,85,91,90,91,267,74,502,61,1062,41,1610,30,1984,25"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="4431,592,4502,617"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2131,24,2684,30,3084,41,3513,59,3929,87,4121,106,4294,127,4444,152,4567,182,4616,198,4656,215,4687,233,4707,253,4722,277,4729,301,4730,326,4726,351,4704,400,4669,447,4626,491,4580,530,4499,587,4496,582,4576,526,4622,487,4665,444,4700,398,4721,350,4725,326,4724,302,4717,279,4703,256,4683,238,4653,220,4614,203,4565,187,4443,158,4293,133,4120,111,3929,92,3512,64,3084,46,2684,36,2131,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="147,269,218,295"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1984,29,1696,35,1492,46,1259,64,1008,93,746,133,615,158,485,187,356,220,232,257,213,265,211,260,230,252,355,215,483,182,614,153,745,128,1007,87,1259,59,1491,41,1696,30,1984,24"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="1843,93,1906,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2015,48,1915,90,1913,85,2013,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1930,93,1998,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2036,48,1990,86,1987,82,2033,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="3755,665,3826,691"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1984,31,1541,47,914,78,609,99,353,125,252,139,176,154,128,170,116,178,112,186,112,532,120,539,146,547,248,563,407,578,615,592,1143,616,1761,635,2989,662,3741,673,3741,679,2988,667,1761,641,1143,621,615,597,407,583,247,569,145,553,117,544,107,534,107,185,112,175,125,165,175,149,251,134,352,119,609,94,913,72,1541,41,1984,26"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="2116,93,2191,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2082,43,2130,82,2127,87,2079,48"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="2215,93,2318,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2108,43,2224,86,2222,91,2107,48"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="2343,93,2431,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2131,41,2330,88,2329,94,2130,47"/>
+<area shape="rect" id="Node000011" href="$libisp_8h.html" title=" " alt="" coords="2023,93,2092,119"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2060,46,2060,79,2055,79,2055,46"/>
+<area shape="rect" id="Node000050" href="$libisp__config_8h.html" title=" " alt="" coords="4768,174,4883,199"/>
+<area shape="poly" id="edge63_Node000001_Node000050" title=" " alt="" coords="2131,24,2700,27,3552,36,3978,44,4348,56,4620,71,4705,80,4750,91,4772,105,4790,123,4815,160,4811,163,4786,126,4768,109,4748,96,4704,86,4619,76,4348,61,3978,49,3552,41,2700,32,2131,29"/>
+<area shape="rect" id="Node000012" href="$reg__avi_8h.html" title=" " alt="" coords="2016,174,2099,199"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="2060,119,2060,160,2055,160,2055,119"/>
+<area shape="rect" id="Node000032" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2)" alt="" coords="4198,167,4389,207"/>
+<area shape="poly" id="edge32_Node000011_Node000032" title=" " alt="" coords="2093,114,2104,116,2295,135,2547,149,3153,169,3754,179,4184,182,4184,188,3754,184,3153,175,2547,155,2295,140,2104,121,2092,119"/>
+<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="2016,191,1654,196,1094,207,549,227,348,241,278,249,231,257,212,265,210,260,230,252,277,243,348,235,548,222,1094,202,1654,190,2016,186"/>
+<area shape="rect" id="Node000013" href="$avi__isp__vlformat__32to40_8h.html" title=" " alt="" coords="438,262,623,302"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="2016,192,1352,211,939,230,765,243,635,257,611,262,610,256,634,252,765,238,938,225,1352,205,2016,186"/>
+<area shape="rect" id="Node000014" href="$avi__isp__chain__bayer__inter_8h.html" title=" " alt="" coords="647,262,811,302"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="2016,192,1438,212,1084,232,936,244,824,257,804,261,803,256,824,252,935,238,1084,226,1438,207,2015,186"/>
+<area shape="rect" id="Node000015" href="$avi__isp__pedestal_8h.html" title=" " alt="" coords="836,269,1033,295"/>
+<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="2016,191,1858,194,1619,204,1335,224,1189,239,1046,257,990,269,988,263,1045,252,1188,233,1335,218,1618,198,1858,189,2016,186"/>
+<area shape="rect" id="Node000016" href="$avi__isp__green__imbalance_8h.html" title=" " alt="" coords="1058,262,1225,302"/>
+<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="2016,191,1885,195,1692,206,1466,225,1350,240,1236,257,1217,261,1216,256,1236,252,1349,234,1465,220,1691,200,1885,190,2016,186"/>
+<area shape="rect" id="Node000017" href="$avi__isp__dead__pixel__correction_8h.html" title=" " alt="" coords="1249,262,1410,302"/>
+<area shape="poly" id="edge17_Node000012_Node000017" title=" " alt="" coords="2016,193,1764,211,1594,230,1422,257,1404,261,1403,256,1421,252,1593,225,1763,206,2015,187"/>
+<area shape="rect" id="Node000018" href="$avi__isp__statistics__bayer_8h.html" title=" " alt="" coords="1434,262,1622,302"/>
+<area shape="poly" id="edge18_Node000012_Node000018" title=" " alt="" coords="2016,196,1848,220,1634,257,1614,261,1613,256,1633,252,1848,215,2015,191"/>
+<area shape="rect" id="Node000019" href="$avi__isp__denoising_8h.html" title=" " alt="" coords="1646,269,1850,295"/>
+<area shape="poly" id="edge19_Node000012_Node000019" title=" " alt="" coords="2020,202,1800,268,1798,263,2019,197"/>
+<area shape="rect" id="Node000020" href="$avi__isp__lens__shading__correction_8h.html" title=" " alt="" coords="1874,262,2038,302"/>
+<area shape="poly" id="edge20_Node000012_Node000020" title=" " alt="" coords="2047,201,1989,254,1985,250,2043,197"/>
+<area shape="rect" id="Node000021" href="$avi__isp__chromatic__aberration_8h.html" title=" " alt="" coords="2063,262,2257,302"/>
+<area shape="poly" id="edge21_Node000012_Node000021" title=" " alt="" coords="2072,197,2130,250,2127,254,2068,201"/>
+<area shape="rect" id="Node000022" href="$avi__isp__bayer_8h.html" title=" " alt="" coords="2282,269,2459,295"/>
+<area shape="poly" id="edge22_Node000012_Node000022" title=" " alt="" coords="2097,197,2320,263,2318,268,2095,202"/>
+<area shape="rect" id="Node000023" href="$avi__isp__color__correction_8h.html" title=" " alt="" coords="2483,262,2645,302"/>
+<area shape="poly" id="edge23_Node000012_Node000023" title=" " alt="" coords="2099,190,2263,214,2471,252,2488,256,2487,261,2470,257,2262,219,2098,196"/>
+<area shape="rect" id="Node000024" href="$avi__isp__vlformat__40to32_8h.html" title=" " alt="" coords="2669,262,2854,302"/>
+<area shape="poly" id="edge24_Node000012_Node000024" title=" " alt="" coords="2099,188,2337,209,2496,227,2656,252,2678,256,2677,262,2656,257,2495,233,2336,214,2099,193"/>
+<area shape="rect" id="Node000025" href="$avi__isp__gamma__corrector_8h.html" title=" " alt="" coords="2879,262,3057,302"/>
+<area shape="poly" id="edge25_Node000012_Node000025" title=" " alt="" coords="2099,186,2228,191,2418,202,2640,222,2866,252,2888,256,2887,262,2865,257,2639,227,2418,208,2228,197,2099,192"/>
+<area shape="rect" id="Node000026" href="$avi__isp__chroma_8h.html" title=" " alt="" coords="3082,269,3273,295"/>
+<area shape="poly" id="edge26_Node000012_Node000026" title=" " alt="" coords="2099,186,2257,188,2496,198,2780,218,2926,233,3070,252,3124,263,3123,268,3069,257,2926,238,2779,223,2496,203,2257,194,2099,191"/>
+<area shape="rect" id="Node000027" href="$avi__isp__statistics__yuv_8h.html" title=" " alt="" coords="3297,262,3485,302"/>
+<area shape="poly" id="edge27_Node000012_Node000027" title=" " alt="" coords="2099,185,2285,185,2577,192,2927,213,3107,230,3284,252,3310,257,3309,262,3284,257,3107,235,2926,218,2577,198,2285,191,2099,190"/>
+<area shape="rect" id="Node000028" href="$avi__isp__chain__yuv__inter_8h.html" title=" " alt="" coords="3509,262,3673,302"/>
+<area shape="poly" id="edge28_Node000012_Node000028" title=" " alt="" coords="2099,186,2365,192,2770,204,3189,223,3364,237,3496,252,3518,256,3517,261,3496,257,3364,242,3188,229,2769,209,2364,197,2099,191"/>
+<area shape="rect" id="Node000029" href="$avi__isp__edge__enhancement__color__reduction__filter_8h.html" title=" " alt="" coords="3697,255,3922,309"/>
+<area shape="poly" id="edge29_Node000012_Node000029" title=" " alt="" coords="2099,186,2843,206,3320,225,3524,238,3683,252,3683,257,3524,243,3320,231,2843,211,2099,191"/>
+<area shape="rect" id="Node000030" href="$avi__isp__i3d__lut_8h.html" title=" " alt="" coords="3945,262,4095,302"/>
+<area shape="poly" id="edge30_Node000012_Node000030" title=" " alt="" coords="2099,185,2435,187,2968,196,3254,204,3524,216,3758,232,3934,252,3952,256,3951,261,3933,257,3758,237,3524,221,3254,210,2968,201,2435,193,2099,191"/>
+<area shape="rect" id="Node000031" href="$avi__isp__drop_8h.html" title=" " alt="" coords="243,269,413,295"/>
+<area shape="poly" id="edge31_Node000012_Node000031" title=" " alt="" coords="2016,191,1719,196,1258,207,778,227,577,241,426,257,377,268,376,263,425,252,576,235,778,221,1258,202,1719,190,2016,186"/>
+<area shape="rect" id="Node000033" title=" " alt="" coords="4544,269,4693,295"/>
+<area shape="poly" id="edge33_Node000032_Node000033" title=" " alt="" coords="4360,204,4566,263,4565,268,4358,209"/>
+<area shape="rect" id="Node000034" title=" " alt="" coords="4170,269,4254,295"/>
+<area shape="poly" id="edge34_Node000032_Node000034" title=" " alt="" coords="4279,209,4233,260,4229,257,4275,205"/>
+<area shape="rect" id="Node000035" title=" " alt="" coords="4089,357,4180,383"/>
+<area shape="poly" id="edge35_Node000032_Node000035" title=" " alt="" coords="4227,209,4190,228,4159,256,4148,277,4141,300,4136,344,4131,343,4135,299,4143,275,4155,253,4187,224,4225,204"/>
+<area shape="rect" id="Node000036" title=" " alt="" coords="4366,665,4421,691"/>
+<area shape="poly" id="edge36_Node000032_Node000036" title=" " alt="" coords="4375,204,4430,224,4482,253,4567,348,4620,413,4644,449,4644,533,4638,566,4621,594,4596,617,4565,636,4497,661,4435,674,4434,669,4496,656,4563,631,4593,613,4617,591,4633,564,4639,532,4639,450,4616,416,4563,351,4478,257,4427,229,4374,209"/>
+<area shape="rect" id="Node000037" href="$image_8h.html" title="Image helper functions like resizing, color filter, converters..." alt="" coords="4278,262,4469,302"/>
+<area shape="poly" id="edge37_Node000032_Node000037" title=" " alt="" coords="4312,205,4350,250,4346,254,4308,208"/>
+<area shape="poly" id="edge39_Node000037_Node000035" title=" " alt="" coords="4322,305,4180,355,4178,350,4320,300"/>
+<area shape="poly" id="edge38_Node000037_Node000036" title=" " alt="" coords="4398,300,4436,337,4481,387,4523,449,4539,483,4552,518,4554,544,4552,576,4541,619,4518,641,4491,656,4435,674,4433,669,4488,651,4515,636,4536,616,4546,575,4549,544,4547,519,4535,485,4518,452,4476,390,4432,340,4394,304"/>
+<area shape="rect" id="Node000038" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="4219,357,4285,383"/>
+<area shape="poly" id="edge40_Node000037_Node000038" title=" " alt="" coords="4348,304,4281,351,4278,347,4345,300"/>
+<area shape="poly" id="edge62_Node000038_Node000007" title=" " alt="" coords="4219,381,4192,385,4107,390,3995,392,3939,395,3888,402,3847,414,3818,433,3800,457,3787,484,3780,514,3777,545,3779,604,3787,651,3782,652,3774,605,3771,545,3775,513,3782,483,3795,454,3814,429,3845,409,3887,397,3939,390,3995,386,4106,385,4192,380,4218,375"/>
+<area shape="poly" id="edge61_Node000038_Node000036" title=" " alt="" coords="4286,369,4326,373,4373,382,4420,400,4442,413,4462,429,4503,473,4519,495,4530,518,4536,541,4536,566,4529,592,4516,619,4499,638,4479,653,4435,671,4433,666,4476,648,4496,634,4511,616,4524,590,4530,565,4530,542,4525,520,4514,498,4499,476,4458,433,4439,417,4418,405,4371,387,4325,378,4285,374"/>
+<area shape="rect" id="Node000039" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="4170,519,4350,544"/>
+<area shape="poly" id="edge41_Node000038_Node000039" title=" " alt="" coords="4255,383,4261,505,4256,505,4250,383"/>
+<area shape="rect" id="Node000044" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="3901,519,4093,544"/>
+<area shape="poly" id="edge49_Node000038_Node000044" title=" " alt="" coords="4219,382,4115,408,4069,422,4044,433,4030,449,4019,468,4005,506,4000,504,4014,466,4026,446,4041,429,4067,417,4114,403,4218,377"/>
+<area shape="rect" id="Node000046" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="4298,431,4449,471"/>
+<area shape="poly" id="edge51_Node000038_Node000046" title=" " alt="" coords="4271,381,4334,421,4331,425,4268,385"/>
+<area shape="rect" id="Node000048" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="3829,431,3979,471"/>
+<area shape="poly" id="edge54_Node000038_Node000048" title=" " alt="" coords="4219,381,3994,432,3992,427,4218,376"/>
+<area shape="rect" id="Node000049" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="4055,431,4222,471"/>
+<area shape="poly" id="edge57_Node000038_Node000049" title=" " alt="" coords="4237,385,4179,425,4176,421,4234,381"/>
+<area shape="poly" id="edge48_Node000039_Node000003" title=" " alt="" coords="4294,541,4421,585,4419,590,4292,547"/>
+<area shape="poly" id="edge42_Node000039_Node000036" title=" " alt="" coords="4273,543,4318,590,4376,653,4372,657,4314,594,4269,546"/>
+<area shape="rect" id="Node000040" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="3919,592,4075,617"/>
+<area shape="poly" id="edge43_Node000039_Node000040" title=" " alt="" coords="4218,547,4054,591,4052,586,4217,541"/>
+<area shape="rect" id="Node000043" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="4151,592,4305,617"/>
+<area shape="poly" id="edge46_Node000039_Node000043" title=" " alt="" coords="4257,545,4241,581,4236,579,4252,543"/>
+<area shape="poly" id="edge44_Node000040_Node000007" title=" " alt="" coords="3965,620,3838,663,3836,658,3963,615"/>
+<area shape="poly" id="edge45_Node000040_Node000036" title=" " alt="" coords="4061,615,4353,667,4352,672,4060,620"/>
+<area shape="poly" id="edge47_Node000043_Node000036" title=" " alt="" coords="4256,615,4355,657,4353,662,4254,620"/>
+<area shape="poly" id="edge50_Node000044_Node000040" title=" " alt="" coords="4000,544,4000,578,3995,578,3995,544"/>
+<area shape="poly" id="edge52_Node000046_Node000036" title=" " alt="" coords="4378,471,4394,651,4388,652,4372,471"/>
+<area shape="poly" id="edge53_Node000046_Node000039" title=" " alt="" coords="4347,473,4290,513,4287,508,4344,469"/>
+<area shape="poly" id="edge56_Node000048_Node000036" title=" " alt="" coords="3899,472,3890,504,3884,544,3889,583,3896,601,3908,615,3941,634,3990,649,4049,660,4115,667,4247,674,4352,675,4352,680,4247,679,4114,672,4048,665,3988,654,3939,639,3905,619,3892,603,3884,585,3879,543,3885,503,3894,470"/>
+<area shape="poly" id="edge55_Node000048_Node000044" title=" " alt="" coords="3928,469,3974,507,3971,512,3925,473"/>
+<area shape="poly" id="edge60_Node000049_Node000036" title=" " alt="" coords="4134,471,4126,502,4121,541,4124,581,4131,599,4141,616,4154,627,4175,637,4232,653,4296,664,4353,671,4352,676,4295,669,4230,658,4173,642,4151,631,4137,619,4126,601,4119,582,4116,541,4121,501,4129,470"/>
+<area shape="poly" id="edge58_Node000049_Node000039" title=" " alt="" coords="4169,469,4232,509,4229,513,4167,473"/>
+<area shape="poly" id="edge59_Node000049_Node000044" title=" " alt="" coords="4106,473,4032,514,4029,509,4104,468"/>
+<area shape="rect" id="Node000051" href="$mt9f002_8h.html" title="Initialization and configuration of the MT9F002 CMOS Chip." alt="" coords="4709,519,4891,544"/>
+<area shape="poly" id="edge64_Node000050_Node000051" title=" " alt="" coords="4827,200,4804,505,4799,505,4822,199"/>
+<area shape="poly" id="edge65_Node000051_Node000036" title=" " alt="" coords="4786,546,4733,582,4661,620,4601,640,4539,656,4434,674,4433,669,4538,651,4599,635,4659,615,4730,578,4783,542"/>
+<area shape="rect" id="Node000052" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="4729,592,4863,617"/>
+<area shape="poly" id="edge66_Node000051_Node000052" title=" " alt="" coords="4802,544,4800,579,4795,578,4797,544"/>
+<area shape="rect" id="Node000054" title=" " alt="" coords="4887,592,5047,617"/>
+<area shape="poly" id="edge69_Node000051_Node000054" title=" " alt="" coords="4828,542,4928,584,4926,589,4826,546"/>
+<area shape="poly" id="edge67_Node000052_Node000036" title=" " alt="" coords="4732,620,4435,672,4434,667,4731,615"/>
+<area shape="rect" id="Node000053" title=" " alt="" coords="4712,665,4880,691"/>
+<area shape="poly" id="edge68_Node000052_Node000053" title=" " alt="" coords="4799,618,4799,652,4793,652,4793,618"/>
 </map>

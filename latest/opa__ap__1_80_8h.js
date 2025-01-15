@@ -1,17 +1,5 @@
 var opa__ap__1_80_8h =
 [
-    [ "AD1_1_CHANNEL", "opa__ap__1_80_8h.html#a26861f0e94a25ff7f6a8a0b2879cf624", null ],
-    [ "AD1_3_CHANNEL", "opa__ap__1_80_8h.html#a0ae6a111153fb74831c0f7076f930336", null ],
-    [ "AD1_4_CHANNEL", "opa__ap__1_80_8h.html#ae10dee273909cfd97fce818474ddf186", null ],
-    [ "ADC_1", "opa__ap__1_80_8h.html#a3d767e16f12a6ee542079f3c9677192c", null ],
-    [ "ADC_1_GPIO_PIN", "opa__ap__1_80_8h.html#accf0f0e91cb15244014fcecdb785a248", null ],
-    [ "ADC_1_GPIO_PORT", "opa__ap__1_80_8h.html#a8b70edf8d4481efa03d2b05cc91851ea", null ],
-    [ "ADC_3", "opa__ap__1_80_8h.html#a474279f28350114950d862951d72de66", null ],
-    [ "ADC_3_GPIO_PIN", "opa__ap__1_80_8h.html#a745f443c330c61471cba9ced96957efb", null ],
-    [ "ADC_3_GPIO_PORT", "opa__ap__1_80_8h.html#af6756b8e5262c4a403896bb10528baf0", null ],
-    [ "ADC_4", "opa__ap__1_80_8h.html#a1d0bc863ec3717e7ed493491c0f82b24", null ],
-    [ "ADC_4_GPIO_PIN", "opa__ap__1_80_8h.html#a6794bf37bfcee74c487ca30fc674a229", null ],
-    [ "ADC_4_GPIO_PORT", "opa__ap__1_80_8h.html#a4cfa16f44aa48e98a2dc81b7034ba1c0", null ],
     [ "ADC_CHANNEL_VSUPPLY", "opa__ap__1_80_8h.html#ad5a6636ee170fccf62a748fc72374d3b", null ],
     [ "AHB_CLK", "opa__ap__1_80_8h.html#add4f03b6c5c9bcabeba314491a310346", null ],
     [ "BOARD_OPA_AP", "opa__ap__1_80_8h.html#a79346b769e18041fe740272f7e71f7b9", null ],

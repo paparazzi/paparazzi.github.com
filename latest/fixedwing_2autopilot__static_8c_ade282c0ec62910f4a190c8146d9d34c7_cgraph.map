@@ -1,22 +1,44 @@
 <map id="autopilot_failsafe_checks" name="autopilot_failsafe_checks">
-<area shape="rect" id="node1" title="Failsafe checks." alt="" coords="5,170,141,212"/>
-<area shape="rect" id="node2" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="445,22,597,48"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="218,200,353,241"/>
-<area shape="rect" id="node12" href="$autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode" alt="" coords="445,72,596,99"/>
-<area shape="rect" id="node16" href="$nav__geofence_8h.html#aaaf24479c95e5a458c7612ccc75a2b6b" title=" " alt="" coords="232,266,339,292"/>
-<area shape="rect" id="node17" href="$nav__geofence_8h.html#a57c518618655d66ccd5f0dbbca309921" title=" " alt="" coords="189,316,381,343"/>
-<area shape="rect" id="node18" href="$fixedwing_2autopilot__static_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode from RC." alt="" coords="212,47,359,74"/>
-<area shape="rect" id="node19" href="$radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="453,136,588,163"/>
-<area shape="rect" id="node20" href="$rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181" title="Includes generated code from tuning_rc.xml." alt="" coords="239,367,332,394"/>
-<area shape="rect" id="node4" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="429,207,612,234"/>
-<area shape="rect" id="node5" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="660,262,856,288"/>
-<area shape="rect" id="node8" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="697,178,819,204"/>
-<area shape="rect" id="node6" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="904,320,1057,361"/>
-<area shape="rect" id="node7" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="905,254,1056,296"/>
-<area shape="rect" id="node9" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="908,152,1053,179"/>
-<area shape="rect" id="node10" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="923,203,1038,230"/>
-<area shape="rect" id="node11" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="913,102,1048,128"/>
-<area shape="rect" id="node13" href="$fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="681,6,835,48"/>
-<area shape="rect" id="node14" href="$autopilot_8c.html#a1c3d19dfa21f8e97526cb4d4b9ed5897" title="send autopilot mode actual implementation is firmware dependent" alt="" coords="677,72,839,99"/>
-<area shape="rect" id="node15" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="661,123,855,150"/>
+<area shape="rect" id="Node000001" title="Failsafe checks." alt="" coords="5,170,141,210"/>
+<area shape="rect" id="Node000002" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="445,23,597,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,169,95,137,118,99,149,61,188,32,222,18,258,9,331,3,401,7,460,17,459,23,400,13,331,8,259,14,224,23,191,37,152,65,122,102,99,140,85,172"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="218,198,353,238"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,197,205,205,204,210,141,202"/>
+<area shape="rect" id="Node000012" href="$autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode" alt="" coords="445,72,596,98"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="129,168,189,149,315,119,431,97,432,102,317,125,190,154,130,173"/>
+<area shape="rect" id="Node000016" href="$nav__geofence_8h.html#aaaf24479c95e5a458c7612ccc75a2b6b" title=" " alt="" coords="232,263,339,288"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="110,208,190,248,220,258,218,263,188,253,107,213"/>
+<area shape="rect" id="Node000017" href="$nav__geofence_8h.html#a57c518618655d66ccd5f0dbbca309921" title=" " alt="" coords="189,312,381,338"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="92,209,133,255,161,279,191,299,204,305,202,310,188,303,157,283,130,258,88,212"/>
+<area shape="rect" id="Node000018" href="$fixedwing_2autopilot__static_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode from RC." alt="" coords="212,47,359,72"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="91,168,133,129,188,89,221,75,223,79,191,94,137,133,95,172"/>
+<area shape="rect" id="Node000019" href="$radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="453,135,588,160"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="141,181,439,153,440,158,142,187"/>
+<area shape="rect" id="Node000020" href="$rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181" title="Includes generated code from tuning_rc.xml." alt="" coords="239,362,332,387"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="86,209,102,241,125,278,155,316,191,348,226,364,224,369,188,353,151,320,120,281,97,243,81,212"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="429,206,612,231"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="353,216,415,216,415,221,353,221"/>
+<area shape="rect" id="Node000005" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="660,258,856,283"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="580,229,687,252,686,257,579,234"/>
+<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="697,176,819,202"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="612,205,683,196,684,201,612,210"/>
+<area shape="rect" id="Node000006" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="904,314,1057,354"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="804,281,898,308,897,313,803,286"/>
+<area shape="rect" id="Node000007" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="905,250,1056,290"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="856,268,892,268,892,273,856,273"/>
+<area shape="rect" id="Node000009" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="908,151,1053,176"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="819,180,894,171,895,176,819,185"/>
+<area shape="rect" id="Node000010" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="923,200,1038,226"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="819,193,910,203,909,208,819,198"/>
+<area shape="rect" id="Node000011" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="913,102,1048,127"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="802,174,855,156,903,136,923,129,925,134,905,141,857,161,803,179"/>
+<area shape="rect" id="Node000013" href="$fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="681,8,835,48"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="573,70,667,47,668,52,575,75"/>
+<area shape="rect" id="Node000014" href="$autopilot_8c.html#a1c3d19dfa21f8e97526cb4d4b9ed5897" title="send autopilot mode actual implementation is firmware dependent" alt="" coords="677,72,839,98"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="596,82,663,82,663,88,596,88"/>
+<area shape="rect" id="Node000015" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="661,122,855,147"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="583,95,684,116,682,122,582,100"/>
+<area shape="poly" id="edge18_Node000018_Node000002" title=" " alt="" coords="359,50,431,42,431,48,359,55"/>
+<area shape="poly" id="edge19_Node000018_Node000012" title=" " alt="" coords="359,65,432,73,431,78,359,70"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="321,70,474,128,472,133,320,75"/>
 </map>

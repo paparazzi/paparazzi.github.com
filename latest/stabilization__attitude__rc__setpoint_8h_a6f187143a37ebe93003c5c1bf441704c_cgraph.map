@@ -1,13 +1,23 @@
 <map id="stabilization_attitude_reset_rc_setpoint" name="stabilization_attitude_reset_rc_setpoint">
-<area shape="rect" id="node1" title="Reset rc input to current state." alt="" coords="5,74,165,115"/>
-<area shape="rect" id="node2" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="213,56,416,83"/>
-<area shape="rect" id="node7" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="217,107,412,133"/>
-<area shape="rect" id="node3" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="464,56,632,83"/>
-<area shape="rect" id="node4" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="680,56,853,83"/>
-<area shape="rect" id="node5" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="902,5,1057,32"/>
-<area shape="rect" id="node6" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="901,56,1057,83"/>
-<area shape="rect" id="node8" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="469,107,627,133"/>
-<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="685,107,849,133"/>
-<area shape="rect" id="node10" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="902,107,1057,133"/>
-<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="907,157,1052,184"/>
+<area shape="rect" id="Node000001" title="Reset rc input to current state." alt="" coords="5,73,165,113"/>
+<area shape="rect" id="Node000002" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="213,55,416,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,81,199,77,200,83,166,86"/>
+<area shape="rect" id="Node000007" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="217,104,412,129"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="166,98,204,102,203,108,166,104"/>
+<area shape="rect" id="Node000003" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="464,55,632,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,65,450,65,450,70,416,70"/>
+<area shape="rect" id="Node000004" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="680,55,853,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="632,65,666,65,666,70,632,70"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="902,5,1057,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="821,52,910,31,911,36,823,57"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="901,55,1057,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="853,65,887,65,887,70,853,70"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="469,104,627,129"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="412,114,455,114,455,119,412,119"/>
+<area shape="rect" id="Node000009" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="685,104,849,129"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="628,114,671,114,671,119,628,119"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="902,104,1057,129"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="849,114,888,114,888,119,849,119"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="907,153,1052,179"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="823,127,911,148,910,153,821,132"/>
 </map>

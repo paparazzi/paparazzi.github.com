@@ -1,8 +1,13 @@
 <map id="actuators_esc32_can_rx_cb" name="actuators_esc32_can_rx_cb">
-<area shape="rect" id="node1" title="When receiving messages on the CAN bus." alt="" coords="5,27,164,69"/>
-<area shape="rect" id="node2" href="$actuators__esc32_8c.html#ae2311b30f312b1a622644defc5d02af3" title="When we receive a message to grant an id." alt="" coords="212,5,408,32"/>
-<area shape="rect" id="node6" href="$actuators__esc32_8c.html#afd6425e413c12e0db8fb154c960951f7" title="When we receive a telemetry message." alt="" coords="229,57,391,98"/>
-<area shape="rect" id="node3" href="$actuators__esc32_8c.html#a75c8939cf86b3c06fde5ef6ac0dcc621" title="Transmit a message on the CAN bus." alt="" coords="456,5,623,32"/>
-<area shape="rect" id="node4" href="$can_8c.html#a152615d451206e5d152705c704cdf89f" title=" " alt="" coords="671,5,808,32"/>
-<area shape="rect" id="node5" href="$can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title=" " alt="" coords="856,5,989,32"/>
+<area shape="rect" id="Node000001" title="When receiving messages on the CAN bus." alt="" coords="5,27,164,67"/>
+<area shape="rect" id="Node000002" href="$actuators__esc32_8c.html#ae2311b30f312b1a622644defc5d02af3" title="When we receive a message to grant an id." alt="" coords="212,5,408,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,34,198,30,199,35,165,40"/>
+<area shape="rect" id="Node000006" href="$actuators__esc32_8c.html#afd6425e413c12e0db8fb154c960951f7" title="When we receive a telemetry message." alt="" coords="229,55,391,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="165,55,216,61,215,66,164,60"/>
+<area shape="rect" id="Node000003" href="$actuators__esc32_8c.html#a75c8939cf86b3c06fde5ef6ac0dcc621" title="Transmit a message on the CAN bus." alt="" coords="456,5,623,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,15,442,15,442,21,408,21"/>
+<area shape="rect" id="Node000004" href="$can_8c.html#a152615d451206e5d152705c704cdf89f" title=" " alt="" coords="671,5,808,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,15,657,15,657,21,623,21"/>
+<area shape="rect" id="Node000005" href="$can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title=" " alt="" coords="856,5,989,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="808,15,842,15,842,21,808,21"/>
 </map>

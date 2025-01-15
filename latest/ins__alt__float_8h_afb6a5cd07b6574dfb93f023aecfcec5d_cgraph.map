@@ -1,18 +1,33 @@
 <map id="ins_alt_float_update_baro" name="ins_alt_float_update_baro">
-<area shape="rect" id="node1" title=" " alt="" coords="5,195,195,221"/>
-<area shape="rect" id="node2" href="$ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75" title=" " alt="" coords="281,5,375,32"/>
-<area shape="rect" id="node3" href="$ins__alt__float_8c.html#ae9b929985ac97a4adb5f6f3385485132" title=" " alt="" coords="261,56,395,83"/>
-<area shape="rect" id="node4" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="255,107,401,133"/>
-<area shape="rect" id="node5" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="256,158,400,199"/>
-<area shape="rect" id="node6" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float)." alt="" coords="243,224,413,251"/>
-<area shape="rect" id="node11" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="250,275,406,301"/>
-<area shape="rect" id="node15" href="$group__state__position.html#ga7c435652a5180cf0b38f7a381ae5daa8" title="Set position from UTM coordinates (float)." alt="" coords="244,325,412,352"/>
-<area shape="rect" id="node16" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="251,376,405,403"/>
-<area shape="rect" id="node7" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="461,223,636,249"/>
-<area shape="rect" id="node8" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="707,221,809,248"/>
-<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="880,163,1032,189"/>
-<area shape="rect" id="node10" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="886,214,1026,255"/>
-<area shape="rect" id="node12" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="468,275,629,301"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="684,279,832,305"/>
-<area shape="rect" id="node14" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="882,280,1030,307"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,191,195,216"/>
+<area shape="rect" id="Node000002" href="$ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75" title=" " alt="" coords="281,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,189,157,118,196,76,241,40,267,28,269,33,244,44,199,80,161,122,111,192"/>
+<area shape="rect" id="Node000003" href="$ins__alt__float_8c.html#ae9b929985ac97a4adb5f6f3385485132" title=" " alt="" coords="261,55,395,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,189,165,141,202,113,241,89,256,82,259,87,244,94,205,117,169,145,116,193"/>
+<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="255,104,401,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,188,242,140,267,131,269,136,244,144,129,193"/>
+<area shape="rect" id="Node000005" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="256,154,400,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="195,189,242,182,243,188,195,194"/>
+<area shape="rect" id="Node000006" href="$group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="243,219,413,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="195,212,229,217,228,222,195,218"/>
+<area shape="rect" id="Node000011" href="$group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="250,268,406,293"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="134,214,244,254,267,261,265,267,242,259,132,219"/>
+<area shape="rect" id="Node000015" href="$group__state__position.html#ga7c435652a5180cf0b38f7a381ae5daa8" title="Set position from UTM coordinates (float)." alt="" coords="244,317,412,343"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="117,214,171,258,206,282,244,304,260,310,258,315,241,308,203,287,167,262,114,218"/>
+<area shape="rect" id="Node000016" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="251,367,405,392"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="112,215,162,281,200,320,244,353,256,359,253,364,241,358,197,324,158,284,107,218"/>
+<area shape="rect" id="Node000007" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="461,217,636,243"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="414,228,447,228,447,233,414,233"/>
+<area shape="rect" id="Node000008" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="707,216,809,241"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="636,227,693,226,693,232,636,232"/>
+<area shape="rect" id="Node000009" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="880,159,1032,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="802,213,898,185,899,190,803,219"/>
+<area shape="rect" id="Node000010" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="886,209,1026,249"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="810,226,872,226,872,231,810,231"/>
+<area shape="rect" id="Node000012" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="468,268,629,293"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="406,278,454,278,454,283,406,283"/>
+<area shape="rect" id="Node000013" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="684,272,832,297"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="630,280,670,280,670,286,630,285"/>
+<area shape="rect" id="Node000014" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="882,273,1030,299"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="832,282,868,283,868,288,832,288"/>
 </map>

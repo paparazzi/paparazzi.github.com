@@ -1,27 +1,65 @@
 <map id="_vl53l5cx_poll_for_answer" name="_vl53l5cx_poll_for_answer">
-<area shape="rect" id="node1" title="Copyright (c) 2021 STMicroelectronics." alt="" coords="1147,226,1287,267"/>
-<area shape="rect" id="node2" href="$vl53l5cx__api_8c.html#a54f1246226bfaa643c78e87aaab3aa0d" title="Inner function, not available outside this file." alt="" coords="896,107,1099,133"/>
-<area shape="rect" id="node3" href="$vl53l5cx__api_8c.html#a8f9ecaea1b6d057725db081e2b79779d" title="Mandatory function used to initialize the sensor." alt="" coords="437,12,542,39"/>
-<area shape="rect" id="node7" href="$vl53l5cx__api_8c.html#a8d1519ffc350ce504d48fa618ee0c954" title="Inner function, not available outside this file." alt="" coords="898,157,1097,184"/>
-<area shape="rect" id="node8" href="$vl53l5cx__api_8c.html#a1988c495f38198f8e1c8f48d5a60acad" title="This function can be used to read &#39;extra data&#39; from DCI." alt="" coords="910,465,1085,492"/>
-<area shape="rect" id="node20" href="$vl53l5cx__api_8c.html#aa1adc6d75fd4613bf74596f1b5440c23" title="This function starts a ranging session." alt="" coords="404,479,575,505"/>
-<area shape="rect" id="node24" href="$vl53l5cx__api_8c.html#ad1413cd54d0dfacea7f9dbccc5db36df" title="This function can be used to write &#39;extra data&#39; to DCI." alt="" coords="908,233,1087,260"/>
-<area shape="rect" id="node25" href="$vl53l5cx__api_8c.html#a4fd624d591be1356b6692e7482c489d9" title="This function is used to set the sensor in Low Power mode, for example if the sensor is not used duri..." alt="" coords="900,516,1095,543"/>
-<area shape="rect" id="node6" href="$vl53l5cx__api_8c.html#ada57bf6c8d530c6f5e5df9c1a9cec5f8" title="This function sets a new resolution (4x4 or 8x8)." alt="" coords="657,132,833,159"/>
-<area shape="rect" id="node4" href="$lidar__vl53l5cx_8c.html#a98e6a4a53d7f5dc4461677728fd50bf4" title=" " alt="" coords="195,63,336,89"/>
-<area shape="rect" id="node5" href="$lidar__vl53l5cx_8c.html#ad2942c3dd014ad9bdab4955a1a31d163" title=" " alt="" coords="5,63,147,89"/>
-<area shape="rect" id="node9" href="$vl53l5cx__api_8c.html#a67bf61eebc7a265834d3af512b7c8f59" title="This function can be used to replace &#39;extra data&#39; in DCI." alt="" coords="648,233,843,260"/>
-<area shape="rect" id="node16" href="$vl53l5cx__api_8c.html#a688caf866f4287c83c705935290e2376" title="This function gets the current integration time in ms." alt="" coords="654,487,837,529"/>
-<area shape="rect" id="node17" href="$vl53l5cx__api_8c.html#ac6dae54b876f1f20d472280106765226" title="This function gets the current ranging frequency in Hz." alt="" coords="665,553,826,594"/>
-<area shape="rect" id="node18" href="$vl53l5cx__api_8c.html#a3b1742df209d54865a174ebd561e13d7" title="This function is used to get the ranging mode." alt="" coords="643,619,848,645"/>
-<area shape="rect" id="node19" href="$vl53l5cx__api_8c.html#ac8a5a4b98498ff6cff9b027292d5564b" title="This function gets the current resolution (4x4 or 8x8)." alt="" coords="657,436,834,463"/>
-<area shape="rect" id="node21" href="$vl53l5cx__api_8c.html#a473699d83c054e1b69b3fd5da6c0dc54" title="This function gets the current sharpener in percent." alt="" coords="657,670,834,711"/>
-<area shape="rect" id="node22" href="$vl53l5cx__api_8c.html#af07511addb6e774bcd55efc29d6a84ac" title="This function gets the current target order (closest or strongest)." alt="" coords="670,735,821,777"/>
-<area shape="rect" id="node23" href="$vl53l5cx__api_8c.html#ab72b79a4e28e9e1eb2590f1a053f931e" title="This function is used to set the ranging mode." alt="" coords="643,385,847,412"/>
-<area shape="rect" id="node10" href="$vl53l5cx__api_8c.html#a1d9827b92e0c633acf85b06954934651" title="This function is used to disable the VCSEL charge pump This optimizes the power consumption of the de..." alt="" coords="384,311,595,337"/>
-<area shape="rect" id="node11" href="$vl53l5cx__api_8c.html#aebed7f478104d4772b5bfee00743a257" title="This function is used to disable the VCSEL charge pump This optimizes the power consumption of the de..." alt="" coords="386,361,593,388"/>
-<area shape="rect" id="node12" href="$vl53l5cx__api_8c.html#a54e3531b23dedef78c6e53509d958da4" title="This function sets a new integration time in ms." alt="" coords="398,413,581,454"/>
-<area shape="rect" id="node13" href="$vl53l5cx__api_8c.html#a2edc1062911e953ad8adbfc3d0876d99" title="This function sets a new ranging frequency in Hz." alt="" coords="409,114,569,155"/>
-<area shape="rect" id="node14" href="$vl53l5cx__api_8c.html#aeb811225dc7e60cfc0d32568d46ac111" title="This function sets a new sharpener value in percent." alt="" coords="401,179,577,221"/>
-<area shape="rect" id="node15" href="$vl53l5cx__api_8c.html#aae0e5296253d0de988bc6efdc7757971" title="This function sets a new target order." alt="" coords="414,245,565,286"/>
+<area shape="rect" id="Node000001" title="Copyright (c) 2021 STMicroelectronics." alt="" coords="1147,224,1287,264"/>
+<area shape="rect" id="Node000002" href="$vl53l5cx__api_8c.html#a54f1246226bfaa643c78e87aaab3aa0d" title="Inner function, not available outside this file." alt="" coords="896,106,1099,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1186,216,1146,180,1097,146,1066,134,1068,129,1100,142,1150,175,1190,212"/>
+<area shape="rect" id="Node000003" href="$vl53l5cx__api_8c.html#a8f9ecaea1b6d057725db081e2b79779d" title="Mandatory function used to initialize the sensor." alt="" coords="437,13,542,38"/>
+<area shape="poly" id="edge36_Node000001_Node000003" title=" " alt="" coords="1197,213,1157,153,1129,122,1097,97,1027,61,952,35,874,19,795,11,720,8,651,10,543,20,542,15,651,4,721,3,796,5,874,14,953,30,1029,56,1100,93,1133,119,1161,150,1201,210"/>
+<area shape="rect" id="Node000007" href="$vl53l5cx__api_8c.html#a8d1519ffc350ce504d48fa618ee0c954" title="Inner function, not available outside this file." alt="" coords="898,155,1097,181"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="1144,222,1034,183,1036,178,1146,217"/>
+<area shape="rect" id="Node000008" href="$vl53l5cx__api_8c.html#a1988c495f38198f8e1c8f48d5a60acad" title="This function can be used to read &#39;extra data&#39; from DCI." alt="" coords="910,461,1085,486"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="1189,276,1013,462,1009,459,1185,273"/>
+<area shape="rect" id="Node000020" href="$vl53l5cx__api_8c.html#aa1adc6d75fd4613bf74596f1b5440c23" title="This function starts a ranging session." alt="" coords="404,470,575,495"/>
+<area shape="poly" id="edge38_Node000001_Node000020" title=" " alt="" coords="1134,265,848,329,788,337,740,339,694,347,671,357,644,374,628,394,621,415,614,438,596,460,573,472,571,468,593,455,610,435,616,414,623,391,641,370,668,353,693,342,739,334,788,332,848,324,1133,260"/>
+<area shape="rect" id="Node000024" href="$vl53l5cx__api_8c.html#ad1413cd54d0dfacea7f9dbccc5db36df" title="This function can be used to write &#39;extra data&#39; to DCI." alt="" coords="908,231,1087,257"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="1133,247,1087,247,1087,241,1133,241"/>
+<area shape="rect" id="Node000025" href="$vl53l5cx__api_8c.html#a4fd624d591be1356b6692e7482c489d9" title="This function is used to set the sensor in Low Power mode, for example if the sensor is not used duri..." alt="" coords="900,510,1095,535"/>
+<area shape="poly" id="edge37_Node000001_Node000025" title=" " alt="" coords="1212,278,1200,328,1179,388,1146,449,1125,477,1100,501,1082,512,1079,508,1097,497,1121,473,1142,446,1174,386,1195,326,1207,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="946,104,847,76,680,48,542,32,542,27,681,43,849,71,948,99"/>
+<area shape="rect" id="Node000006" href="$vl53l5cx__api_8c.html#ada57bf6c8d530c6f5e5df9c1a9cec5f8" title="This function sets a new resolution (4x4 or 8x8)." alt="" coords="657,130,833,155"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="882,132,834,137,833,132,882,127"/>
+<area shape="rect" id="Node000004" href="$lidar__vl53l5cx_8c.html#a98e6a4a53d7f5dc4461677728fd50bf4" title=" " alt="" coords="195,63,336,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="424,43,323,66,322,61,423,38"/>
+<area shape="rect" id="Node000005" href="$lidar__vl53l5cx_8c.html#ad2942c3dd014ad9bdab4955a1a31d163" title=" " alt="" coords="5,63,147,89"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="181,79,147,79,147,73,181,73"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="692,129,594,104,457,87,336,80,336,75,458,82,595,99,693,123"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="918,154,895,147,871,134,847,121,791,104,746,96,700,89,642,76,527,41,529,36,643,71,701,84,747,91,792,99,849,116,873,129,897,142,920,149"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="884,159,833,154,834,149,885,154"/>
+<area shape="poly" id="edge28_Node000008_Node000006" title=" " alt="" coords="983,450,931,345,892,282,846,222,806,185,766,158,770,153,809,181,850,218,896,279,935,343,988,447"/>
+<area shape="rect" id="Node000009" href="$vl53l5cx__api_8c.html#a67bf61eebc7a265834d3af512b7c8f59" title="This function can be used to replace &#39;extra data&#39; in DCI." alt="" coords="648,231,843,257"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="970,453,759,259,762,255,974,449"/>
+<area shape="rect" id="Node000016" href="$vl53l5cx__api_8c.html#a688caf866f4287c83c705935290e2376" title="This function gets the current integration time in ms." alt="" coords="654,483,837,523"/>
+<area shape="poly" id="edge19_Node000008_Node000016" title=" " alt="" coords="897,488,837,495,837,490,896,483"/>
+<area shape="rect" id="Node000017" href="$vl53l5cx__api_8c.html#ac6dae54b876f1f20d472280106765226" title="This function gets the current ranging frequency in Hz." alt="" coords="665,547,826,587"/>
+<area shape="poly" id="edge20_Node000008_Node000017" title=" " alt="" coords="918,493,897,501,873,519,849,537,821,549,819,544,847,533,870,514,895,496,916,488"/>
+<area shape="rect" id="Node000018" href="$vl53l5cx__api_8c.html#a3b1742df209d54865a174ebd561e13d7" title="This function is used to get the ranging mode." alt="" coords="643,611,848,637"/>
+<area shape="poly" id="edge21_Node000008_Node000018" title=" " alt="" coords="906,495,898,501,887,512,880,524,875,549,869,575,862,588,850,601,828,614,825,609,846,597,857,585,864,573,869,548,875,522,882,509,894,497,903,490"/>
+<area shape="rect" id="Node000019" href="$vl53l5cx__api_8c.html#ac8a5a4b98498ff6cff9b027292d5564b" title="This function gets the current resolution (4x4 or 8x8)." alt="" coords="657,433,834,458"/>
+<area shape="poly" id="edge22_Node000008_Node000019" title=" " alt="" coords="896,465,834,458,834,453,897,460"/>
+<area shape="poly" id="edge29_Node000008_Node000020" title=" " alt="" coords="903,496,898,501,885,518,876,535,869,570,871,606,879,642,886,678,887,713,877,747,866,764,850,779,824,799,798,811,773,818,748,820,723,816,697,808,641,780,604,751,573,714,548,674,528,631,502,552,490,497,495,495,507,551,533,629,553,671,577,711,608,747,644,775,699,803,724,811,748,815,772,813,796,806,821,794,846,775,861,760,872,745,881,712,880,678,873,643,866,607,863,570,871,533,880,515,894,497,899,492"/>
+<area shape="rect" id="Node000021" href="$vl53l5cx__api_8c.html#a473699d83c054e1b69b3fd5da6c0dc54" title="This function gets the current sharpener in percent." alt="" coords="657,661,834,701"/>
+<area shape="poly" id="edge25_Node000008_Node000021" title=" " alt="" coords="905,495,898,501,884,518,877,536,874,574,872,612,865,632,850,651,834,663,831,659,846,648,860,629,867,611,869,573,871,535,879,516,894,497,901,491"/>
+<area shape="rect" id="Node000022" href="$vl53l5cx__api_8c.html#af07511addb6e774bcd55efc29d6a84ac" title="This function gets the current target order (closest or strongest)." alt="" coords="670,725,821,765"/>
+<area shape="poly" id="edge26_Node000008_Node000022" title=" " alt="" coords="904,495,898,501,879,526,872,552,871,578,874,605,877,632,876,660,869,688,850,715,822,734,819,730,846,712,864,685,871,659,872,632,869,606,866,579,866,551,875,524,894,497,900,491"/>
+<area shape="rect" id="Node000023" href="$vl53l5cx__api_8c.html#ab72b79a4e28e9e1eb2590f1a053f931e" title="This function is used to set the ranging mode." alt="" coords="643,383,847,409"/>
+<area shape="poly" id="edge27_Node000008_Node000023" title=" " alt="" coords="949,458,847,424,801,411,802,406,849,419,950,453"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="661,228,641,214,628,200,621,187,614,160,608,132,593,103,554,67,514,40,516,36,557,62,597,100,613,130,619,158,626,185,633,197,644,210,664,224"/>
+<area shape="rect" id="Node000010" href="$vl53l5cx__api_8c.html#a1d9827b92e0c633acf85b06954934651" title="This function is used to disable the VCSEL charge pump This optimizes the power consumption of the de..." alt="" coords="384,306,595,331"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="690,263,644,279,595,296,548,309,547,304,594,291,642,274,689,258"/>
+<area shape="rect" id="Node000011" href="$vl53l5cx__api_8c.html#aebed7f478104d4772b5bfee00743a257" title="This function is used to disable the VCSEL charge pump This optimizes the power consumption of the de..." alt="" coords="386,355,593,381"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="670,264,644,278,629,295,621,312,613,329,596,346,574,358,571,353,593,342,609,326,617,309,625,292,641,274,667,259"/>
+<area shape="rect" id="Node000012" href="$vl53l5cx__api_8c.html#a54e3531b23dedef78c6e53509d958da4" title="This function sets a new integration time in ms." alt="" coords="398,405,581,445"/>
+<area shape="poly" id="edge15_Node000009_Node000012" title=" " alt="" coords="664,265,644,278,633,292,626,306,621,335,616,365,609,381,596,395,579,408,576,403,593,391,605,378,611,364,616,334,621,304,628,289,641,274,661,260"/>
+<area shape="rect" id="Node000013" href="$vl53l5cx__api_8c.html#a2edc1062911e953ad8adbfc3d0876d99" title="This function sets a new ranging frequency in Hz." alt="" coords="409,113,569,153"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="673,229,641,214,626,202,617,190,607,179,593,168,568,156,571,151,596,163,611,175,621,187,630,199,644,210,676,225"/>
+<area shape="rect" id="Node000014" href="$vl53l5cx__api_8c.html#aeb811225dc7e60cfc0d32568d46ac111" title="This function sets a new sharpener value in percent." alt="" coords="401,177,577,217"/>
+<area shape="poly" id="edge17_Node000009_Node000014" title=" " alt="" coords="661,232,577,216,578,211,662,226"/>
+<area shape="rect" id="Node000015" href="$vl53l5cx__api_8c.html#aae0e5296253d0de988bc6efdc7757971" title="This function sets a new target order." alt="" coords="414,241,565,281"/>
+<area shape="poly" id="edge18_Node000009_Node000015" title=" " alt="" coords="634,254,565,259,565,254,634,249"/>
+<area shape="poly" id="edge23_Node000019_Node000020" title=" " alt="" coords="645,463,575,473,574,468,644,457"/>
+<area shape="poly" id="edge24_Node000020_Node000004" title=" " alt="" coords="390,466,382,459,345,415,316,364,295,310,280,254,266,155,264,89,269,89,272,154,286,253,300,308,321,362,349,412,386,456,394,462"/>
+<area shape="poly" id="edge32_Node000024_Node000003" title=" " alt="" coords="910,232,748,200,679,184,641,170,624,155,614,138,606,121,593,103,551,68,511,40,514,36,554,63,597,100,611,119,619,136,628,151,644,166,681,179,749,195,911,226"/>
+<area shape="poly" id="edge34_Node000024_Node000006" title=" " alt="" coords="958,228,847,177,791,158,792,153,849,172,960,223"/>
+<area shape="poly" id="edge31_Node000024_Node000009" title=" " alt="" coords="894,247,843,247,843,241,894,241"/>
+<area shape="poly" id="edge35_Node000024_Node000020" title=" " alt="" coords="913,262,749,296,680,314,644,329,631,344,625,359,621,392,618,426,610,443,596,459,576,472,574,468,593,455,606,440,613,425,616,392,620,358,627,341,641,325,679,309,748,291,912,257"/>
+<area shape="poly" id="edge33_Node000024_Node000023" title=" " alt="" coords="965,266,769,386,766,381,962,262"/>
 </map>

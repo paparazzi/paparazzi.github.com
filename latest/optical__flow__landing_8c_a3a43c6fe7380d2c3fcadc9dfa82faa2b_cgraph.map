@@ -1,7 +1,11 @@
 <map id="PID_divergence_control" name="PID_divergence_control">
-<area shape="rect" id="node1" title="Determine and set the thrust for constant divergence control." alt="" coords="5,56,180,83"/>
-<area shape="rect" id="node2" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="228,5,373,32"/>
-<area shape="rect" id="node3" href="$optical__flow__landing_8c.html#a529beff707cc000dee0afe4234074da4" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="251,56,350,83"/>
-<area shape="rect" id="node5" href="$optical__flow__landing_8c.html#a98c93c23a226634b228e322b12fe474a" title="Updates the integral and differential errors for PID control and sets the previous error." alt="" coords="245,107,357,133"/>
-<area shape="rect" id="node4" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="421,56,527,83"/>
+<area shape="rect" id="Node000001" title="Determine and set the thrust for constant divergence control." alt="" coords="5,55,180,80"/>
+<area shape="rect" id="Node000002" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="228,5,373,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,52,232,31,234,37,148,57"/>
+<area shape="rect" id="Node000003" href="$optical__flow__landing_8c.html#a529beff707cc000dee0afe4234074da4" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="251,55,350,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,65,237,65,237,70,180,70"/>
+<area shape="rect" id="Node000005" href="$optical__flow__landing_8c.html#a98c93c23a226634b228e322b12fe474a" title="Updates the integral and differential errors for PID control and sets the previous error." alt="" coords="245,104,357,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="148,77,234,98,232,103,146,83"/>
+<area shape="rect" id="Node000004" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="421,55,527,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="350,65,408,65,408,70,350,70"/>
 </map>

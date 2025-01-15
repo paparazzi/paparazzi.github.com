@@ -1,15 +1,29 @@
 <map id="imu_mpu9250_event" name="imu_mpu9250_event">
-<area shape="rect" id="node1" title=" " alt="" coords="5,63,164,89"/>
-<area shape="rect" id="node2" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="215,12,362,39"/>
-<area shape="rect" id="node3" href="$mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title=" " alt="" coords="212,63,365,89"/>
-<area shape="rect" id="node11" href="$mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050" title=" " alt="" coords="212,115,365,141"/>
-<area shape="rect" id="node4" href="$ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title=" " alt="" coords="455,7,569,33"/>
-<area shape="rect" id="node7" href="$mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f" title=" " alt="" coords="413,59,611,85"/>
-<area shape="rect" id="node9" href="$mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use." alt="" coords="429,115,595,141"/>
-<area shape="rect" id="node5" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="689,5,805,32"/>
-<area shape="rect" id="node6" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="883,31,976,57"/>
-<area shape="rect" id="node8" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="695,56,798,83"/>
-<area shape="rect" id="node10" href="$mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b" title="Configure I2C slaves of the MPU." alt="" coords="659,107,835,149"/>
-<area shape="rect" id="node12" href="$mpu9250__spi_8c.html#aa25ada77f4bd9839a1ca3badaf825b32" title=" " alt="" coords="413,169,611,196"/>
-<area shape="rect" id="node13" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="700,173,793,200"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,61,164,87"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="215,12,362,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,59,222,38,223,43,138,64"/>
+<area shape="rect" id="Node000003" href="$mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title=" " alt="" coords="212,61,365,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,71,198,71,198,77,164,77"/>
+<area shape="rect" id="Node000011" href="$mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050" title=" " alt="" coords="212,112,365,137"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="137,84,225,106,223,111,136,89"/>
+<area shape="rect" id="Node000004" href="$ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title=" " alt="" coords="455,7,569,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="341,59,445,33,447,38,342,64"/>
+<area shape="rect" id="Node000007" href="$mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f" title=" " alt="" coords="413,57,611,83"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="366,70,400,69,400,75,366,75"/>
+<area shape="rect" id="Node000009" href="$mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use." alt="" coords="429,112,595,137"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="346,84,443,106,441,112,345,89"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="689,5,805,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="569,16,675,16,675,21,570,22"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="883,31,976,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="805,23,869,32,868,38,805,29"/>
+<area shape="rect" id="Node000008" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="695,55,798,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="611,66,681,65,681,71,611,72"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="798,58,868,49,869,54,798,63"/>
+<area shape="rect" id="Node000010" href="$mpu9250__spi_8c.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b" title="Configure I2C slaves of the MPU." alt="" coords="659,105,835,145"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="596,122,645,122,645,127,596,127"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="366,122,415,122,415,127,366,127"/>
+<area shape="rect" id="Node000012" href="$mpu9250__spi_8c.html#aa25ada77f4bd9839a1ca3badaf825b32" title=" " alt="" coords="413,165,611,191"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="343,135,446,160,445,165,342,140"/>
+<area shape="rect" id="Node000013" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="700,169,793,195"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="611,177,686,178,686,184,611,182"/>
 </map>

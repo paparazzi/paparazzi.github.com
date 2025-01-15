@@ -16,7 +16,7 @@ var guidance__pid_8c =
     [ "GUIDANCE_V_MIN_ERR_ZD", "guidance__pid_8c.html#ab4712013528e559c818caebbc2f121f3", null ],
     [ "MAX_POS_ERR", "guidance__pid_8c.html#a6bfc5d39a496e8a2ddbf5448dd610916", null ],
     [ "MAX_SPEED_ERR", "guidance__pid_8c.html#a35d427821ffd914d9272e28e33d9e298", null ],
-    [ "guidance_pid_get_h_pos_err", "guidance__pid_8c.html#ae2150e50519f6000305878c8b1a86810", null ],
+    [ "guidance_pid_get_h_pos_err", "guidance__pid_8c.html#a45a5f54d67239fdb30d29846c47c52c1", null ],
     [ "guidance_pid_h_enter", "guidance__pid_8c.html#af6a63a6e04b6f776fecb01dee0b1d7a0", null ],
     [ "guidance_pid_h_run", "guidance__pid_8c.html#a8a4f766b52141cfbb46920542a574436", null ],
     [ "guidance_pid_h_run_accel", "guidance__pid_8c.html#a1b3bc1aa54c550f2ab08ac9f4b95de19", null ],

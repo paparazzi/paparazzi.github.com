@@ -6,19 +6,10 @@ var orange__avoider_8c =
     [ "PRINT", "orange__avoider_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],
     [ "VERBOSE_PRINT", "orange__avoider_8c.html#a01535af7e50005fd099fe06f94865e54", null ],
     [ "navigation_state_t", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3", [
-      [ "SAFE", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac", null ],
-      [ "OBSTACLE_FOUND", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
-      [ "OUT_OF_BOUNDS", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "HOLD", "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a", null ],
       [ "SAFE", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac", null ],
       [ "OBSTACLE_FOUND", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
       [ "SEARCH_FOR_SAFE_HEADING", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1", null ],
-      [ "OUT_OF_BOUNDS", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "SAFE", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac", null ],
-      [ "OBSTACLE_FOUND", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
-      [ "SEARCH_FOR_SAFE_HEADING", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1", null ],
-      [ "OUT_OF_BOUNDS", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "REENTER_ARENA", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30", null ]
+      [ "OUT_OF_BOUNDS", "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ]
     ] ],
     [ "calculateForwards", "orange__avoider_8c.html#a68bd327e338d1660e1e041284c910ef1", null ],
     [ "chooseRandomIncrementAvoidance", "orange__avoider_8c.html#a1296b3545ad39ed2510a2057a20dfb26", null ],

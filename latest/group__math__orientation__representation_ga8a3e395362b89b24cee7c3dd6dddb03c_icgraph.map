@@ -1,10 +1,33 @@
 <map id="orientationSetQuat_i" name="orientationSetQuat_i">
-<area shape="rect" id="node1" title="Set vehicle body attitude from quaternion (int)." alt="" coords="836,81,992,108"/>
-<area shape="rect" id="node2" href="$group__state__attitude.html#ga568ab85ec52f59dcdb2988b5b0cc5c17" title="Set vehicle body attitude from quaternion (int)." alt="" coords="597,81,788,108"/>
-<area shape="rect" id="node3" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state." alt="" coords="355,81,549,108"/>
-<area shape="rect" id="node4" href="$ahrs__int__cmpl__quat__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="223,5,301,32"/>
-<area shape="rect" id="node6" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="217,56,307,83"/>
-<area shape="rect" id="node7" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="225,107,299,133"/>
-<area shape="rect" id="node8" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="225,157,299,184"/>
-<area shape="rect" id="node5" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a2baba6aa57750d3a2c5a232697a7e1fe" title=" " alt="" coords="5,81,169,108"/>
+<area shape="rect" id="Node000001" title="Set vehicle body attitude from quaternion (int)." alt="" coords="836,179,992,204"/>
+<area shape="rect" id="Node000002" href="$group__state__attitude.html#ga568ab85ec52f59dcdb2988b5b0cc5c17" title="Set vehicle body attitude from quaternion (int)." alt="" coords="597,179,788,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="822,194,788,194,788,189,822,189"/>
+<area shape="rect" id="Node000003" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state." alt="" coords="355,104,549,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="637,177,493,132,495,127,638,172"/>
+<area shape="rect" id="Node000009" href="$ins__flow_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state." alt="" coords="355,253,549,279"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="638,211,495,256,493,251,637,206"/>
+<area shape="rect" id="Node000004" href="$ahrs__int__cmpl__quat__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="223,5,301,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="413,100,287,33,289,29,416,95"/>
+<area shape="rect" id="Node000006" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="217,55,307,80"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="389,103,306,81,308,76,390,98"/>
+<area shape="rect" id="Node000007" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="225,104,299,129"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="341,119,299,119,299,114,341,114"/>
+<area shape="rect" id="Node000008" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="225,153,299,179"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="390,135,300,159,298,154,389,130"/>
+<area shape="rect" id="Node000005" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a2baba6aa57750d3a2c5a232697a7e1fe" title=" " alt="" coords="5,80,169,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,39,119,82,117,78,218,34"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="204,78,170,83,169,78,203,73"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="211,112,169,107,170,101,212,107"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="217,150,118,108,120,103,219,145"/>
+<area shape="rect" id="Node000010" href="$ins__flow_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="223,203,301,228"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="390,252,301,228,302,223,391,247"/>
+<area shape="rect" id="Node000011" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="36,279,139,304"/>
+<area shape="poly" id="edge18_Node000009_Node000011" title=" " alt="" coords="341,276,139,290,139,285,341,271"/>
+<area shape="rect" id="Node000012" href="$ins__flow_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="217,304,307,329"/>
+<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="391,285,307,308,306,302,390,280"/>
+<area shape="rect" id="Node000013" href="$ins__flow_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="225,353,299,379"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="416,288,289,356,286,351,413,283"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="221,236,119,281,116,276,218,231"/>
+<area shape="poly" id="edge15_Node000012_Node000011" title=" " alt="" coords="203,311,138,301,139,296,204,306"/>
+<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="218,350,117,306,119,302,220,345"/>
 </map>

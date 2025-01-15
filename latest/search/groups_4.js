@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['fixed_20point_20algebra_56806',['Fixed Point Algebra',['../group__math__algebra__int.html',1,'']]],
-  ['fixed_20point_20geodetic_20functions_56807',['Fixed Point Geodetic functions',['../group__math__geodetic__int.html',1,'']]],
-  ['float_20algebra_56808',['Float Algebra',['../group__math__algebra__float.html',1,'']]]
+  ['data_20availability_20representations_0',['Aircraft data availability representations',['../group__ac__info.html',1,'']]],
+  ['definition_1',['Basic type definition',['../group__porting__type.html',1,'']]],
+  ['double_20algebra_2',['Double Algebra',['../group__math__algebra__double.html',1,'']]],
+  ['double_20geodetic_20functions_3',['Double Geodetic functions',['../group__math__geodetic__double.html',1,'']]]
 ];

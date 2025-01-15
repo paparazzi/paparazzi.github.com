@@ -1,22 +1,50 @@
 <map id="invensense2_event" name="invensense2_event">
-<area shape="rect" id="node1" title="Should be called in the event thread." alt="" coords="5,99,153,126"/>
-<area shape="rect" id="node2" href="$invensense2_8c.html#ab2cccecfa7bb3591b78f5b293956a93e" title="Configure the Invensense 2 device register by register." alt="" coords="217,70,368,97"/>
-<area shape="rect" id="node4" href="$invensense2_8c.html#aea95cf0a0dfa3ce1e3f77d75d59bae06" title="Read a register based on a combined bank/regsiter value." alt="" coords="432,126,629,153"/>
-<area shape="rect" id="node11" href="$invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="206,278,379,305"/>
-<area shape="rect" id="node20" href="$invensense2_8c.html#a62055b1e4288fe24065246a3e0dc7ba6" title="Parse the FIFO buffer data." alt="" coords="201,14,384,41"/>
-<area shape="rect" id="node3" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="457,9,604,35"/>
-<area shape="rect" id="node10" href="$invensense2_8c.html#a30477c5c507b0c8bcbfcfaf8e6c10665" title="Write a register based on a combined bank/regsiter value." alt="" coords="450,60,611,101"/>
-<area shape="rect" id="node5" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="940,177,1056,203"/>
-<area shape="rect" id="node7" href="$invensense2_8c.html#a28e7bcd6a8e2d2d5bad607f7d0a512c0" title="Select the correct register bank." alt="" coords="677,75,867,102"/>
-<area shape="rect" id="node9" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="951,101,1045,127"/>
-<area shape="rect" id="node6" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1157,126,1251,153"/>
-<area shape="rect" id="node8" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="947,50,1049,77"/>
-<area shape="rect" id="node12" href="$imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="443,329,618,355"/>
-<area shape="rect" id="node18" href="$imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="445,278,616,305"/>
-<area shape="rect" id="node13" href="$imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="714,379,830,406"/>
-<area shape="rect" id="node14" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="704,278,840,305"/>
-<area shape="rect" id="node15" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="691,329,853,355"/>
-<area shape="rect" id="node16" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="915,329,1081,355"/>
-<area shape="rect" id="node17" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="1129,329,1279,355"/>
-<area shape="rect" id="node19" href="$imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="717,227,827,254"/>
+<area shape="rect" id="Node000001" title="Should be called in the event thread." alt="" coords="5,100,153,126"/>
+<area shape="rect" id="Node000002" href="$invensense2_8c.html#ab2cccecfa7bb3591b78f5b293956a93e" title="Configure the Invensense 2 device register by register." alt="" coords="217,72,368,98"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,101,204,94,204,99,154,106"/>
+<area shape="rect" id="Node000004" href="$invensense2_8c.html#aea95cf0a0dfa3ce1e3f77d75d59bae06" title="Read a register based on a combined bank/regsiter value." alt="" coords="432,127,629,152"/>
+<area shape="poly" id="edge28_Node000001_Node000004" title=" " alt="" coords="154,115,419,130,418,136,154,120"/>
+<area shape="rect" id="Node000011" href="$invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="206,278,379,303"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="98,124,267,267,264,271,94,128"/>
+<area shape="rect" id="Node000020" href="$invensense2_8c.html#a62055b1e4288fe24065246a3e0dc7ba6" title="Parse the FIFO buffer data." alt="" coords="201,18,384,43"/>
+<area shape="poly" id="edge26_Node000001_Node000020" title=" " alt="" coords="107,98,200,57,236,45,237,50,202,62,109,103"/>
+<area shape="rect" id="Node000003" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="457,12,604,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,70,466,38,467,44,345,75"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="349,95,462,121,461,126,348,100"/>
+<area shape="rect" id="Node000010" href="$invensense2_8c.html#a30477c5c507b0c8bcbfcfaf8e6c10665" title="Write a register based on a combined bank/regsiter value." alt="" coords="450,62,611,102"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="368,82,436,81,436,86,368,87"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="940,176,1056,202"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="630,147,926,179,926,184,629,153"/>
+<area shape="rect" id="Node000007" href="$invensense2_8c.html#a28e7bcd6a8e2d2d5bad607f7d0a512c0" title="Select the correct register bank." alt="" coords="677,76,867,102"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="592,124,697,102,698,107,593,130"/>
+<area shape="rect" id="Node000009" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="951,102,1045,127"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="629,132,937,115,938,120,630,137"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1157,127,1251,152"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1051,174,1143,151,1144,157,1052,179"/>
+<area shape="rect" id="Node000008" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="947,52,1049,78"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="866,76,932,69,933,75,867,82"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="867,97,938,105,937,110,866,102"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="1047,75,1082,87,1163,119,1161,124,1080,92,1045,80"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="612,82,664,83,664,89,611,87"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="596,60,628,47,651,31,662,23,677,17,729,5,771,3,814,8,867,17,915,29,958,45,956,50,913,34,866,22,813,13,771,9,730,11,678,22,664,28,654,35,631,51,598,65"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="611,62,668,54,733,49,801,51,867,61,892,73,916,87,939,95,937,100,914,91,890,77,866,66,800,56,733,55,669,59,612,67"/>
+<area shape="rect" id="Node000012" href="$imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="443,327,618,352"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="355,300,456,322,455,327,354,306"/>
+<area shape="rect" id="Node000018" href="$imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="445,278,616,303"/>
+<area shape="poly" id="edge22_Node000011_Node000018" title=" " alt="" coords="380,288,431,288,431,293,380,293"/>
+<area shape="rect" id="Node000013" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="714,376,830,402"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="594,350,701,372,700,377,593,355"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="704,278,840,303"/>
+<area shape="poly" id="edge18_Node000012_Node000014" title=" " alt="" coords="593,324,695,303,696,308,594,330"/>
+<area shape="rect" id="Node000015" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="691,327,853,352"/>
+<area shape="poly" id="edge19_Node000012_Node000015" title=" " alt="" coords="618,337,678,337,678,342,618,342"/>
+<area shape="rect" id="Node000016" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="915,327,1081,352"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="853,337,901,337,901,342,853,342"/>
+<area shape="rect" id="Node000017" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="1129,327,1279,352"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="1081,337,1115,337,1115,342,1081,342"/>
+<area shape="poly" id="edge24_Node000018_Node000014" title=" " alt="" coords="616,288,690,288,690,293,616,293"/>
+<area shape="poly" id="edge25_Node000018_Node000015" title=" " alt="" coords="594,300,696,322,695,327,593,306"/>
+<area shape="rect" id="Node000019" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="717,228,827,254"/>
+<area shape="poly" id="edge23_Node000018_Node000019" title=" " alt="" coords="593,275,702,252,704,258,594,280"/>
+<area shape="poly" id="edge27_Node000020_Node000003" title=" " alt="" coords="384,26,443,24,443,30,384,31"/>
 </map>

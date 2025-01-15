@@ -1,9 +1,15 @@
 <map id="gec_process_msg1" name="gec_process_msg1">
-<area shape="rect" id="node1" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="5,31,151,57"/>
-<area shape="rect" id="node2" href="$gec_8c.html#ae873ba7cb08a84eb613be40101d266d2" title="Derive key material for both sender and receiver." alt="" coords="218,5,403,32"/>
-<area shape="rect" id="node3" href="$gec_8c.html#a7dabc3297585157dc9719ba30d72216d" title="Generate private and public key pairs for future use." alt="" coords="199,56,423,83"/>
-<area shape="rect" id="node4" href="$chibios_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea" title=" " alt="" coords="471,56,608,83"/>
-<area shape="rect" id="node5" href="$chibios_2mcu__periph_2rng__arch_8c.html#a4d9bb543e51507e70fe894b31146d131" title=" " alt="" coords="656,56,775,83"/>
-<area shape="rect" id="node6" href="$chibios_2mcu__periph_2rng__arch_8c.html#a58fdba00b42a0c78e254f58a15a7108d" title=" " alt="" coords="841,31,924,57"/>
-<area shape="rect" id="node7" href="$chibios_2mcu__periph_2rng__arch_8c.html#a5ae6c3da75d6267f96be24bb672796f4" title=" " alt="" coords="823,81,943,108"/>
+<area shape="rect" id="Node000001" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="5,31,151,56"/>
+<area shape="rect" id="Node000002" href="$gec_8c.html#ae873ba7cb08a84eb613be40101d266d2" title="Derive key material for both sender and receiver." alt="" coords="218,5,403,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,33,204,27,205,32,151,38"/>
+<area shape="rect" id="Node000003" href="$gec_8c.html#a7dabc3297585157dc9719ba30d72216d" title="Generate private and public key pairs for future use." alt="" coords="199,55,423,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,48,186,52,185,57,151,53"/>
+<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea" title=" " alt="" coords="471,55,608,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="423,65,457,65,457,70,423,70"/>
+<area shape="rect" id="Node000005" href="$chibios_2mcu__periph_2rng__arch_8c.html#a4d9bb543e51507e70fe894b31146d131" title=" " alt="" coords="656,55,775,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="608,65,642,65,642,70,608,70"/>
+<area shape="rect" id="Node000006" href="$chibios_2mcu__periph_2rng__arch_8c.html#a58fdba00b42a0c78e254f58a15a7108d" title=" " alt="" coords="841,29,924,55"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="774,56,827,48,828,53,775,61"/>
+<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2rng__arch_8c.html#a5ae6c3da75d6267f96be24bb672796f4" title=" " alt="" coords="823,79,943,104"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="775,73,809,78,809,83,774,78"/>
 </map>

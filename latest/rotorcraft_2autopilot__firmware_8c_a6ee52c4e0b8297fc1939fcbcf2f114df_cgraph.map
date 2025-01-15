@@ -1,9 +1,16 @@
 <map id="autopilot_in_flight_end_detection" name="autopilot_in_flight_end_detection">
-<area shape="rect" id="node1" title="Default end&#45;of&#45;in&#45;flight detection estimation based on thrust and speed." alt="" coords="5,23,144,65"/>
-<area shape="rect" id="node2" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="195,5,345,32"/>
-<area shape="rect" id="node6" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="192,56,348,83"/>
-<area shape="rect" id="node3" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="399,5,555,32"/>
-<area shape="rect" id="node4" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="605,31,753,57"/>
-<area shape="rect" id="node5" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="801,31,949,57"/>
-<area shape="rect" id="node7" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="396,56,557,83"/>
+<area shape="rect" id="Node000001" title="Default end&#45;of&#45;in&#45;flight detection estimation based on thrust and speed." alt="" coords="5,23,144,63"/>
+<area shape="rect" id="Node000002" href="$group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="195,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,32,181,27,182,32,145,37"/>
+<area shape="rect" id="Node000006" href="$group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="192,55,348,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="145,49,179,53,178,59,144,55"/>
+<area shape="rect" id="Node000003" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="399,5,555,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,15,385,15,385,21,346,21"/>
+<area shape="rect" id="Node000004" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="605,31,753,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="555,25,592,30,592,35,554,30"/>
+<area shape="rect" id="Node000005" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="801,31,949,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="754,41,787,41,787,46,754,46"/>
+<area shape="rect" id="Node000007" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="396,55,557,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="348,65,382,65,382,70,348,70"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="557,55,591,51,592,56,558,60"/>
 </map>

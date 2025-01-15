@@ -30,7 +30,6 @@ var dc_8c =
     [ "dc_gps_next_dist", "dc_8c.html#a8b59d197298255517ce7b63d4c9ee81a", null ],
     [ "dc_gps_x", "dc_8c.html#a8f906f7bd2443e49061e9b5fe087d21f", null ],
     [ "dc_gps_y", "dc_8c.html#ab6820030fcf96862589b1502c046a4f0", null ],
-    [ "dc_photo_nr", "dc_8c.html#a8e6b473bfa20e6884d13fce82180d6d5", null ],
     [ "dc_survey_interval", "dc_8c.html#a1d08f1a0a510dbd2b15071322e56449a", null ],
     [ "last_shot_pos", "dc_8c.html#acef7e1ef22d955a5cbe420a80434f23e", null ]
 ];

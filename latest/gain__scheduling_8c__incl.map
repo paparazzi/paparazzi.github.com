@@ -1,17 +1,36 @@
 <map id="sw/airborne/modules/ctrl/gain_scheduling.c" name="sw/airborne/modules/ctrl/gain_scheduling.c">
-<area shape="rect" id="node1" title="Module that interpolates gainsets in flight based on a scheduling variable." alt="" coords="216,5,382,47"/>
-<area shape="rect" id="node2" href="$gain__scheduling_8h.html" title="Module that interpolates between gain sets, depending on the scheduling variable." alt="" coords="187,102,411,129"/>
-<area shape="rect" id="node5" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="100,288,280,315"/>
-<area shape="rect" id="node13" href="$radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="434,95,601,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="335,288,495,315"/>
-<area shape="rect" id="node4" href="$stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="188,184,378,240"/>
-<area shape="rect" id="node6" title=" " alt="" coords="72,437,126,464"/>
-<area shape="rect" id="node7" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="201,363,357,389"/>
-<area shape="rect" id="node11" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="24,363,177,389"/>
-<area shape="rect" id="node12" title=" " alt="" coords="381,363,452,389"/>
-<area shape="rect" id="node8" title=" " alt="" coords="337,437,400,464"/>
-<area shape="rect" id="node9" title=" " alt="" coords="150,437,221,464"/>
-<area shape="rect" id="node10" title=" " alt="" coords="245,437,313,464"/>
-<area shape="rect" id="node14" href="$paparazzi_8h.html" title=" " alt="" coords="513,199,610,225"/>
-<area shape="rect" id="node15" title=" " alt="" coords="520,288,606,315"/>
+<area shape="rect" id="Node000001" title="Module that interpolates gainsets in flight based on a scheduling variable." alt="" coords="216,5,382,45"/>
+<area shape="rect" id="Node000002" href="$gain__scheduling_8h.html" title="Module that interpolates between gain sets, depending on the scheduling variable." alt="" coords="187,101,411,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,46,302,87,296,87,296,46"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="100,284,280,309"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="236,48,203,67,189,80,177,95,167,116,162,139,162,188,170,234,182,270,177,272,165,235,156,188,157,139,162,115,173,92,185,76,200,63,233,43"/>
+<area shape="rect" id="Node000013" href="$radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="434,93,601,133"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="348,43,458,86,456,91,346,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="335,284,495,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,124,360,146,377,162,392,180,403,202,411,226,417,270,412,271,405,227,398,204,387,183,373,166,356,151,322,128"/>
+<area shape="rect" id="Node000004" href="$stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="188,181,378,236"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="300,126,292,168,287,167,294,126"/>
+<area shape="poly" id="edge14_Node000004_Node000003" title=" " alt="" coords="325,234,387,274,384,279,322,238"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="256,238,214,276,211,272,253,234"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="72,431,126,456"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="100,309,51,326,30,341,13,359,9,368,9,376,18,394,37,409,61,423,58,427,34,414,14,397,3,378,4,367,9,356,27,336,49,322,98,304"/>
+<area shape="rect" id="Node000007" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="201,357,357,383"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="206,307,255,346,252,351,202,311"/>
+<area shape="rect" id="Node000011" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="24,357,177,383"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="177,311,127,351,124,346,174,307"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="381,357,452,383"/>
+<area shape="poly" id="edge13_Node000005_Node000012" title=" " alt="" coords="227,307,368,351,367,356,225,312"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="251,385,140,429,138,424,249,380"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="337,431,400,456"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="295,381,344,420,341,424,292,385"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="150,431,221,456"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="265,385,213,424,210,420,262,381"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="245,431,313,456"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="282,383,282,417,276,417,276,383"/>
+<area shape="poly" id="edge12_Node000011_Node000006" title=" " alt="" coords="103,383,102,417,97,417,97,383"/>
+<area shape="poly" id="edge17_Node000013_Node000003" title=" " alt="" coords="509,135,430,274,426,271,504,132"/>
+<area shape="rect" id="Node000014" href="$paparazzi_8h.html" title=" " alt="" coords="513,196,610,221"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="529,132,553,182,548,185,524,135"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="520,284,606,309"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="564,221,565,270,560,270,559,222"/>
 </map>

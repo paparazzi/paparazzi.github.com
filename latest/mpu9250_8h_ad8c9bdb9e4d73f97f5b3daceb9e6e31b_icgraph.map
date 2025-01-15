@@ -1,14 +1,25 @@
 <map id="mpu9250_configure_i2c_slaves" name="mpu9250_configure_i2c_slaves">
-<area shape="rect" id="node1" title="Configure I2C slaves of the MPU." alt="" coords="920,74,1096,115"/>
-<area shape="rect" id="node2" href="$mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use." alt="" coords="705,81,872,108"/>
-<area shape="rect" id="node3" href="$mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title=" " alt="" coords="474,5,627,32"/>
-<area shape="rect" id="node5" href="$mpu9250__i2c_8c.html#aa6574d578c0a32f04893e3119a102ee6" title=" " alt="" coords="444,56,657,83"/>
-<area shape="rect" id="node8" href="$mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050" title=" " alt="" coords="474,107,627,133"/>
-<area shape="rect" id="node10" href="$mpu9250__spi_8c.html#ac4ebbe613cb0fbf0766180f78db0e175" title=" " alt="" coords="444,157,657,184"/>
-<area shape="rect" id="node4" href="$imu__mpu9250_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="233,5,391,32"/>
-<area shape="rect" id="node6" href="$mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized" alt="" coords="228,56,396,83"/>
-<area shape="rect" id="node7" href="$imu__mpu9250_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title=" " alt="" coords="5,56,180,83"/>
-<area shape="rect" id="node9" href="$imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="233,107,391,133"/>
-<area shape="rect" id="node11" href="$mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized" alt="" coords="228,157,396,184"/>
-<area shape="rect" id="node12" href="$imu__mpu9250__spi_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title=" " alt="" coords="5,157,180,184"/>
+<area shape="rect" id="Node000001" title="Configure I2C slaves of the MPU." alt="" coords="920,73,1096,113"/>
+<area shape="rect" id="Node000002" href="$mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use." alt="" coords="705,80,872,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="906,95,872,95,872,90,906,90"/>
+<area shape="rect" id="Node000003" href="$mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title=" " alt="" coords="474,5,627,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="745,77,657,45,614,33,615,28,658,39,747,72"/>
+<area shape="rect" id="Node000005" href="$mpu9250__i2c_8c.html#aa6574d578c0a32f04893e3119a102ee6" title=" " alt="" coords="444,55,657,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="691,85,657,81,658,76,692,80"/>
+<area shape="rect" id="Node000008" href="$mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050" title=" " alt="" coords="474,104,627,129"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="692,105,628,112,627,106,691,100"/>
+<area shape="rect" id="Node000010" href="$mpu9250__spi_8c.html#ac4ebbe613cb0fbf0766180f78db0e175" title=" " alt="" coords="444,153,657,179"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="744,113,658,143,611,156,610,151,657,138,743,108"/>
+<area shape="rect" id="Node000004" href="$imu__mpu9250_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="233,5,391,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,21,392,21,392,15,460,15"/>
+<area shape="rect" id="Node000006" href="$mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized" alt="" coords="228,55,396,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="430,70,396,70,396,65,430,65"/>
+<area shape="rect" id="Node000007" href="$imu__mpu9250_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title=" " alt="" coords="5,55,180,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="214,70,180,70,180,65,214,65"/>
+<area shape="rect" id="Node000009" href="$imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="233,104,391,129"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="460,119,392,119,392,114,460,114"/>
+<area shape="rect" id="Node000011" href="$mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized" alt="" coords="228,153,396,179"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="430,169,396,169,396,163,430,163"/>
+<area shape="rect" id="Node000012" href="$imu__mpu9250__spi_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title=" " alt="" coords="5,153,180,179"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="214,169,180,169,180,163,214,163"/>
 </map>

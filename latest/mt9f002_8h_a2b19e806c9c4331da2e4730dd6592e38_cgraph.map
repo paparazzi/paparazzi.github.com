@@ -1,8 +1,13 @@
 <map id="mt9f002_set_gains" name="mt9f002_set_gains">
-<area shape="rect" id="node1" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="5,31,152,57"/>
-<area shape="rect" id="node2" href="$mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50." alt="" coords="200,5,345,32"/>
-<area shape="rect" id="node3" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="231,56,314,83"/>
-<area shape="rect" id="node4" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="393,56,559,83"/>
-<area shape="rect" id="node5" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="607,31,752,57"/>
-<area shape="rect" id="node6" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="633,81,726,108"/>
+<area shape="rect" id="Node000001" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="5,31,152,56"/>
+<area shape="rect" id="Node000002" href="$mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50." alt="" coords="200,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,31,186,27,186,32,153,36"/>
+<area shape="rect" id="Node000003" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="231,55,314,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,50,218,58,217,63,152,55"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="393,55,559,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="314,65,380,65,380,70,314,70"/>
+<area shape="rect" id="Node000005" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="607,29,752,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="559,54,592,50,593,55,559,60"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="633,79,726,104"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="559,74,619,82,618,87,559,80"/>
 </map>

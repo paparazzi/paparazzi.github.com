@@ -1,46 +1,110 @@
 <map id="float_vect3_norm2" name="float_vect3_norm2">
-<area shape="rect" id="node1" title=" " alt="" coords="1791,537,1933,564"/>
-<area shape="rect" id="node2" href="$group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title=" " alt="" coords="1608,537,1743,564"/>
-<area shape="rect" id="node3" href="$ahrs__float__cmpl_8c.html#ad3fe7a6c0c460ce60bce6bf52e7b684e" title=" " alt="" coords="1380,268,1543,295"/>
-<area shape="rect" id="node6" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="1363,487,1560,513"/>
-<area shape="rect" id="node9" href="$ahrs__float__mlkf_8c.html#a49d6b43615e971ee5f098c86c2cf0edb" title=" " alt="" coords="1371,537,1551,564"/>
-<area shape="rect" id="node12" href="$group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place" alt="" coords="1378,377,1545,404"/>
-<area shape="rect" id="node39" href="$ins__module_8h.html#ac5da428408b44b6b22e510c36f7f2bc7" title=" " alt="" coords="1398,588,1525,615"/>
-<area shape="rect" id="node40" href="$mag__calib__ukf_8c.html#a65dbf03314c2cc49a8657a02cb7db8b3" title="Callback function to update reference magnetic field from geo_mag module." alt="" coords="1373,639,1549,665"/>
-<area shape="rect" id="node42" href="$wind__estimator_8c.html#a4a160ad72a16315f0e50d81fed996d12" title=" " alt="" coords="1381,689,1542,716"/>
-<area shape="rect" id="node4" href="$ahrs__float__cmpl__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="973,5,1051,32"/>
-<area shape="rect" id="node5" href="$ahrs__float__cmpl__wrapper_8c.html#a6a8504eaa4fcd922a23c86a572f076cf" title=" " alt="" coords="226,27,383,53"/>
-<area shape="rect" id="node7" href="$ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="975,547,1049,573"/>
-<area shape="rect" id="node8" href="$ahrs__madgwick__wrapper_8c.html#a06b534ff4be4d76ebf117fcc7a00b1d8" title=" " alt="" coords="440,529,652,556"/>
-<area shape="rect" id="node10" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="973,597,1051,624"/>
-<area shape="rect" id="node11" href="$ahrs__float__mlkf__wrapper_8c.html#a5f8d12174a8dd889020518f00c1f4584" title=" " alt="" coords="217,387,392,413"/>
-<area shape="rect" id="node13" href="$ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement." alt="" coords="1156,270,1307,311"/>
-<area shape="rect" id="node37" href="$geo__mag_8c.html#acbcdb044d58bcc512ab1e87e31020d81" title=" " alt="" coords="1168,403,1295,429"/>
-<area shape="rect" id="node38" href="$shift__tracking_8c.html#a33f0ce00bb406bb93dcf6431a10a5370" title="init function" alt="" coords="1162,352,1301,379"/>
-<area shape="rect" id="node14" href="$ahrs__float__dcm_8c.html#ac19ef4cf9dfcc61561addd93a8c41a5e" title=" " alt="" coords="726,103,850,129"/>
-<area shape="rect" id="node17" href="$ahrs__float__cmpl_8c.html#a8bb0e2116dd6b4bf9a3fa0caa3f97d27" title=" " alt="" coords="734,52,842,79"/>
-<area shape="rect" id="node19" href="$ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title=" " alt="" coords="937,270,1087,311"/>
-<area shape="rect" id="node31" href="$ins__float__invariant_8c.html#a20f38b74cafe0e2f82412fe7a66dc806" title=" " alt="" coords="717,438,859,479"/>
-<area shape="rect" id="node34" href="$ahrs__int__utils_8h.html#a01b7d1167e626e382675619369a1fc49" title=" " alt="" coords="924,179,1100,221"/>
-<area shape="rect" id="node35" href="$ahrs__madgwick_8c.html#aad35ef1d8e209a830a0c77d488e56dcc" title=" " alt="" coords="931,473,1093,500"/>
-<area shape="rect" id="node15" href="$ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="501,103,591,129"/>
-<area shape="rect" id="node16" href="$ahrs__float__dcm__wrapper_8c.html#a012ca9a13f78c875aca0f18116a15560" title=" " alt="" coords="218,103,391,129"/>
-<area shape="rect" id="node18" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="501,52,591,79"/>
-<area shape="rect" id="node20" href="$ahrs__float__invariant_8c.html#a4111f176cb3e28593c2ff388169a86f9" title=" " alt="" coords="713,270,863,311"/>
-<area shape="rect" id="node23" href="$ahrs__int__utils_8h.html#a8ea9794c15ad84b2a289385d4a431f60" title=" " alt="" coords="700,205,876,246"/>
-<area shape="rect" id="node27" href="$ahrs__float__mlkf_8c.html#a65cd8d47048c1cdc4aced2e5a4ce79e2" title=" " alt="" coords="725,387,851,413"/>
-<area shape="rect" id="node29" href="$ins__mekf__wind__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="743,336,833,363"/>
-<area shape="rect" id="node21" href="$ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="501,277,591,304"/>
-<area shape="rect" id="node22" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="220,277,389,304"/>
-<area shape="rect" id="node24" href="$ahrs__int__cmpl__quat_8c.html#a00670e57757ac4865d6bbd63a6ad4a73" title=" " alt="" coords="489,183,603,209"/>
-<area shape="rect" id="node25" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="260,183,349,209"/>
-<area shape="rect" id="node26" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a2baba6aa57750d3a2c5a232697a7e1fe" title=" " alt="" coords="5,183,169,209"/>
-<area shape="rect" id="node28" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="501,387,591,413"/>
-<area shape="rect" id="node30" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="442,336,650,363"/>
-<area shape="rect" id="node32" href="$ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="501,445,591,472"/>
-<area shape="rect" id="node33" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="233,438,376,479"/>
-<area shape="rect" id="node36" href="$ahrs__madgwick__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="743,504,833,531"/>
-<area shape="rect" id="node41" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="1159,639,1304,665"/>
-<area shape="rect" id="node43" href="$wind__estimator_8c.html#af175c7aace58699751294cb06ccfa87b" title=" " alt="" coords="1148,689,1315,716"/>
-<area shape="rect" id="node44" href="$wind__estimator_8c.html#aeba75f12b0ae0a57b4269345a348e779" title=" " alt="" coords="1156,740,1307,767"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1623,663,1765,688"/>
+<area shape="rect" id="Node000002" href="$group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title=" " alt="" coords="1440,663,1575,688"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1609,678,1575,678,1575,673,1609,673"/>
+<area shape="rect" id="Node000003" href="$ahrs__float__cmpl_8c.html#ad3fe7a6c0c460ce60bce6bf52e7b684e" title=" " alt="" coords="1212,260,1375,285"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1496,650,1456,537,1426,466,1390,397,1345,334,1305,287,1309,284,1349,330,1394,394,1430,464,1461,535,1501,648"/>
+<area shape="rect" id="Node000006" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="1195,564,1392,589"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1465,659,1321,592,1323,587,1468,655"/>
+<area shape="rect" id="Node000009" href="$ahrs__float__mlkf_8c.html#a49d6b43615e971ee5f098c86c2cf0edb" title=" " alt="" coords="1203,500,1383,525"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1487,653,1446,603,1420,577,1391,554,1365,539,1338,528,1340,523,1367,534,1393,549,1423,573,1450,600,1491,650"/>
+<area shape="rect" id="Node000012" href="$wedgebug_8c.html#aac1bde6c5c9971c74f63b94c884de408" title=" " alt="" coords="1210,655,1377,695"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="1426,678,1377,678,1377,673,1426,673"/>
+<area shape="rect" id="Node000018" href="$group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place" alt="" coords="1210,408,1377,433"/>
+<area shape="poly" id="edge19_Node000002_Node000018" title=" " alt="" coords="1492,651,1452,574,1424,530,1390,489,1354,459,1318,436,1321,431,1357,454,1394,485,1428,527,1457,572,1497,649"/>
+<area shape="rect" id="Node000047" href="$ins__module_8h.html#ac5da428408b44b6b22e510c36f7f2bc7" title=" " alt="" coords="1230,720,1357,745"/>
+<area shape="poly" id="edge51_Node000002_Node000047" title=" " alt="" coords="1449,694,1393,710,1345,723,1344,717,1391,705,1447,689"/>
+<area shape="rect" id="Node000048" href="$ins__xsens700_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title=" " alt="" coords="1230,816,1357,841"/>
+<area shape="poly" id="edge52_Node000002_Node000048" title=" " alt="" coords="1479,698,1314,818,1311,813,1476,694"/>
+<area shape="rect" id="Node000050" href="$mag__calib__ukf_8c.html#a65dbf03314c2cc49a8657a02cb7db8b3" title="Callback function to update reference magnetic field from geo_mag module." alt="" coords="1205,877,1381,903"/>
+<area shape="poly" id="edge54_Node000002_Node000050" title=" " alt="" coords="1499,702,1483,736,1460,777,1430,819,1394,856,1372,870,1349,880,1347,875,1370,865,1390,852,1426,816,1455,774,1478,734,1494,699"/>
+<area shape="rect" id="Node000052" href="$wind__estimator_8c.html#a4a160ad72a16315f0e50d81fed996d12" title=" " alt="" coords="1213,949,1374,975"/>
+<area shape="poly" id="edge56_Node000002_Node000052" title=" " alt="" coords="1502,702,1489,747,1467,804,1436,863,1416,892,1394,917,1367,938,1338,952,1335,947,1364,933,1390,913,1412,888,1431,861,1462,801,1484,745,1497,700"/>
+<area shape="rect" id="Node000004" href="$ahrs__float__cmpl__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="761,5,839,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1255,256,887,63,826,33,829,28,889,58,1257,251"/>
+<area shape="rect" id="Node000005" href="$ahrs__float__cmpl__wrapper_8c.html#a6a8504eaa4fcd922a23c86a572f076cf" title=" " alt="" coords="14,20,171,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="747,22,172,34,171,28,747,16"/>
+<area shape="rect" id="Node000007" href="$ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="763,563,837,588"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1181,577,1147,577,936,577,837,578,837,572,936,571,1147,571,1181,572"/>
+<area shape="rect" id="Node000008" href="$ahrs__madgwick__wrapper_8c.html#a06b534ff4be4d76ebf117fcc7a00b1d8" title=" " alt="" coords="228,565,440,591"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="750,579,664,579,440,580,440,575,664,574,750,573"/>
+<area shape="rect" id="Node000010" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="761,488,839,513"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1189,513,839,504,839,499,1190,507"/>
+<area shape="rect" id="Node000011" href="$ahrs__float__mlkf__wrapper_8c.html#a5f8d12174a8dd889020518f00c1f4584" title=" " alt="" coords="5,404,180,429"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="747,506,650,508,520,505,374,494,300,485,227,471,168,453,119,432,121,427,170,448,229,466,300,479,374,489,520,500,650,502,747,500"/>
+<area shape="rect" id="Node000013" href="$wedgebug_8c.html#ae4596526d09016426535d776bf264022" title=" " alt="" coords="953,586,1130,626"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1206,654,1114,629,1115,623,1208,649"/>
+<area shape="rect" id="Node000014" href="$wedgebug_8c.html#ae8fa3dcd156072863327eb84624e7a61" title=" " alt="" coords="940,651,1143,676"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="1196,673,1143,671,1143,665,1196,668"/>
+<area shape="rect" id="Node000015" href="$wedgebug_8c.html#a12bcb5b0a367f4aff91697103ca2393c" title=" " alt="" coords="936,752,1147,777"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="1214,703,1196,710,1148,735,1092,754,1090,749,1146,730,1194,705,1212,698"/>
+<area shape="rect" id="Node000016" href="$wedgebug_8c.html#a372a7dc8196cccec1574f4d22ba02e2e" title=" " alt="" coords="726,752,874,777"/>
+<area shape="poly" id="edge18_Node000012_Node000016" title=" " alt="" coords="1197,695,936,742,869,755,868,749,936,737,1196,690"/>
+<area shape="rect" id="Node000017" href="$wedgebug_8c.html#a0e2b9eecc290f6306468701ad0668821" title=" " alt="" coords="965,801,1117,827"/>
+<area shape="poly" id="edge16_Node000012_Node000017" title=" " alt="" coords="1203,705,1197,709,1180,729,1174,750,1166,772,1148,792,1119,807,1116,802,1145,788,1162,769,1169,748,1176,727,1193,705,1200,700"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="922,767,874,767,874,762,922,762"/>
+<area shape="poly" id="edge17_Node000017_Node000016" title=" " alt="" coords="965,801,862,780,864,775,966,796"/>
+<area shape="rect" id="Node000019" href="$ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement." alt="" coords="966,317,1117,357"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="1243,406,1146,373,1105,359,1107,354,1148,367,1244,401"/>
+<area shape="rect" id="Node000045" href="$geo__mag_8c.html#acbcdb044d58bcc512ab1e87e31020d81" title=" " alt="" coords="978,432,1105,457"/>
+<area shape="poly" id="edge49_Node000018_Node000045" title=" " alt="" coords="1196,433,1105,441,1105,436,1196,427"/>
+<area shape="rect" id="Node000046" href="$shift__tracking_8c.html#a33f0ce00bb406bb93dcf6431a10a5370" title="init function" alt="" coords="972,383,1111,408"/>
+<area shape="poly" id="edge50_Node000018_Node000046" title=" " alt="" coords="1196,414,1111,405,1111,400,1197,408"/>
+<area shape="rect" id="Node000020" href="$ahrs__float__dcm_8c.html#ac19ef4cf9dfcc61561addd93a8c41a5e" title=" " alt="" coords="514,95,638,120"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="1008,309,953,263,887,218,827,188,778,169,663,135,622,123,624,117,665,130,780,164,829,183,889,213,957,259,1011,305"/>
+<area shape="rect" id="Node000023" href="$ahrs__float__cmpl_8c.html#a8bb0e2116dd6b4bf9a3fa0caa3f97d27" title=" " alt="" coords="522,45,630,71"/>
+<area shape="poly" id="edge24_Node000019_Node000023" title=" " alt="" coords="1018,307,963,236,927,198,887,166,822,129,752,102,686,82,630,69,631,64,687,77,754,97,824,124,889,161,931,194,967,233,1022,303"/>
+<area shape="rect" id="Node000025" href="$ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title=" " alt="" coords="725,227,875,267"/>
+<area shape="poly" id="edge27_Node000019_Node000025" title=" " alt="" coords="973,314,854,270,856,265,975,309"/>
+<area shape="rect" id="Node000039" href="$ins__float__invariant_8c.html#a20f38b74cafe0e2f82412fe7a66dc806" title=" " alt="" coords="505,425,647,465"/>
+<area shape="poly" id="edge48_Node000019_Node000039" title=" " alt="" coords="953,360,648,431,647,426,952,355"/>
+<area shape="rect" id="Node000042" href="$ahrs__int__utils_8h.html#a01b7d1167e626e382675619369a1fc49" title=" " alt="" coords="712,317,888,357"/>
+<area shape="poly" id="edge43_Node000019_Node000042" title=" " alt="" coords="952,339,888,339,888,334,952,334"/>
+<area shape="rect" id="Node000043" href="$ahrs__madgwick_8c.html#aad35ef1d8e209a830a0c77d488e56dcc" title=" " alt="" coords="719,437,881,463"/>
+<area shape="poly" id="edge45_Node000019_Node000043" title=" " alt="" coords="954,364,937,372,923,383,914,393,904,405,889,416,841,440,839,435,887,412,900,401,910,390,920,379,935,368,952,359"/>
+<area shape="rect" id="Node000021" href="$ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="289,95,379,120"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="500,110,379,110,379,105,500,105"/>
+<area shape="rect" id="Node000022" href="$ahrs__float__dcm__wrapper_8c.html#a012ca9a13f78c875aca0f18116a15560" title=" " alt="" coords="6,95,179,120"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="275,110,180,110,180,105,275,105"/>
+<area shape="rect" id="Node000024" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="289,45,379,71"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="508,61,379,61,379,55,508,55"/>
+<area shape="poly" id="edge26_Node000024_Node000005" title=" " alt="" coords="275,55,172,44,172,38,276,49"/>
+<area shape="poly" id="edge28_Node000025_Node000020" title=" " alt="" coords="765,220,710,171,663,135,633,123,635,118,665,130,713,166,769,216"/>
+<area shape="poly" id="edge29_Node000025_Node000023" title=" " alt="" coords="779,217,732,149,700,114,663,84,629,70,632,65,665,80,703,110,736,146,783,214"/>
+<area shape="rect" id="Node000026" href="$ahrs__float__invariant_8c.html#a4111f176cb3e28593c2ff388169a86f9" title=" " alt="" coords="501,145,651,185"/>
+<area shape="poly" id="edge30_Node000025_Node000026" title=" " alt="" coords="732,225,663,199,631,187,633,182,665,194,734,220"/>
+<area shape="rect" id="Node000029" href="$ahrs__int__utils_8h.html#a8ea9794c15ad84b2a289385d4a431f60" title=" " alt="" coords="488,259,664,299"/>
+<area shape="poly" id="edge32_Node000025_Node000029" title=" " alt="" coords="711,263,664,269,664,264,711,257"/>
+<area shape="rect" id="Node000035" href="$ahrs__float__mlkf_8c.html#a65cd8d47048c1cdc4aced2e5a4ce79e2" title=" " alt="" coords="513,375,639,400"/>
+<area shape="poly" id="edge36_Node000025_Node000035" title=" " alt="" coords="757,277,599,377,596,372,754,272"/>
+<area shape="rect" id="Node000037" href="$ins__mekf__wind__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="531,209,621,235"/>
+<area shape="poly" id="edge39_Node000025_Node000037" title=" " alt="" coords="711,240,620,230,621,224,711,235"/>
+<area shape="poly" id="edge41_Node000025_Node000039" title=" " alt="" coords="749,277,714,306,698,334,692,360,685,386,666,413,647,427,644,422,662,409,680,384,687,359,693,332,710,303,745,273"/>
+<area shape="rect" id="Node000027" href="$ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="289,152,379,177"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="487,167,379,167,379,162,487,162"/>
+<area shape="rect" id="Node000030" href="$ahrs__int__cmpl__quat_8c.html#a00670e57757ac4865d6bbd63a6ad4a73" title=" " alt="" coords="277,296,391,321"/>
+<area shape="poly" id="edge33_Node000029_Node000030" title=" " alt="" coords="475,294,392,304,391,299,474,289"/>
+<area shape="rect" id="Node000031" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="48,272,137,297"/>
+<area shape="poly" id="edge34_Node000030_Node000031" title=" " alt="" coords="262,304,137,292,138,286,263,299"/>
+<area shape="rect" id="Node000033" href="$ins__flow_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="48,321,137,347"/>
+<area shape="poly" id="edge35_Node000030_Node000033" title=" " alt="" coords="263,319,138,332,137,327,262,313"/>
+<area shape="rect" id="Node000036" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="289,379,379,404"/>
+<area shape="poly" id="edge37_Node000035_Node000036" title=" " alt="" coords="499,391,379,393,379,388,499,386"/>
+<area shape="poly" id="edge38_Node000036_Node000011" title=" " alt="" coords="276,400,180,410,180,405,275,395"/>
+<area shape="rect" id="Node000038" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="230,209,438,235"/>
+<area shape="poly" id="edge40_Node000037_Node000038" title=" " alt="" coords="518,225,438,225,438,219,518,219"/>
+<area shape="rect" id="Node000040" href="$ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="289,432,379,457"/>
+<area shape="poly" id="edge42_Node000039_Node000040" title=" " alt="" coords="491,447,379,447,379,442,491,442"/>
+<area shape="poly" id="edge44_Node000042_Node000030" title=" " alt="" coords="698,333,391,315,392,309,698,328"/>
+<area shape="rect" id="Node000044" href="$ahrs__madgwick__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="531,540,621,565"/>
+<area shape="poly" id="edge46_Node000043_Node000044" title=" " alt="" coords="736,469,713,478,649,511,598,542,595,538,646,506,711,473,734,464"/>
+<area shape="poly" id="edge47_Node000044_Node000008" title=" " alt="" coords="518,561,440,570,440,564,517,556"/>
+<area shape="rect" id="Node000049" href="$ins__xsens700_8c.html#af5b103447ab6c24b2ad38714d258b262" title=" " alt="" coords="964,851,1119,876"/>
+<area shape="poly" id="edge53_Node000048_Node000049" title=" " alt="" coords="1217,842,1119,855,1118,850,1216,837"/>
+<area shape="rect" id="Node000051" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="969,900,1114,925"/>
+<area shape="poly" id="edge55_Node000050_Node000051" title=" " alt="" coords="1192,902,1115,909,1114,903,1192,896"/>
+<area shape="rect" id="Node000053" href="$wind__estimator_8c.html#af175c7aace58699751294cb06ccfa87b" title=" " alt="" coords="958,999,1125,1024"/>
+<area shape="poly" id="edge57_Node000052_Node000053" title=" " alt="" coords="1215,980,1108,1001,1107,996,1214,975"/>
+<area shape="rect" id="Node000054" href="$wind__estimator_8c.html#aeba75f12b0ae0a57b4269345a348e779" title=" " alt="" coords="966,949,1117,975"/>
+<area shape="poly" id="edge58_Node000052_Node000054" title=" " alt="" coords="1199,965,1117,965,1117,959,1199,959"/>
 </map>

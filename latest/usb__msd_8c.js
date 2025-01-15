@@ -88,7 +88,7 @@ var usb__msd_8c =
     [ "debug_snd_evt_inl", "usb__msd_8c.html#a24a678ea6bcd105c46f97ccc813d146b", null ],
     [ "debug_snd_evt_nl", "usb__msd_8c.html#ad07c9360f29e619d5e4d4e9e4b28cb3d", null ],
     [ "deinit_msd_driver", "usb__msd_8c.html#af6995e11a18decb9478ad798000d60ca", null ],
-    [ "getDescriptor", "usb__msd_8c.html#aec54b4b22e4bcec2712557688a8a474c", null ],
+    [ "getDescriptor", "usb__msd_8c.html#a5158ee156323fb7cd7a6a15008be08c4", null ],
     [ "IN_DMA_SECTION_CLEAR", "usb__msd_8c.html#a45a8d534d002e2e658ce1511710ee016", null ],
     [ "init_msd_driver", "usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01", null ],
     [ "mass_storage_thread", "usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a", null ],

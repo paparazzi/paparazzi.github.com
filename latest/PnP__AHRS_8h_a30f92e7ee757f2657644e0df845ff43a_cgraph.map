@@ -1,12 +1,21 @@
 <map id="get_world_position_from_image_points" name="get_world_position_from_image_points">
-<area shape="rect" id="node1" title="Get the world position of the camera, given image coordinates and corresponding world coordinates." alt="" coords="5,82,160,123"/>
-<area shape="rect" id="node2" href="$undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates." alt="" coords="233,23,385,65"/>
-<area shape="rect" id="node5" href="$group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0" title="Rotation matrix from 321 Euler angles (float)." alt="" coords="216,89,403,116"/>
-<area shape="rect" id="node6" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="208,140,411,167"/>
-<area shape="rect" id="node3" href="$undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method." alt="" coords="468,5,617,32"/>
-<area shape="rect" id="node4" href="$undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates." alt="" coords="463,56,623,83"/>
-<area shape="rect" id="node7" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="459,140,627,167"/>
-<area shape="rect" id="node8" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="675,140,848,167"/>
-<area shape="rect" id="node9" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="897,115,1051,141"/>
-<area shape="rect" id="node10" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="896,165,1052,192"/>
+<area shape="rect" id="Node000001" title="Get the world position of the camera, given image coordinates and corresponding world coordinates." alt="" coords="5,79,160,119"/>
+<area shape="rect" id="Node000002" href="$undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates." alt="" coords="233,22,385,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,77,219,62,220,67,161,82"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0" title="Rotation matrix from 321 Euler angles (float)." alt="" coords="216,87,403,112"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="160,97,202,97,202,102,160,102"/>
+<area shape="rect" id="Node000006" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="208,136,411,161"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="161,114,238,130,236,136,160,119"/>
+<area shape="rect" id="Node000003" href="$undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method." alt="" coords="468,5,617,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,32,454,24,454,30,386,37"/>
+<area shape="rect" id="Node000004" href="$undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates." alt="" coords="463,55,623,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="386,48,449,55,449,60,385,53"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="459,136,627,161"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="411,146,445,146,445,151,411,151"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="675,136,848,161"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="627,146,661,146,661,151,627,151"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="897,111,1051,136"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="848,136,883,132,883,137,848,141"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="896,160,1052,185"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="848,156,883,160,882,165,848,161"/>
 </map>

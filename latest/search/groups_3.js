@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['double_20algebra_56804',['Double Algebra',['../group__math__algebra__double.html',1,'']]],
-  ['double_20geodetic_20functions_56805',['Double Geodetic functions',['../group__math__geodetic__double.html',1,'']]]
+  ['chprintf_0',['Chprintf',['../group__chprintf.html',1,'']]],
+  ['config_1',['Config',['../group__config.html',1,'']]]
 ];

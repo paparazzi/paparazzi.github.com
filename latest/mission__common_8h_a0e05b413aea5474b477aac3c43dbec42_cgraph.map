@@ -1,21 +1,44 @@
 <map id="mission_parse_GOTO_WP_LLA" name="mission_parse_GOTO_WP_LLA">
-<area shape="rect" id="node1" title=" " alt="" coords="5,201,167,242"/>
-<area shape="rect" id="node2" href="$mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode." alt="" coords="234,107,351,133"/>
-<area shape="rect" id="node4" href="$mission__common_8h.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Get the ENU component of LLA mission point This function is firmware specific." alt="" coords="215,233,371,260"/>
-<area shape="rect" id="node3" href="$mission__common_8c.html#a8cfd722b32d9d6683e562b437e15d8bc" title="Get mission element by index." alt="" coords="419,31,601,57"/>
-<area shape="rect" id="node5" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="440,81,580,108"/>
-<area shape="rect" id="node10" href="$group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title=" " alt="" coords="443,132,577,159"/>
-<area shape="rect" id="node12" href="$group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4" title="Get the HMSL of the frame origin (int)" alt="" coords="429,183,591,209"/>
-<area shape="rect" id="node13" href="$group__state__position.html#gac491aeb964dcf66df867c43d61241f40" title="Get the LLA position of the frame origin (int)" alt="" coords="437,233,583,260"/>
-<area shape="rect" id="node14" href="$group__state__position.html#gaaf56e2d484fe8e197a63c30841db7186" title="Get the coordinate NED frame origin (int)" alt="" coords="433,284,587,311"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="459,335,561,361"/>
-<area shape="rect" id="node18" href="$nav_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters." alt="" coords="447,385,573,412"/>
-<area shape="rect" id="node19" href="$nav_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters." alt="" coords="447,436,573,463"/>
-<area shape="rect" id="node6" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="673,31,777,57"/>
-<area shape="rect" id="node9" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="649,81,801,108"/>
-<area shape="rect" id="node7" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="849,5,957,32"/>
-<area shape="rect" id="node8" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="851,56,956,83"/>
-<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title=" " alt="" coords="654,132,797,159"/>
-<area shape="rect" id="node16" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="649,305,801,332"/>
-<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="655,357,795,398"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,195,167,235"/>
+<area shape="rect" id="Node000002" href="$mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode." alt="" coords="234,104,351,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,193,252,133,254,138,130,198"/>
+<area shape="rect" id="Node000004" href="$mission__rotorcraft__nav_8c.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Get the ENU component of LLA mission point This function is firmware specific." alt="" coords="215,227,371,252"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,222,201,226,201,231,166,227"/>
+<area shape="rect" id="Node000003" href="$mission__common_8c.html#a7177b7dbe44718e5e2cd65e33c45257a" title="Get mission element by index." alt="" coords="419,29,601,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="321,101,418,63,443,56,444,61,420,69,323,106"/>
+<area shape="rect" id="Node000005" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="440,79,580,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="301,225,347,171,380,140,417,113,430,107,433,111,420,118,383,144,350,174,305,228"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title=" " alt="" coords="443,128,577,153"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="310,224,357,194,418,162,437,155,439,160,420,167,360,198,313,229"/>
+<area shape="rect" id="Node000012" href="$group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4" title="Get the HMSL of the frame origin (int)" alt="" coords="429,177,591,203"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="349,224,439,203,441,208,350,229"/>
+<area shape="rect" id="Node000013" href="$group__state__position.html#gac491aeb964dcf66df867c43d61241f40" title="Get the LLA position of the frame origin (int)" alt="" coords="437,227,583,252"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="371,237,423,237,423,242,371,242"/>
+<area shape="rect" id="Node000017" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="433,276,587,301"/>
+<area shape="poly" id="edge16_Node000004_Node000017" title=" " alt="" coords="350,249,441,270,439,276,349,255"/>
+<area shape="rect" id="Node000018" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="459,325,561,351"/>
+<area shape="poly" id="edge17_Node000004_Node000018" title=" " alt="" coords="313,250,360,281,420,312,446,321,444,326,418,316,357,285,310,254"/>
+<area shape="rect" id="Node000020" href="$nav_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters." alt="" coords="447,375,573,400"/>
+<area shape="poly" id="edge20_Node000004_Node000020" title=" " alt="" coords="305,250,350,304,383,335,420,361,435,368,433,373,417,366,380,339,347,308,301,254"/>
+<area shape="rect" id="Node000021" href="$nav_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters." alt="" coords="447,424,573,449"/>
+<area shape="poly" id="edge21_Node000004_Node000021" title=" " alt="" coords="302,251,318,283,343,327,378,372,420,410,436,419,433,424,417,415,374,376,339,330,313,286,297,253"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="673,29,777,55"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="565,76,659,54,660,60,567,81"/>
+<area shape="rect" id="Node000009" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="649,79,801,104"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="580,89,635,89,635,94,580,94"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="899,5,1007,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="777,34,885,22,886,28,778,39"/>
+<area shape="rect" id="Node000008" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="900,55,1005,80"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="778,45,887,57,886,63,777,50"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title=" " alt="" coords="654,128,797,153"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="577,138,640,138,640,143,577,143"/>
+<area shape="rect" id="Node000014" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="674,227,777,252"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="584,237,660,237,660,242,584,242"/>
+<area shape="rect" id="Node000015" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="849,223,1056,248"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="777,236,836,235,836,240,777,241"/>
+<area shape="rect" id="Node000016" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="883,273,1023,313"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="778,249,870,271,869,276,776,254"/>
+<area shape="poly" id="edge19_Node000018_Node000016" title=" " alt="" coords="561,328,649,317,869,296,869,302,650,322,562,333"/>
+<area shape="rect" id="Node000019" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="649,331,801,356"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="562,337,636,338,635,344,562,342"/>
 </map>

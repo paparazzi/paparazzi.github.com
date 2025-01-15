@@ -1,11 +1,23 @@
 <map id="vl53l5cx_enable_internal_cp" name="vl53l5cx_enable_internal_cp">
-<area shape="rect" id="node1" title="This function is used to disable the VCSEL charge pump This optimizes the power consumption of the de..." alt="" coords="5,93,212,120"/>
-<area shape="rect" id="node2" href="$vl53l5cx__api_8c.html#a67bf61eebc7a265834d3af512b7c8f59" title="This function can be used to replace &#39;extra data&#39; in DCI." alt="" coords="260,93,455,120"/>
-<area shape="rect" id="node3" href="$vl53l5cx__api_8c.html#a1988c495f38198f8e1c8f48d5a60acad" title="This function can be used to read &#39;extra data&#39; from DCI." alt="" coords="505,68,679,95"/>
-<area shape="rect" id="node9" href="$vl53l5cx__api_8c.html#ad1413cd54d0dfacea7f9dbccc5db36df" title="This function can be used to write &#39;extra data&#39; to DCI." alt="" coords="503,119,681,145"/>
-<area shape="rect" id="node4" href="$vl53l5cx__api_8c.html#a8f29abecfd7c5a543ea99507182b59a9" title="Copyright (c) 2021 STMicroelectronics." alt="" coords="729,53,869,94"/>
-<area shape="rect" id="node5" href="$vl53l5cx__platform_8c.html#ad3c2662d6d7b097a567ef29e1f3d5a47" title="Mandatory function used to read multiples bytes." alt="" coords="917,5,989,32"/>
-<area shape="rect" id="node7" href="$vl53l5cx__platform_8c.html#ac82d5f4ed9bb61a17cdca59b80393326" title="Optional function, only used to perform an hardware reset of the sensor." alt="" coords="751,119,847,145"/>
-<area shape="rect" id="node8" href="$vl53l5cx__platform_8c.html#ab6e53d9399892b9aeda7d6eef69c0121" title="Mandatory function used to write multiples bytes." alt="" coords="763,169,836,196"/>
-<area shape="rect" id="node6" href="$vl53l5cx__platform_8c.html#a83eb55875e816a5f50f7d9accb4ddf67" title="Mandatory function, used to wait during an amount of time." alt="" coords="918,60,989,87"/>
+<area shape="rect" id="Node000001" title="This function is used to disable the VCSEL charge pump This optimizes the power consumption of the de..." alt="" coords="5,92,212,117"/>
+<area shape="rect" id="Node000002" href="$vl53l5cx__api_8c.html#a67bf61eebc7a265834d3af512b7c8f59" title="This function can be used to replace &#39;extra data&#39; in DCI." alt="" coords="260,92,455,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,102,246,102,246,107,212,107"/>
+<area shape="rect" id="Node000003" href="$vl53l5cx__api_8c.html#a1988c495f38198f8e1c8f48d5a60acad" title="This function can be used to read &#39;extra data&#39; from DCI." alt="" coords="505,67,679,92"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="454,92,491,88,491,93,455,97"/>
+<area shape="rect" id="Node000009" href="$vl53l5cx__api_8c.html#ad1413cd54d0dfacea7f9dbccc5db36df" title="This function can be used to write &#39;extra data&#39; to DCI." alt="" coords="503,116,681,141"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="455,112,489,116,489,121,454,117"/>
+<area shape="rect" id="Node000004" href="$vl53l5cx__api_8c.html#a8f29abecfd7c5a543ea99507182b59a9" title="Copyright (c) 2021 STMicroelectronics." alt="" coords="729,51,869,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="679,73,716,72,716,77,680,79"/>
+<area shape="rect" id="Node000005" href="$vl53l5cx__platform_8c.html#ad3c2662d6d7b097a567ef29e1f3d5a47" title="Mandatory function used to read multiples bytes." alt="" coords="917,5,989,31"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="629,64,729,37,821,24,903,17,903,23,822,29,730,42,631,69"/>
+<area shape="rect" id="Node000007" href="$vl53l5cx__platform_8c.html#ac82d5f4ed9bb61a17cdca59b80393326" title="Optional function, only used to perform an hardware reset of the sensor." alt="" coords="751,116,847,141"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="647,89,739,112,737,117,645,95"/>
+<area shape="rect" id="Node000008" href="$vl53l5cx__platform_8c.html#ab6e53d9399892b9aeda7d6eef69c0121" title="Mandatory function used to write multiples bytes." alt="" coords="763,165,836,191"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="654,90,683,102,698,115,708,127,717,140,731,152,751,162,748,167,728,156,713,143,703,131,694,119,680,107,652,94"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="857,49,903,32,905,37,858,54"/>
+<area shape="rect" id="Node000006" href="$vl53l5cx__platform_8c.html#a83eb55875e816a5f50f7d9accb4ddf67" title="Mandatory function, used to wait during an amount of time." alt="" coords="918,59,989,84"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="870,69,904,69,904,74,870,74"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="640,113,681,102,715,92,717,97,682,107,641,119"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="682,126,737,126,737,131,682,131"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="647,139,750,164,748,169,645,144"/>
 </map>

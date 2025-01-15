@@ -1,13 +1,26 @@
 <map id="multi_ranger_read" name="multi_ranger_read">
-<area shape="rect" id="node1" title="Read data from a device." alt="" coords="5,111,147,138"/>
-<area shape="rect" id="node2" href="$vl53l1x__nonblocking_8c.html#ae15f0a1990480af4669e18523d1b16b0" title="Implement non&#45;blocking read sequence The data reading actually starts when the read_state is set to V..." alt="" coords="195,104,361,145"/>
-<area shape="rect" id="node3" href="$vl53l1x__nonblocking_8c.html#a8e8516a4ceb5cc17f33c323bf5f839b7" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="409,5,576,47"/>
-<area shape="rect" id="node7" href="$vl53l1x__nonblocking_8c.html#a99be979805273ff0a6ab8283a1df0b2a" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="409,201,576,243"/>
-<area shape="rect" id="node10" href="$vl53l1x__nonblocking_8c.html#a5a86352c48d28857538713dba0f210c5" title="This function returns the distance measured by the sensor in mm." alt="" coords="409,71,576,112"/>
-<area shape="rect" id="node11" href="$vl53l1x__nonblocking_8c.html#a6cd73e6df6116cd6707a25177786f82a" title="This function returns the range status to discard wrong measurments." alt="" coords="409,136,576,177"/>
-<area shape="rect" id="node4" href="$vl53l1x__nonblocking_8c.html#a40075e3c54c6a8d9ce3b1f2fb2cef1c3" title=" " alt="" coords="624,88,783,129"/>
-<area shape="rect" id="node5" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="831,115,947,142"/>
-<area shape="rect" id="node6" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="995,145,1088,171"/>
-<area shape="rect" id="node8" href="$vl53l1x__nonblocking_8c.html#acccd356803aea344aafa214bba106ac6" title=" " alt="" coords="624,169,783,211"/>
-<area shape="rect" id="node9" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="837,170,940,197"/>
+<area shape="rect" id="Node000001" title="Read data from a device." alt="" coords="5,109,147,134"/>
+<area shape="rect" id="Node000002" href="$vl53l1x__nonblocking_8c.html#ae15f0a1990480af4669e18523d1b16b0" title="Implement non&#45;blocking read sequence The data reading actually starts when the read_state is set to V..." alt="" coords="195,101,361,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,119,181,119,181,124,147,124"/>
+<area shape="rect" id="Node000003" href="$vl53l1x__nonblocking_8c.html#a8e8516a4ceb5cc17f33c323bf5f839b7" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="409,5,576,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,99,408,55,424,48,426,53,410,60,319,104"/>
+<area shape="rect" id="Node000007" href="$vl53l1x__nonblocking_8c.html#a99be979805273ff0a6ab8283a1df0b2a" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="409,197,576,237"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="319,139,410,183,426,190,424,195,408,188,317,144"/>
+<area shape="rect" id="Node000010" href="$vl53l1x__nonblocking_8c.html#a5a86352c48d28857538713dba0f210c5" title="This function returns the distance measured by the sensor in mm." alt="" coords="409,69,576,109"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="362,106,395,101,396,106,362,112"/>
+<area shape="rect" id="Node000011" href="$vl53l1x__nonblocking_8c.html#a6cd73e6df6116cd6707a25177786f82a" title="This function returns the range status to discard wrong measurments." alt="" coords="409,133,576,173"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="362,131,396,136,395,141,362,136"/>
+<area shape="rect" id="Node000004" href="$vl53l1x__nonblocking_8c.html#a40075e3c54c6a8d9ce3b1f2fb2cef1c3" title=" " alt="" coords="624,85,783,125"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="547,43,638,78,636,83,546,48"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="831,113,947,138"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="783,111,817,115,817,120,783,117"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="995,142,1088,167"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="947,134,981,141,980,146,946,139"/>
+<area shape="rect" id="Node000008" href="$vl53l1x__nonblocking_8c.html#acccd356803aea344aafa214bba106ac6" title=" " alt="" coords="624,165,783,205"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="576,202,610,197,611,202,577,207"/>
+<area shape="rect" id="Node000009" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="837,166,940,191"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="783,180,823,178,823,184,783,185"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="940,168,981,161,982,167,941,173"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="576,93,610,96,610,101,576,98"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="576,132,610,124,611,129,577,137"/>
 </map>

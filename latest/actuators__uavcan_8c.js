@@ -35,7 +35,7 @@ var actuators__uavcan_8c =
     [ "actuators_uavcan_device_temperature_cb", "actuators__uavcan_8c.html#a1de002af99f582a86ec39b4660021d33", null ],
     [ "actuators_uavcan_esc_status_cb", "actuators__uavcan_8c.html#a79343cdcbcc91d03b96dfc795647defa", null ],
     [ "actuators_uavcan_init", "actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda", null ],
-    [ "actuators_uavcan_next_telem", "actuators__uavcan_8c.html#a6368e277fcc4c5b563051fe1961c6832", null ],
+    [ "actuators_uavcan_next_telem", "actuators__uavcan_8c.html#a2f1b725be20ba2d7f7997d6e1aa6c90d", null ],
     [ "actuators_uavcan_send_esc", "actuators__uavcan_8c.html#a15a349fbc68fcd9525ddf5b0188a8689", null ],
     [ "actuator_status_ev", "actuators__uavcan_8c.html#a27b8916cad05a75ea57af9c6378865f0", null ],
     [ "actuators_uavcan_initialized", "actuators__uavcan_8c.html#a9b8261ba771fe293429b871094fc2f3d", null ],

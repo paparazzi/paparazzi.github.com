@@ -1,17 +1,37 @@
 <map id="sw/airborne/firmwares/rotorcraft/stabilization/stabilization_attitude_ref_euler_float.c" name="sw/airborne/firmwares/rotorcraft/stabilization/stabilization_attitude_ref_euler_float.c">
-<area shape="rect" id="node1" title="Rotorcraft attitude reference generation in euler float version." alt="" coords="201,5,372,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,139,165,165"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__ref__euler__float_8h.html" title=" " alt="" coords="190,124,383,180"/>
-<area shape="rect" id="node15" href="$stabilization__attitude__ref__defaults_8h.html" title="Default values for attitude reference saturation." alt="" coords="407,124,598,180"/>
-<area shape="rect" id="node4" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="132,317,324,344"/>
-<area shape="rect" id="node11" href="$attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation." alt="" coords="266,228,425,269"/>
-<area shape="rect" id="node5" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="331,392,450,419"/>
-<area shape="rect" id="node6" title=" " alt="" coords="67,467,130,493"/>
-<area shape="rect" id="node9" title=" " alt="" coords="227,467,295,493"/>
-<area shape="rect" id="node10" title=" " alt="" coords="149,392,307,419"/>
-<area shape="rect" id="node7" title=" " alt="" coords="355,467,426,493"/>
-<area shape="rect" id="node8" title=" " alt="" coords="523,467,578,493"/>
-<area shape="rect" id="node12" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="461,317,641,344"/>
-<area shape="rect" id="node13" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="474,392,627,419"/>
-<area shape="rect" id="node14" title=" " alt="" coords="703,392,774,419"/>
+<area shape="rect" id="Node000001" title="Rotorcraft attitude reference generation in euler float version." alt="" coords="201,5,372,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,137,165,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,77,120,133,118,128,223,72"/>
+<area shape="rect" id="Node000003" href="$stabilization__attitude__ref__euler__float_8h.html" title=" " alt="" coords="190,123,383,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,75,289,109,284,109,284,75"/>
+<area shape="rect" id="Node000015" href="$stabilization__attitude__ref__defaults_8h.html" title="Default values for attitude reference saturation." alt="" coords="407,123,598,177"/>
+<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="355,72,439,114,437,119,353,77"/>
+<area shape="rect" id="Node000004" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="132,313,324,339"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="277,178,257,226,236,300,231,299,252,224,272,176"/>
+<area shape="rect" id="Node000011" href="$attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation." alt="" coords="266,225,425,265"/>
+<area shape="poly" id="edge12_Node000003_Node000011" title=" " alt="" coords="306,176,328,212,324,215,301,179"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="331,387,450,412"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="255,336,353,379,350,383,253,341"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="67,460,130,485"/>
+<area shape="poly" id="edge11_Node000004_Node000006" title=" " alt="" coords="199,341,163,360,130,388,114,417,105,447,100,445,109,415,126,385,160,356,196,336"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="227,460,295,485"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="199,341,173,354,150,371,136,390,136,400,140,411,154,428,173,442,215,459,213,464,170,446,151,432,135,413,130,401,131,389,146,367,170,350,197,336"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="149,387,307,412"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="231,339,231,373,225,373,225,339"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="344,415,144,463,143,458,343,409"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="355,460,426,485"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="393,412,393,446,388,446,388,412"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="523,460,578,485"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="417,410,513,452,511,457,415,414"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="371,414,296,455,294,451,369,410"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="318,268,258,308,255,304,315,263"/>
+<area shape="rect" id="Node000012" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="461,313,641,339"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="395,263,508,306,507,311,394,268"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="526,341,430,383,428,379,524,336"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="583,336,615,355,631,369,642,385,646,397,646,408,634,428,615,444,592,457,589,453,612,440,630,424,640,407,641,398,638,388,627,373,612,360,580,341"/>
+<area shape="rect" id="Node000013" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="474,387,627,412"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="553,339,553,373,548,373,548,339"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="703,387,774,412"/>
+<area shape="poly" id="edge19_Node000012_Node000014" title=" " alt="" coords="582,336,696,379,694,384,580,341"/>
+<area shape="poly" id="edge18_Node000013_Node000008" title=" " alt="" coords="553,412,553,446,548,446,548,412"/>
 </map>

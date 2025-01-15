@@ -1,15 +1,25 @@
 <map id="set_state_from_ins" name="set_state_from_ins">
-<area shape="rect" id="node1" title="update state interface" alt="" coords="5,249,152,276"/>
-<area shape="rect" id="node2" href="$ins__mekf__wind_8cpp.html#a54b93af569c5a2f17f80cd2087ad45eb" title=" " alt="" coords="203,5,423,32"/>
-<area shape="rect" id="node3" href="$ins__mekf__wind_8cpp.html#a7f99f03cf34c8949e0cb048ab0e1c640" title=" " alt="" coords="219,57,406,98"/>
-<area shape="rect" id="node4" href="$ins__mekf__wind_8cpp.html#a64ab6d7f656b1e5275a77ccc6330bb93" title="Getter/Setter functions." alt="" coords="208,123,417,149"/>
-<area shape="rect" id="node6" href="$ins__mekf__wind_8cpp.html#aa6187c0d117fa7c8c0d791af3ffd5e86" title=" " alt="" coords="221,173,405,200"/>
-<area shape="rect" id="node7" href="$ins__mekf__wind_8cpp.html#af7842fba65bc5bafcb9b37c6693e2469" title=" " alt="" coords="200,224,425,251"/>
-<area shape="rect" id="node8" href="$group__state__acceleration.html#gaa16383e46412fa8762e7434676390c99" title="Set acceleration in NED coordinates (float)." alt="" coords="238,275,387,301"/>
-<area shape="rect" id="node9" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="233,325,392,352"/>
-<area shape="rect" id="node10" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="217,376,409,403"/>
-<area shape="rect" id="node12" href="$group__state__position.html#ga1ef838820e72ae2d57728b566d420902" title="Set position from local NED coordinates (float)." alt="" coords="229,427,396,453"/>
-<area shape="rect" id="node13" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="235,477,390,504"/>
-<area shape="rect" id="node5" href="$ins__mekf__wind_8cpp.html#a848fccd24d6e38f96365250dace72258" title="build skew symetric matrix from vector m = [ 0, &#45;v(2), v(1) ] [ v(2), 0, &#45;v(0) ] [ &#45;v(1),..." alt="" coords="507,123,597,149"/>
-<area shape="rect" id="node11" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="473,376,631,403"/>
+<area shape="rect" id="Node000001" title="update state interface" alt="" coords="5,244,152,269"/>
+<area shape="rect" id="Node000002" href="$ins__mekf__wind_8cpp.html#a54b93af569c5a2f17f80cd2087ad45eb" title=" " alt="" coords="203,5,423,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,243,93,203,116,148,151,90,173,64,198,41,209,34,212,39,202,45,177,68,155,93,121,151,98,205,86,244"/>
+<area shape="rect" id="Node000003" href="$ins__mekf__wind_8cpp.html#a7f99f03cf34c8949e0cb048ab0e1c640" title=" " alt="" coords="219,55,406,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="85,242,126,177,159,138,198,105,209,99,211,104,202,110,163,142,131,180,89,245"/>
+<area shape="rect" id="Node000004" href="$ins__mekf__wind_8cpp.html#a64ab6d7f656b1e5275a77ccc6330bb93" title="Getter/Setter functions." alt="" coords="208,120,417,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="89,242,134,199,165,175,199,154,216,147,218,152,201,159,168,179,138,203,93,246"/>
+<area shape="rect" id="Node000005" href="$ins__mekf__wind_8cpp.html#aa6187c0d117fa7c8c0d791af3ffd5e86" title=" " alt="" coords="221,169,405,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="105,242,149,222,199,203,229,195,230,200,201,209,151,227,107,246"/>
+<area shape="rect" id="Node000006" href="$ins__mekf__wind_8cpp.html#af7842fba65bc5bafcb9b37c6693e2469" title=" " alt="" coords="200,219,425,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="152,246,186,242,186,248,153,251"/>
+<area shape="rect" id="Node000007" href="$group__state__acceleration.html#gaa16383e46412fa8762e7434676390c99" title="Set acceleration in NED coordinates (float)." alt="" coords="238,268,387,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="153,262,224,269,224,274,152,267"/>
+<area shape="rect" id="Node000008" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="233,317,392,343"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="109,267,201,302,235,311,233,317,199,307,107,272"/>
+<area shape="rect" id="Node000009" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="217,367,409,392"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="94,268,138,309,169,332,201,352,222,360,220,365,199,356,166,337,135,314,90,272"/>
+<area shape="rect" id="Node000011" href="$group__state__position.html#ga1ef838820e72ae2d57728b566d420902" title="Set position from local NED coordinates (float)." alt="" coords="229,416,396,441"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="89,268,130,333,163,370,201,401,218,409,215,414,199,406,159,374,126,336,84,271"/>
+<area shape="rect" id="Node000012" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="235,465,390,491"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="86,269,100,305,123,355,157,407,178,430,202,450,223,462,221,467,198,455,174,434,153,410,119,358,95,307,81,271"/>
+<area shape="rect" id="Node000010" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="473,367,631,392"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="409,377,459,377,459,382,409,382"/>
 </map>

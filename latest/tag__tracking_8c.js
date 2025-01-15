@@ -42,7 +42,7 @@ var tag__tracking_8c =
     [ "TAG_UNUSED_ID", "tag__tracking_8c.html#ac4c57db43412d9f966729aaf862201b6", null ],
     [ "tag_track_cb", "tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c", null ],
     [ "tag_tracking_compute_speed", "tag__tracking_8c.html#aee8b9e7c75b96e12da36873bb5537078", null ],
-    [ "tag_tracking_get", "tag__tracking_8c.html#a4112efb3e59711c1958fb0d8f1049e0b", null ],
+    [ "tag_tracking_get", "tag__tracking_8c.html#a1de8ca33f9819c68244186f98b1b71e7", null ],
     [ "tag_tracking_get_heading", "tag__tracking_8c.html#af150cf7b0bc994c05d0cc6853759ab52", null ],
     [ "tag_tracking_get_motion_type", "tag__tracking_8c.html#a50034b1e8acedcfbd2a312196f0249e4", null ],
     [ "tag_tracking_get_status", "tag__tracking_8c.html#ada5b7b5dad70e72f56b277c99806fdc6", null ],

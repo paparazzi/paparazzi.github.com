@@ -11,7 +11,7 @@ var vl53l1__platform_8h =
       [ "nonblocking", "vl53l1__platform_8h.html#a31b33a64de721f9096ef76bb582f5aa7", null ],
       [ "read_status", "vl53l1__platform_8h.html#a391272193ae9fb2bf1bccddfb6d817e5", null ]
     ] ],
-    [ "NonBlocking", "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking", [
+    [ "VL53L1_Dev_t::NonBlocking", "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking", [
       [ "i2c_state", "vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e", null ],
       [ "IntPol", "vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f", null ],
       [ "state", "vl53l1__platform_8h.html#a1d5cd600ac54573791bd7df3485e60f5", null ]

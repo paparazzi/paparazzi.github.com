@@ -1,16 +1,29 @@
 <map id="actuators_ardrone_motor_status" name="actuators_ardrone_motor_status">
-<area shape="rect" id="node1" title=" " alt="" coords="5,188,192,229"/>
-<area shape="rect" id="node2" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="240,69,424,95"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="241,119,423,146"/>
-<area shape="rect" id="node11" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="287,170,377,197"/>
-<area shape="rect" id="node12" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="293,221,371,247"/>
-<area shape="rect" id="node13" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="293,271,371,298"/>
-<area shape="rect" id="node14" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="261,322,403,349"/>
-<area shape="rect" id="node4" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="472,78,668,105"/>
-<area shape="rect" id="node7" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="509,162,631,189"/>
-<area shape="rect" id="node5" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="716,5,869,47"/>
-<area shape="rect" id="node6" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="717,71,868,112"/>
-<area shape="rect" id="node8" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="720,137,865,163"/>
-<area shape="rect" id="node9" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="735,187,850,214"/>
-<area shape="rect" id="node10" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="725,238,860,265"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,184,192,224"/>
+<area shape="rect" id="Node000002" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="240,67,424,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,182,173,141,239,102,256,95,258,99,241,106,176,146,124,186"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="241,117,423,142"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,181,239,151,266,143,267,148,241,156,153,186"/>
+<area shape="rect" id="Node000011" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="287,166,377,191"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="192,191,273,182,274,188,193,196"/>
+<area shape="rect" id="Node000012" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="293,215,371,241"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="193,211,279,220,279,225,192,216"/>
+<area shape="rect" id="Node000013" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="293,265,371,290"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="155,222,241,251,281,262,279,267,239,256,153,227"/>
+<area shape="rect" id="Node000014" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="261,314,403,339"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="125,222,176,262,241,300,259,307,257,312,239,305,173,266,122,226"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="472,77,668,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,114,480,102,481,107,409,119"/>
+<area shape="rect" id="Node000007" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="509,158,631,183"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="406,139,496,155,495,160,405,145"/>
+<area shape="rect" id="Node000005" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="716,5,869,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="615,74,709,47,710,52,616,79"/>
+<area shape="rect" id="Node000006" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="717,69,868,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="668,87,704,87,704,92,668,92"/>
+<area shape="rect" id="Node000008" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="720,134,865,159"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="631,162,706,153,707,159,631,167"/>
+<area shape="rect" id="Node000009" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="735,183,850,209"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="631,175,722,185,721,191,631,180"/>
+<area shape="rect" id="Node000010" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="725,233,860,258"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="608,181,717,219,739,226,737,231,715,224,606,186"/>
 </map>

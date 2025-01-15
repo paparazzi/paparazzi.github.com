@@ -1,6 +1,6 @@
 var simple__quad__sim_8py =
 [
-    [ "BulletFDM", "classsimple__quad__sim_1_1BulletFDM.html", "classsimple__quad__sim_1_1BulletFDM" ],
+    [ "simple_quad_sim.BulletFDM", "classsimple__quad__sim_1_1BulletFDM.html", "classsimple__quad__sim_1_1BulletFDM" ],
     [ "commands", "simple__quad__sim_8py.html#aa87ad89d7abcfae11b362f916e5653c7", null ],
     [ "debug", "simple__quad__sim_8py.html#af540984659576ece224206d5468a2c6f", null ],
     [ "m", "simple__quad__sim_8py.html#aa74291aa67f0cfeebac5b8133966d9bf", null ],

@@ -1,22 +1,46 @@
 <map id="navdata_init" name="navdata_init">
-<area shape="rect" id="node1" title="Initialize the navdata board." alt="" coords="5,233,108,260"/>
-<area shape="rect" id="node2" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="219,5,296,32"/>
-<area shape="rect" id="node3" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="186,56,329,83"/>
-<area shape="rect" id="node4" href="$imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="170,107,345,133"/>
-<area shape="rect" id="node10" href="$imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="172,208,343,235"/>
-<area shape="rect" id="node12" href="$imu_8c.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="172,157,343,184"/>
-<area shape="rect" id="node14" href="$navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board." alt="" coords="183,259,332,285"/>
-<area shape="rect" id="node16" href="$navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command." alt="" coords="413,335,561,361"/>
-<area shape="rect" id="node18" href="$navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING." alt="" coords="202,360,313,387"/>
-<area shape="rect" id="node19" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="156,411,359,437"/>
-<area shape="rect" id="node20" href="$navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d" title=" " alt="" coords="201,461,314,488"/>
-<area shape="rect" id="node5" href="$imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="429,31,545,57"/>
-<area shape="rect" id="node6" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="419,81,555,108"/>
-<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="407,132,568,159"/>
-<area shape="rect" id="node8" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="616,132,783,159"/>
-<area shape="rect" id="node9" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="831,132,980,159"/>
-<area shape="rect" id="node11" href="$imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="432,233,543,260"/>
-<area shape="rect" id="node13" href="$imu_8c.html#aeb392db1b0ad7340d0d32a78acea9e1e" title="Find or create the mag in the imu structure." alt="" coords="432,183,543,209"/>
-<area shape="rect" id="node15" href="$navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted." alt="" coords="448,284,527,311"/>
-<area shape="rect" id="node17" href="$navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="658,335,741,361"/>
+<area shape="rect" id="Node000001" title="Initialize the navdata board." alt="" coords="5,228,108,253"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="219,5,296,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,227,67,190,85,139,114,86,132,61,154,40,178,26,204,19,206,24,180,31,158,44,136,65,118,88,90,141,72,191,63,228"/>
+<area shape="rect" id="Node000003" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="186,55,329,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,227,72,198,92,161,119,122,154,89,172,79,174,84,158,93,123,125,97,164,77,200,65,229"/>
+<area shape="rect" id="Node000004" href="$imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="170,104,345,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="65,226,100,183,126,159,155,138,168,132,171,136,157,143,129,163,104,186,69,229"/>
+<area shape="rect" id="Node000010" href="$imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="172,203,343,228"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="108,232,158,225,158,231,109,237"/>
+<area shape="rect" id="Node000012" href="$imu_8c.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="172,153,343,179"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="78,226,113,206,155,188,179,180,180,185,157,192,116,211,80,230"/>
+<area shape="rect" id="Node000014" href="$navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board." alt="" coords="183,252,332,277"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="109,244,169,251,169,257,108,249"/>
+<area shape="rect" id="Node000016" href="$navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command." alt="" coords="413,327,561,352"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="81,251,116,270,157,286,219,303,283,315,400,331,399,336,282,321,218,308,155,291,113,274,78,256"/>
+<area shape="rect" id="Node000018" href="$navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING." alt="" coords="202,353,313,379"/>
+<area shape="poly" id="edge22_Node000001_Node000018" title=" " alt="" coords="70,252,106,291,131,313,157,332,190,347,188,352,155,336,127,317,102,295,66,255"/>
+<area shape="rect" id="Node000019" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="156,403,359,428"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="65,253,77,281,96,318,123,357,158,389,166,395,163,399,154,393,119,360,92,321,72,284,60,255"/>
+<area shape="rect" id="Node000020" href="$navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d" title=" " alt="" coords="201,452,314,477"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="63,253,72,290,90,341,118,394,136,418,158,438,188,454,186,459,154,443,132,421,113,397,85,343,67,292,58,254"/>
+<area shape="rect" id="Node000005" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="429,31,545,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="317,101,358,89,406,65,425,58,427,63,408,70,360,94,319,106"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="419,80,555,105"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="345,105,406,98,406,104,346,110"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="407,129,568,155"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="346,124,393,129,392,134,345,129"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="616,129,783,155"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="568,139,602,139,602,145,568,145"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="831,129,980,155"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="783,139,817,139,817,145,783,145"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="333,200,357,188,373,171,380,153,388,133,405,115,413,109,416,114,408,119,393,136,385,155,377,174,360,192,336,205"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="317,200,358,188,406,164,425,156,427,161,408,168,360,192,319,205"/>
+<area shape="rect" id="Node000011" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="432,228,543,253"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="343,222,419,230,418,236,342,227"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="317,151,358,138,406,114,425,107,427,112,408,119,360,143,319,156"/>
+<area shape="poly" id="edge16_Node000012_Node000007" title=" " alt="" coords="342,154,392,149,393,154,343,160"/>
+<area shape="rect" id="Node000013" href="$imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="432,179,543,204"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="343,173,419,181,418,186,342,178"/>
+<area shape="rect" id="Node000015" href="$navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted." alt="" coords="448,277,527,303"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="333,270,434,282,434,287,332,276"/>
+<area shape="poly" id="edge19_Node000014_Node000016" title=" " alt="" coords="301,275,360,294,408,313,429,320,428,325,406,318,358,299,299,280"/>
+<area shape="rect" id="Node000017" href="$navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="658,327,741,352"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="562,337,644,337,644,342,562,342"/>
 </map>

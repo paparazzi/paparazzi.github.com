@@ -1,12 +1,21 @@
 <map id="bmp280_event" name="bmp280_event">
-<area shape="rect" id="node1" title="Should be called in the event thread." alt="" coords="5,132,124,159"/>
-<area shape="rect" id="node2" href="$bmp280_8c.html#a037f1f82100082904d46f86a8e81b621" title="Configure the BMP280 device register by register." alt="" coords="207,31,328,57"/>
-<area shape="rect" id="node7" href="$bmp280_8c.html#acfe9a1349665a3ac169462411e5031ff" title="This internal API is used to compensate the raw pressure data and return the compensated pressure dat..." alt="" coords="185,81,350,108"/>
-<area shape="rect" id="node8" href="$bmp280_8c.html#afa45ef066093c29d007425af7d781ed7" title="This internal API is used to compensate the raw temperature data and return the compensated temperatu..." alt="" coords="172,132,363,159"/>
-<area shape="rect" id="node9" href="$bmp280_8c.html#af928f21fc274a787298edd51cd731e8c" title="This internal API is used to parse the calibration data, compensates it and store it in device struct..." alt="" coords="201,183,333,209"/>
-<area shape="rect" id="node10" href="$bmp280_8c.html#af25e8939b9914baace7435282ac801f8" title="local function to extract raw data from i2c buffer and compute compensation with selected precision" alt="" coords="195,233,339,260"/>
-<area shape="rect" id="node3" href="$bmp280_8c.html#adb1b408bea3a264c6616ba2fd17935a9" title="Write a register with a value." alt="" coords="411,31,583,57"/>
-<area shape="rect" id="node4" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="631,5,733,32"/>
-<area shape="rect" id="node6" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="635,56,729,83"/>
-<area shape="rect" id="node5" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="781,5,875,32"/>
+<area shape="rect" id="Node000001" title="Should be called in the event thread." alt="" coords="5,129,124,155"/>
+<area shape="rect" id="Node000002" href="$bmp280_8c.html#a037f1f82100082904d46f86a8e81b621" title="Configure the BMP280 device register by register." alt="" coords="207,31,328,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,127,119,97,171,66,192,58,194,63,173,71,122,101,82,131"/>
+<area shape="rect" id="Node000007" href="$bmp280_8c.html#acfe9a1349665a3ac169462411e5031ff" title="This internal API is used to compensate the raw pressure data and return the compensated pressure dat..." alt="" coords="185,80,350,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="117,127,201,106,202,111,118,132"/>
+<area shape="rect" id="Node000008" href="$bmp280_8c.html#afa45ef066093c29d007425af7d781ed7" title="This internal API is used to compensate the raw temperature data and return the compensated temperatu..." alt="" coords="172,129,363,155"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="124,139,158,139,158,145,124,145"/>
+<area shape="rect" id="Node000009" href="$bmp280_8c.html#af928f21fc274a787298edd51cd731e8c" title="This internal API is used to parse the calibration data, compensates it and store it in device struct..." alt="" coords="201,179,333,204"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="118,152,202,173,201,178,117,157"/>
+<area shape="rect" id="Node000010" href="$bmp280_8c.html#af25e8939b9914baace7435282ac801f8" title="local function to extract raw data from i2c buffer and compute compensation with selected precision" alt="" coords="195,228,339,253"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="82,153,122,184,173,214,191,221,189,226,171,219,119,188,79,157"/>
+<area shape="rect" id="Node000003" href="$bmp280_8c.html#adb1b408bea3a264c6616ba2fd17935a9" title="Write a register with a value." alt="" coords="411,31,583,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,41,397,41,397,46,328,46"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="631,5,733,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="583,29,616,24,617,29,583,34"/>
+<area shape="rect" id="Node000006" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="635,55,729,80"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="583,52,622,57,621,62,583,57"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="781,5,875,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="733,15,768,15,768,21,733,21"/>
 </map>

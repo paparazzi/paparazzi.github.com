@@ -1,29 +1,58 @@
 <map id="dshotSendFrame" name="dshotSendFrame">
-<area shape="rect" id="node1" title="send throttle order" alt="" coords="5,208,136,235"/>
-<area shape="rect" id="node2" href="$esc__dshot_8c.html#a00ddf205c26dcf52cb32d55a888ad4b4" title=" " alt="" coords="184,56,347,83"/>
-<area shape="rect" id="node5" href="$hal__stm32__dma_8h.html#a9e853b87da409e18f88e33c6d4def0f9" title=" " alt="" coords="211,208,319,235"/>
-<area shape="rect" id="node12" href="$dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="189,335,342,361"/>
-<area shape="rect" id="node23" href="$esc__dshot_8c.html#aa2ccafb2d095c2922d26b9c3138ae3a6" title="stop the DSHOT driver and free the related resources : pwm driver and dma driver." alt="" coords="222,157,309,184"/>
-<area shape="rect" id="node27" href="$esc__dshot_8c.html#abb7066e4bd3b68322d72d78d8c142c41" title=" " alt="" coords="192,385,339,412"/>
-<area shape="rect" id="node3" href="$esc__dshot_8c.html#a07f476e006400858ea955505b6db7557" title=" " alt="" coords="435,56,553,83"/>
-<area shape="rect" id="node4" href="$esc__dshot_8c.html#a8211d081fff83f1ea24418e8f4f8b7c4" title=" " alt="" coords="459,5,529,32"/>
-<area shape="rect" id="node6" href="$hal__stm32__dma_8h.html#a3de6f4d870466df970d6c01201b6fdd7" title="Performs a DMA transaction." alt="" coords="413,208,575,235"/>
-<area shape="rect" id="node7" href="$hal__stm32__dma_8c.html#a572bb7d0ec656fb7a86d18f319b43db8" title="Starts a DMA transaction." alt="" coords="661,284,803,311"/>
-<area shape="rect" id="node10" href="$hal__stm32__dma_8c.html#ac2bef3d2e495afefdd5fb7585e9ebf81" title="Stops an ongoing transaction." alt="" coords="661,208,803,235"/>
-<area shape="rect" id="node8" href="$hal__stm32__dma_8c.html#aca730123d24b378683330626bd0f7603" title="Starts a DMA transaction." alt="" coords="871,284,1045,311"/>
-<area shape="rect" id="node9" href="$hal__stm32__dma_8c.html#a8b001b838d393609f358cdaeff7c6bb2" title=" " alt="" coords="1093,284,1343,311"/>
-<area shape="rect" id="node11" href="$hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction." alt="" coords="872,183,1044,209"/>
-<area shape="rect" id="node13" href="$hal__stm32__dma_8h.html#a6e67217a77cfebb8961f992e5f85f8da" title=" " alt="" coords="395,309,593,336"/>
-<area shape="rect" id="node14" href="$hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30" title="Starts a DMA transaction." alt="" coords="425,411,563,437"/>
-<area shape="rect" id="node15" href="$dshot__rpmCapture_8c.html#a1373cdf0419ab22527dc4e5709135c49" title="convert DMA buffer full of pulse length into raw ERPS frame" alt="" coords="409,360,579,387"/>
-<area shape="rect" id="node16" href="$dshot__rpmCapture_8c.html#a5d315c80fe968d1b01583ca9bbe369ef" title="start the DMA capture" alt="" coords="443,512,545,539"/>
-<area shape="rect" id="node20" href="$dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022" title="stop the DMA capture" alt="" coords="443,461,545,488"/>
-<area shape="rect" id="node17" href="$timerDmaCache_8c.html#a3e4be0aff366297301619eb9041ebc35" title=" " alt="" coords="641,512,823,539"/>
-<area shape="rect" id="node19" href="$input__capture__arch_8c.html#a4bba4ce9ff6278f324c6dc95df5622bf" title="start to capture" alt="" coords="663,563,801,589"/>
-<area shape="rect" id="node18" href="$timerDmaCache_8c.html#ab3f50b7e1fff277d6847fe0602d64544" title=" " alt="" coords="885,512,1031,539"/>
-<area shape="rect" id="node21" href="$input__capture__arch_8c.html#a9d2e93c6aede9747fa79ef150d1e314c" title=" " alt="" coords="669,411,795,437"/>
-<area shape="rect" id="node22" href="$input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190" title="stop to capture" alt="" coords="665,461,799,488"/>
-<area shape="rect" id="node24" href="$hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb" title="Deactivates the DMA peripheral." alt="" coords="454,107,534,133"/>
-<area shape="rect" id="node26" href="$hal__stm32__dma_8c.html#a9219d807ef245446ffc9a430d742d976" title="Stops an ongoing transaction." alt="" coords="663,157,801,184"/>
-<area shape="rect" id="node25" href="$hal__stm32__dma_8c.html#a704b8cd98d0823960e5e3048ee5dfbba" title="Deactivates the DMA peripheral." alt="" coords="677,107,787,133"/>
+<area shape="rect" id="Node000001" title="send throttle order" alt="" coords="5,205,136,231"/>
+<area shape="rect" id="Node000002" href="$esc__dshot_8c.html#a00ddf205c26dcf52cb32d55a888ad4b4" title=" " alt="" coords="184,55,347,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,203,235,87,238,91,90,207"/>
+<area shape="rect" id="Node000005" href="$hal__stm32__dma_8h.html#a9e853b87da409e18f88e33c6d4def0f9" title=" " alt="" coords="211,205,319,231"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="136,215,198,215,198,221,136,221"/>
+<area shape="rect" id="Node000012" href="$dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="189,331,342,356"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="93,228,235,321,232,325,90,233"/>
+<area shape="rect" id="Node000023" href="$esc__dshot_8c.html#aa2ccafb2d095c2922d26b9c3138ae3a6" title="stop the DSHOT driver and free the related resources : pwm driver and dma driver." alt="" coords="222,155,309,180"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="120,203,208,179,209,185,121,208"/>
+<area shape="rect" id="Node000027" href="$esc__dshot_8c.html#abb7066e4bd3b68322d72d78d8c142c41" title=" " alt="" coords="192,380,339,405"/>
+<area shape="poly" id="edge29_Node000001_Node000027" title=" " alt="" coords="80,230,119,294,149,332,186,365,197,372,194,377,182,369,145,336,114,297,76,232"/>
+<area shape="rect" id="Node000003" href="$esc__dshot_8c.html#a07f476e006400858ea955505b6db7557" title=" " alt="" coords="435,55,553,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,65,421,65,421,70,347,70"/>
+<area shape="rect" id="Node000004" href="$esc__dshot_8c.html#a8211d081fff83f1ea24418e8f4f8b7c4" title=" " alt="" coords="459,5,529,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="324,52,445,26,446,31,325,57"/>
+<area shape="rect" id="Node000006" href="$hal__stm32__dma_8c.html#a3de6f4d870466df970d6c01201b6fdd7" title="Performs a DMA transaction." alt="" coords="413,205,575,231"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="320,215,399,215,399,221,320,221"/>
+<area shape="rect" id="Node000007" href="$hal__stm32__dma_8c.html#a572bb7d0ec656fb7a86d18f319b43db8" title="Starts a DMA transaction." alt="" coords="661,305,803,331"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="527,228,689,297,687,302,525,233"/>
+<area shape="rect" id="Node000010" href="$hal__stm32__dma_8c.html#ac2bef3d2e495afefdd5fb7585e9ebf81" title="Stops an ongoing transaction." alt="" coords="661,205,803,231"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="576,215,648,215,648,221,576,221"/>
+<area shape="rect" id="Node000008" href="$hal__stm32__dma_8c.html#aca730123d24b378683330626bd0f7603" title="Starts a DMA transaction." alt="" coords="871,305,1045,331"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="803,315,857,315,857,321,803,321"/>
+<area shape="rect" id="Node000009" href="$hal__stm32__dma_8c.html#a8b001b838d393609f358cdaeff7c6bb2" title=" " alt="" coords="1093,305,1343,331"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1045,315,1079,315,1079,321,1045,321"/>
+<area shape="rect" id="Node000011" href="$hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction." alt="" coords="872,180,1044,205"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="802,207,858,201,859,206,803,213"/>
+<area shape="poly" id="edge15_Node000012_Node000010" title=" " alt="" coords="295,328,394,291,527,256,647,231,648,236,528,262,395,297,297,333"/>
+<area shape="rect" id="Node000013" href="$hal__stm32__dma_8h.html#a6e67217a77cfebb8961f992e5f85f8da" title=" " alt="" coords="395,307,593,332"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="342,333,381,329,381,334,343,338"/>
+<area shape="rect" id="Node000014" href="$hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30" title="Starts a DMA transaction." alt="" coords="425,405,563,431"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="315,354,348,365,372,378,396,390,422,399,420,404,394,395,369,383,346,370,314,359"/>
+<area shape="rect" id="Node000015" href="$dshot__rpmCapture_8c.html#a1373cdf0419ab22527dc4e5709135c49" title="convert DMA buffer full of pulse length into raw ERPS frame" alt="" coords="409,356,579,381"/>
+<area shape="poly" id="edge16_Node000012_Node000015" title=" " alt="" coords="343,349,395,355,395,360,342,354"/>
+<area shape="rect" id="Node000016" href="$dshot__rpmCapture_8c.html#a5d315c80fe968d1b01583ca9bbe369ef" title="start the DMA capture" alt="" coords="443,504,545,529"/>
+<area shape="poly" id="edge17_Node000012_Node000016" title=" " alt="" coords="331,354,348,365,362,381,369,398,373,430,377,461,384,476,396,491,412,501,430,508,428,513,410,506,393,495,379,479,372,463,368,431,364,399,357,384,345,369,328,358"/>
+<area shape="rect" id="Node000020" href="$dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022" title="stop the DMA capture" alt="" coords="443,455,545,480"/>
+<area shape="poly" id="edge21_Node000012_Node000020" title=" " alt="" coords="328,354,348,365,365,384,373,404,380,422,396,440,431,456,429,461,393,444,376,425,368,406,361,387,345,369,325,358"/>
+<area shape="poly" id="edge14_Node000014_Node000007" title=" " alt="" coords="553,403,592,390,649,363,698,336,701,340,652,368,594,395,555,408"/>
+<area shape="rect" id="Node000017" href="$timerDmaCache_8c.html#a3e4be0aff366297301619eb9041ebc35" title=" " alt="" coords="641,504,823,529"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="546,514,628,514,628,519,546,519"/>
+<area shape="rect" id="Node000019" href="$input__capture__arch_8c.html#a4bba4ce9ff6278f324c6dc95df5622bf" title="start to capture" alt="" coords="663,553,801,579"/>
+<area shape="poly" id="edge20_Node000016_Node000019" title=" " alt="" coords="546,525,657,548,656,553,545,530"/>
+<area shape="rect" id="Node000018" href="$timerDmaCache_8c.html#ab3f50b7e1fff277d6847fe0602d64544" title=" " alt="" coords="885,504,1031,529"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="823,514,871,514,871,519,823,519"/>
+<area shape="rect" id="Node000021" href="$input__capture__arch_8c.html#a9d2e93c6aede9747fa79ef150d1e314c" title=" " alt="" coords="669,405,795,431"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="544,454,656,431,658,436,545,460"/>
+<area shape="rect" id="Node000022" href="$input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190" title="stop to capture" alt="" coords="665,455,799,480"/>
+<area shape="poly" id="edge23_Node000020_Node000022" title=" " alt="" coords="545,465,651,465,651,470,545,470"/>
+<area shape="rect" id="Node000024" href="$hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb" title="Deactivates the DMA peripheral." alt="" coords="454,104,534,129"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="309,155,440,126,441,131,310,160"/>
+<area shape="rect" id="Node000026" href="$hal__stm32__dma_8c.html#a9219d807ef245446ffc9a430d742d976" title="Stops an ongoing transaction." alt="" coords="663,155,801,180"/>
+<area shape="poly" id="edge27_Node000023_Node000026" title=" " alt="" coords="309,165,649,165,649,170,309,170"/>
+<area shape="rect" id="Node000025" href="$hal__stm32__dma_8c.html#a704b8cd98d0823960e5e3048ee5dfbba" title="Deactivates the DMA peripheral." alt="" coords="677,104,787,129"/>
+<area shape="poly" id="edge26_Node000024_Node000025" title=" " alt="" coords="534,114,663,114,663,119,534,119"/>
+<area shape="poly" id="edge28_Node000026_Node000011" title=" " alt="" coords="801,172,859,179,858,184,801,178"/>
 </map>

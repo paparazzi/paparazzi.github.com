@@ -1,18 +1,33 @@
 <map id="sbus_init" name="sbus_init">
-<area shape="rect" id="node1" title="RC init function." alt="" coords="5,93,85,120"/>
-<area shape="rect" id="node2" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="133,43,336,69"/>
-<area shape="rect" id="node3" href="$sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a" title="Init function." alt="" coords="163,93,307,120"/>
-<area shape="rect" id="node16" href="$sbus_8c.html#a06629ac6d37929437d99cce1c4631330" title=" " alt="" coords="189,144,280,171"/>
-<area shape="rect" id="node4" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="407,5,549,32"/>
-<area shape="rect" id="node5" href="$uart_8c.html#ad6430a7fdc6553a4696a873cc5ff3507" title=" " alt="" coords="407,57,549,98"/>
-<area shape="rect" id="node6" href="$linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title=" " alt="" coords="384,123,572,149"/>
-<area shape="rect" id="node14" href="$linux_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd" title=" " alt="" coords="401,174,555,215"/>
-<area shape="rect" id="node7" href="$serial__port_8c.html#af25145952d87a0f805da05e7ceb3e5a8" title=" " alt="" coords="620,72,803,99"/>
-<area shape="rect" id="node8" href="$linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title=" " alt="" coords="644,123,779,149"/>
-<area shape="rect" id="node9" href="$serial__port_8c.html#a436c287d25989f374ec728048a371b93" title=" " alt="" coords="865,47,997,73"/>
-<area shape="rect" id="node10" href="$serial__port_8c.html#a2c010011ea7396568f40b0137dcbf646" title=" " alt="" coords="869,97,993,124"/>
-<area shape="rect" id="node11" href="$serial__port_8c.html#aee75c3cee5e5beaef3f9b1a692d3633c" title=" " alt="" coords="869,148,994,175"/>
-<area shape="rect" id="node12" href="$serial__port_8c.html#a69092c80559cd279bfd046d53b25fefd" title=" " alt="" coords="851,199,1012,225"/>
-<area shape="rect" id="node13" href="$serial__port_8c.html#afafe7988057b4462cafea02de41b6488" title=" " alt="" coords="1060,199,1189,225"/>
-<area shape="rect" id="node15" href="$serial__port_8c.html#acf391c48a39bcc64fabe03f73f246655" title=" " alt="" coords="637,174,786,215"/>
+<area shape="rect" id="Node000001" title="RC init function." alt="" coords="5,92,85,117"/>
+<area shape="rect" id="Node000002" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="133,43,336,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,90,133,77,164,69,166,74,134,82,86,95"/>
+<area shape="rect" id="Node000003" href="$sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a" title="Init function." alt="" coords="163,92,307,117"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="85,102,149,102,149,107,85,107"/>
+<area shape="rect" id="Node000016" href="$sbus_8c.html#a06629ac6d37929437d99cce1c4631330" title=" " alt="" coords="189,141,280,167"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="86,113,134,126,177,137,175,142,133,131,85,118"/>
+<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="407,5,549,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,89,335,77,358,59,383,41,403,32,405,37,385,46,362,64,337,82,303,94"/>
+<area shape="rect" id="Node000005" href="$uart_8c.html#ad6430a7fdc6553a4696a873cc5ff3507" title=" " alt="" coords="407,55,549,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="307,93,393,83,394,88,307,99"/>
+<area shape="rect" id="Node000006" href="$linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title=" " alt="" coords="384,120,572,145"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="307,110,371,118,370,123,307,116"/>
+<area shape="rect" id="Node000014" href="$linux_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd" title=" " alt="" coords="401,170,555,210"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="302,115,337,126,362,140,385,154,404,163,402,167,383,159,359,145,335,131,301,120"/>
+<area shape="rect" id="Node000007" href="$serial__port_8c.html#af25145952d87a0f805da05e7ceb3e5a8" title=" " alt="" coords="620,71,803,96"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="538,117,637,96,638,102,539,123"/>
+<area shape="rect" id="Node000008" href="$linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title=" " alt="" coords="644,120,779,145"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="572,130,630,130,630,135,572,135"/>
+<area shape="rect" id="Node000009" href="$serial__port_8c.html#a436c287d25989f374ec728048a371b93" title=" " alt="" coords="865,45,997,71"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="764,117,802,105,850,80,868,73,870,78,852,84,804,110,766,122"/>
+<area shape="rect" id="Node000010" href="$serial__port_8c.html#a2c010011ea7396568f40b0137dcbf646" title=" " alt="" coords="869,95,993,120"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="779,122,855,113,856,119,779,128"/>
+<area shape="rect" id="Node000011" href="$serial__port_8c.html#ab39738124bd5f6fa6862d853e3c2926e" title=" " alt="" coords="869,144,994,169"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="779,137,855,146,855,151,779,143"/>
+<area shape="rect" id="Node000012" href="$serial__port_8c.html#a69092c80559cd279bfd046d53b25fefd" title=" " alt="" coords="851,193,1012,219"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="764,143,804,156,852,178,874,186,873,191,850,183,802,160,763,148"/>
+<area shape="rect" id="Node000013" href="$serial__port_8c.html#afafe7988057b4462cafea02de41b6488" title=" " alt="" coords="1060,193,1189,219"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1012,203,1046,203,1046,209,1012,209"/>
+<area shape="rect" id="Node000015" href="$serial__port_8c.html#acf391c48a39bcc64fabe03f73f246655" title=" " alt="" coords="637,170,786,210"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="556,187,623,187,623,193,556,193"/>
 </map>

@@ -1,9 +1,16 @@
 <map id="imu_heater_periodic_10hz" name="imu_heater_periodic_10hz">
-<area shape="rect" id="node1" title="10Hz IMU heater periodic This will run the control loop for the IMU heater and in case of an IOMCU wi..." alt="" coords="5,35,199,61"/>
-<area shape="rect" id="node2" href="$imu__heater_8c.html#a261a10bd67702378361f9580a2548347" title="Calculate the IMU command percentage." alt="" coords="272,5,396,32"/>
-<area shape="rect" id="node4" href="$iomcu_8c.html#a32b095d96dda2f2a152c1a86b3d68416" title="Set the IO MCU heater duty cycle." alt="" coords="247,57,421,98"/>
-<area shape="rect" id="node3" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="475,5,622,32"/>
-<area shape="rect" id="node5" href="$iomcu_8c.html#aebe0c485bd30a496ca193d8f6a70bc1a" title="Write a single register to the IO MCU." alt="" coords="469,64,628,91"/>
-<area shape="rect" id="node6" href="$iomcu_8c.html#a63f683fc121347207f770316c85ac8ab" title="Write registers to the IO MCU." alt="" coords="676,64,843,91"/>
-<area shape="rect" id="node7" href="$iomcu_8c.html#ac06f5d8e0ff4db2be6ba577935b19ebc" title=" " alt="" coords="891,64,965,91"/>
+<area shape="rect" id="Node000001" title="10Hz IMU heater periodic This will run the control loop for the IMU heater and in case of an IOMCU wi..." alt="" coords="5,35,199,60"/>
+<area shape="rect" id="Node000002" href="$imu__heater_8c.html#a261a10bd67702378361f9580a2548347" title="Calculate the IMU command percentage." alt="" coords="272,5,396,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,32,258,25,259,30,200,38"/>
+<area shape="rect" id="Node000004" href="$iomcu_8c.html#a32b095d96dda2f2a152c1a86b3d68416" title="Set the IO MCU heater duty cycle." alt="" coords="247,55,421,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,56,233,61,233,66,199,62"/>
+<area shape="rect" id="Node000003" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="475,5,622,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,15,462,15,462,21,396,21"/>
+<area shape="rect" id="Node000005" href="$iomcu_8c.html#aebe0c485bd30a496ca193d8f6a70bc1a" title="Write a single register to the IO MCU." alt="" coords="469,63,628,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="422,73,455,73,455,78,422,78"/>
+<area shape="rect" id="Node000006" href="$iomcu_8c.html#a63f683fc121347207f770316c85ac8ab" title="Write registers to the IO MCU." alt="" coords="676,63,843,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="628,73,662,73,662,78,628,78"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="731,64,725,54,728,45,740,38,759,36,782,39,792,48,789,52,780,44,759,41,742,43,733,48,731,54,736,61"/>
+<area shape="rect" id="Node000007" href="$iomcu_8c.html#ac06f5d8e0ff4db2be6ba577935b19ebc" title=" " alt="" coords="891,63,965,88"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="843,73,877,73,877,78,843,78"/>
 </map>

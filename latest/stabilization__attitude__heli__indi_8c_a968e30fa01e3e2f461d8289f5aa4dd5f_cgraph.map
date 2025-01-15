@@ -1,25 +1,50 @@
 <map id="stabilization_attitude_heli_indi_init" name="stabilization_attitude_heli_indi_init">
-<area shape="rect" id="node1" title="stabilization_attitude_heli_indi_init" alt="" coords="5,365,165,407"/>
-<area shape="rect" id="node2" href="$delayed__first__order__lowpass__filter_8h.html#a39ce06f26138849f6a333db543608642" title="delayed_first_order_lowpass_initialize" alt="" coords="237,71,384,112"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__heli__indi_8c.html#ac1d350fac06f013cacb64da2f19b5872" title=" " alt="" coords="235,201,386,243"/>
-<area shape="rect" id="node8" href="$stabilization__attitude__heli__indi_8c.html#a3efc3abcc029aff6c2c9fb5e28e31b48" title=" " alt="" coords="235,136,386,177"/>
-<area shape="rect" id="node10" href="$stabilization__attitude__heli__indi_8c.html#ad77ea80be5e374a31b3c692012c3cda8" title=" " alt="" coords="235,463,386,504"/>
-<area shape="rect" id="node14" href="$stabilization__attitude__heli__indi_8c.html#a79877044d938df5e85e72f71006af500" title="The main idea of this function is to slow down a certain actuator, so that the actuator dynamics filt..." alt="" coords="220,332,401,373"/>
-<area shape="rect" id="node15" href="$stabilization__attitude__heli__indi_8c.html#a1d42d4a015d3d6fbd25f90d22dcc4c26" title=" " alt="" coords="217,267,404,308"/>
-<area shape="rect" id="node16" href="$stabilization__attitude__heli__indi_8c.html#a05bb204a4d2a9154f5a62904bb921278" title=" " alt="" coords="217,397,404,439"/>
-<area shape="rect" id="node17" href="$low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter." alt="" coords="240,528,381,569"/>
-<area shape="rect" id="node19" href="$notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="249,594,372,621"/>
-<area shape="rect" id="node22" href="$stabilization__attitude__heli__indi_8c.html#a7f75c220a0b5ab70d7b7f56a7ca82bbf" title="stabilization_attitude_heli_indi_set_steadystate_pitchroll" alt="" coords="213,662,408,718"/>
-<area shape="rect" id="node3" href="$delayed__first__order__lowpass__filter_8h.html#a1a8bf20fcc21ebda26bc9fa9302bfc15" title="delayed_first_order_lowpass_set_delay" alt="" coords="490,5,642,47"/>
-<area shape="rect" id="node4" href="$delayed__first__order__lowpass__filter_8h.html#a54e81a69f55600acf91169bbeba73f61" title="delayed_first_order_lowpass_set_omega" alt="" coords="485,71,647,112"/>
-<area shape="rect" id="node6" href="$low__pass__filter_8h.html#a2f2143b974670872a03cc02fa29ed066" title="Update second order Butterworth low pass filter state with a new value(fixed point version)." alt="" coords="491,235,641,276"/>
-<area shape="rect" id="node7" href="$low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="724,235,885,276"/>
-<area shape="rect" id="node9" href="$delayed__first__order__lowpass__filter_8h.html#a3ccde6f4470a690f95432a0509fd64cf" title="delayed_first_order_lowpass_propagate" alt="" coords="489,136,643,177"/>
-<area shape="rect" id="node11" href="$stabilization__attitude__heli__indi_8c.html#ae40a646e45b54cc4e58115cc1942a52e" title=" " alt="" coords="478,411,654,438"/>
-<area shape="rect" id="node12" href="$notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="725,524,884,565"/>
-<area shape="rect" id="node13" href="$notch__filter_8h.html#a93e78a6198d2f1c1221c2a006e2b5dd7" title="Notch filter propagate." alt="" coords="731,411,878,438"/>
-<area shape="rect" id="node18" href="$low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="483,463,649,504"/>
-<area shape="rect" id="node20" href="$notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="467,645,665,671"/>
-<area shape="rect" id="node21" href="$notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="471,528,661,569"/>
-<area shape="rect" id="node23" href="$group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a" title="Quaternion from orientation vector." alt="" coords="456,695,676,722"/>
+<area shape="rect" id="Node000001" title="stabilization_attitude_heli_indi_init" alt="" coords="5,357,165,397"/>
+<area shape="rect" id="Node000002" href="$delayed__first__order__lowpass__filter_8h.html#a39ce06f26138849f6a333db543608642" title="delayed_first_order_lowpass_initialize" alt="" coords="237,69,384,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,356,102,308,126,245,162,178,185,147,212,119,224,110,227,115,215,123,189,150,166,181,130,247,107,310,94,358"/>
+<area shape="rect" id="Node000005" href="$stabilization__attitude__heli__indi_8c.html#ac1d350fac06f013cacb64da2f19b5872" title=" " alt="" coords="235,197,386,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="100,355,146,302,177,273,212,247,223,241,226,245,215,252,181,277,150,306,104,359"/>
+<area shape="rect" id="Node000008" href="$stabilization__attitude__heli__indi_8c.html#a3efc3abcc029aff6c2c9fb5e28e31b48" title=" " alt="" coords="235,133,386,173"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="92,356,109,319,135,273,169,225,212,183,222,177,225,181,215,187,173,228,139,276,114,322,97,358"/>
+<area shape="rect" id="Node000010" href="$stabilization__attitude__heli__indi_8c.html#ad77ea80be5e374a31b3c692012c3cda8" title=" " alt="" coords="235,453,386,493"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="124,395,214,439,233,446,231,451,212,444,122,400"/>
+<area shape="rect" id="Node000014" href="$stabilization__attitude__heli__indi_8c.html#a79877044d938df5e85e72f71006af500" title="The main idea of this function is to slow down a certain actuator, so that the actuator dynamics filt..." alt="" coords="220,325,401,365"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="165,363,206,357,207,363,166,369"/>
+<area shape="rect" id="Node000015" href="$stabilization__attitude__heli__indi_8c.html#a1d42d4a015d3d6fbd25f90d22dcc4c26" title=" " alt="" coords="217,261,404,301"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="122,355,212,311,231,304,233,309,214,316,124,360"/>
+<area shape="rect" id="Node000016" href="$stabilization__attitude__heli__indi_8c.html#a05bb204a4d2a9154f5a62904bb921278" title=" " alt="" coords="217,389,404,429"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="166,386,204,392,203,397,165,391"/>
+<area shape="rect" id="Node000017" href="$low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter." alt="" coords="240,517,381,557"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="104,396,150,449,181,478,215,503,229,511,226,515,212,508,177,482,146,453,100,399"/>
+<area shape="rect" id="Node000019" href="$notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="249,582,372,607"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="97,397,113,434,138,480,172,527,215,567,237,579,235,584,212,572,168,531,134,483,108,436,92,399"/>
+<area shape="rect" id="Node000022" href="$stabilization__attitude__heli__indi_8c.html#a7f75c220a0b5ab70d7b7f56a7ca82bbf" title="stabilization_attitude_heli_indi_set_steadystate_pitchroll" alt="" coords="213,649,408,703"/>
+<area shape="poly" id="edge24_Node000001_Node000022" title=" " alt="" coords="95,397,111,441,136,499,171,561,215,618,240,639,237,643,211,622,167,564,132,501,106,443,90,398"/>
+<area shape="rect" id="Node000003" href="$delayed__first__order__lowpass__filter_8h.html#a1a8bf20fcc21ebda26bc9fa9302bfc15" title="delayed_first_order_lowpass_set_delay" alt="" coords="490,5,642,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,68,476,45,477,50,385,74"/>
+<area shape="rect" id="Node000004" href="$delayed__first__order__lowpass__filter_8h.html#a54e81a69f55600acf91169bbeba73f61" title="delayed_first_order_lowpass_set_omega" alt="" coords="485,69,647,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="384,87,471,87,471,92,384,92"/>
+<area shape="rect" id="Node000006" href="$low__pass__filter_8h.html#a2f2143b974670872a03cc02fa29ed066" title="Update second order Butterworth low pass filter state with a new value(fixed point version)." alt="" coords="491,229,641,269"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="386,224,478,236,477,241,386,229"/>
+<area shape="rect" id="Node000007" href="$low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="724,229,885,269"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="641,247,710,247,710,252,641,252"/>
+<area shape="rect" id="Node000009" href="$delayed__first__order__lowpass__filter_8h.html#a3ccde6f4470a690f95432a0509fd64cf" title="delayed_first_order_lowpass_propagate" alt="" coords="489,133,643,173"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="386,151,475,151,475,156,386,156"/>
+<area shape="rect" id="Node000011" href="$stabilization__attitude__heli__indi_8c.html#ae40a646e45b54cc4e58115cc1942a52e" title=" " alt="" coords="478,403,654,429"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="386,454,495,429,496,434,387,459"/>
+<area shape="rect" id="Node000012" href="$notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="725,513,884,553"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="641,426,677,439,729,469,772,502,769,506,726,473,675,444,639,431"/>
+<area shape="rect" id="Node000013" href="$notch__filter_8h.html#a93e78a6198d2f1c1221c2a006e2b5dd7" title="Notch filter propagate." alt="" coords="731,403,878,429"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="654,413,717,413,717,419,654,419"/>
+<area shape="poly" id="edge15_Node000015_Node000006" title=" " alt="" coords="404,267,477,258,477,263,405,272"/>
+<area shape="poly" id="edge17_Node000016_Node000011" title=" " alt="" coords="404,409,464,411,464,416,404,414"/>
+<area shape="rect" id="Node000018" href="$low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="483,453,649,493"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="381,517,472,494,473,499,382,522"/>
+<area shape="poly" id="edge22_Node000019_Node000012" title=" " alt="" coords="372,592,512,586,594,578,676,567,728,555,729,560,676,572,594,583,512,591,372,597"/>
+<area shape="rect" id="Node000020" href="$notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="467,633,665,658"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="373,604,488,627,487,633,372,609"/>
+<area shape="rect" id="Node000021" href="$notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="471,517,661,557"/>
+<area shape="poly" id="edge23_Node000019_Node000021" title=" " alt="" coords="367,579,463,558,464,563,369,585"/>
+<area shape="rect" id="Node000023" href="$group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a" title="Quaternion from orientation vector." alt="" coords="456,682,676,707"/>
+<area shape="poly" id="edge25_Node000022_Node000023" title=" " alt="" coords="408,680,442,683,442,688,408,686"/>
 </map>

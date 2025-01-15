@@ -1,52 +1,115 @@
 <map id="ins_int_init" name="ins_int_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,843,99,870"/>
-<area shape="rect" id="node2" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="159,282,238,308"/>
-<area shape="rect" id="node12" href="$ins__int_8c.html#a7266d71f926f1ff406cde1f6067177ac" title="agl_cb This callback handles all estimates of the height of the vehicle above the ground under it Thi..." alt="" coords="167,868,231,895"/>
-<area shape="rect" id="node13" href="$ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="162,818,235,844"/>
-<area shape="rect" id="node22" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="165,563,232,590"/>
-<area shape="rect" id="node28" href="$hf__float_8c.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d" title=" " alt="" coords="165,1188,232,1215"/>
-<area shape="rect" id="node32" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="513,1340,716,1367"/>
-<area shape="rect" id="node35" href="$ins_8c.html#a6d8475390022276357e9dc950539afc4" title="initialize the local origin (ltp_def in fixed point) from flight plan position" alt="" coords="533,406,696,448"/>
-<area shape="rect" id="node37" href="$ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e" title=" " alt="" coords="335,599,429,626"/>
-<area shape="rect" id="node39" href="$ins__int_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="343,411,421,438"/>
-<area shape="rect" id="node42" href="$ins__int_8c.html#a2ba079af519dd03472aa3e6019b3a91f" title=" " alt="" coords="159,1366,238,1392"/>
-<area shape="rect" id="node43" href="$ins__int_8c.html#a6f4ee4900038e15bf441a679acfa913a" title=" " alt="" coords="147,1416,251,1443"/>
-<area shape="rect" id="node44" href="$ins__int_8c.html#a779c8daa5c837af54a2a999a8e3cae24" title=" " alt="" coords="152,1467,245,1494"/>
-<area shape="rect" id="node45" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="337,650,427,676"/>
-<area shape="rect" id="node49" href="$vf__extended__float_8c.html#a2358072559748851df8c44c975c43ebb" title=" " alt="" coords="147,970,250,996"/>
-<area shape="rect" id="node3" href="$ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="313,178,451,204"/>
-<area shape="rect" id="node11" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="304,282,460,308"/>
-<area shape="rect" id="node4" href="$hf__float_8c.html#a9bdbdd8c70af4499734f76ebffbebd69" title=" " alt="" coords="559,51,671,78"/>
-<area shape="rect" id="node5" href="$group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="769,14,955,40"/>
-<area shape="rect" id="node6" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="764,90,960,116"/>
-<area shape="rect" id="node7" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="549,574,681,600"/>
-<area shape="rect" id="node8" href="$ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c" title="update ins state from vertical filter" alt="" coords="537,254,692,280"/>
-<area shape="rect" id="node9" href="$group__state__acceleration.html#gae8620e2ebb326bbb443a54194a6bd45d" title="Set acceleration in Body coordinates (int)." alt="" coords="537,152,692,179"/>
-<area shape="rect" id="node10" href="$vf__extended__float_8c.html#aa41dcb159a3384aadce98d6f89e82eca" title="Propagate the filter in time." alt="" coords="559,203,671,230"/>
-<area shape="rect" id="node14" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="310,752,454,793"/>
-<area shape="rect" id="node15" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="299,818,465,844"/>
-<area shape="rect" id="node17" href="$pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float)." alt="" coords="337,868,427,895"/>
-<area shape="rect" id="node19" href="$vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af" title=" " alt="" coords="337,919,427,946"/>
-<area shape="rect" id="node20" href="$vf__float_8c.html#a067f2a1bed73d1940c35450706a56265" title=" " alt="" coords="337,970,427,996"/>
-<area shape="rect" id="node21" href="$vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49" title=" " alt="" coords="319,700,445,727"/>
-<area shape="rect" id="node16" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="529,878,700,904"/>
-<area shape="rect" id="node18" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="562,928,667,955"/>
-<area shape="rect" id="node23" href="$ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="309,548,455,575"/>
-<area shape="rect" id="node24" href="$ins__int_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="575,472,655,499"/>
-<area shape="rect" id="node26" href="$vf__extended__float_8c.html#a7d74fd7f8f95cece04e3c147e409f935" title=" " alt="" coords="541,675,689,702"/>
-<area shape="rect" id="node27" href="$vf__extended__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67" title=" " alt="" coords="545,523,685,550"/>
-<area shape="rect" id="node25" href="$group__state__position.html#ga42ec780d70c42ac75c6e214533b3204c" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="782,414,942,440"/>
-<area shape="rect" id="node29" href="$hf__float_8c.html#a896f5d91e6dfb6576822aa447ee9912a" title=" " alt="" coords="341,1239,423,1266"/>
-<area shape="rect" id="node30" href="$hf__float_8c.html#a4f94aa362fb2f73abf4bf1cf1a3a8a52" title=" " alt="" coords="341,1290,423,1316"/>
-<area shape="rect" id="node31" href="$low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter." alt="" coords="311,1072,453,1113"/>
-<area shape="rect" id="node33" href="$hf__float_8c.html#ac22beeff1d0cdeb75532e189652acba9" title=" " alt="" coords="343,1138,421,1164"/>
-<area shape="rect" id="node34" href="$hf__float_8c.html#ab7c0281d7bcfb87c6d68f296aa216163" title=" " alt="" coords="320,1188,444,1215"/>
-<area shape="rect" id="node36" href="$group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="793,359,931,386"/>
-<area shape="rect" id="node38" href="$hf__float_8c.html#aebc6ad05bcec6d17a462c427ac9a07a0" title="Update position." alt="" coords="554,624,675,651"/>
-<area shape="rect" id="node40" href="$ins__int_8c.html#aaa81fd49fa15ef7ecc96001272b5fc83" title=" " alt="" coords="544,304,685,331"/>
-<area shape="rect" id="node41" href="$ins__int_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="547,355,683,382"/>
-<area shape="rect" id="node46" href="$group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="549,776,681,803"/>
-<area shape="rect" id="node47" href="$hf__float_8c.html#a9ff927aa8ccc5c01b188bf11e728ae33" title=" " alt="" coords="555,827,674,854"/>
-<area shape="rect" id="node48" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="517,726,712,752"/>
-<area shape="rect" id="node50" href="$vf__extended__float_8c.html#a58d1d46b9c74fc909cc7d08e097a35fa" title=" " alt="" coords="349,1020,415,1047"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,821,99,846"/>
+<area shape="rect" id="Node000002" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="159,273,238,298"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,820,81,649,108,523,144,396,162,349,182,310,186,312,167,352,149,397,113,525,86,650,58,821"/>
+<area shape="rect" id="Node000040" href="$ins__int_8c.html#a7266d71f926f1ff406cde1f6067177ac" title="agl_cb This callback handles all estimates of the height of the vehicle above the ground under it Thi..." alt="" coords="167,845,231,870"/>
+<area shape="poly" id="edge13_Node000001_Node000040" title=" " alt="" coords="99,839,154,848,153,853,98,844"/>
+<area shape="rect" id="Node000041" href="$ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="162,796,235,821"/>
+<area shape="poly" id="edge14_Node000001_Node000041" title=" " alt="" coords="98,823,148,814,149,820,99,828"/>
+<area shape="rect" id="Node000056" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="165,548,232,573"/>
+<area shape="poly" id="edge24_Node000001_Node000056" title=" " alt="" coords="54,820,83,726,110,664,145,604,167,580,171,584,149,607,114,666,88,728,59,822"/>
+<area shape="rect" id="Node000091" href="$hf__float_8c.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d" title=" " alt="" coords="165,1157,232,1182"/>
+<area shape="poly" id="edge31_Node000001_Node000091" title=" " alt="" coords="61,845,189,1143,184,1145,56,848"/>
+<area shape="rect" id="Node000096" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="513,1306,716,1332"/>
+<area shape="poly" id="edge45_Node000001_Node000096" title=" " alt="" coords="57,846,63,904,77,992,105,1094,125,1145,149,1192,180,1243,210,1280,247,1309,300,1334,333,1344,367,1350,437,1352,504,1345,559,1333,560,1338,504,1350,438,1358,367,1356,331,1349,298,1339,244,1313,206,1284,176,1246,144,1195,120,1147,100,1096,72,993,57,905,51,847"/>
+<area shape="rect" id="Node000099" href="$ins_8c.html#a6d8475390022276357e9dc950539afc4" title="initialize the local origin (ltp_def in fixed point) from flight plan position" alt="" coords="533,395,696,435"/>
+<area shape="poly" id="edge38_Node000001_Node000099" title=" " alt="" coords="51,821,53,768,65,690,77,648,94,606,116,567,145,533,172,514,210,497,307,467,418,443,519,426,520,431,419,448,309,472,211,502,174,519,148,537,120,570,98,609,82,650,71,692,59,768,56,821"/>
+<area shape="rect" id="Node000100" href="$ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e" title=" " alt="" coords="335,582,429,608"/>
+<area shape="poly" id="edge41_Node000001_Node000100" title=" " alt="" coords="58,820,92,767,117,736,145,706,183,675,216,653,298,617,321,608,322,613,300,622,219,658,186,679,148,710,121,739,96,770,63,822"/>
+<area shape="rect" id="Node000102" href="$ins__int_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="343,398,421,424"/>
+<area shape="poly" id="edge46_Node000001_Node000102" title=" " alt="" coords="52,821,61,744,79,631,91,573,107,519,124,476,145,447,165,431,188,419,237,405,286,400,330,402,330,407,286,406,238,410,190,424,168,436,149,450,129,478,112,521,97,574,84,632,66,745,57,821"/>
+<area shape="rect" id="Node000108" href="$ins__int_8c.html#a2ba079af519dd03472aa3e6019b3a91f" title=" " alt="" coords="159,1333,238,1358"/>
+<area shape="poly" id="edge52_Node000001_Node000108" title=" " alt="" coords="57,847,66,937,85,1076,113,1216,130,1273,149,1312,159,1323,155,1327,144,1315,125,1275,108,1217,80,1077,61,938,52,847"/>
+<area shape="rect" id="Node000109" href="$ins__int_8c.html#a6f4ee4900038e15bf441a679acfa913a" title=" " alt="" coords="147,1382,251,1408"/>
+<area shape="poly" id="edge53_Node000001_Node000109" title=" " alt="" coords="57,846,64,947,80,1103,92,1186,108,1262,126,1326,149,1370,151,1372,147,1375,144,1373,121,1328,102,1263,87,1187,74,1104,58,947,51,847"/>
+<area shape="rect" id="Node000110" href="$ins__int_8c.html#a779c8daa5c837af54a2a999a8e3cae24" title=" " alt="" coords="152,1432,245,1457"/>
+<area shape="poly" id="edge54_Node000001_Node000110" title=" " alt="" coords="56,847,62,955,77,1127,89,1217,105,1301,125,1371,136,1398,149,1419,151,1421,147,1425,144,1422,132,1400,120,1372,100,1302,84,1218,72,1127,57,956,51,847"/>
+<area shape="rect" id="Node000111" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="337,632,427,657"/>
+<area shape="poly" id="edge55_Node000001_Node000111" title=" " alt="" coords="67,819,161,747,227,704,298,666,322,656,324,661,300,671,230,709,164,752,71,823"/>
+<area shape="rect" id="Node000119" href="$vf__extended__float_8c.html#a2358072559748851df8c44c975c43ebb" title=" " alt="" coords="147,944,250,969"/>
+<area shape="poly" id="edge61_Node000001_Node000119" title=" " alt="" coords="70,845,173,932,170,936,67,849"/>
+<area shape="rect" id="Node000003" href="$ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="313,173,451,198"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,271,344,203,347,207,225,275"/>
+<area shape="rect" id="Node000039" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="304,273,460,298"/>
+<area shape="poly" id="edge12_Node000002_Node000039" title=" " alt="" coords="238,283,290,283,290,288,238,288"/>
+<area shape="rect" id="Node000004" href="$hf__float_8c.html#a9bdbdd8c70af4499734f76ebffbebd69" title=" " alt="" coords="559,46,671,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="396,171,445,131,512,89,549,73,551,78,515,93,448,135,399,175"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="769,22,955,48"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="387,171,404,141,431,101,467,62,489,45,512,31,548,18,586,9,663,3,736,7,798,17,798,22,736,12,663,8,587,14,550,23,514,36,492,49,471,65,435,104,409,143,392,174"/>
+<area shape="rect" id="Node000009" href="$group__state__attitude.html#ga573863695fd1d07537756dbea2a0aa2e" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="764,72,960,97"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="410,171,457,151,513,132,635,107,750,91,751,97,636,112,514,138,459,156,412,175"/>
+<area shape="rect" id="Node000015" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="549,558,681,584"/>
+<area shape="poly" id="edge6_Node000003_Node000015" title=" " alt="" coords="405,196,438,222,454,240,468,259,484,301,489,339,487,376,482,410,479,444,480,477,491,510,515,544,537,559,534,563,511,548,486,512,475,478,473,444,477,410,482,375,484,339,479,302,463,262,450,243,434,226,402,201"/>
+<area shape="rect" id="Node000035" href="$ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c" title="update ins state from vertical filter" alt="" coords="537,246,692,272"/>
+<area shape="poly" id="edge7_Node000003_Node000035" title=" " alt="" coords="416,196,514,231,546,240,545,245,513,236,414,201"/>
+<area shape="rect" id="Node000036" href="$group__state__acceleration.html#gae8620e2ebb326bbb443a54194a6bd45d" title="Set acceleration in Body coordinates (int)." alt="" coords="537,148,692,173"/>
+<area shape="poly" id="edge10_Node000003_Node000036" title=" " alt="" coords="451,176,523,168,524,173,452,181"/>
+<area shape="rect" id="Node000037" href="$vf__extended__float_8c.html#aa41dcb159a3384aadce98d6f89e82eca" title="Propagate the filter in time." alt="" coords="559,197,671,222"/>
+<area shape="poly" id="edge11_Node000003_Node000037" title=" " alt="" coords="452,190,545,200,544,205,451,196"/>
+<area shape="poly" id="edge4_Node000004_Node000007" title=" " alt="" coords="671,51,755,43,755,48,671,56"/>
+<area shape="poly" id="edge5_Node000004_Node000009" title=" " alt="" coords="671,62,750,70,750,76,671,67"/>
+<area shape="poly" id="edge15_Node000041_Node000035" title=" " alt="" coords="200,795,296,384,316,364,335,350,373,335,415,326,464,307,488,293,512,281,535,273,537,278,514,286,490,298,466,312,417,331,375,340,338,355,319,368,301,387,206,796"/>
+<area shape="rect" id="Node000042" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="310,731,454,771"/>
+<area shape="poly" id="edge16_Node000041_Node000042" title=" " alt="" coords="235,795,304,773,305,778,237,800"/>
+<area shape="rect" id="Node000043" href="$group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="299,796,465,821"/>
+<area shape="poly" id="edge17_Node000041_Node000043" title=" " alt="" coords="236,806,285,806,285,811,236,811"/>
+<area shape="rect" id="Node000046" href="$pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float)." alt="" coords="337,845,427,870"/>
+<area shape="poly" id="edge19_Node000041_Node000046" title=" " alt="" coords="236,816,324,839,322,845,235,821"/>
+<area shape="rect" id="Node000048" href="$vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af" title=" " alt="" coords="337,894,427,920"/>
+<area shape="poly" id="edge21_Node000041_Node000048" title=" " alt="" coords="233,819,252,830,267,844,276,856,286,868,300,879,325,891,323,896,297,884,282,872,272,859,263,847,249,835,230,823"/>
+<area shape="rect" id="Node000049" href="$vf__float_8c.html#a067f2a1bed73d1940c35450706a56265" title=" " alt="" coords="337,944,427,969"/>
+<area shape="poly" id="edge22_Node000041_Node000049" title=" " alt="" coords="237,819,253,831,270,857,276,882,283,906,300,929,325,943,322,948,297,933,278,908,271,883,265,859,249,834,234,823"/>
+<area shape="rect" id="Node000051" href="$vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49" title=" " alt="" coords="319,681,445,706"/>
+<area shape="poly" id="edge23_Node000041_Node000051" title=" " alt="" coords="209,794,246,756,270,735,297,717,313,709,316,714,300,721,274,739,249,760,213,797"/>
+<area shape="rect" id="Node000044" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="529,854,700,880"/>
+<area shape="poly" id="edge18_Node000043_Node000044" title=" " alt="" coords="433,819,514,839,551,848,549,854,513,844,432,824"/>
+<area shape="rect" id="Node000047" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="562,904,667,929"/>
+<area shape="poly" id="edge20_Node000046_Node000047" title=" " alt="" coords="429,867,514,888,551,898,549,903,513,894,427,872"/>
+<area shape="rect" id="Node000057" href="$ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="309,533,455,558"/>
+<area shape="poly" id="edge25_Node000056_Node000057" title=" " alt="" coords="232,555,295,550,295,555,233,560"/>
+<area shape="poly" id="edge26_Node000057_Node000015" title=" " alt="" coords="456,551,535,560,535,565,455,556"/>
+<area shape="rect" id="Node000078" href="$ins__int_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="575,460,655,485"/>
+<area shape="poly" id="edge27_Node000057_Node000078" title=" " alt="" coords="413,531,513,494,561,481,562,486,514,499,414,536"/>
+<area shape="rect" id="Node000087" href="$vf__extended__float_8c.html#a7d74fd7f8f95cece04e3c147e409f935" title=" " alt="" coords="541,657,689,682"/>
+<area shape="poly" id="edge29_Node000057_Node000087" title=" " alt="" coords="447,556,467,568,484,587,492,606,499,625,515,642,529,651,527,655,512,646,495,628,487,608,479,590,464,572,444,561"/>
+<area shape="rect" id="Node000089" href="$vf__extended__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67" title=" " alt="" coords="545,509,685,534"/>
+<area shape="poly" id="edge30_Node000057_Node000089" title=" " alt="" coords="455,536,531,528,531,533,456,541"/>
+<area shape="rect" id="Node000080" href="$group__state__position.html#ga42ec780d70c42ac75c6e214533b3204c" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="782,402,942,428"/>
+<area shape="poly" id="edge28_Node000078_Node000080" title=" " alt="" coords="654,461,792,428,793,434,655,466"/>
+<area shape="rect" id="Node000092" href="$hf__float_8c.html#a896f5d91e6dfb6576822aa447ee9912a" title=" " alt="" coords="341,1206,423,1232"/>
+<area shape="poly" id="edge32_Node000091_Node000092" title=" " alt="" coords="233,1176,328,1202,327,1207,232,1181"/>
+<area shape="rect" id="Node000093" href="$hf__float_8c.html#a4f94aa362fb2f73abf4bf1cf1a3a8a52" title=" " alt="" coords="341,1256,423,1281"/>
+<area shape="poly" id="edge33_Node000091_Node000093" title=" " alt="" coords="216,1181,253,1211,300,1241,328,1252,326,1257,297,1245,250,1215,213,1185"/>
+<area shape="rect" id="Node000094" href="$low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter." alt="" coords="311,1043,453,1083"/>
+<area shape="poly" id="edge34_Node000091_Node000094" title=" " alt="" coords="213,1155,250,1124,297,1093,310,1086,312,1091,300,1097,253,1129,216,1159"/>
+<area shape="poly" id="edge35_Node000091_Node000096" title=" " alt="" coords="208,1181,241,1237,268,1267,300,1291,348,1311,399,1323,450,1328,500,1329,499,1334,450,1333,398,1328,346,1316,297,1296,264,1271,237,1240,204,1184"/>
+<area shape="rect" id="Node000097" href="$hf__float_8c.html#ac22beeff1d0cdeb75532e189652acba9" title=" " alt="" coords="343,1108,421,1133"/>
+<area shape="poly" id="edge36_Node000091_Node000097" title=" " alt="" coords="232,1158,329,1132,331,1137,233,1163"/>
+<area shape="rect" id="Node000098" href="$hf__float_8c.html#ab7c0281d7bcfb87c6d68f296aa216163" title=" " alt="" coords="320,1157,444,1182"/>
+<area shape="poly" id="edge37_Node000091_Node000098" title=" " alt="" coords="232,1167,306,1167,306,1172,232,1172"/>
+<area shape="poly" id="edge40_Node000099_Node000080" title=" " alt="" coords="696,412,768,412,768,418,696,418"/>
+<area shape="rect" id="Node000067" href="$group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="793,349,931,374"/>
+<area shape="poly" id="edge39_Node000099_Node000067" title=" " alt="" coords="696,395,789,375,790,380,697,400"/>
+<area shape="poly" id="edge43_Node000100_Node000015" title=" " alt="" coords="430,588,535,577,535,582,430,593"/>
+<area shape="poly" id="edge44_Node000100_Node000089" title=" " alt="" coords="428,580,464,567,488,555,512,543,537,535,539,540,514,548,490,560,466,572,430,585"/>
+<area shape="rect" id="Node000101" href="$hf__float_8c.html#aebc6ad05bcec6d17a462c427ac9a07a0" title="Update position." alt="" coords="554,608,675,633"/>
+<area shape="poly" id="edge42_Node000100_Node000101" title=" " alt="" coords="430,598,541,610,540,615,430,603"/>
+<area shape="poly" id="edge47_Node000102_Node000078" title=" " alt="" coords="422,419,514,444,562,457,561,462,513,450,420,424"/>
+<area shape="rect" id="Node000103" href="$ins__int_8c.html#aaa81fd49fa15ef7ecc96001272b5fc83" title=" " alt="" coords="544,296,685,321"/>
+<area shape="poly" id="edge48_Node000102_Node000103" title=" " alt="" coords="404,396,464,361,487,344,512,330,532,323,534,328,514,335,490,349,467,365,407,401"/>
+<area shape="rect" id="Node000104" href="$ins__int_8c.html#a090d79622986fa2852a2c2610efa54e8" title=" " alt="" coords="547,345,683,370"/>
+<area shape="poly" id="edge49_Node000102_Node000104" title=" " alt="" coords="420,400,545,371,546,376,421,405"/>
+<area shape="poly" id="edge51_Node000104_Node000080" title=" " alt="" coords="671,368,794,397,793,402,670,373"/>
+<area shape="poly" id="edge50_Node000104_Node000067" title=" " alt="" coords="683,356,779,358,779,363,683,361"/>
+<area shape="poly" id="edge58_Node000111_Node000015" title=" " alt="" coords="427,630,464,617,488,604,512,593,537,585,539,590,514,598,490,609,466,622,429,635"/>
+<area shape="poly" id="edge60_Node000111_Node000087" title=" " alt="" coords="428,647,528,658,527,663,427,652"/>
+<area shape="rect" id="Node000112" href="$group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="549,756,681,781"/>
+<area shape="poly" id="edge56_Node000111_Node000112" title=" " alt="" coords="429,649,448,656,467,666,484,685,492,705,499,724,515,741,537,753,534,757,512,745,495,726,487,707,479,688,464,670,446,661,427,654"/>
+<area shape="rect" id="Node000113" href="$hf__float_8c.html#a9ff927aa8ccc5c01b188bf11e728ae33" title=" " alt="" coords="555,805,674,830"/>
+<area shape="poly" id="edge57_Node000111_Node000113" title=" " alt="" coords="428,647,449,654,467,666,480,682,488,698,492,730,496,761,503,776,515,790,543,806,541,811,512,794,498,779,491,763,486,731,482,700,476,685,464,670,446,659,427,652"/>
+<area shape="rect" id="Node000114" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="517,706,712,732"/>
+<area shape="poly" id="edge59_Node000111_Node000114" title=" " alt="" coords="429,653,466,666,491,679,514,691,541,700,539,705,512,696,488,684,464,671,427,658"/>
+<area shape="rect" id="Node000120" href="$vf__extended__float_8c.html#a58d1d46b9c74fc909cc7d08e097a35fa" title=" " alt="" coords="349,993,415,1018"/>
+<area shape="poly" id="edge62_Node000119_Node000120" title=" " alt="" coords="247,967,336,991,335,996,246,972"/>
+<area shape="poly" id="edge63_Node000120_Node000096" title=" " alt="" coords="416,1007,442,1015,467,1029,497,1059,524,1093,565,1166,593,1237,610,1292,605,1293,588,1239,560,1169,519,1096,493,1062,464,1033,440,1020,415,1012"/>
 </map>

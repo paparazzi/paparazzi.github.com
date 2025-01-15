@@ -1,6 +1,10 @@
 <map id="bmp085_periodic" name="bmp085_periodic">
-<area shape="rect" id="node1" title="Start new measurement if idle or read temp/pressure." alt="" coords="5,31,140,57"/>
-<area shape="rect" id="node2" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="188,5,304,32"/>
-<area shape="rect" id="node4" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="195,56,297,83"/>
-<area shape="rect" id="node3" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="352,31,445,57"/>
+<area shape="rect" id="Node000001" title="Start new measurement if idle or read temp/pressure." alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="188,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,31,174,26,175,31,141,36"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="195,55,297,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,50,181,56,181,61,140,55"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="352,31,445,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,25,339,31,338,36,304,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="297,57,338,50,339,55,298,62"/>
 </map>

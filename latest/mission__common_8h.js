@@ -70,8 +70,8 @@ var mission__common_8h =
       [ "MissionPath", "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752aeb45aac28e0ac2391c20d5105433edd3", null ],
       [ "MissionCustom", "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752a2cd3753f9cd84674fcd6e205618dcce9", null ]
     ] ],
-    [ "mission_get", "mission__common_8h.html#ad6fd0022684bf2c6fda1f9626c13cfc4", null ],
-    [ "mission_get_from_index", "mission__common_8h.html#a8cfd722b32d9d6683e562b437e15d8bc", null ],
+    [ "mission_get", "mission__common_8h.html#a217140c5e6527af70d60598cad1bc6ff", null ],
+    [ "mission_get_from_index", "mission__common_8h.html#a7177b7dbe44718e5e2cd65e33c45257a", null ],
     [ "mission_init", "mission__common_8h.html#a19c6efe9565f7d4a03291cb165b931ff", null ],
     [ "mission_insert", "mission__common_8h.html#a31b2a2265d6533f3d4f408b82cf99f95", null ],
     [ "mission_parse_CIRCLE", "mission__common_8h.html#a6bc6421e3873d2b4d620bc33e1e90446", null ],

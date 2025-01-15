@@ -1,8 +1,13 @@
 <map id="processErpsDmaBuffer" name="processErpsDmaBuffer">
-<area shape="rect" id="node1" title="convert DMA buffer full of pulse length into raw ERPS frame" alt="" coords="637,71,808,98"/>
-<area shape="rect" id="node2" href="$dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="436,71,589,98"/>
-<area shape="rect" id="node3" href="$esc__dshot_8c.html#aafcf93c9111243dacc7dba592f4a5731" title="send throttle order" alt="" coords="257,71,388,98"/>
-<area shape="rect" id="node4" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3" title=" " alt="" coords="27,5,188,47"/>
-<area shape="rect" id="node5" href="$esc__dshot_8c.html#ae32fad965a334445cdaf6473b8da4cf3" title="send special order to one of the ESC (BHELIX, KISS, ...)" alt="" coords="5,71,209,98"/>
-<area shape="rect" id="node6" href="$esc__dshot_8c.html#a6c927d850e9e56e92af5028e516247fa" title="send throttle packed order to all of the ESCs" alt="" coords="33,122,181,149"/>
+<area shape="rect" id="Node000001" title="convert DMA buffer full of pulse length into raw ERPS frame" alt="" coords="637,70,808,95"/>
+<area shape="rect" id="Node000002" href="$dshot__rpmCapture_8c.html#aaac9b266eb1fb8124f0cff73a176ae51" title="capture the DSHOT ERPS frame(s) : one frame for each DSHOT_CHANNELS" alt="" coords="436,70,589,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="624,85,590,85,590,80,624,80"/>
+<area shape="rect" id="Node000003" href="$esc__dshot_8c.html#aafcf93c9111243dacc7dba592f4a5731" title="send throttle order" alt="" coords="257,70,388,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="422,85,389,85,389,80,422,80"/>
+<area shape="rect" id="Node000004" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3" title=" " alt="" coords="27,5,188,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="260,69,182,48,184,43,262,64"/>
+<area shape="rect" id="Node000005" href="$esc__dshot_8c.html#ae32fad965a334445cdaf6473b8da4cf3" title="send special order to one of the ESC (BHELIX, KISS, ...)" alt="" coords="5,70,209,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="244,85,209,85,209,80,244,80"/>
+<area shape="rect" id="Node000006" href="$esc__dshot_8c.html#a6c927d850e9e56e92af5028e516247fa" title="send throttle packed order to all of the ESCs" alt="" coords="33,119,181,145"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="254,101,164,122,163,117,253,96"/>
 </map>

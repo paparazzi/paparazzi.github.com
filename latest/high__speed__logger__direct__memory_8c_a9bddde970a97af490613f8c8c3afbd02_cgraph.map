@@ -1,10 +1,18 @@
 <map id="send_buffer_to_uart" name="send_buffer_to_uart">
-<area shape="rect" id="node1" title="Function sending the read values from the memory to te UART." alt="" coords="5,81,156,108"/>
-<area shape="rect" id="node2" href="$high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="204,5,387,32"/>
-<area shape="rect" id="node7" href="$uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de" title=" " alt="" coords="210,56,381,83"/>
-<area shape="rect" id="node8" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="239,107,351,133"/>
-<area shape="rect" id="node3" href="$high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3" title="Function sending a request to read some values in memory." alt="" coords="435,31,597,57"/>
-<area shape="rect" id="node4" href="$high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="645,107,831,133"/>
-<area shape="rect" id="node6" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="691,31,785,57"/>
-<area shape="rect" id="node5" href="$high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6" title="Function testing if a sequence is in a buffer of values." alt="" coords="879,107,1041,133"/>
+<area shape="rect" id="Node000001" title="Function sending the read values from the memory to te UART." alt="" coords="5,80,156,105"/>
+<area shape="rect" id="Node000002" href="$high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="204,5,387,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,77,203,39,228,32,230,37,205,45,111,82"/>
+<area shape="rect" id="Node000007" href="$uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de" title=" " alt="" coords="210,55,381,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="156,81,196,76,197,82,156,86"/>
+<area shape="rect" id="Node000008" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="239,104,351,129"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="156,98,226,106,225,112,156,104"/>
+<area shape="rect" id="Node000003" href="$high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3" title="Function sending a request to read some values in memory." alt="" coords="435,55,597,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,28,446,49,444,54,352,33"/>
+<area shape="rect" id="Node000004" href="$high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="645,104,831,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="574,77,667,98,666,104,573,83"/>
+<area shape="rect" id="Node000006" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="691,55,785,80"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="598,65,678,65,678,70,598,70"/>
+<area shape="poly" id="edge5_Node000004_Node000001" title=" " alt="" coords="674,132,581,146,464,157,334,159,268,154,203,145,158,131,117,114,119,109,160,126,205,139,268,149,334,154,463,152,581,141,673,127"/>
+<area shape="rect" id="Node000005" href="$high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6" title="Function testing if a sequence is in a buffer of values." alt="" coords="879,104,1041,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="831,114,865,114,865,119,831,119"/>
 </map>

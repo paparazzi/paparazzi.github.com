@@ -1,52 +1,104 @@
 <map id="mcu_init" name="mcu_init">
-<area shape="rect" id="node1" title="Microcontroller peripherals initialization." alt="" coords="5,537,84,564"/>
-<area shape="rect" id="node2" href="$chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init." alt="" coords="162,107,235,133"/>
-<area shape="rect" id="node8" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init()." alt="" coords="155,157,242,184"/>
-<area shape="rect" id="node9" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init()." alt="" coords="151,208,246,235"/>
-<area shape="rect" id="node10" href="$dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c" title=" " alt="" coords="162,259,235,285"/>
-<area shape="rect" id="node11" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="159,309,238,336"/>
-<area shape="rect" id="node12" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="132,360,265,387"/>
-<area shape="rect" id="node13" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="337,411,480,437"/>
-<area shape="rect" id="node14" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup." alt="" coords="163,512,234,539"/>
-<area shape="rect" id="node15" href="$chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="Initialize the specific archittecture functions." alt="" coords="142,563,255,589"/>
-<area shape="rect" id="node16" href="$chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc" title=" " alt="" coords="163,613,234,640"/>
-<area shape="rect" id="node18" href="$group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title=" " alt="" coords="160,664,237,691"/>
-<area shape="rect" id="node21" href="$group__spi.html#ga7da3469436debceb731ecb76c920efda" title=" " alt="" coords="160,715,237,741"/>
-<area shape="rect" id="node24" href="$group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title=" " alt="" coords="160,765,237,792"/>
-<area shape="rect" id="node26" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function" alt="" coords="139,461,258,488"/>
-<area shape="rect" id="node29" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title=" " alt="" coords="144,816,253,843"/>
-<area shape="rect" id="node33" href="$linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title=" " alt="" coords="143,892,254,919"/>
-<area shape="rect" id="node37" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title=" " alt="" coords="144,956,253,983"/>
-<area shape="rect" id="node40" href="$stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title=" " alt="" coords="153,1204,244,1231"/>
-<area shape="rect" id="node3" href="$chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d" title="Adc1 callback." alt="" coords="355,107,462,133"/>
-<area shape="rect" id="node4" href="$chibios_2mcu__periph_2adc__arch_8c.html#aba229c19557de0c492527630ad132f6d" title="Configure the ADC conversion group depending on the architecture." alt="" coords="353,157,465,184"/>
-<area shape="rect" id="node5" href="$chibios_2mcu__periph_2adc__arch_8c.html#ab33213b168f1b881ddc092b70d45e130" title="Adc error callback." alt="" coords="343,208,474,235"/>
-<area shape="rect" id="node6" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6" title="Setup a gpio for analog use." alt="" coords="323,5,494,32"/>
-<area shape="rect" id="node7" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="331,56,487,83"/>
-<area shape="rect" id="node17" href="$chibios_2mcu__periph_2rng__arch_8c.html#ab7aa95d4a1836ff073138d41d955e683" title=" " alt="" coords="363,563,454,589"/>
-<area shape="rect" id="node19" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization." alt="" coords="353,613,465,640"/>
-<area shape="rect" id="node20" href="$group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral." alt="" coords="374,664,443,691"/>
-<area shape="rect" id="node22" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization." alt="" coords="353,715,465,741"/>
-<area shape="rect" id="node23" href="$chibios_2mcu__periph_2spi__arch_8c.html#a1524dc1d1f9e729e7bb1831fa3f0b57d" title="Default spi thread." alt="" coords="607,740,677,767"/>
-<area shape="rect" id="node25" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization." alt="" coords="353,765,465,792"/>
-<area shape="rect" id="node27" href="$group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function" alt="" coords="336,461,481,488"/>
-<area shape="rect" id="node28" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="603,461,681,488"/>
-<area shape="rect" id="node30" href="$shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry." alt="" coords="346,816,471,843"/>
-<area shape="rect" id="node31" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title=" " alt="" coords="337,867,481,893"/>
-<area shape="rect" id="node32" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895" title=" " alt="" coords="591,841,693,868"/>
-<area shape="rect" id="node34" href="$linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5" title=" " alt="" coords="360,917,457,944"/>
-<area shape="rect" id="node35" href="$rt__priority_8h.html#a714c7483d11b82772f9184258793e5a1" title=" " alt="" coords="596,943,688,969"/>
-<area shape="rect" id="node36" href="$linux_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847" title=" " alt="" coords="563,892,721,919"/>
-<area shape="rect" id="node38" href="$linux_2mcu__periph_2udp__arch_8c.html#a4228ab15648ebad6b74132335c63635e" title="check for new udp packets to receive or send." alt="" coords="361,968,456,995"/>
-<area shape="rect" id="node39" href="$linux_2mcu__periph_2udp__arch_8c.html#a23264d73f7cf6197c139bf6841da1ee2" title="Read bytes from UDP." alt="" coords="591,993,693,1020"/>
-<area shape="rect" id="node41" href="$stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f" title="Set configuration and control callbacks for CDC device (from libopencm3 examples)" alt="" coords="336,1044,481,1071"/>
-<area shape="rect" id="node44" href="$stm32_2usb__ser__hw_8c.html#a1330c98d9b3b1ac7e86b04b86ec99548" title=" " alt="" coords="373,1095,444,1121"/>
-<area shape="rect" id="node45" href="$stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1" title=" " alt="" coords="313,1145,504,1172"/>
-<area shape="rect" id="node46" href="$stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4" title=" " alt="" coords="325,1197,492,1238"/>
-<area shape="rect" id="node47" href="$stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b" title=" " alt="" coords="343,1263,474,1289"/>
-<area shape="rect" id="node48" href="$stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36" title=" " alt="" coords="345,1313,472,1340"/>
-<area shape="rect" id="node49" href="$stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360" title=" " alt="" coords="333,1364,484,1391"/>
-<area shape="rect" id="node50" href="$stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f" title=" " alt="" coords="333,1415,484,1457"/>
-<area shape="rect" id="node42" href="$stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095" title="CDC device control request (from libopencm3 examples)" alt="" coords="552,1044,732,1071"/>
-<area shape="rect" id="node43" href="$stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0" title="RX callback for CDC device (from libopencm3 examples)" alt="" coords="567,1095,717,1121"/>
+<area shape="rect" id="Node000001" title="Microcontroller peripherals initialization." alt="" coords="5,524,84,549"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init." alt="" coords="162,104,235,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,523,53,446,70,331,95,216,111,171,130,139,148,126,151,130,134,142,116,173,100,218,75,332,58,447,50,524"/>
+<area shape="rect" id="Node000008" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init()." alt="" coords="155,153,242,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="45,523,55,455,73,355,98,255,113,216,130,188,141,179,145,183,134,192,118,218,103,257,78,356,60,456,50,524"/>
+<area shape="rect" id="Node000009" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init()." alt="" coords="151,203,246,228"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="43,523,46,471,57,395,67,354,83,312,103,273,130,238,137,231,141,235,134,241,108,275,88,314,73,355,62,397,51,472,49,524"/>
+<area shape="rect" id="Node000010" href="$dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c" title=" " alt="" coords="162,252,235,277"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="44,524,49,479,62,416,88,348,107,315,130,287,148,274,151,279,134,291,111,319,93,350,68,418,54,480,49,524"/>
+<area shape="rect" id="Node000011" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="159,301,238,327"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="45,523,53,487,68,437,93,384,110,358,130,336,145,325,148,330,134,340,114,362,98,386,73,439,58,489,51,525"/>
+<area shape="rect" id="Node000012" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="132,351,265,376"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="48,523,75,458,99,419,130,385,137,380,140,385,134,389,103,423,80,461,52,525"/>
+<area shape="rect" id="Node000013" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="337,647,480,672"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="55,548,85,591,107,614,133,632,180,650,229,660,278,664,324,665,324,670,278,670,228,665,178,655,131,636,104,618,81,594,51,551"/>
+<area shape="rect" id="Node000014" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup." alt="" coords="163,449,234,475"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="64,522,131,484,149,476,152,480,133,488,67,526"/>
+<area shape="rect" id="Node000015" href="$chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="Initialize the specific archittecture functions." alt="" coords="142,499,255,524"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="84,528,128,520,129,526,85,533"/>
+<area shape="rect" id="Node000016" href="$chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc" title=" " alt="" coords="163,400,234,425"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="52,522,83,480,105,456,130,434,149,424,152,429,134,439,109,459,87,483,56,525"/>
+<area shape="rect" id="Node000018" href="$group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title=" " alt="" coords="160,548,237,573"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="85,540,147,550,146,555,84,545"/>
+<area shape="rect" id="Node000020" href="$group__spi.html#ga7da3469436debceb731ecb76c920efda" title=" " alt="" coords="160,748,237,773"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="51,549,59,585,74,634,98,687,115,712,134,733,149,744,146,748,130,737,110,715,94,690,69,636,53,587,45,550"/>
+<area shape="rect" id="Node000028" href="$group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title=" " alt="" coords="160,699,237,724"/>
+<area shape="poly" id="edge22_Node000001_Node000028" title=" " alt="" coords="53,548,82,609,105,645,134,677,152,690,149,695,130,681,101,648,77,611,48,551"/>
+<area shape="rect" id="Node000030" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function" alt="" coords="139,597,258,623"/>
+<area shape="poly" id="edge25_Node000001_Node000030" title=" " alt="" coords="68,547,133,582,150,590,148,595,131,587,66,552"/>
+<area shape="rect" id="Node000033" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title=" " alt="" coords="144,797,253,823"/>
+<area shape="poly" id="edge29_Node000001_Node000033" title=" " alt="" coords="49,549,55,593,68,655,93,723,111,755,134,783,140,788,136,792,130,787,107,758,88,725,63,657,49,594,44,550"/>
+<area shape="rect" id="Node000039" href="$linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title=" " alt="" coords="143,871,254,896"/>
+<area shape="poly" id="edge33_Node000001_Node000039" title=" " alt="" coords="50,549,55,599,69,672,94,755,112,795,134,832,148,848,164,861,160,865,144,852,130,836,107,797,89,757,64,673,50,600,44,550"/>
+<area shape="rect" id="Node000043" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title=" " alt="" coords="144,943,253,968"/>
+<area shape="poly" id="edge37_Node000001_Node000043" title=" " alt="" coords="49,549,51,609,62,701,72,753,87,806,108,858,134,906,147,921,162,933,159,937,143,925,130,909,103,860,82,808,67,755,56,702,45,610,43,549"/>
+<area shape="rect" id="Node000047" href="$stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title=" " alt="" coords="153,1156,244,1181"/>
+<area shape="poly" id="edge41_Node000001_Node000047" title=" " alt="" coords="50,549,79,721,104,848,135,979,163,1069,190,1142,185,1144,158,1071,129,980,98,850,73,722,45,550"/>
+<area shape="rect" id="Node000003" href="$chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d" title="Adc1 callback." alt="" coords="355,153,462,179"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,123,343,148,341,153,235,128"/>
+<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2adc__arch_8c.html#aba229c19557de0c492527630ad132f6d" title="Configure the ADC conversion group depending on the architecture." alt="" coords="353,203,465,228"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="237,124,267,138,282,151,291,164,300,176,315,188,340,199,338,204,312,192,296,180,287,167,278,155,264,143,234,129"/>
+<area shape="rect" id="Node000005" href="$chibios_2mcu__periph_2adc__arch_8c.html#ab33213b168f1b881ddc092b70d45e130" title="Adc error callback." alt="" coords="343,5,474,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="214,102,257,71,312,40,331,32,333,37,314,44,260,75,217,106"/>
+<area shape="rect" id="Node000006" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6" title="Setup a gpio for analog use." alt="" coords="323,55,494,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="235,106,340,81,341,86,236,111"/>
+<area shape="rect" id="Node000007" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="331,104,487,129"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="236,114,317,114,317,119,236,119"/>
+<area shape="rect" id="Node000017" href="$chibios_2mcu__periph_2rng__arch_8c.html#ab7aa95d4a1836ff073138d41d955e683" title=" " alt="" coords="363,400,454,425"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="234,410,350,410,350,415,234,415"/>
+<area shape="rect" id="Node000019" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization." alt="" coords="353,548,465,573"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="238,558,339,558,339,563,238,563"/>
+<area shape="rect" id="Node000021" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization." alt="" coords="353,745,465,771"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="238,758,339,756,339,762,238,763"/>
+<area shape="rect" id="Node000022" href="$chibios_2mcu__periph_2spi__arch_8c.html#a1524dc1d1f9e729e7bb1831fa3f0b57d" title="Default spi thread." alt="" coords="607,720,677,745"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="465,749,594,735,594,740,466,755"/>
+<area shape="rect" id="Node000029" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization." alt="" coords="353,696,465,721"/>
+<area shape="poly" id="edge23_Node000028_Node000029" title=" " alt="" coords="238,708,339,707,339,712,238,714"/>
+<area shape="poly" id="edge24_Node000029_Node000022" title=" " alt="" coords="466,712,594,725,594,730,465,717"/>
+<area shape="poly" id="edge26_Node000030_Node000013" title=" " alt="" coords="254,620,341,641,340,646,253,625"/>
+<area shape="rect" id="Node000031" href="$group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function" alt="" coords="336,597,481,623"/>
+<area shape="poly" id="edge27_Node000030_Node000031" title=" " alt="" coords="258,607,322,607,322,613,258,613"/>
+<area shape="rect" id="Node000032" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="603,597,681,623"/>
+<area shape="poly" id="edge28_Node000031_Node000032" title=" " alt="" coords="482,607,590,607,590,613,482,613"/>
+<area shape="rect" id="Node000034" href="$shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry." alt="" coords="346,844,471,869"/>
+<area shape="poly" id="edge30_Node000033_Node000034" title=" " alt="" coords="254,819,338,838,337,844,253,825"/>
+<area shape="rect" id="Node000035" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title=" " alt="" coords="337,795,481,820"/>
+<area shape="poly" id="edge31_Node000033_Node000035" title=" " alt="" coords="253,807,323,806,323,811,253,812"/>
+<area shape="rect" id="Node000036" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895" title=" " alt="" coords="591,795,693,820"/>
+<area shape="poly" id="edge32_Node000035_Node000036" title=" " alt="" coords="481,805,577,805,577,810,481,810"/>
+<area shape="rect" id="Node000040" href="$linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5" title=" " alt="" coords="360,893,457,919"/>
+<area shape="poly" id="edge34_Node000039_Node000040" title=" " alt="" coords="255,887,347,897,346,902,254,892"/>
+<area shape="rect" id="Node000041" href="$rt__priority_8h.html#a714c7483d11b82772f9184258793e5a1" title=" " alt="" coords="596,919,688,944"/>
+<area shape="poly" id="edge35_Node000040_Node000041" title=" " alt="" coords="458,909,582,922,582,928,458,914"/>
+<area shape="rect" id="Node000042" href="$linux_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847" title=" " alt="" coords="563,869,721,895"/>
+<area shape="poly" id="edge36_Node000040_Node000042" title=" " alt="" coords="458,898,549,889,549,894,458,904"/>
+<area shape="rect" id="Node000044" href="$linux_2mcu__periph_2udp__arch_8c.html#a4228ab15648ebad6b74132335c63635e" title="check for new udp packets to receive or send." alt="" coords="361,943,456,968"/>
+<area shape="poly" id="edge38_Node000043_Node000044" title=" " alt="" coords="253,953,348,953,348,958,253,958"/>
+<area shape="poly" id="edge39_Node000044_Node000041" title=" " alt="" coords="456,948,582,935,583,940,456,953"/>
+<area shape="rect" id="Node000045" href="$linux_2mcu__periph_2udp__arch_8c.html#a23264d73f7cf6197c139bf6841da1ee2" title="Read bytes from UDP." alt="" coords="591,968,693,993"/>
+<area shape="poly" id="edge40_Node000044_Node000045" title=" " alt="" coords="456,958,578,971,577,976,456,963"/>
+<area shape="rect" id="Node000048" href="$stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f" title="Set configuration and control callbacks for CDC device (from libopencm3 examples)" alt="" coords="336,1369,481,1395"/>
+<area shape="poly" id="edge42_Node000047_Node000048" title=" " alt="" coords="206,1181,219,1216,242,1263,273,1312,293,1335,315,1355,325,1361,323,1366,312,1359,289,1339,269,1316,237,1265,214,1218,201,1182"/>
+<area shape="rect" id="Node000053" href="$stm32_2usb__ser__hw_8c.html#a1330c98d9b3b1ac7e86b04b86ec99548" title=" " alt="" coords="373,992,444,1017"/>
+<area shape="poly" id="edge46_Node000047_Node000053" title=" " alt="" coords="204,1154,244,1093,275,1057,312,1026,335,1015,359,1008,360,1013,337,1020,315,1031,279,1061,248,1096,209,1157"/>
+<area shape="rect" id="Node000054" href="$stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1" title=" " alt="" coords="313,1041,504,1067"/>
+<area shape="poly" id="edge47_Node000047_Node000054" title=" " alt="" coords="211,1154,253,1116,282,1095,312,1077,332,1069,334,1073,315,1082,285,1099,257,1120,214,1158"/>
+<area shape="rect" id="Node000057" href="$stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4" title=" " alt="" coords="325,1091,492,1131"/>
+<area shape="poly" id="edge48_Node000047_Node000057" title=" " alt="" coords="244,1154,321,1132,323,1138,245,1159"/>
+<area shape="rect" id="Node000060" href="$stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b" title=" " alt="" coords="343,1156,474,1181"/>
+<area shape="poly" id="edge49_Node000047_Node000060" title=" " alt="" coords="244,1166,330,1166,330,1171,244,1171"/>
+<area shape="rect" id="Node000063" href="$stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36" title=" " alt="" coords="345,1205,472,1231"/>
+<area shape="poly" id="edge50_Node000047_Node000063" title=" " alt="" coords="245,1177,341,1200,340,1205,244,1182"/>
+<area shape="rect" id="Node000065" href="$stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360" title=" " alt="" coords="333,1255,484,1280"/>
+<area shape="poly" id="edge51_Node000047_Node000065" title=" " alt="" coords="218,1179,260,1209,314,1240,337,1248,335,1253,312,1244,257,1214,215,1184"/>
+<area shape="rect" id="Node000068" href="$stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f" title=" " alt="" coords="333,1305,484,1345"/>
+<area shape="poly" id="edge52_Node000047_Node000068" title=" " alt="" coords="211,1180,252,1232,281,1263,315,1289,327,1296,324,1301,312,1294,278,1267,248,1236,207,1183"/>
+<area shape="rect" id="Node000049" href="$stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095" title="CDC device control request (from libopencm3 examples)" alt="" coords="552,1320,732,1345"/>
+<area shape="poly" id="edge43_Node000048_Node000049" title=" " alt="" coords="469,1367,567,1346,568,1351,470,1372"/>
+<area shape="rect" id="Node000050" href="$stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0" title="RX callback for CDC device (from libopencm3 examples)" alt="" coords="567,1369,717,1395"/>
+<area shape="poly" id="edge44_Node000048_Node000050" title=" " alt="" coords="482,1379,553,1379,553,1385,482,1385"/>
+<area shape="rect" id="Node000052" href="$stm32_2usb__ser__hw_8c.html#a249c372d4216cf6de5a346625850ec63" title=" " alt="" coords="593,1419,691,1444"/>
+<area shape="poly" id="edge45_Node000048_Node000052" title=" " alt="" coords="470,1392,580,1416,579,1421,469,1397"/>
 </map>

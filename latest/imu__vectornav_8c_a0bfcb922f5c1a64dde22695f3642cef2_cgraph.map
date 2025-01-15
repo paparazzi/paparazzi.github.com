@@ -1,12 +1,21 @@
 <map id="imu_vectornav_event" name="imu_vectornav_event">
-<area shape="rect" id="node1" title="Event function to read and parse data from the serial port." alt="" coords="5,56,168,83"/>
-<area shape="rect" id="node2" href="$imu__vectornav_8c.html#aa773e594a6e95f3ca4aad637b7fc546c" title="Send ABI messages." alt="" coords="216,5,408,32"/>
-<area shape="rect" id="node3" href="$vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title=" " alt="" coords="259,56,365,83"/>
-<area shape="rect" id="node8" href="$vn200__serial_8c.html#a13f1a793a1a690aa4ff89764262c3644" title="Read received message and populate data struct with new measurements." alt="" coords="230,107,394,133"/>
-<area shape="rect" id="node4" href="$vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title=" " alt="" coords="466,56,609,83"/>
-<area shape="rect" id="node5" href="$vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine." alt="" coords="667,56,772,83"/>
-<area shape="rect" id="node6" href="$vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum." alt="" coords="820,56,909,83"/>
-<area shape="rect" id="node7" href="$vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message." alt="" coords="957,56,1065,83"/>
-<area shape="rect" id="node9" href="$vn200__serial_8c.html#a8691ed20ea97b2e193d9daf4501799bd" title="Check INS status." alt="" coords="460,107,615,133"/>
-<area shape="rect" id="node10" href="$vn200__serial_8c.html#a43111461bc87c4acc7776c1066392596" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1),..." alt="" coords="456,158,619,199"/>
+<area shape="rect" id="Node000001" title="Event function to read and parse data from the serial port." alt="" coords="5,55,168,80"/>
+<area shape="rect" id="Node000002" href="$imu__vectornav_8c.html#aa773e594a6e95f3ca4aad637b7fc546c" title="Send ABI messages." alt="" coords="216,5,408,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,52,239,31,241,36,146,57"/>
+<area shape="rect" id="Node000003" href="$vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title=" " alt="" coords="259,55,365,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,65,245,65,245,70,168,70"/>
+<area shape="rect" id="Node000008" href="$vn200__serial_8c.html#a13f1a793a1a690aa4ff89764262c3644" title="Read received message and populate data struct with new measurements." alt="" coords="230,104,394,129"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="146,77,241,98,239,104,145,83"/>
+<area shape="rect" id="Node000004" href="$vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title=" " alt="" coords="466,55,609,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="366,65,452,65,452,70,366,70"/>
+<area shape="rect" id="Node000005" href="$vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine." alt="" coords="667,55,772,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="609,65,652,65,652,70,609,70"/>
+<area shape="rect" id="Node000006" href="$vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum." alt="" coords="820,55,909,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="772,65,806,65,806,70,772,70"/>
+<area shape="rect" id="Node000007" href="$vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message." alt="" coords="957,55,1065,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="910,65,944,65,944,70,910,70"/>
+<area shape="rect" id="Node000009" href="$vn200__serial_8c.html#a8691ed20ea97b2e193d9daf4501799bd" title="Check INS status." alt="" coords="460,104,615,129"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="394,114,446,114,446,119,394,119"/>
+<area shape="rect" id="Node000010" href="$vn200__serial_8c.html#a43111461bc87c4acc7776c1066392596" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1),..." alt="" coords="456,154,619,194"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="363,127,446,148,444,153,362,132"/>
 </map>

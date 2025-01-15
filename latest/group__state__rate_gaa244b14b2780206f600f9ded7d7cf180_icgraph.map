@@ -1,10 +1,35 @@
 <map id="stateCalcBodyRates_i" name="stateCalcBodyRates_i">
-<area shape="rect" id="node1" title=" " alt="" coords="683,93,847,120"/>
-<area shape="rect" id="node2" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="476,93,635,120"/>
-<area shape="rect" id="node3" href="$ctrl__module__innerloop__demo_8c.html#a6dbfe79bbecd265d25ec3d8d21cb095b" title=" " alt="" coords="260,5,387,32"/>
-<area shape="rect" id="node5" href="$logger__control__effectiveness_8c.html#a34e7856739170b664a5dffcef7f4e5f1" title="Log the values to file." alt="" coords="219,57,428,98"/>
-<area shape="rect" id="node6" href="$stabilization__attitude__euler__int_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title=" " alt="" coords="284,123,363,149"/>
-<area shape="rect" id="node8" href="$stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="229,173,417,200"/>
-<area shape="rect" id="node4" href="$ctrl__module__innerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="5,5,171,32"/>
-<area shape="rect" id="node7" href="$stabilization__attitude__euler__int_8c.html#aa6d44b31198a20c867246136a48f8c67" title=" " alt="" coords="8,115,168,157"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="931,145,1095,171"/>
+<area shape="rect" id="Node000002" href="$group__state__rate.html#gaa06b41002d0092717b594a99b2bf7582" title="Get vehicle body angular rate (int)." alt="" coords="724,145,883,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="917,161,883,161,883,155,917,155"/>
+<area shape="rect" id="Node000003" href="$ctrl__module__innerloop__demo_8c.html#a6dbfe79bbecd265d25ec3d8d21cb095b" title=" " alt="" coords="508,5,635,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="781,136,735,90,706,66,675,46,634,31,636,26,677,41,709,62,739,86,785,133"/>
+<area shape="rect" id="Node000005" href="$logger__control__effectiveness_8c.html#a34e7856739170b664a5dffcef7f4e5f1" title="Log the values to file." alt="" coords="467,55,676,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="759,143,675,110,639,98,641,93,677,105,761,138"/>
+<area shape="rect" id="Node000006" href="$stabilization__attitude__euler__int_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title=" " alt="" coords="532,120,611,145"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="710,150,610,140,611,134,710,145"/>
+<area shape="rect" id="Node000008" href="$stabilization__attitude__quat__int_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title=" " alt="" coords="532,169,611,195"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="710,170,611,181,610,175,710,165"/>
+<area shape="rect" id="Node000010" href="$stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="477,237,665,263"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="759,178,605,240,603,235,757,173"/>
+<area shape="rect" id="Node000017" href="$stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="477,287,665,312"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="785,183,739,231,710,255,677,276,646,289,644,284,675,272,707,251,736,227,781,179"/>
+<area shape="rect" id="Node000004" href="$ctrl__module__innerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="245,5,410,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="494,21,410,21,410,15,494,15"/>
+<area shape="rect" id="Node000007" href="$stabilization__attitude__euler__int_8c.html#aa6d44b31198a20c867246136a48f8c67" title=" " alt="" coords="247,77,407,117"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="518,128,407,111,408,106,519,122"/>
+<area shape="rect" id="Node000009" href="$stabilization__attitude__quat__int_8c.html#a2d2afbbb0b48148c38e8cb6c475e06e8" title=" " alt="" coords="247,141,407,181"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="518,180,407,170,408,165,518,175"/>
+<area shape="rect" id="Node000011" href="$guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="259,205,395,231"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="463,239,395,229,396,224,464,233"/>
+<area shape="rect" id="Node000012" href="$ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="245,255,410,280"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="464,260,410,264,410,259,463,255"/>
+<area shape="rect" id="Node000013" href="$stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="262,304,393,329"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="497,269,467,277,420,294,377,306,376,301,418,289,466,271,496,263"/>
+<area shape="rect" id="Node000016" href="$optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="236,353,419,379"/>
+<area shape="poly" id="edge15_Node000010_Node000016" title=" " alt="" coords="478,270,468,276,453,292,445,308,437,326,420,343,395,356,393,351,417,339,432,323,440,306,448,288,465,272,475,266"/>
+<area shape="rect" id="Node000014" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,279,188,304"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="248,311,188,304,188,299,248,305"/>
+<area shape="rect" id="Node000015" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,328,179,353"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="249,327,180,335,179,329,248,322"/>
 </map>

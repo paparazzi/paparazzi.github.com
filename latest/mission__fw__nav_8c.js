@@ -11,7 +11,5 @@ var mission__fw__nav_8c =
     [ "mission_wait_pattern", "mission__fw__nav_8c.html#a10c09d53a7656ca864dbde4d2d90ac5f", null ],
     [ "dt_navigation", "mission__fw__nav_8c.html#a92032860fee41019bb05444dec447451", null ],
     [ "last_wp_f", "mission__fw__nav_8c.html#ace2e9ed0bbdd8359ab176ae004a2d957", null ],
-    [ "mission_wait_circle", "mission__fw__nav_8c.html#ae62485be2a8775e1ebad21f86f68bd6a", null ],
-    [ "mission_wait_started", "mission__fw__nav_8c.html#af52e94b6fc7933932b718c6489d4a549", null ],
-    [ "mission_wait_time", "mission__fw__nav_8c.html#a18e5d2e22addab5db40e7b6088229a0b", null ]
+    [ "mission_wait_started", "mission__fw__nav_8c.html#af52e94b6fc7933932b718c6489d4a549", null ]
 ];

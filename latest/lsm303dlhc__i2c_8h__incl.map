@@ -1,15 +1,32 @@
 <map id="sw/airborne/peripherals/lsm303dlhc_i2c.h" name="sw/airborne/peripherals/lsm303dlhc_i2c.h">
-<area shape="rect" id="node1" title=" " alt="" coords="178,5,353,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="419,259,474,285"/>
-<area shape="rect" id="node3" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="107,95,240,121"/>
-<area shape="rect" id="node5" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="627,95,807,121"/>
-<area shape="rect" id="node12" href="$lsm303dlhc_8h.html" title="Driver for ST LSM303DLHC 3D accelerometer and magnetometer." alt="" coords="264,95,451,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="33,177,201,203"/>
-<area shape="rect" id="node6" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="850,177,1006,203"/>
-<area shape="rect" id="node10" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="526,177,679,203"/>
-<area shape="rect" id="node11" title=" " alt="" coords="755,177,826,203"/>
-<area shape="rect" id="node7" title=" " alt="" coords="986,259,1049,285"/>
-<area shape="rect" id="node8" title=" " alt="" coords="799,259,870,285"/>
-<area shape="rect" id="node9" title=" " alt="" coords="894,259,962,285"/>
-<area shape="rect" id="node13" href="$lsm303dlhc__regs_8h.html" title="Register defs for ST LSM303DLHC 3D accelerometer and magnetometer." alt="" coords="327,169,502,211"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="178,5,353,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="419,255,474,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,48,125,75,87,93,54,112,28,133,12,156,10,180,23,205,49,223,89,238,139,248,196,256,311,263,405,264,405,269,311,268,195,261,138,254,88,243,47,228,19,208,4,181,7,154,24,130,51,108,85,88,123,70,198,43"/>
+<area shape="rect" id="Node000003" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="107,93,240,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,48,199,86,196,82,241,44"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="627,93,807,119"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="353,39,638,88,638,94,352,44"/>
+<area shape="rect" id="Node000012" href="$lsm303dlhc_8h.html" title="Driver for ST LSM303DLHC 3D accelerometer and magnetometer." alt="" coords="264,93,451,119"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="289,44,335,82,331,86,286,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="188,117,238,158,305,204,357,230,407,250,405,255,355,235,303,209,234,162,184,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="33,174,201,199"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="167,120,136,164,131,161,163,117"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="720,119,717,162,709,187,694,209,679,219,658,228,603,244,488,264,487,259,602,239,656,223,676,214,690,205,704,185,711,161,715,119"/>
+<area shape="rect" id="Node000006" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="850,174,1006,199"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="749,116,885,167,883,172,747,121"/>
+<area shape="rect" id="Node000010" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="526,174,679,199"/>
+<area shape="poly" id="edge12_Node000005_Node000010" title=" " alt="" coords="702,121,632,168,629,164,699,117"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="755,174,826,199"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="730,117,772,162,768,165,726,121"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="877,202,839,209,643,241,488,263,487,258,642,236,838,204,875,197"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="986,255,1049,280"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="943,198,996,244,992,248,939,202"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="799,255,870,280"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="916,202,861,248,857,244,912,197"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="894,255,962,280"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="931,200,931,241,925,241,925,200"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="581,202,482,251,480,246,579,197"/>
+<area shape="poly" id="edge16_Node000012_Node000002" title=" " alt="" coords="347,121,332,138,318,160,311,184,312,195,317,205,335,225,357,240,407,257,405,262,355,244,331,229,312,208,307,196,306,183,313,158,328,135,343,117"/>
+<area shape="rect" id="Node000013" href="$lsm303dlhc__regs_8h.html" title="Register defs for ST LSM303DLHC 3D accelerometer and magnetometer." alt="" coords="327,167,502,207"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="368,117,395,154,391,157,364,120"/>
 </map>

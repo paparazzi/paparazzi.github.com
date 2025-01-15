@@ -1,17 +1,37 @@
 <map id="sw/airborne/peripherals/ads1220.h" name="sw/airborne/peripherals/ads1220.h">
-<area shape="rect" id="node1" title="Driver for the ADS1220 24&#45;bits ADC from TI SPI communication." alt="" coords="392,5,567,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="415,251,469,278"/>
-<area shape="rect" id="node3" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="261,95,441,121"/>
-<area shape="rect" id="node10" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="575,95,709,121"/>
-<area shape="rect" id="node4" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="56,169,212,196"/>
-<area shape="rect" id="node8" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="288,169,441,196"/>
-<area shape="rect" id="node9" title=" " alt="" coords="532,251,603,278"/>
-<area shape="rect" id="node5" title=" " alt="" coords="192,251,255,278"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,251,76,278"/>
-<area shape="rect" id="node7" title=" " alt="" coords="100,251,168,278"/>
-<area shape="rect" id="node11" title=" " alt="" coords="618,169,786,196"/>
-<area shape="rect" id="node12" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="810,169,983,196"/>
-<area shape="rect" id="node13" title=" " alt="" coords="723,251,809,278"/>
-<area shape="rect" id="node14" title=" " alt="" coords="833,251,960,278"/>
-<area shape="rect" id="node15" title=" " alt="" coords="984,244,1145,285"/>
+<area shape="rect" id="Node000001" title="Driver for the ADS1220 24&#45;bits ADC from TI SPI communication." alt="" coords="392,5,567,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="415,247,469,273"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="479,46,449,234,443,233,474,45"/>
+<area shape="rect" id="Node000003" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="261,93,441,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="450,48,383,88,380,84,447,43"/>
+<area shape="rect" id="Node000010" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="575,93,709,119"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="519,43,607,85,605,90,517,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="329,121,306,135,285,152,274,171,273,181,278,191,303,216,335,234,369,246,401,252,400,258,368,251,332,239,299,220,273,193,268,182,269,170,281,149,303,131,326,117"/>
+<area shape="rect" id="Node000004" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="56,167,212,192"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="317,121,183,165,181,160,316,116"/>
+<area shape="rect" id="Node000008" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="288,167,441,192"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="356,119,363,153,357,154,351,119"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="532,247,603,273"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="374,116,454,164,545,236,542,240,451,169,371,121"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="179,189,402,246,401,251,178,195"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,247,255,273"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="149,190,202,236,198,240,145,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,247,76,273"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="122,194,67,240,63,236,119,190"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="100,247,168,273"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="137,192,137,233,131,233,131,192"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="378,190,423,236,419,239,374,194"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="629,121,470,241,466,237,625,117"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="618,167,786,192"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="654,117,686,154,681,158,650,121"/>
+<area shape="rect" id="Node000012" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="810,167,983,192"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="684,116,843,160,842,166,682,121"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="813,195,676,215,521,243,483,251,482,246,520,237,675,210,812,189"/>
+<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="849,195,617,250,616,245,848,189"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="723,247,809,273"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="879,194,798,242,796,238,876,190"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="833,247,960,273"/>
+<area shape="poly" id="edge19_Node000012_Node000014" title=" " alt="" coords="899,192,899,233,894,233,894,192"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="984,240,1145,280"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="922,190,1013,232,1011,237,920,194"/>
 </map>

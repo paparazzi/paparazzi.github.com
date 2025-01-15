@@ -1,32 +1,85 @@
 <map id="sw/airborne/modules/imu/imu_aspirin_i2c.c" name="sw/airborne/modules/imu/imu_aspirin_i2c.c">
-<area shape="rect" id="node1" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="1225,5,1393,47"/>
-<area shape="rect" id="node2" href="$imu__aspirin__i2c_8h.html" title="Interface for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="1012,95,1199,136"/>
-<area shape="rect" id="node4" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="586,184,734,211"/>
-<area shape="rect" id="node18" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="1223,355,1356,382"/>
-<area shape="rect" id="node26" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1656,102,1803,129"/>
-<area shape="rect" id="node28" title=" " alt="" coords="1468,102,1628,129"/>
-<area shape="rect" id="node29" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1301,102,1443,129"/>
-<area shape="rect" id="node3" title=" " alt="" coords="697,266,857,293"/>
-<area shape="rect" id="node17" href="$itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense." alt="" coords="1057,266,1217,293"/>
-<area shape="rect" id="node21" href="$hmc58xx_8h.html" title=" " alt="" coords="1292,266,1463,293"/>
-<area shape="rect" id="node23" href="$adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C." alt="" coords="882,259,1033,300"/>
-<area shape="rect" id="node5" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="557,355,737,382"/>
-<area shape="rect" id="node13" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="125,355,317,382"/>
-<area shape="rect" id="node15" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="261,259,427,300"/>
-<area shape="rect" id="node16" href="$low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="452,266,623,293"/>
-<area shape="rect" id="node6" title=" " alt="" coords="850,527,905,553"/>
-<area shape="rect" id="node7" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="257,445,413,471"/>
-<area shape="rect" id="node11" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="686,445,839,471"/>
-<area shape="rect" id="node12" title=" " alt="" coords="539,445,610,471"/>
-<area shape="rect" id="node8" title=" " alt="" coords="199,527,262,553"/>
-<area shape="rect" id="node9" title=" " alt="" coords="299,527,370,553"/>
-<area shape="rect" id="node10" title=" " alt="" coords="37,527,105,553"/>
-<area shape="rect" id="node14" title=" " alt="" coords="24,445,181,471"/>
-<area shape="rect" id="node20" href="$itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros." alt="" coords="999,348,1147,389"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1215,445,1383,471"/>
-<area shape="rect" id="node22" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="1381,348,1539,389"/>
-<area shape="rect" id="node24" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="812,355,975,382"/>
-<area shape="rect" id="node25" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="966,437,1117,479"/>
-<area shape="rect" id="node27" title=" " alt="" coords="1666,184,1793,211"/>
-<area shape="rect" id="node30" title=" " alt="" coords="1293,184,1470,211"/>
+<area shape="rect" id="Node000001" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="1225,5,1393,45"/>
+<area shape="rect" id="Node000002" href="$imu__aspirin__i2c_8h.html" title="Interface for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="1012,93,1199,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1266,48,1163,91,1161,86,1263,43"/>
+<area shape="rect" id="Node000004" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="586,181,734,207"/>
+<area shape="poly" id="edge46_Node000001_Node000004" title=" " alt="" coords="1225,46,1001,96,840,140,709,180,708,175,839,135,999,91,1224,41"/>
+<area shape="rect" id="Node000018" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="1223,350,1356,375"/>
+<area shape="poly" id="edge49_Node000001_Node000018" title=" " alt="" coords="1305,46,1292,94,1282,150,1279,194,1283,294,1288,336,1282,336,1277,295,1273,193,1277,149,1287,93,1300,45"/>
+<area shape="rect" id="Node000026" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1656,101,1803,126"/>
+<area shape="poly" id="edge47_Node000001_Node000026" title=" " alt="" coords="1394,41,1640,91,1662,95,1661,100,1639,96,1393,46"/>
+<area shape="rect" id="Node000028" title=" " alt="" coords="1468,101,1628,126"/>
+<area shape="poly" id="edge50_Node000001_Node000028" title=" " alt="" coords="1363,43,1504,94,1502,99,1361,48"/>
+<area shape="rect" id="Node000029" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1301,101,1443,126"/>
+<area shape="poly" id="edge51_Node000001_Node000029" title=" " alt="" coords="1325,44,1357,88,1353,91,1321,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="697,262,857,287"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1067,136,814,258,812,254,1065,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1012,134,738,182,738,176,1011,128"/>
+<area shape="rect" id="Node000017" href="$itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense." alt="" coords="1057,262,1217,287"/>
+<area shape="poly" id="edge27_Node000002_Node000017" title=" " alt="" coords="1112,133,1135,248,1130,249,1106,134"/>
+<area shape="rect" id="Node000021" href="$hmc58xx_8h.html" title=" " alt="" coords="1292,262,1463,287"/>
+<area shape="poly" id="edge34_Node000002_Node000021" title=" " alt="" coords="1139,131,1347,253,1344,257,1136,136"/>
+<area shape="rect" id="Node000023" href="$adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C." alt="" coords="882,255,1033,295"/>
+<area shape="poly" id="edge39_Node000002_Node000023" title=" " alt="" coords="1090,135,986,246,982,243,1086,132"/>
+<area shape="poly" id="edge26_Node000004_Node000003" title=" " alt="" coords="679,205,750,252,747,256,676,209"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="557,350,737,375"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="662,207,651,336,646,336,656,207"/>
+<area shape="rect" id="Node000013" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="125,350,317,375"/>
+<area shape="poly" id="edge14_Node000004_Node000013" title=" " alt="" coords="586,199,496,203,396,213,307,230,273,242,250,257,236,274,228,295,223,337,217,336,223,293,232,271,246,253,271,237,306,225,395,208,495,198,586,194"/>
+<area shape="rect" id="Node000015" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="261,255,427,295"/>
+<area shape="poly" id="edge19_Node000004_Node000015" title=" " alt="" coords="615,209,434,254,432,249,613,204"/>
+<area shape="rect" id="Node000016" href="$low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="452,262,623,287"/>
+<area shape="poly" id="edge23_Node000004_Node000016" title=" " alt="" coords="643,209,568,257,565,252,640,205"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="850,519,905,544"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="649,375,653,421,661,447,675,469,712,496,754,513,798,523,837,527,836,532,797,528,753,518,709,501,671,472,656,449,647,422,643,376"/>
+<area shape="rect" id="Node000007" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="257,438,413,463"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="605,378,390,437,389,432,604,373"/>
+<area shape="rect" id="Node000011" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="686,438,839,463"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="664,373,737,428,734,432,661,378"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="539,438,610,463"/>
+<area shape="poly" id="edge13_Node000005_Node000012" title=" " alt="" coords="639,377,595,429,591,425,635,374"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="392,461,432,468,660,501,836,523,836,528,660,506,431,473,391,466"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="199,519,262,544"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="321,466,258,513,255,508,318,461"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="299,519,370,544"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="337,464,337,505,332,505,332,464"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="37,519,105,544"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="297,466,118,519,117,514,295,461"/>
+<area shape="poly" id="edge12_Node000011_Node000006" title=" " alt="" coords="781,461,851,509,848,513,778,466"/>
+<area shape="poly" id="edge15_Node000013_Node000007" title=" " alt="" coords="238,373,310,428,307,432,235,378"/>
+<area shape="poly" id="edge18_Node000013_Node000008" title=" " alt="" coords="225,375,232,505,227,505,219,376"/>
+<area shape="poly" id="edge17_Node000013_Node000010" title=" " alt="" coords="125,373,94,380,64,392,36,409,14,432,8,451,15,471,29,491,46,508,43,512,25,494,10,474,3,451,10,429,33,405,61,388,92,375,124,367"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="24,438,181,463"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="207,378,131,432,128,428,204,373"/>
+<area shape="poly" id="edge20_Node000015_Node000005" title=" " alt="" coords="411,292,594,344,593,349,410,297"/>
+<area shape="poly" id="edge22_Node000015_Node000006" title=" " alt="" coords="355,294,377,332,410,380,452,429,477,450,504,468,530,480,567,490,659,506,836,525,836,530,658,511,566,495,529,485,501,473,474,455,449,433,405,383,372,334,351,296"/>
+<area shape="poly" id="edge21_Node000015_Node000013" title=" " alt="" coords="318,297,250,344,247,340,315,293"/>
+<area shape="poly" id="edge25_Node000016_Node000005" title=" " alt="" coords="554,285,622,339,619,343,550,290"/>
+<area shape="poly" id="edge24_Node000016_Node000006" title=" " alt="" coords="534,288,521,323,509,371,507,397,509,423,515,447,529,469,549,484,581,497,665,514,758,523,836,527,836,532,758,529,664,519,579,502,546,489,525,472,511,450,503,424,502,397,504,371,516,321,529,286"/>
+<area shape="poly" id="edge29_Node000017_Node000005" title=" " alt="" coords="1083,290,1044,297,732,350,732,345,1043,292,1082,285"/>
+<area shape="poly" id="edge28_Node000017_Node000006" title=" " alt="" coords="1145,287,1155,312,1163,342,1168,381,1167,414,1156,444,1131,473,1093,492,1036,508,918,528,918,523,1035,503,1091,487,1128,469,1151,441,1162,413,1163,382,1157,343,1149,313,1140,288"/>
+<area shape="poly" id="edge30_Node000017_Node000018" title=" " alt="" coords="1159,285,1258,341,1255,345,1156,290"/>
+<area shape="rect" id="Node000020" href="$itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros." alt="" coords="999,343,1147,383"/>
+<area shape="poly" id="edge33_Node000017_Node000020" title=" " alt="" coords="1131,289,1098,333,1094,330,1126,286"/>
+<area shape="poly" id="edge31_Node000018_Node000006" title=" " alt="" coords="1317,373,1351,391,1384,415,1397,428,1404,443,1405,458,1396,473,1371,486,1324,497,1189,514,1038,525,918,531,918,526,1037,520,1188,508,1323,491,1369,481,1393,469,1400,456,1399,444,1392,431,1381,419,1348,396,1315,378"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1215,438,1383,463"/>
+<area shape="poly" id="edge32_Node000018_Node000019" title=" " alt="" coords="1293,375,1298,424,1293,424,1288,376"/>
+<area shape="poly" id="edge37_Node000021_Node000005" title=" " alt="" coords="1292,290,1230,297,800,345,751,351,750,346,800,340,1229,292,1291,284"/>
+<area shape="poly" id="edge35_Node000021_Node000006" title=" " alt="" coords="1463,285,1513,305,1536,321,1554,341,1562,362,1554,384,1528,421,1498,444,1463,458,1418,473,1374,485,1316,495,1175,512,919,531,918,525,1174,507,1316,490,1373,480,1416,468,1461,453,1496,439,1524,418,1550,381,1556,362,1550,344,1532,325,1511,310,1461,290"/>
+<area shape="poly" id="edge36_Node000021_Node000018" title=" " alt="" coords="1367,289,1313,342,1309,338,1364,286"/>
+<area shape="rect" id="Node000022" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="1381,343,1539,383"/>
+<area shape="poly" id="edge38_Node000021_Node000022" title=" " alt="" coords="1390,286,1434,331,1430,334,1386,289"/>
+<area shape="poly" id="edge41_Node000023_Node000005" title=" " alt="" coords="890,297,702,349,700,344,888,292"/>
+<area shape="poly" id="edge40_Node000023_Node000006" title=" " alt="" coords="896,297,838,320,816,332,802,344,796,362,802,382,813,397,825,405,839,414,853,429,869,468,877,504,872,505,864,469,848,432,836,418,822,410,809,400,798,384,791,362,798,341,812,328,836,315,894,292"/>
+<area shape="poly" id="edge42_Node000023_Node000018" title=" " alt="" coords="1031,292,1233,344,1231,349,1029,297"/>
+<area shape="rect" id="Node000024" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="812,350,975,375"/>
+<area shape="poly" id="edge43_Node000023_Node000024" title=" " alt="" coords="945,297,912,340,908,337,941,293"/>
+<area shape="poly" id="edge44_Node000024_Node000006" title=" " alt="" coords="898,376,901,418,899,471,889,506,884,505,893,470,896,418,892,376"/>
+<area shape="rect" id="Node000025" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="966,431,1117,471"/>
+<area shape="poly" id="edge45_Node000024_Node000025" title=" " alt="" coords="915,373,998,421,995,426,912,378"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1666,181,1793,207"/>
+<area shape="poly" id="edge48_Node000026_Node000027" title=" " alt="" coords="1732,126,1732,167,1727,167,1727,126"/>
+<area shape="poly" id="edge52_Node000029_Node000006" title=" " alt="" coords="1403,124,1467,150,1541,188,1576,208,1604,230,1623,252,1631,273,1631,364,1627,391,1618,412,1603,427,1584,439,1538,456,1483,473,1434,487,1368,499,1206,516,1042,526,919,531,918,526,1042,521,1206,510,1367,493,1433,482,1482,468,1536,451,1582,434,1600,423,1614,409,1622,390,1625,364,1625,274,1619,254,1600,234,1573,213,1539,192,1464,155,1401,128"/>
+<area shape="rect" id="Node000030" title=" " alt="" coords="1293,181,1470,207"/>
+<area shape="poly" id="edge53_Node000029_Node000030" title=" " alt="" coords="1376,126,1381,167,1376,168,1371,126"/>
 </map>

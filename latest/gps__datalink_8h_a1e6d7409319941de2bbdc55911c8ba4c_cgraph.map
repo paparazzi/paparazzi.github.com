@@ -1,11 +1,20 @@
 <map id="gps_datalink_parse_EXTERNAL_POSE" name="gps_datalink_parse_EXTERNAL_POSE">
-<area shape="rect" id="node1" title="Parse the full EXTERNAL_POSE message and publish as GPS through ABI." alt="" coords="5,49,153,90"/>
-<area shape="rect" id="node2" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="203,31,358,57"/>
-<area shape="rect" id="node3" href="$gps__datalink_8c.html#abc548e6359a5d430877db4ce4ced1ed6" title="Publish the GPS data." alt="" coords="201,81,360,108"/>
-<area shape="rect" id="node4" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF." alt="" coords="408,5,560,32"/>
-<area shape="rect" id="node5" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="608,31,755,57"/>
-<area shape="rect" id="node6" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="411,107,557,133"/>
-<area shape="rect" id="node7" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="432,157,536,184"/>
-<area shape="rect" id="node8" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="627,132,735,159"/>
-<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="629,183,734,209"/>
+<area shape="rect" id="Node000001" title="Parse the full EXTERNAL_POSE message and publish as GPS through ABI." alt="" coords="5,50,153,90"/>
+<area shape="rect" id="Node000002" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="203,32,358,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,58,189,53,190,59,154,63"/>
+<area shape="rect" id="Node000003" href="$gps__datalink_8c.html#abc548e6359a5d430877db4ce4ced1ed6" title="Publish the GPS data." alt="" coords="201,81,360,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,76,188,80,187,86,153,81"/>
+<area shape="rect" id="Node000004" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF." alt="" coords="408,5,560,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,79,359,66,440,34,442,39,361,71,324,84"/>
+<area shape="rect" id="Node000005" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="608,31,755,56"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="360,81,594,52,594,57,360,87"/>
+<area shape="rect" id="Node000006" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="411,107,557,132"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="360,101,397,106,396,111,360,107"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="432,156,536,181"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="313,104,409,142,429,149,427,154,407,147,311,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="560,25,595,30,594,35,560,30"/>
+<area shape="rect" id="Node000008" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="627,131,735,156"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="536,159,614,149,614,155,537,165"/>
+<area shape="rect" id="Node000009" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="629,180,734,205"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="537,172,615,182,615,187,536,178"/>
 </map>

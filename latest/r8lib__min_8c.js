@@ -10,8 +10,8 @@ var r8lib__min_8c =
     [ "r8_sign", "r8lib__min_8c.html#abd6a2ff6da5741932ef4a7f7948b9768", null ],
     [ "r8mat_amax", "r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af", null ],
     [ "r8mat_copy_new", "r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6", null ],
-    [ "r8mat_l_solve", "r8lib__min_8c.html#ae51d36f8d80154f6f4f4c1ea6f9f0071", null ],
-    [ "r8mat_lt_solve", "r8lib__min_8c.html#a2d7c0208acef4b0f765a7707ce778ebe", null ],
-    [ "r8mat_mtv_new", "r8lib__min_8c.html#a485e8a56c70ee2f2064ecf3ab725049d", null ],
+    [ "r8mat_l_solve", "r8lib__min_8c.html#a99ed0d012b16238e3cfa000ec0cf8623", null ],
+    [ "r8mat_lt_solve", "r8lib__min_8c.html#a4dbeaa310412840225088f411e5fd62b", null ],
+    [ "r8mat_mtv_new", "r8lib__min_8c.html#a213230079884ee5895ad28ea92819b0b", null ],
     [ "r8vec_max", "r8lib__min_8c.html#a9420662405a2d775905c3dbd08ca9300", null ]
 ];

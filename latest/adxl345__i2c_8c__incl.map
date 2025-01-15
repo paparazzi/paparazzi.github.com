@@ -1,16 +1,35 @@
 <map id="sw/airborne/peripherals/adxl345_i2c.c" name="sw/airborne/peripherals/adxl345_i2c.c">
-<area shape="rect" id="node1" title="Driver for ADXL345 accelerometer using I2C." alt="" coords="913,5,1088,47"/>
-<area shape="rect" id="node2" href="$adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C." alt="" coords="841,95,992,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="731,348,785,375"/>
-<area shape="rect" id="node4" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="352,184,532,211"/>
-<area shape="rect" id="node11" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="678,184,811,211"/>
-<area shape="rect" id="node13" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="835,184,998,211"/>
-<area shape="rect" id="node5" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="49,266,205,293"/>
-<area shape="rect" id="node9" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="229,266,383,293"/>
-<area shape="rect" id="node10" title=" " alt="" coords="407,266,477,293"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,348,68,375"/>
-<area shape="rect" id="node7" title=" " alt="" coords="92,348,163,375"/>
-<area shape="rect" id="node8" title=" " alt="" coords="187,348,255,375"/>
-<area shape="rect" id="node12" title=" " alt="" coords="553,266,721,293"/>
-<area shape="rect" id="node14" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="796,259,947,300"/>
+<area shape="rect" id="Node000001" title="Driver for ADXL345 accelerometer using I2C." alt="" coords="913,5,1088,45"/>
+<area shape="rect" id="Node000002" href="$adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C." alt="" coords="841,93,992,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="984,47,947,85,943,82,980,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="731,343,785,368"/>
+<area shape="poly" id="edge19_Node000001_Node000003" title=" " alt="" coords="1012,45,1031,95,1046,163,1049,199,1045,234,1034,268,1013,297,998,308,976,317,919,333,799,352,798,347,917,328,974,312,995,303,1009,293,1029,265,1040,233,1043,199,1041,163,1026,96,1007,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="960,131,989,152,1012,180,1019,211,1013,244,999,274,983,297,962,313,939,326,891,344,842,353,799,357,799,352,841,348,889,339,937,321,959,308,979,293,995,272,1008,242,1013,211,1008,182,986,156,957,136"/>
+<area shape="rect" id="Node000004" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="352,181,532,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="841,130,525,182,524,176,840,124"/>
+<area shape="rect" id="Node000011" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="678,181,811,207"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="877,136,783,178,781,173,874,131"/>
+<area shape="rect" id="Node000013" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="835,181,998,207"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="919,134,919,167,914,167,914,134"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="452,205,488,248,514,272,542,292,586,314,633,329,717,347,716,352,632,334,584,318,539,297,510,276,484,252,448,209"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="49,262,205,287"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="397,209,187,261,186,256,396,204"/>
+<area shape="rect" id="Node000009" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="229,262,383,287"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="423,209,339,257,337,253,421,205"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="407,262,477,287"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="445,207,445,248,439,248,439,207"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="178,285,217,292,361,312,503,328,717,348,717,354,502,334,360,318,216,297,177,290"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,343,68,368"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="116,290,62,336,59,332,112,285"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="92,343,163,368"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="130,288,130,329,125,329,125,288"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="187,343,255,368"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="143,285,198,332,195,336,139,290"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="358,285,394,292,718,345,717,351,394,297,357,290"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="748,207,759,328,753,329,743,207"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="553,262,721,287"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="730,209,665,256,662,252,727,205"/>
+<area shape="poly" id="edge17_Node000013_Node000003" title=" " alt="" coords="931,206,947,224,962,247,969,272,967,284,962,296,946,313,927,327,884,346,839,355,799,358,799,353,839,350,882,340,924,322,942,309,957,293,962,283,963,272,957,249,943,227,927,209"/>
+<area shape="rect" id="Node000014" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="796,255,947,295"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="912,208,891,244,887,242,908,206"/>
 </map>

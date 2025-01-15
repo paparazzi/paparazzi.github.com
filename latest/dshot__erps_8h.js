@@ -35,8 +35,6 @@ var dshot__erps_8h =
       [ "EDT_STRESS", "dshot__erps_8h.html#a3a33f6c24b902009c998b325339b6791a3a1e33515cc74b944be35d376f9ef2c4", null ],
       [ "EDT_STATUS", "dshot__erps_8h.html#a3a33f6c24b902009c998b325339b6791a1fee0d2e9a09c1e9c4d09ef446d5a5ff", null ]
     ] ],
-    [ "_Static_assert", "dshot__erps_8h.html#aea7dc1a6462942b145485e293f7c8301", null ],
-    [ "_Static_assert", "dshot__erps_8h.html#acfb1c8d18424780da609905975d1de5c", null ],
     [ "DshotErpsCheckCrc4", "dshot__erps_8h.html#ace123957b21d8867a0b34adb5d2b06fc", null ],
     [ "DshotErpsEdtCentiVolts", "dshot__erps_8h.html#af48a5fbd24c524568d10af08dd8d62e1", null ],
     [ "DshotErpsEdtCurrentAmp", "dshot__erps_8h.html#afaa402e1740fb0a3029ccbb79c211ab3", null ],
@@ -48,6 +46,6 @@ var dshot__erps_8h =
     [ "DshotErpsGetFrame", "dshot__erps_8h.html#ad1048c2e1f1f523bd7e1a2756ddd625f", null ],
     [ "DshotErpsGetRpm", "dshot__erps_8h.html#a46d60ecb807c80ca35c9b5f86adad915", null ],
     [ "DshotErpsIsEdt", "dshot__erps_8h.html#afdba97cb3aa9b7a144840d806b9a38c5", null ],
-    [ "DshotErpsSetFromFrame", "dshot__erps_8h.html#a1ac2b9b4dd7aea33493cafd1749934b3", null ],
-    [ "DshotErpsSetFromRpm", "dshot__erps_8h.html#ae80c49c49e7b185199bac3d6a94d727d", null ]
+    [ "DshotErpsSetFromFrame", "dshot__erps_8h.html#acdd5194f1ae6ec5dbe9a9e7deff1efbd", null ],
+    [ "DshotErpsSetFromRpm", "dshot__erps_8h.html#a8e516f66d4de4c9077709ccf441de966", null ]
 ];

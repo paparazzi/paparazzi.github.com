@@ -1,6 +1,13 @@
 <map id="autopilot_arming_motors_on" name="autopilot_arming_motors_on">
-<area shape="rect" id="node1" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="433,46,643,73"/>
-<area shape="rect" id="node2" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="207,39,385,80"/>
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title=" " alt="" coords="5,5,159,47"/>
-<area shape="rect" id="node4" href="$rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="9,71,155,112"/>
+<area shape="rect" id="Node000001" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="433,109,643,134"/>
+<area shape="rect" id="Node000002" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="207,37,385,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="475,108,372,80,373,75,477,102"/>
+<area shape="rect" id="Node000005" href="$autopilot__arming__throttle_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF." alt="" coords="207,101,385,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="420,124,386,124,386,119,420,119"/>
+<area shape="rect" id="Node000006" href="$autopilot__arming__yaw_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF." alt="" coords="207,165,385,205"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="477,140,373,168,372,163,475,135"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title=" " alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,45,159,39,160,34,193,39"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="9,69,155,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="193,75,156,81,155,76,193,70"/>
 </map>

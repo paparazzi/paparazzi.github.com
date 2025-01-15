@@ -1,36 +1,83 @@
 <map id="guidance_h_run_enter" name="guidance_h_run_enter">
-<area shape="rect" id="node1" title=" " alt="" coords="5,594,171,620"/>
-<area shape="rect" id="node2" href="$oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="219,594,369,620"/>
-<area shape="rect" id="node3" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="417,130,563,156"/>
-<area shape="rect" id="node5" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="429,568,551,595"/>
-<area shape="rect" id="node6" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="431,619,549,646"/>
-<area shape="rect" id="node9" href="$oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="434,332,546,359"/>
-<area shape="rect" id="node22" href="$oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="450,678,530,704"/>
-<area shape="rect" id="node29" href="$oneloop__andi_8c.html#a01b12bc894b90fe666fb014b4f5ce481" title="Reinitialize all the Complementary Filters." alt="" coords="441,831,539,858"/>
-<area shape="rect" id="node4" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1101,256,1241,283"/>
-<area shape="rect" id="node7" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="611,612,765,653"/>
-<area shape="rect" id="node8" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="845,560,990,587"/>
-<area shape="rect" id="node10" href="$oneloop__andi_8c.html#ad343222996afa101ab8254afe6a47fe1" title="Initialize Position of Poles." alt="" coords="633,358,743,384"/>
-<area shape="rect" id="node12" href="$oneloop__andi_8c.html#af2335349a761d2705e1aff694bfe2a2b" title=" " alt="" coords="631,408,745,435"/>
-<area shape="rect" id="node13" href="$oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="875,408,960,435"/>
-<area shape="rect" id="node14" href="$oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="862,459,973,486"/>
-<area shape="rect" id="node15" href="$oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="862,510,973,536"/>
-<area shape="rect" id="node16" href="$oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="633,54,743,80"/>
-<area shape="rect" id="node17" href="$oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="633,104,743,131"/>
-<area shape="rect" id="node18" href="$oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="633,155,743,182"/>
-<area shape="rect" id="node19" href="$oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="639,206,737,232"/>
-<area shape="rect" id="node20" href="$oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="639,256,737,283"/>
-<area shape="rect" id="node21" href="$oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="639,307,737,334"/>
-<area shape="rect" id="node11" href="$oneloop__andi_8c.html#a5ad73c04d888263392bfd547c86f53b2" title="Calculate EC poles given RM poles." alt="" coords="878,358,957,384"/>
-<area shape="rect" id="node23" href="$low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="847,794,988,836"/>
-<area shape="rect" id="node25" href="$notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="627,678,749,704"/>
-<area shape="rect" id="node24" href="$low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="1069,860,1273,887"/>
-<area shape="rect" id="node26" href="$notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="819,678,1016,704"/>
-<area shape="rect" id="node27" href="$notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="838,729,997,770"/>
-<area shape="rect" id="node28" href="$notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="823,612,1012,653"/>
-<area shape="rect" id="node30" href="$oneloop__andi_8c.html#afae15927cc3d237f5f1af29dce7547fb" title="Reinitialize 2nd Order CF if new frequency setting or if forced." alt="" coords="647,831,729,858"/>
-<area shape="rect" id="node32" href="$oneloop__andi_8c.html#adeb027acbb0d32b03c67fe1e5625ecd8" title="Reinitialize 4th Order CF if new frequency setting or if forced." alt="" coords="647,919,729,946"/>
-<area shape="rect" id="node31" href="$low__pass__filter_8h.html#a3810bed549d1ed49264d45db0ef0a415" title="Get current value of the second order Butterworth low pass filter." alt="" coords="813,860,1021,887"/>
-<area shape="rect" id="node33" href="$low__pass__filter_8h.html#a3bc75d402325948076723e32d355d73b" title="Get current value of the fourth order Butterworth low pass filter." alt="" coords="813,978,1021,1004"/>
-<area shape="rect" id="node34" href="$low__pass__filter_8h.html#a42a42c25c357825b34e8402f8296a44d" title="Init a fourth order Butterworth filter." alt="" coords="847,912,988,953"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,588,171,613"/>
+<area shape="rect" id="Node000002" href="$oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="219,588,369,613"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,598,205,598,205,603,171,603"/>
+<area shape="rect" id="Node000003" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="417,130,563,156"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,587,476,167,480,169,303,589"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="429,562,551,588"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="369,588,415,582,416,587,370,593"/>
+<area shape="rect" id="Node000006" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="431,612,549,637"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="370,607,418,613,417,618,369,612"/>
+<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="434,329,546,354"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="303,586,469,364,473,367,307,589"/>
+<area shape="rect" id="Node000022" href="$oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="450,670,530,696"/>
+<area shape="poly" id="edge33_Node000002_Node000022" title=" " alt="" coords="326,611,447,662,445,667,324,616"/>
+<area shape="rect" id="Node000029" href="$oneloop__andi_8c.html#a01b12bc894b90fe666fb014b4f5ce481" title="Reinitialize all the Complementary Filters." alt="" coords="441,820,539,845"/>
+<area shape="poly" id="edge40_Node000002_Node000029" title=" " alt="" coords="308,611,471,807,467,811,304,615"/>
+<area shape="rect" id="Node000004" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1101,257,1241,282"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="499,128,543,82,574,58,610,39,671,19,725,7,775,3,822,6,868,17,916,35,1023,91,1068,126,1107,167,1137,209,1159,244,1154,247,1133,212,1102,171,1064,130,1020,96,914,39,867,22,821,11,775,8,726,12,672,24,612,44,577,62,546,86,503,132"/>
+<area shape="rect" id="Node000007" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="611,604,765,644"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="549,622,597,622,597,627,549,627"/>
+<area shape="rect" id="Node000008" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="845,556,990,581"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="765,603,813,591,850,582,852,587,814,596,766,608"/>
+<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html#ad343222996afa101ab8254afe6a47fe1" title="Initialize Position of Poles." alt="" coords="633,353,743,378"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="547,346,619,355,619,360,546,351"/>
+<area shape="rect" id="Node000012" href="$oneloop__andi_8c.html#af2335349a761d2705e1aff694bfe2a2b" title=" " alt="" coords="631,402,745,428"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="523,352,612,387,635,395,633,400,610,392,521,357"/>
+<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="875,408,960,433"/>
+<area shape="poly" id="edge32_Node000009_Node000013" title=" " alt="" coords="503,352,547,397,577,419,611,436,658,443,724,441,861,426,861,431,725,447,658,448,610,442,575,424,543,401,500,356"/>
+<area shape="rect" id="Node000014" href="$oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="862,457,973,482"/>
+<area shape="poly" id="edge16_Node000009_Node000014" title=" " alt="" coords="502,353,545,403,576,429,612,450,672,468,734,477,795,479,848,476,848,481,795,484,734,482,670,474,610,455,573,434,541,406,498,356"/>
+<area shape="rect" id="Node000015" href="$oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="862,506,973,532"/>
+<area shape="poly" id="edge18_Node000009_Node000015" title=" " alt="" coords="500,353,516,382,540,419,572,455,612,485,671,508,733,520,794,524,848,523,848,529,794,530,733,526,669,513,609,489,569,459,536,422,511,385,495,356"/>
+<area shape="rect" id="Node000016" href="$oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="633,54,743,80"/>
+<area shape="poly" id="edge20_Node000009_Node000016" title=" " alt="" coords="494,327,543,205,576,136,593,109,609,90,619,83,622,87,612,94,597,112,581,139,548,207,499,329"/>
+<area shape="rect" id="Node000017" href="$oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="633,105,743,130"/>
+<area shape="poly" id="edge22_Node000009_Node000017" title=" " alt="" coords="493,328,507,291,531,241,565,188,586,163,609,141,619,134,622,139,612,145,589,166,569,191,535,244,512,293,498,330"/>
+<area shape="rect" id="Node000018" href="$oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="633,156,743,181"/>
+<area shape="poly" id="edge24_Node000009_Node000018" title=" " alt="" coords="496,327,538,262,570,224,609,190,619,184,622,189,612,194,574,227,542,265,500,330"/>
+<area shape="rect" id="Node000019" href="$oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="639,205,737,230"/>
+<area shape="poly" id="edge26_Node000009_Node000019" title=" " alt="" coords="501,327,546,284,577,260,609,239,625,232,628,237,612,244,580,265,550,288,505,331"/>
+<area shape="rect" id="Node000020" href="$oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="639,254,737,280"/>
+<area shape="poly" id="edge28_Node000009_Node000020" title=" " alt="" coords="518,326,610,289,630,281,632,286,612,293,521,331"/>
+<area shape="rect" id="Node000021" href="$oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="639,304,737,329"/>
+<area shape="poly" id="edge30_Node000009_Node000021" title=" " alt="" coords="546,332,625,322,626,327,547,337"/>
+<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html#a5ad73c04d888263392bfd547c86f53b2" title="Calculate EC poles given RM poles." alt="" coords="878,358,957,384"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="744,364,864,367,864,372,744,370"/>
+<area shape="poly" id="edge11_Node000011_Node000004" title=" " alt="" coords="956,358,1020,337,1132,286,1134,291,1022,341,958,363"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="745,402,864,378,865,384,746,407"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="745,414,861,416,861,422,745,419"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="960,412,990,404,1020,393,1058,370,1093,342,1148,290,1151,294,1097,346,1061,374,1023,397,992,410,961,417"/>
+<area shape="poly" id="edge17_Node000014_Node000004" title=" " alt="" coords="972,460,997,453,1020,442,1064,408,1101,368,1132,327,1154,293,1158,296,1136,330,1105,371,1067,412,1023,447,999,458,974,465"/>
+<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="972,511,997,503,1020,491,1046,470,1069,446,1109,392,1138,338,1158,294,1163,297,1143,340,1113,394,1073,449,1049,474,1023,496,999,508,974,516"/>
+<area shape="poly" id="edge21_Node000016_Node000004" title=" " alt="" coords="744,68,804,76,875,89,950,110,1023,139,1062,163,1097,191,1152,245,1148,249,1094,195,1059,167,1020,144,948,115,873,94,803,81,743,74"/>
+<area shape="poly" id="edge23_Node000017_Node000004" title=" " alt="" coords="744,120,873,141,948,158,1022,182,1088,213,1142,247,1139,251,1085,218,1020,187,947,164,872,146,743,126"/>
+<area shape="poly" id="edge25_Node000018_Node000004" title=" " alt="" coords="744,172,872,190,1022,219,1124,250,1122,255,1021,224,871,195,744,177"/>
+<area shape="poly" id="edge27_Node000019_Node000004" title=" " alt="" coords="737,219,1022,247,1088,255,1088,261,1021,252,736,224"/>
+<area shape="poly" id="edge29_Node000020_Node000004" title=" " alt="" coords="737,265,1087,267,1087,272,737,270"/>
+<area shape="poly" id="edge31_Node000021_Node000004" title=" " alt="" coords="736,309,1087,275,1088,280,737,314"/>
+<area shape="rect" id="Node000023" href="$low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="847,784,988,824"/>
+<area shape="poly" id="edge34_Node000022_Node000023" title=" " alt="" coords="531,692,834,778,833,783,529,697"/>
+<area shape="rect" id="Node000025" href="$notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="627,670,749,696"/>
+<area shape="poly" id="edge36_Node000022_Node000025" title=" " alt="" coords="530,680,613,680,613,686,530,686"/>
+<area shape="rect" id="Node000024" href="$low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="1069,849,1273,874"/>
+<area shape="poly" id="edge35_Node000023_Node000024" title=" " alt="" coords="989,818,1102,843,1101,849,987,823"/>
+<area shape="rect" id="Node000026" href="$notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="819,670,1016,696"/>
+<area shape="poly" id="edge37_Node000025_Node000026" title=" " alt="" coords="749,680,805,680,805,686,749,686"/>
+<area shape="rect" id="Node000027" href="$notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="838,720,997,760"/>
+<area shape="poly" id="edge38_Node000025_Node000027" title=" " alt="" coords="740,693,825,715,824,720,739,698"/>
+<area shape="rect" id="Node000028" href="$notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="823,606,1012,646"/>
+<area shape="poly" id="edge39_Node000025_Node000028" title=" " alt="" coords="739,668,823,646,824,652,740,673"/>
+<area shape="rect" id="Node000030" href="$oneloop__andi_8c.html#afae15927cc3d237f5f1af29dce7547fb" title="Reinitialize 2nd Order CF if new frequency setting or if forced." alt="" coords="647,820,729,845"/>
+<area shape="poly" id="edge41_Node000029_Node000030" title=" " alt="" coords="540,830,632,830,632,835,540,835"/>
+<area shape="rect" id="Node000032" href="$oneloop__andi_8c.html#adeb027acbb0d32b03c67fe1e5625ecd8" title="Reinitialize 4th Order CF if new frequency setting or if forced." alt="" coords="647,906,729,932"/>
+<area shape="poly" id="edge44_Node000029_Node000032" title=" " alt="" coords="521,843,646,898,644,903,519,848"/>
+<area shape="poly" id="edge43_Node000030_Node000023" title=" " alt="" coords="729,825,833,812,834,817,730,830"/>
+<area shape="rect" id="Node000031" href="$low__pass__filter_8h.html#a3810bed549d1ed49264d45db0ef0a415" title="Get current value of the second order Butterworth low pass filter." alt="" coords="813,849,1021,874"/>
+<area shape="poly" id="edge42_Node000030_Node000031" title=" " alt="" coords="730,835,805,845,804,850,729,840"/>
+<area shape="rect" id="Node000033" href="$low__pass__filter_8h.html#a3bc75d402325948076723e32d355d73b" title="Get current value of the fourth order Butterworth low pass filter." alt="" coords="813,964,1021,989"/>
+<area shape="poly" id="edge45_Node000032_Node000033" title=" " alt="" coords="730,927,814,948,851,958,850,963,813,954,729,932"/>
+<area shape="rect" id="Node000034" href="$low__pass__filter_8h.html#a42a42c25c357825b34e8402f8296a44d" title="Init a fourth order Butterworth filter." alt="" coords="847,899,988,939"/>
+<area shape="poly" id="edge46_Node000032_Node000034" title=" " alt="" coords="729,916,833,916,833,922,729,922"/>
+<area shape="poly" id="edge47_Node000034_Node000024" title=" " alt="" coords="987,901,1101,875,1102,880,989,906"/>
 </map>

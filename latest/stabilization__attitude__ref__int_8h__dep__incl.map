@@ -1,31 +1,61 @@
 <map id="sw/airborne/firmwares/rotorcraft/stabilization/stabilization_attitude_ref_int.h" name="sw/airborne/firmwares/rotorcraft/stabilization/stabilization_attitude_ref_int.h">
-<area shape="rect" id="node1" title="Rotorcraft attitude reference generation API." alt="" coords="567,5,738,76"/>
-<area shape="rect" id="node2" href="$stabilization__attitude__ref__euler__int_8h.html" title="Rotorcraft attitude reference generation (euler int version)" alt="" coords="273,124,443,195"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation." alt="" coords="961,124,1131,195"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__euler__int_8c.html" title="Rotorcraft attitude stabilization in euler int version." alt="" coords="78,243,249,313"/>
-<area shape="rect" id="node4" href="$stabilization__attitude__ref__euler__int_8c.html" title="Rotorcraft attitude reference generation (euler int version)" alt="" coords="273,243,443,313"/>
-<area shape="rect" id="node6" href="$oneloop__andi_8h.html" title=" " alt="" coords="468,250,667,306"/>
-<area shape="rect" id="node12" href="$stabilization__attitude__quat__int_8h.html" title=" " alt="" coords="863,243,1034,313"/>
-<area shape="rect" id="node14" href="$stabilization__attitude__ref__quat__int_8c.html" title="Rotorcraft attitude reference generation." alt="" coords="1058,243,1229,313"/>
-<area shape="rect" id="node15" href="$stabilization__indi_8h.html" title=" " alt="" coords="1647,250,1818,306"/>
-<area shape="rect" id="node25" href="$stabilization__indi__simple_8h.html" title=" " alt="" coords="2787,250,2987,306"/>
-<area shape="rect" id="node7" href="$guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="5,487,172,543"/>
-<area shape="rect" id="node8" href="$guidance__oneloop_8h.html" title="A dummy guidance mode to run the oneloop_andi controller." alt="" coords="65,369,232,425"/>
-<area shape="rect" id="node9" href="$oneloop__andi_8c.html" title=" " alt="" coords="256,369,455,425"/>
-<area shape="rect" id="node10" href="$stabilization__oneloop_8c.html" title=" " alt="" coords="479,369,655,425"/>
-<area shape="rect" id="node11" href="$eff__scheduling__rotwing__V2_8c.html" title=" " alt="" coords="680,369,839,425"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__quat__int_8c.html" title="Rotorcraft quaternion attitude stabilization." alt="" coords="863,361,1034,432"/>
-<area shape="rect" id="node16" href="$stabilization__attitude__quat__indi_8h.html" title="This is the header file of the corresponding c file." alt="" coords="1058,361,1229,432"/>
-<area shape="rect" id="node18" href="$stabilization__indi_8c.html" title=" " alt="" coords="1253,369,1423,425"/>
-<area shape="rect" id="node19" href="$stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="1447,369,1629,425"/>
-<area shape="rect" id="node20" href="$eff__scheduling__cyfoam_8c.html" title=" " alt="" coords="1653,369,1812,425"/>
-<area shape="rect" id="node21" href="$eff__scheduling__falcon_8c.html" title="Interpolation of control effectivenss matrix of the Falcon hybrid plane." alt="" coords="1836,369,1995,425"/>
-<area shape="rect" id="node22" href="$eff__scheduling__generic_8c.html" title="Module that interpolates gainsets in flight based on the transition percentage." alt="" coords="2019,369,2177,425"/>
-<area shape="rect" id="node23" href="$eff__scheduling__nederdrone_8c.html" title=" " alt="" coords="2201,369,2360,425"/>
-<area shape="rect" id="node24" href="$eff__scheduling__rotwing_8c.html" title=" " alt="" coords="2384,369,2543,425"/>
-<area shape="rect" id="node17" href="$stabilization__attitude__quat__indi_8c.html" title="MAVLab Delft University of Technology This control algorithm is Incremental Nonlinear Dynamic Inversi..." alt="" coords="1058,480,1229,551"/>
-<area shape="rect" id="node26" href="$stabilization__indi__simple_8c.html" title=" " alt="" coords="2567,369,2765,425"/>
-<area shape="rect" id="node27" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="2790,376,2985,417"/>
-<area shape="rect" id="node28" href="$scheduling__indi__simple_8c.html" title=" " alt="" coords="3001,487,3160,543"/>
-<area shape="rect" id="node29" href="$scheduling__indi__simple_8h.html" title=" " alt="" coords="3060,369,3219,425"/>
+<area shape="rect" id="Node000001" title="Rotorcraft attitude reference generation API." alt="" coords="567,5,738,75"/>
+<area shape="rect" id="Node000002" href="$stabilization__attitude__ref__euler__int_8h.html" title="Rotorcraft attitude reference generation (euler int version)" alt="" coords="273,123,443,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="556,82,445,125,443,120,554,77"/>
+<area shape="rect" id="Node000005" href="$stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation." alt="" coords="961,123,1131,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="752,67,961,129,960,134,750,73"/>
+<area shape="rect" id="Node000003" href="$stabilization__attitude__euler__int_8c.html" title="Rotorcraft attitude stabilization in euler int version." alt="" coords="78,240,249,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="291,201,222,242,219,238,288,197"/>
+<area shape="rect" id="Node000004" href="$stabilization__attitude__ref__euler__int_8c.html" title="Rotorcraft attitude reference generation (euler int version)" alt="" coords="273,240,443,309"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="361,206,361,240,355,240,355,206"/>
+<area shape="rect" id="Node000006" href="$oneloop__andi_8h.html" title=" " alt="" coords="468,247,667,302"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="948,185,668,252,666,247,946,180"/>
+<area shape="rect" id="Node000012" href="$stabilization__attitude__quat__int_8h.html" title=" " alt="" coords="863,240,1034,309"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="1010,205,979,242,975,238,1006,201"/>
+<area shape="rect" id="Node000014" href="$stabilization__attitude__ref__quat__int_8c.html" title="Rotorcraft attitude reference generation." alt="" coords="1058,240,1229,309"/>
+<area shape="poly" id="edge14_Node000005_Node000014" title=" " alt="" coords="1086,201,1117,238,1113,242,1082,205"/>
+<area shape="rect" id="Node000015" href="$stabilization__indi_8h.html" title=" " alt="" coords="1647,247,1818,302"/>
+<area shape="poly" id="edge15_Node000005_Node000015" title=" " alt="" coords="1146,173,1648,256,1647,262,1145,178"/>
+<area shape="rect" id="Node000025" href="$stabilization__indi__simple_8h.html" title=" " alt="" coords="2787,247,2987,302"/>
+<area shape="poly" id="edge25_Node000005_Node000025" title=" " alt="" coords="1145,162,2787,264,2787,270,1145,167"/>
+<area shape="rect" id="Node000007" href="$guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="5,482,172,537"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="473,308,456,312,415,317,364,318,243,318,183,320,129,327,85,339,68,348,55,359,46,372,42,387,45,420,57,452,72,480,68,483,52,454,39,421,37,387,41,370,51,356,65,344,83,334,128,321,183,315,243,312,364,312,415,311,455,307,472,303"/>
+<area shape="rect" id="Node000008" href="$guidance__oneloop_8h.html" title="A dummy guidance mode to run the oneloop_andi controller." alt="" coords="65,365,232,419"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="470,308,456,312,350,335,244,360,221,367,219,362,243,355,349,330,455,307,468,303"/>
+<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html" title=" " alt="" coords="256,365,455,419"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="509,311,405,367,402,362,506,306"/>
+<area shape="rect" id="Node000010" href="$stabilization__oneloop_8c.html" title=" " alt="" coords="479,365,655,419"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="570,316,570,364,565,364,565,316"/>
+<area shape="rect" id="Node000011" href="$eff__scheduling__rotwing__V2_8c.html" title=" " alt="" coords="680,365,839,419"/>
+<area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="624,307,717,362,714,367,621,311"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="131,433,105,483,100,480,126,430"/>
+<area shape="rect" id="Node000013" href="$stabilization__attitude__quat__int_8c.html" title="Rotorcraft quaternion attitude stabilization." alt="" coords="863,357,1034,427"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="951,323,951,357,946,357,946,323"/>
+<area shape="rect" id="Node000016" href="$stabilization__attitude__quat__indi_8h.html" title="This is the header file of the corresponding c file." alt="" coords="1058,357,1229,427"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1634,290,1450,317,1345,337,1241,360,1230,363,1228,358,1240,355,1344,331,1449,312,1633,285"/>
+<area shape="rect" id="Node000018" href="$stabilization__indi_8c.html" title=" " alt="" coords="1253,365,1423,419"/>
+<area shape="poly" id="edge18_Node000015_Node000018" title=" " alt="" coords="1634,304,1436,360,1414,367,1412,362,1435,355,1633,299"/>
+<area shape="rect" id="Node000019" href="$stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="1447,365,1629,419"/>
+<area shape="poly" id="edge19_Node000015_Node000019" title=" " alt="" coords="1678,311,1584,367,1581,362,1676,307"/>
+<area shape="rect" id="Node000020" href="$eff__scheduling__cyfoam_8c.html" title=" " alt="" coords="1653,365,1812,419"/>
+<area shape="poly" id="edge20_Node000015_Node000020" title=" " alt="" coords="1735,316,1735,364,1730,364,1730,316"/>
+<area shape="rect" id="Node000021" href="$eff__scheduling__falcon_8c.html" title="Interpolation of control effectivenss matrix of the Falcon hybrid plane." alt="" coords="1836,365,1995,419"/>
+<area shape="poly" id="edge21_Node000015_Node000021" title=" " alt="" coords="1787,307,1875,362,1872,367,1784,312"/>
+<area shape="rect" id="Node000022" href="$eff__scheduling__generic_8c.html" title="Module that interpolates gainsets in flight based on the transition percentage." alt="" coords="2019,365,2177,419"/>
+<area shape="poly" id="edge22_Node000015_Node000022" title=" " alt="" coords="1832,301,2007,355,2028,362,2026,367,2005,360,1830,306"/>
+<area shape="rect" id="Node000023" href="$eff__scheduling__nederdrone_8c.html" title=" " alt="" coords="2201,365,2360,419"/>
+<area shape="poly" id="edge23_Node000015_Node000023" title=" " alt="" coords="1832,286,2000,313,2095,332,2189,355,2214,362,2212,367,2188,360,2094,337,1999,318,1831,291"/>
+<area shape="rect" id="Node000024" href="$eff__scheduling__rotwing_8c.html" title=" " alt="" coords="2384,365,2543,419"/>
+<area shape="poly" id="edge24_Node000015_Node000024" title=" " alt="" coords="1832,279,1943,288,2079,303,2226,325,2372,355,2397,362,2396,367,2371,360,2225,330,2078,309,1943,294,1832,284"/>
+<area shape="rect" id="Node000017" href="$stabilization__attitude__quat__indi_8c.html" title="MAVLab Delft University of Technology This control algorithm is Incremental Nonlinear Dynamic Inversi..." alt="" coords="1058,475,1229,544"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1146,441,1146,474,1141,474,1141,441"/>
+<area shape="rect" id="Node000026" href="$stabilization__indi__simple_8c.html" title=" " alt="" coords="2567,365,2765,419"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="2826,311,2718,367,2715,362,2824,306"/>
+<area shape="rect" id="Node000027" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="2790,372,2985,412"/>
+<area shape="poly" id="edge27_Node000025_Node000027" title=" " alt="" coords="2890,316,2890,372,2885,372,2885,316"/>
+<area shape="rect" id="Node000028" href="$scheduling__indi__simple_8c.html" title=" " alt="" coords="3001,482,3160,537"/>
+<area shape="poly" id="edge28_Node000025_Node000028" title=" " alt="" coords="2944,308,2972,330,2999,356,3023,387,3043,421,3073,481,3068,483,3039,423,3018,390,2995,359,2969,334,2941,312"/>
+<area shape="rect" id="Node000029" href="$scheduling__indi__simple_8h.html" title=" " alt="" coords="3060,365,3219,419"/>
+<area shape="poly" id="edge29_Node000025_Node000029" title=" " alt="" coords="2958,305,3083,362,3081,367,2956,310"/>
+<area shape="poly" id="edge30_Node000029_Node000028" title=" " alt="" coords="3122,433,3097,483,3092,480,3117,430"/>
 </map>

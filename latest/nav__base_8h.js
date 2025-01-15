@@ -23,18 +23,10 @@ var nav__base_8h =
       [ "oval", "nav__base_8h.html#a6184867f3a099d244b4c4b25e4107e3d", null ]
     ] ],
     [ "oval_status", "nav__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcf", [
-      [ "OR12", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25", null ],
-      [ "OC2", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437", null ],
-      [ "OR21", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b", null ],
-      [ "OC1", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17", null ],
       [ "OR12", "nav__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25", null ],
       [ "OC2", "nav__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437", null ],
       [ "OR21", "nav__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b", null ],
-      [ "OC1", "nav__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17", null ],
-      [ "OR12", "nav__rover__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25", null ],
-      [ "OC2", "nav__rover__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437", null ],
-      [ "OR21", "nav__rover__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b", null ],
-      [ "OC1", "nav__rover__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17", null ]
+      [ "OC1", "nav__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17", null ]
     ] ],
     [ "nav_circle_get_count", "nav__base_8h.html#aecfe2d051658cc204cdd41bcad0fcee9", null ],
     [ "nav_circle_qdr", "nav__base_8h.html#a71024d2fc12a5baf08aeb2e16207fea7", null ]

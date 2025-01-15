@@ -12,7 +12,7 @@ var cc2500__smartport_8h =
     [ "smartPortWriteFrameFn", "cc2500__smartport_8h.html#a05f33530ce629ec71105d7bcf95c27dd", null ],
     [ "initSmartPortTelemetryExternal", "cc2500__smartport_8h.html#a25c89eefa21629f2aa404974b8bd67ad", null ],
     [ "processSmartPortTelemetry", "cc2500__smartport_8h.html#a37e1974cee8c4af022f53bc85191fdf7", null ],
-    [ "smartPortDataReceive", "cc2500__smartport_8h.html#a4f3e57d18e53caf94cb078c1cc0384e8", null ],
+    [ "smartPortDataReceive", "cc2500__smartport_8h.html#ae439ccbd4e1e051e8343b513fce47013", null ],
     [ "smartPortDownlink", "cc2500__smartport_8h.html#a7d44bc5cc954ac5c178a0a418bf11f09", null ],
     [ "smartPortUplink", "cc2500__smartport_8h.html#a738cbb044b5f28229359976040ece24e", null ]
 ];

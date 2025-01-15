@@ -1,11 +1,11 @@
 var group__state__attitude =
 [
-    [ "stateGetNedToBodyEulers_f", "group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b", null ],
-    [ "stateGetNedToBodyEulers_i", "group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792", null ],
-    [ "stateGetNedToBodyQuat_f", "group__state__attitude.html#gae03bd8f94b7150506835b77060b73311", null ],
-    [ "stateGetNedToBodyQuat_i", "group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce", null ],
-    [ "stateGetNedToBodyRMat_f", "group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d", null ],
-    [ "stateGetNedToBodyRMat_i", "group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3", null ],
+    [ "stateGetNedToBodyEulers_f", "group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682", null ],
+    [ "stateGetNedToBodyEulers_i", "group__state__attitude.html#ga40d15f52fa56369375a61cdf41ed970a", null ],
+    [ "stateGetNedToBodyQuat_f", "group__state__attitude.html#gab5f063833fdba859ce42593112551463", null ],
+    [ "stateGetNedToBodyQuat_i", "group__state__attitude.html#ga0f4332db7889a3b90f3f2fe4cbe0d2fb", null ],
+    [ "stateGetNedToBodyRMat_f", "group__state__attitude.html#ga349b79d742ba71721146940d8ad71849", null ],
+    [ "stateGetNedToBodyRMat_i", "group__state__attitude.html#ga573863695fd1d07537756dbea2a0aa2e", null ],
     [ "stateIsAttitudeValid", "group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac", null ],
     [ "stateSetNedToBodyEulers_f", "group__state__attitude.html#ga5fa6ea4465237100512211a7bc8be549", null ],
     [ "stateSetNedToBodyEulers_i", "group__state__attitude.html#ga7e6d224876698f15f1a3d36fbbb97b31", null ],

@@ -1,8 +1,40 @@
 <map id="dc_send_shot_position" name="dc_send_shot_position">
-<area shape="rect" id="node1" title="Send Down the coordinates of where the photo was taken." alt="" coords="461,89,631,115"/>
-<area shape="rect" id="node2" href="$atmega__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title=" " alt="" coords="215,13,413,39"/>
-<area shape="rect" id="node4" href="$gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="241,63,387,90"/>
-<area shape="rect" id="node5" href="$gpio__cam__ctrl_8c.html#a9ea235d04c38558097d37bc2dacdef1e" title="Periodic." alt="" coords="228,114,400,141"/>
-<area shape="rect" id="node6" href="$servo__cam__ctrl_8c.html#a8fb28d260287fc333f4d1e110a68db27" title=" " alt="" coords="224,165,404,191"/>
-<area shape="rect" id="node3" href="$atmega__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="Node000001" title="Send Down the coordinates of where the photo was taken." alt="" coords="916,454,1085,479"/>
+<area shape="rect" id="Node000002" href="$atmega__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title=" " alt="" coords="669,222,868,247"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="975,446,781,250,785,246,979,442"/>
+<area shape="rect" id="Node000010" href="$gpio__cam__ctrl_8c.html#a9ea235d04c38558097d37bc2dacdef1e" title="Periodic." alt="" coords="19,369,191,394"/>
+<area shape="poly" id="edge19_Node000001_Node000010" title=" " alt="" coords="902,464,531,440,253,419,156,397,157,391,254,413,531,435,902,458"/>
+<area shape="rect" id="Node000012" href="$servo__cam__ctrl_8c.html#a8fb28d260287fc333f4d1e110a68db27" title=" " alt="" coords="15,418,195,443"/>
+<area shape="poly" id="edge20_Node000001_Node000012" title=" " alt="" coords="902,474,773,478,611,480,432,475,253,463,157,446,158,441,254,457,433,470,611,474,773,473,902,469"/>
+<area shape="rect" id="Node000018" href="$gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="695,530,842,555"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="949,486,869,513,810,533,808,527,867,508,948,481"/>
+<area shape="rect" id="Node000003" href="$atmega__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title=" " alt="" coords="25,5,186,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="739,215,685,175,610,125,521,77,474,56,426,40,365,27,301,20,187,20,187,15,302,15,365,21,427,35,476,51,523,72,613,121,688,171,742,211"/>
+<area shape="rect" id="Node000004" href="$atmega__i2c__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera." alt="" coords="475,222,621,247"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="656,237,621,237,621,232,656,232"/>
+<area shape="rect" id="Node000005" href="$sim__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title=" " alt="" coords="259,215,421,255"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="461,237,421,237,421,232,461,232"/>
+<area shape="rect" id="Node000006" href="$dc_8c.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function" alt="" coords="292,165,388,190"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="488,221,386,193,387,187,489,216"/>
+<area shape="rect" id="Node000013" href="$dc__shoot__rc_8c.html#a07c50c1495b2a608715da52b87501ff2" title="periodic 4Hz function" alt="" coords="261,279,419,305"/>
+<area shape="poly" id="edge13_Node000004_Node000013" title=" " alt="" coords="489,254,387,282,386,277,488,248"/>
+<area shape="rect" id="Node000014" href="$nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="281,329,399,354"/>
+<area shape="poly" id="edge14_Node000004_Node000014" title=" " alt="" coords="522,258,480,290,428,320,398,331,396,326,426,315,477,285,519,254"/>
+<area shape="rect" id="Node000015" href="$nav__survey__hybrid_8c.html#aad2e8c336e9d7c16f8f84430739aac9b" title="Run polygon hybrid survey." alt="" coords="253,378,427,403"/>
+<area shape="poly" id="edge15_Node000004_Node000015" title=" " alt="" coords="533,260,490,315,461,344,428,369,404,380,402,375,425,364,458,340,486,312,529,257"/>
+<area shape="rect" id="Node000016" href="$nav__survey__poly__rotorcraft_8c.html#a3e94ba3055026d18e3acc3027bf25cd9" title="Run polygon survey." alt="" coords="260,50,420,75"/>
+<area shape="poly" id="edge16_Node000004_Node000016" title=" " alt="" coords="531,212,489,151,459,118,425,90,400,78,402,73,428,86,463,114,493,147,535,209"/>
+<area shape="rect" id="Node000017" href="$nav__survey__rectangle__rotorcraft_8c.html#a8173c6411f3da20648716f4377a92cca" title=" " alt="" coords="257,100,423,140"/>
+<area shape="poly" id="edge17_Node000004_Node000017" title=" " alt="" coords="518,215,476,185,425,154,399,142,402,138,428,150,478,180,521,211"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="277,168,252,154,235,137,226,120,218,103,203,85,177,64,149,48,152,43,180,60,207,81,222,100,231,117,239,134,255,150,280,163"/>
+<area shape="rect" id="Node000007" href="$dc__ctrl__parrot__mykonos_8c.html#ae52444c010f1799ff182538c5c059355" title=" " alt="" coords="17,145,194,185"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="278,177,194,173,195,167,278,172"/>
+<area shape="rect" id="Node000008" href="$uart__cam__ctrl_8c.html#aaf39174521b99262b40497c50520150b" title=" " alt="" coords="10,210,201,235"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="279,192,172,213,171,207,278,187"/>
+<area shape="rect" id="Node000009" href="$video__cam__ctrl_8c.html#a310b6b4208930b49883ed0abccce0e87" title=" " alt="" coords="5,259,205,285"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="280,194,255,205,241,216,232,227,222,239,207,250,179,262,177,257,204,246,218,235,227,224,237,212,252,200,278,189"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="280,190,255,205,237,226,229,248,223,272,207,299,167,340,127,371,124,367,163,336,203,296,218,270,224,247,232,224,252,201,278,186"/>
+<area shape="rect" id="Node000011" href="$pprzlink__cam__ctrl_8c.html#a91d9a18eaa90156e925416142df3f09b" title="Periodic." alt="" coords="7,95,203,121"/>
+<area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="279,163,252,155,204,136,161,123,162,118,206,131,254,149,281,158"/>
+<area shape="poly" id="edge12_Node000006_Node000012" title=" " alt="" coords="280,189,255,205,238,229,231,254,230,279,233,305,235,331,234,357,226,383,207,409,192,420,189,416,203,405,221,380,229,356,230,331,227,306,225,280,225,253,233,227,251,201,277,184"/>
 </map>

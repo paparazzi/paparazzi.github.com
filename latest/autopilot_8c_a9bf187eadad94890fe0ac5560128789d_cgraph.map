@@ -1,7 +1,11 @@
 <map id="autopilot_arming_motors_on" name="autopilot_arming_motors_on">
-<area shape="rect" id="node1" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="5,56,215,83"/>
-<area shape="rect" id="node2" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="263,56,384,83"/>
-<area shape="rect" id="node3" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="432,5,577,32"/>
-<area shape="rect" id="node4" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="447,56,562,83"/>
-<area shape="rect" id="node5" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="437,107,572,133"/>
+<area shape="rect" id="Node000001" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="5,55,215,80"/>
+<area shape="rect" id="Node000002" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="263,55,384,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,65,249,65,249,70,215,70"/>
+<area shape="rect" id="Node000003" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="432,5,577,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,52,443,32,445,37,371,57"/>
+<area shape="rect" id="Node000004" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="447,55,562,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="384,65,434,65,434,70,384,70"/>
+<area shape="rect" id="Node000005" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="437,104,572,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="371,77,445,98,443,103,370,83"/>
 </map>

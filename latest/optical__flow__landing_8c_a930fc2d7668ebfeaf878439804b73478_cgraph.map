@@ -1,52 +1,11 @@
 <map id="guidance_module_run" name="guidance_module_run">
-<area shape="rect" id="node1" title=" " alt="" coords="5,731,171,757"/>
-<area shape="rect" id="node2" href="$optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="219,731,401,757"/>
-<area shape="rect" id="node3" href="$optical__flow__landing_8c.html#aff9f937ef0bdd8faf29e3487b95eb808" title="Execute a final landing procedure." alt="" coords="455,5,632,32"/>
-<area shape="rect" id="node4" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="714,5,859,32"/>
-<area shape="rect" id="node5" href="$e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="524,335,563,361"/>
-<area shape="rect" id="node13" href="$optical__flow__landing_8c.html#a00d1461d54c90184f1e13db823860fd7" title=" " alt="" coords="483,655,603,681"/>
-<area shape="rect" id="node17" href="$optical__flow__landing_8c.html#acad5bb8fa3647d3d2cd1b9a5c4a10257" title=" " alt="" coords="980,541,1083,568"/>
-<area shape="rect" id="node19" href="$optical__flow__landing_8c.html#ad7888da1664e91a579dbde5a896c9293" title=" " alt="" coords="489,705,597,732"/>
-<area shape="rect" id="node20" href="$optical__flow__landing_8c.html#a3a43c6fe7380d2c3fcadc9dfa82faa2b" title="Determine and set the thrust for constant divergence control." alt="" coords="456,107,631,133"/>
-<area shape="rect" id="node23" href="$optical__flow__landing_8c.html#a8d19fc9e54c7d49a0f9a46df5b3fffe0" title=" " alt="" coords="452,756,635,783"/>
-<area shape="rect" id="node24" href="$stabilization_8c.html#ab4450b06845c4fe82ea4d45c2e2d4b20" title=" " alt="" coords="459,807,627,833"/>
-<area shape="rect" id="node25" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="449,1247,637,1273"/>
-<area shape="rect" id="node47" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="685,1908,888,1935"/>
-<area shape="rect" id="node48" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="460,1348,627,1375"/>
-<area shape="rect" id="node49" href="$group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float)." alt="" coords="466,1399,621,1425"/>
-<area shape="rect" id="node50" href="$stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="468,1449,619,1476"/>
-<area shape="rect" id="node6" href="$e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="753,461,820,488"/>
-<area shape="rect" id="node7" href="$e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="706,157,867,184"/>
-<area shape="rect" id="node8" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="753,208,820,235"/>
-<area shape="rect" id="node9" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="717,259,856,285"/>
-<area shape="rect" id="node10" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="751,309,822,336"/>
-<area shape="rect" id="node11" href="$e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="745,360,829,387"/>
-<area shape="rect" id="node12" href="$uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="726,411,847,437"/>
-<area shape="rect" id="node14" href="$optical__flow__landing_8c.html#a0f226b4d037a67db4a4dcd15d42ae284" title="Fit a linear model from samples to target values." alt="" coords="711,680,863,707"/>
-<area shape="rect" id="node15" href="$optical__flow__landing_8c.html#ad78826a6d984bdbd53254b61cf891aa9" title=" " alt="" coords="697,731,877,757"/>
-<area shape="rect" id="node16" href="$optical__flow__landing_8c.html#a00b62a35714831cf9fd5f6c04d3ec7e6" title="Recursively fit a linear model from samples to target values &#45; batch mode, possibly for initializatio..." alt="" coords="697,563,876,605"/>
-<area shape="rect" id="node18" href="$optical__flow__landing_8c.html#ae0649ece855c0b0565eb24637f5dc958" title=" " alt="" coords="731,629,842,656"/>
-<area shape="rect" id="node21" href="$optical__flow__landing_8c.html#a529beff707cc000dee0afe4234074da4" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="737,107,836,133"/>
-<area shape="rect" id="node22" href="$optical__flow__landing_8c.html#a98c93c23a226634b228e322b12fe474a" title="Updates the integral and differential errors for PID control and sets the previous error." alt="" coords="731,56,843,83"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="717,1086,856,1127"/>
-<area shape="rect" id="node27" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="717,1151,856,1193"/>
-<area shape="rect" id="node28" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="701,1269,872,1310"/>
-<area shape="rect" id="node29" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="953,1247,1110,1273"/>
-<area shape="rect" id="node30" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="938,1320,1125,1347"/>
-<area shape="rect" id="node31" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="707,1487,866,1529"/>
-<area shape="rect" id="node32" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="951,1400,1112,1427"/>
-<area shape="rect" id="node33" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="950,1473,1113,1500"/>
-<area shape="rect" id="node34" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="936,1528,1127,1555"/>
-<area shape="rect" id="node35" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="726,1604,847,1631"/>
-<area shape="rect" id="node36" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="728,1655,845,1681"/>
-<area shape="rect" id="node37" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="695,1705,879,1732"/>
-<area shape="rect" id="node38" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="715,1756,859,1783"/>
-<area shape="rect" id="node39" href="$group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="706,1807,867,1833"/>
-<area shape="rect" id="node40" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="713,1857,861,1884"/>
-<area shape="rect" id="node41" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="717,781,856,808"/>
-<area shape="rect" id="node42" href="$group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="723,832,851,859"/>
-<area shape="rect" id="node43" href="$group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="727,883,846,909"/>
-<area shape="rect" id="node44" href="$group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="724,933,849,960"/>
-<area shape="rect" id="node45" href="$pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="731,984,843,1011"/>
-<area shape="rect" id="node46" href="$pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="977,1009,1086,1036"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,171,56"/>
+<area shape="rect" id="Node000002" href="$optical__flow__hover_8c.html#adb3f4ca3b244c129124f343d186511f9" title="Run the vertical optical flow hover module." alt="" coords="219,31,401,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,41,205,41,205,46,171,46"/>
+<area shape="rect" id="Node000003" href="$optical__flow__functions_8c.html#a2488841685962503d134003daaae77f8" title="Determine and set the thrust for constant divergence control." alt="" coords="449,5,624,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,30,436,27,436,32,402,36"/>
+<area shape="rect" id="Node000004" href="$optical__flow__functions_8c.html#a43d4f7bf1b6e93b4b62a84bbfb3d4813" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="487,55,586,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,50,474,58,473,63,402,56"/>
+<area shape="rect" id="Node000005" href="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="672,55,777,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="586,65,658,65,658,70,586,70"/>
 </map>

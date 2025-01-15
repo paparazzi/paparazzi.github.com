@@ -70,11 +70,11 @@ var cc2500__settings_8h =
     ] ],
     [ "bf_writeEEPROM", "cc2500__settings_8h.html#aa6de72ae6e9b2ff994305c59286cd281", null ],
     [ "cc2500_settings_init", "cc2500__settings_8h.html#a05d761a2c53707eb1216a322cd8a0141", null ],
-    [ "rxCc2500SpiConfig", "cc2500__settings_8h.html#aad1629e38fffa025a33f8054243bd6f0", null ],
-    [ "rxCc2500SpiConfigMutable", "cc2500__settings_8h.html#ae1dc74d5df9f5a6c7145d82047cb95bf", null ],
-    [ "rxConfig", "cc2500__settings_8h.html#af06545e739401827aa40484c0ad98353", null ],
-    [ "rxSpiConfig", "cc2500__settings_8h.html#a56bfe7bd9539b3618207bc6ee9688636", null ],
-    [ "telemetryConfig", "cc2500__settings_8h.html#a74f4a205266f997c4a2f7dc30582744b", null ],
+    [ "rxCc2500SpiConfig", "cc2500__settings_8h.html#a016e44d11b798f7ba75b0735859058e0", null ],
+    [ "rxCc2500SpiConfigMutable", "cc2500__settings_8h.html#a8aacf8501041c50739889f5d25d1e307", null ],
+    [ "rxConfig", "cc2500__settings_8h.html#ac8adcacf5edcfd8ce6bd1995fab2b023", null ],
+    [ "rxSpiConfig", "cc2500__settings_8h.html#a92ace68fbbcbf76f5b65719b00b6a14e", null ],
+    [ "telemetryConfig", "cc2500__settings_8h.html#ac01bc75344b75c71316b0dc64ad2c818", null ],
     [ "telemetryIsSensorEnabled", "cc2500__settings_8h.html#a875cd23fdaec3fdca1b59820595371d6", null ],
     [ "cc2500_settings_persistent", "cc2500__settings_8h.html#ac8e7506b4c48442fff6fe163ffec37bd", null ]
 ];

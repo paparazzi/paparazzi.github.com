@@ -1,14 +1,26 @@
 <map id="autopilot_static_on_rc_frame" name="autopilot_static_on_rc_frame">
-<area shape="rect" id="node1" title="Function to be called when a message from FBW is available." alt="" coords="5,187,152,229"/>
-<area shape="rect" id="node2" href="$rotorcraft_2autopilot__utils_8h.html#a9b0eea7b5b6451e8d115975b3391c50f" title="get autopilot mode as set by RADIO_MODE 3&#45;way switch" alt="" coords="201,107,394,133"/>
-<area shape="rect" id="node3" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="208,158,387,199"/>
-<area shape="rect" id="node10" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="481,224,613,251"/>
-<area shape="rect" id="node12" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="200,275,395,301"/>
-<area shape="rect" id="node4" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="443,56,652,83"/>
-<area shape="rect" id="node9" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="471,107,623,133"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94" title="Convenience macro for 3way switch." alt="" coords="479,158,616,199"/>
-<area shape="rect" id="node5" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="700,56,821,83"/>
-<area shape="rect" id="node6" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="869,5,1015,32"/>
-<area shape="rect" id="node7" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="885,56,999,83"/>
-<area shape="rect" id="node8" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="875,107,1009,133"/>
+<area shape="rect" id="Node000001" title="Function to be called when a message from FBW is available." alt="" coords="5,183,152,223"/>
+<area shape="rect" id="Node000002" href="$rover_2autopilot__utils_8c.html#a9b0eea7b5b6451e8d115975b3391c50f" title="get autopilot mode as set by RADIO_MODE 3&#45;way switch" alt="" coords="201,104,394,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,181,154,160,199,140,226,131,227,136,201,144,156,164,116,186"/>
+<area shape="rect" id="Node000003" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="208,154,387,194"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,191,194,185,195,190,153,196"/>
+<area shape="rect" id="Node000010" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="481,219,613,244"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="152,205,468,224,467,229,152,210"/>
+<area shape="rect" id="Node000012" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="200,269,395,295"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="131,221,201,247,244,262,242,267,199,253,129,226"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="443,55,652,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="370,151,393,140,407,128,416,115,426,103,441,90,458,82,460,87,444,95,430,106,421,119,411,131,396,144,373,156"/>
+<area shape="rect" id="Node000009" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="471,104,623,129"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="385,151,477,130,479,135,386,157"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="386,191,479,213,477,218,385,197"/>
+<area shape="rect" id="Node000011" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94" title="Convenience macro for 3way switch." alt="" coords="479,154,616,194"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="387,171,465,171,465,177,387,177"/>
+<area shape="rect" id="Node000005" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="700,55,821,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="652,65,686,65,686,70,652,70"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="869,5,1015,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="807,52,881,32,882,37,809,57"/>
+<area shape="rect" id="Node000007" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="885,55,999,80"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="821,65,871,65,871,70,821,70"/>
+<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="875,104,1009,129"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="809,77,882,98,881,103,807,83"/>
 </map>

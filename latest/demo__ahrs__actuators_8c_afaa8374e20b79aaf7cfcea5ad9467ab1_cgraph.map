@@ -1,52 +1,104 @@
 <map id="main_init" name="main_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,765,88,792"/>
-<area shape="rect" id="node2" href="$modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47" title=" " alt="" coords="171,31,281,57"/>
-<area shape="rect" id="node3" href="$ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="187,81,265,108"/>
-<area shape="rect" id="node7" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="591,157,793,184"/>
-<area shape="rect" id="node9" href="$downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b" title=" " alt="" coords="171,233,281,260"/>
-<area shape="rect" id="node12" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="187,689,265,716"/>
-<area shape="rect" id="node41" href="$demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c" title=" " alt="" coords="165,740,287,767"/>
-<area shape="rect" id="node42" href="$demo__ahrs__actuators_8c.html#a65644c7fe2e327f01296b259bc106f85" title=" " alt="" coords="180,791,272,817"/>
-<area shape="rect" id="node43" href="$demo__ahrs__actuators_8c.html#a974326e4c446abb45f2c4ce43666412f" title=" " alt="" coords="139,841,313,868"/>
-<area shape="rect" id="node44" href="$demo__ahrs__actuators_8c.html#a4d3ebf2393fe597ab7a9a9e615ed2efe" title=" " alt="" coords="160,892,292,919"/>
-<area shape="rect" id="node45" href="$settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title=" " alt="" coords="175,975,277,1001"/>
-<area shape="rect" id="node47" href="$group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title=" " alt="" coords="188,1152,264,1179"/>
-<area shape="rect" id="node49" href="$sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer." alt="" coords="136,1265,316,1292"/>
-<area shape="rect" id="node4" href="$ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="388,81,519,108"/>
-<area shape="rect" id="node5" href="$ahrs__aligner_8c.html#aa098ebf986653894df0c6e03bf86354e" title=" " alt="" coords="616,5,768,32"/>
-<area shape="rect" id="node6" href="$ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="655,56,729,83"/>
-<area shape="rect" id="node8" href="$ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title=" " alt="" coords="639,107,745,133"/>
-<area shape="rect" id="node10" href="$downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title=" " alt="" coords="394,233,513,260"/>
-<area shape="rect" id="node11" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="617,233,767,260"/>
-<area shape="rect" id="node13" href="$chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init." alt="" coords="417,436,490,463"/>
-<area shape="rect" id="node19" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init()." alt="" coords="410,487,497,513"/>
-<area shape="rect" id="node20" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init()." alt="" coords="406,537,501,564"/>
-<area shape="rect" id="node21" href="$dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c" title=" " alt="" coords="417,588,490,615"/>
-<area shape="rect" id="node22" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="414,639,493,665"/>
-<area shape="rect" id="node23" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="387,689,520,716"/>
-<area shape="rect" id="node24" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="621,765,763,792"/>
-<area shape="rect" id="node25" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup." alt="" coords="418,841,489,868"/>
-<area shape="rect" id="node26" href="$chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="Initialize the specific archittecture functions." alt="" coords="397,892,510,919"/>
-<area shape="rect" id="node27" href="$chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc" title=" " alt="" coords="418,943,489,969"/>
-<area shape="rect" id="node29" href="$group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title=" " alt="" coords="415,993,492,1020"/>
-<area shape="rect" id="node32" href="$group__spi.html#ga7da3469436debceb731ecb76c920efda" title=" " alt="" coords="415,1044,492,1071"/>
-<area shape="rect" id="node34" href="$group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title=" " alt="" coords="415,1095,492,1121"/>
-<area shape="rect" id="node36" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function" alt="" coords="394,740,513,767"/>
-<area shape="rect" id="node37" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title=" " alt="" coords="399,1145,508,1172"/>
-<area shape="rect" id="node38" href="$linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title=" " alt="" coords="398,284,509,311"/>
-<area shape="rect" id="node39" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title=" " alt="" coords="399,335,508,361"/>
-<area shape="rect" id="node40" href="$stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title=" " alt="" coords="408,385,499,412"/>
-<area shape="rect" id="node14" href="$chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d" title="Adc1 callback." alt="" coords="639,436,745,463"/>
-<area shape="rect" id="node15" href="$chibios_2mcu__periph_2adc__arch_8c.html#aba229c19557de0c492527630ad132f6d" title="Configure the ADC conversion group depending on the architecture." alt="" coords="636,487,748,513"/>
-<area shape="rect" id="node16" href="$chibios_2mcu__periph_2adc__arch_8c.html#ab33213b168f1b881ddc092b70d45e130" title="Adc error callback." alt="" coords="627,537,757,564"/>
-<area shape="rect" id="node17" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6" title="Setup a gpio for analog use." alt="" coords="607,335,777,361"/>
-<area shape="rect" id="node18" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="614,385,770,412"/>
-<area shape="rect" id="node28" href="$chibios_2mcu__periph_2rng__arch_8c.html#ab7aa95d4a1836ff073138d41d955e683" title=" " alt="" coords="647,943,737,969"/>
-<area shape="rect" id="node30" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization." alt="" coords="636,993,748,1020"/>
-<area shape="rect" id="node31" href="$group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral." alt="" coords="657,1095,727,1121"/>
-<area shape="rect" id="node33" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization." alt="" coords="636,1044,748,1071"/>
-<area shape="rect" id="node35" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization." alt="" coords="636,1145,748,1172"/>
-<area shape="rect" id="node46" href="$chibios_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title=" " alt="" coords="392,1196,515,1223"/>
-<area shape="rect" id="node48" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="364,1247,543,1273"/>
-<area shape="rect" id="node50" href="$sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title=" " alt="" coords="369,1297,537,1324"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,749,88,775"/>
+<area shape="rect" id="Node000002" href="$modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47" title=" " alt="" coords="171,29,281,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,749,45,622,54,416,64,306,80,205,103,122,117,89,134,64,156,49,159,53,138,68,122,92,108,124,85,207,69,307,59,416,51,622,50,749"/>
+<area shape="rect" id="Node000003" href="$ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="187,79,265,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="45,749,48,631,59,443,70,344,85,252,106,175,119,145,134,122,152,107,173,97,175,102,155,111,138,125,124,147,111,177,90,253,75,344,64,443,53,631,51,749"/>
+<area shape="rect" id="Node000012" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="591,153,793,179"/>
+<area shape="poly" id="edge42_Node000001_Node000012" title=" " alt="" coords="45,749,48,645,60,484,71,400,87,322,107,259,120,234,134,216,161,193,190,174,253,146,321,130,390,123,459,123,524,129,631,148,630,153,524,134,459,128,391,128,321,135,254,151,192,179,164,198,138,220,124,237,112,261,92,324,76,401,65,485,54,646,51,749"/>
+<area shape="rect" id="Node000014" href="$downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b" title=" " alt="" coords="171,231,281,256"/>
+<area shape="poly" id="edge8_Node000001_Node000014" title=" " alt="" coords="50,748,213,268,218,270,55,750"/>
+<area shape="rect" id="Node000017" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="187,675,265,700"/>
+<area shape="poly" id="edge12_Node000001_Node000017" title=" " alt="" coords="65,747,97,728,135,709,172,696,174,701,137,714,100,732,68,752"/>
+<area shape="rect" id="Node000085" href="$demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c" title=" " alt="" coords="165,724,287,749"/>
+<area shape="poly" id="edge43_Node000001_Node000085" title=" " alt="" coords="88,754,152,744,152,750,88,759"/>
+<area shape="rect" id="Node000086" href="$demo__ahrs__actuators_8c.html#a65644c7fe2e327f01296b259bc106f85" title=" " alt="" coords="180,773,272,799"/>
+<area shape="poly" id="edge44_Node000001_Node000086" title=" " alt="" coords="88,765,167,775,166,781,88,770"/>
+<area shape="rect" id="Node000087" href="$demo__ahrs__actuators_8c.html#a974326e4c446abb45f2c4ce43666412f" title=" " alt="" coords="139,823,313,848"/>
+<area shape="poly" id="edge45_Node000001_Node000087" title=" " alt="" coords="70,772,137,808,161,816,159,821,135,812,67,777"/>
+<area shape="rect" id="Node000088" href="$demo__ahrs__actuators_8c.html#a4d3ebf2393fe597ab7a9a9e615ed2efe" title=" " alt="" coords="160,872,292,897"/>
+<area shape="poly" id="edge46_Node000001_Node000088" title=" " alt="" coords="58,773,90,815,112,838,137,857,152,865,149,869,135,862,109,842,86,818,54,776"/>
+<area shape="rect" id="Node000089" href="$settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title=" " alt="" coords="175,952,277,977"/>
+<area shape="poly" id="edge47_Node000001_Node000089" title=" " alt="" coords="56,774,86,835,110,872,138,907,161,927,187,943,184,947,158,931,134,911,105,875,81,837,51,776"/>
+<area shape="rect" id="Node000091" href="$group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title=" " alt="" coords="188,1064,264,1089"/>
+<area shape="poly" id="edge49_Node000001_Node000091" title=" " alt="" coords="54,774,81,867,106,928,138,987,168,1024,199,1053,196,1057,164,1027,134,990,101,931,76,869,48,776"/>
+<area shape="rect" id="Node000093" href="$sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer." alt="" coords="136,1237,316,1263"/>
+<area shape="poly" id="edge51_Node000001_Node000093" title=" " alt="" coords="53,774,79,909,105,1004,138,1100,174,1169,210,1224,205,1227,169,1171,134,1102,100,1006,74,910,47,775"/>
+<area shape="rect" id="Node000004" href="$ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="388,79,519,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,89,374,89,374,94,265,94"/>
+<area shape="rect" id="Node000005" href="$ahrs__aligner_8c.html#aa098ebf986653894df0c6e03bf86354e" title=" " alt="" coords="616,55,768,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="519,82,602,74,603,79,519,87"/>
+<area shape="rect" id="Node000006" href="$ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="655,104,729,129"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="519,96,642,109,641,114,519,101"/>
+<area shape="poly" id="edge6_Node000004_Node000012" title=" " alt="" coords="490,102,591,138,624,147,623,152,590,143,489,107"/>
+<area shape="rect" id="Node000013" href="$ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title=" " alt="" coords="639,5,745,31"/>
+<area shape="poly" id="edge7_Node000004_Node000013" title=" " alt="" coords="486,76,590,39,625,30,627,35,591,45,488,81"/>
+<area shape="poly" id="edge9_Node000014_Node000012" title=" " alt="" coords="281,230,364,215,593,178,594,183,364,221,282,236"/>
+<area shape="rect" id="Node000015" href="$downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title=" " alt="" coords="394,231,513,256"/>
+<area shape="poly" id="edge10_Node000014_Node000015" title=" " alt="" coords="281,241,380,241,380,246,281,246"/>
+<area shape="rect" id="Node000016" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="617,217,767,243"/>
+<area shape="poly" id="edge11_Node000015_Node000016" title=" " alt="" coords="513,237,603,232,603,238,513,243"/>
+<area shape="rect" id="Node000018" href="$chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init." alt="" coords="417,379,490,404"/>
+<area shape="poly" id="edge13_Node000017_Node000018" title=" " alt="" coords="227,674,240,625,265,554,283,516,305,478,331,444,362,413,381,402,402,395,404,400,384,407,366,417,335,447,310,481,288,519,270,556,245,626,233,675"/>
+<area shape="rect" id="Node000024" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init()." alt="" coords="410,675,497,700"/>
+<area shape="poly" id="edge19_Node000017_Node000024" title=" " alt="" coords="265,685,396,685,396,690,265,690"/>
+<area shape="rect" id="Node000025" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init()." alt="" coords="406,724,501,749"/>
+<area shape="poly" id="edge20_Node000017_Node000025" title=" " alt="" coords="266,693,393,721,392,726,265,698"/>
+<area shape="rect" id="Node000026" href="$dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c" title=" " alt="" coords="417,773,490,799"/>
+<area shape="poly" id="edge21_Node000017_Node000026" title=" " alt="" coords="266,691,292,698,317,709,333,722,342,734,351,747,365,758,404,774,402,779,363,763,347,750,338,737,329,725,315,714,290,703,265,696"/>
+<area shape="rect" id="Node000027" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="414,823,493,848"/>
+<area shape="poly" id="edge22_Node000017_Node000027" title=" " alt="" coords="266,688,293,695,318,709,329,722,337,734,343,760,349,785,355,796,366,808,382,819,401,826,399,831,380,823,362,812,351,800,344,787,337,761,332,736,325,725,314,713,291,700,265,693"/>
+<area shape="rect" id="Node000028" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="387,872,520,897"/>
+<area shape="poly" id="edge23_Node000017_Node000028" title=" " alt="" coords="266,687,293,694,318,709,333,728,340,747,343,785,345,822,352,840,366,857,376,865,373,870,362,861,347,842,340,823,337,785,335,748,328,731,314,713,291,699,265,692"/>
+<area shape="rect" id="Node000029" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="621,799,763,824"/>
+<area shape="poly" id="edge24_Node000017_Node000029" title=" " alt="" coords="266,686,293,694,318,709,336,735,343,761,343,788,340,814,337,839,338,863,346,885,366,907,402,926,442,932,484,927,527,913,568,894,605,872,664,830,667,835,608,877,570,899,529,918,486,932,442,937,401,931,362,911,342,888,333,864,332,839,334,813,337,787,337,762,331,737,314,713,291,699,265,692"/>
+<area shape="rect" id="Node000030" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup." alt="" coords="418,973,489,999"/>
+<area shape="poly" id="edge25_Node000017_Node000030" title=" " alt="" coords="266,686,294,693,318,709,339,740,348,771,348,802,344,832,340,862,340,892,347,922,366,952,384,967,406,976,404,981,381,971,362,956,342,924,334,892,334,862,339,831,343,801,342,772,334,743,314,713,292,698,265,691"/>
+<area shape="rect" id="Node000031" href="$chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="Initialize the specific archittecture functions." alt="" coords="397,1023,510,1048"/>
+<area shape="poly" id="edge26_Node000017_Node000031" title=" " alt="" coords="266,686,294,693,318,709,343,748,352,786,350,824,343,861,336,898,334,935,342,971,366,1008,385,1022,382,1026,362,1012,338,973,329,935,331,897,338,860,345,823,346,786,338,750,314,713,292,698,265,691"/>
+<area shape="rect" id="Node000032" href="$chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc" title=" " alt="" coords="418,1072,489,1097"/>
+<area shape="poly" id="edge27_Node000017_Node000032" title=" " alt="" coords="266,686,294,693,318,709,335,732,346,754,355,798,352,842,343,886,334,929,331,971,339,1014,350,1036,366,1057,384,1071,405,1079,404,1084,381,1076,362,1061,345,1039,334,1016,325,972,328,928,338,884,347,841,350,799,341,756,330,735,314,713,292,698,265,691"/>
+<area shape="rect" id="Node000034" href="$group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title=" " alt="" coords="415,1121,492,1147"/>
+<area shape="poly" id="edge29_Node000017_Node000034" title=" " alt="" coords="266,686,294,693,318,709,337,735,349,761,356,786,359,811,355,861,343,910,331,959,327,1008,329,1033,336,1057,348,1082,366,1107,382,1120,402,1127,400,1132,380,1124,362,1111,343,1085,331,1059,324,1034,322,1008,326,958,338,909,349,860,354,811,351,787,344,762,332,738,314,713,292,698,265,691"/>
+<area shape="rect" id="Node000036" href="$group__spi.html#ga7da3469436debceb731ecb76c920efda" title=" " alt="" coords="415,280,492,305"/>
+<area shape="poly" id="edge31_Node000017_Node000036" title=" " alt="" coords="225,674,232,610,253,514,270,460,294,407,324,358,362,315,380,303,400,295,402,300,383,308,366,319,328,361,298,410,275,462,258,515,238,611,231,675"/>
+<area shape="rect" id="Node000044" href="$group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title=" " alt="" coords="415,329,492,355"/>
+<area shape="poly" id="edge33_Node000017_Node000044" title=" " alt="" coords="226,674,236,618,259,534,276,488,299,443,328,401,362,364,380,352,400,345,402,350,383,357,366,368,332,404,304,446,281,490,264,536,241,619,231,675"/>
+<area shape="rect" id="Node000046" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function" alt="" coords="394,625,513,651"/>
+<area shape="poly" id="edge35_Node000017_Node000046" title=" " alt="" coords="265,676,380,651,382,656,266,682"/>
+<area shape="rect" id="Node000049" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title=" " alt="" coords="399,428,508,453"/>
+<area shape="poly" id="edge38_Node000017_Node000049" title=" " alt="" coords="229,673,244,633,271,575,311,515,335,487,362,462,384,451,387,455,366,467,339,490,315,518,276,578,249,635,234,675"/>
+<area shape="rect" id="Node000055" href="$linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title=" " alt="" coords="398,477,509,503"/>
+<area shape="poly" id="edge39_Node000017_Node000055" title=" " alt="" coords="231,673,250,641,278,597,316,551,363,512,383,501,386,506,365,516,320,555,283,600,254,643,236,676"/>
+<area shape="rect" id="Node000059" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title=" " alt="" coords="399,527,508,552"/>
+<area shape="poly" id="edge40_Node000017_Node000059" title=" " alt="" coords="236,672,287,619,323,588,363,561,384,552,386,556,365,566,326,592,290,622,240,676"/>
+<area shape="rect" id="Node000063" href="$stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title=" " alt="" coords="408,576,499,601"/>
+<area shape="poly" id="edge41_Node000017_Node000063" title=" " alt="" coords="246,672,298,642,363,610,394,600,396,605,365,615,300,646,249,677"/>
+<area shape="rect" id="Node000019" href="$chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d" title="Adc1 callback." alt="" coords="639,513,745,539"/>
+<area shape="poly" id="edge14_Node000018_Node000019" title=" " alt="" coords="491,392,518,399,544,413,562,435,569,457,576,479,592,499,626,515,624,520,589,503,571,481,564,459,557,438,541,417,516,404,489,397"/>
+<area shape="rect" id="Node000020" href="$chibios_2mcu__periph_2adc__arch_8c.html#aba229c19557de0c492527630ad132f6d" title="Configure the ADC conversion group depending on the architecture." alt="" coords="636,563,748,588"/>
+<area shape="poly" id="edge15_Node000018_Node000020" title=" " alt="" coords="491,391,519,398,544,413,558,430,566,448,569,483,572,516,579,532,592,548,607,558,623,565,621,570,604,563,589,552,575,535,567,518,564,483,561,449,554,433,541,417,517,403,489,396"/>
+<area shape="rect" id="Node000021" href="$chibios_2mcu__periph_2adc__arch_8c.html#ab33213b168f1b881ddc092b70d45e130" title="Adc error callback." alt="" coords="627,365,757,391"/>
+<area shape="poly" id="edge16_Node000018_Node000021" title=" " alt="" coords="490,387,613,380,613,385,491,392"/>
+<area shape="rect" id="Node000022" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6" title="Setup a gpio for analog use." alt="" coords="607,415,777,440"/>
+<area shape="poly" id="edge17_Node000018_Node000022" title=" " alt="" coords="491,394,594,410,594,415,490,399"/>
+<area shape="rect" id="Node000023" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="614,464,770,489"/>
+<area shape="poly" id="edge18_Node000018_Node000023" title=" " alt="" coords="491,395,544,413,568,431,592,449,613,457,611,462,589,454,565,436,541,418,489,400"/>
+<area shape="rect" id="Node000033" href="$chibios_2mcu__periph_2rng__arch_8c.html#ab7aa95d4a1836ff073138d41d955e683" title=" " alt="" coords="647,1072,737,1097"/>
+<area shape="poly" id="edge28_Node000032_Node000033" title=" " alt="" coords="489,1082,633,1082,633,1087,489,1087"/>
+<area shape="rect" id="Node000035" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization." alt="" coords="636,1121,748,1147"/>
+<area shape="poly" id="edge30_Node000034_Node000035" title=" " alt="" coords="492,1131,622,1131,622,1137,492,1137"/>
+<area shape="rect" id="Node000037" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization." alt="" coords="636,267,748,292"/>
+<area shape="poly" id="edge32_Node000036_Node000037" title=" " alt="" coords="492,288,622,281,623,286,492,293"/>
+<area shape="rect" id="Node000045" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization." alt="" coords="636,316,748,341"/>
+<area shape="poly" id="edge34_Node000044_Node000045" title=" " alt="" coords="492,337,622,330,623,335,492,343"/>
+<area shape="poly" id="edge36_Node000046_Node000029" title=" " alt="" coords="514,647,544,660,585,689,622,723,676,786,671,789,618,726,582,693,541,664,512,652"/>
+<area shape="rect" id="Node000047" href="$group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function" alt="" coords="619,625,765,651"/>
+<area shape="poly" id="edge37_Node000046_Node000047" title=" " alt="" coords="513,635,606,635,606,641,513,641"/>
+<area shape="rect" id="Node000090" href="$chibios_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title=" " alt="" coords="392,1171,515,1196"/>
+<area shape="poly" id="edge48_Node000089_Node000090" title=" " alt="" coords="246,976,281,1007,318,1050,333,1080,339,1107,346,1132,366,1156,381,1166,378,1170,362,1160,342,1134,334,1109,328,1082,314,1053,277,1011,242,980"/>
+<area shape="rect" id="Node000092" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="364,1220,543,1245"/>
+<area shape="poly" id="edge50_Node000091_Node000092" title=" " alt="" coords="239,1088,289,1144,325,1177,365,1205,381,1213,379,1217,363,1210,322,1181,285,1148,235,1091"/>
+<area shape="rect" id="Node000094" href="$sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title=" " alt="" coords="369,1269,537,1295"/>
+<area shape="poly" id="edge52_Node000093_Node000094" title=" " alt="" coords="317,1260,356,1266,355,1271,316,1265"/>
 </map>

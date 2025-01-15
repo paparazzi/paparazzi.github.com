@@ -1,34 +1,85 @@
 <map id="sw/airborne/modules/gumstix_interface/qr_code_spi_link.c" name="sw/airborne/modules/gumstix_interface/qr_code_spi_link.c">
-<area shape="rect" id="node1" title=" " alt="" coords="1224,5,1385,61"/>
-<area shape="rect" id="node2" href="$qr__code__spi__link_8h.html" title=" " alt="" coords="1957,109,2100,136"/>
-<area shape="rect" id="node4" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="569,109,717,136"/>
-<area shape="rect" id="node17" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="998,191,1131,218"/>
-<area shape="rect" id="node23" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1651,273,1791,300"/>
-<area shape="rect" id="node26" title=" " alt="" coords="1156,191,1312,218"/>
-<area shape="rect" id="node27" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1271,109,1482,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="787,437,841,464"/>
-<area shape="rect" id="node5" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="499,273,679,300"/>
-<area shape="rect" id="node12" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="150,273,342,300"/>
-<area shape="rect" id="node14" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="377,184,544,225"/>
-<area shape="rect" id="node15" href="$low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="619,191,790,218"/>
-<area shape="rect" id="node16" title=" " alt="" coords="814,191,974,218"/>
-<area shape="rect" id="node6" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="267,355,423,382"/>
-<area shape="rect" id="node10" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="499,355,652,382"/>
-<area shape="rect" id="node11" title=" " alt="" coords="779,355,849,382"/>
-<area shape="rect" id="node7" title=" " alt="" coords="181,437,244,464"/>
-<area shape="rect" id="node8" title=" " alt="" coords="309,437,380,464"/>
-<area shape="rect" id="node9" title=" " alt="" coords="5,437,73,464"/>
-<area shape="rect" id="node13" title=" " alt="" coords="85,355,242,382"/>
-<area shape="rect" id="node18" title=" " alt="" coords="925,273,1093,300"/>
-<area shape="rect" id="node19" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1117,273,1290,300"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1312,355,1399,382"/>
-<area shape="rect" id="node21" title=" " alt="" coords="976,355,1103,382"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1127,348,1288,389"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1475,355,1649,382"/>
-<area shape="rect" id="node25" title=" " alt="" coords="1674,355,1866,382"/>
-<area shape="rect" id="node28" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1845,191,2049,218"/>
-<area shape="rect" id="node30" href="$pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1572,191,1771,218"/>
-<area shape="rect" id="node32" title=" " alt="" coords="1387,191,1547,218"/>
-<area shape="rect" id="node29" title=" " alt="" coords="1941,273,2103,300"/>
-<area shape="rect" id="node31" title=" " alt="" coords="1442,273,1626,300"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1224,5,1385,60"/>
+<area shape="rect" id="Node000002" href="$qr__code__spi__link_8h.html" title=" " alt="" coords="1957,108,2100,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1386,41,1944,107,1943,112,1385,46"/>
+<area shape="rect" id="Node000004" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="569,108,717,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1224,47,731,111,730,105,1223,42"/>
+<area shape="rect" id="Node000017" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="998,189,1131,214"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="1268,62,1094,183,1091,179,1265,58"/>
+<area shape="rect" id="Node000023" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1651,269,1791,295"/>
+<area shape="poly" id="edge36_Node000001_Node000023" title=" " alt="" coords="1386,45,1494,66,1614,96,1670,114,1720,134,1759,156,1785,180,1791,191,1792,202,1785,225,1769,246,1750,263,1746,259,1765,242,1780,222,1787,202,1786,192,1781,183,1756,160,1717,139,1668,119,1612,101,1493,71,1385,50"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1156,189,1312,214"/>
+<area shape="poly" id="edge40_Node000001_Node000026" title=" " alt="" coords="1289,61,1262,109,1250,143,1241,176,1236,174,1245,142,1257,107,1284,59"/>
+<area shape="rect" id="Node000027" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1271,108,1482,133"/>
+<area shape="poly" id="edge41_Node000001_Node000027" title=" " alt="" coords="1329,58,1360,96,1356,99,1325,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="787,431,841,456"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2044,131,2075,161,2108,202,2120,225,2127,249,2127,273,2118,296,2096,323,2074,343,2052,356,2027,364,1973,374,1906,385,1809,401,1680,414,1369,432,1064,441,855,444,855,439,1064,436,1368,427,1679,409,1809,396,1906,380,1972,369,2026,359,2049,351,2071,339,2092,320,2113,293,2122,272,2122,250,2115,227,2103,205,2071,164,2041,135"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="499,269,679,295"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="637,135,623,156,610,182,599,220,593,256,588,255,594,219,605,180,618,154,632,132"/>
+<area shape="rect" id="Node000012" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="150,269,342,295"/>
+<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="570,131,470,148,417,163,366,184,337,201,310,221,267,261,264,257,307,217,334,196,363,179,415,158,469,143,569,125"/>
+<area shape="rect" id="Node000014" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="377,181,544,221"/>
+<area shape="poly" id="edge19_Node000004_Node000014" title=" " alt="" coords="618,136,518,178,516,174,616,131"/>
+<area shape="rect" id="Node000015" href="$low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="619,189,790,214"/>
+<area shape="poly" id="edge23_Node000004_Node000015" title=" " alt="" coords="654,132,689,176,685,180,650,135"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="814,189,974,214"/>
+<area shape="poly" id="edge26_Node000004_Node000016" title=" " alt="" coords="681,131,845,182,844,187,679,136"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="605,293,724,380,785,421,782,425,720,385,602,297"/>
+<area shape="rect" id="Node000006" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="267,350,423,375"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="554,297,394,348,393,343,552,292"/>
+<area shape="rect" id="Node000010" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="499,350,652,375"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="589,295,582,337,577,336,584,294"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="779,350,849,375"/>
+<area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="622,292,769,343,768,348,621,297"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="403,373,442,380,773,433,772,439,442,385,402,378"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="181,431,244,456"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="327,378,245,426,242,421,324,373"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="309,431,380,456"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="347,376,347,417,342,417,342,376"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,431,73,456"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="301,378,87,433,86,427,300,373"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="611,373,774,426,773,431,609,378"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="262,293,321,339,318,343,259,297"/>
+<area shape="poly" id="edge18_Node000012_Node000007" title=" " alt="" coords="151,297,108,315,90,328,75,344,68,363,75,381,94,401,117,416,169,434,167,439,115,421,90,406,70,384,62,363,70,341,86,324,106,310,149,292"/>
+<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="151,297,103,315,81,328,63,344,52,361,45,380,41,417,35,417,40,378,47,358,59,341,78,324,100,310,149,292"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="85,350,242,375"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="236,297,187,342,184,339,232,293"/>
+<area shape="poly" id="edge22_Node000014_Node000003" title=" " alt="" coords="460,222,456,256,456,299,465,343,475,363,488,381,508,394,537,406,615,423,700,433,773,438,773,443,700,438,614,428,535,411,505,399,484,385,470,366,460,345,451,299,450,256,454,221"/>
+<area shape="poly" id="edge20_Node000014_Node000005" title=" " alt="" coords="493,219,560,260,557,264,490,224"/>
+<area shape="poly" id="edge21_Node000014_Node000012" title=" " alt="" coords="410,224,291,267,289,262,408,219"/>
+<area shape="poly" id="edge24_Node000015_Node000003" title=" " alt="" coords="710,213,730,286,748,334,770,381,796,419,792,422,765,384,743,336,725,288,705,215"/>
+<area shape="poly" id="edge25_Node000015_Node000005" title=" " alt="" coords="689,216,619,264,616,259,686,212"/>
+<area shape="poly" id="edge28_Node000017_Node000003" title=" " alt="" coords="1017,217,964,237,938,252,915,271,895,298,886,324,879,351,864,384,836,422,832,419,860,381,874,350,881,322,890,296,911,267,935,248,962,232,1015,212"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="925,269,1093,295"/>
+<area shape="poly" id="edge29_Node000017_Node000018" title=" " alt="" coords="1059,216,1027,260,1023,257,1054,213"/>
+<area shape="rect" id="Node000019" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1117,269,1290,295"/>
+<area shape="poly" id="edge30_Node000017_Node000019" title=" " alt="" coords="1086,212,1172,260,1170,265,1084,217"/>
+<area shape="poly" id="edge33_Node000019_Node000003" title=" " alt="" coords="1130,297,1050,316,966,345,936,363,908,385,845,425,842,421,904,380,933,359,964,340,1048,311,1129,292"/>
+<area shape="poly" id="edge32_Node000019_Node000011" title=" " alt="" coords="1147,297,863,354,862,349,1146,292"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1312,350,1399,375"/>
+<area shape="poly" id="edge31_Node000019_Node000020" title=" " alt="" coords="1227,292,1322,341,1320,346,1225,297"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="976,350,1103,375"/>
+<area shape="poly" id="edge34_Node000019_Node000021" title=" " alt="" coords="1181,297,1077,347,1074,342,1178,292"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="1127,343,1288,383"/>
+<area shape="poly" id="edge35_Node000019_Node000022" title=" " alt="" coords="1207,295,1208,329,1203,329,1201,295"/>
+<area shape="poly" id="edge39_Node000023_Node000003" title=" " alt="" coords="1658,297,1549,320,1500,333,1465,345,1450,355,1440,365,1429,376,1412,385,1364,399,1298,411,1139,428,978,438,855,444,855,438,977,433,1139,423,1298,406,1362,394,1410,380,1426,372,1436,361,1446,351,1462,340,1498,328,1548,315,1657,292"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1475,350,1649,375"/>
+<area shape="poly" id="edge37_Node000023_Node000024" title=" " alt="" coords="1699,297,1599,346,1596,342,1696,292"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1674,350,1866,375"/>
+<area shape="poly" id="edge38_Node000023_Node000025" title=" " alt="" coords="1730,293,1758,337,1753,340,1726,296"/>
+<area shape="poly" id="edge43_Node000027_Node000016" title=" " alt="" coords="1294,136,986,184,962,189,961,183,986,179,1293,131"/>
+<area shape="poly" id="edge42_Node000027_Node000020" title=" " alt="" coords="1378,134,1360,336,1355,336,1373,133"/>
+<area shape="poly" id="edge44_Node000027_Node000026" title=" " alt="" coords="1357,136,1268,184,1266,180,1354,131"/>
+<area shape="rect" id="Node000028" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1845,189,2049,214"/>
+<area shape="poly" id="edge45_Node000027_Node000028" title=" " alt="" coords="1460,131,1851,184,1851,189,1459,136"/>
+<area shape="rect" id="Node000030" href="$pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1572,189,1771,214"/>
+<area shape="poly" id="edge48_Node000027_Node000030" title=" " alt="" coords="1420,131,1616,183,1615,188,1419,136"/>
+<area shape="rect" id="Node000032" title=" " alt="" coords="1387,189,1547,214"/>
+<area shape="poly" id="edge51_Node000027_Node000032" title=" " alt="" coords="1392,131,1445,178,1442,182,1388,136"/>
+<area shape="poly" id="edge46_Node000028_Node000003" title=" " alt="" coords="1946,215,1914,310,1895,358,1880,385,1856,396,1818,405,1709,421,1567,431,1405,438,1082,445,855,445,855,440,1082,439,1405,433,1566,426,1709,415,1817,400,1854,391,1876,381,1890,356,1909,308,1941,213"/>
+<area shape="rect" id="Node000029" title=" " alt="" coords="1941,269,2103,295"/>
+<area shape="poly" id="edge47_Node000028_Node000029" title=" " alt="" coords="1960,212,2004,258,2000,261,1956,216"/>
+<area shape="poly" id="edge50_Node000030_Node000023" title=" " alt="" coords="1681,213,1708,256,1704,259,1676,216"/>
+<area shape="rect" id="Node000031" title=" " alt="" coords="1442,269,1626,295"/>
+<area shape="poly" id="edge49_Node000030_Node000031" title=" " alt="" coords="1652,216,1567,265,1565,260,1650,212"/>
 </map>

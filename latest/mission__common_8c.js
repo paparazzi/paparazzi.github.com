@@ -1,9 +1,9 @@
 var mission__common_8c =
 [
     [ "MISSION_CHECK_UNIQUE_ID", "mission__common_8c.html#ab28e6577b24ee45e61cf48d255a55005", null ],
-    [ "mission_get", "mission__common_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4", null ],
-    [ "mission_get_from_index", "mission__common_8c.html#a8cfd722b32d9d6683e562b437e15d8bc", null ],
-    [ "mission_get_registered", "mission__common_8c.html#a1323ceffc151a2671a0e6c6753157763", null ],
+    [ "mission_get", "mission__common_8c.html#a217140c5e6527af70d60598cad1bc6ff", null ],
+    [ "mission_get_from_index", "mission__common_8c.html#a7177b7dbe44718e5e2cd65e33c45257a", null ],
+    [ "mission_get_registered", "mission__common_8c.html#aa947aa0483f425d062f4991b16060d21", null ],
     [ "mission_init", "mission__common_8c.html#a19c6efe9565f7d4a03291cb165b931ff", null ],
     [ "mission_insert", "mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95", null ],
     [ "mission_parse_CIRCLE", "mission__common_8c.html#a6bc6421e3873d2b4d620bc33e1e90446", null ],

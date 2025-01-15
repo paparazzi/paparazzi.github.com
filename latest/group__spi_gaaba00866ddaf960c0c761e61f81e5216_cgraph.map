@@ -1,13 +1,23 @@
 <map id="spi1_arch_init" name="spi1_arch_init">
-<area shape="rect" id="node1" title="Architecture dependent SPI1 initialization." alt="" coords="5,107,117,133"/>
-<area shape="rect" id="node2" href="$stm32_2mcu__periph_2spi__arch_8c.html#a1b67d6591f383aeac5cadbcc070af2d3" title=" " alt="" coords="181,5,339,32"/>
-<area shape="rect" id="node3" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1" title="Setup a gpio for input or output with alternate function." alt="" coords="190,56,330,83"/>
-<area shape="rect" id="node4" href="$stm32_2mcu__periph_2spi__arch_8c.html#ac13da083b304f2ec1892ca8dcf98442f" title=" " alt="" coords="165,107,355,133"/>
-<area shape="rect" id="node5" href="$stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts." alt="" coords="185,157,335,184"/>
-<area shape="rect" id="node6" href="$chibios_2mcu__periph_2spi__arch_8c.html#a1524dc1d1f9e729e7bb1831fa3f0b57d" title="Default spi thread." alt="" coords="225,208,295,235"/>
-<area shape="rect" id="node7" href="$chibios_2mcu__periph_2spi__arch_8c.html#a3b31c9dcdd9d40b30a43ef7f6f58e5f2" title="main thread function" alt="" coords="403,208,523,235"/>
-<area shape="rect" id="node8" href="$chibios_2mcu__periph_2spi__arch_8c.html#a365dbba94676b37ad550f337626425f7" title="Resolve CR1 (or CFG1)" alt="" coords="591,132,721,159"/>
-<area shape="rect" id="node9" href="$chibios_2mcu__periph_2spi__arch_8c.html#a60353627415384b3800fd15b42115231" title="Resolve CR2 (or CFG2)" alt="" coords="591,183,721,209"/>
-<area shape="rect" id="node10" href="$chibios_2mcu__periph_2spi__arch_8c.html#a816ec882637a52c36a69d511115014b1" title="Resolve slave pin." alt="" coords="573,233,739,260"/>
-<area shape="rect" id="node11" href="$chibios_2mcu__periph_2spi__arch_8c.html#a6516ee2e5f4bb05db961183e1ed3c6ce" title="Resolve slave port." alt="" coords="571,284,741,311"/>
+<area shape="rect" id="Node000001" title="Architecture dependent SPI1 initialization." alt="" coords="5,104,117,129"/>
+<area shape="rect" id="Node000002" href="$stm32_2mcu__periph_2spi__arch_8c.html#a1b67d6591f383aeac5cadbcc070af2d3" title=" " alt="" coords="181,5,339,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,102,114,71,164,40,182,32,184,37,167,44,117,75,79,106"/>
+<area shape="rect" id="Node000003" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1" title="Setup a gpio for input or output with alternate function." alt="" coords="190,55,330,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,101,194,81,196,86,114,107"/>
+<area shape="rect" id="Node000004" href="$stm32_2mcu__periph_2spi__arch_8c.html#ac13da083b304f2ec1892ca8dcf98442f" title=" " alt="" coords="165,104,355,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,114,151,114,151,119,118,119"/>
+<area shape="rect" id="Node000005" href="$stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts." alt="" coords="185,153,335,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="114,127,196,147,194,153,112,132"/>
+<area shape="rect" id="Node000006" href="$chibios_2mcu__periph_2spi__arch_8c.html#a1524dc1d1f9e729e7bb1831fa3f0b57d" title="Default spi thread." alt="" coords="225,203,295,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="79,127,117,157,166,188,213,204,211,209,164,192,114,162,75,131"/>
+<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2spi__arch_8c.html#a3b31c9dcdd9d40b30a43ef7f6f58e5f2" title="main thread function" alt="" coords="403,203,523,228"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="295,213,389,213,389,218,295,218"/>
+<area shape="rect" id="Node000008" href="$chibios_2mcu__periph_2spi__arch_8c.html#a365dbba94676b37ad550f337626425f7" title="Resolve CR1 (or CFG1)" alt="" coords="591,128,721,153"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="487,200,570,162,591,155,593,160,572,167,489,205"/>
+<area shape="rect" id="Node000009" href="$chibios_2mcu__periph_2spi__arch_8c.html#a60353627415384b3800fd15b42115231" title="Resolve CR2 (or CFG2)" alt="" coords="591,177,721,203"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="522,205,577,198,578,203,523,210"/>
+<area shape="rect" id="Node000010" href="$chibios_2mcu__periph_2spi__arch_8c.html#a816ec882637a52c36a69d511115014b1" title="Resolve slave pin." alt="" coords="573,227,739,252"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="523,220,560,225,559,230,522,225"/>
+<area shape="rect" id="Node000011" href="$chibios_2mcu__periph_2spi__arch_8c.html#a6516ee2e5f4bb05db961183e1ed3c6ce" title="Resolve slave port." alt="" coords="571,276,741,301"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="491,226,572,261,596,269,595,274,570,266,489,231"/>
 </map>

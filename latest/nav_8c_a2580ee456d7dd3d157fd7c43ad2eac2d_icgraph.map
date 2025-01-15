@@ -1,17 +1,39 @@
 <map id="nav_init_stage" name="nav_init_stage">
-<area shape="rect" id="node1" title="needs to be implemented by fixedwing and rotorcraft seperately" alt="" coords="504,309,621,336"/>
-<area shape="rect" id="node2" href="$nav__survey__polygon__gvf_8c.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" title=" " alt="" coords="244,5,456,32"/>
-<area shape="rect" id="node3" href="$nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="259,56,441,83"/>
-<area shape="rect" id="node4" href="$nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463" title=" " alt="" coords="289,107,411,133"/>
-<area shape="rect" id="node5" href="$nav__line__border_8c.html#ad8aeda9d8b50c4c799e02f30fd7fdd2c" title=" " alt="" coords="273,157,427,184"/>
-<area shape="rect" id="node6" href="$nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="276,208,424,235"/>
-<area shape="rect" id="node8" href="$nav__line_8c.html#aea23f333a62e87e18f4c30016a945325" title=" " alt="" coords="297,259,403,285"/>
-<area shape="rect" id="node9" href="$nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="269,309,431,336"/>
-<area shape="rect" id="node10" href="$nav__survey__hybrid_8c.html#aad2e8c336e9d7c16f8f84430739aac9b" title="Run polygon hybrid survey." alt="" coords="263,360,437,387"/>
-<area shape="rect" id="node11" href="$nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="249,411,451,437"/>
-<area shape="rect" id="node12" href="$nav__survey__poly__rotorcraft_8c.html#a3e94ba3055026d18e3acc3027bf25cd9" title="Run polygon survey." alt="" coords="270,461,430,488"/>
-<area shape="rect" id="node13" href="$nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="258,512,442,539"/>
-<area shape="rect" id="node14" href="$nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="256,563,444,589"/>
-<area shape="rect" id="node15" href="$nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f" title=" " alt="" coords="263,613,437,640"/>
-<area shape="rect" id="node7" href="$nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="5,208,196,235"/>
+<area shape="rect" id="Node000001" title="needs to be implemented by fixedwing and rotorcraft seperately" alt="" coords="504,400,621,425"/>
+<area shape="rect" id="Node000002" href="$nav__survey__polygon__gvf_8c.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" title=" " alt="" coords="244,5,456,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="560,386,557,317,544,225,531,175,512,127,487,83,454,44,439,33,442,29,458,40,491,80,517,125,536,174,549,224,563,317,565,386"/>
+<area shape="rect" id="Node000003" href="$nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="259,55,441,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="558,387,553,326,538,246,525,205,507,164,483,126,454,93,438,82,441,78,458,89,488,123,511,161,530,203,543,245,558,325,564,386"/>
+<area shape="rect" id="Node000004" href="$nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463" title=" " alt="" coords="289,104,411,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="556,386,548,334,531,268,518,234,501,200,480,169,454,143,434,130,410,123,412,118,436,125,458,139,484,166,505,197,523,231,536,266,554,333,562,386"/>
+<area shape="rect" id="Node000005" href="$nav__lace_8c.html#a5507f5f91028a43cd4b79132653098b1" title="Navigation function Called by flight plan or mission run function." alt="" coords="296,153,404,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="554,387,543,344,524,291,495,237,476,213,454,192,430,179,404,171,405,166,432,174,458,188,480,209,499,234,529,289,548,342,559,386"/>
+<area shape="rect" id="Node000006" href="$nav__line__border_8c.html#ad8aeda9d8b50c4c799e02f30fd7fdd2c" title=" " alt="" coords="273,203,427,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="551,388,537,354,517,314,489,275,454,242,426,228,429,223,458,237,493,271,521,311,542,352,555,386"/>
+<area shape="rect" id="Node000007" href="$nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="276,252,424,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="545,390,508,339,483,313,455,291,423,277,425,272,457,286,487,309,512,335,549,387"/>
+<area shape="rect" id="Node000009" href="$nav__line_8c.html#aea23f333a62e87e18f4c30016a945325" title=" " alt="" coords="297,301,403,327"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="535,393,499,366,455,340,402,324,403,319,457,336,502,361,539,389"/>
+<area shape="rect" id="Node000010" href="$nav__rosette_8c.html#ab7578e518a93fa5219898526d446a143" title="Navigation function Called by flight plan or mission run function." alt="" coords="287,351,413,376"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="495,399,455,390,407,379,408,373,457,385,496,394"/>
+<area shape="rect" id="Node000011" href="$nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="269,400,431,425"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="490,415,431,415,431,410,490,410"/>
+<area shape="rect" id="Node000012" href="$nav__survey__disc_8c.html#a93968959c0ddd1d6fa2c7d6ce2951344" title=" " alt="" coords="271,449,429,475"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="495,431,406,452,405,447,493,426"/>
+<area shape="rect" id="Node000013" href="$nav__survey__hybrid_8c.html#aad2e8c336e9d7c16f8f84430739aac9b" title="Run polygon hybrid survey." alt="" coords="263,499,437,524"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="537,437,501,464,457,488,421,501,419,496,455,484,498,459,534,432"/>
+<area shape="rect" id="Node000014" href="$nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="249,548,451,573"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="549,438,512,489,487,515,457,538,430,550,427,545,455,533,483,511,508,486,545,435"/>
+<area shape="rect" id="Node000015" href="$nav__survey__poly__rotorcraft_8c.html#a3e94ba3055026d18e3acc3027bf25cd9" title="Run polygon survey." alt="" coords="270,597,430,623"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="555,439,542,473,521,513,493,553,458,587,432,600,429,596,454,583,489,550,516,510,537,471,550,437"/>
+<area shape="rect" id="Node000016" href="$nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="258,647,442,672"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="559,439,548,483,529,536,499,590,480,615,458,636,436,649,433,644,454,632,476,611,495,587,524,534,543,481,554,438"/>
+<area shape="rect" id="Node000017" href="$nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="256,696,444,721"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="562,440,553,492,536,558,522,593,505,627,484,658,458,685,438,698,435,694,454,681,480,655,500,624,517,591,531,556,548,491,556,439"/>
+<area shape="rect" id="Node000018" href="$nav__trinity_8c.html#ad3d3ca1142e0657d3cf2b9fab8b74370" title="Navigation function Called by flight plan or mission run function." alt="" coords="290,745,410,771"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="563,439,558,500,543,579,529,622,511,663,487,701,458,735,436,749,411,757,409,752,433,744,454,731,483,698,506,660,524,620,537,578,553,499,558,439"/>
+<area shape="rect" id="Node000019" href="$nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f" title=" " alt="" coords="263,795,437,820"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="565,439,562,508,549,601,536,650,517,699,491,744,458,784,439,797,436,793,454,780,487,741,512,697,531,649,544,600,557,508,560,439"/>
+<area shape="rect" id="Node000008" href="$nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="5,252,196,277"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="262,267,196,267,196,262,262,262"/>
 </map>

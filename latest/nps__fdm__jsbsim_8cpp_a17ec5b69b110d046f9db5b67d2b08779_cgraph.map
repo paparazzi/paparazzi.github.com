@@ -1,28 +1,57 @@
 <map id="nps_fdm_init" name="nps_fdm_init">
-<area shape="rect" id="node1" title="NPS FDM rover init." alt="" coords="5,309,112,336"/>
-<area shape="rect" id="node2" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="160,639,255,665"/>
-<area shape="rect" id="node16" href="$nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim." alt="" coords="161,107,254,133"/>
-<area shape="rect" id="node20" href="$nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location." alt="" coords="174,309,241,336"/>
-<area shape="rect" id="node3" href="$group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="319,664,488,691"/>
-<area shape="rect" id="node4" href="$nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="338,461,469,488"/>
-<area shape="rect" id="node5" href="$nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="328,765,479,792"/>
-<area shape="rect" id="node6" href="$nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="333,816,474,843"/>
-<area shape="rect" id="node7" href="$nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="334,867,473,893"/>
-<area shape="rect" id="node8" href="$nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="303,917,504,944"/>
-<area shape="rect" id="node9" href="$nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="309,563,498,589"/>
-<area shape="rect" id="node10" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="576,461,684,488"/>
-<area shape="rect" id="node11" href="$nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="340,309,467,336"/>
-<area shape="rect" id="node12" href="$group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="325,613,481,640"/>
-<area shape="rect" id="node14" href="$group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="328,715,479,741"/>
-<area shape="rect" id="node13" href="$group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="552,613,708,640"/>
-<area shape="rect" id="node15" href="$group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="555,715,705,741"/>
-<area shape="rect" id="node17" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="349,5,457,32"/>
-<area shape="rect" id="node18" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="353,56,454,83"/>
-<area shape="rect" id="node19" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="344,107,463,133"/>
-<area shape="rect" id="node21" href="$group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place" alt="" coords="313,208,494,235"/>
-<area shape="rect" id="node23" href="$group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title=" " alt="" coords="364,360,443,387"/>
-<area shape="rect" id="node24" href="$group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="326,411,481,437"/>
-<area shape="rect" id="node25" href="$group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title=" " alt="" coords="361,157,445,184"/>
-<area shape="rect" id="node26" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="325,259,481,285"/>
-<area shape="rect" id="node22" href="$group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="555,208,705,235"/>
+<area shape="rect" id="Node000001" title="NPS FDM rover init." alt="" coords="5,301,112,327"/>
+<area shape="rect" id="Node000002" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="160,624,255,649"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,326,197,610,192,612,63,328"/>
+<area shape="rect" id="Node000016" href="$nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim." alt="" coords="161,104,254,129"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="67,299,186,139,191,142,72,303"/>
+<area shape="rect" id="Node000020" href="$nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location." alt="" coords="174,301,241,327"/>
+<area shape="poly" id="edge20_Node000001_Node000020" title=" " alt="" coords="112,311,160,311,160,317,112,317"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="319,649,488,675"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,640,306,647,305,652,255,645"/>
+<area shape="rect" id="Node000004" href="$nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="338,449,469,475"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="211,623,242,561,268,524,301,492,327,477,329,482,304,496,273,527,247,563,216,625"/>
+<area shape="rect" id="Node000005" href="$nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="328,748,479,773"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="219,648,253,691,277,715,304,734,317,741,314,745,301,739,273,719,249,695,215,651"/>
+<area shape="rect" id="Node000006" href="$nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="333,797,474,823"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="215,648,227,677,245,714,271,752,304,784,321,793,318,798,301,788,267,755,241,716,222,679,210,650"/>
+<area shape="rect" id="Node000007" href="$nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="334,847,473,872"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="213,649,222,686,239,736,266,789,283,813,304,833,322,844,319,849,301,837,279,816,261,792,234,738,217,687,208,650"/>
+<area shape="rect" id="Node000008" href="$nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="303,896,504,921"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="212,649,218,694,232,758,244,792,260,825,280,856,304,883,310,887,306,891,301,887,276,859,255,828,239,794,227,759,213,695,207,650"/>
+<area shape="rect" id="Node000009" href="$nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="309,551,498,576"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="228,622,262,603,302,585,325,577,326,582,304,590,264,608,231,626"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="576,451,684,476"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="215,622,249,579,273,556,301,536,340,523,407,506,562,474,563,479,408,512,341,528,304,540,277,560,253,583,219,625"/>
+<area shape="rect" id="Node000011" href="$nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="340,301,467,327"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="206,623,209,570,221,493,233,451,249,409,272,370,301,336,325,321,328,325,304,340,276,373,254,411,238,452,226,494,214,571,211,624"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="325,600,481,625"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="255,628,311,621,312,627,255,634"/>
+<area shape="rect" id="Node000014" href="$group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="328,699,479,724"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="230,647,264,666,304,685,326,692,325,698,302,690,261,671,228,652"/>
+<area shape="rect" id="Node000013" href="$group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="552,600,708,625"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="482,610,538,610,538,615,482,615"/>
+<area shape="rect" id="Node000015" href="$group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="555,699,705,724"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="479,709,541,709,541,714,479,714"/>
+<area shape="poly" id="edge19_Node000016_Node000011" title=" " alt="" coords="214,129,225,161,242,204,269,249,304,287,328,300,325,304,301,291,264,252,238,207,220,163,209,131"/>
+<area shape="rect" id="Node000017" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="349,5,457,31"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="220,102,255,70,301,40,335,27,337,32,304,44,258,75,223,105"/>
+<area shape="rect" id="Node000018" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="353,55,454,80"/>
+<area shape="poly" id="edge17_Node000016_Node000018" title=" " alt="" coords="253,102,302,89,339,80,340,85,303,94,255,107"/>
+<area shape="rect" id="Node000019" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="344,104,463,129"/>
+<area shape="poly" id="edge18_Node000016_Node000019" title=" " alt="" coords="254,114,330,114,330,119,254,119"/>
+<area shape="poly" id="edge24_Node000020_Node000004" title=" " alt="" coords="217,326,249,379,274,409,304,434,326,446,324,450,301,439,271,413,245,382,213,328"/>
+<area shape="poly" id="edge25_Node000020_Node000011" title=" " alt="" coords="241,311,326,311,326,317,241,317"/>
+<area shape="rect" id="Node000021" href="$group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place" alt="" coords="313,203,494,228"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="220,299,255,268,301,237,318,230,320,235,304,242,258,272,223,303"/>
+<area shape="rect" id="Node000023" href="$group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title=" " alt="" coords="364,351,443,376"/>
+<area shape="poly" id="edge23_Node000020_Node000023" title=" " alt="" coords="242,320,303,335,351,348,350,353,302,341,240,325"/>
+<area shape="rect" id="Node000024" href="$group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="326,400,481,425"/>
+<area shape="poly" id="edge26_Node000020_Node000024" title=" " alt="" coords="223,325,258,355,304,385,324,393,322,398,301,390,255,359,220,329"/>
+<area shape="rect" id="Node000025" href="$group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title=" " alt="" coords="361,153,445,179"/>
+<area shape="poly" id="edge28_Node000020_Node000025" title=" " alt="" coords="212,300,245,245,270,214,301,188,324,177,347,170,349,175,326,182,304,192,274,218,249,248,217,303"/>
+<area shape="rect" id="Node000026" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="325,252,481,277"/>
+<area shape="poly" id="edge29_Node000020_Node000026" title=" " alt="" coords="240,303,302,286,335,278,336,283,303,291,241,308"/>
+<area shape="rect" id="Node000022" href="$group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="555,203,705,228"/>
+<area shape="poly" id="edge22_Node000021_Node000022" title=" " alt="" coords="494,213,541,213,541,218,494,218"/>
+<area shape="poly" id="edge27_Node000024_Node000010" title=" " alt="" coords="462,423,563,446,562,451,461,428"/>
 </map>

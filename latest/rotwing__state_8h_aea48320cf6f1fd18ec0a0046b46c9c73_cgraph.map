@@ -1,10 +1,20 @@
 <map id="rotwing_state_periodic" name="rotwing_state_periodic">
-<area shape="rect" id="node1" title=" " alt="" coords="5,147,176,174"/>
-<area shape="rect" id="node2" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="451,147,597,174"/>
-<area shape="rect" id="node3" href="$guidance__indi__hybrid_8c.html#a7ebc56a7fea2d1f9657533ea079ba78d" title=" " alt="" coords="224,41,400,82"/>
-<area shape="rect" id="node4" href="$rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="235,106,389,148"/>
-<area shape="rect" id="node5" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="235,172,389,213"/>
-<area shape="rect" id="node6" href="$rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="231,237,393,278"/>
-<area shape="rect" id="node7" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="239,303,385,330"/>
-<area shape="rect" id="node8" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="448,303,600,330"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,143,176,169"/>
+<area shape="rect" id="Node000002" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="451,143,597,169"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,141,117,115,145,82,181,50,223,26,271,9,312,3,353,8,401,26,436,46,467,74,510,130,506,133,463,78,433,51,399,30,352,13,312,8,273,14,225,30,184,54,149,86,121,118,102,144"/>
+<area shape="rect" id="Node000003" href="$guidance__indi__hybrid_8c.html#a7ebc56a7fea2d1f9657533ea079ba78d" title=" " alt="" coords="224,40,400,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,141,223,90,240,82,242,87,225,94,118,146"/>
+<area shape="rect" id="Node000004" href="$rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="235,104,389,144"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,141,221,134,222,140,177,146"/>
+<area shape="rect" id="Node000005" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="235,168,389,208"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="177,166,222,172,221,177,176,171"/>
+<area shape="rect" id="Node000006" href="$rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="231,232,393,272"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="118,166,225,218,242,225,240,229,223,222,115,171"/>
+<area shape="rect" id="Node000007" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="239,297,385,322"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="104,167,152,223,187,254,225,282,241,289,239,294,223,286,183,258,148,226,100,171"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="390,133,438,140,437,146,389,138"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="389,174,437,166,438,172,390,179"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="370,229,399,218,487,173,490,178,401,222,372,234"/>
+<area shape="rect" id="Node000008" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="448,297,600,322"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="385,307,434,307,434,312,385,312"/>
 </map>

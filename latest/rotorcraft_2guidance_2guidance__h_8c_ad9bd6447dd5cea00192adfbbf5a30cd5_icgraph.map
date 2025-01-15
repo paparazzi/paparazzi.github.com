@@ -1,14 +1,46 @@
 <map id="reset_guidance_reference_from_current_position" name="reset_guidance_reference_from_current_position">
-<area shape="rect" id="node1" title=" " alt="" coords="939,86,1129,127"/>
-<area shape="rect" id="node2" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="511,5,677,32"/>
-<area shape="rect" id="node3" href="$rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="503,68,685,95"/>
-<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__h_8c.html#a065219ed3851e0e6fef8103d4f416a03" title="Set horizontal velocity setpoint." alt="" coords="738,144,890,171"/>
-<area shape="rect" id="node9" href="$rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="737,43,891,69"/>
-<area shape="rect" id="node10" href="$rotorcraft_2guidance_2guidance__h_8c.html#ac7ed8795e4d4916debdd7447561c803a" title="Set horizontal acceleration setpoint." alt="" coords="739,195,889,221"/>
-<area shape="rect" id="node4" href="$rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="248,68,451,95"/>
-<area shape="rect" id="node5" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,43,200,69"/>
-<area shape="rect" id="node6" href="$vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="13,93,192,120"/>
-<area shape="rect" id="node8" href="$rotorcraft_2guidance_2guidance__h_8c.html#a428d3435a3e12c6d65ca0ecad97fa626" title="Set body relative horizontal acceleration setpoint." alt="" coords="499,144,689,171"/>
-<area shape="rect" id="node11" href="$rotorcraft_2guidance_2guidance__h_8c.html#ad46ecaf35a5c2615a6656a91a041d27d" title="Set body relative horizontal velocity setpoint." alt="" coords="499,195,689,221"/>
-<area shape="rect" id="node12" href="$orange__avoider__guided_8c.html#a3f1ea4da9ed0b0b23370129310934e54" title=" " alt="" coords="262,187,437,229"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1341,149,1532,189"/>
+<area shape="rect" id="Node000002" href="$rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="906,55,1087,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1372,146,1293,121,1186,97,1087,81,1088,76,1187,92,1294,115,1373,141"/>
+<area shape="rect" id="Node000012" href="$rotorcraft_2guidance_2guidance__h_8c.html#aaecb10d1d18788c0de654dd479441b20" title=" " alt="" coords="913,105,1081,131"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1327,151,1293,146,1081,126,1081,120,1294,141,1328,146"/>
+<area shape="rect" id="Node000013" href="$rotorcraft_2guidance_2guidance__h_8c.html#a065219ed3851e0e6fef8103d4f416a03" title="Set horizontal velocity setpoint." alt="" coords="1141,257,1293,283"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1381,197,1247,260,1245,255,1379,192"/>
+<area shape="rect" id="Node000015" href="$rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="1140,156,1293,181"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1328,171,1294,171,1294,166,1328,166"/>
+<area shape="rect" id="Node000016" href="$rotorcraft_2guidance_2guidance__h_8c.html#ac7ed8795e4d4916debdd7447561c803a" title="Set horizontal acceleration setpoint." alt="" coords="1141,359,1292,384"/>
+<area shape="poly" id="edge23_Node000001_Node000016" title=" " alt="" coords="1405,200,1234,360,1230,356,1402,196"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="665,5,839,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="919,55,815,33,816,28,920,49"/>
+<area shape="rect" id="Node000008" href="$rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="651,55,853,80"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="893,70,853,70,853,65,893,65"/>
+<area shape="rect" id="Node000011" href="$wedgebug_8c.html#a372a7dc8196cccec1574f4d22ba02e2e" title=" " alt="" coords="678,156,826,181"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="928,86,902,95,832,127,776,158,773,154,830,122,900,90,927,81"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="423,180,588,205"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="659,39,652,44,641,55,634,67,628,91,622,117,605,144,575,167,544,182,542,178,573,162,601,140,617,115,623,90,629,65,637,52,649,40,656,35"/>
+<area shape="rect" id="Node000005" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,105,360,131"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="651,14,594,15,533,19,470,29,409,46,381,59,355,75,314,107,311,103,352,71,378,54,407,41,469,24,532,14,594,10,651,9"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="455,178,333,133,335,128,457,173"/>
+<area shape="rect" id="Node000006" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,80,188,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="222,111,188,107,189,102,223,106"/>
+<area shape="rect" id="Node000007" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,129,179,155"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="223,130,180,135,179,130,222,124"/>
+<area shape="rect" id="Node000009" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="408,56,603,81"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="637,71,603,71,603,65,637,65"/>
+<area shape="rect" id="Node000010" href="$vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="416,105,595,131"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="676,86,568,108,567,103,675,80"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="899,121,780,128,651,146,590,163,537,182,535,177,588,158,650,141,779,123,899,116"/>
+<area shape="poly" id="edge14_Node000012_Node000008" title=" " alt="" coords="920,105,813,83,815,77,921,100"/>
+<area shape="poly" id="edge16_Node000013_Node000004" title=" " alt="" coords="1127,263,588,204,588,199,1127,258"/>
+<area shape="rect" id="Node000014" href="$rotorcraft_2guidance_2guidance__h_8c.html#a428d3435a3e12c6d65ca0ecad97fa626" title="Set body relative horizontal acceleration setpoint." alt="" coords="901,308,1092,333"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="1148,288,1053,311,1052,305,1147,283"/>
+<area shape="poly" id="edge20_Node000015_Node000002" title=" " alt="" coords="1185,150,1142,122,1091,95,1055,83,1056,78,1093,90,1145,117,1188,145"/>
+<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="1126,179,853,195,588,197,588,192,853,190,1126,174"/>
+<area shape="poly" id="edge22_Node000015_Node000011" title=" " alt="" coords="1126,171,826,171,826,166,1126,166"/>
+<area shape="poly" id="edge21_Node000015_Node000012" title=" " alt="" coords="1147,155,1052,133,1053,128,1148,150"/>
+<area shape="poly" id="edge24_Node000016_Node000004" title=" " alt="" coords="1127,373,1018,366,901,347,790,316,685,276,531,208,533,203,687,271,792,311,902,342,1019,361,1127,368"/>
+<area shape="rect" id="Node000017" href="$rotorcraft_2guidance_2guidance__h_8c.html#ad46ecaf35a5c2615a6656a91a041d27d" title="Set body relative horizontal velocity setpoint." alt="" coords="902,412,1091,437"/>
+<area shape="poly" id="edge25_Node000016_Node000017" title=" " alt="" coords="1151,390,1050,415,1049,409,1149,385"/>
+<area shape="rect" id="Node000018" href="$orange__avoider__guided_8c.html#a3f1ea4da9ed0b0b23370129310934e54" title=" " alt="" coords="665,409,839,449"/>
+<area shape="poly" id="edge26_Node000017_Node000018" title=" " alt="" coords="888,429,840,430,839,425,888,424"/>
 </map>

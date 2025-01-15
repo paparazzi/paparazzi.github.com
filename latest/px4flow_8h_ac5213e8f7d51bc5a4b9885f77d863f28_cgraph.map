@@ -1,13 +1,23 @@
 <map id="px4flow_init" name="px4flow_init">
-<area shape="rect" id="node1" title="Initialization function." alt="" coords="5,85,107,112"/>
-<area shape="rect" id="node2" href="$px4flow_8c.html#a262ad3d1424092914f4b0029a61c9ea8" title=" " alt="" coords="162,5,337,32"/>
-<area shape="rect" id="node3" href="$px4flow_8c.html#a9a3bfd0997e1386b7e6657cdddbd1681" title=" " alt="" coords="155,56,344,83"/>
-<area shape="rect" id="node10" href="$px4flow_8c.html#a01ce35bd9354fd881ce9a72d43a51886" title="According to https://pixhawk.org/modules/px4flow the PX4flow module outputs OPTICAL_FLOW_RAD message ..." alt="" coords="172,107,327,149"/>
-<area shape="rect" id="node11" href="$mavlink__decoder_8h.html#a25eeab8c2d4bf1615309f5c913d956ab" title="Register a callback for a mavlink message." alt="" coords="166,173,333,200"/>
-<area shape="rect" id="node4" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="420,31,567,57"/>
-<area shape="rect" id="node5" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="392,81,595,108"/>
-<area shape="rect" id="node6" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="643,81,811,108"/>
-<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="859,81,1032,108"/>
-<area shape="rect" id="node8" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1081,56,1235,83"/>
-<area shape="rect" id="node9" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1080,107,1236,133"/>
+<area shape="rect" id="Node000001" title="Initialization function." alt="" coords="5,84,107,109"/>
+<area shape="rect" id="Node000002" href="$px4flow_8c.html#a262ad3d1424092914f4b0029a61c9ea8" title=" " alt="" coords="162,5,337,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,81,111,60,154,40,175,32,177,37,156,44,113,65,78,86"/>
+<area shape="rect" id="Node000003" href="$px4flow_8c.html#a9a3bfd0997e1386b7e6657cdddbd1681" title=" " alt="" coords="155,55,344,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,86,151,79,152,85,107,92"/>
+<area shape="rect" id="Node000010" href="$px4flow_8c.html#a01ce35bd9354fd881ce9a72d43a51886" title="According to https://pixhawk.org/modules/px4flow the PX4flow module outputs OPTICAL_FLOW_RAD message ..." alt="" coords="172,105,327,145"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="107,101,159,109,158,114,107,107"/>
+<area shape="rect" id="Node000011" href="$mavlink__decoder_8h.html#a25eeab8c2d4bf1615309f5c913d956ab" title="Register a callback for a mavlink message." alt="" coords="166,169,333,195"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="76,107,112,131,156,154,179,163,177,168,154,159,109,136,73,112"/>
+<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="420,31,567,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,55,406,49,406,55,345,61"/>
+<area shape="rect" id="Node000005" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="392,80,595,105"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="345,75,379,78,378,83,344,80"/>
+<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="643,80,811,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="595,90,629,90,629,95,595,95"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="859,80,1032,105"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="811,90,845,90,845,95,811,95"/>
+<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1081,55,1235,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1032,80,1067,76,1067,81,1032,85"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1080,104,1236,129"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1032,100,1067,104,1066,109,1032,105"/>
 </map>

@@ -1,9 +1,16 @@
 <map id="gate_refine_corners" name="gate_refine_corners">
-<area shape="rect" id="node1" title="Refine the four corners of the gate, based on the color around the supposed corner locations." alt="" coords="5,42,156,69"/>
-<area shape="rect" id="node2" href="$snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c" title="Refine a single corner, based on the color around the coordinate." alt="" coords="204,42,357,69"/>
-<area shape="rect" id="node3" href="$snake__gate__detection_8c.html#a0981ce70dd28acd9b61fd0da4248798f" title=" " alt="" coords="409,5,589,47"/>
-<area shape="rect" id="node5" href="$snake__gate__detection_8c.html#a187099f3c8b15ddf2fc47461c89e13fe" title="Draw the gate on an image, using the corner points, possibly resulting in a polygon." alt="" coords="405,71,593,98"/>
-<area shape="rect" id="node4" href="$image_8c.html#a6f14c04ea0779b7962d796490e0c8420" title="Checks the color of a single pixel in a YUV422 image." alt="" coords="648,13,803,39"/>
-<area shape="rect" id="node6" href="$image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image." alt="" coords="641,67,809,94"/>
-<area shape="rect" id="node7" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="857,93,1029,119"/>
+<area shape="rect" id="Node000001" title="Refine the four corners of the gate, based on the color around the supposed corner locations." alt="" coords="5,42,156,67"/>
+<area shape="rect" id="Node000002" href="$snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c" title="Refine a single corner, based on the color around the coordinate." alt="" coords="204,42,357,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,52,190,52,190,57,156,57"/>
+<area shape="rect" id="Node000003" href="$snake__gate__detection_8c.html#a0981ce70dd28acd9b61fd0da4248798f" title=" " alt="" coords="409,5,589,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,42,395,37,396,42,358,47"/>
+<area shape="rect" id="Node000005" href="$snake__gate__detection_8c.html#a187099f3c8b15ddf2fc47461c89e13fe" title="Draw the gate on an image, using the corner points, possibly resulting in a polygon." alt="" coords="405,70,593,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="358,62,392,66,391,72,357,67"/>
+<area shape="rect" id="Node000004" href="$image_8c.html#a6f14c04ea0779b7962d796490e0c8420" title="Checks the color of a single pixel in a YUV422 image." alt="" coords="648,13,803,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="590,23,635,23,635,28,590,28"/>
+<area shape="rect" id="Node000006" href="$image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image." alt="" coords="641,66,809,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="593,78,627,78,628,83,593,84"/>
+<area shape="rect" id="Node000007" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="857,91,1029,117"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="571,93,642,101,746,106,844,105,844,110,746,111,641,107,570,98"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="810,86,844,90,844,95,810,91"/>
 </map>

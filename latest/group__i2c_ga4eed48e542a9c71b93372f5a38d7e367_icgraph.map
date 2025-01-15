@@ -1,52 +1,112 @@
 <map id="i2c_submit" name="i2c_submit">
-<area shape="rect" id="node1" title="Submit a I2C transaction." alt="" coords="761,745,855,772"/>
-<area shape="rect" id="node2" href="$actuators__asctec__v2_8c.html#a18a8926daf19ec365257e7ad661540a0" title=" " alt="" coords="519,5,702,32"/>
-<area shape="rect" id="node3" href="$adxl345__i2c_8c.html#a090f88095fe86b3d1f3f0b82cddff295" title=" " alt="" coords="543,56,679,83"/>
-<area shape="rect" id="node5" href="$adxl345__i2c_8c.html#a3a2e564f46dd67289f4098089a6de76b" title=" " alt="" coords="537,107,685,133"/>
-<area shape="rect" id="node7" href="$ami601_8c.html#a71d937e3a4fb4dd1db1861fa6711b417" title=" " alt="" coords="557,157,664,184"/>
-<area shape="rect" id="node8" href="$lisa__l_2baro__board_8c.html#a0c000c34c542d400cd2a45608f714d12" title=" " alt="" coords="526,209,695,250"/>
-<area shape="rect" id="node9" href="$lisa__l_2baro__board_8c.html#a0142e6ef7cb26ef8fc63b27b0a3f055f" title=" " alt="" coords="269,273,442,300"/>
-<area shape="rect" id="node11" href="$lisa__l_2baro__board_8c.html#ae280d0cac96760be078c903045aee6c6" title=" " alt="" coords="268,325,443,366"/>
-<area shape="rect" id="node12" href="$lisa__l_2baro__board_8c.html#a6c5d28296d0273908662b993468d73cb" title=" " alt="" coords="533,274,688,315"/>
-<area shape="rect" id="node15" href="$i2c__abuse__test_8c.html#a70dbb3f79a41f5e301aee164bfeaf7de" title=" " alt="" coords="274,391,437,417"/>
-<area shape="rect" id="node16" href="$hmc5843_8c.html#a46613c2c46ce03746f184a11df775d6a" title=" " alt="" coords="537,543,685,569"/>
-<area shape="rect" id="node18" href="$hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b" title=" " alt="" coords="285,1303,426,1329"/>
-<area shape="rect" id="node20" href="$hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title=" " alt="" coords="533,593,689,620"/>
-<area shape="rect" id="node22" href="$hmc58xx_8c.html#a883e49acd3049ead17c6c29a3b020c72" title=" " alt="" coords="551,644,670,671"/>
-<area shape="rect" id="node24" href="$i2c__abuse__test_8c.html#a730009caebd8f50471432adbc55d7732" title=" " alt="" coords="508,441,713,468"/>
-<area shape="rect" id="node25" href="$group__i2c.html#ga20e1122a73affcddc3adfd904799e612" title="Submit a read only transaction and wait for it to complete." alt="" coords="531,745,690,772"/>
-<area shape="rect" id="node26" href="$group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete." alt="" coords="521,695,700,721"/>
-<area shape="rect" id="node33" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="528,796,693,823"/>
-<area shape="rect" id="node39" href="$group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction." alt="" coords="563,897,659,924"/>
-<area shape="rect" id="node40" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="553,948,669,975"/>
-<area shape="rect" id="node41" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="559,847,662,873"/>
-<area shape="rect" id="node42" href="$itg3200_8c.html#a7b349504704c56277b218842850b117c" title=" " alt="" coords="538,1049,683,1076"/>
-<area shape="rect" id="node43" href="$itg3200_8c.html#afc931399829e2d90c671d326e016329a" title=" " alt="" coords="557,1100,664,1127"/>
-<area shape="rect" id="node44" href="$lps25h__i2c_8c.html#aa4736bd7cbe27b3637e53a621b7e640f" title=" " alt="" coords="547,1151,674,1177"/>
-<area shape="rect" id="node45" href="$lps25h__i2c_8c.html#ab3cba2a5e74bcc3df601e45df0089d4c" title=" " alt="" coords="541,1201,680,1228"/>
-<area shape="rect" id="node46" href="$lsm303dlhc__i2c_8c.html#a1b770be048cbe720436034ad1a1323a3" title=" " alt="" coords="531,1252,690,1279"/>
-<area shape="rect" id="node47" href="$lsm303dlhc__i2c_8c.html#a14b298cb4859ac3ca247d0b1afbf1d8a" title=" " alt="" coords="525,1303,696,1329"/>
-<area shape="rect" id="node48" href="$lsm6ds33__i2c_8c.html#a37af6c55add4c4bce4c3713ef2c160d4" title=" " alt="" coords="553,1353,669,1380"/>
-<area shape="rect" id="node49" href="$lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c" title=" " alt="" coords="547,1404,675,1431"/>
-<area shape="rect" id="node50" href="$hmc5843_8c.html#a179b6346fe1a63338f44c42fcda2fcf8" title=" " alt="" coords="561,1455,660,1481"/>
-<area shape="rect" id="node4" href="$adxl345__i2c_8h.html#a6c19aa3cb79c5fb9405cd7fb1e803b3c" title="convenience function: read or start configuration if not already initialized" alt="" coords="276,56,435,83"/>
-<area shape="rect" id="node6" href="$adxl345__i2c_8c.html#a521ef1cb737664a85721febc7f7f8284" title=" " alt="" coords="263,107,447,133"/>
-<area shape="rect" id="node10" href="$lisa__l_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title=" " alt="" coords="49,248,159,275"/>
-<area shape="rect" id="node13" href="$lisa__l_2baro__board_8c.html#a50dada9f7353526950b740090bbf6728" title=" " alt="" coords="251,172,460,199"/>
-<area shape="rect" id="node14" href="$lisa__l_2baro__board_8c.html#a2fa4b2580e3835ed8ab3e5ad82051f2e" title=" " alt="" coords="252,223,459,249"/>
-<area shape="rect" id="node17" href="$mag__hmc5843_8c.html#a880fdee482292937a14f6aee33208f22" title=" " alt="" coords="264,441,447,468"/>
-<area shape="rect" id="node19" href="$mag__hmc5843_8c.html#a73430e5bacbce50ebd8b9acf682c82aa" title=" " alt="" coords="5,1303,203,1329"/>
-<area shape="rect" id="node21" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use." alt="" coords="272,492,439,519"/>
-<area shape="rect" id="node23" href="$hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized" alt="" coords="285,543,426,569"/>
-<area shape="rect" id="node27" href="$boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="262,796,449,823"/>
-<area shape="rect" id="node28" href="$boards_2disco_2actuators_8c.html#a0181db6b0eea7688d52e6b73b141549b" title=" " alt="" coords="265,847,446,873"/>
-<area shape="rect" id="node29" href="$pca95xx_8c.html#a4894b1bc38d5d006fa97c0067f8617a7" title="Get input value." alt="" coords="283,695,428,721"/>
-<area shape="rect" id="node30" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="316,745,395,772"/>
-<area shape="rect" id="node31" href="$tfmini__i2c_8c.html#a67597f5e58e3cd1ae90e934b74bf7461" title="Get the ranger current distance value." alt="" coords="282,593,429,620"/>
-<area shape="rect" id="node32" href="$vl53l1__platform_8c.html#ab999b09c3be53bbc7715d25007750916" title="VL53L1_ReadMulti() definition." alt="" coords="284,644,427,671"/>
-<area shape="rect" id="node34" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title=" " alt="" coords="274,897,437,924"/>
-<area shape="rect" id="node35" href="$pca95xx_8c.html#ae693ccc9f8550f3b32f30918d3f0ab85" title="Configure PCA95XX." alt="" coords="283,1049,427,1076"/>
-<area shape="rect" id="node36" href="$pca95xx_8c.html#aeaf8ba1b5bf5312a5213264371c5400f" title="Set output value." alt="" coords="279,1100,432,1127"/>
-<area shape="rect" id="node37" href="$vl53l1__platform_8c.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e" title="VL53L1_WriteMulti() definition." alt="" coords="283,948,427,975"/>
-<area shape="rect" id="node38" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="314,999,397,1025"/>
+<area shape="rect" id="Node000001" title="Submit a I2C transaction." alt="" coords="761,760,855,785"/>
+<area shape="rect" id="Node000002" href="$actuators__asctec__v2_8c.html#a18a8926daf19ec365257e7ad661540a0" title=" " alt="" coords="519,5,702,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="804,747,804,602,794,390,783,281,766,181,742,99,728,68,711,44,698,33,701,29,715,40,733,65,747,97,771,180,788,280,799,390,809,602,810,747"/>
+<area shape="rect" id="Node000003" href="$adxl345__i2c_8c.html#a090f88095fe86b3d1f3f0b82cddff295" title=" " alt="" coords="543,55,679,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="804,746,802,610,791,413,780,312,763,220,741,144,727,115,711,93,696,81,678,74,680,69,699,77,715,89,731,112,746,142,768,219,785,312,796,413,808,610,810,746"/>
+<area shape="rect" id="Node000006" href="$adxl345__i2c_8c.html#a3a2e564f46dd67289f4098089a6de76b" title=" " alt="" coords="537,104,685,129"/>
+<area shape="poly" id="edge4_Node000001_Node000006" title=" " alt="" coords="804,746,801,618,788,436,776,344,760,259,739,189,726,163,711,142,699,132,684,125,686,120,702,128,715,139,730,160,744,187,765,257,782,343,793,436,806,618,809,746"/>
+<area shape="rect" id="Node000011" href="$ami601_8c.html#a71d937e3a4fb4dd1db1861fa6711b417" title=" " alt="" coords="557,153,664,179"/>
+<area shape="poly" id="edge6_Node000001_Node000011" title=" " alt="" coords="803,747,798,630,783,466,771,382,755,306,736,243,724,218,711,200,690,183,663,174,665,169,692,179,715,196,729,216,741,241,761,304,776,381,788,465,803,630,809,746"/>
+<area shape="rect" id="Node000012" href="$lisa__l_2baro__board_8c.html#a91e7585497fa861959910aa79a06c95a" title=" " alt="" coords="271,155,440,195"/>
+<area shape="poly" id="edge7_Node000001_Node000012" title=" " alt="" coords="803,746,797,637,783,485,771,408,755,339,735,282,724,260,712,244,676,230,606,214,440,189,440,183,607,209,677,224,715,240,728,257,740,279,760,337,776,407,788,485,803,637,809,746"/>
+<area shape="rect" id="Node000014" href="$lisa__l_2baro__board_8c.html#a0c000c34c542d400cd2a45608f714d12" title=" " alt="" coords="526,419,695,459"/>
+<area shape="poly" id="edge9_Node000001_Node000014" title=" " alt="" coords="803,746,797,691,783,620,771,583,756,546,736,511,711,480,687,462,690,457,715,476,740,508,760,543,776,581,788,619,803,691,808,746"/>
+<area shape="rect" id="Node000015" href="$lisa__l_2baro__board_8c.html#a0142e6ef7cb26ef8fc63b27b0a3f055f" title=" " alt="" coords="269,319,442,344"/>
+<area shape="poly" id="edge10_Node000001_Node000015" title=" " alt="" coords="802,746,793,659,775,544,763,487,749,435,731,394,711,367,678,343,641,327,601,317,560,311,480,312,412,321,411,316,479,307,560,306,602,311,643,322,681,339,715,363,736,391,754,433,768,485,781,543,798,659,807,746"/>
+<area shape="rect" id="Node000016" href="$lisa__l_2baro__board_8c.html#ae280d0cac96760be078c903045aee6c6" title=" " alt="" coords="268,369,443,409"/>
+<area shape="poly" id="edge12_Node000001_Node000016" title=" " alt="" coords="801,747,791,668,773,565,746,469,730,433,712,409,681,389,647,375,611,366,574,361,501,362,435,371,434,366,500,357,574,356,612,360,649,370,684,384,715,405,734,430,751,467,778,564,796,667,807,746"/>
+<area shape="rect" id="Node000017" href="$lisa__l_2baro__board_8c.html#a6c5d28296d0273908662b993468d73cb" title=" " alt="" coords="533,254,688,294"/>
+<area shape="poly" id="edge14_Node000001_Node000017" title=" " alt="" coords="802,747,793,651,775,522,748,397,731,348,711,314,687,295,690,291,715,311,736,346,753,396,780,521,798,651,807,746"/>
+<area shape="rect" id="Node000020" href="$i2c__abuse__test_8c.html#a70dbb3f79a41f5e301aee164bfeaf7de" title=" " alt="" coords="274,509,437,535"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="803,747,798,697,784,635,772,603,757,573,737,546,712,524,673,504,632,491,588,485,543,485,460,495,395,512,393,507,459,490,543,480,588,480,633,486,675,499,715,520,741,543,761,570,777,601,789,633,803,696,809,746"/>
+<area shape="rect" id="Node000021" href="$hmc5843_8c.html#a46613c2c46ce03746f184a11df775d6a" title=" " alt="" coords="537,584,685,609"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="794,748,763,689,740,658,712,631,675,612,677,607,715,626,744,654,767,686,799,746"/>
+<area shape="rect" id="Node000023" href="$hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b" title=" " alt="" coords="285,647,426,672"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="790,750,758,709,737,690,712,675,677,662,640,652,563,643,490,643,427,650,426,644,489,638,563,638,641,647,678,656,715,670,740,686,762,706,794,747"/>
+<area shape="rect" id="Node000025" href="$hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title=" " alt="" coords="533,735,689,760"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="747,768,689,760,689,755,748,762"/>
+<area shape="rect" id="Node000038" href="$hmc58xx_8c.html#a883e49acd3049ead17c6c29a3b020c72" title=" " alt="" coords="551,784,670,809"/>
+<area shape="poly" id="edge26_Node000001_Node000038" title=" " alt="" coords="748,783,671,792,670,787,747,777"/>
+<area shape="rect" id="Node000039" href="$i2c__abuse__test_8c.html#a730009caebd8f50471432adbc55d7732" title=" " alt="" coords="508,535,713,560"/>
+<area shape="poly" id="edge28_Node000001_Node000039" title=" " alt="" coords="800,747,790,708,773,661,747,613,731,592,712,573,694,562,697,558,715,569,735,588,752,610,778,659,795,707,805,746"/>
+<area shape="rect" id="Node000040" href="$group__i2c.html#ga20e1122a73affcddc3adfd904799e612" title="Submit a read only transaction and wait for it to complete." alt="" coords="531,833,690,859"/>
+<area shape="poly" id="edge30_Node000001_Node000040" title=" " alt="" coords="775,794,714,823,674,836,672,831,712,818,772,790"/>
+<area shape="rect" id="Node000041" href="$group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete." alt="" coords="521,981,700,1007"/>
+<area shape="poly" id="edge31_Node000001_Node000041" title=" " alt="" coords="804,800,794,838,777,885,751,932,734,953,715,972,696,984,693,979,712,968,731,950,747,929,772,883,789,837,799,798"/>
+<area shape="rect" id="Node000101" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="528,932,693,957"/>
+<area shape="poly" id="edge40_Node000001_Node000101" title=" " alt="" coords="800,800,769,862,745,895,715,923,694,934,691,930,712,918,741,891,764,859,795,797"/>
+<area shape="rect" id="Node000137" href="$group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction." alt="" coords="563,1031,659,1056"/>
+<area shape="poly" id="edge46_Node000001_Node000137" title=" " alt="" coords="807,800,800,848,784,908,757,969,738,997,715,1021,689,1037,659,1044,658,1039,686,1032,712,1017,734,994,752,966,779,906,795,847,802,799"/>
+<area shape="rect" id="Node000161" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="553,1080,669,1105"/>
+<area shape="poly" id="edge47_Node000001_Node000161" title=" " alt="" coords="809,799,805,856,791,929,779,967,763,1005,742,1040,715,1071,694,1084,670,1092,668,1087,692,1080,712,1067,738,1037,758,1003,774,966,786,928,800,855,804,799"/>
+<area shape="rect" id="Node000286" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="559,883,662,908"/>
+<area shape="poly" id="edge48_Node000001_Node000286" title=" " alt="" coords="792,799,759,837,738,856,715,872,689,884,663,891,661,886,687,879,712,868,735,852,755,833,788,795"/>
+<area shape="rect" id="Node000353" href="$itg3200_8c.html#a7b349504704c56277b218842850b117c" title=" " alt="" coords="538,1129,683,1155"/>
+<area shape="poly" id="edge51_Node000001_Node000353" title=" " alt="" coords="806,800,794,874,774,970,748,1060,732,1096,715,1120,701,1131,685,1138,682,1133,698,1126,711,1116,728,1093,743,1058,769,968,789,873,800,799"/>
+<area shape="rect" id="Node000358" href="$itg3200_8c.html#afc931399829e2d90c671d326e016329a" title=" " alt="" coords="557,1179,664,1204"/>
+<area shape="poly" id="edge52_Node000001_Node000358" title=" " alt="" coords="807,799,796,883,778,993,751,1099,734,1141,715,1169,692,1185,665,1192,664,1187,689,1180,711,1165,730,1138,746,1098,773,992,791,882,801,798"/>
+<area shape="rect" id="Node000359" href="$lps25h__i2c_8c.html#aa4736bd7cbe27b3637e53a621b7e640f" title=" " alt="" coords="547,1228,674,1253"/>
+<area shape="poly" id="edge53_Node000001_Node000359" title=" " alt="" coords="807,799,799,892,781,1018,769,1081,754,1139,736,1186,715,1219,697,1232,675,1240,674,1235,694,1227,711,1215,732,1184,749,1137,764,1080,776,1017,793,892,802,799"/>
+<area shape="rect" id="Node000361" href="$lps25h__i2c_8c.html#ab3cba2a5e74bcc3df601e45df0089d4c" title=" " alt="" coords="541,1277,680,1303"/>
+<area shape="poly" id="edge54_Node000001_Node000361" title=" " alt="" coords="808,800,801,902,784,1042,772,1113,757,1178,738,1231,715,1268,699,1280,681,1288,679,1283,697,1275,711,1264,733,1229,752,1177,767,1112,779,1042,795,902,803,799"/>
+<area shape="rect" id="Node000365" href="$lsm303dlhc__i2c_8c.html#a1b770be048cbe720436034ad1a1323a3" title=" " alt="" coords="531,1327,690,1352"/>
+<area shape="poly" id="edge55_Node000001_Node000365" title=" " alt="" coords="809,799,803,910,788,1066,776,1145,760,1217,740,1276,728,1299,715,1317,692,1333,689,1329,711,1313,724,1297,735,1274,755,1216,771,1144,782,1065,797,910,803,799"/>
+<area shape="rect" id="Node000368" href="$lsm303dlhc__i2c_8c.html#a14b298cb4859ac3ca247d0b1afbf1d8a" title=" " alt="" coords="525,1376,696,1401"/>
+<area shape="poly" id="edge56_Node000001_Node000368" title=" " alt="" coords="809,799,804,920,791,1090,779,1177,763,1256,742,1322,729,1347,715,1367,698,1380,695,1375,711,1363,725,1344,737,1320,758,1255,774,1176,786,1089,799,919,804,799"/>
+<area shape="rect" id="Node000369" href="$lsm6ds33__i2c_8c.html#a37af6c55add4c4bce4c3713ef2c160d4" title=" " alt="" coords="553,1425,669,1451"/>
+<area shape="poly" id="edge57_Node000001_Node000369" title=" " alt="" coords="809,799,806,929,794,1113,782,1208,766,1295,744,1367,731,1395,715,1416,694,1431,670,1439,668,1434,692,1426,711,1412,726,1392,739,1365,761,1294,777,1208,789,1113,801,928,804,799"/>
+<area shape="rect" id="Node000371" href="$lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c" title=" " alt="" coords="547,1475,675,1500"/>
+<area shape="poly" id="edge58_Node000001_Node000371" title=" " alt="" coords="810,800,808,938,797,1137,786,1240,769,1334,746,1412,732,1442,715,1465,697,1479,676,1487,674,1482,695,1474,711,1461,727,1439,741,1410,764,1333,780,1239,792,1137,803,938,804,799"/>
+<area shape="rect" id="Node000375" href="$hmc5843_8c.html#a179b6346fe1a63338f44c42fcda2fcf8" title=" " alt="" coords="561,685,660,711"/>
+<area shape="poly" id="edge59_Node000001_Node000375" title=" " alt="" coords="774,755,712,724,659,709,661,704,714,720,776,750"/>
+<area shape="rect" id="Node000004" href="$adxl345__i2c_8h.html#a6c19aa3cb79c5fb9405cd7fb1e803b3c" title="convenience function: read or start configuration if not already initialized" alt="" coords="276,55,435,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="529,70,435,70,435,65,529,65"/>
+<area shape="rect" id="Node000007" href="$adxl345__i2c_8c.html#a521ef1cb737664a85721febc7f7f8284" title=" " alt="" coords="263,104,447,129"/>
+<area shape="poly" id="edge5_Node000006_Node000007" title=" " alt="" coords="523,119,448,119,448,114,523,114"/>
+<area shape="rect" id="Node000013" href="$lisa__l_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title=" " alt="" coords="49,269,159,295"/>
+<area shape="poly" id="edge8_Node000012_Node000013" title=" " alt="" coords="271,202,252,210,184,242,129,271,126,267,181,237,250,205,269,197"/>
+<area shape="poly" id="edge11_Node000015_Node000013" title=" " alt="" coords="276,319,159,295,160,290,277,313"/>
+<area shape="poly" id="edge13_Node000016_Node000013" title=" " alt="" coords="273,367,250,358,182,326,127,297,129,292,184,322,252,353,275,362"/>
+<area shape="rect" id="Node000018" href="$lisa__l_2baro__board_8c.html#a50dada9f7353526950b740090bbf6728" title=" " alt="" coords="251,269,460,295"/>
+<area shape="poly" id="edge15_Node000017_Node000018" title=" " alt="" coords="520,280,460,281,460,276,519,274"/>
+<area shape="rect" id="Node000019" href="$lisa__l_2baro__board_8c.html#a2fa4b2580e3835ed8ab3e5ad82051f2e" title=" " alt="" coords="252,220,459,245"/>
+<area shape="poly" id="edge17_Node000017_Node000019" title=" " alt="" coords="519,262,434,248,435,243,520,257"/>
+<area shape="poly" id="edge16_Node000018_Node000013" title=" " alt="" coords="237,285,160,285,160,279,237,279"/>
+<area shape="poly" id="edge18_Node000019_Node000013" title=" " alt="" coords="277,251,160,274,159,269,276,245"/>
+<area shape="rect" id="Node000022" href="$mag__hmc5843_8c.html#a880fdee482292937a14f6aee33208f22" title=" " alt="" coords="264,584,447,609"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="523,599,447,599,447,594,523,594"/>
+<area shape="rect" id="Node000024" href="$mag__hmc5843_8c.html#a73430e5bacbce50ebd8b9acf682c82aa" title=" " alt="" coords="5,647,203,672"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="270,662,203,662,203,657,270,657"/>
+<area shape="rect" id="Node000026" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use." alt="" coords="272,720,439,745"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="519,745,439,740,439,735,519,739"/>
+<area shape="rect" id="Node000033" href="$hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized" alt="" coords="285,769,426,795"/>
+<area shape="poly" id="edge27_Node000038_Node000033" title=" " alt="" coords="537,795,426,789,426,783,537,790"/>
+<area shape="poly" id="edge29_Node000039_Node000020" title=" " alt="" coords="494,538,437,533,437,527,495,533"/>
+<area shape="rect" id="Node000042" href="$boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="262,969,449,995"/>
+<area shape="poly" id="edge32_Node000041_Node000042" title=" " alt="" coords="507,992,449,989,449,984,508,986"/>
+<area shape="rect" id="Node000043" href="$boards_2disco_2actuators_8c.html#a0181db6b0eea7688d52e6b73b141549b" title=" " alt="" coords="265,1019,446,1044"/>
+<area shape="poly" id="edge33_Node000041_Node000043" title=" " alt="" coords="510,1011,443,1021,442,1016,509,1006"/>
+<area shape="rect" id="Node000044" href="$pca95xx_8c.html#a4894b1bc38d5d006fa97c0067f8617a7" title="Get input value." alt="" coords="283,1167,428,1192"/>
+<area shape="poly" id="edge34_Node000041_Node000044" title=" " alt="" coords="517,1016,510,1021,497,1037,490,1053,487,1088,484,1123,476,1140,462,1157,447,1168,430,1175,427,1170,444,1163,458,1153,472,1138,478,1121,481,1087,485,1052,492,1034,506,1017,514,1011"/>
+<area shape="rect" id="Node000046" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="316,1216,395,1241"/>
+<area shape="poly" id="edge35_Node000041_Node000046" title=" " alt="" coords="516,1016,510,1021,493,1043,486,1066,485,1089,487,1112,489,1136,487,1160,479,1183,462,1207,447,1218,430,1225,396,1232,395,1226,429,1220,444,1213,458,1203,475,1181,482,1159,483,1136,482,1112,480,1089,481,1065,489,1041,506,1018,512,1012"/>
+<area shape="rect" id="Node000056" href="$mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register." alt="" coords="316,1117,395,1143"/>
+<area shape="poly" id="edge36_Node000041_Node000056" title=" " alt="" coords="520,1015,510,1021,493,1042,487,1064,480,1086,462,1108,429,1124,395,1131,394,1126,427,1119,458,1104,475,1084,482,1062,488,1039,506,1017,517,1010"/>
+<area shape="rect" id="Node000060" href="$tfmini__i2c_8c.html#a67597f5e58e3cd1ae90e934b74bf7461" title="Get the ranger current distance value." alt="" coords="282,1265,429,1291"/>
+<area shape="poly" id="edge38_Node000041_Node000060" title=" " alt="" coords="515,1016,510,1021,490,1049,483,1078,483,1107,487,1137,491,1166,491,1196,483,1226,462,1256,447,1267,430,1275,428,1270,444,1263,458,1252,478,1224,486,1196,486,1167,482,1137,477,1107,477,1077,485,1047,506,1018,512,1012"/>
+<area shape="rect" id="Node000061" href="$vl53l1__platform_8c.html#ab999b09c3be53bbc7715d25007750916" title="VL53L1_ReadMulti() definition." alt="" coords="284,1068,427,1093"/>
+<area shape="poly" id="edge39_Node000041_Node000061" title=" " alt="" coords="530,1013,509,1022,495,1031,486,1040,476,1050,461,1059,428,1071,426,1066,459,1054,473,1046,482,1036,492,1026,507,1017,528,1008"/>
+<area shape="rect" id="Node000058" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title=" " alt="" coords="23,1017,185,1043"/>
+<area shape="poly" id="edge37_Node000056_Node000058" title=" " alt="" coords="301,1123,250,1109,180,1077,124,1045,127,1040,182,1072,252,1103,303,1118"/>
+<area shape="poly" id="edge41_Node000101_Node000042" title=" " alt="" coords="515,961,443,972,442,967,514,956"/>
+<area shape="poly" id="edge42_Node000101_Node000043" title=" " alt="" coords="530,964,509,972,495,981,486,991,476,1000,461,1010,431,1021,429,1016,459,1005,473,996,482,987,492,977,507,968,528,959"/>
+<area shape="poly" id="edge43_Node000101_Node000058" title=" " alt="" coords="514,940,388,941,319,948,251,961,215,972,181,988,126,1019,123,1015,178,983,213,968,250,955,318,942,387,936,514,935"/>
+<area shape="rect" id="Node000102" href="$pca95xx_8c.html#ae693ccc9f8550f3b32f30918d3f0ab85" title="Configure PCA95XX." alt="" coords="283,819,427,844"/>
+<area shape="poly" id="edge44_Node000101_Node000102" title=" " alt="" coords="517,929,506,923,490,906,482,889,474,873,458,858,427,843,429,838,462,853,478,870,486,887,494,903,510,919,520,924"/>
+<area shape="rect" id="Node000107" href="$pca95xx_8c.html#aeaf8ba1b5bf5312a5213264371c5400f" title="Set output value." alt="" coords="279,868,432,893"/>
+<area shape="poly" id="edge45_Node000101_Node000107" title=" " alt="" coords="541,931,507,923,403,896,404,891,509,918,542,926"/>
+<area shape="poly" id="edge49_Node000286_Node000102" title=" " alt="" coords="546,883,507,873,459,858,414,847,415,842,461,853,509,867,547,878"/>
+<area shape="poly" id="edge50_Node000286_Node000107" title=" " alt="" coords="545,894,432,888,432,882,545,889"/>
+<area shape="poly" id="edge60_Node000375_Node000023" title=" " alt="" coords="547,691,426,673,426,667,548,686"/>
 </map>
