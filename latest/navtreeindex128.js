@@ -1,6 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"module__mppt.html#functions__mppt":[1,139,1],
 "module__mppt.html#module_load_example__mppt":[1,139,0],
 "module__mppt.html#module_xml__mppt":[1,139,1,0],
 "module__nav_basic_fw.html":[1,318],
@@ -18,6 +17,7 @@ var NAVTREEINDEX128 =
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,320,0],
 "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,320,1,0],
 "module__nav_catapult.html":[1,321],
+"module__nav_catapult.html#af_section":[1,321,1,0],
 "module__nav_catapult.html#configuration__nav_catapult":[1,321,1],
 "module__nav_catapult.html#functions__nav_catapult":[1,321,2],
 "module__nav_catapult.html#module_load_example__nav_catapult":[1,321,0],

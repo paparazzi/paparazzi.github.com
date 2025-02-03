@@ -1,11 +1,9 @@
 var NAVTREEINDEX125 =
 {
-"module__generic_uart_sensor.html#configure":[1,404,1,0],
-"module__generic_uart_sensor.html#define":[1,404,1,1],
-"module__generic_uart_sensor.html#event_functions":[1,404,2,0],
+"module__generic_uart_sensor.html#configuration__generic_uart_sensor":[1,404,1],
 "module__generic_uart_sensor.html#functions__generic_uart_sensor":[1,404,2],
 "module__generic_uart_sensor.html#module_load_example__generic_uart_sensor":[1,404,0],
-"module__generic_uart_sensor.html#module_xml__generic_uart_sensor":[1,404,2,1],
+"module__generic_uart_sensor.html#module_xml__generic_uart_sensor":[1,404,2,0],
 "module__geo_mag.html":[1,470],
 "module__geo_mag.html#functions__geo_mag":[1,470,1],
 "module__geo_mag.html#module_load_example__geo_mag":[1,470,0],
@@ -211,9 +209,15 @@ var NAVTREEINDEX125 =
 "module__hott_telemetry.html#module_load_example__hott_telemetry":[1,479,0],
 "module__hott_telemetry.html#module_xml__hott_telemetry":[1,479,2,0],
 "module__humid_dpicco.html":[1,284],
+"module__humid_dpicco.html#event_functions":[1,284,1,1],
+"module__humid_dpicco.html#files":[1,284,2],
 "module__humid_dpicco.html#functions__humid_dpicco":[1,284,1],
+"module__humid_dpicco.html#headers":[1,284,2,0],
+"module__humid_dpicco.html#init_functions":[1,284,1,0],
 "module__humid_dpicco.html#module_load_example__humid_dpicco":[1,284,0],
-"module__humid_dpicco.html#module_xml__humid_dpicco":[1,284,1,0],
+"module__humid_dpicco.html#module_xml__humid_dpicco":[1,284,2,2],
+"module__humid_dpicco.html#periodic_functions":[1,284,1,2],
+"module__humid_dpicco.html#sources":[1,284,2,1],
 "module__humid_hih.html":[1,285],
 "module__humid_hih.html#functions__humid_hih":[1,285,1],
 "module__humid_hih.html#module_load_example__humid_hih":[1,285,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX125 =
 "module__i2c.html":[1,270],
 "module__i2c.html#module_load_example__i2c":[1,270,0],
 "module__i2c.html#module_xml__i2c":[1,270,0,0],
-"module__i2c_abuse_test.html":[1,36],
-"module__i2c_abuse_test.html#functions__i2c_abuse_test":[1,36,1],
-"module__i2c_abuse_test.html#module_load_example__i2c_abuse_test":[1,36,0],
-"module__i2c_abuse_test.html#module_xml__i2c_abuse_test":[1,36,1,0],
-"module__imu_apogee.html":[1,184]
+"module__i2c_abuse_test.html":[1,36]
 };

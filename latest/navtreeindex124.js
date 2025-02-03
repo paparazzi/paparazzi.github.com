@@ -1,5 +1,6 @@
 var NAVTREEINDEX124 =
 {
+"module__cv_qrcode.html#module_load_example__cv_qrcode":[1,461,0],
 "module__cv_qrcode.html#module_xml__cv_qrcode":[1,461,2,0],
 "module__cv_target_localization.html":[1,64],
 "module__cv_target_localization.html#configuration__cv_target_localization":[1,64,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX124 =
 "module__generic_com.html#functions__generic_com":[1,51,2],
 "module__generic_com.html#module_load_example__generic_com":[1,51,0],
 "module__generic_com.html#module_xml__generic_com":[1,51,2,0],
-"module__generic_uart_sensor.html":[1,404],
-"module__generic_uart_sensor.html#configuration__generic_uart_sensor":[1,404,1]
+"module__generic_uart_sensor.html":[1,404]
 };

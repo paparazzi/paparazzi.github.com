@@ -131,7 +131,9 @@ var NAVTREE =
       ] ],
       [ "actuators_hitl module", "module__actuators_hitl.html", [
         [ "Example for airframe file", "module__actuators_hitl.html#module_load_example__actuators_hitl", null ],
-        [ "Module configuration options", "module__actuators_hitl.html#configuration__actuators_hitl", null ],
+        [ "Module configuration options", "module__actuators_hitl.html#configuration__actuators_hitl", [
+          [ "Configure Options", "module__actuators_hitl.html#configure", null ]
+        ] ],
         [ "Module functions", "module__actuators_hitl.html#functions__actuators_hitl", [
           [ "Raw actuators_hitl.xml file:", "module__actuators_hitl.html#module_xml__actuators_hitl", null ]
         ] ]
@@ -1255,11 +1257,6 @@ var NAVTREE =
       [ "imu_apogee_mpu9150 module", "module__imu_apogee_mpu9150.html", [
         [ "Example for airframe file", "module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150", null ],
         [ "Module configuration options", "module__imu_apogee_mpu9150.html#configuration__imu_apogee_mpu9150", [
-          [ "Airframe file section", "module__imu_apogee_mpu9150.html#af_section", null ]
-        ] ],
-        [ "Files", "module__imu_apogee_mpu9150.html#files", [
-          [ "Header Files", "module__imu_apogee_mpu9150.html#headers", null ],
-          [ "Source Files", "module__imu_apogee_mpu9150.html#sources", null ],
           [ "Raw imu_apogee_mpu9150.xml file:", "module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150", null ]
         ] ]
       ] ],
@@ -1293,12 +1290,12 @@ var NAVTREE =
         ] ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -1420,8 +1417,6 @@ var NAVTREE =
         [ "Example for airframe file", "module__imu_mpu9250.html#module_load_example__imu_mpu9250", null ],
         [ "Module configuration options", "module__imu_mpu9250.html#configuration__imu_mpu9250", null ],
         [ "Module functions", "module__imu_mpu9250.html#functions__imu_mpu9250", [
-          [ "Init Functions", "module__imu_mpu9250.html#init_functions", null ],
-          [ "Periodic Functions", "module__imu_mpu9250.html#periodic_functions", null ],
           [ "Raw imu_mpu9250.xml file:", "module__imu_mpu9250.html#module_xml__imu_mpu9250", null ]
         ] ]
       ] ],
@@ -1889,6 +1884,13 @@ var NAVTREE =
       [ "humid_dpicco module", "module__humid_dpicco.html", [
         [ "Example for airframe file", "module__humid_dpicco.html#module_load_example__humid_dpicco", null ],
         [ "Module functions", "module__humid_dpicco.html#functions__humid_dpicco", [
+          [ "Init Functions", "module__humid_dpicco.html#init_functions", null ],
+          [ "Event Functions", "module__humid_dpicco.html#event_functions", null ],
+          [ "Periodic Functions", "module__humid_dpicco.html#periodic_functions", null ]
+        ] ],
+        [ "Files", "module__humid_dpicco.html#files", [
+          [ "Header Files", "module__humid_dpicco.html#headers", null ],
+          [ "Source Files", "module__humid_dpicco.html#sources", null ],
           [ "Raw humid_dpicco.xml file:", "module__humid_dpicco.html#module_xml__humid_dpicco", null ]
         ] ]
       ] ],
@@ -2127,7 +2129,9 @@ var NAVTREE =
       ] ],
       [ "nav_catapult module", "module__nav_catapult.html", [
         [ "Example for airframe file", "module__nav_catapult.html#module_load_example__nav_catapult", null ],
-        [ "Module configuration options", "module__nav_catapult.html#configuration__nav_catapult", null ],
+        [ "Module configuration options", "module__nav_catapult.html#configuration__nav_catapult", [
+          [ "Airframe file section", "module__nav_catapult.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__nav_catapult.html#functions__nav_catapult", [
           [ "Raw nav_catapult.xml file:", "module__nav_catapult.html#module_xml__nav_catapult", null ]
         ] ]
@@ -2664,12 +2668,8 @@ var NAVTREE =
       ] ],
       [ "generic_uart_sensor module", "module__generic_uart_sensor.html", [
         [ "Example for airframe file", "module__generic_uart_sensor.html#module_load_example__generic_uart_sensor", null ],
-        [ "Module configuration options", "module__generic_uart_sensor.html#configuration__generic_uart_sensor", [
-          [ "Configure Options", "module__generic_uart_sensor.html#configure", null ],
-          [ "Define Options", "module__generic_uart_sensor.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__generic_uart_sensor.html#configuration__generic_uart_sensor", null ],
         [ "Module functions", "module__generic_uart_sensor.html#functions__generic_uart_sensor", [
-          [ "Event Functions", "module__generic_uart_sensor.html#event_functions", null ],
           [ "Raw generic_uart_sensor.xml file:", "module__generic_uart_sensor.html#module_xml__generic_uart_sensor", null ]
         ] ]
       ] ],
@@ -2682,7 +2682,9 @@ var NAVTREE =
       ] ],
       [ "mag_hmc58xx module", "module__mag_hmc58xx.html", [
         [ "Example for airframe file", "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx", null ],
-        [ "Module configuration options", "module__mag_hmc58xx.html#configuration__mag_hmc58xx", null ],
+        [ "Module configuration options", "module__mag_hmc58xx.html#configuration__mag_hmc58xx", [
+          [ "Define Options", "module__mag_hmc58xx.html#define", null ]
+        ] ],
         [ "Module functions", "module__mag_hmc58xx.html#functions__mag_hmc58xx", [
           [ "Raw mag_hmc58xx.xml file:", "module__mag_hmc58xx.html#module_xml__mag_hmc58xx", null ]
         ] ]
@@ -3896,12 +3898,12 @@ var NAVTREEINDEX =
 "mcuconf__h7_8h.html#adfdd029a5a6ccdf27dbb44496687794a",
 "mf__ptu_8c.html#a6b3bb3313a038d38337454d2f5a4611a",
 "mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6",
-"module__autopilot_gnc_fw.html#module_load_example__autopilot_gnc_fw",
-"module__cv_qrcode.html#module_xml__cv_qrcode",
-"module__generic_uart_sensor.html#configure",
-"module__imu_apogee.html#functions__imu_apogee",
-"module__ins_sim.html#module_load_example__ins_sim",
-"module__mppt.html#functions__mppt",
+"module__autopilot_gnc_fw.html#functions__autopilot_gnc_fw",
+"module__cv_qrcode.html#module_load_example__cv_qrcode",
+"module__generic_uart_sensor.html#configuration__generic_uart_sensor",
+"module__i2c_abuse_test.html#functions__i2c_abuse_test",
+"module__ins_skeleton.html",
+"module__mppt.html#module_load_example__mppt",
 "module__pprzlog.html#module_load_example__pprzlog",
 "module__state_interface.html#module_load_example__state_interface",
 "module__video_thread.html#module_xml__video_thread",

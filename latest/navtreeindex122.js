@@ -65,6 +65,7 @@ var NAVTREEINDEX122 =
 "module__actuators_faulhaber.html#module_xml__actuators_faulhaber":[1,10,2,0],
 "module__actuators_hitl.html":[1,11],
 "module__actuators_hitl.html#configuration__actuators_hitl":[1,11,1],
+"module__actuators_hitl.html#configure":[1,11,1,0],
 "module__actuators_hitl.html#functions__actuators_hitl":[1,11,2],
 "module__actuators_hitl.html#module_load_example__actuators_hitl":[1,11,0],
 "module__actuators_hitl.html#module_xml__actuators_hitl":[1,11,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX122 =
 "module__autopilot_gnc.html#functions__autopilot_gnc":[1,454,1],
 "module__autopilot_gnc.html#module_load_example__autopilot_gnc":[1,454,0],
 "module__autopilot_gnc.html#module_xml__autopilot_gnc":[1,454,2,0],
-"module__autopilot_gnc_fw.html":[1,455],
-"module__autopilot_gnc_fw.html#functions__autopilot_gnc_fw":[1,455,1]
+"module__autopilot_gnc_fw.html":[1,455]
 };
