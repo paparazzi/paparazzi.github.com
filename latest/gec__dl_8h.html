@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('gec__dl_8h.html',''); initResizable();
 <div class="textblock"><code>#include &quot;pprzlink/pprzlink_transport.h&quot;</code><br />
 <code>#include &quot;pprzlink/pprz_transport.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="gec_8h_source.html">modules/datalink/gec/gec.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pprz__mutex_8h_source.html">pprz_mutex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gec_dl.h:</div>
@@ -114,41 +114,49 @@ $(document).ready(function(){initNavTree('gec__dl_8h.html',''); initResizable();
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2datalink_2gec__dl_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2datalink_2gec__dl_8h" id="asw_2airborne_2modules_2datalink_2gec__dl_8h">
-<area shape="rect" title="Datalink using Galois Embedded Crypto." alt="" coords="437,5,595,45"/>
-<area shape="rect" title=" " alt="" coords="5,101,213,126"/>
-<area shape="poly" title=" " alt="" coords="437,46,178,100,177,95,436,41"/>
-<area shape="rect" title=" " alt="" coords="237,101,421,126"/>
-<area shape="poly" title=" " alt="" coords="476,48,368,97,366,92,474,43"/>
-<area shape="rect" href="gec_8h.html" title="Galois embedded crypto implementation." alt="" coords="932,93,1095,133"/>
-<area shape="poly" title=" " alt="" coords="596,38,919,93,918,98,595,43"/>
-<area shape="rect" href="pprz__mutex_8h.html" title="Utility functions and macros to abstract some RTOS functionalities such as mutexes." alt="" coords="1119,101,1230,126"/>
-<area shape="poly" title=" " alt="" coords="596,29,826,50,967,67,1107,91,1124,95,1123,100,1106,96,966,73,826,55,595,34"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="446,101,586,126"/>
-<area shape="poly" title=" " alt="" coords="519,46,519,87,513,87,513,46"/>
-<area shape="rect" title=" " alt="" coords="622,269,677,295"/>
-<area shape="poly" title=" " alt="" coords="932,124,860,132,785,144,720,161,695,172,678,183,666,199,658,218,652,256,646,255,653,216,661,196,674,179,693,167,718,156,784,139,860,127,931,118"/>
-<area shape="rect" href="rng_8h.html" title="arch independent Random Number Generator API" alt="" coords="687,189,822,214"/>
-<area shape="poly" title=" " alt="" coords="957,136,803,187,801,182,956,131"/>
-<area shape="rect" title=" " alt="" coords="846,189,1010,214"/>
-<area shape="poly" title=" " alt="" coords="996,135,951,180,948,177,993,132"/>
-<area shape="rect" title=" " alt="" coords="1035,181,1165,221"/>
-<area shape="poly" title=" " alt="" coords="1034,132,1073,170,1069,173,1031,136"/>
-<area shape="rect" title=" " alt="" coords="1189,181,1320,221"/>
-<area shape="poly" title=" " alt="" coords="1067,131,1190,174,1188,179,1065,136"/>
-<area shape="rect" title=" " alt="" coords="1344,181,1475,221"/>
-<area shape="poly" title=" " alt="" coords="1095,128,1331,178,1330,184,1094,134"/>
-<area shape="rect" title=" " alt="" coords="1499,181,1664,221"/>
-<area shape="poly" title=" " alt="" coords="1095,128,1108,131,1212,146,1295,155,1378,164,1485,179,1485,184,1378,169,1294,160,1212,151,1108,136,1094,134"/>
-<area shape="rect" title=" " alt="" coords="1689,189,1853,214"/>
-<area shape="poly" title=" " alt="" coords="1095,129,1108,131,1268,148,1392,155,1517,161,1676,179,1706,183,1705,189,1676,184,1516,167,1392,160,1267,153,1108,136,1094,134"/>
-<area shape="poly" title=" " alt="" coords="741,216,677,263,674,259,738,212"/>
-<area shape="rect" title=" " alt="" coords="711,269,798,295"/>
-<area shape="poly" title=" " alt="" coords="757,214,757,255,752,255,752,214"/>
-<area shape="poly" title=" " alt="" coords="467,129,434,136,344,148,255,158,221,166,200,179,196,186,196,195,210,220,237,239,279,253,332,264,391,272,511,279,608,279,608,284,511,284,390,277,331,270,278,259,235,243,206,223,190,196,191,184,197,175,220,162,254,153,344,143,433,131,466,123"/>
-<area shape="rect" title=" " alt="" coords="221,189,395,214"/>
-<area shape="poly" title=" " alt="" coords="489,129,349,186,347,181,487,124"/>
-<area shape="rect" title=" " alt="" coords="420,189,612,214"/>
-<area shape="poly" title=" " alt="" coords="519,126,519,174,513,174,513,126"/>
+<area shape="rect" title="Datalink using Galois Embedded Crypto." alt="" coords="759,5,917,45"/>
+<area shape="rect" title=" " alt="" coords="317,101,525,126"/>
+<area shape="poly" title=" " alt="" coords="759,46,490,100,489,95,758,40"/>
+<area shape="rect" title=" " alt="" coords="549,101,733,126"/>
+<area shape="poly" title=" " alt="" coords="796,48,680,98,678,93,794,43"/>
+<area shape="rect" href="gec_8h.html" title="Galois embedded crypto implementation." alt="" coords="757,93,919,133"/>
+<area shape="poly" title=" " alt="" coords="841,46,841,79,835,79,835,46"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="1297,101,1472,126"/>
+<area shape="poly" title=" " alt="" coords="918,36,1298,96,1298,101,917,42"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1739,101,1879,126"/>
+<area shape="poly" title=" " alt="" coords="918,31,1725,102,1724,107,917,36"/>
+<area shape="rect" title=" " alt="" coords="1180,269,1235,295"/>
+<area shape="poly" title=" " alt="" coords="920,118,994,126,1071,138,1139,156,1165,167,1184,179,1197,196,1205,216,1211,255,1205,256,1200,218,1192,199,1180,183,1162,171,1137,161,1070,143,993,131,919,123"/>
+<area shape="rect" href="rng_8h.html" title="arch independent Random Number Generator API" alt="" coords="193,189,328,214"/>
+<area shape="poly" title=" " alt="" coords="757,134,745,136,631,151,542,159,453,167,340,184,319,188,318,183,339,179,453,162,542,153,631,146,744,131,756,129"/>
+<area shape="rect" title=" " alt="" coords="352,189,516,214"/>
+<area shape="poly" title=" " alt="" coords="757,135,502,188,501,183,756,129"/>
+<area shape="rect" title=" " alt="" coords="541,181,671,221"/>
+<area shape="poly" title=" " alt="" coords="788,136,670,179,669,174,786,131"/>
+<area shape="rect" title=" " alt="" coords="695,181,826,221"/>
+<area shape="poly" title=" " alt="" coords="823,135,789,173,785,169,819,132"/>
+<area shape="rect" title=" " alt="" coords="850,181,981,221"/>
+<area shape="poly" title=" " alt="" coords="857,132,891,169,887,173,853,135"/>
+<area shape="rect" title=" " alt="" coords="1005,181,1170,221"/>
+<area shape="poly" title=" " alt="" coords="894,131,1021,174,1019,179,892,136"/>
+<area shape="rect" title=" " alt="" coords="5,189,169,214"/>
+<area shape="poly" title=" " alt="" coords="757,134,745,136,587,153,463,160,339,167,181,184,153,189,152,183,180,179,339,161,463,155,586,148,744,131,756,129"/>
+<area shape="poly" title=" " alt="" coords="303,211,340,219,584,248,824,265,1029,274,1166,278,1166,283,1029,280,824,271,584,253,339,224,302,217"/>
+<area shape="rect" title=" " alt="" coords="217,269,304,295"/>
+<area shape="poly" title=" " alt="" coords="263,214,263,255,258,255,258,214"/>
+<area shape="rect" title=" " alt="" coords="1343,189,1426,214"/>
+<area shape="poly" title=" " alt="" coords="1387,126,1387,174,1382,174,1382,126"/>
+<area shape="rect" title=" " alt="" coords="1450,181,1613,221"/>
+<area shape="poly" title=" " alt="" coords="1406,124,1489,172,1486,177,1403,128"/>
+<area shape="rect" title=" " alt="" coords="1637,189,1708,214"/>
+<area shape="poly" title=" " alt="" coords="1432,124,1522,147,1625,179,1632,181,1631,186,1624,184,1520,153,1430,129"/>
+<area shape="rect" title=" " alt="" coords="1245,189,1319,214"/>
+<area shape="poly" title=" " alt="" coords="1373,128,1308,182,1305,178,1369,124"/>
+<area shape="poly" title=" " alt="" coords="1805,128,1775,175,1751,202,1722,224,1682,239,1628,251,1495,269,1356,278,1249,282,1249,277,1356,273,1494,263,1627,246,1681,234,1719,219,1747,198,1771,172,1801,125"/>
+<area shape="rect" title=" " alt="" coords="1784,189,1959,214"/>
+<area shape="poly" title=" " alt="" coords="1819,125,1857,176,1852,179,1815,128"/>
+<area shape="rect" title=" " alt="" coords="1983,189,2175,214"/>
+<area shape="poly" title=" " alt="" coords="1846,124,2031,182,2029,187,1844,129"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -174,8 +182,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structmessage__buffer" id="r_structmessage__buffer"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#structmessage__buffer">message_buffer</a></td></tr>
 <tr class="memdesc:structmessage__buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxilliary message buffer for storing precomputed key exchange messages.  <a href="gec__dl_8h.html#structmessage__buffer">More...</a><br /></td></tr>
 <tr class="separator:structmessage__buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgec__transport.html">gec_transport</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structgec__transport" id="r_structgec__transport"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a></td></tr>
+<tr class="separator:structgec__transport"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -194,16 +202,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a7645c559a6c4a5f611acab677af4a579" id="r_a7645c559a6c4a5f611acab677af4a579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579">gec_dl_event</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a7645c559a6c4a5f611acab677af4a579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datalink Event.  <br /></td></tr>
 <tr class="separator:a7645c559a6c4a5f611acab677af4a579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c220599205c83e7bada3f8184b0cab" id="r_af8c220599205c83e7bada3f8184b0cab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#af8c220599205c83e7bada3f8184b0cab">gec_transport_init</a> (struct <a class="el" href="structgec__transport.html">gec_transport</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">t</a>)</td></tr>
+<tr class="memitem:af8c220599205c83e7bada3f8184b0cab" id="r_af8c220599205c83e7bada3f8184b0cab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#af8c220599205c83e7bada3f8184b0cab">gec_transport_init</a> (struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">t</a>)</td></tr>
 <tr class="separator:af8c220599205c83e7bada3f8184b0cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286bdf0c42b1374078179f55dc477371" id="r_a286bdf0c42b1374078179f55dc477371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a286bdf0c42b1374078179f55dc477371">gec_check_and_parse</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="structgec__transport.html">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> *msg_available)</td></tr>
+<tr class="memitem:a286bdf0c42b1374078179f55dc477371" id="r_a286bdf0c42b1374078179f55dc477371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a286bdf0c42b1374078179f55dc477371">gec_check_and_parse</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> *msg_available)</td></tr>
 <tr class="memdesc:a286bdf0c42b1374078179f55dc477371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsing a frame data and copy the payload to the datalink buffer.  <br /></td></tr>
 <tr class="separator:a286bdf0c42b1374078179f55dc477371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b7d3c016b35fc2516e4f841d8876e71" id="r_a9b7d3c016b35fc2516e4f841d8876e71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a9b7d3c016b35fc2516e4f841d8876e71">gec_process_sts_msg</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="structgec__transport.html">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a9b7d3c016b35fc2516e4f841d8876e71" id="r_a9b7d3c016b35fc2516e4f841d8876e71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a9b7d3c016b35fc2516e4f841d8876e71">gec_process_sts_msg</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a9b7d3c016b35fc2516e4f841d8876e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455f4433190fb942249d0c1167f33b83" id="r_a455f4433190fb942249d0c1167f33b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a455f4433190fb942249d0c1167f33b83">respond_sts</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="structgec__transport.html">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a455f4433190fb942249d0c1167f33b83" id="r_a455f4433190fb942249d0c1167f33b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a455f4433190fb942249d0c1167f33b83">respond_sts</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a455f4433190fb942249d0c1167f33b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bfd5f40d005e3f4c67059f302735f2e" id="r_a9bfd5f40d005e3f4c67059f302735f2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a9bfd5f40d005e3f4c67059f302735f2e">finish_sts</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="structgec__transport.html">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a9bfd5f40d005e3f4c67059f302735f2e" id="r_a9bfd5f40d005e3f4c67059f302735f2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a9bfd5f40d005e3f4c67059f302735f2e">finish_sts</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a9bfd5f40d005e3f4c67059f302735f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a443ae413db37d824272314679e3599" id="r_a4a443ae413db37d824272314679e3599"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a4a443ae413db37d824272314679e3599">gec_add_to_whitelist</a> (struct <a class="el" href="gec__dl_8h.html#structgec__whitelist">gec_whitelist</a> *whitelist, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
 <tr class="separator:a4a443ae413db37d824272314679e3599"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +232,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8d2a49ff97182cc6044d6a1c9023361a" id="r_a8d2a49ff97182cc6044d6a1c9023361a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgec__transport.html">gec_transport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a8d2a49ff97182cc6044d6a1c9023361a">gec_tp</a></td></tr>
+<tr class="memitem:a8d2a49ff97182cc6044d6a1c9023361a" id="r_a8d2a49ff97182cc6044d6a1c9023361a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec__dl_8h.html#a8d2a49ff97182cc6044d6a1c9023361a">gec_tp</a></td></tr>
 <tr class="memdesc:a8d2a49ff97182cc6044d6a1c9023361a"><td class="mdescLeft">&#160;</td><td class="mdescRight">PPRZ transport structure.  <br /></td></tr>
 <tr class="separator:a8d2a49ff97182cc6044d6a1c9023361a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -309,6 +317,85 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 
 </div>
 </div>
+<a name="structgec__transport" id="structgec__transport"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structgec__transport">&#9670;&#160;</a></span>gec_transport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct gec_transport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="gec__dl_8h_source.html#l00069">69</a> of file <a class="el" href="gec__dl_8h_source.html">gec_dl.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for gec_transport:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structgec__transport__coll__graph.png" border="0" usemap="#agec__transport_coll__map" alt="Collaboration graph"/></div>
+<map name="agec__transport_coll__map" id="agec__transport_coll__map">
+<area shape="rect" title=" " alt="" coords="5,167,116,192"/>
+<area shape="rect" title=" " alt="" coords="31,5,90,31"/>
+<area shape="poly" title=" " alt="" coords="63,44,63,166,58,166,58,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a81cb17db5baeeacd012a5cca7d0046e8" name="a81cb17db5baeeacd012a5cca7d0046e8"></a><a class="el" href="threads_8h.html#aa2389e51ec1fe8e08155b3ad3175b86f">pprz_mutex_t</a></td>
+<td class="fieldname">
+mtx_tx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="adbdb704d9f586ad55d4f65d2aab0eea4" name="adbdb704d9f586ad55d4f65d2aab0eea4"></a>struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">pprz_transport</a></td>
+<td class="fieldname">
+pprz_tp</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5a0ff65ba8f65d3dd4df47b492f7f966" name="a5a0ff65ba8f65d3dd4df47b492f7f966"></a>struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a></td>
+<td class="fieldname">
+sts</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa6775803d984a4fed7cd59187589334c" name="aa6775803d984a4fed7cd59187589334c"></a>struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_rx</a></td>
+<td class="fieldname">
+trans_rx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a6bba8720ea24fd6e034cae4a3491b692" name="a6bba8720ea24fd6e034cae4a3491b692"></a>struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a></td>
+<td class="fieldname">
+trans_tx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a64f508cef2e44d3e4c13e846ccd5dcee" name="a64f508cef2e44d3e4c13e846ccd5dcee"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+tx_msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">TRANSPORT_PAYLOAD_LEN</a>]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a030bac4970b62ec023612987ccf5657d" name="a030bac4970b62ec023612987ccf5657d"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+tx_msg_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af448f85d7877f7d02a3911f07dacc910" name="af448f85d7877f7d02a3911f07dacc910"></a>struct <a class="el" href="gec__dl_8h.html#structgec__whitelist">gec_whitelist</a></td>
+<td class="fieldname">
+whitelist</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a35c57b9104b79bb8df101b9ae37649b8" name="a35c57b9104b79bb8df101b9ae37649b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35c57b9104b79bb8df101b9ae37649b8">&#9670;&#160;</a></span>KEY_EXCHANGE_MSG_ID_GCS</h2>
@@ -374,7 +461,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structgec__transport.html">gec_transport</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *&#160;</td>
           <td class="paramname"><em>trans</em>, </td>
         </tr>
         <tr>
@@ -424,11 +511,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8h_source.html#l00055">gec_whitelist::idx</a>, <a class="el" href="gec__dl_8h_source.html#l00056">gec_whitelist::init</a>, <a class="el" href="gec__dl_8h_source.html#l00054">gec_whitelist::whitelist</a>, and <a class="el" href="gec__dl_8h_source.html#l00046">WHITELIST_LEN</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00325">gec_transport_init()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_a4a443ae413db37d824272314679e3599_icgraph.png" border="0" usemap="#agec__dl_8h_a4a443ae413db37d824272314679e3599_icgraph" alt=""/></div>
 <map name="agec__dl_8h_a4a443ae413db37d824272314679e3599_icgraph" id="agec__dl_8h_a4a443ae413db37d824272314679e3599_icgraph">
 <area shape="rect" title=" " alt="" coords="332,5,491,31"/>
@@ -456,7 +543,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structgec__transport.html">gec_transport</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *&#160;</td>
           <td class="paramname"><em>trans</em>, </td>
         </tr>
         <tr>
@@ -518,11 +605,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="reference">References <a class="el" href="gec_8h_source.html#l00079">gec_sym_key::counter</a>, <a class="el" href="ins__flow_8c_source.html#l00187">counter</a>, <a class="el" href="gec_8h_source.html#l00127">gec_sts_ctx::decrypt_err</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec_8c_source.html#l00117">gec_bytes_to_counter()</a>, <a class="el" href="gec__dl_8c_source.html#l00814">gec_is_in_the_whitelist()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec_8h_source.html#l00077">gec_sym_key::key</a>, <a class="el" href="gec_8h_source.html#l00078">gec_sym_key::nonce</a>, <a class="el" href="gec_8h_source.html#l00046">PPRZ_AUTH_IDX</a>, <a class="el" href="gec_8h_source.html#l00044">PPRZ_CNTR_IDX</a>, <a class="el" href="gec_8h_source.html#l00061">PPRZ_CRYPTO_OVERHEAD</a>, <a class="el" href="gec_8h_source.html#l00042">PPRZ_GEC_IDX</a>, <a class="el" href="gec_8h_source.html#l00055">PPRZ_MAC_LEN</a>, <a class="el" href="gec_8h_source.html#l00040">PPRZ_MSG_TYPE_ENCRYPTED</a>, <a class="el" href="gec_8h_source.html#l00039">PPRZ_MSG_TYPE_PLAINTEXT</a>, <a class="el" href="gec_8h_source.html#l00079">gec_sym_key::ready</a>, <a class="el" href="gec_8h_source.html#l00125">gec_sts_ctx::rx_counter_err</a>, <a class="el" href="gec_8h_source.html#l00120">gec_sts_ctx::rx_sym_key</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, and <a class="el" href="gec__dl_8h_source.html#l00084">gec_transport::whitelist</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_ac948362603178542b0a8c8b7375279cd_cgraph.png" border="0" usemap="#agec__dl_8h_ac948362603178542b0a8c8b7375279cd_cgraph" alt=""/></div>
 <map name="agec__dl_8h_ac948362603178542b0a8c8b7375279cd_cgraph" id="agec__dl_8h_ac948362603178542b0a8c8b7375279cd_cgraph">
 <area shape="rect" title="Attemp message decryption If a message is unencrypted, pass it through only if the MSG_ID is in the w..." alt="" coords="5,31,172,56"/>
@@ -532,11 +619,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <area shape="poly" title=" " alt="" coords="172,50,207,54,206,59,172,55"/>
 </map>
 </div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_ac948362603178542b0a8c8b7375279cd_icgraph.png" border="0" usemap="#agec__dl_8h_ac948362603178542b0a8c8b7375279cd_icgraph" alt=""/></div>
 <map name="agec__dl_8h_ac948362603178542b0a8c8b7375279cd_icgraph" id="agec__dl_8h_ac948362603178542b0a8c8b7375279cd_icgraph">
 <area shape="rect" title="Attemp message decryption If a message is unencrypted, pass it through only if the MSG_ID is in the w..." alt="" coords="161,5,328,31"/>
@@ -588,11 +675,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="definition">Definition at line <a class="el" href="gec__dl_8c_source.html#l00533">533</a> of file <a class="el" href="gec__dl_8c_source.html">gec_dl.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gec_8h_source.html#l00083">CRYPTO_OK</a>, <a class="el" href="datalink_8h_source.html#l00061">DatalinkFillDlBuffer</a>, <a class="el" href="main__demo5_8c_source.html#l00063">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00078">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8c_source.html#l00430">gec_decrypt_message()</a>, <a class="el" href="gec__dl_8c_source.html#l00597">gec_process_msg1()</a>, <a class="el" href="gec__dl_8c_source.html#l00744">gec_process_msg3()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec__dl_8c_source.html#l00067">GEC_UPDATE_DL</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="gec__dl_8h_source.html#l00071">gec_transport::pprz_tp</a>, <a class="el" href="gec_8h_source.html#l00122">gec_sts_ctx::protocol_stage</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, <a class="el" href="gec__dl_8h_source.html#l00074">gec_transport::trans_rx</a>, <a class="el" href="gec__dl_8h_source.html#l00077">gec_transport::trans_tx</a>, <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG1</a>, and <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG3</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph.png" border="0" usemap="#agec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph" alt=""/></div>
 <map name="agec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph" id="agec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph">
 <area shape="rect" title="Datalink Event." alt="" coords="5,129,113,155"/>
@@ -658,11 +745,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="definition">Definition at line <a class="el" href="gec__dl_8c_source.html#l00345">345</a> of file <a class="el" href="gec__dl_8c_source.html">gec_dl.c</a>.</p>
 
 <p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec_8c_source.html#l00033">gec_sts_init()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec__dl_8c_source.html#l00325">gec_transport_init()</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00052">LED_OFF</a>, <a class="el" href="gec__dl_8h_source.html#l00071">gec_transport::pprz_tp</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gec__dl_8c_source.html#l00075">send_secure_link_info()</a>, and <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_a1b386361ab9d7dfaa9782194d065df18_cgraph.png" border="0" usemap="#agec__dl_8h_a1b386361ab9d7dfaa9782194d065df18_cgraph" alt=""/></div>
 <map name="agec__dl_8h_a1b386361ab9d7dfaa9782194d065df18_cgraph" id="agec__dl_8h_a1b386361ab9d7dfaa9782194d065df18_cgraph">
 <area shape="rect" title="Init function." alt="" coords="5,129,97,155"/>
@@ -688,6 +775,8 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <area shape="poly" title=" " alt="" coords="972,73,1007,78,1006,83,972,78"/>
 <area shape="rect" href="gec__dl_8c.html#a4a443ae413db37d824272314679e3599" title=" " alt="" coords="429,104,587,129"/>
 <area shape="poly" title=" " alt="" coords="316,114,415,114,415,119,316,119"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="453,153,563,179"/>
+<area shape="poly" title=" " alt="" coords="315,127,440,151,439,156,314,132"/>
 </map>
 </div>
 
@@ -725,11 +814,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="definition">Definition at line <a class="el" href="gec__dl_8c_source.html#l00371">371</a> of file <a class="el" href="gec__dl_8c_source.html">gec_dl.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gec_8h_source.html#l00079">gec_sym_key::counter</a>, <a class="el" href="ins__flow_8c_source.html#l00187">counter</a>, <a class="el" href="gec_8h_source.html#l00126">gec_sts_ctx::encrypt_err</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec_8c_source.html#l00142">gec_counter_to_bytes()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec_8h_source.html#l00077">gec_sym_key::key</a>, <a class="el" href="gec_8h_source.html#l00078">gec_sym_key::nonce</a>, <a class="el" href="gec_8h_source.html#l00046">PPRZ_AUTH_IDX</a>, <a class="el" href="gec_8h_source.html#l00044">PPRZ_CNTR_IDX</a>, <a class="el" href="gec_8h_source.html#l00061">PPRZ_CRYPTO_OVERHEAD</a>, <a class="el" href="gec_8h_source.html#l00042">PPRZ_GEC_IDX</a>, <a class="el" href="gec_8h_source.html#l00055">PPRZ_MAC_LEN</a>, <a class="el" href="gec_8h_source.html#l00040">PPRZ_MSG_TYPE_ENCRYPTED</a>, <a class="el" href="gec_8h_source.html#l00079">gec_sym_key::ready</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, and <a class="el" href="gec_8h_source.html#l00121">gec_sts_ctx::tx_sym_key</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_a8c6d09d32fcf909597a36b36a07f9db0_cgraph.png" border="0" usemap="#agec__dl_8h_a8c6d09d32fcf909597a36b36a07f9db0_cgraph" alt=""/></div>
 <map name="agec__dl_8h_a8c6d09d32fcf909597a36b36a07f9db0_cgraph" id="agec__dl_8h_a8c6d09d32fcf909597a36b36a07f9db0_cgraph">
 <area shape="rect" title="Attempts message encryption Adds crypto_byte, counter and tag Returns encrypted pprzlink message (cry..." alt="" coords="5,5,172,31"/>
@@ -771,11 +860,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="reference">References <a class="el" href="gec__dl_8h_source.html#l00055">gec_whitelist::idx</a>, <a class="el" href="gec__dl_8h_source.html#l00056">gec_whitelist::init</a>, and <a class="el" href="gec__dl_8h_source.html#l00054">gec_whitelist::whitelist</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00430">gec_decrypt_message()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_ac21e5df94c5f3003526266d584fc18d3_icgraph.png" border="0" usemap="#agec__dl_8h_ac21e5df94c5f3003526266d584fc18d3_icgraph" alt=""/></div>
 <map name="agec__dl_8h_ac21e5df94c5f3003526266d584fc18d3_icgraph" id="agec__dl_8h_ac21e5df94c5f3003526266d584fc18d3_icgraph">
 <area shape="rect" title=" " alt="" coords="376,5,549,31"/>
@@ -812,11 +901,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="reference">References <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec_8c_source.html#l00091">gec_derive_key_material()</a>, <a class="el" href="gec_8c_source.html#l00073">gec_generate_ephemeral_keys()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec_8h_source.html#l00077">gec_sym_key::key</a>, <a class="el" href="gec_8h_source.html#l00124">gec_sts_ctx::last_error</a>, <a class="el" href="gec_8h_source.html#l00098">MSG1_ENCRYPT_ERROR</a>, <a class="el" href="gec_8h_source.html#l00119">gec_sts_ctx::my_private_ephemeral</a>, <a class="el" href="gec_8h_source.html#l00117">gec_sts_ctx::my_private_key</a>, <a class="el" href="gec_8h_source.html#l00078">gec_sym_key::nonce</a>, <a class="el" href="gec_8h_source.html#l00091">P_AE</a>, <a class="el" href="gec_8h_source.html#l00091">P_BE</a>, <a class="el" href="gec_8h_source.html#l00042">PPRZ_GEC_IDX</a>, <a class="el" href="gec_8h_source.html#l00053">PPRZ_KEY_LEN</a>, <a class="el" href="gec_8h_source.html#l00055">PPRZ_MAC_LEN</a>, <a class="el" href="gec_8h_source.html#l00039">PPRZ_MSG_TYPE_PLAINTEXT</a>, <a class="el" href="gec_8h_source.html#l00049">PPRZ_SIGN_LEN</a>, <a class="el" href="gec__dl_8h_source.html#l00071">gec_transport::pprz_tp</a>, <a class="el" href="gec_8h_source.html#l00068">gec_privkey::priv</a>, <a class="el" href="gec_8h_source.html#l00122">gec_sts_ctx::protocol_stage</a>, <a class="el" href="gec_8h_source.html#l00069">gec_privkey::pub</a>, <a class="el" href="gec_8h_source.html#l00073">gec_pubkey::pub</a>, <a class="el" href="gec_8h_source.html#l00069">gec_privkey::ready</a>, <a class="el" href="gec_8h_source.html#l00073">gec_pubkey::ready</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, <a class="el" href="gec_8h_source.html#l00118">gec_sts_ctx::their_public_ephemeral</a>, <a class="el" href="gec__dl_8h_source.html#l00079">gec_transport::tx_msg</a>, <a class="el" href="gec__dl_8h_source.html#l00080">gec_transport::tx_msg_idx</a>, <a class="el" href="gec_8h_source.html#l00121">gec_sts_ctx::tx_sym_key</a>, <a class="el" href="gec_8h_source.html#l00109">UNEXPECTED_MSG_DATA_ERROR</a>, <a class="el" href="gec_8h_source.html#l00110">UNEXPECTED_MSG_ERROR</a>, <a class="el" href="gec_8h_source.html#l00108">UNEXPECTED_MSG_TYPE_ERROR</a>, and <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG3</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_cgraph.png" border="0" usemap="#agec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_cgraph" alt=""/></div>
 <map name="agec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_cgraph" id="agec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_cgraph">
 <area shape="rect" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="5,31,151,56"/>
@@ -834,11 +923,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <area shape="poly" title=" " alt="" coords="775,73,809,78,809,83,774,78"/>
 </map>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_icgraph.png" border="0" usemap="#agec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_icgraph" alt=""/></div>
 <map name="agec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_icgraph" id="agec__dl_8h_ad4f92ea52a517934ff6b8eab95cfead5_icgraph">
 <area shape="rect" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="161,5,307,31"/>
@@ -873,11 +962,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec_8h_source.html#l00077">gec_sym_key::key</a>, <a class="el" href="gec_8h_source.html#l00124">gec_sts_ctx::last_error</a>, <a class="el" href="gec_8h_source.html#l00100">MSG3_DECRYPT_ERROR</a>, <a class="el" href="gec_8h_source.html#l00101">MSG3_SIGNVERIFY_ERROR</a>, <a class="el" href="gec_8h_source.html#l00119">gec_sts_ctx::my_private_ephemeral</a>, <a class="el" href="gec_8h_source.html#l00078">gec_sym_key::nonce</a>, <a class="el" href="gec_8h_source.html#l00053">PPRZ_KEY_LEN</a>, <a class="el" href="gec_8h_source.html#l00055">PPRZ_MAC_LEN</a>, <a class="el" href="gec_8h_source.html#l00049">PPRZ_SIGN_LEN</a>, <a class="el" href="gec_8h_source.html#l00069">gec_privkey::pub</a>, <a class="el" href="gec_8h_source.html#l00073">gec_pubkey::pub</a>, <a class="el" href="gec_8h_source.html#l00120">gec_sts_ctx::rx_sym_key</a>, <a class="el" href="gec_8h_source.html#l00091">SIG</a>, <a class="el" href="nav__fish_8c_source.html#l00232">sign()</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, <a class="el" href="gec_8h_source.html#l00118">gec_sts_ctx::their_public_ephemeral</a>, <a class="el" href="gec_8h_source.html#l00116">gec_sts_ctx::their_public_key</a>, <a class="el" href="gec_8h_source.html#l00109">UNEXPECTED_MSG_DATA_ERROR</a>, <a class="el" href="gec_8h_source.html#l00110">UNEXPECTED_MSG_ERROR</a>, and <a class="el" href="gec_8h_source.html#l00108">UNEXPECTED_MSG_TYPE_ERROR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_a42846e875eaa39617e27780db81909bb_cgraph.png" border="0" usemap="#agec__dl_8h_a42846e875eaa39617e27780db81909bb_cgraph" alt=""/></div>
 <map name="agec__dl_8h_a42846e875eaa39617e27780db81909bb_cgraph" id="agec__dl_8h_a42846e875eaa39617e27780db81909bb_cgraph">
 <area shape="rect" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="5,5,151,31"/>
@@ -885,11 +974,11 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <area shape="poly" title=" " alt="" coords="151,15,185,15,185,21,151,21"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_a42846e875eaa39617e27780db81909bb_icgraph.png" border="0" usemap="#agec__dl_8h_a42846e875eaa39617e27780db81909bb_icgraph" alt=""/></div>
 <map name="agec__dl_8h_a42846e875eaa39617e27780db81909bb_icgraph" id="agec__dl_8h_a42846e875eaa39617e27780db81909bb_icgraph">
 <area shape="rect" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="161,5,307,31"/>
@@ -915,7 +1004,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structgec__transport.html">gec_transport</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *&#160;</td>
           <td class="paramname"><em>trans</em>, </td>
         </tr>
         <tr>
@@ -943,7 +1032,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
         <tr>
           <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> gec_transport_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structgec__transport.html">gec_transport</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
@@ -952,26 +1041,28 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 
 <p class="definition">Definition at line <a class="el" href="gec__dl_8c_source.html#l00325">325</a> of file <a class="el" href="gec__dl_8c_source.html">gec_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8c_source.html#l00800">gec_add_to_whitelist()</a>, <a class="el" href="gec__dl_8h_source.html#l00045">KEY_EXCHANGE_MSG_ID_GCS</a>, <a class="el" href="gec__dl_8h_source.html#l00044">KEY_EXCHANGE_MSG_ID_UAV</a>, and <a class="el" href="pprz__mutex_8h_source.html#l00045">PPRZ_MUTEX_INIT</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8c_source.html#l00800">gec_add_to_whitelist()</a>, <a class="el" href="gec__dl_8h_source.html#l00045">KEY_EXCHANGE_MSG_ID_GCS</a>, <a class="el" href="gec__dl_8h_source.html#l00044">KEY_EXCHANGE_MSG_ID_UAV</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00018">pprz_mtx_init()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00345">gec_dl_init()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph.png" border="0" usemap="#agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph" alt=""/></div>
-<map name="agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph" id="agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,144,31"/>
-<area shape="rect" href="gec__dl_8c.html#a4a443ae413db37d824272314679e3599" title=" " alt="" coords="192,5,351,31"/>
-<area shape="poly" title=" " alt="" coords="144,15,179,15,179,21,144,21"/>
-</map>
-</div>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph.png" border="0" usemap="#agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph" alt=""/></div>
+<map name="agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph" id="agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,144,56"/>
+<area shape="rect" href="gec__dl_8c.html#a4a443ae413db37d824272314679e3599" title=" " alt="" coords="192,5,351,31"/>
+<area shape="poly" title=" " alt="" coords="144,32,178,27,179,33,145,37"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="216,55,327,80"/>
+<area shape="poly" title=" " alt="" coords="145,49,203,56,202,62,144,54"/>
+</map>
+</div>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gec__dl_8h_af8c220599205c83e7bada3f8184b0cab_icgraph.png" border="0" usemap="#agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_icgraph" alt=""/></div>
 <map name="agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_icgraph" id="agec__dl_8h_af8c220599205c83e7bada3f8184b0cab_icgraph">
 <area shape="rect" title=" " alt="" coords="145,5,284,31"/>
@@ -997,7 +1088,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structgec__transport.html">gec_transport</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> *&#160;</td>
           <td class="paramname"><em>trans</em>, </td>
         </tr>
         <tr>
@@ -1027,7 +1118,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structgec__transport.html">gec_transport</a> gec_tp</td>
+          <td class="memname">struct <a class="el" href="gec__dl_8h.html#structgec__transport">gec_transport</a> gec_tp</td>
         </tr>
       </table>
   </td>
@@ -1051,7 +1142,7 @@ msg[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">T
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="gec__dl_8h.html">gec_dl.h</a></li>
-    <li class="footer">Generated on Mon Feb 3 2025 10:13:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 3 2025 13:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

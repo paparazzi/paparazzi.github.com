@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('syslink__dl_8c.html',''); initResizabl
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pprz__mutex_8h_source.html">pprz_mutex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for syslink_dl.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -113,40 +113,46 @@ $(document).ready(function(){initNavTree('syslink__dl_8c.html',''); initResizabl
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2datalink_2bitcraze_2syslink__dl_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2datalink_2bitcraze_2syslink__dl_8c" id="asw_2airborne_2modules_2datalink_2bitcraze_2syslink__dl_8c">
-<area shape="rect" title="Syslink protocol handling and functionalities." alt="" coords="928,5,1143,45"/>
-<area shape="rect" href="syslink__dl_8h.html" title="Syslink protocol handling and functionalities." alt="" coords="347,93,537,133"/>
-<area shape="poly" title=" " alt="" coords="928,45,551,99,550,94,928,39"/>
-<area shape="rect" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc." alt="" coords="854,101,1057,126"/>
-<area shape="poly" title=" " alt="" coords="1020,47,978,92,974,88,1016,44"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="641,101,781,126"/>
-<area shape="poly" title=" " alt="" coords="965,48,768,100,767,95,964,43"/>
-<area shape="rect" title=" " alt="" coords="1081,101,1152,126"/>
-<area shape="poly" title=" " alt="" coords="1055,44,1098,89,1094,92,1051,47"/>
-<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1176,101,1231,126"/>
-<area shape="poly" title=" " alt="" coords="1073,43,1170,92,1168,97,1071,48"/>
-<area shape="rect" href="pprz__mutex_8h.html" title="Utility functions and macros to abstract some RTOS functionalities such as mutexes." alt="" coords="1255,101,1365,126"/>
-<area shape="poly" title=" " alt="" coords="1096,43,1261,94,1260,99,1095,48"/>
-<area shape="rect" href="syslink_8h.html" title="Syslink protocol for communication with bitcraze/crazyflie NRF mcu." alt="" coords="5,181,196,221"/>
-<area shape="poly" title=" " alt="" coords="368,136,189,181,188,175,366,131"/>
-<area shape="rect" href="crtp_8h.html" title="CRTP protocol for communication with bitcraze/crazyflie modems." alt="" coords="220,181,411,221"/>
-<area shape="poly" title=" " alt="" coords="415,136,356,176,353,171,412,131"/>
-<area shape="rect" title=" " alt="" coords="435,189,627,214"/>
-<area shape="poly" title=" " alt="" coords="464,132,511,177,507,181,460,136"/>
-<area shape="rect" title=" " alt="" coords="116,269,187,295"/>
-<area shape="poly" title=" " alt="" coords="115,220,139,256,134,259,111,223"/>
-<area shape="rect" title=" " alt="" coords="9,269,91,295"/>
-<area shape="poly" title=" " alt="" coords="91,223,67,259,63,256,86,220"/>
-<area shape="rect" title=" " alt="" coords="637,269,692,295"/>
-<area shape="poly" title=" " alt="" coords="400,219,625,269,623,274,398,224"/>
-<area shape="poly" title=" " alt="" coords="987,124,1025,141,1061,164,1075,177,1083,192,1084,207,1076,223,1050,242,1010,256,962,267,908,275,796,282,706,284,706,279,796,277,907,269,961,262,1009,251,1047,237,1072,220,1079,206,1078,194,1071,181,1058,168,1022,146,985,129"/>
-<area shape="rect" title=" " alt="" coords="902,189,1062,214"/>
-<area shape="poly" title=" " alt="" coords="961,125,977,174,972,176,956,127"/>
-<area shape="poly" title=" " alt="" coords="710,127,693,182,673,256,668,255,687,181,705,126"/>
-<area shape="poly" title=" " alt="" coords="688,129,569,185,567,180,686,124"/>
-<area shape="rect" title=" " alt="" coords="703,189,877,214"/>
-<area shape="poly" title=" " alt="" coords="724,124,772,176,768,180,720,128"/>
-<area shape="rect" title=" " alt="" coords="1164,189,1243,214"/>
-<area shape="poly" title=" " alt="" coords="1206,126,1206,174,1201,174,1201,126"/>
+<area shape="rect" title="Syslink protocol handling and functionalities." alt="" coords="823,5,1037,45"/>
+<area shape="rect" href="syslink__dl_8h.html" title="Syslink protocol handling and functionalities." alt="" coords="463,93,653,133"/>
+<area shape="poly" title=" " alt="" coords="849,48,653,93,652,88,848,43"/>
+<area shape="rect" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc." alt="" coords="749,101,951,126"/>
+<area shape="poly" title=" " alt="" coords="914,47,873,92,869,88,910,44"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="151,101,291,126"/>
+<area shape="poly" title=" " alt="" coords="823,42,305,105,304,99,822,37"/>
+<area shape="rect" title=" " alt="" coords="976,101,1047,126"/>
+<area shape="poly" title=" " alt="" coords="950,44,993,89,989,92,946,47"/>
+<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1105,101,1160,126"/>
+<area shape="poly" title=" " alt="" coords="976,43,1094,93,1092,98,974,48"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="1215,189,1389,214"/>
+<area shape="poly" title=" " alt="" coords="1036,43,1105,62,1174,91,1206,110,1236,133,1283,176,1280,180,1233,137,1203,115,1172,96,1104,67,1035,48"/>
+<area shape="rect" href="syslink_8h.html" title="Syslink protocol for communication with bitcraze/crazyflie NRF mcu." alt="" coords="712,181,903,221"/>
+<area shape="poly" title=" " alt="" coords="614,131,741,174,739,179,612,136"/>
+<area shape="rect" href="crtp_8h.html" title="CRTP protocol for communication with bitcraze/crazyflie modems." alt="" coords="445,181,636,221"/>
+<area shape="poly" title=" " alt="" coords="557,134,550,168,545,167,552,133"/>
+<area shape="rect" title=" " alt="" coords="229,189,421,214"/>
+<area shape="poly" title=" " alt="" coords="508,136,369,187,367,182,506,131"/>
+<area shape="rect" title=" " alt="" coords="809,277,880,302"/>
+<area shape="poly" title=" " alt="" coords="818,221,837,263,832,265,813,223"/>
+<area shape="rect" title=" " alt="" coords="1013,277,1095,302"/>
+<area shape="poly" title=" " alt="" coords="862,219,1009,270,1008,275,861,224"/>
+<area shape="rect" title=" " alt="" coords="513,277,568,302"/>
+<area shape="poly" title=" " alt="" coords="543,222,543,263,538,263,538,222"/>
+<area shape="poly" title=" " alt="" coords="820,129,764,152,702,184,676,203,650,224,574,272,571,267,647,219,673,199,699,179,762,147,818,124"/>
+<area shape="rect" title=" " alt="" coords="927,189,1087,214"/>
+<area shape="poly" title=" " alt="" coords="873,124,975,180,973,184,870,129"/>
+<area shape="poly" title=" " alt="" coords="151,128,92,142,40,162,21,175,11,188,9,203,19,219,43,232,90,243,226,262,379,275,500,283,499,288,379,281,226,267,89,248,41,237,15,223,4,204,6,186,18,171,38,158,91,137,150,123"/>
+<area shape="poly" title=" " alt="" coords="237,124,302,178,299,182,233,128"/>
+<area shape="rect" title=" " alt="" coords="29,189,204,214"/>
+<area shape="poly" title=" " alt="" coords="208,128,143,182,140,178,205,124"/>
+<area shape="rect" title=" " alt="" coords="1112,189,1191,214"/>
+<area shape="poly" title=" " alt="" coords="1138,126,1149,174,1143,175,1133,127"/>
+<area shape="poly" title=" " alt="" coords="1243,217,1204,224,894,282,893,276,1203,219,1242,211"/>
+<area shape="poly" title=" " alt="" coords="1270,217,1101,275,1100,270,1268,212"/>
+<area shape="rect" title=" " alt="" coords="1291,269,1454,309"/>
+<area shape="poly" title=" " alt="" coords="1314,212,1350,257,1346,260,1310,216"/>
+<area shape="rect" title=" " alt="" coords="1193,277,1267,302"/>
+<area shape="poly" title=" " alt="" coords="1294,216,1251,267,1247,264,1290,212"/>
 </map>
 </div>
 </div>
@@ -154,9 +160,6 @@ $(document).ready(function(){initNavTree('syslink__dl_8c.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43b0e5f0988304796edc4f873c57e954" id="r_a43b0e5f0988304796edc4f873c57e954"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syslink__dl_8c.html#a43b0e5f0988304796edc4f873c57e954">PPRZ_MUTEX</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">syslink_tx_mtx</a>)</td></tr>
-<tr class="memdesc:a43b0e5f0988304796edc4f873c57e954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protect syslink TX with Mutex when using RTOS.  <br /></td></tr>
-<tr class="separator:a43b0e5f0988304796edc4f873c57e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad541734144cc860fa9ab400f9ffc2a05" id="r_ad541734144cc860fa9ab400f9ffc2a05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05">send_message</a> (<a class="el" href="syslink_8h.html#structsyslink__message__t">syslink_message_t</a> *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>)</td></tr>
 <tr class="memdesc:ad541734144cc860fa9ab400f9ffc2a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a syslink message.  <br /></td></tr>
 <tr class="separator:ad541734144cc860fa9ab400f9ffc2a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +204,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a2ba1628b4f791bd6516afe2bb8c2dd71" id="r_a2ba1628b4f791bd6516afe2bb8c2dd71"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="syslink__dl_8h.html#structsyslink__dl">syslink_dl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syslink__dl_8c.html#a2ba1628b4f791bd6516afe2bb8c2dd71">syslink</a></td></tr>
 <tr class="separator:a2ba1628b4f791bd6516afe2bb8c2dd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f5452abc8f36b4fd5995e37de44401" id="r_a02f5452abc8f36b4fd5995e37de44401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#aa2389e51ec1fe8e08155b3ad3175b86f">pprz_mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syslink__dl_8c.html#a02f5452abc8f36b4fd5995e37de44401">syslink_tx_mtx</a></td></tr>
+<tr class="memdesc:a02f5452abc8f36b4fd5995e37de44401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protect syslink TX with Mutex when using RTOS.  <br /></td></tr>
+<tr class="separator:a02f5452abc8f36b4fd5995e37de44401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Syslink protocol handling and functionalities. </p>
@@ -235,7 +241,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00066">66</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00054">syslink_dl::charging</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink__dl_8h_source.html#l00055">syslink_dl::powered</a>, <a class="el" href="syslink__dl_8c_source.html#l00034">syslink</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
+<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00054">syslink_dl::charging</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink__dl_8h_source.html#l00055">syslink_dl::powered</a>, <a class="el" href="syslink__dl_8c_source.html#l00035">syslink</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00258">handle_new_msg()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -293,26 +299,30 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a665fd9a99b5fbbbff1c98a97f1742665_cgraph.png" border="0" usemap="#asyslink__dl_8c_a665fd9a99b5fbbbff1c98a97f1742665_cgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a665fd9a99b5fbbbff1c98a97f1742665_cgraph" id="asyslink__dl_8c_a665fd9a99b5fbbbff1c98a97f1742665_cgraph">
-<area shape="rect" title="New RX message." alt="" coords="5,55,140,80"/>
-<area shape="rect" href="syslink__dl_8c.html#a5c78def63998fc914185e7e10213eb86" title="Handle battery message." alt="" coords="188,5,308,31"/>
-<area shape="poly" title=" " alt="" coords="118,52,188,32,189,37,119,57"/>
-<area shape="rect" href="syslink__dl_8c.html#a1b6a129ceaf5c9cf3096d2fb3e91a3c2" title=" " alt="" coords="195,55,301,80"/>
-<area shape="poly" title=" " alt="" coords="140,65,181,65,181,70,140,70"/>
-<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="199,104,297,129"/>
-<area shape="poly" title=" " alt="" coords="119,77,189,98,188,103,118,83"/>
-<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="356,53,495,79"/>
-<area shape="poly" title=" " alt="" coords="293,101,366,80,368,85,294,106"/>
-<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="543,79,661,104"/>
-<area shape="poly" title=" " alt="" coords="297,111,529,94,529,99,297,116"/>
-<area shape="rect" href="microrl_8c.html#a306bf791daa21526b303e834c34916b4" title=" " alt="" coords="400,155,451,180"/>
-<area shape="poly" title=" " alt="" coords="294,127,388,154,386,159,293,132"/>
-<area shape="poly" title=" " alt="" coords="495,73,529,78,528,84,495,79"/>
-<area shape="rect" href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7" title="Compute syslink checksum." alt="" coords="709,53,892,79"/>
-<area shape="poly" title=" " alt="" coords="661,81,696,77,696,82,662,86"/>
-<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="740,103,861,128"/>
-<area shape="poly" title=" " alt="" coords="662,96,727,104,726,109,661,101"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="940,103,1052,128"/>
-<area shape="poly" title=" " alt="" coords="861,113,926,113,926,118,861,118"/>
+<area shape="rect" title="New RX message." alt="" coords="5,57,140,83"/>
+<area shape="rect" href="syslink__dl_8c.html#a5c78def63998fc914185e7e10213eb86" title="Handle battery message." alt="" coords="188,8,308,33"/>
+<area shape="poly" title=" " alt="" coords="118,55,188,35,189,40,119,60"/>
+<area shape="rect" href="syslink__dl_8c.html#a1b6a129ceaf5c9cf3096d2fb3e91a3c2" title=" " alt="" coords="195,57,301,83"/>
+<area shape="poly" title=" " alt="" coords="140,67,181,67,181,73,140,73"/>
+<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="199,107,297,132"/>
+<area shape="poly" title=" " alt="" coords="119,80,189,100,188,105,118,85"/>
+<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="356,5,495,31"/>
+<area shape="poly" title=" " alt="" coords="283,104,306,92,330,70,354,48,378,34,381,39,358,52,334,74,310,96,286,109"/>
+<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="543,31,661,56"/>
+<area shape="poly" title=" " alt="" coords="296,105,355,91,528,55,529,60,357,97,298,110"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="367,107,484,132"/>
+<area shape="poly" title=" " alt="" coords="297,117,353,117,353,122,297,122"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="359,156,492,181"/>
+<area shape="poly" title=" " alt="" coords="295,129,366,150,365,155,294,135"/>
+<area shape="rect" href="microrl_8c.html#a306bf791daa21526b303e834c34916b4" title=" " alt="" coords="400,205,451,231"/>
+<area shape="poly" title=" " alt="" coords="267,130,307,159,357,190,388,204,386,208,355,195,304,164,264,134"/>
+<area shape="poly" title=" " alt="" coords="495,25,529,30,528,36,495,31"/>
+<area shape="rect" href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7" title="Compute syslink checksum." alt="" coords="709,5,892,31"/>
+<area shape="poly" title=" " alt="" coords="661,33,696,29,696,34,662,38"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="740,55,861,80"/>
+<area shape="poly" title=" " alt="" coords="662,48,727,56,726,61,661,53"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="940,55,1052,80"/>
+<area shape="poly" title=" " alt="" coords="861,65,926,65,926,70,861,70"/>
 </map>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -356,7 +366,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00238">238</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink__dl_8h_source.html#l00053">syslink_dl::rssi</a>, <a class="el" href="cc2500__rx_8c_source.html#l00085">rssi</a>, <a class="el" href="syslink__dl_8c_source.html#l00034">syslink</a>, <a class="el" href="syslink_8h_source.html#l00043">SYSLINK_RADIO_ADDRESS</a>, <a class="el" href="syslink_8h_source.html#l00039">SYSLINK_RADIO_CHANNEL</a>, <a class="el" href="syslink_8h_source.html#l00040">SYSLINK_RADIO_DATARATE</a>, and <a class="el" href="syslink_8h_source.html#l00042">SYSLINK_RADIO_RSSI</a>.</p>
+<p class="reference">References <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink__dl_8h_source.html#l00053">syslink_dl::rssi</a>, <a class="el" href="cc2500__rx_8c_source.html#l00085">rssi</a>, <a class="el" href="syslink__dl_8c_source.html#l00035">syslink</a>, <a class="el" href="syslink_8h_source.html#l00043">SYSLINK_RADIO_ADDRESS</a>, <a class="el" href="syslink_8h_source.html#l00039">SYSLINK_RADIO_CHANNEL</a>, <a class="el" href="syslink_8h_source.html#l00040">SYSLINK_RADIO_DATARATE</a>, and <a class="el" href="syslink_8h_source.html#l00042">SYSLINK_RADIO_RSSI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00258">handle_new_msg()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -408,7 +418,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00186">186</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00046">CRTP_NULL</a>, <a class="el" href="crtp_8h_source.html#l00036">CRTP_PORT_COMMANDER</a>, <a class="el" href="crtp_8h_source.html#l00040">CRTP_PORT_PPRZLINK</a>, <a class="el" href="crtp_8h_source.html#l00063">crtp_message_t::data</a>, <a class="el" href="syslink__dl_8h_source.html#l00050">syslink_dl::device</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="syslink__dl_8c_source.html#l00090">handle_raw_other()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink__dl_8h_source.html#l00042">syslink_dl::msg_tx</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>, <a class="el" href="syslink__dl_8h_source.html#l00045">syslink_dl::rx_buf</a>, <a class="el" href="syslink__dl_8h_source.html#l00046">syslink_dl::rx_insert_idx</a>, <a class="el" href="syslink__dl_8c_source.html#l00042">send_message()</a>, <a class="el" href="crtp_8h_source.html#l00053">crtp_message_t::size</a>, <a class="el" href="microrl_8c_source.html#l00204">split()</a>, <a class="el" href="syslink__dl_8c_source.html#l00034">syslink</a>, <a class="el" href="syslink_8h_source.html#l00038">SYSLINK_RADIO_RAW</a>, <a class="el" href="syslink__dl_8h_source.html#l00036">SYSLINK_RX_BUF_LEN</a>, <a class="el" href="syslink__dl_8h_source.html#l00044">syslink_dl::tx_extract_idx</a>, <a class="el" href="syslink__dl_8h_source.html#l00043">syslink_dl::tx_insert_idx</a>, and <a class="el" href="syslink_8h_source.html#l00067">syslink_message_t::type</a>.</p>
+<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00046">CRTP_NULL</a>, <a class="el" href="crtp_8h_source.html#l00036">CRTP_PORT_COMMANDER</a>, <a class="el" href="crtp_8h_source.html#l00040">CRTP_PORT_PPRZLINK</a>, <a class="el" href="crtp_8h_source.html#l00063">crtp_message_t::data</a>, <a class="el" href="syslink__dl_8h_source.html#l00050">syslink_dl::device</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="syslink__dl_8c_source.html#l00090">handle_raw_other()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink__dl_8h_source.html#l00042">syslink_dl::msg_tx</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00032">pprz_mtx_unlock()</a>, <a class="el" href="syslink__dl_8h_source.html#l00045">syslink_dl::rx_buf</a>, <a class="el" href="syslink__dl_8h_source.html#l00046">syslink_dl::rx_insert_idx</a>, <a class="el" href="syslink__dl_8c_source.html#l00042">send_message()</a>, <a class="el" href="crtp_8h_source.html#l00053">crtp_message_t::size</a>, <a class="el" href="microrl_8c_source.html#l00204">split()</a>, <a class="el" href="syslink__dl_8c_source.html#l00035">syslink</a>, <a class="el" href="syslink_8h_source.html#l00038">SYSLINK_RADIO_RAW</a>, <a class="el" href="syslink__dl_8h_source.html#l00036">SYSLINK_RX_BUF_LEN</a>, <a class="el" href="syslink__dl_8c_source.html#l00038">syslink_tx_mtx</a>, <a class="el" href="syslink__dl_8h_source.html#l00044">syslink_dl::tx_extract_idx</a>, <a class="el" href="syslink__dl_8h_source.html#l00043">syslink_dl::tx_insert_idx</a>, and <a class="el" href="syslink_8h_source.html#l00067">syslink_message_t::type</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00258">handle_new_msg()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -418,13 +428,17 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a9a5fcd9b15a63e5311c8ff49c6f95bb8_cgraph.png" border="0" usemap="#asyslink__dl_8c_a9a5fcd9b15a63e5311c8ff49c6f95bb8_cgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a9a5fcd9b15a63e5311c8ff49c6f95bb8_cgraph" id="asyslink__dl_8c_a9a5fcd9b15a63e5311c8ff49c6f95bb8_cgraph">
-<area shape="rect" title="Handle raw datalink." alt="" coords="5,56,103,81"/>
+<area shape="rect" title="Handle raw datalink." alt="" coords="5,107,103,132"/>
 <area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="151,5,289,31"/>
-<area shape="poly" title=" " alt="" coords="96,53,163,32,165,37,97,58"/>
+<area shape="poly" title=" " alt="" coords="69,104,105,77,149,48,175,34,178,39,152,52,108,82,73,109"/>
 <area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="337,31,456,56"/>
-<area shape="poly" title=" " alt="" coords="103,62,323,46,324,51,103,68"/>
-<area shape="rect" href="microrl_8c.html#a306bf791daa21526b303e834c34916b4" title=" " alt="" coords="195,107,245,132"/>
-<area shape="poly" title=" " alt="" coords="97,79,182,105,181,110,96,84"/>
+<area shape="poly" title=" " alt="" coords="101,104,150,91,323,54,325,60,151,97,102,109"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="161,107,279,132"/>
+<area shape="poly" title=" " alt="" coords="103,117,147,117,147,122,103,122"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="153,156,287,181"/>
+<area shape="poly" title=" " alt="" coords="98,129,164,149,162,154,97,135"/>
+<area shape="rect" href="microrl_8c.html#a306bf791daa21526b303e834c34916b4" title=" " alt="" coords="195,205,245,231"/>
+<area shape="poly" title=" " alt="" coords="71,130,106,160,152,190,183,204,181,209,149,195,103,164,68,134"/>
 <area shape="poly" title=" " alt="" coords="290,25,324,30,323,36,289,31"/>
 <area shape="rect" href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7" title="Compute syslink checksum." alt="" coords="504,5,687,31"/>
 <area shape="poly" title=" " alt="" coords="456,33,490,29,491,34,457,38"/>
@@ -519,26 +533,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a43b0e5f0988304796edc4f873c57e954" name="a43b0e5f0988304796edc4f873c57e954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43b0e5f0988304796edc4f873c57e954">&#9670;&#160;</a></span>PPRZ_MUTEX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PPRZ_MUTEX </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">syslink_tx_mtx</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Protect syslink TX with Mutex when using RTOS. </p>
-
-</div>
-</div>
 <a id="ad541734144cc860fa9ab400f9ffc2a05" name="ad541734144cc860fa9ab400f9ffc2a05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad541734144cc860fa9ab400f9ffc2a05">&#9670;&#160;</a></span>send_message()</h2>
 
@@ -567,7 +561,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00042">42</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink_8c_source.html#l00112">syslink_compute_cksum()</a>, <a class="el" href="syslink_8c_source.html#l00031">syslink_stx</a>, and <a class="el" href="uart_8c_source.html#l00266">uart_put_buffer()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="syslink_8c_source.html#l00112">syslink_compute_cksum()</a>, <a class="el" href="syslink_8c_source.html#l00031">syslink_stx</a>, and <a class="el" href="uart_8c_source.html#l00161">uart_put_buffer()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, and <a class="el" href="syslink__dl_8c_source.html#l00090">handle_raw_other()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -696,14 +690,26 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00288">288</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00050">CRTP_MAX_DATA_SIZE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
+<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00050">CRTP_MAX_DATA_SIZE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="syslink__dl_8c_source.html#l00038">syslink_tx_mtx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="syslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_cgraph.png" border="0" usemap="#asyslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_cgraph" alt=""/></div>
+<map name="asyslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_cgraph" id="asyslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_cgraph">
+<area shape="rect" title="Implementation of syslink as generic device." alt="" coords="5,5,152,45"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="200,13,317,38"/>
+<area shape="poly" title=" " alt="" coords="152,23,186,23,186,28,152,28"/>
+</map>
+</div>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_icgraph.png" border="0" usemap="#asyslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_icgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_icgraph" id="asyslink__dl_8c_a91dbdee0ee6cd122dfe124f1e23b3c25_icgraph">
 <area shape="rect" title="Implementation of syslink as generic device." alt="" coords="168,5,315,45"/>
@@ -734,43 +740,47 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00413">413</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="syslink__dl_8c_source.html#l00258">handle_new_msg()</a>, <a class="el" href="syslink__dl_8h_source.html#l00041">syslink_dl::msg_rx</a>, <a class="el" href="syslink__dl_8h_source.html#l00040">syslink_dl::state</a>, <a class="el" href="syslink__dl_8c_source.html#l00034">syslink</a>, <a class="el" href="syslink_8c_source.html#l00039">syslink_parse_char()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00357">uart_char_available()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00348">uart_getch()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="syslink__dl_8c_source.html#l00258">handle_new_msg()</a>, <a class="el" href="syslink__dl_8h_source.html#l00041">syslink_dl::msg_rx</a>, <a class="el" href="syslink__dl_8h_source.html#l00040">syslink_dl::state</a>, <a class="el" href="syslink__dl_8c_source.html#l00035">syslink</a>, <a class="el" href="syslink_8c_source.html#l00039">syslink_parse_char()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00357">uart_char_available()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00348">uart_getch()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a248668c76bd51845ed6a42ff3da5f1a9_cgraph.png" border="0" usemap="#asyslink__dl_8c_a248668c76bd51845ed6a42ff3da5f1a9_cgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a248668c76bd51845ed6a42ff3da5f1a9_cgraph" id="asyslink__dl_8c_a248668c76bd51845ed6a42ff3da5f1a9_cgraph">
-<area shape="rect" title="Datalink event." alt="" coords="5,205,136,231"/>
-<area shape="rect" href="syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="192,80,327,105"/>
-<area shape="poly" title=" " alt="" coords="89,203,226,111,229,115,92,208"/>
-<area shape="rect" href="syslink_8c.html#a84f1b8a7c817eb6516f9d4578cb7e381" title="Parse one byte." alt="" coords="737,167,884,192"/>
-<area shape="poly" title=" " alt="" coords="136,212,724,181,724,186,136,217"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="184,231,335,256"/>
-<area shape="poly" title=" " alt="" coords="136,224,171,229,170,234,136,229"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="214,280,305,305"/>
-<area shape="poly" title=" " alt="" coords="99,228,185,266,204,273,202,278,183,271,97,233"/>
-<area shape="rect" href="syslink__dl_8c.html#a5c78def63998fc914185e7e10213eb86" title="Handle battery message." alt="" coords="383,5,503,31"/>
-<area shape="poly" title=" " alt="" coords="290,77,382,40,397,33,399,38,384,44,292,82"/>
-<area shape="rect" href="syslink__dl_8c.html#a1b6a129ceaf5c9cf3096d2fb3e91a3c2" title=" " alt="" coords="389,55,496,80"/>
-<area shape="poly" title=" " alt="" coords="327,81,375,74,376,79,327,86"/>
-<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="394,104,491,129"/>
-<area shape="poly" title=" " alt="" coords="327,99,381,106,380,111,327,104"/>
-<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="551,28,689,53"/>
-<area shape="poly" title=" " alt="" coords="473,101,502,89,576,56,578,61,504,94,475,106"/>
-<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="751,79,870,104"/>
-<area shape="poly" title=" " alt="" coords="491,111,737,94,738,99,492,116"/>
-<area shape="rect" href="microrl_8c.html#a306bf791daa21526b303e834c34916b4" title=" " alt="" coords="595,129,645,155"/>
-<area shape="poly" title=" " alt="" coords="492,121,581,134,581,139,491,126"/>
-<area shape="poly" title=" " alt="" coords="669,51,749,72,748,78,668,56"/>
-<area shape="rect" href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7" title="Compute syslink checksum." alt="" coords="932,141,1115,167"/>
-<area shape="poly" title=" " alt="" coords="855,101,967,135,966,140,854,107"/>
-<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="963,79,1084,104"/>
-<area shape="poly" title=" " alt="" coords="870,89,949,89,949,94,870,94"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="1163,79,1275,104"/>
-<area shape="poly" title=" " alt="" coords="1084,89,1149,89,1149,94,1084,94"/>
-<area shape="poly" title=" " alt="" coords="884,168,918,164,919,169,885,173"/>
+<area shape="rect" title="Datalink event." alt="" coords="5,281,136,307"/>
+<area shape="rect" href="syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="192,108,327,133"/>
+<area shape="poly" title=" " alt="" coords="84,279,233,141,236,145,88,283"/>
+<area shape="rect" href="syslink_8c.html#a84f1b8a7c817eb6516f9d4578cb7e381" title="Parse one byte." alt="" coords="737,217,884,243"/>
+<area shape="poly" title=" " alt="" coords="136,287,379,268,689,241,723,237,724,242,690,246,379,273,136,292"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="184,307,335,332"/>
+<area shape="poly" title=" " alt="" coords="136,300,171,305,170,310,136,305"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="214,356,305,381"/>
+<area shape="poly" title=" " alt="" coords="99,304,185,342,204,349,202,354,183,347,97,309"/>
+<area shape="rect" href="syslink__dl_8c.html#a5c78def63998fc914185e7e10213eb86" title="Handle battery message." alt="" coords="383,33,503,59"/>
+<area shape="poly" title=" " alt="" coords="291,105,397,61,399,66,293,110"/>
+<area shape="rect" href="syslink__dl_8c.html#a1b6a129ceaf5c9cf3096d2fb3e91a3c2" title=" " alt="" coords="389,83,496,108"/>
+<area shape="poly" title=" " alt="" coords="327,109,375,102,376,107,327,114"/>
+<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="394,132,491,157"/>
+<area shape="poly" title=" " alt="" coords="327,127,381,134,380,139,327,132"/>
+<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="551,5,689,31"/>
+<area shape="poly" title=" " alt="" coords="483,130,501,119,516,102,524,84,533,67,549,48,568,35,571,39,552,52,537,70,529,87,521,104,504,123,486,134"/>
+<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="751,56,870,81"/>
+<area shape="poly" title=" " alt="" coords="476,129,501,118,525,104,550,93,598,81,647,73,737,66,738,71,648,78,599,86,552,98,527,109,504,123,478,134"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="561,107,679,132"/>
+<area shape="poly" title=" " alt="" coords="491,135,547,127,548,132,492,140"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="553,156,687,181"/>
+<area shape="poly" title=" " alt="" coords="492,149,540,155,539,160,491,154"/>
+<area shape="rect" href="microrl_8c.html#a306bf791daa21526b303e834c34916b4" title=" " alt="" coords="595,205,645,231"/>
+<area shape="poly" title=" " alt="" coords="471,155,552,192,583,203,581,208,550,196,469,160"/>
+<area shape="poly" title=" " alt="" coords="669,28,749,50,748,55,668,33"/>
+<area shape="rect" href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7" title="Compute syslink checksum." alt="" coords="932,143,1115,168"/>
+<area shape="poly" title=" " alt="" coords="844,79,980,135,978,140,842,84"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="963,56,1084,81"/>
+<area shape="poly" title=" " alt="" coords="870,66,949,66,949,71,870,71"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="1163,56,1275,81"/>
+<area shape="poly" title=" " alt="" coords="1084,66,1149,66,1149,71,1084,71"/>
+<area shape="poly" title=" " alt="" coords="847,215,973,170,974,175,849,220"/>
 </map>
 </div>
 
@@ -796,30 +806,35 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00366">366</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00054">syslink_dl::charging</a>, <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00040">CRTP_PORT_PPRZLINK</a>, <a class="el" href="syslink__dl_8h_source.html#l00050">syslink_dl::device</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="syslink__dl_8h_source.html#l00042">syslink_dl::msg_tx</a>, <a class="el" href="syslink__dl_8h_source.html#l00055">syslink_dl::powered</a>, <a class="el" href="pprz__mutex_8h_source.html#l00045">PPRZ_MUTEX_INIT</a>, <a class="el" href="syslink__dl_8h_source.html#l00053">syslink_dl::rssi</a>, <a class="el" href="crtp_8h_source.html#l00053">crtp_message_t::size</a>, <a class="el" href="syslink__dl_8h_source.html#l00040">syslink_dl::state</a>, <a class="el" href="syslink__dl_8c_source.html#l00034">syslink</a>, <a class="el" href="syslink__dl_8c_source.html#l00355">syslink_char_available()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00348">syslink_getch()</a>, <a class="el" href="syslink_8c_source.html#l00033">syslink_parse_init()</a>, <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>, <a class="el" href="syslink__dl_8c_source.html#l00337">syslink_put_byte()</a>, <a class="el" href="syslink__dl_8c_source.html#l00343">syslink_send_message()</a>, <a class="el" href="syslink__dl_8h_source.html#l00044">syslink_dl::tx_extract_idx</a>, and <a class="el" href="syslink__dl_8h_source.html#l00043">syslink_dl::tx_insert_idx</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00054">syslink_dl::charging</a>, <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00040">CRTP_PORT_PPRZLINK</a>, <a class="el" href="syslink__dl_8h_source.html#l00050">syslink_dl::device</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="syslink__dl_8h_source.html#l00042">syslink_dl::msg_tx</a>, <a class="el" href="syslink__dl_8h_source.html#l00055">syslink_dl::powered</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00018">pprz_mtx_init()</a>, <a class="el" href="syslink__dl_8h_source.html#l00053">syslink_dl::rssi</a>, <a class="el" href="crtp_8h_source.html#l00053">crtp_message_t::size</a>, <a class="el" href="syslink__dl_8h_source.html#l00040">syslink_dl::state</a>, <a class="el" href="syslink__dl_8c_source.html#l00035">syslink</a>, <a class="el" href="syslink__dl_8c_source.html#l00355">syslink_char_available()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00348">syslink_getch()</a>, <a class="el" href="syslink_8c_source.html#l00033">syslink_parse_init()</a>, <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>, <a class="el" href="syslink__dl_8c_source.html#l00337">syslink_put_byte()</a>, <a class="el" href="syslink__dl_8c_source.html#l00343">syslink_send_message()</a>, <a class="el" href="syslink__dl_8c_source.html#l00038">syslink_tx_mtx</a>, <a class="el" href="syslink__dl_8h_source.html#l00044">syslink_dl::tx_extract_idx</a>, and <a class="el" href="syslink__dl_8h_source.html#l00043">syslink_dl::tx_insert_idx</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a8af3cb278d0da92c186495eab0c91c5a_cgraph.png" border="0" usemap="#asyslink__dl_8c_a8af3cb278d0da92c186495eab0c91c5a_cgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a8af3cb278d0da92c186495eab0c91c5a_cgraph" id="asyslink__dl_8c_a8af3cb278d0da92c186495eab0c91c5a_cgraph">
-<area shape="rect" title="Init function." alt="" coords="5,169,120,195"/>
-<area shape="rect" href="syslink__dl_8c.html#a6f8a4a70c849a1b54f08f860680f12ad" title=" " alt="" coords="169,5,339,31"/>
-<area shape="poly" title=" " alt="" coords="68,168,104,107,132,72,166,41,179,34,182,38,170,45,136,75,108,110,72,170"/>
-<area shape="rect" href="syslink__dl_8c.html#a91dbdee0ee6cd122dfe124f1e23b3c25" title="Implementation of syslink as generic device." alt="" coords="181,55,327,95"/>
-<area shape="poly" title=" " alt="" coords="77,167,117,137,167,105,180,99,182,103,169,110,120,141,81,171"/>
-<area shape="rect" href="syslink__dl_8c.html#a242f9d5b0e58935e9eec53c90a6fabf1" title=" " alt="" coords="199,120,309,145"/>
-<area shape="poly" title=" " alt="" coords="112,167,190,146,191,152,113,172"/>
-<area shape="rect" href="syslink_8c.html#ad9519dcc771a4e5d764b168f476c9cd1" title="Init syslink parser." alt="" coords="185,169,323,195"/>
-<area shape="poly" title=" " alt="" coords="120,179,171,179,171,185,120,185"/>
-<area shape="rect" href="syslink__dl_8c.html#a3834d6f9f376b597996987f95b163ee0" title=" " alt="" coords="388,245,529,271"/>
-<area shape="poly" title=" " alt="" coords="117,192,169,203,375,242,374,247,167,209,116,197"/>
-<area shape="rect" href="syslink__dl_8c.html#a98893ff4b66de601ada1c09daadf671b" title=" " alt="" coords="188,271,320,296"/>
-<area shape="poly" title=" " alt="" coords="82,193,121,220,169,249,202,263,200,268,167,254,118,225,79,197"/>
-<area shape="rect" href="syslink__dl_8c.html#a65df980a5fa11a7503ed71d02f2257f4" title=" " alt="" coords="168,320,340,345"/>
-<area shape="poly" title=" " alt="" coords="73,193,110,248,137,279,170,305,183,312,180,317,166,310,134,282,106,251,69,196"/>
-<area shape="poly" title=" " alt="" coords="320,273,374,266,375,271,321,278"/>
+<area shape="rect" title="Init function." alt="" coords="5,195,120,220"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="199,5,309,31"/>
+<area shape="poly" title=" " alt="" coords="66,193,79,162,100,121,129,77,166,40,185,29,187,34,170,44,133,81,104,123,83,164,71,195"/>
+<area shape="rect" href="syslink__dl_8c.html#a6f8a4a70c849a1b54f08f860680f12ad" title=" " alt="" coords="169,55,339,80"/>
+<area shape="poly" title=" " alt="" coords="70,193,107,143,135,115,167,90,181,83,183,87,169,95,139,119,112,147,74,196"/>
+<area shape="rect" href="syslink__dl_8c.html#a91dbdee0ee6cd122dfe124f1e23b3c25" title="Implementation of syslink as generic device." alt="" coords="181,105,327,145"/>
+<area shape="poly" title=" " alt="" coords="87,192,167,154,184,147,186,152,169,159,90,197"/>
+<area shape="rect" href="syslink__dl_8c.html#a242f9d5b0e58935e9eec53c90a6fabf1" title=" " alt="" coords="199,169,309,195"/>
+<area shape="poly" title=" " alt="" coords="120,197,184,188,185,194,120,202"/>
+<area shape="rect" href="syslink_8c.html#ad9519dcc771a4e5d764b168f476c9cd1" title="Init syslink parser." alt="" coords="185,219,323,244"/>
+<area shape="poly" title=" " alt="" coords="120,212,171,218,171,224,120,217"/>
+<area shape="rect" href="syslink__dl_8c.html#a3834d6f9f376b597996987f95b163ee0" title=" " alt="" coords="388,344,529,369"/>
+<area shape="poly" title=" " alt="" coords="76,218,113,261,140,284,169,302,220,323,273,337,375,352,374,357,272,342,218,328,167,307,137,288,110,265,72,222"/>
+<area shape="rect" href="syslink__dl_8c.html#a98893ff4b66de601ada1c09daadf671b" title=" " alt="" coords="188,369,320,395"/>
+<area shape="poly" title=" " alt="" coords="72,219,108,280,136,316,170,348,193,362,191,366,166,352,132,320,104,283,68,222"/>
+<area shape="rect" href="syslink__dl_8c.html#a65df980a5fa11a7503ed71d02f2257f4" title=" " alt="" coords="168,268,340,293"/>
+<area shape="poly" title=" " alt="" coords="90,218,169,253,194,261,192,266,167,258,88,223"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="400,191,517,216"/>
+<area shape="poly" title=" " alt="" coords="310,142,341,154,414,183,412,188,339,159,308,147"/>
+<area shape="poly" title=" " alt="" coords="320,371,374,364,375,370,321,376"/>
+<area shape="poly" title=" " alt="" coords="301,265,339,253,418,219,420,224,341,258,303,270"/>
 </map>
 </div>
 
@@ -845,7 +860,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00397">397</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00054">syslink_dl::charging</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00052">LED_OFF</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="syslink__dl_8h_source.html#l00055">syslink_dl::powered</a>, and <a class="el" href="syslink__dl_8c_source.html#l00034">syslink</a>.</p>
+<p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00054">syslink_dl::charging</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00052">LED_OFF</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="syslink__dl_8h_source.html#l00055">syslink_dl::powered</a>, and <a class="el" href="syslink__dl_8c_source.html#l00035">syslink</a>.</p>
 
 </div>
 </div>
@@ -878,11 +893,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="syslink__dl_8h_source.html#l00036">SYSLINK_RX_BUF_LEN</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a242f9d5b0e58935e9eec53c90a6fabf1_icgraph.png" border="0" usemap="#asyslink__dl_8c_a242f9d5b0e58935e9eec53c90a6fabf1_icgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a242f9d5b0e58935e9eec53c90a6fabf1_icgraph" id="asyslink__dl_8c_a242f9d5b0e58935e9eec53c90a6fabf1_icgraph">
 <area shape="rect" title=" " alt="" coords="168,5,279,31"/>
@@ -944,11 +959,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="syslink__dl_8h_source.html#l00035">CRTP_BUF_LEN</a>, <a class="el" href="crtp_8h_source.html#l00050">CRTP_MAX_DATA_SIZE</a>, <a class="el" href="crtp_8h_source.html#l00063">crtp_message_t::data</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="esc__dshot_8c_source.html#l00109">Min</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="crtp_8h_source.html#l00053">crtp_message_t::size</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>, and <a class="el" href="syslink__dl_8c_source.html#l00337">syslink_put_byte()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a3834d6f9f376b597996987f95b163ee0_icgraph.png" border="0" usemap="#asyslink__dl_8c_a3834d6f9f376b597996987f95b163ee0_icgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a3834d6f9f376b597996987f95b163ee0_icgraph" id="asyslink__dl_8c_a3834d6f9f376b597996987f95b163ee0_icgraph">
 <area shape="rect" title=" " alt="" coords="348,5,489,31"/>
@@ -1007,11 +1022,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_cgraph.png" border="0" usemap="#asyslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_cgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_cgraph" id="asyslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,137,31"/>
@@ -1019,11 +1034,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="137,15,172,15,172,21,137,21"/>
 </map>
 </div>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_icgraph.png" border="0" usemap="#asyslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_icgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_icgraph" id="asyslink__dl_8c_a98893ff4b66de601ada1c09daadf671b_icgraph">
 <area shape="rect" title=" " alt="" coords="168,5,300,31"/>
@@ -1070,14 +1085,26 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00343">343</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, and <a class="el" href="syslink__dl_8c_source.html#l00038">syslink_tx_mtx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="syslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_cgraph.png" border="0" usemap="#asyslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_cgraph" alt=""/></div>
+<map name="asyslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_cgraph" id="asyslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,177,31"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="225,5,343,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,211,15,211,21,178,21"/>
+</map>
+</div>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="syslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_icgraph.png" border="0" usemap="#asyslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_icgraph" alt=""/></div>
 <map name="asyslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_icgraph" id="asyslink__dl_8c_a65df980a5fa11a7503ed71d02f2257f4_icgraph">
 <area shape="rect" title=" " alt="" coords="168,5,340,31"/>
@@ -1101,9 +1128,29 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00034">34</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00035">35</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00066">handle_battery()</a>, <a class="el" href="syslink__dl_8c_source.html#l00238">handle_radio()</a>, <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, <a class="el" href="syslink__dl_8c_source.html#l00413">syslink_dl_event()</a>, <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>, and <a class="el" href="syslink__dl_8c_source.html#l00397">syslink_dl_periodic()</a>.</p>
+
+</div>
+</div>
+<a id="a02f5452abc8f36b4fd5995e37de44401" name="a02f5452abc8f36b4fd5995e37de44401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f5452abc8f36b4fd5995e37de44401">&#9670;&#160;</a></span>syslink_tx_mtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="threads_8h.html#aa2389e51ec1fe8e08155b3ad3175b86f">pprz_mutex_t</a> syslink_tx_mtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Protect syslink TX with Mutex when using RTOS. </p>
+
+<p class="definition">Definition at line <a class="el" href="syslink__dl_8c_source.html#l00038">38</a> of file <a class="el" href="syslink__dl_8c_source.html">syslink_dl.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>, and <a class="el" href="syslink__dl_8c_source.html#l00343">syslink_send_message()</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1160,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="dir_847ced2633402d6448f9e1bf487c2d45.html">bitcraze</a></li><li class="navelem"><a class="el" href="syslink__dl_8c.html">syslink_dl.c</a></li>
-    <li class="footer">Generated on Mon Feb 3 2025 10:13:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 3 2025 13:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -18,6 +18,7 @@ var dir_0e703de7e76e38c62de795c957434487 =
     [ "sys_mon.h", "sys__mon_8h.html", "sys__mon_8h" ],
     [ "sys_mon_bare_metal.h", "sys__mon__bare__metal_8h.html", "sys__mon__bare__metal_8h" ],
     [ "sys_mon_rtos.h", "sys__mon__rtos_8h.html", "sys__mon__rtos_8h" ],
+    [ "threads.h", "threads_8h.html", "threads_8h" ],
     [ "trigger_ext.c", "trigger__ext_8c.html", "trigger__ext_8c" ],
     [ "trigger_ext.h", "trigger__ext_8h.html", "trigger__ext_8h" ]
 ];

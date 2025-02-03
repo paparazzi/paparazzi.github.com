@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="usbStorage_8c.html#a5b3b8bb0c047783b16eb61832ebb76d3">   41</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_BOOT  false</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">thdUsbStorage</a>(<span class="keywordtype">void</span> *<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arg</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">thdUsbStorage</a>(<span class="keywordtype">void</span> *arg);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="usbStorage_8c.html#a2814f3f25999bd46f1226b3610e1087c">   45</a></span><span class="keyword">static</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">thread_t</a> *<a class="code hl_variable" href="usbStorage_8c.html#a2814f3f25999bd46f1226b3610e1087c">usbStorageThreadPtr</a> = <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NULL</a>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">/* USB mass storage driver */</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="usbStorage_8c.html#a35e1fbda907c4c69651e7ffed1543106">   47</a></span><span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="usbStorage_8c.html#a35e1fbda907c4c69651e7ffed1543106">isRunning</a> = <span class="keyword">false</span>;</div>
@@ -209,9 +209,9 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">  100</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">thdUsbStorage</a>(<span class="keywordtype">void</span> *<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arg</a>)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">  100</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45">thdUsbStorage</a>(<span class="keywordtype">void</span> *arg)</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>) <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arg</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>) arg;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">chRegSetThreadName</a>(<span class="stringliteral">&quot;UsbStorage:polling&quot;</span>);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">event_listener_t</a> connected;</div>
@@ -334,7 +334,7 @@ $(document).ready(function(){initNavTree('usbStorage_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="usbStorage_8c.html">usbStorage.c</a></li>
-    <li class="footer">Generated on Mon Feb 3 2025 10:13:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 3 2025 13:10:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

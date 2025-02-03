@@ -84,5 +84,7 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "sensors_hitl.c", "sensors__hitl_8c.html", "sensors__hitl_8c" ],
     [ "sensors_hitl.h", "sensors__hitl_8h.html", "sensors__hitl_8h" ],
     [ "temp_adc.c", "temp__adc_8c.html", "temp__adc_8c" ],
-    [ "temp_adc.h", "temp__adc_8h.html", "temp__adc_8h" ]
+    [ "temp_adc.h", "temp__adc_8h.html", "temp__adc_8h" ],
+    [ "thd_test.c", "thd__test_8c.html", "thd__test_8c" ],
+    [ "thd_test.h", "thd__test_8h.html", "thd__test_8h" ]
 ];
