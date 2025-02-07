@@ -1,5 +1,6 @@
 var NAVTREEINDEX128 =
 {
+"module__mavlink_decoder.html#module_xml__mavlink_decoder":[1,110,2,0],
 "module__max11040.html":[1,23],
 "module__max11040.html#functions__max11040":[1,23,1],
 "module__max11040.html#module_load_example__max11040":[1,23,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX128 =
 "module__osd_max7456.html#configuration__osd_max7456":[1,489,1],
 "module__osd_max7456.html#functions__osd_max7456":[1,489,2],
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,489,0],
-"module__osd_max7456.html#module_xml__osd_max7456":[1,489,2,0],
-"module__pano_unwrap.html":[1,490]
+"module__osd_max7456.html#module_xml__osd_max7456":[1,489,2,0]
 };

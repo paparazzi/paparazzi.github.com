@@ -1,5 +1,6 @@
 var NAVTREEINDEX106 =
 {
+"lsm303d__regs_8h.html#ae8e13d506f367ab80060b8a23627bb4c":[12,0,1,0,7,73,70],
 "lsm303d__regs_8h.html#aeb0758019f8ad45de45883432e9d9df7":[12,0,1,0,7,73,53],
 "lsm303d__regs_8h.html#aeb6ddd3d997cfaa3b018be2042dd1248":[12,0,1,0,7,73,32],
 "lsm303d__regs_8h.html#aee0705826b000bfb86f21c9e22e0341d":[12,0,1,0,7,73,59],
@@ -38,8 +39,8 @@ var NAVTREEINDEX106 =
 "lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8":[12,0,1,0,7,75,0,2],
 "lsm303d__spi_8h.html#a8b2bbc4ff09e5ad5f1ac172c7395d5ca":[12,0,1,0,7,75,0,10],
 "lsm303d__spi_8h.html#aa02c102c0cd7e116f0f83be3d8483bca":[12,0,1,0,7,75,0,3],
-"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
 "lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,1,0],
+"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
 "lsm303d__spi_8h.html#ab204787bc8191624dba7bfd4c5ca9322":[12,0,1,0,7,75,0,1],
 "lsm303d__spi_8h.html#ab4e49df07264189a6344fe0772d14f9f":[12,0,1,0,7,75,7],
 "lsm303d__spi_8h.html#ac0b025eef4f446e794b523ba01e7d657":[12,0,1,0,7,75,0,11],
@@ -98,8 +99,8 @@ var NAVTREEINDEX106 =
 "lsm303dlhc__i2c_8h.html#a58ad260659be5aabd953d0efb2ee4178":[12,0,1,0,7,78,0,0],
 "lsm303dlhc__i2c_8h.html#a691472da21e2d52aac3e32823184c7b3":[12,0,1,0,7,78,0,4],
 "lsm303dlhc__i2c_8h.html#a7269b2a3af038287f4878ca1e3814ea1":[12,0,1,0,7,78,0,5],
-"lsm303dlhc__i2c_8h.html#a741f63d12d767bb3fd2b0251ed839499":[12,0,1,0,7,78,1,1],
 "lsm303dlhc__i2c_8h.html#a741f63d12d767bb3fd2b0251ed839499":[12,0,1,0,7,78,3,1],
+"lsm303dlhc__i2c_8h.html#a741f63d12d767bb3fd2b0251ed839499":[12,0,1,0,7,78,1,1],
 "lsm303dlhc__i2c_8h.html#a77e16e80a2f36277b41270fa3d620225":[12,0,1,0,7,78,0,3],
 "lsm303dlhc__i2c_8h.html#a8c1c3c8e4597f906ad88c3c869828ee2":[12,0,1,0,7,78,0,6],
 "lsm303dlhc__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,78,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX106 =
 "lsm6ds33__i2c_8c.html#a3dc8f9def18511d17aabd2642ea47f1d":[12,0,1,0,7,81,5],
 "lsm6ds33__i2c_8c.html#a6e8eb0a38031bed44b9e6eac21d024b8":[12,0,1,0,7,81,4],
 "lsm6ds33__i2c_8c.html#a81ec32aeec5d229837f6d949284d5465":[12,0,1,0,7,81,2],
-"lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c":[12,0,1,0,7,81,6],
-"lsm6ds33__i2c_8c.html#abdb25f3a5c149b15a0ed792d496a6999":[12,0,1,0,7,81,1]
+"lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c":[12,0,1,0,7,81,6]
 };

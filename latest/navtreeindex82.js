@@ -1,5 +1,6 @@
 var NAVTREEINDEX82 =
 {
+"imu__disco_8h.html#afb92d6ea8c85c5982a480899183a4470":[12,0,1,0,6,36,19,0,1],
 "imu__disco_8h.html#structImuDisco":[12,0,1,0,6,36,19,0],
 "imu__disco_8h_source.html":[12,0,1,0,6,36,19],
 "imu__heater_8c.html":[12,0,1,0,6,36,20],
@@ -183,8 +184,8 @@ var NAVTREEINDEX82 =
 "imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,35,5],
 "imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005":[12,0,1,0,6,36,33,0,3],
 "imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005":[12,0,1,0,6,36,35,0,3],
-"imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,33,0,0],
+"imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,35,0,5],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,33,0,5],
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,33,0,1],
@@ -196,8 +197,8 @@ var NAVTREEINDEX82 =
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,35,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,36,35,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,35,3],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,33,0],
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,35,0],
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,33,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,36,35],
 "imu__nps_8c.html":[12,0,1,0,6,36,36],
 "imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,36,36,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX82 =
 "imu__px4fmu_8h.html#ae853dcfe722b7064ca2750ae43f5f9e0":[12,0,1,0,6,36,41,1],
 "imu__px4fmu_8h.html#ae9d72b5d7fae79662629c370a52caa01":[12,0,1,0,6,36,41,0,1],
 "imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c":[12,0,1,0,6,36,41,3],
-"imu__px4fmu_8h.html#structImuPx4fmu":[12,0,1,0,6,36,41,0],
-"imu__px4fmu_8h_source.html":[12,0,1,0,6,36,41]
+"imu__px4fmu_8h.html#structImuPx4fmu":[12,0,1,0,6,36,41,0]
 };

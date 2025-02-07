@@ -1,6 +1,5 @@
 var orange__avoider_8c =
 [
-    [ "NAV_C", "orange__avoider_8c.html#a291c0fda2fd988bf5f602f56157ab2b7", null ],
     [ "ORANGE_AVOIDER_VERBOSE", "orange__avoider_8c.html#af115de1f0ff11c264ed97e821b2b468e", null ],
     [ "ORANGE_AVOIDER_VISUAL_DETECTION_ID", "orange__avoider_8c.html#ae966a608a1c5346beea4d7fc29f31e90", null ],
     [ "PRINT", "orange__avoider_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],

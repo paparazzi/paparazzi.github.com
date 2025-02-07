@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"mpu9250_8h.html#a66a23a2b2af6f5a6be820ec2f3cc99ba":[12,0,1,0,7,98,1,7],
 "mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400":[12,0,1,0,7,98,42],
 "mpu9250_8h.html#a6965897a57a810a44d74cb89e7d1aa12":[12,0,1,0,7,98,9],
 "mpu9250_8h.html#a69947f1fe40926633938b1f52ccb1d45":[12,0,1,0,7,98,1,13],
@@ -77,8 +78,8 @@ var NAVTREEINDEX134 =
 "mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c":[12,0,1,0,7,100,7],
 "mpu9250__i2c_8h.html#aa6574d578c0a32f04893e3119a102ee6":[12,0,1,0,7,100,10],
 "mpu9250__i2c_8h.html#ab06e0dd90052f7f21aa311b92524459d":[12,0,1,0,7,100,0,6],
-"mpu9250__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,100,2,1],
 "mpu9250__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,100,1,0],
+"mpu9250__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,100,2,1],
 "mpu9250__i2c_8h.html#ac9f9794de9fa148ba59d805527430b9a":[12,0,1,0,7,100,3],
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0":[12,0,1,0,7,100,5],
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0a0dc1615fee579e54874fc210a4a1ac7a":[12,0,1,0,7,100,5,9],
@@ -234,8 +235,8 @@ var NAVTREEINDEX134 =
 "mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f":[12,0,1,0,7,103,8],
 "mpu9250__spi_8h.html#a8dc8003465b7482470f4a0cbb09162b5":[12,0,1,0,7,103,3],
 "mpu9250__spi_8h.html#aacd69bb71fd7707e60ffb0d4494cdd14":[12,0,1,0,7,103,0,7],
-"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,2,1],
 "mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,1,0],
+"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,2,1],
 "mpu9250__spi_8h.html#ab18fbb08c6cdf28dc9941409cc1f8ab2":[12,0,1,0,7,103,0,8],
 "mpu9250__spi_8h.html#abd46fc21482208fb51aa03d4ca966ab0":[12,0,1,0,7,103,4],
 "mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175":[12,0,1,0,7,103,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "mpu9250__spi_8h.html#ac7a68e7d517f0e42c1e5ab423549a9caaca0e9d108a33584a5fb0e1850d5854b6":[12,0,1,0,7,103,5,1],
 "mpu9250__spi_8h.html#ad9290f8c20fd0e558a0592d7a3bf320e":[12,0,1,0,7,103,0,1],
 "mpu9250__spi_8h.html#ae01351cc7facd15e24f7ab6712ecf711":[12,0,1,0,7,103,0,4],
-"mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050":[12,0,1,0,7,103,6],
-"mpu9250__spi_8h.html#structMpu9250__Spi":[12,0,1,0,7,103,0]
+"mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050":[12,0,1,0,7,103,6]
 };

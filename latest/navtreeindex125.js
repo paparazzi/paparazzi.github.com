@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,184,0],
 "module__filter_1euro_imu.html#module_xml__filter_1euro_imu":[1,184,2,0],
 "module__flight_benchmark.html":[1,35],
 "module__flight_benchmark.html#configuration__flight_benchmark":[1,35,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "module__heli_throttle_curve.html#configuration__heli_throttle_curve":[1,183,1],
 "module__heli_throttle_curve.html#functions__heli_throttle_curve":[1,183,2],
 "module__heli_throttle_curve.html#module_load_example__heli_throttle_curve":[1,183,0],
-"module__heli_throttle_curve.html#module_xml__heli_throttle_curve":[1,183,2,0],
-"module__hott_telemetry.html":[1,481]
+"module__heli_throttle_curve.html#module_xml__heli_throttle_curve":[1,183,2,0]
 };

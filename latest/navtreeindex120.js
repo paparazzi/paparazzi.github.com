@@ -1,5 +1,6 @@
 var NAVTREEINDEX120 =
 {
+"mcuconf__h7_8h.html#ab94c08a76dc47d928c7f8de463aa370f":[12,0,1,0,0,0,11,174],
 "mcuconf__h7_8h.html#ab99e09e5d7cf617d243ad4e19bacf778":[12,0,1,0,0,0,11,287],
 "mcuconf__h7_8h.html#aba49d4d898766a690874ccc9e072e4e4":[12,0,1,0,0,0,11,10],
 "mcuconf__h7_8h.html#abb5ea6f9775215dc0f6c75244bbdabe2":[12,0,1,0,0,0,11,182],
@@ -248,6 +249,5 @@ var NAVTREEINDEX120 =
 "meteo__stick_8h.html#structMeteoStick":[12,0,1,0,6,44,38,0],
 "meteo__stick_8h_source.html":[12,0,1,0,6,44,38],
 "meteo__stick__calib_8c.html":[12,0,1,0,6,44,39],
-"meteo__stick__calib_8c.html#a04e560e6f749743678197a9da1c782e9":[12,0,1,0,6,44,39,9],
-"meteo__stick__calib_8c.html#a05177742108133c8da1cb9514a672c0a":[12,0,1,0,6,44,39,11]
+"meteo__stick__calib_8c.html#a04e560e6f749743678197a9da1c782e9":[12,0,1,0,6,44,39,9]
 };

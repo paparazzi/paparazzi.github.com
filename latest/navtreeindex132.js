@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"modules_2datalink_2superbitrf_8h.html#aeed362a213e6d596509c158916ccb865":[12,0,1,0,6,15,28,0,15],
 "modules_2datalink_2superbitrf_8h.html#aeed362a213e6d596509c158916ccb865":[12,0,1,0,0,2,1,2,1,0,15],
 "modules_2datalink_2superbitrf_8h.html#af8aa7f7c28b40a25c912b5a020525957":[12,0,1,0,6,15,28,0,16],
 "modules_2datalink_2superbitrf_8h.html#af8aa7f7c28b40a25c912b5a020525957":[12,0,1,0,0,2,1,2,1,0,16],
@@ -11,8 +12,8 @@ var NAVTREEINDEX132 =
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3aac5f33584234a0d65990816c597ebb61":[12,0,1,0,6,15,28,12,1],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3ad6382b69b46b58635e82e72e364a83fd":[12,0,1,0,6,15,28,12,2],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3af949af650a3a03cc323054fe6f9baaad":[12,0,1,0,6,15,28,12,5],
-"modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,6,15,28,0],
 "modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,0,2,1,2,1,0],
+"modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,6,15,28,0],
 "modules_2datalink_2superbitrf_8h_source.html":[12,0,1,0,6,15,28],
 "modules_2ins_2ins__arduimu_8c.html":[12,0,1,0,6,37,12],
 "modules_2ins_2ins__arduimu_8c.html#a336d5d67196f2aee02defc9616be4cb0":[12,0,1,0,6,37,12,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "mpu60x0_8h.html#aba368c96bff9ef88bc1639a03ee2ffd4":[12,0,1,0,7,91,28],
 "mpu60x0_8h.html#abcf3497ae43053ca3254559e130bddb9":[12,0,1,0,7,91,6],
 "mpu60x0_8h.html#abe7cee016f124472673117c85168a7f5":[12,0,1,0,7,91,1,0],
-"mpu60x0_8h.html#ac82c22100c7f2e9d81ff6fe1d479c5ee":[12,0,1,0,7,91,7],
-"mpu60x0_8h.html#acd7f455580bc4961b94d15d8713f95a9":[12,0,1,0,7,91,1,1]
+"mpu60x0_8h.html#ac82c22100c7f2e9d81ff6fe1d479c5ee":[12,0,1,0,7,91,7]
 };

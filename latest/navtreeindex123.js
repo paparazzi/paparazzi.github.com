@@ -1,5 +1,6 @@
 var NAVTREEINDEX123 =
 {
+"module__airspeed_sdp3x.html#configuration__airspeed_sdp3x":[1,385,1],
 "module__airspeed_sdp3x.html#functions__airspeed_sdp3x":[1,385,2],
 "module__airspeed_sdp3x.html#module_load_example__airspeed_sdp3x":[1,385,0],
 "module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x":[1,385,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX123 =
 "module__current_sensor.html":[1,462],
 "module__current_sensor.html#configuration__current_sensor":[1,462,1],
 "module__current_sensor.html#module_load_example__current_sensor":[1,462,0],
-"module__current_sensor.html#module_xml__current_sensor":[1,462,1,0],
-"module__cv_blob_locator.html":[1,55]
+"module__current_sensor.html#module_xml__current_sensor":[1,462,1,0]
 };

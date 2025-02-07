@@ -1,5 +1,6 @@
 var NAVTREEINDEX97 =
 {
+"linear__kalman__filter_8c_source.html":[12,0,1,0,2,4],
 "linear__kalman__filter_8h.html":[12,0,1,0,2,5],
 "linear__kalman__filter_8h.html#a069964f22f204ca80ffb962b16c9107e":[12,0,1,0,2,5,3],
 "linear__kalman__filter_8h.html#a1384133cfa21fe1eb28972c68409bfaa":[12,0,1,0,2,5,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX97 =
 "lis302dl__spi_8h.html#a39cd6e88b50bffbc7762872b609a2c4e":[12,0,1,0,7,65,0,3],
 "lis302dl__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,65,1,1],
 "lis302dl__spi_8h.html#a43a8d1b6d32a471e262c44d52c4e121b":[12,0,1,0,7,65,0,8],
-"lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452":[12,0,1,0,7,65,3],
-"lis302dl__spi_8h.html#a50cbe1b11486662b10286d31c3ad494f":[12,0,1,0,7,65,0,7]
+"lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452":[12,0,1,0,7,65,3]
 };

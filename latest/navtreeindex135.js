@@ -1,5 +1,6 @@
 var NAVTREEINDEX135 =
 {
+"mpu9250__spi_8h.html#structMpu9250__Spi":[12,0,1,0,7,103,0],
 "mpu9250__spi_8h.html#unionMpu9250__Spi_8data__accel":[12,0,1,0,7,103,1],
 "mpu9250__spi_8h.html#unionMpu9250__Spi_8data__rates":[12,0,1,0,7,103,2],
 "mpu9250__spi_8h_source.html":[12,0,1,0,7,103],
@@ -248,6 +249,5 @@ var NAVTREEINDEX135 =
 "mt9f002_8c.html#structblanking__t":[12,0,1,0,1,2,4,0],
 "mt9f002_8c_source.html":[12,0,1,0,1,2,4],
 "mt9f002_8h.html":[12,0,1,0,1,2,5],
-"mt9f002_8h.html#a02a51e0adfa4409918c2bb35a2591e7b":[12,0,1,0,1,2,5,11],
-"mt9f002_8h.html#a0494d381eb2ab94b828ed9276ab87f41":[12,0,1,0,1,2,5,0,14]
+"mt9f002_8h.html#a02a51e0adfa4409918c2bb35a2591e7b":[12,0,1,0,1,2,5,11]
 };

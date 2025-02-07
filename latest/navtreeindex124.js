@@ -1,5 +1,6 @@
 var NAVTREEINDEX124 =
 {
+"module__cv_blob_locator.html":[1,55],
 "module__cv_blob_locator.html#configuration__cv_blob_locator":[1,55,1],
 "module__cv_blob_locator.html#functions__cv_blob_locator":[1,55,2],
 "module__cv_blob_locator.html#module_load_example__cv_blob_locator":[1,55,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX124 =
 "module__fdm_rover.html#module_xml__fdm_rover":[1,149,0,0],
 "module__filter_1euro_imu.html":[1,184],
 "module__filter_1euro_imu.html#configuration__filter_1euro_imu":[1,184,1],
-"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,184,2],
-"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,184,0]
+"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,184,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX126 =
 {
+"module__hott_telemetry.html":[1,481],
 "module__hott_telemetry.html#configuration__hott_telemetry":[1,481,1],
 "module__hott_telemetry.html#functions__hott_telemetry":[1,481,2],
 "module__hott_telemetry.html#module_load_example__hott_telemetry":[1,481,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX126 =
 "module__ins_ekf2.html#datalink_functions__ins_ekf2":[1,231,3],
 "module__ins_ekf2.html#functions__ins_ekf2":[1,231,2],
 "module__ins_ekf2.html#module_load_example__ins_ekf2":[1,231,0],
-"module__ins_ekf2.html#module_xml__ins_ekf2":[1,231,3,0],
-"module__ins_ext_pose.html":[1,232]
+"module__ins_ekf2.html#module_xml__ins_ekf2":[1,231,3,0]
 };

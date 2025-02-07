@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__stabilization_heli_indi.html":[1,433],
 "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,433,1],
 "module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,433,2],
 "module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi":[1,433,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX130 =
 "module__traffic_info.html#functions__traffic_info":[1,316,1],
 "module__traffic_info.html#module_load_example__traffic_info":[1,316,0],
 "module__traffic_info.html#module_xml__traffic_info":[1,316,2,0],
-"module__trig_test.html":[1,86],
-"module__trig_test.html#functions__trig_test":[1,86,1]
+"module__trig_test.html":[1,86]
 };
