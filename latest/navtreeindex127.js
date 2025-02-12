@@ -1,5 +1,6 @@
 var NAVTREEINDEX127 =
 {
+"module__ins_ekf2.html#module_xml__ins_ekf2":[1,231,3,0],
 "module__ins_ext_pose.html":[1,232],
 "module__ins_ext_pose.html#datalink_functions__ins_ext_pose":[1,232,2],
 "module__ins_ext_pose.html#functions__ins_ext_pose":[1,232,1],
@@ -201,7 +202,6 @@ var NAVTREEINDEX127 =
 "module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,406,2,0],
 "module__mag_hmc58xx.html":[1,407],
 "module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,407,1],
-"module__mag_hmc58xx.html#define":[1,407,1,0],
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,407,2],
 "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,407,0],
 "module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,407,2,0],

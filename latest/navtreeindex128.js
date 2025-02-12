@@ -64,7 +64,6 @@ var NAVTREEINDEX128 =
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,321,0],
 "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,321,1,0],
 "module__nav_catapult.html":[1,322],
-"module__nav_catapult.html#af_section":[1,322,1,0],
 "module__nav_catapult.html#configuration__nav_catapult":[1,322,1],
 "module__nav_catapult.html#functions__nav_catapult":[1,322,2],
 "module__nav_catapult.html#module_load_example__nav_catapult":[1,322,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX128 =
 "module__osd_max7456.html#configuration__osd_max7456":[1,489,1],
 "module__osd_max7456.html#functions__osd_max7456":[1,489,2],
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,489,0],
-"module__osd_max7456.html#module_xml__osd_max7456":[1,489,2,0]
+"module__osd_max7456.html#module_xml__osd_max7456":[1,489,2,0],
+"module__pano_unwrap.html":[1,490]
 };
