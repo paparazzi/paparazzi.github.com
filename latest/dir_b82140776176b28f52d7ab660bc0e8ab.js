@@ -2,6 +2,8 @@ var dir_b82140776176b28f52d7ab660bc0e8ab =
 [
     [ "adc_arch.c", "chibios_2mcu__periph_2adc__arch_8c.html", "chibios_2mcu__periph_2adc__arch_8c" ],
     [ "adc_arch.h", "chibios_2mcu__periph_2adc__arch_8h.html", "chibios_2mcu__periph_2adc__arch_8h" ],
+    [ "can_arch.c", "chibios_2mcu__periph_2can__arch_8c.html", "chibios_2mcu__periph_2can__arch_8c" ],
+    [ "can_arch.h", "chibios_2mcu__periph_2can__arch_8h.html", "chibios_2mcu__periph_2can__arch_8h" ],
     [ "gpio_arch.c", "chibios_2mcu__periph_2gpio__arch_8c.html", "chibios_2mcu__periph_2gpio__arch_8c" ],
     [ "gpio_arch.h", "chibios_2mcu__periph_2gpio__arch_8h.html", "chibios_2mcu__periph_2gpio__arch_8h" ],
     [ "gpio_def.h", "gpio__def_8h.html", "gpio__def_8h" ],
