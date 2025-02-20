@@ -129,7 +129,7 @@ var searchData=
   ['actuatorsdiscoset_126',['ActuatorsDiscoSet',['../boards_2disco_2actuators_8h.html#ae6153795b5ac8e840dfe148c38779be5',1,'actuators.h']]],
   ['actuatorsdshotcommit_127',['ActuatorsDShotCommit',['../actuators__dshot_8h.html#a43a3d15161ce96f77d0d31fba51fa4be',1,'actuators_dshot.h']]],
   ['actuatorsdshotinit_128',['ActuatorsDShotInit',['../actuators__dshot_8h.html#ace177a3edccab6f82e18c73422af27dd',1,'actuators_dshot.h']]],
-  ['actuatorsdualpwmcommit_129',['actuatorsdualpwmcommit',['../stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a6d99f52ad5ec93b7cd153e6503429c34',1,'ActuatorsDualpwmCommit:&#160;actuators_dualpwm_arch.h'],['../sim_2modules_2actuators_2actuators__dualpwm__arch_8h.html#aaa5eaaac2133ba043ff00d2924da989a',1,'ActuatorsDualPwmCommit:&#160;actuators_dualpwm_arch.h']]],
+  ['actuatorsdualpwmcommit_129',['actuatorsdualpwmcommit',['../sim_2modules_2actuators_2actuators__dualpwm__arch_8h.html#aaa5eaaac2133ba043ff00d2924da989a',1,'ActuatorsDualPwmCommit:&#160;actuators_dualpwm_arch.h'],['../stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a6d99f52ad5ec93b7cd153e6503429c34',1,'ActuatorsDualpwmCommit:&#160;actuators_dualpwm_arch.h']]],
   ['actuatorsdualpwminit_130',['ActuatorsDualpwmInit',['../actuators__dualpwm_8h.html#a6cc253a04ec555aa60fa1029a9e4f894',1,'actuators_dualpwm.h']]],
   ['actuatorsdummycommit_131',['ActuatorsDummyCommit',['../actuators__dummy_8h.html#a9b27fcf42a7d914b2498210d07ec0876',1,'actuators_dummy.h']]],
   ['actuatorsdummyinit_132',['ActuatorsDummyInit',['../actuators__dummy_8h.html#a64bd62b2e42a2daee2c17a2df2a94803',1,'actuators_dummy.h']]],

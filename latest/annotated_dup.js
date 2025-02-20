@@ -963,6 +963,7 @@ var annotated_dup =
     [ "SingleRanger", "cf__deck__multi__ranger_8c.html#structSingleRanger", "cf__deck__multi__ranger_8c_structSingleRanger" ],
     [ "sirf_msg_2", "gps__sirf_8c.html#structsirf__msg__2", "gps__sirf_8c_structsirf__msg__2" ],
     [ "sirf_msg_41", "gps__sirf_8c.html#structsirf__msg__41", "gps__sirf_8c_structsirf__msg__41" ],
+    [ "slcan_t", "slcan_8h.html#structslcan__t", "slcan_8h_structslcan__t" ],
     [ "slot_", "formation_8h.html#structslot__", "formation_8h_structslot__" ],
     [ "smartPortPayload_s", "cc2500__smartport_8h.html#structsmartPortPayload__s", "cc2500__smartport_8h_structsmartPortPayload__s" ],
     [ "softi2c_device", "softi2c_8c.html#structsofti2c__device", "softi2c_8c_structsofti2c__device" ],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX162 =
 {
+"paparazzi_messages.html#IMU_ACCEL_SCALED":[2,0,127],
+"paparazzi_messages.html#IMU_GYRO":[2,0,191],
+"paparazzi_messages.html#IMU_GYRO_LP":[2,0,200],
+"paparazzi_messages.html#IMU_GYRO_RAW":[2,0,194],
+"paparazzi_messages.html#IMU_GYRO_SCALED":[2,0,126],
 "paparazzi_messages.html#IMU_HEATER":[2,0,130],
 "paparazzi_messages.html#IMU_MAG":[2,0,192],
 "paparazzi_messages.html#IMU_MAG_CURRENT_CALIBRATION":[2,0,198],
@@ -244,10 +249,5 @@ var NAVTREEINDEX162 =
 "pca95xx_8h.html#a4894b1bc38d5d006fa97c0067f8617a7":[12,0,1,0,7,114,16],
 "pca95xx_8h.html#a49c119d9eafc9f27df9d87cc2f5ed306":[12,0,1,0,7,114,0,1],
 "pca95xx_8h.html#a4cde7ded01a5d66fa2729120ff2e5eb7":[12,0,1,0,7,114,9],
-"pca95xx_8h.html#a53ffdd7f598bd0946edbe774abeb8619":[12,0,1,0,7,114,10],
-"pca95xx_8h.html#a747524660e10c418e3ce66d66b3cfe5a":[12,0,1,0,7,114,6],
-"pca95xx_8h.html#a7e47054d2f356af631de6f6ed3c43c0a":[12,0,1,0,7,114,1],
-"pca95xx_8h.html#a8f89dcc6fa681646121eb7a272a7911a":[12,0,1,0,7,114,5],
-"pca95xx_8h.html#a92c847911574049131e5440b4af6a0a4":[12,0,1,0,7,114,11],
-"pca95xx_8h.html#ad0017b15c6ab6542f4e5f370b4cb0840":[12,0,1,0,7,114,2]
+"pca95xx_8h.html#a53ffdd7f598bd0946edbe774abeb8619":[12,0,1,0,7,114,10]
 };

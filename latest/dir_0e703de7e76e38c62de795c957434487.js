@@ -14,6 +14,8 @@ var dir_0e703de7e76e38c62de795c957434487 =
     [ "settings.h", "settings_8h.html", "settings_8h" ],
     [ "shell.c", "shell_8c.html", "shell_8c" ],
     [ "shell.h", "shell_8h.html", "shell_8h" ],
+    [ "slcan.c", "slcan_8c.html", "slcan_8c" ],
+    [ "slcan.h", "slcan_8h.html", "slcan_8h" ],
     [ "sys_mon.c", "sys__mon_8c.html", "sys__mon_8c" ],
     [ "sys_mon.h", "sys__mon_8h.html", "sys__mon_8h" ],
     [ "sys_mon_bare_metal.h", "sys__mon__bare__metal_8h.html", "sys__mon__bare__metal_8h" ],

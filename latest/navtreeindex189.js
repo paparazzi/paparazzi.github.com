@@ -1,5 +1,10 @@
 var NAVTREEINDEX189 =
 {
+"serial__port_8c.html#a2c010011ea7396568f40b0137dcbf646":[12,0,1,0,0,1,6,14],
+"serial__port_8c.html#a2e783f6c72b411322e6a7472602de1a5":[12,0,1,0,0,1,6,8],
+"serial__port_8c.html#a436c287d25989f374ec728048a371b93":[12,0,1,0,0,1,6,11],
+"serial__port_8c.html#a5bffc785e3d573a3d06ea17334623162":[12,0,1,0,0,1,6,20],
+"serial__port_8c.html#a60397fb1a881cadaa5e210dd5d347989":[12,0,1,0,0,1,6,1],
 "serial__port_8c.html#a69092c80559cd279bfd046d53b25fefd":[12,0,1,0,0,1,6,17],
 "serial__port_8c.html#a7c12181b2e8dc912219651ff42d22e42":[12,0,1,0,0,1,6,3],
 "serial__port_8c.html#a82fce4c6435c1524dd934d40c26330bf":[12,0,1,0,0,1,6,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX189 =
 "sim_2mcu__periph_2pipe__arch_8c.html#a97df12ed97f79a6c2cd55f8426795960":[12,0,1,0,0,2,0,6,0],
 "sim_2mcu__periph_2pipe__arch_8c.html#a9a552cafb117e80a56acc9e51e4f1def":[12,0,1,0,0,2,0,6,2],
 "sim_2mcu__periph_2pipe__arch_8c.html#ab8244d4f8bcb12d4c91ef4e95026f8c4":[12,0,1,0,0,2,0,6,9],
-"sim_2mcu__periph_2pipe__arch_8c.html#ad32c37b53788cd4215e6bdec33d4c631":[12,0,1,0,0,2,0,6,6],
-"sim_2mcu__periph_2pipe__arch_8c.html#afc5425012d7ba6c60c52fe2817a7edc2":[12,0,1,0,0,2,0,6,7],
-"sim_2mcu__periph_2pipe__arch_8c_source.html":[12,0,1,0,0,2,0,6],
-"sim_2mcu__periph_2pipe__arch_8h.html":[12,0,1,0,0,2,0,7],
-"sim_2mcu__periph_2pipe__arch_8h.html#a1bd4f7d2f38f1431556af6d199de4511":[12,0,1,0,0,2,0,7,1],
-"sim_2mcu__periph_2pipe__arch_8h.html#a921cef724df3f5d0f6f43d102a584544":[12,0,1,0,0,2,0,7,0]
+"sim_2mcu__periph_2pipe__arch_8c.html#ad32c37b53788cd4215e6bdec33d4c631":[12,0,1,0,0,2,0,6,6]
 };

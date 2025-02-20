@@ -1,5 +1,10 @@
 var NAVTREEINDEX161 =
 {
+"orange__avoider__guided_8c.html#ae8b3ef53a7a869aec22a2a48a90e69cb":[12,0,1,0,6,50,2,7],
+"orange__avoider__guided_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,50,2,1],
+"orange__avoider__guided_8c.html#af115de1f0ff11c264ed97e821b2b468e":[12,0,1,0,6,50,2,0],
+"orange__avoider__guided_8c_source.html":[12,0,1,0,6,50,2],
+"orange__avoider__guided_8h.html":[12,0,1,0,6,50,3],
 "orange__avoider__guided_8h.html#a3f1ea4da9ed0b0b23370129310934e54":[12,0,1,0,6,50,3,1],
 "orange__avoider__guided_8h.html#a4206dd42ad31f7e1b466f36fabb64281":[12,0,1,0,6,50,3,3],
 "orange__avoider__guided_8h.html#a8cbd9fcf2b0e56db6f99887026aa8f3d":[12,0,1,0,6,50,3,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX161 =
 "paparazzi_messages.html#IMCU_SPEKTRUM_SOFT_BIND":[2,4,2],
 "paparazzi_messages.html#IMCU_TELEMETRY":[2,4,14],
 "paparazzi_messages.html#IMU_ACCEL":[2,0,193],
-"paparazzi_messages.html#IMU_ACCEL_RAW":[2,0,195],
-"paparazzi_messages.html#IMU_ACCEL_SCALED":[2,0,127],
-"paparazzi_messages.html#IMU_GYRO":[2,0,191],
-"paparazzi_messages.html#IMU_GYRO_LP":[2,0,200],
-"paparazzi_messages.html#IMU_GYRO_RAW":[2,0,194],
-"paparazzi_messages.html#IMU_GYRO_SCALED":[2,0,126]
+"paparazzi_messages.html#IMU_ACCEL_RAW":[2,0,195]
 };
