@@ -1,7 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"module__electrical.html#module_load_example__electrical":[1,144,0],
-"module__electrical.html#module_xml__electrical":[1,144,1,0],
 "module__esc32.html":[1,471],
 "module__esc32.html#configuration__esc32":[1,471,1],
 "module__esc32.html#functions__esc32":[1,471,2],
@@ -82,7 +80,8 @@ var NAVTREEINDEX125 =
 "module__gain_scheduling.html":[1,99],
 "module__gain_scheduling.html#functions__gain_scheduling":[1,99,1],
 "module__gain_scheduling.html#module_load_example__gain_scheduling":[1,99,0],
-"module__gain_scheduling.html#module_xml__gain_scheduling":[1,99,1,0],
+"module__gain_scheduling.html#module_xml__gain_scheduling":[1,99,1,1],
+"module__gain_scheduling.html#periodic_functions":[1,99,1,0],
 "module__gas_engine_idle.html":[1,473],
 "module__gas_engine_idle.html#functions__gas_engine_idle":[1,473,1],
 "module__gas_engine_idle.html#module_load_example__gas_engine_idle":[1,473,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX125 =
 "module__guidance_pid_rotorcraft.html#module_xml__guidance_pid_rotorcraft":[1,178,2,0],
 "module__guidance_rotorcraft.html":[1,179],
 "module__guidance_rotorcraft.html#functions__guidance_rotorcraft":[1,179,1],
-"module__guidance_rotorcraft.html#module_load_example__guidance_rotorcraft":[1,179,0]
+"module__guidance_rotorcraft.html#module_load_example__guidance_rotorcraft":[1,179,0],
+"module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft":[1,179,1,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX128 =
 {
+"module__mag_hmc59xx.html#module_load_example__mag_hmc59xx":[1,410,0],
 "module__mag_hmc59xx.html#module_xml__mag_hmc59xx":[1,410,0,0],
 "module__mag_ist8310.html":[1,411],
 "module__mag_ist8310.html#configuration__mag_ist8310":[1,411,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX128 =
 "module__opa_controller.html":[1,43],
 "module__opa_controller.html#functions__opa_controller":[1,43,1],
 "module__opa_controller.html#module_load_example__opa_controller":[1,43,0],
-"module__opa_controller.html#module_xml__opa_controller":[1,43,1,0],
-"module__openlog.html":[1,268]
+"module__opa_controller.html#module_xml__opa_controller":[1,43,1,0]
 };

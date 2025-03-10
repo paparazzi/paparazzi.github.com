@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__slcan.html#module_xml__slcan":[1,82,2,0],
 "module__sonar_adc.html":[1,427],
 "module__sonar_adc.html#configuration__sonar_adc":[1,427,1],
 "module__sonar_adc.html#functions__sonar_adc":[1,427,2],
@@ -33,7 +34,6 @@ var NAVTREEINDEX130 =
 "module__stabilization_adaptive_fw.html#module_load_example__stabilization_adaptive_fw":[1,431,0],
 "module__stabilization_adaptive_fw.html#module_xml__stabilization_adaptive_fw":[1,431,2,0],
 "module__stabilization_attitude_fw.html":[1,432],
-"module__stabilization_attitude_fw.html#af_section":[1,432,1,0],
 "module__stabilization_attitude_fw.html#configuration__stabilization_attitude_fw":[1,432,1],
 "module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw":[1,432,2],
 "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,432,0],

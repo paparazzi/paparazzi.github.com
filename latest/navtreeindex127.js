@@ -51,8 +51,9 @@ var NAVTREEINDEX127 =
 "module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,233,2,0],
 "module__ins_extended.html":[1,234],
 "module__ins_extended.html#configuration__ins_extended":[1,234,1],
+"module__ins_extended.html#define":[1,234,1,0],
 "module__ins_extended.html#module_load_example__ins_extended":[1,234,0],
-"module__ins_extended.html#module_xml__ins_extended":[1,234,1,0],
+"module__ins_extended.html#module_xml__ins_extended":[1,234,1,1],
 "module__ins_float_invariant.html":[1,235],
 "module__ins_float_invariant.html#configuration__ins_float_invariant":[1,235,1],
 "module__ins_float_invariant.html#functions__ins_float_invariant":[1,235,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX127 =
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,409,2],
 "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,409,0],
 "module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,409,2,0],
-"module__mag_hmc59xx.html":[1,410],
-"module__mag_hmc59xx.html#module_load_example__mag_hmc59xx":[1,410,0]
+"module__mag_hmc59xx.html":[1,410]
 };

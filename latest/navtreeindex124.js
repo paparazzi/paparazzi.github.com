@@ -1,12 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"module__cloud_sim.html#module_xml__cloud_sim":[1,283,1,0],
-"module__collective_tracking_control.html":[1,462],
-"module__collective_tracking_control.html#configuration__collective_tracking_control":[1,462,1],
-"module__collective_tracking_control.html#datalink_functions__collective_tracking_control":[1,462,3],
-"module__collective_tracking_control.html#functions__collective_tracking_control":[1,462,2],
-"module__collective_tracking_control.html#module_load_example__collective_tracking_control":[1,462,0],
-"module__collective_tracking_control.html#module_xml__collective_tracking_control":[1,462,3,0],
 "module__collective_tracking_control_target.html":[1,463],
 "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target":[1,463,1],
 "module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target":[1,463,3],
@@ -143,10 +136,15 @@ var NAVTREEINDEX124 =
 "module__digital_cam.html#module_load_example__digital_cam":[1,131,0],
 "module__digital_cam.html#module_xml__digital_cam":[1,131,0,0],
 "module__digital_cam_common.html":[1,132],
+"module__digital_cam_common.html#af_section":[1,132,1,0],
 "module__digital_cam_common.html#configuration__digital_cam_common":[1,132,1],
+"module__digital_cam_common.html#files":[1,132,3],
 "module__digital_cam_common.html#functions__digital_cam_common":[1,132,2],
+"module__digital_cam_common.html#headers":[1,132,3,0],
+"module__digital_cam_common.html#init_functions":[1,132,2,0],
 "module__digital_cam_common.html#module_load_example__digital_cam_common":[1,132,0],
-"module__digital_cam_common.html#module_xml__digital_cam_common":[1,132,2,0],
+"module__digital_cam_common.html#module_xml__digital_cam_common":[1,132,3,2],
+"module__digital_cam_common.html#sources":[1,132,3,1],
 "module__digital_cam_gpio.html":[1,133],
 "module__digital_cam_gpio.html#configuration__digital_cam_gpio":[1,133,1],
 "module__digital_cam_gpio.html#functions__digital_cam_gpio":[1,133,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX124 =
 "module__ekf_aw.html#module_load_example__ekf_aw":[1,285,0],
 "module__ekf_aw.html#module_xml__ekf_aw":[1,285,2,0],
 "module__electrical.html":[1,144],
-"module__electrical.html#functions__electrical":[1,144,1]
+"module__electrical.html#functions__electrical":[1,144,1],
+"module__electrical.html#module_load_example__electrical":[1,144,0],
+"module__electrical.html#module_xml__electrical":[1,144,1,0]
 };

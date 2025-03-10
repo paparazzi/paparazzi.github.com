@@ -125,8 +125,9 @@ var NAVTREEINDEX122 =
 "module__actuators_asctec_v2.html#module_xml__actuators_asctec_v2":[1,3,1,0],
 "module__actuators_bebop.html":[1,4],
 "module__actuators_bebop.html#configuration__actuators_bebop":[1,4,1],
+"module__actuators_bebop.html#configure":[1,4,1,0],
 "module__actuators_bebop.html#module_load_example__actuators_bebop":[1,4,0],
-"module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,1,0],
+"module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,1,1],
 "module__actuators_disco.html":[1,5],
 "module__actuators_disco.html#module_load_example__actuators_disco":[1,5,0],
 "module__actuators_disco.html#module_xml__actuators_disco":[1,5,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX122 =
 "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav":[1,34,0],
 "module__ahrs_vectornav.html#module_xml__ahrs_vectornav":[1,34,2,0],
 "module__air_data.html":[1,456],
-"module__air_data.html#configuration__air_data":[1,456,1],
-"module__air_data.html#datalink_functions__air_data":[1,456,3]
+"module__air_data.html#configuration__air_data":[1,456,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"module__openlog.html":[1,268],
 "module__openlog.html#functions__openlog":[1,268,1],
 "module__openlog.html#module_load_example__openlog":[1,268,0],
 "module__openlog.html#module_xml__openlog":[1,268,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "module__slcan.html":[1,82],
 "module__slcan.html#configuration__slcan":[1,82,1],
 "module__slcan.html#functions__slcan":[1,82,2],
-"module__slcan.html#module_load_example__slcan":[1,82,0],
-"module__slcan.html#module_xml__slcan":[1,82,2,0]
+"module__slcan.html#module_load_example__slcan":[1,82,0]
 };

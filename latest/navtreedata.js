@@ -93,6 +93,7 @@ var NAVTREE =
       [ "actuators_bebop module", "module__actuators_bebop.html", [
         [ "Example for airframe file", "module__actuators_bebop.html#module_load_example__actuators_bebop", null ],
         [ "Module configuration options", "module__actuators_bebop.html#configuration__actuators_bebop", [
+          [ "Configure Options", "module__actuators_bebop.html#configure", null ],
           [ "Raw actuators_bebop.xml file:", "module__actuators_bebop.html#module_xml__actuators_bebop", null ]
         ] ]
       ] ],
@@ -697,6 +698,7 @@ var NAVTREE =
       [ "gain_scheduling module", "module__gain_scheduling.html", [
         [ "Example for airframe file", "module__gain_scheduling.html#module_load_example__gain_scheduling", null ],
         [ "Module functions", "module__gain_scheduling.html#functions__gain_scheduling", [
+          [ "Periodic Functions", "module__gain_scheduling.html#periodic_functions", null ],
           [ "Raw gain_scheduling.xml file:", "module__gain_scheduling.html#module_xml__gain_scheduling", null ]
         ] ]
       ] ],
@@ -912,8 +914,15 @@ var NAVTREE =
       ] ],
       [ "digital_cam_common module", "module__digital_cam_common.html", [
         [ "Example for airframe file", "module__digital_cam_common.html#module_load_example__digital_cam_common", null ],
-        [ "Module configuration options", "module__digital_cam_common.html#configuration__digital_cam_common", null ],
+        [ "Module configuration options", "module__digital_cam_common.html#configuration__digital_cam_common", [
+          [ "Airframe file section", "module__digital_cam_common.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__digital_cam_common.html#functions__digital_cam_common", [
+          [ "Init Functions", "module__digital_cam_common.html#init_functions", null ]
+        ] ],
+        [ "Files", "module__digital_cam_common.html#files", [
+          [ "Header Files", "module__digital_cam_common.html#headers", null ],
+          [ "Source Files", "module__digital_cam_common.html#sources", null ],
           [ "Raw digital_cam_common.xml file:", "module__digital_cam_common.html#module_xml__digital_cam_common", null ]
         ] ]
       ] ],
@@ -1292,20 +1301,20 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
-      ] ],
-      [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
         ] ]
       ] ],
+      [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -1441,6 +1450,7 @@ var NAVTREE =
         [ "Example for airframe file", "module__imu_mpu9250_spi.html#module_load_example__imu_mpu9250_spi", null ],
         [ "Module configuration options", "module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi", null ],
         [ "Module functions", "module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi", [
+          [ "Event Functions", "module__imu_mpu9250_spi.html#event_functions", null ],
           [ "Raw imu_mpu9250_spi.xml file:", "module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi", null ]
         ] ]
       ] ],
@@ -1559,6 +1569,7 @@ var NAVTREE =
       [ "ins_extended module", "module__ins_extended.html", [
         [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
         [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
+          [ "Define Options", "module__ins_extended.html#define", null ],
           [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
         ] ]
       ] ],
@@ -2445,17 +2456,8 @@ var NAVTREE =
       ] ],
       [ "cf_deck_multi_ranger module", "module__cf_deck_multi_ranger.html", [
         [ "Example for airframe file", "module__cf_deck_multi_ranger.html#module_load_example__cf_deck_multi_ranger", null ],
-        [ "Module configuration options", "module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger", [
-          [ "Configure Options", "module__cf_deck_multi_ranger.html#configure", null ]
-        ] ],
+        [ "Module configuration options", "module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger", null ],
         [ "Module functions", "module__cf_deck_multi_ranger.html#functions__cf_deck_multi_ranger", [
-          [ "Init Functions", "module__cf_deck_multi_ranger.html#init_functions", null ],
-          [ "Event Functions", "module__cf_deck_multi_ranger.html#event_functions", null ],
-          [ "Periodic Functions", "module__cf_deck_multi_ranger.html#periodic_functions", null ]
-        ] ],
-        [ "Files", "module__cf_deck_multi_ranger.html#files", [
-          [ "Header Files", "module__cf_deck_multi_ranger.html#headers", null ],
-          [ "Source Files", "module__cf_deck_multi_ranger.html#sources", null ],
           [ "Raw cf_deck_multi_ranger.xml file:", "module__cf_deck_multi_ranger.html#module_xml__cf_deck_multi_ranger", null ]
         ] ]
       ] ],
@@ -2509,9 +2511,7 @@ var NAVTREE =
       ] ],
       [ "airspeed_adc module", "module__airspeed_adc.html", [
         [ "Example for airframe file", "module__airspeed_adc.html#module_load_example__airspeed_adc", null ],
-        [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", [
-          [ "Define Options", "module__airspeed_adc.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", null ],
         [ "Module functions", "module__airspeed_adc.html#functions__airspeed_adc", [
           [ "Raw airspeed_adc.xml file:", "module__airspeed_adc.html#module_xml__airspeed_adc", null ]
         ] ]
@@ -2856,9 +2856,7 @@ var NAVTREE =
       ] ],
       [ "stabilization_attitude_fw module", "module__stabilization_attitude_fw.html", [
         [ "Example for airframe file", "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw", null ],
-        [ "Module configuration options", "module__stabilization_attitude_fw.html#configuration__stabilization_attitude_fw", [
-          [ "Airframe file section", "module__stabilization_attitude_fw.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__stabilization_attitude_fw.html#configuration__stabilization_attitude_fw", null ],
         [ "Module functions", "module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw", [
           [ "Raw stabilization_attitude_fw.xml file:", "module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw", null ]
         ] ]
@@ -3923,14 +3921,14 @@ var NAVTREEINDEX =
 "mcuconf__h7_8h.html#a9a4cb321d74c57b544a1628faaae1569",
 "meteo__stick_8c.html#a4e7f4148f67d50997efb2349984e3a61",
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adf596eb62434f0e84ed2404d474dbe70",
-"module__air_data.html#functions__air_data",
-"module__cloud_sim.html#module_xml__cloud_sim",
-"module__electrical.html#module_load_example__electrical",
-"module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft",
+"module__air_data.html#datalink_functions__air_data",
+"module__collective_tracking_control_target.html",
+"module__esc32.html",
+"module__guidance_rover.html",
 "module__imu_quality_assessment.html#functions__imu_quality_assessment",
-"module__mag_hmc59xx.html#module_xml__mag_hmc59xx",
-"module__openlog.html#functions__openlog",
-"module__sonar_adc.html",
+"module__mag_hmc59xx.html#module_load_example__mag_hmc59xx",
+"module__openlog.html",
+"module__slcan.html#module_xml__slcan",
 "module__temp_adc.html#functions__temp_adc",
 "modules_2datalink_2superbitrf_8h.html#a71362563ffb67c1942ab5f4e5530ae4e",
 "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a5479a2affadc00aa909d2e3930b5e4f1",
