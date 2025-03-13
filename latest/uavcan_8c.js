@@ -2,6 +2,7 @@ var uavcan_8c =
 [
     [ "UAVCAN_BAUDRATE", "uavcan_8c.html#a661e7714fe980c267541c8c63a4ae0c4", null ],
     [ "UAVCAN_NODE_ID", "uavcan_8c.html#acee378e8bbac045295a43107e02dff2e", null ],
+    [ "can_init", "uavcan_8c.html#ac7781a37ca14c5bf42c4fe9de1f4daa8", null ],
     [ "onTransferReceived", "uavcan_8c.html#ae5399417963e16078d01d41ed695522a", null ],
     [ "shouldAcceptTransfer", "uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65", null ],
     [ "THD_FUNCTION", "uavcan_8c.html#a1e65a8f21c7c6589d7cafec2b46d6967", null ],

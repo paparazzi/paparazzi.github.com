@@ -1,29 +1,36 @@
 <map id="actuators_uavcan_init" name="actuators_uavcan_init">
-<area shape="rect" id="Node000001" title="Initialize an uavcan interface." alt="" coords="5,198,171,223"/>
-<area shape="rect" id="Node000002" href="$actuators__uavcan_8c.html#a9a38000601eb4ba446804fbf9082c784" title="Whevener an ACTUATOR_STATUS message from the EQUIPMENT group is received." alt="" coords="221,5,420,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,196,140,130,176,90,217,55,227,49,230,54,220,60,179,93,144,133,99,199"/>
-<area shape="rect" id="Node000004" href="$actuators__uavcan_8c.html#a1de002af99f582a86ec39b4660021d33" title="Whevener an DEVICE_TEMPERATURE message from the EQUIPMENT group is received." alt="" coords="227,69,414,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="103,196,152,158,217,119,233,112,235,117,220,124,155,163,106,200"/>
-<area shape="rect" id="Node000005" href="$actuators__uavcan_8c.html#a79343cdcbcc91d03b96dfc795647defa" title="Whevener an ESC_STATUS message from the EQUIPMENT group is received." alt="" coords="237,133,404,173"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="140,195,225,174,226,179,141,201"/>
-<area shape="rect" id="Node000007" href="$actuators__uavcan_8c.html#a15a349fbc68fcd9525ddf5b0188a8689" title=" " alt="" coords="219,198,423,223"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="171,208,205,208,205,213,171,213"/>
-<area shape="rect" id="Node000010" href="$pprz__random_8c.html#a694be11ffe08b609fe1b268a9e469aa2" title=" " alt="" coords="271,247,371,273"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="149,221,257,244,256,249,148,226"/>
-<area shape="rect" id="Node000012" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="219,297,422,322"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="109,221,158,252,220,283,241,290,239,295,218,288,155,257,106,226"/>
-<area shape="rect" id="Node000013" href="$uavcan_8c.html#ae5140a66e4d2d1166229eac0ebb40869" title="Bind to a receiving message from uavcan." alt="" coords="269,346,373,371"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="101,222,148,276,182,307,220,332,256,346,254,351,217,337,179,311,144,280,97,225"/>
-<area shape="rect" id="Node000003" href="$wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="521,77,594,102"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,43,508,73,506,78,395,48"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="414,87,507,87,507,92,414,92"/>
-<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="395,131,506,100,508,105,396,136"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="485,141,630,166"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="404,151,470,151,470,156,404,156"/>
-<area shape="rect" id="Node000008" href="$actuators__uavcan_8c.html#a2f1b725be20ba2d7f7997d6e1aa6c90d" title=" " alt="" coords="471,191,644,231"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="423,208,457,208,457,213,423,213"/>
-<area shape="rect" id="Node000009" href="$pprz__random_8c.html#ac6450383e0b401411ff36c479aa7f608" title=" " alt="" coords="692,198,801,223"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="644,208,678,208,678,213,644,213"/>
-<area shape="rect" id="Node000011" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="482,255,633,281"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="371,259,468,262,468,268,371,264"/>
+<area shape="rect" id="Node000001" title="Initialize an uavcan interface." alt="" coords="5,225,171,251"/>
+<area shape="rect" id="Node000002" href="$actuators__uavcan_8c.html#a9a38000601eb4ba446804fbf9082c784" title="Whevener an ACTUATOR_STATUS message from the EQUIPMENT group is received." alt="" coords="221,97,420,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,223,152,186,217,146,233,139,235,144,220,151,155,190,106,227"/>
+<area shape="rect" id="Node000006" href="$actuators__uavcan_8c.html#a1de002af99f582a86ec39b4660021d33" title="Whevener an DEVICE_TEMPERATURE message from the EQUIPMENT group is received." alt="" coords="227,161,414,201"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="140,223,225,201,226,207,141,228"/>
+<area shape="rect" id="Node000007" href="$actuators__uavcan_8c.html#a79343cdcbcc91d03b96dfc795647defa" title="Whevener an ESC_STATUS message from the EQUIPMENT group is received." alt="" coords="237,33,404,73"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="94,224,140,157,176,117,217,82,227,76,230,81,220,87,179,121,144,160,99,227"/>
+<area shape="rect" id="Node000009" href="$actuators__uavcan_8c.html#a15a349fbc68fcd9525ddf5b0188a8689" title=" " alt="" coords="219,225,423,251"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="171,235,205,235,205,241,171,241"/>
+<area shape="rect" id="Node000012" href="$pprz__random_8c.html#a694be11ffe08b609fe1b268a9e469aa2" title=" " alt="" coords="271,275,371,300"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="149,248,257,271,256,277,148,253"/>
+<area shape="rect" id="Node000014" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="219,324,422,349"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="109,249,158,279,220,310,241,318,239,323,218,315,155,284,106,253"/>
+<area shape="rect" id="Node000015" href="$uavcan_8c.html#ae5140a66e4d2d1166229eac0ebb40869" title="Bind to a receiving message from uavcan." alt="" coords="269,373,373,399"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="101,249,148,303,182,334,220,360,256,374,254,379,217,364,179,338,144,307,97,253"/>
+<area shape="rect" id="Node000003" href="$actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="492,55,623,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,94,482,80,483,85,418,99"/>
+<area shape="rect" id="Node000004" href="$actuators__uavcan_8c.html#abeed8e3b88f2504775a62a8db0f1272e" title=" " alt="" coords="483,104,632,129"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="420,114,469,114,469,119,420,119"/>
+<area shape="rect" id="Node000005" href="$wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="521,153,594,179"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="418,134,508,153,507,158,417,139"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="395,158,496,130,497,136,396,163"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="414,172,507,166,507,172,414,178"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="405,55,478,60,478,65,404,60"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="396,70,497,98,496,103,395,75"/>
+<area shape="poly" id="edge12_Node000007_Node000005" title=" " alt="" coords="402,70,424,82,440,97,449,111,457,125,472,138,508,154,506,159,469,143,453,129,444,114,436,100,421,87,399,75"/>
+<area shape="rect" id="Node000008" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="485,5,630,31"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="404,38,471,28,471,33,405,43"/>
+<area shape="rect" id="Node000010" href="$actuators__uavcan_8c.html#a2f1b725be20ba2d7f7997d6e1aa6c90d" title=" " alt="" coords="471,214,644,254"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="423,234,457,233,457,238,423,239"/>
+<area shape="rect" id="Node000011" href="$pprz__random_8c.html#ac6450383e0b401411ff36c479aa7f608" title=" " alt="" coords="692,221,801,247"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="644,231,678,231,678,237,644,237"/>
+<area shape="rect" id="Node000013" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="482,279,633,304"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="371,286,468,287,468,293,371,291"/>
 </map>

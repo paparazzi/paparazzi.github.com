@@ -122,6 +122,11 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="actuators__uavcan_8c.html">modules/actuators/actuators_uavcan.c</a></li>
 <li><a class="el" href="pprz__random_8c.html">math/pprz_random.c</a></li>
+<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.equipment.esc.Status.c</a></li>
+<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.equipment.esc.RawCommand.c</a></li>
+<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.equipment.actuator.Status.c</a></li>
+<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.equipment.actuator.ArrayCommand.c</a></li>
+<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.equipment.device.Temperature.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__actuators_uavcan"></a>
 Raw actuators_uavcan.xml file:</h2>
@@ -144,6 +149,14 @@ Raw actuators_uavcan.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_uavcan.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;pprz_random.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Load DSDL generated files--&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/include&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.esc.Status.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.esc.RawCommand.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.actuator.Status.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.actuator.ArrayCommand.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.device.Temperature.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -154,7 +167,7 @@ Raw actuators_uavcan.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Mar 10 2025 15:53:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 09:31:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
