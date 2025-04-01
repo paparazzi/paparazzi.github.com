@@ -5,7 +5,7 @@ var ahrs__float__cmpl__wrapper_8c =
     [ "AHRS_FC_MAG_ID", "ahrs__float__cmpl__wrapper_8c.html#a66db001ca25960e0e46c6e61a735bd98", null ],
     [ "accel_cb", "ahrs__float__cmpl__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
     [ "ahrs_fc_wrapper_init", "ahrs__float__cmpl__wrapper_8c.html#a6a8504eaa4fcd922a23c86a572f076cf", null ],
-    [ "ahrs_float_cmp_quat_wrapper_enable", "ahrs__float__cmpl__wrapper_8c.html#adf3d66a3d8acc194aa285e82b7d6635c", null ],
+    [ "ahrs_float_cmpl_wrapper_enable", "ahrs__float__cmpl__wrapper_8c.html#ac13f1612abd6da32e924aa5697c7f366", null ],
     [ "aligner_cb", "ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21", null ],
     [ "compute_body_orientation_and_rates", "ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d", null ],
     [ "geo_mag_cb", "ahrs__float__cmpl__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3", null ],
