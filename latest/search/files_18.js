@@ -2,8 +2,8 @@ var searchData=
 [
   ['w5100_2ec_0',['w5100.c',['../w5100_8c.html',1,'']]],
   ['w5100_2eh_1',['w5100.h',['../w5100_8h.html',1,'']]],
-  ['waypoints_2ec_2',['waypoints.c',['../datalink_2missionlib_2waypoints_8c.html',1,'(Global Namespace)'],['../nav_2waypoints_8c.html',1,'(Global Namespace)']]],
-  ['waypoints_2eh_3',['waypoints.h',['../datalink_2missionlib_2waypoints_8h.html',1,'(Global Namespace)'],['../nav_2waypoints_8h.html',1,'(Global Namespace)']]],
+  ['waypoints_2ec_2',['waypoints.c',['../nav_2waypoints_8c.html',1,'(Global Namespace)'],['../datalink_2missionlib_2waypoints_8c.html',1,'(Global Namespace)']]],
+  ['waypoints_2eh_3',['waypoints.h',['../nav_2waypoints_8h.html',1,'(Global Namespace)'],['../datalink_2missionlib_2waypoints_8h.html',1,'(Global Namespace)']]],
   ['wedgebug_2ec_4',['wedgebug.c',['../wedgebug_8c.html',1,'']]],
   ['wedgebug_2eh_5',['wedgebug.h',['../wedgebug_8h.html',1,'']]],
   ['wedgebug_5fopencv_2ecpp_6',['wedgebug_opencv.cpp',['../wedgebug__opencv_8cpp.html',1,'']]],

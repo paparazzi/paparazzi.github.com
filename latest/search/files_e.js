@@ -49,7 +49,7 @@ var searchData=
   ['max1167_5fhw_2eh_46',['max1167_hw.h',['../max1167__hw_8h.html',1,'']]],
   ['max1168_2ec_47',['max1168.c',['../max1168_8c.html',1,'']]],
   ['max1168_2eh_48',['max1168.h',['../max1168_8h.html',1,'']]],
-  ['max1168_5farch_2ec_49',['max1168_arch.c',['../sim_2peripherals_2max1168__arch_8c.html',1,'(Global Namespace)'],['../stm32_2peripherals_2max1168__arch_8c.html',1,'(Global Namespace)']]],
+  ['max1168_5farch_2ec_49',['max1168_arch.c',['../stm32_2peripherals_2max1168__arch_8c.html',1,'(Global Namespace)'],['../sim_2peripherals_2max1168__arch_8c.html',1,'(Global Namespace)']]],
   ['max1168_5farch_2eh_50',['max1168_arch.h',['../sim_2peripherals_2max1168__arch_8h.html',1,'(Global Namespace)'],['../stm32_2peripherals_2max1168__arch_8h.html',1,'(Global Namespace)']]],
   ['max7456_2ec_51',['max7456.c',['../max7456_8c.html',1,'']]],
   ['max7456_2eh_52',['max7456.h',['../max7456_8h.html',1,'']]],

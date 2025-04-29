@@ -1,6 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__control_adaptive.html#module_xml__control_adaptive":[1,76,0,0],
 "module__control_energy.html":[1,77],
 "module__control_energy.html#module_load_example__control_energy":[1,77,0],
 "module__control_energy.html#module_xml__control_energy":[1,77,0,0],
@@ -125,15 +124,10 @@ var NAVTREEINDEX127 =
 "module__digital_cam.html#module_load_example__digital_cam":[1,133,0],
 "module__digital_cam.html#module_xml__digital_cam":[1,133,0,0],
 "module__digital_cam_common.html":[1,134],
-"module__digital_cam_common.html#af_section":[1,134,1,0],
 "module__digital_cam_common.html#configuration__digital_cam_common":[1,134,1],
-"module__digital_cam_common.html#files":[1,134,3],
 "module__digital_cam_common.html#functions__digital_cam_common":[1,134,2],
-"module__digital_cam_common.html#headers":[1,134,3,0],
-"module__digital_cam_common.html#init_functions":[1,134,2,0],
 "module__digital_cam_common.html#module_load_example__digital_cam_common":[1,134,0],
-"module__digital_cam_common.html#module_xml__digital_cam_common":[1,134,3,2],
-"module__digital_cam_common.html#sources":[1,134,3,1],
+"module__digital_cam_common.html#module_xml__digital_cam_common":[1,134,2,0],
 "module__digital_cam_gpio.html":[1,135],
 "module__digital_cam_gpio.html#configuration__digital_cam_gpio":[1,135,1],
 "module__digital_cam_gpio.html#functions__digital_cam_gpio":[1,135,2],
@@ -150,6 +144,7 @@ var NAVTREEINDEX127 =
 "module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink":[1,137,1],
 "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink":[1,137,0],
 "module__digital_cam_pprzlink.html#module_xml__digital_cam_pprzlink":[1,137,2,0],
+"module__digital_cam_pprzlink.html#periodic_functions":[1,137,1,0],
 "module__digital_cam_servo.html":[1,138],
 "module__digital_cam_servo.html#configuration__digital_cam_servo":[1,138,1],
 "module__digital_cam_servo.html#functions__digital_cam_servo":[1,138,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX127 =
 "module__extra_dl.html#functions__extra_dl":[1,110,2],
 "module__extra_dl.html#module_load_example__extra_dl":[1,110,0],
 "module__extra_dl.html#module_xml__extra_dl":[1,110,2,0],
-"module__ezcurrent.html":[1,408]
+"module__ezcurrent.html":[1,408],
+"module__ezcurrent.html#configuration__ezcurrent":[1,408,1],
+"module__ezcurrent.html#functions__ezcurrent":[1,408,2],
+"module__ezcurrent.html#module_load_example__ezcurrent":[1,408,0],
+"module__ezcurrent.html#module_xml__ezcurrent":[1,408,2,0],
+"module__fbw_datalink.html":[1,111]
 };

@@ -1,11 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"module__guidance_rover_steering.html#module_xml__guidance_rover_steering":[1,184,1,0],
-"module__gumstix_qr_code_spi_link.html":[1,479],
-"module__gumstix_qr_code_spi_link.html#functions__gumstix_qr_code_spi_link":[1,479,1],
-"module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link":[1,479,0],
-"module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link":[1,479,1,0],
-"module__gvf_common.html":[1,480],
 "module__gvf_common.html#module_load_example__gvf_common":[1,480,0],
 "module__gvf_common.html#module_xml__gvf_common":[1,480,0,0],
 "module__gvf_module.html":[1,481],
@@ -107,9 +101,9 @@ var NAVTREEINDEX129 =
 "module__imu_aspirin_i2c_v1_0.html":[1,193],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,193,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,193,0],
+"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,193,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,194],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,194,0],
-"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,194,0,0],
 "module__imu_aspirin_v1_0.html":[1,195],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,195,0],
 "module__imu_aspirin_v1_5.html":[1,196],
@@ -206,10 +200,9 @@ var NAVTREEINDEX129 =
 "module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,217,2,0],
 "module__imu_mpu9250_spi.html":[1,218],
 "module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi":[1,218,1],
-"module__imu_mpu9250_spi.html#event_functions":[1,218,2,0],
 "module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi":[1,218,2],
 "module__imu_mpu9250_spi.html#module_load_example__imu_mpu9250_spi":[1,218,0],
-"module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi":[1,218,2,1],
+"module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi":[1,218,2,0],
 "module__imu_nps.html":[1,219],
 "module__imu_nps.html#functions__imu_nps":[1,219,1],
 "module__imu_nps.html#module_load_example__imu_nps":[1,219,0],
@@ -249,5 +242,12 @@ var NAVTREEINDEX129 =
 "module__imu_temp_ctrl.html#configuration__imu_temp_ctrl":[1,228,1],
 "module__imu_temp_ctrl.html#functions__imu_temp_ctrl":[1,228,2],
 "module__imu_temp_ctrl.html#module_load_example__imu_temp_ctrl":[1,228,0],
-"module__imu_temp_ctrl.html#module_xml__imu_temp_ctrl":[1,228,2,0]
+"module__imu_temp_ctrl.html#module_xml__imu_temp_ctrl":[1,228,2,0],
+"module__imu_vectornav.html":[1,226],
+"module__imu_vectornav.html#configuration__imu_vectornav":[1,226,1],
+"module__imu_vectornav.html#functions__imu_vectornav":[1,226,2],
+"module__imu_vectornav.html#module_load_example__imu_vectornav":[1,226,0],
+"module__imu_vectornav.html#module_xml__imu_vectornav":[1,226,2,0],
+"module__imu_xsens.html":[1,229],
+"module__imu_xsens.html#configuration__imu_xsens":[1,229,1]
 };

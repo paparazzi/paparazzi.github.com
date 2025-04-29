@@ -108,9 +108,8 @@ var NAVTREEINDEX125 =
 "module__actuators_asctec_v2.html#module_xml__actuators_asctec_v2":[1,3,1,0],
 "module__actuators_bebop.html":[1,4],
 "module__actuators_bebop.html#configuration__actuators_bebop":[1,4,1],
-"module__actuators_bebop.html#configure":[1,4,1,0],
 "module__actuators_bebop.html#module_load_example__actuators_bebop":[1,4,0],
-"module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,1,1],
+"module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,1,0],
 "module__actuators_disco.html":[1,5],
 "module__actuators_disco.html#module_load_example__actuators_disco":[1,5,0],
 "module__actuators_disco.html#module_xml__actuators_disco":[1,5,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX125 =
 "module__airspeed_ads1114.html":[1,384],
 "module__airspeed_ads1114.html#functions__airspeed_ads1114":[1,384,1],
 "module__airspeed_ads1114.html#module_load_example__airspeed_ads1114":[1,384,0],
-"module__airspeed_ads1114.html#module_xml__airspeed_ads1114":[1,384,1,0]
+"module__airspeed_ads1114.html#module_xml__airspeed_ads1114":[1,384,1,0],
+"module__airspeed_amsys.html":[1,385]
 };

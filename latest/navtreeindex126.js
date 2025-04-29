@@ -1,6 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"module__airspeed_amsys.html":[1,385],
 "module__airspeed_amsys.html#configuration__airspeed_amsys":[1,385,1],
 "module__airspeed_amsys.html#functions__airspeed_amsys":[1,385,2],
 "module__airspeed_amsys.html#module_load_example__airspeed_amsys":[1,385,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX126 =
 "module__control.html#module_load_example__control":[1,75,0],
 "module__control.html#module_xml__control":[1,75,0,0],
 "module__control_adaptive.html":[1,76],
-"module__control_adaptive.html#module_load_example__control_adaptive":[1,76,0]
+"module__control_adaptive.html#module_load_example__control_adaptive":[1,76,0],
+"module__control_adaptive.html#module_xml__control_adaptive":[1,76,0,0]
 };
