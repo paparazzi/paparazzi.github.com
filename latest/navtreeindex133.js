@@ -1,7 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__sonar_pwm.html":[1,431],
-"module__sonar_pwm.html#configuration__sonar_pwm":[1,431,1],
 "module__sonar_pwm.html#functions__sonar_pwm":[1,431,2],
 "module__sonar_pwm.html#module_load_example__sonar_pwm":[1,431,0],
 "module__sonar_pwm.html#module_xml__sonar_pwm":[1,431,2,0],
@@ -10,10 +8,10 @@ var NAVTREEINDEX133 =
 "module__sonar_vl53l1x.html#functions__sonar_vl53l1x":[1,432,2],
 "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x":[1,432,0],
 "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,432,2,0],
-"module__spektrum_soft_bind.html":[1,505],
-"module__spektrum_soft_bind.html#functions__spektrum_soft_bind":[1,505,1],
-"module__spektrum_soft_bind.html#module_load_example__spektrum_soft_bind":[1,505,0],
-"module__spektrum_soft_bind.html#module_xml__spektrum_soft_bind":[1,505,1,0],
+"module__spektrum_soft_bind.html":[1,506],
+"module__spektrum_soft_bind.html#functions__spektrum_soft_bind":[1,506,1],
+"module__spektrum_soft_bind.html#module_load_example__spektrum_soft_bind":[1,506,0],
+"module__spektrum_soft_bind.html#module_xml__spektrum_soft_bind":[1,506,1,0],
 "module__spi_master.html":[1,279],
 "module__spi_master.html#module_load_example__spi_master":[1,279,0],
 "module__spi_master.html#module_xml__spi_master":[1,279,0,0],
@@ -140,11 +138,11 @@ var NAVTREEINDEX133 =
 "module__sys_time.html#configuration__sys_time":[1,280,1],
 "module__sys_time.html#module_load_example__sys_time":[1,280,0],
 "module__sys_time.html#module_xml__sys_time":[1,280,1,0],
-"module__syslink_dl.html":[1,506],
-"module__syslink_dl.html#configuration__syslink_dl":[1,506,1],
-"module__syslink_dl.html#functions__syslink_dl":[1,506,2],
-"module__syslink_dl.html#module_load_example__syslink_dl":[1,506,0],
-"module__syslink_dl.html#module_xml__syslink_dl":[1,506,2,0],
+"module__syslink_dl.html":[1,507],
+"module__syslink_dl.html#configuration__syslink_dl":[1,507,1],
+"module__syslink_dl.html#functions__syslink_dl":[1,507,2],
+"module__syslink_dl.html#module_load_example__syslink_dl":[1,507,0],
+"module__syslink_dl.html#module_xml__syslink_dl":[1,507,2,0],
 "module__system_core.html":[1,87],
 "module__system_core.html#functions__system_core":[1,87,1],
 "module__system_core.html#module_load_example__system_core":[1,87,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX133 =
 "module__temp_tcouple_adc.html":[1,303],
 "module__temp_tcouple_adc.html#functions__temp_tcouple_adc":[1,303,1],
 "module__temp_tcouple_adc.html#module_load_example__temp_tcouple_adc":[1,303,0],
-"module__temp_tcouple_adc.html#module_xml__temp_tcouple_adc":[1,303,1,0]
+"module__temp_tcouple_adc.html#module_xml__temp_tcouple_adc":[1,303,1,0],
+"module__temp_temod.html":[1,304],
+"module__temp_temod.html#configuration__temp_temod":[1,304,1]
 };

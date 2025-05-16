@@ -9,7 +9,7 @@ var searchData=
   ['timicchannel_6',['TimICChannel',['../input__capture__arch_8c.html#ab300cdb2c688103c5921d2b960ec4db7',1,'input_capture_arch.c']]],
   ['timicmode_7',['TimICMode',['../input__capture__arch_8h.html#a9742e58ba31e8f0f3fa8bb95f44c1f8c',1,'input_capture_arch.h']]],
   ['timicstate_8',['TimICState',['../input__capture__arch_8h.html#a796225fa33f10b0e17824e11d1b7bf6b',1,'input_capture_arch.h']]],
-  ['trajectories_9',['trajectories',['../gvf_8h.html#a5e61057ce8c51b9efe7810e885a5e608',1,'gvf.h']]],
-  ['trajectories_5fparametric_10',['trajectories_parametric',['../gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800',1,'gvf_parametric.h']]],
+  ['trajectories_9',['trajectories',['../gvf__traj_8h.html#a5e61057ce8c51b9efe7810e885a5e608',1,'gvf_traj.h']]],
+  ['trajectories_5fparametric_10',['trajectories_parametric',['../gvf__param__traj_8h.html#a1f89e28ef0e60a8ec5555b596db39800',1,'gvf_param_traj.h']]],
   ['trinitystatus_11',['TrinityStatus',['../nav__trinity_8c.html#a5031d433822329d7f01660eda093c5fb',1,'nav_trinity.c']]]
 ];

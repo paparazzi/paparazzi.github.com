@@ -13,7 +13,7 @@ var searchData=
   ['lidarlitestatus_10',['LidarLiteStatus',['../lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8b',1,'lidar_lite.h']]],
   ['lidarsf11status_11',['LidarSF11Status',['../lidar__sf11_8h.html#a3f6a565ddb62870d5b278b0dc9f53559',1,'lidar_sf11.h']]],
   ['line_5fborder_5fstatus_12',['line_border_status',['../nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5',1,'nav_line_border.c']]],
-  ['line_5fstatus_13',['line_status',['../nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4',1,'line_status:&#160;nav_line.c'],['../nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4',1,'line_status:&#160;nav_vertical_raster.c']]],
+  ['line_5fstatus_13',['line_status',['../nav_2nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4',1,'line_status:&#160;nav_line.c'],['../nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4',1,'line_status:&#160;nav_vertical_raster.c']]],
   ['lis302dlconfstatus_14',['Lis302dlConfStatus',['../lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367a',1,'lis302dl.h']]],
   ['lis302dlranges_15',['Lis302dlRanges',['../lis302dl__regs_8h.html#a72031c26142ebe1e96c4994fecf7a608',1,'lis302dl_regs.h']]],
   ['lis302dlrates_16',['Lis302dlRates',['../lis302dl__regs_8h.html#ab839e76543bfb2d599a8eb8df710a493',1,'lis302dl_regs.h']]],

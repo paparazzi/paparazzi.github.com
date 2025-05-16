@@ -94,9 +94,8 @@ $(document).ready(function(){initNavTree('module__gvf_common.html',''); initResi
   <div class="headertitle"><div class="title">gvf_common module</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Common file to allow both gvf to work together.</b></p>
-<p><b></b></p>
-<p>Still requires at least one module providing the actual gvf implementation</p>
+<div class="textblock"><p><b>A common module that enables all GVF variants to operate within a unified framework</b></p>
+<p>It also provides a shared low-level control system. However, at least one additional module is required to implement the actual GVF functionality.</p>
 <h1><a class="anchor" id="module_load_example__gvf_common"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_common&quot;</span>/&gt;</div>
@@ -107,12 +106,21 @@ Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
 <li><a class="el" href="gvf__common_8h.html">gvf_common.h</a></li>
+<li><a class="el" href="gvf__traj_8h.html">trajectories/gvf_traj.h</a></li>
+<li><a class="el" href="gvf__param__traj_8h.html">trajectories/gvf_param_traj.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
 <li><a class="el" href="gvf__common_8c.html">modules/guidance/gvf_common.c</a></li>
+<li><a class="el" href="gvf__traj_8c.html">modules/guidance/trajectories/gvf_traj.c</a></li>
+<li><a class="el" href="gvf__param__traj_8c.html">modules/guidance/trajectories/gvf_param_traj.c</a></li>
 <li><a class="el" href="gvf__common_8c.html">modules/guidance/gvf_common.c</a></li>
+<li><a class="el" href="gvf__traj_8c.html">modules/guidance/trajectories/gvf_traj.c</a></li>
+<li><a class="el" href="gvf__param__traj_8c.html">modules/guidance/trajectories/gvf_param_traj.c</a></li>
+<li><a class="el" href="gvf__common_8c.html">modules/guidance/gvf_common.c</a></li>
+<li><a class="el" href="gvf__traj_8c.html">modules/guidance/trajectories/gvf_traj.c</a></li>
+<li><a class="el" href="gvf__param__traj_8c.html">modules/guidance/trajectories/gvf_param_traj.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__gvf_common"></a>
 Raw gvf_common.xml file:</h2>
@@ -121,25 +129,39 @@ Raw gvf_common.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_common&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;guidance/&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt; </div>
-<div class="line">      <span class="keyword">Common</span> <span class="keyword">file</span> <span class="keyword">to</span> <span class="keyword">allow</span> <span class="keyword">both</span> <span class="keyword">gvf</span> <span class="keyword">to</span> <span class="keyword">work</span> <span class="keyword">together.</span></div>
-<div class="line">      <span class="keyword">Still</span> <span class="keyword">requires</span> <span class="keyword">at</span> <span class="keyword">least</span> <span class="keyword">one</span> <span class="keyword">module</span> <span class="keyword">providing</span> <span class="keyword">the</span> <span class="keyword">actual</span> <span class="keyword">gvf</span> <span class="keyword">implementation</span></div>
+<div class="line">     <span class="keyword">A</span> <span class="keyword">common</span> <span class="keyword">module</span> <span class="keyword">that</span> <span class="keyword">enables</span> <span class="keyword">all</span> <span class="keyword">GVF</span> <span class="keyword">variants</span> <span class="keyword">to</span> <span class="keyword">operate</span> <span class="keyword">within</span> <span class="keyword">a</span> <span class="keyword">unified</span> <span class="keyword">framework.</span> </div>
+<div class="line">     <span class="keyword">It</span> <span class="keyword">also</span> <span class="keyword">provides</span> <span class="keyword">a</span> <span class="keyword">shared</span> <span class="keyword">low-level</span> <span class="keyword">control</span> <span class="keyword">system.</span> </div>
+<div class="line">     <span class="keyword">However</span>, <span class="keyword">at</span> <span class="keyword">least</span> <span class="keyword">one</span> <span class="keyword">additional</span> <span class="keyword">module</span> <span class="keyword">is</span> <span class="keyword">required</span> <span class="keyword">to</span> <span class="keyword">implement</span> <span class="keyword">the</span> <span class="keyword">actual</span> <span class="keyword">GVF</span> <span class="keyword">functionality.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  </div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_common.h&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_traj.h&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_param_traj.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">   </div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">   &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_common.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">   </div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rover&quot;</span>&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_traj.c&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_param_traj.c&quot;</span>/&gt;</div>
+<div class="line">   &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">   &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTORCRAFT_BASE_SEND_TRAJECTORY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_common.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_traj.c&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_param_traj.c&quot;</span>/&gt;</div>
+<div class="line">   &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">   </div>
+<div class="line">   &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rover&quot;</span>&gt;</div>
+<div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROVER_BASE_SEND_TRAJECTORY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_common.c&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_traj.c&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_param_traj.c&quot;</span>/&gt;</div>
+<div class="line">   &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  </div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-<div class="line"> </div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -147,7 +169,7 @@ Raw gvf_common.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Apr 29 2025 11:03:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 16 2025 20:05:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

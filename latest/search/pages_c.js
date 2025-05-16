@@ -44,7 +44,8 @@ var searchData=
   ['guide_41',['guide',['../stylec.html',1,'C Style Guide'],['../styledoxygen.html',1,'Doxygen Style Guide'],['../stylepython.html',1,'Python Style Guide']]],
   ['guides_42',['Style Guides',['../styleguide.html',1,'index']]],
   ['gumstix_5fqr_5fcode_5fspi_5flink_20module_43',['gumstix_qr_code_spi_link module',['../module__gumstix_qr_code_spi_link.html',1,'onboard_modules']]],
-  ['gvf_5fcommon_20module_44',['gvf_common module',['../module__gvf_common.html',1,'onboard_modules']]],
-  ['gvf_5fmodule_20module_45',['gvf_module module',['../module__gvf_module.html',1,'onboard_modules']]],
-  ['gvf_5fparametric_20module_46',['gvf_parametric module',['../module__gvf_parametric.html',1,'onboard_modules']]]
+  ['gvf_5fclassic_20module_44',['gvf_classic module',['../module__gvf_classic.html',1,'onboard_modules']]],
+  ['gvf_5fcommon_20module_45',['gvf_common module',['../module__gvf_common.html',1,'onboard_modules']]],
+  ['gvf_5fik_20module_46',['gvf_ik module',['../module__gvf_ik.html',1,'onboard_modules']]],
+  ['gvf_5fparametric_20module_47',['gvf_parametric module',['../module__gvf_parametric.html',1,'onboard_modules']]]
 ];

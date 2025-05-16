@@ -1,9 +1,5 @@
 var NAVTREEINDEX86 =
 {
-"imu__pixhawk6x_8h.html":[12,0,1,0,6,36,39],
-"imu__pixhawk6x_8h.html#accde32895e055b5a41c2473f7e091067":[12,0,1,0,6,36,39,1],
-"imu__pixhawk6x_8h.html#af615f367e491a8eddf123da8ccf19b85":[12,0,1,0,6,36,39,0],
-"imu__pixhawk6x_8h.html#afb8372132c62ca65ad81c9c90665c3e0":[12,0,1,0,6,36,39,2],
 "imu__pixhawk6x_8h_source.html":[12,0,1,0,6,36,39],
 "imu__px4fmu_8c.html":[12,0,1,0,6,36,40],
 "imu__px4fmu_8c.html#a893edbe61de3b2e98d781fcc16f8fabe":[12,0,1,0,6,36,40,2],
@@ -104,8 +100,8 @@ var NAVTREEINDEX86 =
 "imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd":[12,0,1,0,6,37,7,0],
 "imu__xsens_8h.html#ae98fa030dfb8217636d62dd368d3f375":[12,0,1,0,6,37,7,1],
 "imu__xsens_8h_source.html":[12,0,1,0,6,37,7],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md2":[0,0,0],
 "index.html#autotoc_md3":[0,0,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX86 =
 "ins__arduimu_8h.html#a50d9ed747ef12e52637cf7ec8283cfe6":[12,0,1,0,6,37,13,8],
 "ins__arduimu_8h.html#a70b61a4232cbf0e9acbde8d9b62ce1c5":[12,0,1,0,6,37,13,7],
 "ins__arduimu_8h.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,37,13,3],
-"ins__arduimu_8h.html#a78c0ed4113166dc7fa861569f0899d07":[12,0,1,0,6,37,13,4]
+"ins__arduimu_8h.html#a78c0ed4113166dc7fa861569f0899d07":[12,0,1,0,6,37,13,4],
+"ins__arduimu_8h.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,37,13,2],
+"ins__arduimu_8h.html#aac18cc3d324b605dd90d56321d413455":[12,0,1,0,6,37,13,9],
+"ins__arduimu_8h.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,37,13,1],
+"ins__arduimu_8h.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,37,13,6]
 };

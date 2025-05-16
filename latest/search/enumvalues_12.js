@@ -35,7 +35,7 @@ var searchData=
   ['to_5fdetect_5farmed_32',['TO_DETECT_ARMED',['../takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8aed099911820079317902ee9d8242cb7a',1,'takeoff_detect.c']]],
   ['to_5fdetect_5fdisabled_33',['TO_DETECT_DISABLED',['../takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8ae278f78b316913c44eaf48c2b959dd7a',1,'takeoff_detect.c']]],
   ['to_5fdetect_5flaunching_34',['TO_DETECT_LAUNCHING',['../takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8a64b6463f8cdc5ea7a87a7a2d230f9ba0',1,'takeoff_detect.c']]],
-  ['trefoil_5f2d_35',['TREFOIL_2D',['../gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800a8c43a5798fe0770ff632c2ee4a8311b6',1,'gvf_parametric.h']]],
+  ['trefoil_5f2d_35',['TREFOIL_2D',['../gvf__param__traj_8h.html#a1f89e28ef0e60a8ec5555b596db39800a8c43a5798fe0770ff632c2ee4a8311b6',1,'gvf_param_traj.h']]],
   ['trinity_5fenter_36',['TRINITY_ENTER',['../nav__trinity_8c.html#a5031d433822329d7f01660eda093c5fbabf0befd0e4569d0ff21ef621198e6ec8',1,'nav_trinity.c']]],
   ['trinity_5finside_37',['TRINITY_INSIDE',['../nav__trinity_8c.html#a5031d433822329d7f01660eda093c5fba1b5c72b9a5e1f68c084ff5955800ef0e',1,'nav_trinity.c']]],
   ['trinity_5finside_5ffirst_38',['TRINITY_INSIDE_FIRST',['../nav__trinity_8c.html#a5031d433822329d7f01660eda093c5fbad88323feec65f32c9850559405e9121f',1,'nav_trinity.c']]],

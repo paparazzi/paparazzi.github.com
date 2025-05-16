@@ -29,7 +29,6 @@ var nav__survey__polygon__gvf_8h =
       [ "gRET", "nav__survey__polygon__gvf_8h.html#adf6b32ad979d1f552c63566032c37119aabaa99b04d8f488e24c9789584adda7f", null ],
       [ "gTURN2", "nav__survey__polygon__gvf_8h.html#adf6b32ad979d1f552c63566032c37119aad06e4954bb22b155308c1ce76d3f0d1", null ]
     ] ],
-    [ "gvf_nav_direction_circle", "nav__survey__polygon__gvf_8h.html#a6533adf7c5ea5e0653ddc673fffa1db9", null ],
-    [ "gvf_nav_survey_polygon_run", "nav__survey__polygon__gvf_8h.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8", null ],
-    [ "gvf_nav_survey_polygon_setup", "nav__survey__polygon__gvf_8h.html#a90d454e9b138c8d61f930edc166f73e3", null ]
+    [ "nav_gvf_survey_polygon_run", "nav__survey__polygon__gvf_8h.html#a43ed9b75f819756b5edcb17c9e1857dc", null ],
+    [ "nav_gvf_survey_polygon_setup", "nav__survey__polygon__gvf_8h.html#ab0120ff537a036d26f25e4373788c381", null ]
 ];

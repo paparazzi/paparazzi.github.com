@@ -127,6 +127,18 @@ $(document).ready(function(){initNavTree('nav__survey__polygon__gvf_8h.html','')
 <area shape="poly" title=" " alt="" coords="287,204,374,246,372,251,284,209"/>
 </map>
 </div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nav__survey__polygon__gvf_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2guidance_2gvf_2nav_2nav__survey__polygon__gvf_8hdep" alt=""/></div>
+<map name="asw_2airborne_2modules_2guidance_2gvf_2nav_2nav__survey__polygon__gvf_8hdep" id="asw_2airborne_2modules_2guidance_2gvf_2nav_2nav__survey__polygon__gvf_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,176,60"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html" title=" " alt="" coords="5,108,176,163"/>
+<area shape="poly" title=" " alt="" coords="93,74,93,108,88,108,88,74"/>
+</map>
+</div>
 </div>
 <p><a href="nav__survey__polygon__gvf_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -151,14 +163,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a90d454e9b138c8d61f930edc166f73e3" id="r_a90d454e9b138c8d61f930edc166f73e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__polygon__gvf_8h.html#a90d454e9b138c8d61f930edc166f73e3">gvf_nav_survey_polygon_setup</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">first_wp</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> angle, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> sweep_width, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">shot_dist</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">min_rad</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="airspeed__uADC_8c.html#a5402881d7f8a92e6838995507bf2e7f9">altitude</a>)</td></tr>
-<tr class="memdesc:a90d454e9b138c8d61f930edc166f73e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the variables needed for the survey to start  <br /></td></tr>
-<tr class="separator:a90d454e9b138c8d61f930edc166f73e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6533adf7c5ea5e0653ddc673fffa1db9" id="r_a6533adf7c5ea5e0653ddc673fffa1db9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__polygon__gvf_8h.html#a6533adf7c5ea5e0653ddc673fffa1db9">gvf_nav_direction_circle</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> rad)</td></tr>
-<tr class="memdesc:a6533adf7c5ea5e0653ddc673fffa1db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">main navigation routine.  <br /></td></tr>
-<tr class="separator:a6533adf7c5ea5e0653ddc673fffa1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" id="r_aa3432a5ccfee6c60fa8cb0b7b3e4a6e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__polygon__gvf_8h.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8">gvf_nav_survey_polygon_run</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:aa3432a5ccfee6c60fa8cb0b7b3e4a6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0120ff537a036d26f25e4373788c381" id="r_ab0120ff537a036d26f25e4373788c381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__polygon__gvf_8h.html#ab0120ff537a036d26f25e4373788c381">nav_gvf_survey_polygon_setup</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">first_wp</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> angle, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> sweep_width, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">shot_dist</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">min_rad</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="airspeed__uADC_8c.html#a5402881d7f8a92e6838995507bf2e7f9">altitude</a>)</td></tr>
+<tr class="memdesc:ab0120ff537a036d26f25e4373788c381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the variables needed for the survey to start.  <br /></td></tr>
+<tr class="separator:ab0120ff537a036d26f25e4373788c381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ed9b75f819756b5edcb17c9e1857dc" id="r_a43ed9b75f819756b5edcb17c9e1857dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__polygon__gvf_8h.html#a43ed9b75f819756b5edcb17c9e1857dc">nav_gvf_survey_polygon_run</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="memdesc:a43ed9b75f819756b5edcb17c9e1857dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main navigation routine.  <br /></td></tr>
+<tr class="separator:a43ed9b75f819756b5edcb17c9e1857dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structgvf__SurveyPolyAdv" id="structgvf__SurveyPolyAdv"></a>
@@ -174,11 +184,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00048">48</a> of file <a class="el" href="nav__survey__polygon__gvf_8h_source.html">nav_survey_polygon_gvf.h</a>.</p>
-</div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gvf_SurveyPolyAdv:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for gvf_SurveyPolyAdv:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structgvf__SurveyPolyAdv__coll__graph.png" border="0" usemap="#agvf__SurveyPolyAdv_coll__map" alt="Collaboration graph"/></div>
 <map name="agvf__SurveyPolyAdv_coll__map" id="agvf__SurveyPolyAdv_coll__map">
 <area shape="rect" title=" " alt="" coords="5,240,153,265"/>
@@ -332,59 +342,8 @@ sweep_vec</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6533adf7c5ea5e0653ddc673fffa1db9" name="a6533adf7c5ea5e0653ddc673fffa1db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6533adf7c5ea5e0653ddc673fffa1db9">&#9670;&#160;</a></span>gvf_nav_direction_circle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> gvf_nav_direction_circle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
-          <td class="paramname"><em>rad</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>main navigation routine. </p>
-<p>This is called periodically evaluates the current Position and stage and navigates accordingly. </p><dl class="section return"><dt>Returns</dt><dd>True until the survey is finished </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00236">236</a> of file <a class="el" href="nav__survey__polygon__gvf_8c_source.html">nav_survey_polygon_gvf.c</a>.</p>
-
-<p class="reference">References <a class="el" href="gvf_8c_source.html#l00266">gvf_set_direction()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">gvf_nav_survey_polygon_run()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="nav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_cgraph.png" border="0" usemap="#anav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_cgraph" alt=""/></div>
-<map name="anav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_cgraph" id="anav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_cgraph">
-<area shape="rect" title="main navigation routine." alt="" coords="5,5,185,31"/>
-<area shape="rect" href="gvf_8c.html#a8efa9dd9d07def4d644d56b2d1fed6e2" title=" " alt="" coords="233,5,368,31"/>
-<area shape="poly" title=" " alt="" coords="186,15,220,15,220,21,186,21"/>
-</map>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="nav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_icgraph.png" border="0" usemap="#anav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_icgraph" alt=""/></div>
-<map name="anav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_icgraph" id="anav__survey__polygon__gvf_8h_a6533adf7c5ea5e0653ddc673fffa1db9_icgraph">
-<area shape="rect" title="main navigation routine." alt="" coords="265,5,445,31"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" title=" " alt="" coords="5,5,217,31"/>
-<area shape="poly" title=" " alt="" coords="252,21,218,21,218,15,252,15"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" name="aa3432a5ccfee6c60fa8cb0b7b3e4a6e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8">&#9670;&#160;</a></span>gvf_nav_survey_polygon_run()</h2>
+<a id="a43ed9b75f819756b5edcb17c9e1857dc" name="a43ed9b75f819756b5edcb17c9e1857dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ed9b75f819756b5edcb17c9e1857dc">&#9670;&#160;</a></span>nav_gvf_survey_polygon_run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,7 +352,7 @@ sweep_vec</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> gvf_nav_survey_polygon_run </td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> nav_gvf_survey_polygon_run </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -407,137 +366,141 @@ sweep_vec</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">245</a> of file <a class="el" href="nav__survey__polygon__gvf_8c_source.html">nav_survey_polygon_gvf.c</a>.</p>
+<p>Main navigation routine. </p>
+<p>This is called periodically evaluates the current Position and stage and navigates accordingly. </p><dl class="section return"><dt>Returns</dt><dd>True until the survey is finished </dd></dl>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="dc_8c_source.html#l00262">dc_stop()</a>, <a class="el" href="dc_8c_source.html#l00240">dc_survey()</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00054">gvf_SurveyPolyAdv::dir_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00081">gvf_SurveyPolyAdv::entry_center</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gENTRY</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gRET</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gSEG</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gTURN1</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gTURN2</a>, <a class="el" href="gvf_8c_source.html#l00433">gvf_ellipse_XY()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00078">gvf_get_two_intersects()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00236">gvf_nav_direction_circle()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00042">gvf_nav_points()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00040">gvf_survey</a>, <a class="el" href="nav_8c_source.html#l00047">last_x</a>, <a class="el" href="nav_8c_source.html#l00047">last_y</a>, <a class="el" href="nav_8c_source.html#l00325">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="nav_8h_source.html#l00163">NavCourseCloseTo</a>, <a class="el" href="nav_8h_source.html#l00191">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00177">NavVerticalAutoThrottleMode</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00066">gvf_SurveyPolyAdv::psa_altitude</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00063">gvf_SurveyPolyAdv::psa_min_rad</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00065">gvf_SurveyPolyAdv::psa_shot_dist</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00064">gvf_SurveyPolyAdv::psa_sweep_width</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00056">gvf_SurveyPolyAdv::rad_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00083">gvf_SurveyPolyAdv::ret_end</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00082">gvf_SurveyPolyAdv::ret_start</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00070">gvf_SurveyPolyAdv::return_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00079">gvf_SurveyPolyAdv::seg_center1</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00080">gvf_SurveyPolyAdv::seg_center2</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00078">gvf_SurveyPolyAdv::seg_end</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00077">gvf_SurveyPolyAdv::seg_start</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00069">gvf_SurveyPolyAdv::segment_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00075">gvf_SurveyPolyAdv::stage</a>, <a class="el" href="state_8h_source.html#l00821">stateGetPositionUtm_f()</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00055">gvf_SurveyPolyAdv::sweep_vec</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00086">VECT2_SUM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00246">246</a> of file <a class="el" href="nav__survey__polygon__gvf_8c_source.html">nav_survey_polygon_gvf.c</a>.</p>
+
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="dc_8c_source.html#l00262">dc_stop()</a>, <a class="el" href="dc_8c_source.html#l00240">dc_survey()</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00054">gvf_SurveyPolyAdv::dir_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00081">gvf_SurveyPolyAdv::entry_center</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gENTRY</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gRET</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gSEG</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gTURN1</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gTURN2</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00046">gvf_circle_direction()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00086">gvf_get_two_intersects()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00042">gvf_survey</a>, <a class="el" href="nav_8c_source.html#l00047">last_x</a>, <a class="el" href="nav_8c_source.html#l00047">last_y</a>, <a class="el" href="nav_8c_source.html#l00325">nav_approaching_xy()</a>, <a class="el" href="nav_2nav__ellipse_8c_source.html#l00064">nav_gvf_ellipse_XY()</a>, <a class="el" href="guidance_2gvf_2nav_2nav__line_8c_source.html#l00253">nav_gvf_segment_points()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="nav_8h_source.html#l00163">NavCourseCloseTo</a>, <a class="el" href="nav_8h_source.html#l00191">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00177">NavVerticalAutoThrottleMode</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00066">gvf_SurveyPolyAdv::psa_altitude</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00063">gvf_SurveyPolyAdv::psa_min_rad</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00065">gvf_SurveyPolyAdv::psa_shot_dist</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00064">gvf_SurveyPolyAdv::psa_sweep_width</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00056">gvf_SurveyPolyAdv::rad_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00083">gvf_SurveyPolyAdv::ret_end</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00082">gvf_SurveyPolyAdv::ret_start</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00070">gvf_SurveyPolyAdv::return_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00079">gvf_SurveyPolyAdv::seg_center1</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00080">gvf_SurveyPolyAdv::seg_center2</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00078">gvf_SurveyPolyAdv::seg_end</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00077">gvf_SurveyPolyAdv::seg_start</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00069">gvf_SurveyPolyAdv::segment_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00075">gvf_SurveyPolyAdv::stage</a>, <a class="el" href="state_8h_source.html#l00821">stateGetPositionUtm_f()</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00055">gvf_SurveyPolyAdv::sweep_vec</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00086">VECT2_SUM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="nav__survey__polygon__gvf_8h_aa3432a5ccfee6c60fa8cb0b7b3e4a6e8_cgraph.png" border="0" usemap="#anav__survey__polygon__gvf_8h_aa3432a5ccfee6c60fa8cb0b7b3e4a6e8_cgraph" alt=""/></div>
-<map name="anav__survey__polygon__gvf_8h_aa3432a5ccfee6c60fa8cb0b7b3e4a6e8_cgraph" id="anav__survey__polygon__gvf_8h_aa3432a5ccfee6c60fa8cb0b7b3e4a6e8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,509,217,535"/>
-<area shape="rect" href="dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144" title="Stop dc control." alt="" coords="316,272,388,297"/>
-<area shape="poly" title=" " alt="" coords="120,508,178,435,219,389,264,344,317,303,320,307,267,348,223,392,182,439,124,511"/>
-<area shape="rect" href="dc_8c.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode." alt="" coords="308,359,396,384"/>
-<area shape="poly" title=" " alt="" coords="123,507,180,452,220,421,264,393,294,381,296,386,267,398,223,425,183,456,126,511"/>
-<area shape="rect" href="gvf_8c.html#ad4ac74c3e1ae77e925a16e7f6ca93c34" title=" " alt="" coords="293,408,411,433"/>
-<area shape="poly" title=" " alt="" coords="138,507,264,450,301,436,303,441,266,455,141,512"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a3f99b0a5691b231366a774387afc9a95" title="intersects a line with the polygon and gives back the two intersection points" alt="" coords="265,711,439,736"/>
-<area shape="poly" title=" " alt="" coords="123,533,178,606,220,650,267,689,293,703,291,708,264,694,216,654,174,610,119,537"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a6533adf7c5ea5e0653ddc673fffa1db9" title="main navigation routine." alt="" coords="717,663,897,688"/>
-<area shape="poly" title=" " alt="" coords="125,533,181,590,221,621,266,645,322,663,379,676,496,690,607,692,703,686,703,691,608,697,496,695,378,681,320,668,264,650,218,626,177,594,121,537"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#aca558f27a3ea04ca30d248c7ade6f800" title=" " alt="" coords="291,609,413,635"/>
-<area shape="poly" title=" " alt="" coords="137,533,195,562,266,594,291,603,289,608,264,599,193,567,135,537"/>
-<area shape="rect" href="nav_8c.html#a249451b8d1fe0b19866ea68e0d8b86df" title="Decide if the UAV is approaching the current waypoint." alt="" coords="497,409,653,435"/>
-<area shape="poly" title=" " alt="" coords="171,507,501,435,503,440,172,512"/>
-<area shape="rect" href="nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d" title="needs to be implemented by fixedwing and rotorcraft seperately" alt="" coords="293,509,411,535"/>
-<area shape="poly" title=" " alt="" coords="217,519,279,519,279,525,217,525"/>
-<area shape="rect" href="group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="267,559,437,584"/>
-<area shape="poly" title=" " alt="" coords="174,532,276,553,275,558,173,537"/>
-<area shape="rect" href="dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="541,232,610,257"/>
-<area shape="poly" title=" " alt="" coords="388,276,527,251,528,256,389,281"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="965,205,1167,231"/>
-<area shape="poly" title=" " alt="" coords="610,240,951,222,951,227,610,245"/>
-<area shape="rect" href="group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="727,131,887,156"/>
-<area shape="poly" title=" " alt="" coords="605,229,763,159,765,164,607,234"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="1242,205,1410,231"/>
-<area shape="poly" title=" " alt="" coords="1168,215,1228,215,1228,221,1168,221"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1469,205,1643,231"/>
-<area shape="poly" title=" " alt="" coords="1410,215,1455,215,1455,221,1410,221"/>
-<area shape="rect" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="983,107,1149,132"/>
-<area shape="poly" title=" " alt="" coords="887,133,969,126,970,131,887,139"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1485,81,1627,107"/>
-<area shape="poly" title=" " alt="" coords="1133,104,1230,91,1357,87,1471,88,1471,93,1357,92,1231,97,1134,109"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="1255,107,1397,132"/>
-<area shape="poly" title=" " alt="" coords="1149,117,1241,117,1241,122,1149,122"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1274,5,1378,31"/>
-<area shape="poly" title=" " alt="" coords="1095,104,1230,48,1271,33,1273,38,1232,52,1097,109"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1275,156,1377,181"/>
-<area shape="poly" title=" " alt="" coords="1134,129,1262,154,1261,159,1133,135"/>
-<area shape="poly" title=" " alt="" coords="1397,109,1471,101,1471,106,1398,114"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1486,634,1626,674"/>
-<area shape="poly" title=" " alt="" coords="1378,168,1403,176,1423,191,1444,218,1457,246,1465,273,1468,300,1463,353,1451,405,1438,458,1432,511,1435,538,1441,565,1453,593,1471,620,1477,626,1473,630,1467,624,1448,595,1436,567,1429,539,1427,511,1433,457,1446,404,1458,352,1463,300,1460,274,1452,247,1439,221,1419,195,1400,180,1377,173"/>
-<area shape="poly" title=" " alt="" coords="374,356,485,292,538,262,541,266,488,296,376,361"/>
-<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="723,480,890,505"/>
-<area shape="poly" title=" " alt="" coords="396,365,451,364,519,366,593,376,665,394,699,410,732,429,783,469,780,473,729,433,697,414,663,399,592,381,519,372,451,369,397,371"/>
-<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="981,497,1151,523"/>
-<area shape="poly" title=" " alt="" coords="890,496,967,501,967,506,890,501"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1274,535,1378,560"/>
-<area shape="poly" title=" " alt="" coords="1152,520,1260,535,1260,541,1151,525"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1479,435,1633,460"/>
-<area shape="poly" title=" " alt="" coords="1114,495,1230,470,1353,456,1465,448,1466,453,1353,461,1231,475,1115,500"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1255,584,1397,609"/>
-<area shape="poly" title=" " alt="" coords="1100,520,1232,570,1258,578,1256,583,1230,575,1098,525"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="1255,485,1397,511"/>
-<area shape="poly" title=" " alt="" coords="1151,503,1242,499,1242,505,1152,509"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1275,633,1377,659"/>
-<area shape="poly" title=" " alt="" coords="1118,520,1152,534,1184,553,1200,571,1209,588,1217,604,1232,620,1263,634,1260,639,1229,624,1212,608,1204,591,1196,574,1181,557,1150,538,1116,525"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1502,535,1610,560"/>
-<area shape="poly" title=" " alt="" coords="1378,545,1488,545,1488,550,1378,550"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1503,485,1609,511"/>
-<area shape="poly" title=" " alt="" coords="1378,534,1489,509,1490,515,1379,539"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1480,584,1632,609"/>
-<area shape="poly" title=" " alt="" coords="1397,594,1466,594,1466,599,1397,599"/>
-<area shape="poly" title=" " alt="" coords="1397,495,1490,495,1490,501,1397,501"/>
-<area shape="poly" title=" " alt="" coords="1384,483,1484,460,1485,466,1385,488"/>
-<area shape="poly" title=" " alt="" coords="1378,645,1473,648,1472,654,1378,650"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1480,699,1632,724"/>
-<area shape="poly" title=" " alt="" coords="1376,656,1422,669,1470,683,1499,692,1498,697,1469,689,1421,674,1375,661"/>
-<area shape="rect" href="gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302" title=" " alt="" coords="515,307,635,332"/>
-<area shape="poly" title=" " alt="" coords="402,405,438,393,494,365,542,337,545,342,496,370,440,398,404,410"/>
-<area shape="rect" href="gvf__ellipse_8c.html#a54a144011fc0310e40d5190b005ae052" title=" " alt="" coords="513,459,638,484"/>
-<area shape="poly" title=" " alt="" coords="410,431,506,453,505,458,408,436"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="731,305,882,331"/>
-<area shape="poly" title=" " alt="" coords="636,316,717,316,717,321,636,322"/>
-<area shape="rect" href="gvf__low__level__control_8c.html#a579808adcbffe590c874e69dd3612af0" title=" " alt="" coords="712,256,901,281"/>
-<area shape="poly" title=" " alt="" coords="634,304,734,282,735,287,635,309"/>
-<area shape="rect" href="gvf__low__level__control_8c.html#ae27d2fdd26aa5b984a27c86c77544ac7" title=" " alt="" coords="719,355,894,380"/>
-<area shape="poly" title=" " alt="" coords="636,329,732,349,731,354,635,334"/>
-<area shape="poly" title=" " alt="" coords="872,253,987,231,988,236,873,258"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="990,255,1142,280"/>
-<area shape="poly" title=" " alt="" coords="901,266,976,265,976,270,901,271"/>
-<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="949,304,1183,329"/>
-<area shape="poly" title=" " alt="" coords="876,279,984,299,983,304,875,284"/>
-<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1231,255,1421,295"/>
-<area shape="poly" title=" " alt="" coords="1146,301,1216,290,1217,295,1147,307"/>
-<area shape="poly" title=" " alt="" coords="879,352,900,340,911,328,917,316,922,291,928,265,936,252,948,240,954,235,957,240,951,244,940,255,933,267,928,292,922,318,915,331,903,344,882,357"/>
-<area shape="poly" title=" " alt="" coords="872,352,987,329,988,335,873,357"/>
-<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="958,353,1174,379"/>
-<area shape="poly" title=" " alt="" coords="894,364,944,364,944,369,894,370"/>
-<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="989,403,1143,428"/>
-<area shape="poly" title=" " alt="" coords="876,377,984,397,983,403,875,383"/>
-<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="1231,319,1421,359"/>
-<area shape="poly" title=" " alt="" coords="1174,352,1217,348,1217,353,1175,358"/>
-<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="1247,384,1405,409"/>
-<area shape="poly" title=" " alt="" coords="1143,407,1233,401,1233,406,1144,412"/>
-<area shape="poly" title=" " alt="" coords="639,474,710,481,709,486,638,480"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a1ed530db241dd4311c25f7af1405504d" title="intercept two lines and give back the point of intersection" alt="" coords="487,711,664,736"/>
-<area shape="poly" title=" " alt="" coords="439,721,473,721,473,726,439,726"/>
-<area shape="rect" href="gvf_8c.html#a8efa9dd9d07def4d644d56b2d1fed6e2" title=" " alt="" coords="1259,683,1393,708"/>
-<area shape="poly" title=" " alt="" coords="897,676,1245,690,1245,695,897,681"/>
-<area shape="rect" href="gvf_8c.html#a1d3d6f723a14fdd4a934b5d3483fb451" title=" " alt="" coords="490,609,661,635"/>
-<area shape="poly" title=" " alt="" coords="413,619,476,619,476,625,413,625"/>
-<area shape="poly" title=" " alt="" coords="634,607,663,596,728,555,780,513,783,517,731,559,665,600,636,612"/>
-<area shape="rect" href="gvf_8c.html#aeec3e8235d19a0ec8c55968bff872f7b" title=" " alt="" coords="737,613,876,639"/>
-<area shape="poly" title=" " alt="" coords="661,621,724,622,723,627,661,626"/>
-<area shape="rect" href="gvf_8c.html#adabee08eab95e1f36c789270a02afa91" title=" " alt="" coords="987,615,1145,640"/>
-<area shape="poly" title=" " alt="" coords="876,624,974,624,974,630,876,629"/>
-<area shape="poly" title=" " alt="" coords="1114,637,1231,669,1262,677,1261,682,1230,674,1113,643"/>
-<area shape="poly" title=" " alt="" coords="626,432,665,443,756,473,755,478,663,449,624,437"/>
-<area shape="poly" title=" " alt="" coords="654,427,710,428,773,423,839,411,900,389,915,378,923,365,932,351,948,338,962,332,964,336,951,343,936,355,928,368,919,382,903,394,840,416,774,429,710,433,654,432"/>
-<area shape="poly" title=" " alt="" coords="411,516,709,496,710,502,411,521"/>
-<area shape="rect" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="488,560,663,585"/>
-<area shape="poly" title=" " alt="" coords="437,569,475,569,475,575,437,575"/>
-<area shape="poly" title=" " alt="" coords="663,566,769,564,899,567,1042,578,1183,601,1208,609,1232,619,1262,628,1261,634,1230,625,1206,614,1182,606,1041,584,899,573,769,569,663,571"/>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nav__survey__polygon__gvf_8h_a43ed9b75f819756b5edcb17c9e1857dc_cgraph.png" border="0" usemap="#anav__survey__polygon__gvf_8h_a43ed9b75f819756b5edcb17c9e1857dc_cgraph" alt=""/></div>
+<map name="anav__survey__polygon__gvf_8h_a43ed9b75f819756b5edcb17c9e1857dc_cgraph" id="anav__survey__polygon__gvf_8h_a43ed9b75f819756b5edcb17c9e1857dc_cgraph">
+<area shape="rect" title="Main navigation routine." alt="" coords="5,404,217,429"/>
+<area shape="rect" href="dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144" title="Stop dc control." alt="" coords="322,160,394,185"/>
+<area shape="poly" title=" " alt="" coords="116,403,135,364,167,310,210,252,236,225,264,201,285,189,308,180,309,185,287,194,267,206,239,229,214,255,171,313,140,366,121,405"/>
+<area shape="rect" href="dc_8c.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode." alt="" coords="556,253,644,279"/>
+<area shape="poly" title=" " alt="" coords="136,402,194,374,264,345,329,325,380,312,498,287,542,277,543,282,499,293,382,318,330,330,266,350,196,378,138,406"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html#ac8fc80bf23355405495734e770dce57e" title=" " alt="" coords="283,567,433,592"/>
+<area shape="poly" title=" " alt="" coords="127,428,185,480,225,511,267,540,307,559,304,564,264,544,221,516,182,484,124,432"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a3f99b0a5691b231366a774387afc9a95" title="Intersects a line with the polygon and gives back the two intersection points." alt="" coords="271,216,445,241"/>
+<area shape="poly" title=" " alt="" coords="122,402,179,341,220,304,264,270,310,245,313,249,267,275,223,309,183,345,126,406"/>
+<area shape="rect" href="nav_8c.html#a249451b8d1fe0b19866ea68e0d8b86df" title="Decide if the UAV is approaching the current waypoint." alt="" coords="766,353,922,379"/>
+<area shape="poly" title=" " alt="" coords="182,401,265,390,398,379,530,371,752,364,753,370,531,377,398,384,266,395,183,407"/>
+<area shape="rect" href="nav_2nav__ellipse_8c.html#a013951faba0dcdfe980eef70a4403876" title=" " alt="" coords="284,404,432,429"/>
+<area shape="poly" title=" " alt="" coords="218,414,270,414,270,419,218,419"/>
+<area shape="rect" href="guidance_2gvf_2nav_2nav__line_8c.html#ad9cb79b3d2b2c23ae150ce337a0924da" title=" " alt="" coords="265,504,451,529"/>
+<area shape="poly" title=" " alt="" coords="137,427,195,457,266,489,292,498,291,503,264,494,192,462,134,432"/>
+<area shape="rect" href="nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d" title="needs to be implemented by fixedwing and rotorcraft seperately" alt="" coords="299,453,417,479"/>
+<area shape="poly" title=" " alt="" coords="176,427,286,449,285,454,175,432"/>
+<area shape="rect" href="group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="273,644,443,669"/>
+<area shape="poly" title=" " alt="" coords="123,428,178,507,220,557,267,603,317,635,315,640,264,607,216,560,174,510,118,431"/>
+<area shape="rect" href="dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="809,104,879,129"/>
+<area shape="poly" title=" " alt="" coords="394,166,795,119,796,125,394,171"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="1002,153,1205,179"/>
+<area shape="poly" title=" " alt="" coords="879,120,1023,148,1022,153,878,126"/>
+<area shape="rect" href="group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="1023,55,1183,80"/>
+<area shape="poly" title=" " alt="" coords="878,108,1022,80,1023,85,879,113"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="1279,145,1447,171"/>
+<area shape="poly" title=" " alt="" coords="1205,160,1265,158,1266,164,1205,166"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1507,179,1680,204"/>
+<area shape="poly" title=" " alt="" coords="1448,167,1493,174,1493,179,1447,173"/>
+<area shape="rect" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="1281,55,1446,80"/>
+<area shape="poly" title=" " alt="" coords="1184,65,1267,65,1267,70,1184,70"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1733,5,1876,31"/>
+<area shape="poly" title=" " alt="" coords="1391,52,1444,32,1506,15,1561,9,1617,6,1720,8,1720,13,1617,11,1562,14,1507,21,1445,37,1393,57"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="1522,31,1665,56"/>
+<area shape="poly" title=" " alt="" coords="1446,56,1508,50,1508,55,1446,61"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1541,80,1645,105"/>
+<area shape="poly" title=" " alt="" coords="1446,74,1528,83,1528,88,1446,79"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1542,129,1645,155"/>
+<area shape="poly" title=" " alt="" coords="1401,78,1507,114,1535,123,1533,128,1506,119,1399,83"/>
+<area shape="poly" title=" " alt="" coords="1664,32,1719,26,1720,31,1665,37"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1735,489,1875,529"/>
+<area shape="poly" title=" " alt="" coords="1646,144,1665,151,1682,164,1708,204,1717,243,1716,281,1709,320,1702,358,1700,396,1708,435,1730,475,1732,478,1728,481,1726,478,1703,437,1695,396,1697,357,1704,319,1711,281,1712,243,1703,206,1678,168,1663,156,1644,149"/>
+<area shape="poly" title=" " alt="" coords="644,261,673,253,700,239,711,227,717,215,723,190,729,164,736,151,748,139,770,125,795,118,797,123,773,130,751,143,740,154,734,166,728,191,722,217,715,230,703,243,675,258,645,266"/>
+<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="1020,389,1187,415"/>
+<area shape="poly" title=" " alt="" coords="644,256,705,250,781,250,862,261,902,273,940,289,957,303,966,318,974,334,988,349,1018,368,1049,382,1046,387,1015,372,985,353,970,337,961,321,953,306,937,294,901,278,861,266,781,256,705,256,644,261"/>
+<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="1278,389,1449,415"/>
+<area shape="poly" title=" " alt="" coords="1187,399,1264,399,1264,405,1187,405"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1541,439,1645,464"/>
+<area shape="poly" title=" " alt="" coords="1424,412,1528,435,1527,440,1423,417"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1728,340,1881,365"/>
+<area shape="poly" title=" " alt="" coords="1432,387,1506,375,1714,356,1714,361,1507,381,1433,392"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1522,288,1665,313"/>
+<area shape="poly" title=" " alt="" coords="1397,387,1457,360,1505,330,1540,316,1542,321,1508,335,1460,364,1399,392"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="1523,389,1664,415"/>
+<area shape="poly" title=" " alt="" coords="1449,399,1509,399,1509,405,1449,405"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1542,525,1645,551"/>
+<area shape="poly" title=" " alt="" coords="1387,413,1560,516,1557,520,1385,417"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1751,439,1859,464"/>
+<area shape="poly" title=" " alt="" coords="1646,449,1737,449,1737,454,1646,454"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1752,389,1857,415"/>
+<area shape="poly" title=" " alt="" coords="1645,437,1738,415,1739,420,1646,442"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1729,288,1881,313"/>
+<area shape="poly" title=" " alt="" coords="1665,298,1715,298,1715,303,1665,303"/>
+<area shape="poly" title=" " alt="" coords="1664,399,1738,399,1738,405,1664,405"/>
+<area shape="poly" title=" " alt="" coords="1648,387,1736,366,1737,371,1649,392"/>
+<area shape="poly" title=" " alt="" coords="1645,528,1721,518,1722,523,1646,534"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1729,553,1881,579"/>
+<area shape="poly" title=" " alt="" coords="1646,542,1715,551,1714,557,1645,547"/>
+<area shape="rect" href="gvf_8c.html#a8efa9dd9d07def4d644d56b2d1fed6e2" title=" " alt="" coords="1296,581,1431,607"/>
+<area shape="poly" title=" " alt="" coords="433,580,749,591,1044,594,1282,592,1282,598,1044,599,749,597,433,586"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a1ed530db241dd4311c25f7af1405504d" title="Intercept two lines and give back the point of intersection." alt="" coords="511,204,689,229"/>
+<area shape="poly" title=" " alt="" coords="445,222,498,219,498,224,445,227"/>
+<area shape="poly" title=" " alt="" coords="923,374,1007,386,1006,391,922,379"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="987,203,1220,228"/>
+<area shape="poly" title=" " alt="" coords="919,351,937,340,948,329,954,317,960,292,966,266,973,254,985,241,999,232,1002,236,988,245,977,257,971,268,965,293,959,319,952,332,940,344,921,356"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1268,195,1459,235"/>
+<area shape="poly" title=" " alt="" coords="1220,213,1254,213,1254,218,1220,218"/>
+<area shape="rect" href="gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302" title=" " alt="" coords="540,303,660,328"/>
+<area shape="poly" title=" " alt="" coords="389,401,555,331,557,336,391,406"/>
+<area shape="rect" href="gvf__traj_8c.html#a54a144011fc0310e40d5190b005ae052" title=" " alt="" coords="537,404,663,429"/>
+<area shape="poly" title=" " alt="" coords="432,414,524,414,524,419,432,419"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="769,304,919,329"/>
+<area shape="poly" title=" " alt="" coords="660,313,755,314,755,319,660,318"/>
+<area shape="rect" href="gvf__common_8c.html#a579808adcbffe590c874e69dd3612af0" title=" " alt="" coords="749,153,939,179"/>
+<area shape="poly" title=" " alt="" coords="659,307,681,299,700,288,711,276,717,265,723,239,729,213,736,200,748,188,754,183,757,187,751,192,740,204,734,215,728,241,722,267,715,280,703,292,683,304,661,312"/>
+<area shape="rect" href="gvf__common_8c.html#ae27d2fdd26aa5b984a27c86c77544ac7" title=" " alt="" coords="757,203,931,228"/>
+<area shape="poly" title=" " alt="" coords="659,300,700,288,759,261,809,233,812,237,761,266,702,292,661,305"/>
+<area shape="poly" title=" " alt="" coords="939,163,988,163,988,169,939,169"/>
+<area shape="poly" title=" " alt="" coords="912,176,1023,197,1022,203,911,181"/>
+<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="1027,104,1179,129"/>
+<area shape="poly" title=" " alt="" coords="911,151,1022,129,1023,135,912,156"/>
+<area shape="poly" title=" " alt="" coords="911,200,1022,179,1023,184,912,205"/>
+<area shape="poly" title=" " alt="" coords="907,226,940,245,952,259,959,272,966,298,972,324,989,350,1013,368,1041,382,1039,387,1010,373,985,353,967,326,961,299,955,274,948,262,937,249,905,230"/>
+<area shape="poly" title=" " alt="" coords="932,213,973,213,973,218,932,218"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="995,313,1211,339"/>
+<area shape="poly" title=" " alt="" coords="896,226,940,245,955,257,965,269,974,280,988,290,1026,307,1023,312,985,295,970,284,960,272,951,261,937,250,894,230"/>
+<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="1026,256,1181,281"/>
+<area shape="poly" title=" " alt="" coords="907,225,1028,251,1027,256,906,231"/>
+<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="1268,310,1459,350"/>
+<area shape="poly" title=" " alt="" coords="1212,325,1254,326,1254,331,1212,330"/>
+<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="1284,260,1443,285"/>
+<area shape="poly" title=" " alt="" coords="1181,267,1270,269,1270,274,1181,273"/>
+<area shape="poly" title=" " alt="" coords="663,412,1006,402,1006,407,663,418"/>
+<area shape="rect" href="guidance_2gvf_2nav_2nav__line_8c.html#a25cad000f4a5687e1901d7170a933f12" title=" " alt="" coords="499,505,701,531"/>
+<area shape="poly" title=" " alt="" coords="451,515,485,515,485,520,451,520"/>
+<area shape="poly" title=" " alt="" coords="701,516,816,507,878,498,938,483,1010,454,1070,420,1073,425,1013,459,939,489,879,503,817,513,702,521"/>
+<area shape="rect" href="guidance_2gvf_2nav_2nav__line_8c.html#adf3322a1f7b2b0dc7b8d0728857c2e78" title=" " alt="" coords="759,556,929,581"/>
+<area shape="poly" title=" " alt="" coords="663,528,769,551,768,556,662,533"/>
+<area shape="rect" href="guidance_2gvf_2nav_2nav__line_8c.html#a8a7e4b01ef4a47661711c12b574c5f9d" title=" " alt="" coords="1009,556,1197,581"/>
+<area shape="poly" title=" " alt="" coords="929,566,995,566,995,571,929,571"/>
+<area shape="poly" title=" " alt="" coords="1198,575,1283,584,1282,589,1197,580"/>
+<area shape="poly" title=" " alt="" coords="417,460,701,439,1006,410,1007,415,702,445,417,465"/>
+<area shape="rect" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="513,657,687,683"/>
+<area shape="poly" title=" " alt="" coords="444,659,499,662,499,667,443,664"/>
+<area shape="poly" title=" " alt="" coords="688,676,837,684,1031,683,1137,676,1246,663,1354,644,1458,617,1488,605,1517,589,1565,557,1568,561,1520,594,1490,610,1459,622,1355,649,1246,669,1137,681,1031,688,836,689,688,681"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a90d454e9b138c8d61f930edc166f73e3" name="a90d454e9b138c8d61f930edc166f73e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90d454e9b138c8d61f930edc166f73e3">&#9670;&#160;</a></span>gvf_nav_survey_polygon_setup()</h2>
+<a id="ab0120ff537a036d26f25e4373788c381" name="ab0120ff537a036d26f25e4373788c381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0120ff537a036d26f25e4373788c381">&#9670;&#160;</a></span>nav_gvf_survey_polygon_setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +509,7 @@ sweep_vec</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> gvf_nav_survey_polygon_setup </td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> nav_gvf_survey_polygon_setup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>first_wp</em>, </td>
@@ -600,7 +563,9 @@ sweep_vec</td>
 </table>
 </div><div class="memdoc">
 
-<p>initializes the variables needed for the survey to start </p>
+<p>Initializes the variables needed for the survey to start. </p>
+<hr  />
+<hr  />
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">first_wp</td><td>the first <a class="el" href="nav_2waypoints_8h.html#structWaypoint">Waypoint</a> of the polygon </td></tr>
@@ -614,20 +579,20 @@ sweep_vec</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00135">135</a> of file <a class="el" href="nav__survey__polygon__gvf_8c_source.html">nav_survey_polygon_gvf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00145">145</a> of file <a class="el" href="nav__survey__polygon__gvf_8c_source.html">nav_survey_polygon_gvf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="airspeed__uADC_8c_source.html#l00059">altitude</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00054">gvf_SurveyPolyAdv::dir_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00081">gvf_SurveyPolyAdv::entry_center</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00154">FLOAT_VECT2_NORMALIZE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gENTRY</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gERR</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00078">gvf_get_two_intersects()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00040">gvf_survey</a>, <a class="el" href="nav_8h_source.html#l00191">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00177">NavVerticalAutoThrottleMode</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00060">gvf_SurveyPolyAdv::poly_count</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00059">gvf_SurveyPolyAdv::poly_first</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00066">gvf_SurveyPolyAdv::psa_altitude</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00063">gvf_SurveyPolyAdv::psa_min_rad</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00065">gvf_SurveyPolyAdv::psa_shot_dist</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00064">gvf_SurveyPolyAdv::psa_sweep_width</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00056">gvf_SurveyPolyAdv::rad_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00070">gvf_SurveyPolyAdv::return_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00078">gvf_SurveyPolyAdv::seg_end</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00077">gvf_SurveyPolyAdv::seg_start</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00069">gvf_SurveyPolyAdv::segment_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00075">gvf_SurveyPolyAdv::stage</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00062">sweep</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00055">gvf_SurveyPolyAdv::sweep_vec</a>, <a class="el" href="pprz__algebra_8h_source.html#l00068">VECT2_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00098">VECT2_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00086">VECT2_SUM</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="airspeed__uADC_8c_source.html#l00059">altitude</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00054">gvf_SurveyPolyAdv::dir_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00081">gvf_SurveyPolyAdv::entry_center</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00154">FLOAT_VECT2_NORMALIZE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gENTRY</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00046">gERR</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00086">gvf_get_two_intersects()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00042">gvf_survey</a>, <a class="el" href="nav_8h_source.html#l00191">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00177">NavVerticalAutoThrottleMode</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00060">gvf_SurveyPolyAdv::poly_count</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00059">gvf_SurveyPolyAdv::poly_first</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00066">gvf_SurveyPolyAdv::psa_altitude</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00063">gvf_SurveyPolyAdv::psa_min_rad</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00065">gvf_SurveyPolyAdv::psa_shot_dist</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00064">gvf_SurveyPolyAdv::psa_sweep_width</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00056">gvf_SurveyPolyAdv::rad_vec</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00070">gvf_SurveyPolyAdv::return_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00078">gvf_SurveyPolyAdv::seg_end</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00077">gvf_SurveyPolyAdv::seg_start</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00069">gvf_SurveyPolyAdv::segment_angle</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00075">gvf_SurveyPolyAdv::stage</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00062">sweep</a>, <a class="el" href="nav__survey__polygon__gvf_8h_source.html#l00055">gvf_SurveyPolyAdv::sweep_vec</a>, <a class="el" href="pprz__algebra_8h_source.html#l00068">VECT2_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00098">VECT2_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00086">VECT2_SUM</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="nav__survey__polygon__gvf_8h_a90d454e9b138c8d61f930edc166f73e3_cgraph.png" border="0" usemap="#anav__survey__polygon__gvf_8h_a90d454e9b138c8d61f930edc166f73e3_cgraph" alt=""/></div>
-<map name="anav__survey__polygon__gvf_8h_a90d454e9b138c8d61f930edc166f73e3_cgraph" id="anav__survey__polygon__gvf_8h_a90d454e9b138c8d61f930edc166f73e3_cgraph">
-<area shape="rect" title="initializes the variables needed for the survey to start" alt="" coords="5,5,189,45"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a3f99b0a5691b231366a774387afc9a95" title="intersects a line with the polygon and gives back the two intersection points" alt="" coords="237,13,411,38"/>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nav__survey__polygon__gvf_8h_ab0120ff537a036d26f25e4373788c381_cgraph.png" border="0" usemap="#anav__survey__polygon__gvf_8h_ab0120ff537a036d26f25e4373788c381_cgraph" alt=""/></div>
+<map name="anav__survey__polygon__gvf_8h_ab0120ff537a036d26f25e4373788c381_cgraph" id="anav__survey__polygon__gvf_8h_ab0120ff537a036d26f25e4373788c381_cgraph">
+<area shape="rect" title="Initializes the variables needed for the survey to start." alt="" coords="5,5,189,45"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a3f99b0a5691b231366a774387afc9a95" title="Intersects a line with the polygon and gives back the two intersection points." alt="" coords="237,13,411,38"/>
 <area shape="poly" title=" " alt="" coords="190,23,223,23,223,28,190,28"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a1ed530db241dd4311c25f7af1405504d" title="intercept two lines and give back the point of intersection" alt="" coords="459,13,636,38"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html#a1ed530db241dd4311c25f7af1405504d" title="Intercept two lines and give back the point of intersection." alt="" coords="459,13,636,38"/>
 <area shape="poly" title=" " alt="" coords="411,23,445,23,445,28,411,28"/>
 </map>
 </div>
@@ -640,7 +605,7 @@ sweep_vec</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4ee91589357a83ed771c51844e853db2.html">guidance</a></li><li class="navelem"><a class="el" href="dir_f11651931491444d54c9510df68bbdd5.html">gvf</a></li><li class="navelem"><a class="el" href="dir_6cbe33ad8bda979edc8e42fad66cbe01.html">nav</a></li><li class="navelem"><a class="el" href="nav__survey__polygon__gvf_8h.html">nav_survey_polygon_gvf.h</a></li>
-    <li class="footer">Generated on Tue Apr 29 2025 11:03:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 16 2025 20:05:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

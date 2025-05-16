@@ -157,7 +157,7 @@ var searchData=
   ['sht2_5funinit_154',['SHT2_UNINIT',['../humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5',1,'humid_sht_i2c.h']]],
   ['shunt_5fresistance_155',['SHUNT_RESISTANCE',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a5b79720871eafedcab857d3a23811dca',1,'esc32.h']]],
   ['sig_156',['SIG',['../gec_8h.html#a6d13a1c88cfb3c15be159f325f869404abed797aac9b7d073c8459e0d95496ba9',1,'gec.h']]],
-  ['sin_157',['SIN',['../gvf_8h.html#a5e61057ce8c51b9efe7810e885a5e608a55720cf0d1ebf3d6f0eac12f2dffbfa2',1,'gvf.h']]],
+  ['sin_157',['SIN',['../gvf__traj_8h.html#a5e61057ce8c51b9efe7810e885a5e608a55720cf0d1ebf3d6f0eac12f2dffbfa2',1,'gvf_traj.h']]],
   ['spektrum_158',['SPEKTRUM',['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa3b0361d7c922463802f9a82f455e5c59',1,'nps_radio_control.h']]],
   ['spicphaedge1_159',['SPICphaEdge1',['../group__spi.html#gga133152bd9fd803ef729bdfb9dc488baaaef9737139e9d1ed3ef30d2200acc629e',1,'spi.h']]],
   ['spicphaedge2_160',['SPICphaEdge2',['../group__spi.html#gga133152bd9fd803ef729bdfb9dc488baaa0819b3eda26f2666ff69ced98db281ce',1,'spi.h']]],

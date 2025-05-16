@@ -1,9 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__control_energy.html":[1,77],
-"module__control_energy.html#module_load_example__control_energy":[1,77,0],
-"module__control_energy.html#module_xml__control_energy":[1,77,0,0],
-"module__control_energyadaptive.html":[1,78],
 "module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,78,0],
 "module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,78,0,0],
 "module__control_new.html":[1,79],
@@ -144,7 +140,6 @@ var NAVTREEINDEX127 =
 "module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink":[1,137,1],
 "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink":[1,137,0],
 "module__digital_cam_pprzlink.html#module_xml__digital_cam_pprzlink":[1,137,2,0],
-"module__digital_cam_pprzlink.html#periodic_functions":[1,137,1,0],
 "module__digital_cam_servo.html":[1,138],
 "module__digital_cam_servo.html#configuration__digital_cam_servo":[1,138,1],
 "module__digital_cam_servo.html#functions__digital_cam_servo":[1,138,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX127 =
 "module__ezcurrent.html#functions__ezcurrent":[1,408,2],
 "module__ezcurrent.html#module_load_example__ezcurrent":[1,408,0],
 "module__ezcurrent.html#module_xml__ezcurrent":[1,408,2,0],
-"module__fbw_datalink.html":[1,111]
+"module__fbw_datalink.html":[1,111],
+"module__fbw_datalink.html#configuration__fbw_datalink":[1,111,1],
+"module__fbw_datalink.html#module_load_example__fbw_datalink":[1,111,0],
+"module__fbw_datalink.html#module_xml__fbw_datalink":[1,111,1,0],
+"module__fc_rotor.html":[1,474],
+"module__fc_rotor.html#datalink_functions__fc_rotor":[1,474,2]
 };

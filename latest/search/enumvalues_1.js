@@ -9,7 +9,7 @@ var searchData=
   ['battery_5fmonitor_5fbus_5fvoltage_5fread_6',['BATTERY_MONITOR_BUS_VOLTAGE_READ',['../battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84a40d8630e1ed6658a3798b0db9108544c',1,'battery_monitor.h']]],
   ['battery_5fmonitor_5fbus_5fvoltage_5freq_7',['BATTERY_MONITOR_BUS_VOLTAGE_REQ',['../battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84a1721a7d2d23f8e86eb5b6515e904492e',1,'battery_monitor.h']]],
   ['baud_5frate_8',['BAUD_RATE',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610aa6784f71bbdc61f1d864f2fe0c4465bc',1,'esc32.h']]],
-  ['bezier_5f2d_9',['BEZIER_2D',['../gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800a6d6307c969cf51481ea1c254e00c2406',1,'gvf_parametric.h']]],
+  ['bezier_5f2d_9',['BEZIER_2D',['../gvf__param__traj_8h.html#a1f89e28ef0e60a8ec5555b596db39800a6d6307c969cf51481ea1c254e00c2406',1,'gvf_param_traj.h']]],
   ['binary_5fcommand_5fack_10',['BINARY_COMMAND_ACK',['../esc32_8h.html#a4521dc742b139291f3b4b20b35cdf015ac5b0ddf43c6431820190188a30abbe02',1,'esc32.h']]],
   ['binary_5fcommand_5farm_11',['BINARY_COMMAND_ARM',['../esc32_8h.html#a4521dc742b139291f3b4b20b35cdf015a5b1e290fa7684dc37a2646c1c4eaddf3',1,'esc32.h']]],
   ['binary_5fcommand_5fcli_12',['BINARY_COMMAND_CLI',['../esc32_8h.html#a4521dc742b139291f3b4b20b35cdf015a1552470540ede1c2af5edc71401e0345',1,'esc32.h']]],

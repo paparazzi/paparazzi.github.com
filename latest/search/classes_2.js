@@ -5,7 +5,7 @@ var searchData=
   ['batmonbal_2',['BatMonBal',['../battery__monitor_8h.html#structBatMonBal',1,'']]],
   ['batmonbus_3',['BatMonBus',['../battery__monitor_8h.html#structBatMonBus',1,'']]],
   ['battery_5finfo_4',['battery_info',['../power__uavcan_8c.html#structbattery__info',1,'']]],
-  ['bezier_5ft_5',['bezier_t',['../gvf__parametric__2d__bezier__splines_8h.html#structbezier__t',1,'']]],
+  ['bezier_5ft_5',['bezier_t',['../gvf__param__traj_8h.html#structbezier__t',1,'']]],
   ['blanking_5ft_6',['blanking_t',['../mt9f002_8c.html#structblanking__t',1,'']]],
   ['block_5fheader_7',['Block_header',['../vl53l5cx__api_8h.html#unionBlock__header',1,'']]],
   ['block_5fheader_2e_5f_5funnamed354_5f_5f_8',['Block_header.__unnamed354__',['../vl53l5cx__api_8h.html#structBlock__header_8____unnamed354____',1,'']]],

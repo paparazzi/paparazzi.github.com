@@ -1,19 +1,21 @@
 <map id="get_dist2_to_point" name="get_dist2_to_point">
-<area shape="rect" id="Node000001" title="Returns squared horizontal distance to given point." alt="" coords="921,274,1064,300"/>
+<area shape="rect" id="Node000001" title="Returns squared horizontal distance to given point." alt="" coords="921,300,1064,325"/>
 <area shape="rect" id="Node000002" href="$rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="704,57,873,82"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="975,264,932,199,903,162,872,128,842,104,812,85,815,80,845,99,875,124,907,159,936,196,979,261"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="977,288,935,212,906,168,871,128,843,103,813,85,816,80,846,99,875,124,910,165,940,209,982,286"/>
 <area shape="rect" id="Node000008" href="$nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="747,138,830,164"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="967,266,924,228,872,189,824,166,827,161,875,185,928,224,970,262"/>
-<area shape="rect" id="Node000014" href="$nav__rover__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title="Implement basic nav function." alt="" coords="747,450,830,476"/>
-<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="975,313,931,362,875,416,817,453,814,448,872,412,928,359,971,309"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="972,290,929,240,902,213,872,189,827,166,829,161,875,185,905,209,933,236,976,287"/>
+<area shape="rect" id="Node000014" href="$nav__rover__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title="Implement basic nav function." alt="" coords="747,376,830,401"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="946,332,825,378,823,373,944,327"/>
 <area shape="rect" id="Node000015" href="$nav__rotorcraft__hybrid_8c.html#a342a4deb3398a85a7e59d72d7bee0cf8" title="Implement basic nav function for the hybrid case." alt="" coords="499,325,630,350"/>
-<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="908,300,630,333,630,327,907,294"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="908,320,630,337,630,331,907,315"/>
 <area shape="rect" id="Node000016" href="$nav__rotorcraft__hybrid_8c.html#a46cf0dc6f9a25e42377471eaeec36704" title=" " alt="" coords="497,276,632,301"/>
-<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="908,290,632,291,632,286,907,285"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="907,310,632,295,632,289,908,305"/>
 <area shape="rect" id="Node000017" href="$nav__rotorcraft__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,200,832,225"/>
-<area shape="poly" id="edge23_Node000001_Node000017" title=" " alt="" coords="943,272,823,228,825,223,945,267"/>
-<area shape="rect" id="Node000018" href="$nav__rover__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,376,832,401"/>
-<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="962,309,875,359,828,378,826,373,872,354,959,305"/>
+<area shape="poly" id="edge23_Node000001_Node000017" title=" " alt="" coords="952,296,815,228,817,223,954,291"/>
+<area shape="rect" id="Node000018" href="$nav__rover__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,426,832,452"/>
+<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="972,337,929,377,875,416,833,432,831,427,872,411,926,373,968,333"/>
+<area shape="rect" id="Node000020" href="$rotwing__state_8c.html#ac855fe558b428b1f53aa53c8361ce08f" title=" " alt="" coords="707,476,871,516"/>
+<area shape="poly" id="edge31_Node000001_Node000020" title=" " alt="" coords="980,339,938,402,909,436,875,467,855,479,852,474,872,462,905,432,934,398,976,336"/>
 <area shape="rect" id="Node000003" href="$rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="473,24,656,49"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="690,58,650,52,651,46,691,52"/>
 <area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,24,188,49"/>
@@ -38,14 +40,14 @@
 <area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="491,226,389,204,391,198,492,221"/>
 <area shape="rect" id="Node000013" href="$nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="273,401,388,426"/>
 <area shape="poly" id="edge15_Node000010_Node000013" title=" " alt="" coords="487,259,475,265,346,402,342,399,472,261,484,254"/>
-<area shape="poly" id="edge18_Node000014_Node000013" title=" " alt="" coords="734,472,614,477,543,475,473,467,410,450,358,429,360,424,412,445,474,462,544,470,614,472,734,466"/>
+<area shape="poly" id="edge18_Node000014_Node000013" title=" " alt="" coords="734,394,388,413,388,408,733,389"/>
 <area shape="poly" id="edge20_Node000015_Node000011" title=" " alt="" coords="490,325,391,304,392,299,491,320"/>
 <area shape="poly" id="edge22_Node000016_Node000011" title=" " alt="" coords="484,291,425,291,425,286,484,286"/>
 <area shape="poly" id="edge24_Node000017_Node000009" title=" " alt="" coords="735,198,603,153,604,148,737,193"/>
 <area shape="poly" id="edge25_Node000017_Node000010" title=" " alt="" coords="732,222,648,232,647,227,731,216"/>
 <area shape="poly" id="edge26_Node000017_Node000012" title=" " alt="" coords="732,212,401,195,402,189,732,207"/>
-<area shape="poly" id="edge30_Node000018_Node000013" title=" " alt="" coords="732,394,388,413,388,408,731,389"/>
+<area shape="poly" id="edge30_Node000018_Node000013" title=" " alt="" coords="732,455,656,467,564,475,524,474,473,467,410,450,358,429,360,424,412,445,474,462,524,469,564,470,656,462,731,450"/>
 <area shape="rect" id="Node000019" href="$nav__rover__base_8c.html#afd0e05357829985f3000d7456e66ef61" title=" " alt="" coords="524,426,605,452"/>
-<area shape="poly" id="edge28_Node000018_Node000019" title=" " alt="" coords="732,404,606,433,605,427,731,398"/>
+<area shape="poly" id="edge28_Node000018_Node000019" title=" " alt="" coords="732,442,605,442,605,436,732,436"/>
 <area shape="poly" id="edge29_Node000019_Node000013" title=" " alt="" coords="510,436,388,423,388,417,510,431"/>
 </map>

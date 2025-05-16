@@ -41,14 +41,13 @@ var rotwing__state_8h =
       [ "ROTWING_STATE_FREE", "rotwing__state_8h.html#ae1f91e813cdc0fd4e4c491e3d166b687a42093eb92562371445e2f83242c49d95", null ]
     ] ],
     [ "rotwing_state_choose_circle_direction", "rotwing__state_8h.html#ae046087f644a3e732de4bd9a920dd5d5", null ],
+    [ "rotwing_state_choose_state_by_dist", "rotwing__state_8h.html#ac855fe558b428b1f53aa53c8361ce08f", null ],
     [ "rotwing_state_hover_motors_idling", "rotwing__state_8h.html#a6f2548c6bcef89af1eeca92bd4adff79", null ],
     [ "rotwing_state_hover_motors_running", "rotwing__state_8h.html#a193394bc5b357951cc100d7c10f252be", null ],
     [ "rotwing_state_init", "rotwing__state_8h.html#a5187c7100a4e54eb7d052892fbafd06e", null ],
     [ "rotwing_state_periodic", "rotwing__state_8h.html#aea48320cf6f1fd18ec0a0046b46c9c73", null ],
     [ "rotwing_state_pusher_motor_running", "rotwing__state_8h.html#a04abf638527dd86dc34ac4081878f051", null ],
     [ "rotwing_state_set", "rotwing__state_8h.html#aff35d18fe4f20f627b4afe1599d01da4", null ],
-    [ "rotwing_state_set_transition_wp", "rotwing__state_8h.html#acd4da143c5743a15ee87b61e4753d60e", null ],
     [ "rotwing_state_skew_angle_valid", "rotwing__state_8h.html#a814af6b3f693b1d6b2aac23bd23abecb", null ],
-    [ "rotwing_state_update_WP_height", "rotwing__state_8h.html#af26916d6057d1b576cb4df4131eaedf5", null ],
     [ "rotwing_state", "rotwing__state_8h.html#ae33fd5787b7c43008cd695534aef71b1", null ]
 ];
