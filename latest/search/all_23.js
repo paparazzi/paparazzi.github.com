@@ -53,8 +53,8 @@ var searchData=
   ['yp_50',['yP',['../hf__float_8h.html#a8dfd091ee2cc7c9476c170ea691426ef',1,'HfilterFloat']]],
   ['ypr_51',['ypr',['../vn200__serial_8h.html#a503b33cf27864e150fd830a8a7cca307',1,'VNData']]],
   ['ypr_5fu_52',['ypr_u',['../vn200__serial_8h.html#a44a622f3ec49b55e56de4ae627c8e582',1,'VNData']]],
-  ['yr_5fmax_53',['YR_MAX',['../group__math__geodetic__wmm.html#gac1e70266a00e37b2aafa6fcde7de47e3',1,'pprz_geodetic_wmm2020.h']]],
-  ['yr_5fmin_54',['YR_MIN',['../group__math__geodetic__wmm.html#ga2d093208ab0191f4e8d97959f47868e1',1,'pprz_geodetic_wmm2020.h']]],
+  ['yr_5fmax_53',['YR_MAX',['../group__math__geodetic__wmm.html#gac1e70266a00e37b2aafa6fcde7de47e3',1,'pprz_geodetic_wmm2025.h']]],
+  ['yr_5fmin_54',['YR_MIN',['../group__math__geodetic__wmm.html#ga2d093208ab0191f4e8d97959f47868e1',1,'pprz_geodetic_wmm2025.h']]],
   ['yscale_55',['YSCALE',['../namespacemesonh_1_1mesonh__atmosphere.html#a65843c0e9c154bcb36aece538345ab6b',1,'mesonh::mesonh_atmosphere']]],
   ['yuv_5fopencv_5fto_5fyuv422_56',['yuv_opencv_to_yuv422',['../opencv__contour_8cpp.html#aadd2888b6c6c8ff43ebab01e4c6ce156',1,'opencv_contour.cpp']]],
   ['yy_57',['yy',['../eff__scheduling__rotwing__V2_8h.html#a259833b1ca9fbc14420cd8c9ac52a8f2',1,'I']]]

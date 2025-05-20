@@ -1,4 +1,4 @@
-var pprz__geodetic__wmm2020_8h =
+var pprz__geodetic__wmm2025_8h =
 [
     [ "EXT_COEFF1", "group__math__geodetic__wmm.html#gac16936073cc48edb3186d149aafd41f8", null ],
     [ "EXT_COEFF2", "group__math__geodetic__wmm.html#ga048c90b39198c639be47377aa4ab14d8", null ],

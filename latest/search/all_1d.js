@@ -539,7 +539,7 @@ var searchData=
   ['secondordernotchfilter_536',['SecondOrderNotchFilter',['../notch__filter__float_8h.html#structSecondOrderNotchFilter',1,'']]],
   ['secs_5fday_537',['SECS_DAY',['../gps__mtk_8c.html#a69917c6f775aefa006141379c81e0e8f',1,'gps_mtk.c']]],
   ['secs_5fhour_538',['SECS_HOUR',['../gps__mtk_8c.html#a29dced533d54747a92c5f1d2e08a85dd',1,'gps_mtk.c']]],
-  ['secs_5fin_5fyear_539',['SECS_IN_YEAR',['../group__math__geodetic__wmm.html#gaedaabe5005511ea2e021e6dda4712276',1,'pprz_geodetic_wmm2020.h']]],
+  ['secs_5fin_5fyear_539',['SECS_IN_YEAR',['../group__math__geodetic__wmm.html#gaedaabe5005511ea2e021e6dda4712276',1,'pprz_geodetic_wmm2025.h']]],
   ['secs_5fminute_540',['SECS_MINUTE',['../gps__mtk_8c.html#a8a6b7f393a1d898727558c8513abeffd',1,'gps_mtk.c']]],
   ['secs_5fweek_541',['SECS_WEEK',['../gps__mtk_8c.html#a26904ebbbbc348abd3316e91e46a4161',1,'gps_mtk.c']]],
   ['sect_542',['sect',['../nav__cube_8h.html#a00a987e7a8d72234130023cfe55a2f85',1,'NavCube']]],

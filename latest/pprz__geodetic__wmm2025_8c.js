@@ -1,4 +1,4 @@
-var pprz__geodetic__wmm2020_8c =
+var pprz__geodetic__wmm2025_8c =
 [
     [ "extrapsh", "group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e", null ],
     [ "mag_calc", "group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e", null ],
