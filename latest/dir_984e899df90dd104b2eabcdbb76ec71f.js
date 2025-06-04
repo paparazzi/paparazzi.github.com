@@ -40,6 +40,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_line_osam.h", "nav__line__osam_8h.html", "nav__line__osam_8h" ],
     [ "nav_poles.c", "nav__poles_8c.html", "nav__poles_8c" ],
     [ "nav_poles.h", "nav__poles_8h.html", "nav__poles_8h" ],
+    [ "nav_poles_rotorcraft.c", "nav__poles__rotorcraft_8c.html", "nav__poles__rotorcraft_8c" ],
+    [ "nav_poles_rotorcraft.h", "nav__poles__rotorcraft_8h.html", "nav__poles__rotorcraft_8h" ],
     [ "nav_rosette.c", "nav__rosette_8c.html", "nav__rosette_8c" ],
     [ "nav_rosette.h", "nav__rosette_8h.html", "nav__rosette_8h" ],
     [ "nav_rotorcraft_base.c", "nav__rotorcraft__base_8c.html", "nav__rotorcraft__base_8c" ],
