@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__optical_flow_landing.html#configuration__optical_flow_landing":[1,104,1],
 "module__optical_flow_landing.html#functions__optical_flow_landing":[1,104,2],
 "module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,104,0],
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,104,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__sonar_adc.html#module_load_example__sonar_adc":[1,430,0],
 "module__sonar_adc.html#module_xml__sonar_adc":[1,430,2,0],
 "module__sonar_bebop.html":[1,431],
-"module__sonar_bebop.html#configuration__sonar_bebop":[1,431,1],
-"module__sonar_bebop.html#functions__sonar_bebop":[1,431,2]
+"module__sonar_bebop.html#configuration__sonar_bebop":[1,431,1]
 };

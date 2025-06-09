@@ -1,5 +1,6 @@
 var NAVTREEINDEX193 =
 {
+"shell_8h.html#aaf2a365fb3c908a1f8b5acbaa3e23f25":[12,0,1,0,6,13,13,0],
 "shell_8h_source.html":[12,0,1,0,6,13,13],
 "shell__arch_8c.html":[12,0,1,0,0,0,1,1,3],
 "shell__arch_8c.html#a0d71d20b7713f8ddabd21f854e7ebbc4":[12,0,1,0,0,0,1,1,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX193 =
 "sim_2modules_2core_2threads__arch_8c_source.html":[12,0,1,0,0,2,1,1,4],
 "sim_2modules_2core_2threads__arch_8h.html":[12,0,1,0,0,2,1,1,5],
 "sim_2modules_2core_2threads__arch_8h.html#a5f1464e2a0b7ea07882573ddbc9b3418":[12,0,1,0,0,2,1,1,5,2],
-"sim_2modules_2core_2threads__arch_8h.html#ad01596ab85fed26b3a00ae8882a7e21b":[12,0,1,0,0,2,1,1,5,3],
-"sim_2modules_2core_2threads__arch_8h.html#af924da8457e8503f00a27cb7102624e1":[12,0,1,0,0,2,1,1,5,4]
+"sim_2modules_2core_2threads__arch_8h.html#ad01596ab85fed26b3a00ae8882a7e21b":[12,0,1,0,0,2,1,1,5,3]
 };

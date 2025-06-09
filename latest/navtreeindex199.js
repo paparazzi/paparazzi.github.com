@@ -1,5 +1,6 @@
 var NAVTREEINDEX199 =
 {
+"stabilization__attitude__ref__quat__int_8h.html#a677908c0facae1f128acfa7debc28a92":[12,0,1,0,3,2,2,31,9],
 "stabilization__attitude__ref__quat__int_8h.html#a6e006eef843ed6542b195d97de9aefaf":[12,0,1,0,3,2,2,31,17],
 "stabilization__attitude__ref__quat__int_8h.html#a7944325a332759a00c54a72a263d9a92":[12,0,1,0,3,2,2,31,3],
 "stabilization__attitude__ref__quat__int_8h.html#a795660682006f1de4578ab9f1ecd2c98":[12,0,1,0,3,2,2,31,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX199 =
 "stabilization__rate_8h.html#ad0d997e6d5513bac60669a40949b56cb":[12,0,1,0,3,2,2,41,4],
 "stabilization__rate_8h.html#ada430eaa159c2f3207bf8482d16e8d02":[12,0,1,0,3,2,2,41,0],
 "stabilization__rate_8h.html#afe4783ecccebfb6cfe611d7f248801c2":[12,0,1,0,3,2,2,41,10],
-"stabilization__rate_8h_source.html":[12,0,1,0,3,2,2,41],
-"stabilization__rate__indi_8c.html":[12,0,1,0,3,2,2,42]
+"stabilization__rate_8h_source.html":[12,0,1,0,3,2,2,41]
 };

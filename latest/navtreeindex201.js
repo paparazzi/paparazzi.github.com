@@ -1,8 +1,9 @@
 var NAVTREEINDEX201 =
 {
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,1,1,1,2,0],
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,0,1,1,6,0],
+"stm32_2modules_2core_2threads__arch_8h.html#structpprzBSem":[12,0,1,0,0,3,1,1,2,1],
 "stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,3,1,1,2,0],
+"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,0,1,1,6,0],
+"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,1,1,1,2,0],
 "stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,2,1,1,5,0],
 "stm32_2modules_2core_2threads__arch_8h_source.html":[12,0,1,0,0,3,1,1,2],
 "stm32_2modules_2radio__control_2ppm__arch_8c.html":[9,8,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX201 =
 "superbitrf__rc_8h_source.html":[12,0,1,0,6,56,23],
 "swashplate__mixing_8c.html":[12,0,1,0,6,34,0],
 "swashplate__mixing_8c.html#a3b16bf330efb81b1474079c35f903311":[12,0,1,0,6,34,0,1],
-"swashplate__mixing_8c.html#a745e49f27dd4720daa68d4774be479ef":[12,0,1,0,6,34,0,6],
-"swashplate__mixing_8c.html#a7d4326255042772a1931e6c1eed9ea92":[12,0,1,0,6,34,0,4]
+"swashplate__mixing_8c.html#a745e49f27dd4720daa68d4774be479ef":[12,0,1,0,6,34,0,6]
 };

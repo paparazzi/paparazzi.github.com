@@ -1,5 +1,6 @@
 var NAVTREEINDEX192 =
 {
+"sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6":[12,0,1,0,6,42,20,1],
 "sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6":[12,0,1,0,6,42,20,3],
 "sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71":[12,0,1,0,6,42,20,23],
 "sdlog__chibios_8c.html#ae10f69027b3fe9dc11978cbb6039f038":[12,0,1,0,6,42,20,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX192 =
 "shell_8c_source.html":[12,0,1,0,6,13,12],
 "shell_8h.html":[12,0,1,0,6,13,13],
 "shell_8h.html#a61cf879e2e341903b7e751694e94b491":[12,0,1,0,6,13,13,1],
-"shell_8h.html#a69b075ef7e4d7bcf5a903d3d75baac02":[12,0,1,0,6,13,13,2],
-"shell_8h.html#aaf2a365fb3c908a1f8b5acbaa3e23f25":[12,0,1,0,6,13,13,0]
+"shell_8h.html#a69b075ef7e4d7bcf5a903d3d75baac02":[12,0,1,0,6,13,13,2]
 };

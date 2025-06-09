@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"module__gvf_classic.html":[1,481],
 "module__gvf_classic.html#configuration__gvf_classic":[1,481,1],
 "module__gvf_classic.html#functions__gvf_classic":[1,481,2],
 "module__gvf_classic.html#module_load_example__gvf_classic":[1,481,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "module__imu_temp_ctrl.html#functions__imu_temp_ctrl":[1,228,2],
 "module__imu_temp_ctrl.html#module_load_example__imu_temp_ctrl":[1,228,0],
 "module__imu_temp_ctrl.html#module_xml__imu_temp_ctrl":[1,228,2,0],
-"module__imu_vectornav.html":[1,226],
-"module__imu_vectornav.html#configuration__imu_vectornav":[1,226,1]
+"module__imu_vectornav.html":[1,226]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__sonar_bebop.html#functions__sonar_bebop":[1,431,2],
 "module__sonar_bebop.html#module_load_example__sonar_bebop":[1,431,0],
 "module__sonar_bebop.html#module_xml__sonar_bebop":[1,431,2,0],
 "module__sonar_pwm.html":[1,432],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "module__temp_lm75.html#functions__temp_lm75":[1,302,1],
 "module__temp_lm75.html#module_load_example__temp_lm75":[1,302,0],
 "module__temp_lm75.html#module_xml__temp_lm75":[1,302,1,0],
-"module__temp_tcouple_adc.html":[1,303],
-"module__temp_tcouple_adc.html#functions__temp_tcouple_adc":[1,303,1]
+"module__temp_tcouple_adc.html":[1,303]
 };

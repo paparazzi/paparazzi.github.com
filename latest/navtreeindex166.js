@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"paparazzi_messages.html#PPRZ_DEBUG":[2,0,237],
 "paparazzi_messages.html#PPRZ_MODE":[2,0,9],
 "paparazzi_messages.html#RANGEFINDER":[2,0,26],
 "paparazzi_messages.html#RATE_LOOP":[2,0,131],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "pca9685__i2c_8c.html#ac54d0f74686306310ca0270f5c7d093d":[12,0,1,0,6,52,0,72],
 "pca9685__i2c_8c.html#ac612c5c4b72f37bcac43a3e6f02048a3":[12,0,1,0,6,52,0,56],
 "pca9685__i2c_8c.html#ac7733b91808e78d802b2590a4ffbfeac":[12,0,1,0,6,52,0,69],
-"pca9685__i2c_8c.html#ac88b8d9c4ae3e248e3ac8ee93f92251a":[12,0,1,0,6,52,0,77],
-"pca9685__i2c_8c.html#ad63ba01358d5676a5069969688875f11":[12,0,1,0,6,52,0,19]
+"pca9685__i2c_8c.html#ac88b8d9c4ae3e248e3ac8ee93f92251a":[12,0,1,0,6,52,0,77]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX190 =
 {
+"rssi_8c.html":[12,0,1,0,6,46,11],
 "rssi_8c.html#a00b69071e42e110770211eea7f181cb3":[12,0,1,0,6,46,11,7],
 "rssi_8c.html#a159b4a2fba436e4c1b520646ebc5527d":[12,0,1,0,6,46,11,4],
 "rssi_8c.html#a36542a9ee32c8daa1fe6cc69720ec462":[12,0,1,0,6,46,11,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX190 =
 "sbus__dual_8h.html":[12,0,1,0,6,56,18],
 "sbus__dual_8h.html#a16fc1909cb36167ee2c561e1c591c017":[12,0,1,0,6,56,18,2],
 "sbus__dual_8h.html#a2c10b51827e5f39514845fc9e878a2b6":[12,0,1,0,6,56,18,0],
-"sbus__dual_8h.html#aed87c6cc1dea1c07bf450996279c1533":[12,0,1,0,6,56,18,1],
-"sbus__dual_8h_source.html":[12,0,1,0,6,56,18]
+"sbus__dual_8h.html#aed87c6cc1dea1c07bf450996279c1533":[12,0,1,0,6,56,18,1]
 };

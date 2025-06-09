@@ -1,5 +1,6 @@
 var NAVTREEINDEX196 =
 {
+"sst25vfxxxx_8h.html#a4f1d5cb01ec45490d365f9bfcfc7bed3":[12,0,1,0,7,126,24],
 "sst25vfxxxx_8h.html#a4ffa0c5d3c5d83e1864c8e18a7611cdd":[12,0,1,0,7,126,0,2],
 "sst25vfxxxx_8h.html#a5176254063edecec07a175efcbf07623":[12,0,1,0,7,126,23],
 "sst25vfxxxx_8h.html#a5a59ea666265299fffd16e9dc0b7ff07":[12,0,1,0,7,126,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX196 =
 "stabilization__adaptive_8h.html#a32a80a87573b0fdb2faed1546b40ff64":[12,0,1,0,3,1,1,1,6],
 "stabilization__adaptive_8h.html#a3eec296f149d50a88ace12cae5f3bc95":[12,0,1,0,3,1,1,1,2],
 "stabilization__adaptive_8h.html#a42724178b90d872c2fbd93bbcabdedad":[12,0,1,0,3,1,1,1,10],
-"stabilization__adaptive_8h.html#a53c0a1521cccf2ec157e21fe2d011eec":[12,0,1,0,3,1,1,1,1],
-"stabilization__adaptive_8h.html#ab8baa3d33ff0c43f1b14e2b4c1d62c1e":[12,0,1,0,3,1,1,1,0]
+"stabilization__adaptive_8h.html#a53c0a1521cccf2ec157e21fe2d011eec":[12,0,1,0,3,1,1,1,1]
 };

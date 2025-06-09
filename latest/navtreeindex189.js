@@ -1,5 +1,6 @@
 var NAVTREEINDEX189 =
 {
+"rover_2navigation_8h.html#a0800b5556b46580e64de21b701b78b08":[12,0,1,0,3,3,9,0,18],
 "rover_2navigation_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e":[12,0,1,0,3,3,9,7],
 "rover_2navigation_8h.html#a107204ca2bbc31eaf93c6ceb0e051afe":[12,0,1,0,3,3,9,42],
 "rover_2navigation_8h.html#a10961173ac6973d795af2f62eb67edca":[12,0,1,0,3,3,9,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX189 =
 "rpm__sensor_8h.html#a7bd9698aa6ec5ae5e50583a7d0661963":[12,0,1,0,6,63,80,0],
 "rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a":[12,0,1,0,6,63,80,1],
 "rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177":[12,0,1,0,6,63,80,2],
-"rpm__sensor_8h_source.html":[12,0,1,0,6,63,80],
-"rssi_8c.html":[12,0,1,0,6,46,11]
+"rpm__sensor_8h_source.html":[12,0,1,0,6,63,80]
 };

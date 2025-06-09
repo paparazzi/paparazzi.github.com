@@ -1,5 +1,6 @@
 var NAVTREEINDEX158 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ab99e09e5d7cf617d243ad4e19bacf778":[12,0,1,0,1,18,0,1,283],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#aba49d4d898766a690874ccc9e072e4e4":[12,0,1,0,1,18,0,1,7],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#abb5ea6f9775215dc0f6c75244bbdabe2":[12,0,1,0,1,18,0,1,187],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#abc31e984ff8585698be0665539a55a79":[12,0,1,0,1,18,0,1,202],
@@ -248,6 +249,5 @@ var NAVTREEINDEX158 =
 "onboard_modules.html#modules_category_guidance":[1,0,19],
 "onboard_modules.html#modules_category_helicopter":[1,0,20],
 "onboard_modules.html#modules_category_imu":[1,0,21],
-"onboard_modules.html#modules_category_ins":[1,0,22],
-"onboard_modules.html#modules_category_intermcu":[1,0,23]
+"onboard_modules.html#modules_category_ins":[1,0,22]
 };

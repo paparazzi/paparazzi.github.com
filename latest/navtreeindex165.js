@@ -1,5 +1,6 @@
 var NAVTREEINDEX165 =
 {
+"paparazzi_messages.html#AHRS_EULER_INT":[2,0,151],
 "paparazzi_messages.html#AHRS_GYRO_BIAS_INT":[2,0,173],
 "paparazzi_messages.html#AHRS_LKF":[2,0,186],
 "paparazzi_messages.html#AHRS_MEASUREMENT_EULER":[2,0,169],
@@ -248,6 +249,5 @@ var NAVTREEINDEX165 =
 "paparazzi_messages.html#PONG":[2,0,2],
 "paparazzi_messages.html#POTENTIAL":[2,0,119],
 "paparazzi_messages.html#POWER_DEVICE":[2,0,16],
-"paparazzi_messages.html#PPM":[2,0,95],
-"paparazzi_messages.html#PPRZ_DEBUG":[2,0,237]
+"paparazzi_messages.html#PPM":[2,0,95]
 };

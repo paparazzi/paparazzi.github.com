@@ -34,8 +34,8 @@ var nav__takeoff__and__landing_8h =
     [ "nav_land_here", "nav__takeoff__and__landing_8h.html#ad975e43beff38069205c0a5cd3ca2ba4", null ],
     [ "nav_takeoff_and_landing_init", "nav__takeoff__and__landing_8h.html#a6bc92059c5c55474014f217f641288be", null ],
     [ "nav_takeoff_and_landing_periodic", "nav__takeoff__and__landing_8h.html#ad84a19338fa572f8a30d2ad459fdbd75", null ],
-    [ "nav_takeoff_from_here", "nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5", null ],
-    [ "nav_takeoff_from_loc", "nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922", null ],
-    [ "nav_takeoff_from_wp", "nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0", null ],
+    [ "nav_takeoff_from_here", "nav__takeoff__and__landing_8h.html#a9c8b52ecea38f3c635710cede8a5aa8f", null ],
+    [ "nav_takeoff_from_loc", "nav__takeoff__and__landing_8h.html#af141bbdcbbb3149419fb156e764336d1", null ],
+    [ "nav_takeoff_from_wp", "nav__takeoff__and__landing_8h.html#a30277e646937f013f8858f21254fdbb7", null ],
     [ "nav_takeoff_direction", "nav__takeoff__and__landing_8h.html#a6020a4f219cfb7e507355b25a7a57f38", null ]
 ];
