@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__optical_flow_landing.html#configuration__optical_flow_landing":[1,104,1],
 "module__optical_flow_landing.html#functions__optical_flow_landing":[1,104,2],
 "module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,104,0],
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,104,2,0],
@@ -75,6 +74,7 @@ var NAVTREEINDEX132 =
 "module__power_switch.html#module_load_example__power_switch":[1,46,0],
 "module__power_switch.html#module_xml__power_switch":[1,46,1,0],
 "module__power_uavcan.html":[1,421],
+"module__power_uavcan.html#af_section":[1,421,1,0],
 "module__power_uavcan.html#configuration__power_uavcan":[1,421,1],
 "module__power_uavcan.html#functions__power_uavcan":[1,421,2],
 "module__power_uavcan.html#module_load_example__power_uavcan":[1,421,0],
@@ -186,7 +186,6 @@ var NAVTREEINDEX132 =
 "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam":[1,50,0],
 "module__rotorcraft_cam.html#module_xml__rotorcraft_cam":[1,50,3,0],
 "module__rotwing_state.html":[1,379],
-"module__rotwing_state.html#af_section":[1,379,1,0],
 "module__rotwing_state.html#configuration__rotwing_state":[1,379,1],
 "module__rotwing_state.html#functions__rotwing_state":[1,379,2],
 "module__rotwing_state.html#module_load_example__rotwing_state":[1,379,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__sonar_adc.html#module_load_example__sonar_adc":[1,430,0],
 "module__sonar_adc.html#module_xml__sonar_adc":[1,430,2,0],
 "module__sonar_bebop.html":[1,431],
-"module__sonar_bebop.html#configuration__sonar_bebop":[1,431,1]
+"module__sonar_bebop.html#configuration__sonar_bebop":[1,431,1],
+"module__sonar_bebop.html#functions__sonar_bebop":[1,431,2]
 };

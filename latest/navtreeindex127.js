@@ -1,5 +1,6 @@
 var NAVTREEINDEX127 =
 {
+"module__control_energy.html#module_xml__control_energy":[1,77,0,0],
 "module__control_energyadaptive.html":[1,78],
 "module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,78,0],
 "module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,78,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX127 =
 "module__fbw_datalink.html":[1,111],
 "module__fbw_datalink.html#configuration__fbw_datalink":[1,111,1],
 "module__fbw_datalink.html#module_load_example__fbw_datalink":[1,111,0],
-"module__fbw_datalink.html#module_xml__fbw_datalink":[1,111,1,0],
-"module__fc_rotor.html":[1,475]
+"module__fbw_datalink.html#module_xml__fbw_datalink":[1,111,1,0]
 };

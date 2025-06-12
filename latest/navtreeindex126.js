@@ -77,6 +77,7 @@ var NAVTREEINDEX126 =
 "module__ballistic_touchdown.html#module_xml__ballistic_touchdown":[1,321,1,0],
 "module__baro_amsys.html":[1,395],
 "module__baro_amsys.html#configuration__baro_amsys":[1,395,1],
+"module__baro_amsys.html#define":[1,395,1,0],
 "module__baro_amsys.html#functions__baro_amsys":[1,395,2],
 "module__baro_amsys.html#module_load_example__baro_amsys":[1,395,0],
 "module__baro_amsys.html#module_xml__baro_amsys":[1,395,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX126 =
 "module__control_adaptive.html#module_load_example__control_adaptive":[1,76,0],
 "module__control_adaptive.html#module_xml__control_adaptive":[1,76,0,0],
 "module__control_energy.html":[1,77],
-"module__control_energy.html#module_load_example__control_energy":[1,77,0],
-"module__control_energy.html#module_xml__control_energy":[1,77,0,0]
+"module__control_energy.html#module_load_example__control_energy":[1,77,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__imu_vectornav.html#configuration__imu_vectornav":[1,226,1],
 "module__imu_vectornav.html#functions__imu_vectornav":[1,226,2],
 "module__imu_vectornav.html#module_load_example__imu_vectornav":[1,226,0],
 "module__imu_vectornav.html#module_xml__imu_vectornav":[1,226,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__mag_lis3mdl.html#functions__mag_lis3mdl":[1,415,2],
 "module__mag_lis3mdl.html#module_load_example__mag_lis3mdl":[1,415,0],
 "module__mag_lis3mdl.html#module_xml__mag_lis3mdl":[1,415,2,0],
-"module__mag_pitot_uart.html":[1,416]
+"module__mag_pitot_uart.html":[1,416],
+"module__mag_pitot_uart.html#configuration__mag_pitot_uart":[1,416,1]
 };
