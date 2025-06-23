@@ -1,36 +1,107 @@
 <map id="sw/airborne/modules/core/threads.h" name="sw/airborne/modules/core/threads.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="903,5,1062,45"/>
-<area shape="rect" id="Node000002" href="$chibios_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="5,101,219,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="889,34,598,55,418,73,238,96,196,103,195,98,237,91,417,68,597,50,889,29"/>
-<area shape="rect" id="Node000003" href="$uavcan_8c.html" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="227,196,421,236"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="890,31,724,37,533,49,368,68,312,81,283,95,276,106,274,118,279,145,293,172,309,194,305,198,288,174,274,147,268,118,271,104,280,91,311,76,367,63,532,44,723,32,889,26"/>
-<area shape="rect" id="Node000004" href="$chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="294,101,490,141"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="890,40,710,63,502,96,467,103,466,98,501,91,709,57,889,34"/>
-<area shape="rect" id="Node000005" href="$linux_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="514,93,681,148"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="890,49,693,96,682,99,680,94,691,91,889,44"/>
-<area shape="rect" id="Node000006" href="$sim_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="705,93,871,148"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="932,54,844,96,842,91,930,49"/>
-<area shape="rect" id="Node000007" href="$stm32_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="895,93,1070,148"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="985,59,985,93,980,93,980,59"/>
-<area shape="rect" id="Node000008" href="$slcan_8h.html" title=" " alt="" coords="1094,101,1253,141"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1035,49,1136,98,1134,103,1032,54"/>
-<area shape="rect" id="Node000010" href="$syslink__dl_8c.html" title="Syslink protocol handling and functionalities." alt="" coords="1277,101,1491,141"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1076,45,1304,98,1302,103,1075,51"/>
-<area shape="rect" id="Node000011" href="$gec__dl_8h.html" title="Datalink using Galois Embedded Crypto." alt="" coords="1515,101,1674,141"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1076,32,1273,54,1389,70,1503,91,1534,98,1532,103,1502,96,1388,75,1273,59,1075,37"/>
-<area shape="rect" id="Node000013" href="$copilot_8h.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="1698,101,1857,141"/>
-<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="1076,27,1351,46,1519,64,1687,91,1718,98,1717,103,1686,96,1519,70,1351,51,1076,33"/>
-<area shape="rect" id="Node000017" href="$thd__test_8c.html" title=" " alt="" coords="1881,101,2039,141"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1076,25,1228,29,1426,40,1648,59,1870,91,1902,98,1901,103,1869,96,1647,64,1426,45,1228,34,1076,30"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="372,153,340,198,336,194,368,150"/>
-<area shape="rect" id="Node000009" href="$slcan_8c.html" title=" " alt="" coords="1094,196,1253,236"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1176,154,1176,196,1171,196,1171,154"/>
-<area shape="rect" id="Node000012" href="$gec__dl_8c.html" title=" " alt="" coords="1385,196,1543,236"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1558,151,1492,198,1489,194,1555,147"/>
-<area shape="rect" id="Node000014" href="$copilot__common_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="1568,196,1768,236"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1747,152,1692,198,1688,194,1743,148"/>
-<area shape="rect" id="Node000015" href="$copilot__fixedwing_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="1792,196,1997,236"/>
-<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="1813,147,1873,194,1869,198,1810,151"/>
-<area shape="rect" id="Node000016" href="$copilot__rotorcraft_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="2021,196,2224,236"/>
-<area shape="poly" id="edge16_Node000013_Node000016" title=" " alt="" coords="1857,142,1870,145,2051,193,2049,198,1869,151,1856,147"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="3531,5,3690,45"/>
+<area shape="rect" id="Node000002" href="$chibios_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="2304,101,2517,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3518,30,3335,35,3089,45,2811,65,2530,96,2489,103,2488,98,2529,91,2810,59,3089,40,3335,29,3518,25"/>
+<area shape="rect" id="Node000003" href="$uavcan_8c.html" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="5,203,200,243"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="3518,29,3345,31,3137,40,3034,49,2940,60,2861,76,2803,96,2787,108,2778,122,2768,138,2750,150,2701,160,2609,168,2318,180,1927,186,1485,189,649,192,356,194,212,199,172,206,171,201,212,193,356,189,649,186,1485,184,1927,181,2318,174,2609,163,2701,155,2748,146,2764,134,2773,120,2783,104,2800,91,2860,71,2939,55,3034,43,3137,35,3345,26,3518,23"/>
+<area shape="rect" id="Node000004" href="$chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="2542,101,2738,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="3517,32,3181,51,2970,70,2758,96,2718,103,2717,98,2757,91,2969,64,3181,46,3517,27"/>
+<area shape="rect" id="Node000005" href="$linux_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="2814,93,2981,148"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="3518,35,3278,55,3135,73,2992,96,2981,98,2980,93,2992,91,3134,67,3278,50,3517,29"/>
+<area shape="rect" id="Node000006" href="$sim_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="3005,93,3171,148"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="3518,41,3361,63,3183,96,3172,98,3171,93,3182,91,3360,58,3517,35"/>
+<area shape="rect" id="Node000007" href="$stm32_2modules_2core_2threads__arch_8c.html" title=" " alt="" coords="3195,93,3370,148"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="3532,52,3371,97,3369,92,3530,47"/>
+<area shape="rect" id="Node000008" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="3395,101,3573,141"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="3576,56,3511,103,3508,98,3573,51"/>
+<area shape="rect" id="Node000078" href="$humid__sht__i2c_8h.html" title=" " alt="" coords="6356,203,6535,243"/>
+<area shape="poly" id="edge52_Node000001_Node000078" title=" " alt="" coords="3610,59,3614,106,3623,128,3637,146,3676,154,3766,161,4073,172,4499,179,4984,184,5898,188,6344,193,6382,201,6381,206,6344,199,5898,194,4984,189,4499,184,4073,177,3766,166,3675,159,3635,150,3618,130,3609,107,3605,59"/>
+<area shape="rect" id="Node000214" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="3648,101,3827,141"/>
+<area shape="poly" id="edge46_Node000001_Node000214" title=" " alt="" coords="3649,51,3713,98,3710,103,3646,56"/>
+<area shape="rect" id="Node000245" href="$amt22_8h.html" title=" " alt="" coords="6742,203,6917,243"/>
+<area shape="poly" id="edge55_Node000001_Node000245" title=" " alt="" coords="3704,40,3773,60,3840,91,3857,106,3866,121,3875,134,3892,146,3945,156,4048,165,4373,177,4812,183,5306,185,6241,186,6570,188,6731,193,6768,201,6767,206,6730,199,6570,193,6241,191,5306,190,4812,188,4373,182,4048,170,3944,161,3890,150,3872,138,3862,124,3853,109,3837,96,3771,65,3703,45"/>
+<area shape="rect" id="Node000287" href="$slcan_8h.html" title=" " alt="" coords="3902,101,4061,141"/>
+<area shape="poly" id="edge49_Node000001_Node000287" title=" " alt="" coords="3702,46,3883,91,3911,98,3910,103,3882,96,3701,51"/>
+<area shape="rect" id="Node000289" href="$syslink__dl_8c.html" title="Syslink protocol handling and functionalities." alt="" coords="4085,101,4299,141"/>
+<area shape="poly" id="edge50_Node000001_Node000289" title=" " alt="" coords="3704,35,3876,59,4074,91,4111,98,4110,103,4073,96,3875,64,3703,41"/>
+<area shape="rect" id="Node000290" href="$gec__dl_8h.html" title="Datalink using Galois Embedded Crypto." alt="" coords="4323,101,4482,141"/>
+<area shape="poly" id="edge51_Node000001_Node000290" title=" " alt="" coords="3704,27,3978,46,4145,64,4313,91,4344,98,4342,103,4311,96,4145,70,3977,51,3704,33"/>
+<area shape="rect" id="Node000292" href="$copilot_8h.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="4506,101,4665,141"/>
+<area shape="poly" id="edge53_Node000001_Node000292" title=" " alt="" coords="3704,25,3856,29,4054,40,4274,59,4495,91,4527,98,4526,103,4494,96,4274,65,4053,45,3856,34,3704,30"/>
+<area shape="rect" id="Node000296" href="$thd__test_8c.html" title=" " alt="" coords="4689,101,4847,141"/>
+<area shape="poly" id="edge54_Node000001_Node000296" title=" " alt="" coords="3704,23,3885,25,4127,34,4402,54,4541,70,4678,91,4710,98,4709,103,4677,96,4541,75,4401,59,4127,39,3884,30,3704,28"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="2557,146,2530,151,2346,171,2178,184,2024,192,1880,194,1616,188,1370,174,1125,160,861,154,718,157,563,164,395,178,212,199,172,206,171,201,212,193,395,173,563,159,718,151,861,149,1125,155,1371,169,1617,183,1880,189,2023,187,2178,179,2346,166,2529,145,2556,141"/>
+<area shape="rect" id="Node000009" href="$chibios_2mcu__periph_2i2c__arch_8c.html" title="Interface from Paparazzi I2C to ChibiOS I2C driver." alt="" coords="3993,203,4173,243"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="3571,141,3592,145,3701,161,3787,169,3873,177,3982,193,4015,201,4014,206,3981,199,3872,182,3787,174,3701,167,3592,151,3570,146"/>
+<area shape="rect" id="Node000010" href="$lidar__vl53l5cx_8c.html" title=" " alt="" coords="4197,203,4419,243"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="3569,141,3592,145,3758,165,3889,171,4019,176,4186,193,4228,201,4227,206,4185,199,4019,181,3888,176,3758,170,3592,151,3568,146"/>
+<area shape="rect" id="Node000011" href="$linux_2mcu__periph_2i2c__arch_8c.html" title="I2C functionality." alt="" coords="4443,203,4613,243"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="3568,141,3592,145,3719,161,3827,168,4012,168,4101,167,4196,169,4304,177,4431,193,4466,201,4465,206,4430,199,4304,182,4196,174,4101,172,4012,173,3827,173,3719,166,3592,151,3567,146"/>
+<area shape="rect" id="Node000012" href="$sim_2mcu__periph_2i2c__arch_8c.html" title="Dummy functions for handling of I2C hardware in sim." alt="" coords="4637,203,4808,243"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="3567,141,3592,145,3749,163,3882,170,3999,170,4109,167,4219,164,4336,165,4469,174,4626,193,4661,201,4660,206,4625,199,4469,179,4336,171,4219,170,4109,173,3999,176,3882,176,3748,168,3592,151,3566,146"/>
+<area shape="rect" id="Node000013" href="$stm32_2mcu__periph_2i2c__arch_8c.html" title="Handling of I2C hardware for STM32." alt="" coords="4833,203,5007,243"/>
+<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="3567,141,3592,145,3778,166,3936,173,4076,172,4206,167,4337,163,4476,163,4635,171,4820,193,4857,201,4856,206,4820,199,4634,177,4476,168,4337,168,4206,173,4076,178,3936,179,3778,171,3592,151,3566,146"/>
+<area shape="rect" id="Node000014" href="$imu__aspirin__arch_8c.html" title=" " alt="" coords="5031,196,5222,251"/>
+<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="3567,141,3592,145,3808,168,3992,177,4154,175,4306,169,4458,163,4620,161,4804,170,5020,193,5031,195,5030,200,5020,199,4804,175,4620,167,4458,168,4306,174,4155,181,3992,182,3808,174,3592,151,3566,146"/>
+<area shape="rect" id="Node000015" href="$stm32_2peripherals_2hmc5843__arch_8c.html" title=" " alt="" coords="5246,203,5455,243"/>
+<area shape="poly" id="edge15_Node000008_Node000015" title=" " alt="" coords="3567,141,3592,145,3841,171,4052,181,4239,179,4413,171,4587,164,4774,161,4986,169,5235,193,5277,201,5276,206,5234,199,4986,174,4774,166,4587,169,4413,177,4239,184,4052,186,3841,177,3592,151,3566,146"/>
+<area shape="rect" id="Node000016" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board." alt="" coords="5479,203,5649,243"/>
+<area shape="poly" id="edge16_Node000008_Node000016" title=" " alt="" coords="3566,141,3592,145,3741,163,3876,174,4002,180,4118,182,4331,177,4530,165,4730,154,4943,150,5059,153,5185,161,5320,174,5468,193,5504,201,5503,206,5468,199,5320,179,5184,166,5059,159,4943,156,4730,159,4531,170,4331,182,4118,187,4001,185,3876,179,3740,168,3592,151,3565,146"/>
+<area shape="rect" id="Node000017" href="$boards_2bebop_2actuators_8h.html" title="Actuator driver for the bebop." alt="" coords="5673,203,5820,243"/>
+<area shape="poly" id="edge17_Node000008_Node000017" title=" " alt="" coords="3566,141,3592,145,3686,155,3793,161,4044,168,4627,164,4927,162,5211,163,5461,173,5569,181,5662,193,5694,201,5692,206,5661,199,5568,187,5461,178,5210,169,4927,167,4627,170,4044,173,3793,167,3685,160,3592,151,3565,146"/>
+<area shape="rect" id="Node000019" href="$mt9f002_8h.html" title="Initialization and configuration of the MT9F002 CMOS Chip." alt="" coords="5844,203,5991,243"/>
+<area shape="poly" id="edge18_Node000008_Node000019" title=" " alt="" coords="3566,141,3592,145,3693,156,3810,163,4081,169,4388,168,4713,164,5037,160,5344,162,5615,171,5732,181,5832,193,5864,201,5863,206,5832,199,5731,186,5615,177,5344,167,5037,166,4713,169,4388,173,4081,174,3810,168,3693,161,3592,151,3565,146"/>
+<area shape="rect" id="Node000027" href="$mt9v117_8h.html" title="Initialization and configuration of the MT9V117 CMOS Chip." alt="" coords="6015,203,6161,243"/>
+<area shape="poly" id="edge19_Node000008_Node000027" title=" " alt="" coords="3566,141,3592,145,3701,156,3827,164,4118,170,4449,168,4798,163,5147,159,5478,160,5769,170,5895,180,6003,193,6035,201,6034,206,6002,199,5894,185,5769,175,5477,165,5148,165,4798,169,4449,174,4118,175,3826,169,3701,162,3592,151,3565,146"/>
+<area shape="rect" id="Node000030" href="$boards_2disco_2actuators_8h.html" title="Actuator driver for the disco." alt="" coords="6185,203,6332,243"/>
+<area shape="poly" id="edge20_Node000008_Node000030" title=" " alt="" coords="3566,141,3592,145,3709,157,3843,165,4156,171,4509,169,4884,163,5258,158,5611,158,5923,168,6057,179,6174,193,6206,201,6205,206,6173,199,6057,184,5923,174,5611,164,5258,163,4884,168,4509,174,4156,176,3843,170,3708,162,3592,151,3565,146"/>
+<area shape="rect" id="Node000032" href="$lisa__l_2baro__board_8c.html" title=" " alt="" coords="225,203,373,243"/>
+<area shape="poly" id="edge21_Node000008_Node000032" title=" " alt="" coords="3407,146,3382,151,3246,165,3090,174,2727,181,2317,177,1883,169,1448,162,1038,160,850,164,676,171,520,182,386,199,353,206,352,201,385,193,520,177,676,166,850,159,1038,155,1448,156,1883,164,2317,172,2727,175,3090,168,3246,159,3381,145,3406,141"/>
+<area shape="rect" id="Node000033" href="$i2c_8c.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="397,203,576,243"/>
+<area shape="poly" id="edge22_Node000008_Node000033" title=" " alt="" coords="3407,146,3382,151,3256,164,3110,173,2772,181,2389,180,1985,174,1580,169,1198,168,860,176,714,185,588,199,551,206,549,201,588,193,714,180,859,171,1197,162,1580,163,1985,169,2389,175,2772,176,3110,168,3255,158,3381,145,3406,141"/>
+<area shape="rect" id="Node000034" href="$softi2c_8h.html" title="Platform&#45;independent software I2C implementation." alt="" coords="600,203,779,243"/>
+<area shape="poly" id="edge23_Node000008_Node000034" title=" " alt="" coords="3407,146,3382,151,3265,163,3130,172,2816,180,2461,179,2086,174,1711,170,1356,169,1043,178,908,186,791,199,754,206,753,201,790,193,907,181,1042,172,1356,164,1711,164,2086,169,2461,174,2816,174,3129,166,3264,158,3381,145,3406,141"/>
+<area shape="rect" id="Node000036" href="$actuators__asctec__v2_8c.html" title="Actuators driver for Asctec v2 motor controllers." alt="" coords="862,299,1021,353"/>
+<area shape="poly" id="edge24_Node000008_Node000036" title=" " alt="" coords="3407,146,3382,151,3248,155,2975,157,2198,157,1787,160,1424,167,1154,179,1070,188,1027,198,1010,214,991,240,957,299,952,297,987,237,1006,210,1024,194,1069,183,1154,174,1423,162,1787,155,2198,152,2975,151,3247,150,3381,145,3406,141"/>
+<area shape="rect" id="Node000037" href="$actuators__asctec__v2_8h.html" title="Actuators driver for Asctec v2 motor controllers." alt="" coords="803,196,962,251"/>
+<area shape="poly" id="edge25_Node000008_Node000037" title=" " alt="" coords="3407,146,3382,151,3273,162,3148,170,2858,178,2529,178,2181,174,1833,170,1505,170,1215,178,1090,187,982,199,962,202,962,197,981,193,1089,181,1214,173,1505,165,1833,164,2181,168,2529,172,2858,173,3148,165,3273,157,3381,145,3406,141"/>
+<area shape="rect" id="Node000038" href="$actuators__md25_8h.html" title=" " alt="" coords="1038,196,1197,251"/>
+<area shape="poly" id="edge27_Node000008_Node000038" title=" " alt="" coords="3407,146,3382,151,3284,161,3170,168,2907,176,2610,176,2295,172,1980,169,1683,170,1420,179,1307,187,1210,199,1197,201,1196,196,1209,193,1307,182,1420,173,1683,165,1980,164,2295,167,2610,170,2907,170,3170,163,3283,156,3381,145,3406,141"/>
+<area shape="rect" id="Node000040" href="$battery__monitor_8h.html" title="driver for ADC AD7997 on a custom made power board version 4.0 and 5.0" alt="" coords="1221,203,1397,243"/>
+<area shape="poly" id="edge28_Node000008_Node000040" title=" " alt="" coords="3407,146,3382,151,3226,169,3083,182,2951,189,2829,191,2604,186,2395,174,2186,161,1962,157,1839,159,1708,167,1565,179,1410,199,1373,206,1372,201,1409,193,1565,174,1708,161,1839,154,1962,151,2186,156,2395,168,2605,181,2829,186,2951,184,3083,177,3225,164,3381,145,3406,141"/>
+<area shape="rect" id="Node000042" href="$i2c__abuse__test_8c.html" title="Total I2C Abuse:" alt="" coords="1421,196,1589,251"/>
+<area shape="poly" id="edge29_Node000008_Node000042" title=" " alt="" coords="3407,146,3382,151,3241,168,3112,179,2993,186,2883,188,2680,183,2491,172,2302,162,2100,158,1989,161,1871,168,1742,180,1602,199,1590,201,1589,195,1601,193,1741,175,1870,163,1989,156,2100,153,2302,156,2491,167,2680,178,2883,182,2993,180,3112,174,3240,163,3381,145,3406,141"/>
+<area shape="rect" id="Node000043" href="$generic__com_8c.html" title=" " alt="" coords="1614,203,1773,243"/>
+<area shape="poly" id="edge30_Node000008_Node000043" title=" " alt="" coords="3407,146,3382,151,3255,166,3140,176,2934,184,2752,180,2582,171,2412,161,2231,159,2025,169,1910,181,1784,199,1751,206,1750,201,1784,193,1910,176,2025,164,2231,154,2412,156,2582,165,2752,175,2934,179,3139,171,3255,161,3381,145,3406,141"/>
+<area shape="rect" id="Node000044" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="1797,196,1955,251"/>
+<area shape="poly" id="edge31_Node000008_Node000044" title=" " alt="" coords="3406,146,3382,151,3167,174,2985,182,2824,179,2673,171,2523,164,2362,162,2181,172,1967,199,1956,201,1955,195,1966,193,2180,167,2362,157,2523,158,2674,166,2824,173,2985,176,3167,169,3381,145,3405,141"/>
+<area shape="rect" id="Node000045" href="$MPPT_8c.html" title="Solar cells MPTT monitoring." alt="" coords="1979,203,2138,243"/>
+<area shape="poly" id="edge32_Node000008_Node000045" title=" " alt="" coords="3406,146,3382,151,3195,172,3036,179,2896,177,2765,171,2634,166,2494,166,2336,175,2150,199,2117,206,2116,201,2149,193,2335,170,2494,160,2634,161,2765,166,2896,172,3036,174,3195,166,3381,145,3405,141"/>
+<area shape="rect" id="Node000046" href="$gpio__ext__pca95xx_8c.html" title=" " alt="" coords="2162,203,2377,243"/>
+<area shape="poly" id="edge33_Node000008_Node000046" title=" " alt="" coords="3405,146,3382,151,3231,169,3103,178,2990,179,2885,177,2780,175,2667,176,2539,183,2388,199,2346,206,2345,201,2388,193,2538,177,2667,170,2780,170,2885,172,2990,174,3103,172,3231,164,3381,145,3404,141"/>
+<area shape="rect" id="Node000047" href="$gps__ubx__i2c_8c.html" title="pprz link device for Ublox over I2C" alt="" coords="2459,306,2618,346"/>
+<area shape="poly" id="edge34_Node000008_Node000047" title=" " alt="" coords="3405,146,3382,151,3307,157,3213,157,2994,153,2883,153,2780,159,2691,173,2654,184,2624,198,2596,221,2574,251,2558,281,2547,307,2542,305,2553,279,2570,248,2592,218,2621,194,2652,179,2690,168,2779,154,2883,148,2994,147,3213,152,3307,151,3381,145,3404,141"/>
+<area shape="rect" id="Node000048" href="$gps__ubx__i2c_8h.html" title="pprz link device for Ublox over I2C" alt="" coords="2401,203,2559,243"/>
+<area shape="poly" id="edge35_Node000008_Node000048" title=" " alt="" coords="3405,146,3382,151,3260,166,3157,173,2980,174,2803,175,2700,183,2579,199,2544,206,2543,201,2578,193,2700,177,2803,170,2980,169,3156,168,3260,161,3381,145,3404,141"/>
+<area shape="rect" id="Node000049" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="6559,203,6718,243"/>
+<area shape="poly" id="edge37_Node000008_Node000049" title=" " alt="" coords="3588,139,3636,145,3768,155,3920,161,4273,165,5093,157,5514,153,5912,155,6264,167,6416,178,6547,193,6582,201,6581,206,6546,199,6415,183,6264,172,5912,160,5514,158,5093,162,4273,170,3920,166,3768,160,3636,151,3587,144"/>
+<area shape="rect" id="Node000050" href="$imu__aspirin__i2c_8c.html" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="2635,203,2803,243"/>
+<area shape="poly" id="edge38_Node000008_Node000050" title=" " alt="" coords="3404,146,3382,151,3296,163,3223,170,3098,174,2973,179,2901,186,2815,199,2782,206,2781,201,2814,193,2900,180,2973,173,3098,169,3222,164,3295,158,3381,145,3403,141"/>
+<area shape="rect" id="Node000051" href="$imu__bebop_8c.html" title="Driver for the Bebop (2) magnetometer, accelerometer and gyroscope." alt="" coords="2827,203,2986,243"/>
+<area shape="poly" id="edge39_Node000008_Node000051" title=" " alt="" coords="3402,146,3382,151,3274,167,3190,174,3106,181,2999,199,2969,206,2968,201,2998,193,3105,176,3190,168,3274,161,3381,145,3401,141"/>
+<area shape="rect" id="Node000052" href="$imu__bmi088__i2c_8c.html" title="IMU driver for the BMI088 using I2C." alt="" coords="3011,203,3184,243"/>
+<area shape="poly" id="edge40_Node000008_Node000052" title=" " alt="" coords="3398,147,3197,199,3169,206,3168,201,3195,193,3397,141"/>
+<area shape="rect" id="Node000053" href="$imu__disco_8c.html" title="Driver for the Disco magnetometer, accelerometer and gyroscope." alt="" coords="3209,203,3367,243"/>
+<area shape="poly" id="edge41_Node000008_Node000053" title=" " alt="" coords="3436,149,3326,206,3323,201,3434,145"/>
+<area shape="rect" id="Node000054" href="$imu__mpu60x0__i2c_8c.html" title="Driver for IMU with only MPU60X0 via I2C." alt="" coords="3391,203,3577,243"/>
+<area shape="poly" id="edge42_Node000008_Node000054" title=" " alt="" coords="3487,155,3487,203,3481,203,3481,155"/>
+<area shape="rect" id="Node000055" href="$imu__mpu9250__i2c_8c.html" title="IMU driver for the MPU9250 using I2C." alt="" coords="3601,203,3786,243"/>
+<area shape="poly" id="edge43_Node000008_Node000055" title=" " alt="" coords="3537,144,3655,201,3653,206,3535,149"/>
+<area shape="rect" id="Node000056" href="$modules_2ins_2ins__arduimu_8c.html" title=" " alt="" coords="3810,203,3969,243"/>
+<area shape="poly" id="edge44_Node000008_Node000056" title=" " alt="" coords="3575,141,3593,145,3798,193,3825,201,3824,206,3797,199,3591,151,3574,146"/>
+<area shape="poly" id="edge45_Node000008_Node000078" title=" " alt="" coords="3566,141,3592,145,3716,158,3860,166,4193,174,4570,173,4968,168,5367,163,5744,162,6077,171,6220,180,6344,193,6382,201,6381,206,6344,199,6220,185,6076,176,5744,167,5367,168,4968,173,4570,178,4193,179,3859,172,3716,163,3592,151,3565,146"/>
+<area shape="poly" id="edge26_Node000037_Node000036" title=" " alt="" coords="907,261,928,297,924,300,903,264"/>
+<area shape="poly" id="edge36_Node000048_Node000047" title=" " alt="" coords="2500,254,2530,305,2525,307,2496,257"/>
+<area shape="poly" id="edge47_Node000214_Node000049" title=" " alt="" coords="3819,141,3846,145,3967,157,4108,166,4435,173,4805,171,5197,165,5588,160,5958,160,6285,169,6425,179,6547,193,6582,201,6581,206,6546,199,6425,184,6284,175,5958,165,5588,165,5197,170,4805,176,4435,178,4108,171,3967,163,3845,151,3818,146"/>
+<area shape="poly" id="edge48_Node000214_Node000245" title=" " alt="" coords="3819,141,3846,145,3976,158,4126,167,4475,175,4870,173,5288,167,5706,161,6101,160,6451,169,6601,179,6731,193,6768,201,6767,206,6730,199,6600,185,6450,175,6101,166,5706,166,5288,172,4870,178,4475,180,4126,172,3975,164,3845,151,3818,146"/>
 </map>

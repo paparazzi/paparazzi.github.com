@@ -92,14 +92,15 @@ $(document).ready(function(){initNavTree('humid__sht__i2c_8h.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">humid_sht_i2c.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
+<code>#include &quot;std.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for humid_sht_i2c.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,9 +108,25 @@ $(document).ready(function(){initNavTree('humid__sht__i2c_8h.html',''); initResi
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht__i2c_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2meteo_2humid__sht__i2c_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2meteo_2humid__sht__i2c_8h" id="asw_2airborne_2modules_2meteo_2humid__sht__i2c_8h">
-<area shape="rect" title=" " alt="" coords="5,5,184,45"/>
-<area shape="rect" title=" " alt="" coords="67,93,122,119"/>
-<area shape="poly" title=" " alt="" coords="97,46,97,79,92,79,92,46"/>
+<area shape="rect" title=" " alt="" coords="79,5,258,45"/>
+<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="102,93,235,119"/>
+<area shape="poly" title=" " alt="" coords="171,46,171,79,166,79,166,46"/>
+<area shape="rect" title=" " alt="" coords="5,167,60,192"/>
+<area shape="poly" title=" " alt="" coords="145,47,92,95,68,126,48,156,44,153,63,123,88,92,141,44"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="277,167,452,192"/>
+<area shape="poly" title=" " alt="" coords="195,43,340,156,337,160,191,48"/>
+<area shape="poly" title=" " alt="" coords="148,121,68,163,66,158,146,116"/>
+<area shape="rect" title=" " alt="" coords="85,167,253,192"/>
+<area shape="poly" title=" " alt="" coords="171,119,171,153,166,153,166,119"/>
+<area shape="poly" title=" " alt="" coords="201,116,321,159,319,164,199,121"/>
+<area shape="rect" title=" " alt="" coords="106,247,189,273"/>
+<area shape="poly" title=" " alt="" coords="334,195,193,245,191,240,332,189"/>
+<area shape="rect" title=" " alt="" coords="213,240,375,280"/>
+<area shape="poly" title=" " alt="" coords="356,194,322,232,318,228,352,190"/>
+<area shape="rect" title=" " alt="" coords="400,247,471,273"/>
+<area shape="poly" title=" " alt="" coords="377,190,418,235,414,239,373,194"/>
+<area shape="rect" title=" " alt="" coords="495,247,570,273"/>
+<area shape="poly" title=" " alt="" coords="390,190,497,239,495,244,388,194"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,147 +144,114 @@ $(document).ready(function(){initNavTree('humid__sht__i2c_8h.html',''); initResi
 </div>
 <p><a href="humid__sht__i2c_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a06f1dd9477b7e2609b5a50eecaa0064d" id="r_a06f1dd9477b7e2609b5a50eecaa0064d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a06f1dd9477b7e2609b5a50eecaa0064d">SHT2_WRITE_USER</a>&#160;&#160;&#160;0xE6</td></tr>
-<tr class="separator:a06f1dd9477b7e2609b5a50eecaa0064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e0fee930e34c43906324ff6b369cd8" id="r_a41e0fee930e34c43906324ff6b369cd8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a41e0fee930e34c43906324ff6b369cd8">SHT2_READ_USER</a>&#160;&#160;&#160;0xE7</td></tr>
-<tr class="separator:a41e0fee930e34c43906324ff6b369cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5a258aa8c9bfc72655377a353ef66d" id="r_a0c5a258aa8c9bfc72655377a353ef66d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a0c5a258aa8c9bfc72655377a353ef66d">SHT2_TRIGGER_TEMP</a>&#160;&#160;&#160;0xF3</td></tr>
-<tr class="separator:a0c5a258aa8c9bfc72655377a353ef66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74507b0f48513cd9a57a3c5a606ffa4" id="r_ad74507b0f48513cd9a57a3c5a606ffa4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#ad74507b0f48513cd9a57a3c5a606ffa4">SHT2_TRIGGER_HUMID</a>&#160;&#160;&#160;0xF5</td></tr>
-<tr class="separator:ad74507b0f48513cd9a57a3c5a606ffa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f81e51399af41a93332ae32de4fa75" id="r_a76f81e51399af41a93332ae32de4fa75"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a76f81e51399af41a93332ae32de4fa75">SHT2_SOFT_RESET</a>&#160;&#160;&#160;0xFE</td></tr>
-<tr class="separator:a76f81e51399af41a93332ae32de4fa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structsht__humid__t" id="r_structsht__humid__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#structsht__humid__t">sht_humid_t</a></td></tr>
+<tr class="separator:structsht__humid__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a7c65edb490a688e3cd17e2c308b9d67a" id="r_a7c65edb490a688e3cd17e2c308b9d67a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67a">sht_stat_i2c</a> { <br />
-&#160;&#160;<a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5">SHT2_UNINIT</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aadf808f7195aa62a8b396204dad966372">SHT2_IDLE</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa1b2eeb01b3f759fc934d83f2ee89e417">SHT2_RESET</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa23afd1557f81e1d650addbe3b7a3895c">SHT2_SERIAL</a>
-, <br />
-&#160;&#160;<a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aaff74d7ab602e9710f74d48c8bc9dbff3">SHT2_SERIAL1</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa047f46ff11f9457a8f96b65d5f634c41">SHT2_SERIAL2</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa62fa20c42bcf6b83bb6e451fb4266034">SHT2_SET_CONFIG</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa79c645290c77eb3e3af3a48f8ffecd48">SHT2_READ_SERIAL</a>
-, <br />
-&#160;&#160;<a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa6e3d448b229697a765e456eecac64522">SHT2_TRIG_TEMP</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa4c07684db117aa2f686089a490a822b4">SHT2_GET_TEMP</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa09772f26c95ad5e24574c8c6e630397b">SHT2_READ_TEMP</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aaf5610cf1fd99ec90742b260f5304df7a">SHT2_TRIG_HUMID</a>
-, <br />
-&#160;&#160;<a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aabb0f16bd99f18df6c989314ad448a04c">SHT2_GET_HUMID</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aaa6641f6e9f33ba140d87a75a0f98ac21">SHT2_READ_HUMID</a>
-<br />
+<tr class="memitem:a7c65edb490a688e3cd17e2c308b9d67a" id="r_a7c65edb490a688e3cd17e2c308b9d67a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67a">sht_stat_i2c</a> { <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5">SHT2_UNINIT</a>
+, <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aabbd741cc1e85a8ffed96b512c4452752">SHT2_READING</a>
  }</td></tr>
 <tr class="separator:a7c65edb490a688e3cd17e2c308b9d67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a51ca48f45944e4d28691592760d796c9" id="r_a51ca48f45944e4d28691592760d796c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a51ca48f45944e4d28691592760d796c9">humid_sht_crc</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data)</td></tr>
-<tr class="separator:a51ca48f45944e4d28691592760d796c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7360b54e1d1d8f2f4a8219461c1ba74" id="r_ab7360b54e1d1d8f2f4a8219461c1ba74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#ab7360b54e1d1d8f2f4a8219461c1ba74">humid_sht_init_i2c</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:ab7360b54e1d1d8f2f4a8219461c1ba74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee81659bc27e2a5d7e769639a5503f7" id="r_a1ee81659bc27e2a5d7e769639a5503f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a1ee81659bc27e2a5d7e769639a5503f7">humid_sht_periodic_i2c</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a1ee81659bc27e2a5d7e769639a5503f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c574dcb10c81020630db2286edbeaad" id="r_a3c574dcb10c81020630db2286edbeaad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a3c574dcb10c81020630db2286edbeaad">humid_sht_p_temp</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:a3c574dcb10c81020630db2286edbeaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b6ec0fe918280602fd52013d39e212" id="r_a69b6ec0fe918280602fd52013d39e212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a69b6ec0fe918280602fd52013d39e212">humid_sht_p_humid</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:a69b6ec0fe918280602fd52013d39e212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9250bbec811cdbcc7c024e084dacc33f" id="r_a9250bbec811cdbcc7c024e084dacc33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f">humid_sht_event_i2c</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:a9250bbec811cdbcc7c024e084dacc33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aebb59623691f8f575810941203d0557b" id="r_aebb59623691f8f575810941203d0557b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#aebb59623691f8f575810941203d0557b">humidsht_i2c</a></td></tr>
-<tr class="separator:aebb59623691f8f575810941203d0557b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133780437c8764efa4db6a401a877544" id="r_a133780437c8764efa4db6a401a877544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#a133780437c8764efa4db6a401a877544">tempsht_i2c</a></td></tr>
-<tr class="separator:a133780437c8764efa4db6a401a877544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24941c60c0a44907c005d3b57626373" id="r_af24941c60c0a44907c005d3b57626373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#af24941c60c0a44907c005d3b57626373">fhumidsht_i2c</a></td></tr>
-<tr class="separator:af24941c60c0a44907c005d3b57626373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad52c52ca36e2d9bad2918adee20b2a54" id="r_ad52c52ca36e2d9bad2918adee20b2a54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__i2c_8h.html#ad52c52ca36e2d9bad2918adee20b2a54">ftempsht_i2c</a></td></tr>
-<tr class="separator:ad52c52ca36e2d9bad2918adee20b2a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a41e0fee930e34c43906324ff6b369cd8" name="a41e0fee930e34c43906324ff6b369cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41e0fee930e34c43906324ff6b369cd8">&#9670;&#160;</a></span>SHT2_READ_USER</h2>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structsht__humid__t" id="structsht__humid__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structsht__humid__t">&#9670;&#160;</a></span>sht_humid_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SHT2_READ_USER&#160;&#160;&#160;0xE7</td>
+          <td class="memname">struct sht_humid_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00007">7</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
-
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00014">14</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for sht_humid_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-</div>
-<a id="a76f81e51399af41a93332ae32de4fa75" name="a76f81e51399af41a93332ae32de4fa75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76f81e51399af41a93332ae32de4fa75">&#9670;&#160;</a></span>SHT2_SOFT_RESET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SHT2_SOFT_RESET&#160;&#160;&#160;0xFE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00010">10</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
-
-</div>
-</div>
-<a id="ad74507b0f48513cd9a57a3c5a606ffa4" name="ad74507b0f48513cd9a57a3c5a606ffa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad74507b0f48513cd9a57a3c5a606ffa4">&#9670;&#160;</a></span>SHT2_TRIGGER_HUMID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SHT2_TRIGGER_HUMID&#160;&#160;&#160;0xF5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00009">9</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
-
-</div>
-</div>
-<a id="a0c5a258aa8c9bfc72655377a353ef66d" name="a0c5a258aa8c9bfc72655377a353ef66d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c5a258aa8c9bfc72655377a353ef66d">&#9670;&#160;</a></span>SHT2_TRIGGER_TEMP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SHT2_TRIGGER_TEMP&#160;&#160;&#160;0xF3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00008">8</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
-
-</div>
-</div>
-<a id="a06f1dd9477b7e2609b5a50eecaa0064d" name="a06f1dd9477b7e2609b5a50eecaa0064d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f1dd9477b7e2609b5a50eecaa0064d">&#9670;&#160;</a></span>SHT2_WRITE_USER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SHT2_WRITE_USER&#160;&#160;&#160;0xE6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00006">6</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structsht__humid__t__coll__graph.png" border="0" usemap="#asht__humid__t_coll__map" alt="Collaboration graph"/></div>
+<map name="asht__humid__t_coll__map" id="asht__humid__t_coll__map">
+<area shape="rect" title=" " alt="" coords="5,108,108,133"/>
+<area shape="rect" title=" " alt="" coords="27,5,86,31"/>
+<area shape="poly" title=" " alt="" coords="59,45,59,108,54,108,54,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a29991129cba973d14afc24d1886ea583" name="a29991129cba973d14afc24d1886ea583"></a><a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a></td>
+<td class="fieldname">
+bsem_sht_status</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac22a5771175cc63f60cdb3dfdb884a52" name="ac22a5771175cc63f60cdb3dfdb884a52"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+fhumidsht_i2c</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1df62584f4ff1819010c856e8f55f43b" name="a1df62584f4ff1819010c856e8f55f43b"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+ftempsht_i2c</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a872e55e7a136af4f9d657797e4e2e778" name="a872e55e7a136af4f9d657797e4e2e778"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+humidsht_i2c</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a516b169143b4b65d8829e7ba9768ddeb" name="a516b169143b4b65d8829e7ba9768ddeb"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<td class="fieldname">
+sht_serial1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac7766c4a49536b2ea45140bf1b0b80d5" name="ac7766c4a49536b2ea45140bf1b0b80d5"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<td class="fieldname">
+sht_serial2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a131ea65613d6ee29adfaadb4a708b0a5" name="a131ea65613d6ee29adfaadb4a708b0a5"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">enum</a> <a class="el" href="humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67a">sht_stat_i2c</a></td>
+<td class="fieldname">
+sht_status</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae5a3f8a3d5274df4b6c4c986847ee4b6" name="ae5a3f8a3d5274df4b6c4c986847ee4b6"></a>struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a></td>
+<td class="fieldname">
+sht_trans</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9a900d645f83131d706876fcc9aab9b7" name="a9a900d645f83131d706876fcc9aab9b7"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+tempsht_i2c</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a058a4860616101f79ea902b4be06a7ad" name="a058a4860616101f79ea902b4be06a7ad"></a><a class="el" href="chibios_2modules_2core_2threads__arch_8h.html#a6346f48ec6528ca13c35a2cd5109d5db">pprz_thread_t</a></td>
+<td class="fieldname">
+thd_handle</td>
+<td class="fielddoc">
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -285,103 +269,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5" name="a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5"></a>SHT2_UNINIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aadf808f7195aa62a8b396204dad966372" name="a7c65edb490a688e3cd17e2c308b9d67aadf808f7195aa62a8b396204dad966372"></a>SHT2_IDLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa1b2eeb01b3f759fc934d83f2ee89e417" name="a7c65edb490a688e3cd17e2c308b9d67aa1b2eeb01b3f759fc934d83f2ee89e417"></a>SHT2_RESET&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa23afd1557f81e1d650addbe3b7a3895c" name="a7c65edb490a688e3cd17e2c308b9d67aa23afd1557f81e1d650addbe3b7a3895c"></a>SHT2_SERIAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aaff74d7ab602e9710f74d48c8bc9dbff3" name="a7c65edb490a688e3cd17e2c308b9d67aaff74d7ab602e9710f74d48c8bc9dbff3"></a>SHT2_SERIAL1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa047f46ff11f9457a8f96b65d5f634c41" name="a7c65edb490a688e3cd17e2c308b9d67aa047f46ff11f9457a8f96b65d5f634c41"></a>SHT2_SERIAL2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa62fa20c42bcf6b83bb6e451fb4266034" name="a7c65edb490a688e3cd17e2c308b9d67aa62fa20c42bcf6b83bb6e451fb4266034"></a>SHT2_SET_CONFIG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa79c645290c77eb3e3af3a48f8ffecd48" name="a7c65edb490a688e3cd17e2c308b9d67aa79c645290c77eb3e3af3a48f8ffecd48"></a>SHT2_READ_SERIAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa6e3d448b229697a765e456eecac64522" name="a7c65edb490a688e3cd17e2c308b9d67aa6e3d448b229697a765e456eecac64522"></a>SHT2_TRIG_TEMP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa4c07684db117aa2f686089a490a822b4" name="a7c65edb490a688e3cd17e2c308b9d67aa4c07684db117aa2f686089a490a822b4"></a>SHT2_GET_TEMP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aa09772f26c95ad5e24574c8c6e630397b" name="a7c65edb490a688e3cd17e2c308b9d67aa09772f26c95ad5e24574c8c6e630397b"></a>SHT2_READ_TEMP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aaf5610cf1fd99ec90742b260f5304df7a" name="a7c65edb490a688e3cd17e2c308b9d67aaf5610cf1fd99ec90742b260f5304df7a"></a>SHT2_TRIG_HUMID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aabb0f16bd99f18df6c989314ad448a04c" name="a7c65edb490a688e3cd17e2c308b9d67aabb0f16bd99f18df6c989314ad448a04c"></a>SHT2_GET_HUMID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aaa6641f6e9f33ba140d87a75a0f98ac21" name="a7c65edb490a688e3cd17e2c308b9d67aaa6641f6e9f33ba140d87a75a0f98ac21"></a>SHT2_READ_HUMID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c65edb490a688e3cd17e2c308b9d67aabbd741cc1e85a8ffed96b512c4452752" name="a7c65edb490a688e3cd17e2c308b9d67aabbd741cc1e85a8ffed96b512c4452752"></a>SHT2_READING&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00012">12</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00008">8</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a51ca48f45944e4d28691592760d796c9" name="a51ca48f45944e4d28691592760d796c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51ca48f45944e4d28691592760d796c9">&#9670;&#160;</a></span>humid_sht_crc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> humid_sht_crc </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00050">50</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="humid__sht__i2c_8c_source.html#l00130">humid_sht_event_i2c()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht__i2c_8h_a51ca48f45944e4d28691592760d796c9_icgraph.png" border="0" usemap="#ahumid__sht__i2c_8h_a51ca48f45944e4d28691592760d796c9_icgraph" alt=""/></div>
-<map name="ahumid__sht__i2c_8h_a51ca48f45944e4d28691592760d796c9_icgraph" id="ahumid__sht__i2c_8h_a51ca48f45944e4d28691592760d796c9_icgraph">
-<area shape="rect" title=" " alt="" coords="213,5,329,31"/>
-<area shape="rect" href="humid__sht__i2c_8c.html#a9250bbec811cdbcc7c024e084dacc33f" title=" " alt="" coords="5,5,165,31"/>
-<area shape="poly" title=" " alt="" coords="200,21,166,21,166,15,200,15"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9250bbec811cdbcc7c024e084dacc33f" name="a9250bbec811cdbcc7c024e084dacc33f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9250bbec811cdbcc7c024e084dacc33f">&#9670;&#160;</a></span>humid_sht_event_i2c()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> humid_sht_event_i2c </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00130">130</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
-
-<p class="reference">References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00048">fhumidsht_i2c</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00048">ftempsht_i2c</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00050">humid_sht_crc()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00047">humidsht_i2c</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00202">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00025">SHT2_GET_HUMID</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00022">SHT2_GET_TEMP</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00014">SHT2_IDLE</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00026">SHT2_READ_HUMID</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00023">SHT2_READ_TEMP</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00015">SHT2_RESET</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00016">SHT2_SERIAL</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00017">SHT2_SERIAL1</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00018">SHT2_SERIAL2</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00024">SHT2_TRIG_HUMID</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00021">SHT2_TRIG_TEMP</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00009">SHT2_TRIGGER_HUMID</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00038">SHT_I2C_DEV</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00045">sht_serial</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00046">sht_serial1</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00046">sht_serial2</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00041">SHT_SLAVE_ADDR</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00044">sht_status</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00043">sht_trans</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="humid__sht__i2c_8c_source.html#l00047">tempsht_i2c</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht__i2c_8h_a9250bbec811cdbcc7c024e084dacc33f_cgraph.png" border="0" usemap="#ahumid__sht__i2c_8h_a9250bbec811cdbcc7c024e084dacc33f_cgraph" alt=""/></div>
-<map name="ahumid__sht__i2c_8h_a9250bbec811cdbcc7c024e084dacc33f_cgraph" id="ahumid__sht__i2c_8h_a9250bbec811cdbcc7c024e084dacc33f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,165,80"/>
-<area shape="rect" href="humid__sht__i2c_8c.html#a51ca48f45944e4d28691592760d796c9" title=" " alt="" coords="213,5,329,31"/>
-<area shape="poly" title=" " alt="" coords="133,52,208,32,210,37,135,57"/>
-<area shape="rect" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="213,55,329,80"/>
-<area shape="poly" title=" " alt="" coords="165,65,199,65,199,70,165,70"/>
-<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="220,104,323,129"/>
-<area shape="poly" title=" " alt="" coords="135,77,210,98,208,103,133,83"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="377,80,471,105"/>
-<area shape="poly" title=" " alt="" coords="330,74,364,80,363,85,329,80"/>
-<area shape="poly" title=" " alt="" coords="323,106,364,99,364,105,323,111"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="ab7360b54e1d1d8f2f4a8219461c1ba74" name="ab7360b54e1d1d8f2f4a8219461c1ba74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7360b54e1d1d8f2f4a8219461c1ba74">&#9670;&#160;</a></span>humid_sht_init_i2c()</h2>
 
@@ -398,79 +293,56 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00071">71</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00057">57</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="humid__sht__i2c_8h_source.html#l00013">SHT2_UNINIT</a>, and <a class="el" href="humid__sht__i2c_8c_source.html#l00044">sht_status</a>.</p>
-
+<p class="reference">References <a class="el" href="humid__sht__i2c_8h_source.html#l00025">sht_humid_t::bsem_sht_status</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00077">humid_sht_thd()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00039">pprz_bsem_init()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00018">PPRZ_NORMAL_PRIO</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00062">pprz_thread_create()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00054">sht</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00009">SHT2_UNINIT</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00016">sht_humid_t::sht_status</a>, and <a class="el" href="humid__sht__i2c_8h_source.html#l00024">sht_humid_t::thd_handle</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-</div>
-<a id="a69b6ec0fe918280602fd52013d39e212" name="a69b6ec0fe918280602fd52013d39e212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69b6ec0fe918280602fd52013d39e212">&#9670;&#160;</a></span>humid_sht_p_humid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> humid_sht_p_humid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00121">121</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
-
-<p class="reference">References <a class="el" href="i2c_8c_source.html#l00212">i2c_receive()</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00025">SHT2_GET_HUMID</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00026">SHT2_READ_HUMID</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00038">SHT_I2C_DEV</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00041">SHT_SLAVE_ADDR</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00044">sht_status</a>, and <a class="el" href="humid__sht__i2c_8c_source.html#l00043">sht_trans</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht__i2c_8h_a69b6ec0fe918280602fd52013d39e212_cgraph.png" border="0" usemap="#ahumid__sht__i2c_8h_a69b6ec0fe918280602fd52013d39e212_cgraph" alt=""/></div>
-<map name="ahumid__sht__i2c_8h_a69b6ec0fe918280602fd52013d39e212_cgraph" id="ahumid__sht__i2c_8h_a69b6ec0fe918280602fd52013d39e212_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,159,31"/>
-<area shape="rect" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction." alt="" coords="207,5,303,31"/>
-<area shape="poly" title=" " alt="" coords="159,15,193,15,193,21,159,21"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="351,5,444,31"/>
-<area shape="poly" title=" " alt="" coords="303,15,337,15,337,21,303,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3c574dcb10c81020630db2286edbeaad" name="a3c574dcb10c81020630db2286edbeaad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c574dcb10c81020630db2286edbeaad">&#9670;&#160;</a></span>humid_sht_p_temp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> humid_sht_p_temp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00111">111</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
-
-<p class="reference">References <a class="el" href="i2c_8c_source.html#l00212">i2c_receive()</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00022">SHT2_GET_TEMP</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00023">SHT2_READ_TEMP</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00038">SHT_I2C_DEV</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00041">SHT_SLAVE_ADDR</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00044">sht_status</a>, and <a class="el" href="humid__sht__i2c_8c_source.html#l00043">sht_trans</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht__i2c_8h_a3c574dcb10c81020630db2286edbeaad_cgraph.png" border="0" usemap="#ahumid__sht__i2c_8h_a3c574dcb10c81020630db2286edbeaad_cgraph" alt=""/></div>
-<map name="ahumid__sht__i2c_8h_a3c574dcb10c81020630db2286edbeaad_cgraph" id="ahumid__sht__i2c_8h_a3c574dcb10c81020630db2286edbeaad_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,152,31"/>
-<area shape="rect" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction." alt="" coords="200,5,296,31"/>
-<area shape="poly" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="344,5,437,31"/>
-<area shape="poly" title=" " alt="" coords="296,15,330,15,330,21,296,21"/>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="humid__sht__i2c_8h_ab7360b54e1d1d8f2f4a8219461c1ba74_cgraph.png" border="0" usemap="#ahumid__sht__i2c_8h_ab7360b54e1d1d8f2f4a8219461c1ba74_cgraph" alt=""/></div>
+<map name="ahumid__sht__i2c_8h_ab7360b54e1d1d8f2f4a8219461c1ba74_cgraph" id="ahumid__sht__i2c_8h_ab7360b54e1d1d8f2f4a8219461c1ba74_cgraph">
+<area shape="rect" title=" " alt="" coords="5,181,149,207"/>
+<area shape="rect" href="humid__sht__i2c_8c.html#a35e9e96826e902327bb4f27d82ae2f91" title=" " alt="" coords="211,132,330,157"/>
+<area shape="poly" title=" " alt="" coords="127,179,206,158,207,163,128,184"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="210,181,331,207"/>
+<area shape="poly" title=" " alt="" coords="150,191,196,191,196,197,150,197"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="197,231,344,256"/>
+<area shape="poly" title=" " alt="" coords="128,204,207,225,206,230,127,209"/>
+<area shape="rect" href="group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="585,205,751,231"/>
+<area shape="poly" title=" " alt="" coords="312,155,345,168,369,181,393,191,484,209,572,216,572,221,483,214,391,197,366,185,343,172,310,160"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="392,257,531,283"/>
+<area shape="poly" title=" " alt="" coords="323,155,346,168,362,185,371,202,379,219,394,236,414,249,411,254,390,240,374,222,366,205,358,188,342,172,320,160"/>
+<area shape="rect" href="humid__sht__i2c_8c.html#a68f6665e04c9cf0bdcb21da4001ec1dd" title=" " alt="" coords="398,156,525,181"/>
+<area shape="poly" title=" " alt="" coords="331,149,385,156,384,162,330,155"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="603,57,733,83"/>
+<area shape="poly" title=" " alt="" coords="296,129,340,110,391,93,494,75,589,68,589,74,494,81,393,98,342,115,298,134"/>
+<area shape="rect" href="humid__sht__i2c_8c.html#a19d9444b357785b5d15136174dcc1834" title=" " alt="" coords="401,5,522,31"/>
+<area shape="poly" title=" " alt="" coords="284,130,330,91,391,48,416,34,418,39,393,52,333,95,288,134"/>
+<area shape="rect" href="humid__sht__i2c_8c.html#a2099eacb29026c26076f28546b2845b0" title=" " alt="" coords="402,107,521,132"/>
+<area shape="poly" title=" " alt="" coords="330,134,388,126,388,132,331,139"/>
+<area shape="rect" href="i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="805,107,960,132"/>
+<area shape="poly" title=" " alt="" coords="724,203,756,192,807,165,851,138,854,142,810,170,758,196,726,208"/>
+<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1055,81,1148,107"/>
+<area shape="poly" title=" " alt="" coords="960,108,1041,98,1042,104,960,113"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1008,131,1195,156"/>
+<area shape="poly" title=" " alt="" coords="960,125,995,129,994,134,960,130"/>
+<area shape="poly" title=" " alt="" coords="516,179,601,199,600,205,515,184"/>
+<area shape="rect" href="humid__sht__i2c_8c.html#a9b087a915e3535ba2024ccc156a12ef2" title=" " alt="" coords="610,156,726,181"/>
+<area shape="poly" title=" " alt="" coords="525,166,597,166,597,171,525,171"/>
+<area shape="rect" href="group__i2c.html#ga80191e190393b7291e672360556d7f13" title="Submit a read only transaction and wait for it to complete." alt="" coords="589,107,747,132"/>
+<area shape="poly" title=" " alt="" coords="515,153,600,133,601,138,516,159"/>
+<area shape="poly" title=" " alt="" coords="507,154,529,142,543,130,552,118,562,106,577,93,593,85,595,90,580,98,566,109,557,121,547,134,532,147,509,158"/>
+<area shape="poly" title=" " alt="" coords="748,117,791,117,791,122,748,122"/>
+<area shape="poly" title=" " alt="" coords="513,28,605,51,603,57,512,33"/>
+<area shape="rect" href="group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="579,7,757,32"/>
+<area shape="poly" title=" " alt="" coords="522,16,565,16,565,21,522,21"/>
+<area shape="poly" title=" " alt="" coords="720,30,758,44,809,70,853,97,850,101,807,74,756,48,718,35"/>
+<area shape="poly" title=" " alt="" coords="507,130,532,142,547,155,557,168,566,180,580,192,592,198,589,203,577,196,562,184,552,171,543,159,529,147,505,134"/>
+<area shape="poly" title=" " alt="" coords="516,129,601,150,600,155,515,135"/>
+<area shape="poly" title=" " alt="" coords="521,117,575,117,575,122,521,122"/>
+<area shape="poly" title=" " alt="" coords="515,104,600,83,601,89,516,109"/>
 </map>
 </div>
 
@@ -492,111 +364,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00076">76</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00064">64</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00202">i2c_transmit()</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00015">SHT2_RESET</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00016">SHT2_SERIAL</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00017">SHT2_SERIAL1</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00018">SHT2_SERIAL2</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00010">SHT2_SOFT_RESET</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00021">SHT2_TRIG_TEMP</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00008">SHT2_TRIGGER_TEMP</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00013">SHT2_UNINIT</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00038">SHT_I2C_DEV</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00046">sht_serial1</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00046">sht_serial2</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00041">SHT_SLAVE_ADDR</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00044">sht_status</a>, and <a class="el" href="humid__sht__i2c_8c_source.html#l00043">sht_trans</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="humid__sht__i2c_8h_source.html#l00025">sht_humid_t::bsem_sht_status</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00021">sht_humid_t::fhumidsht_i2c</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00022">sht_humid_t::ftempsht_i2c</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00019">sht_humid_t::humidsht_i2c</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00047">pprz_bsem_wait_timeout()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00054">sht</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00010">SHT2_READING</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00017">sht_humid_t::sht_serial1</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00018">sht_humid_t::sht_serial2</a>, <a class="el" href="humid__sht__i2c_8h_source.html#l00016">sht_humid_t::sht_status</a>, and <a class="el" href="humid__sht__i2c_8h_source.html#l00020">sht_humid_t::tempsht_i2c</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht__i2c_8h_a1ee81659bc27e2a5d7e769639a5503f7_cgraph.png" border="0" usemap="#ahumid__sht__i2c_8h_a1ee81659bc27e2a5d7e769639a5503f7_cgraph" alt=""/></div>
 <map name="ahumid__sht__i2c_8h_a1ee81659bc27e2a5d7e769639a5503f7_cgraph" id="ahumid__sht__i2c_8h_a1ee81659bc27e2a5d7e769639a5503f7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,180,56"/>
-<area shape="rect" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="228,5,344,31"/>
-<area shape="poly" title=" " alt="" coords="180,29,214,25,214,30,181,34"/>
-<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="235,55,337,80"/>
-<area shape="poly" title=" " alt="" coords="181,52,222,57,221,62,180,57"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="392,31,485,56"/>
-<area shape="poly" title=" " alt="" coords="344,25,379,31,378,36,344,30"/>
-<area shape="poly" title=" " alt="" coords="337,57,378,50,379,55,338,62"/>
+<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="228,5,415,31"/>
+<area shape="poly" title=" " alt="" coords="180,15,214,15,214,21,180,21"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="af24941c60c0a44907c005d3b57626373" name="af24941c60c0a44907c005d3b57626373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24941c60c0a44907c005d3b57626373">&#9670;&#160;</a></span>fhumidsht_i2c</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> fhumidsht_i2c</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00048">48</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="humid__sht__i2c_8c_source.html#l00130">humid_sht_event_i2c()</a>.</p>
-
-</div>
-</div>
-<a id="ad52c52ca36e2d9bad2918adee20b2a54" name="ad52c52ca36e2d9bad2918adee20b2a54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad52c52ca36e2d9bad2918adee20b2a54">&#9670;&#160;</a></span>ftempsht_i2c</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> ftempsht_i2c</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00037">37</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
-
-</div>
-</div>
-<a id="aebb59623691f8f575810941203d0557b" name="aebb59623691f8f575810941203d0557b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebb59623691f8f575810941203d0557b">&#9670;&#160;</a></span>humidsht_i2c</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> humidsht_i2c</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8c_source.html#l00047">47</a> of file <a class="el" href="humid__sht__i2c_8c_source.html">humid_sht_i2c.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="humid__sht__i2c_8c_source.html#l00130">humid_sht_event_i2c()</a>.</p>
-
-</div>
-</div>
-<a id="a133780437c8764efa4db6a401a877544" name="a133780437c8764efa4db6a401a877544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a133780437c8764efa4db6a401a877544">&#9670;&#160;</a></span>tempsht_i2c</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tempsht_i2c</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="humid__sht__i2c_8h_source.html#l00036">36</a> of file <a class="el" href="humid__sht__i2c_8h_source.html">humid_sht_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +388,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="humid__sht__i2c_8h.html">humid_sht_i2c.h</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 13:06:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 18:13:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

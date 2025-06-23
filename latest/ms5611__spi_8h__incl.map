@@ -1,25 +1,35 @@
 <map id="sw/airborne/peripherals/ms5611_spi.h" name="sw/airborne/peripherals/ms5611_spi.h">
-<area shape="rect" id="Node000001" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="491,5,665,45"/>
-<area shape="rect" id="Node000002" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="426,93,559,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,48,517,86,514,82,556,44"/>
-<area shape="rect" id="Node000010" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="614,93,777,119"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="608,43,668,84,665,88,605,48"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="555,262,609,287"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="512,117,536,137,559,165,576,208,583,248,578,249,570,209,554,168,533,141,508,121"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="377,174,545,199"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="490,120,473,162,468,160,485,118"/>
-<area shape="rect" id="Node000005" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="179,174,353,199"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="461,121,313,172,311,167,459,116"/>
-<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="321,197,421,220,535,252,542,255,541,260,533,257,420,225,320,202"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="5,262,92,287"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="238,202,91,259,89,254,236,197"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="116,262,187,287"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="252,202,179,256,176,252,249,197"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="211,262,337,287"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="270,199,274,248,269,248,264,200"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="361,255,523,295"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="291,197,392,246,390,251,289,202"/>
-<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="727,117,759,136,774,149,786,165,793,187,786,208,770,226,751,240,708,260,664,271,624,276,623,270,663,266,707,255,748,236,766,222,781,205,788,187,781,168,770,153,756,140,724,121"/>
-<area shape="rect" id="Node000011" href="$ms5611__regs_8h.html" title="Register definitions for MS5611 barometer." alt="" coords="620,167,771,207"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="698,119,698,153,693,153,693,119"/>
+<area shape="rect" id="Node000001" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="452,5,627,45"/>
+<area shape="rect" id="Node000002" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="387,93,521,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,48,479,86,475,82,517,44"/>
+<area shape="rect" id="Node000015" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="545,93,707,119"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="562,44,605,82,601,86,559,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="500,262,555,287"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="433,121,407,140,386,168,380,187,385,205,424,227,488,255,486,260,421,232,381,208,374,187,381,165,403,137,430,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="395,174,563,199"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="460,118,474,160,469,162,455,120"/>
+<area shape="rect" id="Node000005" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="638,174,811,199"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="494,116,673,168,671,173,493,121"/>
+<area shape="rect" id="Node000010" href="$threads_8h.html" title=" " alt="" coords="145,174,320,199"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="423,121,279,172,277,167,421,116"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="698,202,568,257,565,259,563,254,566,252,696,197"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="579,262,665,287"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="713,202,648,255,645,251,709,197"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="689,262,760,287"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="727,200,727,248,722,248,722,200"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="784,262,911,287"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="743,197,821,251,818,256,740,202"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="935,255,1096,295"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="765,197,939,248,937,253,763,202"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="199,262,282,287"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="236,199,241,248,236,248,231,200"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="306,255,469,295"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="255,197,343,246,340,250,252,202"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="5,262,76,287"/>
+<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="208,202,80,259,78,254,206,197"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="101,262,175,287"/>
+<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="222,201,163,254,159,250,218,198"/>
+<area shape="poly" id="edge16_Node000015_Node000003" title=" " alt="" coords="623,120,578,208,547,253,543,250,573,205,618,118"/>
+<area shape="rect" id="Node000016" href="$ms5611__regs_8h.html" title="Register definitions for MS5611 barometer." alt="" coords="836,167,987,207"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="668,116,830,160,829,166,667,121"/>
 </map>

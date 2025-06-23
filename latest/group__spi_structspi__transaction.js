@@ -3,6 +3,7 @@ var group__spi_structspi__transaction =
     [ "after_cb", "group__spi.html#a42f7b32b71120469bf60af28f5880177", null ],
     [ "before_cb", "group__spi.html#a34d366d59c97ab1993da279ec6c19658", null ],
     [ "bitorder", "group__spi.html#af804a20f8372631a24aad61be1383307", null ],
+    [ "bsem", "group__spi.html#a8b3ee61dd8df330abf144b09db40c81f", null ],
     [ "cdiv", "group__spi.html#a8d8c70f4ac840678b944e410e93f779e", null ],
     [ "cpha", "group__spi.html#a1ffecb70c8f221ab1296d06e61448485", null ],
     [ "cpol", "group__spi.html#a1c63fdf45b423a121cf0666a8aaa2539", null ],

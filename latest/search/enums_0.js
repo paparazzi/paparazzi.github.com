@@ -24,8 +24,9 @@ var searchData=
   ['ak8963status_21',['Ak8963Status',['../ak8963_8h.html#a17716d364ee924bf509a99715208137a',1,'ak8963.h']]],
   ['ak8975confstatus_22',['Ak8975ConfStatus',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61',1,'ak8975.h']]],
   ['ak8975status_23',['Ak8975Status',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49',1,'ak8975.h']]],
-  ['aoa_5ftype_24',['Aoa_Type',['../aoa__pwm_8h.html#a345c37618c011c46e5620d6c99eb877f',1,'aoa_pwm.h']]],
-  ['arming_5fmethod_5ft_25',['arming_method_t',['../parachute_8h.html#ae0e4ef8f3fc390d765799303100ef763',1,'parachute.h']]],
-  ['arming_5fstate_26',['arming_state',['../autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state:&#160;autopilot_arming_switch.h'],['../autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state:&#160;autopilot_arming_yaw.h']]],
-  ['arming_5fthrottle_5fstate_27',['arming_throttle_state',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759',1,'autopilot_arming_throttle.h']]]
+  ['amt22_5ftype_24',['amt22_type',['../amt22_8h.html#afdb0a9783b3ddbfec859488bea367564',1,'amt22.h']]],
+  ['aoa_5ftype_25',['Aoa_Type',['../aoa__pwm_8h.html#a345c37618c011c46e5620d6c99eb877f',1,'aoa_pwm.h']]],
+  ['arming_5fmethod_5ft_26',['arming_method_t',['../parachute_8h.html#ae0e4ef8f3fc390d765799303100ef763',1,'parachute.h']]],
+  ['arming_5fstate_27',['arming_state',['../autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state:&#160;autopilot_arming_switch.h'],['../autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state:&#160;autopilot_arming_yaw.h']]],
+  ['arming_5fthrottle_5fstate_28',['arming_throttle_state',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759',1,'autopilot_arming_throttle.h']]]
 ];

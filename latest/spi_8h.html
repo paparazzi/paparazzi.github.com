@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('spi_8h.html',''); initResizable(); });
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;mcu_periph/spi_arch.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for spi.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -114,139 +115,32 @@ $(document).ready(function(){initNavTree('spi_8h.html',''); initResizable(); });
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi_8h__incl.png" border="0" usemap="#asw_2airborne_2mcu__periph_2spi_8h" alt=""/></div>
 <map name="asw_2airborne_2mcu__periph_2spi_8h" id="asw_2airborne_2mcu__periph_2spi_8h">
-<area shape="rect" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="17,5,195,45"/>
-<area shape="rect" title=" " alt="" coords="16,174,71,199"/>
-<area shape="poly" title=" " alt="" coords="64,48,35,67,12,95,8,111,11,128,27,161,22,164,6,130,3,111,8,92,31,64,61,43"/>
-<area shape="rect" title=" " alt="" coords="22,93,190,119"/>
-<area shape="poly" title=" " alt="" coords="109,46,109,79,103,79,103,46"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="214,93,387,119"/>
-<area shape="poly" title=" " alt="" coords="154,43,260,86,258,91,152,48"/>
-<area shape="poly" title=" " alt="" coords="264,121,85,176,83,170,263,116"/>
-<area shape="rect" title=" " alt="" coords="124,174,211,199"/>
-<area shape="poly" title=" " alt="" coords="282,121,200,169,197,165,280,117"/>
-<area shape="rect" title=" " alt="" coords="235,174,305,199"/>
-<area shape="poly" title=" " alt="" coords="299,120,282,162,277,160,294,118"/>
-<area shape="rect" title=" " alt="" coords="329,174,456,199"/>
-<area shape="poly" title=" " alt="" coords="316,117,370,163,367,167,313,121"/>
-<area shape="rect" title=" " alt="" coords="480,167,641,207"/>
-<area shape="poly" title=" " alt="" coords="339,116,486,160,484,165,338,121"/>
-</map>
-</div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="spi_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2mcu__periph_2spi_8hdep" alt=""/></div>
-<map name="asw_2airborne_2mcu__periph_2spi_8hdep" id="asw_2airborne_2mcu__periph_2spi_8hdep">
-<area shape="rect" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="4022,5,4201,45"/>
-<area shape="rect" href="chibios_2mcu__periph_2spi__arch_8c.html" title="Implementation of SPI interface for ChibiOS arch." alt="" coords="5,101,185,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3222,34,2031,44,1421,53,875,64,449,78,298,87,198,96,160,103,159,98,198,91,298,81,449,73,875,59,1420,48,2031,39,3222,28,4008,24"/>
-<area shape="rect" href="linux_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for Linux." alt="" coords="210,101,381,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3257,34,2126,44,1549,53,1033,64,630,78,488,87,393,96,357,103,356,98,392,91,487,81,630,73,1033,59,1549,48,2126,39,3257,28,4008,24"/>
-<area shape="rect" href="sim_2mcu__periph_2spi__arch_8c.html" title="Dummy functions for handling of SPI hardware in sim." alt="" coords="405,101,575,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3292,34,2223,46,1191,65,811,79,677,87,588,96,552,103,551,98,587,91,677,82,811,74,1191,60,2223,40,3292,29,4008,24"/>
-<area shape="rect" href="stm32_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for STM32." alt="" coords="600,101,775,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3330,36,2326,49,1359,68,1004,81,794,96,755,103,754,98,794,91,1004,76,1359,63,2326,43,3330,31,4008,25"/>
-<area shape="rect" href="ms2100__arch_8h.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="850,101,1053,141"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3437,29,2586,36,2137,44,1713,56,1347,73,1072,96,1028,103,1027,98,1071,91,1347,68,1713,51,2136,39,2586,31,3437,24,4008,24"/>
-<area shape="rect" href="ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="864,196,1039,236"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3359,31,2420,40,1955,48,1552,60,1257,76,1165,85,1116,96,1100,107,1091,119,1081,134,1066,150,1028,177,991,198,988,194,1025,172,1063,146,1077,131,1086,116,1096,103,1114,91,1164,80,1257,70,1552,55,1955,43,2420,35,3359,26,4008,24"/>
-<area shape="rect" href="ms2100_8c.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="795,284,969,324"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3289,32,2238,41,1721,50,1280,61,968,77,877,86,840,96,826,116,820,140,820,165,826,192,847,243,871,282,866,285,842,245,821,193,815,166,815,139,821,114,836,91,876,80,968,71,1280,56,1721,44,2238,36,3289,27,4008,24"/>
-<area shape="rect" href="spi_8c.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="1127,101,1306,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,2587,51,1786,71,1492,83,1318,96,1281,103,1280,98,1318,91,1492,77,1786,65,2587,46,4008,25"/>
-<area shape="rect" href="bluegiga_8c.html" title="Datalink implementation for the BlueGiga Bluetooth radio chip trough SPI." alt="" coords="1331,101,1489,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3461,37,2678,51,1935,70,1662,82,1501,96,1468,103,1467,98,1500,91,1662,77,1934,65,2678,45,3460,32,4008,25"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html" title=" " alt="" coords="1513,101,1672,141"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3540,28,2867,35,2514,43,2184,55,1899,73,1684,96,1650,103,1649,98,1683,91,1898,67,2183,50,2514,38,2867,30,3540,23,4008,23"/>
-<area shape="rect" href="w5100_8c.html" title="W5100 ethernet chip I/O." alt="" coords="1696,101,1855,141"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3570,30,2951,38,2628,46,2324,58,2063,74,1866,96,1833,103,1832,98,1866,91,2063,69,2324,52,2627,40,2951,32,3570,25,4008,24"/>
-<area shape="rect" href="max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver." alt="" coords="1879,101,2037,141"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3603,31,3037,40,2742,49,2466,60,2228,76,2049,96,2016,103,2015,98,2048,91,2228,71,2466,55,2742,43,3036,35,3603,26,4008,24"/>
-<area shape="rect" href="qr__code__spi__link_8c.html" title=" " alt="" coords="2061,93,2223,148"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3636,33,3123,43,2609,63,2396,78,2234,96,2224,98,2223,93,2234,91,2395,72,2609,58,3123,38,3635,28,4008,24"/>
-<area shape="rect" href="imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="2247,101,2405,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3668,35,3209,46,2751,65,2561,79,2417,96,2384,103,2383,98,2416,91,2560,74,2751,60,3208,40,3668,29,4008,25"/>
-<area shape="rect" href="imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="2429,101,2612,141"/>
-<area shape="poly" title=" " alt="" coords="4008,31,3707,38,3307,51,2912,70,2748,82,2624,96,2587,103,2586,98,2623,91,2748,77,2912,65,3307,46,3706,33,4008,26"/>
-<area shape="rect" href="imu__cube_8c.html" title="Driver for the IMU&#39;s in the Cube autopilots." alt="" coords="2800,196,2959,236"/>
-<area shape="poly" title=" " alt="" coords="4008,31,3714,38,3347,50,3027,69,2922,82,2891,88,2876,95,2864,118,2862,145,2866,172,2874,195,2869,197,2861,173,2856,145,2859,116,2872,91,2889,83,2922,76,3027,64,3347,45,3714,32,4008,26"/>
-<area shape="rect" href="imu__icm42688_8c.html" title="Driver module for the Invensense v3 IMU ICM42688." alt="" coords="3239,196,3402,236"/>
-<area shape="poly" title=" " alt="" coords="4008,33,3836,41,3640,54,3469,72,3410,83,3377,96,3356,117,3341,144,3326,197,3321,195,3336,142,3351,114,3374,91,3408,78,3468,67,3639,49,3836,36,4008,28"/>
-<area shape="rect" href="imu__mpu6000_8c.html" title="Driver for IMU with only MPU6000 via SPI." alt="" coords="3388,101,3547,141"/>
-<area shape="poly" title=" " alt="" coords="4008,37,3800,58,3680,75,3560,96,3529,103,3528,98,3559,91,3679,70,3800,53,4008,32"/>
-<area shape="rect" href="imu__mpu6000__hmc5883_8c.html" title="Driver for IMU with MPU6000 via SPI and HMC5883 via I2c." alt="" coords="3571,101,3798,141"/>
-<area shape="poly" title=" " alt="" coords="4012,51,3771,103,3770,98,4011,46"/>
-<area shape="rect" href="imu__mpu9250__spi_8c.html" title="IMU driver for the MPU9250 using SPI." alt="" coords="3823,101,4008,141"/>
-<area shape="poly" title=" " alt="" coords="4061,54,3956,103,3954,98,4058,49"/>
-<area shape="rect" href="imu__pixhawk6x_8c.html" title=" " alt="" coords="3015,196,3184,236"/>
-<area shape="poly" title=" " alt="" coords="4008,29,3778,32,3501,42,3370,50,3257,62,3172,77,3144,86,3126,95,3110,117,3102,144,3099,172,3100,196,3094,196,3094,172,3096,143,3105,115,3123,91,3142,81,3171,72,3256,56,3370,45,3501,36,3778,27,4008,24"/>
-<area shape="rect" href="imu__px4fmu_8c.html" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883." alt="" coords="4032,101,4191,141"/>
-<area shape="poly" title=" " alt="" coords="4114,59,4114,101,4109,101,4109,59"/>
-<area shape="rect" href="imu__px4fmu__v2_84_8c.html" title=" " alt="" coords="4215,101,4397,141"/>
-<area shape="poly" title=" " alt="" coords="4164,49,4268,98,4266,103,4162,54"/>
-<area shape="rect" href="ins__module_8h.html" title="Device independent INS code." alt="" coords="4421,101,4580,141"/>
-<area shape="poly" title=" " alt="" coords="4214,46,4409,91,4437,98,4435,103,4408,96,4213,51"/>
-<area shape="rect" href="ins__vn100_8c.html" title=" " alt="" coords="4604,101,4763,141"/>
-<area shape="poly" title=" " alt="" coords="4215,34,4392,56,4592,91,4622,98,4621,103,4591,96,4391,62,4214,39"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html" title=" " alt="" coords="4787,93,4972,148"/>
-<area shape="poly" title=" " alt="" coords="4215,30,4470,51,4622,68,4774,91,4787,93,4786,98,4774,96,4622,73,4469,56,4214,35"/>
-<area shape="rect" href="high__speed__logger__spi__link_8c.html" title=" " alt="" coords="4996,93,5155,148"/>
-<area shape="poly" title=" " alt="" coords="4215,25,4365,30,4558,41,4771,60,4984,91,4996,93,4995,98,4983,96,4770,66,4557,46,4365,35,4215,31"/>
-<area shape="rect" href="baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor." alt="" coords="5179,101,5367,141"/>
-<area shape="poly" title=" " alt="" coords="4215,25,4395,28,4632,39,4898,58,5034,73,5166,91,5204,98,5203,103,5166,96,5033,78,4898,64,4632,44,4395,34,4215,30"/>
-<area shape="rect" href="sonar__bebop_8c.html" title="Parrot Bebop Sonar driver." alt="" coords="5391,101,5551,141"/>
-<area shape="poly" title=" " alt="" coords="4214,27,4810,47,5139,66,5275,78,5378,91,5412,98,5411,103,5378,96,5274,83,5138,72,4810,53,4214,32"/>
-<area shape="rect" href="ads1220_8h.html" title="Driver for the ADS1220 24&#45;bits ADC from TI SPI communication." alt="" coords="5576,101,5751,141"/>
-<area shape="poly" title=" " alt="" coords="4215,26,4510,33,4899,46,5283,65,5443,77,5564,91,5600,98,5599,103,5563,96,5442,82,5283,70,4899,51,4509,38,4214,31"/>
-<area shape="rect" href="adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="5775,101,5949,141"/>
-<area shape="poly" title=" " alt="" coords="4214,25,4546,31,4993,43,5437,62,5622,75,5762,91,5799,98,5798,103,5762,96,5622,81,5437,68,4993,48,4546,36,4214,31"/>
-<area shape="rect" href="bmp280_8h.html" title="Sensor driver for BMP280 sensor." alt="" coords="5973,101,6148,141"/>
-<area shape="poly" title=" " alt="" coords="4214,25,4582,29,5086,40,5592,60,5802,74,5961,91,5998,98,5997,103,5960,96,5801,79,5591,65,5086,45,4581,35,4214,30"/>
-<area shape="rect" href="cc2500_8c.html" title=" " alt="" coords="6172,101,6347,141"/>
-<area shape="poly" title=" " alt="" coords="4214,24,4617,28,5179,37,5745,57,5981,72,6160,91,6196,98,6195,103,6159,96,5981,77,5745,63,5179,43,4617,33,4214,30"/>
-<area shape="rect" href="cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="6433,196,6608,236"/>
-<area shape="poly" title=" " alt="" coords="4214,25,4768,31,5543,43,6239,63,6464,76,6530,83,6560,91,6568,104,6572,117,6568,146,6555,174,6539,197,6534,194,6550,171,6563,144,6566,118,6563,106,6556,96,6529,88,6464,81,6239,68,5543,49,4768,36,4214,30"/>
-<area shape="rect" href="cyrf6936_8h.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="6371,101,6545,141"/>
-<area shape="poly" title=" " alt="" coords="4215,24,4652,26,5272,35,5596,43,5899,55,6161,71,6358,91,6395,98,6394,103,6358,96,6160,76,5899,60,5596,49,5272,40,4652,31,4215,29"/>
-<area shape="rect" href="eeprom25AA256_8h.html" title="Driver for the eeprom 225AA256 (and 25LC256) 256K SPI bus serial EEPROM from Microchip." alt="" coords="6621,101,6796,141"/>
-<area shape="poly" title=" " alt="" coords="4214,24,4693,25,5384,33,5747,42,6087,54,6381,70,6602,91,6642,98,6641,103,6602,96,6380,75,6087,59,5747,47,5384,39,4693,31,4214,29"/>
-<area shape="rect" href="invensense2_8h.html" title="Driver for the Invensense V2 IMUs ICM20948, ICM20648 and ICM20649." alt="" coords="2887,101,3061,141"/>
-<area shape="poly" title=" " alt="" coords="4008,30,3832,34,3601,45,3342,64,3081,96,3044,103,3043,98,3080,91,3341,59,3601,39,3832,29,4008,25"/>
-<area shape="rect" href="invensense3_8h.html" title="Driver for the Invensense V3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="3137,101,3312,141"/>
-<area shape="poly" title=" " alt="" coords="4008,33,3704,52,3518,70,3332,96,3295,103,3294,98,3331,91,3517,65,3704,47,4008,28"/>
-<area shape="rect" href="l3gd20__spi_8h.html" title="Driver for L3GD20 3&#45;axis gyroscope from ST using SPI." alt="" coords="6820,101,6995,141"/>
-<area shape="poly" title=" " alt="" coords="4214,25,5588,46,6359,66,6642,77,6809,91,6846,98,6845,103,6808,96,6641,83,6359,71,5587,51,4214,30"/>
-<area shape="rect" href="lis302dl__spi_8h.html" title="Driver for LIS302DL 3&#45;axis accelerometer from ST using SPI." alt="" coords="7019,101,7193,141"/>
-<area shape="poly" title=" " alt="" coords="4214,25,4815,32,5687,45,6521,64,6827,77,7008,91,7044,98,7043,103,7007,96,6826,82,6520,70,5687,50,4815,37,4214,30"/>
-<area shape="rect" href="lsm303d__spi_8h.html" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="7217,101,7392,141"/>
-<area shape="poly" title=" " alt="" coords="4214,25,4852,31,5786,43,6682,63,7012,76,7206,91,7243,98,7242,103,7206,96,7011,81,6682,68,5786,49,4852,36,4214,30"/>
-<area shape="rect" href="max1168_8c.html" title=" " alt="" coords="7416,101,7591,141"/>
-<area shape="poly" title=" " alt="" coords="4215,25,4888,30,5885,42,6844,62,7197,75,7405,91,7442,98,7441,103,7404,96,7197,80,6844,67,5885,47,4888,35,4215,30"/>
-<area shape="rect" href="mcp355x_8c.html" title="Driver for MCP3550/1/3." alt="" coords="7615,101,7789,141"/>
-<area shape="poly" title=" " alt="" coords="4215,25,4925,29,5984,41,7006,61,7382,74,7515,82,7604,91,7640,98,7639,103,7603,96,7515,87,7381,80,7005,66,5984,46,4924,35,4215,30"/>
-<area shape="rect" href="mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI." alt="" coords="2636,101,2811,141"/>
-<area shape="poly" title=" " alt="" coords="4008,28,3793,29,3500,38,3167,58,2997,75,2830,96,2792,103,2791,98,2830,91,2996,69,3166,53,3500,33,3793,24,4008,23"/>
-<area shape="rect" href="mpu9250__spi_8h.html" title="Driver for the MPU&#45;9250 using SPI." alt="" coords="7813,101,7988,141"/>
-<area shape="poly" title=" " alt="" coords="4214,24,4960,29,6082,39,6655,48,7167,59,7567,73,7708,82,7802,91,7839,98,7838,103,7802,96,7708,87,7566,79,7167,65,6655,53,6082,45,4960,34,4214,30"/>
-<area shape="rect" href="ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="8012,101,8187,141"/>
-<area shape="poly" title=" " alt="" coords="4214,24,4996,28,6180,38,6786,47,7328,58,7752,73,7901,81,8001,91,8038,98,8037,103,8000,96,7901,87,7751,78,7328,63,6786,52,6180,44,4996,33,4214,30"/>
-<area shape="rect" href="pmw3901_8h.html" title=" " alt="" coords="8211,101,8385,141"/>
-<area shape="poly" title=" " alt="" coords="4214,24,5031,27,6278,37,6917,45,7490,57,7936,72,8095,81,8200,91,8237,98,8236,103,8199,96,8094,86,7936,77,7489,62,6917,51,6278,42,5031,33,4214,30"/>
-<area shape="rect" href="sdcard__spi_8h.html" title="Interface for reading and writing blocks of data to and from an SD card directly over SPI." alt="" coords="8409,101,8584,141"/>
-<area shape="poly" title=" " alt="" coords="4214,24,5066,27,6376,36,7049,44,7651,56,8121,71,8288,80,8398,91,8436,98,8435,103,8398,96,8287,86,8121,76,7651,61,7049,49,6376,41,5066,32,4214,29"/>
-<area shape="rect" href="sst25vfxxxx_8h.html" title="Driver for the SST25Vxxxx flash chips." alt="" coords="8608,101,8783,141"/>
-<area shape="poly" title=" " alt="" coords="4215,24,5102,26,6474,35,7180,43,7812,54,8306,70,8481,80,8597,91,8634,98,8633,103,8596,96,8481,85,8306,76,7812,60,7180,48,6474,40,5102,31,4215,29"/>
-<area shape="poly" title=" " alt="" coords="954,154,954,196,949,196,949,154"/>
-<area shape="poly" title=" " alt="" coords="929,249,899,285,895,282,925,245"/>
-<area shape="poly" title=" " alt="" coords="6481,151,6510,194,6506,197,6476,154"/>
-<area shape="poly" title=" " alt="" coords="2947,152,2900,198,2897,194,2943,149"/>
-<area shape="poly" title=" " alt="" coords="3012,147,3076,194,3072,198,3009,151"/>
-<area shape="poly" title=" " alt="" coords="3142,147,2950,199,2948,193,3141,142"/>
-<area shape="poly" title=" " alt="" coords="3256,148,3303,194,3299,198,3252,152"/>
-<area shape="poly" title=" " alt="" coords="3190,151,3126,198,3123,194,3187,147"/>
-<area shape="poly" title=" " alt="" coords="2768,145,2849,194,2846,198,2765,150"/>
+<area shape="rect" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="162,5,341,45"/>
+<area shape="rect" title=" " alt="" coords="5,174,60,199"/>
+<area shape="poly" title=" " alt="" coords="163,41,108,61,82,76,60,95,50,110,43,126,36,160,31,159,38,125,45,107,56,92,79,72,105,56,161,36"/>
+<area shape="rect" title=" " alt="" coords="70,93,238,119"/>
+<area shape="poly" title=" " alt="" coords="229,48,181,87,177,82,226,43"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="262,93,435,119"/>
+<area shape="poly" title=" " alt="" coords="277,43,325,82,322,87,273,48"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="727,93,901,119"/>
+<area shape="poly" title=" " alt="" coords="341,36,718,89,718,94,341,42"/>
+<area shape="poly" title=" " alt="" coords="272,121,176,140,72,169,67,171,65,166,71,164,174,135,271,116"/>
+<area shape="rect" title=" " alt="" coords="84,174,171,199"/>
+<area shape="poly" title=" " alt="" coords="317,121,174,172,172,167,316,116"/>
+<area shape="rect" title=" " alt="" coords="195,174,265,199"/>
+<area shape="poly" title=" " alt="" coords="333,121,261,168,258,164,330,117"/>
+<area shape="rect" title=" " alt="" coords="289,174,416,199"/>
+<area shape="poly" title=" " alt="" coords="352,119,354,160,349,160,347,119"/>
+<area shape="rect" title=" " alt="" coords="440,167,601,207"/>
+<area shape="poly" title=" " alt="" coords="375,116,468,158,465,163,373,121"/>
+<area shape="rect" title=" " alt="" coords="626,174,709,199"/>
+<area shape="poly" title=" " alt="" coords="794,121,702,170,700,165,791,116"/>
+<area shape="rect" title=" " alt="" coords="733,167,895,207"/>
+<area shape="poly" title=" " alt="" coords="817,119,817,153,811,153,811,119"/>
+<area shape="rect" title=" " alt="" coords="920,174,991,199"/>
+<area shape="poly" title=" " alt="" coords="836,117,924,165,921,170,834,121"/>
+<area shape="rect" title=" " alt="" coords="1015,174,1090,199"/>
+<area shape="poly" title=" " alt="" coords="853,116,1004,164,1012,167,1010,172,1002,169,852,121"/>
 </map>
 </div>
 </div>
@@ -263,8 +157,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aeff80f00f6c7ef00aeb93fd95c78ced0" id="r_aeff80f00f6c7ef00aeb93fd95c78ced0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi_8h.html#aeff80f00f6c7ef00aeb93fd95c78ced0">SPI_BLOCKING_TIMEOUT</a>&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
-<tr class="separator:aeff80f00f6c7ef00aeb93fd95c78ced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ae4597a9e237b75a108cdde49c302a6" id="r_ga8ae4597a9e237b75a108cdde49c302a6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6">SPI_TRANSACTION_QUEUE_LEN</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memdesc:ga8ae4597a9e237b75a108cdde49c302a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI transaction queue length.  <br /></td></tr>
 <tr class="separator:ga8ae4597a9e237b75a108cdde49c302a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,9 +274,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5d383931766cb373ebad0b8bc26d439d" id="r_ga5d383931766cb373ebad0b8bc26d439d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">t</a>)</td></tr>
 <tr class="memdesc:ga5d383931766cb373ebad0b8bc26d439d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a spi transaction.  <br /></td></tr>
 <tr class="separator:ga5d383931766cb373ebad0b8bc26d439d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66e55e817c63768ac9910dc6f7cc9447" id="r_ga66e55e817c63768ac9910dc6f7cc9447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447">spi_blocking_transceive</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">t</a>)</td></tr>
-<tr class="memdesc:ga66e55e817c63768ac9910dc6f7cc9447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a spi transaction (blocking).  <br /></td></tr>
-<tr class="separator:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c6251bffe8d612c37c9a89695d7cc4e" id="r_ga4c6251bffe8d612c37c9a89695d7cc4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">enum</a> <a class="el" href="group__spi.html#ga52e70c55efc6a9b04903157a0965baac">SPITransactionStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga4c6251bffe8d612c37c9a89695d7cc4e">spi_blocking_transceive</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">t</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="object__tracking_8c.html#a0847d1b93c790eaa08315d68e786ae14">timeout</a>)</td></tr>
+<tr class="memdesc:ga4c6251bffe8d612c37c9a89695d7cc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a spi transaction (blocking).  <br /></td></tr>
+<tr class="separator:ga4c6251bffe8d612c37c9a89695d7cc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43916477f5d87b42eaa7d2099771568" id="r_gad43916477f5d87b42eaa7d2099771568"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_slave_select</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">slave</a>)</td></tr>
 <tr class="memdesc:gad43916477f5d87b42eaa7d2099771568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a slave.  <br /></td></tr>
 <tr class="separator:gad43916477f5d87b42eaa7d2099771568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,30 +315,13 @@ Variables</h2></td></tr>
 <p>Also see the <a class="el" href="group__spi.html">SPI interface</a> page. </p>
 
 <p class="definition">Definition in file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aeff80f00f6c7ef00aeb93fd95c78ced0" name="aeff80f00f6c7ef00aeb93fd95c78ced0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeff80f00f6c7ef00aeb93fd95c78ced0">&#9670;&#160;</a></span>SPI_BLOCKING_TIMEOUT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SPI_BLOCKING_TIMEOUT&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spi_8h_source.html#l00040">40</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="spi_8h.html">spi.h</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 13:06:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 18:13:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

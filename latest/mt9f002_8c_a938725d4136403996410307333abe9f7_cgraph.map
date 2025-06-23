@@ -2,16 +2,17 @@
 <area shape="rect" id="Node000001" title="Set the PLL registers based on config." alt="" coords="5,31,132,56"/>
 <area shape="rect" id="Node000002" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="182,5,261,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,30,168,24,169,29,133,35"/>
-<area shape="rect" id="Node000006" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="180,55,263,80"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="133,51,167,56,166,61,132,56"/>
-<area shape="rect" id="Node000003" href="$group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete." alt="" coords="311,5,489,31"/>
+<area shape="rect" id="Node000007" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="180,55,263,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="133,51,167,56,166,61,132,56"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="311,5,489,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,15,297,15,297,21,261,21"/>
-<area shape="rect" id="Node000004" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="537,5,683,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="490,15,524,15,524,21,490,21"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="563,55,657,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="455,28,551,51,549,56,454,33"/>
-<area shape="rect" id="Node000007" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="317,55,483,80"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="263,65,303,65,303,70,263,70"/>
-<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="454,52,541,31,543,36,455,57"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="483,65,549,65,549,70,483,70"/>
+<area shape="rect" id="Node000004" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="537,31,692,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="490,26,524,30,523,35,489,31"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="787,5,880,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="692,32,773,22,774,28,692,37"/>
+<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="740,55,927,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="692,49,727,53,726,58,692,54"/>
+<area shape="rect" id="Node000008" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="317,55,483,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="263,65,303,65,303,70,263,70"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="482,55,523,51,524,56,483,61"/>
 </map>

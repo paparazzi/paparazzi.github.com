@@ -1,52 +1,62 @@
 <map id="sw/airborne/arch/stm32/peripherals/ms2100_arch.c" name="sw/airborne/arch/stm32/peripherals/ms2100_arch.c">
-<area shape="rect" id="Node000001" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="536,5,737,45"/>
-<area shape="rect" id="Node000002" href="$ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="458,93,621,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="615,48,566,87,563,82,611,43"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="150,328,323,353"/>
-<area shape="poly" id="edge25_Node000001_Node000006" title=" " alt="" coords="538,48,477,67,418,96,365,131,328,163,298,202,264,256,251,286,244,315,238,313,246,284,260,253,293,199,324,159,362,126,415,91,475,62,536,43"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="274,255,461,280"/>
-<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="549,48,497,67,448,95,417,128,396,168,382,208,374,242,368,241,376,206,391,165,413,125,444,91,494,62,547,43"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="645,93,823,119"/>
-<area shape="poly" id="edge26_Node000001_Node000019" title=" " alt="" coords="662,43,711,82,707,87,659,48"/>
-<area shape="rect" id="Node000020" title=" " alt="" coords="847,93,1031,119"/>
-<area shape="poly" id="edge28_Node000001_Node000020" title=" " alt="" coords="710,43,883,87,881,92,708,48"/>
-<area shape="rect" id="Node000021" title=" " alt="" coords="1055,93,1229,119"/>
-<area shape="poly" id="edge29_Node000001_Node000021" title=" " alt="" coords="738,40,1056,89,1055,94,737,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="741,409,796,434"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="604,116,663,133,728,160,760,178,789,199,816,224,838,253,843,271,844,296,840,325,830,354,814,380,795,401,791,398,810,377,825,352,835,323,839,295,838,272,833,256,812,228,786,203,757,182,725,165,661,138,602,121"/>
-<area shape="rect" id="Node000004" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="485,255,618,280"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="549,118,561,139,571,166,572,206,564,242,559,241,567,206,566,167,557,142,545,120"/>
-<area shape="rect" id="Node000011" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="643,255,823,280"/>
-<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="555,117,710,244,706,248,552,121"/>
-<area shape="rect" id="Node000017" href="$ms2100__arch_8h.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="405,167,556,207"/>
-<area shape="poly" id="edge22_Node000002_Node000017" title=" " alt="" coords="533,120,505,157,501,154,529,117"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="562,279,591,314,632,351,681,381,730,403,727,408,679,386,628,355,587,317,558,282"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="347,328,515,353"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="533,282,464,323,462,318,531,278"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="501,283,301,328,300,322,500,277"/>
-<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="314,351,728,411,727,417,314,356"/>
+<area shape="rect" id="Node000001" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="832,5,1033,45"/>
+<area shape="rect" id="Node000002" href="$ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="562,93,725,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="864,48,700,92,698,87,863,43"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="226,328,399,353"/>
+<area shape="poly" id="edge30_Node000001_Node000006" title=" " alt="" coords="832,30,766,36,694,47,621,67,551,96,513,119,478,146,414,208,364,269,330,317,325,314,360,266,410,205,474,142,510,114,549,91,619,61,693,42,766,30,831,25"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="847,255,1034,280"/>
+<area shape="poly" id="edge32_Node000001_Node000023" title=" " alt="" coords="921,47,908,69,898,94,894,134,902,175,915,211,929,241,924,243,910,213,896,176,889,135,893,93,903,66,916,44"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="907,93,1086,119"/>
+<area shape="poly" id="edge31_Node000001_Node000024" title=" " alt="" coords="950,44,980,81,976,84,946,47"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1110,93,1294,119"/>
+<area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="998,43,1150,87,1149,92,996,48"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1318,93,1491,119"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="1034,41,1323,88,1322,94,1033,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="587,409,641,434"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="621,121,586,142,545,172,505,210,488,232,475,256,470,278,472,299,482,320,497,339,538,374,579,400,576,404,534,378,494,343,478,323,467,301,464,278,470,254,484,229,501,206,541,167,583,137,619,117"/>
+<area shape="rect" id="Node000004" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="690,255,823,280"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="646,118,652,159,659,183,671,205,693,228,719,246,716,250,690,232,667,208,654,185,647,160,641,119"/>
+<area shape="rect" id="Node000016" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="485,255,665,280"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="641,120,588,243,583,241,636,118"/>
+<area shape="rect" id="Node000022" href="$ms2100__arch_8h.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="681,167,832,207"/>
+<area shape="poly" id="edge27_Node000002_Node000022" title=" " alt="" coords="662,117,720,157,717,161,659,121"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="760,280,758,316,753,336,743,355,724,375,702,391,655,412,653,407,699,386,721,371,738,352,748,334,753,315,755,280"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="986,328,1154,353"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="808,277,1007,322,1005,328,806,283"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="690,282,398,328,397,323,689,277"/>
+<area shape="rect" id="Node000011" href="$threads_8h.html" title=" " alt="" coords="1179,328,1353,353"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="824,276,836,277,1169,323,1168,329,835,283,823,281"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="357,351,574,407,573,412,356,356"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="341,409,428,434"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="260,351,352,400,349,404,257,356"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="485,409,556,434"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="279,351,473,404,471,409,277,356"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="325,352,367,396,363,400,321,355"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="452,409,523,434"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="339,351,450,401,448,405,337,356"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="5,409,132,434"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="213,356,106,405,104,401,211,351"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="278,356,118,407,117,402,276,351"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="156,401,317,441"/>
-<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="239,354,239,388,234,388,234,354"/>
-<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="758,278,786,298,799,311,810,327,814,346,810,366,791,399,786,397,805,364,809,346,805,329,795,314,783,302,755,282"/>
-<area shape="poly" id="edge21_Node000011_Node000008" title=" " alt="" coords="712,282,632,330,584,367,545,401,541,397,581,363,628,326,709,278"/>
-<area shape="rect" id="Node000012" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="921,328,1077,353"/>
-<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="776,277,943,322,942,327,775,283"/>
-<area shape="rect" id="Node000016" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="641,328,795,353"/>
-<area shape="poly" id="edge19_Node000011_Node000016" title=" " alt="" coords="733,281,726,315,721,314,728,280"/>
-<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="967,356,810,409,808,404,965,351"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="1057,409,1120,434"/>
-<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="1014,352,1067,398,1064,402,1011,356"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="871,409,941,434"/>
-<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="987,356,932,402,929,398,984,351"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="965,409,1033,434"/>
-<area shape="poly" id="edge18_Node000012_Node000015" title=" " alt="" coords="1002,354,1002,395,997,395,997,354"/>
-<area shape="poly" id="edge20_Node000016_Node000003" title=" " alt="" coords="728,352,756,396,751,398,723,355"/>
-<area shape="poly" id="edge24_Node000017_Node000004" title=" " alt="" coords="500,205,534,243,530,246,496,209"/>
-<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="455,209,397,249,394,244,452,205"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="303,355,266,393,262,390,300,352"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="1421,409,1503,434"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1295,351,1422,401,1420,406,1294,356"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1039,401,1202,441"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="1246,356,1169,397,1166,392,1243,351"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1227,409,1297,434"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="1268,354,1266,395,1261,395,1263,353"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1322,409,1397,434"/>
+<area shape="poly" id="edge16_Node000011_Node000015" title=" " alt="" coords="1281,351,1337,398,1333,402,1278,356"/>
+<area shape="poly" id="edge18_Node000016_Node000003" title=" " alt="" coords="573,281,564,314,563,334,566,352,578,376,594,397,590,400,574,379,561,354,557,334,559,313,568,280"/>
+<area shape="poly" id="edge26_Node000016_Node000008" title=" " alt="" coords="571,281,503,398,498,396,566,279"/>
+<area shape="rect" id="Node000017" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="805,328,961,353"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="625,277,821,322,820,328,624,283"/>
+<area shape="rect" id="Node000021" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="576,328,729,353"/>
+<area shape="poly" id="edge24_Node000016_Node000021" title=" " alt="" coords="590,278,632,317,628,320,586,282"/>
+<area shape="poly" id="edge22_Node000017_Node000003" title=" " alt="" coords="845,356,655,411,654,406,843,351"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="852,409,915,434"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="886,354,886,395,881,395,881,354"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="939,409,1009,434"/>
+<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="898,351,952,398,949,402,895,356"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="760,409,828,434"/>
+<area shape="poly" id="edge23_Node000017_Node000020" title=" " alt="" coords="872,356,819,402,816,398,868,352"/>
+<area shape="poly" id="edge25_Node000021_Node000003" title=" " alt="" coords="649,355,628,397,623,395,645,352"/>
+<area shape="poly" id="edge29_Node000022_Node000004" title=" " alt="" coords="759,207,759,241,754,241,754,207"/>
+<area shape="poly" id="edge28_Node000022_Node000023" title=" " alt="" coords="802,204,902,247,900,252,800,209"/>
 </map>

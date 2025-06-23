@@ -1,79 +1,90 @@
 <map id="sw/airborne/modules/imu/imu_px4fmu.h" name="sw/airborne/modules/imu/imu_px4fmu.h">
-<area shape="rect" id="Node000001" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883." alt="" coords="432,5,591,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="757,445,812,471"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,43,333,67,283,84,237,104,200,128,176,155,170,170,169,185,173,202,183,220,196,235,209,245,239,253,273,256,314,267,386,302,441,333,496,363,570,395,663,425,745,445,743,451,661,430,568,400,494,368,439,337,384,307,312,272,272,261,238,258,207,249,192,239,178,223,168,204,164,186,165,169,171,153,196,124,234,100,281,79,332,62,431,38"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="193,189,353,214"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="487,48,302,182,298,178,484,43"/>
-<area shape="rect" id="Node000004" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="437,101,585,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="514,46,514,87,509,87,509,46"/>
-<area shape="rect" id="Node000016" href="$mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI." alt="" coords="1211,93,1371,133"/>
-<area shape="poly" id="edge27_Node000001_Node000016" title=" " alt="" coords="591,33,1198,99,1197,104,590,38"/>
-<area shape="rect" id="Node000025" href="$hmc58xx_8h.html" title=" " alt="" coords="915,189,1086,214"/>
-<area shape="poly" id="edge43_Node000001_Node000025" title=" " alt="" coords="565,43,956,181,954,186,563,48"/>
-<area shape="poly" id="edge26_Node000004_Node000003" title=" " alt="" coords="480,129,319,186,317,181,478,124"/>
-<area shape="rect" id="Node000005" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="615,277,795,302"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="586,119,649,127,713,139,769,157,790,167,804,180,811,193,811,207,798,232,772,254,743,272,740,268,769,250,793,229,806,206,806,194,800,183,787,172,767,162,712,145,648,132,585,124"/>
-<area shape="rect" id="Node000012" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="109,277,301,302"/>
-<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="496,128,417,183,392,204,366,224,309,253,253,274,252,270,306,248,363,219,389,200,414,179,493,124"/>
-<area shape="rect" id="Node000014" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="428,181,595,221"/>
-<area shape="poly" id="edge19_Node000004_Node000014" title=" " alt="" coords="514,126,514,167,509,167,509,126"/>
-<area shape="rect" id="Node000015" href="$low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="619,189,790,214"/>
-<area shape="poly" id="edge23_Node000004_Node000015" title=" " alt="" coords="538,124,667,180,665,185,536,129"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="690,304,668,322,647,346,635,371,635,384,640,396,661,418,688,433,716,444,744,450,743,455,715,449,685,438,658,422,636,399,630,385,630,370,642,343,664,319,686,300"/>
-<area shape="rect" id="Node000006" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="267,365,423,390"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="657,305,406,364,405,359,656,299"/>
-<area shape="rect" id="Node000010" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="651,365,804,390"/>
-<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="710,301,723,350,718,351,705,303"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="1141,365,1212,390"/>
-<area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="791,299,941,322,1111,355,1129,359,1128,364,1109,360,940,328,790,305"/>
-<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="404,387,442,395,744,447,743,452,442,400,403,393"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="181,445,244,471"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="327,392,245,441,242,436,324,388"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="309,445,380,471"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="347,390,347,431,342,431,342,390"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="5,445,73,471"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="301,393,87,447,86,442,300,387"/>
-<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="738,389,770,433,766,436,734,392"/>
-<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="225,300,315,355,313,360,222,304"/>
-<area shape="poly" id="edge18_Node000012_Node000007" title=" " alt="" coords="155,305,110,325,91,340,75,359,68,377,75,396,94,416,117,431,169,448,167,453,115,436,90,420,70,399,63,377,70,356,87,336,108,320,153,300"/>
-<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="154,304,105,325,82,340,63,359,53,376,46,395,41,432,36,431,41,394,48,374,59,356,79,336,103,320,152,300"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="85,365,242,390"/>
-<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="201,303,177,353,173,351,197,301"/>
-<area shape="poly" id="edge22_Node000014_Node000002" title=" " alt="" coords="518,221,528,258,546,305,572,353,608,395,640,417,675,433,744,450,743,455,674,438,637,422,604,399,568,356,541,307,523,260,513,222"/>
-<area shape="poly" id="edge20_Node000014_Node000005" title=" " alt="" coords="555,219,667,269,665,274,553,224"/>
-<area shape="poly" id="edge21_Node000014_Node000012" title=" " alt="" coords="445,224,259,276,258,270,443,219"/>
-<area shape="poly" id="edge24_Node000015_Node000002" title=" " alt="" coords="673,216,635,238,618,253,604,271,600,285,600,303,609,344,629,396,655,417,685,432,745,449,743,454,683,437,652,421,625,399,604,345,595,303,595,284,600,268,614,249,632,233,670,212"/>
-<area shape="poly" id="edge25_Node000015_Node000005" title=" " alt="" coords="707,214,707,262,702,262,702,214"/>
-<area shape="poly" id="edge28_Node000016_Node000002" title=" " alt="" coords="1372,115,1445,121,1531,133,1621,151,1710,179,1754,195,1790,209,1820,231,1847,268,1861,306,1859,340,1843,372,1813,400,1790,410,1754,419,1649,434,1512,445,1356,452,1045,459,826,460,826,454,1045,454,1356,447,1512,440,1649,429,1753,414,1788,405,1810,395,1838,368,1854,339,1855,307,1842,271,1816,234,1788,214,1752,200,1708,184,1620,157,1530,138,1444,127,1371,120"/>
-<area shape="poly" id="edge29_Node000016_Node000005" title=" " alt="" coords="1211,124,1066,143,984,161,904,184,834,219,738,272,736,268,832,215,902,179,983,155,1065,138,1211,118"/>
-<area shape="rect" id="Node000017" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="1563,189,1697,214"/>
-<area shape="poly" id="edge30_Node000016_Node000017" title=" " alt="" coords="1366,131,1572,183,1571,188,1365,136"/>
-<area shape="rect" id="Node000023" href="$mpu60x0_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI)." alt="" coords="1205,189,1377,214"/>
-<area shape="poly" id="edge39_Node000016_Node000023" title=" " alt="" coords="1294,134,1294,175,1289,175,1289,134"/>
-<area shape="poly" id="edge31_Node000017_Node000002" title=" " alt="" coords="1697,204,1732,211,1767,223,1799,241,1826,268,1833,286,1832,307,1817,349,1795,383,1781,399,1758,409,1723,418,1622,432,1489,442,1339,449,1039,457,826,459,826,454,1039,452,1339,444,1489,437,1621,426,1722,412,1756,404,1778,395,1791,380,1812,346,1827,306,1828,287,1821,271,1796,246,1765,228,1730,216,1696,209"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="1643,277,1811,302"/>
-<area shape="poly" id="edge32_Node000017_Node000018" title=" " alt="" coords="1645,212,1705,265,1702,269,1641,216"/>
-<area shape="rect" id="Node000019" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1446,277,1619,302"/>
-<area shape="poly" id="edge33_Node000017_Node000019" title=" " alt="" coords="1619,216,1558,269,1555,265,1615,212"/>
-<area shape="poly" id="edge36_Node000019_Node000002" title=" " alt="" coords="1583,299,1690,327,1735,342,1759,356,1768,378,1766,389,1758,399,1744,406,1715,412,1623,423,1347,440,826,458,826,453,1347,435,1623,418,1714,407,1742,401,1755,395,1761,387,1763,378,1755,359,1733,347,1688,333,1581,305"/>
-<area shape="poly" id="edge35_Node000019_Node000011" title=" " alt="" coords="1486,305,1226,367,1225,362,1484,299"/>
-<area shape="rect" id="Node000020" title=" " alt="" coords="1507,365,1593,390"/>
-<area shape="poly" id="edge34_Node000019_Node000020" title=" " alt="" coords="1538,302,1547,350,1542,351,1532,303"/>
-<area shape="rect" id="Node000021" title=" " alt="" coords="1617,365,1744,390"/>
-<area shape="poly" id="edge37_Node000019_Node000021" title=" " alt="" coords="1554,300,1650,355,1648,360,1551,304"/>
-<area shape="rect" id="Node000022" title=" " alt="" coords="1321,357,1483,397"/>
-<area shape="poly" id="edge38_Node000019_Node000022" title=" " alt="" coords="1517,304,1444,352,1441,347,1514,300"/>
-<area shape="poly" id="edge40_Node000023_Node000002" title=" " alt="" coords="1321,212,1356,234,1373,249,1386,268,1392,290,1386,311,1358,332,1309,360,1226,400,1114,429,1002,446,902,455,826,459,826,453,902,450,1002,441,1113,423,1224,395,1306,355,1355,327,1381,308,1387,290,1381,271,1369,253,1353,238,1318,216"/>
-<area shape="poly" id="edge41_Node000023_Node000005" title=" " alt="" coords="1213,217,796,277,796,272,1212,211"/>
-<area shape="rect" id="Node000024" href="$mpu60x0__regs_8h.html" title="Register and address definitions for MPU&#45;6000 and MPU&#45;6050." alt="" coords="1211,269,1371,309"/>
-<area shape="poly" id="edge42_Node000023_Node000024" title=" " alt="" coords="1294,214,1294,255,1289,255,1289,214"/>
-<area shape="poly" id="edge44_Node000025_Node000002" title=" " alt="" coords="955,217,905,237,881,252,860,271,840,302,833,330,829,361,818,398,800,434,795,432,813,396,824,360,828,329,835,299,856,268,878,248,903,232,953,212"/>
-<area shape="poly" id="edge48_Node000025_Node000005" title=" " alt="" coords="961,217,758,275,757,270,960,212"/>
-<area shape="rect" id="Node000026" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="870,277,1003,302"/>
-<area shape="poly" id="edge45_Node000025_Node000026" title=" " alt="" coords="994,216,956,267,952,264,990,213"/>
-<area shape="rect" id="Node000028" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="1028,269,1187,309"/>
-<area shape="poly" id="edge49_Node000025_Node000028" title=" " alt="" coords="1017,212,1075,259,1072,263,1013,216"/>
-<area shape="poly" id="edge46_Node000026_Node000002" title=" " alt="" coords="932,304,904,347,863,399,815,439,812,435,859,395,900,344,928,301"/>
-<area shape="rect" id="Node000027" title=" " alt="" coords="930,365,1098,390"/>
-<area shape="poly" id="edge47_Node000026_Node000027" title=" " alt="" coords="949,300,996,352,992,356,945,304"/>
+<area shape="rect" id="Node000001" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883." alt="" coords="369,5,528,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="788,438,843,463"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="370,44,269,69,217,86,170,107,133,131,110,158,105,172,104,187,109,203,120,220,144,243,168,255,194,259,220,259,279,255,312,257,347,267,403,295,443,323,483,352,538,380,601,402,666,420,775,441,774,446,665,425,600,407,536,385,480,357,440,328,400,299,345,272,311,262,279,260,220,264,193,265,167,260,141,247,116,223,104,205,99,187,99,171,105,155,130,127,168,102,215,82,267,64,368,39"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,189,290,214"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="424,48,239,182,236,178,421,43"/>
+<area shape="rect" id="Node000004" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="375,101,523,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="451,46,451,87,446,87,446,46"/>
+<area shape="rect" id="Node000016" href="$mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI." alt="" coords="859,93,1019,133"/>
+<area shape="poly" id="edge27_Node000001_Node000016" title=" " alt="" coords="529,38,846,93,846,98,528,43"/>
+<area shape="rect" id="Node000030" href="$hmc58xx_8h.html" title=" " alt="" coords="1186,189,1357,214"/>
+<area shape="poly" id="edge48_Node000001_Node000030" title=" " alt="" coords="528,25,630,31,757,42,895,61,1032,91,1091,110,1148,134,1240,179,1238,184,1146,139,1089,115,1031,96,894,66,756,47,630,36,528,31"/>
+<area shape="poly" id="edge26_Node000004_Node000003" title=" " alt="" coords="417,129,256,186,254,181,416,124"/>
+<area shape="rect" id="Node000005" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="611,277,791,302"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="523,119,586,127,651,139,706,157,727,167,742,180,750,202,747,225,736,248,723,267,718,264,731,245,741,224,745,202,737,183,724,172,704,162,649,145,585,132,523,124"/>
+<area shape="rect" id="Node000012" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="142,277,334,302"/>
+<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="432,128,354,183,303,228,261,268,257,264,300,224,351,179,429,124"/>
+<area shape="rect" id="Node000014" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="365,181,532,221"/>
+<area shape="poly" id="edge19_Node000004_Node000014" title=" " alt="" coords="451,126,451,167,446,167,446,126"/>
+<area shape="rect" id="Node000015" href="$low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="557,189,727,214"/>
+<area shape="poly" id="edge23_Node000004_Node000015" title=" " alt="" coords="476,124,604,180,602,185,474,129"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="715,300,739,325,766,356,806,424,801,426,761,359,735,328,711,304"/>
+<area shape="rect" id="Node000006" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="265,357,421,383"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="649,305,409,357,408,352,648,299"/>
+<area shape="rect" id="Node000010" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="599,357,752,383"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="699,303,686,345,681,344,694,301"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="939,438,1009,463"/>
+<area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="722,300,944,429,941,433,719,304"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="412,380,775,440,774,445,412,385"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,438,68,463"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="299,385,82,441,81,435,298,380"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="308,438,379,463"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="346,383,346,424,341,424,341,383"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="175,438,243,463"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="325,385,242,433,239,429,322,381"/>
+<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="697,381,784,429,781,434,695,385"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="255,300,318,347,315,351,252,304"/>
+<area shape="poly" id="edge18_Node000012_Node000007" title=" " alt="" coords="165,305,110,324,85,340,63,359,53,374,46,391,40,424,35,423,41,389,48,371,59,356,81,335,108,320,163,300"/>
+<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="161,305,112,324,91,339,74,359,68,372,70,384,77,395,89,405,123,423,162,436,160,441,121,428,86,410,73,398,64,386,63,371,69,356,87,335,110,320,159,300"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="83,357,241,383"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="229,304,185,349,181,346,225,300"/>
+<area shape="poly" id="edge22_Node000014_Node000002" title=" " alt="" coords="459,221,474,255,499,299,531,343,572,381,622,408,676,427,729,438,774,444,774,449,728,444,675,432,620,413,568,385,527,347,494,302,470,258,454,223"/>
+<area shape="poly" id="edge20_Node000014_Node000005" title=" " alt="" coords="505,219,655,270,653,275,503,224"/>
+<area shape="poly" id="edge21_Node000014_Node000012" title=" " alt="" coords="403,224,280,274,278,269,401,219"/>
+<area shape="poly" id="edge24_Node000015_Node000002" title=" " alt="" coords="634,216,610,247,587,291,579,314,575,338,578,360,588,381,600,391,618,401,667,418,775,441,774,446,666,423,616,406,597,396,584,384,573,362,570,338,573,313,582,289,606,245,630,213"/>
+<area shape="poly" id="edge25_Node000015_Node000005" title=" " alt="" coords="652,213,687,263,682,266,648,216"/>
+<area shape="poly" id="edge28_Node000016_Node000002" title=" " alt="" coords="986,131,1017,151,1040,180,1056,215,1061,245,1056,276,1040,311,1028,326,1010,342,960,376,853,434,850,430,957,372,1007,338,1025,322,1036,308,1051,275,1056,246,1051,216,1036,183,1013,155,983,136"/>
+<area shape="poly" id="edge29_Node000016_Node000005" title=" " alt="" coords="912,136,842,183,727,270,724,266,839,179,909,131"/>
+<area shape="rect" id="Node000017" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="1101,277,1234,302"/>
+<area shape="poly" id="edge30_Node000016_Node000017" title=" " alt="" coords="995,131,1040,151,1084,179,1125,222,1156,263,1151,267,1121,225,1080,183,1037,156,993,136"/>
+<area shape="rect" id="Node000028" href="$mpu60x0_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI)." alt="" coords="853,189,1025,214"/>
+<area shape="poly" id="edge44_Node000016_Node000028" title=" " alt="" coords="942,134,942,175,937,175,937,134"/>
+<area shape="poly" id="edge31_Node000017_Node000002" title=" " alt="" coords="1150,304,1083,342,998,385,923,415,857,439,855,434,921,410,996,380,1081,337,1147,300"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="1066,357,1234,383"/>
+<area shape="poly" id="edge32_Node000017_Node000018" title=" " alt="" coords="1167,303,1158,345,1153,343,1162,302"/>
+<area shape="rect" id="Node000019" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1359,357,1533,383"/>
+<area shape="poly" id="edge33_Node000017_Node000019" title=" " alt="" coords="1209,299,1393,351,1392,356,1207,305"/>
+<area shape="rect" id="Node000023" href="$threads_8h.html" title=" " alt="" coords="1557,357,1732,383"/>
+<area shape="poly" id="edge39_Node000017_Node000023" title=" " alt="" coords="1235,299,1562,353,1561,358,1234,304"/>
+<area shape="poly" id="edge36_Node000019_Node000002" title=" " alt="" coords="1360,383,926,433,857,444,856,439,926,428,1359,378"/>
+<area shape="poly" id="edge35_Node000019_Node000011" title=" " alt="" coords="1360,385,1217,406,1056,433,1023,440,1022,435,1055,428,1216,401,1359,380"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1403,438,1489,463"/>
+<area shape="poly" id="edge34_Node000019_Node000020" title=" " alt="" coords="1449,383,1449,424,1443,424,1443,383"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1067,438,1193,463"/>
+<area shape="poly" id="edge37_Node000019_Node000021" title=" " alt="" coords="1401,385,1190,437,1189,432,1399,380"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="1217,431,1379,471"/>
+<area shape="poly" id="edge38_Node000019_Node000022" title=" " alt="" coords="1425,385,1347,427,1345,422,1423,380"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1514,438,1597,463"/>
+<area shape="poly" id="edge40_Node000023_Node000024" title=" " alt="" coords="1633,385,1580,431,1577,427,1630,381"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1621,431,1783,471"/>
+<area shape="poly" id="edge41_Node000023_Node000025" title=" " alt="" coords="1655,381,1682,418,1678,421,1651,384"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1808,438,1879,463"/>
+<area shape="poly" id="edge42_Node000023_Node000026" title=" " alt="" coords="1675,380,1803,430,1801,435,1673,385"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1903,438,1978,463"/>
+<area shape="poly" id="edge43_Node000023_Node000027" title=" " alt="" coords="1701,380,1791,401,1892,428,1900,431,1898,436,1891,433,1790,406,1700,385"/>
+<area shape="poly" id="edge45_Node000028_Node000002" title=" " alt="" coords="919,216,886,239,856,271,838,310,826,352,818,425,813,424,821,351,833,308,852,268,882,235,916,212"/>
+<area shape="poly" id="edge46_Node000028_Node000005" title=" " alt="" coords="908,217,747,274,745,269,906,212"/>
+<area shape="rect" id="Node000029" href="$mpu60x0__regs_8h.html" title="Register and address definitions for MPU&#45;6000 and MPU&#45;6050." alt="" coords="866,269,1026,309"/>
+<area shape="poly" id="edge47_Node000028_Node000029" title=" " alt="" coords="943,214,946,255,941,255,938,214"/>
+<area shape="poly" id="edge49_Node000030_Node000002" title=" " alt="" coords="1277,214,1281,247,1282,293,1273,342,1263,365,1248,385,1222,401,1185,413,1094,424,999,428,926,433,857,445,856,440,926,428,999,423,1093,419,1184,408,1220,397,1244,381,1258,362,1268,340,1277,293,1276,248,1271,215"/>
+<area shape="poly" id="edge54_Node000030_Node000005" title=" " alt="" coords="1195,217,790,277,789,272,1195,211"/>
+<area shape="rect" id="Node000031" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="1309,277,1442,302"/>
+<area shape="poly" id="edge50_Node000030_Node000031" title=" " alt="" coords="1287,212,1352,266,1349,270,1284,216"/>
+<area shape="rect" id="Node000033" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843, HMC5883 and HMC5983 magnetometers." alt="" coords="1467,269,1625,309"/>
+<area shape="poly" id="edge55_Node000030_Node000033" title=" " alt="" coords="1309,212,1473,263,1472,268,1308,217"/>
+<area shape="poly" id="edge51_Node000031_Node000002" title=" " alt="" coords="1371,304,1340,345,1318,367,1291,385,1240,408,1195,421,1154,427,1114,428,1031,426,982,427,926,433,857,445,856,439,926,428,982,422,1031,421,1114,423,1153,422,1194,416,1238,403,1289,380,1314,363,1336,341,1366,300"/>
+<area shape="poly" id="edge53_Node000031_Node000023" title=" " alt="" coords="1415,299,1593,351,1592,356,1414,305"/>
+<area shape="rect" id="Node000032" title=" " alt="" coords="1757,357,1925,383"/>
+<area shape="poly" id="edge52_Node000031_Node000032" title=" " alt="" coords="1422,299,1456,307,1607,333,1743,353,1742,358,1606,338,1455,312,1421,305"/>
 </map>

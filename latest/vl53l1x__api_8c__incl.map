@@ -1,26 +1,34 @@
 <map id="sw/airborne/peripherals/vl53l1x_api.c" name="sw/airborne/peripherals/vl53l1x_api.c">
-<area shape="rect" id="Node000001" title="Functions implementation." alt="" coords="508,5,683,45"/>
-<area shape="rect" id="Node000002" href="$vl53l1x__api_8h.html" title="Functions definition." alt="" coords="495,93,605,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="587,47,566,83,561,80,582,44"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="657,313,728,339"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="604,45,687,299,682,301,599,47"/>
-<area shape="rect" id="Node000003" href="$vl53l1__platform_8h.html" title="Those platform functions are platform dependent and have to be implemented by the user." alt="" coords="429,167,567,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="544,121,517,157,512,154,539,117"/>
-<area shape="rect" id="Node000004" href="$vl53l1__types_8h.html" title="VL53L1 types definition." alt="" coords="439,240,557,265"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="501,192,501,226,495,226,495,192"/>
-<area shape="rect" id="Node000010" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="102,240,235,265"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="446,195,236,240,235,234,445,189"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="463,313,533,339"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="501,266,501,300,495,300,495,266"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="558,313,633,339"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="515,263,570,303,567,307,512,268"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="530,263,649,306,647,311,528,268"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="277,313,343,339"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="469,268,354,311,353,306,467,263"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="368,313,439,339"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="484,267,431,307,428,303,481,263"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="5,313,60,339"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="148,268,68,309,66,305,146,263"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="85,313,253,339"/>
-<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="171,266,171,300,166,300,166,266"/>
+<area shape="rect" id="Node000001" title="Functions implementation." alt="" coords="148,5,322,45"/>
+<area shape="rect" id="Node000002" href="$vl53l1x__api_8h.html" title="Functions definition." alt="" coords="135,93,244,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,47,205,83,201,80,222,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="253,313,324,339"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="245,45,259,93,279,208,289,299,284,300,273,208,254,94,239,46"/>
+<area shape="rect" id="Node000003" href="$vl53l1__platform_8h.html" title="Those platform functions are platform dependent and have to be implemented by the user." alt="" coords="113,167,250,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,119,187,153,182,153,186,119"/>
+<area shape="rect" id="Node000004" href="$vl53l1__types_8h.html" title="VL53L1 types definition." alt="" coords="82,240,199,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,194,156,229,152,227,172,191"/>
+<area shape="rect" id="Node000010" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="384,240,518,265"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="226,189,395,234,394,239,224,195"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="113,394,184,419"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,268,56,280,26,295,16,305,10,315,9,325,13,337,30,357,52,373,100,393,98,398,49,377,27,361,9,340,3,326,5,313,12,301,23,291,54,275,89,263"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="399,394,474,419"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="115,268,89,282,65,299,52,318,52,327,57,337,72,346,102,355,191,372,385,397,385,403,190,377,101,360,70,351,53,341,47,329,47,317,61,296,86,277,112,263"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="165,263,253,305,251,310,163,268"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="67,313,134,339"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="136,267,116,303,111,300,131,264"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="158,313,229,339"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="151,264,179,301,175,304,147,267"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="348,313,402,339"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="441,267,399,306,396,302,437,263"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="427,313,595,339"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="463,264,494,301,490,305,459,267"/>
+<area shape="rect" id="Node000013" href="$threads_8h.html" title=" " alt="" coords="620,313,794,339"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="493,263,653,307,652,312,491,268"/>
+<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="626,341,198,401,197,396,625,336"/>
+<area shape="poly" id="edge16_Node000013_Node000006" title=" " alt="" coords="668,341,488,393,486,388,667,336"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="592,394,675,419"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="698,341,656,385,652,382,694,337"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="699,387,862,427"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="720,337,755,375,751,378,716,341"/>
 </map>

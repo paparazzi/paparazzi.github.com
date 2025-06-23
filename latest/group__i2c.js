@@ -1,6 +1,7 @@
 var group__i2c =
 [
     [ "i2c_transaction", "group__i2c.html#structi2c__transaction", [
+      [ "bsem", "group__i2c.html#aefa14a041e0d7cd7c3d2125c4f6d90a7", null ],
       [ "buf", "group__i2c.html#a295b2671835ae06b28905433cd1096ee", null ],
       [ "len_r", "group__i2c.html#a53b3cfd6febadfef15cdd1136adb20a5", null ],
       [ "len_w", "group__i2c.html#afe675669c727a98bd998283d940b2636", null ],
@@ -69,9 +70,9 @@ var group__i2c =
       [ "I2CTransRx", "group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea0a6a2eb5c566606a3ea9acc6734b4f91", null ],
       [ "I2CTransTxRx", "group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea8fa3bedf5ded2c2a0a7d3d07dc776d7b", null ]
     ] ],
-    [ "i2c_blocking_receive", "group__i2c.html#ga20e1122a73affcddc3adfd904799e612", null ],
-    [ "i2c_blocking_transceive", "group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4", null ],
-    [ "i2c_blocking_transmit", "group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3", null ],
+    [ "i2c_blocking_receive", "group__i2c.html#ga80191e190393b7291e672360556d7f13", null ],
+    [ "i2c_blocking_transceive", "group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a", null ],
+    [ "i2c_blocking_transmit", "group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1", null ],
     [ "i2c_event", "group__i2c.html#ga05763355d0e087ba41feab61dd773fe6", null ],
     [ "i2c_idle", "group__i2c.html#ga5ca96421128d944b576fe84bfce9b0c7", null ],
     [ "i2c_init", "group__i2c.html#ga6b8ffbb119f71ec012b6a2c0a2f92279", null ],

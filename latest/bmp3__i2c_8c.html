@@ -114,11 +114,21 @@ $(document).ready(function(){initNavTree('bmp3__i2c_8c.html',''); initResizable(
 <area shape="poly" title=" " alt="" coords="174,121,124,160,121,156,171,117"/>
 <area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="213,167,346,192"/>
 <area shape="poly" title=" " alt="" coords="204,117,255,156,252,160,200,121"/>
-<area shape="rect" title=" " alt="" coords="93,240,148,265"/>
-<area shape="poly" title=" " alt="" coords="103,191,115,226,110,228,98,193"/>
-<area shape="poly" title=" " alt="" coords="255,194,160,237,158,232,253,190"/>
-<area shape="rect" title=" " alt="" coords="195,240,363,265"/>
-<area shape="poly" title=" " alt="" coords="282,192,282,226,277,226,277,192"/>
+<area shape="rect" title=" " alt="" coords="92,240,147,265"/>
+<area shape="poly" title=" " alt="" coords="103,192,114,226,109,228,98,193"/>
+<area shape="poly" title=" " alt="" coords="255,194,159,237,157,232,253,190"/>
+<area shape="rect" title=" " alt="" coords="183,240,351,265"/>
+<area shape="poly" title=" " alt="" coords="280,193,274,227,269,226,275,192"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="376,240,551,265"/>
+<area shape="poly" title=" " alt="" coords="310,190,421,232,419,237,308,195"/>
+<area shape="rect" title=" " alt="" coords="205,321,287,346"/>
+<area shape="poly" title=" " alt="" coords="433,268,291,319,290,314,431,263"/>
+<area shape="rect" title=" " alt="" coords="311,313,474,353"/>
+<area shape="poly" title=" " alt="" coords="455,267,421,305,417,301,451,264"/>
+<area shape="rect" title=" " alt="" coords="499,321,569,346"/>
+<area shape="poly" title=" " alt="" coords="476,264,516,309,512,312,472,267"/>
+<area shape="rect" title=" " alt="" coords="594,321,669,346"/>
+<area shape="poly" title=" " alt="" coords="489,263,596,313,594,317,487,268"/>
 </map>
 </div>
 </div>
@@ -174,7 +184,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bmp3__i2c_8c_source.html#l00125">125</a> of file <a class="el" href="bmp3__i2c_8c_source.html">bmp3_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmp3__regs_8h_source.html#l00110">BMP3_ALL</a>, <a class="el" href="bmp3__regs_8h_source.html#l00144">BMP3_STATUS_CONFIGURE</a>, <a class="el" href="bmp3__regs_8h_source.html#l00143">BMP3_STATUS_GET_CALIB</a>, <a class="el" href="bmp3__regs_8h_source.html#l00145">BMP3_STATUS_READ_DATA</a>, <a class="el" href="bmp3__regs_8h_source.html#l00142">BMP3_STATUS_UNINIT</a>, <a class="el" href="bmp3__i2c_8c_source.html#l00281">compensate_pressure()</a>, <a class="el" href="bmp3__i2c_8c_source.html#l00261">compensate_temperature()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="bmp3__i2c_8c_source.html#l00193">parse_calib_data()</a>, and <a class="el" href="bmp3__i2c_8c_source.html#l00166">parse_sensor_data()</a>.</p>
+<p class="reference">References <a class="el" href="bmp3__regs_8h_source.html#l00110">BMP3_ALL</a>, <a class="el" href="bmp3__regs_8h_source.html#l00144">BMP3_STATUS_CONFIGURE</a>, <a class="el" href="bmp3__regs_8h_source.html#l00143">BMP3_STATUS_GET_CALIB</a>, <a class="el" href="bmp3__regs_8h_source.html#l00145">BMP3_STATUS_READ_DATA</a>, <a class="el" href="bmp3__regs_8h_source.html#l00142">BMP3_STATUS_UNINIT</a>, <a class="el" href="bmp3__i2c_8c_source.html#l00281">compensate_pressure()</a>, <a class="el" href="bmp3__i2c_8c_source.html#l00261">compensate_temperature()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8h_source.html#l00060">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransSuccess</a>, <a class="el" href="bmp3__i2c_8c_source.html#l00193">parse_calib_data()</a>, and <a class="el" href="bmp3__i2c_8c_source.html#l00166">parse_sensor_data()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="baro__bmp3_8c_source.html#l00054">baro_bmp3_event()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -248,7 +258,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bmp3__i2c_8c_source.html#l00060">60</a> of file <a class="el" href="bmp3__i2c_8c_source.html">bmp3_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmp3__regs_8h_source.html#l00142">BMP3_STATUS_UNINIT</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, and <a class="el" href="i2c_8h_source.html#l00155">i2c_periph::status</a>.</p>
+<p class="reference">References <a class="el" href="bmp3__regs_8h_source.html#l00142">BMP3_STATUS_UNINIT</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8h_source.html#l00060">I2CTransDone</a>, and <a class="el" href="i2c_8h_source.html#l00160">i2c_periph::status</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="baro__bmp3_8c_source.html#l00044">baro_bmp3_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -286,7 +296,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bmp3__i2c_8c_source.html#l00078">78</a> of file <a class="el" href="bmp3__i2c_8c_source.html">bmp3_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmp3__regs_8h_source.html#l00110">BMP3_ALL</a>, <a class="el" href="bmp3__regs_8h_source.html#l00061">BMP3_CALIB_DATA_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00116">BMP3_CALIB_DATA_LEN</a>, <a class="el" href="bmp3__regs_8h_source.html#l00060">BMP3_CONFIG_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00080">BMP3_IIR_FILTER_COEFF_3</a>, <a class="el" href="bmp3__regs_8h_source.html#l00070">BMP3_NO_OVERSAMPLING</a>, <a class="el" href="bmp3__regs_8h_source.html#l00067">BMP3_NORMAL_MODE</a>, <a class="el" href="bmp3__regs_8h_source.html#l00090">BMP3_ODR_50_HZ</a>, <a class="el" href="bmp3__regs_8h_source.html#l00059">BMP3_ODR_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00058">BMP3_OSR_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00073">BMP3_OVERSAMPLING_8X</a>, <a class="el" href="bmp3__regs_8h_source.html#l00117">BMP3_P_AND_T_HEADER_DATA_LEN</a>, <a class="el" href="bmp3__regs_8h_source.html#l00057">BMP3_PWR_CTRL_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00046">BMP3_SENS_STATUS_REG_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00144">BMP3_STATUS_CONFIGURE</a>, <a class="el" href="bmp3__regs_8h_source.html#l00143">BMP3_STATUS_GET_CALIB</a>, <a class="el" href="bmp3__regs_8h_source.html#l00145">BMP3_STATUS_READ_DATA</a>, <a class="el" href="bmp3__regs_8h_source.html#l00142">BMP3_STATUS_UNINIT</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00202">i2c_transmit()</a>, and <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>.</p>
+<p class="reference">References <a class="el" href="bmp3__regs_8h_source.html#l00110">BMP3_ALL</a>, <a class="el" href="bmp3__regs_8h_source.html#l00061">BMP3_CALIB_DATA_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00116">BMP3_CALIB_DATA_LEN</a>, <a class="el" href="bmp3__regs_8h_source.html#l00060">BMP3_CONFIG_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00080">BMP3_IIR_FILTER_COEFF_3</a>, <a class="el" href="bmp3__regs_8h_source.html#l00070">BMP3_NO_OVERSAMPLING</a>, <a class="el" href="bmp3__regs_8h_source.html#l00067">BMP3_NORMAL_MODE</a>, <a class="el" href="bmp3__regs_8h_source.html#l00090">BMP3_ODR_50_HZ</a>, <a class="el" href="bmp3__regs_8h_source.html#l00059">BMP3_ODR_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00058">BMP3_OSR_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00073">BMP3_OVERSAMPLING_8X</a>, <a class="el" href="bmp3__regs_8h_source.html#l00117">BMP3_P_AND_T_HEADER_DATA_LEN</a>, <a class="el" href="bmp3__regs_8h_source.html#l00057">BMP3_PWR_CTRL_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00046">BMP3_SENS_STATUS_REG_ADDR</a>, <a class="el" href="bmp3__regs_8h_source.html#l00144">BMP3_STATUS_CONFIGURE</a>, <a class="el" href="bmp3__regs_8h_source.html#l00143">BMP3_STATUS_GET_CALIB</a>, <a class="el" href="bmp3__regs_8h_source.html#l00145">BMP3_STATUS_READ_DATA</a>, <a class="el" href="bmp3__regs_8h_source.html#l00142">BMP3_STATUS_UNINIT</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00202">i2c_transmit()</a>, and <a class="el" href="i2c_8h_source.html#l00060">I2CTransDone</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="baro__bmp3_8c_source.html#l00049">baro_bmp3_periodic()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -591,7 +601,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="bmp3__i2c_8c.html">bmp3_i2c.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 13:06:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 18:13:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

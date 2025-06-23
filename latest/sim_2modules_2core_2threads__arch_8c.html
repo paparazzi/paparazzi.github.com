@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('sim_2modules_2core_2threads__arch_8c.h
 <code>#include &quot;stdbool.h&quot;</code><br />
 <code>#include &lt;semaphore.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for threads_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,17 +110,19 @@ $(document).ready(function(){initNavTree('sim_2modules_2core_2threads__arch_8c.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2modules_2core_2threads__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2sim_2modules_2core_2threads__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2sim_2modules_2core_2threads__arch_8c" id="asw_2airborne_2arch_2sim_2modules_2core_2threads__arch_8c">
-<area shape="rect" title=" " alt="" coords="211,5,378,60"/>
+<area shape="rect" title=" " alt="" coords="294,5,461,60"/>
 <area shape="rect" href="threads_8h.html" title=" " alt="" coords="207,108,382,133"/>
-<area shape="poly" title=" " alt="" coords="297,60,297,94,292,94,292,60"/>
+<area shape="poly" title=" " alt="" coords="354,62,317,100,313,96,350,58"/>
 <area shape="rect" title=" " alt="" coords="5,189,88,214"/>
-<area shape="poly" title=" " alt="" coords="256,62,184,110,76,183,73,179,181,106,253,58"/>
+<area shape="poly" title=" " alt="" coords="295,63,238,84,181,110,122,147,73,182,70,178,119,142,179,106,236,79,293,58"/>
 <area shape="rect" title=" " alt="" coords="112,181,275,221"/>
-<area shape="poly" title=" " alt="" coords="245,62,218,83,198,109,190,138,190,168,185,168,185,137,194,107,215,79,241,58"/>
+<area shape="poly" title=" " alt="" coords="295,50,241,72,217,88,198,110,192,123,188,137,189,168,183,168,183,137,187,121,194,106,214,84,238,67,293,45"/>
 <area shape="rect" title=" " alt="" coords="407,108,513,133"/>
-<area shape="poly" title=" " alt="" coords="346,58,427,99,425,104,344,62"/>
+<area shape="poly" title=" " alt="" coords="405,58,441,96,437,100,401,62"/>
 <area shape="rect" title=" " alt="" coords="538,108,609,133"/>
-<area shape="poly" title=" " alt="" coords="379,57,526,102,524,107,377,62"/>
+<area shape="poly" title=" " alt="" coords="438,58,536,100,534,105,436,63"/>
+<area shape="rect" title=" " alt="" coords="633,108,697,133"/>
+<area shape="poly" title=" " alt="" coords="462,56,621,103,620,109,460,61"/>
 <area shape="poly" title=" " alt="" coords="257,136,101,184,92,187,91,182,99,179,255,131"/>
 <area shape="poly" title=" " alt="" coords="281,136,230,175,227,171,278,131"/>
 <area shape="rect" title=" " alt="" coords="299,189,370,214"/>
@@ -151,6 +154,9 @@ Functions</h2></td></tr>
 <tr class="separator:a6aceb5010e37cdd610576491f6dc4937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed61e9d6d23b6548fc876d0ed7d5d567" id="r_aed61e9d6d23b6548fc876d0ed7d5d567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567">pprz_bsem_wait</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>)</td></tr>
 <tr class="separator:aed61e9d6d23b6548fc876d0ed7d5d567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444f179e6888d3c82906064808a96e90" id="r_a444f179e6888d3c82906064808a96e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90">pprz_bsem_wait_timeout</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="object__tracking_8c.html#a0847d1b93c790eaa08315d68e786ae14">timeout</a>)</td></tr>
+<tr class="memdesc:a444f179e6888d3c82906064808a96e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait on semaphore no more than timeout.  <br /></td></tr>
+<tr class="separator:a444f179e6888d3c82906064808a96e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac5ca0ee18e60e92d4dfff06ed3fca2" id="r_adac5ca0ee18e60e92d4dfff06ed3fca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2">pprz_bsem_signal</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>)</td></tr>
 <tr class="separator:adac5ca0ee18e60e92d4dfff06ed3fca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ccbb62a1a26098dec12b6c272b0fde" id="r_a38ccbb62a1a26098dec12b6c272b0fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2modules_2core_2threads__arch_8c.html#a38ccbb62a1a26098dec12b6c272b0fde">stub</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *arg)</td></tr>
@@ -195,7 +201,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00038">38</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00039">39</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2modules_2core_2threads__arch_8h_source.html#l00028">pprzBSem::mtx</a>, and <a class="el" href="linux_2modules_2core_2threads__arch_8h_source.html#l00029">pprzBSem::sem</a>.</p>
 
@@ -217,7 +223,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00047">47</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00058">58</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2modules_2core_2threads__arch_8h_source.html#l00028">pprzBSem::mtx</a>, <a class="el" href="linux_2modules_2core_2threads__arch_8h_source.html#l00029">pprzBSem::sem</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
@@ -239,9 +245,50 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00043">43</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00044">44</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2modules_2core_2threads__arch_8h_source.html#l00029">pprzBSem::sem</a>.</p>
+
+</div>
+</div>
+<a id="a444f179e6888d3c82906064808a96e90" name="a444f179e6888d3c82906064808a96e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444f179e6888d3c82906064808a96e90">&#9670;&#160;</a></span>pprz_bsem_wait_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> pprz_bsem_wait_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *&#160;</td>
+          <td class="paramname"><em>bsem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait on semaphore no more than timeout. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00048">48</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2modules_2core_2threads__arch_8h_source.html#l00029">pprzBSem::sem</a>, and <a class="el" href="object__tracking_8c_source.html#l00070">timeout</a>.</p>
 
 </div>
 </div>
@@ -261,7 +308,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00020">20</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00021">21</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
@@ -283,7 +330,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00024">24</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00025">25</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
@@ -308,7 +355,7 @@ Functions</h2></td></tr>
 <p>Performs a nonblocking lock on the mutex. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 if successful </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00028">28</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00029">29</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
@@ -330,7 +377,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00032">32</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00033">33</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
@@ -400,9 +447,9 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Return 0 on success, or a platform dependant error code.</dd></dl>
 <p>@api </p>
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00075">75</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00086">86</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00064">stub_arg::arg</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00063">stub_arg::func</a>, and <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00068">stub()</a>.</p>
+<p class="reference">References <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00075">stub_arg::arg</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00074">stub_arg::func</a>, and <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00079">stub()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -442,7 +489,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00086">86</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00097">97</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
@@ -484,7 +531,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00090">90</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00101">101</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
@@ -526,7 +573,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if the thread successfully joined. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00094">94</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00105">105</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
@@ -556,9 +603,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00068">68</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html#l00079">79</a> of file <a class="el" href="sim_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00064">stub_arg::arg</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00063">stub_arg::func</a>.</p>
+<p class="reference">References <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00075">stub_arg::arg</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2modules_2core_2threads__arch_8c_source.html#l00074">stub_arg::func</a>.</p>
 
 </div>
 </div>
@@ -568,7 +615,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_2b8fc0b1e96b9ae5b3950580235b3cc9.html">modules</a></li><li class="navelem"><a class="el" href="dir_728b6e6938d3ba805b8180649000508b.html">core</a></li><li class="navelem"><a class="el" href="sim_2modules_2core_2threads__arch_8c.html">threads_arch.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 13:06:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 18:13:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

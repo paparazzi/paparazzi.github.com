@@ -1,11 +1,11 @@
 var i2c_8c =
 [
-    [ "I2C_BLOCKING_TIMEOUT", "i2c_8c.html#a758a93f930481f807944bd69dc83be6b", null ],
     [ "USE_I2C", "i2c_8c.html#ad49930ef15af40fee393f8bd82881664", null ],
     [ "USE_SOFT_I2C", "i2c_8c.html#ab9a85c9802ecd6e9ec8a4d08f517ee4b", null ],
-    [ "i2c_blocking_receive", "group__i2c.html#ga20e1122a73affcddc3adfd904799e612", null ],
-    [ "i2c_blocking_transceive", "group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4", null ],
-    [ "i2c_blocking_transmit", "group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3", null ],
+    [ "i2c_blocking_receive", "group__i2c.html#ga80191e190393b7291e672360556d7f13", null ],
+    [ "i2c_blocking_submit", "i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af", null ],
+    [ "i2c_blocking_transceive", "group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a", null ],
+    [ "i2c_blocking_transmit", "group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1", null ],
     [ "i2c_init", "group__i2c.html#ga6b8ffbb119f71ec012b6a2c0a2f92279", null ],
     [ "i2c_receive", "group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964", null ],
     [ "i2c_transceive", "group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6", null ],

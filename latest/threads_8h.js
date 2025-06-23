@@ -5,6 +5,7 @@ var threads_8h =
     [ "pprz_bsem_init", "threads_8h.html#a6aceb5010e37cdd610576491f6dc4937", null ],
     [ "pprz_bsem_signal", "threads_8h.html#adac5ca0ee18e60e92d4dfff06ed3fca2", null ],
     [ "pprz_bsem_wait", "threads_8h.html#aed61e9d6d23b6548fc876d0ed7d5d567", null ],
+    [ "pprz_bsem_wait_timeout", "threads_8h.html#a444f179e6888d3c82906064808a96e90", null ],
     [ "pprz_mtx_init", "threads_8h.html#a8b8615d4563d998989f78e14a471e298", null ],
     [ "pprz_mtx_lock", "threads_8h.html#a95125cfa7b5fa884f4b72a1cee15fc34", null ],
     [ "pprz_mtx_trylock", "threads_8h.html#a20bfc2ac32043b58f03d6776c4a58f46", null ],

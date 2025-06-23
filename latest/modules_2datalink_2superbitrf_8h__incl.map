@@ -1,38 +1,48 @@
 <map id="sw/airborne/modules/datalink/superbitrf.h" name="sw/airborne/modules/datalink/superbitrf.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="487,5,645,45"/>
-<area shape="rect" id="Node000002" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="315,93,457,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="524,48,426,90,424,85,522,43"/>
-<area shape="rect" id="Node000005" href="$cyrf6936_8h.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="482,93,650,119"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="569,46,569,79,563,79,563,46"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="674,93,866,119"/>
-<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="616,43,728,86,726,91,614,48"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="890,93,1074,119"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="646,39,909,88,908,93,645,44"/>
-<area shape="rect" id="Node000016" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="5,93,209,119"/>
-<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="487,43,188,94,187,88,486,38"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="439,321,493,346"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,118,460,306,455,308,388,120"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="213,167,391,192"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="374,121,328,160,325,155,371,117"/>
-<area shape="rect" id="Node000006" href="$cyrf6936__regs_8h.html" title="Register defines for the CYRF6936 2.4GHz radio chip." alt="" coords="657,167,784,192"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="592,116,684,158,682,163,590,121"/>
-<area shape="rect" id="Node000007" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="499,167,633,192"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="569,119,569,153,563,153,563,119"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="553,194,530,215,507,242,488,275,476,308,471,306,484,273,502,238,526,211,549,190"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="517,240,685,265"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="574,191,591,226,587,229,569,194"/>
-<area shape="rect" id="Node000009" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="709,240,882,265"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="604,189,746,233,744,238,602,195"/>
-<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="739,268,529,316,507,322,506,317,528,311,738,263"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="540,321,627,346"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="765,268,628,319,626,314,764,263"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="651,321,721,346"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="781,268,715,315,712,310,778,263"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="745,321,872,346"/>
-<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="800,265,807,307,802,308,795,266"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="896,313,1057,353"/>
-<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="823,263,921,305,919,310,821,268"/>
-<area shape="poly" id="edge18_Node000016_Node000003" title=" " alt="" coords="78,121,50,135,26,152,12,171,11,180,16,190,43,214,86,237,140,257,201,275,326,305,426,323,425,328,324,310,199,280,138,262,84,242,40,219,12,194,6,181,7,169,22,148,48,130,75,117"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="26,167,189,192"/>
-<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="110,119,110,153,105,153,105,119"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="435,5,593,45"/>
+<area shape="rect" id="Node000002" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="23,93,165,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="435,44,169,93,168,88,434,39"/>
+<area shape="rect" id="Node000005" href="$cyrf6936_8h.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="842,93,1010,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="594,39,853,88,852,93,593,44"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="418,93,610,119"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="517,46,517,79,511,79,511,46"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="634,93,818,119"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="566,43,683,86,681,91,564,48"/>
+<area shape="rect" id="Node000021" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="189,93,393,119"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="462,48,338,91,336,86,460,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="271,321,325,346"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,116,159,136,196,165,227,200,253,239,290,307,285,309,249,242,223,203,192,169,156,141,119,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,167,183,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="97,119,97,153,91,153,91,119"/>
+<area shape="rect" id="Node000006" href="$cyrf6936__regs_8h.html" title="Register defines for the CYRF6936 2.4GHz radio chip." alt="" coords="707,167,833,192"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="902,121,809,163,807,158,900,116"/>
+<area shape="rect" id="Node000007" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="858,167,991,192"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="928,119,928,153,922,153,923,119"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="858,193,525,243,420,279,334,317,332,312,418,274,524,237,857,188"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="837,240,1005,265"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="927,192,925,227,919,226,921,192"/>
+<area shape="rect" id="Node000009" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="537,240,710,265"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="877,195,686,239,685,234,876,189"/>
+<area shape="rect" id="Node000014" href="$threads_8h.html" title=" " alt="" coords="1029,240,1204,265"/>
+<area shape="poly" id="edge15_Node000007_Node000014" title=" " alt="" coords="956,190,1073,232,1071,237,955,195"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="547,268,447,287,340,316,334,318,333,313,339,311,446,282,546,263"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="781,321,868,346"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="654,263,784,313,782,318,652,268"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="351,321,421,346"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="585,268,435,316,428,318,426,313,433,311,583,263"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="445,321,572,346"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="608,268,538,315,535,311,605,263"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="596,313,757,353"/>
+<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="633,264,658,301,654,304,629,267"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1275,321,1358,346"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1147,263,1276,313,1274,318,1145,268"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="894,313,1057,353"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="1097,268,1023,309,1020,304,1095,263"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1081,321,1152,346"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="1119,266,1119,307,1114,307,1114,266"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="1177,321,1251,346"/>
+<area shape="poly" id="edge19_Node000014_Node000018" title=" " alt="" coords="1133,263,1191,310,1187,314,1129,268"/>
+<area shape="poly" id="edge23_Node000021_Node000003" title=" " alt="" coords="294,119,300,307,295,307,289,119"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="329,167,491,192"/>
+<area shape="poly" id="edge24_Node000021_Node000022" title=" " alt="" coords="312,116,380,157,377,162,309,121"/>
 </map>

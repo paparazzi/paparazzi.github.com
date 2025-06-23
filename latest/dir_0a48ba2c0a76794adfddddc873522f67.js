@@ -17,6 +17,8 @@ var dir_0a48ba2c0a76794adfddddc873522f67 =
     [ "ak8975.h", "ak8975_8h.html", "ak8975_8h" ],
     [ "ami601.c", "ami601_8c.html", "ami601_8c" ],
     [ "ami601.h", "ami601_8h.html", "ami601_8h" ],
+    [ "amt22.c", "amt22_8c.html", "amt22_8c" ],
+    [ "amt22.h", "amt22_8h.html", "amt22_8h" ],
     [ "bmi088.c", "bmi088_8c.html", "bmi088_8c" ],
     [ "bmi088.h", "bmi088_8h.html", "bmi088_8h" ],
     [ "bmi088_i2c.c", "bmi088__i2c_8c.html", "bmi088__i2c_8c" ],

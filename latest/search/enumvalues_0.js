@@ -92,12 +92,16 @@ var searchData=
   ['ak_5fdisable_5faccess_5fcalibration_89',['AK_DISABLE_ACCESS_CALIBRATION',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61a736022a8fd3eb152072b51b3e219e3a0',1,'ak8975.h']]],
   ['ak_5freq_5fcalibration_90',['AK_REQ_CALIBRATION',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61ab5cc80877731190b440cd958c75b7cce',1,'ak8975.h']]],
   ['ak_5fstatus_5fdone_91',['ak_status_done',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa780ead6554600ea10cc4260b2aae11d9',1,'AK_STATUS_DONE:&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a780ead6554600ea10cc4260b2aae11d9',1,'AK_STATUS_DONE:&#160;ak8975.h']]],
-  ['ak_5fstatus_5fidle_92',['ak_status_idle',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE:&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE:&#160;ak8975.h']]],
+  ['ak_5fstatus_5fidle_92',['ak_status_idle',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE:&#160;ak8975.h'],['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE:&#160;ak8963.h']]],
   ['ak_5fstatus_5fmeas_93',['AK_STATUS_MEAS',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a3277c43b264f2b8dcd52c67b7212be5f',1,'ak8975.h']]],
   ['ak_5fstatus_5fread_94',['ak_status_read',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aadbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ:&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49adbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ:&#160;ak8975.h']]],
-  ['append_95',['Append',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission_common.h']]],
-  ['approach_96',['Approach',['../nav__skid__landing_8c.html#a61a75394da51ededcb57cd59a9e3cefeaa19b7b7f6eb8f8eedb2055bf1050f81f',1,'nav_skid_landing.c']]],
-  ['auto_97',['AUTO',['../parachute_8h.html#ae0e4ef8f3fc390d765799303100ef763aeef9468d1b98bca652a04bf5063fd9d6',1,'parachute.h']]],
-  ['autonomous_5fguided_98',['AUTONOMOUS_GUIDED',['../wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3afd21c176c3f3cf44137b576cc4113f2f',1,'wedgebug.c']]],
-  ['autonomous_5fnav_99',['AUTONOMOUS_NAV',['../wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3afc7c12510171811dcbf1d221978f1976',1,'wedgebug.c']]]
+  ['amt22_5f12_5fmulti_95',['AMT22_12_MULTI',['../amt22_8h.html#afdb0a9783b3ddbfec859488bea367564ace72005ba84fe9135b9ec76b3bdf863d',1,'amt22.h']]],
+  ['amt22_5f12_5fsingle_96',['AMT22_12_SINGLE',['../amt22_8h.html#afdb0a9783b3ddbfec859488bea367564a6669b7d0b67e82aef85e6371dcaf0631',1,'amt22.h']]],
+  ['amt22_5f14_5fmulti_97',['AMT22_14_MULTI',['../amt22_8h.html#afdb0a9783b3ddbfec859488bea367564a5701c83c856a1811cbcd9ad821226533',1,'amt22.h']]],
+  ['amt22_5f14_5fsingle_98',['AMT22_14_SINGLE',['../amt22_8h.html#afdb0a9783b3ddbfec859488bea367564a467d05e7f96700f6e39b297da4a86692',1,'amt22.h']]],
+  ['append_99',['Append',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission_common.h']]],
+  ['approach_100',['Approach',['../nav__skid__landing_8c.html#a61a75394da51ededcb57cd59a9e3cefeaa19b7b7f6eb8f8eedb2055bf1050f81f',1,'nav_skid_landing.c']]],
+  ['auto_101',['AUTO',['../parachute_8h.html#ae0e4ef8f3fc390d765799303100ef763aeef9468d1b98bca652a04bf5063fd9d6',1,'parachute.h']]],
+  ['autonomous_5fguided_102',['AUTONOMOUS_GUIDED',['../wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3afd21c176c3f3cf44137b576cc4113f2f',1,'wedgebug.c']]],
+  ['autonomous_5fnav_103',['AUTONOMOUS_NAV',['../wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3afc7c12510171811dcbf1d221978f1976',1,'wedgebug.c']]]
 ];

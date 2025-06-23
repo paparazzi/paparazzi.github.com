@@ -139,6 +139,9 @@ Functions</h2></td></tr>
 <tr class="separator:a6aceb5010e37cdd610576491f6dc4937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed61e9d6d23b6548fc876d0ed7d5d567" id="r_aed61e9d6d23b6548fc876d0ed7d5d567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567">pprz_bsem_wait</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>)</td></tr>
 <tr class="separator:aed61e9d6d23b6548fc876d0ed7d5d567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444f179e6888d3c82906064808a96e90" id="r_a444f179e6888d3c82906064808a96e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90">pprz_bsem_wait_timeout</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> <a class="el" href="object__tracking_8c.html#a0847d1b93c790eaa08315d68e786ae14">timeout</a>)</td></tr>
+<tr class="memdesc:a444f179e6888d3c82906064808a96e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait on semaphore no more than timeout.  <br /></td></tr>
+<tr class="separator:a444f179e6888d3c82906064808a96e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac5ca0ee18e60e92d4dfff06ed3fca2" id="r_adac5ca0ee18e60e92d4dfff06ed3fca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2">pprz_bsem_signal</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>)</td></tr>
 <tr class="separator:adac5ca0ee18e60e92d4dfff06ed3fca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -191,7 +194,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html#l00054">54</a> of file <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html#l00066">66</a> of file <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, and <a class="el" href="stm32_2modules_2core_2threads__arch_8h_source.html#l00025">pprzBSem::value</a>.</p>
 
@@ -216,6 +219,59 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html#l00045">45</a> of file <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, and <a class="el" href="stm32_2modules_2core_2threads__arch_8h_source.html#l00025">pprzBSem::value</a>.</p>
+
+</div>
+</div>
+<a id="a444f179e6888d3c82906064808a96e90" name="a444f179e6888d3c82906064808a96e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444f179e6888d3c82906064808a96e90">&#9670;&#160;</a></span>pprz_bsem_wait_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> pprz_bsem_wait_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *&#160;</td>
+          <td class="paramname"><em>bsem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait on semaphore no more than timeout. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html#l00054">54</a> of file <a class="el" href="stm32_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="object__tracking_8c_source.html#l00070">timeout</a>, and <a class="el" href="stm32_2modules_2core_2threads__arch_8h_source.html#l00025">pprzBSem::value</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stm32_2modules_2core_2threads__arch_8c_a444f179e6888d3c82906064808a96e90_cgraph.png" border="0" usemap="#astm32_2modules_2core_2threads__arch_8c_a444f179e6888d3c82906064808a96e90_cgraph" alt=""/></div>
+<map name="astm32_2modules_2core_2threads__arch_8c_a444f179e6888d3c82906064808a96e90_cgraph" id="astm32_2modules_2core_2threads__arch_8c_a444f179e6888d3c82906064808a96e90_cgraph">
+<area shape="rect" title="Wait on semaphore no more than timeout." alt="" coords="5,5,192,31"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="240,5,385,31"/>
+<area shape="poly" title=" " alt="" coords="192,15,226,15,226,21,192,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -316,7 +372,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_a10efe5d9248a70e16e6da3221b6ebe3.html">modules</a></li><li class="navelem"><a class="el" href="dir_4b6d9b626b8c1c114d9fcf2370d0e1cf.html">core</a></li><li class="navelem"><a class="el" href="stm32_2modules_2core_2threads__arch_8c.html">threads_arch.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 13:06:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 18:13:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

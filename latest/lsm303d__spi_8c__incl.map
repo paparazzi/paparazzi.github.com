@@ -1,45 +1,55 @@
 <map id="sw/airborne/peripherals/lsm303d_spi.c" name="sw/airborne/peripherals/lsm303d_spi.c">
-<area shape="rect" id="Node000001" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="247,5,421,45"/>
-<area shape="rect" id="Node000002" href="$lsm303d__spi_8h.html" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="349,93,503,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="356,44,398,82,394,86,353,48"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="376,350,431,375"/>
-<area shape="poly" id="edge25_Node000001_Node000003" title=" " alt="" coords="329,46,315,93,303,157,300,191,302,227,309,261,322,293,343,320,370,341,367,345,339,324,317,296,303,263,297,227,295,191,297,156,310,92,324,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,136,349,155,326,183,318,203,318,224,322,246,331,267,356,307,383,338,379,342,352,310,326,270,317,248,312,225,313,202,321,180,345,151,376,131"/>
-<area shape="rect" id="Node000004" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="850,181,983,207"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="504,124,837,177,836,183,503,130"/>
-<area shape="rect" id="Node000011" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="336,181,516,207"/>
-<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="429,134,429,167,423,167,423,134"/>
-<area shape="rect" id="Node000017" href="$lsm303d_8h.html" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="543,181,709,207"/>
-<area shape="poly" id="edge22_Node000002_Node000017" title=" " alt="" coords="475,131,585,174,583,179,473,136"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="913,208,882,252,859,277,831,297,799,310,756,322,648,340,445,361,444,356,647,335,755,316,797,305,829,292,855,273,878,249,908,205"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="1090,262,1258,287"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="955,204,1124,255,1122,260,953,209"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="893,262,1066,287"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="928,205,964,250,959,253,924,209"/>
-<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="917,290,874,297,445,359,444,353,874,292,917,285"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="805,350,892,375"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="963,290,879,345,876,340,960,285"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="625,350,696,375"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="937,290,710,351,709,346,936,285"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="916,350,1043,375"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="982,288,982,336,977,336,977,288"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="1067,343,1228,383"/>
-<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="1003,285,1099,334,1097,339,1001,290"/>
-<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="412,209,391,229,374,256,370,277,373,298,390,338,385,340,368,300,365,277,369,254,387,226,408,205"/>
-<area shape="poly" id="edge21_Node000011_Node000008" title=" " alt="" coords="457,204,502,225,550,252,603,296,644,338,640,342,599,300,547,257,500,229,455,209"/>
-<area shape="rect" id="Node000012" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="51,262,207,287"/>
-<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="383,209,186,261,184,256,382,204"/>
-<area shape="rect" id="Node000016" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="384,262,537,287"/>
-<area shape="poly" id="edge19_Node000011_Node000016" title=" " alt="" coords="434,206,452,248,448,251,429,208"/>
-<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="167,285,364,346,362,351,165,290"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="97,350,160,375"/>
-<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="131,288,131,336,126,336,126,288"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="184,350,255,375"/>
-<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="143,286,198,338,195,342,139,289"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="5,350,73,375"/>
-<area shape="poly" id="edge18_Node000012_Node000015" title=" " alt="" coords="118,289,64,342,60,338,115,286"/>
-<area shape="poly" id="edge20_Node000016_Node000003" title=" " alt="" coords="455,289,421,340,417,337,451,286"/>
-<area shape="poly" id="edge23_Node000017_Node000003" title=" " alt="" coords="622,209,594,251,574,275,550,297,497,329,445,351,443,346,495,324,547,293,570,271,589,247,617,206"/>
-<area shape="rect" id="Node000018" href="$lsm303d__regs_8h.html" title="Register defs for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="663,255,818,295"/>
-<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="644,205,703,245,700,249,641,209"/>
+<area shape="rect" id="Node000001" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="296,5,471,45"/>
+<area shape="rect" id="Node000002" href="$lsm303d__spi_8h.html" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="446,93,601,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,43,483,84,480,89,413,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="439,350,493,375"/>
+<area shape="poly" id="edge30_Node000001_Node000003" title=" " alt="" coords="370,47,330,105,310,142,295,182,293,212,296,246,304,276,311,293,335,316,365,333,396,345,426,352,424,358,395,350,363,338,332,320,306,296,298,278,291,247,287,212,290,181,305,140,325,102,365,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,134,518,205,499,295,481,339,476,337,494,294,512,205,520,133"/>
+<area shape="rect" id="Node000004" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="979,181,1113,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="601,124,966,178,965,183,601,129"/>
+<area shape="rect" id="Node000016" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="305,181,485,207"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="494,136,427,176,424,172,491,131"/>
+<area shape="rect" id="Node000022" href="$lsm303d_8h.html" title="Driver for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="561,181,728,207"/>
+<area shape="poly" id="edge27_Node000002_Node000022" title=" " alt="" coords="554,131,617,172,614,176,551,136"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="1050,207,1046,251,1038,276,1022,297,955,309,808,327,508,360,507,354,808,321,954,303,1019,292,1033,273,1041,250,1044,207"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="841,262,1009,287"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1030,209,955,257,952,252,1027,205"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1083,262,1257,287"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="1066,205,1142,252,1139,257,1063,209"/>
+<area shape="rect" id="Node000011" href="$threads_8h.html" title=" " alt="" coords="1376,262,1551,287"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="1107,204,1390,257,1389,262,1106,209"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="1110,290,1065,297,789,330,507,360,507,354,789,325,1064,292,1109,285"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1061,350,1148,375"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1163,289,1124,340,1120,337,1159,286"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="660,350,731,375"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="1107,290,745,355,744,350,1106,285"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1172,350,1299,375"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="1181,286,1220,337,1216,340,1177,289"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="876,343,1037,383"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="1142,290,1018,340,1016,335,1140,285"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="1422,350,1505,375"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1466,288,1466,336,1461,336,1461,288"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1529,343,1691,383"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="1484,285,1567,333,1565,338,1482,290"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1716,350,1787,375"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="1510,285,1601,309,1704,340,1711,342,1709,348,1703,345,1599,314,1509,290"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1323,350,1398,375"/>
+<area shape="poly" id="edge16_Node000011_Node000015" title=" " alt="" coords="1451,290,1387,343,1384,339,1448,285"/>
+<area shape="poly" id="edge18_Node000016_Node000003" title=" " alt="" coords="372,209,344,228,331,241,322,256,315,275,322,293,342,316,369,333,398,345,426,353,424,358,396,350,367,338,339,320,317,296,310,275,317,254,327,238,341,224,369,205"/>
+<area shape="poly" id="edge26_Node000016_Node000008" title=" " alt="" coords="417,204,664,341,662,346,415,209"/>
+<area shape="rect" id="Node000017" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="49,262,205,287"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="357,209,180,261,179,256,356,204"/>
+<area shape="rect" id="Node000021" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="332,262,485,287"/>
+<area shape="poly" id="edge24_Node000016_Node000021" title=" " alt="" coords="400,206,407,248,402,249,395,207"/>
+<area shape="poly" id="edge22_Node000017_Node000003" title=" " alt="" coords="173,285,426,349,425,354,172,290"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="5,350,68,375"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="117,289,61,342,58,338,113,286"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="92,350,163,375"/>
+<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="130,288,130,336,125,336,125,288"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="187,350,255,375"/>
+<area shape="poly" id="edge23_Node000017_Node000020" title=" " alt="" coords="142,286,200,338,196,342,138,289"/>
+<area shape="poly" id="edge25_Node000021_Node000003" title=" " alt="" coords="419,286,453,337,448,340,414,289"/>
+<area shape="poly" id="edge28_Node000022_Node000003" title=" " alt="" coords="635,209,544,297,492,343,488,339,540,293,631,205"/>
+<area shape="rect" id="Node000023" href="$lsm303d__regs_8h.html" title="Register defs for ST LSM303D 3D accelerometer and magnetometer." alt="" coords="662,255,817,295"/>
+<area shape="poly" id="edge29_Node000022_Node000023" title=" " alt="" coords="660,205,707,244,704,248,657,209"/>
 </map>

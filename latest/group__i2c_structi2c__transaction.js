@@ -1,5 +1,6 @@
 var group__i2c_structi2c__transaction =
 [
+    [ "bsem", "group__i2c.html#aefa14a041e0d7cd7c3d2125c4f6d90a7", null ],
     [ "buf", "group__i2c.html#a295b2671835ae06b28905433cd1096ee", null ],
     [ "len_r", "group__i2c.html#a53b3cfd6febadfef15cdd1136adb20a5", null ],
     [ "len_w", "group__i2c.html#afe675669c727a98bd998283d940b2636", null ],
