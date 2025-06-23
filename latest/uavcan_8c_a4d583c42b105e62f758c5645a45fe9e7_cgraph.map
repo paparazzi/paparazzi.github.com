@@ -1,13 +1,37 @@
 <map id="uavcan_init" name="uavcan_init">
-<area shape="rect" id="Node000001" title="Initialize all uavcan interfaces." alt="" coords="5,55,103,80"/>
-<area shape="rect" id="Node000002" href="$uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,55,273,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,65,137,65,137,70,103,70"/>
-<area shape="rect" id="Node000003" href="$uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="327,5,478,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,52,339,32,340,37,262,57"/>
-<area shape="rect" id="Node000005" href="$uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="322,55,483,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="273,65,309,65,309,70,273,70"/>
-<area shape="rect" id="Node000006" href="$uavcan_8c.html#a6da616476026ef52eb6ce3ac0a0b9006" title="Try to compute the timing registers for the can interface and set the configuration." alt="" coords="321,104,484,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="262,77,340,98,339,103,261,83"/>
-<area shape="rect" id="Node000004" href="$wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="532,5,605,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="478,15,518,15,518,21,478,21"/>
+<area shape="rect" id="Node000001" title="Initialize all uavcan interfaces." alt="" coords="5,252,103,277"/>
+<area shape="rect" id="Node000002" href="$uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,252,273,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,262,137,262,137,267,103,267"/>
+<area shape="rect" id="Node000003" href="$uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title=" " alt="" coords="346,55,459,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,251,228,218,250,174,280,129,320,89,332,81,335,86,323,93,285,132,255,177,233,220,220,253"/>
+<area shape="rect" id="Node000006" href="$can_8c.html#a9324476eb389be967a6cc3a9a32a7a36" title="Add a callback on received frames from an interface." alt="" coords="321,177,484,203"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="238,249,320,213,344,204,346,210,322,218,240,254"/>
+<area shape="rect" id="Node000008" href="$uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="327,227,478,252"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="273,254,313,249,314,254,274,259"/>
+<area shape="rect" id="Node000010" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="342,276,463,301"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="274,270,329,277,328,282,273,275"/>
+<area shape="rect" id="Node000011" href="$chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="347,325,458,351"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="240,275,322,312,343,319,341,324,320,316,238,280"/>
+<area shape="rect" id="Node000012" href="$chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="329,375,476,400"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="226,276,266,318,293,341,323,361,335,367,333,372,320,366,290,345,262,321,222,279"/>
+<area shape="rect" id="Node000013" href="$uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="322,424,483,449"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="221,276,258,341,287,378,323,411,332,416,329,420,320,415,283,382,254,344,217,279"/>
+<area shape="rect" id="Node000014" href="$uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d" title=" " alt="" coords="358,104,447,129"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="224,250,265,210,320,164,365,134,368,139,323,168,269,214,228,254"/>
+<area shape="rect" id="Node000004" href="$chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="550,5,667,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="456,52,541,31,542,37,457,57"/>
+<area shape="rect" id="Node000005" href="$chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="542,55,675,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="460,65,528,65,528,70,460,70"/>
+<area shape="rect" id="Node000007" href="$can_8c.html#a7c22ac3688fb0620fc81ecf1783ab683" title=" " alt="" coords="540,203,677,228"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="485,197,526,203,526,208,484,203"/>
+<area shape="rect" id="Node000009" href="$wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="572,252,645,277"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="479,246,558,256,558,261,478,251"/>
+<area shape="poly" id="edge17_Node000014_Node000004" title=" " alt="" coords="447,105,483,89,497,77,506,65,515,52,531,40,542,34,544,38,533,44,519,56,510,68,501,81,485,94,449,110"/>
+<area shape="poly" id="edge18_Node000014_Node000005" title=" " alt="" coords="447,103,541,81,542,86,448,109"/>
+<area shape="rect" id="Node000015" href="$chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5" title=" " alt="" coords="532,104,685,129"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="448,114,518,114,518,119,448,119"/>
+<area shape="rect" id="Node000017" href="$chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="545,153,673,179"/>
+<area shape="poly" id="edge16_Node000014_Node000017" title=" " alt="" coords="448,125,542,147,541,153,447,130"/>
+<area shape="rect" id="Node000016" href="$can_8c.html#ab88c2569516a3a7afca2397b9aa1d2e4" title=" " alt="" coords="733,104,852,129"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="686,114,719,114,719,119,686,119"/>
 </map>

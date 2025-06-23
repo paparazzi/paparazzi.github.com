@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"cc3d_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,30,5],
 "cc3d_8h.html#aad81217bdd26988972c83915ab388d41":[12,0,1,0,1,30,30],
 "cc3d_8h.html#ab68f28871d18c17e7e70ae63277d37c2":[12,0,1,0,1,30,3],
 "cc3d_8h.html#ab6d233aecc3eb7eaa482ee0acd378b43":[12,0,1,0,1,30,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "chibios_2mcu__periph_2spi__arch_8c.html#structspi__init":[12,0,1,0,0,0,0,18,0],
 "chibios_2mcu__periph_2spi__arch_8c_source.html":[12,0,1,0,0,0,0,18],
 "chibios_2mcu__periph_2spi__arch_8h.html":[12,0,1,0,0,0,0,19],
-"chibios_2mcu__periph_2spi__arch_8h_source.html":[12,0,1,0,0,0,0,19],
-"chibios_2mcu__periph_2sys__time__arch_8c.html":[12,0,1,0,0,0,0,20]
+"chibios_2mcu__periph_2spi__arch_8h_source.html":[12,0,1,0,0,0,0,19]
 };

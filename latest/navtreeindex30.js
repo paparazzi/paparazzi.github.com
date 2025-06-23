@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"cc2500__frsky__d_8h.html#affefe39779ed1cef49b38cd6da7bb8f9":[12,0,1,0,6,56,0,5,2],
 "cc2500__frsky__d_8h_source.html":[12,0,1,0,6,56,0,5],
 "cc2500__frsky__shared_8c.html":[12,0,1,0,6,56,0,6],
 "cc2500__frsky__shared_8c.html#a099e460119ab86d377735771811ad6da":[12,0,1,0,6,56,0,6,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "cc2500__rx__spi_8h.html#a69c86568ea4d5d0b6b27d470946083c5":[12,0,1,0,6,56,0,15,9],
 "cc2500__rx__spi_8h.html#a9fcf0cc628f3db8a2819d160267dc01e":[12,0,1,0,6,56,0,15,1],
 "cc2500__rx__spi_8h.html#aac8f85fbbebac3d884dd4c164596679e":[12,0,1,0,6,56,0,15,5],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64":[12,0,1,0,6,56,0,15,6],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a22cadf5d8d772ca27900cb224d19820d":[12,0,1,0,6,56,0,15,6,7]
+"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64":[12,0,1,0,6,56,0,15,6]
 };

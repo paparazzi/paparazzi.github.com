@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"eff__scheduling__rotwing__V2_8h.html#ae03c6e20a9690ccb69d8988c4a63dba7":[12,0,1,0,6,14,19,7,9],
 "eff__scheduling__rotwing__V2_8h.html#ae0a06dd0032c2aa0400e0658c29dfc7e":[12,0,1,0,6,14,19,7,0],
 "eff__scheduling__rotwing__V2_8h.html#ae299301520921f51c7414f1f396cd24b":[12,0,1,0,6,14,19,2,2],
 "eff__scheduling__rotwing__V2_8h.html#ae4145575e3bc9165e3fe60f69fb67a47":[12,0,1,0,6,14,19,3,0],
@@ -8,16 +9,16 @@ var NAVTREEINDEX53 =
 "eff__scheduling__rotwing__V2_8h.html#ae59c390a4286eef373075b37684e2c90":[12,0,1,0,6,14,17,0,7],
 "eff__scheduling__rotwing__V2_8h.html#af2323554344259aebdef19d17667fe0e":[12,0,1,0,6,14,19,7,8],
 "eff__scheduling__rotwing__V2_8h.html#af2dca1fefaf7a2da0ab17100c0916816":[12,0,1,0,6,14,19,3,2],
-"eff__scheduling__rotwing__V2_8h.html#af5830b8dac305d4dbc074f80ab37b1bb":[12,0,1,0,6,14,17,0,6],
 "eff__scheduling__rotwing__V2_8h.html#af5830b8dac305d4dbc074f80ab37b1bb":[12,0,1,0,6,14,19,0,6],
+"eff__scheduling__rotwing__V2_8h.html#af5830b8dac305d4dbc074f80ab37b1bb":[12,0,1,0,6,14,17,0,6],
 "eff__scheduling__rotwing__V2_8h.html#af5a7cc7c20ed43866b3b0a1d6c942232":[12,0,1,0,6,14,19,29],
 "eff__scheduling__rotwing__V2_8h.html#af930c69c8d7c838b517974659142c834":[12,0,1,0,6,14,19,7,7],
 "eff__scheduling__rotwing__V2_8h.html#afa8a9f18fc60dd7a313b940b7dc5c30b":[12,0,1,0,6,14,19,1,15],
 "eff__scheduling__rotwing__V2_8h.html#afa8a9f18fc60dd7a313b940b7dc5c30b":[12,0,1,0,6,14,17,1,15],
-"eff__scheduling__rotwing__V2_8h.html#afa96ee343cb3215268f94df834c76c93":[12,0,1,0,6,14,17,1,10],
 "eff__scheduling__rotwing__V2_8h.html#afa96ee343cb3215268f94df834c76c93":[12,0,1,0,6,14,19,1,10],
-"eff__scheduling__rotwing__V2_8h.html#afd11789d80fc7535ac51c87251982280":[12,0,1,0,6,14,17,0,4],
+"eff__scheduling__rotwing__V2_8h.html#afa96ee343cb3215268f94df834c76c93":[12,0,1,0,6,14,17,1,10],
 "eff__scheduling__rotwing__V2_8h.html#afd11789d80fc7535ac51c87251982280":[12,0,1,0,6,14,19,0,4],
+"eff__scheduling__rotwing__V2_8h.html#afd11789d80fc7535ac51c87251982280":[12,0,1,0,6,14,17,0,4],
 "eff__scheduling__rotwing__V2_8h.html#structF__M__Body":[12,0,1,0,6,14,19,3],
 "eff__scheduling__rotwing__V2_8h.html#structI":[12,0,1,0,6,14,19,2],
 "eff__scheduling__rotwing__V2_8h.html#structRW__Model":[12,0,1,0,6,14,19,7],
@@ -25,8 +26,8 @@ var NAVTREEINDEX53 =
 "eff__scheduling__rotwing__V2_8h.html#structRW__skew":[12,0,1,0,6,14,19,6],
 "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__param__t":[12,0,1,0,6,14,19,0],
 "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__param__t":[12,0,1,0,6,14,17,0],
-"eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__var__t":[12,0,1,0,6,14,19,1],
 "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__var__t":[12,0,1,0,6,14,17,1],
+"eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__var__t":[12,0,1,0,6,14,19,1],
 "eff__scheduling__rotwing__V2_8h.html#structwing__model":[12,0,1,0,6,14,19,4],
 "eff__scheduling__rotwing__V2_8h_source.html":[12,0,1,0,6,14,19],
 "ekf__aw_8cpp.html":[12,0,1,0,6,44,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "ekf__aw_8h.html#a58e0079637c6eb767b690292bb680c3e":[12,0,1,0,6,44,10,7],
 "ekf__aw_8h.html#a6114f7630e87213c6d669ea820444f67":[12,0,1,0,6,44,10,0,4],
 "ekf__aw_8h.html#a66f7741beb4d782352b5a5ac539da971":[12,0,1,0,6,44,10,0,6],
-"ekf__aw_8h.html#a67034afb9c8c9194b5b3a9deb9c2e768":[12,0,1,0,6,44,10,0,16],
-"ekf__aw_8h.html#a6b659832fbee8418b4c0e24fb5be8634":[12,0,1,0,6,44,10,0,12]
+"ekf__aw_8h.html#a67034afb9c8c9194b5b3a9deb9c2e768":[12,0,1,0,6,44,10,0,16]
 };

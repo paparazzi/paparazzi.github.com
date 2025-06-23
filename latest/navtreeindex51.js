@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"dshot__rpmCapture_8h.html#a896ab566324d7e81adbfd933703965b2":[12,0,1,0,0,0,1,0,7,3,0],
 "dshot__rpmCapture_8h.html#a898895472e9ddd0d2483cbc190c383df":[12,0,1,0,0,0,1,0,7,8],
 "dshot__rpmCapture_8h.html#a8cf86995456be2b3f09a3c794f86c704":[12,0,1,0,0,0,1,0,7,1,0],
 "dshot__rpmCapture_8h.html#a8fb75bf93910b1444fe919c9614e543f":[12,0,1,0,0,0,1,0,7,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "eff__scheduling__generic_8h_source.html":[12,0,1,0,6,14,13],
 "eff__scheduling__nederdrone_8c.html":[12,0,1,0,6,14,14],
 "eff__scheduling__nederdrone_8c.html#a00ec67e62acc58db22558ea6702985d3":[12,0,1,0,6,14,14,0],
-"eff__scheduling__nederdrone_8c.html#a3596b0a1acf5772a8692e4d9b9683906":[12,0,1,0,6,14,14,21],
-"eff__scheduling__nederdrone_8c.html#a37fdbf4eac3c4a93ada1e5ecf8767f3e":[12,0,1,0,6,14,14,13]
+"eff__scheduling__nederdrone_8c.html#a3596b0a1acf5772a8692e4d9b9683906":[12,0,1,0,6,14,14,21]
 };

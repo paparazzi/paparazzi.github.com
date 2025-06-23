@@ -161,6 +161,9 @@ Raw uavcan.xml file:</h2>
 <div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_NODE_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;100&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The UAVCAN node ID of the AP&quot;</span>/&gt;</div>
 <div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_BAUDRATE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1000000&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The baudrate of the CAN interface&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">can</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
@@ -188,7 +191,6 @@ Raw uavcan.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-<div class="line"> </div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -196,7 +198,7 @@ Raw uavcan.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 09:33:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 13:06:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

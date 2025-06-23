@@ -102,6 +102,8 @@ $(document).ready(function(){initNavTree('uavcan_8c.html',''); initResizable(); 
 <p>Interface from actuators to ChibiOS CAN driver using UAVCan.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="chibios_2modules_2uavcan_2uavcan_8h_source.html">uavcan.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="can_8h_source.html">mcu_periph/can.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for uavcan.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,15 +111,31 @@ $(document).ready(function(){initNavTree('uavcan_8c.html',''); initResizable(); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2chibios_2modules_2uavcan_2uavcan_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2chibios_2modules_2uavcan_2uavcan_8c" id="asw_2airborne_2arch_2chibios_2modules_2uavcan_2uavcan_8c">
-<area shape="rect" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="26,5,221,45"/>
-<area shape="rect" href="chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="83,93,164,119"/>
-<area shape="poly" title=" " alt="" coords="126,46,126,79,121,79,121,46"/>
-<area shape="rect" title=" " alt="" coords="5,167,60,192"/>
-<area shape="poly" title=" " alt="" coords="110,121,60,160,57,156,107,117"/>
-<area shape="rect" title=" " alt="" coords="84,167,163,192"/>
-<area shape="poly" title=" " alt="" coords="126,119,126,153,121,153,121,119"/>
-<area shape="rect" title=" " alt="" coords="187,167,257,192"/>
-<area shape="poly" title=" " alt="" coords="141,117,196,156,193,161,138,121"/>
+<area shape="rect" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="213,5,407,45"/>
+<area shape="rect" href="chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="191,93,272,119"/>
+<area shape="poly" title=" " alt="" coords="293,47,255,85,251,82,289,44"/>
+<area shape="rect" href="can_8h.html" title=" " alt="" coords="203,167,340,192"/>
+<area shape="poly" title=" " alt="" coords="308,46,280,154,275,153,303,45"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="395,167,569,192"/>
+<area shape="poly" title=" " alt="" coords="333,44,460,155,457,159,330,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,84,192"/>
+<area shape="poly" title=" " alt="" coords="202,121,89,164,87,159,200,116"/>
+<area shape="rect" title=" " alt="" coords="108,167,179,192"/>
+<area shape="poly" title=" " alt="" coords="219,121,170,160,167,156,216,117"/>
+<area shape="poly" title=" " alt="" coords="240,118,260,153,256,156,236,120"/>
+<area shape="poly" title=" " alt="" coords="272,116,429,160,427,165,271,121"/>
+<area shape="rect" title=" " alt="" coords="91,247,145,273"/>
+<area shape="poly" title=" " alt="" coords="250,195,154,243,152,239,247,190"/>
+<area shape="rect" title=" " alt="" coords="169,247,341,273"/>
+<area shape="poly" title=" " alt="" coords="272,193,263,234,258,233,266,192"/>
+<area shape="rect" title=" " alt="" coords="559,247,642,273"/>
+<area shape="poly" title=" " alt="" coords="501,190,573,237,570,242,498,194"/>
+<area shape="rect" title=" " alt="" coords="666,240,829,280"/>
+<area shape="poly" title=" " alt="" coords="521,189,671,234,670,239,520,195"/>
+<area shape="rect" title=" " alt="" coords="365,247,436,273"/>
+<area shape="poly" title=" " alt="" coords="472,194,424,240,421,236,468,190"/>
+<area shape="rect" title=" " alt="" coords="461,247,535,273"/>
+<area shape="poly" title=" " alt="" coords="487,192,496,233,490,234,482,193"/>
 </map>
 </div>
 </div>
@@ -132,21 +150,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac7781a37ca14c5bf42c4fe9de1f4daa8" id="r_ac7781a37ca14c5bf42c4fe9de1f4daa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#ac7781a37ca14c5bf42c4fe9de1f4daa8">can_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:ac7781a37ca14c5bf42c4fe9de1f4daa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e65a8f21c7c6589d7cafec2b46d6967" id="r_a1e65a8f21c7c6589d7cafec2b46d6967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a1e65a8f21c7c6589d7cafec2b46d6967">THD_FUNCTION</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uavcan_rx</a>, <a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a1e65a8f21c7c6589d7cafec2b46d6967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c1d80c62e7a1b11663d3b071f03fd0" id="r_a84c1d80c62e7a1b11663d3b071f03fd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a84c1d80c62e7a1b11663d3b071f03fd0">THD_FUNCTION</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uavcan_tx</a>, <a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a84c1d80c62e7a1b11663d3b071f03fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416691bcd0b8fe29a584290275b85fc2" id="r_a416691bcd0b8fe29a584290275b85fc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2">can_frame_cb</a> (struct <a class="el" href="can_8h.html#structpprzcan__frame">pprzcan_frame</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">rx_msg</a>, <a class="el" href="cc2500__frsky__x_8c.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a> struct <a class="el" href="can_8h.html#structpprzaddr__can">pprzaddr_can</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">src_addr</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *user_data)</td></tr>
+<tr class="separator:a416691bcd0b8fe29a584290275b85fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f54bb2987f6c04eb3e7f3ad54ee30d" id="r_a73f54bb2987f6c04eb3e7f3ad54ee30d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d">uavcan_tx</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="separator:a73f54bb2987f6c04eb3e7f3ad54ee30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5399417963e16078d01d41ed695522a" id="r_ae5399417963e16078d01d41ed695522a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a">onTransferReceived</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">CanardInstance</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ins</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">CanardRxTransfer</a> *<a class="el" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff">transfer</a>)</td></tr>
 <tr class="memdesc:ae5399417963e16078d01d41ed695522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whenever a valid and 'accepted' transfer is received.  <br /></td></tr>
 <tr class="separator:ae5399417963e16078d01d41ed695522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d545befad51919f51f73e03bd5d4c65" id="r_a5d545befad51919f51f73e03bd5d4c65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65">shouldAcceptTransfer</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">CanardInstance</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ins</a>, <a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">out_data_type_signature</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> data_type_id, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">CanardTransferType</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transfer_type</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">source_node_id</a>)</td></tr>
 <tr class="memdesc:a5d545befad51919f51f73e03bd5d4c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">If we should accept this transfer.  <br /></td></tr>
 <tr class="separator:a5d545befad51919f51f73e03bd5d4c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da616476026ef52eb6ce3ac0a0b9006" id="r_a6da616476026ef52eb6ce3ac0a0b9006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a6da616476026ef52eb6ce3ac0a0b9006">uavcanConfigureIface</a> (struct <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t">uavcan_iface_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">iface</a>)</td></tr>
-<tr class="memdesc:a6da616476026ef52eb6ce3ac0a0b9006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to compute the timing registers for the can interface and set the configuration.  <br /></td></tr>
-<tr class="separator:a6da616476026ef52eb6ce3ac0a0b9006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61afe9956a4daba2b640dad2c3f4cc9e" id="r_a61afe9956a4daba2b640dad2c3f4cc9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e">uavcanInitIface</a> (struct <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t">uavcan_iface_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">iface</a>)</td></tr>
 <tr class="memdesc:a61afe9956a4daba2b640dad2c3f4cc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize uavcan interface.  <br /></td></tr>
 <tr class="separator:a61afe9956a4daba2b640dad2c3f4cc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,7 +195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00034">34</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00036">36</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
 </div>
 </div>
@@ -198,72 +211,82 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00030">30</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00032">32</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac7781a37ca14c5bf42c4fe9de1f4daa8" name="ac7781a37ca14c5bf42c4fe9de1f4daa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7781a37ca14c5bf42c4fe9de1f4daa8">&#9670;&#160;</a></span>can_init()</h2>
+<a id="a416691bcd0b8fe29a584290275b85fc2" name="a416691bcd0b8fe29a584290275b85fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416691bcd0b8fe29a584290275b85fc2">&#9670;&#160;</a></span>can_frame_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> can_init </td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> can_frame_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="can_8h.html#structpprzcan__frame">pprzcan_frame</a> *&#160;</td>
+          <td class="paramname"><em>rx_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="cc2500__frsky__x_8c.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a> struct <a class="el" href="can_8h.html#structpprzaddr__can">pprzaddr_can</a> *&#160;</td>
+          <td class="paramname"><em>src_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00094">94</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00080">80</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stm32_2mcu__periph_2can__arch_8c_source.html#l00070">can_hw_init()</a>, and <a class="el" href="mcu_8c_source.html#l00101">mcu_init()</a>.</p>
+<p class="reference">References <a class="el" href="can_8h_source.html#l00064">CAN_EID_MASK</a>, <a class="el" href="can_8h_source.html#l00062">CAN_FRAME_EFF</a>, <a class="el" href="can_8h_source.html#l00065">CAN_SID_MASK</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00032">pprz_mtx_unlock()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00180">uavcanInitIface()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="uavcan_8c_ac7781a37ca14c5bf42c4fe9de1f4daa8_icgraph.png" border="0" usemap="#auavcan_8c_ac7781a37ca14c5bf42c4fe9de1f4daa8_icgraph" alt=""/></div>
-<map name="auavcan_8c_ac7781a37ca14c5bf42c4fe9de1f4daa8_icgraph" id="auavcan_8c_ac7781a37ca14c5bf42c4fe9de1f4daa8_icgraph">
-<area shape="rect" title=" " alt="" coords="385,155,459,180"/>
-<area shape="rect" href="stm32_2mcu__periph_2can__arch_8c.html#aea9abdf3d92f6edf1fbfeebec07eb2a2" title=" " alt="" coords="239,129,337,155"/>
-<area shape="poly" title=" " alt="" coords="371,161,337,154,338,149,372,155"/>
-<area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="249,179,327,204"/>
-<area shape="poly" title=" " alt="" coords="372,179,328,187,327,182,371,174"/>
-<area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,31"/>
-<area shape="poly" title=" " alt="" coords="241,172,237,168,225,151,217,135,212,105,206,75,200,60,189,44,175,32,178,28,193,40,204,57,211,73,217,104,222,134,229,149,241,164,245,168"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,55,191,80"/>
-<area shape="poly" title=" " alt="" coords="243,173,237,168,221,148,212,130,204,112,189,93,174,82,178,78,193,89,208,109,217,128,225,146,241,164,247,169"/>
-<area shape="rect" href="setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,104,191,129"/>
-<area shape="poly" title=" " alt="" coords="249,174,237,168,172,132,174,127,240,164,251,170"/>
-<area shape="rect" href="main__demo2_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,153,191,179"/>
-<area shape="poly" title=" " alt="" coords="234,184,191,176,191,171,235,179"/>
-<area shape="rect" href="main__demo3_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,203,191,228"/>
-<area shape="poly" title=" " alt="" coords="235,203,191,211,191,206,234,198"/>
-<area shape="rect" href="main__demo4_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,252,191,277"/>
-<area shape="poly" title=" " alt="" coords="252,213,176,254,173,249,250,208"/>
-<area shape="rect" href="main__demo5_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,301,191,327"/>
-<area shape="poly" title=" " alt="" coords="268,216,234,253,192,291,174,303,171,299,189,287,230,249,265,213"/>
-<area shape="rect" href="main__demo6_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,351,191,376"/>
-<area shape="poly" title=" " alt="" coords="277,218,243,277,219,310,192,340,176,353,173,348,189,336,215,306,238,274,272,215"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,55,60,80"/>
-<area shape="poly" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
-<area shape="rect" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,104,60,129"/>
-<area shape="poly" title=" " alt="" coords="94,119,60,119,60,114,94,114"/>
-<area shape="rect" href="main__demo2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,153,60,179"/>
-<area shape="poly" title=" " alt="" coords="94,169,60,169,60,163,94,163"/>
-<area shape="rect" href="main__demo3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,203,60,228"/>
-<area shape="poly" title=" " alt="" coords="94,218,60,218,60,213,94,213"/>
-<area shape="rect" href="main__demo4_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,252,60,277"/>
-<area shape="poly" title=" " alt="" coords="94,267,60,267,60,262,94,262"/>
-<area shape="rect" href="main__demo5_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,301,60,327"/>
-<area shape="poly" title=" " alt="" coords="94,317,60,317,60,311,94,311"/>
-<area shape="rect" href="main__demo6_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,351,60,376"/>
-<area shape="poly" title=" " alt="" coords="94,366,60,366,60,361,94,361"/>
+<div class="center"><img src="uavcan_8c_a416691bcd0b8fe29a584290275b85fc2_cgraph.png" border="0" usemap="#auavcan_8c_a416691bcd0b8fe29a584290275b85fc2_cgraph" alt=""/></div>
+<map name="auavcan_8c_a416691bcd0b8fe29a584290275b85fc2_cgraph" id="auavcan_8c_a416691bcd0b8fe29a584290275b85fc2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,119,56"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="175,5,292,31"/>
+<area shape="poly" title=" " alt="" coords="119,32,161,26,162,31,119,38"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="167,55,300,80"/>
+<area shape="poly" title=" " alt="" coords="119,49,153,53,153,59,119,54"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uavcan_8c_a416691bcd0b8fe29a584290275b85fc2_icgraph.png" border="0" usemap="#auavcan_8c_a416691bcd0b8fe29a584290275b85fc2_icgraph" alt=""/></div>
+<map name="auavcan_8c_a416691bcd0b8fe29a584290275b85fc2_icgraph" id="auavcan_8c_a416691bcd0b8fe29a584290275b85fc2_icgraph">
+<area shape="rect" title=" " alt="" coords="321,5,435,31"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,5,273,31"/>
+<area shape="poly" title=" " alt="" coords="307,21,274,21,274,15,307,15"/>
+<area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="5,5,103,31"/>
+<area shape="poly" title=" " alt="" coords="137,21,103,21,103,15,137,15"/>
 </map>
 </div>
 
@@ -305,16 +328,16 @@ Variables</h2></td></tr>
 
 <p>Whenever a valid and 'accepted' transfer is received. </p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00209">209</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00143">143</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00069">abi_struct::cb</a>, <a class="el" href="rssi_8c_source.html#l00045">ev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="abi__common_8h_source.html#l00070">abi_struct::next</a>, <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00037">uavcan_event_hd</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00069">abi_struct::cb</a>, <a class="el" href="rssi_8c_source.html#l00045">ev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="abi__common_8h_source.html#l00070">abi_struct::next</a>, <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00039">uavcan_event_hd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00359">uavcanInitIface()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00180">uavcanInitIface()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_ae5399417963e16078d01d41ed695522a_cgraph.png" border="0" usemap="#auavcan_8c_ae5399417963e16078d01d41ed695522a_cgraph" alt=""/></div>
 <map name="auavcan_8c_ae5399417963e16078d01d41ed695522a_cgraph" id="auavcan_8c_ae5399417963e16078d01d41ed695522a_cgraph">
 <area shape="rect" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="5,5,156,31"/>
@@ -322,11 +345,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="156,15,190,15,190,21,156,21"/>
 </map>
 </div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_ae5399417963e16078d01d41ed695522a_icgraph.png" border="0" usemap="#auavcan_8c_ae5399417963e16078d01d41ed695522a_icgraph" alt=""/></div>
 <map name="auavcan_8c_ae5399417963e16078d01d41ed695522a_icgraph" id="auavcan_8c_ae5399417963e16078d01d41ed695522a_icgraph">
 <area shape="rect" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="321,5,472,31"/>
@@ -393,16 +416,16 @@ Variables</h2></td></tr>
 
 <p>If we should accept this transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00224">224</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00158">158</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rssi_8c_source.html#l00045">ev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="abi__common_8h_source.html#l00070">abi_struct::next</a>, and <a class="el" href="uavcan_8c_source.html#l00037">uavcan_event_hd</a>.</p>
+<p class="reference">References <a class="el" href="rssi_8c_source.html#l00045">ev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="abi__common_8h_source.html#l00070">abi_struct::next</a>, and <a class="el" href="uavcan_8c_source.html#l00039">uavcan_event_hd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00359">uavcanInitIface()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00180">uavcanInitIface()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_a5d545befad51919f51f73e03bd5d4c65_icgraph.png" border="0" usemap="#auavcan_8c_a5d545befad51919f51f73e03bd5d4c65_icgraph" alt=""/></div>
 <map name="auavcan_8c_a5d545befad51919f51f73e03bd5d4c65_icgraph" id="auavcan_8c_a5d545befad51919f51f73e03bd5d4c65_icgraph">
 <area shape="rect" title="If we should accept this transfer." alt="" coords="321,5,483,31"/>
@@ -412,86 +435,6 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="137,21,103,21,103,15,137,15"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a1e65a8f21c7c6589d7cafec2b46d6967" name="a1e65a8f21c7c6589d7cafec2b46d6967"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e65a8f21c7c6589d7cafec2b46d6967">&#9670;&#160;</a></span>THD_FUNCTION() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> THD_FUNCTION </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uavcan_rx</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00099">99</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
-
-</div>
-</div>
-<a id="a84c1d80c62e7a1b11663d3b071f03fd0" name="a84c1d80c62e7a1b11663d3b071f03fd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84c1d80c62e7a1b11663d3b071f03fd0">&#9670;&#160;</a></span>THD_FUNCTION() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> THD_FUNCTION </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uavcan_tx</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00145">145</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
 </div>
 </div>
@@ -535,16 +478,16 @@ Variables</h2></td></tr>
 
 <p>Bind to a receiving message from uavcan. </p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00417">417</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00215">215</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00069">abi_struct::cb</a>, <a class="el" href="rssi_8c_source.html#l00045">ev</a>, <a class="el" href="abi__common_8h_source.html#l00070">abi_struct::next</a>, and <a class="el" href="uavcan_8c_source.html#l00037">uavcan_event_hd</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00069">abi_struct::cb</a>, <a class="el" href="rssi_8c_source.html#l00045">ev</a>, <a class="el" href="abi__common_8h_source.html#l00070">abi_struct::next</a>, and <a class="el" href="uavcan_8c_source.html#l00039">uavcan_event_hd</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00328">actuators_uavcan_init()</a>, <a class="el" href="airspeed__uavcan_8c_source.html#l00122">airspeed_uavcan_init()</a>, <a class="el" href="can__fuelcell_8c_source.html#l00127">can_fuelcell_init()</a>, <a class="el" href="power__uavcan_8c_source.html#l00190">power_uavcan_init()</a>, and <a class="el" href="range__sensor__uavcan_8c_source.html#l00062">range_sensor_uavcan_init()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_ae5140a66e4d2d1166229eac0ebb40869_icgraph.png" border="0" usemap="#auavcan_8c_ae5140a66e4d2d1166229eac0ebb40869_icgraph" alt=""/></div>
 <map name="auavcan_8c_ae5140a66e4d2d1166229eac0ebb40869_icgraph" id="auavcan_8c_ae5140a66e4d2d1166229eac0ebb40869_icgraph">
 <area shape="rect" title="Bind to a receiving message from uavcan." alt="" coords="244,104,348,129"/>
@@ -615,16 +558,32 @@ Variables</h2></td></tr>
 
 <p>Broadcast an uavcan message to a specific interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00432">432</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00230">230</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00047">pprz_bsem_signal()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00032">pprz_mtx_unlock()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00389">actuators_uavcan_cmd_commit()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00368">actuators_uavcan_commit()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_cgraph.png" border="0" usemap="#auavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_cgraph" alt=""/></div>
+<map name="auavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_cgraph" id="auavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_cgraph">
+<area shape="rect" title="Broadcast an uavcan message to a specific interface." alt="" coords="5,55,145,80"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="193,5,332,31"/>
+<area shape="poly" title=" " alt="" coords="124,52,200,32,201,37,125,57"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="204,55,321,80"/>
+<area shape="poly" title=" " alt="" coords="145,65,191,65,191,70,145,70"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="196,104,329,129"/>
+<area shape="poly" title=" " alt="" coords="125,77,201,98,200,103,124,83"/>
+</map>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_icgraph.png" border="0" usemap="#auavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_icgraph" alt=""/></div>
 <map name="auavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_icgraph" id="auavcan_8c_a712d2f97a70e8a78c0318d3709e317b4_icgraph">
 <area shape="rect" title="Broadcast an uavcan message to a specific interface." alt="" coords="248,42,388,67"/>
@@ -656,34 +615,58 @@ Variables</h2></td></tr>
 <p>Initialize all uavcan interfaces. </p>
 <p>uavcan interfaces </p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00388">388</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00202">202</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="uavcan_8c_source.html#l00359">uavcanInitIface()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="uavcan_8c_source.html#l00180">uavcanInitIface()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_a4d583c42b105e62f758c5645a45fe9e7_cgraph.png" border="0" usemap="#auavcan_8c_a4d583c42b105e62f758c5645a45fe9e7_cgraph" alt=""/></div>
 <map name="auavcan_8c_a4d583c42b105e62f758c5645a45fe9e7_cgraph" id="auavcan_8c_a4d583c42b105e62f758c5645a45fe9e7_cgraph">
-<area shape="rect" title="Initialize all uavcan interfaces." alt="" coords="5,55,103,80"/>
-<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,55,273,80"/>
-<area shape="poly" title=" " alt="" coords="103,65,137,65,137,70,103,70"/>
-<area shape="rect" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="327,5,478,31"/>
-<area shape="poly" title=" " alt="" coords="261,52,339,32,340,37,262,57"/>
-<area shape="rect" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="322,55,483,80"/>
-<area shape="poly" title=" " alt="" coords="273,65,309,65,309,70,273,70"/>
-<area shape="rect" href="uavcan_8c.html#a6da616476026ef52eb6ce3ac0a0b9006" title="Try to compute the timing registers for the can interface and set the configuration." alt="" coords="321,104,484,129"/>
-<area shape="poly" title=" " alt="" coords="262,77,340,98,339,103,261,83"/>
-<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="532,5,605,31"/>
-<area shape="poly" title=" " alt="" coords="478,15,518,15,518,21,478,21"/>
+<area shape="rect" title="Initialize all uavcan interfaces." alt="" coords="5,252,103,277"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,252,273,277"/>
+<area shape="poly" title=" " alt="" coords="103,262,137,262,137,267,103,267"/>
+<area shape="rect" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title=" " alt="" coords="346,55,459,80"/>
+<area shape="poly" title=" " alt="" coords="215,251,228,218,250,174,280,129,320,89,332,81,335,86,323,93,285,132,255,177,233,220,220,253"/>
+<area shape="rect" href="can_8c.html#a9324476eb389be967a6cc3a9a32a7a36" title="Add a callback on received frames from an interface." alt="" coords="321,177,484,203"/>
+<area shape="poly" title=" " alt="" coords="238,249,320,213,344,204,346,210,322,218,240,254"/>
+<area shape="rect" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="327,227,478,252"/>
+<area shape="poly" title=" " alt="" coords="273,254,313,249,314,254,274,259"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="342,276,463,301"/>
+<area shape="poly" title=" " alt="" coords="274,270,329,277,328,282,273,275"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="347,325,458,351"/>
+<area shape="poly" title=" " alt="" coords="240,275,322,312,343,319,341,324,320,316,238,280"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="329,375,476,400"/>
+<area shape="poly" title=" " alt="" coords="226,276,266,318,293,341,323,361,335,367,333,372,320,366,290,345,262,321,222,279"/>
+<area shape="rect" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="322,424,483,449"/>
+<area shape="poly" title=" " alt="" coords="221,276,258,341,287,378,323,411,332,416,329,420,320,415,283,382,254,344,217,279"/>
+<area shape="rect" href="uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d" title=" " alt="" coords="358,104,447,129"/>
+<area shape="poly" title=" " alt="" coords="224,250,265,210,320,164,365,134,368,139,323,168,269,214,228,254"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="550,5,667,31"/>
+<area shape="poly" title=" " alt="" coords="456,52,541,31,542,37,457,57"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="542,55,675,80"/>
+<area shape="poly" title=" " alt="" coords="460,65,528,65,528,70,460,70"/>
+<area shape="rect" href="can_8c.html#a7c22ac3688fb0620fc81ecf1783ab683" title=" " alt="" coords="540,203,677,228"/>
+<area shape="poly" title=" " alt="" coords="485,197,526,203,526,208,484,203"/>
+<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="572,252,645,277"/>
+<area shape="poly" title=" " alt="" coords="479,246,558,256,558,261,478,251"/>
+<area shape="poly" title=" " alt="" coords="447,105,483,89,497,77,506,65,515,52,531,40,542,34,544,38,533,44,519,56,510,68,501,81,485,94,449,110"/>
+<area shape="poly" title=" " alt="" coords="447,103,541,81,542,86,448,109"/>
+<area shape="rect" href="chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5" title=" " alt="" coords="532,104,685,129"/>
+<area shape="poly" title=" " alt="" coords="448,114,518,114,518,119,448,119"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="545,153,673,179"/>
+<area shape="poly" title=" " alt="" coords="448,125,542,147,541,153,447,130"/>
+<area shape="rect" href="can_8c.html#ab88c2569516a3a7afca2397b9aa1d2e4" title=" " alt="" coords="733,104,852,129"/>
+<area shape="poly" title=" " alt="" coords="686,114,719,114,719,119,686,119"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6da616476026ef52eb6ce3ac0a0b9006" name="a6da616476026ef52eb6ce3ac0a0b9006"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6da616476026ef52eb6ce3ac0a0b9006">&#9670;&#160;</a></span>uavcanConfigureIface()</h2>
+<a id="a73f54bb2987f6c04eb3e7f3ad54ee30d" name="a73f54bb2987f6c04eb3e7f3ad54ee30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f54bb2987f6c04eb3e7f3ad54ee30d">&#9670;&#160;</a></span>uavcan_tx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,10 +675,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> uavcanConfigureIface </td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> uavcan_tx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t">uavcan_iface_t</a> *&#160;</td>
-          <td class="paramname"><em>iface</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -706,23 +689,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Try to compute the timing registers for the can interface and set the configuration. </p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00103">103</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00245">245</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="reference">References <a class="el" href="can_8h_source.html#l00062">CAN_FRAME_EFF</a>, <a class="el" href="can_8h_source.html#l00073">pprzcan_frame::can_id</a>, <a class="el" href="chibios_2mcu__periph_2can__arch_8c_source.html#l00149">can_transmit_frame()</a>, <a class="el" href="can_8h_source.html#l00077">pprzcan_frame::data</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="can_8h_source.html#l00074">pprzcan_frame::len</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00043">pprz_bsem_wait()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00032">pprz_mtx_unlock()</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00359">uavcanInitIface()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00180">uavcanInitIface()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="uavcan_8c_a6da616476026ef52eb6ce3ac0a0b9006_icgraph.png" border="0" usemap="#auavcan_8c_a6da616476026ef52eb6ce3ac0a0b9006_icgraph" alt=""/></div>
-<map name="auavcan_8c_a6da616476026ef52eb6ce3ac0a0b9006_icgraph" id="auavcan_8c_a6da616476026ef52eb6ce3ac0a0b9006_icgraph">
-<area shape="rect" title="Try to compute the timing registers for the can interface and set the configuration." alt="" coords="321,5,484,31"/>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_cgraph.png" border="0" usemap="#auavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_cgraph" alt=""/></div>
+<map name="auavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_cgraph" id="auavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,95,105"/>
+<area shape="rect" href="chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5" title=" " alt="" coords="143,5,296,31"/>
+<area shape="poly" title=" " alt="" coords="70,78,142,40,159,33,161,38,144,44,73,82"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="155,55,283,80"/>
+<area shape="poly" title=" " alt="" coords="94,83,141,76,142,82,95,89"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="161,104,278,129"/>
+<area shape="poly" title=" " alt="" coords="95,96,147,104,147,109,94,102"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="153,153,286,179"/>
+<area shape="poly" title=" " alt="" coords="75,103,144,138,164,146,163,151,142,143,72,108"/>
+<area shape="rect" href="can_8c.html#ab88c2569516a3a7afca2397b9aa1d2e4" title=" " alt="" coords="344,5,463,31"/>
+<area shape="poly" title=" " alt="" coords="297,15,330,15,330,21,297,21"/>
+</map>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_icgraph.png" border="0" usemap="#auavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_icgraph" alt=""/></div>
+<map name="auavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_icgraph" id="auavcan_8c_a73f54bb2987f6c04eb3e7f3ad54ee30d_icgraph">
+<area shape="rect" title=" " alt="" coords="321,5,411,31"/>
 <area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,5,273,31"/>
-<area shape="poly" title=" " alt="" coords="308,21,273,21,273,15,308,15"/>
+<area shape="poly" title=" " alt="" coords="308,21,274,21,274,15,308,15"/>
 <area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="5,5,103,31"/>
 <area shape="poly" title=" " alt="" coords="137,21,103,21,103,15,137,15"/>
 </map>
@@ -756,34 +757,58 @@ Variables</h2></td></tr>
 
 <p>Initialize uavcan interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00359">359</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00180">180</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="uavcan_8c_source.html#l00209">onTransferReceived()</a>, <a class="el" href="uavcan_8c_source.html#l00224">shouldAcceptTransfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00245">uavcanConfigureIface()</a>.</p>
+<p class="reference">References <a class="el" href="uavcan_8c_source.html#l00080">can_frame_cb()</a>, <a class="el" href="can_8c_source.html#l00088">can_register_callback()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="uavcan_8c_source.html#l00143">onTransferReceived()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00039">pprz_bsem_init()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00018">pprz_mtx_init()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00052">pprz_thread_create()</a>, <a class="el" href="uavcan_8c_source.html#l00158">shouldAcceptTransfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00103">uavcan_tx()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00388">uavcan_init()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00202">uavcan_init()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_cgraph.png" border="0" usemap="#auavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_cgraph" alt=""/></div>
 <map name="auavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_cgraph" id="auavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_cgraph">
-<area shape="rect" title="Initialize uavcan interface." alt="" coords="5,55,128,80"/>
-<area shape="rect" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="182,5,333,31"/>
-<area shape="poly" title=" " alt="" coords="116,52,193,32,195,37,117,57"/>
-<area shape="rect" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="177,55,338,80"/>
-<area shape="poly" title=" " alt="" coords="128,65,163,65,163,70,128,70"/>
-<area shape="rect" href="uavcan_8c.html#a6da616476026ef52eb6ce3ac0a0b9006" title="Try to compute the timing registers for the can interface and set the configuration." alt="" coords="176,104,339,129"/>
-<area shape="poly" title=" " alt="" coords="117,77,195,98,193,103,116,83"/>
-<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="387,5,460,31"/>
-<area shape="poly" title=" " alt="" coords="333,15,373,15,373,21,333,21"/>
+<area shape="rect" title="Initialize uavcan interface." alt="" coords="5,252,128,277"/>
+<area shape="rect" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title=" " alt="" coords="201,55,314,80"/>
+<area shape="poly" title=" " alt="" coords="70,251,83,218,105,174,135,129,174,89,187,81,190,86,178,93,139,132,109,177,88,220,75,253"/>
+<area shape="rect" href="can_8c.html#a9324476eb389be967a6cc3a9a32a7a36" title="Add a callback on received frames from an interface." alt="" coords="176,177,339,203"/>
+<area shape="poly" title=" " alt="" coords="93,249,175,213,198,204,200,210,177,218,95,254"/>
+<area shape="rect" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="182,227,333,252"/>
+<area shape="poly" title=" " alt="" coords="128,254,168,249,169,254,128,259"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="197,276,318,301"/>
+<area shape="poly" title=" " alt="" coords="128,270,183,277,183,282,128,275"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="202,325,313,351"/>
+<area shape="poly" title=" " alt="" coords="94,275,177,312,197,319,195,324,175,316,92,280"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="184,375,331,400"/>
+<area shape="poly" title=" " alt="" coords="81,276,120,318,148,341,177,361,190,367,188,372,175,366,144,345,117,321,77,279"/>
+<area shape="rect" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="177,424,338,449"/>
+<area shape="poly" title=" " alt="" coords="76,276,113,341,142,378,178,411,186,416,183,420,174,415,138,382,108,344,71,279"/>
+<area shape="rect" href="uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d" title=" " alt="" coords="213,104,302,129"/>
+<area shape="poly" title=" " alt="" coords="79,250,120,210,174,164,219,134,222,139,178,168,124,214,82,254"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="405,5,522,31"/>
+<area shape="poly" title=" " alt="" coords="310,52,396,31,397,37,312,57"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="397,55,530,80"/>
+<area shape="poly" title=" " alt="" coords="314,65,382,65,382,70,314,70"/>
+<area shape="rect" href="can_8c.html#a7c22ac3688fb0620fc81ecf1783ab683" title=" " alt="" coords="395,203,532,228"/>
+<area shape="poly" title=" " alt="" coords="339,197,381,203,380,208,339,203"/>
+<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="427,252,500,277"/>
+<area shape="poly" title=" " alt="" coords="334,246,413,256,412,261,333,251"/>
+<area shape="poly" title=" " alt="" coords="301,105,337,89,352,77,361,65,370,52,385,40,396,34,399,38,388,44,374,56,365,68,355,81,340,94,303,110"/>
+<area shape="poly" title=" " alt="" coords="302,103,396,81,397,86,303,109"/>
+<area shape="rect" href="chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5" title=" " alt="" coords="387,104,540,129"/>
+<area shape="poly" title=" " alt="" coords="302,114,373,114,373,119,302,119"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="399,153,527,179"/>
+<area shape="poly" title=" " alt="" coords="303,125,397,147,396,153,302,130"/>
+<area shape="rect" href="can_8c.html#ab88c2569516a3a7afca2397b9aa1d2e4" title=" " alt="" coords="588,104,707,129"/>
+<area shape="poly" title=" " alt="" coords="541,114,574,114,574,119,541,119"/>
 </map>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_icgraph.png" border="0" usemap="#auavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_icgraph" alt=""/></div>
 <map name="auavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_icgraph" id="auavcan_8c_a61afe9956a4daba2b640dad2c3f4cc9e_icgraph">
 <area shape="rect" title="Initialize uavcan interface." alt="" coords="151,5,273,31"/>
@@ -815,9 +840,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00037">37</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00039">39</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00209">onTransferReceived()</a>, <a class="el" href="uavcan_8c_source.html#l00224">shouldAcceptTransfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00417">uavcan_bind()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00143">onTransferReceived()</a>, <a class="el" href="uavcan_8c_source.html#l00158">shouldAcceptTransfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00215">uavcan_bind()</a>.</p>
 
 </div>
 </div>
@@ -827,7 +852,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_ca1641d5537214017ef5f2c69e95a1ee.html">uavcan</a></li><li class="navelem"><a class="el" href="uavcan_8c.html">uavcan.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 09:33:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 13:06:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

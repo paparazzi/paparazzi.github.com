@@ -119,9 +119,27 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>uavcan interface structure </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h_source.html#l00034">34</a> of file <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h_source.html">uavcan.h</a>.</p>
-</div><table class="fieldtable">
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h_source.html#l00035">35</a> of file <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h_source.html">uavcan.h</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for uavcan_iface_t:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structuavcan__iface__t__coll__graph.png" border="0" usemap="#auavcan__iface__t_coll__map" alt="Collaboration graph"/></div>
+<map name="auavcan__iface__t_coll__map" id="auavcan__iface__t_coll__map">
+<area shape="rect" title="uavcan interface structure" alt="" coords="5,123,125,148"/>
+<area shape="rect" title=" " alt="" coords="36,5,95,31"/>
+<area shape="poly" title=" " alt="" coords="68,44,68,123,63,123,63,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a6fd4bf434b76d2d3665b3727f7c0ec22" name="a6fd4bf434b76d2d3665b3727f7c0ec22"></a><a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a></td>
+<td class="fieldname">
+bsem</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a4ac83347bccea5b6e4fc5053b7535e2a" name="a4ac83347bccea5b6e4fc5053b7535e2a"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
@@ -129,15 +147,9 @@ can_baudrate</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a16a80753b7093f4f4b7906e605220784" name="a16a80753b7093f4f4b7906e605220784"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">CANConfig</a></td>
+<a id="a6469710c23644003aaf7bf0bbfe23910" name="a6469710c23644003aaf7bf0bbfe23910"></a>struct <a class="el" href="can_8h.html#structpprzaddr__can">pprzaddr_can</a></td>
 <td class="fieldname">
-can_cfg</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a5c9ca2e231219806f43c0453cf022f9e" name="a5c9ca2e231219806f43c0453cf022f9e"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">CANDriver</a> *</td>
-<td class="fieldname">
-can_driver</td>
+can_net</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -159,7 +171,7 @@ initialized</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ae6d7e1a9efdedf7ad390d0a8476c3515" name="ae6d7e1a9efdedf7ad390d0a8476c3515"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">mutex_t</a></td>
+<a id="a05617a3e10fa967ce254e8a731b79bdb" name="a05617a3e10fa967ce254e8a731b79bdb"></a><a class="el" href="threads_8h.html#aa2389e51ec1fe8e08155b3ad3175b86f">pprz_mutex_t</a></td>
 <td class="fieldname">
 mutex</td>
 <td class="fielddoc">
@@ -171,39 +183,9 @@ node_id</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ae33309d8e1c726e0497548b2a03b054e" name="ae33309d8e1c726e0497548b2a03b054e"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *</td>
+<a id="ac914817424837b52bcef064d22a98ed1" name="ac914817424837b52bcef064d22a98ed1"></a><a class="el" href="chibios_2modules_2core_2threads__arch_8h.html#a6346f48ec6528ca13c35a2cd5109d5db">pprz_thread_t</a></td>
 <td class="fieldname">
-thread_rx_wa</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ab55e1acc1408897bf4678ce0cff393ea" name="ab55e1acc1408897bf4678ce0cff393ea"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a></td>
-<td class="fieldname">
-thread_rx_wa_size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a7c79db567d6b81dbaa82ba19993ed154" name="a7c79db567d6b81dbaa82ba19993ed154"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *</td>
-<td class="fieldname">
-thread_tx_wa</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="add8a0f1080d980e9c8143b05f4a241bb" name="add8a0f1080d980e9c8143b05f4a241bb"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a></td>
-<td class="fieldname">
-thread_tx_wa_size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a649b2ba9d174201ad711f310522f9b85" name="a649b2ba9d174201ad711f310522f9b85"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *</td>
-<td class="fieldname">
-thread_uavcan_wa</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a9222f7a99362c2c3a23998ea61c75f17" name="a9222f7a99362c2c3a23998ea61c75f17"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a></td>
-<td class="fieldname">
-thread_uavcan_wa_size</td>
+thread_tx</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -228,7 +210,7 @@ tx_request</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_2b8fc0b1e96b9ae5b3950580235b3cc9.html">modules</a></li><li class="navelem"><a class="el" href="dir_c703c9b7f098b170fcebfaeefdb19d83.html">uavcan</a></li><li class="navelem"><a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html">uavcan.h</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 09:33:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 23 2025 13:06:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

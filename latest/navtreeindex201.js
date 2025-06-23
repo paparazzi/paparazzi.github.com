@@ -1,15 +1,5 @@
 var NAVTREEINDEX201 =
 {
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzBSem":[12,0,1,0,0,3,1,1,2,1],
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,3,1,1,2,0],
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,0,1,1,6,0],
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,1,1,1,2,0],
-"stm32_2modules_2core_2threads__arch_8h.html#structpprzMutex":[12,0,1,0,0,2,1,1,5,0],
-"stm32_2modules_2core_2threads__arch_8h_source.html":[12,0,1,0,0,3,1,1,2],
-"stm32_2modules_2radio__control_2ppm__arch_8c.html":[9,8,17],
-"stm32_2modules_2radio__control_2ppm__arch_8h.html":[9,8,18],
-"stm32_2peripherals_2hmc5843__arch_8c.html":[12,0,1,0,0,3,2,0],
-"stm32_2peripherals_2hmc5843__arch_8c.html#ac033acbc708beb196e46622d95d450c5":[12,0,1,0,0,3,2,0,0],
 "stm32_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7":[12,0,1,0,0,3,2,0,1],
 "stm32_2peripherals_2hmc5843__arch_8c.html#aea219a14b12c8fb0fe874ebde7a9a806":[12,0,1,0,0,3,2,0,2],
 "stm32_2peripherals_2hmc5843__arch_8c_source.html":[12,0,1,0,0,3,2,0],
@@ -249,5 +239,15 @@ var NAVTREEINDEX201 =
 "superbitrf__rc_8h_source.html":[12,0,1,0,6,56,23],
 "swashplate__mixing_8c.html":[12,0,1,0,6,34,0],
 "swashplate__mixing_8c.html#a3b16bf330efb81b1474079c35f903311":[12,0,1,0,6,34,0,1],
-"swashplate__mixing_8c.html#a745e49f27dd4720daa68d4774be479ef":[12,0,1,0,6,34,0,6]
+"swashplate__mixing_8c.html#a745e49f27dd4720daa68d4774be479ef":[12,0,1,0,6,34,0,6],
+"swashplate__mixing_8c.html#a7d4326255042772a1931e6c1eed9ea92":[12,0,1,0,6,34,0,4],
+"swashplate__mixing_8c.html#ab1597832131a1e2787aecb06cce073c6":[12,0,1,0,6,34,0,8],
+"swashplate__mixing_8c.html#ae18d22764360ad8d3fefe3f7b91ab781":[12,0,1,0,6,34,0,3],
+"swashplate__mixing_8c.html#ae26788086ee44f01196fccdf1ea094fa":[12,0,1,0,6,34,0,2],
+"swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c":[12,0,1,0,6,34,0,7],
+"swashplate__mixing_8c.html#af7668edf247b3910f2ed9dbf8c02123b":[12,0,1,0,6,34,0,0],
+"swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623":[12,0,1,0,6,34,0,5],
+"swashplate__mixing_8c_source.html":[12,0,1,0,6,34,0],
+"swashplate__mixing_8h.html":[12,0,1,0,6,34,1],
+"swashplate__mixing_8h.html#a010f808a2b4605a5a092aa2a4ac6eeae":[12,0,1,0,6,34,1,7]
 };

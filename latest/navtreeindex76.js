@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba147793830adf14c3870a64099ce950b6":[12,0,1,0,0,0,0,8,17,4],
 "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba3e09d80941009c22b15fc0e7174e7cb0":[12,0,1,0,0,0,0,8,17,3],
 "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba6a6501443497cd46337033b71ca1b1ec":[12,0,1,0,0,0,0,8,17,0],
 "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba86839092843c581c0d517865cf2f6d19":[12,0,1,0,0,0,0,8,17,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "high__speed__logger__spi__link_8c.html#a1561070e8f10501a2c9eeaebc7dbd7a1":[12,0,1,0,6,42,7,6],
 "high__speed__logger__spi__link_8c.html#a2b4341a957c0c01b6b056ad76db74219":[12,0,1,0,6,42,7,4],
 "high__speed__logger__spi__link_8c.html#a38bd10864e67fa36fe67d772bdec2c9e":[12,0,1,0,6,42,7,2],
-"high__speed__logger__spi__link_8c.html#a5415a1e7a1b569b44b00d72321bbb165":[12,0,1,0,6,42,7,1],
-"high__speed__logger__spi__link_8c.html#a5f71f68924d08e716c4a4ad4c5f79b5d":[12,0,1,0,6,42,7,3]
+"high__speed__logger__spi__link_8c.html#a5415a1e7a1b569b44b00d72321bbb165":[12,0,1,0,6,42,7,1]
 };

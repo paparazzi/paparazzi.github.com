@@ -1,5 +1,6 @@
 var NAVTREEINDEX126 =
 {
+"module__airspeed_amsys.html#module_load_example__airspeed_amsys":[1,386,0],
 "module__airspeed_amsys.html#module_xml__airspeed_amsys":[1,386,2,0],
 "module__airspeed_ets.html":[1,387],
 "module__airspeed_ets.html#configuration__airspeed_ets":[1,387,1],
@@ -205,9 +206,8 @@ var NAVTREEINDEX126 =
 "module__cam_segment.html#module_xml__cam_segment":[1,49,1,0],
 "module__can.html":[1,273],
 "module__can.html#configuration__can":[1,273,1],
-"module__can.html#functions__can":[1,273,2],
 "module__can.html#module_load_example__can":[1,273,0],
-"module__can.html#module_xml__can":[1,273,2,0],
+"module__can.html#module_xml__can":[1,273,1,0],
 "module__can_fuelcell.html":[1,145],
 "module__can_fuelcell.html#functions__can_fuelcell":[1,145,1],
 "module__can_fuelcell.html#module_load_example__can_fuelcell":[1,145,0],
