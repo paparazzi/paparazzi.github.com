@@ -2,6 +2,8 @@ var dir_94757629c544be2d6d24b01569be56e6 =
 [
     [ "approach_moving_target.c", "approach__moving__target_8c.html", "approach__moving__target_8c" ],
     [ "approach_moving_target.h", "approach__moving__target_8h.html", "approach__moving__target_8h" ],
+    [ "control_mixing_heewing.c", "control__mixing__heewing_8c.html", "control__mixing__heewing_8c" ],
+    [ "control_mixing_heewing.h", "control__mixing__heewing_8h.html", "control__mixing__heewing_8h" ],
     [ "ctrl_module_innerloop_demo.c", "ctrl__module__innerloop__demo_8c.html", "ctrl__module__innerloop__demo_8c" ],
     [ "ctrl_module_innerloop_demo.h", "ctrl__module__innerloop__demo_8h.html", "ctrl__module__innerloop__demo_8h" ],
     [ "ctrl_module_outerloop_demo.c", "ctrl__module__outerloop__demo_8c.html", "ctrl__module__outerloop__demo_8c" ],

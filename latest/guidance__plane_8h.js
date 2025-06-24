@@ -1,0 +1,34 @@
+var guidance__plane_8h =
+[
+    [ "GuidancePlane", "guidance__plane_8h.html#structGuidancePlane", [
+      [ "altitude_setpoint", "guidance__plane_8h.html#af8d422913b4c44a62cb1e4bf4990ca47", null ],
+      [ "climb_kp", "guidance__plane_8h.html#a3591304b1c6c519911729a1c1be37f65", null ],
+      [ "climb_max_setpoint", "guidance__plane_8h.html#a06a2fe9d86cc16c1fae0fccd6d21cddb", null ],
+      [ "climb_setpoint", "guidance__plane_8h.html#aa74210a70e299ff58d14513e09dc1a67", null ],
+      [ "climb_throttle_increment", "guidance__plane_8h.html#adef6855ebf54b2f4322f57b75bc455d5", null ],
+      [ "course_kd", "guidance__plane_8h.html#a510ca76b189bce5efffc1109eea42157", null ],
+      [ "course_kp", "guidance__plane_8h.html#ad648b55d765007a2e7e7db42e901432d", null ],
+      [ "course_pre_bank_correction", "guidance__plane_8h.html#a758dba811cf0317aeb45e90a6ecfcc5c", null ],
+      [ "course_setpoint", "guidance__plane_8h.html#accaaedf66e67d24ce5ab364ff2496758", null ],
+      [ "cruise_throttle", "guidance__plane_8h.html#a38d4321989b4c1b36998ee12a08b10ef", null ],
+      [ "p_kd", "guidance__plane_8h.html#a5f0cdb1f1b8a019364b9c3fce83318b3", null ],
+      [ "p_ki", "guidance__plane_8h.html#af45f7d5b889f77eaaaeec3d927d1327d", null ],
+      [ "p_kp", "guidance__plane_8h.html#a65654141637927d7a48296c352711d5c", null ],
+      [ "pitch_cmd", "guidance__plane_8h.html#aacc9b61cfa7795b109360108b1279c45", null ],
+      [ "pitch_max_setpoint", "guidance__plane_8h.html#a9ed8f49b11528dfa8f12cc7f01d5392d", null ],
+      [ "pitch_min_setpoint", "guidance__plane_8h.html#a7053591e4ea6be142a0a5a8fcfb0fcd1", null ],
+      [ "pitch_of_vz", "guidance__plane_8h.html#a22cbd6e8ebd9d11ad97e1f6c808e566e", null ],
+      [ "pitch_trim", "guidance__plane_8h.html#afe626374ac5e70da482ba2b9b54e7f52", null ],
+      [ "roll_cmd", "guidance__plane_8h.html#a9751066e9915b7289738bf171a97ad6d", null ],
+      [ "roll_max_setpoint", "guidance__plane_8h.html#ae44bee024071aca5ce42911afd882714", null ],
+      [ "t_kd", "guidance__plane_8h.html#adbcce66e5ce124039ac82e0aa1335e1d", null ],
+      [ "t_ki", "guidance__plane_8h.html#ab7e88807d3e86a9604ede59039ae7510", null ],
+      [ "t_kp", "guidance__plane_8h.html#ac92058d52f16a9fcd0b1bf5f0e2e6074", null ],
+      [ "throttle_cmd", "guidance__plane_8h.html#af66c97c0c4163e246204418a1984340b", null ]
+    ] ],
+    [ "guidance_plane_attitude_from_nav", "guidance__plane_8h.html#adec8b7ab336ef78029329e4d8249c943", null ],
+    [ "guidance_plane_enter", "guidance__plane_8h.html#a53e4f3cd52bc5e8b38af13500a71ebd9", null ],
+    [ "guidance_plane_init", "guidance__plane_8h.html#a94b88a866bc6c0b0da4d5436d01bb9b2", null ],
+    [ "guidance_plane_thrust_from_nav", "guidance__plane_8h.html#ad920ffb608668c29ed7b9450b3b8a69b", null ],
+    [ "guidance_plane", "guidance__plane_8h.html#a28571b706454115f1ef9bb18eac5df10", null ]
+];

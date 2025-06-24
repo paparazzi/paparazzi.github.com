@@ -21,6 +21,8 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_oneloop.h", "guidance__oneloop_8h.html", "guidance__oneloop_8h" ],
     [ "guidance_pid.c", "guidance__pid_8c.html", "guidance__pid_8c" ],
     [ "guidance_pid.h", "guidance__pid_8h.html", "guidance__pid_8h" ],
+    [ "guidance_plane.c", "guidance__plane_8c.html", "guidance__plane_8c" ],
+    [ "guidance_plane.h", "guidance__plane_8h.html", "guidance__plane_8h" ],
     [ "guidance_v.c", "rotorcraft_2guidance_2guidance__v_8c.html", "rotorcraft_2guidance_2guidance__v_8c" ],
     [ "guidance_v.h", "rotorcraft_2guidance_2guidance__v_8h.html", "rotorcraft_2guidance_2guidance__v_8h" ],
     [ "guidance_v_adapt.c", "guidance__v__adapt_8c.html", "guidance__v__adapt_8c" ],

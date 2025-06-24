@@ -665,7 +665,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="structStabilizationSetpoint.html#adccc2228afed366e963ce9a5e00e1d1f">StabilizationSetpoint::format</a>, <a class="el" href="structStabilizationSetpoint.html#a632c80c243fb808a15e136573cf70a91">StabilizationSetpoint::sp</a>, <a class="el" href="stabilization_8h_source.html#l00056">StabilizationSetpoint::STAB_SP_EULERS</a>, <a class="el" href="stabilization_8h_source.html#l00063">StabilizationSetpoint::STAB_SP_FLOAT</a>, and <a class="el" href="structStabilizationSetpoint.html#afd83fc3898955c055fa4ea646dfd1eb1">StabilizationSetpoint::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00375">guidance_h_from_nav()</a>, and <a class="el" href="stabilization_8c_source.html#l00275">stabilization_get_failsafe_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00375">guidance_h_from_nav()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, and <a class="el" href="stabilization_8c_source.html#l00275">stabilization_get_failsafe_sp()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -673,18 +673,26 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph.png" border="0" usemap="#astabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph" alt=""/></div>
 <map name="astabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph" id="astabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph">
-<area shape="rect" title=" " alt="" coords="705,31,875,56"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="492,5,657,31"/>
-<area shape="poly" title=" " alt="" coords="692,34,657,30,658,25,692,29"/>
-<area shape="rect" href="stabilization_8c.html#ad6249a54ee536ed29d3dd9243f12bda3" title="Get stabilization setpoint for failsafe." alt="" coords="236,56,444,81"/>
-<area shape="poly" title=" " alt="" coords="692,51,444,66,444,60,692,46"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="278,7,402,32"/>
-<area shape="poly" title=" " alt="" coords="478,21,402,22,402,16,478,16"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,56,188,81"/>
-<area shape="poly" title=" " alt="" coords="265,37,161,59,159,53,264,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,7,179,32"/>
-<area shape="poly" title=" " alt="" coords="264,22,180,22,180,17,264,17"/>
-<area shape="poly" title=" " alt="" coords="222,71,188,71,188,66,222,66"/>
+<area shape="rect" title=" " alt="" coords="721,127,891,153"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="492,5,673,45"/>
+<area shape="poly" title=" " alt="" coords="771,122,672,66,632,48,634,43,675,62,774,118"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,120,187,160"/>
+<area shape="poly" title=" " alt="" coords="714,128,615,116,496,106,366,103,236,111,171,123,170,117,236,105,366,98,496,101,616,111,714,123"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="500,179,665,205"/>
+<area shape="poly" title=" " alt="" coords="738,158,638,182,637,177,737,153"/>
+<area shape="rect" href="guidance__plane_8c.html#ab64ef7c7410ce6d1aeee8a4ce945ac78" title="run horizontal control loop for position and speed control" alt="" coords="249,120,431,160"/>
+<area shape="poly" title=" " alt="" coords="708,143,432,143,432,137,708,137"/>
+<area shape="rect" href="stabilization_8c.html#ad6249a54ee536ed29d3dd9243f12bda3" title="Get stabilization setpoint for failsafe." alt="" coords="236,234,444,259"/>
+<area shape="poly" title=" " alt="" coords="779,163,732,194,674,220,616,235,556,244,444,252,444,247,556,239,615,230,672,215,729,189,776,159"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="278,185,402,210"/>
+<area shape="poly" title=" " alt="" coords="486,197,402,199,402,193,486,191"/>
+<area shape="poly" title=" " alt="" coords="271,184,181,163,183,157,273,179"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,234,188,259"/>
+<area shape="poly" title=" " alt="" coords="265,215,161,237,159,231,264,210"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,185,179,210"/>
+<area shape="poly" title=" " alt="" coords="264,200,180,200,180,195,264,195"/>
+<area shape="poly" title=" " alt="" coords="235,143,188,143,188,137,235,137"/>
+<area shape="poly" title=" " alt="" coords="222,249,188,249,188,244,222,244"/>
 </map>
 </div>
 
@@ -838,31 +846,39 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a66f4de42924ea662ae4f03e04c78d4bf_icgraph.png" border="0" usemap="#astabilization_8c_a66f4de42924ea662ae4f03e04c78d4bf_icgraph" alt=""/></div>
 <map name="astabilization_8c_a66f4de42924ea662ae4f03e04c78d4bf_icgraph" id="astabilization_8c_a66f4de42924ea662ae4f03e04c78d4bf_icgraph">
-<area shape="rect" title=" " alt="" coords="693,108,852,133"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="480,29,645,55"/>
-<area shape="poly" title=" " alt="" coords="731,105,644,69,610,57,612,52,646,63,733,100"/>
-<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="493,79,633,104"/>
-<area shape="poly" title=" " alt="" coords="679,110,633,104,633,98,680,105"/>
-<area shape="rect" href="stabilization_8c.html#ac7a492a4d563a518c14c8621d828d34f" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="483,129,643,169"/>
-<area shape="poly" title=" " alt="" coords="680,136,643,141,642,135,679,130"/>
-<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="483,193,643,233"/>
-<area shape="poly" title=" " alt="" coords="735,142,646,183,618,195,616,190,644,178,733,137"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="278,29,402,55"/>
-<area shape="poly" title=" " alt="" coords="466,45,402,45,402,39,466,39"/>
+<area shape="rect" title=" " alt="" coords="693,141,852,167"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="480,63,645,88"/>
+<area shape="poly" title=" " alt="" coords="731,138,644,102,610,91,612,86,646,97,733,133"/>
+<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="493,112,633,137"/>
+<area shape="poly" title=" " alt="" coords="679,144,633,137,633,132,680,138"/>
+<area shape="rect" href="stabilization_8c.html#ac7a492a4d563a518c14c8621d828d34f" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="483,162,643,202"/>
+<area shape="poly" title=" " alt="" coords="680,169,643,174,642,169,679,164"/>
+<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="483,247,643,287"/>
+<area shape="poly" title=" " alt="" coords="737,176,602,250,600,245,735,171"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="278,63,402,88"/>
+<area shape="poly" title=" " alt="" coords="466,78,402,78,402,73,466,73"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="11,5,194,31"/>
-<area shape="poly" title=" " alt="" coords="264,37,194,30,195,25,264,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="20,55,185,80"/>
-<area shape="poly" title=" " alt="" coords="264,53,186,61,185,56,264,47"/>
-<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="248,79,432,104"/>
-<area shape="poly" title=" " alt="" coords="479,94,432,94,432,89,479,89"/>
-<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="312,136,368,161"/>
-<area shape="poly" title=" " alt="" coords="469,151,368,151,368,146,469,146"/>
-<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="37,136,168,161"/>
-<area shape="poly" title=" " alt="" coords="298,151,168,151,168,146,298,146"/>
-<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="267,193,413,233"/>
-<area shape="poly" title=" " alt="" coords="469,215,413,215,413,210,469,210"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,200,200,225"/>
-<area shape="poly" title=" " alt="" coords="253,215,200,215,200,210,253,210"/>
+<area shape="poly" title=" " alt="" coords="273,62,155,33,157,28,274,57"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="12,55,193,95"/>
+<area shape="poly" title=" " alt="" coords="264,78,193,78,193,73,264,73"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="20,120,185,145"/>
+<area shape="poly" title=" " alt="" coords="274,94,157,123,155,117,273,89"/>
+<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="248,112,432,137"/>
+<area shape="poly" title=" " alt="" coords="479,127,432,127,432,122,479,122"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="312,169,368,195"/>
+<area shape="poly" title=" " alt="" coords="469,185,368,185,368,179,469,179"/>
+<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="37,169,168,195"/>
+<area shape="poly" title=" " alt="" coords="298,185,168,185,168,179,298,179"/>
+<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="267,269,413,309"/>
+<area shape="poly" title=" " alt="" coords="469,279,414,284,413,279,469,274"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,219,200,244"/>
+<area shape="poly" title=" " alt="" coords="252,270,155,247,157,241,254,265"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="12,269,193,309"/>
+<area shape="poly" title=" " alt="" coords="253,291,193,291,193,286,253,286"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="12,333,193,373"/>
+<area shape="poly" title=" " alt="" coords="254,315,178,335,177,330,253,309"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="12,397,193,437"/>
+<area shape="poly" title=" " alt="" coords="305,320,257,354,201,387,173,399,171,394,199,382,254,350,302,315"/>
 </map>
 </div>
 
@@ -1090,40 +1106,50 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph.png" border="0" usemap="#astabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph" alt=""/></div>
 <map name="astabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph" id="astabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph">
-<area shape="rect" title=" " alt="" coords="907,175,1037,200"/>
-<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="708,129,859,155"/>
-<area shape="poly" title=" " alt="" coords="904,174,837,157,838,152,906,169"/>
-<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="708,199,859,224"/>
-<area shape="poly" title=" " alt="" coords="893,200,859,204,859,199,893,195"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,80,660,105"/>
-<area shape="poly" title=" " alt="" coords="713,129,622,108,623,103,714,124"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,129,660,155"/>
-<area shape="poly" title=" " alt="" coords="694,145,660,145,660,139,694,139"/>
-<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="262,5,398,31"/>
-<area shape="poly" title=" " alt="" coords="481,126,470,119,453,100,446,80,438,62,422,44,397,31,400,27,426,40,443,59,451,78,458,97,474,115,484,121"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="247,55,413,80"/>
-<area shape="poly" title=" " alt="" coords="496,128,471,119,447,106,423,94,388,83,390,77,425,89,449,102,473,114,498,123"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="265,104,395,129"/>
-<area shape="poly" title=" " alt="" coords="458,133,395,126,396,121,459,128"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,153,421,179"/>
-<area shape="poly" title=" " alt="" coords="459,156,422,159,421,154,458,150"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,80,188,105"/>
-<area shape="poly" title=" " alt="" coords="251,111,188,105,188,99,251,106"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,129,179,155"/>
-<area shape="poly" title=" " alt="" coords="251,128,180,136,179,130,250,123"/>
-<area shape="poly" title=" " alt="" coords="729,197,606,157,608,152,731,192"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="485,199,647,224"/>
-<area shape="poly" title=" " alt="" coords="694,214,648,214,648,209,694,209"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="472,248,660,273"/>
-<area shape="poly" title=" " alt="" coords="714,230,623,251,622,245,713,224"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="499,298,633,338"/>
-<area shape="poly" title=" " alt="" coords="754,234,711,261,661,288,632,300,630,295,659,284,708,257,751,230"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="241,203,419,228"/>
-<area shape="poly" title=" " alt="" coords="471,216,419,216,419,211,471,210"/>
-<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="244,252,416,277"/>
-<area shape="poly" title=" " alt="" coords="496,230,387,255,386,249,495,225"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,305,424,331"/>
-<area shape="poly" title=" " alt="" coords="486,321,424,321,424,315,486,315"/>
+<area shape="rect" title=" " alt="" coords="907,282,1037,307"/>
+<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="708,209,859,234"/>
+<area shape="poly" title=" " alt="" coords="925,279,816,237,818,232,927,274"/>
+<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="708,327,859,353"/>
+<area shape="poly" title=" " alt="" coords="906,313,838,330,837,325,904,308"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="250,69,410,109"/>
+<area shape="poly" title=" " alt="" coords="742,206,659,173,528,136,410,108,411,103,530,130,661,168,743,201"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,183,660,209"/>
+<area shape="poly" title=" " alt="" coords="694,214,660,210,661,204,694,208"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,233,660,258"/>
+<area shape="poly" title=" " alt="" coords="694,234,661,238,660,232,694,229"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,69,187,109"/>
+<area shape="poly" title=" " alt="" coords="237,92,187,92,187,87,237,87"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,5,187,45"/>
+<area shape="poly" title=" " alt="" coords="242,68,169,48,171,43,244,63"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="262,183,398,209"/>
+<area shape="poly" title=" " alt="" coords="491,232,391,211,392,206,492,227"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="247,233,413,258"/>
+<area shape="poly" title=" " alt="" coords="458,248,413,248,413,243,458,243"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="265,134,395,159"/>
+<area shape="poly" title=" " alt="" coords="486,230,471,222,455,210,446,197,437,185,423,173,394,161,397,156,425,168,441,181,450,194,459,206,473,218,489,225"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,282,421,307"/>
+<area shape="poly" title=" " alt="" coords="492,263,392,285,391,279,491,258"/>
+<area shape="poly" title=" " alt="" coords="264,133,178,112,179,107,265,128"/>
+<area shape="poly" title=" " alt="" coords="251,132,234,123,218,107,209,91,201,75,186,59,167,48,169,43,190,55,206,72,214,89,222,104,238,119,253,128"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,134,188,159"/>
+<area shape="poly" title=" " alt="" coords="251,149,188,149,188,144,251,144"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,184,187,224"/>
+<area shape="poly" title=" " alt="" coords="265,165,179,187,178,181,264,160"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,249,179,274"/>
+<area shape="poly" title=" " alt="" coords="253,164,238,173,222,188,214,204,206,222,190,238,164,251,162,246,186,234,202,218,210,202,218,185,234,169,251,160"/>
+<area shape="poly" title=" " alt="" coords="740,324,595,260,597,256,742,319"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="485,327,647,353"/>
+<area shape="poly" title=" " alt="" coords="694,343,648,343,648,337,694,337"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="472,377,660,402"/>
+<area shape="poly" title=" " alt="" coords="714,358,623,379,622,374,713,353"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="499,427,633,467"/>
+<area shape="poly" title=" " alt="" coords="754,363,711,390,661,417,632,429,630,424,659,412,708,386,751,358"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="241,331,419,357"/>
+<area shape="poly" title=" " alt="" coords="471,344,419,345,419,340,471,339"/>
+<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="244,381,416,406"/>
+<area shape="poly" title=" " alt="" coords="496,358,387,383,386,378,495,353"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,434,424,459"/>
+<area shape="poly" title=" " alt="" coords="486,449,424,449,424,444,486,444"/>
 </map>
 </div>
 
@@ -1195,40 +1221,50 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph.png" border="0" usemap="#astabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph" alt=""/></div>
 <map name="astabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph" id="astabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph">
-<area shape="rect" title=" " alt="" coords="907,175,1036,200"/>
-<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="708,129,859,155"/>
-<area shape="poly" title=" " alt="" coords="904,174,836,157,838,152,905,169"/>
-<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="708,199,859,224"/>
-<area shape="poly" title=" " alt="" coords="893,200,859,204,858,199,892,195"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,80,660,105"/>
-<area shape="poly" title=" " alt="" coords="713,129,622,108,623,103,714,124"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,129,660,155"/>
-<area shape="poly" title=" " alt="" coords="694,145,660,145,660,139,694,139"/>
-<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="262,5,398,31"/>
-<area shape="poly" title=" " alt="" coords="481,126,470,119,453,100,446,80,438,62,422,44,397,31,400,27,426,40,443,59,451,78,458,97,474,115,484,121"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="247,55,413,80"/>
-<area shape="poly" title=" " alt="" coords="496,128,471,119,447,106,423,94,388,83,390,77,425,89,449,102,473,114,498,123"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="265,104,395,129"/>
-<area shape="poly" title=" " alt="" coords="458,133,395,126,396,121,459,128"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,153,421,179"/>
-<area shape="poly" title=" " alt="" coords="459,156,422,159,421,154,458,150"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,80,188,105"/>
-<area shape="poly" title=" " alt="" coords="251,111,188,105,188,99,251,106"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,129,179,155"/>
-<area shape="poly" title=" " alt="" coords="251,128,180,136,179,130,250,123"/>
-<area shape="poly" title=" " alt="" coords="729,197,606,157,608,152,731,192"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="485,199,647,224"/>
-<area shape="poly" title=" " alt="" coords="694,214,648,214,648,209,694,209"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="472,248,660,273"/>
-<area shape="poly" title=" " alt="" coords="714,230,623,251,622,245,713,224"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="499,298,633,338"/>
-<area shape="poly" title=" " alt="" coords="754,234,711,261,661,288,632,300,630,295,659,284,708,257,751,230"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="241,203,419,228"/>
-<area shape="poly" title=" " alt="" coords="471,216,419,216,419,211,471,210"/>
-<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="244,252,416,277"/>
-<area shape="poly" title=" " alt="" coords="496,230,387,255,386,249,495,225"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,305,424,331"/>
-<area shape="poly" title=" " alt="" coords="486,321,424,321,424,315,486,315"/>
+<area shape="rect" title=" " alt="" coords="907,282,1036,307"/>
+<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="708,209,859,234"/>
+<area shape="poly" title=" " alt="" coords="924,279,816,237,818,232,926,274"/>
+<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="708,327,859,353"/>
+<area shape="poly" title=" " alt="" coords="905,313,838,330,836,325,904,308"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="250,69,410,109"/>
+<area shape="poly" title=" " alt="" coords="742,206,659,173,528,136,410,108,411,103,530,130,661,168,743,201"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,183,660,209"/>
+<area shape="poly" title=" " alt="" coords="694,214,660,210,661,204,694,208"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,233,660,258"/>
+<area shape="poly" title=" " alt="" coords="694,234,661,238,660,232,694,229"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,69,187,109"/>
+<area shape="poly" title=" " alt="" coords="237,92,187,92,187,87,237,87"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,5,187,45"/>
+<area shape="poly" title=" " alt="" coords="242,68,169,48,171,43,244,63"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="262,183,398,209"/>
+<area shape="poly" title=" " alt="" coords="491,232,391,211,392,206,492,227"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="247,233,413,258"/>
+<area shape="poly" title=" " alt="" coords="458,248,413,248,413,243,458,243"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="265,134,395,159"/>
+<area shape="poly" title=" " alt="" coords="486,230,471,222,455,210,446,197,437,185,423,173,394,161,397,156,425,168,441,181,450,194,459,206,473,218,489,225"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,282,421,307"/>
+<area shape="poly" title=" " alt="" coords="492,263,392,285,391,279,491,258"/>
+<area shape="poly" title=" " alt="" coords="264,133,178,112,179,107,265,128"/>
+<area shape="poly" title=" " alt="" coords="251,132,234,123,218,107,209,91,201,75,186,59,167,48,169,43,190,55,206,72,214,89,222,104,238,119,253,128"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,134,188,159"/>
+<area shape="poly" title=" " alt="" coords="251,149,188,149,188,144,251,144"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,184,187,224"/>
+<area shape="poly" title=" " alt="" coords="265,165,179,187,178,181,264,160"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,249,179,274"/>
+<area shape="poly" title=" " alt="" coords="253,164,238,173,222,188,214,204,206,222,190,238,164,251,162,246,186,234,202,218,210,202,218,185,234,169,251,160"/>
+<area shape="poly" title=" " alt="" coords="740,324,595,260,597,256,742,319"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="485,327,647,353"/>
+<area shape="poly" title=" " alt="" coords="694,343,648,343,648,337,694,337"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="472,377,660,402"/>
+<area shape="poly" title=" " alt="" coords="714,358,623,379,622,374,713,353"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="499,427,633,467"/>
+<area shape="poly" title=" " alt="" coords="754,363,711,390,661,417,632,429,630,424,659,412,708,386,751,358"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="241,331,419,357"/>
+<area shape="poly" title=" " alt="" coords="471,344,419,345,419,340,471,339"/>
+<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="244,381,416,406"/>
+<area shape="poly" title=" " alt="" coords="496,358,387,383,386,378,495,353"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,434,424,459"/>
+<area shape="poly" title=" " alt="" coords="486,449,424,449,424,444,486,444"/>
 </map>
 </div>
 
@@ -1254,7 +1290,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00709">EULERS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00688">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00745">QUAT_FLOAT_OF_BFP</a>, <a class="el" href="stabilization_8c_source.html#l00301">stab_sp_rotate_f()</a>, and <a class="el" href="stabilization_8c_source.html#l00287">stab_sp_rotate_i()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__plane__pid_8c_source.html#l00102">stabilization_attitude_plane_pid_run()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1297,23 +1333,33 @@ Variables</h2></td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph.png" border="0" usemap="#astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph" alt=""/></div>
 <map name="astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph" id="astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph">
-<area shape="rect" title=" " alt="" coords="703,56,853,81"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="467,31,655,56"/>
-<area shape="poly" title=" " alt="" coords="688,61,655,57,655,52,689,56"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="467,80,655,105"/>
-<area shape="poly" title=" " alt="" coords="689,81,655,85,655,80,688,76"/>
-<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="259,5,395,31"/>
-<area shape="poly" title=" " alt="" coords="491,79,466,70,441,57,418,44,384,33,385,28,420,40,444,52,468,65,492,73"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="245,55,410,80"/>
-<area shape="poly" title=" " alt="" coords="452,84,410,79,411,74,453,78"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="262,104,393,129"/>
-<area shape="poly" title=" " alt="" coords="453,106,393,113,393,107,453,101"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="236,153,419,179"/>
-<area shape="poly" title=" " alt="" coords="512,112,419,143,376,156,375,151,418,138,510,107"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,80,188,105"/>
-<area shape="poly" title=" " alt="" coords="248,111,188,105,188,99,248,106"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,129,179,155"/>
-<area shape="poly" title=" " alt="" coords="249,128,180,136,179,130,248,123"/>
+<area shape="rect" title=" " alt="" coords="703,119,853,145"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="247,5,407,45"/>
+<area shape="poly" title=" " alt="" coords="709,119,407,47,408,42,710,113"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="467,169,655,194"/>
+<area shape="poly" title=" " alt="" coords="709,150,618,171,617,166,708,145"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="467,119,655,145"/>
+<area shape="poly" title=" " alt="" coords="689,135,655,135,655,129,689,129"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,89,187,129"/>
+<area shape="poly" title=" " alt="" coords="257,53,237,60,152,92,150,87,235,55,255,48"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,12,187,52"/>
+<area shape="poly" title=" " alt="" coords="233,31,188,32,187,27,233,25"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="259,70,395,95"/>
+<area shape="poly" title=" " alt="" coords="486,119,388,98,389,93,487,114"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="245,119,410,145"/>
+<area shape="poly" title=" " alt="" coords="453,135,410,135,410,129,453,129"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="262,218,393,243"/>
+<area shape="poly" title=" " alt="" coords="480,152,468,158,454,170,445,182,435,195,420,208,392,220,389,216,417,203,432,191,440,179,450,166,465,154,478,147"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="236,169,419,194"/>
+<area shape="poly" title=" " alt="" coords="487,150,389,171,388,166,486,145"/>
+<area shape="poly" title=" " alt="" coords="249,215,234,208,218,193,209,179,201,164,186,150,155,132,157,127,190,146,205,161,214,176,223,190,238,203,251,211"/>
+<area shape="poly" title=" " alt="" coords="248,217,234,207,221,191,213,175,208,143,204,111,198,95,186,79,171,65,152,54,155,50,174,61,190,76,202,93,209,110,213,142,218,174,225,188,238,203,251,213"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,161,188,186"/>
+<area shape="poly" title=" " alt="" coords="261,217,148,189,149,183,263,212"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,211,187,251"/>
+<area shape="poly" title=" " alt="" coords="248,233,188,233,188,228,248,228"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,275,179,301"/>
+<area shape="poly" title=" " alt="" coords="263,249,149,278,148,273,261,244"/>
 </map>
 </div>
 
@@ -1403,10 +1449,16 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="459,202,396,210,395,205,458,197"/>
 <area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,252,421,277"/>
 <area shape="poly" title=" " alt="" coords="493,205,473,212,449,227,425,242,389,254,387,249,423,237,447,222,471,208,491,200"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,179,188,204"/>
-<area shape="poly" title=" " alt="" coords="251,210,188,203,188,198,251,205"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,228,179,253"/>
-<area shape="poly" title=" " alt="" coords="251,227,180,234,179,229,250,221"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,81,188,107"/>
+<area shape="poly" title=" " alt="" coords="251,202,234,192,218,174,210,156,202,138,186,121,163,109,165,104,190,117,206,135,214,154,222,171,238,188,253,197"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,131,187,171"/>
+<area shape="poly" title=" " alt="" coords="268,202,235,193,169,174,170,169,237,187,270,196"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,195,187,235"/>
+<area shape="poly" title=" " alt="" coords="251,218,187,218,187,213,251,213"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,259,187,299"/>
+<area shape="poly" title=" " alt="" coords="266,234,237,242,166,262,165,257,235,237,265,229"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,324,179,349"/>
+<area shape="poly" title=" " alt="" coords="253,233,238,241,222,258,214,276,206,295,190,313,166,326,163,322,186,309,202,292,209,274,217,255,234,237,251,228"/>
 <area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,301,424,327"/>
 <area shape="poly" title=" " alt="" coords="486,310,424,312,424,307,486,304"/>
 </map>
@@ -1544,27 +1596,33 @@ Variables</h2></td></tr>
 <div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a933a2abf3187537a85e675731038606c_icgraph.png" border="0" usemap="#astabilization_8c_a933a2abf3187537a85e675731038606c_icgraph" alt=""/></div>
 <map name="astabilization_8c_a933a2abf3187537a85e675731038606c_icgraph" id="astabilization_8c_a933a2abf3187537a85e675731038606c_icgraph">
-<area shape="rect" title=" " alt="" coords="708,149,847,175"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,100,660,125"/>
-<area shape="poly" title=" " alt="" coords="709,149,621,128,622,123,710,144"/>
-<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="472,149,660,175"/>
-<area shape="poly" title=" " alt="" coords="694,165,660,165,660,159,694,159"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="499,199,633,239"/>
-<area shape="poly" title=" " alt="" coords="717,181,634,204,632,199,716,176"/>
-<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="262,5,398,31"/>
-<area shape="poly" title=" " alt="" coords="530,96,480,70,423,44,387,33,389,28,425,40,482,65,532,91"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="247,55,413,80"/>
-<area shape="poly" title=" " alt="" coords="485,100,396,83,397,77,486,95"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="265,104,395,129"/>
-<area shape="poly" title=" " alt="" coords="458,117,396,118,396,113,458,112"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,153,421,179"/>
-<area shape="poly" title=" " alt="" coords="496,131,387,156,386,151,495,126"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,80,188,105"/>
-<area shape="poly" title=" " alt="" coords="251,111,188,105,188,99,251,106"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,129,179,155"/>
-<area shape="poly" title=" " alt="" coords="251,128,180,136,179,130,250,123"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,207,424,232"/>
-<area shape="poly" title=" " alt="" coords="486,222,424,222,424,217,486,217"/>
+<area shape="rect" title=" " alt="" coords="708,172,847,197"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="472,123,660,148"/>
+<area shape="poly" title=" " alt="" coords="709,171,621,151,622,145,710,166"/>
+<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="472,172,660,197"/>
+<area shape="poly" title=" " alt="" coords="694,187,660,187,660,182,694,182"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="499,222,633,262"/>
+<area shape="poly" title=" " alt="" coords="717,204,634,227,632,221,716,198"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="262,28,398,53"/>
+<area shape="poly" title=" " alt="" coords="530,118,480,92,423,67,387,56,389,51,425,62,482,87,532,114"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="247,77,413,103"/>
+<area shape="poly" title=" " alt="" coords="485,123,396,105,397,100,486,117"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="265,127,395,152"/>
+<area shape="poly" title=" " alt="" coords="458,140,396,141,396,136,458,134"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="239,176,421,201"/>
+<area shape="poly" title=" " alt="" coords="496,154,387,179,386,173,495,149"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,31"/>
+<area shape="poly" title=" " alt="" coords="251,126,234,116,218,98,210,80,202,62,186,45,163,33,165,28,190,41,206,59,214,78,222,95,238,112,253,121"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,55,187,95"/>
+<area shape="poly" title=" " alt="" coords="268,126,235,117,169,98,170,93,237,111,270,120"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,119,187,159"/>
+<area shape="poly" title=" " alt="" coords="251,142,187,142,187,137,251,137"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,183,187,223"/>
+<area shape="poly" title=" " alt="" coords="266,158,237,166,166,186,165,181,235,161,265,153"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,248,179,273"/>
+<area shape="poly" title=" " alt="" coords="253,157,238,165,222,182,214,200,206,219,190,237,166,250,163,246,186,233,202,216,209,198,217,179,234,161,251,152"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="236,229,424,255"/>
+<area shape="poly" title=" " alt="" coords="486,245,424,245,424,239,486,239"/>
 </map>
 </div>
 
@@ -1598,24 +1656,30 @@ Variables</h2></td></tr>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a838406e69a08c86fb7f1427aaac5629f_icgraph.png" border="0" usemap="#astabilization_8c_a838406e69a08c86fb7f1427aaac5629f_icgraph" alt=""/></div>
 <map name="astabilization_8c_a838406e69a08c86fb7f1427aaac5629f_icgraph" id="astabilization_8c_a838406e69a08c86fb7f1427aaac5629f_icgraph">
-<area shape="rect" title=" " alt="" coords="663,70,807,95"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="256,5,389,45"/>
-<area shape="poly" title=" " alt="" coords="680,69,614,53,495,38,389,30,390,25,496,33,615,48,681,64"/>
+<area shape="rect" title=" " alt="" coords="663,71,807,96"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="256,6,389,46"/>
+<area shape="poly" title=" " alt="" coords="680,69,614,54,495,39,389,31,390,26,496,33,615,49,681,64"/>
 <area shape="rect" href="stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="467,63,600,103"/>
-<area shape="poly" title=" " alt="" coords="649,85,600,85,600,80,649,80"/>
-<area shape="rect" href="stabilization__rate_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title=" " alt="" coords="452,127,615,153"/>
-<area shape="poly" title=" " alt="" coords="677,102,579,130,578,125,676,97"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,13,193,38"/>
-<area shape="poly" title=" " alt="" coords="242,28,193,28,193,23,242,23"/>
-<area shape="poly" title=" " alt="" coords="453,64,389,46,390,41,454,58"/>
-<area shape="rect" href="stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="241,70,404,95"/>
-<area shape="poly" title=" " alt="" coords="453,85,404,85,404,80,453,80"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="257,127,388,153"/>
-<area shape="poly" title=" " alt="" coords="438,143,388,143,388,137,438,137"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="8,102,191,127"/>
-<area shape="poly" title=" " alt="" coords="243,134,191,128,191,122,244,128"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="17,151,182,177"/>
-<area shape="poly" title=" " alt="" coords="244,151,182,158,182,152,243,146"/>
+<area shape="poly" title=" " alt="" coords="649,86,600,86,600,81,649,81"/>
+<area shape="rect" href="stabilization__rate_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title=" " alt="" coords="452,141,615,167"/>
+<area shape="poly" title=" " alt="" coords="685,103,571,144,569,139,684,98"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,5,193,31"/>
+<area shape="poly" title=" " alt="" coords="242,26,193,24,193,19,242,20"/>
+<area shape="poly" title=" " alt="" coords="453,64,389,47,390,41,454,59"/>
+<area shape="rect" href="stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="241,71,404,96"/>
+<area shape="poly" title=" " alt="" coords="453,86,404,86,404,81,453,81"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="257,169,388,195"/>
+<area shape="poly" title=" " alt="" coords="438,169,388,176,388,171,438,164"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="8,55,191,80"/>
+<area shape="poly" title=" " alt="" coords="294,163,248,128,192,95,158,83,160,78,194,90,251,124,298,158"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="9,105,190,145"/>
+<area shape="poly" title=" " alt="" coords="258,168,177,147,178,142,260,163"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="9,169,190,209"/>
+<area shape="poly" title=" " alt="" coords="243,187,190,189,190,183,243,182"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="9,233,190,273"/>
+<area shape="poly" title=" " alt="" coords="269,201,164,235,162,230,268,196"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="17,297,182,323"/>
+<area shape="poly" title=" " alt="" coords="301,206,254,247,195,287,162,300,160,295,192,282,251,243,298,202"/>
 </map>
 </div>
 
@@ -1858,11 +1922,17 @@ Variables</h2></td></tr>
 <div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a2a89b96d9e4fb36e975dccd515db474b_icgraph.png" border="0" usemap="#astabilization_8c_a2a89b96d9e4fb36e975dccd515db474b_icgraph" alt=""/></div>
 <map name="astabilization_8c_a2a89b96d9e4fb36e975dccd515db474b_icgraph" id="astabilization_8c_a2a89b96d9e4fb36e975dccd515db474b_icgraph">
-<area shape="rect" title=" " alt="" coords="443,5,603,45"/>
-<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="248,5,395,45"/>
-<area shape="poly" title=" " alt="" coords="429,28,395,28,395,23,429,23"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,13,200,38"/>
-<area shape="poly" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
+<area shape="rect" title=" " alt="" coords="443,87,603,127"/>
+<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="248,87,395,127"/>
+<area shape="poly" title=" " alt="" coords="429,110,395,110,395,105,429,105"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="274,83,199,46,160,33,162,28,201,41,277,78"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="12,55,193,95"/>
+<area shape="poly" title=" " alt="" coords="233,97,193,91,194,86,234,92"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="12,119,193,159"/>
+<area shape="poly" title=" " alt="" coords="234,123,194,129,193,123,233,117"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="12,183,193,223"/>
+<area shape="poly" title=" " alt="" coords="276,136,201,174,170,186,168,181,199,169,273,132"/>
 </map>
 </div>
 
@@ -1910,13 +1980,19 @@ Variables</h2></td></tr>
 <div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph.png" border="0" usemap="#astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph" alt=""/></div>
 <map name="astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph" id="astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph">
-<area shape="rect" title="Command filter for vibrating airframes." alt="" coords="415,23,553,63"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="236,31,367,56"/>
-<area shape="poly" title=" " alt="" coords="401,46,367,46,367,41,401,41"/>
+<area shape="rect" title="Command filter for vibrating airframes." alt="" coords="415,119,553,159"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="236,127,367,152"/>
+<area shape="poly" title=" " alt="" coords="401,142,367,142,367,137,401,137"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,31"/>
-<area shape="poly" title=" " alt="" coords="222,36,188,32,188,27,222,31"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,55,179,80"/>
-<area shape="poly" title=" " alt="" coords="222,55,180,60,179,55,222,50"/>
+<area shape="poly" title=" " alt="" coords="277,118,237,81,187,46,157,33,159,28,189,41,241,77,281,114"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,55,187,95"/>
+<area shape="poly" title=" " alt="" coords="246,125,161,98,162,93,248,120"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,119,187,159"/>
+<area shape="poly" title=" " alt="" coords="222,142,188,142,188,137,222,137"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,183,187,223"/>
+<area shape="poly" title=" " alt="" coords="248,159,162,186,161,181,246,154"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,248,179,273"/>
+<area shape="poly" title=" " alt="" coords="281,164,241,202,189,238,159,250,157,245,187,233,237,198,277,160"/>
 </map>
 </div>
 
@@ -2143,7 +2219,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="stabilization_8h_source.html#l00104">Stabilization::att_submode</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="stabilization_8h_source.html#l00103">Stabilization::mode</a>, <a class="el" href="stabilization_8h_source.html#l00105">Stabilization::rc_in</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8h_source.html#l00046">STABILIZATION_ATT_SUBMODE_CARE_FREE</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00131">stabilization_attitude_enter()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00207">stabilization_attitude_reset_care_free_heading()</a>, <a class="el" href="stabilization_8c_source.html#l00132">stabilization_attitude_reset_rc()</a>, <a class="el" href="stabilization__direct_8c_source.html#l00052">stabilization_direct_enter()</a>, <a class="el" href="stabilization_8h_source.html#l00041">STABILIZATION_MODE_ATTITUDE</a>, <a class="el" href="stabilization_8h_source.html#l00039">STABILIZATION_MODE_DIRECT</a>, <a class="el" href="stabilization_8h_source.html#l00038">STABILIZATION_MODE_NONE</a>, <a class="el" href="stabilization_8h_source.html#l00040">STABILIZATION_MODE_RATE</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00113">stabilization_rate_enter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00145">control_mixing_heewing_attitude_direct_enter()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00173">control_mixing_heewing_attitude_plane_enter()</a>, and <a class="el" href="control__mixing__heewing_8c_source.html#l00225">control_mixing_heewing_nav_enter()</a>.</p>
 <div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-34-summary" class="dynsummary" style="display:block;">
@@ -2275,9 +2351,15 @@ Variables</h2></td></tr>
 <div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a163ba30896a625790e1b83f72f02d2a1_icgraph.png" border="0" usemap="#astabilization_8c_a163ba30896a625790e1b83f72f02d2a1_icgraph" alt=""/></div>
 <map name="astabilization_8c_a163ba30896a625790e1b83f72f02d2a1_icgraph" id="astabilization_8c_a163ba30896a625790e1b83f72f02d2a1_icgraph">
-<area shape="rect" title="Check mode change." alt="" coords="248,5,395,45"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,13,200,38"/>
-<area shape="poly" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
+<area shape="rect" title="Check mode change." alt="" coords="248,87,395,127"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="274,83,199,46,160,33,162,28,201,41,277,78"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="12,55,193,95"/>
+<area shape="poly" title=" " alt="" coords="233,97,193,91,194,86,234,92"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="12,119,193,159"/>
+<area shape="poly" title=" " alt="" coords="234,123,194,129,193,123,233,117"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="12,183,193,223"/>
+<area shape="poly" title=" " alt="" coords="276,136,201,174,170,186,168,181,199,169,273,132"/>
 </map>
 </div>
 
@@ -2336,7 +2418,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="stabilization_8h_source.html#l00104">Stabilization::att_submode</a>, <a class="el" href="stabilization_8h_source.html#l00103">Stabilization::mode</a>, <a class="el" href="structStabilizationSetpoint.html#a632c80c243fb808a15e136573cf70a91">StabilizationSetpoint::sp</a>, <a class="el" href="stabilization_8h_source.html#l00107">Stabilization::sp</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8h_source.html#l00047">STABILIZATION_ATT_SUBMODE_FORWARD</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>, <a class="el" href="stabilization__direct_8c_source.html#l00057">stabilization_direct_run()</a>, <a class="el" href="stabilization_8c_source.html#l00314">stabilization_filter_commands()</a>, <a class="el" href="stabilization_8h_source.html#l00041">STABILIZATION_MODE_ATTITUDE</a>, <a class="el" href="stabilization_8h_source.html#l00039">STABILIZATION_MODE_DIRECT</a>, <a class="el" href="stabilization_8h_source.html#l00040">STABILIZATION_MODE_RATE</a>, <a class="el" href="stabilization__rate_8c_source.html#l00118">stabilization_rate_run()</a>, <a class="el" href="stabilization_8c_source.html#l00229">transition_run()</a>, <a class="el" href="stabilization_8c_source.html#l00221">TRANSITION_TO_FORWARD</a>, and <a class="el" href="stabilization_8c_source.html#l00220">TRANSITION_TO_HOVER</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00105">guidance_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00105">guidance_module_run()</a>.</p>
 <div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-36-summary" class="dynsummary" style="display:block;">
@@ -2470,11 +2552,17 @@ Variables</h2></td></tr>
 <div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a6340487673196d115af96fafd83a6d5e_icgraph.png" border="0" usemap="#astabilization_8c_a6340487673196d115af96fafd83a6d5e_icgraph" alt=""/></div>
 <map name="astabilization_8c_a6340487673196d115af96fafd83a6d5e_icgraph" id="astabilization_8c_a6340487673196d115af96fafd83a6d5e_icgraph">
-<area shape="rect" title="Call default stabilization control." alt="" coords="236,31,367,56"/>
+<area shape="rect" title="Call default stabilization control." alt="" coords="236,127,367,152"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,31"/>
-<area shape="poly" title=" " alt="" coords="222,36,188,32,188,27,222,31"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,55,179,80"/>
-<area shape="poly" title=" " alt="" coords="222,55,180,60,179,55,222,50"/>
+<area shape="poly" title=" " alt="" coords="277,118,237,81,187,46,157,33,159,28,189,41,241,77,281,114"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,55,187,95"/>
+<area shape="poly" title=" " alt="" coords="246,125,161,98,162,93,248,120"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,119,187,159"/>
+<area shape="poly" title=" " alt="" coords="222,142,188,142,188,137,222,137"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,183,187,223"/>
+<area shape="poly" title=" " alt="" coords="248,159,162,186,161,181,246,154"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,248,179,273"/>
+<area shape="poly" title=" " alt="" coords="281,164,241,202,189,238,159,250,157,245,187,233,237,198,277,160"/>
 </map>
 </div>
 
@@ -2666,7 +2754,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784">ThrustSetpoint::format</a>, <a class="el" href="structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82">ThrustSetpoint::sp</a>, <a class="el" href="stabilization_8h_source.html#l00084">ThrustSetpoint::THRUST_SP</a>, <a class="el" href="stabilization_8h_source.html#l00088">ThrustSetpoint::THRUST_SP_INT</a>, and <a class="el" href="structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb">ThrustSetpoint::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00436">guidance_hybrid_vertical()</a>, <a class="el" href="guidance__indi_8c_source.html#l00201">guidance_indi_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, <a class="el" href="guidance__pid_8c_source.html#l00321">guidance_pid_v_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00300">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00338">guidance_v_guided_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00221">guidance_v_run()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00071">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00436">guidance_hybrid_vertical()</a>, <a class="el" href="guidance__indi_8c_source.html#l00201">guidance_indi_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, <a class="el" href="guidance__pid_8c_source.html#l00321">guidance_pid_v_run()</a>, <a class="el" href="guidance__plane_8c_source.html#l00253">guidance_plane_thrust_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00300">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00338">guidance_v_guided_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00221">guidance_v_run()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00071">vertical_ctrl_module_run()</a>.</p>
 <div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-39-summary" class="dynsummary" style="display:block;">
@@ -2674,47 +2762,57 @@ Variables</h2></td></tr>
 <div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_ad9100967a3aba7417a3e6f0ed2111dac_icgraph.png" border="0" usemap="#astabilization_8c_ad9100967a3aba7417a3e6f0ed2111dac_icgraph" alt=""/></div>
 <map name="astabilization_8c_ad9100967a3aba7417a3e6f0ed2111dac_icgraph" id="astabilization_8c_ad9100967a3aba7417a3e6f0ed2111dac_icgraph">
-<area shape="rect" title=" " alt="" coords="951,278,1101,304"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,64,188,89"/>
-<area shape="poly" title=" " alt="" coords="1015,266,1001,225,978,176,945,128,925,107,901,91,852,66,801,46,748,31,693,20,583,9,473,10,370,20,278,35,141,66,140,61,277,29,370,15,473,5,583,4,694,15,749,26,803,41,855,61,904,86,928,103,949,124,983,173,1006,223,1020,264"/>
-<area shape="rect" href="guidance__hybrid_8c.html#a9749e33700739af219a8ca6d86bf172a" title="Take a thrust command as input and returns the modified value according to the current flight regime." alt="" coords="487,253,672,278"/>
-<area shape="poly" title=" " alt="" coords="937,289,672,274,672,268,937,283"/>
-<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="741,353,881,378"/>
-<area shape="poly" title=" " alt="" coords="985,312,904,343,862,356,861,351,902,338,983,307"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="729,402,894,428"/>
-<area shape="poly" title=" " alt="" coords="1005,316,960,356,904,393,875,405,874,400,901,389,957,351,1001,312"/>
-<area shape="rect" href="guidance__pid_8c.html#a48a4b1eeaa950f3bcb531ea266c0708d" title=" " alt="" coords="736,304,887,329"/>
-<area shape="poly" title=" " alt="" coords="938,304,887,310,886,305,937,299"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a36be79d9f4bcf491d74b2d2aff08ae8f" title="Set guidance setpoint from NAV and run hover loop." alt="" coords="497,152,662,177"/>
-<area shape="poly" title=" " alt="" coords="1001,270,958,232,931,214,902,199,841,180,778,169,717,164,662,163,662,158,717,159,779,164,842,175,904,194,933,209,961,228,1005,266"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#af7b4baa154425fe61d4807656a01ab06" title="Guidance vertical run functions." alt="" coords="275,138,399,164"/>
-<area shape="poly" title=" " alt="" coords="964,278,902,263,786,241,694,227,603,213,486,191,384,166,386,161,487,186,604,208,695,222,786,236,903,258,965,272"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#ab70c96d9d4fe5ee6f1329e048b22b1f5" title="Run GUIDED mode control." alt="" coords="724,101,899,126"/>
-<area shape="poly" title=" " alt="" coords="1008,268,965,208,935,176,901,148,862,129,865,124,904,144,939,172,969,205,1012,265"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="720,452,903,477"/>
-<area shape="poly" title=" " alt="" coords="1013,318,970,380,940,414,904,443,881,454,878,449,901,438,936,410,966,377,1009,315"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#ae125cdea458cff0ab88d0689ef61e30d" title=" " alt="" coords="720,501,903,526"/>
-<area shape="poly" title=" " alt="" coords="1019,318,1003,357,979,404,946,451,904,492,884,503,881,499,901,488,942,448,974,401,998,354,1014,316"/>
-<area shape="rect" href="guidance__hybrid_8c.html#acb27c7c41c801105e4dd502674199b3b" title=" " alt="" coords="251,238,423,278"/>
-<area shape="poly" title=" " alt="" coords="473,265,423,263,424,258,473,260"/>
-<area shape="rect" href="guidance__hybrid_8c.html#afcbeea1c55f94314b06f65e7de969cbf" title=" " alt="" coords="236,302,439,328"/>
-<area shape="poly" title=" " alt="" coords="504,284,401,305,400,300,503,279"/>
-<area shape="rect" href="guidance__hybrid_8c.html#abb3b4585894a3f27117e1ab6b864d148" title=" " alt="" coords="251,352,423,392"/>
-<area shape="poly" title=" " alt="" coords="501,286,488,292,474,304,465,316,455,329,440,341,414,355,411,350,437,337,451,325,460,313,470,300,485,288,498,281"/>
-<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="487,417,671,442"/>
-<area shape="poly" title=" " alt="" coords="752,385,673,407,627,420,626,414,671,402,751,380"/>
-<area shape="rect" href="guidance__pid_8c.html#a37494a4f6666280aa2ff1cada89aecc6" title=" " alt="" coords="489,302,670,328"/>
-<area shape="poly" title=" " alt="" coords="722,319,670,318,670,313,722,313"/>
-<area shape="rect" href="guidance__pid_8c.html#a7ced9c754cb5d0f65e5745ea29bdd0c9" title=" " alt="" coords="504,352,655,392"/>
-<area shape="poly" title=" " alt="" coords="746,335,655,357,654,352,744,330"/>
-<area shape="poly" title=" " alt="" coords="475,318,439,318,439,312,475,312"/>
-<area shape="poly" title=" " alt="" coords="490,375,423,375,423,370,490,370"/>
-<area shape="poly" title=" " alt="" coords="483,162,399,157,400,152,483,156"/>
-<area shape="poly" title=" " alt="" coords="281,137,138,92,139,87,283,132"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,138,179,164"/>
-<area shape="poly" title=" " alt="" coords="262,154,180,154,180,148,262,148"/>
-<area shape="poly" title=" " alt="" coords="740,132,639,154,638,149,738,127"/>
-<area shape="poly" title=" " alt="" coords="711,124,487,142,400,149,399,143,486,136,710,119"/>
+<area shape="rect" title=" " alt="" coords="951,325,1101,351"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,48,188,73"/>
+<area shape="poly" title=" " alt="" coords="1017,312,1004,266,982,209,948,153,927,129,901,108,854,81,805,59,753,42,700,28,592,12,484,8,381,13,288,24,148,51,147,45,287,19,381,8,484,3,592,7,701,23,755,37,807,54,857,77,904,104,930,125,953,150,987,207,1009,264,1022,311"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,213,187,253"/>
+<area shape="poly" title=" " alt="" coords="965,325,902,311,703,283,504,263,188,240,188,234,505,257,704,278,903,306,966,319"/>
+<area shape="rect" href="guidance__hybrid_8c.html#a9749e33700739af219a8ca6d86bf172a" title="Take a thrust command as input and returns the modified value according to the current flight regime." alt="" coords="487,352,672,377"/>
+<area shape="poly" title=" " alt="" coords="937,346,672,362,672,357,937,341"/>
+<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="741,451,881,476"/>
+<area shape="poly" title=" " alt="" coords="1005,363,960,402,904,440,873,453,871,448,901,436,957,398,1001,359"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="729,500,894,525"/>
+<area shape="poly" title=" " alt="" coords="1013,364,970,427,940,461,904,490,878,502,876,498,901,485,936,457,966,424,1009,361"/>
+<area shape="rect" href="guidance__pid_8c.html#a48a4b1eeaa950f3bcb531ea266c0708d" title=" " alt="" coords="736,401,887,427"/>
+<area shape="poly" title=" " alt="" coords="978,358,904,385,849,404,848,399,902,380,976,353"/>
+<area shape="rect" href="guidance__plane_8c.html#ad920ffb608668c29ed7b9450b3b8a69b" title="run vertical control loop for position and speed control" alt="" coords="253,281,422,321"/>
+<area shape="poly" title=" " alt="" coords="937,336,422,308,423,303,937,331"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a36be79d9f4bcf491d74b2d2aff08ae8f" title="Set guidance setpoint from NAV and run hover loop." alt="" coords="497,148,662,173"/>
+<area shape="poly" title=" " alt="" coords="1011,315,993,284,969,249,938,215,901,188,843,166,780,154,718,151,662,153,662,147,718,145,781,149,844,161,904,184,942,211,973,246,998,281,1015,312"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#af7b4baa154425fe61d4807656a01ab06" title="Guidance vertical run functions." alt="" coords="275,153,399,179"/>
+<area shape="poly" title=" " alt="" coords="1014,313,999,275,975,230,943,186,923,167,901,151,868,134,833,121,759,104,683,99,607,103,536,113,471,127,374,156,372,151,470,122,535,108,607,98,683,94,759,99,834,116,870,129,904,147,927,163,947,182,980,227,1004,273,1019,311"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#ab70c96d9d4fe5ee6f1329e048b22b1f5" title="Run GUIDED mode control." alt="" coords="724,199,899,224"/>
+<area shape="poly" title=" " alt="" coords="999,318,955,281,901,246,856,227,858,222,904,241,958,277,1002,314"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="720,549,903,575"/>
+<area shape="poly" title=" " alt="" coords="1019,365,1003,404,979,451,946,499,904,540,884,552,881,547,901,536,942,496,974,449,998,402,1014,363"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#ae125cdea458cff0ab88d0689ef61e30d" title=" " alt="" coords="720,599,903,624"/>
+<area shape="poly" title=" " alt="" coords="1022,365,1009,413,986,474,952,536,930,565,904,590,886,601,883,596,901,585,926,561,947,533,981,472,1004,412,1017,364"/>
+<area shape="rect" href="guidance__hybrid_8c.html#acb27c7c41c801105e4dd502674199b3b" title=" " alt="" coords="251,345,423,385"/>
+<area shape="poly" title=" " alt="" coords="473,367,423,367,423,362,473,362"/>
+<area shape="rect" href="guidance__hybrid_8c.html#afcbeea1c55f94314b06f65e7de969cbf" title=" " alt="" coords="236,409,439,435"/>
+<area shape="poly" title=" " alt="" coords="513,383,392,412,391,407,511,378"/>
+<area shape="rect" href="guidance__hybrid_8c.html#abb3b4585894a3f27117e1ab6b864d148" title=" " alt="" coords="251,459,423,499"/>
+<area shape="poly" title=" " alt="" coords="499,385,488,391,473,404,465,418,456,433,440,448,415,462,413,457,437,444,452,430,460,416,469,401,485,387,496,380"/>
+<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="487,516,671,541"/>
+<area shape="poly" title=" " alt="" coords="748,482,721,490,673,506,629,519,627,514,671,501,719,485,746,477"/>
+<area shape="rect" href="guidance__pid_8c.html#a37494a4f6666280aa2ff1cada89aecc6" title=" " alt="" coords="489,401,670,427"/>
+<area shape="poly" title=" " alt="" coords="722,417,670,417,670,411,722,411"/>
+<area shape="rect" href="guidance__pid_8c.html#a7ced9c754cb5d0f65e5745ea29bdd0c9" title=" " alt="" coords="504,451,655,491"/>
+<area shape="poly" title=" " alt="" coords="747,433,656,455,654,450,745,428"/>
+<area shape="poly" title=" " alt="" coords="475,420,439,421,439,416,475,415"/>
+<area shape="poly" title=" " alt="" coords="490,477,424,479,423,474,490,472"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,278,187,318"/>
+<area shape="poly" title=" " alt="" coords="239,302,187,302,187,296,239,297"/>
+<area shape="poly" title=" " alt="" coords="483,166,399,167,399,162,483,160"/>
+<area shape="poly" title=" " alt="" coords="303,148,250,117,187,87,154,76,155,71,189,82,252,113,306,144"/>
+<area shape="poly" title=" " alt="" coords="278,185,171,215,169,210,277,180"/>
+<area shape="poly" title=" " alt="" coords="310,189,256,228,189,267,159,280,157,276,187,262,253,223,307,185"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,147,187,187"/>
+<area shape="poly" title=" " alt="" coords="262,169,188,170,188,164,262,164"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,97,179,123"/>
+<area shape="poly" title=" " alt="" coords="268,153,152,125,153,120,269,148"/>
+<area shape="poly" title=" " alt="" coords="738,198,638,176,639,171,740,193"/>
+<area shape="poly" title=" " alt="" coords="710,207,486,187,399,177,400,172,487,182,711,202"/>
 </map>
 </div>
 
@@ -2934,7 +3032,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00436">guidance_hybrid_vertical()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>, <a class="el" href="stabilization__direct_8c_source.html#l00057">stabilization_direct_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00520">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00118">stabilization_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00436">guidance_hybrid_vertical()</a>, <a class="el" href="stabilization__attitude__plane__pid_8c_source.html#l00102">stabilization_attitude_plane_pid_run()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>, <a class="el" href="stabilization__direct_8c_source.html#l00057">stabilization_direct_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00520">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00118">stabilization_rate_run()</a>.</p>
 <div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-41-summary" class="dynsummary" style="display:block;">
@@ -2942,45 +3040,55 @@ Variables</h2></td></tr>
 <div id="dynsection-41-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph.png" border="0" usemap="#astabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph" alt=""/></div>
 <map name="astabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph" id="astabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph">
-<area shape="rect" title=" " alt="" coords="728,259,861,285"/>
+<area shape="rect" title=" " alt="" coords="728,291,861,317"/>
 <area shape="rect" href="guidance__hybrid_8c.html#a9749e33700739af219a8ca6d86bf172a" title="Take a thrust command as input and returns the modified value according to the current flight regime." alt="" coords="493,99,679,125"/>
-<area shape="poly" title=" " alt="" coords="769,252,678,174,607,127,610,122,682,170,772,248"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="492,185,680,210"/>
-<area shape="poly" title=" " alt="" coords="755,256,679,224,642,213,643,207,681,219,757,251"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="492,234,680,259"/>
-<area shape="poly" title=" " alt="" coords="714,265,680,261,681,255,715,260"/>
-<area shape="rect" href="stabilization__direct_8c.html#af43c431cfa3e85865f1adb9ccde42403" title=" " alt="" coords="499,283,673,309"/>
-<area shape="poly" title=" " alt="" coords="714,284,674,289,673,283,714,279"/>
-<area shape="rect" href="stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="519,383,653,423"/>
-<area shape="poly" title=" " alt="" coords="774,297,733,334,681,372,654,385,651,380,679,367,729,330,770,293"/>
-<area shape="rect" href="stabilization__rate_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title=" " alt="" coords="505,333,667,358"/>
-<area shape="poly" title=" " alt="" coords="755,293,681,323,639,335,638,330,679,317,753,288"/>
+<area shape="poly" title=" " alt="" coords="771,283,729,238,678,187,603,127,607,123,682,183,733,234,775,279"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="263,184,423,224"/>
+<area shape="poly" title=" " alt="" coords="767,285,728,256,679,232,613,215,546,205,481,202,423,202,423,196,481,196,546,200,615,210,681,227,730,251,771,280"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="492,390,680,415"/>
+<area shape="poly" title=" " alt="" coords="767,327,728,354,681,380,646,392,644,387,679,375,725,350,764,323"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="492,341,680,366"/>
+<area shape="poly" title=" " alt="" coords="728,322,641,343,640,338,726,317"/>
+<area shape="rect" href="stabilization__direct_8c.html#af43c431cfa3e85865f1adb9ccde42403" title=" " alt="" coords="499,291,673,317"/>
+<area shape="poly" title=" " alt="" coords="714,307,674,307,674,301,714,301"/>
+<area shape="rect" href="stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="519,447,653,487"/>
+<area shape="poly" title=" " alt="" coords="778,330,737,379,711,405,681,429,646,449,643,444,679,424,707,401,733,375,774,326"/>
+<area shape="rect" href="stabilization__rate_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title=" " alt="" coords="505,242,667,267"/>
+<area shape="poly" title=" " alt="" coords="726,291,640,270,641,265,728,286"/>
 <area shape="rect" href="guidance__hybrid_8c.html#acb27c7c41c801105e4dd502674199b3b" title=" " alt="" coords="257,5,429,45"/>
 <area shape="poly" title=" " alt="" coords="540,97,443,60,408,48,410,43,445,55,542,92"/>
 <area shape="rect" href="guidance__hybrid_8c.html#afcbeea1c55f94314b06f65e7de969cbf" title=" " alt="" coords="241,70,444,95"/>
 <area shape="poly" title=" " alt="" coords="479,102,444,98,445,92,480,97"/>
 <area shape="rect" href="guidance__hybrid_8c.html#abb3b4585894a3f27117e1ab6b864d148" title=" " alt="" coords="257,120,429,160"/>
 <area shape="poly" title=" " alt="" coords="480,127,429,133,428,127,479,122"/>
-<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="275,185,411,210"/>
-<area shape="poly" title=" " alt="" coords="509,234,406,213,407,207,510,229"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="260,234,425,259"/>
-<area shape="poly" title=" " alt="" coords="479,249,426,249,426,244,479,244"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="277,333,408,358"/>
-<area shape="poly" title=" " alt="" coords="506,267,493,273,479,285,470,297,461,310,445,322,409,337,407,332,443,318,457,306,466,294,475,281,491,268,503,262"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="251,283,434,309"/>
-<area shape="poly" title=" " alt="" coords="510,265,407,286,406,281,509,259"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="8,287,191,313"/>
-<area shape="poly" title=" " alt="" coords="263,333,168,315,169,310,264,328"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="17,337,182,362"/>
-<area shape="poly" title=" " alt="" coords="263,349,182,351,182,345,263,344"/>
-<area shape="poly" title=" " alt="" coords="510,314,407,335,406,330,509,309"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="276,383,409,423"/>
-<area shape="poly" title=" " alt="" coords="505,405,410,405,410,400,505,400"/>
-<area shape="rect" href="stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="261,447,424,473"/>
-<area shape="poly" title=" " alt="" coords="506,424,398,450,397,445,505,419"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,390,193,415"/>
-<area shape="poly" title=" " alt="" coords="262,405,193,405,193,400,262,400"/>
-<area shape="poly" title=" " alt="" coords="491,348,408,348,408,343,491,343"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="9,120,190,160"/>
+<area shape="poly" title=" " alt="" coords="252,183,175,163,177,157,254,178"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="9,184,190,224"/>
+<area shape="poly" title=" " alt="" coords="249,207,190,207,190,201,249,201"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="275,298,411,323"/>
+<area shape="poly" title=" " alt="" coords="499,341,410,325,411,320,500,336"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="260,347,425,373"/>
+<area shape="poly" title=" " alt="" coords="479,359,426,360,426,355,478,354"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="277,249,408,274"/>
+<area shape="poly" title=" " alt="" coords="509,339,491,330,476,319,466,308,457,298,443,288,407,274,409,269,445,283,460,294,470,305,479,315,493,326,511,334"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="251,397,434,422"/>
+<area shape="poly" title=" " alt="" coords="517,372,399,399,398,394,516,367"/>
+<area shape="poly" title=" " alt="" coords="263,250,240,238,223,222,215,206,207,190,192,174,172,162,174,158,195,170,211,187,219,203,228,219,243,234,266,245"/>
+<area shape="poly" title=" " alt="" coords="274,248,184,227,185,221,275,243"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="8,249,191,274"/>
+<area shape="poly" title=" " alt="" coords="263,264,191,264,191,259,263,259"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="9,299,190,339"/>
+<area shape="poly" title=" " alt="" coords="275,280,185,301,184,296,274,275"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="17,363,182,389"/>
+<area shape="poly" title=" " alt="" coords="266,276,243,288,228,303,220,319,211,336,195,353,170,366,167,361,192,349,207,333,215,317,223,300,240,283,263,271"/>
+<area shape="poly" title=" " alt="" coords="500,292,408,275,409,270,500,286"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="276,447,409,487"/>
+<area shape="poly" title=" " alt="" coords="505,469,410,469,410,464,505,464"/>
+<area shape="rect" href="stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="261,511,424,537"/>
+<area shape="poly" title=" " alt="" coords="506,488,398,514,397,509,505,483"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,454,193,479"/>
+<area shape="poly" title=" " alt="" coords="262,469,193,469,193,464,262,464"/>
+<area shape="poly" title=" " alt="" coords="491,260,408,262,408,257,491,255"/>
 </map>
 </div>
 
@@ -3022,13 +3130,19 @@ Variables</h2></td></tr>
 <div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph.png" border="0" usemap="#astabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph" alt=""/></div>
 <map name="astabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph" id="astabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph">
-<area shape="rect" title=" " alt="" coords="415,31,527,56"/>
-<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="236,31,367,56"/>
-<area shape="poly" title=" " alt="" coords="401,46,367,46,367,41,401,41"/>
+<area shape="rect" title=" " alt="" coords="415,127,527,152"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="236,127,367,152"/>
+<area shape="poly" title=" " alt="" coords="401,142,367,142,367,137,401,137"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,31"/>
-<area shape="poly" title=" " alt="" coords="222,36,188,32,188,27,222,31"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,55,179,80"/>
-<area shape="poly" title=" " alt="" coords="222,55,180,60,179,55,222,50"/>
+<area shape="poly" title=" " alt="" coords="277,118,237,81,187,46,157,33,159,28,189,41,241,77,281,114"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a804a462f0c974ed4b7f144cc591f4369" title="Stabilization in attitude direct mode." alt="" coords="6,55,187,95"/>
+<area shape="poly" title=" " alt="" coords="246,125,161,98,162,93,248,120"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="6,119,187,159"/>
+<area shape="poly" title=" " alt="" coords="222,142,188,142,188,137,222,137"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,183,187,223"/>
+<area shape="poly" title=" " alt="" coords="248,159,162,186,161,181,246,154"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,248,179,273"/>
+<area shape="poly" title=" " alt="" coords="281,164,241,202,189,238,159,250,157,245,187,233,237,198,277,160"/>
 </map>
 </div>
 
@@ -3075,7 +3189,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00041">41</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00055">ctrl_module_run()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00094">ctrl_module_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="guidance__indi_8c_source.html#l00168">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00128">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00440">guidance_indi_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00600">guidance_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00072">guidance_module_run()</a>, <a class="el" href="guidance__pid_8c_source.html#l00218">guidance_pid_h_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00199">guidance_v_thrust_adapt()</a>, <a class="el" href="ins__flow_8c_source.html#l00725">ins_flow_update()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__file_8c_source.html#l00091">logger_file_write_row()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00064">nav_heli_spinup_run()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00040">nav_heli_spinup_setup()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01629">oneloop_andi_run()</a>, <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00304">reset_horizontal_vars()</a>, <a class="el" href="rotwing__state_8c_source.html#l00186">rotwing_state_hover_motors_idling()</a>, <a class="el" href="rotwing__state_8c_source.html#l00200">rotwing_state_periodic()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00054">send_att()</a>, <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00086">send_att()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00102">send_att()</a>, <a class="el" href="stabilization__attitude__quat__int_8c_source.html#l00088">send_att()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00039">send_bebop_actuators()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00076">send_rate()</a>, <a class="el" href="stabilization__rate__indi_8c_source.html#l00049">send_rate()</a>, <a class="el" href="stabilization_8c_source.html#l00075">send_tune_hover()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00061">send_windtunnel_meas()</a>, <a class="el" href="stabilization_8c_source.html#l00172">stabilization_attitude_read_rc()</a>, <a class="el" href="stabilization_8c_source.html#l00132">stabilization_attitude_reset_rc()</a>, <a class="el" href="stabilization_8c_source.html#l00314">stabilization_filter_commands()</a>, <a class="el" href="stabilization_8c_source.html#l00094">stabilization_init()</a>, <a class="el" href="stabilization_8c_source.html#l00138">stabilization_mode_changed()</a>, <a class="el" href="stabilization_8c_source.html#l00242">stabilization_run()</a>, <a class="el" href="stabilization_8c_source.html#l00229">transition_run()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00055">ctrl_module_run()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00094">ctrl_module_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="guidance__indi_8c_source.html#l00168">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00128">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00440">guidance_indi_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00600">guidance_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00072">guidance_module_run()</a>, <a class="el" href="guidance__pid_8c_source.html#l00218">guidance_pid_h_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00199">guidance_v_thrust_adapt()</a>, <a class="el" href="ins__flow_8c_source.html#l00725">ins_flow_update()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__file_8c_source.html#l00091">logger_file_write_row()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00064">nav_heli_spinup_run()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00040">nav_heli_spinup_setup()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01629">oneloop_andi_run()</a>, <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00304">reset_horizontal_vars()</a>, <a class="el" href="rotwing__state_8c_source.html#l00186">rotwing_state_hover_motors_idling()</a>, <a class="el" href="rotwing__state_8c_source.html#l00200">rotwing_state_periodic()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00054">send_att()</a>, <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00086">send_att()</a>, <a class="el" href="stabilization__attitude__plane__pid_8c_source.html#l00046">send_att()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00102">send_att()</a>, <a class="el" href="stabilization__attitude__quat__int_8c_source.html#l00088">send_att()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00039">send_bebop_actuators()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00076">send_rate()</a>, <a class="el" href="stabilization__rate__indi_8c_source.html#l00049">send_rate()</a>, <a class="el" href="stabilization_8c_source.html#l00075">send_tune_hover()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00061">send_windtunnel_meas()</a>, <a class="el" href="stabilization_8c_source.html#l00172">stabilization_attitude_read_rc()</a>, <a class="el" href="stabilization_8c_source.html#l00132">stabilization_attitude_reset_rc()</a>, <a class="el" href="stabilization_8c_source.html#l00314">stabilization_filter_commands()</a>, <a class="el" href="stabilization_8c_source.html#l00094">stabilization_init()</a>, <a class="el" href="stabilization_8c_source.html#l00138">stabilization_mode_changed()</a>, <a class="el" href="stabilization_8c_source.html#l00242">stabilization_run()</a>, <a class="el" href="stabilization_8c_source.html#l00229">transition_run()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>.</p>
 
 </div>
 </div>
@@ -3111,7 +3225,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="stabilization_8c.html">stabilization.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2025 18:13:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 13:07:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

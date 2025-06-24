@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>t5&#160;:&#160;<a class="el" href="pprz__doublet_8h.html#a675040eb306a89f42e126be6cada1baf">doublet_t</a></li>
 <li>t_fine&#160;:&#160;<a class="el" href="bmp280_8h.html#a0a1deb900a381b458d74f5fba596bfff">bmp280_reg_calib_data_t</a></li>
 <li>t_idx&#160;:&#160;<a class="el" href="battery__monitor_8h.html#aa24306e1495e3832bf65c7811f2d979b">BatMonBus</a></li>
+<li>t_kd&#160;:&#160;<a class="el" href="guidance__plane_8h.html#adbcce66e5ce124039ac82e0aa1335e1d">GuidancePlane</a></li>
+<li>t_ki&#160;:&#160;<a class="el" href="guidance__plane_8h.html#ab7e88807d3e86a9604ede59039ae7510">GuidancePlane</a></li>
+<li>t_kp&#160;:&#160;<a class="el" href="guidance__plane_8h.html#ac92058d52f16a9fcd0b1bf5f0e2e6074">GuidancePlane</a></li>
 <li>t_lin&#160;:&#160;<a class="el" href="bmp3__regs_8h.html#a55f1300264e6acebb07214cbe1d91687">bmp3_quantized_calib_data</a>, <a class="el" href="bmp3__regs_8h.html#a108f4de6caca132c58795b1e9abf408d">bmp3_reg_calib_data</a></li>
 <li>t_norm&#160;:&#160;<a class="el" href="gvf__ik_8h.html#abef818d2d7f0136ea8249e35e1ea5fb8">gvf_ik_tel</a>, <a class="el" href="gvf_8h.html#ad1ecaa579f9b50b53dde2a54e24d599b">gvf_tel</a></li>
 <li>t_transition&#160;:&#160;<a class="el" href="optical__flow__landing_8h.html#a88a86cb49c82bbb64dff876c4ca70257">OpticalFlowLanding</a></li>
@@ -191,6 +194,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>threshold_r&#160;:&#160;<a class="el" href="avi__isp__lens__shading__correction_8h.html#a8659d95e06921daa6dd5f1a00e1ecc7e">avi_isp_lens_shading_correction_threshold.__unnamed193__</a></li>
 <li>threshold_vec&#160;:&#160;<a class="el" href="opticflow__calculator_8h.html#acca7d40c29039569cd1945dd77b8287a">opticflow_t</a></li>
 <li>throttle&#160;:&#160;<a class="el" href="throttle__curve_8h.html#a368315ff03aed8ea68faa87320f87ccf">curve_t</a>, <a class="el" href="esc__dshot_8h.html#a1cb60fd54ebe03bbb2d9029f6192641b">DshotPacket.__unnamed11__</a>, <a class="el" href="flight__gear_8h.html#adad33e5afc5f25ffbe74d3ad877dbf7b">FGNetCtrls</a>, <a class="el" href="joystick_8h.html#a74e6b46c490d7f83a315fdf0cbed5e98">Joystick</a>, <a class="el" href="nav__heli__spinup_8h.html#adfa3888f766723c0aa61b6b9d177042f">nav_heli_spinup_t</a>, <a class="el" href="nps__radio__control__joystick_8h.html#a766bab8a634d5f3f99303784fbf4707e">NpsJoystick</a>, <a class="el" href="nps__radio__control_8h.html#a5bee104a9702d79d225201e807ebad49">NpsRadioControl</a>, <a class="el" href="autopilot_8h.html#a25be5f8be236fe71dea54af49af03da2">pprz_autopilot</a>, <a class="el" href="rotorcraft_2navigation_8h.html#a31c07a7d1ad3673efd6120c205d2c8b9">RotorcraftNavigation</a>, <a class="el" href="rover__guidance__steering_8h.html#ab1521e6666810e9c354713d5ad4f1d01">rover_ctrl</a>, <a class="el" href="throttle__curve_8h.html#a872e44c3e0589415992c9a067184e1de">throttle_curve_t</a></li>
+<li>throttle_cmd&#160;:&#160;<a class="el" href="guidance__plane_8h.html#af66c97c0c4163e246204418a1984340b">GuidancePlane</a></li>
 <li>throttle_is_angle&#160;:&#160;<a class="el" href="iomcu_8c.html#a6fe8cf1e95905942fc5b0695313aad5f">page_mixing</a></li>
 <li>throttle_trim&#160;:&#160;<a class="el" href="throttle__curve_8h.html#a71b94c3f20e327d42a39399df67581d8">throttle_curve_t</a></li>
 <li>thrust&#160;:&#160;<a class="el" href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">crtp_commander</a>, <a class="el" href="optical__flow__functions_8h.html#abe6cde90c8ee62cf1b53a89d589b2ef8">DesiredInputs</a>, <a class="el" href="direct__memory__logger_8c.html#a7c2512e416ccbb707faa706532f205d2">LogStruct</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a4dea7c35e8ea7d9906fabc2195ceb71f">VerticalGuidance</a></li>
@@ -322,7 +326,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 23 2025 18:13:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 13:07:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
