@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"paparazzi_messages.html#GEIGER_COUNTER":[2,0,148],
+"paparazzi_messages.html#GENERIC_COM":[2,0,76],
 "paparazzi_messages.html#GEO_MAG":[2,0,158],
 "paparazzi_messages.html#GET_DL_SETTING":[2,2,23],
 "paparazzi_messages.html#GET_SETTING":[2,1,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#WORLD_ENV_REQ":[2,2,19],
 "paparazzi_messages.html#WP_MOVED":[2,0,32],
 "paparazzi_messages.html#WP_MOVED_ENU":[2,0,46],
-"paparazzi_messages.html#WP_MOVED_LLA":[2,0,44],
-"paparazzi_messages.html#WT":[2,0,170],
-"paparazzi_messages.html#XTEND_RSSI":[2,0,65]
+"paparazzi_messages.html#WP_MOVED_LLA":[2,0,44]
 };

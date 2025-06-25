@@ -1,5 +1,7 @@
 var NAVTREEINDEX126 =
 {
+"module__actuators_faulhaber.html#configuration__actuators_faulhaber":[1,10,1],
+"module__actuators_faulhaber.html#functions__actuators_faulhaber":[1,10,2],
 "module__actuators_faulhaber.html#module_load_example__actuators_faulhaber":[1,10,0],
 "module__actuators_faulhaber.html#module_xml__actuators_faulhaber":[1,10,2,0],
 "module__actuators_hitl.html":[1,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX126 =
 "module__baro_ms5534a.html":[1,396],
 "module__baro_ms5534a.html#functions__baro_ms5534a":[1,396,1],
 "module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,396,0],
-"module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,396,1,0],
-"module__baro_ms5611_i2c.html":[1,406],
-"module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,406,1]
+"module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,396,1,0]
 };

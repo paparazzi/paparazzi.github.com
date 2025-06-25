@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__nav_flower.html#module_xml__nav_flower":[1,332,1,0],
+"module__nav_gls.html":[1,333],
 "module__nav_gls.html#module_load_example__nav_gls":[1,333,0],
 "module__nav_gls.html#module_xml__nav_gls":[1,333,0,0],
 "module__nav_heli_spinup.html":[1,334],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__px4flow_i2c.html#configuration__px4flow_i2c":[1,365,1],
 "module__px4flow_i2c.html#functions__px4flow_i2c":[1,365,2],
 "module__px4flow_i2c.html#module_load_example__px4flow_i2c":[1,365,0],
-"module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,365,2,0],
-"module__radio_control_cc2500_frsky.html":[1,368],
-"module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky":[1,368,1]
+"module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,365,2,0]
 };

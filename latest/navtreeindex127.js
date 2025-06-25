@@ -1,5 +1,7 @@
 var NAVTREEINDEX127 =
 {
+"module__baro_ms5611_i2c.html":[1,406],
+"module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,406,1],
 "module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c":[1,406,2],
 "module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,406,0],
 "module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c":[1,406,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX127 =
 "module__dfu_command.html#module_xml__dfu_command":[1,474,1,0],
 "module__digital_cam.html":[1,134],
 "module__digital_cam.html#module_load_example__digital_cam":[1,134,0],
-"module__digital_cam.html#module_xml__digital_cam":[1,134,0,0],
-"module__digital_cam_common.html":[1,135],
-"module__digital_cam_common.html#configuration__digital_cam_common":[1,135,1]
+"module__digital_cam.html#module_xml__digital_cam":[1,134,0,0]
 };

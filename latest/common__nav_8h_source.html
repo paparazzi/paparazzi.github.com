@@ -181,15 +181,32 @@ $(document).ready(function(){initNavTree('common__nav_8h_source.html',''); initR
 </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="foldopen" id="foldopen00087" data-start="" data-end="">
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="common__nav_8h.html#a14ad4ca3c686b25f5ef136245a8b693e">   87</a></span><span class="preprocessor">#define NavSetWaypointPosAndAltHere(_wp) ({ \</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="common__nav_8h.html#a9158f2962fc5740221f4ad160d52feb3">   87</a></span><span class="preprocessor">#define NavSetWaypointHereSend(_wp) ({ \</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">    waypoints[_wp].x = stateGetPositionEnu_f()-&gt;x; \</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">    waypoints[_wp].y = stateGetPositionEnu_f()-&gt;y; \</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">    waypoints[_wp].a = stateGetPositionEnu_f()-&gt;z + ground_alt; \</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">    RunOnceEvery(NAVIGATION_FREQUENCY/1, {nav_send_waypoint(_wp);}) \</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">    false; \</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">  })</span></div>
 </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif </span><span class="comment">/* COMMON_NAV_H */</span><span class="preprocessor"></span></div>
+<div class="foldopen" id="foldopen00094" data-start="" data-end="">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="common__nav_8h.html#a14ad4ca3c686b25f5ef136245a8b693e">   94</a></span><span class="preprocessor">#define NavSetWaypointPosAndAltHere(_wp) ({ \</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">    waypoints[_wp].x = stateGetPositionEnu_f()-&gt;x; \</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">    waypoints[_wp].y = stateGetPositionEnu_f()-&gt;y; \</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">    waypoints[_wp].a = stateGetPositionEnu_f()-&gt;z + ground_alt; \</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">    false; \</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">  })</span></div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="" data-end="">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="common__nav_8h.html#a0446d43786d70434b77e65c10dc94400">  101</a></span><span class="preprocessor">#define NavSetWaypointDistBehind(_wp, _ref, dist) ({ \</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">  waypoints[_wp].x = waypoints[_ref].x - dist*sin(stateGetNedToBodyEulers_f()-&gt;psi); \</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">  waypoints[_wp].y = waypoints[_ref].y - dist*cos(stateGetNedToBodyEulers_f()-&gt;psi); \</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">  false; \</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">})</span></div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#endif </span><span class="comment">/* COMMON_NAV_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acommon__flight__plan_8h_html"><div class="ttname"><a href="common__flight__plan_8h.html">common_flight_plan.h</a></div><div class="ttdoc">Common flight_plan functions shared between fixedwing and rotorcraft.</div></div>
 <div class="ttc" id="acommon__nav_8h_html_a0bb529b33392eba09b44a6b34be03cc0"><div class="ttname"><a href="common__nav_8h.html#a0bb529b33392eba09b44a6b34be03cc0">get_time_to_home</a></div><div class="ttdeci">float get_time_to_home(void)</div><div class="ttdoc">Compute time to home use wind and airspeed when available.</div><div class="ttdef"><b>Definition</b> <a href="common__nav_8c_source.html#l00071">common_nav.c:71</a></div></div>
 <div class="ttc" id="acommon__nav_8h_html_a1886ff619a5c03dc6c54729f301fa62e"><div class="ttname"><a href="common__nav_8h.html#a1886ff619a5c03dc6c54729f301fa62e">nav_reset_reference</a></div><div class="ttdeci">void nav_reset_reference(void)</div><div class="ttdoc">Reset the geographic reference to the current GPS fix.</div><div class="ttdef"><b>Definition</b> <a href="rotorcraft_2navigation_8c_source.html#l00234">navigation.c:234</a></div></div>
@@ -228,7 +245,7 @@ $(document).ready(function(){initNavTree('common__nav_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="common__nav_8h.html">common_nav.h</a></li>
-    <li class="footer">Generated on Tue Jun 24 2025 13:07:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jun 25 2025 10:42:32 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

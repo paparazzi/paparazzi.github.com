@@ -1,5 +1,7 @@
 var NAVTREEINDEX198 =
 {
+"stabilization__attitude__heli__indi_8c.html#a1d42d4a015d3d6fbd25f90d22dcc4c26":[12,0,1,0,3,2,2,8,33],
+"stabilization__attitude__heli__indi_8c.html#a233b33e7242fb862ab436131bb53d517":[12,0,1,0,3,2,2,8,40],
 "stabilization__attitude__heli__indi_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,8,36],
 "stabilization__attitude__heli__indi_8c.html#a3168f5d7b07ed7d2c1f317ca7c3f25cc":[12,0,1,0,3,2,2,8,44],
 "stabilization__attitude__heli__indi_8c.html#a3488c12832fff437468f65fde70709a0":[12,0,1,0,3,2,2,8,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX198 =
 "stabilization__attitude__rc__setpoint_8h.html#ae8be1c79f920b2b096dab724be25b2e2":[12,0,1,0,3,2,2,23,9],
 "stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113":[12,0,1,0,3,2,2,23,1],
 "stabilization__attitude__rc__setpoint_8h.html#structAttitudeRCInput":[12,0,1,0,3,2,2,23,0],
-"stabilization__attitude__rc__setpoint_8h_source.html":[12,0,1,0,3,2,2,23],
-"stabilization__attitude__ref__defaults_8h.html":[12,0,1,0,3,2,2,24],
-"stabilization__attitude__ref__defaults_8h.html#a28c5746ebc9c7a5acc942f0286517a76":[12,0,1,0,3,2,2,24,0]
+"stabilization__attitude__rc__setpoint_8h_source.html":[12,0,1,0,3,2,2,23]
 };

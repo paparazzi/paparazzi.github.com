@@ -1,5 +1,7 @@
 var NAVTREEINDEX125 =
 {
+"microrl_8h.html#a08390223487066b852647d591b9a9855":[12,0,1,0,0,0,1,1,0,1,37],
+"microrl_8h.html#a094af0e4cec975292ef40cbd4a4a0830":[12,0,1,0,0,0,1,1,0,1,30],
 "microrl_8h.html#a1412e7c9fe4f90f064485e3d0274abef":[12,0,1,0,0,0,1,1,0,1,18],
 "microrl_8h.html#a1b42c88ee423f0989b8961475a346a97":[12,0,1,0,0,0,1,1,0,1,38],
 "microrl_8h.html#a21a8311a60ca1a9ef41f7874f92f4eb2":[12,0,1,0,0,0,1,1,0,1,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX125 =
 "module__actuators_esc32.html":[1,9],
 "module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
 "module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0],
-"module__actuators_faulhaber.html":[1,10],
-"module__actuators_faulhaber.html#configuration__actuators_faulhaber":[1,10,1],
-"module__actuators_faulhaber.html#functions__actuators_faulhaber":[1,10,2]
+"module__actuators_faulhaber.html":[1,10]
 };

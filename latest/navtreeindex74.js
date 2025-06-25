@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"guidance__indi__hybrid__quadplane_8c_source.html":[12,0,1,0,3,2,0,12],
+"guidance__indi__hybrid__quadplane_8h.html":[12,0,1,0,3,2,0,13],
 "guidance__indi__hybrid__quadplane_8h.html#a1736298c0e0c9e6c9db4ee211cd11b9a":[12,0,1,0,3,2,0,13,3],
 "guidance__indi__hybrid__quadplane_8h.html#a59489af898bc65644abb6ed6dd33a757":[12,0,1,0,3,2,0,13,0],
 "guidance__indi__hybrid__quadplane_8h.html#a64e3decdab99fca06278c4d76ac8111b":[12,0,1,0,3,2,0,13,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "guidance__v__n_8c.html#a8ca3adfa488b360ca07396ef54c199f3":[12,0,1,0,3,1,0,7,23],
 "guidance__v__n_8c.html#a8e8e746ea2aef75af16db484cf5b65f8":[12,0,1,0,3,1,0,7,2],
 "guidance__v__n_8c.html#a910f711554fd96e7fa2c1f9c3b0c8b9b":[12,0,1,0,3,1,0,7,5],
-"guidance__v__n_8c.html#a91af08f8c8981542a5e44b874c7c39ad":[12,0,1,0,3,1,0,7,47],
-"guidance__v__n_8c.html#a96b28ed4a6bbadedbf6ebd67c3a88613":[12,0,1,0,3,1,0,7,34],
-"guidance__v__n_8c.html#a989456268c5558603e52acf4ba940d7f":[12,0,1,0,3,1,0,7,36]
+"guidance__v__n_8c.html#a91af08f8c8981542a5e44b874c7c39ad":[12,0,1,0,3,1,0,7,47]
 };
