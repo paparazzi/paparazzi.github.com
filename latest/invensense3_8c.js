@@ -14,7 +14,7 @@ var invensense3_8c =
     [ "samples_from_odr", "invensense3_8c.html#a3a484845052c48c8385a4d83e0a56ebb", null ],
     [ "invensense3_aaf", "invensense3_8c.html#a4bc109166400ec27a89ad1ea9de76e9d", null ],
     [ "invensense3_aaf4x605", "invensense3_8c.html#a093eeae8c07ad20b3509de9a4f0855a7", null ],
-    [ "invensense3_accel_scale", "invensense3_8c.html#a0afa9fa5371c07641d57aa009202033a", null ],
+    [ "invensense3_accel_scale_f", "invensense3_8c.html#a94a505b88645cd92767c05f36f1e4173", null ],
     [ "invensense3_fifo_sample_size", "invensense3_8c.html#a49ec590377787766b3a1cc27e7a7ff17", null ],
-    [ "invensense3_gyro_scale", "invensense3_8c.html#aba90da3791e85d8fdcdc572be55954e1", null ]
+    [ "invensense3_gyro_scale_f", "invensense3_8c.html#a8da17ac2932847c5258fdc43b2e7ce8f", null ]
 ];

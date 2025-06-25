@@ -1,5 +1,7 @@
 var NAVTREEINDEX129 =
 {
+"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,159,0],
+"module__gps_intermcu.html#module_xml__gps_intermcu":[1,159,2,0],
 "module__gps_mediatek_diy.html":[1,160],
 "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,160,1],
 "module__gps_mediatek_diy.html#configure":[1,160,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX129 =
 "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,195,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,196],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,196,0],
-"module__imu_aspirin_v1_0.html":[1,197],
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,197,0],
-"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,197,0,0]
+"module__imu_aspirin_v1_0.html":[1,197]
 };

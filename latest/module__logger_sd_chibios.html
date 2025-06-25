@@ -103,7 +103,8 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_START_DELAY&quot; value=&quot;30&quot; unit=&quot;s&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; value=&quot;10&quot; unit=&quot;s&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; value=&quot;50&quot; unit=&quot;Mo&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_PREFLIGHT_ERROR&quot; value=&quot;FALSE&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_PREFLIGHT_ERROR&quot; value=&quot;FALSE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_ENABLE_LOWBAT_FLUSH&quot; value=&quot;TRUE&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SDLOG_SDIO&quot; value=&quot;SDCDx&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -128,6 +129,8 @@ Define Options</h2>
  Description: Try to reserve a given contiguous mass storage memory. Default: 50Mo</li>
 <li><b>name:</b> <code>SDLOG_PREFLIGHT_ERROR</code> <b>value:</b> <em>FALSE</em> <br  />
  Description: If set to TRUE, the autopilot will not arm if the SDLogger is not running. Default: FALSE</li>
+<li><b>name:</b> <code>SDLOG_ENABLE_LOWBAT_FLUSH</code> <b>value:</b> <em>TRUE</em> <br  />
+ Description: If set to TRUE or undefined, the autopilot will flush the buffer on detecting low voltage by ADC.</li>
 </ul>
 <h1><a class="anchor" id="functions__logger_sd_chibios"></a>
 Module functions</h1>
@@ -182,6 +185,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_AUTO_FLUSH_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Data flush period. Shorter period may decrease performances. Default: 10s&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;Mo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Try to reserve a given contiguous mass storage memory. Default: 50Mo&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_PREFLIGHT_ERROR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If set to TRUE, the autopilot will not arm if the SDLogger is not running. Default: FALSE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_ENABLE_LOWBAT_FLUSH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If set to TRUE or undefined, the autopilot will flush the buffer on detecting low voltage by ADC.&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">   &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
@@ -234,7 +238,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Jun 25 2025 10:42:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jun 25 2025 11:32:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

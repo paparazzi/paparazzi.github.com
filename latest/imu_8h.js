@@ -5,7 +5,8 @@ var imu_8h =
       [ "filter", "imu_8h.html#a3d1e9eddca3a776a7fb29e590f8278de", null ],
       [ "neutral", "imu_8h.html#aa89853a532ad4adf771289eea8832bd6", null ],
       [ "rotation", "imu_8h.html#ae401e507fd893576e3767b10a714a199", null ],
-      [ "scale", "imu_8h.html#a1f3ebaad8dc8df7c8f2e56571996e514", null ]
+      [ "scale", "imu_8h.html#a1f3ebaad8dc8df7c8f2e56571996e514", null ],
+      [ "scale_f", "imu_8h.html#a648b6de857f985216c784ea21638ceb9", null ]
     ] ],
     [ "imu_gyro_t", "imu_8h.html#structimu__gyro__t", [
       [ "abi_id", "imu_8h.html#a1b1d1ca0df754ef787eab7af507e96aa", null ],
@@ -17,6 +18,7 @@ var imu_8h =
       [ "last_stamp", "imu_8h.html#a009f4bed304da8f96ca2b3bd2396d2eb", null ],
       [ "neutral", "imu_8h.html#a4477c72a6c4437b60dda817ebcc5ff2e", null ],
       [ "scale", "imu_8h.html#a6f6fa9e950ab651e2f75051dd1203ad4", null ],
+      [ "scale_f", "imu_8h.html#a93cf80800e9d708beb7e4c76f8aa6f55", null ],
       [ "scaled", "imu_8h.html#a02fb96f81fe7cfec364a307b5dfc2868", null ],
       [ "temperature", "imu_8h.html#a21b1fec39e9761fdc297b9861a0098b4", null ],
       [ "unscaled", "imu_8h.html#a8d5aee0e93b6d1d9b78b1d73722e998a", null ]
@@ -31,6 +33,7 @@ var imu_8h =
       [ "last_stamp", "imu_8h.html#a30bce24a5723d6d6f09bb1c8b71ff5a8", null ],
       [ "neutral", "imu_8h.html#ab4ee3eecaa0a9ae198eeb78900668bd4", null ],
       [ "scale", "imu_8h.html#aa87b0288f7f2adbad06b207bcf3b1a07", null ],
+      [ "scale_f", "imu_8h.html#a5d0488af4149ec394ac7819d4443435b", null ],
       [ "scaled", "imu_8h.html#a82581093bb29a49ac87f8287c68e574e", null ],
       [ "temperature", "imu_8h.html#a41526b13502f723afc3d6b3d79e8b2dd", null ],
       [ "unscaled", "imu_8h.html#a3d98f79755c87e226545df348625c232", null ]
@@ -42,6 +45,7 @@ var imu_8h =
       [ "current_scale", "imu_8h.html#a17e36f1f2f2e9c03de668e0429f0d517", null ],
       [ "neutral", "imu_8h.html#a3ba2bb42284dd57602b47c6eb25efb37", null ],
       [ "scale", "imu_8h.html#a5e0bd3e83e489c7cd9289c38b1dd58ae", null ],
+      [ "scale_f", "imu_8h.html#a36537500deef1792a4c94ccac2641e70", null ],
       [ "scaled", "imu_8h.html#ae29b5a398e1bd42788385a602935d83d", null ],
       [ "unscaled", "imu_8h.html#ab6809ba54fdfac5e02ec9d2c0ac2337d", null ]
     ] ],
@@ -62,9 +66,9 @@ var imu_8h =
     [ "imu_get_mag", "imu_8h.html#a9d352d575dc0e30a32e31b1b6fcd6211", null ],
     [ "imu_init", "imu_8h.html#a86a06fe7a9831292bd92867da2d12f80", null ],
     [ "imu_ResetBodyToImu", "imu_8h.html#ac9f5713ed33725e176e0501ecbe715a9", null ],
-    [ "imu_set_defaults_accel", "imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba", null ],
-    [ "imu_set_defaults_gyro", "imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf", null ],
-    [ "imu_set_defaults_mag", "imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4", null ],
+    [ "imu_set_defaults_accel", "imu_8h.html#a4e6e633b0fa280971b8c4baeb656c611", null ],
+    [ "imu_set_defaults_gyro", "imu_8h.html#a7edcd050d64332df6c07a5794fafc801", null ],
+    [ "imu_set_defaults_mag", "imu_8h.html#afbfa216dda948a1773c5c5725dd2f86a", null ],
     [ "imu_SetBodyToImuCurrent", "imu_8h.html#a931916ce562dfa28e02e0a6001dddc43", null ],
     [ "imu_SetBodyToImuPhi", "imu_8h.html#ac50fba336ca2c337f240bab0db44f64e", null ],
     [ "imu_SetBodyToImuPsi", "imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e", null ],

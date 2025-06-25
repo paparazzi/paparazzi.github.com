@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__px4flow_i2c.html#module_load_example__px4flow_i2c":[1,365,0],
+"module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,365,2,0],
 "module__radio_control_cc2500_frsky.html":[1,368],
 "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky":[1,368,1],
 "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky":[1,368,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__stereocam_follow_me.html":[1,454],
 "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me":[1,454,0],
 "module__stereocam_follow_me.html#module_xml__stereocam_follow_me":[1,454,0,0],
-"module__stereocam_nav_line_avoid.html":[1,455],
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,455,1],
-"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,455,2]
+"module__stereocam_nav_line_avoid.html":[1,455]
 };

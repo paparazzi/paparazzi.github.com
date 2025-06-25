@@ -9,6 +9,7 @@ var imu_8h_structimu__gyro__t =
     [ "last_stamp", "imu_8h.html#a009f4bed304da8f96ca2b3bd2396d2eb", null ],
     [ "neutral", "imu_8h.html#a4477c72a6c4437b60dda817ebcc5ff2e", null ],
     [ "scale", "imu_8h.html#a6f6fa9e950ab651e2f75051dd1203ad4", null ],
+    [ "scale_f", "imu_8h.html#a93cf80800e9d708beb7e4c76f8aa6f55", null ],
     [ "scaled", "imu_8h.html#a02fb96f81fe7cfec364a307b5dfc2868", null ],
     [ "temperature", "imu_8h.html#a21b1fec39e9761fdc297b9861a0098b4", null ],
     [ "unscaled", "imu_8h.html#a8d5aee0e93b6d1d9b78b1d73722e998a", null ]

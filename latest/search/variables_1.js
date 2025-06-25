@@ -71,7 +71,7 @@ var searchData=
   ['accel_5frange_68',['accel_range',['../mpu60x0_8h.html#abe7cee016f124472673117c85168a7f5',1,'Mpu60x0Config::accel_range'],['../invensense2_8h.html#a019f658d37370eace2563e47222c8048',1,'invensense2_t::accel_range'],['../invensense3_8h.html#ac8f066387c57c7fefa4e35ae36947346',1,'invensense3_t::accel_range'],['../mpu9250_8h.html#acc1cbb496e5ea43bf9a0794045c7573e',1,'Mpu9250Config::accel_range'],['../bmi088_8h.html#a4bcde092abddd2dae76e9c43c1a94a28',1,'Bmi088Config::accel_range']]],
   ['accel_5frate_69',['accel_rate',['../actuators__md25_8h.html#ab567b3ed142c269b46993e249947a03c',1,'ActuatorsMD25']]],
   ['accel_5fsamplerate_70',['accel_samplerate',['../invensense3_8h.html#ac2810dc52e447d5ca1de536997db30fc',1,'invensense3_t::accel_samplerate'],['../bmi088_8h.html#acba837b9dab9ca97b7587cb1ce12a2f9',1,'Bmi088Config::accel_samplerate']]],
-  ['accel_5fscale_71',['accel_scale',['../navdata_8c.html#ad313e22e960d91c0e64a5d5831ed2a16',1,'navdata.c']]],
+  ['accel_5fscale_5ff_71',['accel_scale_f',['../navdata_8c.html#a40576a824f7917ba693ada55d292c525',1,'navdata.c']]],
   ['accel_5fsp_5fev_72',['accel_sp_ev',['../guidance__indi_8c.html#a84d6e2cd8bcf5ece147855a717ec0255',1,'guidance_indi.c']]],
   ['accel_5fstatus_73',['accel_status',['../group__state__acceleration.html#ga42a40deda3336374ca2d3322c9e176d9',1,'State']]],
   ['accel_5fsum_74',['accel_sum',['../ahrs__aligner_8c.html#a68b78ce4e010b1be5a93a9f23f6c1ec5',1,'ahrs_aligner.c']]],

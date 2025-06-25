@@ -7,8 +7,7 @@ var lsm303d_8h =
       [ "mag_rate", "lsm303d_8h.html#a5fd3730ddb99c43ec9117b73bf806c13", null ],
       [ "mag_scale", "lsm303d_8h.html#a8b45fd61a56df8a76097befa0bfdfba8", null ]
     ] ],
-    [ "LSM303D_ACCEL_SENS_16G_DEN", "lsm303d_8h.html#ad1e6837234bb10ee0f6b0609e4746723", null ],
-    [ "LSM303D_ACCEL_SENS_16G_NUM", "lsm303d_8h.html#a2cf0919904bc654715437a024b617f91", null ],
+    [ "LSM303D_ACCEL_SENS_16G", "lsm303d_8h.html#a3827638cdf23c1988a8992f5f4a205e4", null ],
     [ "LSM303D_DEFAULT_AFS", "lsm303d_8h.html#a585e38f3400cdec36132855bafec4719", null ],
     [ "LSM303D_DEFAULT_AODR", "lsm303d_8h.html#a15d70911a9bc0c4977aec0bba0489b78", null ],
     [ "LSM303D_DEFAULT_MD", "lsm303d_8h.html#aa1e7c115a13c95dbb1b26dff906018ad", null ],

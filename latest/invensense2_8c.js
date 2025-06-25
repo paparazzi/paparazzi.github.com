@@ -9,6 +9,6 @@ var invensense2_8c =
     [ "invensense2_register_read", "invensense2_8c.html#aea95cf0a0dfa3ce1e3f77d75d59bae06", null ],
     [ "invensense2_register_write", "invensense2_8c.html#a30477c5c507b0c8bcbfcfaf8e6c10665", null ],
     [ "invensense2_select_bank", "invensense2_8c.html#a28e7bcd6a8e2d2d5bad607f7d0a512c0", null ],
-    [ "invensense2_accel_scale", "invensense2_8c.html#af8f5c71bd3449b36af4b3d050f705b46", null ],
-    [ "invensense2_gyro_scale", "invensense2_8c.html#a26370c5cd2be81cfbc5e43ed3e01d3d2", null ]
+    [ "invensense2_accel_scale_f", "invensense2_8c.html#a0268e1054060beec3c4d442c3bb559f2", null ],
+    [ "invensense2_gyro_scale_f", "invensense2_8c.html#a4ce4fdd011b02ea5d9c857d6fc068dba", null ]
 ];

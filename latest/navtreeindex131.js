@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__intermcu_uart.html#functions__intermcu_uart":[1,254,2],
+"module__intermcu_uart.html#module_load_example__intermcu_uart":[1,254,0],
 "module__intermcu_uart.html#module_xml__intermcu_uart":[1,254,3,0],
 "module__ir_mlx.html":[1,298],
 "module__ir_mlx.html#functions__ir_mlx":[1,298,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__nav_fish.html#functions__nav_fish":[1,331,2],
 "module__nav_fish.html#module_load_example__nav_fish":[1,331,0],
 "module__nav_fish.html#module_xml__nav_fish":[1,331,2,0],
-"module__nav_flower.html":[1,332],
-"module__nav_flower.html#functions__nav_flower":[1,332,1],
-"module__nav_flower.html#module_load_example__nav_flower":[1,332,0]
+"module__nav_flower.html":[1,332]
 };

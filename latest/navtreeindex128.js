@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"module__digital_cam.html#module_load_example__digital_cam":[1,134,0],
+"module__digital_cam.html#module_xml__digital_cam":[1,134,0,0],
 "module__digital_cam_common.html":[1,135],
 "module__digital_cam_common.html#configuration__digital_cam_common":[1,135,1],
 "module__digital_cam_common.html#functions__digital_cam_common":[1,135,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "module__gps_furuno.html#module_xml__gps_furuno":[1,158,2,0],
 "module__gps_intermcu.html":[1,159],
 "module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,159,2],
-"module__gps_intermcu.html#functions__gps_intermcu":[1,159,1],
-"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,159,0],
-"module__gps_intermcu.html#module_xml__gps_intermcu":[1,159,2,0]
+"module__gps_intermcu.html#functions__gps_intermcu":[1,159,1]
 };

@@ -2,6 +2,7 @@ var sdlog__chibios_8c =
 [
     [ "SDLOG_AUTO_FLUSH_PERIOD", "sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4", null ],
     [ "SDLOG_CONTIGUOUS_STORAGE_MEM", "sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6", null ],
+    [ "SDLOG_ENABLE_LOWBAT_FLUSH", "sdlog__chibios_8c.html#a3b1d54587c14aa30efccbbb680793bf1", null ],
     [ "SDLOG_START_DELAY", "sdlog__chibios_8c.html#abb202e6b58d213508879a54bf05251bb", null ],
     [ "chibios_sdlog_init", "sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6", null ],
     [ "IN_DMA_SECTION", "sdlog__chibios_8c.html#a7443f49b66b998087c9e0446778e0ca7", null ],

@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('bmi088_8h.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bmi088__regs_8h_source.html">peripherals/bmi088_regs.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for bmi088.h:</div>
@@ -114,28 +115,35 @@ $(document).ready(function(){initNavTree('bmi088_8h.html',''); initResizable(); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bmi088_8h__incl.png" border="0" usemap="#asw_2airborne_2peripherals_2bmi088_8h" alt=""/></div>
 <map name="asw_2airborne_2peripherals_2bmi088_8h" id="asw_2airborne_2peripherals_2bmi088_8h">
-<area shape="rect" title="BMI088 driver common interface (I2C and SPI)." alt="" coords="24,5,199,45"/>
-<area shape="rect" title=" " alt="" coords="27,255,82,280"/>
-<area shape="poly" title=" " alt="" coords="64,48,34,67,11,94,8,115,9,149,17,206,37,242,33,245,12,208,4,149,3,115,6,92,31,63,62,43"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="22,101,202,126"/>
-<area shape="poly" title=" " alt="" coords="114,46,114,87,109,87,109,46"/>
-<area shape="rect" href="bmi088__regs_8h.html" title="Register and address definitions for BMI088." alt="" coords="226,93,374,133"/>
-<area shape="poly" title=" " alt="" coords="154,43,247,85,245,90,152,48"/>
-<area shape="poly" title=" " alt="" coords="86,128,52,150,37,165,25,182,21,197,23,213,38,242,33,245,18,214,16,197,20,180,32,162,49,146,84,124"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="212,181,368,207"/>
-<area shape="poly" title=" " alt="" coords="139,124,253,173,251,178,136,128"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="35,181,188,207"/>
-<area shape="poly" title=" " alt="" coords="114,126,114,167,109,167,109,126"/>
-<area shape="rect" title=" " alt="" coords="392,181,463,207"/>
-<area shape="poly" title=" " alt="" coords="158,123,379,178,378,183,157,129"/>
-<area shape="poly" title=" " alt="" coords="253,209,95,256,94,251,252,204"/>
-<area shape="rect" title=" " alt="" coords="168,255,231,280"/>
-<area shape="poly" title=" " alt="" coords="277,209,227,248,224,244,274,205"/>
-<area shape="rect" title=" " alt="" coords="255,255,326,280"/>
-<area shape="poly" title=" " alt="" coords="293,207,293,241,288,241,288,207"/>
-<area shape="rect" title=" " alt="" coords="350,255,418,280"/>
-<area shape="poly" title=" " alt="" coords="307,205,359,244,356,248,304,209"/>
-<area shape="poly" title=" " alt="" coords="104,209,74,246,70,242,100,205"/>
+<area shape="rect" title="BMI088 driver common interface (I2C and SPI)." alt="" coords="220,5,395,45"/>
+<area shape="rect" title=" " alt="" coords="71,255,125,280"/>
+<area shape="poly" title=" " alt="" coords="221,44,161,62,101,89,73,107,48,129,27,154,11,182,10,202,20,219,38,235,60,247,57,252,35,239,16,223,4,203,6,181,23,151,44,125,70,103,98,85,159,57,219,39"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="112,101,292,126"/>
+<area shape="poly" title=" " alt="" coords="286,48,229,94,225,90,282,44"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="358,101,550,126"/>
+<area shape="poly" title=" " alt="" coords="341,43,424,91,421,96,338,48"/>
+<area shape="rect" href="bmi088__regs_8h.html" title="Register and address definitions for BMI088." alt="" coords="575,93,723,133"/>
+<area shape="poly" title=" " alt="" coords="383,43,562,88,561,93,382,48"/>
+<area shape="poly" title=" " alt="" coords="113,128,61,147,39,163,20,183,16,191,16,200,24,217,41,232,63,246,60,250,38,237,20,220,11,201,11,190,16,180,35,159,59,143,111,123"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="303,181,459,207"/>
+<area shape="poly" title=" " alt="" coords="229,124,343,173,341,178,227,128"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="125,181,279,207"/>
+<area shape="poly" title=" " alt="" coords="205,126,205,167,199,167,199,126"/>
+<area shape="rect" title=" " alt="" coords="31,181,101,207"/>
+<area shape="poly" title=" " alt="" coords="183,128,99,177,97,172,181,124"/>
+<area shape="poly" title=" " alt="" coords="336,209,139,259,138,253,335,204"/>
+<area shape="rect" title=" " alt="" coords="427,255,489,280"/>
+<area shape="poly" title=" " alt="" coords="395,205,437,243,433,247,391,209"/>
+<area shape="rect" title=" " alt="" coords="332,255,403,280"/>
+<area shape="poly" title=" " alt="" coords="381,207,375,242,369,241,376,207"/>
+<area shape="rect" title=" " alt="" coords="513,255,581,280"/>
+<area shape="poly" title=" " alt="" coords="409,204,509,247,507,252,406,209"/>
+<area shape="poly" title=" " alt="" coords="187,209,128,249,125,244,184,204"/>
+<area shape="poly" title=" " alt="" coords="445,128,403,173,399,169,441,124"/>
+<area shape="poly" title=" " alt="" coords="461,126,474,181,474,207,468,242,462,241,469,206,469,182,455,127"/>
+<area shape="poly" title=" " alt="" coords="463,125,535,242,531,244,459,127"/>
+<area shape="rect" title=" " alt="" coords="585,181,742,207"/>
+<area shape="poly" title=" " alt="" coords="485,124,621,174,619,179,484,129"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -280,12 +288,12 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:addcce42ce13cf7b00585ee7ef9cc1936" id="r_addcce42ce13cf7b00585ee7ef9cc1936"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8h.html#addcce42ce13cf7b00585ee7ef9cc1936">BMI088_GYRO_SENS</a> [5]</td></tr>
 <tr class="separator:addcce42ce13cf7b00585ee7ef9cc1936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d41db65aea9c5021c6ae7b35e307fea" id="r_a8d41db65aea9c5021c6ae7b35e307fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8h.html#a8d41db65aea9c5021c6ae7b35e307fea">BMI088_GYRO_SENS_FRAC</a> [5][2]</td></tr>
-<tr class="separator:a8d41db65aea9c5021c6ae7b35e307fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7420d17b916256bd8c88063a1e90ce9f" id="r_a7420d17b916256bd8c88063a1e90ce9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8h.html#a7420d17b916256bd8c88063a1e90ce9f">BMI088_GYRO_SENS_F</a> [5]</td></tr>
+<tr class="separator:a7420d17b916256bd8c88063a1e90ce9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204cd9d13497f8b2ecefa26ee3a934f8" id="r_a204cd9d13497f8b2ecefa26ee3a934f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8h.html#a204cd9d13497f8b2ecefa26ee3a934f8">BMI088_ACCEL_SENS</a> [4]</td></tr>
 <tr class="separator:a204cd9d13497f8b2ecefa26ee3a934f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9c09f013fce4f0a70fe73a56cd4dbc" id="r_a4d9c09f013fce4f0a70fe73a56cd4dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8h.html#a4d9c09f013fce4f0a70fe73a56cd4dbc">BMI088_ACCEL_SENS_FRAC</a> [4][2]</td></tr>
-<tr class="separator:a4d9c09f013fce4f0a70fe73a56cd4dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847e4d8511a9a27403018e622ee3c938" id="r_a847e4d8511a9a27403018e622ee3c938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8h.html#a847e4d8511a9a27403018e622ee3c938">BMI088_ACCEL_SENS_F</a> [4]</td></tr>
+<tr class="separator:a847e4d8511a9a27403018e622ee3c938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BMI088 driver common interface (I2C and SPI). </p>
@@ -304,7 +312,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00114">114</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00115">115</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -378,7 +386,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00085">85</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00086">86</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +402,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00087">87</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00088">88</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +418,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00086">86</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00087">87</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +434,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00088">88</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00089">89</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +450,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00090">90</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00091">91</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +466,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00089">89</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00090">90</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +484,7 @@ config done flag </td></tr>
 
 <p>default accel sensitivy from the datasheet sens = 9.81 [m/s^2] / [LSB/g] * 2^INT32_ACCEL_FRAC ex: BMI with 6g has 5460 LSB/g sens = 9.81 [m/s^2] / 5460 [LSB/g] * 2^INT32_ACCEL_FRAC = 1.83982 </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00079">79</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00080">80</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +500,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00081">81</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00082">82</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +516,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00080">80</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00081">81</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +532,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00082">82</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00083">83</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +548,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00084">84</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00085">85</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +564,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00083">83</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00084">84</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +580,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00109">109</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00110">110</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +596,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00110">110</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00111">111</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +614,7 @@ config done flag </td></tr>
 
 <p>Default accel bandwidth. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00045">45</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00046">46</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +632,7 @@ config done flag </td></tr>
 
 <p>Default accel output rate. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00043">43</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00044">44</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -642,7 +650,7 @@ config done flag </td></tr>
 
 <p>Default accel full scale range +- 6g. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00041">41</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00042">42</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +668,7 @@ config done flag </td></tr>
 
 <p>Default gyro output rate. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00039">39</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00040">40</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +686,7 @@ config done flag </td></tr>
 
 <p>Default gyro full scale range +- 1000°/s. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00037">37</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00038">38</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -694,7 +702,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00061">61</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00062">62</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +718,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00063">63</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00064">64</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +734,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00062">62</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00063">63</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +752,7 @@ config done flag </td></tr>
 
 <p>default gyro sensitivy from the datasheet sens = 1/ [LSB/(deg/s)] * pi/180 * 2^INT32_RATE_FRAC ex: BMI with 1000 deg/s has 32.8 LSB/(deg/s) sens = 1/32.8 * pi/180 * 4096 = 2.17953 </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00052">52</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00053">53</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +768,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00054">54</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00055">55</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +784,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00053">53</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00054">54</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -792,7 +800,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00064">64</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00065">65</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +816,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00066">66</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00067">67</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -824,7 +832,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00065">65</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00066">66</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -840,7 +848,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00055">55</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00056">56</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +864,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00057">57</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00058">58</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +880,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00056">56</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00057">57</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +896,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00058">58</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00059">59</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -904,7 +912,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00060">60</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00061">61</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +928,7 @@ config done flag </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00059">59</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00060">60</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +947,7 @@ config done flag </td></tr>
 
 <p>Configuration function prototype. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00112">112</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00113">113</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +975,7 @@ config done flag </td></tr>
 <tr><td class="fieldname"><a id="ac55667ef5c99a595587a9034b35c6929aa2b9373d40a54eee0ba9c809ef9d6540" name="ac55667ef5c99a595587a9034b35c6929aa2b9373d40a54eee0ba9c809ef9d6540"></a>BMI088_CONF_DONE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00097">97</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8h_source.html#l00098">98</a> of file <a class="el" href="bmi088_8h_source.html">bmi088.h</a>.</p>
 
 </div>
 </div>
@@ -1014,9 +1022,9 @@ config done flag </td></tr>
 
 <p>Configuration sequence called once before normal use. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00079">79</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00070">70</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmi088__regs_8h_source.html#l00132">BMI088_ACCEL_ACTIVE</a>, <a class="el" href="bmi088__regs_8h_source.html#l00054">BMI088_ACCEL_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00112">BMI088_ACCEL_ODR_100</a>, <a class="el" href="bmi088__regs_8h_source.html#l00109">BMI088_ACCEL_ODR_12</a>, <a class="el" href="bmi088__regs_8h_source.html#l00116">BMI088_ACCEL_ODR_1600</a>, <a class="el" href="bmi088__regs_8h_source.html#l00113">BMI088_ACCEL_ODR_200</a>, <a class="el" href="bmi088__regs_8h_source.html#l00110">BMI088_ACCEL_ODR_25</a>, <a class="el" href="bmi088__regs_8h_source.html#l00114">BMI088_ACCEL_ODR_400</a>, <a class="el" href="bmi088__regs_8h_source.html#l00111">BMI088_ACCEL_ODR_50</a>, <a class="el" href="bmi088__regs_8h_source.html#l00115">BMI088_ACCEL_ODR_800</a>, <a class="el" href="bmi088__regs_8h_source.html#l00141">BMI088_ACCEL_POWER_ON</a>, <a class="el" href="bmi088__regs_8h_source.html#l00063">BMI088_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00064">BMI088_ACCEL_PWR_CTRl</a>, <a class="el" href="bmi088__regs_8h_source.html#l00055">BMI088_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00100">BMI088_CONF_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00101">BMI088_CONF_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088_8h_source.html#l00102">BMI088_CONF_ACCEL_PWR_CTRL</a>, <a class="el" href="bmi088_8h_source.html#l00099">BMI088_CONF_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00106">BMI088_CONF_DONE</a>, <a class="el" href="bmi088_8h_source.html#l00104">BMI088_CONF_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00105">BMI088_CONF_GYRO_PWR</a>, <a class="el" href="bmi088_8h_source.html#l00103">BMI088_CONF_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00109">BMI088_CONFIG_ACCEL</a>, <a class="el" href="bmi088_8h_source.html#l00110">BMI088_CONFIG_GYRO</a>, <a class="el" href="bmi088__regs_8h_source.html#l00083">BMI088_GYRO_BAND_WIDTH</a>, <a class="el" href="bmi088__regs_8h_source.html#l00085">BMI088_GYRO_LPM_1</a>, <a class="el" href="bmi088__regs_8h_source.html#l00173">BMI088_GYRO_NORMAL</a>, <a class="el" href="bmi088__regs_8h_source.html#l00161">BMI088_GYRO_ODR_1000_BW_116</a>, <a class="el" href="bmi088__regs_8h_source.html#l00164">BMI088_GYRO_ODR_100_BW_12</a>, <a class="el" href="bmi088__regs_8h_source.html#l00166">BMI088_GYRO_ODR_100_BW_32</a>, <a class="el" href="bmi088__regs_8h_source.html#l00160">BMI088_GYRO_ODR_2000_BW_230</a>, <a class="el" href="bmi088__regs_8h_source.html#l00159">BMI088_GYRO_ODR_2000_BW_532</a>, <a class="el" href="bmi088__regs_8h_source.html#l00163">BMI088_GYRO_ODR_200_BW_23</a>, <a class="el" href="bmi088__regs_8h_source.html#l00165">BMI088_GYRO_ODR_200_BW_64</a>, <a class="el" href="bmi088__regs_8h_source.html#l00162">BMI088_GYRO_ODR_400_BW_47</a>, <a class="el" href="bmi088__regs_8h_source.html#l00082">BMI088_GYRO_RANGE</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="bmi088__regs_8h_source.html#l00132">BMI088_ACCEL_ACTIVE</a>, <a class="el" href="bmi088__regs_8h_source.html#l00054">BMI088_ACCEL_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00112">BMI088_ACCEL_ODR_100</a>, <a class="el" href="bmi088__regs_8h_source.html#l00109">BMI088_ACCEL_ODR_12</a>, <a class="el" href="bmi088__regs_8h_source.html#l00116">BMI088_ACCEL_ODR_1600</a>, <a class="el" href="bmi088__regs_8h_source.html#l00113">BMI088_ACCEL_ODR_200</a>, <a class="el" href="bmi088__regs_8h_source.html#l00110">BMI088_ACCEL_ODR_25</a>, <a class="el" href="bmi088__regs_8h_source.html#l00114">BMI088_ACCEL_ODR_400</a>, <a class="el" href="bmi088__regs_8h_source.html#l00111">BMI088_ACCEL_ODR_50</a>, <a class="el" href="bmi088__regs_8h_source.html#l00115">BMI088_ACCEL_ODR_800</a>, <a class="el" href="bmi088__regs_8h_source.html#l00141">BMI088_ACCEL_POWER_ON</a>, <a class="el" href="bmi088__regs_8h_source.html#l00063">BMI088_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00064">BMI088_ACCEL_PWR_CTRl</a>, <a class="el" href="bmi088__regs_8h_source.html#l00055">BMI088_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00101">BMI088_CONF_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00102">BMI088_CONF_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088_8h_source.html#l00103">BMI088_CONF_ACCEL_PWR_CTRL</a>, <a class="el" href="bmi088_8h_source.html#l00100">BMI088_CONF_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00107">BMI088_CONF_DONE</a>, <a class="el" href="bmi088_8h_source.html#l00105">BMI088_CONF_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00106">BMI088_CONF_GYRO_PWR</a>, <a class="el" href="bmi088_8h_source.html#l00104">BMI088_CONF_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00110">BMI088_CONFIG_ACCEL</a>, <a class="el" href="bmi088_8h_source.html#l00111">BMI088_CONFIG_GYRO</a>, <a class="el" href="bmi088__regs_8h_source.html#l00083">BMI088_GYRO_BAND_WIDTH</a>, <a class="el" href="bmi088__regs_8h_source.html#l00085">BMI088_GYRO_LPM_1</a>, <a class="el" href="bmi088__regs_8h_source.html#l00173">BMI088_GYRO_NORMAL</a>, <a class="el" href="bmi088__regs_8h_source.html#l00161">BMI088_GYRO_ODR_1000_BW_116</a>, <a class="el" href="bmi088__regs_8h_source.html#l00164">BMI088_GYRO_ODR_100_BW_12</a>, <a class="el" href="bmi088__regs_8h_source.html#l00166">BMI088_GYRO_ODR_100_BW_32</a>, <a class="el" href="bmi088__regs_8h_source.html#l00160">BMI088_GYRO_ODR_2000_BW_230</a>, <a class="el" href="bmi088__regs_8h_source.html#l00159">BMI088_GYRO_ODR_2000_BW_532</a>, <a class="el" href="bmi088__regs_8h_source.html#l00163">BMI088_GYRO_ODR_200_BW_23</a>, <a class="el" href="bmi088__regs_8h_source.html#l00165">BMI088_GYRO_ODR_200_BW_64</a>, <a class="el" href="bmi088__regs_8h_source.html#l00162">BMI088_GYRO_ODR_400_BW_47</a>, <a class="el" href="bmi088__regs_8h_source.html#l00082">BMI088_GYRO_RANGE</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bmi088__i2c_8c_source.html#l00093">bmi088_i2c_event()</a>, and <a class="el" href="bmi088__i2c_8c_source.html#l00067">bmi088_i2c_start_configure()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1066,9 +1074,9 @@ config done flag </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00070">70</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00061">61</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmi088_8h_source.html#l00119">Bmi088Config::accel_bw</a>, <a class="el" href="bmi088_8h_source.html#l00118">Bmi088Config::accel_odr</a>, <a class="el" href="bmi088_8h_source.html#l00117">Bmi088Config::accel_range</a>, <a class="el" href="bmi088_8h_source.html#l00045">BMI088_DEFAULT_ACCEL_BW</a>, <a class="el" href="bmi088_8h_source.html#l00043">BMI088_DEFAULT_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00041">BMI088_DEFAULT_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00039">BMI088_DEFAULT_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00037">BMI088_DEFAULT_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00116">Bmi088Config::gyro_odr</a>, and <a class="el" href="bmi088_8h_source.html#l00115">Bmi088Config::gyro_range</a>.</p>
+<p class="reference">References <a class="el" href="bmi088_8h_source.html#l00120">Bmi088Config::accel_bw</a>, <a class="el" href="bmi088_8h_source.html#l00119">Bmi088Config::accel_odr</a>, <a class="el" href="bmi088_8h_source.html#l00118">Bmi088Config::accel_range</a>, <a class="el" href="bmi088_8h_source.html#l00046">BMI088_DEFAULT_ACCEL_BW</a>, <a class="el" href="bmi088_8h_source.html#l00044">BMI088_DEFAULT_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00042">BMI088_DEFAULT_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00040">BMI088_DEFAULT_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00038">BMI088_DEFAULT_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00117">Bmi088Config::gyro_odr</a>, and <a class="el" href="bmi088_8h_source.html#l00116">Bmi088Config::gyro_range</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bmi088__i2c_8c_source.html#l00030">bmi088_i2c_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1109,12 +1117,12 @@ config done flag </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00052">52</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00047">47</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
 </div>
 </div>
-<a id="a4d9c09f013fce4f0a70fe73a56cd4dbc" name="a4d9c09f013fce4f0a70fe73a56cd4dbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d9c09f013fce4f0a70fe73a56cd4dbc">&#9670;&#160;</a></span>BMI088_ACCEL_SENS_FRAC</h2>
+<a id="a847e4d8511a9a27403018e622ee3c938" name="a847e4d8511a9a27403018e622ee3c938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847e4d8511a9a27403018e622ee3c938">&#9670;&#160;</a></span>BMI088_ACCEL_SENS_F</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1123,7 +1131,7 @@ config done flag </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> BMI088_ACCEL_SENS_FRAC[4][2]</td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> BMI088_ACCEL_SENS_F[4]</td>
         </tr>
       </table>
   </td>
@@ -1133,7 +1141,7 @@ config done flag </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00059">59</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00054">54</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>.</p>
 
@@ -1163,8 +1171,8 @@ config done flag </td></tr>
 
 </div>
 </div>
-<a id="a8d41db65aea9c5021c6ae7b35e307fea" name="a8d41db65aea9c5021c6ae7b35e307fea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d41db65aea9c5021c6ae7b35e307fea">&#9670;&#160;</a></span>BMI088_GYRO_SENS_FRAC</h2>
+<a id="a7420d17b916256bd8c88063a1e90ce9f" name="a7420d17b916256bd8c88063a1e90ce9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7420d17b916256bd8c88063a1e90ce9f">&#9670;&#160;</a></span>BMI088_GYRO_SENS_F</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1173,7 +1181,7 @@ config done flag </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> BMI088_GYRO_SENS_FRAC[5][2]</td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> BMI088_GYRO_SENS_F[5]</td>
         </tr>
       </table>
   </td>
@@ -1195,7 +1203,7 @@ config done flag </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="bmi088_8h.html">bmi088.h</a></li>
-    <li class="footer">Generated on Wed Jun 25 2025 10:42:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jun 25 2025 11:32:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

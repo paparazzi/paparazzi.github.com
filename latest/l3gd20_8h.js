@@ -5,8 +5,7 @@ var l3gd20_8h =
       [ "full_scale", "l3gd20_8h.html#ac7313d1c10e17e2f2bf6e6fc36bb562d", null ],
       [ "spi_3_wire", "l3gd20_8h.html#ac5faaf4b33125fe3a6ed619f7d96c703", null ]
     ] ],
-    [ "L3GD20_SENS_2000_DEN", "l3gd20_8h.html#a98a80bf13f6892049ad849855d0cf090", null ],
-    [ "L3GD20_SENS_2000_NUM", "l3gd20_8h.html#ac30db293c1894272ee0357a45c76719e", null ],
+    [ "L3GD20_SENS_2000", "l3gd20_8h.html#ae6049da9c8ab800bdc1643f8c0d08cb3", null ],
     [ "L3gd20ConfStatus", "l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8d", [
       [ "L3G_CONF_UNINIT", "l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da0d6decaf2e866985fa08a185a5da4c65", null ],
       [ "L3G_CONF_WHO_AM_I", "l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da7708a9b4a9bc651d5d9278a8b06f88bd", null ],
