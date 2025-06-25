@@ -703,14 +703,14 @@ $(document).ready(function(){initNavTree('tawaki__v2_80_8h_source.html',''); ini
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno"><a class="line" href="tawaki__v2_80_8h.html#a73180441e4e94e67eac7d518dc8958a6">  648</a></span><span class="preprocessor">#define STM32_CR1_DNF(n)          ((n &amp; 0x0f) &lt;&lt; 8)</span></div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="comment">// Timing register</span></div>
 <div class="foldopen" id="foldopen00650" data-start="" data-end="">
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno"><a class="line" href="tawaki__v2_80_8h.html#a230d2286ce6ac184baf766ab01b0f001">  650</a></span><span class="preprocessor">#define I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR  (STM32_TIMINGR_PRESC(0U) | \</span></div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="preprocessor">    STM32_TIMINGR_SCLDEL(10U) | STM32_TIMINGR_SDADEL(0U) | \</span></div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="preprocessor">    STM32_TIMINGR_SCLH(34U)  | STM32_TIMINGR_SCLL(86U))</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno"><a class="line" href="tawaki__v2_80_8h.html#aa1b79e1b23e092e8a80a86379e751647">  650</a></span><span class="preprocessor">#define I2C_FAST_400KHZ_DNF0_100NS_PCLK120MHZ_TIMINGR  (STM32_TIMINGR_PRESC(0U) | \</span></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="preprocessor">    STM32_TIMINGR_SCLDEL(11U) | STM32_TIMINGR_SDADEL(0U) | \</span></div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="preprocessor">    STM32_TIMINGR_SCLH(63U)  | STM32_TIMINGR_SCLL(219U))</span></div>
 </div>
 <div class="foldopen" id="foldopen00653" data-start="" data-end="">
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno"><a class="line" href="tawaki__v2_80_8h.html#a6665dd800b13af54d4e6853e144c1602">  653</a></span><span class="preprocessor">#define I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR  (STM32_TIMINGR_PRESC(1U) | \</span></div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="preprocessor">    STM32_TIMINGR_SCLDEL(9U) | STM32_TIMINGR_SDADEL(0U) | \</span></div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="preprocessor">    STM32_TIMINGR_SCLH(105U)  | STM32_TIMINGR_SCLL(153U))</span></div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno"><a class="line" href="tawaki__v2_80_8h.html#a06ec645a092dfdbf0082930608837ff6">  653</a></span><span class="preprocessor">#define I2C_STD_100KHZ_DNF0_100NS_PCLK120MHZ_TIMINGR  (STM32_TIMINGR_PRESC(3U) | \</span></div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="preprocessor">    STM32_TIMINGR_SCLDEL(7U) | STM32_TIMINGR_SDADEL(0U) | \</span></div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="preprocessor">    STM32_TIMINGR_SCLH(117U)  | STM32_TIMINGR_SCLL(177U))</span></div>
 </div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
@@ -722,13 +722,13 @@ $(document).ready(function(){initNavTree('tawaki__v2_80_8h_source.html',''); ini
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="preprocessor">#if I2C4_CLOCK_SPEED == 400000</span></div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="preprocessor">#define I2C4_CFG_DEF { \</span></div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">  .timingr = I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR, \</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">  .timingr = I2C_FAST_400KHZ_DNF0_100NS_PCLK120MHZ_TIMINGR, \</span></div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="preprocessor">  .cr1 = STM32_CR1_DNF(0), \</span></div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span><span class="preprocessor">  .cr2 = 0 \</span></div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span><span class="preprocessor">#elif I2C4_CLOCK_SPEED == 100000</span></div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="preprocessor">#define I2C4_CFG_DEF { \</span></div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span><span class="preprocessor">  .timingr = I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR, \</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span><span class="preprocessor">  .timingr = I2C_STD_100KHZ_DNF0_100NS_PCLK120MHZ_TIMINGR, \</span></div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span><span class="preprocessor">  .cr1 = STM32_CR1_DNF(0), \</span></div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span><span class="preprocessor">  .cr2 = 0 \</span></div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span><span class="preprocessor">}</span></div>
@@ -744,13 +744,13 @@ $(document).ready(function(){initNavTree('tawaki__v2_80_8h_source.html',''); ini
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span><span class="preprocessor">#if I2C2_CLOCK_SPEED == 400000</span></div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="preprocessor">#define I2C2_CFG_DEF { \</span></div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">  .timingr = I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR, \</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">  .timingr = I2C_FAST_400KHZ_DNF0_100NS_PCLK120MHZ_TIMINGR, \</span></div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="preprocessor">  .cr1 = STM32_CR1_DNF(0), \</span></div>
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span><span class="preprocessor">  .cr2 = 0 \</span></div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="preprocessor">#elif I2C2_CLOCK_SPEED == 100000</span></div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="preprocessor">#define I2C2_CFG_DEF { \</span></div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="preprocessor">  .timingr = I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR, \</span></div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="preprocessor">  .timingr = I2C_STD_100KHZ_DNF0_100NS_PCLK120MHZ_TIMINGR, \</span></div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span><span class="preprocessor">  .cr1 = STM32_CR1_DNF(0), \</span></div>
 <div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><span class="preprocessor">  .cr2 = 0 \</span></div>
 <div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor">}</span></div>
@@ -852,7 +852,7 @@ $(document).ready(function(){initNavTree('tawaki__v2_80_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a602d89a86e137af83bdeb12fdb83ab8.html">tawaki</a></li><li class="navelem"><a class="el" href="dir_dde4e65440e7233a57508cfa01e8df78.html">chibios</a></li><li class="navelem"><a class="el" href="dir_73fd8c806e6a2bef79ba3936d0df6d69.html">v2.0</a></li><li class="navelem"><a class="el" href="tawaki__v2_80_8h.html">tawaki_v2.0.h</a></li>
-    <li class="footer">Generated on Wed Jun 25 2025 11:32:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jun 25 2025 15:20:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
