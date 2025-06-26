@@ -1,5 +1,6 @@
 var NAVTREEINDEX190 =
 {
+"rover__guidance_8h.html#structRoverGuidance":[12,0,1,0,3,3,0,1,3],
 "rover__guidance_8h.html#structRoverGuidanceControl":[12,0,1,0,3,3,0,1,2],
 "rover__guidance_8h.html#structRoverGuidancePID":[12,0,1,0,3,3,0,1,1],
 "rover__guidance_8h.html#structRoverGuidanceSetpoint":[12,0,1,0,3,3,0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX190 =
 "rtp_8c.html#a31d0efc8803ccbb83cb0b713e69ff16f":[12,0,1,0,6,12,1,0,2,5],
 "rtp_8c.html#a48935ae64e807c8846511290895c8e25":[12,0,1,0,6,12,1,0,2,9],
 "rtp_8c.html#a68c5090a81a6cd53476de7385580b673":[12,0,1,0,6,12,1,0,2,1],
-"rtp_8c.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e":[12,0,1,0,6,12,1,0,2,6],
-"rtp_8c.html#a879456c3b8e2853f7044d764e9c180d4":[12,0,1,0,6,12,1,0,2,4]
+"rtp_8c.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e":[12,0,1,0,6,12,1,0,2,6]
 };

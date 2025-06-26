@@ -1,5 +1,6 @@
 var NAVTREEINDEX202 =
 {
+"structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,1055,3],
 "structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa":[11,0,1055,0],
 "structUSBMassStorageConfig.html#a4a36198660a33ab658a397f5512d0117":[11,0,1055,4],
 "structUSBMassStorageConfig.html#a4ed2afe90449fca523bf5894dc3087ec":[11,0,1055,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX202 =
 "sys__id__chirp_8c_source.html":[12,0,1,0,6,69,8],
 "sys__id__chirp_8h.html":[12,0,1,0,6,69,9],
 "sys__id__chirp_8h.html#a0fee5f0e231935f156e57f48fbc3042b":[12,0,1,0,6,69,9,5],
-"sys__id__chirp_8h.html#a1cbb8a4687136879c07c39f554566a2c":[12,0,1,0,6,69,9,19],
-"sys__id__chirp_8h.html#a30a32b86811617f6c4fbd754c01ecbb8":[12,0,1,0,6,69,9,17]
+"sys__id__chirp_8h.html#a1cbb8a4687136879c07c39f554566a2c":[12,0,1,0,6,69,9,19]
 };

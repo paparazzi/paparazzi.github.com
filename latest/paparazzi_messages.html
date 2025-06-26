@@ -272,6 +272,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#AEROPROBE">AEROPROBE (ID 179)</a></li>
 <li class="level2"><a href="#FMS_TIME">FMS_TIME (ID 180)</a></li>
 <li class="level2"><a href="#ROTATING_WING_STATE">ROTATING_WING_STATE (ID 181)</a></li>
+<li class="level2"><a href="#GVF_IK">GVF_IK (ID 182)</a></li>
 <li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
 <li class="level2"><a href="#GUIDANCE">GUIDANCE (ID 184)</a></li>
 <li class="level2"><a href="#EFF_MAT_STAB">EFF_MAT_STAB (ID 185)</a></li>
@@ -1643,15 +1644,25 @@ GVF (ID 71)</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">error   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Error index e, i.e. 'distance' to the trajectory    </td></tr>
+<td class="markdownTableBodyNone">error   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Deviation from the trajectory's implicit equation    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">traj   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Kind of trajectory    </td></tr>
+<td class="markdownTableBodyNone">traj   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Type of trajectory being followed    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">1, -1   </td><td class="markdownTableBodyNone">Direction to be followed    </td></tr>
+<td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">1, -1   </td><td class="markdownTableBodyNone">Direction of travel along the trajectory (1 for forward, -1 for reverse)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ke   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Gain for the vector field convergence    </td></tr>
+<td class="markdownTableBodyNone">ke   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Gain controlling convergence to the trajectory    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">p   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Parameters describing the trajectory   </td></tr>
+<td class="markdownTableBodyNone">p   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Parameters defining the trajectory shape or behavior (provided to PprzGCS)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">error_n   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Lateral alignment error relative to the trajectory    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">n_norm   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Magnitude of the normal component of the vector field at the level set    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">t_norm   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Magnitude of the tangential component of the vector field at the level set    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">omega_d   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Desired angular velocity for correct tracking once aligned    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">omega   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Current angular velocity command from the 2D GVF controller   </td></tr>
 </table>
 <h2><a class="anchor" id="SUPERBITRF"></a>
 SUPERBITRF (ID 72)</h2>
@@ -3746,6 +3757,23 @@ ROTATING_WING_STATE (ID 181)</h2>
 <td class="markdownTableBodyNone">min_airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Minimum airspeed bound for NAV    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Maximum airspeed bound for NAV   </td></tr>
+</table>
+<h2><a class="anchor" id="GVF_IK"></a>
+GVF_IK (ID 182)</h2>
+<p>Information about the trajectory followed by the Inverse Kinematics Guidance Vector Field (IK-GVF) algorithm and its control-related variables.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">error   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">GVF-IK error (phi - gamma(t))    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">gamma   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Value of gamma(t)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">gamma_dot   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Time variation of gamma(t)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">gamma_A   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Amplitude of gamma(t)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">gamma_omega   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Angular speed of gamma(t)   </td></tr>
 </table>
 <h2><a class="anchor" id="DOUBLET"></a>
 DOUBLET (ID 183)</h2>
@@ -7094,7 +7122,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 25 2025 15:20:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jun 26 2025 07:07:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

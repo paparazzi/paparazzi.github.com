@@ -1,5 +1,6 @@
 var NAVTREEINDEX196 =
 {
+"spektrum_8h.html#a34bde4825564dd5772d4d0769f7b6a49":[12,0,1,0,6,56,20,1,1],
 "spektrum_8h.html#a4a214855d33381ed304a4d435f20fda6":[12,0,1,0,6,56,20,0,2],
 "spektrum_8h.html#a4c8ee69a3ef5b1649f77d0365e81b827":[12,0,1,0,6,56,20,1,3],
 "spektrum_8h.html#a517052ed84ee3572639cd687fab897d4":[12,0,1,0,6,56,20,7],
@@ -245,9 +246,8 @@ var NAVTREEINDEX196 =
 "stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad":[12,0,1,0,3,2,24,37],
 "stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a":[12,0,1,0,3,2,24,27],
 "stabilization_8h.html#af1bb87c9fa89d61c47e4832c274de406":[12,0,1,0,3,2,24,2,3],
-"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,24,5,0],
 "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,24,4,0],
+"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,24,5,0],
 "stabilization_8h.html#af997ac8db0c8ededc57d411e8caa47b2":[12,0,1,0,3,2,24,31],
-"stabilization_8h.html#aff1c34e4df8582150dd77b44ae73a1db":[12,0,1,0,3,2,24,51],
-"stabilization_8h.html#structStabilization":[12,0,1,0,3,2,24,2]
+"stabilization_8h.html#aff1c34e4df8582150dd77b44ae73a1db":[12,0,1,0,3,2,24,51]
 };

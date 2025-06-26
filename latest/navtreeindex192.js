@@ -1,5 +1,6 @@
 var NAVTREEINDEX192 =
 {
+"sdcard__spi_8h.html":[12,0,1,0,7,126],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7":[12,0,1,0,7,126,4],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7a07739a16a859fe0c65f8d034284fb839":[12,0,1,0,7,126,4,17],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7a1352ce97e6c640ed6fd46ba772a5f0b3":[12,0,1,0,7,126,4,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX192 =
 "serial_8h.html#a8721c1e544f70f5bf4b1a1410d973241":[12,0,1,0,6,19,0,6,2],
 "serial_8h_source.html":[12,0,1,0,6,19,0,6],
 "serial__port_8c.html":[12,0,1,0,0,1,6],
-"serial__port_8c.html#a114bd0b279c986fe4425fbcce8206709":[12,0,1,0,0,1,6,2],
-"serial__port_8c.html#a284ae9d2d38a7df3c304fb9e08868595":[12,0,1,0,0,1,6,4]
+"serial__port_8c.html#a114bd0b279c986fe4425fbcce8206709":[12,0,1,0,0,1,6,2]
 };
