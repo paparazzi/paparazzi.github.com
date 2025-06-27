@@ -1,5 +1,9 @@
 var NAVTREEINDEX132 =
 {
+"module__nav_fish.html#functions__nav_fish":[1,331,2],
+"module__nav_fish.html#module_load_example__nav_fish":[1,331,0],
+"module__nav_fish.html#module_xml__nav_fish":[1,331,2,0],
+"module__nav_flower.html":[1,332],
 "module__nav_flower.html#functions__nav_flower":[1,332,1],
 "module__nav_flower.html#module_load_example__nav_flower":[1,332,0],
 "module__nav_flower.html#module_xml__nav_flower":[1,332,1,0],
@@ -214,7 +218,6 @@ var NAVTREEINDEX132 =
 "module__power_switch.html#module_load_example__power_switch":[1,46,0],
 "module__power_switch.html#module_xml__power_switch":[1,46,1,0],
 "module__power_uavcan.html":[1,424],
-"module__power_uavcan.html#af_section":[1,424,1,0],
 "module__power_uavcan.html#configuration__power_uavcan":[1,424,1],
 "module__power_uavcan.html#functions__power_uavcan":[1,424,2],
 "module__power_uavcan.html#module_load_example__power_uavcan":[1,424,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__px4flow.html#configuration__px4flow":[1,364,1],
 "module__px4flow.html#functions__px4flow":[1,364,2],
 "module__px4flow.html#module_load_example__px4flow":[1,364,0],
-"module__px4flow.html#module_xml__px4flow":[1,364,2,0],
-"module__px4flow_i2c.html":[1,365],
-"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,365,1],
-"module__px4flow_i2c.html#functions__px4flow_i2c":[1,365,2]
+"module__px4flow.html#module_xml__px4flow":[1,364,2,0]
 };

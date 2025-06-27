@@ -1,14 +1,13 @@
 var NAVTREEINDEX130 =
 {
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,197,0],
-"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,197,0,0],
 "module__imu_aspirin_v1_5.html":[1,198],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,198,0],
+"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,198,0,0],
 "module__imu_aspirin_v2_1.html":[1,199],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,199,0],
+"module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,199,0,0],
 "module__imu_aspirin_v2_2.html":[1,200],
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,200,0],
-"module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2":[1,200,0,0],
 "module__imu_aspirin_v2_common.html":[1,201],
 "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,201,1],
 "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,201,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__intermcu_iomcu.html#module_xml__intermcu_iomcu":[1,253,1,0],
 "module__intermcu_uart.html":[1,254],
 "module__intermcu_uart.html#configuration__intermcu_uart":[1,254,1],
-"module__intermcu_uart.html#datalink_functions__intermcu_uart":[1,254,3]
+"module__intermcu_uart.html#datalink_functions__intermcu_uart":[1,254,3],
+"module__intermcu_uart.html#functions__intermcu_uart":[1,254,2]
 };

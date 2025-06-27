@@ -396,7 +396,10 @@ var NAVTREE =
       ] ],
       [ "generic_com module", "module__generic_com.html", [
         [ "Example for airframe file", "module__generic_com.html#module_load_example__generic_com", null ],
-        [ "Module configuration options", "module__generic_com.html#configuration__generic_com", null ],
+        [ "Module configuration options", "module__generic_com.html#configuration__generic_com", [
+          [ "Configure Options", "module__generic_com.html#configure", null ],
+          [ "Define Options", "module__generic_com.html#define", null ]
+        ] ],
         [ "Module functions", "module__generic_com.html#functions__generic_com", [
           [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
         ] ]
@@ -415,7 +418,9 @@ var NAVTREE =
       ] ],
       [ "bebop_ae_awb module", "module__bebop_ae_awb.html", [
         [ "Example for airframe file", "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb", null ],
-        [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", null ],
+        [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", [
+          [ "Airframe file section", "module__bebop_ae_awb.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__bebop_ae_awb.html#functions__bebop_ae_awb", [
           [ "Raw bebop_ae_awb.xml file:", "module__bebop_ae_awb.html#module_xml__bebop_ae_awb", null ]
         ] ]
@@ -606,11 +611,6 @@ var NAVTREE =
       [ "state_interface module", "module__state_interface.html", [
         [ "Example for airframe file", "module__state_interface.html#module_load_example__state_interface", null ],
         [ "Module functions", "module__state_interface.html#functions__state_interface", [
-          [ "Init Functions", "module__state_interface.html#init_functions", null ]
-        ] ],
-        [ "Files", "module__state_interface.html#files", [
-          [ "Header Files", "module__state_interface.html#headers", null ],
-          [ "Source Files", "module__state_interface.html#sources", null ],
           [ "Raw state_interface.xml file:", "module__state_interface.html#module_xml__state_interface", null ]
         ] ]
       ] ],
@@ -870,6 +870,7 @@ var NAVTREE =
       [ "telemetry_transparent_gec module", "module__telemetry_transparent_gec.html", [
         [ "Example for airframe file", "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec", null ],
         [ "Module functions", "module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec", [
+          [ "Event Functions", "module__telemetry_transparent_gec.html#event_functions", null ],
           [ "Raw telemetry_transparent_gec.xml file:", "module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec", null ]
         ] ]
       ] ],
@@ -996,6 +997,12 @@ var NAVTREE =
       [ "mppt module", "module__mppt.html", [
         [ "Example for airframe file", "module__mppt.html#module_load_example__mppt", null ],
         [ "Module functions", "module__mppt.html#functions__mppt", [
+          [ "Init Functions", "module__mppt.html#init_functions", null ],
+          [ "Periodic Functions", "module__mppt.html#periodic_functions", null ]
+        ] ],
+        [ "Files", "module__mppt.html#files", [
+          [ "Header Files", "module__mppt.html#headers", null ],
+          [ "Source Files", "module__mppt.html#sources", null ],
           [ "Raw MPPT.xml file:", "module__mppt.html#module_xml__mppt", null ]
         ] ]
       ] ],
@@ -1093,12 +1100,8 @@ var NAVTREE =
       ] ],
       [ "gps_mediatek_diy module", "module__gps_mediatek_diy.html", [
         [ "Example for airframe file", "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy", null ],
-        [ "Module configuration options", "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy", [
-          [ "Configure Options", "module__gps_mediatek_diy.html#configure", null ]
-        ] ],
+        [ "Module configuration options", "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy", null ],
         [ "Module functions", "module__gps_mediatek_diy.html#functions__gps_mediatek_diy", [
-          [ "Event Functions", "module__gps_mediatek_diy.html#event_functions", null ],
-          [ "Periodic Functions", "module__gps_mediatek_diy.html#periodic_functions", null ],
           [ "Raw gps_mediatek_diy.xml file:", "module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy", null ]
         ] ]
       ] ],
@@ -1324,28 +1327,28 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+          [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-          [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
       ] ],
       [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -2611,9 +2614,7 @@ var NAVTREE =
       ] ],
       [ "baro_amsys module", "module__baro_amsys.html", [
         [ "Example for airframe file", "module__baro_amsys.html#module_load_example__baro_amsys", null ],
-        [ "Module configuration options", "module__baro_amsys.html#configuration__baro_amsys", [
-          [ "Define Options", "module__baro_amsys.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__baro_amsys.html#configuration__baro_amsys", null ],
         [ "Module functions", "module__baro_amsys.html#functions__baro_amsys", [
           [ "Raw baro_amsys.xml file:", "module__baro_amsys.html#module_xml__baro_amsys", null ]
         ] ]
@@ -2794,9 +2795,7 @@ var NAVTREE =
       ] ],
       [ "power_uavcan module", "module__power_uavcan.html", [
         [ "Example for airframe file", "module__power_uavcan.html#module_load_example__power_uavcan", null ],
-        [ "Module configuration options", "module__power_uavcan.html#configuration__power_uavcan", [
-          [ "Airframe file section", "module__power_uavcan.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__power_uavcan.html#configuration__power_uavcan", null ],
         [ "Module functions", "module__power_uavcan.html#functions__power_uavcan", [
           [ "Raw power_uavcan.xml file:", "module__power_uavcan.html#module_xml__power_uavcan", null ]
         ] ]
@@ -3976,14 +3975,14 @@ var NAVTREEINDEX =
 "median__filter_8h.html#a46a823b547fbf28d0dcc590bcfb0fdc8",
 "microrl_8h.html#a0245d362c9a5b0ec4d563f55b3c9e0be",
 "module__actuators_esc32.html#module_xml__actuators_esc32",
-"module__baro_ms5534a.html#module_load_example__baro_ms5534a",
+"module__baro_ms5534a.html#module_xml__baro_ms5534a",
 "module__digital_cam.html#module_load_example__digital_cam",
-"module__gps_intermcu.html#module_load_example__gps_intermcu",
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0",
-"module__intermcu_uart.html#functions__intermcu_uart",
-"module__nav_flower.html#functions__nav_flower",
-"module__px4flow_i2c.html#module_load_example__px4flow_i2c",
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid",
+"module__gps_intermcu.html#datalink_functions__gps_intermcu",
+"module__imu_aspirin_v1_5.html",
+"module__intermcu_uart.html#module_load_example__intermcu_uart",
+"module__nav_fish.html#functions__nav_fish",
+"module__px4flow_i2c.html",
+"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid",
 "module__wedgebug.html#functions__wedgebug",
 "modules_2sensors_2baro__MS5534A_8h.html",
 "mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5",

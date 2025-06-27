@@ -1,6 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__intermcu_uart.html#functions__intermcu_uart":[1,254,2],
 "module__intermcu_uart.html#module_load_example__intermcu_uart":[1,254,0],
 "module__intermcu_uart.html#module_xml__intermcu_uart":[1,254,3,0],
 "module__ir_mlx.html":[1,298],
@@ -216,9 +215,14 @@ var NAVTREEINDEX131 =
 "module__motor_mixing.html#module_load_example__motor_mixing":[1,20,0],
 "module__motor_mixing.html#module_xml__motor_mixing":[1,20,2,0],
 "module__mppt.html":[1,144],
+"module__mppt.html#files":[1,144,2],
 "module__mppt.html#functions__mppt":[1,144,1],
+"module__mppt.html#headers":[1,144,2,0],
+"module__mppt.html#init_functions":[1,144,1,0],
 "module__mppt.html#module_load_example__mppt":[1,144,0],
-"module__mppt.html#module_xml__mppt":[1,144,1,0],
+"module__mppt.html#module_xml__mppt":[1,144,2,2],
+"module__mppt.html#periodic_functions":[1,144,1,1],
+"module__mppt.html#sources":[1,144,2,1],
 "module__nav_basic_fw.html":[1,325],
 "module__nav_basic_fw.html#configuration__nav_basic_fw":[1,325,1],
 "module__nav_basic_fw.html#datalink_functions__nav_basic_fw":[1,325,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX131 =
 "module__nav_drop.html#module_load_example__nav_drop":[1,330,0],
 "module__nav_drop.html#module_xml__nav_drop":[1,330,0,0],
 "module__nav_fish.html":[1,331],
-"module__nav_fish.html#configuration__nav_fish":[1,331,1],
-"module__nav_fish.html#functions__nav_fish":[1,331,2],
-"module__nav_fish.html#module_load_example__nav_fish":[1,331,0],
-"module__nav_fish.html#module_xml__nav_fish":[1,331,2,0],
-"module__nav_flower.html":[1,332]
+"module__nav_fish.html#configuration__nav_fish":[1,331,1]
 };

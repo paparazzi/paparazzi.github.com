@@ -205,7 +205,6 @@ var NAVTREEINDEX126 =
 "module__ballistic_touchdown.html#module_xml__ballistic_touchdown":[1,323,1,0],
 "module__baro_amsys.html":[1,397],
 "module__baro_amsys.html#configuration__baro_amsys":[1,397,1],
-"module__baro_amsys.html#define":[1,397,1,0],
 "module__baro_amsys.html#functions__baro_amsys":[1,397,2],
 "module__baro_amsys.html#module_load_example__baro_amsys":[1,397,0],
 "module__baro_amsys.html#module_xml__baro_amsys":[1,397,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX126 =
 "module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,405,0],
 "module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,405,2,0],
 "module__baro_ms5534a.html":[1,396],
-"module__baro_ms5534a.html#functions__baro_ms5534a":[1,396,1]
+"module__baro_ms5534a.html#functions__baro_ms5534a":[1,396,1],
+"module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,396,0]
 };

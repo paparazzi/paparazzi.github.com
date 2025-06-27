@@ -207,6 +207,8 @@ var NAVTREEINDEX128 =
 "module__geiger_counter.html#module_xml__geiger_counter":[1,290,1,0],
 "module__generic_com.html":[1,53],
 "module__generic_com.html#configuration__generic_com":[1,53,1],
+"module__generic_com.html#configure":[1,53,1,0],
+"module__generic_com.html#define":[1,53,1,1],
 "module__generic_com.html#functions__generic_com":[1,53,2],
 "module__generic_com.html#module_load_example__generic_com":[1,53,0],
 "module__generic_com.html#module_xml__generic_com":[1,53,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "module__gps_furuno.html#functions__gps_furuno":[1,158,2],
 "module__gps_furuno.html#module_load_example__gps_furuno":[1,158,0],
 "module__gps_furuno.html#module_xml__gps_furuno":[1,158,2,0],
-"module__gps_intermcu.html":[1,159],
-"module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,159,2],
-"module__gps_intermcu.html#functions__gps_intermcu":[1,159,1]
+"module__gps_intermcu.html":[1,159]
 };

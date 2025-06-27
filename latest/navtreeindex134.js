@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,455,1],
 "module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,455,2],
 "module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,455,0],
 "module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,455,2,0],
@@ -117,9 +116,10 @@ var NAVTREEINDEX134 =
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,124,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,124,1,0],
 "module__telemetry_transparent_gec.html":[1,125],
+"module__telemetry_transparent_gec.html#event_functions":[1,125,1,0],
 "module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,125,1],
 "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec":[1,125,0],
-"module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,125,1,0],
+"module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,125,1,1],
 "module__telemetry_transparent_udp.html":[1,126],
 "module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp":[1,126,1],
 "module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp":[1,126,2],

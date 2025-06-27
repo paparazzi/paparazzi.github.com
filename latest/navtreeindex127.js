@@ -1,6 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,396,0],
 "module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,396,1,0],
 "module__baro_ms5611_i2c.html":[1,406],
 "module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,406,1],
@@ -36,6 +35,7 @@ var NAVTREEINDEX127 =
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,22,0],
 "module__battery_monitor.html#module_xml__battery_monitor":[1,22,2,0],
 "module__bebop_ae_awb.html":[1,56],
+"module__bebop_ae_awb.html#af_section":[1,56,1,0],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,56,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,56,2],
 "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,56,0],
