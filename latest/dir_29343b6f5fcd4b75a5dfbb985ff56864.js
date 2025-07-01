@@ -9,6 +9,8 @@ var dir_29343b6f5fcd4b75a5dfbb985ff56864 =
     [ "pprz_algebra_float.h", "pprz__algebra__float_8h.html", "pprz__algebra__float_8h" ],
     [ "pprz_algebra_int.c", "pprz__algebra__int_8c.html", "pprz__algebra__int_8c" ],
     [ "pprz_algebra_int.h", "pprz__algebra__int_8h.html", "pprz__algebra__int_8h" ],
+    [ "pprz_circfit_float.c", "pprz__circfit__float_8c.html", "pprz__circfit__float_8c" ],
+    [ "pprz_circfit_float.h", "pprz__circfit__float_8h.html", "pprz__circfit__float_8h" ],
     [ "pprz_geodetic.h", "pprz__geodetic_8h.html", "pprz__geodetic_8h" ],
     [ "pprz_geodetic_double.c", "pprz__geodetic__double_8c.html", "pprz__geodetic__double_8c" ],
     [ "pprz_geodetic_double.h", "pprz__geodetic__double_8h.html", "pprz__geodetic__double_8h" ],

@@ -140,19 +140,21 @@ $(document).ready(function(){initNavTree('nav__rotorcraft__base_8h.html',''); in
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__rotorcraft__base_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2nav_2nav__rotorcraft__base_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2nav_2nav__rotorcraft__base_8hdep" id="asw_2airborne_2modules_2nav_2nav__rotorcraft__base_8hdep">
-<area shape="rect" title=" " alt="" coords="319,5,477,60"/>
-<area shape="rect" href="nav__poles__rotorcraft_8c.html" title="Turn around 2 points, with possible margins Can be used in mission mode." alt="" coords="5,115,204,155"/>
-<area shape="poly" title=" " alt="" coords="310,67,161,118,159,113,308,62"/>
-<area shape="rect" href="nav__rotorcraft__base_8c.html" title=" " alt="" coords="228,108,387,163"/>
-<area shape="poly" title=" " alt="" coords="367,72,333,110,329,106,363,69"/>
-<area shape="rect" href="nav__rotorcraft__hybrid_8h.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="411,108,569,163"/>
-<area shape="poly" title=" " alt="" coords="433,69,468,106,464,110,429,72"/>
-<area shape="rect" href="nav__survey__hybrid_8c.html" title="This routine will cover the enitre area of any Polygon defined in the flightplan which is a convex po..." alt="" coords="593,115,781,155"/>
-<area shape="poly" title=" " alt="" coords="487,62,634,113,632,118,486,67"/>
-<area shape="rect" href="oneloop__andi_8c.html" title=" " alt="" coords="289,211,488,265"/>
-<area shape="poly" title=" " alt="" coords="455,175,417,212,413,209,452,171"/>
-<area shape="rect" href="nav__rotorcraft__hybrid_8c.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="512,211,671,265"/>
-<area shape="poly" title=" " alt="" coords="528,171,567,209,563,212,525,175"/>
+<area shape="rect" title=" " alt="" coords="475,5,634,60"/>
+<area shape="rect" href="airspeed__consistency_8c.html" title=" " alt="" coords="5,115,229,155"/>
+<area shape="poly" title=" " alt="" coords="462,58,200,118,198,113,461,53"/>
+<area shape="rect" href="nav__poles__rotorcraft_8c.html" title="Turn around 2 points, with possible margins Can be used in mission mode." alt="" coords="253,115,451,155"/>
+<area shape="poly" title=" " alt="" coords="491,68,392,117,389,113,489,64"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html" title=" " alt="" coords="475,108,634,163"/>
+<area shape="poly" title=" " alt="" coords="557,74,557,108,552,108,552,74"/>
+<area shape="rect" href="nav__rotorcraft__hybrid_8h.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="658,108,817,163"/>
+<area shape="poly" title=" " alt="" coords="615,64,691,105,688,110,613,69"/>
+<area shape="rect" href="nav__survey__hybrid_8c.html" title="This routine will cover the enitre area of any Polygon defined in the flightplan which is a convex po..." alt="" coords="841,115,1029,155"/>
+<area shape="poly" title=" " alt="" coords="648,56,864,113,863,118,647,61"/>
+<area shape="rect" href="oneloop__andi_8c.html" title=" " alt="" coords="537,211,735,265"/>
+<area shape="poly" title=" " alt="" coords="703,175,664,212,661,209,699,171"/>
+<area shape="rect" href="nav__rotorcraft__hybrid_8c.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="759,211,918,265"/>
+<area shape="poly" title=" " alt="" coords="776,171,814,209,810,212,772,175"/>
 </map>
 </div>
 </div>
@@ -480,7 +482,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav__rotorcraft__base_8c_source.html#l00031">31</a> of file <a class="el" href="nav__rotorcraft__base_8c_source.html">nav_rotorcraft_base.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__rotorcraft__base_8c_source.html#l00170">_nav_oval_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00114">nav_circle()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00261">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00121">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00157">nav_hybrid_route()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00176">nav_oval()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00330">nav_rotorcraft_hybrid_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00302">nav_rotorcraft_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00035">nav_stage_init()</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00281">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__rotorcraft__base_8c_source.html#l00170">_nav_oval_init()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00067">airspeed_consistency_periodic()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00114">nav_circle()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00261">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00121">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00157">nav_hybrid_route()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00176">nav_oval()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00330">nav_rotorcraft_hybrid_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00302">nav_rotorcraft_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00035">nav_stage_init()</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00281">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -490,7 +492,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__rotorcraft__base_8h.html">nav_rotorcraft_base.h</a></li>
-    <li class="footer">Generated on Fri Jun 27 2025 16:17:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Jul 1 2025 08:13:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
