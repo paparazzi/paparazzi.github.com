@@ -1030,7 +1030,7 @@ var searchData=
   ['reg_5ftx_5fmem_1027',['REG_TX_MEM',['../w5100_8c.html#a7a2cb6f59c40efdd86c06d66ba775ab1',1,'w5100.c']]],
   ['regid_1028',['regid',['../VN100_8h.html#a11355ffb4b3a9f416f298f8bb14db232',1,'VN100_Res_Packet::RegID'],['../VN100_8h.html#afc67a1c0741d1cf924678307e5f34972',1,'VN100_Req_Packet::RegID']]],
   ['register_5fbank_1029',['register_bank',['../invensense2_8h.html#a5a023d2d0501a3702f3a8ccbbe69384d',1,'invensense2_t::register_bank'],['../invensense3_8h.html#a1c8912c619d09a5122279390b7438474',1,'invensense3_t::register_bank']]],
-  ['register_5fperiodic_5ftelemetry_1030',['register_periodic_telemetry',['../telemetry__common_8h.html#a8b8cf43739f06c54d16370c141b541a0',1,'register_periodic_telemetry(struct periodic_telemetry *_pt, uint8_t _id, telemetry_cb _cb):&#160;telemetry.c'],['../telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0',1,'register_periodic_telemetry(struct periodic_telemetry *_pt, uint8_t _id, telemetry_cb _cb):&#160;telemetry.c']]],
+  ['register_5fperiodic_5ftelemetry_1030',['register_periodic_telemetry',['../telemetry__common_8h.html#a7caab442e31bff660862d3372fd9737c',1,'register_periodic_telemetry(struct periodic_telemetry *_pt, uint16_t _id, telemetry_cb _cb):&#160;telemetry.c'],['../telemetry_8c.html#a7caab442e31bff660862d3372fd9737c',1,'register_periodic_telemetry(struct periodic_telemetry *_pt, uint16_t _id, telemetry_cb _cb):&#160;telemetry.c']]],
   ['registered_1031',['registered',['../mission__common_8h.html#a693ef605edb09a0259bc2009ddbaef65',1,'_mission']]],
   ['regs_1032',['regs',['../px4__flash_2protocol_8h.html#af93bcc4da79998ee51b20acb2b117233',1,'IOPacket']]],
   ['reinit_5fall_5fcf_1033',['reinit_all_cf',['../oneloop__andi_8c.html#a01b12bc894b90fe666fb014b4f5ce481',1,'oneloop_andi.c']]],
