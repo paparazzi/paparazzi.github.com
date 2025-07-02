@@ -8,7 +8,8 @@ var pprz__circfit__float_8h =
     [ "CircFitStatus_t", "pprz__circfit__float_8h.html#a6dc5993dc40ae7b19b916c388e71bfbb", [
       [ "CIRC_FIT_OK", "pprz__circfit__float_8h.html#a6dc5993dc40ae7b19b916c388e71bfbba5c3f2930cd021aced3c2d36e7f21972e", null ],
       [ "CIRC_FIT_ERROR", "pprz__circfit__float_8h.html#a6dc5993dc40ae7b19b916c388e71bfbba8e54d883ffcda2942a1e59df0bbc49a5", null ],
-      [ "CIRC_FIT_ITERATION_LIMIT", "pprz__circfit__float_8h.html#a6dc5993dc40ae7b19b916c388e71bfbbae622abd6f7700540ac9e79b16b03dbb5", null ]
+      [ "CIRC_FIT_ITERATION_LIMIT", "pprz__circfit__float_8h.html#a6dc5993dc40ae7b19b916c388e71bfbbae622abd6f7700540ac9e79b16b03dbb5", null ],
+      [ "CIRC_FIT_NORM_ERROR", "pprz__circfit__float_8h.html#a6dc5993dc40ae7b19b916c388e71bfbba10492abc114232f86d3ee779e8bcf56b", null ]
     ] ],
     [ "pprz_circfit_wei_float", "pprz__circfit__float_8h.html#a6c143e8a6610f4c0c003b1cc4656ab74", null ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX224 =
 {
+"video__device_8h.html#structvideo__config__t":[12,0,1,0,7,130,2],
+"video__device_8h.html#structvideo__thread__t":[12,0,1,0,7,130,0],
 "video__device_8h_source.html":[12,0,1,0,7,130],
 "video__thread_8c.html":[12,0,1,0,6,12,44],
 "video__thread_8c.html#a0cbac7b8c5125087e4da17b3374f0a1e":[12,0,1,0,6,12,44,12],
@@ -111,8 +113,8 @@ var NAVTREEINDEX224 =
 "vl53l1__platform_8c_source.html":[12,0,1,0,7,131],
 "vl53l1__platform_8h.html":[12,0,1,0,7,132],
 "vl53l1__platform_8h.html#a1a8884f5596d0c5874f3ce00a49d997d":[12,0,1,0,7,132,12],
-"vl53l1__platform_8h.html#a1d5cd600ac54573791bd7df3485e60f5":[12,0,1,0,7,132,0,0,2],
 "vl53l1__platform_8h.html#a1d5cd600ac54573791bd7df3485e60f5":[12,0,1,0,7,132,1,2],
+"vl53l1__platform_8h.html#a1d5cd600ac54573791bd7df3485e60f5":[12,0,1,0,7,132,0,0,2],
 "vl53l1__platform_8h.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e":[12,0,1,0,7,132,11],
 "vl53l1__platform_8h.html#a31b33a64de721f9096ef76bb582f5aa7":[12,0,1,0,7,132,0,3],
 "vl53l1__platform_8h.html#a36df313e1ae7a259403a85d4cc90769a":[12,0,1,0,7,132,0,2],
@@ -131,14 +133,14 @@ var NAVTREEINDEX224 =
 "vl53l1__platform_8h.html#ab999b09c3be53bbc7715d25007750916":[12,0,1,0,7,132,8],
 "vl53l1__platform_8h.html#acc21e994d7d6651df18f96648afb37ea":[12,0,1,0,7,132,7],
 "vl53l1__platform_8h.html#adad89adbfd623ab80104043eba3c36db":[12,0,1,0,7,132,6],
-"vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,132,0,0,1],
 "vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,132,1,1],
+"vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,132,0,0,1],
 "vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,132,0,0,0],
 "vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,132,1,0],
 "vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb":[12,0,1,0,7,132,3],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t":[12,0,1,0,7,132,0],
-"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,132,0,0],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,132,1],
+"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,132,0,0],
 "vl53l1__platform_8h_source.html":[12,0,1,0,7,132],
 "vl53l1__types_8h.html":[12,0,1,0,7,133],
 "vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30":[12,0,1,0,7,133,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX224 =
 "vl53l1x__api_8h.html#a795c007a11b10559317dc29d6dd5b43e":[12,0,1,0,7,135,38],
 "vl53l1x__api_8h.html#a7ac26737f5a5eb4915af98c2be6fb7c2":[12,0,1,0,7,135,35],
 "vl53l1x__api_8h.html#a80678a1ebe27c577e592c271e92194fe":[12,0,1,0,7,135,36],
-"vl53l1x__api_8h.html#a8102d88dbc2cf3244a8e1f5e05289b1d":[12,0,1,0,7,135,57],
-"vl53l1x__api_8h.html#a8249b0d608abb9be4beefaf81cb34713":[12,0,1,0,7,135,60],
-"vl53l1x__api_8h.html#a863c15a6ed6b8fca8cbd5b17c36e5f61":[12,0,1,0,7,135,0,3]
+"vl53l1x__api_8h.html#a8102d88dbc2cf3244a8e1f5e05289b1d":[12,0,1,0,7,135,57]
 };

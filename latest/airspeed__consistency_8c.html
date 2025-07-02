@@ -98,7 +98,8 @@ $(document).ready(function(){initNavTree('airspeed__consistency_8c.html',''); in
   <div class="headertitle"><div class="title">airspeed_consistency.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="airspeed__consistency_8h_source.html">modules/checks/airspeed_consistency.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="airspeed__consistency_8h_source.html">modules/checks/airspeed_consistency.h</a>&quot;</code><br />
 <code>#include &quot;navigation.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="low__pass__filter_8h_source.html">filters/low_pass_filter.h</a>&quot;</code><br />
@@ -113,32 +114,34 @@ $(document).ready(function(){initNavTree('airspeed__consistency_8c.html',''); in
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__consistency_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2checks_2airspeed__consistency_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2checks_2airspeed__consistency_8c" id="asw_2airborne_2modules_2checks_2airspeed__consistency_8c">
-<area shape="rect" title=" " alt="" coords="1038,5,1262,45"/>
-<area shape="rect" href="airspeed__consistency_8h.html" title=" " alt="" coords="1122,181,1309,221"/>
-<area shape="poly" title=" " alt="" coords="1160,45,1206,168,1201,169,1155,46"/>
-<area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="1037,277,1207,302"/>
-<area shape="poly" title=" " alt="" coords="1145,47,1122,123,1113,171,1113,221,1119,263,1114,264,1107,222,1108,171,1116,121,1140,45"/>
-<area shape="rect" title=" " alt="" coords="944,101,1047,126"/>
-<area shape="poly" title=" " alt="" coords="1117,48,1029,96,1026,92,1115,43"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="702,189,769,214"/>
-<area shape="poly" title=" " alt="" coords="1076,48,1006,69,932,96,841,141,767,184,764,179,838,136,930,91,1004,64,1075,43"/>
-<area shape="rect" title=" " alt="" coords="1346,357,1506,383"/>
-<area shape="poly" title=" " alt="" coords="1263,38,1369,60,1414,74,1444,91,1467,116,1484,140,1494,165,1499,191,1498,218,1494,247,1475,310,1465,331,1451,349,1446,346,1460,328,1470,308,1489,246,1493,218,1494,192,1489,167,1479,143,1463,119,1440,95,1412,79,1368,65,1262,43"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1283,101,1430,126"/>
-<area shape="poly" title=" " alt="" coords="1196,43,1318,93,1316,98,1194,48"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1746,189,1959,214"/>
-<area shape="poly" title=" " alt="" coords="1263,41,1386,62,1517,91,1680,138,1810,182,1808,187,1678,143,1516,96,1385,67,1262,46"/>
-<area shape="rect" href="nav__rotorcraft__base_8h.html" title=" " alt="" coords="405,93,607,133"/>
-<area shape="poly" title=" " alt="" coords="1038,44,621,100,620,94,1037,39"/>
+<area shape="rect" title=" " alt="" coords="971,5,1195,45"/>
+<area shape="rect" title=" " alt="" coords="574,101,641,126"/>
+<area shape="poly" title=" " alt="" coords="972,39,819,60,735,76,653,96,646,98,644,93,652,91,734,71,818,55,971,34"/>
+<area shape="rect" href="airspeed__consistency_8h.html" title=" " alt="" coords="1121,181,1307,221"/>
+<area shape="poly" title=" " alt="" coords="1100,44,1194,169,1190,172,1095,47"/>
+<area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="1035,277,1206,302"/>
+<area shape="poly" title=" " alt="" coords="1088,45,1111,221,1118,262,1113,263,1106,222,1083,46"/>
+<area shape="rect" title=" " alt="" coords="943,101,1045,126"/>
+<area shape="poly" title=" " alt="" coords="1065,48,1018,93,1014,89,1062,44"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="709,189,775,214"/>
+<area shape="poly" title=" " alt="" coords="1033,48,983,69,931,96,905,115,879,136,830,163,783,185,781,181,827,158,877,131,902,111,929,91,980,64,1031,43"/>
+<area shape="rect" title=" " alt="" coords="1345,357,1505,383"/>
+<area shape="poly" title=" " alt="" coords="1196,33,1268,41,1339,53,1401,70,1425,80,1442,91,1466,115,1483,140,1493,165,1498,191,1497,218,1493,246,1474,310,1463,331,1449,349,1445,346,1459,328,1469,308,1488,245,1492,217,1493,191,1488,166,1478,142,1462,119,1439,95,1422,85,1399,75,1338,59,1267,46,1195,38"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1282,101,1429,126"/>
+<area shape="poly" title=" " alt="" coords="1144,43,1307,94,1305,99,1142,48"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1745,189,1958,214"/>
+<area shape="poly" title=" " alt="" coords="1196,37,1349,58,1516,91,1679,137,1809,181,1807,186,1677,142,1515,96,1348,64,1195,42"/>
+<area shape="rect" href="nav__rotorcraft__base_8h.html" title=" " alt="" coords="665,93,867,133"/>
+<area shape="poly" title=" " alt="" coords="1014,48,850,92,848,87,1013,43"/>
 <area shape="rect" title=" " alt="" coords="993,504,1048,529"/>
-<area shape="poly" title=" " alt="" coords="1223,221,1228,263,1227,287,1222,310,1207,342,1188,372,1143,425,1094,468,1052,498,1049,494,1091,463,1139,421,1184,369,1202,339,1217,308,1222,286,1223,263,1218,222"/>
-<area shape="rect" href="pprz__circfit__float_8h.html" title=" " alt="" coords="1282,277,1461,302"/>
-<area shape="poly" title=" " alt="" coords="1251,219,1340,268,1337,272,1248,224"/>
-<area shape="poly" title=" " alt="" coords="1196,224,1147,269,1143,265,1193,220"/>
-<area shape="poly" title=" " alt="" coords="1367,304,1314,390,1285,434,1265,458,1214,485,1159,503,1107,513,1062,517,1061,512,1106,507,1158,498,1212,480,1262,454,1280,431,1309,387,1362,301"/>
-<area shape="poly" title=" " alt="" coords="1122,303,1103,370,1087,414,1067,457,1042,495,1037,492,1062,455,1082,412,1098,368,1117,302"/>
+<area shape="poly" title=" " alt="" coords="1222,221,1227,263,1226,287,1221,310,1206,342,1187,372,1142,425,1094,468,1052,498,1049,494,1090,463,1138,421,1183,369,1201,339,1215,308,1221,286,1222,263,1216,222"/>
+<area shape="rect" href="pprz__circfit__float_8h.html" title=" " alt="" coords="1281,277,1459,302"/>
+<area shape="poly" title=" " alt="" coords="1250,219,1339,268,1336,272,1247,224"/>
+<area shape="poly" title=" " alt="" coords="1195,224,1145,269,1142,265,1191,220"/>
+<area shape="poly" title=" " alt="" coords="1365,304,1312,390,1283,434,1264,458,1213,485,1159,503,1107,512,1062,517,1061,512,1106,507,1158,497,1211,480,1260,454,1279,431,1308,387,1361,301"/>
+<area shape="poly" title=" " alt="" coords="1121,303,1102,370,1087,414,1067,457,1042,495,1037,492,1062,455,1082,412,1097,368,1115,302"/>
 <area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="777,357,957,383"/>
-<area shape="poly" title=" " alt="" coords="1086,305,918,356,917,351,1084,299"/>
+<area shape="poly" title=" " alt="" coords="1085,305,918,356,917,351,1083,299"/>
 <area shape="poly" title=" " alt="" coords="882,381,1000,493,997,496,878,385"/>
 <area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="244,431,400,456"/>
 <area shape="poly" title=" " alt="" coords="780,385,414,433,413,428,779,380"/>
@@ -154,67 +157,67 @@ $(document).ready(function(){initNavTree('airspeed__consistency_8c.html',''); in
 <area shape="rect" title=" " alt="" coords="5,504,73,529"/>
 <area shape="poly" title=" " alt="" coords="277,459,87,506,86,501,276,453"/>
 <area shape="poly" title=" " alt="" coords="862,454,981,498,979,503,860,459"/>
-<area shape="poly" title=" " alt="" coords="769,203,808,210,855,222,903,240,946,267,984,303,1006,338,1019,379,1030,430,1032,462,1029,491,1024,490,1027,462,1025,431,1014,380,1001,340,980,306,943,271,900,245,853,227,807,215,768,209"/>
-<area shape="poly" title=" " alt="" coords="769,201,807,206,850,217,891,236,909,251,924,268,931,290,925,312,911,332,894,350,890,346,907,329,920,309,925,290,920,271,905,254,888,241,848,222,806,211,768,206"/>
-<area shape="poly" title=" " alt="" coords="702,210,631,230,593,248,558,271,534,296,512,325,476,386,451,445,435,491,430,490,446,443,471,384,507,322,530,293,555,267,590,243,629,225,701,205"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="158,357,350,383"/>
-<area shape="poly" title=" " alt="" coords="702,208,617,215,508,228,403,247,361,259,331,272,311,287,293,307,268,346,263,344,289,304,307,283,329,267,360,254,402,242,507,223,616,210,701,202"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="760,269,911,309"/>
-<area shape="poly" title=" " alt="" coords="751,212,805,258,801,262,747,216"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="343,269,493,309"/>
-<area shape="poly" title=" " alt="" coords="703,214,502,268,500,263,701,209"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="569,269,736,309"/>
-<area shape="poly" title=" " alt="" coords="726,216,682,261,679,257,722,212"/>
-<area shape="poly" title=" " alt="" coords="267,381,303,419,299,422,263,385"/>
-<area shape="poly" title=" " alt="" coords="158,382,108,392,67,407,53,416,45,427,45,440,52,454,77,472,119,486,214,506,213,512,118,491,75,476,48,458,39,441,40,425,49,413,64,402,107,387,157,377"/>
+<area shape="poly" title=" " alt="" coords="776,204,814,211,858,223,903,241,945,267,983,303,1005,338,1019,378,1030,430,1032,462,1029,491,1024,490,1027,462,1025,431,1014,380,1001,340,979,306,942,271,901,246,856,228,812,216,775,209"/>
+<area shape="poly" title=" " alt="" coords="776,202,812,207,852,218,892,238,909,251,923,268,929,290,923,312,910,332,894,350,890,346,906,329,919,309,924,290,918,271,905,255,889,242,851,223,811,212,775,207"/>
+<area shape="poly" title=" " alt="" coords="709,210,674,217,634,229,594,247,557,271,532,296,510,324,475,386,450,445,435,491,430,490,445,443,470,383,506,321,528,293,554,267,591,242,633,224,673,212,708,204"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="157,357,349,383"/>
+<area shape="poly" title=" " alt="" coords="708,208,622,215,510,228,403,247,361,258,330,272,310,287,292,307,266,346,262,344,288,304,306,283,327,267,359,253,402,241,510,222,621,210,708,202"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="759,269,909,309"/>
+<area shape="poly" title=" " alt="" coords="756,212,806,258,802,262,753,216"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="341,269,492,309"/>
+<area shape="poly" title=" " alt="" coords="709,214,502,268,501,263,708,209"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="568,269,735,309"/>
+<area shape="poly" title=" " alt="" coords="732,216,683,262,679,258,728,212"/>
+<area shape="poly" title=" " alt="" coords="266,381,303,419,299,423,262,385"/>
+<area shape="poly" title=" " alt="" coords="157,382,107,392,66,407,53,417,45,427,45,440,52,454,77,472,119,486,214,506,213,512,118,491,75,476,48,458,39,441,40,426,49,413,64,402,106,387,156,377"/>
 <area shape="poly" title=" " alt="" coords="175,385,92,405,59,417,39,432,32,445,30,460,33,490,28,491,25,460,27,444,35,429,56,413,91,399,174,380"/>
 <area shape="rect" title=" " alt="" coords="62,431,219,456"/>
-<area shape="poly" title=" " alt="" coords="237,385,172,426,169,421,234,380"/>
-<area shape="poly" title=" " alt="" coords="898,307,936,327,971,356,992,388,1007,425,1021,490,1016,491,1002,427,988,391,967,359,933,331,895,312"/>
-<area shape="poly" title=" " alt="" coords="846,309,860,344,855,346,841,311"/>
+<area shape="poly" title=" " alt="" coords="236,385,172,425,169,421,233,380"/>
+<area shape="poly" title=" " alt="" coords="897,307,936,327,971,356,992,388,1007,425,1021,490,1016,491,1002,426,988,391,967,359,933,331,895,312"/>
+<area shape="poly" title=" " alt="" coords="845,309,859,343,855,346,840,311"/>
 <area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="627,357,753,383"/>
-<area shape="poly" title=" " alt="" coords="802,312,725,353,722,348,799,307"/>
-<area shape="poly" title=" " alt="" coords="436,308,467,340,510,381,562,421,619,454,667,472,716,486,817,504,909,512,980,514,979,519,908,518,816,510,715,491,665,477,617,458,559,425,506,385,463,344,432,311"/>
-<area shape="poly" title=" " alt="" coords="380,312,291,354,289,349,378,307"/>
-<area shape="poly" title=" " alt="" coords="484,307,638,351,636,356,482,312"/>
-<area shape="poly" title=" " alt="" coords="641,311,628,333,618,358,613,388,615,412,626,433,648,454,673,467,708,479,800,496,898,506,980,511,979,516,898,511,799,501,707,484,670,472,644,458,622,436,610,413,607,387,613,357,623,330,636,308"/>
-<area shape="poly" title=" " alt="" coords="705,307,824,350,822,355,703,312"/>
-<area shape="poly" title=" " alt="" coords="570,310,326,357,325,352,569,304"/>
-<area shape="rect" title=" " alt="" coords="1333,189,1460,214"/>
-<area shape="poly" title=" " alt="" coords="1364,125,1388,175,1383,177,1360,127"/>
-<area shape="poly" title=" " alt="" coords="1833,217,1663,310,1519,385,1408,427,1293,459,1167,489,1062,510,1061,505,1166,484,1292,453,1406,422,1517,380,1660,305,1830,212"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2383,431,2523,456"/>
-<area shape="poly" title=" " alt="" coords="1960,210,2105,228,2266,258,2342,277,2409,300,2463,326,2483,340,2499,356,2505,373,2501,391,2479,422,2475,419,2497,389,2500,373,2494,359,2480,344,2460,330,2407,304,2341,282,2265,263,2104,234,1959,215"/>
-<area shape="rect" title=" " alt="" coords="1982,269,2126,309"/>
-<area shape="poly" title=" " alt="" coords="1881,212,1998,261,1996,266,1879,217"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1747,277,1958,302"/>
-<area shape="poly" title=" " alt="" coords="1855,214,1855,262,1850,262,1850,214"/>
-<area shape="poly" title=" " alt="" coords="2383,457,2370,459,1972,487,1585,505,1264,514,1062,518,1062,512,1264,509,1585,499,1972,482,2370,453,2382,452"/>
-<area shape="rect" title=" " alt="" coords="2261,504,2436,529"/>
-<area shape="poly" title=" " alt="" coords="2437,458,2379,498,2376,494,2434,454"/>
-<area shape="rect" title=" " alt="" coords="2461,504,2653,529"/>
-<area shape="poly" title=" " alt="" coords="2471,454,2530,494,2527,498,2468,458"/>
-<area shape="poly" title=" " alt="" coords="1791,305,1502,358,1501,352,1790,299"/>
-<area shape="rect" title=" " alt="" coords="1809,357,1896,383"/>
-<area shape="poly" title=" " alt="" coords="1855,302,1855,343,1850,343,1850,302"/>
-<area shape="rect" title=" " alt="" coords="1921,357,2081,383"/>
-<area shape="poly" title=" " alt="" coords="1876,300,1968,348,1965,353,1873,305"/>
-<area shape="rect" title=" " alt="" coords="2105,357,2261,383"/>
-<area shape="poly" title=" " alt="" coords="1901,299,2123,352,2122,357,1900,305"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1581,357,1785,383"/>
-<area shape="poly" title=" " alt="" coords="1829,304,1721,354,1719,349,1827,300"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2285,357,2484,383"/>
-<area shape="poly" title=" " alt="" coords="1924,299,1970,307,2289,353,2288,358,1970,312,1923,305"/>
-<area shape="poly" title=" " alt="" coords="1673,385,1627,423,1596,443,1563,458,1519,471,1461,481,1319,498,1062,516,1062,511,1318,493,1460,476,1518,466,1561,454,1594,438,1624,418,1669,381"/>
-<area shape="rect" title=" " alt="" coords="1631,431,1794,456"/>
-<area shape="poly" title=" " alt="" coords="1691,382,1705,417,1700,419,1686,384"/>
-<area shape="poly" title=" " alt="" coords="2398,381,2434,419,2430,422,2394,385"/>
-<area shape="rect" title=" " alt="" coords="2174,431,2358,456"/>
-<area shape="poly" title=" " alt="" coords="2367,385,2299,426,2296,421,2364,380"/>
-<area shape="rect" href="nav__base_8h.html" title=" " alt="" coords="326,189,510,214"/>
-<area shape="poly" title=" " alt="" coords="488,136,442,180,438,177,485,132"/>
-<area shape="poly" title=" " alt="" coords="394,216,360,238,344,253,332,270,326,289,332,308,355,344,378,370,403,390,429,405,491,428,569,453,625,471,683,484,799,502,902,511,980,513,980,518,902,516,798,507,682,490,624,476,568,459,490,433,427,410,400,395,375,374,351,347,328,310,321,289,328,268,340,250,356,234,391,212"/>
-<area shape="poly" title=" " alt="" coords="421,214,421,255,415,255,415,214"/>
+<area shape="poly" title=" " alt="" coords="801,312,724,353,722,348,798,307"/>
+<area shape="poly" title=" " alt="" coords="435,308,466,340,509,381,561,421,619,454,667,472,716,486,817,504,909,512,980,514,979,519,908,517,816,509,715,491,665,477,617,458,558,425,506,385,462,344,431,311"/>
+<area shape="poly" title=" " alt="" coords="379,312,290,354,288,349,376,307"/>
+<area shape="poly" title=" " alt="" coords="483,307,638,351,636,356,481,312"/>
+<area shape="poly" title=" " alt="" coords="640,311,628,333,618,358,613,388,615,412,627,433,648,454,673,467,708,479,800,496,898,506,980,511,979,516,898,511,799,501,707,484,670,472,644,458,622,436,610,413,608,387,613,357,623,331,636,308"/>
+<area shape="poly" title=" " alt="" coords="704,307,824,350,822,355,702,312"/>
+<area shape="poly" title=" " alt="" coords="568,310,325,357,324,352,567,304"/>
+<area shape="rect" title=" " alt="" coords="1332,189,1459,214"/>
+<area shape="poly" title=" " alt="" coords="1363,125,1386,175,1382,177,1358,127"/>
+<area shape="poly" title=" " alt="" coords="1832,217,1661,310,1518,385,1407,427,1292,459,1167,489,1062,510,1061,505,1165,484,1291,453,1405,422,1516,380,1659,305,1829,212"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2381,431,2521,456"/>
+<area shape="poly" title=" " alt="" coords="1959,210,2103,228,2265,258,2341,277,2408,300,2462,326,2482,340,2498,356,2504,373,2500,391,2478,422,2473,419,2495,389,2498,373,2493,359,2479,344,2459,330,2406,304,2340,282,2264,263,2102,234,1958,215"/>
+<area shape="rect" title=" " alt="" coords="1981,269,2125,309"/>
+<area shape="poly" title=" " alt="" coords="1880,212,1997,261,1995,266,1877,217"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1746,277,1957,302"/>
+<area shape="poly" title=" " alt="" coords="1854,214,1854,262,1849,262,1849,214"/>
+<area shape="poly" title=" " alt="" coords="2381,457,2369,459,1971,487,1584,505,1263,514,1062,518,1062,512,1263,509,1584,499,1971,482,2368,453,2381,452"/>
+<area shape="rect" title=" " alt="" coords="2260,504,2435,529"/>
+<area shape="poly" title=" " alt="" coords="2436,458,2377,498,2374,494,2433,454"/>
+<area shape="rect" title=" " alt="" coords="2459,504,2651,529"/>
+<area shape="poly" title=" " alt="" coords="2470,454,2528,494,2525,498,2467,458"/>
+<area shape="poly" title=" " alt="" coords="1790,305,1501,358,1500,352,1789,299"/>
+<area shape="rect" title=" " alt="" coords="1808,357,1895,383"/>
+<area shape="poly" title=" " alt="" coords="1854,302,1854,343,1849,343,1849,302"/>
+<area shape="rect" title=" " alt="" coords="1919,357,2079,383"/>
+<area shape="poly" title=" " alt="" coords="1874,300,1967,348,1964,353,1872,305"/>
+<area shape="rect" title=" " alt="" coords="2104,357,2260,383"/>
+<area shape="poly" title=" " alt="" coords="1900,299,2121,352,2120,357,1899,305"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1580,357,1784,383"/>
+<area shape="poly" title=" " alt="" coords="1828,304,1720,354,1718,349,1826,300"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2284,357,2483,383"/>
+<area shape="poly" title=" " alt="" coords="1922,299,1969,307,2288,353,2287,358,1968,312,1922,305"/>
+<area shape="poly" title=" " alt="" coords="1671,385,1626,423,1595,443,1562,458,1518,471,1460,481,1319,498,1062,516,1062,511,1318,493,1459,476,1517,466,1560,454,1592,438,1623,418,1668,381"/>
+<area shape="rect" title=" " alt="" coords="1630,431,1793,456"/>
+<area shape="poly" title=" " alt="" coords="1689,382,1704,417,1699,419,1684,384"/>
+<area shape="poly" title=" " alt="" coords="2396,381,2433,419,2429,422,2393,385"/>
+<area shape="rect" title=" " alt="" coords="2173,431,2357,456"/>
+<area shape="poly" title=" " alt="" coords="2366,385,2297,426,2295,421,2363,380"/>
+<area shape="rect" href="nav__base_8h.html" title=" " alt="" coords="325,189,509,214"/>
+<area shape="poly" title=" " alt="" coords="690,136,477,188,476,183,689,131"/>
+<area shape="poly" title=" " alt="" coords="392,216,358,238,343,253,331,270,325,289,331,308,354,344,377,370,402,390,429,406,491,428,569,453,625,471,683,484,799,502,902,511,980,513,980,518,902,516,798,507,682,489,624,476,568,459,489,433,426,410,399,395,374,374,350,347,326,310,320,289,326,268,339,250,355,234,389,212"/>
+<area shape="poly" title=" " alt="" coords="419,214,419,255,414,255,414,214"/>
 </map>
 </div>
 </div>
@@ -268,7 +271,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00041">41</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00042">42</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
 </div>
 </div>
@@ -284,7 +287,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00037">37</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00038">38</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
 </div>
 </div>
@@ -305,9 +308,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00061">61</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00062">62</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="nav_8h_source.html#l00049">NAVIGATION_FREQUENCY</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00118">reset_speeds()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00059">tas_filt</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="nav_8h_source.html#l00049">NAVIGATION_FREQUENCY</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00119">reset_speeds()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00060">tas_filt</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -343,9 +346,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00067">67</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00068">68</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">References <a class="el" href="airspeed__consistency_8c_source.html#l00041">AIRSPEED_CONSISTENCY_INTERVAL</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00037">AIRSPEED_CONSISTENCY_MIN_SAMPLES</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00055">ARRIVED_AT_WAYPOINT</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00047">asc_t::as</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00049">asc_t::as_circ_status</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00058">asc</a>, <a class="el" href="nav__base_8h_source.html#l00046">NavCircle_t::center</a>, <a class="el" href="pprz__circfit__float_8h_source.html#l00025">CIRC_FIT_OK</a>, <a class="el" href="nav__base_8h_source.html#l00064">NavBase_t::circle</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00139">float_vect2_norm()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00050">asc_t::gs_circ_status</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00121">RotorcraftNavigation::horizontal_mode</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00087">NAV_HORIZONTAL_MODE_CIRCLE</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00031">nav_rotorcraft_base</a>, <a class="el" href="pprz__circfit__float_8h_source.html#l00033">circle_t::r</a>, <a class="el" href="nav__base_8h_source.html#l00047">NavCircle_t::radius</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00118">reset_speeds()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00102">save_speeds()</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>.</p>
+<p class="reference">References <a class="el" href="airspeed__consistency_8c_source.html#l00042">AIRSPEED_CONSISTENCY_INTERVAL</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00038">AIRSPEED_CONSISTENCY_MIN_SAMPLES</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00055">ARRIVED_AT_WAYPOINT</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00047">asc_t::as</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00049">asc_t::as_circ_status</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00059">asc</a>, <a class="el" href="nav__base_8h_source.html#l00046">NavCircle_t::center</a>, <a class="el" href="pprz__circfit__float_8h_source.html#l00025">CIRC_FIT_OK</a>, <a class="el" href="nav__base_8h_source.html#l00064">NavBase_t::circle</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00139">float_vect2_norm()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00050">asc_t::gs_circ_status</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00121">RotorcraftNavigation::horizontal_mode</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00087">NAV_HORIZONTAL_MODE_CIRCLE</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00031">nav_rotorcraft_base</a>, <a class="el" href="pprz__circfit__float_8h_source.html#l00034">circle_t::r</a>, <a class="el" href="nav__base_8h_source.html#l00047">NavCircle_t::radius</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00119">reset_speeds()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00103">save_speeds()</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -481,9 +484,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00138">138</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00139">139</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">References <a class="el" href="airspeed__consistency_8c_source.html#l00118">reset_speeds()</a>.</p>
+<p class="reference">References <a class="el" href="airspeed__consistency_8c_source.html#l00119">reset_speeds()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -539,9 +542,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00132">132</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00133">133</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">References <a class="el" href="airspeed__consistency_8h_source.html#l00031">AIRSPEED_CONSISTENCY_BUFFER_SIZE</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00058">asc</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00045">N</a>, <a class="el" href="pprz__circfit__float_8c_source.html#l00030">pprz_circfit_wei_float()</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
+<p class="reference">References <a class="el" href="airspeed__consistency_8h_source.html#l00031">AIRSPEED_CONSISTENCY_BUFFER_SIZE</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00059">asc</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00045">N</a>, <a class="el" href="pprz__circfit__float_8c_source.html#l00034">pprz_circfit_wei_float()</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -581,11 +584,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00118">118</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00119">119</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">References <a class="el" href="airspeed__consistency_8h_source.html#l00031">AIRSPEED_CONSISTENCY_BUFFER_SIZE</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00049">asc_t::as_circ_status</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00046">asc_t::as_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00045">asc_t::as_N</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00058">asc</a>, <a class="el" href="pprz__circfit__float_8h_source.html#l00026">CIRC_FIT_ERROR</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00050">asc_t::gs_circ_status</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00044">asc_t::gs_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00043">asc_t::gs_N</a>, and <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>.</p>
+<p class="reference">References <a class="el" href="airspeed__consistency_8h_source.html#l00031">AIRSPEED_CONSISTENCY_BUFFER_SIZE</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00049">asc_t::as_circ_status</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00046">asc_t::as_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00045">asc_t::as_N</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00059">asc</a>, <a class="el" href="pprz__circfit__float_8h_source.html#l00026">CIRC_FIT_ERROR</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00050">asc_t::gs_circ_status</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00044">asc_t::gs_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00043">asc_t::gs_N</a>, and <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00061">airspeed_consistency_init()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00067">airspeed_consistency_periodic()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00138">airspeed_consistency_reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00062">airspeed_consistency_init()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00068">airspeed_consistency_periodic()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00139">airspeed_consistency_reset()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -629,11 +632,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00102">102</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00103">103</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">References <a class="el" href="air__data_8c_source.html#l00041">air_data</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00031">AIRSPEED_CONSISTENCY_BUFFER_SIZE</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00046">asc_t::as_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00045">asc_t::as_N</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00058">asc</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00044">asc_t::gs_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00043">asc_t::gs_N</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01306">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01049">stateGetSpeedNed_f()</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::tas</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00059">tas_filt</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>.</p>
+<p class="reference">References <a class="el" href="air__data_8c_source.html#l00041">air_data</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00031">AIRSPEED_CONSISTENCY_BUFFER_SIZE</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00046">asc_t::as_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00045">asc_t::as_N</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00059">asc</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00041">asc_t::filled</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00044">asc_t::gs_E</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00043">asc_t::gs_N</a>, <a class="el" href="airspeed__consistency_8h_source.html#l00042">asc_t::i</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01306">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01049">stateGetSpeedNed_f()</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::tas</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00060">tas_filt</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00067">airspeed_consistency_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00068">airspeed_consistency_periodic()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -702,9 +705,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00058">58</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00059">59</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00067">airspeed_consistency_periodic()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00132">get_circle_from_speeds()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00118">reset_speeds()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00102">save_speeds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00068">airspeed_consistency_periodic()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00133">get_circle_from_speeds()</a>, <a class="el" href="airspeed__consistency_8c_source.html#l00119">reset_speeds()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00103">save_speeds()</a>.</p>
 
 </div>
 </div>
@@ -720,7 +723,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00052">52</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00053">53</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
 </div>
 </div>
@@ -744,9 +747,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00059">59</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="airspeed__consistency_8c_source.html#l00060">60</a> of file <a class="el" href="airspeed__consistency_8c_source.html">airspeed_consistency.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00061">airspeed_consistency_init()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00102">save_speeds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00062">airspeed_consistency_init()</a>, and <a class="el" href="airspeed__consistency_8c_source.html#l00103">save_speeds()</a>.</p>
 
 </div>
 </div>
@@ -756,7 +759,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_24cf6086042171dbb948d3baa866052c.html">checks</a></li><li class="navelem"><a class="el" href="airspeed__consistency_8c.html">airspeed_consistency.c</a></li>
-    <li class="footer">Generated on Wed Jul 2 2025 11:51:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 2 2025 14:27:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX223 =
 {
+"usb__serial_8h.html#ac892b8a5e844e5ada0baee4f63325b06":[12,0,1,0,5,23,0,1],
+"usb__serial_8h.html#ae4318c752d87ae9cc59828f07ec04946":[12,0,1,0,5,23,5],
 "usb__serial_8h.html#structusb__serial__periph":[12,0,1,0,5,23,0],
 "usb__serial_8h_source.html":[12,0,1,0,5,23],
 "usb__serial__stm32_8h.html":[12,0,1,0,6,11,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX223 =
 "video__device_8h.html#ae6e8852d59271631ee506533b63350c1":[12,0,1,0,7,130,0,0],
 "video__device_8h.html#aefdcc0d6a040bfdb68ac09242872be88":[12,0,1,0,7,130,2,9],
 "video__device_8h.html#afbd41528c39b7e21eeeee5554be74a29":[12,0,1,0,7,130,5],
-"video__device_8h.html#structcamera__intrinsics__t":[12,0,1,0,7,130,1],
-"video__device_8h.html#structvideo__config__t":[12,0,1,0,7,130,2],
-"video__device_8h.html#structvideo__thread__t":[12,0,1,0,7,130,0]
+"video__device_8h.html#structcamera__intrinsics__t":[12,0,1,0,7,130,1]
 };
