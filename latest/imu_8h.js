@@ -18,7 +18,7 @@ var imu_8h =
       [ "last_stamp", "imu_8h.html#a009f4bed304da8f96ca2b3bd2396d2eb", null ],
       [ "neutral", "imu_8h.html#a4477c72a6c4437b60dda817ebcc5ff2e", null ],
       [ "scale", "imu_8h.html#a6f6fa9e950ab651e2f75051dd1203ad4", null ],
-      [ "scale_f", "imu_8h.html#a93cf80800e9d708beb7e4c76f8aa6f55", null ],
+      [ "scale_f", "imu_8h.html#a2c5f159a0be98431bfbb62962c4d4fcb", null ],
       [ "scaled", "imu_8h.html#a02fb96f81fe7cfec364a307b5dfc2868", null ],
       [ "temperature", "imu_8h.html#a21b1fec39e9761fdc297b9861a0098b4", null ],
       [ "unscaled", "imu_8h.html#a8d5aee0e93b6d1d9b78b1d73722e998a", null ]
@@ -67,7 +67,7 @@ var imu_8h =
     [ "imu_init", "imu_8h.html#a86a06fe7a9831292bd92867da2d12f80", null ],
     [ "imu_ResetBodyToImu", "imu_8h.html#ac9f5713ed33725e176e0501ecbe715a9", null ],
     [ "imu_set_defaults_accel", "imu_8h.html#a4e6e633b0fa280971b8c4baeb656c611", null ],
-    [ "imu_set_defaults_gyro", "imu_8h.html#a7edcd050d64332df6c07a5794fafc801", null ],
+    [ "imu_set_defaults_gyro", "imu_8h.html#a25210558ed62e3a0c6e27e620d38f53e", null ],
     [ "imu_set_defaults_mag", "imu_8h.html#afbfa216dda948a1773c5c5725dd2f86a", null ],
     [ "imu_SetBodyToImuCurrent", "imu_8h.html#a931916ce562dfa28e02e0a6001dddc43", null ],
     [ "imu_SetBodyToImuPhi", "imu_8h.html#ac50fba336ca2c337f240bab0db44f64e", null ],

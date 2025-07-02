@@ -787,7 +787,7 @@ var searchData=
   ['bmi088_5fgyro_5fsens_5f500_784',['BMI088_GYRO_SENS_500',['../bmi088_8h.html#a0646cdc3b43c4709b811e09db4e5d76e',1,'bmi088.h']]],
   ['bmi088_5fgyro_5fsens_5f500_5fden_785',['BMI088_GYRO_SENS_500_DEN',['../bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01',1,'bmi088.h']]],
   ['bmi088_5fgyro_5fsens_5f500_5fnum_786',['BMI088_GYRO_SENS_500_NUM',['../bmi088_8h.html#abf2726bb3bc6514646221047a478fed2',1,'bmi088.h']]],
-  ['bmi088_5fgyro_5fsens_5ff_787',['bmi088_gyro_sens_f',['../bmi088_8c.html#a7420d17b916256bd8c88063a1e90ce9f',1,'BMI088_GYRO_SENS_F:&#160;bmi088.c'],['../bmi088_8h.html#a7420d17b916256bd8c88063a1e90ce9f',1,'BMI088_GYRO_SENS_F:&#160;bmi088.c']]],
+  ['bmi088_5fgyro_5fsens_5ff_787',['bmi088_gyro_sens_f',['../bmi088_8c.html#a3bbf355792985696c1046582318da2fd',1,'BMI088_GYRO_SENS_F:&#160;bmi088.c'],['../bmi088_8h.html#a3bbf355792985696c1046582318da2fd',1,'BMI088_GYRO_SENS_F:&#160;bmi088.c']]],
   ['bmi088_5fgyro_5fsoft_5freset_788',['BMI088_GYRO_SOFT_RESET',['../bmi088__regs_8h.html#a0533ea9415878b8378721a3e8963ff55',1,'bmi088_regs.h']]],
   ['bmi088_5fgyro_5fsuspend_789',['BMI088_GYRO_SUSPEND',['../bmi088__regs_8h.html#aedc8851a2661a418cbd73135d3516556a4190057a4ab70408f03390dbaa1e0c40',1,'bmi088_regs.h']]],
   ['bmi088_5fi2c_790',['Bmi088_I2c',['../bmi088__i2c_8h.html#structBmi088__I2c',1,'']]],

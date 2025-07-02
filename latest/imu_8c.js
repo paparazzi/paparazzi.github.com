@@ -29,7 +29,7 @@ var imu_8c =
     [ "imu_mag_raw_cb", "imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2", null ],
     [ "imu_set_body_to_imu_eulers", "imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e", null ],
     [ "imu_set_defaults_accel", "imu_8c.html#a4e6e633b0fa280971b8c4baeb656c611", null ],
-    [ "imu_set_defaults_gyro", "imu_8c.html#a7edcd050d64332df6c07a5794fafc801", null ],
+    [ "imu_set_defaults_gyro", "imu_8c.html#a25210558ed62e3a0c6e27e620d38f53e", null ],
     [ "imu_set_defaults_mag", "imu_8c.html#afbfa216dda948a1773c5c5725dd2f86a", null ],
     [ "imu_SetBodyToImuCurrent", "imu_8c.html#a931916ce562dfa28e02e0a6001dddc43", null ],
     [ "imu_SetBodyToImuPhi", "imu_8c.html#ac50fba336ca2c337f240bab0db44f64e", null ],

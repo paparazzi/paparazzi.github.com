@@ -59,5 +59,5 @@ var mpu9250_8h =
     [ "MPU9250_ACCEL_SENS", "mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab", null ],
     [ "MPU9250_ACCEL_SENS_F", "mpu9250_8h.html#a41fa9483c0cdbbe22bcb37eea57db48a", null ],
     [ "MPU9250_GYRO_SENS", "mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400", null ],
-    [ "MPU9250_GYRO_SENS_F", "mpu9250_8h.html#a2126702efd90750062de55c25d266441", null ]
+    [ "MPU9250_GYRO_SENS_F", "mpu9250_8h.html#a29a810a3c8450d756da24e54aa52f63e", null ]
 ];

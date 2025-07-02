@@ -16,5 +16,5 @@ var invensense3_8c =
     [ "invensense3_aaf4x605", "invensense3_8c.html#a093eeae8c07ad20b3509de9a4f0855a7", null ],
     [ "invensense3_accel_scale_f", "invensense3_8c.html#a94a505b88645cd92767c05f36f1e4173", null ],
     [ "invensense3_fifo_sample_size", "invensense3_8c.html#a49ec590377787766b3a1cc27e7a7ff17", null ],
-    [ "invensense3_gyro_scale_f", "invensense3_8c.html#a8da17ac2932847c5258fdc43b2e7ce8f", null ]
+    [ "invensense3_gyro_scale_f", "invensense3_8c.html#a25083776f3711c5e750fc136b7f09727", null ]
 ];

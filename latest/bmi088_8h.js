@@ -62,5 +62,5 @@ var bmi088_8h =
     [ "BMI088_ACCEL_SENS", "bmi088_8h.html#a204cd9d13497f8b2ecefa26ee3a934f8", null ],
     [ "BMI088_ACCEL_SENS_F", "bmi088_8h.html#a847e4d8511a9a27403018e622ee3c938", null ],
     [ "BMI088_GYRO_SENS", "bmi088_8h.html#addcce42ce13cf7b00585ee7ef9cc1936", null ],
-    [ "BMI088_GYRO_SENS_F", "bmi088_8h.html#a7420d17b916256bd8c88063a1e90ce9f", null ]
+    [ "BMI088_GYRO_SENS_F", "bmi088_8h.html#a3bbf355792985696c1046582318da2fd", null ]
 ];

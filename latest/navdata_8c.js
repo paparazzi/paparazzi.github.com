@@ -16,7 +16,7 @@ var navdata_8c =
     [ "send_navdata", "navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d", null ],
     [ "accel_neutral", "navdata_8c.html#a4d4f07154c132bc17f5a828ded6b7ad3", null ],
     [ "accel_scale_f", "navdata_8c.html#a40576a824f7917ba693ada55d292c525", null ],
-    [ "gyro_scale_f", "navdata_8c.html#a89bde3ae788a8878b770a39fb94fdb46", null ],
+    [ "gyro_scale_f", "navdata_8c.html#a5e8dbb4311e3a59c245d9023bbe052a3", null ],
     [ "mag_scale_f", "navdata_8c.html#a28861437947bdfd1b163fd092a3919df", null ],
     [ "navdata", "navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3", null ],
     [ "navdata_available", "navdata_8c.html#aaf6905c88288c9f631917b23d41d5af0", null ],

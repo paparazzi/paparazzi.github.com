@@ -10,5 +10,5 @@ var invensense2_8c =
     [ "invensense2_register_write", "invensense2_8c.html#a30477c5c507b0c8bcbfcfaf8e6c10665", null ],
     [ "invensense2_select_bank", "invensense2_8c.html#a28e7bcd6a8e2d2d5bad607f7d0a512c0", null ],
     [ "invensense2_accel_scale_f", "invensense2_8c.html#a0268e1054060beec3c4d442c3bb559f2", null ],
-    [ "invensense2_gyro_scale_f", "invensense2_8c.html#a4ce4fdd011b02ea5d9c857d6fc068dba", null ]
+    [ "invensense2_gyro_scale_f", "invensense2_8c.html#aac776a0c94ddef226af3bda17ef8915c", null ]
 ];
