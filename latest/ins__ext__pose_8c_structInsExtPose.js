@@ -13,5 +13,6 @@ var ins__ext__pose_8c_structInsExtPose =
     [ "ltp_accel", "ins__ext__pose_8c.html#a75f08b78869192194d8cb861cec6a9e9", null ],
     [ "ltp_def", "ins__ext__pose_8c.html#a40a5b9b5ef8e8b4302897baf231e2322", null ],
     [ "ltp_pos", "ins__ext__pose_8c.html#a522f7f5b8f7ef554e889d5c56ede01dd", null ],
-    [ "ltp_speed", "ins__ext__pose_8c.html#a666021a6b462263e23141aa70189771f", null ]
+    [ "ltp_speed", "ins__ext__pose_8c.html#a666021a6b462263e23141aa70189771f", null ],
+    [ "started", "ins__ext__pose_8c.html#a732aa78ce66bb6bcc1bd2dfc41b83a14", null ]
 ];
