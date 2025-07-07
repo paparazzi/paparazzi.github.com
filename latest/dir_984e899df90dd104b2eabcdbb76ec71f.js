@@ -50,6 +50,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_rotorcraft_hybrid.h", "nav__rotorcraft__hybrid_8h.html", "nav__rotorcraft__hybrid_8h" ],
     [ "nav_rover_base.c", "nav__rover__base_8c.html", "nav__rover__base_8c" ],
     [ "nav_rover_base.h", "nav__rover__base_8h.html", "nav__rover__base_8h" ],
+    [ "nav_shakestart.c", "nav__shakestart_8c.html", "nav__shakestart_8c" ],
+    [ "nav_shakestart.h", "nav__shakestart_8h.html", "nav__shakestart_8h" ],
     [ "nav_skid_landing.c", "nav__skid__landing_8c.html", "nav__skid__landing_8c" ],
     [ "nav_skid_landing.h", "nav__skid__landing_8h.html", "nav__skid__landing_8h" ],
     [ "nav_smooth.c", "nav__smooth_8c.html", "nav__smooth_8c" ],
