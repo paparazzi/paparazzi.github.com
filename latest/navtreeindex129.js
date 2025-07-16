@@ -1,5 +1,8 @@
 var NAVTREEINDEX129 =
 {
+"module__follow.html#configuration__follow":[1,318,1],
+"module__follow.html#functions__follow":[1,318,2],
+"module__follow.html#module_load_example__follow":[1,318,0],
 "module__follow.html#module_xml__follow":[1,318,2,0],
 "module__follow_me.html":[1,102],
 "module__follow_me.html#configuration__follow_me":[1,102,1],
@@ -26,8 +29,6 @@ var NAVTREEINDEX129 =
 "module__geiger_counter.html#module_xml__geiger_counter":[1,291,1,0],
 "module__generic_com.html":[1,54],
 "module__generic_com.html#configuration__generic_com":[1,54,1],
-"module__generic_com.html#configure":[1,54,1,0],
-"module__generic_com.html#define":[1,54,1,1],
 "module__generic_com.html#functions__generic_com":[1,54,2],
 "module__generic_com.html#module_load_example__generic_com":[1,54,0],
 "module__generic_com.html#module_xml__generic_com":[1,54,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "module__hott_telemetry.html":[1,493],
 "module__hott_telemetry.html#configuration__hott_telemetry":[1,493,1],
 "module__hott_telemetry.html#functions__hott_telemetry":[1,493,2],
-"module__hott_telemetry.html#module_load_example__hott_telemetry":[1,493,0],
-"module__hott_telemetry.html#module_xml__hott_telemetry":[1,493,2,0]
+"module__hott_telemetry.html#module_load_example__hott_telemetry":[1,493,0]
 };

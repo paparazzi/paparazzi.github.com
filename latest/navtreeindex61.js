@@ -1,8 +1,5 @@
 var NAVTREEINDEX61 =
 {
-"geiger__counter_8c.html#acf72a5e0a4ec7503979dbf07551a30fd":[12,0,1,0,6,44,13,6],
-"geiger__counter_8c.html#ad4c962a60e154907ac96d50a12d9527b":[12,0,1,0,6,44,13,1],
-"geiger__counter_8c.html#af9dbdd1fb84676af7d2a603f1f7717d3":[12,0,1,0,6,44,13,8],
 "geiger__counter_8c_source.html":[12,0,1,0,6,44,13],
 "geiger__counter_8h.html":[12,0,1,0,6,44,14],
 "geiger__counter_8h.html#a04dc0541640cf73d18fef78c549c1387":[12,0,1,0,6,44,14,2],
@@ -112,8 +109,8 @@ var NAVTREEINDEX61 =
 "globals_defs_y.html":[12,1,6,25],
 "globals_defs_z.html":[12,1,6,26],
 "globals_e.html":[12,1,0,5],
-"globals_enum.html":[12,1,4],
 "globals_enum.html":[12,1,4,0],
+"globals_enum.html":[12,1,4],
 "globals_enum_b.html":[12,1,4,1],
 "globals_enum_c.html":[12,1,4,2],
 "globals_enum_d.html":[12,1,4,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX61 =
 "gpio__ardrone_8c.html#a573af743c8006ae98e309d4bc9284c85":[12,0,1,0,1,1,5,9],
 "gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1":[12,0,1,0,1,1,5,6],
 "gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1a034b65c289485a794306685f42ba239a":[12,0,1,0,1,1,5,6,1],
-"gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1a9b1be9a9b44d5c3fff07656b24fec1b7":[12,0,1,0,1,1,5,6,2]
+"gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1a9b1be9a9b44d5c3fff07656b24fec1b7":[12,0,1,0,1,1,5,6,2],
+"gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1aa1ea38ffc304a6c32480a65b5fec7302":[12,0,1,0,1,1,5,6,0],
+"gpio__ardrone_8c.html#a7087448dc92cb77539f6c3e4c9149de4":[12,0,1,0,1,1,5,1,0],
+"gpio__ardrone_8c.html#a76674bd82007b2ceec9a2e60e3f53d62":[12,0,1,0,1,1,5,2]
 };

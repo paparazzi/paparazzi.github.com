@@ -1,8 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__approach_moving_target.html#module_xml__approach_moving_target":[1,91,2,0],
-"module__auto1_commands.html":[1,458],
-"module__auto1_commands.html#functions__auto1_commands":[1,458,1],
 "module__auto1_commands.html#module_load_example__auto1_commands":[1,458,0],
 "module__auto1_commands.html#module_xml__auto1_commands":[1,458,1,0],
 "module__autopilot_gnc.html":[1,467],
@@ -100,11 +97,17 @@ var NAVTREEINDEX127 =
 "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,412,1,0],
 "module__battery_monitor.html":[1,22],
 "module__battery_monitor.html#configuration__battery_monitor":[1,22,1],
+"module__battery_monitor.html#configure":[1,22,1,0],
+"module__battery_monitor.html#event_functions":[1,22,2,1],
+"module__battery_monitor.html#files":[1,22,3],
 "module__battery_monitor.html#functions__battery_monitor":[1,22,2],
+"module__battery_monitor.html#headers":[1,22,3,0],
+"module__battery_monitor.html#init_functions":[1,22,2,0],
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,22,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,22,2,0],
+"module__battery_monitor.html#module_xml__battery_monitor":[1,22,3,2],
+"module__battery_monitor.html#periodic_functions":[1,22,2,2],
+"module__battery_monitor.html#sources":[1,22,3,1],
 "module__bebop_ae_awb.html":[1,57],
-"module__bebop_ae_awb.html#af_section":[1,57,1,0],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
 "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX127 =
 "module__cv_detect_color_object.html#module_xml__cv_detect_color_object":[1,60,2,0],
 "module__cv_detect_contour.html":[1,61],
 "module__cv_detect_contour.html#configuration__cv_detect_contour":[1,61,1],
-"module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2],
-"module__cv_detect_contour.html#module_load_example__cv_detect_contour":[1,61,0],
-"module__cv_detect_contour.html#module_xml__cv_detect_contour":[1,61,2,0],
-"module__cv_detect_gate.html":[1,62]
+"module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2]
 };

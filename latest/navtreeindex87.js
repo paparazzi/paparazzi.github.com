@@ -1,8 +1,5 @@
 var NAVTREEINDEX87 =
 {
-"imu__vectornav_8h.html#structImuVectornav":[12,0,1,0,6,36,45,0],
-"imu__vectornav_8h_source.html":[12,0,1,0,6,36,45],
-"imu__xsens_8c.html":[12,0,1,0,6,37,6],
 "imu__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6":[12,0,1,0,6,37,6,0],
 "imu__xsens_8c.html#a881da7d1492e95d09c81c6f3c5a1e4cd":[12,0,1,0,6,37,6,1],
 "imu__xsens_8c.html#ae98fa030dfb8217636d62dd368d3f375":[12,0,1,0,6,37,6,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX87 =
 "ins__ekf2_8cpp.html#ad45196888d5280cef0c1113e1f2608e4":[12,0,1,0,6,37,16,9],
 "ins__ekf2_8cpp.html#ad7f02ccead622cae5023cc8323db00cb":[12,0,1,0,6,37,16,24],
 "ins__ekf2_8cpp.html#ad84c4e5df160b1e170812a80cb61e9f9":[12,0,1,0,6,37,16,68],
-"ins__ekf2_8cpp.html#add6410bbc9ad1c73df8d91c03aa50cec":[12,0,1,0,6,37,16,12]
+"ins__ekf2_8cpp.html#add6410bbc9ad1c73df8d91c03aa50cec":[12,0,1,0,6,37,16,12],
+"ins__ekf2_8cpp.html#adfd7a7b836b78f066f0d6d8cd453c8d2":[12,0,1,0,6,37,16,80],
+"ins__ekf2_8cpp.html#ae046aca72b84e24b4494c5709c940afb":[12,0,1,0,6,37,16,2],
+"ins__ekf2_8cpp.html#ae272d2b42a54b734aa093467c0912059":[12,0,1,0,6,37,16,59]
 };

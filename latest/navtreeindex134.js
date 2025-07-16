@@ -1,7 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__stabilization_float_quat.html":[1,442],
-"module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,442,1],
 "module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,442,2],
 "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,442,0],
 "module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,442,2,0],
@@ -189,10 +187,9 @@ var NAVTREEINDEX134 =
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,125,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,125,1,0],
 "module__telemetry_transparent_gec.html":[1,126],
-"module__telemetry_transparent_gec.html#event_functions":[1,126,1,0],
 "module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,126,1],
 "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec":[1,126,0],
-"module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,126,1,1],
+"module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,126,1,0],
 "module__telemetry_transparent_udp.html":[1,127],
 "module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp":[1,127,1],
 "module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp":[1,127,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX134 =
 "module__time_countdown.html#configuration__time_countdown":[1,515,1],
 "module__time_countdown.html#functions__time_countdown":[1,515,2],
 "module__time_countdown.html#module_load_example__time_countdown":[1,515,0],
-"module__time_countdown.html#module_xml__time_countdown":[1,515,2,0]
+"module__time_countdown.html#module_xml__time_countdown":[1,515,2,0],
+"module__tlsf.html":[1,516],
+"module__tlsf.html#configuration__tlsf":[1,516,1],
+"module__tlsf.html#functions__tlsf":[1,516,2]
 };

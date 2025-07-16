@@ -12,9 +12,6 @@ var can__fuelcell_8c =
       [ "timeout", "can__fuelcell_8c.html#a9598cb655e5bc2d000a8e8532b62aab8", null ],
       [ "volt_bat", "can__fuelcell_8c.html#a507f9525925970dc0d0ed64944f02aba", null ]
     ] ],
-    [ "UAVCAN_EQUIPMENT_FUELCELL_STATUS_ID", "can__fuelcell_8c.html#a7722f334537a6d6dfc80889fa969c29e", null ],
-    [ "UAVCAN_EQUIPMENT_FUELCELL_STATUS_MAX_SIZE", "can__fuelcell_8c.html#a812405b2f2e78e8eb23c8b4a610085f6", null ],
-    [ "UAVCAN_EQUIPMENT_FUELCELL_STATUS_SIGNATURE", "can__fuelcell_8c.html#afc4526826d85256ea285d94d2a2fdbfa", null ],
     [ "can_fuelcell_init", "can__fuelcell_8c.html#a5cf5dd70f22af372421c0aa0b58953fa", null ],
     [ "can_fuelcell_periodic", "can__fuelcell_8c.html#a3e77e181b24a38962de7109ea177be20", null ],
     [ "can_fuelcell_send_telemetry", "can__fuelcell_8c.html#adf9b138129de6577823a7100030f56ce", null ],

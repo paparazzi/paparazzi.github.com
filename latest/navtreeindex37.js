@@ -1,8 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"chimera_8h.html#a045b009e33c6c53c43c8ff352a2fd507":[12,0,1,0,1,4,0,0,1,113],
-"chimera_8h.html#a082f6a92009c531f29c919d1a9c4342b":[12,0,1,0,1,4,0,0,1,40],
-"chimera_8h.html#a091507bd6096d283f26a4118213b42d6":[12,0,1,0,1,4,0,0,1,19],
 "chimera_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750":[12,0,1,0,1,4,0,0,1,102],
 "chimera_8h.html#a0bb8407cbad582149d6c82588b77f100":[12,0,1,0,1,4,0,0,1,114],
 "chimera_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,4,0,0,1,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX37 =
 "classes.html":[11,1],
 "classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html":[11,0,0,0,0],
 "classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a152bd067f57000a7ea8626c33ced3cf9":[11,0,0,0,0,2],
-"classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a17134e5df8ef04965db85726e8cd482b":[11,0,0,0,0,9]
+"classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a17134e5df8ef04965db85726e8cd482b":[11,0,0,0,0,9],
+"classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a37ed53f8e6d65ffda462b902202d4a60":[11,0,0,0,0,5],
+"classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a3d9e70c4f40f4c5e3d9cf0e8dfafdbf3":[11,0,0,0,0,13],
+"classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a8b62dc1aa682c51959936ec2ebbee0c0":[11,0,0,0,0,1]
 };

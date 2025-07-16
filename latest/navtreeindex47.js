@@ -1,8 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"cyrf6936_8h.html#acdcddf8d259f958e10152dda328b8f4b":[12,0,1,0,7,36,0,5],
-"cyrf6936_8h.html#ace1deff46f4385f20a6f3d24fbb5f72a":[12,0,1,0,7,36,0,6],
-"cyrf6936_8h.html#ad5cbcadc8c78772c205080b2d8ded892":[12,0,1,0,7,36,0,9],
 "cyrf6936_8h.html#ad78789ce2cfc6eaa3d4bf5836c2c6e67":[12,0,1,0,7,36,0,8],
 "cyrf6936_8h.html#structCyrf6936":[12,0,1,0,7,36,0],
 "cyrf6936_8h_source.html":[12,0,1,0,7,36],
@@ -249,5 +246,8 @@ var NAVTREEINDEX47 =
 "dc__ctrl__parrot__mykonos_8h.html#aec4e65a2cb7d6a7fec229311f5089c14a84773e3f3d1d513f4624c0efdf3a7367":[12,0,1,0,6,19,6,2,6],
 "dc__ctrl__parrot__mykonos_8h.html#aec4e65a2cb7d6a7fec229311f5089c14acec259675cbf8c45dc8597676c1b7d45":[12,0,1,0,6,19,6,2,7],
 "dc__ctrl__parrot__mykonos_8h.html#afb14325f0014b0d69816818b4622617c":[12,0,1,0,6,19,6,0,3],
-"dc__ctrl__parrot__mykonos_8h.html#structDc__Ctrl__Parrot__Mykonos":[12,0,1,0,6,19,6,0]
+"dc__ctrl__parrot__mykonos_8h.html#structDc__Ctrl__Parrot__Mykonos":[12,0,1,0,6,19,6,0],
+"dc__ctrl__parrot__mykonos_8h_source.html":[12,0,1,0,6,19,6],
+"dc__shoot__rc_8c.html":[12,0,1,0,6,19,7],
+"dc__shoot__rc_8c.html#a07c50c1495b2a608715da52b87501ff2":[12,0,1,0,6,19,7,1]
 };

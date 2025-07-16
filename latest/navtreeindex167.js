@@ -1,8 +1,5 @@
 var NAVTREEINDEX167 =
 {
-"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9],
-"paparazzi_messages.html#STEREOCAM_FOLLOW_ME":[2,4,12],
-"paparazzi_messages.html#STEREOCAM_STATE":[2,4,11],
 "paparazzi_messages.html#STEREOCAM_VELOCITY":[2,4,10],
 "paparazzi_messages.html#STEREO_IMG":[2,0,220],
 "paparazzi_messages.html#SUPERBITRF":[2,0,67],
@@ -249,5 +246,8 @@ var NAVTREEINDEX167 =
 "pca9685__i2c_8h.html#afa7345b74393331220050652c4391219":[12,0,1,0,6,52,1,8],
 "pca9685__i2c_8h_source.html":[12,0,1,0,6,52,1],
 "peripherals_2mcp355x_8h.html":[12,0,1,0,7,89],
-"peripherals_2mcp355x_8h.html#a329ea6825fdd8dfeab29d6766309a493":[12,0,1,0,7,89,3]
+"peripherals_2mcp355x_8h.html#a329ea6825fdd8dfeab29d6766309a493":[12,0,1,0,7,89,3],
+"peripherals_2mcp355x_8h.html#a432cd0706e314361d3602ac9528f2a05":[12,0,1,0,7,89,0],
+"peripherals_2mcp355x_8h.html#a43309b519e20c3a78b08cbae9ce2775a":[12,0,1,0,7,89,1],
+"peripherals_2mcp355x_8h.html#a43936b2cebe162bd29e00181b0282a91":[12,0,1,0,7,89,2]
 };

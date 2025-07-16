@@ -1,8 +1,5 @@
 var NAVTREEINDEX168 =
 {
-"peripherals_2mcp355x_8h.html#a432cd0706e314361d3602ac9528f2a05":[12,0,1,0,7,89,0],
-"peripherals_2mcp355x_8h.html#a43309b519e20c3a78b08cbae9ce2775a":[12,0,1,0,7,89,1],
-"peripherals_2mcp355x_8h.html#a43936b2cebe162bd29e00181b0282a91":[12,0,1,0,7,89,2],
 "peripherals_2mcp355x_8h.html#a5b584e55031878ca6be005e63162cc3c":[12,0,1,0,7,89,4],
 "peripherals_2mcp355x_8h_source.html":[12,0,1,0,7,89],
 "pfc__actuators_8c.html":[12,0,1,0,6,10,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX168 =
 "potential_8c.html#a73e3081e48cf5a7013f4c664d6e973ca":[12,0,1,0,6,46,9,5],
 "potential_8c.html#a753b79403d8062c72077207382d8d3af":[12,0,1,0,6,46,9,10],
 "potential_8c.html#a9bff43b295c79baf79697717512f3b5b":[12,0,1,0,6,46,9,1],
-"potential_8c.html#aadd9ec4644f273ebb4aa189a93e08269":[12,0,1,0,6,46,9,3]
+"potential_8c.html#aadd9ec4644f273ebb4aa189a93e08269":[12,0,1,0,6,46,9,3],
+"potential_8c.html#ab854e51b04432e809f3d60e85d19ded3":[12,0,1,0,6,46,9,8],
+"potential_8c.html#ad0b5aeaf048b2d7b5836418d13eb93e5":[12,0,1,0,6,46,9,0],
+"potential_8c.html#adda93a003e9b84061c28b3b2ef8bea4b":[12,0,1,0,6,46,9,9]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX166 =
 {
-"paparazzi_messages.html#CAM_STATUS":[2,2,13],
-"paparazzi_messages.html#CHIRP":[2,0,42],
-"paparazzi_messages.html#CIRCLE":[2,0,18],
 "paparazzi_messages.html#CIRCLE_STATUS":[2,2,20],
 "paparazzi_messages.html#CLOUD_SENSOR":[2,0,56],
 "paparazzi_messages.html#COMMANDS":[2,0,97],
@@ -249,5 +246,8 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#STAB_ATTITUDE_INT":[2,0,135],
 "paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137],
 "paparazzi_messages.html#STAB_ATTITUDE_REF_INT":[2,0,136],
-"paparazzi_messages.html#STATE_FILTER_STATUS":[2,0,223]
+"paparazzi_messages.html#STATE_FILTER_STATUS":[2,0,223],
+"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9],
+"paparazzi_messages.html#STEREOCAM_FOLLOW_ME":[2,4,12],
+"paparazzi_messages.html#STEREOCAM_STATE":[2,4,11]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__hott_telemetry.html#module_xml__hott_telemetry":[1,493,2,0],
 "module__humid_dpicco.html":[1,292],
 "module__humid_dpicco.html#functions__humid_dpicco":[1,292,1],
 "module__humid_dpicco.html#module_load_example__humid_dpicco":[1,292,0],
@@ -69,9 +70,9 @@ var NAVTREEINDEX130 =
 "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,197,0,0],
 "module__imu_aspirin_v1_0.html":[1,198],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,198,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,198,0,0],
 "module__imu_aspirin_v1_5.html":[1,199],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,199,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,199,0,0],
 "module__imu_aspirin_v2_1.html":[1,200],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,200,0],
 "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,200,0,0],
@@ -171,6 +172,7 @@ var NAVTREEINDEX130 =
 "module__imu_nps.html#module_load_example__imu_nps":[1,222,0],
 "module__imu_nps.html#module_xml__imu_nps":[1,222,1,0],
 "module__imu_openpilot_revo.html":[1,223],
+"module__imu_openpilot_revo.html#af_section":[1,223,1,0],
 "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo":[1,223,1],
 "module__imu_openpilot_revo.html#functions__imu_openpilot_revo":[1,223,2],
 "module__imu_openpilot_revo.html#module_load_example__imu_openpilot_revo":[1,223,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "module__ins_extended.html":[1,239],
 "module__ins_extended.html#configuration__ins_extended":[1,239,1],
 "module__ins_extended.html#module_load_example__ins_extended":[1,239,0],
-"module__ins_extended.html#module_xml__ins_extended":[1,239,1,0],
-"module__ins_float_invariant.html":[1,240],
-"module__ins_float_invariant.html#configuration__ins_float_invariant":[1,240,1]
+"module__ins_extended.html#module_xml__ins_extended":[1,239,1,0]
 };

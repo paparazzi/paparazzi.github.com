@@ -1,8 +1,5 @@
 var NAVTREEINDEX202 =
 {
-"stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d":[12,0,1,0,0,3,2,1,0],
-"stm32_2peripherals_2hmc5843__arch_8h_source.html":[12,0,1,0,0,3,2,1],
-"stm32_2peripherals_2max1168__arch_8c.html":[12,0,1,0,0,3,2,2],
 "stm32_2peripherals_2max1168__arch_8c.html#a40747dba0f93159403e51109a87575fd":[12,0,1,0,0,3,2,2,0],
 "stm32_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2":[12,0,1,0,0,3,2,2,1],
 "stm32_2peripherals_2max1168__arch_8c_source.html":[12,0,1,0,0,3,2,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX202 =
 "swashplate__mixing_8h.html#a1ddba624f4cfc23b3fdcdad624763d50":[12,0,1,0,6,34,1,8],
 "swashplate__mixing_8h.html#a2cc8559702e048c339f68d72a94a5fa8":[12,0,1,0,6,34,1,10],
 "swashplate__mixing_8h.html#a43786ec35371a626a36b94a96bdcde31":[12,0,1,0,6,34,1,3],
-"swashplate__mixing_8h.html#a43d96d040389076c6e61d72d65f83fc5":[12,0,1,0,6,34,1,4]
+"swashplate__mixing_8h.html#a43d96d040389076c6e61d72d65f83fc5":[12,0,1,0,6,34,1,4],
+"swashplate__mixing_8h.html#a704f3844ddc8396c39043d9c7ab5ad1d":[12,0,1,0,6,34,1,11],
+"swashplate__mixing_8h.html#a7d4326255042772a1931e6c1eed9ea92":[12,0,1,0,6,34,1,12],
+"swashplate__mixing_8h.html#a88bb4a06680ca1ecfc783c9ffca7703f":[12,0,1,0,6,34,1,5]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a2b5d34aeac1b12c901e2fed5952ae29d":[12,0,1,0,1,10,0,0,1,52],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a2bc2adc3f0b24eadf5705b40f03b7648":[12,0,1,0,1,10,0,0,1,83],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a311306228435a4ddb879e8f0d80e3c10":[12,0,1,0,1,10,0,0,1,99],
 "lia_2chibios_2v1_81_2mcuconf__board_8h.html#a314cec15b23670096752964ec5caf3ce":[12,0,1,0,1,10,0,0,1,18],
 "lia_2chibios_2v1_81_2mcuconf__board_8h.html#a32a5323ec55bfb3e6590c8346ee76dc4":[12,0,1,0,1,10,0,0,1,13],
 "lia_2chibios_2v1_81_2mcuconf__board_8h.html#a360ce89f2744ed7e4ec5789201f557c3":[12,0,1,0,1,10,0,0,1,14],
@@ -249,5 +246,8 @@ var NAVTREEINDEX99 =
 "libisp__config_8h.html#a77cdbdca231b7cc9f806da34a699cf66":[12,0,1,0,1,2,0,3,9],
 "libisp__config_8h.html#a8e696583ad23f87be99dedc2041a1298":[12,0,1,0,1,2,0,3,6],
 "libisp__config_8h.html#a9255dd8c0972318c0bdabe2720e7fd42":[12,0,1,0,1,2,0,3,4],
-"libisp__config_8h.html#a9773a88103f5a799118148f9a0cd8b30":[12,0,1,0,1,2,0,3,10]
+"libisp__config_8h.html#a9773a88103f5a799118148f9a0cd8b30":[12,0,1,0,1,2,0,3,10],
+"libisp__config_8h.html#ab21377b8f63e0d742be756d5422ca545":[12,0,1,0,1,2,0,3,7],
+"libisp__config_8h.html#ab7b17865ddc7dc46d55fd38039d49d1d":[12,0,1,0,1,2,0,3,2],
+"libisp__config_8h.html#ac504229a8e7cd426196214e3dee964aa":[12,0,1,0,1,2,0,3,8]
 };

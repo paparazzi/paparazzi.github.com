@@ -1,8 +1,5 @@
 var NAVTREEINDEX100 =
 {
-"libisp__config_8h.html#ab21377b8f63e0d742be756d5422ca545":[12,0,1,0,1,2,0,3,7],
-"libisp__config_8h.html#ab7b17865ddc7dc46d55fd38039d49d1d":[12,0,1,0,1,2,0,3,2],
-"libisp__config_8h.html#ac504229a8e7cd426196214e3dee964aa":[12,0,1,0,1,2,0,3,8],
 "libisp__config_8h.html#ac6bef058edef9d016b5226c7a855f833":[12,0,1,0,1,2,0,3,12],
 "libisp__config_8h.html#aeb04d71d796ee7d4c622be08adb9e710":[12,0,1,0,1,2,0,3,11],
 "libisp__config_8h_source.html":[12,0,1,0,1,2,0,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX100 =
 "linux_2mcu__arch_8c_source.html":[12,0,1,0,0,1,3],
 "linux_2mcu__arch_8h.html":[12,0,1,0,0,1,4],
 "linux_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,4,0],
-"linux_2mcu__arch_8h_source.html":[12,0,1,0,0,1,4]
+"linux_2mcu__arch_8h_source.html":[12,0,1,0,0,1,4],
+"linux_2mcu__periph_2adc__arch_8c.html":[12,0,1,0,0,1,0,0],
+"linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234":[12,0,1,0,0,1,0,0,4],
+"linux_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824":[12,0,1,0,0,1,0,0,0]
 };

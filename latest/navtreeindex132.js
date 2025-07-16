@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__mcu.html#functions__mcu":[1,279,1],
+"module__mcu.html#module_load_example__mcu":[1,279,0],
 "module__mcu.html#module_xml__mcu":[1,279,1,0],
 "module__meteo_france_daq.html":[1,302],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,302,2],
@@ -34,14 +36,9 @@ var NAVTREEINDEX132 =
 "module__motor_mixing.html#module_load_example__motor_mixing":[1,20,0],
 "module__motor_mixing.html#module_xml__motor_mixing":[1,20,2,0],
 "module__mppt.html":[1,145],
-"module__mppt.html#files":[1,145,2],
 "module__mppt.html#functions__mppt":[1,145,1],
-"module__mppt.html#headers":[1,145,2,0],
-"module__mppt.html#init_functions":[1,145,1,0],
 "module__mppt.html#module_load_example__mppt":[1,145,0],
-"module__mppt.html#module_xml__mppt":[1,145,2,2],
-"module__mppt.html#periodic_functions":[1,145,1,1],
-"module__mppt.html#sources":[1,145,2,1],
+"module__mppt.html#module_xml__mppt":[1,145,1,0],
 "module__nav_basic_fw.html":[1,326],
 "module__nav_basic_fw.html#configuration__nav_basic_fw":[1,326,1],
 "module__nav_basic_fw.html#datalink_functions__nav_basic_fw":[1,326,3],
@@ -222,6 +219,7 @@ var NAVTREEINDEX132 =
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,106,2,0],
 "module__optical_flow_mateksys_3901_l0x.html":[1,365],
 "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,365,1],
+"module__optical_flow_mateksys_3901_l0x.html#define":[1,365,1,0],
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,365,2],
 "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,365,0],
 "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,365,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX132 =
 "module__osd_max7456.html#configuration__osd_max7456":[1,501,1],
 "module__osd_max7456.html#functions__osd_max7456":[1,501,2],
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,501,0],
-"module__osd_max7456.html#module_xml__osd_max7456":[1,501,2,0]
+"module__osd_max7456.html#module_xml__osd_max7456":[1,501,2,0],
+"module__pano_unwrap.html":[1,502],
+"module__pano_unwrap.html#configuration__pano_unwrap":[1,502,1]
 };
