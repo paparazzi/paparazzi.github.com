@@ -1,5 +1,7 @@
 var NAVTREEINDEX152 =
 {
+"nps__autopilot_8h.html#a7ac376c868e8cec83ef082ac3beb9487":[12,0,1,1,1,4,4],
+"nps__autopilot_8h.html#a95a0837a97b6695923a8edde170e2aba":[12,0,1,1,1,4,0,1],
 "nps__autopilot_8h.html#aa10f50205109ca60f93290db2d7ac71c":[12,0,1,1,1,4,2],
 "nps__autopilot_8h.html#abf3277c5d8e757db78d1d7d84cac144f":[12,0,1,1,1,4,5],
 "nps__autopilot_8h.html#structNpsAutopilot":[12,0,1,1,1,4,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX152 =
 "nps__fdm__jsbsim_8cpp.html#a94155297cb6b91686d2633387248d665":[12,0,1,1,1,14,15],
 "nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660":[12,0,1,1,1,14,25],
 "nps__fdm__jsbsim_8cpp.html#a9c19749ed68680c20a810381c2e47874":[12,0,1,1,1,14,14],
-"nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d":[12,0,1,1,1,14,16],
-"nps__fdm__jsbsim_8cpp.html#ab3c5997079f9fc0ccc2eca4aaae82ebc":[12,0,1,1,1,14,3],
-"nps__fdm__jsbsim_8cpp.html#ac07a0f8dffd889c21a81979e521a8d97":[12,0,1,1,1,14,31]
+"nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d":[12,0,1,1,1,14,16]
 };

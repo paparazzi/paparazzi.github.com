@@ -375,6 +375,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#CAMERA_PAYLOAD_DL">CAMERA_PAYLOAD_DL (ID 34)</a></li>
 <li class="level2"><a href="#CAMERA_SNAPSHOT_DL">CAMERA_SNAPSHOT_DL (ID 35)</a></li>
 <li class="level2"><a href="#GUIDED_SETPOINT_NED">GUIDED_SETPOINT_NED (ID 40)</a></li>
+<li class="level2"><a href="#GUIDED_FULL_NED">GUIDED_FULL_NED (ID 41)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS">WINDTURBINE_STATUS (ID 50)</a></li>
 <li class="level2"><a href="#EXTERNAL_POSE">EXTERNAL_POSE (ID 54)</a></li>
 <li class="level2"><a href="#EXTERNAL_POSE_SMALL">EXTERNAL_POSE_SMALL (ID 55)</a></li>
@@ -5738,6 +5739,35 @@ GUIDED_SETPOINT_NED (ID 40)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">yaw   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone">yaw/rate setpoint   </td></tr>
 </table>
+<h2><a class="anchor" id="GUIDED_FULL_NED"></a>
+GUIDED_FULL_NED (ID 41)</h2>
+<p>Set vehicle position, velocity and accel in NED, with heading angle.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">X position in NED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Y position in NED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Z position in NED (negative altitude)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vx   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">X velocity in NED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vy   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Y velocity in NED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vz   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Z velocity in NED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ax   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">X acceleration in NED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ay   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Y acceleration in NED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">az   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Z acceleration in NED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">heading   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone">yaw setpoint    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h2><a class="anchor" id="WINDTURBINE_STATUS"></a>
 WINDTURBINE_STATUS (ID 50)</h2>
 <table class="markdownTable">
@@ -7122,7 +7152,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jul 18 2025 13:39:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 21 2025 14:32:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

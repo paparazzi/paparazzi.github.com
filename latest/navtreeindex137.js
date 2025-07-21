@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce":[12,0,1,0,7,93,1,5],
+"mpu60x0_8h.html#structMpu60x0Config":[12,0,1,0,7,93,1],
 "mpu60x0_8h.html#structMpu60x0I2cSlave":[12,0,1,0,7,93,0],
 "mpu60x0_8h_source.html":[12,0,1,0,7,93],
 "mpu60x0__i2c_8c.html":[12,0,1,0,7,94],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "mpu9250_8h.html#a86533d677bbb1562223508b115f29f86":[12,0,1,0,7,100,17],
 "mpu9250_8h.html#a8bac58e2f227d59033c8cd0f1341ead7":[12,0,1,0,7,100,1,6],
 "mpu9250_8h.html#a8f66a2ca6c67979f76e55e3861e6aaa3":[12,0,1,0,7,100,8],
-"mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab":[12,0,1,0,7,100,24],
-"mpu9250_8h.html#aa70b0cd2b4d4ac64956c369549b905ef":[12,0,1,0,7,100,1,2],
-"mpu9250_8h.html#aae5fa60698653c8ac15e41796c53c66e":[12,0,1,0,7,100,23]
+"mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab":[12,0,1,0,7,100,24]
 };

@@ -195,7 +195,8 @@ var NAVTREEINDEX15 =
 "autopilot__arming__yaw_8h.html#afa4555e2285a10ca7a4e4b8a47948bac":[12,0,1,0,3,2,7,10],
 "autopilot__arming__yaw_8h_source.html":[12,0,1,0,3,2,7],
 "autopilot__guided_8c.html":[12,0,1,0,3,2,12],
-"autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d":[12,0,1,0,3,2,12,5],
+"autopilot__guided_8c.html#a0091a32e18ea7952b04af05bb12b6955":[12,0,1,0,3,2,12,5],
+"autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d":[12,0,1,0,3,2,12,6],
 "autopilot__guided_8c.html#a113a26863eee267edc78f72876ec8f69":[12,0,1,0,3,2,12,3],
 "autopilot__guided_8c.html#a2e1c3e1b1fd34632e5de912da830ba26":[12,0,1,0,3,2,12,4],
 "autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312":[12,0,1,0,3,2,12,2],
@@ -203,7 +204,8 @@ var NAVTREEINDEX15 =
 "autopilot__guided_8c.html#ae4f59fae723f5116a979c7c5b923c180":[12,0,1,0,3,2,12,1],
 "autopilot__guided_8c_source.html":[12,0,1,0,3,2,12],
 "autopilot__guided_8h.html":[12,0,1,0,3,2,13],
-"autopilot__guided_8h.html#a07ce763874e77faf62f5c9506bdad43d":[12,0,1,0,3,2,13,13],
+"autopilot__guided_8h.html#a0091a32e18ea7952b04af05bb12b6955":[12,0,1,0,3,2,13,13],
+"autopilot__guided_8h.html#a07ce763874e77faf62f5c9506bdad43d":[12,0,1,0,3,2,13,14],
 "autopilot__guided_8h.html#a113a26863eee267edc78f72876ec8f69":[12,0,1,0,3,2,13,11],
 "autopilot__guided_8h.html#a2e1c3e1b1fd34632e5de912da830ba26":[12,0,1,0,3,2,13,12],
 "autopilot__guided_8h.html#a32b83e461c091c64ffa38e4f08f6a312":[12,0,1,0,3,2,13,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "avi__isp__chain__bayer__inter_8h.html#a9d49856ba1787fdba850ea4cd46fc735":[12,0,1,0,1,2,0,0,1,0,0],
 "avi__isp__chain__bayer__inter_8h.html#ab871324953a604dc8557a2f33482d75d":[12,0,1,0,1,2,0,0,1,2,3],
 "avi__isp__chain__bayer__inter_8h.html#ac756f6254ece692020ceb482256c8eb4":[12,0,1,0,1,2,0,0,1,2,0],
-"avi__isp__chain__bayer__inter_8h.html#ad82d8d87fdde1cb93cb56e5b845b98e4":[12,0,1,0,1,2,0,0,1,3],
-"avi__isp__chain__bayer__inter_8h.html#adff356e880523a1211f467b2832ae427":[12,0,1,0,1,2,0,0,1,2,1],
-"avi__isp__chain__bayer__inter_8h.html#aecdac0db8b07fcc2bee29e65df07942a":[12,0,1,0,1,2,0,0,1,2,4]
+"avi__isp__chain__bayer__inter_8h.html#ad82d8d87fdde1cb93cb56e5b845b98e4":[12,0,1,0,1,2,0,0,1,3]
 };

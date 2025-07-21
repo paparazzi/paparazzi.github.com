@@ -12,7 +12,8 @@ var rotorcraft_2guidance_2guidance__v_8h =
       [ "z_sp", "rotorcraft_2guidance_2guidance__v_8h.html#a3dfc42f2734484d8dbf24512f12666fe", null ],
       [ "zd_ref", "rotorcraft_2guidance_2guidance__v_8h.html#a94494130562a1fd56b10a852ea9776d0", null ],
       [ "zd_sp", "rotorcraft_2guidance_2guidance__v_8h.html#a44dfba2560ca9e7e916c671220e9570d", null ],
-      [ "zdd_ref", "rotorcraft_2guidance_2guidance__v_8h.html#aea260e91d1656b6cfa748d846f4a97eb", null ]
+      [ "zdd_ref", "rotorcraft_2guidance_2guidance__v_8h.html#aea260e91d1656b6cfa748d846f4a97eb", null ],
+      [ "zdd_sp", "rotorcraft_2guidance_2guidance__v_8h.html#a925b286427f3338c4d3cd811d57f143a", null ]
     ] ],
     [ "GUIDANCE_V_MODE_CLIMB", "rotorcraft_2guidance_2guidance__v_8h.html#a77dd92d59de41da4a0e7987a218266c9", null ],
     [ "GUIDANCE_V_MODE_GUIDED", "rotorcraft_2guidance_2guidance__v_8h.html#aead9ebb1bfd4017ce0270d3a2b7e13ea", null ],
@@ -33,6 +34,7 @@ var rotorcraft_2guidance_2guidance__v_8h =
     [ "guidance_v_run_enter", "rotorcraft_2guidance_2guidance__v_8h.html#a642dab951988b0727ee833c94db9e428", null ],
     [ "guidance_v_run_pos", "rotorcraft_2guidance_2guidance__v_8h.html#a92b722e74745886f2cb0bbbd57509e46", null ],
     [ "guidance_v_run_speed", "rotorcraft_2guidance_2guidance__v_8h.html#a6fd2b4f3653baa8eef71b6d725a61b66", null ],
+    [ "guidance_v_set_all", "rotorcraft_2guidance_2guidance__v_8h.html#a7a7c72d24b9aa112dd6528a839a7f71d", null ],
     [ "guidance_v_set_ref", "rotorcraft_2guidance_2guidance__v_8h.html#a9cf07bda38d537147bd9b5f8c90455a2", null ],
     [ "guidance_v_set_th", "rotorcraft_2guidance_2guidance__v_8h.html#ab35adf811b8455ea44837bb3be44776c", null ],
     [ "guidance_v_set_vz", "rotorcraft_2guidance_2guidance__v_8h.html#a11bc5a0aad4e7ceef172ba43e9547a5d", null ],

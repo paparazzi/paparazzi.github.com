@@ -103,7 +103,8 @@ Example for airframe file</h1>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>GUIDED_SETPOINT_NED</b> call autopilot_guided_parse_GUIDED(buf) </li>
+<li>on message <b>GUIDED_SETPOINT_NED</b> call autopilot_guided_parse_GUIDED(buf)</li>
+<li>on message <b>GUIDED_FULL_NED</b> call autopilot_guided_parse_GUIDED_FULL(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -137,6 +138,7 @@ Raw autopilot_guided.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;autopilot_guided.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GUIDED_SETPOINT_NED&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;autopilot_guided_parse_GUIDED(buf)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;AP_MODE_GUIDED&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GUIDED_FULL_NED&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;autopilot_guided_parse_GUIDED_FULL(buf)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;AP_MODE_GUIDED&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;autopilot_guided.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -149,7 +151,7 @@ Raw autopilot_guided.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Jul 18 2025 13:39:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 21 2025 14:32:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

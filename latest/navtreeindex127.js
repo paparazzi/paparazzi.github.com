@@ -1,5 +1,7 @@
 var NAVTREEINDEX127 =
 {
+"module__auto1_commands.html":[1,458],
+"module__auto1_commands.html#functions__auto1_commands":[1,458,1],
 "module__auto1_commands.html#module_load_example__auto1_commands":[1,458,0],
 "module__auto1_commands.html#module_xml__auto1_commands":[1,458,1,0],
 "module__autopilot_gnc.html":[1,467],
@@ -247,7 +249,5 @@ var NAVTREEINDEX127 =
 "module__cv_detect_color_object.html#functions__cv_detect_color_object":[1,60,2],
 "module__cv_detect_color_object.html#module_load_example__cv_detect_color_object":[1,60,0],
 "module__cv_detect_color_object.html#module_xml__cv_detect_color_object":[1,60,2,0],
-"module__cv_detect_contour.html":[1,61],
-"module__cv_detect_contour.html#configuration__cv_detect_contour":[1,61,1],
-"module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2]
+"module__cv_detect_contour.html":[1,61]
 };

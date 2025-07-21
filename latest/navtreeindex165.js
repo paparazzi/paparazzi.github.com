@@ -1,5 +1,7 @@
 var NAVTREEINDEX165 =
 {
+"opticflow__calculator_8h.html#af8580baf85f0c87ba368f1824c1d4063":[12,0,1,0,6,12,2,4,1],
+"opticflow__calculator_8h.html#afbd01d7899a4bd96c5efe26e108870fe":[12,0,1,0,6,12,2,4,0,11],
 "opticflow__calculator_8h.html#structopticflow__t":[12,0,1,0,6,12,2,4,0],
 "opticflow__calculator_8h_source.html":[12,0,1,0,6,12,2,4],
 "opticflow__module_8c.html":[12,0,1,0,6,12,32],
@@ -238,8 +240,8 @@ var NAVTREEINDEX165 =
 "paparazzi_messages.html#BLUEGIGA":[2,0,101],
 "paparazzi_messages.html#BMP_STATUS":[2,0,79],
 "paparazzi_messages.html#BODY_RATES_ACCEL":[2,0,71],
-"paparazzi_messages.html#BOOZ2_FMS_COMMAND":[2,1,47],
-"paparazzi_messages.html#BOOZ_NAV_STICK":[2,1,48],
+"paparazzi_messages.html#BOOZ2_FMS_COMMAND":[2,1,48],
+"paparazzi_messages.html#BOOZ_NAV_STICK":[2,1,49],
 "paparazzi_messages.html#CALIBRATION":[2,0,11],
 "paparazzi_messages.html#CAM":[2,0,17],
 "paparazzi_messages.html#CAMERA_PAYLOAD":[2,0,106],
@@ -247,7 +249,5 @@ var NAVTREEINDEX165 =
 "paparazzi_messages.html#CAMERA_SNAPSHOT":[2,0,123],
 "paparazzi_messages.html#CAMERA_SNAPSHOT_DL":[2,1,30],
 "paparazzi_messages.html#CAM_POINT":[2,0,58],
-"paparazzi_messages.html#CAM_STATUS":[2,2,13],
-"paparazzi_messages.html#CHIRP":[2,0,42],
-"paparazzi_messages.html#CIRCLE":[2,0,18]
+"paparazzi_messages.html#CAM_STATUS":[2,2,13]
 };

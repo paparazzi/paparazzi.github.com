@@ -1,5 +1,14 @@
 var NAVTREEINDEX202 =
 {
+"stm32_2peripherals_2hmc5843__arch_8c.html":[12,0,1,0,0,3,2,0],
+"stm32_2peripherals_2hmc5843__arch_8c.html#ac033acbc708beb196e46622d95d450c5":[12,0,1,0,0,3,2,0,0],
+"stm32_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7":[12,0,1,0,0,3,2,0,1],
+"stm32_2peripherals_2hmc5843__arch_8c.html#aea219a14b12c8fb0fe874ebde7a9a806":[12,0,1,0,0,3,2,0,2],
+"stm32_2peripherals_2hmc5843__arch_8c_source.html":[12,0,1,0,0,3,2,0],
+"stm32_2peripherals_2hmc5843__arch_8h.html":[12,0,1,0,0,3,2,1],
+"stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d":[12,0,1,0,0,3,2,1,0],
+"stm32_2peripherals_2hmc5843__arch_8h_source.html":[12,0,1,0,0,3,2,1],
+"stm32_2peripherals_2max1168__arch_8c.html":[12,0,1,0,0,3,2,2],
 "stm32_2peripherals_2max1168__arch_8c.html#a40747dba0f93159403e51109a87575fd":[12,0,1,0,0,3,2,2,0],
 "stm32_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2":[12,0,1,0,0,3,2,2,1],
 "stm32_2peripherals_2max1168__arch_8c_source.html":[12,0,1,0,0,3,2,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX202 =
 "swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c":[12,0,1,0,6,34,0,7],
 "swashplate__mixing_8c.html#af7668edf247b3910f2ed9dbf8c02123b":[12,0,1,0,6,34,0,0],
 "swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623":[12,0,1,0,6,34,0,5],
-"swashplate__mixing_8c_source.html":[12,0,1,0,6,34,0],
-"swashplate__mixing_8h.html":[12,0,1,0,6,34,1],
-"swashplate__mixing_8h.html#a010f808a2b4605a5a092aa2a4ac6eeae":[12,0,1,0,6,34,1,7],
-"swashplate__mixing_8h.html#a1ddba624f4cfc23b3fdcdad624763d50":[12,0,1,0,6,34,1,8],
-"swashplate__mixing_8h.html#a2cc8559702e048c339f68d72a94a5fa8":[12,0,1,0,6,34,1,10],
-"swashplate__mixing_8h.html#a43786ec35371a626a36b94a96bdcde31":[12,0,1,0,6,34,1,3],
-"swashplate__mixing_8h.html#a43d96d040389076c6e61d72d65f83fc5":[12,0,1,0,6,34,1,4],
-"swashplate__mixing_8h.html#a704f3844ddc8396c39043d9c7ab5ad1d":[12,0,1,0,6,34,1,11],
-"swashplate__mixing_8h.html#a7d4326255042772a1931e6c1eed9ea92":[12,0,1,0,6,34,1,12],
-"swashplate__mixing_8h.html#a88bb4a06680ca1ecfc783c9ffca7703f":[12,0,1,0,6,34,1,5]
+"swashplate__mixing_8c_source.html":[12,0,1,0,6,34,0]
 };

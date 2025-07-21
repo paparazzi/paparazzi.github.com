@@ -11,5 +11,6 @@ var rotorcraft_2guidance_2guidance__v_8h_structVerticalGuidance =
     [ "z_sp", "rotorcraft_2guidance_2guidance__v_8h.html#a3dfc42f2734484d8dbf24512f12666fe", null ],
     [ "zd_ref", "rotorcraft_2guidance_2guidance__v_8h.html#a94494130562a1fd56b10a852ea9776d0", null ],
     [ "zd_sp", "rotorcraft_2guidance_2guidance__v_8h.html#a44dfba2560ca9e7e916c671220e9570d", null ],
-    [ "zdd_ref", "rotorcraft_2guidance_2guidance__v_8h.html#aea260e91d1656b6cfa748d846f4a97eb", null ]
+    [ "zdd_ref", "rotorcraft_2guidance_2guidance__v_8h.html#aea260e91d1656b6cfa748d846f4a97eb", null ],
+    [ "zdd_sp", "rotorcraft_2guidance_2guidance__v_8h.html#a925b286427f3338c4d3cd811d57f143a", null ]
 ];

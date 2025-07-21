@@ -117,6 +117,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab6de13ab287a8311c4c66e6cbfa7d453" id="r_ab6de13ab287a8311c4c66e6cbfa7d453"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structHorizontalGuidanceSetpoint.html#ab6de13ab287a8311c4c66e6cbfa7d453a452bd3412b30f83ffe4768f39a71183a">GUIDANCE_H_SP_POS</a> = 0
 , <a class="el" href="structHorizontalGuidanceSetpoint.html#ab6de13ab287a8311c4c66e6cbfa7d453ac6be5d6f2b429ce19d8095df525b116c">GUIDANCE_H_SP_SPEED</a> = 1
 , <a class="el" href="structHorizontalGuidanceSetpoint.html#ab6de13ab287a8311c4c66e6cbfa7d453afa6df599c1bfdbdf67297d4fbae81195">GUIDANCE_H_SP_ACCEL</a> = 2
+, <a class="el" href="structHorizontalGuidanceSetpoint.html#ab6de13ab287a8311c4c66e6cbfa7d453af8cc586bee4f175125447cdb52e61868">GUIDANCE_H_SP_ALL</a> = 3
  }</td></tr>
 <tr class="separator:ab6de13ab287a8311c4c66e6cbfa7d453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1faf96c98b153b0f43f439f466e6f3f2" id="r_a1faf96c98b153b0f43f439f466e6f3f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structHorizontalGuidanceSetpoint.html#a1faf96c98b153b0f43f439f466e6f3f2a7aaf9b43fc461e60a66108fdb7cc95f7">GUIDANCE_H_SP_YAW</a> = 0
@@ -163,6 +164,7 @@ Data Fields</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab6de13ab287a8311c4c66e6cbfa7d453a452bd3412b30f83ffe4768f39a71183a" name="ab6de13ab287a8311c4c66e6cbfa7d453a452bd3412b30f83ffe4768f39a71183a"></a>GUIDANCE_H_SP_POS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab6de13ab287a8311c4c66e6cbfa7d453ac6be5d6f2b429ce19d8095df525b116c" name="ab6de13ab287a8311c4c66e6cbfa7d453ac6be5d6f2b429ce19d8095df525b116c"></a>GUIDANCE_H_SP_SPEED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab6de13ab287a8311c4c66e6cbfa7d453afa6df599c1bfdbdf67297d4fbae81195" name="ab6de13ab287a8311c4c66e6cbfa7d453afa6df599c1bfdbdf67297d4fbae81195"></a>GUIDANCE_H_SP_ACCEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6de13ab287a8311c4c66e6cbfa7d453af8cc586bee4f175125447cdb52e61868" name="ab6de13ab287a8311c4c66e6cbfa7d453af8cc586bee4f175125447cdb52e61868"></a>GUIDANCE_H_SP_ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00080">80</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
@@ -185,7 +187,7 @@ Data Fields</h2></td></tr>
 <tr><td class="fieldname"><a id="a1faf96c98b153b0f43f439f466e6f3f2a291b36b460a54d1a3dfa4f62fcc7c291" name="a1faf96c98b153b0f43f439f466e6f3f2a291b36b460a54d1a3dfa4f62fcc7c291"></a>GUIDANCE_H_SP_YAW_RATE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00085">85</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00086">86</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +208,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00075">75</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="simple__quad__sim_8py_source.html#l00138">simple_quad_sim.BulletFDM::get_observation()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00498">guidance_h_set_acc()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="simple__quad__sim_8py_source.html#l00138">simple_quad_sim.BulletFDM::get_observation()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00520">guidance_h_set_acc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00536">guidance_h_set_all()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>.</p>
 
 </div>
 </div>
@@ -222,7 +224,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00498">guidance_h_set_acc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00455">guidance_h_set_pos()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00480">guidance_h_set_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00219">rc_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00457">guidance_h_guided_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00520">guidance_h_set_acc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00536">guidance_h_set_all()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00477">guidance_h_set_pos()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00502">guidance_h_set_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00219">rc_cb()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +242,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00077">77</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00244">guidance_h_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00465">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="guidance__pid_8c_source.html#l00218">guidance_pid_h_run()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00834">ins_ekf2_publish_attitude()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, and <a class="el" href="guidance__pid_8c_source.html#l00142">send_hover_loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00244">guidance_h_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00487">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="guidance__pid_8c_source.html#l00218">guidance_pid_h_run()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00834">ins_ekf2_publish_attitude()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, and <a class="el" href="guidance__pid_8c_source.html#l00142">send_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -258,7 +260,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00078">78</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00508">guidance_h_set_heading_rate()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00530">guidance_h_set_heading_rate()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>.</p>
 
 </div>
 </div>
@@ -279,7 +281,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00073">73</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00375">guidance_h_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00455">guidance_h_set_pos()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00064">send_gh()</a>, <a class="el" href="guidance__pid_8c_source.html#l00142">send_hover_loop()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00073">send_href()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00391">guidance_h_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00536">guidance_h_set_all()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00477">guidance_h_set_pos()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00064">send_gh()</a>, <a class="el" href="guidance__pid_8c_source.html#l00142">send_hover_loop()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00073">send_href()</a>.</p>
 
 </div>
 </div>
@@ -299,7 +301,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00074">74</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">guidance_h.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00343">guidance_h_hover_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00480">guidance_h_set_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00219">rc_cb()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00073">send_href()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00359">guidance_h_hover_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00536">guidance_h_set_all()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00502">guidance_h_set_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00219">rc_cb()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00073">send_href()</a>.</p>
 
 </div>
 </div>
@@ -315,7 +317,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00465">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00508">guidance_h_set_heading_rate()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00086">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00487">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00530">guidance_h_set_heading_rate()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +330,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structHorizontalGuidanceSetpoint.html">HorizontalGuidanceSetpoint</a></li>
-    <li class="footer">Generated on Fri Jul 18 2025 13:39:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 21 2025 14:32:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

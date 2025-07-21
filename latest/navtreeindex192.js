@@ -1,5 +1,14 @@
 var NAVTREEINDEX192 =
 {
+"sc18i600_8h.html#a585fc94273f6258ad9e642fb6102b712":[12,0,1,0,7,124,0,0],
+"sc18i600_8h.html#a6ec77863a14e00725ad080007694371b":[12,0,1,0,7,124,14],
+"sc18i600_8h.html#a722c9537f72c79e04de8ac34775a669b":[12,0,1,0,7,124,0,1],
+"sc18i600_8h.html#a815980abd470146e7d318d4079a2a67c":[12,0,1,0,7,124,5],
+"sc18i600_8h.html#a85994be65492a7cfd8c3abf2dede76fc":[12,0,1,0,7,124,4],
+"sc18i600_8h.html#a88aa5740c63c181a4235587cc9903699":[12,0,1,0,7,124,11],
+"sc18i600_8h.html#aaa6a7f3f130aa729e537ae4e4f0685ab":[12,0,1,0,7,124,15],
+"sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9c":[12,0,1,0,7,124,8],
+"sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9ca1b43917efd3435b558ff1eede5db90d2":[12,0,1,0,7,124,8,4],
 "sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9ca1ea8a8ce5f2a087c5ef28b10832dd8b3":[12,0,1,0,7,124,8,3],
 "sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9ca5090f7afdb31c0e96c50bad5b5cba556":[12,0,1,0,7,124,8,5],
 "sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9ca8e77a3a21f5b5f0b2840ff80af58f068":[12,0,1,0,7,124,8,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX192 =
 "sdlog__chibios_8h.html#ab3743782ef6657c3fa7aceaff33bed1d":[12,0,1,0,6,42,21,2],
 "sdlog__chibios_8h.html#ad094fe3bc7f2da71d85d09484e25bfe6":[12,0,1,0,6,42,21,4],
 "sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a":[12,0,1,0,6,42,21,7],
-"sdlog__chibios_8h.html#structchibios__sdlog":[12,0,1,0,6,42,21,0],
-"sdlog__chibios_8h_source.html":[12,0,1,0,6,42,21],
-"sdlogger__spi__direct_8c.html":[12,0,1,0,6,42,22],
-"sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5":[12,0,1,0,6,42,22,7],
-"sdlogger__spi__direct_8c.html#a27cacdeeddf341b8dc27c52c942f53fb":[12,0,1,0,6,42,22,6],
-"sdlogger__spi__direct_8c.html#a2e3b354ac6d0e173e051be713c63c161":[12,0,1,0,6,42,22,5],
-"sdlogger__spi__direct_8c.html#a2e870bbf55447f42c241d8f66c4a3397":[12,0,1,0,6,42,22,11],
-"sdlogger__spi__direct_8c.html#a480941021a777a6ff59962058b88a00b":[12,0,1,0,6,42,22,16],
-"sdlogger__spi__direct_8c.html#a583b0f3d27ef3f54ca4d1263ebc0a884":[12,0,1,0,6,42,22,8],
-"sdlogger__spi__direct_8c.html#a76e9185c1183478c02cf5be47cf0da93":[12,0,1,0,6,42,22,12]
+"sdlog__chibios_8h.html#structchibios__sdlog":[12,0,1,0,6,42,21,0]
 };

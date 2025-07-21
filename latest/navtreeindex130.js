@@ -1,5 +1,7 @@
 var NAVTREEINDEX130 =
 {
+"module__hott_telemetry.html#functions__hott_telemetry":[1,493,2],
+"module__hott_telemetry.html#module_load_example__hott_telemetry":[1,493,0],
 "module__hott_telemetry.html#module_xml__hott_telemetry":[1,493,2,0],
 "module__humid_dpicco.html":[1,292],
 "module__humid_dpicco.html#functions__humid_dpicco":[1,292,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "module__ins_ext_pose.html#module_load_example__ins_ext_pose":[1,238,0],
 "module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,238,2,0],
 "module__ins_extended.html":[1,239],
-"module__ins_extended.html#configuration__ins_extended":[1,239,1],
-"module__ins_extended.html#module_load_example__ins_extended":[1,239,0],
-"module__ins_extended.html#module_xml__ins_extended":[1,239,1,0]
+"module__ins_extended.html#configuration__ins_extended":[1,239,1]
 };
