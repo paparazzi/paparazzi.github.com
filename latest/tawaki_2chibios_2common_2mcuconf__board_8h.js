@@ -1,6 +1,5 @@
 var tawaki_2chibios_2common_2mcuconf__board_8h =
 [
-    [ "HAL_USE_RTC", "tawaki_2chibios_2common_2mcuconf__board_8h.html#a17d20632810c9bb1601a19973977f55c", null ],
     [ "SDLOG_ALL_BUFFERS_SIZE", "tawaki_2chibios_2common_2mcuconf__board_8h.html#abf3ea4f6b58f67f72d53c6f7e35d76f0", null ],
     [ "SDLOG_MAX_MESSAGE_LEN", "tawaki_2chibios_2common_2mcuconf__board_8h.html#a44f10bdd155d7e6d76a21b00bc10e6a4", null ],
     [ "SDLOG_NUM_FILES", "tawaki_2chibios_2common_2mcuconf__board_8h.html#abfa7a6086a22ce269b39b1a7cd3ca4a1", null ],
