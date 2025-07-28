@@ -1,5 +1,6 @@
 var NAVTREEINDEX202 =
 {
+"stm32_2modules_2radio__control_2ppm__arch_8h.html":[9,8,18],
 "stm32_2peripherals_2hmc5843__arch_8c.html":[12,0,1,0,0,3,2,0],
 "stm32_2peripherals_2hmc5843__arch_8c.html#ac033acbc708beb196e46622d95d450c5":[12,0,1,0,0,3,2,0,0],
 "stm32_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7":[12,0,1,0,0,3,2,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX202 =
 "swashplate__mixing_8c.html#ae26788086ee44f01196fccdf1ea094fa":[12,0,1,0,6,34,0,2],
 "swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c":[12,0,1,0,6,34,0,7],
 "swashplate__mixing_8c.html#af7668edf247b3910f2ed9dbf8c02123b":[12,0,1,0,6,34,0,0],
-"swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623":[12,0,1,0,6,34,0,5],
-"swashplate__mixing_8c_source.html":[12,0,1,0,6,34,0]
+"swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623":[12,0,1,0,6,34,0,5]
 };
