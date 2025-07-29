@@ -160,7 +160,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="sbus__common_8h.html#structSbus" title="SBUS structure.">Sbus</a> actuator driver, which can output as 7 sbus channels at ~11ms. </p>
-<p>Channels min, average and maximum should be: min 0 neutral 1023 max 2047 </p>
+<p>Channels min, average and maximum should be: min 172, neutral 992, max 1811 </p>
 
 <p class="definition">Definition in file <a class="el" href="actuators__sbus_8h_source.html">actuators_sbus.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -319,7 +319,7 @@ device</td>
 
 <p class="definition">Definition at line <a class="el" href="actuators__sbus_8c_source.html#l00051">51</a> of file <a class="el" href="actuators__sbus_8c_source.html">actuators_sbus.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__sbus_8c_source.html#l00045">actuators_sbus</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">B100000</a>, <a class="el" href="actuators__sbus_8h_source.html#l00038">ActuatorsSbus::device</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00280">uart_periph_set_baudrate()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
+<p class="reference">References <a class="el" href="actuators__sbus_8c_source.html#l00045">actuators_sbus</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">B100000</a>, <a class="el" href="actuators__sbus_8h_source.html#l00038">ActuatorsSbus::device</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="uart_8c_source.html#l00194">uart_periph_invert_data_logic()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00280">uart_periph_set_baudrate()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -327,11 +327,13 @@ device</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sbus_8h_a9b651aaf39795d5f8d0f80b81852625e_cgraph.png" border="0" usemap="#aactuators__sbus_8h_a9b651aaf39795d5f8d0f80b81852625e_cgraph" alt=""/></div>
 <map name="aactuators__sbus_8h_a9b651aaf39795d5f8d0f80b81852625e_cgraph" id="aactuators__sbus_8h_a9b651aaf39795d5f8d0f80b81852625e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,109,153,135"/>
+<area shape="rect" title=" " alt="" coords="5,80,153,105"/>
+<area shape="rect" href="uart_8c.html#ad6430a7fdc6553a4696a873cc5ff3507" title=" " alt="" coords="225,15,366,55"/>
+<area shape="poly" title=" " alt="" coords="127,77,211,55,212,60,129,83"/>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title=" " alt="" coords="201,80,389,105"/>
-<area shape="poly" title=" " alt="" coords="153,109,188,105,189,110,154,115"/>
+<area shape="poly" title=" " alt="" coords="153,90,188,90,188,95,153,95"/>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd" title=" " alt="" coords="218,130,373,170"/>
-<area shape="poly" title=" " alt="" coords="154,129,205,136,204,141,153,134"/>
+<area shape="poly" title=" " alt="" coords="129,103,207,124,206,129,127,108"/>
 <area shape="rect" href="serial__port_8c.html#af25145952d87a0f805da05e7ceb3e5a8" title=" " alt="" coords="437,31,620,56"/>
 <area shape="poly" title=" " alt="" coords="356,77,454,56,455,62,357,83"/>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title=" " alt="" coords="461,80,596,105"/>
@@ -377,9 +379,9 @@ device</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__sbus_8c_source.html#l00062">62</a> of file <a class="el" href="actuators__sbus_8c_source.html">actuators_sbus.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__sbus_8c_source.html#l00064">64</a> of file <a class="el" href="actuators__sbus_8c_source.html">actuators_sbus.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__sbus_8c_source.html#l00045">actuators_sbus</a>, <a class="el" href="actuators__sbus_8c_source.html#l00091">actuators_sbus_send()</a>, <a class="el" href="actuators__sbus_8h_source.html#l00038">ActuatorsSbus::device</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="actuators__sbus_8c_source.html#l00045">actuators_sbus</a>, <a class="el" href="actuators__sbus_8c_source.html#l00093">actuators_sbus_send()</a>, <a class="el" href="actuators__sbus_8h_source.html#l00038">ActuatorsSbus::device</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -418,7 +420,7 @@ device</td>
 
 <p class="definition">Definition at line <a class="el" href="actuators__sbus_8c_source.html#l00045">45</a> of file <a class="el" href="actuators__sbus_8c_source.html">actuators_sbus.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sbus_8c_source.html#l00051">actuators_sbus_init()</a>, <a class="el" href="actuators__sbus_8c_source.html#l00091">actuators_sbus_send()</a>, and <a class="el" href="actuators__sbus_8c_source.html#l00062">actuators_sbus_set()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__sbus_8c_source.html#l00051">actuators_sbus_init()</a>, <a class="el" href="actuators__sbus_8c_source.html#l00093">actuators_sbus_send()</a>, and <a class="el" href="actuators__sbus_8c_source.html#l00064">actuators_sbus_set()</a>.</p>
 
 </div>
 </div>
@@ -428,7 +430,7 @@ device</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__sbus_8h.html">actuators_sbus.h</a></li>
-    <li class="footer">Generated on Mon Jul 28 2025 15:55:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Jul 29 2025 11:32:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
