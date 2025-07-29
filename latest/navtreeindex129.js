@@ -1,5 +1,8 @@
 var NAVTREEINDEX129 =
 {
+"module__flight_recorder.html#datalink_functions__flight_recorder":[1,265,3],
+"module__flight_recorder.html#functions__flight_recorder":[1,265,2],
+"module__flight_recorder.html#module_load_example__flight_recorder":[1,265,0],
 "module__flight_recorder.html#module_xml__flight_recorder":[1,265,3,0],
 "module__follow.html":[1,318],
 "module__follow.html#configuration__follow":[1,318,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX129 =
 "module__heli_throttle_curve.html":[1,189],
 "module__heli_throttle_curve.html#configuration__heli_throttle_curve":[1,189,1],
 "module__heli_throttle_curve.html#functions__heli_throttle_curve":[1,189,2],
-"module__heli_throttle_curve.html#module_load_example__heli_throttle_curve":[1,189,0],
-"module__heli_throttle_curve.html#module_xml__heli_throttle_curve":[1,189,2,0],
-"module__hott_telemetry.html":[1,493],
-"module__hott_telemetry.html#configuration__hott_telemetry":[1,493,1]
+"module__heli_throttle_curve.html#module_load_example__heli_throttle_curve":[1,189,0]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX146 =
 {
+"nav__gls_8c.html#a715b9d2d0ad55447e69823b4a14fc3f7":[12,0,1,0,6,47,24,13],
+"nav__gls_8c.html#a90cbddebdd8ace33cde7adeabaea4f95":[12,0,1,0,6,47,24,11],
+"nav__gls_8c.html#a9ab09474c7a3ff1807c524f6c874e751":[12,0,1,0,6,47,24,10],
 "nav__gls_8c.html#a9c0c85e314546d41ab406cba7dafc653":[12,0,1,0,6,47,24,2],
 "nav__gls_8c.html#aa9d8ae453ef5e4283bd095b6661fb761":[12,0,1,0,6,47,24,5],
 "nav__gls_8c.html#ab5f5de260d41a5d5f3f8bb03598f3c1d":[12,0,1,0,6,47,24,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX146 =
 "nav__parametric__3d__lissajous_8h.html#acd9820024fc11dd6f086151c015dd51a":[12,0,1,0,6,31,2,0,7,0,12],
 "nav__parametric__3d__lissajous_8h.html#ae67797b922a903650a2600715ae8cb7d":[12,0,1,0,6,31,2,0,7,0,7],
 "nav__parametric__3d__lissajous_8h.html#aef33a43721ccf84f1aa78ed028e47480":[12,0,1,0,6,31,2,0,7,0,3],
-"nav__parametric__3d__lissajous_8h.html#structgvf__par__3d__lis__par":[12,0,1,0,6,31,2,0,7,0],
-"nav__parametric__3d__lissajous_8h_source.html":[12,0,1,0,6,31,2,0,7],
-"nav__poles_8c.html":[12,0,1,0,6,47,38],
-"nav__poles_8c.html#a103739a39ce1e6679cf62244a2123326":[12,0,1,0,6,47,38,2]
+"nav__parametric__3d__lissajous_8h.html#structgvf__par__3d__lis__par":[12,0,1,0,6,31,2,0,7,0]
 };

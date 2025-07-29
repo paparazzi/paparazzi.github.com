@@ -1,5 +1,8 @@
 var NAVTREEINDEX189 =
 {
+"rotorcraft_2navigation_8h.html#ad8f7f47978b86f35f596d86fe6576425":[12,0,1,0,3,2,21,4],
+"rotorcraft_2navigation_8h.html#adbe74c0d89a5354a1825c9ce2c0d9834":[12,0,1,0,3,2,21,36],
+"rotorcraft_2navigation_8h.html#ade046c5227910bd6f3ea18f9b4d6c514":[12,0,1,0,3,2,21,19],
 "rotorcraft_2navigation_8h.html#ae1dfe610bee226ce313ba07538805322":[12,0,1,0,3,2,21,20],
 "rotorcraft_2navigation_8h.html#af048f3d72f317fb2c40dcbe9e6c93312":[12,0,1,0,3,2,21,0,26],
 "rotorcraft_2navigation_8h.html#af0d4c69f92dfa6008449dba2db0ea145":[12,0,1,0,3,2,21,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX189 =
 "rover_2navigation_8h.html#a31fc5247781aba928d908d13128c37e1":[12,0,1,0,3,3,9,0,6],
 "rover_2navigation_8h.html#a3288149314aa748ce8aa507335f50bfd":[12,0,1,0,3,3,9,58],
 "rover_2navigation_8h.html#a35e565f43eb488070076145035800532":[12,0,1,0,3,3,9,30],
-"rover_2navigation_8h.html#a3738a3f27a7562047055480aeaf2da40":[12,0,1,0,3,3,9,3],
-"rover_2navigation_8h.html#a397bca15d146964a80f93abd74763384":[12,0,1,0,3,3,9,36],
-"rover_2navigation_8h.html#a3a69d6983475e69fd53a8a94cf4dc56f":[12,0,1,0,3,3,9,25],
-"rover_2navigation_8h.html#a3a76cbdab8b19020bffad72d7768140d":[12,0,1,0,3,3,9,0,14]
+"rover_2navigation_8h.html#a3738a3f27a7562047055480aeaf2da40":[12,0,1,0,3,3,9,3]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX128 =
 {
+"module__cv_detect_color_object.html#module_load_example__cv_detect_color_object":[1,60,0],
+"module__cv_detect_color_object.html#module_xml__cv_detect_color_object":[1,60,2,0],
+"module__cv_detect_contour.html":[1,61],
 "module__cv_detect_contour.html#configuration__cv_detect_contour":[1,61,1],
 "module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2],
 "module__cv_detect_contour.html#module_load_example__cv_detect_contour":[1,61,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX128 =
 "module__flight_benchmark.html#module_load_example__flight_benchmark":[1,35,0],
 "module__flight_benchmark.html#module_xml__flight_benchmark":[1,35,2,0],
 "module__flight_recorder.html":[1,265],
-"module__flight_recorder.html#configuration__flight_recorder":[1,265,1],
-"module__flight_recorder.html#datalink_functions__flight_recorder":[1,265,3],
-"module__flight_recorder.html#functions__flight_recorder":[1,265,2],
-"module__flight_recorder.html#module_load_example__flight_recorder":[1,265,0]
+"module__flight_recorder.html#configuration__flight_recorder":[1,265,1]
 };

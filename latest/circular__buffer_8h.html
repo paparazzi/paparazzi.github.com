@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('circular__buffer_8h.html',''); initRes
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:structcircular__buffer" id="r_structcircular__buffer"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a></td></tr>
-<tr class="memdesc:structcircular__buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a general purpose circular buffer for storing buffers in a FIFO order.  <a href="circular__buffer_8h.html#structcircular__buffer">More...</a><br /></td></tr>
+<tr class="memdesc:structcircular__buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a general purpose circular buffer for storing variable lenght buffers in a FIFO order.  <a href="circular__buffer_8h.html#structcircular__buffer">More...</a><br /></td></tr>
 <tr class="separator:structcircular__buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -144,6 +144,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:abe3a26fa44aad7e0611654c05ee458dd" id="r_abe3a26fa44aad7e0611654c05ee458dd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dd">cir_error</a> { <a class="el" href="circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda670f3e67a980598d0982aa557f79ad7b">CIR_ERROR_NO_MSG</a> = -1
 , <a class="el" href="circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458ddac76ed96720c0061967198c782a589c80">CIR_ERROR_BUFFER_TOO_SMALL</a> = -2
 , <a class="el" href="circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0">CIR_ERROR_NO_SPACE_AVAILABLE</a> = -3
+, <a class="el" href="circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda5d999e4f07de8cdf72897224767c4d8a">CIR_ERROR_LOCKED</a> = -4
  }</td></tr>
 <tr class="separator:abe3a26fa44aad7e0611654c05ee458dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -155,9 +156,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ada8982b8b7d8702088a3a4f9de128ee0" id="r_ada8982b8b7d8702088a3a4f9de128ee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8h.html#ada8982b8b7d8702088a3a4f9de128ee0">circular_buffer_get</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> len)</td></tr>
 <tr class="memdesc:ada8982b8b7d8702088a3a4f9de128ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy the next buffer available in <code>cb</code> to <code>buf</code>.  <br /></td></tr>
 <tr class="separator:ada8982b8b7d8702088a3a4f9de128ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5723bc4b9e5e2c4008586146179b40b" id="r_ac5723bc4b9e5e2c4008586146179b40b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8h.html#ac5723bc4b9e5e2c4008586146179b40b">circular_buffer_put</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> len)</td></tr>
-<tr class="memdesc:ac5723bc4b9e5e2c4008586146179b40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy <code>buf</code> in the circular buffer.  <br /></td></tr>
-<tr class="separator:ac5723bc4b9e5e2c4008586146179b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f5138bb7bb7f83cac5ee129fe01352" id="r_a26f5138bb7bb7f83cac5ee129fe01352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8h.html#a26f5138bb7bb7f83cac5ee129fe01352">circular_buffer_put</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> len)</td></tr>
+<tr class="memdesc:a26f5138bb7bb7f83cac5ee129fe01352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy <code>buf</code> in the circular buffer.  <br /></td></tr>
+<tr class="separator:a26f5138bb7bb7f83cac5ee129fe01352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ead2f18ba9ae2a933800f6fb97a59e" id="r_af2ead2f18ba9ae2a933800f6fb97a59e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8h.html#af2ead2f18ba9ae2a933800f6fb97a59e">circular_buffer_drop</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb)</td></tr>
+<tr class="memdesc:af2ead2f18ba9ae2a933800f6fb97a59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop last inserted record.  <br /></td></tr>
+<tr class="separator:af2ead2f18ba9ae2a933800f6fb97a59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structcircular__buffer" id="structcircular__buffer"></a>
@@ -171,8 +175,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>This is a general purpose circular buffer for storing buffers in a FIFO order. </p>
-<p>A current limitation: the size of the buffers is limited to 255, is size beeing stored on a uint8_t.</p>
+<div class="textblock"><p>This is a general purpose circular buffer for storing variable lenght buffers in a FIFO order. </p>
+<p>Buffers length are stored as uint16_t.</p>
 <p>Declare a <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> and allocate a buffer that will outlive it. Initialize the <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> using <a class="el" href="circular__buffer_8h.html#ab74e4e8dcdfcf1842903b361959aa5e5">circular_buffer_init</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="circular__buffer_8h_source.html#l00023">23</a> of file <a class="el" href="circular__buffer_8h_source.html">circular_buffer.h</a>.</p>
@@ -225,6 +229,8 @@ write_offset</td>
 </td></tr>
 <tr><td class="fieldname"><a id="abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0" name="abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0"></a>CIR_ERROR_NO_SPACE_AVAILABLE&#160;</td><td class="fielddoc"><p>no space available in the circular buffer </p>
 </td></tr>
+<tr><td class="fieldname"><a id="abe3a26fa44aad7e0611654c05ee458dda5d999e4f07de8cdf72897224767c4d8a" name="abe3a26fa44aad7e0611654c05ee458dda5d999e4f07de8cdf72897224767c4d8a"></a>CIR_ERROR_LOCKED&#160;</td><td class="fielddoc"><p>mutex locked </p>
+</td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="circular__buffer_8h_source.html#l00030">30</a> of file <a class="el" href="circular__buffer_8h_source.html">circular_buffer.h</a>.</p>
@@ -232,6 +238,30 @@ write_offset</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="af2ead2f18ba9ae2a933800f6fb97a59e" name="af2ead2f18ba9ae2a933800f6fb97a59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ead2f18ba9ae2a933800f6fb97a59e">&#9670;&#160;</a></span>circular_buffer_drop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> circular_buffer_drop </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drop last inserted record. </p>
+
+<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00089">89</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
+
+<p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
+
+</div>
+</div>
 <a id="ada8982b8b7d8702088a3a4f9de128ee0" name="ada8982b8b7d8702088a3a4f9de128ee0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada8982b8b7d8702088a3a4f9de128ee0">&#9670;&#160;</a></span>circular_buffer_get()</h2>
 
@@ -332,7 +362,7 @@ write_offset</td>
 <p>initialize a circular buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td><a class="el" href="circular__buffer_8h.html#structcircular__buffer" title="This is a general purpose circular buffer for storing buffers in a FIFO order.">circular_buffer</a> structure </td></tr>
+    <tr><td class="paramname">cb</td><td><a class="el" href="circular__buffer_8h.html#structcircular__buffer" title="This is a general purpose circular buffer for storing variable lenght buffers in a FIFO order.">circular_buffer</a> structure </td></tr>
     <tr><td class="paramname">buffer</td><td>buffer used internally by the circular buffer </td></tr>
     <tr><td class="paramname">len</td><td>size of <code>buffer</code> </td></tr>
   </table>
@@ -359,8 +389,8 @@ write_offset</td>
 
 </div>
 </div>
-<a id="ac5723bc4b9e5e2c4008586146179b40b" name="ac5723bc4b9e5e2c4008586146179b40b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5723bc4b9e5e2c4008586146179b40b">&#9670;&#160;</a></span>circular_buffer_put()</h2>
+<a id="a26f5138bb7bb7f83cac5ee129fe01352" name="a26f5138bb7bb7f83cac5ee129fe01352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f5138bb7bb7f83cac5ee129fe01352">&#9670;&#160;</a></span>circular_buffer_put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +404,7 @@ write_offset</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -401,7 +431,7 @@ write_offset</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, Error code if negative </dd></dl>
-<p>len == available is invalid because it will cause write_offset to ne equal to read_offset, which is considered an empty buffer.</p>
+<p>len == available is invalid because it will cause write_offset to be equal to read_offset, which is considered an empty buffer.</p>
 
 <p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00051">51</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
 
@@ -413,8 +443,8 @@ write_offset</td>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="circular__buffer_8h_ac5723bc4b9e5e2c4008586146179b40b_icgraph.png" border="0" usemap="#acircular__buffer_8h_ac5723bc4b9e5e2c4008586146179b40b_icgraph" alt=""/></div>
-<map name="acircular__buffer_8h_ac5723bc4b9e5e2c4008586146179b40b_icgraph" id="acircular__buffer_8h_ac5723bc4b9e5e2c4008586146179b40b_icgraph">
+<div class="center"><img src="circular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph.png" border="0" usemap="#acircular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph" alt=""/></div>
+<map name="acircular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph" id="acircular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph">
 <area shape="rect" title="Copy buf in the circular buffer." alt="" coords="840,129,983,155"/>
 <area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="709,129,792,155"/>
 <area shape="poly" title=" " alt="" coords="826,145,792,145,792,139,826,139"/>
@@ -453,7 +483,7 @@ write_offset</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_644c3112dbb29d6147750c842d63ff9c.html">utils</a></li><li class="navelem"><a class="el" href="circular__buffer_8h.html">circular_buffer.h</a></li>
-    <li class="footer">Generated on Tue Jul 29 2025 11:32:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Jul 29 2025 16:15:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

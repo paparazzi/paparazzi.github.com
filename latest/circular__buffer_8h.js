@@ -9,9 +9,11 @@ var circular__buffer_8h =
     [ "cir_error", "circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dd", [
       [ "CIR_ERROR_NO_MSG", "circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda670f3e67a980598d0982aa557f79ad7b", null ],
       [ "CIR_ERROR_BUFFER_TOO_SMALL", "circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458ddac76ed96720c0061967198c782a589c80", null ],
-      [ "CIR_ERROR_NO_SPACE_AVAILABLE", "circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0", null ]
+      [ "CIR_ERROR_NO_SPACE_AVAILABLE", "circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0", null ],
+      [ "CIR_ERROR_LOCKED", "circular__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda5d999e4f07de8cdf72897224767c4d8a", null ]
     ] ],
+    [ "circular_buffer_drop", "circular__buffer_8h.html#af2ead2f18ba9ae2a933800f6fb97a59e", null ],
     [ "circular_buffer_get", "circular__buffer_8h.html#ada8982b8b7d8702088a3a4f9de128ee0", null ],
     [ "circular_buffer_init", "circular__buffer_8h.html#ab74e4e8dcdfcf1842903b361959aa5e5", null ],
-    [ "circular_buffer_put", "circular__buffer_8h.html#ac5723bc4b9e5e2c4008586146179b40b", null ]
+    [ "circular_buffer_put", "circular__buffer_8h.html#a26f5138bb7bb7f83cac5ee129fe01352", null ]
 ];

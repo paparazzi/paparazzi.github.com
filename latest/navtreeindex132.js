@@ -1,5 +1,8 @@
 var NAVTREEINDEX132 =
 {
+"module__mcp355x.html":[1,24],
+"module__mcp355x.html#functions__mcp355x":[1,24,1],
+"module__mcp355x.html#module_load_example__mcp355x":[1,24,0],
 "module__mcp355x.html#module_xml__mcp355x":[1,24,1,0],
 "module__mcu.html":[1,279],
 "module__mcu.html#functions__mcu":[1,279,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,369,0],
 "module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,369,2,0],
 "module__osd_max7456.html":[1,501],
-"module__osd_max7456.html#configuration__osd_max7456":[1,501,1],
-"module__osd_max7456.html#functions__osd_max7456":[1,501,2],
-"module__osd_max7456.html#module_load_example__osd_max7456":[1,501,0],
-"module__osd_max7456.html#module_xml__osd_max7456":[1,501,2,0]
+"module__osd_max7456.html#configuration__osd_max7456":[1,501,1]
 };

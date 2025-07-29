@@ -1,5 +1,8 @@
 var NAVTREEINDEX126 =
 {
+"mission__manager_8h.html#a363cd6c3d938307b9fbfc6a5552c3fe8":[12,0,1,0,6,15,2,3,0,3],
+"mission__manager_8h.html#a3bc8e988cc3116b43a2bb3d2a38f4341":[12,0,1,0,6,15,2,3,0,1],
+"mission__manager_8h.html#a3d969f6a89eb8b6488f20cf15514adda":[12,0,1,0,6,15,2,3,0,4],
 "mission__manager_8h.html#a45d7b7def04dc761cc1451867d8b1df3":[12,0,1,0,6,15,2,3,2],
 "mission__manager_8h.html#a53b736e321e51d7e3e9885e19f24234f":[12,0,1,0,6,15,2,3,0,2],
 "mission__manager_8h.html#a6068c013c09dc4ffbeda9525a84b39ad":[12,0,1,0,6,15,2,3,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX126 =
 "module__aoa_pwm.html#module_load_example__aoa_pwm":[1,387,0],
 "module__aoa_pwm.html#module_xml__aoa_pwm":[1,387,2,0],
 "module__approach_moving_target.html":[1,91],
-"module__approach_moving_target.html#configuration__approach_moving_target":[1,91,1],
-"module__approach_moving_target.html#functions__approach_moving_target":[1,91,2],
-"module__approach_moving_target.html#module_load_example__approach_moving_target":[1,91,0],
-"module__approach_moving_target.html#module_xml__approach_moving_target":[1,91,2,0]
+"module__approach_moving_target.html#configuration__approach_moving_target":[1,91,1]
 };

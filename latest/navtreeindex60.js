@@ -1,13 +1,16 @@
 var NAVTREEINDEX60 =
 {
+"frsky__x_8c.html#af7c4a574284a673dbccf3346e072ba50":[12,0,1,0,6,15,13,3],
+"frsky__x_8c_source.html":[12,0,1,0,6,15,13],
+"frsky__x_8h.html":[12,0,1,0,6,15,14],
 "frsky__x_8h.html#a02e506771b84a9f590d180ffc053b11a":[12,0,1,0,6,15,14,4],
 "frsky__x_8h.html#a420db54c377c71cbf6815b32a8fe7c7f":[12,0,1,0,6,15,14,5],
 "frsky__x_8h.html#a4846bb3b4508d4210c8f8192ca2aa55b":[12,0,1,0,6,15,14,2],
 "frsky__x_8h.html#a54a9ffe33d0c91beb0f99a229ca4b46f":[12,0,1,0,6,15,14,1,2],
 "frsky__x_8h.html#a5f9612b157349f8ed5bac981fcf10ebc":[12,0,1,0,6,15,14,1,0],
 "frsky__x_8h.html#a60a92dbb3af10529efdb07d77a59dcc4":[12,0,1,0,6,15,14,1,4],
-"frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,6,15,14,0,2],
 "frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,0,3,10,0,2],
+"frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,6,15,14,0,2],
 "frsky__x_8h.html#ab90c957e997570266737ee3d758e9bc3":[12,0,1,0,6,15,14,1,3],
 "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,6,15,14,0,3],
 "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,0,3,10,0,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX60 =
 "geiger__counter_8c.html#a032776faf43a209e2c888e2bea72ec2c":[12,0,1,0,6,44,13,5],
 "geiger__counter_8c.html#a04dc0541640cf73d18fef78c549c1387":[12,0,1,0,6,44,13,4],
 "geiger__counter_8c.html#a0b1fac16331bf94c39da0007dfe6fb45":[12,0,1,0,6,44,13,0],
-"geiger__counter_8c.html#a540c1be1c58c71a3c93050ba104fe83d":[12,0,1,0,6,44,13,3],
-"geiger__counter_8c.html#a7e9ff01bcdeadfc789027692778d40c6":[12,0,1,0,6,44,13,7],
-"geiger__counter_8c.html#ac77d02c87e3708fee71f7423a6b23fea":[12,0,1,0,6,44,13,2],
-"geiger__counter_8c.html#acf72a5e0a4ec7503979dbf07551a30fd":[12,0,1,0,6,44,13,6]
+"geiger__counter_8c.html#a540c1be1c58c71a3c93050ba104fe83d":[12,0,1,0,6,44,13,3]
 };
