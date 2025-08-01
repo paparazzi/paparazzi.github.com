@@ -1,5 +1,6 @@
 var NAVTREEINDEX101 =
 {
+"linux_2mcu__arch_8h.html":[12,0,1,0,0,1,4],
 "linux_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,4,0],
 "linux_2mcu__arch_8h_source.html":[12,0,1,0,0,1,4],
 "linux_2mcu__periph_2adc__arch_8c.html":[12,0,1,0,0,1,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX101 =
 "lis3mdl_8c.html#a993660a74409e86c725eed0a2a0aecfb":[12,0,1,0,7,68,17],
 "lis3mdl_8c.html#aa4b6a4f90a8eee7758e3a2759819e24a":[12,0,1,0,7,68,23],
 "lis3mdl_8c.html#abe4cf4b0952475fc85d2699ad8bf9297":[12,0,1,0,7,68,3],
-"lis3mdl_8c.html#ad33f9a4d126c3c083ead45d77735fd6b":[12,0,1,0,7,68,18],
-"lis3mdl_8c.html#ad59856342380f826283d10092f1f1b7c":[12,0,1,0,7,68,1]
+"lis3mdl_8c.html#ad33f9a4d126c3c083ead45d77735fd6b":[12,0,1,0,7,68,18]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"group__state__interface.html#unionState_8windspeed__f":[9,4,9],
 "group__state__interface.html#unionState_8windspeed__i":[9,4,8],
 "group__state__position.html":[9,4,0],
 "group__state__position.html#ga0275b6b3a28b14ae8ecb95f08e0cdcd0":[9,4,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "gsm_8c.html#af49df82862774db309579869d1e05cc9":[12,0,1,0,6,30,0,17],
 "gsm_8c.html#af5c3a757a14021f08e4c2a543d00dd5b":[12,0,1,0,6,30,0,22],
 "gsm_8c.html#af646f5cc16672aa1fd40f415590e6d60":[12,0,1,0,6,30,0,52],
-"gsm_8c.html#af7c7a658fa326bdee42f63ec3da412df":[12,0,1,0,6,30,0,50],
-"gsm_8c.html#afb32cb96ea9c1e9ee4e5da7e1dce4cfc":[12,0,1,0,6,30,0,48]
+"gsm_8c.html#af7c7a658fa326bdee42f63ec3da412df":[12,0,1,0,6,30,0,50]
 };

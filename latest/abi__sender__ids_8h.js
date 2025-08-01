@@ -107,6 +107,7 @@ var abi__sender__ids_8h =
     [ "MAG_LIS3MDL_SENDER_ID", "abi__sender__ids_8h.html#ad210000be4ae7e34ad1876cbcaacb138", null ],
     [ "MAG_QMC5883L_SENDER_ID", "abi__sender__ids_8h.html#a460af5ae679524141eda51a4adc06133", null ],
     [ "MAG_RM3100_SENDER_ID", "abi__sender__ids_8h.html#a093f5e154e36d64f798057fea3ca9d5a", null ],
+    [ "MAG_UAVCAN_SENDER_ID", "abi__sender__ids_8h.html#abc74896ef31575b11d7bf4c98de5b2b4", null ],
     [ "METEO_STICK_SENDER_ID", "abi__sender__ids_8h.html#aa4dba7f7561204c868fa642bd338600b", null ],
     [ "MS45XX_SENDER_ID", "abi__sender__ids_8h.html#af6d5ac9fb43eb00d4e1c11c4d9a50bfb", null ],
     [ "OBS_DETECTION_COLOR_ID", "abi__sender__ids_8h.html#aa5a933108a0974d6486fe72ca79b249c", null ],

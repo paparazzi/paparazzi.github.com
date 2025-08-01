@@ -74,6 +74,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "mag_qmc5883l.h", "mag__qmc5883l_8h.html", "mag__qmc5883l_8h" ],
     [ "mag_rm3100.c", "mag__rm3100_8c.html", "mag__rm3100_8c" ],
     [ "mag_rm3100.h", "mag__rm3100_8h.html", "mag__rm3100_8h" ],
+    [ "mag_uavcan.c", "mag__uavcan_8c.html", "mag__uavcan_8c" ],
+    [ "mag_uavcan.h", "mag__uavcan_8h.html", "mag__uavcan_8h" ],
     [ "met_module.h", "met__module_8h.html", "met__module_8h" ],
     [ "opticflow_pmw3901.c", "opticflow__pmw3901_8c.html", "opticflow__pmw3901_8c" ],
     [ "opticflow_pmw3901.h", "opticflow__pmw3901_8h.html", "opticflow__pmw3901_8h" ],
