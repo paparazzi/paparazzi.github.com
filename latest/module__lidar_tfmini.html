@@ -94,15 +94,23 @@ $(document).ready(function(){initNavTree('module__lidar_tfmini.html',''); initRe
   <div class="headertitle"><div class="title">lidar_tfmini module</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b><a class="el" href="tfmini_8h.html#structTFMini">TFMini</a> Lidar using a single UART for communication</b></p>
-<p>No detailed description...</p>
+<div class="textblock"><p><b><a class="el" href="tfmini_8h.html#structTFMini">TFMini</a> Lidar driver with separate implementations for:</b></p>
+<ul>
+<li>Real hardware using a single UART for communication (ap target)</li>
+<li>NPS simulator (nps target)</li>
+</ul>
 <h1><a class="anchor" id="module_load_example__lidar_tfmini"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;lidar_tfmini&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;TFMINI_PORT&quot; value=&quot;UART3&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;TFMINI_BAUD&quot; value=&quot;B115200&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;USE_TFMINI_AGL&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;TFMINI_COMPENSATE_ROTATION&quot; value=&quot;1&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;USE_TFMINI_AGL&quot; value=&quot;true&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;TFMINI_COMPENSATE_ROTATION&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;TFMINI_ROVER&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;LIDAR_OFFSET&quot; value=&quot;0.0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;LIDAR_HEIGHT&quot; value=&quot;0.0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;LIDAR_MIN_RANGE&quot; value=&quot;0.1&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;LIDAR_MAX_RANGE&quot; value=&quot;12.0&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__lidar_tfmini"></a>
 Module configuration options</h1>
@@ -113,10 +121,20 @@ Configure Options</h2>
  Description: UART device to use for lidar</li>
 <li><b>name:</b> <code>TFMINI_BAUD</code> <b>value:</b> <em>B115200</em> <br  />
  Description: baudrate of the <a class="el" href="tfmini_8h.html#structTFMini">TFMini</a> UART port</li>
-<li><b>name:</b> <code>USE_TFMINI_AGL</code> <b>value:</b> <em>0</em> <br  />
+<li><b>name:</b> <code>USE_TFMINI_AGL</code> <b>value:</b> <em>true</em> <br  />
  Description: use this lidar for AGL measurements</li>
-<li><b>name:</b> <code>TFMINI_COMPENSATE_ROTATION</code> <b>value:</b> <em>1</em> <br  />
+<li><b>name:</b> <code>TFMINI_COMPENSATE_ROTATION</code> <b>value:</b> <em>0</em> <br  />
  Description: compensate AGL measurements for body rotation</li>
+<li><b>name:</b> <code>TFMINI_ROVER</code> <b>value:</b> <em>0</em> <br  />
+ Description: is this lidar mounted on a rover? Change the way to calculate the compensation</li>
+<li><b>name:</b> <code>LIDAR_OFFSET</code> <b>value:</b> <em>0.0</em> <br  />
+ Description: Horizontal offset from vehicle center to LIDAR [m]</li>
+<li><b>name:</b> <code>LIDAR_HEIGHT</code> <b>value:</b> <em>0.0</em> <br  />
+ Description: Vertical height from ground to LIDAR [m]</li>
+<li><b>name:</b> <code>LIDAR_MIN_RANGE</code> <b>value:</b> <em>0.1</em> <br  />
+ Description: minimum range of the lidar in meters (see datasheet)</li>
+<li><b>name:</b> <code>LIDAR_MAX_RANGE</code> <b>value:</b> <em>12.0</em> <br  />
+ Description: maximum range of the lidar in meters (see datasheet)</li>
 </ul>
 <h1><a class="anchor" id="functions__lidar_tfmini"></a>
 Module functions</h1>
@@ -144,6 +162,7 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="tfmini_8c.html">modules/lidar/tfmini.c</a></li>
+<li><a class="el" href="tfmini__nps_8c.html">modules/lidar/tfmini_nps.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__lidar_tfmini"></a>
 Raw lidar_tfmini.xml file:</h2>
@@ -152,19 +171,26 @@ Raw lidar_tfmini.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;lidar_tfmini&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;lidar&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">TFMini</span> <span class="keyword">Lidar</span> <span class="keyword">using</span> <span class="keyword">a</span> <span class="keyword">single</span> <span class="keyword">UART</span> <span class="keyword">for</span> <span class="keyword">communication</span></div>
+<div class="line">      <span class="keyword">TFMini</span> <span class="keyword">Lidar</span> <span class="keyword">driver</span> <span class="keyword">with</span> <span class="keyword">separate</span> <span class="keyword">implementations</span> <span class="keyword">for:</span></div>
+<div class="line">      - <span class="keyword">Real</span> <span class="keyword">hardware</span> <span class="keyword">using</span> <span class="keyword">a</span> <span class="keyword">single</span> <span class="keyword">UART</span> <span class="keyword">for</span> <span class="keyword">communication</span> (<span class="keyword">ap</span> <span class="keyword">target</span>)</div>
+<div class="line">      - <span class="keyword">NPS</span> <span class="keyword">simulator</span> (<span class="keyword">nps</span> <span class="keyword">target</span>)</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UART3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART device to use for lidar&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B115200&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;baudrate of the TFMini UART port&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_TFMINI_AGL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;use this lidar for AGL measurements&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_COMPENSATE_ROTATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;compensate AGL measurements for body rotation&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_TFMINI_AGL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;true&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;use this lidar for AGL measurements&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_COMPENSATE_ROTATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;compensate AGL measurements for body rotation&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_ROVER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;is this lidar mounted on a rover? Change the way to calculate the compensation&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Horizontal offset from vehicle center to LIDAR [m]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_HEIGHT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Vertical height from ground to LIDAR [m]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_MIN_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;minimum range of the lidar in meters (see datasheet)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_MAX_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;12.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum range of the lidar in meters (see datasheet)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Lidar TFMini&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Lidar&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;tfmini.compensate_rotation&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;derotate_agl&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;tfmini.update_agl&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_agl&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;tfmini.compensate_rotation&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;compensate_rotation&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;tfmini.update_agl&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_agl&quot;</span>/&gt; </div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
@@ -178,7 +204,9 @@ Raw lidar_tfmini.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;tfmini_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;tfmini_event()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    <span class="comment">&lt;!-- Configure default UART port and baudrate --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;UART3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;B115200&quot;</span>/&gt;</div>
@@ -188,14 +216,36 @@ Raw lidar_tfmini.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(TFMINI_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TFMINI_BAUD)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TFMINI_PORT_LOWER)&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_TFMINI_AGL&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">    <span class="comment">&lt;!-- Compensation constants --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_OFFSET&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0.0&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_HEIGHT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0.0&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(LIDAR_OFFSET)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_HEIGHT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(LIDAR_HEIGHT)&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_TFMINI_AGL&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_COMPENSATE_ROTATION&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_ROVER&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_TFMINI_AGL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(USE_TFMINI_AGL)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_COMPENSATE_ROTATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TFMINI_COMPENSATE_ROTATION)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_ROVER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TFMINI_ROVER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tfmini.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;nps&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SONAR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;<span class="comment">&lt;!-- in NPS use a virtual sonar to simulate lidar measurements --&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- Configure default UART port and baudrate --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;UART3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;B115200&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Enable UART and set baudrate --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(TFMINI_PORT_UPPER)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(TFMINI_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TFMINI_BAUD)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TFMINI_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TFMINI_PORT_LOWER)&quot;</span>/&gt;</div>
+<div class="line">    </div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_MIN_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0.1&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_MAX_RANGE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;12.0&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_MIN_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(LIDAR_MIN_RANGE)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LIDAR_MAX_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(LIDAR_MAX_RANGE)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tfmini_nps.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -207,7 +257,7 @@ Raw lidar_tfmini.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Aug 1 2025 08:51:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 7 2025 21:23:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX67 =
 {
+"group__i2c.html#af293727ce3c1ee16e7b5f51ac5e8ce85":[9,0,0,1,7],
+"group__i2c.html#af759b5450d828fa43aa04b203bab42cd":[9,0,0,2,1],
 "group__i2c.html#afe675669c727a98bd998283d940b2636":[9,0,0,0,3],
 "group__i2c.html#ga05763355d0e087ba41feab61dd773fe6":[9,0,0,16],
 "group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362":[9,0,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7":[9,9,1,0,119],
 "group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6":[9,9,1,0,139],
 "group__math__algebra__float.html#gaccedb5bf722a0466b35ade54c3f81b19":[9,9,1,0,59],
-"group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8":[9,9,1,0,67],
-"group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25":[9,9,1,0,110],
-"group__math__algebra__float.html#gad23d56df41b1965dd4c58317dd8d9a7f":[9,9,1,0,82]
+"group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8":[9,9,1,0,67]
 };

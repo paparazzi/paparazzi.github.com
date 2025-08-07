@@ -1,5 +1,6 @@
 var dir_f4ca31d105c4342227373714bf7859c8 =
 [
+    [ "slam", "dir_bc68fb71751eac68c7416522d8fcf88f.html", "dir_bc68fb71751eac68c7416522d8fcf88f" ],
     [ "lidar_lite.c", "lidar__lite_8c.html", "lidar__lite_8c" ],
     [ "lidar_lite.h", "lidar__lite_8h.html", "lidar__lite_8h" ],
     [ "lidar_sf11.c", "lidar__sf11_8c.html", "lidar__sf11_8c" ],
@@ -8,5 +9,6 @@ var dir_f4ca31d105c4342227373714bf7859c8 =
     [ "tfmini.h", "tfmini_8h.html", "tfmini_8h" ],
     [ "tfmini_i2c.c", "tfmini__i2c_8c.html", "tfmini__i2c_8c" ],
     [ "tfmini_i2c.h", "tfmini__i2c_8h.html", "tfmini__i2c_8h" ],
+    [ "tfmini_nps.c", "tfmini__nps_8c.html", "tfmini__nps_8c" ],
     [ "vl53l5cx_platform.h", "vl53l5cx__platform_8h.html", "vl53l5cx__platform_8h" ]
 ];

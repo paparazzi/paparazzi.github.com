@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"guidance__v__adapt_8h.html#a397e893a9ab16d6efe7637576c61dd00":[12,0,1,0,3,2,0,26,4],
+"guidance__v__adapt_8h.html#ab9714ec507d12d067e58b9498784e4b3":[12,0,1,0,3,2,0,26,5],
 "guidance__v__adapt_8h.html#ac9e0f391f1a1e53a185ce28a45e31090":[12,0,1,0,3,2,0,26,6],
 "guidance__v__adapt_8h.html#ae48506ef71b097cbc23c4a1eff14fc8d":[12,0,1,0,3,2,0,26,0],
 "guidance__v__adapt_8h_source.html":[12,0,1,0,3,2,0,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "gvf__param__traj_8h.html#structgvf__parametric__tra":[12,0,1,0,6,31,3,1,0],
 "gvf__param__traj_8h_source.html":[12,0,1,0,6,31,3,1],
 "gvf__parametric_8cpp.html":[12,0,1,0,6,31,2,1],
-"gvf__parametric_8cpp.html#a025bede321e4e1dd30401bd4ef541161":[12,0,1,0,6,31,2,1,9],
-"gvf__parametric_8cpp.html#a2d70aff4fb4b008e98062fda4558a742":[12,0,1,0,6,31,2,1,1],
-"gvf__parametric_8cpp.html#a39ca6d926dda3273c2eec68c562ba424":[12,0,1,0,6,31,2,1,4]
+"gvf__parametric_8cpp.html#a025bede321e4e1dd30401bd4ef541161":[12,0,1,0,6,31,2,1,9]
 };

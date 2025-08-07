@@ -432,17 +432,17 @@ $(document).ready(function(){initNavTree('textons_8c_source.html',''); initResiz
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="comment">// Free the allocated memory:</span></div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="textons_8c.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7">patch_size</a>; i++) {</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>      <span class="keywordflow">for</span> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a> = 0; <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a> &lt; <a class="code hl_variable" href="textons_8c.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7">patch_size</a>; <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a>++) {</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i][<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a>]);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i][<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a>]);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>      }</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>      <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i]);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>      free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i]);</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    }</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>);</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">texton_distances</a>);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">texton_distances</a>);</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  }</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="comment">// Free the buffer</span></div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <a class="code hl_variable" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a> = <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NULL</a>;</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a>);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  free(<a class="code hl_variable" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a>);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>}</div>
 </div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
@@ -559,15 +559,15 @@ $(document).ready(function(){initNavTree('textons_8c_source.html',''); initResiz
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>  <span class="comment">// free memory:</span></div>
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>  <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="textons_8c.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7">patch_size</a>; i++) {</div>
 <div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>    <span class="keywordflow">for</span> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a> = 0; <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a> &lt; <a class="code hl_variable" href="textons_8c.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7">patch_size</a>; <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a>++) {</div>
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>      <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i][<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a>]);</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>      free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i][<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">j</a>]);</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    }</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i]);</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>[i]);</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  }</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>);</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">texton_distances</a>);</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">patch</a>);</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  free(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">texton_distances</a>);</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span> </div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>  <a class="code hl_variable" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a> = <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NULL</a>;</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a>);</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>  free(<a class="code hl_variable" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a>);</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>} <span class="comment">// EXECUTION</span></div>
 </div>
@@ -659,8 +659,8 @@ $(document).ready(function(){initNavTree('textons_8c_source.html',''); initResiz
 <div class="foldopen" id="foldopen00583" data-start="{" data-end="}">
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno"><a class="line" href="textons_8c.html#aba987c616eb0f83d63d1689238f4f7b6">  583</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="textons_8c.html#aba987c616eb0f83d63d1689238f4f7b6">textons_stop</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>{</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="textons_8c.html#a37c1f9ffc95bdb92779d73f088750028">texton_distribution</a>);</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">free</a>(<a class="code hl_variable" href="textons_8c.html#aa001b0d3ed88b85389ec8728067ee093">dictionary</a>);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  free(<a class="code hl_variable" href="textons_8c.html#a37c1f9ffc95bdb92779d73f088750028">texton_distribution</a>);</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  free(<a class="code hl_variable" href="textons_8c.html#aa001b0d3ed88b85389ec8728067ee093">dictionary</a>);</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>}</div>
 </div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
@@ -745,7 +745,7 @@ $(document).ready(function(){initNavTree('textons_8c_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="textons_8c.html">textons.c</a></li>
-    <li class="footer">Generated on Fri Aug 1 2025 08:51:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 7 2025 21:23:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,7 @@
 var dir_414bebee49467d45198ced6169b2555f =
 [
     [ "guidance", "dir_c6a9400053a2920f0ad963162d758f3f.html", "dir_c6a9400053a2920f0ad963162d758f3f" ],
+    [ "obstacles", "dir_c27a7370a937b1cc521014c29362919d.html", "dir_c27a7370a937b1cc521014c29362919d" ],
     [ "autopilot_firmware.c", "rover_2autopilot__firmware_8c.html", "rover_2autopilot__firmware_8c" ],
     [ "autopilot_firmware.h", "rover_2autopilot__firmware_8h.html", "rover_2autopilot__firmware_8h" ],
     [ "autopilot_generated.c", "rover_2autopilot__generated_8c.html", "rover_2autopilot__generated_8c" ],

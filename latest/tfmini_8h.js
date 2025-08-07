@@ -4,6 +4,7 @@ var tfmini_8h =
       [ "compensate_rotation", "tfmini_8h.html#a4e30ec13816b2bcac4902f876e10f4bf", null ],
       [ "device", "tfmini_8h.html#a7affa37d0854b08dcd6c9187088a5ee7", null ],
       [ "distance", "tfmini_8h.html#a303d99e8ef46fbd66c4c6f9d78359b0b", null ],
+      [ "is_rover", "tfmini_8h.html#a00910f37451ab03d732c1ef663b0fe1b", null ],
       [ "mode", "tfmini_8h.html#a1195f63c476f41ad6a870ef5a4028017", null ],
       [ "parse_crc", "tfmini_8h.html#a7a05b3e03cecb69e08f2d60597d34d82", null ],
       [ "parse_status", "tfmini_8h.html#accf2d6f407e0d0eb1d44b25aa6c8deb8", null ],
@@ -25,8 +26,9 @@ var tfmini_8h =
       [ "TFMINI_PARSE_BYTE7", "tfmini_8h.html#aef932ce5433dd3f28f352c8353f4afd8a55bc3075064447c0a97c74e31ea8c026", null ],
       [ "TFMINI_PARSE_CHECKSUM", "tfmini_8h.html#aef932ce5433dd3f28f352c8353f4afd8a8a7bf7cbbba538f97f5e7ddb1b2d07aa", null ]
     ] ],
-    [ "tfmini_downlink", "tfmini_8h.html#a9408bd3a8ca4ff25ea5d47ccff9d6ef8", null ],
     [ "tfmini_event", "tfmini_8h.html#a10d3f8c66bd431c24d7dba868807f567", null ],
     [ "tfmini_init", "tfmini_8h.html#ae0b86051c41e1b41b79e0273c952fa07", null ],
+    [ "tfmini_parse", "tfmini_8h.html#a2a725973512212354ec85a9c272ee742", null ],
+    [ "tfmini_send_abi", "tfmini_8h.html#ae05e02afa8ad8d0b4f57d7c188e8a519", null ],
     [ "tfmini", "tfmini_8h.html#acc2f57eb02b15674ee39a6739340bfb6", null ]
 ];

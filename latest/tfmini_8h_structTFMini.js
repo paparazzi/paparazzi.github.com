@@ -3,6 +3,7 @@ var tfmini_8h_structTFMini =
     [ "compensate_rotation", "tfmini_8h.html#a4e30ec13816b2bcac4902f876e10f4bf", null ],
     [ "device", "tfmini_8h.html#a7affa37d0854b08dcd6c9187088a5ee7", null ],
     [ "distance", "tfmini_8h.html#a303d99e8ef46fbd66c4c6f9d78359b0b", null ],
+    [ "is_rover", "tfmini_8h.html#a00910f37451ab03d732c1ef663b0fe1b", null ],
     [ "mode", "tfmini_8h.html#a1195f63c476f41ad6a870ef5a4028017", null ],
     [ "parse_crc", "tfmini_8h.html#a7a05b3e03cecb69e08f2d60597d34d82", null ],
     [ "parse_status", "tfmini_8h.html#accf2d6f407e0d0eb1d44b25aa6c8deb8", null ],

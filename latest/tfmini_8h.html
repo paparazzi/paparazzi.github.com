@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('tfmini_8h.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for tfmini.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -111,24 +112,39 @@ $(document).ready(function(){initNavTree('tfmini_8h.html',''); initResizable(); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="tfmini_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2lidar_2tfmini_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2lidar_2tfmini_8h" id="asw_2airborne_2modules_2lidar_2tfmini_8h">
-<area shape="rect" title="driver for the TFMini lidar" alt="" coords="21,5,180,45"/>
-<area shape="rect" title=" " alt="" coords="5,167,60,192"/>
-<area shape="poly" title=" " alt="" coords="94,47,46,155,41,153,90,45"/>
-<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="94,93,227,119"/>
-<area shape="poly" title=" " alt="" coords="117,44,146,81,141,84,113,47"/>
-<area shape="poly" title=" " alt="" coords="141,121,67,162,65,157,139,116"/>
-<area shape="rect" title=" " alt="" coords="85,167,253,192"/>
-<area shape="poly" title=" " alt="" coords="165,119,169,153,163,153,159,119"/>
-<area shape="rect" href="threads_8h.html" title=" " alt="" coords="277,167,452,192"/>
-<area shape="poly" title=" " alt="" coords="194,116,320,160,318,165,193,121"/>
-<area shape="rect" title=" " alt="" coords="106,247,189,273"/>
-<area shape="poly" title=" " alt="" coords="334,195,193,245,191,240,332,189"/>
-<area shape="rect" title=" " alt="" coords="213,240,375,280"/>
-<area shape="poly" title=" " alt="" coords="356,194,322,232,318,228,352,190"/>
-<area shape="rect" title=" " alt="" coords="400,247,471,273"/>
-<area shape="poly" title=" " alt="" coords="377,190,418,235,414,239,373,194"/>
-<area shape="rect" title=" " alt="" coords="495,247,570,273"/>
-<area shape="poly" title=" " alt="" coords="390,190,497,239,495,244,388,194"/>
+<area shape="rect" title="driver for the TFMini lidar" alt="" coords="441,5,599,45"/>
+<area shape="rect" title=" " alt="" coords="493,247,547,273"/>
+<area shape="poly" title=" " alt="" coords="523,46,523,233,517,233,517,46"/>
+<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="295,93,428,119"/>
+<area shape="poly" title=" " alt="" coords="483,48,398,90,396,85,481,43"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="593,93,785,119"/>
+<area shape="poly" title=" " alt="" coords="562,43,653,85,651,90,559,48"/>
+<area shape="poly" title=" " alt="" coords="375,117,500,236,496,240,371,121"/>
+<area shape="rect" title=" " alt="" coords="25,167,193,192"/>
+<area shape="poly" title=" " alt="" coords="322,121,164,165,163,160,320,116"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="218,167,393,192"/>
+<area shape="poly" title=" " alt="" coords="354,121,325,157,321,154,350,117"/>
+<area shape="rect" title=" " alt="" coords="104,247,187,273"/>
+<area shape="poly" title=" " alt="" coords="283,194,182,244,180,239,281,190"/>
+<area shape="rect" title=" " alt="" coords="211,240,373,280"/>
+<area shape="poly" title=" " alt="" coords="306,193,300,227,295,226,301,192"/>
+<area shape="rect" title=" " alt="" coords="398,247,469,273"/>
+<area shape="poly" title=" " alt="" coords="326,190,404,238,401,242,323,194"/>
+<area shape="rect" title=" " alt="" coords="5,247,80,273"/>
+<area shape="poly" title=" " alt="" coords="260,195,93,243,85,245,84,240,91,237,259,190"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="630,167,749,192"/>
+<area shape="poly" title=" " alt="" coords="692,119,692,153,687,153,687,119"/>
+<area shape="rect" title=" " alt="" coords="571,247,634,273"/>
+<area shape="poly" title=" " alt="" coords="671,121,644,141,621,168,609,201,605,234,600,233,604,200,616,165,640,137,668,117"/>
+<area shape="rect" title=" " alt="" coords="753,247,821,273"/>
+<area shape="poly" title=" " alt="" coords="711,117,738,137,764,165,779,199,786,233,781,234,774,201,759,168,735,141,708,121"/>
+<area shape="rect" title=" " alt="" coords="824,167,981,192"/>
+<area shape="poly" title=" " alt="" coords="724,116,856,160,854,165,723,121"/>
+<area shape="poly" title=" " alt="" coords="665,195,561,242,558,244,556,239,559,238,663,190"/>
+<area shape="poly" title=" " alt="" coords="678,194,628,240,624,236,675,190"/>
+<area shape="rect" title=" " alt="" coords="658,247,729,273"/>
+<area shape="poly" title=" " alt="" coords="693,192,695,233,689,234,687,192"/>
+<area shape="poly" title=" " alt="" coords="705,190,763,237,760,241,702,194"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -138,9 +154,15 @@ $(document).ready(function(){initNavTree('tfmini_8h.html',''); initResizable(); 
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="tfmini_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2lidar_2tfmini_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2lidar_2tfmini_8hdep" id="asw_2airborne_2modules_2lidar_2tfmini_8hdep">
-<area shape="rect" title="driver for the TFMini lidar" alt="" coords="5,5,164,45"/>
-<area shape="rect" href="tfmini_8c.html" title="driver for the TFMini lidar" alt="" coords="5,93,164,133"/>
-<area shape="poly" title=" " alt="" coords="87,59,87,93,82,93,82,59"/>
+<area shape="rect" title="driver for the TFMini lidar" alt="" coords="341,5,500,45"/>
+<area shape="rect" href="lidar__correction_8c.html" title=" " alt="" coords="5,93,212,133"/>
+<area shape="poly" title=" " alt="" coords="340,52,178,96,176,91,338,46"/>
+<area shape="rect" href="servo__lidar_8c.html" title="driver for the servo to move the lidar" alt="" coords="236,93,413,133"/>
+<area shape="poly" title=" " alt="" coords="391,57,348,95,344,91,387,53"/>
+<area shape="rect" href="tfmini_8c.html" title="driver for the TFMini lidar" alt="" coords="437,93,596,133"/>
+<area shape="poly" title=" " alt="" coords="454,53,497,91,494,95,451,57"/>
+<area shape="rect" href="tfmini__nps_8c.html" title="simulation of a lidar" alt="" coords="620,93,779,133"/>
+<area shape="poly" title=" " alt="" coords="496,47,639,91,638,96,494,52"/>
 </map>
 </div>
 </div>
@@ -178,8 +200,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a10d3f8c66bd431c24d7dba868807f567" id="r_a10d3f8c66bd431c24d7dba868807f567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmini_8h.html#a10d3f8c66bd431c24d7dba868807f567">tfmini_event</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a10d3f8c66bd431c24d7dba868807f567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lidar event function Receive bytes from the UART port and parse them.  <br /></td></tr>
 <tr class="separator:a10d3f8c66bd431c24d7dba868807f567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9408bd3a8ca4ff25ea5d47ccff9d6ef8" id="r_a9408bd3a8ca4ff25ea5d47ccff9d6ef8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmini_8h.html#a9408bd3a8ca4ff25ea5d47ccff9d6ef8">tfmini_downlink</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:a9408bd3a8ca4ff25ea5d47ccff9d6ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05e02afa8ad8d0b4f57d7c188e8a519" id="r_ae05e02afa8ad8d0b4f57d7c188e8a519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmini_8h.html#ae05e02afa8ad8d0b4f57d7c188e8a519">tfmini_send_abi</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:ae05e02afa8ad8d0b4f57d7c188e8a519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a725973512212354ec85a9c272ee742" id="r_a2a725973512212354ec85a9c272ee742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmini_8h.html#a2a725973512212354ec85a9c272ee742">tfmini_parse</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>)</td></tr>
+<tr class="memdesc:a2a725973512212354ec85a9c272ee742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the lidar bytes 1 by 1.  <br /></td></tr>
+<tr class="separator:a2a725973512212354ec85a9c272ee742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -203,7 +228,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="tfmini_8h_source.html#l00046">46</a> of file <a class="el" href="tfmini_8h_source.html">tfmini.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tfmini_8h_source.html#l00048">48</a> of file <a class="el" href="tfmini_8h_source.html">tfmini.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for TFMini:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -234,6 +259,12 @@ device</td>
 <a id="a303d99e8ef46fbd66c4c6f9d78359b0b" name="a303d99e8ef46fbd66c4c6f9d78359b0b"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
 <td class="fieldname">
 distance</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a00910f37451ab03d732c1ef663b0fe1b" name="a00910f37451ab03d732c1ef663b0fe1b"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
+<td class="fieldname">
+is_rover</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -313,37 +344,11 @@ update_agl</td>
 <tr><td class="fieldname"><a id="aef932ce5433dd3f28f352c8353f4afd8a8a7bf7cbbba538f97f5e7ddb1b2d07aa" name="aef932ce5433dd3f28f352c8353f4afd8a8a7bf7cbbba538f97f5e7ddb1b2d07aa"></a>TFMINI_PARSE_CHECKSUM&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="tfmini_8h_source.html#l00033">33</a> of file <a class="el" href="tfmini_8h_source.html">tfmini.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tfmini_8h_source.html#l00035">35</a> of file <a class="el" href="tfmini_8h_source.html">tfmini.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9408bd3a8ca4ff25ea5d47ccff9d6ef8" name="a9408bd3a8ca4ff25ea5d47ccff9d6ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9408bd3a8ca4ff25ea5d47ccff9d6ef8">&#9670;&#160;</a></span>tfmini_downlink()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> tfmini_downlink </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a10d3f8c66bd431c24d7dba868807f567" name="a10d3f8c66bd431c24d7dba868807f567"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10d3f8c66bd431c24d7dba868807f567">&#9670;&#160;</a></span>tfmini_event()</h2>
 
@@ -370,9 +375,9 @@ update_agl</td>
 
 <p>Lidar event function Receive bytes from the UART port and parse them. </p>
 
-<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00084">84</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00102">102</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
 
-<p class="reference">References <a class="el" href="tfmini_8h_source.html#l00047">TFMini::device</a>, <a class="el" href="tfmini_8h_source.html#l00048">TFMini::parse_status</a>, <a class="el" href="tfmini_8c_source.html#l00038">tfmini</a>, <a class="el" href="tfmini_8h_source.html#l00034">TFMINI_INITIALIZE</a>, and <a class="el" href="tfmini_8c_source.html#l00094">tfmini_parse()</a>.</p>
+<p class="reference">References <a class="el" href="tfmini_8h_source.html#l00049">TFMini::device</a>, <a class="el" href="tfmini_8h_source.html#l00050">TFMini::parse_status</a>, <a class="el" href="tfmini__nps_8c_source.html#l00082">sim_overwrite_lidar()</a>, <a class="el" href="tfmini_8c_source.html#l00053">tfmini</a>, <a class="el" href="tfmini_8h_source.html#l00036">TFMINI_INITIALIZE</a>, and <a class="el" href="tfmini_8c_source.html#l00113">tfmini_parse()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -380,21 +385,48 @@ update_agl</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="tfmini_8h_a10d3f8c66bd431c24d7dba868807f567_cgraph.png" border="0" usemap="#atfmini_8h_a10d3f8c66bd431c24d7dba868807f567_cgraph" alt=""/></div>
 <map name="atfmini_8h_a10d3f8c66bd431c24d7dba868807f567_cgraph" id="atfmini_8h_a10d3f8c66bd431c24d7dba868807f567_cgraph">
-<area shape="rect" title="Lidar event function Receive bytes from the UART port and parse them." alt="" coords="5,31,111,56"/>
-<area shape="rect" href="tfmini_8c.html#a20c966afa2a8fe08ebb5fdc22724b797" title="Parse the lidar bytes 1 by 1." alt="" coords="159,31,263,56"/>
-<area shape="poly" title=" " alt="" coords="111,41,145,41,145,46,111,46"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="339,5,485,31"/>
-<area shape="poly" title=" " alt="" coords="263,34,324,26,325,32,263,39"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="311,55,513,80"/>
-<area shape="poly" title=" " alt="" coords="263,47,298,51,297,56,263,52"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="561,55,729,80"/>
-<area shape="poly" title=" " alt="" coords="514,65,548,65,548,70,514,70"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="777,55,951,80"/>
-<area shape="poly" title=" " alt="" coords="730,65,764,65,764,70,730,70"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="999,29,1154,55"/>
-<area shape="poly" title=" " alt="" coords="950,54,985,50,986,55,951,60"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="999,79,1155,104"/>
-<area shape="poly" title=" " alt="" coords="951,74,985,78,985,84,950,80"/>
+<area shape="rect" title="Lidar event function Receive bytes from the UART port and parse them." alt="" coords="5,252,111,277"/>
+<area shape="rect" href="tfmini__nps_8c.html#a910c6937162793617ac43a2757c17e67" title=" " alt="" coords="159,203,309,228"/>
+<area shape="poly" title=" " alt="" coords="103,249,174,229,175,234,105,255"/>
+<area shape="rect" href="tfmini_8c.html#a2a725973512212354ec85a9c272ee742" title="Parse the lidar bytes 1 by 1." alt="" coords="182,301,286,327"/>
+<area shape="poly" title=" " alt="" coords="105,275,175,295,174,300,103,280"/>
+<area shape="rect" href="lidar__correction_8c.html#a73aaf4d0092ec994b9c785e6cc3a7bbc" title=" " alt="" coords="393,55,524,80"/>
+<area shape="poly" title=" " alt="" coords="242,201,286,146,319,115,356,89,379,79,381,84,359,94,322,119,290,150,246,204"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED." alt="" coords="389,104,529,129"/>
+<area shape="poly" title=" " alt="" coords="251,200,297,169,356,138,377,131,379,136,358,143,300,174,254,205"/>
+<area shape="rect" href="tfmini__nps_8c.html#adc44f362d11203e5689008f85e56593e" title="Set the distance of the lidar This function is used in NPS to set the distance of the lidar." alt="" coords="387,153,530,179"/>
+<area shape="poly" title=" " alt="" coords="292,200,386,179,387,184,293,205"/>
+<area shape="rect" href="group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="381,203,536,228"/>
+<area shape="poly" title=" " alt="" coords="310,213,367,213,367,218,310,218"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="357,301,560,327"/>
+<area shape="poly" title=" " alt="" coords="255,226,300,256,358,286,383,295,381,300,356,291,298,261,252,231"/>
+<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="357,252,560,277"/>
+<area shape="poly" title=" " alt="" coords="293,225,387,246,386,252,292,231"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="640,55,744,80"/>
+<area shape="poly" title=" " alt="" coords="519,101,626,78,627,84,520,107"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="616,104,768,129"/>
+<area shape="poly" title=" " alt="" coords="529,114,602,114,602,119,529,119"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="857,5,965,31"/>
+<area shape="poly" title=" " alt="" coords="744,53,843,30,844,36,745,58"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="858,55,963,80"/>
+<area shape="poly" title=" " alt="" coords="745,65,844,65,844,70,745,70"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="835,104,987,129"/>
+<area shape="poly" title=" " alt="" coords="768,114,821,114,821,119,768,119"/>
+<area shape="rect" href="tfmini__nps_8c.html#ae05e02afa8ad8d0b4f57d7c188e8a519" title=" " alt="" coords="629,153,755,179"/>
+<area shape="poly" title=" " alt="" coords="530,163,615,163,615,169,530,169"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="608,301,776,327"/>
+<area shape="poly" title=" " alt="" coords="560,311,594,311,594,317,560,317"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="824,301,997,327"/>
+<area shape="poly" title=" " alt="" coords="776,311,810,311,810,317,776,317"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1046,276,1201,301"/>
+<area shape="poly" title=" " alt="" coords="997,301,1032,297,1033,302,998,306"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1045,325,1201,351"/>
+<area shape="poly" title=" " alt="" coords="998,321,1032,325,1032,330,997,326"/>
+<area shape="poly" title=" " alt="" coords="286,311,343,311,343,317,286,317"/>
+<area shape="rect" href="tfmini_8c.html#ae05e02afa8ad8d0b4f57d7c188e8a519" title=" " alt="" coords="395,351,522,376"/>
+<area shape="poly" title=" " alt="" coords="287,323,387,345,386,350,286,328"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="619,351,765,376"/>
+<area shape="poly" title=" " alt="" coords="522,361,605,361,605,366,522,366"/>
 </map>
 </div>
 
@@ -426,9 +458,9 @@ update_agl</td>
 
 <p>Initialization function. </p>
 
-<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00064">64</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00077">77</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
 
-<p class="reference">References <a class="el" href="tfmini_8h_source.html#l00058">TFMini::compensate_rotation</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="tfmini_8h_source.html#l00047">TFMini::device</a>, <a class="el" href="tfmini_8h_source.html#l00055">TFMini::distance</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="tfmini_8h_source.html#l00048">TFMini::parse_status</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="tfmini_8h_source.html#l00054">TFMini::strength</a>, <a class="el" href="tfmini_8c_source.html#l00038">tfmini</a>, <a class="el" href="tfmini_8h_source.html#l00035">TFMINI_PARSE_HEAD</a>, <a class="el" href="tfmini_8c_source.html#l00050">tfmini_send_lidar()</a>, and <a class="el" href="tfmini_8h_source.html#l00057">TFMini::update_agl</a>.</p>
+<p class="reference">References <a class="el" href="tfmini_8h_source.html#l00060">TFMini::compensate_rotation</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="tfmini_8h_source.html#l00049">TFMini::device</a>, <a class="el" href="tfmini_8h_source.html#l00057">TFMini::distance</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="tfmini_8h_source.html#l00061">TFMini::is_rover</a>, <a class="el" href="tfmini_8c_source.html#l00047">LIDAR_HEIGHT</a>, <a class="el" href="tfmini_8c_source.html#l00051">lidar_height</a>, <a class="el" href="tfmini_8c_source.html#l00042">LIDAR_OFFSET</a>, <a class="el" href="tfmini_8c_source.html#l00050">lidar_offset</a>, <a class="el" href="tfmini_8h_source.html#l00050">TFMini::parse_status</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="tfmini_8h_source.html#l00056">TFMini::strength</a>, <a class="el" href="tfmini_8c_source.html#l00053">tfmini</a>, <a class="el" href="tfmini_8h_source.html#l00037">TFMINI_PARSE_HEAD</a>, <a class="el" href="tfmini_8c_source.html#l00063">tfmini_send_lidar()</a>, <a class="el" href="tfmini__nps_8c_source.html#l00047">tfmini_send_lidar()</a>, and <a class="el" href="tfmini_8h_source.html#l00059">TFMini::update_agl</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -436,11 +468,147 @@ update_agl</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="tfmini_8h_ae0b86051c41e1b41b79e0273c952fa07_cgraph.png" border="0" usemap="#atfmini_8h_ae0b86051c41e1b41b79e0273c952fa07_cgraph" alt=""/></div>
 <map name="atfmini_8h_ae0b86051c41e1b41b79e0273c952fa07_cgraph" id="atfmini_8h_ae0b86051c41e1b41b79e0273c952fa07_cgraph">
-<area shape="rect" title="Initialization function." alt="" coords="5,31,95,56"/>
+<area shape="rect" title="Initialization function." alt="" coords="5,55,95,80"/>
 <area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="143,5,345,31"/>
-<area shape="poly" title=" " alt="" coords="94,35,133,30,133,35,95,40"/>
+<area shape="poly" title=" " alt="" coords="94,52,142,39,174,31,176,36,143,45,96,57"/>
 <area shape="rect" href="tfmini_8c.html#a8242c40e35436569d901511998b1e6c2" title="Downlink message lidar." alt="" coords="177,55,311,80"/>
-<area shape="poly" title=" " alt="" coords="95,46,163,55,163,60,94,51"/>
+<area shape="poly" title=" " alt="" coords="95,65,163,65,163,70,95,70"/>
+<area shape="rect" href="tfmini__nps_8c.html#a8242c40e35436569d901511998b1e6c2" title="Downlink message lidar." alt="" coords="177,104,311,129"/>
+<area shape="poly" title=" " alt="" coords="96,76,143,89,180,98,179,103,142,94,94,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a725973512212354ec85a9c272ee742" name="a2a725973512212354ec85a9c272ee742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a725973512212354ec85a9c272ee742">&#9670;&#160;</a></span>tfmini_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> tfmini_parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse the lidar bytes 1 by 1. </p>
+
+<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00113">113</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
+
+<p class="reference">References <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00074">byte</a>, <a class="el" href="tfmini_8h_source.html#l00060">TFMini::compensate_rotation</a>, <a class="el" href="tfmini_8h_source.html#l00057">TFMini::distance</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="tfmini_8h_source.html#l00061">TFMini::is_rover</a>, <a class="el" href="tfmini_8c_source.html#l00051">lidar_height</a>, <a class="el" href="tfmini_8c_source.html#l00050">lidar_offset</a>, <a class="el" href="tfmini_8h_source.html#l00058">TFMini::mode</a>, <a class="el" href="tfmini_8h_source.html#l00051">TFMini::parse_crc</a>, <a class="el" href="tfmini_8h_source.html#l00050">TFMini::parse_status</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="tfmini_8h_source.html#l00052">TFMini::raw_dist</a>, <a class="el" href="tfmini_8h_source.html#l00054">TFMini::raw_mode</a>, <a class="el" href="tfmini_8h_source.html#l00053">TFMini::raw_strength</a>, <a class="el" href="state_8h_source.html#l01306">stateGetNedToBodyEulers_f()</a>, <a class="el" href="tfmini_8h_source.html#l00056">TFMini::strength</a>, <a class="el" href="tfmini_8c_source.html#l00053">tfmini</a>, <a class="el" href="tfmini_8h_source.html#l00036">TFMINI_INITIALIZE</a>, <a class="el" href="tfmini_8h_source.html#l00044">TFMINI_PARSE_BYTE7</a>, <a class="el" href="tfmini_8h_source.html#l00045">TFMINI_PARSE_CHECKSUM</a>, <a class="el" href="tfmini_8h_source.html#l00040">TFMINI_PARSE_DIST_H</a>, <a class="el" href="tfmini_8h_source.html#l00039">TFMINI_PARSE_DIST_L</a>, <a class="el" href="tfmini_8h_source.html#l00037">TFMINI_PARSE_HEAD</a>, <a class="el" href="tfmini_8h_source.html#l00038">TFMINI_PARSE_HEAD2</a>, <a class="el" href="tfmini_8h_source.html#l00043">TFMINI_PARSE_MODE</a>, <a class="el" href="tfmini_8h_source.html#l00042">TFMINI_PARSE_STRENGTH_H</a>, <a class="el" href="tfmini_8h_source.html#l00041">TFMINI_PARSE_STRENGTH_L</a>, <a class="el" href="tfmini_8c_source.html#l00217">tfmini_send_abi()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="tfmini_8c_source.html#l00102">tfmini_event()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="tfmini_8h_a2a725973512212354ec85a9c272ee742_cgraph.png" border="0" usemap="#atfmini_8h_a2a725973512212354ec85a9c272ee742_cgraph" alt=""/></div>
+<map name="atfmini_8h_a2a725973512212354ec85a9c272ee742_cgraph" id="atfmini_8h_a2a725973512212354ec85a9c272ee742_cgraph">
+<area shape="rect" title="Parse the lidar bytes 1 by 1." alt="" coords="5,56,109,81"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="157,31,360,56"/>
+<area shape="poly" title=" " alt="" coords="109,59,144,55,144,60,110,65"/>
+<area shape="rect" href="tfmini_8c.html#ae05e02afa8ad8d0b4f57d7c188e8a519" title=" " alt="" coords="195,80,322,105"/>
+<area shape="poly" title=" " alt="" coords="110,72,182,81,181,86,110,77"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="408,31,576,56"/>
+<area shape="poly" title=" " alt="" coords="360,41,394,41,394,46,360,46"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="624,31,797,56"/>
+<area shape="poly" title=" " alt="" coords="576,41,610,41,610,46,576,46"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="846,5,1001,31"/>
+<area shape="poly" title=" " alt="" coords="797,30,832,26,833,31,798,36"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="845,55,1001,80"/>
+<area shape="poly" title=" " alt="" coords="798,50,832,54,832,60,797,56"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="419,80,565,105"/>
+<area shape="poly" title=" " alt="" coords="322,90,405,90,405,95,322,95"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="tfmini_8h_a2a725973512212354ec85a9c272ee742_icgraph.png" border="0" usemap="#atfmini_8h_a2a725973512212354ec85a9c272ee742_icgraph" alt=""/></div>
+<map name="atfmini_8h_a2a725973512212354ec85a9c272ee742_icgraph" id="atfmini_8h_a2a725973512212354ec85a9c272ee742_icgraph">
+<area shape="rect" title="Parse the lidar bytes 1 by 1." alt="" coords="159,5,263,31"/>
+<area shape="rect" href="tfmini_8c.html#a10d3f8c66bd431c24d7dba868807f567" title="Lidar event function Receive bytes from the UART port and parse them." alt="" coords="5,5,111,31"/>
+<area shape="poly" title=" " alt="" coords="145,21,111,21,111,15,145,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae05e02afa8ad8d0b4f57d7c188e8a519" name="ae05e02afa8ad8d0b4f57d7c188e8a519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05e02afa8ad8d0b4f57d7c188e8a519">&#9670;&#160;</a></span>tfmini_send_abi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> tfmini_send_abi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00217">217</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
+
+<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00181">AGL_LIDAR_TFMINI_ID</a>, <a class="el" href="tfmini_8h_source.html#l00057">TFMini::distance</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="tfmini_8c_source.html#l00053">tfmini</a>, and <a class="el" href="tfmini_8h_source.html#l00059">TFMini::update_agl</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="tfmini__nps_8c_source.html#l00123">setLidarDistance_f()</a>, and <a class="el" href="tfmini_8c_source.html#l00113">tfmini_parse()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="tfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_cgraph.png" border="0" usemap="#atfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_cgraph" alt=""/></div>
+<map name="atfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_cgraph" id="atfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="180,5,327,31"/>
+<area shape="poly" title=" " alt="" coords="132,15,166,15,166,21,132,21"/>
+</map>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="tfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_icgraph.png" border="0" usemap="#atfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_icgraph" alt=""/></div>
+<map name="atfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_icgraph" id="atfmini_8h_ae05e02afa8ad8d0b4f57d7c188e8a519_icgraph">
+<area shape="rect" title=" " alt="" coords="548,31,675,56"/>
+<area shape="rect" href="tfmini__nps_8c.html#adc44f362d11203e5689008f85e56593e" title="Set the distance of the lidar This function is used in NPS to set the distance of the lidar." alt="" coords="357,5,500,31"/>
+<area shape="poly" title=" " alt="" coords="534,35,500,31,501,25,534,30"/>
+<area shape="rect" href="tfmini_8c.html#a2a725973512212354ec85a9c272ee742" title="Parse the lidar bytes 1 by 1." alt="" coords="377,55,481,80"/>
+<area shape="poly" title=" " alt="" coords="534,56,481,63,481,58,534,51"/>
+<area shape="rect" href="tfmini__nps_8c.html#a910c6937162793617ac43a2757c17e67" title=" " alt="" coords="159,5,309,31"/>
+<area shape="poly" title=" " alt="" coords="343,21,310,21,310,15,343,15"/>
+<area shape="rect" href="tfmini__nps_8c.html#a10d3f8c66bd431c24d7dba868807f567" title="Lidar event function Receive bytes from the UART port and parse them." alt="" coords="5,5,111,31"/>
+<area shape="poly" title=" " alt="" coords="145,21,111,21,111,15,145,15"/>
+<area shape="rect" href="tfmini_8c.html#a10d3f8c66bd431c24d7dba868807f567" title="Lidar event function Receive bytes from the UART port and parse them." alt="" coords="181,55,287,80"/>
+<area shape="poly" title=" " alt="" coords="363,70,287,70,287,65,363,65"/>
 </map>
 </div>
 
@@ -467,9 +635,9 @@ update_agl</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00038">38</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tfmini_8c_source.html#l00053">53</a> of file <a class="el" href="tfmini_8c_source.html">tfmini.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tfmini_8c_source.html#l00084">tfmini_event()</a>, <a class="el" href="tfmini_8c_source.html#l00064">tfmini_init()</a>, <a class="el" href="tfmini_8c_source.html#l00094">tfmini_parse()</a>, and <a class="el" href="tfmini_8c_source.html#l00050">tfmini_send_lidar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tfmini__nps_8c_source.html#l00123">setLidarDistance_f()</a>, <a class="el" href="tfmini_8c_source.html#l00102">tfmini_event()</a>, <a class="el" href="tfmini_8c_source.html#l00077">tfmini_init()</a>, <a class="el" href="tfmini_8c_source.html#l00113">tfmini_parse()</a>, <a class="el" href="tfmini_8c_source.html#l00217">tfmini_send_abi()</a>, <a class="el" href="tfmini_8c_source.html#l00063">tfmini_send_lidar()</a>, and <a class="el" href="tfmini__nps_8c_source.html#l00047">tfmini_send_lidar()</a>.</p>
 
 </div>
 </div>
@@ -479,7 +647,7 @@ update_agl</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f4ca31d105c4342227373714bf7859c8.html">lidar</a></li><li class="navelem"><a class="el" href="tfmini_8h.html">tfmini.h</a></li>
-    <li class="footer">Generated on Fri Aug 1 2025 08:51:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 7 2025 21:23:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

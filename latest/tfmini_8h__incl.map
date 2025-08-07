@@ -1,20 +1,35 @@
 <map id="sw/airborne/modules/lidar/tfmini.h" name="sw/airborne/modules/lidar/tfmini.h">
-<area shape="rect" id="Node000001" title="driver for the TFMini lidar" alt="" coords="21,5,180,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,167,60,192"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,46,155,41,153,90,45"/>
-<area shape="rect" id="Node000003" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="94,93,227,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,44,146,81,141,84,113,47"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="141,121,67,162,65,157,139,116"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="85,167,253,192"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="165,119,169,153,163,153,159,119"/>
-<area shape="rect" id="Node000005" href="$threads_8h.html" title=" " alt="" coords="277,167,452,192"/>
-<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="194,116,320,160,318,165,193,121"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="106,247,189,273"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="334,195,193,245,191,240,332,189"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="213,240,375,280"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="356,194,322,232,318,228,352,190"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="400,247,471,273"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="377,190,418,235,414,239,373,194"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="495,247,570,273"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="390,190,497,239,495,244,388,194"/>
+<area shape="rect" id="Node000001" title="driver for the TFMini lidar" alt="" coords="441,5,599,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="493,247,547,273"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="523,46,523,233,517,233,517,46"/>
+<area shape="rect" id="Node000003" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="295,93,428,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="483,48,398,90,396,85,481,43"/>
+<area shape="rect" id="Node000010" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="593,93,785,119"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="562,43,653,85,651,90,559,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="375,117,500,236,496,240,371,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="25,167,193,192"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="322,121,164,165,163,160,320,116"/>
+<area shape="rect" id="Node000005" href="$threads_8h.html" title=" " alt="" coords="218,167,393,192"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="354,121,325,157,321,154,350,117"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="104,247,187,273"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="283,194,182,244,180,239,281,190"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="211,240,373,280"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="306,193,300,227,295,226,301,192"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="398,247,469,273"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="326,190,404,238,401,242,323,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,247,80,273"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="260,195,93,243,85,245,84,240,91,237,259,190"/>
+<area shape="rect" id="Node000011" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="630,167,749,192"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="692,119,692,153,687,153,687,119"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="571,247,634,273"/>
+<area shape="poly" id="edge18_Node000010_Node000012" title=" " alt="" coords="671,121,644,141,621,168,609,201,605,234,600,233,604,200,616,165,640,137,668,117"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="753,247,821,273"/>
+<area shape="poly" id="edge17_Node000010_Node000014" title=" " alt="" coords="711,117,738,137,764,165,779,199,786,233,781,234,774,201,759,168,735,141,708,121"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="824,167,981,192"/>
+<area shape="poly" id="edge16_Node000010_Node000015" title=" " alt="" coords="724,116,856,160,854,165,723,121"/>
+<area shape="poly" id="edge14_Node000011_Node000002" title=" " alt="" coords="665,195,561,242,558,244,556,239,559,238,663,190"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="678,194,628,240,624,236,675,190"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="658,247,729,273"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="693,192,695,233,689,234,687,192"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="705,190,763,237,760,241,702,194"/>
 </map>
