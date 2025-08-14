@@ -88,6 +88,7 @@ var gps_8h =
     [ "gps_parse_GPS_INJECT", "gps_8h.html#a5b1e34c27ba1044a445e23c93f7212ab", null ],
     [ "gps_parse_RTCM_INJECT", "gps_8h.html#a6d3041cd1924b179b8c3940d7840476f", null ],
     [ "gps_periodic_check", "gps_8h.html#ae631bcedc95daefc88cba7e639b38f19", null ],
+    [ "gps_periodic_fix_counter", "gps_8h.html#aeec6c7cd8fcc0e36d39730b006d8c31a", null ],
     [ "gps_time_since_last_3dfix", "gps_8h.html#a1813d66f77ab6872c1972d7d86776c9d", null ],
     [ "gps_tow_from_sys_ticks", "gps_8h.html#ad68ada7274989a4c9f08bc06d74ee5bd", null ],
     [ "gps_week_number", "gps_8h.html#a5904be2de6c3e1e04d7789b135bc0f6b", null ],
@@ -98,6 +99,7 @@ var gps_8h =
     [ "utm_float_from_gps", "gps_8h.html#a1343b41c94f919a6a593b958b275683f", null ],
     [ "utm_int_from_gps", "gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed", null ],
     [ "gps", "gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d", null ],
+    [ "gps_disable_fix", "gps_8h.html#a17f79cb8fb1e6f40ad864e156786e728", null ],
     [ "gps_time_sync", "gps_8h.html#a4cd3856a89c7a6a56135788fa9f33922", null ],
     [ "multi_gps_mode", "gps_8h.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd", null ]
 ];

@@ -1,5 +1,9 @@
 var NAVTREEINDEX132 =
 {
+"module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,418,0],
+"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,418,2,0],
+"module__mag_hmc58xx.html":[1,419],
+"module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,419,1],
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,419,2],
 "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,419,0],
 "module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,419,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX132 =
 "module__nav_vertical_raster.html#module_load_example__nav_vertical_raster":[1,363,0],
 "module__nav_vertical_raster.html#module_xml__nav_vertical_raster":[1,363,0,0],
 "module__navigation.html":[1,364],
-"module__navigation.html#module_load_example__navigation":[1,364,0],
-"module__navigation.html#module_xml__navigation":[1,364,0,0],
-"module__nps_hitl_sensors.html":[1,427],
-"module__nps_hitl_sensors.html#module_load_example__nps_hitl_sensors":[1,427,0],
-"module__nps_hitl_sensors.html#module_xml__nps_hitl_sensors":[1,427,0,0]
+"module__navigation.html#module_load_example__navigation":[1,364,0]
 };

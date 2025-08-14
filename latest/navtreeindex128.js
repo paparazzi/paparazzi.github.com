@@ -1,8 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"module__control_energy.html":[1,78],
-"module__control_energy.html#module_load_example__control_energy":[1,78,0],
-"module__control_energy.html#module_xml__control_energy":[1,78,0,0],
 "module__control_energyadaptive.html":[1,79],
 "module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,79,0],
 "module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,79,0,0],
@@ -71,6 +68,7 @@ var NAVTREEINDEX128 =
 "module__cv_georeference.html#module_xml__cv_georeference":[1,64,1,0],
 "module__cv_opencvdemo.html":[1,65],
 "module__cv_opencvdemo.html#configuration__cv_opencvdemo":[1,65,1],
+"module__cv_opencvdemo.html#define":[1,65,1,0],
 "module__cv_opencvdemo.html#functions__cv_opencvdemo":[1,65,2],
 "module__cv_opencvdemo.html#module_load_example__cv_opencvdemo":[1,65,0],
 "module__cv_opencvdemo.html#module_xml__cv_opencvdemo":[1,65,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX128 =
 "module__extra_dl.html":[1,112],
 "module__extra_dl.html#configuration__extra_dl":[1,112,1],
 "module__extra_dl.html#functions__extra_dl":[1,112,2],
-"module__extra_dl.html#module_load_example__extra_dl":[1,112,0]
+"module__extra_dl.html#module_load_example__extra_dl":[1,112,0],
+"module__extra_dl.html#module_xml__extra_dl":[1,112,2,0],
+"module__ezcurrent.html":[1,416]
 };

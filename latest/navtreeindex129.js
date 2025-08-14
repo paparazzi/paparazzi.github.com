@@ -1,7 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"module__extra_dl.html#module_xml__extra_dl":[1,112,2,0],
-"module__ezcurrent.html":[1,416],
 "module__ezcurrent.html#configuration__ezcurrent":[1,416,1],
 "module__ezcurrent.html#functions__ezcurrent":[1,416,2],
 "module__ezcurrent.html#module_load_example__ezcurrent":[1,416,0],
@@ -165,10 +163,17 @@ var NAVTREEINDEX129 =
 "module__gps_skytraq.html#module_xml__gps_skytraq":[1,168,2,0],
 "module__gps_ublox.html":[1,169],
 "module__gps_ublox.html#configuration__gps_ublox":[1,169,1],
+"module__gps_ublox.html#configure":[1,169,1,0],
 "module__gps_ublox.html#datalink_functions__gps_ublox":[1,169,3],
+"module__gps_ublox.html#event_functions":[1,169,2,1],
+"module__gps_ublox.html#files":[1,169,4],
 "module__gps_ublox.html#functions__gps_ublox":[1,169,2],
+"module__gps_ublox.html#headers":[1,169,4,0],
+"module__gps_ublox.html#init_functions":[1,169,2,0],
 "module__gps_ublox.html#module_load_example__gps_ublox":[1,169,0],
-"module__gps_ublox.html#module_xml__gps_ublox":[1,169,3,0],
+"module__gps_ublox.html#module_xml__gps_ublox":[1,169,4,2],
+"module__gps_ublox.html#periodic_functions":[1,169,2,2],
+"module__gps_ublox.html#sources":[1,169,4,1],
 "module__gps_ubx_i2c.html":[1,170],
 "module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,170,1],
 "module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,170,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX129 =
 "module__guidance_rotorcraft.html":[1,184],
 "module__guidance_rotorcraft.html#functions__guidance_rotorcraft":[1,184,1],
 "module__guidance_rotorcraft.html#module_load_example__guidance_rotorcraft":[1,184,0],
-"module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft":[1,184,1,0],
-"module__guidance_rover.html":[1,185],
-"module__guidance_rover.html#functions__guidance_rover":[1,185,1],
-"module__guidance_rover.html#module_load_example__guidance_rover":[1,185,0],
-"module__guidance_rover.html#module_xml__guidance_rover":[1,185,1,0],
-"module__guidance_rover_holonomic.html":[1,186]
+"module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft":[1,184,1,0]
 };

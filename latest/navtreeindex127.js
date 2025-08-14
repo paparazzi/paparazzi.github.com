@@ -1,5 +1,9 @@
 var NAVTREEINDEX127 =
 {
+"module__airspeed_consistency.html#module_load_example__airspeed_consistency":[1,51,0],
+"module__airspeed_consistency.html#module_xml__airspeed_consistency":[1,51,1,0],
+"module__airspeed_ets.html":[1,393],
+"module__airspeed_ets.html#configuration__airspeed_ets":[1,393,1],
 "module__airspeed_ets.html#functions__airspeed_ets":[1,393,2],
 "module__airspeed_ets.html#module_load_example__airspeed_ets":[1,393,0],
 "module__airspeed_ets.html#module_xml__airspeed_ets":[1,393,2,0],
@@ -150,16 +154,9 @@ var NAVTREEINDEX127 =
 "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,414,1,0],
 "module__battery_monitor.html":[1,22],
 "module__battery_monitor.html#configuration__battery_monitor":[1,22,1],
-"module__battery_monitor.html#configure":[1,22,1,0],
-"module__battery_monitor.html#event_functions":[1,22,2,1],
-"module__battery_monitor.html#files":[1,22,3],
 "module__battery_monitor.html#functions__battery_monitor":[1,22,2],
-"module__battery_monitor.html#headers":[1,22,3,0],
-"module__battery_monitor.html#init_functions":[1,22,2,0],
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,22,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,22,3,2],
-"module__battery_monitor.html#periodic_functions":[1,22,2,2],
-"module__battery_monitor.html#sources":[1,22,3,1],
+"module__battery_monitor.html#module_xml__battery_monitor":[1,22,2,0],
 "module__bebop_ae_awb.html":[1,57],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX127 =
 "module__control.html#module_xml__control":[1,76,0,0],
 "module__control_adaptive.html":[1,77],
 "module__control_adaptive.html#module_load_example__control_adaptive":[1,77,0],
-"module__control_adaptive.html#module_xml__control_adaptive":[1,77,0,0]
+"module__control_adaptive.html#module_xml__control_adaptive":[1,77,0,0],
+"module__control_energy.html":[1,78],
+"module__control_energy.html#module_load_example__control_energy":[1,78,0],
+"module__control_energy.html#module_xml__control_energy":[1,78,0,0]
 };

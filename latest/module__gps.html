@@ -100,7 +100,8 @@ $(document).ready(function(){initNavTree('module__gps.html',''); initResizable()
 <h1><a class="anchor" id="module_load_example__gps"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GPS_POS_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GPS_POS_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GPS_LOSS_TEST_TIMER&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;GPS_LED&quot; value=&quot;2&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gps"></a>
@@ -116,6 +117,8 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>GPS_POS_BROADCAST</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: Broadcast GPS position instead of sending it to the ground station only. This requires to use PPRZLINK version 2 and a capable modem</li>
+<li><b>name:</b> <code>GPS_LOSS_TEST_TIMER</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: If defined TRUE, this allows the GPS module to simulate GPS loss for a few seconds for testing purposes.</li>
 </ul>
 <h1><a class="anchor" id="functions__gps"></a>
 Module functions</h1>
@@ -124,6 +127,17 @@ Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
 <li><a class="el" href="gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state">gps_init()</a></li>
+</ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="gps_8c.html#aeec6c7cd8fcc0e36d39730b006d8c31a" title="Increment periodic counter.">gps_periodic_fix_counter()</a><ul>
+<li>Frequency in Hz: <em>1.0</em> </li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="datalink_functions__gps"></a>
 Datalink Functions</h1>
@@ -158,6 +172,7 @@ Raw gps.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number to indicate fix or none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_POS_BROADCAST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Broadcast GPS position instead of sending it to the ground station only. This requires to use PPRZLINK version 2 and a capable modem&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_LOSS_TEST_TIMER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If defined TRUE, this allows the GPS module to simulate GPS loss for a few seconds for testing purposes.&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -169,6 +184,7 @@ Raw gps.xml file:</h2>
 <div class="line"><span class="comment">          &lt;strip_button name=&quot;GPS PRIMARY&quot; icon=&quot;gps1.png&quot; value=&quot;1&quot; group=&quot;gps_mode_setting&quot;/&gt;</span></div>
 <div class="line"><span class="comment">          &lt;strip_button name=&quot;GPS SECONDARY&quot; icon=&quot;gps2.png&quot; value=&quot;2&quot; group=&quot;gps_mode_setting&quot;/&gt; --&gt;</span></div>
 <div class="line">        &lt;/<span class="keywordtype">dl_setting</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;gps_disable_fix&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;180&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;disable_fix&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
@@ -177,6 +193,7 @@ Raw gps.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_periodic_fix_counter()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;1.0&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GPS_INJECT&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_parse_GPS_INJECT(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;RTCM_INJECT&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_parse_RTCM_INJECT(buf)&quot;</span>/&gt;</div>
 <div class="line"> </div>
@@ -198,7 +215,7 @@ Raw gps.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Aug 7 2025 21:23:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 14 2025 12:26:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

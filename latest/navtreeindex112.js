@@ -1,5 +1,9 @@
 var NAVTREEINDEX112 =
 {
+"mag__pitot__uart_8c.html#aa49294deed20f0447e660b047b054dce":[12,0,1,0,6,63,68,3],
+"mag__pitot__uart_8c.html#ae9f2ad8bc5b5d330a8dba204b5a358ed":[12,0,1,0,6,63,68,0],
+"mag__pitot__uart_8c_source.html":[12,0,1,0,6,63,68],
+"mag__pitot__uart_8h.html":[12,0,1,0,6,63,69],
 "mag__pitot__uart_8h.html#a08fd57bbd52627ae5ec220b533fa9711":[12,0,1,0,6,63,69,0,2],
 "mag__pitot__uart_8h.html#a2a2c4bb26198f8ea6aebe22921e79836":[12,0,1,0,6,63,69,5],
 "mag__pitot__uart_8h.html#a5a42d4a0b980e53173638d56daef7be0":[12,0,1,0,6,63,69,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX112 =
 "matekF765-WING_8h.html#a4d767633a35c612f195676cc9389f6d8":[12,0,1,0,1,16,0,1,111],
 "matekF765-WING_8h.html#a4e705c111c9ec43b5223ad919b2e10ce":[12,0,1,0,1,16,0,1,135],
 "matekF765-WING_8h.html#a4f939402a3adf6008ed5ca06dbd030b9":[12,0,1,0,1,16,0,1,39],
-"matekF765-WING_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1":[12,0,1,0,1,16,0,1,18],
-"matekF765-WING_8h.html#a55711f01893efc5b4d41aa7de107ce99":[12,0,1,0,1,16,0,1,139],
-"matekF765-WING_8h.html#a563096bba11519983f91f64d70b14e47":[12,0,1,0,1,16,0,1,143],
-"matekF765-WING_8h.html#a57082fbd09cf4ffb36ede12de84055f5":[12,0,1,0,1,16,0,1,31],
-"matekF765-WING_8h.html#a5839c6584034c6fe16e4267590a994b5":[12,0,1,0,1,16,0,1,105]
+"matekF765-WING_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1":[12,0,1,0,1,16,0,1,18]
 };
