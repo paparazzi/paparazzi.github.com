@@ -3,6 +3,7 @@ var ground__detect_8c =
     [ "DEBUG_GROUND_DETECT", "ground__detect_8c.html#af28baac88d8808e75c042a3d34962ba7", null ],
     [ "GROUND_DETECT_COUNTER_TRIGGER", "ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694", null ],
     [ "GROUND_DETECT_FILT_FREQ", "ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b", null ],
+    [ "GROUND_DETECT_SPECIFIC_THRUST_THRESHOLD", "ground__detect_8c.html#adb61a7405c937f6f2d7b5d57dd9b004d", null ],
     [ "ground_detect", "ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a", null ],
     [ "ground_detect_filter_accel", "ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d", null ],
     [ "ground_detect_init", "ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9", null ],

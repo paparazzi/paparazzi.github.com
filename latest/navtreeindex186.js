@@ -1,5 +1,6 @@
 var NAVTREEINDEX186 =
 {
+"px4io__2_84_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,63,13],
 "px4io__2_84_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a":[12,0,1,0,1,63,24],
 "px4io__2_84_8h.html#a4da08b59c725550efa312cf16ecdd77c":[12,0,1,0,1,63,73],
 "px4io__2_84_8h.html#a50227ddde1342cae56494d8cedfde915":[12,0,1,0,1,63,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX186 =
 "radio__control_8h.html#a49d0c23f0651ada64ce2cfb001f7c47c":[12,0,1,0,6,56,8,9],
 "radio__control_8h.html#a764f3b5472564631b314515d69179deb":[12,0,1,0,6,56,8,3],
 "radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f":[12,0,1,0,6,56,8,0,6],
-"radio__control_8h.html#a8843219fc855f8ca70c1d29cf3d8c7b4":[12,0,1,0,6,56,8,0,4],
-"radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16":[12,0,1,0,6,56,8,0,3]
+"radio__control_8h.html#a8843219fc855f8ca70c1d29cf3d8c7b4":[12,0,1,0,6,56,8,0,4]
 };

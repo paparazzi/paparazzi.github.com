@@ -464,7 +464,7 @@ var searchData=
   ['lidar_5flite_5freq_5fread_461',['LIDAR_LITE_REQ_READ',['../lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba09939369f0fc3a3da8dde0f546b6950a',1,'lidar_lite.h']]],
   ['lidar_5fmax_5frange_462',['LIDAR_MAX_RANGE',['../tfmini__nps_8c.html#abc5f394f38087aa768286365b6ec3ec3',1,'tfmini_nps.c']]],
   ['lidar_5fmin_5frange_463',['LIDAR_MIN_RANGE',['../tfmini__nps_8c.html#a065916f251bec0f3ac3bf4d4881fa15e',1,'tfmini_nps.c']]],
-  ['lidar_5foffset_464',['lidar_offset',['../tfmini_8c.html#ad16b319367765f99f0eec7ddbeb16fa4',1,'LIDAR_OFFSET:&#160;tfmini.c'],['../tfmini_8c.html#aed6b26905fac19b45c76e9e3c8a6a425',1,'lidar_offset:&#160;tfmini.c']]],
+  ['lidar_5foffset_464',['lidar_offset',['../tfmini_8c.html#aed6b26905fac19b45c76e9e3c8a6a425',1,'lidar_offset:&#160;tfmini.c'],['../tfmini_8c.html#ad16b319367765f99f0eec7ddbeb16fa4',1,'LIDAR_OFFSET:&#160;tfmini.c']]],
   ['lidar_5fsf11_465',['lidar_sf11',['../lidar__sf11_8h.html#a445c98445fd275bd7ef2d9cc33aa71a3',1,'lidar_sf11:&#160;lidar_sf11.c'],['../lidar__sf11_8c.html#a445c98445fd275bd7ef2d9cc33aa71a3',1,'lidar_sf11:&#160;lidar_sf11.c']]],
   ['lidar_5fsf11_20module_466',['lidar_sf11 module',['../module__lidar_sf11.html',1,'onboard_modules']]],
   ['lidar_5fsf11_20xml_20file_3a_467',['Raw lidar_sf11.xml file:',['../module__lidar_sf11.html#module_xml__lidar_sf11',1,'']]],

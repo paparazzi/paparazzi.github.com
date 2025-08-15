@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c":[1,138,3],
 "module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,138,2],
 "module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,138,0],
 "module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,138,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "module__gps_nmea.html#module_load_example__gps_nmea":[1,162,0],
 "module__gps_nmea.html#module_xml__gps_nmea":[1,162,2,0],
 "module__gps_nps.html":[1,163],
-"module__gps_nps.html#functions__gps_nps":[1,163,1],
-"module__gps_nps.html#module_load_example__gps_nps":[1,163,0]
+"module__gps_nps.html#functions__gps_nps":[1,163,1]
 };

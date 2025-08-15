@@ -1,5 +1,6 @@
 var NAVTREEINDEX85 =
 {
+"imu__apogee_8c.html":[12,0,1,0,1,0,3],
 "imu__apogee_8c.html#a195fd58b3335b4b91593e2c7d1bdb6fb":[12,0,1,0,1,0,3,9],
 "imu__apogee_8c.html#a31a5ac940bea487cf5608391f957c5bc":[12,0,1,0,1,0,3,1],
 "imu__apogee_8c.html#a3393a9d95aad086bcf228b54c4981381":[12,0,1,0,1,0,3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX85 =
 "imu__mpu6000_8c.html#a5e1306dffd68a877b676de9d785a279a":[12,0,1,0,6,36,24,6],
 "imu__mpu6000_8c.html#aaf00c3a79348ca914e8ed7e3a3ce8686":[12,0,1,0,6,36,24,0],
 "imu__mpu6000_8c.html#abcd8e3da368d4b35f99d0221308ae250":[12,0,1,0,6,36,24,10],
-"imu__mpu6000_8c.html#abd2159bb1b3c82cedfd894e7812574e5":[12,0,1,0,6,36,24,2],
-"imu__mpu6000_8c.html#ad6966952ce0485e5bffbc0d8132fa5df":[12,0,1,0,6,36,24,1]
+"imu__mpu6000_8c.html#abd2159bb1b3c82cedfd894e7812574e5":[12,0,1,0,6,36,24,2]
 };

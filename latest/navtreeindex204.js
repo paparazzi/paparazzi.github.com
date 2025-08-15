@@ -1,5 +1,6 @@
 var NAVTREEINDEX204 =
 {
+"stylepython.html":[0,1,2],
 "stylepython.html#stylecompat":[0,1,2,0],
 "superbitrf__rc_8c.html":[12,0,1,0,6,56,22],
 "superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a":[12,0,1,0,6,56,22,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX204 =
 "sys__id__wave_8h.html#ad4091e33fe060304ec84e86d3ffbe991":[12,0,1,0,6,69,13,3],
 "sys__id__wave_8h.html#aec23f6219a4fc28ade88003db5b32da9":[12,0,1,0,6,69,13,9],
 "sys__id__wave_8h.html#af0f067937671e6cfd7c99a5548ebc4be":[12,0,1,0,6,69,13,2],
-"sys__id__wave_8h.html#af7fb01dcd187d7ebfb5eb35005a57b59":[12,0,1,0,6,69,13,7],
-"sys__id__wave_8h.html#af82efedfa4c07a9b9624d65f6c564723":[12,0,1,0,6,69,13,0]
+"sys__id__wave_8h.html#af7fb01dcd187d7ebfb5eb35005a57b59":[12,0,1,0,6,69,13,7]
 };

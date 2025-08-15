@@ -1,5 +1,6 @@
 var NAVTREEINDEX112 =
 {
+"lucas__kanade_8h.html#ae15359ddd160fcd965de33c43fa5ff7c":[12,0,1,0,6,12,1,3,10,1],
 "lucas__kanade_8h_source.html":[12,0,1,0,6,12,1,3,10],
 "mag__calib__ukf_8c.html":[12,0,1,0,6,7,0],
 "mag__calib__ukf_8c.html#a01535af7e50005fd099fe06f94865e54":[12,0,1,0,6,7,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX112 =
 "main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4":[12,0,1,0,3,5,4,9],
 "main__demo5_8c.html#af9bfeb49b8ea12c64a72e4a4fb5a6002":[12,0,1,0,3,5,4,0],
 "main__demo5_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1":[12,0,1,0,3,5,4,5],
-"main__demo5_8c_source.html":[12,0,1,0,3,5,4],
-"main__demo6_8c.html":[12,0,1,0,3,5,5]
+"main__demo5_8c_source.html":[12,0,1,0,3,5,4]
 };

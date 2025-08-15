@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"orange__avoider_8c.html#a4061206ff43dc37171197e87380ef155":[12,0,1,0,6,50,0,9],
 "orange__avoider_8c.html#a46ffc20067e7230ef526003733deb0db":[12,0,1,0,6,50,0,12],
 "orange__avoider_8c.html#a68bd327e338d1660e1e041284c910ef1":[12,0,1,0,6,50,0,5],
 "orange__avoider_8c.html#a6f129766a0e204df3a617dee55a770c7":[12,0,1,0,6,50,0,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#FUELCELL":[2,0,191],
 "paparazzi_messages.html#GEIGER_COUNTER":[2,0,148],
 "paparazzi_messages.html#GENERIC_COM":[2,0,76],
-"paparazzi_messages.html#GEO_MAG":[2,0,158],
-"paparazzi_messages.html#GET_DL_SETTING":[2,2,23]
+"paparazzi_messages.html#GEO_MAG":[2,0,158]
 };

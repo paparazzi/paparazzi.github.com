@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__gps_nps.html#module_load_example__gps_nps":[1,163,0],
 "module__gps_nps.html#module_xml__gps_nps":[1,163,1,0],
 "module__gps_optitrack.html":[1,164],
 "module__gps_optitrack.html#module_load_example__gps_optitrack":[1,164,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX130 =
 "module__imu_aspirin_v2_2.html":[1,201],
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,201,0],
 "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2":[1,201,0,0],
-"module__imu_aspirin_v2_common.html":[1,202],
-"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,202,1]
+"module__imu_aspirin_v2_common.html":[1,202]
 };

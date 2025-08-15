@@ -1,5 +1,6 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#GET_DL_SETTING":[2,2,23],
 "paparazzi_messages.html#GET_SETTING":[2,1,13],
 "paparazzi_messages.html#GOTO_MISSION":[2,1,25],
 "paparazzi_messages.html#GP2Y_STATUS":[2,0,93],
@@ -248,6 +249,5 @@ var NAVTREEINDEX167 =
 "paparazzi_messages.html#WP_MOVED":[2,0,32],
 "paparazzi_messages.html#WP_MOVED_ENU":[2,0,46],
 "paparazzi_messages.html#WP_MOVED_LLA":[2,0,44],
-"paparazzi_messages.html#WT":[2,0,170],
-"paparazzi_messages.html#XTEND_RSSI":[2,0,65]
+"paparazzi_messages.html#WT":[2,0,170]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX171 =
 {
+"pprz__polyfit__float_8h.html":[12,0,1,0,4,28],
 "pprz__polyfit__float_8h.html#abfdb5a4da651dc25d7361010d48ea2fa":[12,0,1,0,4,28,0],
 "pprz__polyfit__float_8h_source.html":[12,0,1,0,4,28],
 "pprz__random_8c.html":[12,0,1,0,4,29],
@@ -248,6 +249,5 @@ var NAVTREEINDEX171 =
 "px4__flash_2protocol_8h.html#a1de64565ccb35840d745440ae665f921":[12,0,1,0,6,54,0,46],
 "px4__flash_2protocol_8h.html#a1f872d56066eb5ffdd39396593dd20f2":[12,0,1,0,6,54,0,4],
 "px4__flash_2protocol_8h.html#a21c887f12d34a49bc69a3da8f6db529c":[12,0,1,0,6,54,0,2],
-"px4__flash_2protocol_8h.html#a26a52b45bb3c9f860019dca0fa6fd5a3":[12,0,1,0,6,54,0,48],
-"px4__flash_2protocol_8h.html#a27ee7f2b296c6e5b44cc90c1ed692f83":[12,0,1,0,6,54,0,8]
+"px4__flash_2protocol_8h.html#a26a52b45bb3c9f860019dca0fa6fd5a3":[12,0,1,0,6,54,0,48]
 };

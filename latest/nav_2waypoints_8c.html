@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('nav_2waypoints_8c.html',''); initResiz
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__random_8h_source.html">math/pprz_random.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for waypoints.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,92 +110,99 @@ $(document).ready(function(){initNavTree('nav_2waypoints_8c.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2nav_2waypoints_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2nav_2waypoints_8c" id="asw_2airborne_2modules_2nav_2waypoints_8c">
-<area shape="rect" title=" " alt="" coords="1352,5,1511,45"/>
-<area shape="rect" href="nav_2waypoints_8h.html" title=" " alt="" coords="949,93,1138,119"/>
-<area shape="poly" title=" " alt="" coords="1352,45,1114,93,1113,88,1351,40"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="641,93,707,119"/>
-<area shape="poly" title=" " alt="" coords="1352,38,721,102,721,97,1351,32"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1637,174,1847,199"/>
-<area shape="poly" title=" " alt="" coords="1466,43,1603,116,1706,166,1704,171,1601,121,1464,48"/>
-<area shape="rect" title=" " alt="" coords="1613,93,1785,119"/>
-<area shape="poly" title=" " alt="" coords="1496,43,1648,87,1647,92,1495,48"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1325,93,1538,119"/>
-<area shape="poly" title=" " alt="" coords="1434,46,1434,79,1429,79,1429,46"/>
-<area shape="rect" title=" " alt="" coords="927,401,981,427"/>
-<area shape="poly" title=" " alt="" coords="1054,118,1066,139,1077,166,1079,187,1077,207,1059,285,1045,317,1021,355,1003,377,983,395,980,391,999,373,1017,352,1040,314,1054,283,1071,206,1074,187,1071,167,1062,142,1049,120"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="737,167,888,207"/>
-<area shape="poly" title=" " alt="" coords="1011,121,882,165,880,160,1009,116"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="912,167,1063,207"/>
-<area shape="poly" title=" " alt="" coords="1037,120,1011,157,1007,154,1033,117"/>
-<area shape="poly" title=" " alt="" coords="826,205,877,278,902,301,924,326,940,357,950,387,945,389,935,359,920,330,898,305,873,282,822,209"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="887,255,1013,280"/>
-<area shape="poly" title=" " alt="" coords="847,204,919,245,916,250,844,209"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="577,255,720,280"/>
-<area shape="poly" title=" " alt="" coords="775,209,686,251,684,246,772,204"/>
-<area shape="poly" title=" " alt="" coords="655,279,671,316,684,335,701,351,753,380,811,397,866,407,913,410,913,415,866,412,810,402,751,385,698,355,680,338,666,318,650,282"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="333,328,489,353"/>
-<area shape="poly" title=" " alt="" coords="611,283,464,327,462,321,610,277"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="712,328,865,353"/>
-<area shape="poly" title=" " alt="" coords="672,278,755,319,753,324,670,282"/>
-<area shape="rect" title=" " alt="" coords="565,328,636,353"/>
-<area shape="poly" title=" " alt="" coords="643,282,618,318,614,315,639,279"/>
-<area shape="poly" title=" " alt="" coords="490,350,913,405,913,410,489,355"/>
-<area shape="rect" title=" " alt="" coords="353,401,416,427"/>
-<area shape="poly" title=" " alt="" coords="409,355,396,390,391,388,404,353"/>
+<area shape="rect" title=" " alt="" coords="1203,5,1361,45"/>
+<area shape="rect" href="nav_2waypoints_8h.html" title=" " alt="" coords="935,93,1125,119"/>
+<area shape="poly" title=" " alt="" coords="1222,48,1081,92,1079,87,1221,43"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="614,93,681,119"/>
+<area shape="poly" title=" " alt="" coords="1203,39,695,102,694,96,1202,34"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1703,174,1914,199"/>
+<area shape="poly" title=" " alt="" coords="1360,43,1435,64,1514,91,1566,116,1658,146,1743,168,1742,173,1656,151,1564,121,1512,96,1433,69,1358,48"/>
+<area shape="rect" title=" " alt="" coords="1576,93,1748,119"/>
+<area shape="poly" title=" " alt="" coords="1362,40,1594,88,1593,93,1361,46"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1287,93,1501,119"/>
+<area shape="poly" title=" " alt="" coords="1311,43,1368,83,1365,87,1308,48"/>
+<area shape="rect" href="pprz__random_8h.html" title=" " alt="" coords="1111,255,1269,280"/>
+<area shape="poly" title=" " alt="" coords="1277,46,1202,243,1197,241,1272,44"/>
+<area shape="rect" title=" " alt="" coords="829,401,884,427"/>
+<area shape="poly" title=" " alt="" coords="1037,118,1050,166,1056,223,1053,269,1037,311,1004,355,980,375,953,390,898,408,897,403,951,386,977,371,1000,352,1033,308,1048,268,1051,223,1045,167,1032,120"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="885,167,1036,207"/>
+<area shape="poly" title=" " alt="" coords="1022,121,988,158,984,155,1018,117"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="711,167,861,207"/>
+<area shape="poly" title=" " alt="" coords="995,121,858,165,857,160,994,116"/>
+<area shape="poly" title=" " alt="" coords="967,207,970,242,968,262,962,281,951,298,937,308,924,316,909,330,888,360,871,390,866,388,883,358,905,326,920,312,934,303,947,294,957,279,962,261,964,242,962,207"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="822,255,947,280"/>
+<area shape="poly" title=" " alt="" coords="944,209,908,246,904,243,940,205"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="551,255,693,280"/>
+<area shape="poly" title=" " alt="" coords="886,208,685,254,684,249,884,203"/>
+<area shape="poly" title=" " alt="" coords="642,278,828,392,825,396,639,282"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="307,328,463,353"/>
+<area shape="poly" title=" " alt="" coords="585,283,437,327,435,321,583,277"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="539,328,692,353"/>
+<area shape="poly" title=" " alt="" coords="624,281,620,315,615,314,618,280"/>
+<area shape="rect" title=" " alt="" coords="920,328,991,353"/>
+<area shape="poly" title=" " alt="" coords="676,277,907,326,906,332,675,283"/>
+<area shape="poly" title=" " alt="" coords="461,351,816,404,815,409,460,356"/>
+<area shape="rect" title=" " alt="" coords="209,401,272,427"/>
+<area shape="poly" title=" " alt="" coords="363,356,278,397,275,393,360,351"/>
 <area shape="rect" title=" " alt="" coords="5,401,76,427"/>
-<area shape="poly" title=" " alt="" coords="352,356,90,406,89,401,351,351"/>
-<area shape="rect" title=" " alt="" coords="208,401,276,427"/>
-<area shape="poly" title=" " alt="" coords="385,356,283,398,281,393,383,351"/>
-<area shape="poly" title=" " alt="" coords="816,351,916,393,913,398,814,356"/>
-<area shape="poly" title=" " alt="" coords="1005,206,1024,239,1028,260,1027,281,1017,312,1003,342,973,392,968,389,998,340,1012,310,1022,279,1023,260,1019,241,1000,208"/>
-<area shape="poly" title=" " alt="" coords="981,208,964,243,959,241,976,206"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="329,255,483,280"/>
-<area shape="poly" title=" " alt="" coords="912,207,900,209,683,240,498,260,497,255,683,234,899,204,911,202"/>
-<area shape="poly" title=" " alt="" coords="410,280,412,314,407,315,404,281"/>
-<area shape="poly" title=" " alt="" coords="329,278,273,285,217,296,170,311,153,320,141,330,137,341,141,352,167,364,220,378,340,402,339,407,218,383,165,369,137,355,131,341,137,326,150,315,168,306,216,291,272,280,328,273"/>
-<area shape="poly" title=" " alt="" coords="329,277,271,284,212,295,162,310,144,320,132,330,127,340,127,349,140,367,166,383,196,396,194,401,163,388,136,371,122,350,122,338,128,326,141,315,160,305,211,290,270,279,328,272"/>
-<area shape="rect" title=" " alt="" coords="151,328,309,353"/>
-<area shape="poly" title=" " alt="" coords="379,282,273,325,271,320,377,278"/>
-<area shape="poly" title=" " alt="" coords="680,118,698,158,727,205,764,244,799,268,836,291,878,326,938,389,934,393,875,330,832,296,796,273,761,248,723,208,693,161,676,120"/>
-<area shape="poly" title=" " alt="" coords="696,117,769,158,766,162,693,121"/>
-<area shape="poly" title=" " alt="" coords="675,119,655,241,650,240,670,118"/>
-<area shape="poly" title=" " alt="" coords="641,114,535,133,470,149,407,169,321,204,256,235,195,274,121,330,87,361,60,392,56,389,84,357,118,326,192,270,253,231,319,199,405,164,469,143,534,128,640,109"/>
-<area shape="poly" title=" " alt="" coords="708,113,899,161,898,166,707,118"/>
-<area shape="poly" title=" " alt="" coords="641,114,525,134,469,149,448,159,433,169,422,185,414,203,408,241,403,240,409,202,417,182,429,165,445,154,467,144,524,128,640,109"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="444,167,611,207"/>
-<area shape="poly" title=" " alt="" coords="654,121,576,163,573,158,651,116"/>
-<area shape="poly" title=" " alt="" coords="526,207,523,239,524,278,533,318,542,336,554,351,580,368,618,381,718,399,825,407,913,410,913,415,825,412,717,404,617,386,578,373,551,355,538,339,528,320,519,279,518,239,521,207"/>
-<area shape="poly" title=" " alt="" coords="558,205,621,245,618,249,555,209"/>
-<area shape="poly" title=" " alt="" coords="499,209,437,249,434,245,497,205"/>
-<area shape="rect" title=" " alt="" coords="2057,255,2144,280"/>
-<area shape="poly" title=" " alt="" coords="1795,197,2044,251,2043,256,1794,202"/>
-<area shape="rect" title=" " alt="" coords="2169,255,2329,280"/>
-<area shape="poly" title=" " alt="" coords="1816,197,2162,250,2161,255,1815,202"/>
-<area shape="rect" title=" " alt="" coords="1469,255,1625,280"/>
-<area shape="poly" title=" " alt="" coords="1715,202,1589,252,1587,247,1713,197"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1189,255,1393,280"/>
-<area shape="poly" title=" " alt="" coords="1677,202,1371,255,1370,250,1676,197"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1835,255,2033,280"/>
-<area shape="poly" title=" " alt="" coords="1771,197,1895,247,1893,252,1769,202"/>
-<area shape="rect" title=" " alt="" coords="1650,255,1810,280"/>
-<area shape="poly" title=" " alt="" coords="1743,200,1736,242,1731,241,1738,199"/>
-<area shape="poly" title=" " alt="" coords="1280,282,1234,318,1171,356,1125,374,1078,389,996,408,994,403,1077,384,1124,369,1169,351,1231,314,1276,278"/>
-<area shape="rect" title=" " alt="" coords="1239,328,1402,353"/>
-<area shape="poly" title=" " alt="" coords="1299,279,1313,314,1308,316,1294,281"/>
-<area shape="rect" title=" " alt="" coords="1842,328,2026,353"/>
-<area shape="poly" title=" " alt="" coords="1937,280,1937,314,1931,314,1931,280"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1427,328,1567,353"/>
-<area shape="poly" title=" " alt="" coords="1864,283,1581,328,1580,323,1863,277"/>
-<area shape="poly" title=" " alt="" coords="1427,354,1414,356,995,410,994,405,1414,351,1426,349"/>
-<area shape="rect" title=" " alt="" coords="1305,401,1480,427"/>
-<area shape="poly" title=" " alt="" coords="1481,356,1423,395,1420,391,1478,351"/>
-<area shape="rect" title=" " alt="" coords="1505,401,1697,427"/>
-<area shape="poly" title=" " alt="" coords="1515,351,1574,391,1571,395,1512,356"/>
-<area shape="poly" title=" " alt="" coords="1411,121,1309,177,1178,257,1113,306,1048,356,986,396,983,392,1044,351,1109,301,1175,252,1306,172,1408,116"/>
-<area shape="poly" title=" " alt="" coords="1477,116,1684,168,1683,173,1476,121"/>
-<area shape="poly" title=" " alt="" coords="1434,119,1439,188,1447,234,1460,279,1481,316,1477,318,1456,281,1442,235,1434,189,1429,119"/>
-<area shape="rect" title=" " alt="" coords="1469,167,1613,207"/>
-<area shape="poly" title=" " alt="" coords="1449,117,1505,156,1501,161,1446,121"/>
+<area shape="poly" title=" " alt="" coords="330,356,90,405,89,400,329,351"/>
+<area shape="rect" title=" " alt="" coords="351,401,419,427"/>
+<area shape="poly" title=" " alt="" coords="387,354,387,388,382,388,382,354"/>
+<area shape="poly" title=" " alt="" coords="655,351,817,398,815,403,653,356"/>
+<area shape="poly" title=" " alt="" coords="793,206,813,279,850,387,845,389,807,281,788,207"/>
+<area shape="poly" title=" " alt="" coords="812,205,861,244,858,248,808,209"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="302,255,457,280"/>
+<area shape="poly" title=" " alt="" coords="711,205,452,255,451,249,710,200"/>
+<area shape="poly" title=" " alt="" coords="383,280,385,314,380,315,378,281"/>
+<area shape="poly" title=" " alt="" coords="302,275,233,281,162,291,101,307,79,318,64,330,56,345,59,358,71,370,90,380,142,396,196,405,195,410,141,401,88,385,68,374,54,361,51,345,60,326,76,313,99,302,161,286,233,276,302,269"/>
+<area shape="poly" title=" " alt="" coords="353,282,329,296,307,312,294,332,293,342,296,352,316,376,342,393,339,398,313,380,292,355,288,342,289,330,303,309,326,291,350,278"/>
+<area shape="rect" title=" " alt="" coords="74,328,231,353"/>
+<area shape="poly" title=" " alt="" coords="344,283,203,326,202,321,342,277"/>
+<area shape="poly" title=" " alt="" coords="655,118,673,157,700,205,775,310,840,389,836,392,771,313,696,208,669,160,650,120"/>
+<area shape="poly" title=" " alt="" coords="682,113,873,161,871,166,680,118"/>
+<area shape="poly" title=" " alt="" coords="648,119,629,241,623,240,643,118"/>
+<area shape="poly" title=" " alt="" coords="614,115,508,134,444,150,380,169,276,198,192,220,155,234,119,256,85,287,51,329,40,358,40,388,34,387,35,357,46,327,81,283,116,252,152,230,190,215,275,193,379,164,443,145,507,129,613,110"/>
+<area shape="poly" title=" " alt="" coords="669,117,742,158,740,162,666,121"/>
+<area shape="poly" title=" " alt="" coords="614,114,498,134,442,149,421,159,407,169,395,185,387,203,382,241,376,240,382,202,390,182,403,165,418,154,440,144,497,128,613,109"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="417,167,584,207"/>
+<area shape="poly" title=" " alt="" coords="627,121,549,163,547,158,624,116"/>
+<area shape="poly" title=" " alt="" coords="500,207,497,239,498,278,507,318,516,336,528,351,548,365,577,376,656,393,742,403,815,408,815,414,742,409,655,399,576,381,545,370,524,355,511,338,502,319,493,278,492,239,495,207"/>
+<area shape="poly" title=" " alt="" coords="531,205,594,245,591,249,529,209"/>
+<area shape="poly" title=" " alt="" coords="473,209,410,249,407,245,470,205"/>
+<area shape="rect" title=" " alt="" coords="1845,255,1932,280"/>
+<area shape="poly" title=" " alt="" coords="1822,198,1869,243,1865,247,1819,201"/>
+<area shape="rect" title=" " alt="" coords="1957,255,2117,280"/>
+<area shape="poly" title=" " alt="" coords="1843,197,1991,248,1990,253,1841,202"/>
+<area shape="rect" title=" " alt="" coords="2141,255,2297,280"/>
+<area shape="poly" title=" " alt="" coords="1869,197,2147,250,2146,255,1868,202"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1344,255,1548,280"/>
+<area shape="poly" title=" " alt="" coords="1756,202,1513,254,1512,249,1755,197"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1623,255,1821,280"/>
+<area shape="poly" title=" " alt="" coords="1798,201,1747,247,1743,243,1794,198"/>
+<area shape="rect" title=" " alt="" coords="2322,255,2482,280"/>
+<area shape="poly" title=" " alt="" coords="1895,197,2309,251,2308,256,1895,202"/>
+<area shape="poly" title=" " alt="" coords="1435,282,1385,319,1352,340,1316,356,1259,374,1200,388,1082,406,977,414,898,416,898,411,977,409,1082,401,1199,383,1258,369,1314,351,1349,335,1382,315,1431,278"/>
+<area shape="rect" title=" " alt="" coords="1385,328,1547,353"/>
+<area shape="poly" title=" " alt="" coords="1452,280,1462,314,1457,316,1447,281"/>
+<area shape="rect" title=" " alt="" coords="1737,328,1921,353"/>
+<area shape="poly" title=" " alt="" coords="1741,278,1801,318,1798,323,1738,282"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1572,328,1712,353"/>
+<area shape="poly" title=" " alt="" coords="1711,282,1667,321,1663,317,1707,278"/>
+<area shape="poly" title=" " alt="" coords="1572,355,1560,356,1175,392,898,413,897,407,1175,387,1559,351,1571,349"/>
+<area shape="rect" title=" " alt="" coords="1451,401,1625,427"/>
+<area shape="poly" title=" " alt="" coords="1627,356,1568,395,1565,391,1624,351"/>
+<area shape="rect" title=" " alt="" coords="1650,401,1842,427"/>
+<area shape="poly" title=" " alt="" coords="1660,351,1719,391,1716,395,1657,356"/>
+<area shape="poly" title=" " alt="" coords="1380,121,1356,142,1334,168,1320,195,1312,220,1307,267,1304,290,1297,312,1285,334,1264,355,1235,371,1195,384,1094,401,986,411,898,414,898,409,986,405,1093,396,1194,378,1233,366,1260,351,1281,331,1293,310,1299,289,1302,266,1307,219,1315,193,1329,165,1352,138,1376,117"/>
+<area shape="poly" title=" " alt="" coords="1455,116,1735,169,1734,174,1454,121"/>
+<area shape="poly" title=" " alt="" coords="1422,116,1460,137,1501,165,1541,202,1577,243,1629,315,1625,318,1573,247,1537,206,1498,169,1458,141,1419,121"/>
+<area shape="rect" title=" " alt="" coords="1343,167,1487,207"/>
+<area shape="poly" title=" " alt="" coords="1400,118,1409,153,1404,154,1395,120"/>
+<area shape="poly" title=" " alt="" coords="1183,282,1149,319,1125,339,1099,356,1047,378,993,394,898,411,898,406,992,389,1046,373,1097,351,1122,334,1145,315,1179,279"/>
+<area shape="poly" title=" " alt="" coords="1172,282,1099,320,1052,340,1003,356,923,374,841,389,679,407,537,414,433,416,433,411,537,409,679,401,840,383,922,369,1001,351,1050,335,1097,315,1169,278"/>
+<area shape="poly" title=" " alt="" coords="1153,283,1005,327,1003,322,1152,277"/>
+<area shape="rect" title=" " alt="" coords="1167,328,1250,353"/>
+<area shape="poly" title=" " alt="" coords="1196,280,1205,314,1200,316,1191,281"/>
 </map>
 </div>
 </div>
@@ -335,16 +343,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00037">37</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00038">38</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__random_8c_source.html#l00045">rand_uniform()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00051">waypoints_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_cgraph.png" border="0" usemap="#anav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_cgraph" alt=""/></div>
+<map name="anav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_cgraph" id="anav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,136,31"/>
+<area shape="rect" href="pprz__random_8c.html#ac6450383e0b401411ff36c479aa7f608" title=" " alt="" coords="184,5,293,31"/>
+<area shape="poly" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_icgraph.png" border="0" usemap="#anav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_icgraph" id="anav_2waypoints_8c_af6a9f2948665f049b94ca46998f2bc0d_icgraph">
 <area shape="rect" title=" " alt="" coords="293,5,424,31"/>
@@ -373,7 +393,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00090">90</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00095">95</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00037">WP_FLAG_GLOBAL</a>.</p>
 
@@ -407,16 +427,16 @@ Variables</h2></td></tr>
 
 <p>copy one waypoint to another, this includes all flags from the source waypoint </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00413">413</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00418">418</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="drop__zone_8c_source.html#l00032">drop_zone_set()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a06e472d86d2a78197e9094b3329077fb_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a06e472d86d2a78197e9094b3329077fb_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a06e472d86d2a78197e9094b3329077fb_icgraph" id="anav_2waypoints_8c_a06e472d86d2a78197e9094b3329077fb_icgraph">
 <area shape="rect" title="copy one waypoint to another, this includes all flags from the source waypoint" alt="" coords="169,5,289,31"/>
@@ -445,16 +465,16 @@ Variables</h2></td></tr>
 
 <p>Get altitude of waypoint in meters (above reference) </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00113">113</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00118">118</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00294">nav_home()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a57923d444a9d09db3f6af35f74ef9296_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a57923d444a9d09db3f6af35f74ef9296_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a57923d444a9d09db3f6af35f74ef9296_icgraph" id="anav_2waypoints_8c_a57923d444a9d09db3f6af35f74ef9296_icgraph">
 <area shape="rect" title="Get altitude of waypoint in meters (above reference)" alt="" coords="256,31,391,56"/>
@@ -492,16 +512,16 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to waypoint ENU (float) coordinates, NULL if invalid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00387">387</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00392">392</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00340">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>.</p>
+<p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00345">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ctrl_2follow__me_8c_source.html#l00095">follow_me_periodic()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00263">nav_land_at_wp()</a>, <a class="el" href="nav__poles__rotorcraft_8c_source.html#l00123">nav_poles_setup_wp()</a>, <a class="el" href="nav__survey__hybrid_8c_source.html#l00365">nav_survey_hybrid_setup_orientation()</a>, <a class="el" href="nav__survey__hybrid_8c_source.html#l00383">nav_survey_hybrid_setup_towards()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00175">nav_takeoff_from_wp()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00320">NavApproaching()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00329">NavApproachingFrom()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00340">NavCircleWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00367">NavGlide()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00302">NavGotoWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00311">NavSegment()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00355">Oval()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_cgraph" id="anav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_cgraph">
 <area shape="rect" title="Get ENU coordinates (float)" alt="" coords="5,55,159,80"/>
@@ -523,11 +543,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="732,47,792,55,791,61,732,52"/>
 </map>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_icgraph" id="anav_2waypoints_8c_a6363599d8bd6bd80dcc8a5be5ccaf201_icgraph">
 <area shape="rect" title="Get ENU coordinates (float)" alt="" coords="477,319,631,344"/>
@@ -588,14 +608,14 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to waypoint ENU (integer) coordinates, NULL if invalid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00400">400</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00405">405</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00340">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00345">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a3542122687e842539a538a1850df2713_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a3542122687e842539a538a1850df2713_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a3542122687e842539a538a1850df2713_cgraph" id="anav_2waypoints_8c_a3542122687e842539a538a1850df2713_cgraph">
 <area shape="rect" title="Get ENU coordinates (integer)" alt="" coords="5,55,157,80"/>
@@ -638,16 +658,16 @@ Variables</h2></td></tr>
 
 <p>Get latitude of waypoint in deg. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00129">129</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00134">134</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00138">DEG_OF_EM7DEG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00138">DEG_OF_EM7DEG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00142">waypoint_get_lat_rad()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00147">waypoint_get_lat_rad()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_cgraph" id="anav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_cgraph">
 <area shape="rect" title="Get latitude of waypoint in deg." alt="" coords="5,80,171,105"/>
@@ -669,11 +689,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="544,77,626,98,625,103,543,83"/>
 </map>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_icgraph" id="anav_2waypoints_8c_a99eb42987dd9c48be7a9b0eb13737d79_icgraph">
 <area shape="rect" title="Get latitude of waypoint in deg." alt="" coords="216,5,381,31"/>
@@ -702,14 +722,14 @@ Variables</h2></td></tr>
 
 <p>Get latitude of waypoint in rad. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00142">142</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00147">147</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00129">waypoint_get_lat_deg()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00134">waypoint_get_lat_deg()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aff1a8c5b31bc6ee294b5f4e43b9527fb_cgraph.png" border="0" usemap="#anav_2waypoints_8c_aff1a8c5b31bc6ee294b5f4e43b9527fb_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aff1a8c5b31bc6ee294b5f4e43b9527fb_cgraph" id="anav_2waypoints_8c_aff1a8c5b31bc6ee294b5f4e43b9527fb_cgraph">
 <area shape="rect" title="Get latitude of waypoint in rad." alt="" coords="5,80,168,105"/>
@@ -762,16 +782,16 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to waypoint LLA coordinates, NULL if invalid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00374">374</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00379">379</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="datalink_2missionlib_2waypoints_8c_source.html#l00049">mavlink_send_wp()</a>, and <a class="el" href="e__identification__fr_8c_source.html#l00099">put_lat_lon_home()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_cgraph" id="anav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_cgraph">
 <area shape="rect" title="Get LLA coordinates of waypoint." alt="" coords="5,80,139,105"/>
@@ -793,11 +813,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="512,77,594,98,593,103,511,83"/>
 </map>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_icgraph" id="anav_2waypoints_8c_a3c92e53204c086a9e9104c84fe8b09ac_icgraph">
 <area shape="rect" title="Get LLA coordinates of waypoint." alt="" coords="820,46,953,71"/>
@@ -836,14 +856,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00121">121</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00126">126</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a992df6ab805be81c823d77547a12b2da_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a992df6ab805be81c823d77547a12b2da_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a992df6ab805be81c823d77547a12b2da_cgraph" id="anav_2waypoints_8c_a992df6ab805be81c823d77547a12b2da_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,163,60"/>
@@ -878,16 +898,16 @@ Variables</h2></td></tr>
 
 <p>Get longitude of waypoint in deg. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00147">147</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00152">152</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00138">DEG_OF_EM7DEG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00138">DEG_OF_EM7DEG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00160">waypoint_get_lon_rad()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00165">waypoint_get_lon_rad()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_cgraph" id="anav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_cgraph">
 <area shape="rect" title="Get longitude of waypoint in deg." alt="" coords="5,80,173,105"/>
@@ -909,11 +929,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="547,77,629,98,628,103,546,83"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_icgraph" id="anav_2waypoints_8c_a7e084d884dfa3c91233a393dcfd15b01_icgraph">
 <area shape="rect" title="Get longitude of waypoint in deg." alt="" coords="219,5,387,31"/>
@@ -942,14 +962,14 @@ Variables</h2></td></tr>
 
 <p>Get longitude of waypoint in rad. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00160">160</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00165">165</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00147">waypoint_get_lon_deg()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00152">waypoint_get_lon_deg()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a562790c04bfc9029c5ab2b62bb7fd8b0_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a562790c04bfc9029c5ab2b62bb7fd8b0_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a562790c04bfc9029c5ab2b62bb7fd8b0_cgraph" id="anav_2waypoints_8c_a562790c04bfc9029c5ab2b62bb7fd8b0_cgraph">
 <area shape="rect" title="Get longitude of waypoint in rad." alt="" coords="5,80,171,105"/>
@@ -994,16 +1014,16 @@ Variables</h2></td></tr>
 
 <p>Get X/East coordinate of waypoint in meters. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00097">97</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00102">102</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__fish_8c_source.html#l00256">distance_to_wall()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="max7456_8c_source.html#l00276">home_direction()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a62061108340141e0fda55b7c0d8f0145_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a62061108340141e0fda55b7c0d8f0145_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a62061108340141e0fda55b7c0d8f0145_icgraph" id="anav_2waypoints_8c_a62061108340141e0fda55b7c0d8f0145_icgraph">
 <area shape="rect" title="Get X/East coordinate of waypoint in meters." alt="" coords="733,136,859,161"/>
@@ -1061,16 +1081,16 @@ Variables</h2></td></tr>
 
 <p>Get Y/North coordinate of waypoint in meters. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00105">105</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00110">110</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__fish_8c_source.html#l00256">distance_to_wall()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="max7456_8c_source.html#l00276">home_direction()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_ab6dc3af2d184a91218a1fe7f02b858bc_icgraph.png" border="0" usemap="#anav_2waypoints_8c_ab6dc3af2d184a91218a1fe7f02b858bc_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_ab6dc3af2d184a91218a1fe7f02b858bc_icgraph" id="anav_2waypoints_8c_ab6dc3af2d184a91218a1fe7f02b858bc_icgraph">
 <area shape="rect" title="Get Y/North coordinate of waypoint in meters." alt="" coords="733,136,859,161"/>
@@ -1128,16 +1148,16 @@ Variables</h2></td></tr>
 
 <p>update global LLA coordinates from its ENU coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00329">329</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00334">334</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__geodetic__int_8c_source.html#l00263">ecef_of_enu_pos_i()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00363">lla_of_ecef_i()</a>, <a class="el" href="state_8h_source.html#l00199">State::ned_initialized_i</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00556">stateGetNedOrigin_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00129">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00374">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00147">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00233">waypoint_set_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00223">waypoint_set_alt_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00177">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00165">waypoint_set_enu_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00202">waypoint_set_xy_i()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00134">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00379">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00152">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00238">waypoint_set_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00228">waypoint_set_alt_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00182">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00170">waypoint_set_enu_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00207">waypoint_set_xy_i()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_cgraph" id="anav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_cgraph">
 <area shape="rect" title="update global LLA coordinates from its ENU coordinates" alt="" coords="5,55,153,80"/>
@@ -1155,11 +1175,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="331,77,413,98,412,103,330,83"/>
 </map>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_icgraph" id="anav_2waypoints_8c_a10acece8582506367e9e9df3694bf31b_icgraph">
 <area shape="rect" title="update global LLA coordinates from its ENU coordinates" alt="" coords="1132,329,1280,355"/>
@@ -1288,16 +1308,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00075">75</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00080">80</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00037">WP_FLAG_GLOBAL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="copilot__rotorcraft_8c_source.html#l00068">copilot_parse_move_wp_dl()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00400">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00129">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00374">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00147">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00310">waypoint_move_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00253">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00285">waypoint_set_here()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00298">waypoint_set_here_2d()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00357">waypoints_localize_all()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="copilot__rotorcraft_8c_source.html#l00068">copilot_parse_move_wp_dl()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00392">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00405">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00134">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00379">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00152">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00315">waypoint_move_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00258">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00290">waypoint_set_here()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00303">waypoint_set_here_2d()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00362">waypoints_localize_all()</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a4f584367219ec09db0e1df24c85e7a1b_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a4f584367219ec09db0e1df24c85e7a1b_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a4f584367219ec09db0e1df24c85e7a1b_icgraph" id="anav_2waypoints_8c_a4f584367219ec09db0e1df24c85e7a1b_icgraph">
 <area shape="rect" title=" " alt="" coords="1124,763,1271,788"/>
@@ -1410,16 +1430,16 @@ Variables</h2></td></tr>
 
 <p>update local ENU coordinates from its LLA coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00340">340</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00345">345</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00207">ENU_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00295">enu_of_lla_point_i()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="state_8h_source.html#l00199">State::ned_initialized_i</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00556">stateGetNedOrigin_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00400">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00273">waypoint_set_latlon()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00243">waypoint_set_lla()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00357">waypoints_localize_all()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00392">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00405">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00278">waypoint_set_latlon()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00248">waypoint_set_lla()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00362">waypoints_localize_all()</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af184581f432d472b608685122f2d944d_cgraph.png" border="0" usemap="#anav_2waypoints_8c_af184581f432d472b608685122f2d944d_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af184581f432d472b608685122f2d944d_cgraph" id="anav_2waypoints_8c_af184581f432d472b608685122f2d944d_cgraph">
 <area shape="rect" title="update local ENU coordinates from its LLA coordinates" alt="" coords="5,79,144,104"/>
@@ -1437,11 +1457,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="523,47,583,55,582,61,522,52"/>
 </map>
 </div>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af184581f432d472b608685122f2d944d_icgraph.png" border="0" usemap="#anav_2waypoints_8c_af184581f432d472b608685122f2d944d_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af184581f432d472b608685122f2d944d_icgraph" id="anav_2waypoints_8c_af184581f432d472b608685122f2d944d_icgraph">
 <area shape="rect" title="update local ENU coordinates from its LLA coordinates" alt="" coords="879,716,1017,741"/>
@@ -1547,16 +1567,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00189">189</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00194">194</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00165">waypoint_set_enu_i()</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00170">waypoint_set_enu_i()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="follow_8c_source.html#l00064">follow_wp()</a>, and <a class="el" href="tag__tracking_8c_source.html#l00339">update_wp()</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_cgraph.png" border="0" usemap="#anav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_cgraph" id="anav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,55,173,80"/>
@@ -1578,11 +1598,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="746,77,828,98,826,103,744,83"/>
 </map>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_icgraph.png" border="0" usemap="#anav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_icgraph" id="anav_2waypoints_8c_aa759c25e1ecc60cc27a614e366ab05a4_icgraph">
 <area shape="rect" title=" " alt="" coords="371,31,539,56"/>
@@ -1615,16 +1635,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00310">310</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00315">315</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mav__exercise_8c_source.html#l00072">mav_exercise_periodic()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00099">orange_avoider_periodic()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_cgraph.png" border="0" usemap="#anav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_cgraph" id="anav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_cgraph">
 <area shape="rect" title=" " alt="" coords="5,55,191,80"/>
@@ -1642,11 +1662,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="553,72,620,81,619,86,552,77"/>
 </map>
 </div>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_icgraph.png" border="0" usemap="#anav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_icgraph" id="anav_2waypoints_8c_aee9952d480ee0cfd47a28d4a9aeb9b61_icgraph">
 <area shape="rect" title=" " alt="" coords="236,31,421,56"/>
@@ -1685,16 +1705,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00253">253</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00258">258</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00243">waypoint_set_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00248">waypoint_set_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00121">nav_parse_MOVE_WP()</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_cgraph.png" border="0" usemap="#anav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_cgraph" id="anav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_cgraph">
 <area shape="rect" title=" " alt="" coords="5,80,155,105"/>
@@ -1728,11 +1748,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="983,134,1043,142,1042,148,982,140"/>
 </map>
 </div>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_icgraph.png" border="0" usemap="#anav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_icgraph" id="anav_2waypoints_8c_af898f624e88c626a1d47300e872ac444_icgraph">
 <area shape="rect" title=" " alt="" coords="216,5,365,31"/>
@@ -1775,16 +1795,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00214">214</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00219">219</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00202">waypoint_set_xy_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00207">waypoint_set_xy_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="cv__target__localization_8c_source.html#l00133">detection_cb()</a>, <a class="el" href="mav__exercise_8c_source.html#l00163">moveWaypoint()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00223">moveWaypoint()</a>.</p>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_cgraph" id="anav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,55,165,80"/>
@@ -1806,11 +1826,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="730,77,812,98,810,103,728,83"/>
 </map>
 </div>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_icgraph" id="anav_2waypoints_8c_a41c11ce8ceec9d5d0e4062c7040afcb5_icgraph">
 <area shape="rect" title=" " alt="" coords="624,55,784,80"/>
@@ -1861,7 +1881,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00420">420</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00425">425</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
 
@@ -1895,16 +1915,16 @@ Variables</h2></td></tr>
 
 <p>Set altitude of waypoint in meters (above reference) </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00233">233</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00238">238</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stereocam_2stereocam__follow__me_2follow__me_8c_source.html#l00062">follow_me()</a>, and <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>.</p>
-<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_cgraph.png" border="0" usemap="#anav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_cgraph" id="anav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_cgraph">
 <area shape="rect" title="Set altitude of waypoint in meters (above reference)" alt="" coords="5,55,139,80"/>
@@ -1924,11 +1944,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="512,77,594,98,593,103,511,83"/>
 </map>
 </div>
-<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_icgraph.png" border="0" usemap="#anav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_icgraph" id="anav_2waypoints_8c_af3ed05c8671f668d9b6ef54d13d9c8b7_icgraph">
 <area shape="rect" title="Set altitude of waypoint in meters (above reference)" alt="" coords="659,35,792,60"/>
@@ -1973,16 +1993,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00223">223</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00228">228</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>.</p>
-<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_cgraph.png" border="0" usemap="#anav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_cgraph" id="anav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,55,149,80"/>
@@ -2002,11 +2022,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="523,77,605,98,604,103,522,83"/>
 </map>
 </div>
-<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_icgraph.png" border="0" usemap="#anav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_icgraph" id="anav_2waypoints_8c_aecc0b78adf0a0c13f31298dc4d17b9f6_icgraph">
 <area shape="rect" title=" " alt="" coords="429,31,573,56"/>
@@ -2049,16 +2069,16 @@ Variables</h2></td></tr>
 
 <p>Set local ENU waypoint coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00177">177</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00182">182</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00199">ENU_BFP_OF_REAL</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00199">ENU_BFP_OF_REAL</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ctrl_2follow__me_8c_source.html#l00095">follow_me_periodic()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00170">follow_me_set_wp()</a>, <a class="el" href="datalink_2missionlib_2waypoints_8c_source.html#l00094">mavlink_wp_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00197">nav_takeoff_from_here()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00142">update_waypoint()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00051">waypoints_init()</a>.</p>
-<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ctrl_2follow__me_8c_source.html#l00095">follow_me_periodic()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00170">follow_me_set_wp()</a>, <a class="el" href="datalink_2missionlib_2waypoints_8c_source.html#l00094">mavlink_wp_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00197">nav_takeoff_from_here()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00142">update_waypoint()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>.</p>
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_cgraph.png" border="0" usemap="#anav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_cgraph" id="anav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_cgraph">
 <area shape="rect" title="Set local ENU waypoint coordinates." alt="" coords="5,55,145,80"/>
@@ -2078,11 +2098,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="519,77,601,98,600,103,518,83"/>
 </map>
 </div>
-<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_icgraph.png" border="0" usemap="#anav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_icgraph" id="anav_2waypoints_8c_affb3b24527cc3e5342715d567fa245dc_icgraph">
 <area shape="rect" title="Set local ENU waypoint coordinates." alt="" coords="669,169,809,195"/>
@@ -2141,16 +2161,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00165">165</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00170">170</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00207">ENU_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00207">ENU_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00039">WP_FLAG_ENU_F</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00038">WP_FLAG_ENU_I</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tag__tracking_8c_source.html#l00339">update_wp()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00189">waypoint_move_enu_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00285">waypoint_set_here()</a>.</p>
-<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="tag__tracking_8c_source.html#l00339">update_wp()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00194">waypoint_move_enu_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00290">waypoint_set_here()</a>.</p>
+<div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-37-content" class="dyncontent" style="display:none;">
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_cgraph.png" border="0" usemap="#anav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_cgraph" id="anav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,55,156,80"/>
@@ -2170,11 +2190,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="530,77,612,98,610,103,528,83"/>
 </map>
 </div>
-<div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_icgraph.png" border="0" usemap="#anav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_icgraph" id="anav_2waypoints_8c_ac19d9c02f3d8c3b69cee759560317ea4_icgraph">
 <area shape="rect" title=" " alt="" coords="587,79,737,104"/>
@@ -2212,16 +2232,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00083">83</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00088">88</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00037">WP_FLAG_GLOBAL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00051">waypoints_init()</a>.</p>
-<div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>.</p>
+<div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-39-content" class="dyncontent" style="display:none;">
+<div id="dynsection-40-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a848bd882e4fbb1177cbaec14f6381bf2_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a848bd882e4fbb1177cbaec14f6381bf2_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a848bd882e4fbb1177cbaec14f6381bf2_icgraph" id="anav_2waypoints_8c_a848bd882e4fbb1177cbaec14f6381bf2_icgraph">
 <area shape="rect" title=" " alt="" coords="293,5,480,31"/>
@@ -2252,14 +2272,14 @@ Variables</h2></td></tr>
 
 <p>set waypoint to current location and altitude </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00285">285</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00290">290</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8h_source.html#l00803">stateGetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00812">stateGetPositionLla_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00165">waypoint_set_enu_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00243">waypoint_set_lla()</a>.</p>
-<div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8h_source.html#l00803">stateGetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00812">stateGetPositionLla_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00170">waypoint_set_enu_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00248">waypoint_set_lla()</a>.</p>
+<div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div id="dynsection-41-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a6c641b78233fd2eaf42e8e9044e789e5_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a6c641b78233fd2eaf42e8e9044e789e5_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a6c641b78233fd2eaf42e8e9044e789e5_cgraph" id="anav_2waypoints_8c_a6c641b78233fd2eaf42e8e9044e789e5_cgraph">
 <area shape="rect" title="set waypoint to current location and altitude" alt="" coords="5,356,151,381"/>
@@ -2353,16 +2373,16 @@ Variables</h2></td></tr>
 
 <p>set waypoint to current horizontal location without modifying altitude </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00298">298</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00303">303</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8h_source.html#l00803">stateGetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00812">stateGetPositionLla_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00273">waypoint_set_latlon()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00202">waypoint_set_xy_i()</a>.</p>
+<p class="reference">References <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="state_8h_source.html#l00803">stateGetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00812">stateGetPositionLla_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00278">waypoint_set_latlon()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00207">waypoint_set_xy_i()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00175">nav_takeoff_from_wp()</a>.</p>
-<div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-41-content" class="dyncontent" style="display:none;">
+<div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_cgraph" id="anav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_cgraph">
 <area shape="rect" title="set waypoint to current horizontal location without modifying altitude" alt="" coords="5,356,173,381"/>
@@ -2435,11 +2455,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="574,353,662,333,663,338,576,359"/>
 </map>
 </div>
-<div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-42-content" class="dyncontent" style="display:none;">
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_icgraph" id="anav_2waypoints_8c_a28dd523c6d75fb36ce3ffec86a6e096c_icgraph">
 <area shape="rect" title="set waypoint to current horizontal location without modifying altitude" alt="" coords="216,5,384,31"/>
@@ -2478,16 +2498,16 @@ Variables</h2></td></tr>
 
 <p>set waypoint latitude/longitude without updating altitude </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00273">273</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00278">278</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00340">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00345">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00298">waypoint_set_here_2d()</a>.</p>
-<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00303">waypoint_set_here_2d()</a>.</p>
+<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_cgraph" id="anav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_cgraph">
 <area shape="rect" title="set waypoint latitude/longitude without updating altitude" alt="" coords="5,79,159,104"/>
@@ -2507,11 +2527,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="724,47,784,55,783,61,724,52"/>
 </map>
 </div>
-<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-44-content" class="dyncontent" style="display:none;">
+<div id="dynsection-45-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_icgraph" id="anav_2waypoints_8c_a8676ceec12bad6ae1a4b8e829775003e_icgraph">
 <area shape="rect" title="set waypoint latitude/longitude without updating altitude" alt="" coords="469,42,623,67"/>
@@ -2554,16 +2574,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00243">243</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00248">248</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00340">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00046">Waypoint::lla</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00345">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, and <a class="el" href="nav_2waypoints_8h_source.html#l00040">WP_FLAG_LLA_I</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="datalink_2missionlib_2waypoints_8c_source.html#l00094">mavlink_wp_message_handler()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00253">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00285">waypoint_set_here()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00051">waypoints_init()</a>.</p>
-<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="datalink_2missionlib_2waypoints_8c_source.html#l00094">mavlink_wp_message_handler()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00258">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00290">waypoint_set_here()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>.</p>
+<div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-45-content" class="dyncontent" style="display:none;">
+<div id="dynsection-46-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_cgraph.png" border="0" usemap="#anav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_cgraph" id="anav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_cgraph">
 <area shape="rect" title=" " alt="" coords="5,79,137,104"/>
@@ -2583,11 +2603,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="703,47,763,55,762,61,702,52"/>
 </map>
 </div>
-<div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-46-content" class="dyncontent" style="display:none;">
+<div id="dynsection-47-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_icgraph.png" border="0" usemap="#anav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_icgraph" id="anav_2waypoints_8c_ae5ab24779a6d54a1086c472935b21f47_icgraph">
 <area shape="rect" title=" " alt="" coords="633,95,765,121"/>
@@ -2647,16 +2667,16 @@ Variables</h2></td></tr>
 <p>Set only local XY coordinates of waypoint without update altitude. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>: how to handle global waypoints? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00202">202</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00207">207</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
+<p class="reference">References <a class="el" href="nav_2waypoints_8h_source.html#l00045">Waypoint::enu_f</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00044">Waypoint::enu_i</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>, <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00214">waypoint_move_xy_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00298">waypoint_set_here_2d()</a>.</p>
-<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>, <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00219">waypoint_move_xy_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00303">waypoint_set_here_2d()</a>.</p>
+<div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-47-content" class="dyncontent" style="display:none;">
+<div id="dynsection-48-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_cgraph" id="anav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_cgraph">
 <area shape="rect" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="5,55,148,80"/>
@@ -2676,11 +2696,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="522,77,604,98,602,103,520,83"/>
 </map>
 </div>
-<div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-48-content" class="dyncontent" style="display:none;">
+<div id="dynsection-49-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_icgraph" id="anav_2waypoints_8c_a6458406c3ff4259882fa0b93991f3c1e_icgraph">
 <area shape="rect" title="Set only local XY coordinates of waypoint without update altitude." alt="" coords="888,112,1031,137"/>
@@ -2743,16 +2763,16 @@ Variables</h2></td></tr>
 
 <p>initialize global and local waypoints </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00051">51</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00056">56</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00043">Waypoint::flags</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00037">send_wp_moved()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00177">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00083">waypoint_set_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00243">waypoint_set_lla()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>.</p>
+<p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="nav_2waypoints_8h_source.html#l00043">Waypoint::flags</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00038">send_wp_moved()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00182">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00088">waypoint_set_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00248">waypoint_set_lla()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00032">waypoints</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00070">nav_init()</a>.</p>
-<div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-50-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-49-content" class="dyncontent" style="display:none;">
+<div id="dynsection-50-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_cgraph" id="anav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_cgraph">
 <area shape="rect" title="initialize global and local waypoints" alt="" coords="5,104,123,129"/>
@@ -2766,6 +2786,8 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="119,127,205,147,204,153,118,132"/>
 <area shape="rect" href="nav_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title=" " alt="" coords="206,203,338,228"/>
 <area shape="poly" title=" " alt="" coords="82,127,121,158,172,188,194,196,192,201,170,192,118,162,78,132"/>
+<area shape="rect" href="pprz__random_8c.html#ac6450383e0b401411ff36c479aa7f608" title=" " alt="" coords="441,55,550,80"/>
+<area shape="poly" title=" " alt="" coords="338,65,427,65,427,70,338,70"/>
 <area shape="rect" href="nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="421,104,569,129"/>
 <area shape="poly" title=" " alt="" coords="343,114,407,114,407,119,343,119"/>
 <area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="623,55,766,80"/>
@@ -2795,11 +2817,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="948,220,1008,229,1007,234,948,225"/>
 </map>
 </div>
-<div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-50-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-50-content" class="dyncontent" style="display:none;">
+<div id="dynsection-51-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_icgraph" id="anav_2waypoints_8c_a8d575cfbc187cac4cae8049873821e96_icgraph">
 <area shape="rect" title="initialize global and local waypoints" alt="" coords="128,5,245,31"/>
@@ -2829,16 +2851,16 @@ Variables</h2></td></tr>
 <p>update local ENU coordinates of global waypoints </p>
 <p>update local ENU coordinates of all global waypoints </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00357">357</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00362">362</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00340">waypoint_localize()</a>.</p>
+<p class="reference">References <a class="el" href="nav_2waypoints_8c_source.html#l00031">nb_waypoint</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00345">waypoint_localize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00540">ins_ekf2_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00702">ins_ekf2_update()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00094">ins_ext_pose_init_from_flightplan()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00241">nav_reset_alt()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00234">nav_reset_reference()</a>.</p>
-<div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-51-content" class="dyncontent" style="display:none;">
+<div id="dynsection-52-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_cgraph.png" border="0" usemap="#anav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_cgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_cgraph" id="anav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_cgraph">
 <area shape="rect" title="update local ENU coordinates of global waypoints" alt="" coords="5,55,175,80"/>
@@ -2860,11 +2882,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="748,47,808,55,807,61,748,52"/>
 </map>
 </div>
-<div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-53" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-53-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-53-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-52-content" class="dyncontent" style="display:none;">
+<div id="dynsection-53-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_icgraph.png" border="0" usemap="#anav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_icgraph" alt=""/></div>
 <map name="anav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_icgraph" id="anav_2waypoints_8c_a2c2d759f6328c40f66c4cc162da266bb_icgraph">
 <area shape="rect" title="update local ENU coordinates of global waypoints" alt="" coords="409,112,579,137"/>
@@ -2900,7 +2922,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00031">31</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00037">send_wp_moved()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00090">waypoint_clear_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00413">waypoint_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00113">waypoint_get_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00400">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00129">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00374">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00121">waypoint_get_lla_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00147">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00097">waypoint_get_x()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00105">waypoint_get_y()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00189">waypoint_move_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00310">waypoint_move_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00253">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00214">waypoint_move_xy_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00420">waypoint_position_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00233">waypoint_set_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00223">waypoint_set_alt_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00177">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00165">waypoint_set_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00083">waypoint_set_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00285">waypoint_set_here()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00298">waypoint_set_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00273">waypoint_set_latlon()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00243">waypoint_set_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00202">waypoint_set_xy_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00051">waypoints_init()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00357">waypoints_localize_all()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00038">send_wp_moved()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00095">waypoint_clear_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00418">waypoint_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00118">waypoint_get_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00392">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00405">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00134">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00379">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00126">waypoint_get_lla_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00152">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00102">waypoint_get_x()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00110">waypoint_get_y()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00194">waypoint_move_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00315">waypoint_move_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00258">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00219">waypoint_move_xy_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00425">waypoint_position_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00238">waypoint_set_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00228">waypoint_set_alt_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00182">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00170">waypoint_set_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00088">waypoint_set_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00290">waypoint_set_here()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00303">waypoint_set_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00278">waypoint_set_latlon()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00248">waypoint_set_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00207">waypoint_set_xy_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00362">waypoints_localize_all()</a>.</p>
 
 </div>
 </div>
@@ -2920,7 +2942,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_2waypoints_8c_source.html#l00032">32</a> of file <a class="el" href="nav_2waypoints_8c_source.html">waypoints.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00037">send_wp_moved()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00090">waypoint_clear_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00413">waypoint_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00113">waypoint_get_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00387">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00400">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00129">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00374">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00121">waypoint_get_lla_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00147">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00097">waypoint_get_x()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00105">waypoint_get_y()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00329">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00075">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00340">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00310">waypoint_move_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00253">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00214">waypoint_move_xy_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00420">waypoint_position_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00233">waypoint_set_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00223">waypoint_set_alt_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00177">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00165">waypoint_set_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00083">waypoint_set_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00273">waypoint_set_latlon()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00243">waypoint_set_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00202">waypoint_set_xy_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00051">waypoints_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_2waypoints_8c_source.html#l00038">send_wp_moved()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00095">waypoint_clear_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00418">waypoint_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00118">waypoint_get_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00392">waypoint_get_enu_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00405">waypoint_get_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00134">waypoint_get_lat_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00379">waypoint_get_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00126">waypoint_get_lla_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00152">waypoint_get_lon_deg()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00102">waypoint_get_x()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00110">waypoint_get_y()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00334">waypoint_globalize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00345">waypoint_localize()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00315">waypoint_move_here_2d()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00258">waypoint_move_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00219">waypoint_move_xy_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00425">waypoint_position_copy()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00238">waypoint_set_alt()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00228">waypoint_set_alt_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00182">waypoint_set_enu()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00170">waypoint_set_enu_i()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00088">waypoint_set_global_flag()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00278">waypoint_set_latlon()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00248">waypoint_set_lla()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00207">waypoint_set_xy_i()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>.</p>
 
 </div>
 </div>
@@ -2930,7 +2952,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav_2waypoints_8c.html">waypoints.c</a></li>
-    <li class="footer">Generated on Fri Aug 15 2025 13:54:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 14:05:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

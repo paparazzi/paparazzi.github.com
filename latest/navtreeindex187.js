@@ -1,5 +1,6 @@
 var NAVTREEINDEX187 =
 {
+"radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16":[12,0,1,0,6,56,8,0,3],
 "radio__control_8h.html#a8fe61a8aa3f1859efec4bb06bc1134dc":[12,0,1,0,6,56,8,15],
 "radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb":[12,0,1,0,6,56,8,11],
 "radio__control_8h.html#a9dc497538fe7bfb6408a2177a28de99b":[12,0,1,0,6,56,8,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX187 =
 "rm3100_8h.html#aed197f202f7923ee526d5dff1333b41e":[12,0,1,0,7,125,4],
 "rm3100_8h.html#af03ce01c4474d95b4fe6e4f623f258ef":[12,0,1,0,7,125,0,2],
 "rm3100_8h.html#af2cbe200487fa35dea112b06c81c8769":[12,0,1,0,7,125,22],
-"rm3100_8h.html#af86b127e62b219ead6946fc32b80a5c1":[12,0,1,0,7,125,23],
-"rm3100_8h.html#structRm3100":[12,0,1,0,7,125,0]
+"rm3100_8h.html#af86b127e62b219ead6946fc32b80a5c1":[12,0,1,0,7,125,23]
 };

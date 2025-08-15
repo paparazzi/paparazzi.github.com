@@ -1020,7 +1020,7 @@ var searchData=
   ['dw1000_5ftimeout_1017',['DW1000_TIMEOUT',['../dw1000__arduino_8c.html#a4a60cbfa5519c4799239108e6c35c3a8',1,'dw1000_arduino.c']]],
   ['dw1000_5fuse_5fas_5fgps_1018',['DW1000_USE_AS_GPS',['../dw1000__arduino_8c.html#a57bbb06e788001d8b3481a2451be1642',1,'dw1000_arduino.c']]],
   ['dw1000_5fuse_5fas_5flocal_5fpos_1019',['DW1000_USE_AS_LOCAL_POS',['../dw1000__arduino_8c.html#a9a99d044574819defa8aeede4176a356',1,'dw1000_arduino.c']]],
-  ['dw1000_5fuse_5fekf_1020',['dw1000_use_ekf',['../dw1000__arduino_8c.html#a37cdd8c98109e6f3af0664ffd9041e19',1,'dw1000_use_ekf:&#160;dw1000_arduino.c'],['../dw1000__arduino_8h.html#a37cdd8c98109e6f3af0664ffd9041e19',1,'dw1000_use_ekf:&#160;dw1000_arduino.c'],['../dw1000__arduino_8c.html#ab0e90bacd19086fb47cf523e18514346',1,'DW1000_USE_EKF:&#160;dw1000_arduino.c']]],
+  ['dw1000_5fuse_5fekf_1020',['dw1000_use_ekf',['../dw1000__arduino_8h.html#a37cdd8c98109e6f3af0664ffd9041e19',1,'dw1000_use_ekf:&#160;dw1000_arduino.c'],['../dw1000__arduino_8c.html#ab0e90bacd19086fb47cf523e18514346',1,'DW1000_USE_EKF:&#160;dw1000_arduino.c'],['../dw1000__arduino_8c.html#a37cdd8c98109e6f3af0664ffd9041e19',1,'dw1000_use_ekf:&#160;dw1000_arduino.c']]],
   ['dw1000_5fvel_5fnoise_5fx_1021',['DW1000_VEL_NOISE_X',['../dw1000__arduino_8c.html#a6e18e05bd034cd193f37ba3986b0d09f',1,'dw1000_arduino.c']]],
   ['dw1000_5fvel_5fnoise_5fy_1022',['DW1000_VEL_NOISE_Y',['../dw1000__arduino_8c.html#afae3eacc11602b866a622a1aa47b84ac',1,'dw1000_arduino.c']]],
   ['dw1000_5fvel_5fnoise_5fz_1023',['DW1000_VEL_NOISE_Z',['../dw1000__arduino_8c.html#a07c34d5cab21b804a3d79afbcf8e7acc',1,'dw1000_arduino.c']]],
