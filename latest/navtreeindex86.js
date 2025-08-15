@@ -1,5 +1,11 @@
 var NAVTREEINDEX86 =
 {
+"imu__mpu6000_8c.html#adeded9c36c67ea0bb8d9711c9992dea0":[12,0,1,0,6,36,24,9],
+"imu__mpu6000_8c.html#ae2a24b4ddc832d0f2111b384e0ff722e":[12,0,1,0,6,36,24,7],
+"imu__mpu6000_8c.html#ae2feb7343d2916d4ac7950010ef0018f":[12,0,1,0,6,36,24,3],
+"imu__mpu6000_8c_source.html":[12,0,1,0,6,36,24],
+"imu__mpu6000_8h.html":[12,0,1,0,6,36,25],
+"imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4":[12,0,1,0,6,36,25,6],
 "imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289":[12,0,1,0,6,36,25,0,0],
 "imu__mpu6000_8h.html#a26e4ccd24281fa404cf1959858ca10bf":[12,0,1,0,6,36,25,2],
 "imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0":[12,0,1,0,6,36,25,5],
@@ -121,8 +127,8 @@ var NAVTREEINDEX86 =
 "imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,35,5],
 "imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005":[12,0,1,0,6,36,33,0,3],
 "imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005":[12,0,1,0,6,36,35,0,3],
-"imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,33,0,0],
+"imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,33,0,5],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,35,0,5],
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,33,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX86 =
 "imu__temp__ctrl_8h_source.html":[12,0,1,0,6,37,5],
 "imu__vectornav_8c.html":[12,0,1,0,6,36,44],
 "imu__vectornav_8c.html#a005b7bf0a6505e1d8f3192520c3048b7":[12,0,1,0,6,36,44,1],
-"imu__vectornav_8c.html#a0bfcb922f5c1a64dde22695f3642cef2":[12,0,1,0,6,36,44,0],
-"imu__vectornav_8c.html#a23c30cbf8678af476ddd962a2b44b810":[12,0,1,0,6,36,44,5],
-"imu__vectornav_8c.html#a9dcd8b708291a935a7c7e705f8c87149":[12,0,1,0,6,36,44,2],
-"imu__vectornav_8c.html#aa773e594a6e95f3ca4aad637b7fc546c":[12,0,1,0,6,36,44,3],
-"imu__vectornav_8c.html#acf9e77d2ea5dca2b0ecbb660edc513c4":[12,0,1,0,6,36,44,4],
-"imu__vectornav_8c_source.html":[12,0,1,0,6,36,44],
-"imu__vectornav_8h.html":[12,0,1,0,6,36,45]
+"imu__vectornav_8c.html#a0bfcb922f5c1a64dde22695f3642cef2":[12,0,1,0,6,36,44,0]
 };

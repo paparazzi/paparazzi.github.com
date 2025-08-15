@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('circular__buffer_8c_source.html',''); 
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_typedef" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *start = cb-&gt;<a class="code hl_variable" href="circular__buffer_8h.html#a6655f499bdee751f968bd1b1269cc4ac">_buf</a> + cb-&gt;<a class="code hl_variable" href="circular__buffer_8h.html#abf61cab1efcae14df6f91e1e4b8c3564">read_offset</a> + 2;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">end_offset</a> &gt; cb-&gt;<a class="code hl_variable" href="circular__buffer_8h.html#abf61cab1efcae14df6f91e1e4b8c3564">read_offset</a> + 2) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">end_offset</a> &gt;= cb-&gt;<a class="code hl_variable" href="circular__buffer_8h.html#abf61cab1efcae14df6f91e1e4b8c3564">read_offset</a> + 2) {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(buf, start, *<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">msg_len_p</a>);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">len1</a> = cb-&gt;<a class="code hl_variable" href="circular__buffer_8h.html#abd75bb052f9db74f1ef765086dc408db">_buf_len</a> - (cb-&gt;<a class="code hl_variable" href="circular__buffer_8h.html#abf61cab1efcae14df6f91e1e4b8c3564">read_offset</a> + 2);</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('circular__buffer_8c_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_644c3112dbb29d6147750c842d63ff9c.html">utils</a></li><li class="navelem"><a class="el" href="circular__buffer_8c.html">circular_buffer.c</a></li>
-    <li class="footer">Generated on Fri Aug 15 2025 13:35:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 13:54:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

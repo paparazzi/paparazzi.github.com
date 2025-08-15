@@ -1,5 +1,11 @@
 var NAVTREEINDEX80 =
 {
+"holybro_2kakute__f7_2board_8h.html#aecfdd99b05d2786b18bc73c03d477d91":[12,0,1,0,1,9,0,0,115],
+"holybro_2kakute__f7_2board_8h.html#aef78bef9a4bf5706fd80120e36944f04":[12,0,1,0,1,9,0,0,364],
+"holybro_2kakute__f7_2board_8h.html#af12a289bc3044c0f1e5532a584a23ee7":[12,0,1,0,1,9,0,0,298],
+"holybro_2kakute__f7_2board_8h.html#af258f0d872991b9a1d8a1292440fb8a8":[12,0,1,0,1,9,0,0,209],
+"holybro_2kakute__f7_2board_8h.html#af263c759702e327cc88473817ba0292e":[12,0,1,0,1,9,0,0,145],
+"holybro_2kakute__f7_2board_8h.html#af30378ce859f84c1ba6d81b6bacbb8c5":[12,0,1,0,1,9,0,0,113],
 "holybro_2kakute__f7_2board_8h.html#af405d486ccb51c99a1252dfa4495363b":[12,0,1,0,1,9,0,0,384],
 "holybro_2kakute__f7_2board_8h.html#af492779bf051f349f9235bf1d7a91e52":[12,0,1,0,1,9,0,0,273],
 "holybro_2kakute__f7_2board_8h.html#af4fe7f62544dd25f13a17ed83690c28f":[12,0,1,0,1,9,0,0,130],
@@ -243,11 +249,5 @@ var NAVTREEINDEX80 =
 "holybro_2kakute__f7_2mcuconf__board_8h.html#a9d125141e8f301e2b6d590067fd7890e":[12,0,1,0,1,9,0,2,94],
 "holybro_2kakute__f7_2mcuconf__board_8h.html#a9d2286ff5fc5fdf03b469795a704619e":[12,0,1,0,1,9,0,2,103],
 "holybro_2kakute__f7_2mcuconf__board_8h.html#a9f72e7206a6300a9d86bccf73f85279a":[12,0,1,0,1,9,0,2,231],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa2179285dbf70d5d5a370c3353737813":[12,0,1,0,1,9,0,2,154],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa2b58d4e2c9e019ecd077794231a0a17":[12,0,1,0,1,9,0,2,39],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa2f70df5cf087cd6960d96a88fa9a8dc":[12,0,1,0,1,9,0,2,33],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa499e5a7c6352b58178e0651483d88ee":[12,0,1,0,1,9,0,2,234],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa4d0e9ccef7e158022e3a468e0c5b2ad":[12,0,1,0,1,9,0,2,262],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa4ecf8f03432b8aabf2f96ca370310d6":[12,0,1,0,1,9,0,2,193],
-"holybro_2kakute__f7_2mcuconf__board_8h.html#aa6385bafac509e5ef0926a722fc54adb":[12,0,1,0,1,9,0,2,157]
+"holybro_2kakute__f7_2mcuconf__board_8h.html#aa2179285dbf70d5d5a370c3353737813":[12,0,1,0,1,9,0,2,154]
 };

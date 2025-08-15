@@ -835,50 +835,55 @@ $(document).ready(function(){initNavTree('common__board_8h_source.html',''); ini
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="preprocessor">#define SPI_SELECT_SLAVE8_PIN   PAL_PAD(LINE_SPI_SLAVE8)</span></div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="comment">// #if defined(LINE_SDIO_D0) &amp;&amp; defined(LINE_SDIO_D1) &amp;&amp; defined(LINE_SDIO_D2) &amp;&amp; defined(LINE_SDIO_D3) &amp;&amp; defined(LINE_SDIO_CK) &amp;&amp; defined(LINE_SDIO_CMD)</span></div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="comment">// #define SDIO_D0_PORT    PAL_PORT(LINE_SDIO_D0)</span></div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="comment">// #define SDIO_D0_PIN     PAL_PAD(LINE_SDIO_D0)</span></div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="comment">// #define SDIO_D1_PORT    PAL_PORT(LINE_SDIO_D1)</span></div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="comment">// #define SDIO_D1_PIN     PAL_PAD(LINE_SDIO_D1)</span></div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="comment">// #define SDIO_D2_PORT    PAL_PORT(LINE_SDIO_D2)</span></div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="comment">// #define SDIO_D2_PIN     PAL_PAD(LINE_SDIO_D2)</span></div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="comment">// #define SDIO_D3_PORT    PAL_PORT(LINE_SDIO_D3)</span></div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="comment">// #define SDIO_D3_PIN     PAL_PAD(LINE_SDIO_D3)</span></div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="comment">// #define SDIO_CK_PORT    PAL_PORT(LINE_SDIO_CK)</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="comment">// #define SDIO_CK_PIN     PAL_PAD(LINE_SDIO_CK)</span></div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="comment">// #define SDIO_CMD_PORT   PAL_PORT(LINE_SDIO_CMD)</span></div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="comment">// #define SDIO_CMD_PIN    PAL_PAD(LINE_SDIO_CMD)</span></div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="comment">// #if defined(AF_LINE_SDIO_CMD)</span></div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="comment">// #define SDIO_AF   AF_LINE_SDIO_CMD</span></div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="comment">// #else</span></div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="comment">// #define SDIO_AF   ((void)0)</span></div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="comment">// #endif</span></div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="comment">// #endif</span></div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span> </div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="preprocessor">#if defined(LINE_USB_VBUS)</span></div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="preprocessor">#define SDLOG_USB_VBUS_PORT   PAL_PORT(LINE_USB_VBUS)</span></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="preprocessor">#define SDLOG_USB_VBUS_PIN    PAL_PAD(LINE_USB_VBUS)</span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="preprocessor">#define SDLOG_USB_VBUS_BOOT   false</span></div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno"><a class="line" href="common__board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  790</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno"><a class="line" href="common__board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">  791</a></span><span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno"><a class="line" href="common__board_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  792</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno"><a class="line" href="common__board_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  793</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="preprocessor">#endif </span><span class="comment">/* ARCH_COMMON_BOARD_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">#if defined(LINE_SPI_SLAVE9)</span></div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span><span class="preprocessor">#define SPI_SELECT_SLAVE9_PORT  PAL_PORT(LINE_SPI_SLAVE9)</span></div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">#define SPI_SELECT_SLAVE9_PIN   PAL_PAD(LINE_SPI_SLAVE9)</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span> </div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="comment">// #if defined(LINE_SDIO_D0) &amp;&amp; defined(LINE_SDIO_D1) &amp;&amp; defined(LINE_SDIO_D2) &amp;&amp; defined(LINE_SDIO_D3) &amp;&amp; defined(LINE_SDIO_CK) &amp;&amp; defined(LINE_SDIO_CMD)</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="comment">// #define SDIO_D0_PORT    PAL_PORT(LINE_SDIO_D0)</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="comment">// #define SDIO_D0_PIN     PAL_PAD(LINE_SDIO_D0)</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="comment">// #define SDIO_D1_PORT    PAL_PORT(LINE_SDIO_D1)</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="comment">// #define SDIO_D1_PIN     PAL_PAD(LINE_SDIO_D1)</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="comment">// #define SDIO_D2_PORT    PAL_PORT(LINE_SDIO_D2)</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="comment">// #define SDIO_D2_PIN     PAL_PAD(LINE_SDIO_D2)</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="comment">// #define SDIO_D3_PORT    PAL_PORT(LINE_SDIO_D3)</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="comment">// #define SDIO_D3_PIN     PAL_PAD(LINE_SDIO_D3)</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="comment">// #define SDIO_CK_PORT    PAL_PORT(LINE_SDIO_CK)</span></div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="comment">// #define SDIO_CK_PIN     PAL_PAD(LINE_SDIO_CK)</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="comment">// #define SDIO_CMD_PORT   PAL_PORT(LINE_SDIO_CMD)</span></div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="comment">// #define SDIO_CMD_PIN    PAL_PAD(LINE_SDIO_CMD)</span></div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="comment">// #if defined(AF_LINE_SDIO_CMD)</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="comment">// #define SDIO_AF   AF_LINE_SDIO_CMD</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="comment">// #else</span></div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="comment">// #define SDIO_AF   ((void)0)</span></div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="comment">// #endif</span></div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="comment">// #endif</span></div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="preprocessor">#if defined(LINE_USB_VBUS)</span></div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="preprocessor">#define SDLOG_USB_VBUS_PORT   PAL_PORT(LINE_USB_VBUS)</span></div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="preprocessor">#define SDLOG_USB_VBUS_PIN    PAL_PAD(LINE_USB_VBUS)</span></div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="preprocessor">#define SDLOG_USB_VBUS_BOOT   false</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span><span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno"><a class="line" href="common__board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  795</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno"><a class="line" href="common__board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">  796</a></span><span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno"><a class="line" href="common__board_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  797</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno"><a class="line" href="common__board_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  798</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span> </div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span><span class="preprocessor">#endif </span><span class="comment">/* ARCH_COMMON_BOARD_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="common__board_8h.html">common_board.h</a></li>
-    <li class="footer">Generated on Fri Aug 15 2025 13:35:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 13:54:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -94,12 +94,14 @@ $(document).ready(function(){initNavTree('module__mag_rm3100.html',''); initResi
   <div class="headertitle"><div class="title">mag_rm3100 module</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>PNI RM3100 magnetometer.</b></p>
+<div class="textblock"><p><b>PNI RM3100 3-axis magnetometer sensor.</b></p>
 <p><b></b></p>
 <p>I2C interface.</p>
 <h1><a class="anchor" id="module_load_example__mag_rm3100"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mag_rm3100&quot;</span>&gt;</div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;RM3100_ADDR&quot; value=&quot;RM3100_ADDR3&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;RM3100_DATA_RATE&quot; value=&quot;RM3100_RATE_150&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;MODULE_RM3100_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;MODULE_RM3100_UPDATE_AHRS&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;RM3100_CHAN_X_SIGN&quot; value=&quot;+|-&quot; /&gt;\n    &#39;</span></div>
@@ -121,6 +123,10 @@ Configure Options</h2>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
+<li><b>name:</b> <code>RM3100_ADDR</code> <b>value:</b> <em>RM3100_ADDR3</em> <br  />
+ Description: To set the address of the sensor to one of four possible values (default: RM3100_ADDR0)</li>
+<li><b>name:</b> <code>RM3100_DATA_RATE</code> <b>value:</b> <em>RM3100_RATE_150</em> <br  />
+ Description: Continuous conversion data rate</li>
 <li><b>name:</b> <code>MODULE_RM3100_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
  Description: Send IMU_RAW message with each new measurement (default: FALSE)</li>
 <li><b>name:</b> <code>MODULE_RM3100_UPDATE_AHRS</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
@@ -148,8 +154,6 @@ Airframe file section</h2>
  Description: Rotation between sensor frame and IMU frame (theta angle)</li>
 <li><b>name</b> <code>MAG_TO_IMU_PSI</code> <b>value:</b> <em>0.0</em> <br  />
  Description: Rotation between sensor frame and IMU frame (psi angle)</li>
-<li><b>name</b> <code>DATA_RATE</code> <b>value:</b> <em>RM3100_RATE_150</em> <br  />
- Description: Continuous conversion data rate</li>
 </ul>
 </li>
 </ul>
@@ -205,10 +209,12 @@ Raw mag_rm3100.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mag_rm3100&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;sensors&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;sensors&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">PNI</span> <span class="keyword">RM3100</span> <span class="keyword">magnetometer.</span></div>
+<div class="line">      <span class="keyword">PNI</span> <span class="keyword">RM3100</span> 3-<span class="keyword">axis</span> <span class="keyword">magnetometer</span> <span class="keyword">sensor.</span></div>
 <div class="line">      <span class="keyword">I2C</span> <span class="keyword">interface.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAG_RM3100_I2C_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;i2cX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;I2C device to use&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RM3100_ADDR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;RM3100_ADDR3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;To set the address of the sensor to one of four possible values (default: RM3100_ADDR0)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RM3100_DATA_RATE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;RM3100_RATE_150&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Continuous conversion data rate&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODULE_RM3100_SYNC_SEND&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send IMU_RAW message with each new measurement (default: FALSE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODULE_RM3100_UPDATE_AHRS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Copy measurements to imu and send as ABI message (default: FALSE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RM3100_CHAN_X_SIGN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;+|-&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Reverse polarity of x axis (default: +)&quot;</span>/&gt;</div>
@@ -221,7 +227,6 @@ Raw mag_rm3100.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAG_TO_IMU_PHI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation between sensor frame and IMU frame (phi angle)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAG_TO_IMU_THETA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation between sensor frame and IMU frame (theta angle)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAG_TO_IMU_PSI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation between sensor frame and IMU frame (psi angle)&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DATA_RATE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;RM3100_RATE_150&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Continuous conversion data rate&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
@@ -264,7 +269,7 @@ Raw mag_rm3100.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Aug 15 2025 13:36:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 13:54:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

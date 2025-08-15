@@ -10,5 +10,6 @@ var uavcan_8c =
     [ "uavcan_init", "uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7", null ],
     [ "uavcan_tx", "uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d", null ],
     [ "uavcanInitIface", "uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e", null ],
+    [ "msg_payload", "uavcan_8c.html#a26b71398b386fb47e6b6a959863f1c4f", null ],
     [ "uavcan_event_hd", "uavcan_8c.html#a974a05628c3d66a957498d8148b6f0d8", null ]
 ];

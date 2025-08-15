@@ -121,13 +121,17 @@ $(document).ready(function(){initNavTree('circular__buffer_8h.html',''); initRes
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2utils_2circular__buffer_8hdep" alt=""/></div>
 <map name="asw_2airborne_2utils_2circular__buffer_8hdep" id="asw_2airborne_2utils_2circular__buffer_8hdep">
-<area shape="rect" title=" " alt="" coords="91,5,273,45"/>
-<area shape="rect" href="actuators__sts3032_8h.html" title=" " alt="" coords="5,93,164,148"/>
-<area shape="poly" title=" " alt="" coords="154,57,114,95,110,91,151,53"/>
-<area shape="rect" href="circular__buffer_8c.html" title=" " alt="" coords="188,101,371,141"/>
-<area shape="poly" title=" " alt="" coords="213,53,262,99,258,103,210,57"/>
-<area shape="rect" href="actuators__sts3032_8c.html" title=" " alt="" coords="5,196,164,251"/>
-<area shape="poly" title=" " alt="" coords="87,162,87,196,82,196,82,162"/>
+<area shape="rect" title=" " alt="" coords="213,5,396,45"/>
+<area shape="rect" href="chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="5,101,201,141"/>
+<area shape="poly" title=" " alt="" coords="253,54,145,103,143,98,250,49"/>
+<area shape="rect" href="actuators__sts3032_8h.html" title=" " alt="" coords="225,93,384,148"/>
+<area shape="poly" title=" " alt="" coords="307,59,307,93,302,93,302,59"/>
+<area shape="rect" href="circular__buffer_8c.html" title=" " alt="" coords="408,101,591,141"/>
+<area shape="poly" title=" " alt="" coords="358,49,461,98,459,103,355,54"/>
+<area shape="rect" href="uavcan_8c.html" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="6,203,201,243"/>
+<area shape="poly" title=" " alt="" coords="106,155,106,203,101,203,101,155"/>
+<area shape="rect" href="actuators__sts3032_8c.html" title=" " alt="" coords="225,196,384,251"/>
+<area shape="poly" title=" " alt="" coords="307,162,307,196,302,196,302,162"/>
 </map>
 </div>
 </div>
@@ -260,6 +264,24 @@ write_offset</td>
 
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00265">uavcan_broadcast()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="circular__buffer_8h_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph.png" border="0" usemap="#acircular__buffer_8h_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph" alt=""/></div>
+<map name="acircular__buffer_8h_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph" id="acircular__buffer_8h_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph">
+<area shape="rect" title="Drop last inserted record." alt="" coords="436,42,587,67"/>
+<area shape="rect" href="uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="248,42,388,67"/>
+<area shape="poly" title=" " alt="" coords="422,57,388,57,388,52,422,52"/>
+<area shape="rect" href="actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="17,5,189,45"/>
+<area shape="poly" title=" " alt="" coords="234,46,188,40,189,34,235,41"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a4f2b07629c6392c8019dfc9123fb4684" title="Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND)" alt="" coords="5,70,200,95"/>
+<area shape="poly" title=" " alt="" coords="235,68,200,73,200,67,234,63"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ada8982b8b7d8702088a3a4f9de128ee0" name="ada8982b8b7d8702088a3a4f9de128ee0"></a>
@@ -309,19 +331,25 @@ write_offset</td>
 
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00032">CIR_ERROR_BUFFER_TOO_SMALL</a>, <a class="el" href="circular__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00125">sts3032_event()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00125">sts3032_event()</a>, and <a class="el" href="uavcan_8c_source.html#l00114">uavcan_tx()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8h_ada8982b8b7d8702088a3a4f9de128ee0_icgraph.png" border="0" usemap="#acircular__buffer_8h_ada8982b8b7d8702088a3a4f9de128ee0_icgraph" alt=""/></div>
 <map name="acircular__buffer_8h_ada8982b8b7d8702088a3a4f9de128ee0_icgraph" id="acircular__buffer_8h_ada8982b8b7d8702088a3a4f9de128ee0_icgraph">
-<area shape="rect" title="copy the next buffer available in cb to buf." alt="" coords="404,5,547,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="239,5,356,31"/>
-<area shape="poly" title=" " alt="" coords="390,21,356,21,356,15,390,15"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="5,5,191,31"/>
-<area shape="poly" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="rect" title="copy the next buffer available in cb to buf." alt="" coords="549,31,692,56"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="384,5,501,31"/>
+<area shape="poly" title=" " alt="" coords="535,34,501,29,502,24,536,29"/>
+<area shape="rect" href="uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d" title=" " alt="" coords="398,55,487,80"/>
+<area shape="poly" title=" " alt="" coords="536,57,488,64,487,59,535,52"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="151,5,336,31"/>
+<area shape="poly" title=" " alt="" coords="370,21,336,21,336,15,370,15"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="182,55,305,80"/>
+<area shape="poly" title=" " alt="" coords="384,70,305,70,305,65,384,65"/>
+<area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="5,55,103,80"/>
+<area shape="poly" title=" " alt="" coords="168,70,103,70,103,65,168,65"/>
 </map>
 </div>
 
@@ -373,17 +401,21 @@ write_offset</td>
 
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00088">actuators_sts3032_init()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00088">actuators_sts3032_init()</a>, and <a class="el" href="uavcan_8c_source.html#l00211">uavcanInitIface()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8h_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph.png" border="0" usemap="#acircular__buffer_8h_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph" alt=""/></div>
 <map name="acircular__buffer_8h_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph" id="acircular__buffer_8h_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph">
-<area shape="rect" title="initialize a circular buffer." alt="" coords="223,5,365,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a25fb0bac58c18fdeb203799b731abd10" title=" " alt="" coords="5,5,175,31"/>
-<area shape="poly" title=" " alt="" coords="209,21,175,21,175,15,209,15"/>
+<area shape="rect" title="initialize a circular buffer." alt="" coords="368,31,511,56"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a25fb0bac58c18fdeb203799b731abd10" title=" " alt="" coords="151,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="354,35,320,31,321,26,354,30"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="174,55,297,80"/>
+<area shape="poly" title=" " alt="" coords="354,56,297,63,296,58,353,51"/>
+<area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="5,55,103,80"/>
+<area shape="poly" title=" " alt="" coords="160,70,103,70,103,65,160,65"/>
 </map>
 </div>
 
@@ -437,41 +469,47 @@ write_offset</td>
 
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00033">CIR_ERROR_NO_SPACE_AVAILABLE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00292">write_buf()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00265">uavcan_broadcast()</a>, and <a class="el" href="actuators__sts3032_8c_source.html#l00292">write_buf()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph.png" border="0" usemap="#acircular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph" alt=""/></div>
 <map name="acircular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph" id="acircular__buffer_8h_a26f5138bb7bb7f83cac5ee129fe01352_icgraph">
-<area shape="rect" title="Copy buf in the circular buffer." alt="" coords="840,129,983,155"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="709,129,792,155"/>
-<area shape="poly" title=" " alt="" coords="826,145,792,145,792,139,826,139"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="488,5,661,31"/>
-<area shape="poly" title=" " alt="" coords="732,119,701,80,682,61,660,44,637,33,639,28,663,40,685,57,705,77,736,116"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="493,55,657,80"/>
-<area shape="poly" title=" " alt="" coords="718,124,660,94,628,83,630,78,662,89,720,120"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="499,104,650,129"/>
-<area shape="poly" title=" " alt="" coords="695,137,650,130,650,125,696,132"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="515,153,634,179"/>
-<area shape="poly" title=" " alt="" coords="696,152,635,161,634,155,695,147"/>
-<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="491,203,658,243"/>
-<area shape="poly" title=" " alt="" coords="718,164,662,194,634,206,632,201,660,189,716,159"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="503,268,646,293"/>
-<area shape="poly" title=" " alt="" coords="739,168,708,214,687,237,663,258,638,270,635,266,660,253,683,234,704,210,734,165"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,39,434,79"/>
-<area shape="poly" title=" " alt="" coords="479,67,434,65,434,60,479,61"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,104,416,129"/>
-<area shape="poly" title=" " alt="" coords="486,119,416,119,416,114,486,114"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,104,205,129"/>
-<area shape="poly" title=" " alt="" coords="263,119,206,119,206,114,263,114"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,153,440,179"/>
-<area shape="poly" title=" " alt="" coords="502,169,440,169,440,163,502,163"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,203,431,243"/>
-<area shape="poly" title=" " alt="" coords="477,226,431,226,431,221,477,221"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,268,439,293"/>
-<area shape="poly" title=" " alt="" coords="490,283,440,283,440,278,490,278"/>
+<area shape="rect" title="Copy buf in the circular buffer." alt="" coords="919,145,1061,170"/>
+<area shape="rect" href="uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="731,70,871,95"/>
+<area shape="poly" title=" " alt="" coords="943,142,833,98,835,93,945,137"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="759,218,842,243"/>
+<area shape="poly" title=" " alt="" coords="944,178,836,220,834,215,942,173"/>
+<area shape="rect" href="actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="499,5,671,45"/>
+<area shape="poly" title=" " alt="" coords="738,69,660,48,662,43,740,64"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a4f2b07629c6392c8019dfc9123fb4684" title="Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND)" alt="" coords="488,70,683,95"/>
+<area shape="poly" title=" " alt="" coords="717,85,683,85,683,80,717,80"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="499,119,672,145"/>
+<area shape="poly" title=" " alt="" coords="771,212,730,184,682,158,649,147,651,142,684,154,733,180,774,208"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="503,169,667,194"/>
+<area shape="poly" title=" " alt="" coords="746,221,641,197,642,191,747,216"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="510,218,661,243"/>
+<area shape="poly" title=" " alt="" coords="746,233,661,233,661,228,746,228"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="526,267,645,293"/>
+<area shape="poly" title=" " alt="" coords="747,246,642,270,641,265,746,240"/>
+<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="502,317,669,357"/>
+<area shape="poly" title=" " alt="" coords="773,254,732,281,684,308,655,320,653,315,682,303,729,276,770,249"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="514,382,657,407"/>
+<area shape="poly" title=" " alt="" coords="788,257,746,315,717,346,684,372,657,384,655,379,681,367,714,342,742,311,783,254"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,153,434,193"/>
+<area shape="poly" title=" " alt="" coords="489,181,434,179,434,174,489,175"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,218,416,243"/>
+<area shape="poly" title=" " alt="" coords="496,233,416,233,416,228,496,228"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,218,205,243"/>
+<area shape="poly" title=" " alt="" coords="263,233,206,233,206,228,263,228"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,267,440,293"/>
+<area shape="poly" title=" " alt="" coords="512,283,440,283,440,277,512,277"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,317,431,357"/>
+<area shape="poly" title=" " alt="" coords="488,340,431,340,431,335,488,335"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,382,439,407"/>
+<area shape="poly" title=" " alt="" coords="500,397,439,397,439,392,500,392"/>
 </map>
 </div>
 
@@ -483,7 +521,7 @@ write_offset</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_644c3112dbb29d6147750c842d63ff9c.html">utils</a></li><li class="navelem"><a class="el" href="circular__buffer_8h.html">circular_buffer.h</a></li>
-    <li class="footer">Generated on Fri Aug 15 2025 13:36:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 13:54:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

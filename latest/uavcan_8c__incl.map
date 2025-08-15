@@ -1,27 +1,31 @@
 <map id="sw/airborne/arch/chibios/modules/uavcan/uavcan.c" name="sw/airborne/arch/chibios/modules/uavcan/uavcan.c">
-<area shape="rect" id="Node000001" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="213,5,407,45"/>
-<area shape="rect" id="Node000002" href="$chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="191,93,272,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,47,255,85,251,82,289,44"/>
-<area shape="rect" id="Node000005" href="$can_8h.html" title=" " alt="" coords="203,167,340,192"/>
-<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="308,46,280,154,275,153,303,45"/>
-<area shape="rect" id="Node000008" href="$threads_8h.html" title=" " alt="" coords="395,167,569,192"/>
-<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="333,44,460,155,457,159,330,48"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,167,84,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="202,121,89,164,87,159,200,116"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="108,167,179,192"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,121,170,160,167,156,216,117"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="240,118,260,153,256,156,236,120"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="272,116,429,160,427,165,271,121"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="91,247,145,273"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="250,195,154,243,152,239,247,190"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="169,247,341,273"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="272,193,263,234,258,233,266,192"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="559,247,642,273"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="501,190,573,237,570,242,498,194"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="666,240,829,280"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="521,189,671,234,670,239,520,195"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="365,247,436,273"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="472,194,424,240,421,236,468,190"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="461,247,535,273"/>
-<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="487,192,496,233,490,234,482,193"/>
+<area shape="rect" id="Node000001" title="Interface from actuators to ChibiOS CAN driver using UAVCan." alt="" coords="243,5,438,45"/>
+<area shape="rect" id="Node000002" href="$chibios_2modules_2uavcan_2uavcan_8h.html" title="Interface with uavcan using the Chibios can interfaces." alt="" coords="300,93,381,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="343,46,343,79,338,79,338,46"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title=" " alt="" coords="5,167,143,192"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="309,48,107,162,105,157,306,43"/>
+<area shape="rect" id="Node000008" href="$threads_8h.html" title=" " alt="" coords="547,167,721,192"/>
+<area shape="poly" id="edge16_Node000001_Node000008" title=" " alt="" coords="378,43,601,158,599,163,376,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="444,167,523,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,116,449,158,447,163,362,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="167,167,237,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="320,121,238,163,236,158,317,116"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="300,121,131,166,129,161,299,116"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="382,115,574,161,573,166,381,120"/>
+<area shape="rect" id="Node000013" href="$circular__buffer_8h.html" title=" " alt="" coords="261,167,420,192"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="343,119,343,153,338,153,338,119"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="39,247,93,273"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="75,192,71,234,66,233,70,192"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="117,247,289,273"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="94,190,174,238,171,242,92,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="582,247,665,273"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="635,193,629,234,624,233,630,192"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="689,240,851,280"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="655,190,726,231,724,235,653,194"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="356,247,427,273"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="600,195,441,246,439,241,598,189"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="473,247,547,273"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="617,194,541,242,538,238,614,190"/>
+<area shape="poly" id="edge13_Node000013_Node000011" title=" " alt="" coords="350,191,379,234,374,237,346,194"/>
+<area shape="poly" id="edge14_Node000013_Node000012" title=" " alt="" coords="366,190,474,239,472,244,364,194"/>
 </map>
