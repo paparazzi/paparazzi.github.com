@@ -1,5 +1,10 @@
 var NAVTREEINDEX195 =
 {
+"setup__actuators_8c.html":[12,0,1,0,3,4,0],
+"setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10":[12,0,1,0,3,4,0,5],
+"setup__actuators_8c.html#a433218491d8e51ae032540c2c00d263f":[12,0,1,0,3,4,0,7],
+"setup__actuators_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,4,0,2],
+"setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,4,0,4],
 "setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe":[12,0,1,0,3,4,0,3],
 "setup__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b":[12,0,1,0,3,4,0,1],
 "setup__actuators_8c.html#af9bfeb49b8ea12c64a72e4a4fb5a6002":[12,0,1,0,3,4,0,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX195 =
 "sim_2modules_2core_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,0,2,1,1,3,0],
 "sim_2modules_2core_2settings__arch_8c.html#af664303c054931fd459311170ec67b18":[12,0,1,0,0,2,1,1,3,1],
 "sim_2modules_2core_2settings__arch_8c_source.html":[12,0,1,0,0,2,1,1,3],
-"sim_2modules_2core_2threads__arch_8c.html":[12,0,1,0,0,2,1,1,4],
-"sim_2modules_2core_2threads__arch_8c.html#a20bfc2ac32043b58f03d6776c4a58f46":[12,0,1,0,0,2,1,1,4,7],
-"sim_2modules_2core_2threads__arch_8c.html#a38ccbb62a1a26098dec12b6c272b0fde":[12,0,1,0,0,2,1,1,4,13],
-"sim_2modules_2core_2threads__arch_8c.html#a3d0da95d5f58f817dc1b1f3b0c25df8e":[12,0,1,0,0,2,1,1,4,11],
-"sim_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90":[12,0,1,0,0,2,1,1,4,4],
-"sim_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf":[12,0,1,0,0,2,1,1,4,8]
+"sim_2modules_2core_2threads__arch_8c.html":[12,0,1,0,0,2,1,1,4]
 };
