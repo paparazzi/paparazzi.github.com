@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,412,1],
+"module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,412,2],
 "module__baro_scp_i2c.html#module_load_example__baro_scp_i2c":[1,412,0],
 "module__baro_scp_i2c.html#module_xml__baro_scp_i2c":[1,412,2,0],
 "module__baro_sim.html":[1,413],
@@ -162,6 +164,7 @@ var NAVTREEINDEX128 =
 "module__cv_detect_color_object.html#module_xml__cv_detect_color_object":[1,60,2,0],
 "module__cv_detect_contour.html":[1,61],
 "module__cv_detect_contour.html#configuration__cv_detect_contour":[1,61,1],
+"module__cv_detect_contour.html#define":[1,61,1,0],
 "module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2],
 "module__cv_detect_contour.html#module_load_example__cv_detect_contour":[1,61,0],
 "module__cv_detect_contour.html#module_xml__cv_detect_contour":[1,61,2,0],
@@ -181,7 +184,6 @@ var NAVTREEINDEX128 =
 "module__cv_georeference.html#module_xml__cv_georeference":[1,64,1,0],
 "module__cv_opencvdemo.html":[1,65],
 "module__cv_opencvdemo.html#configuration__cv_opencvdemo":[1,65,1],
-"module__cv_opencvdemo.html#define":[1,65,1,0],
 "module__cv_opencvdemo.html#functions__cv_opencvdemo":[1,65,2],
 "module__cv_opencvdemo.html#module_load_example__cv_opencvdemo":[1,65,0],
 "module__cv_opencvdemo.html#module_xml__cv_opencvdemo":[1,65,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "module__digital_cam_gpio.html#configuration__digital_cam_gpio":[1,137,1],
 "module__digital_cam_gpio.html#functions__digital_cam_gpio":[1,137,2],
 "module__digital_cam_gpio.html#module_load_example__digital_cam_gpio":[1,137,0],
-"module__digital_cam_gpio.html#module_xml__digital_cam_gpio":[1,137,2,0],
-"module__digital_cam_i2c.html":[1,138],
-"module__digital_cam_i2c.html#configuration__digital_cam_i2c":[1,138,1]
+"module__digital_cam_gpio.html#module_xml__digital_cam_gpio":[1,137,2,0]
 };

@@ -138,8 +138,11 @@ var NAVTREE =
       ] ],
       [ "actuators_md25 module", "module__actuators_md25.html", [
         [ "Example for airframe file", "module__actuators_md25.html#module_load_example__actuators_md25", null ],
-        [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", null ],
+        [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", [
+          [ "Configure Options", "module__actuators_md25.html#configure", null ]
+        ] ],
         [ "Module functions", "module__actuators_md25.html#functions__actuators_md25", [
+          [ "Event Functions", "module__actuators_md25.html#event_functions", null ],
           [ "Raw actuators_md25.xml file:", "module__actuators_md25.html#module_xml__actuators_md25", null ]
         ] ]
       ] ],
@@ -449,7 +452,9 @@ var NAVTREE =
       ] ],
       [ "cv_detect_contour module", "module__cv_detect_contour.html", [
         [ "Example for airframe file", "module__cv_detect_contour.html#module_load_example__cv_detect_contour", null ],
-        [ "Module configuration options", "module__cv_detect_contour.html#configuration__cv_detect_contour", null ],
+        [ "Module configuration options", "module__cv_detect_contour.html#configuration__cv_detect_contour", [
+          [ "Define Options", "module__cv_detect_contour.html#define", null ]
+        ] ],
         [ "Module functions", "module__cv_detect_contour.html#functions__cv_detect_contour", [
           [ "Raw cv_detect_contour.xml file:", "module__cv_detect_contour.html#module_xml__cv_detect_contour", null ]
         ] ]
@@ -476,9 +481,7 @@ var NAVTREE =
       ] ],
       [ "cv_opencvdemo module", "module__cv_opencvdemo.html", [
         [ "Example for airframe file", "module__cv_opencvdemo.html#module_load_example__cv_opencvdemo", null ],
-        [ "Module configuration options", "module__cv_opencvdemo.html#configuration__cv_opencvdemo", [
-          [ "Define Options", "module__cv_opencvdemo.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__cv_opencvdemo.html#configuration__cv_opencvdemo", null ],
         [ "Module functions", "module__cv_opencvdemo.html#functions__cv_opencvdemo", [
           [ "Raw cv_opencvdemo.xml file:", "module__cv_opencvdemo.html#module_xml__cv_opencvdemo", null ]
         ] ]
@@ -965,8 +968,12 @@ var NAVTREE =
       ] ],
       [ "digital_cam_servo module", "module__digital_cam_servo.html", [
         [ "Example for airframe file", "module__digital_cam_servo.html#module_load_example__digital_cam_servo", null ],
-        [ "Module configuration options", "module__digital_cam_servo.html#configuration__digital_cam_servo", null ],
+        [ "Module configuration options", "module__digital_cam_servo.html#configuration__digital_cam_servo", [
+          [ "Airframe file section", "module__digital_cam_servo.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__digital_cam_servo.html#functions__digital_cam_servo", [
+          [ "Init Functions", "module__digital_cam_servo.html#init_functions", null ],
+          [ "Periodic Functions", "module__digital_cam_servo.html#periodic_functions", null ],
           [ "Raw digital_cam_servo.xml file:", "module__digital_cam_servo.html#module_xml__digital_cam_servo", null ]
         ] ]
       ] ],
@@ -1148,18 +1155,9 @@ var NAVTREE =
       ] ],
       [ "gps_ublox module", "module__gps_ublox.html", [
         [ "Example for airframe file", "module__gps_ublox.html#module_load_example__gps_ublox", null ],
-        [ "Module configuration options", "module__gps_ublox.html#configuration__gps_ublox", [
-          [ "Configure Options", "module__gps_ublox.html#configure", null ]
-        ] ],
-        [ "Module functions", "module__gps_ublox.html#functions__gps_ublox", [
-          [ "Init Functions", "module__gps_ublox.html#init_functions", null ],
-          [ "Event Functions", "module__gps_ublox.html#event_functions", null ],
-          [ "Periodic Functions", "module__gps_ublox.html#periodic_functions", null ]
-        ] ],
-        [ "Datalink Functions", "module__gps_ublox.html#datalink_functions__gps_ublox", null ],
-        [ "Files", "module__gps_ublox.html#files", [
-          [ "Header Files", "module__gps_ublox.html#headers", null ],
-          [ "Source Files", "module__gps_ublox.html#sources", null ],
+        [ "Module configuration options", "module__gps_ublox.html#configuration__gps_ublox", null ],
+        [ "Module functions", "module__gps_ublox.html#functions__gps_ublox", null ],
+        [ "Datalink Functions", "module__gps_ublox.html#datalink_functions__gps_ublox", [
           [ "Raw gps_ublox.xml file:", "module__gps_ublox.html#module_xml__gps_ublox", null ]
         ] ]
       ] ],
@@ -1332,28 +1330,28 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+          [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-          [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
       ] ],
       [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1909,7 +1907,10 @@ var NAVTREE =
         ] ]
       ] ],
       [ "udp module", "module__udp.html", [
-        [ "Example for airframe file", "module__udp.html#module_load_example__udp", [
+        [ "Example for airframe file", "module__udp.html#module_load_example__udp", null ],
+        [ "Files", "module__udp.html#files", [
+          [ "Header Files", "module__udp.html#headers", null ],
+          [ "Source Files", "module__udp.html#sources", null ],
           [ "Raw udp.xml file:", "module__udp.html#module_xml__udp", null ]
         ] ]
       ] ],
@@ -2930,9 +2931,7 @@ var NAVTREE =
       ] ],
       [ "stabilization_float_euler module", "module__stabilization_float_euler.html", [
         [ "Example for airframe file", "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler", null ],
-        [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", [
-          [ "Airframe file section", "module__stabilization_float_euler.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", null ],
         [ "Module functions", "module__stabilization_float_euler.html#functions__stabilization_float_euler", [
           [ "Raw stabilization_float_euler.xml file:", "module__stabilization_float_euler.html#module_xml__stabilization_float_euler", null ]
         ] ]
@@ -4017,15 +4016,15 @@ var NAVTREEINDEX =
 "mcuconf__h7_8h.html#a4a16b64d2275521cea28f9684f040904",
 "median__filter_8h.html#ac1af922cc9964252a19a531f43201da8",
 "microrl_8h.html#a5789d4c90a930860adab5cda61e288db",
-"module__actuators_nps.html#module_xml__actuators_nps",
-"module__baro_scp_i2c.html#module_load_example__baro_scp_i2c",
-"module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c",
-"module__gps_nps.html#module_load_example__gps_nps",
-"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common",
-"module__jevois.html#module_load_example__jevois",
-"module__nav_flower.html#functions__nav_flower",
-"module__px4flow.html",
-"module__stereocam.html#module_load_example__stereocam",
+"module__actuators_nps.html",
+"module__baro_scp_i2c.html#configuration__baro_scp_i2c",
+"module__digital_cam_i2c.html",
+"module__gps_nmea.html#functions__gps_nmea",
+"module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common",
+"module__jevois_mavlink.html",
+"module__nav_flower.html#module_xml__nav_flower",
+"module__px4flow.html#functions__px4flow",
+"module__stereocam_droplet.html#functions__stereocam_droplet",
 "module__video_thread.html#functions__video_thread",
 "modules_2ins_2ins__arduimu__basic_8c.html#aaec37a1182f43239f68f85ef09e5d9b0",
 "mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a19ad056b49e5186a09d8bdd940e90c54",

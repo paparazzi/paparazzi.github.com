@@ -1,5 +1,7 @@
 var NAVTREEINDEX129 =
 {
+"module__digital_cam_i2c.html":[1,138],
+"module__digital_cam_i2c.html#configuration__digital_cam_i2c":[1,138,1],
 "module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c":[1,138,3],
 "module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,138,2],
 "module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,138,0],
@@ -10,10 +12,13 @@ var NAVTREEINDEX129 =
 "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink":[1,139,0],
 "module__digital_cam_pprzlink.html#module_xml__digital_cam_pprzlink":[1,139,2,0],
 "module__digital_cam_servo.html":[1,140],
+"module__digital_cam_servo.html#af_section":[1,140,1,0],
 "module__digital_cam_servo.html#configuration__digital_cam_servo":[1,140,1],
 "module__digital_cam_servo.html#functions__digital_cam_servo":[1,140,2],
+"module__digital_cam_servo.html#init_functions":[1,140,2,0],
 "module__digital_cam_servo.html#module_load_example__digital_cam_servo":[1,140,0],
-"module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,140,2,0],
+"module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,140,2,2],
+"module__digital_cam_servo.html#periodic_functions":[1,140,2,1],
 "module__digital_cam_shoot_rc.html":[1,141],
 "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,141,1],
 "module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc":[1,141,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX129 =
 "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,161,0],
 "module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,161,2,0],
 "module__gps_nmea.html":[1,162],
-"module__gps_nmea.html#configuration__gps_nmea":[1,162,1],
-"module__gps_nmea.html#functions__gps_nmea":[1,162,2],
-"module__gps_nmea.html#module_load_example__gps_nmea":[1,162,0],
-"module__gps_nmea.html#module_xml__gps_nmea":[1,162,2,0],
-"module__gps_nps.html":[1,163],
-"module__gps_nps.html#functions__gps_nps":[1,163,1]
+"module__gps_nmea.html#configuration__gps_nmea":[1,162,1]
 };

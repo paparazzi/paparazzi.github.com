@@ -1,7 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,202,1],
-"module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,202,2],
 "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common":[1,202,0],
 "module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common":[1,202,2,0],
 "module__imu_bebop.html":[1,203],
@@ -249,5 +247,7 @@ var NAVTREEINDEX131 =
 "module__ir_mlx.html#module_xml__ir_mlx":[1,301,1,0],
 "module__jevois.html":[1,435],
 "module__jevois.html#configuration__jevois":[1,435,1],
-"module__jevois.html#functions__jevois":[1,435,2]
+"module__jevois.html#functions__jevois":[1,435,2],
+"module__jevois.html#module_load_example__jevois":[1,435,0],
+"module__jevois.html#module_xml__jevois":[1,435,2,0]
 };

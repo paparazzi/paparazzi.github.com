@@ -1,22 +1,24 @@
 <map id="rotwing_state_init" name="rotwing_state_init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,144,80"/>
-<area shape="rect" id="Node000002" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,5,395,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,52,222,31,224,36,132,57"/>
-<area shape="rect" id="Node000003" href="$rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096" title=" " alt="" coords="193,55,393,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,65,180,65,180,70,144,70"/>
-<area shape="rect" id="Node000004" href="$rotwing__state_8c.html#ab8f72a98676fba24f38387c5a706b612" title=" " alt="" coords="219,105,368,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="125,77,206,99,205,104,123,83"/>
-<area shape="rect" id="Node000005" href="$rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="447,9,601,49"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="362,102,393,89,417,74,441,58,454,52,457,57,444,63,420,78,396,94,364,107"/>
-<area shape="rect" id="Node000007" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="447,73,601,113"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="368,112,433,103,434,108,368,117"/>
-<area shape="rect" id="Node000008" href="$rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="443,137,605,177"/>
-<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="368,132,429,141,429,146,368,138"/>
-<area shape="rect" id="Node000009" href="$rotwing__state_8c.html#a814af6b3f693b1d6b2aac23bd23abecb" title=" " alt="" coords="449,201,599,241"/>
-<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="342,142,444,186,460,193,458,198,442,191,339,147"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="653,112,799,137"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="579,46,606,58,692,103,689,107,604,63,577,51"/>
-<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="602,102,640,108,639,114,601,108"/>
-<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="605,141,639,136,640,141,606,146"/>
-<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="577,198,604,186,689,142,692,147,606,191,579,203"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,144,105"/>
+<area shape="rect" id="Node000002" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="204,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,77,191,39,217,32,219,37,193,45,103,82"/>
+<area shape="rect" id="Node000003" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,55,395,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,82,178,78,178,83,145,87"/>
+<area shape="rect" id="Node000004" href="$rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096" title=" " alt="" coords="193,104,393,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,98,180,102,179,107,144,103"/>
+<area shape="rect" id="Node000005" href="$rotwing__state_8c.html#ab8f72a98676fba24f38387c5a706b612" title=" " alt="" coords="219,154,368,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="106,103,193,138,217,147,216,152,191,143,104,108"/>
+<area shape="rect" id="Node000006" href="$rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="447,58,601,98"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="362,151,393,138,417,123,441,108,454,101,457,106,444,112,420,128,396,143,364,156"/>
+<area shape="rect" id="Node000008" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="447,122,601,162"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="368,161,433,152,434,157,368,166"/>
+<area shape="rect" id="Node000009" href="$rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="443,186,605,226"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="368,182,429,190,429,196,368,187"/>
+<area shape="rect" id="Node000010" href="$rotwing__state_8c.html#a814af6b3f693b1d6b2aac23bd23abecb" title=" " alt="" coords="449,250,599,290"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="342,192,444,236,460,242,458,247,442,240,339,197"/>
+<area shape="rect" id="Node000007" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="653,161,799,187"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="579,96,606,108,692,152,689,157,604,112,577,101"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="602,152,640,158,639,163,601,157"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="605,190,639,185,640,190,606,196"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="577,247,604,236,689,191,692,196,606,240,579,252"/>
 </map>

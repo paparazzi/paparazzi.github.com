@@ -245,9 +245,9 @@ var NAVTREEINDEX126 =
 "module__actuators_hitl.html#module_xml__actuators_hitl":[1,11,2,0],
 "module__actuators_md25.html":[1,12],
 "module__actuators_md25.html#configuration__actuators_md25":[1,12,1],
+"module__actuators_md25.html#configure":[1,12,1,0],
+"module__actuators_md25.html#event_functions":[1,12,2,0],
 "module__actuators_md25.html#functions__actuators_md25":[1,12,2],
 "module__actuators_md25.html#module_load_example__actuators_md25":[1,12,0],
-"module__actuators_md25.html#module_xml__actuators_md25":[1,12,2,0],
-"module__actuators_nps.html":[1,13],
-"module__actuators_nps.html#module_load_example__actuators_nps":[1,13,0]
+"module__actuators_md25.html#module_xml__actuators_md25":[1,12,2,1]
 };

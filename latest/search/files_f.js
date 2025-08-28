@@ -56,7 +56,7 @@ var searchData=
   ['nav_5frover_5fbase_2eh_53',['nav_rover_base.h',['../nav__rover__base_8h.html',1,'']]],
   ['nav_5fshakestart_2ec_54',['nav_shakestart.c',['../nav__shakestart_8c.html',1,'']]],
   ['nav_5fshakestart_2eh_55',['nav_shakestart.h',['../nav__shakestart_8h.html',1,'']]],
-  ['nav_5fsin_2ec_56',['nav_sin.c',['../ik_2nav_2nav__sin_8c.html',1,'(Global Namespace)'],['../nav_2nav__sin_8c.html',1,'(Global Namespace)']]],
+  ['nav_5fsin_2ec_56',['nav_sin.c',['../nav_2nav__sin_8c.html',1,'(Global Namespace)'],['../ik_2nav_2nav__sin_8c.html',1,'(Global Namespace)']]],
   ['nav_5fsin_2eh_57',['nav_sin.h',['../nav_2nav__sin_8h.html',1,'(Global Namespace)'],['../ik_2nav_2nav__sin_8h.html',1,'(Global Namespace)']]],
   ['nav_5fskid_5flanding_2ec_58',['nav_skid_landing.c',['../nav__skid__landing_8c.html',1,'']]],
   ['nav_5fskid_5flanding_2eh_59',['nav_skid_landing.h',['../nav__skid__landing_8h.html',1,'']]],

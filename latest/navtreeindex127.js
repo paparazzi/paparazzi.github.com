@@ -1,5 +1,7 @@
 var NAVTREEINDEX127 =
 {
+"module__actuators_nps.html":[1,13],
+"module__actuators_nps.html#module_load_example__actuators_nps":[1,13,0],
 "module__actuators_nps.html#module_xml__actuators_nps":[1,13,0,0],
 "module__actuators_ostrich.html":[1,14],
 "module__actuators_ostrich.html#configuration__actuators_ostrich":[1,14,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX127 =
 "module__baro_ms5611_spi.html#functions__baro_ms5611_spi":[1,411,2],
 "module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,411,0],
 "module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi":[1,411,2,0],
-"module__baro_scp_i2c.html":[1,412],
-"module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,412,1],
-"module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,412,2]
+"module__baro_scp_i2c.html":[1,412]
 };
