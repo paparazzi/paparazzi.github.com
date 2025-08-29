@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"dc__ctrl__parrot__mykonos_8h.html#aec4e65a2cb7d6a7fec229311f5089c14a1887938a1a8c049a15ff38f2e93fc791":[12,0,1,0,6,19,6,2,4],
 "dc__ctrl__parrot__mykonos_8h.html#aec4e65a2cb7d6a7fec229311f5089c14a322fd2591550ad1be51247e624260a63":[12,0,1,0,6,19,6,2,2],
 "dc__ctrl__parrot__mykonos_8h.html#aec4e65a2cb7d6a7fec229311f5089c14a6c3ab06ca6b758f5005e27d5a3745439":[12,0,1,0,6,19,6,2,1],
 "dc__ctrl__parrot__mykonos_8h.html#aec4e65a2cb7d6a7fec229311f5089c14a6c4aae1c990d31ebb8b70795f32e394e":[12,0,1,0,6,19,6,2,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "detect__window_8h.html#afe15b8dbeece20cca4e81dd0ef0ed327":[12,0,1,0,6,12,25,2],
 "detect__window_8h_source.html":[12,0,1,0,6,12,25],
 "dfu__command_8c.html":[12,0,1,0,6,18,0],
-"dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3":[12,0,1,0,6,18,0,1],
-"dfu__command_8c.html#ae2fc0a13f5fdbae95b0c015530c3786c":[12,0,1,0,6,18,0,0]
+"dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3":[12,0,1,0,6,18,0,1]
 };

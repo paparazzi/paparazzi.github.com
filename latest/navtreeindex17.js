@@ -1,17 +1,18 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,14,0],
 "avi__isp__color__correction_8h.html#a767d7895896ca198c4fd406913da98dd":[12,0,1,0,1,2,0,0,5,24],
 "avi__isp__color__correction_8h.html#a78a8111fd68952b3634bc9ca6f647e79":[12,0,1,0,1,2,0,0,5,15,1],
 "avi__isp__color__correction_8h.html#a8e369d3821b7157c4651b2c8a9f73aa0":[12,0,1,0,1,2,0,0,5,7,0],
 "avi__isp__color__correction_8h.html#a98140f765533b14b3825ceefc0935d78":[12,0,1,0,1,2,0,0,5,31],
-"avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,20,2],
 "avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,18,2],
+"avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,20,2],
 "avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,22,2],
 "avi__isp__color__correction_8h.html#aa553fd2cbf4bfb387b87d8bf26fc503a":[12,0,1,0,1,2,0,0,5,11,5],
 "avi__isp__color__correction_8h.html#aa7e83147cc3d71c898aaa6144d4ef217":[12,0,1,0,1,2,0,0,5,11,9],
+"avi__isp__color__correction_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3":[12,0,1,0,1,2,0,0,5,21,2],
 "avi__isp__color__correction_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3":[12,0,1,0,1,2,0,0,5,19,2],
 "avi__isp__color__correction_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3":[12,0,1,0,1,2,0,0,5,17,2],
-"avi__isp__color__correction_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3":[12,0,1,0,1,2,0,0,5,21,2],
 "avi__isp__color__correction_8h.html#ab79b8ade7e272b837aea6b28c722c61e":[12,0,1,0,1,2,0,0,5,12,1],
 "avi__isp__color__correction_8h.html#aceb242bc49e72b145964d2e5a19c1af2":[12,0,1,0,1,2,0,0,5,11,7],
 "avi__isp__color__correction_8h.html#ad6947359308f77e665071fa90a6b30a3":[12,0,1,0,1,2,0,0,5,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a9640481e02bf663c4d5d7ae47c3815ed":[12,0,1,0,1,2,0,0,9,6,6],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aa09e9984faa81355e608c599e3d78e54":[12,0,1,0,1,2,0,0,9,6,3],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aadf6fc2db439bd83bdaa55e8ef159927":[12,0,1,0,1,2,0,0,9,10,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672":[12,0,1,0,1,2,0,0,9,11,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ae462bcb7442c1154607d0de57c9de6a4":[12,0,1,0,1,2,0,0,9,6,8]
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672":[12,0,1,0,1,2,0,0,9,11,0]
 };

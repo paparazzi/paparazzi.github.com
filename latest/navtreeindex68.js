@@ -1,5 +1,15 @@
 var NAVTREEINDEX68 =
 {
+"group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532":[9,9,1,0,138],
+"group__math__algebra__float.html#gab37594049bf029dfa949454c3cb0e30a":[9,9,1,0,31],
+"group__math__algebra__float.html#gab539484619b696418cab24d9a1f0eb2e":[9,9,1,0,144],
+"group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171":[9,9,1,0,120],
+"group__math__algebra__float.html#gaba2b8407506025f0fa8257d7fa2a6e0c":[9,9,1,0,12],
+"group__math__algebra__float.html#gabb9c6838cd4e08e827697d46129aa65d":[9,9,1,0,9],
+"group__math__algebra__float.html#gabe4ca1b17eb92e9f8c665f9e537f8bc0":[9,9,1,0,46],
+"group__math__algebra__float.html#gabe8ac26f75cf7ed1d1abaac2057904c7":[9,9,1,0,8],
+"group__math__algebra__float.html#gac03548c07ba623863921c48c663d3b5f":[9,9,1,0,53],
+"group__math__algebra__float.html#gac0b12ae200ef9402d3f1bc63d9997118":[9,9,1,0,93],
 "group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004":[9,9,1,0,130],
 "group__math__algebra__float.html#gac1a892148a1ebb32fafde838319f6346":[9,9,1,0,27],
 "group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76":[9,9,1,0,70],
@@ -239,15 +249,5 @@ var NAVTREEINDEX68 =
 "group__math__algebra__int.html#ga4981683677de808113f86e580de06372":[9,9,1,3,48],
 "group__math__algebra__int.html#ga4adc6ab58bcd53db1214989fab3317d2":[9,9,1,3,91],
 "group__math__algebra__int.html#ga4b8efdff2895294481a7f3460b805065":[9,9,1,3,37],
-"group__math__algebra__int.html#ga4bb5474644b107cb2e4281a8c2b60dc8":[9,9,1,3,158],
-"group__math__algebra__int.html#ga4d8b60b0ce0eb3bb19fac8f574dce1f1":[9,9,1,3,43],
-"group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f":[9,9,1,3,116],
-"group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702":[9,9,1,3,148],
-"group__math__algebra__int.html#ga4f63d48e6205ea78a5285d60c8fed415":[9,9,1,3,97],
-"group__math__algebra__int.html#ga5251aee74e02d2935ee9835ae7bc7b2e":[9,9,1,3,17],
-"group__math__algebra__int.html#ga5323536a02d970f0edbe7e73d5bd67fa":[9,9,1,3,108],
-"group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de":[9,9,1,3,129],
-"group__math__algebra__int.html#ga58a2d2d9497e4eca375996eeffdb4b55":[9,9,1,3,28],
-"group__math__algebra__int.html#ga5fc8ef9a241c8a47e26b0e143884807b":[9,9,1,3,70],
-"group__math__algebra__int.html#ga60a7c58f0acbee3c862e2bea4beaec25":[9,9,1,3,151]
+"group__math__algebra__int.html#ga4bb5474644b107cb2e4281a8c2b60dc8":[9,9,1,3,158]
 };

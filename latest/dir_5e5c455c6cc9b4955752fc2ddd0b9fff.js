@@ -22,6 +22,8 @@ var dir_5e5c455c6cc9b4955752fc2ddd0b9fff =
     [ "gps_sirf.h", "gps__sirf_8h.html", "gps__sirf_8h" ],
     [ "gps_skytraq.c", "gps__skytraq_8c.html", "gps__skytraq_8c" ],
     [ "gps_skytraq.h", "gps__skytraq_8h.html", "gps__skytraq_8h" ],
+    [ "gps_uavcan.c", "gps__uavcan_8c.html", "gps__uavcan_8c" ],
+    [ "gps_uavcan.h", "gps__uavcan_8h.html", "gps__uavcan_8h" ],
     [ "gps_ubx.c", "gps__ubx_8c.html", "gps__ubx_8c" ],
     [ "gps_ubx.h", "gps__ubx_8h.html", "gps__ubx_8h" ],
     [ "gps_ubx_i2c.c", "gps__ubx__i2c_8c.html", "gps__ubx__i2c_8c" ],

@@ -1,5 +1,15 @@
 var NAVTREEINDEX99 =
 {
+"lia_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00":[12,0,1,0,1,10,1,3],
+"lia_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,10,1,1],
+"lia_2baro__board_8c.html#a4f551582db51f22b12e4d07b3fcb600f":[12,0,1,0,1,10,1,0],
+"lia_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21":[12,0,1,0,1,10,1,2],
+"lia_2baro__board_8c.html#acefc6db83b8dc325514608a766413bc1":[12,0,1,0,1,10,1,4],
+"lia_2baro__board_8c_source.html":[12,0,1,0,1,10,1],
+"lia_2baro__board_8h.html":[12,0,1,0,1,10,2],
+"lia_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,10,2,2],
+"lia_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781":[12,0,1,0,1,10,2,1],
+"lia_2baro__board_8h.html#a8546c5da434e5120bc0c247c556dc11d":[12,0,1,0,1,10,2,0],
 "lia_2baro__board_8h_source.html":[12,0,1,0,1,10,2],
 "lia_2chibios_2v1_81_2board_8h.html":[12,0,1,0,1,10,0,0,0],
 "lia_2chibios_2v1_81_2board_8h.html#a0206dc5f7cefcb7b4359f84da3fe1364":[12,0,1,0,1,10,0,0,0,85],
@@ -239,15 +249,5 @@ var NAVTREEINDEX99 =
 "lia__1_81_8h.html#a5daa3f2d218cecbea875535fc41a6779":[12,0,1,0,1,38,47],
 "lia__1_81_8h.html#a61465080ec629bdcb6678b37fd6f05a2":[12,0,1,0,1,38,52],
 "lia__1_81_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85":[12,0,1,0,1,38,55],
-"lia__1_81_8h.html#a74a73d71b5a66c3cfea6788e42674c94":[12,0,1,0,1,38,25],
-"lia__1_81_8h.html#a7626515800835f0b73980c296b26bf90":[12,0,1,0,1,38,43],
-"lia__1_81_8h.html#a765749726b83cb80b82cdbe535e71de0":[12,0,1,0,1,38,16],
-"lia__1_81_8h.html#a77f96756967cdac7e3fc59fda8933f36":[12,0,1,0,1,38,10],
-"lia__1_81_8h.html#a7ae5162492c27a9f944435eb96e1cdec":[12,0,1,0,1,38,23],
-"lia__1_81_8h.html#a844db1e680f18109b59149b9e33dbb51":[12,0,1,0,1,38,54],
-"lia__1_81_8h.html#a8475ccb2e744f79592d55d43fa073641":[12,0,1,0,1,38,46],
-"lia__1_81_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2":[12,0,1,0,1,38,7],
-"lia__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,38,6],
-"lia__1_81_8h.html#aa5ea83d926a661df064db0e68bc60690":[12,0,1,0,1,38,31],
-"lia__1_81_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,38,27]
+"lia__1_81_8h.html#a74a73d71b5a66c3cfea6788e42674c94":[12,0,1,0,1,38,25]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"gec__dl_8h.html#structgec__transport":[12,0,1,0,6,15,16,2],
 "gec__dl_8h.html#structgec__whitelist":[12,0,1,0,6,15,16,0],
 "gec__dl_8h.html#structmessage__buffer":[12,0,1,0,6,15,16,1],
 "gec__dl_8h_source.html":[12,0,1,0,6,15,16],
@@ -87,14 +88,14 @@ var NAVTREEINDEX61 =
 "glide__wing__lock_8h.html#a500763dbb0f4ced17a8946d9335e260b":[12,0,1,0,6,27,1,1],
 "glide__wing__lock_8h.html#af688353e9277038d0e14900750e70f98":[12,0,1,0,6,27,1,0],
 "glide__wing__lock_8h_source.html":[12,0,1,0,6,27,1],
-"globals.html":[12,1,0,0],
 "globals.html":[12,1,0],
+"globals.html":[12,1,0,0],
 "globals_a.html":[12,1,0,1],
 "globals_b.html":[12,1,0,2],
 "globals_c.html":[12,1,0,3],
 "globals_d.html":[12,1,0,4],
-"globals_defs.html":[12,1,6,0],
 "globals_defs.html":[12,1,6],
+"globals_defs.html":[12,1,6,0],
 "globals_defs_a.html":[12,1,6,1],
 "globals_defs_b.html":[12,1,6,2],
 "globals_defs_c.html":[12,1,6,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "globals_x.html":[12,1,0,24],
 "globals_y.html":[12,1,0,25],
 "globals_z.html":[12,1,0,26],
-"gpio_8h.html":[12,0,1,0,5,4],
-"gpio_8h_source.html":[12,0,1,0,5,4]
+"gpio_8h.html":[12,0,1,0,5,4]
 };
