@@ -1,5 +1,13 @@
 var NAVTREEINDEX191 =
 {
+"rover_2navigation_8h.html#a9dba35b0fcaf6b3e52d82de8c5e21c6e":[12,0,1,0,3,3,10,0,9],
+"rover_2navigation_8h.html#aa7992cd3005e9daab2dda14f2950249b":[12,0,1,0,3,3,10,45],
+"rover_2navigation_8h.html#aa94f83fda4e627ae4f187501e5cfa6af":[12,0,1,0,3,3,10,0,4],
+"rover_2navigation_8h.html#aad9a6009d854190c8446776d983e7dfd":[12,0,1,0,3,3,10,37],
+"rover_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b":[12,0,1,0,3,3,10,26],
+"rover_2navigation_8h.html#ab6a403a7e0d980e918c94144d253fe77":[12,0,1,0,3,3,10,13],
+"rover_2navigation_8h.html#ab7db1bb7418f38442135471a3b4f3c24":[12,0,1,0,3,3,10,35],
+"rover_2navigation_8h.html#ab89c9d3ec593d3bc964252a47ec370a9":[12,0,1,0,3,3,10,19],
 "rover_2navigation_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f":[12,0,1,0,3,3,10,23],
 "rover_2navigation_8h.html#abb5b5b70fd1fe437f42847bb103aa952":[12,0,1,0,3,3,10,73],
 "rover_2navigation_8h.html#abeed07a4d9baf976b7462acfed47402b":[12,0,1,0,3,3,10,15],
@@ -241,13 +249,5 @@ var NAVTREEINDEX191 =
 "rover__obstacles_8h.html#af9d6188ad7d935832a120ed264945163":[12,0,1,0,3,3,1,1,15],
 "rover__obstacles_8h.html#structbayesian__map":[12,0,1,0,3,3,1,1,0],
 "rover__obstacles_8h.html#structworld__grid":[12,0,1,0,3,3,1,1,1],
-"rover__obstacles_8h_source.html":[12,0,1,0,3,3,1,1],
-"rover__telemetry_8c.html":[12,0,1,0,3,3,11],
-"rover__telemetry_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,3,11,0],
-"rover__telemetry_8c_source.html":[12,0,1,0,3,3,11],
-"rpm__sensor_8c.html":[12,0,1,0,6,63,83],
-"rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634":[12,0,1,0,6,63,83,6],
-"rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c":[12,0,1,0,6,63,83,4],
-"rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2":[12,0,1,0,6,63,83,3],
-"rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47":[12,0,1,0,6,63,83,5]
+"rover__obstacles_8h_source.html":[12,0,1,0,3,3,1,1]
 };

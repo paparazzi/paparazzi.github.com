@@ -1,5 +1,13 @@
 var NAVTREEINDEX199 =
 {
+"stabilization__adaptive_8c.html#aaca95839ffbc7b9a845e487b320b69a0":[12,0,1,0,3,1,1,0,18],
+"stabilization__adaptive_8c.html#aaec90f1f260626dfaa524247431f578f":[12,0,1,0,3,1,1,0,20],
+"stabilization__adaptive_8c.html#ab0b189c493ad0e6e6a12afd77b4dce7b":[12,0,1,0,3,1,1,0,10],
+"stabilization__adaptive_8c.html#ab681b564296b8683b4110508f528cdfa":[12,0,1,0,3,1,1,0,0,2],
+"stabilization__adaptive_8c.html#ab9948dbdbf52b4bbd03255f6ab5bb976":[12,0,1,0,3,1,1,0,42],
+"stabilization__adaptive_8c.html#abae73f3accc69eb2eb1b267a31036e2b":[12,0,1,0,3,1,1,0,0,4],
+"stabilization__adaptive_8c.html#abb6407ecea8c8ef1378d8c9e3d338721":[12,0,1,0,3,1,1,0,21],
+"stabilization__adaptive_8c.html#ac16772ff39b493dc04a031f46a8b75df":[12,0,1,0,3,1,1,0,62],
 "stabilization__adaptive_8c.html#ac9aee6f0d04f722f3daaf9e4430658f6":[12,0,1,0,3,1,1,0,15],
 "stabilization__adaptive_8c.html#acbe1f39859914b67956b65671e29281c":[12,0,1,0,3,1,1,0,53],
 "stabilization__adaptive_8c.html#acc779a581eb5434bf38a16e010d77951":[12,0,1,0,3,1,1,0,14],
@@ -241,13 +249,5 @@ var NAVTREEINDEX199 =
 "stabilization__attitude__plane__pid_8h.html#aa0d7fdc4a166c4fbda2560a68bc54ee9":[12,0,1,0,3,2,2,13,4],
 "stabilization__attitude__plane__pid_8h.html#aeabfc33e60df8e933948b5cd76a644ba":[12,0,1,0,3,2,2,13,0,2],
 "stabilization__attitude__plane__pid_8h.html#afd590a349b4f76e4b16fbbf28dfc54f8":[12,0,1,0,3,2,2,13,1],
-"stabilization__attitude__plane__pid_8h.html#structPlaneAttitudeGains":[12,0,1,0,3,2,2,13,0],
-"stabilization__attitude__plane__pid_8h_source.html":[12,0,1,0,3,2,2,13],
-"stabilization__attitude__quat__float_8c.html":[12,0,1,0,3,2,2,14],
-"stabilization__attitude__quat__float_8c.html#a015228f30f34102b8d41c6c08c752cc0":[12,0,1,0,3,2,2,14,29],
-"stabilization__attitude__quat__float_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474":[12,0,1,0,3,2,2,14,8],
-"stabilization__attitude__quat__float_8c.html#a111cd924cba0489c665371401b826134":[12,0,1,0,3,2,2,14,34],
-"stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4":[12,0,1,0,3,2,2,14,7],
-"stabilization__attitude__quat__float_8c.html#a1229d33cc4efd754b15892b3f4fb0557":[12,0,1,0,3,2,2,14,35],
-"stabilization__attitude__quat__float_8c.html#a1cf88c9b9b4dd55c4bed1ad70f95d024":[12,0,1,0,3,2,2,14,18]
+"stabilization__attitude__plane__pid_8h.html#structPlaneAttitudeGains":[12,0,1,0,3,2,2,13,0]
 };

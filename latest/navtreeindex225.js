@@ -1,5 +1,13 @@
 var NAVTREEINDEX225 =
 {
+"vf__extended__float_8c.html#a2ac22598cea13446c80cc3d340c145f9":[12,0,1,0,6,37,48,6],
+"vf__extended__float_8c.html#a31bb1d175d080d2e051c93c1d2564413":[12,0,1,0,6,37,48,11],
+"vf__extended__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67":[12,0,1,0,6,37,48,24],
+"vf__extended__float_8c.html#a42afc75d03c75255f5d5b8d5f7bdcec9":[12,0,1,0,6,37,48,4],
+"vf__extended__float_8c.html#a43ba970ac8015812427c9681be41100a":[12,0,1,0,6,37,48,23],
+"vf__extended__float_8c.html#a4713ab66140969c6086d08ab69b70109":[12,0,1,0,6,37,48,12],
+"vf__extended__float_8c.html#a4a8d9b629f50078fdc06fbc3b5a535f8":[12,0,1,0,6,37,48,3],
+"vf__extended__float_8c.html#a52e0d9124b7113e0de1860150cc1a1ef":[12,0,1,0,6,37,48,2],
 "vf__extended__float_8c.html#a58d1d46b9c74fc909cc7d08e097a35fa":[12,0,1,0,6,37,48,14],
 "vf__extended__float_8c.html#a6f545e95565f004f9cc58933d7bc1ccb":[12,0,1,0,6,37,48,9],
 "vf__extended__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141":[12,0,1,0,6,37,48,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX225 =
 "vl53l1__platform_8c.html#a1a8884f5596d0c5874f3ce00a49d997d":[12,0,1,0,7,134,7],
 "vl53l1__platform_8c.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e":[12,0,1,0,7,134,6],
 "vl53l1__platform_8c.html#a6294ff6202e132dbf802617ba71ec5f8":[12,0,1,0,7,134,4],
-"vl53l1__platform_8c.html#a9b2c1fcb13887dc91678a65b22aad3cd":[12,0,1,0,7,134,2],
-"vl53l1__platform_8c.html#aaf8f98b385ff1ea02ec04e27f0aaf9ed":[12,0,1,0,7,134,5],
-"vl53l1__platform_8c.html#ab999b09c3be53bbc7715d25007750916":[12,0,1,0,7,134,3],
-"vl53l1__platform_8c.html#ae02fb54ac9d54a831e40399bede7dc91":[12,0,1,0,7,134,1],
-"vl53l1__platform_8c.html#af25857bed3c014217254b84ff781e2aa":[12,0,1,0,7,134,0],
-"vl53l1__platform_8c_source.html":[12,0,1,0,7,134],
-"vl53l1__platform_8h.html":[12,0,1,0,7,135],
-"vl53l1__platform_8h.html#a1a8884f5596d0c5874f3ce00a49d997d":[12,0,1,0,7,135,12],
-"vl53l1__platform_8h.html#a1d5cd600ac54573791bd7df3485e60f5":[12,0,1,0,7,135,0,0,2]
+"vl53l1__platform_8c.html#a9b2c1fcb13887dc91678a65b22aad3cd":[12,0,1,0,7,134,2]
 };

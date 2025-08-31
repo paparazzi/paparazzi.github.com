@@ -1851,40 +1851,48 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v4_80_2board_8h_sourc
 <div class="line"><a id="l01596" name="l01596"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a2a85f2d6a72a221eb2e19235c66e2619"> 1596</a></span><span class="preprocessor">#define RSSI_IN_ADC  1</span></div>
 <div class="line"><a id="l01597" name="l01597"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#aaf17b59af0b6517eaef152378177e928"> 1597</a></span><span class="preprocessor">#define RSSI_IN_ADC_FN   IN</span></div>
 <div class="line"><a id="l01598" name="l01598"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#ababdff33bc12b7b9bea25d00ce69e41e"> 1598</a></span><span class="preprocessor">#define RSSI_IN_ADC_IN   11</span></div>
-<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span> </div>
-<div class="foldopen" id="foldopen01600" data-start="" data-end="">
-<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#aaddc843efed03effa9394c3892a74eec"> 1600</a></span><span class="preprocessor">#define BOARD_GROUP_DECLFOREACH(line, group) \</span></div>
-<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span><span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group}; \</span></div>
-<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span><span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
-</div>
-<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"> 1603</span> </div>
-<div class="foldopen" id="foldopen01604" data-start="" data-end="">
-<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b"> 1604</a></span><span class="preprocessor">#define BOARD_GROUP_FOREACH(line, group) \</span></div>
-<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span><span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
-</div>
-<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span> </div>
+<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a7e349ccd350d97790a88ef088f8e2a93"> 1599</a></span><span class="preprocessor">#define PWM_INPUT1_TIM     9</span></div>
+<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a4abcaa3cb28cec3629ac6a02a07235fb"> 1600</a></span><span class="preprocessor">#define PWM_INPUT1_TIM_FN  CH</span></div>
+<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#ad97bf4d44e504fbf9080f5860dffd46a"> 1601</a></span><span class="preprocessor">#define PWM_INPUT1_TIM_CH  1</span></div>
+<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a3b2063a8a2417dc00ee6498026655e7b"> 1602</a></span><span class="preprocessor">#define PWM_INPUT1_TIM_AF  3</span></div>
+<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a133b282b3a476981abcc1983de55b35f"> 1603</a></span><span class="preprocessor">#define PWM_INPUT2_TIM     3</span></div>
+<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a8927a5827199644547a7f551e4f4f185"> 1604</a></span><span class="preprocessor">#define PWM_INPUT2_TIM_FN  CH</span></div>
+<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a77acb8198fcc4ae51177a9fbd67c730d"> 1605</a></span><span class="preprocessor">#define PWM_INPUT2_TIM_CH  1</span></div>
+<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a0cfd794045e612868239ba9b9dcecde9"> 1606</a></span><span class="preprocessor">#define PWM_INPUT2_TIM_AF  2</span></div>
 <div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span> </div>
 <div class="foldopen" id="foldopen01608" data-start="" data-end="">
-<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e"> 1608</a></span><span class="preprocessor">#define BOARD_GROUP_DECLFOR(array, index, group)  \</span></div>
-<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span><span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group};    \</span></div>
-<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span><span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#aaddc843efed03effa9394c3892a74eec"> 1608</a></span><span class="preprocessor">#define BOARD_GROUP_DECLFOREACH(line, group) \</span></div>
+<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span><span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group}; \</span></div>
+<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span><span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
 </div>
 <div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span> </div>
 <div class="foldopen" id="foldopen01612" data-start="" data-end="">
-<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13"> 1612</a></span><span class="preprocessor">#define BOARD_GROUP_FOR(array, index, group)  \</span></div>
-<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span><span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b"> 1612</a></span><span class="preprocessor">#define BOARD_GROUP_FOREACH(line, group) \</span></div>
+<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span><span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
 </div>
 <div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span> </div>
-<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span><span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>}</div>
-<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span><span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span> </div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span> </div>
+<div class="foldopen" id="foldopen01616" data-start="" data-end="">
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e"> 1616</a></span><span class="preprocessor">#define BOARD_GROUP_DECLFOR(array, index, group)  \</span></div>
+<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span><span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group};    \</span></div>
+<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span><span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+</div>
+<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span> </div>
+<div class="foldopen" id="foldopen01620" data-start="" data-end="">
+<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v4_80_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13"> 1620</a></span><span class="preprocessor">#define BOARD_GROUP_FOR(array, index, group)  \</span></div>
+<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span><span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+</div>
+<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span> </div>
+<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span><span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
+<div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span>}</div>
+<div class="line"><a id="l01630" name="l01630"></a><span class="lineno"> 1630</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span><span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span> </div>
 <div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition</b> <a href="arch_2chibios_2board_8c_source.html#l00317">board.c:317</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -1892,7 +1900,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v4_80_2board_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a047bcdfdfeeaf1b1eee45d5b84ca8be.html">px4fmu</a></li><li class="navelem"><a class="el" href="dir_8f7644de6504f8dfc06338574588c3b1.html">chibios</a></li><li class="navelem"><a class="el" href="dir_d1a0996912fde68c928b05978f37c36b.html">v4.0</a></li><li class="navelem"><a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Aug 29 2025 14:58:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Aug 31 2025 11:28:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

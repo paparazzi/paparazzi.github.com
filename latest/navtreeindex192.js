@@ -1,5 +1,13 @@
 var NAVTREEINDEX192 =
 {
+"rover__telemetry_8c.html":[12,0,1,0,3,3,11],
+"rover__telemetry_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,3,11,0],
+"rover__telemetry_8c_source.html":[12,0,1,0,3,3,11],
+"rpm__sensor_8c.html":[12,0,1,0,6,63,83],
+"rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634":[12,0,1,0,6,63,83,6],
+"rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c":[12,0,1,0,6,63,83,4],
+"rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2":[12,0,1,0,6,63,83,3],
+"rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47":[12,0,1,0,6,63,83,5],
 "rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a":[12,0,1,0,6,63,83,1],
 "rpm__sensor_8c.html#ad04e33164164eac39848d671c94e5cec":[12,0,1,0,6,63,83,0],
 "rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177":[12,0,1,0,6,63,83,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX192 =
 "sbus__common_8h.html#aad33b862bb6166593e16a30779799b51":[12,0,1,0,6,56,16,2],
 "sbus__common_8h.html#ab8f86c137438a99b0143cc90312ee571":[12,0,1,0,6,56,16,3],
 "sbus__common_8h.html#ae8a17057cacb6e3b645d16793db3e21f":[12,0,1,0,6,56,16,6],
-"sbus__common_8h.html#aed20f5edacb96e4a94728d8e9b1adbb5":[12,0,1,0,6,56,16,0,1],
-"sbus__common_8h.html#afb790236a604cd21678b157b429e16fa":[12,0,1,0,6,56,16,4],
-"sbus__common_8h.html#structSbus":[12,0,1,0,6,56,16,0],
-"sbus__common_8h_source.html":[12,0,1,0,6,56,16],
-"sbus__dual_8c.html":[12,0,1,0,6,56,17],
-"sbus__dual_8c.html#a0391a78ae3f30e6308e3bef30963823b":[12,0,1,0,6,56,17,3],
-"sbus__dual_8c.html#a06629ac6d37929437d99cce1c4631330":[12,0,1,0,6,56,17,7],
-"sbus__dual_8c.html#a16fc1909cb36167ee2c561e1c591c017":[12,0,1,0,6,56,17,8],
-"sbus__dual_8c.html#a2c10b51827e5f39514845fc9e878a2b6":[12,0,1,0,6,56,17,5]
+"sbus__common_8h.html#aed20f5edacb96e4a94728d8e9b1adbb5":[12,0,1,0,6,56,16,0,1]
 };
