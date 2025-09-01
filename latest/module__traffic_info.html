@@ -115,7 +115,8 @@ Datalink Functions</h1>
 <li>on message <b>ACINFO_LLA</b> call parse_acinfo_dl(buf)</li>
 <li>on message <b>GPS_SMALL</b> call parse_acinfo_dl(buf)</li>
 <li>on message <b>GPS</b> call parse_acinfo_dl(buf)</li>
-<li>on message <b>GPS_LLA</b> call parse_acinfo_dl(buf) </li>
+<li>on message <b>GPS_LLA</b> call parse_acinfo_dl(buf)</li>
+<li>on message <b>GPS_INT</b> call parse_acinfo_dl(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -148,6 +149,7 @@ Raw traffic_info.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GPS_SMALL&quot;</span>   <span class="keyword">fun</span>=<span class="stringliteral">&quot;parse_acinfo_dl(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;telemetry&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GPS&quot;</span>         <span class="keyword">fun</span>=<span class="stringliteral">&quot;parse_acinfo_dl(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;telemetry&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GPS_LLA&quot;</span>     <span class="keyword">fun</span>=<span class="stringliteral">&quot;parse_acinfo_dl(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;telemetry&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;GPS_INT&quot;</span>     <span class="keyword">fun</span>=<span class="stringliteral">&quot;parse_acinfo_dl(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;telemetry&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;traffic_info.c&quot;</span>/&gt;</div>
@@ -161,7 +163,7 @@ Raw traffic_info.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sun Aug 31 2025 11:28:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Sep 1 2025 12:58:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
