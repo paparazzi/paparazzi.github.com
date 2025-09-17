@@ -1,5 +1,12 @@
 var NAVTREEINDEX166 =
 {
+"opticflow__pmw3901_8c.html#aeb8f0b0feffe8f730563d091a1b209f7":[12,0,1,0,6,63,77,0],
+"opticflow__pmw3901_8c.html#afa50262a1e494235831469694c69b177":[12,0,1,0,6,63,77,12],
+"opticflow__pmw3901_8c_source.html":[12,0,1,0,6,63,77],
+"opticflow__pmw3901_8h.html":[12,0,1,0,6,63,78],
+"opticflow__pmw3901_8h.html#a2322e65a95d068baae9381aace2519ee":[12,0,1,0,6,63,78,2],
+"opticflow__pmw3901_8h.html#a2351fcd899abe0185253547d1166f73c":[12,0,1,0,6,63,78,4],
+"opticflow__pmw3901_8h.html#a330c7c6c81f95285071531c9c55762e3":[12,0,1,0,6,63,78,0,0],
 "opticflow__pmw3901_8h.html#a540bd23afe03f8c0da12c95d2c7b8bfe":[12,0,1,0,6,63,78,0,3],
 "opticflow__pmw3901_8h.html#a5fb2c15d2dacf06185977f580770b596":[12,0,1,0,6,63,78,3],
 "opticflow__pmw3901_8h.html#a77f73cb7bff9883bc73d53decde4b0d5":[12,0,1,0,6,63,78,0,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#EMERGENCY_CMD":[2,1,55],
 "paparazzi_messages.html#END_MISSION":[2,1,27],
 "paparazzi_messages.html#ENERGY":[2,0,10],
-"paparazzi_messages.html#ENGINE_STATUS":[2,2,14],
-"paparazzi_messages.html#ESC":[2,0,236],
-"paparazzi_messages.html#ESTIMATOR":[2,0,39],
-"paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,50],
-"paparazzi_messages.html#EXTERNAL_MAG_RAW":[2,1,53],
-"paparazzi_messages.html#EXTERNAL_POSE":[2,1,34],
-"paparazzi_messages.html#EXTERNAL_POSE_DOWN":[2,0,43],
-"paparazzi_messages.html#EXTERNAL_POSE_SMALL":[2,1,35]
+"paparazzi_messages.html#ENGINE_STATUS":[2,2,14]
 };

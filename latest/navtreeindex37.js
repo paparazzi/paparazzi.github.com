@@ -1,5 +1,15 @@
 var NAVTREEINDEX37 =
 {
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#afc0d8281959c0da081d7df2d9df16701":[12,0,1,0,1,4,0,0,2,309],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#afd104f0cde2014ea9788f9e3f71de00a":[12,0,1,0,1,4,0,0,2,63],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#afd42d4db3b7dfc7e12f68466ccf55f15":[12,0,1,0,1,4,0,0,2,142],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#afd6848ba7ceed677ae8b11e47413c8b1":[12,0,1,0,1,4,0,0,2,89],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#afda450bd11b4c1408739367b23c9f852":[12,0,1,0,1,4,0,0,2,223],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#afe588bf112fc8f8a22c767aa3d3bcbb7":[12,0,1,0,1,4,0,0,2,250],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#affb519ca907542b6bff9104700c0009d":[12,0,1,0,1,4,0,0,2,152],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#affe3cd1e77dffcc0fc2de6db32042715":[12,0,1,0,1,4,0,0,2,86],
+"chimera_2chibios_2v1_80_2mcuconf__board_8h_source.html":[12,0,1,0,1,4,0,0,2],
+"chimera_8h.html":[12,0,1,0,1,4,0,0,1],
 "chimera_8h.html#a00cbc08b2249df24b1d43d5ca62df28e":[12,0,1,0,1,4,0,0,1,0],
 "chimera_8h.html#a01d0c0f27c401bfd2e594261669a4b50":[12,0,1,0,1,4,0,0,1,153],
 "chimera_8h.html#a0347be15f136fd48ab8192fa101109db":[12,0,1,0,1,4,0,0,1,139],
@@ -239,15 +249,5 @@ var NAVTREEINDEX37 =
 "cjmcu_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a":[12,0,1,0,1,31,24],
 "cjmcu_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e":[12,0,1,0,1,31,36],
 "cjmcu_8h.html#ad2aa2755e250074295573801fe54cf9a":[12,0,1,0,1,31,15],
-"cjmcu_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,31,3],
-"cjmcu_8h.html#ad5f76821cdd9ca9826c5b13902e7c16a":[12,0,1,0,1,31,47],
-"cjmcu_8h.html#add2d323f8eb544f1ab84762f94e44bd4":[12,0,1,0,1,31,26],
-"cjmcu_8h.html#add4f03b6c5c9bcabeba314491a310346":[12,0,1,0,1,31,4],
-"cjmcu_8h.html#ae009e78fb9bed3f572cc2ddcf7d01012":[12,0,1,0,1,31,42],
-"cjmcu_8h.html#ae2fd7d9fbe28f2e0fd5c6b3582dcd883":[12,0,1,0,1,31,45],
-"cjmcu_8h.html#ae40a4e27a94283e513359632ceea8de0":[12,0,1,0,1,31,31],
-"cjmcu_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a":[12,0,1,0,1,31,55],
-"cjmcu_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,31,50],
-"cjmcu_8h.html#aeffb1efc9c3b1504553532d99093578a":[12,0,1,0,1,31,22],
-"cjmcu_8h.html#af31fda99a2cc43d62229ac1c47bbe56d":[12,0,1,0,1,31,19]
+"cjmcu_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,31,3]
 };

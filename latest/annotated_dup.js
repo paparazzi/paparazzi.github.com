@@ -408,6 +408,7 @@ var annotated_dup =
     [ "camera_intrinsics_t", "video__device_8h.html#structcamera__intrinsics__t", "video__device_8h_structcamera__intrinsics__t" ],
     [ "CameraPayload", "copilot_8h.html#structCameraPayload", "copilot_8h_structCameraPayload" ],
     [ "CameraSnapshot", "copilot_8h.html#structCameraSnapshot", "copilot_8h_structCameraSnapshot" ],
+    [ "CamGimbal", "cam__gimbal_8h.html#structCamGimbal", "cam__gimbal_8h_structCamGimbal" ],
     [ "can_arch_periph", "stm32_2mcu__periph_2can__arch_8c.html#structcan__arch__periph", "stm32_2mcu__periph_2can__arch_8c_structcan__arch__periph" ],
     [ "can_periph", "can_8h.html#structcan__periph", "can_8h_structcan__periph" ],
     [ "cc2500_settings_persistent_s", "cc2500__settings_8h.html#structcc2500__settings__persistent__s", "cc2500__settings_8h_structcc2500__settings__persistent__s" ],

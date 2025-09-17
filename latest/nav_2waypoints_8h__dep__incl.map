@@ -1,27 +1,29 @@
 <map id="sw/airborne/modules/nav/waypoints.h" name="sw/airborne/modules/nav/waypoints.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5224,5,5383,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5328,5,5487,45"/>
 <area shape="rect" id="Node000002" href="$guidance__plane_8c.html" title="Guidance controller for planes with PID compatible with the rotorcraft firmware no airspeed control." alt="" coords="5,196,172,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="5210,29,4313,34,3624,42,2854,55,2065,76,1317,106,977,125,670,146,403,171,185,199,173,201,172,196,184,193,403,166,669,141,976,119,1316,101,2065,71,2854,50,3624,36,4313,29,5210,24"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="5314,29,4400,33,3697,41,2911,54,2105,75,1341,104,994,123,680,145,408,170,185,199,173,201,172,196,184,193,407,165,680,140,993,118,1340,99,2105,69,2911,49,3697,35,4400,28,5314,24"/>
 <area shape="rect" id="Node000003" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="2726,101,2897,141"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="5210,33,2897,119,2897,113,5210,27"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="5315,33,2897,119,2897,114,5314,27"/>
 <area shape="rect" id="Node000019" href="$nav__fish_8c.html" title=" " alt="" coords="4735,203,4893,243"/>
-<area shape="poly" id="edge40_Node000001_Node000019" title=" " alt="" coords="5235,52,5115,96,4972,155,4856,206,4854,201,4970,150,5113,91,5233,47"/>
+<area shape="poly" id="edge41_Node000001_Node000019" title=" " alt="" coords="5315,44,5211,65,5100,96,5029,122,4960,152,4850,206,4848,201,4958,147,5027,117,5099,91,5210,60,5314,39"/>
 <area shape="rect" id="Node000020" href="$nav__poles__rotorcraft_8c.html" title="Turn around 2 points, with possible margins Can be used in mission mode." alt="" coords="4917,203,5116,243"/>
-<area shape="poly" id="edge41_Node000001_Node000020" title=" " alt="" coords="5260,55,5195,96,5043,205,5040,201,5193,91,5257,50"/>
+<area shape="poly" id="edge42_Node000001_Node000020" title=" " alt="" coords="5316,50,5253,70,5191,96,5146,122,5104,152,5039,205,5035,201,5101,147,5143,117,5189,91,5251,65,5314,45"/>
 <area shape="rect" id="Node000027" href="$nav__takeoff__and__landing__rotorcraft_8c.html" title=" " alt="" coords="5140,196,5301,251"/>
-<area shape="poly" id="edge42_Node000001_Node000027" title=" " alt="" coords="5250,55,5228,72,5211,95,5203,120,5202,146,5213,195,5208,196,5197,147,5198,119,5206,92,5224,69,5247,50"/>
+<area shape="poly" id="edge43_Node000001_Node000027" title=" " alt="" coords="5315,37,5286,45,5257,57,5232,73,5211,95,5201,119,5199,145,5204,171,5211,195,5206,196,5199,173,5194,145,5196,117,5206,92,5228,69,5255,52,5284,40,5314,32"/>
 <area shape="rect" id="Node000030" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="5220,101,5387,141"/>
-<area shape="poly" id="edge31_Node000001_Node000030" title=" " alt="" coords="5306,59,5306,101,5301,101,5301,59"/>
-<area shape="rect" id="Node000035" href="$cv__target__localization_8c.html" title=" " alt="" coords="5411,93,5572,148"/>
-<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="5355,49,5440,91,5437,96,5352,54"/>
-<area shape="rect" id="Node000036" href="$datalink_2missionlib_2waypoints_8c.html" title="Improvement of the missionlib implementation of the waypoint protocol, truly global waypoints are use..." alt="" coords="5596,93,5755,148"/>
-<area shape="poly" id="edge37_Node000001_Node000036" title=" " alt="" coords="5397,45,5585,91,5596,94,5595,99,5584,96,5396,50"/>
-<area shape="rect" id="Node000037" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="5779,101,5937,141"/>
-<area shape="poly" id="edge38_Node000001_Node000037" title=" " alt="" coords="5397,34,5570,56,5768,91,5797,98,5796,103,5767,96,5569,61,5396,39"/>
-<area shape="rect" id="Node000038" href="$follow_8c.html" title="Follow a certain AC ID." alt="" coords="5961,101,6120,141"/>
-<area shape="poly" id="edge39_Node000001_Node000038" title=" " alt="" coords="5397,28,5648,48,5799,66,5951,91,5982,98,5980,103,5949,96,5799,71,5647,53,5396,34"/>
-<area shape="rect" id="Node000039" href="$nav_2waypoints_8c.html" title=" " alt="" coords="6144,101,6303,141"/>
-<area shape="poly" id="edge43_Node000001_Node000039" title=" " alt="" coords="5397,25,5540,30,5724,41,5928,61,6133,91,6165,98,6164,103,6132,96,5928,66,5723,47,5539,36,5396,31"/>
+<area shape="poly" id="edge31_Node000001_Node000030" title=" " alt="" coords="5378,57,5326,103,5323,99,5374,53"/>
+<area shape="rect" id="Node000035" href="$cam__gimbal_8c.html" title="Pan/Tilt camera gimbal control." alt="" coords="5411,101,5612,141"/>
+<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="5441,53,5492,99,5489,103,5437,57"/>
+<area shape="rect" id="Node000036" href="$cv__target__localization_8c.html" title=" " alt="" coords="5636,93,5797,148"/>
+<area shape="poly" id="edge37_Node000001_Node000036" title=" " alt="" coords="5484,47,5637,93,5635,98,5482,52"/>
+<area shape="rect" id="Node000037" href="$datalink_2missionlib_2waypoints_8c.html" title="Improvement of the missionlib implementation of the waypoint protocol, truly global waypoints are use..." alt="" coords="5821,93,5980,148"/>
+<area shape="poly" id="edge38_Node000001_Node000037" title=" " alt="" coords="5501,36,5647,59,5811,91,5822,93,5821,99,5809,96,5646,64,5500,42"/>
+<area shape="rect" id="Node000038" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="6004,101,6163,141"/>
+<area shape="poly" id="edge39_Node000001_Node000038" title=" " alt="" coords="5501,30,5726,51,5860,68,5993,91,6024,98,6023,103,5992,96,5859,73,5725,56,5500,35"/>
+<area shape="rect" id="Node000039" href="$follow_8c.html" title="Follow a certain AC ID." alt="" coords="6187,101,6345,141"/>
+<area shape="poly" id="edge40_Node000001_Node000039" title=" " alt="" coords="5501,26,5634,32,5802,44,5989,63,6176,91,6207,98,6206,103,6175,96,5989,68,5802,49,5633,38,5501,32"/>
+<area shape="rect" id="Node000040" href="$nav_2waypoints_8c.html" title=" " alt="" coords="6369,101,6528,141"/>
+<area shape="poly" id="edge44_Node000001_Node000040" title=" " alt="" coords="5500,24,5663,27,5877,37,6117,57,6239,72,6359,91,6391,98,6389,103,6357,96,6239,77,6117,63,5877,43,5663,33,5500,29"/>
 <area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="2712,127,1322,159,568,181,311,191,185,199,173,201,172,196,184,193,311,185,568,176,1322,154,2712,121"/>
 <area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="640,196,807,251"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2712,125,2321,130,1774,142,1489,151,1222,164,992,179,818,199,807,201,806,195,818,193,991,174,1221,158,1488,146,1773,136,2321,125,2712,120"/>

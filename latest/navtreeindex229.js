@@ -1,12 +1,5 @@
 var NAVTREEINDEX229 =
 {
-"wedgebug_8c.html#acd1a2e63fe494f35ab3c586664e7303d":[12,0,1,0,6,73,0,63],
-"wedgebug_8c.html#acf12082ce65ad773c6db6c28b188638b":[12,0,1,0,6,73,0,53],
-"wedgebug_8c.html#ad4fdca533517c0598fdb782eefd1ec20":[12,0,1,0,6,73,0,147],
-"wedgebug_8c.html#adbb99c3185ed9c13992bd9574089994f":[12,0,1,0,6,73,0,140],
-"wedgebug_8c.html#adc2b3a03d13a1d5a097a97c46bb49f93":[12,0,1,0,6,73,0,152],
-"wedgebug_8c.html#add20c4632db49ea302043d64692ed664":[12,0,1,0,6,73,0,137],
-"wedgebug_8c.html#add7b95adce16071654e32b08defea9b1":[12,0,1,0,6,73,0,29],
 "wedgebug_8c.html#adeb0459e78c214028a713bffb5f250b8":[12,0,1,0,6,73,0,162],
 "wedgebug_8c.html#ae049bce7926e6e7b28445fa2026220e2":[12,0,1,0,6,73,0,26],
 "wedgebug_8c.html#ae246e5421e75fe79db26765e42e5e337":[12,0,1,0,6,73,0,104],
@@ -249,5 +242,12 @@ var NAVTREEINDEX229 =
 "wing__rotation__adc__sensor_8h.html":[12,0,1,0,6,60,3],
 "wing__rotation__adc__sensor_8h.html#a68346ad4986a5dd7ecfe74a591abc5e2":[12,0,1,0,6,60,3,1],
 "wing__rotation__adc__sensor_8h.html#a99dc30714aa1c5f754159dedb8300dfd":[12,0,1,0,6,60,3,0],
-"wing__rotation__adc__sensor_8h_source.html":[12,0,1,0,6,60,3]
+"wing__rotation__adc__sensor_8h_source.html":[12,0,1,0,6,60,3],
+"wls__alloc_8c.html":[12,0,1,0,4,1,0],
+"wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61":[12,0,1,0,4,1,0,1],
+"wls__alloc_8c.html#a29c662bf90acd6a86c4c37c670018e2f":[12,0,1,0,4,1,0,0],
+"wls__alloc_8c.html#a7b2d37fc594c3af850d80e4c57316a99":[12,0,1,0,4,1,0,3],
+"wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d":[12,0,1,0,4,1,0,4],
+"wls__alloc_8c.html#ad8969b66ad8e977f10a7addea167d5cb":[12,0,1,0,4,1,0,2],
+"wls__alloc_8c_source.html":[12,0,1,0,4,1,0]
 };
