@@ -48,6 +48,9 @@ var guidance__indi__hybrid_8h =
     [ "guidance_indi_pitch_pref_deg", "guidance__indi__hybrid_8h.html#a5c73b14ab34c58b909ec04ba54d5758a", null ],
     [ "guidance_indi_specific_force_gain", "guidance__indi__hybrid_8h.html#ab8b7c1a3381bbab7edc1c3685cb0f7dc", null ],
     [ "guidance_indi_thrust_z_eff", "guidance__indi__hybrid_8h.html#a18e79dc1c72e8cefd39e46281c503eb6", null ],
+    [ "pitch_filt", "guidance__indi__hybrid_8h.html#a6987b53838cf70902ed70ca11492c6a7", null ],
+    [ "roll_filt", "guidance__indi__hybrid_8h.html#a19dc03ef4234ea423340bcc0c249e1cf", null ],
     [ "sp_accel", "guidance__indi__hybrid_8h.html#a596a1bce76f2a37bf46aa5149ad745d7", null ],
-    [ "take_heading_control", "guidance__indi__hybrid_8h.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ]
+    [ "take_heading_control", "guidance__indi__hybrid_8h.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ],
+    [ "yaw_filt", "guidance__indi__hybrid_8h.html#aa871c61fc3c85227c525a091f0f78019", null ]
 ];

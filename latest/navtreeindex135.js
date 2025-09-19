@@ -1,5 +1,9 @@
 var NAVTREEINDEX135 =
 {
+"module__stabilization_plane_pid.html#module_load_example__stabilization_plane_pid":[1,453,0],
+"module__stabilization_plane_pid.html#module_xml__stabilization_plane_pid":[1,453,2,0],
+"module__stabilization_rate.html":[1,454],
+"module__stabilization_rate.html#configuration__stabilization_rate":[1,454,1],
 "module__stabilization_rate.html#functions__stabilization_rate":[1,454,2],
 "module__stabilization_rate.html#module_load_example__stabilization_rate":[1,454,0],
 "module__stabilization_rate.html#module_xml__stabilization_rate":[1,454,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX135 =
 "module__udp.html#sources":[1,287,1,1],
 "module__usb_serial_stm32_example1.html":[1,54],
 "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1":[1,54,1],
-"module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1":[1,54,0],
-"module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1":[1,54,1,0],
-"module__usb_serial_stm32_example2.html":[1,55],
-"module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2":[1,55,1],
-"module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2":[1,55,0]
+"module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1":[1,54,0]
 };

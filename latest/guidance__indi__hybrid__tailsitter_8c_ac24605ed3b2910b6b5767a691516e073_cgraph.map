@@ -1,21 +1,9 @@
 <map id="guidance_indi_calcg_wing" name="guidance_indi_calcg_wing">
-<area shape="rect" id="Node000001" title="Calculate the matrix of partial derivatives of the roll, pitch and thrust w.r.t." alt="" coords="5,80,196,105"/>
-<area shape="rect" id="Node000002" href="$group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="249,5,433,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,77,243,39,271,32,272,37,245,45,136,82"/>
-<area shape="rect" id="Node000003" href="$guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="255,55,427,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,80,241,75,242,80,196,85"/>
-<area shape="rect" id="Node000004" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="268,104,415,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,99,255,105,254,111,196,105"/>
-<area shape="rect" id="Node000006" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="244,153,439,179"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="138,103,245,138,277,147,275,152,243,143,137,108"/>
-<area shape="rect" id="Node000005" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="490,104,642,129"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="415,114,476,114,476,119,415,119"/>
-<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="487,153,645,179"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="439,163,473,163,473,169,439,169"/>
-<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="693,153,857,179"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="645,163,679,163,679,169,645,169"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="905,128,1060,153"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="857,153,891,149,892,154,858,159"/>
-<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="910,177,1055,203"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="858,173,896,177,896,183,857,178"/>
+<area shape="rect" id="Node000001" title="Calculate the matrix of partial derivatives of the roll, pitch and thrust w.r.t." alt="" coords="5,31,196,56"/>
+<area shape="rect" id="Node000002" href="$guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="244,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,30,230,26,231,32,196,35"/>
+<area shape="rect" id="Node000003" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="257,55,403,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,51,244,56,243,61,196,56"/>
+<area shape="rect" id="Node000004" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="464,55,616,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,65,450,65,450,70,404,70"/>
 </map>

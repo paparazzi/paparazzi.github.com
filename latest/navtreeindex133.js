@@ -1,5 +1,9 @@
 var NAVTREEINDEX133 =
 {
+"module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft":[1,329,1],
+"module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft":[1,329,0],
+"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,329,1,0],
+"module__nav_bungee_takeoff.html":[1,330],
 "module__nav_bungee_takeoff.html#configuration__nav_bungee_takeoff":[1,330,1],
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,330,0],
 "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,330,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX133 =
 "module__power_uavcan.html":[1,429],
 "module__power_uavcan.html#configuration__power_uavcan":[1,429,1],
 "module__power_uavcan.html#functions__power_uavcan":[1,429,2],
-"module__power_uavcan.html#module_load_example__power_uavcan":[1,429,0],
-"module__power_uavcan.html#module_xml__power_uavcan":[1,429,2,0],
-"module__pprzlog.html":[1,276],
-"module__pprzlog.html#functions__pprzlog":[1,276,1],
-"module__pprzlog.html#module_load_example__pprzlog":[1,276,0]
+"module__power_uavcan.html#module_load_example__power_uavcan":[1,429,0]
 };

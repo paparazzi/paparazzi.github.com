@@ -1,13 +1,17 @@
 var NAVTREEINDEX202 =
 {
+"stabilization__indi__simple_8h.html#aad408aa55ec7cd11f1354db45fa08c39":[12,0,1,0,3,2,2,39,3],
+"stabilization__indi__simple_8h.html#ab67e9db78639b858f3605e0c23ee2808":[12,0,1,0,3,2,2,39,2,1],
+"stabilization__indi__simple_8h.html#ab7d1e27c6059abe21e47ced97e3b89e5":[12,0,1,0,3,2,2,39,8],
+"stabilization__indi__simple_8h.html#abd520cccf7a02ac228329fc554c67fa2":[12,0,1,0,3,2,2,39,2,8],
 "stabilization__indi__simple_8h.html#ac485a99bf760844a871e965bf92d96f8":[12,0,1,0,3,2,2,39,1,7],
 "stabilization__indi__simple_8h.html#ad855728941014914e87de5b636ad1a7b":[12,0,1,0,3,2,2,39,1,0],
 "stabilization__indi__simple_8h.html#aded0520120adfd64d960796a458cb38b":[12,0,1,0,3,2,2,39,2,3],
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,39,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,39,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,39,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,37,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,39,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,37,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,39],
 "stabilization__oneloop_8c.html":[12,0,1,0,3,2,2,40],
 "stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,40,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX202 =
 "stm32_2modules_2core_2settings__arch_8c.html#a1aa5b8f990702e097bda602bc2464014":[12,0,1,0,0,3,1,1,0,0,0],
 "stm32_2modules_2core_2settings__arch_8c.html#a22c9ce72b72cd4dfe56c4008626cff19":[12,0,1,0,0,3,1,1,0,8],
 "stm32_2modules_2core_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2":[12,0,1,0,0,3,1,1,0,10],
-"stm32_2modules_2core_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb":[12,0,1,0,0,3,1,1,0,1],
-"stm32_2modules_2core_2settings__arch_8c.html#a6c625081eebc2da015cedc450022605b":[12,0,1,0,0,3,1,1,0,2],
-"stm32_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,0,3,1,1,0,6],
-"stm32_2modules_2core_2settings__arch_8c.html#a6e9ee5b58a0f71f5267a43dbca4fc5b5":[12,0,1,0,0,3,1,1,0,4],
-"stm32_2modules_2core_2settings__arch_8c.html#a7543f406b9b1ae37e5aa7f55e980f252":[12,0,1,0,0,3,1,1,0,0,3]
+"stm32_2modules_2core_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb":[12,0,1,0,0,3,1,1,0,1]
 };

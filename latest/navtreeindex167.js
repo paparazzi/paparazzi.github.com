@@ -1,5 +1,9 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#EMERGENCY_CMD":[2,1,55],
+"paparazzi_messages.html#END_MISSION":[2,1,27],
+"paparazzi_messages.html#ENERGY":[2,0,10],
+"paparazzi_messages.html#ENGINE_STATUS":[2,2,14],
 "paparazzi_messages.html#ESC":[2,0,236],
 "paparazzi_messages.html#ESTIMATOR":[2,0,39],
 "paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,50],
@@ -245,9 +249,5 @@ var NAVTREEINDEX167 =
 "paparazzi_messages.html#TUNE_VERT":[2,0,204],
 "paparazzi_messages.html#TURB_PRESSURE_VOLTAGE":[2,0,57],
 "paparazzi_messages.html#UART_ERRORS":[2,0,200],
-"paparazzi_messages.html#UBLOX_INFO":[2,0,69],
-"paparazzi_messages.html#VECTORNAV_INFO":[2,0,20],
-"paparazzi_messages.html#VERT_LOOP":[2,0,140],
-"paparazzi_messages.html#VFF":[2,0,157],
-"paparazzi_messages.html#VFF_EXTENDED":[2,0,156]
+"paparazzi_messages.html#UBLOX_INFO":[2,0,69]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX132 =
 {
+"module__ins_xsens.html#module_load_example__ins_xsens":[1,252,0],
+"module__ins_xsens.html#module_xml__ins_xsens":[1,252,2,0],
+"module__ins_xsens700.html":[1,253],
+"module__ins_xsens700.html#configuration__ins_xsens700":[1,253,1],
 "module__ins_xsens700.html#functions__ins_xsens700":[1,253,2],
 "module__ins_xsens700.html#module_load_example__ins_xsens700":[1,253,0],
 "module__ins_xsens700.html#module_xml__ins_xsens700":[1,253,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX132 =
 "module__nav_basic_fw.html#functions__nav_basic_fw":[1,328,2],
 "module__nav_basic_fw.html#module_load_example__nav_basic_fw":[1,328,0],
 "module__nav_basic_fw.html#module_xml__nav_basic_fw":[1,328,3,0],
-"module__nav_basic_rotorcraft.html":[1,329],
-"module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft":[1,329,1],
-"module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft":[1,329,0],
-"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,329,1,0],
-"module__nav_bungee_takeoff.html":[1,330]
+"module__nav_basic_rotorcraft.html":[1,329]
 };

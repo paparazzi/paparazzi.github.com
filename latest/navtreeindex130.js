@@ -1,5 +1,9 @@
 var NAVTREEINDEX130 =
 {
+"module__gps_datalink.html#datalink_functions__gps_datalink":[1,157,2],
+"module__gps_datalink.html#functions__gps_datalink":[1,157,1],
+"module__gps_datalink.html#module_load_example__gps_datalink":[1,157,0],
+"module__gps_datalink.html#module_xml__gps_datalink":[1,157,2,0],
 "module__gps_furuno.html":[1,158],
 "module__gps_furuno.html#configuration__gps_furuno":[1,158,1],
 "module__gps_furuno.html#functions__gps_furuno":[1,158,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX130 =
 "module__imu_ardrone2.html#module_xml__imu_ardrone2":[1,193,1,0],
 "module__imu_aspirin_common.html":[1,194],
 "module__imu_aspirin_common.html#configuration__imu_aspirin_common":[1,194,1],
-"module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,194,2],
-"module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,194,0],
-"module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,194,2,0],
-"module__imu_aspirin_i2c_common.html":[1,195],
-"module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common":[1,195,1]
+"module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,194,2]
 };

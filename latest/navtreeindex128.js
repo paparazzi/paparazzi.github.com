@@ -1,5 +1,9 @@
 var NAVTREEINDEX128 =
 {
+"module__baro_hca.html":[1,408],
+"module__baro_hca.html#configuration__baro_hca":[1,408,1],
+"module__baro_hca.html#functions__baro_hca":[1,408,2],
+"module__baro_hca.html#module_load_example__baro_hca":[1,408,0],
 "module__baro_hca.html#module_xml__baro_hca":[1,408,2,0],
 "module__baro_mpl3115.html":[1,409],
 "module__baro_mpl3115.html#configuration__baro_mpl3115":[1,409,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX128 =
 "module__demo_module.html":[1,478],
 "module__demo_module.html#functions__demo_module":[1,478,1],
 "module__demo_module.html#module_load_example__demo_module":[1,478,0],
-"module__demo_module.html#module_xml__demo_module":[1,478,1,0],
-"module__dfu_command.html":[1,479],
-"module__dfu_command.html#functions__dfu_command":[1,479,1],
-"module__dfu_command.html#module_load_example__dfu_command":[1,479,0],
-"module__dfu_command.html#module_xml__dfu_command":[1,479,1,0]
+"module__demo_module.html#module_xml__demo_module":[1,478,1,0]
 };

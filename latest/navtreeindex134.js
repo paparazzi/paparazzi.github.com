@@ -1,5 +1,9 @@
 var NAVTREEINDEX134 =
 {
+"module__power_uavcan.html#module_xml__power_uavcan":[1,429,2,0],
+"module__pprzlog.html":[1,276],
+"module__pprzlog.html#functions__pprzlog":[1,276,1],
+"module__pprzlog.html#module_load_example__pprzlog":[1,276,0],
 "module__pprzlog.html#module_xml__pprzlog":[1,276,1,0],
 "module__preflight_checks.html":[1,52],
 "module__preflight_checks.html#configuration__preflight_checks":[1,52,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__stabilization_passthrough.html#module_xml__stabilization_passthrough":[1,452,0,0],
 "module__stabilization_plane_pid.html":[1,453],
 "module__stabilization_plane_pid.html#configuration__stabilization_plane_pid":[1,453,1],
-"module__stabilization_plane_pid.html#functions__stabilization_plane_pid":[1,453,2],
-"module__stabilization_plane_pid.html#module_load_example__stabilization_plane_pid":[1,453,0],
-"module__stabilization_plane_pid.html#module_xml__stabilization_plane_pid":[1,453,2,0],
-"module__stabilization_rate.html":[1,454],
-"module__stabilization_rate.html#configuration__stabilization_rate":[1,454,1]
+"module__stabilization_plane_pid.html#functions__stabilization_plane_pid":[1,453,2]
 };

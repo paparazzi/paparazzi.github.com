@@ -1,5 +1,9 @@
 var NAVTREEINDEX126 =
 {
+"microrl_8c.html#abfaa66291b4a019fc9e2324790c43d01":[12,0,1,0,0,0,1,1,0,0,11],
+"microrl_8c.html#adf9a8154424a827f0d728dd150ee647e":[12,0,1,0,0,0,1,1,0,0,19],
+"microrl_8c.html#ae876b667ebc64a55993328145a3c2763":[12,0,1,0,0,0,1,1,0,0,14],
+"microrl_8c.html#afcf7a64ba9d06d6881fbe141129826a5":[12,0,1,0,0,0,1,1,0,0,13],
 "microrl_8c.html#affa9b5e304f9ccbf148182fad193f7f5":[12,0,1,0,0,0,1,1,0,0,23],
 "microrl_8c_source.html":[12,0,1,0,0,0,1,1,0,0],
 "microrl_8h.html":[12,0,1,0,0,0,1,1,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX126 =
 "module__actuators_dshot.html#configuration__actuators_dshot":[1,6,1],
 "module__actuators_dshot.html#module_load_example__actuators_dshot":[1,6,0],
 "module__actuators_dshot.html#module_xml__actuators_dshot":[1,6,1,0],
-"module__actuators_dualpwm.html":[1,7],
-"module__actuators_dualpwm.html#module_load_example__actuators_dualpwm":[1,7,0],
-"module__actuators_dualpwm.html#module_xml__actuators_dualpwm":[1,7,0,0],
-"module__actuators_dummy.html":[1,8],
-"module__actuators_dummy.html#module_load_example__actuators_dummy":[1,8,0]
+"module__actuators_dualpwm.html":[1,7]
 };
