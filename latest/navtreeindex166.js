@@ -1,5 +1,11 @@
 var NAVTREEINDEX166 =
 {
+"opticflow__pmw3901_8c.html#a2351fcd899abe0185253547d1166f73c":[12,0,1,0,6,63,77,14],
+"opticflow__pmw3901_8c.html#a5584a920011028006d3e7aee4a8178aa":[12,0,1,0,6,63,77,3],
+"opticflow__pmw3901_8c.html#a5fb2c15d2dacf06185977f580770b596":[12,0,1,0,6,63,77,9],
+"opticflow__pmw3901_8c.html#a60140676d3a419b54d6a2a8294e4b994":[12,0,1,0,6,63,77,10],
+"opticflow__pmw3901_8c.html#a638703b0151fe6e287f8917113740fd5":[12,0,1,0,6,63,77,13],
+"opticflow__pmw3901_8c.html#a7266d71f926f1ff406cde1f6067177ac":[12,0,1,0,6,63,77,5],
 "opticflow__pmw3901_8c.html#ab79744059ba274056fbfa0471ceef54d":[12,0,1,0,6,63,77,11],
 "opticflow__pmw3901_8c.html#abc3a122cca7165b73878597fb5894c6b":[12,0,1,0,6,63,77,1],
 "opticflow__pmw3901_8c.html#abe5ad65e14456805dca97f78767ef811":[12,0,1,0,6,63,77,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#DIVERGENCE":[2,0,215],
 "paparazzi_messages.html#DL_EMERGENCY_CMD":[2,2,37],
 "paparazzi_messages.html#DL_SETTING":[2,2,24],
-"paparazzi_messages.html#DL_VALUE":[2,0,28],
-"paparazzi_messages.html#DL_VALUES":[2,2,26],
-"paparazzi_messages.html#DOUBLET":[2,0,178],
-"paparazzi_messages.html#DPICCO_STATUS":[2,0,86],
-"paparazzi_messages.html#DRAGSPEED":[2,0,35],
-"paparazzi_messages.html#EFF_MAT_GUID":[2,0,181],
-"paparazzi_messages.html#EFF_MAT_STAB":[2,0,180]
+"paparazzi_messages.html#DL_VALUE":[2,0,28]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672":[12,0,1,0,1,2,0,0,9,11,0],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#ae462bcb7442c1154607d0de57c9de6a4":[12,0,1,0,1,2,0,0,9,6,8],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aec32af15d6c4647e925e2396445c34c2":[12,0,1,0,1,2,0,0,9,6,5],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aeef2c48ab75694ad409067df9ba665df":[12,0,1,0,1,2,0,0,9,16],
@@ -81,8 +82,8 @@ var NAVTREEINDEX18 =
 "avi__isp__green__imbalance_8h.html#a5a20ff7e4db6e4fcce8fcfb9210594fd":[12,0,1,0,1,2,0,0,11,10,0],
 "avi__isp__green__imbalance_8h.html#a6280fab309c9db7777263dd5cafdf673":[12,0,1,0,1,2,0,0,11,9,2],
 "avi__isp__green__imbalance_8h.html#a68c807027f85802bbdb2ed476b944c7a":[12,0,1,0,1,2,0,0,11,12,0],
-"avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,16,0],
 "avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,15,0],
+"avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,16,0],
 "avi__isp__green__imbalance_8h.html#a8471b95191ea7bb72123cbd94c673303":[12,0,1,0,1,2,0,0,11,9,8],
 "avi__isp__green__imbalance_8h.html#a859ac666dc773a9e7507b28994943d2e":[12,0,1,0,1,2,0,0,11,9,5],
 "avi__isp__green__imbalance_8h.html#a987bcab01b929eb2c07877b224215c92":[12,0,1,0,1,2,0,0,11,22,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__offset__x__y":[12,0,1,0,1,2,0,0,13,1],
 "avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__red__coeff__mem":[12,0,1,0,1,2,0,0,13,12],
 "avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__threshold":[12,0,1,0,1,2,0,0,13,9],
-"avi__isp__lens__shading__correction_8h_source.html":[12,0,1,0,1,2,0,0,13],
-"avi__isp__pedestal_8h.html":[12,0,1,0,1,2,0,0,14]
+"avi__isp__lens__shading__correction_8h_source.html":[12,0,1,0,1,2,0,0,13]
 };

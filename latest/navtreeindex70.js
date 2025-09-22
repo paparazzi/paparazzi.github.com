@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573":[9,9,2,2,49],
 "group__math__geodetic__int.html#ga8ee697258e642d07a106990cd3531476":[9,9,2,2,34],
 "group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6":[9,9,2,2,60],
 "group__math__geodetic__int.html#ga9e790f2976951646b5e467c4843aa830":[9,9,2,2,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "group__spi.html#structspi__transaction":[9,0,1,0],
 "group__state__acceleration.html":[9,4,2],
 "group__state__acceleration.html#ga0a85ee9e95009a2b8254012520a9f963":[9,4,2,1],
-"group__state__acceleration.html#ga0fcd0e2c93e5d5b7490650e2e69bf716":[9,4,2,17],
-"group__state__acceleration.html#ga142268eef832ae8363e8e1cab5a5fbdb":[9,4,2,21]
+"group__state__acceleration.html#ga0fcd0e2c93e5d5b7490650e2e69bf716":[9,4,2,17]
 };

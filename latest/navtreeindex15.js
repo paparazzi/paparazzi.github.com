@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"ardrone_2baro__board_8c.html":[12,0,1,0,1,1,2],
 "ardrone_2baro__board_8c.html#a0b8ffa9cd76fa9a3bf11035c1734c5ec":[12,0,1,0,1,1,2,0],
 "ardrone_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00":[12,0,1,0,1,1,2,5],
 "ardrone_2baro__board_8c.html#a324cbe14bc8cfd2eb549bdd524dfb56d":[12,0,1,0,1,1,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "avi__isp__chain__bayer__inter_8h.html#a64a13421269896e9694ef3b7bb86ecc6":[12,0,1,0,1,2,0,0,1,2,2],
 "avi__isp__chain__bayer__inter_8h.html#a6b93bf8202be79398ca1e4c16dd52fca":[12,0,1,0,1,2,0,0,1,2,6],
 "avi__isp__chain__bayer__inter_8h.html#a8e474a6939f733a35f4da5716c234b16":[12,0,1,0,1,2,0,0,1,2,7],
-"avi__isp__chain__bayer__inter_8h.html#a9d49856ba1787fdba850ea4cd46fc735":[12,0,1,0,1,2,0,0,1,0,0],
-"avi__isp__chain__bayer__inter_8h.html#ab871324953a604dc8557a2f33482d75d":[12,0,1,0,1,2,0,0,1,2,3]
+"avi__isp__chain__bayer__inter_8h.html#a9d49856ba1787fdba850ea4cd46fc735":[12,0,1,0,1,2,0,0,1,0,0]
 };

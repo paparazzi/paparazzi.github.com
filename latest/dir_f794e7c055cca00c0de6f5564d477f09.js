@@ -6,6 +6,8 @@ var dir_f794e7c055cca00c0de6f5564d477f09 =
     [ "sonar_adc.h", "sonar__adc_8h.html", "sonar__adc_8h" ],
     [ "sonar_bebop.c", "sonar__bebop_8c.html", "sonar__bebop_8c" ],
     [ "sonar_bebop.h", "sonar__bebop_8h.html", "sonar__bebop_8h" ],
+    [ "sonar_i2c.c", "sonar__i2c_8c.html", "sonar__i2c_8c" ],
+    [ "sonar_i2c.h", "sonar__i2c_8h.html", "sonar__i2c_8h" ],
     [ "sonar_pwm.c", "sonar__pwm_8c.html", "sonar__pwm_8c" ],
     [ "sonar_pwm.h", "sonar__pwm_8h.html", "sonar__pwm_8h" ],
     [ "sonar_vl53l1x.c", "sonar__vl53l1x_8c.html", "sonar__vl53l1x_8c" ],

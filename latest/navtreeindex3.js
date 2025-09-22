@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"actuators__ostrich_8h.html#ae47b4a3b2d75b6b733eb0f9c5d72a372":[12,0,1,0,6,0,17,5],
 "actuators__ostrich_8h.html#ae6c3c8331ecd7eec19eeeeb655d7a7fb":[12,0,1,0,6,0,17,1],
 "actuators__ostrich_8h.html#aff23ffae054eb5d6bd6371c851c3f889":[12,0,1,0,6,0,17,4],
 "actuators__ostrich_8h.html#structActuatorsOstrich":[12,0,1,0,6,0,17,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "adc__generic_8c.html#a1422eb3e4ee968561f0402e95e538db9":[12,0,1,0,6,1,0,3],
 "adc__generic_8c.html#a5d3cd37fdd77f995b25ed0837831e829":[12,0,1,0,6,1,0,2],
 "adc__generic_8c.html#a921929cb395752c1d04927b087657679":[12,0,1,0,6,1,0,5],
-"adc__generic_8c.html#acb13ab9736ba7063ff44ba82e81515ab":[12,0,1,0,6,1,0,0],
-"adc__generic_8c.html#ace7f1a9a97c5936444f016726eecd13d":[12,0,1,0,6,1,0,4]
+"adc__generic_8c.html#acb13ab9736ba7063ff44ba82e81515ab":[12,0,1,0,6,1,0,0]
 };

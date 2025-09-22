@@ -15,6 +15,7 @@ var abi__sender__ids_8h =
     [ "AGL_RAY_SENSOR_GAZEBO_ID", "abi__sender__ids_8h.html#afbb74ef0a48046d3fc24b5784de583e2", null ],
     [ "AGL_SONAR_ADC_ID", "abi__sender__ids_8h.html#a01bcd618275bfe0ec614b8a5e55c721c", null ],
     [ "AGL_SONAR_ARDRONE2_ID", "abi__sender__ids_8h.html#a715abb3cb7beab0b61ade3e6d879c359", null ],
+    [ "AGL_SONAR_I2C_ID", "abi__sender__ids_8h.html#a5bceff6983cc592a45dfc70b462f89ba", null ],
     [ "AGL_SONAR_NPS_ID", "abi__sender__ids_8h.html#ac022006b32de8b252c1cf60c097f4ff2", null ],
     [ "AGL_SONAR_PWM_ID", "abi__sender__ids_8h.html#aac93a193a136753365b6d5e55767c1a6", null ],
     [ "AGL_SONAR_PX4FLOW_ID", "abi__sender__ids_8h.html#a071007cc95b5ea7af87171928a27c588", null ],

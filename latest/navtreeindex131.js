@@ -1,5 +1,6 @@
 var NAVTREEINDEX131 =
 {
+"module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,194,2],
 "module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,194,0],
 "module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,194,2,0],
 "module__imu_aspirin_i2c_common.html":[1,195],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__ins_vn100.html#module_load_example__ins_vn100":[1,251,0],
 "module__ins_vn100.html#module_xml__ins_vn100":[1,251,2,0],
 "module__ins_xsens.html":[1,252],
-"module__ins_xsens.html#configuration__ins_xsens":[1,252,1],
-"module__ins_xsens.html#functions__ins_xsens":[1,252,2]
+"module__ins_xsens.html#configuration__ins_xsens":[1,252,1]
 };

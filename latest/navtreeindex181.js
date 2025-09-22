@@ -1,5 +1,11 @@
 var NAVTREEINDEX181 =
 {
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a71fda7273ead6331f250642d18e55b25":[12,0,1,0,1,21,0,2,1,108],
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a7256aa7c13b88f877cfb8d4913dcec0a":[12,0,1,0,1,21,0,2,1,15],
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a730e1cfbd99b7f3a0e6cdf03b224c9f4":[12,0,1,0,1,21,0,2,1,32],
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a73a198b443047d1c7f0c8a63814f10b4":[12,0,1,0,1,21,0,2,1,119],
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a742ec02fd96ff66ed1de33aef54f0707":[12,0,1,0,1,21,0,2,1,49],
+"px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a7570f6862f2950a7fee73f18bb9358d5":[12,0,1,0,1,21,0,2,1,240],
 "px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a75b831d797ee0373adbd64ecb8fea802":[12,0,1,0,1,21,0,2,1,115],
 "px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a7607417f985da8e638c7871afc61003a":[12,0,1,0,1,21,0,2,1,145],
 "px4fmu_2chibios_2v5_80_2mcuconf__board_8h.html#a7625378f7bf7e1a50a58739742839619":[12,0,1,0,1,21,0,2,1,150],
@@ -243,11 +249,5 @@ var NAVTREEINDEX181 =
 "px4fmu_2chibios_2v6x_2board_8h.html#a23b852717da1a79cf14f8240e670bebc":[12,0,1,0,1,21,0,3,0,133],
 "px4fmu_2chibios_2v6x_2board_8h.html#a24bdcd9c01b9e39d4a3b7ab8e31086d9":[12,0,1,0,1,21,0,3,0,9],
 "px4fmu_2chibios_2v6x_2board_8h.html#a24beff62231ef97276e94d1b9a3fa7e3":[12,0,1,0,1,21,0,3,0,552],
-"px4fmu_2chibios_2v6x_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b":[12,0,1,0,1,21,0,3,0,524],
-"px4fmu_2chibios_2v6x_2board_8h.html#a2597f29179b2ee84dc09fc3b745c278a":[12,0,1,0,1,21,0,3,0,221],
-"px4fmu_2chibios_2v6x_2board_8h.html#a261e4c29789852a3dc85d696f0fa57b6":[12,0,1,0,1,21,0,3,0,511],
-"px4fmu_2chibios_2v6x_2board_8h.html#a265f48251f72bfd31b4cd2b4be99fdd4":[12,0,1,0,1,21,0,3,0,352],
-"px4fmu_2chibios_2v6x_2board_8h.html#a267bedb5ede44072bc2bf5159e7bc592":[12,0,1,0,1,21,0,3,0,323],
-"px4fmu_2chibios_2v6x_2board_8h.html#a269210e18b43a8097029853fcccc851a":[12,0,1,0,1,21,0,3,0,325],
-"px4fmu_2chibios_2v6x_2board_8h.html#a272a2fff1b86606181b894d2a1946d50":[12,0,1,0,1,21,0,3,0,322]
+"px4fmu_2chibios_2v6x_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b":[12,0,1,0,1,21,0,3,0,524]
 };

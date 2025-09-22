@@ -1,5 +1,11 @@
 var NAVTREEINDEX192 =
 {
+"rover__obstacles_8h.html#structbayesian__map":[12,0,1,0,3,3,1,1,0],
+"rover__obstacles_8h.html#structworld__grid":[12,0,1,0,3,3,1,1,1],
+"rover__obstacles_8h_source.html":[12,0,1,0,3,3,1,1],
+"rover__telemetry_8c.html":[12,0,1,0,3,3,11],
+"rover__telemetry_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,3,11,0],
+"rover__telemetry_8c_source.html":[12,0,1,0,3,3,11],
 "rpm__sensor_8c.html":[12,0,1,0,6,63,83],
 "rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634":[12,0,1,0,6,63,83,6],
 "rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c":[12,0,1,0,6,63,83,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX192 =
 "sbus__common_8h.html#a8b17407e22cf99161338bbcc49f43c78":[12,0,1,0,6,56,16,0,0],
 "sbus__common_8h.html#a962b9942b2dfacf94028a3c538341b4e":[12,0,1,0,6,56,16,5],
 "sbus__common_8h.html#a9d0086da907b3573a0b6694319b2fe56":[12,0,1,0,6,56,16,0,5],
-"sbus__common_8h.html#aad33b862bb6166593e16a30779799b51":[12,0,1,0,6,56,16,2],
-"sbus__common_8h.html#ab8f86c137438a99b0143cc90312ee571":[12,0,1,0,6,56,16,3],
-"sbus__common_8h.html#ae8a17057cacb6e3b645d16793db3e21f":[12,0,1,0,6,56,16,6],
-"sbus__common_8h.html#aed20f5edacb96e4a94728d8e9b1adbb5":[12,0,1,0,6,56,16,0,1],
-"sbus__common_8h.html#afb790236a604cd21678b157b429e16fa":[12,0,1,0,6,56,16,4],
-"sbus__common_8h.html#structSbus":[12,0,1,0,6,56,16,0],
-"sbus__common_8h_source.html":[12,0,1,0,6,56,16]
+"sbus__common_8h.html#aad33b862bb6166593e16a30779799b51":[12,0,1,0,6,56,16,2]
 };

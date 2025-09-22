@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"crazyflie_8h.html#aeffb1efc9c3b1504553532d99093578a":[12,0,1,0,1,5,0,0,1,18],
 "crazyflie_8h.html#af31fda99a2cc43d62229ac1c47bbe56d":[12,0,1,0,1,5,0,0,1,16],
 "crazyflie_8h.html#af754c909b4a07f3a9bfd585238432b00":[12,0,1,0,1,5,0,0,1,23],
 "crazyflie_8h.html#af93888595216eb71acfec667e7b5bdd2":[12,0,1,0,1,5,0,0,1,55],
@@ -187,11 +188,11 @@ var NAVTREEINDEX43 =
 "ctrl__module__outerloop__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06":[12,0,1,0,6,14,6,1],
 "ctrl__module__outerloop__demo_8c.html#a456c94c12816e888ec7c301022ef3a17":[12,0,1,0,6,14,4,0,2],
 "ctrl__module__outerloop__demo_8c.html#a456c94c12816e888ec7c301022ef3a17":[12,0,1,0,6,14,6,0,2],
-"ctrl__module__outerloop__demo_8c.html#a576f54ea6321f1f804c68c195a443361":[12,0,1,0,6,14,4,0,3],
 "ctrl__module__outerloop__demo_8c.html#a576f54ea6321f1f804c68c195a443361":[12,0,1,0,6,14,6,0,3],
+"ctrl__module__outerloop__demo_8c.html#a576f54ea6321f1f804c68c195a443361":[12,0,1,0,6,14,4,0,3],
 "ctrl__module__outerloop__demo_8c.html#a65d1374971ec8fcd7acb34d920dccacb":[12,0,1,0,6,14,6,5],
-"ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,4,0,4],
 "ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,6,0,4],
+"ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,4,0,4],
 "ctrl__module__outerloop__demo_8c.html#a86f8d5ff39d4d80c8ed85eff8cd9a502":[12,0,1,0,6,14,6,0,5],
 "ctrl__module__outerloop__demo_8c.html#a86f8d5ff39d4d80c8ed85eff8cd9a502":[12,0,1,0,6,14,4,0,5],
 "ctrl__module__outerloop__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4":[12,0,1,0,6,14,6,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "cube_2orange_2board_8h.html#a0017443cf18b6d2c1d1bf178b2318d81":[12,0,1,0,1,6,0,0,77],
 "cube_2orange_2board_8h.html#a003e73742eded3ff686411f93421b9eb":[12,0,1,0,1,6,0,0,164],
 "cube_2orange_2board_8h.html#a014c77925a12bdf090ad6cfbc7d0f2a7":[12,0,1,0,1,6,0,0,32],
-"cube_2orange_2board_8h.html#a0199ba1120000b8455008cdd00650b91":[12,0,1,0,1,6,0,0,85],
-"cube_2orange_2board_8h.html#a02581754b212d533d96cde56c8145c9b":[12,0,1,0,1,6,0,0,122]
+"cube_2orange_2board_8h.html#a0199ba1120000b8455008cdd00650b91":[12,0,1,0,1,6,0,0,85]
 };

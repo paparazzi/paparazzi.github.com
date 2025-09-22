@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"baro__ets_8c.html#a96839d4b74df9e3c49695989b344bac1":[12,0,1,0,6,63,36,14],
 "baro__ets_8c.html#a9b73f1b123bdb65f66fc7f1cf4f3cd0d":[12,0,1,0,6,63,36,18],
 "baro__ets_8c.html#a9e1cf0fde1a806764399e3902cb70c88":[12,0,1,0,6,63,36,7],
 "baro__ets_8c.html#aa60c4ed3c973466fa3541555b8115a12":[12,0,1,0,6,63,36,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84a6e2058e88bc367ec2d55bb48a293c160":[12,0,1,0,6,1,3,19,5],
 "battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84aa429c9f072e669c7d6064a0649f0485a":[12,0,1,0,6,1,3,19,1],
 "battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84adbb436907c2f6b9df0142636fa17a798":[12,0,1,0,6,1,3,19,4],
-"battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4":[12,0,1,0,6,1,3,31],
-"battery__monitor_8h.html#a664f11aa5d4ec0536d311f10268cc691":[12,0,1,0,6,1,3,13]
+"battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4":[12,0,1,0,6,1,3,31]
 };

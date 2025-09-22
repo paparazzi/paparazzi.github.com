@@ -1,5 +1,6 @@
 var NAVTREEINDEX87 =
 {
+"imu__px4fmu__v2_84_8h.html#structImuPX4":[12,0,1,0,6,36,43,0],
 "imu__px4fmu__v2_84_8h_source.html":[12,0,1,0,6,36,43],
 "imu__quality__assessment_8c.html":[12,0,1,0,6,5,4],
 "imu__quality__assessment_8c.html#a357ee29b472868ca516eef72bacb7fba":[12,0,1,0,6,5,4,2],
@@ -66,8 +67,8 @@ var NAVTREEINDEX87 =
 "imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd":[12,0,1,0,6,37,7,0],
 "imu__xsens_8h.html#ae98fa030dfb8217636d62dd368d3f375":[12,0,1,0,6,37,7,1],
 "imu__xsens_8h_source.html":[12,0,1,0,6,37,7],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md2":[0,0,0],
 "index.html#autotoc_md3":[0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX87 =
 "ins__ekf2_8cpp.html#a359b827ae64da4b578ea9e25e273ba18":[12,0,1,0,6,37,16,49],
 "ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8":[12,0,1,0,6,37,16,63],
 "ins__ekf2_8cpp.html#a38cb06612986df226f29ce29c93450e8":[12,0,1,0,6,37,16,81],
-"ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f":[12,0,1,0,6,37,16,52],
-"ins__ekf2_8cpp.html#a4092df9bf43189e1c89451043b71ae13":[12,0,1,0,6,37,16,36]
+"ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f":[12,0,1,0,6,37,16,52]
 };

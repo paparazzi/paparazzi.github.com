@@ -1,5 +1,11 @@
 var NAVTREEINDEX139 =
 {
+"mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f":[12,0,1,0,7,104,3],
+"mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6":[12,0,1,0,7,104,1],
+"mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f":[12,0,1,0,7,104,7],
+"mpu9250__i2c_8c.html#a64969bf12980c6f6a338452f2552fc91":[12,0,1,0,7,104,5],
+"mpu9250__i2c_8c.html#a967fa8a6c8aa8f969b3e7fb17221658c":[12,0,1,0,7,104,4],
+"mpu9250__i2c_8c.html#aa6574d578c0a32f04893e3119a102ee6":[12,0,1,0,7,104,6],
 "mpu9250__i2c_8c.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b":[12,0,1,0,7,104,2],
 "mpu9250__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,104,0],
 "mpu9250__i2c_8c_source.html":[12,0,1,0,7,104],
@@ -20,8 +26,8 @@ var NAVTREEINDEX139 =
 "mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c":[12,0,1,0,7,105,7],
 "mpu9250__i2c_8h.html#aa6574d578c0a32f04893e3119a102ee6":[12,0,1,0,7,105,10],
 "mpu9250__i2c_8h.html#ab06e0dd90052f7f21aa311b92524459d":[12,0,1,0,7,105,0,6],
-"mpu9250__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,105,1,0],
 "mpu9250__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,105,2,1],
+"mpu9250__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,105,1,0],
 "mpu9250__i2c_8h.html#ac9f9794de9fa148ba59d805527430b9a":[12,0,1,0,7,105,3],
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0":[12,0,1,0,7,105,5],
 "mpu9250__i2c_8h.html#ae7b297a684213ccce4849059d9644ed0a0dc1615fee579e54874fc210a4a1ac7a":[12,0,1,0,7,105,5,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX139 =
 "ms2100__arch_8h.html#a08541890cc5142626b13054da3d7c804":[12,0,1,0,0,3,2,5,3],
 "ms2100__arch_8h.html#a0cf9a8222937cd9036b0872730a2f036":[12,0,1,0,0,3,2,5,0],
 "ms2100__arch_8h.html#aa7c46e00e26b35b2215ef9b1e68c5793":[12,0,1,0,0,3,2,5,2],
-"ms2100__arch_8h.html#aebb1f87ab92e583e78e79686e935e3b8":[12,0,1,0,0,3,2,5,1],
-"ms2100__arch_8h_source.html":[12,0,1,0,0,3,2,5],
-"ms5611_8c.html":[12,0,1,0,7,111],
-"ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1":[12,0,1,0,7,111,0],
-"ms5611_8c.html#aadeaf57da29112210a74857311975e0a":[12,0,1,0,7,111,2],
-"ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4":[12,0,1,0,7,111,1],
-"ms5611_8c_source.html":[12,0,1,0,7,111]
+"ms2100__arch_8h.html#aebb1f87ab92e583e78e79686e935e3b8":[12,0,1,0,0,3,2,5,1]
 };

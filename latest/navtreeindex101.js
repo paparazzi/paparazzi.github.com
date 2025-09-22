@@ -1,5 +1,6 @@
 var NAVTREEINDEX101 =
 {
+"lidar__sf11_8h.html#a768a308d05667dc01c5ec71b1261efba":[12,0,1,0,6,40,4,2],
 "lidar__sf11_8h.html#a7c5338bf83409ab65658961de1d2f92a":[12,0,1,0,6,40,4,0,0],
 "lidar__sf11_8h.html#a881988313a806f204d42b25414ff76e7":[12,0,1,0,6,40,4,3],
 "lidar__sf11_8h.html#a9695845bfd281bf81794989af057f69a":[12,0,1,0,6,40,4,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX101 =
 "linux_2mcu__periph_2pipe__arch_8c.html#a97d6c27da74c8a17a29d7148fa60f0b1":[12,0,1,0,0,1,0,7,4],
 "linux_2mcu__periph_2pipe__arch_8c.html#a97df12ed97f79a6c2cd55f8426795960":[12,0,1,0,0,1,0,7,0],
 "linux_2mcu__periph_2pipe__arch_8c.html#a9a552cafb117e80a56acc9e51e4f1def":[12,0,1,0,0,1,0,7,2],
-"linux_2mcu__periph_2pipe__arch_8c.html#ab8244d4f8bcb12d4c91ef4e95026f8c4":[12,0,1,0,0,1,0,7,9],
-"linux_2mcu__periph_2pipe__arch_8c.html#ad32c37b53788cd4215e6bdec33d4c631":[12,0,1,0,0,1,0,7,6]
+"linux_2mcu__periph_2pipe__arch_8c.html#ab8244d4f8bcb12d4c91ef4e95026f8c4":[12,0,1,0,0,1,0,7,9]
 };
