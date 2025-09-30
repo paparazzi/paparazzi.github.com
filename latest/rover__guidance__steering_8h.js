@@ -6,9 +6,13 @@ var rover__guidance__steering_8h =
     ] ],
     [ "rover_ctrl", "rover__guidance__steering_8h.html#structrover__ctrl", [
       [ "cmd", "rover__guidance__steering_8h.html#a1f6ca0aa3d0c6154bccd6b3c4dc94188", null ],
+      [ "heading_kp", "rover__guidance__steering_8h.html#a7954103e48b8c4df15f16c7ad40996bb", null ],
+      [ "heading_sp", "rover__guidance__steering_8h.html#aa88bc2a27dbec6ee5da13e22de1c888a", null ],
       [ "kf", "rover__guidance__steering_8h.html#ad62ff79ebc8d14815b48b025c2244eb9", null ],
       [ "ki", "rover__guidance__steering_8h.html#a3c4b826163ee79a27d448d6238d92b2b", null ],
       [ "kp", "rover__guidance__steering_8h.html#aab21c9a701f5195d75992cd8106a19a9", null ],
+      [ "omega_sp", "rover__guidance__steering_8h.html#a89b7be2a04f95e7b80c714ddb3515203", null ],
+      [ "pos_kp", "rover__guidance__steering_8h.html#a3e6d36bbe670f939492f53b9612412ca", null ],
       [ "speed_error", "rover__guidance__steering_8h.html#afe4c368643d9b21694c3d16e8e1c2932", null ],
       [ "throttle", "rover__guidance__steering_8h.html#ab1521e6666810e9c354713d5ad4f1d01", null ]
     ] ],
@@ -29,7 +33,11 @@ var rover__guidance__steering_8h =
     [ "rover_guidance_steering_heading_ctrl", "rover__guidance__steering_8h.html#af0d1fdfe153cb3f80f189f59168e84f5", null ],
     [ "rover_guidance_steering_init", "rover__guidance__steering_8h.html#a81c86a467dc91f38fefae20de37feba3", null ],
     [ "rover_guidance_steering_kill", "rover__guidance__steering_8h.html#a0185a8119f285985444db413c3b51863", null ],
+    [ "rover_guidance_steering_periodic", "rover__guidance__steering_8h.html#a4aa67d601f9015d5558cbf924c125263", null ],
     [ "rover_guidance_steering_pid_reset", "rover__guidance__steering_8h.html#ac69bcf60f43fa5aaa6dd39af1a68e529", null ],
+    [ "rover_guidance_steering_set_speed_igain", "rover__guidance__steering_8h.html#a3cccdbe071f52b122ead33739d03509c", null ],
+    [ "rover_guidance_steering_set_speed_pgain", "rover__guidance__steering_8h.html#af1bc563ae4eb94b24438e074077e4555", null ],
+    [ "rover_guidance_steering_setpoints", "rover__guidance__steering_8h.html#aea12627524d5a0c64072681f19c20850", null ],
     [ "rover_guidance_steering_speed_ctrl", "rover__guidance__steering_8h.html#a30e256c0e45b668703a7574894873f11", null ],
     [ "guidance_control", "rover__guidance__steering_8h.html#a208b846ae96f3e4f7919a19522f6b72f", null ]
 ];

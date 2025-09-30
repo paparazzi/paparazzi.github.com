@@ -100,14 +100,10 @@ $(document).ready(function(){initNavTree('rover__guidance__steering_8c.html','')
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="rover__guidance__steering_8h_source.html">firmwares/rover/guidance/rover_guidance_steering.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="actuators__default_8h_source.html">modules/actuators/actuators_default.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
+<code>#include &quot;generated/autopilot_core_guidance.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
-<code>#include &quot;navigation.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pid_8h_source.html">filters/pid.h</a>&quot;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for rover_guidance_steering.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -115,91 +111,79 @@ $(document).ready(function(){initNavTree('rover__guidance__steering_8c.html','')
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover__guidance__steering_8c__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rover_2guidance_2rover__guidance__steering_8c" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rover_2guidance_2rover__guidance__steering_8c" id="asw_2airborne_2firmwares_2rover_2guidance_2rover__guidance__steering_8c">
-<area shape="rect" title=" " alt="" coords="629,5,795,60"/>
-<area shape="rect" href="rover__guidance__steering_8h.html" title=" " alt="" coords="193,108,391,148"/>
-<area shape="poly" title=" " alt="" coords="629,55,391,108,389,102,628,50"/>
-<area shape="rect" title=" " alt="" coords="45,504,113,529"/>
-<area shape="poly" title=" " alt="" coords="629,40,452,52,350,64,247,80,154,103,78,131,48,147,26,166,13,186,8,208,8,371,13,406,26,439,44,468,61,492,57,495,39,471,22,441,8,407,3,372,3,207,8,184,22,162,45,143,75,126,152,97,246,75,349,59,452,47,628,34"/>
-<area shape="rect" title=" " alt="" coords="335,196,495,221"/>
-<area shape="poly" title=" " alt="" coords="629,42,585,49,539,63,494,82,455,110,442,126,432,145,421,183,416,181,427,143,437,123,452,106,492,78,537,58,583,44,628,36"/>
-<area shape="rect" href="actuators__default_8h.html" title=" " alt="" coords="825,108,1033,148"/>
-<area shape="poly" title=" " alt="" coords="774,58,874,100,872,105,772,63"/>
-<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="466,108,633,148"/>
-<area shape="poly" title=" " alt="" coords="668,62,596,103,593,99,665,58"/>
-<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="709,115,801,141"/>
-<area shape="poly" title=" " alt="" coords="727,59,746,102,741,104,722,61"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="641,196,708,221"/>
-<area shape="poly" title=" " alt="" coords="709,61,699,109,683,183,677,182,693,107,704,59"/>
-<area shape="rect" title=" " alt="" coords="1058,115,1161,141"/>
-<area shape="poly" title=" " alt="" coords="796,48,1046,105,1060,109,1058,114,1045,111,795,54"/>
-<area shape="rect" href="pid_8h.html" title="Several forms of PID controllers." alt="" coords="1185,115,1279,141"/>
-<area shape="poly" title=" " alt="" coords="796,41,971,66,1073,84,1174,105,1187,109,1186,114,1173,111,1072,89,970,71,795,46"/>
-<area shape="rect" title=" " alt="" coords="1304,115,1371,141"/>
-<area shape="poly" title=" " alt="" coords="796,35,897,42,1022,56,1158,76,1293,105,1301,108,1299,113,1291,111,1157,81,1021,61,897,48,795,40"/>
-<area shape="rect" title=" " alt="" coords="746,504,801,529"/>
-<area shape="poly" title=" " alt="" coords="294,148,298,220,306,265,320,308,346,361,376,398,413,426,466,454,537,480,610,497,677,506,732,511,732,516,677,512,609,502,535,485,464,458,411,431,372,402,342,364,315,310,301,266,293,221,289,148"/>
-<area shape="poly" title=" " alt="" coords="212,151,159,171,109,200,89,218,73,238,62,262,59,288,59,371,64,436,75,490,70,491,59,436,53,371,53,288,57,260,68,235,85,214,106,195,157,166,210,146"/>
-<area shape="poly" title=" " alt="" coords="323,146,386,186,384,191,320,150"/>
-<area shape="rect" title=" " alt="" coords="1282,196,1409,221"/>
-<area shape="poly" title=" " alt="" coords="1029,145,1272,191,1271,196,1028,151"/>
-<area shape="rect" title=" " alt="" coords="1433,196,1599,221"/>
-<area shape="poly" title=" " alt="" coords="1034,143,1047,145,1420,193,1419,198,1046,151,1033,149"/>
-<area shape="poly" title=" " alt="" coords="518,150,448,191,445,187,516,146"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="519,196,617,221"/>
-<area shape="poly" title=" " alt="" coords="556,148,565,182,559,183,551,149"/>
-<area shape="rect" title=" " alt="" coords="330,277,417,302"/>
-<area shape="poly" title=" " alt="" coords="541,224,415,274,413,269,539,219"/>
-<area shape="poly" title=" " alt="" coords="756,141,759,180,766,202,779,219,802,236,825,247,848,253,871,255,919,250,966,237,1013,226,1059,222,1082,226,1104,234,1126,247,1147,268,1170,302,1178,322,1180,345,1177,370,1166,397,1147,426,1119,458,1097,473,1064,485,981,502,891,512,815,517,814,511,890,507,980,497,1063,480,1094,468,1116,454,1143,423,1161,395,1172,369,1175,345,1172,323,1166,304,1143,271,1123,252,1102,239,1081,231,1059,228,1014,231,967,243,920,255,871,260,847,259,823,252,799,241,775,223,761,204,754,181,751,141"/>
-<area shape="poly" title=" " alt="" coords="709,143,478,196,477,190,708,137"/>
-<area shape="poly" title=" " alt="" coords="729,143,609,193,607,188,726,138"/>
-<area shape="poly" title=" " alt="" coords="745,143,698,188,695,184,741,139"/>
-<area shape="rect" title=" " alt="" coords="949,196,1075,221"/>
-<area shape="poly" title=" " alt="" coords="791,138,814,145,961,190,959,195,813,151,789,143"/>
-<area shape="rect" title=" " alt="" coords="1100,196,1257,221"/>
-<area shape="poly" title=" " alt="" coords="789,138,814,145,935,168,1087,191,1086,197,934,173,813,151,787,143"/>
-<area shape="rect" title=" " alt="" coords="790,196,925,221"/>
-<area shape="poly" title=" " alt="" coords="771,139,833,185,829,189,768,143"/>
-<area shape="poly" title=" " alt="" coords="643,224,610,242,595,255,584,271,578,289,584,308,598,339,616,368,660,420,706,463,746,494,743,498,703,467,656,424,612,371,593,341,579,310,573,289,579,268,591,252,607,238,640,219"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="906,357,1086,383"/>
-<area shape="poly" title=" " alt="" coords="709,214,734,219,822,223,939,223,997,226,1050,234,1094,247,1111,256,1125,268,1131,278,1133,289,1125,311,1099,338,1066,355,1063,350,1095,333,1120,308,1128,288,1126,280,1121,271,1108,260,1092,252,1049,239,997,232,939,229,822,228,733,224,708,219"/>
-<area shape="rect" title=" " alt="" coords="141,504,211,529"/>
-<area shape="poly" title=" " alt="" coords="642,222,578,243,505,272,363,350,224,433,203,462,187,492,183,490,198,459,221,429,361,346,503,267,576,238,640,217"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="388,357,580,383"/>
-<area shape="poly" title=" " alt="" coords="642,220,590,239,563,253,539,271,524,288,512,308,494,346,489,343,507,305,520,285,536,267,560,249,588,234,640,215"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="769,269,919,309"/>
-<area shape="poly" title=" " alt="" coords="700,219,792,261,790,266,698,224"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="594,269,745,309"/>
-<area shape="poly" title=" " alt="" coords="677,222,674,256,669,255,671,221"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="943,269,1110,309"/>
-<area shape="poly" title=" " alt="" coords="709,215,931,264,930,269,708,220"/>
-<area shape="poly" title=" " alt="" coords="1021,381,1045,395,1067,414,1080,435,1080,446,1074,458,1056,472,1030,483,960,500,882,511,815,516,815,511,882,505,959,495,1028,478,1053,467,1070,454,1075,445,1075,436,1063,417,1042,399,1018,385"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="246,431,402,456"/>
-<area shape="poly" title=" " alt="" coords="906,383,416,435,415,430,905,378"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="906,431,1059,456"/>
-<area shape="poly" title=" " alt="" coords="996,383,990,418,985,417,991,383"/>
-<area shape="rect" title=" " alt="" coords="811,431,882,456"/>
-<area shape="poly" title=" " alt="" coords="973,385,885,427,882,422,971,380"/>
-<area shape="poly" title=" " alt="" coords="397,453,733,506,732,512,396,459"/>
-<area shape="poly" title=" " alt="" coords="285,459,127,504,125,499,284,453"/>
-<area shape="rect" title=" " alt="" coords="255,504,318,529"/>
-<area shape="poly" title=" " alt="" coords="320,458,301,493,297,491,315,455"/>
-<area shape="poly" title=" " alt="" coords="301,458,214,500,211,496,299,454"/>
-<area shape="poly" title=" " alt="" coords="950,459,815,504,813,499,948,453"/>
-<area shape="poly" title=" " alt="" coords="405,385,317,404,224,433,160,465,107,498,104,494,157,460,222,428,315,399,404,380"/>
-<area shape="poly" title=" " alt="" coords="459,385,364,427,362,423,457,380"/>
-<area shape="poly" title=" " alt="" coords="388,384,295,403,258,416,235,432,230,447,235,463,247,479,262,494,258,497,243,483,230,465,225,447,231,429,256,412,294,398,387,379"/>
-<area shape="rect" title=" " alt="" coords="477,431,635,456"/>
-<area shape="poly" title=" " alt="" coords="498,381,536,419,533,423,494,385"/>
-<area shape="poly" title=" " alt="" coords="850,309,852,344,845,384,835,400,824,409,812,418,801,432,788,462,780,491,775,489,783,460,796,429,808,414,820,405,831,396,840,382,847,344,845,310"/>
-<area shape="poly" title=" " alt="" coords="882,307,962,348,960,353,879,312"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="705,357,831,383"/>
-<area shape="poly" title=" " alt="" coords="828,311,791,349,787,345,824,308"/>
-<area shape="poly" title=" " alt="" coords="675,309,683,343,696,382,727,442,759,491,755,494,723,445,691,384,678,345,670,310"/>
-<area shape="poly" title=" " alt="" coords="626,312,525,354,523,349,624,307"/>
-<area shape="poly" title=" " alt="" coords="695,307,744,346,741,351,692,312"/>
-<area shape="poly" title=" " alt="" coords="1059,308,1082,329,1101,356,1107,378,1109,407,1106,435,1095,458,1075,472,1046,484,970,501,886,511,814,516,814,511,885,506,969,496,1044,479,1073,468,1091,454,1101,434,1104,407,1102,379,1096,358,1078,332,1055,312"/>
-<area shape="poly" title=" " alt="" coords="1022,311,1008,345,1003,344,1017,309"/>
-<area shape="poly" title=" " alt="" coords="944,310,932,312,754,338,594,359,594,353,754,333,932,307,943,305"/>
+<area shape="rect" title=" " alt="" coords="851,5,1018,60"/>
+<area shape="rect" href="rover__guidance__steering_8h.html" title=" " alt="" coords="430,108,629,148"/>
+<area shape="poly" title=" " alt="" coords="852,56,625,108,623,102,851,50"/>
+<area shape="rect" title=" " alt="" coords="651,196,811,221"/>
+<area shape="poly" title=" " alt="" coords="905,62,756,189,753,185,902,58"/>
+<area shape="rect" title=" " alt="" coords="1149,108,1299,148"/>
+<area shape="poly" title=" " alt="" coords="1017,58,1153,101,1152,106,1015,63"/>
+<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="1033,115,1125,141"/>
+<area shape="poly" title=" " alt="" coords="977,58,1051,106,1048,110,974,62"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="835,196,901,221"/>
+<area shape="poly" title=" " alt="" coords="927,61,880,184,875,183,922,59"/>
+<area shape="rect" href="pid_8h.html" title="Several forms of PID controllers." alt="" coords="1323,115,1418,141"/>
+<area shape="poly" title=" " alt="" coords="1019,45,1157,70,1313,105,1324,109,1323,114,1311,111,1156,76,1018,50"/>
+<area shape="rect" title=" " alt="" coords="722,504,777,529"/>
+<area shape="poly" title=" " alt="" coords="495,150,436,188,404,213,374,242,349,274,331,308,323,344,328,382,345,424,358,439,379,454,405,465,441,476,532,492,708,510,708,515,531,498,440,481,403,470,376,458,355,443,341,427,323,383,318,344,326,306,344,271,370,239,401,209,433,184,492,146"/>
+<area shape="rect" title=" " alt="" coords="22,504,90,529"/>
+<area shape="poly" title=" " alt="" coords="430,142,300,160,161,190,100,209,52,232,19,259,11,273,8,288,8,371,12,405,21,437,45,491,40,493,16,439,6,406,3,371,3,288,6,271,15,255,49,228,98,204,160,185,299,155,429,136"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="454,269,605,309"/>
+<area shape="poly" title=" " alt="" coords="532,148,532,256,527,256,527,148"/>
+<area shape="poly" title=" " alt="" coords="579,146,689,188,687,193,577,151"/>
+<area shape="poly" title=" " alt="" coords="534,309,541,344,557,381,591,420,631,452,673,478,711,497,708,501,671,482,628,457,587,424,552,384,535,346,528,310"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="567,357,692,383"/>
+<area shape="poly" title=" " alt="" coords="555,307,605,346,602,351,552,312"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="337,357,492,383"/>
+<area shape="poly" title=" " alt="" coords="503,312,444,352,441,347,500,307"/>
+<area shape="poly" title=" " alt="" coords="337,377,289,383,236,394,183,410,133,433,98,462,72,494,68,491,95,458,131,428,181,405,235,389,288,378,337,372"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="145,431,263,456"/>
+<area shape="poly" title=" " alt="" coords="382,385,252,429,250,424,380,380"/>
+<area shape="rect" title=" " alt="" coords="279,504,342,529"/>
+<area shape="poly" title=" " alt="" coords="408,385,329,494,325,491,404,382"/>
+<area shape="rect" title=" " alt="" coords="389,431,547,456"/>
+<area shape="poly" title=" " alt="" coords="426,381,453,418,449,421,421,385"/>
+<area shape="poly" title=" " alt="" coords="264,451,283,453,709,508,708,513,282,459,263,456"/>
+<area shape="poly" title=" " alt="" coords="181,458,94,500,91,496,179,454"/>
+<area shape="poly" title=" " alt="" coords="223,454,283,494,280,499,220,458"/>
+<area shape="rect" title=" " alt="" coords="142,504,213,529"/>
+<area shape="poly" title=" " alt="" coords="202,457,189,492,184,490,197,455"/>
+<area shape="poly" title=" " alt="" coords="1083,141,1089,199,1087,287,1079,334,1064,381,1041,423,1008,458,983,475,955,489,896,507,839,516,791,519,791,514,839,511,895,502,953,484,980,471,1005,454,1037,420,1059,379,1074,333,1081,286,1084,199,1078,141"/>
+<area shape="poly" title=" " alt="" coords="1033,142,795,196,794,190,1032,137"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1130,196,1227,221"/>
+<area shape="poly" title=" " alt="" coords="1095,139,1155,185,1151,189,1092,143"/>
+<area shape="poly" title=" " alt="" coords="1049,143,913,194,911,189,1047,138"/>
+<area shape="rect" title=" " alt="" coords="1251,196,1378,221"/>
+<area shape="poly" title=" " alt="" coords="1114,138,1268,189,1267,194,1112,143"/>
+<area shape="rect" title=" " alt="" coords="1403,196,1560,221"/>
+<area shape="poly" title=" " alt="" coords="1113,138,1138,145,1269,173,1389,192,1389,198,1268,178,1137,151,1111,143"/>
+<area shape="rect" title=" " alt="" coords="1585,196,1719,221"/>
+<area shape="poly" title=" " alt="" coords="1111,138,1138,145,1257,166,1351,175,1448,181,1571,193,1571,199,1447,187,1351,181,1256,171,1137,151,1110,143"/>
+<area shape="rect" title=" " alt="" coords="1149,277,1235,302"/>
+<area shape="poly" title=" " alt="" coords="1183,221,1190,263,1185,264,1178,222"/>
+<area shape="poly" title=" " alt="" coords="902,209,935,213,973,223,1008,241,1037,268,1042,279,1042,289,1037,310,1023,392,1009,425,979,458,934,487,884,505,834,514,791,518,790,513,833,509,882,500,932,482,976,454,1004,422,1018,390,1032,309,1037,288,1037,280,1033,271,1005,245,971,228,934,218,901,214"/>
+<area shape="poly" title=" " alt="" coords="835,221,823,224,619,271,617,266,822,219,834,216"/>
+<area shape="poly" title=" " alt="" coords="835,221,823,224,737,230,625,233,568,236,517,243,474,254,443,271,431,287,423,305,417,343,411,343,418,304,426,284,440,267,472,249,516,238,568,231,625,228,737,225,822,219,834,216"/>
+<area shape="poly" title=" " alt="" coords="835,222,823,224,761,233,708,237,616,239,527,245,475,255,415,272,324,299,250,323,219,339,189,361,161,391,134,432,130,447,134,463,155,492,151,496,129,465,125,447,130,430,157,388,186,357,216,334,248,318,322,293,414,267,474,250,526,240,616,234,707,232,760,228,822,219,834,216"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="767,357,947,383"/>
+<area shape="poly" title=" " alt="" coords="864,223,854,244,847,270,846,308,852,344,847,345,840,309,841,269,849,242,859,220"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="629,269,779,309"/>
+<area shape="poly" title=" " alt="" coords="845,224,757,266,755,261,843,219"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="855,269,1022,309"/>
+<area shape="poly" title=" " alt="" coords="880,220,915,257,911,261,876,223"/>
+<area shape="poly" title=" " alt="" coords="882,380,906,395,928,413,940,434,941,446,935,458,905,486,867,504,827,514,791,518,790,512,826,508,865,499,902,481,931,454,936,445,935,436,924,416,903,399,880,385"/>
+<area shape="poly" title=" " alt="" coords="767,384,277,437,277,431,767,378"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="673,431,826,456"/>
+<area shape="poly" title=" " alt="" coords="841,385,780,425,777,421,839,380"/>
+<area shape="rect" title=" " alt="" coords="850,431,921,456"/>
+<area shape="poly" title=" " alt="" coords="864,382,878,417,873,419,859,384"/>
+<area shape="poly" title=" " alt="" coords="752,456,752,490,747,490,747,456"/>
+<area shape="poly" title=" " alt="" coords="710,309,713,344,706,384,691,406,673,422,661,436,660,444,664,455,684,479,711,497,708,502,681,483,659,457,655,445,656,434,669,418,687,403,702,382,708,344,705,310"/>
+<area shape="poly" title=" " alt="" coords="688,311,652,349,648,345,684,308"/>
+<area shape="poly" title=" " alt="" coords="742,307,824,349,822,353,740,312"/>
+<area shape="poly" title=" " alt="" coords="951,309,963,340,972,379,972,420,966,440,955,458,939,474,919,488,876,506,831,515,791,519,790,513,830,510,874,501,917,483,935,470,951,454,961,438,967,420,967,380,958,341,946,311"/>
+<area shape="poly" title=" " alt="" coords="855,306,505,358,504,353,855,300"/>
+<area shape="poly" title=" " alt="" coords="921,311,881,349,878,346,917,308"/>
 </map>
 </div>
 </div>
@@ -209,36 +193,54 @@ $(document).ready(function(){initNavTree('rover__guidance__steering_8c.html','')
 Macros</h2></td></tr>
 <tr class="memitem:a20c52f51bc92edd57a7ebbfe56c27e1a" id="r_a20c52f51bc92edd57a7ebbfe56c27e1a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a20c52f51bc92edd57a7ebbfe56c27e1a">AUTOPILOT_CORE_GUIDANCE_C</a></td></tr>
 <tr class="separator:a20c52f51bc92edd57a7ebbfe56c27e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769bf8f150ea5a8c6fef8a04c095afa7" id="r_a769bf8f150ea5a8c6fef8a04c095afa7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a769bf8f150ea5a8c6fef8a04c095afa7">ROVER_GUIDANCE_POS_KP</a>&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="memdesc:a769bf8f150ea5a8c6fef8a04c095afa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandatory dependencies header.  <br /></td></tr>
+<tr class="separator:a769bf8f150ea5a8c6fef8a04c095afa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2438e6f60ccf67f1af6de803b8d3a9" id="r_a5e2438e6f60ccf67f1af6de803b8d3a9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a5e2438e6f60ccf67f1af6de803b8d3a9">ROVER_GUIDANCE_HEADING_KP</a>&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:a5e2438e6f60ccf67f1af6de803b8d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e26a7e87eadb68ec860b8b4c08e1b2" id="r_a82e26a7e87eadb68ec860b8b4c08e1b2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a82e26a7e87eadb68ec860b8b4c08e1b2">ROVER_GUIDANCE_SPEED_KP</a>&#160;&#160;&#160;10.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:a82e26a7e87eadb68ec860b8b4c08e1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5906f79db4c99afc4cd586e5100bb3d1" id="r_a5906f79db4c99afc4cd586e5100bb3d1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a5906f79db4c99afc4cd586e5100bb3d1">ROVER_GUIDANCE_SPEED_KI</a>&#160;&#160;&#160;100.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:a5906f79db4c99afc4cd586e5100bb3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d062260634443f3e299539db45d9c9" id="r_a38d062260634443f3e299539db45d9c9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a38d062260634443f3e299539db45d9c9">ROVER_GUIDANCE_MAX_POS_ERR</a>&#160;&#160;&#160;10.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:a38d062260634443f3e299539db45d9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130b452de0028f1c748712c7ebdc1e0d" id="r_a130b452de0028f1c748712c7ebdc1e0d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a130b452de0028f1c748712c7ebdc1e0d">ROVER_GUIDANCE_MAX_SPEED</a>&#160;&#160;&#160;10.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:a130b452de0028f1c748712c7ebdc1e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8fa12d30232eb96253cc596309d424" id="r_aac8fa12d30232eb96253cc596309d424"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#aac8fa12d30232eb96253cc596309d424">ROVER_GUIDANCE_PROXIMITY_DISTANCE</a>&#160;&#160;&#160;2.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="separator:aac8fa12d30232eb96253cc596309d424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a81c86a467dc91f38fefae20de37feba3" id="r_a81c86a467dc91f38fefae20de37feba3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a81c86a467dc91f38fefae20de37feba3">rover_guidance_steering_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a81c86a467dc91f38fefae20de37feba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">INIT function.  <br /></td></tr>
 <tr class="separator:a81c86a467dc91f38fefae20de37feba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa67d601f9015d5558cbf924c125263" id="r_a4aa67d601f9015d5558cbf924c125263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a4aa67d601f9015d5558cbf924c125263">rover_guidance_steering_periodic</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:a4aa67d601f9015d5558cbf924c125263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d1fdfe153cb3f80f189f59168e84f5" id="r_af0d1fdfe153cb3f80f189f59168e84f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#af0d1fdfe153cb3f80f189f59168e84f5">rover_guidance_steering_heading_ctrl</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> omega)</td></tr>
 <tr class="memdesc:af0d1fdfe153cb3f80f189f59168e84f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CTRL functions.  <br /></td></tr>
 <tr class="separator:af0d1fdfe153cb3f80f189f59168e84f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e256c0e45b668703a7574894873f11" id="r_a30e256c0e45b668703a7574894873f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a30e256c0e45b668703a7574894873f11">rover_guidance_steering_speed_ctrl</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a30e256c0e45b668703a7574894873f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea12627524d5a0c64072681f19c20850" id="r_aea12627524d5a0c64072681f19c20850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#aea12627524d5a0c64072681f19c20850">rover_guidance_steering_setpoints</a> (struct <a class="el" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">pos_sp</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> *heading_sp)</td></tr>
+<tr class="separator:aea12627524d5a0c64072681f19c20850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac69bcf60f43fa5aaa6dd39af1a68e529" id="r_ac69bcf60f43fa5aaa6dd39af1a68e529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#ac69bcf60f43fa5aaa6dd39af1a68e529">rover_guidance_steering_pid_reset</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:ac69bcf60f43fa5aaa6dd39af1a68e529"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID RESET function.  <br /></td></tr>
 <tr class="separator:ac69bcf60f43fa5aaa6dd39af1a68e529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0185a8119f285985444db413c3b51863" id="r_a0185a8119f285985444db413c3b51863"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a0185a8119f285985444db413c3b51863">rover_guidance_steering_kill</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a0185a8119f285985444db413c3b51863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bc563ae4eb94b24438e074077e4555" id="r_af1bc563ae4eb94b24438e074077e4555"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#af1bc563ae4eb94b24438e074077e4555">rover_guidance_steering_set_speed_pgain</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> pgain)</td></tr>
+<tr class="separator:af1bc563ae4eb94b24438e074077e4555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cccdbe071f52b122ead33739d03509c" id="r_a3cccdbe071f52b122ead33739d03509c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a3cccdbe071f52b122ead33739d03509c">rover_guidance_steering_set_speed_igain</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> igain)</td></tr>
+<tr class="separator:a3cccdbe071f52b122ead33739d03509c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a208b846ae96f3e4f7919a19522f6b72f" id="r_a208b846ae96f3e4f7919a19522f6b72f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rover__guidance__steering_8h.html#structrover__ctrl">rover_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a208b846ae96f3e4f7919a19522f6b72f">guidance_control</a></td></tr>
-<tr class="memdesc:a208b846ae96f3e4f7919a19522f6b72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandatory dependencies header.  <br /></td></tr>
 <tr class="separator:a208b846ae96f3e4f7919a19522f6b72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94467ec902fb3dc7313375f1b469cc38" id="r_a94467ec902fb3dc7313375f1b469cc38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> struct <a class="el" href="pid_8h.html#structPID__f">PID_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a94467ec902fb3dc7313375f1b469cc38">rover_pid</a></td></tr>
 <tr class="separator:a94467ec902fb3dc7313375f1b469cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4feca29d7349adc765dcdf44d396d46a" id="r_a4feca29d7349adc765dcdf44d396d46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a4feca29d7349adc765dcdf44d396d46a">time_step</a></td></tr>
 <tr class="separator:a4feca29d7349adc765dcdf44d396d46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad62b4849e80c02d8736c3a46cec6944b" id="r_ad62b4849e80c02d8736c3a46cec6944b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#ad62b4849e80c02d8736c3a46cec6944b">last_speed_cmd</a></td></tr>
-<tr class="separator:ad62b4849e80c02d8736c3a46cec6944b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0574e5ae0a737b0139e08d33f71c1003" id="r_a0574e5ae0a737b0139e08d33f71c1003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a0574e5ae0a737b0139e08d33f71c1003">last_ap_mode</a></td></tr>
-<tr class="separator:a0574e5ae0a737b0139e08d33f71c1003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a20c52f51bc92edd57a7ebbfe56c27e1a" name="a20c52f51bc92edd57a7ebbfe56c27e1a"></a>
@@ -253,7 +255,121 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00022">22</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00023">23</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="a5e2438e6f60ccf67f1af6de803b8d3a9" name="a5e2438e6f60ccf67f1af6de803b8d3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2438e6f60ccf67f1af6de803b8d3a9">&#9670;&#160;</a></span>ROVER_GUIDANCE_HEADING_KP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_HEADING_KP&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00041">41</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="a38d062260634443f3e299539db45d9c9" name="a38d062260634443f3e299539db45d9c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d062260634443f3e299539db45d9c9">&#9670;&#160;</a></span>ROVER_GUIDANCE_MAX_POS_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_MAX_POS_ERR&#160;&#160;&#160;10.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00053">53</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="a130b452de0028f1c748712c7ebdc1e0d" name="a130b452de0028f1c748712c7ebdc1e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130b452de0028f1c748712c7ebdc1e0d">&#9670;&#160;</a></span>ROVER_GUIDANCE_MAX_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_MAX_SPEED&#160;&#160;&#160;10.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00057">57</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="a769bf8f150ea5a8c6fef8a04c095afa7" name="a769bf8f150ea5a8c6fef8a04c095afa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769bf8f150ea5a8c6fef8a04c095afa7">&#9670;&#160;</a></span>ROVER_GUIDANCE_POS_KP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_POS_KP&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mandatory dependencies header. </p>
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00037">37</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="aac8fa12d30232eb96253cc596309d424" name="aac8fa12d30232eb96253cc596309d424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8fa12d30232eb96253cc596309d424">&#9670;&#160;</a></span>ROVER_GUIDANCE_PROXIMITY_DISTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_PROXIMITY_DISTANCE&#160;&#160;&#160;2.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00061">61</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="a5906f79db4c99afc4cd586e5100bb3d1" name="a5906f79db4c99afc4cd586e5100bb3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5906f79db4c99afc4cd586e5100bb3d1">&#9670;&#160;</a></span>ROVER_GUIDANCE_SPEED_KI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_SPEED_KI&#160;&#160;&#160;100.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00049">49</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+</div>
+</div>
+<a id="a82e26a7e87eadb68ec860b8b4c08e1b2" name="a82e26a7e87eadb68ec860b8b4c08e1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e26a7e87eadb68ec860b8b4c08e1b2">&#9670;&#160;</a></span>ROVER_GUIDANCE_SPEED_KP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ROVER_GUIDANCE_SPEED_KP&#160;&#160;&#160;10.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00045">45</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
 </div>
 </div>
@@ -276,9 +392,9 @@ Variables</h2></td></tr>
 
 <p>CTRL functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00071">71</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00098">98</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00128">BoundDelta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00133">BoundSpeed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00087">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, and <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>.</p>
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00138">BoundDelta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00143">BoundSpeed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00104">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00089">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, and <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -315,9 +431,9 @@ Variables</h2></td></tr>
 <p>INIT function. </p>
 <p>Steering rover guidance EXT FUNCTIONS. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00049">49</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00071">71</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="pid_8h_source.html#l00050">init_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00113">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00046">last_ap_mode</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">last_speed_cmd</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00110">rover_ctrl::speed_error</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00093">SR_MEASURED_KF</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00108">rover_ctrl::throttle</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00044">time_step</a>.</p>
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00104">sr_cmd_t::delta</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00115">rover_ctrl::heading_kp</a>, <a class="el" href="pid_8h_source.html#l00050">init_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00117">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00119">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00118">rover_ctrl::kp</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00114">rover_ctrl::pos_kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">ROVER_GUIDANCE_HEADING_KP</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00037">ROVER_GUIDANCE_POS_KP</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00049">ROVER_GUIDANCE_SPEED_KI</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">ROVER_GUIDANCE_SPEED_KP</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00067">rover_pid</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00103">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00116">rover_ctrl::speed_error</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00095">SR_MEASURED_KF</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00110">rover_ctrl::throttle</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00068">time_step</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -349,9 +465,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00114">114</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00156">156</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, and <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>.</p>
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00104">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, and <a class="el" href="rover__guidance__steering_8h_source.html#l00103">sr_cmd_t::speed</a>.</p>
+
+</div>
+</div>
+<a id="a4aa67d601f9015d5558cbf924c125263" name="a4aa67d601f9015d5558cbf924c125263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa67d601f9015d5558cbf924c125263">&#9670;&#160;</a></span>rover_guidance_steering_periodic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> rover_guidance_steering_periodic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00090">90</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
 </div>
 </div>
@@ -373,9 +511,9 @@ Variables</h2></td></tr>
 
 <p>PID RESET function. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00106">106</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00151">151</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pid_8h_source.html#l00098">reset_pid_f()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, and <a class="el" href="pid_8h_source.html#l00045">PID_f::sum</a>.</p>
+<p class="reference">References <a class="el" href="pid_8h_source.html#l00098">reset_pid_f()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00067">rover_pid</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -386,6 +524,156 @@ Variables</h2></td></tr>
 <area shape="rect" title="PID RESET function." alt="" coords="5,5,188,45"/>
 <area shape="rect" href="pid_8h.html#a6b94f2f2a26a4553ef5d55690b84cc0e" title="Reset PID struture, gains left unchanged." alt="" coords="236,13,331,38"/>
 <area shape="poly" title=" " alt="" coords="188,23,222,23,222,28,188,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3cccdbe071f52b122ead33739d03509c" name="a3cccdbe071f52b122ead33739d03509c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cccdbe071f52b122ead33739d03509c">&#9670;&#160;</a></span>rover_guidance_steering_set_speed_igain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> rover_guidance_steering_set_speed_igain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
+          <td class="paramname"><em>igain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00168">168</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+<p class="reference">References <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00119">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00118">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00067">rover_pid</a>, <a class="el" href="pid_8h_source.html#l00113">set_gains_pid_f()</a>, and <a class="el" href="pid_8h_source.html#l00045">PID_f::sum</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rover__guidance__steering_8c_a3cccdbe071f52b122ead33739d03509c_cgraph.png" border="0" usemap="#arover__guidance__steering_8c_a3cccdbe071f52b122ead33739d03509c_cgraph" alt=""/></div>
+<map name="arover__guidance__steering_8c_a3cccdbe071f52b122ead33739d03509c_cgraph" id="arover__guidance__steering_8c_a3cccdbe071f52b122ead33739d03509c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,188,45"/>
+<area shape="rect" href="pid_8h.html#a6114acd2404903d3ac084b9868083a99" title="Set gains of the PID struct." alt="" coords="236,13,359,38"/>
+<area shape="poly" title=" " alt="" coords="188,23,222,23,222,28,188,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1bc563ae4eb94b24438e074077e4555" name="af1bc563ae4eb94b24438e074077e4555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1bc563ae4eb94b24438e074077e4555">&#9670;&#160;</a></span>rover_guidance_steering_set_speed_pgain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> rover_guidance_steering_set_speed_pgain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
+          <td class="paramname"><em>pgain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00162">162</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+<p class="reference">References <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00119">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00118">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00067">rover_pid</a>, and <a class="el" href="pid_8h_source.html#l00113">set_gains_pid_f()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rover__guidance__steering_8c_af1bc563ae4eb94b24438e074077e4555_cgraph.png" border="0" usemap="#arover__guidance__steering_8c_af1bc563ae4eb94b24438e074077e4555_cgraph" alt=""/></div>
+<map name="arover__guidance__steering_8c_af1bc563ae4eb94b24438e074077e4555_cgraph" id="arover__guidance__steering_8c_af1bc563ae4eb94b24438e074077e4555_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,188,45"/>
+<area shape="rect" href="pid_8h.html#a6114acd2404903d3ac084b9868083a99" title="Set gains of the PID struct." alt="" coords="236,13,359,38"/>
+<area shape="poly" title=" " alt="" coords="188,23,222,23,222,28,188,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea12627524d5a0c64072681f19c20850" name="aea12627524d5a0c64072681f19c20850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea12627524d5a0c64072681f19c20850">&#9670;&#160;</a></span>rover_guidance_steering_setpoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> rover_guidance_steering_setpoints </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a>&#160;</td>
+          <td class="paramname"><em>pos_sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> *&#160;</td>
+          <td class="paramname"><em>heading_sp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00118">118</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::cmd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00139">float_vect2_norm()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00115">rover_ctrl::heading_kp</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::heading_sp</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::omega_sp</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00114">rover_ctrl::pos_kp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00053">ROVER_GUIDANCE_MAX_POS_ERR</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00057">ROVER_GUIDANCE_MAX_SPEED</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00061">ROVER_GUIDANCE_PROXIMITY_DISTANCE</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00103">sr_cmd_t::speed</a>, <a class="el" href="state_8h_source.html#l01306">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00068">VECT2_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rover__guidance__steering_8c_aea12627524d5a0c64072681f19c20850_cgraph.png" border="0" usemap="#arover__guidance__steering_8c_aea12627524d5a0c64072681f19c20850_cgraph" alt=""/></div>
+<map name="arover__guidance__steering_8c_aea12627524d5a0c64072681f19c20850_cgraph" id="arover__guidance__steering_8c_aea12627524d5a0c64072681f19c20850_cgraph">
+<area shape="rect" title=" " alt="" coords="5,85,188,125"/>
+<area shape="rect" href="group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title=" " alt="" coords="270,43,405,68"/>
+<area shape="poly" title=" " alt="" coords="188,83,261,68,262,73,189,89"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="236,92,439,117"/>
+<area shape="poly" title=" " alt="" coords="188,102,222,102,222,107,188,107"/>
+<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="254,141,421,167"/>
+<area shape="poly" title=" " alt="" coords="189,121,262,136,261,141,188,126"/>
+<area shape="rect" href="group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title=" " alt="" coords="501,43,643,68"/>
+<area shape="poly" title=" " alt="" coords="405,53,487,53,487,58,405,58"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="488,92,656,117"/>
+<area shape="poly" title=" " alt="" coords="439,102,474,102,474,107,439,107"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="705,55,879,80"/>
+<area shape="poly" title=" " alt="" coords="647,89,703,80,704,85,648,95"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="927,5,1082,31"/>
+<area shape="poly" title=" " alt="" coords="847,52,935,31,936,36,848,57"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="927,55,1083,80"/>
+<area shape="poly" title=" " alt="" coords="879,65,913,65,913,70,879,70"/>
+<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="487,179,657,204"/>
+<area shape="poly" title=" " alt="" coords="418,164,479,174,478,179,417,169"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="740,104,844,129"/>
+<area shape="poly" title=" " alt="" coords="603,176,704,138,729,131,731,136,706,143,605,181"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="928,203,1081,228"/>
+<area shape="poly" title=" " alt="" coords="658,193,914,208,914,213,658,199"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="721,255,863,280"/>
+<area shape="poly" title=" " alt="" coords="611,202,742,248,740,253,609,207"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="721,153,863,179"/>
+<area shape="poly" title=" " alt="" coords="657,179,707,173,708,178,658,184"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="741,304,843,329"/>
+<area shape="poly" title=" " alt="" coords="589,202,638,245,671,268,707,289,729,298,726,303,704,294,668,273,635,249,585,206"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="951,104,1059,129"/>
+<area shape="poly" title=" " alt="" coords="844,114,937,114,937,119,844,119"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="952,153,1057,179"/>
+<area shape="poly" title=" " alt="" coords="845,126,939,148,938,153,844,131"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="929,255,1081,280"/>
+<area shape="poly" title=" " alt="" coords="864,265,915,265,915,270,864,270"/>
+<area shape="poly" title=" " alt="" coords="863,163,938,163,938,169,863,169"/>
+<area shape="poly" title=" " alt="" coords="848,176,936,197,935,202,847,181"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="929,304,1081,329"/>
+<area shape="poly" title=" " alt="" coords="844,314,915,314,915,319,844,319"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="935,354,1075,394"/>
+<area shape="poly" title=" " alt="" coords="841,327,922,349,921,354,839,332"/>
 </map>
 </div>
 
@@ -407,27 +695,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00086">86</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00109">109</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00138">BoundThrottle</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="pid_8h_source.html#l00046">PID_f::g</a>, <a class="el" href="pid_8h_source.html#l00089">get_pid_f()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00113">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">last_speed_cmd</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, <a class="el" href="pid_8h_source.html#l00113">set_gains_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00110">rover_ctrl::speed_error</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00108">rover_ctrl::throttle</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00044">time_step</a>, and <a class="el" href="pid_8h_source.html#l00068">update_pid_f()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00148">BoundThrottle</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::cmd</a>, <a class="el" href="pid_8h_source.html#l00089">get_pid_f()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00065">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00117">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00067">rover_pid</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00103">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00116">rover_ctrl::speed_error</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00110">rover_ctrl::throttle</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00068">time_step</a>, and <a class="el" href="pid_8h_source.html#l00068">update_pid_f()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover__guidance__steering_8c_a30e256c0e45b668703a7574894873f11_cgraph.png" border="0" usemap="#arover__guidance__steering_8c_a30e256c0e45b668703a7574894873f11_cgraph" alt=""/></div>
 <map name="arover__guidance__steering_8c_a30e256c0e45b668703a7574894873f11_cgraph" id="arover__guidance__steering_8c_a30e256c0e45b668703a7574894873f11_cgraph">
-<area shape="rect" title=" " alt="" coords="5,73,188,113"/>
+<area shape="rect" title=" " alt="" coords="5,47,188,87"/>
 <area shape="rect" href="pid_8h.html#a4b0791113aade2443940408af05fdf4d" title="Get current value of the PID command." alt="" coords="311,5,394,31"/>
-<area shape="poly" title=" " alt="" coords="146,70,235,39,297,25,298,30,237,45,148,75"/>
-<area shape="rect" href="pid_8h.html#a6114acd2404903d3ac084b9868083a99" title="Set gains of the PID struct." alt="" coords="291,55,414,80"/>
-<area shape="poly" title=" " alt="" coords="188,81,278,72,278,77,188,86"/>
-<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="236,104,469,129"/>
-<area shape="poly" title=" " alt="" coords="188,99,223,102,222,107,188,104"/>
-<area shape="rect" href="pid_8h.html#a8539e216d350ea0802391edce976a0cf" title="Update PID with a new value and return new command." alt="" coords="299,153,406,179"/>
-<area shape="poly" title=" " alt="" coords="152,110,237,138,286,150,285,156,235,143,150,115"/>
-<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="517,97,708,137"/>
-<area shape="poly" title=" " alt="" coords="469,114,503,114,503,119,469,119"/>
+<area shape="poly" title=" " alt="" coords="188,47,297,26,298,31,189,52"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="236,55,469,80"/>
+<area shape="poly" title=" " alt="" coords="188,65,222,65,222,70,188,70"/>
+<area shape="rect" href="pid_8h.html#a8539e216d350ea0802391edce976a0cf" title="Update PID with a new value and return new command." alt="" coords="299,104,406,129"/>
+<area shape="poly" title=" " alt="" coords="189,82,286,101,285,107,188,87"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="517,47,708,87"/>
+<area shape="poly" title=" " alt="" coords="469,65,503,65,503,70,469,70"/>
 </map>
 </div>
 
@@ -446,63 +732,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Mandatory dependencies header. </p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00065">65</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00041">41</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00071">rover_guidance_steering_heading_ctrl()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00114">rover_guidance_steering_kill()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
-
-</div>
-</div>
-<a id="a0574e5ae0a737b0139e08d33f71c1003" name="a0574e5ae0a737b0139e08d33f71c1003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0574e5ae0a737b0139e08d33f71c1003">&#9670;&#160;</a></span>last_ap_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> last_ap_mode</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00046">46</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>.</p>
-
-</div>
-</div>
-<a id="ad62b4849e80c02d8736c3a46cec6944b" name="ad62b4849e80c02d8736c3a46cec6944b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad62b4849e80c02d8736c3a46cec6944b">&#9670;&#160;</a></span>last_speed_cmd</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> last_speed_cmd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00045">45</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00098">rover_guidance_steering_heading_ctrl()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00071">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00156">rover_guidance_steering_kill()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00168">rover_guidance_steering_set_speed_igain()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00162">rover_guidance_steering_set_speed_pgain()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00118">rover_guidance_steering_setpoints()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00109">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -526,9 +758,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00043">43</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00067">67</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00106">rover_guidance_steering_pid_reset()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00071">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00151">rover_guidance_steering_pid_reset()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00168">rover_guidance_steering_set_speed_igain()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00162">rover_guidance_steering_set_speed_pgain()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00109">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -552,9 +784,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00044">44</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00068">68</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00071">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00109">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -564,7 +796,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_414bebee49467d45198ced6169b2555f.html">rover</a></li><li class="navelem"><a class="el" href="dir_c6a9400053a2920f0ad963162d758f3f.html">guidance</a></li><li class="navelem"><a class="el" href="rover__guidance__steering_8c.html">rover_guidance_steering.c</a></li>
-    <li class="footer">Generated on Mon Sep 22 2025 20:28:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Sep 30 2025 06:59:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

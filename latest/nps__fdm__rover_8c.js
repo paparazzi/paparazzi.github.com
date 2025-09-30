@@ -9,8 +9,7 @@ var nps__fdm__rover_8c =
     [ "nps_fdm_set_wind_ned", "nps__fdm__rover_8c.html#a05c90019f11f90f6855e9b0c3224b4a3", null ],
     [ "fdm", "nps__fdm__rover_8c.html#ae64a4e3a8d8202a279b0d36c7a415c84", null ],
     [ "ltpdef", "nps__fdm__rover_8c.html#af8e3cbce42455407e0f3461515ee62b2", null ],
-    [ "mu", "nps__fdm__rover_8c.html#a4df8d1d064e0269c44c34fd4a7a3b705", null ],
-    [ "rover_acc", "nps__fdm__rover_8c.html#aacf0fffef58cbb59f6582233f0c16b2b", null ],
-    [ "rover_pos", "nps__fdm__rover_8c.html#a787d6b59f35d0e681f7b2d449fd2f471", null ],
-    [ "rover_vel", "nps__fdm__rover_8c.html#a68b566b50bf058a79dc9cba30d86592e", null ]
+    [ "rover_acc", "nps__fdm__rover_8c.html#aa70bab476cffdbf3497fb99f77d4615e", null ],
+    [ "rover_pos", "nps__fdm__rover_8c.html#a790763c276a4147e34fbed6d620d77c7", null ],
+    [ "rover_vel", "nps__fdm__rover_8c.html#a7af72cadd7647263e9eef7009e5a9fbb", null ]
 ];

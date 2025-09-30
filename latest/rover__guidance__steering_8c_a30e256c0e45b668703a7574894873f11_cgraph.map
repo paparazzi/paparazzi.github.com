@@ -1,13 +1,11 @@
 <map id="rover_guidance_steering_speed_ctrl" name="rover_guidance_steering_speed_ctrl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,188,113"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,188,87"/>
 <area shape="rect" id="Node000002" href="$pid_8h.html#a4b0791113aade2443940408af05fdf4d" title="Get current value of the PID command." alt="" coords="311,5,394,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,70,235,39,297,25,298,30,237,45,148,75"/>
-<area shape="rect" id="Node000003" href="$pid_8h.html#a6114acd2404903d3ac084b9868083a99" title="Set gains of the PID struct." alt="" coords="291,55,414,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,81,278,72,278,77,188,86"/>
-<area shape="rect" id="Node000004" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="236,104,469,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,99,223,102,222,107,188,104"/>
-<area shape="rect" id="Node000006" href="$pid_8h.html#a8539e216d350ea0802391edce976a0cf" title="Update PID with a new value and return new command." alt="" coords="299,153,406,179"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="152,110,237,138,286,150,285,156,235,143,150,115"/>
-<area shape="rect" id="Node000005" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="517,97,708,137"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="469,114,503,114,503,119,469,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,47,297,26,298,31,189,52"/>
+<area shape="rect" id="Node000003" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="236,55,469,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,65,222,65,222,70,188,70"/>
+<area shape="rect" id="Node000005" href="$pid_8h.html#a8539e216d350ea0802391edce976a0cf" title="Update PID with a new value and return new command." alt="" coords="299,104,406,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="189,82,286,101,285,107,188,87"/>
+<area shape="rect" id="Node000004" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="517,47,708,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="469,65,503,65,503,70,469,70"/>
 </map>

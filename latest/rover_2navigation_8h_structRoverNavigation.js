@@ -13,6 +13,7 @@ var rover_2navigation_8h_structRoverNavigation =
     [ "nav_oval", "rover_2navigation_8h.html#a998902f85bedab570b011477431f925f", null ],
     [ "nav_oval_init", "rover_2navigation_8h.html#ac1b04bc3f92921626bdd0ecbbdac5642", null ],
     [ "nav_route", "rover_2navigation_8h.html#a5e2212d766e52221ad6c8fe0a7b1bcbe", null ],
+    [ "nav_stage_init", "rover_2navigation_8h.html#ae7eb88c143e6d4deddcfa0465944932b", null ],
     [ "radius", "rover_2navigation_8h.html#aff59cb135a524988cf3ef624255a4025", null ],
     [ "shift", "rover_2navigation_8h.html#a3a76cbdab8b19020bffad72d7768140d", null ],
     [ "speed", "rover_2navigation_8h.html#a598be1835429033d1825fd9011cfadef", null ],

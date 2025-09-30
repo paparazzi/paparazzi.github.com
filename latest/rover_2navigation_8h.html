@@ -197,15 +197,17 @@ $(document).ready(function(){initNavTree('rover_2navigation_8h.html',''); initRe
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rover_2navigation_8hdep" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rover_2navigation_8hdep" id="asw_2airborne_2firmwares_2rover_2navigation_8hdep">
-<area shape="rect" title="Rover navigation functions." alt="" coords="196,5,363,45"/>
+<area shape="rect" title="Rover navigation functions." alt="" coords="303,5,469,45"/>
 <area shape="rect" href="rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="5,101,172,141"/>
-<area shape="poly" title=" " alt="" coords="230,54,128,103,126,98,227,49"/>
+<area shape="poly" title=" " alt="" coords="314,52,150,103,148,98,312,47"/>
 <area shape="rect" href="rover__obstacles_8c.html" title="functions to create a grid map" alt="" coords="196,93,363,148"/>
-<area shape="poly" title=" " alt="" coords="282,59,282,93,277,93,277,59"/>
-<area shape="rect" href="nav__rover__base_8h.html" title=" " alt="" coords="387,101,556,141"/>
-<area shape="poly" title=" " alt="" coords="332,49,434,98,431,103,329,54"/>
-<area shape="rect" href="nav__rover__base_8c.html" title=" " alt="" coords="387,196,555,236"/>
-<area shape="poly" title=" " alt="" coords="474,154,474,196,469,196,469,154"/>
+<area shape="poly" title=" " alt="" coords="356,56,311,95,308,91,352,52"/>
+<area shape="rect" href="mission__rover__nav_8c.html" title="mission navigation for rovers" alt="" coords="387,101,601,141"/>
+<area shape="poly" title=" " alt="" coords="420,52,474,99,470,103,416,56"/>
+<area shape="rect" href="nav__rover__base_8h.html" title=" " alt="" coords="625,101,795,141"/>
+<area shape="poly" title=" " alt="" coords="465,47,645,98,644,103,464,52"/>
+<area shape="rect" href="nav__rover__base_8c.html" title=" " alt="" coords="626,196,794,236"/>
+<area shape="poly" title=" " alt="" coords="713,154,713,196,707,196,707,154"/>
 </map>
 </div>
 </div>
@@ -222,7 +224,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a85685a489a01120ee0b7aab3fb9934fd" id="r_a85685a489a01120ee0b7aab3fb9934fd"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a>&#160;&#160;&#160;0.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
 <tr class="memdesc:a85685a489a01120ee0b7aab3fb9934fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">default approaching_time for a wp  <br /></td></tr>
 <tr class="separator:a85685a489a01120ee0b7aab3fb9934fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3738a3f27a7562047055480aeaf2da40" id="r_a3738a3f27a7562047055480aeaf2da40"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#a3738a3f27a7562047055480aeaf2da40">CARROT_DIST</a>&#160;&#160;&#160;2.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="memitem:a3738a3f27a7562047055480aeaf2da40" id="r_a3738a3f27a7562047055480aeaf2da40"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#a3738a3f27a7562047055480aeaf2da40">CARROT_DIST</a>&#160;&#160;&#160;5.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
 <tr class="separator:a3738a3f27a7562047055480aeaf2da40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba17f9ac72f7e9dd1dcd95457bf5c87f" id="r_aba17f9ac72f7e9dd1dcd95457bf5c87f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">NAVIGATION_FREQUENCY</a>&#160;&#160;&#160;20</td></tr>
 <tr class="memdesc:aba17f9ac72f7e9dd1dcd95457bf5c87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">default navigation frequency  <br /></td></tr>
@@ -312,6 +314,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aa07848eda5d214eba3c43b770e74dc0b" id="r_aa07848eda5d214eba3c43b770e74dc0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">typedef</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#aa07848eda5d214eba3c43b770e74dc0b">nav_rover_stage_init</a>) (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:aa07848eda5d214eba3c43b770e74dc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e8687b93093801b79d6ef983692280" id="r_a63e8687b93093801b79d6ef983692280"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">typedef</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#a63e8687b93093801b79d6ef983692280">nav_rover_goto</a>) (struct <a class="el" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> *wp)</td></tr>
 <tr class="separator:a63e8687b93093801b79d6ef983692280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6601a6ea5f3ff9f62e08393c2fdcc2e" id="r_ad6601a6ea5f3ff9f62e08393c2fdcc2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">typedef</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#ad6601a6ea5f3ff9f62e08393c2fdcc2e">nav_rover_route</a>) (struct <a class="el" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">wp_start</a>, struct <a class="el" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">wp_end</a>)</td></tr>
@@ -327,8 +331,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad6a9228c29c723a8924a9f1214404a31" id="r_ad6a9228c29c723a8924a9f1214404a31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#ad6a9228c29c723a8924a9f1214404a31">nav_register_stage_init</a> (<a class="el" href="rover_2navigation_8h.html#aa07848eda5d214eba3c43b770e74dc0b">nav_rover_stage_init</a> <a class="el" href="nav__rotorcraft__base_8c.html#ade02cabc097229481991f31ae6affb98">nav_stage_init</a>)</td></tr>
+<tr class="memdesc:ad6a9228c29c723a8924a9f1214404a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registering functions.  <br /></td></tr>
+<tr class="separator:ad6a9228c29c723a8924a9f1214404a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7254173fb2381632e0554d801cc59897" id="r_a7254173fb2381632e0554d801cc59897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#a7254173fb2381632e0554d801cc59897">nav_register_goto_wp</a> (<a class="el" href="rover_2navigation_8h.html#a63e8687b93093801b79d6ef983692280">nav_rover_goto</a> <a class="el" href="nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca">nav_goto</a>, <a class="el" href="rover_2navigation_8h.html#ad6601a6ea5f3ff9f62e08393c2fdcc2e">nav_rover_route</a> <a class="el" href="nav__rotorcraft__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d">nav_route</a>, <a class="el" href="rover_2navigation_8h.html#ae5f7efa2ff5fbc7ee475ab14965f9e5f">nav_rover_approaching</a> <a class="el" href="nav__rotorcraft__base_8c.html#ac1382cbcc0f52b6f9e2387e53105be7d">nav_approaching</a>)</td></tr>
-<tr class="memdesc:a7254173fb2381632e0554d801cc59897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registering functions.  <br /></td></tr>
 <tr class="separator:a7254173fb2381632e0554d801cc59897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb147e5f4a4f8502edfc3f1d59d925d" id="r_aceb147e5f4a4f8502edfc3f1d59d925d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2navigation_8h.html#aceb147e5f4a4f8502edfc3f1d59d925d">nav_register_circle</a> (<a class="el" href="rover_2navigation_8h.html#a645da27d6ce4360d2177549db73490e2">nav_rover_circle</a> <a class="el" href="nav__rotorcraft__base_8c.html#aa3bfe347df0356bb0ce1474c9d7817ac">nav_circle</a>)</td></tr>
 <tr class="separator:aceb147e5f4a4f8502edfc3f1d59d925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -436,7 +442,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>General Navigation structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00088">88</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00089">89</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for RoverNavigation:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -530,6 +536,12 @@ nav_route</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="ae7eb88c143e6d4deddcfa0465944932b" name="ae7eb88c143e6d4deddcfa0465944932b"></a><a class="el" href="rover_2navigation_8h.html#aa07848eda5d214eba3c43b770e74dc0b">nav_rover_stage_init</a></td>
+<td class="fieldname">
+nav_stage_init</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="aff59cb135a524988cf3ef624255a4025" name="aff59cb135a524988cf3ef624255a4025"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
 <td class="fieldname">
 radius</td>
@@ -613,7 +625,7 @@ turn rate setpoint </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> CARROT_DIST&#160;&#160;&#160;2.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> CARROT_DIST&#160;&#160;&#160;5.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -676,7 +688,7 @@ turn rate setpoint </td></tr>
 <p>Get current altitude reference for local coordinates. </p>
 <p>This is the ground_alt from the flight plan at first, but might be updated later through a call to <a class="el" href="rotorcraft_2navigation_8h.html#a1b58af4e8c7d8f13f39c63a25570ccd6">NavSetGroundReferenceHere()</a> or <a class="el" href="rotorcraft_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b">NavSetAltitudeReferenceHere()</a>, e.g. in the GeoInit flight plan block. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00147">147</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00150">150</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +709,7 @@ turn rate setpoint </td></tr>
 
 <p>Get current altitude above MSL. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00138">138</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00141">141</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +730,7 @@ turn rate setpoint </td></tr>
 
 <p>Get current height above reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00140">140</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00143">143</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -739,7 +751,7 @@ turn rate setpoint </td></tr>
 
 <p>Get current x (east) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00134">134</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00137">137</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +772,7 @@ turn rate setpoint </td></tr>
 
 <p>Get current y (north) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00136">136</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00139">139</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +882,7 @@ turn rate setpoint </td></tr>
 <div class="ttc" id="arotorcraft_2navigation_8h_html_a4c7a077d8caffd6b82413a798bbaf71e"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#a4c7a077d8caffd6b82413a798bbaf71e">nav</a></div><div class="ttdeci">struct RotorcraftNavigation nav</div><div class="ttdef"><b>Definition</b> <a href="rotorcraft_2navigation_8c_source.html#l00051">navigation.c:51</a></div></div>
 <div class="ttc" id="arover_2navigation_8h_html_ab6a403a7e0d980e918c94144d253fe77"><div class="ttname"><a href="rover_2navigation_8h.html#ab6a403a7e0d980e918c94144d253fe77">NAV_MODE_MANUAL</a></div><div class="ttdeci">#define NAV_MODE_MANUAL</div><div class="ttdef"><b>Definition</b> <a href="rover_2navigation_8h_source.html#l00076">navigation.h:76</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00220">220</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00223">223</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +912,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00212">212</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00215">215</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +928,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00206">206</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00209">209</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +944,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00207">207</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00210">210</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -948,7 +960,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00312">312</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00316">316</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +992,7 @@ turn rate setpoint </td></tr>
 
 <p>Unused compat macros. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00318">318</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00322">322</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1010,7 @@ turn rate setpoint </td></tr>
 
 <p>Set the heading of the rover, nothing else. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00233">233</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00236">236</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1050,7 @@ turn rate setpoint </td></tr>
 
 <p>Settings handlers. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00306">306</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00310">310</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1070,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00308">308</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00312">312</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1086,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00203">203</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00206">206</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1102,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00200">200</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00203">203</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1118,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00202">202</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00205">205</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1138,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00235">235</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00238">238</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1154,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00205">205</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00208">208</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1184,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00321">321</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00325">325</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1204,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00320">320</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00324">324</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1212,7 +1224,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00319">319</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00323">323</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1244,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00322">322</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00326">326</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1257,7 +1269,7 @@ turn rate setpoint </td></tr>
 <div class="line">}</div>
 <div class="ttc" id="arotorcraft_2navigation_8h_html_a04825159f15f799c93c309159e4b495c"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#a04825159f15f799c93c309159e4b495c">RotorcraftNavigation::speed</a></div><div class="ttdeci">struct EnuCoor_f speed</div><div class="ttdoc">speed setpoint (in m/s)</div><div class="ttdef"><b>Definition</b> <a href="rotorcraft_2navigation_8h_source.html#l00128">navigation.h:128</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00227">227</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00230">230</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1295,7 @@ turn rate setpoint </td></tr>
 </div><!-- fragment -->
 <p>Normalize a degree angle between 0 and 359. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00151">151</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00154">154</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1321,7 @@ turn rate setpoint </td></tr>
 </div><!-- fragment -->
 <p>Normalize a rad angle between 0 and 2*PI. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00156">156</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00159">159</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1338,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00080">80</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00081">81</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1354,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00081">81</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00082">82</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1370,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00078">78</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00079">79</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1374,7 +1386,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00083">83</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00084">84</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1390,7 +1402,7 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00082">82</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00083">83</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1418,23 @@ turn rate setpoint </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00079">79</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00080">80</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+
+</div>
+</div>
+<a id="aa07848eda5d214eba3c43b770e74dc0b" name="aa07848eda5d214eba3c43b770e74dc0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07848eda5d214eba3c43b770e74dc0b">&#9670;&#160;</a></span>nav_rover_stage_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">typedef</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(* nav_rover_stage_init) (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00078">78</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1501,7 @@ turn rate setpoint </td></tr>
 
 <p class="reference">References <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00075">pos_diff</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00318">get_dist2_to_waypoint()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00034">nav_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00121">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00157">nav_hybrid_route()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00041">nav_route()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00536">rotwing_state_choose_state_by_dist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00318">get_dist2_to_waypoint()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00040">nav_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00121">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00157">nav_hybrid_route()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00048">nav_route()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00536">rotwing_state_choose_state_by_dist()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -1518,24 +1546,24 @@ turn rate setpoint </td></tr>
 <div class="center"><img src="rover_2navigation_8h_aa7992cd3005e9daab2dda14f2950249b_icgraph.png" border="0" usemap="#arover_2navigation_8h_aa7992cd3005e9daab2dda14f2950249b_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_aa7992cd3005e9daab2dda14f2950249b_icgraph" id="arover_2navigation_8h_aa7992cd3005e9daab2dda14f2950249b_icgraph">
 <area shape="rect" title="Returns squared horizontal distance to given point." alt="" coords="921,300,1064,325"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="704,57,873,82"/>
-<area shape="poly" title=" " alt="" coords="977,288,935,212,906,168,871,128,843,103,813,85,816,80,846,99,875,124,910,165,940,209,982,286"/>
-<area shape="rect" href="nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="747,138,830,164"/>
-<area shape="poly" title=" " alt="" coords="972,290,929,240,902,213,872,189,827,166,829,161,875,185,905,209,933,236,976,287"/>
-<area shape="rect" href="nav__rover__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title="Implement basic nav function." alt="" coords="747,376,830,401"/>
-<area shape="poly" title=" " alt="" coords="946,332,825,378,823,373,944,327"/>
-<area shape="rect" href="nav__rotorcraft__hybrid_8c.html#a342a4deb3398a85a7e59d72d7bee0cf8" title="Implement basic nav function for the hybrid case." alt="" coords="499,325,630,350"/>
-<area shape="poly" title=" " alt="" coords="908,320,630,337,630,331,907,315"/>
-<area shape="rect" href="nav__rotorcraft__hybrid_8c.html#a46cf0dc6f9a25e42377471eaeec36704" title=" " alt="" coords="497,276,632,301"/>
-<area shape="poly" title=" " alt="" coords="907,310,632,295,632,289,908,305"/>
-<area shape="rect" href="nav__rotorcraft__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,200,832,225"/>
+<area shape="rect" href="rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014" title="Returns squared horizontal distance to given waypoint." alt="" coords="704,62,873,88"/>
+<area shape="poly" title=" " alt="" coords="978,288,937,211,907,167,871,126,845,106,818,90,820,86,848,101,875,122,911,163,941,208,983,286"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="747,200,830,225"/>
 <area shape="poly" title=" " alt="" coords="952,296,815,228,817,223,954,291"/>
-<area shape="rect" href="nav__rover__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,426,832,452"/>
-<area shape="poly" title=" " alt="" coords="972,337,929,377,875,416,833,432,831,427,872,411,926,373,968,333"/>
+<area shape="rect" href="nav__rover__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="523,426,606,452"/>
+<area shape="poly" title=" " alt="" coords="974,338,931,379,904,399,874,415,803,436,729,446,661,448,606,446,606,440,661,443,729,441,802,431,872,410,901,394,928,375,970,334"/>
+<area shape="rect" href="nav__rotorcraft__hybrid_8c.html#a342a4deb3398a85a7e59d72d7bee0cf8" title="Implement basic nav function for the hybrid case." alt="" coords="499,276,630,301"/>
+<area shape="poly" title=" " alt="" coords="907,310,630,295,630,289,908,305"/>
+<area shape="rect" href="nav__rotorcraft__hybrid_8c.html#a46cf0dc6f9a25e42377471eaeec36704" title=" " alt="" coords="497,325,632,350"/>
+<area shape="poly" title=" " alt="" coords="908,320,632,336,632,331,907,315"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,137,832,162"/>
+<area shape="poly" title=" " alt="" coords="972,290,929,240,902,213,872,189,825,165,828,160,875,185,905,209,933,237,976,287"/>
+<area shape="rect" href="nav__rover__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d" title=" " alt="" coords="745,376,832,401"/>
+<area shape="poly" title=" " alt="" coords="946,332,825,378,823,373,944,327"/>
 <area shape="rect" href="rotwing__state_8c.html#ac855fe558b428b1f53aa53c8361ce08f" title=" " alt="" coords="707,476,871,516"/>
-<area shape="poly" title=" " alt="" coords="980,339,938,402,909,436,875,467,855,479,852,474,872,462,905,432,934,398,976,336"/>
+<area shape="poly" title=" " alt="" coords="979,338,936,398,907,430,875,460,844,479,841,474,872,456,904,427,932,394,974,335"/>
 <area shape="rect" href="rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="473,24,656,49"/>
-<area shape="poly" title=" " alt="" coords="690,58,650,52,651,46,691,52"/>
+<area shape="poly" title=" " alt="" coords="700,63,638,52,639,46,701,57"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,24,188,49"/>
 <area shape="poly" title=" " alt="" coords="494,24,425,14,331,8,236,14,154,26,154,21,236,8,331,3,426,8,494,18"/>
 <area shape="rect" href="nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation (circle around HOME)" alt="" coords="285,73,376,98"/>
@@ -1547,27 +1575,24 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="272,88,160,88,160,83,272,83"/>
 <area shape="poly" title=" " alt="" coords="247,39,188,39,188,34,247,34"/>
 <area shape="poly" title=" " alt="" coords="257,55,158,76,157,70,256,49"/>
-<area shape="rect" href="rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897" title="Register functions." alt="" coords="482,125,647,150"/>
-<area shape="poly" title=" " alt="" coords="734,150,647,145,648,140,734,145"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#a6db8dffd444086b98f7efd0cb97d3aae" title="Registering functions." alt="" coords="482,226,647,252"/>
-<area shape="poly" title=" " alt="" coords="744,171,599,229,597,224,742,166"/>
+<area shape="rect" href="rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897" title=" " alt="" coords="482,125,647,150"/>
+<area shape="poly" title=" " alt="" coords="735,198,603,153,604,148,737,193"/>
+<area shape="rect" href="rotorcraft_2navigation_8c.html#a6db8dffd444086b98f7efd0cb97d3aae" title=" " alt="" coords="482,226,647,252"/>
+<area shape="poly" title=" " alt="" coords="734,221,648,232,647,227,734,216"/>
 <area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="260,176,401,201"/>
-<area shape="poly" title=" " alt="" coords="740,137,699,124,656,115,564,103,524,105,474,115,438,127,404,144,351,178,348,173,401,139,436,122,473,110,523,100,564,98,656,110,701,119,742,131"/>
+<area shape="poly" title=" " alt="" coords="734,212,401,195,402,189,734,207"/>
 <area shape="rect" href="nav__rotorcraft__hybrid_8c.html#ab0f5b29a3e6700f427eb6f9f6ddea67a" title="Init and register nav functions." alt="" coords="236,276,425,301"/>
 <area shape="poly" title=" " alt="" coords="491,257,392,278,391,273,490,252"/>
 <area shape="poly" title=" " alt="" coords="491,226,389,204,391,198,492,221"/>
-<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="273,401,388,426"/>
-<area shape="poly" title=" " alt="" coords="487,259,475,265,346,402,342,399,472,261,484,254"/>
-<area shape="poly" title=" " alt="" coords="734,394,388,413,388,408,733,389"/>
+<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="273,376,388,401"/>
+<area shape="poly" title=" " alt="" coords="487,259,475,265,460,276,450,288,427,314,351,378,347,373,423,310,446,284,456,272,472,261,485,254"/>
+<area shape="poly" title=" " alt="" coords="509,430,388,403,389,398,510,425"/>
+<area shape="poly" title=" " alt="" coords="485,291,425,291,425,286,485,286"/>
 <area shape="poly" title=" " alt="" coords="490,325,391,304,392,299,491,320"/>
-<area shape="poly" title=" " alt="" coords="484,291,425,291,425,286,484,286"/>
-<area shape="poly" title=" " alt="" coords="735,198,603,153,604,148,737,193"/>
-<area shape="poly" title=" " alt="" coords="732,222,648,232,647,227,731,216"/>
-<area shape="poly" title=" " alt="" coords="732,212,401,195,402,189,732,207"/>
-<area shape="poly" title=" " alt="" coords="732,455,656,467,564,475,524,474,473,467,410,450,358,429,360,424,412,445,474,462,524,469,564,470,656,462,731,450"/>
-<area shape="rect" href="nav__rover__base_8c.html#afd0e05357829985f3000d7456e66ef61" title=" " alt="" coords="524,426,605,452"/>
-<area shape="poly" title=" " alt="" coords="732,442,605,442,605,436,732,436"/>
-<area shape="poly" title=" " alt="" coords="510,436,388,423,388,417,510,431"/>
+<area shape="poly" title=" " alt="" coords="731,149,647,145,648,139,732,144"/>
+<area shape="poly" title=" " alt="" coords="744,170,599,229,597,224,742,165"/>
+<area shape="poly" title=" " alt="" coords="739,135,698,124,656,115,564,103,524,105,474,115,438,127,404,144,351,178,348,173,401,139,436,122,473,110,523,100,564,98,656,110,700,118,740,130"/>
+<area shape="poly" title=" " alt="" coords="731,391,388,391,388,386,731,386"/>
 </map>
 </div>
 
@@ -1699,7 +1724,47 @@ turn rate setpoint </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover_2navigation_8c_source.html#l00135">135</a> of file <a class="el" href="rover_2navigation_8c_source.html">navigation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00055">ARRIVED_AT_WAYPOINT</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00199">ENU_BFP_OF_REAL</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00139">float_vect2_norm()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT_VECT3_ZERO</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rover_2navigation_8h_adc23b26a1fb98cdf9df69601f1be20e9_cgraph.png" border="0" usemap="#arover_2navigation_8h_adc23b26a1fb98cdf9df69601f1be20e9_cgraph" alt=""/></div>
+<map name="arover_2navigation_8h_adc23b26a1fb98cdf9df69601f1be20e9_cgraph" id="arover_2navigation_8h_adc23b26a1fb98cdf9df69601f1be20e9_cgraph">
+<area shape="rect" title="Check the time spent in a radius of &#39;ARRIVED_AT_WAYPOINT&#39; around a wp" alt="" coords="5,81,160,107"/>
+<area shape="rect" href="group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title=" " alt="" coords="224,56,359,81"/>
+<area shape="poly" title=" " alt="" coords="160,82,210,76,210,81,160,87"/>
+<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="208,105,375,131"/>
+<area shape="poly" title=" " alt="" coords="160,100,195,104,194,110,160,106"/>
+<area shape="rect" href="group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title=" " alt="" coords="437,56,579,81"/>
+<area shape="poly" title=" " alt="" coords="359,66,423,66,423,71,359,71"/>
+<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="423,105,593,131"/>
+<area shape="poly" title=" " alt="" coords="375,115,409,115,409,121,375,121"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="661,5,765,31"/>
+<area shape="poly" title=" " alt="" coords="565,103,592,90,606,78,615,66,625,53,640,40,650,34,653,39,643,44,629,56,620,69,610,82,595,95,567,108"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="832,104,985,129"/>
+<area shape="poly" title=" " alt="" coords="594,115,818,114,818,120,594,120"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="641,156,784,181"/>
+<area shape="poly" title=" " alt="" coords="561,128,648,150,647,155,560,133"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="642,55,783,80"/>
+<area shape="poly" title=" " alt="" coords="560,103,647,81,648,86,561,108"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="661,205,764,231"/>
+<area shape="poly" title=" " alt="" coords="531,128,581,158,642,190,661,198,659,203,640,195,578,163,528,133"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="855,5,963,31"/>
+<area shape="poly" title=" " alt="" coords="765,15,841,15,841,21,765,21"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="856,55,961,80"/>
+<area shape="poly" title=" " alt="" coords="764,28,845,49,843,54,763,33"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="833,156,985,181"/>
+<area shape="poly" title=" " alt="" coords="784,166,819,166,819,171,784,171"/>
+<area shape="poly" title=" " alt="" coords="784,65,842,65,842,70,784,70"/>
+<area shape="poly" title=" " alt="" coords="764,77,845,98,843,103,763,83"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="833,205,985,231"/>
+<area shape="poly" title=" " alt="" coords="764,215,819,215,819,221,764,221"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="839,255,979,295"/>
+<area shape="poly" title=" " alt="" coords="758,228,827,249,826,254,756,233"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1738,11 +1803,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00326">compute_dist2_to_home()</a>, <a class="el" href="common__nav_8c_source.html#l00038">dist2_to_home</a>, <a class="el" href="common__nav_8c_source.html#l00039">dist2_to_wp</a>, <a class="el" href="nav_8c_source.html#l00410">FAILSAFE_HOME_RADIUS</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="common__nav_8c_source.html#l00046">ground_alt</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00121">RotorcraftNavigation::horizontal_mode</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="nav_8c_source.html#l00307">nav_altitude</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00139">RotorcraftNavigation::nav_altitude</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00085">NAV_HORIZONTAL_MODE_WAYPOINT</a>, <a class="el" href="rover_2navigation_8h_source.html#l00072">NAV_MODE_WAYPOINT</a>, <a class="el" href="nav_8c_source.html#l00310">nav_pitch</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00165">nav_run()</a>, <a class="el" href="nav_8c_source.html#l00413">nav_set_altitude()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00100">NAV_SETPOINT_MODE_POS</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00094">NAV_VERTICAL_MODE_ALT</a>, <a class="el" href="nav_8h_source.html#l00151">NavCircleWaypoint</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00123">RotorcraftNavigation::setpoint_mode</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00126">RotorcraftNavigation::target</a>, <a class="el" href="energy__ctrl_8c_source.html#l00074">v_ctl_mode</a>, <a class="el" href="guidance__common_8h_source.html#l00039">V_CTL_MODE_AUTO_ALT</a>, <a class="el" href="guidance__common_8h_source.html#l00037">V_CTL_MODE_AUTO_THROTTLE</a>, <a class="el" href="energy__ctrl_8c_source.html#l00131">v_ctl_throttle_setpoint</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00122">RotorcraftNavigation::vertical_mode</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00118">waypoint_get_alt()</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_cgraph.png" border="0" usemap="#arover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_cgraph" id="arover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_cgraph">
 <area shape="rect" title="Home mode navigation (circle around HOME)" alt="" coords="5,193,96,219"/>
@@ -1798,11 +1863,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="525,257,578,260,578,265,525,262"/>
 </map>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_icgraph.png" border="0" usemap="#arover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_icgraph" id="arover_2navigation_8h_a069e6b8f68b2e117cbbe03f29e30a2e3_icgraph">
 <area shape="rect" title="Home mode navigation (circle around HOME)" alt="" coords="236,31,327,56"/>
@@ -1844,11 +1909,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00532">532</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00129">RotorcraftNavigation::accel</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00127">RotorcraftNavigation::carrot</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00137">RotorcraftNavigation::climb</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00146">RotorcraftNavigation::climb_vspeed</a>, <a class="el" href="common__flight__plan_8c_source.html#l00043">common_flight_plan_init()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00042">DEFAULT_CIRCLE_RADIUS</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00147">RotorcraftNavigation::descend_vspeed</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00143">RotorcraftNavigation::dist2_to_home</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00063">empty_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00064">empty_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00061">empty_goto()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00066">empty_oval()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00065">empty_oval_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00062">empty_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00060">empty_stage_init()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00145">RotorcraftNavigation::failsafe_mode_dist2</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00060">FAILSAFE_MODE_DISTANCE</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00056">flight_altitude</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00365">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00161">FLOAT_VECT3_ZERO</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00138">RotorcraftNavigation::fp_altitude</a>, <a class="el" href="nav_8c_source.html#l00313">fp_climb</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00140">RotorcraftNavigation::fp_max_speed</a>, <a class="el" href="nav_8c_source.html#l00311">fp_pitch</a>, <a class="el" href="nav_8c_source.html#l00312">fp_throttle</a>, <a class="el" href="common__nav_8c_source.html#l00046">ground_alt</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00121">RotorcraftNavigation::horizontal_mode</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00139">RotorcraftNavigation::nav_altitude</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_approaching</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00154">RotorcraftNavigation::nav_circle</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00046">NAV_CLIMB_VSPEED</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00050">NAV_DESCEND_VSPEED</a>, <a class="el" href="nav_8c_source.html#l00076">nav_glide_pitch_trim</a>, <a class="el" href="nav_8c_source.html#l00078">NAV_GLIDE_PITCH_TRIM</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00151">RotorcraftNavigation::nav_goto</a>, <a class="el" href="nav_8c_source.html#l00083">nav_ground_speed_pgain</a>, <a class="el" href="nav_8c_source.html#l00083">nav_ground_speed_setpoint</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00085">NAV_HORIZONTAL_MODE_WAYPOINT</a>, <a class="el" href="nav_8c_source.html#l00090">nav_mode</a>, <a class="el" href="nav_8h_source.html#l00086">NAV_MODE_COURSE</a>, <a class="el" href="rover_2navigation_8h_source.html#l00072">NAV_MODE_WAYPOINT</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00156">RotorcraftNavigation::nav_oval</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00155">RotorcraftNavigation::nav_oval_init</a>, <a class="el" href="nav_8c_source.html#l00056">nav_radius</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00152">RotorcraftNavigation::nav_route</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00100">NAV_SETPOINT_MODE_POS</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00150">RotorcraftNavigation::nav_stage_init</a>, <a class="el" href="nav_8c_source.html#l00086">nav_survey_shift</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00094">NAV_VERTICAL_MODE_ALT</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00132">RotorcraftNavigation::pitch</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00134">RotorcraftNavigation::quat</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00136">RotorcraftNavigation::radius</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00135">RotorcraftNavigation::rates</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00131">RotorcraftNavigation::roll</a>, <a class="el" href="nav_8c_source.html#l00504">send_circle()</a>, <a class="el" href="nav_8c_source.html#l00477">send_nav()</a>, <a class="el" href="nav_8c_source.html#l00471">send_nav_ref()</a>, <a class="el" href="nav_8c_source.html#l00512">send_segment()</a>, <a class="el" href="nav_8c_source.html#l00520">send_survey()</a>, <a class="el" href="nav_8c_source.html#l00489">send_wp_moved()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00066">send_wp_moved()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00123">RotorcraftNavigation::setpoint_mode</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00128">RotorcraftNavigation::speed</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00126">RotorcraftNavigation::target</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00130">RotorcraftNavigation::throttle</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00144">RotorcraftNavigation::too_far_from_home</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00122">RotorcraftNavigation::vertical_mode</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00056">waypoints_init()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a64a3814d1672e69989f80701a0ff5749_cgraph.png" border="0" usemap="#arover_2navigation_8h_a64a3814d1672e69989f80701a0ff5749_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a64a3814d1672e69989f80701a0ff5749_cgraph" id="arover_2navigation_8h_a64a3814d1672e69989f80701a0ff5749_cgraph">
 <area shape="rect" title="Navigation Initialisation." alt="" coords="5,425,80,451"/>
@@ -1962,11 +2027,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="autopilot_8c_source.html#l00340">autopilot_in_flight()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stereocam_2stereocam__follow__me_2follow__me_8c_source.html#l00062">follow_me()</a>, and <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00215">nav_land_run()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_cgraph.png" border="0" usemap="#arover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_cgraph" id="arover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,128,31"/>
@@ -1974,11 +2039,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
 </map>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_icgraph.png" border="0" usemap="#arover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_icgraph" id="arover_2navigation_8h_a46063efd4dae5efe23d6c018af1917d1_icgraph">
 <area shape="rect" title=" " alt="" coords="563,56,685,81"/>
@@ -2025,7 +2090,7 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00289">289</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00293">293</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00155">RotorcraftNavigation::nav_oval_init</a>.</p>
 
@@ -2058,11 +2123,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00115">115</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00069">nav_goto_block()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a83611f5ef79754968abca36d8dbaf599_cgraph.png" border="0" usemap="#arover_2navigation_8h_a83611f5ef79754968abca36d8dbaf599_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a83611f5ef79754968abca36d8dbaf599_cgraph" id="arover_2navigation_8h_a83611f5ef79754968abca36d8dbaf599_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,145,56"/>
@@ -2106,11 +2171,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00121">121</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00613">stateIsLocalCoordinateValid()</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00258">waypoint_move_lla()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a66999fe9753ffaa9c972ca15d9fc3333_cgraph.png" border="0" usemap="#arover_2navigation_8h_a66999fe9753ffaa9c972ca15d9fc3333_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a66999fe9753ffaa9c972ca15d9fc3333_cgraph" id="arover_2navigation_8h_a66999fe9753ffaa9c972ca15d9fc3333_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,168,107"/>
@@ -2184,11 +2249,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="common__flight__plan_8c_source.html#l00032">block_time</a>, <a class="el" href="nav_8c_source.html#l00071">circle_bank</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00326">compute_dist2_to_home()</a>, <a class="el" href="common__nav_8c_source.html#l00039">dist2_to_wp</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00081">h_ctl_course_pre_bank</a>, <a class="el" href="nav_8c_source.html#l00066">nav_in_circle</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00165">nav_run()</a>, <a class="el" href="nav_8c_source.html#l00413">nav_set_altitude()</a>, <a class="el" href="nav_8c_source.html#l00088">nav_survey_active</a>, <a class="el" href="nav_8h_source.html#l00049">NAVIGATION_FREQUENCY</a>, <a class="el" href="common__flight__plan_8c_source.html#l00032">stage_time</a>, <a class="el" href="guidance__common_8h_source.html#l00051">V_CTL_AUTO_THROTTLE_STANDARD</a>, <a class="el" href="energy__ctrl_8c_source.html#l00076">v_ctl_auto_throttle_submode</a>, <a class="el" href="energy__ctrl_8c_source.html#l00074">v_ctl_mode</a>, and <a class="el" href="guidance__common_8h_source.html#l00038">V_CTL_MODE_AUTO_CLIMB</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_cgraph.png" border="0" usemap="#arover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_cgraph" id="arover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_cgraph">
 <area shape="rect" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="5,168,145,193"/>
@@ -2242,11 +2307,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="575,257,628,260,627,265,574,262"/>
 </map>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_icgraph.png" border="0" usemap="#arover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_icgraph" id="arover_2navigation_8h_ad40d34bcd8520f64bb073fae4a08878e_icgraph">
 <area shape="rect" title="Navigation main: call to the code generated from the XML flight plan." alt="" coords="236,31,376,56"/>
@@ -2288,11 +2353,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00154">RotorcraftNavigation::nav_circle</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00114">nav_circle()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00330">nav_rotorcraft_hybrid_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00302">nav_rotorcraft_init()</a>, and <a class="el" href="nav__rover__base_8c_source.html#l00291">nav_rover_init()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_cgraph.png" border="0" usemap="#arover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_cgraph" id="arover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,105,151,131"/>
@@ -2326,11 +2391,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="884,228,954,249,953,254,883,233"/>
 </map>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_icgraph.png" border="0" usemap="#arover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_icgraph" id="arover_2navigation_8h_aceb147e5f4a4f8502edfc3f1d59d925d_icgraph">
 <area shape="rect" title=" " alt="" coords="243,55,388,80"/>
@@ -2385,22 +2450,19 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Registering functions. </p>
-<p>Registering functions. </p>
-
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00392">392</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_approaching</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00073">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00151">RotorcraftNavigation::nav_goto</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00152">RotorcraftNavigation::nav_route</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00330">nav_rotorcraft_hybrid_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00302">nav_rotorcraft_init()</a>, and <a class="el" href="nav__rover__base_8c_source.html#l00291">nav_rover_init()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a7254173fb2381632e0554d801cc59897_cgraph.png" border="0" usemap="#arover_2navigation_8h_a7254173fb2381632e0554d801cc59897_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a7254173fb2381632e0554d801cc59897_cgraph" id="arover_2navigation_8h_a7254173fb2381632e0554d801cc59897_cgraph">
-<area shape="rect" title="Registering functions." alt="" coords="5,143,171,168"/>
+<area shape="rect" title=" " alt="" coords="5,143,171,168"/>
 <area shape="rect" href="nav__rotorcraft__base_8c.html#ac1382cbcc0f52b6f9e2387e53105be7d" title=" " alt="" coords="219,80,352,105"/>
 <area shape="poly" title=" " alt="" coords="128,140,231,107,232,112,130,145"/>
 <area shape="rect" href="nav__rotorcraft__base_8c.html#a5619bb2de770a76cee83cfeb383519ca" title=" " alt="" coords="244,143,327,168"/>
@@ -2450,14 +2512,14 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="328,194,395,181,396,187,329,199"/>
 </map>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a7254173fb2381632e0554d801cc59897_icgraph.png" border="0" usemap="#arover_2navigation_8h_a7254173fb2381632e0554d801cc59897_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a7254173fb2381632e0554d801cc59897_icgraph" id="arover_2navigation_8h_a7254173fb2381632e0554d801cc59897_icgraph">
-<area shape="rect" title="Registering functions." alt="" coords="243,55,408,80"/>
+<area shape="rect" title=" " alt="" coords="243,55,408,80"/>
 <area shape="rect" href="nav__rotorcraft__hybrid_8c.html#ab0f5b29a3e6700f427eb6f9f6ddea67a" title="Init and register nav functions." alt="" coords="5,5,195,31"/>
 <area shape="poly" title=" " alt="" coords="253,54,158,33,159,28,254,49"/>
 <area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="29,55,171,80"/>
@@ -2508,11 +2570,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="nav__rotorcraft__base_8c_source.html#l00170">_nav_oval_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="nav_8c_source.html#l00762">nav_oval()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00156">RotorcraftNavigation::nav_oval</a>, <a class="el" href="nav_8c_source.html#l00756">nav_oval_init()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00155">RotorcraftNavigation::nav_oval_init</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__rotorcraft__base_8c_source.html#l00302">nav_rotorcraft_init()</a>, and <a class="el" href="nav__rover__base_8c_source.html#l00291">nav_rover_init()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_af495131c9e74de9b78173144cda2574c_cgraph.png" border="0" usemap="#arover_2navigation_8h_af495131c9e74de9b78173144cda2574c_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_af495131c9e74de9b78173144cda2574c_cgraph" id="arover_2navigation_8h_af495131c9e74de9b78173144cda2574c_cgraph">
 <area shape="rect" title=" " alt="" coords="5,105,144,131"/>
@@ -2572,11 +2634,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="468,65,539,65,539,70,468,70"/>
 </map>
 </div>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_af495131c9e74de9b78173144cda2574c_icgraph.png" border="0" usemap="#arover_2navigation_8h_af495131c9e74de9b78173144cda2574c_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_af495131c9e74de9b78173144cda2574c_icgraph" id="arover_2navigation_8h_af495131c9e74de9b78173144cda2574c_icgraph">
 <area shape="rect" title=" " alt="" coords="195,31,333,56"/>
@@ -2584,6 +2646,67 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="181,35,146,30,147,25,181,30"/>
 <area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,55,133,80"/>
 <area shape="poly" title=" " alt="" coords="181,57,134,63,133,57,181,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6a9228c29c723a8924a9f1214404a31" name="ad6a9228c29c723a8924a9f1214404a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a9228c29c723a8924a9f1214404a31">&#9670;&#160;</a></span>nav_register_stage_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> nav_register_stage_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rover_2navigation_8h.html#aa07848eda5d214eba3c43b770e74dc0b">nav_rover_stage_init</a>&#160;</td>
+          <td class="paramname"><em>nav_stage_init</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registering functions. </p>
+<p>Registering functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00387">387</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
+
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00150">RotorcraftNavigation::nav_stage_init</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00035">nav_stage_init()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="nav__rotorcraft__base_8c_source.html#l00302">nav_rotorcraft_init()</a>, and <a class="el" href="nav__rover__base_8c_source.html#l00291">nav_rover_init()</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_cgraph.png" border="0" usemap="#arover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_cgraph" alt=""/></div>
+<map name="arover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_cgraph" id="arover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_cgraph">
+<area shape="rect" title="Registering functions." alt="" coords="5,5,180,31"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#ade02cabc097229481991f31ae6affb98" title="Implement basic nav function." alt="" coords="228,5,345,31"/>
+<area shape="poly" title=" " alt="" coords="180,15,214,15,214,21,180,21"/>
+</map>
+</div>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_icgraph.png" border="0" usemap="#arover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_icgraph" alt=""/></div>
+<map name="arover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_icgraph" id="arover_2navigation_8h_ad6a9228c29c723a8924a9f1214404a31_icgraph">
+<area shape="rect" title="Registering functions." alt="" coords="195,31,369,56"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="5,5,147,31"/>
+<area shape="poly" title=" " alt="" coords="181,34,147,29,147,24,181,28"/>
+<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,55,133,80"/>
+<area shape="poly" title=" " alt="" coords="181,58,134,63,133,58,181,52"/>
 </map>
 </div>
 
@@ -2678,11 +2801,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00127">RotorcraftNavigation::carrot</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00143">nav_advance_carrot()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00217">nav_set_altitude()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00126">RotorcraftNavigation::target</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00068">VECT2_COPY</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00294">nav_home()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00256">nav_periodic_task()</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_cgraph.png" border="0" usemap="#arover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_cgraph" id="arover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_cgraph">
 <area shape="rect" title=" " alt="" coords="5,131,80,156"/>
@@ -2724,11 +2847,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="270,165,318,165,318,170,270,170"/>
 </map>
 </div>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_icgraph.png" border="0" usemap="#arover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_icgraph" id="arover_2navigation_8h_a4722a6d624ce0bb547c43724e2bb9f71_icgraph">
 <area shape="rect" title=" " alt="" coords="193,31,268,56"/>
@@ -2768,11 +2891,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00380">380</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, and <a class="el" href="autopilot_8c_source.html#l00193">autopilot_set_mode()</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_aff35ca4ac1b178feb34fcd9cf117ae6b_cgraph.png" border="0" usemap="#arover_2navigation_8h_aff35ca4ac1b178feb34fcd9cf117ae6b_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_aff35ca4ac1b178feb34fcd9cf117ae6b_cgraph" id="arover_2navigation_8h_aff35ca4ac1b178feb34fcd9cf117ae6b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,70,135,95"/>
@@ -2818,11 +2941,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00375">375</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, and <a class="el" href="state_8h_source.html#l01306">stateGetNedToBodyEulers_f()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a206d573ce2ca1d37d70cbe4febdd99b3_cgraph.png" border="0" usemap="#arover_2navigation_8h_a206d573ce2ca1d37d70cbe4febdd99b3_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a206d573ce2ca1d37d70cbe4febdd99b3_cgraph" id="arover_2navigation_8h_a206d573ce2ca1d37d70cbe4febdd99b3_cgraph">
 <area shape="rect" title="Set heading to the current yaw angle." alt="" coords="5,31,191,56"/>
@@ -2872,11 +2995,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00337">nav_set_heading_rad()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00123">nav_survey_poly_setup()</a>, and <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_cgraph.png" border="0" usemap="#arover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_cgraph" id="arover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_cgraph">
 <area shape="rect" title="Set nav_heading in degrees." alt="" coords="5,5,168,31"/>
@@ -2884,11 +3007,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="168,15,202,15,202,21,168,21"/>
 </map>
 </div>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_icgraph.png" border="0" usemap="#arover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_icgraph" id="arover_2navigation_8h_ac84aeea6cb272ef7192e4e2d0551be7b_icgraph">
 <area shape="rect" title="Set nav_heading in degrees." alt="" coords="451,42,613,67"/>
@@ -2932,14 +3055,14 @@ turn rate setpoint </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00337">337</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="rover_2navigation_8h_source.html#l00156">NormCourseRad</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="rover_2navigation_8h_source.html#l00159">NormCourseRad</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00344">nav_set_heading_deg()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_abf18f00b953eff1d3133af7252e32379_icgraph.png" border="0" usemap="#arover_2navigation_8h_abf18f00b953eff1d3133af7252e32379_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_abf18f00b953eff1d3133af7252e32379_icgraph" id="arover_2navigation_8h_abf18f00b953eff1d3133af7252e32379_icgraph">
 <area shape="rect" title="heading utility functions" alt="" coords="701,66,861,91"/>
@@ -2999,11 +3122,11 @@ turn rate setpoint </td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00075">pos_diff</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, <a class="el" href="target__pos_8c_source.html#l00065">target</a>, <a class="el" href="pprz__algebra_8h_source.html#l00092">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00118">VECT2_NORM2</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">nav_set_heading_towards_target()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00363">nav_set_heading_towards_waypoint()</a>.</p>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a497df0753fcbcd7b681341695228527c_cgraph.png" border="0" usemap="#arover_2navigation_8h_a497df0753fcbcd7b681341695228527c_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a497df0753fcbcd7b681341695228527c_cgraph" id="arover_2navigation_8h_a497df0753fcbcd7b681341695228527c_cgraph">
 <area shape="rect" title="Set heading to point towards x,y position in local coordinates." alt="" coords="5,105,196,131"/>
@@ -3035,11 +3158,11 @@ turn rate setpoint </td></tr>
 <area shape="poly" title=" " alt="" coords="794,228,863,249,862,254,792,233"/>
 </map>
 </div>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a497df0753fcbcd7b681341695228527c_icgraph.png" border="0" usemap="#arover_2navigation_8h_a497df0753fcbcd7b681341695228527c_icgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a497df0753fcbcd7b681341695228527c_icgraph" id="arover_2navigation_8h_a497df0753fcbcd7b681341695228527c_icgraph">
 <area shape="rect" title="Set heading to point towards x,y position in local coordinates." alt="" coords="244,45,435,70"/>
@@ -3081,11 +3204,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">369</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00350">nav_set_heading_towards()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00126">RotorcraftNavigation::target</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
-<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a980612556418b4310bf871b118da9cc4_cgraph.png" border="0" usemap="#arover_2navigation_8h_a980612556418b4310bf871b118da9cc4_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a980612556418b4310bf871b118da9cc4_cgraph" id="arover_2navigation_8h_a980612556418b4310bf871b118da9cc4_cgraph">
 <area shape="rect" title="Set heading in the direction of the target." alt="" coords="5,98,196,138"/>
@@ -3151,11 +3274,11 @@ turn rate setpoint </td></tr>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00363">363</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00350">nav_set_heading_towards()</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
-<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_a3db1ed9a54dba70032a53de5dec69d9b_cgraph.png" border="0" usemap="#arover_2navigation_8h_a3db1ed9a54dba70032a53de5dec69d9b_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_a3db1ed9a54dba70032a53de5dec69d9b_cgraph" id="arover_2navigation_8h_a3db1ed9a54dba70032a53de5dec69d9b_cgraph">
 <area shape="rect" title="Set heading in the direction of a waypoint." alt="" coords="5,98,196,138"/>
@@ -3262,7 +3385,7 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00259">259</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00263">263</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_approaching</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
@@ -3308,7 +3431,7 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00269">269</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00273">273</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00153">RotorcraftNavigation::nav_approaching</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
@@ -3348,9 +3471,9 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00280">280</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00284">284</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00154">RotorcraftNavigation::nav_circle</a>, <a class="el" href="rover_2navigation_8h_source.html#l00074">NAV_MODE_CIRCLE</a>, <a class="el" href="rover_2navigation_8h_source.html#l00096">RoverNavigation::radius</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00154">RotorcraftNavigation::nav_circle</a>, <a class="el" href="rover_2navigation_8h_source.html#l00074">NAV_MODE_CIRCLE</a>, <a class="el" href="rover_2navigation_8h_source.html#l00097">RoverNavigation::radius</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
 </div>
 </div>
@@ -3378,9 +3501,9 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00243">243</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00246">246</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rover_2navigation_8h_source.html#l00072">NAV_MODE_WAYPOINT</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00126">RotorcraftNavigation::target</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00151">RotorcraftNavigation::nav_goto</a>, <a class="el" href="rover_2navigation_8h_source.html#l00072">NAV_MODE_WAYPOINT</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
 </div>
 </div>
@@ -3408,14 +3531,14 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00191">191</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00194">194</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00222">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>.</p>
-<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_abb5b5b70fd1fe437f42847bb103aa952_cgraph.png" border="0" usemap="#arover_2navigation_8h_abb5b5b70fd1fe437f42847bb103aa952_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_abb5b5b70fd1fe437f42847bb103aa952_cgraph" id="arover_2navigation_8h_abb5b5b70fd1fe437f42847bb103aa952_cgraph">
 <area shape="rect" title=" " alt="" coords="5,106,125,131"/>
@@ -3466,14 +3589,14 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00195">195</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00198">198</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00222">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>.</p>
-<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_cgraph.png" border="0" usemap="#arover_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_cgraph" alt=""/></div>
 <map name="arover_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_cgraph" id="arover_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_cgraph">
 <area shape="rect" title=" " alt="" coords="5,106,116,131"/>
@@ -3534,7 +3657,7 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00251">251</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00255">255</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rover_2navigation_8h_source.html#l00073">NAV_MODE_ROUTE</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00152">RotorcraftNavigation::nav_route</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
@@ -3580,9 +3703,9 @@ turn rate setpoint </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00296">296</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover_2navigation_8h_source.html#l00300">300</a> of file <a class="el" href="rover_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00156">RotorcraftNavigation::nav_oval</a>, <a class="el" href="rover_2navigation_8h_source.html#l00096">RoverNavigation::radius</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00156">RotorcraftNavigation::nav_oval</a>, <a class="el" href="rover_2navigation_8h_source.html#l00097">RoverNavigation::radius</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
 
 </div>
 </div>
@@ -3639,7 +3762,7 @@ turn rate setpoint </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">51</a> of file <a class="el" href="rotorcraft_2navigation_8c_source.html">navigation.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00068">airspeed_consistency_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00348">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00326">compute_dist2_to_home()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00171">follow_diagonal_approach()</a>, <a class="el" href="stereocam_2stereocam__follow__me_2follow__me_8c_source.html#l00062">follow_me()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00391">guidance_h_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00380">guidance_h_nav_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="guidance__indi_8c_source.html#l00168">guidance_indi_enter()</a>, <a class="el" href="guidance__pid_8c_source.html#l00389">guidance_pid_h_enter()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="guidance__plane_8c_source.html#l00193">guidance_plane_set_pitch()</a>, <a class="el" href="guidance__plane_8c_source.html#l00253">guidance_plane_thrust_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00303">guidance_v_from_nav()</a>, <a class="el" href="gvf_8c_source.html#l00100">gvf_control_2D()</a>, <a class="el" href="gvf__common_8c_source.html#l00106">gvf_nav_approaching()</a>, <a class="el" href="mav__exercise_8c_source.html#l00136">increase_nav_heading()</a>, <a class="el" href="orange__avoider_8c_source.html#l00179">increase_nav_heading()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00834">ins_ekf2_publish_attitude()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00113">mission_nav_circle()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00165">mission_nav_path()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00132">mission_nav_segment()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00086">mission_nav_wp()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00143">nav_advance_carrot()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00114">nav_circle()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00103">nav_circle()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00034">nav_goto()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00064">nav_heli_spinup_run()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00040">nav_heli_spinup_setup()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00294">nav_home()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00261">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00121">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00157">nav_hybrid_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00070">nav_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00247">nav_init_stage()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00215">nav_land_run()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00176">nav_oval()</a>, <a class="el" href="nav__poles__rotorcraft_8c_source.html#l00146">nav_poles_run()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00317">nav_register_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00399">nav_register_circle()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00310">nav_register_goto_wp()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00392">nav_register_goto_wp()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00322">nav_register_oval()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00404">nav_register_oval()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00387">nav_register_stage_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00041">nav_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00165">nav_run()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00217">nav_set_altitude()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00375">nav_set_heading_current()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00337">nav_set_heading_rad()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00350">nav_set_heading_towards()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">nav_set_heading_towards_target()</a>, <a class="el" href="nav__survey__hybrid_8c_source.html#l00399">nav_survey_hybrid_run()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>, <a class="el" href="object__tracking_8c_source.html#l00102">object_tracking_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l02004">oneloop_from_nav()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00121">rotorcraft_cam_periodic()</a>, <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>, <a class="el" href="rover_2autopilot__firmware_8c_source.html#l00083">send_fp()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00281">send_nav_status()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00270">send_nav_status()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00057">set_exception_flag()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="airspeed__consistency_8c_source.html#l00068">airspeed_consistency_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00348">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00326">compute_dist2_to_home()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00171">follow_diagonal_approach()</a>, <a class="el" href="stereocam_2stereocam__follow__me_2follow__me_8c_source.html#l00062">follow_me()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00391">guidance_h_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00380">guidance_h_nav_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00273">guidance_h_update_reference()</a>, <a class="el" href="guidance__indi_8c_source.html#l00168">guidance_indi_enter()</a>, <a class="el" href="guidance__pid_8c_source.html#l00389">guidance_pid_h_enter()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="guidance__plane_8c_source.html#l00193">guidance_plane_set_pitch()</a>, <a class="el" href="guidance__plane_8c_source.html#l00253">guidance_plane_thrust_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00303">guidance_v_from_nav()</a>, <a class="el" href="gvf_8c_source.html#l00100">gvf_control_2D()</a>, <a class="el" href="gvf__common_8c_source.html#l00106">gvf_nav_approaching()</a>, <a class="el" href="mav__exercise_8c_source.html#l00136">increase_nav_heading()</a>, <a class="el" href="orange__avoider_8c_source.html#l00179">increase_nav_heading()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00834">ins_ekf2_publish_attitude()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00113">mission_nav_circle()</a>, <a class="el" href="mission__rover__nav_8c_source.html#l00087">mission_nav_circle()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00165">mission_nav_path()</a>, <a class="el" href="mission__rover__nav_8c_source.html#l00136">mission_nav_path()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00132">mission_nav_segment()</a>, <a class="el" href="mission__rover__nav_8c_source.html#l00109">mission_nav_segment()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00086">mission_nav_wp()</a>, <a class="el" href="mission__rover__nav_8c_source.html#l00065">mission_nav_wp()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00143">nav_advance_carrot()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00114">nav_circle()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00110">nav_circle()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00041">nav_goto()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00040">nav_goto()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00064">nav_heli_spinup_run()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00040">nav_heli_spinup_setup()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00294">nav_home()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00261">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00121">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00157">nav_hybrid_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00070">nav_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00247">nav_init_stage()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00215">nav_land_run()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00176">nav_oval()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00166">nav_oval()</a>, <a class="el" href="nav__poles__rotorcraft_8c_source.html#l00146">nav_poles_run()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00318">nav_register_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00399">nav_register_circle()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00311">nav_register_goto_wp()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00392">nav_register_goto_wp()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00323">nav_register_oval()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00404">nav_register_oval()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00306">nav_register_stage_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00387">nav_register_stage_init()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00050">nav_route()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00048">nav_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00165">nav_run()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00217">nav_set_altitude()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00375">nav_set_heading_current()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00337">nav_set_heading_rad()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00350">nav_set_heading_towards()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">nav_set_heading_towards_target()</a>, <a class="el" href="nav__survey__hybrid_8c_source.html#l00399">nav_survey_hybrid_run()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>, <a class="el" href="object__tracking_8c_source.html#l00102">object_tracking_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l02004">oneloop_from_nav()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00121">rotorcraft_cam_periodic()</a>, <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>, <a class="el" href="rover_2autopilot__firmware_8c_source.html#l00083">send_fp()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00281">send_nav_status()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00270">send_nav_status()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00057">set_exception_flag()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
 
 </div>
 </div>
@@ -3649,7 +3772,7 @@ turn rate setpoint </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_414bebee49467d45198ced6169b2555f.html">rover</a></li><li class="navelem"><a class="el" href="rover_2navigation_8h.html">navigation.h</a></li>
-    <li class="footer">Generated on Mon Sep 22 2025 20:28:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Sep 30 2025 06:59:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -15,6 +15,7 @@ var rover_2navigation_8c =
     [ "nav_register_circle", "rover_2navigation_8c.html#aceb147e5f4a4f8502edfc3f1d59d925d", null ],
     [ "nav_register_goto_wp", "rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897", null ],
     [ "nav_register_oval", "rover_2navigation_8c.html#af495131c9e74de9b78173144cda2574c", null ],
+    [ "nav_register_stage_init", "rover_2navigation_8c.html#ad6a9228c29c723a8924a9f1214404a31", null ],
     [ "nav_reset_alt", "rover_2navigation_8c.html#a3288149314aa748ce8aa507335f50bfd", null ],
     [ "nav_reset_reference", "rover_2navigation_8c.html#a1886ff619a5c03dc6c54729f301fa62e", null ],
     [ "nav_run", "rover_2navigation_8c.html#a4722a6d624ce0bb547c43724e2bb9f71", null ],
