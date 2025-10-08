@@ -1,5 +1,9 @@
 var NAVTREEINDEX69 =
 {
+"group__math__algebra__int.html#ga1d20e839a6dc485ee9ce841a402e8d45":[9,9,1,3,64],
+"group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef":[9,9,1,3,130],
+"group__math__algebra__int.html#ga1ec0802a57d49a24545916346953dbcb":[9,9,1,3,44],
+"group__math__algebra__int.html#ga20697efff6a79e06e159d8b5ddf0b38f":[9,9,1,3,107],
 "group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d":[9,9,1,3,35],
 "group__math__algebra__int.html#ga24baf88f9a3ca8016fdf5bc40b4f8570":[9,9,1,3,69],
 "group__math__algebra__int.html#ga264c9ba2fc13faf84a2d7a6de05707b1":[9,9,1,3,57],
@@ -245,9 +249,5 @@ var NAVTREEINDEX69 =
 "group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f":[9,9,2,2,57],
 "group__math__geodetic__int.html#ga5f71a1b0d5ebdc36a71b92528bb880d5":[9,9,2,2,13],
 "group__math__geodetic__int.html#ga61755b91d547a7ac50bd83fc367f20ef":[9,9,2,2,31],
-"group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141":[9,9,2,2,63],
-"group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9":[9,9,2,2,59],
-"group__math__geodetic__int.html#ga6d38b5f61c7150a89add372e91650595":[9,9,2,2,19],
-"group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11":[9,9,2,2,50],
-"group__math__geodetic__int.html#ga7d215726d70ce732919b9da23d08d448":[9,9,2,2,20]
+"group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141":[9,9,2,2,63]
 };

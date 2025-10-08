@@ -1,5 +1,9 @@
 var NAVTREEINDEX202 =
 {
+"stabilization__indi_8c.html#ae44b57fc0adf11ab14e901f470cf5c1e":[12,0,1,0,3,2,2,36,63],
+"stabilization__indi_8c.html#ae6a63eb7e63c2850386999bda201f719":[12,0,1,0,3,2,2,36,75],
+"stabilization__indi_8c.html#aed042e627d7cf7c6e7c6cdfe931ba077":[12,0,1,0,3,2,2,36,61],
+"stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0":[12,0,1,0,3,2,2,36,10],
 "stabilization__indi_8c.html#af298c9dabcd22cc66c616b626ff7de88":[12,0,1,0,3,2,2,36,34],
 "stabilization__indi_8c.html#af2e990d419fc562777944d2446ab1b32":[12,0,1,0,3,2,2,36,11],
 "stabilization__indi_8c.html#af863b681c12e21d2b3ce94d6f523dbf4":[12,0,1,0,3,2,2,36,47],
@@ -73,8 +77,8 @@ var NAVTREEINDEX202 =
 "stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20":[12,0,1,0,3,2,2,39,2,14],
 "stabilization__indi__simple_8h.html#a701c67af1ddf7f0a80a22e6719c993a1":[12,0,1,0,3,2,2,39,1,5],
 "stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4":[12,0,1,0,3,2,2,39,2,15],
-"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,39,0,1],
 "stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,37,0,1],
+"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,39,0,1],
 "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,2,39,2,2],
 "stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,2,39,1,4],
 "stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,39,0,0],
@@ -93,8 +97,8 @@ var NAVTREEINDEX202 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,39,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,39,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,39,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,39,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,37,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,39,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,39],
 "stabilization__oneloop_8c.html":[12,0,1,0,3,2,2,40],
 "stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,40,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX202 =
 "stm32_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f":[12,0,1,0,0,3,4,8],
 "stm32_2led__hw_8h.html#a81e459105e8418270a7bdff11dd6bc2f":[12,0,1,0,0,3,4,1],
 "stm32_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9":[12,0,1,0,0,3,4,2],
-"stm32_2led__hw_8h.html#aa9479a9a1c2367d23cb3df268c826148":[12,0,1,0,0,3,4,3],
-"stm32_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b":[12,0,1,0,0,3,4,10],
-"stm32_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[12,0,1,0,0,3,4,11],
-"stm32_2led__hw_8h_source.html":[12,0,1,0,0,3,4],
-"stm32_2mcu__arch_8c.html":[9,8,0]
+"stm32_2led__hw_8h.html#aa9479a9a1c2367d23cb3df268c826148":[12,0,1,0,0,3,4,3]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX131 =
 {
+"module__i2c_abuse_test.html#module_xml__i2c_abuse_test":[1,36,1,0],
+"module__imu_apogee.html":[1,191],
+"module__imu_apogee.html#functions__imu_apogee":[1,191,1],
+"module__imu_apogee.html#module_load_example__imu_apogee":[1,191,0],
 "module__imu_apogee.html#module_xml__imu_apogee":[1,191,1,0],
 "module__imu_apogee_mpu9150.html":[1,192],
 "module__imu_apogee_mpu9150.html#configuration__imu_apogee_mpu9150":[1,192,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX131 =
 "module__ins_mekf_wind.html#module_xml__ins_mekf_wind":[1,246,3,2],
 "module__ins_mekf_wind.html#sources":[1,246,3,1],
 "module__ins_nps.html":[1,247],
-"module__ins_nps.html#functions__ins_nps":[1,247,1],
-"module__ins_nps.html#module_load_example__ins_nps":[1,247,0],
-"module__ins_nps.html#module_xml__ins_nps":[1,247,1,0],
-"module__ins_sim.html":[1,248],
-"module__ins_sim.html#module_load_example__ins_sim":[1,248,0]
+"module__ins_nps.html#functions__ins_nps":[1,247,1]
 };

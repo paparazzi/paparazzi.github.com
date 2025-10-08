@@ -1,5 +1,9 @@
 var NAVTREEINDEX70 =
 {
+"group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9":[9,9,2,2,59],
+"group__math__geodetic__int.html#ga6d38b5f61c7150a89add372e91650595":[9,9,2,2,19],
+"group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11":[9,9,2,2,50],
+"group__math__geodetic__int.html#ga7d215726d70ce732919b9da23d08d448":[9,9,2,2,20],
 "group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573":[9,9,2,2,49],
 "group__math__geodetic__int.html#ga8ee697258e642d07a106990cd3531476":[9,9,2,2,34],
 "group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6":[9,9,2,2,60],
@@ -245,9 +249,5 @@ var NAVTREEINDEX70 =
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069baf3bcf0017ccafa26ed467d7a4474b167":[9,0,1,15,3],
 "group__spi.html#ggab7f6befabf036cdd2fcc73e688d17f92a616ab1558f18f3b3c58f22e0f16fe40e":[9,0,1,18,0],
 "group__spi.html#ggab7f6befabf036cdd2fcc73e688d17f92af211626475dc974e0c1a2256c7ff4de9":[9,0,1,18,1],
-"group__spi.html#structspi__periph":[9,0,1,1],
-"group__spi.html#structspi__transaction":[9,0,1,0],
-"group__state__acceleration.html":[9,4,2],
-"group__state__acceleration.html#ga0a85ee9e95009a2b8254012520a9f963":[9,4,2,1],
-"group__state__acceleration.html#ga0fcd0e2c93e5d5b7490650e2e69bf716":[9,4,2,17]
+"group__spi.html#structspi__periph":[9,0,1,1]
 };

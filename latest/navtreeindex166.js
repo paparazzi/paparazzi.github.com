@@ -1,5 +1,9 @@
 var NAVTREEINDEX166 =
 {
+"opticflow__module_8c.html#a520b1f74024d069f6b157e070db15d9e":[12,0,1,0,6,12,32,1],
+"opticflow__module_8c.html#a5ff7bc4ec808ece830d60e9a2bc1889d":[12,0,1,0,6,12,32,3],
+"opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9":[12,0,1,0,6,12,32,5],
+"opticflow__module_8c.html#a72d1d69e9aee6c7fe948f78b185a944f":[12,0,1,0,6,12,32,7],
 "opticflow__module_8c.html#a82a571b4f979b955128f710d3525a5b6":[12,0,1,0,6,12,32,9],
 "opticflow__module_8c.html#a980e4ad5726c99600839cb15d5f1ab71":[12,0,1,0,6,12,32,8],
 "opticflow__module_8c.html#abf53d072984591ae6710a65682d6bedb":[12,0,1,0,6,12,32,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#CLOUD_SENSOR":[2,0,56],
 "paparazzi_messages.html#COMMANDS":[2,0,97],
 "paparazzi_messages.html#COMMANDS_RAW":[2,1,9],
-"paparazzi_messages.html#CONFIG":[2,2,9],
-"paparazzi_messages.html#CONFIG_REQ":[2,2,8],
-"paparazzi_messages.html#COPILOT_STATUS":[2,0,120],
-"paparazzi_messages.html#COPILOT_STATUS_DL":[2,1,28],
-"paparazzi_messages.html#CSC_CAN_DEBUG":[2,0,171]
+"paparazzi_messages.html#CONFIG":[2,2,9]
 };

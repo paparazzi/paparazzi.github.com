@@ -1,5 +1,9 @@
 var NAVTREEINDEX134 =
 {
+"module__pfc_actuators.html#module_load_example__pfc_actuators":[1,51,0],
+"module__pfc_actuators.html#module_xml__pfc_actuators":[1,51,2,0],
+"module__photogrammetry_calculator.html":[1,511],
+"module__photogrammetry_calculator.html#functions__photogrammetry_calculator":[1,511,1],
 "module__photogrammetry_calculator.html#module_load_example__photogrammetry_calculator":[1,511,0],
 "module__photogrammetry_calculator.html#module_xml__photogrammetry_calculator":[1,511,1,0],
 "module__pipe.html":[1,282],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,447,0],
 "module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,447,2,0],
 "module__stabilization_heli_indi.html":[1,448],
-"module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,448,1],
-"module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,448,2],
-"module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi":[1,448,0],
-"module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,448,2,0],
-"module__stabilization_indi.html":[1,449]
+"module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,448,1]
 };

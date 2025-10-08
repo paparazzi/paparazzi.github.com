@@ -133,8 +133,108 @@ Functions</h2></td></tr>
 <tr class="memitem:af2ead2f18ba9ae2a933800f6fb97a59e" id="r_af2ead2f18ba9ae2a933800f6fb97a59e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8c.html#af2ead2f18ba9ae2a933800f6fb97a59e">circular_buffer_drop</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb)</td></tr>
 <tr class="memdesc:af2ead2f18ba9ae2a933800f6fb97a59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop last inserted record.  <br /></td></tr>
 <tr class="separator:af2ead2f18ba9ae2a933800f6fb97a59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdb9882bd0574b65e748d3d4a7e7b59" id="r_a8fdb9882bd0574b65e748d3d4a7e7b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59">circular_buffer_available</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb)</td></tr>
+<tr class="memdesc:a8fdb9882bd0574b65e748d3d4a7e7b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the available sapce for the next buffer.  <br /></td></tr>
+<tr class="separator:a8fdb9882bd0574b65e748d3d4a7e7b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb31fe641e58cf00d5f0ea145a3ffe1" id="r_abeb31fe641e58cf00d5f0ea145a3ffe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circular__buffer_8c.html#abeb31fe641e58cf00d5f0ea145a3ffe1">circular_buffer_clear</a> (struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *cb)</td></tr>
+<tr class="memdesc:abeb31fe641e58cf00d5f0ea145a3ffe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear buffer.  <br /></td></tr>
+<tr class="separator:abeb31fe641e58cf00d5f0ea145a3ffe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a8fdb9882bd0574b65e748d3d4a7e7b59" name="a8fdb9882bd0574b65e748d3d4a7e7b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fdb9882bd0574b65e748d3d4a7e7b59">&#9670;&#160;</a></span>circular_buffer_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> circular_buffer_available </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the available sapce for the next buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00110">110</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
+
+<p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="circular__buffer_8c_source.html#l00052">circular_buffer_put()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="circular__buffer_8c_a8fdb9882bd0574b65e748d3d4a7e7b59_icgraph.png" border="0" usemap="#acircular__buffer_8c_a8fdb9882bd0574b65e748d3d4a7e7b59_icgraph" alt=""/></div>
+<map name="acircular__buffer_8c_a8fdb9882bd0574b65e748d3d4a7e7b59_icgraph" id="acircular__buffer_8c_a8fdb9882bd0574b65e748d3d4a7e7b59_icgraph">
+<area shape="rect" title="Get the available sapce for the next buffer." alt="" coords="1109,145,1292,170"/>
+<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="919,145,1061,170"/>
+<area shape="poly" title=" " alt="" coords="1096,160,1061,160,1061,155,1096,155"/>
+<area shape="rect" href="uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="731,70,871,95"/>
+<area shape="poly" title=" " alt="" coords="943,142,833,98,835,93,945,137"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="759,218,842,243"/>
+<area shape="poly" title=" " alt="" coords="944,178,836,220,834,215,942,173"/>
+<area shape="rect" href="actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="499,5,671,45"/>
+<area shape="poly" title=" " alt="" coords="738,69,660,48,662,43,740,64"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a4f2b07629c6392c8019dfc9123fb4684" title="Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND)" alt="" coords="488,70,683,95"/>
+<area shape="poly" title=" " alt="" coords="717,85,683,85,683,80,717,80"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="499,119,672,145"/>
+<area shape="poly" title=" " alt="" coords="771,212,730,184,682,158,649,147,651,142,684,154,733,180,774,208"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="503,169,667,194"/>
+<area shape="poly" title=" " alt="" coords="746,221,641,197,642,191,747,216"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="510,218,661,243"/>
+<area shape="poly" title=" " alt="" coords="746,233,661,233,661,228,746,228"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="526,267,645,293"/>
+<area shape="poly" title=" " alt="" coords="747,246,642,270,641,265,746,240"/>
+<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="502,317,669,357"/>
+<area shape="poly" title=" " alt="" coords="773,254,732,281,684,308,655,320,653,315,682,303,729,276,770,249"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="514,382,657,407"/>
+<area shape="poly" title=" " alt="" coords="788,257,746,315,717,346,684,372,657,384,655,379,681,367,714,342,742,311,783,254"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,153,434,193"/>
+<area shape="poly" title=" " alt="" coords="489,181,434,179,434,174,489,175"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,218,416,243"/>
+<area shape="poly" title=" " alt="" coords="496,233,416,233,416,228,496,228"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,218,205,243"/>
+<area shape="poly" title=" " alt="" coords="263,233,206,233,206,228,263,228"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,267,440,293"/>
+<area shape="poly" title=" " alt="" coords="512,283,440,283,440,277,512,277"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,317,431,357"/>
+<area shape="poly" title=" " alt="" coords="488,340,431,340,431,335,488,335"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,382,439,407"/>
+<area shape="poly" title=" " alt="" coords="500,397,439,397,439,392,500,392"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abeb31fe641e58cf00d5f0ea145a3ffe1" name="abeb31fe641e58cf00d5f0ea145a3ffe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb31fe641e58cf00d5f0ea145a3ffe1">&#9670;&#160;</a></span>circular_buffer_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> circular_buffer_clear </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a> *&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00122">122</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
+
+<p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
+
+</div>
+</div>
 <a id="af2ead2f18ba9ae2a933800f6fb97a59e" name="af2ead2f18ba9ae2a933800f6fb97a59e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2ead2f18ba9ae2a933800f6fb97a59e">&#9670;&#160;</a></span>circular_buffer_drop()</h2>
 
@@ -153,16 +253,16 @@ Functions</h2></td></tr>
 
 <p>Drop last inserted record. </p>
 
-<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00089">89</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00090">90</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
 
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00265">uavcan_broadcast()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8c_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph.png" border="0" usemap="#acircular__buffer_8c_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph" alt=""/></div>
 <map name="acircular__buffer_8c_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph" id="acircular__buffer_8c_af2ead2f18ba9ae2a933800f6fb97a59e_icgraph">
 <area shape="rect" title="Drop last inserted record." alt="" coords="436,42,587,67"/>
@@ -225,11 +325,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00032">CIR_ERROR_BUFFER_TOO_SMALL</a>, <a class="el" href="circular__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00125">sts3032_event()</a>, and <a class="el" href="uavcan_8c_source.html#l00114">uavcan_tx()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8c_ada8982b8b7d8702088a3a4f9de128ee0_icgraph.png" border="0" usemap="#acircular__buffer_8c_ada8982b8b7d8702088a3a4f9de128ee0_icgraph" alt=""/></div>
 <map name="acircular__buffer_8c_ada8982b8b7d8702088a3a4f9de128ee0_icgraph" id="acircular__buffer_8c_ada8982b8b7d8702088a3a4f9de128ee0_icgraph">
 <area shape="rect" title="copy the next buffer available in cb to buf." alt="" coords="549,31,692,56"/>
@@ -295,11 +395,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00088">actuators_sts3032_init()</a>, and <a class="el" href="uavcan_8c_source.html#l00211">uavcanInitIface()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8c_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph.png" border="0" usemap="#acircular__buffer_8c_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph" alt=""/></div>
 <map name="acircular__buffer_8c_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph" id="acircular__buffer_8c_ab74e4e8dcdfcf1842903b361959aa5e5_icgraph">
 <area shape="rect" title="initialize a circular buffer." alt="" coords="368,31,511,56"/>
@@ -356,18 +456,29 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, Error code if negative </dd></dl>
-<p>len == available is invalid because it will cause write_offset to be equal to read_offset, which is considered an empty buffer.</p>
 
-<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00051">51</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circular__buffer_8c_source.html#l00052">52</a> of file <a class="el" href="circular__buffer_8c_source.html">circular_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00033">CIR_ERROR_NO_SPACE_AVAILABLE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="circular__buffer_8h_source.html#l00024">circular_buffer::read_offset</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
+<p class="reference">References <a class="el" href="circular__buffer_8h_source.html#l00027">circular_buffer::_buf</a>, <a class="el" href="circular__buffer_8h_source.html#l00026">circular_buffer::_buf_len</a>, <a class="el" href="circular__buffer_8h_source.html#l00033">CIR_ERROR_NO_SPACE_AVAILABLE</a>, <a class="el" href="circular__buffer_8c_source.html#l00110">circular_buffer_available()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="circular__buffer_8h_source.html#l00025">circular_buffer::write_offset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00265">uavcan_broadcast()</a>, and <a class="el" href="actuators__sts3032_8c_source.html#l00292">write_buf()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="circular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_cgraph.png" border="0" usemap="#acircular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_cgraph" alt=""/></div>
+<map name="acircular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_cgraph" id="acircular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_cgraph">
+<area shape="rect" title="Copy buf in the circular buffer." alt="" coords="5,5,148,31"/>
+<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="196,5,379,31"/>
+<area shape="poly" title=" " alt="" coords="148,15,182,15,182,21,148,21"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="circular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_icgraph.png" border="0" usemap="#acircular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_icgraph" alt=""/></div>
 <map name="acircular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_icgraph" id="acircular__buffer_8c_a26f5138bb7bb7f83cac5ee129fe01352_icgraph">
 <area shape="rect" title="Copy buf in the circular buffer." alt="" coords="919,145,1061,170"/>
@@ -414,7 +525,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_644c3112dbb29d6147750c842d63ff9c.html">utils</a></li><li class="navelem"><a class="el" href="circular__buffer_8c.html">circular_buffer.c</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:47:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 8 2025 10:12:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
