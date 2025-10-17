@@ -17,7 +17,7 @@ var searchData=
   ['pid_2eh_14',['pid.h',['../pid_8h.html',1,'']]],
   ['pipe_2ec_15',['pipe.c',['../pipe_8c.html',1,'']]],
   ['pipe_2eh_16',['pipe.h',['../pipe_8h.html',1,'']]],
-  ['pipe_5farch_2ec_17',['pipe_arch.c',['../sim_2mcu__periph_2pipe__arch_8c.html',1,'(Global Namespace)'],['../linux_2mcu__periph_2pipe__arch_8c.html',1,'(Global Namespace)']]],
+  ['pipe_5farch_2ec_17',['pipe_arch.c',['../linux_2mcu__periph_2pipe__arch_8c.html',1,'(Global Namespace)'],['../sim_2mcu__periph_2pipe__arch_8c.html',1,'(Global Namespace)']]],
   ['pipe_5farch_2eh_18',['pipe_arch.h',['../linux_2mcu__periph_2pipe__arch_8h.html',1,'(Global Namespace)'],['../sim_2mcu__periph_2pipe__arch_8h.html',1,'(Global Namespace)']]],
   ['pmw3901_2ec_19',['pmw3901.c',['../pmw3901_8c.html',1,'']]],
   ['pmw3901_2eh_20',['pmw3901.h',['../pmw3901_8h.html',1,'']]],

@@ -290,6 +290,7 @@ var NAVTREE =
         [ "Example for airframe file", "module__flight_benchmark.html#module_load_example__flight_benchmark", null ],
         [ "Module configuration options", "module__flight_benchmark.html#configuration__flight_benchmark", null ],
         [ "Module functions", "module__flight_benchmark.html#functions__flight_benchmark", [
+          [ "Periodic Functions", "module__flight_benchmark.html#periodic_functions", null ],
           [ "Raw flight_benchmark.xml file:", "module__flight_benchmark.html#module_xml__flight_benchmark", null ]
         ] ]
       ] ],
@@ -404,6 +405,9 @@ var NAVTREE =
       [ "usb_serial_stm32_example1 module", "module__usb_serial_stm32_example1.html", [
         [ "Example for airframe file", "module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1", null ],
         [ "Module functions", "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1", [
+          [ "Init Functions", "module__usb_serial_stm32_example1.html#init_functions", null ],
+          [ "Event Functions", "module__usb_serial_stm32_example1.html#event_functions", null ],
+          [ "Header Files", "module__usb_serial_stm32_example1.html#headers", null ],
           [ "Raw usb_serial_stm32_example1.xml file:", "module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1", null ]
         ] ]
       ] ],
@@ -1038,6 +1042,10 @@ var NAVTREE =
       [ "fdm_pybullet module", "module__fdm_pybullet.html", [
         [ "Example for airframe file", "module__fdm_pybullet.html#module_load_example__fdm_pybullet", null ],
         [ "Module configuration options", "module__fdm_pybullet.html#configuration__fdm_pybullet", [
+          [ "Define Options", "module__fdm_pybullet.html#define", null ]
+        ] ],
+        [ "Files", "module__fdm_pybullet.html#files", [
+          [ "Source Files", "module__fdm_pybullet.html#sources", null ],
           [ "Raw fdm_pybullet.xml file:", "module__fdm_pybullet.html#module_xml__fdm_pybullet", null ]
         ] ]
       ] ],
@@ -1090,7 +1098,6 @@ var NAVTREE =
         [ "Example for airframe file", "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy", null ],
         [ "Module configuration options", "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy", null ],
         [ "Module functions", "module__gps_mediatek_diy.html#functions__gps_mediatek_diy", [
-          [ "Event Functions", "module__gps_mediatek_diy.html#event_functions", null ],
           [ "Raw gps_mediatek_diy.xml file:", "module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy", null ]
         ] ]
       ] ],
@@ -1323,20 +1330,20 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
@@ -1633,17 +1640,8 @@ var NAVTREE =
       ] ],
       [ "ins_mekf_wind module", "module__ins_mekf_wind.html", [
         [ "Example for airframe file", "module__ins_mekf_wind.html#module_load_example__ins_mekf_wind", null ],
-        [ "Module configuration options", "module__ins_mekf_wind.html#configuration__ins_mekf_wind", [
-          [ "Configure Options", "module__ins_mekf_wind.html#configure", null ],
-          [ "Define Options", "module__ins_mekf_wind.html#define", null ],
-          [ "Airframe file section", "module__ins_mekf_wind.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__ins_mekf_wind.html#configuration__ins_mekf_wind", null ],
         [ "Module functions", "module__ins_mekf_wind.html#functions__ins_mekf_wind", [
-          [ "Init Functions", "module__ins_mekf_wind.html#init_functions", null ]
-        ] ],
-        [ "Files", "module__ins_mekf_wind.html#files", [
-          [ "Header Files", "module__ins_mekf_wind.html#headers", null ],
-          [ "Source Files", "module__ins_mekf_wind.html#sources", null ],
           [ "Raw ins_mekf_wind.xml file:", "module__ins_mekf_wind.html#module_xml__ins_mekf_wind", null ]
         ] ]
       ] ],
@@ -2024,7 +2022,9 @@ var NAVTREE =
       ] ],
       [ "meteo_stick module", "module__meteo_stick.html", [
         [ "Example for airframe file", "module__meteo_stick.html#module_load_example__meteo_stick", null ],
-        [ "Module configuration options", "module__meteo_stick.html#configuration__meteo_stick", null ],
+        [ "Module configuration options", "module__meteo_stick.html#configuration__meteo_stick", [
+          [ "Airframe file section", "module__meteo_stick.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__meteo_stick.html#functions__meteo_stick", [
           [ "Raw meteo_stick.xml file:", "module__meteo_stick.html#module_xml__meteo_stick", null ]
         ] ]
@@ -2409,7 +2409,9 @@ var NAVTREE =
       ] ],
       [ "optical_flow_mateksys_3901_l0x module", "module__optical_flow_mateksys_3901_l0x.html", [
         [ "Example for airframe file", "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x", null ],
-        [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", null ],
+        [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", [
+          [ "Configure Options", "module__optical_flow_mateksys_3901_l0x.html#configure", null ]
+        ] ],
         [ "Module functions", "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x", [
           [ "Raw optical_flow_mateksys_3901_l0x.xml file:", "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x", null ]
         ] ]
@@ -3321,7 +3323,6 @@ var NAVTREE =
       [ "obstacle_avoidance module", "module__obstacle_avoidance.html", [
         [ "Example for airframe file", "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance", null ],
         [ "Module functions", "module__obstacle_avoidance.html#functions__obstacle_avoidance", [
-          [ "Periodic Functions", "module__obstacle_avoidance.html#periodic_functions", null ],
           [ "Raw obstacle_avoidance.xml file:", "module__obstacle_avoidance.html#module_xml__obstacle_avoidance", null ]
         ] ]
       ] ],
@@ -4031,13 +4032,13 @@ var NAVTREEINDEX =
 "module__actuators.html#module_load_example__actuators",
 "module__baro_bmp3.html",
 "module__datalink_common.html",
-"module__glide_wing_lock.html#module_xml__glide_wing_lock",
-"module__i2c_abuse_test.html#module_xml__i2c_abuse_test",
-"module__ins_nps.html#module_load_example__ins_nps",
-"module__mission_common.html#module_xml__mission_common",
-"module__pfc_actuators.html#module_load_example__pfc_actuators",
-"module__stabilization_heli_indi.html#functions__stabilization_heli_indi",
-"module__traffic_info.html#module_load_example__traffic_info",
+"module__glide_wing_lock.html",
+"module__i2c_abuse_test.html",
+"module__ins_sim.html#module_xml__ins_sim",
+"module__mission_fw.html#module_xml__mission_fw",
+"module__photogrammetry_calculator.html#functions__photogrammetry_calculator",
+"module__stabilization_indi.html",
+"module__trig_test.html#functions__trig_test",
 "modules_2datalink_2superbitrf_8h.html#ae88e211597eecd75e728e6f586c5439a",
 "mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b",
 "mpu9250_8h.html#ad99ec39f5171db6a4d9b911a8bbd56cc",
