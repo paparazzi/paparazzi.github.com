@@ -25,6 +25,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "aoa_adc.h", "aoa__adc_8h.html", "aoa__adc_8h" ],
     [ "aoa_pwm.c", "aoa__pwm_8c.html", "aoa__pwm_8c" ],
     [ "aoa_pwm.h", "aoa__pwm_8h.html", "aoa__pwm_8h" ],
+    [ "aoa_t4.c", "aoa__t4_8c.html", "aoa__t4_8c" ],
+    [ "aoa_t4.h", "aoa__t4_8h.html", "aoa__t4_8h" ],
     [ "baro.h", "baro_8h.html", "baro_8h" ],
     [ "baro_amsys.c", "baro__amsys_8c.html", "baro__amsys_8c" ],
     [ "baro_amsys.h", "baro__amsys_8h.html", "baro__amsys_8h" ],

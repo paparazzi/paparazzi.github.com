@@ -2875,7 +2875,7 @@ in rad/s </td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00640">compute_accel_from_speed_sp()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00391">guidance_indi_enter()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00443">guidance_indi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01629">oneloop_andi_run()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00334">send_att_full_indi()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, and <a class="el" href="eff__scheduling__rotwing__V2_8c_source.html#l00210">update_attitude()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="aoa__t4_8c_source.html#l00329">aoa_t4_update()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00640">compute_accel_from_speed_sp()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00094">eff_scheduling_periodic_b()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00391">guidance_indi_enter()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00443">guidance_indi_run()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01629">oneloop_andi_run()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00334">send_att_full_indi()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, and <a class="el" href="eff__scheduling__rotwing__V2_8c_source.html#l00210">update_attitude()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -2883,73 +2883,75 @@ in rad/s </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__algebra__float_ga94f781d7f49b3e8fe681bd456faabbd1_icgraph.png" border="0" usemap="#agroup__math__algebra__float_ga94f781d7f49b3e8fe681bd456faabbd1_icgraph" alt=""/></div>
 <map name="agroup__math__algebra__float_ga94f781d7f49b3e8fe681bd456faabbd1_icgraph" id="agroup__math__algebra__float_ga94f781d7f49b3e8fe681bd456faabbd1_icgraph">
-<area shape="rect" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="1589,291,1773,316"/>
+<area shape="rect" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="1589,313,1773,339"/>
+<area shape="rect" href="aoa__t4_8c.html#a0981b55909f364cc6d7aa0c246c3f6e1" title=" " alt="" coords="1373,5,1491,31"/>
+<area shape="poly" title=" " alt="" coords="1672,300,1658,246,1633,177,1615,141,1594,105,1569,73,1540,45,1517,32,1491,25,1493,20,1519,27,1543,41,1573,70,1598,102,1620,138,1638,175,1663,245,1678,299"/>
 <area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="1353,55,1511,95"/>
-<area shape="poly" title=" " alt="" coords="1667,279,1647,241,1619,196,1583,149,1540,110,1511,94,1513,89,1543,105,1587,145,1624,193,1652,239,1671,277"/>
-<area shape="rect" href="eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="1351,119,1513,159"/>
-<area shape="poly" title=" " alt="" coords="1659,282,1609,227,1576,198,1540,174,1512,161,1515,156,1543,169,1579,194,1613,223,1663,278"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="1337,184,1527,209"/>
-<area shape="poly" title=" " alt="" coords="1650,285,1600,253,1540,223,1505,212,1507,207,1542,218,1603,248,1653,280"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="1355,233,1509,259"/>
-<area shape="poly" title=" " alt="" coords="1611,290,1487,261,1489,256,1612,285"/>
-<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="1352,283,1512,323"/>
-<area shape="poly" title=" " alt="" coords="1575,306,1512,306,1512,301,1575,301"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="1362,5,1502,31"/>
-<area shape="poly" title=" " alt="" coords="1671,278,1656,228,1630,165,1592,100,1567,71,1540,45,1522,35,1501,28,1503,23,1524,30,1543,41,1571,67,1596,97,1635,163,1661,227,1676,277"/>
-<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1363,348,1501,373"/>
-<area shape="poly" title=" " alt="" coords="1612,322,1489,351,1487,345,1611,317"/>
-<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="1323,397,1541,423"/>
-<area shape="poly" title=" " alt="" coords="1652,326,1602,357,1542,387,1503,400,1501,395,1540,382,1600,353,1650,322"/>
-<area shape="rect" href="stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="1363,451,1501,476"/>
-<area shape="poly" title=" " alt="" coords="1663,329,1613,383,1579,412,1543,436,1501,453,1499,448,1540,432,1576,407,1609,379,1660,325"/>
-<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="1395,503,1469,528"/>
-<area shape="poly" title=" " alt="" coords="1670,330,1651,366,1622,409,1586,453,1543,490,1506,506,1469,515,1468,510,1505,501,1540,485,1582,449,1618,406,1646,363,1666,327"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="1369,553,1495,579"/>
-<area shape="poly" title=" " alt="" coords="1675,330,1658,376,1631,433,1593,492,1569,518,1543,542,1520,554,1496,562,1494,557,1518,549,1540,537,1566,515,1588,489,1626,431,1653,374,1670,328"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="1077,35,1261,60"/>
-<area shape="poly" title=" " alt="" coords="1339,68,1261,60,1261,54,1339,63"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="1083,177,1255,217"/>
-<area shape="poly" title=" " alt="" coords="1323,199,1255,199,1255,194,1323,194"/>
-<area shape="poly" title=" " alt="" coords="1349,30,1261,40,1261,34,1348,25"/>
-<area shape="rect" href="guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="1063,241,1275,267"/>
-<area shape="poly" title=" " alt="" coords="1349,350,1321,338,1305,323,1296,308,1288,294,1273,280,1249,269,1252,264,1276,276,1292,290,1301,305,1309,320,1324,333,1351,345"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1097,291,1240,316"/>
-<area shape="poly" title=" " alt="" coords="1359,348,1227,319,1228,313,1360,342"/>
-<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="1075,340,1263,365"/>
-<area shape="poly" title=" " alt="" coords="1349,361,1263,358,1263,353,1350,356"/>
-<area shape="rect" href="guidance__oneloop_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="626,189,791,215"/>
-<area shape="poly" title=" " alt="" coords="1084,242,1014,231,791,210,792,205,1015,226,1085,236"/>
-<area shape="rect" href="guidance__oneloop_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="852,291,1007,316"/>
-<area shape="poly" title=" " alt="" coords="1094,272,992,293,991,288,1093,267"/>
-<area shape="rect" href="guidance__oneloop_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="844,241,1015,267"/>
-<area shape="poly" title=" " alt="" coords="1049,257,1015,257,1015,251,1049,251"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,240,573,265"/>
-<area shape="poly" title=" " alt="" coords="641,220,547,243,545,237,639,215"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,265,360,291"/>
-<area shape="poly" title=" " alt="" coords="395,268,361,273,360,267,394,263"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,208,188,233"/>
-<area shape="poly" title=" " alt="" coords="240,264,187,249,143,236,145,231,189,243,241,259"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,258,187,298"/>
-<area shape="poly" title=" " alt="" coords="222,281,188,281,188,275,222,275"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,323,179,348"/>
-<area shape="poly" title=" " alt="" coords="241,297,189,313,145,325,143,320,187,307,240,292"/>
-<area shape="poly" title=" " alt="" coords="871,322,817,332,754,340,687,340,621,330,587,318,555,301,506,268,509,263,558,296,589,313,622,325,687,335,754,335,817,327,870,317"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="621,291,796,316"/>
-<area shape="poly" title=" " alt="" coords="838,306,796,306,796,301,838,301"/>
-<area shape="poly" title=" " alt="" coords="639,290,545,268,547,263,641,285"/>
-<area shape="poly" title=" " alt="" coords="608,300,360,284,360,279,608,294"/>
-<area shape="poly" title=" " alt="" coords="830,256,574,256,574,250,830,251"/>
-<area shape="poly" title=" " alt="" coords="859,272,767,293,766,288,858,267"/>
-<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="1097,390,1241,430"/>
-<area shape="poly" title=" " alt="" coords="1309,413,1241,413,1241,407,1309,407"/>
-<area shape="rect" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="1088,455,1249,480"/>
-<area shape="poly" title=" " alt="" coords="1350,467,1250,469,1250,463,1350,462"/>
-<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="1082,504,1255,529"/>
-<area shape="poly" title=" " alt="" coords="1382,518,1256,519,1256,514,1382,513"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="1069,553,1269,579"/>
-<area shape="poly" title=" " alt="" coords="1355,569,1269,569,1269,563,1355,563"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="1083,603,1255,643"/>
-<area shape="poly" title=" " alt="" coords="1360,584,1255,607,1254,602,1359,579"/>
+<area shape="poly" title=" " alt="" coords="1668,301,1650,259,1623,207,1586,154,1564,130,1540,110,1510,93,1513,89,1543,105,1568,127,1590,151,1627,205,1655,257,1673,299"/>
+<area shape="rect" href="eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="1351,170,1513,210"/>
+<area shape="poly" title=" " alt="" coords="1655,306,1604,265,1540,224,1512,213,1514,208,1543,220,1607,261,1658,302"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="1337,235,1527,260"/>
+<area shape="poly" title=" " alt="" coords="1638,310,1541,274,1498,263,1499,257,1542,269,1640,305"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="1355,284,1509,309"/>
+<area shape="poly" title=" " alt="" coords="1575,316,1509,308,1509,303,1576,311"/>
+<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="1352,334,1512,374"/>
+<area shape="poly" title=" " alt="" coords="1576,341,1512,348,1512,342,1575,335"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="1362,120,1502,145"/>
+<area shape="poly" title=" " alt="" coords="1664,303,1644,270,1616,231,1581,192,1540,160,1501,144,1503,139,1543,156,1584,189,1620,228,1649,267,1669,300"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1363,399,1501,424"/>
+<area shape="poly" title=" " alt="" coords="1643,347,1542,389,1497,401,1495,396,1540,383,1641,342"/>
+<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="1323,448,1541,473"/>
+<area shape="poly" title=" " alt="" coords="1660,350,1609,395,1577,418,1542,438,1508,450,1507,445,1540,433,1574,414,1606,391,1656,346"/>
+<area shape="rect" href="stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="1363,501,1501,527"/>
+<area shape="poly" title=" " alt="" coords="1667,352,1618,419,1583,456,1543,487,1502,505,1500,500,1540,482,1579,452,1614,416,1663,349"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="1395,553,1469,579"/>
+<area shape="poly" title=" " alt="" coords="1673,353,1655,394,1627,445,1590,496,1567,520,1543,540,1506,558,1469,566,1468,561,1505,553,1540,536,1564,516,1585,493,1622,442,1650,392,1668,351"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="1369,604,1495,629"/>
+<area shape="poly" title=" " alt="" coords="1677,353,1661,404,1635,469,1596,535,1571,566,1543,592,1520,605,1496,613,1494,608,1518,600,1540,588,1568,562,1592,532,1630,466,1656,402,1671,351"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="1077,92,1261,117"/>
+<area shape="poly" title=" " alt="" coords="1339,88,1261,97,1261,92,1339,83"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="1083,227,1255,267"/>
+<area shape="poly" title=" " alt="" coords="1323,250,1255,250,1255,245,1323,245"/>
+<area shape="poly" title=" " alt="" coords="1348,126,1261,117,1261,112,1349,121"/>
+<area shape="rect" href="guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="1063,292,1275,317"/>
+<area shape="poly" title=" " alt="" coords="1349,401,1321,388,1305,374,1296,359,1288,344,1273,331,1249,320,1252,315,1276,326,1292,341,1301,356,1309,370,1324,384,1351,396"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1097,341,1240,367"/>
+<area shape="poly" title=" " alt="" coords="1359,398,1227,369,1228,364,1360,393"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="1075,391,1263,416"/>
+<area shape="poly" title=" " alt="" coords="1349,412,1263,409,1263,404,1350,406"/>
+<area shape="rect" href="guidance__oneloop_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="626,240,791,265"/>
+<area shape="poly" title=" " alt="" coords="1084,292,1014,282,791,261,792,255,1015,277,1085,287"/>
+<area shape="rect" href="guidance__oneloop_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="852,341,1007,367"/>
+<area shape="poly" title=" " alt="" coords="1094,323,992,344,991,339,1093,318"/>
+<area shape="rect" href="guidance__oneloop_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="844,292,1015,317"/>
+<area shape="poly" title=" " alt="" coords="1049,307,1015,307,1015,302,1049,302"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,291,573,316"/>
+<area shape="poly" title=" " alt="" coords="641,271,547,293,545,288,639,266"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,316,360,341"/>
+<area shape="poly" title=" " alt="" coords="395,319,361,323,360,318,394,313"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,259,188,284"/>
+<area shape="poly" title=" " alt="" coords="240,315,187,299,143,287,145,282,189,294,241,309"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,309,187,349"/>
+<area shape="poly" title=" " alt="" coords="222,331,188,331,188,326,222,326"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,373,179,399"/>
+<area shape="poly" title=" " alt="" coords="241,348,189,363,145,376,143,371,187,358,240,343"/>
+<area shape="poly" title=" " alt="" coords="871,372,817,383,754,391,687,391,621,381,587,368,555,352,506,318,509,314,558,347,589,363,622,375,687,386,754,385,817,378,870,367"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="621,341,796,367"/>
+<area shape="poly" title=" " alt="" coords="838,357,796,357,796,351,838,351"/>
+<area shape="poly" title=" " alt="" coords="639,341,545,319,547,313,641,336"/>
+<area shape="poly" title=" " alt="" coords="608,350,360,335,360,330,608,345"/>
+<area shape="poly" title=" " alt="" coords="830,307,574,306,574,301,830,302"/>
+<area shape="poly" title=" " alt="" coords="859,323,767,344,766,339,858,318"/>
+<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="1097,441,1241,481"/>
+<area shape="poly" title=" " alt="" coords="1309,463,1241,463,1241,458,1309,458"/>
+<area shape="rect" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="1088,505,1249,531"/>
+<area shape="poly" title=" " alt="" coords="1350,518,1250,519,1250,514,1350,513"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="1082,555,1255,580"/>
+<area shape="poly" title=" " alt="" coords="1382,569,1256,570,1256,564,1382,564"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="1069,604,1269,629"/>
+<area shape="poly" title=" " alt="" coords="1355,619,1269,619,1269,614,1355,614"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="1083,654,1255,694"/>
+<area shape="poly" title=" " alt="" coords="1360,635,1255,658,1254,653,1359,630"/>
 </map>
 </div>
 
@@ -7036,110 +7038,110 @@ in rad/s </td></tr>
 <div id="dynsection-51-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__algebra__float_ga99c8f1ff70a5b638cf87ea816f1756a2_icgraph.png" border="0" usemap="#agroup__math__algebra__float_ga99c8f1ff70a5b638cf87ea816f1756a2_icgraph" alt=""/></div>
 <map name="agroup__math__algebra__float_ga99c8f1ff70a5b638cf87ea816f1756a2_icgraph" id="agroup__math__algebra__float_ga99c8f1ff70a5b638cf87ea816f1756a2_icgraph">
-<area shape="rect" title="Quaternion from Euler angles." alt="" coords="1427,494,1581,519"/>
-<area shape="rect" href="ahrs__vectornav_8c.html#a372720f51165cb35510d524d12881555" title="Read received data." alt="" coords="1184,367,1379,393"/>
-<area shape="poly" title=" " alt="" coords="1477,487,1432,450,1377,414,1330,395,1332,390,1380,410,1436,446,1480,482"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a8beaabd2283365e94e7c5c9c0e05489f" title=" " alt="" coords="738,104,910,144"/>
-<area shape="poly" title=" " alt="" coords="1464,491,1423,473,1378,459,1338,452,1287,449,1167,445,1107,442,1050,436,1003,424,968,406,952,391,942,375,935,344,931,309,919,270,878,201,839,146,843,143,882,198,924,268,936,308,940,343,947,373,956,387,971,402,1005,419,1051,430,1107,437,1168,440,1287,443,1339,447,1379,453,1425,468,1466,486"/>
-<area shape="rect" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="1188,570,1375,595"/>
-<area shape="poly" title=" " alt="" coords="1455,526,1380,553,1322,572,1321,567,1378,548,1454,521"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="1199,469,1363,494"/>
-<area shape="poly" title=" " alt="" coords="1412,499,1363,493,1364,488,1413,494"/>
-<area shape="rect" href="stabilization_8c.html#af997ac8db0c8ededc57d411e8caa47b2" title=" " alt="" coords="754,1173,894,1198"/>
-<area shape="poly" title=" " alt="" coords="1413,512,1150,528,1033,542,993,551,971,561,962,573,952,595,931,661,888,850,851,1047,830,1173,825,1172,846,1046,882,849,926,660,947,593,958,570,968,557,991,546,1032,537,1149,523,1413,507"/>
-<area shape="rect" href="tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="1216,619,1347,645"/>
-<area shape="poly" title=" " alt="" coords="1483,531,1438,572,1410,593,1380,610,1348,623,1346,618,1378,606,1407,588,1435,567,1480,527"/>
-<area shape="rect" href="ahrs__vectornav_8c.html#a36bc2168f7e5f7d7a416978206b62098" title="Event handling for Vectornav." alt="" coords="969,367,1136,393"/>
-<area shape="poly" title=" " alt="" coords="1170,383,1136,383,1136,377,1170,377"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="220,5,392,45"/>
-<area shape="poly" title=" " alt="" coords="789,97,739,61,709,44,678,32,604,16,529,10,456,11,393,16,392,10,456,5,529,5,605,11,679,27,711,39,742,56,792,93"/>
-<area shape="rect" href="ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="974,570,1131,595"/>
-<area shape="poly" title=" " alt="" coords="1174,585,1132,585,1132,580,1174,580"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="973,469,1132,494"/>
-<area shape="poly" title=" " alt="" coords="1186,484,1132,484,1132,479,1186,479"/>
-<area shape="rect" href="ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="482,91,657,117"/>
-<area shape="poly" title=" " alt="" coords="994,466,968,452,916,410,878,369,849,327,824,286,799,246,770,207,731,169,677,132,649,119,651,114,680,127,734,165,774,203,804,243,829,284,854,324,883,365,920,406,971,447,996,461"/>
-<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="727,619,921,645"/>
-<area shape="poly" title=" " alt="" coords="1000,501,971,516,931,542,894,571,840,621,836,617,891,567,928,538,968,511,998,497"/>
-<area shape="rect" href="ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="231,91,381,117"/>
-<area shape="poly" title=" " alt="" coords="468,107,382,107,382,101,468,101"/>
-<area shape="poly" title=" " alt="" coords="810,607,770,496,724,349,717,314,715,283,716,229,715,205,709,181,697,157,677,131,655,117,658,112,680,127,702,154,714,179,720,204,722,229,720,283,722,314,729,347,775,494,815,606"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="490,141,649,181"/>
-<area shape="poly" title=" " alt="" coords="811,607,724,349,714,302,711,264,702,230,692,213,677,195,648,177,650,172,680,191,697,210,707,228,716,264,720,302,729,347,816,605"/>
-<area shape="rect" href="eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="488,205,651,245"/>
-<area shape="poly" title=" " alt="" coords="812,607,744,412,705,312,689,278,677,259,649,242,652,238,681,255,694,275,710,310,749,410,817,605"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="474,270,665,295"/>
-<area shape="poly" title=" " alt="" coords="817,606,804,545,779,464,761,421,738,380,710,342,677,309,659,298,662,293,680,305,714,338,742,377,765,419,784,462,809,543,822,605"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="493,319,646,345"/>
-<area shape="poly" title=" " alt="" coords="814,607,799,554,772,487,732,417,706,386,677,360,645,343,648,339,680,355,710,383,736,414,777,484,804,552,819,605"/>
-<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="489,369,649,409"/>
-<area shape="poly" title=" " alt="" coords="810,607,790,567,761,517,723,466,677,424,649,408,651,403,680,419,727,463,766,514,795,564,814,605"/>
-<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="499,434,639,459"/>
-<area shape="poly" title=" " alt="" coords="806,609,755,540,719,503,677,473,638,458,640,453,680,468,722,499,759,537,810,606"/>
-<area shape="rect" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="500,483,639,509"/>
-<area shape="poly" title=" " alt="" coords="799,611,746,566,713,542,678,522,638,509,640,504,680,518,716,538,749,561,802,607"/>
-<area shape="rect" href="mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="497,533,642,558"/>
-<area shape="poly" title=" " alt="" coords="783,616,678,573,633,561,634,556,680,568,785,611"/>
-<area shape="rect" href="mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="484,583,655,623"/>
-<area shape="poly" title=" " alt="" coords="713,622,655,615,655,610,713,617"/>
-<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="501,647,638,673"/>
-<area shape="poly" title=" " alt="" coords="713,647,638,655,638,650,712,642"/>
-<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="460,697,679,722"/>
-<area shape="poly" title=" " alt="" coords="780,652,679,688,636,699,634,694,678,683,779,647"/>
-<area shape="rect" href="stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="501,746,638,771"/>
-<area shape="poly" title=" " alt="" coords="800,656,747,697,714,719,680,737,639,751,637,745,678,732,712,714,744,693,797,652"/>
-<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="533,795,606,821"/>
-<area shape="poly" title=" " alt="" coords="809,658,757,723,721,757,680,786,643,801,607,808,606,803,642,796,677,782,718,753,753,719,805,655"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="489,845,649,885"/>
-<area shape="poly" title=" " alt="" coords="814,659,794,698,764,745,726,794,680,836,651,851,648,846,677,831,722,790,760,742,789,695,809,656"/>
-<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="226,944,386,984"/>
-<area shape="poly" title=" " alt="" coords="819,659,803,711,776,777,736,844,710,874,680,900,638,914,562,929,387,956,386,951,561,924,637,909,677,895,706,870,731,841,771,774,798,709,814,657"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="489,960,649,1000"/>
-<area shape="poly" title=" " alt="" coords="820,659,806,717,779,793,760,833,738,873,711,910,680,943,651,962,648,958,677,939,707,907,733,870,756,831,774,791,800,715,815,657"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="475,1173,663,1198"/>
-<area shape="poly" title=" " alt="" coords="822,659,805,768,775,920,755,997,733,1067,708,1124,681,1163,664,1175,661,1170,677,1159,703,1122,728,1065,750,995,769,919,799,767,816,658"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="503,1223,636,1263"/>
-<area shape="poly" title=" " alt="" coords="822,659,806,777,777,943,757,1028,735,1105,709,1169,681,1212,660,1228,637,1237,635,1232,658,1223,677,1209,704,1166,730,1103,752,1026,771,942,801,776,817,658"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="507,42,632,67"/>
-<area shape="poly" title=" " alt="" coords="817,606,800,492,771,334,752,253,729,180,704,120,677,81,656,67,632,59,633,54,658,62,681,77,709,118,734,178,757,252,776,333,806,492,822,605"/>
-<area shape="rect" href="tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="492,1025,647,1050"/>
-<area shape="poly" title=" " alt="" coords="824,659,814,730,791,826,773,877,749,927,718,974,680,1014,648,1032,645,1027,677,1010,714,970,744,925,768,875,786,824,809,729,818,658"/>
-<area shape="rect" href="ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="524,1074,615,1099"/>
-<area shape="poly" title=" " alt="" coords="825,659,819,738,811,791,798,848,780,907,755,965,722,1018,680,1065,649,1082,615,1089,614,1084,647,1077,677,1061,718,1015,750,962,775,905,793,847,805,790,813,738,820,658"/>
-<area shape="rect" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="478,1123,661,1149"/>
-<area shape="poly" title=" " alt="" coords="826,658,823,746,816,804,805,869,787,935,761,1001,726,1061,680,1114,663,1126,660,1122,677,1110,722,1058,756,998,782,934,799,868,811,804,817,745,821,658"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="214,149,398,174"/>
-<area shape="poly" title=" " alt="" coords="476,164,398,164,398,159,476,159"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="220,263,392,303"/>
-<area shape="poly" title=" " alt="" coords="460,285,392,285,392,280,460,280"/>
-<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="214,418,398,443"/>
-<area shape="poly" title=" " alt="" coords="486,444,398,439,398,434,486,439"/>
-<area shape="rect" href="mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="233,467,379,493"/>
-<area shape="poly" title=" " alt="" coords="496,532,459,523,411,507,367,495,368,490,413,501,461,517,497,527"/>
-<area shape="rect" href="mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="255,517,357,542"/>
-<area shape="poly" title=" " alt="" coords="485,581,459,573,411,557,357,543,358,538,413,552,461,568,487,576"/>
-<area shape="rect" href="mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="239,566,373,591"/>
-<area shape="poly" title=" " alt="" coords="470,596,373,587,374,582,470,591"/>
-<area shape="rect" href="guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="200,615,412,641"/>
-<area shape="poly" title=" " alt="" coords="487,653,411,643,411,638,487,647"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="235,665,377,690"/>
-<area shape="poly" title=" " alt="" coords="487,668,378,675,378,670,487,663"/>
-<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="212,714,400,739"/>
-<area shape="poly" title=" " alt="" coords="496,678,461,688,413,705,369,717,368,711,411,700,459,683,494,673"/>
-<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="234,764,378,804"/>
-<area shape="poly" title=" " alt="" coords="496,728,461,737,413,755,376,766,374,761,411,749,459,732,494,723"/>
-<area shape="rect" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="225,829,387,854"/>
-<area shape="poly" title=" " alt="" coords="489,777,461,786,437,802,413,818,376,831,374,826,411,814,435,798,459,782,487,772"/>
-<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="219,878,393,903"/>
-<area shape="poly" title=" " alt="" coords="520,818,461,836,438,852,413,869,380,880,379,875,411,864,434,848,459,831,518,813"/>
-<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="5,944,152,984"/>
-<area shape="poly" title=" " alt="" coords="212,967,152,967,152,961,212,961"/>
-<area shape="poly" title=" " alt="" coords="475,977,386,972,387,966,476,972"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="212,1230,400,1255"/>
-<area shape="poly" title=" " alt="" coords="489,1245,400,1245,400,1240,489,1240"/>
-<area shape="poly" title=" " alt="" coords="492,49,392,38,393,32,493,44"/>
-<area shape="poly" title=" " alt="" coords="740,1188,664,1188,664,1183,740,1183"/>
-<area shape="poly" title=" " alt="" coords="754,1204,637,1230,636,1225,753,1198"/>
+<area shape="rect" title="Quaternion from Euler angles." alt="" coords="1232,518,1387,544"/>
+<area shape="rect" href="ahrs__vectornav_8c.html#a372720f51165cb35510d524d12881555" title="Read received data." alt="" coords="989,392,1184,417"/>
+<area shape="poly" title=" " alt="" coords="1282,511,1238,474,1183,439,1136,420,1138,415,1185,434,1241,470,1286,507"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a8beaabd2283365e94e7c5c9c0e05489f" title=" " alt="" coords="543,134,715,174"/>
+<area shape="poly" title=" " alt="" coords="1269,515,1228,498,1183,483,1144,476,1092,473,973,470,912,467,856,460,808,449,773,431,757,414,747,397,740,363,737,327,733,307,724,286,685,224,647,176,651,172,690,221,729,283,738,305,743,326,745,362,752,395,761,411,776,426,810,444,857,455,912,462,973,465,1093,468,1144,471,1185,478,1230,493,1271,510"/>
+<area shape="rect" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="993,594,1180,620"/>
+<area shape="poly" title=" " alt="" coords="1261,551,1185,578,1128,597,1126,592,1183,573,1259,546"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="1005,493,1169,518"/>
+<area shape="poly" title=" " alt="" coords="1218,523,1168,518,1169,512,1218,518"/>
+<area shape="rect" href="stabilization_8c.html#af997ac8db0c8ededc57d411e8caa47b2" title=" " alt="" coords="559,1225,699,1250"/>
+<area shape="poly" title=" " alt="" coords="1218,537,955,553,838,567,798,575,776,585,767,598,757,621,735,691,692,889,656,1095,635,1225,630,1225,650,1094,687,888,730,689,752,619,763,595,773,581,796,570,837,561,954,547,1218,531"/>
+<area shape="rect" href="tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="1021,644,1152,669"/>
+<area shape="poly" title=" " alt="" coords="1289,555,1244,596,1215,617,1185,635,1153,647,1151,642,1183,630,1212,612,1240,592,1285,551"/>
+<area shape="rect" href="ahrs__vectornav_8c.html#a36bc2168f7e5f7d7a416978206b62098" title="Event handling for Vectornav." alt="" coords="775,392,941,417"/>
+<area shape="poly" title=" " alt="" coords="975,407,942,407,942,402,975,402"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="25,8,197,48"/>
+<area shape="poly" title=" " alt="" coords="601,125,551,76,518,52,483,35,410,16,335,9,262,10,198,16,197,11,262,5,335,3,411,11,485,30,521,48,554,71,605,121"/>
+<area shape="rect" href="ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="779,594,937,620"/>
+<area shape="poly" title=" " alt="" coords="979,610,937,610,937,604,979,604"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="779,493,937,518"/>
+<area shape="poly" title=" " alt="" coords="991,508,937,508,937,503,991,503"/>
+<area shape="rect" href="ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="287,94,462,120"/>
+<area shape="poly" title=" " alt="" coords="798,490,773,476,627,304,482,133,458,122,461,117,486,129,632,300,776,472,801,485"/>
+<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="532,642,727,668"/>
+<area shape="poly" title=" " alt="" coords="805,526,776,540,737,566,700,595,645,644,642,640,696,591,734,562,773,535,803,521"/>
+<area shape="rect" href="ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="36,94,187,120"/>
+<area shape="poly" title=" " alt="" coords="274,110,187,110,187,104,274,104"/>
+<area shape="poly" title=" " alt="" coords="615,630,575,520,529,376,522,337,521,303,524,243,523,215,518,188,505,161,482,133,461,118,464,114,486,129,509,158,523,187,528,215,529,243,526,303,528,337,535,374,580,519,620,628"/>
+<area shape="rect" href="aoa__t4_8c.html#a0981b55909f364cc6d7aa0c246c3f6e1" title=" " alt="" coords="315,144,434,169"/>
+<area shape="poly" title=" " alt="" coords="616,631,576,521,529,376,523,345,520,318,520,270,518,248,512,227,501,206,482,184,460,169,434,161,435,156,462,164,486,180,505,203,517,225,523,247,525,270,525,318,528,345,535,374,581,519,621,629"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="295,194,454,234"/>
+<area shape="poly" title=" " alt="" coords="617,630,482,247,453,229,455,225,486,244,622,628"/>
+<area shape="rect" href="eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="293,258,456,298"/>
+<area shape="poly" title=" " alt="" coords="618,630,594,556,560,460,521,370,501,335,482,312,455,295,458,290,486,308,506,332,526,367,565,458,599,554,623,628"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="279,322,470,348"/>
+<area shape="poly" title=" " alt="" coords="621,629,606,573,580,499,562,461,540,424,513,390,482,361,464,350,466,345,486,357,517,387,544,421,567,459,585,497,611,571,626,628"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="298,372,451,397"/>
+<area shape="poly" title=" " alt="" coords="618,630,600,582,573,523,533,462,509,435,483,412,450,396,453,391,485,407,513,431,538,459,577,520,605,580,623,628"/>
+<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="295,422,455,462"/>
+<area shape="poly" title=" " alt="" coords="613,631,592,596,562,554,525,512,483,476,453,461,456,456,485,471,529,508,566,551,596,594,617,629"/>
+<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="305,486,445,512"/>
+<area shape="poly" title=" " alt="" coords="608,634,555,578,521,550,483,525,444,511,446,506,485,521,524,545,559,575,611,630"/>
+<area shape="rect" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="305,536,444,561"/>
+<area shape="poly" title=" " alt="" coords="596,637,545,606,483,576,443,564,445,559,485,571,547,601,599,632"/>
+<area shape="rect" href="mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="302,585,447,610"/>
+<area shape="poly" title=" " alt="" coords="558,642,431,613,432,608,560,637"/>
+<area shape="rect" href="mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="289,635,460,675"/>
+<area shape="poly" title=" " alt="" coords="518,658,460,658,460,652,518,652"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="306,700,443,725"/>
+<area shape="poly" title=" " alt="" coords="560,673,432,702,431,697,558,668"/>
+<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="265,749,484,774"/>
+<area shape="poly" title=" " alt="" coords="600,678,548,710,485,740,449,752,447,746,483,735,545,705,597,673"/>
+<area shape="rect" href="stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="306,798,443,824"/>
+<area shape="poly" title=" " alt="" coords="611,680,559,736,524,765,485,789,445,804,443,799,483,785,521,761,555,732,608,676"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="338,848,411,873"/>
+<area shape="poly" title=" " alt="" coords="618,681,597,717,568,760,530,803,485,839,449,854,412,861,411,856,447,849,483,834,526,799,563,757,593,714,613,679"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="295,898,455,938"/>
+<area shape="poly" title=" " alt="" coords="622,682,603,726,574,782,535,839,512,865,486,888,456,904,454,899,482,884,508,861,531,836,570,779,598,724,617,680"/>
+<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="31,996,191,1036"/>
+<area shape="poly" title=" " alt="" coords="626,682,612,739,586,813,567,852,545,889,517,923,485,952,444,966,368,982,192,1009,191,1003,367,977,442,961,483,947,514,919,540,886,562,849,581,811,607,738,621,681"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="295,1012,455,1052"/>
+<area shape="poly" title=" " alt="" coords="627,682,614,745,588,829,569,874,546,918,519,959,486,996,456,1015,453,1011,482,992,515,956,542,915,565,871,583,827,608,744,622,681"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="281,1225,469,1250"/>
+<area shape="poly" title=" " alt="" coords="627,682,611,797,582,957,563,1039,540,1113,515,1174,501,1198,486,1216,470,1227,467,1223,482,1212,496,1195,510,1172,535,1112,557,1038,577,956,606,796,622,681"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="308,1275,441,1315"/>
+<area shape="poly" title=" " alt="" coords="628,682,612,805,584,980,564,1069,542,1151,516,1219,501,1245,486,1265,466,1280,442,1290,440,1285,463,1276,482,1261,497,1242,511,1216,537,1150,559,1068,579,979,607,804,623,681"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="312,45,437,70"/>
+<area shape="poly" title=" " alt="" coords="620,629,558,330,517,169,498,113,482,84,461,70,437,62,439,57,464,65,486,80,503,111,523,168,564,329,626,628"/>
+<area shape="rect" href="tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="297,1077,452,1102"/>
+<area shape="poly" title=" " alt="" coords="630,681,622,757,600,861,582,917,557,972,526,1022,486,1066,470,1077,453,1085,451,1080,468,1072,482,1062,521,1019,553,969,577,915,595,860,617,756,624,681"/>
+<area shape="rect" href="ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="329,1126,420,1152"/>
+<area shape="poly" title=" " alt="" coords="631,682,626,766,619,822,607,884,589,947,564,1009,530,1067,486,1117,455,1135,421,1142,420,1137,453,1130,482,1113,525,1064,559,1007,584,945,602,883,614,822,621,766,626,682"/>
+<area shape="rect" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="283,1176,466,1201"/>
+<area shape="poly" title=" " alt="" coords="627,682,609,788,578,933,559,1007,537,1074,513,1129,486,1166,468,1179,465,1175,482,1162,508,1127,532,1072,554,1006,573,932,604,787,621,681"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="19,201,203,226"/>
+<area shape="poly" title=" " alt="" coords="282,216,204,216,204,211,282,211"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="25,315,197,355"/>
+<area shape="poly" title=" " alt="" coords="265,338,198,338,198,332,265,332"/>
+<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="19,470,203,496"/>
+<area shape="poly" title=" " alt="" coords="291,497,203,491,204,486,291,491"/>
+<area shape="rect" href="mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="39,520,184,545"/>
+<area shape="poly" title=" " alt="" coords="296,584,265,576,217,559,173,548,175,543,218,554,266,571,297,579"/>
+<area shape="rect" href="mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="60,569,163,594"/>
+<area shape="poly" title=" " alt="" coords="291,634,265,626,217,610,162,596,164,590,218,604,266,621,292,629"/>
+<area shape="rect" href="mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="44,618,179,644"/>
+<area shape="poly" title=" " alt="" coords="275,649,179,640,179,634,276,643"/>
+<area shape="rect" href="guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="5,668,217,693"/>
+<area shape="poly" title=" " alt="" coords="292,705,216,696,217,690,293,700"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="40,717,183,742"/>
+<area shape="poly" title=" " alt="" coords="292,720,183,728,183,722,292,715"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="17,766,205,792"/>
+<area shape="poly" title=" " alt="" coords="301,731,266,740,218,758,175,769,173,764,217,753,265,735,300,726"/>
+<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="39,816,183,856"/>
+<area shape="poly" title=" " alt="" coords="301,780,266,790,218,807,181,819,180,814,216,802,265,785,300,775"/>
+<area shape="rect" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="31,881,192,906"/>
+<area shape="poly" title=" " alt="" coords="294,829,267,839,243,855,219,871,181,884,179,879,216,866,240,850,264,834,292,824"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="25,930,198,956"/>
+<area shape="poly" title=" " alt="" coords="325,870,266,888,243,905,219,921,186,933,184,928,216,917,240,900,264,883,324,865"/>
+<area shape="poly" title=" " alt="" coords="281,1029,192,1024,192,1019,281,1024"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="17,1282,205,1308"/>
+<area shape="poly" title=" " alt="" coords="294,1298,206,1298,206,1292,294,1292"/>
+<area shape="poly" title=" " alt="" coords="298,52,197,41,198,35,298,47"/>
+<area shape="poly" title=" " alt="" coords="546,1240,469,1240,469,1235,546,1235"/>
+<area shape="poly" title=" " alt="" coords="560,1256,442,1283,441,1278,558,1251"/>
 </map>
 </div>
 
@@ -7448,107 +7450,107 @@ in rad/s </td></tr>
 <div id="dynsection-55-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__algebra__float_ga29a7db3c967cea290d25b28b4d17f01f_icgraph.png" border="0" usemap="#agroup__math__algebra__float_ga29a7db3c967cea290d25b28b4d17f01f_icgraph" alt=""/></div>
 <map name="agroup__math__algebra__float_ga29a7db3c967cea290d25b28b4d17f01f_icgraph" id="agroup__math__algebra__float_ga29a7db3c967cea290d25b28b4d17f01f_icgraph">
-<area shape="rect" title="Quaternion from rotation matrix." alt="" coords="1388,247,1533,272"/>
-<area shape="rect" href="ahrs__float__cmpl_8c.html#aa0c9aade7383706d2716fed5f138edb2" title=" " alt="" coords="1187,221,1329,247"/>
-<area shape="poly" title=" " alt="" coords="1374,251,1329,246,1330,240,1375,246"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="1176,271,1340,296"/>
-<area shape="poly" title=" " alt="" coords="1374,272,1341,276,1340,271,1374,267"/>
-<area shape="rect" href="ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="1012,221,1085,247"/>
-<area shape="poly" title=" " alt="" coords="1173,237,1085,237,1085,231,1173,231"/>
-<area shape="rect" href="ahrs__float__cmpl__wrapper_8c.html#a6a8504eaa4fcd922a23c86a572f076cf" title=" " alt="" coords="745,220,903,245"/>
-<area shape="poly" title=" " alt="" coords="998,236,903,236,903,230,998,231"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="969,271,1128,296"/>
-<area shape="poly" title=" " alt="" coords="1162,286,1128,286,1128,281,1162,281"/>
+<area shape="rect" title="Quaternion from rotation matrix." alt="" coords="1388,259,1533,284"/>
+<area shape="rect" href="ahrs__float__cmpl_8c.html#aa0c9aade7383706d2716fed5f138edb2" title=" " alt="" coords="1187,233,1329,259"/>
+<area shape="poly" title=" " alt="" coords="1374,263,1329,258,1330,252,1375,258"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="1176,283,1340,308"/>
+<area shape="poly" title=" " alt="" coords="1374,284,1341,288,1340,283,1374,279"/>
+<area shape="rect" href="ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="1012,233,1085,259"/>
+<area shape="poly" title=" " alt="" coords="1173,249,1085,249,1085,243,1173,243"/>
+<area shape="rect" href="ahrs__float__cmpl__wrapper_8c.html#a6a8504eaa4fcd922a23c86a572f076cf" title=" " alt="" coords="745,232,903,257"/>
+<area shape="poly" title=" " alt="" coords="998,248,903,248,903,242,998,243"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="969,283,1128,308"/>
+<area shape="poly" title=" " alt="" coords="1162,298,1128,298,1128,293,1162,293"/>
 <area shape="rect" href="ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="482,5,657,31"/>
-<area shape="poly" title=" " alt="" coords="982,301,921,308,853,308,818,302,785,293,753,279,725,259,704,233,695,207,695,179,698,152,702,124,702,97,695,71,677,45,655,31,658,26,681,41,700,69,707,96,707,125,703,152,700,179,700,206,709,231,728,255,756,274,787,288,820,297,854,302,921,303,981,296"/>
-<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="727,587,921,612"/>
-<area shape="poly" title=" " alt="" coords="1033,309,837,588,832,585,1028,306"/>
+<area shape="poly" title=" " alt="" coords="982,313,922,321,853,320,818,315,785,305,753,291,725,271,703,244,694,215,694,186,698,157,703,128,703,99,696,71,677,44,655,29,658,25,681,40,701,69,709,98,708,128,704,158,699,187,699,214,708,241,728,267,756,286,787,300,820,310,854,315,921,315,982,308"/>
+<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="727,611,921,636"/>
+<area shape="poly" title=" " alt="" coords="1033,321,836,612,832,609,1029,318"/>
 <area shape="rect" href="ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="231,5,381,31"/>
 <area shape="poly" title=" " alt="" coords="468,21,382,21,382,15,468,15"/>
-<area shape="poly" title=" " alt="" coords="810,574,770,457,724,303,717,262,716,226,720,162,719,133,714,104,700,75,677,45,656,30,659,26,681,41,705,73,719,103,724,132,725,162,721,226,722,262,729,301,775,456,816,572"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="490,55,649,95"/>
-<area shape="poly" title=" " alt="" coords="811,574,772,457,724,303,715,245,714,197,712,175,706,154,695,132,677,109,663,98,648,90,650,85,666,94,681,105,700,129,711,152,717,174,719,197,720,244,729,301,777,455,816,572"/>
-<area shape="rect" href="eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="488,119,651,159"/>
-<area shape="poly" title=" " alt="" coords="812,574,736,342,677,173,650,156,652,151,681,170,741,340,817,573"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="474,184,665,209"/>
-<area shape="poly" title=" " alt="" coords="812,575,745,377,706,276,689,241,677,223,660,212,663,207,681,219,694,238,711,274,750,375,817,573"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="493,233,646,259"/>
-<area shape="poly" title=" " alt="" coords="817,574,804,512,779,430,761,387,738,345,710,307,677,273,645,257,648,252,680,269,714,303,742,342,766,385,784,428,809,510,822,573"/>
-<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="489,283,649,323"/>
-<area shape="poly" title=" " alt="" coords="813,574,797,524,769,460,729,394,705,364,677,337,649,321,651,316,680,333,709,360,734,391,774,458,802,522,818,573"/>
-<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="499,348,639,373"/>
-<area shape="poly" title=" " alt="" coords="811,575,792,533,763,482,725,430,702,407,677,387,659,377,639,370,640,365,661,372,680,382,706,403,729,426,768,479,796,530,815,573"/>
-<area shape="rect" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="500,397,639,423"/>
-<area shape="poly" title=" " alt="" coords="806,577,785,544,756,506,719,468,677,436,638,421,640,416,680,432,723,464,760,502,789,541,811,574"/>
-<area shape="rect" href="mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="497,447,642,472"/>
-<area shape="poly" title=" " alt="" coords="799,579,746,532,713,508,678,487,642,474,643,469,680,482,716,503,750,528,803,575"/>
-<area shape="rect" href="mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="484,497,655,537"/>
-<area shape="poly" title=" " alt="" coords="774,585,678,551,640,539,641,534,679,546,776,579"/>
-<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="501,561,638,587"/>
-<area shape="poly" title=" " alt="" coords="712,591,638,583,638,578,713,586"/>
-<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="460,611,679,636"/>
-<area shape="poly" title=" " alt="" coords="713,612,679,616,678,610,712,607"/>
-<area shape="rect" href="stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="501,660,638,685"/>
-<area shape="poly" title=" " alt="" coords="776,619,679,650,630,663,629,657,678,645,774,614"/>
-<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="533,709,606,735"/>
-<area shape="poly" title=" " alt="" coords="799,623,746,662,680,699,643,712,607,720,606,714,641,707,678,694,743,657,796,619"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="489,759,649,799"/>
-<area shape="poly" title=" " alt="" coords="807,625,755,686,719,720,680,748,651,763,648,758,677,744,716,716,751,683,803,622"/>
-<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="226,858,386,898"/>
-<area shape="poly" title=" " alt="" coords="816,626,797,668,768,719,729,771,706,794,680,814,638,827,562,842,387,870,386,865,561,837,636,822,677,809,702,790,725,767,763,716,792,666,811,624"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="489,874,649,914"/>
-<area shape="poly" title=" " alt="" coords="817,626,800,675,771,737,732,801,708,831,680,857,650,876,647,871,677,853,704,827,727,798,767,734,795,673,812,624"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="475,939,663,964"/>
-<area shape="poly" title=" " alt="" coords="822,626,809,688,784,770,765,813,742,855,714,894,680,928,659,941,656,936,677,924,710,891,738,852,761,811,779,768,804,687,817,625"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="503,989,636,1029"/>
-<area shape="poly" title=" " alt="" coords="823,626,812,696,789,790,770,840,746,890,717,936,680,977,660,992,637,1001,635,996,658,987,677,973,713,933,742,887,765,838,784,788,807,695,818,625"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="507,1053,632,1079"/>
-<area shape="poly" title=" " alt="" coords="825,626,819,707,812,761,799,820,781,880,756,940,723,995,680,1043,658,1057,633,1065,632,1060,656,1052,677,1039,718,992,751,937,776,878,794,818,806,760,814,707,820,626"/>
-<area shape="rect" href="tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="492,1103,647,1128"/>
-<area shape="poly" title=" " alt="" coords="826,626,823,715,817,775,805,841,787,909,762,976,726,1038,680,1092,665,1103,648,1111,646,1106,662,1099,677,1088,722,1035,757,973,782,907,800,840,812,774,818,715,821,626"/>
-<area shape="rect" href="ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="524,1152,615,1177"/>
-<area shape="poly" title=" " alt="" coords="822,626,805,737,775,892,756,971,733,1043,708,1101,681,1141,666,1152,650,1160,616,1167,615,1162,648,1155,663,1147,677,1137,704,1099,728,1041,751,969,770,891,800,736,817,625"/>
-<area shape="rect" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="478,1201,661,1227"/>
-<area shape="poly" title=" " alt="" coords="823,626,807,747,779,917,759,1004,737,1083,710,1148,696,1173,680,1192,662,1205,659,1200,677,1188,692,1170,706,1146,732,1081,754,1003,773,916,802,746,817,626"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="214,63,398,88"/>
-<area shape="poly" title=" " alt="" coords="476,78,398,78,398,73,476,73"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="220,177,392,217"/>
-<area shape="poly" title=" " alt="" coords="460,199,392,199,392,194,460,194"/>
-<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="214,331,398,356"/>
-<area shape="poly" title=" " alt="" coords="486,358,398,352,398,347,486,353"/>
-<area shape="rect" href="mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="233,380,379,405"/>
-<area shape="poly" title=" " alt="" coords="494,446,459,437,411,419,368,408,369,403,413,414,461,431,496,441"/>
-<area shape="rect" href="mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="255,429,357,455"/>
-<area shape="poly" title=" " alt="" coords="487,495,459,486,411,469,357,455,358,450,413,463,461,481,489,490"/>
-<area shape="rect" href="mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="239,479,373,504"/>
-<area shape="poly" title=" " alt="" coords="470,510,373,500,374,495,470,504"/>
-<area shape="rect" href="guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="200,528,412,553"/>
-<area shape="poly" title=" " alt="" coords="487,566,406,556,407,551,487,561"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="235,577,377,603"/>
-<area shape="poly" title=" " alt="" coords="487,582,378,588,378,583,487,576"/>
-<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="212,627,400,652"/>
-<area shape="poly" title=" " alt="" coords="493,592,461,601,413,617,364,629,363,624,411,611,459,595,492,587"/>
-<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="234,677,378,717"/>
-<area shape="poly" title=" " alt="" coords="493,642,461,650,413,666,372,679,370,674,411,661,459,645,492,637"/>
-<area shape="rect" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="225,741,387,767"/>
-<area shape="poly" title=" " alt="" coords="488,690,461,699,437,715,413,731,376,744,374,739,411,726,434,710,459,694,487,685"/>
-<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="219,791,393,816"/>
-<area shape="poly" title=" " alt="" coords="520,732,461,750,437,765,413,780,375,793,373,788,411,776,435,760,459,745,519,727"/>
-<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="5,858,152,898"/>
-<area shape="poly" title=" " alt="" coords="212,881,152,881,152,875,212,875"/>
-<area shape="poly" title=" " alt="" coords="475,891,386,886,387,880,476,886"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="212,939,400,964"/>
-<area shape="poly" title=" " alt="" coords="489,994,365,967,366,961,490,989"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="206,988,406,1013"/>
-<area shape="poly" title=" " alt="" coords="497,1053,459,1043,411,1029,362,1016,363,1011,413,1023,461,1038,498,1048"/>
-<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="220,1038,392,1078"/>
-<area shape="poly" title=" " alt="" coords="493,1066,392,1063,392,1058,493,1061"/>
-<area shape="rect" href="tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="253,1103,359,1128"/>
-<area shape="poly" title=" " alt="" coords="478,1118,359,1118,359,1113,478,1113"/>
-<area shape="rect" href="tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="233,1153,379,1193"/>
-<area shape="poly" title=" " alt="" coords="498,1134,380,1159,379,1154,497,1128"/>
-<area shape="rect" href="ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="259,1217,353,1243"/>
-<area shape="poly" title=" " alt="" coords="511,1180,461,1193,413,1207,353,1222,352,1217,411,1202,459,1187,510,1175"/>
+<area shape="poly" title=" " alt="" coords="811,599,770,477,724,315,717,272,716,234,721,166,721,136,715,106,702,76,677,44,656,29,659,25,680,40,706,73,720,104,726,135,726,167,722,234,722,271,729,313,775,475,816,597"/>
+<area shape="rect" href="aoa__t4_8c.html#a0981b55909f364cc6d7aa0c246c3f6e1" title=" " alt="" coords="510,55,629,80"/>
+<area shape="poly" title=" " alt="" coords="811,598,771,477,724,315,717,280,716,248,717,194,715,169,710,145,698,120,677,95,654,80,628,72,630,67,657,75,680,91,702,117,715,143,721,168,722,194,721,248,723,279,729,313,777,475,816,597"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="490,105,649,145"/>
+<area shape="poly" title=" " alt="" coords="812,598,724,315,715,268,711,229,703,194,693,177,677,159,648,140,650,135,680,155,697,174,708,192,717,228,720,267,729,313,817,597"/>
+<area shape="rect" href="eff__scheduling__falcon_8c.html#a3964c5d4f4821727815f516fdaaac66c" title=" " alt="" coords="488,169,651,209"/>
+<area shape="poly" title=" " alt="" coords="812,598,745,388,706,280,689,242,677,223,649,205,652,201,681,219,694,240,711,278,751,387,817,597"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html#adba438c2c07929ff73d5aab82feced1d" title=" " alt="" coords="474,233,665,259"/>
+<area shape="poly" title=" " alt="" coords="818,598,807,531,783,443,765,396,741,350,712,308,677,272,660,261,663,257,680,268,716,305,746,347,769,394,788,441,812,530,823,597"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="493,283,646,308"/>
+<area shape="poly" title=" " alt="" coords="816,598,802,540,776,465,757,426,735,388,708,353,677,323,645,306,647,301,680,319,712,349,739,385,762,424,781,463,807,539,821,597"/>
+<area shape="rect" href="eff__scheduling__rotwing_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="489,333,649,373"/>
+<area shape="poly" title=" " alt="" coords="812,598,794,553,765,495,726,437,703,410,677,387,648,371,651,366,680,382,707,406,731,433,770,493,799,550,817,596"/>
+<area shape="rect" href="guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="499,397,639,423"/>
+<area shape="poly" title=" " alt="" coords="808,599,788,562,759,518,722,473,677,436,639,420,641,415,680,432,726,469,763,514,793,559,813,597"/>
+<area shape="rect" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="500,447,639,472"/>
+<area shape="poly" title=" " alt="" coords="803,601,751,542,716,512,677,486,638,471,640,466,680,481,719,507,755,539,807,598"/>
+<area shape="rect" href="mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="497,496,642,521"/>
+<area shape="poly" title=" " alt="" coords="794,605,741,570,678,536,639,524,641,519,680,532,744,565,797,600"/>
+<area shape="rect" href="mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="484,546,655,586"/>
+<area shape="poly" title=" " alt="" coords="753,610,654,588,655,583,754,605"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="501,611,638,636"/>
+<area shape="poly" title=" " alt="" coords="713,626,638,626,638,621,713,621"/>
+<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="460,660,679,685"/>
+<area shape="poly" title=" " alt="" coords="745,641,636,663,635,657,744,636"/>
+<area shape="rect" href="stabilization__indi_8c.html#ad854757cb491da05f012d96819c99046" title=" " alt="" coords="501,709,638,735"/>
+<area shape="poly" title=" " alt="" coords="791,645,740,673,680,699,637,712,636,707,678,694,737,668,789,641"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807" title=" " alt="" coords="533,759,606,784"/>
+<area shape="poly" title=" " alt="" coords="804,648,751,699,717,726,680,748,643,762,607,770,606,765,641,757,678,744,714,721,748,695,800,644"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="489,809,649,849"/>
+<area shape="poly" title=" " alt="" coords="811,650,759,723,723,763,680,798,651,812,649,808,677,793,719,759,755,719,806,646"/>
+<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="226,907,386,947"/>
+<area shape="poly" title=" " alt="" coords="817,650,800,697,772,755,732,814,708,840,680,863,638,877,562,892,386,919,386,914,561,887,637,872,677,858,704,836,728,811,767,752,795,695,812,648"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="489,923,649,963"/>
+<area shape="poly" title=" " alt="" coords="819,650,803,703,775,772,735,844,709,877,680,907,651,925,648,921,677,903,705,874,730,841,770,769,798,701,814,648"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="475,988,663,1013"/>
+<area shape="poly" title=" " alt="" coords="823,650,812,716,787,805,769,852,745,898,716,941,680,977,660,990,657,986,677,973,712,937,741,895,764,850,782,803,806,715,817,649"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="503,1038,636,1078"/>
+<area shape="poly" title=" " alt="" coords="824,650,815,724,792,825,773,879,749,933,719,983,680,1027,660,1041,637,1051,635,1046,658,1036,677,1023,714,979,745,930,768,877,787,824,809,723,818,650"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="507,1103,632,1128"/>
+<area shape="poly" title=" " alt="" coords="826,650,821,735,814,792,802,854,784,919,759,982,725,1041,680,1092,658,1107,633,1115,631,1110,656,1102,677,1088,720,1038,754,980,779,917,797,853,809,791,816,735,820,650"/>
+<area shape="rect" href="tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="492,1152,647,1177"/>
+<area shape="poly" title=" " alt="" coords="822,650,804,757,773,904,754,979,732,1048,707,1103,681,1141,665,1153,648,1160,646,1155,662,1148,677,1137,703,1101,727,1046,749,978,768,903,799,756,816,649"/>
+<area shape="rect" href="ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="524,1201,615,1227"/>
+<area shape="poly" title=" " alt="" coords="822,650,806,766,777,929,758,1012,735,1088,710,1150,695,1174,681,1192,666,1203,650,1210,616,1217,615,1212,648,1205,663,1198,677,1188,691,1171,705,1147,730,1086,753,1011,772,928,801,765,817,649"/>
+<area shape="rect" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="478,1251,661,1276"/>
+<area shape="poly" title=" " alt="" coords="823,650,808,775,780,953,761,1044,738,1127,712,1195,697,1221,680,1241,662,1254,659,1250,677,1237,692,1218,707,1193,733,1125,756,1043,775,952,803,775,818,649"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="214,112,398,137"/>
+<area shape="poly" title=" " alt="" coords="476,127,398,127,398,122,476,122"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="220,226,392,266"/>
+<area shape="poly" title=" " alt="" coords="460,249,392,249,392,243,460,243"/>
+<area shape="rect" href="guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921" title=" " alt="" coords="214,381,398,407"/>
+<area shape="poly" title=" " alt="" coords="486,408,398,402,398,397,486,402"/>
+<area shape="rect" href="mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="233,431,379,456"/>
+<area shape="poly" title=" " alt="" coords="496,495,459,486,411,470,367,459,368,453,413,465,461,481,497,490"/>
+<area shape="rect" href="mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="255,480,357,505"/>
+<area shape="poly" title=" " alt="" coords="488,544,459,535,411,519,357,506,358,501,413,514,461,530,490,539"/>
+<area shape="rect" href="mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="239,529,373,555"/>
+<area shape="poly" title=" " alt="" coords="470,560,373,551,374,545,470,554"/>
+<area shape="rect" href="guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="200,579,412,604"/>
+<area shape="poly" title=" " alt="" coords="487,616,411,607,411,601,487,611"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="235,628,377,653"/>
+<area shape="poly" title=" " alt="" coords="487,631,378,639,378,633,487,626"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="212,677,400,703"/>
+<area shape="poly" title=" " alt="" coords="492,642,461,650,413,667,365,680,364,675,411,662,459,645,490,637"/>
+<area shape="rect" href="eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="234,727,378,767"/>
+<area shape="poly" title=" " alt="" coords="492,691,461,699,413,717,373,730,371,725,411,711,459,694,490,686"/>
+<area shape="rect" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="225,792,387,817"/>
+<area shape="poly" title=" " alt="" coords="488,739,461,748,437,765,413,782,377,794,375,789,411,777,434,760,459,744,487,734"/>
+<area shape="rect" href="rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="219,841,393,867"/>
+<area shape="poly" title=" " alt="" coords="520,781,461,799,437,815,413,831,376,844,374,839,411,826,435,810,459,794,518,776"/>
+<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="5,907,152,947"/>
+<area shape="poly" title=" " alt="" coords="212,930,152,930,152,925,212,925"/>
+<area shape="poly" title=" " alt="" coords="475,940,386,935,387,930,476,935"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="212,996,400,1021"/>
+<area shape="poly" title=" " alt="" coords="489,1046,374,1024,375,1019,490,1041"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="206,1045,406,1071"/>
+<area shape="poly" title=" " alt="" coords="497,1102,364,1073,366,1068,498,1097"/>
+<area shape="rect" href="eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="220,1095,392,1135"/>
+<area shape="poly" title=" " alt="" coords="493,1118,392,1118,392,1113,493,1113"/>
+<area shape="rect" href="tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="253,1160,359,1185"/>
+<area shape="poly" title=" " alt="" coords="478,1170,359,1174,359,1168,478,1165"/>
+<area shape="rect" href="tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="233,1210,379,1250"/>
+<area shape="poly" title=" " alt="" coords="500,1183,461,1193,380,1213,379,1208,459,1187,498,1178"/>
 </map>
 </div>
 
@@ -11633,7 +11635,7 @@ in rad/s </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 17 2025 20:58:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Oct 19 2025 18:01:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

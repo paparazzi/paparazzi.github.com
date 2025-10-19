@@ -31,6 +31,7 @@ var abi__sender__ids_8h =
     [ "AIRSPEED_WE_QUAD_ID", "abi__sender__ids_8h.html#a96e801f8cc003040271534b402e7a23e", null ],
     [ "AOA_ADC_ID", "abi__sender__ids_8h.html#a8c17c463281fcd583813e7b73c4b8a98", null ],
     [ "AOA_PWM_ID", "abi__sender__ids_8h.html#a612bfd4d571f7ff755f62755116dda24", null ],
+    [ "AOA_T4_ID", "abi__sender__ids_8h.html#af2ecc910548f6adce129c33d4c196404", null ],
     [ "BARO_AMSYS_SENDER_ID", "abi__sender__ids_8h.html#a8294e1886eb0de4db937a9cdf5361389", null ],
     [ "BARO_BMP3_SENDER_ID", "abi__sender__ids_8h.html#a81cbaff3f58fa0319e6cffeea2807031", null ],
     [ "BARO_BMP_SENDER_ID", "abi__sender__ids_8h.html#a2cc5270109122aa48f77ffe9af858ed3", null ],
