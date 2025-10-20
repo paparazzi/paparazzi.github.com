@@ -151,7 +151,7 @@ var searchData=
   ['actuators_5ft4_5fextra_5fdata_5fin_148',['actuators_t4_extra_data_in',['../actuators__t4__uart_8c.html#a5b529c4a7b9b0101207512d1ba21f5f2',1,'actuators_t4_uart.c']]],
   ['actuators_5ft4_5fextra_5fdata_5fout_149',['actuators_t4_extra_data_out',['../actuators__t4__uart_8c.html#a60d2bb49d635a9ca3d7b3f5318ebfd01',1,'actuators_t4_uart.c']]],
   ['actuators_5ft4_5fextra_5fdata_5fout_5flocal_150',['actuators_t4_extra_data_out_local',['../chibios_2modules_2actuators_2actuators__t4__arch_8c.html#a43344b2897ee46dc745ad357c4dd91b3',1,'actuators_t4_extra_data_out_local:&#160;actuators_t4_arch.c'],['../sim_2modules_2actuators_2actuators__t4__arch_8c.html#a43344b2897ee46dc745ad357c4dd91b3',1,'actuators_t4_extra_data_out_local:&#160;actuators_t4_arch.c']]],
-  ['actuators_5ft4_5fin_151',['actuators_t4_in',['../actuators__t4__uart_8c.html#a795d894b7b52a2900135bfaf59a131b2',1,'actuators_t4_in:&#160;actuators_t4_uart.c'],['../aoa__t4_8c.html#ab8a2d1923dfcdf10dcbadf426f32b321',1,'ACTUATORS_T4_IN:&#160;aoa_t4.c']]],
+  ['actuators_5ft4_5fin_151',['actuators_t4_in',['../aoa__t4_8c.html#ab8a2d1923dfcdf10dcbadf426f32b321',1,'ACTUATORS_T4_IN:&#160;aoa_t4.c'],['../actuators__t4__uart_8c.html#a795d894b7b52a2900135bfaf59a131b2',1,'actuators_t4_in:&#160;actuators_t4_uart.c']]],
   ['actuators_5ft4_5fin_5flocal_152',['actuators_t4_in_local',['../aoa__t4_8c.html#a80afb3d401681b693e9a5b3528024372',1,'aoa_t4.c']]],
   ['actuators_5ft4_5flast_5fts_153',['actuators_t4_last_ts',['../actuators__t4__uart_8c.html#a31439aa43008efd9e3e83f355f2b8049',1,'actuators_t4_uart.c']]],
   ['actuators_5ft4_5fmessage_5ffrequency_5fin_154',['actuators_t4_message_frequency_in',['../actuators__t4__uart_8c.html#af35fc6af7bea01fb85d79db94d75692d',1,'actuators_t4_uart.c']]],

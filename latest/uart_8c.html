@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('uart_8c.html',''); initResizable(); })
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for uart.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,15 +105,41 @@ $(document).ready(function(){initNavTree('uart_8c.html',''); initResizable(); })
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c__incl.png" border="0" usemap="#asw_2airborne_2mcu__periph_2uart_8c" alt=""/></div>
 <map name="asw_2airborne_2mcu__periph_2uart_8c" id="asw_2airborne_2mcu__periph_2uart_8c">
-<area shape="rect" title=" " alt="" coords="211,5,390,45"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="231,93,371,119"/>
-<area shape="poly" title=" " alt="" coords="303,46,303,79,298,79,298,46"/>
-<area shape="rect" title=" " alt="" coords="5,167,180,192"/>
-<area shape="poly" title=" " alt="" coords="268,121,140,165,139,160,266,116"/>
-<area shape="rect" title=" " alt="" coords="205,167,397,192"/>
-<area shape="poly" title=" " alt="" coords="303,119,303,153,298,153,298,119"/>
-<area shape="rect" title=" " alt="" coords="421,167,476,192"/>
-<area shape="poly" title=" " alt="" coords="326,116,413,158,411,163,323,121"/>
+<area shape="rect" title=" " alt="" coords="984,5,1163,45"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="869,328,1009,353"/>
+<area shape="poly" title=" " alt="" coords="1092,44,1125,90,1158,151,1169,185,1173,219,1169,251,1153,282,1133,297,1101,310,1023,329,1022,324,1100,305,1130,292,1149,278,1163,250,1168,219,1163,186,1153,153,1121,93,1088,47"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="887,93,1100,119"/>
+<area shape="poly" title=" " alt="" coords="1056,47,1017,85,1014,82,1052,44"/>
+<area shape="rect" title=" " alt="" coords="956,401,1130,427"/>
+<area shape="poly" title=" " alt="" coords="957,351,1016,391,1013,395,954,356"/>
+<area shape="rect" title=" " alt="" coords="739,401,931,427"/>
+<area shape="poly" title=" " alt="" coords="924,356,865,395,862,391,921,351"/>
+<area shape="rect" title=" " alt="" coords="61,401,116,427"/>
+<area shape="poly" title=" " alt="" coords="869,351,130,412,129,407,868,345"/>
+<area shape="poly" title=" " alt="" coords="1016,116,1061,145,1109,184,1127,207,1139,232,1141,257,1131,281,1109,304,1082,320,1053,331,1023,338,1022,332,1051,326,1080,315,1105,299,1126,279,1136,256,1134,233,1123,210,1105,188,1058,149,1013,121"/>
+<area shape="poly" title=" " alt="" coords="887,109,670,115,540,123,408,135,281,154,169,180,120,196,79,214,45,234,20,256,11,272,8,289,11,307,18,325,42,361,68,390,64,393,37,364,14,328,6,309,3,289,6,270,16,253,42,230,76,209,119,191,167,175,280,149,407,130,540,117,669,110,887,104"/>
+<area shape="rect" title=" " alt="" coords="922,167,1066,207"/>
+<area shape="poly" title=" " alt="" coords="996,119,996,153,991,153,991,119"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="635,174,846,199"/>
+<area shape="poly" title=" " alt="" coords="958,121,791,172,790,167,956,116"/>
+<area shape="rect" title=" " alt="" coords="845,255,932,280"/>
+<area shape="poly" title=" " alt="" coords="763,197,856,246,853,250,761,202"/>
+<area shape="rect" title=" " alt="" coords="956,255,1116,280"/>
+<area shape="poly" title=" " alt="" coords="784,197,981,249,979,254,783,202"/>
+<area shape="rect" title=" " alt="" coords="258,255,414,280"/>
+<area shape="poly" title=" " alt="" coords="682,202,409,255,408,249,681,197"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="30,255,234,280"/>
+<area shape="poly" title=" " alt="" coords="652,202,235,256,234,250,652,197"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="438,255,637,280"/>
+<area shape="poly" title=" " alt="" coords="712,202,581,252,579,247,710,197"/>
+<area shape="rect" title=" " alt="" coords="660,255,820,280"/>
+<area shape="poly" title=" " alt="" coords="743,200,743,241,738,241,738,200"/>
+<area shape="poly" title=" " alt="" coords="131,281,116,329,98,389,93,387,111,327,126,279"/>
+<area shape="rect" title=" " alt="" coords="126,328,288,353"/>
+<area shape="poly" title=" " alt="" coords="146,278,187,317,183,320,142,282"/>
+<area shape="poly" title=" " alt="" coords="603,277,861,323,860,328,602,283"/>
+<area shape="rect" title=" " alt="" coords="446,328,630,353"/>
+<area shape="poly" title=" " alt="" coords="540,280,540,314,535,314,535,280"/>
 </map>
 </div>
 </div>
@@ -120,6 +147,8 @@ $(document).ready(function(){initNavTree('uart_8c.html',''); initResizable(); })
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5340cfff755b96c4b8176adcf62dd675" id="r_a5340cfff755b96c4b8176adcf62dd675"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="cc2500__frsky__x_8c.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#a5340cfff755b96c4b8176adcf62dd675">send_uartx_err</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *trans, struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uart</a>)</td></tr>
+<tr class="separator:a5340cfff755b96c4b8176adcf62dd675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e8feb3382a1a640eae70f273ac88b3" id="r_a15e8feb3382a1a640eae70f273ac88b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#a15e8feb3382a1a640eae70f273ac88b3">send_uart_err</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *trans, struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
 <tr class="separator:a15e8feb3382a1a640eae70f273ac88b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43baf084a9bcc968ef00790e25becbb7" id="r_a43baf084a9bcc968ef00790e25becbb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7">uart_periph_init</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
@@ -177,17 +206,93 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uart_8c_source.html#l00076">76</a> of file <a class="el" href="uart_8c_source.html">uart.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="uart_8c_source.html#l00028">send_uartx_err()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart_8c_a15e8feb3382a1a640eae70f273ac88b3_cgraph.png" border="0" usemap="#auart_8c_a15e8feb3382a1a640eae70f273ac88b3_cgraph" alt=""/></div>
+<map name="auart_8c_a15e8feb3382a1a640eae70f273ac88b3_cgraph" id="auart_8c_a15e8feb3382a1a640eae70f273ac88b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,116,31"/>
+<area shape="rect" href="uart_8c.html#a5340cfff755b96c4b8176adcf62dd675" title=" " alt="" coords="164,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="116,15,150,15,150,21,116,21"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a15e8feb3382a1a640eae70f273ac88b3_icgraph.png" border="0" usemap="#auart_8c_a15e8feb3382a1a640eae70f273ac88b3_icgraph" alt=""/></div>
 <map name="auart_8c_a15e8feb3382a1a640eae70f273ac88b3_icgraph" id="auart_8c_a15e8feb3382a1a640eae70f273ac88b3_icgraph">
 <area shape="rect" title=" " alt="" coords="413,13,524,38"/>
+<area shape="rect" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="241,13,365,38"/>
+<area shape="poly" title=" " alt="" coords="400,28,366,28,366,23,400,23"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="5,5,193,45"/>
+<area shape="poly" title=" " alt="" coords="228,28,193,28,193,23,228,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5340cfff755b96c4b8176adcf62dd675" name="a5340cfff755b96c4b8176adcf62dd675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5340cfff755b96c4b8176adcf62dd675">&#9670;&#160;</a></span>send_uartx_err()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="cc2500__frsky__x_8c.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> send_uartx_err </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="uart_8c_source.html#l00028">28</a> of file <a class="el" href="uart_8c_source.html">uart.c</a>.</p>
+
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="uart_8c_source.html#l00076">send_uart_err()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart_8c_a5340cfff755b96c4b8176adcf62dd675_icgraph.png" border="0" usemap="#auart_8c_a5340cfff755b96c4b8176adcf62dd675_icgraph" alt=""/></div>
+<map name="auart_8c_a5340cfff755b96c4b8176adcf62dd675_icgraph" id="auart_8c_a5340cfff755b96c4b8176adcf62dd675_icgraph">
+<area shape="rect" title=" " alt="" coords="572,13,691,38"/>
+<area shape="rect" href="uart_8c.html#a15e8feb3382a1a640eae70f273ac88b3" title=" " alt="" coords="413,13,524,38"/>
+<area shape="poly" title=" " alt="" coords="558,28,524,28,524,23,558,23"/>
 <area shape="rect" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="241,13,365,38"/>
 <area shape="poly" title=" " alt="" coords="400,28,366,28,366,23,400,23"/>
 <area shape="rect" href="high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="5,5,193,45"/>
@@ -241,11 +346,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a09c2a7abffc384d32d47fe4c24482d8e_icgraph.png" border="0" usemap="#auart_8c_a09c2a7abffc384d32d47fe4c24482d8e_icgraph" alt=""/></div>
 <map name="auart_8c_a09c2a7abffc384d32d47fe4c24482d8e_icgraph" id="auart_8c_a09c2a7abffc384d32d47fe4c24482d8e_icgraph">
 <area shape="rect" title="Check UART for available chars in receive buffer." alt="" coords="413,13,564,38"/>
@@ -295,11 +400,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00034">UART_TX_BUFFER_SIZE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00738">send_buffer_to_uart()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, and <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_ae8f64b02e6cc8b052d1d29321b7224de_icgraph.png" border="0" usemap="#auart_8c_ae8f64b02e6cc8b052d1d29321b7224de_icgraph" alt=""/></div>
 <map name="auart_8c_ae8f64b02e6cc8b052d1d29321b7224de_icgraph" id="auart_8c_ae8f64b02e6cc8b052d1d29321b7224de_icgraph">
 <area shape="rect" title=" " alt="" coords="1117,149,1288,175"/>
@@ -349,11 +454,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_afa153121a413694044ed9a969b771512_icgraph.png" border="0" usemap="#auart_8c_afa153121a413694044ed9a969b771512_icgraph" alt=""/></div>
 <map name="auart_8c_afa153121a413694044ed9a969b771512_icgraph" id="auart_8c_afa153121a413694044ed9a969b771512_icgraph">
 <area shape="rect" title=" " alt="" coords="413,13,504,38"/>
@@ -387,11 +492,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="uart_8c_source.html#l00076">send_uart_err()</a>, <a class="el" href="uart_8c_source.html#l00181">uart_char_available()</a>, <a class="el" href="uart_8c_source.html#l00151">uart_check_free_space()</a>, <a class="el" href="uart_8c_source.html#l00174">uart_getch()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00280">uart_periph_set_baudrate()</a>, <a class="el" href="uart_8c_source.html#l00161">uart_put_buffer()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00306">uart_put_byte()</a>, and <a class="el" href="uart_8c_source.html#l00170">uart_send_message()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l01095">high_speed_logger_direct_memory_init()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a43baf084a9bcc968ef00790e25becbb7_cgraph.png" border="0" usemap="#auart_8c_a43baf084a9bcc968ef00790e25becbb7_cgraph" alt=""/></div>
 <map name="auart_8c_a43baf084a9bcc968ef00790e25becbb7_cgraph" id="auart_8c_a43baf084a9bcc968ef00790e25becbb7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,203,129,228"/>
@@ -413,6 +518,8 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="77,227,92,252,115,283,144,313,179,336,212,348,248,357,321,363,390,360,451,352,452,357,391,366,320,369,247,362,211,353,176,340,140,317,110,286,88,255,73,230"/>
 <area shape="rect" href="uart_8c.html#a28a378d8f12e11fc3f4dac7eb9252d6e" title=" " alt="" coords="203,403,355,428"/>
 <area shape="poly" title=" " alt="" coords="76,227,89,259,111,300,141,344,179,381,203,395,201,400,176,385,137,347,107,303,85,261,71,229"/>
+<area shape="rect" href="uart_8c.html#a5340cfff755b96c4b8176adcf62dd675" title=" " alt="" coords="460,55,579,80"/>
+<area shape="poly" title=" " alt="" coords="334,65,446,65,446,70,334,70"/>
 <area shape="rect" href="serial__port_8c.html#af25145952d87a0f805da05e7ceb3e5a8" title=" " alt="" coords="428,228,611,253"/>
 <area shape="poly" title=" " alt="" coords="372,253,414,248,414,254,373,258"/>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title=" " alt="" coords="452,277,587,303"/>
@@ -430,11 +537,11 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="340,318,450,329,449,335,339,323"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a43baf084a9bcc968ef00790e25becbb7_icgraph.png" border="0" usemap="#auart_8c_a43baf084a9bcc968ef00790e25becbb7_icgraph" alt=""/></div>
 <map name="auart_8c_a43baf084a9bcc968ef00790e25becbb7_icgraph" id="auart_8c_a43baf084a9bcc968ef00790e25becbb7_icgraph">
 <area shape="rect" title=" " alt="" coords="241,13,365,38"/>
@@ -480,11 +587,11 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="uart_8c_source.html#l00194">194</a> of file <a class="el" href="uart_8c_source.html">uart.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__sbus_8c_source.html#l00051">actuators_sbus_init()</a>, and <a class="el" href="sbus__common_8c_source.html#l00074">sbus_common_init()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_ad6430a7fdc6553a4696a873cc5ff3507_icgraph.png" border="0" usemap="#auart_8c_ad6430a7fdc6553a4696a873cc5ff3507_icgraph" alt=""/></div>
 <map name="auart_8c_ad6430a7fdc6553a4696a873cc5ff3507_icgraph" id="auart_8c_ad6430a7fdc6553a4696a873cc5ff3507_icgraph">
 <area shape="rect" title=" " alt="" coords="364,23,505,63"/>
@@ -544,11 +651,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00306">uart_put_byte()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__ostrich_8c_source.html#l00096">actuators_ostrich_periodic()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="syslink__dl_8c_source.html#l00042">send_message()</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00125">sts3032_event()</a>, and <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a70569087d789605493bce97141e1664f_cgraph.png" border="0" usemap="#auart_8c_a70569087d789605493bce97141e1664f_cgraph" alt=""/></div>
 <map name="auart_8c_a70569087d789605493bce97141e1664f_cgraph" id="auart_8c_a70569087d789605493bce97141e1664f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,127,31"/>
@@ -556,11 +663,11 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="127,15,161,15,161,21,127,21"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a70569087d789605493bce97141e1664f_icgraph.png" border="0" usemap="#auart_8c_a70569087d789605493bce97141e1664f_icgraph" alt=""/></div>
 <map name="auart_8c_a70569087d789605493bce97141e1664f_icgraph" id="auart_8c_a70569087d789605493bce97141e1664f_icgraph">
 <area shape="rect" title=" " alt="" coords="989,121,1111,146"/>
@@ -623,11 +730,11 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="uart_8c_source.html#l00170">170</a> of file <a class="el" href="uart_8c_source.html">uart.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__faulhaber_8c_source.html#l00076">faulhaber_send_command()</a>, and <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8c_a28a378d8f12e11fc3f4dac7eb9252d6e_icgraph.png" border="0" usemap="#auart_8c_a28a378d8f12e11fc3f4dac7eb9252d6e_icgraph" alt=""/></div>
 <map name="auart_8c_a28a378d8f12e11fc3f4dac7eb9252d6e_icgraph" id="auart_8c_a28a378d8f12e11fc3f4dac7eb9252d6e_icgraph">
 <area shape="rect" title=" " alt="" coords="484,46,636,71"/>
@@ -650,7 +757,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="uart_8c.html">uart.c</a></li>
-    <li class="footer">Generated on Sun Oct 19 2025 18:01:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Oct 20 2025 15:04:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

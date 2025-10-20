@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('pprz__random_8c_source.html',''); init
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="pprz__random_8h.html">pprz_random.h</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifdef BOARD_CONFIG</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#if (defined BOARD_CONFIG) &amp;&amp; (!defined HITL)</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="sys__time_8h.html">mcu_periph/sys_time.h</a>&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('pprz__random_8c_source.html',''); init
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="pprz__random_8c.html#a694be11ffe08b609fe1b268a9e469aa2">   35</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pprz__random_8c.html#a694be11ffe08b609fe1b268a9e469aa2">init_random</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef BOARD_CONFIG</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if (defined BOARD_CONFIG) &amp;&amp; (!defined HITL)</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">srand</a>(<a class="code hl_function" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">get_sys_time_msec</a>());</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">srand</a>(<a class="code hl_variable" href="eff__scheduling__rotwing__V2_8c.html#a2652b019234e09e83322c0255d4e744a">time</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NULL</a>));</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('pprz__random_8c_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__random_8c.html">pprz_random.c</a></li>
-    <li class="footer">Generated on Sun Oct 19 2025 18:01:32 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Oct 20 2025 15:04:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

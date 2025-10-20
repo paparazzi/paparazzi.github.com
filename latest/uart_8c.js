@@ -1,6 +1,7 @@
 var uart_8c =
 [
     [ "send_uart_err", "uart_8c.html#a15e8feb3382a1a640eae70f273ac88b3", null ],
+    [ "send_uartx_err", "uart_8c.html#a5340cfff755b96c4b8176adcf62dd675", null ],
     [ "uart_arch_init", "uart_8c.html#ae9ffb2e3ffbac1a594bc42e60f15a33d", null ],
     [ "uart_char_available", "uart_8c.html#a09c2a7abffc384d32d47fe4c24482d8e", null ],
     [ "uart_check_free_space", "uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de", null ],
