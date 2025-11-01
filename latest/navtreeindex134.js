@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__nav_lace.html#module_load_example__nav_lace":[1,342,0],
+"module__nav_lace.html#module_xml__nav_lace":[1,342,1,0],
+"module__nav_launcher.html":[1,343],
 "module__nav_launcher.html#module_load_example__nav_launcher":[1,343,0],
 "module__nav_launcher.html#module_xml__nav_launcher":[1,343,0,0],
 "module__nav_line.html":[1,344],
@@ -106,7 +109,8 @@ var NAVTREEINDEX134 =
 "module__obstacle_avoidance.html":[1,506],
 "module__obstacle_avoidance.html#functions__obstacle_avoidance":[1,506,1],
 "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance":[1,506,0],
-"module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,506,1,0],
+"module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,506,1,1],
+"module__obstacle_avoidance.html#periodic_functions":[1,506,1,0],
 "module__obstacle_rover.html":[1,507],
 "module__obstacle_rover.html#configuration__obstacle_rover":[1,507,1],
 "module__obstacle_rover.html#functions__obstacle_rover":[1,507,2],
@@ -135,7 +139,6 @@ var NAVTREEINDEX134 =
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,107,2,0],
 "module__optical_flow_mateksys_3901_l0x.html":[1,370],
 "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,370,1],
-"module__optical_flow_mateksys_3901_l0x.html#configure":[1,370,1,0],
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,370,2],
 "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,370,0],
 "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,370,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky":[1,375,1],
 "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky":[1,375,2],
 "module__radio_control_cc2500_frsky.html#module_load_example__radio_control_cc2500_frsky":[1,375,0],
-"module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky":[1,375,2,0],
-"module__radio_control_common.html":[1,376],
-"module__radio_control_common.html#configuration__radio_control_common":[1,376,1],
-"module__radio_control_common.html#functions__radio_control_common":[1,376,2]
+"module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky":[1,375,2,0]
 };

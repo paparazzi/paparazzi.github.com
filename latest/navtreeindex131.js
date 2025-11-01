@@ -1,8 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__gps_skytraq.html#functions__gps_skytraq":[1,169,2],
-"module__gps_skytraq.html#module_load_example__gps_skytraq":[1,169,0],
-"module__gps_skytraq.html#module_xml__gps_skytraq":[1,169,2,0],
 "module__gps_uavcan.html":[1,170],
 "module__gps_uavcan.html#configuration__gps_uavcan":[1,170,1],
 "module__gps_uavcan.html#functions__gps_uavcan":[1,170,2],
@@ -213,14 +210,14 @@ var NAVTREEINDEX131 =
 "module__imu_aspirin_i2c_v1_0.html":[1,198],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,198,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,198,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,198,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,199],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,199,0],
+"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,199,0,0],
 "module__imu_aspirin_v1_0.html":[1,200],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,200,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,200,0,0],
 "module__imu_aspirin_v1_5.html":[1,201],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,201,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,201,0,0],
 "module__imu_aspirin_v2_1.html":[1,202],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,202,0],
 "module__imu_aspirin_v2_2.html":[1,203],
@@ -249,5 +246,8 @@ var NAVTREEINDEX131 =
 "module__imu_common.html#functions__imu_common":[1,208,2],
 "module__imu_common.html#module_load_example__imu_common":[1,208,0],
 "module__imu_common.html#module_xml__imu_common":[1,208,2,0],
-"module__imu_cube.html":[1,209]
+"module__imu_cube.html":[1,209],
+"module__imu_cube.html#functions__imu_cube":[1,209,1],
+"module__imu_cube.html#module_load_example__imu_cube":[1,209,0],
+"module__imu_cube.html#module_xml__imu_cube":[1,209,1,0]
 };

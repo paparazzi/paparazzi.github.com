@@ -1,5 +1,8 @@
 var NAVTREEINDEX136 =
 {
+"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,465,2],
+"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,465,0],
+"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,465,2,0],
 "module__switch_servo.html":[1,467],
 "module__switch_servo.html#configuration__switch_servo":[1,467,1],
 "module__switch_servo.html#functions__switch_servo":[1,467,2],
@@ -208,12 +211,9 @@ var NAVTREEINDEX136 =
 "module__udp.html#module_load_example__udp":[1,289,0],
 "module__udp.html#module_xml__udp":[1,289,0,0],
 "module__usb_serial_stm32_example1.html":[1,56],
-"module__usb_serial_stm32_example1.html#event_functions":[1,56,1,1],
 "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1":[1,56,1],
-"module__usb_serial_stm32_example1.html#headers":[1,56,1,2],
-"module__usb_serial_stm32_example1.html#init_functions":[1,56,1,0],
 "module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1":[1,56,0],
-"module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1":[1,56,1,3],
+"module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1":[1,56,1,0],
 "module__usb_serial_stm32_example2.html":[1,57],
 "module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2":[1,57,1],
 "module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2":[1,57,0],

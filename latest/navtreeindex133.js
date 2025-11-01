@@ -1,5 +1,9 @@
 var NAVTREEINDEX133 =
 {
+"module__led_safety_status.html#module_xml__led_safety_status":[1,265,1,0],
+"module__lidar_correction.html":[1,263],
+"module__lidar_correction.html#configuration__lidar_correction":[1,263,1],
+"module__lidar_correction.html#functions__lidar_correction":[1,263,2],
 "module__lidar_correction.html#module_load_example__lidar_correction":[1,263,0],
 "module__lidar_correction.html#module_xml__lidar_correction":[1,263,2,0],
 "module__lidar_lite.html":[1,258],
@@ -166,7 +170,6 @@ var NAVTREEINDEX133 =
 "module__meteo_france_daq.html#module_load_example__meteo_france_daq":[1,306,0],
 "module__meteo_france_daq.html#module_xml__meteo_france_daq":[1,306,2,0],
 "module__meteo_stick.html":[1,307],
-"module__meteo_stick.html#af_section":[1,307,1,0],
 "module__meteo_stick.html#configuration__meteo_stick":[1,307,1],
 "module__meteo_stick.html#functions__meteo_stick":[1,307,2],
 "module__meteo_stick.html#module_load_example__meteo_stick":[1,307,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__nav_hybrid.html#module_load_example__nav_hybrid":[1,341,0],
 "module__nav_hybrid.html#module_xml__nav_hybrid":[1,341,2,0],
 "module__nav_lace.html":[1,342],
-"module__nav_lace.html#functions__nav_lace":[1,342,1],
-"module__nav_lace.html#module_load_example__nav_lace":[1,342,0],
-"module__nav_lace.html#module_xml__nav_lace":[1,342,1,0],
-"module__nav_launcher.html":[1,343]
+"module__nav_lace.html#functions__nav_lace":[1,342,1]
 };
