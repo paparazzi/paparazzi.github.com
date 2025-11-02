@@ -1,36 +1,40 @@
 <map id="baro_event" name="baro_event">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,258,100,283"/>
-<area shape="rect" id="Node000002" href="$bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842" title=" " alt="" coords="162,106,281,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,256,194,139,198,143,70,260"/>
-<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="148,331,295,357"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="78,281,149,316,169,324,167,329,147,321,76,286"/>
-<area shape="rect" id="Node000008" href="$ms5611__i2c_8c.html#a14e55ee13fb38c32b8c0bb6146695ca9" title=" " alt="" coords="149,233,293,258"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="100,261,135,256,136,261,101,266"/>
-<area shape="rect" id="Node000013" href="$ms5611__spi_8c.html#a7b23274ad291a9e686044d66f378d91d" title=" " alt="" coords="149,282,293,307"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="101,275,136,280,135,285,100,280"/>
-<area shape="rect" id="Node000003" href="$bmp085_8c.html#a0ab1487b3b01190106885dcb37d195b1" title="Apply temp calibration and sensor calibration to raw measurement to get Pa (from BMP085 datasheet)" alt="" coords="343,5,513,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,104,342,55,358,48,360,53,344,60,247,108"/>
-<area shape="rect" id="Node000004" href="$bmp085_8c.html#a51c3006367e8c704b3b0f2f98d473124" title=" " alt="" coords="343,69,513,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="281,108,328,101,329,106,282,113"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="377,134,479,159"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="281,124,364,135,363,141,281,129"/>
-<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="575,159,669,185"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="480,151,562,162,562,167,479,156"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="238,230,284,200,342,168,363,160,365,165,344,173,286,204,241,235"/>
-<area shape="rect" id="Node000009" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="370,183,486,209"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="275,230,360,209,361,215,276,235"/>
-<area shape="rect" id="Node000010" href="$ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1" title="Calculate temperature and compensated pressure for MS5607." alt="" coords="375,233,481,258"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="293,243,360,243,360,248,293,248"/>
-<area shape="rect" id="Node000011" href="$ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4" title="Calculate temperature and compensated pressure for MS5611." alt="" coords="375,282,481,307"/>
-<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="276,255,362,276,361,281,275,261"/>
-<area shape="rect" id="Node000012" href="$ms5611_8c.html#aadeaf57da29112210a74857311975e0a" title="Check if CRC of PROM data is OK." alt="" coords="346,331,510,357"/>
-<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="273,256,296,267,311,280,321,293,330,305,344,316,359,324,357,329,341,321,326,308,316,296,307,283,293,272,270,260"/>
-<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="486,186,562,177,562,182,487,192"/>
-<area shape="poly" id="edge15_Node000013_Node000010" title=" " alt="" coords="275,279,361,259,362,264,276,285"/>
-<area shape="poly" id="edge16_Node000013_Node000011" title=" " alt="" coords="293,292,360,292,360,297,293,297"/>
-<area shape="poly" id="edge17_Node000013_Node000012" title=" " alt="" coords="276,305,361,325,360,331,275,310"/>
-<area shape="rect" id="Node000014" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="381,381,475,406"/>
-<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="273,305,296,316,311,330,321,343,330,355,344,367,369,379,367,383,341,372,326,359,316,346,308,333,293,321,271,310"/>
-<area shape="rect" id="Node000015" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="561,381,683,406"/>
-<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="475,391,548,391,548,396,475,396"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,282,100,307"/>
+<area shape="rect" id="Node000002" href="$bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842" title=" " alt="" coords="175,106,293,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,280,208,139,212,143,69,283"/>
+<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="161,331,307,357"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="101,305,174,325,173,330,99,310"/>
+<area shape="rect" id="Node000008" href="$ms5611__i2c_8c.html#a14e55ee13fb38c32b8c0bb6146695ca9" title=" " alt="" coords="162,233,306,258"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="99,279,173,259,174,264,101,285"/>
+<area shape="rect" id="Node000013" href="$ms5611__spi_8c.html#a7b23274ad291a9e686044d66f378d91d" title=" " alt="" coords="162,282,306,307"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="100,292,148,292,148,297,100,297"/>
+<area shape="rect" id="Node000016" href="$median__filter_8h.html#a299781c28e551a49077251f79ddf6487" title=" " alt="" coords="148,405,320,430"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="71,306,150,366,198,396,196,400,146,370,68,310"/>
+<area shape="rect" id="Node000003" href="$bmp085_8c.html#a0ab1487b3b01190106885dcb37d195b1" title="Apply temp calibration and sensor calibration to raw measurement to get Pa (from BMP085 datasheet)" alt="" coords="368,69,539,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,108,354,100,355,105,294,113"/>
+<area shape="rect" id="Node000004" href="$bmp085_8c.html#a51c3006367e8c704b3b0f2f98d473124" title=" " alt="" coords="368,5,539,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="260,103,367,55,384,48,386,53,369,60,263,108"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="402,134,505,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="294,124,389,136,388,141,293,129"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="601,159,694,185"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="505,151,588,162,587,167,505,156"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="253,230,304,200,367,168,388,160,390,165,369,173,306,204,256,235"/>
+<area shape="rect" id="Node000009" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="395,183,511,209"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="291,230,382,209,383,214,292,235"/>
+<area shape="rect" id="Node000010" href="$ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1" title="Calculate temperature and compensated pressure for MS5607." alt="" coords="400,233,507,258"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="306,243,386,243,386,248,306,248"/>
+<area shape="rect" id="Node000011" href="$ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4" title="Calculate temperature and compensated pressure for MS5611." alt="" coords="400,282,507,307"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="292,255,387,277,386,282,291,261"/>
+<area shape="rect" id="Node000012" href="$ms5611_8c.html#aadeaf57da29112210a74857311975e0a" title="Check if CRC of PROM data is OK." alt="" coords="371,331,535,357"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="296,256,321,267,337,280,346,292,355,305,369,316,384,324,382,329,367,321,351,308,342,295,333,283,319,272,294,260"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="511,186,587,177,588,182,512,192"/>
+<area shape="poly" id="edge15_Node000013_Node000010" title=" " alt="" coords="291,279,386,258,387,263,292,285"/>
+<area shape="poly" id="edge16_Node000013_Node000011" title=" " alt="" coords="306,292,386,292,386,297,306,297"/>
+<area shape="poly" id="edge17_Node000013_Node000012" title=" " alt="" coords="292,305,383,326,382,331,291,310"/>
+<area shape="rect" id="Node000014" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="407,381,500,406"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="296,305,321,316,337,329,346,342,355,354,369,366,395,378,392,382,367,370,351,358,342,345,333,333,319,321,294,310"/>
+<area shape="rect" id="Node000015" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="587,381,708,406"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="500,391,573,391,573,396,500,396"/>
+<area shape="rect" id="Node000017" href="$median__filter_8h.html#ac22bc67043369c2e3322fbcbbe6b7b3f" title=" " alt="" coords="379,430,527,455"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="321,425,366,430,365,435,320,430"/>
 </map>
