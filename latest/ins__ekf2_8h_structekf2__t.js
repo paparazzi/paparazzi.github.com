@@ -11,7 +11,6 @@ var ins__ekf2_8h_structekf2__t =
     [ "gyro_valid", "ins__ekf2_8h.html#a471a691dac4d300bd626761e058f09d0", null ],
     [ "ltp_def", "ins__ekf2_8h.html#a89446cc87a77abcb41b8fb846ae76b91", null ],
     [ "ltp_stamp", "ins__ekf2_8h.html#adbb33bb35b550a6564495cba05eb26cb", null ],
-    [ "mag_fusion_type", "ins__ekf2_8h.html#a109e056c613f8ea2b594c07ae903cff2", null ],
     [ "qnh", "ins__ekf2_8h.html#ae14072e84b6532f202fb933bc35bb9f7", null ],
     [ "quat_reset_counter", "ins__ekf2_8h.html#ae372cc2d584068cad7143e5b555812c9", null ],
     [ "rel_heading", "ins__ekf2_8h.html#aa275ab5d2d555dc3a66d873c38be91f5", null ],

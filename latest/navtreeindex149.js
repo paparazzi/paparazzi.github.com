@@ -1,7 +1,5 @@
 var NAVTREEINDEX149 =
 {
-"nav__rosette_8c_source.html":[12,0,1,0,6,47,42],
-"nav__rosette_8h.html":[12,0,1,0,6,47,43],
 "nav__rosette_8h.html#a4940fa6558c56481b61bbfc5625f4bdb":[12,0,1,0,6,47,43,2],
 "nav__rosette_8h.html#a4dddc580a598efa37bc8763aefe23cca":[12,0,1,0,6,47,43,0],
 "nav__rosette_8h.html#ab7578e518a93fa5219898526d446a143":[12,0,1,0,6,47,43,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX149 =
 "nav__spiral__3D_8c.html#a873dce35270207ba0f11a3345a10ec33":[12,0,1,0,6,47,58,0,3],
 "nav__spiral__3D_8c.html#abd2eed9d21325682d7b568db5264ec55":[12,0,1,0,6,47,58,8],
 "nav__spiral__3D_8c.html#ae74f5cb87b5c8852073b2dfb7ee1337b":[12,0,1,0,6,47,58,0,9],
-"nav__spiral__3D_8c.html#aedf31b4b510940c3675eb0d6d6b3bc6a":[12,0,1,0,6,47,58,0,1]
+"nav__spiral__3D_8c.html#aedf31b4b510940c3675eb0d6d6b3bc6a":[12,0,1,0,6,47,58,0,1],
+"nav__spiral__3D_8c.html#structNavSpiral3D":[12,0,1,0,6,47,58,0],
+"nav__spiral__3D_8c_source.html":[12,0,1,0,6,47,58]
 };

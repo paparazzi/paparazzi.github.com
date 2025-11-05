@@ -1,7 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"module__actuators_uavcan.html#module_xml__actuators_uavcan":[1,21,1,0],
-"module__adc.html":[1,279],
 "module__adc.html#module_load_example__adc":[1,279,0],
 "module__adc.html#module_xml__adc":[1,279,0,0],
 "module__adc_generic.html":[1,23],
@@ -249,5 +247,7 @@ var NAVTREEINDEX128 =
 "module__battery_monitor.html#configuration__battery_monitor":[1,24,1],
 "module__battery_monitor.html#functions__battery_monitor":[1,24,2],
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,24,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,24,2,0]
+"module__battery_monitor.html#module_xml__battery_monitor":[1,24,2,0],
+"module__bebop_ae_awb.html":[1,58],
+"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,58,1]
 };

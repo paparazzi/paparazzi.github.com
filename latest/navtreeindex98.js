@@ -1,7 +1,5 @@
 var NAVTREEINDEX98 =
 {
-"jevois__mavlink_8c.html#structvisual__target__struct":[12,0,1,0,6,63,0,2,0],
-"jevois__mavlink_8c_source.html":[12,0,1,0,6,63,0,2],
 "jevois__mavlink_8h.html":[12,0,1,0,6,63,0,3],
 "jevois__mavlink_8h.html#a352c6db3477986156805a70c21ca0daf":[12,0,1,0,6,63,0,3,6],
 "jevois__mavlink_8h.html#a36dd739ad299e3b8d9ce634693155028":[12,0,1,0,6,63,0,3,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX98 =
 "l3g4200_8c.html#a67ca73762166a11d1b624e0b30c28039":[12,0,1,0,7,60,6],
 "l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe":[12,0,1,0,7,60,2],
 "l3g4200_8c.html#a98a6955be50d60c5afde8a6e87dd8373":[12,0,1,0,7,60,4],
-"l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f":[12,0,1,0,7,60,3]
+"l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f":[12,0,1,0,7,60,3],
+"l3g4200_8c.html#ae602f4d8dcd9c775da7e8233f1f193e5":[12,0,1,0,7,60,5],
+"l3g4200_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,60,0]
 };

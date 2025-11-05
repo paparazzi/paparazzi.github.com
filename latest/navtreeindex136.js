@@ -1,7 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,465,2],
-"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,465,0],
 "module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,465,2,0],
 "module__switch_servo.html":[1,467],
 "module__switch_servo.html#configuration__switch_servo":[1,467,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "module__video_usb_logger.html#module_xml__video_usb_logger":[1,76,2,0],
 "module__wedgebug.html":[1,528],
 "module__wedgebug.html#configuration__wedgebug":[1,528,1],
-"module__wedgebug.html#functions__wedgebug":[1,528,2]
+"module__wedgebug.html#functions__wedgebug":[1,528,2],
+"module__wedgebug.html#module_load_example__wedgebug":[1,528,0],
+"module__wedgebug.html#module_xml__wedgebug":[1,528,2,0]
 };

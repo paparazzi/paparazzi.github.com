@@ -1,7 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__direct_memory_logger.html#functions__direct_memory_logger":[1,268,2],
-"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,268,0],
 "module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,268,2,0],
 "module__distributed_circular_formation.html":[1,485],
 "module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,485,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX130 =
 "module__gps_skytraq.html#configuration__gps_skytraq":[1,169,1],
 "module__gps_skytraq.html#functions__gps_skytraq":[1,169,2],
 "module__gps_skytraq.html#module_load_example__gps_skytraq":[1,169,0],
-"module__gps_skytraq.html#module_xml__gps_skytraq":[1,169,2,0]
+"module__gps_skytraq.html#module_xml__gps_skytraq":[1,169,2,0],
+"module__gps_uavcan.html":[1,170],
+"module__gps_uavcan.html#configuration__gps_uavcan":[1,170,1]
 };

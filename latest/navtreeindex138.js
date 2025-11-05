@@ -1,7 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"modules_2sensors_2baro__MS5534A_8h_source.html":[12,0,1,0,6,63,45],
-"motor__mixing_8c.html":[12,0,1,0,6,0,34],
 "motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a":[12,0,1,0,6,0,34,15],
 "motor__mixing_8c.html#a181807730d4a375f848ba139813ce04f":[12,0,1,0,6,0,34,0],
 "motor__mixing_8c.html#a283724cdd12c661eabd1bbdb1af0a853":[12,0,1,0,6,0,34,18],
@@ -249,5 +247,7 @@ var NAVTREEINDEX138 =
 "mpu60x0__regs_8h.html#a2b7ce956fb494e1a661a645dba83afde":[12,0,1,0,7,99,24],
 "mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7":[12,0,1,0,7,99,78],
 "mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a145d8cfcc93d0cf1c2f18859d5abb0cf":[12,0,1,0,7,99,78,0],
-"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5":[12,0,1,0,7,99,78,3]
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5":[12,0,1,0,7,99,78,3],
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a67d78d4162c2dbc6ec1602dec54801e9":[12,0,1,0,7,99,78,1],
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7aaaee36a519978ac98aeeebb5c3dd4017":[12,0,1,0,7,99,78,2]
 };

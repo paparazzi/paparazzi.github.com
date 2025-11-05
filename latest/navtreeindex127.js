@@ -1,7 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"mission__common_8c.html#a8ae82a35d851ba67a7d044f4950db583":[12,0,1,0,6,45,4,18],
-"mission__common_8c.html#a9006fa3835ff34e0797a733b8423b00d":[12,0,1,0,6,45,4,16],
 "mission__common_8c.html#a92589aec12981186b683aaf6415778f9":[12,0,1,0,6,45,4,21],
 "mission__common_8c.html#a9f8c4705ccecb8f0cc59fd25216bff17":[12,0,1,0,6,45,4,10],
 "mission__common_8c.html#aa947aa0483f425d062f4991b16060d21":[12,0,1,0,6,45,4,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX127 =
 "module__actuators_t4_uart.html#module_xml__actuators_t4_uart":[1,20,2,0],
 "module__actuators_uavcan.html":[1,21],
 "module__actuators_uavcan.html#configuration__actuators_uavcan":[1,21,1],
-"module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,21,0]
+"module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,21,0],
+"module__actuators_uavcan.html#module_xml__actuators_uavcan":[1,21,1,0],
+"module__adc.html":[1,279]
 };

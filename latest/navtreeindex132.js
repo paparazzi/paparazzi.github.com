@@ -1,7 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__imu_disco.html":[1,210],
-"module__imu_disco.html#configuration__imu_disco":[1,210,1],
 "module__imu_disco.html#functions__imu_disco":[1,210,2],
 "module__imu_disco.html#module_load_example__imu_disco":[1,210,0],
 "module__imu_disco.html#module_xml__imu_disco":[1,210,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX132 =
 "module__laser_range_array.html#module_xml__laser_range_array":[1,386,2,0],
 "module__led_safety_status.html":[1,265],
 "module__led_safety_status.html#functions__led_safety_status":[1,265,1],
-"module__led_safety_status.html#module_load_example__led_safety_status":[1,265,0]
+"module__led_safety_status.html#module_load_example__led_safety_status":[1,265,0],
+"module__led_safety_status.html#module_xml__led_safety_status":[1,265,1,0],
+"module__lidar_correction.html":[1,263]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX189 =
 {
-"rotorcraft_2autopilot__firmware_8c.html#a261bd78437dcd415525d72019aac4a89":[12,0,1,0,3,2,8,18],
-"rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57":[12,0,1,0,3,2,8,7],
 "rotorcraft_2autopilot__firmware_8c.html#a3e41cabeeeed6f149349c977139aac36":[12,0,1,0,3,2,8,20],
 "rotorcraft_2autopilot__firmware_8c.html#a4a1fdd432ddb0277a0918cbd2095b4be":[12,0,1,0,3,2,8,3],
 "rotorcraft_2autopilot__firmware_8c.html#a4c54f26fedcf128f909c7cc5dc071353":[12,0,1,0,3,2,8,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX189 =
 "rotorcraft_2guidance_2guidance__v_8h.html#a9cf07bda38d537147bd9b5f8c90455a2":[12,0,1,0,3,2,0,24,21],
 "rotorcraft_2guidance_2guidance__v_8h.html#aa440d722029b89d1a28f821e7da4491b":[12,0,1,0,3,2,0,24,0,4],
 "rotorcraft_2guidance_2guidance__v_8h.html#ab35adf811b8455ea44837bb3be44776c":[12,0,1,0,3,2,0,24,22],
-"rotorcraft_2guidance_2guidance__v_8h.html#ab70c96d9d4fe5ee6f1329e048b22b1f5":[12,0,1,0,3,2,0,24,11]
+"rotorcraft_2guidance_2guidance__v_8h.html#ab70c96d9d4fe5ee6f1329e048b22b1f5":[12,0,1,0,3,2,0,24,11],
+"rotorcraft_2guidance_2guidance__v_8h.html#ab936848568bce529f8ddb2f33cf34f21":[12,0,1,0,3,2,0,24,0,3],
+"rotorcraft_2guidance_2guidance__v_8h.html#ac24445848e497e9b0da2913cecb0db73":[12,0,1,0,3,2,0,24,13]
 };

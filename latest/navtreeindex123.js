@@ -1,7 +1,5 @@
 var NAVTREEINDEX123 =
 {
-"mav__exercise_8h.html":[12,0,1,0,6,43,1],
-"mav__exercise_8h.html#a690413296d0585d73035e50d0a3f932b":[12,0,1,0,6,43,1,1],
 "mav__exercise_8h.html#a8e35250b1c1be255ad0bd7c7513a6825":[12,0,1,0,6,43,1,0],
 "mav__exercise_8h_source.html":[12,0,1,0,6,43,1],
 "mavlink_8c.html":[12,0,1,0,6,15,21],
@@ -249,5 +247,7 @@ var NAVTREEINDEX123 =
 "max7456_8h.html#a1d6d4401863cba472802654472781050":[12,0,1,0,6,20,1,2],
 "max7456_8h.html#a7b8eb5fd734424d9b1acb486f42bb2f3":[12,0,1,0,6,20,1,4],
 "max7456_8h.html#a945116b36ac06fdbb6f4aef0c5e7f7ca":[12,0,1,0,6,20,1,1],
-"max7456_8h.html#a9e352b8c2d17bfc367c3a4e1165deee6":[12,0,1,0,6,20,1,0]
+"max7456_8h.html#a9e352b8c2d17bfc367c3a4e1165deee6":[12,0,1,0,6,20,1,0],
+"max7456_8h.html#aa34d54866a11595ed5dcb12a5ebf59cc":[12,0,1,0,6,20,1,5],
+"max7456_8h.html#ab6448fcf9ae22d27c05ce676582075dc":[12,0,1,0,6,20,1,3]
 };

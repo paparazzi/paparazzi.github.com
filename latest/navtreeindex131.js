@@ -1,7 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__gps_uavcan.html":[1,170],
-"module__gps_uavcan.html#configuration__gps_uavcan":[1,170,1],
 "module__gps_uavcan.html#functions__gps_uavcan":[1,170,2],
 "module__gps_uavcan.html#module_load_example__gps_uavcan":[1,170,0],
 "module__gps_uavcan.html#module_xml__gps_uavcan":[1,170,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX131 =
 "module__imu_cube.html":[1,209],
 "module__imu_cube.html#functions__imu_cube":[1,209,1],
 "module__imu_cube.html#module_load_example__imu_cube":[1,209,0],
-"module__imu_cube.html#module_xml__imu_cube":[1,209,1,0]
+"module__imu_cube.html#module_xml__imu_cube":[1,209,1,0],
+"module__imu_disco.html":[1,210],
+"module__imu_disco.html#configuration__imu_disco":[1,210,1]
 };
