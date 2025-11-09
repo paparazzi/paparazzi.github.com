@@ -4,6 +4,8 @@ var mt9v117_8c =
       [ "data", "mt9v117_8c.html#a179d2822ff3fcd71444cd9787f83ffa5", null ],
       [ "len", "mt9v117_8c.html#a8c83c4a5bc39cdc0640290a6d25702fa", null ]
     ] ],
+    [ "MS9v117_CROP_HEIGHT", "mt9v117_8c.html#aa412318ca13326e7ed23807cc1136607", null ],
+    [ "MS9v117_CROP_WIDTH", "mt9v117_8c.html#a9c19bf44280ff7c08f71ca4598854269", null ],
     [ "MT9V117_PATCH_LINE_NUM", "mt9v117_8c.html#aff12eaae7882c9cc40820ce03704ac37", null ],
     [ "mt9v117_config", "mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad", null ],
     [ "mt9v117_init", "mt9v117_8c.html#aa6ecb42ade7b40f50bc3cf8f306583a7", null ],

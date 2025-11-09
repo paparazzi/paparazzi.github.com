@@ -1,5 +1,7 @@
 var NAVTREEINDEX167 =
 {
+"orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,50,0,4,0],
+"orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,50,0,4,2],
 "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,50,0,4,1],
 "orange__avoider_8c.html#ae966a608a1c5346beea4d7fc29f31e90":[12,0,1,0,6,50,0,1],
 "orange__avoider_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,50,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX167 =
 "paparazzi_messages.html#GPS_LLA":[2,0,54],
 "paparazzi_messages.html#GPS_RELPOS":[2,0,241],
 "paparazzi_messages.html#GPS_RXMRTCM":[2,0,240],
-"paparazzi_messages.html#GPS_SMALL":[2,0,242],
-"paparazzi_messages.html#GPS_SOL":[2,0,14],
-"paparazzi_messages.html#GROUND_CLASS":[2,2]
+"paparazzi_messages.html#GPS_SMALL":[2,0,242]
 };
