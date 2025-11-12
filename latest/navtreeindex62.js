@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"geo__mag_8h.html#acbcdb044d58bcc512ab1e87e31020d81":[12,0,1,0,6,26,1,1],
 "geo__mag_8h.html#ae67c77ac2666b0315efc4bfa7f72b8da":[12,0,1,0,6,26,1,0,0],
 "geo__mag_8h.html#aec0dcebf4bbd9a81dec21d155175ccce":[12,0,1,0,6,26,1,0,1],
 "geo__mag_8h.html#structGeoMag":[12,0,1,0,6,26,1,0],
@@ -39,14 +40,14 @@ var NAVTREEINDEX62 =
 "glide__wing__lock_8h.html#a500763dbb0f4ced17a8946d9335e260b":[12,0,1,0,6,27,1,1],
 "glide__wing__lock_8h.html#af688353e9277038d0e14900750e70f98":[12,0,1,0,6,27,1,0],
 "glide__wing__lock_8h_source.html":[12,0,1,0,6,27,1],
-"globals.html":[12,1,0,0],
 "globals.html":[12,1,0],
+"globals.html":[12,1,0,0],
 "globals_a.html":[12,1,0,1],
 "globals_b.html":[12,1,0,2],
 "globals_c.html":[12,1,0,3],
 "globals_d.html":[12,1,0,4],
-"globals_defs.html":[12,1,6],
 "globals_defs.html":[12,1,6,0],
+"globals_defs.html":[12,1,6],
 "globals_defs_a.html":[12,1,6,1],
 "globals_defs_b.html":[12,1,6,2],
 "globals_defs_c.html":[12,1,6,3],
@@ -124,8 +125,8 @@ var NAVTREEINDEX62 =
 "globals_eval_y.html":[12,1,5,23],
 "globals_eval_z.html":[12,1,5,24],
 "globals_f.html":[12,1,0,6],
-"globals_func.html":[12,1,1,0],
 "globals_func.html":[12,1,1],
+"globals_func.html":[12,1,1,0],
 "globals_func_a.html":[12,1,1,1],
 "globals_func_b.html":[12,1,1,2],
 "globals_func_c.html":[12,1,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "gpio__def_8h.html#a209f1a013588f481824ff0f57d2fc21e":[12,0,1,0,0,0,0,6,8],
 "gpio__def_8h.html#a20f88dbc839eb32b5fec903474befdd7":[12,0,1,0,0,0,0,6,0],
 "gpio__def_8h.html#a36cff7d300b200f71fcf3341651c4ae1":[12,0,1,0,0,0,0,6,18],
-"gpio__def_8h.html#a3820cacb614277004870fc37b33ad084":[12,0,1,0,0,0,0,6,29],
-"gpio__def_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe":[12,0,1,0,0,0,0,6,14]
+"gpio__def_8h.html#a3820cacb614277004870fc37b33ad084":[12,0,1,0,0,0,0,6,29]
 };

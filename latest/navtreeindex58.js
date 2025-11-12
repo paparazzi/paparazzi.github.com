@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"esc__dshot_8h.html#af5ad59c5401fea3f2df0703d958fdc97":[12,0,1,0,0,0,1,0,11,9,0],
 "esc__dshot_8h.html#afe095cd1f5a44be1ac5b2ac9b8fea1c0":[12,0,1,0,0,0,1,0,11,5,0],
 "esc__dshot_8h.html#aff22042f3c4824cd587fecc310f1a6d9":[12,0,1,0,0,0,1,0,11,5,1],
 "esc__dshot_8h.html#structDSHOTConfig":[12,0,1,0,0,0,1,0,11,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "fixedwing_2autopilot__static_8c.html#a83e52893d778a46aeda1b3c09ffd0656":[12,0,1,0,3,1,8,10],
 "fixedwing_2autopilot__static_8c.html#ab6fa2c0b52dd2d8a76db066709ecf17d":[12,0,1,0,3,1,8,8],
 "fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8":[12,0,1,0,3,1,8,7],
-"fixedwing_2autopilot__static_8c.html#ad2d4961da684eacdb42ba6907edc216d":[12,0,1,0,3,1,8,0],
-"fixedwing_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7":[12,0,1,0,3,1,8,2]
+"fixedwing_2autopilot__static_8c.html#ad2d4961da684eacdb42ba6907edc216d":[12,0,1,0,3,1,8,0]
 };
