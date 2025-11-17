@@ -1,5 +1,8 @@
 var NAVTREEINDEX133 =
 {
+"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,80,0,0],
+"module__control_mixing_heewing.html":[1,93],
+"module__control_mixing_heewing.html#functions__control_mixing_heewing":[1,93,1],
 "module__control_mixing_heewing.html#module_load_example__control_mixing_heewing":[1,93,0],
 "module__control_mixing_heewing.html#module_xml__control_mixing_heewing":[1,93,1,0],
 "module__control_new.html":[1,81],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__ezcurrent.html":[1,420],
 "module__ezcurrent.html#configuration__ezcurrent":[1,420,1],
 "module__ezcurrent.html#functions__ezcurrent":[1,420,2],
-"module__ezcurrent.html#module_load_example__ezcurrent":[1,420,0],
-"module__ezcurrent.html#module_xml__ezcurrent":[1,420,2,0],
-"module__fbw_datalink.html":[1,114],
-"module__fbw_datalink.html#configuration__fbw_datalink":[1,114,1]
+"module__ezcurrent.html#module_load_example__ezcurrent":[1,420,0]
 };

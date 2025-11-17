@@ -1,5 +1,8 @@
 var NAVTREEINDEX140 =
 {
+"module__telemetry_nps.html#functions__telemetry_nps":[1,120,2],
+"module__telemetry_nps.html#module_load_example__telemetry_nps":[1,120,0],
+"module__telemetry_nps.html#module_xml__telemetry_nps":[1,120,2,0],
 "module__telemetry_nps_secure.html":[1,121],
 "module__telemetry_nps_secure.html#configuration__telemetry_nps_secure":[1,121,1],
 "module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,121,0],
@@ -213,8 +216,8 @@ var NAVTREEINDEX140 =
 "modules_2actuators_2actuators_8h.html#a7ba1bde30e3a87694e878b244de10c47":[12,0,1,0,6,0,1,2],
 "modules_2actuators_2actuators_8h.html#acdc68e5e08a5d2294c38d1e7a5e6c126":[12,0,1,0,6,0,1,0,2],
 "modules_2actuators_2actuators_8h.html#structact__feedback__t":[12,0,1,0,6,0,1,0],
-"modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t":[12,0,1,0,6,0,1,1],
 "modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t":[12,0,1,0,6,0,1,0,0],
+"modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t":[12,0,1,0,6,0,1,1],
 "modules_2actuators_2actuators_8h_source.html":[12,0,1,0,6,0,1],
 "modules_2adcs_2mcp355x_8h.html":[12,0,1,0,6,1,6],
 "modules_2adcs_2mcp355x_8h_source.html":[12,0,1,0,6,1,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX140 =
 "modules_2datalink_2superbitrf_8c.html#ab7cad7b2b636d70ece62e9cede876603":[12,0,1,0,6,15,27,28],
 "modules_2datalink_2superbitrf_8c.html#abefd806148689ae7eddc86cf9d0e9d21":[12,0,1,0,6,15,27,10],
 "modules_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7":[12,0,1,0,6,15,27,9],
-"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,15,27,4],
-"modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd":[12,0,1,0,6,15,27,19],
-"modules_2datalink_2superbitrf_8c.html#ade7ef70ed43ea8f759a330486554d623":[12,0,1,0,6,15,27,22],
-"modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6":[12,0,1,0,6,15,27,20]
+"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,15,27,4]
 };

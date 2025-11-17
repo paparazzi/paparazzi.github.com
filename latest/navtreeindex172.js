@@ -1,5 +1,8 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#MISSION_GOTO_WP_LLA":[2,1,16],
+"paparazzi_messages.html#MISSION_ITEM":[2,0,184],
+"paparazzi_messages.html#MISSION_PATH":[2,1,21],
 "paparazzi_messages.html#MISSION_PATH_LLA":[2,1,22],
 "paparazzi_messages.html#MISSION_SEGMENT":[2,1,19],
 "paparazzi_messages.html#MISSION_SEGMENT_LLA":[2,1,20],
@@ -246,8 +249,5 @@ var NAVTREEINDEX172 =
 "pca9685__i2c_8c.html#a4453dd93b736ea3ba7716657a558d21f":[12,0,1,0,6,52,0,87],
 "pca9685__i2c_8c.html#a4530d1ea0659e70e1252e930d07f38cf":[12,0,1,0,6,52,0,71],
 "pca9685__i2c_8c.html#a484062292080d55734043ab2c67df141":[12,0,1,0,6,52,0,59],
-"pca9685__i2c_8c.html#a48cf359bc8f5d028887199ab181bd171":[12,0,1,0,6,52,0,14],
-"pca9685__i2c_8c.html#a4b0114a76a7cff71e0b4b366f3de7d35":[12,0,1,0,6,52,0,64],
-"pca9685__i2c_8c.html#a4f1d8bdb272af768df22ad33bf63c6a0":[12,0,1,0,6,52,0,54],
-"pca9685__i2c_8c.html#a50663881dbe791c4f47c99aeb0425a63":[12,0,1,0,6,52,0,70]
+"pca9685__i2c_8c.html#a48cf359bc8f5d028887199ab181bd171":[12,0,1,0,6,52,0,14]
 };

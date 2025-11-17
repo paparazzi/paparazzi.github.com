@@ -1,5 +1,8 @@
 var NAVTREEINDEX130 =
 {
+"meteo__stick__calib_8c.html#ad36beeb0bdbc592695e8f39619d891c2":[12,0,1,0,6,44,39,0,1],
+"meteo__stick__calib_8c.html#ae0a26227bef12f33416f495aaa810c9f":[12,0,1,0,6,44,39,1],
+"meteo__stick__calib_8c.html#ae610f0011cfff14d22217e40e9f07f97":[12,0,1,0,6,44,39,7],
 "meteo__stick__calib_8c.html#af16afd09b27900d3cda26d5fa578ee68":[12,0,1,0,6,44,39,4],
 "meteo__stick__calib_8c.html#structCalibrationPoint":[12,0,1,0,6,44,39,0],
 "meteo__stick__calib_8c_source.html":[12,0,1,0,6,44,39],
@@ -246,8 +249,5 @@ var NAVTREEINDEX130 =
 "mission__common_8h.html#struct__mission__circle":[12,0,1,0,6,45,5,1],
 "mission__common_8h.html#struct__mission__custom":[12,0,1,0,6,45,5,5],
 "mission__common_8h.html#struct__mission__element":[12,0,1,0,6,45,5,6],
-"mission__common_8h.html#struct__mission__path":[12,0,1,0,6,45,5,3],
-"mission__common_8h.html#struct__mission__registered":[12,0,1,0,6,45,5,4],
-"mission__common_8h.html#struct__mission__segment":[12,0,1,0,6,45,5,2],
-"mission__common_8h.html#struct__mission__wp":[12,0,1,0,6,45,5,0]
+"mission__common_8h.html#struct__mission__path":[12,0,1,0,6,45,5,3]
 };

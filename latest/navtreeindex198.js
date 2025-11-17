@@ -1,5 +1,8 @@
 var NAVTREEINDEX198 =
 {
+"sdLog_8c.html#a598888320386c21f975d32d68f29bcf3":[12,0,1,0,6,42,0,4,10],
+"sdLog_8c.html#a74e75242132eaabbc1c512488a135926":[12,0,1,0,6,42,0,4,3],
+"sdLog_8c.html#a870830d3ea4fe67badf79e52582f4fae":[12,0,1,0,6,42,0,4,5],
 "sdLog_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95":[12,0,1,0,6,42,0,4,2],
 "sdLog_8c.html#acc19261a02633b7b8cd1f9168794083d":[12,0,1,0,6,42,0,4,7],
 "sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77":[12,0,1,0,6,42,0,4,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX198 =
 "sdlogger__spi__direct_8h.html#ad47b2b2958d9f06fc41d92792519964d":[12,0,1,0,6,42,23,4],
 "sdlogger__spi__direct_8h.html#af24019c9a3de0374a1f3d5ea33bc5bf9":[12,0,1,0,6,42,23,14],
 "sdlogger__spi__direct_8h.html#structsdlogger__spi__periph":[12,0,1,0,6,42,23,0],
-"sdlogger__spi__direct_8h_source.html":[12,0,1,0,6,42,23],
-"sensors__hitl_8c.html":[12,0,1,0,6,63,87],
-"sensors__hitl_8c.html#a18066984b045d1bff45fe28290feb144":[12,0,1,0,6,63,87,14],
-"sensors__hitl_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,63,87,3]
+"sdlogger__spi__direct_8h_source.html":[12,0,1,0,6,42,23]
 };

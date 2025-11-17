@@ -1,5 +1,8 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_px4fmu_v2_4.html#functions__imu_px4fmu_v2_4":[1,229,2],
+"module__imu_px4fmu_v2_4.html#module_load_example__imu_px4fmu_v2_4":[1,229,0],
+"module__imu_px4fmu_v2_4.html#module_xml__imu_px4fmu_v2":[1,229,2,0],
 "module__imu_quality_assessment.html":[1,39],
 "module__imu_quality_assessment.html#functions__imu_quality_assessment":[1,39,1],
 "module__imu_quality_assessment.html#module_load_example__imu_quality_assessment":[1,39,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX136 =
 "module__logger_uart.html#functions__logger_uart":[1,276,2],
 "module__logger_uart.html#module_load_example__logger_uart":[1,276,0],
 "module__logger_uart.html#module_xml__logger_uart":[1,276,2,0],
-"module__mag_calib_ukf.html":[1,503],
-"module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,503,1],
-"module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,503,2],
-"module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,503,0]
+"module__mag_calib_ukf.html":[1,503]
 };

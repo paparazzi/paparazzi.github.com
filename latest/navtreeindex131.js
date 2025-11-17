@@ -1,5 +1,8 @@
 var NAVTREEINDEX131 =
 {
+"mission__common_8h.html#struct__mission__registered":[12,0,1,0,6,45,5,4],
+"mission__common_8h.html#struct__mission__segment":[12,0,1,0,6,45,5,2],
+"mission__common_8h.html#struct__mission__wp":[12,0,1,0,6,45,5,0],
 "mission__common_8h.html#union__mission__element_8element":[12,0,1,0,6,45,5,8],
 "mission__common_8h_source.html":[12,0,1,0,6,45,5],
 "mission__fw__nav_8c.html":[12,0,1,0,6,45,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX131 =
 "module__airspeed_amsys.html#functions__airspeed_amsys":[1,395,2],
 "module__airspeed_amsys.html#module_load_example__airspeed_amsys":[1,395,0],
 "module__airspeed_amsys.html#module_xml__airspeed_amsys":[1,395,2,0],
-"module__airspeed_consistency.html":[1,52],
-"module__airspeed_consistency.html#functions__airspeed_consistency":[1,52,1],
-"module__airspeed_consistency.html#module_load_example__airspeed_consistency":[1,52,0],
-"module__airspeed_consistency.html#module_xml__airspeed_consistency":[1,52,1,0]
+"module__airspeed_consistency.html":[1,52]
 };

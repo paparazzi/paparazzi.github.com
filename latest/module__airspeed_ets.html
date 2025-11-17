@@ -96,10 +96,17 @@ $(document).ready(function(){initNavTree('module__airspeed_ets.html',''); initRe
 <div class="contents">
 <div class="textblock"><p><b>Airspeed ETS (I2C).</b></p>
 <p><b></b></p>
-<p>Driver for the EagleTree Systems Airspeed Sensor. Has only been tested with V3 of the sensor hardware.</p>
-<p>Notes: Connect directly to TWOG/Tiny/Lisa I2C port. Multiple sensors can be chained together. Sensor may be in the proprietary mode (default) or in 3rd-party mode. In 3rd-party mode you must define AIRSPEED_ETS_3RD_PARTY_MODE. A eLogger is needed to set sensor to 3rd-party mode, which is supposed to be more reliable than the default mode.</p>
+<p>Driver for the EagleTree Systems Airspeed Sensor v3 connected via an I2C port. This device measures airspeed from 4m/s to 156m/s with about 0,5 m/s resolution</p>
+<p>Notes:</p><ul>
+<li>Connects directly to a flightcontroller board I2C port.</li>
+<li>Has I2C signal level conversion build in.</li>
+<li>Multiple sensors can be chained together.</li>
+<li>Sensor may be in the default or in 3rd-party mode.</li>
+</ul>
+<p>Per default the sensor is in Eagltreemode, but if you have set your sensor to 3rd-party mode only then must you add the define AIRSPEED_ETS_3RD_PARTY_MODE to your airframe</p>
+<p>This driver has only been tested with v3 of the sensor hardware, older versions might or might not work.</p>
 <p>Sensor module wire assignments:</p><ul>
-<li>Red wire: 5V</li>
+<li>Red wire: 3V-16V</li>
 <li>White wire: Ground</li>
 <li>Yellow wire: SDA</li>
 <li>Brown wire: SCL</li>
@@ -107,11 +114,14 @@ $(document).ready(function(){initNavTree('module__airspeed_ets.html',''); initRe
 <h1><a class="anchor" id="module_load_example__airspeed_ets"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_ets&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_OFFSET&quot; value=&quot;offset&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SCALE&quot; value=&quot;scale&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_START_DELAY&quot; value=&quot;delay&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_AIRSPEED_ETS&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_OFFSET&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SCALE&quot; value=&quot;1.76&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_START_DELAY&quot; value=&quot;1.5&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SYNC_SEND&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_USE_FILTER&quot; value=&quot;TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_LOWPASS_TAU&quot; value=&quot;0.15&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_AIRSPEED_ETS&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SDLOG&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;AIRSPEED_ETS_I2C_DEV&quot; value=&quot;i2cX&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -126,18 +136,24 @@ Configure Options</h2>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>AIRSPEED_ETS_OFFSET</code> <b>value:</b> <em>offset</em> <br  />
+<li><b>name:</b> <code>AIRSPEED_ETS_OFFSET</code> <b>value:</b> <em>0</em> <br  />
  Description: sensor reading offset for sensor in proprietary mode (default: 0)</li>
-<li><b>name:</b> <code>AIRSPEED_ETS_SCALE</code> <b>value:</b> <em>scale</em> <br  />
+<li><b>name:</b> <code>AIRSPEED_ETS_SCALE</code> <b>value:</b> <em>1.76</em> <br  />
  Description: sensor scale factor for sensor in proprietary mode (default: 1.8)</li>
-<li><b>name:</b> <code>AIRSPEED_ETS_START_DELAY</code> <b>value:</b> <em>delay</em> <br  />
- Description: set initial start delay in seconds</li>
-<li><b>name:</b> <code>USE_AIRSPEED_ETS</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
- Description: set airspeed in state interface</li>
+<li><b>name:</b> <code>AIRSPEED_ETS_START_DELAY</code> <b>value:</b> <em>1.5</em> <br  />
+ Description: set initial start delay in <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">seconds(float)</a>, somtimes needed if sensor initialization is not OK, default 0.2s</li>
+<li><b>name:</b> <code>AIRSPEED_ETS_SYNC_SEND</code> <b>value:</b> <em>None</em> <br  />
+ Description: flag to transmit the data as it is acquired</li>
 <li><b>name:</b> <code>AIRSPEED_ETS_3RD_PARTY_MODE</code> <b>value:</b> <em>None</em> <br  />
- Description: read raw value for sensor in third-party mode</li>
+ Description: Read raw value for sensor in third-party mode</li>
+<li><b>name:</b> <code>AIRSPEED_ETS_USE_FILTER</code> <b>value:</b> <em>TRUE</em> <br  />
+ Description: Enable or disable a filter on the sensor output values</li>
+<li><b>name:</b> <code>AIRSPEED_ETS_LOWPASS_TAU</code> <b>value:</b> <em>0.15</em> <br  />
+ Description: Time constant for second order Butterworth low pass filter .15 is about 1hz</li>
+<li><b>name:</b> <code>USE_AIRSPEED_ETS</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
+ Description: Set airspeed in state interface for this sensor</li>
 <li><b>name:</b> <code>AIRSPEED_ETS_SDLOG</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
- Description: start logging to SD card</li>
+ Description: start logging to SD card for Chibios only</li>
 </ul>
 <h1><a class="anchor" id="functions__airspeed_ets"></a>
 Module functions</h1>
@@ -185,27 +201,37 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Airspeed</span> <span class="keyword">ETS</span> (<span class="keyword">I2C</span>).</div>
-<div class="line">      <span class="keyword">Driver</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">EagleTree</span> <span class="keyword">Systems</span> <span class="keyword">Airspeed</span> <span class="keyword">Sensor.</span></div>
-<div class="line">      <span class="keyword">Has</span> <span class="keyword">only</span> <span class="keyword">been</span> <span class="keyword">tested</span> <span class="keyword">with</span> <span class="keyword">V3</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">sensor</span> <span class="keyword">hardware.</span></div>
+<div class="line">      <span class="keyword">Driver</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">EagleTree</span> <span class="keyword">Systems</span> <span class="keyword">Airspeed</span> <span class="keyword">Sensor</span> <span class="keyword">v3</span> <span class="keyword">connected</span> <span class="keyword">via</span> <span class="keyword">an</span> <span class="keyword">I2C</span> <span class="keyword">port.</span> </div>
+<div class="line">      <span class="keyword">This</span> <span class="keyword">device</span> <span class="keyword">measures</span> <span class="keyword">airspeed</span> <span class="keyword">from</span> 4<span class="keyword">m</span>/<span class="keyword">s</span> <span class="keyword">to</span> 156<span class="keyword">m</span>/<span class="keyword">s</span> <span class="keyword">with</span> <span class="keyword">about</span> 0,5 <span class="keyword">m</span>/<span class="keyword">s</span> <span class="keyword">resolution</span></div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">Notes:</span></div>
-<div class="line">      <span class="keyword">Connect</span> <span class="keyword">directly</span> <span class="keyword">to</span> <span class="keyword">TWOG</span>/<span class="keyword">Tiny</span>/<span class="keyword">Lisa</span> <span class="keyword">I2C</span> <span class="keyword">port.</span> <span class="keyword">Multiple</span> <span class="keyword">sensors</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">chained</span> <span class="keyword">together.</span></div>
-<div class="line">      <span class="keyword">Sensor</span> <span class="keyword">may</span> <span class="keyword">be</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">proprietary</span> <span class="keyword">mode</span> (<span class="keyword">default</span>) <span class="keyword">or</span> <span class="keyword">in</span> 3<span class="keyword">rd-party</span> <span class="keyword">mode.</span> <span class="keyword">In</span> 3<span class="keyword">rd-party</span> <span class="keyword">mode</span> <span class="keyword">you</span> <span class="keyword">must</span> <span class="keyword">define</span> <span class="keyword">AIRSPEED_ETS_3RD_PARTY_MODE.</span></div>
-<div class="line">      <span class="keyword">A</span> <span class="keyword">eLogger</span> <span class="keyword">is</span> <span class="keyword">needed</span> <span class="keyword">to</span> <span class="keyword">set</span> <span class="keyword">sensor</span> <span class="keyword">to</span> 3<span class="keyword">rd-party</span> <span class="keyword">mode</span>, <span class="keyword">which</span> <span class="keyword">is</span> <span class="keyword">supposed</span> <span class="keyword">to</span> <span class="keyword">be</span> <span class="keyword">more</span> <span class="keyword">reliable</span> <span class="keyword">than</span> <span class="keyword">the</span> <span class="keyword">default</span> <span class="keyword">mode.</span></div>
+<div class="line">      + <span class="keyword">Connects</span> <span class="keyword">directly</span> <span class="keyword">to</span> <span class="keyword">a</span> <span class="keyword">flightcontroller</span> <span class="keyword">board</span> <span class="keyword">I2C</span> <span class="keyword">port.</span> </div>
+<div class="line">      + <span class="keyword">Has</span> <span class="keyword">I2C</span> <span class="keyword">signal</span> <span class="keyword">level</span> <span class="keyword">conversion</span> <span class="keyword">build</span> <span class="keyword">in.</span> </div>
+<div class="line">      + <span class="keyword">Multiple</span> <span class="keyword">sensors</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">chained</span> <span class="keyword">together.</span></div>
+<div class="line">      + <span class="keyword">Sensor</span> <span class="keyword">may</span> <span class="keyword">be</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">default</span> <span class="keyword">or</span> <span class="keyword">in</span> 3<span class="keyword">rd-party</span> <span class="keyword">mode.</span> </div>
+<div class="line">      </div>
+<div class="line">      <span class="keyword">Per</span> <span class="keyword">default</span> <span class="keyword">the</span> <span class="keyword">sensor</span> <span class="keyword">is</span> <span class="keyword">in</span> <span class="keyword">Eagltreemode</span>, <span class="keyword">but</span> <span class="keyword">if</span> <span class="keyword">you</span> <span class="keyword">have</span> <span class="keyword">set</span> <span class="keyword">your</span> <span class="keyword">sensor</span> <span class="keyword">to</span> 3<span class="keyword">rd-party</span> <span class="keyword">mode</span></div>
+<div class="line">      <span class="keyword">only</span> <span class="keyword">then</span> <span class="keyword">must</span> <span class="keyword">you</span> <span class="keyword">add</span> <span class="keyword">the</span> <span class="keyword">define</span> <span class="keyword">AIRSPEED_ETS_3RD_PARTY_MODE</span> <span class="keyword">to</span> <span class="keyword">your</span> <span class="keyword">airframe</span></div>
+<div class="line">      </div>
+<div class="line">      <span class="keyword">This</span> <span class="keyword">driver</span> <span class="keyword">has</span> <span class="keyword">only</span> <span class="keyword">been</span> <span class="keyword">tested</span> <span class="keyword">with</span> <span class="keyword">v3</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">sensor</span> <span class="keyword">hardware</span>, <span class="keyword">older</span> <span class="keyword">versions</span> <span class="keyword">might</span> <span class="keyword">or</span> <span class="keyword">might</span> <span class="keyword">not</span> <span class="keyword">work.</span></div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">Sensor</span> <span class="keyword">module</span> <span class="keyword">wire</span> <span class="keyword">assignments:</span></div>
-<div class="line">      - <span class="keyword">Red</span> <span class="keyword">wire:</span> 5<span class="keyword">V</span></div>
+<div class="line">      - <span class="keyword">Red</span> <span class="keyword">wire:</span> 3<span class="keyword">V-16V</span></div>
 <div class="line">      - <span class="keyword">White</span> <span class="keyword">wire:</span> <span class="keyword">Ground</span></div>
 <div class="line">      - <span class="keyword">Yellow</span> <span class="keyword">wire:</span> <span class="keyword">SDA</span></div>
 <div class="line">      - <span class="keyword">Brown</span> <span class="keyword">wire:</span> <span class="keyword">SCL</span></div>
+<div class="line"> </div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_I2C_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;i2cX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set i2c peripheral (default: i2c0)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;offset&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor reading offset for sensor in proprietary mode (default: 0)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;scale&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor scale factor for sensor in proprietary mode  (default: 1.8)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_START_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;delay&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set initial start delay in seconds&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_AIRSPEED_ETS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set airspeed in state interface&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot;</span>  <span class="keyword">description</span>=<span class="stringliteral">&quot;read raw value for sensor in third-party mode&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SDLOG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;start logging to SD card&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor reading offset for sensor in proprietary mode (default: 0)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.76&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor scale factor for sensor in proprietary mode  (default: 1.8)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_START_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set initial start delay in seconds(float), somtimes needed if sensor initialization is not OK, default 0.2s&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SYNC_SEND&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;flag to transmit the data as it is acquired&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot;</span>  <span class="keyword">description</span>=<span class="stringliteral">&quot;Read raw value for sensor in third-party mode&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_USE_FILTER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable or disable a filter on the sensor output values&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_LOWPASS_TAU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.15&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Time constant for second order Butterworth low pass filter .15 is about 1hz&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_AIRSPEED_ETS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Set airspeed in state interface for this sensor&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SDLOG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;start logging to SD card for Chibios only&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">i2c</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -225,6 +251,7 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_I2C_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(AIRSPEED_ETS_I2C_DEV_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_ets.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_READ_PERIODIC_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.001&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_I2C0&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_AIRSPEED_ETS&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
@@ -234,7 +261,6 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-<div class="line"> </div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -242,7 +268,7 @@ Raw airspeed_ets.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Nov 17 2025 17:05:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 17 2025 21:47:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

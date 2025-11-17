@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#afb98861d06d9f4145f01c9d4d0fa09dd":[12,0,1,0,1,3,0,0,1,244],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56":[12,0,1,0,1,3,0,0,1,76],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#afc0d8281959c0da081d7df2d9df16701":[12,0,1,0,1,3,0,0,1,287],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#afd104f0cde2014ea9788f9e3f71de00a":[12,0,1,0,1,3,0,0,1,51],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#afd6848ba7ceed677ae8b11e47413c8b1":[12,0,1,0,1,3,0,0,1,71],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#afda450bd11b4c1408739367b23c9f852":[12,0,1,0,1,3,0,0,1,206],
@@ -201,8 +204,8 @@ var NAVTREEINDEX26 =
 "bmi088__i2c_8h.html#aa0ad2088eb40831bcfb0c4e1640e1538":[12,0,1,0,7,22,0,4],
 "bmi088__i2c_8h.html#aa5b51ce0c76da793600e92a784e262cb":[12,0,1,0,7,22,6],
 "bmi088__i2c_8h.html#aadcaf3a752d023936d0622d750ff0d29":[12,0,1,0,7,22,0,5],
-"bmi088__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,22,1,0],
 "bmi088__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,22,2,1],
+"bmi088__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,22,1,0],
 "bmi088__i2c_8h.html#abfa0649b89202681ccbf3f75f3aa1565":[12,0,1,0,7,22,3],
 "bmi088__i2c_8h.html#ad90e7d47b72b999e8915527178429943":[12,0,1,0,7,22,7],
 "bmi088__i2c_8h.html#afe1607e71ab10ff21cf8acdd8b5dba61":[12,0,1,0,7,22,0,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "bmi088__regs_8h.html#a8127f9e52d1d2d3bf25da0c897731327":[12,0,1,0,7,23,21],
 "bmi088__regs_8h.html#a81aff3b96b7233020b6fb60e3e3eff63":[12,0,1,0,7,23,9],
 "bmi088__regs_8h.html#a82dceee8fa78da6c49210a2e6f558a92":[12,0,1,0,7,23,14],
-"bmi088__regs_8h.html#a89d31896f298f79fb1003d5aa59791dd":[12,0,1,0,7,23,51],
-"bmi088__regs_8h.html#a89d31896f298f79fb1003d5aa59791dda34032d32e4c8e8b9cabfa912dac4fae5":[12,0,1,0,7,23,51,2],
-"bmi088__regs_8h.html#a89d31896f298f79fb1003d5aa59791dda39abf0c833eb4396c6d10e4a149869db":[12,0,1,0,7,23,51,1],
-"bmi088__regs_8h.html#a89d31896f298f79fb1003d5aa59791dda3aede72a3b524daefb3f4c61b581cc5a":[12,0,1,0,7,23,51,0]
+"bmi088__regs_8h.html#a89d31896f298f79fb1003d5aa59791dd":[12,0,1,0,7,23,51]
 };

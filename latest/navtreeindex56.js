@@ -1,5 +1,8 @@
 var NAVTREEINDEX56 =
 {
+"elle0_2baro__board_8h_source.html":[12,0,1,0,1,8,0],
+"elle0__1_80_8h.html":[12,0,1,0,1,34],
+"elle0__1_80_8h_source.html":[12,0,1,0,1,34],
 "elle0__1_82_8h.html":[12,0,1,0,1,35],
 "elle0__1_82_8h_source.html":[12,0,1,0,1,35],
 "elle0__common_8h.html":[12,0,1,0,1,36],
@@ -246,8 +249,5 @@ var NAVTREEINDEX56 =
 "esc32_8c.html#a14ba35e454e49f5b348ca59ddddfa8cb":[12,0,1,0,6,24,0,6],
 "esc32_8c.html#a1a844aebbf9dc5167f69b9fcd97c681c":[12,0,1,0,6,24,0,20],
 "esc32_8c.html#a267f52302ad8bad5ccfd5ba5a9475ca1":[12,0,1,0,6,24,0,8],
-"esc32_8c.html#a2e64307d61b21234820f9b4c51f8511d":[12,0,1,0,6,24,0,1,9],
-"esc32_8c.html#a2ee432819c24a3aa1fd71203987eaec2":[12,0,1,0,6,24,0,1,4],
-"esc32_8c.html#a316d11814f192994f42fdbb0c1ce117e":[12,0,1,0,6,24,0,29],
-"esc32_8c.html#a336ca74c2131202d5197654318f8b677":[12,0,1,0,6,24,0,4]
+"esc32_8c.html#a2e64307d61b21234820f9b4c51f8511d":[12,0,1,0,6,24,0,1,9]
 };

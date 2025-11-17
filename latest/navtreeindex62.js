@@ -1,5 +1,8 @@
 var NAVTREEINDEX62 =
 {
+"geo__mag_8c_source.html":[12,0,1,0,6,26,0],
+"geo__mag_8h.html":[12,0,1,0,6,26,1],
+"geo__mag_8h.html#a0b31ff993a34eceda1a56f755470c413":[12,0,1,0,6,26,1,3],
 "geo__mag_8h.html#a34ac04ce444b9dfe35c9116823908950":[12,0,1,0,6,26,1,0,2],
 "geo__mag_8h.html#aa76cdec76594fd3a30af04b60a52af2d":[12,0,1,0,6,26,1,2],
 "geo__mag_8h.html#abf6e468d33d4976598df3dbe1c67b189":[12,0,1,0,6,26,1,4],
@@ -43,8 +46,8 @@ var NAVTREEINDEX62 =
 "glide__wing__lock_8h.html#a500763dbb0f4ced17a8946d9335e260b":[12,0,1,0,6,27,1,1],
 "glide__wing__lock_8h.html#af688353e9277038d0e14900750e70f98":[12,0,1,0,6,27,1,0],
 "glide__wing__lock_8h_source.html":[12,0,1,0,6,27,1],
-"globals.html":[12,1,0],
 "globals.html":[12,1,0,0],
+"globals.html":[12,1,0],
 "globals_a.html":[12,1,0,1],
 "globals_b.html":[12,1,0,2],
 "globals_c.html":[12,1,0,3],
@@ -78,8 +81,8 @@ var NAVTREEINDEX62 =
 "globals_defs_y.html":[12,1,6,25],
 "globals_defs_z.html":[12,1,6,26],
 "globals_e.html":[12,1,0,5],
-"globals_enum.html":[12,1,4,0],
 "globals_enum.html":[12,1,4],
+"globals_enum.html":[12,1,4,0],
 "globals_enum_b.html":[12,1,4,1],
 "globals_enum_c.html":[12,1,4,2],
 "globals_enum_d.html":[12,1,4,3],
@@ -172,8 +175,8 @@ var NAVTREEINDEX62 =
 "globals_type.html":[12,1,3],
 "globals_u.html":[12,1,0,21],
 "globals_v.html":[12,1,0,22],
-"globals_vars.html":[12,1,2],
 "globals_vars.html":[12,1,2,0],
+"globals_vars.html":[12,1,2],
 "globals_vars_a.html":[12,1,2,1],
 "globals_vars_b.html":[12,1,2,2],
 "globals_vars_c.html":[12,1,2,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX62 =
 "gpio__def_8h.html#a0779d3cff751db7fe6aa11a4bf47d48f":[12,0,1,0,0,0,0,6,37],
 "gpio__def_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07":[12,0,1,0,0,0,0,6,20],
 "gpio__def_8h.html#a134f840f4efbdb994ea47eecde306153":[12,0,1,0,0,0,0,6,36],
-"gpio__def_8h.html#a1471cf2ee224d707874fa19c68b3d5dc":[12,0,1,0,0,0,0,6,19],
-"gpio__def_8h.html#a1a96368c99d63b0e715b7e0421f4a209":[12,0,1,0,0,0,0,6,27],
-"gpio__def_8h.html#a1dfa6e5489489f2797d3d80c718716ce":[12,0,1,0,0,0,0,6,4],
-"gpio__def_8h.html#a209f1a013588f481824ff0f57d2fc21e":[12,0,1,0,0,0,0,6,8]
+"gpio__def_8h.html#a1471cf2ee224d707874fa19c68b3d5dc":[12,0,1,0,0,0,0,6,19]
 };
