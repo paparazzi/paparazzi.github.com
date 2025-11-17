@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"actuators__ostrich_8h.html#aabec9a61bd34ff308b9e3fe503fa52f6":[12,0,1,0,6,0,17,0,0],
+"actuators__ostrich_8h.html#aac9fff0c035d51cc8ccee4e68ba7ea8e":[12,0,1,0,6,0,17,2],
 "actuators__ostrich_8h.html#ad9fba7aad473e25e20425a90e650a8c7":[12,0,1,0,6,0,17,3],
 "actuators__ostrich_8h.html#ae47b4a3b2d75b6b733eb0f9c5d72a372":[12,0,1,0,6,0,17,5],
 "actuators__ostrich_8h.html#ae6c3c8331ecd7eec19eeeeb655d7a7fb":[12,0,1,0,6,0,17,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "actuators__uavcan1_8h.html#ad7cce2e7da835a8efe0f28fc42f5ef78":[12,0,1,0,6,0,30,3],
 "actuators__uavcan1_8h_source.html":[12,0,1,0,6,0,30],
 "actuators__uavcan1cmd_8h.html":[12,0,1,0,6,0,31],
-"actuators__uavcan1cmd_8h.html#a5b4a5cf5f4670e24efc5742704252ad8":[12,0,1,0,6,0,31,1],
-"actuators__uavcan1cmd_8h.html#aa0df3af4de2ba9c3f524fd748043b491":[12,0,1,0,6,0,31,3],
-"actuators__uavcan1cmd_8h.html#aa8fc1bd91fdce4cc46bb61a28a6abc0c":[12,0,1,0,6,0,31,0]
+"actuators__uavcan1cmd_8h.html#a5b4a5cf5f4670e24efc5742704252ad8":[12,0,1,0,6,0,31,1]
 };

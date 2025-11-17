@@ -1,5 +1,8 @@
 var NAVTREEINDEX208 =
 {
+"stm32_2modules_2core_2threads__arch_8h.html#af416732838426293e131f8feff844cc7":[12,0,1,0,0,0,1,1,6,0,1],
+"stm32_2modules_2core_2threads__arch_8h.html#af416732838426293e131f8feff844cc7":[12,0,1,0,0,0,1,1,6,0,2],
+"stm32_2modules_2core_2threads__arch_8h.html#af416732838426293e131f8feff844cc7":[12,0,1,0,0,2,1,1,5,0,2],
 "stm32_2modules_2core_2threads__arch_8h.html#structpprzBSem":[12,0,1,0,0,1,1,1,2,1],
 "stm32_2modules_2core_2threads__arch_8h.html#structpprzBSem":[12,0,1,0,0,0,1,1,6,1],
 "stm32_2modules_2core_2threads__arch_8h.html#structpprzBSem":[12,0,1,0,0,3,1,1,2,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX208 =
 "superbitrf__rc_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29":[12,0,1,0,6,56,23,10],
 "superbitrf__rc_8h.html#ac39d19d76ee4464e8a8d8b1645d8b08f":[12,0,1,0,6,56,23,16],
 "superbitrf__rc_8h.html#ac5d768a757f013a44c96ecf92287888e":[12,0,1,0,6,56,23,8],
-"superbitrf__rc_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8":[12,0,1,0,6,56,23,4],
-"superbitrf__rc_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f":[12,0,1,0,6,56,23,13],
-"superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10":[12,0,1,0,6,56,23,17],
-"superbitrf__rc_8h_source.html":[12,0,1,0,6,56,23]
+"superbitrf__rc_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8":[12,0,1,0,6,56,23,4]
 };

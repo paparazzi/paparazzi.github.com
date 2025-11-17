@@ -1,5 +1,8 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_quality_assessment.html":[1,39],
+"module__imu_quality_assessment.html#functions__imu_quality_assessment":[1,39,1],
+"module__imu_quality_assessment.html#module_load_example__imu_quality_assessment":[1,39,0],
 "module__imu_quality_assessment.html#module_xml__imu_quality_assessment":[1,39,1,0],
 "module__imu_sim.html":[1,230],
 "module__imu_sim.html#module_load_example__imu_sim":[1,230,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX136 =
 "module__mag_calib_ukf.html":[1,503],
 "module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,503,1],
 "module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,503,2],
-"module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,503,0],
-"module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,503,2,0],
-"module__mag_hmc5843.html":[1,422],
-"module__mag_hmc5843.html#configuration__mag_hmc5843":[1,422,1]
+"module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,503,0]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX200 =
 {
+"sim_2mcu__periph_2gpio__arch_8c_source.html":[12,0,1,0,0,2,0,2],
+"sim_2mcu__periph_2gpio__arch_8h.html":[12,0,1,0,0,2,0,3],
+"sim_2mcu__periph_2gpio__arch_8h.html#a02a2a23a32f9b02166a8c64012842414":[12,0,1,0,0,2,0,3,38],
 "sim_2mcu__periph_2gpio__arch_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07":[12,0,1,0,0,2,0,3,20],
 "sim_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de":[12,0,1,0,0,2,0,3,40],
 "sim_2mcu__periph_2gpio__arch_8h.html#a1471cf2ee224d707874fa19c68b3d5dc":[12,0,1,0,0,2,0,3,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX200 =
 "sim_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7":[12,0,1,0,0,2,2,0,0],
 "sim_2peripherals_2hmc5843__arch_8c_source.html":[12,0,1,0,0,2,2,0],
 "sim_2peripherals_2hmc5843__arch_8h.html":[12,0,1,0,0,2,2,1],
-"sim_2peripherals_2hmc5843__arch_8h_source.html":[12,0,1,0,0,2,2,1],
-"sim_2peripherals_2max1168__arch_8c.html":[12,0,1,0,0,2,2,2],
-"sim_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2":[12,0,1,0,0,2,2,2,0],
-"sim_2peripherals_2max1168__arch_8c.html#adad993f2bbd2ca52aea0b0f97931863a":[12,0,1,0,0,2,2,2,1]
+"sim_2peripherals_2hmc5843__arch_8h_source.html":[12,0,1,0,0,2,2,1]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX137 =
 {
+"module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,503,2,0],
+"module__mag_hmc5843.html":[1,422],
+"module__mag_hmc5843.html#configuration__mag_hmc5843":[1,422,1],
 "module__mag_hmc5843.html#functions__mag_hmc5843":[1,422,2],
 "module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,422,0],
 "module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,422,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,364,0],
 "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,364,2,0],
 "module__nav_trinity.html":[1,365],
-"module__nav_trinity.html#functions__nav_trinity":[1,365,1],
-"module__nav_trinity.html#module_load_example__nav_trinity":[1,365,0],
-"module__nav_trinity.html#module_xml__nav_trinity":[1,365,1,0],
-"module__nav_vertical_raster.html":[1,366]
+"module__nav_trinity.html#functions__nav_trinity":[1,365,1]
 };

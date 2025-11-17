@@ -1,5 +1,8 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_trinity.html#module_load_example__nav_trinity":[1,365,0],
+"module__nav_trinity.html#module_xml__nav_trinity":[1,365,1,0],
+"module__nav_vertical_raster.html":[1,366],
 "module__nav_vertical_raster.html#module_load_example__nav_vertical_raster":[1,366,0],
 "module__nav_vertical_raster.html#module_xml__nav_vertical_raster":[1,366,0,0],
 "module__navigation.html":[1,367],
@@ -246,8 +249,5 @@ var NAVTREEINDEX138 =
 "module__rust_demo_module.html#module_xml__rust_demo_module":[1,520,1,0],
 "module__scheduling_indi_simple.html":[1,108],
 "module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,108,1],
-"module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,108,0],
-"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,108,1,0],
-"module__sensors_hitl.html":[1,436],
-"module__sensors_hitl.html#configuration__sensors_hitl":[1,436,1]
+"module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,108,0]
 };

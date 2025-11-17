@@ -102,8 +102,9 @@ $(document).ready(function(){initNavTree('module__actuators_dshot.html',''); ini
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_dshot&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DSHOT_SPEED&quot; value=&quot;600&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DSHOT_MOTOR_POLES&quot; value=&quot;14&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;DSHOT_BIDIR&quot; value=&quot;FALSE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;DSHOT1_GPT_TIM&quot; value=&quot;7&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;DSHOT1_GPT_TIM&quot; value=&quot;7&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__actuators_dshot"></a>
 Module configuration options</h1>
@@ -120,6 +121,8 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>DSHOT_SPEED</code> <b>value:</b> <em>600</em> <br  />
  Description: DSHOT speed (150,300,600,1200)</li>
+<li><b>name:</b> <code>DSHOT_MOTOR_POLES</code> <b>value:</b> <em>14</em> <br  />
+ Description: number of motor poles to compute real RPM from eRPM</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -161,6 +164,7 @@ Raw actuators_dshot.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_BIDIR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Bidirectionnal DSHOT for fast rpm feedback&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_SPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;600&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;DSHOT speed (150,300,600,1200)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT1_GPT_TIM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;7&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPT driver used for telemetry timeout&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_MOTOR_POLES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;14&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;number of motor poles to compute real RPM from eRPM&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">actuators</span>,@<span class="keyword">commands</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -195,7 +199,7 @@ Raw actuators_dshot.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 12 2025 09:41:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 17 2025 17:05:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

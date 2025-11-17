@@ -1,5 +1,8 @@
 var NAVTREEINDEX139 =
 {
+"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,108,1,0],
+"module__sensors_hitl.html":[1,436],
+"module__sensors_hitl.html#configuration__sensors_hitl":[1,436,1],
 "module__sensors_hitl.html#datalink_functions__sensors_hitl":[1,436,3],
 "module__sensors_hitl.html#functions__sensors_hitl":[1,436,2],
 "module__sensors_hitl.html#module_load_example__sensors_hitl":[1,436,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX139 =
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,120,1],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,120,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,120,0],
-"module__telemetry_nps.html#module_xml__telemetry_nps":[1,120,2,0],
-"module__telemetry_nps_secure.html":[1,121],
-"module__telemetry_nps_secure.html#configuration__telemetry_nps_secure":[1,121,1],
-"module__telemetry_nps_secure.html#module_load_example__telemetry_nps_secure":[1,121,0]
+"module__telemetry_nps.html#module_xml__telemetry_nps":[1,120,2,0]
 };

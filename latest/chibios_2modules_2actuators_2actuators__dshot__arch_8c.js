@@ -6,6 +6,7 @@ var chibios_2modules_2actuators_2actuators__dshot__arch_8c =
     ] ],
     [ "_CONCAT_GPIO", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a26451181e783635973207359f1e2f3e4", null ],
     [ "CONCAT_GPIO", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aa37f9b9de508d0e30c9039b818babd19", null ],
+    [ "DSHOT_MOTOR_POLES", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a8e7811d9b7a36656fbe9814bafa83e7b", null ],
     [ "actuators_dshot_arch_commit", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3", null ],
     [ "actuators_dshot_arch_init", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29", null ],
     [ "dshot_init_struct", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa", null ],

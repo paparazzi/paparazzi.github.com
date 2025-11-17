@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__denoising_8h.html":[12,0,1,0,1,2,0,0,7],
+"avi__isp__denoising_8h.html#a02b2ecc26a48b86771fb60e54728157d":[12,0,1,0,1,2,0,0,7,20,3],
 "avi__isp__denoising_8h.html#a04e2b2400fe1d7cb782d90bcaccd58e0":[12,0,1,0,1,2,0,0,7,21,0],
 "avi__isp__denoising_8h.html#a08523629398a8cbdaed21c7bbde90bda":[12,0,1,0,1,2,0,0,7,24,1],
 "avi__isp__denoising_8h.html#a0a36bd50d802464136a99bb9eef44097":[12,0,1,0,1,2,0,0,7,8,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__green__imbalance_8h.html#aadb9e66b2265c1a1c750021d82ad8989":[12,0,1,0,1,2,0,0,11,29],
 "avi__isp__green__imbalance_8h.html#ab9df2df985854549d7474a3442133c97":[12,0,1,0,1,2,0,0,11,18,0],
 "avi__isp__green__imbalance_8h.html#ac1eacc535d9c87e2e6edc6b3ce033e45":[12,0,1,0,1,2,0,0,11,13,0],
-"avi__isp__green__imbalance_8h.html#ad417a279f7d3cab11ed9bf734d50a4f8":[12,0,1,0,1,2,0,0,11,7,0],
-"avi__isp__green__imbalance_8h.html#adae225e1e7429531d0e6fc3085e9a265":[12,0,1,0,1,2,0,0,11,8,0],
-"avi__isp__green__imbalance_8h.html#ae3e1668916d0e401d35eee4baa3badc0":[12,0,1,0,1,2,0,0,11,15,1]
+"avi__isp__green__imbalance_8h.html#ad417a279f7d3cab11ed9bf734d50a4f8":[12,0,1,0,1,2,0,0,11,7,0]
 };

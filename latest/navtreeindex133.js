@@ -1,5 +1,8 @@
 var NAVTREEINDEX133 =
 {
+"module__control_mixing_heewing.html#module_load_example__control_mixing_heewing":[1,93,0],
+"module__control_mixing_heewing.html#module_xml__control_mixing_heewing":[1,93,1,0],
+"module__control_new.html":[1,81],
 "module__control_new.html#module_load_example__control_new":[1,81,0],
 "module__control_new.html#module_xml__control_new":[1,81,0,0],
 "module__copilot.html":[1,317],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__ezcurrent.html#module_load_example__ezcurrent":[1,420,0],
 "module__ezcurrent.html#module_xml__ezcurrent":[1,420,2,0],
 "module__fbw_datalink.html":[1,114],
-"module__fbw_datalink.html#configuration__fbw_datalink":[1,114,1],
-"module__fbw_datalink.html#module_load_example__fbw_datalink":[1,114,0],
-"module__fbw_datalink.html#module_xml__fbw_datalink":[1,114,1,0],
-"module__fc_rotor.html":[1,489]
+"module__fbw_datalink.html#configuration__fbw_datalink":[1,114,1]
 };

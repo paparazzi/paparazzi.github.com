@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"chibios_2mcu__periph_2sys__time__arch_8h.html":[12,0,1,0,0,0,0,21],
+"chibios_2mcu__periph_2sys__time__arch_8h.html#a00812d07b0afb483c2a6d949fd7639e0":[12,0,1,0,0,0,0,21,3],
 "chibios_2mcu__periph_2sys__time__arch_8h.html#a74db3eed857f9c53bb67db256c12bc83":[12,0,1,0,0,0,0,21,5],
 "chibios_2mcu__periph_2sys__time__arch_8h.html#a7a57414cd6105553b6e385798824ac39":[12,0,1,0,0,0,0,21,2],
 "chibios_2mcu__periph_2sys__time__arch_8h.html#a7ddfef1f78a56c6b4c4c536b5d670bfb":[12,0,1,0,0,0,0,21,1],
@@ -27,15 +29,16 @@ var NAVTREEINDEX34 =
 "chibios_2mcu__periph_2uart__arch_8h.html#af5bd4045b436cba08feb96e15994c04b":[12,0,1,0,0,0,0,25,7],
 "chibios_2mcu__periph_2uart__arch_8h_source.html":[12,0,1,0,0,0,0,25],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html":[12,0,1,0,0,0,1,0,0],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,0,0,1,0,0,4],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1f78a2730da7d3925ebf7f6657efe64a":[12,0,1,0,0,0,1,0,0,8],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,0,0,1,0,0,5],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1f78a2730da7d3925ebf7f6657efe64a":[12,0,1,0,0,0,1,0,0,9],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a26451181e783635973207359f1e2f3e4":[12,0,1,0,0,0,1,0,0,1],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a8e7811d9b7a36656fbe9814bafa83e7b":[12,0,1,0,0,0,1,0,0,3],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aa37f9b9de508d0e30c9039b818babd19":[12,0,1,0,0,0,1,0,0,2],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aad0c5b9f4cd9c07eef68c312b0d28c86":[12,0,1,0,0,0,1,0,0,6],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aaf9aa75d1fc089615d8cee524e688cac":[12,0,1,0,0,0,1,0,0,9],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa":[12,0,1,0,0,0,1,0,0,5],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#acfc5421a5091a1933410c3e63bc765a5":[12,0,1,0,0,0,1,0,0,7],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3":[12,0,1,0,0,0,1,0,0,3],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aad0c5b9f4cd9c07eef68c312b0d28c86":[12,0,1,0,0,0,1,0,0,7],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aaf9aa75d1fc089615d8cee524e688cac":[12,0,1,0,0,0,1,0,0,10],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa":[12,0,1,0,0,0,1,0,0,6],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#acfc5421a5091a1933410c3e63bc765a5":[12,0,1,0,0,0,1,0,0,8],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3":[12,0,1,0,0,0,1,0,0,4],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aedbb9bf89b3c453a66e6490d6b02d2b4":[12,0,1,0,0,0,1,0,0,0,1],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#af27677c00bbfec0f35e4d2fa178ac6ff":[12,0,1,0,0,0,1,0,0,0,0],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#structdshot__private":[12,0,1,0,0,0,1,0,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX34 =
 "chimera_2chibios_2v1_80_2board_8h.html#a2d65a99880f371e8c24fb45f061b49ea":[12,0,1,0,1,4,0,0,0,139],
 "chimera_2chibios_2v1_80_2board_8h.html#a2e3fa4af7871deb1df13c30239b7b160":[12,0,1,0,1,4,0,0,0,277],
 "chimera_2chibios_2v1_80_2board_8h.html#a2e620d487db2d7240e759f66c3a68efa":[12,0,1,0,1,4,0,0,0,407],
-"chimera_2chibios_2v1_80_2board_8h.html#a2e7464f9d2037d17c1a9d95311ee4149":[12,0,1,0,1,4,0,0,0,96],
-"chimera_2chibios_2v1_80_2board_8h.html#a2ef47c72ed141be7037a5e61fccd1d8f":[12,0,1,0,1,4,0,0,0,104],
-"chimera_2chibios_2v1_80_2board_8h.html#a30059d90eb19b3af333f29f0a44f39f8":[12,0,1,0,1,4,0,0,0,77],
-"chimera_2chibios_2v1_80_2board_8h.html#a30a2fa19a657b71d851beaba28fc13a7":[12,0,1,0,1,4,0,0,0,112]
+"chimera_2chibios_2v1_80_2board_8h.html#a2e7464f9d2037d17c1a9d95311ee4149":[12,0,1,0,1,4,0,0,0,96]
 };
