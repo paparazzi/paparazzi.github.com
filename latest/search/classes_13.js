@@ -25,7 +25,7 @@ var searchData=
   ['smartportpayload_5fs_22',['smartPortPayload_s',['../cc2500__smartport_8h.html#structsmartPortPayload__s',1,'']]],
   ['softi2c_5fdevice_23',['softi2c_device',['../softi2c_8c.html#structsofti2c__device',1,'']]],
   ['sonar_5fvl53l1x_5fdev_24',['sonar_vl53l1x_dev',['../sonar__vl53l1x_8h.html#structsonar__vl53l1x__dev',1,'']]],
-  ['sonaradc_25',['SonarAdc',['../sonar__adc_8h.html#structSonarAdc',1,'']]],
+  ['sonaradc_25',['SonarADC',['../sonar__adc_8h.html#structSonarADC',1,'']]],
   ['sonarbebop_26',['SonarBebop',['../sonar__bebop_8h.html#structSonarBebop',1,'']]],
   ['sonari2c_27',['SonarI2C',['../sonar__i2c_8h.html#structSonarI2C',1,'']]],
   ['sonarpwm_28',['SonarPwm',['../sonar__pwm_8h.html#structSonarPwm',1,'']]],

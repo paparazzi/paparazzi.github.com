@@ -995,7 +995,7 @@ var annotated_dup =
     [ "smartPortPayload_s", "cc2500__smartport_8h.html#structsmartPortPayload__s", "cc2500__smartport_8h_structsmartPortPayload__s" ],
     [ "softi2c_device", "softi2c_8c.html#structsofti2c__device", "softi2c_8c_structsofti2c__device" ],
     [ "sonar_vl53l1x_dev", "sonar__vl53l1x_8h.html#structsonar__vl53l1x__dev", "sonar__vl53l1x_8h_structsonar__vl53l1x__dev" ],
-    [ "SonarAdc", "sonar__adc_8h.html#structSonarAdc", "sonar__adc_8h_structSonarAdc" ],
+    [ "SonarADC", "sonar__adc_8h.html#structSonarADC", "sonar__adc_8h_structSonarADC" ],
     [ "SonarBebop", "sonar__bebop_8h.html#structSonarBebop", "sonar__bebop_8h_structSonarBebop" ],
     [ "SonarI2C", "sonar__i2c_8h.html#structSonarI2C", "sonar__i2c_8h_structSonarI2C" ],
     [ "SonarPwm", "sonar__pwm_8h.html#structSonarPwm", "sonar__pwm_8h_structSonarPwm" ],

@@ -1,11 +1,13 @@
 var sonar__adc_8h =
 [
-    [ "SonarAdc", "sonar__adc_8h.html#structSonarAdc", [
-      [ "distance", "sonar__adc_8h.html#aae2787b15c1128d1a439a2fa983512a3", null ],
-      [ "meas", "sonar__adc_8h.html#a87a17c6a8f3857a0bfd47e8d086a25f0", null ],
-      [ "offset", "sonar__adc_8h.html#a1573024bf2c354bfc4a4953bb59185f3", null ]
+    [ "SonarADC", "sonar__adc_8h.html#structSonarADC", [
+      [ "distance", "sonar__adc_8h.html#acabbe938cd6fb724d26e580472743d0d", null ],
+      [ "raw", "sonar__adc_8h.html#a11234a88b37151cba41937bd822d8547", null ],
+      [ "scale", "sonar__adc_8h.html#a01ab31803b9de01b7e76ad73c0fce2fa", null ],
+      [ "update_agl", "sonar__adc_8h.html#ae6d8a1275617a9175ba9120b3407a379", null ]
     ] ],
     [ "sonar_adc_init", "sonar__adc_8h.html#a466b5be82e90d99245cf4be834f64c98", null ],
-    [ "sonar_adc_read", "sonar__adc_8h.html#a81358b48616dc678fef01ad225d7e9c4", null ],
-    [ "sonar_adc", "sonar__adc_8h.html#a627d422633eab1f8bdbf3fdcf9359941", null ]
+    [ "sonar_adc_periodic", "sonar__adc_8h.html#acf28f34f078bd10e1abce5e51d9c5abf", null ],
+    [ "sonar_adc_report", "sonar__adc_8h.html#a796588dfdb6e85a4e5cf6b1866b025d7", null ],
+    [ "sonar_adc", "sonar__adc_8h.html#a954992d6080b4ae69af6250783959676", null ]
 ];
