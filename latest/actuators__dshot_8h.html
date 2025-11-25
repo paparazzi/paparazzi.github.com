@@ -100,7 +100,6 @@ $(document).ready(function(){initNavTree('actuators__dshot_8h.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;modules/actuators/actuators_dshot_arch.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for actuators_dshot.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,11 +107,9 @@ $(document).ready(function(){initNavTree('actuators__dshot_8h.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__dshot_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__dshot_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__dshot_8h" id="asw_2airborne_2modules_2actuators_2actuators__dshot_8h">
-<area shape="rect" title=" " alt="" coords="31,5,189,60"/>
-<area shape="rect" title=" " alt="" coords="5,115,60,141"/>
-<area shape="poly" title=" " alt="" coords="90,62,53,106,49,103,86,59"/>
-<area shape="rect" title=" " alt="" coords="85,108,293,148"/>
-<area shape="poly" title=" " alt="" coords="134,59,166,96,162,99,130,62"/>
+<area shape="rect" title=" " alt="" coords="5,5,164,60"/>
+<area shape="rect" title=" " alt="" coords="57,108,112,133"/>
+<area shape="poly" title=" " alt="" coords="87,60,87,94,82,94,82,60"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -122,11 +119,13 @@ $(document).ready(function(){initNavTree('actuators__dshot_8h.html',''); initRes
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__dshot_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__dshot_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__dshot_8hdep" id="asw_2airborne_2modules_2actuators_2actuators__dshot_8hdep">
-<area shape="rect" title=" " alt="" coords="149,5,308,60"/>
+<area shape="rect" title=" " alt="" coords="268,5,427,60"/>
 <area shape="rect" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html" title=" " alt="" coords="5,108,217,163"/>
-<area shape="poly" title=" " alt="" coords="189,71,144,110,140,106,186,67"/>
+<area shape="poly" title=" " alt="" coords="274,68,174,110,172,105,272,63"/>
 <area shape="rect" href="sim_2modules_2actuators_2actuators__dshot__arch_8c.html" title=" " alt="" coords="241,108,453,163"/>
-<area shape="poly" title=" " alt="" coords="272,67,318,106,315,110,268,71"/>
+<area shape="poly" title=" " alt="" coords="350,74,350,108,345,108,345,74"/>
+<area shape="rect" href="actuators__dshot_8c.html" title=" " alt="" coords="477,108,636,163"/>
+<area shape="poly" title=" " alt="" coords="415,63,503,106,501,110,413,68"/>
 </map>
 </div>
 </div>
@@ -145,12 +144,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a981f2b4fe90cef64cb2049d2ea203e2c" id="r_a981f2b4fe90cef64cb2049d2ea203e2c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#a981f2b4fe90cef64cb2049d2ea203e2c">ACTUATORS_DSHOT_NB</a>&#160;&#160;&#160;(8+1)</td></tr>
 <tr class="memdesc:a981f2b4fe90cef64cb2049d2ea203e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maxnum number of DSHOT commands This should be large enough for max applications: 8 motors +1 in case motor count starts at 1 and not 0.  <br /></td></tr>
 <tr class="separator:a981f2b4fe90cef64cb2049d2ea203e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9278f70ed0cac55ff3ec369bc4f9e76" id="r_af9278f70ed0cac55ff3ec369bc4f9e76"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#af9278f70ed0cac55ff3ec369bc4f9e76">ActuatorDShotSet</a>(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_i</a>,  <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>)</td></tr>
-<tr class="separator:af9278f70ed0cac55ff3ec369bc4f9e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace177a3edccab6f82e18c73422af27dd" id="r_ace177a3edccab6f82e18c73422af27dd"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#ace177a3edccab6f82e18c73422af27dd">ActuatorsDShotInit</a>()&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29">actuators_dshot_arch_init</a>()</td></tr>
-<tr class="separator:ace177a3edccab6f82e18c73422af27dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a3d15161ce96f77d0d31fba51fa4be" id="r_a43a3d15161ce96f77d0d31fba51fa4be"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#a43a3d15161ce96f77d0d31fba51fa4be">ActuatorsDShotCommit</a>()&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a>()</td></tr>
-<tr class="separator:a43a3d15161ce96f77d0d31fba51fa4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15db596d83765f0875520798d2d3916a" id="r_a15db596d83765f0875520798d2d3916a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#a15db596d83765f0875520798d2d3916a">ActuatorDShotSet</a>&#160;&#160;&#160;<a class="el" href="actuators__dshot_8c.html#a1c51a3d09758dc76182b65b564ecdbfb">actuators_dshot_set</a></td></tr>
+<tr class="separator:a15db596d83765f0875520798d2d3916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf31608f3b11b75285db34a6d1c5510d" id="r_aaf31608f3b11b75285db34a6d1c5510d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#aaf31608f3b11b75285db34a6d1c5510d">ActuatorsDShotInit</a>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29">actuators_dshot_arch_init</a></td></tr>
+<tr class="separator:aaf31608f3b11b75285db34a6d1c5510d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7115f10b0c6f2fb7b754dda98c11eeed" id="r_a7115f10b0c6f2fb7b754dda98c11eeed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#a7115f10b0c6f2fb7b754dda98c11eeed">ActuatorsDShotCommit</a>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a></td></tr>
+<tr class="separator:a7115f10b0c6f2fb7b754dda98c11eeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -159,6 +158,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1d673a4808cd523c8c47d82ef0c56f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae19151c72d42b6c277faf5da1962d3b3" id="r_ae19151c72d42b6c277faf5da1962d3b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:ae19151c72d42b6c277faf5da1962d3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c51a3d09758dc76182b65b564ecdbfb" id="r_a1c51a3d09758dc76182b65b564ecdbfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__dshot_8h.html#a1c51a3d09758dc76182b65b564ecdbfb">actuators_dshot_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a>, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> value)</td></tr>
+<tr class="separator:a1c51a3d09758dc76182b65b564ecdbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -182,7 +183,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00049">49</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00048">48</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -232,40 +233,18 @@ motor current </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="af9278f70ed0cac55ff3ec369bc4f9e76" name="af9278f70ed0cac55ff3ec369bc4f9e76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9278f70ed0cac55ff3ec369bc4f9e76">&#9670;&#160;</a></span>ActuatorDShotSet</h2>
+<a id="a15db596d83765f0875520798d2d3916a" name="a15db596d83765f0875520798d2d3916a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15db596d83765f0875520798d2d3916a">&#9670;&#160;</a></span>ActuatorDShotSet</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorDShotSet</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_i</a>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorDShotSet&#160;&#160;&#160;<a class="el" href="actuators__dshot_8c.html#a1c51a3d09758dc76182b65b564ecdbfb">actuators_dshot_set</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"> { <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">\</a></div>
-<div class="line"><a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4"> if</a> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a> == 0) { <a class="code hl_variable" href="actuators__dshot_8h.html#aaf9aa75d1fc089615d8cee524e688cac">actuators_dshot_values</a>[<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_i</a>].<a class="code hl_variable" href="actuators__dshot_8h.html#a5d6ef6bb656ecae7efba1192fe1a7982">cmd</a>  = 0; } \</div>
-<div class="line"> <span class="keywordflow">else</span> { <a class="code hl_variable" href="actuators__dshot_8h.html#aaf9aa75d1fc089615d8cee524e688cac">actuators_dshot_values</a>[<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_i</a>].<a class="code hl_variable" href="actuators__dshot_8h.html#a5d6ef6bb656ecae7efba1192fe1a7982">cmd</a> = <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a> + <a class="code hl_define" href="actuators__dshot_8h.html#af356023b6d10daaf341c5d524f411781">ACTUATORS_DSHOT_OFFSET</a>; } \</div>
-<div class="line">}</div>
-<div class="ttc" id="aactuators__dshot_8h_html_a5d6ef6bb656ecae7efba1192fe1a7982"><div class="ttname"><a href="actuators__dshot_8h.html#a5d6ef6bb656ecae7efba1192fe1a7982">dshot::cmd</a></div><div class="ttdeci">float cmd</div><div class="ttdoc">command</div><div class="ttdef"><b>Definition</b> <a href="actuators__dshot_8h_source.html#l00050">actuators_dshot.h:50</a></div></div>
-<div class="ttc" id="aactuators__dshot_8h_html_aaf9aa75d1fc089615d8cee524e688cac"><div class="ttname"><a href="actuators__dshot_8h.html#aaf9aa75d1fc089615d8cee524e688cac">actuators_dshot_values</a></div><div class="ttdeci">struct dshot actuators_dshot_values[ACTUATORS_DSHOT_NB]</div><div class="ttdef"><b>Definition</b> <a href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00052">actuators_dshot_arch.c:52</a></div></div>
-<div class="ttc" id="aactuators__dshot_8h_html_af356023b6d10daaf341c5d524f411781"><div class="ttname"><a href="actuators__dshot_8h.html#af356023b6d10daaf341c5d524f411781">ACTUATORS_DSHOT_OFFSET</a></div><div class="ttdeci">#define ACTUATORS_DSHOT_OFFSET</div><div class="ttdoc">In normal DSHOT, first 48 values are special commands this offset allow to use 0 as the no-throttle c...</div><div class="ttdef"><b>Definition</b> <a href="actuators__dshot_8h_source.html#l00038">actuators_dshot.h:38</a></div></div>
-<div class="ttc" id="amain__demo5_8c_html_ad690ee00a2cf77bbaaf89c3f1ef110d4"><div class="ttname"><a href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">foo</a></div><div class="ttdeci">uint16_t foo</div><div class="ttdef"><b>Definition</b> <a href="main__demo5_8c_source.html#l00058">main_demo5.c:58</a></div></div>
-</div><!-- fragment -->
+
 <p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00067">67</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
 
 </div>
@@ -284,7 +263,7 @@ motor current </td></tr>
 
 <p>Maxnum number of DSHOT commands This should be large enough for max applications: 8 motors +1 in case motor count starts at 1 and not 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00046">46</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00045">45</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
 
 </div>
 </div>
@@ -302,45 +281,39 @@ motor current </td></tr>
 
 <p>In normal DSHOT, first 48 values are special commands this offset allow to use 0 as the no-throttle command This should not be changed unless you know what you are doing. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00038">38</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00037">37</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
 
 </div>
 </div>
-<a id="a43a3d15161ce96f77d0d31fba51fa4be" name="a43a3d15161ce96f77d0d31fba51fa4be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43a3d15161ce96f77d0d31fba51fa4be">&#9670;&#160;</a></span>ActuatorsDShotCommit</h2>
+<a id="a7115f10b0c6f2fb7b754dda98c11eeed" name="a7115f10b0c6f2fb7b754dda98c11eeed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7115f10b0c6f2fb7b754dda98c11eeed">&#9670;&#160;</a></span>ActuatorsDShotCommit</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsDShotCommit</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a>()</td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsDShotCommit&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00072">72</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00069">69</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
 
 </div>
 </div>
-<a id="ace177a3edccab6f82e18c73422af27dd" name="ace177a3edccab6f82e18c73422af27dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace177a3edccab6f82e18c73422af27dd">&#9670;&#160;</a></span>ActuatorsDShotInit</h2>
+<a id="aaf31608f3b11b75285db34a6d1c5510d" name="aaf31608f3b11b75285db34a6d1c5510d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf31608f3b11b75285db34a6d1c5510d">&#9670;&#160;</a></span>ActuatorsDShotInit</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsDShotInit</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29">actuators_dshot_arch_init</a>()</td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsDShotInit&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29">actuators_dshot_arch_init</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00071">71</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8h_source.html#l00068">68</a> of file <a class="el" href="actuators__dshot_8h_source.html">actuators_dshot.h</a>.</p>
 
 </div>
 </div>
@@ -369,9 +342,9 @@ motor current </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00292">292</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html">actuators_dshot_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00291">291</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html">actuators_dshot_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00511">ACT_FEEDBACK_DSHOT_ID</a>, <a class="el" href="actuators__dshot_8h_source.html#l00046">ACTUATORS_DSHOT_NB</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00053">actuators_dshot_private</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00052">actuators_dshot_values</a>, <a class="el" href="actuators__dshot_8h_source.html#l00052">dshot::current</a>, <a class="el" href="esc__dshot_8h_source.html#l00065">DSHOT_BIDIR_ERR_CRC</a>, <a class="el" href="esc__dshot_8h_source.html#l00066">DSHOT_BIDIR_TLM_EDT</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00044">DSHOT_MOTOR_POLES</a>, <a class="el" href="esc__dshot_8c_source.html#l00468">dshotGetTelemetry()</a>, <a class="el" href="esc__dshot_8c_source.html#l00404">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00301">dshotSetThrottle()</a>, <a class="el" href="actuators__dshot_8h_source.html#l00054">dshot::energy</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00047">act_feedback_t::act_feedback_set_t::rpm</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00051">act_feedback_t::rpm</a>, <a class="el" href="actuators__dshot_8h_source.html#l00051">dshot::rpm</a>, <a class="el" href="rpm__sensor_8c_source.html#l00033">rpm</a>, <a class="el" href="modules_2actuators_2actuators_8h.html#a3d40a68fe99dde3cf4c85c1cb1d2b15b">act_feedback_t::set</a>, <a class="el" href="actuators__dshot_8h_source.html#l00055">dshot::temp</a>, and <a class="el" href="actuators__dshot_8h_source.html#l00053">dshot::voltage</a>.</p>
+<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00511">ACT_FEEDBACK_DSHOT_ID</a>, <a class="el" href="actuators__dshot_8h_source.html#l00045">ACTUATORS_DSHOT_NB</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00052">actuators_dshot_private</a>, <a class="el" href="actuators__dshot_8c_source.html#l00028">actuators_dshot_values</a>, <a class="el" href="actuators__dshot_8h_source.html#l00051">dshot::current</a>, <a class="el" href="esc__dshot_8h_source.html#l00065">DSHOT_BIDIR_ERR_CRC</a>, <a class="el" href="esc__dshot_8h_source.html#l00066">DSHOT_BIDIR_TLM_EDT</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00044">DSHOT_MOTOR_POLES</a>, <a class="el" href="esc__dshot_8c_source.html#l00468">dshotGetTelemetry()</a>, <a class="el" href="esc__dshot_8c_source.html#l00404">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00301">dshotSetThrottle()</a>, <a class="el" href="actuators__dshot_8h_source.html#l00053">dshot::energy</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00047">act_feedback_t::act_feedback_set_t::rpm</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00051">act_feedback_t::rpm</a>, <a class="el" href="actuators__dshot_8h_source.html#l00050">dshot::rpm</a>, <a class="el" href="rpm__sensor_8c_source.html#l00033">rpm</a>, <a class="el" href="modules_2actuators_2actuators_8h.html#a3d40a68fe99dde3cf4c85c1cb1d2b15b">act_feedback_t::set</a>, <a class="el" href="actuators__dshot_8h_source.html#l00054">dshot::temp</a>, and <a class="el" href="actuators__dshot_8h_source.html#l00052">dshot::voltage</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -474,9 +447,9 @@ motor current </td></tr>
 
 <p>Arch dependent init. </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00154">154</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html">actuators_dshot_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00153">153</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html">actuators_dshot_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__dshot_8h_source.html#l00046">ACTUATORS_DSHOT_NB</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00053">actuators_dshot_private</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00052">actuators_dshot_values</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00152">CONCAT_GPIO</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00135">dshot_init_struct()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00144">dshot_set_struct()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00113">esc_msg_send()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">gpio_setup_pin_af()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af_pullup()</a>, <a class="el" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR()</a>, and <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>.</p>
+<p class="reference">References <a class="el" href="actuators__dshot_8h_source.html#l00045">ACTUATORS_DSHOT_NB</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00052">actuators_dshot_private</a>, <a class="el" href="actuators__dshot_8c_source.html#l00028">actuators_dshot_values</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00151">CONCAT_GPIO</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00134">dshot_init_struct()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00143">dshot_set_struct()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00112">esc_msg_send()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">gpio_setup_pin_af()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af_pullup()</a>, <a class="el" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR()</a>, and <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -565,6 +538,46 @@ motor current </td></tr>
 
 </div>
 </div>
+<a id="a1c51a3d09758dc76182b65b564ecdbfb" name="a1c51a3d09758dc76182b65b564ecdbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c51a3d09758dc76182b65b564ecdbfb">&#9670;&#160;</a></span>actuators_dshot_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> actuators_dshot_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8c_source.html#l00030">30</a> of file <a class="el" href="actuators__dshot_8c_source.html">actuators_dshot.c</a>.</p>
+
+<p class="reference">References <a class="el" href="actuators__dshot_8h_source.html#l00037">ACTUATORS_DSHOT_OFFSET</a>, <a class="el" href="actuators__dshot_8c_source.html#l00028">actuators_dshot_values</a>, <a class="el" href="actuators__dshot_8h_source.html#l00049">dshot::cmd</a>, and <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aaf9aa75d1fc089615d8cee524e688cac" name="aaf9aa75d1fc089615d8cee524e688cac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf9aa75d1fc089615d8cee524e688cac">&#9670;&#160;</a></span>actuators_dshot_values</h2>
@@ -586,9 +599,9 @@ motor current </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00052">52</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html">actuators_dshot_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__dshot_8c_source.html#l00028">28</a> of file <a class="el" href="actuators__dshot_8c_source.html">actuators_dshot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00292">actuators_dshot_arch_commit()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00154">actuators_dshot_arch_init()</a>, and <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00113">esc_msg_send()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00291">actuators_dshot_arch_commit()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00153">actuators_dshot_arch_init()</a>, <a class="el" href="actuators__dshot_8c_source.html#l00030">actuators_dshot_set()</a>, and <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00112">esc_msg_send()</a>.</p>
 
 </div>
 </div>
@@ -598,7 +611,7 @@ motor current </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__dshot_8h.html">actuators_dshot.h</a></li>
-    <li class="footer">Generated on Thu Nov 20 2025 06:57:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 25 2025 16:03:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -10,6 +10,7 @@ var actuators__sts3032_8c =
     [ "actuators_sts3032_lock_eprom", "actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17", null ],
     [ "actuators_sts3032_move", "actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b", null ],
     [ "actuators_sts3032_periodic", "actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570", null ],
+    [ "actuators_sts3032_set", "actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0", null ],
     [ "actuators_sts3032_set_id", "actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f", null ],
     [ "actuators_sts3032_set_response_level", "actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515", null ],
     [ "handle_reply", "actuators__sts3032_8c.html#adc246c4604a9f3fc8ae3345061a8a7b9", null ],

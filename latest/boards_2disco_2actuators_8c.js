@@ -18,7 +18,7 @@ var boards_2disco_2actuators_8c =
     [ "actuators_disco_checksum", "boards_2disco_2actuators_8c.html#ae8447f1d6fb4ecea09c6223c57a0d5b1", null ],
     [ "actuators_disco_commit", "boards_2disco_2actuators_8c.html#a0181db6b0eea7688d52e6b73b141549b", null ],
     [ "actuators_disco_init", "boards_2disco_2actuators_8c.html#afaa9f697f15948e9f99da2e8a1e4840a", null ],
-    [ "actuators_disco_set", "boards_2disco_2actuators_8c.html#aee9c4499f32c1157c62c8d2a47f600d7", null ],
+    [ "actuators_disco_set", "boards_2disco_2actuators_8c.html#a1d626c428b1d243c1be5d3be7b0a8c17", null ],
     [ "actuators_disco", "boards_2disco_2actuators_8c.html#aa93674169d4a6af97c20ae397c55793c", null ],
     [ "disco_channels", "boards_2disco_2actuators_8c.html#ae7f7db15e6ce95dfaee72acf95d2b660", null ],
     [ "obs_data", "boards_2disco_2actuators_8c.html#abfd8b4cc872b6c0e90909c61baa4d9bd", null ]

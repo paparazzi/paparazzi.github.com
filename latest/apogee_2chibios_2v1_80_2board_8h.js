@@ -1,7 +1,7 @@
 var apogee_2chibios_2v1_80_2board_8h =
 [
     [ "_CONCAT_BOARD_PARAM", "apogee_2chibios_2v1_80_2board_8h.html#a00cbc08b2249df24b1d43d5ca62df28e", null ],
-    [ "ActuatorDefaultSet", "apogee_2chibios_2v1_80_2board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0", null ],
+    [ "ActuatorDefaultSet", "apogee_2chibios_2v1_80_2board_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b", null ],
     [ "ActuatorsDefaultCommit", "apogee_2chibios_2v1_80_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210", null ],
     [ "ActuatorsDefaultInit", "apogee_2chibios_2v1_80_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2", null ],
     [ "ADC1_IN4", "apogee_2chibios_2v1_80_2board_8h.html#abb766578beb65995c4443d979a2f348c", null ],

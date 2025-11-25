@@ -8,7 +8,7 @@ var actuators__asctec__v2_8h =
       [ "nb_err", "actuators__asctec__v2_8h.html#ac100afb65635c28fdfba71224bd19086", null ],
       [ "new_addr", "actuators__asctec__v2_8h.html#a6df55f318bb205b13300e3e3f82c265f", null ]
     ] ],
-    [ "ActuatorAsctec_v2Set", "actuators__asctec__v2_8h.html#a657f769212808f2ccce78518e6dfee72", null ],
+    [ "ActuatorAsctec_v2Set", "actuators__asctec__v2_8h.html#ac7df3985953e9eee56c0c3b0364fa058", null ],
     [ "actuators_asctec_v2_SetCommand", "actuators__asctec__v2_8h.html#a21eef0a32259717195c86b77e7422ad0", null ],
     [ "actuators_asctec_v2_SetCurAddr", "actuators__asctec__v2_8h.html#a15f2b71b71eae0fc52eee4ef84258da9", null ],
     [ "actuators_asctec_v2_SetNewAddr", "actuators__asctec__v2_8h.html#aebec7af749be96faadbfe79af32144bb", null ],
@@ -26,7 +26,8 @@ var actuators__asctec__v2_8h =
       [ "REVERSE", "actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea906b7cc20b42994dda4da492767c1de9", null ],
       [ "SET_ADDR", "actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea94edc8e83fd7d0718449d0caeb168ad9", null ]
     ] ],
+    [ "actuators_asctec_v2_commit", "actuators__asctec__v2_8h.html#a1333c7e75097cf8201a012a3a550e527", null ],
     [ "actuators_asctec_v2_init", "actuators__asctec__v2_8h.html#a30996eb62dcda40e1db73c73085c1605", null ],
-    [ "actuators_asctec_v2_set", "actuators__asctec__v2_8h.html#a18a8926daf19ec365257e7ad661540a0", null ],
+    [ "actuators_asctec_v2_set", "actuators__asctec__v2_8h.html#a1e1b7bf1403dec663402e80d0c18f60a", null ],
     [ "actuators_asctec_v2", "actuators__asctec__v2_8h.html#a4b4665aff82e322b473fb57569821f20", null ]
 ];

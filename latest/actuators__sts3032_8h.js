@@ -19,7 +19,7 @@ var actuators__sts3032_8h =
     ] ],
     [ "ActuatorsSTS3032Commit", "actuators__sts3032_8h.html#a1c82aafffccc454a5385887fabba118c", null ],
     [ "ActuatorsSTS3032Init", "actuators__sts3032_8h.html#a52ef8bb18cb47ae7ee0d25dcdb70b2ce", null ],
-    [ "ActuatorSTS3032Set", "actuators__sts3032_8h.html#ad819f084c328cf794d7e9f5036c91643", null ],
+    [ "ActuatorSTS3032Set", "actuators__sts3032_8h.html#a9e36b3c12a47c1b53ee1be0b779ac9b7", null ],
     [ "sts3032_rx_state", "actuators__sts3032_8h.html#aeb9b07c4c267f4c318cad10183203586", [
       [ "STS3032_RX_IDLE", "actuators__sts3032_8h.html#aeb9b07c4c267f4c318cad10183203586a5690d4bbb081219ed6945562932155df", null ],
       [ "STS3032_RX_HEAD_OK", "actuators__sts3032_8h.html#aeb9b07c4c267f4c318cad10183203586a8613eeaabd14753a31fe6a2f2ebbd025", null ],
@@ -30,6 +30,7 @@ var actuators__sts3032_8h =
     [ "actuators_sts3032_lock_eprom", "actuators__sts3032_8h.html#ac3240544cfb9d563f2d39468b07b7c17", null ],
     [ "actuators_sts3032_move", "actuators__sts3032_8h.html#a9ef3c56797f1136790d59d25fdac2f9b", null ],
     [ "actuators_sts3032_periodic", "actuators__sts3032_8h.html#ad8a7fc8eeb56e0bed35c9948b7b01570", null ],
+    [ "actuators_sts3032_set", "actuators__sts3032_8h.html#a20b8e4181245fc158f836d65ed3c89a0", null ],
     [ "actuators_sts3032_set_id", "actuators__sts3032_8h.html#a0debee454ff1ccb307f3438045665f9f", null ],
     [ "actuators_sts3032_set_response_level", "actuators__sts3032_8h.html#a487e811350039ebd0a1e680f4b940515", null ],
     [ "id_idx", "actuators__sts3032_8h.html#ac5fb2dab95ba434c79867493b622ab9a", null ],

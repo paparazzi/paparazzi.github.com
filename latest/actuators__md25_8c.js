@@ -24,9 +24,10 @@ var actuators__md25_8c =
     [ "MD25_REG_SOFT_REV", "actuators__md25_8c.html#ad4702b695824dd5f432d1bc3cfcb42ad", null ],
     [ "MD25_REG_SPEED1", "actuators__md25_8c.html#ae727dcb358820c7a2a642c27028cc4b9", null ],
     [ "MD25_REG_SPEED2", "actuators__md25_8c.html#a673df45135748ce14e41b88819d0f8dc", null ],
+    [ "actuators_md25_commit", "actuators__md25_8c.html#ae18b60d1fe24ef52f410814e0a53eabe", null ],
     [ "actuators_md25_event", "actuators__md25_8c.html#af0abcfcaffff7f4177be22a8e82bd0ae", null ],
     [ "actuators_md25_init", "actuators__md25_8c.html#a20baf4674f96987af95661171b1142e8", null ],
     [ "actuators_md25_periodic", "actuators__md25_8c.html#abe0491a24f5f9b0ea2f2223928088208", null ],
-    [ "actuators_md25_set", "actuators__md25_8c.html#ae103fdc62f173d6ad6cd89e49f52b5fb", null ],
+    [ "actuators_md25_set", "actuators__md25_8c.html#a77a502dcd906782feaa0eaf086a88f61", null ],
     [ "actuators_md25", "actuators__md25_8c.html#aee6c7d9ed3769a0d8f09f9286300023b", null ]
 ];

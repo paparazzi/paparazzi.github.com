@@ -2,6 +2,7 @@ var stm32_2modules_2actuators_2actuators__dualpwm__arch_8c =
 [
     [ "actuators_dualpwm_arch_init", "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a40854a0e0bb6575b76e4bb7d02d24c42", null ],
     [ "actuators_dualpwm_commit", "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a562503833611ce2cc80e90dfb3540800", null ],
+    [ "actuators_dualpwm_set", "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#aa44d5ab13caadf59f5d425cbf9320d40", null ],
     [ "clear_timer_flag", "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#acd2f86fcb3553dedcde8e395b93b05e0", null ],
     [ "dual_pwm_isr", "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0", null ],
     [ "set_dual_pwm_timer_s_oc", "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a2020e14708a65e7b0191865678610bf6", null ],

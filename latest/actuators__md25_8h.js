@@ -11,12 +11,13 @@ var actuators__md25_8h =
       [ "trans_cmd", "actuators__md25_8h.html#acfbc521a00ab9b8b00c939389ff07b08", null ],
       [ "trans_sensors", "actuators__md25_8h.html#a1f39053a0e34b102f3a03f20368369f9", null ]
     ] ],
-    [ "ActuatorMD25Set", "actuators__md25_8h.html#af775fc8745afaae6333878f3440eaa12", null ],
+    [ "ActuatorMD25Set", "actuators__md25_8h.html#a2c5636a80d30652705282426fdbb5eea", null ],
     [ "ActuatorsMD25Commit", "actuators__md25_8h.html#ab1e82774c5627ebd27f559f03abc2f76", null ],
     [ "ActuatorsMD25Init", "actuators__md25_8h.html#a5b574aa030535a3eee2ef249f058fc3d", null ],
+    [ "actuators_md25_commit", "actuators__md25_8h.html#ae18b60d1fe24ef52f410814e0a53eabe", null ],
     [ "actuators_md25_event", "actuators__md25_8h.html#af0abcfcaffff7f4177be22a8e82bd0ae", null ],
     [ "actuators_md25_init", "actuators__md25_8h.html#a20baf4674f96987af95661171b1142e8", null ],
     [ "actuators_md25_periodic", "actuators__md25_8h.html#abe0491a24f5f9b0ea2f2223928088208", null ],
-    [ "actuators_md25_set", "actuators__md25_8h.html#ae103fdc62f173d6ad6cd89e49f52b5fb", null ],
+    [ "actuators_md25_set", "actuators__md25_8h.html#a77a502dcd906782feaa0eaf086a88f61", null ],
     [ "actuators_md25", "actuators__md25_8h.html#aee6c7d9ed3769a0d8f09f9286300023b", null ]
 ];

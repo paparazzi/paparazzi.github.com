@@ -9,12 +9,13 @@ var actuators__dshot_8h =
       [ "temp", "actuators__dshot_8h.html#a7ddb6a605c1f16e86032943ef09831bf", null ],
       [ "voltage", "actuators__dshot_8h.html#a8005640683ebe5fbb0375c51d0390547", null ]
     ] ],
-    [ "ActuatorDShotSet", "actuators__dshot_8h.html#af9278f70ed0cac55ff3ec369bc4f9e76", null ],
+    [ "ActuatorDShotSet", "actuators__dshot_8h.html#a15db596d83765f0875520798d2d3916a", null ],
     [ "ACTUATORS_DSHOT_NB", "actuators__dshot_8h.html#a981f2b4fe90cef64cb2049d2ea203e2c", null ],
     [ "ACTUATORS_DSHOT_OFFSET", "actuators__dshot_8h.html#af356023b6d10daaf341c5d524f411781", null ],
-    [ "ActuatorsDShotCommit", "actuators__dshot_8h.html#a43a3d15161ce96f77d0d31fba51fa4be", null ],
-    [ "ActuatorsDShotInit", "actuators__dshot_8h.html#ace177a3edccab6f82e18c73422af27dd", null ],
+    [ "ActuatorsDShotCommit", "actuators__dshot_8h.html#a7115f10b0c6f2fb7b754dda98c11eeed", null ],
+    [ "ActuatorsDShotInit", "actuators__dshot_8h.html#aaf31608f3b11b75285db34a6d1c5510d", null ],
     [ "actuators_dshot_arch_commit", "actuators__dshot_8h.html#ae19151c72d42b6c277faf5da1962d3b3", null ],
     [ "actuators_dshot_arch_init", "actuators__dshot_8h.html#a1d673a4808cd523c8c47d82ef0c56f29", null ],
+    [ "actuators_dshot_set", "actuators__dshot_8h.html#a1c51a3d09758dc76182b65b564ecdbfb", null ],
     [ "actuators_dshot_values", "actuators__dshot_8h.html#aaf9aa75d1fc089615d8cee524e688cac", null ]
 ];

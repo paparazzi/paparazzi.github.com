@@ -22,7 +22,7 @@ var actuators__esc32_8h =
       [ "responses", "actuators__esc32_8h.html#ae06266e577962487553331eeb6cf7294", null ],
       [ "status", "actuators__esc32_8h.html#ab1c5e8844004228b0669a75fdbfb15af", null ]
     ] ],
-    [ "ActuatorESC32Set", "actuators__esc32_8h.html#a6b00ef60629df21d60951c4430802302", null ],
+    [ "ActuatorESC32Set", "actuators__esc32_8h.html#a8642f0e2efeebdcbfc5bdf9f24a2f03e", null ],
     [ "ActuatorsESC32Commit", "actuators__esc32_8h.html#a3276b49023894745c976e2d50843dd48", null ],
     [ "ActuatorsESC32Init", "actuators__esc32_8h.html#a7a0ee4f5eb05f55a52d10fed70f431e6", null ],
     [ "ESC32_CAN_DOC_MASK", "actuators__esc32_8h.html#ad62e4c3df9fc2fb0768a90b2b3e3bdaa", null ],
@@ -71,6 +71,6 @@ var actuators__esc32_8h =
     [ "actuators_esc32_commit", "actuators__esc32_8h.html#a699563136f20e59e607791d62ac81660", null ],
     [ "actuators_esc32_config_cmd", "actuators__esc32_8h.html#a8d41ab7b14c53b0834f1f238a6528d13", null ],
     [ "actuators_esc32_init", "actuators__esc32_8h.html#add58c115774df9caa262424894e2cf56", null ],
-    [ "actuators_esc32_set", "actuators__esc32_8h.html#ae951efe4ff751720b166f1240380b5da", null ],
+    [ "actuators_esc32_set", "actuators__esc32_8h.html#a4959dae4bc05cb18b9c3d401d54a1ecf", null ],
     [ "actuators_esc32", "actuators__esc32_8h.html#a734f00b369b314993c223f20b10b0830", null ]
 ];

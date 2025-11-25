@@ -135,6 +135,7 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
+<li><a class="el" href="actuators__dshot_8c.html">modules/actuators/actuators_dshot.c</a></li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: modules/actuators/actuators_dshot_arch.c</li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: <a class="el" href="esc__dshot_8c.html" title="DSHOT driver based on ChibiOS.">modules/actuators/esc_dshot.c</a></li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: <a class="el" href="hal__stm32__dma_8c.html" title="STM32 DMA subsystem driver header.">mcu_periph/hal_stm32_dma.c</a></li>
@@ -175,6 +176,7 @@ Raw actuators_dshot.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_BIDIR&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_dshot.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_dshot_arch.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;esc_dshot.c&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(RTOS),chibios)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;hal_stm32_dma.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(RTOS),chibios)&quot;</span>/&gt;</div>
@@ -199,7 +201,7 @@ Raw actuators_dshot.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 20 2025 06:57:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 25 2025 16:03:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

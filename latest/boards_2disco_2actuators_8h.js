@@ -21,9 +21,9 @@ var boards_2disco_2actuators_8h =
     [ "ACTUATORS_DISCO_TOGGLE_GPIO", "boards_2disco_2actuators_8h.html#ad413fa3a4caf5070a84fc3c7117114b7", null ],
     [ "ActuatorsDiscoCommit", "boards_2disco_2actuators_8h.html#ad2b068090e5983ce702f4355cabc017a", null ],
     [ "ActuatorsDiscoInit", "boards_2disco_2actuators_8h.html#a4cc4237c65679c5c9b0300deedf4cd1c", null ],
-    [ "ActuatorsDiscoSet", "boards_2disco_2actuators_8h.html#ae6153795b5ac8e840dfe148c38779be5", null ],
+    [ "ActuatorsDiscoSet", "boards_2disco_2actuators_8h.html#a43d14e153720ea68e613bb1a86b42789", null ],
     [ "actuators_disco_commit", "boards_2disco_2actuators_8h.html#a0181db6b0eea7688d52e6b73b141549b", null ],
     [ "actuators_disco_init", "boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a", null ],
-    [ "actuators_disco_set", "boards_2disco_2actuators_8h.html#aee9c4499f32c1157c62c8d2a47f600d7", null ],
+    [ "actuators_disco_set", "boards_2disco_2actuators_8h.html#a1d626c428b1d243c1be5d3be7b0a8c17", null ],
     [ "actuators_disco", "boards_2disco_2actuators_8h.html#aa93674169d4a6af97c20ae397c55793c", null ]
 ];

@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8h.html'
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">actuators.h File Reference</div></div>
 </div><!--header-->
@@ -208,6 +209,14 @@ Data Structures</h2></td></tr>
 <tr class="separator:structact__feedback__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structact__feedback__t_1_1act__feedback__set__t" id="r_structact__feedback__t_1_1act__feedback__set__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t">act_feedback_t::act_feedback_set_t</a></td></tr>
 <tr class="separator:structact__feedback__t_1_1act__feedback__set__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structact__config__t" id="r_structact__config__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8h.html#structact__config__t">act_config_t</a></td></tr>
+<tr class="separator:structact__config__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a1c21086893057024f68ecfc8dc91375b" id="r_a1c21086893057024f68ecfc8dc91375b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">typedef</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8h.html#a1c21086893057024f68ecfc8dc91375b">act_set_t</a>) (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">driver_idx</a>, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">driver_value</a>)</td></tr>
+<tr class="memdesc:a1c21086893057024f68ecfc8dc91375b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actuator set callback.  <br /></td></tr>
+<tr class="separator:a1c21086893057024f68ecfc8dc91375b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -307,6 +316,93 @@ RPM is set. </td></tr>
 
 </div>
 </div>
+<a name="structact__config__t" id="structact__config__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structact__config__t">&#9670;&#160;</a></span>act_config_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct act_config_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00056">56</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="acec2a429d2e03147123401f5f2bb7fe5" name="acec2a429d2e03147123401f5f2bb7fe5"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+driver_no</td>
+<td class="fielddoc">
+Driver number. </td></tr>
+<tr><td class="fieldtype">
+<a id="a9fc7f34fc87670f6bb1a7e04517878a7" name="a9fc7f34fc87670f6bb1a7e04517878a7"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+Driver max value (or motor max position) </td></tr>
+<tr><td class="fieldtype">
+<a id="a464629beccdf759897afca500f306191" name="a464629beccdf759897afca500f306191"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+Driver min value (or motor stop position) </td></tr>
+<tr><td class="fieldtype">
+<a id="a5f8783b20ebdfe40e0ba4ee0502f0910" name="a5f8783b20ebdfe40e0ba4ee0502f0910"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+neutral</td>
+<td class="fielddoc">
+Driver neutral value (or motor idle position) </td></tr>
+<tr><td class="fieldtype">
+<a id="aa7a375a40b0b16100396a97c7df1a45b" name="aa7a375a40b0b16100396a97c7df1a45b"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+servo_idx</td>
+<td class="fielddoc">
+Driver servo index. </td></tr>
+<tr><td class="fieldtype">
+<a id="ae03941b4cc2cf37dd965a8ce3efdc94e" name="ae03941b4cc2cf37dd965a8ce3efdc94e"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+travel_down</td>
+<td class="fielddoc">
+Precomputed travel down coef. </td></tr>
+<tr><td class="fieldtype">
+<a id="a00b410f54aa812f678b91a195cfd8142" name="a00b410f54aa812f678b91a195cfd8142"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+travel_up</td>
+<td class="fielddoc">
+Precomputed travel up coef. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a1c21086893057024f68ecfc8dc91375b" name="a1c21086893057024f68ecfc8dc91375b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c21086893057024f68ecfc8dc91375b">&#9670;&#160;</a></span>act_set_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">typedef</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(* act_set_t) (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">driver_idx</a>, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">driver_value</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actuator set callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">driver_idx</td><td>actuator index in driver frame </td></tr>
+    <tr><td class="paramname">driver_value</td><td>actuator value in driver unit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00071">71</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7ba1bde30e3a87694e878b244de10c47" name="a7ba1bde30e3a87694e878b244de10c47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ba1bde30e3a87694e878b244de10c47">&#9670;&#160;</a></span>actuators_init()</h2>
@@ -332,7 +428,7 @@ RPM is set. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00138">138</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00324">324</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="setup__actuators_8c_source.html#l00070">main_init()</a>, and <a class="el" href="px4__gimbal_8c_source.html#l00036">px4_gimbal_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -382,7 +478,7 @@ RPM is set. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00139">139</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00325">325</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
 
 </div>
 </div>
@@ -392,7 +488,7 @@ RPM is set. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators_8h.html">actuators.h</a></li>
-    <li class="footer">Generated on Thu Nov 20 2025 06:57:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 25 2025 16:03:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

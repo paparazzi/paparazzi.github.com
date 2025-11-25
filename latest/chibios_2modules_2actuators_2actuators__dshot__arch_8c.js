@@ -12,6 +12,5 @@ var chibios_2modules_2actuators_2actuators__dshot__arch_8c =
     [ "dshot_init_struct", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa", null ],
     [ "dshot_set_struct", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aad0c5b9f4cd9c07eef68c312b0d28c86", null ],
     [ "esc_msg_send", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#acfc5421a5091a1933410c3e63bc765a5", null ],
-    [ "actuators_dshot_private", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1f78a2730da7d3925ebf7f6657efe64a", null ],
-    [ "actuators_dshot_values", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aaf9aa75d1fc089615d8cee524e688cac", null ]
+    [ "actuators_dshot_private", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1f78a2730da7d3925ebf7f6657efe64a", null ]
 ];

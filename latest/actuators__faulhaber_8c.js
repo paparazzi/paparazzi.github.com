@@ -23,6 +23,7 @@ var actuators__faulhaber_8c =
     [ "actuators_faulhaber_event", "actuators__faulhaber_8c.html#a51a6848f02cd6b0e522c9178247d01ef", null ],
     [ "actuators_faulhaber_init", "actuators__faulhaber_8c.html#af272406e147a11c8a048c6c6d545ec63", null ],
     [ "actuators_faulhaber_periodic", "actuators__faulhaber_8c.html#ae6d47e2d26846abcb444791cb793a01d", null ],
+    [ "actuators_faulhaber_set", "actuators__faulhaber_8c.html#aaca5f5f3ac6092f6ef3e2a53a0a2ee9e", null ],
     [ "actuators_faulhaber_SetMode", "actuators__faulhaber_8c.html#afbc7098516997f6c3ced6743dc06ac10", null ],
     [ "faulhaber_crc8", "actuators__faulhaber_8c.html#a4062e188b9f59ab77a0193e7e42eb5e3", null ],
     [ "faulhaber_parse_msg", "actuators__faulhaber_8c.html#acf2b3ac1e2d0d363ee44a9ea14426156", null ],

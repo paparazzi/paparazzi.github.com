@@ -110,6 +110,7 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
+<li><a class="el" href="actuators__pwm_8c.html">modules/actuators/actuators_pwm.c</a></li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: modules/actuators/actuators_pwm_arch.c</li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: <a class="el" href="actuators__shared__arch_8c.html" title="STM32 PWM and dualPWM servos shared functions.">modules/actuators/actuators_shared_arch.c</a></li>
 </ul>
@@ -130,9 +131,11 @@ Raw actuators_pwm.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_pwm.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_pwm.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_pwm_arch.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_shared_arch.c&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), stm32)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -143,7 +146,7 @@ Raw actuators_pwm.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 20 2025 06:57:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 25 2025 16:03:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

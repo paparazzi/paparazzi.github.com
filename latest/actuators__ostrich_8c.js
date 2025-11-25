@@ -28,6 +28,7 @@ var actuators__ostrich_8c =
     [ "TURN_OF_CMD", "actuators__ostrich_8c.html#a786b826d2d44f4a52964b959273e9291", null ],
     [ "actuators_ostrich_init", "actuators__ostrich_8c.html#a4a38a1c6098362dedcb0fff4f1e7416d", null ],
     [ "actuators_ostrich_periodic", "actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32", null ],
+    [ "actuators_ostrich_set", "actuators__ostrich_8c.html#a41451e70c8b0a0562edef32c9b5242e7", null ],
     [ "compute_checksum", "actuators__ostrich_8c.html#afe8acf1d19857fa47c3e77a01679f072", null ],
     [ "speed_cmd_to_msg", "actuators__ostrich_8c.html#a9193275b205ede3c3fcc9e78162bdb8a", null ],
     [ "turn_cmd_to_msg", "actuators__ostrich_8c.html#a3ca157b6909ad6fcbefe0afec21ee97d", null ],

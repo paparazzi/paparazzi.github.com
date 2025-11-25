@@ -6,10 +6,11 @@ var actuators__spektrum_8h =
       [ "device2", "actuators__spektrum_8h.html#a5bfc898cf45f9d4ca16980c978ae2212", null ]
     ] ],
     [ "ACTUATORS_SPEKTRUM_MAX_NB", "actuators__spektrum_8h.html#aa4fceb791f3186eb38a70cc5706f9b85", null ],
-    [ "ActuatorSpektrumSet", "actuators__spektrum_8h.html#a27a0f196bed7d9b7349d0c8a40226bb1", null ],
+    [ "ActuatorSpektrumSet", "actuators__spektrum_8h.html#a60e479aaccdcd45f0abfcdbcdb51c2d2", null ],
     [ "ActuatorsSpektrumCommit", "actuators__spektrum_8h.html#a2f8fa24a5147ea597ef4eca1aea55d51", null ],
     [ "ActuatorsSpektrumInit", "actuators__spektrum_8h.html#aad2567b9120121fe5010c619e9113411", null ],
+    [ "actuators_spektrum_commit", "actuators__spektrum_8h.html#a2b1a41ae5fde47c81232fcc890961107", null ],
     [ "actuators_spektrum_init", "actuators__spektrum_8h.html#abb2976a5407c78fb22f74d2c631dc2c8", null ],
-    [ "actuators_spektrum_set", "actuators__spektrum_8h.html#a166569d0e5d830b35538915040d59425", null ],
+    [ "actuators_spektrum_set", "actuators__spektrum_8h.html#a037bd3a13d238c02d37d7a41c2a19dd3", null ],
     [ "actuators_spektrum", "actuators__spektrum_8h.html#a6984ce4cd7ccb105043c1f3422a249ca", null ]
 ];

@@ -93,11 +93,13 @@ $(document).ready(function(){initNavTree('actuators__pwm_8h.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">actuators_pwm.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;modules/actuators/actuators_pwm_arch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &quot;modules/actuators/actuators_pwm_arch.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for actuators_pwm.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,9 +107,11 @@ $(document).ready(function(){initNavTree('actuators__pwm_8h.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__pwm_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__pwm_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__pwm_8h" id="asw_2airborne_2modules_2actuators_2actuators__pwm_8h">
-<area shape="rect" title=" " alt="" coords="8,5,211,45"/>
-<area shape="rect" title=" " alt="" coords="5,93,213,133"/>
-<area shape="poly" title=" " alt="" coords="112,46,112,79,107,79,107,46"/>
+<area shape="rect" title=" " alt="" coords="9,5,211,45"/>
+<area shape="rect" title=" " alt="" coords="5,101,60,126"/>
+<area shape="poly" title=" " alt="" coords="95,47,54,92,50,88,91,44"/>
+<area shape="rect" title=" " alt="" coords="85,93,293,133"/>
+<area shape="poly" title=" " alt="" coords="129,44,164,81,160,85,125,47"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -117,13 +121,17 @@ $(document).ready(function(){initNavTree('actuators__pwm_8h.html',''); initResiz
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__pwm_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__pwm_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__pwm_8hdep" id="asw_2airborne_2modules_2actuators_2actuators__pwm_8hdep">
-<area shape="rect" title=" " alt="" coords="246,5,449,45"/>
+<area shape="rect" title=" " alt="" coords="482,5,685,45"/>
 <area shape="rect" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html" title="Interface from actuators to ChibiOS PWM driver." alt="" coords="5,93,217,148"/>
-<area shape="poly" title=" " alt="" coords="288,53,179,96,177,91,286,48"/>
+<area shape="poly" title=" " alt="" coords="469,50,229,96,218,98,217,93,228,91,468,45"/>
 <area shape="rect" href="linux_2modules_2actuators_2actuators__pwm__arch_8c.html" title=" " alt="" coords="241,93,453,148"/>
-<area shape="poly" title=" " alt="" coords="350,59,350,93,345,93,345,59"/>
-<area shape="rect" href="stm32_2modules_2actuators_2actuators__pwm__arch_8c.html" title="STM32 PWM servos handling." alt="" coords="477,93,689,148"/>
-<area shape="poly" title=" " alt="" coords="409,48,518,91,516,96,407,53"/>
+<area shape="poly" title=" " alt="" coords="524,53,415,96,413,91,522,48"/>
+<area shape="rect" href="sim_2modules_2actuators_2actuators__pwm__arch_8c.html" title="dummy servos handling for linux" alt="" coords="477,93,689,148"/>
+<area shape="poly" title=" " alt="" coords="586,59,586,93,581,93,581,59"/>
+<area shape="rect" href="stm32_2modules_2actuators_2actuators__pwm__arch_8c.html" title="STM32 PWM servos handling." alt="" coords="713,93,925,148"/>
+<area shape="poly" title=" " alt="" coords="645,48,754,91,752,96,643,53"/>
+<area shape="rect" href="actuators__pwm_8c.html" title=" " alt="" coords="950,101,1153,141"/>
+<area shape="poly" title=" " alt="" coords="699,44,939,91,972,98,971,103,937,96,698,50"/>
 </map>
 </div>
 </div>
@@ -131,36 +139,134 @@ $(document).ready(function(){initNavTree('actuators__pwm_8h.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a695dcfe2d3a05ebc5d7a3fe1d3a78241" id="r_a695dcfe2d3a05ebc5d7a3fe1d3a78241"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a695dcfe2d3a05ebc5d7a3fe1d3a78241">ActuatorsPwmInit</a>()&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606">actuators_pwm_arch_init</a>()</td></tr>
-<tr class="separator:a695dcfe2d3a05ebc5d7a3fe1d3a78241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d4247d6cfc6a0dc584ca7a7f41115b" id="r_a68d4247d6cfc6a0dc584ca7a7f41115b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a68d4247d6cfc6a0dc584ca7a7f41115b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cbcffa16266d5c37f7b238b11aeaad" id="r_a73cbcffa16266d5c37f7b238b11aeaad"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a73cbcffa16266d5c37f7b238b11aeaad">ActuatorPwmSet</a>&#160;&#160;&#160;<a class="el" href="actuators__pwm_8c.html#a74850a82401ea420b68ca1b3d6cbb98d">actuators_pwm_set</a></td></tr>
+<tr class="memdesc:a73cbcffa16266d5c37f7b238b11aeaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility macros.  <br /></td></tr>
+<tr class="separator:a73cbcffa16266d5c37f7b238b11aeaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9589cda885833bfc0a0023924784897a" id="r_a9589cda885833bfc0a0023924784897a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a9589cda885833bfc0a0023924784897a">ActuatorsPwmInit</a>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606">actuators_pwm_arch_init</a></td></tr>
+<tr class="separator:a9589cda885833bfc0a0023924784897a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318935d8d5191df9ebfcae4a9165c3f4" id="r_a318935d8d5191df9ebfcae4a9165c3f4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a8cf62d74166fc0ea248b0ac1ebb32b86">actuators_pwm_arch_commit</a></td></tr>
+<tr class="separator:a318935d8d5191df9ebfcae4a9165c3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8f67fe525140a6f4b07b3416bc70f606" id="r_a8f67fe525140a6f4b07b3416bc70f606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a8f67fe525140a6f4b07b3416bc70f606">actuators_pwm_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="memdesc:a8f67fe525140a6f4b07b3416bc70f606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arch dependent init file.  <br /></td></tr>
+<tr class="memdesc:a8f67fe525140a6f4b07b3416bc70f606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arch dependent init function.  <br /></td></tr>
 <tr class="separator:a8f67fe525140a6f4b07b3416bc70f606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf62d74166fc0ea248b0ac1ebb32b86" id="r_a8cf62d74166fc0ea248b0ac1ebb32b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a8cf62d74166fc0ea248b0ac1ebb32b86">actuators_pwm_arch_commit</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="memdesc:a8cf62d74166fc0ea248b0ac1ebb32b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arch dependent commit function.  <br /></td></tr>
+<tr class="separator:a8cf62d74166fc0ea248b0ac1ebb32b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74850a82401ea420b68ca1b3d6cbb98d" id="r_a74850a82401ea420b68ca1b3d6cbb98d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a74850a82401ea420b68ca1b3d6cbb98d">actuators_pwm_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a>, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> value)</td></tr>
+<tr class="memdesc:a74850a82401ea420b68ca1b3d6cbb98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set actuator value in array.  <br /></td></tr>
+<tr class="separator:a74850a82401ea420b68ca1b3d6cbb98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a11c780a31ca1af3dc366bba41f431989" id="r_a11c780a31ca1af3dc366bba41f431989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__pwm_8h.html#a11c780a31ca1af3dc366bba41f431989">actuators_pwm_values</a> [<a class="el" href="cc3d_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a>]</td></tr>
+<tr class="separator:a11c780a31ca1af3dc366bba41f431989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a695dcfe2d3a05ebc5d7a3fe1d3a78241" name="a695dcfe2d3a05ebc5d7a3fe1d3a78241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a695dcfe2d3a05ebc5d7a3fe1d3a78241">&#9670;&#160;</a></span>ActuatorsPwmInit</h2>
+<a id="a73cbcffa16266d5c37f7b238b11aeaad" name="a73cbcffa16266d5c37f7b238b11aeaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cbcffa16266d5c37f7b238b11aeaad">&#9670;&#160;</a></span>ActuatorPwmSet</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsPwmInit</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606">actuators_pwm_arch_init</a>()</td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorPwmSet&#160;&#160;&#160;<a class="el" href="actuators__pwm_8c.html#a74850a82401ea420b68ca1b3d6cbb98d">actuators_pwm_set</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__pwm_8h_source.html#l00032">32</a> of file <a class="el" href="actuators__pwm_8h_source.html">actuators_pwm.h</a>.</p>
+<p>Compatibility macros. </p>
+
+<p class="definition">Definition at line <a class="el" href="actuators__pwm_8h_source.html#l00049">49</a> of file <a class="el" href="actuators__pwm_8h_source.html">actuators_pwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a68d4247d6cfc6a0dc584ca7a7f41115b" name="a68d4247d6cfc6a0dc584ca7a7f41115b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d4247d6cfc6a0dc584ca7a7f41115b">&#9670;&#160;</a></span>ACTUATORS_PWM_NB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ACTUATORS_PWM_NB&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="actuators__pwm_8h_source.html#l00029">29</a> of file <a class="el" href="actuators__pwm_8h_source.html">actuators_pwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a318935d8d5191df9ebfcae4a9165c3f4" name="a318935d8d5191df9ebfcae4a9165c3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318935d8d5191df9ebfcae4a9165c3f4">&#9670;&#160;</a></span>ActuatorsPwmCommit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsPwmCommit&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a8cf62d74166fc0ea248b0ac1ebb32b86">actuators_pwm_arch_commit</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="actuators__pwm_8h_source.html#l00051">51</a> of file <a class="el" href="actuators__pwm_8h_source.html">actuators_pwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a9589cda885833bfc0a0023924784897a" name="a9589cda885833bfc0a0023924784897a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9589cda885833bfc0a0023924784897a">&#9670;&#160;</a></span>ActuatorsPwmInit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ActuatorsPwmInit&#160;&#160;&#160;<a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606">actuators_pwm_arch_init</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="actuators__pwm_8h_source.html#l00050">50</a> of file <a class="el" href="actuators__pwm_8h_source.html">actuators_pwm.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a8cf62d74166fc0ea248b0ac1ebb32b86" name="a8cf62d74166fc0ea248b0ac1ebb32b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf62d74166fc0ea248b0ac1ebb32b86">&#9670;&#160;</a></span>actuators_pwm_arch_commit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> actuators_pwm_arch_commit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Arch dependent commit function. </p>
+<p>Arch dependent commit function. </p>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00375">375</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00069">actuators_pwm_values</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00089">PWM_CMD_TO_US</a>, <a class="el" href="naze32__common_8h_source.html#l00211">PWM_SERVO_3</a>, <a class="el" href="naze32__common_8h_source.html#l00212">PWM_SERVO_4</a>, <a class="el" href="naze32__common_8h_source.html#l00213">PWM_SERVO_5</a>, and <a class="el" href="naze32__common_8h_source.html#l00214">PWM_SERVO_6</a>.</p>
+
+</div>
+</div>
 <a id="a8f67fe525140a6f4b07b3416bc70f606" name="a8f67fe525140a6f4b07b3416bc70f606"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f67fe525140a6f4b07b3416bc70f606">&#9670;&#160;</a></span>actuators_pwm_arch_init()</h2>
 
@@ -185,11 +291,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Arch dependent init file. </p>
+<p>Arch dependent init function. </p>
 <p>implemented in arch files</p>
-<p>Arch dependent init file. </p>
+<p>Arch dependent init function. </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00267">267</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00265">265</a> of file <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">gpio_setup_pin_af()</a>, <a class="el" href="matek__f405__wing__v1_8h_source.html#l00428">PWM_TIM12_CHAN_MASK</a>, <a class="el" href="cc3d_8h_source.html#l00238">PWM_TIM1_CHAN_MASK</a>, <a class="el" href="apogee__1_80_8h_source.html#l00336">PWM_TIM2_CHAN_MASK</a>, <a class="el" href="apogee__1_80_8h_source.html#l00337">PWM_TIM3_CHAN_MASK</a>, <a class="el" href="cc3d_8h_source.html#l00236">PWM_TIM4_CHAN_MASK</a>, <a class="el" href="elle0__common_8h_source.html#l00430">PWM_TIM5_CHAN_MASK</a>, <a class="el" href="matek__f405__wing__v1_8h_source.html#l00426">PWM_TIM8_CHAN_MASK</a>, <a class="el" href="openpilot__revo__1_80_8h_source.html#l00367">PWM_TIM9_CHAN_MASK</a>, <a class="el" href="actuators__shared__arch_8c_source.html#l00059">set_servo_timer()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00070">TIM12_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00049">TIM1_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00052">TIM2_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00055">TIM3_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00058">TIM4_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00061">TIM5_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00064">TIM8_SERVO_HZ</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00067">TIM9_SERVO_HZ</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -199,7 +305,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__pwm_8h_a8f67fe525140a6f4b07b3416bc70f606_cgraph.png" border="0" usemap="#aactuators__pwm_8h_a8f67fe525140a6f4b07b3416bc70f606_cgraph" alt=""/></div>
 <map name="aactuators__pwm_8h_a8f67fe525140a6f4b07b3416bc70f606_cgraph" id="aactuators__pwm_8h_a8f67fe525140a6f4b07b3416bc70f606_cgraph">
-<area shape="rect" title="Arch dependent init file." alt="" coords="5,31,191,56"/>
+<area shape="rect" title="Arch dependent init function." alt="" coords="5,31,191,56"/>
 <area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1" title="Setup a gpio for input or output with alternate function." alt="" coords="239,5,379,31"/>
 <area shape="poly" title=" " alt="" coords="191,30,225,25,225,31,191,35"/>
 <area shape="rect" href="actuators__shared__arch_8c.html#ae2ad75fb83b6c7ec929b7b9b8ed92581" title="Set Timer configuration." alt="" coords="245,55,372,80"/>
@@ -213,13 +319,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a74850a82401ea420b68ca1b3d6cbb98d" name="a74850a82401ea420b68ca1b3d6cbb98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74850a82401ea420b68ca1b3d6cbb98d">&#9670;&#160;</a></span>actuators_pwm_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> actuators_pwm_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set actuator value in array. </p>
+
+<p class="definition">Definition at line <a class="el" href="actuators__pwm_8c_source.html#l00030">30</a> of file <a class="el" href="actuators__pwm_8c_source.html">actuators_pwm.c</a>.</p>
+
+<p class="reference">References <a class="el" href="cc3d_8h_source.html#l00158">ACTUATORS_PWM_NB</a>, <a class="el" href="actuators__pwm_8c_source.html#l00028">actuators_pwm_values</a>, and <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a11c780a31ca1af3dc366bba41f431989" name="a11c780a31ca1af3dc366bba41f431989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c780a31ca1af3dc366bba41f431989">&#9670;&#160;</a></span>actuators_pwm_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> actuators_pwm_values[<a class="el" href="cc3d_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00069">69</a> of file <a class="el" href="boards_2ardrone_2actuators_8c_source.html">actuators.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00221">actuators_ardrone_commit()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00228">actuators_ardrone_set()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00375">actuators_pwm_arch_commit()</a>, and <a class="el" href="actuators__pwm_8c_source.html#l00030">actuators_pwm_set()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__pwm_8h.html">actuators_pwm.h</a></li>
-    <li class="footer">Generated on Thu Nov 20 2025 06:57:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 25 2025 16:03:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -17,8 +17,9 @@ var boards_2bebop_2actuators_8h =
     [ "ACTUATORS_BEBOP_TOGGLE_GPIO", "boards_2bebop_2actuators_8h.html#a22fd8a617f83712a1d0d947c401ef7ef", null ],
     [ "ActuatorsBebopCommit", "boards_2bebop_2actuators_8h.html#a3d14341161f6fbb74a44e5c4f95c8434", null ],
     [ "ActuatorsBebopInit", "boards_2bebop_2actuators_8h.html#adca944091c6cc252c9e20f760512259b", null ],
-    [ "ActuatorsBebopSet", "boards_2bebop_2actuators_8h.html#a0ca86a397a3ff5ba8363fce8fbbddcb7", null ],
+    [ "ActuatorsBebopSet", "boards_2bebop_2actuators_8h.html#a501cd99e829a331ed5110aaf40f84c49", null ],
     [ "actuators_bebop_commit", "boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645", null ],
     [ "actuators_bebop_init", "boards_2bebop_2actuators_8h.html#a37d22a22014bc845a6ce9246233cf2b5", null ],
+    [ "actuators_bebop_set", "boards_2bebop_2actuators_8h.html#a26304325786d46ceabf6199f77a86aaa", null ],
     [ "actuators_bebop", "boards_2bebop_2actuators_8h.html#ade00d5b28d3900df3af16e192dc323f1", null ]
 ];
