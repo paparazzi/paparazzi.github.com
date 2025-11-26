@@ -115,7 +115,7 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_OFFSET&quot; value=&quot;0.56&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_MIN_RANGE&quot; value=&quot;0.31&quot; unit=&quot;m&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_MAX_RANGE&quot; value=&quot;3.1&quot; unit=&quot;m&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;MODULE_SONAR_ADC_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt; \n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt; \n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_RAW_OFFSET&quot; value=&quot;0&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SONAR_ADC_PORT&quot; value=&quot;ADC_X&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;USE_SONAR_ADC_AGL&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
@@ -156,7 +156,7 @@ Define Options</h2>
  Description: If defined, set limit to minimum value the sensor can reliably measure, default 0.15m</li>
 <li><b>name:</b> <code>SONAR_ADC_MAX_RANGE</code> <b>value:</b> <em>3.1</em> <br  />
  Description: If defined, set limit to maximum value the sensor can reliably measure, default 4.0m</li>
-<li><b>name:</b> <code>MODULE_SONAR_ADC_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
+<li><b>name:</b> <code>SONAR_ADC_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
  Description: Send RAW and scaled message with each new measurement,useful for debugging sensor issues (default: FALSE)</li>
 <li><b>name:</b> <code>SONAR_ADC_RAW_OFFSET</code> <b>value:</b> <em>0</em> <br  />
  Description: sensor offset in [adc] units, defaults to 0</li>
@@ -246,7 +246,7 @@ Raw sonar_adc.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.56&quot;</span>  <span class="keyword">description</span>=<span class="stringliteral">&quot;Sensor offset in meters, as in where one wants zero to be, default is 0.0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_MIN_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.31&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If defined, set limit to minimum value the sensor can reliably measure, default 0.15m&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_MAX_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.1&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If defined, set limit to maximum value the sensor can reliably measure, default 4.0m&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODULE_SONAR_ADC_SYNC_SEND&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send RAW and scaled message with each new measurement,useful for debugging sensor issues (default: FALSE)&quot;</span>/&gt; </div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_SYNC_SEND&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send RAW and scaled message with each new measurement,useful for debugging sensor issues (default: FALSE)&quot;</span>/&gt; </div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_RAW_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>  <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor offset in [adc] units, defaults to 0&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -290,7 +290,7 @@ Raw sonar_adc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Nov 25 2025 16:03:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Nov 26 2025 21:36:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
