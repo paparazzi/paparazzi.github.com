@@ -4,7 +4,7 @@ var actuators__sts3032_8h =
       [ "buf_header", "actuators__sts3032_8h.html#a192c6e51b68bc69d8b78f9fe2384d7db", null ],
       [ "echo", "actuators__sts3032_8h.html#a5e28ed824670fccb196e75bda9e7b538", null ],
       [ "ids", "actuators__sts3032_8h.html#ae1a7a1fa8d2763bb63d3a266e47ab417", null ],
-      [ "msg_buf", "actuators__sts3032_8h.html#ab8211df06f558d37f2212ae36b39446a", null ],
+      [ "msg_buf", "actuators__sts3032_8h.html#a59fbc05f165809ffac423a4b032dadac", null ],
       [ "nb_bytes_expected", "actuators__sts3032_8h.html#a4b9a69190aba2a3c488579b6de0a7d72", null ],
       [ "nb_failed_checksum", "actuators__sts3032_8h.html#aa8f9abbfbe8a941be0508ce2608b4933", null ],
       [ "periph", "actuators__sts3032_8h.html#a9801115cade616c6ae4f88320b270c5f", null ],

@@ -1,6 +1,6 @@
 var sim_2modules_2uavcan_2uavcan_8h_structuavcan__iface__t =
 [
-    [ "_tx_fifo", "sim_2modules_2uavcan_2uavcan_8h.html#acbd9f601d0a1654b2a85f12fc31c6913", null ],
+    [ "_tx_fifo", "sim_2modules_2uavcan_2uavcan_8h.html#a10ddf748c88571f9ff85d1cf39fab2cf", null ],
     [ "_tx_fifo_buffer", "sim_2modules_2uavcan_2uavcan_8h.html#a0f04a6e1a5aa9ee7558560982a71e3da", null ],
     [ "bsem", "sim_2modules_2uavcan_2uavcan_8h.html#a6fd4bf434b76d2d3665b3727f7c0ec22", null ],
     [ "can_baudrate", "sim_2modules_2uavcan_2uavcan_8h.html#a4ac83347bccea5b6e4fc5053b7535e2a", null ],

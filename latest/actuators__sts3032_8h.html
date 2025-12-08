@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('actuators__sts3032_8h.html',''); initR
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="circular__buffer_8h_source.html">utils/circular_buffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="framed__ring__buffer_8h_source.html">utils/framed_ring_buffer.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for actuators_sts3032.h:</div>
@@ -111,24 +111,24 @@ $(document).ready(function(){initNavTree('actuators__sts3032_8h.html',''); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sts3032_8h__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__sts3032_8h" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__sts3032_8h" id="asw_2airborne_2modules_2actuators_2actuators__sts3032_8h">
-<area shape="rect" title=" " alt="" coords="445,5,604,60"/>
+<area shape="rect" title=" " alt="" coords="463,5,621,60"/>
 <area shape="rect" title=" " alt="" coords="500,181,571,207"/>
-<area shape="poly" title=" " alt="" coords="509,61,494,96,491,114,494,133,503,152,516,170,512,173,499,155,489,134,486,114,489,94,504,59"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="284,108,424,133"/>
-<area shape="poly" title=" " alt="" coords="474,62,391,104,388,99,471,58"/>
-<area shape="rect" href="circular__buffer_8h.html" title=" " alt="" coords="504,108,663,133"/>
-<area shape="poly" title=" " alt="" coords="545,59,570,95,566,98,540,62"/>
-<area shape="rect" title=" " alt="" coords="687,108,847,133"/>
-<area shape="poly" title=" " alt="" coords="600,58,723,101,721,106,598,63"/>
+<area shape="poly" title=" " alt="" coords="526,61,514,84,505,109,503,124,506,140,520,168,515,171,501,141,498,124,499,107,509,82,521,59"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="276,108,416,133"/>
+<area shape="poly" title=" " alt="" coords="483,63,386,105,384,100,481,58"/>
+<area shape="rect" href="framed__ring__buffer_8h.html" title=" " alt="" coords="514,108,703,133"/>
+<area shape="poly" title=" " alt="" coords="564,58,593,95,589,99,560,62"/>
+<area shape="rect" title=" " alt="" coords="727,108,887,133"/>
+<area shape="poly" title=" " alt="" coords="622,57,760,101,758,106,621,62"/>
 <area shape="rect" title=" " alt="" coords="5,181,180,207"/>
-<area shape="poly" title=" " alt="" coords="313,136,149,180,148,175,311,131"/>
+<area shape="poly" title=" " alt="" coords="306,136,148,180,146,175,305,131"/>
 <area shape="rect" title=" " alt="" coords="205,181,397,207"/>
-<area shape="poly" title=" " alt="" coords="347,135,320,172,315,169,343,132"/>
+<area shape="poly" title=" " alt="" coords="341,135,318,171,313,168,336,132"/>
 <area shape="rect" title=" " alt="" coords="421,181,476,207"/>
-<area shape="poly" title=" " alt="" coords="371,131,424,171,421,175,368,135"/>
-<area shape="poly" title=" " alt="" coords="578,135,553,172,548,169,573,132"/>
+<area shape="poly" title=" " alt="" coords="364,131,422,171,419,175,361,136"/>
+<area shape="poly" title=" " alt="" coords="598,136,559,174,555,170,595,132"/>
 <area shape="rect" title=" " alt="" coords="595,181,670,207"/>
-<area shape="poly" title=" " alt="" coords="594,132,619,169,615,172,589,135"/>
+<area shape="poly" title=" " alt="" coords="615,133,627,167,622,169,610,135"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -255,7 +255,7 @@ ids[<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">S
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ab8211df06f558d37f2212ae36b39446a" name="ab8211df06f558d37f2212ae36b39446a"></a>struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a></td>
+<a id="a59fbc05f165809ffac423a4b032dadac" name="a59fbc05f165809ffac423a4b032dadac"></a>struct <a class="el" href="framed__ring__buffer_8h.html#structframed__ring__buffer">framed_ring_buffer</a></td>
 <td class="fieldname">
 msg_buf</td>
 <td class="fielddoc">
@@ -445,22 +445,22 @@ wait_reply</td>
 <area shape="rect" title=" " alt="" coords="5,129,191,155"/>
 <area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="239,129,356,155"/>
 <area shape="poly" title=" " alt="" coords="191,139,225,139,225,145,191,145"/>
-<area shape="rect" href="circular__buffer_8c.html#ada8982b8b7d8702088a3a4f9de128ee0" title="copy the next buffer available in cb to buf." alt="" coords="408,5,551,31"/>
-<area shape="poly" title=" " alt="" coords="307,127,346,85,373,61,403,40,414,34,417,38,405,44,376,65,350,88,311,131"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="406,55,553,80"/>
-<area shape="poly" title=" " alt="" coords="322,127,403,89,422,82,423,87,405,94,324,132"/>
-<area shape="rect" href="actuators__sts3032_8c.html#adc246c4604a9f3fc8ae3345061a8a7b9" title=" " alt="" coords="426,104,533,129"/>
-<area shape="poly" title=" " alt="" coords="356,131,412,123,413,129,357,136"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="404,153,555,179"/>
-<area shape="poly" title=" " alt="" coords="357,147,391,152,390,157,356,152"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="434,203,525,228"/>
-<area shape="poly" title=" " alt="" coords="326,152,405,188,427,196,425,201,403,192,324,157"/>
-<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="419,252,540,277"/>
-<area shape="poly" title=" " alt="" coords="312,153,351,194,377,217,405,237,420,244,417,249,403,242,374,221,347,198,308,157"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ac5fb2dab95ba434c79867493b622ab9a" title=" " alt="" coords="628,104,689,129"/>
-<area shape="poly" title=" " alt="" coords="533,114,614,114,614,119,533,119"/>
-<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="603,252,715,277"/>
-<area shape="poly" title=" " alt="" coords="540,262,589,262,589,267,540,267"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#ae3a9d214c0c026721d34333c7f3e9f0e" title="copy the next buffer available in cb to buf." alt="" coords="404,5,579,31"/>
+<area shape="poly" title=" " alt="" coords="307,127,345,84,373,60,403,40,416,33,418,38,405,44,376,65,349,88,311,131"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="418,55,565,80"/>
+<area shape="poly" title=" " alt="" coords="321,127,403,89,425,81,426,87,405,94,323,132"/>
+<area shape="rect" href="actuators__sts3032_8c.html#adc246c4604a9f3fc8ae3345061a8a7b9" title=" " alt="" coords="438,104,545,129"/>
+<area shape="poly" title=" " alt="" coords="356,132,424,123,425,128,356,137"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="416,153,567,179"/>
+<area shape="poly" title=" " alt="" coords="356,147,403,152,402,158,356,152"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="446,203,537,228"/>
+<area shape="poly" title=" " alt="" coords="325,152,405,188,434,197,432,202,403,192,323,157"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="431,252,552,277"/>
+<area shape="poly" title=" " alt="" coords="311,153,350,194,376,217,405,237,422,245,419,250,403,242,373,221,346,198,307,157"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ac5fb2dab95ba434c79867493b622ab9a" title=" " alt="" coords="652,104,713,129"/>
+<area shape="poly" title=" " alt="" coords="545,114,638,114,638,119,545,119"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="627,252,739,277"/>
+<area shape="poly" title=" " alt="" coords="552,262,613,262,613,267,552,267"/>
 </map>
 </div>
 
@@ -492,7 +492,7 @@ wait_reply</td>
 
 <p class="definition">Definition at line <a class="el" href="actuators__sts3032_8c_source.html#l00088">88</a> of file <a class="el" href="actuators__sts3032_8c_source.html">actuators_sts3032.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__sts3032_8c_source.html#l00048">cbuf</a>, <a class="el" href="circular__buffer_8c_source.html#l00013">circular_buffer_init()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00045">sts3032::ids</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00062">sts3032::msg_buf</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00053">sts3032::nb_bytes_expected</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00060">sts3032::nb_failed_checksum</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00042">sts3032::periph</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00052">sts3032::rx_state</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00047">sts</a>, and <a class="el" href="actuators__sts3032_8h_source.html#l00036">STS3032_RX_IDLE</a>.</p>
+<p class="reference">References <a class="el" href="actuators__sts3032_8c_source.html#l00048">cbuf</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00013">framed_ring_buffer_init()</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00045">sts3032::ids</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00062">sts3032::msg_buf</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00053">sts3032::nb_bytes_expected</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00060">sts3032::nb_failed_checksum</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00042">sts3032::periph</a>, <a class="el" href="actuators__sts3032_8h_source.html#l00052">sts3032::rx_state</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00047">sts</a>, and <a class="el" href="actuators__sts3032_8h_source.html#l00036">STS3032_RX_IDLE</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -501,7 +501,7 @@ wait_reply</td>
 <div class="center"><img src="actuators__sts3032_8h_a25fb0bac58c18fdeb203799b731abd10_cgraph.png" border="0" usemap="#aactuators__sts3032_8h_a25fb0bac58c18fdeb203799b731abd10_cgraph" alt=""/></div>
 <map name="aactuators__sts3032_8h_a25fb0bac58c18fdeb203799b731abd10_cgraph" id="aactuators__sts3032_8h_a25fb0bac58c18fdeb203799b731abd10_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,175,31"/>
-<area shape="rect" href="circular__buffer_8c.html#ab74e4e8dcdfcf1842903b361959aa5e5" title="initialize a circular buffer." alt="" coords="223,5,365,31"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#ab670fda77782d03dc1b6591768b15eb5" title="initialize a circular buffer." alt="" coords="223,5,397,31"/>
 <area shape="poly" title=" " alt="" coords="175,15,209,15,209,21,175,21"/>
 </map>
 </div>
@@ -547,10 +547,10 @@ wait_reply</td>
 <area shape="poly" title=" " alt="" coords="180,23,214,23,214,28,180,28"/>
 <area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="440,13,523,38"/>
 <area shape="poly" title=" " alt="" coords="392,23,427,23,427,28,392,28"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="571,13,713,38"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="571,13,745,38"/>
 <area shape="poly" title=" " alt="" coords="523,23,557,23,557,28,523,28"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="761,13,944,38"/>
-<area shape="poly" title=" " alt="" coords="714,23,748,23,748,28,714,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="793,5,940,45"/>
+<area shape="poly" title=" " alt="" coords="746,23,780,23,780,28,746,28"/>
 </map>
 </div>
 
@@ -590,15 +590,15 @@ wait_reply</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sts3032_8h_a9ef3c56797f1136790d59d25fdac2f9b_cgraph.png" border="0" usemap="#aactuators__sts3032_8h_a9ef3c56797f1136790d59d25fdac2f9b_cgraph" alt=""/></div>
 <map name="aactuators__sts3032_8h_a9ef3c56797f1136790d59d25fdac2f9b_cgraph" id="aactuators__sts3032_8h_a9ef3c56797f1136790d59d25fdac2f9b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,191,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="239,5,381,31"/>
-<area shape="poly" title=" " alt="" coords="191,15,225,15,225,21,191,21"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="429,5,512,31"/>
-<area shape="poly" title=" " alt="" coords="382,15,416,15,416,21,382,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="560,5,703,31"/>
-<area shape="poly" title=" " alt="" coords="512,15,546,15,546,21,512,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="751,5,933,31"/>
-<area shape="poly" title=" " alt="" coords="703,15,737,15,737,21,703,21"/>
+<area shape="rect" title=" " alt="" coords="5,13,191,38"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="239,13,381,38"/>
+<area shape="poly" title=" " alt="" coords="191,23,225,23,225,28,191,28"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="429,13,512,38"/>
+<area shape="poly" title=" " alt="" coords="382,23,416,23,416,28,382,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="560,13,735,38"/>
+<area shape="poly" title=" " alt="" coords="512,23,546,23,546,28,512,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="783,5,929,45"/>
+<area shape="poly" title=" " alt="" coords="735,23,769,23,769,28,735,28"/>
 </map>
 </div>
 
@@ -638,17 +638,17 @@ wait_reply</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sts3032_8h_ad8a7fc8eeb56e0bed35c9948b7b01570_cgraph.png" border="0" usemap="#aactuators__sts3032_8h_ad8a7fc8eeb56e0bed35c9948b7b01570_cgraph" alt=""/></div>
 <map name="aactuators__sts3032_8h_ad8a7fc8eeb56e0bed35c9948b7b01570_cgraph" id="aactuators__sts3032_8h_ad8a7fc8eeb56e0bed35c9948b7b01570_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,205,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="253,5,392,31"/>
-<area shape="poly" title=" " alt="" coords="206,15,240,15,240,21,206,21"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="440,5,591,31"/>
-<area shape="poly" title=" " alt="" coords="392,15,427,15,427,21,392,21"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="639,5,721,31"/>
-<area shape="poly" title=" " alt="" coords="591,15,625,15,625,21,591,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="769,5,912,31"/>
-<area shape="poly" title=" " alt="" coords="722,15,756,15,756,21,722,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="960,5,1143,31"/>
-<area shape="poly" title=" " alt="" coords="912,15,946,15,946,21,912,21"/>
+<area shape="rect" title=" " alt="" coords="5,13,205,38"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="253,13,392,38"/>
+<area shape="poly" title=" " alt="" coords="206,23,240,23,240,28,206,28"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="440,13,591,38"/>
+<area shape="poly" title=" " alt="" coords="392,23,427,23,427,28,392,28"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="639,13,721,38"/>
+<area shape="poly" title=" " alt="" coords="591,23,625,23,625,28,591,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="769,13,944,38"/>
+<area shape="poly" title=" " alt="" coords="722,23,756,23,756,28,722,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="992,5,1139,45"/>
+<area shape="poly" title=" " alt="" coords="944,23,978,23,978,28,944,28"/>
 </map>
 </div>
 
@@ -698,15 +698,15 @@ wait_reply</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sts3032_8h_a20b8e4181245fc158f836d65ed3c89a0_cgraph.png" border="0" usemap="#aactuators__sts3032_8h_a20b8e4181245fc158f836d65ed3c89a0_cgraph" alt=""/></div>
 <map name="aactuators__sts3032_8h_a20b8e4181245fc158f836d65ed3c89a0_cgraph" id="aactuators__sts3032_8h_a20b8e4181245fc158f836d65ed3c89a0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,173,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="221,5,364,31"/>
-<area shape="poly" title=" " alt="" coords="173,15,207,15,207,21,173,21"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="412,5,495,31"/>
-<area shape="poly" title=" " alt="" coords="364,15,398,15,398,21,364,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="543,5,685,31"/>
-<area shape="poly" title=" " alt="" coords="495,15,529,15,529,21,495,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="733,5,916,31"/>
-<area shape="poly" title=" " alt="" coords="686,15,720,15,720,21,686,21"/>
+<area shape="rect" title=" " alt="" coords="5,13,173,38"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="221,13,364,38"/>
+<area shape="poly" title=" " alt="" coords="173,23,207,23,207,28,173,28"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="412,13,495,38"/>
+<area shape="poly" title=" " alt="" coords="364,23,398,23,398,28,364,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="543,13,717,38"/>
+<area shape="poly" title=" " alt="" coords="495,23,529,23,529,28,495,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="765,5,912,45"/>
+<area shape="poly" title=" " alt="" coords="718,23,752,23,752,28,718,28"/>
 </map>
 </div>
 
@@ -746,15 +746,15 @@ wait_reply</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sts3032_8h_a0debee454ff1ccb307f3438045665f9f_cgraph.png" border="0" usemap="#aactuators__sts3032_8h_a0debee454ff1ccb307f3438045665f9f_cgraph" alt=""/></div>
 <map name="aactuators__sts3032_8h_a0debee454ff1ccb307f3438045665f9f_cgraph" id="aactuators__sts3032_8h_a0debee454ff1ccb307f3438045665f9f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="240,5,359,31"/>
-<area shape="poly" title=" " alt="" coords="192,15,226,15,226,21,192,21"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="407,5,489,31"/>
-<area shape="poly" title=" " alt="" coords="359,15,393,15,393,21,359,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="537,5,680,31"/>
-<area shape="poly" title=" " alt="" coords="490,15,524,15,524,21,490,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="728,5,911,31"/>
-<area shape="poly" title=" " alt="" coords="680,15,714,15,714,21,680,21"/>
+<area shape="rect" title=" " alt="" coords="5,13,192,38"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="240,13,359,38"/>
+<area shape="poly" title=" " alt="" coords="192,23,226,23,226,28,192,28"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="407,13,489,38"/>
+<area shape="poly" title=" " alt="" coords="359,23,393,23,393,28,359,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="537,13,712,38"/>
+<area shape="poly" title=" " alt="" coords="490,23,524,23,524,28,490,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="760,5,907,45"/>
+<area shape="poly" title=" " alt="" coords="712,23,746,23,746,28,712,28"/>
 </map>
 </div>
 
@@ -799,10 +799,10 @@ wait_reply</td>
 <area shape="poly" title=" " alt="" coords="173,23,207,23,207,28,173,28"/>
 <area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="436,13,519,38"/>
 <area shape="poly" title=" " alt="" coords="388,23,422,23,422,28,388,28"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="567,13,709,38"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="567,13,741,38"/>
 <area shape="poly" title=" " alt="" coords="519,23,553,23,553,28,519,28"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="757,13,940,38"/>
-<area shape="poly" title=" " alt="" coords="710,23,744,23,744,28,710,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="789,5,936,45"/>
+<area shape="poly" title=" " alt="" coords="742,23,776,23,776,28,742,28"/>
 </map>
 </div>
 
@@ -918,13 +918,13 @@ wait_reply</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__sts3032_8h_a492fc3b48ddd510b37babe3957114a56_cgraph.png" border="0" usemap="#aactuators__sts3032_8h_a492fc3b48ddd510b37babe3957114a56_cgraph" alt=""/></div>
 <map name="aactuators__sts3032_8h_a492fc3b48ddd510b37babe3957114a56_cgraph" id="aactuators__sts3032_8h_a492fc3b48ddd510b37babe3957114a56_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,148,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="196,5,279,31"/>
-<area shape="poly" title=" " alt="" coords="148,15,182,15,182,21,148,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="327,5,469,31"/>
-<area shape="poly" title=" " alt="" coords="279,15,313,15,313,21,279,21"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="517,5,700,31"/>
-<area shape="poly" title=" " alt="" coords="470,15,504,15,504,21,470,21"/>
+<area shape="rect" title=" " alt="" coords="5,13,148,38"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="196,13,279,38"/>
+<area shape="poly" title=" " alt="" coords="148,23,182,23,182,28,148,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="327,13,501,38"/>
+<area shape="poly" title=" " alt="" coords="279,23,313,23,313,28,279,28"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="549,5,696,45"/>
+<area shape="poly" title=" " alt="" coords="502,23,536,23,536,28,502,28"/>
 </map>
 </div>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1133,7 +1133,7 @@ wait_reply</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__sts3032_8h.html">actuators_sts3032.h</a></li>
-    <li class="footer">Generated on Mon Dec 8 2025 07:59:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Dec 8 2025 10:25:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

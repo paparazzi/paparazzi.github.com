@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('chibios_2modules_2uavcan_2uavcan_8h.ht
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="can_8h_source.html">mcu_periph/can.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="circular__buffer_8h_source.html">utils/circular_buffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="framed__ring__buffer_8h_source.html">utils/framed_ring_buffer.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for uavcan.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,22 +123,22 @@ $(document).ready(function(){initNavTree('chibios_2modules_2uavcan_2uavcan_8h.ht
 <area shape="poly" title=" " alt="" coords="274,46,274,79,269,79,269,46"/>
 <area shape="rect" href="threads_8h.html" title=" " alt="" coords="423,93,597,119"/>
 <area shape="poly" title=" " alt="" coords="329,43,463,87,461,92,328,48"/>
-<area shape="rect" href="circular__buffer_8h.html" title=" " alt="" coords="621,93,780,119"/>
-<area shape="poly" title=" " alt="" coords="370,42,625,88,624,93,369,47"/>
-<area shape="rect" title=" " alt="" coords="71,174,125,199"/>
-<area shape="poly" title=" " alt="" coords="245,121,138,169,134,171,132,166,136,164,243,116"/>
-<area shape="rect" title=" " alt="" coords="149,174,321,199"/>
-<area shape="poly" title=" " alt="" coords="268,120,249,163,244,160,264,118"/>
-<area shape="rect" title=" " alt="" coords="346,174,429,199"/>
-<area shape="poly" title=" " alt="" coords="493,121,418,169,415,164,490,117"/>
-<area shape="rect" title=" " alt="" coords="453,167,615,207"/>
-<area shape="poly" title=" " alt="" coords="516,118,527,153,522,154,511,120"/>
-<area shape="rect" title=" " alt="" coords="640,174,711,199"/>
-<area shape="poly" title=" " alt="" coords="535,116,640,166,638,171,533,121"/>
-<area shape="rect" title=" " alt="" coords="735,174,810,199"/>
-<area shape="poly" title=" " alt="" coords="556,116,724,164,732,167,730,172,723,169,555,121"/>
-<area shape="poly" title=" " alt="" coords="699,120,686,162,681,160,694,118"/>
-<area shape="poly" title=" " alt="" coords="713,117,755,162,751,165,709,121"/>
+<area shape="rect" href="framed__ring__buffer_8h.html" title=" " alt="" coords="622,93,811,119"/>
+<area shape="poly" title=" " alt="" coords="370,41,639,88,638,94,369,47"/>
+<area shape="rect" title=" " alt="" coords="76,174,131,199"/>
+<area shape="poly" title=" " alt="" coords="247,121,143,169,140,170,138,166,141,164,245,116"/>
+<area shape="rect" title=" " alt="" coords="155,174,327,199"/>
+<area shape="poly" title=" " alt="" coords="269,120,253,162,248,160,264,118"/>
+<area shape="rect" title=" " alt="" coords="351,174,434,199"/>
+<area shape="poly" title=" " alt="" coords="494,121,423,168,420,164,491,117"/>
+<area shape="rect" title=" " alt="" coords="458,167,621,207"/>
+<area shape="poly" title=" " alt="" coords="517,118,530,153,525,155,512,120"/>
+<area shape="rect" title=" " alt="" coords="645,174,716,199"/>
+<area shape="poly" title=" " alt="" coords="536,116,645,166,642,171,534,121"/>
+<area shape="rect" title=" " alt="" coords="741,174,815,199"/>
+<area shape="poly" title=" " alt="" coords="558,116,729,164,737,167,735,172,728,169,557,121"/>
+<area shape="poly" title=" " alt="" coords="714,120,694,163,689,160,709,118"/>
+<area shape="poly" title=" " alt="" coords="728,117,763,162,759,165,724,120"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -228,7 +228,7 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="acbd9f601d0a1654b2a85f12fc31c6913" name="acbd9f601d0a1654b2a85f12fc31c6913"></a>struct <a class="el" href="circular__buffer_8h.html#structcircular__buffer">circular_buffer</a></td>
+<a id="a10ddf748c88571f9ff85d1cf39fab2cf" name="a10ddf748c88571f9ff85d1cf39fab2cf"></a>struct <a class="el" href="framed__ring__buffer_8h.html#structframed__ring__buffer">framed_ring_buffer</a></td>
 <td class="fieldname">
 _tx_fifo</td>
 <td class="fielddoc">
@@ -566,7 +566,7 @@ next</td>
 
 <p class="definition">Definition at line <a class="el" href="uavcan_8c_source.html#l00265">265</a> of file <a class="el" href="uavcan_8c_source.html">uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="circular__buffer_8c_source.html#l00090">circular_buffer_drop()</a>, <a class="el" href="circular__buffer_8c_source.html#l00052">circular_buffer_put()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00057">pprz_bsem_signal()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00032">pprz_mtx_unlock()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00090">framed_ring_buffer_drop_last()</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00052">framed_ring_buffer_put()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00057">pprz_bsem_signal()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00023">pprz_mtx_lock()</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00032">pprz_mtx_unlock()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00409">actuators_uavcan_cmd_commit()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00388">actuators_uavcan_commit()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -576,19 +576,19 @@ next</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2modules_2uavcan_2uavcan_8h_a712d2f97a70e8a78c0318d3709e317b4_cgraph.png" border="0" usemap="#achibios_2modules_2uavcan_2uavcan_8h_a712d2f97a70e8a78c0318d3709e317b4_cgraph" alt=""/></div>
 <map name="achibios_2modules_2uavcan_2uavcan_8h_a712d2f97a70e8a78c0318d3709e317b4_cgraph" id="achibios_2modules_2uavcan_2uavcan_8h_a712d2f97a70e8a78c0318d3709e317b4_cgraph">
-<area shape="rect" title="Broadcast an uavcan message to a specific interface." alt="" coords="5,104,145,129"/>
-<area shape="rect" href="circular__buffer_8c.html#af2ead2f18ba9ae2a933800f6fb97a59e" title="Drop last inserted record." alt="" coords="193,5,344,31"/>
-<area shape="poly" title=" " alt="" coords="92,102,136,71,192,40,208,33,210,38,195,44,139,76,95,106"/>
-<area shape="rect" href="circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="197,55,340,80"/>
-<area shape="poly" title=" " alt="" coords="125,101,204,81,205,86,126,107"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="199,104,338,129"/>
-<area shape="poly" title=" " alt="" coords="146,114,186,114,186,119,146,119"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="210,153,327,179"/>
-<area shape="poly" title=" " alt="" coords="126,127,205,147,204,152,125,132"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="202,203,335,228"/>
-<area shape="poly" title=" " alt="" coords="96,127,140,157,195,188,213,195,211,200,192,192,137,161,93,132"/>
-<area shape="rect" href="circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="392,55,575,80"/>
-<area shape="poly" title=" " alt="" coords="340,65,378,65,378,70,340,70"/>
+<area shape="rect" title="Broadcast an uavcan message to a specific interface." alt="" coords="5,119,145,145"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a27872ed37b6ae30200e0b41f381a99ec" title="Drop last inserted record." alt="" coords="207,5,354,45"/>
+<area shape="poly" title=" " alt="" coords="93,117,137,87,192,55,207,48,209,53,195,60,140,91,96,121"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="193,70,368,95"/>
+<area shape="poly" title=" " alt="" coords="128,117,213,96,214,101,129,122"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="211,119,350,145"/>
+<area shape="poly" title=" " alt="" coords="146,129,198,129,198,135,146,135"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="222,169,339,194"/>
+<area shape="poly" title=" " alt="" coords="129,142,214,163,213,168,128,147"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="214,218,347,243"/>
+<area shape="poly" title=" " alt="" coords="95,143,139,172,194,203,216,211,214,216,192,208,136,177,92,147"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="416,63,563,103"/>
+<area shape="poly" title=" " alt="" coords="368,80,402,80,402,85,368,85"/>
 </map>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -641,42 +641,42 @@ next</td>
 <area shape="rect" title="uavcan interfaces" alt="" coords="5,288,103,313"/>
 <area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="151,288,273,313"/>
 <area shape="poly" title=" " alt="" coords="103,298,137,298,137,303,103,303"/>
-<area shape="rect" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title=" " alt="" coords="346,55,459,80"/>
-<area shape="poly" title=" " alt="" coords="215,287,227,251,249,202,279,149,320,101,346,84,349,88,323,105,284,152,253,204,232,253,220,289"/>
-<area shape="rect" href="can_8c.html#a9324476eb389be967a6cc3a9a32a7a36" title="Add a callback on received frames from an interface." alt="" coords="321,189,484,215"/>
-<area shape="poly" title=" " alt="" coords="227,286,268,256,320,225,339,217,342,222,323,230,271,260,230,290"/>
-<area shape="rect" href="circular__buffer_8c.html#ab74e4e8dcdfcf1842903b361959aa5e5" title="initialize a circular buffer." alt="" coords="331,239,474,264"/>
-<area shape="poly" title=" " alt="" coords="261,285,339,265,340,270,262,291"/>
-<area shape="rect" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="327,288,478,313"/>
-<area shape="poly" title=" " alt="" coords="273,298,314,298,314,303,273,303"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="342,337,463,363"/>
-<area shape="poly" title=" " alt="" coords="262,311,340,331,339,336,261,316"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="347,387,458,412"/>
-<area shape="poly" title=" " alt="" coords="230,311,271,342,323,373,338,380,336,385,320,378,268,346,227,316"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="329,436,476,461"/>
-<area shape="poly" title=" " alt="" coords="223,312,262,366,290,396,323,422,333,428,331,433,320,427,286,400,258,369,219,315"/>
-<area shape="rect" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="322,485,483,511"/>
-<area shape="poly" title=" " alt="" coords="220,313,233,345,255,388,285,433,323,472,331,477,328,481,320,476,280,437,250,391,228,347,215,315"/>
-<area shape="rect" href="uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d" title=" " alt="" coords="358,116,447,141"/>
-<area shape="poly" title=" " alt="" coords="221,286,261,235,320,176,363,146,366,150,323,180,265,239,225,289"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="550,55,667,80"/>
-<area shape="poly" title=" " alt="" coords="460,65,536,65,536,70,460,70"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="542,5,675,31"/>
-<area shape="poly" title=" " alt="" coords="456,52,541,31,542,37,457,57"/>
-<area shape="rect" href="can_8c.html#a7c22ac3688fb0620fc81ecf1783ab683" title=" " alt="" coords="540,252,677,277"/>
-<area shape="poly" title=" " alt="" coords="446,212,554,245,552,250,444,217"/>
-<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="572,301,645,327"/>
-<area shape="poly" title=" " alt="" coords="479,303,558,308,558,313,478,308"/>
-<area shape="poly" title=" " alt="" coords="445,113,552,81,553,86,447,119"/>
-<area shape="poly" title=" " alt="" coords="437,114,482,89,496,77,505,64,515,52,531,40,542,34,544,38,533,44,519,56,510,68,500,80,486,94,439,118"/>
-<area shape="rect" href="chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5" title=" " alt="" coords="532,104,685,129"/>
-<area shape="poly" title=" " alt="" coords="447,123,518,119,518,125,448,129"/>
-<area shape="rect" href="circular__buffer_8c.html#ada8982b8b7d8702088a3a4f9de128ee0" title="copy the next buffer available in cb to buf." alt="" coords="537,153,680,179"/>
-<area shape="poly" title=" " alt="" coords="448,134,525,148,524,153,447,139"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="545,203,673,228"/>
-<area shape="poly" title=" " alt="" coords="429,139,533,189,552,196,550,201,531,194,426,144"/>
-<area shape="rect" href="can_8c.html#ab88c2569516a3a7afca2397b9aa1d2e4" title=" " alt="" coords="733,104,852,129"/>
-<area shape="poly" title=" " alt="" coords="686,114,719,114,719,119,686,119"/>
+<area shape="rect" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title=" " alt="" coords="352,55,465,80"/>
+<area shape="poly" title=" " alt="" coords="215,287,227,251,248,202,279,149,320,101,347,83,350,88,323,105,283,152,253,204,232,253,220,289"/>
+<area shape="rect" href="can_8c.html#a9324476eb389be967a6cc3a9a32a7a36" title="Add a callback on received frames from an interface." alt="" coords="327,189,490,215"/>
+<area shape="poly" title=" " alt="" coords="227,286,268,256,320,225,341,216,343,221,323,230,271,260,230,290"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#ab670fda77782d03dc1b6591768b15eb5" title="initialize a circular buffer." alt="" coords="321,239,496,264"/>
+<area shape="poly" title=" " alt="" coords="263,285,344,265,345,270,264,291"/>
+<area shape="rect" href="uavcan_8c.html#ae5399417963e16078d01d41ed695522a" title="Whenever a valid and &#39;accepted&#39; transfer is received." alt="" coords="333,288,484,313"/>
+<area shape="poly" title=" " alt="" coords="274,298,320,298,320,303,274,303"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="348,337,469,363"/>
+<area shape="poly" title=" " alt="" coords="264,311,345,331,344,337,263,316"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a8b8615d4563d998989f78e14a471e298" title=" " alt="" coords="353,387,464,412"/>
+<area shape="poly" title=" " alt="" coords="230,311,270,342,323,373,341,380,339,385,320,378,267,347,227,316"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="335,436,482,461"/>
+<area shape="poly" title=" " alt="" coords="223,312,261,366,290,396,323,422,334,428,331,433,320,427,286,400,257,369,219,315"/>
+<area shape="rect" href="uavcan_8c.html#a5d545befad51919f51f73e03bd5d4c65" title="If we should accept this transfer." alt="" coords="328,485,489,511"/>
+<area shape="poly" title=" " alt="" coords="220,312,233,345,254,388,284,433,323,472,331,477,328,481,320,476,280,437,250,391,228,347,215,314"/>
+<area shape="rect" href="uavcan_8c.html#a73f54bb2987f6c04eb3e7f3ad54ee30d" title=" " alt="" coords="364,116,453,141"/>
+<area shape="poly" title=" " alt="" coords="220,286,260,235,289,204,320,176,366,146,369,150,323,180,292,208,264,239,224,290"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="573,55,690,80"/>
+<area shape="poly" title=" " alt="" coords="466,65,559,65,559,70,466,70"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="565,5,698,31"/>
+<area shape="poly" title=" " alt="" coords="465,52,560,31,561,36,466,57"/>
+<area shape="rect" href="can_8c.html#a7c22ac3688fb0620fc81ecf1783ab683" title=" " alt="" coords="563,252,700,277"/>
+<area shape="poly" title=" " alt="" coords="455,212,545,238,572,246,570,251,543,243,453,217"/>
+<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="595,301,668,327"/>
+<area shape="poly" title=" " alt="" coords="485,303,581,308,581,314,484,308"/>
+<area shape="poly" title=" " alt="" coords="453,114,570,81,572,86,454,119"/>
+<area shape="poly" title=" " alt="" coords="447,113,494,89,508,77,517,64,527,52,543,40,555,33,557,38,545,44,531,56,522,68,512,80,498,94,449,118"/>
+<area shape="rect" href="chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5" title=" " alt="" coords="555,104,708,129"/>
+<area shape="poly" title=" " alt="" coords="453,124,541,119,541,124,454,129"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#ae3a9d214c0c026721d34333c7f3e9f0e" title="copy the next buffer available in cb to buf." alt="" coords="544,153,719,179"/>
+<area shape="poly" title=" " alt="" coords="454,133,542,148,541,154,453,139"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="567,203,695,228"/>
+<area shape="poly" title=" " alt="" coords="435,139,485,164,545,189,567,196,565,201,543,194,483,168,433,144"/>
+<area shape="rect" href="can_8c.html#ab88c2569516a3a7afca2397b9aa1d2e4" title=" " alt="" coords="767,104,885,129"/>
+<area shape="poly" title=" " alt="" coords="709,114,753,114,753,119,709,119"/>
 </map>
 </div>
 
@@ -688,7 +688,7 @@ next</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_ca1641d5537214017ef5f2c69e95a1ee.html">uavcan</a></li><li class="navelem"><a class="el" href="chibios_2modules_2uavcan_2uavcan_8h.html">uavcan.h</a></li>
-    <li class="footer">Generated on Mon Dec 8 2025 07:59:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Dec 8 2025 10:25:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

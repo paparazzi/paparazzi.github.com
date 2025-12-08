@@ -29,6 +29,7 @@ var searchData=
   ['flow_5ft_26',['flow_t',['../image_8h.html#structflow__t',1,'']]],
   ['force_5f_27',['force_',['../potential_8h.html#structforce__',1,'']]],
   ['fourthorderhighpass_28',['FourthOrderHighPass',['../high__pass__filter_8h.html#structFourthOrderHighPass',1,'']]],
-  ['frsky_5fx_5fserial_5fperiph_29',['frsky_x_serial_periph',['../frsky__x_8h.html#structfrsky__x__serial__periph',1,'']]],
-  ['frskytableinfo_5fs_30',['frSkyTableInfo_s',['../cc2500__smartport_8c.html#structfrSkyTableInfo__s',1,'']]]
+  ['framed_5fring_5fbuffer_29',['framed_ring_buffer',['../framed__ring__buffer_8h.html#structframed__ring__buffer',1,'']]],
+  ['frsky_5fx_5fserial_5fperiph_30',['frsky_x_serial_periph',['../frsky__x_8h.html#structfrsky__x__serial__periph',1,'']]],
+  ['frskytableinfo_5fs_31',['frSkyTableInfo_s',['../cc2500__smartport_8c.html#structfrSkyTableInfo__s',1,'']]]
 ];

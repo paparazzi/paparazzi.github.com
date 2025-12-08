@@ -1,17 +1,17 @@
 <map id="actuators_uavcan_cmd_commit" name="actuators_uavcan_cmd_commit">
-<area shape="rect" id="Node000001" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="5,97,177,137"/>
-<area shape="rect" id="Node000002" href="$uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="225,104,365,129"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,114,212,114,212,119,177,119"/>
-<area shape="rect" id="Node000003" href="$circular__buffer_8c.html#af2ead2f18ba9ae2a933800f6fb97a59e" title="Drop last inserted record." alt="" coords="413,5,564,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,102,356,71,412,40,428,33,430,38,415,44,359,76,315,106"/>
-<area shape="rect" id="Node000004" href="$circular__buffer_8c.html#a26f5138bb7bb7f83cac5ee129fe01352" title="Copy buf in the circular buffer." alt="" coords="417,55,560,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="345,101,424,81,425,86,346,107"/>
-<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="419,104,558,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="366,114,406,114,406,119,366,119"/>
-<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="430,153,547,179"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="346,127,425,147,424,152,345,132"/>
-<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="422,203,555,228"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="316,127,360,157,415,188,433,195,431,200,412,192,357,161,313,132"/>
-<area shape="rect" id="Node000005" href="$circular__buffer_8c.html#a8fdb9882bd0574b65e748d3d4a7e7b59" title="Get the available sapce for the next buffer." alt="" coords="612,55,795,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="560,65,598,65,598,70,560,70"/>
+<area shape="rect" id="Node000001" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="5,112,177,152"/>
+<area shape="rect" id="Node000002" href="$uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="225,119,365,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,129,212,129,212,135,177,135"/>
+<area shape="rect" id="Node000003" href="$framed__ring__buffer_8c.html#a27872ed37b6ae30200e0b41f381a99ec" title="Drop last inserted record." alt="" coords="427,5,574,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,117,357,87,412,55,427,48,429,53,415,60,360,91,316,121"/>
+<area shape="rect" id="Node000004" href="$framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="413,70,588,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="348,117,433,96,434,101,349,122"/>
+<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="431,119,570,145"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="366,129,418,129,418,135,366,135"/>
+<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="442,169,559,194"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="349,142,434,163,433,168,348,147"/>
+<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="434,218,567,243"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="315,143,359,172,414,203,436,211,434,216,412,208,356,177,312,147"/>
+<area shape="rect" id="Node000005" href="$framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="636,63,783,103"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="588,80,622,80,622,85,588,85"/>
 </map>
