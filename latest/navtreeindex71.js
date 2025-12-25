@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"group__math__geodetic__int.html#structLtpDef__i":[9,9,2,2,5],
+"group__math__geodetic__int.html#structNedCoor__i":[9,9,2,2,2],
 "group__math__geodetic__int.html#structUtmCoor__i":[9,9,2,2,4],
 "group__math__geodetic__utm.html":[9,9,2,3],
 "group__math__geodetic__utm.html#ga0240ac851181b84ac374872dc5434ee4":[9,9,2,3,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "group__state__attitude.html#ga7e6d224876698f15f1a3d36fbbb97b31":[9,4,6,8],
 "group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682":[9,4,6,0],
 "group__state__attitude.html#gab5f063833fdba859ce42593112551463":[9,4,6,2],
-"group__state__attitude.html#gabd504420939066fb2ddff8da71b7f8ef":[9,4,6,11],
-"group__state__attitude.html#gabe01568727616fe1fdac687072ed57ea":[9,4,6,12],
-"group__state__interface.html":[9,4]
+"group__state__attitude.html#gabd504420939066fb2ddff8da71b7f8ef":[9,4,6,11]
 };

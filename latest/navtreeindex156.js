@@ -1,5 +1,7 @@
 var NAVTREEINDEX156 =
 {
+"nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f":[12,0,1,0,6,47,81,1],
+"nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4":[12,0,1,0,6,47,81,0],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c":[12,0,1,0,6,47,81,0,1],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68":[12,0,1,0,6,47,81,0,3],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b":[12,0,1,0,6,47,81,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX156 =
 "naze32__common_8h.html#a5ab66f34d0a05ab9b8080edaed3ddaa3":[12,0,1,0,1,51,58],
 "naze32__common_8h.html#a5d2f3465213306fd37370c884444e5e5":[12,0,1,0,1,51,29],
 "naze32__common_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b":[12,0,1,0,1,51,43],
-"naze32__common_8h.html#a61f9ceb054741c177baac8a8b0282628":[12,0,1,0,1,51,37],
-"naze32__common_8h.html#a625a3569ff01571416adcd8d9a3e8878":[12,0,1,0,1,51,51],
-"naze32__common_8h.html#a665cb015c3504e5dcfd386c518de25c0":[12,0,1,0,1,51,25]
+"naze32__common_8h.html#a61f9ceb054741c177baac8a8b0282628":[12,0,1,0,1,51,37]
 };

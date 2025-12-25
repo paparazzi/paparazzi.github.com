@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"digital__cam_2catia_2protocol_8h.html#acdac91a41bfebedbe198c4c5e84ea4a9":[12,0,1,0,6,19,0,4,15],
+"digital__cam_2catia_2protocol_8h.html#ada82ef6a4a2c03ec067f037fa7b0043c":[12,0,1,0,6,19,0,4,4,9],
 "digital__cam_2catia_2protocol_8h.html#ae97b79ca48e80b9206b9188606d89455":[12,0,1,0,6,19,0,4,3,6],
 "digital__cam_2catia_2protocol_8h.html#afae876a13a6380155c01d2e0877f02c9":[12,0,1,0,6,19,0,4,3,8],
 "digital__cam_2catia_2protocol_8h.html#structdc__shot__union_8data":[12,0,1,0,6,19,0,4,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "dir_fc0ab19c3a6e052df412b06c0603facb.html":[12,0,1,0,6,27],
 "dir_fc6475eb39ea0144fb6697b809fd11a9.html":[12,0,1,0,0],
 "dir_fcd55c2d9795129c53a601ffc56fe50e.html":[12,0,1,0,6,36],
-"direct__memory__logger_8c.html":[12,0,1,0,6,42,1],
-"direct__memory__logger_8c.html#a0850bb638c9b22f96ceb0120c2341794":[12,0,1,0,6,42,1,5],
-"direct__memory__logger_8c.html#a0e2f1c2c6383161a1a5a6dd8d3f7c74f":[12,0,1,0,6,42,1,2]
+"direct__memory__logger_8c.html":[12,0,1,0,6,42,1]
 };

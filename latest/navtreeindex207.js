@@ -1,5 +1,7 @@
 var NAVTREEINDEX207 =
 {
+"stabilization__indi__simple_8h.html#a121fd732c65156adade05ffb27fbaf52":[12,0,1,0,3,2,2,39,4],
+"stabilization__indi__simple_8h.html#a161bb48f9d4f57f226f8c63b6b70a6f0":[12,0,1,0,3,2,2,39,1,3],
 "stabilization__indi__simple_8h.html#a179cea231681ee1bbf1d336c72c7062c":[12,0,1,0,3,2,2,39,6],
 "stabilization__indi__simple_8h.html#a1e7b9b7c29cfe870a3fee11237a1bb01":[12,0,1,0,3,2,2,39,1,8],
 "stabilization__indi__simple_8h.html#a1ef045183b6d9118e27c246004f24207":[12,0,1,0,3,2,2,39,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX207 =
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a2ea3738cc8c9007f4e7fa688e19d10a3":[12,0,1,0,0,3,1,0,1,0],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a3e22a148416d35c90344f04bb574e07a":[12,0,1,0,0,3,1,0,1,9],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,3,1,0,1,3],
-"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a562503833611ce2cc80e90dfb3540800":[12,0,1,0,0,3,1,0,1,4],
-"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a6d99f52ad5ec93b7cd153e6503429c34":[12,0,1,0,0,3,1,0,1,2],
-"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#aa44d5ab13caadf59f5d425cbf9320d40":[12,0,1,0,0,3,1,0,1,5]
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a562503833611ce2cc80e90dfb3540800":[12,0,1,0,0,3,1,0,1,4]
 };

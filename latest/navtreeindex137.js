@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_dataflash.html#functions__logger_dataflash":[1,271,2],
+"module__logger_dataflash.html#module_load_example__logger_dataflash":[1,271,0],
 "module__logger_dataflash.html#module_xml__logger_dataflash":[1,271,2,0],
 "module__logger_file.html":[1,272],
 "module__logger_file.html#configuration__logger_file":[1,272,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,356,1],
 "module__nav_spiral_3d.html#functions__nav_spiral_3d":[1,356,2],
 "module__nav_spiral_3d.html#module_load_example__nav_spiral_3d":[1,356,0],
-"module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,356,2,0],
-"module__nav_survey_disc.html":[1,357],
-"module__nav_survey_disc.html#module_load_example__nav_survey_disc":[1,357,0]
+"module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,356,2,0]
 };

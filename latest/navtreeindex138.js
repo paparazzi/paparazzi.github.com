@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_survey_disc.html":[1,357],
+"module__nav_survey_disc.html#module_load_example__nav_survey_disc":[1,357,0],
 "module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,357,0,0],
 "module__nav_survey_hybrid.html":[1,358],
 "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,358,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "module__range_sensor_uavcan.html#functions__range_sensor_uavcan":[1,434,1],
 "module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan":[1,434,0],
 "module__range_sensor_uavcan.html#module_xml__range_sensor_uavcan":[1,434,1,0],
-"module__relative_localization_filter.html":[1,519],
-"module__relative_localization_filter.html#functions__relative_localization_filter":[1,519,1],
-"module__relative_localization_filter.html#module_load_example__relative_localization_filter":[1,519,0]
+"module__relative_localization_filter.html":[1,519]
 };

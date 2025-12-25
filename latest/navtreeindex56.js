@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"electrical_8h.html#structElectrical":[12,0,1,0,6,23,5,0],
+"electrical_8h_source.html":[12,0,1,0,6,23,5],
 "elle0_2baro__board_8h.html":[12,0,1,0,1,8,0],
 "elle0_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,8,0,2],
 "elle0_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781":[12,0,1,0,1,8,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "energy__ctrl_8h_source.html":[12,0,1,0,3,1,0,1],
 "esc32_8c.html":[12,0,1,0,6,24,0],
 "esc32_8c.html#a09269761084135ed9a77f744b26de029":[12,0,1,0,6,24,0,1,5],
-"esc32_8c.html#a0d767953cdec4771359effaa51464f84":[12,0,1,0,6,24,0,1,11],
-"esc32_8c.html#a0ea641180adcdfecf85874250a5606cf":[12,0,1,0,6,24,0,22],
-"esc32_8c.html#a111e2210c121698430bf93061242fb41":[12,0,1,0,6,24,0,17]
+"esc32_8c.html#a0d767953cdec4771359effaa51464f84":[12,0,1,0,6,24,0,1,11]
 };

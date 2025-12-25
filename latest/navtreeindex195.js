@@ -1,5 +1,7 @@
 var NAVTREEINDEX195 =
 {
+"rotwing__state_8h.html#a3f4b16550a1d7f68e743e11e127753ab":[12,0,1,0,6,60,1,1,7],
+"rotwing__state_8h.html#a443b0dfec2d41179e85c920b48ce7b08":[12,0,1,0,6,60,1,1,11],
 "rotwing__state_8h.html#a5187c7100a4e54eb7d052892fbafd06e":[12,0,1,0,6,60,1,10],
 "rotwing__state_8h.html#a676987019a6ee749ec429b405b1c56bc":[12,0,1,0,6,60,1,2,4],
 "rotwing__state_8h.html#a6f2548c6bcef89af1eeca92bd4adff79":[12,0,1,0,6,60,1,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "rover__guidance_8h.html#a1c5d14152545935d78448eae5d0a6b6d":[12,0,1,0,3,3,0,1,7],
 "rover__guidance_8h.html#a1c6cd7480cfe9a75080ac440144d60ca":[12,0,1,0,3,3,0,1,1,0],
 "rover__guidance_8h.html#a277b7231eb54d477f8122a85a57460bf":[12,0,1,0,3,3,0,1,8],
-"rover__guidance_8h.html#a36fd231b658212b9779058ca799abd5c":[12,0,1,0,3,3,0,1,0,1],
-"rover__guidance_8h.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e":[12,0,1,0,3,3,0,1,9],
-"rover__guidance_8h.html#a4b8b4c6873e954691168d5b7fcd41e47":[12,0,1,0,3,3,0,1,3,1]
+"rover__guidance_8h.html#a36fd231b658212b9779058ca799abd5c":[12,0,1,0,3,3,0,1,0,1]
 };

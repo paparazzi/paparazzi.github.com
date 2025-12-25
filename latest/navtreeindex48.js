@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"cyrf6936__regs_8h.html#a6fd39df38bd3dc01604c0efcaf357715":[12,0,1,0,7,37,14],
+"cyrf6936__regs_8h.html#a705d6c730b754523fa6d30ebd8b0c6b0":[12,0,1,0,7,37,71],
 "cyrf6936__regs_8h.html#a7565168570599a3224392d573cb5cd15":[12,0,1,0,7,37,18],
 "cyrf6936__regs_8h.html#a780bd3cb448bf865ff195a12440a71c7":[12,0,1,0,7,37,57],
 "cyrf6936__regs_8h.html#a7c115969f79b28993d1e60597665bd60":[12,0,1,0,7,37,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "dcf_8h.html#af9b1e37124f7524c47f9e4621d1e7c98":[12,0,1,0,6,46,1,1,4],
 "dcf_8h.html#structdcf__con":[12,0,1,0,6,46,1,1,0],
 "dcf_8h.html#structdcf__tab":[12,0,1,0,6,46,1,1,1],
-"dcf_8h_source.html":[12,0,1,0,6,46,1,1],
-"decawave__anchorless__communication_8c.html":[12,0,1,0,6,16,0],
-"decawave__anchorless__communication_8c.html#a1b9df4970567804ad5e82038b0215c8b":[12,0,1,0,6,16,0,16]
+"dcf_8h_source.html":[12,0,1,0,6,46,1,1]
 };

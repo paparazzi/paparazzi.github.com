@@ -1,5 +1,7 @@
 var NAVTREEINDEX168 =
 {
+"openpilot__revo__1_80_8h.html#a192437e223012d0a12e92c878e3c2877":[12,0,1,0,1,57,93],
+"openpilot__revo__1_80_8h.html#a1e90afaf8ac86f6bb4fa71ad543039be":[12,0,1,0,1,57,65],
 "openpilot__revo__1_80_8h.html#a2a8241c19fc58341f2cac4db9d699c3a":[12,0,1,0,1,57,87],
 "openpilot__revo__1_80_8h.html#a2ab81b59987ffd1973e3c983ea674693":[12,0,1,0,1,57,58],
 "openpilot__revo__1_80_8h.html#a34f73b0a95d1e525dd2e4160222fa681":[12,0,1,0,1,57,72],
@@ -247,7 +249,5 @@ var NAVTREEINDEX168 =
 "optical__flow__functions_8h.html#structOFhistory":[12,0,1,0,6,14,29,1],
 "optical__flow__functions_8h.html#structOpticalFlowHover":[12,0,1,0,6,14,29,3],
 "optical__flow__functions_8h.html#structOpticalFlowHoverControl":[12,0,1,0,6,14,29,2],
-"optical__flow__functions_8h_source.html":[12,0,1,0,6,14,29],
-"optical__flow__hover_8c.html":[12,0,1,0,6,14,30],
-"optical__flow__hover_8c.html#a02f264f48d8206358a5d504c5e413841":[12,0,1,0,6,14,30,37]
+"optical__flow__functions_8h_source.html":[12,0,1,0,6,14,29]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"orange__avoider__guided_8h.html#a4206dd42ad31f7e1b466f36fabb64281":[12,0,1,0,6,50,3,3],
+"orange__avoider__guided_8h.html#a8cbd9fcf2b0e56db6f99887026aa8f3d":[12,0,1,0,6,50,3,2],
 "orange__avoider__guided_8h.html#ad1eeb8136a08c3afc50e14fe613919cd":[12,0,1,0,6,50,3,5],
 "orange__avoider__guided_8h.html#ae051cd0ad23cb5636414bd42eb5e1dda":[12,0,1,0,6,50,3,4],
 "orange__avoider__guided_8h.html#ae8b3ef53a7a869aec22a2a48a90e69cb":[12,0,1,0,6,50,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#IMU_ACCEL_SCALED":[2,0,127],
 "paparazzi_messages.html#IMU_GYRO":[2,0,192],
 "paparazzi_messages.html#IMU_GYRO_LP":[2,0,201],
-"paparazzi_messages.html#IMU_GYRO_RAW":[2,0,195],
-"paparazzi_messages.html#IMU_GYRO_SCALED":[2,0,126],
-"paparazzi_messages.html#IMU_HEATER":[2,0,130]
+"paparazzi_messages.html#IMU_GYRO_RAW":[2,0,195]
 };

@@ -129,7 +129,7 @@ var searchData=
   ['quat_5finvert_126',['QUAT_INVERT',['../group__math__algebra__generic.html#ga4b86e8392c27bc6113a2a6d9425cb9d3',1,'pprz_algebra.h']]],
   ['quat_5freset_5fcounter_127',['quat_reset_counter',['../ins__ekf2_8h.html#ae372cc2d584068cad7143e5b555812c9',1,'ekf2_t']]],
   ['quat_5fsdiv_128',['QUAT_SDIV',['../group__math__algebra__generic.html#ga7f8d9a5d6db70a2e25586aa584888f23',1,'pprz_algebra.h']]],
-  ['quat_5fsmul_129',['quat_smul',['../group__math__algebra__generic.html#gace7b4658b96beb57ed8bbe6b9a6d1c41',1,'QUAT_SMUL:&#160;pprz_algebra.h'],['../ins__mekf__wind_8cpp.html#a677b4f5df090d5f92d2799b68d6fe637',1,'quat_smul(const Quaternionf &amp;q1, float scal):&#160;ins_mekf_wind.cpp']]],
+  ['quat_5fsmul_129',['quat_smul',['../ins__mekf__wind_8cpp.html#a677b4f5df090d5f92d2799b68d6fe637',1,'quat_smul(const Quaternionf &amp;q1, float scal):&#160;ins_mekf_wind.cpp'],['../group__math__algebra__generic.html#gace7b4658b96beb57ed8bbe6b9a6d1c41',1,'QUAT_SMUL:&#160;pprz_algebra.h']]],
   ['quat_5fto_5fpprz_130',['quat_to_pprz',['../nps__fdm__pybullet_8c.html#a392e7b76d5a520fde908e70d515a8661',1,'nps_fdm_pybullet.c']]],
   ['queue_5ffull_5fcnt_131',['queue_full_cnt',['../group__i2c.html#ac53b074124c2d291dc57cecd1166823b',1,'i2c_errors']]],
   ['quick_20and_20dirty_20description_3a_132',['Directories quick and dirty description:',['../index.html#autotoc_md3',1,'']]],

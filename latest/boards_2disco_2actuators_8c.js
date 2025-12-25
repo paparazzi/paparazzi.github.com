@@ -10,6 +10,7 @@ var boards_2disco_2actuators_8c =
       [ "status", "boards_2disco_2actuators_8c.html#a0717ef8e85bf0a88706884af5fee4760", null ],
       [ "temp", "boards_2disco_2actuators_8c.html#ac4382bbb11b7cc95c25a6711ddd17eb9", null ]
     ] ],
+    [ "ACTUATORS_DISCO_I2C_TIMEOUT", "boards_2disco_2actuators_8c.html#ad234726af01c3b5cb443da2c4edd17ce", null ],
     [ "DISCO_BLDC_START_MOTOR_THRESHOLD", "boards_2disco_2actuators_8c.html#a6f72d9452d9d5f82b7024e38aacda75a", null ],
     [ "DISCO_BLDC_STATUS_RAMPDOWN", "boards_2disco_2actuators_8c.html#ab578dc468312abe67ef27883126ceda8", null ],
     [ "DISCO_BLDC_STATUS_RAMPUP", "boards_2disco_2actuators_8c.html#a6f547b958ab0d06e660bf2a30a4b7b50", null ],

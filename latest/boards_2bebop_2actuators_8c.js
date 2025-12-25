@@ -1,5 +1,6 @@
 var boards_2bebop_2actuators_8c =
 [
+    [ "ACTUATORS_BEBOP_I2C_TIMEOUT", "boards_2bebop_2actuators_8c.html#a97dff53c0b08fc79779192acbf8714b9", null ],
     [ "actuators_bebop_checksum", "boards_2bebop_2actuators_8c.html#a9e7d18b02ea0d8803a375c6abd8bdb3c", null ],
     [ "actuators_bebop_commit", "boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645", null ],
     [ "actuators_bebop_init", "boards_2bebop_2actuators_8c.html#a37d22a22014bc845a6ce9246233cf2b5", null ],

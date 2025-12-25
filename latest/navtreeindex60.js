@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"flight__gear_8h.html#a6ac15222d878862888ab9f25aa330eaf":[12,0,1,1,1,1,3,13],
+"flight__gear_8h.html#a6ae67f603b850603bbf6938c0a152e0e":[12,0,1,1,1,1,2,4],
 "flight__gear_8h.html#a709605bc8476b97fd38bbd6adef08788":[12,0,1,1,1,1,0,35],
 "flight__gear_8h.html#a717e6f81f362c50c05768fcf11f9e215":[12,0,1,1,1,1,1,55],
 "flight__gear_8h.html#a726c5cad3c29b38be1f4cc1a9f0bd3c7":[12,0,1,1,1,1,3,20],
@@ -241,13 +243,11 @@ var NAVTREEINDEX60 =
 "frsky__x_8h.html#a54a9ffe33d0c91beb0f99a229ca4b46f":[12,0,1,0,6,15,14,1,2],
 "frsky__x_8h.html#a5f9612b157349f8ed5bac981fcf10ebc":[12,0,1,0,6,15,14,1,0],
 "frsky__x_8h.html#a60a92dbb3af10529efdb07d77a59dcc4":[12,0,1,0,6,15,14,1,4],
-"frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,6,15,14,0,2],
 "frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,0,3,10,0,2],
+"frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,6,15,14,0,2],
 "frsky__x_8h.html#ab90c957e997570266737ee3d758e9bc3":[12,0,1,0,6,15,14,1,3],
 "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,0,3,10,0,3],
 "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,6,15,14,0,3],
-"frsky__x_8h.html#ae93028e986799fceacecbd153729f855":[12,0,1,0,0,3,10,0,1],
 "frsky__x_8h.html#ae93028e986799fceacecbd153729f855":[12,0,1,0,6,15,14,0,1],
-"frsky__x_8h.html#aef90c1278cdebe3b4aa74e70f4ce508f":[12,0,1,0,6,15,14,3],
-"frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5":[12,0,1,0,6,15,14,0,0]
+"frsky__x_8h.html#ae93028e986799fceacecbd153729f855":[12,0,1,0,0,3,10,0,1]
 };
