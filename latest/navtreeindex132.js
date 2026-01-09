@@ -1,7 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__ahrs_sim.html#module_xml__ahrs_sim":[1,35,1,0],
-"module__ahrs_vectornav.html":[1,36],
 "module__ahrs_vectornav.html#configuration__ahrs_vectornav":[1,36,1],
 "module__ahrs_vectornav.html#functions__ahrs_vectornav":[1,36,2],
 "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav":[1,36,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX132 =
 "module__charge_sens.html#functions__charge_sens":[1,290,1],
 "module__charge_sens.html#module_load_example__charge_sens":[1,290,0],
 "module__charge_sens.html#module_xml__charge_sens":[1,290,1,0],
-"module__cloud_sensor.html":[1,291]
+"module__cloud_sensor.html":[1,291],
+"module__cloud_sensor.html#datalink_functions__cloud_sensor":[1,291,2],
+"module__cloud_sensor.html#functions__cloud_sensor":[1,291,1]
 };

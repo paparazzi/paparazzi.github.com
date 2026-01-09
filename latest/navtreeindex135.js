@@ -1,7 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__guidance_indi.html#module_load_example__guidance_indi":[1,179,0],
-"module__guidance_indi.html#module_xml__guidance_indi":[1,179,1,0],
 "module__guidance_indi_hybrid.html":[1,180],
 "module__guidance_indi_hybrid.html#configuration__guidance_indi_hybrid":[1,180,1],
 "module__guidance_indi_hybrid.html#functions__guidance_indi_hybrid":[1,180,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX135 =
 "module__imu_mpu9250_i2c.html":[1,222],
 "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c":[1,222,1],
 "module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c":[1,222,2],
-"module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,222,0]
+"module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,222,0],
+"module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,222,2,0],
+"module__imu_mpu9250_spi.html":[1,223]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"module__relative_localization_filter.html#functions__relative_localization_filter":[1,519,1],
-"module__relative_localization_filter.html#module_load_example__relative_localization_filter":[1,519,0],
 "module__relative_localization_filter.html#module_xml__relative_localization_filter":[1,519,1,0],
 "module__rng.html":[1,285],
 "module__rng.html#module_load_example__rng":[1,285,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX139 =
 "module__tag_tracking.html#functions__tag_tracking":[1,71,2],
 "module__tag_tracking.html#module_load_example__tag_tracking":[1,71,0],
 "module__tag_tracking.html#module_xml__tag_tracking":[1,71,3,0],
-"module__takeoff_detect.html":[1,368]
+"module__takeoff_detect.html":[1,368],
+"module__takeoff_detect.html#configuration__takeoff_detect":[1,368,1],
+"module__takeoff_detect.html#functions__takeoff_detect":[1,368,2]
 };

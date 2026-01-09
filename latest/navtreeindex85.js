@@ -1,7 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"ik_2nav_2nav__sin_8c.html#aa3ac9a689443ae224b1e9defebc24b18":[12,0,1,0,6,31,1,0,4,7],
-"ik_2nav_2nav__sin_8c.html#ac353f69ede74db5e7ff826f281e96c6a":[12,0,1,0,6,31,1,0,4,1],
 "ik_2nav_2nav__sin_8c.html#acad73ea9588f8c26f0a7de8f5e8ce244":[12,0,1,0,6,31,1,0,4,10],
 "ik_2nav_2nav__sin_8c.html#ade86fc89bb7dfa12e34fc1888ff49324":[12,0,1,0,6,31,1,0,4,2],
 "ik_2nav_2nav__sin_8c.html#ae2a172abf3e23f1335080e8abe1719c8":[12,0,1,0,6,31,1,0,4,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX85 =
 "imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858":[12,0,1,0,6,36,3,2,0],
 "imu_8h.html#afbfa216dda948a1773c5c5725dd2f86a":[12,0,1,0,6,36,3,13],
 "imu_8h.html#structImu":[12,0,1,0,6,36,3,4],
-"imu_8h.html#structimu__accel__t":[12,0,1,0,6,36,3,2]
+"imu_8h.html#structimu__accel__t":[12,0,1,0,6,36,3,2],
+"imu_8h.html#structimu__calib__t":[12,0,1,0,6,36,3,0],
+"imu_8h.html#structimu__gyro__t":[12,0,1,0,6,36,3,1]
 };

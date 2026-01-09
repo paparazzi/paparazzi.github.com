@@ -1,7 +1,5 @@
 var NAVTREEINDEX205 =
 {
-"stabilization__attitude__plane__pid_8c.html#a015228f30f34102b8d41c6c08c752cc0":[12,0,1,0,3,2,2,12,5],
-"stabilization__attitude__plane__pid_8c.html#a59342840b46b82bf6b29302b34c87a80":[12,0,1,0,3,2,2,12,8],
 "stabilization__attitude__plane__pid_8c.html#a5b0a3448308cccbf6109d3cb2f00c40a":[12,0,1,0,3,2,2,12,0],
 "stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598":[12,0,1,0,3,2,2,12,4],
 "stabilization__attitude__plane__pid_8c.html#a834ba8fc277c46a22515610e09d6d55a":[12,0,1,0,3,2,2,12,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX205 =
 "stabilization__attitude__ref__quat__float_8c.html#a50bda25261915c325a17f95f74d33707":[12,0,1,0,3,2,2,30,8],
 "stabilization__attitude__ref__quat__float_8c.html#a5f030065f3f76926bbebb1e67a4694b8":[12,0,1,0,3,2,2,30,16],
 "stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3":[12,0,1,0,3,2,2,30,10],
-"stabilization__attitude__ref__quat__float_8c.html#a62d305e55fd4d335266cf18cb5af6525":[12,0,1,0,3,2,2,30,2]
+"stabilization__attitude__ref__quat__float_8c.html#a62d305e55fd4d335266cf18cb5af6525":[12,0,1,0,3,2,2,30,2],
+"stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b":[12,0,1,0,3,2,2,30,1],
+"stabilization__attitude__ref__quat__float_8c.html#a7ec471088a22f4eeba7ababa9c2cc84f":[12,0,1,0,3,2,2,30,12]
 };

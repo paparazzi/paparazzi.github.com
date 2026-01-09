@@ -1,7 +1,5 @@
 var NAVTREEINDEX204 =
 {
-"stabilization__adaptive_8c.html#a6221c03ea36102def261884c24cacb69":[12,0,1,0,3,1,1,0,39],
-"stabilization__adaptive_8c.html#a660a8c54dd920cc1723ab83d6d5a59e2":[12,0,1,0,3,1,1,0,55],
 "stabilization__adaptive_8c.html#a6784610230ca5f7fbab26343e07d9428":[12,0,1,0,3,1,1,0,22],
 "stabilization__adaptive_8c.html#a67e08a64f9666dc058d26701cb1c0319":[12,0,1,0,3,1,1,0,40],
 "stabilization__adaptive_8c.html#a6c3993e85c06660f262c4063abcb28b5":[12,0,1,0,3,1,1,0,0,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX204 =
 "stabilization__attitude__passthrough_8c_source.html":[12,0,1,0,3,2,2,10],
 "stabilization__attitude__passthrough_8h.html":[12,0,1,0,3,2,2,11],
 "stabilization__attitude__passthrough_8h_source.html":[12,0,1,0,3,2,2,11],
-"stabilization__attitude__plane__pid_8c.html":[12,0,1,0,3,2,2,12]
+"stabilization__attitude__plane__pid_8c.html":[12,0,1,0,3,2,2,12],
+"stabilization__attitude__plane__pid_8c.html#a015228f30f34102b8d41c6c08c752cc0":[12,0,1,0,3,2,2,12,5],
+"stabilization__attitude__plane__pid_8c.html#a59342840b46b82bf6b29302b34c87a80":[12,0,1,0,3,2,2,12,8]
 };

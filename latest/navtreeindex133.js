@@ -1,7 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__cloud_sensor.html#datalink_functions__cloud_sensor":[1,291,2],
-"module__cloud_sensor.html#functions__cloud_sensor":[1,291,1],
 "module__cloud_sensor.html#module_load_example__cloud_sensor":[1,291,0],
 "module__cloud_sensor.html#module_xml__cloud_sensor":[1,291,2,0],
 "module__cloud_sim.html":[1,292],
@@ -249,5 +247,7 @@ var NAVTREEINDEX133 =
 "module__eff_scheduling_rotwing.html#functions__eff_scheduling_rotwing":[1,101,2],
 "module__eff_scheduling_rotwing.html#module_load_example__eff_scheduling_rotwing":[1,101,0],
 "module__eff_scheduling_rotwing.html#module_xml__eff_scheduling_rotwing":[1,101,2,0],
-"module__eff_scheduling_rotwing_v2.html":[1,102]
+"module__eff_scheduling_rotwing_v2.html":[1,102],
+"module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2":[1,102,1],
+"module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2":[1,102,2]
 };

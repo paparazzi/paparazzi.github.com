@@ -1,7 +1,5 @@
 var NAVTREEINDEX196 =
 {
-"rover__guidance_8h.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e":[12,0,1,0,3,3,0,1,9],
-"rover__guidance_8h.html#a4b8b4c6873e954691168d5b7fcd41e47":[12,0,1,0,3,3,0,1,3,1],
 "rover__guidance_8h.html#a4db8bb1975e15df2fc7918173c74d874":[12,0,1,0,3,3,0,1,4],
 "rover__guidance_8h.html#a506ab55b3fce6f1ce3a238def08d085c":[12,0,1,0,3,3,0,1,3,3],
 "rover__guidance_8h.html#a7247860f15a50036841fc55eee654b25":[12,0,1,0,3,3,0,1,0,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX196 =
 "rssi_8h.html#ae10c3fbe1fa8c77765a3c3775cf55e0e":[12,0,1,0,6,46,12,4],
 "rssi_8h.html#structrssi__info__":[12,0,1,0,6,46,12,0],
 "rssi_8h_source.html":[12,0,1,0,6,46,12],
-"rt__priority_8h.html":[12,0,1,0,0,1,5]
+"rt__priority_8h.html":[12,0,1,0,0,1,5],
+"rt__priority_8h.html#a714c7483d11b82772f9184258793e5a1":[12,0,1,0,0,1,5,0],
+"rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb":[12,0,1,0,0,1,5,1]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX170 =
 {
-"optical__flow__landing_8h.html#adf12a6652830210bcc598c69f4364d1c":[12,0,1,0,6,14,33,0,1],
-"optical__flow__landing_8h.html#ae0649ece855c0b0565eb24637f5dc958":[12,0,1,0,6,14,33,13],
 "optical__flow__landing_8h.html#af101f8fb31a03f6276077aab5143ba71":[12,0,1,0,6,14,33,0,39],
 "optical__flow__landing_8h.html#af7c6460e2b21557f1ceebb1d5e0c7702":[12,0,1,0,6,14,33,0,42],
 "optical__flow__landing_8h.html#af871e168e4033512419dbb66a4af0cd2":[12,0,1,0,6,14,33,0,27],
@@ -249,5 +247,7 @@ var NAVTREEINDEX170 =
 "orange__avoider__guided_8c.html#af115de1f0ff11c264ed97e821b2b468e":[12,0,1,0,6,50,2,0],
 "orange__avoider__guided_8c_source.html":[12,0,1,0,6,50,2],
 "orange__avoider__guided_8h.html":[12,0,1,0,6,50,3],
-"orange__avoider__guided_8h.html#a3f1ea4da9ed0b0b23370129310934e54":[12,0,1,0,6,50,3,1]
+"orange__avoider__guided_8h.html#a3f1ea4da9ed0b0b23370129310934e54":[12,0,1,0,6,50,3,1],
+"orange__avoider__guided_8h.html#a4206dd42ad31f7e1b466f36fabb64281":[12,0,1,0,6,50,3,3],
+"orange__avoider__guided_8h.html#a8cbd9fcf2b0e56db6f99887026aa8f3d":[12,0,1,0,6,50,3,2]
 };

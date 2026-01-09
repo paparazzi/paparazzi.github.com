@@ -1,8 +1,8 @@
 var NAVTREEINDEX61 =
 {
 "frsky__x_8h.html#aef90c1278cdebe3b4aa74e70f4ce508f":[12,0,1,0,6,15,14,3],
-"frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5":[12,0,1,0,0,3,10,0,0],
 "frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5":[12,0,1,0,6,15,14,0,0],
+"frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5":[12,0,1,0,0,3,10,0,0],
 "frsky__x_8h.html#af8613799e801fd6230c975eeffc7f3be":[12,0,1,0,6,15,14,1,1],
 "frsky__x_8h.html#structfifo__t":[12,0,1,0,6,15,14,0],
 "frsky__x_8h.html#structfifo__t":[12,0,1,0,0,3,10,0],

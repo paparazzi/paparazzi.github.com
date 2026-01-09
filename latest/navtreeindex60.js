@@ -246,8 +246,8 @@ var NAVTREEINDEX60 =
 "frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,0,3,10,0,2],
 "frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f":[12,0,1,0,6,15,14,0,2],
 "frsky__x_8h.html#ab90c957e997570266737ee3d758e9bc3":[12,0,1,0,6,15,14,1,3],
-"frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,0,3,10,0,3],
 "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,6,15,14,0,3],
+"frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487":[12,0,1,0,0,3,10,0,3],
 "frsky__x_8h.html#ae93028e986799fceacecbd153729f855":[12,0,1,0,6,15,14,0,1],
 "frsky__x_8h.html#ae93028e986799fceacecbd153729f855":[12,0,1,0,0,3,10,0,1]
 };
