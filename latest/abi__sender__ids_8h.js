@@ -126,6 +126,7 @@ var abi__sender__ids_8h =
     [ "RADIO_CONTROL_SBUS_ID", "abi__sender__ids_8h.html#aaef351f4b2e6fa3ec95d1562cd95c6e8", null ],
     [ "RADIO_CONTROL_SPEKTRUM_ID", "abi__sender__ids_8h.html#ab81ee4f82b10596618856abaffc56a69", null ],
     [ "RADIO_CONTROL_SUPERBITRF_RC_ID", "abi__sender__ids_8h.html#a85acebd1b5837d538446e13d4eb1b28e", null ],
+    [ "RADIO_CONTROL_UAVCAN_ID", "abi__sender__ids_8h.html#a7db1923b55aad728de538937684be208", null ],
     [ "RANGE_FORCEFIELD_ID", "abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748", null ],
     [ "RELATIVE_LOCALIZATION_ID", "abi__sender__ids_8h.html#ad83f845fc9d1a98388403ea342aa331a", null ],
     [ "RSSI_BLUEGIGA_ID", "abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db", null ],

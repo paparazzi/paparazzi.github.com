@@ -1,17 +1,26 @@
 <map id="actuators_uavcan_cmd_commit" name="actuators_uavcan_cmd_commit">
-<area shape="rect" id="Node000001" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="5,112,177,152"/>
-<area shape="rect" id="Node000002" href="$uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="225,119,365,145"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,129,212,129,212,135,177,135"/>
-<area shape="rect" id="Node000003" href="$framed__ring__buffer_8c.html#a27872ed37b6ae30200e0b41f381a99ec" title="Drop last inserted record." alt="" coords="427,5,574,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,117,357,87,412,55,427,48,429,53,415,60,360,91,316,121"/>
-<area shape="rect" id="Node000004" href="$framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="413,70,588,95"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="348,117,433,96,434,101,349,122"/>
-<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="431,119,570,145"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="366,129,418,129,418,135,366,135"/>
-<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="442,169,559,194"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="349,142,434,163,433,168,348,147"/>
-<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="434,218,567,243"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="315,143,359,172,414,203,436,211,434,216,412,208,356,177,312,147"/>
-<area shape="rect" id="Node000005" href="$framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35" title="Get the available sapce for the next buffer." alt="" coords="636,63,783,103"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="588,80,622,80,622,85,588,85"/>
+<area shape="rect" id="Node000001" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="5,22,177,62"/>
+<area shape="rect" id="Node000002" href="$uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Legacy function Broadcast an uavcan message to a specific interface." alt="" coords="225,29,365,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,39,212,39,212,45,177,45"/>
+<area shape="rect" id="Node000003" href="$wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="775,5,848,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,31,470,20,588,11,657,10,727,11,761,13,761,18,727,17,657,15,588,17,470,25,366,36"/>
+<area shape="rect" id="Node000004" href="$uavcan_8c.html#a5cd5803a4fbd48694d58918bdec701cc" title=" " alt="" coords="413,80,540,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="342,52,418,74,417,79,341,57"/>
+<area shape="poly" id="edge13_Node000004_Node000003" title=" " alt="" coords="501,77,540,59,587,42,679,25,761,17,761,22,680,30,589,47,542,64,503,82"/>
+<area shape="rect" id="Node000005" href="$uavcan_8c.html#ae6564f0d7339faf0cc6f70d1bde4b8ad" title=" " alt="" coords="597,56,717,81"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="540,82,583,76,584,81,541,87"/>
+<area shape="rect" id="Node000009" href="$chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="588,105,727,131"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="541,99,575,104,574,109,540,104"/>
+<area shape="rect" id="Node000010" href="$chibios_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34" title=" " alt="" coords="599,155,716,180"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="505,103,589,141,606,148,604,153,587,146,503,108"/>
+<area shape="rect" id="Node000011" href="$chibios_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf" title=" " alt="" coords="591,204,724,229"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="491,104,532,146,559,169,589,190,600,196,598,201,587,195,556,174,528,150,487,107"/>
+<area shape="poly" id="edge9_Node000005_Node000003" title=" " alt="" coords="696,53,760,32,762,37,698,58"/>
+<area shape="rect" id="Node000006" href="$kv__store_8c.html#a44d4605673c150120952f65731d89e36" title="Retrieves the value associated with a given key." alt="" coords="778,56,845,81"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="718,66,764,66,764,71,718,71"/>
+<area shape="rect" id="Node000008" href="$kv__store_8c.html#a156b84fb269b9e054dff61b1d4c0144c" title="Sets a value for a given key." alt="" coords="779,105,844,131"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="698,79,766,101,765,106,697,84"/>
+<area shape="rect" id="Node000007" href="$kv__store_8c.html#a541d711a3fba48dce92d33e45e0f7fd8" title="Finds the index of a given key in the store." alt="" coords="896,81,965,107"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="846,73,883,81,882,86,845,78"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="844,109,882,101,883,106,845,114"/>
 </map>

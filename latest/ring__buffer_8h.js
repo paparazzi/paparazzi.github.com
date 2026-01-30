@@ -10,5 +10,5 @@ var ring__buffer_8h =
     [ "ring_buffer_free_space", "ring__buffer_8h.html#a1a7e43f900ef14f1b440e47f60c4a415", null ],
     [ "ring_buffer_init", "ring__buffer_8h.html#ad0529fe5e2be28e5ef72a2a3ffb614d7", null ],
     [ "ring_buffer_read", "ring__buffer_8h.html#ac08c74283937949e77c61604365f85d0", null ],
-    [ "ring_buffer_write", "ring__buffer_8h.html#a1671f054e32c4bd84d615dd3fd5c2bc5", null ]
+    [ "ring_buffer_write", "ring__buffer_8h.html#ae3176b83405aa190856e6630a1547eb4", null ]
 ];

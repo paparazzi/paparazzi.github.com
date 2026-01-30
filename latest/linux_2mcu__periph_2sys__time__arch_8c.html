@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2sys__time__arch_8c
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;mcu_periph/sys_time_arch.h&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;pthread.h&gt;</code><br />
 <code>#include &lt;sys/timerfd.h&gt;</code><br />
@@ -111,37 +112,38 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2sys__time__arch_8c
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2sys__time__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2linux_2mcu__periph_2sys__time__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2linux_2mcu__periph_2sys__time__arch_8c" id="asw_2airborne_2arch_2linux_2mcu__periph_2sys__time__arch_8c">
-<area shape="rect" title=" " alt="" coords="683,5,894,45"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="209,93,382,119"/>
-<area shape="poly" title=" " alt="" coords="683,46,381,94,380,89,682,41"/>
-<area shape="rect" title=" " alt="" coords="626,174,693,199"/>
-<area shape="poly" title=" " alt="" coords="775,47,680,165,675,161,771,44"/>
-<area shape="rect" title=" " alt="" coords="717,174,801,199"/>
-<area shape="poly" title=" " alt="" coords="786,46,774,94,764,161,759,160,769,93,780,45"/>
-<area shape="rect" title=" " alt="" coords="904,93,1012,119"/>
-<area shape="poly" title=" " alt="" coords="830,43,922,85,919,90,828,48"/>
-<area shape="rect" title=" " alt="" coords="1037,93,1101,119"/>
-<area shape="poly" title=" " alt="" coords="856,43,1024,89,1022,95,855,48"/>
-<area shape="rect" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level." alt="" coords="783,93,879,119"/>
-<area shape="poly" title=" " alt="" coords="801,44,821,80,816,83,797,47"/>
-<area shape="rect" title=" " alt="" coords="5,174,92,199"/>
-<area shape="poly" title=" " alt="" coords="258,121,104,169,95,172,94,167,103,164,257,116"/>
-<area shape="rect" title=" " alt="" coords="116,174,187,199"/>
-<area shape="poly" title=" " alt="" coords="275,121,186,170,183,165,273,116"/>
-<area shape="rect" title=" " alt="" coords="211,174,265,199"/>
-<area shape="poly" title=" " alt="" coords="289,120,257,164,252,161,285,117"/>
-<area shape="rect" title=" " alt="" coords="289,174,416,199"/>
-<area shape="poly" title=" " alt="" coords="306,117,338,161,334,164,302,120"/>
+<area shape="rect" title=" " alt="" coords="605,5,815,45"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="243,93,417,119"/>
+<area shape="poly" title=" " alt="" coords="620,48,399,93,398,88,618,43"/>
 <area shape="rect" title=" " alt="" coords="440,167,601,207"/>
-<area shape="poly" title=" " alt="" coords="329,116,454,160,453,165,327,121"/>
-<area shape="poly" title=" " alt="" coords="807,121,698,171,696,166,805,116"/>
-<area shape="poly" title=" " alt="" coords="823,121,781,165,777,162,819,117"/>
+<area shape="poly" title=" " alt="" coords="689,48,555,160,552,156,686,43"/>
+<area shape="rect" title=" " alt="" coords="626,174,693,199"/>
+<area shape="poly" title=" " alt="" coords="707,46,670,162,665,160,701,45"/>
+<area shape="rect" title=" " alt="" coords="717,174,801,199"/>
+<area shape="poly" title=" " alt="" coords="717,45,738,118,753,160,748,162,733,119,712,46"/>
+<area shape="rect" title=" " alt="" coords="868,93,976,119"/>
+<area shape="poly" title=" " alt="" coords="762,43,879,86,877,91,760,48"/>
+<area shape="rect" title=" " alt="" coords="1001,93,1065,119"/>
+<area shape="poly" title=" " alt="" coords="791,43,988,90,987,96,789,48"/>
+<area shape="rect" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level." alt="" coords="747,93,843,119"/>
+<area shape="poly" title=" " alt="" coords="732,44,774,82,771,86,729,48"/>
+<area shape="rect" title=" " alt="" coords="235,174,321,199"/>
+<area shape="poly" title=" " alt="" coords="325,120,296,164,291,161,320,117"/>
+<area shape="rect" title=" " alt="" coords="345,174,416,199"/>
+<area shape="poly" title=" " alt="" coords="340,117,368,161,363,164,335,120"/>
+<area shape="rect" title=" " alt="" coords="5,174,60,199"/>
+<area shape="poly" title=" " alt="" coords="262,121,171,141,72,169,67,171,65,166,70,164,169,136,261,116"/>
+<area shape="rect" title=" " alt="" coords="84,174,211,199"/>
+<area shape="poly" title=" " alt="" coords="304,121,188,171,186,166,302,116"/>
+<area shape="poly" title=" " alt="" coords="359,116,463,159,461,164,357,121"/>
+<area shape="poly" title=" " alt="" coords="777,121,693,169,690,165,774,117"/>
+<area shape="poly" title=" " alt="" coords="792,120,773,163,768,160,788,118"/>
 <area shape="rect" title=" " alt="" coords="825,174,941,199"/>
-<area shape="poly" title=" " alt="" coords="841,117,870,161,866,164,837,120"/>
+<area shape="poly" title=" " alt="" coords="810,117,862,163,859,167,807,121"/>
 <area shape="rect" title=" " alt="" coords="966,174,1041,199"/>
-<area shape="poly" title=" " alt="" coords="857,116,967,166,965,171,855,121"/>
+<area shape="poly" title=" " alt="" coords="827,116,955,164,961,167,960,172,953,169,825,121"/>
 <area shape="rect" title=" " alt="" coords="1065,174,1171,199"/>
-<area shape="poly" title=" " alt="" coords="875,116,1053,164,1066,168,1065,173,1052,169,874,121"/>
+<area shape="poly" title=" " alt="" coords="844,115,1053,164,1067,168,1066,173,1052,169,843,120"/>
 </map>
 </div>
 </div>
@@ -171,6 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad3cb294b0d1d74dfb511534b36a17960" id="r_ad3cb294b0d1d74dfb511534b36a17960"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">get_sys_time_msec</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:ad3cb294b0d1d74dfb511534b36a17960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in milliseconds since startup.  <br /></td></tr>
 <tr class="separator:ad3cb294b0d1d74dfb511534b36a17960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74db3eed857f9c53bb67db256c12bc83" id="r_a74db3eed857f9c53bb67db256c12bc83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83">sys_time_usleep</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">us</a>)</td></tr>
+<tr class="memdesc:a74db3eed857f9c53bb67db256c12bc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep.  <br /></td></tr>
+<tr class="separator:a74db3eed857f9c53bb67db256c12bc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184792a6c12efcdd00999adbde66de35" id="r_a184792a6c12efcdd00999adbde66de35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35">sys_time_msleep</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ms</a>)</td></tr>
+<tr class="memdesc:a184792a6c12efcdd00999adbde66de35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep.  <br /></td></tr>
+<tr class="separator:a184792a6c12efcdd00999adbde66de35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -194,7 +202,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00047">47</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00048">48</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 </div>
 </div>
@@ -210,7 +218,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00039">39</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00040">40</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 </div>
 </div>
@@ -234,9 +242,9 @@ Variables</h2></td></tr>
 <p>Get the time in milliseconds since startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>milliseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00201">201</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00202">202</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00043">startup_time</a>.</p>
 
 </div>
 </div>
@@ -259,9 +267,9 @@ Variables</h2></td></tr>
 <p>Get the time in microseconds since startup. </p>
 <p>WARNING: overflows after 71min34seconds! </p><dl class="section return"><dt>Returns</dt><dd>current system time as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00156">156</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00157">157</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00043">startup_time</a>.</p>
 
 </div>
 </div>
@@ -286,9 +294,9 @@ Variables</h2></td></tr>
 <p>Get the time in microseconds divided by 100 since startup.</p>
 <p>WARNING: overflows after 7000 minutes! </p><dl class="section return"><dt>Returns</dt><dd>current system time as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00179">179</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00180">180</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00043">startup_time</a>.</p>
 
 </div>
 </div>
@@ -316,9 +324,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00111">111</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00112">112</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00197">cpu_ticks_of_nsec()</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>, <a class="el" href="sys__time_8h_source.html#l00044">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00147">sys_time_ticks_of_sec()</a>, <a class="el" href="sys__time_8h_source.html#l00157">sys_time_ticks_of_usec()</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00207">cpu_ticks_of_nsec()</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00043">startup_time</a>, <a class="el" href="sys__time_8h_source.html#l00044">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00157">sys_time_ticks_of_sec()</a>, <a class="el" href="sys__time_8h_source.html#l00167">sys_time_ticks_of_usec()</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -354,9 +362,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00093">93</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00094">94</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00049">sys_time_thread_main()</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00043">startup_time</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00050">sys_time_thread_main()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -378,6 +386,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a184792a6c12efcdd00999adbde66de35" name="a184792a6c12efcdd00999adbde66de35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184792a6c12efcdd00999adbde66de35">&#9670;&#160;</a></span>sys_time_msleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_time_msleep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sleep. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00225">225</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00116">sys_time_usleep()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph.png" border="0" usemap="#alinux_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph" alt=""/></div>
+<map name="alinux_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph" id="alinux_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph">
+<area shape="rect" title="Sleep." alt="" coords="5,5,141,31"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="189,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="142,15,175,15,175,21,142,21"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a2e9913da251a9ce6c35f3a8a5b3ca23e" name="a2e9913da251a9ce6c35f3a8a5b3ca23e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e9913da251a9ce6c35f3a8a5b3ca23e">&#9670;&#160;</a></span>sys_time_thread_main()</h2>
 
@@ -394,16 +444,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00049">49</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00050">50</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rt__priority_8h_source.html#l00032">get_rt_prio()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00047">NSEC_OF_SEC</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00154">sys_tick_handler()</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00039">SYS_TIME_THREAD_PRIO</a>.</p>
+<p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rt__priority_8h_source.html#l00032">get_rt_prio()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00048">NSEC_OF_SEC</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00154">sys_tick_handler()</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00040">SYS_TIME_THREAD_PRIO</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00093">sys_time_arch_init()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00094">sys_time_arch_init()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_cgraph.png" border="0" usemap="#alinux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_cgraph" alt=""/></div>
 <map name="alinux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_cgraph" id="alinux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,176,56"/>
@@ -415,11 +465,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="355,65,389,65,389,70,355,70"/>
 </map>
 </div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_icgraph.png" border="0" usemap="#alinux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_icgraph" alt=""/></div>
 <map name="alinux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_icgraph" id="alinux_2mcu__periph_2sys__time__arch_8c_a2e9913da251a9ce6c35f3a8a5b3ca23e_icgraph">
 <area shape="rect" title=" " alt="" coords="197,5,368,31"/>
@@ -427,6 +477,39 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="184,21,149,21,149,15,184,15"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a74db3eed857f9c53bb67db256c12bc83" name="a74db3eed857f9c53bb67db256c12bc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74db3eed857f9c53bb67db256c12bc83">&#9670;&#160;</a></span>sys_time_usleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_time_usleep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>us</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sleep. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">us</td><td>microseconds</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Sleep.</p>
+<p>using intermediate 64 bits variable to avoid wrapping</p>
+<p>max sleep time is around 10 days (2^32 / CH_CFG_ST_FREQUENCY) at 10kHz </p>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00220">220</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
 </div>
 </div>
@@ -451,9 +534,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">42</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00043">43</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00201">get_sys_time_msec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00156">get_sys_time_usec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00179">get_sys_time_usec100()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00111">sys_tick_handler()</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00093">sys_time_arch_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00202">get_sys_time_msec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00157">get_sys_time_usec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00180">get_sys_time_usec100()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00112">sys_tick_handler()</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00094">sys_time_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -463,7 +546,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html">sys_time_arch.c</a></li>
-    <li class="footer">Generated on Wed Jan 14 2026 21:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jan 30 2026 12:26:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

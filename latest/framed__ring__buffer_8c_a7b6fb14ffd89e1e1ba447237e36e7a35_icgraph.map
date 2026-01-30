@@ -1,39 +1,33 @@
 <map id="framed_ring_buffer_available" name="framed_ring_buffer_available">
-<area shape="rect" id="Node000001" title="Get the available sapce for the next buffer." alt="" coords="1141,137,1288,177"/>
-<area shape="rect" id="Node000002" href="$framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="919,145,1093,170"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1128,160,1093,160,1093,155,1128,155"/>
-<area shape="rect" id="Node000003" href="$uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="731,70,871,95"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="956,142,835,98,837,93,958,137"/>
-<area shape="rect" id="Node000006" href="$actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="759,218,842,243"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="957,177,838,220,836,215,956,172"/>
-<area shape="rect" id="Node000004" href="$actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="499,5,671,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="738,69,660,48,662,43,740,64"/>
-<area shape="rect" id="Node000005" href="$actuators__uavcan_8c.html#a4f2b07629c6392c8019dfc9123fb4684" title="Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND)" alt="" coords="488,70,683,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="717,85,683,85,683,80,717,80"/>
-<area shape="rect" id="Node000007" href="$actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="499,119,672,145"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="771,212,730,184,682,158,649,147,651,142,684,154,733,180,774,208"/>
-<area shape="rect" id="Node000008" href="$actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="503,169,667,194"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="746,221,641,197,642,191,747,216"/>
-<area shape="rect" id="Node000010" href="$actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="510,218,661,243"/>
-<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="746,233,661,233,661,228,746,228"/>
-<area shape="rect" id="Node000013" href="$actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="526,267,645,293"/>
-<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="747,246,642,270,641,265,746,240"/>
-<area shape="rect" id="Node000015" href="$actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="502,317,669,357"/>
-<area shape="poly" id="edge14_Node000006_Node000015" title=" " alt="" coords="773,254,732,281,684,308,655,320,653,315,682,303,729,276,770,249"/>
-<area shape="rect" id="Node000017" href="$actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="514,382,657,407"/>
-<area shape="poly" id="edge16_Node000006_Node000017" title=" " alt="" coords="788,257,746,315,717,346,684,372,657,384,655,379,681,367,714,342,742,311,783,254"/>
-<area shape="rect" id="Node000009" href="$actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,153,434,193"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="489,181,434,179,434,174,489,175"/>
-<area shape="rect" id="Node000011" href="$actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,218,416,243"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="496,233,416,233,416,228,496,228"/>
-<area shape="rect" id="Node000012" href="$actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,218,205,243"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="263,233,206,233,206,228,263,228"/>
-<area shape="rect" id="Node000014" href="$actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,267,440,293"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="512,283,440,283,440,277,512,277"/>
-<area shape="rect" id="Node000016" href="$actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,317,431,357"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="488,340,431,340,431,335,488,335"/>
-<area shape="rect" id="Node000018" href="$actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,382,439,407"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="500,397,439,397,439,392,500,392"/>
-<area shape="rect" id="Node000019" href="$actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0" title=" " alt="" coords="263,431,431,457"/>
-<area shape="poly" id="edge18_Node000017_Node000019" title=" " alt="" coords="511,413,410,434,408,429,510,408"/>
+<area shape="rect" id="Node000001" title="Get the available sapce for the next buffer." alt="" coords="1063,122,1209,162"/>
+<area shape="rect" id="Node000002" href="$framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="840,129,1015,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1049,145,1015,145,1015,139,1049,139"/>
+<area shape="rect" id="Node000003" href="$actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="709,129,792,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="826,145,792,145,792,139,826,139"/>
+<area shape="rect" id="Node000004" href="$actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="488,5,661,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="732,119,701,80,682,61,660,44,637,33,639,28,663,40,685,57,705,77,736,116"/>
+<area shape="rect" id="Node000005" href="$actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="493,55,657,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="718,124,660,94,628,83,630,78,662,89,720,120"/>
+<area shape="rect" id="Node000007" href="$actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="499,104,650,129"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="695,137,650,130,650,125,696,132"/>
+<area shape="rect" id="Node000010" href="$actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="515,153,634,179"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="696,152,635,161,634,155,695,147"/>
+<area shape="rect" id="Node000012" href="$actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="491,203,658,243"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="718,164,662,194,634,206,632,201,660,189,716,159"/>
+<area shape="rect" id="Node000014" href="$actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="503,268,646,293"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="739,168,708,214,687,237,663,258,638,270,635,266,660,253,683,234,704,210,734,165"/>
+<area shape="rect" id="Node000006" href="$actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,39,434,79"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="479,67,434,65,434,60,479,61"/>
+<area shape="rect" id="Node000008" href="$actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,104,416,129"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="486,119,416,119,416,114,486,114"/>
+<area shape="rect" id="Node000009" href="$actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,104,205,129"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="263,119,206,119,206,114,263,114"/>
+<area shape="rect" id="Node000011" href="$actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,153,440,179"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="502,169,440,169,440,163,502,163"/>
+<area shape="rect" id="Node000013" href="$actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,203,431,243"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="477,226,431,226,431,221,477,221"/>
+<area shape="rect" id="Node000015" href="$actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,268,439,293"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="490,283,440,283,440,278,490,278"/>
+<area shape="rect" id="Node000016" href="$actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0" title=" " alt="" coords="263,317,431,343"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="503,299,407,320,406,315,501,294"/>
 </map>

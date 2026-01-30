@@ -32,6 +32,8 @@ var dir_164c7aa663179b26059278e7f36078da =
     [ "telemetry.c", "telemetry_8c.html", "telemetry_8c" ],
     [ "telemetry.h", "telemetry_8h.html", "telemetry_8h" ],
     [ "telemetry_common.h", "telemetry__common_8h.html", "telemetry__common_8h" ],
+    [ "tunnel_uavcan.c", "tunnel__uavcan_8c.html", "tunnel__uavcan_8c" ],
+    [ "tunnel_uavcan.h", "tunnel__uavcan_8h.html", "tunnel__uavcan_8h" ],
     [ "uart_print.h", "uart__print_8h.html", "uart__print_8h" ],
     [ "w5100.c", "w5100_8c.html", "w5100_8c" ],
     [ "w5100.h", "w5100_8h.html", "w5100_8h" ],

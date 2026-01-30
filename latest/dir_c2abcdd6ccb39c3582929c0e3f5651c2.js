@@ -73,5 +73,6 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "time", "dir_63011ef7b1135673f06d06b59c577dfa.html", "dir_63011ef7b1135673f06d06b59c577dfa" ],
     [ "tlsf", "dir_2dab0067fc5855d238895e34a3d18072.html", "dir_2dab0067fc5855d238895e34a3d18072" ],
     [ "uav_recovery", "dir_514e42ddade0df778a696ac907fa7c01.html", "dir_514e42ddade0df778a696ac907fa7c01" ],
+    [ "uavcan", "dir_1d7cbae8c425199cd315297d59142355.html", "dir_1d7cbae8c425199cd315297d59142355" ],
     [ "wedgebug", "dir_b0be9e4db44222178b6b6cac00abe50a.html", "dir_b0be9e4db44222178b6b6cac00abe50a" ]
 ];

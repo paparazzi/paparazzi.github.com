@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2sys__time__arch_8c
 <p>STM32 timing functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;mcu_periph/sys_time_arch.h&quot;</code><br />
 <code>#include &quot;libopencm3/cm3/systick.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sys_time_arch.c:</div>
@@ -109,21 +110,22 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2sys__time__arch_8c
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2mcu__periph_2sys__time__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2stm32_2mcu__periph_2sys__time__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2stm32_2mcu__periph_2sys__time__arch_8c" id="asw_2airborne_2arch_2stm32_2mcu__periph_2sys__time__arch_8c">
-<area shape="rect" title="STM32 timing functions." alt="" coords="235,5,446,45"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="151,93,325,119"/>
-<area shape="poly" title=" " alt="" coords="317,48,266,87,262,83,314,43"/>
-<area shape="rect" title=" " alt="" coords="349,93,541,119"/>
-<area shape="poly" title=" " alt="" coords="367,43,420,83,417,87,364,48"/>
-<area shape="rect" title=" " alt="" coords="5,174,92,199"/>
-<area shape="poly" title=" " alt="" coords="211,121,90,171,88,166,209,116"/>
-<area shape="rect" title=" " alt="" coords="116,174,187,199"/>
-<area shape="poly" title=" " alt="" coords="227,121,176,166,173,163,223,117"/>
-<area shape="rect" title=" " alt="" coords="211,174,265,199"/>
-<area shape="poly" title=" " alt="" coords="241,119,241,160,235,160,235,119"/>
-<area shape="rect" title=" " alt="" coords="289,174,416,199"/>
-<area shape="poly" title=" " alt="" coords="256,117,326,164,323,168,253,121"/>
+<area shape="rect" title="STM32 timing functions." alt="" coords="375,5,586,45"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="191,93,365,119"/>
+<area shape="poly" title=" " alt="" coords="433,48,322,91,320,86,431,43"/>
 <area shape="rect" title=" " alt="" coords="440,167,601,207"/>
-<area shape="poly" title=" " alt="" coords="280,116,440,160,439,166,278,121"/>
+<area shape="poly" title=" " alt="" coords="488,45,515,153,510,154,483,46"/>
+<area shape="rect" title=" " alt="" coords="518,93,710,119"/>
+<area shape="poly" title=" " alt="" coords="514,43,584,84,581,89,511,48"/>
+<area shape="rect" title=" " alt="" coords="5,174,92,199"/>
+<area shape="poly" title=" " alt="" coords="245,121,104,169,96,172,94,167,102,164,244,116"/>
+<area shape="rect" title=" " alt="" coords="116,174,187,199"/>
+<area shape="poly" title=" " alt="" coords="261,121,183,169,180,164,258,117"/>
+<area shape="rect" title=" " alt="" coords="211,174,265,199"/>
+<area shape="poly" title=" " alt="" coords="274,120,252,163,248,161,270,118"/>
+<area shape="rect" title=" " alt="" coords="289,174,416,199"/>
+<area shape="poly" title=" " alt="" coords="291,117,334,162,330,166,287,121"/>
+<area shape="poly" title=" " alt="" coords="314,116,450,160,449,165,312,121"/>
 </map>
 </div>
 </div>
@@ -141,6 +143,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a9b31c2feb846b96205ae20ea6883e1c4" id="r_a9b31c2feb846b96205ae20ea6883e1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a9b31c2feb846b96205ae20ea6883e1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize SysTick.  <br /></td></tr>
 <tr class="separator:a9b31c2feb846b96205ae20ea6883e1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74db3eed857f9c53bb67db256c12bc83" id="r_a74db3eed857f9c53bb67db256c12bc83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83">sys_time_usleep</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">us</a>)</td></tr>
+<tr class="memdesc:a74db3eed857f9c53bb67db256c12bc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busy wait in microseconds.  <br /></td></tr>
+<tr class="separator:a74db3eed857f9c53bb67db256c12bc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184792a6c12efcdd00999adbde66de35" id="r_a184792a6c12efcdd00999adbde66de35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35">sys_time_msleep</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ms</a>)</td></tr>
+<tr class="memdesc:a184792a6c12efcdd00999adbde66de35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep.  <br /></td></tr>
+<tr class="separator:a184792a6c12efcdd00999adbde66de35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>STM32 timing functions. </p>
@@ -159,7 +167,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00039">39</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00040">40</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 </div>
 </div>
@@ -180,7 +188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00075">75</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00076">76</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>, <a class="el" href="sys__time_8h_source.html#l00044">SYS_TIME_NB_TIMER</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
 
@@ -205,9 +213,91 @@ Functions</h2></td></tr>
 <p>Initialize SysTick. </p>
 <p>Generate SysTick interrupt every <a class="el" href="sys__time_8h.html#a6afb6a9b84be1fe714c946b509585de9" title="sys_time_timer resolution in cpu ticks">sys_time.resolution_cpu_ticks</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00047">47</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00048">48</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="apogee__1_80_8h_source.html#l00008">AHB_CLK</a>, <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, and <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>.</p>
+
+</div>
+</div>
+<a id="a184792a6c12efcdd00999adbde66de35" name="a184792a6c12efcdd00999adbde66de35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184792a6c12efcdd00999adbde66de35">&#9670;&#160;</a></span>sys_time_msleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_time_msleep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sleep. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00134">134</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00116">sys_time_usleep()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stm32_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph.png" border="0" usemap="#astm32_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph" alt=""/></div>
+<map name="astm32_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph" id="astm32_2mcu__periph_2sys__time__arch_8c_a184792a6c12efcdd00999adbde66de35_cgraph">
+<area shape="rect" title="Sleep." alt="" coords="5,5,141,31"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="189,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="142,15,175,15,175,21,142,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a74db3eed857f9c53bb67db256c12bc83" name="a74db3eed857f9c53bb67db256c12bc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74db3eed857f9c53bb67db256c12bc83">&#9670;&#160;</a></span>sys_time_usleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_time_usleep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>us</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busy wait in microseconds. </p>
+<p>Sleep.</p>
+<p>max value is limited by the max number of cycle i.e 2^32 * usec_of_cpu_ticks(systick_get_reload()) </p>
+
+<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00106">106</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00197">cpu_ticks_of_usec()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="sys__time_8h_source.html#l00217">usec_of_cpu_ticks()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stm32_2mcu__periph_2sys__time__arch_8c_a74db3eed857f9c53bb67db256c12bc83_cgraph.png" border="0" usemap="#astm32_2mcu__periph_2sys__time__arch_8c_a74db3eed857f9c53bb67db256c12bc83_cgraph" alt=""/></div>
+<map name="astm32_2mcu__periph_2sys__time__arch_8c_a74db3eed857f9c53bb67db256c12bc83_cgraph" id="astm32_2mcu__periph_2sys__time__arch_8c_a74db3eed857f9c53bb67db256c12bc83_cgraph">
+<area shape="rect" title="Busy wait in microseconds." alt="" coords="5,31,136,56"/>
+<area shape="rect" href="sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7" title=" " alt="" coords="184,5,324,31"/>
+<area shape="poly" title=" " alt="" coords="136,32,170,27,171,32,137,37"/>
+<area shape="rect" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title=" " alt="" coords="184,55,324,80"/>
+<area shape="poly" title=" " alt="" coords="137,49,171,54,170,59,136,55"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -217,7 +307,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html">sys_time_arch.c</a></li>
-    <li class="footer">Generated on Wed Jan 14 2026 21:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jan 30 2026 12:26:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

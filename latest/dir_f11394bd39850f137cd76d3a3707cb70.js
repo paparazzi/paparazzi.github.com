@@ -2,6 +2,8 @@ var dir_f11394bd39850f137cd76d3a3707cb70 =
 [
     [ "adc_arch.c", "sim_2mcu__periph_2adc__arch_8c.html", "sim_2mcu__periph_2adc__arch_8c" ],
     [ "adc_arch.h", "sim_2mcu__periph_2adc__arch_8h.html", "sim_2mcu__periph_2adc__arch_8h" ],
+    [ "can_arch.c", "sim_2mcu__periph_2can__arch_8c.html", "sim_2mcu__periph_2can__arch_8c" ],
+    [ "can_arch.h", "sim_2mcu__periph_2can__arch_8h.html", "sim_2mcu__periph_2can__arch_8h" ],
     [ "gpio_arch.c", "sim_2mcu__periph_2gpio__arch_8c.html", null ],
     [ "gpio_arch.h", "sim_2mcu__periph_2gpio__arch_8h.html", "sim_2mcu__periph_2gpio__arch_8h" ],
     [ "i2c_arch.c", "sim_2mcu__periph_2i2c__arch_8c.html", "sim_2mcu__periph_2i2c__arch_8c" ],

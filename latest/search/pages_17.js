@@ -33,5 +33,6 @@ var searchData=
   ['todo_20list_30',['Todo List',['../todo.html',1,'']]],
   ['traffic_5finfo_20module_31',['traffic_info module',['../module__traffic_info.html',1,'onboard_modules']]],
   ['trig_5ftest_20module_32',['trig_test module',['../module__trig_test.html',1,'onboard_modules']]],
-  ['tune_5fairspeed_20module_33',['tune_airspeed module',['../module__tune_airspeed.html',1,'onboard_modules']]]
+  ['tune_5fairspeed_20module_33',['tune_airspeed module',['../module__tune_airspeed.html',1,'onboard_modules']]],
+  ['tunnel_5fuavcan_20module_34',['tunnel_uavcan module',['../module__tunnel_uavcan.html',1,'onboard_modules']]]
 ];

@@ -130,13 +130,24 @@ Init Functions</h2>
 <ul>
 <li><a class="el" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces.">uavcan_init()</a></li>
 </ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="uavcan_8h.html#aa96c5799b3b297a451b146748eb1bfff">uavcan_reporting()</a><ul>
+<li>Frequency in Hz: <em>2</em> </li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html">uavcan.h</a></li>
+<li><a class="el" href="uavcan_8h.html">uavcan.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
@@ -145,14 +156,18 @@ Source Files</h2>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.protocol.NodeStatus.c</a></li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.protocol.GetNodeInfo_req.c</a></li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.protocol.GetNodeInfo_res.c</a></li>
+<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/var/include/DSDLcode/src/uavcan.protocol.dynamic_node_id.Allocation.c</a></li>
+<li><a class="el" href="uavcan_8c.html">modules/uavcan/uavcan.c</a></li>
+<li><a class="el" href="uavcan__reporting_8c.html">modules/uavcan/uavcan_reporting.c</a></li>
+<li><a class="el" href="uavcan__allocator_8c.html">modules/uavcan/uavcan_allocator.c</a></li>
 <li><a class="el" href="framed__ring__buffer_8c.html">utils/framed_ring_buffer.c</a></li>
-<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: <a class="el" href="uavcan_8c.html" title="Interface from actuators to ChibiOS CAN driver using UAVCan.">modules/uavcan/uavcan.c</a></li>
+<li><a class="el" href="kv__store_8c.html">utils/kv_store.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__uavcan"></a>
 Raw uavcan.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">module</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;module.dtd&quot;</span>&gt;</div>
 <div class="line"> </div>
-<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;uavcan&quot;</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;uavcan&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;core&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">UAVCan</span> <span class="keyword">interface</span> <span class="keyword">for</span> <span class="keyword">transmitting</span>/<span class="keyword">receiving</span> <span class="keyword">uavcan</span> <span class="keyword">messages</span> <span class="keyword">on</span> <span class="keyword">CAN</span> <span class="keyword">busses</span></div>
@@ -169,7 +184,8 @@ Raw uavcan.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;uavcan_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;uavcan_reporting()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    <span class="comment">&lt;!-- Enable the CAN busses if needed --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_USE_CAN1&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_USE_CAN2&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
@@ -177,6 +193,7 @@ Raw uavcan.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_CAN2&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(UAVCAN_USE_CAN2), TRUE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_USE_CAN1&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UAVCAN_USE_CAN1)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_USE_CAN2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(UAVCAN_USE_CAN2)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CANARD_ALLOCATE_SEM&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">&lt;!-- Load canard --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/dronecan/libcanard&quot;</span>/&gt;</div>
@@ -187,10 +204,14 @@ Raw uavcan.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.protocol.NodeStatus.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.protocol.GetNodeInfo_req.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.protocol.GetNodeInfo_res.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.protocol.dynamic_node_id.Allocation.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">&lt;!-- Load uavcan itself --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan_reporting.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan_allocator.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/uavcan&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;framed_ring_buffer.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;utils&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;kv_store.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;utils&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -200,7 +221,7 @@ Raw uavcan.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Jan 14 2026 21:56:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jan 30 2026 12:26:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

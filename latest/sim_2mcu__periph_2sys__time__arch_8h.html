@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('sim_2mcu__periph_2sys__time__arch_8h.h
 <p>Simulator timing functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sys_time_arch.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,9 +108,20 @@ $(document).ready(function(){initNavTree('sim_2mcu__periph_2sys__time__arch_8h.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__periph_2sys__time__arch_8h__incl.png" border="0" usemap="#asw_2airborne_2arch_2sim_2mcu__periph_2sys__time__arch_8h" alt=""/></div>
 <map name="asw_2airborne_2arch_2sim_2mcu__periph_2sys__time__arch_8h" id="asw_2airborne_2arch_2sim_2mcu__periph_2sys__time__arch_8h">
-<area shape="rect" title="Simulator timing functions." alt="" coords="5,5,171,60"/>
-<area shape="rect" title=" " alt="" coords="61,108,115,133"/>
-<area shape="poly" title=" " alt="" coords="91,60,91,94,85,94,85,60"/>
+<area shape="rect" title="Simulator timing functions." alt="" coords="49,5,214,60"/>
+<area shape="rect" title=" " alt="" coords="5,189,60,214"/>
+<area shape="poly" title=" " alt="" coords="118,62,49,178,44,176,113,59"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="125,108,298,133"/>
+<area shape="poly" title=" " alt="" coords="158,58,193,96,189,99,154,62"/>
+<area shape="poly" title=" " alt="" coords="184,136,72,184,69,185,67,180,70,179,182,131"/>
+<area shape="rect" title=" " alt="" coords="84,189,171,214"/>
+<area shape="poly" title=" " alt="" coords="201,135,152,181,148,177,197,132"/>
+<area shape="rect" title=" " alt="" coords="195,189,265,214"/>
+<area shape="poly" title=" " alt="" coords="217,133,227,175,221,176,211,134"/>
+<area shape="rect" title=" " alt="" coords="289,189,416,214"/>
+<area shape="poly" title=" " alt="" coords="233,131,321,180,318,184,231,136"/>
+<area shape="rect" title=" " alt="" coords="440,181,601,221"/>
+<area shape="poly" title=" " alt="" coords="257,131,434,175,432,181,256,136"/>
 </map>
 </div>
 </div>
@@ -128,8 +140,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f8c93bbb4f24eee68b36977371aa262" id="r_a5f8c93bbb4f24eee68b36977371aa262"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262">get_sys_time_msec</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a5f8c93bbb4f24eee68b36977371aa262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in milliseconds since startup.  <br /></td></tr>
 <tr class="separator:a5f8c93bbb4f24eee68b36977371aa262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7670fcda069c778861e6d2e36f212aa" id="r_ac7670fcda069c778861e6d2e36f212aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa">sys_time_usleep</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">us</a>)</td></tr>
-<tr class="separator:ac7670fcda069c778861e6d2e36f212aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simulator timing functions. </p>
@@ -163,9 +173,9 @@ Functions</h2></td></tr>
 <p>Get the time in milliseconds since startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>milliseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00059">59</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00060">60</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00202">msec_of_cpu_ticks()</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00212">msec_of_cpu_ticks()</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -208,9 +218,9 @@ Functions</h2></td></tr>
 <p>Get the time in microseconds since startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>microseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00039">39</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00040">40</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="sys__time_8h_source.html#l00207">usec_of_cpu_ticks()</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="sys__time_8h_source.html#l00217">usec_of_cpu_ticks()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -253,9 +263,9 @@ Functions</h2></td></tr>
 <p>Get the time in 100microseconds since startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>100microseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00049">49</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00050">50</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="sys__time_8h_source.html#l00207">usec_of_cpu_ticks()</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="sys__time_8h_source.html#l00217">usec_of_cpu_ticks()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -295,37 +305,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c_source.html#l00038">38</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c_source.html#l00039">39</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>, <a class="el" href="sys__time_8h_source.html#l00044">SYS_TIME_NB_TIMER</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
-
-</div>
-</div>
-<a id="ac7670fcda069c778861e6d2e36f212aa" name="ac7670fcda069c778861e6d2e36f212aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7670fcda069c778861e6d2e36f212aa">&#9670;&#160;</a></span>sys_time_usleep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_time_usleep </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>us</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html#l00066">66</a> of file <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h_source.html">sys_time_arch.h</a>.</p>
 
 </div>
 </div>
@@ -335,7 +317,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_f11394bd39850f137cd76d3a3707cb70.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sim_2mcu__periph_2sys__time__arch_8h.html">sys_time_arch.h</a></li>
-    <li class="footer">Generated on Wed Jan 14 2026 21:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jan 30 2026 12:26:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

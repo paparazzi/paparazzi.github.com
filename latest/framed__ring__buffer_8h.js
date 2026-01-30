@@ -9,8 +9,7 @@ var framed__ring__buffer_8h =
     [ "cir_error", "framed__ring__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dd", [
       [ "CIR_ERROR_NO_MSG", "framed__ring__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda670f3e67a980598d0982aa557f79ad7b", null ],
       [ "CIR_ERROR_BUFFER_TOO_SMALL", "framed__ring__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458ddac76ed96720c0061967198c782a589c80", null ],
-      [ "CIR_ERROR_NO_SPACE_AVAILABLE", "framed__ring__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0", null ],
-      [ "CIR_ERROR_LOCKED", "framed__ring__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda5d999e4f07de8cdf72897224767c4d8a", null ]
+      [ "CIR_ERROR_NO_SPACE_AVAILABLE", "framed__ring__buffer_8h.html#abe3a26fa44aad7e0611654c05ee458dda8c4073280b619596c09ecf43f1a658a0", null ]
     ] ],
     [ "framed_ring_buffer_available", "framed__ring__buffer_8h.html#a7b6fb14ffd89e1e1ba447237e36e7a35", null ],
     [ "framed_ring_buffer_clear", "framed__ring__buffer_8h.html#a7985a6bc5770f08dae552cf5a8079cec", null ],

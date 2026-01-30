@@ -6,7 +6,7 @@ var chibios_2mcu__periph_2sys__time__arch_8c =
     [ "MUTEX_DECL", "chibios_2mcu__periph_2sys__time__arch_8c.html#ae4645504922c7d36a7f2171691ba26eb", null ],
     [ "sys_tick_handler", "chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48", null ],
     [ "sys_time_arch_init", "chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4", null ],
-    [ "sys_time_msleep", "chibios_2mcu__periph_2sys__time__arch_8c.html#a00812d07b0afb483c2a6d949fd7639e0", null ],
+    [ "sys_time_msleep", "chibios_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35", null ],
     [ "sys_time_ssleep", "chibios_2mcu__periph_2sys__time__arch_8c.html#ae3b67b3ec42b5ef780dab7c8b74fe1a1", null ],
     [ "sys_time_usleep", "chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83", null ],
     [ "thd_sys_tick", "chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895", null ],

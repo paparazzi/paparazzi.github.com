@@ -138,21 +138,24 @@ $(document).ready(function(){initNavTree('pprz__dl_8h_source.html',''); initResi
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#if USE_SYSLINK</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="syslink__dl_8h.html">modules/datalink/bitcraze/syslink_dl.h</a>&quot;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">pprz_transport</a> <a class="code hl_variable" href="pprz__dl_8h.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="pprz__dl_8h.html#a6d36e01500ee43587013813aacb843c2">pprz_dl_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931">pprz_dl_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">/* PPRZ_DL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if USE_TUNNEL_UAVCAN</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &quot;<a class="code" href="tunnel__uavcan_8h.html">modules/datalink/tunnel_uavcan.h</a>&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">pprz_transport</a> <a class="code hl_variable" href="pprz__dl_8h.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="pprz__dl_8h.html#a6d36e01500ee43587013813aacb843c2">pprz_dl_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931">pprz_dl_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">/* PPRZ_DL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="ttc" id="afrsky__x_8h_html"><div class="ttname"><a href="frsky__x_8h.html">frsky_x.h</a></div></div>
 <div class="ttc" id="amain__demo5_8c_html_ad690ee00a2cf77bbaaf89c3f1ef110d4"><div class="ttname"><a href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">foo</a></div><div class="ttdeci">uint16_t foo</div><div class="ttdef"><b>Definition</b> <a href="main__demo5_8c_source.html#l00058">main_demo5.c:58</a></div></div>
 <div class="ttc" id="apprz__dl_8h_html_a6d36e01500ee43587013813aacb843c2"><div class="ttname"><a href="pprz__dl_8h.html#a6d36e01500ee43587013813aacb843c2">pprz_dl_init</a></div><div class="ttdeci">void pprz_dl_init(void)</div><div class="ttdoc">Init function.</div><div class="ttdef"><b>Definition</b> <a href="pprz__dl_8c_source.html#l00035">pprz_dl.c:35</a></div></div>
 <div class="ttc" id="apprz__dl_8h_html_ac7d185dc6518d6eabe7cab132f9b8cda"><div class="ttname"><a href="pprz__dl_8h.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a></div><div class="ttdeci">struct pprz_transport pprz_tp</div><div class="ttdoc">PPRZ transport structure.</div><div class="ttdef"><b>Definition</b> <a href="pprz__dl_8c_source.html#l00033">pprz_dl.c:33</a></div></div>
 <div class="ttc" id="apprz__dl_8h_html_adfe1564dac687b426549de7dfe029931"><div class="ttname"><a href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931">pprz_dl_event</a></div><div class="ttdeci">void pprz_dl_event(void)</div><div class="ttdoc">Datalink Event.</div><div class="ttdef"><b>Definition</b> <a href="pprz__dl_8c_source.html#l00040">pprz_dl.c:40</a></div></div>
 <div class="ttc" id="asyslink__dl_8h_html"><div class="ttname"><a href="syslink__dl_8h.html">syslink_dl.h</a></div><div class="ttdoc">Syslink protocol handling and functionalities.</div></div>
+<div class="ttc" id="atunnel__uavcan_8h_html"><div class="ttname"><a href="tunnel__uavcan_8h.html">tunnel_uavcan.h</a></div></div>
 <div class="ttc" id="auart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API</div></div>
 <div class="ttc" id="audp_8h_html"><div class="ttname"><a href="udp_8h.html">udp.h</a></div><div class="ttdoc">arch independent UDP API</div></div>
 <div class="ttc" id="ausb__serial_8h_html"><div class="ttname"><a href="usb__serial_8h.html">usb_serial.h</a></div><div class="ttdoc">arch independent USB API</div></div>
@@ -162,7 +165,7 @@ $(document).ready(function(){initNavTree('pprz__dl_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="pprz__dl_8h.html">pprz_dl.h</a></li>
-    <li class="footer">Generated on Wed Jan 14 2026 21:56:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jan 30 2026 12:26:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
