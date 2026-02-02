@@ -94,33 +94,13 @@ $(document).ready(function(){initNavTree('module__guidance_indi.html',''); initR
   <div class="headertitle"><div class="title">guidance_indi module</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Guidance controller for rotorcraft using INDI</b></p>
+<div class="textblock"><p><b>Quadrotor indi guidance (meta-module for backward compatibility)</b></p>
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__guidance_indi"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__guidance_indi"></a>
-Module functions</h1>
-<h2><a class="anchor" id="init_functions"></a>
-Init Functions</h2>
-<p>These initialization functions are called once on startup.</p>
-<ul>
-<li><a class="el" href="guidance__indi_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603" title="Init function.">guidance_indi_init()</a></li>
-<li><a class="el" href="guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance.">guidance_indi_enter()</a></li>
-</ul>
-<h1><a class="anchor" id="files"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="files"></a>
 Files</h1>
-<h2><a class="anchor" id="headers"></a>
-Header Files</h2>
-<p>The following headers are automatically included in modules.h</p>
-<ul>
-<li><a class="el" href="guidance__indi_8h.html">guidance_indi.h</a></li>
-</ul>
-<h2><a class="anchor" id="sources"></a>
-Source Files</h2>
-<ul>
-<li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">/guidance/guidance_indi.c</a></li>
-</ul>
 <h2><a class="anchor" id="module_xml__guidance_indi"></a>
 Raw guidance_indi.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">module</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;module.dtd&quot;</span>&gt;</div>
@@ -128,32 +108,13 @@ Raw guidance_indi.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;guidance&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;control&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">Guidance</span> <span class="keyword">controller</span> <span class="keyword">for</span> <span class="keyword">rotorcraft</span> <span class="keyword">using</span> <span class="keyword">INDI</span></div>
+<div class="line">      <span class="keyword">Quadrotor</span> <span class="keyword">indi</span> <span class="keyword">guidance</span> (<span class="keyword">meta-module</span> <span class="keyword">for</span> <span class="keyword">backward</span> <span class="keyword">compatibility</span>)</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;guidance_indi&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;guidance_indi_pos_gain&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;10.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;kp&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_POS_GAIN&quot;</span> <span class="keyword">persistent</span>=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;guidance_indi_speed_gain&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;10.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;kd&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_SPEED_GAIN&quot;</span> <span class="keyword">persistent</span>=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;guidance_indi_max_bank&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;80.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;max_bank&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;GUIDANCE_H_MAX_BANK&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;rad&quot;</span> <span class="keyword">alt_unit</span>=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
-<div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;@<span class="keyword">navigation</span>,<span class="keyword">guidance_rotorcraft</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">guidance</span>,<span class="keyword">attitude_command</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">guidance_indi_quadrotor</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;guidance_indi_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;guidance_indi_enter()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/guidance&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_PID_USE_AS_DEFAULT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_USE_AS_DEFAULT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span>/&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -162,7 +123,7 @@ Raw guidance_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Jan 30 2026 12:26:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 2 2026 17:46:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

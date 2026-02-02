@@ -38,6 +38,7 @@ var dir_d1b81cc433edb6118e3c3e3bc7700be0 =
     [ "stabilization_direct.h", "stabilization__direct_8h.html", "stabilization__direct_8h" ],
     [ "stabilization_indi.c", "stabilization__indi_8c.html", "stabilization__indi_8c" ],
     [ "stabilization_indi.h", "stabilization__indi_8h.html", "stabilization__indi_8h" ],
+    [ "stabilization_indi_hinf.c", "stabilization__indi__hinf_8c.html", "stabilization__indi__hinf_8c" ],
     [ "stabilization_indi_simple.c", "stabilization__indi__simple_8c.html", "stabilization__indi__simple_8c" ],
     [ "stabilization_indi_simple.h", "stabilization__indi__simple_8h.html", "stabilization__indi__simple_8h" ],
     [ "stabilization_oneloop.c", "stabilization__oneloop_8c.html", "stabilization__oneloop_8c" ],

@@ -3,13 +3,12 @@ var guidance__indi_8c =
     [ "GUIDANCE_INDI_ACCEL_SP_ID", "guidance__indi_8c.html#a020db8e65be95b4dfa61423391d20434", null ],
     [ "GUIDANCE_INDI_FILTER_CUTOFF", "guidance__indi_8c.html#aabdf5197f9c3258629ccee0bed08645b", null ],
     [ "accel_sp_cb", "guidance__indi_8c.html#a659d41f80c61b6fcd927f5ded2b1ca55", null ],
-    [ "guidance_indi_calcG", "guidance__indi_8c.html#a600398d034a7f118b5f97390c6c0c333", null ],
-    [ "guidance_indi_calcG_yxz", "guidance__indi_8c.html#a6189eb03d08b40eda5bc671013ffea90", null ],
+    [ "guidance_indi_controller", "guidance__indi_8c.html#aac798950dcd29c560e223d8a04e74bce", null ],
     [ "guidance_indi_enter", "guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
     [ "guidance_indi_init", "guidance__indi_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_propagate_filters", "guidance__indi_8c.html#a777bf559723c4e1ba1e9ae8d51572fff", null ],
     [ "guidance_indi_run", "guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e", null ],
-    [ "guidance_indi_run_mode", "guidance__indi_8c.html#aae07d4890156d4dee53362ffa1b36921", null ],
+    [ "guidance_indi_run_mode", "guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd", null ],
     [ "send_indi_guidance", "guidance__indi_8c.html#afe0973163d037300cb8ea5f26a18046f", null ],
     [ "accel_sp_ev", "guidance__indi_8c.html#a84d6e2cd8bcf5ece147855a717ec0255", null ],
     [ "control_increment", "guidance__indi_8c.html#ac61a4dcb4e497c0e078bd59eab538d0b", null ],
@@ -17,6 +16,7 @@ var guidance__indi_8c =
     [ "filter_cutoff", "guidance__indi_8c.html#aa68dd272625818f0aeea37630a25490a", null ],
     [ "Ga", "guidance__indi_8c.html#acfd7e00872c5937584000a6504472786", null ],
     [ "Ga_inv", "guidance__indi_8c.html#a6339b8a6094bdf774f0062aafb964cee", null ],
+    [ "Gmat", "guidance__indi_8c.html#ae01ffd5e972e1673ab4e98bb380d9f1c", null ],
     [ "guidance_euler_cmd", "guidance__indi_8c.html#a5b09e7ee40698be8ecabadfe7c5a6a92", null ],
     [ "guidance_indi_max_bank", "guidance__indi_8c.html#a313939905cd50d33f06f8fb9d6960d10", null ],
     [ "guidance_indi_pos_gain", "guidance__indi_8c.html#a3c97aa70af2039983db4aac2db0f3081", null ],
@@ -33,6 +33,8 @@ var guidance__indi_8c =
     [ "thrust_filt", "guidance__indi_8c.html#af67f625ea892ab734e4e0bfd00abac23", null ],
     [ "thrust_in", "guidance__indi_8c.html#a229063a3d344169961f5d0803de574c0", null ],
     [ "thrust_sp", "guidance__indi_8c.html#a92c27d98d97d2547f41110b4d4e93f92", null ],
+    [ "thrust_vect", "guidance__indi_8c.html#ac2d5c8a0c9c0f4ae7efe8668dd8e4a65", null ],
     [ "time_of_accel_sp_2d", "guidance__indi_8c.html#ada1058d9f876baa193cebc5aa30daa76", null ],
-    [ "time_of_accel_sp_3d", "guidance__indi_8c.html#aa35e446e7885bff3cb2c56f8b3720269", null ]
+    [ "time_of_accel_sp_3d", "guidance__indi_8c.html#aa35e446e7885bff3cb2c56f8b3720269", null ],
+    [ "yaw_filt", "guidance__indi_8c.html#aa871c61fc3c85227c525a091f0f78019", null ]
 ];

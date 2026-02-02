@@ -405,10 +405,14 @@ Guidance modules</h2>
 <li><a class="el" href="module__guidance_energy.html">guidance_energy module</a> : Energy based vertical control for fixedwing aircraft.</li>
 <li><a class="el" href="module__guidance_full_pid_fw.html">guidance_full_pid_fw module</a> : Vertical control for fixedwing aircraft based on PID</li>
 <li><a class="el" href="module__guidance_hybrid.html">guidance_hybrid module</a> : Guidance controller for hybrid vehicles</li>
-<li><a class="el" href="module__guidance_indi.html">guidance_indi module</a> : Guidance controller for rotorcraft using INDI</li>
+<li><a class="el" href="module__guidance_indi.html">guidance_indi module</a> : Quadrotor indi guidance (meta-module for backward compatibility)</li>
+<li><a class="el" href="module__guidance_indi_base.html">guidance_indi_base module</a> : Base guidance controller for rotorcraft using INDI</li>
+<li><a class="el" href="module__guidance_indi_fully_actuated.html">guidance_indi_fully_actuated module</a> : Fully actuated hexacopter model for INDI guidance</li>
+<li><a class="el" href="module__guidance_indi_hinf.html">guidance_indi_hinf module</a> : Hinfinity controller for INDI guidance outer loop</li>
 <li><a class="el" href="module__guidance_indi_hybrid.html">guidance_indi_hybrid module</a> : Common guidance controller code for hybrids using INDI: in your airframe file include one of the options:</li>
 <li><a class="el" href="module__guidance_indi_hybrid_quadplane.html">guidance_indi_hybrid_quadplane module</a> : Guidance controller for hybrid quadplane vehicles</li>
 <li><a class="el" href="module__guidance_indi_hybrid_tailsitter.html">guidance_indi_hybrid_tailsitter module</a> : Guidance controller for hybrid tailsitter vehicles</li>
+<li><a class="el" href="module__guidance_indi_quadrotor.html">guidance_indi_quadrotor module</a> : Basic quadrotor model for INDI guidance</li>
 <li><a class="el" href="module__guidance_oneloop.html">guidance_oneloop module</a> : Dummy file for oneloop controller</li>
 <li><a class="el" href="module__guidance_pid_rotorcraft.html">guidance_pid_rotorcraft module</a> : Basic guidance code for rotorcraft with PID control</li>
 <li><a class="el" href="module__guidance_plane_pid_rotorcraft.html">guidance_plane_pid_rotorcraft module</a> : Basic guidance code for fixedwing planes using the rotorcraft firmware</li>
@@ -768,6 +772,7 @@ Stabilization modules</h2>
 <li><a class="el" href="module__stabilization_float_quat.html">stabilization_float_quat module</a> : <a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> controller for rotorcraft using float quaternion implementation</li>
 <li><a class="el" href="module__stabilization_heli_indi.html">stabilization_heli_indi module</a> : INDI stabilization controller for helicopters</li>
 <li><a class="el" href="module__stabilization_indi.html">stabilization_indi module</a> : Full INDI stabilization controller for rotorcraft</li>
+<li><a class="el" href="module__stabilization_indi_hinf.html">stabilization_indi_hinf module</a> : Hinfinity controller for INDI stabilization outer loop</li>
 <li><a class="el" href="module__stabilization_indi_simple.html">stabilization_indi_simple module</a> : Simple INDI stabilization controller for rotorcraft</li>
 <li><a class="el" href="module__stabilization_int_euler.html">stabilization_int_euler module</a> : <a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> controller for rotorcraft using integer euler implementation</li>
 <li><a class="el" href="module__stabilization_int_quat.html">stabilization_int_quat module</a> : <a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> controller for rotorcraft using integer quaternion implementation</li>
@@ -868,7 +873,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 30 2026 12:26:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 2 2026 17:46:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
