@@ -1,11 +1,5 @@
 var NAVTREEINDEX209 =
 {
-"stm32_2usb__ser__hw_8c.html#a879456c3b8e2853f7044d764e9c180d4":[12,0,1,0,0,3,10,1],
-"stm32_2usb__ser__hw_8c.html#a8c7c58c5dba905e6348263134f6b4fbd":[12,0,1,0,0,3,10,3],
-"stm32_2usb__ser__hw_8c.html#a8ed29cdc7054ad27afaa5e2cbcb1ee52":[12,0,1,0,0,3,10,29],
-"stm32_2usb__ser__hw_8c.html#a90b28b942423439806a256e9eac0dea3":[12,0,1,0,0,3,10,37],
-"stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0":[12,0,1,0,0,3,10,5],
-"stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd":[12,0,1,0,0,3,10,24],
 "stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b":[12,0,1,0,0,3,10,27],
 "stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124":[12,0,1,0,0,3,10,44],
 "stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b":[12,0,1,0,0,3,10,16],
@@ -249,5 +243,11 @@ var NAVTREEINDEX209 =
 "switch__uart_8c.html#a401eedc08b81ee7fb028235a4042fb43":[12,0,1,0,6,68,4,1],
 "switch__uart_8c.html#a46df0d91ec178ca0e7d2341856039248":[12,0,1,0,6,68,4,3],
 "switch__uart_8c.html#a745cc51a03d7b005f5435a42fc54f286":[12,0,1,0,6,68,4,5],
-"switch__uart_8c.html#aca6e2644d3a1608bd8e93c13cb80be7c":[12,0,1,0,6,68,4,2]
+"switch__uart_8c.html#aca6e2644d3a1608bd8e93c13cb80be7c":[12,0,1,0,6,68,4,2],
+"switch__uart_8c.html#af9f61a48346362fb9d62bfc724b03133":[12,0,1,0,6,68,4,0],
+"switch__uart_8c_source.html":[12,0,1,0,6,68,4],
+"switch__uart_8h.html":[12,0,1,0,6,68,5],
+"switch__uart_8h.html#a0eef3721cb0f2b7873e1932bcabf472b":[12,0,1,0,6,68,5,3],
+"switch__uart_8h.html#a35c3e6555bcb3b8a89c1df39e73d03a4":[12,0,1,0,6,68,5,0],
+"switch__uart_8h.html#a401eedc08b81ee7fb028235a4042fb43":[12,0,1,0,6,68,5,1]
 };

@@ -3,7 +3,6 @@ var dir_1ca43f6a116d741d80fb1d0555a2b198 =
     [ "adc.h", "adc_8h.html", "adc_8h" ],
     [ "can.c", "can_8c.html", "can_8c" ],
     [ "can.h", "can_8h.html", "can_8h" ],
-    [ "dac.h", "dac_8h.html", "dac_8h" ],
     [ "gpio.h", "gpio_8h.html", null ],
     [ "i2c.c", "i2c_8c.html", "i2c_8c" ],
     [ "i2c.h", "i2c_8h.html", "i2c_8h" ],

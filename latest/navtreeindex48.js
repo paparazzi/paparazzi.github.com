@@ -25,9 +25,6 @@ var NAVTREEINDEX48 =
 "cyrf6936__regs_8h.html#afbda8b4727331610de8cf6bd29a6d4b0":[12,0,1,0,7,37,66],
 "cyrf6936__regs_8h.html#affefcb7529b35e0ebd3208ee66e49b4f":[12,0,1,0,7,37,63],
 "cyrf6936__regs_8h_source.html":[12,0,1,0,7,37],
-"dac_8h.html":[12,0,1,0,5,3],
-"dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c":[12,0,1,0,5,3,0],
-"dac_8h_source.html":[12,0,1,0,5,3],
 "datalink_2missionlib_2waypoints_8c.html":[12,0,1,0,6,15,2,4],
 "datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7":[12,0,1,0,6,15,2,4,0],
 "datalink_2missionlib_2waypoints_8c.html#a632dcb46c33f5cf3726652ee477ff9bc":[12,0,1,0,6,15,2,4,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX48 =
 "decawave__anchorless__communication_8c.html#a6f0f4c1b9ff2bec58ef21c807003cdc6":[12,0,1,0,6,16,0,27],
 "decawave__anchorless__communication_8c.html#a701a0951ea5719144dc95167ec86eecf":[12,0,1,0,6,16,0,0,5],
 "decawave__anchorless__communication_8c.html#a71ed95cd99d66a324de4fb6a98e20c30":[12,0,1,0,6,16,0,0,4],
-"decawave__anchorless__communication_8c.html#a7555dd71206bfc350ea3bcec3f8508be":[12,0,1,0,6,16,0,4]
+"decawave__anchorless__communication_8c.html#a7555dd71206bfc350ea3bcec3f8508be":[12,0,1,0,6,16,0,4],
+"decawave__anchorless__communication_8c.html#a7902a609d7de5b34b0f4c738e90a067f":[12,0,1,0,6,16,0,18],
+"decawave__anchorless__communication_8c.html#a7e958d13be89b25b7812f105fa4c44b7":[12,0,1,0,6,16,0,26],
+"decawave__anchorless__communication_8c.html#a8b2cd6139f69cd35c2bf0a5742433c20":[12,0,1,0,6,16,0,13]
 };

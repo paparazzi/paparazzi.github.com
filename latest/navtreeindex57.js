@@ -1,8 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"esc32_8c.html#a6791b2b81802d97f5f5fdbfe80bd3b2f":[12,0,1,0,6,24,0,21],
-"esc32_8c.html#a6b284fe3b2d72e690fe23c0ffbde8e5b":[12,0,1,0,6,24,0,0,0],
-"esc32_8c.html#a73baaa9b97c700c08c8ba4b923b0d854":[12,0,1,0,6,24,0,10],
 "esc32_8c.html#a758266de50deb894cf08b3729d18d4ff":[12,0,1,0,6,24,0,16],
 "esc32_8c.html#a7c26e50a44c54546f97a8bbdcbdfcbdb":[12,0,1,0,6,24,0,5],
 "esc32_8c.html#a7c74e9b94efb3f864dd51885fa5362ff":[12,0,1,0,6,24,0,15],
@@ -249,5 +246,8 @@ var NAVTREEINDEX57 =
 "esc__dshot_8h.html#af5ad59c5401fea3f2df0703d958fdc97":[12,0,1,0,0,0,1,0,10,9,0],
 "esc__dshot_8h.html#afe095cd1f5a44be1ac5b2ac9b8fea1c0":[12,0,1,0,0,0,1,0,10,5,0],
 "esc__dshot_8h.html#aff22042f3c4824cd587fecc310f1a6d9":[12,0,1,0,0,0,1,0,10,5,1],
-"esc__dshot_8h.html#structDSHOTConfig":[12,0,1,0,0,0,1,0,10,3]
+"esc__dshot_8h.html#structDSHOTConfig":[12,0,1,0,0,0,1,0,10,3],
+"esc__dshot_8h.html#structDshotPacket_8____unnamed11____":[12,0,1,0,0,0,1,0,10,9],
+"esc__dshot_8h.html#structDshotPackets":[12,0,1,0,0,0,1,0,10,5],
+"esc__dshot_8h.html#structDshotTelemetry":[12,0,1,0,0,0,1,0,10,1]
 };

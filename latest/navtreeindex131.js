@@ -1,8 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"mission__common_8c.html#ab28e6577b24ee45e61cf48d255a55005":[12,0,1,0,6,45,4,0],
-"mission__common_8c.html#ac357198f4e5126c4c698d1ab2c8330c3":[12,0,1,0,6,45,4,19],
-"mission__common_8c.html#ae659d1efa52b3d715cbd35b8b4fe8bdf":[12,0,1,0,6,45,4,14],
 "mission__common_8c.html#aff4d5f1fc008b07a4b312472ff956f8f":[12,0,1,0,6,45,4,7],
 "mission__common_8c_source.html":[12,0,1,0,6,45,4],
 "mission__common_8h.html":[12,0,1,0,6,45,5],
@@ -249,5 +246,8 @@ var NAVTREEINDEX131 =
 "module__adc.html":[1,284],
 "module__adc.html#module_load_example__adc":[1,284,0],
 "module__adc.html#module_xml__adc":[1,284,0,0],
-"module__adc_generic.html":[1,23]
+"module__adc_generic.html":[1,23],
+"module__adc_generic.html#configuration__adc_generic":[1,23,1],
+"module__adc_generic.html#functions__adc_generic":[1,23,2],
+"module__adc_generic.html#module_load_example__adc_generic":[1,23,0]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"dshot__erps_8h.html#adfb51e1b57aa1913dfb536cd543d5f7a":[12,0,1,0,0,0,1,0,6,13],
-"dshot__erps_8h.html#ae5d3c66bf1b7cbf1dacbc6b90f29680c":[12,0,1,0,0,0,1,0,6,2,0],
-"dshot__erps_8h.html#af48a5fbd24c524568d10af08dd8d62e1":[12,0,1,0,0,0,1,0,6,8],
 "dshot__erps_8h.html#af5ad59c5401fea3f2df0703d958fdc97":[12,0,1,0,0,0,1,0,6,4,0],
 "dshot__erps_8h.html#af5ad59c5401fea3f2df0703d958fdc97":[12,0,1,0,0,0,1,0,6,3,0],
 "dshot__erps_8h.html#afaa402e1740fb0a3029ccbb79c211ab3":[12,0,1,0,0,0,1,0,6,9],
@@ -249,5 +246,8 @@ var NAVTREEINDEX52 =
 "eeprom25AA256_8c.html#a55eaa64657e74025a1f2ffdb1a70a6d6":[12,0,1,0,7,38,2],
 "eeprom25AA256_8c.html#aea10826d275cbee29d56d1a483e9af20":[12,0,1,0,7,38,3],
 "eeprom25AA256_8c_source.html":[12,0,1,0,7,38],
-"eeprom25AA256_8h.html":[12,0,1,0,7,39]
+"eeprom25AA256_8h.html":[12,0,1,0,7,39],
+"eeprom25AA256_8h.html#a19847caab28b176b72b6242125525ec9":[12,0,1,0,7,39,1],
+"eeprom25AA256_8h.html#a2880eccd2275f1c40a4e0fd3cb627a96":[12,0,1,0,7,39,3],
+"eeprom25AA256_8h.html#a292a4a02ed39e7b50ea9d0df5dfb3228":[12,0,1,0,7,39,0,2]
 };

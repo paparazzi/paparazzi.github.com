@@ -1,11 +1,5 @@
 var NAVTREEINDEX142 =
 {
-"modules_2ins_2ins__arduimu_8c.html#ad14a8d61af1149c06d36d19a4d6a9c12":[12,0,1,0,6,37,12,1],
-"modules_2ins_2ins__arduimu_8c.html#ae31b9398d0a602349add7dff0b46e32e":[12,0,1,0,6,37,12,6],
-"modules_2ins_2ins__arduimu_8c.html#af200b22d545ef773ef3e8a8f1c1f0f4f":[12,0,1,0,6,37,12,7],
-"modules_2ins_2ins__arduimu_8c_source.html":[12,0,1,0,6,37,12],
-"modules_2ins_2ins__arduimu__basic_8c.html":[12,0,1,0,6,37,14],
-"modules_2ins_2ins__arduimu__basic_8c.html#a0156f6669675c216bbcb413ea1879960":[12,0,1,0,6,37,14,8],
 "modules_2ins_2ins__arduimu__basic_8c.html#a3f8fc29cfe14b10518e7275613148bc9":[12,0,1,0,6,37,14,18],
 "modules_2ins_2ins__arduimu__basic_8c.html#a539730afad5660e5a0f9785ef8c2107d":[12,0,1,0,6,37,14,2],
 "modules_2ins_2ins__arduimu__basic_8c.html#a5a51d08f24d0844a38d7226509de72f6":[12,0,1,0,6,37,14,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX142 =
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a5810e91a921d324fc43eb707ef42b0cf":[12,0,1,0,7,98,4,2],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a72bdb497f5a60478ab4384c6d99745a2":[12,0,1,0,7,98,4,3],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1aabeccbad60de13f10097993575d685e8":[12,0,1,0,7,98,4,7],
-"mpu60x0__i2c_8h.html#ac0e18c343d06b35e70eedcf0ec178303":[12,0,1,0,7,98,0,8]
+"mpu60x0__i2c_8h.html#ac0e18c343d06b35e70eedcf0ec178303":[12,0,1,0,7,98,0,8],
+"mpu60x0__i2c_8h.html#ac45f59044e30e1a4ee17083ba692fba0":[12,0,1,0,7,98,0,0],
+"mpu60x0__i2c_8h.html#af4a339056cedb3db951f3d042a509866":[12,0,1,0,7,98,8],
+"mpu60x0__i2c_8h.html#structMpu60x0__I2c":[12,0,1,0,7,98,0],
+"mpu60x0__i2c_8h.html#unionMpu60x0__I2c_8data__accel":[12,0,1,0,7,98,1],
+"mpu60x0__i2c_8h.html#unionMpu60x0__I2c_8data__rates":[12,0,1,0,7,98,2],
+"mpu60x0__i2c_8h_source.html":[12,0,1,0,7,98]
 };

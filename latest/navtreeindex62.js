@@ -1,8 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"generic__uart_8c.html#a025b351f2267b9839bbe8af087a262eb":[12,0,1,0,6,63,60,1],
-"generic__uart_8c.html#a351edd3e301c4a83ad39dbcdf7761085":[12,0,1,0,6,63,60,2],
-"generic__uart_8c.html#a6774cd87660b18744b47ba27fb3e2eb5":[12,0,1,0,6,63,60,4],
 "generic__uart_8c.html#a97fd4693b740264d4cacc07a12e7a604":[12,0,1,0,6,63,60,0],
 "generic__uart_8c.html#aaa0103e858a3fec913585fa8b62be62a":[12,0,1,0,6,63,60,3],
 "generic__uart_8c_source.html":[12,0,1,0,6,63,60],
@@ -119,8 +116,8 @@ var NAVTREEINDEX62 =
 "globals_enum_v.html":[12,1,4,19],
 "globals_enum_w.html":[12,1,4,20],
 "globals_enum_z.html":[12,1,4,21],
-"globals_eval.html":[12,1,5,0],
 "globals_eval.html":[12,1,5],
+"globals_eval.html":[12,1,5,0],
 "globals_eval_b.html":[12,1,5,1],
 "globals_eval_c.html":[12,1,5,2],
 "globals_eval_d.html":[12,1,5,3],
@@ -146,8 +143,8 @@ var NAVTREEINDEX62 =
 "globals_eval_y.html":[12,1,5,23],
 "globals_eval_z.html":[12,1,5,24],
 "globals_f.html":[12,1,0,6],
-"globals_func.html":[12,1,1],
 "globals_func.html":[12,1,1,0],
+"globals_func.html":[12,1,1],
 "globals_func_a.html":[12,1,1,1],
 "globals_func_b.html":[12,1,1,2],
 "globals_func_c.html":[12,1,1,3],
@@ -222,8 +219,8 @@ var NAVTREEINDEX62 =
 "globals_x.html":[12,1,0,24],
 "globals_y.html":[12,1,0,25],
 "globals_z.html":[12,1,0,26],
-"gpio_8h.html":[12,0,1,0,5,4],
-"gpio_8h_source.html":[12,0,1,0,5,4],
+"gpio_8h.html":[12,0,1,0,5,3],
+"gpio_8h_source.html":[12,0,1,0,5,3],
 "gpio__ardrone_8c.html":[12,0,1,0,1,1,5],
 "gpio__ardrone_8c.html#a1a5b0b764215bbcab9c8c675ef55deea":[12,0,1,0,1,1,5,4],
 "gpio__ardrone_8c.html#a1bc9d423219ebf62774476242acee215":[12,0,1,0,1,1,5,0,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX62 =
 "gpio__cam__ctrl_8c.html":[12,0,1,0,6,19,9],
 "gpio__cam__ctrl_8c.html#a04a6eb1b1a5e3061b302b12b3b63b9aa":[12,0,1,0,6,19,9,0],
 "gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23":[12,0,1,0,6,19,9,1],
-"gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95":[12,0,1,0,6,19,9,4]
+"gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95":[12,0,1,0,6,19,9,4],
+"gpio__cam__ctrl_8c.html#a8579fc8f4ca4dd9c48436a4ccfa55598":[12,0,1,0,6,19,9,5],
+"gpio__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28":[12,0,1,0,6,19,9,3],
+"gpio__cam__ctrl_8c.html#a9ea235d04c38558097d37bc2dacdef1e":[12,0,1,0,6,19,9,6]
 };

@@ -1,11 +1,5 @@
 var NAVTREEINDEX205 =
 {
-"stabilization__attitude__heli__indi_8c.html#a4db1c3a3243a72312d2055dd814cae5d":[12,0,1,0,3,2,2,8,15],
-"stabilization__attitude__heli__indi_8c.html#a50237b6cf4527463c5d6d42fb4d2a356":[12,0,1,0,3,2,2,8,3],
-"stabilization__attitude__heli__indi_8c.html#a506feb1d2af0b60615b06850e23e01c9":[12,0,1,0,3,2,2,8,7],
-"stabilization__attitude__heli__indi_8c.html#a5513a45fbe4d5693369e5e3b220d8b51":[12,0,1,0,3,2,2,8,0],
-"stabilization__attitude__heli__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42":[12,0,1,0,3,2,2,8,52],
-"stabilization__attitude__heli__indi_8c.html#a5dd9caeb5d15e40ddb2e3be637e74396":[12,0,1,0,3,2,2,8,49],
 "stabilization__attitude__heli__indi_8c.html#a5f7f5ff3ebdee68b4da66e31a3584c17":[12,0,1,0,3,2,2,8,18],
 "stabilization__attitude__heli__indi_8c.html#a66941864a37a2b86a4065fe01c2ad382":[12,0,1,0,3,2,2,8,51],
 "stabilization__attitude__heli__indi_8c.html#a6ddaae48b455e296c368e0e569ecb7fa":[12,0,1,0,3,2,2,8,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX205 =
 "stabilization__attitude__ref__defaults_8h.html#a60831d1ca9c20039547265c7b8927d9d":[12,0,1,0,3,2,2,24,2],
 "stabilization__attitude__ref__defaults_8h.html#a6624598661dcb539004e9f6584008da7":[12,0,1,0,3,2,2,24,5],
 "stabilization__attitude__ref__defaults_8h.html#adfcf88c71fdd399b8447f4ff8f4c314b":[12,0,1,0,3,2,2,24,4],
-"stabilization__attitude__ref__defaults_8h_source.html":[12,0,1,0,3,2,2,24]
+"stabilization__attitude__ref__defaults_8h_source.html":[12,0,1,0,3,2,2,24],
+"stabilization__attitude__ref__euler__float_8c.html":[12,0,1,0,3,2,2,25],
+"stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9":[12,0,1,0,3,2,2,25,3],
+"stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a":[12,0,1,0,3,2,2,25,0],
+"stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a":[12,0,1,0,3,2,2,25,2],
+"stabilization__attitude__ref__euler__float_8c.html#ae7e67a9910eea60b9d31f028b339f23b":[12,0,1,0,3,2,2,25,1],
+"stabilization__attitude__ref__euler__float_8c_source.html":[12,0,1,0,3,2,2,25]
 };

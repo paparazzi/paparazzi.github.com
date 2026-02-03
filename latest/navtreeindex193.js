@@ -1,11 +1,5 @@
 var NAVTREEINDEX193 =
 {
-"rm3100_8c.html#a9fa665669c6cca7c473adca1ef8e7b57":[12,0,1,0,7,124,17],
-"rm3100_8c.html#aa33d107c08b1a45b77f1d59c21dba78e":[12,0,1,0,7,124,19],
-"rm3100_8c.html#aa8d5541cefb7b5f80517a6c23c0eff39":[12,0,1,0,7,124,21],
-"rm3100_8c.html#ab00cbc14aff2ca8e9f3244a3207e52c6":[12,0,1,0,7,124,25],
-"rm3100_8c.html#ab5cebf734b8f4b089e8de7eb976888d1":[12,0,1,0,7,124,2],
-"rm3100_8c.html#abf7e14c1a8783fc5a739479825fe97ee":[12,0,1,0,7,124,3],
 "rm3100_8c.html#ac21b44ad1817fbf9303c4d2b7a395702":[12,0,1,0,7,124,13],
 "rm3100_8c.html#ad88fd8fa5d590908c547f1aef8ebf3f4":[12,0,1,0,7,124,10],
 "rm3100_8c.html#ae76d2caa8767a47828931738e4ea9350":[12,0,1,0,7,124,32],
@@ -59,12 +53,12 @@ var NAVTREEINDEX193 =
 "rm3100_8h.html#structRm3100":[12,0,1,0,7,125,0],
 "rm3100_8h.html#unionRm3100_8data":[12,0,1,0,7,125,1],
 "rm3100_8h_source.html":[12,0,1,0,7,125],
-"rng_8h.html":[12,0,1,0,5,11],
-"rng_8h.html#a2a25baf68bfa99b354145cf2de467ab0":[12,0,1,0,5,11,0],
-"rng_8h.html#a44387fcb7ecd6d2f064471e3312a1c5f":[12,0,1,0,5,11,1],
-"rng_8h.html#a820694eb7a21338e91e79f50a3a241ea":[12,0,1,0,5,11,3],
-"rng_8h.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc":[12,0,1,0,5,11,2],
-"rng_8h_source.html":[12,0,1,0,5,11],
+"rng_8h.html":[12,0,1,0,5,10],
+"rng_8h.html#a2a25baf68bfa99b354145cf2de467ab0":[12,0,1,0,5,10,0],
+"rng_8h.html#a44387fcb7ecd6d2f064471e3312a1c5f":[12,0,1,0,5,10,1],
+"rng_8h.html#a820694eb7a21338e91e79f50a3a241ea":[12,0,1,0,5,10,3],
+"rng_8h.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc":[12,0,1,0,5,10,2],
+"rng_8h_source.html":[12,0,1,0,5,10],
 "rotorcraft_2autopilot__firmware_8c.html":[12,0,1,0,3,2,8],
 "rotorcraft_2autopilot__firmware_8c.html#a0af571252a9b9c534b5fe24a4ef4d20d":[12,0,1,0,3,2,8,6],
 "rotorcraft_2autopilot__firmware_8c.html#a2217e77f0aae5f0775ac2aab4ee3477e":[12,0,1,0,3,2,8,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX193 =
 "rotorcraft_2guidance_2guidance__h_8h.html#acefa97a46964782f778ed871e04e646a":[12,0,1,0,3,2,0,3,32],
 "rotorcraft_2guidance_2guidance__h_8h.html#ad46ecaf35a5c2615a6656a91a041d27d":[12,0,1,0,3,2,0,3,26],
 "rotorcraft_2guidance_2guidance__h_8h.html#ae1521b518c96b341ec67ff9a7bc8bd0d":[12,0,1,0,3,2,0,3,34],
-"rotorcraft_2guidance_2guidance__h_8h.html#ae7c6988762e27257d928face4ee75d5a":[12,0,1,0,3,2,0,3,4]
+"rotorcraft_2guidance_2guidance__h_8h.html#ae7c6988762e27257d928face4ee75d5a":[12,0,1,0,3,2,0,3,4],
+"rotorcraft_2guidance_2guidance__h_8h.html#aedf5a496ce41e9f5eee14f3c08693e02":[12,0,1,0,3,2,0,3,28],
+"rotorcraft_2guidance_2guidance__h_8h.html#af29476ba6c51442bad1a9bb589796c98":[12,0,1,0,3,2,0,3,3,3],
+"rotorcraft_2guidance_2guidance__h_8h.html#af64ab1dfc6cf3d5b0b06de9a2422202e":[12,0,1,0,3,2,0,3,2,0],
+"rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance":[12,0,1,0,3,2,0,3,3],
+"rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceRCInput":[12,0,1,0,3,2,0,3,2],
+"rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceReference":[12,0,1,0,3,2,0,3,1]
 };

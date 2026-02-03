@@ -1,8 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"fixedwing_2autopilot__static_8h.html":[12,0,1,0,3,1,9],
-"fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67":[12,0,1,0,3,1,9,7],
-"fixedwing_2autopilot__static_8h.html#a416a33ea64cf8138cfc030da5b6ad469":[12,0,1,0,3,1,9,3],
 "fixedwing_2autopilot__static_8h.html#a441d493d96e925f5d95d208b6d88ec12":[12,0,1,0,3,1,9,5],
 "fixedwing_2autopilot__static_8h.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24":[12,0,1,0,3,1,9,8],
 "fixedwing_2autopilot__static_8h.html#a79f823520ea0823e20084686978281e6":[12,0,1,0,3,1,9,14],
@@ -249,5 +246,8 @@ var NAVTREEINDEX59 =
 "flight__gear_8h.html#a794b78babeb673c1954746ad201c5f11":[12,0,1,1,1,1,2,0],
 "flight__gear_8h.html#a79bf94b3687ecd90defa5f198ee8874f":[12,0,1,1,1,1,1,24],
 "flight__gear_8h.html#a7a664b279f6a8af4a29a945cac46f042":[12,0,1,1,1,1,0,21],
-"flight__gear_8h.html#a7bd843f05555d9be9058f2ffcba2bf96":[12,0,1,1,1,1,1,38]
+"flight__gear_8h.html#a7bd843f05555d9be9058f2ffcba2bf96":[12,0,1,1,1,1,1,38],
+"flight__gear_8h.html#a7e0bc684c00b74b809596824a366b0f5":[12,0,1,1,1,1,11],
+"flight__gear_8h.html#a85cbeff6e26b8cf5bfd6f0b1c65170dc":[12,0,1,1,1,1,0,23],
+"flight__gear_8h.html#a8769b007138ac73ebdb1d9a214318486":[12,0,1,1,1,1,5]
 };

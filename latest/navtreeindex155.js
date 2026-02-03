@@ -1,11 +1,5 @@
 var NAVTREEINDEX155 =
 {
-"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,66,0],
-"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,36,0],
-"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,64,0],
-"nav__survey__poly__rotorcraft_8c_source.html":[12,0,1,0,6,47,66],
-"nav__survey__poly__rotorcraft_8h.html":[12,0,1,0,6,47,67],
-"nav__survey__poly__rotorcraft_8h.html#a0732c4cd3ad453af9b741c7a52bcdbeb":[12,0,1,0,6,47,67,3],
 "nav__survey__poly__rotorcraft_8h.html#a3e94ba3055026d18e3acc3027bf25cd9":[12,0,1,0,6,47,67,0],
 "nav__survey__poly__rotorcraft_8h.html#a438773f6f66a4fe62199819d41698455":[12,0,1,0,6,47,67,7],
 "nav__survey__poly__rotorcraft_8h.html#a4fff5c5f2daa9156ffe210d855b29e89":[12,0,1,0,6,47,67,4],
@@ -249,5 +243,11 @@ var NAVTREEINDEX155 =
 "nav__takeoff__and__landing__fw_8c.html#a881fd7212cacf786fb5d7ecf856142f5":[12,0,1,0,6,47,77,6],
 "nav__takeoff__and__landing__fw_8c.html#a9c8b52ecea38f3c635710cede8a5aa8f":[12,0,1,0,6,47,77,14],
 "nav__takeoff__and__landing__fw_8c.html#ac7a61d7c5fb59864c8b632716cb94d8f":[12,0,1,0,6,47,77,3],
-"nav__takeoff__and__landing__fw_8c.html#ace215e78b4b95c52f3d6249ec428b860":[12,0,1,0,6,47,77,20]
+"nav__takeoff__and__landing__fw_8c.html#ace215e78b4b95c52f3d6249ec428b860":[12,0,1,0,6,47,77,20],
+"nav__takeoff__and__landing__fw_8c.html#ad84a19338fa572f8a30d2ad459fdbd75":[12,0,1,0,6,47,77,13],
+"nav__takeoff__and__landing__fw_8c.html#ad975e43beff38069205c0a5cd3ca2ba4":[12,0,1,0,6,47,77,10],
+"nav__takeoff__and__landing__fw_8c.html#ae730d5a66006baed5ac978c39a22e992":[12,0,1,0,6,47,77,5],
+"nav__takeoff__and__landing__fw_8c.html#af141bbdcbbb3149419fb156e764336d1":[12,0,1,0,6,47,77,15],
+"nav__takeoff__and__landing__fw_8c.html#af789f3b01700d443244a35f359e36ea0":[12,0,1,0,6,47,77,0],
+"nav__takeoff__and__landing__fw_8c.html#afa0697bd262fa23d96fb67a928fb9b67":[12,0,1,0,6,47,77,7]
 };
