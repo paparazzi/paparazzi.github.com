@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('spektrum__soft__bind__fbw_8c.html','')
 <code>#include &quot;<a class="el" href="intermcu__fbw_8h_source.html">modules/intermcu/intermcu_fbw.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
-<code>#include &quot;mcu_periph/sys_time_arch.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for spektrum_soft_bind_fbw.c:</div>
@@ -109,45 +109,50 @@ $(document).ready(function(){initNavTree('spektrum__soft__bind__fbw_8c.html','')
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spektrum__soft__bind__fbw_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2spektrum__soft__bind_2spektrum__soft__bind__fbw_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2spektrum__soft__bind_2spektrum__soft__bind__fbw_8c" id="asw_2airborne_2modules_2spektrum__soft__bind_2spektrum__soft__bind__fbw_8c">
-<area shape="rect" title=" " alt="" coords="838,5,1033,60"/>
-<area shape="rect" href="spektrum__soft__bind__fbw_8h.html" title=" " alt="" coords="755,196,985,236"/>
-<area shape="poly" title=" " alt="" coords="928,61,884,184,879,182,923,59"/>
-<area shape="rect" href="intermcu__fbw_8h.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="538,108,741,148"/>
-<area shape="poly" title=" " alt="" coords="853,63,713,107,711,101,851,58"/>
-<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="1107,115,1169,141"/>
-<area shape="poly" title=" " alt="" coords="993,58,1102,107,1100,112,991,62"/>
-<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="5,284,172,324"/>
-<area shape="poly" title=" " alt="" coords="838,49,690,73,527,111,410,149,298,198,211,240,136,280,133,275,209,235,296,194,408,144,525,105,689,68,837,44"/>
-<area shape="rect" title=" " alt="" coords="1193,108,1355,148"/>
-<area shape="poly" title=" " alt="" coords="1031,57,1193,102,1192,107,1030,63"/>
-<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="940,115,1083,141"/>
-<area shape="poly" title=" " alt="" coords="959,59,995,103,991,106,955,62"/>
-<area shape="rect" title=" " alt="" coords="843,291,897,317"/>
-<area shape="poly" title=" " alt="" coords="873,236,873,277,867,277,867,236"/>
-<area shape="rect" href="intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="309,203,524,229"/>
-<area shape="poly" title=" " alt="" coords="591,151,460,201,458,196,590,146"/>
-<area shape="rect" title=" " alt="" coords="548,203,731,229"/>
-<area shape="poly" title=" " alt="" coords="642,148,642,189,637,189,637,148"/>
-<area shape="poly" title=" " alt="" coords="478,226,829,292,828,298,477,231"/>
-<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="196,291,395,317"/>
-<area shape="poly" title=" " alt="" coords="402,231,325,285,322,281,399,227"/>
-<area shape="rect" title=" " alt="" coords="570,291,754,317"/>
-<area shape="poly" title=" " alt="" coords="451,226,617,284,615,289,449,231"/>
-<area shape="rect" title=" " alt="" coords="419,291,545,317"/>
-<area shape="poly" title=" " alt="" coords="428,227,467,278,462,282,423,230"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="67,372,164,397"/>
-<area shape="poly" title=" " alt="" coords="270,319,155,369,153,364,268,314"/>
-<area shape="rect" title=" " alt="" coords="202,372,362,397"/>
-<area shape="poly" title=" " alt="" coords="296,317,289,359,284,358,291,316"/>
-<area shape="rect" title=" " alt="" coords="72,445,159,471"/>
-<area shape="poly" title=" " alt="" coords="118,398,118,432,113,432,113,398"/>
-<area shape="rect" title=" " alt="" coords="1263,203,1360,229"/>
-<area shape="poly" title=" " alt="" coords="1163,138,1277,195,1274,199,1160,143"/>
-<area shape="poly" title=" " alt="" coords="98,323,109,358,104,360,93,325"/>
-<area shape="poly" title=" " alt="" coords="136,322,242,364,240,369,134,326"/>
-<area shape="poly" title=" " alt="" coords="1016,141,1016,186,1011,213,999,237,980,258,958,274,912,294,910,290,956,269,977,254,994,235,1006,211,1011,185,1010,141"/>
-<area shape="rect" title=" " alt="" coords="1061,203,1239,229"/>
-<area shape="poly" title=" " alt="" coords="1031,139,1121,194,1118,198,1029,143"/>
+<area shape="rect" title=" " alt="" coords="534,5,729,60"/>
+<area shape="rect" href="spektrum__soft__bind__fbw_8h.html" title=" " alt="" coords="5,108,236,148"/>
+<area shape="poly" title=" " alt="" coords="534,54,238,108,237,103,533,49"/>
+<area shape="rect" href="intermcu__fbw_8h.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="599,108,802,148"/>
+<area shape="poly" title=" " alt="" coords="653,59,681,96,677,99,649,62"/>
+<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="1115,115,1177,141"/>
+<area shape="poly" title=" " alt="" coords="729,43,897,68,1088,105,1102,109,1101,114,1087,111,897,73,728,48"/>
+<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="1140,269,1307,309"/>
+<area shape="poly" title=" " alt="" coords="705,58,862,117,1044,194,1177,261,1174,265,1042,198,860,122,703,63"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="411,196,585,221"/>
+<area shape="poly" title=" " alt="" coords="613,62,517,187,513,184,609,59"/>
+<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="260,115,403,141"/>
+<area shape="poly" title=" " alt="" coords="548,63,382,114,380,109,546,58"/>
+<area shape="rect" title=" " alt="" coords="239,277,293,302"/>
+<area shape="poly" title=" " alt="" coords="135,147,159,182,189,219,241,266,237,270,185,223,154,185,130,150"/>
+<area shape="rect" href="intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="816,196,1031,221"/>
+<area shape="poly" title=" " alt="" coords="755,145,878,189,877,194,753,151"/>
+<area shape="rect" title=" " alt="" coords="609,196,792,221"/>
+<area shape="poly" title=" " alt="" coords="703,148,703,182,698,182,698,148"/>
+<area shape="poly" title=" " alt="" coords="828,224,307,286,307,281,827,219"/>
+<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="917,277,1116,302"/>
+<area shape="poly" title=" " alt="" coords="939,219,994,266,991,270,935,224"/>
+<area shape="rect" title=" " alt="" coords="709,277,893,302"/>
+<area shape="poly" title=" " alt="" coords="907,224,832,271,829,267,904,219"/>
+<area shape="rect" title=" " alt="" coords="557,277,684,302"/>
+<area shape="poly" title=" " alt="" coords="880,224,678,276,677,271,879,219"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1121,357,1219,383"/>
+<area shape="poly" title=" " alt="" coords="1041,300,1136,349,1134,353,1038,305"/>
+<area shape="rect" title=" " alt="" coords="937,357,1097,383"/>
+<area shape="poly" title=" " alt="" coords="1019,302,1019,343,1014,343,1014,302"/>
+<area shape="rect" title=" " alt="" coords="753,431,840,456"/>
+<area shape="poly" title=" " alt="" coords="1122,383,854,434,853,429,1121,378"/>
+<area shape="rect" title=" " alt="" coords="1107,196,1204,221"/>
+<area shape="poly" title=" " alt="" coords="1150,141,1155,182,1150,182,1145,141"/>
+<area shape="poly" title=" " alt="" coords="1213,311,1188,347,1184,344,1208,308"/>
+<area shape="poly" title=" " alt="" coords="1175,312,1061,355,1059,350,1173,307"/>
+<area shape="poly" title=" " alt="" coords="465,224,307,277,306,272,463,219"/>
+<area shape="poly" title=" " alt="" coords="487,223,470,241,455,263,447,286,447,297,452,308,480,340,513,366,550,388,590,404,670,426,740,436,739,442,669,432,588,410,548,393,510,371,476,344,448,311,442,299,441,286,450,260,466,238,483,220"/>
+<area shape="poly" title=" " alt="" coords="518,219,593,267,590,271,515,224"/>
+<area shape="rect" title=" " alt="" coords="463,277,533,302"/>
+<area shape="poly" title=" " alt="" coords="501,222,501,263,495,263,495,222"/>
+<area shape="poly" title=" " alt="" coords="280,143,235,163,215,178,199,197,195,216,202,234,218,252,237,267,233,271,214,256,198,237,189,216,194,195,211,175,232,159,278,138"/>
+<area shape="rect" title=" " alt="" coords="209,196,387,221"/>
+<area shape="poly" title=" " alt="" coords="329,142,311,185,306,182,324,140"/>
 </map>
 </div>
 </div>
@@ -183,7 +188,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="spektrum__soft__bind__fbw_8c_source.html#l00043">43</a> of file <a class="el" href="spektrum__soft__bind__fbw_8c_source.html">spektrum_soft_bind_fbw.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="opa__ftd__1_80_8h_source.html#l00152">RADIO_CONTROL_POWER_OFF</a>, <a class="el" href="opa__ftd__1_80_8h_source.html#l00151">RADIO_CONTROL_POWER_ON</a>, <a class="el" href="opa__ftd__1_80_8h_source.html#l00150">RADIO_CONTROL_POWER_PIN</a>, <a class="el" href="opa__ftd__1_80_8h_source.html#l00149">RADIO_CONTROL_POWER_PORT</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00116">sys_time_usleep()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="px4fmu_8h_source.html#l00319">RADIO_CONTROL_POWER_OFF</a>, <a class="el" href="px4fmu_8h_source.html#l00318">RADIO_CONTROL_POWER_ON</a>, <a class="el" href="px4fmu_8h_source.html#l00317">RADIO_CONTROL_POWER_PIN</a>, <a class="el" href="px4fmu_8h_source.html#l00316">RADIO_CONTROL_POWER_PORT</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00118">sys_time_usleep()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00190">intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -239,7 +244,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4fce34fdfa3ee0c77fb7c89ba1db056f.html">spektrum_soft_bind</a></li><li class="navelem"><a class="el" href="spektrum__soft__bind__fbw_8c.html">spektrum_soft_bind_fbw.c</a></li>
-    <li class="footer">Generated on Tue Feb 3 2026 11:58:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Feb 4 2026 22:27:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -100,7 +100,8 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2sys__time__arch_
 
 <p>Implementation of system time functions for ChibiOS arch.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;mcu_periph/sys_time_arch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time__arch_8h_source.html">mcu_periph/sys_time_arch.h</a>&quot;</code><br />
 <code>#include &lt;BOARD_CONFIG&gt;</code><br />
 <code>#include &lt;ch.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
@@ -111,17 +112,29 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2sys__time__arch_
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2sys__time__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2chibios_2mcu__periph_2sys__time__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2chibios_2mcu__periph_2sys__time__arch_8c" id="asw_2airborne_2arch_2chibios_2mcu__periph_2sys__time__arch_8c">
-<area shape="rect" title="Implementation of system time functions for ChibiOS arch." alt="" coords="205,5,415,45"/>
-<area shape="rect" title=" " alt="" coords="5,93,167,133"/>
-<area shape="poly" title=" " alt="" coords="262,48,149,91,147,86,260,43"/>
-<area shape="rect" title=" " alt="" coords="191,101,317,126"/>
-<area shape="poly" title=" " alt="" coords="300,47,271,90,267,87,295,44"/>
-<area shape="rect" title=" " alt="" coords="341,101,391,126"/>
-<area shape="poly" title=" " alt="" coords="325,44,353,87,349,90,320,47"/>
-<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="415,101,469,126"/>
-<area shape="poly" title=" " alt="" coords="341,43,414,91,411,95,338,48"/>
-<area shape="rect" title=" " alt="" coords="403,181,481,207"/>
-<area shape="poly" title=" " alt="" coords="445,126,445,167,439,167,439,126"/>
+<area shape="rect" title="Implementation of system time functions for ChibiOS arch." alt="" coords="302,5,513,45"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="146,101,319,126"/>
+<area shape="poly" title=" " alt="" coords="370,48,269,97,267,92,368,43"/>
+<area shape="rect" title=" " alt="" coords="289,181,416,207"/>
+<area shape="poly" title=" " alt="" coords="404,47,363,169,358,167,399,45"/>
+<area shape="rect" href="sys__time__arch_8h.html" title="Implementation of system time functions for ChibiOS arch." alt="" coords="445,93,607,133"/>
+<area shape="poly" title=" " alt="" coords="435,43,490,83,487,87,432,48"/>
+<area shape="rect" title=" " alt="" coords="440,181,489,207"/>
+<area shape="poly" title=" " alt="" coords="413,45,422,86,436,132,454,168,449,171,432,134,417,87,408,46"/>
+<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="631,101,685,126"/>
+<area shape="poly" title=" " alt="" coords="476,43,546,64,620,91,624,93,622,97,618,96,545,69,475,48"/>
+<area shape="rect" title=" " alt="" coords="5,181,92,207"/>
+<area shape="poly" title=" " alt="" coords="207,128,89,179,87,174,205,124"/>
+<area shape="rect" title=" " alt="" coords="116,181,187,207"/>
+<area shape="poly" title=" " alt="" coords="223,128,175,174,171,170,219,124"/>
+<area shape="rect" title=" " alt="" coords="211,181,265,207"/>
+<area shape="poly" title=" " alt="" coords="236,126,239,167,234,168,231,126"/>
+<area shape="poly" title=" " alt="" coords="252,124,325,171,322,176,249,128"/>
+<area shape="poly" title=" " alt="" coords="513,135,484,172,480,169,509,132"/>
+<area shape="rect" title=" " alt="" coords="513,181,568,207"/>
+<area shape="poly" title=" " alt="" coords="532,133,539,167,533,168,527,134"/>
+<area shape="rect" title=" " alt="" coords="619,181,697,207"/>
+<area shape="poly" title=" " alt="" coords="661,126,661,167,655,167,655,126"/>
 </map>
 </div>
 </div>
@@ -135,8 +148,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7173fd7c832d0c9c0d46705b12ba5895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1f508bb40bda0b5b7ebdcf877cb9f3" id="r_a9b1f508bb40bda0b5b7ebdcf877cb9f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b1f508bb40bda0b5b7ebdcf877cb9f3">THD_WORKING_AREA</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">wa_thd_sys_tick</a>, 1024)</td></tr>
 <tr class="separator:a9b1f508bb40bda0b5b7ebdcf877cb9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69effd654e3a455f2f0bba7b270eab48" id="r_a69effd654e3a455f2f0bba7b270eab48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48">sys_tick_handler</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
-<tr class="separator:a69effd654e3a455f2f0bba7b270eab48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd94f850b193691f1bfc60c724b542a" id="r_afdd94f850b193691f1bfc60c724b542a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a">sys_tick_handler</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:afdd94f850b193691f1bfc60c724b542a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b31c2feb846b96205ae20ea6883e1c4" id="r_a9b31c2feb846b96205ae20ea6883e1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a9b31c2feb846b96205ae20ea6883e1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ddfef1f78a56c6b4c4c536b5d670bfb" id="r_a7ddfef1f78a56c6b4c4c536b5d670bfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
@@ -154,8 +167,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a184792a6c12efcdd00999adbde66de35" id="r_a184792a6c12efcdd00999adbde66de35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35">sys_time_msleep</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ms</a>)</td></tr>
 <tr class="memdesc:a184792a6c12efcdd00999adbde66de35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep.  <br /></td></tr>
 <tr class="separator:a184792a6c12efcdd00999adbde66de35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b67b3ec42b5ef780dab7c8b74fe1a1" id="r_ae3b67b3ec42b5ef780dab7c8b74fe1a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ae3b67b3ec42b5ef780dab7c8b74fe1a1">sys_time_ssleep</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
-<tr class="separator:ae3b67b3ec42b5ef780dab7c8b74fe1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -189,9 +200,9 @@ Variables</h2></td></tr>
 <p>Get the time in milliseconds since startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>milliseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">98</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">100</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00050">cpu_counter</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="dshot__rpmCapture_8h_source.html#l00071">STM32_SYSCLK</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">cpu_counter</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ak8975_8c_source.html#l00131">ak8975_event()</a>, <a class="el" href="ak8975_8c_source.html#l00113">ak8975_read()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00161">approach_moving_target_enable()</a>, <a class="el" href="cc2500__compat_8c_source.html#l00089">bf_millis()</a>, <a class="el" href="ctc_8c_source.html#l00145">collective_tracking_control()</a>, <a class="el" href="dc__ctrl__parrot__mykonos_8c_source.html#l00206">dc_ctrl_parrot_mykonos_command()</a>, <a class="el" href="dc__ctrl__parrot__mykonos_8c_source.html#l00148">dc_ctrl_parrot_mykonos_periodic()</a>, <a class="el" href="rover__obstacles_8c_source.html#l00256">decay_map()</a>, <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00171">follow_diagonal_approach()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00147">follow_me_parse_target_pos()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00170">follow_me_set_wp()</a>, <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>, <a class="el" href="gvf_8c_source.html#l00100">gvf_control_2D()</a>, <a class="el" href="gvf__ik_8c_source.html#l00141">gvf_ik_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00137">gvf_parametric_control_2D()</a>, <a class="el" href="hackhd_8c_source.html#l00194">hackhd_command()</a>, <a class="el" href="hackhd_8c_source.html#l00165">hackhd_periodic()</a>, <a class="el" href="pprz__random_8c_source.html#l00035">init_random()</a>, <a class="el" href="mavlink_8c_source.html#l00630">mavlink_send_attitude()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00294">mavlink_send_attitude()</a>, <a class="el" href="mavlink_8c_source.html#l00738">mavlink_send_attitude_quaternion()</a>, <a class="el" href="mavlink_8c_source.html#l00656">mavlink_send_global_position_int()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00330">mavlink_send_highres_imu()</a>, <a class="el" href="mavlink_8c_source.html#l00643">mavlink_send_local_position_ned()</a>, <a class="el" href="mavlink_8c_source.html#l00842">mavlink_send_rc_channels()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00308">mavlink_send_set_mode()</a>, <a class="el" href="mavlink_8c_source.html#l00621">mavlink_send_system_time()</a>, <a class="el" href="dcf_8c_source.html#l00169">parseThetaTable()</a>, <a class="el" href="openlog_8c_source.html#l00036">periodic_2Hz_openlog()</a>, <a class="el" href="gvf__ik_8c_source.html#l00099">reset_gamma_t0()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, <a class="el" href="sbus__common_8c_source.html#l00139">sbus_common_decode_event()</a>, <a class="el" href="bluegiga_8c_source.html#l00132">send_bluegiga()</a>, <a class="el" href="downlink_8c_source.html#l00043">send_downlink()</a>, <a class="el" href="gvf_8c_source.html#l00042">send_gvf()</a>, <a class="el" href="gvf__ik_8c_source.html#l00046">send_gvf()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00074">send_gvf_parametric()</a>, <a class="el" href="gps__piksi_8c_source.html#l00272">spb_heartbeat_callback()</a>, <a class="el" href="spektrum_8c_source.html#l00107">spektrum_init_sat()</a>, <a class="el" href="spektrum_8c_source.html#l00259">spektrum_uart_check()</a>, <a class="el" href="target__pos_8c_source.html#l00143">target_get_pos()</a>, <a class="el" href="target__pos_8c_source.html#l00192">target_get_vel()</a>, <a class="el" href="target__pos_8c_source.html#l00122">target_parse_target_pos()</a>, <a class="el" href="target__pos_8c_source.html#l00210">target_pos_set_current_offset()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00292">wind_estimator_periodic()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -329,11 +340,11 @@ Variables</h2></td></tr>
 <p>Get the time in microseconds since startup. </p>
 <p>WARNING: overflows after 70min! </p><dl class="section return"><dt>Returns</dt><dd>microseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">71</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00073">73</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00050">cpu_counter</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="dshot__rpmCapture_8h_source.html#l00071">STM32_SYSCLK</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">cpu_counter</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00068">ahrs_vectornav_event()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00092">ardrone_baro_event()</a>, <a class="el" href="baro__amsys_8c_source.html#l00138">baro_amsys_read_event()</a>, <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>, <a class="el" href="baro__bmp3_8c_source.html#l00054">baro_bmp3_event()</a>, <a class="el" href="baro__bmp_8c_source.html#l00081">baro_bmp_event()</a>, <a class="el" href="baro__ets_8c_source.html#l00151">baro_ets_read_event()</a>, <a class="el" href="baro__board__ms5611__i2c_8c_source.html#l00098">baro_event()</a>, <a class="el" href="baro__hca_8c_source.html#l00078">baro_hca_read_event()</a>, <a class="el" href="baro__mpl3115_8c_source.html#l00062">baro_mpl3115_read_event()</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00267">baro_MS5534A_event()</a>, <a class="el" href="baro__ms5611__i2c_8c_source.html#l00096">baro_ms5611_event()</a>, <a class="el" href="baro__scp__i2c_8c_source.html#l00065">baro_scp_event()</a>, <a class="el" href="baro__sim_8c_source.html#l00040">baro_sim_periodic()</a>, <a class="el" href="cc2500__compat_8c_source.html#l00085">bf_micros()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00397">cloud_sensor_callback()</a>, <a class="el" href="cloud__sim_8c_source.html#l00102">cloud_sim_detect()</a>, <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l00591">ekf_aw_propagate()</a>, <a class="el" href="gps_8c_source.html#l00319">gps_cb()</a>, <a class="el" href="gps__datalink_8c_source.html#l00071">gps_datalink_publish()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_feed_value()</a>, <a class="el" href="gps__intermcu_8c_source.html#l00043">gps_intermcu_parse_IMCU_REMOTE_GPS()</a>, <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps__sirf_8c_source.html#l00130">gps_sirf_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00098">gps_skytraq_msg()</a>, <a class="el" href="gps__uavcan_8c_source.html#l00043">gps_uavcan_cb()</a>, <a class="el" href="gps__ubx_8c_source.html#l00665">gps_ubx_msg()</a>, <a class="el" href="gps__ubx_8c_source.html#l00413">gps_ubx_parse_nav_relposned()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="hott_2hott_8c_source.html#l00274">hott_periodic_event()</a>, <a class="el" href="imu__apogee_8c_source.html#l00132">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00160">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00128">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00143">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00118">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00113">imu_bmi088_event()</a>, <a class="el" href="imu__cube_8c_source.html#l00202">imu_cube_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00114">imu_disco_event()</a>, <a class="el" href="imu__heater_8c_source.html#l00204">imu_heater_run()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00126">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00152">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00086">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00142">imu_mpu_spi_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00068">imu_nps_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00074">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00088">imu_px4fmu_event()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00172">ins_alt_float_update_baro()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00217">ins_alt_float_update_gps()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00798">ins_ekf2_parse_EXTERNAL_POSE()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00226">ins_ext_pose_msg_update()</a>, <a class="el" href="invensense2_8c_source.html#l00447">invensense2_config()</a>, <a class="el" href="invensense2_8c_source.html#l00267">invensense2_parse_data()</a>, <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8c_source.html#l00247">invensense3_456_parse_fifo_data()</a>, <a class="el" href="invensense3_8c_source.html#l00825">invensense3_config()</a>, <a class="el" href="invensense3_8c_source.html#l00446">invensense3_parse_fifo_data()</a>, <a class="el" href="invensense3_8c_source.html#l00518">invensense3_parse_reg_data()</a>, <a class="el" href="laser__range__array_8c_source.html#l00079">laser_range_array_parse_msg()</a>, <a class="el" href="lidar__lite_8c_source.html#l00106">lidar_lite_periodic()</a>, <a class="el" href="lidar__sf11_8c_source.html#l00092">lidar_sf11_periodic()</a>, <a class="el" href="lidar__vl53l5cx_8c_source.html#l00071">lidar_vl53l5cx_periodic()</a>, <a class="el" href="lisa__l_2baro__board_8c_source.html#l00135">lisa_l_baro_event()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00532">LWC_callback()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00085">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00077">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00081">mag_lis3mdl_module_event()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00055">mag_pitot_parse_msg()</a>, <a class="el" href="mag__qmc5883l_8c_source.html#l00092">mag_qmc5883l_module_event()</a>, <a class="el" href="mag__rm3100_8c_source.html#l00092">mag_rm3100_module_event()</a>, <a class="el" href="mag__uavcan_8c_source.html#l00040">mag_uavcan_cb()</a>, <a class="el" href="mag__uavcan_8c_source.html#l00066">mag_uavcan_cb2()</a>, <a class="el" href="main__bare_8c_source.html#l00056">main()</a>, <a class="el" href="mateksys__3901__l0x_8c_source.html#l00161">mateksys3901l0x_parse()</a>, <a class="el" href="mavlink_8c_source.html#l00684">mavlink_send_gps_global_origin()</a>, <a class="el" href="mavlink_8c_source.html#l00758">mavlink_send_gps_raw_int()</a>, <a class="el" href="meteo__stick_8c_source.html#l00434">meteo_stick_event()</a>, <a class="el" href="navdata_8c_source.html#l00354">navdata_publish_imu()</a>, <a class="el" href="navdata_8c_source.html#l00382">navdata_update()</a>, <a class="el" href="gps__nmea_8c_source.html#l00095">nmea_gps_msg()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00095">nps_autopilot_run_step()</a>, <a class="el" href="opticflow__module_8c_source.html#l00133">opticflow_module_run()</a>, <a class="el" href="opticflow__pmw3901_8c_source.html#l00186">opticflow_pmw3901_event()</a>, <a class="el" href="pose__history_8c_source.html#l00095">pose_periodic()</a>, <a class="el" href="px4flow__i2c_8c_source.html#l00065">px4flow_i2c_frame_cb()</a>, <a class="el" href="relative__localization__filter_8c_source.html#l00067">range_msg_callback()</a>, <a class="el" href="range__sensor__uavcan_8c_source.html#l00050">range_sensor_uavcan_cb()</a>, <a class="el" href="pmw3901_8c_source.html#l00055">readRegister_nonblocking()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00090">send_filter_status()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00044">send_filter_status()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00073">send_filter_status()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00070">send_filter_status()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00093">send_filter_status()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00070">send_filter_status()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00060">send_filter_status()</a>, <a class="el" href="ins__flow_8c_source.html#l00348">send_filter_status()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">send_filter_status()</a>, <a class="el" href="sensors__hitl_8c_source.html#l00200">sensors_hitl_event()</a>, <a class="el" href="sensors__hitl_8c_source.html#l00177">sensors_hitl_parse_HITL_AIR_DATA()</a>, <a class="el" href="sensors__hitl_8c_source.html#l00110">sensors_hitl_parse_HITL_GPS()</a>, <a class="el" href="sonar__adc_8c_source.html#l00145">sonar_adc_periodic()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00146">sonar_bebop_event()</a>, <a class="el" href="sonar__i2c_8c_source.html#l00169">sonar_i2c_periodic()</a>, <a class="el" href="sonar__pwm_8c_source.html#l00120">sonar_pwm_read()</a>, <a class="el" href="sonar__vl53l1x_8c_source.html#l00075">sonar_vl53l1x_publish()</a>, <a class="el" href="stereocam_8c_source.html#l00107">stereocam_parse_msg()</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00131">sts3032_event()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00322">superbitrf_event()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00787">superbitrf_receive_packet_cb()</a>, <a class="el" href="teraranger__one_8c_source.html#l00114">teraranger_event()</a>, <a class="el" href="tfmini__i2c_8c_source.html#l00196">tfmini_i2c_periodic()</a>, <a class="el" href="tfmini_8c_source.html#l00217">tfmini_send_abi()</a>, <a class="el" href="v4l2_8c_source.html#l00057">v4l2_capture_thread()</a>, and <a class="el" href="video__thread_8c_source.html#l00090">video_thread_function()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00068">ahrs_vectornav_event()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00092">ardrone_baro_event()</a>, <a class="el" href="baro__amsys_8c_source.html#l00138">baro_amsys_read_event()</a>, <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>, <a class="el" href="baro__bmp3_8c_source.html#l00054">baro_bmp3_event()</a>, <a class="el" href="baro__bmp_8c_source.html#l00081">baro_bmp_event()</a>, <a class="el" href="baro__ets_8c_source.html#l00151">baro_ets_read_event()</a>, <a class="el" href="baro__board__ms5611__i2c_8c_source.html#l00098">baro_event()</a>, <a class="el" href="baro__hca_8c_source.html#l00078">baro_hca_read_event()</a>, <a class="el" href="baro__mpl3115_8c_source.html#l00062">baro_mpl3115_read_event()</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00267">baro_MS5534A_event()</a>, <a class="el" href="baro__ms5611__i2c_8c_source.html#l00096">baro_ms5611_event()</a>, <a class="el" href="baro__scp__i2c_8c_source.html#l00065">baro_scp_event()</a>, <a class="el" href="baro__sim_8c_source.html#l00040">baro_sim_periodic()</a>, <a class="el" href="cc2500__compat_8c_source.html#l00085">bf_micros()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00397">cloud_sensor_callback()</a>, <a class="el" href="cloud__sim_8c_source.html#l00102">cloud_sim_detect()</a>, <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l00591">ekf_aw_propagate()</a>, <a class="el" href="gps_8c_source.html#l00319">gps_cb()</a>, <a class="el" href="gps__datalink_8c_source.html#l00071">gps_datalink_publish()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_feed_value()</a>, <a class="el" href="gps__intermcu_8c_source.html#l00043">gps_intermcu_parse_IMCU_REMOTE_GPS()</a>, <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps__sirf_8c_source.html#l00130">gps_sirf_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00098">gps_skytraq_msg()</a>, <a class="el" href="gps__uavcan_8c_source.html#l00043">gps_uavcan_cb()</a>, <a class="el" href="gps__ubx_8c_source.html#l00665">gps_ubx_msg()</a>, <a class="el" href="gps__ubx_8c_source.html#l00413">gps_ubx_parse_nav_relposned()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="hott_2hott_8c_source.html#l00274">hott_periodic_event()</a>, <a class="el" href="imu__apogee_8c_source.html#l00132">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00160">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00128">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00143">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00118">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00113">imu_bmi088_event()</a>, <a class="el" href="imu__cube_8c_source.html#l00202">imu_cube_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00114">imu_disco_event()</a>, <a class="el" href="imu__heater_8c_source.html#l00204">imu_heater_run()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00126">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00152">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00086">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00142">imu_mpu_spi_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00068">imu_nps_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00074">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00088">imu_px4fmu_event()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00172">ins_alt_float_update_baro()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00217">ins_alt_float_update_gps()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00798">ins_ekf2_parse_EXTERNAL_POSE()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00226">ins_ext_pose_msg_update()</a>, <a class="el" href="invensense2_8c_source.html#l00447">invensense2_config()</a>, <a class="el" href="invensense2_8c_source.html#l00267">invensense2_parse_data()</a>, <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8c_source.html#l00247">invensense3_456_parse_fifo_data()</a>, <a class="el" href="invensense3_8c_source.html#l00825">invensense3_config()</a>, <a class="el" href="invensense3_8c_source.html#l00446">invensense3_parse_fifo_data()</a>, <a class="el" href="invensense3_8c_source.html#l00518">invensense3_parse_reg_data()</a>, <a class="el" href="laser__range__array_8c_source.html#l00079">laser_range_array_parse_msg()</a>, <a class="el" href="lidar__lite_8c_source.html#l00106">lidar_lite_periodic()</a>, <a class="el" href="lidar__sf11_8c_source.html#l00092">lidar_sf11_periodic()</a>, <a class="el" href="lidar__vl53l5cx_8c_source.html#l00071">lidar_vl53l5cx_periodic()</a>, <a class="el" href="lisa__l_2baro__board_8c_source.html#l00135">lisa_l_baro_event()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00532">LWC_callback()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00085">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00077">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00081">mag_lis3mdl_module_event()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00055">mag_pitot_parse_msg()</a>, <a class="el" href="mag__qmc5883l_8c_source.html#l00092">mag_qmc5883l_module_event()</a>, <a class="el" href="mag__rm3100_8c_source.html#l00092">mag_rm3100_module_event()</a>, <a class="el" href="mag__uavcan_8c_source.html#l00040">mag_uavcan_cb()</a>, <a class="el" href="mag__uavcan_8c_source.html#l00066">mag_uavcan_cb2()</a>, <a class="el" href="main__bare_8c_source.html#l00056">main()</a>, <a class="el" href="mateksys__3901__l0x_8c_source.html#l00161">mateksys3901l0x_parse()</a>, <a class="el" href="mavlink_8c_source.html#l00684">mavlink_send_gps_global_origin()</a>, <a class="el" href="mavlink_8c_source.html#l00758">mavlink_send_gps_raw_int()</a>, <a class="el" href="meteo__stick_8c_source.html#l00434">meteo_stick_event()</a>, <a class="el" href="navdata_8c_source.html#l00354">navdata_publish_imu()</a>, <a class="el" href="navdata_8c_source.html#l00382">navdata_update()</a>, <a class="el" href="gps__nmea_8c_source.html#l00095">nmea_gps_msg()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00096">nps_autopilot_run_step()</a>, <a class="el" href="opticflow__module_8c_source.html#l00133">opticflow_module_run()</a>, <a class="el" href="opticflow__pmw3901_8c_source.html#l00186">opticflow_pmw3901_event()</a>, <a class="el" href="pose__history_8c_source.html#l00095">pose_periodic()</a>, <a class="el" href="px4flow__i2c_8c_source.html#l00065">px4flow_i2c_frame_cb()</a>, <a class="el" href="relative__localization__filter_8c_source.html#l00067">range_msg_callback()</a>, <a class="el" href="range__sensor__uavcan_8c_source.html#l00050">range_sensor_uavcan_cb()</a>, <a class="el" href="pmw3901_8c_source.html#l00055">readRegister_nonblocking()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00090">send_filter_status()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00044">send_filter_status()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00073">send_filter_status()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00070">send_filter_status()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00093">send_filter_status()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00070">send_filter_status()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00060">send_filter_status()</a>, <a class="el" href="ins__flow_8c_source.html#l00348">send_filter_status()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">send_filter_status()</a>, <a class="el" href="sensors__hitl_8c_source.html#l00200">sensors_hitl_event()</a>, <a class="el" href="sensors__hitl_8c_source.html#l00177">sensors_hitl_parse_HITL_AIR_DATA()</a>, <a class="el" href="sensors__hitl_8c_source.html#l00110">sensors_hitl_parse_HITL_GPS()</a>, <a class="el" href="sonar__adc_8c_source.html#l00145">sonar_adc_periodic()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00146">sonar_bebop_event()</a>, <a class="el" href="sonar__i2c_8c_source.html#l00169">sonar_i2c_periodic()</a>, <a class="el" href="sonar__pwm_8c_source.html#l00120">sonar_pwm_read()</a>, <a class="el" href="sonar__vl53l1x_8c_source.html#l00075">sonar_vl53l1x_publish()</a>, <a class="el" href="stereocam_8c_source.html#l00107">stereocam_parse_msg()</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00131">sts3032_event()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00322">superbitrf_event()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00787">superbitrf_receive_packet_cb()</a>, <a class="el" href="teraranger__one_8c_source.html#l00114">teraranger_event()</a>, <a class="el" href="tfmini__i2c_8c_source.html#l00196">tfmini_i2c_periodic()</a>, <a class="el" href="tfmini_8c_source.html#l00217">tfmini_send_abi()</a>, <a class="el" href="v4l2_8c_source.html#l00057">v4l2_capture_thread()</a>, and <a class="el" href="video__thread_8c_source.html#l00090">video_thread_function()</a>.</p>
 
 </div>
 </div>
@@ -354,12 +365,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the time in microseconds divided by 100 since startup. </p>
-<p>Get the time in microseconds since startup.</p>
+<p>Get the time in 100microseconds since startup.</p>
 <p>WARNING: overflows after 7000min! </p><dl class="section return"><dt>Returns</dt><dd>100microseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00087">87</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00089">89</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00050">cpu_counter</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="dshot__rpmCapture_8h_source.html#l00071">STM32_SYSCLK</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">cpu_counter</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pprzlog__tp_8c_source.html#l00031">pprzlog_tp_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -403,42 +414,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a69effd654e3a455f2f0bba7b270eab48" name="a69effd654e3a455f2f0bba7b270eab48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69effd654e3a455f2f0bba7b270eab48">&#9670;&#160;</a></span>sys_tick_handler()</h2>
+<a id="afdd94f850b193691f1bfc60c724b542a" name="afdd94f850b193691f1bfc60c724b542a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd94f850b193691f1bfc60c724b542a">&#9670;&#160;</a></span>sys_tick_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_tick_handler </td>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_tick_handler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00154">154</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00150">150</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="chconf_8h_source.html#l00075">CH_CFG_ST_FREQUENCY</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00050">cpu_counter</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00049">cpu_ticks</a>, <a class="el" href="sys__time_8h_source.html#l00192">cpu_ticks_of_sec()</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="sys__time_8h_source.html#l00044">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="chconf_8h_source.html#l00075">CH_CFG_ST_FREQUENCY</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">cpu_counter</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00051">cpu_ticks</a>, <a class="el" href="sys__time_8h_source.html#l00212">cpu_ticks_of_sec()</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="sys__time_8h_source.html#l00044">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00087">nps_autopilot_run_systime_step()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00050">sys_time_thread_main()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00142">thd_sys_tick()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00053">sys_time_thread_main()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00138">thd_sys_tick()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_cgraph.png" border="0" usemap="#achibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_cgraph" alt=""/></div>
-<map name="achibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_cgraph" id="achibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_cgraph">
+<div class="center"><img src="chibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_cgraph.png" border="0" usemap="#achibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_cgraph" alt=""/></div>
+<map name="achibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_cgraph" id="achibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,136,31"/>
 <area shape="rect" href="sys__time_8h.html#ac32566a6fc1f80520e4484ce581f45a5" title=" " alt="" coords="184,5,316,31"/>
 <area shape="poly" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
@@ -449,31 +452,23 @@ Variables</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_icgraph.png" border="0" usemap="#achibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_icgraph" alt=""/></div>
-<map name="achibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_icgraph" id="achibios_2mcu__periph_2sys__time__arch_8c_a69effd654e3a455f2f0bba7b270eab48_icgraph">
-<area shape="rect" title=" " alt="" coords="1040,105,1171,131"/>
-<area shape="rect" href="nps__autopilot__rover_8c.html#a7ac376c868e8cec83ef082ac3beb9487" title=" " alt="" coords="760,56,992,81"/>
-<area shape="poly" title=" " alt="" coords="1035,105,991,95,939,84,940,79,993,90,1036,100"/>
-<area shape="rect" href="linux_2mcu__periph_2sys__time__arch_8c.html#a2e9913da251a9ce6c35f3a8a5b3ca23e" title=" " alt="" coords="791,105,961,131"/>
-<area shape="poly" title=" " alt="" coords="1026,121,961,121,961,115,1026,115"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895" title=" " alt="" coords="825,155,927,180"/>
-<area shape="poly" title=" " alt="" coords="1033,136,928,159,927,154,1032,131"/>
-<area shape="rect" href="nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title=" " alt="" coords="533,56,712,81"/>
-<area shape="poly" title=" " alt="" coords="746,71,712,71,712,66,746,66"/>
-<area shape="rect" href="nps__main__sitl_8c.html#a245c6d75dd48b11ac0047073dc4f818a" title=" " alt="" coords="365,56,485,81"/>
-<area shape="poly" title=" " alt="" coords="519,71,486,71,486,66,519,66"/>
-<area shape="rect" href="nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="251,56,305,81"/>
-<area shape="poly" title=" " alt="" coords="351,71,306,71,306,66,351,66"/>
-<area shape="rect" href="linux_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title=" " alt="" coords="551,105,695,131"/>
-<area shape="poly" title=" " alt="" coords="777,121,695,121,695,115,777,115"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title=" " alt="" coords="551,155,695,180"/>
-<area shape="poly" title=" " alt="" coords="811,170,695,170,695,165,811,165"/>
-<area shape="rect" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title=" " alt="" coords="371,155,480,180"/>
-<area shape="poly" title=" " alt="" coords="537,170,480,170,480,165,537,165"/>
+<div class="center"><img src="chibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_icgraph.png" border="0" usemap="#achibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_icgraph" alt=""/></div>
+<map name="achibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_icgraph" id="achibios_2mcu__periph_2sys__time__arch_8c_afdd94f850b193691f1bfc60c724b542a_icgraph">
+<area shape="rect" title=" " alt="" coords="933,131,1064,156"/>
+<area shape="rect" href="linux_2mcu__periph_2sys__time__arch_8c.html#a2e9913da251a9ce6c35f3a8a5b3ca23e" title=" " alt="" coords="715,105,885,131"/>
+<area shape="poly" title=" " alt="" coords="919,136,885,132,886,126,920,131"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895" title=" " alt="" coords="749,155,851,180"/>
+<area shape="poly" title=" " alt="" coords="920,155,852,164,851,159,919,150"/>
+<area shape="rect" href="linux_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title=" " alt="" coords="523,105,667,131"/>
+<area shape="poly" title=" " alt="" coords="701,121,667,121,667,115,701,115"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title=" " alt="" coords="523,155,667,180"/>
+<area shape="poly" title=" " alt="" coords="735,170,667,170,667,165,735,165"/>
+<area shape="rect" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title=" " alt="" coords="365,155,475,180"/>
+<area shape="poly" title=" " alt="" coords="509,170,475,170,475,165,509,165"/>
 <area shape="rect" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="251,129,305,155"/>
-<area shape="poly" title=" " alt="" coords="357,158,305,149,306,144,358,153"/>
+<area shape="poly" title=" " alt="" coords="351,158,305,149,306,144,352,153"/>
 <area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="239,179,317,204"/>
-<area shape="poly" title=" " alt="" coords="358,181,318,188,317,182,357,176"/>
+<area shape="poly" title=" " alt="" coords="352,181,318,187,317,182,352,176"/>
 <area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,31"/>
 <area shape="poly" title=" " alt="" coords="240,172,236,168,218,134,212,104,207,75,189,44,175,32,178,28,193,40,212,73,218,103,223,133,241,164,244,168"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,55,191,80"/>
@@ -525,9 +520,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">52</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00054">54</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chconf_8h_source.html#l00075">CH_CFG_ST_FREQUENCY</a>, <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00142">thd_sys_tick()</a>.</p>
+<p class="reference">References <a class="el" href="chconf_8h_source.html#l00075">CH_CFG_ST_FREQUENCY</a>, <a class="el" href="sys__time_8h_source.html#l00080">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="sys__time_8h_source.html#l00079">sys_time::resolution_cpu_ticks</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00138">thd_sys_tick()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sys__time_8c_source.html#l00119">sys_time_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -540,7 +535,7 @@ Variables</h2></td></tr>
 <area shape="rect" title=" " alt="" coords="5,5,149,31"/>
 <area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895" title=" " alt="" coords="197,5,300,31"/>
 <area shape="poly" title=" " alt="" coords="150,15,183,15,183,21,150,21"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48" title=" " alt="" coords="348,5,479,31"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a" title=" " alt="" coords="348,5,479,31"/>
 <area shape="poly" title=" " alt="" coords="300,15,334,15,334,21,300,21"/>
 <area shape="rect" href="sys__time_8h.html#ac32566a6fc1f80520e4484ce581f45a5" title=" " alt="" coords="527,5,659,31"/>
 <area shape="poly" title=" " alt="" coords="479,15,513,15,513,21,479,21"/>
@@ -619,7 +614,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00128">128</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00130">130</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
@@ -640,28 +635,6 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="137,21,103,21,103,15,137,15"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="ae3b67b3ec42b5ef780dab7c8b74fe1a1" name="ae3b67b3ec42b5ef780dab7c8b74fe1a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b67b3ec42b5ef780dab7c8b74fe1a1">&#9670;&#160;</a></span>sys_time_ssleep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sys_time_ssleep </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00133">133</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
 
 </div>
 </div>
@@ -686,11 +659,11 @@ Variables</h2></td></tr>
 <p>using intermediate 64 bits variable to avoid wrapping</p>
 <p>max sleep time is around 10 days (2^32 / CH_CFG_ST_FREQUENCY) at 10kHz </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00116">116</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00118">118</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cc2500__compat_8c_source.html#l00077">bf_delayMicroseconds()</a>, <a class="el" href="cyrf6936_8c_source.html#l00047">cyrf6936_init()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00077">humid_sht_thd()</a>, <a class="el" href="pmw3901_8c_source.html#l00124">initializeSensor()</a>, <a class="el" href="main__bare_8c_source.html#l00056">main()</a>, <a class="el" href="humid__pcap01_8c_source.html#l00151">pcap01_init()</a>, <a class="el" href="px4__flash_8c_source.html#l00088">px4flash_event()</a>, <a class="el" href="pmw3901_8c_source.html#l00095">readRegister_blocking()</a>, <a class="el" href="spektrum__soft__bind__fbw_8c_source.html#l00043">received_spektrum_soft_bind()</a>, <a class="el" href="spektrum__soft__bind__ap_8c_source.html#l00062">send_spektrum_bind()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00158">sht_read_humid()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00105">sht_read_serial()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00136">sht_read_temp()</a>, <a class="el" href="spektrum_8c_source.html#l00357">spektrum_bind()</a>, <a class="el" href="spektrum_8c_source.html#l00127">spektrum_try_bind()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00225">sys_time_msleep()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00397">VCOM_putchar()</a>, <a class="el" href="video__thread_8c_source.html#l00090">video_thread_function()</a>, <a class="el" href="w5100_8c_source.html#l00185">w5100_init()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00062">xbee_dl_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cc2500__compat_8c_source.html#l00077">bf_delayMicroseconds()</a>, <a class="el" href="cyrf6936_8c_source.html#l00047">cyrf6936_init()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00077">humid_sht_thd()</a>, <a class="el" href="pmw3901_8c_source.html#l00124">initializeSensor()</a>, <a class="el" href="main__bare_8c_source.html#l00056">main()</a>, <a class="el" href="humid__pcap01_8c_source.html#l00151">pcap01_init()</a>, <a class="el" href="px4__flash_8c_source.html#l00088">px4flash_event()</a>, <a class="el" href="pmw3901_8c_source.html#l00095">readRegister_blocking()</a>, <a class="el" href="spektrum__soft__bind__fbw_8c_source.html#l00043">received_spektrum_soft_bind()</a>, <a class="el" href="spektrum__soft__bind__ap_8c_source.html#l00062">send_spektrum_bind()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00158">sht_read_humid()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00105">sht_read_serial()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00136">sht_read_temp()</a>, <a class="el" href="spektrum_8c_source.html#l00357">spektrum_bind()</a>, <a class="el" href="spektrum_8c_source.html#l00127">spektrum_try_bind()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00228">sys_time_msleep()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00397">VCOM_putchar()</a>, <a class="el" href="video__thread_8c_source.html#l00090">video_thread_function()</a>, <a class="el" href="w5100_8c_source.html#l00185">w5100_init()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00062">xbee_dl_init()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -835,11 +808,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00142">142</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00138">138</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00154">sys_tick_handler()</a>, <a class="el" href="sys__time_8h_source.html#l00056">SYS_TIME_FREQUENCY</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="sys__time_8h_source.html#l00229">USEC_OF_SEC</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00150">sys_tick_handler()</a>, <a class="el" href="sys__time_8h_source.html#l00056">SYS_TIME_FREQUENCY</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="sys__time_8h_source.html#l00249">USEC_OF_SEC</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">sys_time_arch_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00054">sys_time_arch_init()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -848,7 +821,7 @@ Variables</h2></td></tr>
 <div class="center"><img src="chibios_2mcu__periph_2sys__time__arch_8c_a7173fd7c832d0c9c0d46705b12ba5895_cgraph.png" border="0" usemap="#achibios_2mcu__periph_2sys__time__arch_8c_a7173fd7c832d0c9c0d46705b12ba5895_cgraph" alt=""/></div>
 <map name="achibios_2mcu__periph_2sys__time__arch_8c_a7173fd7c832d0c9c0d46705b12ba5895_cgraph" id="achibios_2mcu__periph_2sys__time__arch_8c_a7173fd7c832d0c9c0d46705b12ba5895_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,108,31"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48" title=" " alt="" coords="156,5,287,31"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a" title=" " alt="" coords="156,5,287,31"/>
 <area shape="poly" title=" " alt="" coords="108,15,142,15,142,21,108,21"/>
 <area shape="rect" href="sys__time_8h.html#ac32566a6fc1f80520e4484ce581f45a5" title=" " alt="" coords="335,5,467,31"/>
 <area shape="poly" title=" " alt="" coords="287,15,321,15,321,21,287,21"/>
@@ -962,9 +935,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00050">50</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">52</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">get_sys_time_msec()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00087">get_sys_time_usec100()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00154">sys_tick_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">get_sys_time_msec()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00073">get_sys_time_usec()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00089">get_sys_time_usec100()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00150">sys_tick_handler()</a>.</p>
 
 </div>
 </div>
@@ -988,9 +961,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00049">49</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00051">51</a> of file <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sys__time_8h_source.html#l00212">msec_of_cpu_ticks()</a>, <a class="el" href="sys__time_8h_source.html#l00222">nsec_of_cpu_ticks()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00154">sys_tick_handler()</a>, and <a class="el" href="sys__time_8h_source.html#l00217">usec_of_cpu_ticks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sys__time_8h_source.html#l00232">msec_of_cpu_ticks()</a>, <a class="el" href="sys__time_8h_source.html#l00242">nsec_of_cpu_ticks()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00150">sys_tick_handler()</a>, and <a class="el" href="sys__time_8h_source.html#l00237">usec_of_cpu_ticks()</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +973,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html">sys_time_arch.c</a></li>
-    <li class="footer">Generated on Tue Feb 3 2026 11:58:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Feb 4 2026 22:26:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

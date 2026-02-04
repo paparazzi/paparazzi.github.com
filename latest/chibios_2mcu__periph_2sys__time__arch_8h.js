@@ -1,7 +1,0 @@
-var chibios_2mcu__periph_2sys__time__arch_8h =
-[
-    [ "get_sys_time_msec", "chibios_2mcu__periph_2sys__time__arch_8h.html#ad3cb294b0d1d74dfb511534b36a17960", null ],
-    [ "get_sys_time_usec", "chibios_2mcu__periph_2sys__time__arch_8h.html#a7ddfef1f78a56c6b4c4c536b5d670bfb", null ],
-    [ "get_sys_time_usec100", "chibios_2mcu__periph_2sys__time__arch_8h.html#a7a57414cd6105553b6e385798824ac39", null ],
-    [ "sys_time_ssleep", "chibios_2mcu__periph_2sys__time__arch_8h.html#ae3b67b3ec42b5ef780dab7c8b74fe1a1", null ]
-];

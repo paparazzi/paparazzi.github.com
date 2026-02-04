@@ -32,7 +32,6 @@ var dshot__rpmCapture_8h =
     [ "DSHOTS_2STREAMS", "dshot__rpmCapture_8h.html#a1f799bb07406e0f20329ff15763eb8cd", null ],
     [ "DSHOTS_3STREAMS", "dshot__rpmCapture_8h.html#ae870cbb20c4aff555035114cd13dbe91", null ],
     [ "DSHOTS_4STREAMS", "dshot__rpmCapture_8h.html#a555b6fdf575310a2e10709588e60e82e", null ],
-    [ "STM32_SYSCLK", "dshot__rpmCapture_8h.html#a81594f71c9bc1c1fde4e5207e5133777", null ],
     [ "dshotRpmCaptureStart", "dshot__rpmCapture_8h.html#a443d38d898c711c618e5181b92e4d3b7", null ],
     [ "dshotRpmCaptureStop", "dshot__rpmCapture_8h.html#ac178c957f873e5d949cce08921ce8490", null ],
     [ "dshotRpmCatchErps", "dshot__rpmCapture_8h.html#aaac9b266eb1fb8124f0cff73a176ae51", null ],

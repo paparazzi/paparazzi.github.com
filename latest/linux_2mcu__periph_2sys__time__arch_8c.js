@@ -5,7 +5,7 @@ var linux_2mcu__periph_2sys__time__arch_8c =
     [ "get_sys_time_msec", "linux_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960", null ],
     [ "get_sys_time_usec", "linux_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb", null ],
     [ "get_sys_time_usec100", "linux_2mcu__periph_2sys__time__arch_8c.html#a7a57414cd6105553b6e385798824ac39", null ],
-    [ "sys_tick_handler", "linux_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48", null ],
+    [ "sys_tick_handler", "linux_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a", null ],
     [ "sys_time_arch_init", "linux_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4", null ],
     [ "sys_time_msleep", "linux_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35", null ],
     [ "sys_time_thread_main", "linux_2mcu__periph_2sys__time__arch_8c.html#a2e9913da251a9ce6c35f3a8a5b3ca23e", null ],

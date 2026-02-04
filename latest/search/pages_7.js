@@ -22,10 +22,9 @@ var searchData=
   ['bebop_5fcam_20module_19',['bebop_cam module',['../module__bebop_cam.html',1,'onboard_modules']]],
   ['bibliography_20',['Bibliography',['../citelist.html',1,'']]],
   ['board_5fbetafpv_5faiof7_20module_21',['board_betafpv_aiof7 module',['../module__board_betafpv_aiof7.html',1,'onboard_modules']]],
-  ['board_5fmatek_5ff405_5fwing_20module_22',['board_matek_f405_wing module',['../module__board_matek_f405_wing.html',1,'onboard_modules']]],
-  ['board_5fmatek_5ff765_5fcar_20module_23',['board_matek_f765_car module',['../module__board_matek_f765_car.html',1,'onboard_modules']]],
-  ['board_5fmatek_5ff765_5fwing_20module_24',['board_matek_f765_wing module',['../module__board_matek_f765_wing.html',1,'onboard_modules']]],
-  ['board_5ftawaki_20module_25',['board_tawaki module',['../module__board_tawaki.html',1,'onboard_modules']]],
-  ['board_5ftawaki_5f2_200_20module_26',['board_tawaki_2.0 module',['../module__board_tawaki_2_0.html',1,'onboard_modules']]],
-  ['board_5ftmotor_5faiof7_20module_27',['board_tmotor_aiof7 module',['../module__board_tmotor_aiof7.html',1,'onboard_modules']]]
+  ['board_5fmatek_5ff765_5fcar_20module_22',['board_matek_f765_car module',['../module__board_matek_f765_car.html',1,'onboard_modules']]],
+  ['board_5fmatek_5ff765_5fwing_20module_23',['board_matek_f765_wing module',['../module__board_matek_f765_wing.html',1,'onboard_modules']]],
+  ['board_5ftawaki_20module_24',['board_tawaki module',['../module__board_tawaki.html',1,'onboard_modules']]],
+  ['board_5ftawaki_5f2_200_20module_25',['board_tawaki_2.0 module',['../module__board_tawaki_2_0.html',1,'onboard_modules']]],
+  ['board_5ftmotor_5faiof7_20module_26',['board_tmotor_aiof7 module',['../module__board_tmotor_aiof7.html',1,'onboard_modules']]]
 ];

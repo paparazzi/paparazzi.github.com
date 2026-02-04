@@ -14,7 +14,6 @@ var group__stm32__arch =
     [ "spi_arch.c", "stm32_2mcu__periph_2spi__arch_8c.html", null ],
     [ "spi_arch.h", "stm32_2mcu__periph_2spi__arch_8h.html", null ],
     [ "sys_time_arch.c", "stm32_2mcu__periph_2sys__time__arch_8c.html", null ],
-    [ "sys_time_arch.h", "stm32_2mcu__periph_2sys__time__arch_8h.html", null ],
     [ "uart_arch.c", "stm32_2mcu__periph_2uart__arch_8c.html", null ],
     [ "uart_arch.h", "stm32_2mcu__periph_2uart__arch_8h.html", null ],
     [ "ppm_arch.c", "stm32_2modules_2radio__control_2ppm__arch_8c.html", null ],

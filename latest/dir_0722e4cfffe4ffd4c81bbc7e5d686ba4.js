@@ -14,7 +14,6 @@ var dir_0722e4cfffe4ffd4c81bbc7e5d686ba4 =
     [ "spi_arch.c", "stm32_2mcu__periph_2spi__arch_8c.html", "stm32_2mcu__periph_2spi__arch_8c" ],
     [ "spi_arch.h", "stm32_2mcu__periph_2spi__arch_8h.html", null ],
     [ "sys_time_arch.c", "stm32_2mcu__periph_2sys__time__arch_8c.html", "stm32_2mcu__periph_2sys__time__arch_8c" ],
-    [ "sys_time_arch.h", "stm32_2mcu__periph_2sys__time__arch_8h.html", "stm32_2mcu__periph_2sys__time__arch_8h" ],
     [ "uart_arch.c", "stm32_2mcu__periph_2uart__arch_8c.html", "stm32_2mcu__periph_2uart__arch_8c" ],
     [ "uart_arch.h", "stm32_2mcu__periph_2uart__arch_8h.html", "stm32_2mcu__periph_2uart__arch_8h" ]
 ];

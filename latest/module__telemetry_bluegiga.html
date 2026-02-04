@@ -98,7 +98,6 @@ $(document).ready(function(){initNavTree('module__telemetry_bluegiga.html',''); 
 <p>Bluegiga is a SPI-slave device without Chip select but with a compulsory DRDY</p>
 <p>Required: BLUEGIGA_SPI_DEV: the SPI device which MUST have a SLAVE mode without chipselect</p>
 <p>Optional: (defaults to SUPERBITRF DRDY) BLUEGIGA_DRDY_GPIO BLUEGIGA_DRDY_GPIO_PIN</p>
-<p>On Lisa-s, the Superbit-RF module can be replaced with a bluegiga-bluetooth 4 low power board. This module puts the telemetry over this bluetooth 4 link.</p>
 <h1><a class="anchor" id="module_load_example__telemetry_bluegiga"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;telemetry_bluegiga&quot;</span>&gt;</div>
@@ -171,9 +170,6 @@ Raw telemetry_bluegiga.xml file:</h2>
 <div class="line">      <span class="keyword">Optional:</span> (<span class="keyword">defaults</span> <span class="keyword">to</span> <span class="keyword">SUPERBITRF</span> <span class="keyword">DRDY</span>)</div>
 <div class="line">      <span class="keyword">BLUEGIGA_DRDY_GPIO</span></div>
 <div class="line">      <span class="keyword">BLUEGIGA_DRDY_GPIO_PIN</span></div>
-<div class="line"> </div>
-<div class="line">      <span class="keyword">On</span> <span class="keyword">Lisa-s</span>, <span class="keyword">the</span> <span class="keyword">Superbit-RF</span> <span class="keyword">module</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">replaced</span> <span class="keyword">with</span> <span class="keyword">a</span> <span class="keyword">bluegiga-bluetooth</span> 4 <span class="keyword">low</span> <span class="keyword">power</span> <span class="keyword">board.</span></div>
-<div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">puts</span> <span class="keyword">the</span> <span class="keyword">telemetry</span> <span class="keyword">over</span> <span class="keyword">this</span> <span class="keyword">bluetooth</span> 4 <span class="keyword">link.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BLUEGIGA_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SPIx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;SPI where the modem is connected to (SPI1, SPI2, etc)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number for modem status, &#39;none&#39; to disable&quot;</span>/&gt;</div>
@@ -212,7 +208,6 @@ Raw telemetry_bluegiga.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-<div class="line"> </div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -220,7 +215,7 @@ Raw telemetry_bluegiga.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Feb 3 2026 11:58:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Feb 4 2026 22:27:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

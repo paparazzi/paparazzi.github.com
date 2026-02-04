@@ -16,7 +16,6 @@ var dir_7cedabfb4d36d0fdf06823c7fd9084fc =
     [ "spi_arch.c", "linux_2mcu__periph_2spi__arch_8c.html", "linux_2mcu__periph_2spi__arch_8c" ],
     [ "spi_arch.h", "linux_2mcu__periph_2spi__arch_8h.html", null ],
     [ "sys_time_arch.c", "linux_2mcu__periph_2sys__time__arch_8c.html", "linux_2mcu__periph_2sys__time__arch_8c" ],
-    [ "sys_time_arch.h", "linux_2mcu__periph_2sys__time__arch_8h.html", "linux_2mcu__periph_2sys__time__arch_8h" ],
     [ "uart_arch.c", "linux_2mcu__periph_2uart__arch_8c.html", "linux_2mcu__periph_2uart__arch_8c" ],
     [ "uart_arch.h", "linux_2mcu__periph_2uart__arch_8h.html", "linux_2mcu__periph_2uart__arch_8h" ],
     [ "udp_arch.c", "linux_2mcu__periph_2udp__arch_8c.html", "linux_2mcu__periph_2udp__arch_8c" ],

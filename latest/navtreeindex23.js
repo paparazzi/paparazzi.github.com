@@ -1,6 +1,6 @@
 var NAVTREEINDEX23 =
 {
-"bebop_8h_source.html":[12,0,1,0,1,29],
+"bebop_8h_source.html":[12,0,1,0,1,25],
 "bebop__ae__awb_8c.html":[12,0,1,0,6,12,4],
 "bebop__ae__awb_8c.html#a01535af7e50005fd099fe06f94865e54":[12,0,1,0,6,12,4,21],
 "bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa":[12,0,1,0,6,12,4,10],

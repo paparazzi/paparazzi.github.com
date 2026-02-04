@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('light__ws2812__arch_8c.html',''); init
 <code>#include &quot;<a class="el" href="light__ws2812__arch_8h_source.html">modules/light/light_ws2812_arch.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hal__stm32__dma_8h_source.html">mcu_periph/hal_stm32_dma.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time__arch_8h_source.html">mcu_periph/sys_time_arch.h</a>&quot;</code><br />
 <code>#include &lt;BOARD_CONFIG&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for light_ws2812_arch.c:</div>
@@ -111,25 +112,29 @@ $(document).ready(function(){initNavTree('light__ws2812__arch_8c.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="light__ws2812__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2chibios_2modules_2light_2light__ws2812__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2chibios_2modules_2light_2light__ws2812__arch_8c" id="asw_2airborne_2arch_2chibios_2modules_2light_2light__ws2812__arch_8c">
-<area shape="rect" title=" " alt="" coords="187,5,438,45"/>
-<area shape="rect" title=" " alt="" coords="5,181,60,207"/>
-<area shape="poly" title=" " alt="" coords="188,44,95,65,58,79,36,95,28,111,24,130,28,167,22,168,19,130,22,110,32,92,56,74,93,60,187,39"/>
-<area shape="rect" href="light__ws2812__arch_8h.html" title="ws2812 driver based on ChibiOS" alt="" coords="241,93,385,133"/>
-<area shape="poly" title=" " alt="" coords="315,46,315,79,310,79,310,46"/>
-<area shape="rect" href="hal__stm32__dma_8h.html" title="STM32 DMA subsystem driver header." alt="" coords="46,93,217,133"/>
-<area shape="poly" title=" " alt="" coords="274,48,184,90,182,85,272,43"/>
-<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="409,101,552,126"/>
-<area shape="poly" title=" " alt="" coords="351,43,447,92,445,97,348,48"/>
-<area shape="rect" title=" " alt="" coords="576,101,703,126"/>
-<area shape="poly" title=" " alt="" coords="385,43,584,95,582,100,384,48"/>
-<area shape="rect" title=" " alt="" coords="299,181,353,207"/>
-<area shape="poly" title=" " alt="" coords="319,133,324,167,319,168,313,134"/>
-<area shape="poly" title=" " alt="" coords="109,136,60,175,57,170,106,131"/>
-<area shape="rect" title=" " alt="" coords="107,181,156,207"/>
-<area shape="poly" title=" " alt="" coords="134,134,134,167,129,167,129,134"/>
-<area shape="poly" title=" " alt="" coords="459,129,362,177,360,173,457,124"/>
-<area shape="rect" title=" " alt="" coords="392,181,569,207"/>
-<area shape="poly" title=" " alt="" coords="483,126,483,167,478,167,478,126"/>
+<area shape="rect" title=" " alt="" coords="264,5,514,45"/>
+<area shape="rect" title=" " alt="" coords="83,181,138,207"/>
+<area shape="poly" title=" " alt="" coords="264,35,188,42,115,54,53,71,30,82,15,95,10,104,8,112,15,132,26,147,40,159,72,177,69,182,37,163,22,150,11,135,3,113,5,102,11,92,28,78,51,66,113,49,188,37,263,29"/>
+<area shape="rect" href="light__ws2812__arch_8h.html" title="ws2812 driver based on ChibiOS" alt="" coords="406,93,550,133"/>
+<area shape="poly" title=" " alt="" coords="411,44,450,82,447,86,407,48"/>
+<area shape="rect" href="hal__stm32__dma_8h.html" title="STM32 DMA subsystem driver header." alt="" coords="25,93,196,133"/>
+<area shape="poly" title=" " alt="" coords="329,48,185,92,184,87,327,43"/>
+<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="575,101,718,126"/>
+<area shape="poly" title=" " alt="" coords="446,43,600,94,599,99,445,48"/>
+<area shape="rect" href="sys__time__arch_8h.html" title="Implementation of system time functions for ChibiOS arch." alt="" coords="220,93,382,133"/>
+<area shape="poly" title=" " alt="" coords="371,48,332,86,328,82,368,44"/>
+<area shape="rect" title=" " alt="" coords="742,101,868,126"/>
+<area shape="poly" title=" " alt="" coords="493,43,731,91,749,95,748,100,730,96,492,48"/>
+<area shape="rect" title=" " alt="" coords="464,181,519,207"/>
+<area shape="poly" title=" " alt="" coords="484,133,490,167,485,168,479,134"/>
+<area shape="poly" title=" " alt="" coords="113,134,113,167,108,167,108,134"/>
+<area shape="rect" title=" " alt="" coords="219,181,268,207"/>
+<area shape="poly" title=" " alt="" coords="144,131,214,172,211,177,141,136"/>
+<area shape="poly" title=" " alt="" coords="625,129,528,177,526,173,622,124"/>
+<area shape="rect" title=" " alt="" coords="558,181,735,207"/>
+<area shape="poly" title=" " alt="" coords="649,126,649,167,644,167,644,126"/>
+<area shape="poly" title=" " alt="" coords="256,136,151,179,149,174,254,131"/>
+<area shape="poly" title=" " alt="" coords="289,135,263,172,258,168,285,132"/>
 </map>
 </div>
 </div>
@@ -148,7 +153,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a4a8614ef3f68261ebfbed384cbc42bbf" id="r_a4a8614ef3f68261ebfbed384cbc42bbf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf">WS2812_SERVO_HZ</a>&#160;&#160;&#160;800000</td></tr>
 <tr class="separator:a4a8614ef3f68261ebfbed384cbc42bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c13f533146b4d972f0608e5bad30663" id="r_a4c13f533146b4d972f0608e5bad30663"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__ws2812__arch_8c.html#a4c13f533146b4d972f0608e5bad30663">WS2812_PWM_FREQUENCY</a>&#160;&#160;&#160;(<a class="el" href="dshot__rpmCapture_8h.html#a81594f71c9bc1c1fde4e5207e5133777">STM32_SYSCLK</a>/2)</td></tr>
+<tr class="memitem:a4c13f533146b4d972f0608e5bad30663" id="r_a4c13f533146b4d972f0608e5bad30663"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__ws2812__arch_8c.html#a4c13f533146b4d972f0608e5bad30663">WS2812_PWM_FREQUENCY</a>&#160;&#160;&#160;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">STM32_SYSCLK</a>/2)</td></tr>
 <tr class="separator:a4c13f533146b4d972f0608e5bad30663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd3d05de03511658b255a5b86792138" id="r_a4dd3d05de03511658b255a5b86792138"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__ws2812__arch_8c.html#a4dd3d05de03511658b255a5b86792138">WS2812_DUTYCYCLE_0</a>&#160;&#160;&#160;(<a class="el" href="light__ws2812__arch_8c.html#a4c13f533146b4d972f0608e5bad30663">WS2812_PWM_FREQUENCY</a>/(1000000000/350))</td></tr>
 <tr class="separator:a4dd3d05de03511658b255a5b86792138"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +213,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>Configuration structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00063">63</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00064">64</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -258,7 +263,7 @@ pwmp</td>
 </div><div class="memdoc">
 <div class="textblock"><p>Driver structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00077">77</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00078">78</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for WS2812Driver:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -327,7 +332,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00054">54</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00055">55</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -363,7 +368,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00156">156</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00157">157</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -379,7 +384,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00048">48</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00049">49</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -409,7 +414,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00159">159</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00160">160</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -425,7 +430,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00055">55</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00056">56</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -441,7 +446,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00047">47</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00048">48</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -457,7 +462,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00058">58</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00059">59</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -473,7 +478,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00043">43</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00044">44</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -489,7 +494,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00044">44</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00045">45</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -505,7 +510,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00052">52</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00053">53</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -535,7 +540,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00158">158</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00159">159</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +556,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00053">53</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00054">54</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -562,12 +567,12 @@ pwm_conf</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> WS2812_PWM_FREQUENCY&#160;&#160;&#160;(<a class="el" href="dshot__rpmCapture_8h.html#a81594f71c9bc1c1fde4e5207e5133777">STM32_SYSCLK</a>/2)</td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> WS2812_PWM_FREQUENCY&#160;&#160;&#160;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">STM32_SYSCLK</a>/2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00041">41</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00042">42</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -597,7 +602,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00157">157</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00158">158</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -613,7 +618,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00046">46</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00047">47</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -629,7 +634,7 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00040">40</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00041">41</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
 </div>
 </div>
@@ -650,9 +655,9 @@ pwm_conf</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00088">88</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00089">89</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="light__ws2812__arch_8c_source.html#l00082">WS2812Driver::buf</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00078">WS2812Driver::config</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00065">WS2812Config::dma_channel</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00079">WS2812Driver::dma_conf</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00109">DMA_CONTINUOUS_HALF_BUFFER</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00100">DMA_DIR_M2P</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00067">WS2812Config::dma_priority</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00064">WS2812Config::dma_stream</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00069">dmaObjectInit()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00081">WS2812Driver::dmap</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00105">dmaStart()</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00201">dmaStartTransfert()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">gpio_setup_pin_af()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00066">WS2812Config::pwm_channel</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00080">WS2812Driver::pwm_conf</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00068">WS2812Config::pwmp</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00278">DMAConfig::stream</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00054">WS2812_AF</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00048">WS2812_BIT_N</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00047">WS2812_COLOR_BIT_N</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00058">WS2812_DMA_IRQ_PRIORITY</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00043">WS2812_DUTYCYCLE_0</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00052">WS2812_GPIO</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00053">WS2812_PIN</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00041">WS2812_PWM_FREQUENCY</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00046">WS2812_RESET_BIT_N</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00040">WS2812_SERVO_HZ</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00072">WS2812CFG</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00086">WS2812D</a>.</p>
+<p class="reference">References <a class="el" href="light__ws2812__arch_8c_source.html#l00083">WS2812Driver::buf</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00079">WS2812Driver::config</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00066">WS2812Config::dma_channel</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00080">WS2812Driver::dma_conf</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00109">DMA_CONTINUOUS_HALF_BUFFER</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00100">DMA_DIR_M2P</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00068">WS2812Config::dma_priority</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00065">WS2812Config::dma_stream</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00069">dmaObjectInit()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00082">WS2812Driver::dmap</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00105">dmaStart()</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00201">dmaStartTransfert()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">gpio_setup_pin_af()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00067">WS2812Config::pwm_channel</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00081">WS2812Driver::pwm_conf</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00069">WS2812Config::pwmp</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00278">DMAConfig::stream</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00055">WS2812_AF</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00049">WS2812_BIT_N</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00048">WS2812_COLOR_BIT_N</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00059">WS2812_DMA_IRQ_PRIORITY</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00044">WS2812_DUTYCYCLE_0</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00053">WS2812_GPIO</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00054">WS2812_PIN</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00042">WS2812_PWM_FREQUENCY</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00047">WS2812_RESET_BIT_N</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00041">WS2812_SERVO_HZ</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00073">WS2812CFG</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00087">WS2812D</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00035">light_scheduler_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -750,9 +755,9 @@ pwm_conf</td>
 
 <p>set color RGB color of one led </p>
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00161">161</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00162">162</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00082">WS2812Driver::buf</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="oneloop__andi_8c_source.html#l00340">g</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00159">WS2812_BLUE_BIT</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00043">WS2812_DUTYCYCLE_0</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00044">WS2812_DUTYCYCLE_1</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00158">WS2812_GREEN_BIT</a>, <a class="el" href="light__ws2812__arch_8h_source.html#l00036">WS2812_NB_LEDS</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00157">WS2812_RED_BIT</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00086">WS2812D</a>.</p>
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00083">WS2812Driver::buf</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="oneloop__andi_8c_source.html#l00340">g</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00160">WS2812_BLUE_BIT</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00044">WS2812_DUTYCYCLE_0</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00045">WS2812_DUTYCYCLE_1</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00159">WS2812_GREEN_BIT</a>, <a class="el" href="light__ws2812__arch_8h_source.html#l00036">WS2812_NB_LEDS</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00158">WS2812_RED_BIT</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00087">WS2812D</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00040">light_scheduler_periodic()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -791,9 +796,9 @@ pwm_conf</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00072">72</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00073">73</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="light__ws2812__arch_8c_source.html#l00089">light_ws2812_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -817,9 +822,9 @@ pwm_conf</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00086">86</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00087">87</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00161">light_ws2812_arch_set()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="light__ws2812__arch_8c_source.html#l00089">light_ws2812_arch_init()</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00162">light_ws2812_arch_set()</a>.</p>
 
 </div>
 </div>
@@ -829,7 +834,7 @@ pwm_conf</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_3225d58f8b54d41370e6de0a5cd6b202.html">light</a></li><li class="navelem"><a class="el" href="light__ws2812__arch_8c.html">light_ws2812_arch.c</a></li>
-    <li class="footer">Generated on Tue Feb 3 2026 11:58:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Feb 4 2026 22:26:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
