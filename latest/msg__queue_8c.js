@@ -3,7 +3,7 @@ var msg__queue_8c =
     [ "MsgPtrLen", "msg__queue_8c.html#unionMsgPtrLen", [
       [ "msg_ptr_len", "msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519", null ]
     ] ],
-    [ "MsgPtrLen.__unnamed296__", "msg__queue_8c.html#structMsgPtrLen_8____unnamed296____", [
+    [ "MsgPtrLen.__unnamed300__", "msg__queue_8c.html#structMsgPtrLen_8____unnamed300____", [
       [ "len", "msg__queue_8c.html#af5a8e923f8cd24b56b3bab32358cc58a", null ],
       [ "ptrOfst", "msg__queue_8c.html#a155d9a6df1242df7a3fe0039e1a10625", null ]
     ] ],

@@ -1,0 +1,75 @@
+<map id="stabilization_andi_init" name="stabilization_andi_init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,567,171,592"/>
+<area shape="rect" id="Node000002" href="$stabilization__andi_8c.html#a899dc45da2cbedba286549ab88c949dc" title="Callback function to handle incoming actuator telemetry data." alt="" coords="243,29,426,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,566,101,468,127,317,145,238,165,165,189,106,217,66,229,56,233,60,221,69,194,108,171,167,150,239,132,318,106,469,93,567"/>
+<area shape="rect" id="Node000003" href="$stabilization__andi_8c.html#a6bc6ef0d99d3f66c2a8c07aa01546bed" title="Compute error&#45;compensation gains for a 2nd&#45;order 3D system." alt="" coords="255,79,414,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,566,94,498,113,392,129,332,151,272,180,213,217,160,238,140,263,124,266,128,242,144,221,164,185,216,156,274,134,334,118,393,99,499,93,567"/>
+<area shape="rect" id="Node000006" href="$stabilization__andi_8c.html#a44f2f3ddc082405970661ee31ea5b25e" title="Compute error&#45;compensation gains for a 3rd&#45;order 3D system." alt="" coords="255,174,414,214"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="89,566,102,514,126,436,164,350,188,307,217,268,245,241,278,219,281,223,249,245,221,272,193,310,169,352,131,438,107,515,95,567"/>
+<area shape="rect" id="Node000010" href="$stabilization__andi_8c.html#a3c7bd0d1a6481d3fb97548a16eea86d7" title="Compute reference&#45;model gains for a 2nd&#45;order 3D system." alt="" coords="239,282,430,322"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="90,566,103,521,127,458,164,390,189,359,217,332,226,326,229,330,220,336,193,363,169,393,132,460,108,523,95,567"/>
+<area shape="rect" id="Node000013" href="$stabilization__andi_8c.html#af6bfb4173101a56d7367630734bce09b" title="Compute reference&#45;model gains for a 3rd&#45;order 3D system." alt="" coords="239,346,430,386"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="92,565,109,531,136,485,172,437,217,396,227,390,229,394,220,400,176,441,140,488,113,534,97,568"/>
+<area shape="rect" id="Node000017" href="$obm__cyclone_8c.html#aa595db94a60bb9393a96507497eccc50" title="Evaluate the state&#45;dependent control effectiveness matrix F_u for stabilization." alt="" coords="250,411,419,436"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="96,565,143,506,177,473,217,445,236,437,238,442,220,450,181,477,146,510,100,568"/>
+<area shape="rect" id="Node000019" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="263,460,407,485"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="103,564,153,529,218,494,248,484,250,489,220,499,155,534,107,569"/>
+<area shape="rect" id="Node000020" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="274,509,395,535"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="139,564,218,545,260,535,262,540,219,550,140,569"/>
+<area shape="rect" id="Node000021" href="$complementary__filter__types_8h.html#a693bbc70c7ac486fa0e9f35615986837" title="Initialize 3D vector of 2nd order Butterworth complementary filters." alt="" coords="247,559,422,599"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="171,577,234,577,234,582,171,582"/>
+<area shape="rect" id="Node000025" href="$complementary__filter__types_8h.html#af42041efa6949a36e13c5c79dd1f84e0" title="Initialize 3D vector of 1st order complementary filters." alt="" coords="221,623,448,663"/>
+<area shape="poly" id="edge26_Node000001_Node000025" title=" " alt="" coords="139,590,244,617,243,622,137,595"/>
+<area shape="rect" id="Node000028" href="$low__pass__zoh__filter__types_8h.html#a4f71ae33156538805678a7871394cce7" title="Initialize a set of first order ZOH low&#45;pass filters to zero for 3D vector data." alt="" coords="261,687,408,727"/>
+<area shape="poly" id="edge29_Node000001_Node000028" title=" " alt="" coords="105,590,153,631,186,653,220,673,249,685,247,690,217,678,183,658,150,635,101,594"/>
+<area shape="rect" id="Node000030" href="$transport__delay__types_8h.html#afa33c3904ab80a82a242b4644c24d177" title="Initialize an array of TransportDelay structures." alt="" coords="259,751,411,791"/>
+<area shape="poly" id="edge31_Node000001_Node000030" title=" " alt="" coords="98,591,143,661,178,702,220,737,247,751,244,755,217,742,175,706,139,664,94,594"/>
+<area shape="rect" id="Node000032" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="233,816,436,841"/>
+<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="95,592,109,633,134,690,170,751,194,778,220,801,231,808,228,813,217,805,190,782,166,754,129,693,104,635,90,593"/>
+<area shape="rect" id="Node000033" href="$stabilization__andi_8c.html#a829672225ce6ed7560af92ce7dd9b057" title=" " alt="" coords="219,865,451,891"/>
+<area shape="poly" id="edge34_Node000001_Node000033" title=" " alt="" coords="94,592,104,641,127,712,143,751,164,788,190,823,220,852,227,856,224,861,217,856,186,826,160,791,139,753,122,714,99,643,89,593"/>
+<area shape="rect" id="Node000034" href="$stabilization__andi_8c.html#a9766a0b898b82001a22b75bc26941cbe" title=" " alt="" coords="261,915,408,955"/>
+<area shape="poly" id="edge35_Node000001_Node000034" title=" " alt="" coords="93,592,101,648,122,732,139,778,160,823,187,865,220,901,250,919,247,924,217,905,183,868,155,825,134,780,117,733,96,649,88,593"/>
+<area shape="rect" id="Node000035" href="$stabilization__andi_8c.html#a59effa06bf829abaa8ea82ef8ba1003a" title=" " alt="" coords="225,980,444,1005"/>
+<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="92,592,96,659,113,760,129,816,151,871,182,922,220,965,228,971,224,975,217,969,177,925,147,873,124,817,108,761,91,659,87,592"/>
+<area shape="rect" id="Node000036" href="$stabilization__andi_8c.html#ac33bef26094a0b3e046d8edcf569c007" title=" " alt="" coords="225,1029,444,1055"/>
+<area shape="poly" id="edge37_Node000001_Node000036" title=" " alt="" coords="91,592,93,666,97,721,107,781,122,845,145,908,178,966,221,1016,225,1020,222,1024,217,1020,173,969,140,910,117,846,101,782,92,721,87,667,86,592"/>
+<area shape="rect" id="Node000004" href="$stabilization__andi_8c.html#abdff1642bcf54dc20dc648b7fe893c42" title=" " alt="" coords="551,5,673,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,77,450,63,498,47,550,32,552,37,499,53,451,69,407,82"/>
+<area shape="rect" id="Node000005" href="$stabilization__andi_8c.html#ae354bfce7baf5e2603635693d0880a4b" title=" " alt="" coords="836,255,957,280"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="414,78,482,67,562,63,646,69,687,78,726,92,753,105,778,122,823,163,858,205,883,241,878,244,854,209,819,167,775,127,750,110,724,96,686,83,645,74,562,68,483,73,414,83"/>
+<area shape="rect" id="Node000007" href="$stabilization__andi_8c.html#a2fe6507dbb1fdd436f9b1b5bfbc50a94" title=" " alt="" coords="551,107,673,132"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="395,171,498,141,537,131,538,137,499,146,397,176"/>
+<area shape="rect" id="Node000008" href="$stabilization__andi_8c.html#ac56567883dc4ce368417769b3066247a" title=" " alt="" coords="551,156,673,181"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="414,184,537,173,538,178,415,189"/>
+<area shape="rect" id="Node000009" href="$stabilization__andi_8c.html#a04be33d17313eecba56784730525cf3d" title=" " alt="" coords="551,205,673,231"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="415,198,538,209,537,214,414,204"/>
+<area shape="rect" id="Node000011" href="$stabilization__andi_8c.html#a4043cb427417f809bd22673a36214362" title=" " alt="" coords="550,255,674,280"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="430,287,536,274,537,279,430,293"/>
+<area shape="rect" id="Node000012" href="$stabilization__andi_8c.html#ab785f605ab99adedcd089dd858924aa0" title=" " alt="" coords="550,304,674,329"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="430,304,536,310,536,315,430,310"/>
+<area shape="poly" id="edge11_Node000011_Node000005" title=" " alt="" coords="674,265,822,265,822,270,674,270"/>
+<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="674,303,822,277,823,283,675,309"/>
+<area shape="rect" id="Node000014" href="$stabilization__andi_8c.html#a88f4b372898da1877ae971050e88761c" title=" " alt="" coords="550,353,674,379"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="430,363,536,363,536,369,430,369"/>
+<area shape="rect" id="Node000015" href="$stabilization__andi_8c.html#a847712a29167807650e44b4f29123df1" title=" " alt="" coords="550,403,674,428"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="431,380,537,399,536,405,430,386"/>
+<area shape="rect" id="Node000016" href="$stabilization__andi_8c.html#afd576f1280d692e233c320b4ffa91326" title=" " alt="" coords="550,452,674,477"/>
+<area shape="poly" id="edge17_Node000013_Node000016" title=" " alt="" coords="425,384,452,396,467,406,477,417,486,427,500,437,537,451,535,456,497,442,482,431,473,421,463,410,449,400,423,389"/>
+<area shape="rect" id="Node000018" href="$obm__cyclone_8c.html#a8c53bdc1ffe0d082fcb1511ddf2ed2c6" title=" " alt="" coords="549,501,675,527"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="421,433,452,445,467,455,477,466,486,477,500,486,536,500,534,505,497,491,482,481,473,470,464,459,449,450,419,438"/>
+<area shape="rect" id="Node000022" href="$complementary__filter_8h.html#aee96b7fe2ed01bda0ec3fd48b2ef4269" title="Initialize the Butterworth 2nd order low&#45;pass complementary filter." alt="" coords="541,559,683,599"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="422,577,527,577,527,582,422,582"/>
+<area shape="rect" id="Node000023" href="$complementary__filter_8h.html#a4a90a470b2d4f30c535b65e74a062478" title="Initialize the second order complementary filter." alt="" coords="773,567,1020,592"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="683,577,759,577,759,582,683,582"/>
+<area shape="rect" id="Node000024" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="1068,567,1272,592"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="1020,577,1054,577,1054,582,1020,582"/>
+<area shape="rect" id="Node000026" href="$complementary__filter_8h.html#a99acd36dc63c864655681ab492e32902" title="Initialize the first order complementary filter." alt="" coords="499,631,725,656"/>
+<area shape="poly" id="edge27_Node000025_Node000026" title=" " alt="" coords="448,641,485,641,485,646,448,646"/>
+<area shape="rect" id="Node000027" href="$low__pass__filter_8h.html#a2ef099f9631ccda888715f731518423e" title="Init first order low pass filter." alt="" coords="805,631,988,656"/>
+<area shape="poly" id="edge28_Node000026_Node000027" title=" " alt="" coords="726,641,791,641,791,646,726,646"/>
+<area shape="rect" id="Node000029" href="$low__pass__zoh__filter_8h.html#af964773de2f8e3f4be3c1beec3fab78a" title="Init first order ZOH low pass filter." alt="" coords="539,687,685,727"/>
+<area shape="poly" id="edge30_Node000028_Node000029" title=" " alt="" coords="408,705,525,705,525,710,408,710"/>
+<area shape="rect" id="Node000031" href="$transport__delay_8h.html#a463b642c344e62a8fdf6c36de7fd1377" title="Initialize a transport delay buffer." alt="" coords="536,759,688,784"/>
+<area shape="poly" id="edge32_Node000030_Node000031" title=" " alt="" coords="411,769,522,769,522,774,411,774"/>
+</map>

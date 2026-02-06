@@ -1,7 +1,7 @@
 var lis302dl__spi_8h_structLis302dl__Spi =
 [
     [ "config", "lis302dl__spi_8h.html#aa81037d166efd26a319348f8f41f669c", null ],
-    [ "data", "lis302dl__spi_8h.html#a8304423321363a3d7f660673ca76f3a0", null ],
+    [ "data", "lis302dl__spi_8h.html#a0e3f2d456bc56bcc086e10608ab5e96c", null ],
     [ "data_available", "lis302dl__spi_8h.html#a839d36b94586efba7e51eca71ffd1d3a", null ],
     [ "init_status", "lis302dl__spi_8h.html#a39cd6e88b50bffbc7762872b609a2c4e", null ],
     [ "initialized", "lis302dl__spi_8h.html#a101b904f7e827bac9009a82288ee6bdc", null ],

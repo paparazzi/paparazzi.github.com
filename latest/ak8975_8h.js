@@ -1,7 +1,7 @@
 var ak8975_8h =
 [
     [ "Ak8975", "ak8975_8h.html#structAk8975", [
-      [ "data", "ak8975_8h.html#adca5ece2100445226bc8e7d3452637d4", null ],
+      [ "data", "ak8975_8h.html#a55291fd22796f7198db1173b591b0714", null ],
       [ "data_available", "ak8975_8h.html#a94c585981f62bcacd2e6a07a4cdb0f31", null ],
       [ "i2c_p", "ak8975_8h.html#a9c3c2e79c50af6fedc845b48da28ab35", null ],
       [ "i2c_trans", "ak8975_8h.html#a29db3aa6f7536342c5faf3df6daf575e", null ],

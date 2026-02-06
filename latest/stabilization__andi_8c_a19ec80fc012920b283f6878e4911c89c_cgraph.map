@@ -1,0 +1,60 @@
+<map id="stabilization_andi_enter" name="stabilization_andi_enter">
+<area shape="rect" id="Node000001" title="Initializes the ANDI stabilization controller state upon entering stabilization mode." alt="" coords="5,317,143,357"/>
+<area shape="rect" id="Node000002" href="$obm__cyclone_8c.html#aa595db94a60bb9393a96507497eccc50" title="Evaluate the state&#45;dependent control effectiveness matrix F_u for stabilization." alt="" coords="225,5,395,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,316,82,261,100,186,115,146,135,107,159,71,189,40,211,26,214,31,192,44,163,74,139,110,120,148,106,187,87,262,79,317"/>
+<area shape="rect" id="Node000004" href="$obm__cyclone_8c.html#a3972f74a2a18101a6740df79448947e1" title="Compute total thrust produced by the current actuator state." alt="" coords="223,55,397,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="76,316,87,269,107,207,141,143,163,114,189,89,209,78,211,82,192,93,167,118,145,146,112,209,92,270,81,317"/>
+<area shape="rect" id="Node000005" href="$stabilization__andi_8c.html#a344472fc90418c3ec8a6a0c0e357a80e" title="Extract actuator states from ActuatorsT4In struct." alt="" coords="239,104,381,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="79,315,92,277,115,229,147,180,167,157,189,138,224,122,227,127,192,143,170,161,151,183,120,231,97,279,84,317"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#gaf742410e79fbcadbba359e52bdbe48cd" title="rotate 3D vector by quaternion." alt="" coords="244,153,376,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="83,315,123,251,153,217,189,188,229,171,231,176,192,192,157,220,127,254,88,318"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="249,203,371,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="92,314,134,275,161,255,190,238,235,223,237,228,192,243,164,260,137,279,95,318"/>
+<area shape="rect" id="Node000008" href="$complementary__filter__types_8h.html#ad8a35fe44b61e1bdc335c900acaa1a35" title="Reset 3D vector of 2nd order Butterworth complementary filters to a specific value." alt="" coords="223,253,397,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="142,315,190,302,221,294,222,299,191,307,144,320"/>
+<area shape="rect" id="Node000012" href="$complementary__filter__types_8h.html#a56ca57fa4659860125fe75578988d8f7" title="Reset 3D vector of 1st order complementary filters for rates to a specific value." alt="" coords="191,317,429,357"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="143,334,177,334,177,339,143,339"/>
+<area shape="rect" id="Node000015" href="$complementary__filter__types_8h.html#a56ef97edf893d961842494f790183248" title="Reset 3D vector of 1st order complementary filters to a specific value." alt="" coords="191,381,429,421"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="144,353,191,366,222,374,221,380,190,371,142,358"/>
+<area shape="rect" id="Node000016" href="$low__pass__zoh__filter__types_8h.html#a83d7dbeebc4499c98945b36d4656ed77" title="Reset an array of first order ZOH low&#45;pass filters to specific values." alt="" coords="231,445,389,485"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="96,355,138,393,192,430,218,442,216,447,189,435,135,398,92,359"/>
+<area shape="rect" id="Node000017" href="$transport__delay__types_8h.html#a85919fc0a450d68705ede3a909f3c2b9" title="Reset an array of TransportDelay structures to specific initial values." alt="" coords="228,509,392,549"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="87,355,126,424,156,462,192,494,216,508,214,512,189,499,152,466,121,427,82,358"/>
+<area shape="rect" id="Node000019" href="$group__state__rate.html#gaf712020339c342d39ce714802ab155c0" title="Get vehicle body angular rate (float)." alt="" coords="230,573,390,599"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="82,356,94,399,115,454,148,511,168,537,192,558,218,572,215,577,189,563,164,540,143,514,111,457,89,401,77,358"/>
+<area shape="rect" id="Node000021" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="213,623,407,648"/>
+<area shape="poly" id="edge21_Node000001_Node000021" title=" " alt="" coords="80,356,89,408,109,476,123,513,142,548,165,580,192,608,202,615,199,619,189,612,161,584,137,551,118,515,104,478,84,409,75,357"/>
+<area shape="rect" id="Node000026" href="$group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="232,672,388,697"/>
+<area shape="poly" id="edge26_Node000001_Node000026" title=" " alt="" coords="79,356,85,416,102,499,116,543,136,585,161,625,192,659,220,674,218,679,189,663,157,628,131,588,111,545,96,500,79,417,73,357"/>
+<area shape="rect" id="Node000003" href="$obm__cyclone_8c.html#a8c53bdc1ffe0d082fcb1511ddf2ed2c6" title=" " alt="" coords="533,5,660,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,15,519,15,519,21,395,21"/>
+<area shape="rect" id="Node000009" href="$complementary__filter_8h.html#a92fb3d17ab95e94f249662f5b461061a" title="Reset the Butterworth 2nd order complementary filter to a specific value." alt="" coords="520,253,673,293"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="398,270,506,270,506,275,398,275"/>
+<area shape="rect" id="Node000010" href="$complementary__filter_8h.html#a3862ab241fd5b3660a9dc43b85993ed3" title="Reset the second order complementary filter to a specific value." alt="" coords="787,253,936,293"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="673,270,773,270,773,275,673,275"/>
+<area shape="rect" id="Node000011" href="$low__pass__filter_8h.html#a8009db53dbb2beedb7f25068c2e126bd" title="Reset the second order low&#45;pass filter to a specific value." alt="" coords="1009,253,1159,293"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="937,270,996,270,996,275,937,275"/>
+<area shape="rect" id="Node000013" href="$complementary__filter_8h.html#a6534d367fa084aeafe8d31f6b6ab8c47" title="Reset the first order complementary filter to a specific value." alt="" coords="477,356,716,381"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="430,347,469,352,469,357,429,353"/>
+<area shape="rect" id="Node000014" href="$low__pass__filter_8h.html#a23298863223e41628428f2ac7204cdcd" title="Reset the first order low&#45;pass filter to a specific value." alt="" coords="764,356,959,381"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="716,366,750,366,750,371,716,371"/>
+<area shape="poly" id="edge15_Node000015_Node000013" title=" " alt="" coords="429,385,469,380,469,386,430,390"/>
+<area shape="rect" id="Node000018" href="$transport__delay_8h.html#a6ad68d1df42d53c217582d900532289b" title="Reset the transport delay buffer to a specific initial value." alt="" coords="515,516,679,541"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="392,526,501,526,501,531,392,531"/>
+<area shape="rect" id="Node000020" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="514,573,679,599"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="390,583,500,583,500,589,390,589"/>
+<area shape="rect" id="Node000022" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="517,623,676,648"/>
+<area shape="poly" id="edge22_Node000021_Node000022" title=" " alt="" coords="407,633,504,633,504,638,407,638"/>
+<area shape="rect" id="Node000023" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="779,623,943,648"/>
+<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="676,633,765,633,765,638,676,638"/>
+<area shape="rect" id="Node000024" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="1007,573,1161,599"/>
+<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="919,620,1012,599,1013,604,920,625"/>
+<area shape="rect" id="Node000025" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="1011,623,1157,648"/>
+<area shape="poly" id="edge25_Node000023_Node000025" title=" " alt="" coords="943,633,998,633,998,638,943,638"/>
+<area shape="rect" id="Node000027" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="516,672,677,697"/>
+<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="388,682,503,682,503,687,388,687"/>
+<area shape="rect" id="Node000028" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="787,672,935,697"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="678,682,774,682,774,687,678,687"/>
+<area shape="rect" id="Node000029" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="1010,672,1158,697"/>
+<area shape="poly" id="edge29_Node000028_Node000029" title=" " alt="" coords="936,682,996,682,996,687,936,687"/>
+</map>

@@ -215,9 +215,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__oneloop_8c_source.html#l00030">30</a> of file <a class="el" href="stabilization__oneloop_8c_source.html">stabilization_oneloop.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00046">att_ref_euler_f</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00062">attitude_ref_euler_float_enter()</a>, <a class="el" href="oneloop__andi_8h_source.html#l00059">CTRL_ANDI</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00519">FLOAT_EULERS_ZERO</a>, <a class="el" href="oneloop__andi_8c_source.html#l01456">oneloop_andi_enter()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00043">stabilization_att_sum_err</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00231">stabilization_attitude_get_heading_f()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00839">ins_ekf2_publish_attitude()</a>, and <a class="el" href="stabilization_8c_source.html#l00138">stabilization_mode_changed()</a>.</p>
+<p class="reference">References <a class="el" href="oneloop__andi_8h_source.html#l00059">CTRL_ANDI</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01456">oneloop_andi_enter()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -225,132 +223,89 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_cgraph.png" border="0" usemap="#astabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_cgraph" alt=""/></div>
 <map name="astabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_cgraph" id="astabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_cgraph">
-<area shape="rect" title="Attitude control enter function." alt="" coords="5,632,165,672"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="224,380,363,420"/>
-<area shape="poly" title=" " alt="" coords="101,630,264,430,269,433,105,633"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="218,639,369,665"/>
-<area shape="poly" title=" " alt="" coords="165,649,204,649,204,655,165,655"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="Get attitude heading as float (avoiding jumps)" alt="" coords="213,735,373,775"/>
-<area shape="poly" title=" " alt="" coords="128,670,241,726,239,731,126,674"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title=" " alt="" coords="469,171,576,197"/>
-<area shape="poly" title=" " alt="" coords="300,379,316,342,342,295,376,247,420,207,455,191,457,196,423,212,380,251,346,298,321,344,305,381"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="450,663,595,689"/>
-<area shape="poly" title=" " alt="" coords="369,657,436,664,436,670,369,663"/>
-<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="462,713,583,738"/>
-<area shape="poly" title=" " alt="" coords="325,662,422,699,450,707,448,712,420,704,323,667"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="464,817,581,842"/>
-<area shape="poly" title=" " alt="" coords="313,663,495,805,492,810,309,667"/>
-<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="467,614,579,639"/>
-<area shape="poly" title=" " alt="" coords="369,641,453,632,453,637,369,646"/>
-<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="483,221,563,246"/>
-<area shape="poly" title=" " alt="" coords="297,638,371,431,382,392,388,359,398,329,419,294,446,269,476,250,479,255,449,273,423,298,402,331,393,361,387,393,376,433,302,640"/>
-<area shape="rect" href="oneloop__andi_8c.html#a01b12bc894b90fe666fb014b4f5ce481" title="Reinitialize all the Complementary Filters." alt="" coords="473,307,572,333"/>
-<area shape="poly" title=" " alt="" coords="301,637,503,343,507,346,306,640"/>
-<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1176,662,1316,687"/>
-<area shape="poly" title=" " alt="" coords="597,682,626,699,644,725,651,752,651,778,648,805,645,830,646,855,654,878,674,899,694,912,713,919,731,920,750,917,790,907,840,899,914,900,974,905,1001,905,1030,900,1060,891,1095,874,1120,856,1143,836,1182,788,1212,739,1232,699,1237,701,1217,742,1187,791,1147,839,1123,861,1097,878,1062,896,1031,906,1002,910,973,910,914,906,840,904,791,912,751,923,731,925,712,924,692,917,670,903,650,881,641,856,640,830,643,804,646,778,646,752,639,727,622,703,594,686"/>
-<area shape="rect" href="rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="679,965,833,1005"/>
-<area shape="poly" title=" " alt="" coords="540,840,596,889,673,944,696,957,693,962,671,949,593,893,536,844"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="919,973,1065,998"/>
-<area shape="poly" title=" " alt="" coords="834,983,906,983,906,988,834,988"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad343222996afa101ab8254afe6a47fe1" title="Initialize Position of Poles." alt="" coords="701,463,811,489"/>
-<area shape="poly" title=" " alt="" coords="534,612,589,558,628,526,671,499,688,491,690,496,673,504,631,531,593,562,538,616"/>
-<area shape="rect" href="oneloop__andi_8c.html#af2335349a761d2705e1aff694bfe2a2b" title=" " alt="" coords="699,513,813,538"/>
-<area shape="poly" title=" " alt="" coords="549,611,671,555,707,540,709,545,673,560,551,616"/>
-<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="949,563,1035,589"/>
-<area shape="poly" title=" " alt="" coords="578,616,672,604,935,578,935,583,672,609,579,621"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="937,613,1047,638"/>
-<area shape="poly" title=" " alt="" coords="579,624,923,623,923,628,579,629"/>
-<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="937,662,1047,687"/>
-<area shape="poly" title=" " alt="" coords="579,630,923,665,922,670,579,635"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="701,715,811,741"/>
-<area shape="poly" title=" " alt="" coords="580,633,625,650,641,661,650,672,660,683,673,694,701,708,699,713,671,698,656,687,646,675,637,665,623,654,578,638"/>
-<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="701,765,811,790"/>
-<area shape="poly" title=" " alt="" coords="580,629,604,637,626,650,638,663,645,676,651,702,656,727,663,739,674,751,690,761,687,766,670,755,658,743,651,729,646,703,640,678,633,666,622,654,602,642,578,634"/>
-<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="701,814,811,839"/>
-<area shape="poly" title=" " alt="" coords="580,628,604,636,626,650,641,669,649,688,651,727,653,765,660,783,674,801,689,812,686,816,670,805,655,785,648,766,646,727,643,690,636,672,622,654,602,641,578,633"/>
-<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="707,863,805,889"/>
-<area shape="poly" title=" " alt="" coords="580,627,604,635,626,650,644,675,652,701,653,726,651,752,649,777,650,802,657,826,674,850,695,864,693,869,670,854,652,828,644,802,643,777,646,751,648,726,647,702,640,678,622,654,602,640,578,632"/>
-<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="707,365,805,390"/>
-<area shape="poly" title=" " alt="" coords="526,613,544,572,574,515,616,453,642,425,670,400,693,388,696,393,674,405,646,429,621,457,579,517,549,574,531,615"/>
-<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="707,414,805,439"/>
-<area shape="poly" title=" " alt="" coords="529,613,549,580,581,536,622,490,671,450,693,438,695,443,673,454,626,494,585,539,554,583,533,615"/>
-<area shape="rect" href="oneloop__andi_8c.html#a5ad73c04d888263392bfd547c86f53b2" title="Calculate EC poles given RM poles." alt="" coords="953,514,1031,539"/>
-<area shape="poly" title=" " alt="" coords="812,485,940,513,939,518,811,490"/>
-<area shape="poly" title=" " alt="" coords="1032,529,1064,537,1097,550,1135,572,1171,599,1225,650,1222,654,1167,603,1132,577,1095,554,1063,542,1031,534"/>
-<area shape="poly" title=" " alt="" coords="814,523,939,524,939,529,814,528"/>
-<area shape="poly" title=" " alt="" coords="814,535,936,561,935,567,813,540"/>
-<area shape="poly" title=" " alt="" coords="1036,582,1097,599,1159,625,1212,653,1210,658,1157,630,1095,604,1034,587"/>
-<area shape="poly" title=" " alt="" coords="1048,633,1167,657,1166,662,1047,639"/>
-<area shape="poly" title=" " alt="" coords="1048,672,1162,672,1162,677,1048,677"/>
-<area shape="poly" title=" " alt="" coords="811,722,941,713,1096,697,1164,687,1164,692,1096,703,942,718,812,728"/>
-<area shape="poly" title=" " alt="" coords="811,769,942,751,1095,721,1198,690,1200,695,1097,727,943,756,812,774"/>
-<area shape="poly" title=" " alt="" coords="811,820,943,803,1020,786,1095,763,1162,729,1216,693,1219,698,1165,734,1097,768,1021,791,944,808,812,826"/>
-<area shape="poly" title=" " alt="" coords="805,874,866,871,940,863,1019,845,1058,832,1095,816,1136,790,1172,758,1226,697,1230,700,1176,762,1139,794,1097,821,1060,837,1021,851,941,868,866,877,805,879"/>
-<area shape="poly" title=" " alt="" coords="805,384,975,419,1053,438,1097,454,1124,475,1148,499,1188,552,1218,605,1237,648,1232,650,1213,608,1183,555,1144,502,1120,479,1095,458,1052,443,974,424,804,389"/>
-<area shape="poly" title=" " alt="" coords="805,431,963,459,1042,479,1097,500,1142,534,1180,574,1211,615,1233,649,1228,651,1206,618,1176,578,1138,538,1095,505,1040,484,962,464,804,436"/>
-<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="921,184,1063,224"/>
-<area shape="poly" title=" " alt="" coords="563,228,907,207,908,212,563,234"/>
-<area shape="rect" href="notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="695,106,817,131"/>
-<area shape="poly" title=" " alt="" coords="562,225,593,218,623,207,681,174,728,138,731,142,684,178,625,212,594,223,564,230"/>
-<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="1144,274,1348,299"/>
-<area shape="poly" title=" " alt="" coords="1056,221,1097,235,1194,267,1192,272,1095,240,1054,227"/>
-<area shape="rect" href="notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="893,134,1091,159"/>
-<area shape="poly" title=" " alt="" coords="818,123,880,131,880,136,817,129"/>
-<area shape="rect" href="notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="913,5,1071,45"/>
-<area shape="poly" title=" " alt="" coords="781,103,887,55,908,47,910,52,889,60,783,108"/>
-<area shape="rect" href="notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="897,69,1087,109"/>
-<area shape="poly" title=" " alt="" coords="817,108,884,100,884,105,818,114"/>
-<area shape="rect" href="oneloop__andi_8c.html#afae15927cc3d237f5f1af29dce7547fb" title="Reinitialize 2nd Order CF if new frequency setting or if forced." alt="" coords="715,249,797,274"/>
-<area shape="poly" title=" " alt="" coords="572,305,701,272,702,277,573,310"/>
-<area shape="rect" href="oneloop__andi_8c.html#adeb027acbb0d32b03c67fe1e5625ecd8" title="Reinitialize 4th Order CF if new frequency setting or if forced." alt="" coords="715,307,797,333"/>
-<area shape="poly" title=" " alt="" coords="572,317,701,317,701,323,572,323"/>
-<area shape="poly" title=" " alt="" coords="797,249,907,222,909,227,798,254"/>
-<area shape="rect" href="low__pass__filter_8h.html#a3810bed549d1ed49264d45db0ef0a415" title="Get current value of the second order Butterworth low pass filter." alt="" coords="888,249,1096,274"/>
-<area shape="poly" title=" " alt="" coords="797,259,874,259,874,264,797,264"/>
-<area shape="rect" href="low__pass__filter_8h.html#a3bc75d402325948076723e32d355d73b" title="Get current value of the fourth order Butterworth low pass filter." alt="" coords="888,298,1096,323"/>
-<area shape="poly" title=" " alt="" coords="797,316,874,313,874,318,798,321"/>
-<area shape="rect" href="low__pass__filter_8h.html#a42a42c25c357825b34e8402f8296a44d" title="Init a fourth order Butterworth filter." alt="" coords="921,348,1063,388"/>
-<area shape="poly" title=" " alt="" coords="798,326,908,348,907,353,797,331"/>
-<area shape="poly" title=" " alt="" coords="1058,345,1095,333,1193,301,1195,306,1097,339,1059,350"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="421,975,624,1001"/>
-<area shape="poly" title=" " alt="" coords="316,773,501,963,497,967,312,777"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="672,1030,840,1055"/>
-<area shape="poly" title=" " alt="" coords="578,998,689,1024,687,1029,577,1003"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="905,1030,1079,1055"/>
-<area shape="poly" title=" " alt="" coords="840,1040,892,1040,892,1045,840,1045"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1169,1005,1323,1030"/>
-<area shape="poly" title=" " alt="" coords="1079,1031,1155,1024,1155,1029,1079,1037"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1168,1054,1324,1079"/>
-<area shape="poly" title=" " alt="" coords="1079,1048,1155,1055,1154,1061,1079,1053"/>
-</map>
-</div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_icgraph.png" border="0" usemap="#astabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_icgraph" alt=""/></div>
-<map name="astabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_icgraph" id="astabilization__oneloop_8c_a23f862ca823e6fd23fc9c111178be077_icgraph">
-<area shape="rect" title="Attitude control enter function." alt="" coords="639,101,799,141"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="401,55,591,80"/>
-<area shape="poly" title=" " alt="" coords="625,101,549,83,550,77,626,96"/>
-<area shape="rect" href="stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="423,154,569,194"/>
-<area shape="poly" title=" " alt="" coords="626,146,570,159,569,154,624,140"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="205,5,307,31"/>
-<area shape="poly" title=" " alt="" coords="420,54,307,31,308,26,421,49"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="207,55,305,80"/>
-<area shape="poly" title=" " alt="" coords="388,70,305,70,305,65,388,65"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,31,111,56"/>
-<area shape="poly" title=" " alt="" coords="191,29,111,39,110,34,190,24"/>
-<area shape="poly" title=" " alt="" coords="193,62,110,52,111,47,194,57"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="159,104,353,129"/>
-<area shape="poly" title=" " alt="" coords="409,156,309,132,310,127,410,151"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="165,154,347,194"/>
-<area shape="poly" title=" " alt="" coords="409,177,347,177,347,171,409,171"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="165,218,347,258"/>
-<area shape="poly" title=" " alt="" coords="410,200,333,220,331,215,408,194"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="165,282,347,322"/>
-<area shape="poly" title=" " alt="" coords="460,205,411,239,355,272,326,284,324,279,352,268,409,235,457,200"/>
+<area shape="rect" title="Attitude control enter function." alt="" coords="5,622,165,662"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="213,629,364,655"/>
+<area shape="poly" title=" " alt="" coords="165,639,199,639,199,645,165,645"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="412,555,557,580"/>
+<area shape="poly" title=" " alt="" coords="318,627,411,589,430,582,432,587,413,594,320,632"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="424,604,545,629"/>
+<area shape="poly" title=" " alt="" coords="364,630,410,624,410,629,365,635"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="426,653,543,679"/>
+<area shape="poly" title=" " alt="" coords="365,649,413,655,412,660,364,654"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="429,280,541,305"/>
+<area shape="poly" title=" " alt="" coords="295,628,467,316,472,319,299,630"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="445,712,525,737"/>
+<area shape="poly" title=" " alt="" coords="321,652,442,704,440,709,319,657"/>
+<area shape="rect" href="oneloop__andi_8c.html#a01b12bc894b90fe666fb014b4f5ce481" title="Reinitialize all the Complementary Filters." alt="" coords="435,844,534,869"/>
+<area shape="poly" title=" " alt="" coords="303,653,464,832,460,835,300,657"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1096,301,1236,327"/>
+<area shape="poly" title=" " alt="" coords="558,576,654,584,772,583,835,576,897,564,958,545,1015,518,1041,501,1064,479,1103,430,1133,380,1152,338,1157,341,1138,382,1108,433,1068,483,1044,505,1017,523,960,550,899,569,836,582,773,589,654,590,557,582"/>
+<area shape="rect" href="rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="605,625,760,665"/>
+<area shape="poly" title=" " alt="" coords="543,657,591,652,592,657,544,662"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="839,605,985,631"/>
+<area shape="poly" title=" " alt="" coords="760,633,825,625,825,631,760,638"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad343222996afa101ab8254afe6a47fe1" title="Initialize Position of Poles." alt="" coords="627,205,738,231"/>
+<area shape="poly" title=" " alt="" coords="513,277,604,240,625,232,626,237,606,244,515,282"/>
+<area shape="rect" href="oneloop__andi_8c.html#af2335349a761d2705e1aff694bfe2a2b" title=" " alt="" coords="625,255,740,280"/>
+<area shape="poly" title=" " alt="" coords="541,283,611,274,612,279,541,288"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="869,301,955,327"/>
+<area shape="poly" title=" " alt="" coords="541,293,856,309,856,314,541,298"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="857,5,967,31"/>
+<area shape="poly" title=" " alt="" coords="486,279,496,235,517,173,533,140,552,108,576,79,604,55,632,38,662,25,725,10,787,5,843,7,842,12,787,11,725,15,663,30,634,43,607,59,580,83,557,111,538,143,522,175,501,236,491,280"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="857,56,967,81"/>
+<area shape="poly" title=" " alt="" coords="487,279,499,240,522,188,556,135,578,111,604,92,632,77,663,66,726,54,788,51,843,55,843,60,788,57,727,59,664,71,635,82,607,96,582,115,561,138,527,191,504,242,492,280"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="627,107,738,132"/>
+<area shape="poly" title=" " alt="" coords="491,278,532,213,565,175,604,141,613,135,616,140,607,145,569,178,537,216,495,281"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="627,156,738,181"/>
+<area shape="poly" title=" " alt="" coords="496,278,541,235,571,211,604,190,617,184,619,189,607,195,574,216,544,239,500,282"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="627,356,738,381"/>
+<area shape="poly" title=" " alt="" coords="520,303,637,349,635,354,518,308"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="634,405,731,431"/>
+<area shape="poly" title=" " alt="" coords="500,304,545,346,574,369,607,390,622,398,620,403,604,395,571,374,541,350,496,307"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="634,455,731,480"/>
+<area shape="poly" title=" " alt="" coords="495,304,537,369,569,407,607,440,623,449,620,453,604,444,565,411,532,372,491,307"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="634,504,731,529"/>
+<area shape="poly" title=" " alt="" coords="493,305,506,341,530,391,564,444,584,468,607,489,623,499,620,503,604,493,580,472,559,447,525,393,502,343,488,306"/>
+<area shape="rect" href="oneloop__andi_8c.html#a5ad73c04d888263392bfd547c86f53b2" title="Calculate EC poles given RM poles." alt="" coords="873,252,951,277"/>
+<area shape="poly" title=" " alt="" coords="739,227,860,251,859,257,738,232"/>
+<area shape="poly" title=" " alt="" coords="952,270,1087,296,1086,301,951,275"/>
+<area shape="poly" title=" " alt="" coords="740,264,859,263,859,268,740,269"/>
+<area shape="poly" title=" " alt="" coords="741,276,856,300,855,305,739,281"/>
+<area shape="poly" title=" " alt="" coords="955,311,1082,311,1082,317,955,317"/>
+<area shape="poly" title=" " alt="" coords="968,20,994,28,1018,41,1047,68,1074,99,1115,168,1144,235,1160,287,1155,289,1139,237,1110,170,1069,103,1044,72,1014,45,992,33,967,25"/>
+<area shape="poly" title=" " alt="" coords="960,79,989,92,1018,109,1063,153,1102,202,1133,249,1155,288,1150,291,1128,252,1098,205,1059,156,1014,113,987,96,958,84"/>
+<area shape="poly" title=" " alt="" coords="739,122,798,130,869,144,944,164,1017,193,1055,215,1090,240,1145,289,1141,293,1087,244,1052,219,1015,198,943,169,868,149,797,135,738,127"/>
+<area shape="poly" title=" " alt="" coords="739,173,867,196,943,214,1017,237,1080,264,1133,292,1131,297,1078,269,1015,242,941,219,866,201,738,178"/>
+<area shape="poly" title=" " alt="" coords="738,362,865,352,1016,335,1082,326,1083,331,1016,341,865,357,738,367"/>
+<area shape="poly" title=" " alt="" coords="731,410,860,393,1015,362,1119,329,1121,334,1017,367,861,398,732,416"/>
+<area shape="poly" title=" " alt="" coords="731,462,862,446,939,430,1015,406,1050,390,1083,371,1137,333,1140,337,1086,376,1052,395,1017,411,941,435,863,452,732,467"/>
+<area shape="poly" title=" " alt="" coords="731,515,791,513,864,505,941,488,979,476,1015,460,1056,433,1093,400,1146,336,1150,340,1097,403,1059,437,1017,464,981,481,942,493,864,510,791,518,731,520"/>
+<area shape="rect" href="low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="841,947,983,987"/>
+<area shape="poly" title=" " alt="" coords="496,736,549,813,581,854,607,880,645,898,702,917,829,948,827,953,700,922,644,903,604,884,577,858,545,817,492,739"/>
+<area shape="rect" href="notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="621,712,744,737"/>
+<area shape="poly" title=" " alt="" coords="525,722,608,722,608,727,525,727"/>
+<area shape="rect" href="low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="1064,897,1268,923"/>
+<area shape="poly" title=" " alt="" coords="982,949,1095,923,1097,928,983,954"/>
+<area shape="rect" href="notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="813,655,1011,680"/>
+<area shape="poly" title=" " alt="" coords="732,709,807,690,845,681,846,686,809,695,734,715"/>
+<area shape="rect" href="notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="833,705,991,745"/>
+<area shape="poly" title=" " alt="" coords="744,722,819,722,819,727,744,727"/>
+<area shape="rect" href="notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="817,769,1007,809"/>
+<area shape="poly" title=" " alt="" coords="730,735,827,762,826,768,729,740"/>
+<area shape="rect" href="oneloop__andi_8c.html#afae15927cc3d237f5f1af29dce7547fb" title="Reinitialize 2nd Order CF if new frequency setting or if forced." alt="" coords="641,955,724,980"/>
+<area shape="poly" title=" " alt="" coords="507,867,607,926,644,946,642,951,604,931,505,872"/>
+<area shape="rect" href="oneloop__andi_8c.html#adeb027acbb0d32b03c67fe1e5625ecd8" title="Reinitialize 4th Order CF if new frequency setting or if forced." alt="" coords="641,844,724,869"/>
+<area shape="poly" title=" " alt="" coords="534,854,627,854,627,859,534,859"/>
+<area shape="poly" title=" " alt="" coords="724,965,828,965,828,970,724,970"/>
+<area shape="rect" href="low__pass__filter_8h.html#af3df46249510118fe83e6a70f14e15db" title="Get current value of the second order Butterworth low pass filter." alt="" coords="808,1012,1016,1037"/>
+<area shape="poly" title=" " alt="" coords="725,975,809,997,846,1006,845,1011,807,1002,724,980"/>
+<area shape="rect" href="low__pass__filter_8h.html#a0a29a51d6b661a2a4d74017c612a04b9" title="Get current value of the second order low pass filter." alt="" coords="1064,1012,1268,1037"/>
+<area shape="poly" title=" " alt="" coords="1016,1022,1050,1022,1050,1027,1016,1027"/>
+<area shape="rect" href="low__pass__filter_8h.html#a2e173293ed07380db78615719d4f5b00" title="Get current value of the fourth order Butterworth low pass filter." alt="" coords="808,897,1016,923"/>
+<area shape="poly" title=" " alt="" coords="725,863,844,892,843,897,723,869"/>
+<area shape="rect" href="low__pass__filter_8h.html#afde385e80442374b2f579302039d8d72" title="Init a fourth order Butterworth filter." alt="" coords="841,833,983,873"/>
+<area shape="poly" title=" " alt="" coords="724,853,828,851,828,857,724,859"/>
+<area shape="poly" title=" " alt="" coords="983,866,1097,892,1095,897,982,871"/>
 </map>
 </div>
 
@@ -397,11 +352,11 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="stabilization__oneloop_8c_source.html#l00035">35</a> of file <a class="el" href="stabilization__oneloop_8c_source.html">stabilization_oneloop.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="oneloop__andi_8h_source.html#l00127">OneloopGeneral::half_loop</a>, <a class="el" href="oneloop__andi_8c_source.html#l00333">oneloop_andi</a>, and <a class="el" href="oneloop__andi_8c_source.html#l01629">oneloop_andi_run()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__oneloop_8c_a48cff283114303642bc53edbb6c836a9_cgraph.png" border="0" usemap="#astabilization__oneloop_8c_a48cff283114303642bc53edbb6c836a9_cgraph" alt=""/></div>
 <map name="astabilization__oneloop_8c_a48cff283114303642bc53edbb6c836a9_cgraph" id="astabilization__oneloop_8c_a48cff283114303642bc53edbb6c836a9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,1007,193,1032"/>
@@ -419,7 +374,7 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="308,1007,308,856,311,738,319,608,332,476,353,356,367,303,384,257,403,219,425,191,444,179,470,171,538,161,615,158,687,159,687,165,615,163,538,166,471,176,446,184,428,195,407,222,388,259,372,304,359,357,338,477,324,608,317,738,314,856,314,1007"/>
 <area shape="rect" href="oneloop__andi_8c.html#ad74396a7e29e8f36c0213a44260e4cc7" title=" " alt="" coords="477,104,571,130"/>
 <area shape="poly" title=" " alt="" coords="309,1007,310,850,315,728,323,593,337,455,358,327,371,270,386,221,404,179,425,147,442,133,463,123,465,128,445,137,429,151,409,182,391,223,376,272,363,328,342,456,329,593,320,729,316,851,314,1007"/>
-<area shape="rect" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="432,1031,616,1056"/>
+<area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="432,1031,616,1056"/>
 <area shape="poly" title=" " alt="" coords="379,1025,419,1029,418,1035,378,1030"/>
 <area shape="rect" href="oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="465,1080,583,1106"/>
 <area shape="poly" title=" " alt="" coords="340,1030,428,1065,457,1074,455,1079,426,1070,338,1035"/>
@@ -505,9 +460,9 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="607,1405,623,1418,642,1446,649,1474,650,1501,647,1528,644,1555,645,1581,653,1607,671,1633,675,1636,671,1640,667,1636,648,1609,640,1582,639,1555,642,1528,645,1501,644,1475,637,1448,619,1422,604,1409"/>
 <area shape="rect" href="group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="683,1695,839,1720"/>
 <area shape="poly" title=" " alt="" coords="608,1405,623,1418,645,1452,653,1487,652,1520,647,1553,642,1586,641,1618,650,1650,671,1682,674,1685,671,1689,667,1685,645,1652,636,1619,636,1585,641,1552,647,1520,648,1487,640,1455,619,1421,604,1409"/>
-<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="686,1221,837,1261"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="686,1221,837,1261"/>
 <area shape="poly" title=" " alt="" coords="544,1364,598,1318,668,1271,681,1264,684,1269,671,1275,601,1322,548,1368"/>
-<area shape="rect" href="low__pass__filter_8h.html#aaec7bc687afb767b2b84ac20da7e4055" title="Update fourth order Butterworth low pass filter state with a new value." alt="" coords="686,1285,837,1325"/>
+<area shape="rect" href="low__pass__filter_8h.html#ac6aad62d3f90b904b5a6feccc6460d1d" title="Update fourth order Butterworth low pass filter state with a new value." alt="" coords="686,1285,837,1325"/>
 <area shape="poly" title=" " alt="" coords="582,1364,689,1327,690,1332,584,1369"/>
 <area shape="poly" title=" " alt="" coords="542,930,668,843,686,835,688,840,671,847,545,934"/>
 <area shape="poly" title=" " alt="" coords="594,953,623,967,640,986,647,1006,654,1025,671,1040,721,1064,766,1075,787,1074,808,1068,829,1057,851,1040,862,1027,870,1010,879,964,881,907,879,844,877,723,883,673,890,653,899,637,902,634,906,637,903,640,895,655,888,674,882,723,884,844,886,907,884,964,875,1011,867,1030,855,1044,832,1062,810,1073,788,1079,765,1080,719,1069,668,1045,650,1028,642,1008,635,989,620,971,592,957"/>
@@ -530,7 +485,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__oneloop_8c.html">stabilization_oneloop.c</a></li>
-    <li class="footer">Generated on Wed Feb 4 2026 22:26:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Feb 6 2026 21:08:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

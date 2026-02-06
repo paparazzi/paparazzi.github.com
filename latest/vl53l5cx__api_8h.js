@@ -14,7 +14,7 @@ var vl53l5cx__api_8h =
     [ "VL53L5CX_ResultsData", "vl53l5cx__api_8h.html#structVL53L5CX__ResultsData", [
       [ "ambient_per_spad", "vl53l5cx__api_8h.html#a950f891ceb8e8ecb5712039d5f8a6a2c", null ],
       [ "distance_mm", "vl53l5cx__api_8h.html#a26cc61b2a5571e05483c784bd94d21ab", null ],
-      [ "motion_indicator", "vl53l5cx__api_8h.html#a360850b7bd246e2d33436782e7bcdca5", null ],
+      [ "motion_indicator", "vl53l5cx__api_8h.html#acbb8086ea072b6ae82eff636082436ce", null ],
       [ "nb_spads_enabled", "vl53l5cx__api_8h.html#a1dd1af7f8bfb012335f27191ed42df36", null ],
       [ "nb_target_detected", "vl53l5cx__api_8h.html#a4a4f3a0f391af1b40d900239345c8912", null ],
       [ "range_sigma_mm", "vl53l5cx__api_8h.html#a13a2cb338de44e03d5b31bdd3b94909f", null ],
@@ -35,7 +35,7 @@ var vl53l5cx__api_8h =
       [ "spare", "vl53l5cx__api_8h.html#a3cdbcee9312eb0598d35c5abb2ad0ffd", null ],
       [ "status", "vl53l5cx__api_8h.html#a9acb44549b41563697bb490144ec6258", null ]
     ] ],
-    [ "Block_header.__unnamed354__", "vl53l5cx__api_8h.html#structBlock__header_8____unnamed354____", [
+    [ "Block_header.__unnamed358__", "vl53l5cx__api_8h.html#structBlock__header_8____unnamed358____", [
       [ "idx", "vl53l5cx__api_8h.html#a7f9bec28bc8902d45d905788d7aa59a1", null ],
       [ "size", "vl53l5cx__api_8h.html#af7bd60b75b29d79b660a2859395c1a24", null ],
       [ "type", "vl53l5cx__api_8h.html#a599dcce2998a6b40b1e38e8c6006cb0a", null ]

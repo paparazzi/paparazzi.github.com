@@ -78,6 +78,7 @@ var state_8h =
     [ "stateCalcSpeedNed_i", "group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5", null ],
     [ "stateCalcVerticalWindspeed_f", "group__state__wind__airspeed.html#gaf5cbdfa616e875ce4f648ab97a03a8e1", null ],
     [ "stateCalcVerticalWindspeed_i", "group__state__wind__airspeed.html#gaac50ef79934dbcc8abf99aa3be288c5a", null ],
+    [ "stateGetAccelBody_f", "group__state__interface.html#ga6dff516bec84bbf1c2f657f84d4f3272", null ],
     [ "stateGetAccelBody_i", "group__state__velocity.html#ga4c0971d022697106338036028a62c7fd", null ],
     [ "stateGetAccelEcef_f", "group__state__acceleration.html#ga2f4eabac6e0410213927c5221b5f5386", null ],
     [ "stateGetAccelEcef_i", "group__state__acceleration.html#ga287112d9fc7013974a0e8cdfb6d99c4a", null ],

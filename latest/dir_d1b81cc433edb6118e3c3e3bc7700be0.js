@@ -1,6 +1,9 @@
 var dir_d1b81cc433edb6118e3c3e3bc7700be0 =
 [
     [ "attitude_ref_saturate_naive.h", "attitude__ref__saturate__naive_8h.html", "attitude__ref__saturate__naive_8h" ],
+    [ "obm_cyclone.c", "obm__cyclone_8c.html", "obm__cyclone_8c" ],
+    [ "stabilization_andi.c", "stabilization__andi_8c.html", "stabilization__andi_8c" ],
+    [ "stabilization_andi.h", "stabilization__andi_8h.html", "stabilization__andi_8h" ],
     [ "stabilization_attitude.h", "rotorcraft_2stabilization_2stabilization__attitude_8h.html", "rotorcraft_2stabilization_2stabilization__attitude_8h" ],
     [ "stabilization_attitude_common_float.h", "stabilization__attitude__common__float_8h.html", "stabilization__attitude__common__float_8h" ],
     [ "stabilization_attitude_common_int.h", "stabilization__attitude__common__int_8h.html", "stabilization__attitude__common__int_8h" ],

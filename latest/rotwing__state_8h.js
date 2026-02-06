@@ -23,7 +23,7 @@ var rotwing__state_8h =
       [ "sp_skew_angle_deg", "rotwing__state_8h.html#abad06626db5e5547a6760495a93d65a6", null ],
       [ "state", "rotwing__state_8h.html#a30542483ba57bd35dcf9ae681646c15a", null ]
     ] ],
-    [ "rotwing_bitmask_t.__unnamed307__", "rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed307____", [
+    [ "rotwing_bitmask_t.__unnamed311__", "rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed311____", [
       [ "hover_motors_enabled", "rotwing__state_8h.html#a71feede8efe7593557bb49bf335c59a4", null ],
       [ "hover_motors_idle", "rotwing__state_8h.html#a798cceb97bce2315e37d89cebec28135", null ],
       [ "hover_motors_running", "rotwing__state_8h.html#ae0013c9265cf693508ac5da575c3768d", null ],

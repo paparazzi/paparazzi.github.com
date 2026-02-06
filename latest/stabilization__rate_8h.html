@@ -165,15 +165,21 @@ $(document).ready(function(){initNavTree('stabilization__rate_8h.html',''); init
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8hdep" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8hdep" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8hdep">
-<area shape="rect" title="Rate stabilization for rotorcrafts." alt="" coords="211,5,381,60"/>
+<area shape="rect" title="Rate stabilization for rotorcrafts." alt="" coords="308,5,479,60"/>
 <area shape="rect" href="stabilization_8c.html" title="General stabilization interface for rotorcrafts." alt="" coords="5,115,187,155"/>
-<area shape="poly" title=" " alt="" coords="233,68,135,117,133,113,231,64"/>
-<area shape="rect" href="stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="211,108,381,163"/>
-<area shape="poly" title=" " alt="" coords="299,74,299,108,293,108,293,74"/>
-<area shape="rect" href="stabilization__rate__indi_8h.html" title="Rate stabilization for rotorcrafts based on INDI." alt="" coords="406,108,589,163"/>
-<area shape="poly" title=" " alt="" coords="362,64,446,106,444,110,359,68"/>
-<area shape="rect" href="stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="407,211,588,265"/>
-<area shape="poly" title=" " alt="" coords="500,176,500,211,495,211,495,176"/>
+<area shape="poly" title=" " alt="" coords="304,67,153,118,151,113,302,62"/>
+<area shape="rect" href="stabilization__andi_8h.html" title="ANDI stabilization controller for tiltbody rotorcraft." alt="" coords="211,108,381,163"/>
+<area shape="poly" title=" " alt="" coords="360,72,323,110,319,106,356,68"/>
+<area shape="rect" href="stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="405,108,576,163"/>
+<area shape="poly" title=" " alt="" coords="430,68,467,106,463,110,426,72"/>
+<area shape="rect" href="stabilization__rate__indi_8h.html" title="Rate stabilization for rotorcrafts based on INDI." alt="" coords="601,108,783,163"/>
+<area shape="poly" title=" " alt="" coords="485,62,615,105,613,110,483,67"/>
+<area shape="rect" href="obm__cyclone_8c.html" title=" " alt="" coords="113,211,284,265"/>
+<area shape="poly" title=" " alt="" coords="263,175,226,212,222,209,259,171"/>
+<area shape="rect" href="stabilization__andi_8c.html" title="ANDI stabilization controller for tiltbody rotorcraft." alt="" coords="308,211,479,265"/>
+<area shape="poly" title=" " alt="" coords="333,171,370,209,366,212,329,175"/>
+<area shape="rect" href="stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="601,211,783,265"/>
+<area shape="poly" title=" " alt="" coords="695,176,695,211,689,211,689,176"/>
 </map>
 </div>
 </div>
@@ -423,7 +429,7 @@ Variables</h2></td></tr>
 
 <p>Reset rate controller. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00113">113</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__andi_8c_source.html#l01377">1377</a> of file <a class="el" href="stabilization__andi_8c_source.html">stabilization_andi.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="stabilization__indi_8c_source.html#l00474">stabilization_indi_enter()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_sum_err</a>.</p>
 
@@ -537,9 +543,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00158">158</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__andi_8c_source.html#l01397">1397</a> of file <a class="el" href="stabilization__andi_8c_source.html">stabilization_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8h_source.html#l00049">PITCH_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization__rate_8h_source.html#l00064">RC_RATE_P</a>, <a class="el" href="stabilization__rate_8h_source.html#l00065">RC_RATE_Q</a>, <a class="el" href="stabilization__rate_8h_source.html#l00066">RC_RATE_R</a>, <a class="el" href="stabilization__rate_8h_source.html#l00045">ROLL_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization_8c_source.html#l00680">stab_sp_from_rates_f()</a>, <a class="el" href="stabilization__rate__indi_8c_source.html#l00043">STABILIZATION_INDI_MAX_RATE</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00057">THROTTLE_STICK_DOWN_FROM_RC</a>, and <a class="el" href="stabilization__rate_8h_source.html#l00053">YAW_RATE_DEADBAND_EXCEEDED</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8h_source.html#l00049">PITCH_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization__andi_8c_source.html#l00129">RC_RATE_MAX</a>, <a class="el" href="stabilization__rate_8h_source.html#l00064">RC_RATE_P</a>, <a class="el" href="stabilization__rate_8h_source.html#l00065">RC_RATE_Q</a>, <a class="el" href="stabilization__rate_8h_source.html#l00066">RC_RATE_R</a>, <a class="el" href="stabilization__rate_8h_source.html#l00045">ROLL_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization_8c_source.html#l00680">stab_sp_from_rates_f()</a>, <a class="el" href="stabilization__rate__indi_8c_source.html#l00043">STABILIZATION_INDI_MAX_RATE</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00057">THROTTLE_STICK_DOWN_FROM_RC</a>, and <a class="el" href="stabilization__rate_8h_source.html#l00053">YAW_RATE_DEADBAND_EXCEEDED</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -619,9 +625,9 @@ Variables</h2></td></tr>
 
 <p>Run indi rate interface from the "stabilization_rate_run" function. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00118">118</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__andi_8c_source.html#l01382">1382</a> of file <a class="el" href="stabilization__andi_8c_source.html">stabilization_andi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8c_source.html#l00040">MAX_SUM_ERR</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00401">RATES_BOUND_CUBE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00386">RATES_SDIV</a>, <a class="el" href="stabilization_8c_source.html#l00510">stab_sp_to_rates_f()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00579">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00069">stabilization_rate_fb_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00071">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate__indi_8c_source.html#l00039">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_sum_err</a>, <a class="el" href="state_8h_source.html#l01367">stateGetBodyRates_f()</a>, <a class="el" href="stabilization_8c_source.html#l00527">th_sp_to_thrust_i()</a>, and <a class="el" href="stabilization_8h_source.html#l00174">THRUST_AXIS_Z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8c_source.html#l00040">MAX_SUM_ERR</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00401">RATES_BOUND_CUBE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00386">RATES_SDIV</a>, <a class="el" href="stabilization_8c_source.html#l00510">stab_sp_to_rates_f()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00579">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00069">stabilization_rate_fb_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00071">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate__indi_8c_source.html#l00039">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_sum_err</a>, <a class="el" href="state_8h_source.html#l01375">stateGetBodyRates_f()</a>, <a class="el" href="stabilization_8c_source.html#l00527">th_sp_to_thrust_i()</a>, and <a class="el" href="stabilization_8h_source.html#l00174">THRUST_AXIS_Z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization_8c_source.html#l00242">stabilization_run()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -645,9 +651,9 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="287,435,301,397,323,348,354,298,374,275,396,255,406,248,409,252,399,259,378,278,359,301,328,350,306,399,292,437"/>
 <area shape="rect" href="stabilization__indi_8c.html#a8415032ccb0b6ba9c6ae11c74c0dfc15" title=" " alt="" coords="443,268,535,293"/>
 <area shape="poly" title=" " alt="" coords="293,435,333,374,362,340,396,310,429,293,431,298,399,315,366,344,337,377,297,438"/>
-<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="637,318,787,358"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="637,318,787,358"/>
 <area shape="poly" title=" " alt="" coords="298,435,339,393,366,372,396,356,453,338,512,329,570,325,623,326,623,332,570,331,513,334,454,343,398,360,369,376,342,397,302,438"/>
-<area shape="rect" href="group__math__algebra__float.html#ga51d4918e372875631e37401779d07b83" title="o = a * b" alt="" coords="414,369,565,395"/>
+<area shape="rect" href="group__math__algebra__float.html#ga7acf82c01f2b7910784053bd899b6b03" title="o = a * b" alt="" coords="414,369,565,395"/>
 <area shape="poly" title=" " alt="" coords="325,434,396,405,424,396,425,401,398,410,328,439"/>
 <area shape="rect" href="group__math__algebra__float.html#gaa33d68b46bc4922889e1fc931c6318fd" title="o = a &#45; b" alt="" coords="432,419,547,444"/>
 <area shape="poly" title=" " alt="" coords="349,446,418,437,419,443,350,451"/>
@@ -672,9 +678,9 @@ Variables</h2></td></tr>
 <area shape="rect" href="wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="448,169,531,195"/>
 <area shape="poly" title=" " alt="" coords="285,436,295,389,316,326,348,261,370,231,396,205,414,194,434,186,436,191,416,198,399,209,374,235,353,264,321,329,300,390,290,437"/>
 <area shape="poly" title=" " alt="" coords="536,290,624,313,623,318,535,295"/>
-<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="642,254,782,294"/>
+<area shape="rect" href="low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="642,254,782,294"/>
 <area shape="poly" title=" " alt="" coords="536,277,628,274,628,279,536,282"/>
-<area shape="rect" href="low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531" title="Update second order low pass filter state with a new value." alt="" coords="843,318,1004,358"/>
+<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="843,318,1004,358"/>
 <area shape="poly" title=" " alt="" coords="787,335,829,335,829,341,787,341"/>
 <area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="650,452,774,477"/>
 <area shape="poly" title=" " alt="" coords="558,564,580,553,595,538,603,522,611,505,628,488,639,481,642,485,631,492,616,508,608,524,599,541,583,557,560,569"/>
@@ -823,7 +829,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__rate_8h.html">stabilization_rate.h</a></li>
-    <li class="footer">Generated on Wed Feb 4 2026 22:26:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Feb 6 2026 21:08:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

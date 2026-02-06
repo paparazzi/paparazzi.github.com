@@ -229,7 +229,7 @@ var NAVTREEINDEX27 =
 "bmp280_8h.html#structbmp280__reg__calib__data__t":[12,0,1,0,7,28,2],
 "bmp280_8h.html#structbmp280__spi__t":[12,0,1,0,7,28,1],
 "bmp280_8h.html#structbmp280__t":[12,0,1,0,7,28,3],
-"bmp280_8h.html#unionbmp280__t_8____unnamed315____":[12,0,1,0,7,28,4],
+"bmp280_8h.html#unionbmp280__t_8____unnamed319____":[12,0,1,0,7,28,4],
 "bmp280_8h_source.html":[12,0,1,0,7,28],
 "bmp280__regs_8h.html":[12,0,1,0,7,29],
 "bmp280__regs_8h.html#a033d2699d725d19ecffcc3d294921322":[12,0,1,0,7,29,50],

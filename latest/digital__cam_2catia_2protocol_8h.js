@@ -2,7 +2,7 @@ var digital__cam_2catia_2protocol_8h =
 [
     [ "dc_shot_union", "digital__cam_2catia_2protocol_8h.html#uniondc__shot__union", [
       [ "bin", "digital__cam_2catia_2protocol_8h.html#a8080e4edd9fdb0697c540f5a43576218", null ],
-      [ "data", "digital__cam_2catia_2protocol_8h.html#a516fab57c6ded3e7ede726f907e2c334", null ],
+      [ "data", "digital__cam_2catia_2protocol_8h.html#a99884f4431235222ec4ac539a59c6553", null ],
       [ "i", "digital__cam_2catia_2protocol_8h.html#a84fd5a6b454d55a58ca0f5e923c23105", null ]
     ] ],
     [ "mora_status_union", "digital__cam_2catia_2protocol_8h.html#unionmora__status__union", [
