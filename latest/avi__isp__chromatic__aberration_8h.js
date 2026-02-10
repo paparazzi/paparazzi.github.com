@@ -76,32 +76,32 @@ var avi__isp__chromatic__aberration_8h =
       [ "increments_log2", "avi__isp__chromatic__aberration_8h.html#a679fc0cb9e9675857cdb741dab8bab7e", null ],
       [ "radius_squared", "avi__isp__chromatic__aberration_8h.html#a606cb41f10e010b29a5ad9075237db6c", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_radius_squared.__unnamed47__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__radius__squared_8____unnamed47____", [
+    [ "avi_isp_chromatic_aberration_radius_squared.__unnamed46__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__radius__squared_8____unnamed46____", [
       [ "radius_squared", "avi__isp__chromatic__aberration_8h.html#a37802aa693a24c8b35317f3948c8bbd7", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_displacement_coeffs.__unnamed49__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__displacement__coeffs_8____unnamed49____", [
+    [ "avi_isp_chromatic_aberration_displacement_coeffs.__unnamed48__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__displacement__coeffs_8____unnamed48____", [
       [ "displacement_blue", "avi__isp__chromatic__aberration_8h.html#ac96e97ea19718632b56c985e7f5c8fd2", null ],
       [ "displacement_red", "avi__isp__chromatic__aberration_8h.html#a9a17d998135949a3c2a67b515dee1418", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_circle_pos_x_center.__unnamed51__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__center_8____unnamed51____", [
+    [ "avi_isp_chromatic_aberration_circle_pos_x_center.__unnamed50__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__center_8____unnamed50____", [
       [ "x_center", "avi__isp__chromatic__aberration_8h.html#ae581abd84884d89931f66dcfe8f88bcb", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_circle_pos_x_squared.__unnamed53__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__squared_8____unnamed53____", [
+    [ "avi_isp_chromatic_aberration_circle_pos_x_squared.__unnamed52__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__squared_8____unnamed52____", [
       [ "x_squared", "avi__isp__chromatic__aberration_8h.html#a248bb26fa55ebf7bc9b11298742c9128", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_circle_pos_y_center.__unnamed55__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__y__center_8____unnamed55____", [
+    [ "avi_isp_chromatic_aberration_circle_pos_y_center.__unnamed54__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__y__center_8____unnamed54____", [
       [ "y_center", "avi__isp__chromatic__aberration_8h.html#ae96b6f693fb5b638360f766cb8efd608", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_circle_pos_y_squared.__unnamed57__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__y__squared_8____unnamed57____", [
+    [ "avi_isp_chromatic_aberration_circle_pos_y_squared.__unnamed56__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__y__squared_8____unnamed56____", [
       [ "y_squared", "avi__isp__chromatic__aberration_8h.html#aabef732b97e2a4e60a662295689ce78e", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_cfa.__unnamed59__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__cfa_8____unnamed59____", [
+    [ "avi_isp_chromatic_aberration_cfa.__unnamed58__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__cfa_8____unnamed58____", [
       [ "cfa", "avi__isp__chromatic__aberration_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_green_variation.__unnamed61__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__green__variation_8____unnamed61____", [
+    [ "avi_isp_chromatic_aberration_green_variation.__unnamed60__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__green__variation_8____unnamed60____", [
       [ "green_var", "avi__isp__chromatic__aberration_8h.html#a9eb60639134b47fe6b8a12c639f9454c", null ]
     ] ],
-    [ "avi_isp_chromatic_aberration_increments_log2.__unnamed63__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__increments__log2_8____unnamed63____", [
+    [ "avi_isp_chromatic_aberration_increments_log2.__unnamed62__", "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__increments__log2_8____unnamed62____", [
       [ "__pad0__", "avi__isp__chromatic__aberration_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "x_log2_inc", "avi__isp__chromatic__aberration_8h.html#ae5b44ea29d1f15ac86ce9be31969044d", null ],
       [ "y_log2_inc", "avi__isp__chromatic__aberration_8h.html#a9160ec0a4b4b978a44b0a631f5163d8b", null ]

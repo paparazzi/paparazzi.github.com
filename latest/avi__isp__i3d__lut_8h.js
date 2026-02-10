@@ -18,17 +18,17 @@ var avi__isp__i3d__lut_8h =
     [ "avi_isp_i3d_lut_regs", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__regs", [
       [ "clip_mode", "avi__isp__i3d__lut_8h.html#a6977b067709700f698281760dcaeb704", null ]
     ] ],
-    [ "avi_isp_i3d_lut_lut_outside.__unnamed169__", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__lut__outside_8____unnamed169____", [
+    [ "avi_isp_i3d_lut_lut_outside.__unnamed168__", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__lut__outside_8____unnamed168____", [
       [ "bv_value", "avi__isp__i3d__lut_8h.html#af8b61118330e804a9c28726eed26d2b3", null ],
       [ "gu_value", "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a", null ],
       [ "ry_value", "avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318", null ]
     ] ],
-    [ "avi_isp_i3d_lut_lut_inside.__unnamed171__", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__lut__inside_8____unnamed171____", [
+    [ "avi_isp_i3d_lut_lut_inside.__unnamed170__", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__lut__inside_8____unnamed170____", [
       [ "bv_value", "avi__isp__i3d__lut_8h.html#af8b61118330e804a9c28726eed26d2b3", null ],
       [ "gu_value", "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a", null ],
       [ "ry_value", "avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318", null ]
     ] ],
-    [ "avi_isp_i3d_lut_clip_mode.__unnamed173__", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__clip__mode_8____unnamed173____", [
+    [ "avi_isp_i3d_lut_clip_mode.__unnamed172__", "avi__isp__i3d__lut_8h.html#structavi__isp__i3d__lut__clip__mode_8____unnamed172____", [
       [ "clip_en", "avi__isp__i3d__lut_8h.html#afca88815cf1798f18d1089e8e26a57f7", null ]
     ] ],
     [ "AVI_ISP_I3D_LUT_CLIP_MODE", "avi__isp__i3d__lut_8h.html#a03c397b4518be080f2fdb8e7f99ca1b1", null ],

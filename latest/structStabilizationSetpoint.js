@@ -1,7 +1,7 @@
 var structStabilizationSetpoint =
 [
-    [ "format", "structStabilizationSetpoint.html#adccc2228afed366e963ce9a5e00e1d1f", null ],
-    [ "r_sp", "structStabilizationSetpoint.html#ac609bebe1792c5ad4e3956b1fb7b4573", null ],
-    [ "sp", "structStabilizationSetpoint.html#a632c80c243fb808a15e136573cf70a91", null ],
-    [ "type", "structStabilizationSetpoint.html#afd83fc3898955c055fa4ea646dfd1eb1", null ]
+    [ "format", "structStabilizationSetpoint.html#a5a77b8868aa93dc1b3bd285eb936ad51", null ],
+    [ "r_sp", "structStabilizationSetpoint.html#ad682cbe314764339966316d5543cefc5", null ],
+    [ "sp", "structStabilizationSetpoint.html#a8a2fcc5791a1aa4db4b77f847656fee8", null ],
+    [ "type", "structStabilizationSetpoint.html#a39e02b373e8f6d8188751d7ebe2e566e", null ]
 ];

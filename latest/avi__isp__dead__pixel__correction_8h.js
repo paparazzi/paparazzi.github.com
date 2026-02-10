@@ -28,29 +28,29 @@ var avi__isp__dead__pixel__correction_8h =
       [ "rgrim_gain", "avi__isp__dead__pixel__correction_8h.html#a04590083d7ad8b251f83e42028f589ee", null ],
       [ "threshold", "avi__isp__dead__pixel__correction_8h.html#a1859374a9a740215e54a3cdb300e438e", null ]
     ] ],
-    [ "avi_isp_dead_pixel_correction_list_mem.__unnamed87__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__list__mem_8____unnamed87____", [
+    [ "avi_isp_dead_pixel_correction_list_mem.__unnamed86__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__list__mem_8____unnamed86____", [
       [ "coord_x", "avi__isp__dead__pixel__correction_8h.html#a14f7dfe78c34ee6593f06102546289aa", null ],
       [ "coord_y", "avi__isp__dead__pixel__correction_8h.html#a6ea2662c24f419d5f03cb868c1a06f37", null ],
       [ "op_code", "avi__isp__dead__pixel__correction_8h.html#ac1777d384635f7d4edd80b6b32a7000a", null ]
     ] ],
-    [ "avi_isp_dead_pixel_correction_cfa.__unnamed89__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__cfa_8____unnamed89____", [
+    [ "avi_isp_dead_pixel_correction_cfa.__unnamed88__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__cfa_8____unnamed88____", [
       [ "cfa", "avi__isp__dead__pixel__correction_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_dead_pixel_correction_bypass.__unnamed91__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__bypass_8____unnamed91____", [
+    [ "avi_isp_dead_pixel_correction_bypass.__unnamed90__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__bypass_8____unnamed90____", [
       [ "auto_detection", "avi__isp__dead__pixel__correction_8h.html#a4d7c69c8250fd210ecbfa6ddfe264385", null ],
       [ "list", "avi__isp__dead__pixel__correction_8h.html#a10ae9fc7d453b0dd525d0edf2ede7961", null ],
       [ "rgrim", "avi__isp__dead__pixel__correction_8h.html#a2937acf9adbf9a0daa63ef9b38c08b04", null ]
     ] ],
-    [ "avi_isp_dead_pixel_correction_threshold.__unnamed93__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__threshold_8____unnamed93____", [
+    [ "avi_isp_dead_pixel_correction_threshold.__unnamed92__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__threshold_8____unnamed92____", [
       [ "threshold", "avi__isp__dead__pixel__correction_8h.html#af0598264a691a8f62272aca0e79af374", null ]
     ] ],
-    [ "avi_isp_dead_pixel_correction_rgrim_conf.__unnamed95__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__rgrim__conf_8____unnamed95____", [
+    [ "avi_isp_dead_pixel_correction_rgrim_conf.__unnamed94__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__rgrim__conf_8____unnamed94____", [
       [ "tcon", "avi__isp__dead__pixel__correction_8h.html#aa18f8339297ecdb8dd3a0a4fc6d94b01", null ],
       [ "tim_1", "avi__isp__dead__pixel__correction_8h.html#ad7b2ad3f22bc06e31d88682c3307b781", null ],
       [ "tim_2", "avi__isp__dead__pixel__correction_8h.html#aec8db2e6694425bef8ca044f7c6c89d6", null ],
       [ "tsat", "avi__isp__dead__pixel__correction_8h.html#a8567e16281684ab19e73415690d50dbd", null ]
     ] ],
-    [ "avi_isp_dead_pixel_correction_rgrim_gain.__unnamed97__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__rgrim__gain_8____unnamed97____", [
+    [ "avi_isp_dead_pixel_correction_rgrim_gain.__unnamed96__", "avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__rgrim__gain_8____unnamed96____", [
       [ "gain", "avi__isp__dead__pixel__correction_8h.html#ad2d74b47b149d8090871a2f33e80809b", null ]
     ] ],
     [ "AVI_ISP_DEAD_PIXEL_CORRECTION_BYPASS", "avi__isp__dead__pixel__correction_8h.html#a8d627da7092d4e8e642a263691c57011", null ],

@@ -8,7 +8,6 @@ var topics =
     [ "Config", "group__config.html", "group__config" ],
     [ "HAL_CONF", "group__HAL__CONF.html", "group__HAL__CONF" ],
     [ "SHELL", "group__SHELL.html", "group__SHELL" ],
-    [ "STM32 architecture", "group__stm32__arch.html", "group__stm32__arch" ],
     [ "Math", "group__math.html", "group__math" ],
     [ "Chprintf", "group__chprintf.html", "group__chprintf" ]
 ];

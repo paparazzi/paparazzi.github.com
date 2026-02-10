@@ -64,54 +64,54 @@ var avi__isp__lens__shading__correction_8h =
     [ "avi_isp_lens_shading_correction_blue_coeff_mem_regs", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem__regs", [
       [ "blue_coeff_mem", "avi__isp__lens__shading__correction_8h.html#ae55432d163a56345109d13dc209c8654", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_bayer_cfa.__unnamed175__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__bayer__cfa_8____unnamed175____", [
+    [ "avi_isp_lens_shading_correction_bayer_cfa.__unnamed174__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__bayer__cfa_8____unnamed174____", [
       [ "cfa", "avi__isp__lens__shading__correction_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_offset_x_y.__unnamed177__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__offset__x__y_8____unnamed177____", [
+    [ "avi_isp_lens_shading_correction_offset_x_y.__unnamed176__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__offset__x__y_8____unnamed176____", [
       [ "__pad0__", "avi__isp__lens__shading__correction_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "offset_x", "avi__isp__lens__shading__correction_8h.html#ae3e1668916d0e401d35eee4baa3badc0", null ],
       [ "offset_y", "avi__isp__lens__shading__correction_8h.html#a41c0c79933713cf884d2310f43da1bda", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_cell_id_x_y.__unnamed179__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__id__x__y_8____unnamed179____", [
+    [ "avi_isp_lens_shading_correction_cell_id_x_y.__unnamed178__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__id__x__y_8____unnamed178____", [
       [ "__pad0__", "avi__isp__lens__shading__correction_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "cell_id_x", "avi__isp__lens__shading__correction_8h.html#a2bf00e72c54023ef1c64160ee444a113", null ],
       [ "cell_id_y", "avi__isp__lens__shading__correction_8h.html#a08a5a83819d2bb62d0ba0709abd7ca18", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_cell_w.__unnamed181__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__w_8____unnamed181____", [
+    [ "avi_isp_lens_shading_correction_cell_w.__unnamed180__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__w_8____unnamed180____", [
       [ "cell_w", "avi__isp__lens__shading__correction_8h.html#a351cb376dd0fda6029cca915022ff5f2", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_cell_h.__unnamed183__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h_8____unnamed183____", [
+    [ "avi_isp_lens_shading_correction_cell_h.__unnamed182__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h_8____unnamed182____", [
       [ "cell_h", "avi__isp__lens__shading__correction_8h.html#ab9df2df985854549d7474a3442133c97", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_cell_w_inv.__unnamed185__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__w__inv_8____unnamed185____", [
+    [ "avi_isp_lens_shading_correction_cell_w_inv.__unnamed184__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__w__inv_8____unnamed184____", [
       [ "w_inv", "avi__isp__lens__shading__correction_8h.html#a4693368805b9831d1dc07f6eada9c53a", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_cell_h_inv.__unnamed187__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h__inv_8____unnamed187____", [
+    [ "avi_isp_lens_shading_correction_cell_h_inv.__unnamed186__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h__inv_8____unnamed186____", [
       [ "h_inv", "avi__isp__lens__shading__correction_8h.html#a3173ffd395779d27e09a52567d4da50f", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_alpha.__unnamed189__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__alpha_8____unnamed189____", [
+    [ "avi_isp_lens_shading_correction_alpha.__unnamed188__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__alpha_8____unnamed188____", [
       [ "alpha", "avi__isp__lens__shading__correction_8h.html#a2c1743a391305fbf367df8e4f069f9f9", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_beta.__unnamed191__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__beta_8____unnamed191____", [
+    [ "avi_isp_lens_shading_correction_beta.__unnamed190__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__beta_8____unnamed190____", [
       [ "beta", "avi__isp__lens__shading__correction_8h.html#a987bcab01b929eb2c07877b224215c92", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_threshold.__unnamed193__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__threshold_8____unnamed193____", [
+    [ "avi_isp_lens_shading_correction_threshold.__unnamed192__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__threshold_8____unnamed192____", [
       [ "threshold_b", "avi__isp__lens__shading__correction_8h.html#a83c90b86de27d544389f8be69569137b", null ],
       [ "threshold_g", "avi__isp__lens__shading__correction_8h.html#a17955c1ff046296bcd3d02da77e13fcf", null ],
       [ "threshold_r", "avi__isp__lens__shading__correction_8h.html#a8659d95e06921daa6dd5f1a00e1ecc7e", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_gain.__unnamed195__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__gain_8____unnamed195____", [
+    [ "avi_isp_lens_shading_correction_gain.__unnamed194__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__gain_8____unnamed194____", [
       [ "gain_b", "avi__isp__lens__shading__correction_8h.html#a6c0f17cdae544f5daf6d812d432fec1f", null ],
       [ "gain_g", "avi__isp__lens__shading__correction_8h.html#a6958f802f1b3d60a0fc1001bfb79d3c5", null ],
       [ "gain_r", "avi__isp__lens__shading__correction_8h.html#a10310dca968cc80cc38f71b5d1847ebd", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_red_coeff_mem.__unnamed197__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__red__coeff__mem_8____unnamed197____", [
+    [ "avi_isp_lens_shading_correction_red_coeff_mem.__unnamed196__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__red__coeff__mem_8____unnamed196____", [
       [ "r_coeff_value", "avi__isp__lens__shading__correction_8h.html#a276d315747890d82115e14e92750d396", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_green_coeff_mem.__unnamed199__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__green__coeff__mem_8____unnamed199____", [
+    [ "avi_isp_lens_shading_correction_green_coeff_mem.__unnamed198__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__green__coeff__mem_8____unnamed198____", [
       [ "g_coeff_value", "avi__isp__lens__shading__correction_8h.html#ad8b2b36fa8a81cd018b930670b742c92", null ]
     ] ],
-    [ "avi_isp_lens_shading_correction_blue_coeff_mem.__unnamed201__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem_8____unnamed201____", [
+    [ "avi_isp_lens_shading_correction_blue_coeff_mem.__unnamed200__", "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem_8____unnamed200____", [
       [ "b_coeff_value", "avi__isp__lens__shading__correction_8h.html#a29325c02de6db055189e3e7983035ac8", null ]
     ] ],
     [ "AVI_ISP_LENS_SHADING_CORRECTION_ALPHA", "avi__isp__lens__shading__correction_8h.html#ae5cb540a6e21170c60296fc489664cac", null ],

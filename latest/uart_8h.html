@@ -524,7 +524,7 @@ tx_running</td>
 <area shape="rect" title=" " alt="" coords="365,179,476,204"/>
 <area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="239,179,317,204"/>
 <area shape="poly" title=" " alt="" coords="352,194,318,194,318,189,352,189"/>
-<area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,31"/>
+<area shape="rect" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,31"/>
 <area shape="poly" title=" " alt="" coords="264,167,235,107,214,74,189,44,175,33,178,29,193,40,218,71,240,104,269,165"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,55,191,80"/>
 <area shape="poly" title=" " alt="" coords="258,169,227,132,189,93,173,82,176,78,192,89,231,128,262,166"/>
@@ -1036,7 +1036,7 @@ tx_running</td>
 
 <p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00280">280</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="uart_8h_source.html#l00085">uart_periph::baudrate</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="uart_8h_source.html#l00083">uart_periph::reg_addr</a>, <a class="el" href="serial__port_8c_source.html#l00210">serial_port_set_baudrate()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00253">uart_periph_open()</a>.</p>
+<p class="reference">References <a class="el" href="uart_8h_source.html#l00085">uart_periph::baudrate</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="uart_8h_source.html#l00083">uart_periph::reg_addr</a>, <a class="el" href="serial__port_8c_source.html#l00210">serial_port_set_baudrate()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00253">uart_periph_open()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__sbus_8c_source.html#l00051">actuators_sbus_init()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00255">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00478">gps_ubx_ucenter_configure()</a>, <a class="el" href="hott__common_8c_source.html#l00042">hott_common_init()</a>, <a class="el" href="px4__flash_8c_source.html#l00088">px4flash_event()</a>, <a class="el" href="sbus__common_8c_source.html#l00074">sbus_common_init()</a>, and <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1149,7 +1149,7 @@ tx_running</td>
 
 <p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">296</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="uart_8h_source.html#l00083">uart_periph::reg_addr</a>, <a class="el" href="serial__port_8c_source.html#l00224">serial_port_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00049">UBITS_7</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, <a class="el" href="serial__port_8c_source.html#l00056">UPARITY_ODD</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="uart_8h_source.html#l00083">uart_periph::reg_addr</a>, and <a class="el" href="serial__port_8c_source.html#l00224">serial_port_set_bits_stop_parity()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__sbus_8c_source.html#l00051">actuators_sbus_init()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l01095">high_speed_logger_direct_memory_init()</a>, <a class="el" href="hott__common_8c_source.html#l00042">hott_common_init()</a>, and <a class="el" href="sbus__common_8c_source.html#l00074">sbus_common_init()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1236,10 +1236,6 @@ tx_running</td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00092">92</a> of file <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sonar__bebop_8c_source.html#l00065">mode</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="hott_2hott_8c_source.html#l00117">hott_enable_receiver()</a>, and <a class="el" href="hott_2hott_8c_source.html#l00111">hott_enable_transmitter()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1409,7 +1405,7 @@ tx_running</td>
 
 <p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00306">306</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="uart_8h_source.html#l00083">uart_periph::reg_addr</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00052">TRACE</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00034">UART_TX_BUFFER_SIZE</a>.</p>
+<p class="reference">References <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="uart_8h_source.html#l00083">uart_periph::reg_addr</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00052">TRACE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="actuators__t4__uart_8c_source.html#l00166">data_actuators_t4_out()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="switch__uart_8c_source.html#l00044">drop_ball()</a>, <a class="el" href="esc32_8c_source.html#l00262">esc32_periodic()</a>, <a class="el" href="esc32_8c_source.html#l00071">esc32_send()</a>, <a class="el" href="actuators__faulhaber_8c_source.html#l00076">faulhaber_send_command()</a>, <a class="el" href="gps__piksi_8c_source.html#l00396">gps_piksi_write()</a>, <a class="el" href="hott_2hott_8c_source.html#l00169">hott_send_telemetry_data()</a>, <a class="el" href="jevois_8c_source.html#l00412">jevois_send_string()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00738">send_buffer_to_uart()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>, and <a class="el" href="uart_8c_source.html#l00161">uart_put_buffer()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1573,7 +1569,7 @@ tx_running</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="uart_8h.html">uart.h</a></li>
-    <li class="footer">Generated on Sun Feb 8 2026 10:03:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Feb 10 2026 22:08:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

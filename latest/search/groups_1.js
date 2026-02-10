@@ -9,8 +9,7 @@ var searchData=
   ['and_20airspeed_20representations_6',['Wind- and airspeed representations',['../group__state__wind__airspeed.html',1,'']]],
   ['and_20input_20types_7',['Input filter specific flags and input types',['../group__input__filter.html',1,'']]],
   ['angular_20rate_20representations_8',['Angular rate representations',['../group__state__rate.html',1,'']]],
-  ['architecture_9',['STM32 architecture',['../group__stm32__arch.html',1,'']]],
-  ['atmosphere_20utilities_10',['International Standard Atmosphere utilities',['../group__math__isa.html',1,'']]],
-  ['attitude_20representations_11',['Attitude representations',['../group__state__attitude.html',1,'']]],
-  ['availability_20representations_12',['Aircraft data availability representations',['../group__ac__info.html',1,'']]]
+  ['atmosphere_20utilities_9',['International Standard Atmosphere utilities',['../group__math__isa.html',1,'']]],
+  ['attitude_20representations_10',['Attitude representations',['../group__state__attitude.html',1,'']]],
+  ['availability_20representations_11',['Aircraft data availability representations',['../group__ac__info.html',1,'']]]
 ];

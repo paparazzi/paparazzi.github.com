@@ -1,6 +1,6 @@
 var rm3100_8h_structRm3100 =
 [
-    [ "data", "rm3100_8h.html#a20d7b4e3609e89f383ef9caf189b42ce", null ],
+    [ "data", "rm3100_8h.html#a07197129939f5829217b6cb4c0c2b17c", null ],
     [ "data_available", "rm3100_8h.html#aad83cf4f139b4abb357a0a38b33b8925", null ],
     [ "data_rate", "rm3100_8h.html#af03ce01c4474d95b4fe6e4f623f258ef", null ],
     [ "i2c_p", "rm3100_8h.html#a8c37630900732cc0f43268ef08d2b965", null ],

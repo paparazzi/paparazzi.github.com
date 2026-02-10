@@ -26,12 +26,11 @@ var searchData=
   ['spitransactionstatus_23',['SPITransactionStatus',['../group__spi.html#ga52e70c55efc6a9b04903157a0965baac',1,'spi.h']]],
   ['sst25vfxxxxstatus_24',['SST25VFxxxxStatus',['../sst25vfxxxx_8h.html#a0b6dcac383421abf541fea1847fbc3da',1,'sst25vfxxxx.h']]],
   ['stage_5ft_25',['stage_t',['../gec_8h.html#a17026bec7f574bca918d5f81939429bc',1,'gec.h']]],
-  ['stmi2csubtransactionstatus_26',['STMI2CSubTransactionStatus',['../stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8',1,'i2c_arch.c']]],
-  ['sts3032_5frx_5fstate_27',['sts3032_rx_state',['../actuators__sts3032_8h.html#aeb9b07c4c267f4c318cad10183203586',1,'actuators_sts3032.h']]],
-  ['sts_5ferror_5ft_28',['sts_error_t',['../gec_8h.html#a9bb5b7264af11868fbe186511e439e9d',1,'gec.h']]],
-  ['superbitrfstatus_29',['SuperbitRFStatus',['../modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3',1,'superbitrf.h']]],
-  ['survey_5forientation_5ft_30',['survey_orientation_t',['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t:&#160;nav_survey_rectangle.h'],['../nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t:&#160;nav_survey_rectangle_rotorcraft.h']]],
-  ['surveystage_31',['SurveyStage',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6',1,'nav_survey_polygon.h']]],
-  ['surveystatus_32',['surveystatus',['../nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_hybrid.c'],['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_osam.c'],['../nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_rotorcraft.c']]],
-  ['syslink_5fstate_5ft_33',['syslink_state_t',['../syslink_8h.html#ab5ee859a8212974e338863022272b30c',1,'syslink.h']]]
+  ['sts3032_5frx_5fstate_26',['sts3032_rx_state',['../actuators__sts3032_8h.html#aeb9b07c4c267f4c318cad10183203586',1,'actuators_sts3032.h']]],
+  ['sts_5ferror_5ft_27',['sts_error_t',['../gec_8h.html#a9bb5b7264af11868fbe186511e439e9d',1,'gec.h']]],
+  ['superbitrfstatus_28',['SuperbitRFStatus',['../modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3',1,'superbitrf.h']]],
+  ['survey_5forientation_5ft_29',['survey_orientation_t',['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t:&#160;nav_survey_rectangle.h'],['../nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t:&#160;nav_survey_rectangle_rotorcraft.h']]],
+  ['surveystage_30',['SurveyStage',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6',1,'nav_survey_polygon.h']]],
+  ['surveystatus_31',['surveystatus',['../nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_hybrid.c'],['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_osam.c'],['../nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_rotorcraft.c']]],
+  ['syslink_5fstate_5ft_32',['syslink_state_t',['../syslink_8h.html#ab5ee859a8212974e338863022272b30c',1,'syslink.h']]]
 ];

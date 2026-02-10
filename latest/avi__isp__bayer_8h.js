@@ -14,13 +14,13 @@ var avi__isp__bayer_8h =
       [ "threshold_1", "avi__isp__bayer_8h.html#ab08c75e75ec787ee5d48d6c58e0437c0", null ],
       [ "threshold_2", "avi__isp__bayer_8h.html#a5f005642b72227eee88fb547759d1c8f", null ]
     ] ],
-    [ "avi_isp_bayer_cfa.__unnamed15__", "avi__isp__bayer_8h.html#structavi__isp__bayer__cfa_8____unnamed15____", [
+    [ "avi_isp_bayer_cfa.__unnamed14__", "avi__isp__bayer_8h.html#structavi__isp__bayer__cfa_8____unnamed14____", [
       [ "cfa", "avi__isp__bayer_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_bayer_threshold_1.__unnamed17__", "avi__isp__bayer_8h.html#structavi__isp__bayer__threshold__1_8____unnamed17____", [
+    [ "avi_isp_bayer_threshold_1.__unnamed16__", "avi__isp__bayer_8h.html#structavi__isp__bayer__threshold__1_8____unnamed16____", [
       [ "threshold_1", "avi__isp__bayer_8h.html#ac67aed80f47698dff6c57cbf4b145c6d", null ]
     ] ],
-    [ "avi_isp_bayer_threshold_2.__unnamed19__", "avi__isp__bayer_8h.html#structavi__isp__bayer__threshold__2_8____unnamed19____", [
+    [ "avi_isp_bayer_threshold_2.__unnamed18__", "avi__isp__bayer_8h.html#structavi__isp__bayer__threshold__2_8____unnamed18____", [
       [ "threshold_2", "avi__isp__bayer_8h.html#a4c5a153a84412d1bcd8e9f631b111bef", null ]
     ] ],
     [ "AVI_ISP_BAYER_CFA", "avi__isp__bayer_8h.html#a3f6b797a2bac9003ae867028d3de64a8", null ],

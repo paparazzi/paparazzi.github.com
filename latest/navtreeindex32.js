@@ -1,13 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"cc2500__rx__spi_8c.html#ac8f85a509eca65748f0cd6195858b7f2":[12,0,1,0,6,56,0,14,4],
-"cc2500__rx__spi_8c.html#af7042d849711c77eddbe29bbb376b559":[12,0,1,0,6,56,0,14,5],
-"cc2500__rx__spi_8c.html#af73ceb2662c274b493a06c67fc3ab7ae":[12,0,1,0,6,56,0,14,8],
-"cc2500__rx__spi_8c_source.html":[12,0,1,0,6,56,0,14],
-"cc2500__rx__spi_8h.html":[12,0,1,0,6,56,0,15],
-"cc2500__rx__spi_8h.html#a1a11aed6c7fd79d1d6c2f95f3760ad96":[12,0,1,0,6,56,0,15,3],
-"cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ec":[12,0,1,0,6,56,0,15,7],
-"cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca07b557a2dff71dd867431865b4ee15eb":[12,0,1,0,6,56,0,15,7,7],
 "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca0a06c79697b2f96a76cc298cdf88bf06":[12,0,1,0,6,56,0,15,7,11],
 "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca11db65707cb418a20b01b5816e5904e5":[12,0,1,0,6,56,0,15,7,12],
 "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca403788072c738b7321f3532f0534ec11":[12,0,1,0,6,56,0,15,7,14],
@@ -249,5 +241,13 @@ var NAVTREEINDEX32 =
 "cf__deck__multi__ranger_8c.html#a580f0b30e559460505edfb2c90dd8e8f":[12,0,1,0,6,57,0,17],
 "cf__deck__multi__ranger_8c.html#a59f8761bcd4e6abcfc6431d8e9c4c34b":[12,0,1,0,6,57,0,8],
 "cf__deck__multi__ranger_8c.html#a5d1bf2f805f4f55f607450512a4bdbb9":[12,0,1,0,6,57,0,0,1],
-"cf__deck__multi__ranger_8c.html#a62ed5cc0798a3630335ca9f8fdee59bf":[12,0,1,0,6,57,0,0,4]
+"cf__deck__multi__ranger_8c.html#a62ed5cc0798a3630335ca9f8fdee59bf":[12,0,1,0,6,57,0,0,4],
+"cf__deck__multi__ranger_8c.html#a63ef1a1fb2184ea792b37e6982099348":[12,0,1,0,6,57,0,15],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54d":[12,0,1,0,6,57,0,14],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54da087517239121a184f06dd8c4944b3cf3":[12,0,1,0,6,57,0,14,4],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54da1129a38d4604dad0a7ca0d6e26a006c7":[12,0,1,0,6,57,0,14,2],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54da1c3c1a5195429a10d46308b1373da642":[12,0,1,0,6,57,0,14,5],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54da51eb48bb835324e52f2d54f6e0a01f6b":[12,0,1,0,6,57,0,14,9],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54da5490a8338a752affa5201c2baee6b692":[12,0,1,0,6,57,0,14,1],
+"cf__deck__multi__ranger_8c.html#a69deb348a1af2f5f3db10b5ace9cb54da5adf6c61d783b49b558b76dea52fb9d5":[12,0,1,0,6,57,0,14,0]
 };

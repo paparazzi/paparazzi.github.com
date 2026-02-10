@@ -12,7 +12,7 @@ var searchData=
   ['rotation_5fhistory_5fring_5fbuffer_5ft_9',['rotation_history_ring_buffer_t',['../pose__history_8c.html#structrotation__history__ring__buffer__t',1,'']]],
   ['rotorcraftnavigation_10',['RotorcraftNavigation',['../rotorcraft_2navigation_8h.html#structRotorcraftNavigation',1,'']]],
   ['rotwing_5fbitmask_5ft_11',['rotwing_bitmask_t',['../rotwing__state_8h.html#unionrotwing__bitmask__t',1,'']]],
-  ['rotwing_5fbitmask_5ft_2e_5f_5funnamed311_5f_5f_12',['rotwing_bitmask_t.__unnamed311__',['../rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed311____',1,'']]],
+  ['rotwing_5fbitmask_5ft_2e_5f_5funnamed310_5f_5f_12',['rotwing_bitmask_t.__unnamed310__',['../rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed310____',1,'']]],
   ['rotwing_5feff_5fsched_5fparam_5ft_13',['rotwing_eff_sched_param_t',['../eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__param__t',1,'']]],
   ['rotwing_5feff_5fsched_5fvar_5ft_14',['rotwing_eff_sched_var_t',['../eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__var__t',1,'']]],
   ['rotwing_5fstate_5ft_15',['rotwing_state_t',['../rotwing__state_8h.html#structrotwing__state__t',1,'']]],

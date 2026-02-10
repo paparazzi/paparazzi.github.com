@@ -1,13 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"bebop_8h_source.html":[12,0,1,0,1,25],
-"bebop__ae__awb_8c.html":[12,0,1,0,6,12,4],
-"bebop__ae__awb_8c.html#a01535af7e50005fd099fe06f94865e54":[12,0,1,0,6,12,4,21],
-"bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa":[12,0,1,0,6,12,4,10],
-"bebop__ae__awb_8c.html#a0965587f24710502521831097dd67912":[12,0,1,0,6,12,4,3],
-"bebop__ae__awb_8c.html#a22ccf03b85fe69f13df21a4c7b1006dc":[12,0,1,0,6,12,4,8],
-"bebop__ae__awb_8c.html#a284b4e16ba6bed18cfbfa94a3ebd5537":[12,0,1,0,6,12,4,0],
-"bebop__ae__awb_8c.html#a29ada1a1865ced6069ee14d8160b9c68":[12,0,1,0,6,12,4,23],
 "bebop__ae__awb_8c.html#a3997f925d1f521c066239fcd5e56aaff":[12,0,1,0,6,12,4,5],
 "bebop__ae__awb_8c.html#a431070d74fa5294c177086edbf30553b":[12,0,1,0,6,12,4,16],
 "bebop__ae__awb_8c.html#a43c8b73a010780ce9c15f74c5acea122":[12,0,1,0,6,12,4,17],
@@ -249,5 +241,13 @@ var NAVTREEINDEX23 =
 "betafpv_2aiof7_2v2_2board_8h.html#a65024f5fbef84f59f63293a9d9c72684":[12,0,1,0,1,3,0,0,0,146],
 "betafpv_2aiof7_2v2_2board_8h.html#a6539f358a8c64a016c133dbdac9cec98":[12,0,1,0,1,3,0,0,0,79],
 "betafpv_2aiof7_2v2_2board_8h.html#a661e8cfbebd6d79c68c6ddc27ae01931":[12,0,1,0,1,3,0,0,0,129],
-"betafpv_2aiof7_2v2_2board_8h.html#a6629cba408fe47aedfca8ded6845c1ff":[12,0,1,0,1,3,0,0,0,8]
+"betafpv_2aiof7_2v2_2board_8h.html#a6629cba408fe47aedfca8ded6845c1ff":[12,0,1,0,1,3,0,0,0,8],
+"betafpv_2aiof7_2v2_2board_8h.html#a66a89dd26c96c9808c4610caa08ba2e4":[12,0,1,0,1,3,0,0,0,382],
+"betafpv_2aiof7_2v2_2board_8h.html#a67086b86df1a18094ed9c4fe1b0badb8":[12,0,1,0,1,3,0,0,0,246],
+"betafpv_2aiof7_2v2_2board_8h.html#a673abfe82b092bc20fb3ca8ad800bd2c":[12,0,1,0,1,3,0,0,0,115],
+"betafpv_2aiof7_2v2_2board_8h.html#a67eac2b1434cea46ec00fdaad117cd6d":[12,0,1,0,1,3,0,0,0,392],
+"betafpv_2aiof7_2v2_2board_8h.html#a6a3ba2e1b8b5a5b5b0bb042c176c77e6":[12,0,1,0,1,3,0,0,0,261],
+"betafpv_2aiof7_2v2_2board_8h.html#a6a6cd142a0c0cde9125352343a8e6005":[12,0,1,0,1,3,0,0,0,393],
+"betafpv_2aiof7_2v2_2board_8h.html#a6a8f26ac753d5994952b6e4d5c4e8656":[12,0,1,0,1,3,0,0,0,289],
+"betafpv_2aiof7_2v2_2board_8h.html#a6aa1810521655aff39e0c7874721d99a":[12,0,1,0,1,3,0,0,0,374]
 };

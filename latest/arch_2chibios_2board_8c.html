@@ -128,7 +128,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a80165e560c06aa6ebd909115c6b9221a" id="r_a80165e560c06aa6ebd909115c6b9221a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arch_2chibios_2board_8c.html#a80165e560c06aa6ebd909115c6b9221a">gpio_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">stm32_gpio_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">gpiop</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="arch_2chibios_2board_8c.html#structgpio__setup__t">gpio_setup_t</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#a79fece8dc710f4eaf00c3f026ab2e4ae">config</a>)</td></tr>
+<tr class="memitem:a80165e560c06aa6ebd909115c6b9221a" id="r_a80165e560c06aa6ebd909115c6b9221a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arch_2chibios_2board_8c.html#a80165e560c06aa6ebd909115c6b9221a">gpio_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">stm32_gpio_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">gpiop</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="arch_2chibios_2board_8c.html#structgpio__setup__t">gpio_setup_t</a> *config)</td></tr>
 <tr class="separator:a80165e560c06aa6ebd909115c6b9221a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6642d60b72ede530ac245de7b42c1322" id="r_a6642d60b72ede530ac245de7b42c1322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arch_2chibios_2board_8c.html#a6642d60b72ede530ac245de7b42c1322">stm32_gpio_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a6642d60b72ede530ac245de7b42c1322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,7 +326,7 @@ pupdr</td>
 
 <p class="definition">Definition at line <a class="el" href="arch_2chibios_2board_8c_source.html#l00180">180</a> of file <a class="el" href="arch_2chibios_2board_8c_source.html">board.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="arch_2chibios_2board_8c_source.html#l00062">gpio_setup_t::afrh</a>, <a class="el" href="arch_2chibios_2board_8c_source.html#l00061">gpio_setup_t::afrl</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="arch_2chibios_2board_8c_source.html#l00056">gpio_setup_t::moder</a>, <a class="el" href="arch_2chibios_2board_8c_source.html#l00060">gpio_setup_t::odr</a>, <a class="el" href="arch_2chibios_2board_8c_source.html#l00058">gpio_setup_t::ospeedr</a>, <a class="el" href="arch_2chibios_2board_8c_source.html#l00057">gpio_setup_t::otyper</a>, and <a class="el" href="arch_2chibios_2board_8c_source.html#l00059">gpio_setup_t::pupdr</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="arch_2chibios_2board_8c_source.html#l00192">stm32_gpio_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -437,7 +437,7 @@ pupdr</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="arch_2chibios_2board_8c.html">board.c</a></li>
-    <li class="footer">Generated on Sun Feb 8 2026 10:03:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Feb 10 2026 22:08:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

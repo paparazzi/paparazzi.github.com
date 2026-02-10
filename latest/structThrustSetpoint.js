@@ -1,6 +1,6 @@
 var structThrustSetpoint =
 [
-    [ "format", "structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784", null ],
-    [ "sp", "structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82", null ],
-    [ "type", "structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb", null ]
+    [ "format", "structThrustSetpoint.html#a8735a49250e839e84386d58203819121", null ],
+    [ "sp", "structThrustSetpoint.html#ad7e7ddf1d2947a62d07749537c05b4f0", null ],
+    [ "type", "structThrustSetpoint.html#ae83c969a7281ebf3d05835306a2fc541", null ]
 ];

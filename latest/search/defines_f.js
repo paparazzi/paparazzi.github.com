@@ -98,7 +98,7 @@ var searchData=
   ['omega_5fp_95',['OMEGA_P',['../stabilization__attitude__ref__euler__int_8c.html#a42c84cf656f1b5fb7c1e83a3da90fc89',1,'stabilization_attitude_ref_euler_int.c']]],
   ['omega_5fq_96',['OMEGA_Q',['../stabilization__attitude__ref__euler__int_8c.html#afb103afd5c597aa1a40e8eb331ee1568',1,'stabilization_attitude_ref_euler_int.c']]],
   ['omega_5fr_97',['OMEGA_R',['../stabilization__attitude__ref__euler__int_8c.html#a3ea4fc9c50e7b597184a93bc8e7a5248',1,'stabilization_attitude_ref_euler_int.c']]],
-  ['one_5fmhz_5fclk_98',['one_mhz_clk',['../chibios_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65',1,'ONE_MHZ_CLK:&#160;pwm_input_arch.c'],['../stm32_2modules_2radio__control_2ppm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65',1,'ONE_MHZ_CLK:&#160;ppm_arch.c'],['../actuators__shared__arch_8h.html#a644a06e4166982dcb58fbd25d65f1f65',1,'ONE_MHZ_CLK:&#160;actuators_shared_arch.h'],['../stm32_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65',1,'ONE_MHZ_CLK:&#160;pwm_input_arch.c']]],
+  ['one_5fmhz_5fclk_98',['ONE_MHZ_CLK',['../pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65',1,'pwm_input_arch.c']]],
   ['one_5fmin_99',['ONE_MIN',['../pprz__trig__int_8h.html#a95b747c5c747d13e65890f1307801454',1,'pprz_trig_int.h']]],
   ['oneloop_5fandi_5fairspeed_5fswitch_5fthreshold_100',['ONELOOP_ANDI_AIRSPEED_SWITCH_THRESHOLD',['../oneloop__andi_8c.html#aafe6636903f09fe5efd24323f44b4708',1,'oneloop_andi.c']]],
   ['oneloop_5fandi_5fdebug_5fmode_101',['ONELOOP_ANDI_DEBUG_MODE',['../oneloop__andi_8c.html#a56739f39cf9a6f9fcc6eee7adb7fe72c',1,'oneloop_andi.c']]],

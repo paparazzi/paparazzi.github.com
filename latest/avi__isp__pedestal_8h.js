@@ -22,19 +22,19 @@ var avi__isp__pedestal_8h =
       [ "sub_gr", "avi__isp__pedestal_8h.html#a9e3cf2fd10bc1c19922756d6a75eab7e", null ],
       [ "sub_r", "avi__isp__pedestal_8h.html#a14096cc4b70cd95bd824469ba2bd80fd", null ]
     ] ],
-    [ "avi_isp_pedestal_cfa.__unnamed203__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__cfa_8____unnamed203____", [
+    [ "avi_isp_pedestal_cfa.__unnamed202__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__cfa_8____unnamed202____", [
       [ "cfa", "avi__isp__pedestal_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_pedestal_sub_r.__unnamed205__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__r_8____unnamed205____", [
+    [ "avi_isp_pedestal_sub_r.__unnamed204__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__r_8____unnamed204____", [
       [ "sub_r", "avi__isp__pedestal_8h.html#a9ec5c6dabacc03599799f35c377f5ab7", null ]
     ] ],
-    [ "avi_isp_pedestal_sub_gb.__unnamed207__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__gb_8____unnamed207____", [
+    [ "avi_isp_pedestal_sub_gb.__unnamed206__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__gb_8____unnamed206____", [
       [ "sub_gb", "avi__isp__pedestal_8h.html#a146d51fd59d46e90ac5db73da08309ad", null ]
     ] ],
-    [ "avi_isp_pedestal_sub_gr.__unnamed209__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__gr_8____unnamed209____", [
+    [ "avi_isp_pedestal_sub_gr.__unnamed208__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__gr_8____unnamed208____", [
       [ "sub_gr", "avi__isp__pedestal_8h.html#a2c5f4c9e6e1bad2942bb32940ebfd9bd", null ]
     ] ],
-    [ "avi_isp_pedestal_sub_b.__unnamed211__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__b_8____unnamed211____", [
+    [ "avi_isp_pedestal_sub_b.__unnamed210__", "avi__isp__pedestal_8h.html#structavi__isp__pedestal__sub__b_8____unnamed210____", [
       [ "sub_b", "avi__isp__pedestal_8h.html#aac6b6d927abd47988618af8162067cd5", null ]
     ] ],
     [ "AVI_ISP_PEDESTAL_CFA", "avi__isp__pedestal_8h.html#acd6b85db8ff825d8e8930ca29c91f214", null ],

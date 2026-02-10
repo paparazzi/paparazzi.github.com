@@ -24,18 +24,18 @@ var avi__isp__gamma__corrector_8h =
     [ "avi_isp_gamma_corrector_bv_lut_regs", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__bv__lut__regs", [
       [ "bv_lut", "avi__isp__gamma__corrector_8h.html#a9ae08e3b70982ead619c6c1684e2a20d", null ]
     ] ],
-    [ "avi_isp_gamma_corrector_conf.__unnamed139__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__conf_8____unnamed139____", [
+    [ "avi_isp_gamma_corrector_conf.__unnamed138__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__conf_8____unnamed138____", [
       [ "bypass", "avi__isp__gamma__corrector_8h.html#ade918f6ea2e9479ed9d81a8147dbae3d", null ],
       [ "comp_width", "avi__isp__gamma__corrector_8h.html#ad78529e662a06f10c0883144ecd2bbfc", null ],
       [ "palette", "avi__isp__gamma__corrector_8h.html#a5ca5a8d02077b7f6a0da48bda450f755", null ]
     ] ],
-    [ "avi_isp_gamma_corrector_ry_lut.__unnamed141__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut_8____unnamed141____", [
+    [ "avi_isp_gamma_corrector_ry_lut.__unnamed140__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut_8____unnamed140____", [
       [ "ry_value", "avi__isp__gamma__corrector_8h.html#ab0c093bbc4ed63212c25305920a11318", null ]
     ] ],
-    [ "avi_isp_gamma_corrector_gu_lut.__unnamed143__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__gu__lut_8____unnamed143____", [
+    [ "avi_isp_gamma_corrector_gu_lut.__unnamed142__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__gu__lut_8____unnamed142____", [
       [ "gu_value", "avi__isp__gamma__corrector_8h.html#abf487a0c4905b53b6d91972e03359d4a", null ]
     ] ],
-    [ "avi_isp_gamma_corrector_bv_lut.__unnamed145__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__bv__lut_8____unnamed145____", [
+    [ "avi_isp_gamma_corrector_bv_lut.__unnamed144__", "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__bv__lut_8____unnamed144____", [
       [ "bv_value", "avi__isp__gamma__corrector_8h.html#af8b61118330e804a9c28726eed26d2b3", null ]
     ] ],
     [ "AVI_ISP_GAMMA_CORRECTOR_BV_LUT", "avi__isp__gamma__corrector_8h.html#a5dd0def6cdf38f24fc2cb31692eb4e4d", null ],

@@ -6,7 +6,7 @@ var obm__cyclone_8c =
     [ "CeMatrix", "obm__cyclone_8c.html#unionCeMatrix", [
       [ "data", "obm__cyclone_8c.html#a45cfdc8af2aadd65f9b68e0bdbfec4da", null ]
     ] ],
-    [ "CycloneCoefficients.__unnamed286__", "obm__cyclone_8c.html#structCycloneCoefficients_8____unnamed286____", [
+    [ "CycloneCoefficients.__unnamed285__", "obm__cyclone_8c.html#structCycloneCoefficients_8____unnamed285____", [
       [ "fx_motor_squared", "obm__cyclone_8c.html#a81b45560fcc59a075a830c713b3e9dff", null ],
       [ "fx_speed_forward", "obm__cyclone_8c.html#a2ec9df0b5d5681382477ce9f80014303", null ],
       [ "fy_speed_lateral", "obm__cyclone_8c.html#a1f7e52047976cc76bc187770f9e14861", null ],
@@ -30,7 +30,7 @@ var obm__cyclone_8c =
       [ "mz_speed_lateral", "obm__cyclone_8c.html#a51d7b802812e6cff536b306546ae6933", null ],
       [ "mz_speed_roll", "obm__cyclone_8c.html#aaf0068a494d2fc351598fb1dd4f78e61", null ]
     ] ],
-    [ "CeMatrix.__unnamed288__", "obm__cyclone_8c.html#structCeMatrix_8____unnamed288____", [
+    [ "CeMatrix.__unnamed287__", "obm__cyclone_8c.html#structCeMatrix_8____unnamed287____", [
       [ "ce_11", "obm__cyclone_8c.html#a2e3df4aa96c9259870cafe8e0789659b", null ],
       [ "ce_12", "obm__cyclone_8c.html#a421d30aef1c14a413726567b57ac1b6e", null ],
       [ "ce_13", "obm__cyclone_8c.html#af98b900ec25ac57126ac82620ef62c5c", null ],

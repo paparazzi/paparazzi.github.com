@@ -43,7 +43,7 @@ var bmp280_8h =
       [ "temperature", "bmp280_8h.html#a5df2cba905ff5041a6723d925cb2007c", null ],
       [ "tx_buffer", "bmp280_8h.html#a5b636d5add6b63ddfaf73356a05131a9", null ]
     ] ],
-    [ "bmp280_t.__unnamed319__", "bmp280_8h.html#unionbmp280__t_8____unnamed319____", [
+    [ "bmp280_t.__unnamed318__", "bmp280_8h.html#unionbmp280__t_8____unnamed318____", [
       [ "i2c", "bmp280_8h.html#aab36abef0cdebd2f84424ad4d17e286b", null ],
       [ "spi", "bmp280_8h.html#a0b0760e072413088ea8460c3b4f43dbe", null ]
     ] ],

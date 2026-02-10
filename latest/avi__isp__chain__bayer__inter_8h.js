@@ -6,7 +6,7 @@ var avi__isp__chain__bayer__inter_8h =
     [ "avi_isp_chain_bayer_inter_regs", "avi__isp__chain__bayer__inter_8h.html#structavi__isp__chain__bayer__inter__regs", [
       [ "module_bypass", "avi__isp__chain__bayer__inter_8h.html#affd20067f5adc139500f038669832de6", null ]
     ] ],
-    [ "avi_isp_chain_bayer_inter_module_bypass.__unnamed21__", "avi__isp__chain__bayer__inter_8h.html#structavi__isp__chain__bayer__inter__module__bypass_8____unnamed21____", [
+    [ "avi_isp_chain_bayer_inter_module_bypass.__unnamed20__", "avi__isp__chain__bayer__inter_8h.html#structavi__isp__chain__bayer__inter__module__bypass_8____unnamed20____", [
       [ "bayer_bypass", "avi__isp__chain__bayer__inter_8h.html#ac756f6254ece692020ceb482256c8eb4", null ],
       [ "chroma_aber_bypass", "avi__isp__chain__bayer__inter_8h.html#adff356e880523a1211f467b2832ae427", null ],
       [ "color_matrix_bypass", "avi__isp__chain__bayer__inter_8h.html#a64a13421269896e9694ef3b7bb86ecc6", null ],

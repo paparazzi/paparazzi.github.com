@@ -77,63 +77,63 @@ var avi__isp__statistics__yuv_8h =
     [ "avi_isp_statistics_yuv_ae_histogram_y_regs", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__ae__histogram__y__regs", [
       [ "ae_histogram_y", "avi__isp__statistics__yuv_8h.html#a6304234ef22f0f18a5cf6a74402de289", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_measure_req.__unnamed237__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__req_8____unnamed237____", [
+    [ "avi_isp_statistics_yuv_measure_req.__unnamed236__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__req_8____unnamed236____", [
       [ "clear", "avi__isp__statistics__yuv_8h.html#a01bc6f8efa4202821e95f4fdf6298b30", null ],
       [ "measure_req", "avi__isp__statistics__yuv_8h.html#a9273310dfbe65ae0b26598be8dd81b97", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_measure_status.__unnamed239__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__status_8____unnamed239____", [
+    [ "avi_isp_statistics_yuv_measure_status.__unnamed238__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__status_8____unnamed238____", [
       [ "done", "avi__isp__statistics__yuv_8h.html#a6b2ded51d81a4403d8a4bd25fa1e57ee", null ],
       [ "error", "avi__isp__statistics__yuv_8h.html#acb5e100e5a9a3e7f6d1fd97512215282", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_window_pos_x.__unnamed241__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__x_8____unnamed241____", [
+    [ "avi_isp_statistics_yuv_window_pos_x.__unnamed240__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__x_8____unnamed240____", [
       [ "__pad0__", "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "window_x_end", "avi__isp__statistics__yuv_8h.html#ac7d93d14952659a6fac37763bdb6af06", null ],
       [ "window_x_start", "avi__isp__statistics__yuv_8h.html#aca53e3ddd0083244b82200297208d4d3", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_window_pos_y.__unnamed243__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__y_8____unnamed243____", [
+    [ "avi_isp_statistics_yuv_window_pos_y.__unnamed242__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__y_8____unnamed242____", [
       [ "__pad0__", "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "window_y_end", "avi__isp__statistics__yuv_8h.html#a74e7eb1b5a2c78158509d50529293df9", null ],
       [ "window_y_start", "avi__isp__statistics__yuv_8h.html#ad24319ee28d846b23039b2b998d1789a", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_circle_pos_x_center.__unnamed245__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__x__center_8____unnamed245____", [
+    [ "avi_isp_statistics_yuv_circle_pos_x_center.__unnamed244__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__x__center_8____unnamed244____", [
       [ "x_center", "avi__isp__statistics__yuv_8h.html#ae581abd84884d89931f66dcfe8f88bcb", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_circle_pos_x_squared.__unnamed247__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__x__squared_8____unnamed247____", [
+    [ "avi_isp_statistics_yuv_circle_pos_x_squared.__unnamed246__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__x__squared_8____unnamed246____", [
       [ "x_squared", "avi__isp__statistics__yuv_8h.html#a248bb26fa55ebf7bc9b11298742c9128", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_circle_pos_y_center.__unnamed249__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__center_8____unnamed249____", [
+    [ "avi_isp_statistics_yuv_circle_pos_y_center.__unnamed248__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__center_8____unnamed248____", [
       [ "y_center", "avi__isp__statistics__yuv_8h.html#ae96b6f693fb5b638360f766cb8efd608", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_circle_pos_y_squared.__unnamed251__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__squared_8____unnamed251____", [
+    [ "avi_isp_statistics_yuv_circle_pos_y_squared.__unnamed250__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__squared_8____unnamed250____", [
       [ "y_squared", "avi__isp__statistics__yuv_8h.html#aabef732b97e2a4e60a662295689ce78e", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_circle_radius_squared.__unnamed253__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__radius__squared_8____unnamed253____", [
+    [ "avi_isp_statistics_yuv_circle_radius_squared.__unnamed252__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__radius__squared_8____unnamed252____", [
       [ "radius_squared", "avi__isp__statistics__yuv_8h.html#a37802aa693a24c8b35317f3948c8bbd7", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_increments_log2.__unnamed255__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__increments__log2_8____unnamed255____", [
+    [ "avi_isp_statistics_yuv_increments_log2.__unnamed254__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__increments__log2_8____unnamed254____", [
       [ "__pad0__", "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "x_log2_inc", "avi__isp__statistics__yuv_8h.html#ae5b44ea29d1f15ac86ce9be31969044d", null ],
       [ "y_log2_inc", "avi__isp__statistics__yuv_8h.html#a9160ec0a4b4b978a44b0a631f5163d8b", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_ae_nb_valid_y.__unnamed257__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__ae__nb__valid__y_8____unnamed257____", [
+    [ "avi_isp_statistics_yuv_ae_nb_valid_y.__unnamed256__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__ae__nb__valid__y_8____unnamed256____", [
       [ "nb_valid_y", "avi__isp__statistics__yuv_8h.html#a763448fd736df73f6de365d457ed58a7", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_awb_threshold.__unnamed259__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__threshold_8____unnamed259____", [
+    [ "avi_isp_statistics_yuv_awb_threshold.__unnamed258__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__threshold_8____unnamed258____", [
       [ "awb_threshold", "avi__isp__statistics__yuv_8h.html#a376b036c92fbd98608d4f57de458307b", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_awb_sum_y.__unnamed261__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__sum__y_8____unnamed261____", [
+    [ "avi_isp_statistics_yuv_awb_sum_y.__unnamed260__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__sum__y_8____unnamed260____", [
       [ "awb_sum_y", "avi__isp__statistics__yuv_8h.html#a059366e53babea6977a3b43b8222ecde", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_awb_sum_u.__unnamed263__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__sum__u_8____unnamed263____", [
+    [ "avi_isp_statistics_yuv_awb_sum_u.__unnamed262__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__sum__u_8____unnamed262____", [
       [ "awb_sum_u", "avi__isp__statistics__yuv_8h.html#a72588b7a1e849b11b29d86072680fa49", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_awb_sum_v.__unnamed265__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__sum__v_8____unnamed265____", [
+    [ "avi_isp_statistics_yuv_awb_sum_v.__unnamed264__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__sum__v_8____unnamed264____", [
       [ "awb_sum_v", "avi__isp__statistics__yuv_8h.html#af9fe3a1945f91d243b629b52d3426d68", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_awb_nb_grey_pixels.__unnamed267__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__nb__grey__pixels_8____unnamed267____", [
+    [ "avi_isp_statistics_yuv_awb_nb_grey_pixels.__unnamed266__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__awb__nb__grey__pixels_8____unnamed266____", [
       [ "nb_grey_pixels", "avi__isp__statistics__yuv_8h.html#a69a34cce28f1026761d3d1bfa83e256d", null ]
     ] ],
-    [ "avi_isp_statistics_yuv_ae_histogram_y.__unnamed269__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__ae__histogram__y_8____unnamed269____", [
+    [ "avi_isp_statistics_yuv_ae_histogram_y.__unnamed268__", "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__ae__histogram__y_8____unnamed268____", [
       [ "histogram_y", "avi__isp__statistics__yuv_8h.html#a207163c909768e2f2c957306e4903aa1", null ]
     ] ],
     [ "AVI_ISP_STATISTICS_YUV_AE_HISTOGRAM_Y", "avi__isp__statistics__yuv_8h.html#af8ff20a366cb2832f086db89a9d4c7d3", null ],

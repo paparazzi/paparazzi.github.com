@@ -37,7 +37,7 @@ var invensense3_8h =
       [ "timer", "invensense3_8h.html#a7f5221e01416b2c22c93ea73e9660c28", null ],
       [ "tx_buffer", "invensense3_8h.html#ac09b370e049a747bc8222aa29afd3615", null ]
     ] ],
-    [ "invensense3_t.__unnamed331__", "invensense3_8h.html#unioninvensense3__t_8____unnamed331____", [
+    [ "invensense3_t.__unnamed330__", "invensense3_8h.html#unioninvensense3__t_8____unnamed330____", [
       [ "i2c", "invensense3_8h.html#aab36abef0cdebd2f84424ad4d17e286b", null ],
       [ "spi", "invensense3_8h.html#a0b0760e072413088ea8460c3b4f43dbe", null ]
     ] ],

@@ -208,7 +208,7 @@ SD Card pinout</div></div>
 <img src="sdinit.png" alt=""/>
 </div>
 <p>Developed using Test Driven Development. Test code available at: <a href="https://github.com/bartslinger/paparazzi-unittest">https://github.com/bartslinger/paparazzi-unittest</a></p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>CRC checksums are not implemented. Fake values of 0xFF are used and they are ignored by the card. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>CRC checksums are not implemented. Fake values of 0xFF are used and they are ignored by the card. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -1220,7 +1220,7 @@ SD Card pinout</div></div>
 </div><div class="memdoc">
 
 <p>This is the definition of the SD card. </p>
-<p>Currently, only one SD card can be used. Most of the functions are prepared for feature support of multiple SD cards, by taking a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> as parameter. Only the <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">sdcard_spi_callback()</a> function, which is called after a spi transaction is finished, does not provide a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. Thereby <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">sdcard_spi_callback()</a> cannot know which <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> is ready. However, the <a class="el" href="group__spi.html#structspi__transaction" title="SPI transaction structure.">spi_transaction</a> is given as a parameter, which is part of the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. So thereby the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> might be identified. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>Add support for multiple SD cards. </dd></dl>
+<p>Currently, only one SD card can be used. Most of the functions are prepared for feature support of multiple SD cards, by taking a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> as parameter. Only the <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">sdcard_spi_callback()</a> function, which is called after a spi transaction is finished, does not provide a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. Thereby <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">sdcard_spi_callback()</a> cannot know which <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> is ready. However, the <a class="el" href="group__spi.html#structspi__transaction" title="SPI transaction structure.">spi_transaction</a> is given as a parameter, which is part of the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. So thereby the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> might be identified. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>Add support for multiple SD cards. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00056">56</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
@@ -1234,7 +1234,7 @@ SD Card pinout</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="sdcard__spi_8c.html">sdcard_spi.c</a></li>
-    <li class="footer">Generated on Sun Feb 8 2026 10:03:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Feb 10 2026 22:08:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

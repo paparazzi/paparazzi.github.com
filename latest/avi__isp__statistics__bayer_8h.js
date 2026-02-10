@@ -50,46 +50,46 @@ var avi__isp__statistics__bayer_8h =
       [ "window_x", "avi__isp__statistics__bayer_8h.html#ae0e5fbf2483d8d217b84d6928ae7b706", null ],
       [ "window_y", "avi__isp__statistics__bayer_8h.html#a163a67a92da722276a33622488d217ba", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_measure_req.__unnamed213__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__measure__req_8____unnamed213____", [
+    [ "avi_isp_statistics_bayer_measure_req.__unnamed212__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__measure__req_8____unnamed212____", [
       [ "clear", "avi__isp__statistics__bayer_8h.html#a01bc6f8efa4202821e95f4fdf6298b30", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_window_x.__unnamed215__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__x_8____unnamed215____", [
+    [ "avi_isp_statistics_bayer_window_x.__unnamed214__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__x_8____unnamed214____", [
       [ "__pad0__", "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "x_offset", "avi__isp__statistics__bayer_8h.html#a80997876f6afba983eaec918e58ecc0d", null ],
       [ "x_width", "avi__isp__statistics__bayer_8h.html#af669fc297b7f5b3ea28b44205a345a34", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_window_y.__unnamed217__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__y_8____unnamed217____", [
+    [ "avi_isp_statistics_bayer_window_y.__unnamed216__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__y_8____unnamed216____", [
       [ "__pad0__", "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "y_offset", "avi__isp__statistics__bayer_8h.html#a6055652d6d84e1c46e19438c923113ff", null ],
       [ "y_width", "avi__isp__statistics__bayer_8h.html#a72852829612fe240aa20686146c38545", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_circle_pos_x_center.__unnamed219__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__x__center_8____unnamed219____", [
+    [ "avi_isp_statistics_bayer_circle_pos_x_center.__unnamed218__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__x__center_8____unnamed218____", [
       [ "x_center", "avi__isp__statistics__bayer_8h.html#ae581abd84884d89931f66dcfe8f88bcb", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_circle_pos_x_squared.__unnamed221__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__x__squared_8____unnamed221____", [
+    [ "avi_isp_statistics_bayer_circle_pos_x_squared.__unnamed220__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__x__squared_8____unnamed220____", [
       [ "x_squared", "avi__isp__statistics__bayer_8h.html#a248bb26fa55ebf7bc9b11298742c9128", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_circle_pos_y_center.__unnamed223__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__y__center_8____unnamed223____", [
+    [ "avi_isp_statistics_bayer_circle_pos_y_center.__unnamed222__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__y__center_8____unnamed222____", [
       [ "y_center", "avi__isp__statistics__bayer_8h.html#ae96b6f693fb5b638360f766cb8efd608", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_circle_pos_y_squared.__unnamed225__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__y__squared_8____unnamed225____", [
+    [ "avi_isp_statistics_bayer_circle_pos_y_squared.__unnamed224__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__y__squared_8____unnamed224____", [
       [ "y_squared", "avi__isp__statistics__bayer_8h.html#aabef732b97e2a4e60a662295689ce78e", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_circle_radius_squared.__unnamed227__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__radius__squared_8____unnamed227____", [
+    [ "avi_isp_statistics_bayer_circle_radius_squared.__unnamed226__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__radius__squared_8____unnamed226____", [
       [ "radius_squared", "avi__isp__statistics__bayer_8h.html#a37802aa693a24c8b35317f3948c8bbd7", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_increments_log2.__unnamed229__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__increments__log2_8____unnamed229____", [
+    [ "avi_isp_statistics_bayer_increments_log2.__unnamed228__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__increments__log2_8____unnamed228____", [
       [ "__pad0__", "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "x_log2_inc", "avi__isp__statistics__bayer_8h.html#ae5b44ea29d1f15ac86ce9be31969044d", null ],
       [ "y_log2_inc", "avi__isp__statistics__bayer_8h.html#a9160ec0a4b4b978a44b0a631f5163d8b", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_sat_threshold.__unnamed231__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__sat__threshold_8____unnamed231____", [
+    [ "avi_isp_statistics_bayer_sat_threshold.__unnamed230__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__sat__threshold_8____unnamed230____", [
       [ "threshold", "avi__isp__statistics__bayer_8h.html#af0598264a691a8f62272aca0e79af374", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_cfa.__unnamed233__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__cfa_8____unnamed233____", [
+    [ "avi_isp_statistics_bayer_cfa.__unnamed232__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__cfa_8____unnamed232____", [
       [ "cfa", "avi__isp__statistics__bayer_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_statistics_bayer_max_nb_windows.__unnamed235__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__max__nb__windows_8____unnamed235____", [
+    [ "avi_isp_statistics_bayer_max_nb_windows.__unnamed234__", "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__max__nb__windows_8____unnamed234____", [
       [ "__pad0__", "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "x_window_count", "avi__isp__statistics__bayer_8h.html#a4ed4539591c04801926163725f93be84", null ],
       [ "y_window_count", "avi__isp__statistics__bayer_8h.html#a2ed20145fa065fc42ce4409d3bcd3aa0", null ]

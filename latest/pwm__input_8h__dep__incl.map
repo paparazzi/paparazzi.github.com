@@ -1,23 +1,21 @@
 <map id="sw/airborne/mcu_periph/pwm_input.h" name="sw/airborne/mcu_periph/pwm_input.h">
-<area shape="rect" id="Node000001" title="arch independent PWM input capture API" alt="" coords="927,5,1105,45"/>
-<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2pwm__input__arch_8c.html" title="handling of stm32 PWM input using a timer with capture." alt="" coords="5,101,229,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="913,34,611,55,426,73,242,96,200,103,199,98,241,91,426,67,610,50,912,29"/>
-<area shape="rect" id="Node000003" href="$stm32_2mcu__periph_2pwm__input__arch_8c.html" title="handling of smt32 PWM input using a timer with capture." alt="" coords="253,93,432,148"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="913,37,697,59,570,75,444,96,433,98,432,93,444,91,569,70,696,54,913,32"/>
-<area shape="rect" id="Node000004" href="$pwm__input_8c.html" title="arch independent PWM input capture API" alt="" coords="456,101,635,141"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="913,46,647,96,616,103,615,98,646,91,912,41"/>
-<area shape="rect" id="Node000005" href="$pwm__meas_8c.html" title="Wrapper to access pwm_input mcu peripheral from other modules." alt="" coords="659,101,818,141"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="948,52,796,103,794,98,946,47"/>
-<area shape="rect" id="Node000006" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info." alt="" coords="842,101,1003,141"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="989,57,943,103,940,99,985,53"/>
-<area shape="rect" id="Node000007" href="$meteo__stick_8c.html" title=" " alt="" coords="1028,101,1191,141"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1047,53,1092,99,1089,103,1043,57"/>
-<area shape="rect" id="Node000008" href="$mf__ptu_8c.html" title=" " alt="" coords="1215,101,1374,141"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1086,47,1239,98,1238,103,1084,52"/>
-<area shape="rect" id="Node000009" href="$aoa__pwm_8c.html" title="Angle of Attack sensor on PWM." alt="" coords="1398,101,1557,141"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1120,40,1248,62,1387,91,1416,98,1414,103,1386,96,1247,67,1119,45"/>
-<area shape="rect" id="Node000010" href="$rpm__sensor_8c.html" title=" " alt="" coords="1581,101,1747,141"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1120,32,1328,53,1450,70,1570,91,1601,98,1600,103,1569,96,1449,75,1328,59,1119,37"/>
-<area shape="rect" id="Node000011" href="$sonar__pwm_8c.html" title=" " alt="" coords="1771,101,1930,141"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1119,27,1248,33,1409,45,1585,64,1761,91,1792,98,1791,103,1759,96,1584,69,1409,50,1248,39,1119,32"/>
+<area shape="rect" id="Node000001" title="arch independent PWM input capture API" alt="" coords="817,5,996,45"/>
+<area shape="rect" id="Node000002" href="$pwm__input__arch_8c.html" title="handling of stm32 PWM input using a timer with capture." alt="" coords="5,93,229,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="804,38,548,62,242,96,230,98,229,92,241,91,548,57,803,33"/>
+<area shape="rect" id="Node000003" href="$pwm__input_8c.html" title="arch independent PWM input capture API" alt="" coords="253,93,432,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="804,43,444,96,433,98,432,93,444,91,803,38"/>
+<area shape="rect" id="Node000004" href="$pwm__meas_8c.html" title="Wrapper to access pwm_input mcu peripheral from other modules." alt="" coords="457,93,615,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="813,51,616,96,615,91,812,46"/>
+<area shape="rect" id="Node000005" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info." alt="" coords="639,93,801,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="855,53,762,96,760,91,852,49"/>
+<area shape="rect" id="Node000006" href="$meteo__stick_8c.html" title=" " alt="" coords="825,93,988,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="909,59,909,93,904,93,904,59"/>
+<area shape="rect" id="Node000007" href="$mf__ptu_8c.html" title=" " alt="" coords="1013,93,1171,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="961,49,1053,91,1050,96,959,54"/>
+<area shape="rect" id="Node000008" href="$aoa__pwm_8c.html" title="Angle of Attack sensor on PWM." alt="" coords="1195,93,1354,133"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1001,46,1195,91,1194,96,1000,51"/>
+<area shape="rect" id="Node000009" href="$rpm__sensor_8c.html" title=" " alt="" coords="1378,93,1545,133"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1010,37,1367,91,1378,93,1377,98,1366,96,1009,43"/>
+<area shape="rect" id="Node000010" href="$sonar__pwm_8c.html" title=" " alt="" coords="1569,93,1727,133"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1010,31,1260,54,1409,70,1558,91,1569,93,1568,98,1557,96,1409,76,1260,59,1010,37"/>
 </map>

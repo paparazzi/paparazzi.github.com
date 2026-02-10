@@ -5,7 +5,7 @@ var group__chprintf =
       [ "destBuf", "group__chprintf.html#a6bee625095270dcc4ae17f343108ec6a", null ],
       [ "fmt", "group__chprintf.html#a747c94e3c3cc1476e9810800e1db053b", null ]
     ] ],
-    [ "synchronous_print_arg_t.__unnamed302__", "group__chprintf.html#unionsynchronous__print__arg__t_8____unnamed302____", [
+    [ "synchronous_print_arg_t.__unnamed301__", "group__chprintf.html#unionsynchronous__print__arg__t_8____unnamed301____", [
       [ "chp", "group__chprintf.html#a59fcb956ca6369b0e24a225d7e26c795", null ],
       [ "size", "group__chprintf.html#af7bd60b75b29d79b660a2859395c1a24", null ]
     ] ],

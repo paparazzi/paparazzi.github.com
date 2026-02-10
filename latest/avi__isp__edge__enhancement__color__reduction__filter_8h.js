@@ -35,19 +35,19 @@ var avi__isp__edge__enhancement__color__reduction__filter_8h =
       [ "ee_kernel_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a4a4941d8d7e2b1792b85c244ead600a2", null ],
       [ "m_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a53f9b6afc4c437c13a3a3be15ab63aa2", null ]
     ] ],
-    [ "avi_isp_edge_enhancement_color_reduction_filter_ee_lut.__unnamed129__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut_8____unnamed129____", [
+    [ "avi_isp_edge_enhancement_color_reduction_filter_ee_lut.__unnamed128__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut_8____unnamed128____", [
       [ "ee_lut", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aefaaeed2a812053e0cb093a582e1d9b9", null ]
     ] ],
-    [ "avi_isp_edge_enhancement_color_reduction_filter_ee_kernel_coeff.__unnamed131__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__kernel__coeff_8____unnamed131____", [
+    [ "avi_isp_edge_enhancement_color_reduction_filter_ee_kernel_coeff.__unnamed130__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__kernel__coeff_8____unnamed130____", [
       [ "ee_kernel_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a3db3fc8578ce930ecf692a6f4774d234", null ]
     ] ],
-    [ "avi_isp_edge_enhancement_color_reduction_filter_crf_kernel_coeff.__unnamed133__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff_8____unnamed133____", [
+    [ "avi_isp_edge_enhancement_color_reduction_filter_crf_kernel_coeff.__unnamed132__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff_8____unnamed132____", [
       [ "crf_kernel_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8e0a98aa13fef205b1eb2732463fa8af", null ]
     ] ],
-    [ "avi_isp_edge_enhancement_color_reduction_filter_m_coeff.__unnamed135__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__m__coeff_8____unnamed135____", [
+    [ "avi_isp_edge_enhancement_color_reduction_filter_m_coeff.__unnamed134__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__m__coeff_8____unnamed134____", [
       [ "m_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aadf6fc2db439bd83bdaa55e8ef159927", null ]
     ] ],
-    [ "avi_isp_edge_enhancement_color_reduction_filter_d_coeff.__unnamed137__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__d__coeff_8____unnamed137____", [
+    [ "avi_isp_edge_enhancement_color_reduction_filter_d_coeff.__unnamed136__", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__d__coeff_8____unnamed136____", [
       [ "d_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672", null ]
     ] ],
     [ "AVI_ISP_EDGE_ENHANCEMENT_COLOR_REDUCTION_FILTER_CRF_KERNEL_COEFF", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a62762fe4ffb03f93b3fb0df4eb8f1b42", null ],

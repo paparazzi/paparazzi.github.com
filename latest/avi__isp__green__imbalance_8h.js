@@ -50,41 +50,41 @@ var avi__isp__green__imbalance_8h =
     [ "avi_isp_green_imbalance_green_blue_coeff_mem_regs", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem__regs", [
       [ "green_coeff_mem", "avi__isp__green__imbalance_8h.html#ac1eacc535d9c87e2e6edc6b3ce033e45", null ]
     ] ],
-    [ "avi_isp_green_imbalance_bayer_cfa.__unnamed147__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__bayer__cfa_8____unnamed147____", [
+    [ "avi_isp_green_imbalance_bayer_cfa.__unnamed146__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__bayer__cfa_8____unnamed146____", [
       [ "cfa", "avi__isp__green__imbalance_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18", null ]
     ] ],
-    [ "avi_isp_green_imbalance_offset_x_y.__unnamed149__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__offset__x__y_8____unnamed149____", [
+    [ "avi_isp_green_imbalance_offset_x_y.__unnamed148__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__offset__x__y_8____unnamed148____", [
       [ "__pad0__", "avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "offset_x", "avi__isp__green__imbalance_8h.html#ae3e1668916d0e401d35eee4baa3badc0", null ],
       [ "offset_y", "avi__isp__green__imbalance_8h.html#a41c0c79933713cf884d2310f43da1bda", null ]
     ] ],
-    [ "avi_isp_green_imbalance_cell_id_x_y.__unnamed151__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed151____", [
+    [ "avi_isp_green_imbalance_cell_id_x_y.__unnamed150__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed150____", [
       [ "__pad0__", "avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "cell_id_x", "avi__isp__green__imbalance_8h.html#a2bf00e72c54023ef1c64160ee444a113", null ],
       [ "cell_id_y", "avi__isp__green__imbalance_8h.html#a08a5a83819d2bb62d0ba0709abd7ca18", null ]
     ] ],
-    [ "avi_isp_green_imbalance_cell_w.__unnamed153__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w_8____unnamed153____", [
+    [ "avi_isp_green_imbalance_cell_w.__unnamed152__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w_8____unnamed152____", [
       [ "cell_w", "avi__isp__green__imbalance_8h.html#a351cb376dd0fda6029cca915022ff5f2", null ]
     ] ],
-    [ "avi_isp_green_imbalance_cell_h.__unnamed155__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed155____", [
+    [ "avi_isp_green_imbalance_cell_h.__unnamed154__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed154____", [
       [ "cell_h", "avi__isp__green__imbalance_8h.html#ab9df2df985854549d7474a3442133c97", null ]
     ] ],
-    [ "avi_isp_green_imbalance_cell_w_inv.__unnamed157__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w__inv_8____unnamed157____", [
+    [ "avi_isp_green_imbalance_cell_w_inv.__unnamed156__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w__inv_8____unnamed156____", [
       [ "w_inv", "avi__isp__green__imbalance_8h.html#a4693368805b9831d1dc07f6eada9c53a", null ]
     ] ],
-    [ "avi_isp_green_imbalance_cell_h_inv.__unnamed159__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed159____", [
+    [ "avi_isp_green_imbalance_cell_h_inv.__unnamed158__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed158____", [
       [ "h_inv", "avi__isp__green__imbalance_8h.html#a3173ffd395779d27e09a52567d4da50f", null ]
     ] ],
-    [ "avi_isp_green_imbalance_alpha.__unnamed161__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__alpha_8____unnamed161____", [
+    [ "avi_isp_green_imbalance_alpha.__unnamed160__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__alpha_8____unnamed160____", [
       [ "alpha", "avi__isp__green__imbalance_8h.html#a2c1743a391305fbf367df8e4f069f9f9", null ]
     ] ],
-    [ "avi_isp_green_imbalance_beta.__unnamed163__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__beta_8____unnamed163____", [
+    [ "avi_isp_green_imbalance_beta.__unnamed162__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__beta_8____unnamed162____", [
       [ "beta", "avi__isp__green__imbalance_8h.html#a987bcab01b929eb2c07877b224215c92", null ]
     ] ],
-    [ "avi_isp_green_imbalance_green_red_coeff_mem.__unnamed165__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem_8____unnamed165____", [
+    [ "avi_isp_green_imbalance_green_red_coeff_mem.__unnamed164__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem_8____unnamed164____", [
       [ "gr_coeff_value", "avi__isp__green__imbalance_8h.html#aa65299b8052c542508c1f3d36743476b", null ]
     ] ],
-    [ "avi_isp_green_imbalance_green_blue_coeff_mem.__unnamed167__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem_8____unnamed167____", [
+    [ "avi_isp_green_imbalance_green_blue_coeff_mem.__unnamed166__", "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem_8____unnamed166____", [
       [ "gb_coeff_value", "avi__isp__green__imbalance_8h.html#a2145ccb253d50e1ac0cd82dc4f7b7def", null ]
     ] ],
     [ "AVI_ISP_GREEN_IMBALANCE_ALPHA", "avi__isp__green__imbalance_8h.html#a347de7beeafeaeeb1e59eea9287b5b17", null ],
