@@ -199,6 +199,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a8500674e433093202b888c0613c07501"><td class="mdescLeft">&#160;</td><td class="mdescRight">uart connected to GPS internally  <br /></td></tr>
 <tr class="separator:a8500674e433093202b888c0613c07501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795637c038061d50a428834973f875ef" id="r_a795637c038061d50a428834973f875ef"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">GPS_UBX_ENABLE_NMEA_DATA_MASK</a>&#160;&#160;&#160;0xff</td></tr>
+<tr class="memdesc:a795637c038061d50a428834973f875ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">To have a direct acces to the GPS with U-Center.  <br /></td></tr>
 <tr class="separator:a795637c038061d50a428834973f875ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9d6091776c6ce3bd59c7290094d0180" id="r_aa9d6091776c6ce3bd59c7290094d0180"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bebop_8h.html#aa9d6091776c6ce3bd59c7290094d0180">UART2_DEV</a>&#160;&#160;&#160;/<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>/<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ttyUSB0</a></td></tr>
 <tr class="memdesc:aa9d6091776c6ce3bd59c7290094d0180"><td class="mdescLeft">&#160;</td><td class="mdescRight">For using serial devices via USB to serial converter electronics E.g.  <br /></td></tr>
@@ -245,7 +246,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00055">55</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00063">63</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00057">57</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00065">65</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +284,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00056">56</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00064">64</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +316,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00054">54</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00062">62</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -331,7 +332,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00034">34</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p>To have a direct acces to the GPS with U-Center. </p>
+<ul>
+<li>on ground station (linux), run: socat TCP-LISTEN:5000,reuseaddr PTY,link=/tmp/ttyV0,raw,echo=0</li>
+<li>connect bebop with telnet and run: nc 192.168.42.84 5000 &lt; /dev/ttyPA1 &gt; /dev/ttyPA1</li>
+<li>if neeed, first create the virtual com port in .wine/dosdevices with: ln -s /tmp/ttyV0 com36</li>
+<li>on U-Center, connect the virtual port corresponding to /tmp/ttyV0 NMEA enabled to keep the original firmware working </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00042">42</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +356,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00075">75</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00083">83</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +372,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00076">76</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00084">84</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +388,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00074">74</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00082">82</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +425,7 @@ Variables</h2></td></tr>
 <p>For using serial devices via USB to serial converter electronics E.g. </p>
 <p>a XBee modem, a 3DR radio modem, Serial Stereocam etc. etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00040">40</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00048">48</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +441,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00043">43</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00051">51</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +457,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00046">46</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00054">54</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +473,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00049">49</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bebop_8h_source.html#l00057">57</a> of file <a class="el" href="bebop_8h_source.html">bebop.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +537,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="bebop_8h.html">bebop.h</a></li>
-    <li class="footer">Generated on Tue Feb 10 2026 22:08:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Feb 11 2026 07:59:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

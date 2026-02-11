@@ -377,7 +377,7 @@ var searchData=
   ['ekf_5faw_5fwrapper_5fset_5fwind_5fd_374',['ekf_aw_wrapper_set_wind_D',['../ekf__aw__wrapper_8h.html#af1ee7032786c774a15712fa5f5c822d8',1,'ekf_aw_wrapper.h']]],
   ['ekf_5faw_5fwrapper_5fset_5fwind_5fe_375',['ekf_aw_wrapper_set_wind_E',['../ekf__aw__wrapper_8h.html#adbb0a460868c4d4427b58071ba0b973b',1,'ekf_aw_wrapper.h']]],
   ['ekf_5faw_5fwrapper_5fset_5fwind_5fn_376',['ekf_aw_wrapper_set_wind_N',['../ekf__aw__wrapper_8h.html#a88ed95f3c7b3ec430b6c0059bcfc84d1',1,'ekf_aw_wrapper.h']]],
-  ['ekf_5ff_377',['ekf_f',['../ins__ext__pose_8c.html#ae5d832b2057d0255e2935d3c7d3d1744',1,'ekf_f(const float X[EKF_NUM_STATES], const float U[EKF_NUM_INPUTS], float out[EKF_NUM_STATES]):&#160;ins_ext_pose.c'],['../ins__ext__pose_8c.html#a2e3b198e2d2d12c7885395abcab1b572',1,'ekf_F(const float X[EKF_NUM_STATES], const float U[EKF_NUM_INPUTS], float out[EKF_NUM_STATES][EKF_NUM_STATES]):&#160;ins_ext_pose.c']]],
+  ['ekf_5ff_377',['ekf_f',['../ins__ext__pose_8c.html#a2e3b198e2d2d12c7885395abcab1b572',1,'ekf_F(const float X[EKF_NUM_STATES], const float U[EKF_NUM_INPUTS], float out[EKF_NUM_STATES][EKF_NUM_STATES]):&#160;ins_ext_pose.c'],['../ins__ext__pose_8c.html#ae5d832b2057d0255e2935d3c7d3d1744',1,'ekf_f(const float X[EKF_NUM_STATES], const float U[EKF_NUM_INPUTS], float out[EKF_NUM_STATES]):&#160;ins_ext_pose.c']]],
   ['ekf_5fh_378',['ekf_H',['../ins__ext__pose_8c.html#af9ebe8d9992068c5e9206a5e0cdfbad2',1,'ins_ext_pose.c']]],
   ['ekf_5finit_379',['ekf_init',['../ins__ext__pose_8c.html#a5278e38b15655a18f408ae3db11727f9',1,'ins_ext_pose.c']]],
   ['ekf_5finput_380',['ekf_input',['../discrete__ekf__no__north_8c.html#a54feb03fb84b0175bc26baa217a482de',1,'discrete_ekf_no_north.c']]],
