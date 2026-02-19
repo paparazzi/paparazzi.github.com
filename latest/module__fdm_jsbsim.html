@@ -168,6 +168,8 @@ Raw fdm_jsbsim.xml file:</h2>
 <div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">LDFLAGS</span> += -<span class="keyword">L</span>$(<span class="keyword">JSBSIM_LIB</span>) -<span class="keyword">lJSBSim</span></div>
 <div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span>  += -<span class="keyword">DNPS_JSBSIM_USE_SGPATH</span>=$(<span class="keyword">JSBSIM_USE_SGPATH</span>)</div>
 <div class="line">      <span class="keyword">endif</span></div>
+<div class="line">      # <span class="keyword">Hide</span> <span class="keyword">warnings</span> <span class="keyword">from</span> <span class="keyword">JSBSim</span> <span class="keyword">itself</span></div>
+<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">isystem</span> $(<span class="keyword">JSBSIM_ROOT</span>)/<span class="keyword">include</span>/<span class="keyword">JSBSim</span></div>
 <div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps_fdm_jsbsim.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;nps&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -180,7 +182,7 @@ Raw fdm_jsbsim.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Feb 17 2026 14:54:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Feb 19 2026 07:48:18 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
