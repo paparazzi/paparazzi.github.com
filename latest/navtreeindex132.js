@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__imu_disco.html#configuration__imu_disco":[1,214,1],
 "module__imu_disco.html#functions__imu_disco":[1,214,2],
 "module__imu_disco.html#module_load_example__imu_disco":[1,214,0],
 "module__imu_disco.html#module_xml__imu_disco":[1,214,2,0],
@@ -153,10 +152,17 @@ var NAVTREEINDEX132 =
 "module__ins_int_common.html#module_load_example__ins_int_common":[1,247,0],
 "module__ins_int_common.html#module_xml__ins_int_common":[1,247,2,0],
 "module__ins_mekf_wind.html":[1,248],
+"module__ins_mekf_wind.html#af_section":[1,248,1,2],
 "module__ins_mekf_wind.html#configuration__ins_mekf_wind":[1,248,1],
+"module__ins_mekf_wind.html#configure":[1,248,1,0],
+"module__ins_mekf_wind.html#define":[1,248,1,1],
+"module__ins_mekf_wind.html#files":[1,248,3],
 "module__ins_mekf_wind.html#functions__ins_mekf_wind":[1,248,2],
+"module__ins_mekf_wind.html#headers":[1,248,3,0],
+"module__ins_mekf_wind.html#init_functions":[1,248,2,0],
 "module__ins_mekf_wind.html#module_load_example__ins_mekf_wind":[1,248,0],
-"module__ins_mekf_wind.html#module_xml__ins_mekf_wind":[1,248,2,0],
+"module__ins_mekf_wind.html#module_xml__ins_mekf_wind":[1,248,3,2],
+"module__ins_mekf_wind.html#sources":[1,248,3,1],
 "module__ins_nps.html":[1,249],
 "module__ins_nps.html#functions__ins_nps":[1,249,1],
 "module__ins_nps.html#module_load_example__ins_nps":[1,249,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX132 =
 "module__lidar_sf11.html#module_xml__lidar_sf11":[1,259,2,0],
 "module__lidar_tfmini.html":[1,260],
 "module__lidar_tfmini.html#configuration__lidar_tfmini":[1,260,1],
-"module__lidar_tfmini.html#functions__lidar_tfmini":[1,260,2],
-"module__lidar_tfmini.html#module_load_example__lidar_tfmini":[1,260,0],
-"module__lidar_tfmini.html#module_xml__lidar_tfmini":[1,260,2,0],
-"module__lidar_tfmini_i2c.html":[1,261],
-"module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c":[1,261,1],
-"module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c":[1,261,2],
-"module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c":[1,261,0]
+"module__lidar_tfmini.html#functions__lidar_tfmini":[1,260,2]
 };

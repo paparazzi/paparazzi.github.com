@@ -199,9 +199,10 @@ var NAVTREEINDEX130 =
 "module__gps_intermcu.html#module_xml__gps_intermcu":[1,161,2,0],
 "module__gps_mediatek_diy.html":[1,162],
 "module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,162,1],
+"module__gps_mediatek_diy.html#event_functions":[1,162,2,0],
 "module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,162,2],
 "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,162,0],
-"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,162,2,0],
+"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,162,2,1],
 "module__gps_nmea.html":[1,163],
 "module__gps_nmea.html#configuration__gps_nmea":[1,163,1],
 "module__gps_nmea.html#functions__gps_nmea":[1,163,2],
@@ -225,11 +226,9 @@ var NAVTREEINDEX130 =
 "module__gps_sim.html#module_xml__gps_sim":[1,167,1,0],
 "module__gps_sirf.html":[1,168],
 "module__gps_sirf.html#configuration__gps_sirf":[1,168,1],
-"module__gps_sirf.html#configure":[1,168,1,0],
-"module__gps_sirf.html#event_functions":[1,168,2,0],
 "module__gps_sirf.html#functions__gps_sirf":[1,168,2],
 "module__gps_sirf.html#module_load_example__gps_sirf":[1,168,0],
-"module__gps_sirf.html#module_xml__gps_sirf":[1,168,2,1],
+"module__gps_sirf.html#module_xml__gps_sirf":[1,168,2,0],
 "module__gps_skytraq.html":[1,169],
 "module__gps_skytraq.html#configuration__gps_skytraq":[1,169,1],
 "module__gps_skytraq.html#functions__gps_skytraq":[1,169,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__gps_ubx_i2c.html":[1,172],
 "module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,172,1],
 "module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,172,2],
-"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,172,0]
+"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,172,0],
+"module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c":[1,172,2,0]
 };
