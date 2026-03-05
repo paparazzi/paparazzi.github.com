@@ -1,10 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__nav_poles_rotorcraft.html#functions__nav_poles_rotorcraft":[1,347,1],
-"module__nav_poles_rotorcraft.html#module_load_example__nav_poles_rotorcraft":[1,347,0],
-"module__nav_poles_rotorcraft.html#module_xml__nav_poles_rotorcraft":[1,347,1,0],
-"module__nav_rosette.html":[1,348],
-"module__nav_rosette.html#functions__nav_rosette":[1,348,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,348,0],
 "module__nav_rosette.html#module_xml__nav_rosette":[1,348,1,0],
 "module__nav_rotorcraft.html":[1,349],
@@ -90,8 +85,7 @@ var NAVTREEINDEX134 =
 "module__obstacle_avoidance.html":[1,508],
 "module__obstacle_avoidance.html#functions__obstacle_avoidance":[1,508,1],
 "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance":[1,508,0],
-"module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,508,1,1],
-"module__obstacle_avoidance.html#periodic_functions":[1,508,1,0],
+"module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,508,1,0],
 "module__obstacle_rover.html":[1,509],
 "module__obstacle_rover.html#configuration__obstacle_rover":[1,509,1],
 "module__obstacle_rover.html#functions__obstacle_rover":[1,509,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX134 =
 "module__radio_control_hott.html#module_xml__radio_control_hott":[1,377,2,0],
 "module__radio_control_intermcu.html":[1,378],
 "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,378,2],
-"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,378,1]
+"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,378,1],
+"module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,378,0],
+"module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,378,2,0],
+"module__radio_control_ppm.html":[1,379],
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,379,1],
+"module__radio_control_ppm.html#functions__radio_control_ppm":[1,379,2],
+"module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,379,0]
 };

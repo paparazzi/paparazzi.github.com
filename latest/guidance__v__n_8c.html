@@ -667,7 +667,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__v__n_8c_source.html#l00182">182</a> of file <a class="el" href="guidance__v__n_8c_source.html">guidance_v_n.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nav_8c_source.html#l00310">nav_pitch</a>, <a class="el" href="nav_8c_source.html#l00309">nav_throttle_setpoint</a>, <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00014">TRIM_UPPRZ</a>, <a class="el" href="guidance__v__n_8c_source.html#l00230">v_ctl_altitude_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00390">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00036">v_ctl_mode</a>, <a class="el" href="guidance__common_8h_source.html#l00039">V_CTL_MODE_AUTO_ALT</a>, <a class="el" href="guidance__common_8h_source.html#l00038">V_CTL_MODE_AUTO_CLIMB</a>, <a class="el" href="guidance__common_8h_source.html#l00037">V_CTL_MODE_AUTO_THROTTLE</a>, <a class="el" href="guidance__common_8h_source.html#l00040">V_CTL_MODE_LANDING</a>, <a class="el" href="guidance__v__n_8c_source.html#l00088">v_ctl_pitch_setpoint</a>, <a class="el" href="guidance__v__n_8c_source.html#l00086">v_ctl_throttle_setpoint</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nav_8c_source.html#l00310">nav_pitch</a>, <a class="el" href="nav_8c_source.html#l00309">nav_throttle_setpoint</a>, <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00014">TRIM_UPPRZ</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00308">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00341">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00036">v_ctl_mode</a>, <a class="el" href="guidance__common_8h_source.html#l00039">V_CTL_MODE_AUTO_ALT</a>, <a class="el" href="guidance__common_8h_source.html#l00038">V_CTL_MODE_AUTO_CLIMB</a>, <a class="el" href="guidance__common_8h_source.html#l00037">V_CTL_MODE_AUTO_THROTTLE</a>, <a class="el" href="guidance__common_8h_source.html#l00040">V_CTL_MODE_LANDING</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00091">v_ctl_pitch_setpoint</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00089">v_ctl_throttle_setpoint</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -675,44 +675,38 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__v__n_8c_a7fe0d6e838155d9c38c8cf8a8413cf21_cgraph.png" border="0" usemap="#aguidance__v__n_8c_a7fe0d6e838155d9c38c8cf8a8413cf21_cgraph" alt=""/></div>
 <map name="aguidance__v__n_8c_a7fe0d6e838155d9c38c8cf8a8413cf21_cgraph" id="aguidance__v__n_8c_a7fe0d6e838155d9c38c8cf8a8413cf21_cgraph">
-<area shape="rect" title="General guidance logic This will call the proper control loops according to the sub&#45;modes." alt="" coords="5,95,160,121"/>
-<area shape="rect" href="guidance__v__n_8c.html#ab78a678ff1021823256d747800db3140" title="outer loop" alt="" coords="208,46,353,71"/>
-<area shape="poly" title=" " alt="" coords="134,93,215,72,216,77,135,98"/>
-<area shape="rect" href="guidance__v__n_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop." alt="" coords="215,210,346,235"/>
-<area shape="poly" title=" " alt="" coords="107,118,247,201,245,205,104,123"/>
-<area shape="rect" href="fixedwing_2guidance_2guidance__v_8c.html#a130f49d9941f156bb04aa94122b167d0" title=" " alt="" coords="209,95,352,121"/>
-<area shape="poly" title=" " alt="" coords="160,105,195,105,195,111,160,111"/>
-<area shape="rect" href="group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="433,46,603,71"/>
-<area shape="poly" title=" " alt="" coords="354,56,419,56,419,61,354,61"/>
-<area shape="rect" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="691,42,865,67"/>
-<area shape="poly" title=" " alt="" coords="604,55,677,54,677,59,604,60"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="949,42,1052,67"/>
-<area shape="poly" title=" " alt="" coords="866,52,935,52,935,57,866,57"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1128,70,1280,95"/>
-<area shape="poly" title=" " alt="" coords="1052,59,1114,68,1114,73,1052,64"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1134,5,1274,45"/>
-<area shape="poly" title=" " alt="" coords="1052,45,1120,35,1121,40,1053,50"/>
-<area shape="rect" href="guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a" title=" " alt="" coords="459,210,577,235"/>
-<area shape="poly" title=" " alt="" coords="346,220,445,220,445,225,346,225"/>
-<area shape="rect" href="guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285" title=" " alt="" coords="451,259,585,285"/>
-<area shape="poly" title=" " alt="" coords="342,233,402,245,442,254,441,259,401,251,341,238"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="702,210,854,235"/>
-<area shape="poly" title=" " alt="" coords="578,220,688,220,688,225,578,225"/>
-<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="701,259,855,285"/>
-<area shape="poly" title=" " alt="" coords="578,231,698,254,697,259,577,236"/>
-<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="921,259,1080,285"/>
-<area shape="poly" title=" " alt="" coords="856,269,908,269,908,275,856,275"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="1130,259,1278,285"/>
-<area shape="poly" title=" " alt="" coords="1080,269,1116,269,1116,275,1080,275"/>
-<area shape="poly" title=" " alt="" coords="585,257,696,235,697,241,586,262"/>
-<area shape="poly" title=" " alt="" coords="586,269,687,269,687,275,586,275"/>
-<area shape="poly" title=" " alt="" coords="341,93,401,80,441,72,442,77,402,85,342,98"/>
-<area shape="rect" href="autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status" alt="" coords="451,145,585,185"/>
-<area shape="poly" title=" " alt="" coords="335,118,438,143,437,148,333,123"/>
-<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="401,95,635,121"/>
-<area shape="poly" title=" " alt="" coords="352,105,387,105,387,111,352,111"/>
-<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="683,92,873,132"/>
-<area shape="poly" title=" " alt="" coords="635,107,669,108,669,113,635,112"/>
+<area shape="rect" title="General guidance logic This will call the proper control loops according to the sub&#45;modes." alt="" coords="5,92,160,117"/>
+<area shape="rect" href="fixedwing_2guidance_2guidance__v_8c.html#ab78a678ff1021823256d747800db3140" title="outer loop" alt="" coords="208,39,353,64"/>
+<area shape="poly" title=" " alt="" coords="130,89,219,65,220,70,131,94"/>
+<area shape="rect" href="fixedwing_2guidance_2guidance__v_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop." alt="" coords="215,169,346,195"/>
+<area shape="poly" title=" " alt="" coords="117,115,235,162,233,167,115,120"/>
+<area shape="rect" href="fixedwing_2guidance_2guidance__v_8c.html#a130f49d9941f156bb04aa94122b167d0" title=" " alt="" coords="209,92,352,117"/>
+<area shape="poly" title=" " alt="" coords="160,102,195,102,195,107,160,107"/>
+<area shape="rect" href="group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="433,35,603,60"/>
+<area shape="poly" title=" " alt="" coords="354,47,419,46,419,52,354,53"/>
+<area shape="rect" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="691,35,865,60"/>
+<area shape="poly" title=" " alt="" coords="604,45,677,45,677,50,604,50"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="949,35,1052,60"/>
+<area shape="poly" title=" " alt="" coords="866,45,935,45,935,50,866,50"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1128,5,1280,31"/>
+<area shape="poly" title=" " alt="" coords="1052,37,1114,28,1114,34,1053,43"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1134,55,1274,95"/>
+<area shape="poly" title=" " alt="" coords="1052,52,1121,61,1120,67,1052,57"/>
+<area shape="rect" href="fixedwing_2guidance_2guidance__v_8c.html#ae1b6858ee2485b993f9f294027dbd032" title="auto throttle inner loop" alt="" coords="407,200,629,225"/>
+<area shape="poly" title=" " alt="" coords="346,188,406,196,406,201,346,193"/>
+<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="701,204,855,229"/>
+<area shape="poly" title=" " alt="" coords="630,212,687,213,687,218,630,217"/>
+<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="921,204,1080,229"/>
+<area shape="poly" title=" " alt="" coords="856,214,908,214,908,219,856,219"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="1130,204,1278,229"/>
+<area shape="poly" title=" " alt="" coords="1080,214,1116,214,1116,219,1080,219"/>
+<area shape="poly" title=" " alt="" coords="327,89,401,70,442,60,444,66,402,75,328,94"/>
+<area shape="rect" href="autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status" alt="" coords="451,85,585,125"/>
+<area shape="poly" title=" " alt="" coords="352,102,437,102,437,107,352,107"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="401,149,635,175"/>
+<area shape="poly" title=" " alt="" coords="328,115,402,134,444,144,442,149,401,139,327,120"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="683,139,873,179"/>
+<area shape="poly" title=" " alt="" coords="635,158,669,158,669,163,635,163"/>
 </map>
 </div>
 
@@ -1428,7 +1422,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_ed1aed0b4c5a033d4a5b36c06a1a768a.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__v__n_8c.html">guidance_v_n.c</a></li>
-    <li class="footer">Generated on Fri Feb 20 2026 19:14:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Mar 5 2026 10:24:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

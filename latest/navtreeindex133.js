@@ -1,11 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__lidar_tfmini.html#module_load_example__lidar_tfmini":[1,260,0],
-"module__lidar_tfmini.html#module_xml__lidar_tfmini":[1,260,2,0],
-"module__lidar_tfmini_i2c.html":[1,261],
-"module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c":[1,261,1],
-"module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c":[1,261,2],
-"module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c":[1,261,0],
 "module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c":[1,261,2,0],
 "module__lidar_vl53l5cx.html":[1,262],
 "module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx":[1,262,1],
@@ -161,6 +155,7 @@ var NAVTREEINDEX133 =
 "module__mf_ptu.html#module_load_example__mf_ptu":[1,307,0],
 "module__mf_ptu.html#module_xml__mf_ptu":[1,307,2,0],
 "module__mission_common.html":[1,317],
+"module__mission_common.html#af_section":[1,317,1,0],
 "module__mission_common.html#configuration__mission_common":[1,317,1],
 "module__mission_common.html#datalink_functions__mission_common":[1,317,3],
 "module__mission_common.html#functions__mission_common":[1,317,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX133 =
 "module__nav_poles.html":[1,346],
 "module__nav_poles.html#module_load_example__nav_poles":[1,346,0],
 "module__nav_poles.html#module_xml__nav_poles":[1,346,0,0],
-"module__nav_poles_rotorcraft.html":[1,347]
+"module__nav_poles_rotorcraft.html":[1,347],
+"module__nav_poles_rotorcraft.html#functions__nav_poles_rotorcraft":[1,347,1],
+"module__nav_poles_rotorcraft.html#module_load_example__nav_poles_rotorcraft":[1,347,0],
+"module__nav_poles_rotorcraft.html#module_xml__nav_poles_rotorcraft":[1,347,1,0],
+"module__nav_rosette.html":[1,348],
+"module__nav_rosette.html#functions__nav_rosette":[1,348,1]
 };
