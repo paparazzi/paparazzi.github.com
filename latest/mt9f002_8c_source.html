@@ -1137,7 +1137,7 @@ $(document).ready(function(){initNavTree('mt9f002_8c_source.html',''); initResiz
 <div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span> </div>
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>  <span class="comment">/* Software reset */</span></div>
 <div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>  <a class="code hl_function" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463">write_reg</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">mt</a>, <a class="code hl_define" href="mt9f002__regs_8h.html#aefb8239b61eb762e5d73d08e59b43f24">MT9F002_SOFTWARE_RESET</a>, 0x1, 1);</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">usleep</a>(1000000); <span class="comment">// Wait for one second</span></div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">usleep</a>(1500000); <span class="comment">// Wait 1.5 seconds to give time for reset to finish</span></div>
 <div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span> </div>
 <div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>  <span class="comment">/* Based on the interface configure stage 1 */</span></div>
 <div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">mt</a>-&gt;interface == <a class="code hl_enumvalue" href="mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318af74d7bc20fca9c7455d1d66bb56b1560">MT9F002_MIPI</a> || <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">mt</a>-&gt;interface == <a class="code hl_enumvalue" href="mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318a703b05f00330a001a7537a83c423ffee">MT9F002_HiSPi</a>) {</div>
@@ -1661,7 +1661,7 @@ $(document).ready(function(){initNavTree('mt9f002_8c_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="mt9f002_8c.html">mt9f002.c</a></li>
-    <li class="footer">Generated on Tue Mar 17 2026 13:18:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 18 2026 11:12:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
