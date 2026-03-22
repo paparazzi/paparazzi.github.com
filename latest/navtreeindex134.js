@@ -1,5 +1,17 @@
 var NAVTREEINDEX134 =
 {
+"module__nav_line_osam.html":[1,345],
+"module__nav_line_osam.html#module_load_example__nav_line_osam":[1,345,0],
+"module__nav_line_osam.html#module_xml__nav_line_osam":[1,345,0,0],
+"module__nav_poles.html":[1,346],
+"module__nav_poles.html#module_load_example__nav_poles":[1,346,0],
+"module__nav_poles.html#module_xml__nav_poles":[1,346,0,0],
+"module__nav_poles_rotorcraft.html":[1,347],
+"module__nav_poles_rotorcraft.html#functions__nav_poles_rotorcraft":[1,347,1],
+"module__nav_poles_rotorcraft.html#module_load_example__nav_poles_rotorcraft":[1,347,0],
+"module__nav_poles_rotorcraft.html#module_xml__nav_poles_rotorcraft":[1,347,1,0],
+"module__nav_rosette.html":[1,348],
+"module__nav_rosette.html#functions__nav_rosette":[1,348,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,348,0],
 "module__nav_rosette.html#module_xml__nav_rosette":[1,348,1,0],
 "module__nav_rotorcraft.html":[1,349],
@@ -237,17 +249,5 @@ var NAVTREEINDEX134 =
 "module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,376,0],
 "module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,376,3,0],
 "module__radio_control_hott.html":[1,377],
-"module__radio_control_hott.html#configuration__radio_control_hott":[1,377,1],
-"module__radio_control_hott.html#functions__radio_control_hott":[1,377,2],
-"module__radio_control_hott.html#module_load_example__radio_control_hott":[1,377,0],
-"module__radio_control_hott.html#module_xml__radio_control_hott":[1,377,2,0],
-"module__radio_control_intermcu.html":[1,378],
-"module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,378,2],
-"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,378,1],
-"module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,378,0],
-"module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,378,2,0],
-"module__radio_control_ppm.html":[1,379],
-"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,379,1],
-"module__radio_control_ppm.html#functions__radio_control_ppm":[1,379,2],
-"module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,379,0]
+"module__radio_control_hott.html#configuration__radio_control_hott":[1,377,1]
 };

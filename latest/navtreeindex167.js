@@ -1,5 +1,17 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,85],
+"paparazzi_messages.html#VISUALTARGET":[2,0,226],
+"paparazzi_messages.html#WAYPOINT_MOVED":[2,2,28],
+"paparazzi_messages.html#WEATHER":[2,0,210],
+"paparazzi_messages.html#WIND":[2,2,7],
+"paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,203],
+"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,33],
+"paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,47],
+"paparazzi_messages.html#WIND_CLEAR":[2,2,6],
+"paparazzi_messages.html#WIND_INFO":[2,1,2],
+"paparazzi_messages.html#WIND_INFO_RET":[2,0,82],
+"paparazzi_messages.html#WLS_U":[2,0,183],
 "paparazzi_messages.html#WLS_V":[2,0,182],
 "paparazzi_messages.html#WORLD_ENV":[2,2,18],
 "paparazzi_messages.html#WORLD_ENV_REQ":[2,2,19],
@@ -237,17 +249,5 @@ var NAVTREEINDEX167 =
 "pfc__actuators_8c.html#ab326bffc69db661e8415808635fa6e65":[12,0,1,0,6,10,2,1,0],
 "pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2":[12,0,1,0,6,10,2,9],
 "pfc__actuators_8c.html#abffaf2ab2af59819ffbfc16a42bb2ab3":[12,0,1,0,6,10,2,1,5],
-"pfc__actuators_8c.html#ad400c92fdbfefbf3fab529c0533e9072":[12,0,1,0,6,10,2,4],
-"pfc__actuators_8c.html#ad845a921e6a61949ebae99594a558025":[12,0,1,0,6,10,2,12],
-"pfc__actuators_8c.html#af9ae7748a2684ff1076a10bce93409ea":[12,0,1,0,6,10,2,15],
-"pfc__actuators_8c.html#aff893a8e3e5d18d255a170e047e19e87":[12,0,1,0,6,10,2,3],
-"pfc__actuators_8c.html#structpfc__actuator__t":[12,0,1,0,6,10,2,0],
-"pfc__actuators_8c.html#structpfc__actuators__t":[12,0,1,0,6,10,2,1],
-"pfc__actuators_8c_source.html":[12,0,1,0,6,10,2],
-"pfc__actuators_8h.html":[12,0,1,0,6,10,3],
-"pfc__actuators_8h.html#a5427595c53f8bae09c346eaffc347162":[12,0,1,0,6,10,3,0],
-"pfc__actuators_8h.html#a59a669d5b957b6fe4b19882cba6e9690":[12,0,1,0,6,10,3,2],
-"pfc__actuators_8h.html#a6eae81b9a81bb893bd1de4282c1b4c0e":[12,0,1,0,6,10,3,3],
-"pfc__actuators_8h.html#ad845a921e6a61949ebae99594a558025":[12,0,1,0,6,10,3,1],
-"pfc__actuators_8h_source.html":[12,0,1,0,6,10,3]
+"pfc__actuators_8c.html#ad400c92fdbfefbf3fab529c0533e9072":[12,0,1,0,6,10,2,4]
 };

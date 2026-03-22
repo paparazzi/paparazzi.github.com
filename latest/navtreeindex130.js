@@ -1,5 +1,17 @@
 var NAVTREEINDEX130 =
 {
+"module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,487,1],
+"module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,487,3],
+"module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,487,2],
+"module__distributed_circular_formation.html#module_load_example__distributed_circular_formation":[1,487,0],
+"module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,487,3,0],
+"module__dragspeed.html":[1,488],
+"module__dragspeed.html#autotoc_md7":[0],
+"module__dragspeed.html#autotoc_md8":[1],
+"module__dragspeed.html#autotoc_md9":[2],
+"module__dragspeed.html#configuration__dragspeed":[1,488,1],
+"module__dragspeed.html#functions__dragspeed":[1,488,2],
+"module__dragspeed.html#module_load_example__dragspeed":[1,488,0],
 "module__dragspeed.html#module_xml__dragspeed":[1,488,2,3],
 "module__drop_zone.html":[1,321],
 "module__drop_zone.html#module_load_example__drop_zone":[1,321,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX130 =
 "module__gps_skytraq.html#module_xml__gps_skytraq":[1,169,2,0],
 "module__gps_uavcan.html":[1,170],
 "module__gps_uavcan.html#configuration__gps_uavcan":[1,170,1],
-"module__gps_uavcan.html#functions__gps_uavcan":[1,170,2],
-"module__gps_uavcan.html#module_load_example__gps_uavcan":[1,170,0],
-"module__gps_uavcan.html#module_xml__gps_uavcan":[1,170,2,0],
-"module__gps_ublox.html":[1,171],
-"module__gps_ublox.html#configuration__gps_ublox":[1,171,1],
-"module__gps_ublox.html#datalink_functions__gps_ublox":[1,171,3],
-"module__gps_ublox.html#functions__gps_ublox":[1,171,2],
-"module__gps_ublox.html#module_load_example__gps_ublox":[1,171,0],
-"module__gps_ublox.html#module_xml__gps_ublox":[1,171,3,0],
-"module__gps_ubx_i2c.html":[1,172],
-"module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,172,1],
-"module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,172,2],
-"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,172,0]
+"module__gps_uavcan.html#functions__gps_uavcan":[1,170,2]
 };

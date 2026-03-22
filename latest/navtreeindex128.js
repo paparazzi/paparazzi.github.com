@@ -1,5 +1,17 @@
 var NAVTREEINDEX128 =
 {
+"module__actuators_uavcan.html#configuration__actuators_uavcan":[1,21,1],
+"module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,21,0],
+"module__actuators_uavcan.html#module_xml__actuators_uavcan":[1,21,1,0],
+"module__adc.html":[1,279],
+"module__adc.html#module_load_example__adc":[1,279,0],
+"module__adc.html#module_xml__adc":[1,279,0,0],
+"module__adc_generic.html":[1,23],
+"module__adc_generic.html#configuration__adc_generic":[1,23,1],
+"module__adc_generic.html#functions__adc_generic":[1,23,2],
+"module__adc_generic.html#module_load_example__adc_generic":[1,23,0],
+"module__adc_generic.html#module_xml__adc_generic":[1,23,2,0],
+"module__agl_dist.html":[1,441],
 "module__agl_dist.html#configuration__agl_dist":[1,441,1],
 "module__agl_dist.html#functions__agl_dist":[1,441,2],
 "module__agl_dist.html#module_load_example__agl_dist":[1,441,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX128 =
 "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,418,1,0],
 "module__battery_monitor.html":[1,24],
 "module__battery_monitor.html#configuration__battery_monitor":[1,24,1],
-"module__battery_monitor.html#functions__battery_monitor":[1,24,2],
-"module__battery_monitor.html#module_load_example__battery_monitor":[1,24,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,24,2,0],
-"module__bebop_ae_awb.html":[1,57],
-"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
-"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
-"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0],
-"module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,57,2,0],
-"module__bebop_cam.html":[1,480],
-"module__bebop_cam.html#configuration__bebop_cam":[1,480,1],
-"module__bebop_cam.html#functions__bebop_cam":[1,480,2],
-"module__bebop_cam.html#module_load_example__bebop_cam":[1,480,0],
-"module__bebop_cam.html#module_xml__bebop_cam":[1,480,2,0]
+"module__battery_monitor.html#functions__battery_monitor":[1,24,2]
 };

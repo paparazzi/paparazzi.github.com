@@ -1,5 +1,17 @@
 var NAVTREEINDEX136 =
 {
+"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,467,2],
+"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,467,0],
+"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,467,2,0],
+"module__switch_servo.html":[1,469],
+"module__switch_servo.html#configuration__switch_servo":[1,469,1],
+"module__switch_servo.html#functions__switch_servo":[1,469,2],
+"module__switch_servo.html#module_load_example__switch_servo":[1,469,0],
+"module__switch_servo.html#module_xml__switch_servo":[1,469,2,0],
+"module__switch_uart.html":[1,470],
+"module__switch_uart.html#functions__switch_uart":[1,470,1],
+"module__switch_uart.html#module_load_example__switch_uart":[1,470,0],
+"module__switch_uart.html#module_xml__switch_uart":[1,470,1,0],
 "module__sys_id_auto_doublets.html":[1,471],
 "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,471,1],
 "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,471,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX136 =
 "module__video_rtp_stream.html#module_load_example__video_rtp_stream":[1,73,0],
 "module__video_rtp_stream.html#module_xml__video_rtp_stream":[1,73,2,0],
 "module__video_thread.html":[1,74],
-"module__video_thread.html#configuration__video_thread":[1,74,1],
-"module__video_thread.html#functions__video_thread":[1,74,2],
-"module__video_thread.html#module_load_example__video_thread":[1,74,0],
-"module__video_thread.html#module_xml__video_thread":[1,74,2,0],
-"module__video_usb_logger.html":[1,75],
-"module__video_usb_logger.html#configuration__video_usb_logger":[1,75,1],
-"module__video_usb_logger.html#functions__video_usb_logger":[1,75,2],
-"module__video_usb_logger.html#module_load_example__video_usb_logger":[1,75,0],
-"module__video_usb_logger.html#module_xml__video_usb_logger":[1,75,2,0],
-"module__wedgebug.html":[1,530],
-"module__wedgebug.html#configuration__wedgebug":[1,530,1],
-"module__wedgebug.html#functions__wedgebug":[1,530,2],
-"module__wedgebug.html#module_load_example__wedgebug":[1,530,0]
+"module__video_thread.html#configuration__video_thread":[1,74,1]
 };

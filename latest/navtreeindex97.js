@@ -1,5 +1,6 @@
 var NAVTREEINDEX97 =
 {
+"joystick_8c.html#a573cdbbbb3c9b0f6be055bb99fc5b978":[12,0,1,0,6,39,0,1],
 "joystick_8c.html#a6a02aa5c938b511ffde7a43e8db031c8":[12,0,1,0,6,39,0,0],
 "joystick_8c_source.html":[12,0,1,0,6,39,0],
 "joystick_8h.html":[12,0,1,0,6,39,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX97 =
 "l3g4200_8c.html#a04567c5211452c8a7be46d598b33aa84":[12,0,1,0,7,60,7],
 "l3g4200_8c.html#a67ca73762166a11d1b624e0b30c28039":[12,0,1,0,7,60,6],
 "l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe":[12,0,1,0,7,60,2],
-"l3g4200_8c.html#a98a6955be50d60c5afde8a6e87dd8373":[12,0,1,0,7,60,4],
-"l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f":[12,0,1,0,7,60,3]
+"l3g4200_8c.html#a98a6955be50d60c5afde8a6e87dd8373":[12,0,1,0,7,60,4]
 };

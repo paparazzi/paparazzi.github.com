@@ -1,5 +1,17 @@
 var NAVTREEINDEX135 =
 {
+"module__radio_control_hott.html#functions__radio_control_hott":[1,377,2],
+"module__radio_control_hott.html#module_load_example__radio_control_hott":[1,377,0],
+"module__radio_control_hott.html#module_xml__radio_control_hott":[1,377,2,0],
+"module__radio_control_intermcu.html":[1,378],
+"module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,378,2],
+"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,378,1],
+"module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,378,0],
+"module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,378,2,0],
+"module__radio_control_ppm.html":[1,379],
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,379,1],
+"module__radio_control_ppm.html#functions__radio_control_ppm":[1,379,2],
+"module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,379,0],
 "module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,379,2,0],
 "module__radio_control_sbus.html":[1,380],
 "module__radio_control_sbus.html#configuration__radio_control_sbus":[1,380,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX135 =
 "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me":[1,466,0],
 "module__stereocam_follow_me.html#module_xml__stereocam_follow_me":[1,466,0,0],
 "module__stereocam_nav_line_avoid.html":[1,467],
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,467,1],
-"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,467,2],
-"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,467,0],
-"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,467,2,0],
-"module__switch_servo.html":[1,469],
-"module__switch_servo.html#configuration__switch_servo":[1,469,1],
-"module__switch_servo.html#functions__switch_servo":[1,469,2],
-"module__switch_servo.html#module_load_example__switch_servo":[1,469,0],
-"module__switch_servo.html#module_xml__switch_servo":[1,469,2,0],
-"module__switch_uart.html":[1,470],
-"module__switch_uart.html#functions__switch_uart":[1,470,1],
-"module__switch_uart.html#module_load_example__switch_uart":[1,470,0],
-"module__switch_uart.html#module_xml__switch_uart":[1,470,1,0]
+"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,467,1]
 };

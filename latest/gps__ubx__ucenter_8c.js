@@ -21,6 +21,7 @@ var gps__ubx__ucenter_8c =
     [ "GPS_UBX_UCENTER_REPLY_NACK", "gps__ubx__ucenter_8c.html#a4681c16e99b7e0536877058cb7f016c3", null ],
     [ "GPS_UBX_UCENTER_REPLY_NONE", "gps__ubx__ucenter_8c.html#aa69a34a9eeb97fc368bef60e848f96b5", null ],
     [ "GPS_UBX_UCENTER_REPLY_VERSION", "gps__ubx__ucenter_8c.html#aa065c6ae0656a2ee1271452dc39f6787", null ],
+    [ "GPS_UBX_UCENTER_SAVE", "gps__ubx__ucenter_8c.html#a2e8a608f8e2e23721ed188547621b883", null ],
     [ "GPS_UBX_UCENTER_STATUS_AUTOBAUD", "gps__ubx__ucenter_8c.html#a60aeaa85caf0b737d92232109ea198b8", null ],
     [ "GPS_UBX_UCENTER_STATUS_CONFIG", "gps__ubx__ucenter_8c.html#a646a4fe1702180d375fff1979dc34ad4", null ],
     [ "GPS_UBX_UCENTER_STATUS_STOPPED", "gps__ubx__ucenter_8c.html#a55e4a26dfdb97bf102948ba9e4afd5bf", null ],

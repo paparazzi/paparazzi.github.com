@@ -1,5 +1,6 @@
 var NAVTREEINDEX101 =
 {
+"linear__flow__fit_8h.html#aa5afc48167b32f418381b2c99ccf469f":[12,0,1,0,6,12,2,2,0,8],
 "linear__flow__fit_8h.html#aab2ec9008de62d76c2937fc6b3861b1e":[12,0,1,0,6,12,2,2,0,14],
 "linear__flow__fit_8h.html#ac1c609f9975078816d4dd4862d94833b":[12,0,1,0,6,12,2,2,2],
 "linear__flow__fit_8h.html#ac6c693cb960e25ed823b5fba184d6537":[12,0,1,0,6,12,2,2,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX101 =
 "lis302dl__spi_8c.html#a77b7a80348f2cfa82cdee3fec764a2df":[12,0,1,0,7,69,2],
 "lis302dl__spi_8c.html#aa50f2084b9945c0c51d4c12be83e2b50":[12,0,1,0,7,69,1],
 "lis302dl__spi_8c.html#abda53cd19076e92c1fedf273a070906e":[12,0,1,0,7,69,4],
-"lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27":[12,0,1,0,7,69,5],
-"lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc":[12,0,1,0,7,69,3]
+"lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27":[12,0,1,0,7,69,5]
 };

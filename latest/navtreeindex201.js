@@ -1,5 +1,17 @@
 var NAVTREEINDEX201 =
 {
+"structIndiController__int.html#acacce56e284de5fc4290ba44dbc86256":[11,0,675,13],
+"structIndiController__int.html#ad8480ac5fe3030ba2a8effe3a1fe2e87":[11,0,675,19],
+"structIndiController__int.html#ae62949b696e085587434d1fcb6aa86b5":[11,0,675,9],
+"structIndiController__int.html#ae86ce4ebaf7239ec8d12e7e7d499c63f":[11,0,675,4],
+"structStabilizationSetpoint.html":[11,0,1025],
+"structStabilizationSetpoint.html#a39e02b373e8f6d8188751d7ebe2e566e":[11,0,1025,3],
+"structStabilizationSetpoint.html#a5a77b8868aa93dc1b3bd285eb936ad51":[11,0,1025,0],
+"structStabilizationSetpoint.html#a8a2fcc5791a1aa4db4b77f847656fee8":[11,0,1025,2],
+"structStabilizationSetpoint.html#ad682cbe314764339966316d5543cefc5":[11,0,1025,1],
+"structThrustSetpoint.html":[11,0,1071],
+"structThrustSetpoint.html#a8735a49250e839e84386d58203819121":[11,0,1071,0],
+"structThrustSetpoint.html#ad7e7ddf1d2947a62d07749537c05b4f0":[11,0,1071,1],
 "structThrustSetpoint.html#ae83c969a7281ebf3d05835306a2fc541":[11,0,1071,2],
 "structUSBMassStorageConfig.html":[11,0,1094],
 "structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,1094,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX201 =
 "sys__id__chirp_8c.html#aabb56c3d13605ef5d6fe9cc56a3fb0ae":[12,0,1,0,6,69,8,4],
 "sys__id__chirp_8c.html#ab11d0d3dc0b879b6337012e297a81c94":[12,0,1,0,6,69,8,22],
 "sys__id__chirp_8c.html#ab2dbc93f5ec917b752365ea03b7ac88c":[12,0,1,0,6,69,8,29],
-"sys__id__chirp_8c.html#ab47f99f3185651b0506231118cbe64d5":[12,0,1,0,6,69,8,23],
-"sys__id__chirp_8c.html#ab58514cddee23e1a72d465763b68f90f":[12,0,1,0,6,69,8,5],
-"sys__id__chirp_8c.html#abe4370df5ad98d6d4b39b2098a1deafc":[12,0,1,0,6,69,8,30],
-"sys__id__chirp_8c.html#ac48ecacb13409b9eb1a728ebe74ba271":[12,0,1,0,6,69,8,17],
-"sys__id__chirp_8c.html#ad0615cb08ee9d4ffdebaf5c777027c58":[12,0,1,0,6,69,8,31],
-"sys__id__chirp_8c.html#ad255f355f6f935c955a2237c76eb34a9":[12,0,1,0,6,69,8,3],
-"sys__id__chirp_8c.html#adcb98efd2f03586518ffbb29f2d24100":[12,0,1,0,6,69,8,6],
-"sys__id__chirp_8c.html#aeaacc8de78b225d2ae3fcbf2bea70cb1":[12,0,1,0,6,69,8,2],
-"sys__id__chirp_8c.html#aeb7ec911b8f81318e1d622ef78645adf":[12,0,1,0,6,69,8,14],
-"sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733":[12,0,1,0,6,69,8,15],
-"sys__id__chirp_8c.html#af5c1450c810c76b6542c912f0f7cce9d":[12,0,1,0,6,69,8,12],
-"sys__id__chirp_8c_source.html":[12,0,1,0,6,69,8],
-"sys__id__chirp_8h.html":[12,0,1,0,6,69,9]
+"sys__id__chirp_8c.html#ab47f99f3185651b0506231118cbe64d5":[12,0,1,0,6,69,8,23]
 };

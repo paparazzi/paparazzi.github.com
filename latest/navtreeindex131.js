@@ -1,5 +1,17 @@
 var NAVTREEINDEX131 =
 {
+"module__gps_uavcan.html#module_load_example__gps_uavcan":[1,170,0],
+"module__gps_uavcan.html#module_xml__gps_uavcan":[1,170,2,0],
+"module__gps_ublox.html":[1,171],
+"module__gps_ublox.html#configuration__gps_ublox":[1,171,1],
+"module__gps_ublox.html#datalink_functions__gps_ublox":[1,171,3],
+"module__gps_ublox.html#functions__gps_ublox":[1,171,2],
+"module__gps_ublox.html#module_load_example__gps_ublox":[1,171,0],
+"module__gps_ublox.html#module_xml__gps_ublox":[1,171,3,0],
+"module__gps_ubx_i2c.html":[1,172],
+"module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,172,1],
+"module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,172,2],
+"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,172,0],
 "module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c":[1,172,2,0],
 "module__gps_ubx_ucenter.html":[1,173],
 "module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,173,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX131 =
 "module__imu_bmi088_i2c.html#functions__imu_bmi088_i2c":[1,210,2],
 "module__imu_bmi088_i2c.html#module_load_example__imu_bmi088_i2c":[1,210,0],
 "module__imu_bmi088_i2c.html#module_xml__imu_bmi088_i2c":[1,210,2,0],
-"module__imu_chimera.html":[1,211],
-"module__imu_chimera.html#module_load_example__imu_chimera":[1,211,0],
-"module__imu_chimera.html#module_xml__imu_chimera":[1,211,0,0],
-"module__imu_common.html":[1,212],
-"module__imu_common.html#configuration__imu_common":[1,212,1],
-"module__imu_common.html#functions__imu_common":[1,212,2],
-"module__imu_common.html#module_load_example__imu_common":[1,212,0],
-"module__imu_common.html#module_xml__imu_common":[1,212,2,0],
-"module__imu_cube.html":[1,213],
-"module__imu_cube.html#functions__imu_cube":[1,213,1],
-"module__imu_cube.html#module_load_example__imu_cube":[1,213,0],
-"module__imu_cube.html#module_xml__imu_cube":[1,213,1,0],
-"module__imu_disco.html":[1,214]
+"module__imu_chimera.html":[1,211]
 };

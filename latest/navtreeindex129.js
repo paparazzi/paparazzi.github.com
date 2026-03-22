@@ -1,5 +1,17 @@
 var NAVTREEINDEX129 =
 {
+"module__battery_monitor.html#module_load_example__battery_monitor":[1,24,0],
+"module__battery_monitor.html#module_xml__battery_monitor":[1,24,2,0],
+"module__bebop_ae_awb.html":[1,57],
+"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
+"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
+"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0],
+"module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,57,2,0],
+"module__bebop_cam.html":[1,480],
+"module__bebop_cam.html#configuration__bebop_cam":[1,480,1],
+"module__bebop_cam.html#functions__bebop_cam":[1,480,2],
+"module__bebop_cam.html#module_load_example__bebop_cam":[1,480,0],
+"module__bebop_cam.html#module_xml__bebop_cam":[1,480,2,0],
 "module__board_betafpv_aiof7.html":[1,40],
 "module__board_betafpv_aiof7.html#module_load_example__board_betafpv_aiof7":[1,40,0],
 "module__board_betafpv_aiof7.html#module_xml__board_betafpv_aiof7":[1,40,0,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX129 =
 "module__direct_memory_logger.html#functions__direct_memory_logger":[1,268,2],
 "module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,268,0],
 "module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,268,2,0],
-"module__distributed_circular_formation.html":[1,487],
-"module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,487,1],
-"module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,487,3],
-"module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,487,2],
-"module__distributed_circular_formation.html#module_load_example__distributed_circular_formation":[1,487,0],
-"module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,487,3,0],
-"module__dragspeed.html":[1,488],
-"module__dragspeed.html#autotoc_md7":[0],
-"module__dragspeed.html#autotoc_md8":[1],
-"module__dragspeed.html#autotoc_md9":[2],
-"module__dragspeed.html#configuration__dragspeed":[1,488,1],
-"module__dragspeed.html#functions__dragspeed":[1,488,2],
-"module__dragspeed.html#module_load_example__dragspeed":[1,488,0]
+"module__distributed_circular_formation.html":[1,487]
 };
