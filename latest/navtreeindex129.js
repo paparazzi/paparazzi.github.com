@@ -1,5 +1,13 @@
 var NAVTREEINDEX129 =
 {
+"module__bat_checker.html#module_xml__bat_checker":[1,147,2,0],
+"module__bat_voltage_ardrone2.html":[1,418],
+"module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,418,1],
+"module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,418,0],
+"module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,418,1,0],
+"module__battery_monitor.html":[1,24],
+"module__battery_monitor.html#configuration__battery_monitor":[1,24,1],
+"module__battery_monitor.html#functions__battery_monitor":[1,24,2],
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,24,0],
 "module__battery_monitor.html#module_xml__battery_monitor":[1,24,2,0],
 "module__bebop_ae_awb.html":[1,57],
@@ -241,13 +249,5 @@ var NAVTREEINDEX129 =
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,143,0],
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,143,1,0],
 "module__digital_cam_video.html":[1,144],
-"module__digital_cam_video.html#functions__digital_cam_video":[1,144,1],
-"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,144,0],
-"module__digital_cam_video.html#module_xml__digital_cam_video":[1,144,1,0],
-"module__direct_memory_logger.html":[1,268],
-"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,268,1],
-"module__direct_memory_logger.html#functions__direct_memory_logger":[1,268,2],
-"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,268,0],
-"module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,268,2,0],
-"module__distributed_circular_formation.html":[1,487]
+"module__digital_cam_video.html#functions__digital_cam_video":[1,144,1]
 };
