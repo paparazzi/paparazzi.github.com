@@ -1,5 +1,7 @@
 var NAVTREEINDEX129 =
 {
+"module__bat_checker.html#functions__bat_checker":[1,147,2],
+"module__bat_checker.html#module_load_example__bat_checker":[1,147,0],
 "module__bat_checker.html#module_xml__bat_checker":[1,147,2,0],
 "module__bat_voltage_ardrone2.html":[1,418],
 "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,418,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX129 =
 "module__digital_cam_uart.html":[1,143],
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,143,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,143,0],
-"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,143,1,0],
-"module__digital_cam_video.html":[1,144],
-"module__digital_cam_video.html#functions__digital_cam_video":[1,144,1]
+"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,143,1,0]
 };

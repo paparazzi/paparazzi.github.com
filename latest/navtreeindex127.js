@@ -1,5 +1,7 @@
 var NAVTREEINDEX127 =
 {
+"mission__common_8c.html#a3f6b94a9d68ae0afc1ae4bee904db667":[12,0,1,0,6,45,4,17],
+"mission__common_8c.html#a6a886a1e7ba0bd3d1b89a15184fee2bd":[12,0,1,0,6,45,4,11],
 "mission__common_8c.html#a6bc6421e3873d2b4d620bc33e1e90446":[12,0,1,0,6,45,4,6],
 "mission__common_8c.html#a7177b7dbe44718e5e2cd65e33c45257a":[12,0,1,0,6,45,4,2],
 "mission__common_8c.html#a8ae82a35d851ba67a7d044f4950db583":[12,0,1,0,6,45,4,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX127 =
 "module__actuators_t4_uart.html":[1,20],
 "module__actuators_t4_uart.html#configuration__actuators_t4_uart":[1,20,1],
 "module__actuators_t4_uart.html#functions__actuators_t4_uart":[1,20,2],
-"module__actuators_t4_uart.html#module_load_example__actuators_t4_uart":[1,20,0],
-"module__actuators_t4_uart.html#module_xml__actuators_t4_uart":[1,20,2,0],
-"module__actuators_uavcan.html":[1,21]
+"module__actuators_t4_uart.html#module_load_example__actuators_t4_uart":[1,20,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX168 =
 {
+"pfc__actuators_8c.html#abffaf2ab2af59819ffbfc16a42bb2ab3":[12,0,1,0,6,10,2,1,5],
+"pfc__actuators_8c.html#ad400c92fdbfefbf3fab529c0533e9072":[12,0,1,0,6,10,2,4],
 "pfc__actuators_8c.html#ad845a921e6a61949ebae99594a558025":[12,0,1,0,6,10,2,12],
 "pfc__actuators_8c.html#af9ae7748a2684ff1076a10bce93409ea":[12,0,1,0,6,10,2,15],
 "pfc__actuators_8c.html#aff893a8e3e5d18d255a170e047e19e87":[12,0,1,0,6,10,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX168 =
 "power__uavcan_8c.html#structcircuit__status":[12,0,1,0,6,63,81,1],
 "power__uavcan_8c.html#structuavcan__circuit__battery__t":[12,0,1,0,6,63,81,2],
 "power__uavcan_8c_source.html":[12,0,1,0,6,63,81],
-"power__uavcan_8h.html":[12,0,1,0,6,63,82],
-"power__uavcan_8h.html#ab60b03d993c38a9d0971869eb04aca30":[12,0,1,0,6,63,82,0],
-"power__uavcan_8h_source.html":[12,0,1,0,6,63,82]
+"power__uavcan_8h.html":[12,0,1,0,6,63,82]
 };

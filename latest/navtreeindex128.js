@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"module__actuators_t4_uart.html#module_xml__actuators_t4_uart":[1,20,2,0],
+"module__actuators_uavcan.html":[1,21],
 "module__actuators_uavcan.html#configuration__actuators_uavcan":[1,21,1],
 "module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,21,0],
 "module__actuators_uavcan.html#module_xml__actuators_uavcan":[1,21,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "module__baro_sim.html#module_load_example__baro_sim":[1,417,0],
 "module__baro_sim.html#module_xml__baro_sim":[1,417,1,0],
 "module__bat_checker.html":[1,147],
-"module__bat_checker.html#configuration__bat_checker":[1,147,1],
-"module__bat_checker.html#functions__bat_checker":[1,147,2],
-"module__bat_checker.html#module_load_example__bat_checker":[1,147,0]
+"module__bat_checker.html#configuration__bat_checker":[1,147,1]
 };

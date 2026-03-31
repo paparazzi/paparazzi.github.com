@@ -51,5 +51,5 @@ var guidance__indi__hybrid_8h =
     [ "pitch_filt", "guidance__indi__hybrid_8h.html#a6987b53838cf70902ed70ca11492c6a7", null ],
     [ "roll_filt", "guidance__indi__hybrid_8h.html#a19dc03ef4234ea423340bcc0c249e1cf", null ],
     [ "take_heading_control", "guidance__indi__hybrid_8h.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ],
-    [ "yaw_filt", "guidance__indi__hybrid_8h.html#aa871c61fc3c85227c525a091f0f78019", null ]
+    [ "yaw_filt", "guidance__indi__hybrid_8h.html#aa2b3f165493f064778112cb5a88ff493", null ]
 ];

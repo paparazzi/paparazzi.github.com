@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__gps_skytraq.html":[1,169],
+"module__gps_skytraq.html#configuration__gps_skytraq":[1,169,1],
 "module__gps_skytraq.html#functions__gps_skytraq":[1,169,2],
 "module__gps_skytraq.html#module_load_example__gps_skytraq":[1,169,0],
 "module__gps_skytraq.html#module_xml__gps_skytraq":[1,169,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common":[1,208,2,0],
 "module__imu_bebop.html":[1,209],
 "module__imu_bebop.html#configuration__imu_bebop":[1,209,1],
-"module__imu_bebop.html#functions__imu_bebop":[1,209,2],
-"module__imu_bebop.html#module_load_example__imu_bebop":[1,209,0],
-"module__imu_bebop.html#module_xml__imu_bebop":[1,209,2,0]
+"module__imu_bebop.html#functions__imu_bebop":[1,209,2]
 };

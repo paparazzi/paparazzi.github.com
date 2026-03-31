@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"mav__exercise_8h.html#a8e35250b1c1be255ad0bd7c7513a6825":[12,0,1,0,6,43,1,0],
+"mav__exercise_8h_source.html":[12,0,1,0,6,43,1],
 "mavlink_8c.html":[12,0,1,0,6,15,21],
 "mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1":[12,0,1,0,6,15,21,28],
 "mavlink_8c.html#a050527395d793a9d3502e1614c953f3b":[12,0,1,0,6,15,21,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,20,0,1],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,20,0,0],
 "max7456_8c_source.html":[12,0,1,0,6,20,0],
-"max7456_8h.html":[12,0,1,0,6,20,1],
-"max7456_8h.html#a1d6d4401863cba472802654472781050":[12,0,1,0,6,20,1,2],
-"max7456_8h.html#a7b8eb5fd734424d9b1acb486f42bb2f3":[12,0,1,0,6,20,1,4]
+"max7456_8h.html":[12,0,1,0,6,20,1]
 };

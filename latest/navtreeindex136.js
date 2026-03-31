@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__stereocam_droplet.html#functions__stereocam_droplet":[1,465,1],
+"module__stereocam_droplet.html#module_load_example__stereocam_droplet":[1,465,0],
 "module__stereocam_droplet.html#module_xml__stereocam_droplet":[1,465,1,0],
 "module__stereocam_follow_me.html":[1,466],
 "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me":[1,466,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__video_rtp_stream.html#configuration__video_rtp_stream":[1,73,1],
 "module__video_rtp_stream.html#functions__video_rtp_stream":[1,73,2],
 "module__video_rtp_stream.html#module_load_example__video_rtp_stream":[1,73,0],
-"module__video_rtp_stream.html#module_xml__video_rtp_stream":[1,73,2,0],
-"module__video_thread.html":[1,74],
-"module__video_thread.html#configuration__video_thread":[1,74,1]
+"module__video_rtp_stream.html#module_xml__video_rtp_stream":[1,73,2,0]
 };

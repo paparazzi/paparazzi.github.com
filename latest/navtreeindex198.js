@@ -1,5 +1,7 @@
 var NAVTREEINDEX198 =
 {
+"stabilization__attitude__heli__indi_8h.html#structHeliIndiGains":[12,0,1,0,3,2,2,12,0],
+"stabilization__attitude__heli__indi_8h_source.html":[12,0,1,0,3,2,2,12],
 "stabilization__attitude__passthrough_8c.html":[12,0,1,0,3,2,2,13],
 "stabilization__attitude__passthrough_8c.html#a08849596f1ed44740256f2f07c988f9d":[12,0,1,0,3,2,2,13,2],
 "stabilization__attitude__passthrough_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,13,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX198 =
 "stabilization__attitude__ref__euler__int_8h.html#abb8bfe53e5b1b63afadf9c9f80e8b17c":[12,0,1,0,3,2,2,31,0,1],
 "stabilization__attitude__ref__euler__int_8h.html#structAttRefEulerInt":[12,0,1,0,3,2,2,31,0],
 "stabilization__attitude__ref__euler__int_8h_source.html":[12,0,1,0,3,2,2,31],
-"stabilization__attitude__ref__int_8h.html":[12,0,1,0,3,2,2,32],
-"stabilization__attitude__ref__int_8h.html#a6a9ac7c2e058fdcfbd5ec56c9979944e":[12,0,1,0,3,2,2,32,2],
-"stabilization__attitude__ref__int_8h.html#a94a3fc964bb686c26cc9fe01d9c7a50f":[12,0,1,0,3,2,2,32,0]
+"stabilization__attitude__ref__int_8h.html":[12,0,1,0,3,2,2,32]
 };

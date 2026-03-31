@@ -1,5 +1,7 @@
 var NAVTREEINDEX169 =
 {
+"power__uavcan_8h.html#ab60b03d993c38a9d0971869eb04aca30":[12,0,1,0,6,63,82,0],
+"power__uavcan_8h_source.html":[12,0,1,0,6,63,82],
 "ppm_8c.html":[12,0,1,0,6,56,5],
 "ppm_8c.html#a571f5404ba9f1f7f138fcc3945d9202b":[12,0,1,0,6,56,5,9],
 "ppm_8c.html#a742fc8b769b44928b55a174fead974b0":[12,0,1,0,6,56,5,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX169 =
 "pprz__matrix__decomp__float_8h.html#abe87f03fe29ec347d308f15c6dccfe9b":[12,0,1,0,4,24,1],
 "pprz__matrix__decomp__float_8h.html#ad4f442e8bd54d74ee9437a738788e186":[12,0,1,0,4,24,3],
 "pprz__matrix__decomp__float_8h.html#af9d29d8c0da1d82530a5ed4f240e969a":[12,0,1,0,4,24,2],
-"pprz__matrix__decomp__float_8h_source.html":[12,0,1,0,4,24],
-"pprz__orientation__conversion_8c.html":[12,0,1,0,4,25],
-"pprz__orientation__conversion_8c_source.html":[12,0,1,0,4,25]
+"pprz__matrix__decomp__float_8h_source.html":[12,0,1,0,4,24]
 };

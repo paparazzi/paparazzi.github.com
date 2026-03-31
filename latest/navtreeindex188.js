@@ -1,5 +1,7 @@
 var NAVTREEINDEX188 =
 {
+"rover_2navigation_8c.html#a497df0753fcbcd7b681341695228527c":[12,0,1,0,3,3,9,23],
+"rover_2navigation_8c.html#a64a3814d1672e69989f80701a0ff5749":[12,0,1,0,3,3,9,6],
 "rover_2navigation_8c.html#a66999fe9753ffaa9c972ca15d9fc3333":[12,0,1,0,3,3,9,10],
 "rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897":[12,0,1,0,3,3,9,13],
 "rover_2navigation_8c.html#a7369d742619e7cbb1b71ec46f845f06e":[12,0,1,0,3,3,9,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX188 =
 "rover__guidance__steering_8h.html#a3e6d36bbe670f939492f53b9612412ca":[12,0,1,0,3,3,0,5,1,7],
 "rover__guidance__steering_8h.html#a4aa67d601f9015d5558cbf924c125263":[12,0,1,0,3,3,0,5,19],
 "rover__guidance__steering_8h.html#a4dd411d8ddbf79b1853055422bd74726":[12,0,1,0,3,3,0,5,12],
-"rover__guidance__steering_8h.html#a4df08d33248e3499169ed183f69242d9":[12,0,1,0,3,3,0,5,4],
-"rover__guidance__steering_8h.html#a7101c08477da045a45739605723b960c":[12,0,1,0,3,3,0,5,15],
-"rover__guidance__steering_8h.html#a7954103e48b8c4df15f16c7ad40996bb":[12,0,1,0,3,3,0,5,1,1]
+"rover__guidance__steering_8h.html#a4df08d33248e3499169ed183f69242d9":[12,0,1,0,3,3,0,5,4]
 };

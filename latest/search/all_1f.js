@@ -276,7 +276,7 @@ var searchData=
   ['uint16_5ft_273',['uint16_t',['../rtwtypes_8h.html#a10de142b55c8bcd07329b4e92f612528',1,'uint16_T:&#160;rtwtypes.h'],['../vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30',1,'uint16_t:&#160;vl53l1_types.h']]],
   ['uint16frombuf_274',['Uint16FromBuf',['../ezcurrent_8c.html#a7da58e837c66e66d6705f3d602dfe62c',1,'ezcurrent.c']]],
   ['uint16vect3_275',['Uint16Vect3',['../group__math__algebra__int.html#structUint16Vect3',1,'']]],
-  ['uint32_5ft_276',['uint32_t',['../vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62',1,'uint32_t:&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a03761f68219fb1602eeda97bd628da43',1,'uint32_T:&#160;rtwtypes.h']]],
+  ['uint32_5ft_276',['uint32_t',['../rtwtypes_8h.html#a03761f68219fb1602eeda97bd628da43',1,'uint32_T:&#160;rtwtypes.h'],['../vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62',1,'uint32_t:&#160;vl53l1_types.h']]],
   ['uint64_5ft_277',['uint64_t',['../vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad',1,'vl53l1_types.h']]],
   ['uint8_5ft_278',['uint8_t',['../rtwtypes_8h.html#a2532a6244e023eee49f315c10f1f7c53',1,'uint8_T:&#160;rtwtypes.h'],['../vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'uint8_t:&#160;vl53l1_types.h']]],
   ['uint8vect3_279',['Uint8Vect3',['../group__math__algebra__int.html#structUint8Vect3',1,'']]],

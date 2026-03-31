@@ -63,6 +63,7 @@ var guidance__indi__hybrid_8c =
     [ "indi_vel_sp", "guidance__indi__hybrid_8c.html#a074cabc08d481fdda5912c12aab161ea", null ],
     [ "inv_eff", "guidance__indi__hybrid_8c.html#a42197290f1118a038fd793ff538a8dbb", null ],
     [ "pitch_filt", "guidance__indi__hybrid_8c.html#a6987b53838cf70902ed70ca11492c6a7", null ],
+    [ "previous_yaw_raw", "guidance__indi__hybrid_8c.html#aa6f6fb7cebdc49dfefc808c6339aede1", null ],
     [ "roll_filt", "guidance__indi__hybrid_8c.html#a19dc03ef4234ea423340bcc0c249e1cf", null ],
     [ "sp_accel", "guidance__indi__hybrid_8c.html#a596a1bce76f2a37bf46aa5149ad745d7", null ],
     [ "take_heading_control", "guidance__indi__hybrid_8c.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ],
@@ -74,5 +75,6 @@ var guidance__indi__hybrid_8c =
     [ "time_of_vel_sp", "guidance__indi__hybrid_8c.html#a17cb66c22ecad94f6da8c34538ecb5c7", null ],
     [ "v_gih", "guidance__indi__hybrid_8c.html#af0feadcd36da1b3a804d75dc567f4a83", null ],
     [ "vel_sp_ev", "guidance__indi__hybrid_8c.html#af56dc6445dd449650ea8d54bc7a1ecc7", null ],
-    [ "yaw_filt", "guidance__indi__hybrid_8c.html#aa871c61fc3c85227c525a091f0f78019", null ]
+    [ "yaw_delta_filt", "guidance__indi__hybrid_8c.html#ab55ebd4a594a6e5d6ba83c48622e5c46", null ],
+    [ "yaw_filt", "guidance__indi__hybrid_8c.html#aa2b3f165493f064778112cb5a88ff493", null ]
 ];

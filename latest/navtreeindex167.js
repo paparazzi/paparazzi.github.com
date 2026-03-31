@@ -1,5 +1,7 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#VIDEO_SYNC":[2,0,216],
+"paparazzi_messages.html#VISION_OUTBACK":[2,0,53],
 "paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,85],
 "paparazzi_messages.html#VISUALTARGET":[2,0,226],
 "paparazzi_messages.html#WAYPOINT_MOVED":[2,2,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX167 =
 "pfc__actuators_8c.html#aa8783d97c47af4e7a2eec17cfe0c5834":[12,0,1,0,6,10,2,1,6],
 "pfc__actuators_8c.html#ab284fcd9da7e7e3ea5db75ca3411e5cc":[12,0,1,0,6,10,2,18],
 "pfc__actuators_8c.html#ab326bffc69db661e8415808635fa6e65":[12,0,1,0,6,10,2,1,0],
-"pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2":[12,0,1,0,6,10,2,9],
-"pfc__actuators_8c.html#abffaf2ab2af59819ffbfc16a42bb2ab3":[12,0,1,0,6,10,2,1,5],
-"pfc__actuators_8c.html#ad400c92fdbfefbf3fab529c0533e9072":[12,0,1,0,6,10,2,4]
+"pfc__actuators_8c.html#ab4bad0cf6539866f55a46d16d0a87cb2":[12,0,1,0,6,10,2,9]
 };
