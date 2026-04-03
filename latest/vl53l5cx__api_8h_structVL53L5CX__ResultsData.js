@@ -2,7 +2,7 @@ var vl53l5cx__api_8h_structVL53L5CX__ResultsData =
 [
     [ "ambient_per_spad", "vl53l5cx__api_8h.html#a950f891ceb8e8ecb5712039d5f8a6a2c", null ],
     [ "distance_mm", "vl53l5cx__api_8h.html#a26cc61b2a5571e05483c784bd94d21ab", null ],
-    [ "motion_indicator", "vl53l5cx__api_8h.html#acaa772f85a418e0973e666b8af8d4ecf", null ],
+    [ "motion_indicator", "vl53l5cx__api_8h.html#ad7c8d0f17eefd4e40181bdd19f0bc8aa", null ],
     [ "nb_spads_enabled", "vl53l5cx__api_8h.html#a1dd1af7f8bfb012335f27191ed42df36", null ],
     [ "nb_target_detected", "vl53l5cx__api_8h.html#a4a4f3a0f391af1b40d900239345c8912", null ],
     [ "range_sigma_mm", "vl53l5cx__api_8h.html#a13a2cb338de44e03d5b31bdd3b94909f", null ],

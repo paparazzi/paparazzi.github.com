@@ -1,7 +1,7 @@
 var l3g4200_8h_structL3g4200 =
 [
     [ "config", "l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9", null ],
-    [ "data", "l3g4200_8h.html#a71f9b95716c417ae11648eb0927aaef4", null ],
+    [ "data", "l3g4200_8h.html#a472af0f011340200c78ebaccf07f22c7", null ],
     [ "data_available", "l3g4200_8h.html#a1b80c1032f6754150bacbdb11a5173a5", null ],
     [ "i2c_p", "l3g4200_8h.html#a39391231a96bd1b4a5417b419a4fbaf3", null ],
     [ "i2c_trans", "l3g4200_8h.html#a51e7c4bd7c79806d7e498fa59ee2983c", null ],

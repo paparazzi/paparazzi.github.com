@@ -1,15 +1,37 @@
 var ground__detect_8c =
 [
-    [ "DEBUG_GROUND_DETECT", "ground__detect_8c.html#af28baac88d8808e75c042a3d34962ba7", null ],
+    [ "force_sensor_data_t", "ground__detect_8c.html#structforce__sensor__data__t", [
+      [ "count", "ground__detect_8c.html#a9e2d29c50c35235b5f783c1b4cbee078", null ],
+      [ "offsets", "ground__detect_8c.html#a4dfbb5971e11468bd8fecb6818a6511d", null ],
+      [ "values_filt", "ground__detect_8c.html#a196a538408cff7be18972c08c2317135", null ]
+    ] ],
+    [ "FORCE_SENSOR_MAX_NB", "ground__detect_8c.html#a6bea049c5201af5e84ecc78d8e29be3f", null ],
     [ "GROUND_DETECT_COUNTER_TRIGGER", "ground__detect_8c.html#a4983a85c4a523c6e195ee12da1f73694", null ],
     [ "GROUND_DETECT_FILT_FREQ", "ground__detect_8c.html#a40f2b8b4c7f532afbc89df480abc1a1b", null ],
+    [ "GROUND_DETECT_FORCE_SENSOR_MEDIAN_FILT_SIZE", "ground__detect_8c.html#a1a30f37166c16db101311eead134ffb6", null ],
+    [ "GROUND_DETECT_FORCE_SENSOR_THRESHOLD", "ground__detect_8c.html#a17262ed96db02a1ea1bc6a24b5d4aab4", null ],
+    [ "GROUND_DETECT_NUM_TRIGGERS", "ground__detect_8c.html#adc3f4ab00baa6e07ba76ed217118b7a3", null ],
+    [ "GROUND_DETECT_REVERSE_THRUST_ON_GROUND_DETECTED", "ground__detect_8c.html#ab74f5bd8efd3a68078b65906981fe0d6", null ],
     [ "GROUND_DETECT_SPECIFIC_THRUST_THRESHOLD", "ground__detect_8c.html#adb61a7405c937f6f2d7b5d57dd9b004d", null ],
+    [ "GROUND_DETECT_USE_FORCE_SENSOR", "ground__detect_8c.html#a8bcb4115c5d707d393381c0813ab56d5", null ],
+    [ "GROUND_DETECT_VERTICAL_ACCEL_THRESHOLD", "ground__detect_8c.html#ad1d71c79db9c3bfc7907f1386597c46b", null ],
+    [ "GROUND_DETECT_VERTICAL_SPEED_THRESHOLD", "ground__detect_8c.html#a075671ec9e2aae433bceeba9af1594e9", null ],
     [ "ground_detect", "ground__detect_8c.html#a8878e5a02ad504f37f53d03557f8bd0a", null ],
     [ "ground_detect_filter_accel", "ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d", null ],
     [ "ground_detect_init", "ground__detect_8c.html#a4c008341e7019ccb73ce715d8ff090f9", null ],
     [ "ground_detect_periodic", "ground__detect_8c.html#adfc70ed837d0b3066745bc6fd071adc8", null ],
-    [ "accel_filter", "ground__detect_8c.html#a09144a75e5bfb996e7c3b4e294fa86cc", null ],
+    [ "ground_detect_reverse_thrust", "ground__detect_8c.html#a3ee9569215738bae568d94f03ed62de2", null ],
+    [ "ground_detect_set_offset_sensors", "ground__detect_8c.html#af04e8401e115cb4aa544618c9cb9288e", null ],
+    [ "ground_detect_start_reverse_thrust", "ground__detect_8c.html#a4dfc883a15ebfa6deab46a85cdc86028", null ],
+    [ "ground_detect_stop_reverse_thrust", "ground__detect_8c.html#a3a4dcc0c4d598f9e6cc6c41697561673", null ],
+    [ "send_ground_detect", "ground__detect_8c.html#a82dccc47a437587b9bda5730d74babe0", null ],
     [ "counter", "ground__detect_8c.html#aaec3cd97712876a5e9ff70559b1fca26", null ],
     [ "disarm_on_not_in_flight", "ground__detect_8c.html#a3d55aa41d11d2ee42e7e9b55fe4070b5", null ],
-    [ "ground_detected", "ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1", null ]
+    [ "force_sensor", "ground__detect_8c.html#a71b6fb58295e0529941dfb455e1e21f0", null ],
+    [ "force_sensor_ground_threshold", "ground__detect_8c.html#a69543c52ec0b608cd3fdacdf8b5961e4", null ],
+    [ "ground_detect_status", "ground__detect_8c.html#ac0b5529ce85b0b74edcea65016b44948", null ],
+    [ "ground_detect_values", "ground__detect_8c.html#a4c016734e8d308f7e3829b8231d1b78c", null ],
+    [ "ground_detected", "ground__detect_8c.html#a81e5a94b63ef2cd200aa261a7321dcf1", null ],
+    [ "reverse_th_level", "ground__detect_8c.html#a3930bacf53f0f6afa56211a062833010", null ],
+    [ "reverse_thrust", "ground__detect_8c.html#ac89bb3f5acdfefef6bc14c3889365144", null ]
 ];

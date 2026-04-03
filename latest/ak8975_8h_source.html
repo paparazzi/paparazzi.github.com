@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html',''); initResiza
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="ak8975_8h.html">   69</a></span>  <span class="keyword">union </span>{</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">struct </span><a class="code hl_struct" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a> vect;           </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_typedef" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> value[3];                 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="ak8975_8h.html#ad16cb136eee8c9225e4d7381a18d1eb8">   72</a></span>  } <a class="code hl_variable" href="ak8975_8h.html#ad16cb136eee8c9225e4d7381a18d1eb8">data</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="ak8975_8h.html#a082136ccc151e3f5aac29ab6f2868693">   72</a></span>  } <a class="code hl_variable" href="ak8975_8h.html#a082136ccc151e3f5aac29ab6f2868693">data</a>;</div>
 </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
 </div>
@@ -193,6 +193,7 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html',''); initResiza
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">/* AK8975_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aak8975_8h_html_a03a6463b6b6cf5ba8c78a61f7f7aa698"><div class="ttname"><a href="ak8975_8h.html#a03a6463b6b6cf5ba8c78a61f7f7aa698">Ak8975::status</a></div><div class="ttdeci">enum Ak8975Status status</div><div class="ttdoc">main status</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8h_source.html#l00064">ak8975.h:64</a></div></div>
+<div class="ttc" id="aak8975_8h_html_a082136ccc151e3f5aac29ab6f2868693"><div class="ttname"><a href="ak8975_8h.html#a082136ccc151e3f5aac29ab6f2868693">Ak8975::data</a></div><div class="ttdeci">union Ak8975::@316 data</div></div>
 <div class="ttc" id="aak8975_8h_html_a25e38416f60c0c4259422d2a6fc48ebc"><div class="ttname"><a href="ak8975_8h.html#a25e38416f60c0c4259422d2a6fc48ebc">ak8975_read</a></div><div class="ttdeci">void ak8975_read(struct Ak8975 *ak)</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8c_source.html#l00113">ak8975.c:113</a></div></div>
 <div class="ttc" id="aak8975_8h_html_a28e52220eeec86e6f8cce258436abe61"><div class="ttname"><a href="ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61">Ak8975ConfStatus</a></div><div class="ttdeci">Ak8975ConfStatus</div><div class="ttdoc">config status states</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8h_source.html#l00044">ak8975.h:44</a></div></div>
 <div class="ttc" id="aak8975_8h_html_a28e52220eeec86e6f8cce258436abe61a736022a8fd3eb152072b51b3e219e3a0"><div class="ttname"><a href="ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61a736022a8fd3eb152072b51b3e219e3a0">AK_DISABLE_ACCESS_CALIBRATION</a></div><div class="ttdeci">@ AK_DISABLE_ACCESS_CALIBRATION</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8h_source.html#l00047">ak8975.h:47</a></div></div>
@@ -214,7 +215,6 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html',''); initResiza
 <div class="ttc" id="aak8975_8h_html_a9b1bc2058970c375dc5bbf4244369d67"><div class="ttname"><a href="ak8975_8h.html#a9b1bc2058970c375dc5bbf4244369d67">Ak8975::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8h_source.html#l00062">ak8975.h:62</a></div></div>
 <div class="ttc" id="aak8975_8h_html_a9c3c2e79c50af6fedc845b48da28ab35"><div class="ttname"><a href="ak8975_8h.html#a9c3c2e79c50af6fedc845b48da28ab35">Ak8975::i2c_p</a></div><div class="ttdeci">struct i2c_periph * i2c_p</div><div class="ttdoc">peripheral used for communcation</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8h_source.html#l00060">ak8975.h:60</a></div></div>
 <div class="ttc" id="aak8975_8h_html_ab0f5eefeb80614ad955e79f5b34819eb"><div class="ttname"><a href="ak8975_8h.html#ab0f5eefeb80614ad955e79f5b34819eb">ak8975_event</a></div><div class="ttdeci">void ak8975_event(struct Ak8975 *ak)</div><div class="ttdef"><b>Definition</b> <a href="ak8975_8c_source.html#l00131">ak8975.c:131</a></div></div>
-<div class="ttc" id="aak8975_8h_html_ad16cb136eee8c9225e4d7381a18d1eb8"><div class="ttname"><a href="ak8975_8h.html#ad16cb136eee8c9225e4d7381a18d1eb8">Ak8975::data</a></div><div class="ttdeci">union Ak8975::@314 data</div></div>
 <div class="ttc" id="aak8975_8h_html_structAk8975"><div class="ttname"><a href="ak8975_8h.html#structAk8975">Ak8975</a></div><div class="ttdef"><b>Definition</b> <a href="ak8975_8h_source.html#l00059">ak8975.h:59</a></div></div>
 <div class="ttc" id="agroup__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdef"><b>Definition</b> <a href="i2c_8h_source.html#l00149">i2c.h:149</a></div></div>
 <div class="ttc" id="agroup__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure.</div><div class="ttdef"><b>Definition</b> <a href="i2c_8h_source.html#l00094">i2c.h:94</a></div></div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ak8975_8h.html">ak8975.h</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 13:53:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Apr 3 2026 08:13:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

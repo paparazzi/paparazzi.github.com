@@ -6,6 +6,6 @@ var nps__flightgear_8c =
     [ "nps_flightgear_receive", "nps__flightgear_8c.html#a038db04936c97960d60df95569f61d9b", null ],
     [ "nps_flightgear_send", "nps__flightgear_8c.html#a33c7a87ace952fc7cf307301840ea72d", null ],
     [ "nps_flightgear_send_fdm", "nps__flightgear_8c.html#abaad453431e1fcbe9da597d2389250b8", null ],
-    [ "flightgear", "nps__flightgear_8c.html#a97c261a4ab6568c61800fa6e2d3f7601", null ],
+    [ "flightgear", "nps__flightgear_8c.html#a583c455951225571306a4235784c7724", null ],
     [ "th_fg_rx", "nps__flightgear_8c.html#a6f515d5342d1758bc7cd4e24b4116eb2", null ]
 ];

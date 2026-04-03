@@ -106,10 +106,11 @@ var searchData=
   ['19_103',['19',['../paparazzi_messages.html#INFLIGH_CALIB',1,'INFLIGH_CALIB (ID 19)'],['../paparazzi_messages.html#POWER_DEVICE',1,'POWER_DEVICE (ID 19)']]],
   ['190_104',['ACTUATORS_T4_IN (ID 190)',['../paparazzi_messages.html#ACTUATORS_T4_IN',1,'']]],
   ['191_105',['ACTUATORS_T4_OUT (ID 191)',['../paparazzi_messages.html#ACTUATORS_T4_OUT',1,'']]],
-  ['193_106',['AHRS_LKF (ID 193)',['../paparazzi_messages.html#AHRS_LKF',1,'']]],
-  ['196_107',['AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)',['../paparazzi_messages.html#AIRSPEED_WIND_ESTIMATOR_EKF',1,'']]],
-  ['197_108',['NPS_SENSORS_SCALED (ID 197)',['../paparazzi_messages.html#NPS_SENSORS_SCALED',1,'']]],
-  ['198_109',['INS (ID 198)',['../paparazzi_messages.html#INS',1,'']]],
-  ['199_110',['FUELCELL (ID 199)',['../paparazzi_messages.html#FUELCELL',1,'']]],
-  ['1e_5ffilter_2eh_111',['1e_filter.h',['../1e__filter_8h.html',1,'']]]
+  ['192_106',['EFF_MAT_STAB_THRUST (ID 192)',['../paparazzi_messages.html#EFF_MAT_STAB_THRUST',1,'']]],
+  ['193_107',['AHRS_LKF (ID 193)',['../paparazzi_messages.html#AHRS_LKF',1,'']]],
+  ['196_108',['AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)',['../paparazzi_messages.html#AIRSPEED_WIND_ESTIMATOR_EKF',1,'']]],
+  ['197_109',['NPS_SENSORS_SCALED (ID 197)',['../paparazzi_messages.html#NPS_SENSORS_SCALED',1,'']]],
+  ['198_110',['INS (ID 198)',['../paparazzi_messages.html#INS',1,'']]],
+  ['199_111',['FUELCELL (ID 199)',['../paparazzi_messages.html#FUELCELL',1,'']]],
+  ['1e_5ffilter_2eh_112',['1e_filter.h',['../1e__filter_8h.html',1,'']]]
 ];

@@ -59,13 +59,14 @@ var searchData=
   ['248_56',['BATTERY_MONITOR (ID 248)',['../paparazzi_messages.html#BATTERY_MONITOR',1,'']]],
   ['249_57',['GPS_RXMRTCM (ID 249)',['../paparazzi_messages.html#GPS_RXMRTCM',1,'']]],
   ['25_58',['25',['../paparazzi_messages.html#GET_DL_SETTING',1,'GET_DL_SETTING (ID 25)'],['../paparazzi_messages.html#MISSION_SEGMENT_LLA',1,'MISSION_SEGMENT_LLA (ID 25)'],['../paparazzi_messages.html#SVINFO',1,'SVINFO (ID 25)']]],
-  ['251_59',['GPS_RELPOS (ID 251)',['../paparazzi_messages.html#GPS_RELPOS',1,'']]],
-  ['252_60',['GPS_SMALL (ID 252)',['../paparazzi_messages.html#GPS_SMALL',1,'']]],
-  ['253_61',['I2C_ERRORS (ID 253)',['../paparazzi_messages.html#I2C_ERRORS',1,'']]],
-  ['254_62',['DCF_THETA (ID 254)',['../paparazzi_messages.html#DCF_THETA',1,'']]],
-  ['255_63',['SECURE_LINK_STATUS (ID 255)',['../paparazzi_messages.html#SECURE_LINK_STATUS',1,'']]],
-  ['26_64',['26',['../paparazzi_messages.html#DEBUG',1,'DEBUG (ID 26)'],['../paparazzi_messages.html#DL_SETTING',1,'DL_SETTING (ID 26)'],['../paparazzi_messages.html#MISSION_PATH',1,'MISSION_PATH (ID 26)']]],
-  ['27_65',['27',['../paparazzi_messages.html#JUMP_TO_BLOCK',1,'JUMP_TO_BLOCK (ID 27)'],['../paparazzi_messages.html#MISSION_PATH_LLA',1,'MISSION_PATH_LLA (ID 27)'],['../paparazzi_messages.html#SURVEY',1,'SURVEY (ID 27)']]],
-  ['28_66',['28',['../paparazzi_messages.html#DL_VALUES',1,'DL_VALUES (ID 28)'],['../paparazzi_messages.html#MISSION_CUSTOM',1,'MISSION_CUSTOM (ID 28)'],['../paparazzi_messages.html#RSSI',1,'RSSI (ID 28)']]],
-  ['29_67',['29',['../paparazzi_messages.html#MISSION_UPDATE',1,'MISSION_UPDATE (ID 29)'],['../paparazzi_messages.html#RANGEFINDER',1,'RANGEFINDER (ID 29)'],['../paparazzi_messages.html#RAW_DATALINK',1,'RAW_DATALINK (ID 29)']]]
+  ['250_59',['GROUND_DETECT (ID 250)',['../paparazzi_messages.html#GROUND_DETECT',1,'']]],
+  ['251_60',['GPS_RELPOS (ID 251)',['../paparazzi_messages.html#GPS_RELPOS',1,'']]],
+  ['252_61',['GPS_SMALL (ID 252)',['../paparazzi_messages.html#GPS_SMALL',1,'']]],
+  ['253_62',['I2C_ERRORS (ID 253)',['../paparazzi_messages.html#I2C_ERRORS',1,'']]],
+  ['254_63',['DCF_THETA (ID 254)',['../paparazzi_messages.html#DCF_THETA',1,'']]],
+  ['255_64',['SECURE_LINK_STATUS (ID 255)',['../paparazzi_messages.html#SECURE_LINK_STATUS',1,'']]],
+  ['26_65',['26',['../paparazzi_messages.html#DEBUG',1,'DEBUG (ID 26)'],['../paparazzi_messages.html#DL_SETTING',1,'DL_SETTING (ID 26)'],['../paparazzi_messages.html#MISSION_PATH',1,'MISSION_PATH (ID 26)']]],
+  ['27_66',['27',['../paparazzi_messages.html#JUMP_TO_BLOCK',1,'JUMP_TO_BLOCK (ID 27)'],['../paparazzi_messages.html#MISSION_PATH_LLA',1,'MISSION_PATH_LLA (ID 27)'],['../paparazzi_messages.html#SURVEY',1,'SURVEY (ID 27)']]],
+  ['28_67',['28',['../paparazzi_messages.html#DL_VALUES',1,'DL_VALUES (ID 28)'],['../paparazzi_messages.html#MISSION_CUSTOM',1,'MISSION_CUSTOM (ID 28)'],['../paparazzi_messages.html#RSSI',1,'RSSI (ID 28)']]],
+  ['29_68',['29',['../paparazzi_messages.html#MISSION_UPDATE',1,'MISSION_UPDATE (ID 29)'],['../paparazzi_messages.html#RANGEFINDER',1,'RANGEFINDER (ID 29)'],['../paparazzi_messages.html#RAW_DATALINK',1,'RAW_DATALINK (ID 29)']]]
 ];

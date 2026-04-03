@@ -12,5 +12,6 @@ var searchData=
   ['humid_5fpcap01_20module_9',['humid_pcap01 module',['../module__humid_pcap01.html',1,'onboard_modules']]],
   ['humid_5fsht_20module_10',['humid_sht module',['../module__humid_sht.html',1,'onboard_modules']]],
   ['humid_5fsht_5fi2c_20module_11',['humid_sht_i2c module',['../module__humid_sht_i2c.html',1,'onboard_modules']]],
-  ['humid_5fsht_5fuart_20module_12',['humid_sht_uart module',['../module__humid_sht_uart.html',1,'onboard_modules']]]
+  ['humid_5fsht_5fuart_20module_12',['humid_sht_uart module',['../module__humid_sht_uart.html',1,'onboard_modules']]],
+  ['hx711_20module_13',['hx711 module',['../module__hx711.html',1,'onboard_modules']]]
 ];

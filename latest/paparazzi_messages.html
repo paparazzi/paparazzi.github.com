@@ -282,6 +282,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#MISSION_ITEM">MISSION_ITEM (ID 189)</a></li>
 <li class="level2"><a href="#ACTUATORS_T4_IN">ACTUATORS_T4_IN (ID 190)</a></li>
 <li class="level2"><a href="#ACTUATORS_T4_OUT">ACTUATORS_T4_OUT (ID 191)</a></li>
+<li class="level2"><a href="#EFF_MAT_STAB_THRUST">EFF_MAT_STAB_THRUST (ID 192)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
@@ -336,6 +337,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#PPRZ_DEBUG">PPRZ_DEBUG (ID 247)</a></li>
 <li class="level2"><a href="#BATTERY_MONITOR">BATTERY_MONITOR (ID 248)</a></li>
 <li class="level2"><a href="#GPS_RXMRTCM">GPS_RXMRTCM (ID 249)</a></li>
+<li class="level2"><a href="#GROUND_DETECT">GROUND_DETECT (ID 250)</a></li>
 <li class="level2"><a href="#GPS_RELPOS">GPS_RELPOS (ID 251)</a></li>
 <li class="level2"><a href="#GPS_SMALL">GPS_SMALL (ID 252)</a></li>
 <li class="level2"><a href="#I2C_ERRORS">I2C_ERRORS (ID 253)</a></li>
@@ -928,23 +930,16 @@ RSSI (ID 28)</h2>
 </table>
 <h2><a class="anchor" id="RANGEFINDER"></a>
 RANGEFINDER (ID 29)</h2>
+<p>Return measured distance of rangefinder sensors</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">range   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">cm   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Sensor ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">z_dot   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">raw   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uncompensated nor adjusted raw distance value from sensor    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">z_dot_sum_err   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">z_dot_setpoint   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">z_sum_err   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">z_setpoint   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">flying   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">distance   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="DATALINK_REPORT"></a>
 DATALINK_REPORT (ID 30)</h2>
@@ -3852,8 +3847,6 @@ EFF_MAT_STAB (ID 185)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">G1_yaw   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">G1_thrust   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">G2   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="EFF_MAT_GUID"></a>
@@ -4059,6 +4052,18 @@ ACTUATORS_T4_OUT (ID 191)</h2>
 <td class="markdownTableBodyNone">actuators_t4_rolling_msg_out   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">T4 output rolling message content    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">actuators_t4_rolling_msg_out_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">T4 output Rolling message ID   </td></tr>
+</table>
+<h2><a class="anchor" id="EFF_MAT_STAB_THRUST"></a>
+EFF_MAT_STAB_THRUST (ID 192)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">G1_x   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">G1_y   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">G1_z   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
 AHRS_LKF (ID 193)</h2>
@@ -5068,6 +5073,27 @@ GPS_RXMRTCM (ID 249)</h2>
 <td class="markdownTableBodyNone">Crc1077   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Crc1087   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="GROUND_DETECT"></a>
+GROUND_DETECT (ID 250)</h2>
+<p>Ground detection status.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ground_detected   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">FALSE, TRUE   </td><td class="markdownTableBodyNone">Bool whether ground is detected or not    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">speed_down   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Vertical speed in NED frame    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">spec_thrust_down   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">N   </td><td class="markdownTableBodyNone">Specific thrust down    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">accel_filt_down   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone">Filtered vertical acceleration    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">agl_dist_filt   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Filtered AGL distance    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">force_sensor   </td><td class="markdownTableBodyNone">int32[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Measurement of a force sensor    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">triggers   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Bitmask containing status information on the different ground detect triggers   </td></tr>
 </table>
 <h2><a class="anchor" id="GPS_RELPOS"></a>
 GPS_RELPOS (ID 251)</h2>
@@ -7152,7 +7178,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 31 2026 13:53:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Apr 3 2026 08:13:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

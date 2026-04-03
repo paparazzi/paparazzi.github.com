@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"gas__engine__idle__trim_8h.html#a94ca399ac855a3d2ad807666da92df33":[12,0,1,0,6,25,1,1],
 "gas__engine__idle__trim_8h.html#ae5ab7dc2cc335c93fb0c85347b18b5ee":[12,0,1,0,6,25,1,0],
 "gas__engine__idle__trim_8h_source.html":[12,0,1,0,6,25,1],
 "gec_8c.html":[12,0,1,0,6,15,1,0],
@@ -242,12 +243,11 @@ var NAVTREEINDEX60 =
 "globals_b.html":[12,1,0,2],
 "globals_c.html":[12,1,0,3],
 "globals_d.html":[12,1,0,4],
-"globals_defs.html":[12,1,6,0],
 "globals_defs.html":[12,1,6],
+"globals_defs.html":[12,1,6,0],
 "globals_defs_a.html":[12,1,6,1],
 "globals_defs_b.html":[12,1,6,2],
 "globals_defs_c.html":[12,1,6,3],
 "globals_defs_d.html":[12,1,6,4],
-"globals_defs_e.html":[12,1,6,5],
-"globals_defs_f.html":[12,1,6,6]
+"globals_defs_e.html":[12,1,6,5]
 };

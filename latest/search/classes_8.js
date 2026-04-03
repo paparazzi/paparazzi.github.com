@@ -15,5 +15,7 @@ var searchData=
   ['horizontalguidancereference_12',['HorizontalGuidanceReference',['../rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceReference',1,'']]],
   ['horizontalguidancesetpoint_13',['HorizontalGuidanceSetpoint',['../structHorizontalGuidanceSetpoint.html',1,'']]],
   ['hott_5feam_5fmsg_14',['HOTT_EAM_MSG',['../hott__eam_8h.html#structHOTT__EAM__MSG',1,'']]],
-  ['hott_5fgam_5fmsg_15',['HOTT_GAM_MSG',['../hott__gam_8h.html#structHOTT__GAM__MSG',1,'']]]
+  ['hott_5fgam_5fmsg_15',['HOTT_GAM_MSG',['../hott__gam_8h.html#structHOTT__GAM__MSG',1,'']]],
+  ['hx711_5fdev_5ft_16',['hx711_dev_t',['../hx711_8c.html#structhx711__dev__t',1,'']]],
+  ['hx711_5ft_17',['hx711_t',['../hx711_8c.html#structhx711__t',1,'']]]
 ];

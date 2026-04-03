@@ -15,7 +15,7 @@ var searchData=
   ['q_5fm_12',['q_m',['../imu__quality__assessment_8h.html#a0b37e6ce9fd493c029f9cd67189bbabe',1,'imu_quality_assessment_data_struct']]],
   ['q_5fmu_13',['Q_mu',['../ekf__aw_8h.html#abe9ca9d2ee501c52127ba644c7ad9335',1,'ekfAwParameters']]],
   ['q_5frates_5fbias_14',['Q_rates_bias',['../ins__mekf__wind_8h.html#ac9b66d0447c7ed204ad13774b6cd0d54',1,'ins_mekf_wind_parameters']]],
-  ['q_5fva_15',['q_va',['../wind__estimation__quadrotor_8h.html#a0b8640b6ea9df7ad6968a6a1b725268d',1,'wind_estimation_quadrotor_params::Q_va'],['../wind__estimator_8h.html#a1e2a539b7b2f227ba1c03b443997d00a',1,'WindEstimator::q_va']]],
+  ['q_5fva_15',['q_va',['../wind__estimator_8h.html#a1e2a539b7b2f227ba1c03b443997d00a',1,'WindEstimator::q_va'],['../wind__estimation__quadrotor_8h.html#a0b8640b6ea9df7ad6968a6a1b725268d',1,'wind_estimation_quadrotor_params::Q_va']]],
   ['q_5fva_5fscale_16',['q_va_scale',['../wind__estimator_8h.html#a8c3df323de545f49dcd05dacdcb34f49',1,'WindEstimator']]],
   ['q_5fw_17',['Q_w',['../wind__estimation__quadrotor_8h.html#abb642b885c412d8d6c47e1300555817a',1,'wind_estimation_quadrotor_params']]],
   ['q_5fwind_18',['q_wind',['../ins__mekf__wind_8h.html#a48eecd4379c51fb2773e4e9bc620026b',1,'ins_mekf_wind_parameters::Q_wind'],['../wind__estimator_8h.html#a36c24690b669f887f364661d4e56c977',1,'WindEstimator::q_wind']]],

@@ -26,7 +26,7 @@ var invensense2_8h =
       [ "timebase_correction_pll", "invensense2_8h.html#a8be543f0d26f56ca89b8d2f08aeda759", null ],
       [ "timer", "invensense2_8h.html#ad14d6f1919238bb474ab1711c80e467d", null ]
     ] ],
-    [ "invensense2_t.__unnamed328__", "invensense2_8h.html#unioninvensense2__t_8____unnamed328____", [
+    [ "invensense2_t.__unnamed330__", "invensense2_8h.html#unioninvensense2__t_8____unnamed330____", [
       [ "i2c", "invensense2_8h.html#aab36abef0cdebd2f84424ad4d17e286b", null ],
       [ "spi", "invensense2_8h.html#a0b0760e072413088ea8460c3b4f43dbe", null ]
     ] ],

@@ -39,5 +39,7 @@ var searchData=
   ['humid_5fsht_5fi2c_2ec_36',['humid_sht_i2c.c',['../humid__sht__i2c_8c.html',1,'']]],
   ['humid_5fsht_5fi2c_2eh_37',['humid_sht_i2c.h',['../humid__sht__i2c_8h.html',1,'']]],
   ['humid_5fsht_5fuart_2ec_38',['humid_sht_uart.c',['../humid__sht__uart_8c.html',1,'']]],
-  ['humid_5fsht_5fuart_2eh_39',['humid_sht_uart.h',['../humid__sht__uart_8h.html',1,'']]]
+  ['humid_5fsht_5fuart_2eh_39',['humid_sht_uart.h',['../humid__sht__uart_8h.html',1,'']]],
+  ['hx711_2ec_40',['hx711.c',['../hx711_8c.html',1,'']]],
+  ['hx711_2eh_41',['hx711.h',['../hx711_8h.html',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l_0',['l',['../eff__scheduling__rotwing__V2_8h.html#a965453f3faa27895eee702a470c8e55d',1,'wing_model::L'],['../gvf__parametric_8h.html#ad3714f0829515ec2209ec5133f238f24',1,'gvf_parametric_con::L'],['../eff__scheduling__rotwing__V2_8h.html#a9bed79eecf4f853f03ce9f1faca6d173',1,'F_M_Body::l']]],
+  ['l_0',['l',['../eff__scheduling__rotwing__V2_8h.html#a9bed79eecf4f853f03ce9f1faca6d173',1,'F_M_Body::l'],['../eff__scheduling__rotwing__V2_8h.html#a965453f3faa27895eee702a470c8e55d',1,'wing_model::L'],['../gvf__parametric_8h.html#ad3714f0829515ec2209ec5133f238f24',1,'gvf_parametric_con::L']]],
   ['l0_1',['L0',['../rover__obstacles_8c.html#ad5111479796248b13cf12b3a93721f35',1,'rover_obstacles.c']]],
   ['l3g_2',['l3g',['../imu__px4fmu__v2_84_8h.html#a6bcef7a6d3c136bbf13dbbe75fa702a2',1,'ImuPX4']]],
   ['l3g4200_3',['L3g4200',['../l3g4200_8h.html#structL3g4200',1,'']]],
@@ -373,7 +373,7 @@ var searchData=
   ['led_5fbody_5fgpio_5foff_370',['LED_BODY_GPIO_OFF',['../lisa__mx__common_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85',1,'lisa_mx_common.h']]],
   ['led_5fbody_5fgpio_5fon_371',['LED_BODY_GPIO_ON',['../lisa__mx__common_8h.html#ab37486d076e92bdba138972435110093',1,'lisa_mx_common.h']]],
   ['led_5fbody_5fgpio_5fpin_372',['LED_BODY_GPIO_PIN',['../lisa__mx__common_8h.html#ae0fcefc092f6db285b86360feeddda29',1,'lisa_mx_common.h']]],
-  ['led_5fdisable_373',['led_disable',['../chibios_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9',1,'LED_DISABLE:&#160;led_hw.h'],['../linux_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9',1,'LED_DISABLE:&#160;led_hw.h'],['../led_8h.html#a25566b56a0b0cb3b14398d1aea128f42',1,'led_disable(void):&#160;led.h']]],
+  ['led_5fdisable_373',['led_disable',['../led_8h.html#a25566b56a0b0cb3b14398d1aea128f42',1,'led_disable(void):&#160;led.h'],['../chibios_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9',1,'LED_DISABLE:&#160;led_hw.h'],['../linux_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9',1,'LED_DISABLE:&#160;led_hw.h']]],
   ['led_5fgpio_374',['led_gpio',['../cc2500__settings_8c.html#a7886c56e29f72f20fc3624ecf609f6ae',1,'LED_GPIO:&#160;cc2500_settings.c'],['../chibios_2led__hw_8h.html#aa9479a9a1c2367d23cb3df268c826148',1,'LED_GPIO:&#160;led_hw.h']]],
   ['led_5fgpio_5foff_375',['led_gpio_off',['../chibios_2led__hw_8h.html#a710cbc02188af37e912d3c7e6610b641',1,'LED_GPIO_OFF:&#160;led_hw.h'],['../cc2500__settings_8c.html#a28c227a9fa6c99811bed6c4b5d304c41',1,'LED_GPIO_OFF:&#160;cc2500_settings.c']]],
   ['led_5fgpio_5fon_376',['led_gpio_on',['../chibios_2led__hw_8h.html#a62add46860282156818b02c2f31e22a7',1,'LED_GPIO_ON:&#160;led_hw.h'],['../cc2500__settings_8c.html#a43fcb3723b943c774ccd80efffdc4097',1,'LED_GPIO_ON:&#160;cc2500_settings.c']]],
@@ -458,7 +458,7 @@ var searchData=
   ['lidar_5flite_5freq_5fread_455',['LIDAR_LITE_REQ_READ',['../lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba09939369f0fc3a3da8dde0f546b6950a',1,'lidar_lite.h']]],
   ['lidar_5fmax_5frange_456',['LIDAR_MAX_RANGE',['../tfmini__nps_8c.html#abc5f394f38087aa768286365b6ec3ec3',1,'tfmini_nps.c']]],
   ['lidar_5fmin_5frange_457',['LIDAR_MIN_RANGE',['../tfmini__nps_8c.html#a065916f251bec0f3ac3bf4d4881fa15e',1,'tfmini_nps.c']]],
-  ['lidar_5foffset_458',['lidar_offset',['../tfmini_8c.html#aed6b26905fac19b45c76e9e3c8a6a425',1,'lidar_offset:&#160;tfmini.c'],['../tfmini_8c.html#ad16b319367765f99f0eec7ddbeb16fa4',1,'LIDAR_OFFSET:&#160;tfmini.c']]],
+  ['lidar_5foffset_458',['lidar_offset',['../tfmini_8c.html#ad16b319367765f99f0eec7ddbeb16fa4',1,'LIDAR_OFFSET:&#160;tfmini.c'],['../tfmini_8c.html#aed6b26905fac19b45c76e9e3c8a6a425',1,'lidar_offset:&#160;tfmini.c']]],
   ['lidar_5fsf11_459',['lidar_sf11',['../lidar__sf11_8c.html#a445c98445fd275bd7ef2d9cc33aa71a3',1,'lidar_sf11:&#160;lidar_sf11.c'],['../lidar__sf11_8h.html#a445c98445fd275bd7ef2d9cc33aa71a3',1,'lidar_sf11:&#160;lidar_sf11.c']]],
   ['lidar_5fsf11_20module_460',['lidar_sf11 module',['../module__lidar_sf11.html',1,'onboard_modules']]],
   ['lidar_5fsf11_20xml_20file_3a_461',['Raw lidar_sf11.xml file:',['../module__lidar_sf11.html#module_xml__lidar_sf11',1,'']]],
