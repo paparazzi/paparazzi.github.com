@@ -129,92 +129,94 @@ $(document).ready(function(){initNavTree('disco_8h_source.html',''); initResizab
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="disco_8h.html#a8500674e433093202b888c0613c07501">   30</a></span><span class="preprocessor">#define UART1_DEV /dev/ttyPA1</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="disco_8h.html#a795637c038061d50a428834973f875ef">   32</a></span><span class="preprocessor">#define GPS_UBX_ENABLE_NMEA_DATA_MASK 0xff</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifndef UART2_DEV</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="disco_8h.html#aa9d6091776c6ce3bd59c7290094d0180">   38</a></span><span class="preprocessor">#define UART2_DEV /dev/ttyUSB0</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef UART4_DEV</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="disco_8h.html#af55f6a570be98106b333e120ca8caa09">   41</a></span><span class="preprocessor">#define UART4_DEV /dev/ttyUSB1</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#ifndef GPX_UBX_UCENTER_ENABLE_NMEA</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="disco_8h.html#a484689312dd0e9cb279a27dda7139ce5">   34</a></span><span class="preprocessor">#define GPX_UBX_UCENTER_ENABLE_NMEA TRUE</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef UART2_DEV</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="disco_8h.html#aa9d6091776c6ce3bd59c7290094d0180">   41</a></span><span class="preprocessor">#define UART2_DEV /dev/ttyUSB0</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#ifndef UART5_DEV</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="disco_8h.html#a053f051ecef9aaeae10378556c6e244c">   44</a></span><span class="preprocessor">#define UART5_DEV /dev/ttyACM0</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#ifndef UART4_DEV</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="disco_8h.html#af55f6a570be98106b333e120ca8caa09">   44</a></span><span class="preprocessor">#define UART4_DEV /dev/ttyUSB1</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#ifndef UART6_DEV</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="disco_8h.html#ae435a1a8306a4acbe00ef9f980abc9b2">   47</a></span><span class="preprocessor">#define UART6_DEV /dev/ttyACM1</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#ifndef UART5_DEV</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="disco_8h.html#a053f051ecef9aaeae10378556c6e244c">   47</a></span><span class="preprocessor">#define UART5_DEV /dev/ttyACM0</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#ifndef UART3_DEV</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="disco_8h.html#a512b369e8d1cc7a1140a41593c21a9e9">   52</a></span><span class="preprocessor">#define UART3_DEV /dev/uart-sbus</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="disco_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">   56</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;boards/disco/actuators.h&quot;</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="disco_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">   57</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorsDiscoSet</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="disco_8h.html#ab68f28871d18c17e7e70ae63277d37c2">   58</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsDiscoInit()</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="disco_8h.html#a0ceadf6a913477832e04b0cb7cd17210">   59</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsDiscoCommit()</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">/* Cameras */</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#include &quot;<a class="code" href="video__device_8h.html">peripherals/video_device.h</a>&quot;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifndef UART6_DEV</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="disco_8h.html#ae435a1a8306a4acbe00ef9f980abc9b2">   50</a></span><span class="preprocessor">#define UART6_DEV /dev/ttyACM1</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#ifndef UART3_DEV</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="disco_8h.html#a512b369e8d1cc7a1140a41593c21a9e9">   55</a></span><span class="preprocessor">#define UART3_DEV /dev/uart-sbus</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="disco_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">   59</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;boards/disco/actuators.h&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="disco_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">   60</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorsDiscoSet</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="disco_8h.html#ab68f28871d18c17e7e70ae63277d37c2">   61</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsDiscoInit()</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="disco_8h.html#a0ceadf6a913477832e04b0cb7cd17210">   62</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsDiscoCommit()</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// re-use the Parrot Bebop video drivers</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#include &quot;<a class="code" href="mt9v117_8h.html">boards/bebop/mt9v117.h</a>&quot;</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#include &quot;<a class="code" href="mt9f002_8h.html">boards/bebop/mt9f002.h</a>&quot;</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/* Cameras */</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#include &quot;<a class="code" href="video__device_8h.html">peripherals/video_device.h</a>&quot;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// re-use the Parrot Bebop video drivers</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#include &quot;<a class="code" href="mt9v117_8h.html">boards/bebop/mt9v117.h</a>&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#include &quot;<a class="code" href="mt9f002_8h.html">boards/bebop/mt9f002.h</a>&quot;</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/* ISP */</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//struct mt9f002_t mt9f002;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/* by default baro module is used */</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="disco_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">   76</a></span><span class="preprocessor">#define USE_BARO_BOARD 0</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/* The ADC from the sonar */</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#if USE_ADC0</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#define ADC0_ID             0</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define ADC0_CHANNELS       2</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define ADC0_CHANNELS_CNT   1</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define ADC0_BUF_LENGTH     8192</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">/* The SPI from the sonar */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#if USE_SPI0</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="disco_8h.html#a989283f6e472fa84449301df602c6e94">   89</a></span><span class="preprocessor">#define SPI0_MODE           0</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="disco_8h.html#ac0c17180c00e0862f0dd0eaea546c19a">   90</a></span><span class="preprocessor">#define SPI0_BITS_PER_WORD  8</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="disco_8h.html#a495eef5868c701c6dd024afee3038956">   91</a></span><span class="preprocessor">#define SPI0_MAX_SPEED_HZ   320000</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">/* Configuration values of airspeed sensor onboard the Parrot Disco C.H.U.C.K */</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="disco_8h.html#a3723de8b0fa913e00bb51cf175fbc10c">   95</a></span><span class="preprocessor">#define MS45XX_I2C_DEV i2c1</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="disco_8h.html#a290e8bdfa317a6b511add38211c4bbd9">   96</a></span><span class="preprocessor">#define MS45XX_PRESSURE_RANGE 4</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="disco_8h.html#a7761b57fc68d5793ad3c3ea2edab6cbc">   97</a></span><span class="preprocessor">#define MS45XX_PRESSURE_TYPE 1</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="disco_8h.html#a32a84107f1cd5e45239321240d480d0d">   98</a></span><span class="preprocessor">#define MS45XX_OUTPUT_TYPE 1</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="disco_8h.html#a0a6da70b0d6ba228fcd5d258f7bce7e7">   99</a></span><span class="preprocessor">#define MS45XX_PRESSURE_OUTPUT_TYPE_InH2O 1</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#ifndef USE_AIRSPEED_LOWPASS_FILTER</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="disco_8h.html#ae4db6d792956c6002d91d931d0beab12">  101</a></span><span class="preprocessor">#define USE_AIRSPEED_LOWPASS_FILTER 1</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">//#if USE_AIRSPEED_LOWPASS_FILTER /* Always used now */</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#ifndef MS45XX_LOWPASS_TAU</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="disco_8h.html#a0e66f9da0ae757d8312ddc3e12e2b78d">  105</a></span><span class="preprocessor">#define MS45XX_LOWPASS_TAU 0.15</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">//#endif</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/* To be flexible and be able to disable use of airspeed in state this could have been in the airframe file ofcourse</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * but most users just want to have perfectly flying Disco, so enable per default... */</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#ifndef USE_AIRSPEED</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="disco_8h.html#a634090af23161c4f7fef1dcabdc71335">  112</a></span><span class="preprocessor">#define USE_AIRSPEED 1</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">/* These are the default Disco values for sonar */</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="disco_8h.html#ab5d4a93ccc6b9424f012526922b6344c">  116</a></span><span class="preprocessor">#define SONAR_BEBOP_TRANSITION_HIGH_TO_LOW 0.75 </span><span class="comment">//m</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="disco_8h.html#aa1a2721b9d1a8086bff14fb86548bc7c">  117</a></span><span class="preprocessor">#define SONAR_BEBOP_TRANSITION_LOW_TO_HIGH 1.5  </span><span class="comment">//m</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="disco_8h.html#a6017153886b228ceea828e5d7333a20b">  118</a></span><span class="preprocessor">#define SONAR_BEBOP_TRANSITION_COUNT 50</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="disco_8h.html#ad38ba37e0445c0f57ef79e1c154ca7a3">  119</a></span><span class="preprocessor">#define SONAR_BEBOP_PEAK_THRESHOLD 50</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_DISCO */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/* ISP */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//struct mt9f002_t mt9f002;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">/* by default baro module is used */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="disco_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">   79</a></span><span class="preprocessor">#define USE_BARO_BOARD 0</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/* The ADC from the sonar */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#if USE_ADC0</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define ADC0_ID             0</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define ADC0_CHANNELS       2</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#define ADC0_CHANNELS_CNT   1</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define ADC0_BUF_LENGTH     8192</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">/* The SPI from the sonar */</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#if USE_SPI0</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="disco_8h.html#a989283f6e472fa84449301df602c6e94">   92</a></span><span class="preprocessor">#define SPI0_MODE           0</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="disco_8h.html#ac0c17180c00e0862f0dd0eaea546c19a">   93</a></span><span class="preprocessor">#define SPI0_BITS_PER_WORD  8</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="disco_8h.html#a495eef5868c701c6dd024afee3038956">   94</a></span><span class="preprocessor">#define SPI0_MAX_SPEED_HZ   320000</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">/* Configuration values of airspeed sensor onboard the Parrot Disco C.H.U.C.K */</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="disco_8h.html#a3723de8b0fa913e00bb51cf175fbc10c">   98</a></span><span class="preprocessor">#define MS45XX_I2C_DEV i2c1</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="disco_8h.html#a290e8bdfa317a6b511add38211c4bbd9">   99</a></span><span class="preprocessor">#define MS45XX_PRESSURE_RANGE 4</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="disco_8h.html#a7761b57fc68d5793ad3c3ea2edab6cbc">  100</a></span><span class="preprocessor">#define MS45XX_PRESSURE_TYPE 1</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="disco_8h.html#a32a84107f1cd5e45239321240d480d0d">  101</a></span><span class="preprocessor">#define MS45XX_OUTPUT_TYPE 1</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="disco_8h.html#a0a6da70b0d6ba228fcd5d258f7bce7e7">  102</a></span><span class="preprocessor">#define MS45XX_PRESSURE_OUTPUT_TYPE_InH2O 1</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#ifndef USE_AIRSPEED_LOWPASS_FILTER</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="disco_8h.html#ae4db6d792956c6002d91d931d0beab12">  104</a></span><span class="preprocessor">#define USE_AIRSPEED_LOWPASS_FILTER 1</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">//#if USE_AIRSPEED_LOWPASS_FILTER /* Always used now */</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#ifndef MS45XX_LOWPASS_TAU</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="disco_8h.html#a0e66f9da0ae757d8312ddc3e12e2b78d">  108</a></span><span class="preprocessor">#define MS45XX_LOWPASS_TAU 0.15</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">//#endif</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/* To be flexible and be able to disable use of airspeed in state this could have been in the airframe file ofcourse</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * but most users just want to have perfectly flying Disco, so enable per default... */</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#ifndef USE_AIRSPEED</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="disco_8h.html#a634090af23161c4f7fef1dcabdc71335">  115</a></span><span class="preprocessor">#define USE_AIRSPEED 1</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/* These are the default Disco values for sonar */</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="disco_8h.html#ab5d4a93ccc6b9424f012526922b6344c">  119</a></span><span class="preprocessor">#define SONAR_BEBOP_TRANSITION_HIGH_TO_LOW 0.75 </span><span class="comment">//m</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="disco_8h.html#aa1a2721b9d1a8086bff14fb86548bc7c">  120</a></span><span class="preprocessor">#define SONAR_BEBOP_TRANSITION_LOW_TO_HIGH 1.5  </span><span class="comment">//m</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="disco_8h.html#a6017153886b228ceea828e5d7333a20b">  121</a></span><span class="preprocessor">#define SONAR_BEBOP_TRANSITION_COUNT 50</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="disco_8h.html#ad38ba37e0445c0f57ef79e1c154ca7a3">  122</a></span><span class="preprocessor">#define SONAR_BEBOP_PEAK_THRESHOLD 50</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_DISCO */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="adisco_8h_html_abe211b229633c3f39cbfb50c5765b4b4"><div class="ttname"><a href="disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a></div><div class="ttdeci">struct video_config_t front_camera</div><div class="ttdoc">Video thread dummy for simulation.</div><div class="ttdef"><b>Definition</b> <a href="boards_2ardrone_2board_8c_source.html#l00043">board.c:43</a></div></div>
 <div class="ttc" id="adisco_8h_html_aebe228d13ad2e4e0c8528d945ad76a82"><div class="ttname"><a href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></div><div class="ttdeci">struct video_config_t bottom_camera</div><div class="ttdef"><b>Definition</b> <a href="boards_2ardrone_2board_8c_source.html#l00068">board.c:68</a></div></div>
 <div class="ttc" id="amt9f002_8h_html"><div class="ttname"><a href="mt9f002_8h.html">mt9f002.h</a></div><div class="ttdoc">Initialization and configuration of the MT9F002 CMOS Chip.</div></div>
@@ -228,7 +230,7 @@ $(document).ready(function(){initNavTree('disco_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="disco_8h.html">disco.h</a></li>
-    <li class="footer">Generated on Fri Apr 3 2026 21:15:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Apr 8 2026 08:31:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

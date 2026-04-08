@@ -11,6 +11,7 @@ var traffic__info_8h =
     [ "AC_INFO_VEL_LOCAL_F", "group__ac__info.html#gab1b5edeb3b6a005cd7086e93ae01afb2", null ],
     [ "NB_ACS", "traffic__info_8h.html#aa9ad271011923751218b103cae2e0bfd", null ],
     [ "NB_ACS_ID", "traffic__info_8h.html#aa556f49efe565705c817f8a7c01f97a9", null ],
+    [ "traffic_info_log", "group__ac__info.html#ga257d7b2037e2f0fa6027f3856774eced", null ],
     [ "acInfoCalcPositionEnu_f", "group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1", null ],
     [ "acInfoCalcPositionEnu_i", "group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e", null ],
     [ "acInfoCalcPositionLla_f", "group__ac__info.html#ga66c45f46dcc1835b0297fcb89240db20", null ],
@@ -43,6 +44,8 @@ var traffic__info_8h =
     [ "set_ac_info_lla", "group__ac__info.html#ga6bded2c305127a6a5f336aaa481e2457", null ],
     [ "set_ac_info_utm", "group__ac__info.html#ga2f523b260d5f5dda8f138ba70435479c", null ],
     [ "traffic_info_init", "group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2", null ],
+    [ "traffic_info_log_start", "group__ac__info.html#gae59a13c203efbbcc1f4ee344e68254e9", null ],
+    [ "traffic_info_log_stop", "group__ac__info.html#ga59daeaa7f3abfe76c13be8c6fd840422", null ],
     [ "ti_acs", "group__ac__info.html#gab3795ba1b3ecde9a2056986e77373342", null ],
     [ "ti_acs_id", "group__ac__info.html#gab5ba385d8398688a96e0269bc9c50fb9", null ],
     [ "ti_acs_idx", "group__ac__info.html#ga2696f46ef83417abc0528b1f4fdb1169", null ]

@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('traffic__info_8c.html',''); initResiza
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="datalink_8h_source.html">modules/datalink/datalink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/dl_protocol.h&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
@@ -113,97 +114,122 @@ $(document).ready(function(){initNavTree('traffic__info_8c.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="traffic__info_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2multi_2traffic__info_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2multi_2traffic__info_8c" id="asw_2airborne_2modules_2multi_2traffic__info_8c">
-<area shape="rect" title=" " alt="" coords="1104,5,1262,45"/>
-<area shape="rect" href="traffic__info_8h.html" title=" " alt="" coords="740,93,898,133"/>
-<area shape="poly" title=" " alt="" coords="1104,48,913,93,912,88,1103,43"/>
-<area shape="rect" title=" " alt="" coords="1128,277,1288,302"/>
-<area shape="poly" title=" " alt="" coords="1185,46,1187,133,1196,204,1206,263,1201,264,1191,204,1182,134,1180,46"/>
-<area shape="rect" title=" " alt="" coords="922,101,1094,126"/>
-<area shape="poly" title=" " alt="" coords="1146,48,1045,97,1043,92,1144,43"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1401,101,1605,126"/>
-<area shape="poly" title=" " alt="" coords="1254,43,1448,95,1447,100,1253,48"/>
-<area shape="rect" title=" " alt="" coords="1303,189,1466,214"/>
-<area shape="poly" title=" " alt="" coords="1185,45,1190,88,1198,111,1211,132,1229,149,1251,163,1299,182,1296,187,1248,168,1226,153,1206,135,1193,114,1185,90,1180,46"/>
-<area shape="rect" title=" " alt="" coords="1221,101,1377,126"/>
-<area shape="poly" title=" " alt="" coords="1210,43,1274,90,1271,95,1207,48"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="240,277,307,302"/>
-<area shape="poly" title=" " alt="" coords="1104,35,930,54,828,72,728,96,604,138,484,187,381,235,308,273,306,268,379,230,482,182,602,133,726,91,827,67,929,49,1103,29"/>
-<area shape="rect" href="pprz__geodetic__utm_8h.html" title="Constants UTM (Mercator) projections." alt="" coords="1541,181,1692,221"/>
-<area shape="poly" title=" " alt="" coords="1263,24,1359,28,1465,39,1515,48,1559,59,1594,73,1618,92,1629,109,1633,129,1629,168,1624,168,1627,130,1624,111,1614,95,1592,78,1557,64,1514,53,1465,44,1359,34,1263,30"/>
-<area shape="rect" href="pprz__geodetic__wgs84_8h.html" title="WGS&#45;84 Geoid Heights." alt="" coords="1716,181,1866,221"/>
-<area shape="poly" title=" " alt="" coords="1263,24,1344,29,1441,39,1544,59,1644,91,1678,108,1710,128,1763,170,1760,174,1707,132,1676,112,1642,96,1543,64,1440,45,1344,34,1262,29"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="654,277,827,302"/>
-<area shape="poly" title=" " alt="" coords="813,135,754,265,749,263,808,132"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1154,357,1305,397"/>
-<area shape="poly" title=" " alt="" coords="894,131,1137,199,1246,236,1283,253,1303,268,1310,290,1303,312,1289,333,1270,351,1266,347,1285,329,1299,310,1304,290,1298,271,1280,257,1244,241,1135,204,893,136"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="372,357,522,397"/>
-<area shape="poly" title=" " alt="" coords="781,136,676,192,615,230,555,271,511,310,474,349,471,345,508,306,552,267,612,225,673,188,779,131"/>
-<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="855,189,999,214"/>
-<area shape="poly" title=" " alt="" coords="845,132,903,178,900,182,841,136"/>
-<area shape="rect" title=" " alt="" coords="697,365,784,390"/>
-<area shape="poly" title=" " alt="" coords="743,302,743,350,738,350,738,302"/>
-<area shape="rect" title=" " alt="" coords="906,519,977,544"/>
-<area shape="poly" title=" " alt="" coords="797,299,915,327,964,342,990,355,1001,374,1005,395,1004,416,999,437,981,477,961,509,957,506,977,474,994,435,998,415,999,395,996,376,987,359,962,347,914,332,796,305"/>
-<area shape="rect" title=" " alt="" coords="1038,592,1093,617"/>
-<area shape="poly" title=" " alt="" coords="794,299,931,330,989,345,1017,355,1037,381,1051,409,1062,440,1068,471,1073,531,1071,578,1066,578,1068,531,1063,472,1056,441,1046,411,1032,384,1014,359,987,350,930,336,793,305"/>
-<area shape="rect" title=" " alt="" coords="546,365,673,390"/>
-<area shape="poly" title=" " alt="" coords="724,304,640,359,637,355,721,300"/>
-<area shape="poly" title=" " alt="" coords="1240,397,1249,432,1249,453,1243,472,1216,511,1180,544,1142,570,1107,589,1105,584,1139,565,1177,540,1212,508,1238,470,1243,452,1243,433,1235,398"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="1103,445,1228,471"/>
-<area shape="poly" title=" " alt="" coords="1216,399,1186,436,1182,433,1212,396"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="620,445,762,471"/>
-<area shape="poly" title=" " alt="" coords="1155,392,777,447,776,442,1154,387"/>
-<area shape="poly" title=" " alt="" coords="732,468,894,514,892,519,731,473"/>
-<area shape="poly" title=" " alt="" coords="694,471,699,507,706,526,718,542,740,555,773,567,857,584,948,594,1025,599,1024,604,948,599,856,589,771,572,738,560,715,546,701,529,693,508,688,472"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="361,519,517,544"/>
-<area shape="poly" title=" " alt="" coords="651,473,494,517,493,512,650,468"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="729,519,882,544"/>
-<area shape="poly" title=" " alt="" coords="711,468,777,509,774,514,708,473"/>
-<area shape="poly" title=" " alt="" coords="518,539,1025,596,1025,601,517,544"/>
-<area shape="rect" title=" " alt="" coords="218,592,281,617"/>
-<area shape="poly" title=" " alt="" coords="410,547,295,589,293,584,408,542"/>
-<area shape="rect" title=" " alt="" coords="89,592,160,617"/>
-<area shape="poly" title=" " alt="" coords="389,547,174,595,173,590,388,541"/>
-<area shape="rect" title=" " alt="" coords="372,592,440,617"/>
-<area shape="poly" title=" " alt="" coords="436,545,419,581,415,579,431,543"/>
-<area shape="poly" title=" " alt="" coords="848,541,1025,590,1024,595,847,547"/>
-<area shape="poly" title=" " alt="" coords="523,392,534,395,667,415,773,428,822,439,873,455,928,480,990,516,1025,547,1052,579,1048,582,1022,551,987,521,926,485,871,460,821,444,772,434,666,421,533,400,522,398"/>
-<area shape="poly" title=" " alt="" coords="523,393,534,395,773,419,1090,447,1089,453,773,424,533,400,522,398"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="158,445,312,471"/>
-<area shape="poly" title=" " alt="" coords="397,400,280,443,278,438,395,395"/>
-<area shape="poly" title=" " alt="" coords="269,468,394,512,392,517,267,473"/>
-<area shape="poly" title=" " alt="" coords="162,473,121,484,87,499,76,509,69,519,69,530,75,542,95,557,128,571,206,592,204,597,126,576,92,562,70,546,63,531,64,517,72,505,84,495,119,479,161,468"/>
-<area shape="poly" title=" " alt="" coords="216,473,194,487,175,505,165,524,165,533,169,542,181,552,199,561,248,577,358,596,357,601,247,582,197,566,178,557,165,546,160,535,159,523,171,502,191,483,213,469"/>
-<area shape="rect" title=" " alt="" coords="179,519,336,544"/>
-<area shape="poly" title=" " alt="" coords="241,470,253,505,247,506,236,472"/>
-<area shape="poly" title=" " alt="" coords="903,217,779,273,777,268,901,212"/>
-<area shape="poly" title=" " alt="" coords="956,212,1008,235,1066,267,1092,289,1102,298,1118,307,1152,318,1183,321,1243,317,1270,315,1297,319,1324,332,1349,356,1366,384,1371,411,1365,437,1351,462,1331,486,1305,508,1246,546,1174,577,1108,597,1106,592,1172,572,1243,542,1302,504,1327,482,1347,459,1360,436,1365,411,1361,385,1345,359,1321,336,1296,324,1270,321,1243,322,1183,327,1150,323,1115,312,1099,302,1088,293,1063,272,1006,240,954,217"/>
-<area shape="poly" title=" " alt="" coords="944,212,1010,263,1074,307,1120,330,1166,350,1164,355,1118,335,1071,312,1007,267,940,216"/>
-<area shape="poly" title=" " alt="" coords="855,217,753,238,643,272,559,311,489,352,486,347,557,306,641,267,752,233,854,211"/>
-<area shape="rect" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations." alt="" coords="852,269,1002,309"/>
-<area shape="poly" title=" " alt="" coords="930,214,930,255,924,255,924,214"/>
-<area shape="poly" title=" " alt="" coords="966,212,1158,270,1157,275,964,217"/>
-<area shape="poly" title=" " alt="" coords="1003,298,1198,328,1279,343,1318,355,1335,380,1342,403,1340,425,1328,446,1309,467,1283,490,1211,546,1159,576,1108,596,1106,591,1157,572,1208,542,1279,486,1305,463,1324,443,1335,423,1337,404,1331,383,1315,359,1278,348,1197,333,1002,304"/>
-<area shape="poly" title=" " alt="" coords="991,307,1039,327,1086,355,1125,393,1154,432,1150,435,1121,397,1083,359,1037,332,989,312"/>
-<area shape="rect" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra." alt="" coords="808,365,977,390"/>
-<area shape="poly" title=" " alt="" coords="922,311,905,353,900,351,917,309"/>
-<area shape="poly" title=" " alt="" coords="837,393,712,420,608,448,533,481,471,514,469,509,531,476,606,443,711,415,836,387"/>
-<area shape="poly" title=" " alt="" coords="838,393,796,400,541,432,327,452,326,447,540,426,795,395,837,387"/>
-<area shape="poly" title=" " alt="" coords="1506,126,1506,288,1506,460,1502,475,1493,490,1458,517,1407,539,1346,558,1215,586,1107,601,1106,596,1214,580,1345,553,1405,534,1455,512,1489,487,1497,473,1501,459,1500,288,1500,126"/>
-<area shape="poly" title=" " alt="" coords="1489,128,1413,183,1410,178,1486,124"/>
-<area shape="poly" title=" " alt="" coords="241,296,207,301,170,313,134,331,107,359,95,381,90,405,91,429,97,453,109,478,125,501,145,522,169,542,187,550,218,558,308,572,426,582,560,589,830,598,1025,600,1025,606,830,603,560,595,425,587,307,577,217,563,186,555,166,546,141,526,121,504,104,480,92,455,86,430,85,404,90,379,102,356,131,327,168,308,206,296,240,290"/>
-<area shape="poly" title=" " alt="" coords="308,291,1141,365,1140,371,307,296"/>
-<area shape="poly" title=" " alt="" coords="282,301,311,348,333,374,360,395,394,406,457,418,606,442,605,447,456,423,393,411,358,400,330,378,307,351,277,304"/>
-<area shape="poly" title=" " alt="" coords="241,297,184,305,118,318,59,337,38,347,24,359,15,374,10,390,8,408,11,428,28,478,63,543,79,564,98,581,95,585,75,567,58,545,23,481,5,430,3,408,4,389,10,371,20,356,35,343,57,332,117,313,183,300,240,292"/>
-<area shape="poly" title=" " alt="" coords="298,300,398,349,396,354,296,305"/>
-<area shape="poly" title=" " alt="" coords="241,297,210,303,176,315,144,333,119,359,112,377,119,396,143,421,174,438,172,443,140,425,114,399,107,377,114,356,141,329,174,310,208,298,240,292"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="129,357,296,397"/>
-<area shape="poly" title=" " alt="" coords="268,304,236,347,232,344,263,301"/>
-<area shape="poly" title=" " alt="" coords="260,395,448,466,571,506,696,541,787,561,879,577,1025,596,1024,602,878,582,786,567,695,547,569,511,446,471,258,400"/>
-<area shape="poly" title=" " alt="" coords="296,391,316,395,607,441,606,447,315,400,295,397"/>
-<area shape="poly" title=" " alt="" coords="221,397,231,431,225,433,215,398"/>
-<area shape="poly" title=" " alt="" coords="1613,222,1598,290,1591,333,1588,376,1588,460,1584,490,1571,512,1551,530,1523,546,1489,561,1442,572,1325,590,1203,600,1107,605,1107,599,1203,594,1324,584,1441,567,1487,556,1521,542,1547,525,1567,509,1579,488,1583,459,1583,376,1586,332,1592,289,1608,221"/>
-<area shape="poly" title=" " alt="" coords="1775,223,1752,251,1727,288,1708,331,1700,376,1700,460,1695,482,1680,502,1657,520,1626,535,1549,560,1456,578,1356,591,1259,599,1107,605,1107,600,1258,594,1355,586,1455,573,1547,555,1624,530,1654,515,1676,498,1690,480,1695,459,1695,376,1703,329,1723,285,1747,248,1771,220"/>
+<area shape="rect" title=" " alt="" coords="1843,5,2001,45"/>
+<area shape="rect" href="traffic__info_8h.html" title=" " alt="" coords="1057,93,1216,133"/>
+<area shape="poly" title=" " alt="" coords="1843,38,1230,104,1230,99,1842,33"/>
+<area shape="rect" title=" " alt="" coords="1451,277,1611,302"/>
+<area shape="poly" title=" " alt="" coords="1895,48,1561,271,1558,267,1892,43"/>
+<area shape="rect" title=" " alt="" coords="1519,101,1691,126"/>
+<area shape="poly" title=" " alt="" coords="1853,48,1661,100,1659,95,1852,43"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2425,277,2629,302"/>
+<area shape="poly" title=" " alt="" coords="2002,27,2106,33,2225,45,2333,64,2376,76,2407,91,2430,109,2450,129,2483,176,2507,223,2522,262,2517,264,2502,226,2479,179,2446,133,2427,113,2405,96,2374,81,2332,69,2224,50,2106,39,2002,32"/>
+<area shape="rect" title=" " alt="" coords="2417,365,2579,390"/>
+<area shape="poly" title=" " alt="" coords="2002,35,2092,56,2139,72,2185,91,2227,114,2260,138,2309,187,2354,242,2416,307,2473,354,2469,358,2412,311,2350,246,2305,191,2256,142,2224,119,2182,96,2137,77,2090,61,2001,41"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1958,101,2171,126"/>
+<area shape="poly" title=" " alt="" coords="1955,43,2036,91,2033,96,1952,48"/>
+<area shape="rect" title=" " alt="" coords="1636,277,1792,302"/>
+<area shape="poly" title=" " alt="" coords="1909,47,1734,267,1730,264,1905,44"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="631,277,698,302"/>
+<area shape="poly" title=" " alt="" coords="1843,31,1660,38,1430,50,1206,69,1114,81,1045,96,992,113,940,134,839,183,754,232,694,271,691,267,752,228,837,178,937,129,990,108,1044,91,1114,76,1206,64,1429,45,1660,33,1842,26"/>
+<area shape="rect" href="pprz__geodetic__utm_8h.html" title="Constants UTM (Mercator) projections." alt="" coords="2516,181,2667,221"/>
+<area shape="poly" title=" " alt="" coords="2002,27,2122,34,2262,46,2392,65,2445,77,2484,91,2511,107,2535,127,2572,169,2568,172,2531,131,2508,111,2482,96,2443,82,2391,70,2261,52,2122,39,2001,32"/>
+<area shape="rect" href="pprz__geodetic__wgs84_8h.html" title="WGS&#45;84 Geoid Heights." alt="" coords="2620,93,2771,133"/>
+<area shape="poly" title=" " alt="" coords="2002,31,2259,55,2578,91,2606,95,2606,100,2578,96,2258,60,2001,36"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="926,277,1099,302"/>
+<area shape="poly" title=" " alt="" coords="1125,135,1031,267,1027,264,1121,132"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="728,357,879,397"/>
+<area shape="poly" title=" " alt="" coords="1082,136,1030,158,970,187,910,225,857,271,832,307,816,345,811,343,827,305,853,268,907,221,968,183,1028,153,1080,131"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1157,357,1308,397"/>
+<area shape="poly" title=" " alt="" coords="1143,133,1151,174,1165,220,1191,287,1219,344,1214,346,1187,289,1159,222,1146,175,1137,134"/>
+<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="1174,189,1318,214"/>
+<area shape="poly" title=" " alt="" coords="1163,132,1222,178,1218,182,1159,136"/>
+<area shape="rect" title=" " alt="" coords="1435,365,1521,390"/>
+<area shape="poly" title=" " alt="" coords="1075,299,1421,363,1420,368,1074,305"/>
+<area shape="rect" title=" " alt="" coords="904,519,975,544"/>
+<area shape="poly" title=" " alt="" coords="995,304,967,327,954,342,944,358,933,397,930,436,937,505,931,505,925,436,928,396,940,356,950,339,964,323,992,300"/>
+<area shape="rect" title=" " alt="" coords="1299,592,1353,617"/>
+<area shape="poly" title=" " alt="" coords="1032,300,1063,324,1095,356,1114,386,1124,413,1134,440,1153,469,1187,504,1225,535,1295,583,1292,587,1222,540,1184,508,1149,472,1129,442,1119,415,1109,389,1091,359,1060,328,1029,304"/>
+<area shape="rect" title=" " alt="" coords="955,365,1081,390"/>
+<area shape="poly" title=" " alt="" coords="1016,302,1019,351,1014,351,1011,302"/>
+<area shape="poly" title=" " alt="" coords="810,397,820,430,836,470,860,509,893,542,923,557,967,569,1076,586,1192,596,1285,600,1285,605,1192,601,1075,591,965,574,921,562,890,546,856,513,831,472,815,431,805,399"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="1163,445,1289,471"/>
+<area shape="poly" title=" " alt="" coords="879,390,1151,440,1150,445,878,395"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="573,445,716,471"/>
+<area shape="poly" title=" " alt="" coords="767,400,681,442,679,437,764,395"/>
+<area shape="poly" title=" " alt="" coords="693,468,891,516,890,521,691,473"/>
+<area shape="poly" title=" " alt="" coords="635,473,622,489,611,507,607,526,613,542,626,550,648,558,716,571,807,582,911,589,1125,598,1285,600,1285,606,1125,603,911,594,806,587,715,577,647,563,624,555,609,546,602,526,606,505,618,486,631,469"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="109,519,265,544"/>
+<area shape="poly" title=" " alt="" coords="574,473,275,519,274,514,573,468"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="624,519,777,544"/>
+<area shape="poly" title=" " alt="" coords="656,469,685,506,681,509,652,473"/>
+<area shape="poly" title=" " alt="" coords="266,537,329,541,895,577,1285,599,1285,604,895,582,328,547,265,542"/>
+<area shape="rect" title=" " alt="" coords="119,592,181,617"/>
+<area shape="poly" title=" " alt="" coords="184,546,165,581,160,579,179,543"/>
+<area shape="rect" title=" " alt="" coords="5,592,76,617"/>
+<area shape="poly" title=" " alt="" coords="165,546,78,588,76,584,163,542"/>
+<area shape="rect" title=" " alt="" coords="237,592,305,617"/>
+<area shape="poly" title=" " alt="" coords="203,542,249,581,245,585,199,546"/>
+<area shape="poly" title=" " alt="" coords="778,539,797,541,1285,596,1284,601,796,547,777,544"/>
+<area shape="poly" title=" " alt="" coords="1261,395,1284,417,1303,444,1317,479,1325,516,1329,578,1324,579,1319,516,1312,481,1298,447,1279,420,1257,399"/>
+<area shape="poly" title=" " alt="" coords="1234,398,1231,432,1226,431,1228,397"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="294,445,449,471"/>
+<area shape="poly" title=" " alt="" coords="1158,392,1093,400,744,432,463,453,462,448,744,427,1092,395,1157,387"/>
+<area shape="poly" title=" " alt="" coords="343,473,231,516,229,511,341,468"/>
+<area shape="poly" title=" " alt="" coords="294,468,236,475,178,486,129,501,111,510,99,520,93,535,98,551,110,567,125,581,121,585,106,570,93,553,88,535,94,517,108,506,127,496,177,481,235,470,293,463"/>
+<area shape="poly" title=" " alt="" coords="365,473,331,520,289,582,284,579,326,517,361,470"/>
+<area shape="rect" title=" " alt="" coords="341,519,498,544"/>
+<area shape="poly" title=" " alt="" coords="381,470,406,506,402,509,377,473"/>
+<area shape="poly" title=" " alt="" coords="1215,217,1058,274,1056,269,1214,212"/>
+<area shape="poly" title=" " alt="" coords="1276,212,1329,235,1389,267,1415,287,1441,307,1468,319,1492,325,1515,334,1535,356,1544,374,1548,392,1543,428,1526,462,1498,494,1465,523,1429,549,1364,588,1361,583,1426,545,1462,519,1495,490,1521,459,1538,426,1542,393,1538,376,1530,359,1512,339,1491,330,1466,324,1438,312,1412,291,1386,272,1327,240,1274,217"/>
+<area shape="poly" title=" " alt="" coords="1174,208,1115,214,1049,226,980,244,915,272,889,288,866,308,828,349,824,345,862,304,886,284,913,267,979,239,1048,221,1115,209,1173,203"/>
+<area shape="poly" title=" " alt="" coords="1240,216,1227,240,1215,270,1214,308,1222,344,1217,345,1209,308,1210,269,1222,238,1236,213"/>
+<area shape="rect" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations." alt="" coords="1225,269,1376,309"/>
+<area shape="poly" title=" " alt="" coords="1256,213,1283,256,1279,259,1251,216"/>
+<area shape="poly" title=" " alt="" coords="1285,212,1481,270,1479,275,1284,217"/>
+<area shape="poly" title=" " alt="" coords="1319,308,1333,330,1345,357,1356,408,1358,450,1346,544,1337,579,1332,578,1341,544,1353,450,1351,409,1339,358,1328,333,1314,311"/>
+<area shape="poly" title=" " alt="" coords="1313,309,1327,351,1329,375,1322,399,1300,424,1273,442,1270,437,1297,420,1317,396,1323,375,1322,352,1308,310"/>
+<area shape="rect" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra." alt="" coords="189,365,359,390"/>
+<area shape="poly" title=" " alt="" coords="1225,301,1112,312,918,326,767,334,616,344,422,360,371,366,371,360,422,355,615,338,766,329,917,321,1111,307,1225,296"/>
+<area shape="poly" title=" " alt="" coords="270,391,203,508,198,506,265,389"/>
+<area shape="poly" title=" " alt="" coords="290,388,348,435,345,439,287,392"/>
+<area shape="poly" title=" " alt="" coords="2546,300,2572,324,2594,356,2604,390,2604,420,2594,447,2570,473,2543,488,2499,501,2371,526,2202,548,2010,566,1628,591,1367,604,1367,599,1628,586,2009,560,2201,542,2370,521,2498,496,2541,483,2567,469,2589,444,2599,419,2599,391,2589,358,2568,327,2542,304"/>
+<area shape="poly" title=" " alt="" coords="2526,303,2509,352,2504,350,2521,301"/>
+<area shape="poly" title=" " alt="" coords="2069,126,2074,160,2074,209,2065,262,2056,288,2041,311,2007,351,1968,388,1925,421,1880,450,1784,500,1686,537,1589,565,1501,584,1367,603,1367,598,1500,579,1588,560,1684,532,1782,495,1878,446,1922,417,1964,384,2003,348,2037,308,2051,285,2060,261,2069,209,2068,161,2064,127"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2252,365,2392,390"/>
+<area shape="poly" title=" " alt="" coords="2133,124,2197,144,2230,159,2260,179,2282,199,2296,218,2315,269,2324,312,2326,351,2320,351,2319,312,2310,270,2291,221,2278,203,2256,183,2227,164,2195,149,2131,129"/>
+<area shape="rect" title=" " alt="" coords="2102,181,2246,221"/>
+<area shape="poly" title=" " alt="" coords="2081,124,2141,171,2138,175,2078,128"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1817,189,2027,214"/>
+<area shape="poly" title=" " alt="" coords="2047,128,1954,184,1952,179,2044,124"/>
+<area shape="poly" title=" " alt="" coords="2286,393,2223,416,2155,448,2118,474,2093,500,2066,525,2026,546,1967,562,1889,575,1699,593,1508,602,1367,606,1367,600,1508,597,1699,588,1889,570,1966,557,2024,542,2063,520,2089,496,2115,470,2153,443,2221,411,2284,388"/>
+<area shape="rect" title=" " alt="" coords="2165,445,2340,471"/>
+<area shape="poly" title=" " alt="" coords="2314,392,2274,437,2270,433,2310,388"/>
+<area shape="rect" title=" " alt="" coords="2365,445,2557,471"/>
+<area shape="poly" title=" " alt="" coords="2344,388,2430,436,2427,441,2341,393"/>
+<area shape="poly" title=" " alt="" coords="1913,216,1860,269,1830,295,1806,312,1736,340,1663,359,1594,370,1536,376,1535,371,1593,365,1662,354,1734,335,1803,307,1826,291,1856,265,1909,212"/>
+<area shape="poly" title=" " alt="" coords="1870,217,1597,276,1596,271,1869,211"/>
+<area shape="poly" title=" " alt="" coords="2003,211,2434,272,2433,277,2003,217"/>
+<area shape="poly" title=" " alt="" coords="1895,217,1755,274,1753,269,1893,212"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2101,277,2300,302"/>
+<area shape="poly" title=" " alt="" coords="1960,212,2151,270,2150,275,1959,217"/>
+<area shape="rect" title=" " alt="" coords="1867,277,2027,302"/>
+<area shape="poly" title=" " alt="" coords="1928,213,1943,263,1937,264,1923,215"/>
+<area shape="poly" title=" " alt="" coords="2219,300,2296,354,2293,359,2215,304"/>
+<area shape="rect" title=" " alt="" coords="2043,365,2227,390"/>
+<area shape="poly" title=" " alt="" coords="2194,304,2155,355,2151,352,2190,301"/>
+<area shape="poly" title=" " alt="" coords="671,302,689,345,718,396,751,445,779,482,812,512,862,542,897,554,945,565,1064,582,1187,593,1285,599,1285,604,1187,598,1063,587,944,570,895,559,860,546,809,517,775,485,747,448,713,399,684,347,666,304"/>
+<area shape="poly" title=" " alt="" coords="685,300,763,348,760,352,682,304"/>
+<area shape="poly" title=" " alt="" coords="666,302,650,432,645,431,661,302"/>
+<area shape="poly" title=" " alt="" coords="631,294,530,298,396,309,266,329,215,343,178,360,151,382,127,409,89,470,64,531,49,579,44,578,59,529,84,468,123,406,147,378,175,355,213,338,265,323,395,304,529,293,631,289"/>
+<area shape="poly" title=" " alt="" coords="698,293,1144,360,1143,365,698,298"/>
+<area shape="poly" title=" " alt="" coords="631,294,586,299,531,309,475,329,448,342,424,359,408,375,396,394,380,433,375,431,391,392,404,372,420,355,445,338,472,324,530,304,585,293,631,289"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="435,357,601,397"/>
+<area shape="poly" title=" " alt="" coords="646,304,563,353,561,348,644,300"/>
+<area shape="poly" title=" " alt="" coords="524,397,531,430,546,470,568,510,583,527,601,542,640,555,710,566,909,583,1124,594,1285,600,1285,605,1124,599,909,588,710,571,639,560,598,546,580,531,564,513,541,473,526,432,518,398"/>
+<area shape="poly" title=" " alt="" coords="550,395,616,436,613,440,547,400"/>
+<area shape="poly" title=" " alt="" coords="484,400,406,441,404,436,482,395"/>
+<area shape="poly" title=" " alt="" coords="2611,220,2629,242,2644,268,2665,320,2670,376,2670,460,2667,473,2657,485,2622,506,2567,525,2496,541,2316,566,2102,584,1877,596,1665,602,1367,606,1367,601,1665,597,1877,590,2101,579,2315,561,2495,536,2566,520,2620,502,2653,481,2662,470,2665,459,2665,376,2660,322,2640,271,2624,245,2607,223"/>
+<area shape="poly" title=" " alt="" coords="2702,133,2714,201,2721,288,2721,460,2716,488,2704,508,2686,521,2662,529,2605,537,2542,547,2434,566,2288,581,2119,591,1939,598,1598,605,1368,606,1368,601,1598,600,1939,593,2119,586,2288,575,2433,561,2542,541,2605,531,2661,524,2683,516,2700,504,2711,486,2715,459,2715,288,2709,202,2697,134"/>
 </map>
 </div>
 </div>
@@ -211,6 +237,8 @@ $(document).ready(function(){initNavTree('traffic__info_8c.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a50d3aab8b829d507ebca8080ebc742c2" id="r_a50d3aab8b829d507ebca8080ebc742c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="traffic__info_8c.html#a50d3aab8b829d507ebca8080ebc742c2">send_acinfo_lla</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *trans, struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
+<tr class="separator:a50d3aab8b829d507ebca8080ebc742c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae96e15faf2bb8e4c1f82c01cdf869c2" id="r_gaae96e15faf2bb8e4c1f82c01cdf869c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2">traffic_info_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:gaae96e15faf2bb8e4c1f82c01cdf869c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613e84a3cdf3fbb12be8f2de43e6bff1" id="r_a613e84a3cdf3fbb12be8f2de43e6bff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="traffic__info_8c.html#a613e84a3cdf3fbb12be8f2de43e6bff1">update_geoid_height</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
@@ -241,6 +269,10 @@ Functions</h2></td></tr>
 <tr class="separator:gade35a76a0329e540ef2ea613124705f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga617fbb6b732b670c567912ec18da1014" id="r_ga617fbb6b732b670c567912ec18da1014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ac__info.html#ga617fbb6b732b670c567912ec18da1014">acInfoCalcVelocityEnu_f</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ac_id)</td></tr>
 <tr class="separator:ga617fbb6b732b670c567912ec18da1014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae59a13c203efbbcc1f4ee344e68254e9" id="r_gae59a13c203efbbcc1f4ee344e68254e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ac__info.html#gae59a13c203efbbcc1f4ee344e68254e9">traffic_info_log_start</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:gae59a13c203efbbcc1f4ee344e68254e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59daeaa7f3abfe76c13be8c6fd840422" id="r_ga59daeaa7f3abfe76c13be8c6fd840422"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ac__info.html#ga59daeaa7f3abfe76c13be8c6fd840422">traffic_info_log_stop</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:ga59daeaa7f3abfe76c13be8c6fd840422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -258,6 +290,143 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="traffic__info_8c_source.html">traffic_info.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a50d3aab8b829d507ebca8080ebc742c2" name="a50d3aab8b829d507ebca8080ebc742c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d3aab8b829d507ebca8080ebc742c2">&#9670;&#160;</a></span>send_acinfo_lla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> send_acinfo_lla </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="traffic__info_8c_source.html#l00065">65</a> of file <a class="el" href="traffic__info_8c_source.html">traffic_info.c</a>.</p>
+
+<p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="logger__utils_8h_source.html#l00043">LogFileIsOpen</a>, <a class="el" href="logger__utils_8h_source.html#l00042">LogWrite</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00038">pprzLogFile</a>, <a class="el" href="state_8h_source.html#l01085">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00857">stateGetPositionLla_f()</a>, <a class="el" href="state_8h_source.html#l00812">stateGetPositionLla_i()</a>, <a class="el" href="state_8h_source.html#l01058">stateGetSpeedEnu_f()</a>, <a class="el" href="gps_8h_source.html#l00112">GpsState::tow</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="traffic__info_8c_source.html#l00100">traffic_info_init()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="traffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_cgraph.png" border="0" usemap="#atraffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_cgraph" alt=""/></div>
+<map name="atraffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_cgraph" id="atraffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,261,128,287"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="185,80,401,105"/>
+<area shape="poly" title=" " alt="" coords="72,260,110,198,139,162,174,130,219,108,222,112,178,135,143,166,114,201,77,262"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="176,145,409,171"/>
+<area shape="poly" title=" " alt="" coords="82,259,122,228,175,196,231,173,233,177,177,200,125,232,85,263"/>
+<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="209,211,376,236"/>
+<area shape="poly" title=" " alt="" coords="124,259,222,236,223,242,125,264"/>
+<area shape="rect" href="group__state__position.html#ga1079cbda74a805c577953981e58943fa" title="Get position in LLA coordinates (float)." alt="" coords="212,285,373,311"/>
+<area shape="poly" title=" " alt="" coords="129,278,199,285,198,291,128,283"/>
+<area shape="rect" href="group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="213,360,373,385"/>
+<area shape="poly" title=" " alt="" coords="98,284,177,320,251,352,249,357,175,324,96,289"/>
+<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="215,460,370,485"/>
+<area shape="poly" title=" " alt="" coords="80,285,120,335,178,395,218,425,258,451,255,455,215,430,174,399,116,339,75,289"/>
+<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="457,53,648,93"/>
+<area shape="poly" title=" " alt="" coords="401,82,443,78,444,84,401,87"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="457,117,648,157"/>
+<area shape="poly" title=" " alt="" coords="409,146,443,143,444,148,410,151"/>
+<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="467,181,638,207"/>
+<area shape="poly" title=" " alt="" coords="376,211,453,202,454,208,376,217"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="721,156,825,181"/>
+<area shape="poly" title=" " alt="" coords="638,182,706,174,707,179,638,187"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="924,56,1077,81"/>
+<area shape="poly" title=" " alt="" coords="623,179,646,167,662,149,669,129,676,110,695,92,747,69,803,56,859,52,911,54,911,59,859,57,804,62,748,74,697,96,681,112,674,131,666,151,650,171,626,184"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="701,5,844,31"/>
+<area shape="poly" title=" " alt="" coords="627,179,646,167,658,153,665,139,670,110,675,80,682,64,694,48,712,35,715,39,698,52,687,67,680,81,676,111,670,141,663,156,650,171,630,183"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="702,107,843,132"/>
+<area shape="poly" title=" " alt="" coords="609,179,647,166,671,154,695,141,713,134,715,139,697,146,673,159,649,171,610,184"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="721,205,824,231"/>
+<area shape="poly" title=" " alt="" coords="638,201,707,208,707,214,638,206"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="947,156,1055,181"/>
+<area shape="poly" title=" " alt="" coords="825,166,933,166,933,171,825,171"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="948,107,1053,132"/>
+<area shape="poly" title=" " alt="" coords="825,155,934,131,935,136,826,160"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="925,5,1077,31"/>
+<area shape="poly" title=" " alt="" coords="844,15,911,15,911,21,844,21"/>
+<area shape="poly" title=" " alt="" coords="843,117,934,117,934,122,843,122"/>
+<area shape="poly" title=" " alt="" coords="830,104,929,82,930,87,831,109"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="925,205,1077,231"/>
+<area shape="poly" title=" " alt="" coords="824,215,911,215,911,221,824,221"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="931,305,1071,345"/>
+<area shape="poly" title=" " alt="" coords="825,228,851,240,866,252,875,265,884,277,899,289,919,300,916,304,896,294,881,281,871,268,862,256,848,244,823,233"/>
+<area shape="rect" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title=" " alt="" coords="469,305,636,331"/>
+<area shape="poly" title=" " alt="" coords="374,302,456,308,455,313,373,307"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title=" " alt="" coords="924,255,1077,280"/>
+<area shape="poly" title=" " alt="" coords="636,309,849,289,912,280,913,285,850,294,637,315"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title=" " alt="" coords="696,255,849,280"/>
+<area shape="poly" title=" " alt="" coords="608,303,703,281,704,286,609,308"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="948,419,1053,444"/>
+<area shape="poly" title=" " alt="" coords="574,328,628,360,697,390,759,406,822,417,934,427,934,432,821,422,757,411,695,395,625,365,571,333"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="721,356,824,381"/>
+<area shape="poly" title=" " alt="" coords="609,328,709,351,707,356,608,333"/>
+<area shape="poly" title=" " alt="" coords="850,265,910,265,910,270,850,270"/>
+<area shape="poly" title=" " alt="" coords="823,356,917,338,918,343,825,362"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="897,369,1104,395"/>
+<area shape="poly" title=" " alt="" coords="824,369,884,372,883,378,824,374"/>
+<area shape="rect" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="470,457,635,483"/>
+<area shape="poly" title=" " alt="" coords="329,383,506,450,504,455,327,388"/>
+<area shape="poly" title=" " alt="" coords="580,455,730,385,733,390,583,460"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="929,537,1072,563"/>
+<area shape="poly" title=" " alt="" coords="573,481,627,513,661,530,697,542,752,553,810,558,915,556,915,561,810,563,752,558,695,547,659,535,624,518,570,485"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="701,507,844,532"/>
+<area shape="poly" title=" " alt="" coords="611,480,702,501,701,506,609,485"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="721,457,825,483"/>
+<area shape="poly" title=" " alt="" coords="636,467,707,467,707,473,636,473"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1152,537,1299,563"/>
+<area shape="poly" title=" " alt="" coords="1072,547,1138,547,1138,553,1072,553"/>
+<area shape="poly" title=" " alt="" coords="844,526,916,536,915,541,844,532"/>
+<area shape="poly" title=" " alt="" coords="825,459,934,440,935,445,826,464"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="947,468,1055,493"/>
+<area shape="poly" title=" " alt="" coords="825,470,933,475,933,480,825,475"/>
+<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="473,557,632,583"/>
+<area shape="poly" title=" " alt="" coords="329,483,506,550,504,555,327,488"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="699,608,847,633"/>
+<area shape="poly" title=" " alt="" coords="609,580,704,602,703,607,608,585"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="traffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_icgraph.png" border="0" usemap="#atraffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_icgraph" alt=""/></div>
+<map name="atraffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_icgraph" id="atraffic__info_8c_a50d3aab8b829d507ebca8080ebc742c2_icgraph">
+<area shape="rect" title=" " alt="" coords="173,5,296,31"/>
+<area shape="rect" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2" title=" " alt="" coords="5,5,125,31"/>
+<area shape="poly" title=" " alt="" coords="160,21,126,21,126,15,160,15"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a613e84a3cdf3fbb12be8f2de43e6bff1" name="a613e84a3cdf3fbb12be8f2de43e6bff1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a613e84a3cdf3fbb12be8f2de43e6bff1">&#9670;&#160;</a></span>update_geoid_height()</h2>
 
@@ -284,16 +453,16 @@ Variables</h2></td></tr>
 
 <p>Update estimate of the geoid height Requires an available hsml and/or lla measurement, if not available value isn't updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="traffic__info_8c_source.html#l00066">66</a> of file <a class="el" href="traffic__info_8c_source.html">traffic_info.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="traffic__info_8c_source.html#l00120">120</a> of file <a class="el" href="traffic__info_8c_source.html">traffic_info.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="traffic__info_8c_source.html#l00048">geoid_height</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::valid_fields</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="traffic__info_8c_source.html#l00062">geoid_height</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::valid_fields</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="traffic__info_8c_source.html#l00418">acInfoCalcPositionLla_f()</a>, <a class="el" href="traffic__info_8c_source.html#l00318">acInfoCalcPositionLla_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00386">acInfoCalcPositionUtm_f()</a>, and <a class="el" href="traffic__info_8c_source.html#l00285">acInfoCalcPositionUtm_i()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="traffic__info_8c_source.html#l00495">acInfoCalcPositionLla_f()</a>, <a class="el" href="traffic__info_8c_source.html#l00395">acInfoCalcPositionLla_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00463">acInfoCalcPositionUtm_f()</a>, and <a class="el" href="traffic__info_8c_source.html#l00362">acInfoCalcPositionUtm_i()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="traffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_cgraph.png" border="0" usemap="#atraffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_cgraph" alt=""/></div>
 <map name="atraffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_cgraph" id="atraffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_cgraph">
 <area shape="rect" title="Update estimate of the geoid height Requires an available hsml and/or lla measurement,..." alt="" coords="5,13,164,38"/>
@@ -301,65 +470,68 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="164,23,198,23,198,28,164,28"/>
 </map>
 </div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="traffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_icgraph.png" border="0" usemap="#atraffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_icgraph" alt=""/></div>
 <map name="atraffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_icgraph" id="atraffic__info_8c_a613e84a3cdf3fbb12be8f2de43e6bff1_icgraph">
-<area shape="rect" title="Update estimate of the geoid height Requires an available hsml and/or lla measurement,..." alt="" coords="1564,279,1723,304"/>
-<area shape="rect" href="group__ac__info.html#ga66c45f46dcc1835b0297fcb89240db20" title=" " alt="" coords="1338,204,1511,229"/>
-<area shape="poly" title=" " alt="" coords="1600,276,1515,243,1477,232,1479,227,1517,238,1602,271"/>
-<area shape="rect" href="group__ac__info.html#ga660def4d2d1433508928beb427d1b7c7" title=" " alt="" coords="1339,253,1511,279"/>
-<area shape="poly" title=" " alt="" coords="1550,283,1510,279,1511,273,1550,278"/>
-<area shape="rect" href="group__ac__info.html#ga372e62985b33d1539347cfadb62d9aff" title=" " alt="" coords="1333,303,1516,328"/>
-<area shape="poly" title=" " alt="" coords="1550,304,1517,308,1516,303,1550,299"/>
-<area shape="rect" href="group__ac__info.html#ga625b19c827e0414eba7db51eb8ca4a75" title=" " alt="" coords="1334,352,1515,377"/>
-<area shape="poly" title=" " alt="" coords="1601,312,1517,343,1478,355,1477,349,1515,338,1599,307"/>
-<area shape="rect" href="group__ac__info.html#gab653321fd0c39a8b046d64be7d3a8db6" title="Get position from LLA coordinates (float)." alt="" coords="1113,204,1281,229"/>
-<area shape="poly" title=" " alt="" coords="1324,219,1281,219,1281,214,1324,214"/>
-<area shape="rect" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="881,217,1060,243"/>
-<area shape="poly" title=" " alt="" coords="1099,225,1060,227,1060,222,1098,220"/>
-<area shape="rect" href="group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="882,279,1059,304"/>
-<area shape="poly" title=" " alt="" coords="1134,236,1109,243,1005,281,1003,276,1107,238,1132,231"/>
-<area shape="rect" href="group__ac__info.html#gac871ebab1d96f5dcab9d03f29a92246e" title="Get position in local ENU coordinates (float)." alt="" coords="660,180,833,205"/>
-<area shape="poly" title=" " alt="" coords="880,218,823,208,824,203,881,212"/>
-<area shape="rect" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="437,55,612,80"/>
-<area shape="poly" title=" " alt="" coords="720,173,672,132,611,94,583,83,585,78,613,89,675,128,724,169"/>
-<area shape="rect" href="cam__gimbal_8c.html#afc0eb5144ca9e53f88eb85861e8d03b1" title=" " alt="" coords="439,5,610,31"/>
-<area shape="poly" title=" " alt="" coords="728,170,681,107,648,73,611,44,587,33,590,28,613,40,651,69,685,103,733,167"/>
-<area shape="rect" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd" title=" " alt="" coords="461,255,588,280"/>
-<area shape="poly" title=" " alt="" coords="701,213,613,245,572,257,570,252,611,239,699,208"/>
-<area shape="rect" href="potential_8c.html#a2ecae8ed4b80ccfece655453a56db7cd" title=" " alt="" coords="467,304,582,329"/>
-<area shape="poly" title=" " alt="" coords="723,217,675,257,613,295,583,307,581,302,611,290,672,252,720,213"/>
-<area shape="rect" href="tcas_8c.html#adb2f00821358ed6ad0f366e6a2422558" title=" " alt="" coords="215,180,389,205"/>
-<area shape="poly" title=" " alt="" coords="646,195,390,195,390,190,646,190"/>
-<area shape="rect" href="tcas_8c.html#aa520d855e76e58f77855603fde040497" title=" " alt="" coords="437,104,612,129"/>
-<area shape="poly" title=" " alt="" coords="695,178,562,132,564,127,696,173"/>
-<area shape="rect" href="tcas_8c.html#a5baa7069079b8f1211e22af90cf7593b" title=" " alt="" coords="452,205,597,231"/>
-<area shape="poly" title=" " alt="" coords="646,207,598,212,597,207,646,201"/>
-<area shape="rect" href="nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="221,55,383,80"/>
-<area shape="poly" title=" " alt="" coords="423,70,384,70,384,65,423,65"/>
-<area shape="rect" href="cam__gimbal_8c.html#a15f78f599edcdb63924888513708d37a" title="Run camera control." alt="" coords="237,5,367,31"/>
-<area shape="poly" title=" " alt="" coords="425,21,367,21,367,15,425,15"/>
-<area shape="rect" href="cam__gimbal_8c.html#a99baed535216e91b0bf4aef19d917df4" title="Periodic call (run control)" alt="" coords="5,5,167,31"/>
-<area shape="poly" title=" " alt="" coords="223,21,167,21,167,15,223,15"/>
-<area shape="poly" title=" " alt="" coords="438,211,389,205,390,200,439,206"/>
-<area shape="rect" href="group__ac__info.html#ga820170c65c7af86fbb8408811a193641" title="Get position in local ENU coordinates (int)." alt="" coords="661,279,833,304"/>
-<area shape="poly" title=" " alt="" coords="868,294,833,294,833,289,868,289"/>
-<area shape="rect" href="follow_8c.html#a193d671739e35bbb235456cb3b65e9ff" title=" " alt="" coords="481,353,569,379"/>
-<area shape="poly" title=" " alt="" coords="703,311,613,345,570,357,568,352,611,339,701,306"/>
-<area shape="rect" href="group__ac__info.html#ga739a732aefa2a30e5b07e5e83874236f" title="Get position from LLA coordinates (int)." alt="" coords="1113,253,1280,279"/>
-<area shape="poly" title=" " alt="" coords="1325,269,1280,269,1280,263,1325,263"/>
-<area shape="poly" title=" " alt="" coords="1103,254,1050,245,1051,240,1104,249"/>
-<area shape="poly" title=" " alt="" coords="1099,280,1060,284,1059,279,1099,274"/>
-<area shape="rect" href="group__ac__info.html#gae129297882c430ae5e3aa55075e44aef" title="Get position from UTM coordinates (float)." alt="" coords="1108,303,1285,328"/>
-<area shape="poly" title=" " alt="" coords="1320,318,1285,318,1285,313,1320,313"/>
-<area shape="poly" title=" " alt="" coords="1128,301,1107,294,1059,268,1004,245,1006,240,1061,264,1109,289,1130,296"/>
-<area shape="poly" title=" " alt="" coords="1094,307,1059,303,1060,298,1094,302"/>
-<area shape="rect" href="group__ac__info.html#gabea65a3c5d86403c9c6f01c29dfa3dfd" title="Get position from UTM coordinates (int)." alt="" coords="1109,352,1285,377"/>
-<area shape="poly" title=" " alt="" coords="1320,367,1285,367,1285,362,1320,362"/>
+<area shape="rect" title="Update estimate of the geoid height Requires an available hsml and/or lla measurement,..." alt="" coords="1564,256,1723,281"/>
+<area shape="rect" href="group__ac__info.html#ga66c45f46dcc1835b0297fcb89240db20" title=" " alt="" coords="1338,280,1511,305"/>
+<area shape="poly" title=" " alt="" coords="1550,282,1512,286,1511,281,1549,276"/>
+<area shape="rect" href="group__ac__info.html#ga660def4d2d1433508928beb427d1b7c7" title=" " alt="" coords="1339,181,1511,207"/>
+<area shape="poly" title=" " alt="" coords="1598,253,1515,222,1474,209,1475,204,1517,217,1600,248"/>
+<area shape="rect" href="group__ac__info.html#ga372e62985b33d1539347cfadb62d9aff" title=" " alt="" coords="1333,231,1516,256"/>
+<area shape="poly" title=" " alt="" coords="1550,261,1516,257,1517,251,1550,255"/>
+<area shape="rect" href="group__ac__info.html#ga625b19c827e0414eba7db51eb8ca4a75" title=" " alt="" coords="1334,329,1515,355"/>
+<area shape="poly" title=" " alt="" coords="1601,289,1517,321,1478,332,1477,327,1515,315,1599,284"/>
+<area shape="rect" href="group__ac__info.html#gab653321fd0c39a8b046d64be7d3a8db6" title="Get position from LLA coordinates (float)." alt="" coords="1113,280,1281,305"/>
+<area shape="poly" title=" " alt="" coords="1324,295,1281,295,1281,290,1324,290"/>
+<area shape="rect" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="881,231,1060,256"/>
+<area shape="poly" title=" " alt="" coords="1124,280,1029,259,1030,253,1125,274"/>
+<area shape="rect" href="group__ac__info.html#ga17b120995d97d500b7eb5aea22214041" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="463,403,587,428"/>
+<area shape="poly" title=" " alt="" coords="1113,310,587,407,586,402,1112,305"/>
+<area shape="rect" href="group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="882,181,1059,207"/>
+<area shape="poly" title=" " alt="" coords="1119,277,1107,271,1091,258,1082,246,1073,233,1059,222,1031,209,1033,204,1061,217,1077,230,1086,242,1095,255,1109,266,1122,273"/>
+<area shape="rect" href="group__ac__info.html#gac871ebab1d96f5dcab9d03f29a92246e" title="Get position in local ENU coordinates (float)." alt="" coords="660,231,833,256"/>
+<area shape="poly" title=" " alt="" coords="868,246,834,246,834,241,868,241"/>
+<area shape="rect" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="437,205,612,231"/>
+<area shape="poly" title=" " alt="" coords="646,235,612,231,613,225,647,229"/>
+<area shape="rect" href="cam__gimbal_8c.html#afc0eb5144ca9e53f88eb85861e8d03b1" title=" " alt="" coords="439,255,610,280"/>
+<area shape="poly" title=" " alt="" coords="647,257,610,261,610,255,646,252"/>
+<area shape="rect" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd" title=" " alt="" coords="461,304,588,329"/>
+<area shape="poly" title=" " alt="" coords="701,263,613,295,575,306,574,301,611,290,700,258"/>
+<area shape="poly" title=" " alt="" coords="722,267,662,325,649,344,641,361,631,377,614,394,588,406,585,402,610,389,627,374,636,359,644,341,658,322,718,263"/>
+<area shape="rect" href="potential_8c.html#a2ecae8ed4b80ccfece655453a56db7cd" title=" " alt="" coords="467,353,582,379"/>
+<area shape="poly" title=" " alt="" coords="723,267,675,306,613,344,583,356,581,351,611,340,671,302,720,263"/>
+<area shape="rect" href="tcas_8c.html#adb2f00821358ed6ad0f366e6a2422558" title=" " alt="" coords="215,81,389,107"/>
+<area shape="poly" title=" " alt="" coords="730,220,711,189,684,154,650,121,611,96,579,85,546,77,477,72,412,75,357,84,356,79,412,70,477,66,547,72,581,80,613,92,654,117,688,151,715,186,734,217"/>
+<area shape="rect" href="tcas_8c.html#aa520d855e76e58f77855603fde040497" title=" " alt="" coords="437,156,612,181"/>
+<area shape="poly" title=" " alt="" coords="701,228,611,195,574,184,575,179,613,190,703,223"/>
+<area shape="rect" href="tcas_8c.html#a5baa7069079b8f1211e22af90cf7593b" title=" " alt="" coords="452,107,597,132"/>
+<area shape="poly" title=" " alt="" coords="720,223,672,184,611,146,582,135,584,130,613,141,675,179,723,219"/>
+<area shape="rect" href="nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="221,205,383,231"/>
+<area shape="poly" title=" " alt="" coords="423,221,384,221,384,215,423,215"/>
+<area shape="rect" href="cam__gimbal_8c.html#a15f78f599edcdb63924888513708d37a" title="Run camera control." alt="" coords="237,255,367,280"/>
+<area shape="poly" title=" " alt="" coords="425,270,367,270,367,265,425,265"/>
+<area shape="rect" href="cam__gimbal_8c.html#a99baed535216e91b0bf4aef19d917df4" title="Periodic call (run control)" alt="" coords="5,255,167,280"/>
+<area shape="poly" title=" " alt="" coords="223,270,167,270,167,265,223,265"/>
+<area shape="poly" title=" " alt="" coords="438,112,389,107,390,101,439,107"/>
+<area shape="rect" href="group__ac__info.html#ga820170c65c7af86fbb8408811a193641" title="Get position in local ENU coordinates (int)." alt="" coords="661,81,833,107"/>
+<area shape="poly" title=" " alt="" coords="927,178,775,109,777,104,930,173"/>
+<area shape="rect" href="follow_8c.html#a193d671739e35bbb235456cb3b65e9ff" title=" " alt="" coords="481,5,569,31"/>
+<area shape="poly" title=" " alt="" coords="695,79,562,33,564,28,696,74"/>
+<area shape="rect" href="group__ac__info.html#ga739a732aefa2a30e5b07e5e83874236f" title="Get position from LLA coordinates (int)." alt="" coords="1113,181,1280,207"/>
+<area shape="poly" title=" " alt="" coords="1325,197,1280,197,1280,191,1325,191"/>
+<area shape="poly" title=" " alt="" coords="1125,212,1030,233,1029,228,1124,207"/>
+<area shape="poly" title=" " alt="" coords="1099,197,1059,197,1059,191,1099,191"/>
+<area shape="rect" href="group__ac__info.html#gae129297882c430ae5e3aa55075e44aef" title="Get position from UTM coordinates (float)." alt="" coords="1108,231,1285,256"/>
+<area shape="poly" title=" " alt="" coords="1320,246,1285,246,1285,241,1320,241"/>
+<area shape="poly" title=" " alt="" coords="1094,246,1060,246,1060,241,1094,241"/>
+<area shape="poly" title=" " alt="" coords="1124,230,1029,209,1030,204,1125,225"/>
+<area shape="rect" href="group__ac__info.html#gabea65a3c5d86403c9c6f01c29dfa3dfd" title="Get position from UTM coordinates (int)." alt="" coords="1109,329,1285,355"/>
+<area shape="poly" title=" " alt="" coords="1320,345,1285,345,1285,339,1320,339"/>
 </map>
 </div>
 
@@ -378,9 +550,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="traffic__info_8c_source.html#l00048">48</a> of file <a class="el" href="traffic__info_8c_source.html">traffic_info.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="traffic__info_8c_source.html#l00062">62</a> of file <a class="el" href="traffic__info_8c_source.html">traffic_info.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="traffic__info_8c_source.html#l00418">acInfoCalcPositionLla_f()</a>, <a class="el" href="traffic__info_8c_source.html#l00318">acInfoCalcPositionLla_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00386">acInfoCalcPositionUtm_f()</a>, <a class="el" href="traffic__info_8c_source.html#l00285">acInfoCalcPositionUtm_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00050">traffic_info_init()</a>, and <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="traffic__info_8c_source.html#l00495">acInfoCalcPositionLla_f()</a>, <a class="el" href="traffic__info_8c_source.html#l00395">acInfoCalcPositionLla_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00463">acInfoCalcPositionUtm_f()</a>, <a class="el" href="traffic__info_8c_source.html#l00362">acInfoCalcPositionUtm_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00100">traffic_info_init()</a>, and <a class="el" href="traffic__info_8c_source.html#l00120">update_geoid_height()</a>.</p>
 
 </div>
 </div>
@@ -390,7 +562,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="traffic__info_8c.html">traffic_info.c</a></li>
-    <li class="footer">Generated on Fri Apr 3 2026 21:15:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Apr 8 2026 08:32:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

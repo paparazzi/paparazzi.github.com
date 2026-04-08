@@ -20,5 +20,6 @@ var searchData=
   ['logger_5fsd_5fchibios_20module_17',['logger_sd_chibios module',['../module__logger_sd_chibios.html',1,'onboard_modules']]],
   ['logger_5fsd_5fspi_5fdirect_20module_18',['logger_sd_spi_direct module',['../module__logger_sd_spi_direct.html',1,'onboard_modules']]],
   ['logger_5fspi_5flink_20module_19',['logger_spi_link module',['../module__logger_spi_link.html',1,'onboard_modules']]],
-  ['logger_5fuart_20module_20',['logger_uart module',['../module__logger_uart.html',1,'onboard_modules']]]
+  ['logger_5fuart_20module_20',['logger_uart module',['../module__logger_uart.html',1,'onboard_modules']]],
+  ['logger_5futils_20module_21',['logger_utils module',['../module__logger_utils.html',1,'onboard_modules']]]
 ];

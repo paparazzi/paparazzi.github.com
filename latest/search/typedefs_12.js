@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['word_0',['WORD',['../usb__msd_8c.html#ab24077addd3b7b13e086987ff296552c',1,'usb_msd.c']]]
+  ['vl53l1_5fdev_0',['VL53L1_DEV',['../vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb',1,'vl53l1_platform.h']]],
+  ['vl53l1x_5ferror_1',['VL53L1X_ERROR',['../vl53l1x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc',1,'vl53l1x_api.h']]]
 ];

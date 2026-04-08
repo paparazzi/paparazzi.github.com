@@ -131,49 +131,51 @@ $(document).ready(function(){initNavTree('bebop_8h_source.html',''); initResizab
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="bebop_8h.html#a8500674e433093202b888c0613c07501">   32</a></span><span class="preprocessor">#define UART1_DEV /dev/ttyPA1</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="bebop_8h.html#a795637c038061d50a428834973f875ef">   42</a></span><span class="preprocessor">#define GPS_UBX_ENABLE_NMEA_DATA_MASK 0xff</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef UART2_DEV</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="bebop_8h.html#aa9d6091776c6ce3bd59c7290094d0180">   48</a></span><span class="preprocessor">#define UART2_DEV /dev/ttyUSB0</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifndef UART4_DEV</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="bebop_8h.html#af55f6a570be98106b333e120ca8caa09">   51</a></span><span class="preprocessor">#define UART4_DEV /dev/ttyUSB1</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#ifndef UART5_DEV</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="bebop_8h.html#a053f051ecef9aaeae10378556c6e244c">   54</a></span><span class="preprocessor">#define UART5_DEV /dev/ttyACM0</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#ifndef UART6_DEV</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="bebop_8h.html#ae435a1a8306a4acbe00ef9f980abc9b2">   57</a></span><span class="preprocessor">#define UART6_DEV /dev/ttyACM1</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#ifndef DEFAULT_ACTUATORS</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="bebop_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">   62</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;boards/bebop/actuators.h&quot;</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="bebop_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">   63</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorsBebopSet</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="bebop_8h.html#ab68f28871d18c17e7e70ae63277d37c2">   64</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsBebopInit()</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="bebop_8h.html#a0ceadf6a913477832e04b0cb7cd17210">   65</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsBebopCommit()</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/* Cameras */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/* The ADC from the sonar */</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#if USE_ADC0</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define ADC0_ID             0</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define ADC0_CHANNELS       2</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define ADC0_CHANNELS_CNT   1</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#define ADC0_BUF_LENGTH     8192</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">/* The SPI from the sonar */</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#if USE_SPI0</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="bebop_8h.html#a989283f6e472fa84449301df602c6e94">   82</a></span><span class="preprocessor">#define SPI0_MODE           0</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="bebop_8h.html#ac0c17180c00e0862f0dd0eaea546c19a">   83</a></span><span class="preprocessor">#define SPI0_BITS_PER_WORD  8</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="bebop_8h.html#a495eef5868c701c6dd024afee3038956">   84</a></span><span class="preprocessor">#define SPI0_MAX_SPEED_HZ   320000</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_BEBOP */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifndef GPX_UBX_UCENTER_ENABLE_NMEA</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="bebop_8h.html#a484689312dd0e9cb279a27dda7139ce5">   43</a></span><span class="preprocessor">#define GPX_UBX_UCENTER_ENABLE_NMEA TRUE</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifndef UART2_DEV</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="bebop_8h.html#aa9d6091776c6ce3bd59c7290094d0180">   50</a></span><span class="preprocessor">#define UART2_DEV /dev/ttyUSB0</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#ifndef UART4_DEV</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="bebop_8h.html#af55f6a570be98106b333e120ca8caa09">   53</a></span><span class="preprocessor">#define UART4_DEV /dev/ttyUSB1</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#ifndef UART5_DEV</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="bebop_8h.html#a053f051ecef9aaeae10378556c6e244c">   56</a></span><span class="preprocessor">#define UART5_DEV /dev/ttyACM0</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifndef UART6_DEV</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="bebop_8h.html#ae435a1a8306a4acbe00ef9f980abc9b2">   59</a></span><span class="preprocessor">#define UART6_DEV /dev/ttyACM1</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#ifndef DEFAULT_ACTUATORS</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="bebop_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">   64</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;boards/bebop/actuators.h&quot;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="bebop_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">   65</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorsBebopSet</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="bebop_8h.html#ab68f28871d18c17e7e70ae63277d37c2">   66</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsBebopInit()</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="bebop_8h.html#a0ceadf6a913477832e04b0cb7cd17210">   67</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsBebopCommit()</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/* Cameras */</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code hl_variable" href="bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/* The ADC from the sonar */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#if USE_ADC0</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define ADC0_ID             0</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#define ADC0_CHANNELS       2</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define ADC0_CHANNELS_CNT   1</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define ADC0_BUF_LENGTH     8192</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/* The SPI from the sonar */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#if USE_SPI0</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="bebop_8h.html#a989283f6e472fa84449301df602c6e94">   84</a></span><span class="preprocessor">#define SPI0_MODE           0</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="bebop_8h.html#ac0c17180c00e0862f0dd0eaea546c19a">   85</a></span><span class="preprocessor">#define SPI0_BITS_PER_WORD  8</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="bebop_8h.html#a495eef5868c701c6dd024afee3038956">   86</a></span><span class="preprocessor">#define SPI0_MAX_SPEED_HZ   320000</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_BEBOP */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="abebop_8h_html_abe211b229633c3f39cbfb50c5765b4b4"><div class="ttname"><a href="bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a></div><div class="ttdeci">struct video_config_t front_camera</div><div class="ttdoc">Video thread dummy for simulation.</div><div class="ttdef"><b>Definition</b> <a href="boards_2ardrone_2board_8c_source.html#l00043">board.c:43</a></div></div>
 <div class="ttc" id="abebop_8h_html_aebe228d13ad2e4e0c8528d945ad76a82"><div class="ttname"><a href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></div><div class="ttdeci">struct video_config_t bottom_camera</div><div class="ttdef"><b>Definition</b> <a href="boards_2ardrone_2board_8c_source.html#l00068">board.c:68</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
@@ -185,7 +187,7 @@ $(document).ready(function(){initNavTree('bebop_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="bebop_8h.html">bebop.h</a></li>
-    <li class="footer">Generated on Fri Apr 3 2026 21:15:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Apr 8 2026 08:31:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

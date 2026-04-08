@@ -98,14 +98,39 @@ $(document).ready(function(){initNavTree('module__traffic_info.html',''); initRe
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__traffic_info"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;traffic_info&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__traffic_info"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;traffic_info&quot;</span>&gt;</div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;TRAFFIC_INFO_USE_LOG&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n  &#39;</span></div>
+<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__traffic_info"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>TRAFFIC_INFO_USE_LOG</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: Enable traffic info logging</li>
+</ul>
+<h1><a class="anchor" id="functions__traffic_info"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
 <li><a class="el" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2">traffic_info_init()</a></li>
+</ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="group__ac__info.html#ga257d7b2037e2f0fa6027f3856774eced">traffic_info_log()</a><ul>
+<li>Running at maximum module frequency.</li>
+<li>Autorun: <em>FALSE</em> <br  />
+ Periodic function is started by user command.</li>
+<li>Start function: <a class="el" href="group__ac__info.html#gae59a13c203efbbcc1f4ee344e68254e9">traffic_info_log_start()</a><br  />
+ Executed before the periodic function starts.</li>
+<li>Stop function: <a class="el" href="group__ac__info.html#ga59daeaa7f3abfe76c13be8c6fd840422">traffic_info_log_stop()</a><br  />
+ Executed after the periodic function stops.</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="datalink_functions__traffic_info"></a>
 Datalink Functions</h1>
@@ -138,11 +163,16 @@ Raw traffic_info.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;traffic_info&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;multi&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;core&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">Keeps</span> <span class="keyword">track</span> <span class="keyword">of</span> <span class="keyword">other</span> <span class="keyword">aircraft</span> <span class="keyword">in</span> <span class="keyword">airspace</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TRAFFIC_INFO_USE_LOG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable traffic info logging&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">logger_utils</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;traffic_info.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;traffic_info_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;traffic_info_log()&quot;</span> <span class="keyword">start</span>=<span class="stringliteral">&quot;traffic_info_log_start()&quot;</span> <span class="keyword">stop</span>=<span class="stringliteral">&quot;traffic_info_log_stop()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;ACINFO&quot;</span>      <span class="keyword">fun</span>=<span class="stringliteral">&quot;parse_acinfo_dl(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;ACINFO_LLA&quot;</span>  <span class="keyword">fun</span>=<span class="stringliteral">&quot;parse_acinfo_dl(buf)&quot;</span>/&gt;</div>
@@ -154,6 +184,9 @@ Raw traffic_info.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;traffic_info.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TRAFFIC_INFO&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TRAFFIC_INFO_USE_LOG&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -163,7 +196,7 @@ Raw traffic_info.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Apr 3 2026 21:15:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Apr 8 2026 08:32:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

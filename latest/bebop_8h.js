@@ -5,7 +5,7 @@ var bebop_8h =
     [ "ActuatorsDefaultInit", "bebop_8h.html#ab68f28871d18c17e7e70ae63277d37c2", null ],
     [ "BOARD_BEBOP", "bebop_8h.html#a318522acd53f9093b0b51553ac2cd96c", null ],
     [ "DEFAULT_ACTUATORS", "bebop_8h.html#aa7699f41fbe105c8f5061cc48a5f6307", null ],
-    [ "GPS_UBX_ENABLE_NMEA_DATA_MASK", "bebop_8h.html#a795637c038061d50a428834973f875ef", null ],
+    [ "GPX_UBX_UCENTER_ENABLE_NMEA", "bebop_8h.html#a484689312dd0e9cb279a27dda7139ce5", null ],
     [ "SPI0_BITS_PER_WORD", "bebop_8h.html#ac0c17180c00e0862f0dd0eaea546c19a", null ],
     [ "SPI0_MAX_SPEED_HZ", "bebop_8h.html#a495eef5868c701c6dd024afee3038956", null ],
     [ "SPI0_MODE", "bebop_8h.html#a989283f6e472fa84449301df602c6e94", null ],

@@ -16,6 +16,8 @@ var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
     [ "logger_uart.c", "logger__uart_8c.html", "logger__uart_8c" ],
     [ "logger_uart.h", "logger__uart_8h.html", "logger__uart_8h" ],
     [ "logger_uart_parse.py", "logger__uart__parse_8py.html", "logger__uart__parse_8py" ],
+    [ "logger_utils.c", "logger__utils_8c.html", "logger__utils_8c" ],
+    [ "logger_utils.h", "logger__utils_8h.html", "logger__utils_8h" ],
     [ "openlog.c", "openlog_8c.html", "openlog_8c" ],
     [ "openlog.h", "openlog_8h.html", "openlog_8h" ],
     [ "pprzlog_tp.c", "pprzlog__tp_8c.html", "pprzlog__tp_8c" ],
