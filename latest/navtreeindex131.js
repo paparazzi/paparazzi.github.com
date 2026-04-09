@@ -1,13 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__generic_com.html#module_xml__generic_com":[1,54,2,0],
-"module__generic_uart_sensor.html":[1,422],
-"module__generic_uart_sensor.html#configuration__generic_uart_sensor":[1,422,1],
-"module__generic_uart_sensor.html#functions__generic_uart_sensor":[1,422,2],
-"module__generic_uart_sensor.html#module_load_example__generic_uart_sensor":[1,422,0],
-"module__generic_uart_sensor.html#module_xml__generic_uart_sensor":[1,422,2,0],
-"module__geo_mag.html":[1,495],
-"module__geo_mag.html#functions__geo_mag":[1,495,1],
 "module__geo_mag.html#module_load_example__geo_mag":[1,495,0],
 "module__geo_mag.html#module_xml__geo_mag":[1,495,1,0],
 "module__gimbal_caddx_gm3.html":[1,49],
@@ -249,5 +241,13 @@ var NAVTREEINDEX131 =
 "module__humid_dpicco.html#module_xml__humid_dpicco":[1,296,1,0],
 "module__humid_hih.html":[1,297],
 "module__humid_hih.html#functions__humid_hih":[1,297,1],
-"module__humid_hih.html#module_load_example__humid_hih":[1,297,0]
+"module__humid_hih.html#module_load_example__humid_hih":[1,297,0],
+"module__humid_hih.html#module_xml__humid_hih":[1,297,1,0],
+"module__humid_htm_b71.html":[1,298],
+"module__humid_htm_b71.html#configuration__humid_htm_b71":[1,298,1],
+"module__humid_htm_b71.html#functions__humid_htm_b71":[1,298,2],
+"module__humid_htm_b71.html#module_load_example__humid_htm_b71":[1,298,0],
+"module__humid_htm_b71.html#module_xml__humid_htm_b71":[1,298,2,0],
+"module__humid_pcap01.html":[1,299],
+"module__humid_pcap01.html#functions__humid_pcap01":[1,299,1]
 };

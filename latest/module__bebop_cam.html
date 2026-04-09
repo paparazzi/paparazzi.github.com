@@ -107,10 +107,10 @@ Airframe file section</h2>
 <ul>
 <li><b>section</b> name: <code>Front</code> camera prefix: <code>MT9F002_</code> <ul>
 <li><b>name</b> <code>RESOLUTION</code> <b>value:</b> <em>0</em> <br  />
- Description: Preset image resolutions, 0 = VGA, 1 = 720p, 2 = 720p 4:3 aspect ratio, 3 = 1080p, 4 = 1080p 4:3 aspect ratio, 5 = 2048*2048, this is the max dimention allowable with isp</li>
+ Description: Preset image resolutions, 0 = VGA, 1 = 720p, 2 = 720p 4:3 aspect ratio, 3 = 1080p, 4 = 1080p 4:3 aspect ratio, 5 = 2048*2048, this is the max dimension allowable with isp</li>
 <li><b>name</b> <code>OUTPUT_WIDTH</code> <b>value:</b> <em>640</em> <br  />
  Description: Image horizontal resolution used if MT9F002_RESOLUTION not defined</li>
-<li><b>name</b> <code>OUTPUT_HEIGHT</code> <b>value:</b> <em>640</em> <br  />
+<li><b>name</b> <code>OUTPUT_HEIGHT</code> <b>value:</b> <em>480</em> <br  />
  Description: Image vertical resolution used if MT9F002_RESOLUTION not defined</li>
 <li><b>name</b> <code>OFFSET_X</code> <b>value:</b> <em>0</em> <br  />
  Description: Signed fractional offset from centre of image of original sensor [-0.5,0.5]</li>
@@ -131,9 +131,9 @@ Airframe file section</h2>
 <li><b>name</b> <code>GAIN_BLUE</code> <b>value:</b> <em>2.7</em> <br  />
  Description: Blue gain</li>
 <li><b>name</b> <code>FOCAL_X</code> <b>value:</b> <em>0.48686</em> <br  />
- Description: Focal length in the x-direction in pixels</li>
-<li><b>name</b> <code>OFFSET_X</code> <b>value:</b> <em>0.48908</em> <br  />
- Description: Focal length in the y-direction in pixels</li>
+ Description: Normalized focal length in x-direction (fraction of image width)</li>
+<li><b>name</b> <code>FOCAL_Y</code> <b>value:</b> <em>0.48908</em> <br  />
+ Description: Normalized focal length in y-direction (fraction of image width)</li>
 <li><b>name</b> <code>CENTER_X</code> <b>value:</b> <em>0.51015</em> <br  />
  Description: Center image coordinate in the x-direction</li>
 <li><b>name</b> <code>CENTER_Y</code> <b>value:</b> <em>0.51015</em> <br  />
@@ -146,9 +146,9 @@ Airframe file section</h2>
 <li><b>name</b> <code>TARGET_FPS</code> <b>value:</b> <em>30</em> <br  />
  Description: Desired frame rate</li>
 <li><b>name</b> <code>FOCAL_X</code> <b>value:</b> <em>0.48686</em> <br  />
- Description: Focal length in the x-direction in pixels</li>
-<li><b>name</b> <code>OFFSET_X</code> <b>value:</b> <em>0.48908</em> <br  />
- Description: Focal length in the y-direction in pixels</li>
+ Description: Normalized focal length in x-direction (fraction of image width)</li>
+<li><b>name</b> <code>FOCAL_Y</code> <b>value:</b> <em>0.48908</em> <br  />
+ Description: Normalized focal length in y-direction (fraction of image width)</li>
 <li><b>name</b> <code>CENTER_X</code> <b>value:</b> <em>0.51015</em> <br  />
  Description: Center image coordinate in the x-direction</li>
 <li><b>name</b> <code>CENTER_Y</code> <b>value:</b> <em>0.51015</em> <br  />
@@ -196,9 +196,9 @@ Raw bebop_cam.xml file:</h2>
 <div class="line">      <span class="keyword">Compile</span> <span class="keyword">and</span> <span class="keyword">control</span> <span class="keyword">the</span> <span class="keyword">settings</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">Bebop</span> <span class="keyword">front</span> <span class="keyword">and</span> <span class="keyword">bottom</span> <span class="keyword">cameras.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Front camera&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;MT9F002_&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RESOLUTION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Preset image resolutions, 0 = VGA, 1 = 720p, 2 = 720p 4:3 aspect ratio, 3 = 1080p, 4 = 1080p 4:3 aspect ratio, 5 = 2048*2048, this is the max dimention allowable with isp&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RESOLUTION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Preset image resolutions, 0 = VGA, 1 = 720p, 2 = 720p 4:3 aspect ratio, 3 = 1080p, 4 = 1080p 4:3 aspect ratio, 5 = 2048*2048, this is the max dimension allowable with isp&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OUTPUT_WIDTH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;640&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Image horizontal resolution used if MT9F002_RESOLUTION not defined&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OUTPUT_HEIGHT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;640&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Image vertical resolution used if MT9F002_RESOLUTION not defined&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OUTPUT_HEIGHT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;480&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Image vertical resolution used if MT9F002_RESOLUTION not defined&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OFFSET_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Signed fractional offset from centre of image of original sensor [-0.5,0.5]&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OFFSET_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Signed fractional offset from centre of image of original sensor [-0.5,0.5]&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ZOOM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Zoom factor of image&quot;</span>/&gt;</div>
@@ -208,8 +208,8 @@ Raw bebop_cam.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAIN_GREEN2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Green gain&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAIN_RED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Red gain&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAIN_BLUE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.7&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Blue gain&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOCAL_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48686&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Focal length in the x-direction in pixels&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OFFSET_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48908&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Focal length in the y-direction in pixels&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOCAL_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48686&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Normalized focal length in x-direction (fraction of image width)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOCAL_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48908&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Normalized focal length in y-direction (fraction of image width)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CENTER_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.51015&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Center image coordinate in the x-direction&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CENTER_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.51015&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Center image coordinate in the y-direction&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DHANE_K&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.25&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;(Un)Distortion parameter for a fish-eye lens&quot;</span>/&gt;</div>
@@ -217,61 +217,137 @@ Raw bebop_cam.xml file:</h2>
 <div class="line">    </div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Bottom camera&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;MT9V117_&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TARGET_FPS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;30&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Desired frame rate&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOCAL_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48686&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Focal length in the x-direction in pixels&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;OFFSET_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48908&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Focal length in the y-direction in pixels&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOCAL_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48686&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Normalized focal length in x-direction (fraction of image width)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOCAL_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.48908&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Normalized focal length in y-direction (fraction of image width)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CENTER_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.51015&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Center image coordinate in the x-direction&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CENTER_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.51015&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Center image coordinate in the y-direction&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DHANE_K&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.25&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;(Un)Distortion parameter for a fish-eye lens&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  </div>
+<div class="line"> <span class="comment">&lt;!-- ================= Camera runtime settings ================= --&gt;</span></div>
+<div class="line">  <span class="comment">&lt;!-- These settings appear in the Paparazzi Ground Control Station</span></div>
+<div class="line"><span class="comment">       and allow adjusting camera parameters during flight. --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Bebop camera control&quot;</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Top-level group shown in the settings tree --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Bebop camera control&quot;</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">      <span class="comment">&lt;!-- Settings for the Bebop FRONT camera (MT9F002 sensor) --&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Front camera&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.set_zoom&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;2.5&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;zoom&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_ZOOM&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.set_offset_x&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;-0.5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;offset_x&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_OFFSET_X&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.set_offset_y&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;-0.5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;offset_y&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_OFFSET_Y&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002_send_resolution&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;SEND&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_resolution&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;boards/bebop/mt9f002&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;setting_update_resolution&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_green1&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;green_1&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_GREEN1&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_green2&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;green_2&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_GREEN2&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_blue&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;blue&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_BLUE&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_red&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;red&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_RED&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002_send_color&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;SEND&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_color&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;boards/bebop/mt9f002&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;setting_update_color&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.target_exposure &quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;80&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;exposure&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_TARGET_EXPOSURE&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002_send_exposure&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;SEND&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_exposure&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;boards/bebop/mt9f002&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;setting_update_exposure&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Digital zoom factor applied by the ISP --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.set_zoom&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;2.5&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;zoom&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_ZOOM&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Horizontal crop offset relative to image center</span></div>
+<div class="line"><span class="comment">             Range [-0.5, 0.5] corresponds to fraction of sensor width --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.set_offset_x&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;-0.5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;0.5&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;offset_x&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_OFFSET_X&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Vertical crop offset relative to image center --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.set_offset_y&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;-0.5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;0.5&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;offset_y&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_OFFSET_Y&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Trigger command to send updated resolution to the camera driver --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002_send_resolution&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span></div>
+<div class="line">                    <span class="keyword">values</span>=<span class="stringliteral">&quot;SEND&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_resolution&quot;</span></div>
+<div class="line">                    <span class="keyword">module</span>=<span class="stringliteral">&quot;boards/bebop/mt9f002&quot;</span></div>
+<div class="line">                    <span class="keyword">handler</span>=<span class="stringliteral">&quot;setting_update_resolution&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- White balance gains for Bayer channels --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_green1&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;green_1&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_GREEN1&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_green2&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;green_2&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_GREEN2&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_blue&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;blue&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_BLUE&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.gain_red&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;red&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_GAIN_RED&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Send updated color gain values to the camera hardware --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002_send_color&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span></div>
+<div class="line">                    <span class="keyword">values</span>=<span class="stringliteral">&quot;SEND&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_color&quot;</span></div>
+<div class="line">                    <span class="keyword">module</span>=<span class="stringliteral">&quot;boards/bebop/mt9f002&quot;</span></div>
+<div class="line">                    <span class="keyword">handler</span>=<span class="stringliteral">&quot;setting_update_color&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Target exposure level used by the automatic exposure control --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002.target_exposure&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;80&quot;</span></div>
+<div class="line">                    <span class="keyword">shortname</span>=<span class="stringliteral">&quot;exposure&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;MT9F002_TARGET_EXPOSURE&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">&lt;!-- Apply the new exposure setting to the camera --&gt;</span></div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;mt9f002_send_exposure&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span></div>
+<div class="line">                    <span class="keyword">values</span>=<span class="stringliteral">&quot;SEND&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;update_exposure&quot;</span></div>
+<div class="line">                    <span class="keyword">module</span>=<span class="stringliteral">&quot;boards/bebop/mt9f002&quot;</span></div>
+<div class="line">                    <span class="keyword">handler</span>=<span class="stringliteral">&quot;setting_update_exposure&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt; </div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">  </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">&lt;!-- ================= Module dependencies ================= --&gt;</span></div>
+<div class="line">  <span class="comment">&lt;!-- Requires I2C communication for the sensors and the</span></div>
+<div class="line"><span class="comment">       video processing thread for image streaming --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">i2c</span>,<span class="keyword">video_thread</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">  </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">&lt;!-- ================= Header files ================= --&gt;</span></div>
+<div class="line">  <span class="comment">&lt;!-- Camera driver interfaces used by this module --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9v117.h&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9f002.h&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9v117.h&quot;</span>/&gt; <span class="comment">&lt;!-- bottom camera sensor --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9f002.h&quot;</span>/&gt; <span class="comment">&lt;!-- front camera sensor --&gt;</span></div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">&lt;!-- ================= Module initialization ================= --&gt;</span></div>
+<div class="line">  <span class="comment">&lt;!-- Called during autopilot startup to initialize sensors --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mt9v117_init(PTR(mt9v117))&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mt9f002_init(PTR(mt9f002))&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">&lt;!-- ================= Build rules for autopilot target ================= --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Camera driver implementations --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9v117.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9f002.c&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Bebop image signal processor (ISP) library --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;libisp.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;boards/bebop/isp&quot;</span>/&gt;</div>
 <div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Size of I2C communication buffer --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I2C_BUF_LEN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;56&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Use Bebop I2C bus 0 --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_I2C0&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Also define for test builds --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_I2C0&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
+<div class="line"> </div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">&lt;!-- ================= Build rules for NPS simulator ================= --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;nps&quot;</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Simulated camera drivers --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9v117_nps.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mt9f002_nps.c&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Same ISP library used for simulation --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;libisp.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;boards/bebop/isp&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I2C_BUF_LEN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;56&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_I2C0&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -281,7 +357,7 @@ Raw bebop_cam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Apr 8 2026 08:32:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Apr 9 2026 13:42:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

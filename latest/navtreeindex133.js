@@ -1,8 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__ins_int_common.html":[1,247],
-"module__ins_int_common.html#configuration__ins_int_common":[1,247,1],
-"module__ins_int_common.html#functions__ins_int_common":[1,247,2],
 "module__ins_int_common.html#module_load_example__ins_int_common":[1,247,0],
 "module__ins_int_common.html#module_xml__ins_int_common":[1,247,2,0],
 "module__ins_mekf_wind.html":[1,248],
@@ -202,9 +199,13 @@ var NAVTREEINDEX133 =
 "module__mag_pitot_uart.html#module_xml__mag_pitot_uart":[1,429,2,0],
 "module__mag_qmc5883l.html":[1,430],
 "module__mag_qmc5883l.html#configuration__mag_qmc5883l":[1,430,1],
+"module__mag_qmc5883l.html#configure":[1,430,1,0],
+"module__mag_qmc5883l.html#define":[1,430,1,1],
+"module__mag_qmc5883l.html#event_functions":[1,430,2,0],
 "module__mag_qmc5883l.html#functions__mag_qmc5883l":[1,430,2],
 "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l":[1,430,0],
-"module__mag_qmc5883l.html#module_xml__mag_qmc5883l":[1,430,2,0],
+"module__mag_qmc5883l.html#module_xml__mag_qmc5883l":[1,430,2,2],
+"module__mag_qmc5883l.html#periodic_functions":[1,430,2,1],
 "module__mag_rm3100.html":[1,431],
 "module__mag_rm3100.html#configuration__mag_rm3100":[1,431,1],
 "module__mag_rm3100.html#functions__mag_rm3100":[1,431,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "module__meteo_france_daq.html":[1,306],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,306,2],
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,306,1],
-"module__meteo_france_daq.html#module_load_example__meteo_france_daq":[1,306,0],
-"module__meteo_france_daq.html#module_xml__meteo_france_daq":[1,306,2,0]
+"module__meteo_france_daq.html#module_load_example__meteo_france_daq":[1,306,0]
 };

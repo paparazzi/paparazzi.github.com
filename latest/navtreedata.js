@@ -376,9 +376,7 @@ var NAVTREE =
       ] ],
       [ "rotorcraft_cam module", "module__rotorcraft_cam.html", [
         [ "Example for airframe file", "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam", null ],
-        [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", [
-          [ "Airframe file section", "module__rotorcraft_cam.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", null ],
         [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", null ],
         [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", [
           [ "Raw rotorcraft_cam.xml file:", "module__rotorcraft_cam.html#module_xml__rotorcraft_cam", null ]
@@ -1360,12 +1358,12 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
@@ -1411,8 +1409,15 @@ var NAVTREE =
       ] ],
       [ "imu_common module", "module__imu_common.html", [
         [ "Example for airframe file", "module__imu_common.html#module_load_example__imu_common", null ],
-        [ "Module configuration options", "module__imu_common.html#configuration__imu_common", null ],
+        [ "Module configuration options", "module__imu_common.html#configuration__imu_common", [
+          [ "Airframe file section", "module__imu_common.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__imu_common.html#functions__imu_common", [
+          [ "Init Functions", "module__imu_common.html#init_functions", null ]
+        ] ],
+        [ "Files", "module__imu_common.html#files", [
+          [ "Header Files", "module__imu_common.html#headers", null ],
+          [ "Source Files", "module__imu_common.html#sources", null ],
           [ "Raw imu_common.xml file:", "module__imu_common.html#module_xml__imu_common", null ]
         ] ]
       ] ],
@@ -2682,18 +2687,8 @@ var NAVTREE =
       ] ],
       [ "baro_bmp3 module", "module__baro_bmp3.html", [
         [ "Example for airframe file", "module__baro_bmp3.html#module_load_example__baro_bmp3", null ],
-        [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", [
-          [ "Configure Options", "module__baro_bmp3.html#configure", null ],
-          [ "Define Options", "module__baro_bmp3.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", null ],
         [ "Module functions", "module__baro_bmp3.html#functions__baro_bmp3", [
-          [ "Init Functions", "module__baro_bmp3.html#init_functions", null ],
-          [ "Event Functions", "module__baro_bmp3.html#event_functions", null ],
-          [ "Periodic Functions", "module__baro_bmp3.html#periodic_functions", null ]
-        ] ],
-        [ "Files", "module__baro_bmp3.html#files", [
-          [ "Header Files", "module__baro_bmp3.html#headers", null ],
-          [ "Source Files", "module__baro_bmp3.html#sources", null ],
           [ "Raw baro_bmp3.xml file:", "module__baro_bmp3.html#module_xml__baro_bmp3", null ]
         ] ]
       ] ],
@@ -2833,8 +2828,13 @@ var NAVTREE =
       ] ],
       [ "mag_qmc5883l module", "module__mag_qmc5883l.html", [
         [ "Example for airframe file", "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l", null ],
-        [ "Module configuration options", "module__mag_qmc5883l.html#configuration__mag_qmc5883l", null ],
+        [ "Module configuration options", "module__mag_qmc5883l.html#configuration__mag_qmc5883l", [
+          [ "Configure Options", "module__mag_qmc5883l.html#configure", null ],
+          [ "Define Options", "module__mag_qmc5883l.html#define", null ]
+        ] ],
         [ "Module functions", "module__mag_qmc5883l.html#functions__mag_qmc5883l", [
+          [ "Event Functions", "module__mag_qmc5883l.html#event_functions", null ],
+          [ "Periodic Functions", "module__mag_qmc5883l.html#periodic_functions", null ],
           [ "Raw mag_qmc5883l.xml file:", "module__mag_qmc5883l.html#module_xml__mag_qmc5883l", null ]
         ] ]
       ] ],
@@ -4079,12 +4079,12 @@ var NAVTREEINDEX =
 "microrl_8c.html#a707cd52f8d3fff6cc752c92aa9cc8751",
 "mission__rover__nav_8c_source.html",
 "module__ballistic_touchdown.html#module_xml__ballistic_touchdown",
-"module__cv_qrcode.html#functions__cv_qrcode",
-"module__generic_com.html#module_xml__generic_com",
-"module__humid_hih.html#module_xml__humid_hih",
-"module__ins_int_common.html",
-"module__meteo_stick.html",
-"module__pano_unwrap.html#module_load_example__pano_unwrap",
+"module__cv_textons.html",
+"module__geo_mag.html#module_load_example__geo_mag",
+"module__humid_pcap01.html#module_load_example__humid_pcap01",
+"module__ins_int_common.html#module_load_example__ins_int_common",
+"module__meteo_france_daq.html#module_xml__meteo_france_daq",
+"module__pano_unwrap.html#functions__pano_unwrap",
 "module__stabilization_adaptive_fw.html#module_load_example__stabilization_adaptive_fw",
 "module__temp_tmp102.html#functions__temp_tmp102",
 "modules_2datalink_2superbitrf_8h.html#a7abb008fd1de6ab912aa9892c2133d55",

@@ -1,13 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__cv_qrcode.html#functions__cv_qrcode":[1,486,2],
-"module__cv_qrcode.html#module_load_example__cv_qrcode":[1,486,0],
-"module__cv_qrcode.html#module_xml__cv_qrcode":[1,486,2,0],
-"module__cv_target_localization.html":[1,67],
-"module__cv_target_localization.html#configuration__cv_target_localization":[1,67,1],
-"module__cv_target_localization.html#functions__cv_target_localization":[1,67,2],
-"module__cv_target_localization.html#module_load_example__cv_target_localization":[1,67,0],
-"module__cv_target_localization.html#module_xml__cv_target_localization":[1,67,2,0],
 "module__cv_textons.html":[1,68],
 "module__cv_textons.html#configuration__cv_textons":[1,68,1],
 "module__cv_textons.html#functions__cv_textons":[1,68,2],
@@ -249,5 +241,13 @@ var NAVTREEINDEX130 =
 "module__generic_com.html":[1,54],
 "module__generic_com.html#configuration__generic_com":[1,54,1],
 "module__generic_com.html#functions__generic_com":[1,54,2],
-"module__generic_com.html#module_load_example__generic_com":[1,54,0]
+"module__generic_com.html#module_load_example__generic_com":[1,54,0],
+"module__generic_com.html#module_xml__generic_com":[1,54,2,0],
+"module__generic_uart_sensor.html":[1,422],
+"module__generic_uart_sensor.html#configuration__generic_uart_sensor":[1,422,1],
+"module__generic_uart_sensor.html#functions__generic_uart_sensor":[1,422,2],
+"module__generic_uart_sensor.html#module_load_example__generic_uart_sensor":[1,422,0],
+"module__generic_uart_sensor.html#module_xml__generic_uart_sensor":[1,422,2,0],
+"module__geo_mag.html":[1,495],
+"module__geo_mag.html#functions__geo_mag":[1,495,1]
 };

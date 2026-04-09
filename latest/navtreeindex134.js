@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"module__meteo_france_daq.html#module_xml__meteo_france_daq":[1,306,2,0],
 "module__meteo_stick.html":[1,307],
 "module__meteo_stick.html#configuration__meteo_stick":[1,307,1],
 "module__meteo_stick.html#functions__meteo_stick":[1,307,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,514,0],
 "module__osd_max7456.html#module_xml__osd_max7456":[1,514,2,0],
 "module__pano_unwrap.html":[1,515],
-"module__pano_unwrap.html#configuration__pano_unwrap":[1,515,1],
-"module__pano_unwrap.html#functions__pano_unwrap":[1,515,2]
+"module__pano_unwrap.html#configuration__pano_unwrap":[1,515,1]
 };
