@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('logger__control__effectiveness_8c.html
 <p>Log data required to compute control effectiveness.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="logger__control__effectiveness_8h_source.html">modules/loggers/logger_control_effectiveness.h</a>&quot;</code><br />
-<code>#include &quot;modules/loggers/logger_utils&quot;</code><br />
+<code>#include &quot;<a class="el" href="logger__utils_8h_source.html">modules/loggers/logger_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -115,61 +115,65 @@ $(document).ready(function(){initNavTree('logger__control__effectiveness_8c.html
 <area shape="rect" title="Log data required to compute control effectiveness." alt="" coords="274,5,445,60"/>
 <area shape="rect" href="logger__control__effectiveness_8h.html" title="Log data required to compute control effectiveness." alt="" coords="5,108,185,148"/>
 <area shape="poly" title=" " alt="" coords="286,63,162,106,161,101,284,58"/>
-<area shape="rect" title=" " alt="" coords="209,108,384,148"/>
+<area shape="rect" href="logger__utils_8h.html" title="Generic definitions and tools for logging on ChibiOS or Linux." alt="" coords="209,108,384,148"/>
 <area shape="poly" title=" " alt="" coords="344,62,319,98,315,95,339,59"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="298,284,471,309"/>
-<area shape="poly" title=" " alt="" coords="378,59,389,82,398,107,404,152,403,197,393,271,388,270,398,197,398,152,393,109,384,84,373,61"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="287,284,461,309"/>
+<area shape="poly" title=" " alt="" coords="378,59,389,82,398,107,403,153,400,198,385,271,379,270,395,197,398,153,393,109,384,84,373,61"/>
 <area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="819,115,886,141"/>
 <area shape="poly" title=" " alt="" coords="445,47,806,115,805,120,444,53"/>
-<area shape="rect" title=" " alt="" coords="183,357,269,383"/>
-<area shape="poly" title=" " alt="" coords="360,312,265,354,263,349,358,307"/>
-<area shape="rect" title=" " alt="" coords="612,357,683,383"/>
-<area shape="poly" title=" " alt="" coords="428,307,599,353,598,358,426,312"/>
-<area shape="rect" title=" " alt="" coords="765,431,820,456"/>
-<area shape="poly" title=" " alt="" coords="397,307,436,344,462,364,491,380,560,406,632,423,698,433,752,438,751,443,697,438,631,428,559,411,489,385,459,368,433,348,393,311"/>
-<area shape="rect" title=" " alt="" coords="293,357,420,383"/>
-<area shape="poly" title=" " alt="" coords="383,311,369,346,364,344,378,309"/>
-<area shape="poly" title=" " alt="" coords="819,134,749,140,663,152,584,171,555,183,536,198,524,216,517,236,515,257,519,279,528,303,542,328,589,381,627,407,670,424,713,434,752,438,751,443,712,439,668,429,624,411,586,385,538,331,523,305,513,281,510,257,512,235,519,214,532,194,552,178,582,165,662,146,748,135,819,129"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="797,284,977,309"/>
-<area shape="poly" title=" " alt="" coords="862,140,875,165,886,195,891,234,892,270,886,270,886,235,881,197,870,167,857,142"/>
-<area shape="rect" title=" " alt="" coords="1467,431,1537,456"/>
-<area shape="poly" title=" " alt="" coords="887,131,1007,153,1082,171,1156,193,1255,224,1334,249,1370,265,1404,286,1440,316,1477,356,1494,385,1502,416,1497,417,1489,387,1473,359,1436,320,1401,291,1367,269,1332,254,1253,229,1155,199,1081,176,1006,158,886,137"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1057,284,1249,309"/>
-<area shape="poly" title=" " alt="" coords="886,131,1018,153,1084,171,1110,182,1128,194,1141,211,1149,231,1155,269,1150,270,1144,232,1136,214,1124,198,1107,186,1082,176,1017,158,886,136"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="721,196,872,236"/>
-<area shape="poly" title=" " alt="" coords="847,142,819,186,814,183,843,139"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="547,196,697,236"/>
-<area shape="poly" title=" " alt="" coords="822,143,686,194,685,189,821,138"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="948,196,1115,236"/>
-<area shape="poly" title=" " alt="" coords="878,138,981,188,979,192,876,143"/>
-<area shape="poly" title=" " alt="" coords="850,312,697,357,695,352,848,307"/>
-<area shape="poly" title=" " alt="" coords="905,307,921,322,937,341,945,362,945,373,940,384,918,407,891,423,862,434,834,440,833,435,860,429,889,418,915,403,936,381,940,372,940,363,932,344,918,326,901,311"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1053,357,1209,383"/>
-<area shape="poly" title=" " alt="" coords="927,307,1080,351,1078,356,926,312"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="773,357,927,383"/>
-<area shape="poly" title=" " alt="" coords="884,311,865,347,860,344,879,308"/>
-<area shape="poly" title=" " alt="" coords="1077,385,834,436,833,431,1076,380"/>
-<area shape="rect" title=" " alt="" coords="1127,431,1189,456"/>
-<area shape="poly" title=" " alt="" coords="1138,382,1151,417,1146,419,1133,384"/>
-<area shape="poly" title=" " alt="" coords="1191,380,1454,430,1453,435,1190,385"/>
-<area shape="rect" title=" " alt="" coords="1321,431,1389,456"/>
-<area shape="poly" title=" " alt="" coords="1168,380,1309,425,1308,430,1167,385"/>
-<area shape="poly" title=" " alt="" coords="843,385,813,422,809,418,838,381"/>
-<area shape="poly" title=" " alt="" coords="1152,310,1141,345,1136,343,1147,309"/>
-<area shape="poly" title=" " alt="" coords="1176,307,1202,327,1224,356,1227,376,1220,395,1206,411,1190,425,1187,421,1203,407,1215,392,1222,375,1220,358,1199,331,1172,312"/>
-<area shape="poly" title=" " alt="" coords="1249,301,1311,308,1372,319,1423,334,1442,344,1456,356,1462,367,1462,378,1451,397,1428,414,1401,428,1399,423,1425,410,1447,394,1457,376,1457,368,1452,359,1440,349,1421,339,1370,324,1310,313,1248,307"/>
-<area shape="rect" title=" " alt="" coords="1285,357,1442,383"/>
-<area shape="poly" title=" " alt="" coords="1187,307,1317,350,1316,355,1186,312"/>
-<area shape="poly" title=" " alt="" coords="789,237,777,266,766,302,760,342,763,382,779,418,774,420,758,383,754,342,761,301,772,264,784,235"/>
-<area shape="poly" title=" " alt="" coords="820,234,865,273,862,277,817,238"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="597,284,722,309"/>
-<area shape="poly" title=" " alt="" coords="765,238,693,279,690,275,762,234"/>
-<area shape="poly" title=" " alt="" coords="610,237,597,259,587,285,586,312,591,343,602,381,635,407,675,424,715,434,752,439,752,444,714,439,673,429,632,412,597,384,586,345,581,312,582,283,592,257,606,235"/>
-<area shape="poly" title=" " alt="" coords="698,231,709,233,885,260,1043,280,1043,286,884,266,708,239,697,237"/>
-<area shape="poly" title=" " alt="" coords="633,235,650,270,646,273,629,237"/>
-<area shape="poly" title=" " alt="" coords="1031,237,1023,268,1010,308,990,349,961,385,932,406,898,422,834,439,833,434,896,417,929,402,957,381,985,346,1005,306,1018,267,1026,235"/>
-<area shape="poly" title=" " alt="" coords="998,238,922,280,919,275,996,234"/>
-<area shape="poly" title=" " alt="" coords="1062,234,1125,274,1122,279,1059,238"/>
+<area shape="rect" title=" " alt="" coords="194,203,261,229"/>
+<area shape="poly" title=" " alt="" coords="283,150,247,194,243,191,279,147"/>
+<area shape="rect" title=" " alt="" coords="285,203,359,229"/>
+<area shape="poly" title=" " alt="" coords="305,148,317,189,312,191,300,149"/>
+<area shape="rect" title=" " alt="" coords="99,357,185,383"/>
+<area shape="poly" title=" " alt="" coords="338,312,193,356,192,351,336,307"/>
+<area shape="rect" title=" " alt="" coords="412,357,483,383"/>
+<area shape="poly" title=" " alt="" coords="388,308,427,346,424,350,384,312"/>
+<area shape="rect" title=" " alt="" coords="748,431,803,456"/>
+<area shape="poly" title=" " alt="" coords="376,310,381,346,389,365,401,381,425,395,461,407,553,424,653,434,735,438,734,444,652,439,552,429,460,412,423,400,398,385,384,367,376,347,371,310"/>
+<area shape="rect" title=" " alt="" coords="209,357,336,383"/>
+<area shape="poly" title=" " alt="" coords="359,312,302,351,299,347,356,307"/>
+<area shape="poly" title=" " alt="" coords="820,136,755,149,676,175,637,194,602,219,571,249,548,285,537,312,532,335,535,357,548,381,560,391,578,400,627,416,735,435,734,440,626,421,576,405,557,395,544,384,530,359,526,335,532,311,544,283,567,246,598,215,635,190,674,170,754,143,819,131"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="559,284,739,309"/>
+<area shape="poly" title=" " alt="" coords="820,135,785,142,747,153,708,171,676,198,665,214,658,233,651,271,646,270,652,232,660,212,672,194,706,167,745,148,784,136,819,130"/>
+<area shape="rect" title=" " alt="" coords="1479,431,1549,456"/>
+<area shape="poly" title=" " alt="" coords="887,128,954,132,1044,143,1145,163,1244,193,1323,224,1383,253,1435,293,1490,356,1505,386,1513,416,1508,418,1500,388,1485,359,1431,297,1380,258,1320,229,1242,199,1144,168,1043,148,953,138,886,133"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1145,284,1337,309"/>
+<area shape="poly" title=" " alt="" coords="886,128,965,134,1064,146,1156,165,1192,178,1217,194,1230,211,1238,231,1244,270,1239,270,1233,232,1225,214,1214,198,1190,183,1154,170,1063,151,965,140,886,134"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="687,196,837,236"/>
+<area shape="poly" title=" " alt="" coords="842,143,794,189,790,185,839,139"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1052,196,1203,236"/>
+<area shape="poly" title=" " alt="" coords="887,137,1055,189,1053,194,886,142"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="861,196,1028,236"/>
+<area shape="poly" title=" " alt="" coords="867,139,916,185,913,189,863,143"/>
+<area shape="poly" title=" " alt="" coords="617,312,494,355,492,350,615,307"/>
+<area shape="poly" title=" " alt="" coords="668,308,696,328,725,356,748,386,766,417,761,419,744,389,721,359,693,333,665,312"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1065,357,1221,383"/>
+<area shape="poly" title=" " alt="" coords="729,307,1052,353,1052,358,728,312"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="559,357,712,383"/>
+<area shape="poly" title=" " alt="" coords="649,310,643,344,637,343,644,309"/>
+<area shape="poly" title=" " alt="" coords="1085,385,817,437,816,432,1084,380"/>
+<area shape="rect" title=" " alt="" coords="1337,431,1400,456"/>
+<area shape="poly" title=" " alt="" coords="1180,380,1325,426,1324,431,1179,385"/>
+<area shape="poly" title=" " alt="" coords="1203,380,1466,430,1465,435,1202,385"/>
+<area shape="rect" title=" " alt="" coords="1136,431,1204,456"/>
+<area shape="poly" title=" " alt="" coords="1150,382,1163,417,1158,419,1145,384"/>
+<area shape="poly" title=" " alt="" coords="659,380,742,422,739,427,657,385"/>
+<area shape="poly" title=" " alt="" coords="1227,312,1172,351,1169,347,1223,307"/>
+<area shape="poly" title=" " alt="" coords="1326,307,1411,326,1446,339,1468,356,1474,367,1474,378,1462,398,1440,414,1414,428,1411,423,1437,410,1458,394,1469,377,1469,368,1464,359,1443,344,1409,331,1325,312"/>
+<area shape="poly" title=" " alt="" coords="1245,310,1246,344,1243,364,1236,384,1221,406,1201,424,1198,420,1217,403,1232,381,1238,363,1241,343,1240,310"/>
+<area shape="rect" title=" " alt="" coords="1297,357,1454,383"/>
+<area shape="poly" title=" " alt="" coords="1264,307,1342,348,1340,353,1261,312"/>
+<area shape="poly" title=" " alt="" coords="766,236,777,417,771,417,760,236"/>
+<area shape="poly" title=" " alt="" coords="736,238,678,278,675,274,733,234"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="814,284,939,309"/>
+<area shape="poly" title=" " alt="" coords="791,234,850,274,847,278,788,238"/>
+<area shape="poly" title=" " alt="" coords="1109,238,1030,307,977,348,921,385,867,412,817,431,815,426,865,407,918,380,974,344,1027,303,1106,234"/>
+<area shape="poly" title=" " alt="" coords="1156,234,1214,274,1211,278,1153,238"/>
+<area shape="poly" title=" " alt="" coords="1068,239,927,282,926,277,1067,233"/>
+<area shape="poly" title=" " alt="" coords="954,236,961,271,960,291,954,311,926,350,890,383,852,409,817,428,814,423,849,404,887,379,922,347,949,308,954,290,955,271,949,237"/>
+<area shape="poly" title=" " alt="" coords="874,239,706,283,704,278,873,233"/>
+<area shape="poly" title=" " alt="" coords="1016,233,1185,278,1184,283,1015,239"/>
 </map>
 </div>
 </div>
@@ -501,7 +505,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="logger__control__effectiveness_8c.html">logger_control_effectiveness.c</a></li>
-    <li class="footer">Generated on Thu Apr 9 2026 13:42:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Apr 12 2026 16:38:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
