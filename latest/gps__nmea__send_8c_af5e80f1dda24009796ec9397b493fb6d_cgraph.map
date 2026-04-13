@@ -1,0 +1,15 @@
+<map id="build_nmea_sentence" name="build_nmea_sentence">
+<area shape="rect" id="Node000001" title="Function to build sentence for NMEA Protocol." alt="" coords="5,95,169,121"/>
+<area shape="rect" id="Node000002" href="$gps__nmea__send_8c.html#a56fb4cf52d06792e7cef09a7e5848110" title="Get Date from system." alt="" coords="240,5,412,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,93,216,55,240,47,241,52,218,60,120,98"/>
+<area shape="rect" id="Node000003" href="$gps__nmea__send_8c.html#a2081aeb13ce1d476eb657429c7c16620" title="Function to calculate checksum." alt="" coords="260,70,392,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,97,246,88,247,94,170,102"/>
+<area shape="rect" id="Node000004" href="$gps__nmea__send_8c.html#ae6bfc7d491dc1966b70bb06e9af7c9ae" title="Function to convert lat long in DDLL.MMMM Format Lat and long don&#39;t have the same length." alt="" coords="217,119,435,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,114,204,117,203,122,170,119"/>
+<area shape="rect" id="Node000005" href="$gps__nmea__send_8c.html#aa03f8770a4c5922201a8db552fc0a31c" title="Function to send payload to UART." alt="" coords="277,169,375,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="120,118,218,153,265,166,263,171,217,159,119,123"/>
+<area shape="rect" id="Node000006" href="$uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="483,169,604,194"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="375,179,469,179,469,184,375,184"/>
+<area shape="rect" id="Node000007" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="652,169,764,194"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="604,179,638,179,638,184,604,184"/>
+</map>

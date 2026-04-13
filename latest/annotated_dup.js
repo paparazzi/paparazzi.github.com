@@ -590,6 +590,8 @@ var annotated_dup =
     [ "gpio_ext_pca95xx_impl_t", "gpio__ext__pca95xx_8c.html#structgpio__ext__pca95xx__impl__t", "gpio__ext__pca95xx_8c_structgpio__ext__pca95xx__impl__t" ],
     [ "gpio_setup_t", "arch_2chibios_2board_8c.html#structgpio__setup__t", "arch_2chibios_2board_8c_structgpio__setup__t" ],
     [ "gpio_t", "cc2500__compat_8h.html#structgpio__t", "cc2500__compat_8h_structgpio__t" ],
+    [ "Gps_Nmea_Send", "gps__nmea__send_8h.html#structGps__Nmea__Send", "gps__nmea__send_8h_structGps__Nmea__Send" ],
+    [ "gps_nmea_send_msg_t", "gps__nmea__send_8h.html#structgps__nmea__send__msg__t", "gps__nmea__send_8h_structgps__nmea__send__msg__t" ],
     [ "gps_ubx_ucenter_struct", "gps__ubx__ucenter_8h.html#structgps__ubx__ucenter__struct", "gps__ubx__ucenter_8h_structgps__ubx__ucenter__struct" ],
     [ "GpsMtk", "gps__mtk_8h.html#structGpsMtk", "gps__mtk_8h_structGpsMtk" ],
     [ "GpsNmea", "gps__nmea_8h.html#structGpsNmea", "gps__nmea_8h_structGpsNmea" ],

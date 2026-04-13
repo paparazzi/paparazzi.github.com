@@ -1,28 +1,34 @@
 <map id="uart_put_buffer" name="uart_put_buffer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="989,121,1111,146"/>
-<area shape="rect" id="Node000002" href="$actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32" title=" " alt="" coords="748,22,941,47"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1022,114,985,86,940,61,909,50,911,45,942,56,988,82,1025,110"/>
-<area shape="rect" id="Node000003" href="$e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="825,71,864,97"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="983,120,864,91,865,86,984,115"/>
-<area shape="rect" id="Node000005" href="$syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="785,121,904,146"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="975,136,904,136,904,131,975,131"/>
-<area shape="rect" id="Node000010" href="$actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="786,170,903,195"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="984,152,899,173,898,167,983,147"/>
-<area shape="rect" id="Node000012" href="$uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="783,223,907,249"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1025,157,987,184,942,210,902,226,900,221,940,206,984,180,1022,152"/>
-<area shape="rect" id="Node000004" href="$airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="525,5,687,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="811,79,687,48,688,43,813,74"/>
-<area shape="rect" id="Node000006" href="$syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="367,95,464,121"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="772,121,700,111,572,106,464,108,464,103,572,100,700,105,772,116"/>
-<area shape="rect" id="Node000009" href="$syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="537,121,675,146"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="771,136,675,136,675,131,771,131"/>
-<area shape="rect" id="Node000007" href="$syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="184,95,319,121"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="353,111,319,111,319,105,353,105"/>
-<area shape="rect" id="Node000008" href="$syslink__dl_8c.html#a248668c76bd51845ed6a42ff3da5f1a9" title="Datalink event." alt="" coords="5,95,136,121"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="170,111,137,111,137,105,170,105"/>
-<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="522,125,464,117,464,112,523,120"/>
-<area shape="rect" id="Node000011" href="$actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="513,170,699,195"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="772,185,699,185,699,180,772,180"/>
-<area shape="rect" id="Node000013" href="$high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="512,220,700,260"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="769,240,700,241,700,236,769,235"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1079,129,1200,155"/>
+<area shape="rect" id="Node000002" href="$actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32" title=" " alt="" coords="837,5,1031,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1117,120,1079,81,1055,61,1029,44,1003,33,1005,28,1032,40,1058,57,1083,77,1121,116"/>
+<area shape="rect" id="Node000003" href="$e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="915,55,953,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1101,125,1030,94,953,73,954,68,1032,89,1103,121"/>
+<area shape="rect" id="Node000005" href="$gps__nmea__send_8c.html#aa03f8770a4c5922201a8db552fc0a31c" title="Function to send payload to UART." alt="" coords="885,104,983,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1064,135,983,125,983,120,1065,130"/>
+<area shape="rect" id="Node000008" href="$syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="875,153,993,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1065,153,994,162,993,156,1064,148"/>
+<area shape="rect" id="Node000013" href="$actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="875,228,993,253"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="1101,163,963,230,961,225,1099,158"/>
+<area shape="rect" id="Node000015" href="$uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="872,281,996,307"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="1125,168,1087,219,1061,245,1032,268,997,284,995,279,1029,264,1058,242,1083,215,1121,165"/>
+<area shape="rect" id="Node000004" href="$airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="614,25,777,65"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="901,67,777,55,777,50,901,62"/>
+<area shape="rect" id="Node000006" href="$gps__nmea__send_8c.html#af5e80f1dda24009796ec9397b493fb6d" title="Function to build sentence for NMEA Protocol." alt="" coords="613,89,777,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="871,116,777,110,778,104,872,110"/>
+<area shape="rect" id="Node000007" href="$gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data." alt="" coords="367,89,553,115"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="600,105,553,105,553,99,600,99"/>
+<area shape="rect" id="Node000009" href="$syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="411,165,509,191"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="861,171,509,179,509,174,860,165"/>
+<area shape="rect" id="Node000012" href="$syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="626,191,765,216"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="862,180,765,195,764,190,861,175"/>
+<area shape="rect" id="Node000010" href="$syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="184,165,319,191"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="397,181,319,181,319,175,397,175"/>
+<area shape="rect" id="Node000011" href="$syslink__dl_8c.html#a248668c76bd51845ed6a42ff3da5f1a9" title="Datalink event." alt="" coords="5,165,136,191"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="170,181,137,181,137,175,170,175"/>
+<area shape="poly" id="edge12_Node000012_Node000009" title=" " alt="" coords="612,197,508,186,509,181,612,192"/>
+<area shape="rect" id="Node000014" href="$actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="603,240,788,265"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="861,247,788,251,788,245,861,242"/>
+<area shape="rect" id="Node000016" href="$high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="601,290,789,330"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="858,302,790,306,790,301,858,296"/>
 </map>

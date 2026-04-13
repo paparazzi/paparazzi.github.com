@@ -1,19 +1,21 @@
 <map id="stateGetHmslOrigin_f" name="stateGetHmslOrigin_f">
-<area shape="rect" id="Node000001" title="Get the HMSL of the frame origin (float)" alt="" coords="669,169,832,195"/>
+<area shape="rect" id="Node000001" title="Get the HMSL of the frame origin (float)" alt="" coords="669,195,832,220"/>
 <area shape="rect" id="Node000002" href="$ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="503,5,570,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,160,685,102,655,72,620,46,595,34,569,26,571,21,597,29,623,41,658,68,689,99,736,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="734,184,689,115,657,77,620,46,595,33,569,26,571,20,597,28,623,41,661,74,694,111,739,181"/>
 <area shape="rect" id="Node000004" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="465,55,608,95"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="717,164,620,110,593,98,595,93,623,105,719,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="724,187,677,149,620,110,596,98,598,93,623,105,681,144,727,183"/>
 <area shape="rect" id="Node000007" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="452,120,621,145"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="681,169,592,148,593,143,682,164"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="706,192,620,159,584,148,586,143,622,154,708,187"/>
 <area shape="rect" id="Node000010" href="$common__nav_8c.html#a3288149314aa748ce8aa507335f50bfd" title="Reset the altitude reference to the current GPS alt." alt="" coords="481,169,592,195"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="655,185,592,185,592,179,655,179"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="655,199,592,191,592,186,656,193"/>
 <area shape="rect" id="Node000011" href="$common__nav_8c.html#a1886ff619a5c03dc6c54729f301fa62e" title="Reset the geographic reference to the current GPS fix." alt="" coords="459,219,614,244"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="682,200,593,221,592,216,681,195"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="656,221,614,225,614,220,655,215"/>
 <area shape="rect" id="Node000012" href="$rotorcraft_2navigation_8c.html#afe6d4a5dd1de94f57126d27a6baac58f" title=" " alt="" coords="471,268,602,293"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="720,204,675,231,622,258,588,270,586,265,620,253,672,227,717,200"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="705,227,622,258,583,270,581,265,620,253,704,222"/>
 <area shape="rect" id="Node000016" href="$air__data_8c.html#aca0d080f4ac927cd0096741f520e68bf" title=" " alt="" coords="471,317,602,343"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="733,207,686,257,656,284,623,307,594,320,592,315,620,302,653,280,683,254,729,204"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="728,231,681,270,623,307,591,320,589,315,620,302,678,265,724,227"/>
+<area shape="rect" id="Node000018" href="$gps__nmea__send_8c.html#a55cbc5d084f409bb39369ae05436f09b" title="Function to recover data available onboard from GPS." alt="" coords="468,367,605,392"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="737,233,691,296,659,329,623,358,599,369,597,364,620,353,656,325,687,292,732,230"/>
 <area shape="rect" id="Node000003" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="196,5,404,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,21,404,21,404,15,490,15"/>
 <area shape="rect" id="Node000005" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="267,63,333,88"/>
@@ -32,4 +34,6 @@
 <area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="249,289,147,301,147,295,248,284"/>
 <area shape="rect" id="Node000017" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="249,317,351,343"/>
 <area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="457,333,352,333,352,327,457,327"/>
+<area shape="rect" id="Node000019" href="$gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data." alt="" coords="207,367,393,392"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="454,382,394,382,394,377,454,377"/>
 </map>

@@ -1312,7 +1312,7 @@ tx_running</td>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00306">uart_put_byte()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__ostrich_8c_source.html#l00096">actuators_ostrich_periodic()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="syslink__dl_8c_source.html#l00042">send_message()</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00131">sts3032_event()</a>, and <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__ostrich_8c_source.html#l00096">actuators_ostrich_periodic()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="gps__nmea__send_8c_source.html#l00273">nmea_send()</a>, <a class="el" href="syslink__dl_8c_source.html#l00042">send_message()</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00131">sts3032_event()</a>, and <a class="el" href="uart_8c_source.html#l00126">uart_periph_init()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1332,32 +1332,38 @@ tx_running</td>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8h_aafe5af02ef8bf915fcd76d39896174a3_icgraph.png" border="0" usemap="#auart_8h_aafe5af02ef8bf915fcd76d39896174a3_icgraph" alt=""/></div>
 <map name="auart_8h_aafe5af02ef8bf915fcd76d39896174a3_icgraph" id="auart_8h_aafe5af02ef8bf915fcd76d39896174a3_icgraph">
-<area shape="rect" title=" " alt="" coords="989,121,1111,146"/>
-<area shape="rect" href="actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32" title=" " alt="" coords="748,22,941,47"/>
-<area shape="poly" title=" " alt="" coords="1022,114,985,86,940,61,909,50,911,45,942,56,988,82,1025,110"/>
-<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="825,71,864,97"/>
-<area shape="poly" title=" " alt="" coords="983,120,864,91,865,86,984,115"/>
-<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="785,121,904,146"/>
-<area shape="poly" title=" " alt="" coords="975,136,904,136,904,131,975,131"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="786,170,903,195"/>
-<area shape="poly" title=" " alt="" coords="984,152,899,173,898,167,983,147"/>
-<area shape="rect" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="783,223,907,249"/>
-<area shape="poly" title=" " alt="" coords="1025,157,987,184,942,210,902,226,900,221,940,206,984,180,1022,152"/>
-<area shape="rect" href="airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="525,5,687,45"/>
-<area shape="poly" title=" " alt="" coords="811,79,687,48,688,43,813,74"/>
-<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="367,95,464,121"/>
-<area shape="poly" title=" " alt="" coords="772,121,700,111,572,106,464,108,464,103,572,100,700,105,772,116"/>
-<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="537,121,675,146"/>
-<area shape="poly" title=" " alt="" coords="771,136,675,136,675,131,771,131"/>
-<area shape="rect" href="syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="184,95,319,121"/>
-<area shape="poly" title=" " alt="" coords="353,111,319,111,319,105,353,105"/>
-<area shape="rect" href="syslink__dl_8c.html#a248668c76bd51845ed6a42ff3da5f1a9" title="Datalink event." alt="" coords="5,95,136,121"/>
-<area shape="poly" title=" " alt="" coords="170,111,137,111,137,105,170,105"/>
-<area shape="poly" title=" " alt="" coords="522,125,464,117,464,112,523,120"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="513,170,699,195"/>
-<area shape="poly" title=" " alt="" coords="772,185,699,185,699,180,772,180"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="512,220,700,260"/>
-<area shape="poly" title=" " alt="" coords="769,240,700,241,700,236,769,235"/>
+<area shape="rect" title=" " alt="" coords="1079,129,1200,155"/>
+<area shape="rect" href="actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32" title=" " alt="" coords="837,5,1031,31"/>
+<area shape="poly" title=" " alt="" coords="1117,120,1079,81,1055,61,1029,44,1003,33,1005,28,1032,40,1058,57,1083,77,1121,116"/>
+<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="915,55,953,80"/>
+<area shape="poly" title=" " alt="" coords="1101,125,1030,94,953,73,954,68,1032,89,1103,121"/>
+<area shape="rect" href="gps__nmea__send_8c.html#aa03f8770a4c5922201a8db552fc0a31c" title="Function to send payload to UART." alt="" coords="885,104,983,129"/>
+<area shape="poly" title=" " alt="" coords="1064,135,983,125,983,120,1065,130"/>
+<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="875,153,993,179"/>
+<area shape="poly" title=" " alt="" coords="1065,153,994,162,993,156,1064,148"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="875,228,993,253"/>
+<area shape="poly" title=" " alt="" coords="1101,163,963,230,961,225,1099,158"/>
+<area shape="rect" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="872,281,996,307"/>
+<area shape="poly" title=" " alt="" coords="1125,168,1087,219,1061,245,1032,268,997,284,995,279,1029,264,1058,242,1083,215,1121,165"/>
+<area shape="rect" href="airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="614,25,777,65"/>
+<area shape="poly" title=" " alt="" coords="901,67,777,55,777,50,901,62"/>
+<area shape="rect" href="gps__nmea__send_8c.html#af5e80f1dda24009796ec9397b493fb6d" title="Function to build sentence for NMEA Protocol." alt="" coords="613,89,777,115"/>
+<area shape="poly" title=" " alt="" coords="871,116,777,110,778,104,872,110"/>
+<area shape="rect" href="gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data." alt="" coords="367,89,553,115"/>
+<area shape="poly" title=" " alt="" coords="600,105,553,105,553,99,600,99"/>
+<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="411,165,509,191"/>
+<area shape="poly" title=" " alt="" coords="861,171,509,179,509,174,860,165"/>
+<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="626,191,765,216"/>
+<area shape="poly" title=" " alt="" coords="862,180,765,195,764,190,861,175"/>
+<area shape="rect" href="syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="184,165,319,191"/>
+<area shape="poly" title=" " alt="" coords="397,181,319,181,319,175,397,175"/>
+<area shape="rect" href="syslink__dl_8c.html#a248668c76bd51845ed6a42ff3da5f1a9" title="Datalink event." alt="" coords="5,165,136,191"/>
+<area shape="poly" title=" " alt="" coords="170,181,137,181,137,175,170,175"/>
+<area shape="poly" title=" " alt="" coords="612,197,508,186,509,181,612,192"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="603,240,788,265"/>
+<area shape="poly" title=" " alt="" coords="861,247,788,251,788,245,861,242"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="601,290,789,330"/>
+<area shape="poly" title=" " alt="" coords="858,302,790,306,790,301,858,296"/>
 </map>
 </div>
 
@@ -1415,91 +1421,97 @@ tx_running</td>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart_8h_a47d332312effc31e88e688471daf02a5_icgraph.png" border="0" usemap="#auart_8h_a47d332312effc31e88e688471daf02a5_icgraph" alt=""/></div>
 <map name="auart_8h_a47d332312effc31e88e688471daf02a5_icgraph" id="auart_8h_a47d332312effc31e88e688471daf02a5_icgraph">
-<area shape="rect" title=" " alt="" coords="1371,376,1483,401"/>
-<area shape="rect" href="actuators__t4__uart_8c.html#ad80d8ab9e35f14710e5db6c49fd17053" title=" " alt="" coords="1142,5,1309,31"/>
-<area shape="poly" title=" " alt="" coords="1423,363,1420,298,1406,213,1393,167,1375,123,1351,81,1321,45,1303,33,1306,29,1324,41,1356,78,1380,120,1398,165,1411,211,1425,298,1428,362"/>
-<area shape="rect" href="direct__memory__logger_8c.html#a0e2f1c2c6383161a1a5a6dd8d3f7c74f" title=" " alt="" coords="1141,55,1310,95"/>
-<area shape="poly" title=" " alt="" coords="1421,363,1413,310,1396,242,1366,171,1346,138,1321,109,1305,98,1309,93,1324,105,1350,135,1371,168,1401,240,1418,309,1426,362"/>
-<area shape="rect" href="switch__uart_8c.html#a401eedc08b81ee7fb028235a4042fb43" title=" " alt="" coords="1184,120,1267,145"/>
-<area shape="poly" title=" " alt="" coords="1418,363,1407,321,1388,268,1360,213,1342,189,1321,167,1295,150,1266,141,1268,136,1297,146,1324,163,1346,185,1364,211,1393,266,1412,319,1423,362"/>
-<area shape="rect" href="esc32_8c.html#a0ea641180adcdfecf85874250a5606cf" title=" " alt="" coords="685,191,804,216"/>
-<area shape="poly" title=" " alt="" coords="1416,364,1403,329,1384,289,1357,251,1321,220,1254,188,1181,169,1106,159,1031,158,959,163,893,172,791,193,790,188,892,166,958,157,1030,153,1106,154,1182,163,1256,183,1324,216,1361,247,1388,287,1408,327,1421,362"/>
-<area shape="rect" href="esc32_8c.html#a82c6f33aefa0e03f9b138b1f6f8455e6" title=" " alt="" coords="1176,231,1275,256"/>
-<area shape="poly" title=" " alt="" coords="1404,367,1368,327,1321,288,1292,272,1263,259,1265,254,1295,267,1324,284,1371,324,1408,363"/>
-<area shape="rect" href="actuators__faulhaber_8c.html#a04d946294fa65b0df1b773938e0435be" title=" " alt="" coords="1128,299,1323,324"/>
-<area shape="poly" title=" " alt="" coords="1379,373,1259,327,1260,322,1381,368"/>
-<area shape="rect" href="gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title=" " alt="" coords="1164,376,1287,401"/>
-<area shape="poly" title=" " alt="" coords="1357,391,1287,391,1287,386,1357,386"/>
-<area shape="rect" href="hott_2hott_8c.html#a2dab589532cc67049d57fa67684616c8" title=" " alt="" coords="1129,425,1322,451"/>
-<area shape="poly" title=" " alt="" coords="1362,407,1279,428,1277,423,1360,402"/>
-<area shape="rect" href="jevois_8c.html#aa4b38bf843c270c3ef77b789bc08f30c" title="Generic function to send a string command to Jevois." alt="" coords="1154,504,1297,529"/>
-<area shape="poly" title=" " alt="" coords="1399,412,1324,464,1252,506,1249,502,1321,460,1396,407"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART." alt="" coords="1150,643,1301,668"/>
-<area shape="poly" title=" " alt="" coords="1412,415,1325,542,1240,644,1236,641,1321,539,1408,412"/>
-<area shape="rect" href="usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title=" " alt="" coords="1172,717,1279,743"/>
-<area shape="poly" title=" " alt="" coords="1425,416,1416,469,1398,539,1369,613,1349,649,1325,681,1297,704,1267,720,1264,715,1294,700,1321,678,1344,646,1364,611,1393,537,1411,468,1420,415"/>
-<area shape="rect" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="921,832,1045,857"/>
-<area shape="poly" title=" " alt="" coords="1429,415,1426,483,1413,574,1400,623,1382,671,1357,716,1325,756,1294,781,1260,801,1223,817,1185,829,1111,843,1046,848,1046,843,1110,838,1184,824,1221,812,1257,797,1291,777,1321,752,1353,713,1377,669,1395,622,1408,573,1421,483,1424,415"/>
-<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="1165,905,1286,931"/>
-<area shape="poly" title=" " alt="" coords="1428,416,1425,495,1412,607,1399,669,1381,732,1356,793,1325,850,1310,869,1292,884,1256,907,1253,903,1289,880,1306,865,1320,847,1352,791,1376,730,1394,668,1407,606,1420,494,1423,415"/>
-<area shape="rect" href="actuators__t4__uart_8c.html#ac70bd817fbc81d68cc22a7736ac90c18" title=" " alt="" coords="901,5,1065,31"/>
-<area shape="poly" title=" " alt="" coords="1128,21,1065,21,1065,15,1128,15"/>
-<area shape="rect" href="esc32_8c.html#af0f37338dd7c2bea6f0b9aef4d501708" title=" " alt="" coords="898,216,1069,241"/>
-<area shape="poly" title=" " alt="" coords="1162,242,1069,236,1069,231,1162,237"/>
-<area shape="poly" title=" " alt="" coords="884,221,804,212,804,207,884,215"/>
-<area shape="rect" href="actuators__faulhaber_8c.html#ae6d47e2d26846abcb444791cb793a01d" title=" " alt="" coords="907,266,1059,306"/>
-<area shape="poly" title=" " alt="" coords="1114,302,1059,297,1060,291,1115,297"/>
-<area shape="rect" href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="Override the default GPS packet injector to inject the data trough UART." alt="" coords="921,331,1045,356"/>
-<area shape="poly" title=" " alt="" coords="1150,377,1045,357,1046,352,1151,372"/>
-<area shape="rect" href="gps__piksi_8c.html#a2fcb9204061227b94027a135c469c4b5" title=" " alt="" coords="928,380,1039,405"/>
-<area shape="poly" title=" " alt="" coords="1150,393,1039,394,1039,389,1150,387"/>
-<area shape="rect" href="hott_2hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title=" " alt="" coords="908,429,1059,455"/>
-<area shape="poly" title=" " alt="" coords="1115,442,1059,443,1059,438,1115,437"/>
-<area shape="rect" href="hott_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="699,429,791,455"/>
-<area shape="poly" title=" " alt="" coords="894,445,791,445,791,439,894,439"/>
-<area shape="rect" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="914,479,1053,504"/>
-<area shape="poly" title=" " alt="" coords="1140,510,1053,501,1053,496,1140,505"/>
-<area shape="rect" href="jevois_8c.html#a0e47409eccd5ab805c0b20e07f80ab1d" title="Set video mapping." alt="" coords="672,555,817,580"/>
-<area shape="poly" title=" " alt="" coords="1141,528,818,562,817,557,1140,523"/>
-<area shape="rect" href="jevois_8c.html#a2e99fd57571cdb6cd8cbd0dc001a0d95" title="Start and stop streaming." alt="" coords="926,580,1041,605"/>
-<area shape="poly" title=" " alt="" coords="1172,536,1026,582,1024,577,1170,531"/>
-<area shape="poly" title=" " alt="" coords="912,588,817,578,818,572,912,583"/>
+<area shape="rect" title=" " alt="" coords="1375,376,1487,401"/>
+<area shape="rect" href="actuators__t4__uart_8c.html#ad80d8ab9e35f14710e5db6c49fd17053" title=" " alt="" coords="1146,5,1313,31"/>
+<area shape="poly" title=" " alt="" coords="1427,363,1424,298,1410,213,1397,167,1379,123,1355,81,1325,45,1307,33,1310,29,1328,41,1360,78,1384,120,1402,165,1415,211,1429,298,1432,362"/>
+<area shape="rect" href="direct__memory__logger_8c.html#a0e2f1c2c6383161a1a5a6dd8d3f7c74f" title=" " alt="" coords="1145,55,1314,95"/>
+<area shape="poly" title=" " alt="" coords="1425,363,1417,310,1400,242,1370,171,1350,138,1325,109,1309,98,1313,93,1328,105,1354,135,1375,168,1405,240,1422,309,1430,362"/>
+<area shape="rect" href="switch__uart_8c.html#a401eedc08b81ee7fb028235a4042fb43" title=" " alt="" coords="1188,120,1271,145"/>
+<area shape="poly" title=" " alt="" coords="1422,363,1411,321,1392,268,1364,213,1346,189,1325,167,1299,150,1270,141,1272,136,1301,146,1328,163,1350,185,1368,211,1397,266,1416,319,1427,362"/>
+<area shape="rect" href="esc32_8c.html#a0ea641180adcdfecf85874250a5606cf" title=" " alt="" coords="689,191,808,216"/>
+<area shape="poly" title=" " alt="" coords="1420,364,1407,329,1388,289,1361,251,1325,220,1258,188,1185,169,1110,159,1035,158,963,163,897,172,795,193,794,188,896,166,962,157,1034,153,1110,154,1186,163,1260,183,1328,216,1365,247,1392,287,1412,327,1425,362"/>
+<area shape="rect" href="esc32_8c.html#a82c6f33aefa0e03f9b138b1f6f8455e6" title=" " alt="" coords="1180,231,1279,256"/>
+<area shape="poly" title=" " alt="" coords="1408,367,1372,327,1325,288,1296,272,1267,259,1269,254,1299,267,1328,284,1375,324,1412,363"/>
+<area shape="rect" href="actuators__faulhaber_8c.html#a04d946294fa65b0df1b773938e0435be" title=" " alt="" coords="1132,299,1327,324"/>
+<area shape="poly" title=" " alt="" coords="1383,373,1263,327,1264,322,1385,368"/>
+<area shape="rect" href="gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title=" " alt="" coords="1168,376,1291,401"/>
+<area shape="poly" title=" " alt="" coords="1361,391,1291,391,1291,386,1361,386"/>
+<area shape="rect" href="hott_2hott_8c.html#a2dab589532cc67049d57fa67684616c8" title=" " alt="" coords="1133,425,1326,451"/>
+<area shape="poly" title=" " alt="" coords="1366,407,1283,428,1281,423,1364,402"/>
+<area shape="rect" href="jevois_8c.html#aa4b38bf843c270c3ef77b789bc08f30c" title="Generic function to send a string command to Jevois." alt="" coords="1158,504,1301,529"/>
+<area shape="poly" title=" " alt="" coords="1403,412,1328,464,1256,506,1253,502,1325,460,1400,407"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART." alt="" coords="1154,643,1305,668"/>
+<area shape="poly" title=" " alt="" coords="1416,415,1329,542,1244,644,1240,641,1325,539,1412,412"/>
+<area shape="rect" href="usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title=" " alt="" coords="1176,717,1283,743"/>
+<area shape="poly" title=" " alt="" coords="1429,416,1420,469,1402,539,1373,613,1353,649,1329,681,1301,704,1271,720,1268,715,1298,700,1325,678,1348,646,1368,611,1397,537,1415,468,1424,415"/>
+<area shape="rect" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7" title=" " alt="" coords="925,832,1049,857"/>
+<area shape="poly" title=" " alt="" coords="1433,415,1430,483,1417,574,1404,623,1386,671,1361,716,1329,756,1298,781,1264,801,1227,817,1189,829,1115,843,1050,848,1050,843,1114,838,1188,824,1225,812,1261,797,1295,777,1325,752,1357,713,1381,669,1399,622,1412,573,1425,483,1428,415"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="1169,931,1290,956"/>
+<area shape="poly" title=" " alt="" coords="1431,415,1426,493,1410,604,1397,667,1380,730,1357,792,1329,851,1312,877,1291,899,1251,933,1248,928,1287,895,1307,873,1324,849,1352,790,1375,728,1392,665,1405,603,1421,492,1426,415"/>
+<area shape="rect" href="actuators__t4__uart_8c.html#ac70bd817fbc81d68cc22a7736ac90c18" title=" " alt="" coords="905,5,1069,31"/>
+<area shape="poly" title=" " alt="" coords="1132,21,1069,21,1069,15,1132,15"/>
+<area shape="rect" href="esc32_8c.html#af0f37338dd7c2bea6f0b9aef4d501708" title=" " alt="" coords="902,216,1073,241"/>
+<area shape="poly" title=" " alt="" coords="1166,242,1073,236,1073,231,1166,237"/>
+<area shape="poly" title=" " alt="" coords="888,221,808,212,808,207,888,215"/>
+<area shape="rect" href="actuators__faulhaber_8c.html#ae6d47e2d26846abcb444791cb793a01d" title=" " alt="" coords="911,266,1063,306"/>
+<area shape="poly" title=" " alt="" coords="1118,302,1063,297,1064,291,1119,297"/>
+<area shape="rect" href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="Override the default GPS packet injector to inject the data trough UART." alt="" coords="925,331,1049,356"/>
+<area shape="poly" title=" " alt="" coords="1154,377,1049,357,1050,352,1155,372"/>
+<area shape="rect" href="gps__piksi_8c.html#a2fcb9204061227b94027a135c469c4b5" title=" " alt="" coords="932,380,1043,405"/>
+<area shape="poly" title=" " alt="" coords="1154,393,1043,394,1043,389,1154,387"/>
+<area shape="rect" href="hott_2hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title=" " alt="" coords="912,429,1063,455"/>
+<area shape="poly" title=" " alt="" coords="1119,442,1063,443,1063,438,1119,437"/>
+<area shape="rect" href="hott_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="703,429,795,455"/>
+<area shape="poly" title=" " alt="" coords="898,445,795,445,795,439,898,439"/>
+<area shape="rect" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="918,479,1057,504"/>
+<area shape="poly" title=" " alt="" coords="1144,510,1057,501,1057,496,1144,505"/>
+<area shape="rect" href="jevois_8c.html#a0e47409eccd5ab805c0b20e07f80ab1d" title="Set video mapping." alt="" coords="676,555,821,580"/>
+<area shape="poly" title=" " alt="" coords="1145,528,822,562,821,557,1144,523"/>
+<area shape="rect" href="jevois_8c.html#a2e99fd57571cdb6cd8cbd0dc001a0d95" title="Start and stop streaming." alt="" coords="930,580,1045,605"/>
+<area shape="poly" title=" " alt="" coords="1176,536,1030,582,1028,577,1174,531"/>
+<area shape="poly" title=" " alt="" coords="916,588,821,578,822,572,916,583"/>
 <area shape="rect" href="high__speed__logger__direct__memory_8c.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module." alt="" coords="184,649,372,689"/>
-<area shape="poly" title=" " alt="" coords="1136,659,372,670,372,665,1136,654"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="891,681,1076,707"/>
-<area shape="poly" title=" " alt="" coords="1137,672,1064,684,1063,679,1136,667"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3" title="Function sending a request to read some values in memory." alt="" coords="663,681,826,707"/>
-<area shape="poly" title=" " alt="" coords="877,697,826,697,826,691,877,691"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="420,681,603,707"/>
-<area shape="poly" title=" " alt="" coords="650,697,603,697,603,691,650,691"/>
-<area shape="poly" title=" " alt="" coords="590,706,688,721,811,731,946,732,1014,726,1079,715,1114,706,1147,693,1201,666,1204,670,1149,698,1116,711,1081,721,1014,731,946,737,811,737,688,726,589,712"/>
-<area shape="poly" title=" " alt="" coords="406,685,372,682,373,676,406,680"/>
-<area shape="rect" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="956,783,1011,808"/>
-<area shape="poly" title=" " alt="" coords="1165,749,1012,791,1011,786,1163,744"/>
-<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="651,825,839,865"/>
-<area shape="poly" title=" " alt="" coords="907,847,839,847,839,842,907,842"/>
-<area shape="poly" title=" " alt="" coords="1176,903,1079,871,1038,860,1039,855,1081,866,1178,898"/>
-<area shape="rect" href="actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32" title=" " alt="" coords="887,881,1080,907"/>
-<area shape="poly" title=" " alt="" coords="1150,913,1080,906,1081,901,1151,908"/>
-<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="964,931,1003,956"/>
-<area shape="poly" title=" " alt="" coords="1151,928,1003,944,1002,939,1150,923"/>
-<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="924,980,1043,1005"/>
-<area shape="poly" title=" " alt="" coords="1177,938,1081,970,1036,982,1035,977,1079,965,1175,933"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="925,1041,1042,1067"/>
-<area shape="poly" title=" " alt="" coords="1199,941,1146,980,1081,1019,1024,1044,1022,1039,1079,1014,1143,975,1195,937"/>
-<area shape="rect" href="airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="663,902,826,942"/>
-<area shape="poly" title=" " alt="" coords="950,943,826,932,827,927,951,938"/>
-<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="463,992,560,1017"/>
-<area shape="poly" title=" " alt="" coords="910,997,560,1006,560,1001,910,992"/>
-<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="675,1017,814,1043"/>
-<area shape="poly" title=" " alt="" coords="911,1007,815,1022,814,1017,910,1001"/>
-<area shape="rect" href="syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="211,992,345,1017"/>
-<area shape="poly" title=" " alt="" coords="449,1007,345,1007,345,1002,449,1002"/>
-<area shape="rect" href="syslink__dl_8c.html#a248668c76bd51845ed6a42ff3da5f1a9" title="Datalink event." alt="" coords="5,992,136,1017"/>
-<area shape="poly" title=" " alt="" coords="197,1007,136,1007,136,1002,197,1002"/>
-<area shape="poly" title=" " alt="" coords="661,1024,560,1013,560,1007,662,1018"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="652,1067,837,1092"/>
-<area shape="poly" title=" " alt="" coords="911,1064,838,1072,837,1067,910,1059"/>
+<area shape="poly" title=" " alt="" coords="1140,659,372,670,372,665,1140,654"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="895,681,1080,707"/>
+<area shape="poly" title=" " alt="" coords="1141,672,1068,684,1067,679,1140,667"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3" title="Function sending a request to read some values in memory." alt="" coords="667,681,830,707"/>
+<area shape="poly" title=" " alt="" coords="881,697,830,697,830,691,881,691"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="422,681,605,707"/>
+<area shape="poly" title=" " alt="" coords="654,697,605,697,605,691,654,691"/>
+<area shape="poly" title=" " alt="" coords="592,706,691,721,814,732,949,732,1017,726,1083,715,1118,706,1151,693,1205,666,1208,670,1153,698,1120,711,1085,721,1018,731,950,737,814,737,690,726,591,712"/>
+<area shape="poly" title=" " alt="" coords="408,685,372,681,372,676,408,680"/>
+<area shape="rect" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="960,783,1015,808"/>
+<area shape="poly" title=" " alt="" coords="1169,749,1016,791,1015,786,1167,744"/>
+<area shape="rect" href="high__speed__logger__direct__memory_8c.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module." alt="" coords="655,825,843,865"/>
+<area shape="poly" title=" " alt="" coords="911,847,843,847,843,842,911,842"/>
+<area shape="poly" title=" " alt="" coords="1194,926,1143,898,1083,871,1048,860,1049,855,1085,866,1145,893,1197,921"/>
+<area shape="rect" href="actuators__ostrich_8c.html#a7468632491bc1c2550674e8e11c68b32" title=" " alt="" coords="891,881,1084,907"/>
+<area shape="poly" title=" " alt="" coords="1154,931,1050,909,1051,904,1155,926"/>
+<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="968,931,1007,956"/>
+<area shape="poly" title=" " alt="" coords="1155,946,1007,946,1007,941,1155,941"/>
+<area shape="rect" href="gps__nmea__send_8c.html#aa03f8770a4c5922201a8db552fc0a31c" title="Function to send payload to UART." alt="" coords="939,980,1036,1005"/>
+<area shape="poly" title=" " alt="" coords="1155,961,1037,986,1036,980,1154,956"/>
+<area shape="rect" href="syslink__dl_8c.html#ad541734144cc860fa9ab400f9ffc2a05" title="Send a syslink message." alt="" coords="928,1029,1047,1055"/>
+<area shape="poly" title=" " alt="" coords="1196,965,1144,993,1085,1019,1046,1032,1044,1027,1083,1014,1142,988,1193,961"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="929,1104,1046,1129"/>
+<area shape="poly" title=" " alt="" coords="1207,968,1153,1016,1085,1068,1018,1106,1015,1102,1083,1064,1150,1012,1203,964"/>
+<area shape="rect" href="airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="667,914,830,954"/>
+<area shape="poly" title=" " alt="" coords="954,945,830,940,831,935,954,939"/>
+<area shape="rect" href="gps__nmea__send_8c.html#af5e80f1dda24009796ec9397b493fb6d" title="Function to build sentence for NMEA Protocol." alt="" coords="667,979,831,1004"/>
+<area shape="poly" title=" " alt="" coords="925,995,831,994,831,989,925,990"/>
+<area shape="rect" href="gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data." alt="" coords="420,979,607,1004"/>
+<area shape="poly" title=" " alt="" coords="653,994,607,994,607,989,653,989"/>
+<area shape="rect" href="syslink__dl_8c.html#a9a5fcd9b15a63e5311c8ff49c6f95bb8" title="Handle raw datalink." alt="" coords="465,1055,562,1080"/>
+<area shape="poly" title=" " alt="" coords="914,1049,562,1067,562,1062,914,1043"/>
+<area shape="rect" href="syslink__dl_8c.html#aa429086c6c98ffa95fdb0381e67b1285" title="Handle various raw messages." alt="" coords="679,1080,818,1105"/>
+<area shape="poly" title=" " alt="" coords="915,1060,810,1083,809,1077,914,1055"/>
+<area shape="rect" href="syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665" title="New RX message." alt="" coords="211,1055,345,1080"/>
+<area shape="poly" title=" " alt="" coords="451,1070,345,1070,345,1065,451,1065"/>
+<area shape="rect" href="syslink__dl_8c.html#a248668c76bd51845ed6a42ff3da5f1a9" title="Datalink event." alt="" coords="5,1055,136,1080"/>
+<area shape="poly" title=" " alt="" coords="197,1070,136,1070,136,1065,197,1065"/>
+<area shape="poly" title=" " alt="" coords="665,1086,562,1075,562,1070,666,1081"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="656,1129,841,1155"/>
+<area shape="poly" title=" " alt="" coords="915,1127,842,1135,841,1130,914,1122"/>
 </map>
 </div>
 
@@ -1569,7 +1581,7 @@ tx_running</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="uart_8h.html">uart.h</a></li>
-    <li class="footer">Generated on Sun Apr 12 2026 16:38:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Apr 13 2026 08:06:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
