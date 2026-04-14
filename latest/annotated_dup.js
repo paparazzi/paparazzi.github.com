@@ -991,6 +991,7 @@ var annotated_dup =
     [ "RoverNavOval", "nav__rover__base_8h.html#structRoverNavOval", "nav__rover__base_8h_structRoverNavOval" ],
     [ "rssi_info_", "rssi_8h.html#structrssi__info__", "rssi_8h_structrssi__info__" ],
     [ "rtcm3_msg_callbacks_node", "rtcm3_8h.html#structrtcm3__msg__callbacks__node", "rtcm3_8h_structrtcm3__msg__callbacks__node" ],
+    [ "rtos_mon_cpu_window", "chibios_2modules_2core_2rtos__mon__arch_8c.html#structrtos__mon__cpu__window", "chibios_2modules_2core_2rtos__mon__arch_8c_structrtos__mon__cpu__window" ],
     [ "rtos_monitoring", "sys__mon__rtos_8h.html#structrtos__monitoring", "sys__mon__rtos_8h_structrtos__monitoring" ],
     [ "RW_attitude", "eff__scheduling__rotwing__V2_8h.html#structRW__attitude", "eff__scheduling__rotwing__V2_8h_structRW__attitude" ],
     [ "RW_Model", "eff__scheduling__rotwing__V2_8h.html#structRW__Model", "eff__scheduling__rotwing__V2_8h_structRW__Model" ],

@@ -1,7 +1,7 @@
 var group__HAL__CONF =
 [
     [ "_CHIBIOS_HAL_CONF_", "group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84", null ],
-    [ "_CHIBIOS_HAL_CONF_VER_8_4_", "group__HAL__CONF.html#gaf8237f3d00eec30ca14f7e1e5005ebea", null ],
+    [ "_CHIBIOS_HAL_CONF_VER_9_1_", "group__HAL__CONF.html#gaa1975b96a3c0c5908c20895695e34772", null ],
     [ "ADC_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#gac0893cb47e338c2dabad34b974a0a88d", null ],
     [ "ADC_USE_WAIT", "group__HAL__CONF.html#ga39e892a4090185fbdda9bb105bc03b4f", null ],
     [ "CAN_ENFORCE_USE_CALLBACKS", "group__HAL__CONF.html#gad4933b8609e6e61d34785dfc4ea4718f", null ],
@@ -24,6 +24,7 @@ var group__HAL__CONF =
     [ "HAL_USE_PAL", "group__HAL__CONF.html#ga2311bcc7b41bfba183c9ec1a64a11e93", null ],
     [ "HAL_USE_PWM", "group__HAL__CONF.html#gafb7a560610f96b2858d51c36d65f8c2f", null ],
     [ "HAL_USE_RTC", "group__HAL__CONF.html#ga17d20632810c9bb1601a19973977f55c", null ],
+    [ "HAL_USE_SAFETY", "group__HAL__CONF.html#ga5e33bfba93c325977eb20c689a738b0c", null ],
     [ "HAL_USE_SDC", "group__HAL__CONF.html#ga06f315a18b911f426da736c42ab20325", null ],
     [ "HAL_USE_SERIAL", "group__HAL__CONF.html#ga720d92b9c3a00d952f6f0c8665b54ebb", null ],
     [ "HAL_USE_SERIAL_USB", "group__HAL__CONF.html#ga79c970fb20565143ad8b65720c0b2d0e", null ],
@@ -34,6 +35,7 @@ var group__HAL__CONF =
     [ "HAL_USE_USB", "group__HAL__CONF.html#gafc8f8fc6010f46f5baae4a369e14974e", null ],
     [ "HAL_USE_WDG", "group__HAL__CONF.html#gac3be0803223f25a5edeed87f56b526c3", null ],
     [ "HAL_USE_WSPI", "group__HAL__CONF.html#ga8667460a7b5c6e318d510722d7d0e900", null ],
+    [ "I2C_ENABLE_SLAVE_MODE", "group__HAL__CONF.html#gab1333eefad1bcc1a782ee849550d7cbd", null ],
     [ "I2C_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#ga7125642404a6fd3d4985d1cb6e1b7b0a", null ],
     [ "MAC_USE_EVENTS", "group__HAL__CONF.html#ga887da1c1383a9e7b45c4464877a7e05e", null ],
     [ "MAC_USE_ZERO_COPY", "group__HAL__CONF.html#gad763d9426413cf2fe3922ebb8578bc59", null ],

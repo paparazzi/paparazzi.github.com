@@ -73,7 +73,7 @@ var searchData=
   ['_5fbutton_5fgpio_70',['_BUTTON_GPIO',['../cc2500__settings_8c.html#aa6359e5317602a703c40b73c2ea177c4',1,'cc2500_settings.c']]],
   ['_5fbutton_5fpin_71',['_BUTTON_PIN',['../cc2500__settings_8c.html#a551d743103b59b83409b006d5ca458d7',1,'cc2500_settings.c']]],
   ['_5fchibios_5fhal_5fconf_5f_72',['_CHIBIOS_HAL_CONF_',['../group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84',1,'halconf.h']]],
-  ['_5fchibios_5fhal_5fconf_5fver_5f8_5f4_5f_73',['_CHIBIOS_HAL_CONF_VER_8_4_',['../group__HAL__CONF.html#gaf8237f3d00eec30ca14f7e1e5005ebea',1,'halconf.h']]],
+  ['_5fchibios_5fhal_5fconf_5fver_5f9_5f1_5f_73',['_CHIBIOS_HAL_CONF_VER_9_1_',['../group__HAL__CONF.html#gaa1975b96a3c0c5908c20895695e34772',1,'halconf.h']]],
   ['_5fchibios_5frt_5fconf_5f_74',['_CHIBIOS_RT_CONF_',['../group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f',1,'chconf.h']]],
   ['_5fchibios_5frt_5fconf_5fver_5f7_5f0_5f_75',['_CHIBIOS_RT_CONF_VER_7_0_',['../group__config.html#ga4d90d456801e0adb9b5789884699c60f',1,'chconf.h']]],
   ['_5fchvsnprintf_76',['_chvsnprintf',['../group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26',1,'printf.c']]],
