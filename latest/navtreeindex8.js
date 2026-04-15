@@ -1,5 +1,15 @@
 var NAVTREEINDEX8 =
 {
+"ahrs__vectornav_8h.html#ae5768bb7cc1d0b55afe0439aa23a8b2d":[12,0,1,0,6,2,35,0,6],
+"ahrs__vectornav_8h.html#structAhrsVectornav":[12,0,1,0,6,2,35,0],
+"ahrs__vectornav_8h_source.html":[12,0,1,0,6,2,35],
+"ahrs__vectornav__wrapper_8c.html":[12,0,1,0,6,2,36],
+"ahrs__vectornav__wrapper_8c.html#a0e0ab8a84e08440c618956746bb8fb4b":[12,0,1,0,6,2,36,1],
+"ahrs__vectornav__wrapper_8c.html#a82f3dc78095618dd7622c9cd69b28a1e":[12,0,1,0,6,2,36,3],
+"ahrs__vectornav__wrapper_8c.html#aaf9a8f9f628bf2b0174350796ff4f6a7":[12,0,1,0,6,2,36,4],
+"ahrs__vectornav__wrapper_8c.html#ab2ae1dc8fcbafe92ec7311e15104367c":[12,0,1,0,6,2,36,0],
+"ahrs__vectornav__wrapper_8c.html#abcc3fa84d1a2a749aed66a3ebd79ea54":[12,0,1,0,6,2,36,2],
+"ahrs__vectornav__wrapper_8c_source.html":[12,0,1,0,6,2,36],
 "ahrs__vectornav__wrapper_8h.html":[12,0,1,0,6,2,37],
 "ahrs__vectornav__wrapper_8h.html#a0e0ab8a84e08440c618956746bb8fb4b":[12,0,1,0,6,2,37,1],
 "ahrs__vectornav__wrapper_8h.html#a82f3dc78095618dd7622c9cd69b28a1e":[12,0,1,0,6,2,37,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX8 =
 "airspeed__ms45xx__i2c_8c.html#ab942d6c65130f05bbc94f0d872d7f501":[12,0,1,0,6,63,9,1],
 "airspeed__ms45xx__i2c_8c.html#adae5e5e9d5cdb17b0d994261a8d57a1f":[12,0,1,0,6,63,9,10],
 "airspeed__ms45xx__i2c_8c.html#ae4db6d792956c6002d91d931d0beab12":[12,0,1,0,6,63,9,15],
-"airspeed__ms45xx__i2c_8c.html#af05005cff9e18aa174b71a18abeb8e3b":[12,0,1,0,6,63,9,19],
-"airspeed__ms45xx__i2c_8c_source.html":[12,0,1,0,6,63,9],
-"airspeed__ms45xx__i2c_8h.html":[12,0,1,0,6,63,10],
-"airspeed__ms45xx__i2c_8h.html#a0ef10f297c1075308e954d5ac53f161a":[12,0,1,0,6,63,10,0,6],
-"airspeed__ms45xx__i2c_8h.html#a19827c5000cce05be28ccad145fb9194":[12,0,1,0,6,63,10,0,1],
-"airspeed__ms45xx__i2c_8h.html#a2c6e14442d63a2b169a79f88cbcc4fca":[12,0,1,0,6,63,10,2],
-"airspeed__ms45xx__i2c_8h.html#a3081dfe9a588a2851b16f8616989fdf0":[12,0,1,0,6,63,10,0,5],
-"airspeed__ms45xx__i2c_8h.html#a32f8ba9f6cf28676fc2b3135a477b543":[12,0,1,0,6,63,10,4],
-"airspeed__ms45xx__i2c_8h.html#a483438eefb3cb6a56ca3e4884eaa4076":[12,0,1,0,6,63,10,0,8],
-"airspeed__ms45xx__i2c_8h.html#a593a0ee486a80b4a587573a9b384e4f6":[12,0,1,0,6,63,10,1],
-"airspeed__ms45xx__i2c_8h.html#a64f22e7d2547b5a318869173bd85fffb":[12,0,1,0,6,63,10,5]
+"airspeed__ms45xx__i2c_8c.html#af05005cff9e18aa174b71a18abeb8e3b":[12,0,1,0,6,63,9,19]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"actuators__dshot_8h.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,6,0,6,7],
+"actuators__dshot_8h.html#a3b9b1109caa9b06793d7779ab8201373":[12,0,1,0,6,0,6,0,0],
+"actuators__dshot_8h.html#a5d6ef6bb656ecae7efba1192fe1a7982":[12,0,1,0,6,0,6,0,1],
+"actuators__dshot_8h.html#a6e15b6b58de5ec885944e7b094215805":[12,0,1,0,6,0,6,0,2],
+"actuators__dshot_8h.html#a7115f10b0c6f2fb7b754dda98c11eeed":[12,0,1,0,6,0,6,4],
+"actuators__dshot_8h.html#a7ddb6a605c1f16e86032943ef09831bf":[12,0,1,0,6,0,6,0,5],
+"actuators__dshot_8h.html#a8005640683ebe5fbb0375c51d0390547":[12,0,1,0,6,0,6,0,6],
+"actuators__dshot_8h.html#a913b3a08bde672e7cb0872d6807c9686":[12,0,1,0,6,0,6,0,3],
+"actuators__dshot_8h.html#a981f2b4fe90cef64cb2049d2ea203e2c":[12,0,1,0,6,0,6,2],
+"actuators__dshot_8h.html#aaf31608f3b11b75285db34a6d1c5510d":[12,0,1,0,6,0,6,5],
 "actuators__dshot_8h.html#aaf9aa75d1fc089615d8cee524e688cac":[12,0,1,0,6,0,6,9],
 "actuators__dshot_8h.html#ab3d4165b8073373d10cd793785398fd5":[12,0,1,0,6,0,6,0,4],
 "actuators__dshot_8h.html#ae19151c72d42b6c277faf5da1962d3b3":[12,0,1,0,6,0,6,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX2 =
 "actuators__md25_8h.html#aee6c7d9ed3769a0d8f09f9286300023b":[12,0,1,0,6,0,16,9],
 "actuators__md25_8h.html#af0abcfcaffff7f4177be22a8e82bd0ae":[12,0,1,0,6,0,16,5],
 "actuators__md25_8h.html#structActuatorsMD25":[12,0,1,0,6,0,16,0],
-"actuators__md25_8h_source.html":[12,0,1,0,6,0,16],
-"actuators__ostrich_8c.html":[12,0,1,0,6,0,17],
-"actuators__ostrich_8c.html#a07ea92874bea8ab24e571098434000a5":[12,0,1,0,6,0,17,6],
-"actuators__ostrich_8c.html#a10e5f4bb09d3076db20286ae9d65f41f":[12,0,1,0,6,0,17,17],
-"actuators__ostrich_8c.html#a216b5f9c7fbd97256f23450788751a86":[12,0,1,0,6,0,17,3,1],
-"actuators__ostrich_8c.html#a30d2043ca397843e08c43ade3aaee5b2":[12,0,1,0,6,0,17,7],
-"actuators__ostrich_8c.html#a3306143f9e907822d69c77f762ed989e":[12,0,1,0,6,0,17,1,0],
-"actuators__ostrich_8c.html#a3ca157b6909ad6fcbefe0afec21ee97d":[12,0,1,0,6,0,17,16],
-"actuators__ostrich_8c.html#a41451e70c8b0a0562edef32c9b5242e7":[12,0,1,0,6,0,17,13],
-"actuators__ostrich_8c.html#a4a38a1c6098362dedcb0fff4f1e7416d":[12,0,1,0,6,0,17,11],
-"actuators__ostrich_8c.html#a56da19ecfeffeb7a761b9a942bd288cd":[12,0,1,0,6,0,17,3,0]
+"actuators__md25_8h_source.html":[12,0,1,0,6,0,16]
 };

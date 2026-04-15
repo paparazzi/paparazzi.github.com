@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['logger_5fuart_5fparse_0',['logger_uart_parse',['../namespacelogger__uart__parse.html',1,'']]]
+  ['angleselector_0',['AngleSelector',['../namespaceAngleSelector.html',1,'']]],
+  ['arrowdial_1',['ArrowDial',['../namespaceArrowDial.html',1,'']]]
 ];

@@ -1,5 +1,15 @@
 var NAVTREEINDEX25 =
 {
+"betafpv_2aiof7_2v2_2board_8h_source.html":[12,0,1,0,1,3,0,0,0],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html":[12,0,1,0,1,3,0,0,1],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a0086a7a701003e795861e93bd2c7a7fd":[12,0,1,0,1,3,0,0,1,233],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a02086c51746a93818f7b50d8d184bdfc":[12,0,1,0,1,3,0,0,1,243],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a02ab064f32c429288dce0b15b2e443a1":[12,0,1,0,1,3,0,0,1,258],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a02b4e3e6222baab7ee448cbbb2273370":[12,0,1,0,1,3,0,0,1,119],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a02c568ae2c758034cdf478f81b447af3":[12,0,1,0,1,3,0,0,1,257],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a0324f80d5775896053a81432c0475ac3":[12,0,1,0,1,3,0,0,1,12],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a0330335b8223bb2fd7b30a8bf6748a25":[12,0,1,0,1,3,0,0,1,215],
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a035ea0d8259c0f89306c6a7d344705f2":[12,0,1,0,1,3,0,0,1,43],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a05b49e91f478558d33b2b862718758fa":[12,0,1,0,1,3,0,0,1,118],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a061e9a31faab6d787c73d7f21893e483":[12,0,1,0,1,3,0,0,1,164],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#a06ca1a72f6a4d636477b4bcfba7ca07e":[12,0,1,0,1,3,0,0,1,292],
@@ -239,15 +249,5 @@ var NAVTREEINDEX25 =
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad19de93466026d8b03a895cae792bce9":[12,0,1,0,1,3,0,0,1,1],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad5644ee22605eb7f136b390dba9f9725":[12,0,1,0,1,3,0,0,1,262],
 "betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad66dfd61bf3632a76fd5f97e59f451f4":[12,0,1,0,1,3,0,0,1,182],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad6fda9b29002dd22717082e65542c940":[12,0,1,0,1,3,0,0,1,225],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad73fb3ae5b2aca05e0f5155cff7a8b2d":[12,0,1,0,1,3,0,0,1,63],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad747ea34a7a17673701fedb4b441bf6c":[12,0,1,0,1,3,0,0,1,224],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad78cc1c7409d2dbb6ebf63da1b2330cf":[12,0,1,0,1,3,0,0,1,219],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad7ea36adb7dca314cb739ac94e9d74f6":[12,0,1,0,1,3,0,0,1,291],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad94c4a0da6c8c7a3d0b800fdc0dbebfa":[12,0,1,0,1,3,0,0,1,44],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad9cad374b91eaa3e5ff2a68319d1721a":[12,0,1,0,1,3,0,0,1,32],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad9f8b9dcf8dd01e163b8d47c56cee1aa":[12,0,1,0,1,3,0,0,1,272],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ada1164056ea271b26c923140f69ace87":[12,0,1,0,1,3,0,0,1,123],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#adad1367e1eb26c3a6df6a358f44ce98e":[12,0,1,0,1,3,0,0,1,136],
-"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#adae68423fc725ae1da125e4929e6de73":[12,0,1,0,1,3,0,0,1,53]
+"betafpv_2aiof7_2v2_2mcuconf__board_8h.html#ad6fda9b29002dd22717082e65542c940":[12,0,1,0,1,3,0,0,1,225]
 };

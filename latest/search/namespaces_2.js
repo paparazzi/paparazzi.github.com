@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['simple_5fquad_5fsim_0',['simple_quad_sim',['../namespacesimple__quad__sim.html',1,'']]]
+  ['gaia_0',['gaia',['../namespacegaia.html',1,'']]],
+  ['gaia_5ftemplate_1',['Gaia_template',['../namespaceGaia__template.html',1,'']]]
 ];

@@ -1,5 +1,35 @@
 var annotated_dup =
 [
+    [ "AngleSelector", "namespaceAngleSelector.html", [
+      [ "AngleSelector", "classAngleSelector_1_1AngleSelector.html", "classAngleSelector_1_1AngleSelector" ],
+      [ "Ui_Form", "classAngleSelector_1_1Ui__Form.html", "classAngleSelector_1_1Ui__Form" ]
+    ] ],
+    [ "ArrowDial", "namespaceArrowDial.html", [
+      [ "ArrowDial", "classArrowDial_1_1ArrowDial.html", "classArrowDial_1_1ArrowDial" ]
+    ] ],
+    [ "betterAbstractSlider", "namespacebetterAbstractSlider.html", [
+      [ "BetterAbstractSlider", "classbetterAbstractSlider_1_1BetterAbstractSlider.html", "classbetterAbstractSlider_1_1BetterAbstractSlider" ]
+    ] ],
+    [ "betterHSlider", "namespacebetterHSlider.html", [
+      [ "BetterHSlider", "classbetterHSlider_1_1BetterHSlider.html", "classbetterHSlider_1_1BetterHSlider" ]
+    ] ],
+    [ "betterHSlider_ui", "namespacebetterHSlider__ui.html", [
+      [ "Ui_Form", "classbetterHSlider__ui_1_1Ui__Form.html", "classbetterHSlider__ui_1_1Ui__Form" ]
+    ] ],
+    [ "betterVSlider", "namespacebetterVSlider.html", [
+      [ "BetterVSlider", "classbetterVSlider_1_1BetterVSlider.html", "classbetterVSlider_1_1BetterVSlider" ]
+    ] ],
+    [ "betterVSlider_ui", "namespacebetterVSlider__ui.html", [
+      [ "Ui_Form", "classbetterVSlider__ui_1_1Ui__Form.html", "classbetterVSlider__ui_1_1Ui__Form" ]
+    ] ],
+    [ "gaia", "namespacegaia.html", [
+      [ "Gaia", "classgaia_1_1Gaia.html", "classgaia_1_1Gaia" ],
+      [ "GaiaWindow", "classgaia_1_1GaiaWindow.html", "classgaia_1_1GaiaWindow" ],
+      [ "Ui_Dialog", "classgaia_1_1Ui__Dialog.html", "classgaia_1_1Ui__Dialog" ]
+    ] ],
+    [ "Gaia_template", "namespaceGaia__template.html", [
+      [ "Ui_Dialog", "classGaia__template_1_1Ui__Dialog.html", "classGaia__template_1_1Ui__Dialog" ]
+    ] ],
     [ "mesonh", "namespacemesonh.html", [
       [ "mesonh_atmosphere", "namespacemesonh_1_1mesonh__atmosphere.html", [
         [ "MesoNHAtmosphere", "classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html", "classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere" ]
@@ -522,8 +552,8 @@ var annotated_dup =
     [ "EnuCoor_f", "pprz__geodetic__float_8h.html#structEnuCoor__f", "pprz__geodetic__float_8h_structEnuCoor__f" ],
     [ "EnuCoor_i", "group__math__geodetic__int.html#structEnuCoor__i", "group__math__geodetic__int_structEnuCoor__i" ],
     [ "ES_angles", "wedgebug_8c.html#structES__angles", "wedgebug_8c_structES__angles" ],
-    [ "esc32", "esc32_8h.html#structesc32", "esc32_8h_structesc32" ],
     [ "ESC32", "actuators__esc32_8h.html#structESC32", "actuators__esc32_8h_structESC32" ],
+    [ "esc32", "esc32_8h.html#structesc32", "esc32_8h_structesc32" ],
     [ "esc32_ck", "esc32_8c.html#structesc32__ck", "esc32_8c_structesc32__ck" ],
     [ "ESC32_com", "actuators__esc32_8h.html#structESC32__com", "actuators__esc32_8h_structESC32__com" ],
     [ "esc32_parameter", "esc32_8h.html#structesc32__parameter", "esc32_8h_structesc32__parameter" ],
