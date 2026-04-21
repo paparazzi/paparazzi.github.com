@@ -1,6 +1,5 @@
 var datalink_8h =
 [
-    [ "BLUEGIGA", "datalink_8h.html#a833e12609ab35c67bd0bcd2d51eb3ed6", null ],
     [ "DatalinkFillDlBuffer", "datalink_8h.html#a9e0c3a54e92c618bc28aaa322229646c", null ],
     [ "MSG_SIZE", "datalink_8h.html#ad4d025ecf1bdbf8b244ca688df8e478d", null ],
     [ "PPRZ", "datalink_8h.html#ad52033a112b1b7cac721f1f2313ac4d9", null ],

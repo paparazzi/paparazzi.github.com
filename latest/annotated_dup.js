@@ -418,7 +418,6 @@ var annotated_dup =
     [ "blanking_t", "mt9f002_8c.html#structblanking__t", "mt9f002_8c_structblanking__t" ],
     [ "Block_header", "vl53l5cx__api_8h.html#unionBlock__header", "vl53l5cx__api_8h_unionBlock__header" ],
     [ "Block_header.__unnamed359__", "vl53l5cx__api_8h.html#structBlock__header_8____unnamed359____", "vl53l5cx__api_8h_structBlock__header_8____unnamed359____" ],
-    [ "bluegiga_periph", "bluegiga_8h.html#structbluegiga__periph", "bluegiga_8h_structbluegiga__periph" ],
     [ "Bmi088_I2c", "bmi088__i2c_8h.html#structBmi088__I2c", "bmi088__i2c_8h_structBmi088__I2c" ],
     [ "Bmi088_I2c.data_accel", "bmi088__i2c_8h.html#unionBmi088__I2c_8data__accel", "bmi088__i2c_8h_unionBmi088__I2c_8data__accel" ],
     [ "Bmi088_I2c.data_rates", "bmi088__i2c_8h.html#unionBmi088__I2c_8data__rates", "bmi088__i2c_8h_unionBmi088__I2c_8data__rates" ],

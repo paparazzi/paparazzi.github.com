@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"actuators__dshot_8h.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,6,0,6,7],
 "actuators__dshot_8h.html#a3b9b1109caa9b06793d7779ab8201373":[12,0,1,0,6,0,6,0,0],
 "actuators__dshot_8h.html#a5d6ef6bb656ecae7efba1192fe1a7982":[12,0,1,0,6,0,6,0,1],
 "actuators__dshot_8h.html#a6e15b6b58de5ec885944e7b094215805":[12,0,1,0,6,0,6,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "actuators__md25_8h.html#aee6c7d9ed3769a0d8f09f9286300023b":[12,0,1,0,6,0,16,9],
 "actuators__md25_8h.html#af0abcfcaffff7f4177be22a8e82bd0ae":[12,0,1,0,6,0,16,5],
 "actuators__md25_8h.html#structActuatorsMD25":[12,0,1,0,6,0,16,0],
-"actuators__md25_8h_source.html":[12,0,1,0,6,0,16]
+"actuators__md25_8h_source.html":[12,0,1,0,6,0,16],
+"actuators__ostrich_8c.html":[12,0,1,0,6,0,17]
 };

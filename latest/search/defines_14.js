@@ -118,7 +118,7 @@ var searchData=
   ['throttle_5fcurve_5frpm_5ffb_5fp_115',['THROTTLE_CURVE_RPM_FB_P',['../throttle__curve_8c.html#a6ba7bae0d2592f58b421dfe4c78b3a80',1,'throttle_curve.c']]],
   ['throttle_5fcurve_5frpm_5finc_5flimit_116',['THROTTLE_CURVE_RPM_INC_LIMIT',['../throttle__curve_8c.html#aa5a470d0242ebaeb8f238a036386aeca',1,'throttle_curve.c']]],
   ['throttle_5fcurve_5fswitch_5fval_117',['THROTTLE_CURVE_SWITCH_VAL',['../throttle__curve_8c.html#a19820f76eb27824a314c56b4800bc828',1,'throttle_curve.c']]],
-  ['throttle_5fstick_5fdown_118',['throttle_stick_down',['../rotorcraft_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b',1,'THROTTLE_STICK_DOWN:&#160;autopilot_rc_helpers.h'],['../rover_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b',1,'THROTTLE_STICK_DOWN:&#160;autopilot_rc_helpers.h']]],
+  ['throttle_5fstick_5fdown_118',['throttle_stick_down',['../rover_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b',1,'THROTTLE_STICK_DOWN:&#160;autopilot_rc_helpers.h'],['../rotorcraft_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b',1,'THROTTLE_STICK_DOWN:&#160;autopilot_rc_helpers.h']]],
   ['throttle_5fstick_5fdown_5ffrom_5frc_119',['THROTTLE_STICK_DOWN_FROM_RC',['../rotorcraft_2autopilot__rc__helpers_8h.html#ab8710a9fdb1676d471b3cd82cc6b0b0a',1,'autopilot_rc_helpers.h']]],
   ['throttle_5fthreshold_5ftakeoff_120',['THROTTLE_THRESHOLD_TAKEOFF',['../fixedwing_2autopilot__utils_8h.html#a1c2e8ec07daf2aa0b8e54a832ea70139',1,'autopilot_utils.h']]],
   ['thrust_5faxis_5fx_121',['THRUST_AXIS_X',['../stabilization_8h.html#a75e56bab479e8b806443b3bec36f3113',1,'stabilization.h']]],
@@ -184,7 +184,7 @@ var searchData=
   ['trigger_5fmode_5freg_5faddr_181',['TRIGGER_MODE_REG_ADDR',['../tfmini__i2c_8c.html#a242246b3d232834b284c59a0c85d7e1e',1,'tfmini_i2c.c']]],
   ['trim_5fpprz_182',['TRIM_PPRZ',['../paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7',1,'paparazzi.h']]],
   ['trim_5fupprz_183',['TRIM_UPPRZ',['../paparazzi_8h.html#a3e070a9f163110692ed4b0f6a95b41c6',1,'paparazzi.h']]],
-  ['true_184',['true',['../std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;std.h'],['../microrl_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;microrl.h'],['../rtwtypes_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;rtwtypes.h']]],
+  ['true_184',['true',['../std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;std.h'],['../rtwtypes_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;rtwtypes.h'],['../microrl_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;microrl.h']]],
   ['ttyusb0getch_185',['ttyUSB0Getch',['../serial_8h.html#a4de5afa43fa6f29a348b3b7f754f9a00',1,'serial.h']]],
   ['ttyusb0transmit_186',['ttyUSB0Transmit',['../serial_8h.html#a64a2601b456adb51d40aa02ef99370b4',1,'serial.h']]],
   ['tunnel_5fuavcan_5fchannel_5fid_187',['TUNNEL_UAVCAN_CHANNEL_ID',['../tunnel__uavcan_8c.html#ae2ad24e979e382579b972ca94268e3e0',1,'tunnel_uavcan.c']]],
@@ -196,6 +196,5 @@ var searchData=
   ['two_5fomega_5f2_5fres_193',['TWO_OMEGA_2_RES',['../stabilization__attitude__ref__quat__int_8c.html#ac3271118ba1c7174b53b4e1431168d11',1,'stabilization_attitude_ref_quat_int.c']]],
   ['two_5fzeta_5fomega_5fres_194',['TWO_ZETA_OMEGA_RES',['../stabilization__attitude__ref__quat__int_8c.html#a49456a984e7be973086f7847d21690ba',1,'stabilization_attitude_ref_quat_int.c']]],
   ['tx_5fbuffer_5fsize_195',['TX_BUFFER_SIZE',['../tunnel__uavcan_8h.html#a9ab33647617098646990fe263600b650',1,'tunnel_uavcan.h']]],
-  ['txbuf_5fbase_196',['TXBUF_BASE',['../w5100_8c.html#acd3caafdf38d3dd4bf97d4dd8da30f50',1,'w5100.c']]],
-  ['txstrengthofsender_197',['TxStrengthOfSender',['../bluegiga_8c.html#a0f76537c7c5b424e21d78a12041e9db2',1,'bluegiga.c']]]
+  ['txbuf_5fbase_196',['TXBUF_BASE',['../w5100_8c.html#acd3caafdf38d3dd4bf97d4dd8da30f50',1,'w5100.c']]]
 ];

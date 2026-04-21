@@ -129,7 +129,6 @@ var abi__sender__ids_8h =
     [ "RADIO_CONTROL_UAVCAN_ID", "abi__sender__ids_8h.html#a7db1923b55aad728de538937684be208", null ],
     [ "RANGE_FORCEFIELD_ID", "abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748", null ],
     [ "RELATIVE_LOCALIZATION_ID", "abi__sender__ids_8h.html#ad83f845fc9d1a98388403ea342aa331a", null ],
-    [ "RSSI_BLUEGIGA_ID", "abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db", null ],
     [ "SDP3X_SENDER_ID", "abi__sender__ids_8h.html#aaa3985b6f3b689ca90203cb1f3a7e627", null ],
     [ "THRUST_INCREMENT_ID", "abi__sender__ids_8h.html#aef2527d3e072d8a462222ec89d75727c", null ],
     [ "UAVCAN_SENDER_ID", "abi__sender__ids_8h.html#acc9bb0980e48749dbff9b5fb1b99a1a5", null ],

@@ -382,7 +382,6 @@ var hierarchy =
     [ "blanking_t", "mt9f002_8c.html#structblanking__t", null ],
     [ "Block_header", "vl53l5cx__api_8h.html#unionBlock__header", null ],
     [ "Block_header.__unnamed359__", "vl53l5cx__api_8h.html#structBlock__header_8____unnamed359____", null ],
-    [ "bluegiga_periph", "bluegiga_8h.html#structbluegiga__periph", null ],
     [ "Bmi088_I2c", "bmi088__i2c_8h.html#structBmi088__I2c", null ],
     [ "Bmi088_I2c.data_accel", "bmi088__i2c_8h.html#unionBmi088__I2c_8data__accel", null ],
     [ "Bmi088_I2c.data_rates", "bmi088__i2c_8h.html#unionBmi088__I2c_8data__rates", null ],

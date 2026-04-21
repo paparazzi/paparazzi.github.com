@@ -1,29 +1,27 @@
 <map id="dl_parse_msg" name="dl_parse_msg">
-<area shape="rect" id="Node000001" title="Should be called when chars are available in dl_buffer." alt="" coords="641,301,753,327"/>
-<area shape="rect" id="Node000002" href="$datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="457,203,593,228"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="661,297,548,231,550,226,664,292"/>
-<area shape="rect" id="Node000013" href="$intermcu__fbw_8c.html#a0013b9991532fad84ca4e2c582c03b34" title=" " alt="" coords="463,325,587,351"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="628,326,588,332,587,327,627,321"/>
-<area shape="rect" id="Node000003" href="$bluegiga__dl_8c.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event." alt="" coords="261,5,403,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="511,191,495,157,473,118,443,78,408,44,388,33,390,28,411,40,447,75,477,115,500,155,516,188"/>
-<area shape="rect" id="Node000004" href="$extra__pprz__dl_8c.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event." alt="" coords="255,55,409,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="506,193,465,143,438,116,408,94,385,82,387,78,411,89,441,112,469,139,510,190"/>
-<area shape="rect" id="Node000005" href="$gec__dl_8c.html#a7645c559a6c4a5f611acab677af4a579" title="Parse incoming message bytes (PPRZ_STX..CHCKSUM B) and returns a new decrypted message if it is avail..." alt="" coords="278,104,386,129"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="495,197,455,169,408,143,380,132,382,127,410,138,458,165,498,192"/>
-<area shape="rect" id="Node000006" href="$pprz__dl_8c.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event." alt="" coords="275,153,389,179"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="461,202,382,181,384,176,463,197"/>
-<area shape="rect" id="Node000009" href="$sensors__hitl_8c.html#a2e965a44a3faef0df7d56cbed4f8b575" title=" " alt="" coords="260,203,404,228"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="444,218,404,218,404,213,444,213"/>
-<area shape="rect" id="Node000010" href="$modules_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="258,252,406,277"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="463,234,384,254,382,249,461,229"/>
-<area shape="rect" id="Node000011" href="$w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title=" " alt="" coords="277,301,387,327"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="498,238,458,266,410,292,382,304,380,299,408,288,455,261,495,234"/>
-<area shape="rect" id="Node000012" href="$xbee__dl_8c.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="273,351,391,376"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="510,241,469,292,441,318,411,342,387,353,385,348,408,337,438,314,465,288,506,238"/>
-<area shape="rect" id="Node000007" href="$setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title=" " alt="" coords="108,153,207,179"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="262,169,207,169,207,163,262,163"/>
-<area shape="rect" id="Node000008" href="$setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,153,60,179"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="94,169,60,169,60,163,94,163"/>
-<area shape="rect" id="Node000014" href="$main__fbw_8c.html#ab41a8489aa6630cc3e0027720d3a3a82" title=" " alt="" coords="267,400,397,425"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="486,359,410,391,377,402,376,397,408,386,484,354"/>
+<area shape="rect" id="Node000001" title="Should be called when chars are available in dl_buffer." alt="" coords="641,253,753,279"/>
+<area shape="rect" id="Node000002" href="$datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="457,179,593,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,250,554,206,556,202,655,245"/>
+<area shape="rect" id="Node000012" href="$intermcu__fbw_8c.html#a0013b9991532fad84ca4e2c582c03b34" title=" " alt="" coords="463,277,587,303"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="628,278,588,284,587,279,627,273"/>
+<area shape="rect" id="Node000003" href="$extra__pprz__dl_8c.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event." alt="" coords="255,5,409,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="509,168,469,106,441,73,408,44,387,33,389,28,411,40,444,69,473,102,513,165"/>
+<area shape="rect" id="Node000004" href="$gec__dl_8c.html#a7645c559a6c4a5f611acab677af4a579" title="Parse incoming message bytes (PPRZ_STX..CHCKSUM B) and returns a new decrypted message if it is avail..." alt="" coords="278,55,386,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="501,170,460,131,408,94,383,83,385,78,411,89,464,127,505,166"/>
+<area shape="rect" id="Node000005" href="$pprz__dl_8c.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event." alt="" coords="275,104,389,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="482,175,408,144,373,132,375,127,410,140,484,170"/>
+<area shape="rect" id="Node000008" href="$sensors__hitl_8c.html#a2e965a44a3faef0df7d56cbed4f8b575" title=" " alt="" coords="260,153,404,179"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="443,183,404,178,405,173,444,178"/>
+<area shape="rect" id="Node000009" href="$modules_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="258,203,406,228"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="444,204,406,209,406,204,444,199"/>
+<area shape="rect" id="Node000010" href="$w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title=" " alt="" coords="277,252,387,277"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="485,212,410,243,377,254,375,249,408,238,483,207"/>
+<area shape="rect" id="Node000011" href="$xbee__dl_8c.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="273,301,391,327"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="505,216,464,255,411,292,385,304,383,299,408,288,460,251,501,212"/>
+<area shape="rect" id="Node000006" href="$setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title=" " alt="" coords="108,104,207,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="262,119,207,119,207,114,262,114"/>
+<area shape="rect" id="Node000007" href="$setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,104,60,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="94,119,60,119,60,114,94,114"/>
+<area shape="rect" id="Node000013" href="$main__fbw_8c.html#ab41a8489aa6630cc3e0027720d3a3a82" title=" " alt="" coords="267,351,397,376"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="485,311,410,342,377,353,375,348,408,337,483,306"/>
 </map>
