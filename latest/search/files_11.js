@@ -34,7 +34,7 @@ var searchData=
   ['ppm_2ec_31',['ppm.c',['../ppm_8c.html',1,'']]],
   ['ppm_2eh_32',['ppm.h',['../ppm_8h.html',1,'']]],
   ['ppm_5farch_2ec_33',['ppm_arch.c',['../chibios_2modules_2radio__control_2ppm__arch_8c.html',1,'(Global Namespace)'],['../sim_2modules_2radio__control_2ppm__arch_8c.html',1,'(Global Namespace)']]],
-  ['ppm_5farch_2eh_34',['ppm_arch.h',['../sim_2modules_2radio__control_2ppm__arch_8h.html',1,'(Global Namespace)'],['../chibios_2modules_2radio__control_2ppm__arch_8h.html',1,'(Global Namespace)']]],
+  ['ppm_5farch_2eh_34',['ppm_arch.h',['../chibios_2modules_2radio__control_2ppm__arch_8h.html',1,'(Global Namespace)'],['../sim_2modules_2radio__control_2ppm__arch_8h.html',1,'(Global Namespace)']]],
   ['pprz_5falgebra_2eh_35',['pprz_algebra.h',['../pprz__algebra_8h.html',1,'']]],
   ['pprz_5falgebra_5fdouble_2ec_36',['pprz_algebra_double.c',['../pprz__algebra__double_8c.html',1,'']]],
   ['pprz_5falgebra_5fdouble_2eh_37',['pprz_algebra_double.h',['../pprz__algebra__double_8h.html',1,'']]],

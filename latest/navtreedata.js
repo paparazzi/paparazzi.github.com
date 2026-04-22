@@ -325,7 +325,6 @@ var NAVTREE =
       [ "board_matek_f765_car module", "module__board_matek_f765_car.html", [
         [ "Example for airframe file", "module__board_matek_f765_car.html#module_load_example__board_matek_f765_car", null ],
         [ "Module configuration options", "module__board_matek_f765_car.html#configuration__board_matek_f765_car", [
-          [ "Configure Options", "module__board_matek_f765_car.html#configure", null ],
           [ "Raw board_matek_f765_car.xml file:", "module__board_matek_f765_car.html#module_xml__board_matek_f765_car", null ]
         ] ]
       ] ],
@@ -854,7 +853,6 @@ var NAVTREE =
         [ "Example for airframe file", "module__telemetry_transparent.html#module_load_example__telemetry_transparent", null ],
         [ "Module configuration options", "module__telemetry_transparent.html#configuration__telemetry_transparent", null ],
         [ "Module functions", "module__telemetry_transparent.html#functions__telemetry_transparent", [
-          [ "Event Functions", "module__telemetry_transparent.html#event_functions", null ],
           [ "Raw telemetry_transparent.xml file:", "module__telemetry_transparent.html#module_xml__telemetry_transparent", null ]
         ] ]
       ] ],
@@ -1367,20 +1365,20 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
@@ -1418,8 +1416,15 @@ var NAVTREE =
       ] ],
       [ "imu_common module", "module__imu_common.html", [
         [ "Example for airframe file", "module__imu_common.html#module_load_example__imu_common", null ],
-        [ "Module configuration options", "module__imu_common.html#configuration__imu_common", null ],
+        [ "Module configuration options", "module__imu_common.html#configuration__imu_common", [
+          [ "Airframe file section", "module__imu_common.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__imu_common.html#functions__imu_common", [
+          [ "Init Functions", "module__imu_common.html#init_functions", null ]
+        ] ],
+        [ "Files", "module__imu_common.html#files", [
+          [ "Header Files", "module__imu_common.html#headers", null ],
+          [ "Source Files", "module__imu_common.html#sources", null ],
           [ "Raw imu_common.xml file:", "module__imu_common.html#module_xml__imu_common", null ]
         ] ]
       ] ],
@@ -2248,9 +2253,7 @@ var NAVTREE =
       ] ],
       [ "nav_hybrid module", "module__nav_hybrid.html", [
         [ "Example for airframe file", "module__nav_hybrid.html#module_load_example__nav_hybrid", null ],
-        [ "Module configuration options", "module__nav_hybrid.html#configuration__nav_hybrid", [
-          [ "Airframe file section", "module__nav_hybrid.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__nav_hybrid.html#configuration__nav_hybrid", null ],
         [ "Module functions", "module__nav_hybrid.html#functions__nav_hybrid", [
           [ "Raw nav_hybrid.xml file:", "module__nav_hybrid.html#module_xml__nav_hybrid", null ]
         ] ]
@@ -2832,8 +2835,13 @@ var NAVTREE =
       ] ],
       [ "mag_qmc5883l module", "module__mag_qmc5883l.html", [
         [ "Example for airframe file", "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l", null ],
-        [ "Module configuration options", "module__mag_qmc5883l.html#configuration__mag_qmc5883l", null ],
+        [ "Module configuration options", "module__mag_qmc5883l.html#configuration__mag_qmc5883l", [
+          [ "Configure Options", "module__mag_qmc5883l.html#configure", null ],
+          [ "Define Options", "module__mag_qmc5883l.html#define", null ]
+        ] ],
         [ "Module functions", "module__mag_qmc5883l.html#functions__mag_qmc5883l", [
+          [ "Event Functions", "module__mag_qmc5883l.html#event_functions", null ],
+          [ "Periodic Functions", "module__mag_qmc5883l.html#periodic_functions", null ],
           [ "Raw mag_qmc5883l.xml file:", "module__mag_qmc5883l.html#module_xml__mag_qmc5883l", null ]
         ] ]
       ] ],
@@ -3425,16 +3433,8 @@ var NAVTREE =
       ] ],
       [ "pose_history module", "module__pose_history.html", [
         [ "Example for airframe file", "module__pose_history.html#module_load_example__pose_history", null ],
-        [ "Module configuration options", "module__pose_history.html#configuration__pose_history", [
-          [ "Define Options", "module__pose_history.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__pose_history.html#configuration__pose_history", null ],
         [ "Module functions", "module__pose_history.html#functions__pose_history", [
-          [ "Init Functions", "module__pose_history.html#init_functions", null ],
-          [ "Periodic Functions", "module__pose_history.html#periodic_functions", null ]
-        ] ],
-        [ "Files", "module__pose_history.html#files", [
-          [ "Header Files", "module__pose_history.html#headers", null ],
-          [ "Source Files", "module__pose_history.html#sources", null ],
           [ "Raw pose_history.xml file:", "module__pose_history.html#module_xml__pose_history", null ]
         ] ]
       ] ],
@@ -4087,14 +4087,14 @@ var NAVTREEINDEX =
 "meteo__france__DAQ_8h.html#ac6480b94865f30f33996f7cb72a45554",
 "mission__common_8h.html#a217140c5e6527af70d60598cad1bc6ff",
 "module__ahrs_float_cmpl_rmat.html",
-"module__board_tawaki.html#module_load_example__board_tawaki",
-"module__dw1000_arduino.html",
-"module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter",
-"module__imu_disco.html#configuration__imu_disco",
-"module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c",
-"module__nav_poles_rotorcraft.html#module_xml__nav_poles_rotorcraft",
-"module__radio_control_intermcu.html",
-"module__switch_servo.html",
+"module__board_tawaki.html#module_xml__board_tawaki",
+"module__dw1000_arduino.html#configuration__dw1000_arduino",
+"module__gps_udp.html",
+"module__imu_cube.html#functions__imu_cube",
+"module__lidar_tfmini_i2c.html",
+"module__nav_line_osam.html#module_xml__nav_line_osam",
+"module__radio_control_hott.html#module_xml__radio_control_hott",
+"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid",
 "module__wedgebug.html#module_xml__wedgebug",
 "modules_2ins_2ins__arduimu__basic_8c.html#ad14a8d61af1149c06d36d19a4d6a9c12",
 "mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a8b820c4f2ecfc0443d3a903e0805daa6",

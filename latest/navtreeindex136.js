@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__radio_control_hott.html#module_xml__radio_control_hott":[1,379,2,0],
 "module__radio_control_intermcu.html":[1,380],
 "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,380,2],
 "module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,380,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__stereocam_nav_line_avoid.html":[1,470],
 "module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,470,1],
 "module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,470,2],
-"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,470,0],
-"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,470,2,0]
+"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,470,0]
 };
