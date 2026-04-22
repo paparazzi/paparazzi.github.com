@@ -1,5 +1,6 @@
 var NAVTREEINDEX131 =
 {
+"module__dw1000_arduino.html":[1,133],
 "module__dw1000_arduino.html#configuration__dw1000_arduino":[1,133,1],
 "module__dw1000_arduino.html#functions__dw1000_arduino":[1,133,2],
 "module__dw1000_arduino.html#module_load_example__dw1000_arduino":[1,133,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__gps_ubx_ucenter.html":[1,174],
 "module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,174,1],
 "module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter":[1,174,2],
-"module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter":[1,174,0],
-"module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter":[1,174,2,0]
+"module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter":[1,174,0]
 };

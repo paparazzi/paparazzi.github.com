@@ -241,13 +241,13 @@ var NAVTREEINDEX129 =
 "module__board_betafpv_aiof7.html#module_xml__board_betafpv_aiof7":[1,40,0,0],
 "module__board_matek_f765_car.html":[1,41],
 "module__board_matek_f765_car.html#configuration__board_matek_f765_car":[1,41,1],
+"module__board_matek_f765_car.html#configure":[1,41,1,0],
 "module__board_matek_f765_car.html#module_load_example__board_matek_f765_car":[1,41,0],
-"module__board_matek_f765_car.html#module_xml__board_matek_f765_car":[1,41,1,0],
+"module__board_matek_f765_car.html#module_xml__board_matek_f765_car":[1,41,1,1],
 "module__board_matek_f765_wing.html":[1,42],
 "module__board_matek_f765_wing.html#configuration__board_matek_f765_wing":[1,42,1],
 "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,42,0],
 "module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing":[1,42,1,0],
 "module__board_tawaki.html":[1,43],
-"module__board_tawaki.html#configuration__board_tawaki":[1,43,1],
-"module__board_tawaki.html#module_load_example__board_tawaki":[1,43,0]
+"module__board_tawaki.html#configuration__board_tawaki":[1,43,1]
 };

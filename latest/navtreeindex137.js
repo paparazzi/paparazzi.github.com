@@ -1,6 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,470,2,0],
 "module__switch_servo.html":[1,472],
 "module__switch_servo.html#configuration__switch_servo":[1,472,1],
 "module__switch_servo.html#functions__switch_servo":[1,472,2],
@@ -101,9 +100,10 @@ var NAVTREEINDEX137 =
 "module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf":[1,122,1,0],
 "module__telemetry_transparent.html":[1,123],
 "module__telemetry_transparent.html#configuration__telemetry_transparent":[1,123,1],
+"module__telemetry_transparent.html#event_functions":[1,123,2,0],
 "module__telemetry_transparent.html#functions__telemetry_transparent":[1,123,2],
 "module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,123,0],
-"module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,123,2,0],
+"module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,123,2,1],
 "module__telemetry_transparent_frsky_x.html":[1,124],
 "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,124,1],
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,124,0],
