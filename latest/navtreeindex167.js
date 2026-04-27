@@ -1,5 +1,6 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#FMS_TIME":[2,0,175],
 "paparazzi_messages.html#FORMATION_SLOT":[2,1,6],
 "paparazzi_messages.html#FORMATION_SLOT_TM":[2,0,77],
 "paparazzi_messages.html#FORMATION_STATUS":[2,1,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX167 =
 "paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,204],
 "paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,33],
 "paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,47],
-"paparazzi_messages.html#WIND_CLEAR":[2,2,6],
-"paparazzi_messages.html#WIND_INFO":[2,1,2]
+"paparazzi_messages.html#WIND_CLEAR":[2,2,6]
 };

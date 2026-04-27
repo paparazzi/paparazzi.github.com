@@ -1,5 +1,6 @@
 var NAVTREEINDEX99 =
 {
+"l3g4200_8h.html#structL3g4200Config":[12,0,1,0,7,61,0],
 "l3g4200_8h.html#unionL3g4200_8data":[12,0,1,0,7,61,2],
 "l3g4200_8h_source.html":[12,0,1,0,7,61],
 "l3g4200__regs_8h.html":[12,0,1,0,7,62],
@@ -248,6 +249,5 @@ var NAVTREEINDEX99 =
 "lia_2chibios_2v1_81_2board_8h.html#ab366dbaac15f5af2ac23bef4836c23c9":[12,0,1,0,1,9,0,0,0,26],
 "lia_2chibios_2v1_81_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2":[12,0,1,0,1,9,0,0,0,2],
 "lia_2chibios_2v1_81_2board_8h.html#abed465f8e9387dc4c034b1d71989043c":[12,0,1,0,1,9,0,0,0,46],
-"lia_2chibios_2v1_81_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045":[12,0,1,0,1,9,0,0,0,13],
-"lia_2chibios_2v1_81_2board_8h.html#ac3a5ec8060a1026630d56d0ad28e70be":[12,0,1,0,1,9,0,0,0,32]
+"lia_2chibios_2v1_81_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045":[12,0,1,0,1,9,0,0,0,13]
 };

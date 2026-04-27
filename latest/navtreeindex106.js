@@ -1,5 +1,6 @@
 var NAVTREEINDEX106 =
 {
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a32770ebb67e9c7ff6ce165259765d471":[12,0,1,0,1,13,0,0,0,136],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a3363d6a26078e8da07f98b521ce50d76":[12,0,1,0,1,13,0,0,0,30],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a3560895143a3b808990b3b6204fc98c1":[12,0,1,0,1,13,0,0,0,151],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a356a8c63034c31d48ed836fd40089f9a":[12,0,1,0,1,13,0,0,0,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX106 =
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a626416dc22cf5f3deff2a8c7d8efa5b2":[12,0,1,0,1,13,0,0,1,213],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a6366c26f605ce31e89deee1af686f5e6":[12,0,1,0,1,13,0,0,1,194],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a639272943cb5b9bdcbd78e5ced2b52a0":[12,0,1,0,1,13,0,0,1,87],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a65cadd46c1d4b5739f1ef3a623faf196":[12,0,1,0,1,13,0,0,1,4],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a66f4dea2ca69a6afdc2a05593ddb4999":[12,0,1,0,1,13,0,0,1,144]
+"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a65cadd46c1d4b5739f1ef3a623faf196":[12,0,1,0,1,13,0,0,1,4]
 };

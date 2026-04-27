@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"module__wedgebug.html#module_load_example__wedgebug":[1,533,0],
 "module__wedgebug.html#module_xml__wedgebug":[1,533,2,0],
 "module__wind_estimation_quadrotor.html":[1,314],
 "module__wind_estimation_quadrotor.html#configuration__wind_estimation_quadrotor":[1,314,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "modules_2ins_2ins__arduimu__basic_8c.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,37,14,11],
 "modules_2ins_2ins__arduimu__basic_8c.html#aa328003d32e700d9b20df1ac47aab9ba":[12,0,1,0,6,37,14,19],
 "modules_2ins_2ins__arduimu__basic_8c.html#aaec37a1182f43239f68f85ef09e5d9b0":[12,0,1,0,6,37,14,3],
-"modules_2ins_2ins__arduimu__basic_8c.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,37,14,10],
-"modules_2ins_2ins__arduimu__basic_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,37,14,21]
+"modules_2ins_2ins__arduimu__basic_8c.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,37,14,10]
 };

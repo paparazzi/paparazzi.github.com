@@ -8,6 +8,7 @@ var chibios_2mcu__periph_2can__arch_8c =
       [ "thread_rx_wa", "sim_2mcu__periph_2can__arch_8c.html#abbd1b292d736823c4d4244898076463d", null ],
       [ "thread_rx_wa_size", "sim_2mcu__periph_2can__arch_8c.html#adb8506b44538d483e88374ddb584c81d", null ]
     ] ],
+    [ "USE_FDCAN_DRIVER", "chibios_2mcu__periph_2can__arch_8c.html#a227e9d5fef0fae732853968fc758a295", null ],
     [ "can_hw_init", "chibios_2mcu__periph_2can__arch_8c.html#a71ca97a670a8e9e6feb064156c2483fb", null ],
     [ "can_start", "chibios_2mcu__periph_2can__arch_8c.html#a5768ab39ca8653985c0584c38433bb82", null ],
     [ "can_thd_rx", "chibios_2mcu__periph_2can__arch_8c.html#a56cab46e85b4ac61dd10443f63f12bfd", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX164 =
 {
+"opencv__image__functions_8cpp_source.html":[12,0,1,0,6,12,30],
 "opencv__image__functions_8h.html":[12,0,1,0,6,12,31],
 "opencv__image__functions_8h.html#a7e0cf5e8a9df91b72406f77394e7b2cb":[12,0,1,0,6,12,31,1],
 "opencv__image__functions_8h.html#adb49ccffd1f4cf929d976eb034b91c17":[12,0,1,0,6,12,31,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX164 =
 "optical__flow__landing_8c.html#ae0a1bb9bcd3bde723005da2558d0e149":[12,0,1,0,6,14,32,55],
 "optical__flow__landing_8c.html#ae1d42aa21de4dc680b588dccea18f97f":[12,0,1,0,6,14,32,72],
 "optical__flow__landing_8c.html#ae3ac798d30ee8e0a22ba4ec8df46d832":[12,0,1,0,6,14,32,6],
-"optical__flow__landing_8c.html#ae65a438f2015476d71e75deccb1fead2":[12,0,1,0,6,14,32,101],
-"optical__flow__landing_8c.html#aeb1ad417c1e5ef362c70223052a46a0a":[12,0,1,0,6,14,32,5]
+"optical__flow__landing_8c.html#ae65a438f2015476d71e75deccb1fead2":[12,0,1,0,6,14,32,101]
 };

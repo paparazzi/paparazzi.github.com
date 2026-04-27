@@ -1,5 +1,6 @@
 var NAVTREEINDEX193 =
 {
+"serial__port_8h.html#acf391c48a39bcc64fabe03f73f246655":[12,0,1,0,0,1,7,9],
 "serial__port_8h.html#ad0860772c1bd006fb61f934b8a9c8e3e":[12,0,1,0,0,1,7,6],
 "serial__port_8h.html#af25145952d87a0f805da05e7ceb3e5a8":[12,0,1,0,0,1,7,8],
 "serial__port_8h.html#afafe7988057b4462cafea02de41b6488":[12,0,1,0,0,1,7,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX193 =
 "sim_2mcu__periph_2gpio__arch_8h.html#ae31d746dfba17d533edd25e98e3d897e":[12,0,1,0,0,2,0,5,42],
 "sim_2mcu__periph_2gpio__arch_8h.html#ae7545def101df0b5b32032cde88e58b2":[12,0,1,0,0,2,0,5,41],
 "sim_2mcu__periph_2gpio__arch_8h.html#ae9d664cb72ad512e573c2827e799216d":[12,0,1,0,0,2,0,5,25],
-"sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0":[12,0,1,0,0,2,0,5,23],
-"sim_2mcu__periph_2gpio__arch_8h_source.html":[12,0,1,0,0,2,0,5]
+"sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0":[12,0,1,0,0,2,0,5,23]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,28,2,0],
 "module__ahrs_float_cmpl_rmat.html":[1,29],
 "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat":[1,29,1],
 "module__ahrs_float_cmpl_rmat.html#functions__ahrs_float_cmpl_rmat":[1,29,2],
@@ -241,9 +242,8 @@ var NAVTREEINDEX129 =
 "module__board_betafpv_aiof7.html#module_xml__board_betafpv_aiof7":[1,40,0,0],
 "module__board_matek_f765_car.html":[1,41],
 "module__board_matek_f765_car.html#configuration__board_matek_f765_car":[1,41,1],
-"module__board_matek_f765_car.html#configure":[1,41,1,0],
 "module__board_matek_f765_car.html#module_load_example__board_matek_f765_car":[1,41,0],
-"module__board_matek_f765_car.html#module_xml__board_matek_f765_car":[1,41,1,1],
+"module__board_matek_f765_car.html#module_xml__board_matek_f765_car":[1,41,1,0],
 "module__board_matek_f765_wing.html":[1,42],
 "module__board_matek_f765_wing.html#configuration__board_matek_f765_wing":[1,42,1],
 "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,42,0],

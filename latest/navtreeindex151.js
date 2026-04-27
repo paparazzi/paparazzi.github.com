@@ -1,5 +1,6 @@
 var NAVTREEINDEX151 =
 {
+"nav__survey__disc_8h.html":[12,0,1,0,6,47,61],
 "nav__survey__disc_8h.html#a92e175f49ee531314777345e5e9a63e5":[12,0,1,0,6,47,61,1],
 "nav__survey__disc_8h.html#aadffb0f341b83f87092e0a152b4fdc11":[12,0,1,0,6,47,61,0],
 "nav__survey__disc_8h_source.html":[12,0,1,0,6,47,61],
@@ -248,6 +249,5 @@ var NAVTREEINDEX151 =
 "nav__survey__polygon_8h.html#structSurveyPolyAdv":[12,0,1,0,6,47,69,0],
 "nav__survey__polygon_8h_source.html":[12,0,1,0,6,47,69],
 "nav__survey__polygon__gvf_8c.html":[12,0,1,0,6,31,0,0,6],
-"nav__survey__polygon__gvf_8c.html#a1ed530db241dd4311c25f7af1405504d":[12,0,1,0,6,31,0,0,6,2],
-"nav__survey__polygon__gvf_8c.html#a3f99b0a5691b231366a774387afc9a95":[12,0,1,0,6,31,0,0,6,1]
+"nav__survey__polygon__gvf_8c.html#a1ed530db241dd4311c25f7af1405504d":[12,0,1,0,6,31,0,0,6,2]
 };

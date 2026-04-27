@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"group__spi.html#ga891d51f994ea8bbfc56b839c4e7a39dc":[9,0,1,11],
 "group__spi.html#ga8a442d94700c057047ef99e718e68308":[9,0,1,13],
 "group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6":[9,0,1,12],
 "group__spi.html#ga96cc97e73af8ec7cffa9e1d4526692fc":[9,0,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "group__state__velocity.html#gafde920e6154f3aeeca7ec3a2253dc9f2":[9,4,1,4],
 "group__state__velocity.html#gaffaf28d23b855f3a151d6b4945bf1787":[9,4,1,42],
 "group__state__velocity.html#gaffc02a426245fb56dd5769ee90ab23de":[9,4,1,16],
-"group__state__wind__airspeed.html":[9,4,4],
-"group__state__wind__airspeed.html#ga0576f47cb3f48afdb9075452187f1ef1":[9,4,4,26]
+"group__state__wind__airspeed.html":[9,4,4]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX128 =
 {
+"mission__common_8h.html#a20c4fc881f08ea68079de459aa4ef622":[12,0,1,0,6,45,5,29],
 "mission__common_8h.html#a217140c5e6527af70d60598cad1bc6ff":[12,0,1,0,6,45,5,18],
 "mission__common_8h.html#a21836256087c77243583a2e1de8c648b":[12,0,1,0,6,45,5,31],
 "mission__common_8h.html#a245292dc991f4b77692c4562bee9bafd":[12,0,1,0,6,45,5,8,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX128 =
 "module__ahrs_float_cmpl_quat.html":[1,28],
 "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat":[1,28,1],
 "module__ahrs_float_cmpl_quat.html#functions__ahrs_float_cmpl_quat":[1,28,2],
-"module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat":[1,28,0],
-"module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,28,2,0]
+"module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat":[1,28,0]
 };

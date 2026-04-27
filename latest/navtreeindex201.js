@@ -1,5 +1,6 @@
 var NAVTREEINDEX201 =
 {
+"stabilization__indi__simple_8c.html#a51a4671d083da69c010c0985faf4d2f3":[12,0,1,0,3,2,2,42,4],
 "stabilization__indi__simple_8c.html#a53fa37c89df626ac39ce2b9bb4c6e175":[12,0,1,0,3,2,2,42,15],
 "stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38":[12,0,1,0,3,2,2,42,21],
 "stabilization__indi__simple_8c.html#a581a406cc0fef00c51a5466cadb0b180":[12,0,1,0,3,2,2,42,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX201 =
 "structStabilizationSetpoint.html#ad682cbe314764339966316d5543cefc5":[11,0,1042,1],
 "structThrustSetpoint.html":[11,0,1088],
 "structThrustSetpoint.html#a8735a49250e839e84386d58203819121":[11,0,1088,0],
-"structThrustSetpoint.html#ad7e7ddf1d2947a62d07749537c05b4f0":[11,0,1088,1],
-"structThrustSetpoint.html#ae83c969a7281ebf3d05835306a2fc541":[11,0,1088,2]
+"structThrustSetpoint.html#ad7e7ddf1d2947a62d07749537c05b4f0":[11,0,1088,1]
 };

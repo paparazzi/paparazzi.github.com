@@ -2,7 +2,7 @@ var searchData=
 [
   ['5_0',['5',['../paparazzi_messages.html#ARDRONE_NAVDATA',1,'ARDRONE_NAVDATA (ID 5)'],['../paparazzi_messages.html#BLOCK',1,'BLOCK (ID 5)'],['../paparazzi_messages.html#SELECTED',1,'SELECTED (ID 5)']]],
   ['5_20module_1',['5 module',['../module__imu_aspirin_i2c_v1_5.html',1,'imu_aspirin_i2c_v1.5 module'],['../module__imu_aspirin_v1_5.html',1,'imu_aspirin_v1.5 module']]],
-  ['5_20raw_20imu_5faspirin_5fv1_205_20xml_20file_3a_2',['.5 Raw imu_aspirin_v1.5.xml file:',['../module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1',1,'']]],
+  ['5_20raw_20imu_5faspirin_5fi2c_5fv1_205_20xml_20file_3a_2',['.5 Raw imu_aspirin_i2c_v1.5.xml file:',['../module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1',1,'']]],
   ['50_3',['50',['../paparazzi_messages.html#WINDTURBINE_STATUS',1,'WINDTURBINE_STATUS (ID 50)'],['../paparazzi_messages.html#WINDTURBINE_STATUS_',1,'WINDTURBINE_STATUS_ (ID 50)']]],
   ['52_4',['MPPT (ID 52)',['../paparazzi_messages.html#MPPT',1,'']]],
   ['53_5',['DEBUG_VECT (ID 53)',['../paparazzi_messages.html#DEBUG_VECT',1,'']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"geiger__counter_8c.html#a04dc0541640cf73d18fef78c549c1387":[12,0,1,0,6,44,13,4],
 "geiger__counter_8c.html#a0b1fac16331bf94c39da0007dfe6fb45":[12,0,1,0,6,44,13,0],
 "geiger__counter_8c.html#a540c1be1c58c71a3c93050ba104fe83d":[12,0,1,0,6,44,13,3],
 "geiger__counter_8c.html#a7e9ff01bcdeadfc789027692778d40c6":[12,0,1,0,6,44,13,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "globals_vars_s.html":[12,1,2,19],
 "globals_vars_t.html":[12,1,2,20],
 "globals_vars_u.html":[12,1,2,21],
-"globals_vars_v.html":[12,1,2,22],
-"globals_vars_w.html":[12,1,2,23]
+"globals_vars_v.html":[12,1,2,22]
 };

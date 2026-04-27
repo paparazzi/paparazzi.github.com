@@ -1,5 +1,6 @@
 var NAVTREEINDEX77 =
 {
+"hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,19,14,0,2],
 "hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06":[12,0,1,0,6,19,14,7],
 "hackhd_8h.html#ad08e6184f2a54ea823ef3ba228490a70":[12,0,1,0,6,19,14,0,3],
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97":[12,0,1,0,6,19,14,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#a52fd4207a7fa718b2de8e2b5f9dac559":[12,0,1,0,6,42,5,48],
 "high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44":[12,0,1,0,6,42,5,22],
 "high__speed__logger__direct__memory_8c.html#a5c0fb4e1f5b4d9f5f529c8dd6e25be44":[12,0,1,0,6,42,5,55],
-"high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7":[12,0,1,0,6,42,5,19],
-"high__speed__logger__direct__memory_8c.html#a5ec0810a4f30a23bcc12d3f9d29fdc6d":[12,0,1,0,6,42,5,2]
+"high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7":[12,0,1,0,6,42,5,19]
 };

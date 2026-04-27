@@ -1,5 +1,6 @@
 var NAVTREEINDEX153 =
 {
+"nav__trinity_8c.html#a99b5554d915df2f1759e29c8fc0b0bb9":[12,0,1,0,6,47,79,0,11],
 "nav__trinity_8c.html#a9bc4f9465a90459abfa8c58bc908936a":[12,0,1,0,6,47,79,0,7],
 "nav__trinity_8c.html#abb0a2deb6f6107838fd4c1d939c3771b":[12,0,1,0,6,47,79,13],
 "nav__trinity_8c.html#abd2eed9d21325682d7b568db5264ec55":[12,0,1,0,6,47,79,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX153 =
 "notch__filter_8h.html#af0a68017635e730c83735978e2bf859a":[12,0,1,0,2,13,3],
 "notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad":[12,0,1,0,2,13,2],
 "notch__filter_8h_source.html":[12,0,1,0,2,13],
-"notch__filter__float_8h.html":[12,0,1,0,2,14],
-"notch__filter__float_8h.html#a07f9739ad734f4b0bc5e43d6a833a4b0":[12,0,1,0,2,14,6]
+"notch__filter__float_8h.html":[12,0,1,0,2,14]
 };

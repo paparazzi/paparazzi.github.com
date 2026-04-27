@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"frsky__x_8c.html#ae8f77fe967d294aa107890d60258ba3f":[12,0,1,0,6,15,9,11],
 "frsky__x_8c.html#af1304f2d704de47161777ffc71a0f190":[12,0,1,0,6,15,9,6],
 "frsky__x_8c.html#af740233382d876880078568d1a21fe1e":[12,0,1,0,6,15,9,4],
 "frsky__x_8c.html#af7c4a574284a673dbccf3346e072ba50":[12,0,1,0,6,15,9,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "gec__dl_8h.html#structmessage__buffer":[12,0,1,0,6,15,12,1],
 "gec__dl_8h_source.html":[12,0,1,0,6,15,12],
 "geiger__counter_8c.html":[12,0,1,0,6,44,13],
-"geiger__counter_8c.html#a032776faf43a209e2c888e2bea72ec2c":[12,0,1,0,6,44,13,5],
-"geiger__counter_8c.html#a04dc0541640cf73d18fef78c549c1387":[12,0,1,0,6,44,13,4]
+"geiger__counter_8c.html#a032776faf43a209e2c888e2bea72ec2c":[12,0,1,0,6,44,13,5]
 };

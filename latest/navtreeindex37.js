@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#ac264f36c9e98409724821a0c7d93151d":[12,0,1,0,1,4,0,0,2,300],
 "chimera_2chibios_2v1_80_2mcuconf__board_8h.html#ac43c18020355b9fcbbf4085e3f0240d0":[12,0,1,0,1,4,0,0,2,175],
 "chimera_2chibios_2v1_80_2mcuconf__board_8h.html#ac4581f94907ef0bab701971eb36af46e":[12,0,1,0,1,4,0,0,2,186],
 "chimera_2chibios_2v1_80_2mcuconf__board_8h.html#ac6180f96ab7e469c2640208eaaf092c6":[12,0,1,0,1,4,0,0,2,117],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "classAngleSelector_1_1AngleSelector.html#ab7ce499f74e11334593548a9e9f791ce":[11,0,0,0,4],
 "classAngleSelector_1_1AngleSelector.html#aed1ce6c966f0d3ce584b0806712f913f":[11,0,0,0,1],
 "classAngleSelector_1_1Ui__Form.html":[11,0,0,1],
-"classAngleSelector_1_1Ui__Form.html#a110d60c9cc807781262096d88332680a":[11,0,0,1,5],
-"classAngleSelector_1_1Ui__Form.html#a1e71b4eb0bd5ce941c6f1e8c9f0e9125":[11,0,0,1,8]
+"classAngleSelector_1_1Ui__Form.html#a110d60c9cc807781262096d88332680a":[11,0,0,1,5]
 };

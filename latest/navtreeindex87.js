@@ -1,5 +1,6 @@
 var NAVTREEINDEX87 =
 {
+"imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,32,10],
 "imu__mpu9250__i2c_8c_source.html":[12,0,1,0,6,36,32],
 "imu__mpu9250__i2c_8h.html":[12,0,1,0,6,36,33],
 "imu__mpu9250__i2c_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,33,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX87 =
 "input__capture__arch_8h.html#a796225fa33f10b0e17824e11d1b7bf6ba92111f0341a9b37d4d8af39280c762a6":[12,0,1,0,0,0,0,12,7,0],
 "input__capture__arch_8h.html#a7e8134b9a58f743797e8f48c6b945988":[12,0,1,0,0,0,0,12,1,2],
 "input__capture__arch_8h.html#a8341690ca547a47a5d670c2766e7762b":[12,0,1,0,0,0,0,12,5],
-"input__capture__arch_8h.html#a8341690ca547a47a5d670c2766e7762ba0099846516ec5cb9e61d5943416b0a69":[12,0,1,0,0,0,0,12,5,4],
-"input__capture__arch_8h.html#a8341690ca547a47a5d670c2766e7762ba3cafec189dccd7602df27b9bcfe582a8":[12,0,1,0,0,0,0,12,5,0]
+"input__capture__arch_8h.html#a8341690ca547a47a5d670c2766e7762ba0099846516ec5cb9e61d5943416b0a69":[12,0,1,0,0,0,0,12,5,4]
 };

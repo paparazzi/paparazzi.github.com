@@ -70,11 +70,12 @@ var NAVTREEINDEX33 =
 "chibios_2mcu__periph_2adc__arch_8h.html#afd39363b0bc5b73c6cb4b0d0cc484d90":[12,0,1,0,0,0,0,1,2],
 "chibios_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,0,0,1],
 "chibios_2mcu__periph_2can__arch_8c.html":[12,0,1,0,0,0,0,2],
-"chibios_2mcu__periph_2can__arch_8c.html#a19befe9f2c3189bde2c81f4210987d72":[12,0,1,0,0,0,0,2,5],
-"chibios_2mcu__periph_2can__arch_8c.html#a56cab46e85b4ac61dd10443f63f12bfd":[12,0,1,0,0,0,0,2,3],
-"chibios_2mcu__periph_2can__arch_8c.html#a5768ab39ca8653985c0584c38433bb82":[12,0,1,0,0,0,0,2,2],
-"chibios_2mcu__periph_2can__arch_8c.html#a71ca97a670a8e9e6feb064156c2483fb":[12,0,1,0,0,0,0,2,1],
-"chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5":[12,0,1,0,0,0,0,2,4],
+"chibios_2mcu__periph_2can__arch_8c.html#a19befe9f2c3189bde2c81f4210987d72":[12,0,1,0,0,0,0,2,6],
+"chibios_2mcu__periph_2can__arch_8c.html#a227e9d5fef0fae732853968fc758a295":[12,0,1,0,0,0,0,2,1],
+"chibios_2mcu__periph_2can__arch_8c.html#a56cab46e85b4ac61dd10443f63f12bfd":[12,0,1,0,0,0,0,2,4],
+"chibios_2mcu__periph_2can__arch_8c.html#a5768ab39ca8653985c0584c38433bb82":[12,0,1,0,0,0,0,2,3],
+"chibios_2mcu__periph_2can__arch_8c.html#a71ca97a670a8e9e6feb064156c2483fb":[12,0,1,0,0,0,0,2,2],
+"chibios_2mcu__periph_2can__arch_8c.html#ae13bbb17093127326d3c529e11009ca5":[12,0,1,0,0,0,0,2,5],
 "chibios_2mcu__periph_2can__arch_8c_source.html":[12,0,1,0,0,0,0,2],
 "chibios_2mcu__periph_2can__arch_8h.html":[12,0,1,0,0,0,0,3],
 "chibios_2mcu__periph_2can__arch_8h.html#aea9abdf3d92f6edf1fbfeebec07eb2a2":[12,0,1,0,0,0,0,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "chibios_2modules_2core_2settings__arch_8c_source.html":[12,0,1,0,0,0,1,1,2],
 "chibios_2modules_2core_2threads__arch_8c.html":[12,0,1,0,0,0,1,1,5],
 "chibios_2modules_2core_2threads__arch_8c.html#a20bfc2ac32043b58f03d6776c4a58f46":[12,0,1,0,0,0,1,1,5,6],
-"chibios_2modules_2core_2threads__arch_8c.html#a3d0da95d5f58f817dc1b1f3b0c25df8e":[12,0,1,0,0,0,1,1,5,10],
-"chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90":[12,0,1,0,0,0,1,1,5,3]
+"chibios_2modules_2core_2threads__arch_8c.html#a3d0da95d5f58f817dc1b1f3b0c25df8e":[12,0,1,0,0,0,1,1,5,10]
 };
