@@ -1,14 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter":[1,174,2,0],
-"module__gps_udp.html":[1,175],
-"module__gps_udp.html#configuration__gps_udp":[1,175,1],
-"module__gps_udp.html#functions__gps_udp":[1,175,2],
-"module__gps_udp.html#module_load_example__gps_udp":[1,175,0],
-"module__gps_udp.html#module_xml__gps_udp":[1,175,2,0],
-"module__ground_detect.html":[1,331],
-"module__ground_detect.html#configuration__ground_detect":[1,331,1],
-"module__ground_detect.html#functions__ground_detect":[1,331,2],
 "module__ground_detect.html#module_load_example__ground_detect":[1,331,0],
 "module__ground_detect.html#module_xml__ground_detect":[1,331,2,0],
 "module__gsm.html":[1,498],
@@ -249,5 +240,14 @@ var NAVTREEINDEX132 =
 "module__imu_common.html#init_functions":[1,213,2,0],
 "module__imu_common.html#module_load_example__imu_common":[1,213,0],
 "module__imu_common.html#module_xml__imu_common":[1,213,3,2],
-"module__imu_common.html#sources":[1,213,3,1]
+"module__imu_common.html#sources":[1,213,3,1],
+"module__imu_cube.html":[1,214],
+"module__imu_cube.html#functions__imu_cube":[1,214,1],
+"module__imu_cube.html#module_load_example__imu_cube":[1,214,0],
+"module__imu_cube.html#module_xml__imu_cube":[1,214,1,0],
+"module__imu_disco.html":[1,215],
+"module__imu_disco.html#configuration__imu_disco":[1,215,1],
+"module__imu_disco.html#functions__imu_disco":[1,215,2],
+"module__imu_disco.html#module_load_example__imu_disco":[1,215,0],
+"module__imu_disco.html#module_xml__imu_disco":[1,215,2,0]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX108 =
 {
-"low__pass__filter_8h.html#a2ef099f9631ccda888715f731518423e":[12,0,1,0,2,8,19],
-"low__pass__filter_8h.html#a3019a2e32f68d0a90956b69b4d0a28f2":[12,0,1,0,2,8,3,1],
-"low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896":[12,0,1,0,2,8,30],
-"low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835":[12,0,1,0,2,8,32],
-"low__pass__filter_8h.html#a51f5aaddb69d72fccf082c0cbd9e8755":[12,0,1,0,2,8,5],
-"low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193":[12,0,1,0,2,8,15],
-"low__pass__filter_8h.html#a69f9575601766afc151fa3bf79ec4a02":[12,0,1,0,2,8,0,2],
-"low__pass__filter_8h.html#a7f7a536c29d9f7e20ae97365b1a81320":[12,0,1,0,2,8,9],
-"low__pass__filter_8h.html#a8009db53dbb2beedb7f25068c2e126bd":[12,0,1,0,2,8,25],
 "low__pass__filter_8h.html#a8157ccd8a241202587f90e3703d1bc06":[12,0,1,0,2,8,22],
 "low__pass__filter_8h.html#a86634a959db6a792bb43f58d58595155":[12,0,1,0,2,8,1,0],
 "low__pass__filter_8h.html#a8c10909ece9be6bc47b50e1682bc6778":[12,0,1,0,2,8,12],
@@ -249,5 +240,14 @@ var NAVTREEINDEX108 =
 "lsm303d__regs_8h.html#a6acf533d3b8762ebb13aa7899f36f380":[12,0,1,0,7,78,52],
 "lsm303d__regs_8h.html#a6f8e6de34a8fc5ee057b820c77e3ced2":[12,0,1,0,7,78,88],
 "lsm303d__regs_8h.html#a707cdf1d3079bbf709264fe92028a793":[12,0,1,0,7,78,13],
-"lsm303d__regs_8h.html#a737c4a90a5b7799796a7be0090a4c51e":[12,0,1,0,7,78,92]
+"lsm303d__regs_8h.html#a737c4a90a5b7799796a7be0090a4c51e":[12,0,1,0,7,78,92],
+"lsm303d__regs_8h.html#a73e3c4835326c5e8ba9bcf5e4bed415c":[12,0,1,0,7,78,105],
+"lsm303d__regs_8h.html#a796f939c37313e2bfb5be528b8a95b94":[12,0,1,0,7,78,98],
+"lsm303d__regs_8h.html#a7a31467ced615f816719e873b45df235":[12,0,1,0,7,78,94],
+"lsm303d__regs_8h.html#a7ba7fdca9f52c900aff2f8a150b25d59":[12,0,1,0,7,78,72],
+"lsm303d__regs_8h.html#a7f6f35ac58d4787c98597e6542b442f9":[12,0,1,0,7,78,103],
+"lsm303d__regs_8h.html#a80ca1a2fc33197b095d6e547038346fc":[12,0,1,0,7,78,68],
+"lsm303d__regs_8h.html#a8172689d20ee53cf5876c0a0ee55ffda":[12,0,1,0,7,78,16],
+"lsm303d__regs_8h.html#a819473a6532d8f72e98939b092b37d21":[12,0,1,0,7,78,67],
+"lsm303d__regs_8h.html#a820ce99681ea06e0c8a4afe44d4bdc91":[12,0,1,0,7,78,34]
 };

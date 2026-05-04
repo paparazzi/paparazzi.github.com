@@ -1,14 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,28,2,0],
-"module__ahrs_float_cmpl_rmat.html":[1,29],
-"module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat":[1,29,1],
-"module__ahrs_float_cmpl_rmat.html#functions__ahrs_float_cmpl_rmat":[1,29,2],
-"module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat":[1,29,0],
-"module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat":[1,29,2,0],
-"module__ahrs_float_dcm.html":[1,30],
-"module__ahrs_float_dcm.html#configuration__ahrs_float_dcm":[1,30,1],
-"module__ahrs_float_dcm.html#functions__ahrs_float_dcm":[1,30,2],
 "module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm":[1,30,0],
 "module__ahrs_float_dcm.html#module_xml__ahrs_float_dcm":[1,30,2,0],
 "module__ahrs_float_invariant.html":[1,31],
@@ -249,5 +240,14 @@ var NAVTREEINDEX129 =
 "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,42,0],
 "module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing":[1,42,1,0],
 "module__board_tawaki.html":[1,43],
-"module__board_tawaki.html#configuration__board_tawaki":[1,43,1]
+"module__board_tawaki.html#configuration__board_tawaki":[1,43,1],
+"module__board_tawaki.html#module_load_example__board_tawaki":[1,43,0],
+"module__board_tawaki.html#module_xml__board_tawaki":[1,43,1,0],
+"module__board_tawaki_2_0.html":[1,44],
+"module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
+"module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
+"module__board_tmotor_aiof7.html":[1,45],
+"module__board_tmotor_aiof7.html#module_load_example__board_tmotor_aiof7":[1,45,0],
+"module__board_tmotor_aiof7.html#module_xml__board_tmotor_aiof7":[1,45,0,0],
+"module__cam_gimbal.html":[1,48]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,470,0],
-"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,470,2,0],
-"module__switch_servo.html":[1,472],
-"module__switch_servo.html#configuration__switch_servo":[1,472,1],
-"module__switch_servo.html#functions__switch_servo":[1,472,2],
-"module__switch_servo.html#module_load_example__switch_servo":[1,472,0],
-"module__switch_servo.html#module_xml__switch_servo":[1,472,2,0],
-"module__switch_uart.html":[1,473],
-"module__switch_uart.html#functions__switch_uart":[1,473,1],
 "module__switch_uart.html#module_load_example__switch_uart":[1,473,0],
 "module__switch_uart.html#module_xml__switch_uart":[1,473,1,0],
 "module__sys_id_auto_doublets.html":[1,474],
@@ -249,5 +240,14 @@ var NAVTREEINDEX137 =
 "module__video_usb_logger.html#module_xml__video_usb_logger":[1,75,2,0],
 "module__wedgebug.html":[1,533],
 "module__wedgebug.html#configuration__wedgebug":[1,533,1],
-"module__wedgebug.html#functions__wedgebug":[1,533,2]
+"module__wedgebug.html#functions__wedgebug":[1,533,2],
+"module__wedgebug.html#module_load_example__wedgebug":[1,533,0],
+"module__wedgebug.html#module_xml__wedgebug":[1,533,2,0],
+"module__wind_estimation_quadrotor.html":[1,314],
+"module__wind_estimation_quadrotor.html#configuration__wind_estimation_quadrotor":[1,314,1],
+"module__wind_estimation_quadrotor.html#functions__wind_estimation_quadrotor":[1,314,2],
+"module__wind_estimation_quadrotor.html#module_load_example__wind_estimation_quadrotor":[1,314,0],
+"module__wind_estimation_quadrotor.html#module_xml__wind_estimation_quadrotor":[1,314,2,0],
+"module__wind_estimator.html":[1,315],
+"module__wind_estimator.html#functions__wind_estimator":[1,315,1]
 };

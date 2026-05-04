@@ -1,14 +1,5 @@
 var NAVTREEINDEX86 =
 {
-"imu__aspirin__2__spi_8h.html#a4f8b496b4f04d19aafab4035c173936d":[12,0,1,0,6,36,9,1],
-"imu__aspirin__2__spi_8h.html#a8a9e3c5580407c3e071a7417d37320fb":[12,0,1,0,6,36,9,5],
-"imu__aspirin__2__spi_8h.html#a9cf73d57b9c9509d11eb3b9c67fcae9e":[12,0,1,0,6,36,9,0,4],
-"imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424":[12,0,1,0,6,36,9,4],
-"imu__aspirin__2__spi_8h.html#adbf77040b4eaecebd0929cb993df4484":[12,0,1,0,6,36,9,0,3],
-"imu__aspirin__2__spi_8h.html#structImuAspirin2Spi":[12,0,1,0,6,36,9,0],
-"imu__aspirin__2__spi_8h_source.html":[12,0,1,0,6,36,9],
-"imu__aspirin__i2c_8c.html":[12,0,1,0,6,36,10],
-"imu__aspirin__i2c_8c.html#a15394594a2ff3d526d3adf8ea72fd6d5":[12,0,1,0,6,36,10,1],
 "imu__aspirin__i2c_8c.html#a16ac417e3af7b9c76fc18246f2bd75d3":[12,0,1,0,6,36,10,2],
 "imu__aspirin__i2c_8c.html#a3ab9581a70280ff7ce2776b7780f2e28":[12,0,1,0,6,36,10,5],
 "imu__aspirin__i2c_8c.html#a6369e8522e39224b5076e7837c0032f2":[12,0,1,0,6,36,10,4],
@@ -249,5 +240,14 @@ var NAVTREEINDEX86 =
 "imu__mpu9250__i2c_8c.html#ac05033e05a8b4d17b50ba594dddf0db1":[12,0,1,0,6,36,32,5],
 "imu__mpu9250__i2c_8c.html#ac8db3e78c1698a004ce4034d32de70c4":[12,0,1,0,6,36,32,3],
 "imu__mpu9250__i2c_8c.html#ac92e1ef7e72f1ab6e6a11d2c946c3128":[12,0,1,0,6,36,32,2],
-"imu__mpu9250__i2c_8c.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,32,13]
+"imu__mpu9250__i2c_8c.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,32,13],
+"imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,32,10],
+"imu__mpu9250__i2c_8c_source.html":[12,0,1,0,6,36,32],
+"imu__mpu9250__i2c_8h.html":[12,0,1,0,6,36,33],
+"imu__mpu9250__i2c_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,33,5],
+"imu__mpu9250__i2c_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,36,33,1],
+"imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,36,33,4],
+"imu__mpu9250__i2c_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,33,6],
+"imu__mpu9250__i2c_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,36,33,2],
+"imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,33,3]
 };

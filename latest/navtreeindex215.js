@@ -1,5 +1,14 @@
 var NAVTREEINDEX215 =
 {
+"tawaki__v2_80_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,18,0,3,2,132],
+"tawaki__v2_80_8h.html#a402c216e512bc4a39616400af32b7c7f":[12,0,1,0,1,18,0,3,2,149],
+"tawaki__v2_80_8h.html#a41c43a8a181093f2ac488117f7480e8f":[12,0,1,0,1,18,0,3,2,79],
+"tawaki__v2_80_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,18,0,3,2,23],
+"tawaki__v2_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f":[12,0,1,0,1,18,0,3,2,90],
+"tawaki__v2_80_8h.html#a443f5bb8de3da6a4975aa7d55a4413fd":[12,0,1,0,1,18,0,3,2,7],
+"tawaki__v2_80_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a":[12,0,1,0,1,18,0,3,2,35],
+"tawaki__v2_80_8h.html#a460087c9ad1cc47d89c51536be5d9a72":[12,0,1,0,1,18,0,3,2,150],
+"tawaki__v2_80_8h.html#a4d767633a35c612f195676cc9389f6d8":[12,0,1,0,1,18,0,3,2,125],
 "tawaki__v2_80_8h.html#a4da08b59c725550efa312cf16ecdd77c":[12,0,1,0,1,18,0,3,2,136],
 "tawaki__v2_80_8h.html#a4f939402a3adf6008ed5ca06dbd030b9":[12,0,1,0,1,18,0,3,2,54],
 "tawaki__v2_80_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1":[12,0,1,0,1,18,0,3,2,20],
@@ -240,14 +249,5 @@ var NAVTREEINDEX215 =
 "temp__lm75_8h_source.html":[12,0,1,0,6,44,44],
 "temp__tcouple__adc_8c.html":[12,0,1,0,6,44,45],
 "temp__tcouple__adc_8c.html#a03463534edf054f5e6bbdcdfd33685b2":[12,0,1,0,6,44,45,8],
-"temp__tcouple__adc_8c.html#a1a5aa304ef337e9642e86d7f1762c878":[12,0,1,0,6,44,45,10],
-"temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7":[12,0,1,0,6,44,45,9],
-"temp__tcouple__adc_8c.html#a2cb3b08e903ce7917131ba2583fdb2d6":[12,0,1,0,6,44,45,6],
-"temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34":[12,0,1,0,6,44,45,11],
-"temp__tcouple__adc_8c.html#a6ce5d4fa43e9750b18c72b11e7341d0c":[12,0,1,0,6,44,45,4],
-"temp__tcouple__adc_8c.html#a74ef425eb1b47b9e0233cdae989111a7":[12,0,1,0,6,44,45,5],
-"temp__tcouple__adc_8c.html#a7c154050cc6988807b95865a93390d42":[12,0,1,0,6,44,45,0],
-"temp__tcouple__adc_8c.html#aa67736b889b8eff5752f3d0b6367906c":[12,0,1,0,6,44,45,7],
-"temp__tcouple__adc_8c.html#ac165a78e05ef09172afc90dc807796db":[12,0,1,0,6,44,45,2],
-"temp__tcouple__adc_8c.html#acdbb178df47cad5fefe61de2709f7c00":[12,0,1,0,6,44,45,1]
+"temp__tcouple__adc_8c.html#a1a5aa304ef337e9642e86d7f1762c878":[12,0,1,0,6,44,45,10]
 };

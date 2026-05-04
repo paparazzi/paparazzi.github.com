@@ -1,14 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"max7456__regs_8h.html#a468e3bb95b97aaeaba67a95b56e29bac":[12,0,1,0,6,20,2,8],
-"max7456__regs_8h.html#a503f252833320f41882ae822be091207":[12,0,1,0,6,20,2,71],
-"max7456__regs_8h.html#a5b73dfecf5aeff51b86c9a972763987d":[12,0,1,0,6,20,2,57],
-"max7456__regs_8h.html#a5d397c504dc62d18e3161cebf7ae1b14":[12,0,1,0,6,20,2,11],
-"max7456__regs_8h.html#a5f2ca044d7280cd03bcb92dc01558adf":[12,0,1,0,6,20,2,24],
-"max7456__regs_8h.html#a606e332e054b0167143fbcb470abd8c1":[12,0,1,0,6,20,2,48],
-"max7456__regs_8h.html#a614fec7260b153045a89d5573e58947c":[12,0,1,0,6,20,2,23],
-"max7456__regs_8h.html#a632e4c746b423dfd1f4ceed8f01baf7c":[12,0,1,0,6,20,2,53],
-"max7456__regs_8h.html#a6361643f26bf6b74e9dda59a068886a5":[12,0,1,0,6,20,2,33],
 "max7456__regs_8h.html#a64ee02438ed3bb6efbb87f50e3ee84b7":[12,0,1,0,6,20,2,0],
 "max7456__regs_8h.html#a6a456cd46e7c86d4bc2a9f9715e974a5":[12,0,1,0,6,20,2,2],
 "max7456__regs_8h.html#a6a5dcd08237416b2d819bdff3696d940":[12,0,1,0,6,20,2,6],
@@ -249,5 +240,14 @@ var NAVTREEINDEX125 =
 "mcuconf__h7_8h.html#a87dac50603730367a564c5ba63c6e9a1":[12,0,1,0,0,0,11,50],
 "mcuconf__h7_8h.html#a8bc9c80de52b455ce5716ccb0c00e055":[12,0,1,0,0,0,11,130],
 "mcuconf__h7_8h.html#a902ead65bde4234b74ce3bda601a7838":[12,0,1,0,0,0,11,143],
-"mcuconf__h7_8h.html#a904706fc1fb970ddb6dc919a651cbc48":[12,0,1,0,0,0,11,67]
+"mcuconf__h7_8h.html#a904706fc1fb970ddb6dc919a651cbc48":[12,0,1,0,0,0,11,67],
+"mcuconf__h7_8h.html#a90bd623120d1e54038094fba54ba05c0":[12,0,1,0,0,0,11,227],
+"mcuconf__h7_8h.html#a91c55b2ce77da8f5c236bc960b30beed":[12,0,1,0,0,0,11,95],
+"mcuconf__h7_8h.html#a945eb1f70822303bd0191ef633e5eaca":[12,0,1,0,0,0,11,187],
+"mcuconf__h7_8h.html#a9498f8f4ae2badbe39c078555ca9c793":[12,0,1,0,0,0,11,145],
+"mcuconf__h7_8h.html#a951583ab7f5c36eb948ce640f4777b56":[12,0,1,0,0,0,11,261],
+"mcuconf__h7_8h.html#a965297c08bbd33c9b6964bd17e3bd6a2":[12,0,1,0,0,0,11,89],
+"mcuconf__h7_8h.html#a969b79cb637b8b69cec9257705d74484":[12,0,1,0,0,0,11,276],
+"mcuconf__h7_8h.html#a9750025b813fb362c695945ff56365cb":[12,0,1,0,0,0,11,118],
+"mcuconf__h7_8h.html#a978ffaebe063c8a9f64525ed2f13bd09":[12,0,1,0,0,0,11,75]
 };

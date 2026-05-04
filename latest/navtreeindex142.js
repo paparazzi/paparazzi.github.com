@@ -1,14 +1,5 @@
 var NAVTREEINDEX142 =
 {
-"ms5611__i2c_8h.html#a7db71ce7b9baba37f736f293d97b3484":[12,0,1,0,7,114,0,1],
-"ms5611__i2c_8h.html#aa0f03d54dd1edb61641a08de7d273fe1":[12,0,1,0,7,114,0,6],
-"ms5611__i2c_8h.html#aa7ea4f69e5b5ff916ac4571219d829e1":[12,0,1,0,7,114,7],
-"ms5611__i2c_8h.html#abfecb0e214ef090f4879c57b1ba65992":[12,0,1,0,7,114,0,5],
-"ms5611__i2c_8h.html#ad16b6379be4aa10c6bdc8871e6ed6967":[12,0,1,0,7,114,0,2],
-"ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af":[12,0,1,0,7,114,6],
-"ms5611__i2c_8h.html#afd983ecb3762c55be45097cb634174bd":[12,0,1,0,7,114,0,4],
-"ms5611__i2c_8h.html#structMs5611__I2c":[12,0,1,0,7,114,0],
-"ms5611__i2c_8h_source.html":[12,0,1,0,7,114],
 "ms5611__regs_8h.html":[12,0,1,0,7,115],
 "ms5611__regs_8h.html#a085792df4cc876d433b9e73228882a0e":[12,0,1,0,7,115,3],
 "ms5611__regs_8h.html#a1afd9b63728f9438b2b1c7f8bada805a":[12,0,1,0,7,115,18],
@@ -249,5 +240,14 @@ var NAVTREEINDEX142 =
 "mt9f002__regs_8h.html#a0277222da70e24cacf3a03723d4fc9ec":[12,0,1,0,1,2,7,349],
 "mt9f002__regs_8h.html#a02b6b9602dbbed8e42ff36a7f5c77237":[12,0,1,0,1,2,7,20],
 "mt9f002__regs_8h.html#a02d1ffef558428f8428f9205b893fc4d":[12,0,1,0,1,2,7,387],
-"mt9f002__regs_8h.html#a0323af8b05443b6798aa49c667c265f2":[12,0,1,0,1,2,7,444]
+"mt9f002__regs_8h.html#a0323af8b05443b6798aa49c667c265f2":[12,0,1,0,1,2,7,444],
+"mt9f002__regs_8h.html#a033857dae8531a45d5f0c05eda6fb3bd":[12,0,1,0,1,2,7,282],
+"mt9f002__regs_8h.html#a0374aa087f08ea7691b4fa503be99eb5":[12,0,1,0,1,2,7,322],
+"mt9f002__regs_8h.html#a040b528565c3fc1636454bd770ffd374":[12,0,1,0,1,2,7,457],
+"mt9f002__regs_8h.html#a041f53e18a1a0f6186fec16604d54da3":[12,0,1,0,1,2,7,267],
+"mt9f002__regs_8h.html#a049222d51946cd673c274b92f9a8213f":[12,0,1,0,1,2,7,344],
+"mt9f002__regs_8h.html#a0514502a1aa104baa6a6d521b5c8e3dd":[12,0,1,0,1,2,7,511],
+"mt9f002__regs_8h.html#a0592cf36c27a140df4ca35175e6408ab":[12,0,1,0,1,2,7,454],
+"mt9f002__regs_8h.html#a06ff5dd92eafab823d77ae638dc6036d":[12,0,1,0,1,2,7,403],
+"mt9f002__regs_8h.html#a0741631d029fd1d605cf8b81c504dfde":[12,0,1,0,1,2,7,41]
 };

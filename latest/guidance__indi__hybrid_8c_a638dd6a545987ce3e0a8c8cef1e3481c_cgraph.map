@@ -1,19 +1,23 @@
 <map id="guidance_indi_enter" name="guidance_indi_enter">
-<area shape="rect" id="Node000001" title="Call upon entering indi guidance." alt="" coords="5,63,159,88"/>
+<area shape="rect" id="Node000001" title="Call upon entering indi guidance." alt="" coords="5,95,159,120"/>
 <area shape="rect" id="Node000002" href="$group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="212,5,396,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,60,240,32,242,37,133,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,92,149,67,206,41,232,32,234,37,208,46,152,71,106,97"/>
 <area shape="rect" id="Node000003" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="233,55,375,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,73,220,73,220,78,159,78"/>
-<area shape="rect" id="Node000005" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="207,120,401,145"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="133,85,242,114,240,119,131,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,94,219,85,220,90,159,99"/>
+<area shape="rect" id="Node000005" href="$quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851" title="Init a second order quaternion Butterworth filter." alt="" coords="223,119,385,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,116,210,123,209,128,158,121"/>
+<area shape="rect" id="Node000007" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="207,184,401,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="106,118,152,143,208,169,234,178,232,183,206,174,149,148,103,122"/>
 <area shape="rect" id="Node000004" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="449,63,653,88"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,73,436,73,436,78,375,78"/>
-<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="472,120,631,145"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="402,130,458,130,458,135,402,135"/>
-<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="701,120,865,145"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="631,130,687,130,687,135,631,135"/>
-<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="913,95,1068,120"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="865,120,899,116,900,121,866,125"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="918,144,1063,169"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="866,140,904,144,904,149,865,145"/>
+<area shape="rect" id="Node000006" href="$quaternion__filter_8h.html#af07543e57f2906b5e6fb75b5aa0d0cf2" title="Init second order quaternion low pass filter." alt="" coords="465,119,638,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="385,137,451,137,451,142,385,142"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="472,184,631,209"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="402,194,458,194,458,199,402,199"/>
+<area shape="rect" id="Node000009" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="701,184,865,209"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="631,194,687,194,687,199,631,199"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="913,159,1068,184"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="865,184,899,180,900,185,866,189"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="918,208,1063,233"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="866,204,904,208,904,213,865,209"/>
 </map>

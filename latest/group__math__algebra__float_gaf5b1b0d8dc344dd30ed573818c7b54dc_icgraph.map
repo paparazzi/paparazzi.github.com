@@ -1,29 +1,45 @@
 <map id="float_quat_derivative" name="float_quat_derivative">
-<area shape="rect" id="Node000001" title="Quaternion derivative from rotational velocity." alt="" coords="964,92,1124,117"/>
-<area shape="rect" id="Node000002" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="719,5,916,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1007,88,915,46,875,33,876,28,917,41,1009,83"/>
-<area shape="rect" id="Node000005" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="732,55,903,95"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="950,95,903,89,903,84,950,90"/>
-<area shape="rect" id="Node000007" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="753,120,881,145"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="951,119,882,127,881,122,950,114"/>
-<area shape="rect" id="Node000011" href="$ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="753,176,881,201"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1003,125,917,161,863,178,861,173,915,155,1001,121"/>
-<area shape="rect" id="Node000003" href="$ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="540,5,613,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="705,21,613,21,613,15,705,15"/>
-<area shape="rect" id="Node000004" href="$ahrs__madgwick__wrapper_8c.html#a06b534ff4be4d76ebf117fcc7a00b1d8" title=" " alt="" coords="223,5,435,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="526,21,435,21,435,15,526,15"/>
-<area shape="rect" id="Node000006" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="483,63,671,88"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="718,78,671,78,671,73,718,73"/>
-<area shape="rect" id="Node000008" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="501,113,652,153"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="739,135,652,135,652,130,739,130"/>
-<area shape="rect" id="Node000009" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="292,120,365,145"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="488,135,365,135,365,130,488,130"/>
-<area shape="rect" id="Node000010" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="5,120,175,145"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="278,135,175,135,175,130,278,130"/>
-<area shape="rect" id="Node000012" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="505,177,648,217"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="739,194,648,197,648,192,739,189"/>
-<area shape="rect" id="Node000013" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="292,184,365,209"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="491,199,366,199,366,194,491,194"/>
-<area shape="rect" id="Node000014" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="19,177,161,217"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="278,199,162,199,162,194,278,194"/>
+<area shape="rect" id="Node000001" title="Quaternion derivative from rotational velocity." alt="" coords="1196,120,1356,145"/>
+<area shape="rect" id="Node000002" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="951,5,1148,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1248,113,1202,78,1147,46,1112,33,1114,28,1149,41,1205,74,1251,109"/>
+<area shape="rect" id="Node000005" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="964,55,1135,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1211,119,1128,98,1130,93,1213,114"/>
+<area shape="rect" id="Node000007" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="985,120,1113,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1182,135,1113,135,1113,130,1182,130"/>
+<area shape="rect" id="Node000011" href="$ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="985,175,1113,200"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1210,151,1103,177,1102,172,1209,146"/>
+<area shape="rect" id="Node000015" href="$quaternion__filter_8h.html#a12247ce3405cab9e1222d9df6213262b" title="Update second order quaterion low pass filter state with a new value." alt="" coords="971,227,1127,267"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1247,156,1202,185,1149,214,1112,230,1110,225,1147,209,1199,180,1244,151"/>
+<area shape="rect" id="Node000003" href="$ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="772,5,845,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="937,21,845,21,845,15,937,15"/>
+<area shape="rect" id="Node000004" href="$ahrs__madgwick__wrapper_8c.html#a06b534ff4be4d76ebf117fcc7a00b1d8" title=" " alt="" coords="455,5,667,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="758,21,667,21,667,15,758,15"/>
+<area shape="rect" id="Node000006" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="715,59,903,84"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="950,76,903,76,903,70,950,71"/>
+<area shape="rect" id="Node000008" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="733,109,884,149"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="971,134,884,133,884,127,971,129"/>
+<area shape="rect" id="Node000009" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="524,116,597,141"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="720,131,597,131,597,126,720,126"/>
+<area shape="rect" id="Node000010" href="$ahrs__float__invariant__wrapper_8c.html#a24e905958a1cda4561a50727d1bd5b71" title=" " alt="" coords="237,116,407,141"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="510,131,407,131,407,126,510,126"/>
+<area shape="rect" id="Node000012" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="737,173,880,213"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="971,192,880,194,880,188,971,186"/>
+<area shape="rect" id="Node000013" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="524,180,597,205"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="723,195,598,195,598,190,723,190"/>
+<area shape="rect" id="Node000014" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="251,173,393,213"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="510,195,394,195,394,190,510,190"/>
+<area shape="rect" id="Node000016" href="$quaternion__filter_8h.html#a00a25df8965a87832754be40ed51a7bf" title="Update second order quaternion Butterworth low pass filter state with a new value." alt="" coords="715,237,902,277"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="957,254,902,256,902,250,957,248"/>
+<area shape="rect" id="Node000017" href="$guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="468,233,653,273"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="702,258,653,257,653,251,702,252"/>
+<area shape="rect" id="Node000020" href="$guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="468,297,653,337"/>
+<area shape="poly" id="edge19_Node000016_Node000020" title=" " alt="" coords="713,283,645,299,643,294,712,277"/>
+<area shape="rect" id="Node000018" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="252,240,392,265"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="454,255,392,255,392,250,454,250"/>
+<area shape="rect" id="Node000019" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="5,240,189,265"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="238,255,190,255,190,250,238,250"/>
+<area shape="rect" id="Node000021" href="$guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="252,304,392,329"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="454,319,392,319,392,314,454,314"/>
+<area shape="rect" id="Node000022" href="$guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="5,304,189,329"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="238,319,190,319,190,314,238,314"/>
 </map>

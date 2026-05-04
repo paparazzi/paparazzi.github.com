@@ -1,9 +1,11 @@
 <map id="guidance_indi_calcg_wing" name="guidance_indi_calcg_wing">
-<area shape="rect" id="Node000001" title="Calculate the matrix of partial derivatives of the roll, pitch and thrust w.r.t." alt="" coords="5,31,196,56"/>
-<area shape="rect" id="Node000002" href="$guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="244,5,416,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,30,230,26,231,32,196,35"/>
-<area shape="rect" id="Node000003" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="257,55,403,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,51,244,56,243,61,196,56"/>
-<area shape="rect" id="Node000004" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="464,55,616,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,65,450,65,450,70,404,70"/>
+<area shape="rect" id="Node000001" title="Calculate the matrix of partial derivatives of the roll, pitch and thrust w.r.t." alt="" coords="5,55,196,80"/>
+<area shape="rect" id="Node000002" href="$group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="244,5,428,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,52,261,31,262,36,162,57"/>
+<area shape="rect" id="Node000003" href="$guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="250,55,422,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,65,236,65,236,70,196,70"/>
+<area shape="rect" id="Node000004" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="263,104,409,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,77,262,98,261,104,161,83"/>
+<area shape="rect" id="Node000005" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="476,104,628,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="410,114,463,114,463,119,410,119"/>
 </map>

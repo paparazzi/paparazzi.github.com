@@ -1,14 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"mission__common_8h.html#a20c4fc881f08ea68079de459aa4ef622":[12,0,1,0,6,45,5,29],
-"mission__common_8h.html#a217140c5e6527af70d60598cad1bc6ff":[12,0,1,0,6,45,5,18],
-"mission__common_8h.html#a21836256087c77243583a2e1de8c648b":[12,0,1,0,6,45,5,31],
-"mission__common_8h.html#a245292dc991f4b77692c4562bee9bafd":[12,0,1,0,6,45,5,8,3],
-"mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7":[12,0,1,0,6,45,5,37],
-"mission__common_8h.html#a31b2a2265d6533f3d4f408b82cf99f95":[12,0,1,0,6,45,5,21],
-"mission__common_8h.html#a3539ca9cd9417f5d2bfda2fdaf6973fa":[12,0,1,0,6,45,5,38],
-"mission__common_8h.html#a3b39b4382399bae0c1c801379621bfa7":[12,0,1,0,6,45,5,5,2],
-"mission__common_8h.html#a3f6b94a9d68ae0afc1ae4bee904db667":[12,0,1,0,6,45,5,33],
 "mission__common_8h.html#a46f875501601e8e8572a4bbd89949a4f":[12,0,1,0,6,45,5,4,1],
 "mission__common_8h.html#a5010ca6bee3703ed21651700792b7ef8":[12,0,1,0,6,45,5,4,0],
 "mission__common_8h.html#a510760f3d21dc907aadb9ea842773e6a":[12,0,1,0,6,45,5,2,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX128 =
 "module__ahrs_float_cmpl_quat.html":[1,28],
 "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat":[1,28,1],
 "module__ahrs_float_cmpl_quat.html#functions__ahrs_float_cmpl_quat":[1,28,2],
-"module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat":[1,28,0]
+"module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat":[1,28,0],
+"module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,28,2,0],
+"module__ahrs_float_cmpl_rmat.html":[1,29],
+"module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat":[1,29,1],
+"module__ahrs_float_cmpl_rmat.html#functions__ahrs_float_cmpl_rmat":[1,29,2],
+"module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat":[1,29,0],
+"module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat":[1,29,2,0],
+"module__ahrs_float_dcm.html":[1,30],
+"module__ahrs_float_dcm.html#configuration__ahrs_float_dcm":[1,30,1],
+"module__ahrs_float_dcm.html#functions__ahrs_float_dcm":[1,30,2]
 };

@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('guidance__indi__hybrid_8h.html',''); i
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="low__pass__filter_8h_source.html">filters/low_pass_filter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="quaternion__filter_8h_source.html">filters/quaternion_filter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="guidance_8h_source.html">firmwares/rotorcraft/guidance.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -115,85 +116,89 @@ $(document).ready(function(){initNavTree('guidance__indi__hybrid_8h.html',''); i
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__indi__hybrid_8h" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__indi__hybrid_8h" id="asw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__indi__hybrid_8h">
-<area shape="rect" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more!" alt="" coords="463,5,639,60"/>
-<area shape="rect" title=" " alt="" coords="382,651,437,676"/>
-<area shape="poly" title=" " alt="" coords="463,47,326,69,251,85,177,105,110,127,56,153,36,168,21,183,11,198,8,215,8,510,11,524,19,537,49,561,94,583,149,603,269,634,369,653,368,658,267,639,147,608,92,588,46,566,15,540,6,526,3,511,3,214,6,196,17,179,33,163,54,149,108,122,175,99,249,80,325,64,462,42"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="458,497,638,522"/>
-<area shape="poly" title=" " alt="" coords="538,62,507,130,495,172,491,215,491,313,496,361,508,408,538,484,533,486,503,410,490,362,485,313,485,215,490,171,502,128,533,59"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1463,497,1655,522"/>
-<area shape="poly" title=" " alt="" coords="639,37,897,58,1055,75,1216,95,1365,119,1488,146,1536,161,1573,178,1597,195,1605,214,1605,313,1602,361,1593,409,1570,484,1565,483,1587,407,1596,360,1600,313,1600,215,1593,199,1570,182,1534,166,1487,151,1364,124,1215,100,1055,80,896,64,639,43"/>
+<area shape="rect" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more!" alt="" coords="567,5,743,60"/>
+<area shape="rect" title=" " alt="" coords="490,651,545,676"/>
+<area shape="poly" title=" " alt="" coords="567,43,404,60,311,74,220,92,137,115,69,143,43,159,24,176,12,195,8,215,8,510,12,527,23,543,40,558,63,571,123,595,196,615,275,630,352,642,477,656,476,661,351,648,274,636,195,620,122,600,61,576,37,562,19,547,7,529,3,511,3,214,7,193,20,173,40,155,67,139,135,110,219,87,310,69,404,55,566,37"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="510,497,690,522"/>
+<area shape="poly" title=" " alt="" coords="567,39,467,50,415,62,365,79,321,102,285,132,272,149,262,169,256,191,253,215,253,312,260,351,277,385,303,413,336,436,374,456,415,471,497,492,495,497,413,476,372,460,333,441,299,417,272,388,254,353,248,313,248,215,250,190,257,167,267,146,281,128,318,98,363,74,414,57,467,45,566,33"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1524,497,1716,522"/>
+<area shape="poly" title=" " alt="" coords="743,37,1004,58,1165,74,1328,94,1480,118,1605,145,1654,161,1691,177,1715,195,1724,214,1724,313,1722,339,1715,365,1694,414,1668,456,1642,488,1638,484,1663,453,1690,411,1710,364,1716,338,1719,313,1719,215,1711,198,1688,182,1652,166,1604,151,1479,123,1328,99,1164,79,1003,63,743,42"/>
 <area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="43,401,213,427"/>
-<area shape="poly" title=" " alt="" coords="513,62,385,156,308,219,234,286,184,342,146,392,142,388,180,338,230,282,304,215,381,152,510,58"/>
-<area shape="rect" href="guidance_8h.html" title=" " alt="" coords="538,108,689,148"/>
-<area shape="poly" title=" " alt="" coords="571,59,595,95,591,98,566,62"/>
-<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="639,291,790,331"/>
-<area shape="poly" title=" " alt="" coords="640,58,675,78,703,106,715,127,724,149,731,195,730,240,725,278,720,278,725,240,726,196,718,150,711,129,699,110,672,82,637,62"/>
-<area shape="poly" title=" " alt="" coords="469,525,420,544,398,559,381,579,376,593,378,608,393,638,388,641,372,610,371,592,376,576,395,555,417,540,467,520"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1327,577,1483,603"/>
-<area shape="poly" title=" " alt="" coords="638,516,1314,578,1313,583,638,522"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="390,577,543,603"/>
-<area shape="poly" title=" " alt="" coords="538,524,490,570,487,566,534,520"/>
-<area shape="rect" title=" " alt="" coords="567,577,638,603"/>
-<area shape="poly" title=" " alt="" coords="558,521,589,565,585,568,554,524"/>
-<area shape="poly" title=" " alt="" coords="1327,600,1264,605,451,662,450,657,1264,600,1327,595"/>
-<area shape="rect" title=" " alt="" coords="1549,651,1611,676"/>
-<area shape="poly" title=" " alt="" coords="1434,600,1540,643,1538,648,1432,605"/>
-<area shape="rect" title=" " alt="" coords="1370,651,1441,676"/>
-<area shape="poly" title=" " alt="" coords="1408,603,1408,637,1403,637,1403,603"/>
-<area shape="rect" title=" " alt="" coords="1677,651,1745,676"/>
-<area shape="poly" title=" " alt="" coords="1455,600,1664,648,1663,654,1454,605"/>
-<area shape="poly" title=" " alt="" coords="459,605,429,642,425,638,455,601"/>
-<area shape="poly" title=" " alt="" coords="1537,525,1441,573,1439,569,1535,520"/>
-<area shape="poly" title=" " alt="" coords="1602,520,1644,541,1664,556,1680,576,1684,588,1683,599,1672,619,1650,635,1625,648,1623,644,1647,631,1668,615,1678,598,1679,588,1675,579,1660,560,1642,545,1599,525"/>
-<area shape="poly" title=" " alt="" coords="1610,520,1658,540,1680,556,1700,576,1712,606,1715,636,1710,637,1707,607,1695,579,1677,560,1655,545,1608,525"/>
-<area shape="rect" title=" " alt="" coords="1508,577,1665,603"/>
-<area shape="poly" title=" " alt="" coords="1565,521,1580,563,1575,565,1560,523"/>
-<area shape="poly" title=" " alt="" coords="134,426,145,460,165,507,195,557,213,580,234,601,266,622,301,637,369,654,368,660,299,642,263,626,230,605,209,584,190,560,160,510,140,462,129,428"/>
-<area shape="poly" title=" " alt="" coords="180,424,483,491,482,496,179,429"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="870,196,1045,236"/>
-<area shape="poly" title=" " alt="" coords="689,145,870,190,868,195,688,151"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts." alt="" coords="526,196,701,236"/>
-<area shape="poly" title=" " alt="" coords="616,148,616,182,611,182,611,148"/>
-<area shape="poly" title=" " alt="" coords="962,236,965,276,964,329,955,387,947,416,934,443,893,504,872,526,850,544,798,574,729,605,655,632,578,649,508,659,451,663,450,658,507,653,577,644,653,627,727,600,795,569,847,540,869,522,889,501,930,440,942,414,950,386,959,328,960,276,957,236"/>
-<area shape="poly" title=" " alt="" coords="870,229,732,251,671,267,630,286,609,306,592,330,568,385,556,439,551,483,546,483,551,438,563,383,587,328,605,303,626,282,669,262,731,246,869,224"/>
-<area shape="poly" title=" " alt="" coords="1045,214,1155,223,1219,233,1285,249,1351,271,1415,300,1473,338,1523,385,1539,408,1550,434,1560,483,1554,484,1544,436,1534,411,1519,388,1469,342,1412,305,1349,276,1284,254,1218,238,1155,228,1045,219"/>
-<area shape="rect" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance." alt="" coords="1266,394,1465,434"/>
-<area shape="poly" title=" " alt="" coords="1045,221,1094,229,1147,240,1200,258,1249,282,1280,303,1307,329,1348,381,1344,384,1303,333,1276,308,1247,286,1198,263,1145,246,1093,234,1045,226"/>
-<area shape="rect" title=" " alt="" coords="1092,577,1252,603"/>
-<area shape="poly" title=" " alt="" coords="1012,234,1062,257,1117,289,1168,332,1190,357,1208,385,1217,409,1221,434,1217,483,1203,529,1187,566,1183,564,1198,528,1211,482,1215,434,1212,410,1203,388,1186,361,1164,336,1114,294,1059,261,1009,239"/>
-<area shape="poly" title=" " alt="" coords="909,239,777,289,776,284,907,234"/>
-<area shape="poly" title=" " alt="" coords="1266,435,1206,444,904,479,652,502,651,497,904,473,1205,439,1265,430"/>
-<area shape="poly" title=" " alt="" coords="1377,434,1396,489,1407,563,1401,564,1391,490,1371,435"/>
-<area shape="poly" title=" " alt="" coords="1406,432,1524,488,1521,493,1403,436"/>
-<area shape="rect" title=" " alt="" coords="975,651,1062,676"/>
-<area shape="poly" title=" " alt="" coords="1363,435,1352,471,1332,517,1304,565,1286,586,1266,605,1220,631,1170,649,1120,659,1076,664,1075,658,1120,654,1169,644,1218,627,1262,601,1282,582,1300,561,1328,515,1347,469,1358,433"/>
-<area shape="poly" title=" " alt="" coords="1347,436,1243,531,1198,570,1195,566,1240,527,1344,432"/>
-<area shape="poly" title=" " alt="" coords="712,332,699,387,693,421,692,451,693,504,692,529,686,554,674,578,653,605,638,615,617,625,564,640,451,660,450,655,562,635,615,620,635,611,649,601,669,576,681,552,687,528,688,504,687,451,688,420,693,386,707,331"/>
-<area shape="poly" title=" " alt="" coords="688,334,655,358,623,388,587,439,562,485,557,483,583,436,619,385,652,354,684,329"/>
-<area shape="poly" title=" " alt="" coords="791,309,953,311,1155,321,1255,330,1346,343,1423,361,1479,384,1505,405,1525,431,1552,482,1548,485,1521,434,1501,409,1476,389,1421,366,1345,349,1254,336,1154,326,953,317,790,315"/>
-<area shape="poly" title=" " alt="" coords="712,332,707,356,705,384,708,414,720,440,743,462,779,483,826,502,879,520,992,550,1094,572,1093,577,991,556,877,525,824,507,777,488,740,466,715,443,703,415,699,385,701,355,706,331"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="729,387,919,441"/>
-<area shape="poly" title=" " alt="" coords="737,330,787,375,783,379,733,333"/>
-<area shape="poly" title=" " alt="" coords="816,443,798,480,772,524,738,568,696,605,666,622,634,636,567,654,503,663,451,665,450,660,503,657,566,649,632,631,664,617,693,600,734,565,768,521,794,478,811,441"/>
-<area shape="poly" title=" " alt="" coords="747,444,595,495,594,490,746,439"/>
-<area shape="poly" title=" " alt="" coords="920,429,983,439,1233,470,1449,494,1448,499,1233,476,982,444,919,434"/>
-<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="967,489,1134,529"/>
-<area shape="poly" title=" " alt="" coords="889,439,993,482,991,487,887,444"/>
-<area shape="poly" title=" " alt="" coords="1081,527,1144,568,1141,572,1079,532"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="970,577,1067,603"/>
-<area shape="poly" title=" " alt="" coords="1045,531,1031,566,1026,564,1040,529"/>
-<area shape="poly" title=" " alt="" coords="1021,603,1021,637,1016,637,1016,603"/>
-<area shape="poly" title=" " alt="" coords="526,226,455,234,381,247,318,264,294,274,278,286,257,314,251,342,253,413,253,510,256,534,265,555,278,574,294,592,332,621,370,643,368,647,329,626,290,596,274,577,260,557,251,535,248,511,248,413,245,342,252,312,274,282,292,270,316,259,380,241,454,229,525,221"/>
-<area shape="poly" title=" " alt="" coords="636,234,686,280,682,284,632,238"/>
-<area shape="rect" href="guidance__v__ref_8h.html" title="Reference generation for vertical guidance." alt="" coords="994,394,1193,434"/>
-<area shape="poly" title=" " alt="" coords="671,234,804,282,933,336,1042,386,1040,391,931,341,802,286,669,239"/>
-<area shape="rect" href="guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance." alt="" coords="288,284,451,339"/>
-<area shape="poly" title=" " alt="" coords="565,239,451,282,450,277,563,234"/>
-<area shape="poly" title=" " alt="" coords="994,435,629,497,628,492,993,430"/>
-<area shape="poly" title=" " alt="" coords="1129,432,1374,568,1371,573,1126,437"/>
-<area shape="poly" title=" " alt="" coords="1029,436,989,458,972,473,958,490,955,510,954,543,956,578,961,602,975,623,992,640,988,644,970,626,956,604,951,578,949,543,950,509,954,488,968,469,986,454,1026,432"/>
-<area shape="poly" title=" " alt="" coords="1112,433,1131,458,1149,488,1163,527,1171,563,1166,565,1158,529,1144,490,1127,461,1108,436"/>
-<area shape="poly" title=" " alt="" coords="366,339,358,389,353,455,355,529,360,566,369,602,378,621,391,639,387,642,374,624,364,604,355,567,349,530,348,455,353,388,361,338"/>
+<area shape="poly" title=" " alt="" coords="567,42,476,50,377,63,290,83,257,96,234,110,205,140,182,176,165,214,152,254,136,330,131,388,126,387,131,329,146,252,160,212,178,173,201,137,230,106,255,91,289,78,376,58,475,45,566,36"/>
+<area shape="rect" href="quaternion__filter_8h.html" title="Quaternion second order filter." alt="" coords="1449,394,1583,434"/>
+<area shape="poly" title=" " alt="" coords="730,58,857,106,1060,190,1260,282,1469,385,1467,390,1258,286,1058,195,855,110,728,63"/>
+<area shape="rect" href="guidance_8h.html" title=" " alt="" coords="693,108,843,148"/>
+<area shape="poly" title=" " alt="" coords="689,58,736,97,733,101,685,62"/>
+<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="695,291,846,331"/>
+<area shape="poly" title=" " alt="" coords="655,60,654,97,657,142,666,190,684,235,703,260,728,281,724,285,699,264,679,237,661,191,652,142,649,97,650,60"/>
+<area shape="poly" title=" " alt="" coords="607,522,616,559,616,582,609,604,587,630,559,648,556,644,583,626,604,601,610,581,611,560,602,523"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1362,577,1518,603"/>
+<area shape="poly" title=" " alt="" coords="691,516,1348,577,1348,583,690,522"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="441,577,594,603"/>
+<area shape="poly" title=" " alt="" coords="590,524,541,570,538,566,586,520"/>
+<area shape="rect" title=" " alt="" coords="670,577,741,603"/>
+<area shape="poly" title=" " alt="" coords="617,520,680,567,677,571,614,524"/>
+<area shape="poly" title=" " alt="" coords="1362,600,559,662,558,656,1362,595"/>
+<area shape="rect" title=" " alt="" coords="1583,651,1646,676"/>
+<area shape="poly" title=" " alt="" coords="1469,600,1574,643,1572,648,1467,605"/>
+<area shape="rect" title=" " alt="" coords="1405,651,1475,676"/>
+<area shape="poly" title=" " alt="" coords="1443,603,1443,637,1437,637,1437,603"/>
+<area shape="rect" title=" " alt="" coords="1711,651,1779,676"/>
+<area shape="poly" title=" " alt="" coords="1490,600,1698,648,1697,654,1488,605"/>
+<area shape="poly" title=" " alt="" coords="520,603,520,637,515,637,515,603"/>
+<area shape="poly" title=" " alt="" coords="1595,524,1480,574,1478,569,1593,520"/>
+<area shape="poly" title=" " alt="" coords="1649,520,1676,534,1702,554,1717,577,1719,590,1714,604,1690,631,1660,649,1658,644,1687,627,1710,601,1714,590,1712,579,1698,557,1673,539,1646,524"/>
+<area shape="poly" title=" " alt="" coords="1656,520,1697,541,1718,557,1734,576,1746,606,1749,637,1744,637,1741,608,1730,579,1714,561,1695,546,1653,524"/>
+<area shape="rect" title=" " alt="" coords="1543,577,1700,603"/>
+<area shape="poly" title=" " alt="" coords="1623,522,1624,563,1618,564,1618,522"/>
+<area shape="poly" title=" " alt="" coords="136,425,156,460,189,508,232,558,257,581,284,600,332,625,384,641,434,651,477,657,476,662,433,656,383,646,330,629,281,605,254,585,228,562,185,511,152,463,132,428"/>
+<area shape="poly" title=" " alt="" coords="171,424,233,439,383,468,516,492,516,497,382,474,231,444,170,429"/>
+<area shape="poly" title=" " alt="" coords="1495,436,1448,474,1380,521,1300,568,1213,605,1155,619,1077,631,888,648,698,659,558,664,558,658,698,653,888,643,1076,626,1153,614,1211,600,1297,563,1377,517,1444,470,1492,432"/>
+<area shape="poly" title=" " alt="" coords="1539,432,1598,485,1595,489,1535,436"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="693,196,867,236"/>
+<area shape="poly" title=" " alt="" coords="773,148,778,182,773,183,768,149"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts." alt="" coords="442,196,617,236"/>
+<area shape="poly" title=" " alt="" coords="717,151,596,194,594,189,715,146"/>
+<area shape="poly" title=" " alt="" coords="715,238,669,258,626,286,551,353,524,383,501,414,481,446,464,483,432,578,429,590,432,601,452,626,479,644,476,648,449,630,427,604,423,590,427,577,459,481,477,444,496,411,519,380,547,349,622,282,666,254,713,234"/>
+<area shape="poly" title=" " alt="" coords="747,238,710,263,669,297,632,339,617,362,605,388,599,412,597,438,599,483,593,483,591,437,594,411,600,386,612,360,627,336,665,293,707,259,744,234"/>
+<area shape="poly" title=" " alt="" coords="868,218,1056,231,1170,243,1287,260,1398,282,1497,309,1540,325,1576,343,1606,363,1628,385,1639,409,1641,436,1638,462,1632,485,1627,483,1633,461,1636,436,1634,411,1623,388,1602,367,1573,348,1537,330,1495,314,1397,287,1286,265,1170,249,1056,237,867,223"/>
+<area shape="rect" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance." alt="" coords="1226,394,1425,434"/>
+<area shape="poly" title=" " alt="" coords="868,221,1057,243,1146,260,1182,270,1209,282,1240,303,1268,329,1309,380,1304,384,1264,332,1237,307,1207,286,1180,275,1145,266,1056,249,867,227"/>
+<area shape="rect" title=" " alt="" coords="917,577,1077,603"/>
+<area shape="poly" title=" " alt="" coords="868,226,944,244,1027,274,1067,295,1105,320,1138,350,1166,385,1178,407,1183,425,1182,441,1175,455,1151,473,1117,484,1080,490,1045,491,1009,492,1001,508,996,526,996,564,990,564,991,526,996,506,1007,487,1045,486,1079,484,1116,479,1149,469,1171,451,1176,440,1177,426,1173,409,1162,388,1134,354,1101,324,1064,299,1025,279,942,249,867,231"/>
+<area shape="poly" title=" " alt="" coords="781,236,777,278,771,277,775,236"/>
+<area shape="poly" title=" " alt="" coords="1226,435,1164,444,916,476,704,500,703,494,916,470,1164,439,1225,429"/>
+<area shape="poly" title=" " alt="" coords="1340,433,1427,564,1423,567,1336,436"/>
+<area shape="poly" title=" " alt="" coords="1386,432,1571,490,1570,495,1384,437"/>
+<area shape="rect" title=" " alt="" coords="1107,651,1194,676"/>
+<area shape="poly" title=" " alt="" coords="1318,436,1277,512,1247,559,1214,604,1176,643,1173,640,1210,601,1243,556,1272,509,1314,433"/>
+<area shape="poly" title=" " alt="" coords="1311,436,1264,484,1234,509,1200,532,1138,559,1076,577,1074,572,1136,554,1197,527,1230,505,1261,480,1307,432"/>
+<area shape="poly" title=" " alt="" coords="734,334,703,357,689,371,678,388,673,404,672,419,680,447,699,472,723,497,747,521,764,547,769,574,765,589,755,604,742,616,722,626,670,641,559,660,558,655,669,636,720,621,739,611,751,601,760,587,764,574,759,549,743,525,720,501,695,476,676,449,666,419,668,403,674,386,685,368,699,353,731,329"/>
+<area shape="poly" title=" " alt="" coords="713,334,671,356,651,371,634,388,620,411,611,436,603,483,598,483,606,435,616,409,630,385,647,367,668,352,711,329"/>
+<area shape="poly" title=" " alt="" coords="846,312,1037,318,1272,331,1385,341,1482,353,1555,367,1580,375,1596,385,1613,407,1622,433,1625,483,1620,483,1617,434,1608,409,1593,389,1578,380,1554,372,1481,358,1384,346,1272,337,1036,324,846,317"/>
+<area shape="poly" title=" " alt="" coords="819,329,862,352,901,385,926,421,939,453,948,487,965,528,985,564,981,567,960,530,943,489,934,455,921,423,897,388,859,357,817,334"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="961,387,1151,441"/>
+<area shape="poly" title=" " alt="" coords="825,329,969,379,967,384,823,334"/>
+<area shape="poly" title=" " alt="" coords="1025,444,908,534,846,577,798,605,735,628,669,645,559,661,558,656,668,639,733,623,796,600,843,573,905,529,1022,440"/>
+<area shape="poly" title=" " alt="" coords="961,437,670,496,669,491,960,432"/>
+<area shape="poly" title=" " alt="" coords="1152,428,1538,492,1537,497,1151,434"/>
+<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="1019,489,1186,529"/>
+<area shape="poly" title=" " alt="" coords="1072,440,1089,476,1085,478,1067,443"/>
+<area shape="poly" title=" " alt="" coords="1079,532,1026,571,1022,567,1076,527"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1102,577,1199,603"/>
+<area shape="poly" title=" " alt="" coords="1117,528,1139,564,1134,567,1112,531"/>
+<area shape="poly" title=" " alt="" coords="1153,603,1153,637,1148,637,1148,603"/>
+<area shape="poly" title=" " alt="" coords="443,228,412,236,381,248,353,264,329,286,309,315,302,343,304,413,304,510,309,540,322,565,342,587,367,605,424,633,478,651,476,656,422,638,364,610,339,591,318,568,304,541,299,511,299,413,297,343,304,313,325,282,350,260,379,243,410,231,441,223"/>
+<area shape="poly" title=" " alt="" coords="579,234,710,284,708,289,577,239"/>
+<area shape="rect" href="guidance__v__ref_8h.html" title="Reference generation for vertical guidance." alt="" coords="687,394,886,434"/>
+<area shape="poly" title=" " alt="" coords="554,234,686,337,751,384,747,388,682,341,551,238"/>
+<area shape="rect" href="guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance." alt="" coords="339,284,501,339"/>
+<area shape="poly" title=" " alt="" coords="509,238,463,277,460,273,505,234"/>
+<area shape="poly" title=" " alt="" coords="750,436,636,493,634,488,748,432"/>
+<area shape="poly" title=" " alt="" coords="887,429,1074,462,1199,487,1313,528,1405,569,1403,573,1311,533,1198,492,1073,467,886,435"/>
+<area shape="poly" title=" " alt="" coords="796,433,810,469,834,515,866,561,907,601,952,625,1001,642,1050,652,1094,658,1093,663,1049,658,1000,647,950,630,904,605,862,565,829,518,805,471,791,435"/>
+<area shape="poly" title=" " alt="" coords="808,432,855,477,914,527,970,568,967,572,910,531,851,481,804,436"/>
+<area shape="poly" title=" " alt="" coords="409,340,387,392,368,460,363,497,364,533,371,569,386,601,404,621,427,636,477,653,476,658,425,641,401,625,382,604,366,570,358,534,358,497,362,459,382,390,404,338"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -290,12 +295,8 @@ Variables</h2></td></tr>
 <tr class="separator:af19fdcf0b0b3ba9f2240c28403611248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeedd5797a15621483f6e842d1ef94fe4" id="r_aeedd5797a15621483f6e842d1ef94fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#aeedd5797a15621483f6e842d1ef94fe4">coordinated_turn_use_accel</a></td></tr>
 <tr class="separator:aeedd5797a15621483f6e842d1ef94fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19dc03ef4234ea423340bcc0c249e1cf" id="r_a19dc03ef4234ea423340bcc0c249e1cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="low__pass__filter_8h.html#a261eec07ae6099accb7c35876a97bf6f">Butterworth2LowPass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a19dc03ef4234ea423340bcc0c249e1cf">roll_filt</a></td></tr>
-<tr class="separator:a19dc03ef4234ea423340bcc0c249e1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6987b53838cf70902ed70ca11492c6a7" id="r_a6987b53838cf70902ed70ca11492c6a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="low__pass__filter_8h.html#a261eec07ae6099accb7c35876a97bf6f">Butterworth2LowPass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a6987b53838cf70902ed70ca11492c6a7">pitch_filt</a></td></tr>
-<tr class="separator:a6987b53838cf70902ed70ca11492c6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2b3f165493f064778112cb5a88ff493" id="r_aa2b3f165493f064778112cb5a88ff493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#aa2b3f165493f064778112cb5a88ff493">yaw_filt</a></td></tr>
-<tr class="separator:aa2b3f165493f064778112cb5a88ff493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0989bd293a50907ba957ba53d13d092f" id="r_a0989bd293a50907ba957ba53d13d092f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quaternion__filter_8h.html#ab1f87da8c9ae6d8b2affc3d59b80cf32">QuatButterworthLowPass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a0989bd293a50907ba957ba53d13d092f">quat_filt</a></td></tr>
+<tr class="separator:a0989bd293a50907ba957ba53d13d092f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more! </p>
@@ -314,7 +315,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00078">78</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00079">79</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -429,7 +430,7 @@ stall_protect_gain</td>
 <tr><td class="fieldname"><a id="aaa5e5cc47f88ebb19b02d133fe1458cfa7aae3fbb391ba627e5a7c2480e152c45" name="aaa5e5cc47f88ebb19b02d133fe1458cfa7aae3fbb391ba627e5a7c2480e152c45"></a>GUIDANCE_INDI_HYBRID_H_ACCEL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00059">59</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00060">60</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +451,7 @@ stall_protect_gain</td>
 <tr><td class="fieldname"><a id="a370fb4a08b3c9c93112023e930952007addb1d763f8485caa2aee3823bb65d64d" name="a370fb4a08b3c9c93112023e930952007addb1d763f8485caa2aee3823bb65d64d"></a>GUIDANCE_INDI_HYBRID_V_ACCEL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00065">65</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00066">66</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
 
 </div>
 </div>
@@ -517,9 +518,9 @@ stall_protect_gain</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">86</a> of file <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html">guidance_indi_hybrid_quadplane.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00055">accel_bodyz_filt</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="guidance__indi_8c_source.html#l00112">Gmat</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00916">guidance_indi_get_liftd()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c.html#acedb2156e6867b5b21a2b938b5e09728">GUIDANCE_INDI_PITCH_EFF_SCALING</a>, <a class="el" href="low__pass__filter_8h_source.html#l00158">SecondOrderLowPass::o</a>, <a class="el" href="guidance__indi_8c_source.html#l00108">pitch_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00107">roll_filt</a>, <a class="el" href="state_8h_source.html#l01598">stateGetAirspeed_f()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00281">v_gih</a>, and <a class="el" href="guidance__indi_8c_source.html#l00109">yaw_filt</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00055">accel_bodyz_filt</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00763">float_eulers_of_quat_zxy()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="guidance__indi_8c_source.html#l00111">Gmat</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00897">guidance_indi_get_liftd()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c.html#acedb2156e6867b5b21a2b938b5e09728">GUIDANCE_INDI_PITCH_EFF_SCALING</a>, <a class="el" href="low__pass__filter_8h_source.html#l00158">SecondOrderLowPass::o</a>, <a class="el" href="quaternion__filter_8h_source.html#l00035">QuatSecondOrderLowPass::quat</a>, <a class="el" href="guidance__indi_8c_source.html#l00109">quat_filt</a>, <a class="el" href="state_8h_source.html#l01598">stateGetAirspeed_f()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00278">v_gih</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00450">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00440">guidance_indi_run()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -527,13 +528,15 @@ stall_protect_gain</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h_a02524b5812e966b0dbe644d93b9147ed_cgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_a02524b5812e966b0dbe644d93b9147ed_cgraph" alt=""/></div>
 <map name="aguidance__indi__hybrid_8h_a02524b5812e966b0dbe644d93b9147ed_cgraph" id="aguidance__indi__hybrid_8h_a02524b5812e966b0dbe644d93b9147ed_cgraph">
-<area shape="rect" title="Perform WLS." alt="" coords="5,31,196,56"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="244,5,416,31"/>
-<area shape="poly" title=" " alt="" coords="196,30,230,26,231,32,196,35"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="257,55,403,80"/>
-<area shape="poly" title=" " alt="" coords="196,51,244,56,243,61,196,56"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="464,55,616,80"/>
-<area shape="poly" title=" " alt="" coords="404,65,450,65,450,70,404,70"/>
+<area shape="rect" title="Perform WLS." alt="" coords="5,55,196,80"/>
+<area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="244,5,428,31"/>
+<area shape="poly" title=" " alt="" coords="161,52,261,31,262,36,162,57"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="250,55,422,80"/>
+<area shape="poly" title=" " alt="" coords="196,65,236,65,236,70,196,70"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="263,104,409,129"/>
+<area shape="poly" title=" " alt="" coords="162,77,262,98,261,104,161,83"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="476,104,628,129"/>
+<area shape="poly" title=" " alt="" coords="410,114,463,114,463,119,410,119"/>
 </map>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -579,9 +582,9 @@ stall_protect_gain</td>
 
 <p>Call upon entering indi guidance. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00215">215</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00214">214</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00240">accely_filt</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00232">eulers_zxy</a>, <a class="el" href="guidance__indi_8c_source.html#l00106">filt_accel_ned</a>, <a class="el" href="guidance__indi_8c_source.html#l00156">filter_cutoff</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00763">float_eulers_of_quat_zxy()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00285">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00287">guidance_indi_hybrid_heading_sp</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="low__pass__filter_8h_source.html#l00313">init_butterworth_2_low_pass()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi_8c_source.html#l00108">pitch_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00243">previous_yaw_raw</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="guidance__indi_8c_source.html#l00107">roll_filt</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01314">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01302">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="guidance__indi_8c_source.html#l00105">thrust_act</a>, <a class="el" href="guidance__indi_8c_source.html#l00104">thrust_dyn</a>, <a class="el" href="guidance__indi_8c_source.html#l00110">thrust_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00164">thrust_in</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00242">yaw_delta_filt</a>, and <a class="el" href="guidance__indi_8c_source.html#l00109">yaw_filt</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00239">accely_filt</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00233">eulers_zxy</a>, <a class="el" href="guidance__indi_8c_source.html#l00107">filt_accel_ned</a>, <a class="el" href="guidance__indi_8c_source.html#l00155">filter_cutoff</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00763">float_eulers_of_quat_zxy()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00240">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00282">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00284">guidance_indi_hybrid_heading_sp</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00133">RotorcraftNavigation::heading</a>, <a class="el" href="low__pass__filter_8h_source.html#l00313">init_butterworth_2_low_pass()</a>, <a class="el" href="quaternion__filter_8h_source.html#l00144">init_quat_butterworth_low_pass()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="guidance__indi_8c_source.html#l00109">quat_filt</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="state_8h_source.html#l01314">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01302">stateGetNedToBodyQuat_f()</a>, <a class="el" href="guidance__indi_8c_source.html#l00106">thrust_act</a>, <a class="el" href="guidance__indi_8c_source.html#l00105">thrust_dyn</a>, <a class="el" href="guidance__indi_8c_source.html#l00108">thrust_filt</a>, and <a class="el" href="guidance__indi_8c_source.html#l00163">thrust_in</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -589,33 +592,37 @@ stall_protect_gain</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h_a638dd6a545987ce3e0a8c8cef1e3481c_cgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_a638dd6a545987ce3e0a8c8cef1e3481c_cgraph" alt=""/></div>
 <map name="aguidance__indi__hybrid_8h_a638dd6a545987ce3e0a8c8cef1e3481c_cgraph" id="aguidance__indi__hybrid_8h_a638dd6a545987ce3e0a8c8cef1e3481c_cgraph">
-<area shape="rect" title="Call upon entering indi guidance." alt="" coords="5,92,159,117"/>
+<area shape="rect" title="Call upon entering indi guidance." alt="" coords="5,127,159,152"/>
 <area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="216,5,400,31"/>
-<area shape="poly" title=" " alt="" coords="104,90,150,65,206,41,234,32,236,37,208,46,152,70,107,94"/>
+<area shape="poly" title=" " alt="" coords="94,124,141,83,172,60,205,41,226,32,228,37,208,46,175,65,144,87,98,128"/>
 <area shape="rect" href="low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="237,55,379,95"/>
-<area shape="poly" title=" " alt="" coords="159,92,223,84,224,89,159,97"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="207,120,409,145"/>
-<area shape="poly" title=" " alt="" coords="159,112,193,116,193,121,159,117"/>
-<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="211,169,405,195"/>
-<area shape="poly" title=" " alt="" coords="111,115,208,154,238,163,236,168,206,159,109,120"/>
+<area shape="poly" title=" " alt="" coords="127,124,223,97,225,102,129,129"/>
+<area shape="rect" href="quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851" title="Init a second order quaternion Butterworth filter." alt="" coords="227,119,389,159"/>
+<area shape="poly" title=" " alt="" coords="159,137,213,137,213,142,159,142"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="207,184,409,209"/>
+<area shape="poly" title=" " alt="" coords="133,149,207,169,244,178,243,183,206,174,131,155"/>
+<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="211,233,405,259"/>
+<area shape="poly" title=" " alt="" coords="101,150,147,184,208,218,231,227,229,232,206,223,144,188,97,154"/>
 <area shape="rect" href="low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="457,63,661,88"/>
 <area shape="poly" title=" " alt="" coords="379,73,443,73,443,78,379,78"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,120,643,145"/>
-<area shape="poly" title=" " alt="" coords="409,130,462,130,462,135,409,135"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="709,120,883,145"/>
-<area shape="poly" title=" " alt="" coords="644,130,695,130,695,135,644,135"/>
-<area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="931,71,1086,96"/>
-<area shape="poly" title=" " alt="" coords="851,117,939,97,940,102,852,123"/>
-<area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="931,120,1087,145"/>
-<area shape="poly" title=" " alt="" coords="883,130,917,130,917,135,883,135"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="480,169,639,195"/>
-<area shape="poly" title=" " alt="" coords="405,179,466,179,466,185,405,185"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="714,169,878,195"/>
-<area shape="poly" title=" " alt="" coords="639,179,700,179,700,185,639,185"/>
-<area shape="rect" href="group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="931,169,1086,195"/>
-<area shape="poly" title=" " alt="" coords="879,179,918,179,918,185,879,185"/>
-<area shape="rect" href="group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="936,219,1081,244"/>
-<area shape="poly" title=" " alt="" coords="852,192,940,213,939,218,851,197"/>
+<area shape="rect" href="quaternion__filter_8h.html#af07543e57f2906b5e6fb75b5aa0d0cf2" title="Init second order quaternion low pass filter." alt="" coords="473,119,646,159"/>
+<area shape="poly" title=" " alt="" coords="389,137,459,137,459,142,389,142"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,184,643,209"/>
+<area shape="poly" title=" " alt="" coords="409,194,462,194,462,199,409,199"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="709,184,883,209"/>
+<area shape="poly" title=" " alt="" coords="644,194,695,194,695,199,644,199"/>
+<area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="931,135,1086,160"/>
+<area shape="poly" title=" " alt="" coords="851,181,939,161,940,166,852,187"/>
+<area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="931,184,1087,209"/>
+<area shape="poly" title=" " alt="" coords="883,194,917,194,917,199,883,199"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="480,233,639,259"/>
+<area shape="poly" title=" " alt="" coords="405,243,466,243,466,249,405,249"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="714,233,878,259"/>
+<area shape="poly" title=" " alt="" coords="639,243,700,243,700,249,639,249"/>
+<area shape="rect" href="group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="931,233,1086,259"/>
+<area shape="poly" title=" " alt="" coords="879,243,918,243,918,249,879,249"/>
+<area shape="rect" href="group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="936,283,1081,308"/>
+<area shape="poly" title=" " alt="" coords="852,256,940,277,939,282,851,261"/>
 </map>
 </div>
 
@@ -687,9 +694,9 @@ stall_protect_gain</td>
 
 <p>Init function. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00200">200</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00199">199</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00476">accel_sp_cb()</a>, <a class="el" href="guidance__indi_8c_source.html#l00065">accel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00240">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00236">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00284">filter_cutoff</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00525">FLOAT_EULERS_ZERO</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00249">Ga</a>, <a class="el" href="guidance__indi_8c_source.html#l00162">guidance_euler_cmd</a>, <a class="el" href="guidance__indi_8c_source.html#l00063">GUIDANCE_INDI_ACCEL_SP_ID</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00285">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00295">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00313">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00238">pitch_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00243">previous_yaw_raw</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00237">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00306">send_eff_mat_guid_indi_hybrid()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00313">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi_8c_source.html#l00173">send_indi_guidance()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00234">thrust_dyn</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00239">thrust_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00163">thrust_sp</a>, <a class="el" href="stabilization_8h_source.html#l00184">THRUST_SP_SET_ZERO</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00948">vel_sp_cb()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00297">vel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00242">yaw_delta_filt</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00244">yaw_filt</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00469">accel_sp_cb()</a>, <a class="el" href="guidance__indi_8c_source.html#l00066">accel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00239">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00237">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00281">filter_cutoff</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00525">FLOAT_EULERS_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00368">float_quat_identity()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00246">Ga</a>, <a class="el" href="guidance__indi_8c_source.html#l00161">guidance_euler_cmd</a>, <a class="el" href="guidance__indi_8c_source.html#l00064">GUIDANCE_INDI_ACCEL_SP_ID</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00240">guidance_indi_airspeed_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00282">guidance_indi_airspeed_filt_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00292">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00313">init_butterworth_2_low_pass()</a>, <a class="el" href="quaternion__filter_8h_source.html#l00144">init_quat_butterworth_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00241">quat_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00303">send_eff_mat_guid_indi_hybrid()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00310">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi_8c_source.html#l00172">send_indi_guidance()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00235">thrust_dyn</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00238">thrust_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00162">thrust_sp</a>, <a class="el" href="stabilization_8h_source.html#l00184">THRUST_SP_SET_ZERO</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00929">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00294">vel_sp_ev</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -697,26 +704,32 @@ stall_protect_gain</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph" alt=""/></div>
 <map name="aguidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph" id="aguidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph">
-<area shape="rect" title="Init function." alt="" coords="5,177,145,202"/>
-<area shape="rect" href="guidance__indi_8c.html#a659d41f80c61b6fcd927f5ded2b1ca55" title="ABI callback that obtains the acceleration setpoint from telemetry flag: 0 &#45;&gt; 2D, 1 &#45;&gt; 3D." alt="" coords="245,70,345,95"/>
-<area shape="poly" title=" " alt="" coords="90,174,134,140,192,106,230,92,232,97,194,110,137,145,93,178"/>
+<area shape="rect" title="Init function." alt="" coords="5,234,145,259"/>
+<area shape="rect" href="guidance__indi_8c.html#a659d41f80c61b6fcd927f5ded2b1ca55" title="ABI callback that obtains the acceleration setpoint from telemetry flag: 0 &#45;&gt; 2D, 1 &#45;&gt; 3D." alt="" coords="245,462,345,487"/>
+<area shape="poly" title=" " alt="" coords="83,259,95,297,117,348,150,403,171,427,195,449,213,459,232,465,230,471,210,464,192,453,167,431,146,406,113,351,90,299,78,260"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="223,70,367,95"/>
+<area shape="poly" title=" " alt="" coords="82,232,123,171,154,136,192,106,208,97,211,102,195,110,158,140,127,174,86,235"/>
 <area shape="rect" href="low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="224,5,365,45"/>
-<area shape="poly" title=" " alt="" coords="82,175,124,118,156,84,192,55,210,45,213,50,195,60,159,88,129,121,87,178"/>
-<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="193,119,396,145"/>
-<area shape="poly" title=" " alt="" coords="121,174,193,155,229,145,230,151,194,160,123,179"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#ae3bf6677065e6f1b410b585994fcf3e0" title=" " alt="" coords="207,169,383,209"/>
-<area shape="poly" title=" " alt="" coords="146,187,193,187,193,192,146,192"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70" title=" " alt="" coords="219,233,370,273"/>
-<area shape="poly" title=" " alt="" coords="121,200,213,227,211,232,119,205"/>
-<area shape="rect" href="guidance__indi_8c.html#afe0973163d037300cb8ea5f26a18046f" title=" " alt="" coords="219,298,370,323"/>
-<area shape="poly" title=" " alt="" coords="90,200,134,241,163,264,195,283,214,291,212,296,192,288,160,268,130,245,86,204"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8" title="ABI callback that obtains the velocity setpoint from a module." alt="" coords="251,347,338,373"/>
-<area shape="poly" title=" " alt="" coords="85,201,125,265,157,303,195,334,216,344,239,351,237,356,214,349,192,338,153,306,121,268,81,204"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="473,209,619,234"/>
-<area shape="poly" title=" " alt="" coords="346,88,397,106,434,126,469,151,523,197,520,201,465,155,431,131,395,110,344,93"/>
+<area shape="poly" title=" " alt="" coords="78,233,92,198,116,150,149,99,169,76,192,55,210,44,213,48,195,59,173,80,153,103,120,153,97,200,83,235"/>
+<area shape="rect" href="quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851" title="Init a second order quaternion Butterworth filter." alt="" coords="213,120,376,160"/>
+<area shape="poly" title=" " alt="" coords="93,232,137,202,192,171,212,162,214,167,195,176,139,207,96,236"/>
+<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="193,234,396,259"/>
+<area shape="poly" title=" " alt="" coords="146,244,180,244,180,249,146,249"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#ae3bf6677065e6f1b410b585994fcf3e0" title=" " alt="" coords="207,284,383,324"/>
+<area shape="poly" title=" " alt="" coords="125,257,205,278,204,283,124,262"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70" title=" " alt="" coords="219,348,370,388"/>
+<area shape="poly" title=" " alt="" coords="92,257,136,295,195,334,209,341,207,345,192,338,132,299,88,261"/>
+<area shape="rect" href="guidance__indi_8c.html#afe0973163d037300cb8ea5f26a18046f" title=" " alt="" coords="219,413,370,438"/>
+<area shape="poly" title=" " alt="" coords="85,258,125,326,156,365,195,398,208,405,205,410,192,402,153,368,120,329,80,261"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8" title="ABI callback that obtains the velocity setpoint from a module." alt="" coords="251,185,338,210"/>
+<area shape="poly" title=" " alt="" coords="132,231,237,207,238,213,133,237"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="473,323,619,349"/>
+<area shape="poly" title=" " alt="" coords="344,465,395,448,431,428,466,403,521,356,524,360,469,407,434,432,397,453,346,470"/>
 <area shape="rect" href="low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="444,13,648,38"/>
 <area shape="poly" title=" " alt="" coords="366,23,430,23,430,28,366,28"/>
-<area shape="poly" title=" " alt="" coords="338,351,366,344,395,334,431,313,466,289,521,242,524,246,469,293,434,317,397,338,368,349,339,357"/>
+<area shape="rect" href="quaternion__filter_8h.html#af07543e57f2906b5e6fb75b5aa0d0cf2" title="Init second order quaternion low pass filter." alt="" coords="459,120,633,160"/>
+<area shape="poly" title=" " alt="" coords="376,137,446,137,446,143,376,143"/>
+<area shape="poly" title=" " alt="" coords="339,202,368,209,397,220,434,241,469,265,523,312,520,316,465,270,431,246,395,225,366,214,338,207"/>
 </map>
 </div>
 
@@ -765,11 +778,11 @@ stall_protect_gain</td>
 <dl class="section return"><dt>Returns</dt><dd>stabilization setpoint structure</dd></dl>
 <p>main indi guidance function </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00249">249</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00246">246</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00240">accely_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00152">control_increment</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00252">du_gih</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00250">euler_cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00232">eulers_zxy</a>, <a class="el" href="guidance__indi_8c_source.html#l00106">filt_accel_ned</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00099">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00730">float_eulers_of_quat_yxz()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00763">float_eulers_of_quat_zxy()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00866">float_mat3_mult()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00832">float_mat_inv_3d()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00383">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00540">float_quat_of_eulers_yxz()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00512">float_quat_of_eulers_zxy()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00307">g1g2</a>, <a class="el" href="guidance__indi_8c_source.html#l00150">Ga</a>, <a class="el" href="guidance__indi_8c_source.html#l00151">Ga_inv</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00226">gih_coordinated_turn_max_airspeed</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00225">gih_coordinated_turn_min_airspeed</a>, <a class="el" href="guidance__indi_8c_source.html#l00112">Gmat</a>, <a class="el" href="guidance__indi_8c_source.html#l00162">guidance_euler_cmd</a>, <a class="el" href="guidance__indi_8h.html#a46b41a3e4cedb40681d8881ef31871f4">guidance_indi_calcG()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00287">guidance_indi_hybrid_heading_sp</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00131">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi_8c_source.html#l00157">guidance_indi_max_bank</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8h_source.html#l00032">GUIDANCE_INDI_MAX_PITCH</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00062">GUIDANCE_INDI_MAX_PUSHER_INCREMENT</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">guidance_indi_min_pitch</a>, <a class="el" href="guidance__indi_8h_source.html#l00063">GUIDANCE_INDI_NU</a>, <a class="el" href="guidance__indi_8h_source.html#l00058">GUIDANCE_INDI_NV</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00880">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00109">guidance_indi_set_wls_settings()</a>, <a class="el" href="guidance__indi_8h.html#ab8b7c1a3381bbab7edc1c3685cb0f7dc">guidance_indi_specific_force_gain</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra_8h_source.html#l00489">MAT33_INV</a>, <a class="el" href="pprz__algebra_8h_source.html#l00463">MAT33_VECT3_MUL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="low__pass__filter_8h_source.html#l00158">SecondOrderLowPass::o</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi_8c_source.html#l00108">pitch_filt</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="guidance__indi_8c_source.html#l00107">roll_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">sp_accel</a>, <a class="el" href="stabilization_8c_source.html#l00607">stab_sp_from_quat_f()</a>, <a class="el" href="stabilization_8c_source.html#l00617">stab_sp_from_quat_ff_rates_f()</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00231">stabilization_attitude_get_heading_f()</a>, <a class="el" href="state_8h_source.html#l01598">stateGetAirspeed_f()</a>, <a class="el" href="state_8h_source.html#l01314">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01302">stateGetNedToBodyQuat_f()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00158">take_heading_control</a>, <a class="el" href="stabilization_8c_source.html#l00766">th_sp_from_incr_vect_f()</a>, <a class="el" href="stabilization_8c_source.html#l00690">th_sp_from_thrust_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="stabilization_8h_source.html#l00174">THRUST_AXIS_Z</a>, <a class="el" href="guidance__indi_8c_source.html#l00110">thrust_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00164">thrust_in</a>, <a class="el" href="guidance__indi_8c_source.html#l00163">thrust_sp</a>, <a class="el" href="guidance__indi_8c_source.html#l00165">thrust_vect</a>, <a class="el" href="stabilization_8h_source.html#l00109">Stabilization::transition_ratio</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00281">v_gih</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="wls__alloc_8c_source.html#l00119">wls_alloc()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="guidance__indi_8c_source.html#l00109">yaw_filt</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00239">accely_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00151">control_increment</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00249">du_gih</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00247">euler_cmd</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00233">eulers_zxy</a>, <a class="el" href="guidance__indi_8c_source.html#l00107">filt_accel_ned</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00099">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00730">float_eulers_of_quat_yxz()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00763">float_eulers_of_quat_zxy()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00866">float_mat3_mult()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00832">float_mat_inv_3d()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00383">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00540">float_quat_of_eulers_yxz()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00512">float_quat_of_eulers_zxy()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00307">g1g2</a>, <a class="el" href="guidance__indi_8c_source.html#l00149">Ga</a>, <a class="el" href="guidance__indi_8c_source.html#l00150">Ga_inv</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00227">gih_coordinated_turn_max_airspeed</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00226">gih_coordinated_turn_min_airspeed</a>, <a class="el" href="guidance__indi_8c_source.html#l00111">Gmat</a>, <a class="el" href="guidance__indi_8c_source.html#l00161">guidance_euler_cmd</a>, <a class="el" href="guidance__indi_8h.html#af426543bc8908c0242cfa37ef5c0e9d3">guidance_indi_calcG()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00284">guidance_indi_hybrid_heading_sp</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00134">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi_8c_source.html#l00156">guidance_indi_max_bank</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8h_source.html#l00032">GUIDANCE_INDI_MAX_PITCH</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00063">GUIDANCE_INDI_MAX_PUSHER_INCREMENT</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00220">guidance_indi_min_pitch</a>, <a class="el" href="guidance__indi_8h_source.html#l00063">GUIDANCE_INDI_NU</a>, <a class="el" href="guidance__indi_8h_source.html#l00058">GUIDANCE_INDI_NV</a>, <a class="el" href="guidance__indi_8c_source.html#l00456">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00871">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00103">guidance_indi_set_wls_settings()</a>, <a class="el" href="guidance__indi_8h.html#ab8b7c1a3381bbab7edc1c3685cb0f7dc">guidance_indi_specific_force_gain</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra_8h_source.html#l00489">MAT33_INV</a>, <a class="el" href="pprz__algebra_8h_source.html#l00463">MAT33_VECT3_MUL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="low__pass__filter_8h_source.html#l00158">SecondOrderLowPass::o</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="quaternion__filter_8h_source.html#l00035">QuatSecondOrderLowPass::quat</a>, <a class="el" href="guidance__indi_8c_source.html#l00109">quat_filt</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="guidance__indi_8c_source.html#l00074">sp_accel</a>, <a class="el" href="stabilization_8c_source.html#l00607">stab_sp_from_quat_f()</a>, <a class="el" href="stabilization_8c_source.html#l00617">stab_sp_from_quat_ff_rates_f()</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00231">stabilization_attitude_get_heading_f()</a>, <a class="el" href="state_8h_source.html#l01598">stateGetAirspeed_f()</a>, <a class="el" href="state_8h_source.html#l01314">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01302">stateGetNedToBodyQuat_f()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00159">take_heading_control</a>, <a class="el" href="stabilization_8c_source.html#l00766">th_sp_from_incr_vect_f()</a>, <a class="el" href="stabilization_8c_source.html#l00690">th_sp_from_thrust_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="stabilization_8h_source.html#l00174">THRUST_AXIS_Z</a>, <a class="el" href="guidance__indi_8c_source.html#l00108">thrust_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00163">thrust_in</a>, <a class="el" href="guidance__indi_8c_source.html#l00162">thrust_sp</a>, <a class="el" href="guidance__indi_8c_source.html#l00164">thrust_vect</a>, <a class="el" href="stabilization_8h_source.html#l00109">Stabilization::transition_ratio</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00278">v_gih</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="wls__alloc_8c_source.html#l00119">wls_alloc()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00784">guidance_indi_run_mode()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00407">guidance_indi_run_mode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00776">guidance_indi_run_mode()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00403">guidance_indi_run_mode()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -777,108 +790,116 @@ stall_protect_gain</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h_af4d00187ad311670f06d0dbbd8acb278_cgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_af4d00187ad311670f06d0dbbd8acb278_cgraph" alt=""/></div>
 <map name="aguidance__indi__hybrid_8h_af4d00187ad311670f06d0dbbd8acb278_cgraph" id="aguidance__indi__hybrid_8h_af4d00187ad311670f06d0dbbd8acb278_cgraph">
-<area shape="rect" title=" " alt="" coords="5,508,145,533"/>
-<area shape="rect" href="group__math__algebra__float.html#ga51ee5751e95d570af589d1ba282873f3" title="euler rotation &#39;YXZ&#39; This function calculates from a quaternion the Euler angles with the order YXZ,..." alt="" coords="199,5,383,31"/>
-<area shape="poly" title=" " alt="" coords="75,507,87,415,110,274,126,201,145,133,167,78,191,40,195,36,199,40,195,44,171,80,150,135,131,202,115,275,92,416,81,508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="199,55,383,80"/>
-<area shape="poly" title=" " alt="" coords="76,507,89,423,113,298,129,232,148,172,168,123,191,90,196,86,199,90,195,93,173,125,153,174,134,234,118,299,94,424,81,508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2b3d606f3de34cc88ff84e90bc020890" title="Multiply 3D matrix with vector." alt="" coords="226,104,355,129"/>
-<area shape="poly" title=" " alt="" coords="74,508,76,443,90,343,105,288,126,234,154,183,192,139,212,125,215,130,195,143,159,186,131,236,110,290,96,344,82,443,79,508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga6d58f107be8a5711c13f777d10936cb4" title="3x3 matrix inverse" alt="" coords="223,153,358,179"/>
-<area shape="poly" title=" " alt="" coords="74,508,80,450,96,364,111,316,131,269,158,226,192,188,209,176,212,181,195,192,162,229,136,272,116,318,102,365,85,451,80,508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="211,203,370,228"/>
-<area shape="poly" title=" " alt="" coords="75,507,83,457,103,384,118,344,137,305,162,269,192,237,197,233,201,237,195,241,166,272,142,308,123,346,108,385,89,458,81,508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga6942f483aa41ff543526fc1a5512911b" title="quat from euler rotation &#39;YXZ&#39; This function calculates a quaternion from Euler angles with the order..." alt="" coords="199,252,383,277"/>
-<area shape="poly" title=" " alt="" coords="77,507,88,464,109,405,143,341,165,312,192,287,198,282,202,286,195,291,169,315,147,344,114,407,93,466,82,508"/>
-<area shape="rect" href="group__math__algebra__float.html#ga74fd99d5a32d19e217dd21fa1ce3fd53" title="quat from euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="199,301,383,327"/>
-<area shape="poly" title=" " alt="" coords="79,507,92,472,116,426,149,377,169,355,192,336,200,331,203,335,195,340,173,359,153,381,120,429,97,474,84,509"/>
-<area shape="rect" href="guidance__indi_8h.html#a46b41a3e4cedb40681d8881ef31871f4" title=" " alt="" coords="213,351,368,376"/>
-<area shape="poly" title=" " alt="" coords="82,506,123,448,155,414,192,385,204,379,206,383,195,390,159,418,128,451,86,509"/>
-<area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html#ac24605ed3b2910b6b5767a691516e073" title="Perform WLS." alt="" coords="195,400,386,425"/>
-<area shape="poly" title=" " alt="" coords="92,506,136,475,192,442,229,427,231,432,195,447,139,479,95,510"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="464,451,611,476"/>
-<area shape="poly" title=" " alt="" coords="115,505,193,486,328,470,450,462,451,468,329,475,194,491,116,511"/>
-<area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="211,501,371,541"/>
-<area shape="poly" title=" " alt="" coords="146,518,197,518,197,523,146,523"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="198,565,383,605"/>
-<area shape="poly" title=" " alt="" coords="120,531,210,558,209,563,118,536"/>
-<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a0437073281e5d806e8471ffbc2c000b4" title=" " alt="" coords="207,629,375,669"/>
-<area shape="poly" title=" " alt="" coords="91,532,135,572,195,614,207,621,205,626,192,619,131,576,87,536"/>
-<area shape="rect" href="stabilization_8c.html#a66f4de42924ea662ae4f03e04c78d4bf" title=" " alt="" coords="211,693,370,719"/>
-<area shape="poly" title=" " alt="" coords="85,532,100,562,124,602,156,643,195,679,207,686,204,690,192,683,152,647,119,605,95,565,80,535"/>
-<area shape="rect" href="stabilization_8c.html#a5bc93e5c06fb4401d9b0e54042f3d57a" title=" " alt="" coords="209,743,372,783"/>
-<area shape="poly" title=" " alt="" coords="83,533,96,571,118,623,151,679,172,705,195,728,203,734,200,738,192,732,168,709,147,682,114,626,91,573,78,534"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="Get attitude heading as float (avoiding jumps)" alt="" coords="211,807,371,847"/>
-<area shape="poly" title=" " alt="" coords="81,533,90,582,110,652,125,690,144,727,167,763,195,793,201,798,198,802,191,797,163,766,139,730,120,692,105,653,85,583,76,534"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="436,819,639,844"/>
-<area shape="poly" title=" " alt="" coords="79,533,81,595,95,685,110,734,130,781,158,823,195,857,231,876,270,887,312,890,354,887,433,870,496,847,498,852,434,875,354,892,312,895,270,892,229,881,192,862,154,826,125,783,104,736,90,686,76,595,74,534"/>
-<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="193,923,388,948"/>
-<area shape="poly" title=" " alt="" coords="79,534,83,598,97,697,112,751,132,806,160,857,195,901,213,915,209,919,191,905,155,859,127,808,107,753,92,698,77,599,74,534"/>
-<area shape="rect" href="stabilization_8c.html#a5ad2f16e91577fd7ea31db87f9d79147" title=" " alt="" coords="204,972,377,997"/>
-<area shape="poly" title=" " alt="" coords="81,533,94,618,118,747,134,813,152,874,173,924,195,958,201,963,198,967,191,961,168,927,147,876,129,815,113,748,88,619,76,534"/>
-<area shape="rect" href="stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="215,1021,366,1047"/>
-<area shape="poly" title=" " alt="" coords="81,533,92,627,115,770,131,845,149,913,171,969,195,1007,205,1015,201,1019,191,1010,166,972,144,915,126,846,110,771,87,627,75,534"/>
-<area shape="rect" href="wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="249,1071,332,1096"/>
-<area shape="poly" title=" " alt="" coords="80,533,90,636,112,794,128,876,147,952,169,1015,182,1038,195,1056,214,1069,236,1077,235,1082,212,1074,191,1060,177,1041,164,1017,142,954,122,877,107,794,85,636,75,534"/>
-<area shape="rect" href="group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="473,203,601,228"/>
-<area shape="poly" title=" " alt="" coords="370,213,460,213,460,218,370,218"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="451,400,623,425"/>
-<area shape="poly" title=" " alt="" coords="386,410,438,410,438,415,386,415"/>
-<area shape="poly" title=" " alt="" coords="354,423,462,445,461,450,353,428"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="695,451,847,476"/>
-<area shape="poly" title=" " alt="" coords="611,461,681,461,681,466,611,466"/>
-<area shape="poly" title=" " alt="" coords="364,562,386,550,401,538,410,525,419,511,434,497,472,478,474,483,438,502,423,514,414,528,405,541,390,555,367,567"/>
-<area shape="rect" href="group__state__velocity.html#ga4c0971d022697106338036028a62c7fd" title="Get acceleration in Body coordinates (int)." alt="" coords="459,512,616,537"/>
-<area shape="poly" title=" " alt="" coords="371,562,435,546,469,538,470,543,437,551,372,567"/>
-<area shape="rect" href="group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="462,561,613,587"/>
-<area shape="poly" title=" " alt="" coords="383,578,448,575,448,581,384,583"/>
-<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="462,611,613,651"/>
-<area shape="poly" title=" " alt="" coords="384,600,449,612,448,617,383,605"/>
-<area shape="rect" href="group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="693,561,849,587"/>
-<area shape="poly" title=" " alt="" coords="613,571,679,571,679,577,613,577"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="915,561,1063,587"/>
-<area shape="poly" title=" " alt="" coords="849,571,901,571,901,577,849,577"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="1128,561,1276,587"/>
-<area shape="poly" title=" " alt="" coords="1064,571,1115,571,1115,577,1064,577"/>
-<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="690,611,851,651"/>
-<area shape="poly" title=" " alt="" coords="613,629,676,629,676,634,613,634"/>
-<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="470,676,605,701"/>
-<area shape="poly" title=" " alt="" coords="375,660,457,673,456,678,375,665"/>
-<area shape="poly" title=" " alt="" coords="371,826,422,827,422,832,371,831"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="687,819,855,844"/>
-<area shape="poly" title=" " alt="" coords="639,829,673,829,673,834,639,834"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="903,819,1076,844"/>
-<area shape="poly" title=" " alt="" coords="855,829,889,829,889,834,855,834"/>
-<area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1125,795,1279,820"/>
-<area shape="poly" title=" " alt="" coords="1076,819,1111,815,1111,820,1076,824"/>
-<area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1124,844,1280,869"/>
-<area shape="poly" title=" " alt="" coords="1076,839,1111,843,1110,848,1076,844"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="458,923,617,948"/>
-<area shape="poly" title=" " alt="" coords="388,933,444,933,444,938,388,938"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="689,923,853,948"/>
-<area shape="poly" title=" " alt="" coords="617,933,675,933,675,938,617,938"/>
-<area shape="rect" href="group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="912,885,1067,911"/>
-<area shape="poly" title=" " alt="" coords="845,920,901,910,902,916,846,925"/>
-<area shape="rect" href="group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="917,935,1062,960"/>
-<area shape="poly" title=" " alt="" coords="853,937,903,940,903,945,853,942"/>
-<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="469,1071,606,1096"/>
-<area shape="poly" title=" " alt="" coords="332,1081,455,1081,455,1086,332,1086"/>
-<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="732,1071,809,1096"/>
-<area shape="poly" title=" " alt="" coords="606,1081,718,1081,718,1086,606,1086"/>
-<area shape="rect" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e" title=" " alt="" coords="962,1008,1017,1033"/>
-<area shape="poly" title=" " alt="" coords="809,1069,902,1042,948,1029,949,1034,903,1047,810,1075"/>
-<area shape="rect" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2" title=" " alt="" coords="945,1057,1034,1083"/>
-<area shape="poly" title=" " alt="" coords="809,1078,931,1071,931,1076,810,1084"/>
-<area shape="rect" href="r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af" title=" " alt="" coords="937,1107,1042,1132"/>
-<area shape="poly" title=" " alt="" coords="810,1087,924,1106,923,1111,809,1092"/>
-<area shape="rect" href="r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6" title=" " alt="" coords="923,1156,1056,1181"/>
-<area shape="poly" title=" " alt="" coords="797,1094,846,1118,904,1142,925,1149,923,1155,902,1147,844,1122,795,1098"/>
-<area shape="rect" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149" title=" " alt="" coords="1169,984,1235,1009"/>
-<area shape="poly" title=" " alt="" coords="1017,1015,1155,999,1155,1005,1017,1020"/>
-<area shape="rect" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1" title=" " alt="" coords="1171,1033,1233,1059"/>
-<area shape="poly" title=" " alt="" coords="1017,1021,1158,1038,1157,1043,1017,1026"/>
-<area shape="rect" href="qr__solve_8c.html#afaa40152476be17052f2c425914e744e" title=" " alt="" coords="1328,984,1387,1009"/>
-<area shape="poly" title=" " alt="" coords="1235,994,1314,994,1314,999,1235,999"/>
+<area shape="rect" title=" " alt="" coords="5,611,145,636"/>
+<area shape="rect" href="group__math__algebra__float.html#ga51ee5751e95d570af589d1ba282873f3" title="euler rotation &#39;YXZ&#39; This function calculates from a quaternion the Euler angles with the order YXZ,..." alt="" coords="441,20,625,45"/>
+<area shape="poly" title=" " alt="" coords="75,610,82,502,102,334,117,246,137,165,161,99,176,74,192,56,223,34,257,19,294,9,332,5,406,5,470,15,469,20,405,11,332,10,295,15,259,24,225,39,195,60,180,78,166,102,142,167,122,247,107,334,88,503,80,611"/>
+<area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="441,119,625,144"/>
+<area shape="poly" title=" " alt="" coords="75,610,87,523,110,391,126,322,145,260,167,209,192,175,208,164,231,155,290,142,359,134,427,130,428,136,359,140,291,148,233,160,211,169,195,179,171,211,150,262,131,324,116,392,92,524,81,611"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2b3d606f3de34cc88ff84e90bc020890" title="Multiply 3D matrix with vector." alt="" coords="224,536,353,561"/>
+<area shape="poly" title=" " alt="" coords="102,608,192,570,217,563,219,568,194,575,104,613"/>
+<area shape="rect" href="group__math__algebra__float.html#ga6d58f107be8a5711c13f777d10936cb4" title="3x3 matrix inverse" alt="" coords="221,585,356,611"/>
+<area shape="poly" title=" " alt="" coords="145,612,207,605,208,610,146,618"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="913,575,1071,600"/>
+<area shape="poly" title=" " alt="" coords="85,609,127,563,158,539,192,521,244,507,287,507,384,521,432,530,686,560,899,578,899,584,685,565,432,535,384,526,287,512,245,512,194,526,161,543,131,567,88,612"/>
+<area shape="rect" href="group__math__algebra__float.html#ga6942f483aa41ff543526fc1a5512911b" title="quat from euler rotation &#39;YXZ&#39; This function calculates a quaternion from Euler angles with the order..." alt="" coords="197,635,381,660"/>
+<area shape="poly" title=" " alt="" coords="146,629,183,633,182,638,145,634"/>
+<area shape="rect" href="group__math__algebra__float.html#ga74fd99d5a32d19e217dd21fa1ce3fd53" title="quat from euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="197,684,381,709"/>
+<area shape="poly" title=" " alt="" coords="106,634,194,669,223,678,221,683,192,674,104,639"/>
+<area shape="rect" href="guidance__indi_8h.html#af426543bc8908c0242cfa37ef5c0e9d3" title=" " alt="" coords="211,733,366,759"/>
+<area shape="poly" title=" " alt="" coords="90,634,134,676,163,699,195,718,213,726,211,731,192,723,160,703,130,680,86,638"/>
+<area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html#ac24605ed3b2910b6b5767a691516e073" title="Perform WLS." alt="" coords="193,189,384,215"/>
+<area shape="poly" title=" " alt="" coords="74,610,78,546,94,447,108,392,129,337,156,284,191,237,218,218,221,223,195,241,161,287,134,339,113,394,99,448,83,546,79,611"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="460,217,607,243"/>
+<area shape="poly" title=" " alt="" coords="75,610,80,554,97,471,112,425,132,380,158,339,192,303,220,282,251,265,317,241,385,229,446,224,447,230,385,234,318,246,253,270,223,286,195,307,163,342,137,383,117,427,102,472,85,555,80,611"/>
+<area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="209,783,369,823"/>
+<area shape="poly" title=" " alt="" coords="86,635,127,698,158,735,195,768,206,775,203,779,192,772,154,739,122,701,81,638"/>
+<area shape="rect" href="guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="196,421,381,461"/>
+<area shape="poly" title=" " alt="" coords="82,609,124,547,155,510,192,477,212,465,215,469,195,482,159,514,128,550,86,612"/>
+<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="436,316,631,341"/>
+<area shape="poly" title=" " alt="" coords="75,610,81,558,99,484,114,444,134,406,160,371,192,343,225,324,260,311,297,303,335,300,408,302,470,311,470,316,407,307,335,305,298,309,261,316,227,329,195,347,164,375,139,409,119,447,104,486,87,559,80,611"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="196,357,381,397"/>
+<area shape="poly" title=" " alt="" coords="77,610,90,571,113,516,146,458,167,431,192,407,198,402,201,406,195,411,171,434,151,461,117,519,95,573,83,611"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#aec12bb04c715e33061730ed4df9dde04" title=" " alt="" coords="205,70,373,110"/>
+<area shape="poly" title=" " alt="" coords="75,610,88,517,112,373,128,297,147,227,168,169,191,128,205,116,209,119,195,132,172,171,152,229,133,298,117,374,93,517,81,611"/>
+<area shape="rect" href="stabilization_8c.html#a66f4de42924ea662ae4f03e04c78d4bf" title=" " alt="" coords="209,848,368,873"/>
+<area shape="poly" title=" " alt="" coords="82,635,95,674,117,728,150,785,171,811,195,833,205,840,202,844,192,837,167,815,146,788,112,730,90,676,77,637"/>
+<area shape="rect" href="stabilization_8c.html#a5bc93e5c06fb4401d9b0e54042f3d57a" title=" " alt="" coords="207,898,370,938"/>
+<area shape="poly" title=" " alt="" coords="81,636,91,682,112,748,146,820,168,853,195,883,202,889,199,893,191,887,164,857,141,823,107,750,86,683,76,637"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="Get attitude heading as float (avoiding jumps)" alt="" coords="209,1013,369,1053"/>
+<area shape="poly" title=" " alt="" coords="80,636,84,698,101,793,115,845,135,898,162,948,195,992,208,1003,205,1007,191,996,157,951,130,900,110,847,95,794,79,699,74,636"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="432,992,635,1017"/>
+<area shape="poly" title=" " alt="" coords="80,636,84,694,100,779,115,826,135,871,161,913,195,948,232,966,287,980,419,996,418,1001,286,985,230,971,192,952,157,916,130,874,110,828,95,781,79,695,74,636"/>
+<area shape="rect" href="stabilization_8c.html#a5ad2f16e91577fd7ea31db87f9d79147" title=" " alt="" coords="202,1077,375,1103"/>
+<area shape="poly" title=" " alt="" coords="81,636,94,721,118,851,134,918,152,979,173,1029,195,1063,201,1068,198,1072,191,1066,168,1032,147,981,129,919,113,852,88,722,76,637"/>
+<area shape="rect" href="stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="213,1127,364,1152"/>
+<area shape="poly" title=" " alt="" coords="81,636,92,730,115,874,131,949,149,1018,171,1075,195,1112,203,1119,200,1123,191,1116,166,1077,144,1020,125,950,110,875,87,731,75,637"/>
+<area shape="rect" href="wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="247,1176,330,1201"/>
+<area shape="poly" title=" " alt="" coords="80,636,90,738,111,898,127,981,146,1058,169,1121,182,1145,195,1163,213,1176,235,1183,233,1188,211,1180,191,1167,177,1148,164,1123,141,1060,122,982,106,899,85,739,75,636"/>
+<area shape="rect" href="group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="1147,575,1275,600"/>
+<area shape="poly" title=" " alt="" coords="1072,585,1134,585,1134,590,1072,590"/>
+<area shape="poly" title=" " alt="" coords="325,187,431,153,461,145,463,150,433,158,327,192"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="447,168,619,193"/>
+<area shape="poly" title=" " alt="" coords="384,191,433,187,434,192,384,196"/>
+<area shape="poly" title=" " alt="" coords="385,210,446,217,446,223,384,216"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="691,217,843,243"/>
+<area shape="poly" title=" " alt="" coords="607,227,677,227,677,233,607,233"/>
+<area shape="rect" href="group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="458,431,609,456"/>
+<area shape="poly" title=" " alt="" coords="382,439,444,440,444,445,381,444"/>
+<area shape="poly" title=" " alt="" coords="361,418,382,407,397,393,405,380,415,365,431,352,445,344,448,349,433,356,419,369,410,382,401,397,386,411,363,423"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="458,366,609,406"/>
+<area shape="poly" title=" " alt="" coords="378,418,444,403,445,408,379,423"/>
+<area shape="rect" href="quaternion__filter_8h.html#a00a25df8965a87832754be40ed51a7bf" title="Update second order quaternion Butterworth low pass filter state with a new value." alt="" coords="440,481,627,521"/>
+<area shape="poly" title=" " alt="" coords="372,458,438,475,437,480,370,463"/>
+<area shape="rect" href="group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="689,431,845,456"/>
+<area shape="poly" title=" " alt="" coords="609,441,675,441,675,446,609,446"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="918,377,1066,403"/>
+<area shape="poly" title=" " alt="" coords="821,428,924,403,925,408,822,433"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="687,316,846,341"/>
+<area shape="poly" title=" " alt="" coords="631,326,674,326,674,331,631,331"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="910,316,1074,341"/>
+<area shape="poly" title=" " alt="" coords="847,326,896,326,896,331,847,331"/>
+<area shape="rect" href="group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="1134,341,1289,367"/>
+<area shape="poly" title=" " alt="" coords="1074,336,1121,341,1120,346,1074,341"/>
+<area shape="rect" href="group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="1139,292,1284,317"/>
+<area shape="poly" title=" " alt="" coords="1074,317,1125,311,1126,317,1074,322"/>
+<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="686,366,847,406"/>
+<area shape="poly" title=" " alt="" coords="609,383,672,383,672,389,609,389"/>
+<area shape="rect" href="quaternion__filter_8h.html#a12247ce3405cab9e1222d9df6213262b" title="Update second order quaterion low pass filter state with a new value." alt="" coords="689,481,845,521"/>
+<area shape="poly" title=" " alt="" coords="627,498,675,498,675,503,627,503"/>
+<area shape="poly" title=" " alt="" coords="812,518,852,537,900,560,926,568,924,573,898,565,850,542,810,523"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf5b1b0d8dc344dd30ed573818c7b54dc" title="Quaternion derivative from rotational velocity." alt="" coords="912,525,1072,551"/>
+<area shape="poly" title=" " alt="" coords="846,511,902,521,901,526,845,516"/>
+<area shape="rect" href="group__math__algebra__float.html#ga4dad39bc71fee81ee8ca15406c70abb5" title="Composition (multiplication) of two quaternions." alt="" coords="913,427,1071,452"/>
+<area shape="poly" title=" " alt="" coords="836,478,898,461,927,453,929,458,899,466,838,483"/>
+<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="899,476,1085,501"/>
+<area shape="poly" title=" " alt="" coords="845,494,885,492,885,497,845,499"/>
+<area shape="poly" title=" " alt="" coords="306,355,358,303,393,275,431,252,447,245,449,250,433,256,396,279,362,307,309,358"/>
+<area shape="poly" title=" " alt="" coords="358,394,433,415,468,425,467,430,431,421,356,399"/>
+<area shape="poly" title=" " alt="" coords="381,356,454,341,455,347,382,361"/>
+<area shape="poly" title=" " alt="" coords="382,378,444,380,444,385,381,383"/>
+<area shape="poly" title=" " alt="" coords="364,395,386,407,401,422,410,437,419,451,434,465,445,472,443,477,430,470,415,455,406,439,397,425,382,411,362,399"/>
+<area shape="rect" href="group__state__velocity.html#ga4c0971d022697106338036028a62c7fd" title="Get acceleration in Body coordinates (int)." alt="" coords="455,267,612,292"/>
+<area shape="poly" title=" " alt="" coords="322,354,373,327,431,301,455,293,456,298,433,306,375,332,325,359"/>
+<area shape="poly" title=" " alt="" coords="372,68,465,46,466,51,374,73"/>
+<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="466,69,601,95"/>
+<area shape="poly" title=" " alt="" coords="373,85,452,82,453,87,373,90"/>
+<area shape="poly" title=" " alt="" coords="369,1021,418,1015,419,1021,369,1026"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="683,992,851,1017"/>
+<area shape="poly" title=" " alt="" coords="635,1002,669,1002,669,1007,635,1007"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="905,992,1079,1017"/>
+<area shape="poly" title=" " alt="" coords="851,1002,892,1002,892,1007,851,1007"/>
+<area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1134,1016,1289,1041"/>
+<area shape="poly" title=" " alt="" coords="1079,1012,1121,1016,1120,1021,1079,1017"/>
+<area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1133,967,1289,992"/>
+<area shape="poly" title=" " alt="" coords="1079,992,1119,987,1120,993,1079,997"/>
+<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="465,1176,602,1201"/>
+<area shape="poly" title=" " alt="" coords="331,1186,451,1186,451,1191,331,1191"/>
+<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="728,1176,805,1201"/>
+<area shape="poly" title=" " alt="" coords="602,1186,714,1186,714,1191,602,1191"/>
+<area shape="rect" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e" title=" " alt="" coords="965,1200,1019,1225"/>
+<area shape="poly" title=" " alt="" coords="806,1190,951,1206,951,1211,805,1195"/>
+<area shape="rect" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2" title=" " alt="" coords="947,1151,1037,1176"/>
+<area shape="poly" title=" " alt="" coords="805,1182,933,1167,934,1173,806,1187"/>
 </map>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -950,9 +971,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00784">784</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00776">776</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00222">ACCEL_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00773">bound_vz_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00647">compute_accel_from_speed_sp()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00168">get_sys_time_float()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00292">gi_speed_sp</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00110">gih_params</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00060">GUIDANCE_INDI_HYBRID_H_POS</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00061">GUIDANCE_INDI_HYBRID_H_SPEED</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00068">GUIDANCE_INDI_HYBRID_V_ACCEL</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00066">GUIDANCE_INDI_HYBRID_V_POS</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00067">GUIDANCE_INDI_HYBRID_V_SPEED</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00450">guidance_indi_run()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00299">indi_vel_sp</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00079">guidance_indi_hybrid_params::pos_gain</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00080">guidance_indi_hybrid_params::pos_gainz</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00220">SPEED_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00081">guidance_indi_hybrid_params::speed_gain</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00082">guidance_indi_hybrid_params::speed_gainz</a>, <a class="el" href="state_8h_source.html#l00839">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l01049">stateGetSpeedNed_f()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00300">time_of_vel_sp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00222">ACCEL_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00765">bound_vz_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00639">compute_accel_from_speed_sp()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00168">get_sys_time_float()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00289">gi_speed_sp</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00111">gih_params</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00061">GUIDANCE_INDI_HYBRID_H_POS</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00062">GUIDANCE_INDI_HYBRID_H_SPEED</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00069">GUIDANCE_INDI_HYBRID_V_ACCEL</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00067">GUIDANCE_INDI_HYBRID_V_POS</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00068">GUIDANCE_INDI_HYBRID_V_SPEED</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00440">guidance_indi_run()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00296">indi_vel_sp</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">POS_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00080">guidance_indi_hybrid_params::pos_gain</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00081">guidance_indi_hybrid_params::pos_gainz</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00220">SPEED_FLOAT_OF_BFP</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00082">guidance_indi_hybrid_params::speed_gain</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00083">guidance_indi_hybrid_params::speed_gainz</a>, <a class="el" href="state_8h_source.html#l00839">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l01049">stateGetSpeedNed_f()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00297">time_of_vel_sp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -960,118 +981,120 @@ stall_protect_gain</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h_a505237cd381745af8b20a0d896b81e87_cgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_a505237cd381745af8b20a0d896b81e87_cgraph" alt=""/></div>
 <map name="aguidance__indi__hybrid_8h_a505237cd381745af8b20a0d896b81e87_cgraph" id="aguidance__indi__hybrid_8h_a505237cd381745af8b20a0d896b81e87_cgraph">
-<area shape="rect" title=" " alt="" coords="5,326,189,351"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#abff8a99c2d28f03e60476e60abaf1354" title=" " alt="" coords="268,401,375,426"/>
-<area shape="poly" title=" " alt="" coords="138,349,270,394,269,399,136,354"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="242,255,401,295"/>
-<area shape="poly" title=" " alt="" coords="142,323,237,296,238,301,144,328"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="725,115,870,141"/>
-<area shape="poly" title=" " alt="" coords="109,324,159,276,239,210,288,176,340,143,395,115,453,93,506,81,550,80,648,93,673,99,697,105,717,110,716,115,695,111,671,104,648,99,549,85,507,86,454,98,397,120,343,148,290,180,242,214,163,280,113,327"/>
-<area shape="rect" href="group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="473,7,629,33"/>
-<area shape="poly" title=" " alt="" coords="98,325,109,272,132,196,150,155,173,116,202,80,236,50,261,35,289,23,346,8,405,3,459,4,459,10,405,8,347,14,290,28,264,39,239,54,205,83,178,119,155,158,137,198,114,273,103,326"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="251,775,391,801"/>
-<area shape="poly" title=" " alt="" coords="107,350,310,762,305,764,103,353"/>
-<area shape="rect" href="group__state__position.html#gaf0ea970c91b1d3ebc462f987f28bd3f0" title="Get position in local NED coordinates (float)." alt="" coords="237,1034,405,1059"/>
-<area shape="poly" title=" " alt="" coords="105,351,156,534,240,811,313,1020,308,1022,235,813,151,535,100,352"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="724,489,871,514"/>
-<area shape="poly" title=" " alt="" coords="375,420,715,483,714,489,374,426"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="955,489,1107,514"/>
-<area shape="poly" title=" " alt="" coords="871,499,941,499,941,504,871,504"/>
-<area shape="poly" title=" " alt="" coords="401,269,458,272,522,280,588,296,649,323,672,345,708,386,780,476,775,479,704,389,668,348,647,327,586,301,521,285,458,277,401,274"/>
-<area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="459,387,643,413"/>
-<area shape="poly" title=" " alt="" coords="345,293,393,333,455,372,475,381,473,386,452,377,390,337,342,297"/>
-<area shape="rect" href="group__math__algebra__float.html#gabb7bfed17957cbb1883f9fa31783bad3" title=" " alt="" coords="459,237,642,262"/>
-<area shape="poly" title=" " alt="" coords="400,263,446,258,446,263,401,269"/>
-<area shape="rect" href="rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="473,108,628,148"/>
-<area shape="poly" title=" " alt="" coords="339,253,387,205,418,180,452,158,465,151,467,156,455,162,422,184,391,209,343,256"/>
-<area shape="rect" href="rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="469,172,632,212"/>
-<area shape="poly" title=" " alt="" coords="372,252,452,221,474,214,476,219,454,226,374,257"/>
-<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="453,338,648,363"/>
-<area shape="poly" title=" " alt="" coords="383,292,454,316,499,331,497,336,452,321,382,297"/>
-<area shape="poly" title=" " alt="" coords="333,253,381,180,415,136,451,94,485,64,518,38,521,43,488,68,455,98,419,139,385,183,337,256"/>
-<area shape="poly" title=" " alt="" coords="628,125,711,125,711,131,628,131"/>
-<area shape="poly" title=" " alt="" coords="628,169,733,142,735,147,629,174"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="718,338,877,363"/>
-<area shape="poly" title=" " alt="" coords="648,348,704,348,704,353,648,353"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="949,338,1113,363"/>
-<area shape="poly" title=" " alt="" coords="877,348,935,348,935,353,877,353"/>
-<area shape="rect" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="950,163,1111,189"/>
-<area shape="poly" title=" " alt="" coords="629,29,758,56,830,76,900,100,954,126,1001,154,998,158,952,131,898,105,828,81,756,61,628,35"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="1175,481,1323,506"/>
-<area shape="poly" title=" " alt="" coords="1043,187,1234,468,1229,471,1039,190"/>
-<area shape="poly" title=" " alt="" coords="322,775,332,726,355,656,372,619,394,584,420,551,452,524,483,507,517,494,588,481,657,479,719,484,719,489,657,484,588,486,518,499,485,512,455,529,424,555,398,587,377,622,360,658,338,727,327,776"/>
-<area shape="poly" title=" " alt="" coords="323,775,338,724,364,649,402,563,425,521,451,481,483,446,517,419,520,423,487,450,455,484,429,524,406,566,369,651,343,726,328,776"/>
-<area shape="poly" title=" " alt="" coords="322,775,339,693,368,572,406,452,428,405,451,373,456,369,460,373,455,376,433,407,411,454,373,574,344,694,328,776"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2b3d606f3de34cc88ff84e90bc020890" title="Multiply 3D matrix with vector." alt="" coords="486,1097,615,1122"/>
-<area shape="poly" title=" " alt="" coords="329,800,381,946,418,1029,437,1061,455,1082,475,1094,472,1099,452,1086,433,1064,414,1031,376,948,324,802"/>
-<area shape="rect" href="group__math__algebra__float.html#ga6d58f107be8a5711c13f777d10936cb4" title="3x3 matrix inverse" alt="" coords="483,1146,618,1171"/>
-<area shape="poly" title=" " alt="" coords="330,800,396,985,433,1084,455,1132,472,1143,469,1147,451,1135,429,1086,391,987,325,802"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="471,1195,630,1221"/>
-<area shape="poly" title=" " alt="" coords="330,800,408,1021,418,1069,421,1109,429,1144,439,1162,455,1181,461,1186,458,1190,451,1184,435,1165,424,1146,415,1109,412,1070,403,1022,325,802"/>
-<area shape="rect" href="group__math__algebra__float.html#ga74fd99d5a32d19e217dd21fa1ce3fd53" title="quat from euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="459,539,643,565"/>
-<area shape="poly" title=" " alt="" coords="324,774,339,735,365,681,403,624,426,598,452,575,463,568,465,573,455,579,429,602,407,627,370,684,344,737,329,776"/>
-<area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html#ac24605ed3b2910b6b5767a691516e073" title="Perform WLS." alt="" coords="455,654,646,679"/>
-<area shape="poly" title=" " alt="" coords="335,773,384,732,417,709,452,690,473,681,475,686,454,694,420,714,387,736,338,777"/>
-<area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="471,589,631,629"/>
-<area shape="poly" title=" " alt="" coords="329,773,376,710,411,672,452,639,462,633,465,638,455,643,415,676,380,713,333,776"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="458,768,643,808"/>
-<area shape="poly" title=" " alt="" coords="392,785,444,785,444,791,392,791"/>
-<area shape="rect" href="stabilization_8c.html#a5bc93e5c06fb4401d9b0e54042f3d57a" title=" " alt="" coords="469,704,632,744"/>
-<area shape="poly" title=" " alt="" coords="367,773,465,745,466,750,369,778"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="Get attitude heading as float (avoiding jumps)" alt="" coords="471,983,631,1023"/>
-<area shape="poly" title=" " alt="" coords="331,800,348,833,375,878,411,926,455,967,465,974,462,978,452,971,407,929,371,881,343,836,326,802"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="696,906,899,931"/>
-<area shape="poly" title=" " alt="" coords="375,798,649,868,747,899,745,904,647,873,374,803"/>
-<area shape="rect" href="stabilization_8c.html#a5ad2f16e91577fd7ea31db87f9d79147" title=" " alt="" coords="464,883,637,909"/>
-<area shape="poly" title=" " alt="" coords="343,799,393,829,454,861,493,876,491,881,452,866,390,834,341,803"/>
-<area shape="rect" href="stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="475,933,626,958"/>
-<area shape="poly" title=" " alt="" coords="334,799,381,856,415,890,455,918,471,926,469,930,452,922,412,894,377,860,329,802"/>
-<area shape="rect" href="wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="509,1047,592,1073"/>
-<area shape="poly" title=" " alt="" coords="328,800,341,845,365,908,403,975,427,1006,455,1032,475,1044,497,1051,495,1056,472,1049,452,1037,423,1010,398,978,361,910,336,847,323,802"/>
-<area shape="rect" href="group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="733,1158,861,1183"/>
-<area shape="poly" title=" " alt="" coords="630,1193,720,1180,720,1185,631,1199"/>
-<area shape="poly" title=" " alt="" coords="617,651,647,639,686,613,722,582,775,523,779,527,725,586,689,617,649,644,619,656"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="711,654,883,679"/>
-<area shape="poly" title=" " alt="" coords="646,664,698,664,698,669,646,669"/>
-<area shape="poly" title=" " alt="" coords="630,766,646,754,666,728,675,702,680,673,694,640,735,575,775,523,779,526,740,578,698,642,685,675,680,703,671,730,650,758,633,770"/>
-<area shape="rect" href="group__state__velocity.html#ga4c0971d022697106338036028a62c7fd" title="Get acceleration in Body coordinates (int)." alt="" coords="719,771,876,797"/>
-<area shape="poly" title=" " alt="" coords="644,784,705,783,705,788,644,789"/>
-<area shape="rect" href="group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="722,821,873,846"/>
-<area shape="poly" title=" " alt="" coords="644,802,715,815,714,821,643,808"/>
-<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="722,707,873,747"/>
-<area shape="poly" title=" " alt="" coords="631,765,708,746,709,751,633,770"/>
-<area shape="rect" href="group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="953,797,1109,822"/>
-<area shape="poly" title=" " alt="" coords="873,823,939,816,939,821,873,828"/>
-<area shape="poly" title=" " alt="" coords="1060,794,1087,778,1113,757,1158,696,1194,630,1221,567,1238,519,1243,520,1226,569,1199,632,1163,699,1117,760,1090,783,1063,799"/>
-<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="950,707,1111,747"/>
-<area shape="poly" title=" " alt="" coords="873,724,936,724,936,729,873,729"/>
-<area shape="poly" title=" " alt="" coords="610,980,745,933,747,938,611,985"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="947,906,1115,931"/>
-<area shape="poly" title=" " alt="" coords="899,916,933,916,933,921,899,921"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1163,906,1336,931"/>
-<area shape="poly" title=" " alt="" coords="1115,916,1149,916,1149,921,1115,921"/>
-<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="729,1047,866,1073"/>
-<area shape="poly" title=" " alt="" coords="592,1057,715,1057,715,1063,592,1063"/>
-<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="992,1047,1069,1073"/>
-<area shape="poly" title=" " alt="" coords="866,1057,978,1057,978,1063,866,1063"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="464,1282,637,1307"/>
-<area shape="poly" title=" " alt="" coords="332,1058,378,1135,414,1184,455,1230,484,1254,514,1273,511,1277,481,1258,451,1234,410,1188,374,1138,327,1061"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="745,1257,849,1282"/>
-<area shape="poly" title=" " alt="" coords="637,1283,732,1273,732,1279,638,1288"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="954,1381,1107,1406"/>
-<area shape="poly" title=" " alt="" coords="567,1305,620,1350,657,1373,697,1391,759,1404,823,1410,885,1409,940,1405,941,1410,885,1414,823,1415,758,1410,695,1396,654,1378,617,1355,563,1310"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="726,1355,869,1381"/>
-<area shape="poly" title=" " alt="" coords="589,1305,697,1340,730,1349,729,1354,695,1345,587,1310"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="727,1306,868,1331"/>
-<area shape="poly" title=" " alt="" coords="638,1300,713,1308,713,1313,637,1306"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="746,1207,849,1233"/>
-<area shape="poly" title=" " alt="" coords="585,1279,695,1241,732,1231,733,1237,697,1246,586,1284"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="977,1257,1085,1282"/>
-<area shape="poly" title=" " alt="" coords="850,1267,963,1267,963,1272,850,1272"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="978,1306,1083,1331"/>
-<area shape="poly" title=" " alt="" coords="850,1278,965,1302,964,1307,849,1283"/>
-<area shape="poly" title=" " alt="" coords="869,1316,964,1316,964,1321,869,1321"/>
-<area shape="poly" title=" " alt="" coords="858,1329,899,1340,988,1373,986,1378,898,1345,857,1334"/>
+<area shape="rect" title=" " alt="" coords="5,380,189,405"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#abff8a99c2d28f03e60476e60abaf1354" title=" " alt="" coords="268,468,375,493"/>
+<area shape="poly" title=" " alt="" coords="132,403,277,460,275,465,130,408"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e" title=" " alt="" coords="469,278,628,318"/>
+<area shape="poly" title=" " alt="" coords="158,377,455,314,456,320,159,382"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="954,141,1099,166"/>
+<area shape="poly" title=" " alt="" coords="117,377,203,325,340,250,422,212,510,175,600,143,691,119,748,110,793,108,895,119,971,135,970,140,894,124,793,113,749,115,693,124,602,148,512,180,424,216,343,255,206,329,119,382"/>
+<area shape="rect" href="group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="715,33,871,58"/>
+<area shape="poly" title=" " alt="" coords="97,379,106,322,127,237,145,192,169,148,199,108,236,76,296,42,362,20,430,8,499,3,566,4,628,10,731,27,730,33,628,15,565,10,499,8,431,13,363,25,298,47,239,80,203,112,173,151,150,194,133,239,111,323,102,380"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="251,792,391,817"/>
+<area shape="poly" title=" " alt="" coords="108,404,309,778,304,781,103,406"/>
+<area shape="rect" href="group__state__position.html#gaf0ea970c91b1d3ebc462f987f28bd3f0" title="Get position in local NED coordinates (float)." alt="" coords="237,1062,405,1088"/>
+<area shape="poly" title=" " alt="" coords="105,404,240,828,314,1049,309,1050,235,829,100,406"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="720,590,867,616"/>
+<area shape="poly" title=" " alt="" coords="375,475,433,476,502,483,575,498,645,525,661,537,671,550,679,563,693,575,709,583,707,588,691,580,675,567,666,553,657,541,643,529,574,503,501,488,433,481,375,480"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="951,590,1103,616"/>
+<area shape="poly" title=" " alt="" coords="867,600,937,600,937,606,867,606"/>
+<area shape="poly" title=" " alt="" coords="573,316,610,358,646,411,657,436,661,459,663,500,669,538,678,557,694,576,709,587,705,591,690,580,673,560,664,540,658,501,656,460,651,438,642,414,606,361,569,320"/>
+<area shape="rect" href="group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="701,692,885,717"/>
+<area shape="poly" title=" " alt="" coords="574,316,611,358,646,411,659,443,665,471,667,522,671,571,679,597,694,626,723,658,757,683,754,687,720,662,690,629,674,599,666,572,662,522,660,472,654,444,642,414,607,361,570,320"/>
+<area shape="rect" href="group__math__algebra__float.html#gabb7bfed17957cbb1883f9fa31783bad3" title=" " alt="" coords="702,198,885,224"/>
+<area shape="poly" title=" " alt="" coords="591,275,691,234,721,225,723,230,693,239,593,280"/>
+<area shape="rect" href="rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="716,134,871,174"/>
+<area shape="poly" title=" " alt="" coords="569,276,621,230,655,205,691,183,705,176,707,181,693,188,658,210,625,234,572,280"/>
+<area shape="rect" href="rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="712,248,875,288"/>
+<area shape="poly" title=" " alt="" coords="628,286,698,277,699,282,629,291"/>
+<area shape="rect" href="group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="696,313,891,338"/>
+<area shape="poly" title=" " alt="" coords="629,304,683,310,682,316,628,309"/>
+<area shape="poly" title=" " alt="" coords="562,276,615,204,651,161,690,120,725,89,760,64,763,68,729,94,694,124,655,165,619,208,566,279"/>
+<area shape="poly" title=" " alt="" coords="871,151,940,151,940,156,871,156"/>
+<area shape="poly" title=" " alt="" coords="861,246,894,233,949,203,995,172,998,176,951,207,896,237,863,251"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="947,313,1106,338"/>
+<area shape="poly" title=" " alt="" coords="891,323,934,323,934,328,891,328"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="1163,313,1327,338"/>
+<area shape="poly" title=" " alt="" coords="1107,323,1150,323,1150,328,1107,328"/>
+<area shape="rect" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="946,62,1107,88"/>
+<area shape="poly" title=" " alt="" coords="872,53,932,61,932,66,871,58"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="1171,164,1319,189"/>
+<area shape="poly" title=" " alt="" coords="1056,85,1205,155,1203,160,1054,90"/>
+<area shape="poly" title=" " alt="" coords="326,790,342,757,369,713,406,668,428,649,452,633,515,607,582,594,647,589,706,590,706,596,647,594,582,599,516,612,455,637,431,653,410,672,373,716,347,759,331,792"/>
+<area shape="poly" title=" " alt="" coords="338,789,387,757,419,740,453,727,512,713,573,704,687,698,688,703,574,709,513,718,454,732,421,745,390,762,341,794"/>
+<area shape="poly" title=" " alt="" coords="324,791,383,587,421,473,438,433,451,411,476,390,503,373,562,348,624,333,682,325,683,330,625,338,564,353,506,378,479,395,455,414,442,435,426,475,388,589,329,792"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2b3d606f3de34cc88ff84e90bc020890" title="Multiply 3D matrix with vector." alt="" coords="484,742,613,768"/>
+<area shape="poly" title=" " alt="" coords="380,789,475,768,477,773,381,794"/>
+<area shape="rect" href="group__math__algebra__float.html#ga6d58f107be8a5711c13f777d10936cb4" title="3x3 matrix inverse" alt="" coords="481,792,616,817"/>
+<area shape="poly" title=" " alt="" coords="392,802,468,802,468,807,392,807"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1166,588,1325,613"/>
+<area shape="poly" title=" " alt="" coords="332,790,380,742,414,716,452,695,547,661,629,643,704,635,775,634,924,638,1010,636,1110,624,1172,613,1173,618,1111,630,1010,641,924,644,775,639,704,640,630,648,548,667,454,700,417,720,384,746,336,793"/>
+<area shape="rect" href="group__math__algebra__float.html#ga74fd99d5a32d19e217dd21fa1ce3fd53" title="quat from euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="457,841,641,866"/>
+<area shape="poly" title=" " alt="" coords="381,814,477,835,475,841,380,820"/>
+<area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html#ac24605ed3b2910b6b5767a691516e073" title="Perform WLS." alt="" coords="453,1020,644,1045"/>
+<area shape="poly" title=" " alt="" coords="330,816,345,854,371,905,408,959,430,984,455,1005,466,1012,463,1016,452,1009,426,987,404,962,366,908,340,856,325,818"/>
+<area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html#ae6f2842f21741d11d4bb8c91da691381" title=" " alt="" coords="469,891,629,931"/>
+<area shape="poly" title=" " alt="" coords="344,815,394,844,454,875,474,884,472,889,452,880,391,849,342,819"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="456,424,641,464"/>
+<area shape="poly" title=" " alt="" coords="324,790,340,744,367,676,404,599,451,525,478,496,506,471,509,475,481,500,455,529,409,602,372,679,345,746,329,792"/>
+<area shape="rect" href="stabilization_8c.html#a5bc93e5c06fb4401d9b0e54042f3d57a" title=" " alt="" coords="467,955,630,995"/>
+<area shape="poly" title=" " alt="" coords="333,815,381,875,415,910,455,941,465,947,462,951,452,945,412,914,377,879,329,819"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="Get attitude heading as float (avoiding jumps)" alt="" coords="469,1219,629,1259"/>
+<area shape="poly" title=" " alt="" coords="330,816,408,1049,418,1094,422,1130,431,1163,455,1199,468,1210,465,1214,451,1202,426,1166,417,1131,413,1095,403,1050,325,818"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="692,1169,895,1194"/>
+<area shape="poly" title=" " alt="" coords="330,816,395,1004,433,1105,455,1153,485,1172,518,1185,553,1194,588,1199,659,1200,721,1194,722,1199,659,1206,588,1204,552,1199,516,1190,483,1176,451,1157,428,1107,390,1006,325,818"/>
+<area shape="rect" href="stabilization_8c.html#a5ad2f16e91577fd7ea31db87f9d79147" title=" " alt="" coords="462,1118,635,1144"/>
+<area shape="poly" title=" " alt="" coords="329,816,381,964,418,1049,437,1082,455,1104,463,1110,460,1114,452,1108,433,1085,413,1052,376,966,324,818"/>
+<area shape="rect" href="stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="473,540,624,565"/>
+<area shape="poly" title=" " alt="" coords="324,790,339,750,365,694,403,635,426,607,452,582,475,568,477,573,455,587,430,610,407,638,370,697,344,752,329,792"/>
+<area shape="rect" href="wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="507,1069,590,1094"/>
+<area shape="poly" title=" " alt="" coords="328,816,340,862,365,926,402,995,427,1027,455,1054,474,1065,494,1073,493,1078,471,1070,452,1059,423,1031,398,998,360,929,335,864,323,818"/>
+<area shape="rect" href="group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="1380,588,1508,613"/>
+<area shape="poly" title=" " alt="" coords="1325,598,1367,598,1367,603,1325,603"/>
+<area shape="poly" title=" " alt="" coords="627,1017,642,1005,669,965,680,927,680,889,674,850,667,810,664,768,670,724,690,678,718,645,751,621,755,625,722,649,694,680,675,726,669,768,672,809,679,849,685,888,685,928,674,968,646,1009,630,1022"/>
+<area shape="poly" title=" " alt="" coords="622,1017,642,1005,674,974,700,939,723,901,742,862,769,788,784,730,789,731,774,789,747,864,728,904,705,942,678,978,646,1009,624,1022"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca" title="Get the derivative of lift w.r.t." alt="" coords="707,1020,879,1045"/>
+<area shape="poly" title=" " alt="" coords="644,1030,694,1030,694,1035,644,1035"/>
+<area shape="poly" title=" " alt="" coords="618,462,646,481,663,506,670,531,676,554,694,576,709,585,706,590,690,580,671,556,665,532,659,508,642,485,615,467"/>
+<area shape="poly" title=" " alt="" coords="573,422,625,384,691,347,711,340,713,345,693,352,628,388,576,426"/>
+<area shape="rect" href="group__state__velocity.html#ga4c0971d022697106338036028a62c7fd" title="Get acceleration in Body coordinates (int)." alt="" coords="715,412,872,437"/>
+<area shape="poly" title=" " alt="" coords="641,434,701,429,702,435,642,439"/>
+<area shape="rect" href="group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="718,362,869,388"/>
+<area shape="poly" title=" " alt="" coords="609,422,691,396,722,388,723,394,693,402,610,427"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="718,462,869,502"/>
+<area shape="poly" title=" " alt="" coords="642,456,705,466,704,471,641,461"/>
+<area shape="rect" href="quaternion__filter_8h.html#a00a25df8965a87832754be40ed51a7bf" title="Update second order quaternion Butterworth low pass filter state with a new value." alt="" coords="700,526,887,566"/>
+<area shape="poly" title=" " alt="" coords="605,462,645,481,669,496,693,511,710,518,708,523,691,516,666,501,643,485,602,467"/>
+<area shape="rect" href="group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="949,362,1105,388"/>
+<area shape="poly" title=" " alt="" coords="869,372,935,372,935,378,869,378"/>
+<area shape="poly" title=" " alt="" coords="1085,360,1109,348,1136,322,1168,282,1226,199,1230,202,1172,285,1139,326,1112,352,1087,365"/>
+<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="946,462,1107,502"/>
+<area shape="poly" title=" " alt="" coords="869,479,932,479,932,484,869,484"/>
+<area shape="rect" href="quaternion__filter_8h.html#a12247ce3405cab9e1222d9df6213262b" title="Update second order quaterion low pass filter state with a new value." alt="" coords="949,526,1105,566"/>
+<area shape="poly" title=" " alt="" coords="887,543,935,543,935,548,887,548"/>
+<area shape="poly" title=" " alt="" coords="1105,563,1181,582,1180,587,1104,568"/>
+<area shape="poly" title=" " alt="" coords="628,1218,725,1195,726,1200,630,1223"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="943,1169,1111,1194"/>
+<area shape="poly" title=" " alt="" coords="895,1179,929,1179,929,1184,895,1184"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1159,1169,1332,1194"/>
+<area shape="poly" title=" " alt="" coords="1111,1179,1145,1179,1145,1184,1111,1184"/>
+<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="725,1069,862,1094"/>
+<area shape="poly" title=" " alt="" coords="591,1079,711,1079,711,1084,591,1084"/>
+<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="988,1069,1065,1094"/>
+<area shape="poly" title=" " alt="" coords="862,1079,974,1079,974,1084,862,1084"/>
+<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="462,1301,635,1326"/>
+<area shape="poly" title=" " alt="" coords="331,1087,347,1122,374,1170,411,1222,455,1269,496,1294,493,1298,452,1273,407,1226,370,1173,343,1124,326,1089"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="741,1369,845,1394"/>
+<area shape="poly" title=" " alt="" coords="590,1324,693,1355,728,1364,727,1370,691,1360,588,1329"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="950,1318,1103,1344"/>
+<area shape="poly" title=" " alt="" coords="578,1299,639,1273,691,1255,748,1245,794,1240,839,1243,895,1255,925,1265,953,1279,1000,1308,997,1313,950,1284,923,1270,894,1260,838,1248,794,1246,749,1250,693,1260,641,1278,580,1303"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="722,1270,865,1296"/>
+<area shape="poly" title=" " alt="" coords="635,1300,708,1291,708,1296,636,1306"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="723,1418,864,1444"/>
+<area shape="poly" title=" " alt="" coords="567,1324,621,1364,656,1386,693,1405,713,1412,711,1417,691,1410,653,1391,618,1368,564,1329"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="742,1320,845,1345"/>
+<area shape="poly" title=" " alt="" coords="636,1318,728,1325,728,1330,635,1323"/>
+<area shape="poly" title=" " alt="" coords="859,1416,894,1405,948,1378,995,1349,997,1354,951,1382,896,1410,861,1421"/>
 </map>
 </div>
 
@@ -1101,9 +1124,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00429">429</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00419">419</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00218">guidance_indi_max_bank</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">guidance_indi_max_bank</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00219">rotwing_state_periodic()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1155,9 +1178,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00433">433</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00423">423</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid_8h_source.html#l00090">guidance_indi_hybrid_params::climb_vspeed_fwd</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00092">guidance_indi_hybrid_params::climb_vspeed_quad</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00110">gih_params</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid_8h_source.html#l00091">guidance_indi_hybrid_params::climb_vspeed_fwd</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00093">guidance_indi_hybrid_params::climb_vspeed_quad</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00111">gih_params</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00219">rotwing_state_periodic()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1209,9 +1232,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00438">438</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00428">428</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi__hybrid_8h_source.html#l00091">guidance_indi_hybrid_params::descend_vspeed_fwd</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00093">guidance_indi_hybrid_params::descend_vspeed_quad</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00110">gih_params</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi__hybrid_8h_source.html#l00092">guidance_indi_hybrid_params::descend_vspeed_fwd</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00094">guidance_indi_hybrid_params::descend_vspeed_quad</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00111">gih_params</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00219">rotwing_state_periodic()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1263,7 +1286,7 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00424">424</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00414">414</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1311,7 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00229">229</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00230">230</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1337,7 @@ stall_protect_gain</td>
 
 <p>forward flight for hybrid nav </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00160">160</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00161">161</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1338,9 +1361,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00292">292</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00289">289</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00647">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00784">guidance_indi_run_mode()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00313">send_guidance_indi_hybrid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00639">compute_accel_from_speed_sp()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00776">guidance_indi_run_mode()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00310">send_guidance_indi_hybrid()</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1387,7 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00247">247</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00244">244</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1411,7 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00110">110</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00111">111</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -1412,9 +1435,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00162">162</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00163">163</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00647">compute_accel_from_speed_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00639">compute_accel_from_speed_sp()</a>.</p>
 
 </div>
 </div>
@@ -1438,9 +1461,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00157">157</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00156">156</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00131">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi_8c_source.html#l00249">guidance_indi_run()</a>, <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00109">guidance_indi_set_wls_settings()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00429">guidance_set_max_bank_angle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00134">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="guidance__indi_8c_source.html#l00246">guidance_indi_run()</a>, <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00103">guidance_indi_set_wls_settings()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00419">guidance_set_max_bank_angle()</a>.</p>
 
 </div>
 </div>
@@ -1464,9 +1487,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">219</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00220">220</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00450">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00440">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1490,9 +1513,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00131">131</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00132">132</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00131">guidance_indi_hybrid_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00134">guidance_indi_hybrid_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -1538,12 +1561,12 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00131">guidance_indi_hybrid_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00134">guidance_indi_hybrid_set_wls_settings()</a>.</p>
 
 </div>
 </div>
-<a id="a6987b53838cf70902ed70ca11492c6a7" name="a6987b53838cf70902ed70ca11492c6a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6987b53838cf70902ed70ca11492c6a7">&#9670;&#160;</a></span>pitch_filt</h2>
+<a id="a0989bd293a50907ba957ba53d13d092f" name="a0989bd293a50907ba957ba53d13d092f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0989bd293a50907ba957ba53d13d092f">&#9670;&#160;</a></span>quat_filt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1552,7 +1575,7 @@ stall_protect_gain</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="low__pass__filter_8h.html#a261eec07ae6099accb7c35876a97bf6f">Butterworth2LowPass</a> pitch_filt</td>
+          <td class="memname"><a class="el" href="quaternion__filter_8h.html#ab1f87da8c9ae6d8b2affc3d59b80cf32">QuatButterworthLowPass</a> quat_filt</td>
         </tr>
       </table>
   </td>
@@ -1562,35 +1585,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00108">108</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00109">109</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi__hybrid__tailsitter_8c_source.html#l00041">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi_8c_source.html#l00215">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00346">guidance_indi_init()</a>, <a class="el" href="guidance__indi_8c_source.html#l00460">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00880">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00249">guidance_indi_run()</a>.</p>
-
-</div>
-</div>
-<a id="a19dc03ef4234ea423340bcc0c249e1cf" name="a19dc03ef4234ea423340bcc0c249e1cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19dc03ef4234ea423340bcc0c249e1cf">&#9670;&#160;</a></span>roll_filt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="low__pass__filter_8h.html#a261eec07ae6099accb7c35876a97bf6f">Butterworth2LowPass</a> roll_filt</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00107">107</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi__hybrid__tailsitter_8c_source.html#l00041">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi_8c_source.html#l00215">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00346">guidance_indi_init()</a>, <a class="el" href="guidance__indi_8c_source.html#l00460">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00880">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00249">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi__hybrid__tailsitter_8c_source.html#l00041">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi_8c_source.html#l00214">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00343">guidance_indi_init()</a>, <a class="el" href="guidance__indi_8c_source.html#l00456">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00871">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00246">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1614,35 +1611,9 @@ stall_protect_gain</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00158">158</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00159">159</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00450">guidance_indi_run()</a>.</p>
-
-</div>
-</div>
-<a id="aa2b3f165493f064778112cb5a88ff493" name="aa2b3f165493f064778112cb5a88ff493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2b3f165493f064778112cb5a88ff493">&#9670;&#160;</a></span>yaw_filt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> yaw_filt</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00109">109</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00086">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi__hybrid__tailsitter_8c_source.html#l00041">guidance_indi_calcg_wing()</a>, <a class="el" href="guidance__indi_8c_source.html#l00215">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00346">guidance_indi_init()</a>, <a class="el" href="guidance__indi_8c_source.html#l00460">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00880">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00249">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00440">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1652,7 +1623,7 @@ stall_protect_gain</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi__hybrid_8h.html">guidance_indi_hybrid.h</a></li>
-    <li class="footer">Generated on Mon Apr 27 2026 19:48:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon May 4 2026 16:52:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

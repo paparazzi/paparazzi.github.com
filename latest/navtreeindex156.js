@@ -1,14 +1,5 @@
 var NAVTREEINDEX156 =
 {
-"nps__main__common_8c.html#a9e2370130aa6e869a0ed56a22117cf3b":[12,0,1,1,2,24,4],
-"nps__main__common_8c.html#aa4b5d63747118dd2f6d66d297e951d9b":[12,0,1,1,2,24,2],
-"nps__main__common_8c.html#aa6c6cc2a080030733ecf2314d8887462":[12,0,1,1,2,24,11],
-"nps__main__common_8c.html#aba7e0d2ae8c72632537ff335da67e19d":[12,0,1,1,2,24,5],
-"nps__main__common_8c.html#abb0d846f22f71e894675f4d64bbfa703":[12,0,1,1,2,24,1],
-"nps__main__common_8c.html#abde7f979f8df9c8db19de17ab6498ec2":[12,0,1,1,2,24,7],
-"nps__main__common_8c.html#abfdfe512dfaedb25e9c8d0206830cbec":[12,0,1,1,2,24,9],
-"nps__main__common_8c.html#ad1571440e798061c181885ee6acd11ed":[12,0,1,1,2,24,14],
-"nps__main__common_8c.html#adf6038497a6cbd265203dbc84489cb16":[12,0,1,1,2,24,13],
 "nps__main__common_8c.html#aeef2ce0bdc2688dd972ae462a9b9a72d":[12,0,1,1,2,24,6],
 "nps__main__common_8c_source.html":[12,0,1,1,2,24],
 "nps__main__hitl_8c.html":[12,0,1,1,2,25],
@@ -249,5 +240,14 @@ var NAVTREEINDEX156 =
 "nps__sensor__mag_8h.html#a05dfb5585294ee3dd1145c2a4e05936a":[12,0,1,1,2,48,0,4],
 "nps__sensor__mag_8h.html#a33e737a5274fd95a4cd5c8d519d33986":[12,0,1,1,2,48,0,7],
 "nps__sensor__mag_8h.html#a43dcedd3c66527ec2635d4081bcaa7d5":[12,0,1,1,2,48,1],
-"nps__sensor__mag_8h.html#a5386d572fdeec84c9ceb6041f6d0dd74":[12,0,1,1,2,48,0,8]
+"nps__sensor__mag_8h.html#a5386d572fdeec84c9ceb6041f6d0dd74":[12,0,1,1,2,48,0,8],
+"nps__sensor__mag_8h.html#a62d8d4c4bc216694e3b7b31883f504bb":[12,0,1,1,2,48,0,6],
+"nps__sensor__mag_8h.html#a80cd7717f7c4677dc740af50dfdb500e":[12,0,1,1,2,48,0,0],
+"nps__sensor__mag_8h.html#a9b8004d62050453cbe9cdb026ad5c3fb":[12,0,1,1,2,48,0,1],
+"nps__sensor__mag_8h.html#ab8f0ab3583195c0e680780deb2a2f769":[12,0,1,1,2,48,0,2],
+"nps__sensor__mag_8h.html#af3e6eb6dd2cdc5c4563515e2eb0231b8":[12,0,1,1,2,48,0,5],
+"nps__sensor__mag_8h.html#af7dea97cbbaa9d06a4eec7daef65e26e":[12,0,1,1,2,48,0,3],
+"nps__sensor__mag_8h.html#afd402828074c485d02f9ceb00e384b03":[12,0,1,1,2,48,2],
+"nps__sensor__mag_8h.html#structNpsSensorMag":[12,0,1,1,2,48,0],
+"nps__sensor__mag_8h_source.html":[12,0,1,1,2,48]
 };

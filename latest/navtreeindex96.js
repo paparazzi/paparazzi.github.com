@@ -1,14 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"invensense3__regs_8h.html#aea63f08556dd05b658a8f1aeaac48c68":[12,0,1,0,7,53,93],
-"invensense3__regs_8h.html#aec678cc3fdd41e2d097b6da19df23c5c":[12,0,1,0,7,53,13],
-"invensense3__regs_8h.html#aed52ea26ea9dd18445d1336fc8a4813d":[12,0,1,0,7,53,50],
-"invensense3__regs_8h.html#aeec09643ca49966e35a31f3c7e263016":[12,0,1,0,7,53,6],
-"invensense3__regs_8h.html#aef27c7ab3c4737f87b9ab0059f392a1f":[12,0,1,0,7,53,80],
-"invensense3__regs_8h.html#af092e0e064f4159d4d7a573af8af117c":[12,0,1,0,7,53,25],
-"invensense3__regs_8h.html#af23a7f58d04c890c8e9b26d6576c41d4":[12,0,1,0,7,53,21],
-"invensense3__regs_8h.html#af290b00d7a634f2889c34b972abbea37":[12,0,1,0,7,53,150],
-"invensense3__regs_8h.html#af6c8492f26d20fac545388043c0004a8":[12,0,1,0,7,53,122],
 "invensense3__regs_8h.html#af72474951b7f4d0b1b873ea4946e78ff":[12,0,1,0,7,53,104],
 "invensense3__regs_8h.html#afa0bf32ea36e70d8e27364c4bf52b335":[12,0,1,0,7,53,144],
 "invensense3__regs_8h.html#afca6a58222b26c31f00e8858efa3ee81":[12,0,1,0,7,53,83],
@@ -249,5 +240,14 @@ var NAVTREEINDEX96 =
 "ist8310__regs_8h.html#ae19fe159838dbc1e4146a0ccd35c5eef":[12,0,1,0,7,56,34],
 "ist8310__regs_8h.html#ae1e51fe0018773dea9424d04c9d80ec4":[12,0,1,0,7,56,19],
 "ist8310__regs_8h.html#af47b1139be1cf8d21c75e475e81194b0":[12,0,1,0,7,56,14],
-"ist8310__regs_8h.html#afa3fb46f3b8e12e6eea2ecb2e47db3e8":[12,0,1,0,7,56,42]
+"ist8310__regs_8h.html#afa3fb46f3b8e12e6eea2ecb2e47db3e8":[12,0,1,0,7,56,42],
+"ist8310__regs_8h.html#afc61af84f3e78d64c67edbf13ce66a58":[12,0,1,0,7,56,22],
+"ist8310__regs_8h_source.html":[12,0,1,0,7,56],
+"itg3200_8c.html":[12,0,1,0,7,57],
+"itg3200_8c.html#a240c1ab04d15bb3f556189887939765f":[12,0,1,0,7,57,3],
+"itg3200_8c.html#a37fd9870e73caee0513811101150ae87":[12,0,1,0,7,57,7],
+"itg3200_8c.html#a7b349504704c56277b218842850b117c":[12,0,1,0,7,57,2],
+"itg3200_8c.html#aaa9c768fbf93b62e8c6f74ebcc07cf45":[12,0,1,0,7,57,1],
+"itg3200_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,57,0],
+"itg3200_8c.html#afb54551377578d676facc80c71379182":[12,0,1,0,7,57,6]
 };

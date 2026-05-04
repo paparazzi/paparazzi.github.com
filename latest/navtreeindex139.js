@@ -1,14 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"modules_2ins_2ins__arduimu__basic_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,37,14,21],
-"modules_2ins_2ins__arduimu__basic_8c.html#ad14a8d61af1149c06d36d19a4d6a9c12":[12,0,1,0,6,37,14,1],
-"modules_2ins_2ins__arduimu__basic_8c.html#ae31b9398d0a602349add7dff0b46e32e":[12,0,1,0,6,37,14,13],
-"modules_2ins_2ins__arduimu__basic_8c.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,6,37,14,16],
-"modules_2ins_2ins__arduimu__basic_8c.html#af200b22d545ef773ef3e8a8f1c1f0f4f":[12,0,1,0,6,37,14,14],
-"modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a":[12,0,1,0,6,37,14,7],
-"modules_2ins_2ins__arduimu__basic_8c.html#afe7eeee2e1b44f3d4533e7ab52d75a90":[12,0,1,0,6,37,14,6],
-"modules_2ins_2ins__arduimu__basic_8c_source.html":[12,0,1,0,6,37,14],
-"modules_2sensors_2baro__MS5534A_8h.html":[12,0,1,0,6,63,45],
 "modules_2sensors_2baro__MS5534A_8h_source.html":[12,0,1,0,6,63,45],
 "motor__mixing_8c.html":[12,0,1,0,6,0,36],
 "motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a":[12,0,1,0,6,0,36,15],
@@ -213,8 +204,8 @@ var NAVTREEINDEX139 =
 "mpu60x0__i2c_8h.html#a7efe7010fe6adf3c974b7f38a8692d90":[12,0,1,0,7,98,0,7],
 "mpu60x0__i2c_8h.html#a8f34bf2cfb921315ea0eae1fb40cef74":[12,0,1,0,7,98,0,4],
 "mpu60x0__i2c_8h.html#aa0ef38bffccdc6a2cf28a218dcf27210":[12,0,1,0,7,98,0,1],
-"mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,98,2,1],
 "mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,98,1,0],
+"mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,98,2,1],
 "mpu60x0__i2c_8h.html#ab63fc0849edf6216a851937298063d43":[12,0,1,0,7,98,0,5],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1":[12,0,1,0,7,98,4],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a1de606392c12ee14660c4c8a71b3c570":[12,0,1,0,7,98,4,4],
@@ -249,5 +240,14 @@ var NAVTREEINDEX139 =
 "mpu60x0__regs_8h.html#a285b075d7c8ce43d349606c3a3e5ccc7":[12,0,1,0,7,99,23],
 "mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4":[12,0,1,0,7,99,77],
 "mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a19ad056b49e5186a09d8bdd940e90c54":[12,0,1,0,7,99,77,5],
-"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a6a9cadf32fa9251961ab3ec575b6002e":[12,0,1,0,7,99,77,3]
+"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a6a9cadf32fa9251961ab3ec575b6002e":[12,0,1,0,7,99,77,3],
+"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a8770a57e6e6aabcbf49740d0656c0b4f":[12,0,1,0,7,99,77,2],
+"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4a8b820c4f2ecfc0443d3a903e0805daa6":[12,0,1,0,7,99,77,6],
+"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4aa3dc187c2843328c22c55a03b1e6f774":[12,0,1,0,7,99,77,1],
+"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4aa668c6b553dbe403a758bec5cd72f292":[12,0,1,0,7,99,77,0],
+"mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4ac99b17608b6e2e29faf4bec0180b4c22":[12,0,1,0,7,99,77,4],
+"mpu60x0__regs_8h.html#a2b7ce956fb494e1a661a645dba83afde":[12,0,1,0,7,99,24],
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7":[12,0,1,0,7,99,78],
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a145d8cfcc93d0cf1c2f18859d5abb0cf":[12,0,1,0,7,99,78,0],
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5":[12,0,1,0,7,99,78,3]
 };

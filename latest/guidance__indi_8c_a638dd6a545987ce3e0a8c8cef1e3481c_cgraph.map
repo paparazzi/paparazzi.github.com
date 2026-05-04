@@ -1,17 +1,31 @@
 <map id="guidance_indi_enter" name="guidance_indi_enter">
-<area shape="rect" id="Node000001" title="Call upon entering indi guidance." alt="" coords="5,42,159,67"/>
+<area shape="rect" id="Node000001" title="Call upon entering indi guidance." alt="" coords="5,106,159,131"/>
 <area shape="rect" id="Node000002" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="237,5,379,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,42,223,34,224,39,159,47"/>
-<area shape="rect" id="Node000004" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="207,70,409,95"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,62,193,66,193,71,159,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,103,206,55,225,47,227,52,208,60,108,108"/>
+<area shape="rect" id="Node000004" href="$quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851" title="Init a second order quaternion Butterworth filter." alt="" coords="227,69,389,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,106,213,99,213,104,159,111"/>
+<area shape="rect" id="Node000006" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="207,134,409,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="159,126,193,130,193,135,159,131"/>
+<area shape="rect" id="Node000011" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="211,183,405,209"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="111,129,208,168,238,177,236,182,206,173,109,134"/>
 <area shape="rect" id="Node000003" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="457,13,661,38"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,23,443,23,443,28,379,28"/>
-<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,70,643,95"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="409,80,462,80,462,85,409,85"/>
-<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="709,70,883,95"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="644,80,695,80,695,85,644,85"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="931,45,1086,70"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="882,70,917,66,918,71,883,75"/>
-<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="931,94,1087,119"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="883,90,917,94,917,99,882,95"/>
+<area shape="rect" id="Node000005" href="$quaternion__filter_8h.html#af07543e57f2906b5e6fb75b5aa0d0cf2" title="Init second order quaternion low pass filter." alt="" coords="473,69,646,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="389,87,459,87,459,92,389,92"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,134,643,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="409,144,462,144,462,149,409,149"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="709,134,883,159"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="644,144,695,144,695,149,644,149"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="931,85,1086,110"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="851,131,939,111,940,116,852,137"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="931,134,1087,159"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="883,144,917,144,917,149,883,149"/>
+<area shape="rect" id="Node000012" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="480,183,639,209"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="405,193,466,193,466,199,405,199"/>
+<area shape="rect" id="Node000013" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="714,183,878,209"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="639,193,700,193,700,199,639,199"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="931,183,1086,209"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="879,193,918,193,918,199,879,199"/>
+<area shape="rect" id="Node000015" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="936,233,1081,258"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="852,206,940,227,939,232,851,211"/>
 </map>

@@ -1,14 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__nav_line_osam.html#module_load_example__nav_line_osam":[1,347,0],
-"module__nav_line_osam.html#module_xml__nav_line_osam":[1,347,0,0],
-"module__nav_poles.html":[1,348],
-"module__nav_poles.html#module_load_example__nav_poles":[1,348,0],
-"module__nav_poles.html#module_xml__nav_poles":[1,348,0,0],
-"module__nav_poles_rotorcraft.html":[1,349],
-"module__nav_poles_rotorcraft.html#functions__nav_poles_rotorcraft":[1,349,1],
-"module__nav_poles_rotorcraft.html#module_load_example__nav_poles_rotorcraft":[1,349,0],
-"module__nav_poles_rotorcraft.html#module_xml__nav_poles_rotorcraft":[1,349,1,0],
 "module__nav_rosette.html":[1,350],
 "module__nav_rosette.html#functions__nav_rosette":[1,350,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,350,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX135 =
 "module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,378,3,0],
 "module__radio_control_hott.html":[1,379],
 "module__radio_control_hott.html#configuration__radio_control_hott":[1,379,1],
-"module__radio_control_hott.html#functions__radio_control_hott":[1,379,2]
+"module__radio_control_hott.html#functions__radio_control_hott":[1,379,2],
+"module__radio_control_hott.html#module_load_example__radio_control_hott":[1,379,0],
+"module__radio_control_hott.html#module_xml__radio_control_hott":[1,379,2,0],
+"module__radio_control_intermcu.html":[1,380],
+"module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,380,2],
+"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,380,1],
+"module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,380,0],
+"module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,380,2,0],
+"module__radio_control_ppm.html":[1,381],
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,381,1]
 };

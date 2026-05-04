@@ -1,14 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"guidance__v__ref_8h.html#a3d96f130f69bd6fa87c9eb2ca2ec4640":[12,0,1,0,3,2,0,31,4],
-"guidance__v__ref_8h.html#a56ce61e48bdd6a1384b5d330e79d38d6":[12,0,1,0,3,2,0,31,6],
-"guidance__v__ref_8h.html#a5b8b80ea3763966e346d43553da36b49":[12,0,1,0,3,2,0,31,3],
-"guidance__v__ref_8h.html#a61ea35c28ade47f77f09a012aa0f4fe4":[12,0,1,0,3,2,0,31,10],
-"guidance__v__ref_8h.html#a9438c4ab465cec426023d9fc3fb9cb07":[12,0,1,0,3,2,0,31,7],
-"guidance__v__ref_8h.html#a998c4eb852a2028e28e2987a31d783ad":[12,0,1,0,3,2,0,31,2],
-"guidance__v__ref_8h.html#ab36885cc677b3d2a0f89c148ffe6e9ba":[12,0,1,0,3,2,0,31,8],
-"guidance__v__ref_8h.html#ab8d8d8003fbd1c3d31ee72827ea1e25e":[12,0,1,0,3,2,0,31,9],
-"guidance__v__ref_8h.html#af5b4bf2932d63454e537de13ae5f58f3":[12,0,1,0,3,2,0,31,11],
 "guidance__v__ref_8h_source.html":[12,0,1,0,3,2,0,31],
 "gvf_8c.html":[12,0,1,0,6,31,0,1],
 "gvf_8c.html#a4d9626476a684a76d27cfcb0828e25f9":[12,0,1,0,6,31,0,1,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX76 =
 "hackhd_8h.html#a810a7d5a2238159f421cb8c74718422e":[12,0,1,0,6,19,14,1],
 "hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,19,14,8],
 "hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,19,14,3],
-"hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,19,14,6]
+"hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,19,14,6],
+"hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,19,14,0,2],
+"hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06":[12,0,1,0,6,19,14,7],
+"hackhd_8h.html#ad08e6184f2a54ea823ef3ba228490a70":[12,0,1,0,6,19,14,0,3],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97":[12,0,1,0,6,19,14,2],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a0dcbb231baf113de449197b970ad2df9":[12,0,1,0,6,19,14,2,4],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a339efd0dba6f95bccea25242e316e6c9":[12,0,1,0,6,19,14,2,3],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a4d802d731539075d8d843dc6323704a1":[12,0,1,0,6,19,14,2,1],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a5fb9fff7be05dd194660636efa4145a0":[12,0,1,0,6,19,14,2,5],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a893ad04ceb032935dc9efcec43f2a628":[12,0,1,0,6,19,14,2,0]
 };

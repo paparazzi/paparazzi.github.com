@@ -43,7 +43,7 @@ var searchData=
   ['gainlibrary_40',['gainlibrary',['../gain__scheduling_8h.html#a5b3f2ec9266c8b0bd6d859d5c9790492',1,'gainlibrary:&#160;gain_scheduling.c'],['../gain__scheduling_8c.html#a5b3f2ec9266c8b0bd6d859d5c9790492',1,'gainlibrary:&#160;gain_scheduling.c']]],
   ['gains_41',['gains',['../ins__float__invariant_8h.html#a4d4ffb3237722e8857fa3ef83fc81816',1,'InsFloatInv::gains'],['../optical__flow__landing_8c.html#ae1d42aa21de4dc680b588dccea18f97f',1,'gains:&#160;optical_flow_landing.c'],['../ahrs__float__invariant_8h.html#ab519c5370ae87809e408a087ee457c07',1,'AhrsFloatInv::gains'],['../stabilization__indi__simple_8h.html#a04e32086db8b69689ef7ccc663ffece3',1,'IndiVariables::gains']]],
   ['gam_5fsensor_5fid_42',['gam_sensor_id',['../hott__gam_8h.html#ab03245dbecf7485c41c11280d432f0f9',1,'HOTT_GAM_MSG']]],
-  ['gamma_43',['gamma',['../discrete__ekf__no__north_8h.html#afab4680f80cae428c439d71589fa8ab1',1,'discrete_ekf_no_north::Gamma'],['../gvf__ik_8h.html#a08d08c091abdb1c3cd2ca23c72b4a538',1,'gvf_ik_con::gamma']]],
+  ['gamma_43',['gamma',['../gvf__ik_8h.html#a08d08c091abdb1c3cd2ca23c72b4a538',1,'gvf_ik_con::gamma'],['../discrete__ekf__no__north_8h.html#afab4680f80cae428c439d71589fa8ab1',1,'discrete_ekf_no_north::Gamma']]],
   ['gamma_5famplitude_44',['gamma_amplitude',['../gvf__ik_8h.html#a1b07ed954863f0fed8aab6383e936657',1,'gvf_ik_con']]],
   ['gamma_5fcorrector_45',['gamma_corrector',['../libisp_8c.html#ad08537cc3fc235615c3240408dc9ed4f',1,'avi_isp_offsets::gamma_corrector'],['../libisp_8h.html#aaafc30868139cfec3d89327714eafd5b',1,'libisp_config::gamma_corrector']]],
   ['gamma_5fdot_46',['gamma_dot',['../gvf__ik_8h.html#a5860a7717ba0263714541dbed5bed7e2',1,'gvf_ik_con']]],

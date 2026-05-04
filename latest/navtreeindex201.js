@@ -1,5 +1,14 @@
 var NAVTREEINDEX201 =
 {
+"stabilization__indi__hinf_8c_source.html":[12,0,1,0,3,2,2,41],
+"stabilization__indi__simple_8c.html":[12,0,1,0,3,2,2,42],
+"stabilization__indi__simple_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474":[12,0,1,0,3,2,2,42,14],
+"stabilization__indi__simple_8c.html#a121fd732c65156adade05ffb27fbaf52":[12,0,1,0,3,2,2,42,18],
+"stabilization__indi__simple_8c.html#a2fc8ca5cf4573817b50ba3a20cfa78c2":[12,0,1,0,3,2,2,42,10],
+"stabilization__indi__simple_8c.html#a362a37014aa4bb541a8de211a70ba00e":[12,0,1,0,3,2,2,42,23],
+"stabilization__indi__simple_8c.html#a3c41519cb45ffcbf35b6f6228603e5cc":[12,0,1,0,3,2,2,42,1],
+"stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca":[12,0,1,0,3,2,2,42,13],
+"stabilization__indi__simple_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0":[12,0,1,0,3,2,2,42,3],
 "stabilization__indi__simple_8c.html#a51a4671d083da69c010c0985faf4d2f3":[12,0,1,0,3,2,2,42,4],
 "stabilization__indi__simple_8c.html#a53fa37c89df626ac39ce2b9bb4c6e175":[12,0,1,0,3,2,2,42,15],
 "stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38":[12,0,1,0,3,2,2,42,21],
@@ -58,8 +67,8 @@ var NAVTREEINDEX201 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,43,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,43,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,43,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,40,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,43,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,40,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,43],
 "stabilization__oneloop_8c.html":[12,0,1,0,3,2,2,44],
 "stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,44,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX201 =
 "structIndiController__int.html#acac52925417ac3775934a0f481672279":[11,0,691,2],
 "structIndiController__int.html#acacce56e284de5fc4290ba44dbc86256":[11,0,691,13],
 "structIndiController__int.html#ad8480ac5fe3030ba2a8effe3a1fe2e87":[11,0,691,19],
-"structIndiController__int.html#ae62949b696e085587434d1fcb6aa86b5":[11,0,691,9],
-"structIndiController__int.html#ae86ce4ebaf7239ec8d12e7e7d499c63f":[11,0,691,4],
-"structStabilizationSetpoint.html":[11,0,1042],
-"structStabilizationSetpoint.html#a39e02b373e8f6d8188751d7ebe2e566e":[11,0,1042,3],
-"structStabilizationSetpoint.html#a5a77b8868aa93dc1b3bd285eb936ad51":[11,0,1042,0],
-"structStabilizationSetpoint.html#a8a2fcc5791a1aa4db4b77f847656fee8":[11,0,1042,2],
-"structStabilizationSetpoint.html#ad682cbe314764339966316d5543cefc5":[11,0,1042,1],
-"structThrustSetpoint.html":[11,0,1088],
-"structThrustSetpoint.html#a8735a49250e839e84386d58203819121":[11,0,1088,0],
-"structThrustSetpoint.html#ad7e7ddf1d2947a62d07749537c05b4f0":[11,0,1088,1]
+"structIndiController__int.html#ae62949b696e085587434d1fcb6aa86b5":[11,0,691,9]
 };

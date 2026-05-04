@@ -1,14 +1,5 @@
 var NAVTREEINDEX83 =
 {
-"humid__dpicco_8c.html#a90595ebb9b16becacd49a56614c8a51d":[12,0,1,0,6,44,15,7],
-"humid__dpicco_8c.html#a97d55136395826e61d57497ff78bb203":[12,0,1,0,6,44,15,8],
-"humid__dpicco_8c.html#aa5d92a1b06d3b655cc24cf681c8530a0":[12,0,1,0,6,44,15,3],
-"humid__dpicco_8c.html#ab64952001108c919639688798891aeb5":[12,0,1,0,6,44,15,5],
-"humid__dpicco_8c.html#ac6926cbcd5906d08ed738bdf698bfb01":[12,0,1,0,6,44,15,4],
-"humid__dpicco_8c_source.html":[12,0,1,0,6,44,15],
-"humid__dpicco_8h.html":[12,0,1,0,6,44,16],
-"humid__dpicco_8h.html#a21d3360f2dd2927961136f5a596a7c6f":[12,0,1,0,6,44,16,5],
-"humid__dpicco_8h.html#a38f1d76df94354691ef53911fddcfa9c":[12,0,1,0,6,44,16,2],
 "humid__dpicco_8h.html#a391a1143f33daa4944c30d58e6be93ff":[12,0,1,0,6,44,16,8],
 "humid__dpicco_8h.html#a7e609a8e4f83def7142215e2804c0ac8":[12,0,1,0,6,44,16,4],
 "humid__dpicco_8h.html#a9c839ce01cb4826f84fa47b3e728caf5":[12,0,1,0,6,44,16,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX83 =
 "humid__sht__uart_8h.html#a24ccb0d3307ade52bfb1c68cf4b4bad6":[12,0,1,0,6,44,28,16],
 "humid__sht__uart_8h.html#a38c8b0c5097cc73e235f57b6e207dacc":[12,0,1,0,6,44,28,0],
 "humid__sht__uart_8h.html#a42870837efe17fd5bf0a411d2e56330b":[12,0,1,0,6,44,28,9],
-"humid__sht__uart_8h.html#a7b6fc59372ea31117d7b57053986f3bc":[12,0,1,0,6,44,28,12]
+"humid__sht__uart_8h.html#a7b6fc59372ea31117d7b57053986f3bc":[12,0,1,0,6,44,28,12],
+"humid__sht__uart_8h.html#a8675393909571b5504905409b7e1c990":[12,0,1,0,6,44,28,14],
+"humid__sht__uart_8h.html#a8c80d4c735b00cea3fa682112f517579":[12,0,1,0,6,44,28,5],
+"humid__sht__uart_8h.html#aa337ffbe8cf37b9f56824c1fe9037641":[12,0,1,0,6,44,28,7],
+"humid__sht__uart_8h.html#aa4ce83df68841849008efac36a05e478":[12,0,1,0,6,44,28,3],
+"humid__sht__uart_8h.html#ab5111f7c86720c03eca02d5362d3373f":[12,0,1,0,6,44,28,13],
+"humid__sht__uart_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1":[12,0,1,0,6,44,28,1],
+"humid__sht__uart_8h.html#ac5f0218db077fe52a54ab73efc45bb0a":[12,0,1,0,6,44,28,10],
+"humid__sht__uart_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6":[12,0,1,0,6,44,28,6],
+"humid__sht__uart_8h.html#ac8da7d57fd856850000c369aae9761a9":[12,0,1,0,6,44,28,4]
 };

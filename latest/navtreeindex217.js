@@ -1,5 +1,14 @@
 var NAVTREEINDEX217 =
 {
+"tfmini__i2c_8h.html#a803d106051ba0b7558f26f858130a99e":[12,0,1,0,6,40,8,1],
+"tfmini__i2c_8h.html#a803d106051ba0b7558f26f858130a99ea32965be6a6719a8545b5d50f3aad623e":[12,0,1,0,6,40,8,1,1],
+"tfmini__i2c_8h.html#a803d106051ba0b7558f26f858130a99ea95d6d0df946c263c217c61501cb22549":[12,0,1,0,6,40,8,1,0],
+"tfmini__i2c_8h.html#a87e06c515f4f2858ed821deef6595394":[12,0,1,0,6,40,8,0,4],
+"tfmini__i2c_8h.html#a91d34a70bcc9b71817f64b8cfa35d2c0":[12,0,1,0,6,40,8,0,6],
+"tfmini__i2c_8h.html#aae8bdef9d6c85316cd73c9089b2a2472":[12,0,1,0,6,40,8,0,2],
+"tfmini__i2c_8h.html#ac920c393a6f08d8421d1bf457f5e5bf8":[12,0,1,0,6,40,8,0,5],
+"tfmini__i2c_8h.html#af47e96a27a7973372e276c6af5170efc":[12,0,1,0,6,40,8,0,7],
+"tfmini__i2c_8h.html#structTFMiniI2C":[12,0,1,0,6,40,8,0],
 "tfmini__i2c_8h_source.html":[12,0,1,0,6,40,8],
 "tfmini__nps_8c.html":[12,0,1,0,6,40,9],
 "tfmini__nps_8c.html#a065916f251bec0f3ac3bf4d4881fa15e":[12,0,1,0,6,40,9,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX217 =
 "tmotor_2aiof7_2v1_2board_8h.html#a356a8c63034c31d48ed836fd40089f9a":[12,0,1,0,1,19,0,0,0,288],
 "tmotor_2aiof7_2v1_2board_8h.html#a366f7caf4ded9fb00e2aee4cf1eb01b5":[12,0,1,0,1,19,0,0,0,93],
 "tmotor_2aiof7_2v1_2board_8h.html#a379c1a8b8230163bc5fc57abb44146d1":[12,0,1,0,1,19,0,0,0,226],
-"tmotor_2aiof7_2v1_2board_8h.html#a37e2b92d022f4b7bba573f0d700f2761":[12,0,1,0,1,19,0,0,0,48],
-"tmotor_2aiof7_2v1_2board_8h.html#a37f8be42895c28de6437b33cb486552a":[12,0,1,0,1,19,0,0,0,362],
-"tmotor_2aiof7_2v1_2board_8h.html#a390a244272266697ef0ec89a58a0aa16":[12,0,1,0,1,19,0,0,0,110],
-"tmotor_2aiof7_2v1_2board_8h.html#a39192c18809ac7cd77522b0e193fabb0":[12,0,1,0,1,19,0,0,0,393],
-"tmotor_2aiof7_2v1_2board_8h.html#a39f5bc8c5a9ae9112cb64d4075b8be5a":[12,0,1,0,1,19,0,0,0,391],
-"tmotor_2aiof7_2v1_2board_8h.html#a3a00c1c0a957f244bca068859149f51e":[12,0,1,0,1,19,0,0,0,190],
-"tmotor_2aiof7_2v1_2board_8h.html#a3b3ad826d6045f8118a2e9a6b61844a4":[12,0,1,0,1,19,0,0,0,94],
-"tmotor_2aiof7_2v1_2board_8h.html#a3b48587f0c0c59bd525f9d1240b72000":[12,0,1,0,1,19,0,0,0,142],
-"tmotor_2aiof7_2v1_2board_8h.html#a3b9613597888214b2bcadeca48c09a38":[12,0,1,0,1,19,0,0,0,329],
-"tmotor_2aiof7_2v1_2board_8h.html#a3dff0949e5e169da7d3c6d15bef1efc0":[12,0,1,0,1,19,0,0,0,68]
+"tmotor_2aiof7_2v1_2board_8h.html#a37e2b92d022f4b7bba573f0d700f2761":[12,0,1,0,1,19,0,0,0,48]
 };

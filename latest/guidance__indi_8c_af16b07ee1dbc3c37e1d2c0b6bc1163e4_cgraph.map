@@ -1,0 +1,39 @@
+<map id="guidance_indi_propagate_filters" name="guidance_indi_propagate_filters">
+<area shape="rect" id="Node000001" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="5,77,191,117"/>
+<area shape="rect" id="Node000002" href="$group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="261,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,74,238,39,265,32,266,37,240,45,147,79"/>
+<area shape="rect" id="Node000006" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="239,55,433,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="191,83,225,78,226,84,191,88"/>
+<area shape="rect" id="Node000011" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="261,105,411,145"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="191,105,247,112,246,117,191,110"/>
+<area shape="rect" id="Node000013" href="$quaternion__filter_8h.html#a00a25df8965a87832754be40ed51a7bf" title="Update second order quaternion Butterworth low pass filter state with a new value." alt="" coords="243,169,429,209"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="145,114,240,154,260,162,258,167,238,159,142,119"/>
+<area shape="rect" id="Node000003" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="484,5,640,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,15,471,15,471,21,412,21"/>
+<area shape="rect" id="Node000004" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="710,5,858,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="640,15,696,15,696,21,640,21"/>
+<area shape="rect" id="Node000005" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="929,5,1077,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="858,15,915,15,915,21,858,21"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="483,55,641,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="433,65,469,65,469,70,433,70"/>
+<area shape="rect" id="Node000008" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="702,55,866,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="642,65,688,65,688,70,642,70"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="925,55,1080,80"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="866,65,912,65,912,70,866,70"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="930,104,1075,129"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="842,77,933,98,932,104,840,83"/>
+<area shape="rect" id="Node000012" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="481,105,643,145"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="412,122,468,122,468,127,412,127"/>
+<area shape="rect" id="Node000014" href="$quaternion__filter_8h.html#a12247ce3405cab9e1222d9df6213262b" title="Update second order quaterion low pass filter state with a new value." alt="" coords="484,169,640,209"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="429,186,470,186,470,191,429,191"/>
+<area shape="rect" id="Node000015" href="$group__math__algebra__float.html#gaf5b1b0d8dc344dd30ed573818c7b54dc" title="Quaternion derivative from rotational velocity." alt="" coords="704,115,864,140"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="630,166,690,149,719,141,721,146,691,154,631,171"/>
+<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#ga4dad39bc71fee81ee8ca15406c70abb5" title="Composition (multiplication) of two quaternions." alt="" coords="705,164,863,189"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="640,182,692,179,692,184,640,187"/>
+<area shape="rect" id="Node000017" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="705,213,863,239"/>
+<area shape="poly" id="edge16_Node000014_Node000017" title=" " alt="" coords="640,199,695,208,694,214,640,204"/>
+<area shape="rect" id="Node000019" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="691,263,877,288"/>
+<area shape="poly" id="edge18_Node000014_Node000019" title=" " alt="" coords="602,206,692,248,718,256,716,261,690,252,599,211"/>
+<area shape="rect" id="Node000018" href="$group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="939,213,1067,239"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="864,223,925,223,925,229,864,229"/>
+</map>

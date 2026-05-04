@@ -1,14 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"l3g4200_8h.html#structL3g4200Config":[12,0,1,0,7,61,0],
-"l3g4200_8h.html#unionL3g4200_8data":[12,0,1,0,7,61,2],
-"l3g4200_8h_source.html":[12,0,1,0,7,61],
-"l3g4200__regs_8h.html":[12,0,1,0,7,62],
-"l3g4200__regs_8h.html#a00f850e8b10e86a2cd47fc4f667ed111":[12,0,1,0,7,62,4],
-"l3g4200__regs_8h.html#a1b1e7afabd04538ad0422b8ce7782785":[12,0,1,0,7,62,10],
-"l3g4200__regs_8h.html#a1d2fec12c5619948437d773beab8249a":[12,0,1,0,7,62,30],
-"l3g4200__regs_8h.html#a1d2fec12c5619948437d773beab8249aa2f62f0ce84b6225dfac79aa9e9a8556b":[12,0,1,0,7,62,30,0],
-"l3g4200__regs_8h.html#a1d2fec12c5619948437d773beab8249aa44a44a4c93a54d7d68c06091951f4197":[12,0,1,0,7,62,30,1],
 "l3g4200__regs_8h.html#a1d2fec12c5619948437d773beab8249aa6a0c7ac0ec7f7ad3db8e62a706798edf":[12,0,1,0,7,62,30,2],
 "l3g4200__regs_8h.html#a1f86e2803a7d07efd99cc0deb742a465":[12,0,1,0,7,62,8],
 "l3g4200__regs_8h.html#a2e21cbe774c18530e8169f0972b0b0a5":[12,0,1,0,7,62,12],
@@ -249,5 +240,14 @@ var NAVTREEINDEX99 =
 "lia_2chibios_2v1_81_2board_8h.html#ab366dbaac15f5af2ac23bef4836c23c9":[12,0,1,0,1,9,0,0,0,26],
 "lia_2chibios_2v1_81_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2":[12,0,1,0,1,9,0,0,0,2],
 "lia_2chibios_2v1_81_2board_8h.html#abed465f8e9387dc4c034b1d71989043c":[12,0,1,0,1,9,0,0,0,46],
-"lia_2chibios_2v1_81_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045":[12,0,1,0,1,9,0,0,0,13]
+"lia_2chibios_2v1_81_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045":[12,0,1,0,1,9,0,0,0,13],
+"lia_2chibios_2v1_81_2board_8h.html#ac3a5ec8060a1026630d56d0ad28e70be":[12,0,1,0,1,9,0,0,0,32],
+"lia_2chibios_2v1_81_2board_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a":[12,0,1,0,1,9,0,0,0,21],
+"lia_2chibios_2v1_81_2board_8h.html#acc19e345342d6130dc5351e4dcd15fea":[12,0,1,0,1,9,0,0,0,12],
+"lia_2chibios_2v1_81_2board_8h.html#acfb9647afbce1aa3d196d6c8844578f9":[12,0,1,0,1,9,0,0,0,4],
+"lia_2chibios_2v1_81_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988":[12,0,1,0,1,9,0,0,0,48],
+"lia_2chibios_2v1_81_2board_8h.html#ad2f9b639de2f6acbba2124a980768f9b":[12,0,1,0,1,9,0,0,0,58],
+"lia_2chibios_2v1_81_2board_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,9,0,0,0,3],
+"lia_2chibios_2v1_81_2board_8h.html#add2d323f8eb544f1ab84762f94e44bd4":[12,0,1,0,1,9,0,0,0,22],
+"lia_2chibios_2v1_81_2board_8h.html#add4f03b6c5c9bcabeba314491a310346":[12,0,1,0,1,9,0,0,0,5]
 };

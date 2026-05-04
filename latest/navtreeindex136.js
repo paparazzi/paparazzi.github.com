@@ -1,14 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__radio_control_hott.html#module_load_example__radio_control_hott":[1,379,0],
-"module__radio_control_hott.html#module_xml__radio_control_hott":[1,379,2,0],
-"module__radio_control_intermcu.html":[1,380],
-"module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,380,2],
-"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,380,1],
-"module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,380,0],
-"module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,380,2,0],
-"module__radio_control_ppm.html":[1,381],
-"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,381,1],
 "module__radio_control_ppm.html#functions__radio_control_ppm":[1,381,2],
 "module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,381,0],
 "module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,381,2,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX136 =
 "module__stereocam_follow_me.html#module_xml__stereocam_follow_me":[1,469,0,0],
 "module__stereocam_nav_line_avoid.html":[1,470],
 "module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,470,1],
-"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,470,2]
+"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,470,2],
+"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,470,0],
+"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,470,2,0],
+"module__switch_servo.html":[1,472],
+"module__switch_servo.html#configuration__switch_servo":[1,472,1],
+"module__switch_servo.html#functions__switch_servo":[1,472,2],
+"module__switch_servo.html#module_load_example__switch_servo":[1,472,0],
+"module__switch_servo.html#module_xml__switch_servo":[1,472,2,0],
+"module__switch_uart.html":[1,473],
+"module__switch_uart.html#functions__switch_uart":[1,473,1]
 };

@@ -6,7 +6,7 @@ var guidance__indi_8c =
     [ "guidance_indi_controller", "guidance__indi_8c.html#aac798950dcd29c560e223d8a04e74bce", null ],
     [ "guidance_indi_enter", "guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
     [ "guidance_indi_init", "guidance__indi_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
-    [ "guidance_indi_propagate_filters", "guidance__indi_8c.html#a777bf559723c4e1ba1e9ae8d51572fff", null ],
+    [ "guidance_indi_propagate_filters", "guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4", null ],
     [ "guidance_indi_run", "guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e", null ],
     [ "guidance_indi_run_mode", "guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd", null ],
     [ "send_indi_guidance", "guidance__indi_8c.html#afe0973163d037300cb8ea5f26a18046f", null ],
@@ -24,8 +24,7 @@ var guidance__indi_8c =
     [ "indi_accel_sp", "guidance__indi_8c.html#ab70329f69e54d2e8a29ec5cee2629640", null ],
     [ "indi_accel_sp_set_2d", "guidance__indi_8c.html#ab07fe4b2b272129562100213e3d45ca7", null ],
     [ "indi_accel_sp_set_3d", "guidance__indi_8c.html#a397e4386fe0eb24345c12c4f5f3ff1a2", null ],
-    [ "pitch_filt", "guidance__indi_8c.html#a6987b53838cf70902ed70ca11492c6a7", null ],
-    [ "roll_filt", "guidance__indi_8c.html#a19dc03ef4234ea423340bcc0c249e1cf", null ],
+    [ "quat_filt", "guidance__indi_8c.html#a0989bd293a50907ba957ba53d13d092f", null ],
     [ "sp_accel", "guidance__indi_8c.html#a596a1bce76f2a37bf46aa5149ad745d7", null ],
     [ "speed_sp", "guidance__indi_8c.html#a60ff4d7566b9d5b7e9ca4485f6c56d71", null ],
     [ "thrust_act", "guidance__indi_8c.html#a62834fedbe3a96736f5743f6ede8ccbd", null ],
@@ -35,6 +34,5 @@ var guidance__indi_8c =
     [ "thrust_sp", "guidance__indi_8c.html#a92c27d98d97d2547f41110b4d4e93f92", null ],
     [ "thrust_vect", "guidance__indi_8c.html#ac2d5c8a0c9c0f4ae7efe8668dd8e4a65", null ],
     [ "time_of_accel_sp_2d", "guidance__indi_8c.html#ada1058d9f876baa193cebc5aa30daa76", null ],
-    [ "time_of_accel_sp_3d", "guidance__indi_8c.html#aa35e446e7885bff3cb2c56f8b3720269", null ],
-    [ "yaw_filt", "guidance__indi_8c.html#aa871c61fc3c85227c525a091f0f78019", null ]
+    [ "time_of_accel_sp_3d", "guidance__indi_8c.html#aa35e446e7885bff3cb2c56f8b3720269", null ]
 ];

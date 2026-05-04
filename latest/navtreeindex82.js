@@ -1,14 +1,5 @@
 var NAVTREEINDEX82 =
 {
-"holybro__kakute__f7_8h.html#a04c5c824d2e42577ce405f8126d5d3f3":[12,0,1,0,1,8,0,1,43],
-"holybro__kakute__f7_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750":[12,0,1,0,1,8,0,1,33],
-"holybro__kakute__f7_8h.html#a0bbce43be56577bdd23c83ec945fb44c":[12,0,1,0,1,8,0,1,40],
-"holybro__kakute__f7_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,8,0,1,3],
-"holybro__kakute__f7_8h.html#a0d5b57671b99c1c787bce7ea23b44133":[12,0,1,0,1,8,0,1,39],
-"holybro__kakute__f7_8h.html#a1102abe6725b0ff8c4c4a248dd46e976":[12,0,1,0,1,8,0,1,36],
-"holybro__kakute__f7_8h.html#a133a8bd30af31224040168c0edacb37d":[12,0,1,0,1,8,0,1,91],
-"holybro__kakute__f7_8h.html#a1365ea029b2ef8463ee8c0865b81749b":[12,0,1,0,1,8,0,1,22],
-"holybro__kakute__f7_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b":[12,0,1,0,1,8,0,1,1],
 "holybro__kakute__f7_8h.html#a192437e223012d0a12e92c878e3c2877":[12,0,1,0,1,8,0,1,65],
 "holybro__kakute__f7_8h.html#a1a657746fc043e286c637302b06024a1":[12,0,1,0,1,8,0,1,77],
 "holybro__kakute__f7_8h.html#a22c39ad944259723eb9fbe773e294139":[12,0,1,0,1,8,0,1,13],
@@ -249,5 +240,14 @@ var NAVTREEINDEX82 =
 "humid__dpicco_8c.html#a21d3360f2dd2927961136f5a596a7c6f":[12,0,1,0,6,44,15,2],
 "humid__dpicco_8c.html#a391a1143f33daa4944c30d58e6be93ff":[12,0,1,0,6,44,15,6],
 "humid__dpicco_8c.html#a3a5ccb0f1a64b16fe8f823beccc3b1cd":[12,0,1,0,6,44,15,0],
-"humid__dpicco_8c.html#a6e3e12fe9e161831e968d30afb48197f":[12,0,1,0,6,44,15,1]
+"humid__dpicco_8c.html#a6e3e12fe9e161831e968d30afb48197f":[12,0,1,0,6,44,15,1],
+"humid__dpicco_8c.html#a90595ebb9b16becacd49a56614c8a51d":[12,0,1,0,6,44,15,7],
+"humid__dpicco_8c.html#a97d55136395826e61d57497ff78bb203":[12,0,1,0,6,44,15,8],
+"humid__dpicco_8c.html#aa5d92a1b06d3b655cc24cf681c8530a0":[12,0,1,0,6,44,15,3],
+"humid__dpicco_8c.html#ab64952001108c919639688798891aeb5":[12,0,1,0,6,44,15,5],
+"humid__dpicco_8c.html#ac6926cbcd5906d08ed738bdf698bfb01":[12,0,1,0,6,44,15,4],
+"humid__dpicco_8c_source.html":[12,0,1,0,6,44,15],
+"humid__dpicco_8h.html":[12,0,1,0,6,44,16],
+"humid__dpicco_8h.html#a21d3360f2dd2927961136f5a596a7c6f":[12,0,1,0,6,44,16,5],
+"humid__dpicco_8h.html#a38f1d76df94354691ef53911fddcfa9c":[12,0,1,0,6,44,16,2]
 };

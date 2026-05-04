@@ -16,6 +16,7 @@ var dir_1444106569909aede49a887d28257b90 =
     [ "notch_filter.h", "notch__filter_8h.html", "notch__filter_8h" ],
     [ "notch_filter_float.h", "notch__filter__float_8h.html", "notch__filter__float_8h" ],
     [ "pid.h", "pid_8h.html", "pid_8h" ],
+    [ "quaternion_filter.h", "quaternion__filter_8h.html", "quaternion__filter_8h" ],
     [ "simple_kinematic_kalman.c", "simple__kinematic__kalman_8c.html", "simple__kinematic__kalman_8c" ],
     [ "simple_kinematic_kalman.h", "simple__kinematic__kalman_8h.html", "simple__kinematic__kalman_8h" ],
     [ "transport_delay.h", "transport__delay_8h.html", "transport__delay_8h" ],

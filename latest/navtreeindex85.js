@@ -1,14 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"image_8h.html#a74fb58c952beb85277ebce7a74e6c9f7":[12,0,1,0,6,12,1,3,8,5,3],
-"image_8h.html#a7778908dd0a40a33f1fe20080d49f99c":[12,0,1,0,6,12,1,3,8,30],
-"image_8h.html#a80f418915de01685d364a9ce7038eae7":[12,0,1,0,6,12,1,3,8,1,3],
-"image_8h.html#a8bcdc857e2b3c08194113808ca2af345":[12,0,1,0,6,12,1,3,8,0,4],
-"image_8h.html#a946e57aea5ff8c79adee46cb2c72dd80":[12,0,1,0,6,12,1,3,8,13],
-"image_8h.html#a94dcb784f31e65bdc562452321371a5f":[12,0,1,0,6,12,1,3,8,22],
-"image_8h.html#a9745125ba8d5be3b499b8ff972e189ee":[12,0,1,0,6,12,1,3,8,23],
-"image_8h.html#a9e1f174887c55e2810ce31dc7d6054b4":[12,0,1,0,6,12,1,3,8,0,1],
-"image_8h.html#aa09d6434519478ba26eab12a96d600ba":[12,0,1,0,6,12,1,3,8,18],
 "image_8h.html#aa3c13c99294ff126c4c019d5e799253e":[12,0,1,0,6,12,1,3,8,0,8],
 "image_8h.html#aa5bba6b2f386abf2ac701492f6a48bc9":[12,0,1,0,6,12,1,3,8,29],
 "image_8h.html#aaa4259997b28b4d757f7bf42928e4ca6":[12,0,1,0,6,12,1,3,8,1,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX85 =
 "imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd":[12,0,1,0,6,36,9,3],
 "imu__aspirin__2__spi_8h.html#a1f0c646f86fd130d4848c56794a0ce09":[12,0,1,0,6,36,9,0,2],
 "imu__aspirin__2__spi_8h.html#a27be1e08c9cdd2e92a111fd74c48c411":[12,0,1,0,6,36,9,0,0],
-"imu__aspirin__2__spi_8h.html#a38d2652d2dc20c0dccb14c60e15fbebc":[12,0,1,0,6,36,9,6]
+"imu__aspirin__2__spi_8h.html#a38d2652d2dc20c0dccb14c60e15fbebc":[12,0,1,0,6,36,9,6],
+"imu__aspirin__2__spi_8h.html#a4f8b496b4f04d19aafab4035c173936d":[12,0,1,0,6,36,9,1],
+"imu__aspirin__2__spi_8h.html#a8a9e3c5580407c3e071a7417d37320fb":[12,0,1,0,6,36,9,5],
+"imu__aspirin__2__spi_8h.html#a9cf73d57b9c9509d11eb3b9c67fcae9e":[12,0,1,0,6,36,9,0,4],
+"imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424":[12,0,1,0,6,36,9,4],
+"imu__aspirin__2__spi_8h.html#adbf77040b4eaecebd0929cb993df4484":[12,0,1,0,6,36,9,0,3],
+"imu__aspirin__2__spi_8h.html#structImuAspirin2Spi":[12,0,1,0,6,36,9,0],
+"imu__aspirin__2__spi_8h_source.html":[12,0,1,0,6,36,9],
+"imu__aspirin__i2c_8c.html":[12,0,1,0,6,36,10],
+"imu__aspirin__i2c_8c.html#a15394594a2ff3d526d3adf8ea72fd6d5":[12,0,1,0,6,36,10,1]
 };

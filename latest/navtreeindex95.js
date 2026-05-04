@@ -1,14 +1,5 @@
 var NAVTREEINDEX95 =
 {
-"invensense3_8h.html#structinvensense3__spi__t":[12,0,1,0,7,49,0],
-"invensense3_8h.html#structinvensense3__t":[12,0,1,0,7,49,2],
-"invensense3_8h.html#unioninvensense3__t_8____unnamed332____":[12,0,1,0,7,49,3],
-"invensense3_8h_source.html":[12,0,1,0,7,49],
-"invensense3__456_8c.html":[12,0,1,0,7,50],
-"invensense3__456_8c.html#a2aca0a9723f33f936e4a565490f3077e":[12,0,1,0,7,50,2],
-"invensense3__456_8c.html#a3a484845052c48c8385a4d83e0a56ebb":[12,0,1,0,7,50,10],
-"invensense3__456_8c.html#a4bebeb64b8f0b21a1169dc41d766b8a0":[12,0,1,0,7,50,5],
-"invensense3__456_8c.html#aa04d7f8580fe4e0a8ba709054d292e4e":[12,0,1,0,7,50,6],
 "invensense3__456_8c.html#ab3128cf362ea542cd496ccaa93c62f5d":[12,0,1,0,7,50,3],
 "invensense3__456_8c.html#ab76a330d753a130c62c93398cb0bcaef":[12,0,1,0,7,50,8],
 "invensense3__456_8c.html#ac8d9572040a35b6e126c2432516b8ea8":[12,0,1,0,7,50,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX95 =
 "invensense3__regs_8h.html#ae33f39376d0bd17e7c1b7b38033c28c2":[12,0,1,0,7,53,29],
 "invensense3__regs_8h.html#ae3542b9e4399874f3cfb2fe2d51ab574":[12,0,1,0,7,53,33],
 "invensense3__regs_8h.html#ae441d9cf7ffb8db06ab65f185ad910fc":[12,0,1,0,7,53,120],
-"invensense3__regs_8h.html#ae942c2e8583f4d0ecb7775f26ace7989":[12,0,1,0,7,53,109]
+"invensense3__regs_8h.html#ae942c2e8583f4d0ecb7775f26ace7989":[12,0,1,0,7,53,109],
+"invensense3__regs_8h.html#aea63f08556dd05b658a8f1aeaac48c68":[12,0,1,0,7,53,93],
+"invensense3__regs_8h.html#aec678cc3fdd41e2d097b6da19df23c5c":[12,0,1,0,7,53,13],
+"invensense3__regs_8h.html#aed52ea26ea9dd18445d1336fc8a4813d":[12,0,1,0,7,53,50],
+"invensense3__regs_8h.html#aeec09643ca49966e35a31f3c7e263016":[12,0,1,0,7,53,6],
+"invensense3__regs_8h.html#aef27c7ab3c4737f87b9ab0059f392a1f":[12,0,1,0,7,53,80],
+"invensense3__regs_8h.html#af092e0e064f4159d4d7a573af8af117c":[12,0,1,0,7,53,25],
+"invensense3__regs_8h.html#af23a7f58d04c890c8e9b26d6576c41d4":[12,0,1,0,7,53,21],
+"invensense3__regs_8h.html#af290b00d7a634f2889c34b972abbea37":[12,0,1,0,7,53,150],
+"invensense3__regs_8h.html#af6c8492f26d20fac545388043c0004a8":[12,0,1,0,7,53,122]
 };
