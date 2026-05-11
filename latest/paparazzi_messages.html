@@ -300,6 +300,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#IMU_GYRO_LP">IMU_GYRO_LP (ID 209)</a></li>
 <li class="level2"><a href="#IMU_PRESSURE">IMU_PRESSURE (ID 210)</a></li>
 <li class="level2"><a href="#WINDTUNNEL_MEAS">WINDTUNNEL_MEAS (ID 211)</a></li>
+<li class="level2"><a href="#DRAW">DRAW (ID 212)</a></li>
 <li class="level2"><a href="#TUNE_VERT">TUNE_VERT (ID 213)</a></li>
 <li class="level2"><a href="#MF_DAQ_STATE">MF_DAQ_STATE (ID 214)</a></li>
 <li class="level2"><a href="#INFO_MSG">INFO_MSG (ID 215)</a></li>
@@ -4389,6 +4390,40 @@ WINDTUNNEL_MEAS (ID 211)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">commands   </td><td class="markdownTableBodyNone">int32[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Commands send to actuators   </td></tr>
 </table>
+<h2><a class="anchor" id="DRAW"></a>
+DRAW (ID 212)</h2>
+<p>The DRAW message is sent to the ground server to be resent as a SHAPE message. </p><pre class="fragment">    Id, shape, status, radois, latarr, lonarr and text are retransmitted as is.
+    Color is reinterpreted as follows: aa lll fff
+    - aa: Two top bits for fill opacity, with 0 = Transparent, 1 = Light, 2 = Medium and 3 = Opaque
+    - lll, fff: An index to the colormap, with the following mapping:
+      - 0 : "black"
+      - 1 : "red"
+      - 2 : "green"
+      - 3 : "yellow"
+      - 4 : "blue"
+      - 5 : "magenta"
+      - 6 : "cyan"
+      - 7 : "white"
+</pre> <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">color   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">2 bits for opacity, 3 bits for line color, 3 bits for fill color    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">shape   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Circle, Polygon, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#structLine">Line</a>   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">status   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">create, delete   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">radius   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">latarr   </td><td class="markdownTableBodyNone">int32[]   </td><td class="markdownTableBodyNone">1e7deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lonarr   </td><td class="markdownTableBodyNone">int32[]   </td><td class="markdownTableBodyNone">1e7deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">text   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h2><a class="anchor" id="TUNE_VERT"></a>
 TUNE_VERT (ID 213)</h2>
 <table class="markdownTable">
@@ -7178,7 +7213,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 8 2026 16:58:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon May 11 2026 16:18:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

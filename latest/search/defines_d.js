@@ -175,7 +175,7 @@ var searchData=
   ['micros_172',['micros',['../cc2500__compat_8h.html#af04b03ecd784400b6957697f7584ec58',1,'cc2500_compat.h']]],
   ['milliampereofadc_173',['MilliAmpereOfAdc',['../electrical_8c.html#a4d130fa14265d4aefded214285df4915',1,'electrical.c']]],
   ['millis_174',['millis',['../cc2500__compat_8h.html#ad5b3ec1ce839fa1c4337a7d0312e9749',1,'cc2500_compat.h']]],
-  ['min_175',['min',['../sdLog_8c.html#a74e75242132eaabbc1c512488a135926',1,'MIN:&#160;sdLog.c'],['../cc2500__compat_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'MIN:&#160;cc2500_compat.h'],['../esc__dshot_8c.html#a202767af7f06cef8e1c69d9771f157c3',1,'Min:&#160;esc_dshot.c']]],
+  ['min_175',['min',['../esc__dshot_8c.html#a202767af7f06cef8e1c69d9771f157c3',1,'Min:&#160;esc_dshot.c'],['../sdLog_8c.html#a74e75242132eaabbc1c512488a135926',1,'MIN:&#160;sdLog.c'],['../cc2500__compat_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'MIN:&#160;cc2500_compat.h']]],
   ['min_5farming_5ftrig_176',['MIN_ARMING_TRIG',['../opa__controller__fbw_8c.html#ac1731ef682faababe7582977463d3b3e',1,'opa_controller_fbw.c']]],
   ['min_5fbat_5flevel_177',['MIN_BAT_LEVEL',['../electrical_8c.html#ae718155e6e9f20accaa19604a341f982',1,'electrical.c']]],
   ['min_5fcmd_5fshut_178',['MIN_CMD_SHUT',['../rover__guidance__steering_8h.html#ab68b3dbfd9b1ed16d39f5b8930ca2484',1,'rover_guidance_steering.h']]],
