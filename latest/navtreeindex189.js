@@ -1,5 +1,17 @@
 var NAVTREEINDEX189 =
 {
+"rover_2autopilot__generated_8h.html#af8a88318eb9987a9a42010173dbcf65d":[12,0,1,0,3,3,5,5],
+"rover_2autopilot__generated_8h_source.html":[12,0,1,0,3,3,5],
+"rover_2autopilot__rc__helpers_8h.html":[12,0,1,0,3,3,6],
+"rover_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b":[12,0,1,0,3,3,6,5],
+"rover_2autopilot__rc__helpers_8h.html#a4283b5e77477e4c499cfba6c902cdea7":[12,0,1,0,3,3,6,4],
+"rover_2autopilot__rc__helpers_8h.html#a5541af1f39db9db37eb4e4d1673aac4c":[12,0,1,0,3,3,6,3],
+"rover_2autopilot__rc__helpers_8h.html#a5844738d9e11a99f5799b6eaa0d57480":[12,0,1,0,3,3,6,2],
+"rover_2autopilot__rc__helpers_8h.html#a745dcdb712b34556e5bea0b416760894":[12,0,1,0,3,3,6,1],
+"rover_2autopilot__rc__helpers_8h.html#a7769f1bee81960265c7c0bb2980d1edd":[12,0,1,0,3,3,6,9],
+"rover_2autopilot__rc__helpers_8h.html#a7d1a81b1597fffdf2b87d936b5441f5c":[12,0,1,0,3,3,6,11],
+"rover_2autopilot__rc__helpers_8h.html#a7f4862b02da72ab20a01b363df541947":[12,0,1,0,3,3,6,0],
+"rover_2autopilot__rc__helpers_8h.html#aa893fedb4c84c86bcbc8f7ec075ced57":[12,0,1,0,3,3,6,6],
 "rover_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094":[12,0,1,0,3,3,6,8],
 "rover_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94":[12,0,1,0,3,3,6,10],
 "rover_2autopilot__rc__helpers_8h.html#acd1ef4f5d7952bb8e3088e8800fa1ce5":[12,0,1,0,3,3,6,7],
@@ -237,17 +249,5 @@ var NAVTREEINDEX189 =
 "rover__guidance__holonomic_8h.html#af4d00ec6b7a3b6cae12b31829155801a":[12,0,1,0,3,3,0,3,3,0],
 "rover__guidance__holonomic_8h.html#afe96b03fe50b2f6f48a13485b3a62f32":[12,0,1,0,3,3,0,3,0,2],
 "rover__guidance__holonomic_8h.html#structRoverHoloGuidance":[12,0,1,0,3,3,0,3,3],
-"rover__guidance__holonomic_8h.html#structRoverHoloGuidanceControl":[12,0,1,0,3,3,0,3,2],
-"rover__guidance__holonomic_8h.html#structRoverHoloGuidancePID":[12,0,1,0,3,3,0,3,1],
-"rover__guidance__holonomic_8h.html#structRoverHoloGuidanceSetpoint":[12,0,1,0,3,3,0,3,0],
-"rover__guidance__holonomic_8h_source.html":[12,0,1,0,3,3,0,3],
-"rover__guidance__steering_8c.html":[12,0,1,0,3,3,0,4],
-"rover__guidance__steering_8c.html#a0185a8119f285985444db413c3b51863":[12,0,1,0,3,3,0,4,10],
-"rover__guidance__steering_8c.html#a130b452de0028f1c748712c7ebdc1e0d":[12,0,1,0,3,3,0,4,3],
-"rover__guidance__steering_8c.html#a208b846ae96f3e4f7919a19522f6b72f":[12,0,1,0,3,3,0,4,17],
-"rover__guidance__steering_8c.html#a20c52f51bc92edd57a7ebbfe56c27e1a":[12,0,1,0,3,3,0,4,0],
-"rover__guidance__steering_8c.html#a30e256c0e45b668703a7574894873f11":[12,0,1,0,3,3,0,4,16],
-"rover__guidance__steering_8c.html#a38d062260634443f3e299539db45d9c9":[12,0,1,0,3,3,0,4,2],
-"rover__guidance__steering_8c.html#a3cccdbe071f52b122ead33739d03509c":[12,0,1,0,3,3,0,4,13],
-"rover__guidance__steering_8c.html#a4aa67d601f9015d5558cbf924c125263":[12,0,1,0,3,3,0,4,11]
+"rover__guidance__holonomic_8h.html#structRoverHoloGuidanceControl":[12,0,1,0,3,3,0,3,2]
 };

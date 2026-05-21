@@ -1,5 +1,17 @@
 var NAVTREEINDEX137 =
 {
+"module__stabilization_rate.html#functions__stabilization_rate":[1,464,2],
+"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,464,0],
+"module__stabilization_rate.html#module_xml__stabilization_rate":[1,464,2,0],
+"module__stabilization_rate_indi.html":[1,465],
+"module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,465,1],
+"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,465,0],
+"module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,465,1,0],
+"module__stabilization_rotorcraft.html":[1,466],
+"module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft":[1,466,1],
+"module__stabilization_rotorcraft.html#functions__stabilization_rotorcraft":[1,466,2],
+"module__stabilization_rotorcraft.html#module_load_example__stabilization_rotorcraft":[1,466,0],
+"module__stabilization_rotorcraft.html#module_xml__stabilization_rotorcraft":[1,466,2,0],
 "module__state_interface.html":[1,86],
 "module__state_interface.html#functions__state_interface":[1,86,1],
 "module__state_interface.html#module_load_example__state_interface":[1,86,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX137 =
 "module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2":[1,56,1],
 "module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2":[1,56,0],
 "module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2":[1,56,1,0],
-"module__vertical_ctrl_module_demo.html":[1,110],
-"module__vertical_ctrl_module_demo.html#configuration__vertical_ctrl_module_demo":[1,110,1],
-"module__vertical_ctrl_module_demo.html#functions__vertical_ctrl_module_demo":[1,110,2],
-"module__vertical_ctrl_module_demo.html#module_load_example__vertical_ctrl_module_demo":[1,110,0],
-"module__vertical_ctrl_module_demo.html#module_xml__vertical_ctrl_module_demo":[1,110,2,0],
-"module__video_capture.html":[1,71],
-"module__video_capture.html#configuration__video_capture":[1,71,1],
-"module__video_capture.html#functions__video_capture":[1,71,2],
-"module__video_capture.html#module_load_example__video_capture":[1,71,0],
-"module__video_capture.html#module_xml__video_capture":[1,71,2,0],
-"module__video_exif.html":[1,72],
-"module__video_exif.html#functions__video_exif":[1,72,1],
-"module__video_exif.html#module_load_example__video_exif":[1,72,0]
+"module__vertical_ctrl_module_demo.html":[1,110]
 };

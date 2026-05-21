@@ -1,5 +1,17 @@
 var NAVTREEINDEX136 =
 {
+"module__px4_gimbal.html#module_load_example__px4_gimbal":[1,522,0],
+"module__px4_gimbal.html#module_xml__px4_gimbal":[1,522,2,0],
+"module__px4flow.html":[1,372],
+"module__px4flow.html#configuration__px4flow":[1,372,1],
+"module__px4flow.html#functions__px4flow":[1,372,2],
+"module__px4flow.html#module_load_example__px4flow":[1,372,0],
+"module__px4flow.html#module_xml__px4flow":[1,372,2,0],
+"module__px4flow_i2c.html":[1,373],
+"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,373,1],
+"module__px4flow_i2c.html#functions__px4flow_i2c":[1,373,2],
+"module__px4flow_i2c.html#module_load_example__px4flow_i2c":[1,373,0],
+"module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,373,2,0],
 "module__radio_control_cc2500_frsky.html":[1,376],
 "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky":[1,376,1],
 "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky":[1,376,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX136 =
 "module__stabilization_plane_pid.html#module_load_example__stabilization_plane_pid":[1,463,0],
 "module__stabilization_plane_pid.html#module_xml__stabilization_plane_pid":[1,463,2,0],
 "module__stabilization_rate.html":[1,464],
-"module__stabilization_rate.html#configuration__stabilization_rate":[1,464,1],
-"module__stabilization_rate.html#functions__stabilization_rate":[1,464,2],
-"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,464,0],
-"module__stabilization_rate.html#module_xml__stabilization_rate":[1,464,2,0],
-"module__stabilization_rate_indi.html":[1,465],
-"module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,465,1],
-"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,465,0],
-"module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,465,1,0],
-"module__stabilization_rotorcraft.html":[1,466],
-"module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft":[1,466,1],
-"module__stabilization_rotorcraft.html#functions__stabilization_rotorcraft":[1,466,2],
-"module__stabilization_rotorcraft.html#module_load_example__stabilization_rotorcraft":[1,466,0],
-"module__stabilization_rotorcraft.html#module_xml__stabilization_rotorcraft":[1,466,2,0]
+"module__stabilization_rate.html#configuration__stabilization_rate":[1,464,1]
 };

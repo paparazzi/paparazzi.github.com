@@ -1,5 +1,17 @@
 var NAVTREEINDEX86 =
 {
+"imu__aspirin_8h.html#aeafeb2e52542aacfde056216e597ab1a":[12,0,1,0,6,36,7,5],
+"imu__aspirin_8h.html#afe2fe8a7f14fa2170a07ff995a3e11c3":[12,0,1,0,6,36,7,0,2],
+"imu__aspirin_8h.html#structImuAspirin":[12,0,1,0,6,36,7,0],
+"imu__aspirin_8h_source.html":[12,0,1,0,6,36,7],
+"imu__aspirin__2__spi_8c.html":[12,0,1,0,6,36,8],
+"imu__aspirin__2__spi_8c.html#a06f00b43155f4f09c8dabf807b7a5641":[12,0,1,0,6,36,8,1],
+"imu__aspirin__2__spi_8c.html#a1a38bc22938339bda9589c5794c645b4":[12,0,1,0,6,36,8,8],
+"imu__aspirin__2__spi_8c.html#a1d1263b727aeee52bd78b9d3ec3b40bd":[12,0,1,0,6,36,8,11],
+"imu__aspirin__2__spi_8c.html#a2bd978d7cced1a6ac2c30b1cea574917":[12,0,1,0,6,36,8,0],
+"imu__aspirin__2__spi_8c.html#a37f4036eb3a74b5ecfdb8ecfb08bd82c":[12,0,1,0,6,36,8,5],
+"imu__aspirin__2__spi_8c.html#a38d2652d2dc20c0dccb14c60e15fbebc":[12,0,1,0,6,36,8,17],
+"imu__aspirin__2__spi_8c.html#a39cf7c1941c077d34a6606ac27f8e804":[12,0,1,0,6,36,8,3],
 "imu__aspirin__2__spi_8c.html#a3c56a9582419d8793d126fee919e97de":[12,0,1,0,6,36,8,4],
 "imu__aspirin__2__spi_8c.html#a7223761de0cabf70ad3961ac1764d621":[12,0,1,0,6,36,8,16],
 "imu__aspirin__2__spi_8c.html#a7b969377ba70ed1e73b1454f028cb3ee":[12,0,1,0,6,36,8,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX86 =
 "imu__mpu60x0__i2c_8h.html#aa740baedc08188687c2bc4bdd1e6e1a0":[12,0,1,0,6,36,29,0,0],
 "imu__mpu60x0__i2c_8h.html#ab420cb957cbc75c8b66d4010d20fa054":[12,0,1,0,6,36,29,2],
 "imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31":[12,0,1,0,6,36,29,3],
-"imu__mpu60x0__i2c_8h.html#adc64a57ef94d3c388f4960b8e3ac952c":[12,0,1,0,6,36,29,6],
-"imu__mpu60x0__i2c_8h.html#structImuMpu60x0":[12,0,1,0,6,36,29,0],
-"imu__mpu60x0__i2c_8h_source.html":[12,0,1,0,6,36,29],
-"imu__mpu9250_8c.html":[12,0,1,0,6,36,30],
-"imu__mpu9250_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,30,3],
-"imu__mpu9250_8c.html#a649ab3b18b96c1fcd5389a2280f204f6":[12,0,1,0,6,36,30,4],
-"imu__mpu9250_8c.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,36,30,2],
-"imu__mpu9250_8c.html#aa067aafb827fab3041c7a39e90293fce":[12,0,1,0,6,36,30,0],
-"imu__mpu9250_8c.html#aaeae082ea0b6f4a737c932aa350d3b69":[12,0,1,0,6,36,30,5],
-"imu__mpu9250_8c.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,30,1],
-"imu__mpu9250_8c_source.html":[12,0,1,0,6,36,30],
-"imu__mpu9250_8h.html":[12,0,1,0,6,36,31],
-"imu__mpu9250_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,36,31,2]
+"imu__mpu60x0__i2c_8h.html#adc64a57ef94d3c388f4960b8e3ac952c":[12,0,1,0,6,36,29,6]
 };

@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('gvf__parametric_8cpp.html',''); initRe
 <code>#include &lt;Eigen/Dense&gt;</code><br />
 <code>#include &quot;<a class="el" href="gvf__parametric_8h_source.html">gvf_parametric.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gvf__adapted__step_8h_source.html">gvf_adapted_step.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gvf_parametric.cpp:</div>
@@ -113,32 +114,34 @@ $(document).ready(function(){initNavTree('gvf__parametric_8cpp.html',''); initRe
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gvf__parametric_8cpp__incl.png" border="0" usemap="#asw_2airborne_2modules_2guidance_2gvf__parametric_2gvf__parametric_8cpp" alt=""/></div>
 <map name="asw_2airborne_2modules_2guidance_2gvf__parametric_2gvf__parametric_8cpp" id="asw_2airborne_2modules_2guidance_2gvf__parametric_2gvf__parametric_8cpp">
-<area shape="rect" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="774,5,962,60"/>
-<area shape="rect" title=" " alt="" coords="529,108,609,133"/>
-<area shape="poly" title=" " alt="" coords="777,63,623,107,621,102,776,58"/>
-<area shape="rect" title=" " alt="" coords="634,108,737,133"/>
-<area shape="poly" title=" " alt="" coords="813,62,723,105,721,100,811,58"/>
-<area shape="rect" href="gvf__parametric_8h.html" title="Guiding vector field algorithm for 2D and 3D parametric trajectories." alt="" coords="1988,277,2121,302"/>
-<area shape="poly" title=" " alt="" coords="963,43,1303,93,1516,132,1730,179,1887,225,2013,269,2012,274,1886,230,1729,184,1515,137,1302,98,962,48"/>
+<area shape="rect" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="991,5,1179,60"/>
+<area shape="rect" title=" " alt="" coords="645,108,725,133"/>
+<area shape="poly" title=" " alt="" coords="992,57,739,110,738,105,991,51"/>
+<area shape="rect" title=" " alt="" coords="750,108,853,133"/>
+<area shape="poly" title=" " alt="" coords="999,63,853,107,851,102,998,58"/>
+<area shape="rect" href="gvf__parametric_8h.html" title="Guiding vector field algorithm for 2D and 3D parametric trajectories." alt="" coords="1971,277,2104,302"/>
+<area shape="poly" title=" " alt="" coords="1180,52,1415,107,1695,179,1859,227,1991,270,1989,275,1857,232,1694,184,1414,112,1179,57"/>
 <area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="1198,108,1290,133"/>
-<area shape="poly" title=" " alt="" coords="963,53,1185,103,1184,108,962,58"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="761,108,975,133"/>
-<area shape="poly" title=" " alt="" coords="871,60,871,94,865,94,865,60"/>
-<area shape="rect" href="gvf__common_8h.html" title=" " alt="" coords="1927,445,2094,485"/>
-<area shape="poly" title=" " alt="" coords="2071,300,2090,319,2109,343,2120,370,2120,384,2116,399,2097,423,2072,441,2069,436,2093,419,2111,396,2115,384,2115,371,2105,345,2087,322,2067,304"/>
-<area shape="rect" href="gvf__param__traj_8h.html" title=" " alt="" coords="1883,357,2101,397"/>
-<area shape="poly" title=" " alt="" coords="2048,304,2016,347,2012,344,2044,301"/>
-<area shape="rect" title=" " alt="" coords="1435,533,1490,559"/>
-<area shape="poly" title=" " alt="" coords="1928,485,1908,488,1680,520,1504,542,1504,537,1679,515,1908,483,1927,480"/>
-<area shape="poly" title=" " alt="" coords="1999,397,2006,431,2001,432,1994,398"/>
-<area shape="poly" title=" " alt="" coords="1971,400,1907,452,1859,488,1811,505,1762,519,1663,538,1574,546,1504,548,1504,543,1573,541,1663,532,1761,514,1810,500,1856,483,1903,448,1968,395"/>
-<area shape="poly" title=" " alt="" coords="1235,135,1191,190,1168,228,1151,270,1146,290,1150,308,1176,349,1207,387,1243,420,1282,449,1359,496,1424,527,1421,531,1357,501,1279,454,1240,424,1204,390,1171,352,1146,310,1140,290,1145,269,1163,226,1187,187,1231,132"/>
+<area shape="poly" title=" " alt="" coords="1135,58,1212,99,1209,104,1133,62"/>
+<area shape="rect" href="gvf__adapted__step_8h.html" title="Dynamic parametric step adaptation for the GVF algorithm." alt="" coords="1758,108,1909,133"/>
+<area shape="poly" title=" " alt="" coords="1180,42,1739,105,1745,106,1744,111,1738,111,1179,47"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="877,108,1091,133"/>
+<area shape="poly" title=" " alt="" coords="1056,62,1010,101,1006,97,1053,58"/>
+<area shape="rect" href="gvf__common_8h.html" title=" " alt="" coords="1910,445,2077,485"/>
+<area shape="poly" title=" " alt="" coords="2054,300,2073,319,2092,343,2103,370,2103,384,2098,399,2079,423,2055,441,2052,436,2076,419,2094,396,2098,384,2098,371,2087,345,2069,322,2050,304"/>
+<area shape="rect" href="gvf__param__traj_8h.html" title=" " alt="" coords="1865,357,2084,397"/>
+<area shape="poly" title=" " alt="" coords="2031,304,1999,347,1995,344,2027,301"/>
+<area shape="rect" title=" " alt="" coords="1418,533,1473,559"/>
+<area shape="poly" title=" " alt="" coords="1910,485,1891,488,1663,520,1487,542,1486,537,1662,515,1890,483,1909,480"/>
+<area shape="poly" title=" " alt="" coords="1981,397,1989,431,1984,432,1976,398"/>
+<area shape="poly" title=" " alt="" coords="1954,400,1889,452,1841,488,1794,505,1745,519,1646,538,1556,546,1487,548,1487,543,1556,541,1645,532,1744,514,1792,500,1839,483,1886,448,1951,395"/>
+<area shape="poly" title=" " alt="" coords="1236,135,1178,202,1150,240,1133,270,1128,290,1133,308,1158,349,1190,387,1226,420,1265,449,1342,496,1406,527,1404,531,1339,501,1262,454,1223,424,1186,390,1154,352,1128,310,1123,290,1128,268,1145,238,1174,199,1232,132"/>
 <area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="849,189,946,214"/>
 <area shape="poly" title=" " alt="" coords="1199,135,960,189,959,183,1197,130"/>
-<area shape="rect" title=" " alt="" coords="1160,277,1320,302"/>
-<area shape="poly" title=" " alt="" coords="1290,119,1385,123,1437,128,1487,136,1528,149,1557,167,1565,179,1568,192,1564,207,1554,224,1465,245,1312,277,1311,271,1464,240,1550,219,1559,205,1563,192,1561,181,1554,171,1526,154,1486,141,1436,133,1384,128,1290,124"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="1651,189,1717,214"/>
-<area shape="poly" title=" " alt="" coords="1291,126,1598,179,1637,187,1636,192,1597,184,1290,132"/>
+<area shape="rect" title=" " alt="" coords="1143,277,1303,302"/>
+<area shape="poly" title=" " alt="" coords="1290,119,1384,123,1437,128,1487,136,1529,149,1557,167,1566,179,1568,192,1564,207,1554,224,1295,277,1294,271,1550,219,1560,205,1563,192,1561,181,1554,171,1526,154,1486,142,1436,133,1384,128,1290,124"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="1616,189,1683,214"/>
+<area shape="poly" title=" " alt="" coords="1291,124,1429,144,1514,159,1598,179,1608,182,1607,187,1597,184,1513,165,1428,149,1290,130"/>
 <area shape="rect" title=" " alt="" coords="1022,189,1149,214"/>
 <area shape="poly" title=" " alt="" coords="1222,136,1122,185,1119,180,1220,131"/>
 <area shape="rect" title=" " alt="" coords="1224,189,1381,214"/>
@@ -147,62 +150,62 @@ $(document).ready(function(){initNavTree('gvf__parametric_8cpp.html',''); initRe
 <area shape="poly" title=" " alt="" coords="1278,131,1428,182,1426,187,1276,136"/>
 <area shape="rect" title=" " alt="" coords="859,277,946,302"/>
 <area shape="poly" title=" " alt="" coords="901,214,904,263,898,263,895,214"/>
-<area shape="poly" title=" " alt="" coords="1651,212,1492,243,1418,260,1384,272,1365,294,1359,306,1357,322,1359,346,1369,379,1413,484,1426,504,1441,522,1437,525,1421,508,1408,487,1364,381,1354,347,1351,322,1354,304,1361,291,1381,267,1417,255,1490,238,1650,206"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1627,365,1807,390"/>
-<area shape="poly" title=" " alt="" coords="1698,212,1718,237,1735,268,1739,291,1738,313,1729,352,1724,351,1733,312,1733,291,1729,270,1713,240,1694,216"/>
-<area shape="rect" title=" " alt="" coords="2531,533,2602,559"/>
-<area shape="poly" title=" " alt="" coords="1718,201,1801,206,1918,217,2052,236,2186,267,2243,285,2287,304,2381,355,2454,392,2484,412,2517,444,2543,482,2561,519,2556,522,2538,485,2513,447,2480,416,2451,397,2379,360,2285,308,2242,290,2185,272,2051,242,1917,222,1801,211,1717,206"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="2176,365,2368,390"/>
-<area shape="poly" title=" " alt="" coords="1718,199,1795,201,1900,210,2018,230,2078,246,2134,267,2170,286,2203,308,2254,353,2250,357,2199,313,2167,290,2132,272,2076,251,2017,235,1899,215,1794,206,1718,205"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1570,269,1721,309"/>
-<area shape="poly" title=" " alt="" coords="1681,215,1662,258,1657,255,1676,213"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1395,269,1546,309"/>
-<area shape="poly" title=" " alt="" coords="1656,217,1532,267,1530,262,1654,212"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="1797,269,1963,309"/>
-<area shape="poly" title=" " alt="" coords="1711,212,1826,261,1823,266,1709,217"/>
-<area shape="poly" title=" " alt="" coords="1705,392,1584,488,1504,530,1501,525,1581,483,1701,388"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="2118,453,2274,478"/>
-<area shape="poly" title=" " alt="" coords="1788,387,2106,443,2130,447,2129,453,2105,448,1787,393"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="1647,453,1801,478"/>
-<area shape="poly" title=" " alt="" coords="1721,390,1725,439,1719,439,1716,390"/>
-<area shape="rect" title=" " alt="" coords="1501,453,1571,478"/>
-<area shape="poly" title=" " alt="" coords="1694,393,1574,449,1572,444,1692,388"/>
-<area shape="poly" title=" " alt="" coords="2146,481,2106,488,1931,510,1759,527,1504,545,1504,540,1758,522,1930,505,2105,483,2145,475"/>
-<area shape="rect" title=" " alt="" coords="2390,533,2453,559"/>
-<area shape="poly" title=" " alt="" coords="2230,475,2378,527,2376,532,2228,481"/>
-<area shape="poly" title=" " alt="" coords="2250,475,2519,532,2518,537,2249,481"/>
-<area shape="rect" title=" " alt="" coords="2189,533,2257,559"/>
-<area shape="poly" title=" " alt="" coords="2202,477,2217,520,2212,521,2197,479"/>
-<area shape="poly" title=" " alt="" coords="1687,481,1504,535,1503,530,1685,475"/>
-<area shape="poly" title=" " alt="" coords="2264,392,2218,443,2214,440,2260,388"/>
-<area shape="poly" title=" " alt="" coords="2369,380,2403,387,2437,400,2469,418,2494,444,2501,465,2494,487,2478,510,2457,528,2453,524,2474,506,2490,484,2496,465,2490,447,2465,422,2435,405,2402,393,2368,385"/>
-<area shape="poly" title=" " alt="" coords="2342,387,2398,401,2448,422,2466,435,2478,450,2480,468,2470,487,2457,498,2437,508,2385,524,2271,543,2270,537,2384,519,2435,503,2454,494,2466,484,2474,467,2473,452,2463,439,2445,427,2396,407,2341,393"/>
-<area shape="rect" title=" " alt="" coords="2299,453,2456,478"/>
-<area shape="poly" title=" " alt="" coords="2288,388,2354,442,2351,446,2285,392"/>
-<area shape="poly" title=" " alt="" coords="1636,311,1607,354,1566,399,1544,414,1525,422,1507,430,1490,447,1473,483,1467,520,1461,519,1468,482,1486,444,1504,426,1523,417,1542,409,1562,395,1602,350,1632,308"/>
-<area shape="poly" title=" " alt="" coords="1663,308,1701,352,1697,355,1659,311"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="1427,365,1552,390"/>
-<area shape="poly" title=" " alt="" coords="1612,312,1523,360,1521,356,1610,307"/>
-<area shape="poly" title=" " alt="" coords="1450,312,1431,333,1417,358,1412,380,1411,402,1418,447,1433,488,1450,520,1446,523,1429,490,1413,448,1405,402,1407,379,1412,356,1427,330,1446,308"/>
-<area shape="poly" title=" " alt="" coords="1547,305,1558,307,1713,326,1835,335,1957,342,2114,355,2167,360,2166,366,2113,360,1957,347,1835,340,1713,331,1557,312,1546,310"/>
-<area shape="poly" title=" " alt="" coords="1477,309,1486,350,1481,351,1472,310"/>
-<area shape="poly" title=" " alt="" coords="1878,311,1853,406,1835,456,1814,487,1790,501,1757,513,1672,530,1581,540,1504,545,1504,540,1580,535,1671,524,1755,507,1788,496,1810,483,1830,453,1848,405,1873,309"/>
-<area shape="poly" title=" " alt="" coords="1846,312,1752,361,1750,356,1843,307"/>
-<area shape="poly" title=" " alt="" coords="1964,306,2207,359,2206,364,1963,311"/>
-<area shape="poly" title=" " alt="" coords="768,136,590,159,376,190,174,229,93,250,32,272,15,278,10,281,8,288,8,378,11,391,20,403,58,425,116,446,194,463,286,479,391,492,624,513,869,527,1100,536,1421,542,1421,547,1100,541,869,532,624,518,390,498,285,484,193,469,115,451,55,430,17,407,6,393,3,379,3,288,5,279,12,273,30,267,91,245,173,224,375,185,589,153,767,131"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="711,365,851,390"/>
-<area shape="poly" title=" " alt="" coords="900,131,933,150,948,164,960,180,976,215,982,247,977,277,960,311,941,332,917,348,866,368,864,363,915,343,937,328,955,308,972,276,977,247,971,217,955,183,944,167,930,154,897,136"/>
+<area shape="poly" title=" " alt="" coords="1617,214,1579,224,1545,230,1514,231,1459,228,1435,230,1412,236,1390,249,1367,271,1348,294,1342,306,1339,322,1342,346,1352,379,1396,484,1408,504,1424,522,1420,525,1404,508,1391,487,1347,381,1337,347,1334,322,1337,304,1344,291,1363,268,1386,244,1410,231,1434,224,1459,223,1514,225,1545,224,1578,219,1615,209"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1610,365,1790,390"/>
+<area shape="poly" title=" " alt="" coords="1668,212,1695,235,1717,268,1722,290,1722,312,1713,352,1708,351,1717,312,1717,291,1712,270,1691,239,1665,216"/>
+<area shape="rect" title=" " alt="" coords="2514,533,2585,559"/>
+<area shape="poly" title=" " alt="" coords="1683,201,1769,205,1890,216,2029,236,2169,267,2226,285,2270,304,2364,355,2437,392,2467,412,2499,444,2526,482,2543,519,2538,522,2521,485,2495,447,2463,416,2434,397,2361,360,2267,308,2224,290,2167,272,2028,241,1890,221,1769,211,1683,206"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="2159,365,2351,390"/>
+<area shape="poly" title=" " alt="" coords="1683,199,1763,200,1873,209,1996,229,2058,245,2117,267,2153,285,2185,308,2236,353,2233,357,2182,312,2150,290,2115,272,2056,251,1995,234,1872,214,1763,206,1683,204"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1553,269,1703,309"/>
+<area shape="poly" title=" " alt="" coords="1649,215,1639,256,1634,255,1644,214"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1378,269,1529,309"/>
+<area shape="poly" title=" " alt="" coords="1624,217,1510,266,1508,261,1622,212"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="1779,269,1946,309"/>
+<area shape="poly" title=" " alt="" coords="1679,212,1804,262,1802,267,1677,217"/>
+<area shape="poly" title=" " alt="" coords="1687,392,1567,488,1486,530,1484,525,1564,483,1684,388"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="2101,453,2257,478"/>
+<area shape="poly" title=" " alt="" coords="1771,387,2088,443,2112,447,2111,453,2088,448,1770,393"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="1630,453,1783,478"/>
+<area shape="poly" title=" " alt="" coords="1704,390,1707,439,1702,439,1698,390"/>
+<area shape="rect" title=" " alt="" coords="1483,453,1554,478"/>
+<area shape="poly" title=" " alt="" coords="1677,393,1557,449,1555,444,1674,388"/>
+<area shape="poly" title=" " alt="" coords="2129,481,2088,488,1914,510,1742,527,1487,545,1487,540,1741,522,1913,505,2088,483,2128,475"/>
+<area shape="rect" title=" " alt="" coords="2373,533,2435,559"/>
+<area shape="poly" title=" " alt="" coords="2212,475,2361,527,2359,532,2211,481"/>
+<area shape="poly" title=" " alt="" coords="2233,475,2501,532,2500,537,2232,481"/>
+<area shape="rect" title=" " alt="" coords="2171,533,2239,559"/>
+<area shape="poly" title=" " alt="" coords="2185,477,2200,520,2195,521,2180,479"/>
+<area shape="poly" title=" " alt="" coords="1669,481,1487,535,1485,530,1668,475"/>
+<area shape="poly" title=" " alt="" coords="2246,392,2201,443,2197,440,2242,388"/>
+<area shape="poly" title=" " alt="" coords="2351,380,2386,387,2420,400,2451,418,2477,444,2484,465,2477,487,2461,510,2439,528,2436,524,2457,506,2472,484,2479,465,2472,447,2448,422,2418,405,2384,393,2350,385"/>
+<area shape="poly" title=" " alt="" coords="2325,387,2381,401,2430,422,2449,435,2460,450,2462,468,2453,487,2439,498,2420,508,2368,524,2254,543,2253,537,2366,519,2418,503,2436,494,2449,484,2457,467,2455,452,2445,439,2428,427,2379,407,2324,393"/>
+<area shape="rect" title=" " alt="" coords="2281,453,2439,478"/>
+<area shape="poly" title=" " alt="" coords="2271,388,2337,442,2333,446,2267,392"/>
+<area shape="poly" title=" " alt="" coords="1619,311,1589,354,1548,399,1527,414,1507,422,1490,430,1473,447,1456,483,1449,520,1444,519,1451,482,1468,444,1487,426,1505,417,1524,409,1545,395,1585,350,1614,308"/>
+<area shape="poly" title=" " alt="" coords="1646,308,1683,352,1679,355,1642,311"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="1409,365,1535,390"/>
+<area shape="poly" title=" " alt="" coords="1595,312,1506,360,1503,356,1592,307"/>
+<area shape="poly" title=" " alt="" coords="1433,312,1414,333,1400,358,1395,380,1393,402,1401,447,1416,488,1433,520,1428,523,1411,490,1396,448,1388,402,1389,379,1395,356,1410,330,1429,308"/>
+<area shape="poly" title=" " alt="" coords="1529,305,1540,307,1696,326,1818,335,1940,342,2096,355,2149,360,2149,366,2096,360,1939,347,1817,340,1695,331,1540,312,1528,310"/>
+<area shape="poly" title=" " alt="" coords="1460,309,1469,350,1464,351,1455,310"/>
+<area shape="poly" title=" " alt="" coords="1861,311,1836,406,1817,456,1797,487,1773,501,1739,513,1655,530,1563,540,1487,545,1486,540,1563,535,1654,524,1738,507,1770,496,1793,483,1813,453,1831,405,1856,309"/>
+<area shape="poly" title=" " alt="" coords="1828,312,1735,361,1732,356,1826,307"/>
+<area shape="poly" title=" " alt="" coords="1947,306,2190,359,2189,364,1946,311"/>
+<area shape="poly" title=" " alt="" coords="878,135,636,159,434,184,318,200,227,211,139,230,32,272,15,278,10,281,8,288,8,378,11,391,20,402,57,425,115,445,191,463,283,478,386,491,617,512,859,526,1087,535,1404,542,1404,547,1087,541,858,532,617,518,386,497,282,483,190,468,114,450,55,430,17,406,6,393,3,379,3,288,5,279,12,273,30,267,138,225,226,205,317,194,433,179,635,154,877,129"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="694,365,834,390"/>
+<area shape="poly" title=" " alt="" coords="989,133,993,167,993,214,983,265,974,289,959,311,936,333,908,350,878,362,848,370,847,365,877,357,906,345,933,329,955,308,969,287,978,263,987,214,987,167,983,134"/>
 <area shape="rect" title=" " alt="" coords="680,181,824,221"/>
-<area shape="poly" title=" " alt="" coords="852,136,793,176,790,171,849,131"/>
+<area shape="poly" title=" " alt="" coords="951,136,822,179,820,174,949,131"/>
 <area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="445,189,656,214"/>
-<area shape="poly" title=" " alt="" coords="822,136,611,188,610,183,821,131"/>
-<area shape="poly" title=" " alt="" coords="758,392,725,411,694,434,683,447,677,459,676,471,683,483,697,493,722,501,797,515,897,525,1013,533,1248,540,1421,542,1421,547,1248,546,1013,538,897,531,796,520,721,506,695,497,679,487,671,473,671,458,678,444,690,430,722,406,755,388"/>
-<area shape="rect" title=" " alt="" coords="694,453,869,478"/>
-<area shape="poly" title=" " alt="" coords="784,390,784,438,779,438,779,390"/>
-<area shape="rect" title=" " alt="" coords="893,453,1085,478"/>
-<area shape="poly" title=" " alt="" coords="810,388,950,445,948,450,808,393"/>
+<area shape="poly" title=" " alt="" coords="921,136,628,189,627,184,921,131"/>
+<area shape="poly" title=" " alt="" coords="740,392,708,411,677,434,665,447,659,459,659,471,666,483,680,493,705,501,780,515,880,525,995,533,1231,540,1404,542,1404,547,1231,546,995,538,880,531,779,520,703,506,678,497,662,487,654,473,654,458,661,444,673,430,705,406,738,388"/>
+<area shape="rect" title=" " alt="" coords="677,453,851,478"/>
+<area shape="poly" title=" " alt="" coords="767,390,767,438,761,438,761,390"/>
+<area shape="rect" title=" " alt="" coords="876,453,1068,478"/>
+<area shape="poly" title=" " alt="" coords="793,388,933,445,931,450,791,393"/>
 <area shape="poly" title=" " alt="" coords="610,211,721,235,847,267,858,270,857,275,846,272,719,240,609,217"/>
-<area shape="poly" title=" " alt="" coords="619,211,668,219,928,251,1147,276,1146,281,927,257,668,224,618,217"/>
+<area shape="poly" title=" " alt="" coords="620,211,668,219,918,251,1130,275,1129,281,918,256,668,224,619,217"/>
 <area shape="rect" title=" " alt="" coords="679,277,835,302"/>
 <area shape="poly" title=" " alt="" coords="580,212,718,269,716,274,578,217"/>
 <area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="43,277,247,302"/>
@@ -211,10 +214,10 @@ $(document).ready(function(){initNavTree('gvf__parametric_8cpp.html',''); initRe
 <area shape="poly" title=" " alt="" coords="554,214,557,263,552,263,549,214"/>
 <area shape="rect" title=" " alt="" coords="272,277,432,302"/>
 <area shape="poly" title=" " alt="" coords="525,217,393,273,390,269,523,212"/>
-<area shape="poly" title=" " alt="" coords="147,302,150,348,158,374,172,395,199,411,243,426,376,453,552,477,752,497,1150,526,1421,540,1421,546,1150,531,752,502,551,482,375,458,242,431,197,416,169,399,153,376,144,349,142,302"/>
+<area shape="poly" title=" " alt="" coords="147,302,150,348,158,374,172,395,198,411,242,426,373,453,546,476,743,496,1136,525,1404,540,1403,545,1135,531,743,502,546,482,372,458,241,431,196,416,169,399,153,376,144,349,142,302"/>
 <area shape="rect" title=" " alt="" coords="183,365,345,390"/>
 <area shape="poly" title=" " alt="" coords="163,300,238,354,235,359,160,304"/>
-<area shape="poly" title=" " alt="" coords="587,300,739,357,737,362,585,305"/>
+<area shape="poly" title=" " alt="" coords="585,300,725,357,723,362,583,305"/>
 <area shape="rect" title=" " alt="" coords="464,365,648,390"/>
 <area shape="poly" title=" " alt="" coords="559,302,559,350,553,350,553,302"/>
 </map>
@@ -251,7 +254,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a025bede321e4e1dd30401bd4ef541161" id="r_a025bede321e4e1dd30401bd4ef541161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gvf__parametric_8h.html#structgvf__parametric__con">gvf_parametric_con</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf__parametric_8cpp.html#a025bede321e4e1dd30401bd4ef541161">gvf_parametric_control</a></td></tr>
 <tr class="separator:a025bede321e4e1dd30401bd4ef541161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae84c37c1bf0da152a3d39085466bd669" id="r_ae84c37c1bf0da152a3d39085466bd669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gvf__parametric_8h.html#structgvf__parametric__tel">gvf_parametric_tel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf__parametric_8cpp.html#ae84c37c1bf0da152a3d39085466bd669">gvf_parametric_telemetry</a> = {{0},1,0}</td></tr>
+<tr class="memitem:ae84c37c1bf0da152a3d39085466bd669" id="r_ae84c37c1bf0da152a3d39085466bd669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gvf__parametric_8h.html#structgvf__parametric__tel">gvf_parametric_tel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf__parametric_8cpp.html#ae84c37c1bf0da152a3d39085466bd669">gvf_parametric_telemetry</a> = {{0}, 1, 0}</td></tr>
 <tr class="separator:ae84c37c1bf0da152a3d39085466bd669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90bb4fa6b299ffc7a6942d22b9305c9d" id="r_a90bb4fa6b299ffc7a6942d22b9305c9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gvf__parametric_8cpp.html#a90bb4fa6b299ffc7a6942d22b9305c9d">gvf_parametric_t0</a> = 0</td></tr>
 <tr class="separator:a90bb4fa6b299ffc7a6942d22b9305c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,7 +278,7 @@ Variables</h2></td></tr>
 <p>Default scale for w <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00049">49</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00056">56</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +312,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Default gain kpsi for tuning the alignment of the vehicle with the vector field </p>
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00054">54</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00063">63</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +346,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Default scale for the error signals </p>
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00044">44</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00047">47</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
 </div>
 </div>
@@ -410,11 +413,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00137">137</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00149">149</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf__parametric_8h_source.html#l00056">gvf_parametric_con::beta</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="gvf__parametric_8h_source.html#l00052">gvf_parametric_con::delta_T</a>, <a class="el" href="nav_8c_source.html#l00308">desired_x</a>, <a class="el" href="nav_8c_source.html#l00308">desired_y</a>, <a class="el" href="gvf__parametric_8h_source.html#l00061">gvf_parametric_tel::e_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">get_sys_time_msec()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00076">ground_speed</a>, <a class="el" href="gvf__common_8c_source.html#l00028">gvf_c_ctrl</a>, <a class="el" href="gvf__common_8c_source.html#l00029">gvf_c_info</a>, <a class="el" href="gvf__common_8c_source.html#l00058">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00064">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00068">gvf_parametric_t0</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00065">gvf_parametric_telemetry</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="trilateration_8c_source.html#l00035">J</a>, <a class="el" href="gvf__parametric_8h_source.html#l00054">gvf_parametric_con::k_psi</a>, <a class="el" href="gvf__common_8h_source.html#l00083">gvf_common_info::kappa</a>, <a class="el" href="gvf__parametric_8h_source.html#l00055">gvf_parametric_con::L</a>, <a class="el" href="gvf__common_8h_source.html#l00074">gvf_common_ctrl::omega</a>, <a class="el" href="gvf__common_8h_source.html#l00084">gvf_common_info::ori_err</a>, <a class="el" href="gvf__parametric_8h_source.html#l00060">gvf_parametric_tel::phi_errors</a>, <a class="el" href="gvf__parametric_8h_source.html#l00053">gvf_parametric_con::s</a>, <a class="el" href="state_8h_source.html#l01085">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l01058">stateGetSpeedEnu_f()</a>, <a class="el" href="gvf__parametric_8h_source.html#l00051">gvf_parametric_con::w</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p class="reference">References <a class="el" href="gvf__parametric_8h_source.html#l00062">gvf_parametric_con::beta</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="gvf__parametric_8h_source.html#l00058">gvf_parametric_con::delta_T</a>, <a class="el" href="nav_8c_source.html#l00308">desired_x</a>, <a class="el" href="nav_8c_source.html#l00308">desired_y</a>, <a class="el" href="gvf__parametric_8h_source.html#l00068">gvf_parametric_tel::e_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">get_sys_time_msec()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00076">ground_speed</a>, <a class="el" href="gvf__common_8c_source.html#l00028">gvf_c_ctrl</a>, <a class="el" href="gvf__common_8c_source.html#l00029">gvf_c_info</a>, <a class="el" href="gvf__common_8c_source.html#l00058">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00075">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00079">gvf_parametric_t0</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00076">gvf_parametric_telemetry</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="trilateration_8c_source.html#l00035">J</a>, <a class="el" href="gvf__parametric_8h_source.html#l00060">gvf_parametric_con::k_psi</a>, <a class="el" href="gvf__common_8h_source.html#l00083">gvf_common_info::kappa</a>, <a class="el" href="gvf__parametric_8h_source.html#l00061">gvf_parametric_con::L</a>, <a class="el" href="gvf__common_8h_source.html#l00074">gvf_common_ctrl::omega</a>, <a class="el" href="gvf__common_8h_source.html#l00084">gvf_common_info::ori_err</a>, <a class="el" href="gvf__parametric_8h_source.html#l00067">gvf_parametric_tel::phi_errors</a>, <a class="el" href="gvf__parametric_8h_source.html#l00059">gvf_parametric_con::s</a>, <a class="el" href="state_8h_source.html#l01085">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00848">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l01058">stateGetSpeedEnu_f()</a>, <a class="el" href="gvf__adapted__step_8c_source.html#l00108">step_adaptation()</a>, <a class="el" href="gvf__parametric_8h_source.html#l00063">gvf_parametric_con::step_adaptation</a>, <a class="el" href="gvf__parametric_8h_source.html#l00057">gvf_parametric_con::w</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00064">nav_gvf_parametric_2D_bezier_run()</a>, and <a class="el" href="nav__parametric__2d__trefoil_8c_source.html#l00078">nav_gvf_parametric_2D_trefoil_XY()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00064">nav_gvf_parametric_2D_bezier_run()</a>, and <a class="el" href="nav__parametric__2d__trefoil_8c_source.html#l00086">nav_gvf_parametric_2D_trefoil_XY()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -422,66 +425,72 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gvf__parametric_8cpp_ab6d452179529bf1f9dff945332a71f92_cgraph.png" border="0" usemap="#agvf__parametric_8cpp_ab6d452179529bf1f9dff945332a71f92_cgraph" alt=""/></div>
 <map name="agvf__parametric_8cpp_ab6d452179529bf1f9dff945332a71f92_cgraph" id="agvf__parametric_8cpp_ab6d452179529bf1f9dff945332a71f92_cgraph">
-<area shape="rect" title=" " alt="" coords="5,156,204,181"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="285,5,435,31"/>
-<area shape="poly" title=" " alt="" coords="115,154,169,98,208,67,251,40,270,31,272,36,253,44,211,71,172,102,119,158"/>
-<area shape="rect" href="gvf__common_8c.html#a579808adcbffe590c874e69dd3612af0" title=" " alt="" coords="265,55,455,80"/>
-<area shape="poly" title=" " alt="" coords="129,154,184,126,251,97,297,81,298,86,253,102,186,131,131,158"/>
-<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="516,104,749,129"/>
-<area shape="poly" title=" " alt="" coords="170,153,252,141,380,128,502,120,502,125,381,133,252,146,171,159"/>
-<area shape="rect" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="341,156,379,181"/>
-<area shape="poly" title=" " alt="" coords="204,166,327,166,327,171,204,171"/>
-<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="252,205,468,231"/>
-<area shape="poly" title=" " alt="" coords="172,179,281,200,280,205,171,184"/>
-<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="277,259,443,284"/>
-<area shape="poly" title=" " alt="" coords="129,179,185,209,253,240,292,252,290,258,251,244,182,214,127,184"/>
-<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="283,308,437,333"/>
-<area shape="poly" title=" " alt="" coords="119,180,173,235,211,266,253,293,272,301,270,306,251,298,208,271,169,239,115,184"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="557,5,709,31"/>
-<area shape="poly" title=" " alt="" coords="430,52,548,31,549,36,431,57"/>
-<area shape="poly" title=" " alt="" coords="431,77,549,99,548,104,430,83"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="531,55,734,80"/>
-<area shape="poly" title=" " alt="" coords="455,65,517,65,517,70,455,70"/>
+<area shape="rect" title=" " alt="" coords="5,205,204,231"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="285,29,435,55"/>
+<area shape="poly" title=" " alt="" coords="112,203,165,136,205,97,251,64,270,55,272,60,253,68,208,101,169,140,117,207"/>
+<area shape="rect" href="gvf__common_8c.html#a579808adcbffe590c874e69dd3612af0" title=" " alt="" coords="265,79,455,104"/>
+<area shape="poly" title=" " alt="" coords="121,203,176,163,251,121,292,105,294,110,253,126,179,168,124,207"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="516,128,749,153"/>
+<area shape="poly" title=" " alt="" coords="135,203,188,182,251,165,380,146,502,139,502,144,380,152,253,170,190,187,136,208"/>
+<area shape="rect" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="341,180,379,205"/>
+<area shape="poly" title=" " alt="" coords="204,206,327,193,327,199,204,211"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="252,229,468,255"/>
+<area shape="poly" title=" " alt="" coords="204,225,239,228,238,233,204,230"/>
+<area shape="rect" href="group__state__position.html#gada8de93d61e1bc0ed8f5e06f6bb54f6d" title="Get position in local ENU coordinates (float)." alt="" coords="277,279,443,304"/>
+<area shape="poly" title=" " alt="" coords="143,228,253,263,288,273,287,278,251,269,141,233"/>
+<area shape="rect" href="group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="283,332,437,357"/>
+<area shape="poly" title=" " alt="" coords="123,229,179,270,215,293,253,313,287,326,285,331,251,318,212,297,176,274,120,233"/>
+<area shape="rect" href="gvf__adapted__step_8c.html#a0893b947ac72a67b0efd35ad781c5878" title="Compute the adapted parametric step given the wanted geometric distance." alt="" coords="297,397,423,423"/>
+<area shape="poly" title=" " alt="" coords="117,229,171,293,210,332,253,366,302,390,299,395,251,371,206,336,167,297,113,232"/>
+<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="557,79,709,104"/>
+<area shape="poly" title=" " alt="" coords="455,89,543,89,543,94,455,94"/>
+<area shape="poly" title=" " alt="" coords="431,101,549,123,548,128,430,107"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="531,29,734,55"/>
+<area shape="poly" title=" " alt="" coords="430,76,548,55,549,60,431,81"/>
 <area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="797,97,988,137"/>
-<area shape="poly" title=" " alt="" coords="749,114,783,114,783,119,749,119"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="809,47,977,72"/>
-<area shape="poly" title=" " alt="" coords="734,62,795,60,795,65,734,67"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1036,47,1209,72"/>
-<area shape="poly" title=" " alt="" coords="977,57,1022,57,1022,62,977,62"/>
-<area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1258,23,1413,48"/>
-<area shape="poly" title=" " alt="" coords="1209,47,1244,43,1245,48,1210,52"/>
-<area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1257,72,1413,97"/>
-<area shape="poly" title=" " alt="" coords="1210,67,1244,71,1244,76,1209,72"/>
-<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="537,198,728,238"/>
-<area shape="poly" title=" " alt="" coords="468,215,523,215,523,221,468,221"/>
-<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="547,263,718,288"/>
-<area shape="poly" title=" " alt="" coords="443,270,534,271,534,277,443,275"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="841,312,945,337"/>
-<area shape="poly" title=" " alt="" coords="701,285,828,310,827,315,700,291"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1046,212,1199,237"/>
-<area shape="poly" title=" " alt="" coords="708,260,797,247,1032,227,1033,232,798,253,709,265"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="821,161,964,187"/>
-<area shape="poly" title=" " alt="" coords="716,260,748,248,762,238,772,227,781,215,796,204,828,189,830,194,799,208,785,219,776,230,766,242,751,252,718,265"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="822,263,963,288"/>
-<area shape="poly" title=" " alt="" coords="718,273,809,273,809,278,718,278"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="841,365,944,391"/>
-<area shape="poly" title=" " alt="" coords="661,286,723,315,798,346,835,359,833,364,796,351,721,320,659,291"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1069,312,1177,337"/>
-<area shape="poly" title=" " alt="" coords="945,322,1055,322,1055,327,945,327"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1070,263,1175,288"/>
-<area shape="poly" title=" " alt="" coords="944,311,1056,287,1057,292,946,316"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1047,161,1199,187"/>
-<area shape="poly" title=" " alt="" coords="964,171,1032,171,1032,177,964,177"/>
-<area shape="poly" title=" " alt="" coords="963,273,1057,273,1057,278,963,278"/>
-<area shape="poly" title=" " alt="" coords="951,260,1050,238,1052,243,952,265"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1047,427,1199,452"/>
-<area shape="poly" title=" " alt="" coords="942,388,989,401,1062,421,1061,426,987,406,941,393"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1053,362,1193,402"/>
-<area shape="poly" title=" " alt="" coords="944,376,1039,378,1039,383,944,382"/>
-<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="553,365,712,391"/>
-<area shape="poly" title=" " alt="" coords="422,331,559,360,557,365,421,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="819,415,967,440"/>
-<area shape="poly" title=" " alt="" coords="701,388,812,409,811,415,700,393"/>
+<area shape="poly" title=" " alt="" coords="749,127,783,124,784,129,750,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="809,29,977,55"/>
+<area shape="poly" title=" " alt="" coords="734,39,795,39,795,45,734,45"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1036,29,1209,55"/>
+<area shape="poly" title=" " alt="" coords="977,39,1022,39,1022,45,977,45"/>
+<area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1258,5,1413,31"/>
+<area shape="poly" title=" " alt="" coords="1209,30,1244,26,1245,31,1210,35"/>
+<area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1257,55,1413,80"/>
+<area shape="poly" title=" " alt="" coords="1210,50,1244,54,1244,59,1209,55"/>
+<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="537,214,728,254"/>
+<area shape="poly" title=" " alt="" coords="468,236,523,235,523,240,468,242"/>
+<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="547,279,718,304"/>
+<area shape="poly" title=" " alt="" coords="443,289,534,289,534,294,443,294"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="841,261,945,287"/>
+<area shape="poly" title=" " alt="" coords="718,283,827,276,827,281,718,288"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1046,161,1199,187"/>
+<area shape="poly" title=" " alt="" coords="717,278,748,264,763,248,770,231,779,213,796,197,854,173,916,161,977,157,1033,159,1032,164,977,162,916,166,855,178,799,202,783,216,775,233,767,251,751,268,719,283"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="821,311,964,336"/>
+<area shape="poly" title=" " alt="" coords="719,299,808,310,807,316,718,304"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="822,212,963,237"/>
+<area shape="poly" title=" " alt="" coords="698,276,749,263,797,246,824,238,825,243,798,251,750,269,700,281"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="841,360,944,385"/>
+<area shape="poly" title=" " alt="" coords="689,301,750,321,798,345,829,355,827,360,796,350,748,326,687,307"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1069,261,1177,287"/>
+<area shape="poly" title=" " alt="" coords="945,271,1055,271,1055,277,945,277"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1070,212,1175,237"/>
+<area shape="poly" title=" " alt="" coords="944,260,1056,236,1057,241,946,266"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1047,311,1199,336"/>
+<area shape="poly" title=" " alt="" coords="964,321,1032,321,1032,326,964,326"/>
+<area shape="poly" title=" " alt="" coords="963,222,1057,222,1057,227,963,227"/>
+<area shape="poly" title=" " alt="" coords="951,209,1050,187,1052,192,952,214"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1047,425,1199,451"/>
+<area shape="poly" title=" " alt="" coords="945,382,989,394,1037,410,1065,419,1064,424,1035,415,987,399,944,387"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1053,361,1193,401"/>
+<area shape="poly" title=" " alt="" coords="945,372,1039,375,1039,380,944,377"/>
+<area shape="rect" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="553,336,712,361"/>
+<area shape="poly" title=" " alt="" coords="438,343,539,345,539,350,438,348"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="819,409,967,435"/>
+<area shape="poly" title=" " alt="" coords="677,359,798,394,831,403,830,408,797,399,675,364"/>
+<area shape="rect" href="gvf__adapted__step_8c.html#a969b8417e2cd929b40166f17206d1013" title="Implementation of Halley&#39;s method for degree 4 polynomial root finding." alt="" coords="590,429,675,455"/>
+<area shape="poly" title=" " alt="" coords="424,415,577,433,576,438,423,420"/>
+<area shape="rect" href="gvf__adapted__step_8c.html#af7930d91d0166586a5ceefb0d4bf9c47" title="Horner&#39;s method for fast degree 4 polynomial evaluation." alt="" coords="856,459,929,484"/>
+<area shape="poly" title=" " alt="" coords="676,444,843,463,842,468,675,449"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -522,9 +531,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <hr  />
  
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00117">117</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00128">128</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf__parametric_8h_source.html#l00056">gvf_parametric_con::beta</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gvf__parametric_8h_source.html#l00052">gvf_parametric_con::delta_T</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gvf__common_8c_source.html#l00030">gvf_c_params</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00064">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00049">GVF_PARAMETRIC_CONTROL_BETA</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00039">GVF_PARAMETRIC_CONTROL_KCLIMB</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00054">GVF_PARAMETRIC_CONTROL_KPSI</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00034">GVF_PARAMETRIC_CONTROL_KROLL</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00044">GVF_PARAMETRIC_CONTROL_L</a>, <a class="el" href="gvf__common_8h_source.html#l00094">gvf_common_params::k_climb</a>, <a class="el" href="gvf__parametric_8h_source.html#l00054">gvf_parametric_con::k_psi</a>, <a class="el" href="gvf__common_8h_source.html#l00093">gvf_common_params::k_roll</a>, <a class="el" href="gvf__parametric_8h_source.html#l00055">gvf_parametric_con::L</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gvf__parametric_8h_source.html#l00053">gvf_parametric_con::s</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00074">send_gvf_parametric()</a>, and <a class="el" href="gvf__parametric_8h_source.html#l00051">gvf_parametric_con::w</a>.</p>
+<p class="reference">References <a class="el" href="gvf__parametric_8h_source.html#l00062">gvf_parametric_con::beta</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gvf__parametric_8h_source.html#l00058">gvf_parametric_con::delta_T</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gvf__common_8c_source.html#l00030">gvf_c_params</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00075">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00056">GVF_PARAMETRIC_CONTROL_BETA</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00039">GVF_PARAMETRIC_CONTROL_KCLIMB</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00063">GVF_PARAMETRIC_CONTROL_KPSI</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00034">GVF_PARAMETRIC_CONTROL_KROLL</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00047">GVF_PARAMETRIC_CONTROL_L</a>, <a class="el" href="gvf__parametric_8h_source.html#l00037">GVF_PARAMETRIC_CONTROL_STEP_ADAPTATION</a>, <a class="el" href="gvf__common_8h_source.html#l00094">gvf_common_params::k_climb</a>, <a class="el" href="gvf__parametric_8h_source.html#l00060">gvf_parametric_con::k_psi</a>, <a class="el" href="gvf__common_8h_source.html#l00093">gvf_common_params::k_roll</a>, <a class="el" href="gvf__parametric_8h_source.html#l00061">gvf_parametric_con::L</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="gvf__parametric_8h_source.html#l00059">gvf_parametric_con::s</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00085">send_gvf_parametric()</a>, <a class="el" href="gvf__parametric_8h_source.html#l00063">gvf_parametric_con::step_adaptation</a>, and <a class="el" href="gvf__parametric_8h_source.html#l00057">gvf_parametric_con::w</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -560,9 +569,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00347">347</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00437">437</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf__parametric_8cpp_source.html#l00064">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8h_source.html#l00053">gvf_parametric_con::s</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
+<p class="reference">References <a class="el" href="gvf__parametric_8cpp_source.html#l00075">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8h_source.html#l00059">gvf_parametric_con::s</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
 
 </div>
 </div>
@@ -602,11 +611,11 @@ Variables</h2></td></tr>
 
 <p>TELEMETRY -----------------------------------------------------------&mdash;. </p>
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00074">74</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00085">85</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="gvf__parametric_8h_source.html#l00056">gvf_parametric_con::beta</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="gvf__parametric_8h_source.html#l00061">gvf_parametric_tel::e_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">get_sys_time_msec()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00064">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00068">gvf_parametric_t0</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00065">gvf_parametric_telemetry</a>, <a class="el" href="gvf__param__traj_8c_source.html#l00024">gvf_parametric_trajectory</a>, <a class="el" href="gvf__param__traj_8h_source.html#l00048">gvf_parametric_tra::p_len</a>, <a class="el" href="gvf__param__traj_8h_source.html#l00047">gvf_parametric_tra::p_parametric</a>, <a class="el" href="gvf__parametric_8h_source.html#l00060">gvf_parametric_tel::phi_errors</a>, <a class="el" href="gvf__parametric_8h_source.html#l00053">gvf_parametric_con::s</a>, <a class="el" href="gvf__parametric_8h_source.html#l00062">gvf_parametric_tel::splines_ctr</a>, <a class="el" href="gvf__param__traj_8h_source.html#l00046">gvf_parametric_tra::type</a>, and <a class="el" href="gvf__parametric_8h_source.html#l00051">gvf_parametric_con::w</a>.</p>
+<p class="reference">References <a class="el" href="gvf__parametric_8h_source.html#l00062">gvf_parametric_con::beta</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="gvf__parametric_8h_source.html#l00068">gvf_parametric_tel::e_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">get_sys_time_msec()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00075">gvf_parametric_control</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00079">gvf_parametric_t0</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00076">gvf_parametric_telemetry</a>, <a class="el" href="gvf__param__traj_8c_source.html#l00024">gvf_parametric_trajectory</a>, <a class="el" href="gvf__param__traj_8h_source.html#l00048">gvf_parametric_tra::p_len</a>, <a class="el" href="gvf__param__traj_8h_source.html#l00047">gvf_parametric_tra::p_parametric</a>, <a class="el" href="gvf__parametric_8h_source.html#l00067">gvf_parametric_tel::phi_errors</a>, <a class="el" href="gvf__parametric_8h_source.html#l00059">gvf_parametric_con::s</a>, <a class="el" href="gvf__parametric_8h_source.html#l00069">gvf_parametric_tel::splines_ctr</a>, <a class="el" href="gvf__param__traj_8h_source.html#l00046">gvf_parametric_tra::type</a>, and <a class="el" href="gvf__parametric_8h_source.html#l00057">gvf_parametric_con::w</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00117">gvf_parametric_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00128">gvf_parametric_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -647,9 +656,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00064">64</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00075">75</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00137">gvf_parametric_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00117">gvf_parametric_init()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00347">gvf_parametric_set_direction()</a>, <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00064">nav_gvf_parametric_2D_bezier_run()</a>, <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00077">nav_gvf_parametric_2D_bezier_wp()</a>, <a class="el" href="nav__parametric__2d__trefoil_8c_source.html#l00078">nav_gvf_parametric_2D_trefoil_XY()</a>, and <a class="el" href="gvf__parametric_8cpp_source.html#l00074">send_gvf_parametric()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00149">gvf_parametric_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00128">gvf_parametric_init()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00437">gvf_parametric_set_direction()</a>, <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00064">nav_gvf_parametric_2D_bezier_run()</a>, <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00077">nav_gvf_parametric_2D_bezier_wp()</a>, <a class="el" href="nav__parametric__2d__trefoil_8c_source.html#l00086">nav_gvf_parametric_2D_trefoil_XY()</a>, and <a class="el" href="gvf__parametric_8cpp_source.html#l00085">send_gvf_parametric()</a>.</p>
 
 </div>
 </div>
@@ -665,9 +674,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00068">68</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00079">79</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00137">gvf_parametric_control_2D()</a>, and <a class="el" href="gvf__parametric_8cpp_source.html#l00074">send_gvf_parametric()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00149">gvf_parametric_control_2D()</a>, and <a class="el" href="gvf__parametric_8cpp_source.html#l00085">send_gvf_parametric()</a>.</p>
 
 </div>
 </div>
@@ -678,14 +687,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="gvf__parametric_8h.html#structgvf__parametric__tel">gvf_parametric_tel</a> gvf_parametric_telemetry = {{0},1,0}</td>
+          <td class="memname"><a class="el" href="gvf__parametric_8h.html#structgvf__parametric__tel">gvf_parametric_tel</a> gvf_parametric_telemetry = {{0}, 1, 0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00065">65</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvf__parametric_8cpp_source.html#l00076">76</a> of file <a class="el" href="gvf__parametric_8cpp_source.html">gvf_parametric.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00137">gvf_parametric_control_2D()</a>, <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00077">nav_gvf_parametric_2D_bezier_wp()</a>, and <a class="el" href="gvf__parametric_8cpp_source.html#l00074">send_gvf_parametric()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00149">gvf_parametric_control_2D()</a>, <a class="el" href="nav__parametric__2d__bezier__splines_8c_source.html#l00077">nav_gvf_parametric_2D_bezier_wp()</a>, and <a class="el" href="gvf__parametric_8cpp_source.html#l00085">send_gvf_parametric()</a>.</p>
 
 </div>
 </div>
@@ -695,7 +704,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4ee91589357a83ed771c51844e853db2.html">guidance</a></li><li class="navelem"><a class="el" href="dir_de23569aeb6bdca23f8bfa396f4a081d.html">gvf_parametric</a></li><li class="navelem"><a class="el" href="gvf__parametric_8cpp.html">gvf_parametric.cpp</a></li>
-    <li class="footer">Generated on Mon May 11 2026 16:18:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu May 21 2026 22:40:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,17 @@
 var NAVTREEINDEX185 =
 {
+"qr__code__spi__link_8h.html#afe718e5de23ff690fa62b35bb69553f0":[12,0,1,0,6,33,1,0],
+"qr__code__spi__link_8h_source.html":[12,0,1,0,6,33,1],
+"qr__solve_8c.html":[12,0,1,0,4,0,0],
+"qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1":[12,0,1,0,4,0,0,8],
+"qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135":[12,0,1,0,4,0,0,3],
+"qr__solve_8c.html#a43d89b9590aa2c74c1fc7bbcb2e739af":[12,0,1,0,4,0,0,1],
+"qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902":[12,0,1,0,4,0,0,9],
+"qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149":[12,0,1,0,4,0,0,5],
+"qr__solve_8c.html#a7883ddd0091da126f0e986854130c0c1":[12,0,1,0,4,0,0,0],
+"qr__solve_8c.html#a90d5a7f0475008f757334c945452b340":[12,0,1,0,4,0,0,12],
+"qr__solve_8c.html#aa1ea50a6db5ef08ed0c3617d761efe97":[12,0,1,0,4,0,0,2],
+"qr__solve_8c.html#ab1b00af76b78908d5f012c3023e8690f":[12,0,1,0,4,0,0,10],
 "qr__solve_8c.html#adb1d7ac5915e3af7d8034232eb1b587d":[12,0,1,0,4,0,0,4],
 "qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e":[12,0,1,0,4,0,0,7],
 "qr__solve_8c.html#afa0182a4c21d9992eae335332c52a1f5":[12,0,1,0,4,0,0,11],
@@ -237,17 +249,5 @@ var NAVTREEINDEX185 =
 "rc__intermcu_8h.html#a9fd86154b023cbc8a9981059db36497b":[12,0,1,0,6,56,14,1],
 "rc__intermcu_8h.html#aaf81f14818697e4134650e3d7cea4e3f":[12,0,1,0,6,56,14,3],
 "rc__intermcu_8h.html#ac9fea4cfb071bc7a85ec2a05ef0a88f3":[12,0,1,0,6,56,14,11],
-"rc__intermcu_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f":[12,0,1,0,6,56,14,6],
-"rc__intermcu_8h.html#af6d01e5790217c4fc084f4b661611100":[12,0,1,0,6,56,14,12],
-"rc__intermcu_8h_source.html":[12,0,1,0,6,56,14],
-"rc__settings_8c.html":[12,0,1,0,6,13,7],
-"rc__settings_8c.html#a1208e80268eeb8b24ab1a67f2ecedb54":[12,0,1,0,6,13,7,2],
-"rc__settings_8c.html#a3349e614a926a99c63c8b9f2935a29f3":[12,0,1,0,6,13,7,4],
-"rc__settings_8c.html#a340368a8f442ad27fc08588985c16d0f":[12,0,1,0,6,13,7,1],
-"rc__settings_8c.html#a44c7519d24a1210b4195b65831c08f23":[12,0,1,0,6,13,7,5],
-"rc__settings_8c.html#a6eda1c9a9562629c0fb04cd4c7a8ab87":[12,0,1,0,6,13,7,0],
-"rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181":[12,0,1,0,6,13,7,3],
-"rc__settings_8c.html#a909a5b6579e0b5302fd1847650a3219d":[12,0,1,0,6,13,7,6],
-"rc__settings_8c_source.html":[12,0,1,0,6,13,7],
-"rc__settings_8h.html":[12,0,1,0,6,13,8]
+"rc__intermcu_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f":[12,0,1,0,6,56,14,6]
 };

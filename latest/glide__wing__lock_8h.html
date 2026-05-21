@@ -299,7 +299,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav__gls_8c_source.html#l00057">57</a> of file <a class="el" href="nav__gls_8c_source.html">nav_gls.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uav__recovery_8c_source.html#l00148">calculate_wind_no_airspeed()</a>, <a class="el" href="nav__gls_8c_source.html#l00159">gls_run()</a>, <a class="el" href="nav__gls_8c_source.html#l00135">gls_start()</a>, <a class="el" href="main__bare_8c_source.html#l00056">main()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00154">mission_nav_custom()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00206">mission_nav_custom()</a>, and <a class="el" href="mission__rover__nav_8c_source.html#l00171">mission_nav_custom()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="uav__recovery_8c_source.html#l00148">calculate_wind_no_airspeed()</a>, <a class="el" href="nav__gls_8c_source.html#l00159">gls_run()</a>, <a class="el" href="nav__gls_8c_source.html#l00135">gls_start()</a>, <a class="el" href="main__bare_8c_source.html#l00056">main()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00154">mission_nav_custom()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00206">mission_nav_custom()</a>, <a class="el" href="mission__rover__nav_8c_source.html#l00171">mission_nav_custom()</a>, <a class="el" href="gvf__adapted__step_8c_source.html#l00076">p4_halley()</a>, and <a class="el" href="gvf__adapted__step_8c_source.html#l00108">step_adaptation()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -307,26 +307,41 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="glide__wing__lock_8h_a2858154e2009b0e6e616f313177762bc_icgraph.png" border="0" usemap="#aglide__wing__lock_8h_a2858154e2009b0e6e616f313177762bc_icgraph" alt=""/></div>
 <map name="aglide__wing__lock_8h_a2858154e2009b0e6e616f313177762bc_icgraph" id="aglide__wing__lock_8h_a2858154e2009b0e6e616f313177762bc_icgraph">
-<area shape="rect" title=" " alt="" coords="408,153,451,179"/>
-<area shape="rect" href="uav__recovery_8c.html#aeb19d3dd881fdd134582bf54daecf9a6" title=" " alt="" coords="155,5,360,31"/>
-<area shape="poly" title=" " alt="" coords="418,141,397,91,380,66,358,44,339,33,342,29,362,40,384,62,402,89,423,139"/>
-<area shape="rect" href="nav__gls_8c.html#a186f479c63a73cdac81a8ff055807975" title=" " alt="" coords="223,55,292,80"/>
-<area shape="poly" title=" " alt="" coords="410,144,388,117,359,94,325,80,291,73,293,68,327,75,361,89,391,113,414,140"/>
-<area shape="rect" href="nav__gls_8c.html#ae25a3367a042e88245ac09144b5a1364" title=" " alt="" coords="218,104,297,129"/>
-<area shape="poly" title=" " alt="" coords="394,155,359,143,296,127,298,122,361,138,396,150"/>
-<area shape="rect" href="main__bare_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="230,153,285,179"/>
-<area shape="poly" title=" " alt="" coords="394,169,285,169,285,163,394,163"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a6c7339db4f1a96a2ad07840f57319f5e" title="Call custom navigation function." alt="" coords="178,203,337,228"/>
-<area shape="poly" title=" " alt="" coords="396,181,361,193,314,205,313,200,359,187,394,176"/>
-<area shape="rect" href="mission__rotorcraft__nav_8c.html#a6c7339db4f1a96a2ad07840f57319f5e" title="Call custom navigation function." alt="" coords="178,301,337,327"/>
-<area shape="poly" title=" " alt="" coords="423,193,401,243,384,269,362,291,338,304,336,299,358,287,380,266,396,240,418,191"/>
-<area shape="rect" href="mission__rover__nav_8c.html#a6c7339db4f1a96a2ad07840f57319f5e" title="Call custom navigation function." alt="" coords="178,252,337,277"/>
-<area shape="poly" title=" " alt="" coords="414,192,391,218,361,242,333,254,330,249,359,237,387,214,410,188"/>
-<area shape="rect" href="mission__rover__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission." alt="" coords="5,228,107,253"/>
-<area shape="poly" title=" " alt="" coords="164,230,107,237,106,232,164,224"/>
-<area shape="rect" href="mission__rotorcraft__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission." alt="" coords="5,301,107,327"/>
-<area shape="poly" title=" " alt="" coords="164,317,107,317,107,311,164,311"/>
-<area shape="poly" title=" " alt="" coords="164,256,106,249,107,244,164,251"/>
+<area shape="rect" title=" " alt="" coords="1080,203,1123,228"/>
+<area shape="rect" href="uav__recovery_8c.html#aeb19d3dd881fdd134582bf54daecf9a6" title=" " alt="" coords="827,5,1032,31"/>
+<area shape="poly" title=" " alt="" coords="1095,190,1088,156,1077,117,1058,77,1030,44,1013,33,1016,29,1034,40,1062,74,1082,115,1094,155,1100,189"/>
+<area shape="rect" href="nav__gls_8c.html#a186f479c63a73cdac81a8ff055807975" title=" " alt="" coords="895,55,964,80"/>
+<area shape="poly" title=" " alt="" coords="1090,191,1069,140,1052,115,1030,94,998,78,964,71,965,66,1000,73,1034,89,1056,111,1074,138,1095,189"/>
+<area shape="rect" href="nav__gls_8c.html#ae25a3367a042e88245ac09144b5a1364" title=" " alt="" coords="890,104,969,129"/>
+<area shape="poly" title=" " alt="" coords="1082,193,1060,166,1031,143,1000,130,968,123,969,118,1001,125,1033,138,1063,163,1086,190"/>
+<area shape="rect" href="main__bare_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="902,153,957,179"/>
+<area shape="poly" title=" " alt="" coords="1066,205,1031,193,956,174,957,169,1033,187,1068,200"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a6c7339db4f1a96a2ad07840f57319f5e" title="Call custom navigation function." alt="" coords="850,203,1009,228"/>
+<area shape="poly" title=" " alt="" coords="1067,218,1009,218,1009,213,1067,213"/>
+<area shape="rect" href="mission__rotorcraft__nav_8c.html#a6c7339db4f1a96a2ad07840f57319f5e" title="Call custom navigation function." alt="" coords="850,301,1009,327"/>
+<area shape="poly" title=" " alt="" coords="1086,241,1063,267,1033,291,1005,304,1002,299,1031,286,1059,263,1082,237"/>
+<area shape="rect" href="mission__rover__nav_8c.html#a6c7339db4f1a96a2ad07840f57319f5e" title="Call custom navigation function." alt="" coords="850,252,1009,277"/>
+<area shape="poly" title=" " alt="" coords="1068,230,1033,242,986,255,985,249,1031,237,1066,225"/>
+<area shape="rect" href="gvf__adapted__step_8c.html#a969b8417e2cd929b40166f17206d1013" title="Implementation of Halley&#39;s method for degree 4 polynomial root finding." alt="" coords="887,351,972,376"/>
+<area shape="poly" title=" " alt="" coords="1095,243,1073,292,1056,318,1034,340,1004,355,973,363,972,358,1002,350,1030,336,1052,315,1068,290,1090,240"/>
+<area shape="rect" href="gvf__adapted__step_8c.html#a0893b947ac72a67b0efd35ad781c5878" title="Compute the adapted parametric step given the wanted geometric distance." alt="" coords="652,376,779,401"/>
+<area shape="poly" title=" " alt="" coords="1101,242,1096,277,1085,319,1065,359,1051,376,1033,391,1000,409,963,420,924,426,886,426,813,418,755,404,756,399,814,413,886,421,924,420,962,415,997,404,1031,386,1047,373,1060,356,1080,317,1091,276,1096,241"/>
+<area shape="rect" href="mission__rover__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission." alt="" coords="665,228,766,253"/>
+<area shape="poly" title=" " alt="" coords="837,229,767,237,766,232,836,224"/>
+<area shape="rect" href="mission__rotorcraft__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission." alt="" coords="665,301,766,327"/>
+<area shape="poly" title=" " alt="" coords="836,317,766,317,766,311,836,311"/>
+<area shape="poly" title=" " alt="" coords="836,257,766,249,767,244,837,252"/>
+<area shape="poly" title=" " alt="" coords="873,373,779,384,778,379,872,367"/>
+<area shape="rect" href="gvf__parametric_8cpp.html#ab6d452179529bf1f9dff945332a71f92" title=" " alt="" coords="405,376,604,401"/>
+<area shape="poly" title=" " alt="" coords="638,391,604,391,604,386,638,386"/>
+<area shape="rect" href="nav__parametric__2d__bezier__splines_8c.html#a1ad44e39d2055b526a98c9b841362ffa" title=" " alt="" coords="205,337,357,377"/>
+<area shape="poly" title=" " alt="" coords="401,377,357,370,358,365,402,371"/>
+<area shape="rect" href="nav__parametric__2d__trefoil_8c.html#a2e75dd6004206d9af34a01b587f40c2d" title=" " alt="" coords="205,401,357,441"/>
+<area shape="poly" title=" " alt="" coords="402,406,358,412,357,407,401,401"/>
+<area shape="rect" href="nav__parametric__2d__bezier__splines_8c.html#a1fd9103f0f65bcc57c6579156182c155" title=" " alt="" coords="5,337,157,377"/>
+<area shape="poly" title=" " alt="" coords="191,359,158,359,158,354,191,354"/>
+<area shape="rect" href="nav__parametric__2d__trefoil_8c.html#adc0ee16c32b40eecf3f7b9fb800efd88" title=" " alt="" coords="5,401,157,441"/>
+<area shape="poly" title=" " alt="" coords="191,423,158,423,158,418,191,418"/>
 </map>
 </div>
 
@@ -338,7 +353,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fc0ab19c3a6e052df412b06c0603facb.html">glide_wing_lock</a></li><li class="navelem"><a class="el" href="glide__wing__lock_8h.html">glide_wing_lock.h</a></li>
-    <li class="footer">Generated on Mon May 11 2026 16:18:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu May 21 2026 22:40:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

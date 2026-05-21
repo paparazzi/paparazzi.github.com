@@ -1,5 +1,17 @@
 var NAVTREEINDEX124 =
 {
+"mav__exercise_8h.html":[12,0,1,0,6,43,1],
+"mav__exercise_8h.html#a690413296d0585d73035e50d0a3f932b":[12,0,1,0,6,43,1,1],
+"mav__exercise_8h.html#a8e35250b1c1be255ad0bd7c7513a6825":[12,0,1,0,6,43,1,0],
+"mav__exercise_8h_source.html":[12,0,1,0,6,43,1],
+"mavlink_8c.html":[12,0,1,0,6,15,17],
+"mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1":[12,0,1,0,6,15,17,28],
+"mavlink_8c.html#a050527395d793a9d3502e1614c953f3b":[12,0,1,0,6,15,17,29],
+"mavlink_8c.html#a1297c21f1829da1a6e581aa98929e494":[12,0,1,0,6,15,17,14],
+"mavlink_8c.html#a14aa83bf9f9e43ec0ae96b0a268a07ad":[12,0,1,0,6,15,17,3],
+"mavlink_8c.html#a160010097f6fb718c579d8470a9d72cf":[12,0,1,0,6,15,17,26],
+"mavlink_8c.html#a23cc6497bc0674de3d63d2502ab33c90":[12,0,1,0,6,15,17,30],
+"mavlink_8c.html#a344a8b861874b453a16cfac345189fb5":[12,0,1,0,6,15,17,31],
 "mavlink_8c.html#a4201e6ffa9267ed8c429f8d3c57caa39":[12,0,1,0,6,15,17,0],
 "mavlink_8c.html#a4371947509e8a4bdaaecfcb382e6a889":[12,0,1,0,6,15,17,18],
 "mavlink_8c.html#a45bb8314829a986bef34a96d1d19e18a":[12,0,1,0,6,15,17,19],
@@ -237,17 +249,5 @@ var NAVTREEINDEX124 =
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,20,1,0,2],
 "max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20":[12,0,1,0,6,20,1,15],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,20,1,1],
-"max7456_8c.html#structVECTOR":[12,0,1,0,6,20,1,0],
-"max7456_8c_source.html":[12,0,1,0,6,20,1],
-"max7456_8h.html":[12,0,1,0,6,20,2],
-"max7456_8h.html#a1d6d4401863cba472802654472781050":[12,0,1,0,6,20,2,2],
-"max7456_8h.html#a7b8eb5fd734424d9b1acb486f42bb2f3":[12,0,1,0,6,20,2,4],
-"max7456_8h.html#a945116b36ac06fdbb6f4aef0c5e7f7ca":[12,0,1,0,6,20,2,1],
-"max7456_8h.html#a9e352b8c2d17bfc367c3a4e1165deee6":[12,0,1,0,6,20,2,0],
-"max7456_8h.html#aa34d54866a11595ed5dcb12a5ebf59cc":[12,0,1,0,6,20,2,5],
-"max7456_8h.html#ab6448fcf9ae22d27c05ce676582075dc":[12,0,1,0,6,20,2,3],
-"max7456_8h.html#aced31f57be7c424c3c56f09970a42812":[12,0,1,0,6,20,2,6],
-"max7456_8h_source.html":[12,0,1,0,6,20,2],
-"max7456__regs_8h.html":[12,0,1,0,6,20,3],
-"max7456__regs_8h.html#a012ce3ca459504e88c3a18ba01cf8cb2":[12,0,1,0,6,20,3,40]
+"max7456_8c.html#structVECTOR":[12,0,1,0,6,20,1,0]
 };
