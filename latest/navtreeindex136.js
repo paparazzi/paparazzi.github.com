@@ -1,11 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__px4_gimbal.html#module_load_example__px4_gimbal":[1,522,0],
-"module__px4_gimbal.html#module_xml__px4_gimbal":[1,522,2,0],
-"module__px4flow.html":[1,372],
-"module__px4flow.html#configuration__px4flow":[1,372,1],
-"module__px4flow.html#functions__px4flow":[1,372,2],
-"module__px4flow.html#module_load_example__px4flow":[1,372,0],
 "module__px4flow.html#module_xml__px4flow":[1,372,2,0],
 "module__px4flow_i2c.html":[1,373],
 "module__px4flow_i2c.html#configuration__px4flow_i2c":[1,373,1],
@@ -101,9 +95,13 @@ var NAVTREEINDEX136 =
 "module__rpm_sensor.html#module_xml__rpm_sensor":[1,438,2,0],
 "module__rssi.html":[1,327],
 "module__rssi.html#datalink_functions__rssi":[1,327,2],
+"module__rssi.html#files":[1,327,3],
 "module__rssi.html#functions__rssi":[1,327,1],
+"module__rssi.html#headers":[1,327,3,0],
+"module__rssi.html#init_functions":[1,327,1,0],
 "module__rssi.html#module_load_example__rssi":[1,327,0],
-"module__rssi.html#module_xml__rssi":[1,327,2,0],
+"module__rssi.html#module_xml__rssi":[1,327,3,2],
+"module__rssi.html#sources":[1,327,3,1],
 "module__rust_demo_module.html":[1,525],
 "module__rust_demo_module.html#functions__rust_demo_module":[1,525,1],
 "module__rust_demo_module.html#module_load_example__rust_demo_module":[1,525,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "module__stabilization_plane_pid.html#module_load_example__stabilization_plane_pid":[1,463,0],
 "module__stabilization_plane_pid.html#module_xml__stabilization_plane_pid":[1,463,2,0],
 "module__stabilization_rate.html":[1,464],
-"module__stabilization_rate.html#configuration__stabilization_rate":[1,464,1]
+"module__stabilization_rate.html#configuration__stabilization_rate":[1,464,1],
+"module__stabilization_rate.html#functions__stabilization_rate":[1,464,2],
+"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,464,0]
 };

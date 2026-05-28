@@ -1,11 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,443,0],
-"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,443,1,0],
-"module__joystick.html":[1,507],
-"module__joystick.html#datalink_functions__joystick":[1,507,2],
-"module__joystick.html#functions__joystick":[1,507,1],
-"module__joystick.html#module_load_example__joystick":[1,507,0],
 "module__joystick.html#module_xml__joystick":[1,507,2,0],
 "module__laser_range_array.html":[1,388],
 "module__laser_range_array.html#configuration__laser_range_array":[1,388,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX134 =
 "module__nav_fish.html":[1,338],
 "module__nav_fish.html#configuration__nav_fish":[1,338,1],
 "module__nav_fish.html#functions__nav_fish":[1,338,2],
-"module__nav_fish.html#module_load_example__nav_fish":[1,338,0]
+"module__nav_fish.html#module_load_example__nav_fish":[1,338,0],
+"module__nav_fish.html#module_xml__nav_fish":[1,338,2,0],
+"module__nav_flower.html":[1,339],
+"module__nav_flower.html#functions__nav_flower":[1,339,1],
+"module__nav_flower.html#module_load_example__nav_flower":[1,339,0],
+"module__nav_flower.html#module_xml__nav_flower":[1,339,1,0],
+"module__nav_gls.html":[1,340]
 };

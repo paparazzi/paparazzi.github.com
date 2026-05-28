@@ -1,5 +1,9 @@
 var NAVTREEINDEX170 =
 {
+"power__uavcan_8c.html#a03cf863bd06010c745463fef7d00a040":[12,0,1,0,6,63,81,1,2],
+"power__uavcan_8c.html#a0f53560745b431a34d02e210f06ae423":[12,0,1,0,6,63,81,6],
+"power__uavcan_8c.html#a272127f8aa1770a0ff1822ae912127b8":[12,0,1,0,6,63,81,4],
+"power__uavcan_8c.html#a29223ab4f7905172bcdcafb0e147fcea":[12,0,1,0,6,63,81,7],
 "power__uavcan_8c.html#a318725c6ec29c0dbba52696babef573b":[12,0,1,0,6,63,81,10],
 "power__uavcan_8c.html#a4dbb87f7da717beeb9361a182e84a852":[12,0,1,0,6,63,81,9],
 "power__uavcan_8c.html#a6bc23d11577d7837e8a3640f4fb88a51":[12,0,1,0,6,63,81,0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX170 =
 "pprz__geodetic__utm_8h_source.html":[12,0,1,0,4,18],
 "pprz__geodetic__wgs84_8h.html":[12,0,1,0,4,19],
 "pprz__geodetic__wgs84_8h_source.html":[12,0,1,0,4,19],
-"pprz__geodetic__wmm2025_8c.html":[12,0,1,0,4,20],
-"pprz__geodetic__wmm2025_8c_source.html":[12,0,1,0,4,20],
-"pprz__geodetic__wmm2025_8h.html":[12,0,1,0,4,21],
-"pprz__geodetic__wmm2025_8h_source.html":[12,0,1,0,4,21],
-"pprz__isa_8h.html":[12,0,1,0,4,22]
+"pprz__geodetic__wmm2025_8c.html":[12,0,1,0,4,20]
 };

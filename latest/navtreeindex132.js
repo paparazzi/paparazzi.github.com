@@ -1,13 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__gps_optitrack.html#module_xml__gps_optitrack":[1,166,0,0],
-"module__gps_piksi.html":[1,167],
-"module__gps_piksi.html#configuration__gps_piksi":[1,167,1],
-"module__gps_piksi.html#functions__gps_piksi":[1,167,2],
-"module__gps_piksi.html#module_load_example__gps_piksi":[1,167,0],
-"module__gps_piksi.html#module_xml__gps_piksi":[1,167,2,0],
-"module__gps_sim.html":[1,168],
-"module__gps_sim.html#functions__gps_sim":[1,168,1],
 "module__gps_sim.html#module_load_example__gps_sim":[1,168,0],
 "module__gps_sim.html#module_xml__gps_sim":[1,168,1,0],
 "module__gps_sirf.html":[1,169],
@@ -238,9 +230,11 @@ var NAVTREEINDEX132 =
 "module__imu_ardrone2.html#module_xml__imu_ardrone2":[1,200,1,0],
 "module__imu_aspirin_common.html":[1,201],
 "module__imu_aspirin_common.html#configuration__imu_aspirin_common":[1,201,1],
+"module__imu_aspirin_common.html#configure":[1,201,1,0],
+"module__imu_aspirin_common.html#event_functions":[1,201,2,0],
 "module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,201,2],
 "module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,201,0],
-"module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,201,2,0],
+"module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,201,2,1],
 "module__imu_aspirin_i2c_common.html":[1,202],
 "module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common":[1,202,1],
 "module__imu_aspirin_i2c_common.html#functions__imu_aspirin_i2c_common":[1,202,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX132 =
 "module__imu_aspirin_i2c_v1_0.html":[1,203],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,203,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,203,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,203,1,0]
+"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,203,1,0],
+"module__imu_aspirin_i2c_v1_5.html":[1,204],
+"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,204,0],
+"module__imu_aspirin_v1_0.html":[1,205],
+"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,205,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,205,0,0],
+"module__imu_aspirin_v1_5.html":[1,206]
 };

@@ -1,12 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__digital_cam_shoot_rc.html":[1,142],
-"module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,142,1],
-"module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc":[1,142,2],
-"module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,142,0],
-"module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc":[1,142,2,0],
-"module__digital_cam_uart.html":[1,143],
-"module__digital_cam_uart.html#functions__digital_cam_uart":[1,143,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,143,0],
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,143,1,0],
 "module__digital_cam_video.html":[1,144],
@@ -179,7 +172,6 @@ var NAVTREEINDEX131 =
 "module__geiger_counter.html#module_xml__geiger_counter":[1,296,1,0],
 "module__generic_com.html":[1,54],
 "module__generic_com.html#configuration__generic_com":[1,54,1],
-"module__generic_com.html#define":[1,54,1,0],
 "module__generic_com.html#functions__generic_com":[1,54,2],
 "module__generic_com.html#module_load_example__generic_com":[1,54,0],
 "module__generic_com.html#module_xml__generic_com":[1,54,2,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX131 =
 "module__gps_nps.html#module_load_example__gps_nps":[1,165,0],
 "module__gps_nps.html#module_xml__gps_nps":[1,165,1,0],
 "module__gps_optitrack.html":[1,166],
-"module__gps_optitrack.html#module_load_example__gps_optitrack":[1,166,0]
+"module__gps_optitrack.html#module_load_example__gps_optitrack":[1,166,0],
+"module__gps_optitrack.html#module_xml__gps_optitrack":[1,166,0,0],
+"module__gps_piksi.html":[1,167],
+"module__gps_piksi.html#configuration__gps_piksi":[1,167,1],
+"module__gps_piksi.html#functions__gps_piksi":[1,167,2],
+"module__gps_piksi.html#module_load_example__gps_piksi":[1,167,0],
+"module__gps_piksi.html#module_xml__gps_piksi":[1,167,2,0],
+"module__gps_sim.html":[1,168],
+"module__gps_sim.html#functions__gps_sim":[1,168,1]
 };

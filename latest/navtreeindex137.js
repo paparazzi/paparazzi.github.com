@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__stabilization_rate.html#functions__stabilization_rate":[1,464,2],
-"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,464,0],
 "module__stabilization_rate.html#module_xml__stabilization_rate":[1,464,2,0],
 "module__stabilization_rate_indi.html":[1,465],
 "module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,465,1],
@@ -80,11 +78,13 @@ var NAVTREEINDEX137 =
 "module__system_core.html#module_load_example__system_core":[1,88,0],
 "module__system_core.html#module_xml__system_core":[1,88,1,0],
 "module__tag_tracking.html":[1,70],
+"module__tag_tracking.html#af_section":[1,70,1,0],
 "module__tag_tracking.html#configuration__tag_tracking":[1,70,1],
 "module__tag_tracking.html#datalink_functions__tag_tracking":[1,70,3],
 "module__tag_tracking.html#functions__tag_tracking":[1,70,2],
 "module__tag_tracking.html#module_load_example__tag_tracking":[1,70,0],
 "module__tag_tracking.html#module_xml__tag_tracking":[1,70,3,0],
+"module__tag_tracking.html#periodic_functions":[1,70,2,0],
 "module__takeoff_detect.html":[1,369],
 "module__takeoff_detect.html#configuration__takeoff_detect":[1,369,1],
 "module__takeoff_detect.html#functions__takeoff_detect":[1,369,2],

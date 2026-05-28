@@ -1,17 +1,11 @@
 var NAVTREEINDEX133 =
 {
-"module__imu_aspirin_i2c_v1_5.html":[1,204],
-"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,204,0],
-"module__imu_aspirin_v1_0.html":[1,205],
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,205,0],
-"module__imu_aspirin_v1_5.html":[1,206],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,206,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,206,0,0],
 "module__imu_aspirin_v2_1.html":[1,207],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,207,0],
-"module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,207,0,0],
 "module__imu_aspirin_v2_2.html":[1,208],
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,208,0],
+"module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2":[1,208,0,0],
 "module__imu_aspirin_v2_common.html":[1,209],
 "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,209,1],
 "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,209,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX133 =
 "module__jevois.html#module_load_example__jevois":[1,442,0],
 "module__jevois.html#module_xml__jevois":[1,442,2,0],
 "module__jevois_mavlink.html":[1,443],
-"module__jevois_mavlink.html#functions__jevois_mavlink":[1,443,1]
+"module__jevois_mavlink.html#functions__jevois_mavlink":[1,443,1],
+"module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,443,0],
+"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,443,1,0],
+"module__joystick.html":[1,507],
+"module__joystick.html#datalink_functions__joystick":[1,507,2],
+"module__joystick.html#functions__joystick":[1,507,1],
+"module__joystick.html#module_load_example__joystick":[1,507,0]
 };

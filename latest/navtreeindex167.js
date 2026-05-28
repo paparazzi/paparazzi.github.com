@@ -1,5 +1,9 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#DC_INFO":[2,0,59],
+"paparazzi_messages.html#DC_SHOT":[2,0,105],
+"paparazzi_messages.html#DEBUG":[2,0,23],
+"paparazzi_messages.html#DEBUG_VECT":[2,0,49],
 "paparazzi_messages.html#DESIRED":[2,0,13],
 "paparazzi_messages.html#DESIRED_SETPOINT":[2,1,12],
 "paparazzi_messages.html#DGPS_RAW":[2,1,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX167 =
 "paparazzi_messages.html#TAKEOFF":[2,0,3],
 "paparazzi_messages.html#TARGET_POS":[2,1,37],
 "paparazzi_messages.html#TARGET_POS_INFO":[2,0,90],
-"paparazzi_messages.html#TCAS_DEBUG":[2,0,118],
-"paparazzi_messages.html#TCAS_RA":[2,0,116],
-"paparazzi_messages.html#TCAS_RESOLVE":[2,1,14],
-"paparazzi_messages.html#TCAS_RESOLVED":[2,0,117],
-"paparazzi_messages.html#TCAS_TA":[2,0,115]
+"paparazzi_messages.html#TCAS_DEBUG":[2,0,118]
 };

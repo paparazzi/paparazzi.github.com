@@ -2,15 +2,9 @@ var NAVTREEINDEX129 =
 {
 "module__actuators_t4_uart.html":[1,20],
 "module__actuators_t4_uart.html#configuration__actuators_t4_uart":[1,20,1],
-"module__actuators_t4_uart.html#configure":[1,20,1,0],
-"module__actuators_t4_uart.html#event_functions":[1,20,2,1],
-"module__actuators_t4_uart.html#files":[1,20,3],
 "module__actuators_t4_uart.html#functions__actuators_t4_uart":[1,20,2],
-"module__actuators_t4_uart.html#headers":[1,20,3,0],
-"module__actuators_t4_uart.html#init_functions":[1,20,2,0],
 "module__actuators_t4_uart.html#module_load_example__actuators_t4_uart":[1,20,0],
-"module__actuators_t4_uart.html#module_xml__actuators_t4_uart":[1,20,3,2],
-"module__actuators_t4_uart.html#sources":[1,20,3,1],
+"module__actuators_t4_uart.html#module_xml__actuators_t4_uart":[1,20,2,0],
 "module__actuators_uavcan.html":[1,21],
 "module__actuators_uavcan.html#configuration__actuators_uavcan":[1,21,1],
 "module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,21,0],
@@ -121,6 +115,7 @@ var NAVTREEINDEX129 =
 "module__airspeed_otf.html#module_xml__airspeed_otf":[1,400,2,0],
 "module__airspeed_sdp3x.html":[1,401],
 "module__airspeed_sdp3x.html#configuration__airspeed_sdp3x":[1,401,1],
+"module__airspeed_sdp3x.html#define":[1,401,1,0],
 "module__airspeed_sdp3x.html#functions__airspeed_sdp3x":[1,401,2],
 "module__airspeed_sdp3x.html#module_load_example__airspeed_sdp3x":[1,401,0],
 "module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x":[1,401,2,0],
@@ -249,5 +244,10 @@ var NAVTREEINDEX129 =
 "module__baro_sim.html":[1,419],
 "module__baro_sim.html#functions__baro_sim":[1,419,1],
 "module__baro_sim.html#module_load_example__baro_sim":[1,419,0],
-"module__baro_sim.html#module_xml__baro_sim":[1,419,1,0]
+"module__baro_sim.html#module_xml__baro_sim":[1,419,1,0],
+"module__bat_checker.html":[1,147],
+"module__bat_checker.html#configuration__bat_checker":[1,147,1],
+"module__bat_checker.html#functions__bat_checker":[1,147,2],
+"module__bat_checker.html#module_load_example__bat_checker":[1,147,0],
+"module__bat_checker.html#module_xml__bat_checker":[1,147,2,0]
 };

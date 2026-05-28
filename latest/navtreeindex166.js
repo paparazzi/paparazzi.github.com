@@ -1,5 +1,9 @@
 var NAVTREEINDEX166 =
 {
+"opticflow__module_8h.html":[12,0,1,0,6,12,33],
+"opticflow__module_8h.html#a1670bbe4cd0b2ab998879be875925cef":[12,0,1,0,6,12,33,3],
+"opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9":[12,0,1,0,6,12,33,0],
+"opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea":[12,0,1,0,6,12,33,2],
 "opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb":[12,0,1,0,6,12,33,1],
 "opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb":[12,0,1,0,6,12,33,4],
 "opticflow__module_8h_source.html":[12,0,1,0,6,12,33],
@@ -245,9 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#DATALINK_REPORT":[2,0,27],
 "paparazzi_messages.html#DCF":[2,0,37],
 "paparazzi_messages.html#DCF_REG_TABLE":[2,1,57],
-"paparazzi_messages.html#DCF_THETA":[2,0,247],
-"paparazzi_messages.html#DC_INFO":[2,0,59],
-"paparazzi_messages.html#DC_SHOT":[2,0,105],
-"paparazzi_messages.html#DEBUG":[2,0,23],
-"paparazzi_messages.html#DEBUG_VECT":[2,0,49]
+"paparazzi_messages.html#DCF_THETA":[2,0,247]
 };
