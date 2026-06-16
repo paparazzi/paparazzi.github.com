@@ -1,5 +1,9 @@
 var NAVTREEINDEX140 =
 {
+"mpu60x0__i2c_8h.html#ab63fc0849edf6216a851937298063d43":[12,0,1,0,7,98,0,5],
+"mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1":[12,0,1,0,7,98,4],
+"mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a1de606392c12ee14660c4c8a71b3c570":[12,0,1,0,7,98,4,4],
+"mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a1ec6e51b025dad2ed02dc9f0ad2413bd":[12,0,1,0,7,98,4,5],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a2458f8d6d9c4c99a65274045ab712702":[12,0,1,0,7,98,4,6],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a27a69f20e5be7238d58243df769c623f":[12,0,1,0,7,98,4,1],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a4a9556e7cd9320da4698ed985f2a81ea":[12,0,1,0,7,98,4,8],
@@ -169,8 +173,8 @@ var NAVTREEINDEX140 =
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edab22cde199f9df04496553671eb708e3a":[12,0,1,0,7,101,5,2],
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edae0a348d3d96053d7dc168bc3dd588b62":[12,0,1,0,7,101,5,3],
 "mpu60x0__spi_8h.html#aac2c5a39f64f336ccb130c06b247bebf":[12,0,1,0,7,101,0,5],
-"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,101,2,1],
 "mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,101,1,0],
+"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,101,2,1],
 "mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f":[12,0,1,0,7,101,8],
 "mpu60x0__spi_8h.html#ab850011ed8df616036bc796940768f35":[12,0,1,0,7,101,4],
 "mpu60x0__spi_8h.html#ad5edd9b6659393373919d030961722bd":[12,0,1,0,7,101,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX140 =
 "mpu9250_8h.html#afbf8a3c8af0cd1cf009f0271ab5ad6fb":[12,0,1,0,7,103,15],
 "mpu9250_8h.html#structMpu9250Config":[12,0,1,0,7,103,1],
 "mpu9250_8h.html#structMpu9250I2cSlave":[12,0,1,0,7,103,0],
-"mpu9250_8h_source.html":[12,0,1,0,7,103],
-"mpu9250__i2c_8c.html":[12,0,1,0,7,104],
-"mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f":[12,0,1,0,7,104,3],
-"mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6":[12,0,1,0,7,104,1],
-"mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f":[12,0,1,0,7,104,7]
+"mpu9250_8h_source.html":[12,0,1,0,7,103]
 };

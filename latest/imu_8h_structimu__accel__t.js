@@ -2,6 +2,7 @@ var imu_8h_structimu__accel__t =
 [
     [ "abi_id", "imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858", null ],
     [ "body_to_sensor", "imu_8h.html#a0abd346b9314d9569fd000f773ce740d", null ],
+    [ "body_to_sensor_f", "imu_8h.html#a1a58a23144ecf1518359b78ff298c205", null ],
     [ "calibrated", "imu_8h.html#a574e4bce16579490161479d0d2f44458", null ],
     [ "filter", "imu_8h.html#a2277e552c058f93869e42ad3171efdc8", null ],
     [ "filter_freq", "imu_8h.html#a244a1afcd81fdf251f85c5f945e13666", null ],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['uart_2ec_0',['uart.c',['../uart_8c.html',1,'']]],
   ['uart_2eh_1',['uart.h',['../uart_8h.html',1,'']]],
-  ['uart_5farch_2ec_2',['uart_arch.c',['../chibios_2mcu__periph_2uart__arch_8c.html',1,'(Global Namespace)'],['../linux_2mcu__periph_2uart__arch_8c.html',1,'(Global Namespace)'],['../sim_2mcu__periph_2uart__arch_8c.html',1,'(Global Namespace)']]],
+  ['uart_5farch_2ec_2',['uart_arch.c',['../linux_2mcu__periph_2uart__arch_8c.html',1,'(Global Namespace)'],['../sim_2mcu__periph_2uart__arch_8c.html',1,'(Global Namespace)'],['../chibios_2mcu__periph_2uart__arch_8c.html',1,'(Global Namespace)']]],
   ['uart_5farch_2eh_3',['uart_arch.h',['../chibios_2mcu__periph_2uart__arch_8h.html',1,'(Global Namespace)'],['../linux_2mcu__periph_2uart__arch_8h.html',1,'(Global Namespace)'],['../sim_2mcu__periph_2uart__arch_8h.html',1,'(Global Namespace)']]],
   ['uart_5fcam_5fctrl_2ec_4',['uart_cam_ctrl.c',['../uart__cam__ctrl_8c.html',1,'']]],
   ['uart_5fcam_5fctrl_2eh_5',['uart_cam_ctrl.h',['../uart__cam__ctrl_8h.html',1,'']]],

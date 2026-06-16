@@ -1,5 +1,9 @@
 var NAVTREEINDEX97 =
 {
+"ist8310__regs_8h.html#a4cdd06fbe8b82c67ca8051fc70070844":[12,0,1,0,7,56,9],
+"ist8310__regs_8h.html#a4df1a2613157d8b8c8d2dcfc2dc81c76":[12,0,1,0,7,56,36],
+"ist8310__regs_8h.html#a50cc59bbe8561fb44fa4ccbf76c6cb71":[12,0,1,0,7,56,28],
+"ist8310__regs_8h.html#a512bfcfaf0398cdc180554f93624056e":[12,0,1,0,7,56,25],
 "ist8310__regs_8h.html#a56f3bdc1658a69bee70d0f01d7503bad":[12,0,1,0,7,56,44],
 "ist8310__regs_8h.html#a57fca0f6eee4bf56b8b2027e0be68ac6":[12,0,1,0,7,56,21],
 "ist8310__regs_8h.html#a5a10223efa4a8d35b45d71ea8d77dda4":[12,0,1,0,7,56,45],
@@ -184,8 +188,8 @@ var NAVTREEINDEX97 =
 "jevois_8h.html#af5ea4742233d5aa3ead308873ee16795":[12,0,1,0,6,63,0,1,10],
 "jevois_8h_source.html":[12,0,1,0,6,63,0,1],
 "jevois__mavlink_8c.html":[12,0,1,0,6,63,0,2],
-"jevois__mavlink_8c.html#a0e94e9c0e1d0ca2d01b60d0b56b8f3a1":[12,0,1,0,6,63,0,2,1,0],
 "jevois__mavlink_8c.html#a0e94e9c0e1d0ca2d01b60d0b56b8f3a1":[12,0,1,0,6,12,22,0,0],
+"jevois__mavlink_8c.html#a0e94e9c0e1d0ca2d01b60d0b56b8f3a1":[12,0,1,0,6,63,0,2,1,0],
 "jevois__mavlink_8c.html#a173a596ff93af667dbfc719440451864":[12,0,1,0,6,63,0,2,0,4],
 "jevois__mavlink_8c.html#a30ee093c5bc29abb2b73dc16e1a50320":[12,0,1,0,6,63,0,2,6],
 "jevois__mavlink_8c.html#a3deb6a4c7ca666dceb2ec5fe2d3b9b89":[12,0,1,0,6,63,0,2,8],
@@ -203,8 +207,8 @@ var NAVTREEINDEX97 =
 "jevois__mavlink_8c.html#a73627c026f41732fff319bea9f92f194":[12,0,1,0,6,63,0,2,0,0],
 "jevois__mavlink_8c.html#a7595f5fd5ae0628b4ff7ceaf34ddf393":[12,0,1,0,6,63,0,2,19],
 "jevois__mavlink_8c.html#a789434a901eb0c80d2e5936b56cf177f":[12,0,1,0,6,63,0,2,0,1],
-"jevois__mavlink_8c.html#a83ef7cc5fb3d4593980b88b9fc786826":[12,0,1,0,6,63,0,2,1,4],
 "jevois__mavlink_8c.html#a83ef7cc5fb3d4593980b88b9fc786826":[12,0,1,0,6,12,22,0,4],
+"jevois__mavlink_8c.html#a83ef7cc5fb3d4593980b88b9fc786826":[12,0,1,0,6,63,0,2,1,4],
 "jevois__mavlink_8c.html#a86d40e844a3501b3bce67e5875a01fe9":[12,0,1,0,6,63,0,2,20],
 "jevois__mavlink_8c.html#a87bfe12c051e3f83897b8c07707a9574":[12,0,1,0,6,63,0,2,15],
 "jevois__mavlink_8c.html#a8cdff610a38675520328522b25dbd470":[12,0,1,0,6,63,0,2,0,5],
@@ -222,8 +226,8 @@ var NAVTREEINDEX97 =
 "jevois__mavlink_8c.html#ae70ec2f8655ac508e7b01dd357fe1d22":[12,0,1,0,6,63,0,2,14],
 "jevois__mavlink_8c.html#af16bfcda9e4fa37ee534641efdfc89de":[12,0,1,0,6,63,0,2,0,3],
 "jevois__mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3":[12,0,1,0,6,63,0,2,11],
-"jevois__mavlink_8c.html#structvision__relative__position__struct":[12,0,1,0,6,12,22,0],
 "jevois__mavlink_8c.html#structvision__relative__position__struct":[12,0,1,0,6,63,0,2,1],
+"jevois__mavlink_8c.html#structvision__relative__position__struct":[12,0,1,0,6,12,22,0],
 "jevois__mavlink_8c.html#structvisual__target__struct":[12,0,1,0,6,63,0,2,0],
 "jevois__mavlink_8c_source.html":[12,0,1,0,6,63,0,2],
 "jevois__mavlink_8h.html":[12,0,1,0,6,63,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX97 =
 "joystick_8c.html":[12,0,1,0,6,39,0],
 "joystick_8c.html#a23b18d268c4c1956a1f97b1949412023":[12,0,1,0,6,39,0,2],
 "joystick_8c.html#a573cdbbbb3c9b0f6be055bb99fc5b978":[12,0,1,0,6,39,0,1],
-"joystick_8c.html#a6a02aa5c938b511ffde7a43e8db031c8":[12,0,1,0,6,39,0,0],
-"joystick_8c_source.html":[12,0,1,0,6,39,0],
-"joystick_8h.html":[12,0,1,0,6,39,1],
-"joystick_8h.html#a23b18d268c4c1956a1f97b1949412023":[12,0,1,0,6,39,1,3],
-"joystick_8h.html#a37d738c05aca156b3f7b12fc5a3a2b4c":[12,0,1,0,6,39,1,0,1]
+"joystick_8c.html#a6a02aa5c938b511ffde7a43e8db031c8":[12,0,1,0,6,39,0,0]
 };

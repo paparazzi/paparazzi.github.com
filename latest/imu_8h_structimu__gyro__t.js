@@ -2,6 +2,7 @@ var imu_8h_structimu__gyro__t =
 [
     [ "abi_id", "imu_8h.html#a1b1d1ca0df754ef787eab7af507e96aa", null ],
     [ "body_to_sensor", "imu_8h.html#a86c26b2e762731fa6c0a5dccb2773710", null ],
+    [ "body_to_sensor_f", "imu_8h.html#ab164e32742967156d02d177f0280cdb8", null ],
     [ "calibrated", "imu_8h.html#aca02598e78983f91cb7658fca6dcec0d", null ],
     [ "filter", "imu_8h.html#a51f06c7d1c8f14b9c01bea40883f416f", null ],
     [ "filter_freq", "imu_8h.html#ab7e87667c4e57871994ae8b601092164", null ],

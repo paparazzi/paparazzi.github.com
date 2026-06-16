@@ -1,5 +1,9 @@
 var NAVTREEINDEX172 =
 {
+"pwm__meas_8c.html#a84d3630a1807bc21333ea5cf9e9357f8":[12,0,1,0,6,13,5,0],
+"pwm__meas_8c_source.html":[12,0,1,0,6,13,5],
+"pwm__meas_8h.html":[12,0,1,0,6,13,6],
+"pwm__meas_8h.html#a84d3630a1807bc21333ea5cf9e9357f8":[12,0,1,0,6,13,6,0],
 "pwm__meas_8h_source.html":[12,0,1,0,6,13,6],
 "pwm__sysfs_8c.html":[12,0,1,0,0,1,0,11],
 "pwm__sysfs_8c.html#a06e6802ca3a6585dac2523484f402131":[12,0,1,0,0,1,0,11,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX172 =
 "px4flow_8h.html#afa3560ee5cc18272b795d0680a100915":[12,0,1,0,6,49,3,3],
 "px4flow_8h.html#afe7febf729c1c7ac8e239876a830a3fc":[12,0,1,0,6,49,3,1,0],
 "px4flow_8h.html#structmavlink__heartbeat":[12,0,1,0,6,49,3,2],
-"px4flow_8h.html#structmavlink__optical__flow":[12,0,1,0,6,49,3,0],
-"px4flow_8h.html#structmavlink__optical__flow__rad":[12,0,1,0,6,49,3,1],
-"px4flow_8h_source.html":[12,0,1,0,6,49,3],
-"px4flow__i2c_8c.html":[12,0,1,0,6,49,4],
-"px4flow__i2c_8c.html#a2332efb117017dda50a479964ff8dc0f":[12,0,1,0,6,49,4,5]
+"px4flow_8h.html#structmavlink__optical__flow":[12,0,1,0,6,49,3,0]
 };

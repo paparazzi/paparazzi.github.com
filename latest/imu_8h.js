@@ -4,6 +4,7 @@ var imu_8h =
       [ "current", "imu_8h.html#a4743f502dc4b207e85b5ac656ccab96e", null ],
       [ "filter", "imu_8h.html#a3d1e9eddca3a776a7fb29e590f8278de", null ],
       [ "neutral", "imu_8h.html#aa89853a532ad4adf771289eea8832bd6", null ],
+      [ "rot_euler", "imu_8h.html#a401e424826b4487bf2f50d25c79a4be1", null ],
       [ "rotation", "imu_8h.html#ae401e507fd893576e3767b10a714a199", null ],
       [ "scale", "imu_8h.html#a1f3ebaad8dc8df7c8f2e56571996e514", null ],
       [ "scale_f", "imu_8h.html#a648b6de857f985216c784ea21638ceb9", null ]
@@ -11,6 +12,7 @@ var imu_8h =
     [ "imu_gyro_t", "imu_8h.html#structimu__gyro__t", [
       [ "abi_id", "imu_8h.html#a1b1d1ca0df754ef787eab7af507e96aa", null ],
       [ "body_to_sensor", "imu_8h.html#a86c26b2e762731fa6c0a5dccb2773710", null ],
+      [ "body_to_sensor_f", "imu_8h.html#ab164e32742967156d02d177f0280cdb8", null ],
       [ "calibrated", "imu_8h.html#aca02598e78983f91cb7658fca6dcec0d", null ],
       [ "filter", "imu_8h.html#a51f06c7d1c8f14b9c01bea40883f416f", null ],
       [ "filter_freq", "imu_8h.html#ab7e87667c4e57871994ae8b601092164", null ],
@@ -26,6 +28,7 @@ var imu_8h =
     [ "imu_accel_t", "imu_8h.html#structimu__accel__t", [
       [ "abi_id", "imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858", null ],
       [ "body_to_sensor", "imu_8h.html#a0abd346b9314d9569fd000f773ce740d", null ],
+      [ "body_to_sensor_f", "imu_8h.html#a1a58a23144ecf1518359b78ff298c205", null ],
       [ "calibrated", "imu_8h.html#a574e4bce16579490161479d0d2f44458", null ],
       [ "filter", "imu_8h.html#a2277e552c058f93869e42ad3171efdc8", null ],
       [ "filter_freq", "imu_8h.html#a244a1afcd81fdf251f85c5f945e13666", null ],
@@ -41,6 +44,7 @@ var imu_8h =
     [ "imu_mag_t", "imu_8h.html#structimu__mag__t", [
       [ "abi_id", "imu_8h.html#a8e3750c802931e5b2ce7b088acfb7f0c", null ],
       [ "body_to_sensor", "imu_8h.html#a48148bd32bf50719c07fd148fad7a809", null ],
+      [ "body_to_sensor_f", "imu_8h.html#a5133142cb8d5cc207a70508a954c8e34", null ],
       [ "calibrated", "imu_8h.html#a0b0df04048e552a2193a356c42cb2afb", null ],
       [ "current_scale", "imu_8h.html#a17e36f1f2f2e9c03de668e0429f0d517", null ],
       [ "neutral", "imu_8h.html#a3ba2bb42284dd57602b47c6eb25efb37", null ],

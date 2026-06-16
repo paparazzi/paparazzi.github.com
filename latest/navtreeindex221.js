@@ -1,5 +1,9 @@
 var NAVTREEINDEX221 =
 {
+"trigger__ext_8h_source.html":[12,0,1,0,6,13,22],
+"trigger__ext__hw_8c.html":[12,0,1,0,0,2,1,1,6],
+"trigger__ext__hw_8c.html#a1df0777ed6e2d929b0b2d3dd6a5cd088":[12,0,1,0,0,2,1,1,6,0],
+"trigger__ext__hw_8c_source.html":[12,0,1,0,0,2,1,1,6],
 "trigger__ext__hw_8h.html":[12,0,1,0,0,2,1,1,7],
 "trigger__ext__hw_8h_source.html":[12,0,1,0,0,2,1,1,7],
 "trilateration_8c.html":[12,0,1,0,6,16,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX221 =
 "uavcan_8h_source.html":[12,0,1,0,6,73,1],
 "uavcan__allocator_8c.html":[12,0,1,0,6,73,2],
 "uavcan__allocator_8c.html#a007e2ca37e8997fc11f87644eaed243f":[12,0,1,0,6,73,2,6],
-"uavcan__allocator_8c.html#a0f1841a8fe62b3649af7d8e11e3c7f95":[12,0,1,0,6,73,2,8],
-"uavcan__allocator_8c.html#a135f340f75895f3ac919c9565bd2d516":[12,0,1,0,6,73,2,16],
-"uavcan__allocator_8c.html#a1761433adeac98bcfa0d060a4ab43e77":[12,0,1,0,6,73,2,17],
-"uavcan__allocator_8c.html#a1e3acf67ea7ac21c61fefa2c4f31623f":[12,0,1,0,6,73,2,5],
-"uavcan__allocator_8c.html#a3c03ecb66d4da850b60170c1f08760f0":[12,0,1,0,6,73,2,4]
+"uavcan__allocator_8c.html#a0f1841a8fe62b3649af7d8e11e3c7f95":[12,0,1,0,6,73,2,8]
 };

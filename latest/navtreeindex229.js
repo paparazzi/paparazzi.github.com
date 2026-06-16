@@ -1,5 +1,9 @@
 var NAVTREEINDEX229 =
 {
+"wls__alloc_8h.html#acf02054ac554a94b9dbce81c85367b2b":[12,0,1,0,4,1,1,0,5],
+"wls__alloc_8h.html#ad8969b66ad8e977f10a7addea167d5cb":[12,0,1,0,4,1,1,3],
+"wls__alloc_8h.html#structWLS__t":[12,0,1,0,4,1,1,0],
+"wls__alloc_8h_source.html":[12,0,1,0,4,1,1],
 "xbee__dl_8c.html":[12,0,1,0,6,15,33],
 "xbee__dl_8c.html#a49dfd19411acd2cc456d38091309c844":[12,0,1,0,6,15,33,3],
 "xbee__dl_8c.html#a637a2c0512132f836bac769f5bdb50d9":[12,0,1,0,6,15,33,5],

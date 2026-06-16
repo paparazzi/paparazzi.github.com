@@ -1,5 +1,11 @@
 var NAVTREEINDEX134 =
 {
+"module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,443,0],
+"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,443,1,0],
+"module__joystick.html":[1,507],
+"module__joystick.html#datalink_functions__joystick":[1,507,2],
+"module__joystick.html#functions__joystick":[1,507,1],
+"module__joystick.html#module_load_example__joystick":[1,507,0],
 "module__joystick.html#module_xml__joystick":[1,507,2,0],
 "module__laser_range_array.html":[1,388],
 "module__laser_range_array.html#configuration__laser_range_array":[1,388,1],
@@ -187,7 +193,9 @@ var NAVTREEINDEX134 =
 "module__meteo_stick.html#module_load_example__meteo_stick":[1,308,0],
 "module__meteo_stick.html#module_xml__meteo_stick":[1,308,2,0],
 "module__mf_ptu.html":[1,309],
+"module__mf_ptu.html#af_section":[1,309,1,1],
 "module__mf_ptu.html#configuration__mf_ptu":[1,309,1],
+"module__mf_ptu.html#configure":[1,309,1,0],
 "module__mf_ptu.html#functions__mf_ptu":[1,309,2],
 "module__mf_ptu.html#module_load_example__mf_ptu":[1,309,0],
 "module__mf_ptu.html#module_xml__mf_ptu":[1,309,2,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX134 =
 "module__nav_drop.html#module_load_example__nav_drop":[1,337,0],
 "module__nav_drop.html#module_xml__nav_drop":[1,337,0,0],
 "module__nav_fish.html":[1,338],
-"module__nav_fish.html#configuration__nav_fish":[1,338,1],
-"module__nav_fish.html#functions__nav_fish":[1,338,2],
-"module__nav_fish.html#module_load_example__nav_fish":[1,338,0],
-"module__nav_fish.html#module_xml__nav_fish":[1,338,2,0],
-"module__nav_flower.html":[1,339],
-"module__nav_flower.html#functions__nav_flower":[1,339,1],
-"module__nav_flower.html#module_load_example__nav_flower":[1,339,0],
-"module__nav_flower.html#module_xml__nav_flower":[1,339,1,0],
-"module__nav_gls.html":[1,340]
+"module__nav_fish.html#configuration__nav_fish":[1,338,1]
 };

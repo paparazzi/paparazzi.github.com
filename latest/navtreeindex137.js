@@ -1,5 +1,9 @@
 var NAVTREEINDEX137 =
 {
+"module__stabilization_rate.html":[1,464],
+"module__stabilization_rate.html#configuration__stabilization_rate":[1,464,1],
+"module__stabilization_rate.html#functions__stabilization_rate":[1,464,2],
+"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,464,0],
 "module__stabilization_rate.html#module_xml__stabilization_rate":[1,464,2,0],
 "module__stabilization_rate_indi.html":[1,465],
 "module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,465,1],
@@ -78,13 +82,11 @@ var NAVTREEINDEX137 =
 "module__system_core.html#module_load_example__system_core":[1,88,0],
 "module__system_core.html#module_xml__system_core":[1,88,1,0],
 "module__tag_tracking.html":[1,70],
-"module__tag_tracking.html#af_section":[1,70,1,0],
 "module__tag_tracking.html#configuration__tag_tracking":[1,70,1],
 "module__tag_tracking.html#datalink_functions__tag_tracking":[1,70,3],
 "module__tag_tracking.html#functions__tag_tracking":[1,70,2],
 "module__tag_tracking.html#module_load_example__tag_tracking":[1,70,0],
 "module__tag_tracking.html#module_xml__tag_tracking":[1,70,3,0],
-"module__tag_tracking.html#periodic_functions":[1,70,2,0],
 "module__takeoff_detect.html":[1,369],
 "module__takeoff_detect.html#configuration__takeoff_detect":[1,369,1],
 "module__takeoff_detect.html#functions__takeoff_detect":[1,369,2],
@@ -177,9 +179,11 @@ var NAVTREEINDEX137 =
 "module__temp_tcouple_adc.html#module_xml__temp_tcouple_adc":[1,311,1,0],
 "module__temp_temod.html":[1,312],
 "module__temp_temod.html#configuration__temp_temod":[1,312,1],
+"module__temp_temod.html#define":[1,312,1,0],
+"module__temp_temod.html#event_functions":[1,312,2,0],
 "module__temp_temod.html#functions__temp_temod":[1,312,2],
 "module__temp_temod.html#module_load_example__temp_temod":[1,312,0],
-"module__temp_temod.html#module_xml__temp_temod":[1,312,2,0],
+"module__temp_temod.html#module_xml__temp_temod":[1,312,2,1],
 "module__temp_tmp102.html":[1,313],
 "module__temp_tmp102.html#functions__temp_tmp102":[1,313,1],
 "module__temp_tmp102.html#module_load_example__temp_tmp102":[1,313,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX137 =
 "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1":[1,55,1],
 "module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1":[1,55,0],
 "module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1":[1,55,1,0],
-"module__usb_serial_stm32_example2.html":[1,56],
-"module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2":[1,56,1],
-"module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2":[1,56,0],
-"module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2":[1,56,1,0],
-"module__vertical_ctrl_module_demo.html":[1,110]
+"module__usb_serial_stm32_example2.html":[1,56]
 };
