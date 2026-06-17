@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"boards_2disco_2actuators_8c.html#afaa9f697f15948e9f99da2e8a1e4840a":[12,0,1,0,1,7,0,9],
+"boards_2disco_2actuators_8c.html#structdisco__bldc__obs":[12,0,1,0,1,7,0,0],
 "boards_2disco_2actuators_8c_source.html":[12,0,1,0,1,7,0],
 "boards_2disco_2actuators_8h.html":[12,0,1,0,1,7,1],
 "boards_2disco_2actuators_8h.html#a0181db6b0eea7688d52e6b73b141549b":[12,0,1,0,1,7,1,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "cc2500_8c_source.html":[12,0,1,0,7,33],
 "cc2500_8h.html":[12,0,1,0,7,34],
 "cc2500_8h.html#a0399cc8b5ecb888e38a457e048ed42be":[12,0,1,0,7,34,26],
-"cc2500_8h.html#a068fecd9bbb5a9641b290ad609d83ac5":[12,0,1,0,7,34,15],
-"cc2500_8h.html#a0a75e5bff6de23af936003e42dcf2efe":[12,0,1,0,7,34,10],
-"cc2500_8h.html#a0aafd8cd88f01d28921f047d4435e169":[12,0,1,0,7,34,39]
+"cc2500_8h.html#a068fecd9bbb5a9641b290ad609d83ac5":[12,0,1,0,7,34,15]
 };

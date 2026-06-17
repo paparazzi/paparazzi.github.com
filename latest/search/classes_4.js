@@ -46,5 +46,5 @@ var searchData=
   ['dshottelemetryframe_2e_5f_5funnamed7_5f_5f_43',['DshotTelemetryFrame.__unnamed7__',['../esc__dshot_8h.html#unionDshotTelemetryFrame_8____unnamed7____',1,'']]],
   ['dshottelemetryframe_2e_5f_5funnamed7_5f_5f_2e_5f_5funnamed9_5f_5f_44',['DshotTelemetryFrame.__unnamed7__.__unnamed9__',['../esc__dshot_8h.html#structDshotTelemetryFrame_8____unnamed7_____8____unnamed9____',1,'']]],
   ['dw_45',['DW',['../UKF__Wind__Estimator_8h.html#structDW',1,'']]],
-  ['dw1000_46',['DW1000',['../dw1000__arduino_8c.html#structDW1000',1,'']]]
+  ['dw1000rangearduino_46',['DW1000RangeArduino',['../dw1000__range__arduino_8c.html#structDW1000RangeArduino',1,'']]]
 ];

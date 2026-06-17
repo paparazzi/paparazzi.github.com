@@ -20,5 +20,6 @@ var searchData=
   ['usbmassstoragedriver_17',['USBMassStorageDriver',['../usb__msd_8h.html#structUSBMassStorageDriver',1,'']]],
   ['utmcoor_5fd_18',['UtmCoor_d',['../group__math__geodetic__double.html#structUtmCoor__d',1,'']]],
   ['utmcoor_5ff_19',['UtmCoor_f',['../pprz__geodetic__float_8h.html#structUtmCoor__f',1,'']]],
-  ['utmcoor_5fi_20',['UtmCoor_i',['../group__math__geodetic__int.html#structUtmCoor__i',1,'']]]
+  ['utmcoor_5fi_20',['UtmCoor_i',['../group__math__geodetic__int.html#structUtmCoor__i',1,'']]],
+  ['uwbpositioning_21',['UwbPositioning',['../uwb__positioning_8c.html#structUwbPositioning',1,'']]]
 ];

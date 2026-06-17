@@ -21,5 +21,5 @@ var searchData=
   ['dragspeed_20module_18',['dragspeed module',['../module__dragspeed.html',1,'onboard_modules']]],
   ['drop_5fzone_20module_19',['drop_zone module',['../module__drop_zone.html',1,'onboard_modules']]],
   ['dust_5fgp2y_20module_20',['dust_gp2y module',['../module__dust_gp2y.html',1,'onboard_modules']]],
-  ['dw1000_5farduino_20module_21',['dw1000_arduino module',['../module__dw1000_arduino.html',1,'onboard_modules']]]
+  ['dw1000_5frange_5farduino_20module_21',['dw1000_range_arduino module',['../module__dw1000_range_arduino.html',1,'onboard_modules']]]
 ];

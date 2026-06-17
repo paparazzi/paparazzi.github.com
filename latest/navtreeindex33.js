@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"charge__sens_8h.html#a986b67a708cc587643caeace4052b62f":[12,0,1,0,6,44,2,0],
+"charge__sens_8h_source.html":[12,0,1,0,6,44,2],
 "chconf_8h.html":[12,0,1,0,0,0,3],
 "chconf_8h_source.html":[12,0,1,0,0,0,3],
 "chdk__pipe_8c.html":[12,0,1,0,6,19,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "chibios_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,0,1,1,2,1],
 "chibios_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,0,0,1,1,2,0],
 "chibios_2modules_2core_2settings__arch_8c_source.html":[12,0,1,0,0,0,1,1,2],
-"chibios_2modules_2core_2threads__arch_8c.html":[12,0,1,0,0,0,1,1,5],
-"chibios_2modules_2core_2threads__arch_8c.html#a20bfc2ac32043b58f03d6776c4a58f46":[12,0,1,0,0,0,1,1,5,6],
-"chibios_2modules_2core_2threads__arch_8c.html#a3d0da95d5f58f817dc1b1f3b0c25df8e":[12,0,1,0,0,0,1,1,5,10]
+"chibios_2modules_2core_2threads__arch_8c.html":[12,0,1,0,0,0,1,1,5]
 };

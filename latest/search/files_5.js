@@ -46,6 +46,6 @@ var searchData=
   ['dshot_5frpmcapture_2eh_43',['dshot_rpmCapture.h',['../dshot__rpmCapture_8h.html',1,'']]],
   ['dust_5fgp2y_2ec_44',['dust_gp2y.c',['../dust__gp2y_8c.html',1,'']]],
   ['dust_5fgp2y_2eh_45',['dust_gp2y.h',['../dust__gp2y_8h.html',1,'']]],
-  ['dw1000_5farduino_2ec_46',['dw1000_arduino.c',['../dw1000__arduino_8c.html',1,'']]],
-  ['dw1000_5farduino_2eh_47',['dw1000_arduino.h',['../dw1000__arduino_8h.html',1,'']]]
+  ['dw1000_5frange_5farduino_2ec_46',['dw1000_range_arduino.c',['../dw1000__range__arduino_8c.html',1,'']]],
+  ['dw1000_5frange_5farduino_2eh_47',['dw1000_range_arduino.h',['../dw1000__range__arduino_8h.html',1,'']]]
 ];
