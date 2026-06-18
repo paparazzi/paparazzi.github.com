@@ -907,7 +907,6 @@ var annotated_dup =
     [ "NedCoor_i", "group__math__geodetic__int.html#structNedCoor__i", "group__math__geodetic__int_structNedCoor__i" ],
     [ "nodeState", "decawave__anchorless__communication_8c.html#structnodeState", "decawave__anchorless__communication_8c_structnodeState" ],
     [ "notch_axis_t", "oneloop__andi_8h.html#structnotch__axis__t", "oneloop__andi_8h_structnotch__axis__t" ],
-    [ "nps_ivy_metadata_t", "nps__ivy_8c.html#structnps__ivy__metadata__t", "nps__ivy_8c_structnps__ivy__metadata__t" ],
     [ "NpsAtmosphere", "nps__atmosphere_8h.html#structNpsAtmosphere", "nps__atmosphere_8h_structNpsAtmosphere" ],
     [ "NpsAutopilot", "nps__autopilot_8h.html#structNpsAutopilot", "nps__autopilot_8h_structNpsAutopilot" ],
     [ "NpsElectrical", "nps__electrical_8h.html#structNpsElectrical", "nps__electrical_8h_structNpsElectrical" ],

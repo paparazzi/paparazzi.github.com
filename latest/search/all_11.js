@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g_0',['g',['../discrete__ekf__no__north_8h.html#ab44ecc8333db8bb2a4fa1a95b78c5e14',1,'discrete_ekf_no_north::G'],['../lsm6ds33_8h.html#a263b3a4b7d552519a922f719457dc6d9',1,'Lsm6Config::g'],['../pid_8h.html#a7d879d71fa21cb9b8913c0e497de6f11',1,'PI_D_df::g'],['../pid_8h.html#aba3684df7212207479ee69a373c875c5',1,'PID_df::g'],['../pid_8h.html#a3564d7835fb34bd4f3c013282eb29678',1,'PID_f::g'],['../ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd',1,'g:&#160;ballistic_touchdown.c'],['../oneloop__andi_8c.html#a8cf17d727651616de6f2b79ef32170cd',1,'g:&#160;oneloop_andi.c']]],
+  ['g_0',['g',['../lsm6ds33_8h.html#a263b3a4b7d552519a922f719457dc6d9',1,'Lsm6Config::g'],['../pid_8h.html#a7d879d71fa21cb9b8913c0e497de6f11',1,'PI_D_df::g'],['../pid_8h.html#aba3684df7212207479ee69a373c875c5',1,'PID_df::g'],['../pid_8h.html#a3564d7835fb34bd4f3c013282eb29678',1,'PID_f::g'],['../discrete__ekf__no__north_8h.html#ab44ecc8333db8bb2a4fa1a95b78c5e14',1,'discrete_ekf_no_north::G'],['../ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd',1,'g:&#160;ballistic_touchdown.c'],['../oneloop__andi_8c.html#a8cf17d727651616de6f2b79ef32170cd',1,'g:&#160;oneloop_andi.c']]],
   ['g1_1',['g1',['../namespacelogger__uart__parse.html#acd428c03456df744aa84cfc07b51c634',1,'logger_uart_parse.g1'],['../stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0',1,'g1:&#160;stabilization_indi.c'],['../stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df',1,'IndiVariables::g1'],['../stabilization__indi__simple_8h.html#ad855728941014914e87de5b636ad1a7b',1,'IndiEstimation::g1']]],
   ['g1_5fest_2',['g1_est',['../stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec',1,'stabilization_indi.c']]],
   ['g1_5finit_3',['g1_init',['../stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272',1,'stabilization_indi.c']]],
@@ -72,7 +72,7 @@ var searchData=
   ['gainspid_69',['GainsPID',['../optical__flow__functions_8h.html#structGainsPID',1,'']]],
   ['gam_70',['gam',['../discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2afe0b7d2e48955ec8f8f09bceb309863e',1,'discrete_ekf_no_north.c']]],
   ['gam_5fsensor_5fid_71',['gam_sensor_id',['../hott__gam_8h.html#ab03245dbecf7485c41c11280d432f0f9',1,'HOTT_GAM_MSG']]],
-  ['gamma_72',['gamma',['../discrete__ekf__no__north_8h.html#afab4680f80cae428c439d71589fa8ab1',1,'discrete_ekf_no_north::Gamma'],['../gvf__ik_8h.html#a08d08c091abdb1c3cd2ca23c72b4a538',1,'gvf_ik_con::gamma']]],
+  ['gamma_72',['gamma',['../gvf__ik_8h.html#a08d08c091abdb1c3cd2ca23c72b4a538',1,'gvf_ik_con::gamma'],['../discrete__ekf__no__north_8h.html#afab4680f80cae428c439d71589fa8ab1',1,'discrete_ekf_no_north::Gamma']]],
   ['gamma_5famplitude_73',['gamma_amplitude',['../gvf__ik_8h.html#a1b07ed954863f0fed8aab6383e936657',1,'gvf_ik_con']]],
   ['gamma_5fcorrector_74',['gamma_corrector',['../libisp_8c.html#ad08537cc3fc235615c3240408dc9ed4f',1,'avi_isp_offsets::gamma_corrector'],['../libisp_8h.html#aaafc30868139cfec3d89327714eafd5b',1,'libisp_config::gamma_corrector']]],
   ['gamma_5fdot_75',['gamma_dot',['../gvf__ik_8h.html#a5860a7717ba0263714541dbed5bed7e2',1,'gvf_ik_con']]],

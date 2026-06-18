@@ -1,7 +1,5 @@
 var NAVTREEINDEX169 =
 {
-"pdec_8c.html#structpdec__target__cmd__payload":[12,0,1,0,6,16,6,1],
-"pdec_8c.html#structpdec__tdoa__report__event__payload":[12,0,1,0,6,16,6,8],
 "pdec_8c.html#structpdec__tdoa__report__payload":[12,0,1,0,6,16,6,7],
 "pdec_8c_source.html":[12,0,1,0,6,16,6],
 "pdec_8h.html":[12,0,1,0,6,16,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX169 =
 "pipe_8h.html#a11b0b422e3667587f3e11d17ef1473e3":[12,0,1,0,5,7,0,7],
 "pipe_8h.html#a14ca8427ac6e9b1b03837df635720873":[12,0,1,0,5,7,9],
 "pipe_8h.html#a1c827d3eb7b0dada967335c4e690689e":[12,0,1,0,5,7,0,6],
-"pipe_8h.html#a302f59eb4358a2074592b70c525d93bb":[12,0,1,0,5,7,0,1]
+"pipe_8h.html#a302f59eb4358a2074592b70c525d93bb":[12,0,1,0,5,7,0,1],
+"pipe_8h.html#a4ef04436e6981ebc8f0e2380b9307add":[12,0,1,0,5,7,0,3],
+"pipe_8h.html#a5f5f9bef9c717900a74e9cfa367d70b4":[12,0,1,0,5,7,6]
 };

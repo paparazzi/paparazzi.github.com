@@ -1,7 +1,5 @@
 var NAVTREEINDEX190 =
 {
-"rover_2navigation_8h.html#aa07848eda5d214eba3c43b770e74dc0b":[12,0,1,0,3,3,10,44],
-"rover_2navigation_8h.html#aa7992cd3005e9daab2dda14f2950249b":[12,0,1,0,3,3,10,46],
 "rover_2navigation_8h.html#aa94f83fda4e627ae4f187501e5cfa6af":[12,0,1,0,3,3,10,0,4],
 "rover_2navigation_8h.html#aad9a6009d854190c8446776d983e7dfd":[12,0,1,0,3,3,10,37],
 "rover_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b":[12,0,1,0,3,3,10,26],
@@ -249,5 +247,7 @@ var NAVTREEINDEX190 =
 "rover__obstacles_8h.html#a63beccf4ceb1c0282357782c150015f0":[12,0,1,0,3,3,1,1,5],
 "rover__obstacles_8h.html#a675a9f460a4727bf5189e9cb34961bc4":[12,0,1,0,3,3,1,1,1,6],
 "rover__obstacles_8h.html#a8591617e05d46cb02c404076fd107e94":[12,0,1,0,3,3,1,1,12],
-"rover__obstacles_8h.html#a8ca009f780a445bb9663c400d04d2728":[12,0,1,0,3,3,1,1,3]
+"rover__obstacles_8h.html#a8ca009f780a445bb9663c400d04d2728":[12,0,1,0,3,3,1,1,3],
+"rover__obstacles_8h.html#a98231a852f49d868713fa7f3e337c6d5":[12,0,1,0,3,3,1,1,1,1],
+"rover__obstacles_8h.html#aa203564de55c3bd313f771f482b65af0":[12,0,1,0,3,3,1,1,0,0]
 };

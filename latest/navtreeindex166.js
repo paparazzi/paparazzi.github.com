@@ -1,7 +1,5 @@
 var NAVTREEINDEX166 =
 {
-"orange__avoider_8c.html#a1296b3545ad39ed2510a2057a20dfb26":[12,0,1,0,6,50,0,6],
-"orange__avoider_8c.html#a1ad9e2448e1e1040a067c17c503312e1":[12,0,1,0,6,50,0,10],
 "orange__avoider_8c.html#a1fa0dc3b6f3dc521aca2caa29ac10d2b":[12,0,1,0,6,50,0,14],
 "orange__avoider_8c.html#a3dcb255e37ff019a3d236d91ad996803":[12,0,1,0,6,50,0,15],
 "orange__avoider_8c.html#a4061206ff43dc37171197e87380ef155":[12,0,1,0,6,50,0,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#FLY_BY_WIRE":[2,2,16],
 "paparazzi_messages.html#FMS_TIME":[2,0,175],
 "paparazzi_messages.html#FORMATION_SLOT":[2,1,6],
-"paparazzi_messages.html#FORMATION_SLOT_TM":[2,0,77]
+"paparazzi_messages.html#FORMATION_SLOT_TM":[2,0,77],
+"paparazzi_messages.html#FORMATION_STATUS":[2,1,7],
+"paparazzi_messages.html#FORMATION_STATUS_TM":[2,0,78]
 };

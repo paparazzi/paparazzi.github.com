@@ -1,7 +1,5 @@
 var NAVTREEINDEX224 =
 {
-"usb__msd_8h_source.html":[12,0,1,0,6,42,0,7],
-"usb__ser__hw_8c.html":[12,0,1,0,0,0,12],
 "usb__ser__hw_8c_source.html":[12,0,1,0,0,0,12],
 "usb__serial_8h.html":[12,0,1,0,5,22],
 "usb__serial_8h.html#a15c895e4456578b3ca2818c1e17c832a":[12,0,1,0,5,22,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX224 =
 "vf__float_8h.html#a42d7be223a613c4cdafd0e21deda6976":[12,0,1,0,6,37,51,9],
 "vf__float_8h.html#a5795cb080f2f001246bd022934a493b3":[12,0,1,0,6,37,51,0,0],
 "vf__float_8h.html#a6b79409337c63cb82e160e713b9b5455":[12,0,1,0,6,37,51,2],
-"vf__float_8h.html#a7d74fd7f8f95cece04e3c147e409f935":[12,0,1,0,6,37,51,7]
+"vf__float_8h.html#a7d74fd7f8f95cece04e3c147e409f935":[12,0,1,0,6,37,51,7],
+"vf__float_8h.html#a985d750a72be66416d761c5863aab331":[12,0,1,0,6,37,51,0,4],
+"vf__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af":[12,0,1,0,6,37,51,5]
 };

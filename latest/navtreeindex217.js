@@ -1,7 +1,5 @@
 var NAVTREEINDEX217 =
 {
-"teraranger__one_8h.html#af01fe02032b123a43179c983ff142d44":[12,0,1,0,6,57,5,0,1],
-"teraranger__one_8h.html#af1444827154e6e78091db77c5061a5ef":[12,0,1,0,6,57,5,3],
 "teraranger__one_8h.html#structTeraRanger":[12,0,1,0,6,57,5,0],
 "teraranger__one_8h_source.html":[12,0,1,0,6,57,5],
 "textons_8c.html":[12,0,1,0,6,12,38],
@@ -249,5 +247,7 @@ var NAVTREEINDEX217 =
 "throttle__curve_8h.html#a2b6edfe01cbcdcebefee1ab774a31f21":[12,0,1,0,6,34,3,1,8],
 "throttle__curve_8h.html#a368315ff03aed8ea68faa87320f87ccf":[12,0,1,0,6,34,3,0,3],
 "throttle__curve_8h.html#a39d5b281efa82717969e59614063b5c9":[12,0,1,0,6,34,3,1,6],
-"throttle__curve_8h.html#a3f72dd633e4ce3a0b9b340f7c7cca88a":[12,0,1,0,6,34,3,1,10]
+"throttle__curve_8h.html#a3f72dd633e4ce3a0b9b340f7c7cca88a":[12,0,1,0,6,34,3,1,10],
+"throttle__curve_8h.html#a407da26e0c6b494c85475c120c7281c8":[12,0,1,0,6,34,3,0,0],
+"throttle__curve_8h.html#a51774334fc5e17498f2ae03430511dd5":[12,0,1,0,6,34,3,0,2]
 };

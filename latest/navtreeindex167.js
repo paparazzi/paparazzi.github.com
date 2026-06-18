@@ -1,7 +1,5 @@
 var NAVTREEINDEX167 =
 {
-"paparazzi_messages.html#FORMATION_STATUS":[2,1,7],
-"paparazzi_messages.html#FORMATION_STATUS_TM":[2,0,78],
 "paparazzi_messages.html#FUELCELL":[2,0,192],
 "paparazzi_messages.html#GEIGER_COUNTER":[2,0,148],
 "paparazzi_messages.html#GENERIC_COM":[2,0,76],
@@ -249,5 +247,7 @@ var NAVTREEINDEX167 =
 "paparazzi_messages.html#WIND_CLEAR":[2,2,6],
 "paparazzi_messages.html#WIND_INFO":[2,1,2],
 "paparazzi_messages.html#WIND_INFO_RET":[2,0,82],
-"paparazzi_messages.html#WLS_U":[2,0,183]
+"paparazzi_messages.html#WLS_U":[2,0,183],
+"paparazzi_messages.html#WLS_V":[2,0,182],
+"paparazzi_messages.html#WORLD_ENV":[2,2,18]
 };

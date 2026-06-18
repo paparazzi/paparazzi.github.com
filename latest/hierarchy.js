@@ -875,7 +875,6 @@ var hierarchy =
     [ "nodeState", "decawave__anchorless__communication_8c.html#structnodeState", null ],
     [ "VL53L1_Dev_t::NonBlocking", "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking", null ],
     [ "notch_axis_t", "oneloop__andi_8h.html#structnotch__axis__t", null ],
-    [ "nps_ivy_metadata_t", "nps__ivy_8c.html#structnps__ivy__metadata__t", null ],
     [ "NpsAtmosphere", "nps__atmosphere_8h.html#structNpsAtmosphere", null ],
     [ "NpsAutopilot", "nps__autopilot_8h.html#structNpsAutopilot", null ],
     [ "NpsElectrical", "nps__electrical_8h.html#structNpsElectrical", null ],
