@@ -1,5 +1,11 @@
 var NAVTREEINDEX137 =
 {
+"module__switch_uart.html#module_load_example__switch_uart":[1,475,0],
+"module__switch_uart.html#module_xml__switch_uart":[1,475,1,0],
+"module__sys_id_auto_doublets.html":[1,476],
+"module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,476,1],
+"module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,476,2],
+"module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,476,0],
 "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,476,2,0],
 "module__sys_id_chirp.html":[1,477],
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,477,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX137 =
 "module__wedgebug.html#configuration__wedgebug":[1,535,1],
 "module__wedgebug.html#functions__wedgebug":[1,535,2],
 "module__wedgebug.html#module_load_example__wedgebug":[1,535,0],
-"module__wedgebug.html#module_xml__wedgebug":[1,535,2,0],
-"module__wind_estimation_quadrotor.html":[1,316],
-"module__wind_estimation_quadrotor.html#configuration__wind_estimation_quadrotor":[1,316,1],
-"module__wind_estimation_quadrotor.html#functions__wind_estimation_quadrotor":[1,316,2],
-"module__wind_estimation_quadrotor.html#module_load_example__wind_estimation_quadrotor":[1,316,0],
-"module__wind_estimation_quadrotor.html#module_xml__wind_estimation_quadrotor":[1,316,2,0],
-"module__wind_estimator.html":[1,317]
+"module__wedgebug.html#module_xml__wedgebug":[1,535,2,0]
 };

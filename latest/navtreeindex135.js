@@ -1,5 +1,11 @@
 var NAVTREEINDEX135 =
 {
+"module__nav_rotorcraft.html":[1,353],
+"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,353,2],
+"module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,353,1],
+"module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,353,0],
+"module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,353,2,0],
+"module__nav_rover_base.html":[1,354],
 "module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,354,2],
 "module__nav_rover_base.html#functions__nav_rover_base":[1,354,1],
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,354,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX135 =
 "module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,382,0],
 "module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,382,2,0],
 "module__radio_control_ppm.html":[1,383],
-"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,383,1],
-"module__radio_control_ppm.html#functions__radio_control_ppm":[1,383,2],
-"module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,383,0],
-"module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,383,2,0],
-"module__radio_control_sbus.html":[1,384],
-"module__radio_control_sbus.html#configuration__radio_control_sbus":[1,384,1],
-"module__radio_control_sbus.html#functions__radio_control_sbus":[1,384,2]
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,383,1]
 };

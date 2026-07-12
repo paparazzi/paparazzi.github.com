@@ -11,6 +11,7 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_indi.c", "guidance__indi_8c.html", "guidance__indi_8c" ],
     [ "guidance_indi.h", "guidance__indi_8h.html", "guidance__indi_8h" ],
     [ "guidance_indi_fully_actuated.c", "guidance__indi__fully__actuated_8c.html", "guidance__indi__fully__actuated_8c" ],
+    [ "guidance_indi_fully_actuated.h", "guidance__indi__fully__actuated_8h.html", "guidance__indi__fully__actuated_8h" ],
     [ "guidance_indi_hinf.c", "guidance__indi__hinf_8c.html", "guidance__indi__hinf_8c" ],
     [ "guidance_indi_hybrid.c", "guidance__indi__hybrid_8c.html", "guidance__indi__hybrid_8c" ],
     [ "guidance_indi_hybrid.h", "guidance__indi__hybrid_8h.html", "guidance__indi__hybrid_8h" ],

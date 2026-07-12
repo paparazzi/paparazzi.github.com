@@ -1,5 +1,11 @@
 var NAVTREEINDEX78 =
 {
+"high__speed__logger__direct__memory_8c.html#a9bb9556634a30631566d56635357a786":[12,0,1,0,6,42,5,66],
+"high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02":[12,0,1,0,6,42,5,37],
+"high__speed__logger__direct__memory_8c.html#a9c9c2ddcfab751a75ed6d26156db2836":[12,0,1,0,6,42,5,30],
+"high__speed__logger__direct__memory_8c.html#aac27c26e637cbfeab795369f0263f911":[12,0,1,0,6,42,5,59],
+"high__speed__logger__direct__memory_8c.html#aacc3264ce2d5a73667a5118af0c3b7b5":[12,0,1,0,6,42,5,36],
+"high__speed__logger__direct__memory_8c.html#aae203a8165f66fc3887fa9cfbb8ba904":[12,0,1,0,6,42,5,1],
 "high__speed__logger__direct__memory_8c.html#ab998d0a08b382adc864f654d3f576195":[12,0,1,0,6,42,5,57],
 "high__speed__logger__direct__memory_8c.html#ac38f9e76b0e5666c694524b724f932ec":[12,0,1,0,6,42,5,0],
 "high__speed__logger__direct__memory_8c.html#ac5bc00c8ec919ceaacf654065026a276":[12,0,1,0,6,42,5,26],
@@ -243,11 +249,5 @@ var NAVTREEINDEX78 =
 "holybro_2kakute__f7_2board_8h.html#a13c12583479dadf69b81e82e10d08646":[12,0,1,0,1,8,0,0,356],
 "holybro_2kakute__f7_2board_8h.html#a1440f61d65a07dd83e3175204d260454":[12,0,1,0,1,8,0,0,52],
 "holybro_2kakute__f7_2board_8h.html#a145103118f6d9d1129aa4509cf214a13":[12,0,1,0,1,8,0,0,78],
-"holybro_2kakute__f7_2board_8h.html#a1554de2a894b0904928ed53ec29eeea6":[12,0,1,0,1,8,0,0,240],
-"holybro_2kakute__f7_2board_8h.html#a15972f7629e0dd4adb7a3b58f425580c":[12,0,1,0,1,8,0,0,256],
-"holybro_2kakute__f7_2board_8h.html#a161081b41465c86e1a771c4194041341":[12,0,1,0,1,8,0,0,344],
-"holybro_2kakute__f7_2board_8h.html#a1722414b76cfd552344eeaa68e66c007":[12,0,1,0,1,8,0,0,319],
-"holybro_2kakute__f7_2board_8h.html#a17b1c0dd975a2f3b053a23548155d0d5":[12,0,1,0,1,8,0,0,288],
-"holybro_2kakute__f7_2board_8h.html#a17d26ffdf5e0e4c44f06dbb16c0363c3":[12,0,1,0,1,8,0,0,248],
-"holybro_2kakute__f7_2board_8h.html#a18550a93588430c6743a1cdaaf57c04f":[12,0,1,0,1,8,0,0,193]
+"holybro_2kakute__f7_2board_8h.html#a1554de2a894b0904928ed53ec29eeea6":[12,0,1,0,1,8,0,0,240]
 };

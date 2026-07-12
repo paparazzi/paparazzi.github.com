@@ -1,5 +1,11 @@
 var NAVTREEINDEX129 =
 {
+"module__ahrs_float_invariant.html":[1,31],
+"module__ahrs_float_invariant.html#configuration__ahrs_float_invariant":[1,31,1],
+"module__ahrs_float_invariant.html#functions__ahrs_float_invariant":[1,31,2],
+"module__ahrs_float_invariant.html#module_load_example__ahrs_float_invariant":[1,31,0],
+"module__ahrs_float_invariant.html#module_xml__ahrs_float_invariant":[1,31,2,0],
+"module__ahrs_float_mlkf.html":[1,32],
 "module__ahrs_float_mlkf.html#configuration__ahrs_float_mlkf":[1,32,1],
 "module__ahrs_float_mlkf.html#module_load_example__ahrs_float_mlkf":[1,32,0],
 "module__ahrs_float_mlkf.html#module_xml__ahrs_float_mlkf":[1,32,1,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX129 =
 "module__board_tmotor_aiof7.html#module_xml__board_tmotor_aiof7":[1,45,0,0],
 "module__cam_gimbal.html":[1,48],
 "module__cam_gimbal.html#functions__cam_gimbal":[1,48,1],
-"module__cam_gimbal.html#module_load_example__cam_gimbal":[1,48,0],
-"module__cam_gimbal.html#module_xml__cam_gimbal":[1,48,1,0],
-"module__can.html":[1,284],
-"module__can.html#configuration__can":[1,284,1],
-"module__can.html#module_load_example__can":[1,284,0],
-"module__can.html#module_xml__can":[1,284,1,0],
-"module__can_fuelcell.html":[1,150]
+"module__cam_gimbal.html#module_load_example__cam_gimbal":[1,48,0]
 };

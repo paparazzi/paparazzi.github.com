@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"module__radio_control_ppm.html#functions__radio_control_ppm":[1,383,2],
+"module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,383,0],
+"module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,383,2,0],
+"module__radio_control_sbus.html":[1,384],
+"module__radio_control_sbus.html#configuration__radio_control_sbus":[1,384,1],
+"module__radio_control_sbus.html#functions__radio_control_sbus":[1,384,2],
 "module__radio_control_sbus.html#module_load_example__radio_control_sbus":[1,384,0],
 "module__radio_control_sbus.html#module_xml__radio_control_sbus":[1,384,2,0],
 "module__radio_control_sbus_dual.html":[1,385],
@@ -243,11 +249,5 @@ var NAVTREEINDEX136 =
 "module__switch_servo.html#module_load_example__switch_servo":[1,474,0],
 "module__switch_servo.html#module_xml__switch_servo":[1,474,2,0],
 "module__switch_uart.html":[1,475],
-"module__switch_uart.html#functions__switch_uart":[1,475,1],
-"module__switch_uart.html#module_load_example__switch_uart":[1,475,0],
-"module__switch_uart.html#module_xml__switch_uart":[1,475,1,0],
-"module__sys_id_auto_doublets.html":[1,476],
-"module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,476,1],
-"module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,476,2],
-"module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,476,0]
+"module__switch_uart.html#functions__switch_uart":[1,475,1]
 };

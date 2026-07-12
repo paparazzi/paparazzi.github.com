@@ -1,5 +1,11 @@
 var NAVTREEINDEX132 =
 {
+"module__gsm.html":[1,500],
+"module__gsm.html#functions__gsm":[1,500,1],
+"module__gsm.html#module_load_example__gsm":[1,500,0],
+"module__gsm.html#module_xml__gsm":[1,500,1,0],
+"module__guidance_basic_fw.html":[1,178],
+"module__guidance_basic_fw.html#configuration__guidance_basic_fw":[1,178,1],
 "module__guidance_basic_fw.html#functions__guidance_basic_fw":[1,178,2],
 "module__guidance_basic_fw.html#module_load_example__guidance_basic_fw":[1,178,0],
 "module__guidance_basic_fw.html#module_xml__guidance_basic_fw":[1,178,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX132 =
 "module__imu_disco.html#module_load_example__imu_disco":[1,217,0],
 "module__imu_disco.html#module_xml__imu_disco":[1,217,2,0],
 "module__imu_heater.html":[1,218],
-"module__imu_heater.html#configuration__imu_heater":[1,218,1],
-"module__imu_heater.html#functions__imu_heater":[1,218,2],
-"module__imu_heater.html#module_load_example__imu_heater":[1,218,0],
-"module__imu_heater.html#module_xml__imu_heater":[1,218,2,0],
-"module__imu_icm42688.html":[1,219],
-"module__imu_icm42688.html#configuration__imu_icm42688":[1,219,1],
-"module__imu_icm42688.html#functions__imu_icm42688":[1,219,2]
+"module__imu_heater.html#configuration__imu_heater":[1,218,1]
 };

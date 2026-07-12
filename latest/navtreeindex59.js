@@ -248,6 +248,6 @@ var NAVTREEINDEX59 =
 "frsky__x_8h.html#structfifo__t":[12,0,1,0,6,15,10,0],
 "frsky__x_8h.html#structfrsky__x__serial__periph":[12,0,1,0,6,15,10,1],
 "frsky__x_8h_source.html":[12,0,1,0,6,15,10],
-"functions.html":[11,3,0,0],
-"functions.html":[11,3,0]
+"functions.html":[11,3,0],
+"functions.html":[11,3,0,0]
 };

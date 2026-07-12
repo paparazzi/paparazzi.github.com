@@ -1,5 +1,11 @@
 var NAVTREEINDEX134 =
 {
+"module__light.html":[1,269],
+"module__light.html#configuration__light":[1,269,1],
+"module__light.html#functions__light":[1,269,2],
+"module__light.html#module_load_example__light":[1,269,0],
+"module__light.html#module_xml__light":[1,269,2,0],
+"module__light_scheduler.html":[1,270],
 "module__light_scheduler.html#configuration__light_scheduler":[1,270,1],
 "module__light_scheduler.html#functions__light_scheduler":[1,270,2],
 "module__light_scheduler.html#module_load_example__light_scheduler":[1,270,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX134 =
 "module__nav_rosette.html":[1,352],
 "module__nav_rosette.html#functions__nav_rosette":[1,352,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,352,0],
-"module__nav_rosette.html#module_xml__nav_rosette":[1,352,1,0],
-"module__nav_rotorcraft.html":[1,353],
-"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,353,2],
-"module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,353,1],
-"module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,353,0],
-"module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,353,2,0],
-"module__nav_rover_base.html":[1,354]
+"module__nav_rosette.html#module_xml__nav_rosette":[1,352,1,0]
 };

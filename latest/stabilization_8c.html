@@ -665,7 +665,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="structStabilizationSetpoint.html#a5a77b8868aa93dc1b3bd285eb936ad51">StabilizationSetpoint::format</a>, <a class="el" href="structStabilizationSetpoint.html#a8a2fcc5791a1aa4db4b77f847656fee8">StabilizationSetpoint::sp</a>, <a class="el" href="stabilization_8h_source.html#l00056">StabilizationSetpoint::STAB_SP_EULERS</a>, <a class="el" href="stabilization_8h_source.html#l00063">StabilizationSetpoint::STAB_SP_FLOAT</a>, and <a class="el" href="structStabilizationSetpoint.html#a39e02b373e8f6d8188751d7ebe2e566e">StabilizationSetpoint::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00391">guidance_h_from_nav()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, and <a class="el" href="stabilization_8c_source.html#l00275">stabilization_get_failsafe_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00391">guidance_h_from_nav()</a>, <a class="el" href="guidance__plane_8c_source.html#l00128">guidance_plane_attitude_from_nav()</a>, <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00152">guidance_set_rc_h_att()</a>, and <a class="el" href="stabilization_8c_source.html#l00275">stabilization_get_failsafe_sp()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -673,26 +673,28 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph.png" border="0" usemap="#astabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph" alt=""/></div>
 <map name="astabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph" id="astabilization_8c_a844eeee3541745feb4361f870023c0d7_icgraph">
-<area shape="rect" title=" " alt="" coords="721,127,891,153"/>
+<area shape="rect" title=" " alt="" coords="721,146,891,171"/>
 <area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="492,5,673,45"/>
-<area shape="poly" title=" " alt="" coords="771,122,672,66,632,48,634,43,675,62,774,118"/>
+<area shape="poly" title=" " alt="" coords="777,139,729,103,672,66,634,48,637,43,675,62,732,99,780,135"/>
 <area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,120,187,160"/>
-<area shape="poly" title=" " alt="" coords="714,128,615,116,496,106,366,103,236,111,171,123,170,117,236,105,366,98,496,101,616,111,714,123"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="500,179,665,205"/>
-<area shape="poly" title=" " alt="" coords="738,158,638,182,637,177,737,153"/>
+<area shape="poly" title=" " alt="" coords="738,146,673,133,551,114,455,102,359,101,236,111,171,123,170,117,236,105,359,95,455,97,551,109,674,128,739,140"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="500,171,665,197"/>
+<area shape="poly" title=" " alt="" coords="708,172,666,177,665,172,707,167"/>
 <area shape="rect" href="guidance__plane_8c.html#ab64ef7c7410ce6d1aeee8a4ce945ac78" title="run horizontal control loop for position and speed control" alt="" coords="249,120,431,160"/>
-<area shape="poly" title=" " alt="" coords="708,143,432,143,432,137,708,137"/>
-<area shape="rect" href="stabilization_8c.html#ad6249a54ee536ed29d3dd9243f12bda3" title="Get stabilization setpoint for failsafe." alt="" coords="236,234,444,259"/>
-<area shape="poly" title=" " alt="" coords="779,163,732,194,674,220,616,235,556,244,444,252,444,247,556,239,615,230,672,215,729,189,776,159"/>
+<area shape="poly" title=" " alt="" coords="707,157,431,146,432,141,708,152"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a73637e60119346e49f43aea6ad12a8b1" title="Set flat attitude setpoint from RC Heading setpoint is kept." alt="" coords="499,221,666,246"/>
+<area shape="poly" title=" " alt="" coords="763,179,674,212,636,223,635,218,672,207,761,174"/>
+<area shape="rect" href="stabilization_8c.html#ad6249a54ee536ed29d3dd9243f12bda3" title="Get stabilization setpoint for failsafe." alt="" coords="236,262,444,287"/>
+<area shape="poly" title=" " alt="" coords="785,184,738,225,707,246,674,261,617,277,557,286,498,289,444,288,444,283,498,283,556,280,616,272,672,256,705,241,734,221,782,180"/>
 <area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="278,185,402,210"/>
-<area shape="poly" title=" " alt="" coords="486,197,402,199,402,193,486,191"/>
+<area shape="poly" title=" " alt="" coords="486,192,402,197,402,191,486,187"/>
 <area shape="poly" title=" " alt="" coords="271,184,181,163,183,157,273,179"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,234,188,259"/>
-<area shape="poly" title=" " alt="" coords="265,215,161,237,159,231,264,210"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,243,188,269"/>
+<area shape="poly" title=" " alt="" coords="274,216,151,246,149,241,273,211"/>
 <area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,185,179,210"/>
 <area shape="poly" title=" " alt="" coords="264,200,180,200,180,195,264,195"/>
 <area shape="poly" title=" " alt="" coords="235,143,188,143,188,137,235,137"/>
-<area shape="poly" title=" " alt="" coords="222,249,188,249,188,244,222,244"/>
+<area shape="poly" title=" " alt="" coords="222,268,188,266,188,260,223,263"/>
 </map>
 </div>
 
@@ -1106,35 +1108,37 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph.png" border="0" usemap="#astabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph" alt=""/></div>
 <map name="astabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph" id="astabilization_8c_a75c4fbd3740da152c0742c639489c3be_icgraph">
-<area shape="rect" title=" " alt="" coords="676,201,807,226"/>
-<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="477,127,628,153"/>
-<area shape="poly" title=" " alt="" coords="694,198,586,155,588,150,696,193"/>
-<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="477,250,628,275"/>
-<area shape="poly" title=" " alt="" coords="680,232,603,252,602,247,678,227"/>
-<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="255,37,415,77"/>
-<area shape="poly" title=" " alt="" coords="509,124,428,92,396,80,398,75,430,87,511,119"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,102,429,127"/>
-<area shape="poly" title=" " alt="" coords="463,132,429,128,430,123,464,127"/>
-<area shape="rect" href="stabilization__attitude__euler__float_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,151,429,177"/>
-<area shape="poly" title=" " alt="" coords="464,152,430,156,429,151,463,147"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="9,5,190,45"/>
-<area shape="poly" title=" " alt="" coords="241,47,190,40,190,35,242,42"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="9,69,190,109"/>
-<area shape="poly" title=" " alt="" coords="242,73,190,80,190,74,241,67"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="254,201,417,226"/>
-<area shape="poly" title=" " alt="" coords="482,250,392,229,393,223,484,244"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,250,429,275"/>
-<area shape="poly" title=" " alt="" coords="463,265,430,265,430,260,463,260"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,299,429,325"/>
-<area shape="poly" title=" " alt="" coords="484,281,393,302,392,297,482,276"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,349,402,389"/>
-<area shape="poly" title=" " alt="" coords="523,285,480,313,430,340,402,352,400,347,428,335,478,308,520,281"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="10,177,189,202"/>
-<area shape="poly" title=" " alt="" coords="240,206,188,201,189,196,241,201"/>
-<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="13,226,185,251"/>
-<area shape="poly" title=" " alt="" coords="240,226,186,232,185,227,240,221"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,357,193,382"/>
-<area shape="poly" title=" " alt="" coords="255,372,194,372,194,367,255,367"/>
+<area shape="rect" title=" " alt="" coords="676,195,807,220"/>
+<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="477,120,628,145"/>
+<area shape="poly" title=" " alt="" coords="694,192,585,148,587,143,696,187"/>
+<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="477,268,628,293"/>
+<area shape="poly" title=" " alt="" coords="696,228,588,270,586,265,694,223"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a73637e60119346e49f43aea6ad12a8b1" title="Set flat attitude setpoint from RC Heading setpoint is kept." alt="" coords="252,5,419,31"/>
+<area shape="poly" title=" " alt="" coords="525,113,482,78,428,46,395,33,397,28,431,41,485,74,529,109"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="255,55,415,95"/>
+<area shape="poly" title=" " alt="" coords="490,119,411,98,412,93,491,114"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,120,429,145"/>
+<area shape="poly" title=" " alt="" coords="463,135,430,135,430,130,463,130"/>
+<area shape="rect" href="stabilization__attitude__euler__float_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,169,429,195"/>
+<area shape="poly" title=" " alt="" coords="484,151,393,172,392,167,482,146"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="9,23,190,63"/>
+<area shape="poly" title=" " alt="" coords="241,65,190,58,190,53,242,60"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="9,87,190,127"/>
+<area shape="poly" title=" " alt="" coords="242,91,190,98,190,92,241,85"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="254,219,417,244"/>
+<area shape="poly" title=" " alt="" coords="482,268,392,247,393,241,484,262"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,268,429,293"/>
+<area shape="poly" title=" " alt="" coords="463,283,430,283,430,278,463,278"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,317,429,343"/>
+<area shape="poly" title=" " alt="" coords="484,299,393,320,392,315,482,294"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,367,402,407"/>
+<area shape="poly" title=" " alt="" coords="523,303,480,331,430,358,402,370,400,365,428,353,478,326,520,299"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="10,195,189,220"/>
+<area shape="poly" title=" " alt="" coords="240,224,188,219,189,214,241,219"/>
+<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="13,244,185,269"/>
+<area shape="poly" title=" " alt="" coords="240,244,186,250,185,245,240,239"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,375,193,400"/>
+<area shape="poly" title=" " alt="" coords="255,390,194,390,194,385,255,385"/>
 </map>
 </div>
 
@@ -1206,35 +1210,37 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph.png" border="0" usemap="#astabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph" alt=""/></div>
 <map name="astabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph" id="astabilization_8c_a13e6024d01a653e903200b89c72795b4_icgraph">
-<area shape="rect" title=" " alt="" coords="676,201,805,226"/>
-<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="477,127,628,153"/>
-<area shape="poly" title=" " alt="" coords="693,198,586,155,588,150,695,193"/>
-<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="477,250,628,275"/>
-<area shape="poly" title=" " alt="" coords="679,232,603,252,602,247,678,227"/>
-<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="255,37,415,77"/>
-<area shape="poly" title=" " alt="" coords="509,124,428,92,396,80,398,75,430,87,511,119"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,102,429,127"/>
-<area shape="poly" title=" " alt="" coords="463,132,429,128,430,123,464,127"/>
-<area shape="rect" href="stabilization__attitude__euler__float_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,151,429,177"/>
-<area shape="poly" title=" " alt="" coords="464,152,430,156,429,151,463,147"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="9,5,190,45"/>
-<area shape="poly" title=" " alt="" coords="241,47,190,40,190,35,242,42"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="9,69,190,109"/>
-<area shape="poly" title=" " alt="" coords="242,73,190,80,190,74,241,67"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="254,201,417,226"/>
-<area shape="poly" title=" " alt="" coords="482,250,392,229,393,223,484,244"/>
-<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,250,429,275"/>
-<area shape="poly" title=" " alt="" coords="463,265,430,265,430,260,463,260"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,299,429,325"/>
-<area shape="poly" title=" " alt="" coords="484,281,393,302,392,297,482,276"/>
-<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,349,402,389"/>
-<area shape="poly" title=" " alt="" coords="523,285,480,313,430,340,402,352,400,347,428,335,478,308,520,281"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="10,177,189,202"/>
-<area shape="poly" title=" " alt="" coords="240,206,188,201,189,196,241,201"/>
-<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="13,226,185,251"/>
-<area shape="poly" title=" " alt="" coords="240,226,186,232,185,227,240,221"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,357,193,382"/>
-<area shape="poly" title=" " alt="" coords="255,372,194,372,194,367,255,367"/>
+<area shape="rect" title=" " alt="" coords="676,195,805,220"/>
+<area shape="rect" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5" title=" " alt="" coords="477,120,628,145"/>
+<area shape="poly" title=" " alt="" coords="694,192,584,148,586,143,696,187"/>
+<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="477,268,628,293"/>
+<area shape="poly" title=" " alt="" coords="695,228,588,270,586,265,693,223"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a73637e60119346e49f43aea6ad12a8b1" title="Set flat attitude setpoint from RC Heading setpoint is kept." alt="" coords="252,5,419,31"/>
+<area shape="poly" title=" " alt="" coords="525,113,482,78,428,46,395,33,397,28,431,41,485,74,529,109"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="255,55,415,95"/>
+<area shape="poly" title=" " alt="" coords="490,119,411,98,412,93,491,114"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,120,429,145"/>
+<area shape="poly" title=" " alt="" coords="463,135,430,135,430,130,463,130"/>
+<area shape="rect" href="stabilization__attitude__euler__float_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,169,429,195"/>
+<area shape="poly" title=" " alt="" coords="484,151,393,172,392,167,482,146"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="9,23,190,63"/>
+<area shape="poly" title=" " alt="" coords="241,65,190,58,190,53,242,60"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="9,87,190,127"/>
+<area shape="poly" title=" " alt="" coords="242,91,190,98,190,92,241,85"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="254,219,417,244"/>
+<area shape="poly" title=" " alt="" coords="482,268,392,247,393,241,484,262"/>
+<area shape="rect" href="stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,268,429,293"/>
+<area shape="poly" title=" " alt="" coords="463,283,430,283,430,278,463,278"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,317,429,343"/>
+<area shape="poly" title=" " alt="" coords="484,299,393,320,392,315,482,294"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,367,402,407"/>
+<area shape="poly" title=" " alt="" coords="523,303,480,331,430,358,402,370,400,365,428,353,478,326,520,299"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="10,195,189,220"/>
+<area shape="poly" title=" " alt="" coords="240,224,188,219,189,214,241,219"/>
+<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="13,244,185,269"/>
+<area shape="poly" title=" " alt="" coords="240,244,186,250,185,245,240,239"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,375,193,400"/>
+<area shape="poly" title=" " alt="" coords="255,390,194,390,194,385,255,385"/>
 </map>
 </div>
 
@@ -1260,7 +1266,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00709">EULERS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00696">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00745">QUAT_FLOAT_OF_BFP</a>, <a class="el" href="stabilization_8c_source.html#l00301">stab_sp_rotate_f()</a>, and <a class="el" href="stabilization_8c_source.html#l00287">stab_sp_rotate_i()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__attitude__plane__pid_8c_source.html#l00102">stabilization_attitude_plane_pid_run()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00152">guidance_set_rc_h_att()</a>, <a class="el" href="stabilization__attitude__plane__pid_8c_source.html#l00102">stabilization_attitude_plane_pid_run()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1303,17 +1309,19 @@ Variables</h2></td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph.png" border="0" usemap="#astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph" alt=""/></div>
 <map name="astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph" id="astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph">
-<area shape="rect" title=" " alt="" coords="471,102,621,127"/>
-<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="249,37,409,77"/>
-<area shape="poly" title=" " alt="" coords="483,101,404,80,406,75,485,96"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="235,102,423,127"/>
-<area shape="poly" title=" " alt="" coords="457,117,423,117,423,112,457,112"/>
-<area shape="rect" href="stabilization__attitude__euler__float_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="235,151,423,177"/>
-<area shape="poly" title=" " alt="" coords="477,133,386,154,385,149,476,128"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="5,5,187,45"/>
-<area shape="poly" title=" " alt="" coords="234,47,187,40,187,35,235,42"/>
-<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="5,69,187,109"/>
-<area shape="poly" title=" " alt="" coords="235,73,187,80,187,74,234,68"/>
+<area shape="rect" title=" " alt="" coords="471,92,621,117"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a73637e60119346e49f43aea6ad12a8b1" title="Set flat attitude setpoint from RC Heading setpoint is kept." alt="" coords="245,5,412,31"/>
+<area shape="poly" title=" " alt="" coords="509,88,422,46,383,33,384,28,424,41,512,83"/>
+<area shape="rect" href="stabilization__attitude__plane__pid_8c.html#a6bd3297113892137765db5177913e598" title=" " alt="" coords="249,55,409,95"/>
+<area shape="poly" title=" " alt="" coords="457,95,408,89,409,83,457,90"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="235,120,423,145"/>
+<area shape="poly" title=" " alt="" coords="457,119,423,123,423,118,456,113"/>
+<area shape="rect" href="stabilization__attitude__euler__float_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="235,169,423,195"/>
+<area shape="poly" title=" " alt="" coords="507,126,424,161,386,172,385,167,422,155,505,121"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a4461199643a00378c315418f41c5a14d" title=" " alt="" coords="5,23,187,63"/>
+<area shape="poly" title=" " alt="" coords="234,65,187,58,187,53,235,60"/>
+<area shape="rect" href="control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="5,87,187,127"/>
+<area shape="poly" title=" " alt="" coords="235,91,187,98,187,92,234,86"/>
 </map>
 </div>
 
@@ -2568,6 +2576,20 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="structThrustSetpoint.html#a8735a49250e839e84386d58203819121">ThrustSetpoint::format</a>, <a class="el" href="structThrustSetpoint.html#ad7e7ddf1d2947a62d07749537c05b4f0">ThrustSetpoint::sp</a>, <a class="el" href="stabilization_8h_source.html#l00084">ThrustSetpoint::THRUST_SP</a>, <a class="el" href="stabilization_8h_source.html#l00089">ThrustSetpoint::THRUST_SP_FLOAT</a>, and <a class="el" href="structThrustSetpoint.html#ae83c969a7281ebf3d05835306a2fc541">ThrustSetpoint::type</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00143">guidance_set_rc_h_thrust()</a>.</p>
+<div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_a6c61318c08728686b00187068015ccfc_icgraph.png" border="0" usemap="#astabilization_8c_a6c61318c08728686b00187068015ccfc_icgraph" alt=""/></div>
+<map name="astabilization_8c_a6c61318c08728686b00187068015ccfc_icgraph" id="astabilization_8c_a6c61318c08728686b00187068015ccfc_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,31"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a642631f20d56abe5a4adccbe5e6433b4" title="Set horizontal thrust from RC Horizontal is passed as an argument." alt="" coords="5,5,192,31"/>
+<area shape="poly" title=" " alt="" coords="227,21,192,21,192,15,227,15"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a72119ad76f5485433505e64ac524aaa4" name="a72119ad76f5485433505e64ac524aaa4"></a>
@@ -2629,11 +2651,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00602">stabilization_indi_rate_run()</a>.</p>
-<div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div id="dynsection-41-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a8879789937e2ebcfac887de04352e6cd_icgraph.png" border="0" usemap="#astabilization_8c_a8879789937e2ebcfac887de04352e6cd_icgraph" alt=""/></div>
 <map name="astabilization_8c_a8879789937e2ebcfac887de04352e6cd_icgraph" id="astabilization_8c_a8879789937e2ebcfac887de04352e6cd_icgraph">
 <area shape="rect" title=" " alt="" coords="633,42,753,67"/>
@@ -2724,17 +2746,19 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__andi_8c_source.html#l01183">stabilization_andi_run()</a>.</p>
-<div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="guidance__indi__fully__actuated_8c_source.html#l00143">guidance_set_rc_h_thrust()</a>, and <a class="el" href="stabilization__andi_8c_source.html#l01183">stabilization_andi_run()</a>.</p>
+<div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-41-content" class="dyncontent" style="display:none;">
+<div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_aad59d5e15279645d0324dd622976112e_icgraph.png" border="0" usemap="#astabilization_8c_aad59d5e15279645d0324dd622976112e_icgraph" alt=""/></div>
 <map name="astabilization_8c_aad59d5e15279645d0324dd622976112e_icgraph" id="astabilization_8c_aad59d5e15279645d0324dd622976112e_icgraph">
-<area shape="rect" title=" " alt="" coords="219,5,353,31"/>
-<area shape="rect" href="stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="5,5,171,31"/>
-<area shape="poly" title=" " alt="" coords="205,21,171,21,171,15,205,15"/>
+<area shape="rect" title=" " alt="" coords="240,31,375,56"/>
+<area shape="rect" href="guidance__indi__fully__actuated_8c.html#a642631f20d56abe5a4adccbe5e6433b4" title="Set horizontal thrust from RC Horizontal is passed as an argument." alt="" coords="5,5,192,31"/>
+<area shape="poly" title=" " alt="" coords="226,36,192,32,192,27,227,31"/>
+<area shape="rect" href="stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="16,55,181,80"/>
+<area shape="poly" title=" " alt="" coords="227,55,182,61,181,55,226,50"/>
 </map>
 </div>
 
@@ -2777,11 +2801,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00436">guidance_hybrid_vertical()</a>, <a class="el" href="stabilization__attitude__plane__pid_8c_source.html#l00102">stabilization_attitude_plane_pid_run()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>, <a class="el" href="stabilization__direct_8c_source.html#l00057">stabilization_direct_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00602">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00118">stabilization_rate_run()</a>.</p>
-<div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-42-content" class="dyncontent" style="display:none;">
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph.png" border="0" usemap="#astabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph" alt=""/></div>
 <map name="astabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph" id="astabilization_8c_aff1c34e4df8582150dd77b44ae73a1db_icgraph">
 <area shape="rect" title=" " alt="" coords="728,291,861,317"/>
@@ -2859,11 +2883,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="stabilization_8h_source.html#l00105">Stabilization::rc_in</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8c_source.html#l00227">transition_increment</a>, <a class="el" href="stabilization_8h_source.html#l00109">Stabilization::transition_ratio</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8h_source.html#l00040">AttitudeRCInput::transition_theta_offset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization_8c_source.html#l00242">stabilization_run()</a>.</p>
-<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph.png" border="0" usemap="#astabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph" alt=""/></div>
 <map name="astabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph" id="astabilization_8c_ae0ff25590456201a3c9ff1dc7ea13415_icgraph">
 <area shape="rect" title=" " alt="" coords="415,127,527,152"/>
@@ -2961,7 +2985,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="stabilization_8c.html">stabilization.c</a></li>
-    <li class="footer">Generated on Fri Jul 10 2026 20:03:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jul 12 2026 10:04:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

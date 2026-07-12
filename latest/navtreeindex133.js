@@ -1,5 +1,11 @@
 var NAVTREEINDEX133 =
 {
+"module__imu_heater.html#functions__imu_heater":[1,218,2],
+"module__imu_heater.html#module_load_example__imu_heater":[1,218,0],
+"module__imu_heater.html#module_xml__imu_heater":[1,218,2,0],
+"module__imu_icm42688.html":[1,219],
+"module__imu_icm42688.html#configuration__imu_icm42688":[1,219,1],
+"module__imu_icm42688.html#functions__imu_icm42688":[1,219,2],
 "module__imu_icm42688.html#module_load_example__imu_icm42688":[1,219,0],
 "module__imu_icm42688.html#module_xml__imu_icm42688":[1,219,2,0],
 "module__imu_lisa_m_v2_1.html":[1,220],
@@ -243,11 +249,5 @@ var NAVTREEINDEX133 =
 "module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx":[1,265,1],
 "module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx":[1,265,2],
 "module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx":[1,265,0],
-"module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,265,2,0],
-"module__light.html":[1,269],
-"module__light.html#configuration__light":[1,269,1],
-"module__light.html#functions__light":[1,269,2],
-"module__light.html#module_load_example__light":[1,269,0],
-"module__light.html#module_xml__light":[1,269,2,0],
-"module__light_scheduler.html":[1,270]
+"module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,265,2,0]
 };
