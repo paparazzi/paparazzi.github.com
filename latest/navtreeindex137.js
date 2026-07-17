@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"module__switch_uart.html#functions__switch_uart":[1,475,1],
 "module__switch_uart.html#module_load_example__switch_uart":[1,475,0],
 "module__switch_uart.html#module_xml__switch_uart":[1,475,1,0],
 "module__sys_id_auto_doublets.html":[1,476],
@@ -72,6 +73,7 @@ var NAVTREEINDEX137 =
 "module__telemetry_ivy.html#module_xml__telemetry_ivy":[1,117,1,0],
 "module__telemetry_nps.html":[1,118],
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,118,1],
+"module__telemetry_nps.html#configure":[1,118,1,0],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,118,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,118,0],
 "module__telemetry_nps.html#module_xml__telemetry_nps":[1,118,2,0],
@@ -137,11 +139,9 @@ var NAVTREEINDEX137 =
 "module__temp_tcouple_adc.html#module_xml__temp_tcouple_adc":[1,313,1,0],
 "module__temp_temod.html":[1,314],
 "module__temp_temod.html#configuration__temp_temod":[1,314,1],
-"module__temp_temod.html#define":[1,314,1,0],
-"module__temp_temod.html#event_functions":[1,314,2,0],
 "module__temp_temod.html#functions__temp_temod":[1,314,2],
 "module__temp_temod.html#module_load_example__temp_temod":[1,314,0],
-"module__temp_temod.html#module_xml__temp_temod":[1,314,2,1],
+"module__temp_temod.html#module_xml__temp_temod":[1,314,2,0],
 "module__temp_tmp102.html":[1,315],
 "module__temp_tmp102.html#functions__temp_tmp102":[1,315,1],
 "module__temp_tmp102.html#module_load_example__temp_tmp102":[1,315,0],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__imu_heater.html#configuration__imu_heater":[1,218,1],
 "module__imu_heater.html#functions__imu_heater":[1,218,2],
 "module__imu_heater.html#module_load_example__imu_heater":[1,218,0],
 "module__imu_heater.html#module_xml__imu_heater":[1,218,2,0],
@@ -16,8 +17,9 @@ var NAVTREEINDEX133 =
 "module__imu_lisa_mx_v2_1.html#module_load_example__imu_lisa_mx_v2_1":[1,221,0],
 "module__imu_lisa_mx_v2_1.html#module_xml__imu_lisa_mx_v2":[1,221,0,0],
 "module__imu_matek_h743_slim.html":[1,222],
+"module__imu_matek_h743_slim.html#files":[1,222,1],
 "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,222,0],
-"module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,222,0,0],
+"module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,222,1,0],
 "module__imu_mpu6000.html":[1,223],
 "module__imu_mpu6000.html#configuration__imu_mpu6000":[1,223,1],
 "module__imu_mpu6000.html#functions__imu_mpu6000":[1,223,2],
@@ -194,9 +196,10 @@ var NAVTREEINDEX133 =
 "module__intermcu_uart.html#module_load_example__intermcu_uart":[1,260,0],
 "module__intermcu_uart.html#module_xml__intermcu_uart":[1,260,3,0],
 "module__ir_mlx.html":[1,306],
+"module__ir_mlx.html#event_functions":[1,306,1,0],
 "module__ir_mlx.html#functions__ir_mlx":[1,306,1],
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,306,0],
-"module__ir_mlx.html#module_xml__ir_mlx":[1,306,1,0],
+"module__ir_mlx.html#module_xml__ir_mlx":[1,306,1,1],
 "module__jevois.html":[1,444],
 "module__jevois.html#configuration__jevois":[1,444,1],
 "module__jevois.html#functions__jevois":[1,444,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c":[1,264,0],
 "module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c":[1,264,2,0],
 "module__lidar_vl53l5cx.html":[1,265],
-"module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx":[1,265,1],
-"module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx":[1,265,2],
-"module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx":[1,265,0],
-"module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,265,2,0]
+"module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx":[1,265,1]
 };

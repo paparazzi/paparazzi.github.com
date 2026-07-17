@@ -436,7 +436,9 @@ var NAVTREE =
       ] ],
       [ "cv_colorfilter module", "module__cv_colorfilter.html", [
         [ "Example for airframe file", "module__cv_colorfilter.html#module_load_example__cv_colorfilter", null ],
-        [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", null ],
+        [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", [
+          [ "Define Options", "module__cv_colorfilter.html#define", null ]
+        ] ],
         [ "Module functions", "module__cv_colorfilter.html#functions__cv_colorfilter", [
           [ "Raw cv_colorfilter.xml file:", "module__cv_colorfilter.html#module_xml__cv_colorfilter", null ]
         ] ]
@@ -820,7 +822,9 @@ var NAVTREE =
       ] ],
       [ "telemetry_nps module", "module__telemetry_nps.html", [
         [ "Example for airframe file", "module__telemetry_nps.html#module_load_example__telemetry_nps", null ],
-        [ "Module configuration options", "module__telemetry_nps.html#configuration__telemetry_nps", null ],
+        [ "Module configuration options", "module__telemetry_nps.html#configuration__telemetry_nps", [
+          [ "Configure Options", "module__telemetry_nps.html#configure", null ]
+        ] ],
         [ "Module functions", "module__telemetry_nps.html#functions__telemetry_nps", [
           [ "Raw telemetry_nps.xml file:", "module__telemetry_nps.html#module_xml__telemetry_nps", null ]
         ] ]
@@ -1378,28 +1382,28 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+          [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-          [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
       ] ],
       [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1473,7 +1477,8 @@ var NAVTREE =
         ] ]
       ] ],
       [ "imu_matek_h743_slim module", "module__imu_matek_h743_slim.html", [
-        [ "Example for airframe file", "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim", [
+        [ "Example for airframe file", "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim", null ],
+        [ "Files", "module__imu_matek_h743_slim.html#files", [
           [ "Raw imu_matek_h743_slim.xml file:", "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim", null ]
         ] ]
       ] ],
@@ -1981,12 +1986,6 @@ var NAVTREE =
       [ "humid_hih module", "module__humid_hih.html", [
         [ "Example for airframe file", "module__humid_hih.html#module_load_example__humid_hih", null ],
         [ "Module functions", "module__humid_hih.html#functions__humid_hih", [
-          [ "Init Functions", "module__humid_hih.html#init_functions", null ],
-          [ "Periodic Functions", "module__humid_hih.html#periodic_functions", null ]
-        ] ],
-        [ "Files", "module__humid_hih.html#files", [
-          [ "Header Files", "module__humid_hih.html#headers", null ],
-          [ "Source Files", "module__humid_hih.html#sources", null ],
           [ "Raw humid_hih.xml file:", "module__humid_hih.html#module_xml__humid_hih", null ]
         ] ]
       ] ],
@@ -2027,6 +2026,7 @@ var NAVTREE =
       [ "ir_mlx module", "module__ir_mlx.html", [
         [ "Example for airframe file", "module__ir_mlx.html#module_load_example__ir_mlx", null ],
         [ "Module functions", "module__ir_mlx.html#functions__ir_mlx", [
+          [ "Event Functions", "module__ir_mlx.html#event_functions", null ],
           [ "Raw ir_mlx.xml file:", "module__ir_mlx.html#module_xml__ir_mlx", null ]
         ] ]
       ] ],
@@ -2058,10 +2058,7 @@ var NAVTREE =
       ] ],
       [ "mf_ptu module", "module__mf_ptu.html", [
         [ "Example for airframe file", "module__mf_ptu.html#module_load_example__mf_ptu", null ],
-        [ "Module configuration options", "module__mf_ptu.html#configuration__mf_ptu", [
-          [ "Configure Options", "module__mf_ptu.html#configure", null ],
-          [ "Airframe file section", "module__mf_ptu.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__mf_ptu.html#configuration__mf_ptu", null ],
         [ "Module functions", "module__mf_ptu.html#functions__mf_ptu", [
           [ "Raw mf_ptu.xml file:", "module__mf_ptu.html#module_xml__mf_ptu", null ]
         ] ]
@@ -2080,11 +2077,8 @@ var NAVTREE =
       ] ],
       [ "temp_temod module", "module__temp_temod.html", [
         [ "Example for airframe file", "module__temp_temod.html#module_load_example__temp_temod", null ],
-        [ "Module configuration options", "module__temp_temod.html#configuration__temp_temod", [
-          [ "Define Options", "module__temp_temod.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__temp_temod.html#configuration__temp_temod", null ],
         [ "Module functions", "module__temp_temod.html#functions__temp_temod", [
-          [ "Event Functions", "module__temp_temod.html#event_functions", null ],
           [ "Raw temp_temod.xml file:", "module__temp_temod.html#module_xml__temp_temod", null ]
         ] ]
       ] ],
@@ -2781,6 +2775,10 @@ var NAVTREE =
       [ "bat_voltage_ardrone2 module", "module__bat_voltage_ardrone2.html", [
         [ "Example for airframe file", "module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2", null ],
         [ "Module functions", "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2", [
+          [ "Init Functions", "module__bat_voltage_ardrone2.html#init_functions", null ],
+          [ "Periodic Functions", "module__bat_voltage_ardrone2.html#periodic_functions", null ],
+          [ "Header Files", "module__bat_voltage_ardrone2.html#headers", null ],
+          [ "Source Files", "module__bat_voltage_ardrone2.html#sources", null ],
           [ "Raw bat_voltage_ardrone2.xml file:", "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2", null ]
         ] ]
       ] ],
@@ -3330,7 +3328,9 @@ var NAVTREE =
       ] ],
       [ "gvf_ik module", "module__gvf_ik.html", [
         [ "Example for airframe file", "module__gvf_ik.html#module_load_example__gvf_ik", null ],
-        [ "Module configuration options", "module__gvf_ik.html#configuration__gvf_ik", null ],
+        [ "Module configuration options", "module__gvf_ik.html#configuration__gvf_ik", [
+          [ "Airframe file section", "module__gvf_ik.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__gvf_ik.html#functions__gvf_ik", [
           [ "Raw gvf_ik.xml file:", "module__gvf_ik.html#module_xml__gvf_ik", null ]
         ] ]
@@ -4101,14 +4101,14 @@ var NAVTREEINDEX =
 "meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0",
 "mission__common_8h.html#a510760f3d21dc907aadb9ea842773e6a",
 "module__ahrs_float_invariant.html",
-"module__cam_gimbal.html#module_xml__cam_gimbal",
-"module__eff_scheduling_cyfoam.html#functions__eff_scheduling_cyfoam",
-"module__gsm.html",
-"module__imu_heater.html#functions__imu_heater",
-"module__light.html",
-"module__nav_rotorcraft.html",
-"module__radio_control_ppm.html#functions__radio_control_ppm",
-"module__switch_uart.html#module_load_example__switch_uart",
+"module__board_tmotor_aiof7.html#module_xml__board_tmotor_aiof7",
+"module__e_identification_fr.html#configuration__e_identification_fr",
+"module__ground_detect.html",
+"module__imu_heater.html#configuration__imu_heater",
+"module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx",
+"module__nav_rosette.html#module_xml__nav_rosette",
+"module__radio_control_ppm.html#configuration__radio_control_ppm",
+"module__switch_uart.html#functions__switch_uart",
 "module__wind_estimation_quadrotor.html",
 "modules_2ins_2ins__arduimu__basic_8c.html#ae31b9398d0a602349add7dff0b46e32e",
 "mpu60x0__regs_8h.html#a28d69e900a8207a0704bc67d572d49f4aa3dc187c2843328c22c55a03b1e6f774",

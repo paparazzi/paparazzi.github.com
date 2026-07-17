@@ -17,7 +17,7 @@ var searchData=
   ['uavcan_5freporting_2eh_14',['uavcan_reporting.h',['../uavcan__reporting_8h.html',1,'']]],
   ['udp_2ec_15',['udp.c',['../udp_8c.html',1,'']]],
   ['udp_2eh_16',['udp.h',['../udp_8h.html',1,'']]],
-  ['udp_5farch_2ec_17',['udp_arch.c',['../linux_2mcu__periph_2udp__arch_8c.html',1,'(Global Namespace)'],['../sim_2mcu__periph_2udp__arch_8c.html',1,'(Global Namespace)']]],
+  ['udp_5farch_2ec_17',['udp_arch.c',['../sim_2mcu__periph_2udp__arch_8c.html',1,'(Global Namespace)'],['../linux_2mcu__periph_2udp__arch_8c.html',1,'(Global Namespace)']]],
   ['udp_5farch_2eh_18',['udp_arch.h',['../sim_2mcu__periph_2udp__arch_8h.html',1,'(Global Namespace)'],['../linux_2mcu__periph_2udp__arch_8h.html',1,'(Global Namespace)']]],
   ['udp_5fsocket_2ec_19',['udp_socket.c',['../udp__socket_8c.html',1,'']]],
   ['udp_5fsocket_2eh_20',['udp_socket.h',['../udp__socket_8h.html',1,'']]],

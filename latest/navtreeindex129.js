@@ -209,8 +209,12 @@ var NAVTREEINDEX129 =
 "module__bat_checker.html#module_xml__bat_checker":[1,149,2,0],
 "module__bat_voltage_ardrone2.html":[1,422],
 "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,422,1],
+"module__bat_voltage_ardrone2.html#headers":[1,422,1,2],
+"module__bat_voltage_ardrone2.html#init_functions":[1,422,1,0],
 "module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,422,0],
-"module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,422,1,0],
+"module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,422,1,4],
+"module__bat_voltage_ardrone2.html#periodic_functions":[1,422,1,1],
+"module__bat_voltage_ardrone2.html#sources":[1,422,1,3],
 "module__battery_monitor.html":[1,24],
 "module__battery_monitor.html#configuration__battery_monitor":[1,24,1],
 "module__battery_monitor.html#functions__battery_monitor":[1,24,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX129 =
 "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0":[1,44,0],
 "module__board_tawaki_2_0.html#module_xml__board_tawaki_2":[1,44,0,0],
 "module__board_tmotor_aiof7.html":[1,45],
-"module__board_tmotor_aiof7.html#module_load_example__board_tmotor_aiof7":[1,45,0],
-"module__board_tmotor_aiof7.html#module_xml__board_tmotor_aiof7":[1,45,0,0],
-"module__cam_gimbal.html":[1,48],
-"module__cam_gimbal.html#functions__cam_gimbal":[1,48,1],
-"module__cam_gimbal.html#module_load_example__cam_gimbal":[1,48,0]
+"module__board_tmotor_aiof7.html#module_load_example__board_tmotor_aiof7":[1,45,0]
 };

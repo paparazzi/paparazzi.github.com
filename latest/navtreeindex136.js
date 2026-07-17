@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,383,1],
 "module__radio_control_ppm.html#functions__radio_control_ppm":[1,383,2],
 "module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,383,0],
 "module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,383,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__switch_servo.html#functions__switch_servo":[1,474,2],
 "module__switch_servo.html#module_load_example__switch_servo":[1,474,0],
 "module__switch_servo.html#module_xml__switch_servo":[1,474,2,0],
-"module__switch_uart.html":[1,475],
-"module__switch_uart.html#functions__switch_uart":[1,475,1]
+"module__switch_uart.html":[1,475]
 };

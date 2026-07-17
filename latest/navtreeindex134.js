@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx":[1,265,2],
+"module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx":[1,265,0],
+"module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,265,2,0],
 "module__light.html":[1,269],
 "module__light.html#configuration__light":[1,269,1],
 "module__light.html#functions__light":[1,269,2],
@@ -147,9 +150,7 @@ var NAVTREEINDEX134 =
 "module__meteo_stick.html#module_load_example__meteo_stick":[1,310,0],
 "module__meteo_stick.html#module_xml__meteo_stick":[1,310,2,0],
 "module__mf_ptu.html":[1,311],
-"module__mf_ptu.html#af_section":[1,311,1,1],
 "module__mf_ptu.html#configuration__mf_ptu":[1,311,1],
-"module__mf_ptu.html#configure":[1,311,1,0],
 "module__mf_ptu.html#functions__mf_ptu":[1,311,2],
 "module__mf_ptu.html#module_load_example__mf_ptu":[1,311,0],
 "module__mf_ptu.html#module_xml__mf_ptu":[1,311,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "module__nav_poles_rotorcraft.html#module_xml__nav_poles_rotorcraft":[1,351,1,0],
 "module__nav_rosette.html":[1,352],
 "module__nav_rosette.html#functions__nav_rosette":[1,352,1],
-"module__nav_rosette.html#module_load_example__nav_rosette":[1,352,0],
-"module__nav_rosette.html#module_xml__nav_rosette":[1,352,1,0]
+"module__nav_rosette.html#module_load_example__nav_rosette":[1,352,0]
 };
