@@ -1,0 +1,21 @@
+<map id="baro_spa06_event" name="baro_spa06_event">
+<area shape="rect" id="Node000001" title="Process finished bus transactions and publish new measurements." alt="" coords="5,55,147,80"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="405,5,552,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,52,194,33,296,21,391,16,391,21,297,26,195,38,117,57"/>
+<area shape="rect" id="Node000003" href="$group__math__isa.html#gaf2f78a2a7a0e583d11bb5727e0e99d45" title="Get absolute altitude from pressure (using simplified equation)." alt="" coords="195,47,348,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,65,180,65,180,70,147,70"/>
+<area shape="rect" id="Node000004" href="$spa06_8c.html#a4a93d15f3fab73ea7e8c2ce9c5455d9d" title="Should be called in the event thread." alt="" coords="219,112,324,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,78,215,106,214,111,119,83"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="320,110,347,97,361,85,370,73,379,61,394,48,421,33,424,38,398,52,383,64,374,77,365,89,349,102,323,114"/>
+<area shape="rect" id="Node000005" href="$spa06_8c.html#a7bacc7fe50db94c7775a6cc9e9d3b8d7" title="Convert raw measurements into pressure [Pa] and temperature [deg C]." alt="" coords="396,63,561,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="324,110,411,89,412,94,325,115"/>
+<area shape="rect" id="Node000007" href="$spa06_8c.html#a1051f5f6199437c4b8dc2e8678a15db9" title="Unpack one chunk of calibration coefficient bytes." alt="" coords="413,112,545,137"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="324,122,399,122,399,127,324,127"/>
+<area shape="rect" id="Node000009" href="$spa06_8c.html#a1e776659db965f53b6dbda54ec9eda30" title="Extract the raw 24&#45;bit pressure and temperature measurements." alt="" coords="407,161,551,187"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="325,135,412,156,411,161,324,140"/>
+<area shape="rect" id="Node000006" href="$spa06_8c.html#a1a63617ed45b261b10561575f4560ca4" title="Scale factor for raw values at a given oversampling setting." alt="" coords="609,63,784,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="561,73,596,73,596,78,561,78"/>
+<area shape="rect" id="Node000008" href="$spa06_8c.html#ac7aac3f4efbe24f3b32a78e2dc9bf4b1" title="Sign&#45;extend a raw two&#39;s complement value of arbitrary bit length." alt="" coords="617,136,776,161"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="545,129,604,136,603,141,545,135"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="551,163,604,157,604,162,551,168"/>
+</map>

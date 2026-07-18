@@ -54,6 +54,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "baro_scp_i2c.h", "baro__scp__i2c_8h.html", "baro__scp__i2c_8h" ],
     [ "baro_sim.c", "baro__sim_8c.html", "baro__sim_8c" ],
     [ "baro_sim.h", "baro__sim_8h.html", "baro__sim_8h" ],
+    [ "baro_spa06.c", "baro__spa06_8c.html", "baro__spa06_8c" ],
+    [ "baro_spa06.h", "baro__spa06_8h.html", "baro__spa06_8h" ],
     [ "bat_voltage_ardrone2.c", "bat__voltage__ardrone2_8c.html", "bat__voltage__ardrone2_8c" ],
     [ "bat_voltage_ardrone2.h", "bat__voltage__ardrone2_8h.html", "bat__voltage__ardrone2_8h" ],
     [ "encoder_amt22.c", "encoder__amt22_8c.html", "encoder__amt22_8c" ],

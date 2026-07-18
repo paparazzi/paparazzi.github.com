@@ -12,7 +12,7 @@ var searchData=
   ['bezier_5ft_9',['bezier_t',['../gvf__param__traj_8h.html#structbezier__t',1,'']]],
   ['blanking_5ft_10',['blanking_t',['../mt9f002_8c.html#structblanking__t',1,'']]],
   ['block_5fheader_11',['Block_header',['../vl53l5cx__api_8h.html#unionBlock__header',1,'']]],
-  ['block_5fheader_2e_5f_5funnamed359_5f_5f_12',['Block_header.__unnamed359__',['../vl53l5cx__api_8h.html#structBlock__header_8____unnamed359____',1,'']]],
+  ['block_5fheader_2e_5f_5funnamed361_5f_5f_12',['Block_header.__unnamed361__',['../vl53l5cx__api_8h.html#structBlock__header_8____unnamed361____',1,'']]],
   ['bmi088_5fi2c_13',['Bmi088_I2c',['../bmi088__i2c_8h.html#structBmi088__I2c',1,'']]],
   ['bmi088_5fi2c_2edata_5faccel_14',['Bmi088_I2c.data_accel',['../bmi088__i2c_8h.html#unionBmi088__I2c_8data__accel',1,'']]],
   ['bmi088_5fi2c_2edata_5frates_15',['Bmi088_I2c.data_rates',['../bmi088__i2c_8h.html#unionBmi088__I2c_8data__rates',1,'']]],

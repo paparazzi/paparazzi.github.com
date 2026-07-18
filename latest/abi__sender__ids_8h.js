@@ -43,6 +43,7 @@ var abi__sender__ids_8h =
     [ "BARO_MS5611_SENDER_ID", "abi__sender__ids_8h.html#a16f28a2a01a4d1726b79977b5350e960", null ],
     [ "BARO_SCP_SENDER_ID", "abi__sender__ids_8h.html#a8a4582738989e2d5ae328febdf395f4c", null ],
     [ "BARO_SIM_SENDER_ID", "abi__sender__ids_8h.html#a0d2714c1cf5e33e117c0a1e0d5694c7a", null ],
+    [ "BARO_SPA_SENDER_ID", "abi__sender__ids_8h.html#a193cdbd3aaf208ef78fac1540f652525", null ],
     [ "CAM_JEVOIS_ID", "abi__sender__ids_8h.html#aa597c6d82e55f0e878c824cea72eacbd", null ],
     [ "CLOUD_SENSOR_ID", "abi__sender__ids_8h.html#a9c5d9deb5ec8d2d58f7f0d54a162c6ca", null ],
     [ "COLOR_OBJECT_DETECTION1_ID", "abi__sender__ids_8h.html#a96c371489f9f3dbf25456a8299e5b6db", null ],

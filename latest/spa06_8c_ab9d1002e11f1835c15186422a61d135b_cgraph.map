@@ -1,0 +1,27 @@
+<map id="spa06_periodic" name="spa06_periodic">
+<area shape="rect" id="Node000001" title="Should be called periodically to request sensor readings." alt="" coords="5,105,125,131"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="173,5,320,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,103,120,72,172,40,186,33,189,38,175,44,123,76,83,107"/>
+<area shape="rect" id="Node000003" href="$spa06_8c.html#a820a5e28a4e21237018654840a73f1cb" title="Configure the spa06 device register by register." alt="" coords="193,55,300,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,103,187,81,188,86,112,108"/>
+<area shape="rect" id="Node000004" href="$spa06_8c.html#ad6cfeae6563c0de41ef4b8068e399943" title="Write a single register over the configured bus (SPI or I2C)" alt="" coords="368,100,527,125"/>
+<area shape="poly" id="edge14_Node000001_Node000004" title=" " alt="" coords="125,115,354,111,355,117,126,120"/>
+<area shape="rect" id="Node000009" href="$spa06_8c.html#aa30c7c7602cb0b83d4c5370633d9e0a4" title="Request the calibration coefficients, one chunk per call." alt="" coords="183,156,310,181"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="112,128,188,150,187,155,111,133"/>
+<area shape="rect" id="Node000010" href="$spa06_8c.html#af42753e97287e2053b50a19b3ea708f2" title="Read consecutive registers over the configured bus (SPI or I2C)" alt="" coords="370,168,525,193"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="81,129,120,162,146,179,174,191,228,203,283,205,336,201,383,193,383,199,337,206,283,210,227,208,173,197,143,184,117,167,77,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,77,378,94,377,100,299,82"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="581,93,684,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="527,107,567,106,567,111,527,112"/>
+<area shape="rect" id="Node000007" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="586,143,679,168"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="504,123,573,139,572,144,502,128"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="753,192,846,217"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="672,117,692,128,707,141,717,154,726,166,740,179,748,183,745,188,737,183,722,170,712,157,703,145,689,132,669,121"/>
+<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="739,143,860,168"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="680,153,725,153,725,158,680,158"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="310,170,356,173,356,178,310,175"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="525,167,572,161,573,166,525,173"/>
+<area shape="rect" id="Node000011" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="575,192,691,217"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="525,188,561,193,560,198,525,193"/>
+<area shape="poly" id="edge11_Node000011_Node000006" title=" " alt="" coords="691,202,739,202,739,207,691,207"/>
+</map>
