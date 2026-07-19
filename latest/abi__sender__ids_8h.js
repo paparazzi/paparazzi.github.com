@@ -36,6 +36,7 @@ var abi__sender__ids_8h =
     [ "BARO_BMP3_SENDER_ID", "abi__sender__ids_8h.html#a81cbaff3f58fa0319e6cffeea2807031", null ],
     [ "BARO_BMP_SENDER_ID", "abi__sender__ids_8h.html#a2cc5270109122aa48f77ffe9af858ed3", null ],
     [ "BARO_BOARD_SENDER_ID", "abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001", null ],
+    [ "BARO_DPS310_SENDER_ID", "abi__sender__ids_8h.html#a6cb39457041874f954a09aa83095a1c0", null ],
     [ "BARO_ETS_SENDER_ID", "abi__sender__ids_8h.html#ad4f7ab8ff6f0bac436a9ce9ddda033d6", null ],
     [ "BARO_HCA_SENDER_ID", "abi__sender__ids_8h.html#ac7b926c4bcfa9f2d75b2979741244b44", null ],
     [ "BARO_MPL3115_SENDER_ID", "abi__sender__ids_8h.html#a63a34f17c71c5dcf3f2abee9c229d5c8", null ],

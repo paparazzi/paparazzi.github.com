@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"ahrs__vectornav_8h.html#aa047bd6c940d7b1d84eb101b089ae0ad":[12,0,1,0,6,2,35,0,3],
 "ahrs__vectornav_8h.html#aa55edb4b9c96b1e90a61f7b02b7ecb5d":[12,0,1,0,6,2,35,0,4],
 "ahrs__vectornav_8h.html#add5089c6474b186d122e7aa2839d0cc0":[12,0,1,0,6,2,35,0,2],
 "ahrs__vectornav_8h.html#ae5768bb7cc1d0b55afe0439aa23a8b2d":[12,0,1,0,6,2,35,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "airspeed__ms45xx__i2c_8c.html#a990640387da29860439d0c6e04f3d783":[12,0,1,0,6,63,9,7],
 "airspeed__ms45xx__i2c_8c.html#aa393f28000d5ac487aef4c7c55ad5799":[12,0,1,0,6,63,9,23],
 "airspeed__ms45xx__i2c_8c.html#aa6346e53de9c9c2738ae161ea704c5dc":[12,0,1,0,6,63,9,22],
-"airspeed__ms45xx__i2c_8c.html#ab942d6c65130f05bbc94f0d872d7f501":[12,0,1,0,6,63,9,1],
-"airspeed__ms45xx__i2c_8c.html#adae5e5e9d5cdb17b0d994261a8d57a1f":[12,0,1,0,6,63,9,10]
+"airspeed__ms45xx__i2c_8c.html#ab942d6c65130f05bbc94f0d872d7f501":[12,0,1,0,6,63,9,1]
 };

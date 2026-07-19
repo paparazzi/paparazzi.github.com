@@ -38,6 +38,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "baro_bmp3.h", "baro__bmp3_8h.html", "baro__bmp3_8h" ],
     [ "baro_board_common.c", "baro__board__common_8c.html", "baro__board__common_8c" ],
     [ "baro_board_common.h", "baro__board__common_8h.html", "baro__board__common_8h" ],
+    [ "baro_dps310.c", "baro__dps310_8c.html", "baro__dps310_8c" ],
+    [ "baro_dps310.h", "baro__dps310_8h.html", "baro__dps310_8h" ],
     [ "baro_ets.c", "baro__ets_8c.html", "baro__ets_8c" ],
     [ "baro_ets.h", "baro__ets_8h.html", "baro__ets_8h" ],
     [ "baro_hca.c", "baro__hca_8c.html", "baro__hca_8c" ],

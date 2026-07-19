@@ -469,6 +469,8 @@ var hierarchy =
     [ "doublet_t", "pprz__doublet_8h.html#structdoublet__t", null ],
     [ "DoubleVect2", "group__math__algebra__double.html#structDoubleVect2", null ],
     [ "DoubleVect3", "group__math__algebra__double.html#structDoubleVect3", null ],
+    [ "Dps310_I2c", "dps310__i2c_8h.html#structDps310__I2c", null ],
+    [ "dps310_reg_calib_data", "dps310__regs_8h.html#structdps310__reg__calib__data", null ],
     [ "dragspeed_t", "dragspeed_8h.html#structdragspeed__t", null ],
     [ "dshot", "actuators__dshot_8h.html#structdshot", null ],
     [ "dshot_private", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#structdshot__private", null ],

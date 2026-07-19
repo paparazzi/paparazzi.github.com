@@ -1,0 +1,17 @@
+<map id="baro_dps310_event" name="baro_dps310_event">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,155,56"/>
+<area shape="rect" id="Node000002" href="$dps310__i2c_8c.html#ab674b5ed9f83c06252c05d2b70330294" title="Consume finished I2C transactions and advance the state machine." alt="" coords="203,56,341,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,51,189,55,188,60,155,56"/>
+<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="392,5,539,31"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="155,36,378,21,378,26,155,41"/>
+<area shape="rect" id="Node000003" href="$dps310__i2c_8c.html#ad230041e46493c8f5711adb8c59299aa" title="Convert raw measurements into pressure [Pa] and temperature [deg C]." alt="" coords="389,55,541,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,66,376,65,376,71,342,71"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="321,53,402,32,404,37,322,58"/>
+<area shape="rect" id="Node000005" href="$dps310__i2c_8c.html#a6033e426ec579624406fad1a1583fd1b" title="Unpack the 18 calibration coefficient bytes (registers 0x10&#45;0x21)" alt="" coords="399,104,531,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="325,79,401,98,399,103,323,84"/>
+<area shape="rect" id="Node000007" href="$dps310__i2c_8c.html#a4ab8e974d829f2fa27a18bc67f43f7ad" title="Extract the raw 24&#45;bit pressure and temperature measurements." alt="" coords="393,153,537,179"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="292,79,336,109,391,140,406,146,404,151,388,144,333,114,289,84"/>
+<area shape="rect" id="Node000006" href="$dps310__i2c_8c.html#ac7aac3f4efbe24f3b32a78e2dc9bf4b1" title="Sign&#45;extend a raw two&#39;s complement value of arbitrary bit length." alt="" coords="589,129,748,155"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="532,122,576,128,575,133,531,128"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="537,155,575,150,576,156,538,160"/>
+</map>

@@ -504,6 +504,8 @@ var annotated_dup =
     [ "doublet_t", "pprz__doublet_8h.html#structdoublet__t", "pprz__doublet_8h_structdoublet__t" ],
     [ "DoubleVect2", "group__math__algebra__double.html#structDoubleVect2", "group__math__algebra__double_structDoubleVect2" ],
     [ "DoubleVect3", "group__math__algebra__double.html#structDoubleVect3", "group__math__algebra__double_structDoubleVect3" ],
+    [ "Dps310_I2c", "dps310__i2c_8h.html#structDps310__I2c", "dps310__i2c_8h_structDps310__I2c" ],
+    [ "dps310_reg_calib_data", "dps310__regs_8h.html#structdps310__reg__calib__data", "dps310__regs_8h_structdps310__reg__calib__data" ],
     [ "dragspeed_t", "dragspeed_8h.html#structdragspeed__t", "dragspeed_8h_structdragspeed__t" ],
     [ "dshot", "actuators__dshot_8h.html#structdshot", "actuators__dshot_8h_structdshot" ],
     [ "dshot_private", "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#structdshot__private", "chibios_2modules_2actuators_2actuators__dshot__arch_8c_structdshot__private" ],
