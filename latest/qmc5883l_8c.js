@@ -23,6 +23,7 @@ var qmc5883l_8c =
     [ "QMC5883L_REG_TEMPM", "qmc5883l_8c.html#a993da43a0ac031eaa5ba832eb81d022e", null ],
     [ "QMC5883L_RNG_2G", "qmc5883l_8c.html#a967d6e6accc48e08ff28d82ee7f333e2", null ],
     [ "QMC5883L_RNG_8G", "qmc5883l_8c.html#a65bd19562807798faa0656570aae97e4", null ],
+    [ "QMC5883L_STATUS_OVL", "qmc5883l_8c.html#a49b1468866052c1eb29a7704f4d3d3df", null ],
     [ "qmc5883l_configure", "qmc5883l_8c.html#ac6bac64fe389458893f11c1c1d34fbc9", null ],
     [ "qmc5883l_event", "qmc5883l_8c.html#a025a32bf2dc855ae22e78cb340b32261", null ],
     [ "qmc5883l_init", "qmc5883l_8c.html#ae7526b80461324857546b188a73d45b3", null ],

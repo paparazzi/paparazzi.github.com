@@ -1,5 +1,6 @@
 var NAVTREEINDEX193 =
 {
+"sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77":[12,0,1,0,6,42,0,4,4],
 "sdLog_8c_source.html":[12,0,1,0,6,42,0,4],
 "sdLog_8h.html":[12,0,1,0,6,42,0,5],
 "sdLog_8h.html#a03326adcb90b1cc07d684a6abaff2051":[12,0,1,0,6,42,0,5,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX193 =
 "sensors__hitl_8c.html#a18066984b045d1bff45fe28290feb144":[12,0,1,0,6,63,91,14],
 "sensors__hitl_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,63,91,3],
 "sensors__hitl_8c.html#a26ffc6c13392c0ebfb456dc0697a66d8":[12,0,1,0,6,63,91,0,1],
-"sensors__hitl_8c.html#a2e965a44a3faef0df7d56cbed4f8b575":[12,0,1,0,6,63,91,4],
-"sensors__hitl_8c.html#a3137bcd7fe852e73e021b5ce46b66d04":[12,0,1,0,6,63,91,12]
+"sensors__hitl_8c.html#a2e965a44a3faef0df7d56cbed4f8b575":[12,0,1,0,6,63,91,4]
 };

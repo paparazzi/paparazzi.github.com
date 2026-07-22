@@ -1,6 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__shift_tracking.html#configuration__shift_tracking":[1,108,1],
 "module__shift_tracking.html#functions__shift_tracking":[1,108,2],
 "module__shift_tracking.html#module_load_example__shift_tracking":[1,108,0],
 "module__shift_tracking.html#module_xml__shift_tracking":[1,108,2,0],
@@ -220,6 +219,7 @@ var NAVTREEINDEX137 =
 "module__telemetry_ivy.html#module_xml__telemetry_ivy":[1,117,1,0],
 "module__telemetry_nps.html":[1,118],
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,118,1],
+"module__telemetry_nps.html#configure":[1,118,1,0],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,118,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,118,0],
 "module__telemetry_nps.html#module_xml__telemetry_nps":[1,118,2,0],

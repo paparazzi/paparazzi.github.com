@@ -38,10 +38,11 @@ var searchData=
   ['qmc5883l_5freg_5ftempm_35',['QMC5883L_REG_TEMPM',['../qmc5883l_8c.html#a993da43a0ac031eaa5ba832eb81d022e',1,'qmc5883l.c']]],
   ['qmc5883l_5frng_5f2g_36',['QMC5883L_RNG_2G',['../qmc5883l_8c.html#a967d6e6accc48e08ff28d82ee7f333e2',1,'qmc5883l.c']]],
   ['qmc5883l_5frng_5f8g_37',['QMC5883L_RNG_8G',['../qmc5883l_8c.html#a65bd19562807798faa0656570aae97e4',1,'qmc5883l.c']]],
-  ['qobsobs_38',['Qobsobs',['../vf__extended__float_8c.html#a52e0d9124b7113e0de1860150cc1a1ef',1,'vf_extended_float.c']]],
-  ['qoffoff_39',['Qoffoff',['../vf__extended__float_8c.html#a4a8d9b629f50078fdc06fbc3b5a535f8',1,'vf_extended_float.c']]],
-  ['qrcode_5fdraw_5frectangle_40',['QRCODE_DRAW_RECTANGLE',['../qr__code_8c.html#a3b2d68f061b35c19ad3433658e4cecaa',1,'qr_code.c']]],
-  ['qrcode_5ffps_41',['QRCODE_FPS',['../qr__code_8c.html#a8dac2ca1a7472c7f3bdad5f998ba8b54',1,'qr_code.c']]],
-  ['quad_5fplus_42',['QUAD_PLUS',['../motor__mixing__types_8h.html#adfa86f2d45a68fa1950b1c4818cfde0a',1,'motor_mixing_types.h']]],
-  ['quad_5fx_43',['QUAD_X',['../motor__mixing__types_8h.html#ad4f61023f6f3704bac0268cc7c32027c',1,'motor_mixing_types.h']]]
+  ['qmc5883l_5fstatus_5fovl_38',['QMC5883L_STATUS_OVL',['../qmc5883l_8c.html#a49b1468866052c1eb29a7704f4d3d3df',1,'qmc5883l.c']]],
+  ['qobsobs_39',['Qobsobs',['../vf__extended__float_8c.html#a52e0d9124b7113e0de1860150cc1a1ef',1,'vf_extended_float.c']]],
+  ['qoffoff_40',['Qoffoff',['../vf__extended__float_8c.html#a4a8d9b629f50078fdc06fbc3b5a535f8',1,'vf_extended_float.c']]],
+  ['qrcode_5fdraw_5frectangle_41',['QRCODE_DRAW_RECTANGLE',['../qr__code_8c.html#a3b2d68f061b35c19ad3433658e4cecaa',1,'qr_code.c']]],
+  ['qrcode_5ffps_42',['QRCODE_FPS',['../qr__code_8c.html#a8dac2ca1a7472c7f3bdad5f998ba8b54',1,'qr_code.c']]],
+  ['quad_5fplus_43',['QUAD_PLUS',['../motor__mixing__types_8h.html#adfa86f2d45a68fa1950b1c4818cfde0a',1,'motor_mixing_types.h']]],
+  ['quad_5fx_44',['QUAD_X',['../motor__mixing__types_8h.html#ad4f61023f6f3704bac0268cc7c32027c',1,'motor_mixing_types.h']]]
 ];
