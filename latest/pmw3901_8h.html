@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('pmw3901_8h.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threads_8h_source.html">modules/core/threads.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -109,35 +110,36 @@ $(document).ready(function(){initNavTree('pmw3901_8h.html',''); initResizable();
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pmw3901_8h__incl.png" border="0" usemap="#asw_2airborne_2peripherals_2pmw3901_8h" alt=""/></div>
 <map name="asw_2airborne_2peripherals_2pmw3901_8h" id="asw_2airborne_2peripherals_2pmw3901_8h">
-<area shape="rect" title=" " alt="" coords="692,5,867,45"/>
-<area shape="rect" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="351,93,485,119"/>
-<area shape="poly" title=" " alt="" coords="693,48,485,93,483,88,692,43"/>
+<area shape="rect" title=" " alt="" coords="716,5,891,45"/>
+<area shape="rect" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="447,93,581,119"/>
+<area shape="poly" title=" " alt="" coords="735,48,570,92,569,87,733,43"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="623,167,797,192"/>
+<area shape="poly" title=" " alt="" coords="794,47,727,156,722,153,789,44"/>
 <area shape="rect" title=" " alt="" coords="821,247,903,273"/>
-<area shape="poly" title=" " alt="" coords="786,45,807,118,854,234,849,236,802,120,781,46"/>
-<area shape="rect" title=" " alt="" coords="817,93,885,119"/>
-<area shape="poly" title=" " alt="" coords="799,44,833,81,829,85,795,47"/>
+<area shape="poly" title=" " alt="" coords="811,45,858,233,853,235,806,46"/>
+<area shape="rect" title=" " alt="" coords="873,93,941,119"/>
+<area shape="poly" title=" " alt="" coords="830,43,883,83,879,87,827,48"/>
 <area shape="rect" title=" " alt="" coords="361,247,416,273"/>
-<area shape="poly" title=" " alt="" coords="418,119,396,234,391,233,413,118"/>
-<area shape="rect" title=" " alt="" coords="15,167,183,192"/>
-<area shape="poly" title=" " alt="" coords="367,121,165,166,163,161,366,116"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="207,167,381,192"/>
-<area shape="poly" title=" " alt="" coords="399,121,327,162,325,157,397,116"/>
-<area shape="rect" href="threads_8h.html" title=" " alt="" coords="485,167,660,192"/>
-<area shape="poly" title=" " alt="" coords="444,116,536,158,534,163,442,121"/>
-<area shape="poly" title=" " alt="" coords="310,190,366,236,362,240,306,194"/>
+<area shape="poly" title=" " alt="" coords="486,121,452,140,420,168,403,201,394,235,389,233,398,199,416,165,448,136,484,116"/>
+<area shape="rect" title=" " alt="" coords="430,167,598,192"/>
+<area shape="poly" title=" " alt="" coords="517,119,517,153,511,153,511,119"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="182,167,355,192"/>
+<area shape="poly" title=" " alt="" coords="475,121,322,165,321,160,474,116"/>
+<area shape="poly" title=" " alt="" coords="546,116,666,159,664,164,545,121"/>
+<area shape="poly" title=" " alt="" coords="288,190,361,237,358,242,285,194"/>
 <area shape="rect" title=" " alt="" coords="251,247,337,273"/>
-<area shape="poly" title=" " alt="" coords="297,192,297,233,291,233,291,192"/>
+<area shape="poly" title=" " alt="" coords="275,191,289,234,284,235,270,193"/>
 <area shape="rect" title=" " alt="" coords="5,247,76,273"/>
-<area shape="poly" title=" " alt="" coords="250,195,88,243,82,245,80,240,87,237,249,189"/>
+<area shape="poly" title=" " alt="" coords="232,195,88,243,82,245,80,240,86,237,231,189"/>
 <area shape="rect" title=" " alt="" coords="100,247,227,273"/>
-<area shape="poly" title=" " alt="" coords="276,194,196,242,193,238,273,190"/>
-<area shape="poly" title=" " alt="" coords="624,190,809,237,819,241,818,246,808,243,623,195"/>
+<area shape="poly" title=" " alt="" coords="255,194,191,241,188,237,252,190"/>
+<area shape="poly" title=" " alt="" coords="734,190,829,239,826,243,731,195"/>
 <area shape="rect" title=" " alt="" coords="634,240,797,280"/>
-<area shape="poly" title=" " alt="" coords="595,190,670,231,668,236,592,195"/>
+<area shape="poly" title=" " alt="" coords="713,192,716,226,710,226,708,192"/>
 <area shape="rect" title=" " alt="" coords="440,247,511,273"/>
-<area shape="poly" title=" " alt="" coords="560,194,502,241,499,237,557,190"/>
+<area shape="poly" title=" " alt="" coords="673,195,524,243,518,245,516,240,522,237,671,189"/>
 <area shape="rect" title=" " alt="" coords="535,247,610,273"/>
-<area shape="poly" title=" " alt="" coords="575,192,575,233,570,233,570,192"/>
+<area shape="poly" title=" " alt="" coords="691,194,606,243,603,238,688,190"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -174,11 +176,11 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae83ca203ce25ca36fe925209e3135af4" id="r_ae83ca203ce25ca36fe925209e3135af4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4">pmw3901_state</a> { <br />
 &#160;&#160;<a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4a1241ff0ae6537f09b6ccc4160f803ae0">PMW3901_IDLE</a>
 , <a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4a996a8f8e00405ee6aa17f6895c9f6c8f">PMW3901_READ_MOTION</a>
-, <a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4ad8f3d4985c4071843478f1223ba3ae09">PMW3901_READ_DELTAXLOW</a>
 , <a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4a5d12344aa3e6002737baa81c32a58cff">PMW3901_READ_DELTAXHIGH</a>
+, <a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4ad8f3d4985c4071843478f1223ba3ae09">PMW3901_READ_DELTAXLOW</a>
 , <br />
-&#160;&#160;<a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4ac5d16722e8c19af1b9022d28d08b7cf7">PMW3901_READ_DELTAYLOW</a>
-, <a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4adb6a3fb6ed57dd52ddc26bad01d64d0b">PMW3901_READ_DELTAYHIGH</a>
+&#160;&#160;<a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4adb6a3fb6ed57dd52ddc26bad01d64d0b">PMW3901_READ_DELTAYHIGH</a>
+, <a class="el" href="pmw3901_8h.html#ae83ca203ce25ca36fe925209e3135af4ac5d16722e8c19af1b9022d28d08b7cf7">PMW3901_READ_DELTAYLOW</a>
 <br />
  }</td></tr>
 <tr class="separator:ae83ca203ce25ca36fe925209e3135af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,14 +189,6 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6ff7c43870ae10d9f4dcab7a638b0943" id="r_a6ff7c43870ae10d9f4dcab7a638b0943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#a6ff7c43870ae10d9f4dcab7a638b0943">pmw3901_init</a> (struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *pmw, struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *periph, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx)</td></tr>
 <tr class="separator:a6ff7c43870ae10d9f4dcab7a638b0943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8608bd718725f3e6fb4a7f3ae60a0560" id="r_a8608bd718725f3e6fb4a7f3ae60a0560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#a8608bd718725f3e6fb4a7f3ae60a0560">pmw3901_event</a> (struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *pmw)</td></tr>
-<tr class="separator:a8608bd718725f3e6fb4a7f3ae60a0560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae6ebae23649e7c6154d4d0acfa4c9d" id="r_a4ae6ebae23649e7c6154d4d0acfa4c9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#a4ae6ebae23649e7c6154d4d0acfa4c9d">pmw3901_is_idle</a> (struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *pmw)</td></tr>
-<tr class="separator:a4ae6ebae23649e7c6154d4d0acfa4c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4349ef59585afe9fc579894d893b99" id="r_a4c4349ef59585afe9fc579894d893b99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#a4c4349ef59585afe9fc579894d893b99">pmw3901_start_read</a> (struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *pmw)</td></tr>
-<tr class="separator:a4c4349ef59585afe9fc579894d893b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa79ab17c26c85fc9a181ef78f309873" id="r_aaa79ab17c26c85fc9a181ef78f309873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#aaa79ab17c26c85fc9a181ef78f309873">pmw3901_data_available</a> (struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *pmw)</td></tr>
-<tr class="separator:aaa79ab17c26c85fc9a181ef78f309873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf491ab008ac79682b56e5363725e02d" id="r_acf491ab008ac79682b56e5363725e02d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmw3901_8h.html#acf491ab008ac79682b56e5363725e02d">pmw3901_get_data</a> (struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *pmw, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *delta_x, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *delta_y)</td></tr>
 <tr class="separator:acf491ab008ac79682b56e5363725e02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -211,7 +205,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="pmw3901_8h_source.html#l00060">60</a> of file <a class="el" href="pmw3901_8h_source.html">pmw3901.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pmw3901_8h_source.html#l00061">61</a> of file <a class="el" href="pmw3901_8h_source.html">pmw3901.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for pmw3901_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -219,13 +213,19 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structpmw3901__t__coll__graph.png" border="0" usemap="#apmw3901__t_coll__map" alt="Collaboration graph"/></div>
 <map name="apmw3901__t_coll__map" id="apmw3901__t_coll__map">
-<area shape="rect" title=" " alt="" coords="5,108,104,133"/>
+<area shape="rect" title=" " alt="" coords="5,123,104,148"/>
 <area shape="rect" title=" " alt="" coords="25,5,84,31"/>
-<area shape="poly" title=" " alt="" coords="57,45,57,108,52,108,52,45"/>
+<area shape="poly" title=" " alt="" coords="57,44,57,123,52,123,52,44"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="af8a8d002e665bf82a70d83f80e286686" name="af8a8d002e665bf82a70d83f80e286686"></a><a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a></td>
+<td class="fieldname">
+bsem</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a98ebb4388378050d6edf652f6633a157" name="a98ebb4388378050d6edf652f6633a157"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
 <td class="fieldname">
@@ -287,6 +287,12 @@ state</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="a2560cde4224912955e54772b4f0703aa" name="a2560cde4224912955e54772b4f0703aa"></a><a class="el" href="chibios_2modules_2core_2threads__arch_8h.html#a6346f48ec6528ca13c35a2cd5109d5db">pprz_thread_t</a></td>
+<td class="fieldname">
+thd_handle</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="a7a243b554e08ea7c0a9828b143015c2a" name="a7a243b554e08ea7c0a9828b143015c2a"></a>struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a></td>
 <td class="fieldname">
 trans</td>
@@ -309,7 +315,7 @@ trans</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pmw3901_8h_source.html#l00048">48</a> of file <a class="el" href="pmw3901_8h_source.html">pmw3901.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pmw3901_8h_source.html#l00049">49</a> of file <a class="el" href="pmw3901_8h_source.html">pmw3901.h</a>.</p>
 
 </div>
 </div>
@@ -328,107 +334,17 @@ trans</td>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4a1241ff0ae6537f09b6ccc4160f803ae0" name="ae83ca203ce25ca36fe925209e3135af4a1241ff0ae6537f09b6ccc4160f803ae0"></a>PMW3901_IDLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4a996a8f8e00405ee6aa17f6895c9f6c8f" name="ae83ca203ce25ca36fe925209e3135af4a996a8f8e00405ee6aa17f6895c9f6c8f"></a>PMW3901_READ_MOTION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4ad8f3d4985c4071843478f1223ba3ae09" name="ae83ca203ce25ca36fe925209e3135af4ad8f3d4985c4071843478f1223ba3ae09"></a>PMW3901_READ_DELTAXLOW&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4a5d12344aa3e6002737baa81c32a58cff" name="ae83ca203ce25ca36fe925209e3135af4a5d12344aa3e6002737baa81c32a58cff"></a>PMW3901_READ_DELTAXHIGH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4ac5d16722e8c19af1b9022d28d08b7cf7" name="ae83ca203ce25ca36fe925209e3135af4ac5d16722e8c19af1b9022d28d08b7cf7"></a>PMW3901_READ_DELTAYLOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4ad8f3d4985c4071843478f1223ba3ae09" name="ae83ca203ce25ca36fe925209e3135af4ad8f3d4985c4071843478f1223ba3ae09"></a>PMW3901_READ_DELTAXLOW&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4adb6a3fb6ed57dd52ddc26bad01d64d0b" name="ae83ca203ce25ca36fe925209e3135af4adb6a3fb6ed57dd52ddc26bad01d64d0b"></a>PMW3901_READ_DELTAYHIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae83ca203ce25ca36fe925209e3135af4ac5d16722e8c19af1b9022d28d08b7cf7" name="ae83ca203ce25ca36fe925209e3135af4ac5d16722e8c19af1b9022d28d08b7cf7"></a>PMW3901_READ_DELTAYLOW&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="pmw3901_8h_source.html#l00051">51</a> of file <a class="el" href="pmw3901_8h_source.html">pmw3901.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pmw3901_8h_source.html#l00052">52</a> of file <a class="el" href="pmw3901_8h_source.html">pmw3901.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaa79ab17c26c85fc9a181ef78f309873" name="aaa79ab17c26c85fc9a181ef78f309873"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa79ab17c26c85fc9a181ef78f309873">&#9670;&#160;</a></span>pmw3901_data_available()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> pmw3901_data_available </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *&#160;</td>
-          <td class="paramname"><em>pmw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00322">322</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pmw3901_8h_source.html#l00070">pmw3901_t::data_available</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00186">opticflow_pmw3901_event()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pmw3901_8h_aaa79ab17c26c85fc9a181ef78f309873_icgraph.png" border="0" usemap="#apmw3901_8h_aaa79ab17c26c85fc9a181ef78f309873_icgraph" alt=""/></div>
-<map name="apmw3901_8h_aaa79ab17c26c85fc9a181ef78f309873_icgraph" id="apmw3901_8h_aaa79ab17c26c85fc9a181ef78f309873_icgraph">
-<area shape="rect" title=" " alt="" coords="249,5,439,31"/>
-<area shape="rect" href="opticflow__pmw3901_8c.html#abe5ad65e14456805dca97f78767ef811" title=" " alt="" coords="5,5,201,31"/>
-<area shape="poly" title=" " alt="" coords="236,21,202,21,202,15,236,15"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8608bd718725f3e6fb4a7f3ae60a0560" name="a8608bd718725f3e6fb4a7f3ae60a0560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8608bd718725f3e6fb4a7f3ae60a0560">&#9670;&#160;</a></span>pmw3901_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> pmw3901_event </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *&#160;</td>
-          <td class="paramname"><em>pmw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00274">274</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pmw3901_8h_source.html#l00070">pmw3901_t::data_available</a>, <a class="el" href="pmw3901_8h_source.html#l00068">pmw3901_t::delta_x</a>, <a class="el" href="pmw3901_8h_source.html#l00069">pmw3901_t::delta_y</a>, <a class="el" href="pmw3901_8h_source.html#l00052">PMW3901_IDLE</a>, <a class="el" href="pmw3901_8h_source.html#l00055">PMW3901_READ_DELTAXHIGH</a>, <a class="el" href="pmw3901_8h_source.html#l00054">PMW3901_READ_DELTAXLOW</a>, <a class="el" href="pmw3901_8h_source.html#l00057">PMW3901_READ_DELTAYHIGH</a>, <a class="el" href="pmw3901_8h_source.html#l00056">PMW3901_READ_DELTAYLOW</a>, <a class="el" href="pmw3901_8h_source.html#l00053">PMW3901_READ_MOTION</a>, <a class="el" href="pmw3901_8c_source.html#l00048">PMW3901_REG_DELTA_X_H</a>, <a class="el" href="pmw3901_8c_source.html#l00047">PMW3901_REG_DELTA_X_L</a>, <a class="el" href="pmw3901_8c_source.html#l00050">PMW3901_REG_DELTA_Y_H</a>, <a class="el" href="pmw3901_8c_source.html#l00049">PMW3901_REG_DELTA_Y_L</a>, <a class="el" href="pmw3901_8c_source.html#l00046">PMW3901_REG_MOTION</a>, <a class="el" href="pmw3901_8c_source.html#l00055">readRegister_nonblocking()</a>, and <a class="el" href="pmw3901_8h_source.html#l00065">pmw3901_t::state</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00186">opticflow_pmw3901_event()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_cgraph.png" border="0" usemap="#apmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_cgraph" alt=""/></div>
-<map name="apmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_cgraph" id="apmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,136,56"/>
-<area shape="rect" href="pmw3901_8c.html#a6a7aaeb3506b15d4f4ff5f782f671836" title=" " alt="" coords="184,31,375,56"/>
-<area shape="poly" title=" " alt="" coords="136,41,170,41,170,46,136,46"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="423,5,569,31"/>
-<area shape="poly" title=" " alt="" coords="375,29,409,25,409,31,375,35"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="449,55,543,80"/>
-<area shape="poly" title=" " alt="" coords="375,51,436,58,435,63,375,57"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="617,55,739,80"/>
-<area shape="poly" title=" " alt="" coords="543,65,603,65,603,70,543,70"/>
-</map>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_icgraph.png" border="0" usemap="#apmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_icgraph" alt=""/></div>
-<map name="apmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_icgraph" id="apmw3901_8h_a8608bd718725f3e6fb4a7f3ae60a0560_icgraph">
-<area shape="rect" title=" " alt="" coords="249,5,380,31"/>
-<area shape="rect" href="opticflow__pmw3901_8c.html#abe5ad65e14456805dca97f78767ef811" title=" " alt="" coords="5,5,201,31"/>
-<area shape="poly" title=" " alt="" coords="236,21,201,21,201,15,236,15"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="acf491ab008ac79682b56e5363725e02d" name="acf491ab008ac79682b56e5363725e02d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf491ab008ac79682b56e5363725e02d">&#9670;&#160;</a></span>pmw3901_get_data()</h2>
 
@@ -461,16 +377,16 @@ trans</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00326">326</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00260">260</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pmw3901_8h_source.html#l00070">pmw3901_t::data_available</a>, <a class="el" href="pmw3901_8h_source.html#l00068">pmw3901_t::delta_x</a>, and <a class="el" href="pmw3901_8h_source.html#l00069">pmw3901_t::delta_y</a>.</p>
+<p class="reference">References <a class="el" href="pmw3901_8h_source.html#l00073">pmw3901_t::data_available</a>, <a class="el" href="pmw3901_8h_source.html#l00071">pmw3901_t::delta_x</a>, and <a class="el" href="pmw3901_8h_source.html#l00072">pmw3901_t::delta_y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00186">opticflow_pmw3901_event()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00184">opticflow_pmw3901_event()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pmw3901_8h_acf491ab008ac79682b56e5363725e02d_icgraph.png" border="0" usemap="#apmw3901_8h_acf491ab008ac79682b56e5363725e02d_icgraph" alt=""/></div>
 <map name="apmw3901_8h_acf491ab008ac79682b56e5363725e02d_icgraph" id="apmw3901_8h_acf491ab008ac79682b56e5363725e02d_icgraph">
 <area shape="rect" title=" " alt="" coords="249,5,400,31"/>
@@ -513,122 +429,63 @@ trans</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00249">249</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00232">232</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
 
-<p class="reference">References <a class="el" href="spi_8h_source.html#l00157">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::cpol</a>, <a class="el" href="pmw3901_8h_source.html#l00070">pmw3901_t::data_available</a>, <a class="el" href="pmw3901_8h_source.html#l00068">pmw3901_t::delta_x</a>, <a class="el" href="pmw3901_8h_source.html#l00069">pmw3901_t::delta_y</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::dss</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pmw3901_8c_source.html#l00124">initializeSensor()</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_buf</a>, <a class="el" href="pmw3901_8h_source.html#l00061">pmw3901_t::periph</a>, <a class="el" href="pmw3901_8h_source.html#l00052">PMW3901_IDLE</a>, <a class="el" href="pmw3901_8c_source.html#l00037">PMW3901_RAD_PER_PX</a>, <a class="el" href="pmw3901_8c_source.html#l00043">PMW3901_SPI_CDIV</a>, <a class="el" href="pmw3901_8h_source.html#l00071">pmw3901_t::rad_per_px</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::slave_idx</a>, <a class="el" href="pmw3901_8h_source.html#l00063">pmw3901_t::spi_input_buf</a>, <a class="el" href="pmw3901_8h_source.html#l00064">pmw3901_t::spi_output_buf</a>, <a class="el" href="spi_8h_source.html#l00070">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00079">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00086">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00108">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00059">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="pmw3901_8h_source.html#l00065">pmw3901_t::state</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, and <a class="el" href="pmw3901_8h_source.html#l00062">pmw3901_t::trans</a>.</p>
+<p class="reference">References <a class="el" href="spi_8h_source.html#l00157">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::bitorder</a>, <a class="el" href="pmw3901_8h_source.html#l00064">pmw3901_t::bsem</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::cpol</a>, <a class="el" href="pmw3901_8h_source.html#l00073">pmw3901_t::data_available</a>, <a class="el" href="pmw3901_8h_source.html#l00071">pmw3901_t::delta_x</a>, <a class="el" href="pmw3901_8h_source.html#l00072">pmw3901_t::delta_y</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::dss</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pmw3901_8c_source.html#l00104">initializeSensor()</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_buf</a>, <a class="el" href="pmw3901_8h_source.html#l00062">pmw3901_t::periph</a>, <a class="el" href="pmw3901_8h_source.html#l00053">PMW3901_IDLE</a>, <a class="el" href="pmw3901_8c_source.html#l00038">PMW3901_RAD_PER_PX</a>, <a class="el" href="pmw3901_8c_source.html#l00044">PMW3901_SPI_CDIV</a>, <a class="el" href="pmw3901_8c_source.html#l00211">pmw3901_thd()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00039">pprz_bsem_init()</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00018">PPRZ_NORMAL_PRIO</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00062">pprz_thread_create()</a>, <a class="el" href="pmw3901_8h_source.html#l00074">pmw3901_t::rad_per_px</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::slave_idx</a>, <a class="el" href="pmw3901_8h_source.html#l00066">pmw3901_t::spi_input_buf</a>, <a class="el" href="pmw3901_8h_source.html#l00067">pmw3901_t::spi_output_buf</a>, <a class="el" href="spi_8h_source.html#l00071">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00080">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00086">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00108">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00062">SPINoSelect</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="pmw3901_8h_source.html#l00068">pmw3901_t::state</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="pmw3901_8h_source.html#l00063">pmw3901_t::thd_handle</a>, and <a class="el" href="pmw3901_8h_source.html#l00065">pmw3901_t::trans</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00168">opticflow_pmw3901_init()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_cgraph.png" border="0" usemap="#apmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_cgraph" alt=""/></div>
 <map name="apmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_cgraph" id="apmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,120,31"/>
-<area shape="rect" href="pmw3901_8c.html#ae2b9a24b30aaf6bc58ee3cdd98f769bc" title=" " alt="" coords="168,5,291,31"/>
-<area shape="poly" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="339,5,469,31"/>
-<area shape="poly" title=" " alt="" coords="291,15,325,15,325,21,291,21"/>
+<area shape="rect" title=" " alt="" coords="5,179,120,204"/>
+<area shape="rect" href="pmw3901_8c.html#ae2b9a24b30aaf6bc58ee3cdd98f769bc" title=" " alt="" coords="385,55,507,80"/>
+<area shape="poly" title=" " alt="" coords="86,176,167,138,273,105,370,80,372,85,274,110,169,143,88,181"/>
+<area shape="rect" href="pmw3901_8c.html#afe78700fd95bff84f794eb2fc3d52dec" title=" " alt="" coords="184,153,299,179"/>
+<area shape="poly" title=" " alt="" coords="120,181,170,173,170,179,121,186"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="1039,179,1160,204"/>
+<area shape="poly" title=" " alt="" coords="120,195,267,207,445,214,668,214,861,208,1025,196,1025,201,862,213,668,219,445,219,267,213,120,200"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="168,255,315,280"/>
+<area shape="poly" title=" " alt="" coords="95,202,199,247,197,252,92,207"/>
+<area shape="rect" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568" title="spi_slave_select() function" alt="" coords="602,5,731,31"/>
+<area shape="poly" title=" " alt="" coords="503,52,595,31,596,36,504,57"/>
+<area shape="rect" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function" alt="" coords="594,55,739,80"/>
+<area shape="poly" title=" " alt="" coords="507,65,580,65,580,70,507,70"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="601,104,732,129"/>
+<area shape="poly" title=" " alt="" coords="504,77,596,98,595,104,503,83"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="853,5,942,31"/>
+<area shape="poly" title=" " alt="" coords="732,15,839,15,839,21,732,21"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="859,55,936,80"/>
+<area shape="poly" title=" " alt="" coords="740,65,845,65,845,70,740,70"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567" title=" " alt="" coords="382,153,510,179"/>
+<area shape="poly" title=" " alt="" coords="299,163,369,163,369,169,299,169"/>
+<area shape="rect" href="pmw3901_8c.html#a00ba06d3e6407dfaf867e6097462d617" title=" " alt="" coords="363,104,529,129"/>
+<area shape="poly" title=" " alt="" coords="294,151,379,130,380,135,295,156"/>
+<area shape="poly" title=" " alt="" coords="501,101,528,89,542,77,551,65,560,52,576,40,588,33,591,38,579,44,564,56,555,68,546,81,531,94,503,106"/>
+<area shape="poly" title=" " alt="" coords="503,101,595,80,596,86,504,107"/>
+<area shape="poly" title=" " alt="" coords="530,114,588,114,588,119,530,119"/>
+<area shape="rect" href="group__spi.html#ga4c6251bffe8d612c37c9a89695d7cc4e" title="Perform a spi transaction (blocking)." alt="" coords="577,153,756,179"/>
+<area shape="poly" title=" " alt="" coords="504,127,596,148,595,153,503,132"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="804,104,991,129"/>
+<area shape="poly" title=" " alt="" coords="726,151,823,130,825,135,727,156"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="851,153,944,179"/>
+<area shape="poly" title=" " alt="" coords="756,163,837,163,837,169,756,169"/>
+<area shape="poly" title=" " alt="" coords="945,169,1025,179,1025,185,944,174"/>
 </map>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_icgraph.png" border="0" usemap="#apmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_icgraph" alt=""/></div>
 <map name="apmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_icgraph" id="apmw3901_8h_a6ff7c43870ae10d9f4dcab7a638b0943_icgraph">
 <area shape="rect" title=" " alt="" coords="233,5,348,31"/>
 <area shape="rect" href="opticflow__pmw3901_8c.html#a2322e65a95d068baae9381aace2519ee" title=" " alt="" coords="5,5,185,31"/>
 <area shape="poly" title=" " alt="" coords="219,21,186,21,186,15,219,15"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4ae6ebae23649e7c6154d4d0acfa4c9d" name="a4ae6ebae23649e7c6154d4d0acfa4c9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ae6ebae23649e7c6154d4d0acfa4c9d">&#9670;&#160;</a></span>pmw3901_is_idle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> pmw3901_is_idle </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *&#160;</td>
-          <td class="paramname"><em>pmw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00312">312</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pmw3901_8h_source.html#l00052">PMW3901_IDLE</a>, and <a class="el" href="pmw3901_8h_source.html#l00065">pmw3901_t::state</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00180">opticflow_pmw3901_periodic()</a>, and <a class="el" href="pmw3901_8c_source.html#l00316">pmw3901_start_read()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pmw3901_8h_a4ae6ebae23649e7c6154d4d0acfa4c9d_icgraph.png" border="0" usemap="#apmw3901_8h_a4ae6ebae23649e7c6154d4d0acfa4c9d_icgraph" alt=""/></div>
-<map name="apmw3901_8h_a4ae6ebae23649e7c6154d4d0acfa4c9d_icgraph" id="apmw3901_8h_a4ae6ebae23649e7c6154d4d0acfa4c9d_icgraph">
-<area shape="rect" title=" " alt="" coords="471,5,605,31"/>
-<area shape="rect" href="opticflow__pmw3901_8c.html#a5fb2c15d2dacf06185977f580770b596" title=" " alt="" coords="5,5,216,31"/>
-<area shape="poly" title=" " alt="" coords="457,21,216,21,216,15,457,15"/>
-<area shape="rect" href="pmw3901_8c.html#a4c4349ef59585afe9fc579894d893b99" title=" " alt="" coords="264,31,423,56"/>
-<area shape="poly" title=" " alt="" coords="458,31,423,36,422,30,457,26"/>
-<area shape="poly" title=" " alt="" coords="250,36,216,32,216,27,250,31"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4c4349ef59585afe9fc579894d893b99" name="a4c4349ef59585afe9fc579894d893b99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4349ef59585afe9fc579894d893b99">&#9670;&#160;</a></span>pmw3901_start_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> pmw3901_start_read </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="pmw3901_8h.html#structpmw3901__t">pmw3901_t</a> *&#160;</td>
-          <td class="paramname"><em>pmw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pmw3901_8c_source.html#l00316">316</a> of file <a class="el" href="pmw3901_8c_source.html">pmw3901.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pmw3901_8c_source.html#l00312">pmw3901_is_idle()</a>, <a class="el" href="pmw3901_8h_source.html#l00053">PMW3901_READ_MOTION</a>, and <a class="el" href="pmw3901_8h_source.html#l00065">pmw3901_t::state</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="opticflow__pmw3901_8c_source.html#l00180">opticflow_pmw3901_periodic()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pmw3901_8h_a4c4349ef59585afe9fc579894d893b99_cgraph.png" border="0" usemap="#apmw3901_8h_a4c4349ef59585afe9fc579894d893b99_cgraph" alt=""/></div>
-<map name="apmw3901_8h_a4c4349ef59585afe9fc579894d893b99_cgraph" id="apmw3901_8h_a4c4349ef59585afe9fc579894d893b99_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,164,31"/>
-<area shape="rect" href="pmw3901_8c.html#a4ae6ebae23649e7c6154d4d0acfa4c9d" title=" " alt="" coords="212,5,347,31"/>
-<area shape="poly" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
-</map>
-</div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pmw3901_8h_a4c4349ef59585afe9fc579894d893b99_icgraph.png" border="0" usemap="#apmw3901_8h_a4c4349ef59585afe9fc579894d893b99_icgraph" alt=""/></div>
-<map name="apmw3901_8h_a4c4349ef59585afe9fc579894d893b99_icgraph" id="apmw3901_8h_a4c4349ef59585afe9fc579894d893b99_icgraph">
-<area shape="rect" title=" " alt="" coords="264,5,423,31"/>
-<area shape="rect" href="opticflow__pmw3901_8c.html#a5fb2c15d2dacf06185977f580770b596" title=" " alt="" coords="5,5,216,31"/>
-<area shape="poly" title=" " alt="" coords="250,21,216,21,216,15,250,15"/>
 </map>
 </div>
 
@@ -640,7 +497,7 @@ trans</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="pmw3901_8h.html">pmw3901.h</a></li>
-    <li class="footer">Generated on Mon Jul 20 2026 17:27:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 22 2026 10:04:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

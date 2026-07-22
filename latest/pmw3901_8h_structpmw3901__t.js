@@ -1,5 +1,6 @@
 var pmw3901_8h_structpmw3901__t =
 [
+    [ "bsem", "pmw3901_8h.html#af8a8d002e665bf82a70d83f80e286686", null ],
     [ "data_available", "pmw3901_8h.html#a98ebb4388378050d6edf652f6633a157", null ],
     [ "delta_x", "pmw3901_8h.html#ae46b74ba439758c0f31116355e8d60a7", null ],
     [ "delta_y", "pmw3901_8h.html#a57a49428995e5a59cbb63631404f82f8", null ],
@@ -10,5 +11,6 @@ var pmw3901_8h_structpmw3901__t =
     [ "spi_input_buf", "pmw3901_8h.html#a4ab317c0bf7d261a2df208c898ee5a01", null ],
     [ "spi_output_buf", "pmw3901_8h.html#a15e906b92dc262451557538f8018732d", null ],
     [ "state", "pmw3901_8h.html#ac3f595df38026f45fcf0009b4e14cac7", null ],
+    [ "thd_handle", "pmw3901_8h.html#a2560cde4224912955e54772b4f0703aa", null ],
     [ "trans", "pmw3901_8h.html#a7a243b554e08ea7c0a9828b143015c2a", null ]
 ];

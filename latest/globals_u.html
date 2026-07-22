@@ -215,8 +215,8 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 <li>UART_RX_BUFFER_SIZE&#160;:&#160;<a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#a5bdd6772c246436bb14377095de79b31">uart_arch.h</a>, <a class="el" href="uart_8h.html#a5bdd6772c246436bb14377095de79b31">uart.h</a>, <a class="el" href="sim_2mcu__periph_2uart__arch_8h.html#a5bdd6772c246436bb14377095de79b31">uart_arch.h</a></li>
 <li>UART_RX_PORT&#160;:&#160;<a class="el" href="spektrum_8c.html#aeb799752761fa63643164030662f8ca6">spektrum.c</a></li>
 <li>uart_send_message()&#160;:&#160;<a class="el" href="uart_8c.html#a28a378d8f12e11fc3f4dac7eb9252d6e">uart.c</a>, <a class="el" href="uart_8h.html#a0aa8ed2f93f482313707afd606c4da12">uart.h</a></li>
-<li>UART_SPEED&#160;:&#160;<a class="el" href="sim_2mcu__periph_2uart__arch_8h.html#ac9378c8432472f49ced54ebd148d7af1">uart_arch.h</a></li>
-<li>uart_speed()&#160;:&#160;<a class="el" href="serial__port_8c.html#a5bffc785e3d573a3d06ea17334623162">serial_port.c</a>, <a class="el" href="sim_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162">uart_arch.h</a></li>
+<li>uart_speed()&#160;:&#160;<a class="el" href="sim_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162">uart_arch.h</a>, <a class="el" href="serial__port_8c.html#a5bffc785e3d573a3d06ea17334623162">serial_port.c</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162">uart_arch.h</a></li>
+<li>UART_SPEED&#160;:&#160;<a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#ac9378c8432472f49ced54ebd148d7af1">uart_arch.h</a></li>
 <li>uart_thread()&#160;:&#160;<a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5">uart_arch.c</a></li>
 <li>UART_THREAD_PRIO&#160;:&#160;<a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#af4447deb79d63086867d3d7286da403d">uart_arch.c</a></li>
 <li>UART_TX_BUFFER_SIZE&#160;:&#160;<a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#a05f5d709605c6317c97e4974bec3402a">uart_arch.h</a>, <a class="el" href="uart_8h.html#a05f5d709605c6317c97e4974bec3402a">uart.h</a></li>
@@ -646,8 +646,9 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 <li>uwb_positioning_update_ekf_r_speed()&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a651740f2f43754cd8eff9a49f26f517a">uwb_positioning.c</a>, <a class="el" href="uwb__positioning_8h.html#a651740f2f43754cd8eff9a49f26f517a">uwb_positioning.h</a></li>
 <li>UWB_POSITIONING_USE_AS_GPS&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a65d7ac14293f81c35638c12a4e243369">uwb_positioning.c</a></li>
 <li>UWB_POSITIONING_USE_AS_LOCAL_POS&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a7ebc808ac1d3b6207e8138d310472d84">uwb_positioning.c</a></li>
+<li>uwb_positioning_use_ekf&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a4f21ff7582053c7f6ef6e52e0e0cc619">uwb_positioning.c</a></li>
 <li>UWB_POSITIONING_USE_EKF&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#af8ef6c8efd408de70668c40e240564e0">uwb_positioning.c</a></li>
-<li>uwb_positioning_use_ekf&#160;:&#160;<a class="el" href="uwb__positioning_8h.html#a4f21ff7582053c7f6ef6e52e0e0cc619">uwb_positioning.h</a>, <a class="el" href="uwb__positioning_8c.html#a4f21ff7582053c7f6ef6e52e0e0cc619">uwb_positioning.c</a></li>
+<li>uwb_positioning_use_ekf&#160;:&#160;<a class="el" href="uwb__positioning_8h.html#a4f21ff7582053c7f6ef6e52e0e0cc619">uwb_positioning.h</a></li>
 <li>UWB_POSITIONING_VEL_NOISE_X&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a70190dab48085eed9d9b14a653747795">uwb_positioning.c</a></li>
 <li>UWB_POSITIONING_VEL_NOISE_Y&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a5761a8af3f9e72db19118c28ed6bbfb8">uwb_positioning.c</a></li>
 <li>UWB_POSITIONING_VEL_NOISE_Z&#160;:&#160;<a class="el" href="uwb__positioning_8c.html#a01df31ad138f29aec91b0e9a64fad72d">uwb_positioning.c</a></li>
@@ -678,7 +679,7 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 20 2026 17:27:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 22 2026 10:04:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

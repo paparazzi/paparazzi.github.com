@@ -1,13 +1,21 @@
 <map id="readRegister_blocking" name="readRegister_blocking">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,172,80"/>
-<area shape="rect" id="Node000002" href="$group__spi.html#ga4c6251bffe8d612c37c9a89695d7cc4e" title="Perform a spi transaction (blocking)." alt="" coords="220,29,399,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,55,206,51,207,56,173,60"/>
-<area shape="rect" id="Node000006" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="244,79,375,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="173,74,231,80,230,85,172,79"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,172,155"/>
+<area shape="rect" id="Node000002" href="$group__spi.html#ga4c6251bffe8d612c37c9a89695d7cc4e" title="Perform a spi transaction (blocking)." alt="" coords="220,55,399,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,127,219,90,248,81,249,86,221,95,122,132"/>
+<area shape="rect" id="Node000006" href="$group__spi.html#gad43916477f5d87b42eaa7d2099771568" title="spi_slave_select() function" alt="" coords="245,104,374,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="172,130,231,123,231,128,173,135"/>
+<area shape="rect" id="Node000008" href="$group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function" alt="" coords="237,153,382,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="173,148,223,154,223,159,172,154"/>
+<area shape="rect" id="Node000010" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="244,203,375,228"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="122,152,221,189,246,196,244,201,219,194,120,157"/>
 <area shape="rect" id="Node000003" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="447,5,633,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,30,433,26,433,32,399,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,52,466,31,467,36,370,57"/>
 <area shape="rect" id="Node000004" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="493,55,587,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="399,49,480,58,479,63,399,54"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="399,65,479,65,479,70,399,70"/>
 <area shape="rect" id="Node000005" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="681,55,803,80"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="587,65,668,65,668,70,587,70"/>
+<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="495,104,585,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="374,114,482,114,482,119,374,119"/>
+<area shape="rect" id="Node000009" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="501,153,579,179"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="382,163,488,163,488,169,382,169"/>
 </map>
