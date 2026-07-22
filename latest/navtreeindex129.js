@@ -1,6 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"mission__rotorcraft__nav_8c.html#a92032860fee41019bb05444dec447451":[12,0,1,0,6,45,7,11],
 "mission__rotorcraft__nav_8c.html#a99c9ce9d206dd38d8a92316c5f437c9d":[12,0,1,0,6,45,7,2],
 "mission__rotorcraft__nav_8c.html#aa8f5e01954042e24fc602d1de265a30f":[12,0,1,0,6,45,7,5],
 "mission__rotorcraft__nav_8c.html#ac81f100541ff8d232ac2750f626fec12":[12,0,1,0,6,45,7,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX129 =
 "module__approach_moving_target.html":[1,91],
 "module__approach_moving_target.html#configuration__approach_moving_target":[1,91,1],
 "module__approach_moving_target.html#functions__approach_moving_target":[1,91,2],
-"module__approach_moving_target.html#module_load_example__approach_moving_target":[1,91,0]
+"module__approach_moving_target.html#module_load_example__approach_moving_target":[1,91,0],
+"module__approach_moving_target.html#module_xml__approach_moving_target":[1,91,2,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX170 =
 {
-"pdec_8h.html#structpdec__device__list":[12,0,1,0,6,16,7,2],
 "pdec_8h.html#structpdec__distance__result":[12,0,1,0,6,16,7,1],
 "pdec_8h.html#structpdec__error__response":[12,0,1,0,6,16,7,0],
 "pdec_8h.html#structpdec__ranging__event":[12,0,1,0,6,16,7,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX170 =
 "potential_8h.html#a00bfcc3690af7acf47fb0d73e3293522":[12,0,1,0,6,46,10,0,2],
 "potential_8h.html#a0fce658c414e2c4ccbc13055e2f57e87":[12,0,1,0,6,46,10,0,3],
 "potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd":[12,0,1,0,6,46,10,2],
-"potential_8h.html#a34f18f74f894ff50dc0dc262becdfb3e":[12,0,1,0,6,46,10,0,1]
+"potential_8h.html#a34f18f74f894ff50dc0dc262becdfb3e":[12,0,1,0,6,46,10,0,1],
+"potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0":[12,0,1,0,6,46,10,3]
 };

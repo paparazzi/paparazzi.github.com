@@ -220,7 +220,6 @@ var NAVTREEINDEX137 =
 "module__telemetry_ivy.html#module_xml__telemetry_ivy":[1,117,1,0],
 "module__telemetry_nps.html":[1,118],
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,118,1],
-"module__telemetry_nps.html#configure":[1,118,1,0],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,118,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,118,0],
 "module__telemetry_nps.html#module_xml__telemetry_nps":[1,118,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX137 =
 "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,124,1],
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,124,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,124,1,0],
-"module__telemetry_transparent_gec.html":[1,125]
+"module__telemetry_transparent_gec.html":[1,125],
+"module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,125,1]
 };

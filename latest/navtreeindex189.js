@@ -1,6 +1,5 @@
 var NAVTREEINDEX189 =
 {
-"rotorcraft_2navigation_8h.html#a10961173ac6973d795af2f62eb67edca":[12,0,1,0,3,2,21,9],
 "rotorcraft_2navigation_8h.html#a1383f6a2df01eb5b458033c7a8003311":[12,0,1,0,3,2,21,34],
 "rotorcraft_2navigation_8h.html#a1446f7dc6934c43326e271bb17d84004":[12,0,1,0,3,2,21,90],
 "rotorcraft_2navigation_8h.html#a1612ea0e1474e49b800cb3f497096523":[12,0,1,0,3,2,21,95],
@@ -249,5 +248,6 @@ var NAVTREEINDEX189 =
 "rotwing__state_8h.html#structrotwing__state__t":[12,0,1,0,6,60,1,1],
 "rotwing__state_8h.html#unionrotwing__bitmask__t":[12,0,1,0,6,60,1,0],
 "rotwing__state_8h_source.html":[12,0,1,0,6,60,1],
-"rover_2autopilot__firmware_8c.html":[12,0,1,0,3,3,2]
+"rover_2autopilot__firmware_8c.html":[12,0,1,0,3,3,2],
+"rover_2autopilot__firmware_8c.html#a0af571252a9b9c534b5fe24a4ef4d20d":[12,0,1,0,3,3,2,0]
 };

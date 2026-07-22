@@ -52,7 +52,6 @@ var max7456_8c =
     [ "max7456_init", "max7456_8c.html#a945116b36ac06fdbb6f4aef0c5e7f7ca", null ],
     [ "max7456_periodic", "max7456_8c.html#a1d6d4401863cba472802654472781050", null ],
     [ "osd_put_s", "max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa", null ],
-    [ "send_mag_heading", "max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f", null ],
     [ "vMultiplyMatrixByVector", "max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6", null ],
     [ "vSubtractVectors", "max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c", null ],
     [ "gps_course_deg", "max7456_8c.html#a3792b559a9c286ce1d23a5e8fbc71403", null ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX194 =
 {
-"sensors__hitl_8c.html#a3137bcd7fe852e73e021b5ce46b66d04":[12,0,1,0,6,63,91,12],
 "sensors__hitl_8c.html#a3d2ef80efbb3f4c7c13ecbe3a21e0b8b":[12,0,1,0,6,63,91,9],
 "sensors__hitl_8c.html#a3eda401c67dfeee490285016ec944e48":[12,0,1,0,6,63,91,2],
 "sensors__hitl_8c.html#a4bf6eb34827c681440149b78bbc12dd0":[12,0,1,0,6,63,91,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX194 =
 "sim_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,2,0,1],
 "sim_2mcu__periph_2can__arch_8c.html":[12,0,1,0,0,2,0,2],
 "sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,1,0,2,0,1],
-"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,0,0,2,0,1]
+"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,0,0,2,0,1],
+"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,2,0,2,0,1]
 };

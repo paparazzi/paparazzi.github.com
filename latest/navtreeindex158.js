@@ -1,6 +1,5 @@
 var NAVTREEINDEX158 =
 {
-"nps__sensors__utils_8c.html#ae79b4a67a1de0346dab12bba1bf3b6bb":[12,0,1,1,2,57,2],
 "nps__sensors__utils_8c_source.html":[12,0,1,1,2,57],
 "nps__sensors__utils_8h.html":[12,0,1,1,2,58],
 "nps__sensors__utils_8h.html#a3161ab2cb241afbcb27234e69fd1528f":[12,0,1,1,2,58,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX158 =
 "nucleo_2144__f767zi_2board_8h.html#a2781f04e2f6682d822e9fca6a8aa4ed3":[12,0,1,0,1,16,0,0,474],
 "nucleo_2144__f767zi_2board_8h.html#a279cebf9d8443da1279450d4f396894d":[12,0,1,0,1,16,0,0,280],
 "nucleo_2144__f767zi_2board_8h.html#a27c3544d2b2e159dcec61271d239ebea":[12,0,1,0,1,16,0,0,245],
-"nucleo_2144__f767zi_2board_8h.html#a2911949e635847ecf0abec5b37968369":[12,0,1,0,1,16,0,0,173]
+"nucleo_2144__f767zi_2board_8h.html#a2911949e635847ecf0abec5b37968369":[12,0,1,0,1,16,0,0,173],
+"nucleo_2144__f767zi_2board_8h.html#a29419fe74a3cc77819fb3d4a89ce1a90":[12,0,1,0,1,16,0,0,48]
 };
