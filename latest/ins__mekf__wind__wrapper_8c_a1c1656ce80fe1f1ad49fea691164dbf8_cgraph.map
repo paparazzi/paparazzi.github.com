@@ -1,7 +1,7 @@
 <map id="gps_cb" name="gps_cb">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,413,72,439"/>
-<area shape="rect" id="Node000002" href="$gps_8c.html#aa1cf7efa927fe3fe8a07e97f8e58b746" title="Get GPS ecef pos (integer) Converted on the fly if not available." alt="" coords="405,41,548,67"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,413,47,350,64,260,87,172,102,138,118,115,148,92,181,74,216,61,253,52,326,43,392,42,392,48,326,48,254,57,218,66,183,79,151,96,122,119,106,141,92,174,69,261,53,351,44,414"/>
+<area shape="rect" id="Node000002" href="$gps_8c.html#aa1cf7efa927fe3fe8a07e97f8e58b746" title="Get GPS ecef pos (integer) Converted on the fly if not available." alt="" coords="405,43,548,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,413,47,350,64,260,87,172,102,138,118,115,148,92,181,74,216,61,253,52,326,43,392,43,392,49,326,49,254,57,218,66,183,79,151,96,122,119,106,141,92,174,69,261,53,351,44,414"/>
 <area shape="rect" id="Node000006" href="$gps_8c.html#a49df20d7b72ae1248ef22fba32c467b9" title="Get GPS ecef velocity (float) Converted on the fly if not available." alt="" coords="141,129,323,155"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="37,413,39,366,49,298,59,262,74,226,93,193,118,164,128,157,131,161,122,168,97,196,78,229,64,264,55,300,44,366,42,413"/>
 <area shape="rect" id="Node000016" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="159,228,305,253"/>
@@ -29,7 +29,7 @@
 <area shape="rect" id="Node000032" href="$gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="156,737,308,763"/>
 <area shape="poly" id="edge35_Node000001_Node000032" title=" " alt="" coords="44,439,54,499,70,585,93,669,107,701,122,723,144,737,141,742,118,727,102,704,88,671,65,586,48,500,39,439"/>
 <area shape="rect" id="Node000003" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="841,29,945,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="548,49,827,41,828,47,548,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="548,50,827,41,828,47,548,56"/>
 <area shape="rect" id="Node000004" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1027,5,1135,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="945,33,1013,24,1013,29,946,38"/>
 <area shape="rect" id="Node000005" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1028,55,1133,80"/>
@@ -70,16 +70,18 @@
 <area shape="poly" id="edge36_Node000032_Node000033" title=" " alt="" coords="309,756,412,768,411,773,308,761"/>
 <area shape="rect" id="Node000040" href="$group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="403,701,550,741"/>
 <area shape="poly" id="edge43_Node000032_Node000040" title=" " alt="" coords="308,738,389,728,390,734,309,744"/>
-<area shape="rect" id="Node000034" href="$group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title=" " alt="" coords="631,793,738,819"/>
-<area shape="poly" id="edge37_Node000033_Node000034" title=" " alt="" coords="529,782,618,794,617,800,528,787"/>
-<area shape="rect" id="Node000037" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="633,736,736,761"/>
-<area shape="poly" id="edge40_Node000033_Node000037" title=" " alt="" coords="528,768,619,755,620,760,529,773"/>
-<area shape="rect" id="Node000035" href="$pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title=" " alt="" coords="816,851,971,876"/>
-<area shape="poly" id="edge38_Node000034_Node000035" title=" " alt="" coords="732,816,834,844,833,850,731,821"/>
-<area shape="rect" id="Node000036" href="$pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title=" " alt="" coords="823,786,963,826"/>
-<area shape="poly" id="edge39_Node000034_Node000036" title=" " alt="" coords="739,803,810,803,810,809,739,809"/>
-<area shape="rect" id="Node000038" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="817,736,969,761"/>
-<area shape="poly" id="edge41_Node000037_Node000038" title=" " alt="" coords="736,746,804,746,804,751,736,751"/>
-<area shape="rect" id="Node000039" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="823,671,963,711"/>
-<area shape="poly" id="edge42_Node000037_Node000039" title=" " alt="" coords="731,733,810,711,811,717,732,739"/>
+<area shape="rect" id="Node000034" href="$group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title=" " alt="" coords="631,765,738,791"/>
+<area shape="poly" id="edge37_Node000033_Node000034" title=" " alt="" coords="528,775,618,775,618,781,528,781"/>
+<area shape="rect" id="Node000037" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="633,823,736,848"/>
+<area shape="poly" id="edge40_Node000033_Node000037" title=" " alt="" coords="524,788,626,816,624,822,523,793"/>
+<area shape="rect" id="Node000035" href="$pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title=" " alt="" coords="816,765,971,791"/>
+<area shape="poly" id="edge38_Node000034_Node000035" title=" " alt="" coords="739,775,802,775,802,781,739,781"/>
+<area shape="rect" id="Node000036" href="$pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title=" " alt="" coords="823,701,963,741"/>
+<area shape="poly" id="edge39_Node000034_Node000036" title=" " alt="" coords="731,763,810,741,811,746,732,768"/>
+<area shape="rect" id="Node000038" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="817,880,969,905"/>
+<area shape="poly" id="edge41_Node000037_Node000038" title=" " alt="" coords="732,845,834,874,833,879,731,851"/>
+<area shape="rect" id="Node000039" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="823,815,963,855"/>
+<area shape="poly" id="edge42_Node000037_Node000039" title=" " alt="" coords="736,833,810,833,810,838,736,838"/>
+<area shape="rect" id="Node000041" href="$group__math__geodetic__wgs84.html#ga3fe2236ca80680d343275211762e401e" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="611,701,758,741"/>
+<area shape="poly" id="edge44_Node000040_Node000041" title=" " alt="" coords="550,718,598,718,598,723,550,723"/>
 </map>

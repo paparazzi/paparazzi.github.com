@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"module__shift_tracking.html#configuration__shift_tracking":[1,108,1],
 "module__shift_tracking.html#functions__shift_tracking":[1,108,2],
 "module__shift_tracking.html#module_load_example__shift_tracking":[1,108,0],
 "module__shift_tracking.html#module_xml__shift_tracking":[1,108,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,124,1],
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,124,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,124,1,0],
-"module__telemetry_transparent_gec.html":[1,125],
-"module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,125,1]
+"module__telemetry_transparent_gec.html":[1,125]
 };

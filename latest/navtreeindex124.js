@@ -1,5 +1,6 @@
 var NAVTREEINDEX124 =
 {
+"mateksys__3901__l0x_8c.html#a6bcdb3daeb7ad1de31525971bcfa080a":[12,0,1,0,6,49,0,1],
 "mateksys__3901__l0x_8c.html#a6ff986ebe600327cfb85b27d621becc3":[12,0,1,0,6,49,0,13],
 "mateksys__3901__l0x_8c.html#a81c49f86f6eab75b45abdae9b15c6cd2":[12,0,1,0,6,49,0,10],
 "mateksys__3901__l0x_8c.html#a8ffdda5f6d092c338c81b9be0eb37653":[12,0,1,0,6,49,0,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX124 =
 "max1168_8c_source.html":[12,0,1,0,7,92],
 "max1168_8h.html":[12,0,1,0,7,93],
 "max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0":[12,0,1,0,7,93,18],
-"max1168_8h.html#a300386ea1980c9891c093dfa300ddde9":[12,0,1,0,7,93,5],
-"max1168_8h.html#a403d4573afbec409132c311da5818b27":[12,0,1,0,7,93,3]
+"max1168_8h.html#a300386ea1980c9891c093dfa300ddde9":[12,0,1,0,7,93,5]
 };

@@ -117,6 +117,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga3fe2236ca80680d343275211762e401e" id="r_ga3fe2236ca80680d343275211762e401e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__wgs84.html#ga3fe2236ca80680d343275211762e401e">wgs84_ellipsoid_to_geoid_deg_f</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> lat, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> lon)</td></tr>
+<tr class="memdesc:ga3fe2236ca80680d343275211762e401e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get WGS84 ellipsoid/geoid separation.  <br /></td></tr>
+<tr class="separator:ga3fe2236ca80680d343275211762e401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a5f4f94c58a37c5d62b6d80ed0653c6" id="r_ga8a5f4f94c58a37c5d62b6d80ed0653c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6">wgs84_ellipsoid_to_geoid_i</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> lat, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> lon)</td></tr>
 <tr class="memdesc:ga8a5f4f94c58a37c5d62b6d80ed0653c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get WGS84 ellipsoid/geoid separation.  <br /></td></tr>
 <tr class="separator:ga8a5f4f94c58a37c5d62b6d80ed0653c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,176 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga3fe2236ca80680d343275211762e401e" name="ga3fe2236ca80680d343275211762e401e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe2236ca80680d343275211762e401e">&#9670;&#160;</a></span>wgs84_ellipsoid_to_geoid_deg_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a> wgs84_ellipsoid_to_geoid_deg_f </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
+          <td class="paramname"><em>lat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a>&#160;</td>
+          <td class="paramname"><em>lon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get WGS84 ellipsoid/geoid separation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lat</td><td>Latitude in deg </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lon</td><td>Longitude in deg </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>geoid separation in m </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">81</a> of file <a class="el" href="pprz__geodetic__wgs84_8h_source.html">pprz_geodetic_wgs84.h</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00074">WGS84_H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00116">wgs84_ellipsoid_to_geoid_f()</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00106">wgs84_ellipsoid_to_geoid_i()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__wgs84_ga3fe2236ca80680d343275211762e401e_icgraph.png" border="0" usemap="#agroup__math__geodetic__wgs84_ga3fe2236ca80680d343275211762e401e_icgraph" alt=""/></div>
+<map name="agroup__math__geodetic__wgs84_ga3fe2236ca80680d343275211762e401e_icgraph" id="agroup__math__geodetic__wgs84_ga3fe2236ca80680d343275211762e401e_icgraph">
+<area shape="rect" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="1545,121,1692,161"/>
+<area shape="rect" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="1351,47,1497,87"/>
+<area shape="poly" title=" " alt="" coords="1551,118,1477,90,1479,85,1553,113"/>
+<area shape="rect" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="1351,170,1497,210"/>
+<area shape="poly" title=" " alt="" coords="1533,165,1498,174,1497,169,1531,160"/>
+<area shape="rect" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="1116,55,1303,80"/>
+<area shape="poly" title=" " alt="" coords="1337,70,1303,70,1303,65,1337,65"/>
+<area shape="rect" href="xsens700_8c.html#ac2454e953f536da139df3af77095c560" title=" " alt="" coords="1128,5,1291,31"/>
+<area shape="poly" title=" " alt="" coords="1336,50,1265,33,1266,28,1338,45"/>
+<area shape="rect" href="ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="898,55,1055,80"/>
+<area shape="poly" title=" " alt="" coords="1102,70,1055,70,1055,65,1102,65"/>
+<area shape="rect" href="ins__xsens700_8c.html#af5b103447ab6c24b2ad38714d258b262" title=" " alt="" coords="899,5,1054,31"/>
+<area shape="poly" title=" " alt="" coords="1114,21,1054,21,1054,15,1114,15"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="1145,153,1274,179"/>
+<area shape="poly" title=" " alt="" coords="1336,183,1274,176,1274,171,1337,178"/>
+<area shape="rect" href="xsens_8c.html#a7dcaa5041c2da4d7b3a8af364132770a" title=" " alt="" coords="1140,203,1279,228"/>
+<area shape="poly" title=" " alt="" coords="1337,203,1279,210,1278,205,1337,198"/>
+<area shape="rect" href="traffic__info_8c.html#a613e84a3cdf3fbb12be8f2de43e6bff1" title="Update estimate of the geoid height Requires an available hsml and/or lla measurement,..." alt="" coords="1130,301,1289,327"/>
+<area shape="poly" title=" " alt="" coords="1378,219,1234,303,1231,299,1375,215"/>
+<area shape="rect" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="1133,652,1285,677"/>
+<area shape="poly" title=" " alt="" coords="1410,224,1219,653,1214,651,1405,222"/>
+<area shape="rect" href="gps_8c.html#a4fff1fd94429e7d036ba27af86a8c5ed" title="Convenience function to get utm position in int from GPS structure." alt="" coords="1139,104,1279,129"/>
+<area shape="poly" title=" " alt="" coords="1364,167,1302,143,1264,132,1265,127,1304,138,1366,162"/>
+<area shape="rect" href="imu__xsens_8c.html#a881da7d1492e95d09c81c6f3c5a1e4cd" title=" " alt="" coords="909,203,1045,228"/>
+<area shape="poly" title=" " alt="" coords="1126,218,1045,218,1045,213,1126,213"/>
+<area shape="rect" href="ins__xsens_8c.html#a8bfad9d883f0f0c3b3f3ae57a0d8e775" title=" " alt="" coords="911,153,1042,179"/>
+<area shape="poly" title=" " alt="" coords="1135,202,1037,181,1038,176,1136,197"/>
+<area shape="rect" href="group__ac__info.html#ga66c45f46dcc1835b0297fcb89240db20" title=" " alt="" coords="890,400,1063,425"/>
+<area shape="poly" title=" " alt="" coords="1176,336,1127,363,1069,390,1031,402,1030,397,1067,385,1124,359,1174,331"/>
+<area shape="rect" href="group__ac__info.html#ga660def4d2d1433508928beb427d1b7c7" title=" " alt="" coords="891,301,1063,327"/>
+<area shape="poly" title=" " alt="" coords="1116,317,1063,317,1063,311,1116,311"/>
+<area shape="rect" href="group__ac__info.html#ga372e62985b33d1539347cfadb62d9aff" title=" " alt="" coords="885,351,1068,376"/>
+<area shape="poly" title=" " alt="" coords="1136,332,1038,353,1037,348,1135,327"/>
+<area shape="rect" href="group__ac__info.html#ga625b19c827e0414eba7db51eb8ca4a75" title=" " alt="" coords="886,252,1067,277"/>
+<area shape="poly" title=" " alt="" coords="1135,301,1037,280,1038,275,1136,296"/>
+<area shape="rect" href="group__ac__info.html#gab653321fd0c39a8b046d64be7d3a8db6" title="Get position from LLA coordinates (float)." alt="" coords="662,400,830,425"/>
+<area shape="poly" title=" " alt="" coords="876,415,830,415,830,410,876,410"/>
+<area shape="rect" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="413,301,592,327"/>
+<area shape="poly" title=" " alt="" coords="669,397,653,390,638,377,629,364,620,352,605,340,579,329,581,324,608,336,624,348,633,361,642,373,656,385,671,393"/>
+<area shape="rect" href="group__ac__info.html#ga17b120995d97d500b7eb5aea22214041" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="5,364,129,389"/>
+<area shape="poly" title=" " alt="" coords="648,410,130,383,130,377,648,405"/>
+<area shape="rect" href="group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="414,351,591,376"/>
+<area shape="poly" title=" " alt="" coords="669,400,566,379,567,373,670,395"/>
+<area shape="rect" href="group__ac__info.html#gac871ebab1d96f5dcab9d03f29a92246e" title="Get position in local ENU coordinates (float)." alt="" coords="177,327,351,352"/>
+<area shape="poly" title=" " alt="" coords="400,328,351,333,350,328,399,322"/>
+<area shape="poly" title=" " alt="" coords="183,357,130,368,129,362,182,352"/>
+<area shape="rect" href="group__ac__info.html#ga739a732aefa2a30e5b07e5e83874236f" title="Get position from LLA coordinates (int)." alt="" coords="663,301,829,327"/>
+<area shape="poly" title=" " alt="" coords="877,317,830,317,830,311,877,311"/>
+<area shape="poly" title=" " alt="" coords="649,317,592,317,592,311,649,311"/>
+<area shape="poly" title=" " alt="" coords="670,332,567,353,566,348,669,327"/>
+<area shape="rect" href="group__ac__info.html#gae129297882c430ae5e3aa55075e44aef" title="Get position from UTM coordinates (float)." alt="" coords="657,351,835,376"/>
+<area shape="poly" title=" " alt="" coords="872,366,835,366,835,361,872,361"/>
+<area shape="poly" title=" " alt="" coords="669,351,566,329,567,324,670,345"/>
+<area shape="poly" title=" " alt="" coords="643,366,592,366,592,361,643,361"/>
+<area shape="rect" href="group__ac__info.html#gabea65a3c5d86403c9c6f01c29dfa3dfd" title="Get position from UTM coordinates (int)." alt="" coords="658,252,834,277"/>
+<area shape="poly" title=" " alt="" coords="872,267,834,267,834,262,872,262"/>
+<area shape="rect" href="ins__gps__passthrough__utm_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="713,652,779,677"/>
+<area shape="poly" title=" " alt="" coords="1119,667,779,667,779,662,1119,662"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="713,500,779,525"/>
+<area shape="poly" title=" " alt="" coords="1188,643,1138,589,1104,562,1067,540,1029,527,989,517,909,508,836,507,780,511,779,506,836,502,909,502,990,512,1031,522,1069,536,1107,557,1142,585,1192,639"/>
+<area shape="rect" href="ins__xsens_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="943,703,1010,728"/>
+<area shape="poly" title=" " alt="" coords="1137,683,1011,711,1010,706,1136,678"/>
+<area shape="rect" href="ins__xsens700_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="943,752,1010,777"/>
+<area shape="poly" title=" " alt="" coords="1178,687,1127,716,1069,743,1011,761,1009,755,1067,738,1125,711,1175,682"/>
+<area shape="rect" href="ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title=" " alt="" coords="655,601,837,627"/>
+<area shape="poly" title=" " alt="" coords="1119,655,1068,649,837,625,838,620,1068,643,1120,650"/>
+<area shape="rect" href="ins__float__invariant_8c.html#a0de87ebf8474ef66ec575a76f5dc9e48" title=" " alt="" coords="905,851,1048,891"/>
+<area shape="poly" title=" " alt="" coords="1197,691,1147,765,1111,806,1070,842,1049,854,1046,849,1066,837,1107,802,1142,761,1192,688"/>
+<area shape="rect" href="ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="905,915,1048,955"/>
+<area shape="poly" title=" " alt="" coords="1202,692,1184,737,1156,795,1118,854,1095,881,1070,905,1049,918,1047,914,1066,901,1091,877,1114,851,1152,792,1179,735,1197,690"/>
+<area shape="rect" href="ins__alt__float_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="937,551,1017,576"/>
+<area shape="poly" title=" " alt="" coords="1171,648,1067,598,1016,579,1018,574,1069,593,1173,643"/>
+<area shape="rect" href="ins__gps__passthrough__utm_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="937,801,1017,827"/>
+<area shape="poly" title=" " alt="" coords="1191,689,1139,741,1106,769,1069,792,1043,803,1017,810,1016,805,1042,798,1067,788,1103,765,1136,737,1187,686"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a4567d4212b4638e2d25778ab0a3f3795" title=" " alt="" coords="937,449,1017,475"/>
+<area shape="poly" title=" " alt="" coords="1192,642,1142,570,1107,531,1066,496,1042,483,1016,473,1018,468,1044,478,1070,492,1111,527,1146,567,1196,639"/>
+<area shape="rect" href="ins__gps__passthrough__utm_8c.html#a65b4389487e1468dd9245eacf2ce07b3" title=" " alt="" coords="409,727,596,752"/>
+<area shape="poly" title=" " alt="" coords="700,680,655,694,544,729,543,724,654,689,699,675"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="399,476,607,501"/>
+<area shape="poly" title=" " alt="" coords="698,511,607,502,607,496,699,505"/>
+<area shape="rect" href="ins__xsens_8c.html#a20c9835f49df2ea11e85e95c53d8ab2c" title=" " alt="" coords="689,703,803,728"/>
+<area shape="poly" title=" " alt="" coords="930,718,804,718,804,713,930,713"/>
+<area shape="rect" href="ins__xsens700_8c.html#a64e4b82474cd276233aa574b26c41443" title=" " alt="" coords="677,752,815,777"/>
+<area shape="poly" title=" " alt="" coords="929,767,815,767,815,762,929,762"/>
+<area shape="rect" href="ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="469,600,536,625"/>
+<area shape="poly" title=" " alt="" coords="641,616,536,616,536,610,641,611"/>
+<area shape="rect" href="ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="199,575,329,600"/>
+<area shape="poly" title=" " alt="" coords="455,610,328,597,329,591,456,605"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8c.html#a7073ffd305497faea455dff249d36950" title=" " alt="" coords="707,865,785,891"/>
+<area shape="poly" title=" " alt="" coords="891,876,785,880,785,874,891,871"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="431,885,574,925"/>
+<area shape="poly" title=" " alt="" coords="694,886,575,900,574,894,693,881"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="713,919,779,944"/>
+<area shape="poly" title=" " alt="" coords="891,937,780,935,780,929,892,931"/>
+<area shape="poly" title=" " alt="" coords="698,929,574,915,575,910,699,924"/>
+<area shape="poly" title=" " alt="" coords="924,578,805,604,804,599,923,572"/>
+<area shape="rect" href="ins__alt__float_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="464,551,541,576"/>
+<area shape="poly" title=" " alt="" coords="923,566,542,566,542,561,923,561"/>
+<area shape="poly" title=" " alt="" coords="451,571,329,584,328,578,450,566"/>
+<area shape="rect" href="ins__gps__passthrough__utm_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="707,801,785,827"/>
+<area shape="poly" title=" " alt="" coords="923,817,785,817,785,811,923,811"/>
+<area shape="poly" title=" " alt="" coords="694,804,654,793,539,755,541,750,655,787,695,799"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a29bc0d0a045fa74e40c7416ea492d521" title=" " alt="" coords="707,449,785,475"/>
+<area shape="poly" title=" " alt="" coords="923,465,785,465,785,459,923,459"/>
+<area shape="poly" title=" " alt="" coords="694,470,607,480,606,475,693,465"/>
+<area shape="rect" href="gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600" title=" " alt="" coords="935,104,1018,129"/>
+<area shape="poly" title=" " alt="" coords="1125,119,1018,119,1018,114,1125,114"/>
+<area shape="rect" href="gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state" alt="" coords="709,104,783,129"/>
+<area shape="poly" title=" " alt="" coords="921,119,783,119,783,114,921,114"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ga982ac769d3c18ca65b364e0588874100" name="ga982ac769d3c18ca65b364e0588874100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga982ac769d3c18ca65b364e0588874100">&#9670;&#160;</a></span>wgs84_ellipsoid_to_geoid_f()</h2>
 
@@ -206,16 +379,28 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>geoid separation in m </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00106">106</a> of file <a class="el" href="pprz__geodetic__wgs84_8h_source.html">pprz_geodetic_wgs84.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00116">116</a> of file <a class="el" href="pprz__geodetic__wgs84_8h_source.html">pprz_geodetic_wgs84.h</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00074">WGS84_H</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_deg_f()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00248">ins_vectornav_propagate()</a>, and <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_cgraph.png" border="0" usemap="#agroup__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_cgraph" alt=""/></div>
+<map name="agroup__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_cgraph" id="agroup__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_cgraph">
+<area shape="rect" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="5,5,152,45"/>
+<area shape="rect" href="group__math__geodetic__wgs84.html#ga3fe2236ca80680d343275211762e401e" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="200,5,347,45"/>
+<area shape="poly" title=" " alt="" coords="152,23,186,23,186,28,152,28"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_icgraph.png" border="0" usemap="#agroup__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_icgraph" alt=""/></div>
 <map name="agroup__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_icgraph" id="agroup__math__geodetic__wgs84_ga982ac769d3c18ca65b364e0588874100_icgraph">
 <area shape="rect" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="445,23,592,63"/>
@@ -276,16 +461,28 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>geoid separation in mm </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">81</a> of file <a class="el" href="pprz__geodetic__wgs84_8h_source.html">pprz_geodetic_wgs84.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00106">106</a> of file <a class="el" href="pprz__geodetic__wgs84_8h_source.html">pprz_geodetic_wgs84.h</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00074">WGS84_H</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_deg_f()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00712">ins_ekf2_update()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="traffic__info_8c_source.html#l00120">update_geoid_height()</a>, <a class="el" href="gps_8c_source.html#l00603">utm_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00628">utm_int_from_gps()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00713">ins_ekf2_update()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="traffic__info_8c_source.html#l00120">update_geoid_height()</a>, <a class="el" href="gps_8c_source.html#l00603">utm_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00628">utm_int_from_gps()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_cgraph.png" border="0" usemap="#agroup__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_cgraph" alt=""/></div>
+<map name="agroup__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_cgraph" id="agroup__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_cgraph">
+<area shape="rect" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="5,5,152,45"/>
+<area shape="rect" href="group__math__geodetic__wgs84.html#ga3fe2236ca80680d343275211762e401e" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="200,5,347,45"/>
+<area shape="poly" title=" " alt="" coords="152,23,186,23,186,28,152,28"/>
+</map>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_icgraph.png" border="0" usemap="#agroup__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_icgraph" alt=""/></div>
 <map name="agroup__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_icgraph" id="agroup__math__geodetic__wgs84_ga8a5f4f94c58a37c5d62b6d80ed0653c6_icgraph">
 <area shape="rect" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="1373,171,1520,211"/>
@@ -453,7 +650,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 22 2026 10:04:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 22 2026 12:40:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

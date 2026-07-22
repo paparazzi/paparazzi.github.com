@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__gvf_ik.html#module_load_example__gvf_ik":[1,506,0],
 "module__gvf_ik.html#module_xml__gvf_ik":[1,506,2,0],
 "module__gvf_parametric.html":[1,507],
 "module__gvf_parametric.html#functions__gvf_parametric":[1,507,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "module__ins_arduimu.html#functions__ins_arduimu":[1,240,1],
 "module__ins_arduimu.html#module_load_example__ins_arduimu":[1,240,0],
 "module__ins_arduimu.html#module_xml__ins_arduimu":[1,240,1,0],
-"module__ins_arduimu_basic.html":[1,241],
-"module__ins_arduimu_basic.html#configuration__ins_arduimu_basic":[1,241,1]
+"module__ins_arduimu_basic.html":[1,241]
 };

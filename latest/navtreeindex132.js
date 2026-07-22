@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__flight_recorder.html#module_xml__flight_recorder":[1,272,3,0],
 "module__follow.html":[1,326],
 "module__follow.html#configuration__follow":[1,326,1],
 "module__follow.html#functions__follow":[1,326,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__gvf_ik.html":[1,506],
 "module__gvf_ik.html#af_section":[1,506,1,0],
 "module__gvf_ik.html#configuration__gvf_ik":[1,506,1],
-"module__gvf_ik.html#functions__gvf_ik":[1,506,2],
-"module__gvf_ik.html#module_load_example__gvf_ik":[1,506,0]
+"module__gvf_ik.html#functions__gvf_ik":[1,506,2]
 };

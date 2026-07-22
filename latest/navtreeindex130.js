@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__approach_moving_target.html#module_xml__approach_moving_target":[1,91,2,0],
 "module__auto1_commands.html":[1,475],
 "module__auto1_commands.html#functions__auto1_commands":[1,475,1],
 "module__auto1_commands.html#module_load_example__auto1_commands":[1,475,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX130 =
 "module__cv_detect_color_object.html#module_xml__cv_detect_color_object":[1,60,2,0],
 "module__cv_detect_contour.html":[1,61],
 "module__cv_detect_contour.html#configuration__cv_detect_contour":[1,61,1],
-"module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2],
-"module__cv_detect_contour.html#module_load_example__cv_detect_contour":[1,61,0]
+"module__cv_detect_contour.html#functions__cv_detect_contour":[1,61,2]
 };

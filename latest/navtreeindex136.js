@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__optical_flow_hover.html#functions__optical_flow_hover":[1,105,1],
 "module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,105,0],
 "module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,105,1,0],
 "module__optical_flow_landing.html":[1,106],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__shell.html#functions__shell":[1,84,2],
 "module__shell.html#module_load_example__shell":[1,84,0],
 "module__shell.html#module_xml__shell":[1,84,2,0],
-"module__shift_tracking.html":[1,108],
-"module__shift_tracking.html#configuration__shift_tracking":[1,108,1]
+"module__shift_tracking.html":[1,108]
 };

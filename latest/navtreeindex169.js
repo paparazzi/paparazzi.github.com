@@ -1,5 +1,6 @@
 var NAVTREEINDEX169 =
 {
+"pca9685__i2c_8c.html#a4453dd93b736ea3ba7716657a558d21f":[12,0,1,0,6,52,0,87],
 "pca9685__i2c_8c.html#a4530d1ea0659e70e1252e930d07f38cf":[12,0,1,0,6,52,0,71],
 "pca9685__i2c_8c.html#a484062292080d55734043ab2c67df141":[12,0,1,0,6,52,0,59],
 "pca9685__i2c_8c.html#a48cf359bc8f5d028887199ab181bd171":[12,0,1,0,6,52,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX169 =
 "pdec_8h.html#af1c45627ba9cdbdf8674c9baf508cc57":[12,0,1,0,6,16,7,12],
 "pdec_8h.html#af5e8d9c0ff66677a62b5474fc0031da2":[12,0,1,0,6,16,7,2,2],
 "pdec_8h.html#af8fffdd5638217188a32a9d71678c043":[12,0,1,0,6,16,7,21],
-"pdec_8h.html#structpdec__counters":[12,0,1,0,6,16,7,7],
-"pdec_8h.html#structpdec__device__list":[12,0,1,0,6,16,7,2]
+"pdec_8h.html#structpdec__counters":[12,0,1,0,6,16,7,7]
 };

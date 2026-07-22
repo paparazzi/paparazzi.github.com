@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,125,1],
 "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec":[1,125,0],
 "module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,125,1,0],
 "module__telemetry_transparent_udp.html":[1,126],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "modules_2datalink_2superbitrf_8c_source.html":[12,0,1,0,6,15,23],
 "modules_2datalink_2superbitrf_8h.html":[12,0,1,0,6,15,24],
 "modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,0,2,1,2,1,0,1],
-"modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,6,15,24,0,1],
-"modules_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad":[12,0,1,0,6,15,24,13]
+"modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,6,15,24,0,1]
 };

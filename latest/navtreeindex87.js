@@ -1,5 +1,6 @@
 var NAVTREEINDEX87 =
 {
+"imu__heater_8h.html#a7756a8463176cecff7b53f75a0fcfb18":[12,0,1,0,6,36,21,0,2],
 "imu__heater_8h.html#a7dac2fa8bca1d5ea202789e9c2041c12":[12,0,1,0,6,36,21,0,8],
 "imu__heater_8h.html#a87f98b6dc72b558e5468a57dde88be88":[12,0,1,0,6,36,21,0,4],
 "imu__heater_8h.html#a8aa50eca85fac7945b12e7bcb5e6a37e":[12,0,1,0,6,36,21,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX87 =
 "imu__px4fmu__v2_84_8h.html#structImuPX4":[12,0,1,0,6,36,43,0],
 "imu__px4fmu__v2_84_8h_source.html":[12,0,1,0,6,36,43],
 "imu__quality__assessment_8c.html":[12,0,1,0,6,5,4],
-"imu__quality__assessment_8c.html#a357ee29b472868ca516eef72bacb7fba":[12,0,1,0,6,5,4,2],
-"imu__quality__assessment_8c.html#a59ce9aafecc2295a9b2629d12382c88f":[12,0,1,0,6,5,4,1]
+"imu__quality__assessment_8c.html#a357ee29b472868ca516eef72bacb7fba":[12,0,1,0,6,5,4,2]
 };
