@@ -20,7 +20,7 @@ var sensors__hitl_8c =
     [ "gps_has_fix", "sensors__hitl_8c.html#a5b2450e8baa86636ae84529551d1846e", null ],
     [ "gps_hitl", "sensors__hitl_8c.html#aadc4028bae9f263f7c45380ffc0309ac", null ],
     [ "imu_hitl", "sensors__hitl_8c.html#a3137bcd7fe852e73e021b5ce46b66d04", null ],
-    [ "sensors_hitl_dl_buffer", "sensors__hitl_8c.html#a87d7aed7c61f2a45a63990d3800b434f", null ],
+    [ "sensors_hitl_dl_buffer", "sensors__hitl_8c.html#a0453db21b33dac286752deee195d32f8", null ],
     [ "sensors_hitl_msg_available", "sensors__hitl_8c.html#a18066984b045d1bff45fe28290feb144", null ],
     [ "sensors_hitl_tp", "sensors__hitl_8c.html#af37a81ac3b8be36d695db78546d52d34", null ]
 ];

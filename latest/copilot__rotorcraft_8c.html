@@ -288,7 +288,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="copilot__rotorcraft_8c_source.html#l00068">68</a> of file <a class="el" href="copilot__rotorcraft_8c_source.html">copilot_rotorcraft.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00063">dl_buffer</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00055">extra_dl_buffer</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00057">extra_pprz_tp</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="common__nav_8c_source.html#l00048">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00049">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00050">nav_utm_zone0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00613">stateIsLocalCoordinateValid()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="datalink_8c_source.html#l00071">datalink_get_buffer()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00078">extra_dl_get_buffer()</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00057">extra_pprz_tp</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="common__nav_8c_source.html#l00048">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00049">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00050">nav_utm_zone0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nb_waypoint</a>, <a class="el" href="state_8c_source.html#l00190">stateGetHmslOrigin_i()</a>, <a class="el" href="state_8c_source.html#l00124">stateGetLlaOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00613">stateIsLocalCoordinateValid()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00080">waypoint_is_global()</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -296,26 +296,30 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="copilot__rotorcraft_8c_ab279d8cb60dd6477e1de73905a720520_cgraph.png" border="0" usemap="#acopilot__rotorcraft_8c_ab279d8cb60dd6477e1de73905a720520_cgraph" alt=""/></div>
 <map name="acopilot__rotorcraft_8c_ab279d8cb60dd6477e1de73905a720520_cgraph" id="acopilot__rotorcraft_8c_ab279d8cb60dd6477e1de73905a720520_cgraph">
-<area shape="rect" title="If MOVE_WP from GCS." alt="" coords="5,97,159,137"/>
-<area shape="rect" href="group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4" title="Get the HMSL of the frame origin (int)" alt="" coords="227,5,389,31"/>
-<area shape="poly" title=" " alt="" coords="109,94,153,66,206,40,227,32,229,37,208,44,156,71,112,99"/>
-<area shape="rect" href="group__state__position.html#gac491aeb964dcf66df867c43d61241f40" title="Get the LLA position of the frame origin (int)" alt="" coords="235,55,381,80"/>
-<area shape="poly" title=" " alt="" coords="158,97,235,80,236,86,160,103"/>
-<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="207,104,409,129"/>
-<area shape="poly" title=" " alt="" coords="159,114,193,114,193,119,159,119"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="257,153,359,179"/>
-<area shape="poly" title=" " alt="" coords="160,131,244,149,243,155,158,136"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="235,203,381,228"/>
-<area shape="poly" title=" " alt="" coords="112,135,156,163,208,189,229,196,227,201,206,194,153,167,109,139"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="482,55,585,80"/>
-<area shape="poly" title=" " alt="" coords="382,65,468,65,468,70,382,70"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="657,52,864,77"/>
-<area shape="poly" title=" " alt="" coords="585,64,644,63,644,69,585,69"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="691,102,831,142"/>
-<area shape="poly" title=" " alt="" coords="586,77,678,99,677,105,584,82"/>
-<area shape="poly" title=" " alt="" coords="359,156,457,145,677,125,677,131,458,150,360,162"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="457,160,609,185"/>
-<area shape="poly" title=" " alt="" coords="360,165,444,167,444,173,360,170"/>
+<area shape="rect" title="If MOVE_WP from GCS." alt="" coords="5,146,159,186"/>
+<area shape="rect" href="datalink_8c.html#a81d7d876d42a3de808caa5b47ba600c6" title="get datalink buffer address" alt="" coords="234,5,382,31"/>
+<area shape="poly" title=" " alt="" coords="96,144,140,92,171,63,205,40,220,33,222,37,208,44,174,68,144,95,100,148"/>
+<area shape="rect" href="extra__pprz__dl_8c.html#aeb895127bcc5806cf2976de5a9efc027" title=" " alt="" coords="234,55,382,80"/>
+<area shape="poly" title=" " alt="" coords="109,144,153,115,206,89,227,81,229,86,208,94,156,120,112,148"/>
+<area shape="rect" href="group__state__position.html#gab0a3472770862ef02bf83c6aa53f1bf4" title="Get the HMSL of the frame origin (int)" alt="" coords="227,104,389,129"/>
+<area shape="poly" title=" " alt="" coords="158,147,235,130,236,135,160,152"/>
+<area shape="rect" href="group__state__position.html#gac491aeb964dcf66df867c43d61241f40" title="Get the LLA position of the frame origin (int)" alt="" coords="235,153,381,179"/>
+<area shape="poly" title=" " alt="" coords="159,163,221,163,221,169,159,169"/>
+<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="207,203,409,228"/>
+<area shape="poly" title=" " alt="" coords="160,180,236,197,235,202,158,185"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="257,252,359,277"/>
+<area shape="poly" title=" " alt="" coords="113,184,157,211,208,237,244,249,242,254,206,242,154,216,111,189"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="235,301,381,327"/>
+<area shape="poly" title=" " alt="" coords="100,184,144,237,174,264,208,288,223,295,220,299,205,292,171,269,140,240,96,188"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="482,153,585,179"/>
+<area shape="poly" title=" " alt="" coords="382,163,468,163,468,169,382,169"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="657,151,864,176"/>
+<area shape="poly" title=" " alt="" coords="585,163,644,162,644,167,585,168"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="691,201,831,241"/>
+<area shape="poly" title=" " alt="" coords="586,176,678,198,677,203,584,181"/>
+<area shape="poly" title=" " alt="" coords="359,255,457,243,677,224,677,229,458,249,360,260"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="457,259,609,284"/>
+<area shape="poly" title=" " alt="" coords="360,264,444,266,444,271,360,269"/>
 </map>
 </div>
 
@@ -327,7 +331,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="copilot__rotorcraft_8c.html">copilot_rotorcraft.c</a></li>
-    <li class="footer">Generated on Wed Jul 22 2026 21:47:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 29 2026 13:52:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

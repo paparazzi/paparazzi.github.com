@@ -674,7 +674,7 @@ whitelist</td>
 
 <p class="definition">Definition at line <a class="el" href="gec__dl_8c_source.html#l00533">533</a> of file <a class="el" href="gec__dl_8c_source.html">gec_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gec_8h_source.html#l00083">CRYPTO_OK</a>, <a class="el" href="datalink_8h_source.html#l00060">DatalinkFillDlBuffer</a>, <a class="el" href="main__demo5_8c_source.html#l00063">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00077">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8c_source.html#l00430">gec_decrypt_message()</a>, <a class="el" href="gec__dl_8c_source.html#l00597">gec_process_msg1()</a>, <a class="el" href="gec__dl_8c_source.html#l00744">gec_process_msg3()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec__dl_8c_source.html#l00067">GEC_UPDATE_DL</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="gec__dl_8h_source.html#l00071">gec_transport::pprz_tp</a>, <a class="el" href="gec_8h_source.html#l00122">gec_sts_ctx::protocol_stage</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, <a class="el" href="gec__dl_8h_source.html#l00074">gec_transport::trans_rx</a>, <a class="el" href="gec__dl_8h_source.html#l00077">gec_transport::trans_tx</a>, <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG1</a>, and <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG3</a>.</p>
+<p class="reference">References <a class="el" href="gec_8h_source.html#l00083">CRYPTO_OK</a>, <a class="el" href="datalink_8c_source.html#l00076">datalink_fill_buffer()</a>, <a class="el" href="datalink_8c_source.html#l00071">datalink_get_buffer()</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00072">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gec__dl_8c_source.html#l00430">gec_decrypt_message()</a>, <a class="el" href="gec__dl_8c_source.html#l00597">gec_process_msg1()</a>, <a class="el" href="gec__dl_8c_source.html#l00744">gec_process_msg3()</a>, <a class="el" href="gec__dl_8c_source.html#l00070">gec_tp</a>, <a class="el" href="gec__dl_8c_source.html#l00067">GEC_UPDATE_DL</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="gec__dl_8h_source.html#l00071">gec_transport::pprz_tp</a>, <a class="el" href="gec_8h_source.html#l00122">gec_sts_ctx::protocol_stage</a>, <a class="el" href="gec__dl_8h_source.html#l00083">gec_transport::sts</a>, <a class="el" href="gec__dl_8h_source.html#l00074">gec_transport::trans_rx</a>, <a class="el" href="gec__dl_8h_source.html#l00077">gec_transport::trans_tx</a>, <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG1</a>, and <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG3</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -683,34 +683,38 @@ whitelist</td>
 <div class="center"><img src="gec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph.png" border="0" usemap="#agec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph" alt=""/></div>
 <map name="agec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph" id="agec__dl_8h_a7645c559a6c4a5f611acab677af4a579_cgraph">
 <area shape="rect" title="Datalink Event." alt="" coords="5,129,113,155"/>
-<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="177,31,313,56"/>
-<area shape="poly" title=" " alt="" coords="83,127,206,60,209,65,85,132"/>
-<area shape="rect" href="gec__dl_8c.html#ac948362603178542b0a8c8b7375279cd" title="Attemp message decryption If a message is unencrypted, pass it through only if the MSG_ID is in the w..." alt="" coords="161,104,328,129"/>
-<area shape="poly" title=" " alt="" coords="113,132,147,127,148,133,114,137"/>
-<area shape="rect" href="gec__dl_8c.html#ad4f92ea52a517934ff6b8eab95cfead5" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="172,153,317,179"/>
-<area shape="poly" title=" " alt="" coords="114,146,159,152,158,158,113,152"/>
-<area shape="rect" href="gec__dl_8c.html#a42846e875eaa39617e27780db81909bb" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="172,227,317,252"/>
-<area shape="poly" title=" " alt="" coords="86,152,209,218,206,223,83,157"/>
-<area shape="rect" href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0" title="Should be called when chars are available in dl_buffer." alt="" coords="432,5,544,31"/>
-<area shape="poly" title=" " alt="" coords="313,34,418,23,418,28,313,39"/>
-<area shape="rect" href="gec_8c.html#af0f22b92478c79edb3dfb83b0bfe1322" title="Convert from network byte order (big endian) to the machine byte order." alt="" coords="406,55,570,80"/>
-<area shape="poly" title=" " alt="" coords="307,101,411,80,412,85,309,107"/>
-<area shape="rect" href="gec__dl_8c.html#ac21e5df94c5f3003526266d584fc18d3" title=" " alt="" coords="401,104,575,129"/>
-<area shape="poly" title=" " alt="" coords="328,114,388,114,388,119,328,119"/>
-<area shape="rect" href="gec_8c.html#ae873ba7cb08a84eb613be40101d266d2" title="Derive key material for both sender and receiver." alt="" coords="395,153,581,179"/>
-<area shape="poly" title=" " alt="" coords="318,163,382,163,382,169,318,169"/>
-<area shape="rect" href="gec_8c.html#a7dabc3297585157dc9719ba30d72216d" title="Generate private and public key pairs for future use." alt="" coords="376,203,600,228"/>
-<area shape="poly" title=" " alt="" coords="309,176,412,197,411,202,307,181"/>
-<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea" title=" " alt="" coords="648,203,785,228"/>
-<area shape="poly" title=" " alt="" coords="600,213,634,213,634,218,600,218"/>
-<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a4d9bb543e51507e70fe894b31146d131" title=" " alt="" coords="833,203,952,228"/>
-<area shape="poly" title=" " alt="" coords="786,213,820,213,820,218,786,218"/>
-<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a58fdba00b42a0c78e254f58a15a7108d" title=" " alt="" coords="1019,177,1101,203"/>
-<area shape="poly" title=" " alt="" coords="952,204,1004,196,1005,201,952,209"/>
-<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a5ae6c3da75d6267f96be24bb672796f4" title=" " alt="" coords="1000,227,1120,252"/>
-<area shape="poly" title=" " alt="" coords="952,221,987,226,986,231,952,226"/>
-<area shape="rect" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="463,252,513,277"/>
-<area shape="poly" title=" " alt="" coords="318,244,450,258,449,263,317,250"/>
+<area shape="rect" href="datalink_8c.html#acf6c5a4e99d7188fa08c8e429c49226b" title="fill datalink buffer" alt="" coords="173,5,316,31"/>
+<area shape="poly" title=" " alt="" coords="68,127,105,85,131,60,160,40,173,33,175,38,163,44,134,65,109,88,72,131"/>
+<area shape="rect" href="datalink_8c.html#a81d7d876d42a3de808caa5b47ba600c6" title="get datalink buffer address" alt="" coords="171,55,319,80"/>
+<area shape="poly" title=" " alt="" coords="82,127,160,89,180,82,182,87,162,94,84,132"/>
+<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="177,104,313,129"/>
+<area shape="poly" title=" " alt="" coords="113,132,163,125,164,130,114,137"/>
+<area shape="rect" href="gec__dl_8c.html#ac948362603178542b0a8c8b7375279cd" title="Attemp message decryption If a message is unencrypted, pass it through only if the MSG_ID is in the w..." alt="" coords="161,153,328,179"/>
+<area shape="poly" title=" " alt="" coords="114,146,148,151,147,156,113,152"/>
+<area shape="rect" href="gec__dl_8c.html#ad4f92ea52a517934ff6b8eab95cfead5" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="172,203,317,228"/>
+<area shape="poly" title=" " alt="" coords="86,152,162,188,186,196,184,201,160,192,84,157"/>
+<area shape="rect" href="gec__dl_8c.html#a42846e875eaa39617e27780db81909bb" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="172,276,317,301"/>
+<area shape="poly" title=" " alt="" coords="74,153,112,192,163,237,209,267,206,272,160,241,109,196,70,157"/>
+<area shape="rect" href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0" title="Should be called when chars are available in datalink uffer." alt="" coords="432,55,544,80"/>
+<area shape="poly" title=" " alt="" coords="307,101,418,79,419,84,309,107"/>
+<area shape="rect" href="gec_8c.html#af0f22b92478c79edb3dfb83b0bfe1322" title="Convert from network byte order (big endian) to the machine byte order." alt="" coords="406,104,570,129"/>
+<area shape="poly" title=" " alt="" coords="307,151,411,130,412,135,309,156"/>
+<area shape="rect" href="gec__dl_8c.html#ac21e5df94c5f3003526266d584fc18d3" title=" " alt="" coords="401,153,575,179"/>
+<area shape="poly" title=" " alt="" coords="328,163,388,163,388,169,328,169"/>
+<area shape="rect" href="gec_8c.html#ae873ba7cb08a84eb613be40101d266d2" title="Derive key material for both sender and receiver." alt="" coords="395,203,581,228"/>
+<area shape="poly" title=" " alt="" coords="318,213,382,213,382,218,318,218"/>
+<area shape="rect" href="gec_8c.html#a7dabc3297585157dc9719ba30d72216d" title="Generate private and public key pairs for future use." alt="" coords="376,252,600,277"/>
+<area shape="poly" title=" " alt="" coords="309,225,412,247,411,252,307,231"/>
+<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea" title=" " alt="" coords="648,252,785,277"/>
+<area shape="poly" title=" " alt="" coords="600,262,634,262,634,267,600,267"/>
+<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a4d9bb543e51507e70fe894b31146d131" title=" " alt="" coords="833,252,952,277"/>
+<area shape="poly" title=" " alt="" coords="786,262,820,262,820,267,786,267"/>
+<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a58fdba00b42a0c78e254f58a15a7108d" title=" " alt="" coords="1019,227,1101,252"/>
+<area shape="poly" title=" " alt="" coords="952,253,1004,245,1005,250,952,258"/>
+<area shape="rect" href="chibios_2mcu__periph_2rng__arch_8c.html#a5ae6c3da75d6267f96be24bb672796f4" title=" " alt="" coords="1000,276,1120,301"/>
+<area shape="poly" title=" " alt="" coords="952,270,987,275,986,281,952,276"/>
+<area shape="rect" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="463,301,513,327"/>
+<area shape="poly" title=" " alt="" coords="318,294,450,307,449,313,317,299"/>
 </map>
 </div>
 
@@ -1142,7 +1146,7 @@ whitelist</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="gec__dl_8h.html">gec_dl.h</a></li>
-    <li class="footer">Generated on Wed Jul 22 2026 21:47:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 29 2026 13:52:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

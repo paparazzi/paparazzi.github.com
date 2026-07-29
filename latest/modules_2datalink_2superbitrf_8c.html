@@ -621,7 +621,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00294">294</a> of file <a class="el" href="modules_2datalink_2superbitrf_8c_source.html">superbitrf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00063">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00077">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00077">pprz_srf_tp</a>, and <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00070">SUPERBITRF_UPDATE_DL</a>.</p>
+<p class="reference">References <a class="el" href="datalink_8c_source.html#l00071">datalink_get_buffer()</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00072">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00077">pprz_srf_tp</a>, and <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00070">SUPERBITRF_UPDATE_DL</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -629,11 +629,13 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="modules_2datalink_2superbitrf_8c_a06a950af7255fea459d7c6de8c8c0cad_cgraph.png" border="0" usemap="#amodules_2datalink_2superbitrf_8c_a06a950af7255fea459d7c6de8c8c0cad_cgraph" alt=""/></div>
 <map name="amodules_2datalink_2superbitrf_8c_a06a950af7255fea459d7c6de8c8c0cad_cgraph" id="amodules_2datalink_2superbitrf_8c_a06a950af7255fea459d7c6de8c8c0cad_cgraph">
-<area shape="rect" title="The superbitrf datalink event call." alt="" coords="5,5,153,31"/>
-<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="201,5,337,31"/>
-<area shape="poly" title=" " alt="" coords="154,15,187,15,187,21,154,21"/>
-<area shape="rect" href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0" title="Should be called when chars are available in dl_buffer." alt="" coords="385,5,497,31"/>
-<area shape="poly" title=" " alt="" coords="338,15,372,15,372,21,338,21"/>
+<area shape="rect" title="The superbitrf datalink event call." alt="" coords="5,31,153,56"/>
+<area shape="rect" href="datalink_8c.html#a81d7d876d42a3de808caa5b47ba600c6" title="get datalink buffer address" alt="" coords="201,5,349,31"/>
+<area shape="poly" title=" " alt="" coords="153,31,187,27,188,32,154,36"/>
+<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="207,55,343,80"/>
+<area shape="poly" title=" " alt="" coords="154,50,194,55,193,60,153,55"/>
+<area shape="rect" href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0" title="Should be called when chars are available in datalink uffer." alt="" coords="397,55,509,80"/>
+<area shape="poly" title=" " alt="" coords="343,65,383,65,383,70,343,70"/>
 </map>
 </div>
 
@@ -693,55 +695,57 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="modules_2datalink_2superbitrf_8c_a3dba487ecc02fb6e7bdde994032fd795_cgraph.png" border="0" usemap="#amodules_2datalink_2superbitrf_8c_a3dba487ecc02fb6e7bdde994032fd795_cgraph" alt=""/></div>
 <map name="amodules_2datalink_2superbitrf_8c_a3dba487ecc02fb6e7bdde994032fd795_cgraph" id="amodules_2datalink_2superbitrf_8c_a3dba487ecc02fb6e7bdde994032fd795_cgraph">
-<area shape="rect" title="The superbitrf on event call." alt="" coords="5,328,135,353"/>
-<area shape="rect" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49" title="Write to multiple registers one byte." alt="" coords="431,152,591,177"/>
-<area shape="poly" title=" " alt="" coords="74,326,89,297,111,260,142,222,181,192,239,168,301,155,362,150,418,151,418,156,362,155,302,160,241,173,184,196,146,226,116,263,93,300,79,329"/>
-<area shape="rect" href="cyrf6936_8c.html#a9476a030cd1c1812dd9415f8913c35f6" title="Read the RX IRQ status register, the rx status register and the rx packet." alt="" coords="201,206,359,246"/>
-<area shape="poly" title=" " alt="" coords="86,326,128,295,181,262,209,249,211,254,184,267,131,300,89,330"/>
-<area shape="rect" href="cyrf6936_8c.html#ab2e2ab2d19b97905d2c9825f65cddfda" title="Send a packet with a certain length." alt="" coords="453,9,570,35"/>
-<area shape="poly" title=" " alt="" coords="69,327,75,275,92,200,106,160,125,121,150,85,181,54,211,36,243,22,311,6,379,3,439,7,439,12,379,8,312,12,244,27,213,41,184,59,154,88,130,123,111,162,97,202,80,276,75,328"/>
-<area shape="rect" href="cyrf6936_8c.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3" title="Write to one register." alt="" coords="221,105,339,131"/>
-<area shape="poly" title=" " alt="" coords="73,327,86,292,108,244,139,192,159,169,181,148,207,133,209,137,184,152,163,172,144,196,112,246,90,294,78,329"/>
-<area shape="rect" href="cyrf6936_8c.html#a5185bf5f551b606637aaba99a2de5934" title="Set the channel, SOP code, DATA code and the CRC seed." alt="" coords="433,69,590,109"/>
-<area shape="poly" title=" " alt="" coords="70,327,77,280,95,214,109,179,128,145,152,115,181,90,209,75,240,64,303,54,367,55,424,63,424,68,366,60,304,59,241,69,212,80,184,95,156,119,133,148,114,181,100,216,82,282,75,328"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="438,271,585,296"/>
-<area shape="poly" title=" " alt="" coords="108,325,182,306,309,290,424,282,424,288,309,295,183,311,109,330"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="241,487,319,512"/>
-<area shape="poly" title=" " alt="" coords="81,352,121,406,151,438,184,465,229,485,226,490,181,470,147,442,117,410,77,355"/>
-<area shape="rect" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="204,536,356,561"/>
-<area shape="poly" title=" " alt="" coords="78,353,91,387,112,433,143,482,163,504,184,522,193,528,190,532,181,527,159,507,139,485,108,436,86,389,73,355"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a6b5bc9267521d705d992c32bd447f2e8" title="Generate the channels." alt="" coords="201,586,359,626"/>
-<area shape="poly" title=" " alt="" coords="76,353,87,395,107,454,139,517,160,546,184,572,191,577,187,581,181,576,156,550,134,520,102,456,82,396,71,354"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e" title="When we receive a packet this callback is called." alt="" coords="210,321,350,361"/>
-<area shape="poly" title=" " alt="" coords="135,338,197,338,197,343,135,343"/>
-<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6" title=" " alt="" coords="429,385,593,411"/>
-<area shape="poly" title=" " alt="" coords="109,351,183,370,304,386,416,393,415,398,303,391,182,375,108,356"/>
-<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec" title=" " alt="" coords="425,435,597,460"/>
-<area shape="poly" title=" " alt="" coords="92,351,133,375,184,397,241,413,301,425,412,439,411,444,300,430,240,418,182,402,131,380,89,356"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd" title=" " alt="" coords="183,651,377,676"/>
-<area shape="poly" title=" " alt="" coords="75,353,81,406,98,482,112,524,131,565,155,603,184,636,192,642,188,646,181,640,150,606,126,567,107,526,93,484,76,407,69,354"/>
-<area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="645,115,821,140"/>
-<area shape="poly" title=" " alt="" coords="587,149,644,140,644,145,588,154"/>
-<area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="869,119,1031,144"/>
-<area shape="poly" title=" " alt="" coords="822,126,856,127,856,132,822,132"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="1079,144,1172,169"/>
-<area shape="poly" title=" " alt="" coords="1031,140,1065,145,1065,151,1031,146"/>
-<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="1220,144,1341,169"/>
-<area shape="poly" title=" " alt="" coords="1172,154,1206,154,1206,159,1172,159"/>
-<area shape="rect" href="cyrf6936_8c.html#aca1d3266e0b4cb4c4b4a65ad2085cefb" title="Read a byte from a register." alt="" coords="425,208,597,233"/>
-<area shape="poly" title=" " alt="" coords="359,221,411,220,411,226,359,227"/>
-<area shape="rect" href="cyrf6936_8c.html#aff65efb88dd0ce64192c1afe791f3630" title="Read multiple bytes from a register." alt="" coords="871,168,1029,193"/>
-<area shape="poly" title=" " alt="" coords="598,210,857,186,858,192,598,215"/>
-<area shape="poly" title=" " alt="" coords="1029,167,1065,162,1065,167,1029,172"/>
-<area shape="poly" title=" " alt="" coords="547,32,598,54,699,106,696,110,596,59,545,37"/>
-<area shape="poly" title=" " alt="" coords="340,127,435,147,434,152,339,132"/>
-<area shape="poly" title=" " alt="" coords="591,100,647,110,646,115,590,105"/>
-<area shape="poly" title=" " alt="" coords="306,319,375,256,389,239,397,223,407,208,424,193,446,180,449,185,427,197,411,212,402,226,393,242,379,260,309,323"/>
-<area shape="poly" title=" " alt="" coords="350,321,445,297,447,302,351,326"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618" title="Parse a radio channel packet." alt="" coords="439,321,584,361"/>
-<area shape="poly" title=" " alt="" coords="351,338,425,338,425,343,351,343"/>
-<area shape="poly" title=" " alt="" coords="351,355,447,379,445,384,350,361"/>
-<area shape="poly" title=" " alt="" coords="313,359,365,390,426,421,445,428,443,433,424,426,362,395,310,363"/>
+<area shape="rect" title="The superbitrf on event call." alt="" coords="5,337,135,362"/>
+<area shape="rect" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49" title="Write to multiple registers one byte." alt="" coords="431,210,591,235"/>
+<area shape="poly" title=" " alt="" coords="75,335,91,309,114,277,144,245,181,220,214,208,249,200,319,193,386,196,445,205,444,210,386,202,319,199,250,205,216,213,184,225,148,249,118,280,95,312,80,338"/>
+<area shape="rect" href="cyrf6936_8c.html#a9476a030cd1c1812dd9415f8913c35f6" title="Read the RX IRQ status register, the rx status register and the rx packet." alt="" coords="201,5,359,45"/>
+<area shape="poly" title=" " alt="" coords="70,336,77,284,95,209,109,168,128,127,152,89,181,55,187,50,191,54,185,59,156,92,133,130,114,170,100,211,82,285,75,336"/>
+<area shape="rect" href="cyrf6936_8c.html#ab2e2ab2d19b97905d2c9825f65cddfda" title="Send a packet with a certain length." alt="" coords="453,133,570,158"/>
+<area shape="poly" title=" " alt="" coords="74,335,88,305,110,264,141,223,181,190,212,174,245,161,313,145,380,138,439,137,439,143,380,143,314,150,247,166,214,178,184,194,145,227,115,267,92,307,79,338"/>
+<area shape="rect" href="cyrf6936_8c.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3" title="Write to one register." alt="" coords="221,235,339,261"/>
+<area shape="poly" title=" " alt="" coords="88,334,129,306,182,278,219,262,221,267,184,282,132,311,91,339"/>
+<area shape="rect" href="cyrf6936_8c.html#a5185bf5f551b606637aaba99a2de5934" title="Set the channel, SOP code, DATA code and the CRC seed." alt="" coords="201,69,359,109"/>
+<area shape="poly" title=" " alt="" coords="72,336,83,296,105,240,137,180,157,151,181,126,197,114,200,118,184,130,161,155,141,183,110,242,88,297,77,337"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="438,341,585,366"/>
+<area shape="poly" title=" " alt="" coords="116,334,182,321,280,314,378,321,452,335,451,340,377,327,280,320,183,327,117,339"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="241,337,319,362"/>
+<area shape="poly" title=" " alt="" coords="135,347,227,347,227,352,135,352"/>
+<area shape="rect" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="204,386,356,411"/>
+<area shape="poly" title=" " alt="" coords="125,359,213,380,211,385,124,365"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a6b5bc9267521d705d992c32bd447f2e8" title="Generate the channels." alt="" coords="201,436,359,476"/>
+<area shape="poly" title=" " alt="" coords="89,360,131,390,184,420,202,428,200,433,181,425,128,394,86,364"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e" title="When we receive a packet this callback is called." alt="" coords="210,500,350,540"/>
+<area shape="poly" title=" " alt="" coords="80,361,119,421,149,456,184,486,199,494,196,499,181,490,145,459,115,424,76,364"/>
+<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6" title=" " alt="" coords="429,563,593,589"/>
+<area shape="poly" title=" " alt="" coords="77,362,87,400,107,453,139,507,160,530,184,550,213,565,243,576,307,589,371,592,429,588,430,593,371,597,307,595,242,582,210,570,181,554,156,534,135,510,102,455,82,402,71,363"/>
+<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec" title=" " alt="" coords="425,613,597,638"/>
+<area shape="poly" title=" " alt="" coords="75,362,83,409,101,474,115,508,133,542,156,572,184,597,212,613,243,625,308,639,373,642,432,637,433,642,373,647,308,644,241,631,210,618,181,601,152,575,129,544,110,511,96,475,78,410,70,363"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd" title=" " alt="" coords="183,666,377,691"/>
+<area shape="poly" title=" " alt="" coords="75,362,82,414,99,490,113,531,132,572,156,611,184,645,203,658,200,662,181,649,151,614,127,575,109,533,94,491,77,415,70,363"/>
+<area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="645,106,821,131"/>
+<area shape="poly" title=" " alt="" coords="538,208,692,135,694,140,541,212"/>
+<area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="869,106,1031,131"/>
+<area shape="poly" title=" " alt="" coords="822,116,856,116,856,121,822,121"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="1079,82,1172,107"/>
+<area shape="poly" title=" " alt="" coords="1031,105,1065,100,1065,106,1031,110"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="1220,82,1341,107"/>
+<area shape="poly" title=" " alt="" coords="1172,92,1206,92,1206,97,1172,97"/>
+<area shape="rect" href="cyrf6936_8c.html#aca1d3266e0b4cb4c4b4a65ad2085cefb" title="Read a byte from a register." alt="" coords="425,21,597,46"/>
+<area shape="poly" title=" " alt="" coords="359,25,412,27,411,33,359,31"/>
+<area shape="rect" href="cyrf6936_8c.html#aff65efb88dd0ce64192c1afe791f3630" title="Read multiple bytes from a register." alt="" coords="871,57,1029,82"/>
+<area shape="poly" title=" " alt="" coords="598,38,858,59,857,64,598,43"/>
+<area shape="poly" title=" " alt="" coords="1029,78,1065,83,1065,89,1029,83"/>
+<area shape="poly" title=" " alt="" coords="570,136,631,128,632,134,571,141"/>
+<area shape="poly" title=" " alt="" coords="339,239,417,230,418,236,340,244"/>
+<area shape="poly" title=" " alt="" coords="359,92,632,109,632,115,359,97"/>
+<area shape="poly" title=" " alt="" coords="349,504,376,486,391,467,399,449,405,412,408,373,413,351,423,327,453,281,485,244,489,248,457,284,428,329,418,352,413,374,410,413,404,451,395,470,379,490,352,508"/>
+<area shape="poly" title=" " alt="" coords="349,499,376,486,391,474,401,462,423,433,484,373,488,377,427,436,405,465,395,477,379,490,352,504"/>
+<area shape="rect" href="datalink_8c.html#acf6c5a4e99d7188fa08c8e429c49226b" title="fill datalink buffer" alt="" coords="440,511,583,537"/>
+<area shape="poly" title=" " alt="" coords="351,519,426,520,426,525,351,524"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618" title="Parse a radio channel packet." alt="" coords="439,447,584,487"/>
+<area shape="poly" title=" " alt="" coords="350,501,425,484,426,489,351,506"/>
+<area shape="poly" title=" " alt="" coords="351,534,446,557,444,563,350,540"/>
+<area shape="poly" title=" " alt="" coords="314,538,365,569,426,599,446,606,444,611,424,604,363,574,311,543"/>
 </map>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1008,7 +1012,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00787">787</a> of file <a class="el" href="modules_2datalink_2superbitrf_8c_source.html">superbitrf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00044">SuperbitRF::bind_mfg_id</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00090">SuperbitRF::channel</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00089">SuperbitRF::channel_idx</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00088">SuperbitRF::channels</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00102">SuperbitRF::crc_seed</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00077">SuperbitRF::cyrf6936</a>, <a class="el" href="cyrf6936_8c_source.html#l00341">cyrf6936_multi_write()</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00120">CYRF_BAD_CRC</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00120">cyrf_start_receive</a>, <a class="el" href="datalink_8h_source.html#l00060">DatalinkFillDlBuffer</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00073">get_sys_time_usec()</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00070">IS_DSM2</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00071">IS_DSMX</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00046">SuperbitRF::num_channels</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00086">SuperbitRF::packet_loss</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00085">SuperbitRF::packet_loss_bit</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00047">SuperbitRF::protocol</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00095">SuperbitRF::rc_count</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00106">SuperbitRF::rc_frame_available</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00109">SuperbitRF::rc_values</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00101">SuperbitRF::resolution</a>, <a class="el" href="cyrf6936_8h_source.html#l00064">Cyrf6936::rx_count</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00111">SuperbitRF::rx_transport</a>, <a class="el" href="settings_8h_source.html#l00044">settings_StoreSettings</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00079">SuperbitRF::state</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00078">SuperbitRF::status</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00032">superbitrf</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00049">SUPERBITRF_BINDING</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00065">SUPERBITRF_FORCE_DSM2</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00048">SUPERBITRF_INIT_TRANSFER</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l01089">superbitrf_radio_to_channels()</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00040">SUPERBITRF_RECV_SHORT_TIME</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00039">SUPERBITRF_RECV_TIME</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00034">superbitrf_set_mfg_id()</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00039">superbitrf_set_protocol()</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00050">SUPERBITRF_SYNCING_A</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00051">SUPERBITRF_SYNCING_B</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00052">SUPERBITRF_TRANSFER</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00082">SuperbitRF::timeouts</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00080">SuperbitRF::timer</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00107">SuperbitRF::timing1</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00108">SuperbitRF::timing2</a>, and <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00094">SuperbitRF::uplink_count</a>.</p>
+<p class="reference">References <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00044">SuperbitRF::bind_mfg_id</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00090">SuperbitRF::channel</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00089">SuperbitRF::channel_idx</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00088">SuperbitRF::channels</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00102">SuperbitRF::crc_seed</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00077">SuperbitRF::cyrf6936</a>, <a class="el" href="cyrf6936_8c_source.html#l00341">cyrf6936_multi_write()</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00120">CYRF_BAD_CRC</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00120">cyrf_start_receive</a>, <a class="el" href="datalink_8c_source.html#l00076">datalink_fill_buffer()</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00073">get_sys_time_usec()</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00070">IS_DSM2</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00071">IS_DSMX</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00046">SuperbitRF::num_channels</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00086">SuperbitRF::packet_loss</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00085">SuperbitRF::packet_loss_bit</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00047">SuperbitRF::protocol</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00095">SuperbitRF::rc_count</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00106">SuperbitRF::rc_frame_available</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00109">SuperbitRF::rc_values</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00101">SuperbitRF::resolution</a>, <a class="el" href="cyrf6936_8h_source.html#l00064">Cyrf6936::rx_count</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00111">SuperbitRF::rx_transport</a>, <a class="el" href="settings_8h_source.html#l00044">settings_StoreSettings</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00079">SuperbitRF::state</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00078">SuperbitRF::status</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00032">superbitrf</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00049">SUPERBITRF_BINDING</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00065">SUPERBITRF_FORCE_DSM2</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00048">SUPERBITRF_INIT_TRANSFER</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l01089">superbitrf_radio_to_channels()</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00040">SUPERBITRF_RECV_SHORT_TIME</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00039">SUPERBITRF_RECV_TIME</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00034">superbitrf_set_mfg_id()</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00039">superbitrf_set_protocol()</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00050">SUPERBITRF_SYNCING_A</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00051">SUPERBITRF_SYNCING_B</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00052">SUPERBITRF_TRANSFER</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00082">SuperbitRF::timeouts</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00080">SuperbitRF::timer</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00107">SuperbitRF::timing1</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00108">SuperbitRF::timing2</a>, and <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00094">SuperbitRF::uplink_count</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00322">superbitrf_event()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1018,17 +1022,19 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="modules_2datalink_2superbitrf_8c_af3aa1f553183ecf594fa1c016e79110e_cgraph.png" border="0" usemap="#amodules_2datalink_2superbitrf_8c_af3aa1f553183ecf594fa1c016e79110e_cgraph" alt=""/></div>
 <map name="amodules_2datalink_2superbitrf_8c_af3aa1f553183ecf594fa1c016e79110e_cgraph" id="amodules_2datalink_2superbitrf_8c_af3aa1f553183ecf594fa1c016e79110e_cgraph">
-<area shape="rect" title="When we receive a packet this callback is called." alt="" coords="5,105,145,145"/>
+<area shape="rect" title="When we receive a packet this callback is called." alt="" coords="5,126,145,166"/>
 <area shape="rect" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49" title="Write to multiple registers one byte." alt="" coords="199,5,359,31"/>
-<area shape="poly" title=" " alt="" coords="99,102,141,70,192,40,209,33,211,37,195,44,144,75,102,106"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="206,55,353,80"/>
-<area shape="poly" title=" " alt="" coords="145,103,219,81,220,86,146,108"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618" title="Parse a radio channel packet." alt="" coords="207,105,352,145"/>
-<area shape="poly" title=" " alt="" coords="145,122,193,122,193,127,145,127"/>
-<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6" title=" " alt="" coords="197,169,361,195"/>
-<area shape="poly" title=" " alt="" coords="146,142,220,163,219,168,145,147"/>
-<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec" title=" " alt="" coords="193,219,365,244"/>
-<area shape="poly" title=" " alt="" coords="102,143,144,174,195,204,214,212,212,217,192,208,141,178,99,147"/>
+<area shape="poly" title=" " alt="" coords="92,124,135,81,162,59,192,40,206,33,208,38,195,44,165,63,138,85,96,128"/>
+<area shape="rect" href="datalink_8c.html#acf6c5a4e99d7188fa08c8e429c49226b" title="fill datalink buffer" alt="" coords="208,55,351,80"/>
+<area shape="poly" title=" " alt="" coords="114,123,192,89,214,81,216,87,194,94,116,128"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="206,104,353,129"/>
+<area shape="poly" title=" " alt="" coords="145,133,192,127,193,132,146,139"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618" title="Parse a radio channel packet." alt="" coords="207,154,352,194"/>
+<area shape="poly" title=" " alt="" coords="146,153,194,160,193,165,145,158"/>
+<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6" title=" " alt="" coords="197,219,361,244"/>
+<area shape="poly" title=" " alt="" coords="113,164,194,204,218,212,216,217,192,208,110,169"/>
+<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec" title=" " alt="" coords="193,268,365,293"/>
+<area shape="poly" title=" " alt="" coords="95,164,137,209,165,233,195,253,210,261,208,265,192,258,162,237,134,213,91,168"/>
 <area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="413,5,589,31"/>
 <area shape="poly" title=" " alt="" coords="360,15,399,15,399,21,360,21"/>
 <area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="637,5,799,31"/>
@@ -1623,7 +1629,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="modules_2datalink_2superbitrf_8c.html">superbitrf.c</a></li>
-    <li class="footer">Generated on Wed Jul 22 2026 21:47:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 29 2026 13:52:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

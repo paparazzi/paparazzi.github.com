@@ -1,5 +1,9 @@
 var NAVTREEINDEX137 =
 {
+"module__shell.html#module_load_example__shell":[1,84,0],
+"module__shell.html#module_xml__shell":[1,84,2,0],
+"module__shift_tracking.html":[1,108],
+"module__shift_tracking.html#configuration__shift_tracking":[1,108,1],
 "module__shift_tracking.html#functions__shift_tracking":[1,108,2],
 "module__shift_tracking.html#module_load_example__shift_tracking":[1,108,0],
 "module__shift_tracking.html#module_xml__shift_tracking":[1,108,2,0],
@@ -219,7 +223,6 @@ var NAVTREEINDEX137 =
 "module__telemetry_ivy.html#module_xml__telemetry_ivy":[1,117,1,0],
 "module__telemetry_nps.html":[1,118],
 "module__telemetry_nps.html#configuration__telemetry_nps":[1,118,1],
-"module__telemetry_nps.html#configure":[1,118,1,0],
 "module__telemetry_nps.html#functions__telemetry_nps":[1,118,2],
 "module__telemetry_nps.html#module_load_example__telemetry_nps":[1,118,0],
 "module__telemetry_nps.html#module_xml__telemetry_nps":[1,118,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,123,2,0],
 "module__telemetry_transparent_frsky_x.html":[1,124],
 "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,124,1],
-"module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,124,0],
-"module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,124,1,0],
-"module__telemetry_transparent_gec.html":[1,125],
-"module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,125,1]
+"module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,124,0]
 };

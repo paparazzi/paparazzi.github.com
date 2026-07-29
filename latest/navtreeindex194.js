@@ -1,5 +1,9 @@
 var NAVTREEINDEX194 =
 {
+"sensors__hitl_8c.html#a18066984b045d1bff45fe28290feb144":[12,0,1,0,6,63,91,14],
+"sensors__hitl_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,63,91,3],
+"sensors__hitl_8c.html#a26ffc6c13392c0ebfb456dc0697a66d8":[12,0,1,0,6,63,91,0,1],
+"sensors__hitl_8c.html#a2e965a44a3faef0df7d56cbed4f8b575":[12,0,1,0,6,63,91,4],
 "sensors__hitl_8c.html#a3137bcd7fe852e73e021b5ce46b66d04":[12,0,1,0,6,63,91,12],
 "sensors__hitl_8c.html#a3d2ef80efbb3f4c7c13ecbe3a21e0b8b":[12,0,1,0,6,63,91,9],
 "sensors__hitl_8c.html#a3eda401c67dfeee490285016ec944e48":[12,0,1,0,6,63,91,2],
@@ -7,7 +11,6 @@ var NAVTREEINDEX194 =
 "sensors__hitl_8c.html#a5b2450e8baa86636ae84529551d1846e":[12,0,1,0,6,63,91,10],
 "sensors__hitl_8c.html#a6130f0add83d9e8919bae6421af6e9d9":[12,0,1,0,6,63,91,0,5],
 "sensors__hitl_8c.html#a7ebfa6202bf8af1c5610998843cc0d95":[12,0,1,0,6,63,91,0,0],
-"sensors__hitl_8c.html#a87d7aed7c61f2a45a63990d3800b434f":[12,0,1,0,6,63,91,13],
 "sensors__hitl_8c.html#a8aec638c539e40d6188cf6ffb604e383":[12,0,1,0,6,63,91,0,3],
 "sensors__hitl_8c.html#a92225da86fa0d698820cb0eccf0993bd":[12,0,1,0,6,63,91,6],
 "sensors__hitl_8c.html#a96176da51679059e18b430b94f340cea":[12,0,1,0,6,63,91,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX194 =
 "sim_2mcu__periph_2adc__arch_8h.html":[12,0,1,0,0,2,0,1],
 "sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673":[12,0,1,0,0,2,0,1,1],
 "sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59":[12,0,1,0,0,2,0,1,0],
-"sim_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,2,0,1],
-"sim_2mcu__periph_2can__arch_8c.html":[12,0,1,0,0,2,0,2],
-"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,0,0,2,0,1],
-"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,1,0,2,0,1]
+"sim_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,2,0,1]
 };

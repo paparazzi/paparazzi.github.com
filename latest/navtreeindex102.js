@@ -1,5 +1,8 @@
 var NAVTREEINDEX102 =
 {
+"light__solar_8c.html#a5d427462d5459fa08a65ad9a78c2e259":[12,0,1,0,6,44,31,6],
+"light__solar_8c.html#a661e1b4ad75b88ab19e0d16c232d9f6d":[12,0,1,0,6,44,31,0],
+"light__solar_8c.html#a831ddfb4155fdd57df9ff70f0df6033b":[12,0,1,0,6,44,31,8],
 "light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d":[12,0,1,0,6,44,31,9],
 "light__solar_8c.html#aa0bba5249b781b1416caa6b66c88a5d9":[12,0,1,0,6,44,31,5],
 "light__solar_8c.html#aa2fc12bc4b6f834047b0918b0e3541aa":[12,0,1,0,6,44,31,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX102 =
 "linux_2mcu__periph_2uart__arch_8c_source.html":[12,0,1,0,0,1,0,16],
 "linux_2mcu__periph_2uart__arch_8h.html":[12,0,1,0,0,1,0,17],
 "linux_2mcu__periph_2uart__arch_8h.html#a05f5d709605c6317c97e4974bec3402a":[12,0,1,0,0,1,0,17,3],
-"linux_2mcu__periph_2uart__arch_8h.html#a5bdd6772c246436bb14377095de79b31":[12,0,1,0,0,1,0,17,1],
-"linux_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162":[12,0,1,0,0,1,0,17,4],
-"linux_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf":[12,0,1,0,0,1,0,17,0],
-"linux_2mcu__periph_2uart__arch_8h.html#ac9378c8432472f49ced54ebd148d7af1":[12,0,1,0,0,1,0,17,2]
+"linux_2mcu__periph_2uart__arch_8h.html#a5bdd6772c246436bb14377095de79b31":[12,0,1,0,0,1,0,17,1]
 };

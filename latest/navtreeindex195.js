@@ -1,5 +1,8 @@
 var NAVTREEINDEX195 =
 {
+"sim_2mcu__periph_2can__arch_8c.html":[12,0,1,0,0,2,0,2],
+"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,0,0,2,0,1],
+"sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,1,0,2,0,1],
 "sim_2mcu__periph_2can__arch_8c.html#a1f11657f548db795cb7d1a98ded2f2d7":[12,0,1,0,0,2,0,2,0,1],
 "sim_2mcu__periph_2can__arch_8c.html#a2f09363e050004def961b40646deab36":[12,0,1,0,0,1,0,2,0,0],
 "sim_2mcu__periph_2can__arch_8c.html#a2f09363e050004def961b40646deab36":[12,0,1,0,0,0,0,2,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX195 =
 "sim_2modules_2radio__control_2ppm__arch_8h.html#ab60f6bbc326addf63715d164966694ce":[12,0,1,0,0,2,1,4,1,0],
 "sim_2modules_2radio__control_2ppm__arch_8h_source.html":[12,0,1,0,0,2,1,4,1],
 "sim__MPPT_8c.html":[12,0,1,0,6,23,8],
-"sim__MPPT_8c.html#a13227707deb233f37302dde38f46a1db":[12,0,1,0,6,23,8,2],
-"sim__MPPT_8c.html#a204d628ca12dfdc88844dcdd0380d93a":[12,0,1,0,6,23,8,3],
-"sim__MPPT_8c.html#a5c47991acb02c76621b1f1c898954071":[12,0,1,0,6,23,8,0],
-"sim__MPPT_8c.html#a83382406fe8c87d91b746b22318ec7c9":[12,0,1,0,6,23,8,1]
+"sim__MPPT_8c.html#a13227707deb233f37302dde38f46a1db":[12,0,1,0,6,23,8,2]
 };

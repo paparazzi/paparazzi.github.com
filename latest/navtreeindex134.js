@@ -1,5 +1,10 @@
 var NAVTREEINDEX134 =
 {
+"module__ins_arduimu.html#functions__ins_arduimu":[1,240,1],
+"module__ins_arduimu.html#module_load_example__ins_arduimu":[1,240,0],
+"module__ins_arduimu.html#module_xml__ins_arduimu":[1,240,1,0],
+"module__ins_arduimu_basic.html":[1,241],
+"module__ins_arduimu_basic.html#configuration__ins_arduimu_basic":[1,241,1],
 "module__ins_arduimu_basic.html#functions__ins_arduimu_basic":[1,241,2],
 "module__ins_arduimu_basic.html#module_load_example__ins_arduimu_basic":[1,241,0],
 "module__ins_arduimu_basic.html#module_xml__ins_arduimu_basic":[1,241,2,0],
@@ -92,10 +97,9 @@ var NAVTREEINDEX134 =
 "module__intermcu_uart.html#module_load_example__intermcu_uart":[1,260,0],
 "module__intermcu_uart.html#module_xml__intermcu_uart":[1,260,3,0],
 "module__ir_mlx.html":[1,306],
-"module__ir_mlx.html#event_functions":[1,306,1,0],
 "module__ir_mlx.html#functions__ir_mlx":[1,306,1],
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,306,0],
-"module__ir_mlx.html#module_xml__ir_mlx":[1,306,1,1],
+"module__ir_mlx.html#module_xml__ir_mlx":[1,306,1,0],
 "module__jevois.html":[1,446],
 "module__jevois.html#configuration__jevois":[1,446,1],
 "module__jevois.html#functions__jevois":[1,446,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__mag_qmc5883l.html#functions__mag_qmc5883l":[1,435,2],
 "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l":[1,435,0],
 "module__mag_qmc5883l.html#module_xml__mag_qmc5883l":[1,435,2,0],
-"module__mag_rm3100.html":[1,436],
-"module__mag_rm3100.html#configuration__mag_rm3100":[1,436,1],
-"module__mag_rm3100.html#functions__mag_rm3100":[1,436,2],
-"module__mag_rm3100.html#module_load_example__mag_rm3100":[1,436,0],
-"module__mag_rm3100.html#module_xml__mag_rm3100":[1,436,2,0]
+"module__mag_rm3100.html":[1,436]
 };
