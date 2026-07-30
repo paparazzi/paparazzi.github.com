@@ -2,6 +2,7 @@ var group__state__attitude =
 [
     [ "stateGetNedToBodyEulers_f", "group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682", null ],
     [ "stateGetNedToBodyEulers_i", "group__state__attitude.html#ga40d15f52fa56369375a61cdf41ed970a", null ],
+    [ "stateGetNedToBodyEulersZxy_f", "group__state__attitude.html#ga93856aed4a6c0402863fefee957a6296", null ],
     [ "stateGetNedToBodyQuat_f", "group__state__attitude.html#gab5f063833fdba859ce42593112551463", null ],
     [ "stateGetNedToBodyQuat_i", "group__state__attitude.html#ga0f4332db7889a3b90f3f2fe4cbe0d2fb", null ],
     [ "stateGetNedToBodyRMat_f", "group__state__attitude.html#ga349b79d742ba71721146940d8ad71849", null ],

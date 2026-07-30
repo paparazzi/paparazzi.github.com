@@ -1,5 +1,10 @@
 var NAVTREEINDEX133 =
 {
+"module__gvf_classic.html#configuration__gvf_classic":[1,504,1],
+"module__gvf_classic.html#functions__gvf_classic":[1,504,2],
+"module__gvf_classic.html#module_load_example__gvf_classic":[1,504,0],
+"module__gvf_classic.html#module_xml__gvf_classic":[1,504,2,0],
+"module__gvf_common.html":[1,505],
 "module__gvf_common.html#module_load_example__gvf_common":[1,505,0],
 "module__gvf_common.html#module_xml__gvf_common":[1,505,0,0],
 "module__gvf_ik.html":[1,506],
@@ -244,10 +249,5 @@ var NAVTREEINDEX133 =
 "module__ins.html":[1,238],
 "module__ins.html#module_load_example__ins":[1,238,0],
 "module__ins.html#module_xml__ins":[1,238,0,0],
-"module__ins_alt_float.html":[1,239],
-"module__ins_alt_float.html#configuration__ins_alt_float":[1,239,1],
-"module__ins_alt_float.html#functions__ins_alt_float":[1,239,2],
-"module__ins_alt_float.html#module_load_example__ins_alt_float":[1,239,0],
-"module__ins_alt_float.html#module_xml__ins_alt_float":[1,239,2,0],
-"module__ins_arduimu.html":[1,240]
+"module__ins_alt_float.html":[1,239]
 };
