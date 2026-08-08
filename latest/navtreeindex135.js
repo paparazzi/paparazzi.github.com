@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__mag_pitot_uart.html#module_xml__mag_pitot_uart":[1,434,2,0],
+"module__mag_qmc5883l.html":[1,435],
 "module__mag_qmc5883l.html#configuration__mag_qmc5883l":[1,435,1],
 "module__mag_qmc5883l.html#functions__mag_qmc5883l":[1,435,2],
 "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l":[1,435,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__obstacle_rover.html#module_xml__obstacle_rover":[1,516,2,0],
 "module__oneloop_andi.html":[1,517],
 "module__oneloop_andi.html#functions__oneloop_andi":[1,517,1],
-"module__oneloop_andi.html#module_load_example__oneloop_andi":[1,517,0],
-"module__oneloop_andi.html#module_xml__oneloop_andi":[1,517,1,0],
-"module__opa_controller.html":[1,46]
+"module__oneloop_andi.html#module_load_example__oneloop_andi":[1,517,0]
 };

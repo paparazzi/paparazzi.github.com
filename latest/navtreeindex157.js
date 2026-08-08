@@ -1,5 +1,7 @@
 var NAVTREEINDEX157 =
 {
+"nps__radio__control__spektrum_8c.html#a13638c2c59020ab9b1e4475c3d4f7af6":[12,0,1,1,2,31,0],
+"nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6":[12,0,1,1,2,31,13],
 "nps__radio__control__spektrum_8c.html#a2bc5f09e956b5d0d5d52fb040d22af4e":[12,0,1,1,2,31,14],
 "nps__radio__control__spektrum_8c.html#a4d2d41d6a739ed6c32a752699660c355":[12,0,1,1,2,31,8],
 "nps__radio__control__spektrum_8c.html#a4e0621526382f75dc0f393135253fb39":[12,0,1,1,2,31,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX157 =
 "nps__sensors_8h.html#ab0a02abe5e4cd3a09f108a19c2532477":[12,0,1,1,2,56,11],
 "nps__sensors_8h.html#ab78d0f998111d2290dd0ce2522215a8a":[12,0,1,1,2,56,0,3],
 "nps__sensors_8h.html#acce77f76dcc7946ef7dfd9a522b47b63":[12,0,1,1,2,56,8],
-"nps__sensors_8h.html#acda719ca7ca013fde9fefb6f54c019b2":[12,0,1,1,2,56,0,9],
-"nps__sensors_8h.html#ad6979313fac5ae623bcc6320f33c3d55":[12,0,1,1,2,56,10],
-"nps__sensors_8h.html#adf960f9f56eb4fd5ac9d096b591fac7e":[12,0,1,1,2,56,9]
+"nps__sensors_8h.html#acda719ca7ca013fde9fefb6f54c019b2":[12,0,1,1,2,56,0,9]
 };

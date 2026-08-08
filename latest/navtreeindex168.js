@@ -1,5 +1,7 @@
 var NAVTREEINDEX168 =
 {
+"paparazzi_messages.html#KEY_EXCHANGE_UAV":[2,0,232],
+"paparazzi_messages.html#KITE_COMMAND":[2,1,44],
 "paparazzi_messages.html#LIDAR":[2,0,227],
 "paparazzi_messages.html#LINK_REPORT":[2,2,34],
 "paparazzi_messages.html#LOGGER_STATUS":[2,0,87],
@@ -247,7 +249,5 @@ var NAVTREEINDEX168 =
 "pca9685__i2c_8c.html#a132a70f7130ed80aa1e1ea583dd96c95":[12,0,1,0,6,52,0,8],
 "pca9685__i2c_8c.html#a14e0203b6c952fcfd6a9b082874b6813":[12,0,1,0,6,52,0,89],
 "pca9685__i2c_8c.html#a187cf0a5c05c0cfd4f51aacca91bd9f0":[12,0,1,0,6,52,0,73],
-"pca9685__i2c_8c.html#a1cbd6845474a88781e8458ce4acb64c3":[12,0,1,0,6,52,0,23],
-"pca9685__i2c_8c.html#a25e3383eac0c53506d81f55acb06efc5":[12,0,1,0,6,52,0,46],
-"pca9685__i2c_8c.html#a28b9196e164399b535405071aa9fa45c":[12,0,1,0,6,52,0,6]
+"pca9685__i2c_8c.html#a1cbd6845474a88781e8458ce4acb64c3":[12,0,1,0,6,52,0,23]
 };

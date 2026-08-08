@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__settings.html#module_xml__settings":[1,82,2,0],
+"module__settings_rc.html":[1,83],
 "module__settings_rc.html#module_load_example__settings_rc":[1,83,0],
 "module__settings_rc.html#module_xml__settings_rc":[1,83,0,0],
 "module__shell.html":[1,84],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_superbitrf.html#functions__telemetry_superbitrf":[1,122,1],
 "module__telemetry_superbitrf.html#module_load_example__telemetry_superbitrf":[1,122,0],
 "module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf":[1,122,1,0],
-"module__telemetry_transparent.html":[1,123],
-"module__telemetry_transparent.html#configuration__telemetry_transparent":[1,123,1],
-"module__telemetry_transparent.html#functions__telemetry_transparent":[1,123,2]
+"module__telemetry_transparent.html":[1,123]
 };

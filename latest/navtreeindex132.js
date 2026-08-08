@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,199,0],
+"module__filter_1euro_imu.html#module_xml__filter_1euro_imu":[1,199,2,0],
 "module__flight_benchmark.html":[1,37],
 "module__flight_benchmark.html#configuration__flight_benchmark":[1,37,1],
 "module__flight_benchmark.html#functions__flight_benchmark":[1,37,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__guidance_rover_steering.html#module_xml__guidance_rover_steering":[1,196,1,0],
 "module__gumstix_qr_code_spi_link.html":[1,503],
 "module__gumstix_qr_code_spi_link.html#functions__gumstix_qr_code_spi_link":[1,503,1],
-"module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link":[1,503,0],
-"module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link":[1,503,1,0],
-"module__gvf_classic.html":[1,504]
+"module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link":[1,503,0]
 };

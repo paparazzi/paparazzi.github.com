@@ -1,5 +1,7 @@
 var NAVTREEINDEX97 =
 {
+"iomcu_8c.html#structpage__rc__input":[12,0,1,0,6,38,5,3],
+"iomcu_8c.html#structpage__reg__status":[12,0,1,0,6,38,5,2],
 "iomcu_8c_source.html":[12,0,1,0,6,38,5],
 "iomcu_8h.html":[12,0,1,0,6,38,6],
 "iomcu_8h.html#a32b095d96dda2f2a152c1a86b3d68416":[12,0,1,0,6,38,6,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX97 =
 "jevois_8c.html#ad29a2f3a311c4adb39f30e6598517114":[12,0,1,0,6,63,0,0,4],
 "jevois_8c.html#adfd0559dc6ad82fac1d6c635f0a84682":[12,0,1,0,6,63,0,0,1,1],
 "jevois_8c.html#ae7c0a60712036dc7f1583b9954230c89":[12,0,1,0,6,63,0,0,9],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040":[12,0,1,0,6,63,0,0,5],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a34c8cf6e689d79ab181643a6c198275a":[12,0,1,0,6,63,0,0,5,6],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a491014ba5c6464f63ddf0e9b5af367cd":[12,0,1,0,6,63,0,0,5,5]
+"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040":[12,0,1,0,6,63,0,0,5]
 };

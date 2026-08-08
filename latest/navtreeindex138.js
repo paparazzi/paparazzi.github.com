@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__telemetry_transparent.html#configuration__telemetry_transparent":[1,123,1],
+"module__telemetry_transparent.html#functions__telemetry_transparent":[1,123,2],
 "module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,123,0],
 "module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,123,2,0],
 "module__telemetry_transparent_frsky_x.html":[1,124],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "modules_2datalink_2superbitrf_8c.html#ab7cad7b2b636d70ece62e9cede876603":[12,0,1,0,6,15,23,28],
 "modules_2datalink_2superbitrf_8c.html#abefd806148689ae7eddc86cf9d0e9d21":[12,0,1,0,6,15,23,10],
 "modules_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7":[12,0,1,0,6,15,23,9],
-"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,15,23,4],
-"modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd":[12,0,1,0,6,15,23,19],
-"modules_2datalink_2superbitrf_8c.html#ade7ef70ed43ea8f759a330486554d623":[12,0,1,0,6,15,23,22]
+"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,15,23,4]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link":[1,503,1,0],
+"module__gvf_classic.html":[1,504],
 "module__gvf_classic.html#configuration__gvf_classic":[1,504,1],
 "module__gvf_classic.html#functions__gvf_classic":[1,504,2],
 "module__gvf_classic.html#module_load_example__gvf_classic":[1,504,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_xsens.html#module_load_example__imu_xsens":[1,237,0],
 "module__imu_xsens.html#module_xml__imu_xsens":[1,237,2,0],
 "module__ins.html":[1,238],
-"module__ins.html#module_load_example__ins":[1,238,0],
-"module__ins.html#module_xml__ins":[1,238,0,0],
-"module__ins_alt_float.html":[1,239]
+"module__ins.html#module_load_example__ins":[1,238,0]
 };

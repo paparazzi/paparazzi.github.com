@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"hal__stm32__dma_8h_source.html":[12,0,1,0,0,0,0,8],
+"halconf_8h.html":[12,0,1,0,0,0,6],
 "halconf_8h_source.html":[12,0,1,0,0,0,6],
 "hf__float_8c.html":[12,0,1,0,6,37,2],
 "hf__float_8c.html#a02893cc16448cb0a24286ea22c27163a":[12,0,1,0,6,37,2,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "hmc5843_8h.html":[12,0,1,0,7,44],
 "hmc5843_8h.html#a059b2d3f6a79da34e90955c1d3bf79b5":[12,0,1,0,7,44,10],
 "hmc5843_8h.html#a0bdafd91078334d9aaec3844ccc6d129":[12,0,1,0,7,44,5],
-"hmc5843_8h.html#a0d9d6f319b2ad8e47637ad83bb04dbe2":[12,0,1,0,7,44,21],
-"hmc5843_8h.html#a1a69d0e59acc0920717f554399c02815":[12,0,1,0,7,44,14],
-"hmc5843_8h.html#a2865aacd8f0c1dd4f38f4c40ea7eeba9":[12,0,1,0,7,44,0,3]
+"hmc5843_8h.html#a0d9d6f319b2ad8e47637ad83bb04dbe2":[12,0,1,0,7,44,21]
 };

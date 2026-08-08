@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__cv_colorfilter.html#configuration__cv_colorfilter":[1,59,1],
+"module__cv_colorfilter.html#functions__cv_colorfilter":[1,59,2],
 "module__cv_colorfilter.html#module_load_example__cv_colorfilter":[1,59,0],
 "module__cv_colorfilter.html#module_xml__cv_colorfilter":[1,59,2,0],
 "module__cv_detect_color_object.html":[1,60],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__fdm_rover.html#module_xml__fdm_rover":[1,157,0,0],
 "module__filter_1euro_imu.html":[1,199],
 "module__filter_1euro_imu.html#configuration__filter_1euro_imu":[1,199,1],
-"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,199,2],
-"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,199,0],
-"module__filter_1euro_imu.html#module_xml__filter_1euro_imu":[1,199,2,0]
+"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,199,2]
 };
