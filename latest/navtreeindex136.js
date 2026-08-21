@@ -1,13 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__oneloop_andi.html#module_xml__oneloop_andi":[1,517,1,0],
-"module__opa_controller.html":[1,46],
-"module__opa_controller.html#functions__opa_controller":[1,46,1],
-"module__opa_controller.html#module_load_example__opa_controller":[1,46,0],
-"module__opa_controller.html#module_xml__opa_controller":[1,46,1,0],
-"module__openlog.html":[1,281],
-"module__openlog.html#functions__openlog":[1,281,1],
-"module__openlog.html#module_load_example__openlog":[1,281,0],
 "module__openlog.html#module_xml__openlog":[1,281,1,0],
 "module__optical_flow_hover.html":[1,105],
 "module__optical_flow_hover.html#functions__optical_flow_hover":[1,105,1],
@@ -20,6 +12,7 @@ var NAVTREEINDEX136 =
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,106,2,0],
 "module__optical_flow_mateksys_3901_l0x.html":[1,373],
 "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,373,1],
+"module__optical_flow_mateksys_3901_l0x.html#configure":[1,373,1,0],
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,373,2],
 "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,373,0],
 "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,373,2,0],
@@ -249,5 +242,12 @@ var NAVTREEINDEX136 =
 "module__settings.html":[1,82],
 "module__settings.html#datalink_functions__settings":[1,82,2],
 "module__settings.html#functions__settings":[1,82,1],
-"module__settings.html#module_load_example__settings":[1,82,0]
+"module__settings.html#module_load_example__settings":[1,82,0],
+"module__settings.html#module_xml__settings":[1,82,2,0],
+"module__settings_rc.html":[1,83],
+"module__settings_rc.html#module_load_example__settings_rc":[1,83,0],
+"module__settings_rc.html#module_xml__settings_rc":[1,83,0,0],
+"module__shell.html":[1,84],
+"module__shell.html#configuration__shell":[1,84,1],
+"module__shell.html#functions__shell":[1,84,2]
 };

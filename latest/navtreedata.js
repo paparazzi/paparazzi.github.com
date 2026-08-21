@@ -846,6 +846,7 @@ var NAVTREE =
       [ "telemetry_superbitrf module", "module__telemetry_superbitrf.html", [
         [ "Example for airframe file", "module__telemetry_superbitrf.html#module_load_example__telemetry_superbitrf", null ],
         [ "Module functions", "module__telemetry_superbitrf.html#functions__telemetry_superbitrf", [
+          [ "Event Functions", "module__telemetry_superbitrf.html#event_functions", null ],
           [ "Raw telemetry_superbitrf.xml file:", "module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf", null ]
         ] ]
       ] ],
@@ -1224,9 +1225,7 @@ var NAVTREE =
       ] ],
       [ "guidance_full_pid_fw module", "module__guidance_full_pid_fw.html", [
         [ "Example for airframe file", "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw", null ],
-        [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", [
-          [ "Airframe file section", "module__guidance_full_pid_fw.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", null ],
         [ "Module functions", "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw", [
           [ "Raw guidance_full_pid_fw.xml file:", "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw", null ]
         ] ]
@@ -1380,12 +1379,12 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
@@ -1396,12 +1395,12 @@ var NAVTREE =
         [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
-          [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
       ] ],
       [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+          [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -2433,7 +2432,9 @@ var NAVTREE =
       ] ],
       [ "optical_flow_mateksys_3901_l0x module", "module__optical_flow_mateksys_3901_l0x.html", [
         [ "Example for airframe file", "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x", null ],
-        [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", null ],
+        [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", [
+          [ "Configure Options", "module__optical_flow_mateksys_3901_l0x.html#configure", null ]
+        ] ],
         [ "Module functions", "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x", [
           [ "Raw optical_flow_mateksys_3901_l0x.xml file:", "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x", null ]
         ] ]
@@ -2688,18 +2689,8 @@ var NAVTREE =
       ] ],
       [ "baro_bmp module", "module__baro_bmp.html", [
         [ "Example for airframe file", "module__baro_bmp.html#module_load_example__baro_bmp", null ],
-        [ "Module configuration options", "module__baro_bmp.html#configuration__baro_bmp", [
-          [ "Configure Options", "module__baro_bmp.html#configure", null ],
-          [ "Define Options", "module__baro_bmp.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__baro_bmp.html#configuration__baro_bmp", null ],
         [ "Module functions", "module__baro_bmp.html#functions__baro_bmp", [
-          [ "Init Functions", "module__baro_bmp.html#init_functions", null ],
-          [ "Event Functions", "module__baro_bmp.html#event_functions", null ],
-          [ "Periodic Functions", "module__baro_bmp.html#periodic_functions", null ]
-        ] ],
-        [ "Files", "module__baro_bmp.html#files", [
-          [ "Header Files", "module__baro_bmp.html#headers", null ],
-          [ "Source Files", "module__baro_bmp.html#sources", null ],
           [ "Raw baro_bmp.xml file:", "module__baro_bmp.html#module_xml__baro_bmp", null ]
         ] ]
       ] ],
@@ -3167,8 +3158,16 @@ var NAVTREE =
       ] ],
       [ "sys_id_doublet module", "module__sys_id_doublet.html", [
         [ "Example for airframe file", "module__sys_id_doublet.html#module_load_example__sys_id_doublet", null ],
-        [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", null ],
+        [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", [
+          [ "Airframe file section", "module__sys_id_doublet.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__sys_id_doublet.html#functions__sys_id_doublet", [
+          [ "Init Functions", "module__sys_id_doublet.html#init_functions", null ],
+          [ "Periodic Functions", "module__sys_id_doublet.html#periodic_functions", null ]
+        ] ],
+        [ "Files", "module__sys_id_doublet.html#files", [
+          [ "Header Files", "module__sys_id_doublet.html#headers", null ],
+          [ "Source Files", "module__sys_id_doublet.html#sources", null ],
           [ "Raw sys_id_doublet.xml file:", "module__sys_id_doublet.html#module_xml__sys_id_doublet", null ]
         ] ]
       ] ],
@@ -3270,11 +3269,13 @@ var NAVTREE =
       ] ],
       [ "dragspeed module", "module__dragspeed.html", [
         [ "Example for airframe file", "module__dragspeed.html#module_load_example__dragspeed", null ],
-        [ "Module configuration options", "module__dragspeed.html#configuration__dragspeed", null ],
-        [ "Module functions", "module__dragspeed.html#functions__dragspeed", [
+        [ "Module configuration options", "module__dragspeed.html#configuration__dragspeed", [
           [ "Usage instructions", "module__dragspeed.html#autotoc_md7", null ],
           [ "Calibration from flight plan", "module__dragspeed.html#autotoc_md8", null ],
           [ "Example results", "module__dragspeed.html#autotoc_md9", null ],
+          [ "Define Options", "module__dragspeed.html#define", null ]
+        ] ],
+        [ "Module functions", "module__dragspeed.html#functions__dragspeed", [
           [ "Raw dragspeed.xml file:", "module__dragspeed.html#module_xml__dragspeed", null ]
         ] ]
       ] ],
@@ -4116,13 +4117,13 @@ var NAVTREEINDEX =
 "microrlConfig_8h.html#a26127bed3c8c9fa96f38043e8dc099d4",
 "mission__rotorcraft__nav_8c.html#a10c09d53a7656ca864dbde4d2d90ac5f",
 "module__aoa_t4.html",
-"module__cv_colorfilter.html#configuration__cv_colorfilter",
-"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu",
-"module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link",
-"module__ins.html#module_xml__ins",
-"module__mag_pitot_uart.html#module_xml__mag_pitot_uart",
-"module__oneloop_andi.html#module_xml__oneloop_andi",
-"module__settings.html#module_xml__settings",
+"module__cv_detect_color_object.html#module_xml__cv_detect_color_object",
+"module__flight_recorder.html",
+"module__gvf_common.html#module_xml__gvf_common",
+"module__ins_arduimu.html#module_load_example__ins_arduimu",
+"module__mag_rm3100.html#functions__mag_rm3100",
+"module__openlog.html#module_xml__openlog",
+"module__shell.html#module_load_example__shell",
 "module__telemetry_transparent.html#configuration__telemetry_transparent",
 "modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd",
 "mpl3115_8h.html#a91ad354dc5bc57449b43e507fcf6ca80",
