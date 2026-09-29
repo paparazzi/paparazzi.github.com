@@ -12,7 +12,6 @@ var NAVTREEINDEX136 =
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,106,2,0],
 "module__optical_flow_mateksys_3901_l0x.html":[1,373],
 "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,373,1],
-"module__optical_flow_mateksys_3901_l0x.html#configure":[1,373,1,0],
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,373,2],
 "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,373,0],
 "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,373,2,0],
@@ -207,9 +206,11 @@ var NAVTREEINDEX136 =
 "module__rotwing_state.html#module_xml__rotwing_state":[1,392,2,0],
 "module__rpm_sensor.html":[1,442],
 "module__rpm_sensor.html#configuration__rpm_sensor":[1,442,1],
+"module__rpm_sensor.html#define":[1,442,1,0],
 "module__rpm_sensor.html#functions__rpm_sensor":[1,442,2],
 "module__rpm_sensor.html#module_load_example__rpm_sensor":[1,442,0],
-"module__rpm_sensor.html#module_xml__rpm_sensor":[1,442,2,0],
+"module__rpm_sensor.html#module_xml__rpm_sensor":[1,442,2,1],
+"module__rpm_sensor.html#periodic_functions":[1,442,2,0],
 "module__rssi.html":[1,329],
 "module__rssi.html#datalink_functions__rssi":[1,329,2],
 "module__rssi.html#functions__rssi":[1,329,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__settings_rc.html#module_load_example__settings_rc":[1,83,0],
 "module__settings_rc.html#module_xml__settings_rc":[1,83,0,0],
 "module__shell.html":[1,84],
-"module__shell.html#configuration__shell":[1,84,1],
-"module__shell.html#functions__shell":[1,84,2]
+"module__shell.html#configuration__shell":[1,84,1]
 };

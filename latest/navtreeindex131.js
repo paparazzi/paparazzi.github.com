@@ -135,10 +135,9 @@ var NAVTREEINDEX131 =
 "module__dragspeed.html#autotoc_md8":[1],
 "module__dragspeed.html#autotoc_md9":[2],
 "module__dragspeed.html#configuration__dragspeed":[1,495,1],
-"module__dragspeed.html#define":[1,495,1,3],
 "module__dragspeed.html#functions__dragspeed":[1,495,2],
 "module__dragspeed.html#module_load_example__dragspeed":[1,495,0],
-"module__dragspeed.html#module_xml__dragspeed":[1,495,2,0],
+"module__dragspeed.html#module_xml__dragspeed":[1,495,2,3],
 "module__drop_zone.html":[1,325],
 "module__drop_zone.html#module_load_example__drop_zone":[1,325,0],
 "module__drop_zone.html#module_xml__drop_zone":[1,325,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX131 =
 "module__flight_benchmark.html#configuration__flight_benchmark":[1,37,1],
 "module__flight_benchmark.html#functions__flight_benchmark":[1,37,2],
 "module__flight_benchmark.html#module_load_example__flight_benchmark":[1,37,0],
-"module__flight_benchmark.html#module_xml__flight_benchmark":[1,37,2,0]
+"module__flight_benchmark.html#module_xml__flight_benchmark":[1,37,2,0],
+"module__flight_recorder.html":[1,272]
 };
