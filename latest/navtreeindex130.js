@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__aoa_pwm.html#module_xml__aoa_pwm":[1,396,2,0],
 "module__aoa_t4.html":[1,407],
 "module__aoa_t4.html#configuration__aoa_t4":[1,407,1],
 "module__aoa_t4.html#functions__aoa_t4":[1,407,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX130 =
 "module__cv_colorfilter.html#module_xml__cv_colorfilter":[1,59,2,0],
 "module__cv_detect_color_object.html":[1,60],
 "module__cv_detect_color_object.html#configuration__cv_detect_color_object":[1,60,1],
-"module__cv_detect_color_object.html#functions__cv_detect_color_object":[1,60,2],
-"module__cv_detect_color_object.html#module_load_example__cv_detect_color_object":[1,60,0]
+"module__cv_detect_color_object.html#functions__cv_detect_color_object":[1,60,2]
 };

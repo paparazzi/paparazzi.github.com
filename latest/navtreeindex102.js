@@ -1,5 +1,6 @@
 var NAVTREEINDEX102 =
 {
+"light__scheduler_8c.html#a8748371fe7c9b89c5acb7c1e055ee4d0":[12,0,1,0,6,41,4,1],
 "light__scheduler_8c_source.html":[12,0,1,0,6,41,4],
 "light__scheduler_8h.html":[12,0,1,0,6,41,5],
 "light__scheduler_8h.html#a8306780e037cc4384e8a0a33da77bf8b":[12,0,1,0,6,41,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX102 =
 "linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5":[12,0,1,0,0,1,0,16,10],
 "linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587":[12,0,1,0,0,1,0,16,2],
 "linux_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd":[12,0,1,0,0,1,0,16,7],
-"linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e":[12,0,1,0,0,1,0,16,5],
-"linux_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43":[12,0,1,0,0,1,0,16,11]
+"linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e":[12,0,1,0,0,1,0,16,5]
 };

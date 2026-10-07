@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__openlog.html#module_load_example__openlog":[1,281,0],
 "module__openlog.html#module_xml__openlog":[1,281,1,0],
 "module__optical_flow_hover.html":[1,105],
 "module__optical_flow_hover.html#functions__optical_flow_hover":[1,105,1],
@@ -224,6 +225,10 @@ var NAVTREEINDEX136 =
 "module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,107,1],
 "module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,107,0],
 "module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,107,1,0],
+"module__scout_detector.html":[1,530],
+"module__scout_detector.html#functions__scout_detector":[1,530,1],
+"module__scout_detector.html#module_load_example__scout_detector":[1,530,0],
+"module__scout_detector.html#module_xml__scout_detector":[1,530,1,0],
 "module__sensors_hitl.html":[1,443],
 "module__sensors_hitl.html#configuration__sensors_hitl":[1,443,1],
 "module__sensors_hitl.html#datalink_functions__sensors_hitl":[1,443,3],
@@ -235,19 +240,14 @@ var NAVTREEINDEX136 =
 "module__servo_lidar.html#functions__servo_lidar":[1,267,2],
 "module__servo_lidar.html#module_load_example__servo_lidar":[1,267,0],
 "module__servo_lidar.html#module_xml__servo_lidar":[1,267,2,0],
-"module__servo_tester.html":[1,530],
-"module__servo_tester.html#configuration__servo_tester":[1,530,1],
-"module__servo_tester.html#functions__servo_tester":[1,530,2],
-"module__servo_tester.html#module_load_example__servo_tester":[1,530,0],
-"module__servo_tester.html#module_xml__servo_tester":[1,530,2,0],
+"module__servo_tester.html":[1,531],
+"module__servo_tester.html#configuration__servo_tester":[1,531,1],
+"module__servo_tester.html#functions__servo_tester":[1,531,2],
+"module__servo_tester.html#module_load_example__servo_tester":[1,531,0],
+"module__servo_tester.html#module_xml__servo_tester":[1,531,2,0],
 "module__settings.html":[1,82],
 "module__settings.html#datalink_functions__settings":[1,82,2],
 "module__settings.html#functions__settings":[1,82,1],
 "module__settings.html#module_load_example__settings":[1,82,0],
-"module__settings.html#module_xml__settings":[1,82,2,0],
-"module__settings_rc.html":[1,83],
-"module__settings_rc.html#module_load_example__settings_rc":[1,83,0],
-"module__settings_rc.html#module_xml__settings_rc":[1,83,0,0],
-"module__shell.html":[1,84],
-"module__shell.html#configuration__shell":[1,84,1]
+"module__settings.html#module_xml__settings":[1,82,2,0]
 };

@@ -1,0 +1,21 @@
+<map id="search_map_update_wp" name="search_map_update_wp">
+<area shape="rect" id="Node000001" title="update waypoint position from map" alt="" coords="5,31,184,56"/>
+<area shape="rect" id="Node000002" href="$search__map_8c.html#a78d4313e88180158e2905dc7210f86e8" title="get weighted center of the data, expected to be the search position" alt="" coords="232,5,439,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,31,218,28,219,33,185,37"/>
+<area shape="rect" id="Node000003" href="$nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates." alt="" coords="265,55,405,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,50,252,56,252,62,184,55"/>
+<area shape="rect" id="Node000004" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="487,55,635,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,65,473,65,473,70,406,70"/>
+<area shape="rect" id="Node000005" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="689,5,831,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="612,52,694,31,695,37,613,57"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="708,55,812,80"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="635,65,694,65,694,70,635,70"/>
+<area shape="rect" id="Node000010" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="683,104,837,129"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="613,77,695,98,694,103,612,83"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="885,5,1032,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="832,15,871,15,871,21,832,21"/>
+<area shape="rect" id="Node000008" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="905,55,1013,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="812,65,891,65,891,70,812,70"/>
+<area shape="rect" id="Node000009" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="906,104,1011,129"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="812,77,894,98,893,103,811,83"/>
+</map>

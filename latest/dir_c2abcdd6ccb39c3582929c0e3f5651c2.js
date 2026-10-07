@@ -63,6 +63,7 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "rotwing_drone", "dir_4af85dec26241e8232a868b2a8878f9e.html", "dir_4af85dec26241e8232a868b2a8878f9e" ],
     [ "rust", "dir_19eaf27296313f09cdbfc5bb25e0962f.html", "dir_19eaf27296313f09cdbfc5bb25e0962f" ],
     [ "safety", "dir_b627ae31f1bb17f1a68ba4b068a18510.html", "dir_b627ae31f1bb17f1a68ba4b068a18510" ],
+    [ "search_and_rescue", "dir_1416aa7bd36bf00a204246bc17c838d3.html", "dir_1416aa7bd36bf00a204246bc17c838d3" ],
     [ "sensors", "dir_2f48bbb566df394f79dcf8fe0631584a.html", "dir_2f48bbb566df394f79dcf8fe0631584a" ],
     [ "servo_tester", "dir_c59999c9c4c3ce2ad9926d4ee931ee97.html", "dir_c59999c9c4c3ce2ad9926d4ee931ee97" ],
     [ "sonar", "dir_f794e7c055cca00c0de6f5564d477f09.html", "dir_f794e7c055cca00c0de6f5564d477f09" ],

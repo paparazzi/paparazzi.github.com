@@ -281,7 +281,7 @@ var searchData=
   ['uint16vect3_278',['Uint16Vect3',['../group__math__algebra__int.html#structUint16Vect3',1,'']]],
   ['uint32_5ft_279',['uint32_t',['../vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62',1,'uint32_t:&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a03761f68219fb1602eeda97bd628da43',1,'uint32_T:&#160;rtwtypes.h']]],
   ['uint64_5ft_280',['uint64_t',['../vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad',1,'vl53l1_types.h']]],
-  ['uint8_5ft_281',['uint8_t',['../rtwtypes_8h.html#a2532a6244e023eee49f315c10f1f7c53',1,'uint8_T:&#160;rtwtypes.h'],['../vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'uint8_t:&#160;vl53l1_types.h']]],
+  ['uint8_5ft_281',['uint8_t',['../vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'uint8_t:&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a2532a6244e023eee49f315c10f1f7c53',1,'uint8_T:&#160;rtwtypes.h']]],
   ['uint8vect3_282',['Uint8Vect3',['../group__math__algebra__int.html#structUint8Vect3',1,'']]],
   ['uint_5ft_283',['uint_T',['../rtwtypes_8h.html#a812dbe96020cf6b5c4a14e9339fc0d11',1,'rtwtypes.h']]],
   ['ukf_5fdw_284',['ukf_dw',['../UKF__Wind__Estimator_8c.html#a94c67ffb8b5d9ed94c8b4931101b6332',1,'ukf_DW:&#160;UKF_Wind_Estimator.c'],['../UKF__Wind__Estimator_8h.html#a94c67ffb8b5d9ed94c8b4931101b6332',1,'ukf_DW:&#160;UKF_Wind_Estimator.c']]],

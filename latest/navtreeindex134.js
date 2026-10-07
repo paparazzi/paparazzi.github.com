@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"module__ins_arduimu.html#functions__ins_arduimu":[1,240,1],
 "module__ins_arduimu.html#module_load_example__ins_arduimu":[1,240,0],
 "module__ins_arduimu.html#module_xml__ins_arduimu":[1,240,1,0],
 "module__ins_arduimu_basic.html":[1,241],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "module__mag_qmc5883l.html#functions__mag_qmc5883l":[1,435,2],
 "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l":[1,435,0],
 "module__mag_qmc5883l.html#module_xml__mag_qmc5883l":[1,435,2,0],
-"module__mag_rm3100.html":[1,436],
-"module__mag_rm3100.html#configuration__mag_rm3100":[1,436,1]
+"module__mag_rm3100.html":[1,436]
 };

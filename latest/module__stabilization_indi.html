@@ -192,6 +192,12 @@ Airframe file section</h2>
  Description: enable RPM feedback</li>
 <li><b>name</b> <code>ACT_FEEDBACK_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: listening for RPM feedback on this ABI id</li>
+<li><b>name</b> <code>V_THRUST_X</code> <b>value:</b> <em>2.</em> <br  />
+ Description: manually define the maximum virtual thrust produced on X axis</li>
+<li><b>name</b> <code>V_THRUST_Y</code> <b>value:</b> <em>2.</em> <br  />
+ Description: manually define the maximum virtual thrust produced on Y axis</li>
+<li><b>name</b> <code>V_THRUST_Z</code> <b>value:</b> <em>2.</em> <br  />
+ Description: manually define the maximum virtual thrust produced on Z axis</li>
 </ul>
 </li>
 </ul>
@@ -270,6 +276,9 @@ Raw stabilization_indi.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_WU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1, 1, 1, 1}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;WLS actuator cost (size of INDI_NUM_ACT)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RPM_FEEDBACK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;enable RPM feedback&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_FEEDBACK_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;listening for RPM feedback on this ABI id&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;V_THRUST_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;manually define the maximum virtual thrust produced on X axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;V_THRUST_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;manually define the maximum virtual thrust produced on Y axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;V_THRUST_Z&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;manually define the maximum virtual thrust produced on Z axis&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -312,7 +321,7 @@ Raw stabilization_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Oct 5 2026 19:24:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 12:13:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

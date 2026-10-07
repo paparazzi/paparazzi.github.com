@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"mission__rotorcraft__nav_8c.html":[12,0,1,0,6,45,7],
 "mission__rotorcraft__nav_8c.html#a10c09d53a7656ca864dbde4d2d90ac5f":[12,0,1,0,6,45,7,10],
 "mission__rotorcraft__nav_8c.html#a1321a2dedf3de994e9385774ed7c2abb":[12,0,1,0,6,45,7,12],
 "mission__rotorcraft__nav_8c.html#a2ce7f755e1c5f7c9d6bf77ee9157dda8":[12,0,1,0,6,45,7,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "module__aoa_pwm.html":[1,396],
 "module__aoa_pwm.html#configuration__aoa_pwm":[1,396,1],
 "module__aoa_pwm.html#functions__aoa_pwm":[1,396,2],
-"module__aoa_pwm.html#module_load_example__aoa_pwm":[1,396,0],
-"module__aoa_pwm.html#module_xml__aoa_pwm":[1,396,2,0]
+"module__aoa_pwm.html#module_load_example__aoa_pwm":[1,396,0]
 };
