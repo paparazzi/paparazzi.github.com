@@ -99,7 +99,8 @@ $(document).ready(function(){initNavTree('module__actuators_uavcan.html',''); in
 <h1><a class="anchor" id="module_load_example__actuators_uavcan"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_uavcan&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot; value=&quot;TRUE&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot; value=&quot;TRUE&quot; /&gt;\n   &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot; value=&quot;{4}&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__actuators_uavcan"></a>
 Module configuration options</h1>
@@ -108,6 +109,8 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>UAVCAN_ACTUATORS_USE_CURRENT</code> <b>value:</b> <em>TRUE</em> <br  />
  Description: Enable the usage of the current sensing in the ESC telemetry</li>
+<li><b>name:</b> <code>UAVCAN_ACTUATORS_TELEM_IDX</code> <b>value:</b> <em>{4}</em> <br  />
+ Description: Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -139,6 +142,7 @@ Raw actuators_uavcan.xml file:</h2>
 <div class="line">      <span class="keyword">UAVCan</span> <span class="keyword">actuators</span></div>
 <div class="line">   &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable the usage of the current sensing in the ESC telemetry&quot;</span>/&gt;</div>
+<div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{4}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uavcan</span>,<span class="keyword">actuators</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -170,7 +174,7 @@ Raw actuators_uavcan.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 7 2026 12:13:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 8 2026 07:44:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
