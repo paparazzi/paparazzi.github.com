@@ -3,6 +3,8 @@ var sys__id__doublet_8c =
     [ "SYS_ID_DOUBLET_AXES", "sys__id__doublet_8c.html#a88baf5b86685a40b0828a0864c29a631", null ],
     [ "SYS_ID_DOUBLET_ENABLED", "sys__id__doublet_8c.html#a383881bb9bba621ffe50baba8be54cac", null ],
     [ "SYS_ID_DOUBLET_NB_AXES", "sys__id__doublet_8c.html#a89c20f34e622f971b38226de6fce59f3", null ],
+    [ "SYS_ID_MAX_AXIS", "sys__id__doublet_8c.html#aa069ae0518a610b489cf5d83ba274c61", null ],
+    [ "SYS_ID_MULTI_DOUBLET", "sys__id__doublet_8c.html#aae954a0fd6b77c4b9cfa3490a042998a", null ],
     [ "send_doublet", "sys__id__doublet_8c.html#a445beb426b27ae83565b2adc824d405d", null ],
     [ "set_current_doublet_values", "sys__id__doublet_8c.html#a4a9e14fd71c2b72dd34e2b23d0553dd1", null ],
     [ "start_doublet", "sys__id__doublet_8c.html#ad31d5b642531d6b112fcf42c7a8c4f89", null ],

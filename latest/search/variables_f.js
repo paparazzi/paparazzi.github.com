@@ -78,7 +78,7 @@ var searchData=
   ['omega_5fi_75',['Omega_I',['../ahrs__float__dcm_8c.html#a2984dc102d0f60e5682814c3a9738c2c',1,'ahrs_float_dcm.c']]],
   ['omega_5flr_76',['omega_LR',['../optical__flow__landing_8h.html#a054efbe80458f7692bfd5783e5739b8a',1,'OpticalFlowLanding']]],
   ['omega_5fn_77',['omega_n',['../stabilization__andi_8h.html#a8c86503758d757adb4965c67bf029f95',1,'PolesOrder3Vect3::omega_n'],['../oneloop__andi_8h.html#a9f8771ab246f0cf2dd17ef8de3321738',1,'PolePlacement::omega_n']]],
-  ['omega_5fp_78',['omega_p',['../ahrs__float__dcm_8c.html#adb86d0beb8f30f0a135862055394de26',1,'Omega_P:&#160;ahrs_float_dcm.c'],['../stabilization__attitude__ref__quat__float_8c.html#a8ec51aaf6ea47adf2e3c2d23bce1672b',1,'omega_p:&#160;stabilization_attitude_ref_quat_float.c']]],
+  ['omega_5fp_78',['omega_p',['../stabilization__attitude__ref__quat__float_8c.html#a8ec51aaf6ea47adf2e3c2d23bce1672b',1,'omega_p:&#160;stabilization_attitude_ref_quat_float.c'],['../ahrs__float__dcm_8c.html#adb86d0beb8f30f0a135862055394de26',1,'Omega_P:&#160;ahrs_float_dcm.c']]],
   ['omega_5fq_79',['omega_q',['../stabilization__attitude__ref__quat__float_8c.html#a7ec471088a22f4eeba7ababa9c2cc84f',1,'stabilization_attitude_ref_quat_float.c']]],
   ['omega_5fr_80',['omega_r',['../stabilization__attitude__ref__quat__float_8c.html#a3e438891f3a5595f308067609dd5c4e2',1,'stabilization_attitude_ref_quat_float.c']]],
   ['omega_5fsp_81',['omega_sp',['../rover__guidance__steering_8h.html#a89b7be2a04f95e7b80c714ddb3515203',1,'rover_ctrl']]],
