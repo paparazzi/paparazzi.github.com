@@ -1,5 +1,7 @@
 var NAVTREEINDEX162 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#afc0d8281959c0da081d7df2d9df16701":[12,0,1,0,1,16,0,1,301],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#afd104f0cde2014ea9788f9e3f71de00a":[12,0,1,0,1,16,0,1,59],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afd42d4db3b7dfc7e12f68466ccf55f15":[12,0,1,0,1,16,0,1,138],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afd6848ba7ceed677ae8b11e47413c8b1":[12,0,1,0,1,16,0,1,85],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afda450bd11b4c1408739367b23c9f852":[12,0,1,0,1,16,0,1,215],
@@ -247,7 +249,5 @@ var NAVTREEINDEX162 =
 "onboard_modules.html#modules_category_meteo":[1,0,28],
 "onboard_modules.html#modules_category_misc":[1,0,43],
 "onboard_modules.html#modules_category_mission":[1,0,29],
-"onboard_modules.html#modules_category_multi":[1,0,30],
-"onboard_modules.html#modules_category_nav":[1,0,31],
-"onboard_modules.html#modules_category_optical_flow":[1,0,32]
+"onboard_modules.html#modules_category_multi":[1,0,30]
 };

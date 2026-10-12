@@ -6,5 +6,7 @@ var sim_2mcu__periph_2sys__time__arch_8c =
     [ "sys_tick_handler", "sim_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a", null ],
     [ "sys_time_arch_init", "sim_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4", null ],
     [ "sys_time_msleep", "sim_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35", null ],
-    [ "sys_time_usleep", "sim_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83", null ]
+    [ "sys_time_rtc_millisecond", "sim_2mcu__periph_2sys__time__arch_8c.html#afa40ca65130d3671ad968be749fbcd7c", null ],
+    [ "sys_time_usleep", "sim_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83", null ],
+    [ "rtc_ms_start", "sim_2mcu__periph_2sys__time__arch_8c.html#a5cba5945821899af44982ef06661da31", null ]
 ];

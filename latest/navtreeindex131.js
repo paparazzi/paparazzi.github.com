@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__cv_detect_color_object.html#configuration__cv_detect_color_object":[1,60,1],
+"module__cv_detect_color_object.html#functions__cv_detect_color_object":[1,60,2],
 "module__cv_detect_color_object.html#module_load_example__cv_detect_color_object":[1,60,0],
 "module__cv_detect_color_object.html#module_xml__cv_detect_color_object":[1,60,2,0],
 "module__cv_detect_contour.html":[1,61],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__filter_1euro_imu.html#module_xml__filter_1euro_imu":[1,199,2,0],
 "module__flight_benchmark.html":[1,37],
 "module__flight_benchmark.html#configuration__flight_benchmark":[1,37,1],
-"module__flight_benchmark.html#functions__flight_benchmark":[1,37,2],
-"module__flight_benchmark.html#module_load_example__flight_benchmark":[1,37,0],
-"module__flight_benchmark.html#module_xml__flight_benchmark":[1,37,2,0]
+"module__flight_benchmark.html#functions__flight_benchmark":[1,37,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX97 =
 {
+"iomcu_8c.html#structpage__config":[12,0,1,0,6,38,5,1],
 "iomcu_8c.html#structpage__mixing":[12,0,1,0,6,38,5,4],
 "iomcu_8c.html#structpage__rc__input":[12,0,1,0,6,38,5,3],
 "iomcu_8c.html#structpage__reg__status":[12,0,1,0,6,38,5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX97 =
 "jevois_8c.html#ac7e840f52d134433e359f8b400809943":[12,0,1,0,6,64,0,0,1,4],
 "jevois_8c.html#aca189a8d3e70150d074f138283a64365":[12,0,1,0,6,64,0,0,3],
 "jevois_8c.html#ad29a2f3a311c4adb39f30e6598517114":[12,0,1,0,6,64,0,0,4],
-"jevois_8c.html#adfd0559dc6ad82fac1d6c635f0a84682":[12,0,1,0,6,64,0,0,1,1],
-"jevois_8c.html#ae7c0a60712036dc7f1583b9954230c89":[12,0,1,0,6,64,0,0,9]
+"jevois_8c.html#adfd0559dc6ad82fac1d6c635f0a84682":[12,0,1,0,6,64,0,0,1,1]
 };

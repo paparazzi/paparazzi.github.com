@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v2_80_2mcuconf__board
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a29204b81c265dd6e124fbcf12a2c8d6f">  123</a></span><span class="preprocessor">#define STM32_SW                            STM32_SW_PLL1_P_CK</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#if HAL_USE_RTC</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#define STM32_RTCSEL                        STM32_RTCSEL_LSI_CK</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#define STM32_RTCSEL                        STM32_RTCSEL_HSE_1M_CK</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a945eb1f70822303bd0191ef633e5eaca">  128</a></span><span class="preprocessor">#define STM32_RTCSEL                        STM32_RTCSEL_NOCLK</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif</span></div>
@@ -498,8 +498,8 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v2_80_2mcuconf__board
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment"> * RTC driver system settings.</span></div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#ab047313b94213e723aa9457d40fc5dc3">  400</a></span><span class="preprocessor">#define STM32_RTC_PRESA_VALUE               32</span></div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#abb5ea6f9775215dc0f6c75244bbdabe2">  401</a></span><span class="preprocessor">#define STM32_RTC_PRESS_VALUE               1024</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#ab047313b94213e723aa9457d40fc5dc3">  400</a></span><span class="preprocessor">#define STM32_RTC_PRESA_VALUE               125</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#abb5ea6f9775215dc0f6c75244bbdabe2">  401</a></span><span class="preprocessor">#define STM32_RTC_PRESS_VALUE               8000</span></div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#aa9429cc1d79dd9990e7eef350d6c6852">  402</a></span><span class="preprocessor">#define STM32_RTC_CR_INIT                   0</span></div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#aa8147974425e64e44807e01638739cd6">  403</a></span><span class="preprocessor">#define STM32_RTC_TAMPCR_INIT               0</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
@@ -696,7 +696,7 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v2_80_2mcuconf__board
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a602d89a86e137af83bdeb12fdb83ab8.html">tawaki</a></li><li class="navelem"><a class="el" href="dir_dde4e65440e7233a57508cfa01e8df78.html">chibios</a></li><li class="navelem"><a class="el" href="dir_73fd8c806e6a2bef79ba3936d0df6d69.html">v2.0</a></li><li class="navelem"><a class="el" href="tawaki_2chibios_2v2_80_2mcuconf__board_8h.html">mcuconf_board.h</a></li>
-    <li class="footer">Generated on Mon Oct 12 2026 09:12:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Oct 12 2026 21:29:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

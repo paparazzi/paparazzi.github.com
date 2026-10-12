@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"fc__rotor_8h.html#afaa212af1dfb43b000d29781ea68cb15":[12,0,1,0,6,46,2,1,0],
 "fc__rotor_8h_source.html":[12,0,1,0,6,46,2,1],
 "ffconf_8h.html":[12,0,1,0,0,0,5],
 "ffconf_8h.html#a056575130662da5bc7ac26a5b1d25838":[12,0,1,0,0,0,5,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "fixedwing_2guidance_2guidance__v_8h.html#a3b016dc45683d8fd0768330dffbc0180":[12,0,1,0,3,1,0,6,12],
 "fixedwing_2guidance_2guidance__v_8h.html#a5a18835d4b08fd56ecb24ce5ed987bbd":[12,0,1,0,3,1,0,6,7],
 "fixedwing_2guidance_2guidance__v_8h.html#a70a371d9e90dc33439fd1553de50567e":[12,0,1,0,3,1,0,6,11],
-"fixedwing_2guidance_2guidance__v_8h.html#a73956b0692ee75960ba412afb497495d":[12,0,1,0,3,1,0,6,10],
-"fixedwing_2guidance_2guidance__v_8h.html#a74c820c2d993427929b3fa525fe87c88":[12,0,1,0,3,1,0,6,1]
+"fixedwing_2guidance_2guidance__v_8h.html#a73956b0692ee75960ba412afb497495d":[12,0,1,0,3,1,0,6,10]
 };

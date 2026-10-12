@@ -1,5 +1,6 @@
 var NAVTREEINDEX96 =
 {
+"invensense3__regs_8h.html#a024f4cb87b30a771b1ffc9169bdc3d2c":[12,0,1,0,7,56,89],
 "invensense3__regs_8h.html#a036e887d3bdd983690635043859710cc":[12,0,1,0,7,56,87],
 "invensense3__regs_8h.html#a03fccba1b45971e4a8ac22de7a9c1685":[12,0,1,0,7,56,142],
 "invensense3__regs_8h.html#a0773899ccd20e25444ac42bc5d13b514":[12,0,1,0,7,56,90],
@@ -248,6 +249,5 @@ var NAVTREEINDEX96 =
 "iomcu_8c.html#af8c9a1c1ba718021e4dee5895c43ca29":[12,0,1,0,6,38,5,2,5],
 "iomcu_8c.html#afb2ac51042a1e538652ef5a5819b20de":[12,0,1,0,6,38,5,6],
 "iomcu_8c.html#afdd5b2e6f4742c8119b7ab61fff92c59":[12,0,1,0,6,38,5,3,0],
-"iomcu_8c.html#structpage__GPIO":[12,0,1,0,6,38,5,5],
-"iomcu_8c.html#structpage__config":[12,0,1,0,6,38,5,1]
+"iomcu_8c.html#structpage__GPIO":[12,0,1,0,6,38,5,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX77 =
 {
+"gvf__param__traj_8c.html#a7b7abb0aebc757cc77aed0b063417e31":[12,0,1,0,6,31,3,0,3],
 "gvf__param__traj_8c.html#aa9880d414c850cc8257c052b01d29133":[12,0,1,0,6,31,3,0,1],
 "gvf__param__traj_8c.html#aa9aa4d9309789f867ce5d6347aba2e7b":[12,0,1,0,6,31,3,0,4],
 "gvf__param__traj_8c.html#ac54d6cd6c9bc74e7b271ed729afc5418":[12,0,1,0,6,31,3,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX77 =
 "hal__stm32__dma_8h.html#ad7de09dcfb19a64efc06ffbd75ce66e8":[12,0,1,0,0,0,0,8,36],
 "hal__stm32__dma_8h.html#adab05ea9473647d746e27e5846c0109f":[12,0,1,0,0,0,0,8,10],
 "hal__stm32__dma_8h.html#ae7fe744b4555b16685be693a574b8a9e":[12,0,1,0,0,0,0,8,0,5],
-"hal__stm32__dma_8h.html#afb99e25bf4d6137920caaa45a6472771":[12,0,1,0,0,0,0,8,32],
-"hal__stm32__dma_8h.html#structDMAConfig":[12,0,1,0,0,0,0,8,0]
+"hal__stm32__dma_8h.html#afb99e25bf4d6137920caaa45a6472771":[12,0,1,0,0,0,0,8,32]
 };

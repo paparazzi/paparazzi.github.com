@@ -7,6 +7,7 @@ var chibios_2mcu__periph_2sys__time__arch_8c =
     [ "sys_tick_handler", "chibios_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a", null ],
     [ "sys_time_arch_init", "chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4", null ],
     [ "sys_time_msleep", "chibios_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35", null ],
+    [ "sys_time_rtc_millisecond", "chibios_2mcu__periph_2sys__time__arch_8c.html#a6c5857792d266bf373166c408a3b86dc", null ],
     [ "sys_time_usleep", "chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83", null ],
     [ "thd_sys_tick", "chibios_2mcu__periph_2sys__time__arch_8c.html#a7173fd7c832d0c9c0d46705b12ba5895", null ],
     [ "THD_WORKING_AREA", "chibios_2mcu__periph_2sys__time__arch_8c.html#a9b1f508bb40bda0b5b7ebdcf877cb9f3", null ],

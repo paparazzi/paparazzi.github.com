@@ -1,5 +1,6 @@
 var NAVTREEINDEX78 =
 {
+"hal__stm32__dma_8h.html#structDMAConfig":[12,0,1,0,0,0,0,8,0],
 "hal__stm32__dma_8h.html#structDMADriver":[12,0,1,0,0,0,0,8,1],
 "hal__stm32__dma_8h_source.html":[12,0,1,0,0,0,0,8],
 "halconf_8h.html":[12,0,1,0,0,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX78 =
 "hmc5843_8c.html#af07ba9764727d8692eb33cd271080cdc":[12,0,1,0,7,43,5],
 "hmc5843_8c_source.html":[12,0,1,0,7,43],
 "hmc5843_8h.html":[12,0,1,0,7,44],
-"hmc5843_8h.html#a059b2d3f6a79da34e90955c1d3bf79b5":[12,0,1,0,7,44,10],
-"hmc5843_8h.html#a0bdafd91078334d9aaec3844ccc6d129":[12,0,1,0,7,44,5]
+"hmc5843_8h.html#a059b2d3f6a79da34e90955c1d3bf79b5":[12,0,1,0,7,44,10]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__openlog.html":[1,281],
+"module__openlog.html#functions__openlog":[1,281,1],
 "module__openlog.html#module_load_example__openlog":[1,281,0],
 "module__openlog.html#module_xml__openlog":[1,281,1,0],
 "module__optical_flow_hover.html":[1,105],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__servo_tester.html#module_xml__servo_tester":[1,531,2,0],
 "module__settings.html":[1,82],
 "module__settings.html#datalink_functions__settings":[1,82,2],
-"module__settings.html#functions__settings":[1,82,1],
-"module__settings.html#module_load_example__settings":[1,82,0],
-"module__settings.html#module_xml__settings":[1,82,2,0]
+"module__settings.html#functions__settings":[1,82,1]
 };
