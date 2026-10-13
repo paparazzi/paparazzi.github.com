@@ -1,5 +1,10 @@
 var NAVTREEINDEX60 =
 {
+"flight__recorder_8c.html#aae850ede9ad9c2129b5902969280c7b5":[12,0,1,0,6,42,3,3],
+"flight__recorder_8c.html#afa269b95fa96b68967ebb605f98b1d3b":[12,0,1,0,6,42,3,0],
+"flight__recorder_8c.html#afae2be5a66e3a0bef0362731325967aa":[12,0,1,0,6,42,3,2],
+"flight__recorder_8c_source.html":[12,0,1,0,6,42,3],
+"flight__recorder_8h.html":[12,0,1,0,6,42,4],
 "flight__recorder_8h.html#a7b905eed772cab440ba317b910b2a2a5":[12,0,1,0,6,42,4,2],
 "flight__recorder_8h.html#aa176b4dd4bb9a4e49c51b7a989ec3c2c":[12,0,1,0,6,42,4,0],
 "flight__recorder_8h.html#afae2be5a66e3a0bef0362731325967aa":[12,0,1,0,6,42,4,1],
@@ -139,8 +144,8 @@ var NAVTREEINDEX60 =
 "frsky__x_8h.html#structfifo__t":[12,0,1,0,6,15,10,0],
 "frsky__x_8h.html#structfrsky__x__serial__periph":[12,0,1,0,6,15,10,1],
 "frsky__x_8h_source.html":[12,0,1,0,6,15,10],
-"functions.html":[11,3,0],
 "functions.html":[11,3,0,0],
+"functions.html":[11,3,0],
 "functions_a.html":[11,3,0,1],
 "functions_b.html":[11,3,0,2],
 "functions_c.html":[11,3,0,3],
@@ -165,8 +170,8 @@ var NAVTREEINDEX60 =
 "functions_t.html":[11,3,0,20],
 "functions_u.html":[11,3,0,21],
 "functions_v.html":[11,3,0,22],
-"functions_vars.html":[11,3,2,0],
 "functions_vars.html":[11,3,2],
+"functions_vars.html":[11,3,2,0],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX60 =
 "gec_8h.html#a119c1bdda71c30f692a8bd764b622988":[12,0,1,0,6,15,1,1,1,0],
 "gec_8h.html#a17026bec7f574bca918d5f81939429bc":[12,0,1,0,6,15,1,1,20],
 "gec_8h.html#a17026bec7f574bca918d5f81939429bca0cb1b2c6a7db1f1084886c98909a3f36":[12,0,1,0,6,15,1,1,20,0],
-"gec_8h.html#a17026bec7f574bca918d5f81939429bca2276a5b1ccde8466b9071becdf91408b":[12,0,1,0,6,15,1,1,20,2],
-"gec_8h.html#a17026bec7f574bca918d5f81939429bca246e0d2e5190c3ca8ecec380199df6c5":[12,0,1,0,6,15,1,1,20,3],
-"gec_8h.html#a17026bec7f574bca918d5f81939429bca60a843bc26ee85510e68d53b85e52683":[12,0,1,0,6,15,1,1,20,4],
-"gec_8h.html#a17026bec7f574bca918d5f81939429bcaea009cc7d311ade3e8068c54e8e0eac3":[12,0,1,0,6,15,1,1,20,1],
-"gec_8h.html#a19d95f857d2875821efc8e36294017e8":[12,0,1,0,6,15,1,1,8],
-"gec_8h.html#a1b86496e957f40aeabce11b8c1f9983c":[12,0,1,0,6,15,1,1,11]
+"gec_8h.html#a17026bec7f574bca918d5f81939429bca2276a5b1ccde8466b9071becdf91408b":[12,0,1,0,6,15,1,1,20,2]
 };

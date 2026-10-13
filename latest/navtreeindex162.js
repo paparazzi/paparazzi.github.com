@@ -1,5 +1,10 @@
 var NAVTREEINDEX162 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af80e6c340ebc738f24275329c32db853":[12,0,1,0,1,16,0,1,273],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af81da62faf264fb17ffee32d730d4b9d":[12,0,1,0,1,16,0,1,198],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af9be48d9e825a860764b4a928124f046":[12,0,1,0,1,16,0,1,183],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#afb98861d06d9f4145f01c9d4d0fa09dd":[12,0,1,0,1,16,0,1,258],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56":[12,0,1,0,1,16,0,1,93],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afc0d8281959c0da081d7df2d9df16701":[12,0,1,0,1,16,0,1,301],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afd104f0cde2014ea9788f9e3f71de00a":[12,0,1,0,1,16,0,1,59],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afd42d4db3b7dfc7e12f68466ccf55f15":[12,0,1,0,1,16,0,1,138],
@@ -244,10 +249,5 @@ var NAVTREEINDEX162 =
 "onboard_modules.html#modules_category_intermcu":[1,0,23],
 "onboard_modules.html#modules_category_lidar":[1,0,24],
 "onboard_modules.html#modules_category_light":[1,0,25],
-"onboard_modules.html#modules_category_loggers":[1,0,26],
-"onboard_modules.html#modules_category_mcu_periph":[1,0,27],
-"onboard_modules.html#modules_category_meteo":[1,0,28],
-"onboard_modules.html#modules_category_misc":[1,0,43],
-"onboard_modules.html#modules_category_mission":[1,0,29],
-"onboard_modules.html#modules_category_multi":[1,0,30]
+"onboard_modules.html#modules_category_loggers":[1,0,26]
 };

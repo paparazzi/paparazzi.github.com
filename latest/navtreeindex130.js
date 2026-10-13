@@ -1,5 +1,10 @@
 var NAVTREEINDEX130 =
 {
+"module__aoa_adc.html#functions__aoa_adc":[1,395,2],
+"module__aoa_adc.html#module_load_example__aoa_adc":[1,395,0],
+"module__aoa_adc.html#module_xml__aoa_adc":[1,395,2,0],
+"module__aoa_pwm.html":[1,396],
+"module__aoa_pwm.html#configuration__aoa_pwm":[1,396,1],
 "module__aoa_pwm.html#functions__aoa_pwm":[1,396,2],
 "module__aoa_pwm.html#module_load_example__aoa_pwm":[1,396,0],
 "module__aoa_pwm.html#module_xml__aoa_pwm":[1,396,2,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX130 =
 "module__cv_blob_locator.html#functions__cv_blob_locator":[1,58,2],
 "module__cv_blob_locator.html#module_load_example__cv_blob_locator":[1,58,0],
 "module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,58,2,0],
-"module__cv_colorfilter.html":[1,59],
-"module__cv_colorfilter.html#configuration__cv_colorfilter":[1,59,1],
-"module__cv_colorfilter.html#functions__cv_colorfilter":[1,59,2],
-"module__cv_colorfilter.html#module_load_example__cv_colorfilter":[1,59,0],
-"module__cv_colorfilter.html#module_xml__cv_colorfilter":[1,59,2,0],
-"module__cv_detect_color_object.html":[1,60]
+"module__cv_colorfilter.html":[1,59]
 };

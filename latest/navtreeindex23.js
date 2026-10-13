@@ -1,5 +1,10 @@
 var NAVTREEINDEX23 =
 {
+"battery__monitor_8h.html#aa24306e1495e3832bf65c7811f2d979b":[12,0,1,0,6,1,3,0,10],
+"battery__monitor_8h.html#aa7716af3099382e658b378c62972b9b7":[12,0,1,0,6,1,3,26],
+"battery__monitor_8h.html#ab58a356c583eae3f244dea45ffd665d5":[12,0,1,0,6,1,3,25],
+"battery__monitor_8h.html#abc0f782aa705ed8224c158891d23642a":[12,0,1,0,6,1,3,32],
+"battery__monitor_8h.html#ac1324bcc8a389ea0e3d9390e118c2c4c":[12,0,1,0,6,1,3,11],
 "battery__monitor_8h.html#ac426acc1b0cad9d0d6b2c53e4ee6039d":[12,0,1,0,6,1,3,38],
 "battery__monitor_8h.html#ac87800271f93329cedce6a54d33dfaca":[12,0,1,0,6,1,3,0,3],
 "battery__monitor_8h.html#acb18980381b447eea12be3af6a1da8ef":[12,0,1,0,6,1,3,0,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX23 =
 "betafpv_2aiof7_2v2_2board_8h.html#a5211ea3808f3e5f4273cbe61713039e0":[12,0,1,0,1,3,0,0,0,23],
 "betafpv_2aiof7_2v2_2board_8h.html#a54b1b8b62ad4d56d1e2b192c04381f2f":[12,0,1,0,1,3,0,0,0,269],
 "betafpv_2aiof7_2v2_2board_8h.html#a54d1a960b26a142dba05d5cd54902c4f":[12,0,1,0,1,3,0,0,0,390],
-"betafpv_2aiof7_2v2_2board_8h.html#a54da31bd4b835e4763691709dc5a6cf2":[12,0,1,0,1,3,0,0,0,207],
-"betafpv_2aiof7_2v2_2board_8h.html#a54e67429590d7e68241f7329fea7a0cd":[12,0,1,0,1,3,0,0,0,287],
-"betafpv_2aiof7_2v2_2board_8h.html#a54f53a9492509a75ec599eee5dd7bd7a":[12,0,1,0,1,3,0,0,0,265],
-"betafpv_2aiof7_2v2_2board_8h.html#a54fc240187d9ad4ab5f7e900c049fdf7":[12,0,1,0,1,3,0,0,0,384],
-"betafpv_2aiof7_2v2_2board_8h.html#a550cc5b6fe19171e28792645acc9f7ef":[12,0,1,0,1,3,0,0,0,399],
-"betafpv_2aiof7_2v2_2board_8h.html#a5559517dc08983690d73f496c5047700":[12,0,1,0,1,3,0,0,0,251]
+"betafpv_2aiof7_2v2_2board_8h.html#a54da31bd4b835e4763691709dc5a6cf2":[12,0,1,0,1,3,0,0,0,207]
 };

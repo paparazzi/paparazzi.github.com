@@ -1,5 +1,10 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__dead__pixel__correction_8h.html":[12,0,1,0,1,2,0,0,6],
+"avi__isp__dead__pixel__correction_8h.html#a04590083d7ad8b251f83e42028f589ee":[12,0,1,0,1,2,0,0,6,7,3],
+"avi__isp__dead__pixel__correction_8h.html#a0d8ae7b8dffd868fe9907af1163daa3e":[12,0,1,0,1,2,0,0,6,19],
+"avi__isp__dead__pixel__correction_8h.html#a10ae9fc7d453b0dd525d0edf2ede7961":[12,0,1,0,1,2,0,0,6,10,1],
+"avi__isp__dead__pixel__correction_8h.html#a14f7dfe78c34ee6593f06102546289aa":[12,0,1,0,1,2,0,0,6,8,0],
 "avi__isp__dead__pixel__correction_8h.html#a1859374a9a740215e54a3cdb300e438e":[12,0,1,0,1,2,0,0,6,7,4],
 "avi__isp__dead__pixel__correction_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,6,9,0],
 "avi__isp__dead__pixel__correction_8h.html#a274eb4b8491087eb7cc9a0974114f392":[12,0,1,0,1,2,0,0,6,1,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut_8____unnamed140____":[12,0,1,0,1,2,0,0,10,9],
 "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut__regs":[12,0,1,0,1,2,0,0,10,3],
 "avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__bv__lut":[12,0,1,0,1,2,0,0,10,6],
-"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__conf":[12,0,1,0,1,2,0,0,10,0],
-"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__gu__lut":[12,0,1,0,1,2,0,0,10,4],
-"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__ry__lut":[12,0,1,0,1,2,0,0,10,2],
-"avi__isp__gamma__corrector_8h_source.html":[12,0,1,0,1,2,0,0,10],
-"avi__isp__green__imbalance_8h.html":[12,0,1,0,1,2,0,0,11],
-"avi__isp__green__imbalance_8h.html#a04ee25957b0ff59ba1ecf8cdfc9ce326":[12,0,1,0,1,2,0,0,11,0,0]
+"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__conf":[12,0,1,0,1,2,0,0,10,0]
 };

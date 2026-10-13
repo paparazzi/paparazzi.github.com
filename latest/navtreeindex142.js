@@ -1,5 +1,10 @@
 var NAVTREEINDEX142 =
 {
+"mpu9250__regs_8h.html#a9841bf1c2e613f42d2583482c23b2f74":[12,0,1,0,7,109,12],
+"mpu9250__regs_8h.html#a9cb58e6b0474117ba9d0db2ae7c39641":[12,0,1,0,7,109,4],
+"mpu9250__regs_8h.html#a9f18e0a02e754726675f271fbfd8ef0e":[12,0,1,0,7,109,23],
+"mpu9250__regs_8h.html#aa41eed1582d22780f8731373bdf4cc1b":[12,0,1,0,7,109,5],
+"mpu9250__regs_8h.html#aa6c55daba80fdcca2a808a25d4b1f21b":[12,0,1,0,7,109,62],
 "mpu9250__regs_8h.html#aad78026509c5074ebb7addd2e3e801b8":[12,0,1,0,7,109,26],
 "mpu9250__regs_8h.html#ab028ee25ac9af6e18b2e3fc4637e98b0":[12,0,1,0,7,109,18],
 "mpu9250__regs_8h.html#ab3d5e2b82cf3eb91c531045479b8f81c":[12,0,1,0,7,109,47],
@@ -62,8 +67,8 @@ var NAVTREEINDEX142 =
 "mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f":[12,0,1,0,7,111,8],
 "mpu9250__spi_8h.html#a8dc8003465b7482470f4a0cbb09162b5":[12,0,1,0,7,111,3],
 "mpu9250__spi_8h.html#aacd69bb71fd7707e60ffb0d4494cdd14":[12,0,1,0,7,111,0,7],
-"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,111,2,1],
 "mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,111,1,0],
+"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,111,2,1],
 "mpu9250__spi_8h.html#ab18fbb08c6cdf28dc9941409cc1f8ab2":[12,0,1,0,7,111,0,8],
 "mpu9250__spi_8h.html#abd46fc21482208fb51aa03d4ca966ab0":[12,0,1,0,7,111,4],
 "mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175":[12,0,1,0,7,111,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX142 =
 "msg__queue_8c.html#afe3984fe4fa160d5aa65e531e83e5b04":[12,0,1,0,6,42,0,0,2],
 "msg__queue_8c.html#structMsgPtrLen_8____unnamed299____":[12,0,1,0,6,42,0,0,1],
 "msg__queue_8c.html#unionMsgPtrLen":[12,0,1,0,6,42,0,0,0],
-"msg__queue_8c_source.html":[12,0,1,0,6,42,0,0],
-"msg__queue_8h.html":[12,0,1,0,6,42,0,1],
-"msg__queue_8h.html#a0f51e84b25a2e05a3b905dcf826c4446":[12,0,1,0,6,42,0,1,7],
-"msg__queue_8h.html#a38dd61b3d9daa051032159c2473eb2cc":[12,0,1,0,6,42,0,1,10],
-"msg__queue_8h.html#a4ced6141b6f23e910e27ac508e917227":[12,0,1,0,6,42,0,1,13],
-"msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc":[12,0,1,0,6,42,0,1,3]
+"msg__queue_8c_source.html":[12,0,1,0,6,42,0,0]
 };
