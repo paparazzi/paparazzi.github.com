@@ -1,7 +1,7 @@
 var searchData=
 [
   ['j_0',['J',['../trilateration_8c.html#a7c20f6b5c2b8c830d450944735b761b3',1,'trilateration.c']]],
-  ['jer_1',['jer',['../oneloop__andi_8h.html#a5b6a6a552c0490d0e0269f7e812e6d5a',1,'OneloopGuidanceRef']]],
+  ['jer_1',['jer',['../oneloop__nB_8h.html#a75bb52b2c6d909d00a75bfdf56417dfb',1,'OneloopGuidanceRef']]],
   ['jevois_2',['jevois',['../jevois_8c.html#a3de623487ef4ff78a085fc3acc3d5f78',1,'jevois.c']]],
   ['jevois_20id_2080_3',['JEVOIS (ID 80)',['../paparazzi_messages.html#JEVOIS',1,'']]],
   ['jevois_20module_4',['jevois module',['../module__jevois.html',1,'onboard_modules']]],
@@ -55,7 +55,7 @@ var searchData=
   ['jevois_5fvision_5fposition_52',['jevois_vision_position',['../jevois__mavlink_8c.html#a7595f5fd5ae0628b4ff7ceaf34ddf393',1,'jevois_mavlink.c']]],
   ['jevois_5fvisual_5ftarget_53',['jevois_visual_target',['../jevois__mavlink_8c.html#a86d40e844a3501b3bce67e5875a01fe9',1,'jevois_mavlink.c']]],
   ['joined_54',['joined',['../thd__test_8c.html#a946ecd7736a57660616885580a02b2ce',1,'thd_test.c']]],
-  ['joystick_55',['joystick',['../joystick_8h.html#structJoystick',1,'Joystick'],['../joystick_8c.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick:&#160;joystick.c'],['../joystick_8h.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick:&#160;joystick.c'],['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c',1,'JOYSTICK:&#160;nps_radio_control.h']]],
+  ['joystick_55',['joystick',['../joystick_8h.html#structJoystick',1,'Joystick'],['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c',1,'JOYSTICK:&#160;nps_radio_control.h'],['../joystick_8c.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick:&#160;joystick.c'],['../joystick_8h.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick:&#160;joystick.c']]],
   ['joystick_20id_2041_56',['JOYSTICK (ID 41)',['../paparazzi_messages.html#JOYSTICK',1,'']]],
   ['joystick_20module_57',['joystick module',['../module__joystick.html',1,'onboard_modules']]],
   ['joystick_20xml_20file_3a_58',['Raw joystick.xml file:',['../module__joystick.html#module_xml__joystick',1,'']]],

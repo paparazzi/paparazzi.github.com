@@ -44,7 +44,7 @@ var searchData=
   ['point2d_41',['Point2D',['../nav__survey__poly__rotorcraft_8c.html#structPoint2D',1,'']]],
   ['point3d_5ft_42',['point3d_t',['../image_8h.html#structpoint3d__t',1,'']]],
   ['point_5ft_43',['point_t',['../image_8h.html#structpoint__t',1,'']]],
-  ['poleplacement_44',['PolePlacement',['../oneloop__andi_8h.html#structPolePlacement',1,'']]],
+  ['poleplacement_44',['PolePlacement',['../oneloop__nB_8h.html#structPolePlacement',1,'']]],
   ['polesorder2vect3_45',['PolesOrder2Vect3',['../stabilization__andi_8h.html#structPolesOrder2Vect3',1,'']]],
   ['polesorder3vect3_46',['PolesOrder3Vect3',['../stabilization__andi_8h.html#structPolesOrder3Vect3',1,'']]],
   ['pose_5ft_47',['pose_t',['../pose__history_8h.html#structpose__t',1,'']]],

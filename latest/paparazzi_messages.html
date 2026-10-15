@@ -284,6 +284,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#ACTUATORS_T4_OUT">ACTUATORS_T4_OUT (ID 191)</a></li>
 <li class="level2"><a href="#EFF_MAT_STAB_THRUST">EFF_MAT_STAB_THRUST (ID 192)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
+<li class="level2"><a href="#NB_CTRL">NB_CTRL (ID 194)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
 <li class="level2"><a href="#INS">INS (ID 198)</a></li>
@@ -4104,6 +4105,33 @@ AHRS_LKF (ID 193)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mz   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="NB_CTRL"></a>
+NB_CTRL (ID 194)</h2>
+<p>One loop nB controller: thrust direction reference (inertial and body frame) and its derivatives</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nI_des   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Desired thrust direction in inertial frame (from sticks or guidance)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">nI   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Thrust direction reference in inertial frame after the reference model    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nI_d   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1st derivative of the inertial reference    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">nI_2d   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">2nd derivative of the inertial reference    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nI_3d   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">3rd derivative of the inertial reference    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">nB   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Thrust direction reference in body frame    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nB_d   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1st derivative of the body reference    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">nB_2d   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">2nd derivative of the body reference    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nB_3d   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">3rd derivative of the body reference    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mu_B   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Principal thrust axis in body frame   </td></tr>
+</table>
 <h2><a class="anchor" id="AIRSPEED_WIND_ESTIMATOR_EKF"></a>
 AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</h2>
 <table class="markdownTable">
@@ -7213,7 +7241,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 14 2026 22:17:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 15 2026 14:41:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

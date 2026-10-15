@@ -23,6 +23,8 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_module.h", "guidance__module_8h.html", null ],
     [ "guidance_oneloop.c", "guidance__oneloop_8c.html", "guidance__oneloop_8c" ],
     [ "guidance_oneloop.h", "guidance__oneloop_8h.html", "guidance__oneloop_8h" ],
+    [ "guidance_oneloop_nB.c", "guidance__oneloop__nB_8c.html", "guidance__oneloop__nB_8c" ],
+    [ "guidance_oneloop_nB.h", "guidance__oneloop__nB_8h.html", "guidance__oneloop__nB_8h" ],
     [ "guidance_pid.c", "guidance__pid_8c.html", "guidance__pid_8c" ],
     [ "guidance_pid.h", "guidance__pid_8h.html", "guidance__pid_8h" ],
     [ "guidance_plane.c", "guidance__plane_8c.html", "guidance__plane_8c" ],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['j_0',['J',['../trilateration_8c.html#a7c20f6b5c2b8c830d450944735b761b3',1,'trilateration.c']]],
-  ['jer_1',['jer',['../oneloop__andi_8h.html#a5b6a6a552c0490d0e0269f7e812e6d5a',1,'OneloopGuidanceRef']]],
+  ['jer_1',['jer',['../oneloop__nB_8h.html#a75bb52b2c6d909d00a75bfdf56417dfb',1,'OneloopGuidanceRef']]],
   ['jevois_2',['jevois',['../jevois_8c.html#a3de623487ef4ff78a085fc3acc3d5f78',1,'jevois.c']]],
   ['jevois_5fmapping_5fsetting_3',['jevois_mapping_setting',['../jevois_8h.html#a53d4fd857346115161fea92cd6517690',1,'jevois_mapping_setting:&#160;jevois.c'],['../jevois_8c.html#a53d4fd857346115161fea92cd6517690',1,'jevois_mapping_setting:&#160;jevois.c']]],
   ['jevois_5fstream_5fsetting_4',['jevois_stream_setting',['../jevois_8c.html#a02337daa2df8835d1308bdf61367e664',1,'jevois_stream_setting:&#160;jevois.c'],['../jevois_8h.html#a02337daa2df8835d1308bdf61367e664',1,'jevois_stream_setting:&#160;jevois.c']]],

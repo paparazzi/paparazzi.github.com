@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>mavlink_version&#160;:&#160;<a class="el" href="px4flow_8h.html#ac3033126ff988e765032033b4a5e705f">mavlink_heartbeat</a></li>
 <li>max&#160;:&#160;<a class="el" href="modules_2actuators_2actuators_8h.html#a9fc7f34fc87670f6bb1a7e04517878a7">act_config_t</a>, <a class="el" href="ctrl__windtunnel_8h.html#ae01065d305a106092b053080f7e6397a">min_max_ctrl_t</a>, <a class="el" href="nps__sensor__accel_8h.html#a043fd6d64ff5ebe4509e2e70c43e5a03">NpsSensorAccel</a>, <a class="el" href="nps__sensor__gyro_8h.html#ab7e92e7373b3cf0a6c858a14d09e352c">NpsSensorGyro</a>, <a class="el" href="nps__sensor__mag_8h.html#ab8f0ab3583195c0e680780deb2a2f769">NpsSensorMag</a></li>
 <li>max_accel&#160;:&#160;<a class="el" href="attitude__ref__saturate__naive_8h.html#a578456ef49cd9dc2917f8403e18ae3f4">FloatRefSat</a>, <a class="el" href="attitude__ref__saturate__naive_8h.html#afe51c837ecd079fc1351d3ea8c15865b">Int32RefSat</a></li>
-<li>max_airspeed&#160;:&#160;<a class="el" href="oneloop__andi_8h.html#aa5d2c8c6d84fcf7a5ae01d40be03114e">guidance_indi_hybrid_params</a>, <a class="el" href="rotwing__state_8h.html#a3f4b16550a1d7f68e743e11e127753ab">rotwing_state_t</a></li>
+<li>max_airspeed&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#aa5d2c8c6d84fcf7a5ae01d40be03114e">guidance_indi_hybrid_params</a>, <a class="el" href="rotwing__state_8h.html#a3f4b16550a1d7f68e743e11e127753ab">rotwing_state_t</a></li>
 <li>max_ang_momentum&#160;:&#160;<a class="el" href="nps__fdm__gazebo_8cpp.html#a72e31f68945bafa99608f9a60031f674">gazebo_actuators_t</a></li>
 <li>max_aux_channel&#160;:&#160;<a class="el" href="cc2500__settings_8h.html#acace729ffe13225077853ffd1ab4d3b7">rxConfig_s</a></li>
 <li>max_inc&#160;:&#160;<a class="el" href="delayed__first__order__lowpass__filter_8h.html#ac753192adc4c86378b001e3f6948e565">delayed_first_order_lowpass_filter_t</a></li>
@@ -144,6 +144,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>max_nb_windows&#160;:&#160;<a class="el" href="avi__isp__statistics__bayer_8h.html#a59ddcee210b0f492fa18b358342c7e5e">avi_isp_statistics_bayer_regs</a></li>
 <li>max_p&#160;:&#160;<a class="el" href="stabilization__adaptive_8c.html#a5bc4593fb09431860a23a5fce72d7691">HCtlAdaptRef</a></li>
 <li>max_p_dot&#160;:&#160;<a class="el" href="stabilization__adaptive_8c.html#a08f709fc24a097b429c037a8d32e8eb4">HCtlAdaptRef</a></li>
+<li>max_push_cmd&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#a2a6a054ce10a48f2ec1ea3b86a2a77ce">OneloopPushnB</a></li>
 <li>max_q&#160;:&#160;<a class="el" href="stabilization__adaptive_8c.html#ab681b564296b8683b4110508f528cdfa">HCtlAdaptRef</a></li>
 <li>max_q_dot&#160;:&#160;<a class="el" href="stabilization__adaptive_8c.html#aa8195cf23a9970e5d0830beb426207f1">HCtlAdaptRef</a></li>
 <li>max_r&#160;:&#160;<a class="el" href="stabilization__adaptive_8c.html#abae73f3accc69eb2eb1b267a31036e2b">HCtlAdaptRef</a></li>
@@ -153,6 +154,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>max_speed&#160;:&#160;<a class="el" href="guidance__h__ref_8h.html#afa33b0b0d89b6a8e4c72a6ebfd3e11cd">GuidanceHRef</a></li>
 <li>max_sum&#160;:&#160;<a class="el" href="pid_8h.html#af145709db265ca4601eccdc3fba01773">PID_f</a></li>
 <li>max_track_corners&#160;:&#160;<a class="el" href="opticflow__calculator_8h.html#a302a13897d69528d8fd0f36c2a192854">opticflow_t</a></li>
+<li>max_v_d&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#ac3b2cb6a5cb9f07375095f1e15aa48f2">OneloopPushnB</a></li>
 <li>max_vel&#160;:&#160;<a class="el" href="range__forcefield_8h.html#acd8295bac35b1ab129336de483f2881c">range_forcefield_param_t</a></li>
 <li>max_velocity&#160;:&#160;<a class="el" href="actuators__faulhaber_8h.html#a13925596544a8fa6f8c6ddf8e7b99bf5">faulhaber_t</a>, <a class="el" href="nav__fish_8h.html#a37f116adc4286ecd756f8d974546db75">NavFishParams</a></li>
 <li>max_y&#160;:&#160;<a class="el" href="nav__survey__hybrid_8c.html#ac56b363ec2acb0d9a879e95de20bdeb8">SurveyHybridPrivate</a></li>
@@ -167,8 +169,10 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>Md&#160;:&#160;<a class="el" href="alt__filter_8h.html#a37d24a0b0a5560e58e8234820145d5df">TypeKalman</a></li>
 <li>ME&#160;:&#160;<a class="el" href="ins__float__invariant_8h.html#a8353750e26c33b22fff1343c28172835">inv_correction_gains</a></li>
 <li>mean&#160;:&#160;<a class="el" href="cloud__sensor_8c.html#a8948cd61de1d0c6de4b0f8d2cdf216f3">Background</a></li>
-<li>meas&#160;:&#160;<a class="el" href="ahrs__float__invariant_8h.html#a25943b331121e2836b4afdbce428b942">AhrsFloatInv</a>, <a class="el" href="hmc58xx_8h.html#a73ff5bfabdded1c15414c022555e0626">Hmc58xxConfig</a>, <a class="el" href="ins__float__invariant_8h.html#aa4416ae19e36fd79e8120fbb67e7e04e">InsFloatInv</a>, <a class="el" href="sonar__bebop_8h.html#a5753be3e7c0ff71afd010ff8c0b6f8f2">SonarBebop</a>, <a class="el" href="tag__tracking_8c.html#a3005d5a49b792e6400c167f8dca520bc">tag_tracking</a></li>
+<li>meas&#160;:&#160;<a class="el" href="ahrs__float__invariant_8h.html#a25943b331121e2836b4afdbce428b942">AhrsFloatInv</a>, <a class="el" href="hmc58xx_8h.html#a73ff5bfabdded1c15414c022555e0626">Hmc58xxConfig</a>, <a class="el" href="ins__float__invariant_8h.html#aa4416ae19e36fd79e8120fbb67e7e04e">InsFloatInv</a>, <a class="el" href="oneloop__nB_8h.html#a51e35b818078c7632d6bba7e478ae8e9">LP_t</a>, <a class="el" href="sonar__bebop_8h.html#a5753be3e7c0ff71afd010ff8c0b6f8f2">SonarBebop</a>, <a class="el" href="tag__tracking_8c.html#a3005d5a49b792e6400c167f8dca520bc">tag_tracking</a></li>
 <li>meas_cov&#160;:&#160;<a class="el" href="ekf__aw__wrapper_8h.html#a818b5fc1038b046d99b30f21ee8323fa">ekfAw</a></li>
+<li>meas_filt&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#a43384df2309031c94088eb3f27405078">LP_t</a></li>
+<li>meas_prev&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#a66a0752cda9112451d5b37f897654641">LP_t</a></li>
 <li>meas_rpm&#160;:&#160;<a class="el" href="rotwing__state_8h.html#a384cb1c416a3c27fff8645b2bd4fe3c4">rotwing_state_t</a></li>
 <li>meas_rpm_time&#160;:&#160;<a class="el" href="rotwing__state_8h.html#a8926f7e4d3b6fc0a4fb7257f43297898">rotwing_state_t</a></li>
 <li>meas_skew_angle_deg&#160;:&#160;<a class="el" href="rotwing__state_8h.html#ad322dbe42bfc1a72d2c514b63425069c">rotwing_state_t</a></li>
@@ -197,7 +201,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>middle_index&#160;:&#160;<a class="el" href="bebop__ae__awb_8h.html#a6378a7a55ce941bcbc5ed222ae091d82">ae_setting_t</a></li>
 <li>midrc&#160;:&#160;<a class="el" href="cc2500__settings_8h.html#a413e18afb030caffe6cead58c8736145">rxConfig_s</a></li>
 <li>min&#160;:&#160;<a class="el" href="modules_2actuators_2actuators_8h.html#a464629beccdf759897afca500f306191">act_config_t</a>, <a class="el" href="ctrl__windtunnel_8h.html#a74e7e352da8f1263e7310d57983acad4">min_max_ctrl_t</a>, <a class="el" href="nps__sensor__accel_8h.html#a32d598f4a3855ded38582ef84937c060">NpsSensorAccel</a>, <a class="el" href="nps__sensor__gyro_8h.html#a50efda6e74898f022ddee7faa8af3914">NpsSensorGyro</a>, <a class="el" href="nps__sensor__mag_8h.html#af7dea97cbbaa9d06a4eec7daef65e26e">NpsSensorMag</a>, <a class="el" href="xsens700_8h.html#addbb9c9b5d6f1dee717340060ac7a8fc">XsensTime</a></li>
-<li>min_airspeed&#160;:&#160;<a class="el" href="oneloop__andi_8h.html#ae3095937fbec199808e1de172f6e256d">guidance_indi_hybrid_params</a>, <a class="el" href="rotwing__state_8h.html#a9c907f7a68a9f431baa97b5ec7f1206c">rotwing_state_t</a></li>
+<li>min_airspeed&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#ae3095937fbec199808e1de172f6e256d">guidance_indi_hybrid_params</a>, <a class="el" href="rotwing__state_8h.html#a9c907f7a68a9f431baa97b5ec7f1206c">rotwing_state_t</a></li>
 <li>min_cell_volt&#160;:&#160;<a class="el" href="hott__gam_8h.html#a9c19628a3f8cb36353210989d2ca6be9">HOTT_GAM_MSG</a></li>
 <li>min_cell_volt_num&#160;:&#160;<a class="el" href="hott__gam_8h.html#aa88d991678ea676294642f4d2df101cb">HOTT_GAM_MSG</a></li>
 <li>min_d2d&#160;:&#160;<a class="el" href="nav__fish_8h.html#a29fb44b005b47265d3c839dc90c96f83">NavFishParams</a></li>
@@ -229,7 +233,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>module_bypass&#160;:&#160;<a class="el" href="avi__isp__chain__bayer__inter_8h.html#affd20067f5adc139500f038669832de6">avi_isp_chain_bayer_inter_regs</a>, <a class="el" href="avi__isp__chain__yuv__inter_8h.html#a18b424de5bc967c1b29181653566b2d3">avi_isp_chain_yuv_inter_regs</a></li>
 <li>month&#160;:&#160;<a class="el" href="gps__sirf_8c.html#a4044e918bfc49999f0f7964d91c1401a">sirf_msg_41</a>, <a class="el" href="xsens700_8h.html#a929428e8300dc3a1a40679be7e38e6c4">XsensTime</a></li>
 <li>motion&#160;:&#160;<a class="el" href="vl53l5cx__api_8h.html#abce97afc43aeefa0b9c780b4ce4c41c7">VL53L5CX_ResultsData.motion_indicator</a></li>
-<li>motion_indicator&#160;:&#160;<a class="el" href="vl53l5cx__api_8h.html#aed699c4fcfc880e7107b5f8145e687e9">VL53L5CX_ResultsData</a></li>
+<li>motion_indicator&#160;:&#160;<a class="el" href="vl53l5cx__api_8h.html#ad8ce6089b1b140861e564735e02d55d5">VL53L5CX_ResultsData</a></li>
 <li>motion_quality&#160;:&#160;<a class="el" href="mateksys__3901__l0x_8h.html#a05ab3a5c259340fa0995f1f7247190a4">Mateksys3901l0X</a></li>
 <li>motion_type&#160;:&#160;<a class="el" href="tag__tracking_8h.html#aee5aa9fdf745390d124b3d4593c1e071">tag_tracking_public</a></li>
 <li>motionX&#160;:&#160;<a class="el" href="mateksys__3901__l0x_8h.html#a8a32e6da280fbff714a5f037e1a01bf0">Mateksys3901l0X</a></li>
@@ -266,6 +270,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>mtx&#160;:&#160;<a class="el" href="tlsf__malloc__arch_8c.html#abcb160ec6e17f3ece794ccafadfb50be">_tlsf_memory_heap_t</a>, <a class="el" href="amt22_8h.html#a994da5d421a607f2147d841dc6cd852b">amt22_t</a>, <a class="el" href="sim_2modules_2core_2threads__arch_8h.html#a7cc994b3677df5263d36ca0c8d072fdc">pprzBSem</a>, <a class="el" href="sim_2modules_2core_2threads__arch_8h.html#af416732838426293e131f8feff844cc7">pprzMutex</a>, <a class="el" href="slcan_8h.html#ade61a2d6f3d0ca67d129f0b1fb0e0dd3">slcan_t</a></li>
 <li>mtx_tx&#160;:&#160;<a class="el" href="gec__dl_8h.html#a81cb17db5baeeacd012a5cca7d0046e8">gec_transport</a></li>
 <li>mu&#160;:&#160;<a class="el" href="stabilization__indi__simple_8h.html#a9cd57664d6985e67d18ce07a319b903e">IndiEstimation</a></li>
+<li>mu_B&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#a38c11ff5ad357c1dcc1a8d0f312f77eb">OneloopStabilizationnBState</a></li>
+<li>mu_c&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#adaacfc528720fd84eeadc05b3bebf2a0">Oneloop_DynFilt_t</a></li>
+<li>mu_c_0&#160;:&#160;<a class="el" href="oneloop__nB_8h.html#ac93ecea462470e3cef7d6c4b8a7b0f1d">Oneloop_DynFilt_t</a></li>
 <li>mused&#160;:&#160;<a class="el" href="tlsf__malloc_8h.html#a814c9d17a956fb246f9ee15607cd237d">tlsf_stat_t</a></li>
 <li>mut&#160;:&#160;<a class="el" href="input__capture__arch_8h.html#a63e9915428e40bd593dd13ed23d701b6">TimICDriver</a></li>
 <li>mutex&#160;:&#160;<a class="el" href="linux_2mcu__periph_2i2c__arch_8c.html#af5960ca1e34f7afe332241bff1c2cb88">i2c_thread_t</a>, <a class="el" href="v4l2_8h.html#abf6507d4ce06da216ef1cde74e1cbb9f">v4l2_device</a></li>
@@ -273,31 +280,31 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>mv&#160;:&#160;<a class="el" href="ins__float__invariant_8h.html#a5071fe47a5d64b8072f5f31e1ab63f89">inv_gains</a></li>
 <li>mvz&#160;:&#160;<a class="el" href="ins__float__invariant_8h.html#a1280312e1aac6b9f6980243eca08e7cf">inv_gains</a></li>
 <li>mx&#160;:&#160;<a class="el" href="ins__float__invariant_8h.html#ad948f01912aaad5a67e05ec46be7f159">inv_gains</a>, <a class="el" href="navdata_8h.html#a1f6aee0cb6424825fa2f85d260238e80">navdata_measure_t</a></li>
-<li>mx_angular_coupling&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ab0b32d8a2d67a425c1f34140b5930c36">CycloneCoefficients.__unnamed285__</a></li>
-<li>mx_angular_drag&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aeded76dd1c9ad98805ba86dbabe7f117">CycloneCoefficients.__unnamed285__</a></li>
-<li>mx_elevon_motor_diff&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a7c617bd1d09ad49c5c60e2b169971b7a">CycloneCoefficients.__unnamed285__</a></li>
-<li>mx_elevon_speed_diff&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aeecacef017f9b02e0b34572196617d94">CycloneCoefficients.__unnamed285__</a></li>
+<li>mx_angular_coupling&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ab0b32d8a2d67a425c1f34140b5930c36">CycloneCoefficients.__unnamed286__</a></li>
+<li>mx_angular_drag&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aeded76dd1c9ad98805ba86dbabe7f117">CycloneCoefficients.__unnamed286__</a></li>
+<li>mx_elevon_motor_diff&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a7c617bd1d09ad49c5c60e2b169971b7a">CycloneCoefficients.__unnamed286__</a></li>
+<li>mx_elevon_speed_diff&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aeecacef017f9b02e0b34572196617d94">CycloneCoefficients.__unnamed286__</a></li>
 <li>my&#160;:&#160;<a class="el" href="ins__float__invariant_8h.html#af54f77151bd96f0a6473bd63d5401a7a">inv_gains</a>, <a class="el" href="navdata_8h.html#ac840d1fe77ec0562d0712e91e910460b">navdata_measure_t</a></li>
-<li>my_angular_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a32c5ca4c5d3b4eb7974ae85e18e0d6f0">CycloneCoefficients.__unnamed285__</a></li>
-<li>my_elevon_motor_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aca0e8bb29e4794b21e310869f8546cd8">CycloneCoefficients.__unnamed285__</a></li>
-<li>my_elevon_speed_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ae83893c727fc0c2deb369cd609537a5f">CycloneCoefficients.__unnamed285__</a></li>
-<li>my_motor_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ad9a8fc10510c0714fd790d7c1c070213">CycloneCoefficients.__unnamed285__</a></li>
+<li>my_angular_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a32c5ca4c5d3b4eb7974ae85e18e0d6f0">CycloneCoefficients.__unnamed286__</a></li>
+<li>my_elevon_motor_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aca0e8bb29e4794b21e310869f8546cd8">CycloneCoefficients.__unnamed286__</a></li>
+<li>my_elevon_speed_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ae83893c727fc0c2deb369cd609537a5f">CycloneCoefficients.__unnamed286__</a></li>
+<li>my_motor_sum&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ad9a8fc10510c0714fd790d7c1c070213">CycloneCoefficients.__unnamed286__</a></li>
 <li>my_private_ephemeral&#160;:&#160;<a class="el" href="gec_8h.html#a25f91fa0a5be45af7596f0b5d8307dc5">gec_sts_ctx</a></li>
 <li>my_private_key&#160;:&#160;<a class="el" href="gec_8h.html#afd0b95da892a2ce3cdc0272139373d95">gec_sts_ctx</a></li>
-<li>my_speed_forward&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ad90473dc4c4d3017bba7f1a0d2dae3c7">CycloneCoefficients.__unnamed285__</a></li>
-<li>my_speed_vertical&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ad5bc4fbebbb11d9714abcffb810cf62e">CycloneCoefficients.__unnamed285__</a></li>
+<li>my_speed_forward&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ad90473dc4c4d3017bba7f1a0d2dae3c7">CycloneCoefficients.__unnamed286__</a></li>
+<li>my_speed_vertical&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#ad5bc4fbebbb11d9714abcffb810cf62e">CycloneCoefficients.__unnamed286__</a></li>
 <li>mz&#160;:&#160;<a class="el" href="ins__float__invariant_8h.html#a303a1e0603e603e2f7b00448739fc446">inv_gains</a>, <a class="el" href="navdata_8h.html#af9ae55176b3cc4ed467cda91feed838e">navdata_measure_t</a></li>
-<li>mz_angular_coupling&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a9379a45c1aae6e01824c886e4aec7b91">CycloneCoefficients.__unnamed285__</a></li>
-<li>mz_motor_diff&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a89aed9a78ef74368f39a05f7c976a0f4">CycloneCoefficients.__unnamed285__</a></li>
-<li>mz_speed_lateral&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a51d7b802812e6cff536b306546ae6933">CycloneCoefficients.__unnamed285__</a></li>
-<li>mz_speed_roll&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aaf0068a494d2fc351598fb1dd4f78e61">CycloneCoefficients.__unnamed285__</a></li>
+<li>mz_angular_coupling&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a9379a45c1aae6e01824c886e4aec7b91">CycloneCoefficients.__unnamed286__</a></li>
+<li>mz_motor_diff&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a89aed9a78ef74368f39a05f7c976a0f4">CycloneCoefficients.__unnamed286__</a></li>
+<li>mz_speed_lateral&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#a51d7b802812e6cff536b306546ae6933">CycloneCoefficients.__unnamed286__</a></li>
+<li>mz_speed_roll&#160;:&#160;<a class="el" href="obm__cyclone_8c.html#aaf0068a494d2fc351598fb1dd4f78e61">CycloneCoefficients.__unnamed286__</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 14 2026 22:17:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 15 2026 14:41:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

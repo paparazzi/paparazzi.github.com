@@ -44,7 +44,13 @@ var searchData=
   ['guidance_5foneloop_5fh_5faccel_41',['GUIDANCE_ONELOOP_H_ACCEL',['../guidance__oneloop_8h.html#a723c9152f03486bd5c6cb376d5cb3584a32fd73cdff7480529ffd9e731e86de23',1,'guidance_oneloop.h']]],
   ['guidance_5foneloop_5fh_5fpos_42',['GUIDANCE_ONELOOP_H_POS',['../guidance__oneloop_8h.html#a723c9152f03486bd5c6cb376d5cb3584a6b766730b64adde7c09d477aa9abd39c',1,'guidance_oneloop.h']]],
   ['guidance_5foneloop_5fh_5fspeed_43',['GUIDANCE_ONELOOP_H_SPEED',['../guidance__oneloop_8h.html#a723c9152f03486bd5c6cb376d5cb3584a83ae79a9a900ae398ffa6e4519151692',1,'guidance_oneloop.h']]],
-  ['guidance_5foneloop_5fv_5faccel_44',['GUIDANCE_ONELOOP_V_ACCEL',['../guidance__oneloop_8h.html#aa07696a837c118bfb5c14948530e0674ad57a3bd31d6a464bb13d167b4b09711c',1,'guidance_oneloop.h']]],
-  ['guidance_5foneloop_5fv_5fpos_45',['GUIDANCE_ONELOOP_V_POS',['../guidance__oneloop_8h.html#aa07696a837c118bfb5c14948530e0674a1654a25c7cfeef026e22ae7020be0120',1,'guidance_oneloop.h']]],
-  ['guidance_5foneloop_5fv_5fspeed_46',['GUIDANCE_ONELOOP_V_SPEED',['../guidance__oneloop_8h.html#aa07696a837c118bfb5c14948530e0674aa44af3991154d5fd44e87e911b494bf9',1,'guidance_oneloop.h']]]
+  ['guidance_5foneloop_5fnb_5fh_5faccel_44',['GUIDANCE_ONELOOP_NB_H_ACCEL',['../guidance__oneloop__nB_8h.html#a723c9152f03486bd5c6cb376d5cb3584a63c3d7bdbe1e21802744d9f3fbd396a5',1,'guidance_oneloop_nB.h']]],
+  ['guidance_5foneloop_5fnb_5fh_5fpos_45',['GUIDANCE_ONELOOP_NB_H_POS',['../guidance__oneloop__nB_8h.html#a723c9152f03486bd5c6cb376d5cb3584ae6319cf5acc81dcdadc8f44e9c9bafb9',1,'guidance_oneloop_nB.h']]],
+  ['guidance_5foneloop_5fnb_5fh_5fspeed_46',['GUIDANCE_ONELOOP_NB_H_SPEED',['../guidance__oneloop__nB_8h.html#a723c9152f03486bd5c6cb376d5cb3584a941460724dc49486cb4a1d6742ce9faf',1,'guidance_oneloop_nB.h']]],
+  ['guidance_5foneloop_5fnb_5fv_5faccel_47',['GUIDANCE_ONELOOP_NB_V_ACCEL',['../guidance__oneloop__nB_8h.html#aa07696a837c118bfb5c14948530e0674ab45082bebbfa26de50faab74c438cc34',1,'guidance_oneloop_nB.h']]],
+  ['guidance_5foneloop_5fnb_5fv_5fpos_48',['GUIDANCE_ONELOOP_NB_V_POS',['../guidance__oneloop__nB_8h.html#aa07696a837c118bfb5c14948530e0674a85f5223bf3c8063b7e828aa79d55067a',1,'guidance_oneloop_nB.h']]],
+  ['guidance_5foneloop_5fnb_5fv_5fspeed_49',['GUIDANCE_ONELOOP_NB_V_SPEED',['../guidance__oneloop__nB_8h.html#aa07696a837c118bfb5c14948530e0674a91584d0ef95dbadcd8d3347b95dadc3c',1,'guidance_oneloop_nB.h']]],
+  ['guidance_5foneloop_5fv_5faccel_50',['GUIDANCE_ONELOOP_V_ACCEL',['../guidance__oneloop_8h.html#aa07696a837c118bfb5c14948530e0674ad57a3bd31d6a464bb13d167b4b09711c',1,'guidance_oneloop.h']]],
+  ['guidance_5foneloop_5fv_5fpos_51',['GUIDANCE_ONELOOP_V_POS',['../guidance__oneloop_8h.html#aa07696a837c118bfb5c14948530e0674a1654a25c7cfeef026e22ae7020be0120',1,'guidance_oneloop.h']]],
+  ['guidance_5foneloop_5fv_5fspeed_52',['GUIDANCE_ONELOOP_V_SPEED',['../guidance__oneloop_8h.html#aa07696a837c118bfb5c14948530e0674aa44af3991154d5fd44e87e911b494bf9',1,'guidance_oneloop.h']]]
 ];

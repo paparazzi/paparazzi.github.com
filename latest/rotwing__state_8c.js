@@ -1,5 +1,9 @@
 var rotwing__state_8c =
 [
+    [ "GUIDANCE_INDI_FWD_CLIMB_SPEED", "rotwing__state_8c.html#a71e3b14f8db69012ea206ccfef8602b5", null ],
+    [ "GUIDANCE_INDI_FWD_DESCEND_SPEED", "rotwing__state_8c.html#a49907b02d3aa2df932ba7805080b3f11", null ],
+    [ "GUIDANCE_INDI_QUAD_CLIMB_SPEED", "rotwing__state_8c.html#a5ff8d7061879dbc7b0e38259a81588dd", null ],
+    [ "GUIDANCE_INDI_QUAD_DESCEND_SPEED", "rotwing__state_8c.html#a1b6ec269ec56b394366badabe3dc28c9", null ],
     [ "ROTWING_FW_SKEW_ANGLE", "rotwing__state_8c.html#a27d1e2fe6f01c1a14181f54fe55c9544", null ],
     [ "ROTWING_FW_STALL_TIMEOUT", "rotwing__state_8c.html#a1a7b9f696d8dd4f2f8bbd13d5c365ffd", null ],
     [ "ROTWING_MIN_AIRSPEED_SLOPE_START_ANGLE", "rotwing__state_8c.html#a44d326cb1a1b01c6ea40bdbf0d1b4bc6", null ],

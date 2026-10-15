@@ -1,92 +1,94 @@
 <map id="sw/airborne/modules/nav/waypoints.h" name="sw/airborne/modules/nav/waypoints.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5664,5,5823,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5923,5,6081,45"/>
 <area shape="rect" id="Node000002" href="$guidance__plane_8c.html" title="Guidance controller for planes with PID compatible with the rotorcraft firmware no airspeed control." alt="" coords="5,196,172,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="5650,29,4684,31,3935,37,3096,49,2236,69,1419,99,1048,119,713,142,422,168,184,199,173,201,172,195,183,193,421,163,712,136,1047,113,1418,94,2235,63,3096,43,3935,31,4684,25,5650,24"/>
-<area shape="rect" id="Node000003" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="2827,101,2998,141"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="5650,32,2998,119,2998,114,5650,27"/>
-<area shape="rect" id="Node000020" href="$nav__fish_8c.html" title=" " alt="" coords="4928,203,5087,243"/>
-<area shape="poly" id="edge43_Node000001_Node000020" title=" " alt="" coords="5651,37,5489,57,5397,74,5307,96,5232,121,5159,151,5044,206,5041,201,5157,146,5230,116,5305,91,5396,69,5488,52,5650,31"/>
-<area shape="rect" id="Node000021" href="$nav__poles__rotorcraft_8c.html" title="Turn around 2 points, with possible margins Can be used in mission mode." alt="" coords="5111,203,5309,243"/>
-<area shape="poly" id="edge44_Node000001_Node000021" title=" " alt="" coords="5651,38,5534,59,5471,75,5410,96,5358,121,5310,150,5234,205,5231,201,5307,146,5356,116,5408,91,5469,70,5533,53,5650,33"/>
-<area shape="rect" id="Node000028" href="$nav__takeoff__and__landing__rotorcraft_8c.html" title=" " alt="" coords="5333,196,5495,251"/>
-<area shape="poly" id="edge45_Node000001_Node000028" title=" " alt="" coords="5651,39,5528,60,5476,76,5456,85,5443,95,5427,118,5418,144,5414,196,5409,196,5413,143,5422,116,5439,91,5453,81,5474,71,5527,55,5650,33"/>
-<area shape="rect" id="Node000031" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="5452,101,5619,141"/>
-<area shape="poly" id="edge32_Node000001_Node000031" title=" " alt="" coords="5690,53,5578,103,5576,98,5688,48"/>
-<area shape="rect" id="Node000037" href="$cam__gimbal_8c.html" title="Pan/Tilt camera gimbal control." alt="" coords="5643,101,5844,141"/>
-<area shape="poly" id="edge38_Node000001_Node000037" title=" " alt="" coords="5746,59,5746,101,5741,101,5741,59"/>
-<area shape="rect" id="Node000038" href="$cv__target__localization_8c.html" title=" " alt="" coords="5868,93,6029,148"/>
-<area shape="poly" id="edge39_Node000001_Node000038" title=" " alt="" coords="5798,49,5892,91,5890,96,5796,53"/>
-<area shape="rect" id="Node000039" href="$datalink_2missionlib_2waypoints_8c.html" title="Improvement of the missionlib implementation of the waypoint protocol, truly global waypoints are use..." alt="" coords="6053,93,6212,148"/>
-<area shape="poly" id="edge40_Node000001_Node000039" title=" " alt="" coords="5837,43,6043,91,6054,94,6052,99,6041,96,5835,48"/>
-<area shape="rect" id="Node000040" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="6236,101,6395,141"/>
-<area shape="poly" id="edge41_Node000001_Node000040" title=" " alt="" coords="5836,33,6017,55,6225,91,6255,98,6254,103,6224,96,6016,60,5836,38"/>
-<area shape="rect" id="Node000041" href="$follow_8c.html" title="Follow a certain AC ID." alt="" coords="6419,101,6577,141"/>
-<area shape="poly" id="edge42_Node000001_Node000041" title=" " alt="" coords="5837,28,6095,47,6252,66,6408,91,6439,98,6438,103,6407,96,6251,71,6094,53,5836,33"/>
-<area shape="rect" id="Node000042" href="$nav_2waypoints_8c.html" title=" " alt="" coords="6601,101,6760,141"/>
-<area shape="poly" id="edge46_Node000001_Node000042" title=" " alt="" coords="5837,25,5982,30,6171,41,6380,60,6590,91,6622,98,6621,103,6590,96,6380,66,6170,46,5982,35,5836,31"/>
-<area shape="rect" id="Node000043" href="$search__map_8c.html" title="Library for generic map to store and search from sensor data." alt="" coords="6784,101,7028,141"/>
-<area shape="poly" id="edge47_Node000001_Node000043" title=" " alt="" coords="5837,26,6011,32,6244,44,6507,63,6773,91,6819,98,6818,103,6772,96,6507,68,6244,49,6011,37,5837,31"/>
-<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="2813,127,1370,159,583,180,315,190,184,199,173,201,172,195,183,193,315,185,583,175,1370,154,2813,121"/>
-<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="196,196,363,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2813,126,1520,151,796,173,531,185,374,199,363,201,362,195,374,193,531,180,796,168,1520,146,2813,121"/>
-<area shape="rect" id="Node000005" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="387,196,553,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="2813,126,1616,153,952,174,709,186,565,199,554,201,553,195,564,193,708,181,952,169,1616,147,2813,121"/>
-<area shape="rect" id="Node000006" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="577,196,752,251"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="2814,125,2395,129,1802,140,1493,150,1202,162,952,179,764,199,753,200,752,195,763,193,952,173,1202,157,1492,145,1802,135,2395,124,2813,120"/>
-<area shape="rect" id="Node000007" href="$rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts." alt="" coords="776,196,943,251"/>
-<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="2814,125,2429,130,1892,142,1351,164,1126,180,956,199,943,201,942,196,955,193,1125,174,1351,159,1892,137,2429,125,2814,120"/>
-<area shape="rect" id="Node000008" href="$rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="967,203,1138,243"/>
-<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="2813,126,2463,132,1983,146,1502,167,1302,182,1150,199,1115,206,1114,201,1150,193,1301,176,1501,162,1982,140,2463,127,2813,121"/>
-<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html" title=" " alt="" coords="1163,196,1361,251"/>
-<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="2813,127,2088,151,1676,172,1504,185,1374,199,1362,201,1361,195,1374,193,1504,179,1675,167,2088,146,2813,122"/>
-<area shape="rect" id="Node000010" href="$stabilization__andi_8c.html" title="ANDI stabilization controller for tiltbody rotorcraft." alt="" coords="1386,196,1557,251"/>
-<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="2814,127,2181,152,1827,173,1680,185,1569,199,1558,201,1557,195,1568,193,1680,180,1826,167,2180,146,2813,122"/>
-<area shape="rect" id="Node000011" href="$rotorcraft__cam_8c.html" title="Camera control module for rotorcraft." alt="" coords="1581,203,1797,243"/>
-<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="2814,126,2627,132,2377,145,2094,166,1809,199,1768,206,1767,201,1808,193,2094,161,2376,139,2626,127,2813,121"/>
-<area shape="rect" id="Node000012" href="$control__mixing__heewing_8c.html" title=" " alt="" coords="1821,196,1980,251"/>
-<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="2814,126,2656,132,2451,144,2222,166,1993,199,1981,201,1980,196,1992,193,2221,160,2450,139,2655,127,2814,121"/>
-<area shape="rect" id="Node000013" href="$object__tracking_8c.html" title=" " alt="" coords="2005,203,2167,243"/>
-<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="2814,129,2528,151,2354,171,2180,199,2148,206,2147,201,2179,193,2353,166,2527,146,2813,124"/>
-<area shape="rect" id="Node000014" href="$dc_8c.html" title="Standard Digital Camera Control Interface." alt="" coords="2192,203,2351,243"/>
-<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="2814,134,2606,158,2484,176,2364,199,2334,206,2332,201,2363,193,2483,171,2605,153,2813,128"/>
-<area shape="rect" id="Node000015" href="$mav__exercise_8c.html" title=" " alt="" coords="2375,196,2541,251"/>
-<area shape="poly" id="edge15_Node000003_Node000015" title=" " alt="" coords="2815,143,2555,199,2542,202,2541,196,2553,193,2813,138"/>
-<area shape="rect" id="Node000016" href="$copilot__rotorcraft_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="2566,203,2769,243"/>
-<area shape="poly" id="edge16_Node000003_Node000016" title=" " alt="" coords="2855,149,2714,206,2712,201,2853,144"/>
-<area shape="rect" id="Node000017" href="$mission__rotorcraft__nav_8c.html" title="mission navigation for rotorcrafts" alt="" coords="2793,203,3033,243"/>
-<area shape="poly" id="edge17_Node000003_Node000017" title=" " alt="" coords="2915,155,2915,203,2910,203,2910,155"/>
-<area shape="rect" id="Node000018" href="$ctc__target_8c.html" title=" " alt="" coords="3057,203,3219,243"/>
-<area shape="poly" id="edge18_Node000003_Node000018" title=" " alt="" coords="2968,144,3097,201,3095,206,2966,149"/>
-<area shape="rect" id="Node000019" href="$fc__rotor_8c.html" title=" " alt="" coords="3243,203,3422,243"/>
-<area shape="poly" id="edge19_Node000003_Node000019" title=" " alt="" coords="3009,141,3232,193,3261,201,3260,206,3231,199,3008,146"/>
-<area shape="poly" id="edge20_Node000003_Node000020" title=" " alt="" coords="3012,120,3405,124,3956,135,4242,145,4510,157,4741,173,4916,193,4949,201,4948,206,4915,199,4741,179,4510,163,4242,150,3955,141,3405,129,3012,125"/>
-<area shape="poly" id="edge21_Node000003_Node000021" title=" " alt="" coords="3012,120,3437,125,4041,137,4652,159,4907,175,5100,193,5140,201,5139,206,5099,199,4906,180,4652,165,4041,143,3437,131,3012,125"/>
-<area shape="rect" id="Node000022" href="$nav__rotorcraft__base_8c.html" title=" " alt="" coords="3447,196,3605,251"/>
-<area shape="poly" id="edge22_Node000003_Node000022" title=" " alt="" coords="3012,129,3208,154,3322,172,3435,193,3447,196,3446,201,3433,199,3321,177,3208,160,3012,135"/>
-<area shape="rect" id="Node000023" href="$nav__rotorcraft__hybrid_8c.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="3629,196,3788,251"/>
-<area shape="poly" id="edge23_Node000003_Node000023" title=" " alt="" coords="3012,124,3286,146,3453,166,3618,193,3630,196,3629,201,3618,199,3452,171,3286,152,3012,130"/>
-<area shape="rect" id="Node000024" href="$nav__survey__hybrid_8c.html" title="This routine will cover the enitre area of any Polygon defined in the flightplan which is a convex po..." alt="" coords="3812,203,4000,243"/>
-<area shape="poly" id="edge24_Node000003_Node000024" title=" " alt="" coords="3012,122,3165,130,3362,143,3581,164,3801,193,3837,201,3836,206,3800,199,3580,169,3361,148,3164,135,3012,128"/>
-<area shape="rect" id="Node000025" href="$nav__survey__poly__rotorcraft_8c.html" title=" " alt="" coords="4024,196,4188,251"/>
-<area shape="poly" id="edge25_Node000003_Node000025" title=" " alt="" coords="3012,119,3199,123,3448,133,3730,156,3873,172,4013,193,4024,195,4023,201,4012,199,3872,178,3729,161,3448,139,3198,128,3012,125"/>
-<area shape="rect" id="Node000026" href="$nav__survey__rectangle__rotorcraft_8c.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="4195,299,4393,353"/>
-<area shape="poly" id="edge26_Node000003_Node000026" title=" " alt="" coords="3012,120,3303,125,3674,137,3854,146,4012,159,4132,174,4174,183,4202,194,4221,210,4242,237,4281,297,4276,300,4238,240,4217,214,4199,198,4173,188,4131,179,4011,164,3854,152,3674,142,3303,130,3012,126"/>
-<area shape="rect" id="Node000027" href="$nav__survey__rectangle__rotorcraft_8h.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="4263,196,4461,251"/>
-<area shape="poly" id="edge27_Node000003_Node000027" title=" " alt="" coords="3012,119,3233,123,3540,133,3890,155,4070,172,4245,193,4263,196,4263,202,4244,199,4069,177,3890,161,3539,138,3233,128,3012,125"/>
-<area shape="poly" id="edge29_Node000003_Node000028" title=" " alt="" coords="3012,119,3475,121,4144,130,4495,139,4824,152,5108,170,5322,193,5333,195,5333,201,5322,199,5108,175,4824,157,4494,144,4144,135,3475,126,3012,124"/>
-<area shape="rect" id="Node000029" href="$orange__avoider_8c.html" title=" " alt="" coords="4485,196,4661,251"/>
-<area shape="poly" id="edge30_Node000003_Node000029" title=" " alt="" coords="3012,121,3326,129,3748,144,4167,165,4341,178,4473,193,4485,195,4484,201,4472,199,4340,183,4166,170,3747,149,3326,135,3012,127"/>
-<area shape="rect" id="Node000030" href="$stereocam__droplet_8c.html" title=" " alt="" coords="4685,196,4903,251"/>
-<area shape="poly" id="edge31_Node000003_Node000030" title=" " alt="" coords="3012,121,3361,130,3841,144,4321,166,4521,179,4673,193,4685,195,4684,200,4672,199,4521,184,4321,171,3841,150,3361,135,3012,127"/>
-<area shape="poly" id="edge28_Node000027_Node000026" title=" " alt="" coords="4339,264,4314,300,4310,297,4334,261"/>
-<area shape="rect" id="Node000032" href="$rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="5519,203,5685,243"/>
-<area shape="poly" id="edge33_Node000031_Node000032" title=" " alt="" coords="5558,151,5592,202,5587,205,5553,154"/>
-<area shape="rect" id="Node000033" href="$rover__obstacles_8c.html" title="functions to create a grid map" alt="" coords="5709,196,5876,251"/>
-<area shape="poly" id="edge34_Node000031_Node000033" title=" " alt="" coords="5597,143,5727,193,5725,198,5595,148"/>
-<area shape="rect" id="Node000034" href="$mission__rover__nav_8c.html" title="mission navigation for rovers" alt="" coords="5900,203,6115,243"/>
-<area shape="poly" id="edge35_Node000031_Node000034" title=" " alt="" coords="5615,141,5632,145,5760,170,5889,193,5924,201,5923,206,5888,199,5759,176,5631,151,5614,147"/>
-<area shape="rect" id="Node000035" href="$nav__rover__base_8h.html" title=" " alt="" coords="6139,203,6308,243"/>
-<area shape="poly" id="edge36_Node000031_Node000035" title=" " alt="" coords="5612,141,5632,145,5770,164,5879,169,5989,175,6128,193,6161,201,6160,206,6127,199,5988,180,5879,175,5770,169,5631,151,5611,147"/>
-<area shape="rect" id="Node000036" href="$nav__rover__base_8c.html" title=" " alt="" coords="6139,306,6307,346"/>
-<area shape="poly" id="edge37_Node000035_Node000036" title=" " alt="" coords="6226,257,6226,306,6221,306,6221,257"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="5909,29,4904,30,4120,35,3241,46,2338,66,1481,97,1092,117,740,140,435,167,185,199,173,201,172,196,184,193,434,162,740,135,1092,111,1481,92,2338,61,3241,41,4120,29,4904,24,5909,24"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="2978,101,3149,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="5909,32,3149,119,3149,114,5909,27"/>
+<area shape="rect" id="Node000021" href="$nav__fish_8c.html" title=" " alt="" coords="5187,203,5345,243"/>
+<area shape="poly" id="edge44_Node000001_Node000021" title=" " alt="" coords="5909,37,5747,57,5655,74,5565,96,5490,121,5417,151,5302,206,5300,201,5415,146,5488,116,5564,91,5654,69,5746,52,5909,31"/>
+<area shape="rect" id="Node000022" href="$nav__poles__rotorcraft_8c.html" title="Turn around 2 points, with possible margins Can be used in mission mode." alt="" coords="5369,203,5568,243"/>
+<area shape="poly" id="edge45_Node000001_Node000022" title=" " alt="" coords="5910,38,5792,59,5729,75,5668,96,5617,121,5568,150,5493,205,5490,201,5565,146,5614,116,5666,91,5728,70,5791,53,5909,33"/>
+<area shape="rect" id="Node000029" href="$nav__takeoff__and__landing__rotorcraft_8c.html" title=" " alt="" coords="5592,196,5753,251"/>
+<area shape="poly" id="edge46_Node000001_Node000029" title=" " alt="" coords="5910,39,5787,60,5734,76,5715,85,5701,95,5686,118,5677,144,5673,196,5668,196,5672,143,5681,116,5697,91,5712,81,5732,71,5785,55,5909,33"/>
+<area shape="rect" id="Node000032" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="5711,101,5877,141"/>
+<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="5949,53,5837,103,5835,98,5946,48"/>
+<area shape="rect" id="Node000038" href="$cam__gimbal_8c.html" title="Pan/Tilt camera gimbal control." alt="" coords="5901,101,6103,141"/>
+<area shape="poly" id="edge39_Node000001_Node000038" title=" " alt="" coords="6005,59,6005,101,5999,101,5999,59"/>
+<area shape="rect" id="Node000039" href="$cv__target__localization_8c.html" title=" " alt="" coords="6127,93,6288,148"/>
+<area shape="poly" id="edge40_Node000001_Node000039" title=" " alt="" coords="6057,49,6151,91,6148,96,6055,53"/>
+<area shape="rect" id="Node000040" href="$datalink_2missionlib_2waypoints_8c.html" title="Improvement of the missionlib implementation of the waypoint protocol, truly global waypoints are use..." alt="" coords="6312,93,6471,148"/>
+<area shape="poly" id="edge41_Node000001_Node000040" title=" " alt="" coords="6095,43,6301,91,6312,94,6311,99,6300,96,6094,48"/>
+<area shape="rect" id="Node000041" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="6495,101,6653,141"/>
+<area shape="poly" id="edge42_Node000001_Node000041" title=" " alt="" coords="6095,33,6276,55,6484,91,6514,98,6513,103,6483,96,6275,60,6094,38"/>
+<area shape="rect" id="Node000042" href="$follow_8c.html" title="Follow a certain AC ID." alt="" coords="6677,101,6836,141"/>
+<area shape="poly" id="edge43_Node000001_Node000042" title=" " alt="" coords="6095,28,6354,47,6510,66,6667,91,6698,98,6696,103,6665,96,6510,71,6353,53,6095,33"/>
+<area shape="rect" id="Node000043" href="$nav_2waypoints_8c.html" title=" " alt="" coords="6860,101,7019,141"/>
+<area shape="poly" id="edge47_Node000001_Node000043" title=" " alt="" coords="6095,25,6241,30,6429,41,6639,60,6849,91,6881,98,6880,103,6848,96,6638,66,6429,46,6241,35,6095,31"/>
+<area shape="rect" id="Node000044" href="$search__map_8c.html" title="Library for generic map to store and search from sensor data." alt="" coords="7043,101,7287,141"/>
+<area shape="poly" id="edge48_Node000001_Node000044" title=" " alt="" coords="6096,26,6270,32,6503,44,6766,63,7032,91,7078,98,7077,103,7031,96,6766,68,6503,49,6270,37,6095,31"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="2964,127,1443,158,609,180,324,190,185,199,173,201,172,195,184,193,324,185,609,175,1443,153,2964,121"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="440,196,607,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2964,126,1718,152,1023,174,769,186,618,199,607,201,606,195,618,193,768,180,1023,168,1718,147,2964,121"/>
+<area shape="rect" id="Node000005" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="631,196,797,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="2965,127,1815,153,1179,175,946,187,809,199,798,201,797,195,808,193,946,181,1179,169,1814,148,2964,121"/>
+<area shape="rect" id="Node000006" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="821,196,996,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="2964,125,2561,130,1996,142,1425,164,1187,179,1008,199,997,201,996,195,1007,193,1187,174,1425,158,1996,136,2561,125,2964,120"/>
+<area shape="rect" id="Node000007" href="$rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts." alt="" coords="1020,196,1187,251"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="2964,126,2596,131,2086,144,1574,165,1361,180,1200,199,1187,201,1186,196,1199,193,1360,175,1573,160,2086,138,2596,126,2964,120"/>
+<area shape="rect" id="Node000008" href="$rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="1211,203,1382,243"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="2964,126,2631,133,2178,147,1726,169,1538,182,1396,199,1360,206,1359,201,1395,193,1537,177,1725,163,2178,142,2631,128,2964,121"/>
+<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html" title=" " alt="" coords="1407,196,1605,251"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="2964,124,2725,125,2391,134,2007,157,1811,175,1618,199,1606,201,1605,195,1618,193,1810,170,2007,152,2391,129,2725,120,2964,118"/>
+<area shape="rect" id="Node000010" href="$oneloop__nB_8c.html" title=" " alt="" coords="1629,203,1863,243"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="2964,126,2765,132,2494,144,2186,166,1876,199,1831,206,1830,201,1875,193,2186,160,2494,139,2764,127,2964,121"/>
+<area shape="rect" id="Node000011" href="$stabilization__andi_8c.html" title="ANDI stabilization controller for tiltbody rotorcraft." alt="" coords="1887,196,2058,251"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="2964,126,2794,131,2571,143,2321,165,2194,180,2070,199,2059,201,2058,196,2070,193,2194,175,2321,159,2571,138,2794,126,2964,121"/>
+<area shape="rect" id="Node000012" href="$rotorcraft__cam_8c.html" title="Camera control module for rotorcraft." alt="" coords="2082,203,2298,243"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="2964,131,2671,155,2492,174,2312,199,2272,206,2271,201,2311,193,2491,169,2671,150,2964,126"/>
+<area shape="rect" id="Node000013" href="$control__mixing__heewing_8c.html" title=" " alt="" coords="2323,196,2481,251"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="2965,133,2748,157,2621,176,2495,199,2482,201,2481,196,2493,193,2620,171,2747,152,2964,128"/>
+<area shape="rect" id="Node000014" href="$object__tracking_8c.html" title=" " alt="" coords="2506,203,2669,243"/>
+<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="2965,142,2830,167,2683,199,2654,206,2652,201,2681,193,2829,162,2964,136"/>
+<area shape="rect" id="Node000015" href="$dc_8c.html" title="Standard Digital Camera Control Interface." alt="" coords="2693,203,2852,243"/>
+<area shape="poly" id="edge15_Node000003_Node000015" title=" " alt="" coords="2997,148,2828,206,2826,201,2996,143"/>
+<area shape="rect" id="Node000016" href="$mav__exercise_8c.html" title=" " alt="" coords="2876,196,3043,251"/>
+<area shape="poly" id="edge16_Node000003_Node000016" title=" " alt="" coords="3036,152,2989,198,2985,194,3032,148"/>
+<area shape="rect" id="Node000017" href="$copilot__rotorcraft_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="3067,203,3270,243"/>
+<area shape="poly" id="edge17_Node000003_Node000017" title=" " alt="" coords="3095,148,3151,201,3147,205,3091,152"/>
+<area shape="rect" id="Node000018" href="$mission__rotorcraft__nav_8c.html" title="mission navigation for rotorcrafts" alt="" coords="3294,203,3534,243"/>
+<area shape="poly" id="edge18_Node000003_Node000018" title=" " alt="" coords="3142,142,3349,201,3347,206,3141,147"/>
+<area shape="rect" id="Node000019" href="$ctc__target_8c.html" title=" " alt="" coords="3558,203,3721,243"/>
+<area shape="poly" id="edge19_Node000003_Node000019" title=" " alt="" coords="3163,131,3342,156,3547,193,3576,201,3575,206,3545,199,3341,161,3162,136"/>
+<area shape="rect" id="Node000020" href="$fc__rotor_8c.html" title=" " alt="" coords="3745,203,3923,243"/>
+<area shape="poly" id="edge20_Node000003_Node000020" title=" " alt="" coords="3163,126,3422,150,3578,169,3733,193,3767,201,3766,206,3732,199,3577,174,3421,155,3162,131"/>
+<area shape="poly" id="edge21_Node000003_Node000021" title=" " alt="" coords="3163,120,3574,123,4156,134,4460,143,4744,156,4989,172,5174,193,5208,201,5207,206,5174,199,4989,178,4744,161,4460,149,4156,139,3574,129,3163,125"/>
+<area shape="poly" id="edge22_Node000003_Node000022" title=" " alt="" coords="3163,120,3606,124,4241,136,4574,146,4886,158,5155,174,5358,193,5399,201,5398,206,5358,199,5155,179,4886,163,4573,151,4241,141,3606,130,3163,125"/>
+<area shape="rect" id="Node000023" href="$nav__rotorcraft__base_8c.html" title=" " alt="" coords="3948,196,4107,251"/>
+<area shape="poly" id="edge23_Node000003_Node000023" title=" " alt="" coords="3163,122,3313,128,3506,140,3721,162,3936,193,3948,196,3947,201,3935,199,3720,167,3506,146,3313,133,3163,127"/>
+<area shape="rect" id="Node000024" href="$nav__rotorcraft__hybrid_8c.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="4131,196,4289,251"/>
+<area shape="poly" id="edge24_Node000003_Node000024" title=" " alt="" coords="3163,119,3343,123,3581,134,3850,156,3986,173,4120,193,4131,196,4130,201,4119,199,3986,178,3849,161,3581,139,3342,128,3163,125"/>
+<area shape="rect" id="Node000025" href="$nav__survey__hybrid_8c.html" title="This routine will cover the enitre area of any Polygon defined in the flightplan which is a convex po..." alt="" coords="4313,203,4501,243"/>
+<area shape="poly" id="edge25_Node000003_Node000025" title=" " alt="" coords="3162,119,3370,122,3654,133,3976,155,4141,172,4302,193,4340,201,4339,206,4302,199,4141,177,3976,160,3653,138,3370,127,3162,124"/>
+<area shape="rect" id="Node000026" href="$nav__survey__poly__rotorcraft_8c.html" title=" " alt="" coords="4525,196,4689,251"/>
+<area shape="poly" id="edge26_Node000003_Node000026" title=" " alt="" coords="3163,122,3456,130,3847,144,4233,165,4393,178,4514,193,4526,195,4525,201,4514,199,4392,184,4232,170,3846,149,3456,135,3162,127"/>
+<area shape="rect" id="Node000027" href="$nav__survey__rectangle__rotorcraft_8c.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="4782,299,4979,353"/>
+<area shape="poly" id="edge27_Node000003_Node000027" title=" " alt="" coords="3163,120,3588,123,4161,133,4439,142,4676,155,4846,172,4898,182,4925,194,4934,206,4937,220,4934,248,4921,276,4905,300,4901,297,4917,273,4929,246,4932,220,4929,208,4922,198,4897,187,4845,177,4675,160,4438,148,4161,138,3588,128,3163,125"/>
+<area shape="rect" id="Node000028" href="$nav__survey__rectangle__rotorcraft_8h.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="4714,196,4911,251"/>
+<area shape="poly" id="edge28_Node000003_Node000028" title=" " alt="" coords="3163,121,3491,130,3935,144,4378,165,4563,179,4702,193,4714,195,4713,200,4702,199,4562,184,4378,171,3935,150,3491,135,3163,127"/>
+<area shape="poly" id="edge30_Node000003_Node000029" title=" " alt="" coords="3162,119,3644,120,4344,128,4712,137,5058,151,5356,169,5479,180,5581,193,5592,195,5591,201,5580,199,5479,186,5356,174,5058,156,4712,143,4344,134,3644,125,3162,124"/>
+<area shape="rect" id="Node000030" href="$orange__avoider_8c.html" title=" " alt="" coords="4986,196,5162,251"/>
+<area shape="poly" id="edge31_Node000003_Node000030" title=" " alt="" coords="3162,121,3538,127,4059,140,4584,162,4802,176,4968,193,4986,196,4985,202,4967,199,4802,182,4584,167,4059,145,3538,132,3162,126"/>
+<area shape="rect" id="Node000031" href="$stereocam__droplet_8c.html" title=" " alt="" coords="197,196,415,251"/>
+<area shape="poly" id="edge32_Node000003_Node000031" title=" " alt="" coords="2964,126,1623,154,868,176,591,187,428,199,416,200,415,195,427,193,591,182,868,170,1623,149,2964,121"/>
+<area shape="poly" id="edge29_Node000028_Node000027" title=" " alt="" coords="4840,261,4865,297,4861,300,4836,264"/>
+<area shape="rect" id="Node000033" href="$rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="5971,203,6137,243"/>
+<area shape="poly" id="edge34_Node000032_Node000033" title=" " alt="" coords="5856,143,6006,201,6004,206,5854,148"/>
+<area shape="rect" id="Node000034" href="$rover__obstacles_8c.html" title="functions to create a grid map" alt="" coords="6161,196,6328,251"/>
+<area shape="poly" id="edge35_Node000032_Node000034" title=" " alt="" coords="5874,141,5891,145,6021,169,6151,193,6162,196,6161,201,6149,199,6020,175,5889,151,5873,147"/>
+<area shape="rect" id="Node000035" href="$mission__rover__nav_8c.html" title="mission navigation for rovers" alt="" coords="6352,203,6567,243"/>
+<area shape="poly" id="edge36_Node000032_Node000035" title=" " alt="" coords="5871,141,5890,145,6016,164,6115,171,6214,177,6341,193,6380,201,6379,206,6340,199,6214,183,6115,176,6016,169,5890,151,5870,147"/>
+<area shape="rect" id="Node000036" href="$nav__rover__base_8h.html" title=" " alt="" coords="5777,203,5947,243"/>
+<area shape="poly" id="edge37_Node000032_Node000036" title=" " alt="" coords="5817,151,5851,202,5847,205,5812,154"/>
+<area shape="rect" id="Node000037" href="$nav__rover__base_8c.html" title=" " alt="" coords="5778,306,5946,346"/>
+<area shape="poly" id="edge38_Node000036_Node000037" title=" " alt="" coords="5865,257,5865,306,5859,306,5859,257"/>
 </map>

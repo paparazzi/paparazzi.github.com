@@ -57,7 +57,7 @@ var searchData=
   ['wing_5fpos_5flock_5fmin_5fthresh_54',['WING_POS_LOCK_MIN_THRESH',['../glide__wing__lock_8c.html#a14bf7a1cf2995c9a0c27fbff4fa628e2',1,'glide_wing_lock.c']]],
   ['wing_5fpos_5flock_5fswitch_55',['WING_POS_LOCK_SWITCH',['../glide__wing__lock_8c.html#ad35711a0d70379899d223cc341c59ca3',1,'glide_wing_lock.c']]],
   ['wing_5fpos_5fnominal_5fthrust_56',['WING_POS_NOMINAL_THRUST',['../glide__wing__lock_8c.html#aad3170b4005943ff924e12ac87530c4f',1,'glide_wing_lock.c']]],
-  ['wing_5frotation_5fcan_5frotwing_5fid_57',['wing_rotation_can_rotwing_id',['../eff__scheduling__rotwing__V2_8c.html#a6848fdace4808fc1675940f2eba48a8f',1,'WING_ROTATION_CAN_ROTWING_ID:&#160;eff_scheduling_rotwing_V2.c'],['../eff__scheduling__rotwing_8c.html#a6848fdace4808fc1675940f2eba48a8f',1,'WING_ROTATION_CAN_ROTWING_ID:&#160;eff_scheduling_rotwing.c']]],
+  ['wing_5frotation_5fcan_5frotwing_5fid_57',['wing_rotation_can_rotwing_id',['../eff__scheduling__rotwing_8c.html#a6848fdace4808fc1675940f2eba48a8f',1,'WING_ROTATION_CAN_ROTWING_ID:&#160;eff_scheduling_rotwing.c'],['../eff__scheduling__rotwing__V2_8c.html#a6848fdace4808fc1675940f2eba48a8f',1,'WING_ROTATION_CAN_ROTWING_ID:&#160;eff_scheduling_rotwing_V2.c'],['../eff__scheduling__rotwing__nB_8c.html#a6848fdace4808fc1675940f2eba48a8f',1,'WING_ROTATION_CAN_ROTWING_ID:&#160;eff_scheduling_rotwing_nB.c']]],
   ['wls_5fn_5fu_5fmax_58',['WLS_N_U_MAX',['../wls__alloc_8h.html#a86666cc730fa7dee060fa32c26ed5fec',1,'wls_alloc.h']]],
   ['wls_5fn_5fv_5fmax_59',['WLS_N_V_MAX',['../wls__alloc_8h.html#a48fcef69aeb52546604a157693864d33',1,'wls_alloc.h']]],
   ['wls_5fverbose_60',['WLS_VERBOSE',['../wls__alloc_8c.html#a29c662bf90acd6a86c4c37c670018e2f',1,'wls_alloc.c']]],

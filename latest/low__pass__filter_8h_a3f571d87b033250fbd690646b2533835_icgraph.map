@@ -1,107 +1,111 @@
 <map id="update_second_order_low_pass" name="update_second_order_low_pass">
-<area shape="rect" id="Node000001" title="Update second order low pass filter state with a new value." alt="" coords="904,1456,1065,1496"/>
-<area shape="rect" id="Node000002" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="700,700,851,740"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="972,1443,780,741,785,740,977,1442"/>
-<area shape="rect" id="Node000056" href="$low__pass__filter_8h.html#ac6aad62d3f90b904b5a6feccc6460d1d" title="Update fourth order Butterworth low pass filter state with a new value." alt="" coords="700,1456,851,1496"/>
-<area shape="poly" id="edge44_Node000001_Node000056" title=" " alt="" coords="890,1479,851,1479,851,1473,890,1473"/>
-<area shape="rect" id="Node000064" href="$complementary__filter_8h.html#afb11b1d8271ed63bcb3dcb335885f71c" title="Update the second order complementary filter with new input values." alt="" coords="695,1584,856,1624"/>
-<area shape="poly" id="edge53_Node000001_Node000064" title=" " alt="" coords="941,1505,810,1586,808,1582,938,1501"/>
-<area shape="rect" id="Node000003" href="$adaptive__notch__filter_8h.html#a3ad0de765c2e3fc304911f8297ad9f21" title="Update a second order adaptive notch filter." alt="" coords="471,340,630,380"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="768,687,757,625,735,546,719,505,699,465,674,427,645,394,629,382,632,378,648,390,678,424,703,462,724,503,740,544,762,624,773,686"/>
-<area shape="rect" id="Node000004" href="$airspeed__ets_8c.html#a7f798514c3a1c93dcadd33c6ca0d9c5c" title=" " alt="" coords="458,290,643,315"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="771,686,764,613,745,516,729,466,707,416,680,370,645,330,627,318,630,313,648,326,684,367,712,414,734,464,750,515,769,612,776,686"/>
-<area shape="rect" id="Node000006" href="$airspeed__uavcan_8c.html#a0148a8aa0bf9dfd7f55e8fe27ea74347" title=" " alt="" coords="473,405,628,430"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="766,687,752,634,729,568,694,501,671,471,645,445,625,432,627,428,648,441,675,468,699,498,734,566,758,632,771,686"/>
-<area shape="rect" id="Node000008" href="$aoa__t4_8c.html#a0981b55909f364cc6d7aa0c246c3f6e1" title=" " alt="" coords="491,519,610,545"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="754,690,709,627,679,594,645,566,605,547,608,542,648,562,683,591,713,624,758,687"/>
-<area shape="rect" id="Node000009" href="$eff__scheduling__rotwing__V2_8c.html#a8beaabd2283365e94e7c5c9c0e05489f" title=" " alt="" coords="465,455,637,495"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="760,688,743,647,718,599,686,550,645,509,627,497,629,493,648,505,690,547,723,596,748,645,765,686"/>
-<area shape="rect" id="Node000011" href="$ekf__aw__wrapper_8c.html#a4409a4d1d990ac89d4adfa292e0f1682" title=" " alt="" coords="466,621,635,646"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="724,696,646,661,606,649,607,644,648,656,726,691"/>
-<area shape="rect" id="Node000012" href="$stabilization__indi__simple_8c.html#ac0d13e690fd500a3c737add9bf8a8574" title="Update butterworth filter for p, q and r of a FloatRates struct." alt="" coords="511,735,591,761"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="686,734,591,746,591,740,686,728"/>
-<area shape="rect" id="Node000016" href="$stabilization__indi_8c.html#a8415032ccb0b6ba9c6ae11c74c0dfc15" title=" " alt="" coords="505,1001,597,1026"/>
-<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="770,754,757,806,733,871,698,936,675,966,648,991,624,1005,598,1013,596,1007,622,1000,645,987,671,962,693,933,728,868,752,805,765,753"/>
-<area shape="rect" id="Node000017" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="245,944,378,984"/>
-<area shape="poly" id="edge39_Node000002_Node000017" title=" " alt="" coords="717,748,647,775,593,788,548,795,506,804,456,826,417,854,381,886,330,945,326,942,378,882,413,850,453,822,504,799,548,789,592,783,646,769,715,743"/>
-<area shape="rect" id="Node000021" href="$approach__moving__target_8c.html#a1f8643bb0cf39eb19efba54eef8148a7" title="Generates a velocity reference from a diagonal approach path." alt="" coords="455,837,647,862"/>
-<area shape="poly" id="edge19_Node000002_Node000021" title=" " alt="" coords="744,751,700,786,648,820,600,839,598,834,645,815,697,782,740,747"/>
-<area shape="rect" id="Node000022" href="$ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d" title="Filter the vertical acceleration with a low cutoff frequency." alt="" coords="475,887,627,927"/>
-<area shape="poly" id="edge20_Node000002_Node000022" title=" " alt="" coords="758,753,713,816,683,848,648,877,627,889,624,884,645,872,679,845,709,812,753,750"/>
-<area shape="rect" id="Node000023" href="$guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="458,1115,643,1155"/>
-<area shape="poly" id="edge21_Node000002_Node000023" title=" " alt="" coords="775,754,767,826,747,920,731,969,709,1018,682,1064,649,1105,633,1117,630,1112,645,1101,678,1061,705,1016,726,967,742,918,762,825,770,754"/>
-<area shape="rect" id="Node000026" href="$guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="219,592,404,632"/>
-<area shape="poly" id="edge23_Node000002_Node000026" title=" " alt="" coords="748,691,704,647,676,626,646,610,585,595,522,589,460,590,404,596,404,591,460,585,522,583,586,589,648,606,679,621,708,642,752,687"/>
-<area shape="rect" id="Node000029" href="$guidance__indi__hybrid__quadplane_8c.html#a1736298c0e0c9e6c9db4ee211cd11b9a" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="457,1051,644,1091"/>
-<area shape="poly" id="edge25_Node000002_Node000029" title=" " alt="" coords="773,754,761,815,739,891,722,932,702,971,678,1008,648,1041,632,1053,629,1048,645,1037,673,1005,698,968,717,930,734,890,756,814,767,753"/>
-<area shape="rect" id="Node000030" href="$imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="480,1179,621,1205"/>
-<area shape="poly" id="edge26_Node000002_Node000030" title=" " alt="" coords="778,754,774,837,768,891,757,949,741,1008,719,1066,688,1121,648,1169,623,1185,620,1180,645,1165,684,1118,714,1064,736,1006,752,948,763,890,769,837,772,754"/>
-<area shape="rect" id="Node000032" href="$imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="483,1229,619,1254"/>
-<area shape="poly" id="edge28_Node000002_Node000032" title=" " alt="" coords="772,754,757,860,731,999,714,1069,695,1132,673,1184,648,1219,620,1236,618,1232,645,1215,668,1181,690,1130,709,1067,726,998,752,859,767,753"/>
-<area shape="rect" id="Node000033" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="489,951,612,977"/>
-<area shape="poly" id="edge30_Node000002_Node000033" title=" " alt="" coords="766,754,750,797,725,848,691,898,648,941,614,958,611,953,645,936,687,895,720,845,745,795,761,753"/>
-<area shape="rect" id="Node000034" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="479,1278,623,1303"/>
-<area shape="poly" id="edge32_Node000002_Node000034" title=" " alt="" coords="773,754,759,870,734,1023,718,1101,698,1171,675,1229,649,1269,624,1284,621,1280,645,1265,670,1227,693,1170,712,1100,729,1022,754,869,768,754"/>
-<area shape="rect" id="Node000035" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="459,1328,642,1368"/>
-<area shape="poly" id="edge33_Node000002_Node000035" title=" " alt="" coords="774,754,761,877,736,1046,719,1131,699,1209,676,1273,649,1318,635,1330,631,1326,645,1314,671,1271,694,1207,714,1130,731,1045,755,877,768,753"/>
-<area shape="rect" id="Node000049" href="$airspeed__consistency_8c.html#a553ca0d1e551365cab0a32ef4aab2265" title=" " alt="" coords="497,13,604,38"/>
-<area shape="poly" id="edge35_Node000002_Node000049" title=" " alt="" coords="770,687,760,549,737,358,721,261,700,172,675,100,660,72,645,51,626,38,603,30,605,25,628,33,649,47,665,69,680,98,705,171,726,260,743,357,765,548,775,686"/>
-<area shape="rect" id="Node000051" href="$airspeed__sdp3x_8c.html#ad9a54cedd689655b7da28d76dbf60ac5" title=" " alt="" coords="498,62,603,87"/>
-<area shape="poly" id="edge37_Node000002_Node000051" title=" " alt="" coords="769,686,757,557,734,381,717,292,697,211,673,145,659,120,645,101,626,87,603,80,604,75,628,82,649,97,664,117,678,143,702,209,723,291,739,380,763,557,774,686"/>
-<area shape="rect" id="Node000052" href="$sonar__adc_8c.html#acf28f34f078bd10e1abce5e51d9c5abf" title="Reading Read ADC value to update sonar measurement." alt="" coords="477,111,624,137"/>
-<area shape="poly" id="edge38_Node000002_Node000052" title=" " alt="" coords="768,687,755,568,731,407,714,326,694,252,671,192,645,151,623,136,626,132,649,147,676,189,699,250,719,324,736,406,760,567,774,686"/>
-<area shape="rect" id="Node000053" href="$low__pass__filter__types_8h.html#a852c9461c391caa4bc1a8c8c49ba5fc8" title="Update an array of Butterworth low&#45;pass filters with new input data." alt="" coords="475,161,626,201"/>
-<area shape="poly" id="edge40_Node000002_Node000053" title=" " alt="" coords="767,686,751,579,725,438,708,368,689,303,668,251,645,215,625,200,628,196,649,212,672,248,694,302,713,366,730,437,757,579,772,686"/>
-<area shape="rect" id="Node000054" href="$low__pass__filter__types_8h.html#a0ce3eaccce14147c012e1d6996fcd823" title="Update 3D vector Butterworth filters with new rate input data." alt="" coords="475,225,626,265"/>
-<area shape="poly" id="edge41_Node000002_Node000054" title=" " alt="" coords="772,686,767,604,749,495,733,437,711,380,682,327,645,279,624,264,628,260,649,275,687,324,716,378,739,436,755,494,772,604,777,686"/>
-<area shape="rect" id="Node000055" href="$low__pass__filter__types_8h.html#ab8892829e7b89a612395bd63de395cda" title="Update 3D vector Butterworth filters with new input data." alt="" coords="475,671,626,711"/>
-<area shape="poly" id="edge42_Node000002_Node000055" title=" " alt="" coords="686,711,626,703,627,698,686,706"/>
-<area shape="rect" id="Node000005" href="$airspeed__ets_8h.html#a86e9e6b2216722814b35f68b3d00dd66" title=" " alt="" coords="243,290,379,315"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="444,305,379,305,379,300,444,300"/>
-<area shape="rect" id="Node000007" href="$airspeed__uavcan_8c.html#add8fef6742f9898bfb3c6ea203df890f" title=" " alt="" coords="231,405,391,430"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="459,420,392,420,392,415,459,415"/>
-<area shape="rect" id="Node000010" href="$eff__scheduling__rotwing__V2_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="225,455,397,495"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="451,477,398,477,398,472,451,472"/>
-<area shape="rect" id="Node000013" href="$stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca" title="This is a Least Mean Squares adaptive filter It estimates the actuator effectiveness online,..." alt="" coords="250,710,373,735"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="497,745,372,732,373,726,497,740"/>
-<area shape="rect" id="Node000014" href="$stabilization__indi__simple_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title="Does the INDI calculations." alt="" coords="20,728,153,768"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="497,751,154,751,154,745,497,745"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="237,734,154,743,153,738,236,728"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="491,1004,378,980,379,975,492,999"/>
-<area shape="rect" id="Node000018" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="20,973,153,1013"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="232,977,154,987,153,982,231,972"/>
-<area shape="rect" id="Node000020" href="$stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="5,923,168,949"/>
-<area shape="poly" id="edge18_Node000017_Node000020" title=" " alt="" coords="230,957,168,949,169,943,231,951"/>
-<area shape="rect" id="Node000024" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="241,1122,381,1147"/>
-<area shape="poly" id="edge22_Node000023_Node000024" title=" " alt="" coords="444,1137,382,1137,382,1132,444,1132"/>
-<area shape="rect" id="Node000027" href="$guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="17,599,157,625"/>
-<area shape="poly" id="edge24_Node000026_Node000027" title=" " alt="" coords="205,615,157,615,157,609,205,609"/>
-<area shape="rect" id="Node000031" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="274,1205,349,1230"/>
-<area shape="poly" id="edge27_Node000030_Node000031" title=" " alt="" coords="467,1204,349,1216,349,1211,466,1198"/>
-<area shape="poly" id="edge29_Node000032_Node000031" title=" " alt="" coords="468,1236,349,1224,349,1218,469,1230"/>
-<area shape="poly" id="edge31_Node000033_Node000017" title=" " alt="" coords="476,967,378,967,378,961,476,961"/>
-<area shape="rect" id="Node000036" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="243,1335,380,1361"/>
-<area shape="poly" id="edge34_Node000035_Node000036" title=" " alt="" coords="446,1351,380,1351,380,1345,446,1345"/>
-<area shape="rect" id="Node000050" href="$airspeed__consistency_8c.html#ad349d586ff35115309721a603c089a82" title=" " alt="" coords="230,5,393,45"/>
-<area shape="poly" id="edge36_Node000049_Node000050" title=" " alt="" coords="483,28,393,28,393,23,483,23"/>
-<area shape="poly" id="edge43_Node000055_Node000026" title=" " alt="" coords="475,669,372,635,374,629,477,664"/>
-<area shape="poly" id="edge45_Node000056_Node000035" title=" " alt="" coords="740,1449,697,1415,645,1382,619,1371,621,1366,648,1378,700,1410,744,1445"/>
-<area shape="rect" id="Node000057" href="$complementary__filter_8h.html#a6f5645ade1466a5cdc226947fb85b6e7" title="Update the Butterworth 4th order low&#45;pass complementary filter with new input values." alt="" coords="475,1520,626,1560"/>
-<area shape="poly" id="edge46_Node000056_Node000057" title=" " alt="" coords="692,1502,622,1523,621,1517,690,1497"/>
-<area shape="rect" id="Node000061" href="$low__pass__filter__types_8h.html#ac061d157c27e76a2d36417753890908b" title="Update an array of Butterworth low&#45;pass filters with new input data." alt="" coords="475,1584,626,1624"/>
-<area shape="poly" id="edge50_Node000056_Node000061" title=" " alt="" coords="744,1507,700,1542,648,1574,621,1586,619,1581,645,1570,697,1537,740,1503"/>
-<area shape="rect" id="Node000062" href="$low__pass__filter__types_8h.html#adfe6889d9895898b5cca789d1da1ba67" title="Update 3D vector Butterworth filters with new rate input data." alt="" coords="475,1392,626,1432"/>
-<area shape="poly" id="edge51_Node000056_Node000062" title=" " alt="" coords="690,1455,621,1435,622,1429,692,1450"/>
-<area shape="rect" id="Node000063" href="$low__pass__filter__types_8h.html#ada734b6bef8070937f4966a5253b81dd" title="Update 3D vector Butterworth filters with new input data." alt="" coords="475,1456,626,1496"/>
-<area shape="poly" id="edge52_Node000056_Node000063" title=" " alt="" coords="686,1479,626,1479,626,1473,686,1473"/>
-<area shape="rect" id="Node000058" href="$complementary__filter__types_8h.html#ae54ae39cb1063057911bcdab0d529d29" title="Update an array of 4th order Butterworth complementary filters." alt="" coords="217,1456,405,1496"/>
-<area shape="poly" id="edge47_Node000057_Node000058" title=" " alt="" coords="461,1519,386,1499,387,1493,463,1514"/>
-<area shape="rect" id="Node000059" href="$complementary__filter__types_8h.html#ad63af6fb0bc69ea5b3efbde09ce8ef58" title="Update 3D vector of 4th order Butterworth complementary filters for rates." alt="" coords="218,1520,405,1560"/>
-<area shape="poly" id="edge48_Node000057_Node000059" title=" " alt="" coords="461,1543,405,1543,405,1537,461,1537"/>
-<area shape="rect" id="Node000060" href="$complementary__filter__types_8h.html#a259f13c8e96f2654689ced5100a1bf35" title="Initialize 3D vector of 4th order Butterworth complementary filters." alt="" coords="216,1584,407,1624"/>
-<area shape="poly" id="edge49_Node000057_Node000060" title=" " alt="" coords="463,1566,387,1587,386,1581,461,1561"/>
-<area shape="rect" id="Node000065" href="$complementary__filter_8h.html#a58a9707d2825aa0b2512f7aac1a5d838" title="Update the Butterworth 2nd order low&#45;pass complementary filter with new input values." alt="" coords="475,1648,626,1688"/>
-<area shape="poly" id="edge54_Node000064_Node000065" title=" " alt="" coords="692,1630,622,1651,621,1645,690,1625"/>
-<area shape="rect" id="Node000066" href="$complementary__filter__types_8h.html#aa053ef0eb840a974799d780ee7f23811" title="Update an array of 2nd order Butterworth complementary filters." alt="" coords="217,1648,405,1688"/>
-<area shape="poly" id="edge55_Node000065_Node000066" title=" " alt="" coords="461,1671,405,1671,405,1665,461,1665"/>
+<area shape="rect" id="Node000001" title="Update second order low pass filter state with a new value." alt="" coords="876,1843,1037,1883"/>
+<area shape="rect" id="Node000002" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="672,887,823,927"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="945,1830,750,928,756,927,951,1829"/>
+<area shape="rect" id="Node000069" href="$low__pass__filter_8h.html#ac6aad62d3f90b904b5a6feccc6460d1d" title="Update fourth order Butterworth low pass filter state with a new value." alt="" coords="672,1843,823,1883"/>
+<area shape="poly" id="edge51_Node000001_Node000069" title=" " alt="" coords="862,1866,823,1866,823,1861,862,1861"/>
+<area shape="rect" id="Node000077" href="$complementary__filter_8h.html#afb11b1d8271ed63bcb3dcb335885f71c" title="Update the second order complementary filter with new input values." alt="" coords="667,1971,828,2011"/>
+<area shape="poly" id="edge58_Node000001_Node000077" title=" " alt="" coords="913,1893,782,1974,780,1969,910,1888"/>
+<area shape="rect" id="Node000003" href="$adaptive__notch__filter_8h.html#a3ad0de765c2e3fc304911f8297ad9f21" title="Update a second order adaptive notch filter." alt="" coords="443,381,602,421"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="744,874,742,787,736,731,726,670,710,607,687,544,656,486,617,435,601,422,604,418,621,431,661,483,692,542,715,605,731,668,741,730,747,786,750,874"/>
+<area shape="rect" id="Node000004" href="$airspeed__ets_8c.html#a7f798514c3a1c93dcadd33c6ca0d9c5c" title=" " alt="" coords="430,5,615,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="743,874,739,700,732,580,722,451,706,323,684,205,654,109,636,72,617,44,603,33,606,29,621,40,641,69,659,107,689,204,711,322,727,450,738,580,744,700,749,873"/>
+<area shape="rect" id="Node000006" href="$airspeed__uavcan_8c.html#a0148a8aa0bf9dfd7f55e8fe27ea74347" title=" " alt="" coords="445,445,600,471"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="744,874,739,794,721,690,705,634,683,580,654,529,617,485,599,473,602,468,620,481,658,526,688,578,710,632,726,689,744,794,749,873"/>
+<area shape="rect" id="Node000008" href="$aoa__t4_8c.html#a0981b55909f364cc6d7aa0c246c3f6e1" title=" " alt="" coords="463,560,582,585"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="739,874,728,814,706,740,690,701,670,663,646,629,617,599,600,588,581,581,583,576,603,583,620,595,650,625,675,661,695,699,711,738,733,813,745,873"/>
+<area shape="rect" id="Node000009" href="$eff__scheduling__rotwing__nB_8c.html#a8beaabd2283365e94e7c5c9c0e05489f" title=" " alt="" coords="437,495,609,535"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="741,874,732,806,711,719,695,673,674,628,648,586,617,549,601,537,604,533,620,545,653,583,679,626,700,671,716,718,737,805,746,873"/>
+<area shape="rect" id="Node000011" href="$ekf__aw__wrapper_8c.html#a4409a4d1d990ac89d4adfa292e0f1682" title=" " alt="" coords="438,659,607,684"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="733,875,716,834,691,786,659,738,617,697,597,686,600,682,620,693,663,734,696,783,721,832,738,873"/>
+<area shape="rect" id="Node000012" href="$stabilization__indi__simple_8c.html#ac0d13e690fd500a3c737add9bf8a8574" title="Update butterworth filter for p, q and r of a FloatRates struct." alt="" coords="483,609,563,635"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="737,874,723,824,699,762,664,700,642,672,617,648,591,634,562,627,564,622,593,629,620,644,646,669,669,697,704,760,728,822,742,873"/>
+<area shape="rect" id="Node000016" href="$stabilization__indi_8c.html#a8415032ccb0b6ba9c6ae11c74c0dfc15" title=" " alt="" coords="477,708,569,733"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="727,876,683,810,652,776,617,747,594,735,568,728,570,723,595,730,620,742,656,772,687,806,731,873"/>
+<area shape="rect" id="Node000017" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="219,750,353,790"/>
+<area shape="poly" id="edge41_Node000002_Node000017" title=" " alt="" coords="696,883,618,848,548,827,477,809,352,783,353,778,478,803,549,822,620,844,698,878"/>
+<area shape="rect" id="Node000021" href="$approach__moving__target_8c.html#a1f8643bb0cf39eb19efba54eef8148a7" title="Generates a velocity reference from a diagonal approach path." alt="" coords="427,923,619,948"/>
+<area shape="poly" id="edge17_Node000002_Node000021" title=" " alt="" coords="659,921,619,926,619,921,658,916"/>
+<area shape="rect" id="Node000022" href="$ground__detect_8c.html#a1644979ae47115c76c97cf2d5793e71d" title="Filter the vertical acceleration with a low cutoff frequency." alt="" coords="447,973,599,1013"/>
+<area shape="poly" id="edge18_Node000002_Node000022" title=" " alt="" coords="687,935,620,962,583,975,581,970,618,957,685,930"/>
+<area shape="rect" id="Node000023" href="$guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="430,858,615,898"/>
+<area shape="poly" id="edge19_Node000002_Node000023" title=" " alt="" coords="657,898,615,893,616,887,658,893"/>
+<area shape="rect" id="Node000026" href="$guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="193,1058,379,1098"/>
+<area shape="poly" id="edge21_Node000002_Node000026" title=" " alt="" coords="724,940,679,986,651,1009,620,1027,560,1050,497,1066,435,1075,379,1080,379,1075,434,1070,496,1061,558,1045,617,1022,648,1004,675,982,720,937"/>
+<area shape="rect" id="Node000029" href="$guidance__indi__hybrid__quadplane_8c.html#a1736298c0e0c9e6c9db4ee211cd11b9a" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="429,1202,616,1242"/>
+<area shape="poly" id="edge23_Node000002_Node000029" title=" " alt="" coords="742,941,729,995,705,1062,670,1131,647,1162,620,1191,601,1204,598,1200,617,1187,643,1159,665,1128,700,1060,724,994,737,940"/>
+<area shape="rect" id="Node000030" href="$imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="452,1152,593,1177"/>
+<area shape="poly" id="edge24_Node000002_Node000030" title=" " alt="" coords="739,942,724,987,699,1041,665,1095,644,1120,620,1142,595,1155,593,1151,617,1137,640,1116,661,1092,694,1038,719,985,734,940"/>
+<area shape="rect" id="Node000032" href="$imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="455,1267,591,1292"/>
+<area shape="poly" id="edge26_Node000002_Node000032" title=" " alt="" coords="746,941,737,1008,716,1092,700,1137,679,1180,653,1221,620,1256,592,1272,589,1268,617,1252,648,1217,674,1178,695,1135,711,1091,732,1007,741,941"/>
+<area shape="rect" id="Node000033" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="461,757,584,783"/>
+<area shape="poly" id="edge28_Node000002_Node000033" title=" " alt="" coords="715,880,671,841,617,804,572,785,574,780,620,800,674,837,719,876"/>
+<area shape="rect" id="Node000034" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="451,1368,595,1393"/>
+<area shape="poly" id="edge30_Node000002_Node000034" title=" " alt="" coords="749,942,744,1023,727,1132,710,1191,688,1248,658,1302,620,1351,591,1370,588,1366,617,1347,654,1299,683,1246,705,1189,721,1131,739,1023,744,941"/>
+<area shape="rect" id="Node000035" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="431,1747,614,1787"/>
+<area shape="poly" id="edge31_Node000002_Node000035" title=" " alt="" coords="748,941,741,1107,722,1345,706,1467,684,1580,656,1672,639,1709,621,1737,607,1749,604,1745,617,1734,635,1706,651,1671,679,1578,701,1466,717,1344,736,1107,743,941"/>
+<area shape="rect" id="Node000049" href="$oneloop__nB_8c.html#a1955c0a14f13bdac49ff5f52c2352de4" title="Function that calculates the model disturbance (Control Effort) The control effort is equalt to : EFF..." alt="" coords="445,1467,600,1507"/>
+<area shape="poly" id="edge32_Node000002_Node000049" title=" " alt="" coords="745,942,730,1056,705,1209,688,1287,668,1357,646,1415,621,1456,602,1471,599,1467,617,1452,641,1413,663,1355,683,1285,699,1208,725,1055,740,941"/>
+<area shape="rect" id="Node000053" href="$oneloop__nB_8c.html#ad4f526e29e4eaa9c6d28e614c1031f7f" title="Function which estimates the nB states." alt="" coords="445,1531,600,1571"/>
+<area shape="poly" id="edge33_Node000002_Node000053" title=" " alt="" coords="746,941,733,1068,709,1241,692,1329,672,1409,648,1475,635,1501,621,1521,602,1536,599,1532,617,1517,630,1498,643,1473,667,1407,687,1328,704,1240,728,1067,741,941"/>
+<area shape="rect" id="Node000054" href="$oneloop__nB_8c.html#a2715c0f63ac8b203a76e7e3347fe87e8" title="Propagate the filters." alt="" coords="201,1665,371,1705"/>
+<area shape="poly" id="edge34_Node000002_Node000054" title=" " alt="" coords="748,941,740,1090,721,1299,704,1405,683,1502,655,1581,639,1612,620,1635,603,1647,579,1657,515,1671,442,1680,372,1685,371,1680,441,1675,514,1666,577,1651,601,1642,617,1631,634,1609,650,1579,678,1501,699,1404,715,1298,735,1089,742,941"/>
+<area shape="rect" id="Node000055" href="$oneloop__nB_8c.html#aebebb94d4c9106b47bc736e142cbce66" title="Function to generate the reference signals for the oneloop controller." alt="" coords="223,1417,349,1443"/>
+<area shape="poly" id="edge35_Node000002_Node000055" title=" " alt="" coords="748,942,742,1016,723,1114,706,1166,684,1217,656,1264,621,1305,597,1324,574,1335,552,1341,530,1343,483,1345,456,1349,428,1358,362,1389,309,1419,307,1415,359,1384,426,1353,455,1344,482,1339,529,1337,551,1335,572,1330,594,1319,617,1301,652,1261,680,1214,701,1164,717,1113,736,1016,743,941"/>
+<area shape="rect" id="Node000056" href="$oneloop__nB_8c.html#abf1cf8dccf734a9b80aa531494293904" title=" " alt="" coords="462,1417,583,1443"/>
+<area shape="poly" id="edge36_Node000002_Node000056" title=" " alt="" coords="744,941,729,1047,703,1186,686,1256,667,1319,645,1371,621,1407,604,1419,585,1427,583,1422,601,1414,617,1403,640,1368,662,1317,681,1254,698,1185,724,1046,739,941"/>
+<area shape="rect" id="Node000057" href="$airspeed__consistency_8c.html#a553ca0d1e551365cab0a32ef4aab2265" title=" " alt="" coords="469,55,576,80"/>
+<area shape="poly" id="edge38_Node000002_Node000057" title=" " alt="" coords="743,874,737,709,719,475,702,354,681,244,652,154,635,119,617,93,598,80,576,72,577,67,601,75,621,89,640,117,657,152,686,243,708,353,724,474,742,709,748,873"/>
+<area shape="rect" id="Node000059" href="$airspeed__sdp3x_8c.html#ad9a54cedd689655b7da28d76dbf60ac5" title=" " alt="" coords="470,104,575,129"/>
+<area shape="poly" id="edge39_Node000002_Node000059" title=" " alt="" coords="742,874,735,718,715,498,699,386,678,283,650,199,634,167,617,143,598,129,575,122,577,116,600,124,621,139,639,164,655,197,683,282,704,385,721,498,740,718,748,873"/>
+<area shape="rect" id="Node000060" href="$sonar__adc_8c.html#acf28f34f078bd10e1abce5e51d9c5abf" title="Reading Read ADC value to update sonar measurement." alt="" coords="449,153,596,179"/>
+<area shape="poly" id="edge40_Node000002_Node000060" title=" " alt="" coords="742,874,733,727,712,522,696,418,675,322,649,244,633,214,617,192,595,177,598,173,621,188,638,212,653,242,680,321,701,417,718,522,739,727,747,873"/>
+<area shape="rect" id="Node000061" href="$eff__scheduling__plusquad_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="460,203,585,228"/>
+<area shape="poly" id="edge42_Node000002_Node000061" title=" " alt="" coords="742,874,731,737,709,547,692,451,672,363,646,291,632,263,617,243,602,231,584,224,587,219,605,227,621,239,637,261,651,289,677,361,697,450,714,546,736,736,747,873"/>
+<area shape="rect" id="Node000064" href="$low__pass__filter__types_8h.html#a852c9461c391caa4bc1a8c8c49ba5fc8" title="Update an array of Butterworth low&#45;pass filters with new input data." alt="" coords="447,253,598,293"/>
+<area shape="poly" id="edge43_Node000002_Node000064" title=" " alt="" coords="741,874,728,749,703,579,686,493,666,415,643,350,617,306,596,291,600,287,621,303,648,348,672,413,692,492,708,578,733,748,746,873"/>
+<area shape="rect" id="Node000065" href="$low__pass__filter__types_8h.html#a0ce3eaccce14147c012e1d6996fcd823" title="Update 3D vector Butterworth filters with new rate input data." alt="" coords="447,317,598,357"/>
+<area shape="poly" id="edge44_Node000002_Node000065" title=" " alt="" coords="740,874,725,762,699,611,682,535,663,466,641,409,617,370,597,355,600,351,621,367,646,407,668,464,688,533,704,610,730,761,745,874"/>
+<area shape="rect" id="Node000066" href="$low__pass__filter__types_8h.html#ab8892829e7b89a612395bd63de395cda" title="Update 3D vector Butterworth filters with new input data." alt="" coords="447,1087,598,1127"/>
+<area shape="poly" id="edge45_Node000002_Node000066" title=" " alt="" coords="730,941,685,1005,655,1040,620,1071,588,1089,585,1085,617,1067,651,1036,681,1002,726,938"/>
+<area shape="rect" id="Node000067" href="$oneloop__nB_8c.html#a19ae7dc039c83eddde50c7f2439ec26c" title="Update a filter based on its type." alt="" coords="441,1697,604,1723"/>
+<area shape="poly" id="edge47_Node000002_Node000067" title=" " alt="" coords="748,941,739,1097,719,1317,702,1430,681,1534,654,1620,638,1654,621,1680,608,1691,593,1700,590,1695,605,1687,617,1676,634,1651,649,1618,676,1533,697,1430,714,1317,734,1096,742,941"/>
+<area shape="rect" id="Node000068" href="$oneloop__nB_8c.html#a5266a89142810f8104196a94804d40d3" title=" " alt="" coords="468,1596,577,1621"/>
+<area shape="poly" id="edge49_Node000002_Node000068" title=" " alt="" coords="747,941,737,1080,715,1273,698,1371,677,1461,652,1534,637,1563,621,1585,601,1599,579,1607,577,1602,599,1595,617,1581,632,1560,647,1532,672,1459,693,1370,709,1272,732,1080,742,941"/>
+<area shape="rect" id="Node000005" href="$airspeed__ets_8h.html#a86e9e6b2216722814b35f68b3d00dd66" title=" " alt="" coords="218,5,354,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="416,21,354,21,354,15,416,15"/>
+<area shape="rect" id="Node000007" href="$airspeed__uavcan_8c.html#add8fef6742f9898bfb3c6ea203df890f" title=" " alt="" coords="206,445,366,471"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="431,461,366,461,366,455,431,455"/>
+<area shape="rect" id="Node000010" href="$eff__scheduling__rotwing__nB_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="200,495,372,535"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="423,518,372,518,372,513,423,513"/>
+<area shape="rect" id="Node000013" href="$stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca" title="This is a Least Mean Squares adaptive filter It estimates the actuator effectiveness online,..." alt="" coords="225,636,347,661"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="469,631,348,644,347,639,468,625"/>
+<area shape="rect" id="Node000014" href="$stabilization__indi__simple_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title="Does the INDI calculations." alt="" coords="9,603,142,643"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="469,625,142,626,142,620,469,619"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="211,642,142,634,142,629,211,637"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="463,736,353,759,352,754,462,730"/>
+<area shape="rect" id="Node000024" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="216,865,356,891"/>
+<area shape="poly" id="edge20_Node000023_Node000024" title=" " alt="" coords="416,881,356,881,356,875,416,875"/>
+<area shape="rect" id="Node000027" href="$guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="5,1065,145,1091"/>
+<area shape="poly" id="edge22_Node000026_Node000027" title=" " alt="" coords="179,1081,146,1081,146,1075,179,1075"/>
+<area shape="rect" id="Node000031" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="249,1209,323,1235"/>
+<area shape="poly" id="edge25_Node000030_Node000031" title=" " alt="" coords="457,1183,324,1216,323,1211,455,1178"/>
+<area shape="poly" id="edge27_Node000032_Node000031" title=" " alt="" coords="455,1266,323,1233,324,1228,457,1261"/>
+<area shape="poly" id="edge29_Node000033_Node000017" title=" " alt="" coords="447,773,353,773,353,767,447,767"/>
+<area shape="poly" id="edge37_Node000056_Node000055" title=" " alt="" coords="448,1433,350,1433,350,1427,448,1427"/>
+<area shape="poly" id="edge46_Node000066_Node000026" title=" " alt="" coords="433,1099,379,1092,379,1087,434,1094"/>
+<area shape="poly" id="edge48_Node000067_Node000054" title=" " alt="" coords="427,1702,371,1696,372,1691,428,1697"/>
+<area shape="poly" id="edge50_Node000068_Node000055" title=" " alt="" coords="453,1598,425,1586,381,1552,343,1512,293,1445,297,1441,347,1508,385,1548,428,1581,455,1594"/>
+<area shape="poly" id="edge52_Node000069_Node000035" title=" " alt="" coords="696,1839,618,1802,587,1790,589,1785,620,1797,698,1834"/>
+<area shape="poly" id="edge57_Node000069_Node000067" title=" " alt="" coords="721,1834,676,1784,648,1759,617,1738,589,1725,591,1720,620,1733,651,1755,680,1780,725,1831"/>
+<area shape="rect" id="Node000070" href="$complementary__filter_8h.html#a6f5645ade1466a5cdc226947fb85b6e7" title="Update the Butterworth 4th order low&#45;pass complementary filter with new input values." alt="" coords="447,1939,598,1979"/>
+<area shape="poly" id="edge53_Node000069_Node000070" title=" " alt="" coords="698,1892,620,1930,589,1942,587,1937,618,1925,696,1888"/>
+<area shape="rect" id="Node000074" href="$low__pass__filter__types_8h.html#ac061d157c27e76a2d36417753890908b" title="Update an array of Butterworth low&#45;pass filters with new input data." alt="" coords="447,2003,598,2043"/>
+<area shape="poly" id="edge54_Node000069_Node000074" title=" " alt="" coords="724,1896,679,1946,651,1971,620,1994,597,2006,594,2001,617,1989,648,1967,676,1942,720,1892"/>
+<area shape="rect" id="Node000075" href="$low__pass__filter__types_8h.html#adfe6889d9895898b5cca789d1da1ba67" title="Update 3D vector Butterworth filters with new rate input data." alt="" coords="447,1811,598,1851"/>
+<area shape="poly" id="edge55_Node000069_Node000075" title=" " alt="" coords="658,1853,598,1845,599,1839,658,1848"/>
+<area shape="rect" id="Node000076" href="$low__pass__filter__types_8h.html#ada734b6bef8070937f4966a5253b81dd" title="Update 3D vector Butterworth filters with new input data." alt="" coords="447,1875,598,1915"/>
+<area shape="poly" id="edge56_Node000069_Node000076" title=" " alt="" coords="658,1879,599,1887,598,1882,658,1873"/>
+<area shape="rect" id="Node000078" href="$complementary__filter_8h.html#a58a9707d2825aa0b2512f7aac1a5d838" title="Update the Butterworth 2nd order low&#45;pass complementary filter with new input values." alt="" coords="447,2067,598,2107"/>
+<area shape="poly" id="edge59_Node000077_Node000078" title=" " alt="" coords="698,2020,620,2058,589,2070,587,2065,618,2053,696,2016"/>
 </map>

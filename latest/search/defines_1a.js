@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zero_5fele_5fpprz_0',['ZERO_ELE_PPRZ',['../eff__scheduling__rotwing__V2_8h.html#a76cf8f7f330f7694b7a2e5d66f099645',1,'eff_scheduling_rotwing_V2.h']]],
+  ['zero_5fele_5fpprz_0',['zero_ele_pprz',['../eff__scheduling__rotwing__nB_8h.html#a76cf8f7f330f7694b7a2e5d66f099645',1,'ZERO_ELE_PPRZ:&#160;eff_scheduling_rotwing_nB.h'],['../eff__scheduling__rotwing__V2_8h.html#a76cf8f7f330f7694b7a2e5d66f099645',1,'ZERO_ELE_PPRZ:&#160;eff_scheduling_rotwing_V2.h']]],
   ['zero_5foffset_5fdegrees_1',['ZERO_OFFSET_DEGREES',['../wind__gfi_8c.html#a1c27d6803cac68644bf4d9b90f9efdcf',1,'wind_gfi.c']]],
   ['zeta_5fomega_5fp_2',['ZETA_OMEGA_P',['../stabilization__attitude__ref__euler__int_8c.html#a0d93c149b0777920a61387dbb073fe4c',1,'stabilization_attitude_ref_euler_int.c']]],
   ['zeta_5fomega_5fp_5fres_3',['ZETA_OMEGA_P_RES',['../stabilization__attitude__ref__euler__int_8c.html#a33aba348bdb40cec6290d75d0d177ae5',1,'stabilization_attitude_ref_euler_int.c']]],

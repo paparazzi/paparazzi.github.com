@@ -1,0 +1,64 @@
+<map id="oneloop_nB_propagate_filters" name="oneloop_nB_propagate_filters">
+<area shape="rect" id="Node000001" title="Propagate the filters." alt="" coords="5,215,176,255"/>
+<area shape="rect" id="Node000002" href="$oneloop__nB_8c.html#a72cf7ca1cd037d486980bdcdac83f988" title="Reinitialize all the Low Pass Filters." alt="" coords="255,49,356,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,213,150,149,184,114,223,83,240,74,243,79,225,88,187,118,154,153,107,216"/>
+<area shape="rect" id="Node000013" href="$group__state__velocity.html#ga4c0971d022697106338036028a62c7fd" title="Get acceleration in Body coordinates (int)." alt="" coords="227,98,384,123"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="112,212,161,172,223,132,238,126,240,130,225,137,164,176,115,216"/>
+<area shape="rect" id="Node000014" href="$group__state__acceleration.html#gaf5cf24bf50181ce5887529fd3ff6e297" title="Get acceleration in NED coordinates (float)." alt="" coords="230,147,381,173"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="141,212,223,181,245,174,247,179,225,187,143,217"/>
+<area shape="rect" id="Node000018" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="232,197,379,222"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="176,222,218,217,219,222,177,227"/>
+<area shape="rect" id="Node000020" href="$group__state__rate.html#gaf712020339c342d39ce714802ab155c0" title="Get vehicle body angular rate (float)." alt="" coords="225,246,385,271"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="177,242,212,246,211,251,176,247"/>
+<area shape="rect" id="Node000022" href="$group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="227,295,383,321"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="147,252,225,280,250,289,249,294,223,285,145,257"/>
+<area shape="rect" id="Node000024" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="442,345,593,385"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="114,253,162,293,193,314,225,330,276,345,328,356,428,364,428,370,328,361,274,351,223,334,190,318,159,298,111,257"/>
+<area shape="rect" id="Node000026" href="$oneloop__nB_8c.html#a19ae7dc039c83eddde50c7f2439ec26c" title="Update a filter based on its type." alt="" coords="224,410,387,435"/>
+<area shape="poly" id="edge28_Node000001_Node000026" title=" " alt="" coords="108,253,157,313,190,348,226,379,262,402,260,406,222,383,186,352,153,317,104,256"/>
+<area shape="rect" id="Node000003" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="878,5,1019,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,56,864,27,864,33,357,61"/>
+<area shape="rect" id="Node000005" href="$oneloop__nB_8c.html#a0dfccb08e52039fd93fe7c6e903df8b1" title=" " alt="" coords="478,73,557,98"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="357,64,465,77,464,82,356,70"/>
+<area shape="rect" id="Node000004" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="1088,45,1292,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1020,32,1081,40,1080,45,1019,37"/>
+<area shape="rect" id="Node000006" href="$oneloop__nB_8c.html#ab48a2fb4864eadf8e6f8f265398588af" title="Initialize a filter based on its type." alt="" coords="659,77,798,102"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="557,83,646,85,646,90,557,89"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="773,74,866,47,867,52,774,79"/>
+<area shape="rect" id="Node000007" href="$low__pass__filter_8h.html#afde385e80442374b2f579302039d8d72" title="Init a fourth order Butterworth filter." alt="" coords="878,69,1019,109"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="798,87,864,87,864,92,798,92"/>
+<area shape="rect" id="Node000008" href="$low__pass__filter_8h.html#a2ef099f9631ccda888715f731518423e" title="Init first order low pass filter." alt="" coords="857,134,1040,159"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="779,99,887,128,885,133,778,105"/>
+<area shape="rect" id="Node000009" href="$notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="887,183,1010,209"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="748,100,796,134,858,168,880,177,878,182,856,173,793,138,745,104"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="1019,77,1080,69,1081,74,1020,83"/>
+<area shape="rect" id="Node000010" href="$notch__filter_8h.html#af0a68017635e730c83735978e2bf859a" title="Set bandwidth of the notch filter." alt="" coords="1091,126,1289,151"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="1002,181,1122,152,1123,157,1004,186"/>
+<area shape="rect" id="Node000011" href="$notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66" title="Set notch filter frequency in Hz." alt="" coords="1111,176,1269,216"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="1010,193,1097,193,1097,199,1010,199"/>
+<area shape="rect" id="Node000012" href="$notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a" title="Set sampling frequency of the notch filter." alt="" coords="1095,240,1285,280"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="998,206,1101,234,1100,239,997,211"/>
+<area shape="rect" id="Node000015" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title=" " alt="" coords="439,147,595,173"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="381,157,426,157,426,163,381,163"/>
+<area shape="rect" id="Node000016" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title=" " alt="" coords="655,267,803,293"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="573,170,601,182,659,218,706,256,702,260,656,223,599,186,571,175"/>
+<area shape="rect" id="Node000017" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="875,267,1023,293"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="803,277,861,277,861,283,803,283"/>
+<area shape="rect" id="Node000019" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="441,197,593,222"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="379,207,428,207,428,212,379,212"/>
+<area shape="rect" id="Node000021" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="435,246,600,271"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="386,256,421,256,421,261,386,261"/>
+<area shape="rect" id="Node000023" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="437,295,598,321"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="383,305,423,305,423,311,383,311"/>
+<area shape="poly" id="edge25_Node000023_Node000016" title=" " alt="" coords="598,295,641,289,641,294,599,300"/>
+<area shape="rect" id="Node000025" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="648,375,809,415"/>
+<area shape="poly" id="edge27_Node000024_Node000025" title=" " alt="" coords="593,373,635,379,634,384,592,378"/>
+<area shape="poly" id="edge30_Node000026_Node000024" title=" " alt="" coords="352,407,429,386,431,392,354,413"/>
+<area shape="rect" id="Node000027" href="$notch__filter_8h.html#a93e78a6198d2f1c1221c2a006e2b5dd7" title="Notch filter propagate." alt="" coords="444,410,591,435"/>
+<area shape="poly" id="edge29_Node000026_Node000027" title=" " alt="" coords="387,420,430,420,430,425,387,425"/>
+<area shape="rect" id="Node000028" href="$low__pass__filter_8h.html#ac6aad62d3f90b904b5a6feccc6460d1d" title="Update fourth order Butterworth low pass filter state with a new value." alt="" coords="442,460,593,500"/>
+<area shape="poly" id="edge31_Node000026_Node000028" title=" " alt="" coords="354,433,431,454,429,459,352,438"/>
+<area shape="rect" id="Node000029" href="$low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="447,524,587,564"/>
+<area shape="poly" id="edge33_Node000026_Node000029" title=" " alt="" coords="324,433,373,470,436,510,449,516,446,521,433,514,370,474,321,438"/>
+<area shape="poly" id="edge32_Node000028_Node000025" title=" " alt="" coords="567,458,665,417,667,422,569,462"/>
+</map>

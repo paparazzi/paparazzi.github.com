@@ -1,50 +1,59 @@
 <map id="qr_solve_wrapper" name="qr_solve_wrapper">
-<area shape="rect" id="Node000001" title="Wrapper for qr solve." alt="" coords="1684,161,1821,187"/>
-<area shape="rect" id="Node000002" href="$wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="1553,161,1636,187"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1670,177,1636,177,1636,171,1670,171"/>
-<area shape="rect" id="Node000003" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="1353,63,1493,88"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1559,157,1445,91,1448,86,1561,152"/>
-<area shape="rect" id="Node000005" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1354,136,1491,161"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1539,169,1491,161,1492,156,1540,163"/>
-<area shape="rect" id="Node000018" href="$stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="1340,185,1505,211"/>
-<area shape="poly" id="edge22_Node000002_Node000018" title=" " alt="" coords="1540,184,1506,189,1505,184,1539,179"/>
-<area shape="rect" id="Node000019" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="1356,235,1489,275"/>
-<area shape="poly" id="edge23_Node000002_Node000019" title=" " alt="" coords="1561,196,1506,224,1477,238,1474,233,1504,220,1559,191"/>
-<area shape="rect" id="Node000004" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="1094,37,1278,63"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1339,69,1278,63,1279,57,1339,64"/>
-<area shape="rect" id="Node000006" href="$guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="1080,87,1292,112"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1347,136,1247,115,1248,109,1348,131"/>
-<area shape="rect" id="Node000016" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1115,136,1257,161"/>
-<area shape="poly" id="edge20_Node000005_Node000016" title=" " alt="" coords="1340,151,1258,151,1258,146,1340,146"/>
-<area shape="rect" id="Node000017" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="1092,185,1280,211"/>
-<area shape="poly" id="edge21_Node000005_Node000017" title=" " alt="" coords="1348,167,1248,188,1247,183,1347,162"/>
-<area shape="rect" id="Node000007" href="$guidance__oneloop_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="626,139,791,164"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1097,117,1032,126,792,148,791,143,1032,121,1097,112"/>
-<area shape="rect" id="Node000013" href="$guidance__oneloop_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="861,87,1015,112"/>
-<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="1066,102,1016,102,1016,97,1066,97"/>
-<area shape="rect" id="Node000015" href="$guidance__oneloop_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="853,37,1023,63"/>
-<area shape="poly" id="edge17_Node000006_Node000015" title=" " alt="" coords="1108,87,1002,65,1003,60,1109,81"/>
-<area shape="rect" id="Node000008" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,88,573,113"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="639,138,545,116,547,111,641,133"/>
-<area shape="rect" id="Node000009" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,63,360,88"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="394,91,360,86,361,81,395,85"/>
-<area shape="rect" id="Node000010" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,31"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="240,61,187,46,143,33,145,28,189,41,241,56"/>
-<area shape="rect" id="Node000011" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,55,187,95"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="222,78,188,78,188,73,222,73"/>
-<area shape="rect" id="Node000012" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,120,179,145"/>
-<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="241,95,189,110,145,122,143,117,187,105,240,89"/>
-<area shape="poly" id="edge13_Node000013_Node000008" title=" " alt="" coords="847,102,573,103,573,98,847,97"/>
-<area shape="rect" id="Node000014" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="621,37,796,63"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="864,86,768,65,769,60,865,81"/>
-<area shape="poly" id="edge15_Node000014_Node000008" title=" " alt="" coords="641,68,547,91,545,85,639,63"/>
-<area shape="poly" id="edge16_Node000014_Node000009" title=" " alt="" coords="608,59,360,74,360,69,608,54"/>
-<area shape="poly" id="edge18_Node000015_Node000008" title=" " alt="" coords="879,37,825,25,760,17,690,17,622,27,589,40,557,56,509,90,506,86,555,52,587,35,621,22,690,11,760,12,825,20,881,31"/>
-<area shape="poly" id="edge19_Node000015_Node000014" title=" " alt="" coords="839,53,796,53,796,47,839,47"/>
-<area shape="rect" id="Node000020" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="1119,235,1253,275"/>
-<area shape="poly" id="edge24_Node000019_Node000020" title=" " alt="" coords="1342,258,1253,258,1253,253,1342,253"/>
-<area shape="rect" id="Node000022" href="$stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="1105,300,1267,325"/>
-<area shape="poly" id="edge26_Node000019_Node000022" title=" " alt="" coords="1343,278,1293,290,1241,303,1239,297,1291,285,1342,272"/>
-<area shape="rect" id="Node000021" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="844,243,1032,268"/>
-<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="1105,258,1032,258,1032,253,1105,253"/>
+<area shape="rect" id="Node000001" title="Wrapper for qr solve." alt="" coords="1684,195,1821,220"/>
+<area shape="rect" id="Node000002" href="$wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="1553,195,1636,220"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1670,210,1636,210,1636,205,1670,205"/>
+<area shape="rect" id="Node000003" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="1353,39,1493,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1573,186,1542,148,1504,109,1444,66,1447,62,1507,105,1546,145,1577,182"/>
+<area shape="rect" id="Node000005" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1354,195,1491,220"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1540,210,1492,210,1492,205,1540,205"/>
+<area shape="rect" id="Node000018" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="1359,120,1486,145"/>
+<area shape="poly" id="edge22_Node000002_Node000018" title=" " alt="" coords="1551,191,1452,148,1454,143,1553,187"/>
+<area shape="rect" id="Node000021" href="$stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="1340,244,1505,269"/>
+<area shape="poly" id="edge28_Node000002_Node000021" title=" " alt="" coords="1541,225,1469,246,1467,241,1539,220"/>
+<area shape="rect" id="Node000022" href="$stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="1356,318,1489,358"/>
+<area shape="poly" id="edge29_Node000002_Node000022" title=" " alt="" coords="1570,231,1507,283,1455,320,1452,316,1504,279,1567,227"/>
+<area shape="rect" id="Node000004" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="1094,5,1278,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1338,42,1276,33,1277,28,1339,37"/>
+<area shape="rect" id="Node000006" href="$guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="1080,169,1292,195"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1340,201,1292,196,1293,191,1341,196"/>
+<area shape="rect" id="Node000016" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1115,219,1257,244"/>
+<area shape="poly" id="edge20_Node000005_Node000016" title=" " alt="" coords="1341,218,1258,227,1257,221,1340,213"/>
+<area shape="rect" id="Node000017" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="1092,268,1280,293"/>
+<area shape="poly" id="edge21_Node000005_Node000017" title=" " alt="" coords="1361,227,1341,234,1317,246,1293,258,1251,270,1249,265,1291,253,1315,241,1339,229,1359,222"/>
+<area shape="rect" id="Node000007" href="$guidance__oneloop__nB_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="855,168,1021,193"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1066,184,1021,184,1021,178,1066,179"/>
+<area shape="rect" id="Node000013" href="$guidance__oneloop__nB_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="861,116,1015,141"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="1112,169,997,144,998,139,1113,164"/>
+<area shape="rect" id="Node000015" href="$guidance__oneloop__nB_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="853,65,1023,91"/>
+<area shape="poly" id="edge17_Node000006_Node000015" title=" " alt="" coords="1094,167,1079,159,1063,146,1054,132,1045,118,1031,106,1004,93,1006,88,1033,101,1049,115,1058,129,1067,142,1081,154,1097,162"/>
+<area shape="rect" id="Node000008" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,117,573,143"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="841,172,573,142,574,137,842,167"/>
+<area shape="rect" id="Node000009" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,92,360,117"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="394,120,360,115,361,110,395,115"/>
+<area shape="rect" id="Node000010" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,35,188,60"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="240,91,187,75,143,63,145,58,189,70,241,85"/>
+<area shape="rect" id="Node000011" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,85,187,125"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="222,107,188,107,188,102,222,102"/>
+<area shape="rect" id="Node000012" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,149,179,175"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="241,124,189,139,145,152,143,147,187,134,240,119"/>
+<area shape="poly" id="edge13_Node000013_Node000008" title=" " alt="" coords="847,132,573,132,573,127,847,126"/>
+<area shape="rect" id="Node000014" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="621,67,796,92"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="864,116,768,95,769,89,865,110"/>
+<area shape="poly" id="edge15_Node000014_Node000008" title=" " alt="" coords="641,98,547,120,545,115,639,93"/>
+<area shape="poly" id="edge16_Node000014_Node000009" title=" " alt="" coords="608,88,360,104,360,98,608,83"/>
+<area shape="poly" id="edge18_Node000015_Node000008" title=" " alt="" coords="878,65,823,54,759,46,690,46,622,57,589,69,557,86,509,119,506,115,555,81,587,64,621,51,689,40,759,41,824,49,879,59"/>
+<area shape="poly" id="edge19_Node000015_Node000014" title=" " alt="" coords="839,81,796,81,796,76,839,76"/>
+<area shape="rect" id="Node000019" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="1104,55,1268,95"/>
+<area shape="poly" id="edge23_Node000018_Node000019" title=" " alt="" coords="1356,119,1267,98,1269,93,1357,114"/>
+<area shape="rect" id="Node000020" href="$oneloop__nB_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1115,120,1257,145"/>
+<area shape="poly" id="edge27_Node000018_Node000020" title=" " alt="" coords="1346,135,1258,135,1258,130,1346,130"/>
+<area shape="poly" id="edge24_Node000019_Node000007" title=" " alt="" coords="1094,103,1081,110,1067,120,1058,132,1048,143,1033,155,997,170,995,165,1031,150,1045,140,1054,128,1064,117,1079,105,1091,98"/>
+<area shape="poly" id="edge25_Node000019_Node000013" title=" " alt="" coords="1091,98,998,119,997,113,1090,93"/>
+<area shape="poly" id="edge26_Node000019_Node000015" title=" " alt="" coords="1090,79,1023,80,1023,74,1090,74"/>
+<area shape="rect" id="Node000023" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="1119,318,1253,358"/>
+<area shape="poly" id="edge30_Node000022_Node000023" title=" " alt="" coords="1342,341,1253,341,1253,335,1342,335"/>
+<area shape="rect" id="Node000025" href="$stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="1105,383,1267,408"/>
+<area shape="poly" id="edge32_Node000022_Node000025" title=" " alt="" coords="1343,360,1293,373,1241,385,1239,380,1291,367,1342,355"/>
+<area shape="rect" id="Node000024" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="844,325,1032,351"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="1105,341,1032,341,1032,335,1105,335"/>
 </map>

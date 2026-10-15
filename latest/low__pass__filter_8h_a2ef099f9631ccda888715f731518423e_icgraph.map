@@ -1,37 +1,82 @@
 <map id="init_first_order_low_pass" name="init_first_order_low_pass">
-<area shape="rect" id="Node000001" title="Init first order low pass filter." alt="" coords="768,290,951,315"/>
-<area shape="rect" id="Node000002" href="$cloud__sensor_8c.html#a61803e6d42d67227c52bb67eb33ac13f" title="Init function." alt="" coords="539,21,674,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="849,277,833,229,806,170,768,110,745,83,718,60,697,48,673,41,675,35,699,43,722,55,749,79,773,106,811,167,838,227,854,275"/>
-<area shape="rect" id="Node000003" href="$stabilization__indi__simple_8c.html#af24d268c1d84323103fb53b25edae209" title=" " alt="" coords="547,70,666,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="845,278,826,240,799,193,763,147,719,109,693,97,666,89,667,84,695,92,721,104,767,144,803,190,831,237,850,276"/>
-<area shape="rect" id="Node000006" href="$stabilization__indi_8c.html#a67634853e23c82935e3dba180cc5995b" title="Function that resets the filters to zeros." alt="" coords="563,119,650,145"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="840,280,791,218,757,185,719,158,685,145,649,138,651,132,686,140,721,154,760,181,795,214,844,277"/>
-<area shape="rect" id="Node000008" href="$complementary__filter_8h.html#a99acd36dc63c864655681ab492e32902" title="Initialize the first order complementary filter." alt="" coords="493,169,720,194"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="832,283,782,245,719,209,682,197,684,192,721,204,785,241,835,279"/>
-<area shape="rect" id="Node000012" href="$low__pass__filter__types_8h.html#aea5cdabc25d1b88eadcbbbe838e44c5b" title="Initialize an array of first order low&#45;pass filters." alt="" coords="533,219,680,259"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="794,289,680,260,681,255,796,284"/>
-<area shape="rect" id="Node000013" href="$low__pass__filter__types_8h.html#a9825bae98cca8a8eddb791c27298418a" title="Initialize a set of first order low&#45;pass filters to zero for 3D vector data." alt="" coords="533,283,680,323"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="754,305,680,305,680,300,754,300"/>
-<area shape="rect" id="Node000014" href="$nps__fdm__gazebo_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Initialize actuator dynamics, set unused fields in fdm." alt="" coords="553,347,660,373"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="791,321,721,337,661,351,660,346,719,332,789,316"/>
-<area shape="rect" id="Node000015" href="$rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177" title=" " alt="" coords="543,397,670,422"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="831,326,781,358,721,388,671,402,669,397,719,383,779,353,828,321"/>
-<area shape="rect" id="Node000016" href="$stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38" title=" " alt="" coords="525,446,688,501"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="841,328,791,382,758,411,721,437,689,453,687,448,719,432,754,407,787,378,837,324"/>
-<area shape="rect" id="Node000017" href="$stabilization__indi_8c.html#a8021b702bcac984446af046b0691e578" title=" " alt="" coords="540,525,673,565"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="851,329,832,370,805,420,768,472,722,515,699,528,675,537,673,532,697,524,718,511,764,468,800,417,828,368,846,327"/>
-<area shape="rect" id="Node000018" href="$sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733" title=" " alt="" coords="541,590,672,615"/>
-<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="855,329,841,382,815,450,798,486,776,520,751,552,722,579,698,593,673,601,671,596,696,588,718,575,747,548,772,517,793,483,810,448,836,381,850,328"/>
-<area shape="rect" id="Node000004" href="$stabilization__indi__simple_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="265,5,399,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="534,70,398,42,399,37,535,65"/>
-<area shape="rect" id="Node000005" href="$stabilization__indi__simple_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="251,70,413,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="534,85,413,85,413,80,534,80"/>
-<area shape="rect" id="Node000007" href="$stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="251,119,413,145"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="549,135,413,135,413,129,549,129"/>
-<area shape="rect" id="Node000009" href="$complementary__filter__types_8h.html#a50f9daea41f3b3810be07193c1c67eb6" title="Initialize an array of 1st order complementary filters." alt="" coords="219,169,445,209"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="480,188,446,189,446,183,479,182"/>
-<area shape="rect" id="Node000010" href="$complementary__filter__types_8h.html#af42041efa6949a36e13c5c79dd1f84e0" title="Initialize 3D vector of 1st order complementary filters." alt="" coords="219,233,445,273"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="533,200,494,209,446,224,405,236,404,231,445,219,493,204,531,195"/>
-<area shape="rect" id="Node000011" href="$stabilization__andi_8c.html#a5b8b0fb1ef6bfb2dd8f79dfa0a0ea737" title=" " alt="" coords="5,241,171,266"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="205,256,171,256,171,251,205,251"/>
+<area shape="rect" id="Node000001" title="Init first order low pass filter." alt="" coords="2431,394,2613,419"/>
+<area shape="rect" id="Node000002" href="$cloud__sensor_8c.html#a61803e6d42d67227c52bb67eb33ac13f" title="Init function." alt="" coords="2202,46,2337,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2515,381,2504,320,2480,239,2463,196,2441,155,2414,117,2381,85,2360,72,2336,65,2338,60,2362,67,2384,81,2418,114,2445,152,2468,194,2485,237,2509,318,2520,380"/>
+<area shape="rect" id="Node000003" href="$stabilization__indi__simple_8c.html#af24d268c1d84323103fb53b25edae209" title=" " alt="" coords="2210,95,2329,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2509,382,2490,338,2462,283,2426,224,2381,171,2343,143,2303,123,2306,118,2346,138,2384,167,2430,221,2467,280,2495,336,2514,380"/>
+<area shape="rect" id="Node000006" href="$oneloop__nB_8c.html#ab48a2fb4864eadf8e6f8f265398588af" title="Initialize a filter based on its type." alt="" coords="2200,182,2339,207"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2503,384,2454,316,2419,278,2381,245,2347,225,2312,210,2314,205,2349,220,2384,241,2423,274,2458,313,2508,381"/>
+<area shape="rect" id="Node000026" href="$stabilization__indi_8c.html#a67634853e23c82935e3dba180cc5995b" title="Function that resets the filters to zeros." alt="" coords="2226,255,2313,281"/>
+<area shape="poly" id="edge30_Node000001_Node000026" title=" " alt="" coords="2498,386,2448,339,2416,315,2382,294,2347,282,2313,275,2314,270,2349,277,2384,290,2419,310,2451,335,2502,382"/>
+<area shape="rect" id="Node000028" href="$complementary__filter_8h.html#a99acd36dc63c864655681ab492e32902" title="Initialize the first order complementary filter." alt="" coords="2156,305,2383,330"/>
+<area shape="poly" id="edge32_Node000001_Node000028" title=" " alt="" coords="2484,390,2436,367,2382,345,2337,333,2338,327,2384,340,2438,362,2486,385"/>
+<area shape="rect" id="Node000032" href="$low__pass__filter__types_8h.html#aea5cdabc25d1b88eadcbbbe838e44c5b" title="Initialize an array of first order low&#45;pass filters." alt="" coords="2196,355,2343,395"/>
+<area shape="poly" id="edge36_Node000001_Node000032" title=" " alt="" coords="2417,396,2342,387,2343,381,2417,391"/>
+<area shape="rect" id="Node000033" href="$low__pass__filter__types_8h.html#a9825bae98cca8a8eddb791c27298418a" title="Initialize a set of first order low&#45;pass filters to zero for 3D vector data." alt="" coords="2196,419,2343,459"/>
+<area shape="poly" id="edge37_Node000001_Node000033" title=" " alt="" coords="2417,423,2343,432,2342,427,2417,417"/>
+<area shape="rect" id="Node000034" href="$nps__fdm__gazebo_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Initialize actuator dynamics, set unused fields in fdm." alt="" coords="2216,483,2323,509"/>
+<area shape="poly" id="edge38_Node000001_Node000034" title=" " alt="" coords="2486,428,2438,451,2384,473,2324,489,2322,484,2382,468,2436,446,2484,423"/>
+<area shape="rect" id="Node000035" href="$rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177" title=" " alt="" coords="2206,533,2333,558"/>
+<area shape="poly" id="edge39_Node000001_Node000035" title=" " alt="" coords="2502,431,2451,479,2419,503,2384,524,2334,540,2332,535,2382,519,2416,499,2448,475,2498,428"/>
+<area shape="rect" id="Node000036" href="$stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38" title=" " alt="" coords="2188,582,2351,637"/>
+<area shape="poly" id="edge40_Node000001_Node000036" title=" " alt="" coords="2508,433,2459,502,2424,540,2384,573,2352,590,2350,585,2381,568,2420,536,2455,498,2504,429"/>
+<area shape="rect" id="Node000037" href="$stabilization__indi_8c.html#a8021b702bcac984446af046b0691e578" title=" " alt="" coords="2203,661,2336,701"/>
+<area shape="poly" id="edge41_Node000001_Node000037" title=" " alt="" coords="2516,433,2499,480,2472,539,2434,599,2411,627,2384,651,2362,665,2337,674,2335,669,2359,660,2381,647,2407,624,2430,596,2467,536,2494,478,2511,431"/>
+<area shape="rect" id="Node000038" href="$sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733" title=" " alt="" coords="2204,726,2335,751"/>
+<area shape="poly" id="edge42_Node000001_Node000038" title=" " alt="" coords="2519,433,2507,492,2483,569,2465,609,2443,648,2416,684,2384,715,2361,729,2336,737,2334,732,2359,724,2381,711,2412,681,2438,645,2460,606,2478,567,2502,491,2514,432"/>
+<area shape="rect" id="Node000004" href="$stabilization__indi__simple_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="1928,5,2061,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2195,97,2155,85,2131,73,2107,60,2061,44,2063,39,2109,55,2133,68,2157,80,2197,92"/>
+<area shape="rect" id="Node000005" href="$stabilization__indi__simple_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="1914,70,2075,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="2196,104,2075,93,2076,87,2197,99"/>
+<area shape="rect" id="Node000007" href="$oneloop__nB_8c.html#a9c209edfd25168b5f05d44a164830259" title="Initialize the Low Pass Filter Struct." alt="" coords="1962,119,2027,145"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="2203,181,2107,159,2027,141,2028,136,2109,153,2205,176"/>
+<area shape="rect" id="Node000010" href="$oneloop__nB_8c.html#a0dfccb08e52039fd93fe7c6e903df8b1" title=" " alt="" coords="1955,169,2034,194"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="2186,193,2034,186,2034,181,2186,188"/>
+<area shape="rect" id="Node000025" href="$oneloop__nB_8c.html#ab799fba4cc0efb137bb004ec0002b340" title="Reinitialize Low Pass filter if new frequency setting or if forced." alt="" coords="1911,218,2078,243"/>
+<area shape="poly" id="edge29_Node000006_Node000025" title=" " alt="" coords="2187,208,2079,222,2078,217,2186,203"/>
+<area shape="rect" id="Node000008" href="$oneloop__nB_8c.html#a208f7e377df6174e5050c007c980d9ba" title="Initialize all Low Pass Filters." alt="" coords="1707,118,1795,143"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1948,134,1795,134,1795,128,1948,129"/>
+<area shape="rect" id="Node000009" href="$oneloop__nB_8c.html#afc5953ac56c51be667e004a8b97e3595" title="Init function of Oneloop ANDI controller" alt="" coords="1471,115,1598,141"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1692,133,1598,131,1598,126,1692,127"/>
+<area shape="rect" id="Node000011" href="$oneloop__nB_8c.html#a72cf7ca1cd037d486980bdcdac83f988" title="Reinitialize all the Low Pass Filters." alt="" coords="1700,171,1801,197"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1942,185,1801,186,1801,181,1942,179"/>
+<area shape="rect" id="Node000012" href="$oneloop__nB_8c.html#a2715c0f63ac8b203a76e7e3347fe87e8" title="Propagate the filters." alt="" coords="1449,165,1620,205"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1686,187,1620,187,1620,182,1686,182"/>
+<area shape="rect" id="Node000013" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="1275,173,1401,198"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1435,188,1401,188,1401,183,1435,183"/>
+<area shape="rect" id="Node000014" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="1063,136,1227,176"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1260,176,1227,171,1227,166,1261,171"/>
+<area shape="rect" id="Node000024" href="$oneloop__nB_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1073,201,1216,226"/>
+<area shape="poly" id="edge28_Node000013_Node000024" title=" " alt="" coords="1261,199,1217,206,1216,200,1261,194"/>
+<area shape="rect" id="Node000015" href="$guidance__oneloop__nB_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="626,91,791,117"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1049,139,1014,133,898,120,792,111,792,106,898,115,1015,128,1050,134"/>
+<area shape="rect" id="Node000021" href="$guidance__oneloop__nB_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="852,193,1007,218"/>
+<area shape="poly" id="edge20_Node000014_Node000021" title=" " alt="" coords="1050,180,986,195,985,190,1048,175"/>
+<area shape="rect" id="Node000023" href="$guidance__oneloop__nB_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="844,143,1015,169"/>
+<area shape="poly" id="edge25_Node000014_Node000023" title=" " alt="" coords="1049,159,1015,159,1015,153,1049,153"/>
+<area shape="rect" id="Node000016" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,142,573,167"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="641,122,547,145,545,139,639,117"/>
+<area shape="rect" id="Node000017" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,167,360,193"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="395,170,361,175,360,169,394,165"/>
+<area shape="rect" id="Node000018" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,110,188,135"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="240,166,187,151,143,138,145,133,189,145,241,161"/>
+<area shape="rect" id="Node000019" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,160,187,200"/>
+<area shape="poly" id="edge18_Node000017_Node000019" title=" " alt="" coords="222,183,188,183,188,177,222,177"/>
+<area shape="rect" id="Node000020" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,225,179,250"/>
+<area shape="poly" id="edge19_Node000017_Node000020" title=" " alt="" coords="241,199,189,215,145,227,143,222,187,209,240,194"/>
+<area shape="poly" id="edge21_Node000021_Node000016" title=" " alt="" coords="871,224,817,234,754,242,687,242,621,232,587,220,555,203,506,170,509,165,558,198,589,215,622,227,687,237,754,237,817,229,870,219"/>
+<area shape="rect" id="Node000022" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="621,193,796,218"/>
+<area shape="poly" id="edge22_Node000021_Node000022" title=" " alt="" coords="838,208,796,208,796,203,838,203"/>
+<area shape="poly" id="edge23_Node000022_Node000016" title=" " alt="" coords="639,192,545,170,547,165,641,187"/>
+<area shape="poly" id="edge24_Node000022_Node000017" title=" " alt="" coords="608,202,360,186,360,181,608,196"/>
+<area shape="poly" id="edge26_Node000023_Node000016" title=" " alt="" coords="830,158,574,158,574,152,830,153"/>
+<area shape="poly" id="edge27_Node000023_Node000022" title=" " alt="" coords="859,174,767,195,766,190,858,169"/>
+<area shape="rect" id="Node000027" href="$stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI." alt="" coords="1914,267,2075,293"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="2212,273,2076,279,2075,274,2212,268"/>
+<area shape="rect" id="Node000029" href="$complementary__filter__types_8h.html#a50f9daea41f3b3810be07193c1c67eb6" title="Initialize an array of 1st order complementary filters." alt="" coords="1881,317,2108,357"/>
+<area shape="poly" id="edge33_Node000028_Node000029" title=" " alt="" coords="2142,329,2109,332,2108,326,2142,324"/>
+<area shape="rect" id="Node000030" href="$complementary__filter__types_8h.html#af42041efa6949a36e13c5c79dd1f84e0" title="Initialize 3D vector of 1st order complementary filters." alt="" coords="1881,381,2108,421"/>
+<area shape="poly" id="edge34_Node000028_Node000030" title=" " alt="" coords="2185,336,2157,345,2133,358,2109,372,2076,384,2074,379,2107,367,2131,353,2155,340,2183,331"/>
+<area shape="rect" id="Node000031" href="$stabilization__andi_8c.html#a5b8b0fb1ef6bfb2dd8f79dfa0a0ea737" title=" " alt="" coords="1668,389,1833,414"/>
+<area shape="poly" id="edge35_Node000030_Node000031" title=" " alt="" coords="1868,404,1834,404,1834,399,1868,399"/>
 </map>

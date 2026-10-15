@@ -1,0 +1,11 @@
+<map id="spin_man_update" name="spin_man_update">
+<area shape="rect" id="Node000001" title="Spin transition manoeuvre state machine." alt="" coords="5,80,143,105"/>
+<area shape="rect" id="Node000002" href="$oneloop__nB_8c.html#ac88226d1b66bad762c0c83e1b3c3a532" title="Move the yaw rate reference towards target at spin_man_ramp_rate." alt="" coords="198,5,349,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,77,190,40,211,32,213,37,192,44,103,82"/>
+<area shape="rect" id="Node000003" href="$oneloop__nB_8c.html#ab82ea9ba4c3d3ad173445b4eea1c45fb" title="Stop the spin manoeuvre and clear its GCS triggers (fault flags are left as they are)" alt="" coords="211,55,336,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,81,197,74,197,80,143,87"/>
+<area shape="rect" id="Node000004" href="$oneloop__nB_8c.html#a52d6c270b742a435d7affcbbab27609b" title="Select the motors of a pair (pitch: FRONT/BACK, roll: RIGHT/LEFT) for the blend." alt="" coords="201,104,345,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,98,188,104,187,109,143,104"/>
+<area shape="rect" id="Node000005" href="$oneloop__nB_8c.html#a8394e54451903a0d429d2425ccd67d66" title="Start a bumpless transfer of the selected pair from the average of its last applied commands,..." alt="" coords="191,153,356,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="105,103,192,138,217,147,215,152,190,143,103,108"/>
+</map>

@@ -127,6 +127,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html',''); initResizab
 <li class="level2"><a href="#modules_category_mission">Mission modules</a></li>
 <li class="level2"><a href="#modules_category_multi">Multi modules</a></li>
 <li class="level2"><a href="#modules_category_nav">Nav modules</a></li>
+<li class="level2"><a href="#modules_category_oneloop">Oneloop modules</a></li>
 <li class="level2"><a href="#modules_category_optical_flow">Optical_Flow modules</a></li>
 <li class="level2"><a href="#modules_category_orange_avoider">Orange_Avoider modules</a></li>
 <li class="level2"><a href="#modules_category_radio_control">Radio_Control modules</a></li>
@@ -293,8 +294,10 @@ Ctrl modules</h2>
 <li><a class="el" href="module__eff_scheduling_falcon.html">eff_scheduling_falcon module</a> : Interpolation of control effectivenss matrix of the Falcon hybride plane</li>
 <li><a class="el" href="module__eff_scheduling_generic.html">eff_scheduling_generic module</a> : Interpolation of control effectivenss matrix.</li>
 <li><a class="el" href="module__eff_scheduling_nederdrone.html">eff_scheduling_nederdrone module</a> : Interpolation of control effectivenss matrix</li>
+<li><a class="el" href="module__eff_scheduling_plusquad.html">eff_scheduling_plusquad module</a> : T</li>
 <li><a class="el" href="module__eff_scheduling_rotwing.html">eff_scheduling_rotwing module</a> : T</li>
 <li><a class="el" href="module__eff_scheduling_rotwing_v2.html">eff_scheduling_rotwing_v2 module</a> : T</li>
+<li><a class="el" href="module__eff_scheduling_rotwing_nb.html">eff_scheduling_rotwing_nb module</a> : T</li>
 <li><a class="el" href="module__follow_me.html">follow_me module</a> : Follow a ground based object which is transmitting the TARGET_POS datalink message or using RTK GPS.</li>
 <li><a class="el" href="module__gain_scheduling.html">gain_scheduling module</a> : Gain set interpolation.</li>
 <li><a class="el" href="module__object_tracking.html">object_tracking module</a> : Control a rotorcraft heading to track an object detected by a camera</li>
@@ -416,6 +419,7 @@ Guidance modules</h2>
 <li><a class="el" href="module__guidance_indi_hybrid_tailsitter.html">guidance_indi_hybrid_tailsitter module</a> : Guidance controller for hybrid tailsitter vehicles</li>
 <li><a class="el" href="module__guidance_indi_quadrotor.html">guidance_indi_quadrotor module</a> : Basic quadrotor model for INDI guidance</li>
 <li><a class="el" href="module__guidance_oneloop.html">guidance_oneloop module</a> : Dummy file for oneloop controller</li>
+<li><a class="el" href="module__guidance_oneloop_nb.html">guidance_oneloop_nb module</a> : Dummy file for oneloop controller</li>
 <li><a class="el" href="module__guidance_pid_rotorcraft.html">guidance_pid_rotorcraft module</a> : Basic guidance code for rotorcraft with PID control</li>
 <li><a class="el" href="module__guidance_plane_pid_rotorcraft.html">guidance_plane_pid_rotorcraft module</a> : Basic guidance code for fixedwing planes using the rotorcraft firmware</li>
 <li><a class="el" href="module__guidance_rotorcraft.html">guidance_rotorcraft module</a> : Base guidance code for rotorcraft</li>
@@ -651,6 +655,12 @@ Nav modules</h2>
 <li><a class="el" href="module__takeoff_detect.html">takeoff_detect module</a> : Fixed-wing automatic launch detection</li>
 <li><a class="el" href="module__tune_airspeed.html">tune_airspeed module</a> : NAV AIRSPEED.</li>
 </ul>
+<h2><a class="anchor" id="modules_category_oneloop"></a>
+Oneloop modules</h2>
+<ul>
+<li><a class="el" href="module__oneloop_andi.html">oneloop_andi module</a> : One loop (Guidance + <a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a>) ANDI controller for the rotating wing drone RW3C</li>
+<li><a class="el" href="module__oneloop_nb.html">oneloop_nb module</a> : One loop (Guidance + <a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a>) ANDI controller for the rotating wing drone RW3C</li>
+</ul>
 <h2><a class="anchor" id="modules_category_optical_flow"></a>
 Optical_Flow modules</h2>
 <ul>
@@ -846,7 +856,6 @@ Misc modules</h2>
 <li><a class="el" href="module__mav_course_exercise.html">mav_course_exercise module</a> : Exercise module for Autonomous Flight of MAV Course</li>
 <li><a class="el" href="module__obstacle_avoidance.html">obstacle_avoidance module</a> : Obstacle avoidance module</li>
 <li><a class="el" href="module__obstacle_rover.html">obstacle_rover module</a> : Obstacle rover grid</li>
-<li><a class="el" href="module__oneloop_andi.html">oneloop_andi module</a> : One loop (Guidance + <a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a>) ANDI controller for the rotating wing drone RW3C</li>
 <li><a class="el" href="module__opticflow_hover.html">opticflow_hover module</a> : Hovers the drone based on optical flow made for Linux video Devices.</li>
 <li><a class="el" href="module__osd_max7456.html">osd_max7456 module</a> : MAX7456 driver (SPI)</li>
 <li><a class="el" href="module__pano_unwrap.html">pano_unwrap module</a> : Unwrap images taken through a panoramic lens</li>
@@ -876,7 +885,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 14 2026 22:17:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 15 2026 14:41:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
