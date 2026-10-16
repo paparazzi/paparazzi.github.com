@@ -112,5 +112,22 @@ var searchData=
   ['bmp_5f280_109',['BMP_280',['../bmp280_8h.html#ab1f8d07ef6c7ead9cb731e2225e8e38ea7cd14d68193258bc6df03dbf69f4852d',1,'bmp280.h']]],
   ['bmp_5funkown_110',['BMP_UNKOWN',['../bmp280_8h.html#ab1f8d07ef6c7ead9cb731e2225e8e38ea63213773775614eb111ce1fe451d2774',1,'bmp280.h']]],
   ['butterworth_5f2_111',['butterworth_2',['../oneloop__andi_8h.html#a7ef0ab496f57e183b484e62e2053c94fa06aebc32bebe560df421b3e8c123808b',1,'BUTTERWORTH_2:&#160;oneloop_andi.h'],['../oneloop__nB_8h.html#a7ef0ab496f57e183b484e62e2053c94fa06aebc32bebe560df421b3e8c123808b',1,'BUTTERWORTH_2:&#160;oneloop_nB.h']]],
-  ['butterworth_5f4_112',['butterworth_4',['../oneloop__andi_8h.html#a7ef0ab496f57e183b484e62e2053c94faa6e4fe54fd758eb90addc0dc215076e4',1,'BUTTERWORTH_4:&#160;oneloop_andi.h'],['../oneloop__nB_8h.html#a7ef0ab496f57e183b484e62e2053c94faa6e4fe54fd758eb90addc0dc215076e4',1,'BUTTERWORTH_4:&#160;oneloop_nB.h']]]
+  ['butterworth_5f4_112',['butterworth_4',['../oneloop__andi_8h.html#a7ef0ab496f57e183b484e62e2053c94faa6e4fe54fd758eb90addc0dc215076e4',1,'BUTTERWORTH_4:&#160;oneloop_andi.h'],['../oneloop__nB_8h.html#a7ef0ab496f57e183b484e62e2053c94faa6e4fe54fd758eb90addc0dc215076e4',1,'BUTTERWORTH_4:&#160;oneloop_nB.h']]],
+  ['buzzer_5ftunes_5fanthem_5ffrance_113',['BUZZER_TUNES_ANTHEM_FRANCE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1ae1cb290021ac1c78d8808f451178d642',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fanthem_5fitaly_114',['BUZZER_TUNES_ANTHEM_ITALY',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1acfa199b339cf93dda01f572e2d1395cb',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fanthem_5fnetherlands_115',['BUZZER_TUNES_ANTHEM_NETHERLANDS',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1ab59e4cef4aad0a3efcbd1618dde5ab7a',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fcustom_5f1_116',['BUZZER_TUNES_CUSTOM_1',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a0f4a3c35085eeb0509b05bfd5bcda2d2',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fcustom_5f2_117',['BUZZER_TUNES_CUSTOM_2',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a3600ef54f0cac878a36b9c57c91e387f',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fcustom_5f3_118',['BUZZER_TUNES_CUSTOM_3',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a8e4d729642690e1063148c1ff3e761b9',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5ffur_5felise_119',['BUZZER_TUNES_FUR_ELISE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a8381ce05059dd5a4d372719da228dd54',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fgran_5fvals_120',['BUZZER_TUNES_GRAN_VALS',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1ae5b4a1541d39a7fa68fa039952742dd1',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fhappy_5fbirthday_121',['BUZZER_TUNES_HAPPY_BIRTHDAY',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1ac34a8de54521badd73dca15d42827d80',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fla_5fcucaracha_122',['BUZZER_TUNES_LA_CUCARACHA',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1af48f6c71e3316a84c4e1a8381323c19a',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fmushroom_123',['BUZZER_TUNES_MUSHROOM',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a7711c7e1bba3b03e55412b84d12f3b26',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fnb_124',['BUZZER_TUNES_NB',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1adeb50bff62cc32e120deddc84262eebe',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fnone_125',['BUZZER_TUNES_NONE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1adad286fd41972c497c9b857164736fab',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fode_5fto_5fjoy_126',['BUZZER_TUNES_ODE_TO_JOY',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a97bccfbadfe483434fe61557dacb9397',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fstartup_127',['BUZZER_TUNES_STARTUP',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a1dc58dae0fe6e4b8593aa1243b60c416',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5ftwinkle_128',['BUZZER_TUNES_TWINKLE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a04276f43b8a79eb6d7621e2d2700fe5f',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fwilliam_5ftell_129',['BUZZER_TUNES_WILLIAM_TELL',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1aabf8d32e3237fb6a43bd71f67577cc95',1,'buzzer_tunes.h']]]
 ];

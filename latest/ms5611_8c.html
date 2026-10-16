@@ -126,10 +126,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aadeaf57da29112210a74857311975e0a" id="r_aadeaf57da29112210a74857311975e0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#aadeaf57da29112210a74857311975e0a">ms5611_prom_crc_ok</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">prom</a>)</td></tr>
 <tr class="memdesc:aadeaf57da29112210a74857311975e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if CRC of PROM data is OK.  <br /></td></tr>
 <tr class="separator:aadeaf57da29112210a74857311975e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3efc8f29a1b06b12e734be3ab9b5eb4" id="r_ae3efc8f29a1b06b12e734be3ab9b5eb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4">ms5611_calc</a> (struct <a class="el" href="ms5611_8h.html#structMs5611Data">Ms5611Data</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ms</a>)</td></tr>
+<tr class="memitem:ae3efc8f29a1b06b12e734be3ab9b5eb4" id="r_ae3efc8f29a1b06b12e734be3ab9b5eb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4">ms5611_calc</a> (struct <a class="el" href="ms5611_8h.html#structMs5611Data">Ms5611Data</a> *ms)</td></tr>
 <tr class="memdesc:ae3efc8f29a1b06b12e734be3ab9b5eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate temperature and compensated pressure for MS5611.  <br /></td></tr>
 <tr class="separator:ae3efc8f29a1b06b12e734be3ab9b5eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dea78d3cbdf03549f9d15b920089ff1" id="r_a6dea78d3cbdf03549f9d15b920089ff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5607_calc</a> (struct <a class="el" href="ms5611_8h.html#structMs5611Data">Ms5611Data</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">ms</a>)</td></tr>
+<tr class="memitem:a6dea78d3cbdf03549f9d15b920089ff1" id="r_a6dea78d3cbdf03549f9d15b920089ff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5607_calc</a> (struct <a class="el" href="ms5611_8h.html#structMs5611Data">Ms5611Data</a> *ms)</td></tr>
 <tr class="memdesc:a6dea78d3cbdf03549f9d15b920089ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate temperature and compensated pressure for MS5607.  <br /></td></tr>
 <tr class="separator:a6dea78d3cbdf03549f9d15b920089ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ms5611_8c_source.html#l00124">124</a> of file <a class="el" href="ms5611_8c_source.html">ms5611.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
+<p class="reference">References <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="ms5611_8h_source.html#l00052">Ms5611Data::pressure</a>, and <a class="el" href="ms5611_8h_source.html#l00053">Ms5611Data::temperature</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ms5611__i2c_8c_source.html#l00119">ms5611_i2c_event()</a>, and <a class="el" href="ms5611__spi_8c_source.html#l00133">ms5611_spi_event()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -208,7 +208,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ms5611_8c_source.html#l00081">81</a> of file <a class="el" href="ms5611_8c_source.html">ms5611.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
+<p class="reference">References <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="ms5611_8h_source.html#l00052">Ms5611Data::pressure</a>, and <a class="el" href="ms5611_8h_source.html#l00053">Ms5611Data::temperature</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ms5611__i2c_8c_source.html#l00119">ms5611_i2c_event()</a>, and <a class="el" href="ms5611__spi_8c_source.html#l00133">ms5611_spi_event()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -291,7 +291,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611_8c.html">ms5611.c</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 12:16:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 13:54:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

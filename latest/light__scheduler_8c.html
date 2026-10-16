@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('light__scheduler_8c.html',''); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">light_scheduler.c File Reference</div></div>
@@ -102,6 +103,7 @@ $(document).ready(function(){initNavTree('light__scheduler_8c.html',''); initRes
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="light__scheduler_8h_source.html">modules/light/light_scheduler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="light__ws2812__arch_8h_source.html">modules/light/light_ws2812_arch.h</a>&quot;</code><br />
+<code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for light_scheduler.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,20 +111,49 @@ $(document).ready(function(){initNavTree('light__scheduler_8c.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="light__scheduler_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2light_2light__scheduler_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2light_2light__scheduler_8c" id="asw_2airborne_2modules_2light_2light__scheduler_8c">
-<area shape="rect" title="basic LED scheduler based on WS2812 RGB led driver" alt="" coords="77,5,245,45"/>
+<area shape="rect" title="basic LED scheduler based on WS2812 RGB led driver" alt="" coords="161,5,329,45"/>
 <area shape="rect" href="light__scheduler_8h.html" title="basic LED scheduler based on WS2812 RGB led driver" alt="" coords="5,93,149,133"/>
-<area shape="poly" title=" " alt="" coords="145,47,107,85,103,82,141,44"/>
+<area shape="poly" title=" " alt="" coords="210,48,127,90,125,85,207,43"/>
 <area shape="rect" href="light__ws2812__arch_8h.html" title="ws2812 driver based on ChibiOS" alt="" coords="173,93,317,133"/>
-<area shape="poly" title=" " alt="" coords="182,44,219,82,215,85,178,47"/>
-<area shape="rect" title=" " alt="" coords="218,181,273,207"/>
-<area shape="poly" title=" " alt="" coords="248,134,248,167,243,167,243,134"/>
+<area shape="poly" title=" " alt="" coords="248,46,248,79,243,79,243,46"/>
+<area shape="rect" title=" " alt="" coords="341,101,501,126"/>
+<area shape="poly" title=" " alt="" coords="285,43,387,92,385,97,283,48"/>
+<area shape="rect" title=" " alt="" coords="134,181,189,207"/>
+<area shape="poly" title=" " alt="" coords="99,132,141,170,137,174,96,136"/>
+<area shape="poly" title=" " alt="" coords="227,136,186,174,182,170,223,132"/>
 </map>
 </div>
 </div>
 <p><a href="light__scheduler_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a7b1d03701b619bcac5179f45c37ba29c" id="r_a7b1d03701b619bcac5179f45c37ba29c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a7b1d03701b619bcac5179f45c37ba29c">LIGHT_SCHEDULER_MODE</a>&#160;&#160;&#160;<a class="el" href="light__scheduler_8h.html#aeb604dffdf8f72de3cfc56d5429bbb48">LIGHT_SCHEDULER_MODE_RAINBOW</a></td></tr>
+<tr class="memdesc:a7b1d03701b619bcac5179f45c37ba29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional header needed by the alert condition.  <br /></td></tr>
+<tr class="separator:a7b1d03701b619bcac5179f45c37ba29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d932824ccef33a84561b6d60b88e67" id="r_a10d932824ccef33a84561b6d60b88e67"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a10d932824ccef33a84561b6d60b88e67">LIGHT_SCHEDULER_RED</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a10d932824ccef33a84561b6d60b88e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca368453585d9c055d01f280b87ef576" id="r_aca368453585d9c055d01f280b87ef576"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#aca368453585d9c055d01f280b87ef576">LIGHT_SCHEDULER_GREEN</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:aca368453585d9c055d01f280b87ef576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d2a71ec9b8a7ab7f0cb132eab4c54b" id="r_a58d2a71ec9b8a7ab7f0cb132eab4c54b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a58d2a71ec9b8a7ab7f0cb132eab4c54b">LIGHT_SCHEDULER_BLUE</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a58d2a71ec9b8a7ab7f0cb132eab4c54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a30071a54b6bcf270a9601eb26a4937" id="r_a2a30071a54b6bcf270a9601eb26a4937"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a2a30071a54b6bcf270a9601eb26a4937">LIGHT_SCHEDULER_BRIGHTNESS</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a2a30071a54b6bcf270a9601eb26a4937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edc95728a677183b768ad491390c714" id="r_a9edc95728a677183b768ad491390c714"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a9edc95728a677183b768ad491390c714">LIGHT_SCHEDULER_COLOR</a>&#160;&#160;&#160;<a class="el" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaca3879327980b1b9f5506b8b41933519">LIGHT_SCHEDULER_COLOR_CUSTOM</a></td></tr>
+<tr class="memdesc:a9edc95728a677183b768ad491390c714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Startup color preset, overrides LIGHT_SCHEDULER_RED/GREEN/BLUE when not custom.  <br /></td></tr>
+<tr class="separator:a9edc95728a677183b768ad491390c714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0475f1e39ed264a732531e7ec37fc2ae" id="r_a0475f1e39ed264a732531e7ec37fc2ae"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a0475f1e39ed264a732531e7ec37fc2ae">LIGHT_SCHEDULER_ALERT_COLOR</a>&#160;&#160;&#160;<a class="el" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a></td></tr>
+<tr class="memdesc:a0475f1e39ed264a732531e7ec37fc2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alert color, shown in every mode while LIGHT_SCHEDULER_ALERT is true.  <br /></td></tr>
+<tr class="separator:a0475f1e39ed264a732531e7ec37fc2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6604ba52d362ec83151113828ca2a8d4" id="r_a6604ba52d362ec83151113828ca2a8d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a6604ba52d362ec83151113828ca2a8d4">light_scheduler_set</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> r, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="oneloop__andi_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</td></tr>
+<tr class="memdesc:a6604ba52d362ec83151113828ca2a8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">set one led, scaled by the brightness setting  <br /></td></tr>
+<tr class="separator:a6604ba52d362ec83151113828ca2a8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3ec55f6c771021b0c99ffdaf64e8f4" id="r_a5b3ec55f6c771021b0c99ffdaf64e8f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a5b3ec55f6c771021b0c99ffdaf64e8f4">light_scheduler_set_color</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">color</a>)</td></tr>
+<tr class="memdesc:a5b3ec55f6c771021b0c99ffdaf64e8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings handler: apply a color preset to red/green/blue (or select a flag) and switch to color mode.  <br /></td></tr>
+<tr class="separator:a5b3ec55f6c771021b0c99ffdaf64e8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8306780e037cc4384e8a0a33da77bf8b" id="r_a8306780e037cc4384e8a0a33da77bf8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a8306780e037cc4384e8a0a33da77bf8b">light_scheduler_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a8306780e037cc4384e8a0a33da77bf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8748371fe7c9b89c5acb7c1e055ee4d0" id="r_a8748371fe7c9b89c5acb7c1e055ee4d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a8748371fe7c9b89c5acb7c1e055ee4d0">light_scheduler_periodic</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
@@ -130,6 +161,30 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a346d75213f5416ebf245ce7b2eda3faf" id="r_a346d75213f5416ebf245ce7b2eda3faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a346d75213f5416ebf245ce7b2eda3faf">light_scheduler_mode</a> = <a class="el" href="light__scheduler_8c.html#a7b1d03701b619bcac5179f45c37ba29c">LIGHT_SCHEDULER_MODE</a></td></tr>
+<tr class="memdesc:a346d75213f5416ebf245ce7b2eda3faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">one of LIGHT_SCHEDULER_MODE_*  <br /></td></tr>
+<tr class="separator:a346d75213f5416ebf245ce7b2eda3faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77391c60b4a2dfe7c01e97bfa8bf7cd7" id="r_a77391c60b4a2dfe7c01e97bfa8bf7cd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a77391c60b4a2dfe7c01e97bfa8bf7cd7">light_scheduler_red</a> = <a class="el" href="light__scheduler_8c.html#a10d932824ccef33a84561b6d60b88e67">LIGHT_SCHEDULER_RED</a></td></tr>
+<tr class="memdesc:a77391c60b4a2dfe7c01e97bfa8bf7cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">red value in color mode  <br /></td></tr>
+<tr class="separator:a77391c60b4a2dfe7c01e97bfa8bf7cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c2f0f799a22125bc0e55835a9f7832" id="r_a07c2f0f799a22125bc0e55835a9f7832"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a07c2f0f799a22125bc0e55835a9f7832">light_scheduler_green</a> = <a class="el" href="light__scheduler_8c.html#aca368453585d9c055d01f280b87ef576">LIGHT_SCHEDULER_GREEN</a></td></tr>
+<tr class="memdesc:a07c2f0f799a22125bc0e55835a9f7832"><td class="mdescLeft">&#160;</td><td class="mdescRight">green value in color mode  <br /></td></tr>
+<tr class="separator:a07c2f0f799a22125bc0e55835a9f7832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ced33b80508dd287d6cb46e9b087082" id="r_a4ced33b80508dd287d6cb46e9b087082"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a4ced33b80508dd287d6cb46e9b087082">light_scheduler_blue</a> = <a class="el" href="light__scheduler_8c.html#a58d2a71ec9b8a7ab7f0cb132eab4c54b">LIGHT_SCHEDULER_BLUE</a></td></tr>
+<tr class="memdesc:a4ced33b80508dd287d6cb46e9b087082"><td class="mdescLeft">&#160;</td><td class="mdescRight">blue value in color mode  <br /></td></tr>
+<tr class="separator:a4ced33b80508dd287d6cb46e9b087082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ecbbc80919dac11d08ed73481188a5" id="r_af8ecbbc80919dac11d08ed73481188a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#af8ecbbc80919dac11d08ed73481188a5">light_scheduler_brightness</a> = <a class="el" href="light__scheduler_8c.html#a2a30071a54b6bcf270a9601eb26a4937">LIGHT_SCHEDULER_BRIGHTNESS</a></td></tr>
+<tr class="memdesc:af8ecbbc80919dac11d08ed73481188a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">brightness scaling (255 = full)  <br /></td></tr>
+<tr class="separator:af8ecbbc80919dac11d08ed73481188a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24571f2058a5028fff476782007f25d2" id="r_a24571f2058a5028fff476782007f25d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a24571f2058a5028fff476782007f25d2">light_scheduler_color</a> = <a class="el" href="light__scheduler_8c.html#a9edc95728a677183b768ad491390c714">LIGHT_SCHEDULER_COLOR</a></td></tr>
+<tr class="memdesc:a24571f2058a5028fff476782007f25d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">selected preset (light_scheduler_color_t)  <br /></td></tr>
+<tr class="separator:a24571f2058a5028fff476782007f25d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b9e7ce925459ecd6d244fe98ad6c43" id="r_a39b9e7ce925459ecd6d244fe98ad6c43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a39b9e7ce925459ecd6d244fe98ad6c43">light_scheduler_presets</a> [<a class="el" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>][3]</td></tr>
+<tr class="memdesc:a39b9e7ce925459ecd6d244fe98ad6c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB values of the single color presets.  <br /></td></tr>
+<tr class="separator:a39b9e7ce925459ecd6d244fe98ad6c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ca77043cabb1fb12b68d36b383e906" id="r_ac6ca77043cabb1fb12b68d36b383e906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#ac6ca77043cabb1fb12b68d36b383e906">light_scheduler_flags</a> [<a class="el" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeac37590c1d15f67ec52614d00dde9a11e">LIGHT_SCHEDULER_COLOR_NB</a> - <a class="el" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>][3]</td></tr>
+<tr class="memdesc:ac6ca77043cabb1fb12b68d36b383e906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags: three color presets, from the first to the last led of a strip.  <br /></td></tr>
+<tr class="separator:ac6ca77043cabb1fb12b68d36b383e906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dee666f0c1fe072c549ff86b1d0a8ab" id="r_a2dee666f0c1fe072c549ff86b1d0a8ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a> = 0</td></tr>
 <tr class="separator:a2dee666f0c1fe072c549ff86b1d0a8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -138,7 +193,126 @@ Variables</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Xavier Paris @maintainer Gautier Hattenberger <a href="#" onclick="location.href='mai'+'lto:'+'gau'+'ti'+'er.'+'ha'+'tte'+'nb'+'erg'+'er'+'@en'+'ac'+'.fr'; return false;">gauti<span class="obfuscator">.nosp@m.</span>er.h<span class="obfuscator">.nosp@m.</span>atten<span class="obfuscator">.nosp@m.</span>berg<span class="obfuscator">.nosp@m.</span>er@en<span class="obfuscator">.nosp@m.</span>ac.f<span class="obfuscator">.nosp@m.</span>r</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a0475f1e39ed264a732531e7ec37fc2ae" name="a0475f1e39ed264a732531e7ec37fc2ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0475f1e39ed264a732531e7ec37fc2ae">&#9670;&#160;</a></span>LIGHT_SCHEDULER_ALERT_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_ALERT_COLOR&#160;&#160;&#160;<a class="el" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alert color, shown in every mode while LIGHT_SCHEDULER_ALERT is true. </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00066">66</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a id="a58d2a71ec9b8a7ab7f0cb132eab4c54b" name="a58d2a71ec9b8a7ab7f0cb132eab4c54b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d2a71ec9b8a7ab7f0cb132eab4c54b">&#9670;&#160;</a></span>LIGHT_SCHEDULER_BLUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_BLUE&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00052">52</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a id="a2a30071a54b6bcf270a9601eb26a4937" name="a2a30071a54b6bcf270a9601eb26a4937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a30071a54b6bcf270a9601eb26a4937">&#9670;&#160;</a></span>LIGHT_SCHEDULER_BRIGHTNESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_BRIGHTNESS&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00056">56</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a id="a9edc95728a677183b768ad491390c714" name="a9edc95728a677183b768ad491390c714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edc95728a677183b768ad491390c714">&#9670;&#160;</a></span>LIGHT_SCHEDULER_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_COLOR&#160;&#160;&#160;<a class="el" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaca3879327980b1b9f5506b8b41933519">LIGHT_SCHEDULER_COLOR_CUSTOM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Startup color preset, overrides LIGHT_SCHEDULER_RED/GREEN/BLUE when not custom. </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00061">61</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a id="aca368453585d9c055d01f280b87ef576" name="aca368453585d9c055d01f280b87ef576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca368453585d9c055d01f280b87ef576">&#9670;&#160;</a></span>LIGHT_SCHEDULER_GREEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_GREEN&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00048">48</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a id="a7b1d03701b619bcac5179f45c37ba29c" name="a7b1d03701b619bcac5179f45c37ba29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1d03701b619bcac5179f45c37ba29c">&#9670;&#160;</a></span>LIGHT_SCHEDULER_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_MODE&#160;&#160;&#160;<a class="el" href="light__scheduler_8h.html#aeb604dffdf8f72de3cfc56d5429bbb48">LIGHT_SCHEDULER_MODE_RAINBOW</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional header needed by the alert condition. </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00040">40</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a id="a10d932824ccef33a84561b6d60b88e67" name="a10d932824ccef33a84561b6d60b88e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d932824ccef33a84561b6d60b88e67">&#9670;&#160;</a></span>LIGHT_SCHEDULER_RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LIGHT_SCHEDULER_RED&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00044">44</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a8306780e037cc4384e8a0a33da77bf8b" name="a8306780e037cc4384e8a0a33da77bf8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8306780e037cc4384e8a0a33da77bf8b">&#9670;&#160;</a></span>light_scheduler_init()</h2>
 
@@ -155,9 +329,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00035">35</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00122">122</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
 
-<p class="reference">References <a class="el" href="light__ws2812__arch_8c_source.html#l00089">light_ws2812_arch_init()</a>.</p>
+<p class="reference">References <a class="el" href="light__scheduler_8c_source.html#l00074">light_scheduler_color</a>, <a class="el" href="light__scheduler_8h_source.html#l00050">LIGHT_SCHEDULER_COLOR_CUSTOM</a>, <a class="el" href="light__scheduler_8c_source.html#l00069">light_scheduler_mode</a>, <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00101">light_ws2812_arch_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00065">mode</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -165,11 +339,13 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="light__scheduler_8c_a8306780e037cc4384e8a0a33da77bf8b_cgraph.png" border="0" usemap="#alight__scheduler_8c_a8306780e037cc4384e8a0a33da77bf8b_cgraph" alt=""/></div>
 <map name="alight__scheduler_8c_a8306780e037cc4384e8a0a33da77bf8b_cgraph" id="alight__scheduler_8c_a8306780e037cc4384e8a0a33da77bf8b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,129,155,155"/>
+<area shape="rect" title=" " alt="" coords="5,101,155,127"/>
+<area shape="rect" href="light__scheduler_8c.html#a5b3ec55f6c771021b0c99ffdaf64e8f4" title="Settings handler: apply a color preset to red/green/blue (or select a flag) and switch to color mode." alt="" coords="214,65,362,105"/>
+<area shape="poly" title=" " alt="" coords="155,101,200,94,201,100,155,106"/>
 <area shape="rect" href="light__ws2812__arch_8c.html#a77c4ae9d967234a1c215b097f18241c8" title=" " alt="" coords="203,129,373,155"/>
-<area shape="poly" title=" " alt="" coords="155,139,189,139,189,145,155,145"/>
+<area shape="poly" title=" " alt="" coords="155,121,189,126,189,131,155,127"/>
 <area shape="rect" href="hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c" title=" " alt="" coords="434,55,549,80"/>
-<area shape="poly" title=" " alt="" coords="321,127,420,89,439,82,441,87,422,94,323,132"/>
+<area shape="poly" title=" " alt="" coords="337,127,372,114,420,89,437,82,439,87,422,94,374,119,338,132"/>
 <area shape="rect" href="hal__stm32__dma_8c.html#ad255236c42982a3368342bbfeee0c783" title="Configures and activates the DMA peripheral." alt="" coords="450,104,533,129"/>
 <area shape="poly" title=" " alt="" coords="374,129,436,121,437,126,374,134"/>
 <area shape="rect" href="hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30" title="Starts a DMA transaction." alt="" coords="422,153,561,179"/>
@@ -219,9 +395,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00040">40</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00132">132</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00162">light_ws2812_arch_set()</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="light__ws2812__arch_8h_source.html#l00036">WS2812_NB_LEDS</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="light__scheduler_8c_source.html#l00066">LIGHT_SCHEDULER_ALERT_COLOR</a>, <a class="el" href="light__scheduler_8c_source.html#l00072">light_scheduler_blue</a>, <a class="el" href="light__scheduler_8c_source.html#l00074">light_scheduler_color</a>, <a class="el" href="light__scheduler_8h_source.html#l00066">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>, <a class="el" href="light__scheduler_8h_source.html#l00063">LIGHT_SCHEDULER_COLOR_NB</a>, <a class="el" href="light__scheduler_8c_source.html#l00091">light_scheduler_flags</a>, <a class="el" href="light__scheduler_8c_source.html#l00071">light_scheduler_green</a>, <a class="el" href="light__scheduler_8c_source.html#l00069">light_scheduler_mode</a>, <a class="el" href="light__scheduler_8h_source.html#l00037">LIGHT_SCHEDULER_MODE_COLOR</a>, <a class="el" href="light__scheduler_8h_source.html#l00038">LIGHT_SCHEDULER_MODE_OFF</a>, <a class="el" href="light__scheduler_8c_source.html#l00077">light_scheduler_presets</a>, <a class="el" href="light__scheduler_8c_source.html#l00070">light_scheduler_red</a>, <a class="el" href="light__scheduler_8c_source.html#l00103">light_scheduler_set()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00178">light_ws2812_arch_set()</a>, <a class="el" href="light__scheduler_8c_source.html#l00100">s</a>, and <a class="el" href="light__ws2812__arch_8h_source.html#l00036">WS2812_NB_LEDS</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -229,15 +405,346 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="light__scheduler_8c_a8748371fe7c9b89c5acb7c1e055ee4d0_cgraph.png" border="0" usemap="#alight__scheduler_8c_a8748371fe7c9b89c5acb7c1e055ee4d0_cgraph" alt=""/></div>
 <map name="alight__scheduler_8c_a8748371fe7c9b89c5acb7c1e055ee4d0_cgraph" id="alight__scheduler_8c_a8748371fe7c9b89c5acb7c1e055ee4d0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,185,31"/>
-<area shape="rect" href="light__ws2812__arch_8c.html#a5efcab2e04c8eacd7a9ddf973752a788" title="set color RGB color of one led" alt="" coords="233,5,404,31"/>
-<area shape="poly" title=" " alt="" coords="186,15,220,15,220,21,186,21"/>
+<area shape="rect" title=" " alt="" coords="5,31,185,56"/>
+<area shape="rect" href="light__scheduler_8c.html#a6604ba52d362ec83151113828ca2a8d4" title="set one led, scaled by the brightness setting" alt="" coords="233,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="185,30,219,26,220,31,186,35"/>
+<area shape="rect" href="light__ws2812__arch_8c.html#a5efcab2e04c8eacd7a9ddf973752a788" title="set color RGB color of one led" alt="" coords="429,31,600,56"/>
+<area shape="poly" title=" " alt="" coords="186,41,416,41,416,46,186,46"/>
+<area shape="poly" title=" " alt="" coords="382,24,416,29,415,34,381,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6604ba52d362ec83151113828ca2a8d4" name="a6604ba52d362ec83151113828ca2a8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6604ba52d362ec83151113828ca2a8d4">&#9670;&#160;</a></span>light_scheduler_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> light_scheduler_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set one led, scaled by the brightness setting </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00103">103</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="oneloop__andi_8c_source.html#l00134">g</a>, <a class="el" href="light__scheduler_8c_source.html#l00073">light_scheduler_brightness</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00178">light_ws2812_arch_set()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="light__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_cgraph.png" border="0" usemap="#alight__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_cgraph" alt=""/></div>
+<map name="alight__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_cgraph" id="alight__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_cgraph">
+<area shape="rect" title="set one led, scaled by the brightness setting" alt="" coords="5,5,153,31"/>
+<area shape="rect" href="light__ws2812__arch_8c.html#a5efcab2e04c8eacd7a9ddf973752a788" title="set color RGB color of one led" alt="" coords="201,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="153,15,188,15,188,21,153,21"/>
+</map>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="light__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_icgraph.png" border="0" usemap="#alight__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_icgraph" alt=""/></div>
+<map name="alight__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_icgraph" id="alight__scheduler_8c_a6604ba52d362ec83151113828ca2a8d4_icgraph">
+<area shape="rect" title="set one led, scaled by the brightness setting" alt="" coords="233,5,381,31"/>
+<area shape="rect" href="light__scheduler_8c.html#a8748371fe7c9b89c5acb7c1e055ee4d0" title=" " alt="" coords="5,5,185,31"/>
+<area shape="poly" title=" " alt="" coords="219,21,186,21,186,15,219,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b3ec55f6c771021b0c99ffdaf64e8f4" name="a5b3ec55f6c771021b0c99ffdaf64e8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3ec55f6c771021b0c99ffdaf64e8f4">&#9670;&#160;</a></span>light_scheduler_set_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> light_scheduler_set_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Settings handler: apply a color preset to red/green/blue (or select a flag) and switch to color mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00109">109</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="light__scheduler_8c_source.html#l00072">light_scheduler_blue</a>, <a class="el" href="light__scheduler_8c_source.html#l00074">light_scheduler_color</a>, <a class="el" href="light__scheduler_8h_source.html#l00050">LIGHT_SCHEDULER_COLOR_CUSTOM</a>, <a class="el" href="light__scheduler_8h_source.html#l00066">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>, <a class="el" href="light__scheduler_8h_source.html#l00063">LIGHT_SCHEDULER_COLOR_NB</a>, <a class="el" href="light__scheduler_8c_source.html#l00071">light_scheduler_green</a>, <a class="el" href="light__scheduler_8c_source.html#l00069">light_scheduler_mode</a>, <a class="el" href="light__scheduler_8h_source.html#l00037">LIGHT_SCHEDULER_MODE_COLOR</a>, <a class="el" href="light__scheduler_8c_source.html#l00077">light_scheduler_presets</a>, and <a class="el" href="light__scheduler_8c_source.html#l00070">light_scheduler_red</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00122">light_scheduler_init()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="light__scheduler_8c_a5b3ec55f6c771021b0c99ffdaf64e8f4_icgraph.png" border="0" usemap="#alight__scheduler_8c_a5b3ec55f6c771021b0c99ffdaf64e8f4_icgraph" alt=""/></div>
+<map name="alight__scheduler_8c_a5b3ec55f6c771021b0c99ffdaf64e8f4_icgraph" id="alight__scheduler_8c_a5b3ec55f6c771021b0c99ffdaf64e8f4_icgraph">
+<area shape="rect" title="Settings handler: apply a color preset to red/green/blue (or select a flag) and switch to color mode." alt="" coords="203,5,351,45"/>
+<area shape="rect" href="light__scheduler_8c.html#a8306780e037cc4384e8a0a33da77bf8b" title=" " alt="" coords="5,13,155,38"/>
+<area shape="poly" title=" " alt="" coords="189,28,155,28,155,23,189,23"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a4ced33b80508dd287d6cb46e9b087082" name="a4ced33b80508dd287d6cb46e9b087082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ced33b80508dd287d6cb46e9b087082">&#9670;&#160;</a></span>light_scheduler_blue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_blue = <a class="el" href="light__scheduler_8c.html#a58d2a71ec9b8a7ab7f0cb132eab4c54b">LIGHT_SCHEDULER_BLUE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>blue value in color mode </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00072">72</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>.</p>
+
+</div>
+</div>
+<a id="af8ecbbc80919dac11d08ed73481188a5" name="af8ecbbc80919dac11d08ed73481188a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ecbbc80919dac11d08ed73481188a5">&#9670;&#160;</a></span>light_scheduler_brightness</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_brightness = <a class="el" href="light__scheduler_8c.html#a2a30071a54b6bcf270a9601eb26a4937">LIGHT_SCHEDULER_BRIGHTNESS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>brightness scaling (255 = full) </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00073">73</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00103">light_scheduler_set()</a>.</p>
+
+</div>
+</div>
+<a id="a24571f2058a5028fff476782007f25d2" name="a24571f2058a5028fff476782007f25d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24571f2058a5028fff476782007f25d2">&#9670;&#160;</a></span>light_scheduler_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_color = <a class="el" href="light__scheduler_8c.html#a9edc95728a677183b768ad491390c714">LIGHT_SCHEDULER_COLOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>selected preset (light_scheduler_color_t) </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00074">74</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00122">light_scheduler_init()</a>, <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>.</p>
+
+</div>
+</div>
+<a id="ac6ca77043cabb1fb12b68d36b383e906" name="ac6ca77043cabb1fb12b68d36b383e906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ca77043cabb1fb12b68d36b383e906">&#9670;&#160;</a></span>light_scheduler_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_flags[<a class="el" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeac37590c1d15f67ec52614d00dde9a11e">LIGHT_SCHEDULER_COLOR_NB</a> - <a class="el" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>][3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea196c558bba6a942120b2464f476f5e46">LIGHT_SCHEDULER_COLOR_FLAG_ITALY</a> - <a class="code hl_define" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>] =</div>
+<div class="line">    {<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a>, <a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea823beaf792ecea5951ddafbf3d8d8f89">LIGHT_SCHEDULER_COLOR_WHITE</a>, <a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea75de5446c2a9685b2d9d202611f31962">LIGHT_SCHEDULER_COLOR_GREEN</a>},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaa5549297b7ad47728bd3bd43532a06b4">LIGHT_SCHEDULER_COLOR_FLAG_NETHERLANDS</a> - <a class="code hl_define" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>] =</div>
+<div class="line">    {<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a>, <a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea823beaf792ecea5951ddafbf3d8d8f89">LIGHT_SCHEDULER_COLOR_WHITE</a>, <a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea03e42126370ce39d20ef33bc523fb526">LIGHT_SCHEDULER_COLOR_BLUE</a>},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea25fe5e7ed5165b1e192d6d720a9963c3">LIGHT_SCHEDULER_COLOR_FLAG_FRANCE</a> - <a class="code hl_define" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>] =</div>
+<div class="line">    {<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea03e42126370ce39d20ef33bc523fb526">LIGHT_SCHEDULER_COLOR_BLUE</a>, <a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea823beaf792ecea5951ddafbf3d8d8f89">LIGHT_SCHEDULER_COLOR_WHITE</a>, <a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a>},</div>
+<div class="line">}</div>
+<div class="ttc" id="alight__scheduler_8h_html_a12aef20e45f52fd1df2909508a2f70bd"><div class="ttname"><a href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a></div><div class="ttdeci">#define LIGHT_SCHEDULER_COLOR_FLAG_FIRST</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00066">light_scheduler.h:66</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea03e42126370ce39d20ef33bc523fb526"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea03e42126370ce39d20ef33bc523fb526">LIGHT_SCHEDULER_COLOR_BLUE</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_BLUE</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00053">light_scheduler.h:53</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea196c558bba6a942120b2464f476f5e46"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea196c558bba6a942120b2464f476f5e46">LIGHT_SCHEDULER_COLOR_FLAG_ITALY</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_FLAG_ITALY</div><div class="ttdoc">first flag, red | white | green</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00060">light_scheduler.h:60</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea25fe5e7ed5165b1e192d6d720a9963c3"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea25fe5e7ed5165b1e192d6d720a9963c3">LIGHT_SCHEDULER_COLOR_FLAG_FRANCE</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_FLAG_FRANCE</div><div class="ttdoc">blue | white | red</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00062">light_scheduler.h:62</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea75de5446c2a9685b2d9d202611f31962"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea75de5446c2a9685b2d9d202611f31962">LIGHT_SCHEDULER_COLOR_GREEN</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_GREEN</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00052">light_scheduler.h:52</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea823beaf792ecea5951ddafbf3d8d8f89"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea823beaf792ecea5951ddafbf3d8d8f89">LIGHT_SCHEDULER_COLOR_WHITE</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_WHITE</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00054">light_scheduler.h:54</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edeaa5549297b7ad47728bd3bd43532a06b4"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaa5549297b7ad47728bd3bd43532a06b4">LIGHT_SCHEDULER_COLOR_FLAG_NETHERLANDS</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_FLAG_NETHERLANDS</div><div class="ttdoc">red | white | blue</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00061">light_scheduler.h:61</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_RED</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00051">light_scheduler.h:51</a></div></div>
+</div><!-- fragment -->
+<p>Flags: three color presets, from the first to the last led of a strip. </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00091">91</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>.</p>
+
+</div>
+</div>
+<a id="a07c2f0f799a22125bc0e55835a9f7832" name="a07c2f0f799a22125bc0e55835a9f7832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c2f0f799a22125bc0e55835a9f7832">&#9670;&#160;</a></span>light_scheduler_green</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_green = <a class="el" href="light__scheduler_8c.html#aca368453585d9c055d01f280b87ef576">LIGHT_SCHEDULER_GREEN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>green value in color mode </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00071">71</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>.</p>
+
+</div>
+</div>
+<a id="a346d75213f5416ebf245ce7b2eda3faf" name="a346d75213f5416ebf245ce7b2eda3faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346d75213f5416ebf245ce7b2eda3faf">&#9670;&#160;</a></span>light_scheduler_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_mode = <a class="el" href="light__scheduler_8c.html#a7b1d03701b619bcac5179f45c37ba29c">LIGHT_SCHEDULER_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>one of LIGHT_SCHEDULER_MODE_* </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00069">69</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00122">light_scheduler_init()</a>, <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>.</p>
+
+</div>
+</div>
+<a id="a39b9e7ce925459ecd6d244fe98ad6c43" name="a39b9e7ce925459ecd6d244fe98ad6c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b9e7ce925459ecd6d244fe98ad6c43">&#9670;&#160;</a></span>light_scheduler_presets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_presets[<a class="el" href="light__scheduler_8h.html#a12aef20e45f52fd1df2909508a2f70bd">LIGHT_SCHEDULER_COLOR_FLAG_FIRST</a>][3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaca3879327980b1b9f5506b8b41933519">LIGHT_SCHEDULER_COLOR_CUSTOM</a>]  = {255, 255, 255},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38">LIGHT_SCHEDULER_COLOR_RED</a>]     = {255,   0,   0},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea75de5446c2a9685b2d9d202611f31962">LIGHT_SCHEDULER_COLOR_GREEN</a>]   = {  0, 255,   0},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea03e42126370ce39d20ef33bc523fb526">LIGHT_SCHEDULER_COLOR_BLUE</a>]    = {  0,   0, 255},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea823beaf792ecea5951ddafbf3d8d8f89">LIGHT_SCHEDULER_COLOR_WHITE</a>]   = {255, 255, 255},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaac96feb57dfac1892c32742c66bcd799">LIGHT_SCHEDULER_COLOR_YELLOW</a>]  = {255, 180,   0},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea9b2a210529920f7c3c65ac8e1f8387ca">LIGHT_SCHEDULER_COLOR_ORANGE</a>]  = {255,  60,   0},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae2395ff41e4a490ebde75fcbd0c2c591">LIGHT_SCHEDULER_COLOR_CYAN</a>]    = {  0, 255, 255},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaead398af0aa9a652283680145c34cd0c">LIGHT_SCHEDULER_COLOR_MAGENTA</a>] = {255,   0, 255},</div>
+<div class="line">  [<a class="code hl_enumvalue" href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea9e73a4e8a7b99f74c91ad12516671f68">LIGHT_SCHEDULER_COLOR_PURPLE</a>]  = {128,   0, 255},</div>
+<div class="line">}</div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea9b2a210529920f7c3c65ac8e1f8387ca"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea9b2a210529920f7c3c65ac8e1f8387ca">LIGHT_SCHEDULER_COLOR_ORANGE</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_ORANGE</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00056">light_scheduler.h:56</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edea9e73a4e8a7b99f74c91ad12516671f68"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edea9e73a4e8a7b99f74c91ad12516671f68">LIGHT_SCHEDULER_COLOR_PURPLE</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_PURPLE</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00059">light_scheduler.h:59</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edeaac96feb57dfac1892c32742c66bcd799"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaac96feb57dfac1892c32742c66bcd799">LIGHT_SCHEDULER_COLOR_YELLOW</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_YELLOW</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00055">light_scheduler.h:55</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edeaca3879327980b1b9f5506b8b41933519"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaca3879327980b1b9f5506b8b41933519">LIGHT_SCHEDULER_COLOR_CUSTOM</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_CUSTOM</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00050">light_scheduler.h:50</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edeae2395ff41e4a490ebde75fcbd0c2c591"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae2395ff41e4a490ebde75fcbd0c2c591">LIGHT_SCHEDULER_COLOR_CYAN</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_CYAN</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00057">light_scheduler.h:57</a></div></div>
+<div class="ttc" id="alight__scheduler_8h_html_a4c0ab0c7b2b93057e9b98b0942889edeaead398af0aa9a652283680145c34cd0c"><div class="ttname"><a href="light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaead398af0aa9a652283680145c34cd0c">LIGHT_SCHEDULER_COLOR_MAGENTA</a></div><div class="ttdeci">@ LIGHT_SCHEDULER_COLOR_MAGENTA</div><div class="ttdef"><b>Definition</b> <a href="light__scheduler_8h_source.html#l00058">light_scheduler.h:58</a></div></div>
+</div><!-- fragment -->
+<p>RGB values of the single color presets. </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00077">77</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>.</p>
+
+</div>
+</div>
+<a id="a77391c60b4a2dfe7c01e97bfa8bf7cd7" name="a77391c60b4a2dfe7c01e97bfa8bf7cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77391c60b4a2dfe7c01e97bfa8bf7cd7">&#9670;&#160;</a></span>light_scheduler_red</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> light_scheduler_red = <a class="el" href="light__scheduler_8c.html#a10d932824ccef33a84561b6d60b88e67">LIGHT_SCHEDULER_RED</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>red value in color mode </p>
+
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00070">70</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00109">light_scheduler_set_color()</a>.</p>
+
+</div>
+</div>
 <a id="a2dee666f0c1fe072c549ff86b1d0a8ab" name="a2dee666f0c1fe072c549ff86b1d0a8ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dee666f0c1fe072c549ff86b1d0a8ab">&#9670;&#160;</a></span>s</h2>
 
@@ -258,9 +765,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00033">33</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__scheduler_8c_source.html#l00100">100</a> of file <a class="el" href="light__scheduler_8c_source.html">light_scheduler.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="printf_8c_source.html#l00169">_chvsnprintf()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00312">adc_buf_channel()</a>, <a class="el" href="detect__window_8c_source.html#l00069">detect_window_sizes()</a>, <a class="el" href="textons_8c_source.html#l00227">DictionaryTrainingYUV()</a>, <a class="el" href="lidar__correction_8c_source.html#l00048">distance_to_wall()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01265">ekf_aw_get_speed_body()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01440">ekf_aw_set_offset()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01426">ekf_aw_set_speed_body()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01433">ekf_aw_set_wind()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00998">float_mat_exp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00294">float_rmat_reorthogonalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00622">float_vect_scale()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00604">float_vect_sdiv()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00597">float_vect_smul()</a>, <a class="el" href="nav_8c_source.html#l00356">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00100">gvf_control_2D()</a>, <a class="el" href="gvf__ik_8c_source.html#l00141">gvf_ik_control_2D()</a>, <a class="el" href="gvf__ik_8c_source.html#l00294">gvf_ik_set_direction()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00437">gvf_parametric_set_direction()</a>, <a class="el" href="gvf_8c_source.html#l00232">gvf_set_direction()</a>, <a class="el" href="gsm_8c_source.html#l00512">indexn()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00748">ins_mekf_wind_set_speed_ned()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00683">int32_vect_find()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00674">int32_vect_smul()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00261">invariant_model()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00594">invariant_model()</a>, <a class="el" href="jevois_8c_source.html#l00412">jevois_send_string()</a>, <a class="el" href="jevois_8c_source.html#l00431">jevois_setmapping()</a>, <a class="el" href="jpeg_8c_source.html#l00044">jpeg_create_svs_header()</a>, <a class="el" href="light__scheduler_8c_source.html#l00040">light_scheduler_periodic()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00204">lla_of_ecef_f()</a>, <a class="el" href="libisp_8c_source.html#l00329">memcpy_from_registers()</a>, <a class="el" href="libisp_8c_source.html#l00315">memcpy_to_registers()</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00706">mrdivide()</a>, <a class="el" href="rtcm3_8h_source.html#l00255">msg_state_init()</a>, <a class="el" href="guidance_2gvf__ik_2nav_2nav__line_8c_source.html#l00175">nav_gvf_ik_segment_loop_XY1_XY2()</a>, <a class="el" href="guidance_2gvf_2nav_2nav__line_8c_source.html#l00177">nav_gvf_segment_loop_XY1_XY2()</a>, <a class="el" href="opticflow__pmw3901_8c_source.html#l00081">opticflow_pmw3901_publish()</a>, <a class="el" href="guidance_2gvf_2nav_2nav__line_8c_source.html#l00085">out_of_segment_area()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00050">pprz_cholesky_float()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00494">pprz_svd_solve_float()</a>, <a class="el" href="uart__print_8h_source.html#l00038">print_string()</a>, <a class="el" href="rtcm3_8h_source.html#l00211">rtcm3_clear_callbacks()</a>, <a class="el" href="rtcm3_8h_source.html#l00225">rtcm3_find_callback()</a>, <a class="el" href="rtcm3_8h_source.html#l00309">rtcm3_process()</a>, <a class="el" href="rtcm3_8h_source.html#l00160">rtcm3_register_callback()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00120">send_jevois_mavlink_visual_target()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00136">set_nav_stage()</a>, <a class="el" href="syslink__dl_8c_source.html#l00355">syslink_char_available()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00348">syslink_getch()</a>, <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>, <a class="el" href="syslink__dl_8c_source.html#l00337">syslink_put_byte()</a>, <a class="el" href="thd__test_8c_source.html#l00048">thd_test_syracuse_restart()</a>, <a class="el" href="rtcm3_8h_source.html#l00405">ubx_process()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00153">update_LUT()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="printf_8c_source.html#l00169">_chvsnprintf()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00312">adc_buf_channel()</a>, <a class="el" href="detect__window_8c_source.html#l00069">detect_window_sizes()</a>, <a class="el" href="textons_8c_source.html#l00227">DictionaryTrainingYUV()</a>, <a class="el" href="lidar__correction_8c_source.html#l00048">distance_to_wall()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01265">ekf_aw_get_speed_body()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01440">ekf_aw_set_offset()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01426">ekf_aw_set_speed_body()</a>, <a class="el" href="ekf__aw_8cpp_source.html#l01433">ekf_aw_set_wind()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00998">float_mat_exp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00294">float_rmat_reorthogonalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00622">float_vect_scale()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00604">float_vect_sdiv()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00597">float_vect_smul()</a>, <a class="el" href="nav_8c_source.html#l00356">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00100">gvf_control_2D()</a>, <a class="el" href="gvf__ik_8c_source.html#l00141">gvf_ik_control_2D()</a>, <a class="el" href="gvf__ik_8c_source.html#l00294">gvf_ik_set_direction()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00437">gvf_parametric_set_direction()</a>, <a class="el" href="gvf_8c_source.html#l00232">gvf_set_direction()</a>, <a class="el" href="gsm_8c_source.html#l00512">indexn()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00748">ins_mekf_wind_set_speed_ned()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00683">int32_vect_find()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00674">int32_vect_smul()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00261">invariant_model()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00594">invariant_model()</a>, <a class="el" href="jevois_8c_source.html#l00412">jevois_send_string()</a>, <a class="el" href="jevois_8c_source.html#l00431">jevois_setmapping()</a>, <a class="el" href="jpeg_8c_source.html#l00044">jpeg_create_svs_header()</a>, <a class="el" href="light__scheduler_8c_source.html#l00132">light_scheduler_periodic()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00204">lla_of_ecef_f()</a>, <a class="el" href="libisp_8c_source.html#l00329">memcpy_from_registers()</a>, <a class="el" href="libisp_8c_source.html#l00315">memcpy_to_registers()</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00706">mrdivide()</a>, <a class="el" href="rtcm3_8h_source.html#l00255">msg_state_init()</a>, <a class="el" href="guidance_2gvf__ik_2nav_2nav__line_8c_source.html#l00175">nav_gvf_ik_segment_loop_XY1_XY2()</a>, <a class="el" href="guidance_2gvf_2nav_2nav__line_8c_source.html#l00177">nav_gvf_segment_loop_XY1_XY2()</a>, <a class="el" href="opticflow__pmw3901_8c_source.html#l00081">opticflow_pmw3901_publish()</a>, <a class="el" href="guidance_2gvf_2nav_2nav__line_8c_source.html#l00085">out_of_segment_area()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00050">pprz_cholesky_float()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00494">pprz_svd_solve_float()</a>, <a class="el" href="uart__print_8h_source.html#l00038">print_string()</a>, <a class="el" href="rtcm3_8h_source.html#l00211">rtcm3_clear_callbacks()</a>, <a class="el" href="rtcm3_8h_source.html#l00225">rtcm3_find_callback()</a>, <a class="el" href="rtcm3_8h_source.html#l00309">rtcm3_process()</a>, <a class="el" href="rtcm3_8h_source.html#l00160">rtcm3_register_callback()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00120">send_jevois_mavlink_visual_target()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00136">set_nav_stage()</a>, <a class="el" href="syslink__dl_8c_source.html#l00355">syslink_char_available()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00348">syslink_getch()</a>, <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>, <a class="el" href="syslink__dl_8c_source.html#l00337">syslink_put_byte()</a>, <a class="el" href="thd__test_8c_source.html#l00048">thd_test_syracuse_restart()</a>, <a class="el" href="rtcm3_8h_source.html#l00405">ubx_process()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00153">update_LUT()</a>.</p>
 
 </div>
 </div>
@@ -270,7 +777,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_802df40992caaa23f4b723bcb0bc8bd1.html">light</a></li><li class="navelem"><a class="el" href="light__scheduler_8c.html">light_scheduler.c</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 12:16:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 13:54:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

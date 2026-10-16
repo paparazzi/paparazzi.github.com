@@ -407,6 +407,7 @@ var hierarchy =
     [ "Butterworth4LowPass", "low__pass__filter_8h.html#structButterworth4LowPass", null ],
     [ "Butterworth4LowPass_int", "low__pass__filter_8h.html#structButterworth4LowPass__int", null ],
     [ "Butterworth4LowPassVect3", "low__pass__filter__types_8h.html#structButterworth4LowPassVect3", null ],
+    [ "buzzer_note", "buzzer__tunes_8c.html#structbuzzer__note", null ],
     [ "Calibration_params", "meteo__stick__calib_8h.html#structCalibration__params", null ],
     [ "CalibrationPoint", "meteo__stick__calib_8c.html#structCalibrationPoint", null ],
     [ "camera_frame_t", "cv__georeference_8h.html#structcamera__frame__t", null ],

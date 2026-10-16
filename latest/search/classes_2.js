@@ -37,5 +37,6 @@ var searchData=
   ['butterworth4complementaryvect3_34',['Butterworth4ComplementaryVect3',['../complementary__filter__types_8h.html#structButterworth4ComplementaryVect3',1,'']]],
   ['butterworth4lowpass_35',['Butterworth4LowPass',['../low__pass__filter_8h.html#structButterworth4LowPass',1,'']]],
   ['butterworth4lowpass_5fint_36',['Butterworth4LowPass_int',['../low__pass__filter_8h.html#structButterworth4LowPass__int',1,'']]],
-  ['butterworth4lowpassvect3_37',['Butterworth4LowPassVect3',['../low__pass__filter__types_8h.html#structButterworth4LowPassVect3',1,'']]]
+  ['butterworth4lowpassvect3_37',['Butterworth4LowPassVect3',['../low__pass__filter__types_8h.html#structButterworth4LowPassVect3',1,'']]],
+  ['buzzer_5fnote_38',['buzzer_note',['../buzzer__tunes_8c.html#structbuzzer__note',1,'']]]
 ];

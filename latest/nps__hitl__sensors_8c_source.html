@@ -386,7 +386,7 @@ $(document).ready(function(){initNavTree('nps__hitl__sensors_8c_source.html','')
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      <span class="comment">// task took longer than the period</span></div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">#ifdef PRINT_TIME</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">printf</a>(<span class="stringliteral">&quot;SENSORS: task took longer than one period, exactly %f [ms], but the period is %f [ms]\n&quot;</span>,</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>             (<span class="keywordtype">double</span>)<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">task_ns</a> / 1<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">E6</a>, (<span class="keywordtype">double</span>)<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">period_ns</a> / 1<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">E6</a>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>             (<span class="keywordtype">double</span>)<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">task_ns</a> / 1<a class="code hl_define" href="buzzer__tunes_8c.html#a9d4e193153b195e3a2cbbbd05f120a13">E6</a>, (<span class="keywordtype">double</span>)<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">period_ns</a> / 1<a class="code hl_define" href="buzzer__tunes_8c.html#a9d4e193153b195e3a2cbbbd05f120a13">E6</a>);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    }</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  }</div>
@@ -477,6 +477,7 @@ $(document).ready(function(){initNavTree('nps__hitl__sensors_8c_source.html','')
 </div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="ttc" id="abuzzer__tunes_8c_html_a9d4e193153b195e3a2cbbbd05f120a13"><div class="ttname"><a href="buzzer__tunes_8c.html#a9d4e193153b195e3a2cbbbd05f120a13">E6</a></div><div class="ttdeci">#define E6</div><div class="ttdef"><b>Definition</b> <a href="buzzer__tunes_8c_source.html#l00057">buzzer_tunes.c:57</a></div></div>
 <div class="ttc" id="acc2500__compat_8h_html_a1cbedac78341a4fe7beff91fe370b9de"><div class="ttname"><a href="cc2500__compat_8h.html#a1cbedac78341a4fe7beff91fe370b9de">sensors</a></div><div class="ttdeci">#define sensors(...)</div><div class="ttdef"><b>Definition</b> <a href="cc2500__compat_8h_source.html#l00068">cc2500_compat.h:68</a></div></div>
 <div class="ttc" id="aeff__scheduling__plusquad_8h_html_a7dfc1fc4b0e23fd35e9d5dddcdab0592"><div class="ttname"><a href="eff__scheduling__plusquad_8h.html#a7dfc1fc4b0e23fd35e9d5dddcdab0592">COMMAND_PITCH</a></div><div class="ttdeci">#define COMMAND_PITCH</div><div class="ttdef"><b>Definition</b> <a href="eff__scheduling__plusquad_8h_source.html#l00055">eff_scheduling_plusquad.h:55</a></div></div>
 <div class="ttc" id="amain__demo5_8c_html_ad690ee00a2cf77bbaaf89c3f1ef110d4"><div class="ttname"><a href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">foo</a></div><div class="ttdeci">uint16_t foo</div><div class="ttdef"><b>Definition</b> <a href="main__demo5_8c_source.html#l00058">main_demo5.c:58</a></div></div>
@@ -543,7 +544,7 @@ $(document).ready(function(){initNavTree('nps__hitl__sensors_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__hitl__sensors_8c.html">nps_hitl_sensors.c</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 12:16:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 13:54:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

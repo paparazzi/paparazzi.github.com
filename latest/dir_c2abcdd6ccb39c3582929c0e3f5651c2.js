@@ -67,6 +67,7 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "sensors", "dir_2f48bbb566df394f79dcf8fe0631584a.html", "dir_2f48bbb566df394f79dcf8fe0631584a" ],
     [ "servo_tester", "dir_c59999c9c4c3ce2ad9926d4ee931ee97.html", "dir_c59999c9c4c3ce2ad9926d4ee931ee97" ],
     [ "sonar", "dir_f794e7c055cca00c0de6f5564d477f09.html", "dir_f794e7c055cca00c0de6f5564d477f09" ],
+    [ "sound", "dir_02c8461dcfc92218209befa109f7d055.html", "dir_02c8461dcfc92218209befa109f7d055" ],
     [ "spektrum_soft_bind", "dir_4fce34fdfa3ee0c77fb7c89ba1db056f.html", "dir_4fce34fdfa3ee0c77fb7c89ba1db056f" ],
     [ "stereocam", "dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html", "dir_3df9ff4d3eb13d31d58a513ba3c4e4bb" ],
     [ "switching", "dir_48e2729a7857fbd238afa6214b1fc763.html", "dir_48e2729a7857fbd238afa6214b1fc763" ],

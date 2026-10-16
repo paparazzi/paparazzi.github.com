@@ -28,5 +28,6 @@ var searchData=
   ['board_5fmatek_5ff765_5fwing_20module_25',['board_matek_f765_wing module',['../module__board_matek_f765_wing.html',1,'onboard_modules']]],
   ['board_5ftawaki_20module_26',['board_tawaki module',['../module__board_tawaki.html',1,'onboard_modules']]],
   ['board_5ftawaki_5f2_200_20module_27',['board_tawaki_2.0 module',['../module__board_tawaki_2_0.html',1,'onboard_modules']]],
-  ['board_5ftmotor_5faiof7_20module_28',['board_tmotor_aiof7 module',['../module__board_tmotor_aiof7.html',1,'onboard_modules']]]
+  ['board_5ftmotor_5faiof7_20module_28',['board_tmotor_aiof7 module',['../module__board_tmotor_aiof7.html',1,'onboard_modules']]],
+  ['buzzer_5ftunes_20module_29',['buzzer_tunes module',['../module__buzzer_tunes.html',1,'onboard_modules']]]
 ];

@@ -123,6 +123,11 @@ var cube_2orange_2board_8h =
     [ "BOARD_GROUP_FOR", "cube_2orange_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13", null ],
     [ "BOARD_GROUP_FOREACH", "cube_2orange_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b", null ],
     [ "BOARD_NAME", "cube_2orange_2board_8h.html#a02581754b212d533d96cde56c8145c9b", null ],
+    [ "BUZZER_AF", "cube_2orange_2board_8h.html#aad244718de175c1d06263555b6798ad5", null ],
+    [ "BUZZER_GPIO", "cube_2orange_2board_8h.html#a08a0ee9cbc67f32d977b57cfa32dab5a", null ],
+    [ "BUZZER_PIN", "cube_2orange_2board_8h.html#ab61d0981ed42df9e18211b273d22cfcd", null ],
+    [ "BUZZER_PWM_CHANNEL", "cube_2orange_2board_8h.html#af405b55f4a5a653d3177a3603620e0dd", null ],
+    [ "BUZZER_PWMD", "cube_2orange_2board_8h.html#a94ebf7d00dfdeedbf303d9435965990f", null ],
     [ "DefaultMilliAmpereOfAdc", "cube_2orange_2board_8h.html#ae66588cc87259ee96c9b794f74bc6e0d", null ],
     [ "DefaultVBoardOfAdc", "cube_2orange_2board_8h.html#adc7c1aed249cac10f9dfed57af50f9ab", null ],
     [ "DefaultVoltageOfAdc", "cube_2orange_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f", null ],
@@ -515,5 +520,9 @@ var cube_2orange_2board_8h =
     [ "VAL_GPIOK_OSPEEDR", "cube_2orange_2board_8h.html#a5c75968cb84c19d847cec9d002bad311", null ],
     [ "VAL_GPIOK_OTYPER", "cube_2orange_2board_8h.html#a6e445ad95b45159fc7739d9b42763151", null ],
     [ "VAL_GPIOK_PUPDR", "cube_2orange_2board_8h.html#a5aa0933b6c770aa41a93ce09e35b078d", null ],
+    [ "WS2812D1_AF", "cube_2orange_2board_8h.html#afd8cee2fb7cfce1b91317be24260b39c", null ],
+    [ "WS2812D1_CFG_DEF", "cube_2orange_2board_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5", null ],
+    [ "WS2812D1_GPIO", "cube_2orange_2board_8h.html#a17e208399ce330289bcaef37bd2e9b08", null ],
+    [ "WS2812D1_PIN", "cube_2orange_2board_8h.html#aec52babc287e1d061dec870b9f43b083", null ],
     [ "boardInit", "cube_2orange_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae", null ]
 ];

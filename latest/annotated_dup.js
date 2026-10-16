@@ -442,6 +442,7 @@ var annotated_dup =
     [ "Butterworth4LowPass", "low__pass__filter_8h.html#structButterworth4LowPass", "low__pass__filter_8h_structButterworth4LowPass" ],
     [ "Butterworth4LowPass_int", "low__pass__filter_8h.html#structButterworth4LowPass__int", "low__pass__filter_8h_structButterworth4LowPass__int" ],
     [ "Butterworth4LowPassVect3", "low__pass__filter__types_8h.html#structButterworth4LowPassVect3", "low__pass__filter__types_8h_structButterworth4LowPassVect3" ],
+    [ "buzzer_note", "buzzer__tunes_8c.html#structbuzzer__note", "buzzer__tunes_8c_structbuzzer__note" ],
     [ "Calibration_params", "meteo__stick__calib_8h.html#structCalibration__params", "meteo__stick__calib_8h_structCalibration__params" ],
     [ "CalibrationPoint", "meteo__stick__calib_8c.html#structCalibrationPoint", "meteo__stick__calib_8c_structCalibrationPoint" ],
     [ "camera_frame_t", "cv__georeference_8h.html#structcamera__frame__t", "cv__georeference_8h_structcamera__frame__t" ],

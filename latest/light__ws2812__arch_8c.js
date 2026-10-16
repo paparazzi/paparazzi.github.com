@@ -8,7 +8,6 @@ var light__ws2812__arch_8c =
       [ "pwmp", "light__ws2812__arch_8c.html#ab2767e1c043369df3476e0015e03078b", null ]
     ] ],
     [ "WS2812Driver", "light__ws2812__arch_8c.html#structWS2812Driver", [
-      [ "buf", "light__ws2812__arch_8c.html#ac63191ef01c72210dadc49b09ff71927", null ],
       [ "config", "light__ws2812__arch_8c.html#a4df0c3729a5ad63a72f67439a9d1bfda", null ],
       [ "dma_conf", "light__ws2812__arch_8c.html#ad4a89316c097f50e7c3124d6285ec669", null ],
       [ "dmap", "light__ws2812__arch_8c.html#aa85542d1632b58e190a2f059df9291ed", null ],
@@ -30,6 +29,7 @@ var light__ws2812__arch_8c =
     [ "WS2812_RED_BIT", "light__ws2812__arch_8c.html#afbfd19ffd3de95e52e9485ae478f24c7", null ],
     [ "WS2812_RESET_BIT_N", "light__ws2812__arch_8c.html#a45915de98e873e3e99c6c9b632a1df54", null ],
     [ "WS2812_SERVO_HZ", "light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf", null ],
+    [ "IN_DMA_SECTION_CLEAR", "light__ws2812__arch_8c.html#ac4021ad649aceabfdf2a9b208fff0b03", null ],
     [ "light_ws2812_arch_init", "light__ws2812__arch_8c.html#a77c4ae9d967234a1c215b097f18241c8", null ],
     [ "light_ws2812_arch_set", "light__ws2812__arch_8c.html#a5efcab2e04c8eacd7a9ddf973752a788", null ],
     [ "WS2812CFG", "light__ws2812__arch_8c.html#a4b6fbf364f9a7e049559d80cc523c7b5", null ],
