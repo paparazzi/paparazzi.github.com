@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('nps__sensor__accel_8c_source.html','')
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>               <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NPS_ACCEL_NOISE_STD_DEV_X</a>, <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NPS_ACCEL_NOISE_STD_DEV_Y</a>, <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NPS_ACCEL_NOISE_STD_DEV_Z</a>);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_define" href="group__math__algebra__generic.html#gaabe6b68b36e19217c178ddc14515c9af">VECT3_ASSIGN</a>(accel-&gt;<a class="code hl_variable" href="nps__sensor__accel_8h.html#ab3e53967c131e9ff508bb51fb0fa0702">bias</a>,</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>               <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NPS_ACCEL_BIAS_X</a>, <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NPS_ACCEL_BIAS_Y</a>, <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NPS_ACCEL_BIAS_Z</a>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  accel-&gt;<a class="code hl_variable" href="nps__sensor__accel_8h.html#a401a181705b2e09bc798d295bb3467e2">next_update</a> = <a class="code hl_variable" href="eff__scheduling__rotwing__V2_8c.html#a2652b019234e09e83322c0255d4e744a">time</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  accel-&gt;<a class="code hl_variable" href="nps__sensor__accel_8h.html#a401a181705b2e09bc798d295bb3467e2">next_update</a> = time;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  accel-&gt;<a class="code hl_variable" href="nps__sensor__accel_8h.html#a23afeb8a815603cbdcd0237be1cd9042">data_available</a> = <a class="code hl_define" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 </div>
@@ -164,7 +164,6 @@ $(document).ready(function(){initNavTree('nps__sensor__accel_8c_source.html','')
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="ttc" id="aeff__scheduling__rotwing__V2_8c_html_a2652b019234e09e83322c0255d4e744a"><div class="ttname"><a href="eff__scheduling__rotwing__V2_8c.html#a2652b019234e09e83322c0255d4e744a">time</a></div><div class="ttdeci">float time</div><div class="ttdef"><b>Definition</b> <a href="eff__scheduling__rotwing__V2_8c_source.html#l00400">eff_scheduling_rotwing_V2.c:400</a></div></div>
 <div class="ttc" id="agroup__math__algebra__double_html_a6d37a71e96d0d1cdf595002d6aacd715"><div class="ttname"><a href="group__math__algebra__double.html#a6d37a71e96d0d1cdf595002d6aacd715">DoubleMat33::m</a></div><div class="ttdeci">double m[3 *3]</div><div class="ttdef"><b>Definition</b> <a href="pprz__algebra__double_8h_source.html#l00063">pprz_algebra_double.h:63</a></div></div>
 <div class="ttc" id="agroup__math__algebra__double_html_ga57f944678cda3405c13b3c2623e8cffe"><div class="ttname"><a href="group__math__algebra__double.html#ga57f944678cda3405c13b3c2623e8cffe">DOUBLE_VECT3_ROUND</a></div><div class="ttdeci">#define DOUBLE_VECT3_ROUND(_v)</div><div class="ttdef"><b>Definition</b> <a href="pprz__algebra__double_8h_source.html#l00091">pprz_algebra_double.h:91</a></div></div>
 <div class="ttc" id="agroup__math__algebra__double_html_structDoubleRMat"><div class="ttname"><a href="group__math__algebra__double.html#structDoubleRMat">DoubleRMat</a></div><div class="ttdoc">rotation matrix</div><div class="ttdef"><b>Definition</b> <a href="pprz__algebra__double_8h_source.html#l00069">pprz_algebra_double.h:69</a></div></div>
@@ -206,7 +205,7 @@ $(document).ready(function(){initNavTree('nps__sensor__accel_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__sensor__accel_8c.html">nps_sensor_accel.c</a></li>
-    <li class="footer">Generated on Thu Oct 15 2026 14:41:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 12:16:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -109,6 +109,7 @@ var eff__scheduling__rotwing__V2_8h =
       [ "T", "eff__scheduling__rotwing__V2_8h.html#a66e003e3b3805a30d6fb800c8a8fa9ad", null ],
       [ "wing", "eff__scheduling__rotwing__V2_8h.html#a08f827eeabf0ede9b20dda0ba3d410b2", null ]
     ] ],
+    [ "COMMANDS_NB_VIRTUAL", "eff__scheduling__rotwing__V2_8h.html#a15a4d52212722413fdc5fdaac968414c", null ],
     [ "EFF_MAT_COLS_NB", "eff__scheduling__rotwing__V2_8h.html#a620386b72ba7a9c5b6a55fc99642f0b6", null ],
     [ "EFF_MAT_ROWS_NB", "eff__scheduling__rotwing__V2_8h.html#abbd71e65298a090cd69aa5f838a597be", null ],
     [ "ELE_MAX_AS", "eff__scheduling__rotwing__V2_8h.html#a5ffcc0ba453454063bfcde6f3d888d6b", null ],
@@ -133,10 +134,16 @@ var eff__scheduling__rotwing__V2_8h =
     [ "ele_eff", "eff__scheduling__rotwing__V2_8h.html#af5a7cc7c20ed43866b3b0a1d6c942232", null ],
     [ "ele_min", "eff__scheduling__rotwing__V2_8h.html#a1a378cb44ac3cf8bccee84cd1e5eb382", null ],
     [ "G1_RW", "eff__scheduling__rotwing__V2_8h.html#a0d1e461bdffa57a1f473a494fb6572ef", null ],
+    [ "G2_on", "eff__scheduling__rotwing__V2_8h.html#a3a17f75048670d1a1a40bd00f985cdc3", null ],
     [ "G2_RW", "eff__scheduling__rotwing__V2_8h.html#a0345389c913639828e0e10aad0408c37", null ],
+    [ "manual_pitch", "eff__scheduling__rotwing__V2_8h.html#a50e900f730e87efead60b3580d448a6d", null ],
+    [ "manual_roll", "eff__scheduling__rotwing__V2_8h.html#a8c9a5a778adbdd4d2e9659eefc4cfc59", null ],
+    [ "manual_yaw", "eff__scheduling__rotwing__V2_8h.html#accecc5f7823c51cec548dda182fabacf", null ],
     [ "roll_eff", "eff__scheduling__rotwing__V2_8h.html#a5bb87b3eb49525d4735c37d3da5d27df", null ],
     [ "rotation_angle_setpoint_deg", "eff__scheduling__rotwing__V2_8h.html#a8c9f2b5a055440408d72b9eed34d3f87", null ],
     [ "rotation_cmd", "eff__scheduling__rotwing__V2_8h.html#ac122cce6b57a3b628a0a94ccb622b341", null ],
     [ "RW", "eff__scheduling__rotwing__V2_8h.html#a43ec5dc733f4765113c0e4fec43f1977", null ],
+    [ "temp_mQ_k", "eff__scheduling__rotwing__V2_8h.html#adee8b12ac52adb1790260adf09a4b449", null ],
+    [ "thrust_curve", "eff__scheduling__rotwing__V2_8h.html#a077bdef93de5f03532276d98353002c5", null ],
     [ "yaw_eff", "eff__scheduling__rotwing__V2_8h.html#a951c29f2f67e77a18d37780060278769", null ]
 ];

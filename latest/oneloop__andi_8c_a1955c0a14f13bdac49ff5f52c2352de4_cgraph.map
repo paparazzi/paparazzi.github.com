@@ -1,0 +1,21 @@
+<map id="oneloop_calc_model_disturbance" name="oneloop_calc_model_disturbance">
+<area shape="rect" id="Node000001" title="Function that calculates the model disturbance (Control Effort) The control effort is equalt to : EFF..." alt="" coords="5,73,160,113"/>
+<area shape="rect" id="Node000002" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="229,5,350,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,70,207,39,229,32,231,37,209,45,131,75"/>
+<area shape="rect" id="Node000003" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="219,55,359,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,81,205,75,206,80,161,86"/>
+<area shape="rect" id="Node000004" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="419,94,569,134"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,94,405,107,405,112,160,99"/>
+<area shape="rect" id="Node000006" href="$oneloop__andi_8c.html#a19ae7dc039c83eddde50c7f2439ec26c" title="Update a filter based on its type." alt="" coords="208,159,371,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="137,110,243,151,241,156,135,115"/>
+<area shape="rect" id="Node000005" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="617,151,779,191"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="566,131,614,145,612,150,565,137"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="335,156,408,135,410,140,336,161"/>
+<area shape="rect" id="Node000007" href="$notch__filter_8h.html#a93e78a6198d2f1c1221c2a006e2b5dd7" title="Notch filter propagate." alt="" coords="421,159,567,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="371,169,407,169,407,174,371,174"/>
+<area shape="rect" id="Node000008" href="$low__pass__filter_8h.html#ac6aad62d3f90b904b5a6feccc6460d1d" title="Update fourth order Butterworth low pass filter state with a new value." alt="" coords="419,209,569,249"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="336,181,410,202,408,208,335,187"/>
+<area shape="rect" id="Node000009" href="$low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="424,273,564,313"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="309,182,357,218,420,258,431,264,429,269,417,263,354,223,305,186"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="565,206,612,193,614,198,566,211"/>
+</map>

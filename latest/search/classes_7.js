@@ -37,7 +37,7 @@ var searchData=
   ['gpsubx_34',['GpsUbx',['../gps__ubx_8h.html#structGpsUbx',1,'']]],
   ['gpsubxi2c_35',['GpsUbxI2C',['../gps__ubx__i2c_8h.html#structGpsUbxI2C',1,'']]],
   ['ground_5fdetect_5fbitmask_5ft_36',['ground_detect_bitmask_t',['../ground__detect_8h.html#unionground__detect__bitmask__t',1,'']]],
-  ['ground_5fdetect_5fbitmask_5ft_2e_5f_5funnamed305_5f_5f_37',['ground_detect_bitmask_t.__unnamed305__',['../ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed305____',1,'']]],
+  ['ground_5fdetect_5fbitmask_5ft_2e_5f_5funnamed306_5f_5f_37',['ground_detect_bitmask_t.__unnamed306__',['../ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed306____',1,'']]],
   ['ground_5fdetect_5fvalues_5ft_38',['ground_detect_values_t',['../ground__detect_8h.html#structground__detect__values__t',1,'']]],
   ['guidance_5findi_5fhybrid_5fparams_39',['guidance_indi_hybrid_params',['../oneloop__nB_8h.html#structguidance__indi__hybrid__params',1,'']]],
   ['guidancehref_40',['GuidanceHRef',['../guidance__h__ref_8h.html#structGuidanceHRef',1,'']]],

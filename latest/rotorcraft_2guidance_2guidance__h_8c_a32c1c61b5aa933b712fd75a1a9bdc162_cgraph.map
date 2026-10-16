@@ -1,121 +1,74 @@
 <map id="guidance_h_hover_enter" name="guidance_h_hover_enter">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,955,187,980"/>
-<area shape="rect" id="Node000002" href="$guidance__oneloop__nB_8c.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="253,755,419,780"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,952,307,787,310,791,114,957"/>
-<area shape="rect" id="Node000037" href="$rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="245,879,427,904"/>
-<area shape="poly" id="edge37_Node000001_Node000037" title=" " alt="" coords="136,952,234,921,281,906,283,911,235,926,138,957"/>
-<area shape="rect" id="Node000038" href="$rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="259,980,413,1005"/>
-<area shape="poly" id="edge38_Node000001_Node000038" title=" " alt="" coords="187,974,246,981,245,986,186,980"/>
-<area shape="rect" id="Node000039" href="$rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="485,922,676,962"/>
-<area shape="poly" id="edge55_Node000001_Node000039" title=" " alt="" coords="187,960,471,945,472,950,187,965"/>
-<area shape="rect" id="Node000059" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="235,1103,437,1128"/>
-<area shape="poly" id="edge56_Node000001_Node000059" title=" " alt="" coords="114,978,167,1020,236,1066,292,1095,290,1100,233,1071,164,1024,111,982"/>
-<area shape="rect" id="Node000064" href="$group__state__position.html#gaf0ea970c91b1d3ebc462f987f28bd3f0" title="Get position in local NED coordinates (float)." alt="" coords="497,1057,665,1083"/>
-<area shape="poly" id="edge61_Node000001_Node000064" title=" " alt="" coords="128,978,178,996,235,1014,364,1041,483,1057,483,1063,363,1046,234,1019,176,1001,126,982"/>
-<area shape="rect" id="Node000003" href="$oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="505,660,656,685"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,752,533,688,535,693,371,757"/>
-<area shape="rect" id="Node000004" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="1167,740,1313,765"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="600,683,653,721,688,742,725,760,785,782,833,794,946,809,1033,818,1070,817,1118,809,1142,799,1165,785,1199,769,1201,774,1168,790,1145,804,1119,814,1071,823,1032,824,945,814,832,800,783,787,723,764,686,747,651,726,596,688"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="750,260,871,285"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="580,659,588,595,610,497,628,442,652,389,683,338,722,295,736,285,739,289,726,299,688,342,657,391,633,444,615,498,593,596,585,660"/>
-<area shape="rect" id="Node000007" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="752,596,869,621"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="627,657,750,623,752,628,628,662"/>
-<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="755,309,867,335"/>
-<area shape="poly" id="edge8_Node000003_Node000010" title=" " alt="" coords="588,658,791,345,796,348,593,661"/>
-<area shape="rect" id="Node000023" href="$oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="771,660,851,685"/>
-<area shape="poly" id="edge30_Node000003_Node000023" title=" " alt="" coords="656,670,757,670,757,675,656,675"/>
-<area shape="rect" id="Node000030" href="$oneloop__andi_8c.html#a01b12bc894b90fe666fb014b4f5ce481" title="Reinitialize all the Complementary Filters." alt="" coords="761,725,860,751"/>
-<area shape="poly" id="edge33_Node000003_Node000030" title=" " alt="" coords="627,683,753,719,751,724,626,688"/>
-<area shape="rect" id="Node000005" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1368,284,1508,309"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1286,738,1311,720,1347,672,1375,618,1396,562,1411,504,1429,399,1434,323,1439,323,1434,400,1417,506,1401,563,1380,620,1351,675,1315,724,1289,742"/>
-<area shape="rect" id="Node000008" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="955,559,1109,599"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="869,598,941,589,941,594,870,604"/>
-<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html#ad343222996afa101ab8254afe6a47fe1" title="Initialize Position of Poles." alt="" coords="977,460,1087,485"/>
-<area shape="poly" id="edge9_Node000010_Node000011" title=" " alt="" coords="824,333,873,387,908,418,947,445,964,454,962,458,944,450,905,422,869,391,820,336"/>
-<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#af2335349a761d2705e1aff694bfe2a2b" title=" " alt="" coords="975,5,1089,31"/>
-<area shape="poly" id="edge10_Node000010_Node000013" title=" " alt="" coords="866,313,882,305,895,295,916,265,924,235,924,205,920,175,916,144,915,113,923,81,943,48,961,34,964,38,947,52,928,83,921,113,921,144,925,174,929,205,929,236,920,267,899,298,885,310,868,318"/>
-<area shape="rect" id="Node000014" href="$oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="1197,56,1283,81"/>
-<area shape="poly" id="edge29_Node000010_Node000014" title=" " alt="" coords="866,312,882,305,895,295,910,276,917,257,918,218,920,178,928,158,943,139,970,118,1000,101,1064,79,1128,68,1183,64,1184,70,1128,73,1065,84,1002,106,973,122,947,143,933,161,925,179,924,218,922,258,914,279,899,299,885,309,868,317"/>
-<area shape="rect" id="Node000015" href="$oneloop__andi_8c.html#a1e1ae0ee9f6e66e0708690a217fd543a" title="Error Controller Gain Design." alt="" coords="1185,107,1295,132"/>
-<area shape="poly" id="edge13_Node000010_Node000015" title=" " alt="" coords="866,311,896,295,907,282,913,270,918,243,924,216,931,202,944,189,969,171,997,156,1057,135,1117,122,1170,117,1171,122,1117,128,1058,140,999,161,972,176,947,193,936,205,929,218,924,244,918,271,911,285,899,299,868,316"/>
-<area shape="rect" id="Node000016" href="$oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="1185,157,1295,183"/>
-<area shape="poly" id="edge15_Node000010_Node000016" title=" " alt="" coords="866,309,896,294,911,280,919,266,928,250,944,236,1000,208,1060,189,1118,177,1170,171,1171,176,1119,182,1061,194,1002,213,947,240,932,254,923,268,915,284,899,299,868,313"/>
-<area shape="rect" id="Node000017" href="$oneloop__andi_8c.html#ad1da3cbae9dde0e59ff925cc13187607" title=" " alt="" coords="1185,208,1295,233"/>
-<area shape="poly" id="edge17_Node000010_Node000017" title=" " alt="" coords="858,307,896,294,920,283,944,273,1063,244,1170,226,1171,231,1064,249,946,278,922,288,898,299,860,312"/>
-<area shape="rect" id="Node000018" href="$oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="1185,259,1295,284"/>
-<area shape="poly" id="edge19_Node000010_Node000018" title=" " alt="" coords="867,311,945,301,1171,275,1171,281,946,306,867,317"/>
-<area shape="rect" id="Node000019" href="$oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="1185,308,1295,333"/>
-<area shape="poly" id="edge21_Node000010_Node000019" title=" " alt="" coords="867,319,1171,318,1171,324,867,324"/>
-<area shape="rect" id="Node000020" href="$oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="1191,357,1289,383"/>
-<area shape="poly" id="edge23_Node000010_Node000020" title=" " alt="" coords="867,326,1178,361,1178,366,867,331"/>
-<area shape="rect" id="Node000021" href="$oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="983,411,1081,436"/>
-<area shape="poly" id="edge25_Node000010_Node000021" title=" " alt="" coords="836,333,946,389,982,403,980,408,944,394,833,337"/>
-<area shape="rect" id="Node000022" href="$oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="983,509,1081,535"/>
-<area shape="poly" id="edge27_Node000010_Node000022" title=" " alt="" coords="820,333,838,366,866,410,902,455,947,494,971,507,969,512,944,499,899,459,861,413,833,369,816,336"/>
-<area shape="poly" id="edge11_Node000013_Node000014" title=" " alt="" coords="1086,28,1185,53,1183,58,1085,33"/>
-<area shape="poly" id="edge12_Node000014_Node000005" title=" " alt="" coords="1284,75,1315,92,1356,134,1389,183,1414,231,1430,270,1425,272,1409,233,1385,186,1352,138,1312,96,1281,80"/>
-<area shape="poly" id="edge14_Node000015_Node000005" title=" " alt="" coords="1290,130,1315,142,1350,173,1381,207,1425,270,1420,273,1377,210,1346,176,1312,147,1288,134"/>
-<area shape="poly" id="edge16_Node000016_Node000005" title=" " alt="" coords="1287,180,1315,193,1371,233,1416,272,1413,276,1368,237,1312,198,1284,185"/>
-<area shape="poly" id="edge18_Node000017_Node000005" title=" " alt="" coords="1280,231,1314,244,1395,276,1393,281,1312,248,1278,236"/>
-<area shape="poly" id="edge20_Node000018_Node000005" title=" " alt="" coords="1296,276,1355,283,1354,289,1295,281"/>
-<area shape="poly" id="edge22_Node000019_Node000005" title=" " alt="" coords="1295,311,1354,304,1355,309,1296,317"/>
-<area shape="poly" id="edge24_Node000020_Node000005" title=" " alt="" coords="1278,355,1312,342,1391,312,1393,317,1314,347,1279,360"/>
-<area shape="poly" id="edge26_Node000021_Node000005" title=" " alt="" coords="1081,424,1130,424,1189,420,1252,410,1312,392,1342,376,1370,357,1414,317,1418,321,1373,361,1345,381,1314,396,1253,415,1190,425,1131,429,1081,429"/>
-<area shape="poly" id="edge28_Node000022_Node000005" title=" " alt="" coords="1080,512,1131,500,1191,483,1253,459,1312,428,1344,403,1374,374,1418,319,1422,322,1378,377,1348,407,1315,432,1255,464,1192,488,1132,506,1081,517"/>
-<area shape="rect" id="Node000024" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="1169,670,1311,710"/>
-<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="851,672,1156,684,1155,689,851,677"/>
-<area shape="rect" id="Node000026" href="$notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad" title="Initialize second order notch filter." alt="" coords="971,624,1093,649"/>
-<area shape="poly" id="edge32_Node000023_Node000026" title=" " alt="" coords="851,664,957,646,958,651,852,669"/>
-<area shape="rect" id="Node000031" href="$oneloop__andi_8c.html#afae15927cc3d237f5f1af29dce7547fb" title="Reinitialize 2nd Order CF if new frequency setting or if forced." alt="" coords="991,725,1073,751"/>
-<area shape="poly" id="edge34_Node000030_Node000031" title=" " alt="" coords="861,735,977,735,977,741,861,741"/>
-<area shape="rect" id="Node000034" href="$oneloop__andi_8c.html#adeb027acbb0d32b03c67fe1e5625ecd8" title="Reinitialize 4th Order CF if new frequency setting or if forced." alt="" coords="991,775,1073,800"/>
-<area shape="poly" id="edge36_Node000030_Node000034" title=" " alt="" coords="861,746,978,773,977,778,860,752"/>
-<area shape="poly" id="edge35_Node000031_Node000024" title=" " alt="" coords="1073,726,1155,707,1156,712,1074,731"/>
-<area shape="poly" id="edge39_Node000038_Node000039" title=" " alt="" coords="398,977,472,962,473,967,399,982"/>
-<area shape="rect" id="Node000040" href="$guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="765,925,856,951"/>
-<area shape="poly" id="edge40_Node000039_Node000040" title=" " alt="" coords="676,938,751,936,752,942,676,943"/>
-<area shape="rect" id="Node000041" href="$group__state__position.html#ga4752a89e7113d6df02299c5c6df11387" title="Get position in local NED coordinates (int)." alt="" coords="727,975,894,1000"/>
-<area shape="poly" id="edge41_Node000039_Node000041" title=" " alt="" coords="677,958,733,969,732,975,676,963"/>
-<area shape="rect" id="Node000055" href="$group__state__velocity.html#ga3ffc29c48ac8ca0b9baf412012e45d21" title="Get ground speed in local NED coordinates (int)." alt="" coords="733,876,888,901"/>
-<area shape="poly" id="edge52_Node000039_Node000055" title=" " alt="" coords="667,919,741,902,742,907,668,925"/>
-<area shape="rect" id="Node000042" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="946,972,1118,997"/>
-<area shape="poly" id="edge42_Node000041_Node000042" title=" " alt="" coords="894,984,932,983,932,989,894,989"/>
-<area shape="rect" id="Node000043" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1564,1104,1669,1129"/>
-<area shape="poly" id="edge43_Node000042_Node000043" title=" " alt="" coords="1050,970,1101,940,1133,926,1166,915,1267,890,1311,881,1352,876,1392,877,1432,887,1473,906,1516,937,1533,955,1541,974,1544,1012,1546,1051,1552,1070,1565,1090,1569,1094,1566,1098,1561,1093,1547,1072,1541,1052,1539,1012,1536,975,1528,958,1513,941,1470,911,1430,892,1391,883,1352,881,1312,886,1268,895,1167,921,1135,931,1103,945,1053,974"/>
-<area shape="rect" id="Node000044" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1361,1205,1515,1231"/>
-<area shape="poly" id="edge44_Node000042_Node000044" title=" " alt="" coords="1119,982,1166,987,1217,997,1268,1013,1315,1038,1334,1056,1344,1074,1351,1093,1364,1115,1420,1193,1416,1196,1359,1118,1347,1095,1339,1076,1329,1059,1312,1043,1266,1018,1216,1002,1166,992,1118,987"/>
-<area shape="rect" id="Node000046" href="$group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1367,952,1509,977"/>
-<area shape="poly" id="edge45_Node000042_Node000046" title=" " alt="" coords="1061,969,1109,951,1166,937,1240,930,1314,937,1374,946,1373,952,1313,942,1240,936,1167,942,1111,956,1063,974"/>
-<area shape="rect" id="Node000049" href="$group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1175,952,1305,977"/>
-<area shape="poly" id="edge46_Node000042_Node000049" title=" " alt="" coords="1118,974,1160,970,1161,975,1118,979"/>
-<area shape="rect" id="Node000052" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1189,1053,1291,1079"/>
-<area shape="poly" id="edge51_Node000042_Node000052" title=" " alt="" coords="1066,995,1195,1046,1193,1051,1064,1000"/>
-<area shape="poly" id="edge50_Node000049_Node000046" title=" " alt="" coords="1306,962,1353,962,1353,967,1306,967"/>
-<area shape="rect" id="Node000050" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1386,1079,1490,1104"/>
-<area shape="poly" id="edge47_Node000049_Node000050" title=" " alt="" coords="1276,975,1315,994,1369,1031,1413,1067,1410,1071,1365,1036,1312,999,1273,980"/>
-<area shape="poly" id="edge49_Node000050_Node000043" title=" " alt="" coords="1491,1096,1551,1105,1550,1110,1490,1101"/>
-<area shape="rect" id="Node000051" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1563,1055,1671,1080"/>
-<area shape="poly" id="edge48_Node000050_Node000051" title=" " alt="" coords="1490,1082,1548,1074,1549,1079,1491,1087"/>
-<area shape="rect" id="Node000056" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="952,876,1112,901"/>
-<area shape="poly" id="edge53_Node000055_Node000056" title=" " alt="" coords="888,886,938,886,938,891,888,891"/>
-<area shape="rect" id="Node000057" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1167,800,1313,825"/>
-<area shape="poly" id="edge54_Node000056_Node000057" title=" " alt="" coords="1067,873,1191,828,1192,833,1069,878"/>
-<area shape="rect" id="Node000060" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="497,1131,665,1156"/>
-<area shape="poly" id="edge57_Node000059_Node000060" title=" " alt="" coords="438,1124,483,1130,483,1135,437,1130"/>
-<area shape="rect" id="Node000061" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="724,1153,897,1179"/>
-<area shape="poly" id="edge58_Node000060_Node000061" title=" " alt="" coords="665,1149,710,1153,710,1159,664,1154"/>
-<area shape="rect" id="Node000062" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="955,1153,1109,1179"/>
-<area shape="poly" id="edge59_Node000061_Node000062" title=" " alt="" coords="898,1163,941,1163,941,1169,898,1169"/>
-<area shape="rect" id="Node000063" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="954,1203,1110,1228"/>
-<area shape="poly" id="edge60_Node000061_Node000063" title=" " alt="" coords="869,1176,961,1197,960,1202,868,1181"/>
-<area shape="rect" id="Node000065" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="945,1104,1119,1129"/>
-<area shape="poly" id="edge62_Node000064_Node000065" title=" " alt="" coords="665,1076,932,1104,931,1109,665,1081"/>
-<area shape="poly" id="edge64_Node000065_Node000044" title=" " alt="" coords="1085,1127,1373,1199,1372,1204,1083,1132"/>
-<area shape="poly" id="edge65_Node000065_Node000046" title=" " alt="" coords="1119,1121,1165,1120,1215,1115,1265,1105,1312,1088,1346,1067,1375,1040,1419,987,1423,991,1379,1044,1349,1071,1315,1092,1266,1110,1215,1121,1165,1125,1119,1126"/>
-<area shape="poly" id="edge63_Node000065_Node000050" title=" " alt="" coords="1097,1127,1199,1138,1256,1138,1313,1133,1356,1122,1396,1107,1398,1112,1358,1127,1314,1138,1257,1144,1199,1143,1096,1132"/>
-<area shape="poly" id="edge69_Node000065_Node000052" title=" " alt="" coords="1085,1101,1175,1079,1176,1084,1086,1106"/>
-<area shape="rect" id="Node000066" href="$pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1169,1256,1311,1281"/>
-<area shape="poly" id="edge66_Node000065_Node000066" title=" " alt="" coords="1099,1127,1120,1140,1139,1164,1146,1188,1152,1211,1169,1235,1187,1248,1184,1252,1165,1239,1147,1214,1141,1189,1134,1166,1117,1144,1096,1132"/>
-<area shape="poly" id="edge67_Node000066_Node000043" title=" " alt="" coords="1311,1274,1358,1275,1411,1271,1464,1261,1513,1241,1542,1220,1567,1194,1601,1140,1606,1143,1571,1197,1546,1224,1516,1246,1465,1266,1411,1277,1358,1280,1311,1279"/>
-<area shape="poly" id="edge68_Node000066_Node000044" title=" " alt="" coords="1290,1253,1374,1231,1375,1237,1291,1258"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,209,187,235"/>
+<area shape="rect" id="Node000002" href="$guidance__oneloop__nB_8c.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="253,85,419,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,207,161,164,196,140,234,120,252,112,254,117,236,124,199,145,164,168,113,211"/>
+<area shape="rect" id="Node000003" href="$rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="245,135,427,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,207,234,169,263,161,264,166,235,174,130,212"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="259,184,413,209"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,210,245,204,246,209,187,215"/>
+<area shape="rect" id="Node000005" href="$rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="485,177,676,217"/>
+<area shape="poly" id="edge26_Node000001_Node000005" title=" " alt="" coords="187,223,306,224,437,218,471,214,472,219,438,223,306,229,187,228"/>
+<area shape="rect" id="Node000025" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="235,336,437,361"/>
+<area shape="poly" id="edge27_Node000001_Node000025" title=" " alt="" coords="114,233,166,272,236,314,273,329,271,334,233,319,163,277,111,237"/>
+<area shape="rect" id="Node000030" href="$group__state__position.html#gaf0ea970c91b1d3ebc462f987f28bd3f0" title="Get position in local NED coordinates (float)." alt="" coords="497,285,665,311"/>
+<area shape="poly" id="edge32_Node000001_Node000030" title=" " alt="" coords="178,232,486,281,485,286,178,237"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,194,471,194,471,199,413,199"/>
+<area shape="rect" id="Node000006" href="$guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="765,109,856,135"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="635,174,723,143,751,135,753,140,725,149,637,179"/>
+<area shape="rect" id="Node000007" href="$group__state__position.html#ga4752a89e7113d6df02299c5c6df11387" title="Get position in local NED coordinates (int)." alt="" coords="727,208,894,233"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="677,204,714,208,714,213,676,209"/>
+<area shape="rect" id="Node000021" href="$group__state__velocity.html#ga3ffc29c48ac8ca0b9baf412012e45d21" title="Get ground speed in local NED coordinates (int)." alt="" coords="733,159,888,184"/>
+<area shape="poly" id="edge22_Node000005_Node000021" title=" " alt="" coords="676,183,719,179,720,184,677,189"/>
+<area shape="rect" id="Node000008" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="946,208,1118,233"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="894,218,932,218,932,223,894,223"/>
+<area shape="rect" id="Node000009" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1587,217,1692,243"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1044,206,1094,164,1128,142,1166,126,1263,100,1305,93,1344,92,1382,96,1423,105,1516,142,1532,153,1542,166,1551,179,1564,192,1594,209,1591,214,1561,196,1547,182,1538,169,1529,157,1513,147,1421,110,1382,101,1343,97,1305,99,1264,105,1168,131,1131,147,1097,168,1048,210"/>
+<area shape="rect" id="Node000010" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1361,411,1515,436"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1061,231,1091,249,1121,272,1136,292,1144,311,1152,328,1168,345,1246,369,1375,404,1374,410,1244,374,1165,350,1148,332,1139,313,1131,295,1117,276,1088,253,1059,236"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1367,157,1509,183"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="1050,206,1100,175,1132,160,1166,149,1220,141,1275,140,1327,145,1373,152,1372,157,1326,150,1275,145,1220,146,1167,154,1134,165,1103,180,1053,210"/>
+<area shape="rect" id="Node000015" href="$group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1175,208,1305,233"/>
+<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="1118,218,1161,218,1161,223,1118,223"/>
+<area shape="rect" id="Node000018" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1189,309,1291,335"/>
+<area shape="poly" id="edge19_Node000008_Node000018" title=" " alt="" coords="1061,231,1202,301,1199,306,1058,236"/>
+<area shape="rect" id="Node000011" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1563,411,1716,436"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1515,421,1549,421,1549,426,1515,426"/>
+<area shape="rect" id="Node000013" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1568,157,1711,183"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1509,167,1554,167,1554,173,1509,173"/>
+<area shape="rect" id="Node000014" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1764,157,1916,183"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1711,167,1750,167,1750,173,1711,173"/>
+<area shape="poly" id="edge18_Node000015_Node000012" title=" " alt="" coords="1290,205,1374,183,1375,189,1291,210"/>
+<area shape="rect" id="Node000016" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1386,227,1490,252"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1306,224,1372,231,1372,236,1306,229"/>
+<area shape="poly" id="edge17_Node000016_Node000009" title=" " alt="" coords="1490,234,1573,230,1573,236,1491,240"/>
+<area shape="rect" id="Node000017" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1585,267,1693,292"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1491,247,1573,263,1572,269,1490,252"/>
+<area shape="rect" id="Node000019" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1362,351,1514,376"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="1292,330,1364,345,1363,351,1291,335"/>
+<area shape="rect" id="Node000020" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1368,286,1508,326"/>
+<area shape="poly" id="edge21_Node000018_Node000020" title=" " alt="" coords="1291,315,1354,310,1354,315,1292,321"/>
+<area shape="rect" id="Node000022" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="952,83,1112,108"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="857,156,896,143,986,110,988,115,898,149,858,161"/>
+<area shape="rect" id="Node000023" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1167,5,1313,31"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="1066,80,1191,33,1193,38,1068,85"/>
+<area shape="rect" id="Node000024" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1365,5,1511,31"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="1314,15,1351,15,1351,21,1314,21"/>
+<area shape="rect" id="Node000026" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="497,336,665,361"/>
+<area shape="poly" id="edge28_Node000025_Node000026" title=" " alt="" coords="438,346,483,346,483,351,438,351"/>
+<area shape="rect" id="Node000027" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="724,336,897,361"/>
+<area shape="poly" id="edge29_Node000026_Node000027" title=" " alt="" coords="665,346,710,346,710,351,665,351"/>
+<area shape="rect" id="Node000028" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="955,384,1109,409"/>
+<area shape="poly" id="edge30_Node000027_Node000028" title=" " alt="" coords="871,359,960,378,959,384,869,364"/>
+<area shape="rect" id="Node000029" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="954,335,1110,360"/>
+<area shape="poly" id="edge31_Node000027_Node000029" title=" " alt="" coords="898,345,940,345,940,351,898,351"/>
+<area shape="rect" id="Node000031" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="945,285,1119,311"/>
+<area shape="poly" id="edge33_Node000030_Node000031" title=" " alt="" coords="665,295,932,295,932,301,665,301"/>
+<area shape="poly" id="edge35_Node000031_Node000010" title=" " alt="" coords="1096,308,1120,321,1137,339,1144,357,1152,374,1168,389,1211,409,1257,421,1304,426,1348,428,1347,433,1303,432,1256,426,1209,414,1165,394,1148,377,1140,359,1132,342,1117,325,1094,313"/>
+<area shape="poly" id="edge36_Node000031_Node000012" title=" " alt="" coords="1056,283,1117,243,1130,229,1139,216,1149,204,1165,193,1212,176,1261,166,1309,161,1353,161,1353,166,1309,167,1261,171,1213,181,1168,198,1153,208,1143,219,1134,232,1120,247,1059,287"/>
+<area shape="poly" id="edge34_Node000031_Node000016" title=" " alt="" coords="1118,283,1372,246,1372,251,1119,288"/>
+<area shape="poly" id="edge40_Node000031_Node000018" title=" " alt="" coords="1120,305,1175,312,1174,317,1119,311"/>
+<area shape="rect" id="Node000032" href="$pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1169,461,1311,487"/>
+<area shape="poly" id="edge37_Node000031_Node000032" title=" " alt="" coords="1101,308,1120,321,1133,336,1141,351,1146,381,1151,411,1157,425,1169,440,1185,453,1182,457,1165,444,1153,428,1146,412,1141,382,1136,353,1129,339,1117,325,1098,313"/>
+<area shape="poly" id="edge38_Node000032_Node000009" title=" " alt="" coords="1302,484,1353,489,1409,487,1464,475,1490,463,1513,447,1531,425,1539,403,1541,379,1539,355,1536,330,1537,305,1544,279,1561,254,1573,244,1576,248,1565,257,1549,281,1542,305,1541,330,1544,355,1546,379,1545,404,1536,428,1516,451,1493,467,1466,480,1410,493,1352,494,1301,489"/>
+<area shape="poly" id="edge39_Node000032_Node000010" title=" " alt="" coords="1290,459,1374,437,1375,442,1291,464"/>
 </map>

@@ -164,7 +164,7 @@ var searchData=
   ['float_5fvect_5fadd_161',['float_vect_add',['../group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8',1,'pprz_algebra_float.h']]],
   ['float_5fvect_5fcopy_162',['float_vect_copy',['../group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823',1,'pprz_algebra_float.h']]],
   ['float_5fvect_5fdiff_163',['float_vect_diff',['../group__math__algebra__float.html#gaa33d68b46bc4922889e1fc931c6318fd',1,'pprz_algebra_float.h']]],
-  ['float_5fvect_5fdiff_5feuler_164',['float_vect_diff_euler',['../oneloop__nB_8c.html#a4f53d627a44b704a5dbdd1223edd5a19',1,'oneloop_nB.c']]],
+  ['float_5fvect_5fdiff_5feuler_164',['float_vect_diff_euler',['../oneloop__andi_8c.html#a4f53d627a44b704a5dbdd1223edd5a19',1,'float_vect_diff_euler(float err[3], float a[3], float b[3]):&#160;oneloop_andi.c'],['../oneloop__nB_8c.html#a4f53d627a44b704a5dbdd1223edd5a19',1,'float_vect_diff_euler(float err[3], float a[3], float b[3]):&#160;oneloop_nB.c']]],
   ['float_5fvect_5fdot_5fproduct_165',['float_vect_dot_product',['../group__math__algebra__float.html#ga88cf94d472e697d43c56185cf80a300c',1,'pprz_algebra_float.h']]],
   ['float_5fvect_5fmul_166',['float_vect_mul',['../group__math__algebra__float.html#ga28437c6b841646e10f34436a76c82044',1,'pprz_algebra_float.h']]],
   ['float_5fvect_5fnorm_167',['float_vect_norm',['../group__math__algebra__float.html#gad3e4fbe2ede8f068d46f7c617227e3f1',1,'pprz_algebra_float.h']]],

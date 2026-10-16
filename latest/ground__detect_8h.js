@@ -9,7 +9,7 @@ var ground__detect_8h =
       [ "spec_thrust_down", "ground__detect_8h.html#a0a9a95c2d445c74429b7a970136ae8ed", null ],
       [ "speed_down", "ground__detect_8h.html#a8b1b3a2a7c4882e771907564bdb11ffa", null ]
     ] ],
-    [ "ground_detect_bitmask_t.__unnamed305__", "ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed305____", [
+    [ "ground_detect_bitmask_t.__unnamed306__", "ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed306____", [
       [ "accel_filt_trigger", "ground__detect_8h.html#a19dc1e0d51568963f0439babcc628efe", null ],
       [ "agl_trigger", "ground__detect_8h.html#ae9f5fc867d5bf407ec572e60d89bd612", null ],
       [ "force_sensor_trigger", "ground__detect_8h.html#abdf2416823bac6338cb3ffa76a49859a", null ],

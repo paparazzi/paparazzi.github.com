@@ -20,6 +20,6 @@ var searchData=
   ['none_17',['none',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742eac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE:&#160;actuators_asctec_v2.h'],['../gvf__traj_8h.html#a5e61057ce8c51b9efe7810e885a5e608ac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE:&#160;gvf_traj.h']]],
   ['none_5fparametric_18',['NONE_PARAMETRIC',['../gvf__param__traj_8h.html#a1f89e28ef0e60a8ec5555b596db39800a4d26661256cfa3c489d65c854fe8886e',1,'gvf_param_traj.h']]],
   ['norc_19',['NORC',['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aad08e86eded6925a3b5aab67e6ab63aff',1,'nps_radio_control.h']]],
-  ['notch_20',['NOTCH',['../oneloop__nB_8h.html#a7ef0ab496f57e183b484e62e2053c94fad0682496c50c56ab8dc39c36724aa97a',1,'oneloop_nB.h']]],
+  ['notch_20',['notch',['../oneloop__andi_8h.html#a7ef0ab496f57e183b484e62e2053c94fad0682496c50c56ab8dc39c36724aa97a',1,'NOTCH:&#160;oneloop_andi.h'],['../oneloop__nB_8h.html#a7ef0ab496f57e183b484e62e2053c94fad0682496c50c56ab8dc39c36724aa97a',1,'NOTCH:&#160;oneloop_nB.h']]],
   ['ns_21',['ns',['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5a1904356e8ec34146e03f386bcb0da805',1,'NS:&#160;nav_survey_rectangle.h'],['../nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5a1904356e8ec34146e03f386bcb0da805',1,'NS:&#160;nav_survey_rectangle_rotorcraft.h']]]
 ];
