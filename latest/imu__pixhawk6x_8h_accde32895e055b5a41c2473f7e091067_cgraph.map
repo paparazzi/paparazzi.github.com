@@ -1,27 +1,31 @@
 <map id="imu_pixhawk6x_init" name="imu_pixhawk6x_init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,159,155"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,153,159,179"/>
 <area shape="rect" id="Node000002" href="$imu_8c.html#a4e6e633b0fa280971b8c4baeb656c611" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="207,55,381,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,127,206,90,233,81,234,87,208,95,114,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,151,146,120,206,89,224,82,226,87,208,94,149,125,102,155"/>
 <area shape="rect" id="Node000008" href="$imu_8c.html#a25210558ed62e3a0c6e27e620d38f53e" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="209,104,379,129"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="159,130,194,126,195,131,159,136"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="137,151,225,130,226,135,138,156"/>
 <area shape="rect" id="Node000010" href="$invensense2_8c.html#aed514b99900e6e485c11fdbc7d53df4f" title="Initialize the invensense v2 sensor instance." alt="" coords="228,153,360,179"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="159,148,215,154,214,160,159,153"/>
-<area shape="rect" id="Node000011" href="$invensense3_8c.html#afb15165a32a9461870f3e701c1771e0b" title="Initialize the invensense v3 sensor instance." alt="" coords="228,203,360,228"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="114,152,208,189,231,196,230,201,206,194,112,157"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="159,163,214,163,214,169,159,169"/>
+<area shape="rect" id="Node000011" href="$invensense3__456_8c.html#a2aca0a9723f33f936e4a565490f3077e" title="Initialize the invensense v3 sensor instance." alt="" coords="213,203,375,228"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="138,176,226,197,225,202,137,181"/>
+<area shape="rect" id="Node000013" href="$invensense3_8c.html#afb15165a32a9461870f3e701c1771e0b" title="Initialize the invensense v3 sensor instance." alt="" coords="228,252,360,277"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="102,177,149,207,208,238,226,245,224,250,206,243,146,212,99,181"/>
 <area shape="rect" id="Node000003" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="452,5,568,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,52,440,31,441,36,351,57"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="442,104,578,129"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="351,77,441,98,440,104,350,83"/>
-<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="429,55,591,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="381,65,415,65,415,70,381,70"/>
-<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="639,55,805,80"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="591,65,625,65,625,70,591,70"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="853,55,1003,80"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="805,65,839,65,839,70,805,70"/>
-<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="380,114,428,114,428,119,380,119"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="350,101,440,80,441,86,351,107"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="442,55,578,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,65,428,65,428,70,381,70"/>
+<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="429,104,591,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="351,77,441,98,440,104,350,83"/>
+<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="639,104,805,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="591,114,625,114,625,119,591,119"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="853,104,1003,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="805,114,839,114,839,119,805,119"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="350,101,440,80,441,86,351,107"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="380,114,416,114,416,119,380,119"/>
 <area shape="rect" id="Node000009" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="455,153,565,179"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="351,127,442,148,441,153,350,132"/>
-<area shape="rect" id="Node000012" href="$invensense3_8c.html#a3a484845052c48c8385a4d83e0a56ebb" title=" " alt="" coords="439,203,581,228"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="360,213,425,213,425,218,360,218"/>
+<area shape="rect" id="Node000012" href="$invensense3__456_8c.html#a3a484845052c48c8385a4d83e0a56ebb" title=" " alt="" coords="439,203,581,228"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="375,213,425,213,425,218,375,218"/>
+<area shape="rect" id="Node000014" href="$invensense3_8c.html#a3a484845052c48c8385a4d83e0a56ebb" title=" " alt="" coords="439,252,581,277"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="360,262,425,262,425,267,360,267"/>
 </map>

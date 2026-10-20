@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_mpu6000.html#module_xml__imu_mpu6000":[1,226,2,0],
 "module__imu_mpu6000_hmc5883.html":[1,227],
 "module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,227,1],
 "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,227,2],
@@ -30,10 +31,11 @@ var NAVTREEINDEX136 =
 "module__imu_nps.html#module_load_example__imu_nps":[1,232,0],
 "module__imu_nps.html#module_xml__imu_nps":[1,232,1,0],
 "module__imu_pixhawk6x.html":[1,233],
-"module__imu_pixhawk6x.html#functions__imu_pixhawk6x":[1,233,1],
+"module__imu_pixhawk6x.html#configuration__imu_pixhawk6x":[1,233,1],
+"module__imu_pixhawk6x.html#functions__imu_pixhawk6x":[1,233,2],
 "module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x":[1,233,0],
-"module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x":[1,233,1,1],
-"module__imu_pixhawk6x.html#periodic_functions":[1,233,1,0],
+"module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x":[1,233,2,1],
+"module__imu_pixhawk6x.html#periodic_functions":[1,233,2,0],
 "module__imu_px4fmu_v1_7.html":[1,234],
 "module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,234,1],
 "module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,234,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__light_solar.html#module_xml__light_solar":[1,310,1,0],
 "module__light_temt.html":[1,311],
 "module__light_temt.html#functions__light_temt":[1,311,1],
-"module__light_temt.html#module_load_example__light_temt":[1,311,0],
-"module__light_temt.html#module_xml__light_temt":[1,311,1,0],
-"module__logger_control_effectiveness.html":[1,276]
+"module__light_temt.html#module_load_example__light_temt":[1,311,0]
 };

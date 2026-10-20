@@ -96,14 +96,24 @@ $(document).ready(function(){initNavTree('module__imu_pixhawk6x.html',''); initR
 <div class="contents">
 <div class="textblock"><p><b>IMU driver for the sensors inside the Pixhawk 6X autopilots</b></p>
 <ul>
-<li>IMU1: ICM42670</li>
-<li>IMU2: ???</li>
-<li>IMU3: ???</li>
+<li>IMU1: ICM42670 (version 4) / ICM45686 (version 8)</li>
+<li>IMU2: ICM42688 (version 4) / ICM45686 (version 8)</li>
+<li>IMU3: BMI088 or ICM20649 (version 4) / ICM45686 (version 8)</li>
 </ul>
 <h1><a class="anchor" id="module_load_example__imu_pixhawk6x"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_pixhawk6x&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__imu_pixhawk6x"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_pixhawk6x&quot;</span>&gt;</div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;IMU_PIXHAWK6X_REV&quot; value=&quot;4&quot; /&gt;\n  &#39;</span></div>
+<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__imu_pixhawk6x"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
+<ul>
+<li><b>name:</b> <code>IMU_PIXHAWK6X_REV</code> <b>value:</b> <em>4</em> <br  />
+ Description: The IMU revision, only 8 and 4 are supported</li>
+</ul>
+<h1><a class="anchor" id="functions__imu_pixhawk6x"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -141,6 +151,7 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="invensense2_8c.html">peripherals/invensense2.c</a></li>
 <li><a class="el" href="invensense3_8c.html">peripherals/invensense3.c</a></li>
+<li><a class="el" href="invensense3__456_8c.html">peripherals/invensense3_456.c</a></li>
 <li><a class="el" href="imu__pixhawk6x_8c.html">modules/imu/imu_pixhawk6x.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__imu_pixhawk6x"></a>
@@ -151,10 +162,11 @@ Raw imu_pixhawk6x.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">IMU</span> <span class="keyword">driver</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">sensors</span> <span class="keyword">inside</span> <span class="keyword">the</span> <span class="keyword">Pixhawk</span> 6<span class="keyword">X</span> <span class="keyword">autopilots</span></div>
-<div class="line">      - <span class="keyword">IMU1:</span> <span class="keyword">ICM42670</span></div>
-<div class="line">      - <span class="keyword">IMU2:</span> ???</div>
-<div class="line">      - <span class="keyword">IMU3:</span> ???</div>
+<div class="line">      - <span class="keyword">IMU1:</span> <span class="keyword">ICM42670</span> (<span class="keyword">version</span> 4) / <span class="keyword">ICM45686</span> (<span class="keyword">version</span> 8)</div>
+<div class="line">      - <span class="keyword">IMU2:</span> <span class="keyword">ICM42688</span> (<span class="keyword">version</span> 4) / <span class="keyword">ICM45686</span> (<span class="keyword">version</span> 8)</div>
+<div class="line">      - <span class="keyword">IMU3:</span> <span class="keyword">BMI088</span> <span class="keyword">or</span> <span class="keyword">ICM20649</span> (<span class="keyword">version</span> 4) / <span class="keyword">ICM45686</span> (<span class="keyword">version</span> 8)</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_PIXHAWK6X_REV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The IMU revision, only 8 and 4 are supported&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">i2c</span>,<span class="keyword">imu_common</span>,<span class="keyword">imu_heater</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -167,12 +179,18 @@ Raw imu_pixhawk6x.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;imu_pixhawk6x_periodic()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;imu_pixhawk6x_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|nps|fbw&quot;</span>&gt;</div>
+<div class="line">    <span class="comment">&lt;!-- IMU revision --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_PIXHAWK6X_REV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;4&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_PIXHAWK6X_REV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(IMU_PIXHAWK6X_REV)&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">&lt;!-- Files --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense2.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense3.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense2.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(IMU_PIXHAWK6X_REV), 8)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense3.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(IMU_PIXHAWK6X_REV), 8)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense3_456.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(IMU_PIXHAWK6X_REV), 8)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_pixhawk6x.c&quot;</span>/&gt;</div>
 <div class="line">    </div>
-<div class="line">    <span class="comment">&lt;!-- IMU1: ICM42670 --&gt;</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- IMU1: ICM42670 (version 4) / ICM45686 (version 8) --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU1_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;spi1&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;lower|upper&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU1_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI_SLAVE1&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU1_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(PIXHAWK6X_IMU1_SPI_DEV_LOWER)&quot;</span>/&gt;</div>
@@ -180,7 +198,7 @@ Raw imu_pixhawk6x.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU1_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(PIXHAWK6X_IMU1_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(PIXHAWK6X_IMU1_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- IMU2: ICM42688--&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- IMU2: ICM42688 (version 4) / ICM45686 (version 8) --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU2_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;spi2&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;lower|upper&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU2_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI_SLAVE2&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU2_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(PIXHAWK6X_IMU2_SPI_DEV_LOWER)&quot;</span>/&gt;</div>
@@ -188,7 +206,7 @@ Raw imu_pixhawk6x.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU2_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(PIXHAWK6X_IMU2_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(PIXHAWK6X_IMU2_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- IMU3: BMI088 / ICM20649 --&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- IMU3: BMI088 or ICM20649 (version 4) / ICM45686 (version 8) --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU3_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;spi3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;lower|upper&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU3_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI_SLAVE3&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU3_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(PIXHAWK6X_IMU3_SPI_DEV_LOWER)&quot;</span>/&gt;</div>
@@ -196,7 +214,7 @@ Raw imu_pixhawk6x.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PIXHAWK6X_IMU3_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(PIXHAWK6X_IMU3_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(PIXHAWK6X_IMU3_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- Configure the heater (ICM42688) --&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- Configure the heater IMU2 --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_GYRO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;IMU_PIXHAWK2_ID&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_TARGET_TEMP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;45.0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_P_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50.0&quot;</span>/&gt;</div>
@@ -228,7 +246,7 @@ Raw imu_pixhawk6x.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Oct 20 2026 11:44:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Oct 20 2026 14:54:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"common__flight__plan_8c.html":[12,0,1,0,6,47,2],
 "common__flight__plan_8c.html#a049273ee2adb1510803cd91ede3fc963":[12,0,1,0,6,47,2,17],
 "common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49":[12,0,1,0,6,47,2,16],
 "common__flight__plan_8c.html#a0d8e32e1e5d7b51a53b80c847f7fcecf":[12,0,1,0,6,47,2,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "copilot_8h.html#a59e05c9fee48850daf7dcf2a8d40f7fc":[12,0,1,0,6,45,0,4],
 "copilot_8h.html#a6033b7617dcb22f7c5755768fb412fc5":[12,0,1,0,6,45,0,14],
 "copilot_8h.html#a6138a8a23d041c56344bec4cb1a59674":[12,0,1,0,6,45,0,0,3],
-"copilot_8h.html#a6b499341ba7e3a9f3a628e767ef27d02":[12,0,1,0,6,45,0,1,5],
-"copilot_8h.html#a6f66771f594519e6d3b8efd400ec4162":[12,0,1,0,6,45,0,8]
+"copilot_8h.html#a6b499341ba7e3a9f3a628e767ef27d02":[12,0,1,0,6,45,0,1,5]
 };

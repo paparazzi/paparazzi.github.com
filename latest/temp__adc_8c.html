@@ -536,7 +536,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="temp__adc_8c_source.html#l00151">151</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p class="reference">References <a class="el" href="temp__adc_8c_source.html#l00116">calc_lm35()</a>, <a class="el" href="temp__adc_8c_source.html#l00104">calc_ntc()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="temp__adc_8c_source.html#l00121">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_adc_sync_send</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c1</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c2</a>, and <a class="el" href="temp__adc_8c_source.html#l00035">temp_c3</a>.</p>
+<p class="reference">References <a class="el" href="adc_8h_source.html#l00076">adc_buf_get()</a>, <a class="el" href="temp__adc_8c_source.html#l00116">calc_lm35()</a>, <a class="el" href="temp__adc_8c_source.html#l00104">calc_ntc()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="temp__adc_8c_source.html#l00121">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_adc_sync_send</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c1</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c2</a>, and <a class="el" href="temp__adc_8c_source.html#l00035">temp_c3</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -544,13 +544,15 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph.png" border="0" usemap="#atemp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph" alt=""/></div>
 <map name="atemp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph" id="atemp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,151,80"/>
-<area shape="rect" href="temp__adc_8c.html#a5929b5b9a76cc7b8e5254ab2c9ebcf51" title=" " alt="" coords="231,5,319,31"/>
-<area shape="poly" title=" " alt="" coords="129,52,216,30,218,35,130,57"/>
-<area shape="rect" href="temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c" title="Calculate the NTC tempreature in celcius based on the Steinhart equation." alt="" coords="237,55,312,80"/>
-<area shape="poly" title=" " alt="" coords="151,65,223,65,223,70,151,70"/>
-<area shape="rect" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119" title=" " alt="" coords="199,104,351,129"/>
-<area shape="poly" title=" " alt="" coords="130,77,211,98,210,103,129,83"/>
+<area shape="rect" title=" " alt="" coords="5,80,151,105"/>
+<area shape="rect" href="adc_8h.html#adc94c7dcc055633d1d8ddad1eeda9629" title="Get filtered value from buffer." alt="" coords="224,5,325,31"/>
+<area shape="poly" title=" " alt="" coords="106,77,198,40,218,32,220,37,200,44,109,82"/>
+<area shape="rect" href="temp__adc_8c.html#a5929b5b9a76cc7b8e5254ab2c9ebcf51" title=" " alt="" coords="231,55,319,80"/>
+<area shape="poly" title=" " alt="" coords="151,81,217,72,217,77,151,86"/>
+<area shape="rect" href="temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c" title="Calculate the NTC tempreature in celcius based on the Steinhart equation." alt="" coords="237,104,312,129"/>
+<area shape="poly" title=" " alt="" coords="151,99,224,108,223,113,151,104"/>
+<area shape="rect" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119" title=" " alt="" coords="199,153,351,179"/>
+<area shape="poly" title=" " alt="" coords="111,103,200,138,223,146,221,151,198,143,109,108"/>
 </map>
 </div>
 
@@ -659,7 +661,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="temp__adc_8c.html">temp_adc.c</a></li>
-    <li class="footer">Generated on Tue Oct 20 2026 11:44:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Oct 20 2026 14:54:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

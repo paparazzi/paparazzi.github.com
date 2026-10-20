@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"group__SHELL.html#structShellCommand":[9,7,1],
 "group__SHELL.html#structShellConfig":[9,7,2],
 "group__ac__info.html":[9,2],
 "group__ac__info.html#a0412b79bc3827c5cbf69fa5ae0f31f67":[9,2,0,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX69 =
 "group__i2c.html#structi2c__errors":[9,0,0,2],
 "group__i2c.html#structi2c__periph":[9,0,0,1],
 "group__i2c.html#structi2c__transaction":[9,0,0,0],
-"group__input__filter.html":[9,4,5],
-"group__input__filter.html#ga15cd78246263976fa03be3838d2e7b5d":[9,4,5,6]
+"group__input__filter.html":[9,4,5]
 };

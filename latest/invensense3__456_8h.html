@@ -147,9 +147,11 @@ $(document).ready(function(){initNavTree('invensense3__456_8h.html',''); initRes
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3__456_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2peripherals_2invensense3__456_8hdep" alt=""/></div>
 <map name="asw_2airborne_2peripherals_2invensense3__456_8hdep" id="asw_2airborne_2peripherals_2invensense3__456_8hdep">
-<area shape="rect" title="Driver for the Invensense 456XY IMUs:" alt="" coords="5,5,180,45"/>
-<area shape="rect" href="invensense3__456_8c.html" title="Driver for the Invensense 456XY IMUs:" alt="" coords="5,93,180,133"/>
-<area shape="poly" title=" " alt="" coords="95,59,95,93,90,93,90,59"/>
+<area shape="rect" title="Driver for the Invensense 456XY IMUs:" alt="" coords="100,5,275,45"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html" title="Driver for the IMU&#39;s in the Pixhawk6x autopilots." alt="" coords="5,93,175,133"/>
+<area shape="poly" title=" " alt="" coords="157,56,113,95,110,91,154,52"/>
+<area shape="rect" href="invensense3__456_8c.html" title="Driver for the Invensense 456XY IMUs:" alt="" coords="199,93,373,133"/>
+<area shape="poly" title=" " alt="" coords="221,52,266,91,262,95,218,56"/>
 </map>
 </div>
 </div>
@@ -604,7 +606,7 @@ tx_buffer</td>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00040">INV3_456_WHOAMI_ICM45686</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00052">INV3REG_456_FIFO_COUNTH</a>, <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8h_source.html#l00071">INVENSENSE3_456_CONFIG</a>, <a class="el" href="invensense3__456_8h_source.html#l00077">INVENSENSE3_456_ICM45686</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8c_source.html#l00247">invensense3_456_parse_fifo_data()</a>, <a class="el" href="invensense3__456_8c_source.html#l00396">invensense3_456_register_read()</a>, <a class="el" href="invensense3__456_8h_source.html#l00072">INVENSENSE3_456_RUNNING</a>, <a class="el" href="invensense3__456_8c_source.html#l00297">invensense3_456_set_scalings()</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, <a class="el" href="detect__gate_8c_source.html#l00085">n_samples</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00096">SPITransFailed</a>, and <a class="el" href="spi_8h_source.html#l00095">SPITransSuccess</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00202">imu_cube_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00202">imu_cube_event()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00184">imu_pixhawk6x_event()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -663,9 +665,11 @@ tx_buffer</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3__456_8h_acdcc891e74298e8d1823dc663112753b_icgraph.png" border="0" usemap="#ainvensense3__456_8h_acdcc891e74298e8d1823dc663112753b_icgraph" alt=""/></div>
 <map name="ainvensense3__456_8h_acdcc891e74298e8d1823dc663112753b_icgraph" id="ainvensense3__456_8h_acdcc891e74298e8d1823dc663112753b_icgraph">
-<area shape="rect" title="Should be called in the event thread." alt="" coords="183,5,361,31"/>
-<area shape="rect" href="imu__cube_8c.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="5,5,135,31"/>
-<area shape="poly" title=" " alt="" coords="169,21,135,21,135,15,169,15"/>
+<area shape="rect" title="Should be called in the event thread." alt="" coords="223,31,401,56"/>
+<area shape="rect" href="imu__cube_8c.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="25,5,155,31"/>
+<area shape="poly" title=" " alt="" coords="208,34,155,28,156,23,209,29"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html#af615f367e491a8eddf123da8ccf19b85" title=" " alt="" coords="5,55,175,80"/>
+<area shape="poly" title=" " alt="" coords="209,57,175,61,175,56,208,52"/>
 </map>
 </div>
 
@@ -699,7 +703,7 @@ tx_buffer</td>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8h_source.html#l00076">INVENSENSE3_456_UNKOWN</a>, <a class="el" href="invensense3__456_8c_source.html#l00495">samples_from_odr()</a>, <a class="el" href="spi_8h_source.html#l00071">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00080">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv16</a>, <a class="el" href="spi_8h_source.html#l00086">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00108">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00059">SPISelectUnselect</a>, and <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00053">imu_cube_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00053">imu_cube_init()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00046">imu_pixhawk6x_init()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -719,9 +723,11 @@ tx_buffer</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3__456_8h_a2aca0a9723f33f936e4a565490f3077e_icgraph.png" border="0" usemap="#ainvensense3__456_8h_a2aca0a9723f33f936e4a565490f3077e_icgraph" alt=""/></div>
 <map name="ainvensense3__456_8h_a2aca0a9723f33f936e4a565490f3077e_icgraph" id="ainvensense3__456_8h_a2aca0a9723f33f936e4a565490f3077e_icgraph">
-<area shape="rect" title="Initialize the invensense v3 sensor instance." alt="" coords="167,5,329,31"/>
-<area shape="rect" href="imu__cube_8c.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="5,5,119,31"/>
-<area shape="poly" title=" " alt="" coords="153,21,119,21,119,15,153,15"/>
+<area shape="rect" title="Initialize the invensense v3 sensor instance." alt="" coords="207,31,369,56"/>
+<area shape="rect" href="imu__cube_8c.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="25,5,139,31"/>
+<area shape="poly" title=" " alt="" coords="193,34,138,28,139,22,193,29"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html#accde32895e055b5a41c2473f7e091067" title=" " alt="" coords="5,55,159,80"/>
+<area shape="poly" title=" " alt="" coords="193,57,159,61,159,56,193,52"/>
 </map>
 </div>
 
@@ -760,7 +766,7 @@ tx_buffer</td>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00052">INV3REG_456_FIFO_COUNTH</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00042">INV3REG_456_WHOAMI</a>, <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8h_source.html#l00071">INVENSENSE3_456_CONFIG</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8c_source.html#l00396">invensense3_456_register_read()</a>, <a class="el" href="invensense3__456_8h_source.html#l00072">INVENSENSE3_456_RUNNING</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, and <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00185">imu_cube_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00185">imu_cube_periodic()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00171">imu_pixhawk6x_periodic()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -794,9 +800,11 @@ tx_buffer</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3__456_8h_adda3716c9e052a14d7bb83fd1f07bd03_icgraph.png" border="0" usemap="#ainvensense3__456_8h_adda3716c9e052a14d7bb83fd1f07bd03_icgraph" alt=""/></div>
 <map name="ainvensense3__456_8h_adda3716c9e052a14d7bb83fd1f07bd03_icgraph" id="ainvensense3__456_8h_adda3716c9e052a14d7bb83fd1f07bd03_icgraph">
-<area shape="rect" title="Should be called periodically to request sensor readings." alt="" coords="197,5,392,31"/>
-<area shape="rect" href="imu__cube_8c.html#a28edd767495c5986bcbcba863b0f25e1" title=" " alt="" coords="5,5,149,31"/>
-<area shape="poly" title=" " alt="" coords="184,21,150,21,150,15,184,15"/>
+<area shape="rect" title="Should be called periodically to request sensor readings." alt="" coords="237,31,432,56"/>
+<area shape="rect" href="imu__cube_8c.html#a28edd767495c5986bcbcba863b0f25e1" title=" " alt="" coords="25,5,169,31"/>
+<area shape="poly" title=" " alt="" coords="224,34,169,28,170,23,224,29"/>
+<area shape="rect" href="imu__pixhawk6x_8c.html#afb8372132c62ca65ad81c9c90665c3e0" title=" " alt="" coords="5,55,189,80"/>
+<area shape="poly" title=" " alt="" coords="224,57,190,61,189,55,223,52"/>
 </map>
 </div>
 
@@ -808,7 +816,7 @@ tx_buffer</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="invensense3__456_8h.html">invensense3_456.h</a></li>
-    <li class="footer">Generated on Tue Oct 20 2026 11:44:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Oct 20 2026 14:54:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

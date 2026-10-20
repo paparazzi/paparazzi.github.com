@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"electrical_8h.html#structElectrical":[12,0,1,0,6,23,5,0],
 "electrical_8h_source.html":[12,0,1,0,6,23,5],
 "encoder__amt22_8c.html":[12,0,1,0,6,64,60],
 "encoder__amt22_8c.html#a6d03d371b1a37ba475b0cfec28c7a3d8":[12,0,1,0,6,64,60,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610af92489b6ec638b539441145f3afa0dad":[12,0,1,0,6,24,1,4,36],
 "esc32_8h.html#a8c311b6ba5e2153e7c9098a073f03f2f":[12,0,1,0,6,24,1,1,1],
 "esc32_8h.html#aa1ad28a34ba6df4c6b092fa5f99ade37":[12,0,1,0,6,24,1,0,1],
-"esc32_8h.html#ab012f41c17e9ede81accd6af9e1eb577":[12,0,1,0,6,24,1,3],
-"esc32_8h.html#ab012f41c17e9ede81accd6af9e1eb577a1373b568ee1e03827c155fdc49cd4767":[12,0,1,0,6,24,1,3,15]
+"esc32_8h.html#ab012f41c17e9ede81accd6af9e1eb577":[12,0,1,0,6,24,1,3]
 };

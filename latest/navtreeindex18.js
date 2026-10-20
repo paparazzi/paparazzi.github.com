@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__color__correction_8h_source.html":[12,0,1,0,1,2,0,0,5],
 "avi__isp__dead__pixel__correction_8h.html":[12,0,1,0,1,2,0,0,6],
 "avi__isp__dead__pixel__correction_8h.html#a04590083d7ad8b251f83e42028f589ee":[12,0,1,0,1,2,0,0,6,7,3],
 "avi__isp__dead__pixel__correction_8h.html#a0d8ae7b8dffd868fe9907af1163daa3e":[12,0,1,0,1,2,0,0,6,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__regs":[12,0,1,0,1,2,0,0,10,1],
 "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut_8____unnamed140____":[12,0,1,0,1,2,0,0,10,9],
 "avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut__regs":[12,0,1,0,1,2,0,0,10,3],
-"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__bv__lut":[12,0,1,0,1,2,0,0,10,6],
-"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__conf":[12,0,1,0,1,2,0,0,10,0]
+"avi__isp__gamma__corrector_8h.html#unionavi__isp__gamma__corrector__bv__lut":[12,0,1,0,1,2,0,0,10,6]
 };

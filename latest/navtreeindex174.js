@@ -1,5 +1,7 @@
 var NAVTREEINDEX174 =
 {
+"pca9685__i2c_8c.html#afcb804741158955a93c3ed7219de5a00":[12,0,1,0,6,52,0,47],
+"pca9685__i2c_8c.html#afd4712d8878471d78e8992cb86ae6efd":[12,0,1,0,6,52,0,55],
 "pca9685__i2c_8c_source.html":[12,0,1,0,6,52,0],
 "pca9685__i2c_8h.html":[12,0,1,0,6,52,1],
 "pca9685__i2c_8h.html#a113feceba05e72e9dd67ad6bfc48f7e0":[12,0,1,0,6,52,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX174 =
 "pfc__actuators_8h_source.html":[12,0,1,0,6,10,3],
 "photogrammetry__calculator_8c.html":[12,0,1,0,6,9,0],
 "photogrammetry__calculator_8c.html#a03a06704ec5b13c223bf3c083ee43eca":[12,0,1,0,6,9,0,3],
-"photogrammetry__calculator_8c.html#a03d0582dacb6e6dc77f266530c9c3682":[12,0,1,0,6,9,0,8],
-"photogrammetry__calculator_8c.html#a1dbe925a7f90228d2b3ca852585492d0":[12,0,1,0,6,9,0,14],
-"photogrammetry__calculator_8c.html#a35cc5dcc88bdfb0be7fd97367dc7e037":[12,0,1,0,6,9,0,15]
+"photogrammetry__calculator_8c.html#a03d0582dacb6e6dc77f266530c9c3682":[12,0,1,0,6,9,0,8]
 };

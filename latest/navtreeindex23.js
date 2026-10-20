@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"battery__monitor_8h.html#a9e53abf5e5b1b67ac8d4458839c11e51":[12,0,1,0,6,1,3,1,0],
 "battery__monitor_8h.html#aa24306e1495e3832bf65c7811f2d979b":[12,0,1,0,6,1,3,0,10],
 "battery__monitor_8h.html#aa7716af3099382e658b378c62972b9b7":[12,0,1,0,6,1,3,26],
 "battery__monitor_8h.html#ab58a356c583eae3f244dea45ffd665d5":[12,0,1,0,6,1,3,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "betafpv_2aiof7_2v2_2board_8h.html#a51b9ee6e8e178952dd5054b5c731ccab":[12,0,1,0,1,3,0,0,0,259],
 "betafpv_2aiof7_2v2_2board_8h.html#a5211ea3808f3e5f4273cbe61713039e0":[12,0,1,0,1,3,0,0,0,23],
 "betafpv_2aiof7_2v2_2board_8h.html#a54b1b8b62ad4d56d1e2b192c04381f2f":[12,0,1,0,1,3,0,0,0,269],
-"betafpv_2aiof7_2v2_2board_8h.html#a54d1a960b26a142dba05d5cd54902c4f":[12,0,1,0,1,3,0,0,0,390],
-"betafpv_2aiof7_2v2_2board_8h.html#a54da31bd4b835e4763691709dc5a6cf2":[12,0,1,0,1,3,0,0,0,207]
+"betafpv_2aiof7_2v2_2board_8h.html#a54d1a960b26a142dba05d5cd54902c4f":[12,0,1,0,1,3,0,0,0,390]
 };

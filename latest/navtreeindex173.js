@@ -1,5 +1,7 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#ROVER_STATUS":[2,0,224],
+"paparazzi_messages.html#RSSI":[2,0,25],
 "paparazzi_messages.html#RSSI_COMBINED":[2,0,36],
 "paparazzi_messages.html#RTCM_INJECT":[2,1,56],
 "paparazzi_messages.html#RTOS_MON":[2,0,240],
@@ -247,7 +249,5 @@ var NAVTREEINDEX173 =
 "pca9685__i2c_8c.html#af4c63b3b6fd4b94c91eff01fcac9b629":[12,0,1,0,6,52,0,78],
 "pca9685__i2c_8c.html#af6ef172f6560180e21c718e26a9f08b4":[12,0,1,0,6,52,0,51],
 "pca9685__i2c_8c.html#afaa7a02035e3745a7c7e4e215dd8b4c9":[12,0,1,0,6,52,0,36],
-"pca9685__i2c_8c.html#afbd7a907e3c6796a1877f5829d8a4553":[12,0,1,0,6,52,0,80],
-"pca9685__i2c_8c.html#afcb804741158955a93c3ed7219de5a00":[12,0,1,0,6,52,0,47],
-"pca9685__i2c_8c.html#afd4712d8878471d78e8992cb86ae6efd":[12,0,1,0,6,52,0,55]
+"pca9685__i2c_8c.html#afbd7a907e3c6796a1877f5829d8a4553":[12,0,1,0,6,52,0,80]
 };

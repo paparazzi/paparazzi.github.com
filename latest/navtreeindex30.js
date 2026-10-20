@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"cam__gimbal_8h.html#a0276a85f28471f151dbca3a4bfbbda04":[12,0,1,0,6,8,1,25],
 "cam__gimbal_8h.html#a0504da11cf982e32ddff1917048ccde0":[12,0,1,0,6,8,1,19],
 "cam__gimbal_8h.html#a095df07a107f7627b0e28974430bc1c0":[12,0,1,0,6,8,1,10],
 "cam__gimbal_8h.html#a0ffb00e628d6fe0ac1ea1bd2a38f7a67":[12,0,1,0,6,8,1,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "cc2500__compat_8c.html#afc9797e5e9c3c85f61acfb05ef3a69e0":[12,0,1,0,6,56,0,2,4],
 "cc2500__compat_8c.html#afee63fd0ba43781073ba2f857badeeca":[12,0,1,0,6,56,0,2,29],
 "cc2500__compat_8c_source.html":[12,0,1,0,6,56,0,2],
-"cc2500__compat_8h.html":[12,0,1,0,6,56,0,3],
-"cc2500__compat_8h.html#a01817905acb43331ed4bc62ad18dab60":[12,0,1,0,6,56,0,3,20]
+"cc2500__compat_8h.html":[12,0,1,0,6,56,0,3]
 };

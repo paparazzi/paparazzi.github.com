@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"boards_2bebop_2actuators_8h.html#a26304325786d46ceabf6199f77a86aaa":[12,0,1,0,1,2,2,15],
 "boards_2bebop_2actuators_8h.html#a37d22a22014bc845a6ce9246233cf2b5":[12,0,1,0,1,2,2,14],
 "boards_2bebop_2actuators_8h.html#a3d14341161f6fbb74a44e5c4f95c8434":[12,0,1,0,1,2,2,10],
 "boards_2bebop_2actuators_8h.html#a4b84ef7694773a4749bb3b8aaceea553":[12,0,1,0,1,2,2,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "cam__gimbal_8c.html#afc0eb5144ca9e53f88eb85861e8d03b1":[12,0,1,0,6,8,0,12],
 "cam__gimbal_8c.html#afd12d6ab4cbc89ffb090c4b3fb2d34f3":[12,0,1,0,6,8,0,25],
 "cam__gimbal_8c_source.html":[12,0,1,0,6,8,0],
-"cam__gimbal_8h.html":[12,0,1,0,6,8,1],
-"cam__gimbal_8h.html#a0276a85f28471f151dbca3a4bfbbda04":[12,0,1,0,6,8,1,25]
+"cam__gimbal_8h.html":[12,0,1,0,6,8,1]
 };

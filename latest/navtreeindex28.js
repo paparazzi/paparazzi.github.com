@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"bmp280__regs_8h.html#a60467e80efcedeb2a8108c7dad6c0771":[12,0,1,0,7,29,21],
 "bmp280__regs_8h.html#a65097220f460f55a7ae50fdca7b805e6":[12,0,1,0,7,29,64],
 "bmp280__regs_8h.html#a6743a82c0e6b2732510b9def022477fa":[12,0,1,0,7,29,4],
 "bmp280__regs_8h.html#a6c2ec70110017922c75127cd20d36f4a":[12,0,1,0,7,29,43],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "boards_2bebop_2actuators_8h.html":[12,0,1,0,1,2,2],
 "boards_2bebop_2actuators_8h.html#a056a4ceea6f849d99692fdc03156cf05":[12,0,1,0,1,2,2,0,1],
 "boards_2bebop_2actuators_8h.html#a12fb889fcafe8c985f2bdfbca652110e":[12,0,1,0,1,2,2,5],
-"boards_2bebop_2actuators_8h.html#a22fd8a617f83712a1d0d947c401ef7ef":[12,0,1,0,1,2,2,9],
-"boards_2bebop_2actuators_8h.html#a26304325786d46ceabf6199f77a86aaa":[12,0,1,0,1,2,2,15]
+"boards_2bebop_2actuators_8h.html#a22fd8a617f83712a1d0d947c401ef7ef":[12,0,1,0,1,2,2,9]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX135 =
 {
+"module__guidance_hybrid.html#functions__guidance_hybrid":[1,183,1],
 "module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,183,0],
 "module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,183,1,0],
 "module__guidance_indi.html":[1,184],
@@ -248,6 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_mpu6000.html":[1,226],
 "module__imu_mpu6000.html#configuration__imu_mpu6000":[1,226,1],
 "module__imu_mpu6000.html#functions__imu_mpu6000":[1,226,2],
-"module__imu_mpu6000.html#module_load_example__imu_mpu6000":[1,226,0],
-"module__imu_mpu6000.html#module_xml__imu_mpu6000":[1,226,2,0]
+"module__imu_mpu6000.html#module_load_example__imu_mpu6000":[1,226,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"opticflow__calculator_8h.html#a82f24188a5d1eafa6870567a4da2b21d":[12,0,1,0,6,12,2,4,0,0],
+"opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086":[12,0,1,0,6,12,2,4,5],
 "opticflow__calculator_8h.html#a9350ccdd0ffbeda24ae5640894926f5a":[12,0,1,0,6,12,2,4,0,32],
 "opticflow__calculator_8h.html#a93e090c235282f0ea3adfb90f5df6fb8":[12,0,1,0,6,12,2,4,0,1],
 "opticflow__calculator_8h.html#a9bf4e63875af38d49cd6779b0e578e09":[12,0,1,0,6,12,2,4,0,31],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#APPROACH_MOVING_TARGET":[2,0,134],
 "paparazzi_messages.html#AP_STATUS":[2,2,11],
 "paparazzi_messages.html#ARDRONE_NAVDATA":[2,0,4],
-"paparazzi_messages.html#ATMOSPHERE_CHARGE":[2,0,113],
-"paparazzi_messages.html#ATTITUDE":[2,0,5],
-"paparazzi_messages.html#AUTOPILOT_VERSION":[2,0,0]
+"paparazzi_messages.html#ATMOSPHERE_CHARGE":[2,0,113]
 };

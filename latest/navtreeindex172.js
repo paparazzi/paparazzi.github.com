@@ -1,5 +1,7 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#ATTITUDE":[2,0,5],
+"paparazzi_messages.html#AUTOPILOT_VERSION":[2,0,0],
 "paparazzi_messages.html#BARO_ETS":[2,0,52],
 "paparazzi_messages.html#BARO_MS5534A":[2,0,41],
 "paparazzi_messages.html#BARO_MS5611":[2,0,111],
@@ -247,7 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#ROTORCRAFT_NAV_STATUS":[2,0,154],
 "paparazzi_messages.html#ROTORCRAFT_RADIO_CONTROL":[2,0,155],
 "paparazzi_messages.html#ROTORCRAFT_STATUS":[2,0,225],
-"paparazzi_messages.html#ROTORCRAFT_TUNE_HOVER":[2,0,145],
-"paparazzi_messages.html#ROVER_STATUS":[2,0,224],
-"paparazzi_messages.html#RSSI":[2,0,25]
+"paparazzi_messages.html#ROTORCRAFT_TUNE_HOVER":[2,0,145]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX228 =
 {
+"uart_8h.html#a663f41657d0ad8e115fc7709b071d749":[12,0,1,0,5,19,12],
+"uart_8h.html#a7e440684a8b6a4088b2f1d5b4dc47587":[12,0,1,0,5,19,11],
 "uart_8h.html#a84e0ba332e04b6e93ac83a1f9874dc40":[12,0,1,0,5,19,13],
 "uart_8h.html#a8a2d00ae64471cbbc2cfce65bbeffe09":[12,0,1,0,5,19,0,2],
 "uart_8h.html#a8af70d2ac65676d6dd797b3a0f5de1a9":[12,0,1,0,5,19,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX228 =
 "udp__socket_8h.html#a9a3ba6f53247e0e0d38432357af80f1c":[12,0,1,0,0,1,9,0,0],
 "udp__socket_8h.html#abb49855d3808c060eb3f3093309217bf":[12,0,1,0,0,1,9,0,1],
 "udp__socket_8h.html#ae43d337e2019a39084d467a37a9b32e1":[12,0,1,0,0,1,9,0,2],
-"udp__socket_8h.html#aecfcc8613d12918640f626ebe55e169d":[12,0,1,0,0,1,9,4],
-"udp__socket_8h.html#aff2184a096095f4e82c587a922678e42":[12,0,1,0,0,1,9,3],
-"udp__socket_8h.html#structUdpSocket":[12,0,1,0,0,1,9,0]
+"udp__socket_8h.html#aecfcc8613d12918640f626ebe55e169d":[12,0,1,0,0,1,9,4]
 };

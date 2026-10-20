@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"chimera_8h.html#a17e208399ce330289bcaef37bd2e9b08":[12,0,1,0,1,4,0,0,1,167],
 "chimera_8h.html#a192437e223012d0a12e92c878e3c2877":[12,0,1,0,1,4,0,0,1,127],
 "chimera_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5":[12,0,1,0,1,4,0,0,1,166],
 "chimera_8h.html#a22c39ad944259723eb9fbe773e294139":[12,0,1,0,1,4,0,0,1,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "classbetterVSlider__ui_1_1Ui__Form.html#ad914c4e2c8ab5f1675dcdfa64d660b0d":[11,0,6,0,0],
 "classbetterVSlider__ui_1_1Ui__Form.html#aded1c3fe6519e4946b772c30f8911eb7":[11,0,6,0,3],
 "classes.html":[11,1],
-"classgaia_1_1Gaia.html":[11,0,7,0],
-"classgaia_1_1Gaia.html#ad6806c25061f8636ffbf9475c9aed861":[11,0,7,0,0]
+"classgaia_1_1Gaia.html":[11,0,7,0]
 };

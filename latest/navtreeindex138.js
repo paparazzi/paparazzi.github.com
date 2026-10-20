@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_smooth.html#module_load_example__nav_smooth":[1,360,0],
+"module__nav_smooth.html#module_xml__nav_smooth":[1,360,0,0],
 "module__nav_spiral.html":[1,361],
 "module__nav_spiral.html#configuration__nav_spiral":[1,361,1],
 "module__nav_spiral.html#module_load_example__nav_spiral":[1,361,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,390,0],
 "module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,390,2,0],
 "module__radio_control_spektrum.html":[1,391],
-"module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,391,1],
-"module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,391,2],
-"module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,391,0]
+"module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,391,1]
 };

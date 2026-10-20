@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"detect__window_8c.html#a43d41976f62300cb900a8a43e0e1947e":[12,0,1,0,6,12,24,12],
 "detect__window_8c.html#a44b1391d6d18f1408ab9a17ebebd6687":[12,0,1,0,6,12,24,10],
 "detect__window_8c.html#a4768d05b0fbd586efc9d66d4e6713724":[12,0,1,0,6,12,24,6],
 "detect__window_8c.html#a5e92fb9bd0ce39a8775e7e98a0a987ec":[12,0,1,0,6,12,24,9],
@@ -61,16 +62,16 @@ var NAVTREEINDEX50 =
 "digital__cam_2catia_2protocol_8h.html#a6115baa419ebbdc15cb267c7bec45d26":[12,0,1,0,6,19,0,4,4,7],
 "digital__cam_2catia_2protocol_8h.html#a6165b5dfcbf4fc27cd54a8e28c31c875":[12,0,1,0,6,19,0,4,3,1],
 "digital__cam_2catia_2protocol_8h.html#a61a74be60d291cc4678ab46cc1cdaf91":[12,0,1,0,6,19,0,4,4,8],
-"digital__cam_2catia_2protocol_8h.html#a6713d659f03079a3b7cb56fd94b26a1c":[12,0,1,0,6,19,0,4,2,0],
 "digital__cam_2catia_2protocol_8h.html#a6713d659f03079a3b7cb56fd94b26a1c":[12,0,1,0,6,19,0,4,1,0,0],
+"digital__cam_2catia_2protocol_8h.html#a6713d659f03079a3b7cb56fd94b26a1c":[12,0,1,0,6,19,0,4,2,0],
 "digital__cam_2catia_2protocol_8h.html#a69493bda4cae30f373f8a7293c94a8e6":[12,0,1,0,6,19,0,4,5],
 "digital__cam_2catia_2protocol_8h.html#a6f888213f495a3883b3638d9b4038c94":[12,0,1,0,6,19,0,4,9],
 "digital__cam_2catia_2protocol_8h.html#a6fd8c7c2c92e8dd110bf60fed5305eaf":[12,0,1,0,6,19,0,4,20],
 "digital__cam_2catia_2protocol_8h.html#a750a3276f0cf15f2bf74ef59b8969f94":[12,0,1,0,6,19,0,4,3,3],
 "digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,19,0,4,2,1],
 "digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,19,0,4,1,0,1],
-"digital__cam_2catia_2protocol_8h.html#a7e4f868712584a4eaeb33931b6141d72":[12,0,1,0,6,19,0,4,2,2],
 "digital__cam_2catia_2protocol_8h.html#a7e4f868712584a4eaeb33931b6141d72":[12,0,1,0,6,19,0,4,1,0,2],
+"digital__cam_2catia_2protocol_8h.html#a7e4f868712584a4eaeb33931b6141d72":[12,0,1,0,6,19,0,4,2,2],
 "digital__cam_2catia_2protocol_8h.html#a8080e4edd9fdb0697c540f5a43576218":[12,0,1,0,6,19,0,4,0,0],
 "digital__cam_2catia_2protocol_8h.html#a8181bdd96e8d928d4fceb0afbd4839f0":[12,0,1,0,6,19,0,4,0,1],
 "digital__cam_2catia_2protocol_8h.html#a81f123cb705bbacaf68140206da2b5de":[12,0,1,0,6,19,0,4,3,2],
@@ -90,8 +91,8 @@ var NAVTREEINDEX50 =
 "digital__cam_2catia_2protocol_8h.html#ae97b79ca48e80b9206b9188606d89455":[12,0,1,0,6,19,0,4,3,6],
 "digital__cam_2catia_2protocol_8h.html#afae876a13a6380155c01d2e0877f02c9":[12,0,1,0,6,19,0,4,3,8],
 "digital__cam_2catia_2protocol_8h.html#structdc__shot__union_8data":[12,0,1,0,6,19,0,4,4],
-"digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct":[12,0,1,0,6,19,0,4,1,0],
 "digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct":[12,0,1,0,6,19,0,4,2],
+"digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct":[12,0,1,0,6,19,0,4,1,0],
 "digital__cam_2catia_2protocol_8h.html#structmora__transport":[12,0,1,0,6,19,0,4,3],
 "digital__cam_2catia_2protocol_8h.html#uniondc__shot__union":[12,0,1,0,6,19,0,4,0],
 "digital__cam_2catia_2protocol_8h.html#unionmora__status__union":[12,0,1,0,6,19,0,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "dir_a047bcdfdfeeaf1b1eee45d5b84ca8be.html":[12,0,1,0,1,17],
 "dir_a4141aa9aabfd994603c58524628479f.html":[12,0,1,0,6,15,1],
 "dir_a602d89a86e137af83bdeb12fdb83ab8.html":[12,0,1,0,1,18],
-"dir_a94dec59f6aecbdf1fdcbfc9c7458420.html":[12,0,1,0,0,2,1,4],
-"dir_a975c919dcb72580e31cb51fbd2aacf9.html":[12,0,1,0,6,64,0]
+"dir_a94dec59f6aecbdf1fdcbfc9c7458420.html":[12,0,1,0,0,2,1,4]
 };

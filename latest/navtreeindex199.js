@@ -1,5 +1,7 @@
 var NAVTREEINDEX199 =
 {
+"sensors__hitl_8h.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,64,92,3],
+"sensors__hitl_8h.html#a2e965a44a3faef0df7d56cbed4f8b575":[12,0,1,0,6,64,92,4],
 "sensors__hitl_8h.html#a3d2ef80efbb3f4c7c13ecbe3a21e0b8b":[12,0,1,0,6,64,92,9],
 "sensors__hitl_8h.html#a3eda401c67dfeee490285016ec944e48":[12,0,1,0,6,64,92,2],
 "sensors__hitl_8h.html#a4bf6eb34827c681440149b78bbc12dd0":[12,0,1,0,6,64,92,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX199 =
 "sim_2mcu__periph_2can__arch_8c.html#aea9abdf3d92f6edf1fbfeebec07eb2a2":[12,0,1,0,0,2,0,2,1],
 "sim_2mcu__periph_2can__arch_8c.html#structcan__arch__periph":[12,0,1,0,0,0,0,2,0],
 "sim_2mcu__periph_2can__arch_8c.html#structcan__arch__periph":[12,0,1,0,0,2,0,2,0],
-"sim_2mcu__periph_2can__arch_8c.html#structcan__arch__periph":[12,0,1,0,0,1,0,2,0],
-"sim_2mcu__periph_2can__arch_8c_source.html":[12,0,1,0,0,2,0,2],
-"sim_2mcu__periph_2can__arch_8h.html":[12,0,1,0,0,2,0,3]
+"sim_2mcu__periph_2can__arch_8c.html#structcan__arch__periph":[12,0,1,0,0,1,0,2,0]
 };

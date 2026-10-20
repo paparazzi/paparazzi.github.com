@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"ffconf_8h.html#a56bf522419025961acdfaf6388f40402":[12,0,1,0,0,0,5,1],
 "ffconf_8h.html#a5c25535bf118c111157fe72fff3cbea5":[12,0,1,0,0,0,5,18],
 "ffconf_8h.html#a618a0c0a1db7d420dee23ee81379c387":[12,0,1,0,0,0,5,11],
 "ffconf_8h.html#a660f7a4d681d9006004a8178f29f3c00":[12,0,1,0,0,0,5,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "fixedwing_2stabilization_2stabilization__attitude_8h.html#a02ae04f0f1bbe7588572e87e3dadb381":[12,0,1,0,3,1,1,3,1],
 "fixedwing_2stabilization_2stabilization__attitude_8h.html#a134ad933d69b7de8c8142a698d231864":[12,0,1,0,3,1,1,3,17],
 "fixedwing_2stabilization_2stabilization__attitude_8h.html#a17a99d4b8497a414130bab98ce903361":[12,0,1,0,3,1,1,3,13],
-"fixedwing_2stabilization_2stabilization__attitude_8h.html#a2e320928cc3b0072acf2f55d23061c1b":[12,0,1,0,3,1,1,3,6],
-"fixedwing_2stabilization_2stabilization__attitude_8h.html#a32ff0f8ef82c3d882051a3b504cb2f51":[12,0,1,0,3,1,1,3,20]
+"fixedwing_2stabilization_2stabilization__attitude_8h.html#a2e320928cc3b0072acf2f55d23061c1b":[12,0,1,0,3,1,1,3,6]
 };

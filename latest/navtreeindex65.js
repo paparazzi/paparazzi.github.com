@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"gpio__ext__pca95xx_8c.html#structgpio__ext__pca95xx__impl__t":[12,0,1,0,6,28,2,0],
 "gpio__ext__pca95xx_8c_source.html":[12,0,1,0,6,28,2],
 "gpio__ext__pca95xx_8h.html":[12,0,1,0,6,28,3],
 "gpio__ext__pca95xx_8h.html#a758753d3bce467c654d58c48ebe9185d":[12,0,1,0,6,28,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "gps__mtk_8h.html#ab1002487799962f629e8c87860cc1964":[12,0,1,0,6,29,9,7],
 "gps__mtk_8h.html#ac2b19e8d7c8ce778f551fae04e4852e7":[12,0,1,0,6,29,9,0,6],
 "gps__mtk_8h.html#acf709045a4a9bf0ff074430ec9cdc0c8":[12,0,1,0,6,29,9,0,15],
-"gps__mtk_8h.html#aec75b3a816c787c8b044e18f941cc886":[12,0,1,0,6,29,9,2],
-"gps__mtk_8h.html#structGpsMtk":[12,0,1,0,6,29,9,0]
+"gps__mtk_8h.html#aec75b3a816c787c8b044e18f941cc886":[12,0,1,0,6,29,9,2]
 };

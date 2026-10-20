@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__light_temt.html#module_xml__light_temt":[1,311,1,0],
+"module__logger_control_effectiveness.html":[1,276],
 "module__logger_control_effectiveness.html#configuration__logger_control_effectiveness":[1,276,1],
 "module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,276,2],
 "module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,276,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_skid_landing.html#configuration__nav_skid_landing":[1,359,1],
 "module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,359,0],
 "module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,359,1,0],
-"module__nav_smooth.html":[1,360],
-"module__nav_smooth.html#module_load_example__nav_smooth":[1,360,0],
-"module__nav_smooth.html#module_xml__nav_smooth":[1,360,0,0]
+"module__nav_smooth.html":[1,360]
 };

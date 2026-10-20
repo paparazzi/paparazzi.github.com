@@ -191,6 +191,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2b815e6730e8723a6d1d06d9ef8f31c0" id="r_a2b815e6730e8723a6d1d06d9ef8f31c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0">adc_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a2b815e6730e8723a6d1d06d9ef8f31c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts conversions.  <br /></td></tr>
 <tr class="separator:a2b815e6730e8723a6d1d06d9ef8f31c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc94c7dcc055633d1d8ddad1eeda9629" id="r_adc94c7dcc055633d1d8ddad1eeda9629"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#adc94c7dcc055633d1d8ddad1eeda9629">adc_buf_get</a> (struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a> *<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
+<tr class="memdesc:adc94c7dcc055633d1d8ddad1eeda9629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get filtered value from buffer.  <br /></td></tr>
+<tr class="separator:adc94c7dcc055633d1d8ddad1eeda9629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>arch independent ADC (Analog to Digital Converter) API </p>
@@ -371,6 +374,86 @@ Usage:
 
 </div>
 </div>
+<a id="adc94c7dcc055633d1d8ddad1eeda9629" name="adc94c7dcc055633d1d8ddad1eeda9629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc94c7dcc055633d1d8ddad1eeda9629">&#9670;&#160;</a></span>adc_buf_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> adc_buf_get </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get filtered value from buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00076">76</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
+
+<p class="reference">References <a class="el" href="light__scheduler_8c_source.html#l00100">s</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="adc__generic_8c_source.html#l00067">adc_msg_send()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00073">airspeed_adc_update()</a>, <a class="el" href="aoa__adc_8c_source.html#l00076">aoa_adc_update()</a>, <a class="el" href="electrical_8c_source.html#l00166">electrical_periodic()</a>, <a class="el" href="glide__wing__lock_8c_source.html#l00063">glide_wing_lock_event()</a>, <a class="el" href="glide__wing__lock_8c_source.html#l00101">glide_wing_lock_periodic()</a>, <a class="el" href="humid__hih_8c_source.html#l00058">humid_hih_periodic()</a>, <a class="el" href="light__solar_8c_source.html#l00062">light_solar_periodic()</a>, <a class="el" href="light__temt_8c_source.html#l00054">light_temt_periodic()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="sonar__adc_8c_source.html#l00145">sonar_adc_periodic()</a>, <a class="el" href="temp__adc_8c_source.html#l00151">temp_adc_periodic()</a>, <a class="el" href="temp__tcouple__adc_8c_source.html#l00067">temp_tcouple_adc_periodic()</a>, and <a class="el" href="wing__rotation__adc__sensor_8c_source.html#l00067">wing_rotation_adc_to_deg()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="adc_8h_adc94c7dcc055633d1d8ddad1eeda9629_icgraph.png" border="0" usemap="#aadc_8h_adc94c7dcc055633d1d8ddad1eeda9629_icgraph" alt=""/></div>
+<map name="aadc_8h_adc94c7dcc055633d1d8ddad1eeda9629_icgraph" id="aadc_8h_adc94c7dcc055633d1d8ddad1eeda9629_icgraph">
+<area shape="rect" title="Get filtered value from buffer." alt="" coords="480,351,581,376"/>
+<area shape="rect" href="adc__generic_8c.html#ace7f1a9a97c5936444f016726eecd13d" title=" " alt="" coords="273,29,391,55"/>
+<area shape="poly" title=" " alt="" coords="526,337,521,281,507,208,494,170,478,132,457,98,430,68,412,56,390,49,392,44,414,51,434,64,461,95,483,130,499,168,512,206,526,280,531,337"/>
+<area shape="rect" href="airspeed__adc_8c.html#ab0e44bb7e2be106b0e9bfee8a53d9b09" title=" " alt="" coords="252,79,412,104"/>
+<area shape="poly" title=" " alt="" coords="524,337,516,289,500,230,472,169,453,141,430,117,411,105,414,101,434,113,457,138,477,166,505,228,521,288,529,336"/>
+<area shape="rect" href="aoa__adc_8c.html#a0bd41f52acb15772bc6fd19ba71c516a" title=" " alt="" coords="268,128,396,153"/>
+<area shape="poly" title=" " alt="" coords="521,338,511,299,493,253,466,206,450,185,430,167,414,157,395,150,397,145,416,152,434,163,453,181,471,203,497,250,516,297,527,336"/>
+<area shape="rect" href="electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1" title=" " alt="" coords="261,177,403,203"/>
+<area shape="poly" title=" " alt="" coords="517,339,485,276,461,244,431,216,402,202,404,198,433,212,464,240,490,274,522,337"/>
+<area shape="rect" href="glide__wing__lock_8c.html#ad0c80e08ef16620ed837d87c451f8201" title=" " alt="" coords="247,227,417,252"/>
+<area shape="poly" title=" " alt="" coords="510,341,476,302,455,282,431,266,405,255,407,250,433,261,458,278,480,298,515,338"/>
+<area shape="rect" href="glide__wing__lock_8c.html#ad41dd95e2db5e9365b43307341f8e507" title=" " alt="" coords="239,276,425,301"/>
+<area shape="poly" title=" " alt="" coords="495,346,431,315,395,304,396,299,433,310,498,341"/>
+<area shape="rect" href="humid__hih_8c.html#a08aae8974ca70fb46b6b9792c27ddbc0" title=" " alt="" coords="257,325,407,351"/>
+<area shape="poly" title=" " alt="" coords="466,358,407,350,407,345,467,353"/>
+<area shape="rect" href="light__solar_8c.html#a3d6da179efb385d03ff265c3ad4f74f6" title=" " alt="" coords="257,375,407,400"/>
+<area shape="poly" title=" " alt="" coords="467,374,407,381,407,376,466,368"/>
+<area shape="rect" href="light__temt_8c.html#ad79f291e455827d94f9b08e7a23716f3" title=" " alt="" coords="258,424,406,449"/>
+<area shape="poly" title=" " alt="" coords="496,385,433,414,392,426,391,421,431,409,494,380"/>
+<area shape="rect" href="mf__ptu_8c.html#a1f3cab37f4f9e68bffb587d9661e0296" title=" " alt="" coords="269,473,395,499"/>
+<area shape="poly" title=" " alt="" coords="514,389,479,427,433,463,397,478,395,473,431,458,476,423,510,386"/>
+<area shape="rect" href="sonar__adc_8c.html#acf28f34f078bd10e1abce5e51d9c5abf" title="Reading Read ADC value to update sonar measurement." alt="" coords="259,523,405,548"/>
+<area shape="poly" title=" " alt="" coords="522,390,489,452,464,484,434,512,407,526,404,521,430,508,460,481,484,449,517,388"/>
+<area shape="rect" href="temp__adc_8c.html#ace8b2170204f3b1ea7d842c4f1e5d1f5" title=" " alt="" coords="259,572,405,597"/>
+<area shape="poly" title=" " alt="" coords="526,390,515,428,497,475,470,522,434,561,406,577,404,572,430,557,466,518,492,472,510,427,521,389"/>
+<area shape="rect" href="temp__tcouple__adc_8c.html#a6ce5d4fa43e9750b18c72b11e7341d0c" title=" " alt="" coords="232,621,432,647"/>
+<area shape="poly" title=" " alt="" coords="529,390,521,438,504,497,476,558,457,586,434,611,414,623,411,619,430,607,453,583,472,556,499,495,516,437,524,389"/>
+<area shape="rect" href="wing__rotation__adc__sensor_8c.html#a68346ad4986a5dd7ecfe74a591abc5e2" title=" " alt="" coords="236,671,428,696"/>
+<area shape="poly" title=" " alt="" coords="531,390,526,446,512,520,499,558,482,596,461,631,434,661,417,673,414,668,430,657,457,628,478,593,494,556,506,518,521,446,526,390"/>
+<area shape="rect" href="adc__generic_8c.html#a5d3cd37fdd77f995b25ed0837831e829" title=" " alt="" coords="31,5,159,31"/>
+<area shape="poly" title=" " alt="" coords="259,37,158,27,159,22,260,32"/>
+<area shape="rect" href="adc__generic_8c.html#a1422eb3e4ee968561f0402e95e538db9" title=" " alt="" coords="15,55,174,80"/>
+<area shape="poly" title=" " alt="" coords="260,52,174,62,174,56,259,47"/>
+<area shape="rect" href="main__fbw_8c.html#ad2c0748875347ae60bded4281553d9f7" title=" " alt="" coords="22,152,167,177"/>
+<area shape="poly" title=" " alt="" coords="247,184,167,175,168,170,248,178"/>
+<area shape="rect" href="main__recovery_8c.html#a1a495f9c8641102dfe06f1297eb6cb2b" title=" " alt="" coords="5,201,184,227"/>
+<area shape="poly" title=" " alt="" coords="247,201,185,208,184,202,247,196"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a2b815e6730e8723a6d1d06d9ef8f31c0" name="a2b815e6730e8723a6d1d06d9ef8f31c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b815e6730e8723a6d1d06d9ef8f31c0">&#9670;&#160;</a></span>adc_init()</h2>
 
@@ -397,11 +480,11 @@ Usage:
 <p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00243">adc1callback()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">ADC_BUF_DEPTH</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00081">adc_channel_map</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00175">adc_configure()</a>, <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00148">adc_dev_init()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8h_source.html#l00093">ADC_NUM_CHANNELS</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00076">ADC_SAMPLE_RATE</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00301">adcerrorcallback()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00090">gpio_setup_pin_analog()</a>, and <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00098">mcu_init()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph.png" border="0" usemap="#aadc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph" alt=""/></div>
 <map name="aadc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph" id="aadc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph">
 <area shape="rect" title="Starts conversions." alt="" coords="5,129,79,155"/>
@@ -421,11 +504,11 @@ Usage:
 <area shape="poly" title=" " alt="" coords="264,114,331,114,331,119,264,119"/>
 </map>
 </div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph.png" border="0" usemap="#aadc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" alt=""/></div>
 <map name="aadc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" id="aadc_8h_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph">
 <area shape="rect" title="Starts conversions." alt="" coords="365,179,439,204"/>
@@ -472,7 +555,7 @@ Usage:
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="adc_8h.html">adc.h</a></li>
-    <li class="footer">Generated on Tue Oct 20 2026 11:44:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Oct 20 2026 14:54:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
