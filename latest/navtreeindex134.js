@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2":[1,102,1],
+"module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2":[1,102,2],
+"module__eff_scheduling_rotwing_v2.html#module_load_example__eff_scheduling_rotwing_v2":[1,102,0],
 "module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2":[1,102,2,0],
 "module__ekf_aw.html":[1,300],
 "module__ekf_aw.html#configuration__ekf_aw":[1,300,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,182,0],
 "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw":[1,182,2,0],
 "module__guidance_hybrid.html":[1,183],
-"module__guidance_hybrid.html#functions__guidance_hybrid":[1,183,1],
-"module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,183,0],
-"module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,183,1,0],
-"module__guidance_indi.html":[1,184]
+"module__guidance_hybrid.html#functions__guidance_hybrid":[1,183,1]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_spiral.html":[1,361],
+"module__nav_spiral.html#configuration__nav_spiral":[1,361,1],
+"module__nav_spiral.html#module_load_example__nav_spiral":[1,361,0],
+"module__nav_spiral.html#module_xml__nav_spiral":[1,361,1,0],
+"module__nav_spiral_3d.html":[1,362],
+"module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,362,1],
 "module__nav_spiral_3d.html#functions__nav_spiral_3d":[1,362,2],
 "module__nav_spiral_3d.html#module_load_example__nav_spiral_3d":[1,362,0],
 "module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,362,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX138 =
 "module__radio_control_spektrum.html":[1,391],
 "module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,391,1],
 "module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,391,2],
-"module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,391,0],
-"module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,391,2,0],
-"module__radio_control_superbitrf_rc.html":[1,392],
-"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,392,1],
-"module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,392,2],
-"module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,392,0],
-"module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,392,2,0]
+"module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,391,0]
 };

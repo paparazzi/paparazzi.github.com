@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_mpu6000_hmc5883.html":[1,227],
+"module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,227,1],
 "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,227,2],
 "module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,227,0],
 "module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,227,2,0],
@@ -30,7 +32,8 @@ var NAVTREEINDEX136 =
 "module__imu_pixhawk6x.html":[1,233],
 "module__imu_pixhawk6x.html#functions__imu_pixhawk6x":[1,233,1],
 "module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x":[1,233,0],
-"module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x":[1,233,1,0],
+"module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x":[1,233,1,1],
+"module__imu_pixhawk6x.html#periodic_functions":[1,233,1,0],
 "module__imu_px4fmu_v1_7.html":[1,234],
 "module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,234,1],
 "module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,234,2],
@@ -127,9 +130,12 @@ var NAVTREEINDEX136 =
 "module__ins_mekf_wind.html#module_load_example__ins_mekf_wind":[1,254,0],
 "module__ins_mekf_wind.html#module_xml__ins_mekf_wind":[1,254,2,0],
 "module__ins_nps.html":[1,255],
+"module__ins_nps.html#files":[1,255,2],
 "module__ins_nps.html#functions__ins_nps":[1,255,1],
+"module__ins_nps.html#init_functions":[1,255,1,0],
 "module__ins_nps.html#module_load_example__ins_nps":[1,255,0],
-"module__ins_nps.html#module_xml__ins_nps":[1,255,1,0],
+"module__ins_nps.html#module_xml__ins_nps":[1,255,2,1],
+"module__ins_nps.html#sources":[1,255,2,0],
 "module__ins_sim.html":[1,256],
 "module__ins_sim.html#module_load_example__ins_sim":[1,256,0],
 "module__ins_sim.html#module_xml__ins_sim":[1,256,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX136 =
 "module__light_temt.html#functions__light_temt":[1,311,1],
 "module__light_temt.html#module_load_example__light_temt":[1,311,0],
 "module__light_temt.html#module_xml__light_temt":[1,311,1,0],
-"module__logger_control_effectiveness.html":[1,276],
-"module__logger_control_effectiveness.html#configuration__logger_control_effectiveness":[1,276,1],
-"module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,276,2],
-"module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,276,0],
-"module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,276,2,0],
-"module__logger_dataflash.html":[1,277],
-"module__logger_dataflash.html#configuration__logger_dataflash":[1,277,1]
+"module__logger_control_effectiveness.html":[1,276]
 };

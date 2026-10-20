@@ -226,9 +226,11 @@ var NAVTREEINDEX131 =
 "module__ahrs_sim.html#module_xml__ahrs_sim":[1,35,1,0],
 "module__ahrs_vectornav.html":[1,36],
 "module__ahrs_vectornav.html#configuration__ahrs_vectornav":[1,36,1],
+"module__ahrs_vectornav.html#configure":[1,36,1,0],
+"module__ahrs_vectornav.html#event_functions":[1,36,2,0],
 "module__ahrs_vectornav.html#functions__ahrs_vectornav":[1,36,2],
 "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav":[1,36,0],
-"module__ahrs_vectornav.html#module_xml__ahrs_vectornav":[1,36,2,0],
+"module__ahrs_vectornav.html#module_xml__ahrs_vectornav":[1,36,2,1],
 "module__air_data.html":[1,487],
 "module__air_data.html#configuration__air_data":[1,487,1],
 "module__air_data.html#datalink_functions__air_data":[1,487,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__airspeed_ads1114.html":[1,403],
 "module__airspeed_ads1114.html#functions__airspeed_ads1114":[1,403,1],
 "module__airspeed_ads1114.html#module_load_example__airspeed_ads1114":[1,403,0],
-"module__airspeed_ads1114.html#module_xml__airspeed_ads1114":[1,403,1,0],
-"module__airspeed_amsys.html":[1,404],
-"module__airspeed_amsys.html#configuration__airspeed_amsys":[1,404,1]
+"module__airspeed_ads1114.html#module_xml__airspeed_ads1114":[1,403,1,0]
 };

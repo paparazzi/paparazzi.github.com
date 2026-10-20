@@ -1,5 +1,11 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_control_effectiveness.html#configuration__logger_control_effectiveness":[1,276,1],
+"module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,276,2],
+"module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,276,0],
+"module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,276,2,0],
+"module__logger_dataflash.html":[1,277],
+"module__logger_dataflash.html#configuration__logger_dataflash":[1,277,1],
 "module__logger_dataflash.html#functions__logger_dataflash":[1,277,2],
 "module__logger_dataflash.html#module_load_example__logger_dataflash":[1,277,0],
 "module__logger_dataflash.html#module_xml__logger_dataflash":[1,277,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,359,1,0],
 "module__nav_smooth.html":[1,360],
 "module__nav_smooth.html#module_load_example__nav_smooth":[1,360,0],
-"module__nav_smooth.html#module_xml__nav_smooth":[1,360,0,0],
-"module__nav_spiral.html":[1,361],
-"module__nav_spiral.html#configuration__nav_spiral":[1,361,1],
-"module__nav_spiral.html#module_load_example__nav_spiral":[1,361,0],
-"module__nav_spiral.html#module_xml__nav_spiral":[1,361,1,0],
-"module__nav_spiral_3d.html":[1,362],
-"module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,362,1]
+"module__nav_smooth.html#module_xml__nav_smooth":[1,360,0,0]
 };

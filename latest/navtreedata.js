@@ -294,8 +294,11 @@ var NAVTREE =
       ] ],
       [ "ahrs_vectornav module", "module__ahrs_vectornav.html", [
         [ "Example for airframe file", "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav", null ],
-        [ "Module configuration options", "module__ahrs_vectornav.html#configuration__ahrs_vectornav", null ],
+        [ "Module configuration options", "module__ahrs_vectornav.html#configuration__ahrs_vectornav", [
+          [ "Configure Options", "module__ahrs_vectornav.html#configure", null ]
+        ] ],
         [ "Module functions", "module__ahrs_vectornav.html#functions__ahrs_vectornav", [
+          [ "Event Functions", "module__ahrs_vectornav.html#event_functions", null ],
           [ "Raw ahrs_vectornav.xml file:", "module__ahrs_vectornav.html#module_xml__ahrs_vectornav", null ]
         ] ]
       ] ],
@@ -506,7 +509,9 @@ var NAVTREE =
       ] ],
       [ "cv_undistort_image module", "module__cv_undistort_image.html", [
         [ "Example for airframe file", "module__cv_undistort_image.html#module_load_example__cv_undistort_image", null ],
-        [ "Module configuration options", "module__cv_undistort_image.html#configuration__cv_undistort_image", null ],
+        [ "Module configuration options", "module__cv_undistort_image.html#configuration__cv_undistort_image", [
+          [ "Define Options", "module__cv_undistort_image.html#define", null ]
+        ] ],
         [ "Module functions", "module__cv_undistort_image.html#functions__cv_undistort_image", [
           [ "Raw cv_undistort_image.xml file:", "module__cv_undistort_image.html#module_xml__cv_undistort_image", null ]
         ] ]
@@ -606,16 +611,8 @@ var NAVTREE =
       ] ],
       [ "slcan module", "module__slcan.html", [
         [ "Example for airframe file", "module__slcan.html#module_load_example__slcan", null ],
-        [ "Module configuration options", "module__slcan.html#configuration__slcan", [
-          [ "Configure Options", "module__slcan.html#configure", null ]
-        ] ],
+        [ "Module configuration options", "module__slcan.html#configuration__slcan", null ],
         [ "Module functions", "module__slcan.html#functions__slcan", [
-          [ "Init Functions", "module__slcan.html#init_functions", null ],
-          [ "Event Functions", "module__slcan.html#event_functions", null ]
-        ] ],
-        [ "Files", "module__slcan.html#files", [
-          [ "Header Files", "module__slcan.html#headers", null ],
-          [ "Source Files", "module__slcan.html#sources", null ],
           [ "Raw slcan.xml file:", "module__slcan.html#module_xml__slcan", null ]
         ] ]
       ] ],
@@ -1381,7 +1378,6 @@ var NAVTREE =
       [ "imu_apogee_mpu9150 module", "module__imu_apogee_mpu9150.html", [
         [ "Example for airframe file", "module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150", null ],
         [ "Module configuration options", "module__imu_apogee_mpu9150.html#configuration__imu_apogee_mpu9150", [
-          [ "Airframe file section", "module__imu_apogee_mpu9150.html#af_section", null ],
           [ "Raw imu_apogee_mpu9150.xml file:", "module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150", null ]
         ] ]
       ] ],
@@ -1407,20 +1403,20 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
-      ] ],
-      [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
         ] ]
       ] ],
+      [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
@@ -1557,6 +1553,7 @@ var NAVTREE =
       [ "imu_pixhawk6x module", "module__imu_pixhawk6x.html", [
         [ "Example for airframe file", "module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x", null ],
         [ "Module functions", "module__imu_pixhawk6x.html#functions__imu_pixhawk6x", [
+          [ "Periodic Functions", "module__imu_pixhawk6x.html#periodic_functions", null ],
           [ "Raw imu_pixhawk6x.xml file:", "module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x", null ]
         ] ]
       ] ],
@@ -1700,6 +1697,10 @@ var NAVTREE =
       [ "ins_nps module", "module__ins_nps.html", [
         [ "Example for airframe file", "module__ins_nps.html#module_load_example__ins_nps", null ],
         [ "Module functions", "module__ins_nps.html#functions__ins_nps", [
+          [ "Init Functions", "module__ins_nps.html#init_functions", null ]
+        ] ],
+        [ "Files", "module__ins_nps.html#files", [
+          [ "Source Files", "module__ins_nps.html#sources", null ],
           [ "Raw ins_nps.xml file:", "module__ins_nps.html#module_xml__ins_nps", null ]
         ] ]
       ] ],
@@ -2942,11 +2943,8 @@ var NAVTREE =
       ] ],
       [ "rpm_sensor module", "module__rpm_sensor.html", [
         [ "Example for airframe file", "module__rpm_sensor.html#module_load_example__rpm_sensor", null ],
-        [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", [
-          [ "Define Options", "module__rpm_sensor.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],
         [ "Module functions", "module__rpm_sensor.html#functions__rpm_sensor", [
-          [ "Periodic Functions", "module__rpm_sensor.html#periodic_functions", null ],
           [ "Raw rpm_sensor.xml file:", "module__rpm_sensor.html#module_xml__rpm_sensor", null ]
         ] ]
       ] ],
@@ -3056,8 +3054,11 @@ var NAVTREE =
       ] ],
       [ "stabilization_float_quat module", "module__stabilization_float_quat.html", [
         [ "Example for airframe file", "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat", null ],
-        [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", null ],
+        [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", [
+          [ "Airframe file section", "module__stabilization_float_quat.html#af_section", null ]
+        ] ],
         [ "Module functions", "module__stabilization_float_quat.html#functions__stabilization_float_quat", [
+          [ "Header Files", "module__stabilization_float_quat.html#headers", null ],
           [ "Raw stabilization_float_quat.xml file:", "module__stabilization_float_quat.html#module_xml__stabilization_float_quat", null ]
         ] ]
       ] ],
@@ -4157,14 +4158,14 @@ var NAVTREEINDEX =
 "mcuconf__h7_8h.html#abca29b918ad44188ab7f278efedd666c",
 "meteo__stick__calib_8c.html#a8feb4d427fa1c1c213243f5bb70defd5",
 "mission__common_8h.html#struct__mission__circle",
-"module__airspeed_amsys.html#functions__airspeed_amsys",
-"module__collective_tracking_control_target.html#configuration__collective_tracking_control_target",
-"module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2",
-"module__guidance_indi.html#module_load_example__guidance_indi",
-"module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883",
-"module__logger_dataflash.html#functions__logger_dataflash",
-"module__nav_spiral_3d.html#functions__nav_spiral_3d",
-"module__radio_control_uavcan.html",
+"module__airspeed_amsys.html",
+"module__collective_tracking_control.html#module_xml__collective_tracking_control",
+"module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2",
+"module__guidance_hybrid.html#module_load_example__guidance_hybrid",
+"module__imu_mpu6000_hmc5883.html",
+"module__logger_control_effectiveness.html#configuration__logger_control_effectiveness",
+"module__nav_spiral.html",
+"module__radio_control_spektrum.html#module_xml__radio_control_spektrum",
 "module__sys_id_chirp.html#module_xml__sys_id_chirp",
 "module__windturbine.html",
 "motor__mixing_8c.html#a32824363dfc8e0863aa3f6160c50c537",
