@@ -1,5 +1,7 @@
 var NAVTREEINDEX176 =
 {
+"power__uavcan_8c.html#structbattery__info":[12,0,1,0,6,65,85,0],
+"power__uavcan_8c.html#structcircuit__status":[12,0,1,0,6,65,85,1],
 "power__uavcan_8c.html#structuavcan__circuit__battery__t":[12,0,1,0,6,65,85,2],
 "power__uavcan_8c_source.html":[12,0,1,0,6,65,85],
 "power__uavcan_8h.html":[12,0,1,0,6,65,86],
@@ -247,7 +249,5 @@ var NAVTREEINDEX176 =
 "pprz__matrix__decomp__float_8c_source.html":[12,0,1,0,4,23],
 "pprz__matrix__decomp__float_8h.html":[12,0,1,0,4,24],
 "pprz__matrix__decomp__float_8h.html#a232890252a145ccc1a0dd849bf13cb67":[12,0,1,0,4,24,5],
-"pprz__matrix__decomp__float_8h.html#a54d06c0137ebee41d0d006d2889ae643":[12,0,1,0,4,24,0],
-"pprz__matrix__decomp__float_8h.html#a9ef015d22c1f50265978a23b21d13e8a":[12,0,1,0,4,24,4],
-"pprz__matrix__decomp__float_8h.html#abe87f03fe29ec347d308f15c6dccfe9b":[12,0,1,0,4,24,1]
+"pprz__matrix__decomp__float_8h.html#a54d06c0137ebee41d0d006d2889ae643":[12,0,1,0,4,24,0]
 };

@@ -1,48 +1,50 @@
 <map id="tag_tracking_propagate" name="tag_tracking_propagate">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,148,181,173"/>
-<area shape="rect" id="Node000002" href="$simple__kinematic__kalman_8c.html#a5936bc3a3a437688251195d2ae2742db" title="Get current state." alt="" coords="229,13,423,53"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,146,159,106,228,62,243,55,245,60,231,67,162,110,111,150"/>
-<area shape="rect" id="Node000003" href="$simple__kinematic__kalman_8c.html#a89dc3ad65649eba860f0b940d846a88f" title="propagate dynamic model" alt="" coords="229,77,423,117"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,145,239,118,240,123,141,150"/>
-<area shape="rect" id="Node000004" href="$simple__kinematic__kalman_8c.html#ae842640a4fe45a187102565e158d3965" title="correction step for speed" alt="" coords="229,141,423,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,158,216,158,216,163,182,163"/>
-<area shape="rect" id="Node000012" href="$tag__tracking_8c.html#a96a6efd4ed6b86839ec67aeee400ffe5" title=" " alt="" coords="238,205,414,245"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="141,171,240,198,239,204,140,176"/>
-<area shape="rect" id="Node000014" href="$tag__tracking_8c.html#a9ae894efab232670d0c7b2845b3061fd" title=" " alt="" coords="279,269,373,295"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="111,171,161,212,195,235,230,254,267,267,265,272,228,259,192,239,158,216,107,176"/>
-<area shape="rect" id="Node000005" href="$simple__kinematic__kalman_8c.html#a3a613790f08b72ffb79ec9ae986594c4" title="generic correction step" alt="" coords="485,141,678,181"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="423,158,471,158,471,163,423,163"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga358c857f5139895d516cc38d6024657e" title="Calculate inverse of any n x n matrix (passed as C array) o = mat^&#45;1 Algorithm verified with Matlab." alt="" coords="753,5,882,31"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="603,138,662,90,699,63,739,40,753,33,756,38,741,44,702,67,665,94,606,142"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#ga6adae9dfe30822147bd3fdad5c4ed036" title="o = a * b" alt="" coords="759,55,875,80"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="624,138,739,89,759,82,761,87,741,94,626,143"/>
-<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#ga3fc3eca3940ba6bd993fe23d5721be08" title="transpose non&#45;square matrix" alt="" coords="740,104,895,129"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="678,140,735,129,736,134,679,145"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga7acf82c01f2b7910784053bd899b6b03" title="o = a * b" alt="" coords="742,153,893,179"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="678,160,728,161,728,167,678,166"/>
-<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="759,203,876,228"/>
-<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="669,178,749,197,748,202,668,183"/>
-<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#gaa33d68b46bc4922889e1fc931c6318fd" title="o = a &#45; b" alt="" coords="760,252,875,277"/>
-<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="653,178,693,197,718,217,741,237,757,245,755,249,739,242,714,221,691,202,650,183"/>
-<area shape="rect" id="Node000013" href="$simple__kinematic__kalman_8c.html#ae5553ddc70e177f0ce1f0d3c25cf239d" title="Init SimpleKinematicKalman internal struct." alt="" coords="471,212,692,237"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="414,222,457,222,457,227,414,227"/>
-<area shape="rect" id="Node000015" href="$nav_2waypoints_8c.html#aa759c25e1ecc60cc27a614e366ab05a4" title=" " alt="" coords="497,265,665,291"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="373,279,483,277,484,282,373,284"/>
-<area shape="rect" id="Node000016" href="$nav_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4" title=" " alt="" coords="742,307,893,332"/>
-<area shape="poly" id="edge23_Node000014_Node000016" title=" " alt="" coords="373,287,471,299,606,309,728,314,728,320,606,314,470,305,373,292"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="655,288,732,302,731,307,654,293"/>
-<area shape="rect" id="Node000017" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="943,307,1091,332"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="893,317,929,317,929,322,893,322"/>
-<area shape="rect" id="Node000018" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1145,257,1287,283"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1068,304,1150,283,1151,289,1069,309"/>
-<area shape="rect" id="Node000020" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1164,307,1268,332"/>
-<area shape="poly" id="edge19_Node000017_Node000020" title=" " alt="" coords="1091,317,1150,317,1150,322,1091,322"/>
-<area shape="rect" id="Node000023" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="1139,356,1293,381"/>
-<area shape="poly" id="edge22_Node000017_Node000023" title=" " alt="" coords="1069,329,1151,350,1150,355,1068,335"/>
-<area shape="rect" id="Node000019" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1341,257,1488,283"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="1288,267,1327,267,1327,273,1288,273"/>
-<area shape="rect" id="Node000021" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1361,307,1469,332"/>
-<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="1268,317,1347,317,1347,322,1268,322"/>
-<area shape="rect" id="Node000022" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1362,356,1467,381"/>
-<area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="1268,329,1350,350,1349,355,1267,335"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,167,181,192"/>
+<area shape="rect" id="Node000002" href="$simple__kinematic__kalman_8c.html#a5936bc3a3a437688251195d2ae2742db" title="Get current state." alt="" coords="229,31,423,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,164,159,124,228,81,243,74,245,79,231,86,162,129,111,169"/>
+<area shape="rect" id="Node000003" href="$simple__kinematic__kalman_8c.html#a89dc3ad65649eba860f0b940d846a88f" title="propagate dynamic model" alt="" coords="229,95,423,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,164,239,136,240,142,141,169"/>
+<area shape="rect" id="Node000004" href="$simple__kinematic__kalman_8c.html#ae842640a4fe45a187102565e158d3965" title="correction step for speed" alt="" coords="229,159,423,199"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,177,216,177,216,182,182,182"/>
+<area shape="rect" id="Node000012" href="$tag__tracking_8c.html#a96a6efd4ed6b86839ec67aeee400ffe5" title=" " alt="" coords="238,223,414,263"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="141,190,240,217,239,222,140,195"/>
+<area shape="rect" id="Node000014" href="$tag__tracking_8c.html#a9ae894efab232670d0c7b2845b3061fd" title=" " alt="" coords="279,300,373,325"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="112,190,163,230,231,273,274,293,272,297,228,278,160,234,108,194"/>
+<area shape="rect" id="Node000005" href="$simple__kinematic__kalman_8c.html#a3a613790f08b72ffb79ec9ae986594c4" title="generic correction step" alt="" coords="485,146,678,186"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="423,172,471,169,471,174,423,177"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga358c857f5139895d516cc38d6024657e" title="Calculate inverse of any n x n matrix (passed as C array) o = mat^&#45;1 Algorithm verified with Matlab." alt="" coords="777,5,906,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="601,144,659,91,698,63,739,40,762,30,764,35,741,44,701,68,663,96,604,148"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#ga6adae9dfe30822147bd3fdad5c4ed036" title="o = a * b" alt="" coords="783,55,899,80"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="618,144,674,116,739,89,769,80,770,85,741,94,676,121,620,148"/>
+<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#ga3fc3eca3940ba6bd993fe23d5721be08" title="transpose non&#45;square matrix" alt="" coords="764,104,919,129"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="678,145,760,129,761,135,679,150"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga7acf82c01f2b7910784053bd899b6b03" title="o = a * b" alt="" coords="766,153,917,179"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="678,163,752,163,752,169,678,169"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="783,203,900,228"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="679,182,770,199,769,204,678,187"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#gaa33d68b46bc4922889e1fc931c6318fd" title="o = a &#45; b" alt="" coords="784,252,899,277"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="626,184,741,237,772,246,770,251,739,242,624,189"/>
+<area shape="rect" id="Node000013" href="$simple__kinematic__kalman_8c.html#ae5553ddc70e177f0ce1f0d3c25cf239d" title="Init SimpleKinematicKalman internal struct." alt="" coords="471,231,692,256"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="414,241,457,241,457,246,414,246"/>
+<area shape="rect" id="Node000015" href="$nav_2waypoints_8c.html#aa759c25e1ecc60cc27a614e366ab05a4" title=" " alt="" coords="497,300,665,325"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="373,310,484,310,484,315,373,315"/>
+<area shape="rect" id="Node000017" href="$nav_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4" title=" " alt="" coords="766,351,917,376"/>
+<area shape="poly" id="edge24_Node000014_Node000017" title=" " alt="" coords="373,319,471,334,620,348,752,357,752,362,619,353,470,339,373,324"/>
+<area shape="rect" id="Node000016" href="$nav_2waypoints_8c.html#a083a57d11d5e25d65bf41056988ca64f" title=" " alt="" coords="740,301,943,327"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="666,310,726,311,726,316,665,316"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="648,323,763,345,762,351,647,328"/>
+<area shape="rect" id="Node000018" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="991,351,1139,376"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="917,361,977,361,977,366,917,366"/>
+<area shape="rect" id="Node000019" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1193,301,1335,327"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="1116,348,1198,327,1199,333,1117,353"/>
+<area shape="rect" id="Node000021" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1212,351,1316,376"/>
+<area shape="poly" id="edge20_Node000018_Node000021" title=" " alt="" coords="1139,361,1198,361,1198,366,1139,366"/>
+<area shape="rect" id="Node000024" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)" alt="" coords="1187,400,1341,425"/>
+<area shape="poly" id="edge23_Node000018_Node000024" title=" " alt="" coords="1117,373,1199,394,1198,399,1116,379"/>
+<area shape="rect" id="Node000020" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1389,301,1536,327"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="1336,311,1375,311,1375,317,1336,317"/>
+<area shape="rect" id="Node000022" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1409,351,1517,376"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="1316,361,1395,361,1395,366,1316,366"/>
+<area shape="rect" id="Node000023" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1410,400,1515,425"/>
+<area shape="poly" id="edge22_Node000021_Node000023" title=" " alt="" coords="1316,373,1398,394,1397,399,1315,379"/>
 </map>

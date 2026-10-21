@@ -1,5 +1,8 @@
 var NAVTREEINDEX208 =
 {
+"stabilization__indi__hinf_8c.html#a15c5666501490db38bac78bfc77394d3":[12,0,1,0,3,2,2,41,0],
+"stabilization__indi__hinf_8c.html#a5d43ac35c48eb14da0f0c3577cf1b6ed":[12,0,1,0,3,2,2,41,8],
+"stabilization__indi__hinf_8c.html#a7e992fb38d3aae46abc6dfa31d525744":[12,0,1,0,3,2,2,41,5],
 "stabilization__indi__hinf_8c.html#a912be943330a6374d39e36d4e4c2dbec":[12,0,1,0,3,2,2,41,3],
 "stabilization__indi__hinf_8c.html#a94b2a2c01f0ce33c392971504a5cb505":[12,0,1,0,3,2,2,41,6],
 "stabilization__indi__hinf_8c.html#a960a11cde326329a10bf91c077784d4c":[12,0,1,0,3,2,2,41,4],
@@ -54,12 +57,12 @@ var NAVTREEINDEX208 =
 "stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20":[12,0,1,0,3,2,2,43,2,14],
 "stabilization__indi__simple_8h.html#a701c67af1ddf7f0a80a22e6719c993a1":[12,0,1,0,3,2,2,43,1,5],
 "stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4":[12,0,1,0,3,2,2,43,2,15],
-"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,43,0,1],
 "stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,40,0,1],
+"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,43,0,1],
 "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,2,43,2,2],
 "stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,2,43,1,4],
-"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,43,0,0],
 "stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,40,0,0],
+"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,43,0,0],
 "stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b":[12,0,1,0,3,2,2,43,5],
 "stabilization__indi__simple_8h.html#a9cd57664d6985e67d18ce07a319b903e":[12,0,1,0,3,2,2,43,1,2],
 "stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df":[12,0,1,0,3,2,2,43,2,7],
@@ -74,8 +77,8 @@ var NAVTREEINDEX208 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,43,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,43,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,43,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,43,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,40,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,43,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,43],
 "stabilization__oneloop_8c.html":[12,0,1,0,3,2,2,44],
 "stabilization__oneloop_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,44,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX208 =
 "structIndiController__int.html#a5164d3dc1b4a0fbe220555a36857955a":[11,0,692,8],
 "structIndiController__int.html#a694623d83b903c258d8d6a17af3c3f6f":[11,0,692,18],
 "structIndiController__int.html#a775f73840c3d3ccef1ceabb5fbeb5963":[11,0,692,0],
-"structIndiController__int.html#a7aed8328970fcb6de3b43ba768c75bf6":[11,0,692,3],
-"structIndiController__int.html#a7d8e27ae27167db72b66069c8cfb2b09":[11,0,692,1],
-"structIndiController__int.html#a8d97e7d0eab949a6053efbf0ca4cd950":[11,0,692,6],
-"structIndiController__int.html#a9d00d719368783c77bb3b5a866521954":[11,0,692,14]
+"structIndiController__int.html#a7aed8328970fcb6de3b43ba768c75bf6":[11,0,692,3]
 };

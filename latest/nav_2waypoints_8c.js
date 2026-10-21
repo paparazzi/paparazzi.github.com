@@ -22,6 +22,8 @@ var nav_2waypoints_8c =
     [ "waypoint_move_lla", "nav_2waypoints_8c.html#af898f624e88c626a1d47300e872ac444", null ],
     [ "waypoint_move_xy_i", "nav_2waypoints_8c.html#a41c11ce8ceec9d5d0e4062c7040afcb5", null ],
     [ "waypoint_position_copy", "nav_2waypoints_8c.html#a3424028f882696fb20b338325138750d", null ],
+    [ "waypoint_send_moved_enu", "nav_2waypoints_8c.html#a083a57d11d5e25d65bf41056988ca64f", null ],
+    [ "waypoint_send_moved_lla", "nav_2waypoints_8c.html#a3e74ed69e438e013a22c4ffe9d56864f", null ],
     [ "waypoint_set_alt", "nav_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7", null ],
     [ "waypoint_set_alt_i", "nav_2waypoints_8c.html#aecc0b78adf0a0c13f31298dc4d17b9f6", null ],
     [ "waypoint_set_enu", "nav_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc", null ],

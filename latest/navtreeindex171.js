@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"opticflow__calculator_8c.html#affe1814e82fd0187807671d62a236706":[12,0,1,0,6,12,2,3,20],
+"opticflow__calculator_8c_source.html":[12,0,1,0,6,12,2,3],
 "opticflow__calculator_8h.html":[12,0,1,0,6,12,2,4],
 "opticflow__calculator_8h.html#a081e7989b7c43732e5e23913a1244f69":[12,0,1,0,6,12,2,4,0,27],
 "opticflow__calculator_8h.html#a089f6e08cb72710e2cd379c0e577b9ed":[12,0,1,0,6,12,2,4,0,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#AHRS_GYRO_BIAS_INT":[2,0,173],
 "paparazzi_messages.html#AHRS_LKF":[2,0,188],
 "paparazzi_messages.html#AHRS_MEASUREMENT_EULER":[2,0,169],
-"paparazzi_messages.html#AHRS_QUAT_INT":[2,0,152],
-"paparazzi_messages.html#AHRS_REF_QUAT":[2,0,164],
-"paparazzi_messages.html#AIRCRAFTS":[2,2,2]
+"paparazzi_messages.html#AHRS_QUAT_INT":[2,0,152]
 };

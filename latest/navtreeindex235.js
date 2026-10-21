@@ -1,5 +1,8 @@
 var NAVTREEINDEX235 =
 {
+"wedgebug_8c.html#a9bcefccd0d7c555eac052989016cdfce":[12,0,1,0,6,77,0,74],
+"wedgebug_8c.html#a9d2215c001d8926bc13b070a4486ae1f":[12,0,1,0,6,77,0,20],
+"wedgebug_8c.html#a9d311947176aef213adcd384d2e74fb2":[12,0,1,0,6,77,0,10],
 "wedgebug_8c.html#a9dc343d4860a716932cd47c333255dcf":[12,0,1,0,6,77,0,112],
 "wedgebug_8c.html#a9e494f5c5a4db416dd5760c0d2d8ffe3":[12,0,1,0,6,77,0,49],
 "wedgebug_8c.html#aa19716e7e89cc5b0487b4154b6c4f4f6":[12,0,1,0,6,77,0,91],
@@ -246,8 +249,5 @@ var NAVTREEINDEX235 =
 "wind__estimator_8h.html#aaed8a383171cc0d9cd357c48fd73177c":[12,0,1,0,6,44,54,11],
 "wind__estimator_8h.html#aeba75f12b0ae0a57b4269345a348e779":[12,0,1,0,6,44,54,2],
 "wind__estimator_8h.html#af175c7aace58699751294cb06ccfa87b":[12,0,1,0,6,44,54,1],
-"wind__estimator_8h.html#af6999f1a80539747eab60fcf5fc74c89":[12,0,1,0,6,44,54,0,6],
-"wind__estimator_8h.html#afbf5efe904a027fadf4929a3b5dae9d4":[12,0,1,0,6,44,54,0,5],
-"wind__estimator_8h.html#structWindEstimator":[12,0,1,0,6,44,54,0],
-"wind__estimator_8h_source.html":[12,0,1,0,6,44,54]
+"wind__estimator_8h.html#af6999f1a80539747eab60fcf5fc74c89":[12,0,1,0,6,44,54,0,6]
 };

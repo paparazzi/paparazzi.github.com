@@ -4,6 +4,7 @@ var settings_8c =
     [ "settings_init", "settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e", null ],
     [ "settings_parse_msg_GET_SETTING", "settings_8c.html#a3554f41536872c4a90af91d527f6593f", null ],
     [ "settings_parse_msg_SETTING", "settings_8c.html#aaaafb969ffa6ec451b6bb2facd5736ee", null ],
+    [ "settings_send_dl_value", "settings_8c.html#aa2b21f60917582befe1d76f83a9e6848", null ],
     [ "settings_store", "settings_8c.html#ada97d7166aa02d3c945ef0333770f640", null ],
     [ "pers_settings", "settings_8c.html#ac61513879fdb7add6de0457920c8e59e", null ],
     [ "settings_clear_flag", "settings_8c.html#a2d417ad7e2c3eeb9e2fd5375f50bf370", null ],
