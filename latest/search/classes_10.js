@@ -56,8 +56,9 @@ var searchData=
   ['preflight_5fcheck_5ft_53',['preflight_check_t',['../preflight__checks_8h.html#structpreflight__check__t',1,'']]],
   ['preflight_5fresult_5ft_54',['preflight_result_t',['../preflight__checks_8h.html#structpreflight__result__t',1,'']]],
   ['pt1filter_5fs_55',['pt1Filter_s',['../cc2500__compat_8h.html#structpt1Filter__s',1,'']]],
-  ['pwm_5fsysfs_56',['PWM_Sysfs',['../pwm__sysfs_8h.html#structPWM__Sysfs',1,'']]],
-  ['px4flow_5fdata_57',['px4flow_data',['../px4flow__i2c_8h.html#structpx4flow__data',1,'']]],
-  ['px4flow_5fi2c_5fframe_58',['px4flow_i2c_frame',['../px4flow__i2c_8h.html#structpx4flow__i2c__frame',1,'']]],
-  ['px4flow_5fi2c_5fintegral_5fframe_59',['px4flow_i2c_integral_frame',['../px4flow__i2c_8h.html#structpx4flow__i2c__integral__frame',1,'']]]
+  ['pumpcontrol_56',['PumpControl',['../pump__control_8c.html#structPumpControl',1,'']]],
+  ['pwm_5fsysfs_57',['PWM_Sysfs',['../pwm__sysfs_8h.html#structPWM__Sysfs',1,'']]],
+  ['px4flow_5fdata_58',['px4flow_data',['../px4flow__i2c_8h.html#structpx4flow__data',1,'']]],
+  ['px4flow_5fi2c_5fframe_59',['px4flow_i2c_frame',['../px4flow__i2c_8h.html#structpx4flow__i2c__frame',1,'']]],
+  ['px4flow_5fi2c_5fintegral_5fframe_60',['px4flow_i2c_integral_frame',['../px4flow__i2c_8h.html#structpx4flow__i2c__integral__frame',1,'']]]
 ];

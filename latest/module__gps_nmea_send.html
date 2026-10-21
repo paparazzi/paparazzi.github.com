@@ -133,7 +133,7 @@ Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
 <li><a class="el" href="gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data.">gps_nmea_send_periodic()</a><ul>
-<li>Frequency in Hz: <em>5</em> </li>
+<li>Frequency in Hz: <em>10</em> </li>
 <li>Autorun: <em>TRUE</em> <br  />
  Periodic function automatically starts after init.</li>
 </ul>
@@ -173,7 +173,7 @@ Raw gps_nmea_send.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_nmea_send.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_nmea_send_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_nmea_send_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_nmea_send_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NMEA_SEND_UART&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;uart3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NMEA_SEND_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;B115200&quot;</span>/&gt;</div>
@@ -197,7 +197,7 @@ Raw gps_nmea_send.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 21 2026 08:44:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 21 2026 08:58:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

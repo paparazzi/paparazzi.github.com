@@ -16,10 +16,11 @@ var searchData=
   ['pprzlog_20module_13',['pprzlog module',['../module__pprzlog.html',1,'onboard_modules']]],
   ['preflight_5fchecks_20module_14',['preflight_checks module',['../module__preflight_checks.html',1,'onboard_modules']]],
   ['primers_15',['Paparazzi Technical Primers',['../primer.html',1,'']]],
-  ['pwm_5fmeas_20module_16',['pwm_meas module',['../module__pwm_meas.html',1,'onboard_modules']]],
-  ['px4_5fflash_20module_17',['px4_flash module',['../module__px4_flash.html',1,'onboard_modules']]],
-  ['px4_5fgimbal_20module_18',['px4_gimbal module',['../module__px4_gimbal.html',1,'onboard_modules']]],
-  ['px4flow_20module_19',['px4flow module',['../module__px4flow.html',1,'onboard_modules']]],
-  ['px4flow_5fi2c_20module_20',['px4flow_i2c module',['../module__px4flow_i2c.html',1,'onboard_modules']]],
-  ['python_20style_20guide_21',['Python Style Guide',['../stylepython.html',1,'styleguide']]]
+  ['pump_5fcontrol_20module_16',['pump_control module',['../module__pump_control.html',1,'onboard_modules']]],
+  ['pwm_5fmeas_20module_17',['pwm_meas module',['../module__pwm_meas.html',1,'onboard_modules']]],
+  ['px4_5fflash_20module_18',['px4_flash module',['../module__px4_flash.html',1,'onboard_modules']]],
+  ['px4_5fgimbal_20module_19',['px4_gimbal module',['../module__px4_gimbal.html',1,'onboard_modules']]],
+  ['px4flow_20module_20',['px4flow module',['../module__px4flow.html',1,'onboard_modules']]],
+  ['px4flow_5fi2c_20module_21',['px4flow_i2c module',['../module__px4flow_i2c.html',1,'onboard_modules']]],
+  ['python_20style_20guide_22',['Python Style Guide',['../stylepython.html',1,'styleguide']]]
 ];

@@ -245,9 +245,9 @@ var NAVTREEINDEX15 =
 "attitude__ref__saturate__naive_8h.html#structFloatRefSat":[12,0,1,0,3,2,2,0,0],
 "attitude__ref__saturate__naive_8h.html#structInt32RefSat":[12,0,1,0,3,2,2,0,1],
 "attitude__ref__saturate__naive_8h_source.html":[12,0,1,0,3,2,2,0],
-"auto1__commands_8c.html":[12,0,1,0,6,70,0],
-"auto1__commands_8c.html#aaa4ab58fd3d0ae4cce65e11d5c9c7a5f":[12,0,1,0,6,70,0,0],
-"auto1__commands_8c_source.html":[12,0,1,0,6,70,0],
-"auto1__commands_8h.html":[12,0,1,0,6,70,1],
-"auto1__commands_8h.html#aaa4ab58fd3d0ae4cce65e11d5c9c7a5f":[12,0,1,0,6,70,1,0]
+"auto1__commands_8c.html":[12,0,1,0,6,71,0],
+"auto1__commands_8c.html#aaa4ab58fd3d0ae4cce65e11d5c9c7a5f":[12,0,1,0,6,71,0,0],
+"auto1__commands_8c_source.html":[12,0,1,0,6,71,0],
+"auto1__commands_8h.html":[12,0,1,0,6,71,1],
+"auto1__commands_8h.html#aaa4ab58fd3d0ae4cce65e11d5c9c7a5f":[12,0,1,0,6,71,1,0]
 };

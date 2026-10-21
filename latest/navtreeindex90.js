@@ -1,5 +1,6 @@
 var NAVTREEINDEX90 =
 {
+"imu__px4fmu_8h.html#ae9d72b5d7fae79662629c370a52caa01":[12,0,1,0,6,36,41,0,1],
 "imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c":[12,0,1,0,6,36,41,3],
 "imu__px4fmu_8h.html#structImuPx4fmu":[12,0,1,0,6,36,41,0],
 "imu__px4fmu_8h_source.html":[12,0,1,0,6,36,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX90 =
 "ins__arduimu__basic_8h.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,37,15,2],
 "ins__arduimu__basic_8h.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,37,15,1],
 "ins__arduimu__basic_8h.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,37,15,8],
-"ins__arduimu__basic_8h.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,6,37,15,5],
-"ins__arduimu__basic_8h_source.html":[12,0,1,0,6,37,15]
+"ins__arduimu__basic_8h.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,6,37,15,5]
 };

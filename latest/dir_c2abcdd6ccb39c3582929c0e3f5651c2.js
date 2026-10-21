@@ -54,6 +54,7 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "pano_unwrap", "dir_051d73f15ec2effa2186b6ce7fd3cd5a.html", "dir_051d73f15ec2effa2186b6ce7fd3cd5a" ],
     [ "pca9685", "dir_b5f3e12090c18a7b91ae0e81924e6746.html", "dir_b5f3e12090c18a7b91ae0e81924e6746" ],
     [ "pose_history", "dir_30323964bd2ca13826a17d9f755d7b61.html", "dir_30323964bd2ca13826a17d9f755d7b61" ],
+    [ "pump_control", "dir_98455eefc50b7a8b1697f92a60e73154.html", "dir_98455eefc50b7a8b1697f92a60e73154" ],
     [ "px4_flash", "dir_7d07a2235bf732e635d4183f1ff4bace.html", "dir_7d07a2235bf732e635d4183f1ff4bace" ],
     [ "px4_gimbal", "dir_7440be264615bd5608c4336d4816dee8.html", "dir_7440be264615bd5608c4336d4816dee8" ],
     [ "radio_control", "dir_f125d81e9dfef46cf6053f80e8884f7e.html", "dir_f125d81e9dfef46cf6053f80e8884f7e" ],

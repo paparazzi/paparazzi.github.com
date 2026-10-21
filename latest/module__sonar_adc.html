@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('module__sonar_adc.html',''); initResiz
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sonar_adc&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_SONAR&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_SCALE&quot; value=&quot;0.001789&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_OFFSET&quot; value=&quot;0.56&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_MIN_RANGE&quot; value=&quot;0.31&quot; unit=&quot;m&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SONAR_ADC_MAX_RANGE&quot; value=&quot;3.1&quot; unit=&quot;m&quot; /&gt;\n    &#39;</span></div>
@@ -123,7 +124,6 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SONAR_ADC_USE_FILTER&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SONAR_ADC_PERIODIC_FREQUENCY&quot; value=&quot;30&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SONAR_ADC_LOWPASS_TAU&quot; value=&quot;0.11&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SONAR_ADC_SCALE&quot; value=&quot;0.001789&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__sonar_adc"></a>
 Module configuration options</h1>
@@ -142,14 +142,14 @@ Configure Options</h2>
  Description: Sensor readings in HZ</li>
 <li><b>name:</b> <code>SONAR_ADC_LOWPASS_TAU</code> <b>value:</b> <em>0.11</em> <br  />
  Description: If filtering is enabled, then one optionally can set this value to filter the output <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">more(or less)</a>. Defaults to 0.16</li>
-<li><b>name:</b> <code>SONAR_ADC_SCALE</code> <b>value:</b> <em>0.001789</em> <br  />
- Description: Sensor scale factor [m/adc], defaults to 0.001855</li>
 </ul>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
 <li><b>name:</b> <code>USE_SONAR</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
  Description: Activate use of sonar in INS extended filter (only rotorcraft), defaults to FALSE</li>
+<li><b>name:</b> <code>SONAR_ADC_SCALE</code> <b>value:</b> <em>0.001789</em> <br  />
+ Description: Sensor scale factor [m/adc], defaults to 0.001855</li>
 <li><b>name:</b> <code>SONAR_ADC_OFFSET</code> <b>value:</b> <em>0.56</em> <br  />
  Description: Sensor offset in meters, as in where one wants zero to be, default is 0.0</li>
 <li><b>name:</b> <code>SONAR_ADC_MIN_RANGE</code> <b>value:</b> <em>0.31</em> <br  />
@@ -241,8 +241,8 @@ Raw sonar_adc.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_USE_FILTER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable or disable a filter on the sonar output values, defaults to TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_PERIODIC_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;30&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Sensor readings in HZ&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_LOWPASS_TAU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.11&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If filtering is enabled, then one optionally can set this value to filter the output more(or less). Defaults to 0.16&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.001789&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Sensor scale factor [m/adc], defaults to 0.001855&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SONAR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Activate use of sonar in INS extended filter (only rotorcraft), defaults to FALSE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.001789&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Sensor scale factor [m/adc], defaults to 0.001855&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.56&quot;</span>  <span class="keyword">description</span>=<span class="stringliteral">&quot;Sensor offset in meters, as in where one wants zero to be, default is 0.0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_MIN_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.31&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If defined, set limit to minimum value the sensor can reliably measure, default 0.15m&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_MAX_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.1&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If defined, set limit to maximum value the sensor can reliably measure, default 4.0m&quot;</span>/&gt;</div>
@@ -274,7 +274,6 @@ Raw sonar_adc.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_USE_FILTER&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_PERIODIC_FREQUENCY&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;30&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_LOWPASS_TAU&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0.16&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_SCALE&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0.001855&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SONAR_ADC_PORT_UPPER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SONAR_ADC_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SONAR_ADC_PORT_UPPER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SONAR_ADC_AGL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(USE_SONAR_ADC_AGL)&quot;</span>/&gt;</div>
@@ -290,7 +289,7 @@ Raw sonar_adc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 21 2026 08:44:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 21 2026 08:58:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

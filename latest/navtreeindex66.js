@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"gps__mtk_8h.html#aec75b3a816c787c8b044e18f941cc886":[12,0,1,0,6,29,9,2],
 "gps__mtk_8h.html#structGpsMtk":[12,0,1,0,6,29,9,0],
 "gps__mtk_8h_source.html":[12,0,1,0,6,29,9],
 "gps__nmea_8c.html":[12,0,1,0,6,29,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "gps__sirf_8h.html#structGpsSirf":[12,0,1,0,6,29,21,0],
 "gps__sirf_8h_source.html":[12,0,1,0,6,29,21],
 "gps__skytraq_8c.html":[12,0,1,0,6,29,22],
-"gps__skytraq_8c.html#a08e4da5f3d0c7936fa52467f40e4b6aa":[12,0,1,0,6,29,22,8],
-"gps__skytraq_8c.html#a14cfd4ce9ed75482f496e0452f72497d":[12,0,1,0,6,29,22,18]
+"gps__skytraq_8c.html#a08e4da5f3d0c7936fa52467f40e4b6aa":[12,0,1,0,6,29,22,8]
 };
