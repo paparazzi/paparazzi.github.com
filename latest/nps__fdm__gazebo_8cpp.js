@@ -14,6 +14,7 @@ var nps__fdm__gazebo_8cpp =
     [ "gazebo_write", "nps__fdm__gazebo_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe", null ],
     [ "init_gazebo", "nps__fdm__gazebo_8cpp.html#acf1b27b2902f5682b920ee9420619a10", null ],
     [ "nps_fdm_init", "nps__fdm__gazebo_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779", null ],
+    [ "nps_fdm_run_init_step", "nps__fdm__gazebo_8cpp.html#ae46f7854ffee8a7e5ea20580d763bf21", null ],
     [ "nps_fdm_run_step", "nps__fdm__gazebo_8cpp.html#a24746b271a6ab9bdeb9bca0b29be61bf", null ],
     [ "nps_fdm_set_temperature", "nps__fdm__gazebo_8cpp.html#a7ac7e3ef2c6525bef23e27e2f1857ca0", null ],
     [ "nps_fdm_set_turbulence", "nps__fdm__gazebo_8cpp.html#ac07a0f8dffd889c21a81979e521a8d97", null ],

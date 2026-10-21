@@ -1,5 +1,12 @@
 var NAVTREEINDEX207 =
 {
+"stabilization__attitude__ref__quat__float_8h.html#structFloatRefModel":[12,0,1,0,3,2,2,34,0],
+"stabilization__attitude__ref__quat__float_8h_source.html":[12,0,1,0,3,2,2,34],
+"stabilization__attitude__ref__quat__int_8c.html":[12,0,1,0,3,2,2,35],
+"stabilization__attitude__ref__quat__int_8c.html#a096c00deb25b569b3f9959e3c5fb27ae":[12,0,1,0,3,2,2,35,22],
+"stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c":[12,0,1,0,3,2,2,35,20],
+"stabilization__attitude__ref__quat__int_8c.html#a3f8d6b617f4443c111163584c48c9794":[12,0,1,0,3,2,2,35,0],
+"stabilization__attitude__ref__quat__int_8c.html#a49456a984e7be973086f7847d21690ba":[12,0,1,0,3,2,2,35,3],
 "stabilization__attitude__ref__quat__int_8c.html#a4ece5643f8a37a6718b4918214b44fd2":[12,0,1,0,3,2,2,35,1],
 "stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc":[12,0,1,0,3,2,2,35,4],
 "stabilization__attitude__ref__quat__int_8c.html#a677908c0facae1f128acfa7debc28a92":[12,0,1,0,3,2,2,35,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX207 =
 "stabilization__indi__simple_8h.html#a579eabe525912021499370675a0eaf38":[12,0,1,0,3,2,2,43,7],
 "stabilization__indi__simple_8h.html#a58bd02934d2f55aa4c8735e593233376":[12,0,1,0,3,2,2,43,2,5],
 "stabilization__indi__simple_8h.html#a61f3aa896082bf3a083074d3290670f6":[12,0,1,0,3,2,2,43,1,6],
-"stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20":[12,0,1,0,3,2,2,43,2,14],
-"stabilization__indi__simple_8h.html#a701c67af1ddf7f0a80a22e6719c993a1":[12,0,1,0,3,2,2,43,1,5],
-"stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4":[12,0,1,0,3,2,2,43,2,15],
-"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,43,0,1],
-"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,40,0,1],
-"stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,2,43,2,2],
-"stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,2,43,1,4],
-"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,40,0,0]
+"stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20":[12,0,1,0,3,2,2,43,2,14]
 };

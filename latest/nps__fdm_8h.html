@@ -234,6 +234,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a17ec5b69b110d046f9db5b67d2b08779" id="r_a17ec5b69b110d046f9db5b67d2b08779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm_8h.html#a17ec5b69b110d046f9db5b67d2b08779">nps_fdm_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">double</a> dt)</td></tr>
 <tr class="memdesc:a17ec5b69b110d046f9db5b67d2b08779"><td class="mdescLeft">&#160;</td><td class="mdescRight">NPS FDM rover init.  <br /></td></tr>
 <tr class="separator:a17ec5b69b110d046f9db5b67d2b08779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46f7854ffee8a7e5ea20580d763bf21" id="r_ae46f7854ffee8a7e5ea20580d763bf21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm_8h.html#ae46f7854ffee8a7e5ea20580d763bf21">nps_fdm_run_init_step</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:ae46f7854ffee8a7e5ea20580d763bf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f72ff1c76415e3e41897d762122c5f8" id="r_a4f72ff1c76415e3e41897d762122c5f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm_8h.html#a4f72ff1c76415e3e41897d762122c5f8">nps_fdm_run_step</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> launch, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">double</a> *<a class="el" href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">commands_nb</a>)</td></tr>
 <tr class="memdesc:a4f72ff1c76415e3e41897d762122c5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and correspond to the 'sim' target.  <br /></td></tr>
 <tr class="separator:a4f72ff1c76415e3e41897d762122c5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -628,7 +630,7 @@ velocity in m/s in NED </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">119</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00098">fixedwing_sim_state::airspeed</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00096">fixedwing_sim_state::attitude</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00098">_crrcsim::buf</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00102">crrcsim</a>, <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00100">fixedwing_sim_state::delta_pitch</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00099">fixedwing_sim_state::delta_roll</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00101">fixedwing_sim_state::delta_thrust</a>, <a class="el" href="nps__fdm_8h_source.html#l00112">NpsFdm::dynamic_pressure</a>, <a class="el" href="pprz__algebra_8h_source.html#l00274">EULERS_ASSIGN</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00379">fetch_state()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00123">gazebo_actuators</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00119">gazebo_actuators_t::highpass</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="high__pass__filter_8h_source.html#l00056">init_first_order_high_pass()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00060">init_first_order_low_pass()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00544">init_jsbsim()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00265">init_ltp()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00259">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00679">init_ltp()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00276">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00225">init_ltp()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00245">inputbuf_init()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00118">gazebo_actuators_t::lowpass</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00120">gazebo_actuators_t::max_ang_momentum</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00147">MIN_DT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00184">min_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="nps__autopilot_8h_source.html#l00044">NPS_COMMANDS_NB</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00053">NPS_CRRCSIM_HOST_IP</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00057">NPS_CRRCSIM_HOST_PORT</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00114">nps_fdm_run_step()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00178">offset</a>, <a class="el" href="nps__fdm_8h_source.html#l00049">NpsFdm::on_ground</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00220">open_udp()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00094">fixedwing_sim_state::pos</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, <a class="el" href="nps__fdm_8h_source.html#l00110">NpsFdm::pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00114">NpsFdm::pressure_sl</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00334">python_init()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00097">fixedwing_sim_state::rates</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00510">send_servo_cmd()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00096">_crrcsim::socket</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00095">fixedwing_sim_state::speed</a>, <a class="el" href="nps__fdm_8h_source.html#l00113">NpsFdm::temperature</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="nps__fdm_8h_source.html#l00111">NpsFdm::total_pressure</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00070">UDP_NONBLOCKING</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, and <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00102">fixedwing_sim_state::wind</a>.</p>
+<p class="reference">References <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00098">fixedwing_sim_state::airspeed</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00096">fixedwing_sim_state::attitude</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00098">_crrcsim::buf</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00102">crrcsim</a>, <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00100">fixedwing_sim_state::delta_pitch</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00099">fixedwing_sim_state::delta_roll</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00101">fixedwing_sim_state::delta_thrust</a>, <a class="el" href="nps__fdm_8h_source.html#l00112">NpsFdm::dynamic_pressure</a>, <a class="el" href="pprz__algebra_8h_source.html#l00274">EULERS_ASSIGN</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00384">fetch_state()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00123">gazebo_actuators</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00119">gazebo_actuators_t::highpass</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="high__pass__filter_8h_source.html#l00056">init_first_order_high_pass()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00060">init_first_order_low_pass()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00549">init_jsbsim()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00270">init_ltp()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00264">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00684">init_ltp()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00277">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00230">init_ltp()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00250">inputbuf_init()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00118">gazebo_actuators_t::lowpass</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00120">gazebo_actuators_t::max_ang_momentum</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00147">MIN_DT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00184">min_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="nps__autopilot_8h_source.html#l00044">NPS_COMMANDS_NB</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00053">NPS_CRRCSIM_HOST_IP</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00057">NPS_CRRCSIM_HOST_PORT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00178">offset</a>, <a class="el" href="nps__fdm_8h_source.html#l00049">NpsFdm::on_ground</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00225">open_udp()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00094">fixedwing_sim_state::pos</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, <a class="el" href="nps__fdm_8h_source.html#l00110">NpsFdm::pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00114">NpsFdm::pressure_sl</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00097">fixedwing_sim_state::rates</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00515">send_servo_cmd()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00096">_crrcsim::socket</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00095">fixedwing_sim_state::speed</a>, <a class="el" href="nps__fdm_8h_source.html#l00113">NpsFdm::temperature</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="nps__fdm_8h_source.html#l00111">NpsFdm::total_pressure</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00070">UDP_NONBLOCKING</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, and <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00102">fixedwing_sim_state::wind</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__main__common_8c_source.html#l00086">nps_main_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -638,125 +640,89 @@ velocity in m/s in NED </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm_8h_a17ec5b69b110d046f9db5b67d2b08779_cgraph.png" border="0" usemap="#anps__fdm_8h_a17ec5b69b110d046f9db5b67d2b08779_cgraph" alt=""/></div>
 <map name="anps__fdm_8h_a17ec5b69b110d046f9db5b67d2b08779_cgraph" id="anps__fdm_8h_a17ec5b69b110d046f9db5b67d2b08779_cgraph">
-<area shape="rect" title="NPS FDM rover init." alt="" coords="5,727,112,752"/>
+<area shape="rect" title="NPS FDM rover init." alt="" coords="5,773,112,799"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="207,280,301,305"/>
-<area shape="poly" title=" " alt="" coords="61,726,95,608,123,525,158,442,196,372,234,315,238,318,201,374,162,444,128,527,100,609,66,727"/>
-<area shape="rect" href="high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca" title="Init first order high pass filter." alt="" coords="160,455,348,480"/>
-<area shape="poly" title=" " alt="" coords="59,726,66,681,82,618,112,550,133,518,158,491,167,484,170,489,162,495,137,521,117,552,87,620,71,682,64,727"/>
-<area shape="rect" href="low__pass__filter_8h.html#a2ef099f9631ccda888715f731518423e" title="Init first order low pass filter." alt="" coords="163,504,345,529"/>
-<area shape="poly" title=" " alt="" coords="60,726,70,689,89,639,118,586,136,561,158,540,167,534,170,538,162,544,140,565,122,589,94,641,75,691,65,727"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim." alt="" coords="207,553,301,579"/>
-<area shape="poly" title=" " alt="" coords="63,725,96,660,124,622,159,589,193,573,195,578,161,594,128,625,100,663,67,728"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,652,287,677"/>
-<area shape="poly" title=" " alt="" coords="82,724,159,688,206,673,208,678,161,692,84,729"/>
-<area shape="rect" href="nps__fdm__fixedwing__sim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,603,287,628"/>
-<area shape="poly" title=" " alt="" coords="67,725,104,682,130,659,159,638,182,628,207,620,208,625,184,633,161,643,133,663,108,686,71,728"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location." alt="" coords="221,800,287,825"/>
-<area shape="poly" title=" " alt="" coords="84,750,161,786,208,800,206,805,159,791,81,754"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,751,287,776"/>
-<area shape="poly" title=" " alt="" coords="112,743,208,755,207,760,112,748"/>
-<area shape="rect" href="nps__fdm__rover_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,701,287,727"/>
-<area shape="poly" title=" " alt="" coords="112,730,207,717,208,723,112,735"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title=" " alt="" coords="202,849,306,875"/>
-<area shape="poly" title=" " alt="" coords="71,750,108,793,133,816,161,836,190,848,188,853,159,840,130,820,104,796,67,754"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="183,1047,325,1072"/>
-<area shape="poly" title=" " alt="" coords="70,751,240,1034,236,1036,66,754"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title=" " alt="" coords="211,1096,297,1121"/>
-<area shape="poly" title=" " alt="" coords="62,752,64,812,75,901,87,950,105,998,130,1043,162,1083,179,1094,199,1102,197,1107,176,1099,158,1087,125,1046,100,1001,82,952,70,902,58,812,57,752"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#a0ece8bc37dcf7241f7bc02f721c5c304" title=" " alt="" coords="207,1220,301,1245"/>
-<area shape="poly" title=" " alt="" coords="64,752,70,814,87,910,116,1023,137,1079,162,1133,193,1175,228,1209,224,1213,189,1179,158,1135,132,1081,111,1025,81,912,65,815,58,752"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="189,1269,319,1295"/>
-<area shape="poly" title=" " alt="" coords="63,752,70,851,87,1003,101,1083,117,1156,138,1216,149,1239,162,1256,178,1268,174,1272,158,1260,145,1242,133,1218,112,1158,95,1084,82,1004,65,852,58,753"/>
-<area shape="rect" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="645,379,815,404"/>
-<area shape="poly" title=" " alt="" coords="260,278,279,248,309,210,348,171,371,155,395,142,451,121,499,111,522,112,546,118,599,142,628,164,652,191,673,221,689,252,713,315,726,365,721,366,708,316,685,255,668,223,648,194,624,168,596,147,544,123,521,118,499,117,452,126,397,147,373,160,351,176,313,213,284,251,265,281"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="431,603,562,628"/>
-<area shape="poly" title=" " alt="" coords="267,304,306,362,350,442,363,486,366,523,374,556,383,573,398,589,420,603,417,608,394,593,378,576,369,558,361,524,358,487,346,444,301,365,262,307"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="421,156,572,181"/>
+<area shape="poly" title=" " alt="" coords="62,772,240,317,245,319,67,774"/>
+<area shape="rect" href="high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca" title="Init first order high pass filter." alt="" coords="160,551,348,576"/>
+<area shape="poly" title=" " alt="" coords="60,772,70,736,89,686,118,632,136,608,158,587,167,580,170,585,162,591,140,611,122,635,94,688,75,737,65,774"/>
+<area shape="rect" href="low__pass__filter_8h.html#a2ef099f9631ccda888715f731518423e" title="Init first order low pass filter." alt="" coords="163,600,345,625"/>
+<area shape="poly" title=" " alt="" coords="63,772,96,707,124,669,158,636,170,629,173,633,162,640,128,672,100,710,67,774"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim." alt="" coords="207,649,301,675"/>
+<area shape="poly" title=" " alt="" coords="67,772,104,729,130,705,159,685,193,671,195,676,161,690,133,709,108,733,71,775"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,797,287,823"/>
+<area shape="poly" title=" " alt="" coords="112,790,208,802,207,807,112,795"/>
+<area shape="rect" href="nps__fdm__fixedwing__sim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,748,287,773"/>
+<area shape="poly" title=" " alt="" coords="112,777,207,764,208,769,112,782"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location." alt="" coords="221,699,287,724"/>
+<area shape="poly" title=" " alt="" coords="82,771,159,734,206,719,208,724,161,739,84,776"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,896,287,921"/>
+<area shape="poly" title=" " alt="" coords="71,797,108,839,133,863,161,882,184,892,208,899,207,904,182,898,159,887,130,867,104,843,67,800"/>
+<area shape="rect" href="nps__fdm__rover_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="221,847,287,872"/>
+<area shape="poly" title=" " alt="" coords="84,796,161,833,208,847,206,852,159,838,81,801"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title=" " alt="" coords="202,945,306,971"/>
+<area shape="poly" title=" " alt="" coords="67,798,100,863,127,900,162,932,190,946,188,950,158,936,123,904,96,865,63,800"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title=" " alt="" coords="211,995,297,1020"/>
+<area shape="poly" title=" " alt="" coords="65,798,75,835,93,885,122,937,140,961,162,981,179,992,199,999,197,1004,177,997,158,985,136,964,117,940,89,887,70,836,60,800"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="189,1044,319,1069"/>
+<area shape="poly" title=" " alt="" coords="64,799,71,843,87,906,100,940,116,973,137,1004,162,1031,178,1041,175,1046,158,1035,133,1007,112,976,95,942,82,908,66,844,59,799"/>
+<area shape="rect" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="412,156,581,181"/>
 <area shape="poly" title=" " alt="" coords="268,278,322,236,357,212,395,192,417,183,419,188,397,196,360,217,325,240,271,282"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="426,205,567,231"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="431,452,562,477"/>
+<area shape="poly" title=" " alt="" coords="266,304,316,369,354,407,397,438,419,448,417,453,395,443,350,411,312,373,262,307"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="421,205,572,231"/>
 <area shape="poly" title=" " alt="" coords="288,277,395,241,428,232,429,237,397,246,290,282"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="427,255,566,280"/>
-<area shape="poly" title=" " alt="" coords="301,285,413,273,414,279,302,290"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="396,304,597,329"/>
-<area shape="poly" title=" " alt="" coords="302,295,382,303,382,308,301,300"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="402,353,591,379"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="426,255,567,280"/>
+<area shape="poly" title=" " alt="" coords="301,285,412,273,412,279,302,290"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="427,304,566,329"/>
+<area shape="poly" title=" " alt="" coords="302,295,414,306,413,311,301,300"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="396,353,597,379"/>
 <area shape="poly" title=" " alt="" coords="289,303,397,339,426,347,424,353,395,345,288,308"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="676,701,784,727"/>
-<area shape="poly" title=" " alt="" coords="271,303,325,345,360,369,397,389,427,400,453,405,502,407,548,413,573,424,599,441,627,468,651,500,688,568,713,635,726,687,721,688,707,636,683,570,647,503,623,472,596,445,570,428,547,419,501,413,452,410,425,405,395,394,357,373,322,350,268,308"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="433,553,560,579"/>
-<area shape="poly" title=" " alt="" coords="266,304,304,363,350,442,363,472,369,496,378,518,398,540,421,553,419,558,394,544,374,521,364,498,358,473,346,445,299,366,262,307"/>
-<area shape="rect" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="419,5,575,31"/>
-<area shape="poly" title=" " alt="" coords="256,279,271,234,298,169,338,100,364,69,394,41,405,34,408,39,398,45,368,72,343,103,302,172,276,236,261,281"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="421,55,572,80"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="402,403,591,428"/>
+<area shape="poly" title=" " alt="" coords="271,304,325,346,360,369,397,389,415,396,413,401,395,394,357,374,321,350,268,308"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="669,377,777,403"/>
+<area shape="poly" title=" " alt="" coords="260,278,279,248,309,210,348,171,371,155,395,142,451,121,499,111,522,112,546,117,599,142,627,164,651,191,670,220,686,252,709,314,720,363,715,365,703,315,681,254,666,223,646,194,623,168,596,147,544,122,521,117,499,117,452,126,397,147,373,160,351,176,313,213,284,251,265,281"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="433,600,560,625"/>
+<area shape="poly" title=" " alt="" coords="260,305,272,358,296,435,315,476,337,517,365,554,398,587,421,600,419,605,394,591,361,558,333,520,310,478,291,436,267,359,255,306"/>
+<area shape="rect" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="419,55,575,80"/>
 <area shape="poly" title=" " alt="" coords="259,278,277,243,306,194,346,142,394,97,421,83,424,87,398,101,350,146,311,197,282,245,264,281"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="652,5,808,31"/>
-<area shape="poly" title=" " alt="" coords="575,15,638,15,638,21,575,21"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="655,55,805,80"/>
-<area shape="poly" title=" " alt="" coords="572,65,641,65,641,70,572,70"/>
-<area shape="poly" title=" " alt="" coords="301,563,420,563,420,569,301,569"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="443,652,551,677"/>
-<area shape="poly" title=" " alt="" coords="302,571,326,578,349,589,365,602,374,615,383,627,397,638,430,652,428,657,395,643,379,631,370,618,361,605,347,594,324,583,300,576"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="446,455,547,480"/>
-<area shape="poly" title=" " alt="" coords="300,557,324,550,347,540,361,528,370,516,379,503,395,490,432,475,434,480,397,495,383,507,374,519,365,532,349,544,326,555,302,562"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="437,504,556,529"/>
-<area shape="poly" title=" " alt="" coords="301,554,423,529,424,534,302,559"/>
-<area shape="poly" title=" " alt="" coords="288,662,429,662,429,667,288,667"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="419,701,574,727"/>
-<area shape="poly" title=" " alt="" coords="288,669,421,696,419,701,287,674"/>
-<area shape="poly" title=" " alt="" coords="574,711,662,711,662,717,574,717"/>
-<area shape="poly" title=" " alt="" coords="288,619,430,648,429,654,287,625"/>
-<area shape="poly" title=" " alt="" coords="288,617,319,625,349,638,365,651,374,664,383,676,397,688,411,694,408,699,395,692,379,680,370,667,361,655,347,643,317,630,287,622"/>
-<area shape="poly" title=" " alt="" coords="287,809,318,803,346,787,360,769,367,752,369,714,372,677,379,657,394,639,417,624,420,629,398,643,384,660,377,678,375,715,372,753,365,772,350,791,320,808,288,815"/>
-<area shape="poly" title=" " alt="" coords="287,810,319,803,333,796,346,787,363,763,371,739,372,715,369,690,367,665,368,640,376,614,394,589,419,573,422,578,398,593,381,617,373,641,372,665,375,690,377,715,376,740,368,766,350,791,336,801,320,808,288,815"/>
-<area shape="poly" title=" " alt="" coords="287,806,317,799,347,786,361,775,370,762,379,750,395,737,411,729,414,734,397,742,383,753,374,766,365,778,349,791,319,804,288,811"/>
-<area shape="rect" href="group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place" alt="" coords="406,948,587,973"/>
-<area shape="poly" title=" " alt="" coords="288,812,320,820,350,836,361,848,368,861,374,887,380,912,387,923,398,935,404,939,401,944,394,939,382,927,375,914,369,888,363,863,357,851,346,840,318,825,287,817"/>
-<area shape="rect" href="group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title=" " alt="" coords="457,800,536,825"/>
-<area shape="poly" title=" " alt="" coords="288,810,444,810,444,815,288,815"/>
-<area shape="rect" href="group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title=" " alt="" coords="455,849,539,875"/>
-<area shape="poly" title=" " alt="" coords="288,817,441,848,440,853,287,822"/>
-<area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="419,751,575,776"/>
-<area shape="poly" title=" " alt="" coords="287,803,419,776,421,781,288,809"/>
-<area shape="rect" href="group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="655,948,805,973"/>
-<area shape="poly" title=" " alt="" coords="588,958,641,958,641,963,588,963"/>
-<area shape="poly" title=" " alt="" coords="287,757,317,750,347,737,361,725,370,713,379,700,395,688,428,674,430,679,397,692,383,704,374,716,365,729,349,742,319,755,288,762"/>
-<area shape="poly" title=" " alt="" coords="287,754,419,727,421,732,288,759"/>
-<area shape="poly" title=" " alt="" coords="288,761,405,761,405,766,288,766"/>
-<area shape="poly" title=" " alt="" coords="287,705,429,676,430,681,288,710"/>
-<area shape="poly" title=" " alt="" coords="288,711,405,711,405,717,288,717"/>
-<area shape="poly" title=" " alt="" coords="288,718,421,745,419,750,287,723"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176" title=" " alt="" coords="461,1145,533,1171"/>
-<area shape="poly" title=" " alt="" coords="321,1070,349,1082,365,1095,374,1108,383,1120,397,1132,422,1142,448,1149,447,1155,420,1148,395,1136,379,1124,370,1111,361,1099,347,1087,318,1074"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737" title=" " alt="" coords="445,1047,548,1072"/>
-<area shape="poly" title=" " alt="" coords="325,1057,432,1057,432,1062,325,1062"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#abcd39a610d09098059d3f60e2d88ce36" title=" " alt="" coords="446,997,547,1023"/>
-<area shape="poly" title=" " alt="" coords="317,1044,432,1020,433,1025,318,1049"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ab019172d149e62f3890de381d88c3b7a" title=" " alt="" coords="453,899,541,924"/>
-<area shape="poly" title=" " alt="" coords="264,1045,317,991,354,960,395,934,439,918,440,923,397,939,357,965,320,995,268,1048"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ae10cefa4fa9411b06942fbd7d3abefae" title=" " alt="" coords="460,1096,533,1121"/>
-<area shape="poly" title=" " alt="" coords="318,1069,447,1096,446,1101,317,1075"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#aeb81f930608d444f932802bb71efc1ce" title=" " alt="" coords="689,1220,771,1245"/>
-<area shape="poly" title=" " alt="" coords="326,1068,350,1083,364,1102,371,1122,372,1161,375,1198,382,1215,398,1231,430,1249,466,1261,504,1267,542,1269,617,1261,679,1247,680,1252,617,1266,543,1274,504,1273,465,1266,428,1254,394,1235,378,1218,369,1200,367,1161,366,1123,360,1104,346,1087,323,1072"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921" title=" " alt="" coords="461,1195,532,1220"/>
-<area shape="poly" title=" " alt="" coords="326,1069,350,1083,361,1095,368,1108,374,1134,380,1158,387,1170,398,1181,422,1195,449,1202,447,1207,420,1200,394,1185,382,1173,375,1160,369,1135,363,1110,357,1098,346,1087,324,1074"/>
-<area shape="rect" href="group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9" title=" " alt="" coords="657,1047,803,1072"/>
-<area shape="poly" title=" " alt="" coords="532,1152,564,1145,596,1132,610,1120,619,1108,629,1095,644,1082,659,1075,661,1079,647,1087,633,1099,624,1111,614,1124,599,1136,566,1150,533,1157"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="655,1171,805,1196"/>
-<area shape="poly" title=" " alt="" coords="533,1159,641,1171,641,1176,533,1164"/>
-<area shape="poly" title=" " alt="" coords="548,1057,643,1057,643,1062,548,1062"/>
-<area shape="poly" title=" " alt="" coords="548,1018,656,1041,655,1046,547,1023"/>
-<area shape="poly" title=" " alt="" coords="540,908,570,901,596,885,615,863,626,841,632,819,634,797,635,749,643,689,718,417,724,418,648,691,640,749,639,798,637,820,631,843,619,866,599,889,572,906,542,913"/>
-<area shape="rect" href="group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632" title="Composition (multiplication) of two quaternions." alt="" coords="657,899,803,924"/>
-<area shape="poly" title=" " alt="" coords="541,909,643,909,643,914,541,914"/>
-<area shape="poly" title=" " alt="" coords="533,1106,566,1100,582,1093,595,1083,614,1060,625,1038,630,1016,631,994,631,945,635,917,643,886,678,804,712,738,717,740,683,806,648,888,640,918,637,945,637,994,635,1017,630,1040,619,1063,599,1087,585,1097,568,1105,534,1111"/>
-<area shape="rect" href="group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="652,1096,808,1121"/>
-<area shape="poly" title=" " alt="" coords="534,1106,638,1106,638,1111,534,1111"/>
-<area shape="poly" title=" " alt="" coords="534,1109,567,1116,599,1132,616,1151,624,1170,631,1189,647,1207,677,1221,674,1226,644,1211,627,1192,619,1172,612,1154,596,1136,565,1121,533,1114"/>
-<area shape="poly" title=" " alt="" coords="532,1201,640,1190,641,1195,532,1206"/>
-<area shape="poly" title=" " alt="" coords="532,1208,675,1224,674,1229,532,1214"/>
-<area shape="poly" title=" " alt="" coords="302,1242,349,1255,373,1266,397,1274,452,1283,497,1286,541,1282,597,1274,644,1263,686,1248,688,1253,645,1268,598,1279,541,1288,497,1291,452,1288,395,1279,371,1271,347,1261,301,1247"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ad7e507a71c4e68632586cf20071c69bf" title=" " alt="" coords="431,1347,562,1372"/>
-<area shape="poly" title=" " alt="" coords="302,1236,327,1244,350,1256,366,1273,375,1291,382,1309,398,1325,423,1339,421,1344,394,1329,378,1312,370,1294,362,1276,346,1260,325,1249,301,1241"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="421,5,572,31"/>
+<area shape="poly" title=" " alt="" coords="256,279,270,233,297,168,338,99,364,67,394,40,407,32,410,36,398,44,368,71,342,102,302,171,275,235,261,281"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="645,55,801,80"/>
+<area shape="poly" title=" " alt="" coords="575,65,632,65,632,70,575,70"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="648,5,799,31"/>
+<area shape="poly" title=" " alt="" coords="573,15,634,15,634,21,573,21"/>
+<area shape="poly" title=" " alt="" coords="301,650,419,626,421,631,302,655"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="443,797,551,823"/>
+<area shape="poly" title=" " alt="" coords="302,664,327,672,350,685,361,698,368,711,374,736,380,761,387,773,398,784,431,800,428,805,394,788,382,776,375,763,369,737,363,713,357,701,346,689,325,677,300,669"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="446,501,547,527"/>
+<area shape="poly" title=" " alt="" coords="300,656,325,648,346,636,357,625,364,613,369,588,375,562,382,550,394,537,412,526,432,519,433,524,414,531,398,541,387,553,380,564,375,589,369,615,361,628,350,640,327,653,302,661"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="437,551,556,576"/>
+<area shape="poly" title=" " alt="" coords="300,653,324,646,347,636,361,624,370,612,379,599,395,586,423,574,425,579,397,591,383,603,374,615,365,628,349,640,326,651,302,658"/>
+<area shape="poly" title=" " alt="" coords="288,807,429,807,429,813,288,813"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="419,847,574,872"/>
+<area shape="poly" title=" " alt="" coords="288,814,421,841,419,846,287,819"/>
+<area shape="poly" title=" " alt="" coords="573,848,595,834,617,776,651,654,713,416,718,417,656,656,622,777,599,837,575,852"/>
+<area shape="poly" title=" " alt="" coords="288,765,430,794,429,799,287,770"/>
+<area shape="poly" title=" " alt="" coords="288,763,319,770,349,784,365,796,374,809,383,822,397,833,411,840,408,844,395,838,379,825,370,812,361,800,347,788,317,775,287,768"/>
+<area shape="poly" title=" " alt="" coords="287,708,319,702,333,695,346,685,363,662,371,638,372,614,369,589,367,564,368,538,376,513,394,488,417,473,420,477,398,492,381,515,373,539,372,564,375,588,377,613,376,639,368,664,350,689,336,700,320,707,288,714"/>
+<area shape="poly" title=" " alt="" coords="287,705,317,698,347,685,361,673,370,661,379,648,395,636,419,625,421,630,397,640,383,652,374,664,365,677,349,690,319,703,288,710"/>
+<area shape="poly" title=" " alt="" coords="288,711,320,718,350,735,361,747,368,760,374,786,380,810,387,822,398,833,409,841,406,845,394,837,382,825,375,812,369,787,363,762,357,750,346,739,318,723,287,716"/>
+<area shape="rect" href="group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place" alt="" coords="406,699,587,724"/>
+<area shape="poly" title=" " alt="" coords="288,709,392,709,392,714,288,714"/>
+<area shape="rect" href="group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title=" " alt="" coords="457,649,536,675"/>
+<area shape="poly" title=" " alt="" coords="287,702,443,670,444,675,288,707"/>
+<area shape="rect" href="group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title=" " alt="" coords="455,748,539,773"/>
+<area shape="poly" title=" " alt="" coords="288,715,441,747,440,752,287,721"/>
+<area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="419,896,575,921"/>
+<area shape="poly" title=" " alt="" coords="288,710,320,717,350,735,365,753,372,773,374,811,377,848,384,865,398,883,408,891,405,895,394,887,379,868,372,849,369,811,367,774,360,756,346,739,318,722,287,715"/>
+<area shape="rect" href="group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="648,699,799,724"/>
+<area shape="poly" title=" " alt="" coords="588,709,634,709,634,714,588,714"/>
+<area shape="poly" title=" " alt="" coords="287,902,317,895,347,882,361,871,370,858,379,846,395,833,428,819,430,824,397,838,383,849,374,862,365,874,349,887,319,900,288,907"/>
+<area shape="poly" title=" " alt="" coords="287,899,419,872,421,877,288,905"/>
+<area shape="poly" title=" " alt="" coords="288,906,405,906,405,911,288,911"/>
+<area shape="poly" title=" " alt="" coords="287,850,429,821,430,826,288,855"/>
+<area shape="poly" title=" " alt="" coords="288,857,405,857,405,862,288,862"/>
+<area shape="poly" title=" " alt="" coords="288,863,421,891,419,896,287,869"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -769,6 +735,98 @@ velocity in m/s in NED </td></tr>
 <area shape="rect" title="NPS FDM rover init." alt="" coords="269,5,376,31"/>
 <area shape="rect" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title=" " alt="" coords="108,5,221,31"/>
 <area shape="poly" title=" " alt="" coords="256,21,221,21,221,15,256,15"/>
+<area shape="rect" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae46f7854ffee8a7e5ea20580d763bf21" name="ae46f7854ffee8a7e5ea20580d763bf21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46f7854ffee8a7e5ea20580d763bf21">&#9670;&#160;</a></span>nps_fdm_run_init_step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> nps_fdm_run_init_step </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00150">150</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
+
+<p class="reference">References <a class="el" href="nps__fdm__pybullet_8c_source.html#l00057">fdm</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00119">nps_fdm_run_step()</a>, and <a class="el" href="nps__fdm__pybullet_8c_source.html#l00334">python_init()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="nps__main__hitl_8c_source.html#l00078">nps_main_loop()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_cgraph.png" border="0" usemap="#anps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_cgraph" alt=""/></div>
+<map name="anps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_cgraph" id="anps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_cgraph">
+<area shape="rect" title=" " alt="" coords="5,255,175,280"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="223,179,364,204"/>
+<area shape="poly" title=" " alt="" coords="124,252,244,206,246,211,126,257"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#a0ece8bc37dcf7241f7bc02f721c5c304" title=" " alt="" coords="246,305,341,331"/>
+<area shape="poly" title=" " alt="" coords="143,278,233,300,232,306,141,283"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176" title=" " alt="" coords="441,104,513,129"/>
+<area shape="poly" title=" " alt="" coords="323,176,411,140,430,132,432,137,413,144,326,181"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737" title=" " alt="" coords="426,255,529,280"/>
+<area shape="poly" title=" " alt="" coords="326,202,434,247,432,252,324,207"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#abcd39a610d09098059d3f60e2d88ce36" title=" " alt="" coords="427,5,528,31"/>
+<area shape="poly" title=" " alt="" coords="299,177,340,113,373,74,410,40,418,35,421,39,414,44,376,78,345,116,304,180"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ab019172d149e62f3890de381d88c3b7a" title=" " alt="" coords="433,55,521,80"/>
+<area shape="poly" title=" " alt="" coords="305,177,349,135,411,89,422,83,424,88,413,94,352,139,308,181"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ae10cefa4fa9411b06942fbd7d3abefae" title=" " alt="" coords="441,356,514,381"/>
+<area shape="poly" title=" " alt="" coords="310,202,455,344,451,348,306,206"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#aeb81f930608d444f932802bb71efc1ce" title=" " alt="" coords="634,231,717,256"/>
+<area shape="poly" title=" " alt="" coords="365,198,621,233,620,239,364,204"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921" title=" " alt="" coords="442,153,513,179"/>
+<area shape="poly" title=" " alt="" coords="364,179,428,170,429,175,365,184"/>
+<area shape="rect" href="group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9" title=" " alt="" coords="602,104,749,129"/>
+<area shape="poly" title=" " alt="" coords="514,114,588,114,588,119,514,119"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="600,153,751,179"/>
+<area shape="poly" title=" " alt="" coords="514,123,611,147,610,153,513,128"/>
+<area shape="rect" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="591,55,760,80"/>
+<area shape="poly" title=" " alt="" coords="522,65,577,65,577,70,522,70"/>
+<area shape="rect" href="group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632" title="Composition (multiplication) of two quaternions." alt="" coords="603,5,748,31"/>
+<area shape="poly" title=" " alt="" coords="521,54,610,31,611,37,522,59"/>
+<area shape="rect" href="group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="597,380,753,405"/>
+<area shape="poly" title=" " alt="" coords="514,370,584,379,584,384,514,376"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="621,331,729,356"/>
+<area shape="poly" title=" " alt="" coords="514,361,607,349,608,355,514,367"/>
+<area shape="poly" title=" " alt="" coords="505,354,541,334,597,297,645,262,648,267,600,302,544,339,508,358"/>
+<area shape="poly" title=" " alt="" coords="513,163,586,163,586,169,513,169"/>
+<area shape="poly" title=" " alt="" coords="512,176,630,223,628,228,510,181"/>
+<area shape="poly" title=" " alt="" coords="341,314,434,307,542,290,590,276,633,259,635,264,591,281,543,295,435,313,341,319"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ad7e507a71c4e68632586cf20071c69bf" title=" " alt="" coords="412,405,543,431"/>
+<area shape="poly" title=" " alt="" coords="313,329,358,359,413,392,426,398,424,403,411,396,355,364,310,333"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_icgraph.png" border="0" usemap="#anps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_icgraph" alt=""/></div>
+<map name="anps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_icgraph" id="anps__fdm_8h_ae46f7854ffee8a7e5ea20580d763bf21_icgraph">
+<area shape="rect" title=" " alt="" coords="276,5,445,31"/>
+<area shape="rect" href="nps__main__sitl_8c.html#a245c6d75dd48b11ac0047073dc4f818a" title=" " alt="" coords="108,5,228,31"/>
+<area shape="poly" title=" " alt="" coords="262,21,228,21,228,15,262,15"/>
 <area shape="rect" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -829,152 +887,150 @@ velocity in m/s in NED </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00150">150</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00155">155</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00098">fixedwing_sim_state::airspeed</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00096">fixedwing_sim_state::attitude</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00081">AUTO_THROTTLE_NOMINAL_CRUISE_THROTTLE</a>, <a class="el" href="nps__fdm_8h_source.html#l00098">NpsFdm::body_ecef_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00097">NpsFdm::body_ecef_rotvel</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00071">bullet_fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00862">check_for_nan()</a>, <a class="el" href="eff__scheduling__plusquad_8h_source.html#l00055">COMMAND_PITCH</a>, <a class="el" href="eff__scheduling__plusquad_8h_source.html#l00051">COMMAND_ROLL</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00102">crrcsim</a>, <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00099">_crrcsim::data_buffer</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00440">decode_ahrspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00459">decode_imupacket()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00100">fixedwing_sim_state::delta_pitch</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00099">fixedwing_sim_state::delta_roll</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00101">fixedwing_sim_state::delta_thrust</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00049">double_quat_of_eulers()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00089">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="nps__fdm_8h_source.html#l00066">NpsFdm::ecef_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00181">ecef_of_enu_vect_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00174">ecef_of_ned_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">ecef_of_ned_vect_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00318">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00379">fetch_state()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00141">gazebo_initialized</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00509">gazebo_read()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00651">gazebo_write()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00189">get_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00255">get_ang_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00237">get_ang_vel()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00296">get_msg()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00221">get_orient()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00154">get_pos()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00170">get_vel()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00101">LtpDef_d::hmsl</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00337">init_gazebo()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00091">NpsFdm::ltp_to_body_quat</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00088">ltpdef</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00098">ltpdef</a>, <a class="el" href="nps__fdm_8h_source.html#l00081">NpsFdm::ltpprz_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00079">NpsFdm::ltpprz_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00054">NpsFdm::ltpprz_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00062">MAX_DELTA</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00073">MAXIMUM_AIRSPEED</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00077">MAXIMUM_POWER</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00184">min_dt</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00142">model</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00086">DoubleRates::p</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00049">PITCH_RESPONSE_FACTOR</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00094">fixedwing_sim_state::pos</a>, <a class="el" href="pprz__isa_8h_source.html#l00056">PPRZ_ISA_GRAVITY</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00379">py_check()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00087">DoubleRates::q</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00088">DoubleRates::r</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00097">fixedwing_sim_state::rates</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00061">ROLL_MAX_SETPOINT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00065">ROLL_RATE_MAX_SETPOINT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00045">ROLL_RESPONSE_FACTOR</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00106">rover_acc</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00104">rover_pos</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00105">rover_vel</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00510">send_servo_cmd()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00095">fixedwing_sim_state::speed</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="low__pass__filter_8h_source.html#l00074">update_first_order_low_pass()</a>, <a class="el" href="discrete__ekf__no__north_8c_source.html#l00034">v2</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00181">vehicle_radius_max</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00057">WEIGHT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00102">fixedwing_sim_state::wind</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00077">EnuCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00078">EnuCoor_d::y</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00053">YAW_RESPONSE_FACTOR</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00079">EnuCoor_d::z</a>.</p>
+<p class="reference">References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00098">fixedwing_sim_state::airspeed</a>, <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00096">fixedwing_sim_state::attitude</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00081">AUTO_THROTTLE_NOMINAL_CRUISE_THROTTLE</a>, <a class="el" href="nps__fdm_8h_source.html#l00098">NpsFdm::body_ecef_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00097">NpsFdm::body_ecef_rotvel</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00073">bullet_fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00867">check_for_nan()</a>, <a class="el" href="eff__scheduling__plusquad_8h_source.html#l00055">COMMAND_PITCH</a>, <a class="el" href="eff__scheduling__plusquad_8h_source.html#l00051">COMMAND_ROLL</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00102">crrcsim</a>, <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00099">_crrcsim::data_buffer</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00445">decode_ahrspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00389">decode_gpspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00464">decode_imupacket()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00100">fixedwing_sim_state::delta_pitch</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00099">fixedwing_sim_state::delta_roll</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00101">fixedwing_sim_state::delta_thrust</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00049">double_quat_of_eulers()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00089">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="nps__fdm_8h_source.html#l00066">NpsFdm::ecef_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00181">ecef_of_enu_vect_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00174">ecef_of_ned_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">ecef_of_ned_vect_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00323">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00384">fetch_state()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00141">gazebo_initialized</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00514">gazebo_read()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00656">gazebo_write()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00193">get_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00256">get_ang_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00241">get_ang_vel()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00301">get_msg()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00224">get_orient()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00158">get_pos()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00174">get_vel()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00101">LtpDef_d::hmsl</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00342">init_gazebo()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00091">NpsFdm::ltp_to_body_quat</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00088">ltpdef</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00098">ltpdef</a>, <a class="el" href="nps__fdm_8h_source.html#l00081">NpsFdm::ltpprz_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00079">NpsFdm::ltpprz_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00054">NpsFdm::ltpprz_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00062">MAX_DELTA</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00073">MAXIMUM_AIRSPEED</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00077">MAXIMUM_POWER</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00184">min_dt</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00142">model</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00086">DoubleRates::p</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00049">PITCH_RESPONSE_FACTOR</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00094">fixedwing_sim_state::pos</a>, <a class="el" href="pprz__isa_8h_source.html#l00056">PPRZ_ISA_GRAVITY</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00379">py_check()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00087">DoubleRates::q</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00088">DoubleRates::r</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00097">fixedwing_sim_state::rates</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00061">ROLL_MAX_SETPOINT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00065">ROLL_RATE_MAX_SETPOINT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00045">ROLL_RESPONSE_FACTOR</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00106">rover_acc</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00104">rover_pos</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00105">rover_vel</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00515">send_servo_cmd()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00095">fixedwing_sim_state::speed</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="low__pass__filter_8h_source.html#l00074">update_first_order_low_pass()</a>, <a class="el" href="discrete__ekf__no__north_8c_source.html#l00034">v2</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00181">vehicle_radius_max</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00057">WEIGHT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00102">fixedwing_sim_state::wind</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00077">EnuCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00078">EnuCoor_d::y</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00053">YAW_RESPONSE_FACTOR</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00079">EnuCoor_d::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nps__fdm__pybullet_8c_source.html#l00089">nps_fdm_init()</a>, and <a class="el" href="nps__main__hitl_8c_source.html#l00068">nps_main_run_sim_step()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nps__fdm__pybullet_8c_source.html#l00110">nps_fdm_run_init_step()</a>, and <a class="el" href="nps__main__hitl_8c_source.html#l00068">nps_main_run_sim_step()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_cgraph.png" border="0" usemap="#anps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_cgraph" alt=""/></div>
 <map name="anps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_cgraph" id="anps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_cgraph">
-<area shape="rect" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="5,869,147,895"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d" title="Checks NpsFdm struct for NaNs." alt="" coords="210,167,326,192"/>
-<area shape="poly" title=" " alt="" coords="75,869,82,744,101,544,116,438,136,339,161,258,176,226,193,202,197,198,200,201,197,205,181,229,166,260,141,341,121,439,106,544,87,744,80,869"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a8321162c08bf2560073a99ea18d5a045" title=" " alt="" coords="195,216,341,241"/>
-<area shape="poly" title=" " alt="" coords="75,869,85,754,106,572,122,476,141,386,165,311,178,282,193,259,207,246,210,250,197,262,183,284,170,313,146,387,127,477,111,573,90,755,81,869"/>
+<area shape="rect" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="5,991,147,1016"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d" title="Checks NpsFdm struct for NaNs." alt="" coords="210,64,326,89"/>
+<area shape="poly" title=" " alt="" coords="75,990,78,832,92,568,106,426,127,295,155,184,173,141,193,107,206,94,210,98,197,110,178,143,160,186,132,296,112,427,97,568,83,832,80,991"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a8321162c08bf2560073a99ea18d5a045" title=" " alt="" coords="195,165,341,191"/>
+<area shape="poly" title=" " alt="" coords="75,991,79,846,94,609,109,482,129,365,157,268,174,229,193,200,195,197,199,201,197,204,178,232,162,269,134,366,114,483,99,609,84,846,80,991"/>
 <area shape="rect" href="group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47" title=" " alt="" coords="405,5,575,31"/>
-<area shape="poly" title=" " alt="" coords="76,869,85,761,107,591,123,502,142,419,165,350,178,324,193,303,211,287,230,279,268,276,305,273,322,265,339,251,357,225,364,199,364,173,361,146,359,120,360,93,368,67,387,40,392,36,396,40,391,44,373,69,365,94,364,120,367,146,369,172,369,199,361,227,343,254,325,270,306,278,268,281,231,284,214,292,197,306,183,326,170,352,147,420,128,503,112,592,91,761,81,869"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title=" " alt="" coords="197,979,339,1004"/>
-<area shape="poly" title=" " alt="" coords="100,892,196,949,233,970,230,974,193,954,97,897"/>
+<area shape="poly" title=" " alt="" coords="75,990,78,838,92,586,106,452,127,327,155,223,173,182,193,151,209,134,227,124,262,117,299,114,319,108,340,98,354,88,363,77,373,66,388,54,432,33,434,38,391,59,377,70,367,81,358,92,343,103,321,113,300,119,263,123,229,129,213,139,197,154,177,185,160,225,132,328,112,453,97,587,83,838,80,991"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title=" " alt="" coords="197,991,339,1016"/>
+<area shape="poly" title=" " alt="" coords="147,1001,183,1001,183,1006,147,1006"/>
 <area shape="rect" href="group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title=" " alt="" coords="415,517,565,543"/>
-<area shape="poly" title=" " alt="" coords="75,869,79,810,94,723,109,676,130,630,157,588,193,553,218,537,245,526,302,512,360,509,412,513,412,518,360,515,303,517,246,531,220,542,196,557,162,592,135,633,114,678,100,725,84,811,80,869"/>
+<area shape="poly" title=" " alt="" coords="76,990,88,903,111,773,127,705,146,643,168,593,193,560,216,543,242,531,297,515,354,511,407,513,406,519,354,516,298,521,244,536,219,548,197,564,173,596,151,645,133,706,117,774,93,904,81,991"/>
 <area shape="rect" href="group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="641,543,792,568"/>
-<area shape="poly" title=" " alt="" coords="74,869,75,804,80,757,89,705,103,652,124,600,154,553,193,513,222,494,253,480,285,469,318,462,387,459,456,465,523,479,584,497,679,535,677,539,583,502,522,484,456,471,387,464,319,468,286,474,255,485,224,499,196,517,158,556,129,603,108,654,94,707,85,758,81,804,79,869"/>
+<area shape="poly" title=" " alt="" coords="74,990,75,923,79,874,87,820,102,764,123,708,153,658,193,615,225,596,270,582,325,571,386,563,514,554,628,552,628,557,514,559,386,568,326,576,271,587,227,601,196,619,157,661,128,711,107,765,93,821,84,875,80,923,79,990"/>
 <area shape="rect" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="412,1085,568,1111"/>
-<area shape="poly" title=" " alt="" coords="87,893,129,951,160,984,196,1013,245,1039,298,1059,350,1074,399,1084,398,1089,349,1079,296,1064,243,1044,193,1018,156,988,125,954,83,896"/>
+<area shape="poly" title=" " alt="" coords="133,1013,420,1080,419,1085,132,1019"/>
 <area shape="rect" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="415,1135,565,1160"/>
-<area shape="poly" title=" " alt="" coords="84,894,96,931,119,982,152,1034,173,1058,196,1078,244,1106,297,1125,351,1137,401,1143,401,1148,350,1142,296,1130,242,1111,193,1083,169,1062,148,1038,114,984,91,933,79,896"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#ac37d179a4a680d5869427c60c0ef8c25" title=" " alt="" coords="196,1283,340,1308"/>
-<area shape="poly" title=" " alt="" coords="80,895,83,960,98,1060,113,1115,133,1170,161,1222,197,1268,202,1273,199,1277,193,1272,156,1225,128,1172,108,1117,93,1061,78,960,75,895"/>
-<area shape="rect" href="group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="639,669,795,695"/>
-<area shape="poly" title=" " alt="" coords="83,868,124,811,156,779,193,753,228,739,274,727,388,708,513,694,624,685,625,690,514,699,389,713,275,733,230,744,196,758,159,783,128,814,87,871"/>
-<area shape="rect" href="group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08" title=" " alt="" coords="412,416,568,441"/>
-<area shape="poly" title=" " alt="" coords="76,869,89,785,113,661,129,597,148,538,169,490,193,459,216,442,242,430,297,414,353,410,406,412,405,417,353,415,298,420,244,434,219,447,197,463,173,493,153,540,134,598,118,662,94,786,82,870"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="217,1332,319,1357"/>
-<area shape="poly" title=" " alt="" coords="79,895,80,967,84,1020,93,1080,107,1143,128,1206,157,1265,197,1318,207,1326,203,1330,193,1321,153,1268,123,1208,102,1144,88,1081,79,1021,75,967,74,895"/>
-<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="221,1233,315,1259"/>
-<area shape="poly" title=" " alt="" coords="81,895,87,952,104,1039,119,1087,139,1135,164,1179,197,1219,210,1229,207,1233,193,1223,160,1182,134,1137,114,1089,99,1041,81,953,75,895"/>
+<area shape="poly" title=" " alt="" coords="99,1014,142,1039,196,1065,249,1084,291,1096,390,1119,425,1129,424,1134,389,1125,290,1101,247,1089,194,1070,140,1044,96,1018"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#ac37d179a4a680d5869427c60c0ef8c25" title=" " alt="" coords="196,1280,340,1305"/>
+<area shape="poly" title=" " alt="" coords="82,1016,92,1063,113,1130,147,1202,169,1236,196,1265,204,1271,200,1275,193,1269,165,1239,142,1205,108,1131,87,1064,77,1017"/>
+<area shape="rect" href="group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="639,771,795,796"/>
+<area shape="poly" title=" " alt="" coords="80,989,94,957,118,913,151,869,171,849,193,832,245,805,301,785,359,771,418,763,530,760,625,766,625,772,530,765,418,769,360,776,303,790,247,809,196,836,174,853,155,872,122,916,99,959,84,992"/>
+<area shape="rect" href="group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08" title=" " alt="" coords="412,619,568,644"/>
+<area shape="poly" title=" " alt="" coords="74,990,77,928,92,836,106,786,127,737,156,692,193,655,218,638,245,626,303,613,361,610,414,614,413,619,361,615,303,618,247,631,220,643,196,659,160,695,132,739,111,788,97,837,83,929,80,991"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands." alt="" coords="217,1329,319,1355"/>
+<area shape="poly" title=" " alt="" coords="81,1016,88,1070,107,1150,122,1194,141,1238,166,1279,197,1315,207,1323,204,1327,193,1319,162,1282,137,1240,117,1196,102,1152,83,1071,76,1016"/>
+<area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step." alt="" coords="221,1231,315,1256"/>
+<area shape="poly" title=" " alt="" coords="83,1015,96,1054,119,1108,152,1166,173,1192,196,1216,210,1225,207,1229,193,1220,169,1196,147,1169,114,1110,91,1056,78,1017"/>
 <area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="436,872,544,897"/>
-<area shape="poly" title=" " alt="" coords="129,892,195,903,268,908,341,903,422,894,423,899,342,909,268,913,194,909,128,897"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Read Gazebo&#39;s simulation state and store the results in the fdm struct used by NPS." alt="" coords="215,317,321,343"/>
-<area shape="poly" title=" " alt="" coords="76,869,83,796,102,680,118,613,137,543,162,474,192,409,214,377,239,351,243,354,218,380,197,411,167,476,142,545,123,614,108,681,89,797,81,869"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe" title="Write actuator commands to Gazebo." alt="" coords="213,1381,323,1407"/>
-<area shape="poly" title=" " alt="" coords="81,895,94,988,117,1130,133,1204,152,1273,173,1329,197,1367,203,1373,200,1377,193,1370,169,1331,147,1274,128,1206,112,1131,88,989,76,895"/>
+<area shape="poly" title=" " alt="" coords="117,988,389,907,423,898,424,903,390,913,119,993"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Read Gazebo&#39;s simulation state and store the results in the fdm struct used by NPS." alt="" coords="215,395,321,420"/>
+<area shape="poly" title=" " alt="" coords="76,990,85,916,106,796,141,653,164,580,192,510,217,466,244,429,249,433,222,469,197,512,169,582,146,655,112,797,91,917,81,991"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe" title="Write actuator commands to Gazebo." alt="" coords="213,1379,323,1404"/>
+<area shape="poly" title=" " alt="" coords="80,1016,85,1078,101,1171,116,1222,136,1273,163,1322,197,1364,203,1370,200,1374,193,1368,158,1325,131,1276,111,1224,96,1172,80,1078,75,1016"/>
 <area shape="rect" href="low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="420,1693,560,1733"/>
-<area shape="poly" title=" " alt="" coords="81,895,92,996,115,1153,130,1235,149,1311,172,1374,197,1416,214,1431,231,1438,268,1441,306,1445,325,1453,343,1468,361,1496,369,1523,370,1550,368,1576,365,1602,366,1628,374,1653,391,1679,409,1693,406,1697,387,1682,369,1655,361,1628,360,1602,362,1575,365,1549,364,1524,357,1498,339,1472,322,1457,305,1450,268,1447,230,1443,211,1435,193,1420,167,1376,144,1313,125,1236,109,1154,87,997,76,895"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176" title=" " alt="" coords="232,568,304,593"/>
-<area shape="poly" title=" " alt="" coords="76,868,86,819,106,748,121,709,140,671,164,634,193,603,217,588,220,593,196,607,168,638,145,673,126,711,111,750,91,820,82,869"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737" title=" " alt="" coords="217,617,319,643"/>
-<area shape="poly" title=" " alt="" coords="78,868,90,827,112,769,146,707,168,677,193,652,203,645,206,649,196,656,172,681,150,709,117,771,95,829,83,870"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#abcd39a610d09098059d3f60e2d88ce36" title=" " alt="" coords="217,667,319,692"/>
-<area shape="poly" title=" " alt="" coords="81,868,121,795,154,750,193,709,214,696,217,700,196,713,158,753,126,797,85,870"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a67337675973f93b9ab3cd01a3e5d2435" title=" " alt="" coords="229,1483,307,1508"/>
-<area shape="poly" title=" " alt="" coords="81,895,91,1003,114,1173,129,1262,149,1345,171,1414,197,1462,218,1478,215,1483,193,1465,166,1416,143,1347,124,1264,108,1174,86,1003,76,895"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ab019172d149e62f3890de381d88c3b7a" title=" " alt="" coords="224,1184,312,1209"/>
-<area shape="poly" title=" " alt="" coords="83,894,94,940,117,1006,150,1081,172,1117,197,1149,228,1175,225,1179,193,1153,167,1120,146,1083,112,1008,89,941,77,895"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#ae10cefa4fa9411b06942fbd7d3abefae" title=" " alt="" coords="231,869,305,895"/>
-<area shape="poly" title=" " alt="" coords="147,879,218,879,218,885,147,885"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#aeb81f930608d444f932802bb71efc1ce" title=" " alt="" coords="449,771,531,796"/>
-<area shape="poly" title=" " alt="" coords="130,867,435,794,436,799,131,872"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921" title=" " alt="" coords="233,768,303,793"/>
-<area shape="poly" title=" " alt="" coords="96,867,193,810,222,797,224,801,196,815,99,872"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Set up a Gazebo server." alt="" coords="219,1532,317,1557"/>
-<area shape="poly" title=" " alt="" coords="81,895,89,1013,109,1200,124,1299,144,1391,168,1466,182,1496,197,1518,209,1528,205,1532,193,1521,177,1498,163,1468,139,1392,119,1300,104,1201,84,1014,75,895"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="203,1581,333,1607"/>
-<area shape="poly" title=" " alt="" coords="80,895,87,1021,106,1223,121,1330,141,1429,166,1511,181,1543,197,1567,201,1571,197,1575,193,1570,176,1546,161,1513,136,1431,116,1331,101,1224,82,1021,75,895"/>
-<area shape="poly" title=" " alt="" coords="322,214,339,201,354,182,360,162,362,122,364,81,371,60,387,40,392,36,396,40,391,44,376,63,369,82,367,122,366,163,358,184,343,205,325,218"/>
-<area shape="rect" href="group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="415,1036,565,1061"/>
-<area shape="poly" title=" " alt="" coords="317,1001,390,1021,426,1030,424,1035,389,1026,316,1007"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="436,921,544,947"/>
-<area shape="poly" title=" " alt="" coords="316,976,389,957,424,948,426,953,390,962,317,981"/>
-<area shape="poly" title=" " alt="" coords="282,977,312,946,339,905,354,862,360,823,358,754,356,720,358,684,367,646,387,605,415,572,448,548,452,552,419,576,392,607,372,648,363,685,361,720,363,753,365,824,359,863,344,907,316,949,286,980"/>
-<area shape="poly" title=" " alt="" coords="292,1002,343,1035,366,1054,391,1070,411,1079,409,1084,388,1075,363,1058,340,1039,290,1007"/>
-<area shape="poly" title=" " alt="" coords="280,1003,322,1060,354,1092,391,1120,406,1127,404,1132,388,1124,351,1096,318,1063,275,1006"/>
-<area shape="rect" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation)." alt="" coords="411,971,569,1011"/>
-<area shape="poly" title=" " alt="" coords="339,989,397,989,397,994,339,994"/>
+<area shape="poly" title=" " alt="" coords="80,1016,82,1085,96,1191,110,1250,131,1309,159,1364,197,1413,214,1428,232,1435,269,1438,306,1442,325,1450,343,1466,362,1493,369,1521,370,1548,368,1575,365,1601,366,1627,374,1653,391,1679,409,1693,406,1697,387,1682,369,1655,361,1628,360,1601,362,1574,365,1548,364,1522,357,1496,339,1469,322,1455,305,1447,268,1443,230,1440,211,1432,193,1417,155,1367,126,1311,105,1251,90,1192,77,1085,74,1016"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176" title=" " alt="" coords="232,215,304,240"/>
+<area shape="poly" title=" " alt="" coords="76,990,86,900,108,750,143,567,165,473,192,381,221,309,251,251,255,253,226,311,197,383,171,474,148,568,113,751,91,901,81,991"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737" title=" " alt="" coords="217,1480,319,1505"/>
+<area shape="poly" title=" " alt="" coords="79,1016,81,1090,85,1145,93,1207,107,1273,128,1339,158,1402,197,1459,211,1471,208,1475,193,1462,153,1405,123,1341,102,1274,88,1208,79,1146,75,1090,74,1016"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#abcd39a610d09098059d3f60e2d88ce36" title=" " alt="" coords="217,1529,319,1555"/>
+<area shape="poly" title=" " alt="" coords="81,1016,93,1113,116,1264,132,1342,151,1415,172,1474,197,1515,207,1524,204,1528,193,1518,168,1477,146,1416,127,1343,111,1264,87,1114,76,1016"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a67337675973f93b9ab3cd01a3e5d2435" title=" " alt="" coords="229,1579,307,1604"/>
+<area shape="poly" title=" " alt="" coords="81,1016,91,1122,113,1287,129,1374,148,1454,171,1520,183,1545,197,1564,217,1579,214,1583,193,1568,179,1548,166,1522,143,1455,124,1375,108,1288,86,1123,76,1017"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ab019172d149e62f3890de381d88c3b7a" title=" " alt="" coords="224,1181,312,1207"/>
+<area shape="poly" title=" " alt="" coords="89,1014,133,1070,196,1137,238,1171,235,1175,193,1141,129,1073,85,1018"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ae10cefa4fa9411b06942fbd7d3abefae" title=" " alt="" coords="231,847,305,872"/>
+<area shape="poly" title=" " alt="" coords="89,988,133,947,193,898,228,876,231,881,196,903,137,951,92,992"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#aeb81f930608d444f932802bb71efc1ce" title=" " alt="" coords="449,720,531,745"/>
+<area shape="poly" title=" " alt="" coords="77,990,86,945,107,882,122,849,141,816,165,787,193,762,222,746,253,734,317,720,381,718,435,721,435,727,380,723,318,726,254,739,224,751,196,767,169,791,146,819,127,851,112,884,92,946,82,991"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921" title=" " alt="" coords="233,669,303,695"/>
+<area shape="poly" title=" " alt="" coords="76,990,86,940,106,866,141,785,164,747,193,712,218,694,222,699,196,716,169,750,146,788,111,868,91,941,82,991"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Set up a Gazebo server." alt="" coords="219,1628,317,1653"/>
+<area shape="poly" title=" " alt="" coords="81,1016,90,1130,110,1310,126,1405,145,1492,169,1565,182,1593,197,1614,209,1624,205,1628,193,1617,178,1595,164,1567,140,1494,121,1406,105,1311,84,1131,75,1017"/>
+<area shape="rect" href="nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="203,1677,333,1703"/>
+<area shape="poly" title=" " alt="" coords="81,1016,88,1138,107,1333,123,1436,143,1531,167,1610,181,1640,197,1663,201,1667,197,1671,193,1666,177,1643,162,1612,137,1532,118,1437,102,1334,83,1139,75,1017"/>
+<area shape="poly" title=" " alt="" coords="309,163,339,144,356,120,362,97,369,72,388,48,409,34,412,38,391,52,374,75,367,98,361,123,343,148,312,168"/>
+<area shape="rect" href="group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="415,987,565,1012"/>
+<area shape="poly" title=" " alt="" coords="339,999,400,998,401,1004,339,1005"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="436,1036,544,1061"/>
+<area shape="poly" title=" " alt="" coords="332,1013,423,1032,422,1038,330,1019"/>
+<area shape="poly" title=" " alt="" coords="277,989,308,943,339,882,351,842,355,805,355,741,354,710,358,677,368,643,387,605,416,572,449,548,452,552,419,576,392,607,373,645,363,678,360,710,360,741,361,806,356,843,344,884,313,946,281,992"/>
+<area shape="poly" title=" " alt="" coords="297,1014,343,1038,366,1055,391,1070,413,1079,411,1084,388,1075,363,1060,340,1043,294,1018"/>
+<area shape="poly" title=" " alt="" coords="281,1015,324,1066,356,1095,391,1120,407,1128,405,1132,388,1124,352,1099,320,1070,277,1018"/>
+<area shape="rect" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation)." alt="" coords="411,922,569,962"/>
+<area shape="poly" title=" " alt="" coords="314,988,403,963,404,968,315,993"/>
 <area shape="poly" title=" " alt="" coords="566,536,628,543,627,548,566,541"/>
-<area shape="poly" title=" " alt="" coords="514,439,552,466,593,503,619,539,641,578,699,656,695,660,636,581,614,542,589,506,549,471,510,444"/>
-<area shape="poly" title=" " alt="" coords="314,1233,340,1219,350,1207,356,1195,362,1170,368,1145,376,1132,388,1120,398,1113,401,1117,391,1124,380,1135,373,1147,367,1171,361,1197,354,1210,343,1223,317,1238"/>
-<area shape="poly" title=" " alt="" coords="314,1231,340,1218,354,1206,363,1194,372,1181,388,1169,402,1162,404,1167,391,1174,376,1185,367,1197,358,1210,343,1223,317,1236"/>
+<area shape="poly" title=" " alt="" coords="512,642,686,760,683,765,509,646"/>
+<area shape="poly" title=" " alt="" coords="314,1231,340,1216,356,1193,362,1169,369,1144,376,1132,388,1120,398,1113,401,1117,391,1124,380,1135,374,1146,367,1170,361,1195,343,1220,317,1235"/>
+<area shape="poly" title=" " alt="" coords="314,1228,340,1216,354,1204,363,1193,373,1181,388,1169,402,1162,404,1167,391,1174,376,1184,367,1196,358,1208,343,1220,316,1233"/>
 <area shape="rect" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title=" " alt="" coords="405,1233,575,1259"/>
-<area shape="poly" title=" " alt="" coords="316,1243,391,1243,391,1249,316,1249"/>
+<area shape="poly" title=" " alt="" coords="316,1241,391,1242,391,1247,316,1247"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct." alt="" coords="425,1283,555,1308"/>
-<area shape="poly" title=" " alt="" coords="316,1254,420,1277,418,1282,315,1259"/>
+<area shape="poly" title=" " alt="" coords="316,1252,422,1277,421,1282,315,1257"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct." alt="" coords="415,1332,565,1357"/>
-<area shape="poly" title=" " alt="" coords="317,1255,343,1268,358,1281,367,1293,376,1306,391,1317,407,1325,405,1330,388,1322,372,1309,363,1297,354,1284,340,1272,314,1260"/>
+<area shape="poly" title=" " alt="" coords="317,1252,343,1265,358,1279,367,1292,376,1305,391,1317,406,1325,404,1330,388,1322,372,1309,363,1295,354,1282,340,1270,314,1257"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct." alt="" coords="419,1381,561,1407"/>
-<area shape="poly" title=" " alt="" coords="317,1253,343,1268,355,1281,361,1294,368,1319,374,1344,380,1355,391,1367,408,1377,405,1382,388,1371,376,1358,369,1346,362,1320,356,1296,350,1284,340,1272,314,1258"/>
+<area shape="poly" title=" " alt="" coords="317,1250,343,1265,355,1278,362,1292,367,1318,373,1343,380,1355,391,1367,408,1377,405,1382,388,1371,376,1358,368,1345,362,1319,357,1294,350,1281,340,1269,314,1255"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct." alt="" coords="421,1431,559,1456"/>
-<area shape="poly" title=" " alt="" coords="317,1252,343,1268,358,1287,365,1307,367,1344,370,1381,377,1399,391,1416,409,1428,406,1433,388,1420,372,1401,365,1382,362,1345,360,1308,353,1290,340,1272,314,1257"/>
+<area shape="poly" title=" " alt="" coords="317,1249,343,1265,358,1285,365,1305,367,1343,370,1381,377,1398,391,1416,409,1428,406,1433,388,1420,372,1401,365,1382,362,1344,360,1306,353,1287,340,1269,314,1254"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA." alt="" coords="389,1480,591,1505"/>
-<area shape="poly" title=" " alt="" coords="317,1252,343,1268,361,1294,368,1319,369,1345,367,1370,365,1394,366,1418,374,1442,391,1466,397,1470,393,1474,387,1469,369,1444,361,1419,360,1394,362,1369,364,1345,363,1320,356,1296,339,1272,314,1256"/>
+<area shape="poly" title=" " alt="" coords="317,1249,331,1256,343,1266,361,1291,369,1317,369,1343,367,1368,365,1393,366,1418,374,1442,391,1466,397,1470,393,1474,387,1469,369,1444,361,1419,360,1393,362,1368,364,1343,363,1318,356,1294,339,1269,328,1260,315,1254"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA." alt="" coords="395,1529,585,1555"/>
-<area shape="poly" title=" " alt="" coords="317,1251,331,1258,343,1268,364,1300,372,1332,371,1364,367,1395,363,1425,362,1455,371,1485,391,1515,396,1520,393,1523,387,1518,366,1487,357,1456,357,1425,362,1394,366,1363,366,1333,359,1302,339,1272,328,1262,314,1256"/>
-<area shape="poly" title=" " alt="" coords="314,1236,328,1229,339,1219,353,1199,363,1180,371,1141,368,1102,361,1063,353,1025,352,986,361,946,372,927,387,907,403,894,422,887,424,892,406,899,391,911,376,929,366,948,357,986,359,1024,366,1062,374,1101,376,1141,368,1181,358,1202,343,1222,331,1233,317,1240"/>
+<area shape="poly" title=" " alt="" coords="317,1248,331,1255,343,1266,364,1298,372,1330,371,1362,367,1393,362,1424,362,1455,371,1485,391,1515,396,1520,393,1523,387,1518,366,1487,357,1455,357,1424,362,1393,366,1362,367,1331,359,1300,339,1269,328,1260,314,1253"/>
+<area shape="poly" title=" " alt="" coords="314,1233,328,1226,339,1216,353,1197,362,1178,370,1139,368,1101,361,1063,354,1025,352,986,362,947,372,928,387,908,403,896,422,888,424,893,406,900,391,912,377,931,367,949,358,987,359,1024,366,1062,374,1100,376,1140,368,1179,358,1199,343,1220,331,1230,317,1238"/>
 <area shape="rect" href="nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH." alt="" coords="427,1579,553,1604"/>
-<area shape="poly" title=" " alt="" coords="317,1251,331,1258,343,1268,367,1307,375,1345,373,1383,367,1420,360,1456,359,1492,367,1528,391,1564,415,1580,412,1585,387,1568,363,1530,353,1493,355,1456,361,1419,368,1382,370,1345,362,1309,339,1272,328,1262,315,1256"/>
-<area shape="poly" title=" " alt="" coords="314,315,328,307,339,296,358,263,365,231,364,199,360,168,355,136,356,104,365,72,387,40,392,36,396,40,391,44,370,75,361,105,361,136,365,167,370,199,371,232,363,265,343,300,331,311,317,320"/>
-<area shape="poly" title=" " alt="" coords="283,341,329,390,391,451,462,507,458,511,388,455,325,394,279,345"/>
-<area shape="poly" title=" " alt="" coords="288,340,333,371,390,401,415,410,413,415,388,406,330,375,285,345"/>
-<area shape="poly" title=" " alt="" coords="277,342,307,431,344,555,352,594,355,627,356,686,363,742,374,772,392,806,420,838,453,863,450,867,416,842,387,809,369,774,358,743,351,686,350,628,346,594,339,556,302,432,272,344"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="431,203,549,228"/>
-<area shape="poly" title=" " alt="" coords="305,315,340,296,354,281,362,267,372,253,388,238,416,225,418,230,391,243,376,256,367,270,358,285,343,300,308,320"/>
-<area shape="rect" href="group__math__isa.html#ga2637c638b53cdee6290f333ad8782fa5" title="Get pressure in Pa from height (using simplified equation)." alt="" coords="411,253,569,293"/>
-<area shape="poly" title=" " alt="" coords="317,315,398,293,400,299,319,320"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a273a7259b9d907e397ed096da0e1cc0e" title=" " alt="" coords="408,317,572,343"/>
-<area shape="poly" title=" " alt="" coords="321,327,394,327,394,333,321,333"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#af73e2ec16397511ee11efda9e53ff92f" title=" " alt="" coords="435,367,545,392"/>
-<area shape="poly" title=" " alt="" coords="321,339,423,362,422,367,320,344"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#ac1f621357ae940c4a47d8ec779745e9a" title=" " alt="" coords="443,55,537,80"/>
-<area shape="poly" title=" " alt="" coords="314,315,339,296,355,270,362,244,363,218,360,193,358,167,360,141,368,115,387,89,406,76,428,68,430,73,409,81,391,93,373,118,365,142,363,167,366,192,368,218,367,245,360,272,343,300,317,319"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a7ed2864a79e068185410657cea697058" title=" " alt="" coords="439,104,541,129"/>
-<area shape="poly" title=" " alt="" coords="312,315,339,296,353,276,359,257,361,217,364,178,372,158,388,139,405,127,425,119,427,124,407,131,391,143,376,161,369,179,366,218,364,258,358,279,343,300,316,319"/>
-<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a3fbc528325ad76afcd5b8ff2bedb1366" title=" " alt="" coords="435,153,545,179"/>
-<area shape="poly" title=" " alt="" coords="310,315,340,296,350,283,356,269,362,242,368,215,375,201,388,188,420,171,423,176,391,192,379,204,373,217,367,243,361,271,355,285,343,300,313,319"/>
+<area shape="poly" title=" " alt="" coords="317,1248,331,1255,343,1266,367,1305,375,1343,374,1381,367,1418,360,1455,358,1492,367,1528,391,1564,415,1580,412,1585,387,1568,362,1530,353,1492,355,1455,361,1417,368,1380,370,1343,362,1307,339,1269,328,1260,315,1253"/>
+<area shape="poly" title=" " alt="" coords="274,393,303,333,339,250,351,206,357,169,365,133,387,92,417,60,451,36,454,40,421,64,392,96,370,135,362,170,357,207,344,252,308,335,278,396"/>
+<area shape="poly" title=" " alt="" coords="283,418,328,460,358,483,391,502,410,511,408,515,388,507,355,487,324,464,280,422"/>
+<area shape="poly" title=" " alt="" coords="281,419,326,479,391,552,460,609,457,613,387,556,322,482,276,422"/>
+<area shape="poly" title=" " alt="" coords="275,419,312,559,347,658,392,755,430,814,469,860,465,864,426,817,387,758,342,660,307,561,270,421"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="431,468,549,493"/>
+<area shape="poly" title=" " alt="" coords="299,418,390,453,421,462,419,467,388,458,297,423"/>
+<area shape="rect" href="group__math__isa.html#ga2637c638b53cdee6290f333ad8782fa5" title="Get pressure in Pa from height (using simplified equation)." alt="" coords="411,157,569,197"/>
+<area shape="poly" title=" " alt="" coords="271,394,285,357,309,307,343,253,364,228,388,207,397,200,400,205,391,211,368,232,347,256,314,309,290,359,276,395"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a273a7259b9d907e397ed096da0e1cc0e" title=" " alt="" coords="408,221,572,247"/>
+<area shape="poly" title=" " alt="" coords="273,393,315,327,348,288,388,256,399,250,402,254,391,260,352,292,319,330,278,396"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#af73e2ec16397511ee11efda9e53ff92f" title=" " alt="" coords="435,271,545,296"/>
+<area shape="poly" title=" " alt="" coords="279,392,324,349,355,325,388,305,421,292,423,297,391,310,358,330,327,353,283,396"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#ac1f621357ae940c4a47d8ec779745e9a" title=" " alt="" coords="443,320,537,345"/>
+<area shape="poly" title=" " alt="" coords="295,392,388,354,429,343,430,348,390,359,297,397"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a7ed2864a79e068185410657cea697058" title=" " alt="" coords="439,369,541,395"/>
+<area shape="poly" title=" " alt="" coords="320,399,425,387,426,392,321,404"/>
+<area shape="rect" href="nps__fdm__gazebo_8cpp.html#a3fbc528325ad76afcd5b8ff2bedb1366" title=" " alt="" coords="435,419,545,444"/>
+<area shape="poly" title=" " alt="" coords="321,410,421,421,421,427,320,416"/>
 <area shape="rect" href="high__pass__filter_8h.html#acad4e38ef946a0babc9d3abc91a79086" title="Update first order high pass filter state with a new value." alt="" coords="420,1629,560,1669"/>
-<area shape="poly" title=" " alt="" coords="316,1405,343,1424,359,1449,367,1474,367,1522,366,1545,367,1568,375,1590,391,1613,409,1627,406,1632,387,1617,370,1593,362,1569,360,1545,362,1522,361,1475,355,1452,339,1428,313,1409"/>
-<area shape="poly" title=" " alt="" coords="317,1404,331,1413,343,1424,363,1458,371,1491,371,1524,366,1555,362,1586,362,1617,371,1648,391,1679,409,1693,406,1697,387,1682,366,1650,357,1617,357,1586,361,1554,365,1523,366,1492,358,1460,339,1428,328,1417,314,1409"/>
-<area shape="poly" title=" " alt="" coords="304,576,627,558,628,563,304,581"/>
-<area shape="rect" href="group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9" title=" " alt="" coords="417,619,563,644"/>
-<area shape="poly" title=" " alt="" coords="305,586,421,613,420,618,303,591"/>
-<area shape="poly" title=" " alt="" coords="320,628,403,628,403,633,320,633"/>
-<area shape="poly" title=" " alt="" coords="319,666,417,644,418,650,320,671"/>
+<area shape="poly" title=" " alt="" coords="316,1402,343,1422,360,1447,367,1472,367,1520,365,1544,367,1567,375,1590,391,1613,409,1627,406,1632,387,1617,370,1592,362,1568,360,1544,361,1520,362,1473,355,1449,339,1425,313,1406"/>
+<area shape="poly" title=" " alt="" coords="317,1402,331,1410,343,1422,363,1456,371,1489,371,1522,366,1554,362,1585,362,1616,371,1647,391,1679,409,1693,406,1697,387,1682,366,1649,357,1617,357,1585,361,1553,365,1522,366,1490,358,1458,339,1425,328,1414,314,1406"/>
+<area shape="poly" title=" " alt="" coords="303,219,323,211,340,200,350,187,356,173,361,145,366,117,374,104,388,92,441,63,467,56,491,53,516,55,541,62,566,74,592,92,618,123,641,171,660,231,677,298,701,431,715,529,710,529,696,431,672,299,655,233,636,173,614,126,589,96,563,79,539,67,515,60,492,58,468,61,443,68,391,96,378,107,371,119,366,146,361,175,355,190,343,204,325,216,305,224"/>
+<area shape="rect" href="group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9" title=" " alt="" coords="417,107,563,132"/>
+<area shape="poly" title=" " alt="" coords="303,217,340,200,354,186,363,172,372,157,388,142,402,135,405,139,391,147,376,160,367,174,358,189,343,204,305,222"/>
 <area shape="rect" href="nps__fdm__crrcsim_8c.html#a468b9af311c0091cb611d96df40e75b7" title=" " alt="" coords="426,1757,554,1783"/>
-<area shape="poly" title=" " alt="" coords="309,1498,327,1505,343,1518,363,1547,370,1576,370,1605,367,1633,364,1661,364,1689,372,1716,391,1743,414,1758,411,1763,387,1747,367,1718,359,1689,358,1661,362,1633,365,1605,365,1577,358,1549,339,1521,325,1510,307,1503"/>
-<area shape="poly" title=" " alt="" coords="313,1204,420,1228,419,1233,312,1209"/>
+<area shape="poly" title=" " alt="" coords="308,1595,327,1602,343,1613,356,1630,364,1647,367,1680,371,1712,378,1728,391,1743,414,1757,412,1761,388,1747,374,1731,366,1714,362,1681,358,1648,352,1633,340,1617,324,1607,307,1600"/>
+<area shape="poly" title=" " alt="" coords="313,1202,422,1228,421,1233,312,1207"/>
 <area shape="rect" href="group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632" title="Composition (multiplication) of two quaternions." alt="" coords="417,1184,563,1209"/>
-<area shape="poly" title=" " alt="" coords="312,1194,403,1194,403,1199,312,1199"/>
-<area shape="poly" title=" " alt="" coords="305,872,467,838,546,819,589,805,622,783,652,756,696,704,700,708,655,760,625,787,592,810,547,824,469,843,306,877"/>
-<area shape="poly" title=" " alt="" coords="305,880,422,881,422,887,305,885"/>
-<area shape="poly" title=" " alt="" coords="301,867,340,848,364,830,388,813,434,795,436,800,391,818,367,834,343,852,303,872"/>
-<area shape="poly" title=" " alt="" coords="303,769,432,725,512,692,589,653,645,614,691,575,694,579,649,618,592,658,514,697,434,730,305,774"/>
-<area shape="poly" title=" " alt="" coords="304,778,435,780,434,785,304,784"/>
+<area shape="poly" title=" " alt="" coords="312,1192,403,1193,403,1198,312,1197"/>
+<area shape="poly" title=" " alt="" coords="304,851,627,796,628,801,305,856"/>
+<area shape="poly" title=" " alt="" coords="305,861,423,874,422,880,305,866"/>
+<area shape="poly" title=" " alt="" coords="290,844,453,750,456,755,293,849"/>
+<area shape="poly" title=" " alt="" coords="304,683,360,686,433,684,512,675,552,666,590,653,620,637,648,617,693,576,697,580,652,622,623,642,592,658,553,671,513,680,433,690,360,691,304,688"/>
+<area shape="poly" title=" " alt="" coords="304,687,436,718,434,723,303,693"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_icgraph.png" border="0" usemap="#anps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_icgraph" alt=""/></div>
 <map name="anps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_icgraph" id="anps__fdm_8h_a4f72ff1c76415e3e41897d762122c5f8_icgraph">
 <area shape="rect" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="503,31,644,56"/>
-<area shape="rect" href="nps__fdm__pybullet_8c.html#a17ec5b69b110d046f9db5b67d2b08779" title="NPS FDM rover init." alt="" coords="312,5,419,31"/>
-<area shape="poly" title=" " alt="" coords="489,36,419,27,420,22,489,30"/>
+<area shape="rect" href="nps__fdm__pybullet_8c.html#ae46f7854ffee8a7e5ea20580d763bf21" title=" " alt="" coords="281,5,450,31"/>
+<area shape="poly" title=" " alt="" coords="489,36,450,31,451,26,489,30"/>
 <area shape="rect" href="nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title=" " alt="" coords="276,55,455,80"/>
 <area shape="poly" title=" " alt="" coords="489,56,455,60,454,54,489,50"/>
 <area shape="rect" href="nps__main__sitl_8c.html#a245c6d75dd48b11ac0047073dc4f818a" title=" " alt="" coords="108,55,228,80"/>
@@ -1022,14 +1078,14 @@ velocity in m/s in NED </td></tr>
 
 <p>Set temperature in degrees Celcius at given height h above MSL. </p>
 
-<p class="definition">Definition at line <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00306">306</a> of file <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html">nps_fdm_fixedwing_sim.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00311">311</a> of file <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html">nps_fdm_fixedwing_sim.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, and <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm_8h_a7ac7e3ef2c6525bef23e27e2f1857ca0_cgraph.png" border="0" usemap="#anps__fdm_8h_a7ac7e3ef2c6525bef23e27e2f1857ca0_cgraph" alt=""/></div>
 <map name="anps__fdm_8h_a7ac7e3ef2c6525bef23e27e2f1857ca0_cgraph" id="anps__fdm_8h_a7ac7e3ef2c6525bef23e27e2f1857ca0_cgraph">
 <area shape="rect" title="Set temperature in degrees Celcius at given height h above MSL." alt="" coords="5,5,199,31"/>
@@ -1074,16 +1130,16 @@ velocity in m/s in NED </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00211">211</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00216">216</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__atmosphere_8c_source.html#l00098">nps_atmosphere_update()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm_8h_ac07a0f8dffd889c21a81979e521a8d97_icgraph.png" border="0" usemap="#anps__fdm_8h_ac07a0f8dffd889c21a81979e521a8d97_icgraph" alt=""/></div>
 <map name="anps__fdm_8h_ac07a0f8dffd889c21a81979e521a8d97_icgraph" id="anps__fdm_8h_ac07a0f8dffd889c21a81979e521a8d97_icgraph">
 <area shape="rect" title=" " alt="" coords="733,5,915,31"/>
@@ -1134,7 +1190,7 @@ velocity in m/s in NED </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00200">200</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00205">205</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
 
 <p class="reference">References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00102">fixedwing_sim_state::wind</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00077">EnuCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00078">EnuCoor_d::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00079">EnuCoor_d::z</a>.</p>
 
@@ -1180,16 +1236,16 @@ velocity in m/s in NED </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00205">205</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00210">210</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00102">fixedwing_sim_state::wind</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00077">EnuCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00078">EnuCoor_d::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00079">EnuCoor_d::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__atmosphere_8c_source.html#l00098">nps_atmosphere_update()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm_8h_a05c90019f11f90f6855e9b0c3224b4a3_icgraph.png" border="0" usemap="#anps__fdm_8h_a05c90019f11f90f6855e9b0c3224b4a3_icgraph" alt=""/></div>
 <map name="anps__fdm_8h_a05c90019f11f90f6855e9b0c3224b4a3_icgraph" id="anps__fdm_8h_a05c90019f11f90f6855e9b0c3224b4a3_icgraph">
 <area shape="rect" title=" " alt="" coords="733,5,908,31"/>
@@ -1231,7 +1287,7 @@ velocity in m/s in NED </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">84</a> of file <a class="el" href="nps__fdm__crrcsim_8c_source.html">nps_fdm_crrcsim.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00862">check_for_nan()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00440">decode_ahrspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00459">decode_imupacket()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00379">fetch_state()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00509">gazebo_read()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00189">get_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00255">get_ang_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00237">get_ang_vel()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00221">get_orient()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00154">get_pos()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00170">get_vel()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_feed_value()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00265">init_ltp()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00259">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00679">init_ltp()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00276">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00225">init_ltp()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00150">nps_fdm_run_step()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00179">nps_flightgear_send()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00115">nps_flightgear_send_fdm()</a>, <a class="el" href="nps__ivy_8c_source.html#l00237">nps_ivy_display()</a>, <a class="el" href="nps__ivy_8c_source.html#l00060">nps_ivy_display_cb()</a>, <a class="el" href="nps__ivy_8c_source.html#l00147">nps_ivy_send_WORLD_ENV_REQ()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00078">nps_main_loop()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__airspeed_8c_source.html#l00063">nps_sensor_airspeed_run_step()</a>, <a class="el" href="nps__sensor__aoa_8c_source.html#l00062">nps_sensor_aoa_run_step()</a>, <a class="el" href="nps__sensor__baro_8c_source.html#l00023">nps_sensor_baro_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00033">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00028">nps_sensor_mag_run_step()</a>, <a class="el" href="nps__sensor__sideslip_8c_source.html#l00063">nps_sensor_sideslip_run_step()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00070">nps_sensor_sonar_run_step()</a>, <a class="el" href="nps__sensor__temperature_8c_source.html#l00028">nps_sensor_temperature_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00235">sim_overwrite_ahrs()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00248">sim_overwrite_ins()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00867">check_for_nan()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00445">decode_ahrspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00389">decode_gpspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00464">decode_imupacket()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00384">fetch_state()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00514">gazebo_read()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00193">get_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00256">get_ang_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00241">get_ang_vel()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00224">get_orient()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00158">get_pos()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00174">get_vel()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_feed_value()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00270">init_ltp()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00264">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00684">init_ltp()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00277">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00230">init_ltp()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00110">nps_fdm_run_init_step()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00155">nps_fdm_run_step()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00179">nps_flightgear_send()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00115">nps_flightgear_send_fdm()</a>, <a class="el" href="nps__ivy_8c_source.html#l00237">nps_ivy_display()</a>, <a class="el" href="nps__ivy_8c_source.html#l00060">nps_ivy_display_cb()</a>, <a class="el" href="nps__ivy_8c_source.html#l00147">nps_ivy_send_WORLD_ENV_REQ()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00078">nps_main_loop()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__airspeed_8c_source.html#l00063">nps_sensor_airspeed_run_step()</a>, <a class="el" href="nps__sensor__aoa_8c_source.html#l00062">nps_sensor_aoa_run_step()</a>, <a class="el" href="nps__sensor__baro_8c_source.html#l00023">nps_sensor_baro_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00033">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00028">nps_sensor_mag_run_step()</a>, <a class="el" href="nps__sensor__sideslip_8c_source.html#l00063">nps_sensor_sideslip_run_step()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00070">nps_sensor_sonar_run_step()</a>, <a class="el" href="nps__sensor__temperature_8c_source.html#l00028">nps_sensor_temperature_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00235">sim_overwrite_ahrs()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00248">sim_overwrite_ins()</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1297,7 @@ velocity in m/s in NED </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__fdm_8h.html">nps_fdm.h</a></li>
-    <li class="footer">Generated on Tue Oct 20 2026 14:54:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 21 2026 08:44:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

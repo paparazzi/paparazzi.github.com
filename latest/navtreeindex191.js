@@ -1,5 +1,12 @@
 var NAVTREEINDEX191 =
 {
+"quaternion__filter_8h.html#a2294ec9c3f03d9e6ff6b25a908755827":[12,0,1,0,2,16,6],
+"quaternion__filter_8h.html#a2e4b0a87fec0e57f227ad29674385263":[12,0,1,0,2,16,7],
+"quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851":[12,0,1,0,2,16,4],
+"quaternion__filter_8h.html#a60c31b495737132e90f7bfaf7633d15c":[12,0,1,0,2,16,0,4],
+"quaternion__filter_8h.html#a7b9d1a30fe1d7eda2aa337fcf77f9296":[12,0,1,0,2,16,0,3],
+"quaternion__filter_8h.html#a94aa6f066586b363233b3c57d16787bc":[12,0,1,0,2,16,0,5],
+"quaternion__filter_8h.html#ab1f87da8c9ae6d8b2affc3d59b80cf32":[12,0,1,0,2,16,1],
 "quaternion__filter_8h.html#ab3d7141abedb4b9fe8229e386b194790":[12,0,1,0,2,16,0,0],
 "quaternion__filter_8h.html#ad7bddd4cbfed689955c16af62e3461e1":[12,0,1,0,2,16,3],
 "quaternion__filter_8h.html#ae43d1bf1a6c2b3f704bbff329d90e00d":[12,0,1,0,2,16,0,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX191 =
 "relative__localization__filter_8c.html":[12,0,1,0,6,59,4],
 "relative__localization__filter_8c.html#a108fcbddebbe46b8fc977d3bae18fe7c":[12,0,1,0,6,59,4,12],
 "relative__localization__filter_8c.html#a2983209cfabe8377b0d8f22acce21d71":[12,0,1,0,6,59,4,9],
-"relative__localization__filter_8c.html#a313809db8d965e559589ee2192d6186b":[12,0,1,0,6,59,4,5],
-"relative__localization__filter_8c.html#a4170cf65809acf0096b66d6cd0e20ab5":[12,0,1,0,6,59,4,7],
-"relative__localization__filter_8c.html#a4beae14bbc7b1505c9cd922aa925b79c":[12,0,1,0,6,59,4,0],
-"relative__localization__filter_8c.html#a534c24ca57c1e8e114cfd57f8d3a6af7":[12,0,1,0,6,59,4,1],
-"relative__localization__filter_8c.html#a5fa5b2f3971dc4bb735fb4ad3691316d":[12,0,1,0,6,59,4,4],
-"relative__localization__filter_8c.html#a6bf17301bb3f93ffb5397bf21d674c38":[12,0,1,0,6,59,4,10],
-"relative__localization__filter_8c.html#a6da4d8bf05d9240f503606d63b6be761":[12,0,1,0,6,59,4,3],
-"relative__localization__filter_8c.html#a86c8cb1d9d4b56230b75b1f5cc0b5de0":[12,0,1,0,6,59,4,11]
+"relative__localization__filter_8c.html#a313809db8d965e559589ee2192d6186b":[12,0,1,0,6,59,4,5]
 };

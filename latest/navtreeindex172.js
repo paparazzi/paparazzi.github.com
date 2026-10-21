@@ -1,5 +1,12 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#AMSYS_AIRSPEED":[2,0,61],
+"paparazzi_messages.html#AMSYS_BARO":[2,0,60],
+"paparazzi_messages.html#AOA":[2,0,64],
+"paparazzi_messages.html#APPROACH_MOVING_TARGET":[2,0,134],
+"paparazzi_messages.html#AP_STATUS":[2,2,11],
+"paparazzi_messages.html#ARDRONE_NAVDATA":[2,0,4],
+"paparazzi_messages.html#ATMOSPHERE_CHARGE":[2,0,113],
 "paparazzi_messages.html#ATTITUDE":[2,0,5],
 "paparazzi_messages.html#AUTOPILOT_VERSION":[2,0,0],
 "paparazzi_messages.html#BARO_ETS":[2,0,52],
@@ -242,12 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#RLFILTER":[2,0,45],
 "paparazzi_messages.html#ROTATING_WING_STATE":[2,0,176],
 "paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,163],
-"paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,51],
-"paparazzi_messages.html#ROTORCRAFT_CMD":[2,0,138],
-"paparazzi_messages.html#ROTORCRAFT_FP":[2,0,142],
-"paparazzi_messages.html#ROTORCRAFT_FP_MIN":[2,0,211],
-"paparazzi_messages.html#ROTORCRAFT_NAV_STATUS":[2,0,154],
-"paparazzi_messages.html#ROTORCRAFT_RADIO_CONTROL":[2,0,155],
-"paparazzi_messages.html#ROTORCRAFT_STATUS":[2,0,225],
-"paparazzi_messages.html#ROTORCRAFT_TUNE_HOVER":[2,0,145]
+"paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,51]
 };

@@ -1,10 +1,10 @@
 var nps__fdm__pybullet_8c =
 [
     [ "_WIDEN", "nps__fdm__pybullet_8c.html#a3274d611b49db0d4a544fa7e168343e6", null ],
+    [ "NPS_PYBULLET_GUI", "nps__fdm__pybullet_8c.html#a6079343379e6d0541053906c22541211", null ],
     [ "NPS_PYBULLET_MODULE", "nps__fdm__pybullet_8c.html#adaab5de039cbd23b90140c1d3c524d24", null ],
     [ "NPS_PYBULLET_URDF", "nps__fdm__pybullet_8c.html#a6c7239563d1ba982bca3fafd27952838", null ],
-    [ "PYBULLET_GUI", "nps__fdm__pybullet_8c.html#ac49a7814440dbf14395c610bdd0eb3ac", null ],
-    [ "PYTHON_EXEC", "nps__fdm__pybullet_8c.html#a4554494e699e4d7d3a6045641145aa93", null ],
+    [ "NPS_PYTHON_EXEC", "nps__fdm__pybullet_8c.html#aac854f6479399f68bb21f2c1b46f7859", null ],
     [ "WIDEN", "nps__fdm__pybullet_8c.html#a91d933cd369a295f1299a8eec2f6ef60", null ],
     [ "get_acc", "nps__fdm__pybullet_8c.html#ae4fab1d405cd73ffbfd1b956e2634176", null ],
     [ "get_ang_acc", "nps__fdm__pybullet_8c.html#aa837c28829ff7a2403298a60da061737", null ],
@@ -14,6 +14,7 @@ var nps__fdm__pybullet_8c =
     [ "get_vel", "nps__fdm__pybullet_8c.html#aa7f03bdb05f7b047d29e119bff70f921", null ],
     [ "init_ltp", "nps__fdm__pybullet_8c.html#a3836be75ba868b34cd08503e2f242ab5", null ],
     [ "nps_fdm_init", "nps__fdm__pybullet_8c.html#a17ec5b69b110d046f9db5b67d2b08779", null ],
+    [ "nps_fdm_run_init_step", "nps__fdm__pybullet_8c.html#ae46f7854ffee8a7e5ea20580d763bf21", null ],
     [ "nps_fdm_run_step", "nps__fdm__pybullet_8c.html#a4f72ff1c76415e3e41897d762122c5f8", null ],
     [ "nps_fdm_set_temperature", "nps__fdm__pybullet_8c.html#a7ac7e3ef2c6525bef23e27e2f1857ca0", null ],
     [ "nps_fdm_set_turbulence", "nps__fdm__pybullet_8c.html#ac07a0f8dffd889c21a81979e521a8d97", null ],

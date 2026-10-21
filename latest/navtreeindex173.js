@@ -1,5 +1,12 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#ROTORCRAFT_CMD":[2,0,138],
+"paparazzi_messages.html#ROTORCRAFT_FP":[2,0,142],
+"paparazzi_messages.html#ROTORCRAFT_FP_MIN":[2,0,211],
+"paparazzi_messages.html#ROTORCRAFT_NAV_STATUS":[2,0,154],
+"paparazzi_messages.html#ROTORCRAFT_RADIO_CONTROL":[2,0,155],
+"paparazzi_messages.html#ROTORCRAFT_STATUS":[2,0,225],
+"paparazzi_messages.html#ROTORCRAFT_TUNE_HOVER":[2,0,145],
 "paparazzi_messages.html#ROVER_STATUS":[2,0,224],
 "paparazzi_messages.html#RSSI":[2,0,25],
 "paparazzi_messages.html#RSSI_COMBINED":[2,0,36],
@@ -242,12 +249,5 @@ var NAVTREEINDEX173 =
 "pca9685__i2c_8c.html#ae94011d14a9fef277872b43f92dac970":[12,0,1,0,6,52,0,29],
 "pca9685__i2c_8c.html#ae9a63233195518604d614f097e3722ab":[12,0,1,0,6,52,0,34],
 "pca9685__i2c_8c.html#aeac1c01cccdbbdd40555bfba64ed08d1":[12,0,1,0,6,52,0,11],
-"pca9685__i2c_8c.html#aec8a9df8e9bb1659bbe79e9abad331c2":[12,0,1,0,6,52,0,21],
-"pca9685__i2c_8c.html#aef170f8765cb2f7edbb06af7856d1c3f":[12,0,1,0,6,52,0,0],
-"pca9685__i2c_8c.html#af0397ff13562f0f43f83514eea8742d4":[12,0,1,0,6,52,0,24],
-"pca9685__i2c_8c.html#af4969c64ec1f33fc084d4044f963b7fe":[12,0,1,0,6,52,0,48],
-"pca9685__i2c_8c.html#af4c63b3b6fd4b94c91eff01fcac9b629":[12,0,1,0,6,52,0,78],
-"pca9685__i2c_8c.html#af6ef172f6560180e21c718e26a9f08b4":[12,0,1,0,6,52,0,51],
-"pca9685__i2c_8c.html#afaa7a02035e3745a7c7e4e215dd8b4c9":[12,0,1,0,6,52,0,36],
-"pca9685__i2c_8c.html#afbd7a907e3c6796a1877f5829d8a4553":[12,0,1,0,6,52,0,80]
+"pca9685__i2c_8c.html#aec8a9df8e9bb1659bbe79e9abad331c2":[12,0,1,0,6,52,0,21]
 };
