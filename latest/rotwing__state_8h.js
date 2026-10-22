@@ -20,6 +20,7 @@ var rotwing__state_8h =
       [ "nav_state", "rotwing__state_8h.html#aeceb95da9b667b6a1f0707071129fc1e", null ],
       [ "ref_model_skew_angle_deg", "rotwing__state_8h.html#a9feb5f16afbb356cfd8c297b089824f6", null ],
       [ "skew_cmd", "rotwing__state_8h.html#a93f10ae2b91085aeec97905137534cb6", null ],
+      [ "skew_sweep", "rotwing__state_8h.html#abbb6b64fc75a2f0da2bfe0f5d797ec51", null ],
       [ "sp_skew_angle_deg", "rotwing__state_8h.html#abad06626db5e5547a6760495a93d65a6", null ],
       [ "state", "rotwing__state_8h.html#a30542483ba57bd35dcf9ae681646c15a", null ]
     ] ],
@@ -30,6 +31,12 @@ var rotwing__state_8h =
       [ "pusher_motor_running", "rotwing__state_8h.html#a9d561351da83d824d390ea4351353421", null ],
       [ "skew_angle_valid", "rotwing__state_8h.html#a676987019a6ee749ec429b405b1c56bc", null ],
       [ "skew_forced", "rotwing__state_8h.html#a98da0e4af7b9d61e22c238acb49ffede", null ]
+    ] ],
+    [ "rotwing_state_t.skew_sweep", "rotwing__state_8h.html#structrotwing__state__t_8skew__sweep", [
+      [ "active", "rotwing__state_8h.html#ac76a5e84e4bdee527e274ea30c680d79", null ],
+      [ "freq", "rotwing__state_8h.html#ab0038f6cab2d16ebdcf2e36d1779d8ba", null ],
+      [ "max_deg", "rotwing__state_8h.html#a1dfd1ae14592bb5b252398a74be1067c", null ],
+      [ "min_deg", "rotwing__state_8h.html#a7bcae1dce70dc908a700ddbe158c53f8", null ]
     ] ],
     [ "ROTWING_QUAD_PREF_PITCH", "rotwing__state_8h.html#a145d4cb1e54adfb1a4651a53b55762ef", null ],
     [ "ROTWING_SKEW_ANGLE_STEP", "rotwing__state_8h.html#ae078da8e946677dc95eb1339de4967a8", null ],

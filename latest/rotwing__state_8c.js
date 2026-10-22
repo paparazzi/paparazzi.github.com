@@ -15,6 +15,9 @@ var rotwing__state_8c =
     [ "ROTWING_RPM_TIMEOUT", "rotwing__state_8c.html#a0645bf23bf04e97cb5c34d86a1f10ffb", null ],
     [ "ROTWING_SKEW_BACK_MARGIN", "rotwing__state_8c.html#a721bfbfbfe57234b4c6260957710aacd", null ],
     [ "ROTWING_SKEW_REF_MODEL_MAX_DIFF", "rotwing__state_8c.html#a0b17bf5895fafec4741262d662ffb695", null ],
+    [ "ROTWING_SKEW_SWEEP_FREQ", "rotwing__state_8c.html#a774454862ec3e04a0f2178ed1abd758d", null ],
+    [ "ROTWING_SKEW_SWEEP_MAX", "rotwing__state_8c.html#a1d7882e295aa5b8a84cd1bac6843eae3", null ],
+    [ "ROTWING_SKEW_SWEEP_MIN", "rotwing__state_8c.html#a8fde57eb5a3fba8cce64948eab0971e2", null ],
     [ "ROTWING_STATE_ACT_FEEDBACK_ID", "rotwing__state_8c.html#ad1391e301d22e94d2f094e91c85630bd", null ],
     [ "ROTWING_STATE_MIN_FW_DIST", "rotwing__state_8c.html#a48210944c38cfada2a41465a4f9359cc", null ],
     [ "ROTWING_TRANSITION_MAX_BANK", "rotwing__state_8c.html#a412b38b56f83ce40114bd059d2d7e30a", null ],
@@ -33,6 +36,7 @@ var rotwing__state_8c =
     [ "rotwing_state_pusher_motor_running", "rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051", null ],
     [ "rotwing_state_set", "rotwing__state_8c.html#aff35d18fe4f20f627b4afe1599d01da4", null ],
     [ "rotwing_state_skew_angle_valid", "rotwing__state_8c.html#a814af6b3f693b1d6b2aac23bd23abecb", null ],
+    [ "rotwing_state_skew_sweep", "rotwing__state_8c.html#a4623f301eed2b8cd5eabcd36acb64e91", null ],
     [ "send_rotating_wing_state", "rotwing__state_8c.html#ab8f72a98676fba24f38387c5a706b612", null ],
     [ "rotwing_state", "rotwing__state_8c.html#ae33fd5787b7c43008cd695534aef71b1", null ],
     [ "rotwing_state_feedback_ev", "rotwing__state_8c.html#adca906a1130565de36ef9e3a6aeee5f8", null ]

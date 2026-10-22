@@ -46,7 +46,7 @@ var spa06_8h =
       [ "tmp_coef_srce", "spa06_8h.html#a5679a4b75b343e2af609e5270281bf21", null ],
       [ "tx_buffer", "spa06_8h.html#ac5878e39a9f5a1e7baa58da202a7f119", null ]
     ] ],
-    [ "spa06_t.__unnamed360__", "spa06_8h.html#unionspa06__t_8____unnamed360____", [
+    [ "spa06_t.__unnamed361__", "spa06_8h.html#unionspa06__t_8____unnamed361____", [
       [ "i2c", "spa06_8h.html#aab36abef0cdebd2f84424ad4d17e286b", null ],
       [ "spi", "spa06_8h.html#a0b0760e072413088ea8460c3b4f43dbe", null ]
     ] ],

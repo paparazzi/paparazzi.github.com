@@ -16,6 +16,7 @@ var rotwing__state_8h_structrotwing__state__t =
     [ "nav_state", "rotwing__state_8h.html#aeceb95da9b667b6a1f0707071129fc1e", null ],
     [ "ref_model_skew_angle_deg", "rotwing__state_8h.html#a9feb5f16afbb356cfd8c297b089824f6", null ],
     [ "skew_cmd", "rotwing__state_8h.html#a93f10ae2b91085aeec97905137534cb6", null ],
+    [ "skew_sweep", "rotwing__state_8h.html#abbb6b64fc75a2f0da2bfe0f5d797ec51", null ],
     [ "sp_skew_angle_deg", "rotwing__state_8h.html#abad06626db5e5547a6760495a93d65a6", null ],
     [ "state", "rotwing__state_8h.html#a30542483ba57bd35dcf9ae681646c15a", null ]
 ];

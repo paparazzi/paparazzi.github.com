@@ -144,6 +144,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:structrotwing__state__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structrotwing__bitmask__t_8____unnamed314____" id="r_structrotwing__bitmask__t_8____unnamed314____"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed314____">rotwing_bitmask_t.__unnamed314__</a></td></tr>
 <tr class="separator:structrotwing__bitmask__t_8____unnamed314____"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structrotwing__state__t_8skew__sweep" id="r_structrotwing__state__t_8skew__sweep"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotwing__state_8h.html#structrotwing__state__t_8skew__sweep">rotwing_state_t.skew_sweep</a></td></tr>
+<tr class="separator:structrotwing__state__t_8skew__sweep"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -249,7 +251,19 @@ value</td>
 </div><div class="memdoc">
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="rotwing__state_8h_source.html#l00061">61</a> of file <a class="el" href="rotwing__state_8h_source.html">rotwing_state.h</a>.</p>
-</div><table class="fieldtable">
+</div><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Collaboration diagram for rotwing_state_t:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structrotwing__state__t__coll__graph.png" border="0" usemap="#arotwing__state__t_coll__map" alt="Collaboration graph"/></div>
+<map name="arotwing__state__t_coll__map" id="arotwing__state__t_coll__map">
+<area shape="rect" title=" " alt="" coords="5,93,128,119"/>
+<area shape="rect" title=" " alt="" coords="37,5,96,31"/>
+<area shape="poly" title=" " alt="" coords="69,45,69,93,64,93,64,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a id="adac223e225bde9e4c133874f7b74a322" name="adac223e225bde9e4c133874f7b74a322"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
@@ -348,6 +362,12 @@ skew_cmd</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="abbb6b64fc75a2f0da2bfe0f5d797ec51" name="abbb6b64fc75a2f0da2bfe0f5d797ec51"></a>struct <a class="el" href="rotwing__state_8h.html#structrotwing__state__t_8skew__sweep">rotwing_state_t.skew_sweep</a></td>
+<td class="fieldname">
+skew_sweep</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="abad06626db5e5547a6760495a93d65a6" name="abad06626db5e5547a6760495a93d65a6"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
 <td class="fieldname">
 sp_skew_angle_deg</td>
@@ -412,6 +432,49 @@ skew_angle_valid: 1</td>
 <a id="a98da0e4af7b9d61e22c238acb49ffede" name="a98da0e4af7b9d61e22c238acb49ffede"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
 <td class="fieldname">
 skew_forced: 1</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structrotwing__state__t_8skew__sweep" id="structrotwing__state__t_8skew__sweep"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structrotwing__state__t_8skew__sweep">&#9670;&#160;</a></span>rotwing_state_t.skew_sweep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct rotwing_state_t.skew_sweep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8h_source.html#l00073">73</a> of file <a class="el" href="rotwing__state_8h_source.html">rotwing_state.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ac76a5e84e4bdee527e274ea30c680d79" name="ac76a5e84e4bdee527e274ea30c680d79"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
+<td class="fieldname">
+active</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab0038f6cab2d16ebdcf2e36d1779d8ba" name="ab0038f6cab2d16ebdcf2e36d1779d8ba"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+freq</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1dfd1ae14592bb5b252398a74be1067c" name="a1dfd1ae14592bb5b252398a74be1067c"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+max_deg</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7bcae1dce70dc908a700ddbe158c53f8" name="a7bcae1dce70dc908a700ddbe158c53f8"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+min_deg</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -492,14 +555,14 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00530">530</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00569">569</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8c_source.html#l00128">float_rmat_transp_vmult()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="state_8h_source.html#l01308">stateGetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00839">stateGetPositionNed_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00244">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00250">VECT3_DOT_PRODUCT</a>, <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_ae046087f644a3e732de4bd9a920dd5d5_cgraph.png" border="0" usemap="#arotwing__state_8h_ae046087f644a3e732de4bd9a920dd5d5_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_ae046087f644a3e732de4bd9a920dd5d5_cgraph" id="arotwing__state_8h_ae046087f644a3e732de4bd9a920dd5d5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,73,169,113"/>
@@ -564,14 +627,14 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00565">565</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00604">604</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="common__nav_8c_source.html#l00039">dist2_to_wp</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00308">get_dist2_to_point()</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="rotwing__state_8c_source.html#l00104">ROTWING_STATE_MIN_FW_DIST</a>, <a class="el" href="rotwing__state_8h_source.html#l00045">ROTWING_STATE_REQUEST_FW</a>, <a class="el" href="rotwing__state_8h_source.html#l00043">ROTWING_STATE_REQUEST_HOVER</a>, <a class="el" href="rotwing__state_8c_source.html#l00524">rotwing_state_set()</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="common__nav_8c_source.html#l00039">dist2_to_wp</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00308">get_dist2_to_point()</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="rotwing__state_8c_source.html#l00104">ROTWING_STATE_MIN_FW_DIST</a>, <a class="el" href="rotwing__state_8h_source.html#l00045">ROTWING_STATE_REQUEST_FW</a>, <a class="el" href="rotwing__state_8h_source.html#l00043">ROTWING_STATE_REQUEST_HOVER</a>, <a class="el" href="rotwing__state_8c_source.html#l00563">rotwing_state_set()</a>, and <a class="el" href="common__nav_8c_source.html#l00044">waypoints</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_ac855fe558b428b1f53aa53c8361ce08f_cgraph.png" border="0" usemap="#arotwing__state_8h_ac855fe558b428b1f53aa53c8361ce08f_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_ac855fe558b428b1f53aa53c8361ce08f_cgraph" id="arotwing__state_8h_ac855fe558b428b1f53aa53c8361ce08f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,123,169,163"/>
@@ -629,16 +692,16 @@ skew_forced: 1</td>
 <p>Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDLE_TIMEOUT time. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if hover motors are idling, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00234">234</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00252">252</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
 <p class="reference">References <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8c_source.html#l00050">ROTWING_QUAD_IDLE_MIN_THRUST</a>, <a class="el" href="rotwing__state_8c_source.html#l00055">ROTWING_QUAD_IDLE_TIMEOUT</a>, and <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00248">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00155">send_rotating_wing_state()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00286">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00169">send_rotating_wing_state()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_cgraph.png" border="0" usemap="#arotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_cgraph" id="arotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_cgraph">
 <area shape="rect" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="5,5,160,45"/>
@@ -646,11 +709,11 @@ skew_forced: 1</td>
 <area shape="poly" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_icgraph.png" border="0" usemap="#arotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_icgraph" alt=""/></div>
 <map name="arotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_icgraph" id="arotwing__state_8h_a6f2548c6bcef89af1eeca92bd4adff79_icgraph">
 <area shape="rect" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="411,63,565,103"/>
@@ -683,16 +746,16 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00490">490</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00529">529</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8c_source.html#l00035">ROTWING_QUAD_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, and <a class="el" href="rotwing__state_8c_source.html#l00152">rotwing_state</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00088">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00089">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8c_source.html#l00035">ROTWING_QUAD_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, and <a class="el" href="rotwing__state_8c_source.html#l00166">rotwing_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">compute_accel_from_speed_sp()</a>, <a class="el" href="oneloop__andi_8c_source.html#l02419">G1G2_oneloop()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00248">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00155">send_rotating_wing_state()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">compute_accel_from_speed_sp()</a>, <a class="el" href="oneloop__andi_8c_source.html#l02419">G1G2_oneloop()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00286">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00169">send_rotating_wing_state()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a193394bc5b357951cc100d7c10f252be_cgraph.png" border="0" usemap="#arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_cgraph" id="arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,160,45"/>
@@ -700,11 +763,11 @@ skew_forced: 1</td>
 <area shape="poly" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
 </map>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph.png" border="0" usemap="#arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph" alt=""/></div>
 <map name="arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph" id="arotwing__state_8h_a193394bc5b357951cc100d7c10f252be_icgraph">
 <area shape="rect" title=" " alt="" coords="1771,183,1925,223"/>
@@ -784,14 +847,14 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00196">196</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00210">210</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotwing__state_8h_source.html#l00077">rotwing_state_t::cruise_airspeed</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="rotwing__state_8h_source.html#l00087">rotwing_state_t::fail_hover_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00088">rotwing_state_t::fail_pusher_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00086">rotwing_state_t::fail_skew_angle</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotwing__state_8h_source.html#l00072">rotwing_state_t::force_skew</a>, <a class="el" href="rotwing__state_8h_source.html#l00076">rotwing_state_t::fw_min_airspeed</a>, <a class="el" href="rotwing__state_8h_source.html#l00065">rotwing_state_t::hover_motors_enabled</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00070">rotwing_state_t::meas_skew_angle_deg</a>, <a class="el" href="rotwing__state_8h_source.html#l00071">rotwing_state_t::meas_skew_angle_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00064">rotwing_state_t::nav_state</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="rotwing__state_8h_source.html#l00069">rotwing_state_t::ref_model_skew_angle_deg</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="rotwing__state_8c_source.html#l00152">rotwing_state</a>, <a class="el" href="rotwing__state_8c_source.html#l00119">ROTWING_STATE_ACT_FEEDBACK_ID</a>, <a class="el" href="rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00150">rotwing_state_feedback_ev</a>, <a class="el" href="rotwing__state_8h_source.html#l00042">ROTWING_STATE_FORCE_HOVER</a>, <a class="el" href="rotwing__state_8c_source.html#l00155">send_rotating_wing_state()</a>, <a class="el" href="rotwing__state_8h_source.html#l00073">rotwing_state_t::skew_cmd</a>, <a class="el" href="rotwing__state_8h_source.html#l00068">rotwing_state_t::sp_skew_angle_deg</a>, and <a class="el" href="rotwing__state_8h_source.html#l00063">rotwing_state_t::state</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::cruise_airspeed</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="rotwing__state_8h_source.html#l00093">rotwing_state_t::fail_hover_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00094">rotwing_state_t::fail_pusher_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00092">rotwing_state_t::fail_skew_angle</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotwing__state_8h_source.html#l00072">rotwing_state_t::force_skew</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::fw_min_airspeed</a>, <a class="el" href="rotwing__state_8h_source.html#l00065">rotwing_state_t::hover_motors_enabled</a>, <a class="el" href="rotwing__state_8h_source.html#l00088">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00089">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00070">rotwing_state_t::meas_skew_angle_deg</a>, <a class="el" href="rotwing__state_8h_source.html#l00071">rotwing_state_t::meas_skew_angle_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00064">rotwing_state_t::nav_state</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="rotwing__state_8h_source.html#l00069">rotwing_state_t::ref_model_skew_angle_deg</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="rotwing__state_8c_source.html#l00117">ROTWING_SKEW_SWEEP_FREQ</a>, <a class="el" href="rotwing__state_8c_source.html#l00113">ROTWING_SKEW_SWEEP_MAX</a>, <a class="el" href="rotwing__state_8c_source.html#l00109">ROTWING_SKEW_SWEEP_MIN</a>, <a class="el" href="rotwing__state_8c_source.html#l00166">rotwing_state</a>, <a class="el" href="rotwing__state_8c_source.html#l00132">ROTWING_STATE_ACT_FEEDBACK_ID</a>, <a class="el" href="rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00163">rotwing_state_feedback_ev</a>, <a class="el" href="rotwing__state_8h_source.html#l00042">ROTWING_STATE_FORCE_HOVER</a>, <a class="el" href="rotwing__state_8c_source.html#l00169">send_rotating_wing_state()</a>, <a class="el" href="rotwing__state_8h_source.html#l00079">rotwing_state_t::skew_cmd</a>, <a class="el" href="rotwing__state_8h.html#abbb6b64fc75a2f0da2bfe0f5d797ec51">rotwing_state_t::skew_sweep</a>, <a class="el" href="rotwing__state_8h_source.html#l00068">rotwing_state_t::sp_skew_angle_deg</a>, and <a class="el" href="rotwing__state_8h_source.html#l00063">rotwing_state_t::state</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a5187c7100a4e54eb7d052892fbafd06e_cgraph.png" border="0" usemap="#arotwing__state_8h_a5187c7100a4e54eb7d052892fbafd06e_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_a5187c7100a4e54eb7d052892fbafd06e_cgraph" id="arotwing__state_8h_a5187c7100a4e54eb7d052892fbafd06e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,80,144,105"/>
@@ -837,40 +900,42 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00248">248</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00286">286</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00508">ACT_FEEDBACK_BOARD_ID</a>, <a class="el" href="stabilization__indi_8c_source.html#l00314">actuators_pprz</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="stabilization_8h_source.html#l00104">Stabilization::att_submode</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="rotwing__state_8h_source.html#l00077">rotwing_state_t::cruise_airspeed</a>, <a class="el" href="rotwing__state_8h_source.html#l00087">rotwing_state_t::fail_hover_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00088">rotwing_state_t::fail_pusher_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00086">rotwing_state_t::fail_skew_angle</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotwing__state_8h_source.html#l00072">rotwing_state_t::force_skew</a>, <a class="el" href="rotwing__state_8h_source.html#l00076">rotwing_state_t::fw_min_airspeed</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00248">gi_unbounded_airspeed_sp</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00064">GUIDANCE_H_MAX_BANK</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00056">GUIDANCE_H_MODE_NONE</a>, <a class="el" href="rotwing__state_8c_source.html#l00126">GUIDANCE_INDI_FWD_CLIMB_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00133">GUIDANCE_INDI_FWD_DESCEND_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00140">GUIDANCE_INDI_QUAD_CLIMB_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00147">GUIDANCE_INDI_QUAD_DESCEND_SPEED</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00388">guidance_set_max_bank_angle()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00392">guidance_set_max_climb_speed()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00397">guidance_set_max_descend_speed()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00383">guidance_set_min_max_airspeed()</a>, <a class="el" href="rotwing__state_8h_source.html#l00065">rotwing_state_t::hover_motors_enabled</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="rotwing__state_8h_source.html#l00079">rotwing_state_t::max_airspeed</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00070">rotwing_state_t::meas_skew_angle_deg</a>, <a class="el" href="rotwing__state_8h_source.html#l00078">rotwing_state_t::min_airspeed</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00105">HorizontalGuidance::mode</a>, <a class="el" href="stabilization_8h_source.html#l00103">Stabilization::mode</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00066">nav_max_deceleration_sp</a>, <a class="el" href="rotwing__state_8h_source.html#l00064">rotwing_state_t::nav_state</a>, <a class="el" href="rotwing__state_8h_source.html#l00069">rotwing_state_t::ref_model_skew_angle_deg</a>, <a class="el" href="rotwing__state_8c_source.html#l00060">ROTWING_FW_SKEW_ANGLE</a>, <a class="el" href="rotwing__state_8c_source.html#l00100">ROTWING_FW_STALL_TIMEOUT</a>, <a class="el" href="rotwing__state_8c_source.html#l00095">ROTWING_MIN_AIRSPEED_SLOPE_START_ANGLE</a>, <a class="el" href="rotwing__state_8c_source.html#l00040">ROTWING_PUSH_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00035">ROTWING_QUAD_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00065">ROTWING_QUAD_SKEW_ANGLE</a>, <a class="el" href="rotwing__state_8h_source.html#l00033">ROTWING_SKEW_ANGLE_STEP</a>, <a class="el" href="rotwing__state_8c_source.html#l00085">ROTWING_SKEW_BACK_MARGIN</a>, <a class="el" href="rotwing__state_8c_source.html#l00152">rotwing_state</a>, <a class="el" href="rotwing__state_8h_source.html#l00044">ROTWING_STATE_FORCE_FW</a>, <a class="el" href="rotwing__state_8h_source.html#l00042">ROTWING_STATE_FORCE_HOVER</a>, <a class="el" href="rotwing__state_8h_source.html#l00046">ROTWING_STATE_FREE</a>, <a class="el" href="rotwing__state_8c_source.html#l00234">rotwing_state_hover_motors_idling()</a>, <a class="el" href="rotwing__state_8c_source.html#l00490">rotwing_state_hover_motors_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00507">rotwing_state_pusher_motor_running()</a>, <a class="el" href="rotwing__state_8h_source.html#l00045">ROTWING_STATE_REQUEST_FW</a>, <a class="el" href="rotwing__state_8h_source.html#l00043">ROTWING_STATE_REQUEST_HOVER</a>, <a class="el" href="rotwing__state_8c_source.html#l00070">ROTWING_TRANSITION_MAX_BANK</a>, <a class="el" href="rotwing__state_8c_source.html#l00075">ROTWING_TRANSITION_MAX_CLIMB_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00080">ROTWING_TRANSITION_MAX_DESCEND_SPEED</a>, <a class="el" href="rotwing__state_8h_source.html#l00073">rotwing_state_t::skew_cmd</a>, <a class="el" href="rotwing__state_8h_source.html#l00068">rotwing_state_t::sp_skew_angle_deg</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8h_source.html#l00047">STABILIZATION_ATT_SUBMODE_FORWARD</a>, <a class="el" href="stabilization_8h_source.html#l00041">STABILIZATION_MODE_ATTITUDE</a>, <a class="el" href="stabilization_8h_source.html#l00038">STABILIZATION_MODE_NONE</a>, <a class="el" href="rotwing__state_8h_source.html#l00063">rotwing_state_t::state</a>, and <a class="el" href="state_8h_source.html#l01604">stateGetAirspeed_f()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00508">ACT_FEEDBACK_BOARD_ID</a>, <a class="el" href="stabilization__indi_8c_source.html#l00314">actuators_pprz</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="stabilization_8h_source.html#l00104">Stabilization::att_submode</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::cruise_airspeed</a>, <a class="el" href="rotwing__state_8h_source.html#l00093">rotwing_state_t::fail_hover_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00094">rotwing_state_t::fail_pusher_motor</a>, <a class="el" href="rotwing__state_8h_source.html#l00092">rotwing_state_t::fail_skew_angle</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="rotwing__state_8h_source.html#l00072">rotwing_state_t::force_skew</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::fw_min_airspeed</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00248">gi_unbounded_airspeed_sp</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00045">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00064">GUIDANCE_H_MAX_BANK</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00056">GUIDANCE_H_MODE_NONE</a>, <a class="el" href="rotwing__state_8c_source.html#l00139">GUIDANCE_INDI_FWD_CLIMB_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00146">GUIDANCE_INDI_FWD_DESCEND_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00153">GUIDANCE_INDI_QUAD_CLIMB_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00160">GUIDANCE_INDI_QUAD_DESCEND_SPEED</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00388">guidance_set_max_bank_angle()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00392">guidance_set_max_climb_speed()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00397">guidance_set_max_descend_speed()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00383">guidance_set_min_max_airspeed()</a>, <a class="el" href="rotwing__state_8h_source.html#l00065">rotwing_state_t::hover_motors_enabled</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="rotwing__state_8h_source.html#l00085">rotwing_state_t::max_airspeed</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rotwing__state_8h_source.html#l00088">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00089">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00070">rotwing_state_t::meas_skew_angle_deg</a>, <a class="el" href="rotwing__state_8h_source.html#l00084">rotwing_state_t::min_airspeed</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00105">HorizontalGuidance::mode</a>, <a class="el" href="stabilization_8h_source.html#l00103">Stabilization::mode</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00066">nav_max_deceleration_sp</a>, <a class="el" href="rotwing__state_8h_source.html#l00064">rotwing_state_t::nav_state</a>, <a class="el" href="rotwing__state_8h_source.html#l00069">rotwing_state_t::ref_model_skew_angle_deg</a>, <a class="el" href="rotwing__state_8c_source.html#l00060">ROTWING_FW_SKEW_ANGLE</a>, <a class="el" href="rotwing__state_8c_source.html#l00100">ROTWING_FW_STALL_TIMEOUT</a>, <a class="el" href="rotwing__state_8c_source.html#l00095">ROTWING_MIN_AIRSPEED_SLOPE_START_ANGLE</a>, <a class="el" href="rotwing__state_8c_source.html#l00040">ROTWING_PUSH_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00035">ROTWING_QUAD_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00065">ROTWING_QUAD_SKEW_ANGLE</a>, <a class="el" href="rotwing__state_8h_source.html#l00033">ROTWING_SKEW_ANGLE_STEP</a>, <a class="el" href="rotwing__state_8c_source.html#l00085">ROTWING_SKEW_BACK_MARGIN</a>, <a class="el" href="rotwing__state_8c_source.html#l00166">rotwing_state</a>, <a class="el" href="rotwing__state_8h_source.html#l00044">ROTWING_STATE_FORCE_FW</a>, <a class="el" href="rotwing__state_8h_source.html#l00042">ROTWING_STATE_FORCE_HOVER</a>, <a class="el" href="rotwing__state_8h_source.html#l00046">ROTWING_STATE_FREE</a>, <a class="el" href="rotwing__state_8c_source.html#l00252">rotwing_state_hover_motors_idling()</a>, <a class="el" href="rotwing__state_8c_source.html#l00529">rotwing_state_hover_motors_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00546">rotwing_state_pusher_motor_running()</a>, <a class="el" href="rotwing__state_8h_source.html#l00045">ROTWING_STATE_REQUEST_FW</a>, <a class="el" href="rotwing__state_8h_source.html#l00043">ROTWING_STATE_REQUEST_HOVER</a>, <a class="el" href="rotwing__state_8c_source.html#l00271">rotwing_state_skew_sweep()</a>, <a class="el" href="rotwing__state_8c_source.html#l00070">ROTWING_TRANSITION_MAX_BANK</a>, <a class="el" href="rotwing__state_8c_source.html#l00075">ROTWING_TRANSITION_MAX_CLIMB_SPEED</a>, <a class="el" href="rotwing__state_8c_source.html#l00080">ROTWING_TRANSITION_MAX_DESCEND_SPEED</a>, <a class="el" href="rotwing__state_8h_source.html#l00079">rotwing_state_t::skew_cmd</a>, <a class="el" href="rotwing__state_8h.html#abbb6b64fc75a2f0da2bfe0f5d797ec51">rotwing_state_t::skew_sweep</a>, <a class="el" href="rotwing__state_8h_source.html#l00068">rotwing_state_t::sp_skew_angle_deg</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8h_source.html#l00047">STABILIZATION_ATT_SUBMODE_FORWARD</a>, <a class="el" href="stabilization_8h_source.html#l00041">STABILIZATION_MODE_ATTITUDE</a>, <a class="el" href="stabilization_8h_source.html#l00038">STABILIZATION_MODE_NONE</a>, <a class="el" href="rotwing__state_8h_source.html#l00063">rotwing_state_t::state</a>, and <a class="el" href="state_8h_source.html#l01604">stateGetAirspeed_f()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_aea48320cf6f1fd18ec0a0046b46c9c73_cgraph.png" border="0" usemap="#arotwing__state_8h_aea48320cf6f1fd18ec0a0046b46c9c73_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_aea48320cf6f1fd18ec0a0046b46c9c73_cgraph" id="arotwing__state_8h_aea48320cf6f1fd18ec0a0046b46c9c73_cgraph">
-<area shape="rect" title=" " alt="" coords="5,253,176,279"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="481,349,626,375"/>
-<area shape="poly" title=" " alt="" coords="92,252,105,209,129,149,147,118,168,88,193,61,223,40,278,13,303,6,328,3,353,5,378,11,431,40,465,70,492,106,513,147,529,190,547,272,554,335,549,336,542,273,524,191,508,149,488,109,461,73,428,44,376,16,352,10,328,8,304,11,280,18,225,44,197,65,172,91,151,121,134,152,110,211,97,254"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a3d68f4cda03f5178fcf94c5e68e38167" title=" " alt="" coords="235,54,418,94"/>
-<area shape="poly" title=" " alt="" coords="97,252,143,182,180,140,222,104,232,98,235,102,226,108,183,144,148,185,101,254"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a49da723a2c45a72ee57117e3d51d1339" title=" " alt="" coords="233,118,420,158"/>
-<area shape="poly" title=" " alt="" coords="105,251,155,210,223,168,238,161,240,166,225,172,158,215,108,255"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#ab700b2702ea7766f8bd9b11d61f48027" title=" " alt="" coords="224,182,429,222"/>
-<area shape="poly" title=" " alt="" coords="138,251,238,223,240,228,139,256"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html#a7ebc56a7fea2d1f9657533ea079ba78d" title=" " alt="" coords="239,246,415,286"/>
-<area shape="poly" title=" " alt="" coords="176,263,225,263,225,269,176,269"/>
-<area shape="rect" href="rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="249,310,404,350"/>
-<area shape="poly" title=" " alt="" coords="139,276,240,304,238,309,138,281"/>
-<area shape="rect" href="rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="249,374,404,414"/>
-<area shape="poly" title=" " alt="" coords="108,277,158,317,225,360,240,366,238,371,223,364,155,321,105,281"/>
-<area shape="rect" href="rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="245,438,408,478"/>
-<area shape="poly" title=" " alt="" coords="101,277,148,347,183,388,226,424,235,429,232,434,222,428,180,392,143,350,97,280"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="253,503,400,528"/>
-<area shape="poly" title=" " alt="" coords="98,278,112,319,138,376,176,437,199,464,226,488,241,497,239,502,222,492,195,468,171,440,133,379,108,321,93,280"/>
-<area shape="poly" title=" " alt="" coords="405,338,467,347,467,352,404,343"/>
-<area shape="poly" title=" " alt="" coords="404,380,467,371,467,377,405,386"/>
-<area shape="poly" title=" " alt="" coords="396,435,428,423,517,379,520,384,430,428,398,440"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="477,503,629,528"/>
-<area shape="poly" title=" " alt="" coords="400,513,464,513,464,518,400,518"/>
+<area shape="rect" title=" " alt="" coords="5,286,176,311"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="481,350,626,375"/>
+<area shape="poly" title=" " alt="" coords="91,285,102,237,125,168,142,132,164,97,190,66,223,40,277,13,303,6,328,3,352,5,377,12,431,40,465,71,492,107,513,148,529,191,547,273,554,336,549,336,542,274,524,192,508,150,488,110,461,74,428,45,375,17,351,10,328,8,304,11,279,18,225,45,194,69,168,100,147,134,130,170,107,238,97,287"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a3d68f4cda03f5178fcf94c5e68e38167" title=" " alt="" coords="235,55,418,95"/>
+<area shape="poly" title=" " alt="" coords="95,285,111,249,139,201,176,149,222,105,231,99,234,103,226,109,180,153,143,203,116,251,100,287"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a49da723a2c45a72ee57117e3d51d1339" title=" " alt="" coords="233,119,420,159"/>
+<area shape="poly" title=" " alt="" coords="100,284,148,229,184,196,223,168,235,162,237,167,225,173,187,201,152,232,104,288"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#ab700b2702ea7766f8bd9b11d61f48027" title=" " alt="" coords="224,183,429,223"/>
+<area shape="poly" title=" " alt="" coords="115,283,223,232,243,225,245,230,225,237,117,288"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a7ebc56a7fea2d1f9657533ea079ba78d" title=" " alt="" coords="239,247,415,287"/>
+<area shape="poly" title=" " alt="" coords="176,284,225,278,225,283,177,290"/>
+<area shape="rect" href="rotwing__state_8c.html#a6f2548c6bcef89af1eeca92bd4adff79" title="Check if hover motors are idling (COMMAND_THRUST &lt; ROTWING_QUAD_IDLE_MIN_THRUST) for ROTWING_QUAD_IDL..." alt="" coords="249,311,404,351"/>
+<area shape="poly" title=" " alt="" coords="177,308,236,316,235,321,176,313"/>
+<area shape="rect" href="rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="249,375,404,415"/>
+<area shape="poly" title=" " alt="" coords="117,309,225,360,245,368,243,373,223,365,115,314"/>
+<area shape="rect" href="rotwing__state_8c.html#a04abf638527dd86dc34ac4081878f051" title=" " alt="" coords="245,439,408,479"/>
+<area shape="poly" title=" " alt="" coords="104,310,152,365,187,397,225,424,237,431,235,435,223,429,184,401,148,369,100,313"/>
+<area shape="rect" href="rotwing__state_8c.html#a4623f301eed2b8cd5eabcd36acb64e91" title="Sweep the skew angle setpoint between skew_sweep.min_deg and skew_sweep.max_deg at skew_sweep...." alt="" coords="251,503,402,543"/>
+<area shape="poly" title=" " alt="" coords="100,310,116,346,143,394,180,445,226,489,240,498,237,502,222,493,176,448,139,397,111,348,95,313"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="253,567,400,593"/>
+<area shape="poly" title=" " alt="" coords="97,311,110,357,134,423,151,458,172,493,197,525,226,553,242,563,239,567,222,557,193,529,168,496,146,461,129,425,105,359,92,312"/>
+<area shape="poly" title=" " alt="" coords="405,339,467,348,467,353,404,344"/>
+<area shape="poly" title=" " alt="" coords="404,381,467,372,467,377,405,386"/>
+<area shape="poly" title=" " alt="" coords="396,436,428,424,517,380,520,384,430,429,398,441"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="477,567,629,593"/>
+<area shape="poly" title=" " alt="" coords="400,577,464,577,464,583,400,583"/>
 </map>
 </div>
 
@@ -892,16 +957,16 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00507">507</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00546">546</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00082">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00083">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8c_source.html#l00040">ROTWING_PUSH_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, and <a class="el" href="rotwing__state_8c_source.html#l00152">rotwing_state</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00088">rotwing_state_t::meas_rpm</a>, <a class="el" href="rotwing__state_8h_source.html#l00089">rotwing_state_t::meas_rpm_time</a>, <a class="el" href="rotwing__state_8c_source.html#l00040">ROTWING_PUSH_MIN_RPM</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, and <a class="el" href="rotwing__state_8c_source.html#l00166">rotwing_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">compute_accel_from_speed_sp()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00248">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00155">send_rotating_wing_state()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">compute_accel_from_speed_sp()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotwing__state_8c_source.html#l00286">rotwing_state_periodic()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00169">send_rotating_wing_state()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a04abf638527dd86dc34ac4081878f051_cgraph.png" border="0" usemap="#arotwing__state_8h_a04abf638527dd86dc34ac4081878f051_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_a04abf638527dd86dc34ac4081878f051_cgraph" id="arotwing__state_8h_a04abf638527dd86dc34ac4081878f051_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,168,45"/>
@@ -909,11 +974,11 @@ skew_forced: 1</td>
 <area shape="poly" title=" " alt="" coords="169,23,202,23,202,28,169,28"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a04abf638527dd86dc34ac4081878f051_icgraph.png" border="0" usemap="#arotwing__state_8h_a04abf638527dd86dc34ac4081878f051_icgraph" alt=""/></div>
 <map name="arotwing__state_8h_a04abf638527dd86dc34ac4081878f051_icgraph" id="arotwing__state_8h_a04abf638527dd86dc34ac4081878f051_icgraph">
 <area shape="rect" title=" " alt="" coords="685,117,848,157"/>
@@ -953,16 +1018,16 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00524">524</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00563">563</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotwing__state_8h_source.html#l00064">rotwing_state_t::nav_state</a>, <a class="el" href="rotwing__state_8c_source.html#l00152">rotwing_state</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
+<p class="reference">References <a class="el" href="rotwing__state_8h_source.html#l00064">rotwing_state_t::nav_state</a>, <a class="el" href="rotwing__state_8c_source.html#l00166">rotwing_state</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00565">rotwing_state_choose_state_by_dist()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00604">rotwing_state_choose_state_by_dist()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_aff35d18fe4f20f627b4afe1599d01da4_icgraph.png" border="0" usemap="#arotwing__state_8h_aff35d18fe4f20f627b4afe1599d01da4_icgraph" alt=""/></div>
 <map name="arotwing__state_8h_aff35d18fe4f20f627b4afe1599d01da4_icgraph" id="arotwing__state_8h_aff35d18fe4f20f627b4afe1599d01da4_icgraph">
 <area shape="rect" title=" " alt="" coords="217,13,356,38"/>
@@ -989,16 +1054,16 @@ skew_forced: 1</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00516">516</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00555">555</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00070">rotwing_state_t::meas_skew_angle_deg</a>, <a class="el" href="rotwing__state_8h_source.html#l00071">rotwing_state_t::meas_skew_angle_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00069">rotwing_state_t::ref_model_skew_angle_deg</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, <a class="el" href="rotwing__state_8c_source.html#l00090">ROTWING_SKEW_REF_MODEL_MAX_DIFF</a>, and <a class="el" href="rotwing__state_8c_source.html#l00152">rotwing_state</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="rotwing__state_8h_source.html#l00070">rotwing_state_t::meas_skew_angle_deg</a>, <a class="el" href="rotwing__state_8h_source.html#l00071">rotwing_state_t::meas_skew_angle_time</a>, <a class="el" href="rotwing__state_8h_source.html#l00069">rotwing_state_t::ref_model_skew_angle_deg</a>, <a class="el" href="rotwing__state_8c_source.html#l00045">ROTWING_RPM_TIMEOUT</a>, <a class="el" href="rotwing__state_8c_source.html#l00090">ROTWING_SKEW_REF_MODEL_MAX_DIFF</a>, and <a class="el" href="rotwing__state_8c_source.html#l00166">rotwing_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00155">send_rotating_wing_state()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rotwing__state_8c_source.html#l00169">send_rotating_wing_state()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_cgraph.png" border="0" usemap="#arotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_cgraph" alt=""/></div>
 <map name="arotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_cgraph" id="arotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,156,45"/>
@@ -1006,11 +1071,11 @@ skew_forced: 1</td>
 <area shape="poly" title=" " alt="" coords="156,23,190,23,190,28,156,28"/>
 </map>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_icgraph.png" border="0" usemap="#arotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_icgraph" alt=""/></div>
 <map name="arotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_icgraph" id="arotwing__state_8h_a814af6b3f693b1d6b2aac23bd23abecb_icgraph">
 <area shape="rect" title=" " alt="" coords="389,5,540,45"/>
@@ -1044,9 +1109,9 @@ skew_forced: 1</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00152">152</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotwing__state_8c_source.html#l00166">166</a> of file <a class="el" href="rotwing__state_8c_source.html">rotwing_state.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l02419">G1G2_oneloop()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01963">oneloop_andi_run()</a>, <a class="el" href="rotwing__state_8c_source.html#l00453">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00490">rotwing_state_hover_motors_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00196">rotwing_state_init()</a>, <a class="el" href="rotwing__state_8c_source.html#l00248">rotwing_state_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00507">rotwing_state_pusher_motor_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00524">rotwing_state_set()</a>, <a class="el" href="rotwing__state_8c_source.html#l00516">rotwing_state_skew_angle_valid()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00155">send_rotating_wing_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oneloop__andi_8c_source.html#l02419">G1G2_oneloop()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00485">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01963">oneloop_andi_run()</a>, <a class="el" href="rotwing__state_8c_source.html#l00492">rotwing_state_feedback_cb()</a>, <a class="el" href="rotwing__state_8c_source.html#l00529">rotwing_state_hover_motors_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00210">rotwing_state_init()</a>, <a class="el" href="rotwing__state_8c_source.html#l00286">rotwing_state_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00546">rotwing_state_pusher_motor_running()</a>, <a class="el" href="rotwing__state_8c_source.html#l00563">rotwing_state_set()</a>, <a class="el" href="rotwing__state_8c_source.html#l00555">rotwing_state_skew_angle_valid()</a>, <a class="el" href="rotwing__state_8c_source.html#l00271">rotwing_state_skew_sweep()</a>, and <a class="el" href="rotwing__state_8c_source.html#l00169">send_rotating_wing_state()</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1121,7 @@ skew_forced: 1</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4af85dec26241e8232a868b2a8878f9e.html">rotwing_drone</a></li><li class="navelem"><a class="el" href="rotwing__state_8h.html">rotwing_state.h</a></li>
-    <li class="footer">Generated on Wed Oct 21 2026 15:42:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 22 2026 07:59:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

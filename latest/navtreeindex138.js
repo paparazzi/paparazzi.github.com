@@ -1,11 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"module__nav_smooth.html":[1,361],
-"module__nav_smooth.html#module_load_example__nav_smooth":[1,361,0],
-"module__nav_smooth.html#module_xml__nav_smooth":[1,361,0,0],
-"module__nav_spiral.html":[1,362],
-"module__nav_spiral.html#configuration__nav_spiral":[1,362,1],
-"module__nav_spiral.html#module_load_example__nav_spiral":[1,362,0],
 "module__nav_spiral.html#module_xml__nav_spiral":[1,362,1,0],
 "module__nav_spiral_3d.html":[1,363],
 "module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,363,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX138 =
 "module__radio_control_sbus.html#functions__radio_control_sbus":[1,390,2],
 "module__radio_control_sbus.html#module_load_example__radio_control_sbus":[1,390,0],
 "module__radio_control_sbus.html#module_xml__radio_control_sbus":[1,390,2,0],
-"module__radio_control_sbus_dual.html":[1,391]
+"module__radio_control_sbus_dual.html":[1,391],
+"module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual":[1,391,1],
+"module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual":[1,391,2],
+"module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,391,0],
+"module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,391,2,0],
+"module__radio_control_spektrum.html":[1,392],
+"module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,392,1]
 };

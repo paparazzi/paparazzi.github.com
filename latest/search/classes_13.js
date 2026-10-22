@@ -36,7 +36,7 @@ var searchData=
   ['spa06_5freg_5fcalib_5fdata_33',['spa06_reg_calib_data',['../spa06_8h.html#structspa06__reg__calib__data',1,'']]],
   ['spa06_5fspi_5ft_34',['spa06_spi_t',['../spa06_8h.html#structspa06__spi__t',1,'']]],
   ['spa06_5ft_35',['spa06_t',['../spa06_8h.html#structspa06__t',1,'']]],
-  ['spa06_5ft_2e_5f_5funnamed360_5f_5f_36',['spa06_t.__unnamed360__',['../spa06_8h.html#unionspa06__t_8____unnamed360____',1,'']]],
+  ['spa06_5ft_2e_5f_5funnamed361_5f_5f_36',['spa06_t.__unnamed361__',['../spa06_8h.html#unionspa06__t_8____unnamed361____',1,'']]],
   ['speedmessage_37',['SpeedMessage',['../actuators__ostrich_8c.html#structSpeedMessage',1,'']]],
   ['speedmessagepayload_38',['SpeedMessagePayload',['../actuators__ostrich_8c.html#structSpeedMessagePayload',1,'']]],
   ['spektrum_5fsat_5ft_39',['spektrum_sat_t',['../spektrum_8h.html#structspektrum__sat__t',1,'']]],

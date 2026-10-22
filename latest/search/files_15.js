@@ -38,7 +38,7 @@ var searchData=
   ['thermal_5fctl_2eh_35',['thermal_ctl.h',['../thermal__ctl_8h.html',1,'']]],
   ['threads_2eh_36',['threads.h',['../threads_8h.html',1,'']]],
   ['threads_5farch_2ec_37',['threads_arch.c',['../sim_2modules_2core_2threads__arch_8c.html',1,'(Global Namespace)'],['../linux_2modules_2core_2threads__arch_8c.html',1,'(Global Namespace)'],['../chibios_2modules_2core_2threads__arch_8c.html',1,'(Global Namespace)']]],
-  ['threads_5farch_2eh_38',['threads_arch.h',['../linux_2modules_2core_2threads__arch_8h.html',1,'(Global Namespace)'],['../sim_2modules_2core_2threads__arch_8h.html',1,'(Global Namespace)'],['../chibios_2modules_2core_2threads__arch_8h.html',1,'(Global Namespace)']]],
+  ['threads_5farch_2eh_38',['threads_arch.h',['../sim_2modules_2core_2threads__arch_8h.html',1,'(Global Namespace)'],['../linux_2modules_2core_2threads__arch_8h.html',1,'(Global Namespace)'],['../chibios_2modules_2core_2threads__arch_8h.html',1,'(Global Namespace)']]],
   ['throttle_5fcurve_2ec_39',['throttle_curve.c',['../throttle__curve_8c.html',1,'']]],
   ['throttle_5fcurve_2eh_40',['throttle_curve.h',['../throttle__curve_8h.html',1,'']]],
   ['time_5fcountdown_2ec_41',['time_countdown.c',['../time__countdown_8c.html',1,'']]],

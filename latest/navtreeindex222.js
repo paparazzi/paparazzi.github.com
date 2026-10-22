@@ -1,5 +1,15 @@
 var NAVTREEINDEX222 =
 {
+"tawaki__v2_80_8h.html#a0d8ddd81e41aff01329c07d725be9b64":[12,0,1,0,1,18,0,3,2,152],
+"tawaki__v2_80_8h.html#a10df201a6a0340fdb61816a617b6bab9":[12,0,1,0,1,18,0,3,2,62],
+"tawaki__v2_80_8h.html#a1102abe6725b0ff8c4c4a248dd46e976":[12,0,1,0,1,18,0,3,2,72],
+"tawaki__v2_80_8h.html#a1307338bc6abca9bbc5a1b217eee257e":[12,0,1,0,1,18,0,3,2,61],
+"tawaki__v2_80_8h.html#a1365ea029b2ef8463ee8c0865b81749b":[12,0,1,0,1,18,0,3,2,37],
+"tawaki__v2_80_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b":[12,0,1,0,1,18,0,3,2,1],
+"tawaki__v2_80_8h.html#a17e208399ce330289bcaef37bd2e9b08":[12,0,1,0,1,18,0,3,2,162],
+"tawaki__v2_80_8h.html#a192437e223012d0a12e92c878e3c2877":[12,0,1,0,1,18,0,3,2,106],
+"tawaki__v2_80_8h.html#a196437f7abc317d1bcf70f3dc4a21b00":[12,0,1,0,1,18,0,3,2,13],
+"tawaki__v2_80_8h.html#a1a657746fc043e286c637302b06024a1":[12,0,1,0,1,18,0,3,2,119],
 "tawaki__v2_80_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5":[12,0,1,0,1,18,0,3,2,161],
 "tawaki__v2_80_8h.html#a22e2edaeffd24afc57074815c42628d7":[12,0,1,0,1,18,0,3,2,65],
 "tawaki__v2_80_8h.html#a2a036c8908b4ead0f335ab1b9ff946a5":[12,0,1,0,1,18,0,3,2,124],
@@ -239,15 +249,5 @@ var NAVTREEINDEX222 =
 "temp__adc_8h.html":[12,0,1,0,6,65,94],
 "temp__adc_8h.html#a266db1bf5ea82dcb94e97eb562c18473":[12,0,1,0,6,65,94,1],
 "temp__adc_8h.html#aba9dac3585319b75a25b61f25e30a3cd":[12,0,1,0,6,65,94,3],
-"temp__adc_8h.html#ac90f8f853caa5cf987dfeda71ae3a44b":[12,0,1,0,6,65,94,0],
-"temp__adc_8h.html#ace8b2170204f3b1ea7d842c4f1e5d1f5":[12,0,1,0,6,65,94,2],
-"temp__adc_8h_source.html":[12,0,1,0,6,65,94],
-"temp__lm75_8c.html":[12,0,1,0,6,44,43],
-"temp__lm75_8c.html#a2f873f2dbc060a9f55de3e124a753bba":[12,0,1,0,6,44,43,2],
-"temp__lm75_8c.html#a4327916d5a9c8446727f20306e83d4b7":[12,0,1,0,6,44,43,5],
-"temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a":[12,0,1,0,6,44,43,3],
-"temp__lm75_8c.html#ab663881f5c5e388a8e102d2dcbbc29eb":[12,0,1,0,6,44,43,0],
-"temp__lm75_8c.html#add8ee3f54d3c981c6b15fbb9608773c6":[12,0,1,0,6,44,43,1],
-"temp__lm75_8c.html#adee2106e71d8f308b57f87cc3a2dbe84":[12,0,1,0,6,44,43,4],
-"temp__lm75_8c.html#af289820de9c9290cb24d527fe95876da":[12,0,1,0,6,44,43,6]
+"temp__adc_8h.html#ac90f8f853caa5cf987dfeda71ae3a44b":[12,0,1,0,6,65,94,0]
 };

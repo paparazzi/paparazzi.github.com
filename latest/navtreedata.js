@@ -294,11 +294,8 @@ var NAVTREE =
       ] ],
       [ "ahrs_vectornav module", "module__ahrs_vectornav.html", [
         [ "Example for airframe file", "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav", null ],
-        [ "Module configuration options", "module__ahrs_vectornav.html#configuration__ahrs_vectornav", [
-          [ "Configure Options", "module__ahrs_vectornav.html#configure", null ]
-        ] ],
+        [ "Module configuration options", "module__ahrs_vectornav.html#configuration__ahrs_vectornav", null ],
         [ "Module functions", "module__ahrs_vectornav.html#functions__ahrs_vectornav", [
-          [ "Event Functions", "module__ahrs_vectornav.html#event_functions", null ],
           [ "Raw ahrs_vectornav.xml file:", "module__ahrs_vectornav.html#module_xml__ahrs_vectornav", null ]
         ] ]
       ] ],
@@ -509,9 +506,7 @@ var NAVTREE =
       ] ],
       [ "cv_undistort_image module", "module__cv_undistort_image.html", [
         [ "Example for airframe file", "module__cv_undistort_image.html#module_load_example__cv_undistort_image", null ],
-        [ "Module configuration options", "module__cv_undistort_image.html#configuration__cv_undistort_image", [
-          [ "Define Options", "module__cv_undistort_image.html#define", null ]
-        ] ],
+        [ "Module configuration options", "module__cv_undistort_image.html#configuration__cv_undistort_image", null ],
         [ "Module functions", "module__cv_undistort_image.html#functions__cv_undistort_image", [
           [ "Raw cv_undistort_image.xml file:", "module__cv_undistort_image.html#module_xml__cv_undistort_image", null ]
         ] ]
@@ -611,8 +606,16 @@ var NAVTREE =
       ] ],
       [ "slcan module", "module__slcan.html", [
         [ "Example for airframe file", "module__slcan.html#module_load_example__slcan", null ],
-        [ "Module configuration options", "module__slcan.html#configuration__slcan", null ],
+        [ "Module configuration options", "module__slcan.html#configuration__slcan", [
+          [ "Configure Options", "module__slcan.html#configure", null ]
+        ] ],
         [ "Module functions", "module__slcan.html#functions__slcan", [
+          [ "Init Functions", "module__slcan.html#init_functions", null ],
+          [ "Event Functions", "module__slcan.html#event_functions", null ]
+        ] ],
+        [ "Files", "module__slcan.html#files", [
+          [ "Header Files", "module__slcan.html#headers", null ],
+          [ "Source Files", "module__slcan.html#sources", null ],
           [ "Raw slcan.xml file:", "module__slcan.html#module_xml__slcan", null ]
         ] ]
       ] ],
@@ -1385,6 +1388,7 @@ var NAVTREE =
       [ "imu_apogee_mpu9150 module", "module__imu_apogee_mpu9150.html", [
         [ "Example for airframe file", "module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150", null ],
         [ "Module configuration options", "module__imu_apogee_mpu9150.html#configuration__imu_apogee_mpu9150", [
+          [ "Airframe file section", "module__imu_apogee_mpu9150.html#af_section", null ],
           [ "Raw imu_apogee_mpu9150.xml file:", "module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150", null ]
         ] ]
       ] ],
@@ -1410,20 +1414,20 @@ var NAVTREE =
       ] ],
       [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
         [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+        [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+          [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-          [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
       ] ],
       [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+          [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+        ] ]
       ] ],
       [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-          [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-        ] ]
+        [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
       ] ],
       [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
         [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
@@ -1561,7 +1565,6 @@ var NAVTREE =
         [ "Example for airframe file", "module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x", null ],
         [ "Module configuration options", "module__imu_pixhawk6x.html#configuration__imu_pixhawk6x", null ],
         [ "Module functions", "module__imu_pixhawk6x.html#functions__imu_pixhawk6x", [
-          [ "Periodic Functions", "module__imu_pixhawk6x.html#periodic_functions", null ],
           [ "Raw imu_pixhawk6x.xml file:", "module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x", null ]
         ] ]
       ] ],
@@ -1705,10 +1708,6 @@ var NAVTREE =
       [ "ins_nps module", "module__ins_nps.html", [
         [ "Example for airframe file", "module__ins_nps.html#module_load_example__ins_nps", null ],
         [ "Module functions", "module__ins_nps.html#functions__ins_nps", [
-          [ "Init Functions", "module__ins_nps.html#init_functions", null ]
-        ] ],
-        [ "Files", "module__ins_nps.html#files", [
-          [ "Source Files", "module__ins_nps.html#sources", null ],
           [ "Raw ins_nps.xml file:", "module__ins_nps.html#module_xml__ins_nps", null ]
         ] ]
       ] ],
@@ -2951,8 +2950,11 @@ var NAVTREE =
       ] ],
       [ "rpm_sensor module", "module__rpm_sensor.html", [
         [ "Example for airframe file", "module__rpm_sensor.html#module_load_example__rpm_sensor", null ],
-        [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],
+        [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", [
+          [ "Define Options", "module__rpm_sensor.html#define", null ]
+        ] ],
         [ "Module functions", "module__rpm_sensor.html#functions__rpm_sensor", [
+          [ "Periodic Functions", "module__rpm_sensor.html#periodic_functions", null ],
           [ "Raw rpm_sensor.xml file:", "module__rpm_sensor.html#module_xml__rpm_sensor", null ]
         ] ]
       ] ],
@@ -3062,11 +3064,8 @@ var NAVTREE =
       ] ],
       [ "stabilization_float_quat module", "module__stabilization_float_quat.html", [
         [ "Example for airframe file", "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat", null ],
-        [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", [
-          [ "Airframe file section", "module__stabilization_float_quat.html#af_section", null ]
-        ] ],
+        [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", null ],
         [ "Module functions", "module__stabilization_float_quat.html#functions__stabilization_float_quat", [
-          [ "Header Files", "module__stabilization_float_quat.html#headers", null ],
           [ "Raw stabilization_float_quat.xml file:", "module__stabilization_float_quat.html#module_xml__stabilization_float_quat", null ]
         ] ]
       ] ],
@@ -4173,14 +4172,14 @@ var NAVTREEINDEX =
 "mcuconf__h7_8h.html#abbf65694b77e40f448e771cbe2f3c8d5",
 "meteo__stick__calib_8c.html#a7b209681fe3e805e9f42ccf225a12e24",
 "mission__common_8h.html#aff4d5f1fc008b07a4b312472ff956f8f",
-"module__airspeed_ads1114.html#module_load_example__airspeed_ads1114",
-"module__collective_tracking_control.html#functions__collective_tracking_control",
-"module__eff_scheduling_rotwing_nb.html#module_xml__eff_scheduling_rotwing_nb",
-"module__guidance_hybrid.html",
-"module__imu_mpu6000.html#module_load_example__imu_mpu6000",
-"module__light_temt.html#module_load_example__light_temt",
-"module__nav_smooth.html",
-"module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual",
+"module__airspeed_amsys.html",
+"module__collective_tracking_control.html#module_xml__collective_tracking_control",
+"module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2",
+"module__guidance_hybrid.html#module_xml__guidance_hybrid",
+"module__imu_mpu6000_hmc5883.html",
+"module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness",
+"module__nav_spiral.html#module_xml__nav_spiral",
+"module__radio_control_spektrum.html#functions__radio_control_spektrum",
 "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets",
 "module__wind_estimation_quadrotor.html",
 "modules_2ins_2ins__arduimu__basic_8c.html#ae31b9398d0a602349add7dff0b46e32e",
@@ -4236,48 +4235,48 @@ var NAVTREEINDEX =
 "rc__intermcu_8c.html#ac9fea4cfb071bc7a85ec2a05ef0a88f3",
 "rotorcraft_2autopilot__static_8h.html",
 "rotorcraft_2navigation_8h.html#a18caecce5b2e553ae943492383483f80",
-"rover_2autopilot__firmware_8c.html#a261bd78437dcd415525d72019aac4a89",
-"rover__guidance__holonomic_8h.html#a357215bdd91bbe359e3ba80f64d54cd9",
-"rtcm3_8h.html#a7bc85dfca5239a73194683e970153cd4",
-"scout__detector_8h.html#a70319ce611b5c1d052be29200c0549a7",
-"sdlogger__spi__direct_8h.html#a87128fdb4e3130609732b402ca3dd8ae",
-"shift__tracking_8c.html#a70afa419018b5180352409013a820116",
-"sim_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567",
-"sonar__adc_8c.html#a43ee7fccac895081bde8343f87fd5f2c",
-"spa06__regs_8h.html#a5588e97dba207580dcccacf1960a29c7",
-"stabilization_8c.html#af997ac8db0c8ededc57d411e8caa47b2",
-"stabilization__andi_8c.html#a9f41ab8275e878689c4b9c5980cf0b6a",
-"stabilization__attitude__heli__indi_8h.html#ac2f617b6cfe85b6903795f5aec94a479",
-"stabilization__attitude__ref__euler__int_8h.html#aae3bc71c17408186daa1e4675c574edf",
-"stabilization__indi__hinf_8c.html#a15c5666501490db38bac78bfc77394d3",
-"structIndiController__int.html#a7d8e27ae27167db72b66069c8cfb2b09",
-"sys__id__chirp_8c.html#a9a8ceb9a469a363cc0e3a937b4053ca7",
-"syslink_8h.html#a0b0438186e94d5d4e59bd5afc7f2649a",
-"target__pos_8h.html#ab89d4d35fb1c6966774ab28146beb47a",
-"tawaki_2chibios_2common_2mcuconf__board_8h.html#aabfa36b9db553bd0fec3aecc3cc9a54a",
-"tawaki_2chibios_2v1_80_2board_8h.html#a45fd509a564bfc24e344e734c5d968b8",
-"tawaki_2chibios_2v1_80_2board_8h.html#ab2be5058d3ae6afd3cb52e6535336e71",
-"tawaki_2chibios_2v1_81_2board_8h.html#a32c10c25f4813e91109c1e17840033c7",
-"tawaki_2chibios_2v1_81_2board_8h.html#a9f5b300e6e033bab62f5726353534127",
-"tawaki_2chibios_2v2_80_2board_8h.html#a23185423e9b769b8baaf4ccf93b67a6f",
-"tawaki_2chibios_2v2_80_2board_8h.html#a937e4961f4db7339a18e7835568e7050",
-"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a15b7522f34798df184f9e8d5024881df",
-"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#ad78cc1c7409d2dbb6ebf63da1b2330cf",
-"tawaki__v2_80_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5",
-"temp__lm75_8c_source.html",
-"tfmini__i2c_8c.html#ad930ea415d470c44863e4eaaa30fef8d",
-"tmotor_2aiof7_2v1_2board_8h.html#a1f9da3076c3c6ee3ae6f128306e77ea1",
-"tmotor_2aiof7_2v1_2board_8h.html#a9fcd6256256a12dbd158366e000f70ff",
-"tmotor_2aiof7_2v1_2mcuconf__board_8h.html#a43b03312203b934df769cffd02f33f63",
-"trigger__ext__hw_8h_source.html",
-"uavcan__allocator_8c.html#a640d5d229f270e5c307ce51951951feb",
-"usb__msd_8c.html#ad3e867c25228372a9d8e064db1ea0241",
-"v4l2_8h.html#a9521e02a6e48a6c071997ff5833f0b3f",
-"viewvideo_8c.html#a5e885fbf76b284dd4286dfcd4512e422",
-"vl53l1x__nonblocking_8c.html#ae15f0a1990480af4669e18523d1b16b0",
-"vn200__serial_8h.html#a56c459f00ed9a2b2bbb660664548caf6",
-"wedgebug_8c.html#a9bcefccd0d7c555eac052989016cdfce",
-"wind__estimator_8h.html#afbf5efe904a027fadf4929a3b5dae9d4"
+"rotwing__state_8h.html#aeceb95da9b667b6a1f0707071129fc1e",
+"rover__guidance__holonomic_8c.html#aa0cd35f1088f9e822fc414e23e02cab6",
+"rtcm3_8h.html#a5ce104bcfd52d3af5446c50211aaa175",
+"scout__detector_8c.html#a518f68a0d34df2f4980bea46b9d90025",
+"sdlogger__spi__direct_8h.html#a3af215165428120de038149f0b0cda6f",
+"shift__tracking_8c.html#a1155f9a7043bccf01b87bfced7aaf073",
+"sim_2modules_2core_2threads__arch_8c.html#a3d0da95d5f58f817dc1b1f3b0c25df8e",
+"softi2c_8c.html#af53603cab17d074df7f2daea8826e423",
+"spa06__regs_8h.html#a310d2565af19b315b3efb4634b512fd0",
+"stabilization_8c.html#ac43c8a65e3b989abe0c91ed52678208c",
+"stabilization__andi_8c.html#a847712a29167807650e44b4f29123df1",
+"stabilization__attitude__heli__indi_8h.html#a359b6b2d09e53607d7d81a8c87d6b843",
+"stabilization__attitude__ref__euler__int_8c.html#aee7d09b1675203f5dc871c83754e06e8",
+"stabilization__indi_8h.html#abf1ef333c752f3f24a26a3efaede5fea",
+"structIndiController__int.html",
+"sys__id__chirp_8c.html#a30a32b86811617f6c4fbd754c01ecbb8",
+"sys__time__arch_8h.html",
+"target__pos_8h.html#a4dc96267d64725e5a1edf6b1c2d0130d",
+"tawaki_2chibios_2common_2mcuconf__board_8h.html#aa4d0e9ccef7e158022e3a468e0c5b2ad",
+"tawaki_2chibios_2v1_80_2board_8h.html#a3f6c0c2e22d72a76b38116852774d637",
+"tawaki_2chibios_2v1_80_2board_8h.html#aaddc843efed03effa9394c3892a74eec",
+"tawaki_2chibios_2v1_81_2board_8h.html#a2ee176d005f836b1190d3e7a265a9bf5",
+"tawaki_2chibios_2v1_81_2board_8h.html#a9b901aa7fa7581beb747a5a7430387f1",
+"tawaki_2chibios_2v2_80_2board_8h.html#a1d43b629119a794b03f4f36641ed800e",
+"tawaki_2chibios_2v2_80_2board_8h.html#a8d882bb038704714a229e5e85973ca64",
+"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#a1137b4ef73d3fb66dd2acdf9298d4ca1",
+"tawaki_2chibios_2v2_80_2mcuconf__board_8h.html#ad17e6352c60b353c227df389fc5e36b4",
+"tawaki__v2_80_8h.html#a0d8ddd81e41aff01329c07d725be9b64",
+"temp__adc_8h.html#ace8b2170204f3b1ea7d842c4f1e5d1f5",
+"tfmini__i2c_8c.html#a9f953aca5b7876f07380ea3ef1ab6700",
+"tmotor_2aiof7_2v1_2board_8h.html#a196f459528962e6fa3c6e010f283f9a0",
+"tmotor_2aiof7_2v1_2board_8h.html#a9b7ed8541f68c88983e575dc1dbfaf7d",
+"tmotor_2aiof7_2v1_2mcuconf__board_8h.html#a4026ae95617bb7ee1cbc32248e97e263",
+"trigger__ext_8h.html#a1df0777ed6e2d929b0b2d3dd6a5cd088",
+"uavcan_8h.html#structuavcan__iface__t",
+"usb__msd_8c.html#ab6164a7d5f81211ce8d98b6a731b4f69",
+"v4l2_8h.html#a3798643b3e99cd32ef724fc928d92e51",
+"video__usb__logger_8h.html",
+"vl53l1x__nonblocking_8c.html",
+"vn200__serial_8h.html#a24b224a49bd0dcd2964e9c67b805c7d6",
+"wedgebug_8c.html#a8b77f181168b74c8cc817869442f734b",
+"wind__estimator_8h.html#a76abfd1db477f1492273deec4c8233ad"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
