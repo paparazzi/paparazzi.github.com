@@ -41,5 +41,8 @@ var ins__ext__pose_8h =
     [ "ins_ext_pose_log_header", "ins__ext__pose_8h.html#a8391d76c95bead8de1850ad7d0ab8923", null ],
     [ "ins_ext_pose_msg_update", "ins__ext__pose_8h.html#a2cf4c08743ac4888adb7cc158cc97f72", null ],
     [ "ins_ext_pose_run", "ins__ext__pose_8h.html#aa0bf8e8aad184e5324c34d15f376f2bb", null ],
-    [ "ekf_X", "ins__ext__pose_8h.html#af512dca93cddf65563fb8b6cfa01b5bf", null ]
+    [ "ekf_X", "ins__ext__pose_8h.html#af512dca93cddf65563fb8b6cfa01b5bf", null ],
+    [ "ins_ext_pose_gate_psi", "ins__ext__pose_8h.html#accc537cb679962dd405f573608105ffd", null ],
+    [ "ins_ext_pose_gate_tilt", "ins__ext__pose_8h.html#a1b690908ae4a81ad2a0fe268b6a6820c", null ],
+    [ "ins_ext_pose_max_age", "ins__ext__pose_8h.html#a426c1336f00958967ed78303643ab4b4", null ]
 ];

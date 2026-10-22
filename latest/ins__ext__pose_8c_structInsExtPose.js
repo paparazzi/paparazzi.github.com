@@ -1,18 +1,29 @@
 var ins__ext__pose_8c_structInsExtPose =
 [
     [ "accels_f", "ins__ext__pose_8c.html#a53e938191ccc257deb4db3ee8b24bdea", null ],
+    [ "age_ok_time", "ins__ext__pose_8c.html#a795bd46e4e58cb5e5d489baba0b15c6b", null ],
+    [ "delay_min", "ins__ext__pose_8c.html#a6dde78ded59a34f47d5b88e0a5384265", null ],
+    [ "delay_ref", "ins__ext__pose_8c.html#af71cc6127715b05817459b6cca205edf", null ],
+    [ "ev_age", "ins__ext__pose_8c.html#aa424e283d283a3d91ecae5b3c2a2ffce", null ],
     [ "ev_att", "ins__ext__pose_8c.html#a12c4351998b6c6e8d618b37dc8a8e88c", null ],
     [ "ev_pos", "ins__ext__pose_8c.html#a75ba216d3aaba797cd7606438925bcbf", null ],
     [ "ev_quat", "ins__ext__pose_8c.html#a5205a9d6e3d02bcf6537c935274ec119", null ],
     [ "ev_time", "ins__ext__pose_8c.html#aa6b0b1f6668eb214ae3a020537b47e01", null ],
     [ "ev_vel", "ins__ext__pose_8c.html#a2adfce36c06c1fea873b59cf6fa9832b", null ],
+    [ "gate_cnt", "ins__ext__pose_8c.html#ade7891b14a895cf26a75f5771c630cb3", null ],
     [ "gyros_f", "ins__ext__pose_8c.html#a12a73772cda1fd446f486dec01d6a332", null ],
     [ "has_new_acc", "ins__ext__pose_8c.html#a827a761be1c7373f6f713613801291bc", null ],
     [ "has_new_ext_pose", "ins__ext__pose_8c.html#a701f378a5a197abc8c253271495607ad", null ],
     [ "has_new_gyro", "ins__ext__pose_8c.html#a5c44c70b3481b688a0a6c6ae393eb000", null ],
+    [ "last_fused", "ins__ext__pose_8c.html#afa8aa935d1ae8448d52a9cb9dbe91cc2", null ],
     [ "ltp_accel", "ins__ext__pose_8c.html#a75f08b78869192194d8cb861cec6a9e9", null ],
     [ "ltp_def", "ins__ext__pose_8c.html#a40a5b9b5ef8e8b4302897baf231e2322", null ],
     [ "ltp_pos", "ins__ext__pose_8c.html#a522f7f5b8f7ef554e889d5c56ede01dd", null ],
     [ "ltp_speed", "ins__ext__pose_8c.html#a666021a6b462263e23141aa70189771f", null ],
-    [ "started", "ins__ext__pose_8c.html#a732aa78ce66bb6bcc1bd2dfc41b83a14", null ]
+    [ "nb_gated", "ins__ext__pose_8c.html#a64f5203a29337a7eb4fd01040670e257", null ],
+    [ "nb_reset", "ins__ext__pose_8c.html#aa5b194dc4fefe7c2d1719592b375e859", null ],
+    [ "nb_stale", "ins__ext__pose_8c.html#ab89864228e3806e212661001c74369bb", null ],
+    [ "started", "ins__ext__pose_8c.html#a732aa78ce66bb6bcc1bd2dfc41b83a14", null ],
+    [ "ts_last", "ins__ext__pose_8c.html#ae470e2baa834d1488b3bf65a96e48459", null ],
+    [ "ts_valid", "ins__ext__pose_8c.html#ab75dddbbbfccd92d6742ef2c228fa3b2", null ]
 ];
