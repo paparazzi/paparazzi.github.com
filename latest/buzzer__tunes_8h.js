@@ -14,6 +14,7 @@ var buzzer__tunes_8h =
       [ "BUZZER_TUNES_FUR_ELISE", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a8381ce05059dd5a4d372719da228dd54", null ],
       [ "BUZZER_TUNES_LA_CUCARACHA", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1af48f6c71e3316a84c4e1a8381323c19a", null ],
       [ "BUZZER_TUNES_WILLIAM_TELL", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1aabf8d32e3237fb6a43bd71f67577cc95", null ],
+      [ "BUZZER_TUNES_STAR", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a464ed9f1c4a0a7ff5c7e3c6b1f3fd779", null ],
       [ "BUZZER_TUNES_CUSTOM_1", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a0f4a3c35085eeb0509b05bfd5bcda2d2", null ],
       [ "BUZZER_TUNES_CUSTOM_2", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a3600ef54f0cac878a36b9c57c91e387f", null ],
       [ "BUZZER_TUNES_CUSTOM_3", "buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a8e4d729642690e1063148c1ff3e761b9", null ],
@@ -22,5 +23,7 @@ var buzzer__tunes_8h =
     [ "buzzer_tunes_init", "buzzer__tunes_8h.html#a2dd81885bb3156d732ddbcf8448080ed", null ],
     [ "buzzer_tunes_periodic", "buzzer__tunes_8h.html#a799f4657982f3455c89b3589f34dbd8c", null ],
     [ "buzzer_tunes_play", "buzzer__tunes_8h.html#ac39106c3cef4271ffdf4df15f2b89b06", null ],
+    [ "buzzer_tunes_set_events", "buzzer__tunes_8h.html#a4e39f400c22360546b550c551e621293", null ],
+    [ "buzzer_tunes_events_on", "buzzer__tunes_8h.html#ade87d18ae8d29c4785931f704872e41f", null ],
     [ "buzzer_tunes_tune", "buzzer__tunes_8h.html#a9b10e6fb1e9dbca04a494cce27347ff7", null ]
 ];

@@ -127,7 +127,8 @@ var searchData=
   ['buzzer_5ftunes_5fnb_124',['BUZZER_TUNES_NB',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1adeb50bff62cc32e120deddc84262eebe',1,'buzzer_tunes.h']]],
   ['buzzer_5ftunes_5fnone_125',['BUZZER_TUNES_NONE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1adad286fd41972c497c9b857164736fab',1,'buzzer_tunes.h']]],
   ['buzzer_5ftunes_5fode_5fto_5fjoy_126',['BUZZER_TUNES_ODE_TO_JOY',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a97bccfbadfe483434fe61557dacb9397',1,'buzzer_tunes.h']]],
-  ['buzzer_5ftunes_5fstartup_127',['BUZZER_TUNES_STARTUP',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a1dc58dae0fe6e4b8593aa1243b60c416',1,'buzzer_tunes.h']]],
-  ['buzzer_5ftunes_5ftwinkle_128',['BUZZER_TUNES_TWINKLE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a04276f43b8a79eb6d7621e2d2700fe5f',1,'buzzer_tunes.h']]],
-  ['buzzer_5ftunes_5fwilliam_5ftell_129',['BUZZER_TUNES_WILLIAM_TELL',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1aabf8d32e3237fb6a43bd71f67577cc95',1,'buzzer_tunes.h']]]
+  ['buzzer_5ftunes_5fstar_127',['BUZZER_TUNES_STAR',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a464ed9f1c4a0a7ff5c7e3c6b1f3fd779',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fstartup_128',['BUZZER_TUNES_STARTUP',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a1dc58dae0fe6e4b8593aa1243b60c416',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5ftwinkle_129',['BUZZER_TUNES_TWINKLE',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1a04276f43b8a79eb6d7621e2d2700fe5f',1,'buzzer_tunes.h']]],
+  ['buzzer_5ftunes_5fwilliam_5ftell_130',['BUZZER_TUNES_WILLIAM_TELL',['../buzzer__tunes_8h.html#a4a8fc338fcfad45869def0acb4854af1aabf8d32e3237fb6a43bd71f67577cc95',1,'buzzer_tunes.h']]]
 ];

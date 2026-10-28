@@ -4,6 +4,7 @@ var light__scheduler_8h =
     [ "LIGHT_SCHEDULER_MODE_COLOR", "light__scheduler_8h.html#aa6bd4e3b12353898ea60d235d337aa72", null ],
     [ "LIGHT_SCHEDULER_MODE_OFF", "light__scheduler_8h.html#ae77257d6d5644a6e6346d0dc922fd0ca", null ],
     [ "LIGHT_SCHEDULER_MODE_RAINBOW", "light__scheduler_8h.html#aeb604dffdf8f72de3cfc56d5429bbb48", null ],
+    [ "LIGHT_SCHEDULER_MODE_SPARKLE", "light__scheduler_8h.html#a3a245a4b76916e36fc2dc366d5829373", null ],
     [ "light_scheduler_color_t", "light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889ede", [
       [ "LIGHT_SCHEDULER_COLOR_CUSTOM", "light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeaca3879327980b1b9f5506b8b41933519", null ],
       [ "LIGHT_SCHEDULER_COLOR_RED", "light__scheduler_8h.html#a4c0ab0c7b2b93057e9b98b0942889edeae040600eda29ec61bc1cfe883bf2fe38", null ],
