@@ -1,5 +1,6 @@
 var NAVTREEINDEX206 =
 {
+"stabilization__attitude__heli__indi_8c.html":[12,0,1,0,3,2,2,11],
 "stabilization__attitude__heli__indi_8c.html#a055bff9f4492ff52cf997e51d22a427b":[12,0,1,0,3,2,2,11,16],
 "stabilization__attitude__heli__indi_8c.html#a05bb204a4d2a9154f5a62904bb921278":[12,0,1,0,3,2,2,11,34],
 "stabilization__attitude__heli__indi_8c.html#a08849596f1ed44740256f2f07c988f9d":[12,0,1,0,3,2,2,11,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX206 =
 "stabilization__attitude__rc__setpoint_8h.html#a84b561a8916a49b8f6592cb49b1caa27":[12,0,1,0,3,2,2,26,4],
 "stabilization__attitude__rc__setpoint_8h.html#a8997c8f73cb1b9c51cc53588f19a0322":[12,0,1,0,3,2,2,26,5],
 "stabilization__attitude__rc__setpoint_8h.html#a9087765531886001b5fb7845d02fbb30":[12,0,1,0,3,2,2,26,6],
-"stabilization__attitude__rc__setpoint_8h.html#aa6a40687e9e9bb356a7c1f8492683b7c":[12,0,1,0,3,2,2,26,0,0],
-"stabilization__attitude__rc__setpoint_8h.html#ab7bf04727380ab51b2649aab80fd4459":[12,0,1,0,3,2,2,26,8]
+"stabilization__attitude__rc__setpoint_8h.html#aa6a40687e9e9bb356a7c1f8492683b7c":[12,0,1,0,3,2,2,26,0,0]
 };

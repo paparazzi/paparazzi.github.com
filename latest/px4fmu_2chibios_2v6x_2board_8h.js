@@ -163,6 +163,7 @@ var px4fmu_2chibios_2v6x_2board_8h =
     [ "BOARD_GROUP_FOREACH", "px4fmu_2chibios_2v6x_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b", null ],
     [ "BOARD_NAME", "px4fmu_2chibios_2v6x_2board_8h.html#a02581754b212d533d96cde56c8145c9b", null ],
     [ "BOARD_PX4FMU_6X", "px4fmu_2chibios_2v6x_2board_8h.html#ab10369f9eb7586b56e87be0708e1dade", null ],
+    [ "BOARD_SYSCFG_PMCR_CLEAR", "px4fmu_2chibios_2v6x_2board_8h.html#a8d2ffce6293aac95c18284bd33973408", null ],
     [ "ENERGY_SAVE_INPUTS", "px4fmu_2chibios_2v6x_2board_8h.html#a6c611bd6ef7b4218d8a8d53a958e0a97", null ],
     [ "ENERGY_SAVE_INPUTS_SIZE", "px4fmu_2chibios_2v6x_2board_8h.html#ad20a0f56de0d7124dd77defff219421a", null ],
     [ "ENERGY_SAVE_LOWS", "px4fmu_2chibios_2v6x_2board_8h.html#a7225d35f6ce3ca00c4ee49aa78011ca6", null ],

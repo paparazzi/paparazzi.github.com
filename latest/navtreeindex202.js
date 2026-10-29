@@ -1,5 +1,6 @@
 var NAVTREEINDEX202 =
 {
+"snake__gate__detection_8h.html#a7c3f2acb2b8c9777e9989566853e25d2":[12,0,1,0,6,12,35,0,0],
 "snake__gate__detection_8h.html#a8445b2979324e0950a0d1e41423dad2e":[12,0,1,0,6,12,35,0,3],
 "snake__gate__detection_8h.html#a90a0f78cf0f8818dab080e7730206fe7":[12,0,1,0,6,12,35,0,5],
 "snake__gate__detection_8h.html#aa1c88ef00b5577d170eeb4188e3511e6":[12,0,1,0,6,12,35,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX202 =
 "spa06_8h.html#a33392246ffebd7723b89f765059ff4d9":[12,0,1,0,7,134,2,6],
 "spa06_8h.html#a376b55b333bb58067f1210e40296b8bd":[12,0,1,0,7,134,3,10],
 "spa06_8h.html#a3f538f4688e3aa2aaa0a8f8512200083":[12,0,1,0,7,134,3,14],
-"spa06_8h.html#a42dcdb83fa5ad9fcde616f83aef90569":[12,0,1,0,7,134,9],
-"spa06_8h.html#a4a93d15f3fab73ea7e8c2ce9c5455d9d":[12,0,1,0,7,134,8]
+"spa06_8h.html#a42dcdb83fa5ad9fcde616f83aef90569":[12,0,1,0,7,134,9]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX198 =
 {
+"sbus__dual_8h.html#a2c10b51827e5f39514845fc9e878a2b6":[12,0,1,0,6,57,20,0],
 "sbus__dual_8h.html#aed87c6cc1dea1c07bf450996279c1533":[12,0,1,0,6,57,20,1],
 "sbus__dual_8h_source.html":[12,0,1,0,6,57,20],
 "sc18i600_8c.html":[12,0,1,0,7,129],
@@ -248,6 +249,5 @@ var NAVTREEINDEX198 =
 "sdlog__chibios_8c.html#ac0a932cf0b058f896fb6e520cc3b73c6":[12,0,1,0,6,42,22,20],
 "sdlog__chibios_8c.html#ac4906480516463672f35682ae66f139b":[12,0,1,0,6,42,22,21],
 "sdlog__chibios_8c.html#ace5244a4001a7470da6fafbb2b4be96e":[12,0,1,0,6,42,22,23],
-"sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6":[12,0,1,0,6,42,22,2],
-"sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6":[12,0,1,0,6,42,22,5]
+"sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6":[12,0,1,0,6,42,22,2]
 };

@@ -397,10 +397,13 @@ $(document).ready(function(){initNavTree('arch_2chibios_2board_8c_source.html','
 <div class="foldopen" id="foldopen00317" data-start="{" data-end="}">
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="arch_2chibios_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">  317</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="arch_2chibios_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>{</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="preprocessor">#if defined(AFIO_MAPR_VAL)</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">AFIO</a>-&gt;MAPR |= <a class="code hl_define" href="lia_2chibios_2v1_81_2board_8h.html#acfb9647afbce1aa3d196d6c8844578f9">AFIO_MAPR_VAL</a>;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="preprocessor">#if defined(BOARD_SYSCFG_PMCR_CLEAR)</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">SYSCFG</a>-&gt;PMCR &amp;= <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">~BOARD_SYSCFG_PMCR_CLEAR</a>;</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>}</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="preprocessor">#if defined(AFIO_MAPR_VAL)</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">AFIO</a>-&gt;MAPR |= <a class="code hl_define" href="lia_2chibios_2v1_81_2board_8h.html#acfb9647afbce1aa3d196d6c8844578f9">AFIO_MAPR_VAL</a>;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>}</div>
 </div>
 <div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a02a98a8fddb433405aaa5b52c80c8541"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a02a98a8fddb433405aaa5b52c80c8541">VAL_GPIOJ_OTYPER</a></div><div class="ttdeci">#define VAL_GPIOJ_OTYPER</div><div class="ttdef"><b>Definition</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l01771">board.h:1771</a></div></div>
 <div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a1abc2f956619ad2f42522587aaf95630"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a1abc2f956619ad2f42522587aaf95630">VAL_GPIOJ_AFRH</a></div><div class="ttdeci">#define VAL_GPIOJ_AFRH</div><div class="ttdef"><b>Definition</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l01848">board.h:1848</a></div></div>
@@ -511,7 +514,7 @@ $(document).ready(function(){initNavTree('arch_2chibios_2board_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="arch_2chibios_2board_8c.html">board.c</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 08:52:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 29 2026 20:56:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
