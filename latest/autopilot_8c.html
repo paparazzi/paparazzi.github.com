@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('autopilot_8c.html',''); initResizable(
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;generated/modules.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
@@ -120,134 +121,139 @@ $(document).ready(function(){initNavTree('autopilot_8c.html',''); initResizable(
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8c__incl.png" border="0" usemap="#asw_2airborne_2autopilot_8c" alt=""/></div>
 <map name="asw_2airborne_2autopilot_8c" id="asw_2airborne_2autopilot_8c">
-<area shape="rect" title="Core autopilot interface common to all firmwares." alt="" coords="2419,5,2589,31"/>
-<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="837,86,929,111"/>
-<area shape="poly" title=" " alt="" coords="2419,25,1899,47,1188,81,943,96,942,91,1188,76,1899,42,2418,20"/>
-<area shape="rect" title=" " alt="" coords="1387,262,1547,287"/>
-<area shape="poly" title=" " alt="" coords="2419,22,2316,26,2189,36,2051,53,1915,81,1792,121,1673,171,1572,219,1500,258,1497,253,1570,215,1671,166,1790,116,1914,76,2051,48,2189,30,2315,21,2419,17"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2281,343,2421,368"/>
-<area shape="poly" title=" " alt="" coords="2497,32,2466,80,2444,139,2435,188,2424,237,2400,296,2373,334,2368,331,2395,293,2419,235,2429,187,2439,137,2462,77,2492,30"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1021,174,1195,199"/>
-<area shape="poly" title=" " alt="" coords="2419,22,2180,25,1867,33,1559,51,1432,64,1337,81,1280,99,1226,123,1139,169,1137,164,1223,118,1278,94,1335,76,1431,59,1559,45,1867,28,2180,19,2419,17"/>
-<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="2686,86,2829,111"/>
-<area shape="poly" title=" " alt="" coords="2542,28,2708,79,2707,84,2540,33"/>
-<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="1927,86,2126,111"/>
-<area shape="poly" title=" " alt="" coords="2434,33,2139,81,2109,86,2108,81,2138,76,2433,28"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2151,86,2364,111"/>
-<area shape="poly" title=" " alt="" coords="2469,33,2307,84,2305,79,2467,28"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="2924,86,3071,111"/>
-<area shape="poly" title=" " alt="" coords="2590,28,2906,76,2931,81,2930,86,2905,81,2589,33"/>
-<area shape="rect" href="preflight__checks_8h.html" title=" " alt="" coords="2477,79,2662,119"/>
-<area shape="poly" title=" " alt="" coords="2516,29,2547,66,2543,70,2512,33"/>
-<area shape="rect" href="settings_8h.html" title="Persistent settings interface." alt="" coords="2821,343,3000,368"/>
-<area shape="poly" title=" " alt="" coords="2590,21,2661,28,2735,39,2800,54,2825,65,2843,77,2867,105,2886,137,2899,172,2907,208,2915,276,2915,329,2910,329,2910,276,2902,209,2894,174,2881,139,2863,108,2840,81,2823,69,2798,60,2734,44,2661,33,2589,27"/>
-<area shape="rect" title=" " alt="" coords="3095,86,3251,111"/>
-<area shape="poly" title=" " alt="" coords="2590,23,2814,43,3083,76,3109,81,3109,86,3082,81,2813,48,2589,28"/>
-<area shape="rect" title=" " alt="" coords="3276,86,3393,111"/>
-<area shape="poly" title=" " alt="" coords="2590,18,2721,23,2889,33,3077,50,3264,76,3284,80,3283,85,3264,81,3076,55,2889,39,2720,29,2589,24"/>
-<area shape="rect" title=" " alt="" coords="1007,489,1062,515"/>
-<area shape="poly" title=" " alt="" coords="890,110,940,233,1009,415,1029,475,1024,477,1004,417,935,235,885,112"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1219,174,1317,199"/>
-<area shape="poly" title=" " alt="" coords="930,106,1055,130,1207,164,1220,168,1219,173,1206,169,1054,135,929,111"/>
-<area shape="rect" title=" " alt="" coords="2203,262,2363,287"/>
-<area shape="poly" title=" " alt="" coords="929,98,1148,103,1463,115,1783,134,1916,148,2017,164,2113,200,2244,254,2242,259,2111,205,2015,169,1916,153,1783,139,1462,120,1147,108,929,103"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="799,174,865,199"/>
-<area shape="poly" title=" " alt="" coords="878,113,848,163,844,160,874,110"/>
-<area shape="rect" title=" " alt="" coords="306,174,433,199"/>
-<area shape="poly" title=" " alt="" coords="837,108,664,132,446,169,426,173,425,168,445,164,664,127,836,103"/>
-<area shape="rect" title=" " alt="" coords="457,174,615,199"/>
-<area shape="poly" title=" " alt="" coords="837,114,596,173,595,168,836,109"/>
-<area shape="rect" title=" " alt="" coords="639,174,774,199"/>
-<area shape="poly" title=" " alt="" coords="860,114,744,170,742,165,858,109"/>
-<area shape="rect" title=" " alt="" coords="1225,262,1311,287"/>
-<area shape="poly" title=" " alt="" coords="1271,200,1271,248,1265,248,1265,200"/>
-<area shape="poly" title=" " alt="" coords="842,198,1022,476,1017,479,837,201"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="629,343,809,368"/>
-<area shape="poly" title=" " alt="" coords="834,200,829,244,821,271,808,296,785,320,758,338,755,334,781,316,803,293,816,269,823,243,829,199"/>
-<area shape="rect" title=" " alt="" coords="35,489,106,515"/>
-<area shape="poly" title=" " alt="" coords="808,202,786,209,703,224,632,229,568,227,509,223,450,220,388,222,319,233,240,257,163,285,103,312,78,330,55,352,33,381,12,417,9,434,15,450,27,465,42,479,39,483,23,469,10,452,3,434,7,415,29,378,51,348,75,326,100,308,161,280,238,252,318,228,387,217,450,215,509,218,569,222,632,224,703,219,785,204,806,197"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="144,343,336,368"/>
-<area shape="poly" title=" " alt="" coords="808,202,786,209,734,216,669,218,516,215,439,216,368,222,309,235,286,244,267,257,255,272,247,291,242,330,236,329,242,289,250,269,264,253,283,240,308,230,368,217,439,211,516,210,669,212,734,211,785,204,806,197"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="643,255,794,295"/>
-<area shape="poly" title=" " alt="" coords="818,202,756,248,753,244,815,197"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="278,255,429,295"/>
-<area shape="poly" title=" " alt="" coords="808,202,786,209,692,229,617,238,540,244,442,257,442,252,539,239,616,233,691,224,785,204,806,197"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="453,255,619,295"/>
-<area shape="poly" title=" " alt="" coords="806,202,786,209,630,254,628,249,785,204,804,197"/>
-<area shape="poly" title=" " alt="" coords="693,371,668,385,644,402,632,421,632,430,637,440,661,457,698,471,744,481,797,488,905,496,993,498,993,504,904,502,796,494,743,486,696,476,658,462,633,443,626,432,626,420,640,399,665,380,691,366"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="213,416,369,441"/>
-<area shape="poly" title=" " alt="" coords="650,371,374,416,373,411,649,365"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="647,416,801,441"/>
-<area shape="poly" title=" " alt="" coords="722,368,725,402,719,403,717,369"/>
-<area shape="rect" title=" " alt="" coords="825,416,895,441"/>
-<area shape="poly" title=" " alt="" coords="743,366,826,407,824,412,740,370"/>
-<area shape="poly" title=" " alt="" coords="369,435,994,494,994,499,369,440"/>
-<area shape="rect" title=" " alt="" coords="194,489,257,515"/>
-<area shape="poly" title=" " alt="" coords="282,443,247,481,243,477,278,440"/>
-<area shape="poly" title=" " alt="" coords="256,444,120,488,118,483,255,439"/>
-<area shape="rect" title=" " alt="" coords="327,489,395,515"/>
-<area shape="poly" title=" " alt="" coords="304,440,342,478,338,482,300,444"/>
-<area shape="poly" title=" " alt="" coords="775,439,995,489,994,494,773,444"/>
-<area shape="poly" title=" " alt="" coords="251,367,277,403,272,406,246,370"/>
-<area shape="poly" title=" " alt="" coords="159,371,75,390,41,403,21,418,16,429,21,440,46,457,87,471,181,492,180,497,86,477,43,462,17,443,11,429,17,414,39,398,73,385,158,365"/>
-<area shape="poly" title=" " alt="" coords="307,366,349,383,367,397,382,415,388,430,388,447,378,478,373,477,383,446,383,431,378,417,364,401,346,388,305,370"/>
-<area shape="rect" title=" " alt="" coords="31,416,188,441"/>
-<area shape="poly" title=" " alt="" coords="220,370,144,412,141,407,218,366"/>
-<area shape="poly" title=" " alt="" coords="750,293,822,340,1010,479,1007,483,818,345,747,297"/>
-<area shape="poly" title=" " alt="" coords="721,295,721,329,716,329,716,295"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="411,343,536,368"/>
-<area shape="poly" title=" " alt="" coords="661,297,523,341,521,336,659,292"/>
-<area shape="poly" title=" " alt="" coords="361,294,375,330,386,350,400,366,447,400,489,417,594,439,706,462,818,479,994,496,993,501,818,484,705,467,593,444,487,422,444,405,397,370,382,353,370,333,356,296"/>
-<area shape="poly" title=" " alt="" coords="327,297,270,337,267,332,324,293"/>
-<area shape="poly" title=" " alt="" coords="384,293,446,333,443,337,381,297"/>
-<area shape="poly" title=" " alt="" coords="543,294,552,327,569,367,593,407,626,439,654,453,694,465,797,482,905,492,993,497,993,502,905,497,796,487,693,470,652,458,622,444,589,410,564,369,547,329,538,296"/>
-<area shape="poly" title=" " alt="" coords="581,292,680,335,678,340,579,297"/>
-<area shape="poly" title=" " alt="" coords="466,297,297,342,296,337,464,292"/>
-<area shape="poly" title=" " alt="" coords="2281,367,1076,499,1076,493,2280,362"/>
-<area shape="rect" title=" " alt="" coords="2159,416,2334,441"/>
-<area shape="poly" title=" " alt="" coords="2335,370,2277,410,2274,406,2332,366"/>
-<area shape="rect" title=" " alt="" coords="2359,416,2551,441"/>
-<area shape="poly" title=" " alt="" coords="2369,366,2428,406,2425,410,2366,370"/>
-<area shape="poly" title=" " alt="" coords="1123,198,1145,222,1163,254,1167,275,1163,295,1141,351,1112,403,1056,480,1052,477,1108,400,1136,349,1157,294,1161,275,1158,256,1140,225,1119,202"/>
-<area shape="poly" title=" " alt="" coords="1131,197,1235,253,1233,258,1128,202"/>
-<area shape="poly" title=" " alt="" coords="1089,202,1052,225,1011,257,971,296,934,337,878,407,874,404,930,333,967,292,1008,253,1049,221,1087,197"/>
-<area shape="rect" title=" " alt="" coords="1022,262,1149,287"/>
-<area shape="poly" title=" " alt="" coords="1108,200,1095,249,1089,247,1102,199"/>
-<area shape="poly" title=" " alt="" coords="2774,109,2798,133,2818,166,2824,187,2819,208,2779,293,2758,326,2735,354,2708,378,2676,401,2593,444,2555,455,2496,465,2328,480,2111,491,1868,498,1391,504,1076,504,1076,498,1391,498,1868,493,2111,486,2328,475,2495,460,2554,450,2591,439,2674,396,2705,374,2731,350,2754,323,2775,290,2813,206,2818,187,2814,168,2794,137,2770,113"/>
-<area shape="rect" title=" " alt="" coords="2626,174,2803,199"/>
-<area shape="poly" title=" " alt="" coords="2754,113,2729,162,2724,160,2749,110"/>
-<area shape="poly" title=" " alt="" coords="1928,111,1682,135,1387,169,1331,178,1330,172,1386,164,1681,130,1927,106"/>
-<area shape="poly" title=" " alt="" coords="2045,109,2256,252,2253,256,2042,114"/>
-<area shape="poly" title=" " alt="" coords="2186,114,2138,121,2020,135,1919,143,1746,154,1664,164,1578,182,1484,212,1376,257,1349,275,1324,297,1064,484,1061,479,1321,293,1346,271,1373,252,1482,207,1577,177,1663,158,1745,148,1918,138,2019,130,2137,116,2185,109"/>
-<area shape="poly" title=" " alt="" coords="2254,112,2240,156,2239,182,2248,205,2261,219,2276,226,2310,228,2345,230,2362,238,2377,253,2384,273,2383,294,2369,332,2364,330,2378,293,2379,274,2372,256,2359,242,2344,236,2310,233,2275,231,2258,223,2243,208,2234,183,2234,156,2249,111"/>
-<area shape="rect" title=" " alt="" coords="2257,167,2401,207"/>
-<area shape="poly" title=" " alt="" coords="2269,110,2306,154,2302,157,2265,113"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1793,174,2004,199"/>
-<area shape="poly" title=" " alt="" coords="2210,114,1960,173,1959,168,2209,109"/>
-<area shape="poly" title=" " alt="" coords="1799,202,1603,226,1375,257,1325,266,1324,260,1374,252,1602,221,1798,197"/>
-<area shape="poly" title=" " alt="" coords="1951,197,2219,256,2218,262,1949,202"/>
-<area shape="poly" title=" " alt="" coords="1840,202,1559,257,1537,262,1536,257,1558,252,1839,197"/>
-<area shape="rect" title=" " alt="" coords="2022,262,2178,287"/>
-<area shape="poly" title=" " alt="" coords="1927,197,2061,254,2059,259,1925,202"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1571,262,1775,287"/>
-<area shape="poly" title=" " alt="" coords="1869,202,1718,259,1716,254,1867,197"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1799,262,1998,287"/>
-<area shape="poly" title=" " alt="" coords="1901,200,1901,248,1896,248,1896,200"/>
-<area shape="poly" title=" " alt="" coords="1658,290,1541,363,1457,407,1369,444,1289,467,1208,483,1076,500,1075,495,1207,478,1288,462,1367,439,1455,402,1538,358,1655,286"/>
-<area shape="rect" title=" " alt="" coords="1592,343,1755,368"/>
-<area shape="poly" title=" " alt="" coords="1676,288,1676,329,1671,329,1671,288"/>
-<area shape="poly" title=" " alt="" coords="1965,285,2272,338,2271,343,1964,290"/>
-<area shape="rect" title=" " alt="" coords="1807,343,1991,368"/>
-<area shape="poly" title=" " alt="" coords="1901,288,1901,329,1896,329,1896,288"/>
-<area shape="rect" title=" " alt="" coords="2934,174,3061,199"/>
-<area shape="poly" title=" " alt="" coords="3000,112,3000,160,2995,160,2995,112"/>
-<area shape="poly" title=" " alt="" coords="2575,119,2585,187,2591,273,2591,357,2590,405,2582,425,2564,444,2539,452,2492,460,2339,473,2129,483,1886,490,1400,500,1076,503,1076,498,1400,494,1886,485,2128,477,2338,467,2491,455,2538,447,2561,439,2577,422,2584,404,2585,357,2585,273,2580,187,2570,120"/>
-<area shape="rect" title=" " alt="" coords="2476,174,2551,199"/>
-<area shape="poly" title=" " alt="" coords="2559,120,2531,164,2526,161,2555,117"/>
-<area shape="poly" title=" " alt="" coords="2903,370,2863,408,2835,428,2804,444,2759,455,2691,464,2498,479,2249,490,1971,497,1428,503,1076,503,1076,498,1428,498,1970,491,2249,484,2497,474,2691,459,2758,449,2802,439,2832,424,2859,404,2899,366"/>
-<area shape="poly" title=" " alt="" coords="2838,371,2542,417,2541,411,2837,365"/>
-<area shape="rect" title=" " alt="" coords="2872,416,3080,441"/>
-<area shape="poly" title=" " alt="" coords="2923,367,2958,404,2954,408,2920,370"/>
+<area shape="rect" title="Core autopilot interface common to all firmwares." alt="" coords="2398,5,2569,31"/>
+<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="861,86,953,111"/>
+<area shape="poly" title=" " alt="" coords="2398,25,1890,47,1197,81,967,96,967,91,1197,76,1889,42,2398,20"/>
+<area shape="rect" title=" " alt="" coords="2226,262,2386,287"/>
+<area shape="poly" title=" " alt="" coords="2417,33,2374,51,2354,64,2337,80,2325,100,2316,121,2305,167,2303,212,2305,248,2300,249,2298,212,2300,167,2310,120,2320,97,2333,77,2351,60,2371,46,2415,28"/>
+<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="2452,86,2515,111"/>
+<area shape="poly" title=" " alt="" coords="2486,31,2486,72,2481,72,2481,31"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2341,343,2481,368"/>
+<area shape="poly" title=" " alt="" coords="2473,33,2425,87,2400,125,2382,167,2378,187,2382,206,2392,220,2404,228,2417,238,2428,254,2433,274,2433,294,2424,331,2419,329,2428,293,2428,274,2424,256,2414,241,2401,233,2388,224,2377,208,2372,187,2377,166,2396,123,2421,84,2469,29"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1039,174,1213,199"/>
+<area shape="poly" title=" " alt="" coords="2398,22,2161,23,1852,31,1694,38,1548,49,1423,63,1329,81,1279,99,1231,122,1155,168,1152,164,1228,117,1277,94,1328,76,1422,58,1548,43,1694,33,1852,25,2161,18,2398,16"/>
+<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="2583,86,2725,111"/>
+<area shape="poly" title=" " alt="" coords="2509,28,2618,78,2616,83,2507,33"/>
+<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="1341,86,1540,111"/>
+<area shape="poly" title=" " alt="" coords="2398,28,1554,92,1554,86,2397,23"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1978,86,2191,111"/>
+<area shape="poly" title=" " alt="" coords="2426,33,2157,86,2156,81,2425,28"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="3018,86,3165,111"/>
+<area shape="poly" title=" " alt="" coords="2569,24,2766,45,3000,76,3026,81,3025,86,2999,81,2766,50,2569,30"/>
+<area shape="rect" href="preflight__checks_8h.html" title=" " alt="" coords="2757,79,2943,119"/>
+<area shape="poly" title=" " alt="" coords="2537,28,2749,73,2748,78,2536,33"/>
+<area shape="rect" href="settings_8h.html" title="Persistent settings interface." alt="" coords="2967,343,3146,368"/>
+<area shape="poly" title=" " alt="" coords="2569,17,2672,21,2786,30,2888,48,2928,61,2957,77,2978,115,3005,185,3052,328,3047,330,3000,187,2974,117,2953,81,2926,65,2887,53,2785,35,2672,26,2569,22"/>
+<area shape="rect" title=" " alt="" coords="3189,86,3345,111"/>
+<area shape="poly" title=" " alt="" coords="2569,21,2841,39,3009,55,3177,76,3204,81,3204,86,3176,81,3008,60,2840,44,2569,26"/>
+<area shape="rect" title=" " alt="" coords="3370,86,3487,111"/>
+<area shape="poly" title=" " alt="" coords="2569,17,2718,20,2915,30,3136,47,3358,76,3378,80,3377,85,3358,81,3136,53,2915,35,2718,26,2569,22"/>
+<area shape="rect" title=" " alt="" coords="1119,489,1173,515"/>
+<area shape="poly" title=" " alt="" coords="917,110,1134,476,1130,479,912,113"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1288,174,1385,199"/>
+<area shape="poly" title=" " alt="" coords="954,105,1096,129,1269,164,1285,168,1284,173,1268,169,1095,134,953,110"/>
+<area shape="rect" title=" " alt="" coords="1361,262,1521,287"/>
+<area shape="poly" title=" " alt="" coords="954,100,1010,107,1080,119,1154,137,1226,164,1242,174,1252,184,1277,204,1335,233,1392,255,1390,260,1333,238,1274,209,1249,188,1238,178,1223,169,1152,142,1079,124,1010,112,953,106"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="823,174,890,199"/>
+<area shape="poly" title=" " alt="" coords="903,113,873,163,868,160,898,110"/>
+<area shape="rect" title=" " alt="" coords="672,174,799,199"/>
+<area shape="poly" title=" " alt="" coords="885,114,772,170,770,165,883,109"/>
+<area shape="rect" title=" " alt="" coords="331,174,489,199"/>
+<area shape="poly" title=" " alt="" coords="861,110,501,169,477,174,476,169,500,164,860,104"/>
+<area shape="rect" title=" " alt="" coords="513,174,648,199"/>
+<area shape="poly" title=" " alt="" coords="864,114,638,173,637,168,863,109"/>
+<area shape="rect" title=" " alt="" coords="1249,262,1336,287"/>
+<area shape="poly" title=" " alt="" coords="1333,201,1307,251,1303,248,1328,198"/>
+<area shape="poly" title=" " alt="" coords="866,198,941,302,999,372,1064,439,1117,480,1114,484,1060,443,995,376,937,305,862,201"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="645,343,825,368"/>
+<area shape="poly" title=" " alt="" coords="859,200,854,244,846,271,832,296,807,321,779,339,776,334,804,317,828,293,841,269,848,243,854,199"/>
+<area shape="rect" title=" " alt="" coords="5,489,76,515"/>
+<area shape="poly" title=" " alt="" coords="833,202,811,209,728,224,657,227,593,225,533,219,474,216,413,218,345,231,267,257,204,288,159,320,121,361,79,417,62,447,50,477,45,475,57,445,74,415,117,357,156,316,201,283,265,252,343,226,412,213,474,211,534,214,593,219,657,222,728,218,809,204,831,197"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="174,343,366,368"/>
+<area shape="poly" title=" " alt="" coords="833,202,811,209,759,216,693,217,540,214,463,215,392,221,333,234,310,244,292,257,280,272,273,291,270,329,265,329,268,290,275,270,288,253,308,239,332,229,391,216,463,210,540,209,693,212,759,211,809,204,831,197"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="477,255,628,295"/>
+<area shape="poly" title=" " alt="" coords="831,202,811,209,724,235,642,256,641,251,723,230,809,204,829,197"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="303,255,453,295"/>
+<area shape="poly" title=" " alt="" coords="832,202,811,209,717,229,641,238,565,244,467,257,466,252,564,239,641,233,716,224,809,204,831,197"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="652,255,819,295"/>
+<area shape="poly" title=" " alt="" coords="842,202,775,249,772,244,839,197"/>
+<area shape="poly" title=" " alt="" coords="751,366,800,402,832,422,866,439,929,461,995,477,1106,494,1105,499,994,482,928,466,864,444,829,427,797,407,747,370"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="333,416,489,441"/>
+<area shape="poly" title=" " alt="" coords="684,371,478,416,477,410,683,365"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="641,416,795,441"/>
+<area shape="poly" title=" " alt="" coords="735,369,727,404,721,402,730,368"/>
+<area shape="rect" title=" " alt="" coords="921,416,992,441"/>
+<area shape="poly" title=" " alt="" coords="772,365,909,409,908,414,770,371"/>
+<area shape="poly" title=" " alt="" coords="490,437,509,439,1105,495,1105,500,508,444,489,442"/>
+<area shape="rect" title=" " alt="" coords="209,489,272,515"/>
+<area shape="poly" title=" " alt="" coords="385,444,282,486,280,482,383,439"/>
+<area shape="poly" title=" " alt="" coords="352,444,90,494,89,489,351,439"/>
+<area shape="rect" title=" " alt="" coords="351,489,419,515"/>
+<area shape="poly" title=" " alt="" coords="409,443,396,478,391,476,404,441"/>
+<area shape="poly" title=" " alt="" coords="787,439,1105,491,1105,497,786,444"/>
+<area shape="poly" title=" " alt="" coords="294,366,377,407,375,412,292,370"/>
+<area shape="poly" title=" " alt="" coords="175,368,128,386,108,400,91,417,85,432,87,444,96,455,111,464,152,480,197,491,195,496,151,485,109,469,93,459,82,446,79,431,86,415,104,396,125,381,173,363"/>
+<area shape="poly" title=" " alt="" coords="278,367,296,401,323,440,361,478,358,482,319,443,292,404,273,370"/>
+<area shape="rect" title=" " alt="" coords="101,416,258,441"/>
+<area shape="poly" title=" " alt="" coords="257,370,207,409,203,405,254,366"/>
+<area shape="poly" title=" " alt="" coords="563,294,598,379,617,419,630,439,667,457,720,471,784,482,855,489,996,497,1105,498,1105,504,995,502,854,494,784,487,719,476,666,462,627,443,613,422,593,381,558,296"/>
+<area shape="poly" title=" " alt="" coords="597,292,697,335,695,340,595,297"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="441,343,566,368"/>
+<area shape="poly" title=" " alt="" coords="543,296,520,332,516,330,538,293"/>
+<area shape="poly" title=" " alt="" coords="387,294,403,330,415,349,430,366,474,398,512,416,609,439,750,467,891,484,1014,494,1105,497,1105,503,1014,499,890,490,749,472,608,444,511,421,471,403,427,370,411,353,398,333,382,296"/>
+<area shape="poly" title=" " alt="" coords="353,297,299,336,296,332,350,293"/>
+<area shape="poly" title=" " alt="" coords="410,293,475,333,472,338,407,297"/>
+<area shape="poly" title=" " alt="" coords="772,293,805,314,839,341,860,368,873,393,886,417,910,439,959,464,1011,481,1062,491,1105,496,1104,501,1061,496,1010,486,957,469,907,444,882,420,868,396,856,371,835,345,802,318,769,297"/>
+<area shape="poly" title=" " alt="" coords="738,295,738,329,733,329,733,295"/>
+<area shape="poly" title=" " alt="" coords="652,295,640,297,359,343,359,338,639,292,651,290"/>
+<area shape="poly" title=" " alt="" coords="2491,111,2515,178,2526,225,2530,273,2530,357,2528,405,2520,425,2502,444,2480,451,2438,458,2304,470,1907,488,1478,498,1187,503,1187,498,1478,493,1907,482,2304,465,2438,453,2479,446,2499,439,2516,422,2523,404,2525,357,2525,273,2520,226,2510,180,2486,112"/>
+<area shape="rect" title=" " alt="" coords="2392,174,2489,199"/>
+<area shape="poly" title=" " alt="" coords="2480,113,2455,162,2450,160,2475,110"/>
+<area shape="poly" title=" " alt="" coords="2341,367,1187,499,1187,493,2341,362"/>
+<area shape="rect" title=" " alt="" coords="2315,416,2489,441"/>
+<area shape="poly" title=" " alt="" coords="2412,369,2408,403,2403,402,2407,368"/>
+<area shape="rect" title=" " alt="" coords="2701,416,2893,441"/>
+<area shape="poly" title=" " alt="" coords="2474,365,2721,411,2720,416,2473,371"/>
+<area shape="poly" title=" " alt="" coords="1143,197,1167,221,1187,254,1195,284,1198,316,1192,378,1177,434,1160,477,1155,475,1172,433,1187,377,1193,316,1190,285,1182,256,1163,225,1139,201"/>
+<area shape="poly" title=" " alt="" coords="1150,197,1259,253,1257,258,1147,202"/>
+<area shape="poly" title=" " alt="" coords="1106,202,1070,224,1036,256,1011,293,991,333,966,403,961,402,986,331,1006,291,1032,253,1067,220,1103,197"/>
+<area shape="rect" title=" " alt="" coords="1047,262,1173,287"/>
+<area shape="poly" title=" " alt="" coords="1126,200,1117,249,1112,248,1121,199"/>
+<area shape="poly" title=" " alt="" coords="2687,109,2725,131,2743,146,2756,165,2762,186,2757,208,2717,293,2696,326,2673,354,2646,378,2614,401,2531,444,2497,454,2446,463,2298,477,2108,488,1893,495,1471,502,1188,503,1188,498,1471,497,1893,490,2108,482,2298,472,2445,458,2496,449,2529,439,2611,396,2643,374,2669,350,2692,322,2713,290,2751,206,2757,186,2752,168,2739,150,2722,135,2684,114"/>
+<area shape="rect" title=" " alt="" coords="2565,174,2743,199"/>
+<area shape="poly" title=" " alt="" coords="2657,112,2657,160,2651,160,2651,112"/>
+<area shape="poly" title=" " alt="" coords="1428,114,1363,167,1360,163,1425,109"/>
+<area shape="poly" title=" " alt="" coords="1443,111,1443,248,1438,248,1438,111"/>
+<area shape="poly" title=" " alt="" coords="1991,114,1860,135,1718,169,1656,191,1606,215,1572,243,1564,258,1561,274,1561,357,1557,372,1548,386,1516,411,1469,433,1413,452,1290,481,1188,498,1187,493,1289,476,1411,447,1467,428,1513,407,1544,383,1553,370,1555,356,1555,273,1559,256,1568,240,1603,211,1654,186,1717,164,1858,130,1990,109"/>
+<area shape="poly" title=" " alt="" coords="2086,111,2089,158,2097,183,2112,205,2129,219,2147,228,2183,236,2219,234,2255,226,2292,219,2329,218,2365,227,2382,238,2400,253,2411,270,2417,290,2418,329,2413,329,2412,291,2407,272,2396,256,2379,242,2363,232,2328,223,2293,225,2256,232,2219,239,2182,241,2145,233,2126,223,2108,208,2092,186,2084,158,2081,112"/>
+<area shape="rect" title=" " alt="" coords="2122,167,2266,207"/>
+<area shape="poly" title=" " alt="" coords="2101,109,2161,156,2158,160,2098,114"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1797,174,2007,199"/>
+<area shape="poly" title=" " alt="" coords="2061,114,1940,170,1938,166,2059,109"/>
+<area shape="poly" title=" " alt="" coords="1797,197,1588,217,1468,234,1349,257,1337,260,1336,255,1348,252,1467,229,1588,212,1796,192"/>
+<area shape="poly" title=" " alt="" coords="1841,202,1516,262,1515,257,1840,197"/>
+<area shape="poly" title=" " alt="" coords="1957,197,2240,257,2238,262,1956,202"/>
+<area shape="rect" title=" " alt="" coords="1824,262,1980,287"/>
+<area shape="poly" title=" " alt="" coords="1905,200,1905,248,1899,248,1899,200"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1596,262,1800,287"/>
+<area shape="poly" title=" " alt="" coords="1876,202,1740,259,1738,254,1873,197"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2004,262,2203,287"/>
+<area shape="poly" title=" " alt="" coords="1930,197,2064,254,2062,259,1928,202"/>
+<area shape="poly" title=" " alt="" coords="1687,289,1662,314,1636,344,1621,372,1612,398,1601,421,1578,444,1547,458,1503,470,1394,488,1280,498,1188,502,1187,497,1279,492,1394,482,1502,465,1545,453,1575,439,1597,418,1607,396,1616,370,1632,341,1659,310,1683,286"/>
+<area shape="rect" title=" " alt="" coords="1646,343,1809,368"/>
+<area shape="poly" title=" " alt="" coords="1705,287,1721,329,1716,331,1700,288"/>
+<area shape="poly" title=" " alt="" coords="2149,285,2354,337,2353,342,2147,290"/>
+<area shape="rect" title=" " alt="" coords="2011,343,2195,368"/>
+<area shape="poly" title=" " alt="" coords="2106,288,2106,329,2101,329,2101,288"/>
+<area shape="rect" title=" " alt="" coords="3028,174,3155,199"/>
+<area shape="poly" title=" " alt="" coords="3094,112,3094,160,3089,160,3089,112"/>
+<area shape="poly" title=" " alt="" coords="2871,117,2890,139,2907,165,2928,217,2933,273,2933,357,2932,405,2924,425,2906,444,2877,454,2822,462,2643,476,2398,486,2116,494,1554,501,1187,503,1187,498,1554,496,2116,488,2398,481,2643,471,2821,457,2876,448,2903,439,2919,422,2926,404,2927,357,2927,273,2923,219,2902,168,2886,142,2867,120"/>
+<area shape="rect" title=" " alt="" coords="2818,174,2893,199"/>
+<area shape="poly" title=" " alt="" coords="2854,119,2856,160,2851,160,2849,119"/>
+<area shape="poly" title=" " alt="" coords="3049,370,3009,408,2981,428,2950,444,2904,455,2835,464,2637,480,2383,490,2098,497,1545,503,1187,504,1187,498,1545,498,2098,492,2383,485,2637,474,2834,459,2903,450,2948,439,2978,424,3005,404,3045,366"/>
+<area shape="poly" title=" " alt="" coords="3016,371,2853,415,2851,410,3014,365"/>
+<area shape="rect" title=" " alt="" coords="3018,416,3226,441"/>
+<area shape="poly" title=" " alt="" coords="3069,367,3104,404,3100,408,3065,370"/>
 </map>
 </div>
 </div>
@@ -368,7 +374,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00052">52</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00053">53</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 </div>
 </div>
@@ -392,9 +398,9 @@ Variables</h2></td></tr>
 <p>turn motors on/off during arming, not done automatically prevents takeoff with preflight checks </p>
 <p>Start or stop the motors during arming May not happen when preflight checks are failing. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00273">273</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00280">280</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00057">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00083">preflight_check()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00057">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00083">preflight_check()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00098">autopilot_arming_check_motors_on()</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -457,9 +463,9 @@ Variables</h2></td></tr>
 <p>in flight check utility function actual implementation is firmware dependent </p>
 <p>Check if airframe is in flight. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00321">321</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00328">328</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00153">autopilot_periodic()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -494,9 +500,9 @@ Variables</h2></td></tr>
 <p>clear settings </p>
 <p>Clear marked settings in flash try to make sure that we don't write to flash while flying Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00357">357</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00364">364</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00101">settings_clear()</a>, and <a class="el" href="settings_8c_source.html#l00047">settings_clear_flag</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00101">settings_clear()</a>, and <a class="el" href="settings_8c_source.html#l00047">settings_clear_flag</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -533,7 +539,7 @@ Variables</h2></td></tr>
 <p>AP event call. </p>
 <p>Autopilot event check function. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00174">174</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00181">181</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 </div>
 </div>
@@ -556,9 +562,9 @@ Variables</h2></td></tr>
 <p>Failsafe checks. </p>
 <p>Autopilot periodic failsafe checks. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00189">189</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00196">196</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, and <a class="el" href="main__ap_8c_source.html#l00079">main_ap_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00153">autopilot_periodic()</a>, and <a class="el" href="main__ap_8c_source.html#l00079">main_ap_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -605,11 +611,11 @@ Variables</h2></td></tr>
 <p>Force the motors on/off skipping preflight checks. </p>
 <p>Force start/stop the motors WARNING This will skip he preflight checks. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00237">237</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00244">244</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00257">autopilot_set_motors_on()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -702,11 +708,11 @@ Variables</h2></td></tr>
 <p>get autopilot mode </p>
 <p>Get autopilot mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00222">222</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00229">229</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00299">attitude_loop()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00098">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00054">autopilot_arming_set()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="ctc_8c_source.html#l00144">collective_tracking_control()</a>, <a class="el" href="dcf_8c_source.html#l00074">distributed_circular()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00056">guidance_flip_enter()</a>, <a class="el" href="gvf__common_8c_source.html#l00058">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__common_8c_source.html#l00079">gvf_low_level_control_3D()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>, <a class="el" href="mavlink_8c_source.html#l00504">mavlink_send_heartbeat()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00229">NavKillThrottle()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00233">NavResurrect()</a>, <a class="el" href="auto1__commands_8c_source.html#l00029">periodic_auto1_commands()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00356">pprz_mode_update()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00128">send_fbw_status()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="takeoff__detect_8c_source.html#l00085">takeoff_detect_periodic()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>, and <a class="el" href="wedgebug_8c_source.html#l01837">wedgebug_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00299">attitude_loop()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00098">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00054">autopilot_arming_set()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="ctc_8c_source.html#l00144">collective_tracking_control()</a>, <a class="el" href="dcf_8c_source.html#l00074">distributed_circular()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00056">guidance_flip_enter()</a>, <a class="el" href="gvf__common_8c_source.html#l00058">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__common_8c_source.html#l00079">gvf_low_level_control_3D()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="mavlink_8c_source.html#l00234">mavlink_common_message_handler()</a>, <a class="el" href="mavlink_8c_source.html#l00506">mavlink_send_heartbeat()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00229">NavKillThrottle()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00233">NavResurrect()</a>, <a class="el" href="auto1__commands_8c_source.html#l00029">periodic_auto1_commands()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00356">pprz_mode_update()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00128">send_fbw_status()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="takeoff__detect_8c_source.html#l00085">takeoff_detect_periodic()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>, and <a class="el" href="wedgebug_8c_source.html#l01837">wedgebug_periodic()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -846,11 +852,11 @@ Variables</h2></td></tr>
 <p>get motors status </p>
 <p>Get motor status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00295">295</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00302">302</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00092">actuators_bebop_commit()</a>, <a class="el" href="actuators__esc32_8c_source.html#l00147">actuators_esc32_commit()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00412">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="buzzer__tunes_8c_source.html#l00521">event_update()</a>, <a class="el" href="oneloop__andi_8c_source.html#l02348">get_act_state_oneloop()</a>, <a class="el" href="hott_2hott_8c_source.html#l00197">hott_check_serial_data()</a>, <a class="el" href="hott__eam_8h_source.html#l00140">hott_update_eam_msg()</a>, <a class="el" href="hott__gam_8h_source.html#l00134">hott_update_gam_msg()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00129">intermcu_send_commands()</a>, <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00150">nav_takeoff_run()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00136">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__rotorcraft_8c_source.html#l00100">nps_autopilot_run_step()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00162">sdlogger_spi_direct_periodic()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00422">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00602">stabilization_indi_rate_run()</a>, and <a class="el" href="throttle__curve_8c_source.html#l00125">throttle_curve_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00092">actuators_bebop_commit()</a>, <a class="el" href="actuators__esc32_8c_source.html#l00147">actuators_esc32_commit()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00412">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00153">autopilot_periodic()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="buzzer__tunes_8c_source.html#l00521">event_update()</a>, <a class="el" href="oneloop__andi_8c_source.html#l02348">get_act_state_oneloop()</a>, <a class="el" href="hott_2hott_8c_source.html#l00197">hott_check_serial_data()</a>, <a class="el" href="hott__eam_8h_source.html#l00140">hott_update_eam_msg()</a>, <a class="el" href="hott__gam_8h_source.html#l00134">hott_update_gam_msg()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00129">intermcu_send_commands()</a>, <a class="el" href="mavlink_8c_source.html#l00234">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00150">nav_takeoff_run()</a>, <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00136">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__rotorcraft_8c_source.html#l00100">nps_autopilot_run_step()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00162">sdlogger_spi_direct_periodic()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00422">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00602">stabilization_indi_rate_run()</a>, and <a class="el" href="throttle__curve_8c_source.html#l00125">throttle_curve_run()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -986,11 +992,11 @@ Variables</h2></td></tr>
 <p>get in_flight flag </p>
 <p>Get in flight status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00340">340</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00347">347</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00054">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="ekf__aw__wrapper_8c_source.html#l00215">ekf_aw_wrapper_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00060">guidance_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00072">guidance_module_run()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00713">ins_ekf2_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00725">ins_flow_update()</a>, <a class="el" href="mav__exercise_8c_source.html#l00072">mav_exercise_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00582">mavlink_send_extended_sys_state()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00277">nav_is_in_flight()</a>, <a class="el" href="orange__avoider_8c_source.html#l00099">orange_avoider_periodic()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00219">rc_cb()</a>, <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>, <a class="el" href="stabilization__indi__hinf_8c_source.html#l00070">stabilization_indi_attitude_controller()</a>, and <a class="el" href="stabilization__indi__hinf_8c_source.html#l00043">stabilization_indi_rate_controller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00054">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00153">autopilot_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="ekf__aw__wrapper_8c_source.html#l00215">ekf_aw_wrapper_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00060">guidance_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00072">guidance_module_run()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00713">ins_ekf2_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00725">ins_flow_update()</a>, <a class="el" href="mav__exercise_8c_source.html#l00072">mav_exercise_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00584">mavlink_send_extended_sys_state()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00277">nav_is_in_flight()</a>, <a class="el" href="orange__avoider_8c_source.html#l00099">orange_avoider_periodic()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00219">rc_cb()</a>, <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>, <a class="el" href="stabilization__indi__hinf_8c_source.html#l00070">stabilization_indi_attitude_controller()</a>, and <a class="el" href="stabilization__indi__hinf_8c_source.html#l00043">stabilization_indi_rate_controller()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1084,9 +1090,9 @@ Variables</h2></td></tr>
 
 <p>Autopilot initialization function. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00107">107</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00114">114</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00157">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="autopilot_8c_source.html#l00052">AUTOPILOT_RC_ID</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="autopilot_8h_source.html#l00064">pprz_autopilot::mode_auto2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00064">MODE_AUTO2</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="autopilot_8c_source.html#l00057">rc_cb()</a>, <a class="el" href="autopilot_8c_source.html#l00055">rc_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="autopilot_8c_source.html#l00071">send_alive()</a>, <a class="el" href="autopilot_8c_source.html#l00076">send_attitude()</a>, <a class="el" href="autopilot_8c_source.html#l00064">send_autopilot_version()</a>, <a class="el" href="autopilot_8c_source.html#l00082">send_dl_value()</a>, <a class="el" href="autopilot_8c_source.html#l00087">send_minimal_com()</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00072">pprz_autopilot::use_rc</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00157">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="autopilot_8c_source.html#l00053">AUTOPILOT_RC_ID</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="autopilot_8h_source.html#l00064">pprz_autopilot::mode_auto2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00064">MODE_AUTO2</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="autopilot_8c_source.html#l00058">rc_cb()</a>, <a class="el" href="autopilot_8c_source.html#l00056">rc_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="autopilot_8c_source.html#l00078">send_alive()</a>, <a class="el" href="autopilot_8c_source.html#l00083">send_attitude()</a>, <a class="el" href="autopilot_8c_source.html#l00065">send_autopilot_version()</a>, <a class="el" href="autopilot_8c_source.html#l00089">send_dl_value()</a>, <a class="el" href="autopilot_8c_source.html#l00094">send_minimal_com()</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00072">pprz_autopilot::use_rc</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1094,40 +1100,40 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_cgraph.png" border="0" usemap="#aautopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_cgraph" alt=""/></div>
 <map name="aautopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_cgraph" id="aautopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_cgraph">
-<area shape="rect" title="Autopilot initialization function." alt="" coords="5,400,113,425"/>
-<area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="165,200,339,225"/>
-<area shape="poly" title=" " alt="" coords="65,398,101,338,128,301,160,267,185,246,211,230,214,234,188,251,163,271,132,305,106,341,70,401"/>
+<area shape="rect" title="Autopilot initialization function." alt="" coords="5,403,113,428"/>
+<area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="165,201,339,227"/>
+<area shape="poly" title=" " alt="" coords="65,401,101,340,128,303,160,268,185,248,211,231,214,235,188,252,163,272,132,306,105,343,70,404"/>
 <area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="391,28,593,53"/>
-<area shape="poly" title=" " alt="" coords="61,399,71,359,90,303,119,242,138,212,159,186,187,160,217,137,284,100,351,72,412,54,414,59,353,77,286,104,220,141,190,164,163,189,142,215,124,244,95,305,76,361,66,400"/>
-<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#a6a545a575906e265b766ad17989a81bc" title=" " alt="" coords="161,375,343,400"/>
-<area shape="poly" title=" " alt="" coords="113,403,148,398,148,404,114,408"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24" title="Static autopilot API." alt="" coords="177,424,327,449"/>
-<area shape="poly" title=" " alt="" coords="114,417,163,423,163,428,113,422"/>
-<area shape="rect" href="autopilot_8c.html#a3200567e5b9d942f5998e9c30550cea2" title=" " alt="" coords="224,325,280,351"/>
-<area shape="poly" title=" " alt="" coords="82,397,160,360,210,344,211,349,162,364,84,402"/>
-<area shape="rect" href="autopilot_8c.html#a65644c7fe2e327f01296b259bc106f85" title=" " alt="" coords="206,473,298,499"/>
-<area shape="poly" title=" " alt="" coords="86,423,162,458,193,469,192,474,160,463,83,428"/>
-<area shape="rect" href="autopilot_8c.html#a468116423cf6003ebcd0c632cd976c02" title=" " alt="" coords="197,523,307,548"/>
-<area shape="poly" title=" " alt="" coords="72,424,109,465,135,488,163,508,185,518,182,523,160,512,131,492,105,469,68,427"/>
-<area shape="rect" href="autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c" title=" " alt="" coords="165,572,339,597"/>
-<area shape="poly" title=" " alt="" coords="68,424,102,488,129,525,163,557,174,564,171,569,160,561,125,529,97,491,63,427"/>
-<area shape="rect" href="autopilot_8c.html#a16254e24676fbc701ce5657b98cd5e7b" title=" " alt="" coords="195,621,309,647"/>
-<area shape="poly" title=" " alt="" coords="66,425,76,461,95,511,123,563,142,587,163,608,183,620,180,624,160,612,138,591,119,566,90,513,71,463,61,426"/>
+<area shape="poly" title=" " alt="" coords="61,402,71,362,90,305,119,244,138,214,159,187,187,161,218,138,284,100,352,73,414,54,415,59,354,78,287,105,221,142,190,165,163,190,142,217,124,246,95,307,76,363,66,403"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#a6a545a575906e265b766ad17989a81bc" title=" " alt="" coords="161,377,343,403"/>
+<area shape="poly" title=" " alt="" coords="113,406,148,401,148,406,114,411"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24" title="Static autopilot API." alt="" coords="177,427,327,452"/>
+<area shape="poly" title=" " alt="" coords="114,419,163,426,163,431,113,425"/>
+<area shape="rect" href="autopilot_8c.html#a3200567e5b9d942f5998e9c30550cea2" title=" " alt="" coords="224,328,280,353"/>
+<area shape="poly" title=" " alt="" coords="82,400,160,362,210,347,211,352,162,367,84,405"/>
+<area shape="rect" href="autopilot_8c.html#a65644c7fe2e327f01296b259bc106f85" title=" " alt="" coords="206,476,298,501"/>
+<area shape="poly" title=" " alt="" coords="86,426,162,461,193,471,192,476,160,466,83,431"/>
+<area shape="rect" href="autopilot_8c.html#a468116423cf6003ebcd0c632cd976c02" title=" " alt="" coords="197,525,307,551"/>
+<area shape="poly" title=" " alt="" coords="72,426,109,468,135,491,163,510,185,520,182,525,160,515,131,495,105,472,68,430"/>
+<area shape="rect" href="autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c" title=" " alt="" coords="165,575,339,600"/>
+<area shape="poly" title=" " alt="" coords="68,427,102,491,129,528,163,560,174,567,171,571,160,564,125,532,97,494,63,429"/>
+<area shape="rect" href="autopilot_8c.html#a16254e24676fbc701ce5657b98cd5e7b" title=" " alt="" coords="195,624,309,649"/>
+<area shape="poly" title=" " alt="" coords="66,427,76,464,95,513,123,565,142,589,163,609,183,621,180,626,160,613,138,592,119,568,90,515,71,465,61,429"/>
 <area shape="rect" href="autopilot_8c.html#ab2ea9756339de58fcb8d06e845605597" title=" " alt="" coords="417,275,567,300"/>
-<area shape="poly" title=" " alt="" coords="67,398,103,353,130,329,160,310,221,289,285,278,347,274,404,275,404,281,348,280,286,284,222,295,162,315,133,333,107,357,71,401"/>
-<area shape="poly" title=" " alt="" coords="264,198,341,119,362,88,373,75,389,62,401,56,404,61,392,67,376,79,367,92,345,122,268,202"/>
+<area shape="poly" title=" " alt="" coords="67,401,103,356,130,332,160,313,221,292,285,280,347,276,404,276,404,282,348,281,286,285,222,297,162,318,133,336,107,360,71,404"/>
+<area shape="poly" title=" " alt="" coords="264,199,341,120,362,89,372,76,389,62,400,56,403,61,392,67,376,79,367,92,345,124,268,203"/>
 <area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#a66607b1cbf8f7535ab395e10f531e989" title=" " alt="" coords="434,77,550,103"/>
-<area shape="poly" title=" " alt="" coords="266,198,318,155,352,132,390,112,420,101,422,106,392,116,355,136,321,160,269,202"/>
+<area shape="poly" title=" " alt="" coords="265,199,317,156,352,132,390,112,420,101,422,106,392,116,355,137,320,160,269,203"/>
 <area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#a39bb118e4dfd535f85e7106804378972" title=" " alt="" coords="438,127,546,152"/>
-<area shape="poly" title=" " alt="" coords="285,197,390,161,424,151,425,157,391,166,287,202"/>
+<area shape="poly" title=" " alt="" coords="284,199,390,161,424,151,425,157,391,166,286,204"/>
 <area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#a5b82f013ab4d5b172d8859488d3d6040" title=" " alt="" coords="439,176,545,201"/>
-<area shape="poly" title=" " alt="" coords="338,201,425,193,426,198,339,207"/>
+<area shape="poly" title=" " alt="" coords="338,202,425,193,426,198,339,208"/>
 <area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#ae015b1759bb416ee56b7a3a403b12985" title=" " alt="" coords="431,225,553,251"/>
-<area shape="poly" title=" " alt="" coords="339,219,417,228,417,233,338,224"/>
+<area shape="poly" title=" " alt="" coords="339,220,417,228,417,233,338,225"/>
 <area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#a884652270c62613741a5e4d77fe5ee9e" title=" " alt="" coords="693,373,823,399"/>
-<area shape="poly" title=" " alt="" coords="269,223,320,266,355,289,392,309,465,336,542,355,615,369,679,377,678,382,614,374,541,360,464,341,390,314,352,294,317,270,265,228"/>
-<area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#afa3e0f7f34f17d74b01b42e37aed933d" title=" " alt="" coords="443,412,541,437"/>
-<area shape="poly" title=" " alt="" coords="268,224,345,311,367,347,376,363,392,379,414,393,437,404,434,409,411,398,389,383,372,366,362,350,341,314,264,228"/>
+<area shape="poly" title=" " alt="" coords="269,225,321,267,355,290,392,309,465,335,542,355,615,368,679,377,678,382,614,374,541,360,464,341,390,314,352,294,318,271,266,229"/>
+<area shape="rect" href="fixedwing_2autopilot__firmware_8c.html#afa3e0f7f34f17d74b01b42e37aed933d" title=" " alt="" coords="443,424,541,449"/>
+<area shape="poly" title=" " alt="" coords="268,225,305,263,345,314,359,340,366,362,374,382,392,403,411,415,431,423,429,428,408,419,389,407,370,385,361,364,354,342,340,317,301,267,265,229"/>
 <area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="685,77,831,103"/>
 <area shape="poly" title=" " alt="" coords="550,87,671,87,671,93,550,93"/>
 <area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="942,77,1094,103"/>
@@ -1150,27 +1156,29 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="1075,248,1114,261,1162,285,1184,293,1182,298,1160,290,1112,266,1073,253"/>
 <area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="942,424,1094,449"/>
 <area shape="poly" title=" " alt="" coords="824,396,940,419,939,424,823,401"/>
-<area shape="poly" title=" " alt="" coords="541,423,928,432,928,437,541,428"/>
-<area shape="rect" href="autopilot_8c.html#a7339f5741706cb9c2e2186b1174cc770" title="RC frame handler." alt="" coords="408,481,576,507"/>
-<area shape="poly" title=" " alt="" coords="281,337,313,344,344,360,363,381,370,403,377,425,393,447,413,462,436,474,433,478,410,466,389,451,372,428,365,405,358,384,341,364,311,349,279,342"/>
+<area shape="poly" title=" " alt="" coords="541,434,928,434,928,439,541,439"/>
+<area shape="rect" href="autopilot_8c.html#a7339f5741706cb9c2e2186b1174cc770" title="RC frame handler." alt="" coords="408,477,576,503"/>
+<area shape="poly" title=" " alt="" coords="281,340,313,346,344,363,356,375,363,387,369,412,375,436,382,447,392,459,409,469,406,474,389,463,377,451,370,438,364,413,358,389,352,378,341,367,311,351,280,345"/>
 <area shape="rect" href="fixedwing_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title=" " alt="" coords="681,538,835,578"/>
-<area shape="poly" title=" " alt="" coords="547,504,668,534,667,539,545,509"/>
+<area shape="poly" title=" " alt="" coords="548,500,594,511,671,532,670,537,593,517,547,505"/>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="685,474,831,514"/>
-<area shape="poly" title=" " alt="" coords="576,491,671,491,671,497,576,497"/>
+<area shape="poly" title=" " alt="" coords="576,489,671,490,671,495,576,494"/>
 <area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="951,513,1085,539"/>
 <area shape="poly" title=" " alt="" coords="834,546,936,533,937,539,835,551"/>
 <area shape="poly" title=" " alt="" coords="831,475,946,450,947,455,832,481"/>
 <area shape="poly" title=" " alt="" coords="832,500,937,513,936,519,831,506"/>
-<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="391,567,593,592"/>
-<area shape="poly" title=" " alt="" coords="308,543,409,561,408,567,307,548"/>
+<area shape="rect" href="group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="391,527,593,552"/>
+<area shape="poly" title=" " alt="" coords="308,536,377,536,377,541,308,541"/>
 <area shape="rect" href="group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="674,603,842,628"/>
-<area shape="poly" title=" " alt="" coords="587,589,661,600,660,605,586,595"/>
+<area shape="poly" title=" " alt="" coords="558,549,594,561,619,574,642,588,671,597,669,602,640,592,616,579,592,566,557,555"/>
 <area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="931,603,1105,628"/>
 <area shape="poly" title=" " alt="" coords="842,613,918,613,918,618,842,618"/>
 <area shape="rect" href="group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1162,577,1317,603"/>
 <area shape="poly" title=" " alt="" coords="1105,603,1148,598,1149,603,1105,608"/>
 <area shape="rect" href="group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1161,627,1317,652"/>
 <area shape="poly" title=" " alt="" coords="1105,622,1148,627,1147,632,1105,627"/>
+<area shape="rect" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad" title="Get the 96&#45;bit unique device ID of the STM32." alt="" coords="439,576,545,601"/>
+<area shape="poly" title=" " alt="" coords="339,585,426,586,426,591,339,590"/>
 <area shape="poly" title=" " alt="" coords="566,274,592,260,603,249,609,237,614,212,620,186,628,173,640,161,658,150,661,155,643,165,632,177,625,188,620,213,614,239,607,252,595,264,568,279"/>
 <area shape="poly" title=" " alt="" coords="561,272,675,251,676,256,562,277"/>
 <area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="650,275,866,300"/>
@@ -1221,11 +1229,11 @@ Variables</h2></td></tr>
 <p>RC frame handler. </p>
 <p>Autopilot RC input event hadler. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00178">178</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00185">185</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00092">autopilot_generated_on_rc_frame()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00057">rc_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00058">rc_cb()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1281,9 +1289,9 @@ Variables</h2></td></tr>
 <p>AP periodic call. </p>
 <p>Autopilot periodic call at PERIODIC_FREQUENCY. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00146">146</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00153">153</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00321">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00189">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00295">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00340">autopilot_in_flight()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00093">autopilot_static_periodic()</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00328">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00196">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00302">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00347">autopilot_in_flight()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00093">autopilot_static_periodic()</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -1328,9 +1336,9 @@ Variables</h2></td></tr>
 <p>reset flight time and launch </p>
 <p>Reset flight time and launch status Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00229">229</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00236">236</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, and <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, and <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>.</p>
 
 </div>
 </div>
@@ -1352,9 +1360,9 @@ Variables</h2></td></tr>
 
 <p>reset in_flight counter actual implementation is firmware dependent </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00326">326</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00333">333</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00330">autopilot_set_in_flight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00337">autopilot_set_in_flight()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1401,9 +1409,9 @@ Variables</h2></td></tr>
 <p>send autopilot mode actual implementation is firmware dependent </p>
 <p>Report autopilot mode on default downlink channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00375">375</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00382">382</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00193">autopilot_set_mode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00200">autopilot_set_mode()</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1453,9 +1461,9 @@ Variables</h2></td></tr>
 <p>send autopilot version </p>
 <p>Report autopilot version on default downlink channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00367">367</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00374">374</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="autopilot_8c_source.html#l00064">send_autopilot_version()</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="autopilot_8c_source.html#l00065">send_autopilot_version()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="telemetry_8c_source.html#l00077">telemetry_reporting_task()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1468,6 +1476,8 @@ Variables</h2></td></tr>
 <area shape="rect" title="send autopilot version" alt="" coords="5,5,179,31"/>
 <area shape="rect" href="autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c" title=" " alt="" coords="227,5,400,31"/>
 <area shape="poly" title=" " alt="" coords="179,15,213,15,213,21,179,21"/>
+<area shape="rect" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad" title="Get the 96&#45;bit unique device ID of the STM32." alt="" coords="448,5,553,31"/>
+<area shape="poly" title=" " alt="" coords="401,15,434,15,434,21,401,21"/>
 </map>
 </div>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1504,9 +1514,9 @@ Variables</h2></td></tr>
 <p>set in_flight flag </p>
 <p>Set in flight status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00330">330</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00337">337</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00326">autopilot_reset_in_flight_counter()</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00333">autopilot_reset_in_flight_counter()</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>, and <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00136">nav_takeoff_run()</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1565,9 +1575,9 @@ Variables</h2></td></tr>
 <p>set kill throttle </p>
 <p>Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00302">302</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00309">309</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00257">autopilot_set_motors_on()</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="boards_2disco_2actuators_8c_source.html#l00115">actuators_disco_commit()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00145">nav_bungee_takeoff_setup()</a>, and <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1638,11 +1648,11 @@ Variables</h2></td></tr>
 <p>set autopilot mode </p>
 <p>Set new autopilot mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00193">193</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00200">200</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00375">autopilot_send_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00065">mode</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00382">autopilot_send_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00065">mode</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00380">nav_set_failsafe()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00356">pprz_mode_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, <a class="el" href="mavlink_8c_source.html#l00234">mavlink_common_message_handler()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00380">nav_set_failsafe()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00356">pprz_mode_update()</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -1706,11 +1716,11 @@ Variables</h2></td></tr>
 <p>turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is it true for FW firmware ? </p>
 <p>Start or stop motors May have no effect if motors has auto-start based on throttle setpoint or when the preflight checks are failing. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00250">250</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00257">257</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00237">autopilot_force_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00057">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00083">preflight_check()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00244">autopilot_force_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00057">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00083">preflight_check()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00092">actuators_bebop_commit()</a>, <a class="el" href="autopilot_8c_source.html#l00302">autopilot_set_kill_throttle()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>, <a class="el" href="ground__detect_8c_source.html#l00241">ground_detect_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00232">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00150">nav_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00229">NavKillThrottle()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00233">NavResurrect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00092">actuators_bebop_commit()</a>, <a class="el" href="autopilot_8c_source.html#l00309">autopilot_set_kill_throttle()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00216">autopilot_static_set_mode()</a>, <a class="el" href="ground__detect_8c_source.html#l00241">ground_detect_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00234">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00150">nav_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00229">NavKillThrottle()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00233">NavResurrect()</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1811,7 +1821,7 @@ Variables</h2></td></tr>
 <p>AP mode setting handler. </p>
 <p>Handler for setter function with dl_setting. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00211">211</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00218">218</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00071">autopilot_generated_SetModeHandler()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00147">autopilot_static_SetModeHandler()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00065">mode</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1854,9 +1864,9 @@ Variables</h2></td></tr>
 <p>store settings </p>
 <p>Store marked settings in flash Try to make sure that we don't write to flash while flying Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00347">347</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00354">354</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00081">settings_store()</a>, and <a class="el" href="settings_8c_source.html#l00045">settings_store_flag</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00081">settings_store()</a>, and <a class="el" href="settings_8c_source.html#l00045">settings_store_flag</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1893,11 +1903,11 @@ Variables</h2></td></tr>
 <p>get kill status </p>
 <p>Get kill status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00313">313</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00320">320</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="electrical_8c_source.html#l00166">electrical_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00504">mavlink_send_heartbeat()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="electrical_8c_source.html#l00166">electrical_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00506">mavlink_send_heartbeat()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -1966,11 +1976,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00057">57</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00058">58</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00178">autopilot_on_rc_frame()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00185">autopilot_on_rc_frame()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>.</p>
 <div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-30-summary" class="dynsummary" style="display:block;">
@@ -2041,11 +2051,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00071">71</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00078">78</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>.</p>
 <div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-32-summary" class="dynsummary" style="display:block;">
@@ -2095,11 +2105,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00076">76</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00083">83</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01314">stateGetNedToBodyEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>.</p>
 <div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-33-summary" class="dynsummary" style="display:block;">
@@ -2169,16 +2179,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00064">64</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00065">65</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2mcu__arch_8c_source.html#l00252">mcu_get_uid()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>, and <a class="el" href="autopilot_8c_source.html#l00367">autopilot_send_version()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>, and <a class="el" href="autopilot_8c_source.html#l00374">autopilot_send_version()</a>.</p>
 <div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_cgraph.png" border="0" usemap="#aautopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_cgraph" alt=""/></div>
+<map name="aautopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_cgraph" id="aautopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,179,31"/>
+<area shape="rect" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad" title="Get the 96&#45;bit unique device ID of the STM32." alt="" coords="227,5,332,31"/>
+<area shape="poly" title=" " alt="" coords="179,15,213,15,213,21,179,21"/>
+</map>
+</div>
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_icgraph.png" border="0" usemap="#aautopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_icgraph" alt=""/></div>
 <map name="aautopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_icgraph" id="aautopilot_8c_a4f0db67f7344287a8e1e4eaca348b66c_icgraph">
 <area shape="rect" title=" " alt="" coords="461,31,635,56"/>
@@ -2227,16 +2249,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00082">82</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00089">89</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>.</p>
-<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>.</p>
+<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph.png" border="0" usemap="#aautopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph" alt=""/></div>
 <map name="aautopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph" id="aautopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph">
 <area shape="rect" title=" " alt="" coords="161,5,276,31"/>
@@ -2281,16 +2303,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00087">87</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00094">94</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="gps_8h_source.html#l00110">GpsState::fix</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="common__flight__plan_8c_source.html#l00034">nav_block</a>, <a class="el" href="state_8h_source.html#l01085">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00857">stateGetPositionLla_f()</a>, <a class="el" href="state_8h_source.html#l00821">stateGetPositionUtm_f()</a>, <a class="el" href="state_8h_source.html#l01058">stateGetSpeedEnu_f()</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="gps_8h_source.html#l00110">GpsState::fix</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="common__flight__plan_8c_source.html#l00034">nav_block</a>, <a class="el" href="state_8h_source.html#l01085">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00857">stateGetPositionLla_f()</a>, <a class="el" href="state_8h_source.html#l00821">stateGetPositionUtm_f()</a>, <a class="el" href="state_8h_source.html#l01058">stateGetSpeedEnu_f()</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>.</p>
-<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>.</p>
+<div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-37-content" class="dyncontent" style="display:none;">
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8c_ab2ea9756339de58fcb8d06e845605597_cgraph.png" border="0" usemap="#aautopilot_8c_ab2ea9756339de58fcb8d06e845605597_cgraph" alt=""/></div>
 <map name="aautopilot_8c_ab2ea9756339de58fcb8d06e845605597_cgraph" id="aautopilot_8c_ab2ea9756339de58fcb8d06e845605597_cgraph">
 <area shape="rect" title=" " alt="" coords="5,134,155,159"/>
@@ -2336,11 +2358,11 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="659,278,712,281,711,286,659,283"/>
 </map>
 </div>
-<div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8c_ab2ea9756339de58fcb8d06e845605597_icgraph.png" border="0" usemap="#aautopilot_8c_ab2ea9756339de58fcb8d06e845605597_icgraph" alt=""/></div>
 <map name="aautopilot_8c_ab2ea9756339de58fcb8d06e845605597_icgraph" id="aautopilot_8c_ab2ea9756339de58fcb8d06e845605597_icgraph">
 <area shape="rect" title=" " alt="" coords="161,5,311,31"/>
@@ -2366,9 +2388,9 @@ Variables</h2></td></tr>
 
 <p>Global autopilot structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00049">49</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00050">50</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00299">attitude_loop()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00098">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00096">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot_8c_source.html#l00273">autopilot_arming_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00357">autopilot_clear_settings()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00272">autopilot_event()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00237">autopilot_force_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00104">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00222">autopilot_get_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00295">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00340">autopilot_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>, <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00229">autopilot_reset_flight_time()</a>, <a class="el" href="autopilot_8c_source.html#l00330">autopilot_set_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00193">autopilot_set_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00250">autopilot_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00347">autopilot_store_settings()</a>, <a class="el" href="autopilot_8c_source.html#l00313">autopilot_throttle_killed()</a>, <a class="el" href="max7456_8c_source.html#l00391">calc_flight_time_left()</a>, <a class="el" href="parachute_8c_source.html#l00088">check_parachute_arming()</a>, <a class="el" href="parachute_8c_source.html#l00121">check_parachute_trigger()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00103">control_mixing_heewing_manual()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="max7456_8c_source.html#l00644">draw_osd()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00381">Drift_correction()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00309">eff_scheduling_rotwing_update_hover_motor_effectiveness()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00656">gazebo_write()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="main__recovery_8c_source.html#l00089">main_recovery_init()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00068">mf_daq_send_state()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00199">monitor_task()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__catapult_8c_source.html#l00102">nav_catapult_highrate_module()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00135">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00180">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00267">nav_detect_ground()</a>, <a class="el" href="nav_8c_source.html#l00424">nav_home()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00150">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00096">nps_autopilot_run_step()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01963">oneloop_andi_run()</a>, <a class="el" href="oneloop__nB_8c_source.html#l02649">oneloop_nB_run()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00118">parse_mf_daq_msg()</a>, <a class="el" href="rotwing__state_8c_source.html#l00604">rotwing_state_choose_state_by_dist()</a>, <a class="el" href="rotwing__state_8c_source.html#l00286">rotwing_state_periodic()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00085">send_energy()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, <a class="el" href="autopilot_8c_source.html#l00087">send_minimal_com()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>, <a class="el" href="takeoff__detect_8c_source.html#l00085">takeoff_detect_periodic()</a>, <a class="el" href="uav__recovery_8c_source.html#l00115">uav_recovery_periodic()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00182">v_ctl_guidance_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00299">attitude_loop()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00098">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00096">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot_8c_source.html#l00280">autopilot_arming_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00295">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00364">autopilot_clear_settings()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00272">autopilot_event()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00244">autopilot_force_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00104">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00229">autopilot_get_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00302">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00347">autopilot_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>, <a class="el" href="autopilot_8c_source.html#l00153">autopilot_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00236">autopilot_reset_flight_time()</a>, <a class="el" href="autopilot_8c_source.html#l00337">autopilot_set_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00200">autopilot_set_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00257">autopilot_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00354">autopilot_store_settings()</a>, <a class="el" href="autopilot_8c_source.html#l00320">autopilot_throttle_killed()</a>, <a class="el" href="max7456_8c_source.html#l00391">calc_flight_time_left()</a>, <a class="el" href="parachute_8c_source.html#l00088">check_parachute_arming()</a>, <a class="el" href="parachute_8c_source.html#l00121">check_parachute_trigger()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00117">control_mixing_heewing_attitude_direct()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00182">control_mixing_heewing_attitude_plane()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00103">control_mixing_heewing_manual()</a>, <a class="el" href="control__mixing__heewing_8c_source.html#l00232">control_mixing_heewing_nav_run()</a>, <a class="el" href="max7456_8c_source.html#l00644">draw_osd()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00381">Drift_correction()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00309">eff_scheduling_rotwing_update_hover_motor_effectiveness()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00656">gazebo_write()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="main__recovery_8c_source.html#l00089">main_recovery_init()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00068">mf_daq_send_state()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00199">monitor_task()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__catapult_8c_source.html#l00102">nav_catapult_highrate_module()</a>, <a class="el" href="rover_2navigation_8c_source.html#l00135">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00180">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00267">nav_detect_ground()</a>, <a class="el" href="nav_8c_source.html#l00424">nav_home()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00150">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00096">nps_autopilot_run_step()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01963">oneloop_andi_run()</a>, <a class="el" href="oneloop__nB_8c_source.html#l02649">oneloop_nB_run()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00118">parse_mf_daq_msg()</a>, <a class="el" href="rotwing__state_8c_source.html#l00604">rotwing_state_choose_state_by_dist()</a>, <a class="el" href="rotwing__state_8c_source.html#l00286">rotwing_state_periodic()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00085">send_energy()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, <a class="el" href="autopilot_8c_source.html#l00094">send_minimal_com()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>, <a class="el" href="takeoff__detect_8c_source.html#l00085">takeoff_detect_periodic()</a>, <a class="el" href="uav__recovery_8c_source.html#l00115">uav_recovery_periodic()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00182">v_ctl_guidance_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>.</p>
 
 </div>
 </div>
@@ -2392,9 +2414,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00055">55</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00056">56</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00114">autopilot_init()</a>.</p>
 
 </div>
 </div>
@@ -2404,7 +2426,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="autopilot_8c.html">autopilot.c</a></li>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:27:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

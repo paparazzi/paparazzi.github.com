@@ -1,5 +1,6 @@
 var NAVTREEINDEX91 =
 {
+"ins__alt__float_8h.html#afb6a5cd07b6574dfb93f023aecfcec5d":[12,0,1,0,6,37,11,2],
 "ins__alt__float_8h.html#structInsAltFloat":[12,0,1,0,6,37,11,0],
 "ins__alt__float_8h_source.html":[12,0,1,0,6,37,11],
 "ins__arduimu_8h.html":[12,0,1,0,6,37,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX91 =
 "ins__ext__pose_8h.html#a85744463a26be9d8a6b505ee4847240da67582814248b92b6498162945d2ceca7":[12,0,1,0,6,37,19,0,1],
 "ins__ext__pose_8h.html#a85744463a26be9d8a6b505ee4847240da850b9ec9bfba55808511468204b862d6":[12,0,1,0,6,37,19,0,3],
 "ins__ext__pose_8h.html#a85744463a26be9d8a6b505ee4847240da988a78629c0bddfed0df9790f96ef3e1":[12,0,1,0,6,37,19,0,0],
-"ins__ext__pose_8h.html#a85744463a26be9d8a6b505ee4847240dae01057100c6b2b061ad98df2d0bdfc80":[12,0,1,0,6,37,19,0,4],
-"ins__ext__pose_8h.html#aa0bf8e8aad184e5324c34d15f376f2bb":[12,0,1,0,6,37,19,7]
+"ins__ext__pose_8h.html#a85744463a26be9d8a6b505ee4847240dae01057100c6b2b061ad98df2d0bdfc80":[12,0,1,0,6,37,19,0,4]
 };

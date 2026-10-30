@@ -142,6 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabd519c6c1966a7d45032bebf0040824d" id="r_gabd519c6c1966a7d45032bebf0040824d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:gabd519c6c1966a7d45032bebf0040824d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the MCU in energy save mode This disables features of the MCU to save energy.  <br /></td></tr>
 <tr class="separator:gabd519c6c1966a7d45032bebf0040824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf03b4daf531cef44873167b77770dcad" id="r_gaf03b4daf531cef44873167b77770dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad">mcu_get_uid</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:gaf03b4daf531cef44873167b77770dcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique hardware ID of the MCU.  <br /></td></tr>
+<tr class="separator:gaf03b4daf531cef44873167b77770dcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga916f2adc2080b4fe88034086d107a8dc" id="r_ga916f2adc2080b4fe88034086d107a8dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:ga916f2adc2080b4fe88034086d107a8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional board init function called at the start of <a class="el" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization.">mcu_init()</a>.  <br /></td></tr>
 <tr class="separator:ga916f2adc2080b4fe88034086d107a8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +178,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="mcu_8h_source.html#l00042">42</a> of file <a class="el" href="mcu_8h_source.html">mcu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcu_8h_source.html#l00043">43</a> of file <a class="el" href="mcu_8h_source.html">mcu.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +213,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="boards_2bebop_2board_8c_source.html#l00036">kill_gracefull()</a>, and <a class="el" href="boards_2ardrone_2board_8c_source.html#l00094">KillGracefully()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00098">mcu_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00104">mcu_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -298,7 +301,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="boards_2bebop_2board_8c_source.html#l00092">92</a> of file <a class="el" href="boards_2bebop_2board_8c_source.html">board.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00098">mcu_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00104">mcu_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -372,7 +375,7 @@ Functions</h2></td></tr>
 <p>This is used for example to quickly write to the SD card while powering off.</p>
 <p>Puts the MCU in energy save mode This disables features of the MCU to save energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00230">230</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00232">232</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l02063">BOARD_GROUP_DECLFOREACH</a>, <a class="el" href="cube_2orange_2board_8h_source.html#l01706">ENERGY_SAVE_INPUTS</a>, <a class="el" href="cube_2orange_2board_8h_source.html#l01699">ENERGY_SAVE_LOWS</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
@@ -405,7 +408,7 @@ Functions</h2></td></tr>
 <p>MCU event functions. </p>
 <p>Calls the event functions of used peripherals like i2c, uart, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="mcu_8c_source.html#l00269">269</a> of file <a class="el" href="mcu_8c_source.html">mcu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcu_8c_source.html#l00275">275</a> of file <a class="el" href="mcu_8c_source.html">mcu.c</a>.</p>
 
 <p class="reference">References <a class="el" href="chibios_2mcu__periph_2i2c__arch_8c_source.html#l00394">i2c_event()</a>, <a class="el" href="softi2c_8c_source.html#l00624">softi2c_event()</a>, and <a class="el" href="usb__serial_8h.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event()</a>.</p>
 
@@ -497,6 +500,115 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf03b4daf531cef44873167b77770dcad" name="gaf03b4daf531cef44873167b77770dcad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf03b4daf531cef44873167b77770dcad">&#9670;&#160;</a></span>mcu_get_uid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mcu_get_uid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>max_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the unique hardware ID of the MCU. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>Buffer to write the ID to </td></tr>
+    <tr><td class="paramname">max_len</td><td>Size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes written, 0 if not available</dd></dl>
+<p>Get the unique hardware ID of the MCU.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>Buffer to write the ID to </td></tr>
+    <tr><td class="paramname">max_len</td><td>Size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes written, 0 if not available</dd></dl>
+<p>Get the unique hardware ID of the MCU.</p>
+<p>Uses the serial number from LINUX_UID_FILE if set and readable, otherwise the MAC address of the first network interface.</p>
+<p>Get the unique hardware ID of the MCU.</p>
+<p>on macOS) </p>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00252">252</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2mcu__arch_8c_source.html#l00039">LINUX_UID_FILE</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="linux_2mcu__arch_8c_source.html#l00045">uid_from_file()</a>, and <a class="el" href="linux_2mcu__arch_8c_source.html#l00068">uid_from_mac()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00718">mavlink_send_autopilot_version()</a>, <a class="el" href="autopilot_8c_source.html#l00065">send_autopilot_version()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00144">send_autopilot_version()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__mcu__periph_gaf03b4daf531cef44873167b77770dcad_cgraph.png" border="0" usemap="#agroup__mcu__periph_gaf03b4daf531cef44873167b77770dcad_cgraph" alt=""/></div>
+<map name="agroup__mcu__periph_gaf03b4daf531cef44873167b77770dcad_cgraph" id="agroup__mcu__periph_gaf03b4daf531cef44873167b77770dcad_cgraph">
+<area shape="rect" title="Get the unique hardware ID of the MCU." alt="" coords="5,31,111,56"/>
+<area shape="rect" href="linux_2mcu__arch_8c.html#a2cdf10c3b8f8591ac2582a7236cea303" title="Read the first line of a text file as unique ID." alt="" coords="163,5,269,31"/>
+<area shape="poly" title=" " alt="" coords="111,32,149,26,150,31,111,38"/>
+<area shape="rect" href="linux_2mcu__arch_8c.html#a3e592bc76a9b3bb764805026a6105414" title="Get the MAC address of the first network interface (by name), skipping loopback." alt="" coords="159,55,273,80"/>
+<area shape="poly" title=" " alt="" coords="111,49,146,54,145,59,111,54"/>
+</map>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__mcu__periph_gaf03b4daf531cef44873167b77770dcad_icgraph.png" border="0" usemap="#agroup__mcu__periph_gaf03b4daf531cef44873167b77770dcad_icgraph" alt=""/></div>
+<map name="agroup__mcu__periph_gaf03b4daf531cef44873167b77770dcad_icgraph" id="agroup__mcu__periph_gaf03b4daf531cef44873167b77770dcad_icgraph">
+<area shape="rect" title="Get the unique hardware ID of the MCU." alt="" coords="688,123,793,148"/>
+<area shape="rect" href="mavlink_8c.html#a1297c21f1829da1a6e581aa98929e494" title=" " alt="" coords="461,47,640,87"/>
+<area shape="poly" title=" " alt="" coords="690,120,606,90,608,85,692,115"/>
+<area shape="rect" href="autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c" title=" " alt="" coords="464,123,637,148"/>
+<area shape="poly" title=" " alt="" coords="674,138,638,138,638,133,674,133"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a974326e4c446abb45f2c4ce43666412f" title=" " alt="" coords="464,192,637,217"/>
+<area shape="poly" title=" " alt="" coords="693,155,588,194,586,189,691,150"/>
+<area shape="rect" href="mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="275,5,378,31"/>
+<area shape="poly" title=" " alt="" coords="447,47,378,32,379,27,448,42"/>
+<area shape="rect" href="mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="259,55,394,80"/>
+<area shape="poly" title=" " alt="" coords="448,70,394,70,394,65,448,65"/>
+<area shape="rect" href="autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function." alt="" coords="273,104,381,129"/>
+<area shape="poly" title=" " alt="" coords="450,130,380,124,381,118,450,124"/>
+<area shape="rect" href="autopilot_8c.html#ac26e7b23b69d3d3dc0fd390fb96efdbb" title="send autopilot version" alt="" coords="240,153,413,179"/>
+<area shape="poly" title=" " alt="" coords="451,152,414,157,413,152,450,146"/>
+<area shape="rect" href="telemetry_8c.html#a8569c3f73297d33f638ce40e348dd61a" title="Peridioc task Send a series of initialisation messages followed by a stream of periodic ones." alt="" coords="5,153,192,179"/>
+<area shape="poly" title=" " alt="" coords="226,169,192,169,192,163,226,163"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="285,203,368,228"/>
+<area shape="poly" title=" " alt="" coords="450,212,368,216,368,211,450,207"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="71,203,126,228"/>
+<area shape="poly" title=" " alt="" coords="271,218,127,218,127,213,271,213"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ga9af744358ff4b1e3e33d7dd170862f9b" name="ga9af744358ff4b1e3e33d7dd170862f9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9af744358ff4b1e3e33d7dd170862f9b">&#9670;&#160;</a></span>mcu_init()</h2>
 
@@ -524,16 +636,16 @@ Functions</h2></td></tr>
 <p>Microcontroller peripherals initialization. </p>
 <p>This function is responisble for setting up the microcontroller after Reset. </p>
 
-<p class="definition">Definition at line <a class="el" href="mcu_8c_source.html#l00098">98</a> of file <a class="el" href="mcu_8c_source.html">mcu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcu_8c_source.html#l00104">104</a> of file <a class="el" href="mcu_8c_source.html">mcu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>, <a class="el" href="mcu_8c_source.html#l00078">board_init()</a>, <a class="el" href="mcu_8c_source.html#l00083">board_init2()</a>, <a class="el" href="can_8c_source.html#l00069">can_init()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00094">gpio_get()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00040">gpio_setup_input()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="led_8h_source.html#l00039">led_init()</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00155">mcu_arch_init()</a>, <a class="el" href="px4fmu_8h_source.html#l00324">PERIPHERAL3V3_ENABLE_ON</a>, <a class="el" href="px4fmu_8h_source.html#l00323">PERIPHERAL3V3_ENABLE_PIN</a>, <a class="el" href="px4fmu_8h_source.html#l00322">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="el" href="px4fmu_8h_source.html#l00318">RADIO_CONTROL_POWER_ON</a>, <a class="el" href="px4fmu_8h_source.html#l00317">RADIO_CONTROL_POWER_PIN</a>, <a class="el" href="px4fmu_8h_source.html#l00316">RADIO_CONTROL_POWER_PORT</a>, <a class="el" href="chibios_2mcu__periph_2rng__arch_8c_source.html#l00077">rng_init()</a>, <a class="el" href="spi_8c_source.html#l00037">spi0_init()</a>, <a class="el" href="spi_8c_source.html#l00048">spi1_init()</a>, <a class="el" href="spi_8c_source.html#l00059">spi2_init()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00735">spi_init_slaves()</a>, <a class="el" href="sys__time_8c_source.html#l00126">sys_time_init()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00054">uart_arch_init()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00043">udp_arch_init()</a>, and <a class="el" href="usb__serial_8h.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init()</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>, <a class="el" href="mcu_8c_source.html#l00078">board_init()</a>, <a class="el" href="mcu_8c_source.html#l00083">board_init2()</a>, <a class="el" href="can_8c_source.html#l00069">can_init()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00094">gpio_get()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00040">gpio_setup_input()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="led_8h_source.html#l00039">led_init()</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00157">mcu_arch_init()</a>, <a class="el" href="px4fmu_8h_source.html#l00324">PERIPHERAL3V3_ENABLE_ON</a>, <a class="el" href="px4fmu_8h_source.html#l00323">PERIPHERAL3V3_ENABLE_PIN</a>, <a class="el" href="px4fmu_8h_source.html#l00322">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="el" href="px4fmu_8h_source.html#l00318">RADIO_CONTROL_POWER_ON</a>, <a class="el" href="px4fmu_8h_source.html#l00317">RADIO_CONTROL_POWER_PIN</a>, <a class="el" href="px4fmu_8h_source.html#l00316">RADIO_CONTROL_POWER_PORT</a>, <a class="el" href="chibios_2mcu__periph_2rng__arch_8c_source.html#l00077">rng_init()</a>, <a class="el" href="spi_8c_source.html#l00037">spi0_init()</a>, <a class="el" href="spi_8c_source.html#l00048">spi1_init()</a>, <a class="el" href="spi_8c_source.html#l00059">spi2_init()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00735">spi_init_slaves()</a>, <a class="el" href="sys__time_8c_source.html#l00126">sys_time_init()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00054">uart_arch_init()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00043">udp_arch_init()</a>, and <a class="el" href="usb__serial_8h.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="usb__tunnel_8c_source.html#l00088">main()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="setup__actuators_8c_source.html#l00070">main_init()</a>, <a class="el" href="main__demo2_8c_source.html#l00021">main_init()</a>, <a class="el" href="main__demo3_8c_source.html#l00023">main_init()</a>, <a class="el" href="main__demo4_8c_source.html#l00024">main_init()</a>, <a class="el" href="main__demo5_8c_source.html#l00028">main_init()</a>, and <a class="el" href="main__demo6_8c_source.html#l00024">main_init()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_cgraph.png" border="0" usemap="#agroup__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_cgraph" alt=""/></div>
 <map name="agroup__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_cgraph" id="agroup__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_cgraph">
 <area shape="rect" title="Microcontroller peripherals initialization." alt="" coords="5,524,84,549"/>
@@ -640,11 +752,11 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="662,1003,725,1003,725,1009,662,1009"/>
 </map>
 </div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_icgraph.png" border="0" usemap="#agroup__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_icgraph" alt=""/></div>
 <map name="agroup__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_icgraph" id="agroup__mcu__periph_ga9af744358ff4b1e3e33d7dd170862f9b_icgraph">
 <area shape="rect" title="Microcontroller peripherals initialization." alt="" coords="239,179,317,204"/>
@@ -728,16 +840,16 @@ Functions</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00206">206</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00208">208</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00252">mcu_deep_sleep()</a>, <a class="el" href="mcu_8h_source.html#l00046">MCU_REBOOT_BOOTLOADER</a>, <a class="el" href="mcu_8h_source.html#l00045">MCU_REBOOT_FAST</a>, <a class="el" href="mcu_8h_source.html#l00044">MCU_REBOOT_POWEROFF</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00141">RTC_BOOT_FAST</a>, and <a class="el" href="chibios_2mcu__arch_8c_source.html#l00140">RTC_BOOT_HOLD</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00273">mcu_deep_sleep()</a>, <a class="el" href="mcu_8h_source.html#l00047">MCU_REBOOT_BOOTLOADER</a>, <a class="el" href="mcu_8h_source.html#l00046">MCU_REBOOT_FAST</a>, <a class="el" href="mcu_8h_source.html#l00045">MCU_REBOOT_POWEROFF</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00143">RTC_BOOT_FAST</a>, and <a class="el" href="chibios_2mcu__arch_8c_source.html#l00142">RTC_BOOT_HOLD</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="px4__flash_8c_source.html#l00088">px4flash_event()</a>, and <a class="el" href="usbStorage_8c_source.html#l00100">thdUsbStorage()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_cgraph.png" border="0" usemap="#agroup__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_cgraph" alt=""/></div>
 <map name="agroup__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_cgraph" id="agroup__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_cgraph">
 <area shape="rect" title="Reboot the MCU Should not be called during flight or ciritcal operations." alt="" coords="5,5,104,31"/>
@@ -745,11 +857,11 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="104,15,138,15,138,21,104,21"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_icgraph.png" border="0" usemap="#agroup__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_icgraph" alt=""/></div>
 <map name="agroup__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_icgraph" id="agroup__mcu__periph_ga4c4b3d4809e69cc0f0ee9b2882081caa_icgraph">
 <area shape="rect" title="Reboot the MCU Should not be called during flight or ciritcal operations." alt="" coords="580,31,679,56"/>
@@ -771,7 +883,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:28:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

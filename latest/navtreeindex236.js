@@ -1,5 +1,9 @@
 var NAVTREEINDEX236 =
 {
+"wind__estimation__quadrotor_8c.html#structwind__estimation__quadrotor":[12,0,1,0,6,44,51,0],
+"wind__estimation__quadrotor_8c_source.html":[12,0,1,0,6,44,51],
+"wind__estimation__quadrotor_8h.html":[12,0,1,0,6,44,52],
+"wind__estimation__quadrotor_8h.html#a01ebd8f95f2c668cf39207f26ca97cc3":[12,0,1,0,6,44,52,4],
 "wind__estimation__quadrotor_8h.html#a0b8640b6ea9df7ad6968a6a1b725268d":[12,0,1,0,6,44,52,0,0],
 "wind__estimation__quadrotor_8h.html#a12628282e6072bb4bae58d9ba1363053":[12,0,1,0,6,44,52,7],
 "wind__estimation__quadrotor_8h.html#a15f51b61543a3bf63e3d33ce21d5cb36":[12,0,1,0,6,44,52,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX236 =
 "xsens_8c.html#afee0dcb6f58d38d7a479ac2569111338":[12,0,1,0,6,37,53,2],
 "xsens_8c_source.html":[12,0,1,0,6,37,53],
 "xsens_8h.html":[12,0,1,0,6,37,54],
-"xsens_8h.html#a47f12136c89e8cc13ff45e72caab8a19":[12,0,1,0,6,37,54,3],
-"xsens_8h.html#a6345aa5f7a6fc2de9539539d91bf0cba":[12,0,1,0,6,37,54,4],
-"xsens_8h.html#a7dcaa5041c2da4d7b3a8af364132770a":[12,0,1,0,6,37,54,2],
-"xsens_8h.html#ab70c0597795ff7438eb8a723923fc421":[12,0,1,0,6,37,54,5],
-"xsens_8h_source.html":[12,0,1,0,6,37,54]
+"xsens_8h.html#a47f12136c89e8cc13ff45e72caab8a19":[12,0,1,0,6,37,54,3]
 };

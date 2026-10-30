@@ -1,12 +1,16 @@
 var NAVTREEINDEX105 =
 {
+"linux_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b":[12,0,1,0,0,1,2,1],
 "linux_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f":[12,0,1,0,0,1,2,2],
 "linux_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9":[12,0,1,0,0,1,2,0],
 "linux_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b":[12,0,1,0,0,1,2,4],
 "linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[12,0,1,0,0,1,2,5],
 "linux_2led__hw_8h_source.html":[12,0,1,0,0,1,2],
 "linux_2mcu__arch_8c.html":[12,0,1,0,0,1,3],
-"linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,3,0],
+"linux_2mcu__arch_8c.html#a13ec37bda4f4dabe6d497020ce185a0c":[12,0,1,0,0,1,3,0],
+"linux_2mcu__arch_8c.html#a2cdf10c3b8f8591ac2582a7236cea303":[12,0,1,0,0,1,3,3],
+"linux_2mcu__arch_8c.html#a3e592bc76a9b3bb764805026a6105414":[12,0,1,0,0,1,3,4],
+"linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,3,1],
 "linux_2mcu__arch_8c_source.html":[12,0,1,0,0,1,3],
 "linux_2mcu__arch_8h.html":[12,0,1,0,0,1,4],
 "linux_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,4,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX105 =
 "lis3mdl_8c.html#a2abe827c04578b90a64757b802bcea28":[12,0,1,0,7,74,25],
 "lis3mdl_8c.html#a2c9d1860f55deb48ccc7131345bef62d":[12,0,1,0,7,74,7],
 "lis3mdl_8c.html#a3cce449509199a0d57540259db29e25c":[12,0,1,0,7,74,20],
-"lis3mdl_8c.html#a452746f7607927b3a5bd3b7a8b71ed1f":[12,0,1,0,7,74,19],
-"lis3mdl_8c.html#a4bfa1fdbdb023df16d1936d4444b8e33":[12,0,1,0,7,74,4],
-"lis3mdl_8c.html#a6bd5d58e25c47cf96038e013675539d9":[12,0,1,0,7,74,21],
-"lis3mdl_8c.html#a6f0930bbdf851d6c0042e3884d1ec3d6":[12,0,1,0,7,74,22],
-"lis3mdl_8c.html#a6f88cf7df908dc5c9651fbc8dde8b345":[12,0,1,0,7,74,26]
+"lis3mdl_8c.html#a452746f7607927b3a5bd3b7a8b71ed1f":[12,0,1,0,7,74,19]
 };

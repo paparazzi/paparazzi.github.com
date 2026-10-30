@@ -100,7 +100,8 @@ $(document).ready(function(){initNavTree('chibios_2mcu__arch_8c.html',''); initR
 
 <p>Microcontroller initialization function for ChibiOS.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;ch.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;ch.h&quot;</code><br />
 <code>#include &quot;hal.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ram__arch_8h_source.html">mcu_periph/ram_arch.h</a>&quot;</code><br />
@@ -111,17 +112,21 @@ $(document).ready(function(){initNavTree('chibios_2mcu__arch_8c.html',''); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2chibios_2mcu__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2chibios_2mcu__arch_8c" id="asw_2airborne_2arch_2chibios_2mcu__arch_8c">
-<area shape="rect" title="Microcontroller initialization function for ChibiOS." alt="" coords="57,5,237,45"/>
-<area shape="rect" title=" " alt="" coords="5,93,55,119"/>
-<area shape="poly" title=" " alt="" coords="120,48,60,88,57,84,117,43"/>
-<area shape="rect" title=" " alt="" coords="79,93,133,119"/>
-<area shape="poly" title=" " alt="" coords="140,47,121,82,116,80,135,44"/>
-<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="157,93,220,119"/>
-<area shape="poly" title=" " alt="" coords="160,44,178,80,174,82,155,47"/>
-<area shape="rect" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7." alt="" coords="244,93,419,119"/>
-<area shape="poly" title=" " alt="" coords="192,43,293,85,291,90,190,48"/>
-<area shape="rect" title=" " alt="" coords="140,167,237,192"/>
-<area shape="poly" title=" " alt="" coords="191,119,191,153,186,153,186,119"/>
+<area shape="rect" title="Microcontroller initialization function for ChibiOS." alt="" coords="111,5,291,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,76,119"/>
+<area shape="poly" title=" " alt="" coords="164,48,78,90,75,85,161,43"/>
+<area shape="rect" title=" " alt="" coords="100,93,149,119"/>
+<area shape="poly" title=" " alt="" coords="184,47,148,85,144,81,180,44"/>
+<area shape="rect" title=" " alt="" coords="173,93,228,119"/>
+<area shape="poly" title=" " alt="" coords="203,46,203,79,198,79,198,46"/>
+<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="252,93,315,119"/>
+<area shape="poly" title=" " alt="" coords="223,44,263,82,259,86,219,47"/>
+<area shape="rect" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7." alt="" coords="339,93,513,119"/>
+<area shape="poly" title=" " alt="" coords="256,43,381,86,379,91,254,48"/>
+<area shape="rect" title=" " alt="" coords="205,167,260,192"/>
+<area shape="poly" title=" " alt="" coords="277,121,251,157,247,154,273,117"/>
+<area shape="rect" title=" " alt="" coords="284,167,381,192"/>
+<area shape="poly" title=" " alt="" coords="294,117,319,154,315,157,289,121"/>
 </map>
 </div>
 </div>
@@ -155,6 +160,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabd519c6c1966a7d45032bebf0040824d" id="r_gabd519c6c1966a7d45032bebf0040824d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:gabd519c6c1966a7d45032bebf0040824d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save energy for performing operations on shutdown Used for example to shutdown SD-card logging.  <br /></td></tr>
 <tr class="separator:gabd519c6c1966a7d45032bebf0040824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf03b4daf531cef44873167b77770dcad" id="r_gaf03b4daf531cef44873167b77770dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad">mcu_get_uid</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:gaf03b4daf531cef44873167b77770dcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the 96-bit unique device ID of the STM32.  <br /></td></tr>
+<tr class="separator:gaf03b4daf531cef44873167b77770dcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Microcontroller initialization function for ChibiOS. </p>
@@ -188,7 +196,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00138">138</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00140">140</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
 </div>
 </div>
@@ -211,11 +219,11 @@ Functions</h2></td></tr>
 
 <p>Initialize the specific archittecture functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00155">155</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00157">157</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00098">mcu_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00104">mcu_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -289,11 +297,11 @@ Functions</h2></td></tr>
 <p>This can be used when closing the SD log files right after a power down to save the remaining energy for the SD card internal MCU</p>
 <p>Never call this during flight! </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00252">252</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00273">273</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__arch_8c_source.html#l00206">mcu_reboot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__arch_8c_source.html#l00208">mcu_reboot()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -323,7 +331,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="chibios_2mcu__arch_8c.html">mcu_arch.c</a></li>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:27:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

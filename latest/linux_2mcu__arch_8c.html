@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__arch_8c.html',''); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">mcu_arch.c File Reference</div></div>
 </div><!--header-->
@@ -100,6 +101,10 @@ $(document).ready(function(){initNavTree('linux_2mcu__arch_8c.html',''); initRes
 <p>linux arch dependant microcontroller initialisation functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="linux_2mcu__arch_8h_source.html">mcu_arch.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mcu_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,16 +112,43 @@ $(document).ready(function(){initNavTree('linux_2mcu__arch_8c.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2linux_2mcu__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2linux_2mcu__arch_8c" id="asw_2airborne_2arch_2linux_2mcu__arch_8c">
-<area shape="rect" title="linux arch dependant microcontroller initialisation functions." alt="" coords="5,5,172,45"/>
-<area shape="rect" href="linux_2mcu__arch_8h.html" title="linux arch dependant microcontroller initialisation functions." alt="" coords="40,93,137,119"/>
-<area shape="poly" title=" " alt="" coords="91,46,91,79,86,79,86,46"/>
+<area shape="rect" title="linux arch dependant microcontroller initialisation functions." alt="" coords="164,5,331,45"/>
+<area shape="rect" href="linux_2mcu__arch_8h.html" title="linux arch dependant microcontroller initialisation functions." alt="" coords="5,93,103,119"/>
+<area shape="poly" title=" " alt="" coords="202,48,96,91,94,86,200,43"/>
+<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="127,93,189,119"/>
+<area shape="poly" title=" " alt="" coords="227,48,183,86,180,82,224,44"/>
+<area shape="rect" title=" " alt="" coords="214,93,281,119"/>
+<area shape="poly" title=" " alt="" coords="250,46,250,79,245,79,245,46"/>
+<area shape="rect" title=" " alt="" coords="305,93,376,119"/>
+<area shape="poly" title=" " alt="" coords="272,44,318,82,314,86,268,48"/>
+<area shape="rect" title=" " alt="" coords="401,93,473,119"/>
+<area shape="poly" title=" " alt="" coords="294,43,397,85,395,90,292,48"/>
+<area shape="rect" title=" " alt="" coords="80,167,135,192"/>
+<area shape="poly" title=" " alt="" coords="152,121,126,157,121,154,147,117"/>
+<area shape="rect" title=" " alt="" coords="159,167,256,192"/>
+<area shape="poly" title=" " alt="" coords="168,117,194,154,189,157,164,121"/>
 </map>
 </div>
 </div>
 <p><a href="linux_2mcu__arch_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a13ec37bda4f4dabe6d497020ce185a0c" id="r_a13ec37bda4f4dabe6d497020ce185a0c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__arch_8c.html#a13ec37bda4f4dabe6d497020ce185a0c">LINUX_UID_FILE</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="memdesc:a13ec37bda4f4dabe6d497020ce185a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional file with a unique board serial number (read as text)  <br /></td></tr>
+<tr class="separator:a13ec37bda4f4dabe6d497020ce185a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2cdf10c3b8f8591ac2582a7236cea303" id="r_a2cdf10c3b8f8591ac2582a7236cea303"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__arch_8c.html#a2cdf10c3b8f8591ac2582a7236cea303">uid_from_file</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *path, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:a2cdf10c3b8f8591ac2582a7236cea303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the first line of a text file as unique ID.  <br /></td></tr>
+<tr class="separator:a2cdf10c3b8f8591ac2582a7236cea303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e592bc76a9b3bb764805026a6105414" id="r_a3e592bc76a9b3bb764805026a6105414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__arch_8c.html#a3e592bc76a9b3bb764805026a6105414">uid_from_mac</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:a3e592bc76a9b3bb764805026a6105414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MAC address of the first network interface (by name), skipping loopback.  <br /></td></tr>
+<tr class="separator:a3e592bc76a9b3bb764805026a6105414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf03b4daf531cef44873167b77770dcad" id="r_gaf03b4daf531cef44873167b77770dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad">mcu_get_uid</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:gaf03b4daf531cef44873167b77770dcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a unique hardware ID of the board.  <br /></td></tr>
+<tr class="separator:gaf03b4daf531cef44873167b77770dcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87671303c7d4a9264b1ffbb07e87f454" id="r_a87671303c7d4a9264b1ffbb07e87f454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a87671303c7d4a9264b1ffbb07e87f454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the specific archittecture functions.  <br /></td></tr>
 <tr class="separator:a87671303c7d4a9264b1ffbb07e87f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,7 +158,26 @@ Functions</h2></td></tr>
 <p>Because Linux runs on omap, we don't have to initialize the MCU ourselves. </p>
 
 <p class="definition">Definition in file <a class="el" href="linux_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a13ec37bda4f4dabe6d497020ce185a0c" name="a13ec37bda4f4dabe6d497020ce185a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ec37bda4f4dabe6d497020ce185a0c">&#9670;&#160;</a></span>LINUX_UID_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> LINUX_UID_FILE&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional file with a unique board serial number (read as text) </p>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__arch_8c_source.html#l00039">39</a> of file <a class="el" href="linux_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a87671303c7d4a9264b1ffbb07e87f454" name="a87671303c7d4a9264b1ffbb07e87f454"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87671303c7d4a9264b1ffbb07e87f454">&#9670;&#160;</a></span>mcu_arch_init()</h2>
 
@@ -145,7 +196,125 @@ Functions</h2></td></tr>
 
 <p>Initialize the specific archittecture functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__arch_8c_source.html#l00077">77</a> of file <a class="el" href="linux_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__arch_8c_source.html#l00168">168</a> of file <a class="el" href="linux_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+
+</div>
+</div>
+<a id="a2cdf10c3b8f8591ac2582a7236cea303" name="a2cdf10c3b8f8591ac2582a7236cea303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cdf10c3b8f8591ac2582a7236cea303">&#9670;&#160;</a></span>uid_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> uid_from_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>max_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the first line of a text file as unique ID. </p>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__arch_8c_source.html#l00045">45</a> of file <a class="el" href="linux_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="linux_2mcu__arch_8c_source.html#l00114">mcu_get_uid()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__arch_8c_a2cdf10c3b8f8591ac2582a7236cea303_icgraph.png" border="0" usemap="#alinux_2mcu__arch_8c_a2cdf10c3b8f8591ac2582a7236cea303_icgraph" alt=""/></div>
+<map name="alinux_2mcu__arch_8c_a2cdf10c3b8f8591ac2582a7236cea303_icgraph" id="alinux_2mcu__arch_8c_a2cdf10c3b8f8591ac2582a7236cea303_icgraph">
+<area shape="rect" title="Read the first line of a text file as unique ID." alt="" coords="159,5,265,31"/>
+<area shape="rect" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad" title="Get a unique hardware ID of the board." alt="" coords="5,5,111,31"/>
+<area shape="poly" title=" " alt="" coords="145,21,111,21,111,15,145,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3e592bc76a9b3bb764805026a6105414" name="a3e592bc76a9b3bb764805026a6105414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e592bc76a9b3bb764805026a6105414">&#9670;&#160;</a></span>uid_from_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> uid_from_mac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>max_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the MAC address of the first network interface (by name), skipping loopback. </p>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__arch_8c_source.html#l00068">68</a> of file <a class="el" href="linux_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="linux_2mcu__arch_8c_source.html#l00114">mcu_get_uid()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__arch_8c_a3e592bc76a9b3bb764805026a6105414_icgraph.png" border="0" usemap="#alinux_2mcu__arch_8c_a3e592bc76a9b3bb764805026a6105414_icgraph" alt=""/></div>
+<map name="alinux_2mcu__arch_8c_a3e592bc76a9b3bb764805026a6105414_icgraph" id="alinux_2mcu__arch_8c_a3e592bc76a9b3bb764805026a6105414_icgraph">
+<area shape="rect" title="Get the MAC address of the first network interface (by name), skipping loopback." alt="" coords="159,5,273,31"/>
+<area shape="rect" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad" title="Get a unique hardware ID of the board." alt="" coords="5,5,111,31"/>
+<area shape="poly" title=" " alt="" coords="145,21,111,21,111,15,145,15"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -155,7 +324,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="linux_2mcu__arch_8c.html">mcu_arch.c</a></li>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:27:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

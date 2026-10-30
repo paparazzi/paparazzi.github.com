@@ -1,5 +1,9 @@
 var NAVTREEINDEX132 =
 {
+"module__ahrs_common.html#headers":[1,27,3,0],
+"module__ahrs_common.html#init_functions":[1,27,2,0],
+"module__ahrs_common.html#module_load_example__ahrs_common":[1,27,0],
+"module__ahrs_common.html#module_xml__ahrs_common":[1,27,3,2],
 "module__ahrs_common.html#sources":[1,27,3,1],
 "module__ahrs_float_cmpl_quat.html":[1,28],
 "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat":[1,28,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX132 =
 "module__bebop_ae_awb.html":[1,57],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
-"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0],
-"module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,57,2,0],
-"module__bebop_cam.html":[1,493],
-"module__bebop_cam.html#configuration__bebop_cam":[1,493,1],
-"module__bebop_cam.html#functions__bebop_cam":[1,493,2]
+"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0]
 };

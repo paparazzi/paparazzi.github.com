@@ -1,5 +1,9 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,209,1,0],
+"module__imu_aspirin_i2c_v1_5.html":[1,210],
+"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,210,0],
+"module__imu_aspirin_v1_0.html":[1,211],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,211,0],
 "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,211,0,0],
 "module__imu_aspirin_v1_5.html":[1,212],
@@ -245,9 +249,5 @@ var NAVTREEINDEX136 =
 "module__jevois.html":[1,452],
 "module__jevois.html#configuration__jevois":[1,452,1],
 "module__jevois.html#functions__jevois":[1,452,2],
-"module__jevois.html#module_load_example__jevois":[1,452,0],
-"module__jevois.html#module_xml__jevois":[1,452,2,0],
-"module__jevois_mavlink.html":[1,453],
-"module__jevois_mavlink.html#functions__jevois_mavlink":[1,453,1],
-"module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,453,0]
+"module__jevois.html#module_load_example__jevois":[1,452,0]
 };

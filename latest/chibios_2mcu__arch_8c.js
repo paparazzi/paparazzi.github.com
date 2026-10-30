@@ -10,5 +10,6 @@ var chibios_2mcu__arch_8c =
     [ "mcu_arch_init", "chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454", null ],
     [ "mcu_deep_sleep", "chibios_2mcu__arch_8c.html#a1296057f718ade4eeb9674b9c3550cb8", null ],
     [ "mcu_energy_save", "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d", null ],
+    [ "mcu_get_uid", "group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad", null ],
     [ "mcu_reboot", "group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa", null ]
 ];

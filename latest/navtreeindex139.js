@@ -1,5 +1,9 @@
 var NAVTREEINDEX139 =
 {
+"module__pump_control.html#functions__pump_control":[1,531,2],
+"module__pump_control.html#module_load_example__pump_control":[1,531,0],
+"module__pump_control.html#module_xml__pump_control":[1,531,2,0],
+"module__pwm_meas.html":[1,81],
 "module__pwm_meas.html#configuration__pwm_meas":[1,81,1],
 "module__pwm_meas.html#functions__pwm_meas":[1,81,2],
 "module__pwm_meas.html#module_load_example__pwm_meas":[1,81,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX139 =
 "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple":[1,468,2,0],
 "module__stabilization_int_euler.html":[1,469],
 "module__stabilization_int_euler.html#configuration__stabilization_int_euler":[1,469,1],
-"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,469,2],
-"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,469,0],
-"module__stabilization_int_euler.html#module_xml__stabilization_int_euler":[1,469,2,0],
-"module__stabilization_int_quat.html":[1,470],
-"module__stabilization_int_quat.html#configuration__stabilization_int_quat":[1,470,1]
+"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,469,2]
 };

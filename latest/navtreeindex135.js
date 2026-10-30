@@ -1,5 +1,9 @@
 var NAVTREEINDEX135 =
 {
+"module__gps_piksi.html#functions__gps_piksi":[1,172,2],
+"module__gps_piksi.html#module_load_example__gps_piksi":[1,172,0],
+"module__gps_piksi.html#module_xml__gps_piksi":[1,172,2,0],
+"module__gps_sim.html":[1,173],
 "module__gps_sim.html#functions__gps_sim":[1,173,1],
 "module__gps_sim.html#module_load_example__gps_sim":[1,173,0],
 "module__gps_sim.html#module_xml__gps_sim":[1,173,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_aspirin_i2c_common.html#module_xml__imu_aspirin_i2c_common":[1,208,2,0],
 "module__imu_aspirin_i2c_v1_0.html":[1,209],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,209,1],
-"module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,209,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,209,1,0],
-"module__imu_aspirin_i2c_v1_5.html":[1,210],
-"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,210,0],
-"module__imu_aspirin_v1_0.html":[1,211]
+"module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,209,0]
 };

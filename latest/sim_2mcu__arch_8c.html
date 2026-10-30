@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('sim_2mcu__arch_8c.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="sim_2mcu__arch_8h_source.html">mcu_arch.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mcu_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,9 +107,19 @@ $(document).ready(function(){initNavTree('sim_2mcu__arch_8c.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2sim_2mcu__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2sim_2mcu__arch_8c" id="asw_2airborne_2arch_2sim_2mcu__arch_8c">
-<area shape="rect" title=" " alt="" coords="5,5,164,45"/>
-<area shape="rect" href="sim_2mcu__arch_8h.html" title=" " alt="" coords="36,93,133,119"/>
-<area shape="poly" title=" " alt="" coords="87,46,87,79,82,79,82,46"/>
+<area shape="rect" title=" " alt="" coords="123,5,281,45"/>
+<area shape="rect" href="sim_2mcu__arch_8h.html" title=" " alt="" coords="5,93,103,119"/>
+<area shape="poly" title=" " alt="" coords="168,48,89,89,87,84,165,43"/>
+<area shape="rect" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="127,93,189,119"/>
+<area shape="poly" title=" " alt="" coords="194,47,174,83,169,80,189,44"/>
+<area shape="rect" title=" " alt="" coords="214,93,281,119"/>
+<area shape="poly" title=" " alt="" coords="215,44,236,80,231,83,211,47"/>
+<area shape="rect" title=" " alt="" coords="305,93,376,119"/>
+<area shape="poly" title=" " alt="" coords="237,43,309,84,307,89,234,48"/>
+<area shape="rect" title=" " alt="" coords="80,167,135,192"/>
+<area shape="poly" title=" " alt="" coords="152,121,126,157,121,154,147,117"/>
+<area shape="rect" title=" " alt="" coords="159,167,256,192"/>
+<area shape="poly" title=" " alt="" coords="168,117,194,154,189,157,164,121"/>
 </map>
 </div>
 </div>
@@ -117,6 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a87671303c7d4a9264b1ffbb07e87f454" id="r_a87671303c7d4a9264b1ffbb07e87f454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a87671303c7d4a9264b1ffbb07e87f454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the specific archittecture functions.  <br /></td></tr>
 <tr class="separator:a87671303c7d4a9264b1ffbb07e87f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf03b4daf531cef44873167b77770dcad" id="r_gaf03b4daf531cef44873167b77770dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad">mcu_get_uid</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:gaf03b4daf531cef44873167b77770dcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify the PC running the simulation by its machine ID (128 bit), empty if not available (e.g.  <br /></td></tr>
+<tr class="separator:gaf03b4daf531cef44873167b77770dcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a87671303c7d4a9264b1ffbb07e87f454" name="a87671303c7d4a9264b1ffbb07e87f454"></a>
@@ -137,7 +153,7 @@ Functions</h2></td></tr>
 
 <p>Initialize the specific archittecture functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sim_2mcu__arch_8c_source.html#l00004">4</a> of file <a class="el" href="sim_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim_2mcu__arch_8c_source.html#l00008">8</a> of file <a class="el" href="sim_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
 </div>
 </div>
@@ -147,7 +163,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim_2mcu__arch_8c.html">mcu_arch.c</a></li>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:27:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -489,7 +489,13 @@ AUTOPILOT_VERSION (ID 1)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">version   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">version encoded as: MAJOR * 10000 + MINOR * 100 + PATCH    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">desc   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">version description as string from paparazzi_version   </td></tr>
+<td class="markdownTableBodyNone">desc   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">version description as string from paparazzi_version    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">sha1   </td><td class="markdownTableBodyNone">uint8[20]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">full git commit hash of the build    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">build_time   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone">build time as UTC unix timestamp, 0 if unknown    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mcu_uid   </td><td class="markdownTableBodyNone">uint8[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">unique hardware ID: STM32 UID (12 bytes), Linux board serial or MAC address, PC machine ID in simulation; empty if not available   </td></tr>
 </table>
 <h2><a class="anchor" id="ALIVE"></a>
 ALIVE (ID 2)</h2>
@@ -7241,7 +7247,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:28:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

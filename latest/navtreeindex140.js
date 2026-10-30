@@ -1,5 +1,9 @@
 var NAVTREEINDEX140 =
 {
+"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,469,0],
+"module__stabilization_int_euler.html#module_xml__stabilization_int_euler":[1,469,2,0],
+"module__stabilization_int_quat.html":[1,470],
+"module__stabilization_int_quat.html#configuration__stabilization_int_quat":[1,470,1],
 "module__stabilization_int_quat.html#functions__stabilization_int_quat":[1,470,2],
 "module__stabilization_int_quat.html#module_load_example__stabilization_int_quat":[1,470,0],
 "module__stabilization_int_quat.html#module_xml__stabilization_int_quat":[1,470,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX140 =
 "module__tunnel_uavcan.html#configuration__tunnel_uavcan":[1,132,1],
 "module__tunnel_uavcan.html#functions__tunnel_uavcan":[1,132,2],
 "module__tunnel_uavcan.html#module_load_example__tunnel_uavcan":[1,132,0],
-"module__tunnel_uavcan.html#module_xml__tunnel_uavcan":[1,132,2,0],
-"module__uart.html":[1,295],
-"module__uart.html#module_load_example__uart":[1,295,0],
-"module__uart.html#module_xml__uart":[1,295,0,0],
-"module__uav_recovery.html":[1,543]
+"module__tunnel_uavcan.html#module_xml__tunnel_uavcan":[1,132,2,0]
 };

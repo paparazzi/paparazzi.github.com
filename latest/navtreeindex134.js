@@ -1,5 +1,9 @@
 var NAVTREEINDEX134 =
 {
+"module__direct_memory_logger.html#functions__direct_memory_logger":[1,275,2],
+"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,275,0],
+"module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,275,2,0],
+"module__distributed_circular_formation.html":[1,501],
 "module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,501,1],
 "module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,501,3],
 "module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,501,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__gps_optitrack.html#module_load_example__gps_optitrack":[1,171,0],
 "module__gps_optitrack.html#module_xml__gps_optitrack":[1,171,0,0],
 "module__gps_piksi.html":[1,172],
-"module__gps_piksi.html#configuration__gps_piksi":[1,172,1],
-"module__gps_piksi.html#functions__gps_piksi":[1,172,2],
-"module__gps_piksi.html#module_load_example__gps_piksi":[1,172,0],
-"module__gps_piksi.html#module_xml__gps_piksi":[1,172,2,0],
-"module__gps_sim.html":[1,173]
+"module__gps_piksi.html#configuration__gps_piksi":[1,172,1]
 };

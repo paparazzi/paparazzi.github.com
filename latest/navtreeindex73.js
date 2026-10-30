@@ -76,11 +76,12 @@ var NAVTREEINDEX73 =
 "group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[9,8,0,6],
 "group__math__orientation__representation.html#structOrientationReps":[9,8,0,0],
 "group__mcu__periph.html":[9,0],
-"group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa":[9,0,8],
+"group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa":[9,0,9],
 "group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0":[9,0,2],
 "group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc":[9,0,3],
-"group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b":[9,0,7],
+"group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b":[9,0,8],
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[9,0,5],
+"group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad":[9,0,7],
 "group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[9,0,6],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[9,0,4],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[9,0,2,3],
@@ -228,8 +229,8 @@ var NAVTREEINDEX73 =
 "group__state__attitude.html#gabd504420939066fb2ddff8da71b7f8ef":[9,4,6,12],
 "group__state__attitude.html#gabe01568727616fe1fdac687072ed57ea":[9,4,6,13],
 "group__state__interface.html":[9,4],
-"group__state__interface.html#a28ce1a7a06fd62c76fbceece1307bbf3":[9,4,8,1],
 "group__state__interface.html#a28ce1a7a06fd62c76fbceece1307bbf3":[9,4,9,1],
+"group__state__interface.html#a28ce1a7a06fd62c76fbceece1307bbf3":[9,4,8,1],
 "group__state__interface.html#a3b2301e7b4c91b877dd2d0203faa710c":[9,4,7,6],
 "group__state__interface.html#a91cb53c4708d25d296b9844e3055992c":[9,4,9,0],
 "group__state__interface.html#a91cb53c4708d25d296b9844e3055992c":[9,4,8,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "group__state__position.html#ga09a0efa4d14223ecfca0a16af53cf6bf":[9,4,0,10],
 "group__state__position.html#ga0d387adbc141f1918d6adfefed7717ae":[9,4,0,49],
 "group__state__position.html#ga1079cbda74a805c577953981e58943fa":[9,4,0,33],
-"group__state__position.html#ga1aa7a451021443c591b83be896c8ada0":[9,4,0,27],
-"group__state__position.html#ga1ef838820e72ae2d57728b566d420902":[9,4,0,51]
+"group__state__position.html#ga1aa7a451021443c591b83be896c8ada0":[9,4,0,27]
 };

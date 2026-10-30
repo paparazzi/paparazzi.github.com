@@ -100,7 +100,8 @@ $(document).ready(function(){initNavTree('mcu_8h.html',''); initResizable(); });
 
 <p>Arch independent mcu ( Micro Controller Unit ) utilities.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;mcu_arch.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &lt;mcu_arch.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mcu.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,9 +109,11 @@ $(document).ready(function(){initNavTree('mcu_8h.html',''); initResizable(); });
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mcu_8h__incl.png" border="0" usemap="#asw_2airborne_2mcu_8h" alt=""/></div>
 <map name="asw_2airborne_2mcu_8h" id="asw_2airborne_2mcu_8h">
-<area shape="rect" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="5,5,148,31"/>
-<area shape="rect" title=" " alt="" coords="28,79,125,104"/>
-<area shape="poly" title=" " alt="" coords="79,31,79,65,74,65,74,31"/>
+<area shape="rect" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="11,5,153,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,60,104"/>
+<area shape="poly" title=" " alt="" coords="76,33,51,69,46,66,72,29"/>
+<area shape="rect" title=" " alt="" coords="84,79,181,104"/>
+<area shape="poly" title=" " alt="" coords="93,29,119,66,114,69,88,33"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -120,49 +123,57 @@ $(document).ready(function(){initNavTree('mcu_8h.html',''); initResizable(); });
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mcu_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2mcu_8hdep" alt=""/></div>
 <map name="asw_2airborne_2mcu_8hdep" id="asw_2airborne_2mcu_8hdep">
-<area shape="rect" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="1969,5,2112,31"/>
+<area shape="rect" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="2340,5,2483,31"/>
 <area shape="rect" href="chibios_2mcu__arch_8c.html" title="Microcontroller initialization function for ChibiOS." alt="" coords="5,86,185,126"/>
-<area shape="poly" title=" " alt="" coords="1955,22,1597,25,1088,34,574,52,360,65,198,81,161,89,160,83,198,76,360,60,574,46,1088,29,1597,20,1955,17"/>
-<area shape="rect" href="boards_2ardrone_2board_8c.html" title="ARDrone2 specific board initialization function." alt="" coords="210,86,357,126"/>
-<area shape="poly" title=" " alt="" coords="1955,22,1626,24,1167,33,706,50,514,64,369,81,338,88,337,83,368,76,513,59,706,45,1167,27,1626,19,1955,17"/>
-<area shape="rect" href="boards_2bebop_2board_8c.html" title="Bebop specific board initialization function." alt="" coords="381,86,527,126"/>
-<area shape="poly" title=" " alt="" coords="1956,22,1657,26,1248,35,838,53,668,65,540,81,509,89,508,83,539,76,668,60,838,47,1248,30,1657,21,1956,17"/>
-<area shape="rect" href="boards_2disco_2board_8c.html" title="Disco specific board initialization function." alt="" coords="551,86,698,126"/>
-<area shape="poly" title=" " alt="" coords="1956,23,1688,28,1328,38,971,55,823,67,710,81,679,89,678,83,710,76,822,62,970,50,1328,33,1688,22,1956,18"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="722,86,941,126"/>
-<area shape="poly" title=" " alt="" coords="1955,22,1773,25,1524,34,1240,51,1095,65,953,81,910,89,910,83,952,76,1094,59,1240,46,1524,28,1773,20,1955,17"/>
-<area shape="rect" href="setup__actuators_8c.html" title=" " alt="" coords="965,86,1146,126"/>
-<area shape="poly" title=" " alt="" coords="1956,23,1805,26,1606,36,1383,53,1158,81,1122,89,1121,83,1158,76,1382,48,1606,30,1805,21,1955,17"/>
-<area shape="rect" href="usb__tunnel_8c.html" title="USB tunnel application." alt="" coords="1171,86,1337,126"/>
-<area shape="poly" title=" " alt="" coords="1956,24,1685,40,1518,57,1350,81,1317,89,1316,83,1350,76,1517,52,1684,35,1955,19"/>
-<area shape="rect" href="main__demo2_8c.html" title=" " alt="" coords="1362,86,1535,126"/>
-<area shape="poly" title=" " alt="" coords="1956,29,1768,48,1658,63,1548,81,1515,89,1514,83,1547,76,1657,58,1767,43,1955,23"/>
-<area shape="rect" href="main__demo3_8c.html" title=" " alt="" coords="1559,86,1733,126"/>
-<area shape="poly" title=" " alt="" coords="1965,36,1745,81,1716,89,1714,83,1744,76,1964,31"/>
-<area shape="rect" href="main__demo4_8c.html" title=" " alt="" coords="1757,86,1930,126"/>
-<area shape="poly" title=" " alt="" coords="2003,39,1888,88,1886,83,2001,34"/>
-<area shape="rect" href="main__demo5_8c.html" title=" " alt="" coords="1954,86,2127,126"/>
-<area shape="poly" title=" " alt="" coords="2043,44,2043,86,2038,86,2038,44"/>
-<area shape="rect" href="main__demo6_8c.html" title=" " alt="" coords="2151,86,2325,126"/>
-<area shape="poly" title=" " alt="" coords="2081,34,2196,83,2193,88,2079,39"/>
-<area shape="rect" href="main__chibios_8c.html" title="Program main function for ChibiOS inplementation." alt="" coords="2349,93,2548,119"/>
-<area shape="poly" title=" " alt="" coords="2114,31,2337,76,2401,91,2400,96,2336,81,2113,36"/>
-<area shape="rect" href="mcu_8c.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="2571,93,2713,119"/>
-<area shape="poly" title=" " alt="" coords="2126,21,2325,39,2444,55,2561,76,2612,91,2610,96,2560,81,2443,60,2325,44,2125,27"/>
-<area shape="rect" href="sys__time_8c.html" title="Architecture independent timing functions." alt="" coords="2737,86,2915,126"/>
-<area shape="poly" title=" " alt="" coords="2126,20,2394,36,2560,53,2725,76,2760,83,2759,89,2724,81,2559,58,2394,41,2126,25"/>
-<area shape="rect" href="xbee__dl_8c.html" title=" " alt="" coords="2940,86,3099,126"/>
-<area shape="poly" title=" " alt="" coords="2126,16,2277,19,2477,28,2702,46,2816,59,2928,76,2960,83,2959,89,2927,81,2816,64,2701,51,2477,33,2277,24,2126,22"/>
-<area shape="rect" href="sdlog__chibios_8c.html" title=" " alt="" coords="3123,86,3300,126"/>
-<area shape="poly" title=" " alt="" coords="2126,16,2306,17,2551,24,2830,43,2973,57,3112,76,3148,83,3147,89,3111,81,2972,62,2830,48,2551,30,2306,22,2126,21"/>
-<area shape="rect" href="usbStorage_8c.html" title=" " alt="" coords="3324,79,3491,133"/>
-<area shape="poly" title=" " alt="" coords="2126,18,2725,35,3065,52,3206,63,3313,76,3324,78,3323,83,3312,81,3206,69,3065,58,2725,41,2125,24"/>
-<area shape="rect" href="px4__flash_8c.html" title=" " alt="" coords="3515,86,3681,126"/>
-<area shape="poly" title=" " alt="" coords="2126,18,2418,22,2816,32,3213,50,3379,62,3504,76,3538,83,3537,89,3503,81,3378,67,3213,55,2816,38,2418,28,2126,23"/>
-<area shape="rect" href="spektrum__soft__bind__ap_8c.html" title=" " alt="" coords="3705,79,3893,133"/>
-<area shape="poly" title=" " alt="" coords="2126,17,2451,22,2904,32,3360,49,3549,61,3693,76,3706,78,3705,83,3692,81,3549,67,3359,55,2904,37,2451,27,2126,23"/>
-<area shape="rect" href="spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="3918,79,4113,133"/>
-<area shape="poly" title=" " alt="" coords="2126,17,2489,21,3003,30,3524,47,3742,60,3906,76,3918,78,3917,83,3906,81,3742,65,3524,53,3003,35,2488,26,2126,22"/>
+<area shape="poly" title=" " alt="" coords="2326,22,1903,22,1287,29,963,36,658,47,395,62,197,81,160,89,159,83,196,76,395,56,658,42,963,31,1287,24,1903,17,2326,16"/>
+<area shape="rect" href="linux_2mcu__arch_8c.html" title="linux arch dependant microcontroller initialisation functions." alt="" coords="209,86,376,126"/>
+<area shape="poly" title=" " alt="" coords="2326,22,1936,23,1375,30,1081,37,805,48,567,62,388,81,353,89,352,83,387,76,567,57,805,42,1081,32,1375,25,1936,18,2326,16"/>
+<area shape="rect" href="sim_2mcu__arch_8c.html" title=" " alt="" coords="400,86,559,126"/>
+<area shape="poly" title=" " alt="" coords="2326,22,1968,24,1460,32,947,50,733,63,572,81,538,89,537,83,571,76,733,58,947,44,1460,26,1968,19,2326,17"/>
+<area shape="rect" href="autopilot_8c.html" title="Core autopilot interface common to all firmwares." alt="" coords="583,93,754,119"/>
+<area shape="poly" title=" " alt="" coords="2327,23,2002,26,1551,36,1098,53,909,66,766,81,704,96,703,91,766,76,909,60,1098,48,1551,30,2002,21,2326,17"/>
+<area shape="rect" href="boards_2ardrone_2board_8c.html" title="ARDrone2 specific board initialization function." alt="" coords="778,86,925,126"/>
+<area shape="poly" title=" " alt="" coords="2326,23,2032,26,1631,36,1230,53,1063,66,937,81,906,89,905,83,936,76,1062,60,1229,48,1631,30,2032,21,2326,17"/>
+<area shape="rect" href="boards_2bebop_2board_8c.html" title="Bebop specific board initialization function." alt="" coords="949,86,1095,126"/>
+<area shape="poly" title=" " alt="" coords="2326,23,2063,28,1711,38,1362,56,1217,67,1108,81,1077,89,1076,83,1107,76,1217,62,1362,50,1711,33,2063,23,2326,18"/>
+<area shape="rect" href="boards_2disco_2board_8c.html" title="Disco specific board initialization function." alt="" coords="1119,86,1266,126"/>
+<area shape="poly" title=" " alt="" coords="2327,24,1793,41,1495,58,1372,69,1278,81,1248,88,1247,83,1278,76,1371,64,1495,53,1792,36,2326,18"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="1290,86,1509,126"/>
+<area shape="poly" title=" " alt="" coords="2327,24,2175,28,1975,38,1749,55,1521,81,1479,89,1478,83,1520,76,1748,50,1974,33,2175,23,2327,18"/>
+<area shape="rect" href="setup__actuators_8c.html" title=" " alt="" coords="1533,86,1714,126"/>
+<area shape="poly" title=" " alt="" coords="2327,25,2058,42,1892,58,1726,81,1691,89,1690,83,1726,76,1892,53,2058,36,2326,20"/>
+<area shape="rect" href="usb__tunnel_8c.html" title="USB tunnel application." alt="" coords="1739,86,1905,126"/>
+<area shape="poly" title=" " alt="" coords="2327,28,2139,48,2028,63,1919,81,1887,88,1886,83,1917,76,2027,57,2138,42,2326,23"/>
+<area shape="rect" href="main__demo2_8c.html" title=" " alt="" coords="1930,86,2103,126"/>
+<area shape="poly" title=" " alt="" coords="2336,36,2116,81,2086,89,2085,83,2115,76,2335,31"/>
+<area shape="rect" href="main__demo3_8c.html" title=" " alt="" coords="2127,86,2301,126"/>
+<area shape="poly" title=" " alt="" coords="2373,39,2259,88,2256,83,2371,34"/>
+<area shape="rect" href="main__demo4_8c.html" title=" " alt="" coords="2325,86,2498,126"/>
+<area shape="poly" title=" " alt="" coords="2414,44,2414,86,2409,86,2409,44"/>
+<area shape="rect" href="main__demo5_8c.html" title=" " alt="" coords="2522,86,2695,126"/>
+<area shape="poly" title=" " alt="" coords="2451,34,2566,83,2564,88,2449,39"/>
+<area shape="rect" href="main__demo6_8c.html" title=" " alt="" coords="2719,86,2893,126"/>
+<area shape="poly" title=" " alt="" coords="2488,31,2708,76,2738,83,2736,89,2707,81,2487,36"/>
+<area shape="rect" href="main__chibios_8c.html" title="Program main function for ChibiOS inplementation." alt="" coords="2917,93,3116,119"/>
+<area shape="poly" title=" " alt="" coords="2496,24,2684,44,2905,76,2973,91,2972,96,2904,81,2684,49,2496,29"/>
+<area shape="rect" href="mcu_8c.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="3139,93,3281,119"/>
+<area shape="poly" title=" " alt="" coords="2496,17,2621,21,2779,31,2954,48,3129,76,3181,91,3179,96,3128,81,2953,54,2778,36,2620,27,2496,23"/>
+<area shape="rect" href="sys__time_8c.html" title="Architecture independent timing functions." alt="" coords="3305,86,3483,126"/>
+<area shape="poly" title=" " alt="" coords="2497,17,2648,21,2846,30,3069,48,3293,76,3329,83,3328,89,3292,81,3068,53,2846,35,2647,26,2497,23"/>
+<area shape="rect" href="mavlink_8c.html" title="Basic MAVLink datalink implementation." alt="" coords="3508,86,3667,126"/>
+<area shape="poly" title=" " alt="" coords="2496,19,3007,38,3290,54,3407,65,3496,76,3529,83,3528,89,3495,81,3406,70,3289,60,3006,43,2496,24"/>
+<area shape="rect" href="xbee__dl_8c.html" title=" " alt="" coords="3691,86,3849,126"/>
+<area shape="poly" title=" " alt="" coords="2496,18,2753,24,3094,35,3433,52,3573,63,3680,76,3713,83,3712,89,3679,81,3573,68,3432,57,3094,40,2753,29,2496,23"/>
+<area shape="rect" href="sdlog__chibios_8c.html" title=" " alt="" coords="3873,86,4051,126"/>
+<area shape="poly" title=" " alt="" coords="2496,18,2786,23,3180,33,3574,51,3738,62,3862,76,3899,83,3898,89,3862,81,3738,68,3574,56,3180,39,2786,28,2496,23"/>
+<area shape="rect" href="usbStorage_8c.html" title=" " alt="" coords="4075,79,4241,133"/>
+<area shape="poly" title=" " alt="" coords="2497,17,2822,21,3275,30,3731,47,3920,60,4064,76,4075,78,4074,83,4063,81,3920,65,3730,53,3275,35,2822,26,2496,22"/>
+<area shape="rect" href="px4__flash_8c.html" title=" " alt="" coords="4266,86,4431,126"/>
+<area shape="poly" title=" " alt="" coords="2497,17,2856,19,3364,27,3878,45,4092,58,4254,76,4290,83,4288,89,4254,81,4092,64,3878,50,3364,32,2855,24,2497,22"/>
+<area shape="rect" href="spektrum__soft__bind__ap_8c.html" title=" " alt="" coords="4456,79,4644,133"/>
+<area shape="poly" title=" " alt="" coords="2496,17,2888,19,3451,27,4024,45,4263,59,4444,76,4456,78,4456,83,4443,81,4263,64,4023,50,3451,33,2887,24,2496,22"/>
+<area shape="rect" href="spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="4669,79,4863,133"/>
+<area shape="poly" title=" " alt="" coords="2497,17,2924,18,3550,25,3879,33,4188,43,4455,57,4657,76,4669,78,4668,83,4656,81,4455,63,4188,48,3879,38,3550,31,2924,23,2497,22"/>
 </map>
 </div>
 </div>
@@ -192,6 +203,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabd519c6c1966a7d45032bebf0040824d" id="r_gabd519c6c1966a7d45032bebf0040824d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:gabd519c6c1966a7d45032bebf0040824d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the MCU in energy save mode This disables features of the MCU to save energy.  <br /></td></tr>
 <tr class="separator:gabd519c6c1966a7d45032bebf0040824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf03b4daf531cef44873167b77770dcad" id="r_gaf03b4daf531cef44873167b77770dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad">mcu_get_uid</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">uid</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_len)</td></tr>
+<tr class="memdesc:gaf03b4daf531cef44873167b77770dcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique hardware ID of the MCU.  <br /></td></tr>
+<tr class="separator:gaf03b4daf531cef44873167b77770dcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga916f2adc2080b4fe88034086d107a8dc" id="r_ga916f2adc2080b4fe88034086d107a8dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:ga916f2adc2080b4fe88034086d107a8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional board init function called at the start of <a class="el" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization.">mcu_init()</a>.  <br /></td></tr>
 <tr class="separator:ga916f2adc2080b4fe88034086d107a8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,7 +223,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="mcu_8h.html">mcu.h</a></li>
-    <li class="footer">Generated on Thu Oct 29 2026 20:56:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 13:28:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

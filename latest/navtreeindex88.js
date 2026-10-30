@@ -1,5 +1,6 @@
 var NAVTREEINDEX88 =
 {
+"imu_8c.html#a8612bd2fe2f927e8f283a9a8e60010f5":[12,0,1,0,6,36,2,19],
 "imu_8c.html#a86a06fe7a9831292bd92867da2d12f80":[12,0,1,0,6,36,2,25],
 "imu_8c.html#a88ec31da12a499ee7b47fe11b4ccfa4e":[12,0,1,0,6,36,2,33],
 "imu_8c.html#a8b7ace4ebcd16e26b720f96e7f847805":[12,0,1,0,6,36,2,47],
@@ -248,6 +249,5 @@ var NAVTREEINDEX88 =
 "imu__bmi088__i2c_8h.html#aef1201f662e9eb326b945ea2496381bd":[12,0,1,0,6,36,15,1],
 "imu__bmi088__i2c_8h.html#structImuBmi088":[12,0,1,0,6,36,15,0],
 "imu__bmi088__i2c_8h_source.html":[12,0,1,0,6,36,15],
-"imu__cube_8c.html":[12,0,1,0,6,36,16],
-"imu__cube_8c.html#a08a4b87a560f3246be56b9a357d272dc":[12,0,1,0,6,36,16,4]
+"imu__cube_8c.html":[12,0,1,0,6,36,16]
 };
