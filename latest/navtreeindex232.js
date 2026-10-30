@@ -1,5 +1,14 @@
 var NAVTREEINDEX232 =
 {
+"video__device_8h.html#a3d26d9607fc8183916d4a0648dd0c634":[12,0,1,0,7,139,4],
+"video__device_8h.html#a44bf9ccc04ee62fd4808222ee1f467c0":[12,0,1,0,7,139,2,5],
+"video__device_8h.html#a4aec9ee3d72122a284df613b9f2bf33d":[12,0,1,0,7,139,2,6],
+"video__device_8h.html#a4f93eea3da400ac56c1918a8883bf60d":[12,0,1,0,7,139,1,3],
+"video__device_8h.html#a504eeaab49bcdc3fd10bfb7c323acd80":[12,0,1,0,7,139,0,1],
+"video__device_8h.html#a57aa44e7476112b6eeb526315b3a4434":[12,0,1,0,7,139,2,1],
+"video__device_8h.html#a66c88f61b22fc09253795454f89b9919":[12,0,1,0,7,139,1,2],
+"video__device_8h.html#a99aa438348a6f10c4fbdb466e16b44cd":[12,0,1,0,7,139,2,10],
+"video__device_8h.html#ab10620da4dfb942905b1ad28d7c844e1":[12,0,1,0,7,139,2,7],
 "video__device_8h.html#ab27720d4ed056a497f437541e1543855":[12,0,1,0,7,139,1,1],
 "video__device_8h.html#ab60466e7549f817d9a0f2e30b3c6762e":[12,0,1,0,7,139,2,2],
 "video__device_8h.html#ab7d8e2731b25c538b5826e6a5d882f20":[12,0,1,0,7,139,2,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX232 =
 "vl53l1x__api_8h.html#a3193a952dc2159c8ae3e4092ea6d5eeb":[12,0,1,0,7,144,58],
 "vl53l1x__api_8h.html#a3f7f279509c4971c0027dd4004007c2f":[12,0,1,0,7,144,9],
 "vl53l1x__api_8h.html#a41c579ed15ea121d468170f32eb472e0":[12,0,1,0,7,144,68],
-"vl53l1x__api_8h.html#a4d37ff28a4c3996805e1fe3fd4fe0206":[12,0,1,0,7,144,50],
-"vl53l1x__api_8h.html#a4e2cf4bc7b754a7026cf5855d4147e79":[12,0,1,0,7,144,87],
-"vl53l1x__api_8h.html#a4e4ee95b70dcb375cdc9f63e8434e41f":[12,0,1,0,7,144,83],
-"vl53l1x__api_8h.html#a4f5f0ac3cdbbcbc565f0babde7db4588":[12,0,1,0,7,144,48],
-"vl53l1x__api_8h.html#a52c909723a48ef79bce7e734eddde337":[12,0,1,0,7,144,84],
-"vl53l1x__api_8h.html#a542371c8c3204d2a190bebed741a741e":[12,0,1,0,7,144,43],
-"vl53l1x__api_8h.html#a549c2710b0f17a249a84ecee103daf93":[12,0,1,0,7,144,1,2],
-"vl53l1x__api_8h.html#a55aa3ef1d347f822cc5f6028f2ddf56f":[12,0,1,0,7,144,2],
-"vl53l1x__api_8h.html#a5b399afb0ef8423ddd5a83897a9974da":[12,0,1,0,7,144,62],
-"vl53l1x__api_8h.html#a5e8ca5c9b01cf3166f58495a93cd8358":[12,0,1,0,7,144,88]
+"vl53l1x__api_8h.html#a4d37ff28a4c3996805e1fe3fd4fe0206":[12,0,1,0,7,144,50]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX176 =
 {
+"pose__history_8c.html#aad26510aa5a6a4e21e4f1721010c8968":[12,0,1,0,6,53,0,2],
+"pose__history_8c.html#ad68620a77d8a3d467094ae4f114182b2":[12,0,1,0,6,53,0,0,1],
+"pose__history_8c.html#structrotation__history__ring__buffer__t":[12,0,1,0,6,53,0,0],
+"pose__history_8c_source.html":[12,0,1,0,6,53,0],
+"pose__history_8h.html":[12,0,1,0,6,53,1],
+"pose__history_8h.html#a08ca71549471f2eb45159e79df960e39":[12,0,1,0,6,53,1,0,1],
+"pose__history_8h.html#a129cb9562fab216ac8d7d33af459d839":[12,0,1,0,6,53,1,2],
+"pose__history_8h.html#a2c55c72c6bdf06e23791e7f9fc7134a9":[12,0,1,0,6,53,1,3],
+"pose__history_8h.html#aad26510aa5a6a4e21e4f1721010c8968":[12,0,1,0,6,53,1,1],
 "pose__history_8h.html#acde7dbf8b41e979af4201ed5816a7ffc":[12,0,1,0,6,53,1,0,2],
 "pose__history_8h.html#ad11b9bc98987d8d0f6ffecb40fdd1d08":[12,0,1,0,6,53,1,0,0],
 "pose__history_8h.html#structpose__t":[12,0,1,0,6,53,1,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX176 =
 "pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd":[12,0,1,0,4,14,25],
 "pprz__geodetic__float_8c.html#structcomplex":[12,0,1,0,4,14,0],
 "pprz__geodetic__float_8c_source.html":[12,0,1,0,4,14],
-"pprz__geodetic__float_8h.html":[12,0,1,0,4,15],
-"pprz__geodetic__float_8h.html#a03499a16d55f4a55a7c1d5fe7c86ff7b":[12,0,1,0,4,15,1,0],
-"pprz__geodetic__float_8h.html#a03a1d7fc5e459dd6cbdb7893ef631dde":[12,0,1,0,4,15,3,1],
-"pprz__geodetic__float_8h.html#a1477647029e175947a6bd860322c98ff":[12,0,1,0,4,15,3,0],
-"pprz__geodetic__float_8h.html#a197187e7b04018beddfcd6a7a4ab3972":[12,0,1,0,4,15,6],
-"pprz__geodetic__float_8h.html#a2a7b3fe5bba4789144ed9e8e2aacace6":[12,0,1,0,4,15,0,2],
-"pprz__geodetic__float_8h.html#a2a82ebdce90a3e41d54f72c5e787fcd0":[12,0,1,0,4,15,11],
-"pprz__geodetic__float_8h.html#a3045a5a383aa4ebf5b8a9763773b9b6d":[12,0,1,0,4,15,18],
-"pprz__geodetic__float_8h.html#a30c2e47ec9a898079c04e8b08496b455":[12,0,1,0,4,15,15],
-"pprz__geodetic__float_8h.html#a32317742e37027cb6a438fe1486bb85c":[12,0,1,0,4,15,4,0]
+"pprz__geodetic__float_8h.html":[12,0,1,0,4,15]
 };

@@ -1507,57 +1507,57 @@ $(document).ready(function(){initNavTree('ekf__aw_8cpp_source.html',''); initRes
 </div>
 <div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span> </div>
 <div class="foldopen" id="foldopen01374" data-start="{" data-end="}">
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#a4870a676d0dde83fde74b8c8055e7e4f"> 1374</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#a4870a676d0dde83fde74b8c8055e7e4f">ekf_aw_get_fuselage_force</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>[3])</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#a4870a676d0dde83fde74b8c8055e7e4f"> 1374</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#a4870a676d0dde83fde74b8c8055e7e4f">ekf_aw_get_fuselage_force</a>(<span class="keywordtype">float</span> force[3])</div>
 <div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>{</div>
 <div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>  <span class="keywordtype">float</span> temp[3];</div>
 <div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>    temp[i] = <a class="code hl_define" href="ekf__aw_8cpp.html#a01f28d109b46279ec44535763c043b2d">eawp</a>.forces.fuselage(i);</div>
 <div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>  }</div>
-<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(force, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>}</div>
 </div>
 <div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span> </div>
 <div class="foldopen" id="foldopen01383" data-start="{" data-end="}">
-<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#adefcc4e572f7a93e9ca9337a5c52d5a8"> 1383</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#adefcc4e572f7a93e9ca9337a5c52d5a8">ekf_aw_get_wing_force</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>[3])</div>
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#adefcc4e572f7a93e9ca9337a5c52d5a8"> 1383</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#adefcc4e572f7a93e9ca9337a5c52d5a8">ekf_aw_get_wing_force</a>(<span class="keywordtype">float</span> force[3])</div>
 <div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>{</div>
 <div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>  <span class="keywordtype">float</span> temp[3];</div>
 <div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>    temp[i] = <a class="code hl_define" href="ekf__aw_8cpp.html#a01f28d109b46279ec44535763c043b2d">eawp</a>.forces.wing(i);</div>
 <div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>  }</div>
-<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(force, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>}</div>
 </div>
 <div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span> </div>
 <div class="foldopen" id="foldopen01392" data-start="{" data-end="}">
-<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#aa9b99b99988a65124133b1d75f92ae7b"> 1392</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#aa9b99b99988a65124133b1d75f92ae7b">ekf_aw_get_elevator_force</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>[3])</div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#aa9b99b99988a65124133b1d75f92ae7b"> 1392</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#aa9b99b99988a65124133b1d75f92ae7b">ekf_aw_get_elevator_force</a>(<span class="keywordtype">float</span> force[3])</div>
 <div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>{</div>
 <div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>  <span class="keywordtype">float</span> temp[3];</div>
 <div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>    temp[i] = <a class="code hl_define" href="ekf__aw_8cpp.html#a01f28d109b46279ec44535763c043b2d">eawp</a>.forces.elevator(i);</div>
 <div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>  }</div>
-<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(force, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>}</div>
 </div>
 <div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span> </div>
 <div class="foldopen" id="foldopen01401" data-start="{" data-end="}">
-<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#a05c49b6da14dd1f96dd0c17fa080623d"> 1401</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#a05c49b6da14dd1f96dd0c17fa080623d">ekf_aw_get_hover_force</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>[3])</div>
+<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#a05c49b6da14dd1f96dd0c17fa080623d"> 1401</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#a05c49b6da14dd1f96dd0c17fa080623d">ekf_aw_get_hover_force</a>(<span class="keywordtype">float</span> force[3])</div>
 <div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>{</div>
 <div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>  <span class="keywordtype">float</span> temp[3];</div>
 <div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>    temp[i] = <a class="code hl_define" href="ekf__aw_8cpp.html#a01f28d109b46279ec44535763c043b2d">eawp</a>.forces.hover(i);</div>
 <div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span>  }</div>
-<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(force, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>}</div>
 </div>
 <div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span> </div>
 <div class="foldopen" id="foldopen01410" data-start="{" data-end="}">
-<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#ab54a31a3d7cdc96d0fc6096522ade80d"> 1410</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#ab54a31a3d7cdc96d0fc6096522ade80d">ekf_aw_get_pusher_force</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>[3])</div>
+<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"><a class="line" href="ekf__aw_8cpp.html#ab54a31a3d7cdc96d0fc6096522ade80d"> 1410</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="ekf__aw_8cpp.html#ab54a31a3d7cdc96d0fc6096522ade80d">ekf_aw_get_pusher_force</a>(<span class="keywordtype">float</span> force[3])</div>
 <div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span>{</div>
 <div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>  <span class="keywordtype">float</span> temp[3];</div>
 <div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>    temp[i] = <a class="code hl_define" href="ekf__aw_8cpp.html#a01f28d109b46279ec44535763c043b2d">eawp</a>.forces.pusher(i);</div>
 <div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>  }</div>
-<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">force</a>, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">memcpy</a>(force, temp, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>}</div>
 </div>
 <div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span> </div>
@@ -2025,7 +2025,7 @@ $(document).ready(function(){initNavTree('ekf__aw_8cpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="ekf__aw_8cpp.html">ekf_aw.cpp</a></li>
-    <li class="footer">Generated on Fri Oct 30 2026 13:27:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 18:49:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

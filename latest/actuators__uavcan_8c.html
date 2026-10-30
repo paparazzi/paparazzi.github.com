@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('actuators__uavcan_8c.html',''); initRe
 <code>#include &quot;<a class="el" href="pprz__random_8h_source.html">math/pprz_random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="modules_2actuators_2actuators_8h_source.html">modules/actuators/actuators.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;uavcan.equipment.esc.Status.h&quot;</code><br />
 <code>#include &quot;uavcan.equipment.esc.RawCommand.h&quot;</code><br />
 <code>#include &quot;uavcan.equipment.actuator.Status.h&quot;</code><br />
@@ -120,106 +121,107 @@ $(document).ready(function(){initNavTree('actuators__uavcan_8c.html',''); initRe
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__uavcan_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__uavcan_8c" id="asw_2airborne_2modules_2actuators_2actuators__uavcan_8c">
-<area shape="rect" title="UAVCan actuators using RAWCOMMAND message and ESC_STATUS telemetry." alt="" coords="1718,5,1877,60"/>
-<area shape="rect" href="actuators__uavcan_8h.html" title=" " alt="" coords="425,115,575,141"/>
-<area shape="poly" title=" " alt="" coords="1718,42,589,123,588,118,1717,37"/>
-<area shape="rect" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc." alt="" coords="1061,203,1264,229"/>
-<area shape="poly" title=" " alt="" coords="1718,39,1595,45,1452,57,1320,79,1268,93,1231,110,1211,127,1195,149,1173,192,1168,189,1190,146,1207,124,1228,106,1267,88,1319,73,1452,52,1595,40,1718,33"/>
-<area shape="rect" href="pprz__random_8h.html" title=" " alt="" coords="928,284,1085,309"/>
-<area shape="poly" title=" " alt="" coords="1718,42,1436,67,1292,87,1233,98,1189,111,1145,127,1112,143,1083,164,1051,198,1029,235,1015,271,1010,270,1024,232,1047,194,1080,160,1109,138,1143,122,1187,105,1232,93,1291,82,1435,62,1718,37"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1724,115,1871,141"/>
-<area shape="poly" title=" " alt="" coords="1800,60,1800,101,1795,101,1795,60"/>
-<area shape="rect" href="modules_2actuators_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="1242,115,1462,141"/>
-<area shape="poly" title=" " alt="" coords="1718,53,1421,115,1420,110,1717,48"/>
-<area shape="rect" title=" " alt="" coords="1895,115,2121,141"/>
-<area shape="poly" title=" " alt="" coords="1858,58,1971,107,1969,112,1856,63"/>
-<area shape="rect" title=" " alt="" coords="2146,108,2347,148"/>
-<area shape="poly" title=" " alt="" coords="1878,48,2143,103,2142,108,1877,53"/>
-<area shape="rect" title=" " alt="" coords="2371,108,2575,148"/>
-<area shape="poly" title=" " alt="" coords="1877,41,2358,105,2357,110,1877,46"/>
-<area shape="rect" title=" " alt="" coords="2599,108,2803,148"/>
-<area shape="poly" title=" " alt="" coords="1877,37,2184,62,2382,82,2586,105,2585,110,2382,87,2184,67,1877,42"/>
-<area shape="rect" title=" " alt="" coords="2828,108,3023,148"/>
-<area shape="poly" title=" " alt="" coords="1877,34,2275,57,2541,77,2814,105,2814,111,2540,82,2275,62,1877,40"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1487,115,1700,141"/>
-<area shape="poly" title=" " alt="" coords="1741,62,1632,112,1629,107,1739,58"/>
-<area shape="rect" href="uavcan_8h.html" title=" " alt="" coords="404,203,596,229"/>
-<area shape="poly" title=" " alt="" coords="503,141,503,189,497,189,497,141"/>
-<area shape="rect" title=" " alt="" coords="253,203,379,229"/>
-<area shape="poly" title=" " alt="" coords="476,143,355,200,352,195,474,138"/>
-<area shape="rect" title=" " alt="" coords="461,284,539,309"/>
-<area shape="poly" title=" " alt="" coords="503,229,503,270,497,270,497,229"/>
-<area shape="rect" title=" " alt="" coords="366,284,437,309"/>
-<area shape="poly" title=" " alt="" coords="487,231,428,277,425,273,484,227"/>
-<area shape="rect" href="can_8h.html" title=" " alt="" coords="762,284,899,309"/>
-<area shape="poly" title=" " alt="" coords="549,226,770,278,769,283,547,231"/>
-<area shape="rect" href="threads_8h.html" title=" " alt="" coords="563,284,738,309"/>
-<area shape="poly" title=" " alt="" coords="523,226,618,275,615,280,521,231"/>
+<area shape="rect" title="UAVCan actuators using RAWCOMMAND message and ESC_STATUS telemetry." alt="" coords="1499,5,1658,60"/>
+<area shape="rect" href="actuators__uavcan_8h.html" title=" " alt="" coords="529,115,679,141"/>
+<area shape="poly" title=" " alt="" coords="1500,44,693,121,692,116,1499,39"/>
+<area shape="rect" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc." alt="" coords="1133,203,1336,229"/>
+<area shape="poly" title=" " alt="" coords="1499,39,1407,45,1306,58,1217,79,1185,93,1163,110,1158,120,1157,130,1165,153,1184,175,1207,193,1204,197,1181,178,1161,156,1151,131,1153,118,1159,106,1182,88,1216,74,1305,53,1406,40,1499,34"/>
+<area shape="rect" href="pprz__random_8h.html" title=" " alt="" coords="891,115,1048,141"/>
+<area shape="poly" title=" " alt="" coords="1499,47,1303,74,1067,111,1040,115,1039,110,1066,105,1302,69,1499,42"/>
+<area shape="rect" title=" " alt="" coords="1041,203,1109,229"/>
+<area shape="poly" title=" " alt="" coords="1499,43,1407,53,1305,67,1212,86,1176,98,1149,110,1128,128,1111,149,1087,192,1082,189,1107,146,1125,124,1147,106,1174,93,1211,81,1304,62,1406,47,1499,38"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1173,115,1320,141"/>
+<area shape="poly" title=" " alt="" coords="1500,59,1301,114,1300,109,1498,54"/>
+<area shape="rect" href="modules_2actuators_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="1345,115,1565,141"/>
+<area shape="poly" title=" " alt="" coords="1545,62,1483,109,1480,105,1542,58"/>
+<area shape="rect" title=" " alt="" coords="1589,115,1816,141"/>
+<area shape="poly" title=" " alt="" coords="1615,58,1678,105,1674,109,1612,62"/>
+<area shape="rect" title=" " alt="" coords="1841,108,2042,148"/>
+<area shape="poly" title=" " alt="" coords="1659,52,1856,102,1854,107,1658,57"/>
+<area shape="rect" title=" " alt="" coords="2066,108,2270,148"/>
+<area shape="poly" title=" " alt="" coords="1659,44,2053,105,2052,110,1658,49"/>
+<area shape="rect" title=" " alt="" coords="2294,108,2498,148"/>
+<area shape="poly" title=" " alt="" coords="1658,38,1930,64,2280,105,2280,110,1929,69,1658,43"/>
+<area shape="rect" title=" " alt="" coords="2523,108,2717,148"/>
+<area shape="poly" title=" " alt="" coords="1658,35,2022,58,2262,79,2509,105,2509,111,2262,84,2022,64,1658,41"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2741,115,2955,141"/>
+<area shape="poly" title=" " alt="" coords="1658,34,2114,55,2419,76,2730,105,2770,111,2769,116,2729,111,2419,82,2113,61,1658,39"/>
+<area shape="rect" href="uavcan_8h.html" title=" " alt="" coords="508,203,700,229"/>
+<area shape="poly" title=" " alt="" coords="607,141,607,189,601,189,601,141"/>
+<area shape="rect" title=" " alt="" coords="357,203,483,229"/>
+<area shape="poly" title=" " alt="" coords="580,143,459,200,456,195,578,138"/>
+<area shape="rect" title=" " alt="" coords="565,284,643,309"/>
+<area shape="poly" title=" " alt="" coords="607,229,607,270,601,270,601,229"/>
+<area shape="rect" title=" " alt="" coords="667,284,738,309"/>
+<area shape="poly" title=" " alt="" coords="620,227,679,273,676,277,617,231"/>
+<area shape="rect" href="can_8h.html" title=" " alt="" coords="814,284,951,309"/>
+<area shape="poly" title=" " alt="" coords="645,226,830,278,828,283,644,231"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="366,284,541,309"/>
+<area shape="poly" title=" " alt="" coords="583,231,489,280,486,275,581,226"/>
 <area shape="rect" href="framed__ring__buffer_8h.html" title=" " alt="" coords="5,284,195,309"/>
-<area shape="poly" title=" " alt="" coords="442,231,172,284,171,279,441,226"/>
+<area shape="poly" title=" " alt="" coords="539,231,495,239,193,285,192,279,494,233,538,226"/>
 <area shape="rect" href="kv__store_8h.html" title=" " alt="" coords="219,284,341,309"/>
-<area shape="poly" title=" " alt="" coords="469,231,326,282,324,277,467,226"/>
-<area shape="rect" title=" " alt="" coords="1330,445,1385,471"/>
-<area shape="poly" title=" " alt="" coords="834,309,843,352,854,376,871,395,905,413,954,427,1014,437,1079,445,1211,452,1316,454,1316,460,1211,458,1079,450,1013,442,953,432,903,418,868,399,850,379,838,354,829,310"/>
-<area shape="rect" title=" " alt="" coords="527,365,699,390"/>
-<area shape="poly" title=" " alt="" coords="800,312,659,363,657,358,798,307"/>
-<area shape="rect" title=" " alt="" coords="724,365,807,390"/>
-<area shape="poly" title=" " alt="" coords="669,307,739,355,736,359,666,312"/>
-<area shape="rect" title=" " alt="" coords="340,357,503,397"/>
-<area shape="poly" title=" " alt="" coords="618,312,490,355,488,350,616,307"/>
-<area shape="rect" title=" " alt="" coords="245,365,315,390"/>
-<area shape="poly" title=" " alt="" coords="564,312,451,331,329,360,320,363,318,357,327,355,450,326,564,307"/>
-<area shape="rect" title=" " alt="" coords="145,365,220,390"/>
-<area shape="poly" title=" " alt="" coords="563,311,382,334,233,360,223,363,221,358,231,355,381,329,563,305"/>
-<area shape="poly" title=" " alt="" coords="127,307,242,357,240,362,125,312"/>
-<area shape="poly" title=" " alt="" coords="114,308,162,353,159,357,110,311"/>
-<area shape="poly" title=" " alt="" coords="283,310,283,351,277,351,277,310"/>
-<area shape="poly" title=" " alt="" coords="267,312,209,358,206,354,264,307"/>
-<area shape="poly" title=" " alt="" coords="1159,230,1146,266,1145,288,1150,308,1166,332,1184,354,1229,391,1276,420,1318,440,1316,444,1273,424,1226,396,1180,358,1161,335,1146,310,1140,288,1141,265,1154,228"/>
-<area shape="rect" title=" " alt="" coords="1160,284,1320,309"/>
-<area shape="poly" title=" " alt="" coords="1176,227,1221,272,1217,276,1172,231"/>
-<area shape="poly" title=" " alt="" coords="1018,308,1057,351,1085,375,1116,395,1168,417,1222,433,1317,450,1316,456,1220,439,1166,422,1113,400,1082,379,1054,355,1014,311"/>
-<area shape="poly" title=" " alt="" coords="972,312,814,363,813,358,971,307"/>
-<area shape="rect" title=" " alt="" coords="882,365,953,390"/>
-<area shape="poly" title=" " alt="" coords="995,312,942,358,939,354,992,308"/>
-<area shape="rect" title=" " alt="" coords="977,365,1045,390"/>
-<area shape="poly" title=" " alt="" coords="1010,309,1012,351,1007,351,1005,310"/>
-<area shape="rect" title=" " alt="" coords="2593,203,2719,229"/>
-<area shape="poly" title=" " alt="" coords="1844,138,1883,145,1989,158,2078,165,2232,168,2385,172,2475,179,2580,193,2603,198,2602,203,2580,199,2474,185,2385,177,2231,173,2078,170,1988,163,1882,151,1843,143"/>
-<area shape="poly" title=" " alt="" coords="1355,141,1360,431,1354,432,1350,141"/>
-<area shape="poly" title=" " alt="" coords="1347,142,1258,274,1253,271,1342,139"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1390,203,1487,229"/>
-<area shape="poly" title=" " alt="" coords="1366,139,1419,191,1415,195,1362,143"/>
-<area shape="rect" title=" " alt="" coords="1395,284,1482,309"/>
-<area shape="poly" title=" " alt="" coords="1441,229,1441,270,1436,270,1436,229"/>
-<area shape="poly" title=" " alt="" coords="1588,142,1553,197,1527,255,1515,280,1497,311,1438,383,1382,438,1379,434,1434,379,1492,308,1511,278,1522,253,1548,195,1583,139"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2249,365,2389,390"/>
-<area shape="poly" title=" " alt="" coords="1662,138,2074,211,2270,252,2335,269,2365,282,2372,301,2368,321,2357,340,2344,356,2340,353,2353,336,2363,319,2367,301,2361,286,2333,274,2269,257,2073,216,1661,143"/>
-<area shape="rect" title=" " alt="" coords="2424,196,2568,236"/>
-<area shape="poly" title=" " alt="" coords="1659,138,1712,145,1907,162,2059,167,2211,173,2406,193,2411,194,2410,199,2405,199,2211,178,2059,172,1907,167,1712,151,1659,143"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1563,203,1773,229"/>
-<area shape="poly" title=" " alt="" coords="1605,139,1651,191,1646,194,1601,143"/>
-<area shape="poly" title=" " alt="" coords="2275,393,2236,400,1988,429,1745,446,1538,455,1399,459,1398,453,1537,450,1744,441,1988,423,2236,395,2274,387"/>
-<area shape="rect" title=" " alt="" coords="2335,445,2510,471"/>
-<area shape="poly" title=" " alt="" coords="2336,388,2398,435,2395,439,2332,392"/>
-<area shape="rect" title=" " alt="" coords="2119,445,2311,471"/>
-<area shape="poly" title=" " alt="" coords="2305,392,2242,439,2239,435,2302,388"/>
-<area shape="poly" title=" " alt="" coords="1606,231,1316,284,1315,279,1605,226"/>
-<area shape="poly" title=" " alt="" coords="1636,231,1486,282,1484,277,1634,226"/>
-<area shape="rect" title=" " alt="" coords="1786,284,1942,309"/>
-<area shape="poly" title=" " alt="" coords="1697,226,1824,276,1822,281,1696,231"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1558,284,1762,309"/>
-<area shape="poly" title=" " alt="" coords="1669,229,1665,270,1660,270,1664,229"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2151,284,2350,309"/>
-<area shape="poly" title=" " alt="" coords="1753,226,2153,280,2152,285,1752,231"/>
-<area shape="rect" title=" " alt="" coords="1967,284,2127,309"/>
-<area shape="poly" title=" " alt="" coords="1724,226,1979,279,1978,284,1723,231"/>
-<area shape="poly" title=" " alt="" coords="1649,311,1594,359,1540,400,1467,431,1399,450,1397,445,1465,426,1537,395,1590,355,1646,307"/>
-<area shape="rect" title=" " alt="" coords="1608,365,1771,390"/>
-<area shape="poly" title=" " alt="" coords="1667,309,1683,351,1678,353,1662,310"/>
-<area shape="poly" title=" " alt="" coords="2263,308,2302,353,2298,356,2259,311"/>
-<area shape="rect" title=" " alt="" coords="2040,365,2224,390"/>
-<area shape="poly" title=" " alt="" coords="2235,312,2163,359,2160,355,2232,307"/>
+<area shape="poly" title=" " alt="" coords="558,231,341,283,340,278,556,226"/>
+<area shape="rect" title=" " alt="" coords="1498,445,1553,471"/>
+<area shape="poly" title=" " alt="" coords="891,308,922,352,945,376,972,395,1015,410,1073,423,1219,441,1369,450,1484,453,1484,459,1369,455,1219,446,1072,428,1013,416,969,400,941,380,918,356,887,311"/>
+<area shape="rect" title=" " alt="" coords="729,365,901,390"/>
+<area shape="poly" title=" " alt="" coords="875,311,836,356,832,353,871,308"/>
+<area shape="rect" title=" " alt="" coords="591,365,673,390"/>
+<area shape="poly" title=" " alt="" coords="480,307,595,357,593,362,478,312"/>
+<area shape="rect" title=" " alt="" coords="372,357,535,397"/>
+<area shape="poly" title=" " alt="" coords="456,310,456,344,451,344,451,310"/>
+<area shape="rect" title=" " alt="" coords="261,365,331,390"/>
+<area shape="poly" title=" " alt="" coords="432,312,332,361,330,356,429,307"/>
+<area shape="rect" title=" " alt="" coords="161,365,236,390"/>
+<area shape="poly" title=" " alt="" coords="411,312,249,360,241,362,240,357,247,355,409,307"/>
+<area shape="poly" title=" " alt="" coords="129,307,256,357,254,362,128,312"/>
+<area shape="poly" title=" " alt="" coords="116,307,175,354,172,358,113,312"/>
+<area shape="poly" title=" " alt="" coords="285,309,294,351,288,352,280,310"/>
+<area shape="poly" title=" " alt="" coords="270,311,222,357,219,353,266,308"/>
+<area shape="poly" title=" " alt="" coords="1250,227,1503,435,1499,439,1247,231"/>
+<area shape="rect" title=" " alt="" coords="1563,284,1723,309"/>
+<area shape="poly" title=" " alt="" coords="1294,226,1571,279,1570,284,1293,231"/>
+<area shape="poly" title=" " alt="" coords="961,142,947,162,934,186,929,211,930,223,936,235,962,268,992,297,1024,323,1060,346,1136,384,1216,412,1296,431,1370,444,1484,453,1484,459,1369,449,1295,437,1215,417,1134,389,1057,351,1021,328,988,301,958,271,931,237,925,225,923,211,929,184,943,159,957,139"/>
+<area shape="poly" title=" " alt="" coords="957,143,751,312,668,360,666,356,748,307,954,139"/>
+<area shape="rect" title=" " alt="" coords="946,203,1017,229"/>
+<area shape="poly" title=" " alt="" coords="974,140,980,189,975,190,968,141"/>
+<area shape="poly" title=" " alt="" coords="985,139,1052,192,1048,197,982,143"/>
+<area shape="rect" title=" " alt="" coords="1361,203,1487,229"/>
+<area shape="poly" title=" " alt="" coords="1272,138,1389,195,1387,200,1269,143"/>
+<area shape="poly" title=" " alt="" coords="1468,139,1486,164,1502,195,1520,260,1528,327,1530,386,1530,432,1524,431,1525,386,1523,327,1514,261,1498,197,1482,167,1463,143"/>
+<area shape="poly" title=" " alt="" coords="1473,139,1546,194,1625,272,1621,275,1542,198,1470,143"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1693,203,1790,229"/>
+<area shape="poly" title=" " alt="" coords="1494,138,1691,197,1689,202,1493,143"/>
+<area shape="rect" title=" " alt="" coords="1747,284,1834,309"/>
+<area shape="poly" title=" " alt="" coords="1751,227,1778,271,1774,274,1746,230"/>
+<area shape="poly" title=" " alt="" coords="2782,143,2730,151,2637,159,2558,163,2423,164,2290,170,2213,180,2122,199,2042,221,1982,245,1848,312,1564,442,1561,437,1846,307,1980,241,2040,216,2121,193,2212,175,2290,164,2423,158,2558,158,2637,154,2729,145,2781,138"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2355,365,2495,390"/>
+<area shape="poly" title=" " alt="" coords="2851,141,2845,185,2838,212,2825,237,2801,266,2778,284,2716,312,2664,331,2610,347,2509,368,2508,363,2609,342,2662,326,2714,307,2775,280,2798,262,2820,235,2833,210,2840,184,2845,140"/>
+<area shape="rect" title=" " alt="" coords="2667,196,2811,236"/>
+<area shape="poly" title=" " alt="" coords="2835,143,2775,190,2772,185,2832,139"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2133,203,2344,229"/>
+<area shape="poly" title=" " alt="" coords="2778,143,2730,151,2340,204,2340,199,2729,145,2777,138"/>
+<area shape="poly" title=" " alt="" coords="2381,393,2343,400,2114,427,1889,445,1697,454,1567,459,1566,453,1697,449,1889,439,2113,422,2342,395,2380,387"/>
+<area shape="rect" title=" " alt="" coords="2442,445,2617,471"/>
+<area shape="poly" title=" " alt="" coords="2442,388,2505,435,2502,439,2439,392"/>
+<area shape="rect" title=" " alt="" coords="2225,445,2417,471"/>
+<area shape="poly" title=" " alt="" coords="2412,392,2349,439,2346,435,2408,388"/>
+<area shape="poly" title=" " alt="" coords="2152,231,1737,286,1736,280,2152,226"/>
+<area shape="poly" title=" " alt="" coords="2174,231,1848,288,1847,283,2173,226"/>
+<area shape="rect" title=" " alt="" coords="2362,284,2518,309"/>
+<area shape="poly" title=" " alt="" coords="2269,226,2399,277,2397,282,2267,231"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1911,284,2115,309"/>
+<area shape="poly" title=" " alt="" coords="2207,231,2060,282,2058,277,2205,226"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2139,284,2338,309"/>
+<area shape="poly" title=" " alt="" coords="2241,229,2241,270,2236,270,2236,229"/>
+<area shape="rect" title=" " alt="" coords="2543,284,2703,309"/>
+<area shape="poly" title=" " alt="" coords="2295,226,2554,279,2553,284,2294,231"/>
+<area shape="poly" title=" " alt="" coords="2002,312,1947,360,1916,385,1892,400,1849,416,1804,430,1714,448,1631,457,1567,459,1566,454,1631,451,1713,442,1803,425,1847,411,1889,395,1913,380,1943,356,1999,308"/>
+<area shape="rect" title=" " alt="" coords="1960,365,2123,390"/>
+<area shape="poly" title=" " alt="" coords="2020,309,2035,351,2030,353,2015,310"/>
+<area shape="poly" title=" " alt="" coords="2267,307,2387,357,2385,362,2265,312"/>
+<area shape="rect" title=" " alt="" coords="2147,365,2331,390"/>
+<area shape="poly" title=" " alt="" coords="2241,310,2241,351,2236,351,2236,310"/>
 </map>
 </div>
 </div>
@@ -298,7 +300,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00046">46</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00047">47</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -378,7 +380,7 @@ voltage</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00042">42</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00043">43</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
 </div>
 </div>
@@ -394,7 +396,7 @@ voltage</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00111">111</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00112">112</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
 </div>
 </div>
@@ -435,11 +437,11 @@ voltage</td>
 
 <p>Whevener an ACTUATOR_STATUS message from the EQUIPMENT group is received. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00331">331</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00338">338</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00516">ACT_FEEDBACK_UAVCAN_ID</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00236">get_actuator_idx()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00219">get_actuator_telem()</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>.</p>
+<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00516">ACT_FEEDBACK_UAVCAN_ID</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00237">get_actuator_idx()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00220">get_actuator_telem()</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -447,13 +449,17 @@ voltage</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8c_a9a38000601eb4ba446804fbf9082c784_cgraph.png" border="0" usemap="#aactuators__uavcan_8c_a9a38000601eb4ba446804fbf9082c784_cgraph" alt=""/></div>
 <map name="aactuators__uavcan_8c_a9a38000601eb4ba446804fbf9082c784_cgraph" id="aactuators__uavcan_8c_a9a38000601eb4ba446804fbf9082c784_cgraph">
-<area shape="rect" title="Whevener an ACTUATOR_STATUS message from the EQUIPMENT group is received." alt="" coords="5,47,204,87"/>
-<area shape="rect" href="actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="261,5,392,31"/>
-<area shape="poly" title=" " alt="" coords="195,45,255,31,256,36,196,50"/>
-<area shape="rect" href="actuators__uavcan_8c.html#abeed8e3b88f2504775a62a8db0f1272e" title=" " alt="" coords="252,55,401,80"/>
-<area shape="poly" title=" " alt="" coords="204,65,238,65,238,70,204,70"/>
-<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="290,104,363,129"/>
-<area shape="poly" title=" " alt="" coords="196,85,277,103,276,108,195,90"/>
+<area shape="rect" title="Whevener an ACTUATOR_STATUS message from the EQUIPMENT group is received." alt="" coords="5,71,204,111"/>
+<area shape="rect" href="actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="261,29,392,55"/>
+<area shape="poly" title=" " alt="" coords="195,69,255,55,256,60,196,74"/>
+<area shape="rect" href="actuators__uavcan_8c.html#abeed8e3b88f2504775a62a8db0f1272e" title=" " alt="" coords="252,79,401,104"/>
+<area shape="poly" title=" " alt="" coords="204,89,238,89,238,94,204,94"/>
+<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="290,128,363,153"/>
+<area shape="poly" title=" " alt="" coords="196,109,277,127,276,132,195,114"/>
+<area shape="rect" href="actuators__uavcan1cmd_8h.html#afd6000ff0053c52cf4faaecc464b729c" title=" " alt="" coords="449,5,649,31"/>
+<area shape="poly" title=" " alt="" coords="392,32,435,28,436,33,393,38"/>
+<area shape="rect" href="actuators__uavcan2cmd_8h.html#a2d6af1ac40c36f126f16da078daf275f" title=" " alt="" coords="449,55,649,80"/>
+<area shape="poly" title=" " alt="" coords="393,47,436,52,435,57,392,52"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -505,9 +511,9 @@ voltage</td>
 
 <p>Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND) </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00444">444</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00460">460</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="uavcan_8c_source.html#l00313">uavcan_broadcast()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00111">UAVCAN_CMD_UNUSED</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="uavcan_8c_source.html#l00313">uavcan_broadcast()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00112">UAVCAN_CMD_UNUSED</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -578,7 +584,7 @@ voltage</td>
 
 <p>Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND) </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00423">423</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00439">439</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="uavcan_8c_source.html#l00313">uavcan_broadcast()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -653,11 +659,11 @@ voltage</td>
 
 <p>Whevener an DEVICE_TEMPERATURE message from the EQUIPMENT group is received. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00361">361</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00377">377</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00219">get_actuator_telem()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00220">get_actuator_telem()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -723,11 +729,11 @@ voltage</td>
 
 <p>Whevener an ESC_STATUS message from the EQUIPMENT group is received. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00274">274</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00281">281</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00516">ACT_FEEDBACK_UAVCAN_ID</a>, <a class="el" href="electrical_8h_source.html#l00047">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00236">get_actuator_idx()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00219">get_actuator_telem()</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>.</p>
+<p class="reference">References <a class="el" href="abi__sender__ids_8h_source.html#l00516">ACT_FEEDBACK_UAVCAN_ID</a>, <a class="el" href="electrical_8h_source.html#l00047">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00237">get_actuator_idx()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00220">get_actuator_telem()</a>, <a class="el" href="sys__time_8h_source.html#l00174">get_sys_time_float()</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00045">act_feedback_t::idx</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="wedgebug__opencv_8cpp_source.html#l00040">transfer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -735,15 +741,19 @@ voltage</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8c_a79343cdcbcc91d03b96dfc795647defa_cgraph.png" border="0" usemap="#aactuators__uavcan_8c_a79343cdcbcc91d03b96dfc795647defa_cgraph" alt=""/></div>
 <map name="aactuators__uavcan_8c_a79343cdcbcc91d03b96dfc795647defa_cgraph" id="aactuators__uavcan_8c_a79343cdcbcc91d03b96dfc795647defa_cgraph">
-<area shape="rect" title="Whevener an ESC_STATUS message from the EQUIPMENT group is received." alt="" coords="5,73,172,113"/>
-<area shape="rect" href="actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="229,5,360,31"/>
-<area shape="poly" title=" " alt="" coords="139,70,219,39,239,32,241,38,221,45,141,75"/>
-<area shape="rect" href="actuators__uavcan_8c.html#abeed8e3b88f2504775a62a8db0f1272e" title=" " alt="" coords="220,55,369,80"/>
-<area shape="poly" title=" " alt="" coords="172,80,206,76,206,81,172,85"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="222,104,367,129"/>
-<area shape="poly" title=" " alt="" coords="172,100,208,104,208,109,172,105"/>
-<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="258,153,331,179"/>
-<area shape="poly" title=" " alt="" coords="145,110,221,138,246,147,244,152,219,143,143,115"/>
+<area shape="rect" title="Whevener an ESC_STATUS message from the EQUIPMENT group is received." alt="" coords="5,97,172,137"/>
+<area shape="rect" href="actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="229,29,360,55"/>
+<area shape="poly" title=" " alt="" coords="139,94,219,63,239,56,241,62,221,69,141,99"/>
+<area shape="rect" href="actuators__uavcan_8c.html#abeed8e3b88f2504775a62a8db0f1272e" title=" " alt="" coords="220,79,369,104"/>
+<area shape="poly" title=" " alt="" coords="172,104,206,100,206,105,172,109"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="222,128,367,153"/>
+<area shape="poly" title=" " alt="" coords="172,124,208,128,208,133,172,129"/>
+<area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="258,177,331,203"/>
+<area shape="poly" title=" " alt="" coords="145,134,221,162,246,171,244,176,219,167,143,139"/>
+<area shape="rect" href="actuators__uavcan1cmd_8h.html#afd6000ff0053c52cf4faaecc464b729c" title=" " alt="" coords="417,5,617,31"/>
+<area shape="poly" title=" " alt="" coords="360,32,403,28,404,33,361,38"/>
+<area shape="rect" href="actuators__uavcan2cmd_8h.html#a2d6af1ac40c36f126f16da078daf275f" title=" " alt="" coords="417,55,617,80"/>
+<area shape="poly" title=" " alt="" coords="361,47,404,52,403,57,360,52"/>
 </map>
 </div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -779,9 +789,9 @@ voltage</td>
 
 <p>Initialize an uavcan interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00383">383</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00399">399</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00116">actuator_status_ev</a>, <a class="el" href="actuators__uavcan1cmd_8h.html#aa0df3af4de2ba9c3f524fd748043b491">actuators_uavcan1cmd_values</a>, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00331">actuators_uavcan_actuator_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00361">actuators_uavcan_device_temperature_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00274">actuators_uavcan_esc_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00114">actuators_uavcan_initialized</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00198">actuators_uavcan_send_esc()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00117">device_temperature_ev</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00115">esc_status_ev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__random_8c_source.html#l00035">init_random()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="uavcan_8c_source.html#l00240">uavcan_bind()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00111">UAVCAN_CMD_UNUSED</a>.</p>
+<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00117">actuator_status_ev</a>, <a class="el" href="actuators__uavcan1cmd_8h.html#aa0df3af4de2ba9c3f524fd748043b491">actuators_uavcan1cmd_values</a>, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00338">actuators_uavcan_actuator_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00377">actuators_uavcan_device_temperature_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00281">actuators_uavcan_esc_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00115">actuators_uavcan_initialized</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00199">actuators_uavcan_send_esc()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00118">device_temperature_ev</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00116">esc_status_ev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="pprz__random_8c_source.html#l00035">init_random()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="uavcan_8c_source.html#l00240">uavcan_bind()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00112">UAVCAN_CMD_UNUSED</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -810,6 +820,10 @@ voltage</td>
 <area shape="poly" title=" " alt="" coords="420,114,469,114,469,119,420,119"/>
 <area shape="rect" href="wedgebug__opencv_8cpp.html#ab775d30507b59f09d09d79853c3423ff" title=" " alt="" coords="521,153,594,179"/>
 <area shape="poly" title=" " alt="" coords="418,134,508,153,507,158,417,139"/>
+<area shape="rect" href="actuators__uavcan1cmd_8h.html#afd6000ff0053c52cf4faaecc464b729c" title=" " alt="" coords="692,80,892,105"/>
+<area shape="poly" title=" " alt="" coords="623,72,678,78,678,83,622,77"/>
+<area shape="rect" href="actuators__uavcan2cmd_8h.html#a2d6af1ac40c36f126f16da078daf275f" title=" " alt="" coords="692,31,892,56"/>
+<area shape="poly" title=" " alt="" coords="622,58,678,52,678,58,623,63"/>
 <area shape="poly" title=" " alt="" coords="395,158,496,130,497,136,396,163"/>
 <area shape="poly" title=" " alt="" coords="414,172,507,166,507,172,414,178"/>
 <area shape="poly" title=" " alt="" coords="405,55,478,60,478,65,404,60"/>
@@ -819,8 +833,8 @@ voltage</td>
 <area shape="poly" title=" " alt="" coords="404,38,471,28,471,33,405,43"/>
 <area shape="rect" href="actuators__uavcan_8c.html#a2f1b725be20ba2d7f7997d6e1aa6c90d" title=" " alt="" coords="471,214,644,254"/>
 <area shape="poly" title=" " alt="" coords="423,234,457,233,457,238,423,239"/>
-<area shape="rect" href="pprz__random_8c.html#ac6450383e0b401411ff36c479aa7f608" title=" " alt="" coords="692,221,801,247"/>
-<area shape="poly" title=" " alt="" coords="644,231,678,231,678,237,644,237"/>
+<area shape="rect" href="pprz__random_8c.html#ac6450383e0b401411ff36c479aa7f608" title=" " alt="" coords="737,221,847,247"/>
+<area shape="poly" title=" " alt="" coords="644,231,724,231,724,237,644,237"/>
 <area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="482,279,633,304"/>
 <area shape="poly" title=" " alt="" coords="371,286,468,287,468,293,371,291"/>
 </map>
@@ -852,11 +866,11 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00124">124</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00125">125</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00123">esc_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="uwb__positioning_8c_source.html#l00196">offset</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00122">old_idx</a>, <a class="el" href="pprz__random_8c_source.html#l00045">rand_uniform()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00047">actuators_uavcan_telem_t::set</a>.</p>
+<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00124">esc_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="uwb__positioning_8c_source.html#l00196">offset</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00123">old_idx</a>, <a class="el" href="pprz__random_8c_source.html#l00045">rand_uniform()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00048">actuators_uavcan_telem_t::set</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00198">actuators_uavcan_send_esc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00199">actuators_uavcan_send_esc()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -920,11 +934,11 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00198">198</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00199">199</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00124">actuators_uavcan_next_telem()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00055">actuators_uavcan_telem_t::energy</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00122">old_idx</a>, <a class="el" href="rpm__sensor_8c_source.html#l00033">rpm</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
+<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00125">actuators_uavcan_next_telem()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00056">actuators_uavcan_telem_t::energy</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00123">old_idx</a>, <a class="el" href="rpm__sensor_8c_source.html#l00033">rpm</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -988,16 +1002,30 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00236">236</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00237">237</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__uavcan1cmd_8h.html#aa0df3af4de2ba9c3f524fd748043b491">actuators_uavcan1cmd_values</a>, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00111">UAVCAN_CMD_UNUSED</a>.</p>
+<p class="reference">References <a class="el" href="actuators__uavcan1cmd_8h.html#afd6000ff0053c52cf4faaecc464b729c">actuators_uavcan1cmd_set()</a>, <a class="el" href="actuators__uavcan2cmd_8h.html#a2d6af1ac40c36f126f16da078daf275f">actuators_uavcan2cmd_set()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00048">actuators_uavcan_telem_t::set</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00331">actuators_uavcan_actuator_status_cb()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00274">actuators_uavcan_esc_status_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00338">actuators_uavcan_actuator_status_cb()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00281">actuators_uavcan_esc_status_cb()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="actuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_cgraph.png" border="0" usemap="#aactuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_cgraph" alt=""/></div>
+<map name="aactuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_cgraph" id="aactuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,136,56"/>
+<area shape="rect" href="actuators__uavcan1cmd_8h.html#afd6000ff0053c52cf4faaecc464b729c" title=" " alt="" coords="184,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="136,33,170,29,170,34,137,38"/>
+<area shape="rect" href="actuators__uavcan2cmd_8h.html#a2d6af1ac40c36f126f16da078daf275f" title=" " alt="" coords="184,55,384,80"/>
+<area shape="poly" title=" " alt="" coords="137,48,170,52,170,57,136,53"/>
+</map>
+</div>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_icgraph.png" border="0" usemap="#aactuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_icgraph" alt=""/></div>
 <map name="aactuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_icgraph" id="aactuators__uavcan_8c_ae0af6b75b0e22aa3a03feaceb527eeea_icgraph">
 <area shape="rect" title=" " alt="" coords="465,45,596,70"/>
@@ -1047,16 +1075,16 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00219">219</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00220">220</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00331">actuators_uavcan_actuator_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00361">actuators_uavcan_device_temperature_cb()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00274">actuators_uavcan_esc_status_cb()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00338">actuators_uavcan_actuator_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00377">actuators_uavcan_device_temperature_cb()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00281">actuators_uavcan_esc_status_cb()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8c_abeed8e3b88f2504775a62a8db0f1272e_icgraph.png" border="0" usemap="#aactuators__uavcan_8c_abeed8e3b88f2504775a62a8db0f1272e_icgraph" alt=""/></div>
 <map name="aactuators__uavcan_8c_abeed8e3b88f2504775a62a8db0f1272e_icgraph" id="aactuators__uavcan_8c_abeed8e3b88f2504775a62a8db0f1272e_icgraph">
 <area shape="rect" title=" " alt="" coords="465,77,615,102"/>
@@ -1096,9 +1124,9 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00116">116</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00117">117</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 
 </div>
 </div>
@@ -1122,9 +1150,9 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00114">114</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00115">115</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 
 </div>
 </div>
@@ -1148,9 +1176,9 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00117">117</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00118">118</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 
 </div>
 </div>
@@ -1174,9 +1202,9 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00123">123</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00124">124</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00124">actuators_uavcan_next_telem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00125">actuators_uavcan_next_telem()</a>.</p>
 
 </div>
 </div>
@@ -1200,9 +1228,9 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00115">115</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00116">116</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00399">actuators_uavcan_init()</a>.</p>
 
 </div>
 </div>
@@ -1226,9 +1254,9 @@ voltage</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00122">122</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00123">123</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00124">actuators_uavcan_next_telem()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00198">actuators_uavcan_send_esc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00125">actuators_uavcan_next_telem()</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00199">actuators_uavcan_send_esc()</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1266,7 @@ voltage</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__uavcan_8c.html">actuators_uavcan.c</a></li>
-    <li class="footer">Generated on Fri Oct 30 2026 13:28:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 18:49:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

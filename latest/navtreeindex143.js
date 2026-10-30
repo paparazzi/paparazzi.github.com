@@ -1,5 +1,14 @@
 var NAVTREEINDEX143 =
 {
+"mpu60x0_8h.html#abe7cee016f124472673117c85168a7f5":[12,0,1,0,7,99,1,0],
+"mpu60x0_8h.html#acd7f455580bc4961b94d15d8713f95a9":[12,0,1,0,7,99,1,1],
+"mpu60x0_8h.html#ad155a9790c8d380954558466e9008c51":[12,0,1,0,7,99,4],
+"mpu60x0_8h.html#ad3135d14791c55a2cca8de1f7c7cd8e3":[12,0,1,0,7,99,1,3],
+"mpu60x0_8h.html#adf601a2d48664acac0e44828da437892":[12,0,1,0,7,99,18],
+"mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b":[12,0,1,0,7,99,22],
+"mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce":[12,0,1,0,7,99,1,5],
+"mpu60x0_8h.html#structMpu60x0Config":[12,0,1,0,7,99,1],
+"mpu60x0_8h.html#structMpu60x0I2cSlave":[12,0,1,0,7,99,0],
 "mpu60x0_8h_source.html":[12,0,1,0,7,99],
 "mpu60x0__i2c_8c.html":[12,0,1,0,7,100],
 "mpu60x0__i2c_8c.html#a18c3145fc5159f824a0bb9c6e327ede0":[12,0,1,0,7,100,3],
@@ -23,8 +32,8 @@ var NAVTREEINDEX143 =
 "mpu60x0__i2c_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2":[12,0,1,0,7,101,2,0],
 "mpu60x0__i2c_8h.html#a7efe7010fe6adf3c974b7f38a8692d90":[12,0,1,0,7,101,0,7],
 "mpu60x0__i2c_8h.html#a8b090009d4e1b211f6db711a8e90f37d":[12,0,1,0,7,101,0,4],
-"mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,101,1,0],
 "mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,101,2,1],
+"mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,101,1,0],
 "mpu60x0__i2c_8h.html#ab63fc0849edf6216a851937298063d43":[12,0,1,0,7,101,0,5],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1":[12,0,1,0,7,101,4],
 "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a1de606392c12ee14660c4c8a71b3c570":[12,0,1,0,7,101,4,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX143 =
 "mpu9250_8h.html#a66a23a2b2af6f5a6be820ec2f3cc99ba":[12,0,1,0,7,106,1,7],
 "mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400":[12,0,1,0,7,106,26],
 "mpu9250_8h.html#a69947f1fe40926633938b1f52ccb1d45":[12,0,1,0,7,106,1,13],
-"mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d":[12,0,1,0,7,106,1,5],
-"mpu9250_8h.html#a6ff69bee72b3c2a1df4c6f131acd21aa":[12,0,1,0,7,106,7],
-"mpu9250_8h.html#a80ee0c5434de57f6f25ba3bc09d50b78":[12,0,1,0,7,106,1,11],
-"mpu9250_8h.html#a86533d677bbb1562223508b115f29f86":[12,0,1,0,7,106,17],
-"mpu9250_8h.html#a8bac58e2f227d59033c8cd0f1341ead7":[12,0,1,0,7,106,1,6],
-"mpu9250_8h.html#a8f66a2ca6c67979f76e55e3861e6aaa3":[12,0,1,0,7,106,8],
-"mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab":[12,0,1,0,7,106,24],
-"mpu9250_8h.html#aa70b0cd2b4d4ac64956c369549b905ef":[12,0,1,0,7,106,1,2],
-"mpu9250_8h.html#aae5fa60698653c8ac15e41796c53c66e":[12,0,1,0,7,106,23],
-"mpu9250_8h.html#ab1ab338ddc1260c0a36bebbea83e5d63":[12,0,1,0,7,106,1,15]
+"mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d":[12,0,1,0,7,106,1,5]
 };

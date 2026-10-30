@@ -268,6 +268,12 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="a855a55b1d37f8cf215dfa4dd6f91f06d" name="a855a55b1d37f8cf215dfa4dd6f91f06d"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+force</td>
+<td class="fielddoc">
+In Newton or Newton metre. </td></tr>
+<tr><td class="fieldtype">
 <a id="a63a6b3dbd104d8b663c39e25f3e27f76" name="a63a6b3dbd104d8b663c39e25f3e27f76"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 idx</td>
@@ -280,6 +286,12 @@ position</td>
 <td class="fielddoc">
 In radians. </td></tr>
 <tr><td class="fieldtype">
+<a id="a5256798262c9fa3f7ab11b8a851bca08" name="a5256798262c9fa3f7ab11b8a851bca08"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+power_pct</td>
+<td class="fielddoc">
+Power rating in percent. </td></tr>
+<tr><td class="fieldtype">
 <a id="a25edb2720f6e479a47a6bb74b10d0256" name="a25edb2720f6e479a47a6bb74b10d0256"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 rpm</td>
@@ -291,6 +303,12 @@ RPM. </td></tr>
 set</td>
 <td class="fielddoc">
 Bitset registering what is set as feedback. </td></tr>
+<tr><td class="fieldtype">
+<a id="a724c79de2413740d99e17310f3ff4558" name="a724c79de2413740d99e17310f3ff4558"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">float</a></td>
+<td class="fieldname">
+speed</td>
+<td class="fielddoc">
+In meter per second or radian per second. </td></tr>
 </table>
 
 </div>
@@ -311,17 +329,35 @@ Bitset registering what is set as feedback. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="a2bf022bb193e3046d5793a8740771ab1" name="a2bf022bb193e3046d5793a8740771ab1"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
+<td class="fieldname">
+force: 1</td>
+<td class="fielddoc">
+Force is set. </td></tr>
+<tr><td class="fieldtype">
 <a id="a28ef1daca4f83b94650f5e12ae0adac6" name="a28ef1daca4f83b94650f5e12ae0adac6"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
 <td class="fieldname">
 position: 1</td>
 <td class="fielddoc">
 Position is set. </td></tr>
 <tr><td class="fieldtype">
+<a id="ad6c951477f321a260524284a6a23ba34" name="ad6c951477f321a260524284a6a23ba34"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
+<td class="fieldname">
+power: 1</td>
+<td class="fielddoc">
+Power rating is set. </td></tr>
+<tr><td class="fieldtype">
 <a id="a24f27beefe678936255666a7fe68d845" name="a24f27beefe678936255666a7fe68d845"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
 <td class="fieldname">
 rpm: 1</td>
 <td class="fielddoc">
 RPM is set. </td></tr>
+<tr><td class="fieldtype">
+<a id="a1ea8c8130374a04bf49c0cc519d0d22d" name="a1ea8c8130374a04bf49c0cc519d0d22d"></a><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a></td>
+<td class="fieldname">
+speed: 1</td>
+<td class="fielddoc">
+Speed is set. </td></tr>
 </table>
 
 </div>
@@ -338,7 +374,7 @@ RPM is set. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00056">56</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00062">62</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -409,7 +445,7 @@ Precomputed travel up coef. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00071">71</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00077">77</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
 
 </div>
 </div>
@@ -498,7 +534,7 @@ Precomputed travel up coef. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators_8h.html">actuators.h</a></li>
-    <li class="footer">Generated on Fri Oct 30 2026 13:27:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 18:49:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

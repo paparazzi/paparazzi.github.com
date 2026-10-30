@@ -1,5 +1,14 @@
 var NAVTREEINDEX201 =
 {
+"sim_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5":[12,0,1,0,0,2,0,14,10],
+"sim_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587":[12,0,1,0,0,2,0,14,2],
+"sim_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd":[12,0,1,0,0,2,0,14,7],
+"sim_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e":[12,0,1,0,0,2,0,14,5],
+"sim_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43":[12,0,1,0,0,2,0,14,11],
+"sim_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039":[12,0,1,0,0,2,0,14,4],
+"sim_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512":[12,0,1,0,0,2,0,14,6],
+"sim_2mcu__periph_2uart__arch_8c.html#af4447deb79d63086867d3d7286da403d":[12,0,1,0,0,2,0,14,1],
+"sim_2mcu__periph_2uart__arch_8c_source.html":[12,0,1,0,0,2,0,14],
 "sim_2mcu__periph_2uart__arch_8h.html":[12,0,1,0,0,2,0,15],
 "sim_2mcu__periph_2uart__arch_8h.html#a05f5d709605c6317c97e4974bec3402a":[12,0,1,0,0,2,0,15,3],
 "sim_2mcu__periph_2uart__arch_8h.html#a5bdd6772c246436bb14377095de79b31":[12,0,1,0,0,2,0,15,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX201 =
 "snake__gate__detection_8c.html#af0a705296aaf7b8f6e785debb166d907":[12,0,1,0,6,12,34,32],
 "snake__gate__detection_8c.html#af1277b5afcda89127b598dbf4a266725":[12,0,1,0,6,12,34,34],
 "snake__gate__detection_8c.html#af52943a5b43fcf170e3267d9e4c9ed7c":[12,0,1,0,6,12,34,1],
-"snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c":[12,0,1,0,6,12,34,18],
-"snake__gate__detection_8c.html#af821bac5d8143c4f5e6cf3c4d4538e9c":[12,0,1,0,6,12,34,28],
-"snake__gate__detection_8c.html#afa74197068ad47804df4125b8601b31c":[12,0,1,0,6,12,34,11],
-"snake__gate__detection_8c_source.html":[12,0,1,0,6,12,34],
-"snake__gate__detection_8h.html":[12,0,1,0,6,12,35],
-"snake__gate__detection_8h.html#a0981ce70dd28acd9b61fd0da4248798f":[12,0,1,0,6,12,35,2],
-"snake__gate__detection_8h.html#a12f648ab707f85b8c8fdf5915a415beb":[12,0,1,0,6,12,35,13],
-"snake__gate__detection_8h.html#a187099f3c8b15ddf2fc47461c89e13fe":[12,0,1,0,6,12,35,8],
-"snake__gate__detection_8h.html#a1dc48b4673a3131cf83a0d0692c95183":[12,0,1,0,6,12,35,11],
-"snake__gate__detection_8h.html#a2a3da4e9600e16e13b490769b3374ffa":[12,0,1,0,6,12,35,10]
+"snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c":[12,0,1,0,6,12,34,18]
 };

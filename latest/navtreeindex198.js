@@ -1,5 +1,14 @@
 var NAVTREEINDEX198 =
 {
+"sbus__dual_8c.html":[12,0,1,0,6,57,19],
+"sbus__dual_8c.html#a0391a78ae3f30e6308e3bef30963823b":[12,0,1,0,6,57,19,3],
+"sbus__dual_8c.html#a06629ac6d37929437d99cce1c4631330":[12,0,1,0,6,57,19,7],
+"sbus__dual_8c.html#a16fc1909cb36167ee2c561e1c591c017":[12,0,1,0,6,57,19,8],
+"sbus__dual_8c.html#a2c10b51827e5f39514845fc9e878a2b6":[12,0,1,0,6,57,19,5],
+"sbus__dual_8c.html#a462afa775c7f9b0844c9c1933976efe0":[12,0,1,0,6,57,19,2],
+"sbus__dual_8c.html#a644ff95fa518be1d525f8f1b40e23282":[12,0,1,0,6,57,19,0],
+"sbus__dual_8c.html#a7200c46b9e757d8be2409902d3c292cb":[12,0,1,0,6,57,19,4],
+"sbus__dual_8c.html#aaa01bd454b74583dd08f4a33b8b35506":[12,0,1,0,6,57,19,1],
 "sbus__dual_8c.html#aed87c6cc1dea1c07bf450996279c1533":[12,0,1,0,6,57,19,6],
 "sbus__dual_8c_source.html":[12,0,1,0,6,57,19],
 "sbus__dual_8h.html":[12,0,1,0,6,57,20],
@@ -240,14 +249,5 @@ var NAVTREEINDEX198 =
 "sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102":[12,0,1,0,6,42,22,16],
 "sdlog__chibios_8c.html#a669b871bb9f27ed42467ccaa76cec412":[12,0,1,0,6,42,22,0],
 "sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63":[12,0,1,0,6,42,22,18],
-"sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9":[12,0,1,0,6,42,22,10],
-"sdlog__chibios_8c.html#a6f2735648e3811dabee7dc1e995fb175":[12,0,1,0,6,42,22,7],
-"sdlog__chibios_8c.html#a7443f49b66b998087c9e0446778e0ca7":[12,0,1,0,6,42,22,6],
-"sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109":[12,0,1,0,6,42,22,17],
-"sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4":[12,0,1,0,6,42,22,1],
-"sdlog__chibios_8c.html#a9988fa9164781fcdba3d62a105567140":[12,0,1,0,6,42,22,22],
-"sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91":[12,0,1,0,6,42,22,11],
-"sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9":[12,0,1,0,6,42,22,14],
-"sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d":[12,0,1,0,6,42,22,24],
-"sdlog__chibios_8c.html#abb202e6b58d213508879a54bf05251bb":[12,0,1,0,6,42,22,4]
+"sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9":[12,0,1,0,6,42,22,10]
 };

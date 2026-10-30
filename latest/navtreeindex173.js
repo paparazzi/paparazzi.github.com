@@ -1,5 +1,14 @@
 var NAVTREEINDEX173 =
 {
+"paparazzi_messages.html#INS_EKF2":[2,0,162],
+"paparazzi_messages.html#INS_EKF2_EXT":[2,0,165],
+"paparazzi_messages.html#INS_FLOW_INFO":[2,0,153],
+"paparazzi_messages.html#INS_REF":[2,0,149],
+"paparazzi_messages.html#INS_Z":[2,0,146],
+"paparazzi_messages.html#INTERMCU_CLASS":[2,4],
+"paparazzi_messages.html#INTRUDER":[2,2,35],
+"paparazzi_messages.html#INV_FILTER":[2,0,73],
+"paparazzi_messages.html#JEVOIS":[2,0,75],
 "paparazzi_messages.html#JOYSTICK":[2,2,39],
 "paparazzi_messages.html#JOYSTICK_RAW":[2,1,8],
 "paparazzi_messages.html#JUMP_TO_BLOCK":[2,2,25],
@@ -240,14 +249,5 @@ var NAVTREEINDEX173 =
 "pca95xx_8h.html#add959b9146a80455023313ffde649f28":[12,0,1,0,7,122,3],
 "pca95xx_8h.html#addd99f24185ce2bcc2bf8b85f348ac4d":[12,0,1,0,7,122,14],
 "pca95xx_8h.html#adf3ceba27602744321a2f5c4613d320c":[12,0,1,0,7,122,4],
-"pca95xx_8h.html#ae6714943caaa6993288adcc441135bd7":[12,0,1,0,7,122,8],
-"pca95xx_8h.html#ae693ccc9f8550f3b32f30918d3f0ab85":[12,0,1,0,7,122,15],
-"pca95xx_8h.html#aea5d9d7b816dc7061ff4e4321cbbf317":[12,0,1,0,7,122,12],
-"pca95xx_8h.html#aeaf8ba1b5bf5312a5213264371c5400f":[12,0,1,0,7,122,18],
-"pca95xx_8h.html#structpca95xx":[12,0,1,0,7,122,0],
-"pca95xx_8h_source.html":[12,0,1,0,7,122],
-"pca9685__i2c_8c.html":[12,0,1,0,6,52,0],
-"pca9685__i2c_8c.html#a01679ef97d81e1bb3f20be12b8ff4ad2":[12,0,1,0,6,52,0,91],
-"pca9685__i2c_8c.html#a0304a52532d06fba688bbc43779a859d":[12,0,1,0,6,52,0,75],
-"pca9685__i2c_8c.html#a05a6650af60e867c9a9ed01a3481e4f0":[12,0,1,0,6,52,0,76]
+"pca95xx_8h.html#ae6714943caaa6993288adcc441135bd7":[12,0,1,0,7,122,8]
 };
