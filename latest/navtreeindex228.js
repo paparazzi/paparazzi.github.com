@@ -1,5 +1,8 @@
 var NAVTREEINDEX228 =
 {
+"tmotor_2aiof7_2v1_2mcuconf__board_8h.html#ad9cad374b91eaa3e5ff2a68319d1721a":[12,0,1,0,1,19,0,0,1,32],
+"tmotor_2aiof7_2v1_2mcuconf__board_8h.html#ad9f8b9dcf8dd01e163b8d47c56cee1aa":[12,0,1,0,1,19,0,0,1,272],
+"tmotor_2aiof7_2v1_2mcuconf__board_8h.html#ada1164056ea271b26c923140f69ace87":[12,0,1,0,1,19,0,0,1,123],
 "tmotor_2aiof7_2v1_2mcuconf__board_8h.html#adad1367e1eb26c3a6df6a358f44ce98e":[12,0,1,0,1,19,0,0,1,136],
 "tmotor_2aiof7_2v1_2mcuconf__board_8h.html#adae68423fc725ae1da125e4929e6de73":[12,0,1,0,1,19,0,0,1,53],
 "tmotor_2aiof7_2v1_2mcuconf__board_8h.html#adc27d1e2fcdedcb56fc15a41e5f43d91":[12,0,1,0,1,19,0,0,1,133],
@@ -246,8 +249,5 @@ var NAVTREEINDEX228 =
 "uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e":[12,0,1,0,6,75,0,8],
 "uav__recovery_8c.html#a870be29565fbce5402f808b2569317ff":[12,0,1,0,6,75,0,15],
 "uav__recovery_8c.html#a9c3944426205456273cd8c7f1b880f1d":[12,0,1,0,6,75,0,18],
-"uav__recovery_8c.html#a9c997b8e616fff9243a44110e922490b":[12,0,1,0,6,75,0,7],
-"uav__recovery_8c.html#abd78d8457c4b7bd26530905f80f3a318":[12,0,1,0,6,75,0,3],
-"uav__recovery_8c.html#ac2dac752a8b7bced533b7f19bdcc893e":[12,0,1,0,6,75,0,6],
-"uav__recovery_8c.html#ad258fff54e26cfc7c096274a72469411":[12,0,1,0,6,75,0,13]
+"uav__recovery_8c.html#a9c997b8e616fff9243a44110e922490b":[12,0,1,0,6,75,0,7]
 };

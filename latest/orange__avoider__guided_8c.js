@@ -8,13 +8,15 @@ var orange__avoider__guided_8c =
       [ "OBSTACLE_FOUND", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b", null ],
       [ "SEARCH_FOR_SAFE_HEADING", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1", null ],
       [ "OUT_OF_BOUNDS", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7", null ],
-      [ "REENTER_ARENA", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30", null ]
+      [ "REENTER_ARENA", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30", null ],
+      [ "RETREAT", "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3acd04451478f0bb20692e4364f9a36d4e", null ]
     ] ],
     [ "chooseRandomIncrementAvoidance", "orange__avoider__guided_8c.html#a1296b3545ad39ed2510a2057a20dfb26", null ],
     [ "color_detection_cb", "orange__avoider__guided_8c.html#a0111a459dae5b767ece1246ad1d1032e", null ],
     [ "floor_detection_cb", "orange__avoider__guided_8c.html#a3195b561be7153ab68967154ee6a4d3a", null ],
     [ "orange_avoider_guided_init", "orange__avoider__guided_8c.html#ae8b3ef53a7a869aec22a2a48a90e69cb", null ],
     [ "orange_avoider_guided_periodic", "orange__avoider__guided_8c.html#a3f1ea4da9ed0b0b23370129310934e54", null ],
+    [ "orange_avoider_guided_retreat", "orange__avoider__guided_8c.html#a8a0c3d38c12e51071c70327e482154a8", null ],
     [ "avoidance_heading_direction", "orange__avoider__guided_8c.html#a5c2924c696a50a0f96590951d193efa3", null ],
     [ "color_count", "orange__avoider__guided_8c.html#ac2fc0752f9ac5d1c38f991acadda7726", null ],
     [ "color_detection_ev", "orange__avoider__guided_8c.html#a1fa0dc3b6f3dc521aca2caa29ac10d2b", null ],

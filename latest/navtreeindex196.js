@@ -1,5 +1,8 @@
 var NAVTREEINDEX196 =
 {
+"rover_2navigation_8h.html#ad4370c1b677df6a67689358a5a8f5014":[12,0,1,0,3,3,10,47],
+"rover_2navigation_8h.html#ad60a03263ab2550888497114547919ee":[12,0,1,0,3,3,10,17],
+"rover_2navigation_8h.html#ad617b2ea9bb32ff976e4b172cd375483":[12,0,1,0,3,3,10,32],
 "rover_2navigation_8h.html#ad6601a6ea5f3ff9f62e08393c2fdcc2e":[12,0,1,0,3,3,10,43],
 "rover_2navigation_8h.html#ad6a9228c29c723a8924a9f1214404a31":[12,0,1,0,3,3,10,59],
 "rover_2navigation_8h.html#ad8b75deb4546e944bed16b5b19455ff5":[12,0,1,0,3,3,10,31],
@@ -246,8 +249,5 @@ var NAVTREEINDEX196 =
 "rover__obstacles_8h.html#structbayesian__map":[12,0,1,0,3,3,1,1,0],
 "rover__obstacles_8h.html#structworld__grid":[12,0,1,0,3,3,1,1,1],
 "rover__obstacles_8h_source.html":[12,0,1,0,3,3,1,1],
-"rover__telemetry_8c.html":[12,0,1,0,3,3,11],
-"rover__telemetry_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,3,11,0],
-"rover__telemetry_8c_source.html":[12,0,1,0,3,3,11],
-"rpm__sensor_8c.html":[12,0,1,0,6,65,89]
+"rover__telemetry_8c.html":[12,0,1,0,3,3,11]
 };
