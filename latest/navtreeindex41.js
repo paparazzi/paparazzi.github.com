@@ -1,5 +1,15 @@
 var NAVTREEINDEX41 =
 {
+"crazyflie_2chibios_2v2_81_2board_8h.html#a06dfdd42c697853ea58f0243caf53da5":[12,0,1,0,1,4,0,0,0,75],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a075ace0177a31ebf73c74fdcc42b9037":[12,0,1,0,1,4,0,0,0,282],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a09018f75c61279ce6da0d763fffe27fd":[12,0,1,0,1,4,0,0,0,219],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0b4955074eb52006b4c37728afbb77ea":[12,0,1,0,1,4,0,0,0,255],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0c4bcec489fcfa0101335c0696e9f8f6":[12,0,1,0,1,4,0,0,0,193],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0cbd10ef9b59b37059372d00f897842a":[12,0,1,0,1,4,0,0,0,286],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0dc451bda5062cde685b36075f3954d6":[12,0,1,0,1,4,0,0,0,89],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0e39cd8c36f2612d9aef595c5452a574":[12,0,1,0,1,4,0,0,0,108],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0ea72811af3c3964000de07b6b092def":[12,0,1,0,1,4,0,0,0,272],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a0f5d50c45d8d3cc39e6e54ae99061fd4":[12,0,1,0,1,4,0,0,0,146],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a0fa5d3784db71d607cd116c9cba4f582":[12,0,1,0,1,4,0,0,0,250],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a0fbc2f053dee2ff850f4ff5fc237b3f7":[12,0,1,0,1,4,0,0,0,163],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a102ea35080ad690407b3c8aad2d085c6":[12,0,1,0,1,4,0,0,0,274],
@@ -239,15 +249,5 @@ var NAVTREEINDEX41 =
 "crazyflie_2chibios_2v2_81_2board_8h.html#a9d61369d9a94b72fceba7e1627a22251":[12,0,1,0,1,4,0,0,0,317],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a9da4fd83b4057633953b56dde94d3d22":[12,0,1,0,1,4,0,0,0,82],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a9dd61fc755020c90dbfb072e2f0492e8":[12,0,1,0,1,4,0,0,0,114],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a9e0dc0a0d20a36d21fab1de06990dd04":[12,0,1,0,1,4,0,0,0,334],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a9e397e7be2534f6438e90ed3a540b8ee":[12,0,1,0,1,4,0,0,0,176],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a9f030d95a959e7c5857f80376fde0988":[12,0,1,0,1,4,0,0,0,337],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a9fd1d09eb4ed265fea1ab0bf0da2d606":[12,0,1,0,1,4,0,0,0,86],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa019726230902e124ce65fc02b81e29d":[12,0,1,0,1,4,0,0,0,327],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa0270bd5ac093358485e0c74004463a8":[12,0,1,0,1,4,0,0,0,246],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa0608deddf85b9c17b47c822a1622033":[12,0,1,0,1,4,0,0,0,60],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa17989d2d888994a15ae46785d214855":[12,0,1,0,1,4,0,0,0,44],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa33429c540a39f88980e0ee806164eae":[12,0,1,0,1,4,0,0,0,342],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa3dd90100877c32fbe18c5434c237e8d":[12,0,1,0,1,4,0,0,0,65],
-"crazyflie_2chibios_2v2_81_2board_8h.html#aa4be57b263d4ef93286d52613fde9d6c":[12,0,1,0,1,4,0,0,0,96]
+"crazyflie_2chibios_2v2_81_2board_8h.html#a9e0dc0a0d20a36d21fab1de06990dd04":[12,0,1,0,1,4,0,0,0,334]
 };

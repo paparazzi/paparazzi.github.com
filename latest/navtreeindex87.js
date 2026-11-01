@@ -1,5 +1,15 @@
 var NAVTREEINDEX87 =
 {
+"ik_2nav_2nav__sin_8c.html#ae2a172abf3e23f1335080e8abe1719c8":[12,0,1,0,6,31,1,0,4,5],
+"ik_2nav_2nav__sin_8c_source.html":[12,0,1,0,6,31,1,0,4],
+"ik_2nav_2nav__sin_8h.html":[12,0,1,0,6,31,1,0,5],
+"ik_2nav_2nav__sin_8h.html#a03feb8c1d36e527f13cce451d66cb037":[12,0,1,0,6,31,1,0,5,0,4],
+"ik_2nav_2nav__sin_8h.html#a09f09a77bb3b5bc94e7022d210f90aa2":[12,0,1,0,6,31,1,0,5,0,0],
+"ik_2nav_2nav__sin_8h.html#a2fc016a62354130459e10ee8fd986776":[12,0,1,0,6,31,1,0,5,3],
+"ik_2nav_2nav__sin_8h.html#a5ec885c8789da214b5f0b16ff12419af":[12,0,1,0,6,31,1,0,5,4],
+"ik_2nav_2nav__sin_8h.html#a93039e1628e950d17b043a526532a57a":[12,0,1,0,6,31,1,0,5,0,3],
+"ik_2nav_2nav__sin_8h.html#a9c71fbf81c0eb3b40028404108468f54":[12,0,1,0,6,31,1,0,5,1],
+"ik_2nav_2nav__sin_8h.html#a9e25b239113c5eb0fd19ba98bd35cca3":[12,0,1,0,6,31,1,0,5,0,1],
 "ik_2nav_2nav__sin_8h.html#aa3ac9a689443ae224b1e9defebc24b18":[12,0,1,0,6,31,1,0,5,2],
 "ik_2nav_2nav__sin_8h.html#ad77cd49fee6b735ce91b3bc907ab97e7":[12,0,1,0,6,31,1,0,5,0,2],
 "ik_2nav_2nav__sin_8h.html#af4245e0b26e8a1cf5d9f090afce567f4":[12,0,1,0,6,31,1,0,5,0,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX87 =
 "imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858":[12,0,1,0,6,36,3,2,0],
 "imu_8h.html#afbfa216dda948a1773c5c5725dd2f86a":[12,0,1,0,6,36,3,13],
 "imu_8h.html#structImu":[12,0,1,0,6,36,3,4],
-"imu_8h.html#structimu__accel__t":[12,0,1,0,6,36,3,2],
-"imu_8h.html#structimu__calib__t":[12,0,1,0,6,36,3,0],
-"imu_8h.html#structimu__gyro__t":[12,0,1,0,6,36,3,1],
-"imu_8h.html#structimu__mag__t":[12,0,1,0,6,36,3,3],
-"imu_8h_source.html":[12,0,1,0,6,36,3],
-"imu__apogee_8c.html":[12,0,1,0,1,0,3],
-"imu__apogee_8c.html#a195fd58b3335b4b91593e2c7d1bdb6fb":[12,0,1,0,1,0,3,9],
-"imu__apogee_8c.html#a31a5ac940bea487cf5608391f957c5bc":[12,0,1,0,1,0,3,1],
-"imu__apogee_8c.html#a3393a9d95aad086bcf228b54c4981381":[12,0,1,0,1,0,3,2],
-"imu__apogee_8c.html#a43abac81ed29891c48ad37a910562844":[12,0,1,0,1,0,3,8],
-"imu__apogee_8c.html#a50a720bf8e1a73ca4b5e90051b4cffc0":[12,0,1,0,1,0,3,5]
+"imu_8h.html#structimu__accel__t":[12,0,1,0,6,36,3,2]
 };

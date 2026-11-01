@@ -1,5 +1,15 @@
 var NAVTREEINDEX137 =
 {
+"module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,516,0],
+"module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,516,2,0],
+"module__mag_hmc5843.html":[1,432],
+"module__mag_hmc5843.html#configuration__mag_hmc5843":[1,432,1],
+"module__mag_hmc5843.html#functions__mag_hmc5843":[1,432,2],
+"module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,432,0],
+"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,432,2,0],
+"module__mag_hmc58xx.html":[1,433],
+"module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,433,1],
+"module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,433,2],
 "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,433,0],
 "module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,433,2,0],
 "module__mag_hmc59xx.html":[1,434],
@@ -239,15 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing":[1,369,2],
 "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,369,0],
 "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,369,2,0],
-"module__nav_trinity.html":[1,370],
-"module__nav_trinity.html#functions__nav_trinity":[1,370,1],
-"module__nav_trinity.html#module_load_example__nav_trinity":[1,370,0],
-"module__nav_trinity.html#module_xml__nav_trinity":[1,370,1,0],
-"module__nav_vertical_raster.html":[1,371],
-"module__nav_vertical_raster.html#module_load_example__nav_vertical_raster":[1,371,0],
-"module__nav_vertical_raster.html#module_xml__nav_vertical_raster":[1,371,0,0],
-"module__navigation.html":[1,372],
-"module__navigation.html#module_load_example__navigation":[1,372,0],
-"module__navigation.html#module_xml__navigation":[1,372,0,0],
-"module__nps_hitl_sensors.html":[1,441]
+"module__nav_trinity.html":[1,370]
 };

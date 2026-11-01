@@ -1,5 +1,15 @@
 var NAVTREEINDEX133 =
 {
+"module__ctrl_windtunnel.html":[1,94],
+"module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,94,1],
+"module__ctrl_windtunnel.html#functions__ctrl_windtunnel":[1,94,2],
+"module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel":[1,94,0],
+"module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel":[1,94,2,0],
+"module__current_sensor.html":[1,494],
+"module__current_sensor.html#configuration__current_sensor":[1,494,1],
+"module__current_sensor.html#module_load_example__current_sensor":[1,494,0],
+"module__current_sensor.html#module_xml__current_sensor":[1,494,1,0],
+"module__cv_blob_locator.html":[1,57],
 "module__cv_blob_locator.html#configuration__cv_blob_locator":[1,57,1],
 "module__cv_blob_locator.html#functions__cv_blob_locator":[1,57,2],
 "module__cv_blob_locator.html#module_load_example__cv_blob_locator":[1,57,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX133 =
 "module__fc_rotor.html":[1,502],
 "module__fc_rotor.html#datalink_functions__fc_rotor":[1,502,2],
 "module__fc_rotor.html#functions__fc_rotor":[1,502,1],
-"module__fc_rotor.html#module_load_example__fc_rotor":[1,502,0],
-"module__fc_rotor.html#module_xml__fc_rotor":[1,502,2,0],
-"module__fdm_crrcsim.html":[1,154],
-"module__fdm_crrcsim.html#module_load_example__fdm_crrcsim":[1,154,0],
-"module__fdm_crrcsim.html#module_xml__fdm_crrcsim":[1,154,0,0],
-"module__fdm_fixedwing_sim.html":[1,155],
-"module__fdm_fixedwing_sim.html#module_load_example__fdm_fixedwing_sim":[1,155,0],
-"module__fdm_fixedwing_sim.html#module_xml__fdm_fixedwing_sim":[1,155,0,0],
-"module__fdm_gazebo.html":[1,156],
-"module__fdm_gazebo.html#configuration__fdm_gazebo":[1,156,1],
-"module__fdm_gazebo.html#module_load_example__fdm_gazebo":[1,156,0]
+"module__fc_rotor.html#module_load_example__fc_rotor":[1,502,0]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX66 =
 {
+"gps__nmea__send_8h.html#ae6624f9940833d3cc8c721c19d18aaa0":[12,0,1,0,6,29,13,0,5],
+"gps__nmea__send_8h.html#afd0e78a5c8b41c97c7ea228247ab3749":[12,0,1,0,6,29,13,3],
+"gps__nmea__send_8h.html#structGps__Nmea__Send":[12,0,1,0,6,29,13,1],
+"gps__nmea__send_8h.html#structgps__nmea__send__msg__t":[12,0,1,0,6,29,13,0],
+"gps__nmea__send_8h_source.html":[12,0,1,0,6,29,13],
+"gps__piksi_8c.html":[12,0,1,0,6,29,14],
+"gps__piksi_8c.html#a0d069b34ba061322d213039fcd99a669":[12,0,1,0,6,29,14,18],
+"gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520":[12,0,1,0,6,29,14,10],
+"gps__piksi_8c.html#a1a86da16d9d399272bfaab18b7faeafe":[12,0,1,0,6,29,14,15],
+"gps__piksi_8c.html#a2a11e7df7bcc31ab10141f020bd6f729":[12,0,1,0,6,29,14,6],
 "gps__piksi_8c.html#a2ad2ea41453e3b5bff367fbdeb0bb827":[12,0,1,0,6,29,14,16],
 "gps__piksi_8c.html#a2eebca531cc7abce49c774d48079fba7":[12,0,1,0,6,29,14,30],
 "gps__piksi_8c.html#a2fcb9204061227b94027a135c469c4b5":[12,0,1,0,6,29,14,7],
@@ -239,15 +249,5 @@ var NAVTREEINDEX66 =
 "gps__skytraq_8h.html#ac1bd9d7f19aed868e8f05341c6fd0676abb783b4476f28a739f018ff71792b046":[12,0,1,0,6,29,23,5,1],
 "gps__skytraq_8h.html#ac1bd9d7f19aed868e8f05341c6fd0676ad1ea9856918ec7f411ee0c8e4dc947fa":[12,0,1,0,6,29,23,5,4],
 "gps__skytraq_8h.html#ada32e6bdf968ea13294278923764ed3b":[12,0,1,0,6,29,23,8],
-"gps__skytraq_8h.html#ae41ac9df7f99292cba88eccd5cd9ceca":[12,0,1,0,6,29,23,2],
-"gps__skytraq_8h.html#structGpsSkytraq":[12,0,1,0,6,29,23,0],
-"gps__skytraq_8h_source.html":[12,0,1,0,6,29,23],
-"gps__uavcan_8c.html":[12,0,1,0,6,29,24],
-"gps__uavcan_8c.html#a08e0fd1991b98a78530cf31852c41b66":[12,0,1,0,6,29,24,1],
-"gps__uavcan_8c.html#a6889544fe907c87eaa363ecfa8cd0afa":[12,0,1,0,6,29,24,3],
-"gps__uavcan_8c.html#a8534e60e74c02076901e721531d53c06":[12,0,1,0,6,29,24,0],
-"gps__uavcan_8c.html#a93495b245004390508d47f7b2315a44b":[12,0,1,0,6,29,24,2],
-"gps__uavcan_8c_source.html":[12,0,1,0,6,29,24],
-"gps__uavcan_8h.html":[12,0,1,0,6,29,25],
-"gps__uavcan_8h.html#a93495b245004390508d47f7b2315a44b":[12,0,1,0,6,29,25,0]
+"gps__skytraq_8h.html#ae41ac9df7f99292cba88eccd5cd9ceca":[12,0,1,0,6,29,23,2]
 };

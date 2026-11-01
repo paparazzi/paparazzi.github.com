@@ -1,12 +1,13 @@
 var nps__fdm__gazebo_8cpp =
 [
-    [ "gazebo_actuators_t", "nps__fdm__gazebo_8cpp.html#structgazebo__actuators__t", [
-      [ "highpass", "nps__fdm__gazebo_8cpp.html#ae87006bc1b46f104419c7613b4a18fd9", null ],
-      [ "lowpass", "nps__fdm__gazebo_8cpp.html#a135a8522a730c4a7f7b8f814a5e17555", null ],
-      [ "max_ang_momentum", "nps__fdm__gazebo_8cpp.html#a72e31f68945bafa99608f9a60031f674", null ],
-      [ "names", "nps__fdm__gazebo_8cpp.html#a546ea96ed8fd7b8d83824c68b51fcca4", null ],
-      [ "thrusts", "nps__fdm__gazebo_8cpp.html#a93e9445eac3352ff841c5d96451bf1d4", null ],
-      [ "torques", "nps__fdm__gazebo_8cpp.html#a7d6855faceba536a5c22fdeb10654990", null ]
+    [ "gazebo_actuators_t", "nps__fdm__gz_8cpp.html#structgazebo__actuators__t", [
+      [ "highpass", "nps__fdm__gz_8cpp.html#a2df8055471f98282c40079d063b9ffbc", null ],
+      [ "lowpass", "nps__fdm__gz_8cpp.html#a08efa846fe6370e807cf8e51c9b5ba9a", null ],
+      [ "max_ang_momentum", "nps__fdm__gz_8cpp.html#a56713bc7a4cfc6639ef40e0ae7df8f79", null ],
+      [ "names", "nps__fdm__gz_8cpp.html#a546ea96ed8fd7b8d83824c68b51fcca4", null ],
+      [ "names", "nps__fdm__gz_8cpp.html#a7edc3e53ef370b394e285ed39f46cee7", null ],
+      [ "thrusts", "nps__fdm__gz_8cpp.html#a3441dc84cc4cea49bc7a6d66326b5afd", null ],
+      [ "torques", "nps__fdm__gz_8cpp.html#abae10c30c0a9ef4fa697c85556a1878a", null ]
     ] ],
     [ "NPS_GAZEBO_AC_NAME", "nps__fdm__gazebo_8cpp.html#ad4356677e880babe6706d28a07cc91cf", null ],
     [ "NPS_GAZEBO_WORLD", "nps__fdm__gazebo_8cpp.html#a54fd4ed5f4a75e1a2ce20d7a5a5409d7", null ],

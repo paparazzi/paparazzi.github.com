@@ -1,5 +1,15 @@
 var NAVTREEINDEX88 =
 {
+"imu_8h.html#structimu__calib__t":[12,0,1,0,6,36,3,0],
+"imu_8h.html#structimu__gyro__t":[12,0,1,0,6,36,3,1],
+"imu_8h.html#structimu__mag__t":[12,0,1,0,6,36,3,3],
+"imu_8h_source.html":[12,0,1,0,6,36,3],
+"imu__apogee_8c.html":[12,0,1,0,1,0,3],
+"imu__apogee_8c.html#a195fd58b3335b4b91593e2c7d1bdb6fb":[12,0,1,0,1,0,3,9],
+"imu__apogee_8c.html#a31a5ac940bea487cf5608391f957c5bc":[12,0,1,0,1,0,3,1],
+"imu__apogee_8c.html#a3393a9d95aad086bcf228b54c4981381":[12,0,1,0,1,0,3,2],
+"imu__apogee_8c.html#a43abac81ed29891c48ad37a910562844":[12,0,1,0,1,0,3,8],
+"imu__apogee_8c.html#a50a720bf8e1a73ca4b5e90051b4cffc0":[12,0,1,0,1,0,3,5],
 "imu__apogee_8c.html#a5ddbbf57488228a97e3d607bac33d837":[12,0,1,0,1,0,3,7],
 "imu__apogee_8c.html#a60395d55d1c3bbb3773a3bc79f210884":[12,0,1,0,1,0,3,6],
 "imu__apogee_8c.html#a7c147dacf0b6307cbc0bd7c866110b16":[12,0,1,0,1,0,3,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX88 =
 "imu__mpu6000_8h.html#a7c0229d06494ef4074857d8ed4f277e1":[12,0,1,0,6,36,23,1],
 "imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250":[12,0,1,0,6,36,23,4],
 "imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0":[12,0,1,0,6,36,23,3],
-"imu__mpu6000_8h.html#structImuMpu6000":[12,0,1,0,6,36,23,0],
-"imu__mpu6000_8h_source.html":[12,0,1,0,6,36,23],
-"imu__mpu6000__hmc5883_8c.html":[12,0,1,0,6,36,24],
-"imu__mpu6000__hmc5883_8c.html#a1542fbc0f6f147a0993f3b89bc410469":[12,0,1,0,6,36,24,11],
-"imu__mpu6000__hmc5883_8c.html#a2fa9b02daff22a9e05af5dae54d874bb":[12,0,1,0,6,36,24,4],
-"imu__mpu6000__hmc5883_8c.html#a36489f003cea9fda6f12e6d8e9b2538d":[12,0,1,0,6,36,24,1],
-"imu__mpu6000__hmc5883_8c.html#a5e1306dffd68a877b676de9d785a279a":[12,0,1,0,6,36,24,9],
-"imu__mpu6000__hmc5883_8c.html#a802939ddfdf31199a1e9c2d821b2a513":[12,0,1,0,6,36,24,0],
-"imu__mpu6000__hmc5883_8c.html#aa0c68fe97ff5dc4caca839d96e849569":[12,0,1,0,6,36,24,2],
-"imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9":[12,0,1,0,6,36,24,15],
-"imu__mpu6000__hmc5883_8c.html#ab0ea581dde7834254f66b8b22779dda4":[12,0,1,0,6,36,24,14]
+"imu__mpu6000_8h.html#structImuMpu6000":[12,0,1,0,6,36,23,0]
 };

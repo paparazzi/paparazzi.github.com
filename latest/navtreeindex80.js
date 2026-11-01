@@ -1,5 +1,15 @@
 var NAVTREEINDEX80 =
 {
+"hf__float_8c.html#aebc6ad05bcec6d17a462c427ac9a07a0":[12,0,1,0,6,37,2,27],
+"hf__float_8c.html#af6333ef44fbaf7aaf25c27a56429144f":[12,0,1,0,6,37,2,53],
+"hf__float_8c.html#afd277e77eaa74cd61e8edb134714988a":[12,0,1,0,6,37,2,3],
+"hf__float_8c.html#afdb654ec9b7836802d036412dfd8ba09":[12,0,1,0,6,37,2,35],
+"hf__float_8c.html#afec83e3697675c3915f9d3b46f040fe1":[12,0,1,0,6,37,2,54],
+"hf__float_8c.html#aff5796a357fc2396fb781eb600690a4f":[12,0,1,0,6,37,2,44],
+"hf__float_8c_source.html":[12,0,1,0,6,37,2],
+"hf__float_8h.html":[12,0,1,0,6,37,3],
+"hf__float_8h.html#a18b85c18ddbcb7d5344995a69729d8d9":[12,0,1,0,6,37,3,0,7],
+"hf__float_8h.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d":[12,0,1,0,6,37,3,2],
 "hf__float_8h.html#a22e2b42c2da9e519e3e4cbd127eef171":[12,0,1,0,6,37,3,8],
 "hf__float_8h.html#a3161286a7c402bf00b108cf84127542b":[12,0,1,0,6,37,3,0,4],
 "hf__float_8h.html#a6042a5580f73a9e69d21573324255978":[12,0,1,0,6,37,3,0,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX80 =
 "hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9":[12,0,1,0,7,45,9],
 "hmc58xx_8c_source.html":[12,0,1,0,7,45],
 "hmc58xx_8h.html":[12,0,1,0,7,46],
-"hmc58xx_8h.html#a102f8c50c73b9daf9e0ba09213649a27":[12,0,1,0,7,46,0,2],
-"hmc58xx_8h.html#a1daa9072b668998f936fb469e5c6c515":[12,0,1,0,7,46,6],
-"hmc58xx_8h.html#a32e4808756f2e8ea135e23efb0ad7774":[12,0,1,0,7,46,1,7],
-"hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec":[12,0,1,0,7,46,7],
-"hmc58xx_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,46,2,1],
-"hmc58xx_8h.html#a43b4d88b5ab4095fd1913f97119823cf":[12,0,1,0,7,46,1,8],
-"hmc58xx_8h.html#a47da4ccd0683047bec2ee560a5101aef":[12,0,1,0,7,46,1,4],
-"hmc58xx_8h.html#a4f74b18f71f610915a041aaec85ca2bf":[12,0,1,0,7,46,1,5],
-"hmc58xx_8h.html#a6514a605dad1e4bb5664bf885cca676b":[12,0,1,0,7,46,5],
-"hmc58xx_8h.html#a6688a701395e53f5cf64289c725ac039":[12,0,1,0,7,46,4],
-"hmc58xx_8h.html#a6688a701395e53f5cf64289c725ac039a7bd2ca2cf5f0f61313660349139ff0e9":[12,0,1,0,7,46,4,1]
+"hmc58xx_8h.html#a102f8c50c73b9daf9e0ba09213649a27":[12,0,1,0,7,46,0,2]
 };

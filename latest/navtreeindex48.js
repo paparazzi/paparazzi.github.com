@@ -1,5 +1,15 @@
 var NAVTREEINDEX48 =
 {
+"cyrf6936__regs_8h.html#a256015435edbc6b1202ca9d3b7f27500":[12,0,1,0,7,37,32],
+"cyrf6936__regs_8h.html#a28adc01bd4e6792312fa8fa3d561e052":[12,0,1,0,7,37,68],
+"cyrf6936__regs_8h.html#a2954fff9e970ff98766c734cc6822fdb":[12,0,1,0,7,37,31],
+"cyrf6936__regs_8h.html#a2a1eea87b08abb3db6a2ecfa1683475c":[12,0,1,0,7,37,49],
+"cyrf6936__regs_8h.html#a2c1a1b953c4955310e5b343ed6fa9a6b":[12,0,1,0,7,37,50],
+"cyrf6936__regs_8h.html#a2eeb5bfa5d7a9b184bd667b635776dbb":[12,0,1,0,7,37,40],
+"cyrf6936__regs_8h.html#a35ab6f781b0d0654c1fd73a14cce9d79":[12,0,1,0,7,37,6],
+"cyrf6936__regs_8h.html#a3d42299953e8f63fb2725eaae95446a4":[12,0,1,0,7,37,19],
+"cyrf6936__regs_8h.html#a41318a530fb8543525b5eaf49f38b4a5":[12,0,1,0,7,37,55],
+"cyrf6936__regs_8h.html#a440abda571398d094684b86ea55c63bb":[12,0,1,0,7,37,62],
 "cyrf6936__regs_8h.html#a441268b5760a9a2b84817dbe9af442c9":[12,0,1,0,7,37,56],
 "cyrf6936__regs_8h.html#a46aa43df12c24bcb712ff3dccdb12556":[12,0,1,0,7,37,37],
 "cyrf6936__regs_8h.html#a47e80836d5991bf2388db4901f0336e3":[12,0,1,0,7,37,11],
@@ -239,15 +249,5 @@ var NAVTREEINDEX48 =
 "dc__shoot__rc_8c.html":[12,0,1,0,6,19,9],
 "dc__shoot__rc_8c.html#a07c50c1495b2a608715da52b87501ff2":[12,0,1,0,6,19,9,1],
 "dc__shoot__rc_8c.html#a18f246d4a4f22ae6b3ab020ee9312b42":[12,0,1,0,6,19,9,0],
-"dc__shoot__rc_8c_source.html":[12,0,1,0,6,19,9],
-"dc__shoot__rc_8h.html":[12,0,1,0,6,19,10],
-"dc__shoot__rc_8h.html#a07c50c1495b2a608715da52b87501ff2":[12,0,1,0,6,19,10,0],
-"dc__shoot__rc_8h_source.html":[12,0,1,0,6,19,10],
-"dcf_8c.html":[12,0,1,0,6,46,1,0],
-"dcf_8c.html#a10a11ec6ecbc21114aa2afaf94ff1d21":[12,0,1,0,6,46,1,0,9],
-"dcf_8c.html#a1bef098c0ae2e8b9946f2e22c19a3da5":[12,0,1,0,6,46,1,0,0],
-"dcf_8c.html#a2c808fb51be63b31ff1bd655c5803729":[12,0,1,0,6,46,1,0,12],
-"dcf_8c.html#a6a32557240213b082a235354879dd445":[12,0,1,0,6,46,1,0,2],
-"dcf_8c.html#a7103f3bcbab88ab1be8870511d631956":[12,0,1,0,6,46,1,0,4],
-"dcf_8c.html#a739fc0b731e1a571e2800987a82490fa":[12,0,1,0,6,46,1,0,8]
+"dc__shoot__rc_8c_source.html":[12,0,1,0,6,19,9]
 };

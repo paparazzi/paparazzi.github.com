@@ -1,5 +1,15 @@
 var NAVTREEINDEX60 =
 {
+"filter__1euro__imu_8c.html#a6a5e79c071bf1e99e7112c34e3828057":[12,0,1,0,6,36,0,0],
+"filter__1euro__imu_8c.html#a6aa911576e04d8ae0519d83ae6722546":[12,0,1,0,6,36,0,24],
+"filter__1euro__imu_8c.html#a7118b0b2e867b92313a9f584a637a025":[12,0,1,0,6,36,0,11],
+"filter__1euro__imu_8c.html#a72762cec53feca77b4093d13c547b654":[12,0,1,0,6,36,0,12],
+"filter__1euro__imu_8c.html#a7346d94d46fd872583eff79f9b74db6f":[12,0,1,0,6,36,0,14],
+"filter__1euro__imu_8c.html#a891cf332e0c51a8cb0ad84ba2aa7f927":[12,0,1,0,6,36,0,5],
+"filter__1euro__imu_8c.html#aacd6b1869f263f90a6f1fbe777a87793":[12,0,1,0,6,36,0,9],
+"filter__1euro__imu_8c.html#ab72d358ee01f116cfb8bcbe66dcb59e0":[12,0,1,0,6,36,0,8],
+"filter__1euro__imu_8c.html#ab91db52140ee483950fad900efcd3ca2":[12,0,1,0,6,36,0,1],
+"filter__1euro__imu_8c.html#ac5440f07272979ecc4ceb8b288758320":[12,0,1,0,6,36,0,10],
 "filter__1euro__imu_8c.html#ade4345b837c93a28269d599297a5d03b":[12,0,1,0,6,36,0,20],
 "filter__1euro__imu_8c_source.html":[12,0,1,0,6,36,0],
 "filter__1euro__imu_8h.html":[12,0,1,0,6,36,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX60 =
 "flight__gear_8h.html":[12,0,1,1,2,1],
 "flight__gear_8h.html#a00678f0f6eabb9cc1eb6b2e3a6be6a39":[12,0,1,1,2,1,0,8],
 "flight__gear_8h.html#a01c689ff79acfad6e0071b4700492b0f":[12,0,1,1,2,1,0,17],
-"flight__gear_8h.html#a01fbcd7d0f2a1ec0fd1361a380dca452":[12,0,1,1,2,1,3,10],
-"flight__gear_8h.html#a02226537e5a5d8f2a9029ca87c07de6b":[12,0,1,1,2,1,1,3],
-"flight__gear_8h.html#a0299b8cbdb09a7041cef259ce9ff3c9f":[12,0,1,1,2,1,3,2],
-"flight__gear_8h.html#a02ccaa07c4d821d137a5ae4d549423f2":[12,0,1,1,2,1,4,5],
-"flight__gear_8h.html#a04b33116877e5279577545c9d49898cb":[12,0,1,1,2,1,0,2],
-"flight__gear_8h.html#a0522d4ab82a58f7aed36b2c9d9cc2fbc":[12,0,1,1,2,1,0,18],
-"flight__gear_8h.html#a08a2f7fd5f280d008c4cd22c500ce525":[12,0,1,1,2,1,0,39],
-"flight__gear_8h.html#a0a1a51fb02358bfa6d1fba7b99898aa6":[12,0,1,1,2,1,0,16],
-"flight__gear_8h.html#a0a5ee028c8dfc29081ab82c74956b9da":[12,0,1,1,2,1,0,41],
-"flight__gear_8h.html#a0cf007c2a9ce1944dd6fb17c6e5355b5":[12,0,1,1,2,1,0,45],
-"flight__gear_8h.html#a0d2d5299b7392b7d55fdf1839ddaba0b":[12,0,1,1,2,1,1,51]
+"flight__gear_8h.html#a01fbcd7d0f2a1ec0fd1361a380dca452":[12,0,1,1,2,1,3,10]
 };

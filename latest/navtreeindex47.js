@@ -1,5 +1,15 @@
 var NAVTREEINDEX47 =
 {
+"cv_8h.html#a98898de2ba14ae5d93a2e2b894c2d769":[12,0,1,0,6,12,9,2],
+"cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5":[12,0,1,0,6,12,9,3],
+"cv_8h.html#ad68ad01b9b1e841ebcd3ce0a168dc6cf":[12,0,1,0,6,12,9,0,2],
+"cv_8h.html#ad901c54d5ca78acd4b72370f473c17f0":[12,0,1,0,6,12,9,4],
+"cv_8h.html#structcv__async":[12,0,1,0,6,12,9,0],
+"cv_8h.html#structvideo__listener":[12,0,1,0,6,12,9,1],
+"cv_8h_source.html":[12,0,1,0,6,12,9],
+"cv__blob__locator_8c.html":[12,0,1,0,6,12,10],
+"cv__blob__locator_8c.html#a028a785eb4e92e36a242baac2c592b6b":[12,0,1,0,6,12,10,15],
+"cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d":[12,0,1,0,6,12,10,4],
 "cv__blob__locator_8c.html#a0625acc5c17262bca58f3055fcad6c29":[12,0,1,0,6,12,10,6],
 "cv__blob__locator_8c.html#a095162a58d6a269d84029f8a17a1d359":[12,0,1,0,6,12,10,8],
 "cv__blob__locator_8c.html#a097367403a1933e2662a880988d3d21e":[12,0,1,0,6,12,10,25],
@@ -239,15 +249,5 @@ var NAVTREEINDEX47 =
 "cyrf6936__regs_8h.html#a15b09c6b4c002bea81ed6456e4f8def0":[12,0,1,0,7,37,30],
 "cyrf6936__regs_8h.html#a1cce0e54f6b2fc8d03581fcca7556266":[12,0,1,0,7,37,43],
 "cyrf6936__regs_8h.html#a20434170fefbd3a383838bf9bd92a157":[12,0,1,0,7,37,24],
-"cyrf6936__regs_8h.html#a23d61d6ce8303349eadddad59c9528e0":[12,0,1,0,7,37,48],
-"cyrf6936__regs_8h.html#a256015435edbc6b1202ca9d3b7f27500":[12,0,1,0,7,37,32],
-"cyrf6936__regs_8h.html#a28adc01bd4e6792312fa8fa3d561e052":[12,0,1,0,7,37,68],
-"cyrf6936__regs_8h.html#a2954fff9e970ff98766c734cc6822fdb":[12,0,1,0,7,37,31],
-"cyrf6936__regs_8h.html#a2a1eea87b08abb3db6a2ecfa1683475c":[12,0,1,0,7,37,49],
-"cyrf6936__regs_8h.html#a2c1a1b953c4955310e5b343ed6fa9a6b":[12,0,1,0,7,37,50],
-"cyrf6936__regs_8h.html#a2eeb5bfa5d7a9b184bd667b635776dbb":[12,0,1,0,7,37,40],
-"cyrf6936__regs_8h.html#a35ab6f781b0d0654c1fd73a14cce9d79":[12,0,1,0,7,37,6],
-"cyrf6936__regs_8h.html#a3d42299953e8f63fb2725eaae95446a4":[12,0,1,0,7,37,19],
-"cyrf6936__regs_8h.html#a41318a530fb8543525b5eaf49f38b4a5":[12,0,1,0,7,37,55],
-"cyrf6936__regs_8h.html#a440abda571398d094684b86ea55c63bb":[12,0,1,0,7,37,62]
+"cyrf6936__regs_8h.html#a23d61d6ce8303349eadddad59c9528e0":[12,0,1,0,7,37,48]
 };

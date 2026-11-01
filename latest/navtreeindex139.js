@@ -1,5 +1,15 @@
 var NAVTREEINDEX139 =
 {
+"module__rpm_sensor.html":[1,445],
+"module__rpm_sensor.html#configuration__rpm_sensor":[1,445,1],
+"module__rpm_sensor.html#functions__rpm_sensor":[1,445,2],
+"module__rpm_sensor.html#module_load_example__rpm_sensor":[1,445,0],
+"module__rpm_sensor.html#module_xml__rpm_sensor":[1,445,2,0],
+"module__rssi.html":[1,331],
+"module__rssi.html#datalink_functions__rssi":[1,331,2],
+"module__rssi.html#functions__rssi":[1,331,1],
+"module__rssi.html#module_load_example__rssi":[1,331,0],
+"module__rssi.html#module_xml__rssi":[1,331,2,0],
 "module__rust_demo_module.html":[1,533],
 "module__rust_demo_module.html#functions__rust_demo_module":[1,533,1],
 "module__rust_demo_module.html#module_load_example__rust_demo_module":[1,533,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX139 =
 "module__takeoff_detect.html#configuration__takeoff_detect":[1,373,1],
 "module__takeoff_detect.html#functions__takeoff_detect":[1,373,2],
 "module__takeoff_detect.html#module_load_example__takeoff_detect":[1,373,0],
-"module__takeoff_detect.html#module_xml__takeoff_detect":[1,373,2,0],
-"module__target_pos.html":[1,110],
-"module__target_pos.html#configuration__target_pos":[1,110,1],
-"module__target_pos.html#datalink_functions__target_pos":[1,110,3],
-"module__target_pos.html#functions__target_pos":[1,110,2],
-"module__target_pos.html#module_load_example__target_pos":[1,110,0],
-"module__target_pos.html#module_xml__target_pos":[1,110,3,0],
-"module__tcas.html":[1,332],
-"module__tcas.html#datalink_functions__tcas":[1,332,2],
-"module__tcas.html#functions__tcas":[1,332,1],
-"module__tcas.html#module_load_example__tcas":[1,332,0]
+"module__takeoff_detect.html#module_xml__takeoff_detect":[1,373,2,0]
 };

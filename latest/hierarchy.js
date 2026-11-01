@@ -567,7 +567,7 @@ var hierarchy =
     [ "GainsOrder3Vect3", "stabilization__andi_8h.html#structGainsOrder3Vect3", null ],
     [ "GainsPID", "optical__flow__functions_8h.html#structGainsPID", null ],
     [ "gate_img", "snake__gate__detection_8h.html#structgate__img", null ],
-    [ "gazebo_actuators_t", "nps__fdm__gazebo_8cpp.html#structgazebo__actuators__t", null ],
+    [ "gazebo_actuators_t", "nps__fdm__gz_8cpp.html#structgazebo__actuators__t", null ],
     [ "gec_privkey", "gec_8h.html#structgec__privkey", null ],
     [ "gec_pubkey", "gec_8h.html#structgec__pubkey", null ],
     [ "gec_sts_ctx", "gec_8h.html#structgec__sts__ctx", null ],
@@ -735,6 +735,15 @@ var hierarchy =
     [ "isp_yuv_stats_t", "libisp_8h.html#structisp__yuv__stats__t", null ],
     [ "IST8310", "ist8310_8h.html#structIST8310", null ],
     [ "IST8310.data", "ist8310_8h.html#unionIST8310_8data", null ],
+    [ "gz::sim::ISystemConfigure", null, [
+      [ "PaparazziSystem", "classPaparazziSystem.html", null ]
+    ] ],
+    [ "gz::sim::ISystemPostUpdate", null, [
+      [ "PaparazziSystem", "classPaparazziSystem.html", null ]
+    ] ],
+    [ "gz::sim::ISystemPreUpdate", null, [
+      [ "PaparazziSystem", "classPaparazziSystem.html", null ]
+    ] ],
     [ "Itg3200", "itg3200_8h.html#structItg3200", null ],
     [ "Itg3200.data", "itg3200_8h.html#unionItg3200_8data", null ],
     [ "Itg3200Config", "itg3200_8h.html#structItg3200Config", null ],
@@ -1098,6 +1107,9 @@ var hierarchy =
     [ "syslink_message_t", "syslink_8h.html#structsyslink__message__t", null ],
     [ "syslink_parse_state", "syslink_8h.html#structsyslink__parse__state", null ],
     [ "SysMon", "sys__mon__bare__metal_8h.html#structSysMon", null ],
+    [ "gz::sim::System", null, [
+      [ "PaparazziSystem", "classPaparazziSystem.html", null ]
+    ] ],
     [ "tag_info", "tag__tracking_8c.html#structtag__info", null ],
     [ "tag_tracking", "tag__tracking_8c.html#structtag__tracking", null ],
     [ "tag_tracking_public", "tag__tracking_8h.html#structtag__tracking__public", null ],
