@@ -4,8 +4,6 @@ var dir_fcd55c2d9795129c53a601ffc56fe50e =
     [ "filter_1euro_imu.h", "filter__1euro__imu_8h.html", "filter__1euro__imu_8h" ],
     [ "imu.c", "imu_8c.html", "imu_8c" ],
     [ "imu.h", "imu_8h.html", "imu_8h" ],
-    [ "imu_ardrone2.c", "imu__ardrone2_8c.html", "imu__ardrone2_8c" ],
-    [ "imu_ardrone2.h", "imu__ardrone2_8h.html", "imu__ardrone2_8h" ],
     [ "imu_aspirin.c", "imu__aspirin_8c.html", "imu__aspirin_8c" ],
     [ "imu_aspirin.h", "imu__aspirin_8h.html", "imu__aspirin_8h" ],
     [ "imu_aspirin_2_spi.c", "imu__aspirin__2__spi_8c.html", "imu__aspirin__2__spi_8c" ],

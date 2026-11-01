@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('module__fdm_gazebo.html',''); initResi
 <p>Usage:</p><ol type="1">
 <li>Make sure gazebo 9 is installed. (sudo apt-get install gazebo9 libgazebo9-dev)</li>
 <li>Prepare the Gazebo world and model:<ol type="a">
-<li>Prepare the UAV model (see conf/simulator/gazebo/models/ardrone/):<ul>
+<li>Prepare the UAV model (see conf/simulator/gazebo/models/bebop/):<ul>
 <li>Place the aircraft model in the conf/simulator/gazebo/models/ folder, this folder is added to Gazebo's search path when NPS is launched.</li>
 <li>Gazebo uses a Front, Left, Up coordinate system for aircraft, so make sure the +x axis points forwards.</li>
 <li>The model should include a link for each motor with the same names as those listed in NPS_ACTUATOR_NAMES (see below), e.g. 'nw_motor'.</li>
 <li>Camera links should have the name specified in .dev_name in the corresponding <a class="el" href="video__device_8h.html#structvideo__config__t" title="V4L2 device settings.">video_config_t</a> struct, see <a class="el" href="pc__sim_8h.html">sw/airborne/boards/pc_sim.h</a> and <a class="el" href="video__thread__nps_8c.html">sw/airborne/modules/computer_vision/video_thread_nps.c</a>.</li>
 </ul>
 </li>
-<li>Prepare the world (see conf/simulator/gazebo/worlds/ardrone.world). Pay attention to the following:<ul>
+<li>Prepare the world (see conf/simulator/gazebo/world/). Pay attention to the following:<ul>
 <li>The real-time update rate should be set to zero, as this is already handled by Paparazzi: <div class="fragment"><div class="line">&lt;<span class="keywordtype">physics</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;ode&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">max_step_size</span>&gt;0.001&lt;/<span class="keywordtype">max_step_size</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">real_time_update_rate</span>&gt;0&lt;/<span class="keywordtype">real_time_update_rate</span>&gt;<span class="comment">&lt;!-- Handled by Paparazzi! --&gt;</span></div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('module__fdm_gazebo.html',''); initResi
 </li>
 </ol>
 </li>
-<li>Prepare the airframe file (see examples/ardrone2_gazebo.xml):<ol type="a">
+<li>Prepare the airframe file (see examples/bebop.xml):<ol type="a">
 <li>Select Gazebo as the FDM (Flight Dynamics Model) <div class="fragment"><div class="line">&lt;<span class="keywordtype">target</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps&quot;</span> <span class="keyword">board</span>=<span class="stringliteral">&quot;pc&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fdm&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;gazebo&quot;</span>/&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">target</span>&gt;</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('module__fdm_gazebo.html',''); initResi
 <li>Include the gazebo defines for the vehicle: <div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
 <div class="line">  ...</div>
 <div class="line">&lt;/<span class="keywordtype">section</span>&gt;</div>
-<div class="line">&lt;<span class="keywordtype">include</span> <span class="keyword">href</span>=<span class="stringliteral">&quot;conf/simulator/gazebo/airframes/ardrone2.xml&quot;</span>/&gt;</div>
+<div class="line">&lt;<span class="keywordtype">include</span> <span class="keyword">href</span>=<span class="stringliteral">&quot;conf/simulator/gazebo/airframes/bebop.xml&quot;</span>/&gt;</div>
 </div><!-- fragment --><ul>
 <li>If conf/simulator/gazebo/airframes does not contain an xml for the vehicle model, it should be created with the following contents:<ol type="i">
 <li>Actuator thrusts and torques <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">airframe</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;../../../airframes/airframe.dtd&quot;</span>&gt;</div>
@@ -220,7 +220,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div class="line">      <span class="keyword">Usage:</span></div>
 <div class="line">      1. <span class="keyword">Make</span> <span class="keyword">sure</span> <span class="keyword">gazebo</span> 9 <span class="keyword">is</span> <span class="keyword">installed.</span> (<span class="keyword">sudo</span> <span class="keyword">apt-get</span> <span class="keyword">install</span> <span class="keyword">gazebo9</span> <span class="keyword">libgazebo9-dev</span>)</div>
 <div class="line">      2. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">Gazebo</span> <span class="keyword">world</span> <span class="keyword">and</span> <span class="keyword">model:</span></div>
-<div class="line">        1. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">UAV</span> <span class="keyword">model</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/<span class="keyword">ardrone</span>/):</div>
+<div class="line">        1. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">UAV</span> <span class="keyword">model</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/<span class="keyword">bebop</span>/):</div>
 <div class="line">          - <span class="keyword">Place</span> <span class="keyword">the</span> <span class="keyword">aircraft</span> <span class="keyword">model</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/</div>
 <div class="line">            <span class="keyword">folder</span>, <span class="keyword">this</span> <span class="keyword">folder</span> <span class="keyword">is</span> <span class="keyword">added</span> <span class="keyword">to</span> <span class="keyword">Gazebo</span>&amp;<span class="keyword">apos</span>;<span class="keyword">s</span> <span class="keyword">search</span> <span class="keyword">path</span> <span class="keyword">when</span> <span class="keyword">NPS</span> <span class="keyword">is</span></div>
 <div class="line">            <span class="keyword">launched.</span></div>
@@ -231,7 +231,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div class="line">          - <span class="keyword">Camera</span> <span class="keyword">links</span> <span class="keyword">should</span> <span class="keyword">have</span> <span class="keyword">the</span> <span class="keyword">name</span> <span class="keyword">specified</span> <span class="keyword">in</span> .<span class="keyword">dev_name</span> <span class="keyword">in</span> <span class="keyword">the</span></div>
 <div class="line">            <span class="keyword">corresponding</span> <span class="keyword">video_config_t</span> <span class="keyword">struct</span>, <span class="keyword">see</span> <span class="keyword">sw</span>/<span class="keyword">airborne</span>/<span class="keyword">boards</span>/<span class="keyword">pc_sim.h</span></div>
 <div class="line">            <span class="keyword">and</span> <span class="keyword">sw</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">computer_vision</span>/<span class="keyword">video_thread_nps.c.</span></div>
-<div class="line">        2. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">world</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">worlds</span>/<span class="keyword">ardrone.world</span>).</div>
+<div class="line">        2. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">world</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">world</span>/).</div>
 <div class="line">          <span class="keyword">Pay</span> <span class="keyword">attention</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">following:</span></div>
 <div class="line">          - <span class="keyword">The</span> <span class="keyword">real-time</span> <span class="keyword">update</span> <span class="keyword">rate</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">set</span> <span class="keyword">to</span> <span class="keyword">zero</span>, <span class="keyword">as</span> <span class="keyword">this</span> <span class="keyword">is</span></div>
 <div class="line">            <span class="keyword">already</span> <span class="keyword">handled</span> <span class="keyword">by</span> <span class="keyword">Paparazzi:</span></div>
@@ -254,7 +254,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">heading_deg</span>&amp;<span class="keyword">gt</span>;180&amp;<span class="keyword">lt</span>;/<span class="keyword">heading_deg</span>&amp;<span class="keyword">gt</span>;&amp;<span class="keyword">lt</span>;!-- <span class="keyword">Temporary</span> <span class="keyword">fix</span> <span class="keyword">for</span> <span class="keyword">issue</span> <span class="keyword">https:</span>//<span class="keyword">bitbucket.org</span>/<span class="keyword">osrf</span>/<span class="keyword">gazebo</span>/<span class="keyword">issues</span>/2022/<span class="keyword">default-sphericalcoordinates-frame-should</span> --&amp;<span class="keyword">gt</span>;</div>
 <div class="line">              &amp;<span class="keyword">lt</span>;/<span class="keyword">spherical_coordinates</span>&amp;<span class="keyword">gt</span>;</div>
 <div class="line">            @<span class="keyword">endcode</span></div>
-<div class="line">      3. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file</span> (<span class="keyword">see</span> <span class="keyword">examples</span>/<span class="keyword">ardrone2_gazebo.xml</span>):</div>
+<div class="line">      3. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file</span> (<span class="keyword">see</span> <span class="keyword">examples</span>/<span class="keyword">bebop.xml</span>):</div>
 <div class="line">        1. <span class="keyword">Select</span> <span class="keyword">Gazebo</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">FDM</span> (<span class="keyword">Flight</span> <span class="keyword">Dynamics</span> <span class="keyword">Model</span>)</div>
 <div class="line">          @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
 <div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">target</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">nps</span>&amp;<span class="keyword">quot</span>; <span class="keyword">board</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">pc</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
@@ -266,7 +266,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
 <div class="line">              ...</div>
 <div class="line">            &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">include</span> <span class="keyword">href</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">airframes</span>/<span class="keyword">ardrone2.xml</span>&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">include</span> <span class="keyword">href</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">airframes</span>/<span class="keyword">bebop.xml</span>&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
 <div class="line">          @<span class="keyword">endcode</span></div>
 <div class="line">          - <span class="keyword">If</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">airframes</span> <span class="keyword">does</span> <span class="keyword">not</span> <span class="keyword">contain</span> <span class="keyword">an</span> <span class="keyword">xml</span> <span class="keyword">for</span> <span class="keyword">the</span></div>
 <div class="line">          <span class="keyword">vehicle</span> <span class="keyword">model</span>, <span class="keyword">it</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">created</span> <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">following</span> <span class="keyword">contents:</span></div>
@@ -368,7 +368,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sun Nov 1 2026 00:52:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 1 2026 09:43:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

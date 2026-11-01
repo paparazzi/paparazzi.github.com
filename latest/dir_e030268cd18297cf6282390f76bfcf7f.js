@@ -1,7 +1,6 @@
 var dir_e030268cd18297cf6282390f76bfcf7f =
 [
     [ "apogee", "dir_906fcced062b34dea0e143ec53b4cca3.html", "dir_906fcced062b34dea0e143ec53b4cca3" ],
-    [ "ardrone", "dir_93997fa94db05292d114fcb1dd488916.html", "dir_93997fa94db05292d114fcb1dd488916" ],
     [ "bebop", "dir_1e1e24cfb731b3b06114ecddfd068653.html", "dir_1e1e24cfb731b3b06114ecddfd068653" ],
     [ "betafpv", "dir_4e5b4c018e9651b00df674951f40d08e.html", "dir_4e5b4c018e9651b00df674951f40d08e" ],
     [ "chimera", "dir_130c85d5eb72b973f996af41d7a72ae6.html", "dir_130c85d5eb72b973f996af41d7a72ae6" ],
@@ -21,7 +20,6 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "tawaki", "dir_a602d89a86e137af83bdeb12fdb83ab8.html", "dir_a602d89a86e137af83bdeb12fdb83ab8" ],
     [ "tmotor", "dir_85488a37e249fd3ab2634e5ad45a7ace.html", "dir_85488a37e249fd3ab2634e5ad45a7ace" ],
     [ "apogee_1.0.h", "apogee__1_80_8h.html", "apogee__1_80_8h" ],
-    [ "ardrone2.h", "ardrone2_8h.html", "ardrone2_8h" ],
     [ "baro_board_ms5611_i2c.c", "baro__board__ms5611__i2c_8c.html", "baro__board__ms5611__i2c_8c" ],
     [ "baro_board_ms5611_spi.c", "baro__board__ms5611__spi_8c.html", "baro__board__ms5611__spi_8c" ],
     [ "beagle_bone_black.h", "beagle__bone__black_8h.html", "beagle__bone__black_8h" ],

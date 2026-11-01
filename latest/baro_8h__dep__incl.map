@@ -1,27 +1,25 @@
 <map id="sw/airborne/modules/sensors/baro.h" name="sw/airborne/modules/sensors/baro.h">
-<area shape="rect" id="Node000001" title="Common barometric sensor implementation." alt="" coords="1073,5,1231,45"/>
+<area shape="rect" id="Node000001" title="Common barometric sensor implementation." alt="" coords="973,5,1131,45"/>
 <area shape="rect" id="Node000002" href="$apogee_2baro__board_8c.html" title="integrated barometer for Apogee boards (mpl3115)" alt="" coords="5,101,168,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1059,29,893,33,674,43,428,63,303,77,180,96,148,103,146,98,180,91,302,72,427,57,674,37,893,27,1059,24"/>
-<area shape="rect" id="Node000003" href="$ardrone_2baro__board_8c.html" title="Paparazzi AR Drone 2 Baro Sensor implementation:." alt="" coords="193,101,357,141"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1059,32,924,38,752,49,561,68,370,96,337,103,336,98,369,91,560,63,751,44,924,32,1059,26"/>
-<area shape="rect" id="Node000004" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="381,101,576,141"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1059,37,844,59,716,76,588,96,553,103,552,98,588,91,715,71,843,54,1059,32"/>
-<area shape="rect" id="Node000005" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="600,101,795,141"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1060,46,807,96,775,103,774,98,806,91,1059,41"/>
-<area shape="rect" id="Node000006" href="$lia_2baro__board_8c.html" title=" " alt="" coords="819,101,965,141"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1088,52,945,103,944,98,1086,47"/>
-<area shape="rect" id="Node000007" href="$lisa__l_2baro__board_8c.html" title=" " alt="" coords="990,101,1138,141"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1127,57,1084,102,1080,99,1123,53"/>
-<area shape="rect" id="Node000008" href="$lisa__m_2baro__board_8c.html" title="Baro board interface for Bosch BMP085 on LisaM I2C2 with EOC check." alt="" coords="1163,101,1320,141"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1181,53,1225,99,1221,102,1177,57"/>
-<area shape="rect" id="Node000009" href="$lisa__mx_2baro__board_8c.html" title=" " alt="" coords="1344,101,1509,141"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1221,47,1372,98,1370,103,1219,52"/>
-<area shape="rect" id="Node000010" href="$lisa__mxs_2baro__board_8c.html" title=" " alt="" coords="1534,101,1706,141"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1246,39,1377,62,1522,91,1552,98,1551,103,1521,96,1376,67,1245,44"/>
-<area shape="rect" id="Node000011" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="1730,101,1889,141"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1245,30,1462,51,1591,68,1719,91,1750,98,1749,103,1718,96,1590,74,1462,57,1245,36"/>
-<area shape="rect" id="Node000012" href="$airspeed__ads1114_8c.html" title=" " alt="" coords="1913,101,2122,141"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1245,28,1539,49,1720,67,1902,91,1941,98,1940,103,1901,96,1719,72,1538,54,1245,34"/>
-<area shape="rect" id="Node000013" href="$baro__board__common_8c.html" title="General interface for board integrated barometers." alt="" coords="2146,93,2305,148"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1245,24,1413,27,1635,36,1884,56,2011,72,2135,91,2146,93,2145,98,2134,96,2011,77,1884,62,1635,42,1413,32,1245,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="959,30,809,35,615,46,398,65,180,96,148,103,147,98,180,91,397,60,615,41,809,30,959,25"/>
+<area shape="rect" id="Node000003" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="192,101,387,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="959,35,706,56,552,73,399,96,363,103,361,98,398,91,552,68,705,51,959,30"/>
+<area shape="rect" id="Node000004" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="411,101,605,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="959,41,799,65,618,96,584,103,583,98,617,91,798,59,958,36"/>
+<area shape="rect" id="Node000005" href="$lia_2baro__board_8c.html" title=" " alt="" coords="629,101,776,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="961,51,789,96,763,103,762,98,787,91,960,46"/>
+<area shape="rect" id="Node000006" href="$lisa__l_2baro__board_8c.html" title=" " alt="" coords="801,101,949,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1005,54,912,103,909,98,1003,49"/>
+<area shape="rect" id="Node000007" href="$lisa__m_2baro__board_8c.html" title="Baro board interface for Bosch BMP085 on LisaM I2C2 with EOC check." alt="" coords="973,101,1131,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1055,59,1055,101,1049,101,1049,59"/>
+<area shape="rect" id="Node000008" href="$lisa__mx_2baro__board_8c.html" title=" " alt="" coords="1155,101,1320,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1103,49,1201,98,1199,103,1101,54"/>
+<area shape="rect" id="Node000009" href="$lisa__mxs_2baro__board_8c.html" title=" " alt="" coords="1345,101,1517,141"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1146,46,1333,91,1361,98,1360,103,1331,96,1144,51"/>
+<area shape="rect" id="Node000010" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="1541,101,1699,141"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1146,33,1325,55,1530,91,1560,98,1559,103,1529,96,1324,61,1145,38"/>
+<area shape="rect" id="Node000011" href="$airspeed__ads1114_8c.html" title=" " alt="" coords="1723,101,1933,141"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1145,30,1402,51,1557,69,1712,91,1751,98,1750,103,1712,96,1556,74,1401,57,1145,35"/>
+<area shape="rect" id="Node000012" href="$baro__board__common_8c.html" title="General interface for board integrated barometers." alt="" coords="1957,93,2115,148"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1145,25,1299,29,1499,39,1722,59,1946,91,1957,93,1956,98,1945,96,1721,64,1498,45,1299,34,1145,30"/>
 </map>

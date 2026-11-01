@@ -1,103 +1,104 @@
 <map id="gpio_setup_output" name="gpio_setup_output">
-<area shape="rect" id="Node000001" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="768,656,911,682"/>
-<area shape="rect" id="Node000002" href="$boards_2ardrone_2actuators_8c.html#a66817eeee5ae2f12c1a42abd2ff443ea" title=" " alt="" coords="303,38,471,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="835,643,828,515,810,333,795,241,775,158,749,91,735,66,718,49,684,27,645,14,604,9,563,9,484,22,422,40,420,35,482,17,562,4,605,3,647,9,686,22,722,44,739,63,754,89,780,156,800,240,815,333,833,514,840,642"/>
-<area shape="rect" id="Node000003" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="533,122,720,162"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="832,643,819,542,795,402,779,330,761,266,741,212,718,176,704,165,708,161,722,173,745,210,766,264,784,329,800,400,824,541,838,643"/>
-<area shape="rect" id="Node000005" href="$boards_2ardrone_2actuators_8c.html#a8643b68e3bff54891b4180367aaf4316" title=" " alt="" coords="537,58,717,98"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="833,643,821,529,799,370,783,289,765,215,743,154,718,112,704,101,708,97,722,109,748,151,770,213,788,288,804,369,827,528,838,642"/>
-<area shape="rect" id="Node000006" href="$cc2500__compat_8c.html#af26fe9c3dc6864698f8999825d63cb18" title=" " alt="" coords="562,187,691,212"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="832,643,818,550,793,424,777,361,759,304,740,257,718,226,705,216,690,209,693,205,708,212,722,222,744,254,764,302,782,359,798,423,823,549,837,642"/>
-<area shape="rect" id="Node000007" href="$cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip." alt="" coords="573,236,680,262"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="836,643,832,570,817,471,802,418,781,366,754,317,718,275,700,263,680,256,681,251,703,258,722,271,758,314,786,363,807,416,822,470,837,569,841,643"/>
-<area shape="rect" id="Node000010" href="$gpio__cam__ctrl_8c.html#a8579fc8f4ca4dd9c48436a4ccfa55598" title=" " alt="" coords="556,286,697,311"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="834,643,828,578,810,492,795,446,775,402,750,360,718,324,696,311,699,306,722,320,754,357,780,399,800,444,815,491,833,577,840,642"/>
-<area shape="rect" id="Node000011" href="$gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state" alt="" coords="590,335,663,360"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="833,643,823,587,804,514,789,475,770,438,746,404,718,374,692,359,663,352,664,347,694,354,722,370,751,400,774,435,793,473,809,512,829,585,838,642"/>
-<area shape="rect" id="Node000012" href="$hackhd_8c.html#aa6c7997c9fedab7c43ddf5d52c1b7f36" title=" " alt="" coords="578,384,675,410"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="831,643,818,596,797,536,764,475,743,447,718,423,698,411,675,404,676,399,700,406,722,419,747,444,768,472,802,534,823,594,836,642"/>
-<area shape="rect" id="Node000013" href="$humid__sht_8c.html#a5228e7530912bfa410d5e701ebb7a18b" title=" " alt="" coords="567,434,686,459"/>
-<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="827,644,813,606,790,559,758,512,718,473,685,457,687,452,722,468,762,509,794,556,817,604,832,642"/>
-<area shape="rect" id="Node000014" href="$imu__aspirin__i2c_8c.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="551,483,703,508"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="823,646,782,583,753,550,719,522,696,511,699,506,721,518,756,546,786,580,828,643"/>
-<area shape="rect" id="Node000015" href="$bat__checker_8c.html#a24e480bdb6c22d8baef30739b86a3f78" title=" " alt="" coords="563,532,691,558"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="815,648,773,609,719,571,690,560,692,555,721,567,776,604,819,644"/>
-<area shape="rect" id="Node000016" href="$meteo__france__DAQ_8c.html#abf2a8b9cc259a9b8a1d99b673ad183d2" title=" " alt="" coords="577,582,676,607"/>
-<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="798,653,719,621,675,608,677,603,721,616,800,648"/>
-<area shape="rect" id="Node000017" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="347,780,426,806"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="841,696,837,763,821,852,806,898,785,943,757,982,722,1015,674,1041,651,1047,629,1049,583,1039,532,1015,394,808,399,805,535,1011,585,1034,629,1043,650,1042,672,1037,718,1011,753,979,781,940,801,896,816,851,832,763,836,696"/>
-<area shape="rect" id="Node000033" href="$mf__ptu_8c.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board." alt="" coords="579,680,675,706"/>
-<area shape="poly" id="edge28_Node000001_Node000033" title=" " alt="" coords="754,681,675,690,675,685,754,676"/>
-<area shape="rect" id="Node000034" href="$navdata_8c.html#a97f551437edc88593c5ea3af73d72efe" title="Initialize the navdata board." alt="" coords="575,631,678,656"/>
-<area shape="poly" id="edge29_Node000001_Node000034" title=" " alt="" coords="754,662,678,652,678,647,755,656"/>
-<area shape="rect" id="Node000037" href="$opa__controller__ap_8c.html#acdb9ee05ea3e0a5ef2108a5854ef56c6" title=" " alt="" coords="555,779,698,804"/>
-<area shape="poly" id="edge32_Node000001_Node000037" title=" " alt="" coords="818,694,776,732,721,769,689,782,687,777,719,764,772,728,815,690"/>
-<area shape="rect" id="Node000038" href="$opa__controller__fbw_8c.html#ae82caef1f98729ab67825cc71c6be66f" title=" " alt="" coords="555,828,698,854"/>
-<area shape="poly" id="edge33_Node000001_Node000038" title=" " alt="" coords="827,696,785,757,756,790,721,818,695,831,693,826,719,814,752,786,781,754,822,693"/>
-<area shape="rect" id="Node000039" href="$power__switch_8c.html#aa1890f26c3d69efce64fb193430e8a87" title="Intialize the power switch pins This sets the power switch pins to te initial state." alt="" coords="557,878,696,903"/>
-<area shape="poly" id="edge34_Node000001_Node000039" title=" " alt="" coords="832,696,817,734,794,780,762,827,722,867,697,880,695,876,718,863,758,824,789,778,812,732,827,694"/>
-<area shape="rect" id="Node000040" href="$pump__control_8c.html#a182000e5845c4eb41b089c9357213c48" title=" " alt="" coords="557,927,696,952"/>
-<area shape="poly" id="edge35_Node000001_Node000040" title=" " alt="" coords="835,696,823,744,801,803,768,864,746,892,722,917,697,931,695,926,718,912,742,889,763,861,796,801,818,742,830,695"/>
-<area shape="rect" id="Node000041" href="$rotorcraft__cam_8c.html#a9714f023c0b83d4d973e8758e053a6ce" title=" " alt="" coords="554,976,699,1002"/>
-<area shape="poly" id="edge36_Node000001_Node000041" title=" " alt="" coords="838,696,828,752,808,825,793,863,774,900,750,935,722,966,701,979,698,974,718,962,746,932,769,898,788,861,803,823,823,751,833,695"/>
-<area shape="rect" id="Node000042" href="$sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a" title="Init function." alt="" coords="555,1078,699,1103"/>
-<area shape="poly" id="edge37_Node000001_Node000042" title=" " alt="" coords="840,696,835,767,819,864,804,917,783,968,756,1017,722,1060,692,1080,689,1075,718,1056,752,1014,778,966,799,915,813,863,830,766,835,695"/>
-<area shape="rect" id="Node000045" href="$softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title=" " alt="" coords="541,1127,712,1152"/>
-<area shape="poly" id="edge40_Node000001_Node000045" title=" " alt="" coords="837,696,823,789,798,915,764,1036,744,1084,722,1116,704,1129,701,1125,718,1113,739,1081,759,1035,793,914,817,788,832,695"/>
-<area shape="rect" id="Node000060" href="$spektrum_8c.html#a54e0139c0e2182636d7daccd49cb4a24" title="This function puts the satellite in binding mode." alt="" coords="567,1226,686,1251"/>
-<area shape="poly" id="edge46_Node000001_Node000060" title=" " alt="" coords="839,696,827,807,805,963,789,1042,770,1114,748,1174,722,1215,706,1227,687,1235,685,1230,703,1223,718,1211,743,1172,765,1113,784,1041,799,962,822,807,833,695"/>
-<area shape="rect" id="Node000062" href="$spektrum_8c.html#af991dac26ce4e2a25ad25045fe86e782" title="Main Radio initialization." alt="" coords="571,1176,683,1202"/>
-<area shape="poly" id="edge48_Node000001_Node000062" title=" " alt="" coords="838,696,825,798,801,939,786,1010,767,1075,746,1129,722,1166,704,1179,684,1187,682,1182,702,1174,718,1162,741,1126,762,1074,780,1009,796,938,820,797,833,695"/>
-<area shape="rect" id="Node000063" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function" alt="" coords="567,730,686,755"/>
-<area shape="poly" id="edge49_Node000001_Node000063" title=" " alt="" coords="798,690,721,720,679,732,678,727,719,715,796,685"/>
-<area shape="rect" id="Node000064" href="$w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title=" " alt="" coords="580,1275,673,1300"/>
-<area shape="poly" id="edge51_Node000001_Node000064" title=" " alt="" coords="839,696,829,817,808,988,793,1075,773,1155,750,1221,737,1246,722,1266,700,1281,674,1288,673,1283,697,1276,718,1262,732,1243,745,1218,768,1153,787,1074,803,987,824,816,834,696"/>
-<area shape="rect" id="Node000004" href="$boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="288,130,485,155"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="520,145,486,145,486,140,520,140"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="523,69,470,63,471,58,524,64"/>
-<area shape="rect" id="Node000008" href="$modules_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="330,236,443,262"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="560,252,444,252,444,246,560,246"/>
-<area shape="rect" id="Node000009" href="$superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9" title="Initialization." alt="" coords="108,236,240,262"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="316,252,240,252,240,246,316,246"/>
-<area shape="rect" id="Node000018" href="$usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="147,658,201,683"/>
-<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="357,774,304,736,239,697,201,681,203,676,241,692,307,731,360,770"/>
-<area shape="rect" id="Node000019" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,707,215,732"/>
-<area shape="poly" id="edge19_Node000017_Node000019" title=" " alt="" coords="335,778,211,735,213,730,337,773"/>
-<area shape="rect" id="Node000021" href="$setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,756,215,782"/>
-<area shape="poly" id="edge21_Node000017_Node000021" title=" " alt="" coords="334,790,215,776,216,771,334,785"/>
-<area shape="rect" id="Node000023" href="$main__demo2_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,806,215,831"/>
-<area shape="poly" id="edge23_Node000017_Node000023" title=" " alt="" coords="334,802,216,816,215,811,334,797"/>
-<area shape="rect" id="Node000025" href="$main__demo3_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,855,215,880"/>
-<area shape="poly" id="edge24_Node000017_Node000025" title=" " alt="" coords="337,813,212,858,210,853,335,808"/>
-<area shape="rect" id="Node000027" href="$main__demo4_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,904,215,930"/>
-<area shape="poly" id="edge25_Node000017_Node000027" title=" " alt="" coords="360,816,306,855,241,894,213,907,211,902,239,889,304,850,357,812"/>
-<area shape="rect" id="Node000029" href="$main__demo5_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,954,215,979"/>
-<area shape="poly" id="edge26_Node000017_Node000029" title=" " alt="" coords="370,818,316,879,281,913,241,943,217,956,214,951,239,939,277,909,312,876,366,815"/>
-<area shape="rect" id="Node000031" href="$main__demo6_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="133,608,215,634"/>
-<area shape="poly" id="edge27_Node000017_Node000031" title=" " alt="" coords="361,772,238,647,214,635,217,631,242,643,365,768"/>
-<area shape="rect" id="Node000020" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,707,60,732"/>
-<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="119,722,60,722,60,717,119,717"/>
-<area shape="rect" id="Node000022" href="$setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,756,60,782"/>
-<area shape="poly" id="edge22_Node000021_Node000022" title=" " alt="" coords="119,772,60,772,60,766,119,766"/>
-<area shape="rect" id="Node000035" href="$imu__ardrone2_8c.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="317,607,457,632"/>
-<area shape="poly" id="edge30_Node000034_Node000035" title=" " alt="" coords="561,640,456,629,457,624,562,635"/>
-<area shape="rect" id="Node000036" href="$navdata_8c.html#a403f474dbbf38830b819b38c914d7ccb" title="Update the navdata (event loop)" alt="" coords="323,656,450,682"/>
-<area shape="poly" id="edge31_Node000034_Node000036" title=" " alt="" coords="562,653,450,665,450,660,561,648"/>
-<area shape="rect" id="Node000043" href="$sbus__dual_8c.html#aed87c6cc1dea1c07bf450996279c1533" title="RC init function." alt="" coords="329,954,444,979"/>
-<area shape="poly" id="edge38_Node000042_Node000043" title=" " alt="" coords="557,1075,532,1061,515,1043,507,1025,499,1008,484,993,465,983,444,976,445,971,467,978,487,988,504,1005,512,1023,520,1040,535,1056,559,1070"/>
-<area shape="rect" id="Node000044" href="$sbus_8c.html#aa1c35cd2ca28efdd7a5688b1ff714c36" title="RC init function." alt="" coords="347,1003,427,1028"/>
-<area shape="poly" id="edge39_Node000042_Node000044" title=" " alt="" coords="574,1076,532,1061,485,1042,426,1027,427,1022,486,1037,534,1056,576,1071"/>
-<area shape="rect" id="Node000046" href="$softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title=" " alt="" coords="324,1250,449,1275"/>
-<area shape="poly" id="edge41_Node000045_Node000046" title=" " alt="" coords="543,1161,535,1166,519,1183,512,1202,504,1222,487,1241,451,1257,449,1252,484,1236,500,1219,507,1200,515,1181,532,1162,541,1156"/>
-<area shape="rect" id="Node000056" href="$softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title=" " alt="" coords="322,1052,451,1078"/>
-<area shape="poly" id="edge42_Node000045_Node000056" title=" " alt="" coords="557,1126,532,1117,508,1104,484,1092,449,1080,450,1075,486,1087,511,1099,534,1112,559,1121"/>
-<area shape="rect" id="Node000057" href="$softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title=" " alt="" coords="309,1102,464,1127"/>
-<area shape="poly" id="edge43_Node000045_Node000057" title=" " alt="" coords="527,1132,464,1125,465,1120,528,1127"/>
-<area shape="rect" id="Node000058" href="$softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title=" " alt="" coords="315,1151,458,1176"/>
-<area shape="poly" id="edge44_Node000045_Node000058" title=" " alt="" coords="528,1152,458,1159,458,1154,527,1147"/>
-<area shape="rect" id="Node000059" href="$softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title=" " alt="" coords="317,1200,457,1226"/>
-<area shape="poly" id="edge45_Node000045_Node000059" title=" " alt="" coords="557,1159,534,1166,486,1190,446,1203,444,1198,484,1185,532,1161,555,1154"/>
-<area shape="rect" id="Node000061" href="$spektrum_8c.html#aff8033ce4ec3eca45caafb45d2ba6760" title=" " alt="" coords="315,1299,459,1324"/>
-<area shape="poly" id="edge47_Node000060_Node000061" title=" " alt="" coords="560,1257,534,1266,486,1290,450,1302,448,1296,484,1285,532,1261,559,1252"/>
-<area shape="poly" id="edge50_Node000063_Node000017" title=" " alt="" coords="555,760,427,788,426,782,553,755"/>
+<area shape="rect" id="Node000001" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="719,527,861,552"/>
+<area shape="rect" id="Node000002" href="$cc2500__compat_8c.html#af26fe9c3dc6864698f8999825d63cb18" title=" " alt="" coords="521,5,650,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="783,513,770,410,747,269,731,198,713,133,692,80,669,44,649,30,652,26,673,40,697,77,718,131,736,197,752,268,776,410,789,513"/>
+<area shape="rect" id="Node000003" href="$cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip." alt="" coords="532,55,639,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="783,513,768,420,743,293,710,172,690,125,669,93,655,83,638,76,640,71,657,78,673,89,695,122,715,170,749,292,773,419,788,512"/>
+<area shape="rect" id="Node000006" href="$gpio__cam__ctrl_8c.html#a8579fc8f4ca4dd9c48436a4ccfa55598" title=" " alt="" coords="515,104,656,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="786,513,783,440,767,340,752,287,732,234,704,185,669,143,654,132,657,127,672,139,708,182,736,232,757,285,772,339,788,439,792,513"/>
+<area shape="rect" id="Node000007" href="$gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state" alt="" coords="549,153,622,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="785,513,779,449,761,362,746,316,726,271,701,229,669,192,647,178,622,171,623,166,649,173,672,188,705,226,731,268,751,314,766,361,784,448,790,513"/>
+<area shape="rect" id="Node000008" href="$hackhd_8c.html#aa6c7997c9fedab7c43ddf5d52c1b7f36" title=" " alt="" coords="537,203,634,228"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="783,513,774,456,754,383,739,344,720,307,697,272,669,241,652,230,633,223,635,218,655,226,672,237,701,269,725,304,744,342,759,381,779,455,789,512"/>
+<area shape="rect" id="Node000009" href="$humid__sht_8c.html#a5228e7530912bfa410d5e701ebb7a18b" title=" " alt="" coords="526,252,645,277"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="781,514,769,466,747,405,715,343,693,315,669,291,644,277,646,272,672,287,697,312,719,341,752,403,774,464,786,512"/>
+<area shape="rect" id="Node000010" href="$imu__aspirin__i2c_8c.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="509,301,661,327"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="778,514,763,475,740,428,709,381,669,340,650,329,652,324,672,336,713,377,745,426,768,473,783,512"/>
+<area shape="rect" id="Node000011" href="$bat__checker_8c.html#a24e480bdb6c22d8baef30739b86a3f78" title=" " alt="" coords="521,351,649,376"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="774,516,733,452,703,418,669,390,647,378,650,374,672,385,707,415,737,449,778,513"/>
+<area shape="rect" id="Node000012" href="$meteo__france__DAQ_8c.html#abf2a8b9cc259a9b8a1d99b673ad183d2" title=" " alt="" coords="536,400,635,425"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="764,519,721,483,669,447,626,428,629,423,672,442,725,479,767,515"/>
+<area shape="rect" id="Node000013" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="335,476,414,501"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="754,523,714,505,670,491,600,482,530,480,414,486,414,481,530,474,601,477,671,486,716,500,756,518"/>
+<area shape="rect" id="Node000029" href="$mf__ptu_8c.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board." alt="" coords="537,551,633,576"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="706,552,634,560,633,555,705,547"/>
+<area shape="rect" id="Node000030" href="$opa__controller__ap_8c.html#acdb9ee05ea3e0a5ef2108a5854ef56c6" title=" " alt="" coords="514,600,657,625"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="748,560,672,590,633,602,631,597,670,585,746,555"/>
+<area shape="rect" id="Node000031" href="$opa__controller__fbw_8c.html#ae82caef1f98729ab67825cc71c6be66f" title=" " alt="" coords="514,649,657,675"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="768,564,726,602,672,639,641,652,639,647,669,634,722,598,765,560"/>
+<area shape="rect" id="Node000032" href="$power__switch_8c.html#aa1890f26c3d69efce64fb193430e8a87" title="Intialize the power switch pins This sets the power switch pins to te initial state." alt="" coords="516,699,655,724"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="777,566,736,627,706,660,672,688,647,701,644,696,669,684,703,656,732,624,773,563"/>
+<area shape="rect" id="Node000033" href="$pump__control_8c.html#a182000e5845c4eb41b089c9357213c48" title=" " alt="" coords="516,748,655,773"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="783,566,767,604,744,650,712,697,672,737,650,750,647,746,669,733,708,694,739,648,762,602,778,564"/>
+<area shape="rect" id="Node000034" href="$rotorcraft__cam_8c.html#a9714f023c0b83d4d973e8758e053a6ce" title=" " alt="" coords="513,797,658,823"/>
+<area shape="poly" id="edge33_Node000001_Node000034" title=" " alt="" coords="786,566,773,614,751,673,718,734,697,762,672,787,652,799,649,795,669,783,693,759,714,731,746,671,768,612,781,565"/>
+<area shape="rect" id="Node000035" href="$sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a" title="Init function." alt="" coords="513,847,657,872"/>
+<area shape="poly" id="edge34_Node000001_Node000035" title=" " alt="" coords="788,566,779,622,758,694,743,733,724,770,701,805,672,836,653,849,650,844,669,832,696,802,719,767,738,730,753,693,773,621,783,565"/>
+<area shape="rect" id="Node000038" href="$softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title=" " alt="" coords="500,896,671,921"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="790,566,783,630,765,716,750,762,730,806,704,848,672,885,654,898,651,894,669,881,700,845,725,804,745,760,760,714,778,629,785,566"/>
+<area shape="rect" id="Node000053" href="$spektrum_8c.html#a54e0139c0e2182636d7daccd49cb4a24" title="This function puts the satellite in binding mode." alt="" coords="526,945,645,971"/>
+<area shape="poly" id="edge47_Node000001_Node000053" title=" " alt="" coords="791,566,787,638,771,737,756,790,735,842,708,891,672,935,646,951,644,946,669,931,703,888,731,840,751,788,766,736,782,638,786,566"/>
+<area shape="rect" id="Node000055" href="$spektrum_8c.html#af991dac26ce4e2a25ad25045fe86e782" title="Main Radio initialization." alt="" coords="529,995,641,1020"/>
+<area shape="poly" id="edge49_Node000001_Node000055" title=" " alt="" coords="788,566,773,659,748,783,714,904,694,951,673,984,658,995,642,1002,640,997,656,990,669,980,690,949,709,902,743,782,768,658,782,565"/>
+<area shape="rect" id="Node000056" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function" alt="" coords="526,501,645,527"/>
+<area shape="poly" id="edge50_Node000001_Node000056" title=" " alt="" coords="705,531,645,524,646,519,705,526"/>
+<area shape="rect" id="Node000057" href="$w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title=" " alt="" coords="539,1044,632,1069"/>
+<area shape="poly" id="edge52_Node000001_Node000057" title=" " alt="" coords="789,566,775,668,752,808,736,879,718,944,697,998,673,1035,654,1048,633,1055,631,1050,652,1043,669,1031,692,995,713,943,731,878,747,807,770,667,783,565"/>
+<area shape="rect" id="Node000004" href="$modules_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="318,55,431,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="518,70,431,70,431,65,518,65"/>
+<area shape="rect" id="Node000005" href="$superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9" title="Initialization." alt="" coords="113,55,245,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="304,70,245,70,245,65,304,65"/>
+<area shape="rect" id="Node000014" href="$usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="151,353,206,379"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="349,469,304,430,248,392,206,375,208,370,251,388,307,426,352,465"/>
+<area shape="rect" id="Node000015" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,403,220,428"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="329,473,248,442,217,431,219,426,250,437,331,468"/>
+<area shape="rect" id="Node000017" href="$setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,452,220,477"/>
+<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="321,485,220,472,220,467,322,480"/>
+<area shape="rect" id="Node000019" href="$main__demo2_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,501,220,527"/>
+<area shape="poly" id="edge18_Node000013_Node000019" title=" " alt="" coords="322,498,220,511,220,506,321,493"/>
+<area shape="rect" id="Node000021" href="$main__demo3_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,551,220,576"/>
+<area shape="poly" id="edge20_Node000013_Node000021" title=" " alt="" coords="330,509,250,540,216,553,214,548,248,536,328,504"/>
+<area shape="rect" id="Node000023" href="$main__demo4_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,600,220,625"/>
+<area shape="poly" id="edge22_Node000013_Node000023" title=" " alt="" coords="352,513,307,551,251,590,221,603,219,598,248,585,304,547,349,509"/>
+<area shape="rect" id="Node000025" href="$main__demo5_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,649,220,675"/>
+<area shape="poly" id="edge24_Node000013_Node000025" title=" " alt="" coords="361,515,316,576,286,610,251,639,221,654,219,649,248,634,282,606,312,573,356,512"/>
+<area shape="rect" id="Node000027" href="$main__demo6_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="137,304,220,329"/>
+<area shape="poly" id="edge26_Node000013_Node000027" title=" " alt="" coords="357,466,313,405,282,372,248,343,219,329,221,324,251,338,286,368,317,401,361,463"/>
+<area shape="rect" id="Node000016" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,403,60,428"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="123,418,60,418,60,413,123,413"/>
+<area shape="rect" id="Node000018" href="$setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,452,60,477"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="123,467,60,467,60,462,123,462"/>
+<area shape="rect" id="Node000020" href="$main__demo2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,501,60,527"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="123,517,60,517,60,511,123,511"/>
+<area shape="rect" id="Node000022" href="$main__demo3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,551,60,576"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="123,566,60,566,60,561,123,561"/>
+<area shape="rect" id="Node000024" href="$main__demo4_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,600,60,625"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="123,615,60,615,60,610,123,610"/>
+<area shape="rect" id="Node000026" href="$main__demo5_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,649,60,675"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="123,665,60,665,60,659,123,659"/>
+<area shape="rect" id="Node000028" href="$main__demo6_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,304,60,329"/>
+<area shape="poly" id="edge27_Node000027_Node000028" title=" " alt="" coords="123,319,60,319,60,314,123,314"/>
+<area shape="rect" id="Node000036" href="$sbus__dual_8c.html#aed87c6cc1dea1c07bf450996279c1533" title="RC init function." alt="" coords="317,723,432,748"/>
+<area shape="poly" id="edge35_Node000035_Node000036" title=" " alt="" coords="509,843,498,836,481,817,473,798,466,779,450,761,431,750,434,746,454,757,471,776,478,796,486,814,502,832,512,839"/>
+<area shape="rect" id="Node000037" href="$sbus_8c.html#aa1c35cd2ca28efdd7a5688b1ff714c36" title="RC init function." alt="" coords="335,772,415,797"/>
+<area shape="poly" id="edge36_Node000035_Node000037" title=" " alt="" coords="522,845,499,836,451,811,414,798,416,793,453,806,501,832,524,840"/>
+<area shape="rect" id="Node000039" href="$softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title=" " alt="" coords="312,821,437,847"/>
+<area shape="poly" id="edge38_Node000038_Node000039" title=" " alt="" coords="522,894,499,886,451,860,420,849,422,844,453,856,501,881,524,889"/>
+<area shape="rect" id="Node000049" href="$softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title=" " alt="" coords="310,871,439,896"/>
+<area shape="poly" id="edge41_Node000038_Node000049" title=" " alt="" coords="486,899,440,894,440,888,487,894"/>
+<area shape="rect" id="Node000050" href="$softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title=" " alt="" coords="297,920,452,945"/>
+<area shape="poly" id="edge44_Node000038_Node000050" title=" " alt="" coords="487,923,453,927,452,921,486,917"/>
+<area shape="rect" id="Node000051" href="$softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title=" " alt="" coords="303,969,446,995"/>
+<area shape="poly" id="edge45_Node000038_Node000051" title=" " alt="" coords="522,928,501,935,453,959,419,972,417,967,451,954,499,930,520,923"/>
+<area shape="rect" id="Node000052" href="$softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title=" " alt="" coords="305,1019,445,1044"/>
+<area shape="poly" id="edge46_Node000038_Node000052" title=" " alt="" coords="509,930,502,935,486,952,478,971,471,990,454,1009,434,1021,431,1016,450,1005,466,987,473,969,481,949,498,931,506,925"/>
+<area shape="rect" id="Node000040" href="$softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title=" " alt="" coords="110,871,247,896"/>
+<area shape="poly" id="edge39_Node000039_Node000040" title=" " alt="" coords="311,853,231,873,229,868,310,847"/>
+<area shape="rect" id="Node000048" href="$softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title=" " alt="" coords="108,821,249,847"/>
+<area shape="poly" id="edge40_Node000039_Node000048" title=" " alt="" coords="298,837,250,837,250,831,298,831"/>
+<area shape="poly" id="edge42_Node000049_Node000040" title=" " alt="" coords="296,886,247,886,247,881,296,881"/>
+<area shape="poly" id="edge43_Node000049_Node000048" title=" " alt="" coords="310,870,229,849,231,844,311,865"/>
+<area shape="rect" id="Node000054" href="$spektrum_8c.html#aff8033ce4ec3eca45caafb45d2ba6760" title=" " alt="" coords="303,1068,447,1093"/>
+<area shape="poly" id="edge48_Node000053_Node000054" title=" " alt="" coords="515,976,502,984,486,1002,478,1020,471,1040,454,1059,434,1070,431,1066,450,1055,466,1037,473,1018,481,999,498,980,512,972"/>
+<area shape="poly" id="edge51_Node000056_Node000013" title=" " alt="" coords="512,508,414,496,415,491,513,503"/>
 </map>

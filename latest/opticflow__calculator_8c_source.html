@@ -425,7 +425,7 @@ $(document).ready(function(){initNavTree('opticflow__calculator_8c_source.html',
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><a class="code hl_function" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code hl_define" href="opticflow__calculator_8c.html#a9c4f71daaf69592b0987d35d616a9f76">OPTICFLOW_ACTFAST_MIN_GRADIENT</a>)</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><a class="code hl_function" href="oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa">PRINT_CONFIG_VAR</a>(<a class="code hl_define" href="opticflow__calculator_8c.html#a5a9eca094a767cfa7f6662bf40f181d0">OPTICFLOW_ACTFAST_MIN_GRADIENT_CAMERA2</a>)</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">// Defaults for ARdrone</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">// Defaults for a bottom camera aligned with the body frame</span></div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="preprocessor">#ifndef OPTICFLOW_BODY_TO_CAM_PHI</span></div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="opticflow__calculator_8c.html#ad60dc2bef7455284292abe077d45fdb8">  335</a></span><span class="preprocessor">#define OPTICFLOW_BODY_TO_CAM_PHI 0</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="preprocessor">#endif</span></div>
@@ -1281,7 +1281,7 @@ $(document).ready(function(){initNavTree('opticflow__calculator_8c_source.html',
 <div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>  }</div>
 <div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>  <span class="comment">/* Rotate velocities from camera frame coordinates to body coordinates for control</span></div>
 <div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span><span class="comment">  * IMPORTANT!!! This frame to body orientation should be the case for the Parrot</span></div>
-<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span><span class="comment">  * ARdrone and Bebop, however this can be different for other quadcopters</span></div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span><span class="comment">  * Bebop, however this can be different for other quadcopters</span></div>
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span><span class="comment">  * ALWAYS double check!</span></div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span><span class="comment">  */</span></div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>  <a class="code hl_function" href="group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2">float_rmat_transp_vmult</a>(&amp;result-&gt;<a class="code hl_variable" href="inter__thread__data_8h.html#a88ce0e0601aabf3cd0c7bd46aa5e84e1">vel_body</a>, &amp;<a class="code hl_variable" href="opticflow__calculator_8c.html#a2e97303f21ad28dac214d307037572bb">body_to_cam</a>[<a class="code hl_variable" href="opticflow__module_8c.html#a82a571b4f979b955128f710d3525a5b6">opticflow</a>-&gt;<a class="code hl_variable" href="opticflow__calculator_8h.html#af2e32767b08ec68164d72904d3ff50ea">id</a>], &amp;result-&gt;<a class="code hl_variable" href="inter__thread__data_8h.html#ad1e55d0c93a8d49b789c09bda5e8f583">vel_cam</a>);</div>
@@ -1551,7 +1551,7 @@ $(document).ready(function(){initNavTree('opticflow__calculator_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="opticflow__calculator_8c.html">opticflow_calculator.c</a></li>
-    <li class="footer">Generated on Sun Nov 1 2026 00:52:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 1 2026 09:43:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

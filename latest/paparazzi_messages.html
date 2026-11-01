@@ -99,7 +99,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#ALIVE">ALIVE (ID 2)</a></li>
 <li class="level2"><a href="#PONG">PONG (ID 3)</a></li>
 <li class="level2"><a href="#TAKEOFF">TAKEOFF (ID 4)</a></li>
-<li class="level2"><a href="#ARDRONE_NAVDATA">ARDRONE_NAVDATA (ID 5)</a></li>
 <li class="level2"><a href="#ATTITUDE">ATTITUDE (ID 6)</a></li>
 <li class="level2"><a href="#GPS">GPS (ID 8)</a></li>
 <li class="level2"><a href="#NAVIGATION_REF">NAVIGATION_REF (ID 9)</a></li>
@@ -517,70 +516,6 @@ TAKEOFF (ID 4)</h2>
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">cpu_time   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2><a class="anchor" id="ARDRONE_NAVDATA"></a>
-ARDRONE_NAVDATA (ID 5)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">taille   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nu_trame   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ax   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ay   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">az   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">vx   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">vy   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">vz   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">temperature_acc   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temperature_gyro   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ultrasound   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">us_debut_echo   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">us_fin_echo   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">us_association_echo   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">us_distance_echo   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">us_curve_time   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">us_curve_value   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">us_curve_ref   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nb_echo   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sum_echo   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">gradient   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">flag_echo_ini   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pressure   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temperature_pressure   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">mx   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">my   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">mz   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">chksum   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">checksum_errors   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="ATTITUDE"></a>
 ATTITUDE (ID 6)</h2>
@@ -3253,7 +3188,7 @@ GPS_INT (ID 155)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">fix   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, NA, 2D, 3D, DGPS, RTK   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">comp_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, UBX, NMEA, SIRF, SKYTRAQ, MTK, PIKSI, XSENS, DATALINK, UDP, ARDRONE2, SIM, MULTI, VECTORNAV, IMCU   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">comp_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, UBX, NMEA, SIRF, SKYTRAQ, MTK, PIKSI, XSENS, DATALINK, UDP, UNUSED, SIM, MULTI, VECTORNAV, IMCU   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_EULER_INT"></a>
 AHRS_EULER_INT (ID 156)</h2>
@@ -7247,7 +7182,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 1 2026 00:52:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 1 2026 09:43:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

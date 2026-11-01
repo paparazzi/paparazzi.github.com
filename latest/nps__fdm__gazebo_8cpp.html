@@ -276,7 +276,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a54fd4ed5f4a75e1a2ce20d7a5a5409d7" id="r_a54fd4ed5f4a75e1a2ce20d7a5a5409d7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__gazebo_8cpp.html#a54fd4ed5f4a75e1a2ce20d7a5a5409d7">NPS_GAZEBO_WORLD</a>&#160;&#160;&#160;&quot;empty.world&quot;</td></tr>
 <tr class="separator:a54fd4ed5f4a75e1a2ce20d7a5a5409d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4356677e880babe6706d28a07cc91cf" id="r_ad4356677e880babe6706d28a07cc91cf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__gazebo_8cpp.html#ad4356677e880babe6706d28a07cc91cf">NPS_GAZEBO_AC_NAME</a>&#160;&#160;&#160;&quot;ardrone&quot;</td></tr>
+<tr class="memitem:ad4356677e880babe6706d28a07cc91cf" id="r_ad4356677e880babe6706d28a07cc91cf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__gazebo_8cpp.html#ad4356677e880babe6706d28a07cc91cf">NPS_GAZEBO_AC_NAME</a>&#160;&#160;&#160;&quot;bebop&quot;</td></tr>
 <tr class="separator:ad4356677e880babe6706d28a07cc91cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -421,7 +421,7 @@ torques[<a class="el" href="nps__autopilot_8h.html#a419d33161b13f1033cb6df4bae8f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> NPS_GAZEBO_AC_NAME&#160;&#160;&#160;&quot;ardrone&quot;</td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> NPS_GAZEBO_AC_NAME&#160;&#160;&#160;&quot;bebop&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -565,8 +565,8 @@ torques[<a class="el" href="nps__autopilot_8h.html#a419d33161b13f1033cb6df4bae8f
 </div><div class="memdoc">
 
 <p>Write actuator commands to Gazebo. </p>
-<p>This function takes the normalized commands and applies them as forces and torques in Gazebo. Since the commands are normalized in [0,1], their thrusts (NPS_ACTUATOR_THRUSTS) and torques (NPS_ACTUATOR_TORQUES) need to be specified in the airframe file. Their values need to be specified in the same order as the NPS_ACTUATOR_NAMES and should be provided in SI units. See conf/airframes/examples/ardrone2_gazebo.xml for an example.</p>
-<p>The forces and torques are applied to (the origin of) the links named in NPS_ACTUATOR_NAMES. See conf/simulator/gazebo/models/ardrone/ardrone.sdf for an example.</p>
+<p>This function takes the normalized commands and applies them as forces and torques in Gazebo. Since the commands are normalized in [0,1], their thrusts (NPS_ACTUATOR_THRUSTS) and torques (NPS_ACTUATOR_TORQUES) need to be specified in the airframe file. Their values need to be specified in the same order as the NPS_ACTUATOR_NAMES and should be provided in SI units. See conf/simulator/gazebo/airframes/bebop.xml for an example.</p>
+<p>The forces and torques are applied to (the origin of) the links named in NPS_ACTUATOR_NAMES. See conf/simulator/gazebo/models/bebop/bebop.sdf for an example.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">act_commands</td><td></td></tr>
@@ -1420,7 +1420,7 @@ torques[<a class="el" href="nps__autopilot_8h.html#a419d33161b13f1033cb6df4bae8f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__fdm__gazebo_8cpp.html">nps_fdm_gazebo.cpp</a></li>
-    <li class="footer">Generated on Sun Nov 1 2026 00:52:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 1 2026 09:43:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
