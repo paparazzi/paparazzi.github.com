@@ -1,5 +1,8 @@
 var NAVTREEINDEX137 =
 {
+"module__jevois.html#configuration__jevois":[1,452,1],
+"module__jevois.html#functions__jevois":[1,452,2],
+"module__jevois.html#module_load_example__jevois":[1,452,0],
 "module__jevois.html#module_xml__jevois":[1,452,2,0],
 "module__jevois_mavlink.html":[1,453],
 "module__jevois_mavlink.html#functions__jevois_mavlink":[1,453,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_cube.html":[1,342],
 "module__nav_cube.html#module_load_example__nav_cube":[1,342,0],
 "module__nav_cube.html#module_xml__nav_cube":[1,342,0,0],
-"module__nav_drop.html":[1,343],
-"module__nav_drop.html#module_load_example__nav_drop":[1,343,0],
-"module__nav_drop.html#module_xml__nav_drop":[1,343,0,0],
-"module__nav_fish.html":[1,344]
+"module__nav_drop.html":[1,343]
 };

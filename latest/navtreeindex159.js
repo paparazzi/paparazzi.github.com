@@ -1,5 +1,8 @@
 var NAVTREEINDEX159 =
 {
+"nps__hitl__sensors_8c.html#af6a11e35d876efdecc4d3d28fec32ccd":[12,0,1,1,2,19,0,1],
+"nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505":[12,0,1,1,2,19,13],
+"nps__hitl__sensors_8c.html#structlinkdev":[12,0,1,1,2,19,0],
 "nps__hitl__sensors_8c_source.html":[12,0,1,1,2,19],
 "nps__ins_8h.html":[12,0,1,1,2,20],
 "nps__ins_8h.html#a003d06964d78213c96100e9ca57c7979":[12,0,1,1,2,20,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX159 =
 "nps__sensor__airspeed_8h.html#structNpsSensorAirspeed":[12,0,1,1,2,38,0],
 "nps__sensor__airspeed_8h_source.html":[12,0,1,1,2,38],
 "nps__sensor__aoa_8c.html":[12,0,1,1,2,39],
-"nps__sensor__aoa_8c.html#a2faff1ee09f26cd702c72210b4141ea5":[12,0,1,1,2,39,3],
-"nps__sensor__aoa_8c.html#a3c9090a24a8d6d5e2a1ed3815ed42222":[12,0,1,1,2,39,2],
-"nps__sensor__aoa_8c.html#a50bcbe782382fb7ab7963cb4b8f699f4":[12,0,1,1,2,39,0],
-"nps__sensor__aoa_8c.html#aedbc86f78b2521ef1984d221d55275c9":[12,0,1,1,2,39,1]
+"nps__sensor__aoa_8c.html#a2faff1ee09f26cd702c72210b4141ea5":[12,0,1,1,2,39,3]
 };

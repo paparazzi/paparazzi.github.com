@@ -1,5 +1,8 @@
 var NAVTREEINDEX201 =
 {
+"sim_2mcu__periph_2sys__time__arch_8c_source.html":[12,0,1,0,0,2,0,13],
+"sim_2mcu__periph_2uart__arch_8c.html":[12,0,1,0,0,2,0,14],
+"sim_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0":[12,0,1,0,0,2,0,14,8],
 "sim_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c":[12,0,1,0,0,2,0,14,0],
 "sim_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847":[12,0,1,0,0,2,0,14,9],
 "sim_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749":[12,0,1,0,0,2,0,14,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX201 =
 "snake__gate__detection_8c.html#aca756fd2f555959e02c0d4a6bc0a4a3e":[12,0,1,0,6,12,34,39],
 "snake__gate__detection_8c.html#ace002ac27557c54636e18910bbf442b8":[12,0,1,0,6,12,34,6],
 "snake__gate__detection_8c.html#ad427f2f71b35a1c9cfddeda6016eadbf":[12,0,1,0,6,12,34,7],
-"snake__gate__detection_8c.html#ae8a819264189a243f210db763c40d893":[12,0,1,0,6,12,34,20],
-"snake__gate__detection_8c.html#aebc98e80a4263c1220b508a0a3ca975a":[12,0,1,0,6,12,34,16],
-"snake__gate__detection_8c.html#aef693c11bfcfa77faaaefba6304e4308":[12,0,1,0,6,12,34,22],
-"snake__gate__detection_8c.html#af0a705296aaf7b8f6e785debb166d907":[12,0,1,0,6,12,34,32]
+"snake__gate__detection_8c.html#ae8a819264189a243f210db763c40d893":[12,0,1,0,6,12,34,20]
 };

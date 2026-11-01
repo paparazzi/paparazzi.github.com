@@ -208,7 +208,8 @@ Macros</h2></td></tr>
 <tr class="separator:a0eb39777eac135c917af2eed39cce7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aa7851705719216b9a202116139848c" id="r_a3aa7851705719216b9a202116139848c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx_8h.html#a3aa7851705719216b9a202116139848c">GPS_UBX_NB_CHANNELS</a>&#160;&#160;&#160;40</td></tr>
 <tr class="separator:a3aa7851705719216b9a202116139848c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae492c405c3e7a1b93c91507b2aab2538" id="r_ae492c405c3e7a1b93c91507b2aab2538"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx_8h.html#ae492c405c3e7a1b93c91507b2aab2538">GPS_UBX_MAX_PAYLOAD</a>&#160;&#160;&#160;512</td></tr>
+<tr class="memitem:ae492c405c3e7a1b93c91507b2aab2538" id="r_ae492c405c3e7a1b93c91507b2aab2538"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx_8h.html#ae492c405c3e7a1b93c91507b2aab2538">GPS_UBX_MAX_PAYLOAD</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memdesc:ae492c405c3e7a1b93c91507b2aab2538"><td class="mdescLeft">&#160;</td><td class="mdescRight">e.g. UBX-NAV-SAT is 8 + 12 * numSvs bytes  <br /></td></tr>
 <tr class="separator:ae492c405c3e7a1b93c91507b2aab2538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -254,7 +255,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8h_source.html#l00053">53</a> of file <a class="el" href="gps__ubx_8h_source.html">gps_ubx.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8h_source.html#l00055">55</a> of file <a class="el" href="gps__ubx_8h_source.html">gps_ubx.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for GpsUbx:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -389,12 +390,14 @@ status_flags</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> GPS_UBX_MAX_PAYLOAD&#160;&#160;&#160;512</td>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> GPS_UBX_MAX_PAYLOAD&#160;&#160;&#160;1024</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8h_source.html#l00051">51</a> of file <a class="el" href="gps__ubx_8h_source.html">gps_ubx.h</a>.</p>
+<p>e.g. UBX-NAV-SAT is 8 + 12 * numSvs bytes </p>
+
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8h_source.html#l00052">52</a> of file <a class="el" href="gps__ubx_8h_source.html">gps_ubx.h</a>.</p>
 
 </div>
 </div>
@@ -471,9 +474,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00139">139</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00141">141</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps__ubx_8c_source.html#l00115">CFG_RST_BBR_Coldstart</a>, <a class="el" href="gps__ubx_8c_source.html#l00113">CFG_RST_BBR_Hotstart</a>, <a class="el" href="gps__ubx_8c_source.html#l00114">CFG_RST_BBR_Warmstart</a>, <a class="el" href="gps__ubx_8c_source.html#l00108">CFG_RST_Reset_Controlled</a>, <a class="el" href="gps__ubx_8c_source.html#l00048">DEBUG_PRINT</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="gps__ubx_8h_source.html#l00054">GpsUbx::dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00078">gps_ubx</a>, <a class="el" href="gps__ubx_8c_source.html#l00667">gps_ubx_msg()</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8c_source.html#l00521">gps_ubx_parse()</a>, <a class="el" href="gps__ubx_8c_source.html#l00079">gps_ubx_reset</a>, and <a class="el" href="gps__ubx_8c_source.html#l00654">ubx_send_cfg_rst()</a>.</p>
+<p class="reference">References <a class="el" href="gps__ubx_8c_source.html#l00117">CFG_RST_BBR_Coldstart</a>, <a class="el" href="gps__ubx_8c_source.html#l00115">CFG_RST_BBR_Hotstart</a>, <a class="el" href="gps__ubx_8c_source.html#l00116">CFG_RST_BBR_Warmstart</a>, <a class="el" href="gps__ubx_8c_source.html#l00110">CFG_RST_Reset_Controlled</a>, <a class="el" href="gps__ubx_8c_source.html#l00048">DEBUG_PRINT</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="gps__ubx_8h_source.html#l00056">GpsUbx::dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00080">gps_ubx</a>, <a class="el" href="gps__ubx_8c_source.html#l00720">gps_ubx_msg()</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8c_source.html#l00574">gps_ubx_parse()</a>, <a class="el" href="gps__ubx_8c_source.html#l00081">gps_ubx_reset</a>, and <a class="el" href="gps__ubx_8c_source.html#l00707">ubx_send_cfg_rst()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -481,46 +484,47 @@ status_flags</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx_8h_a8384aab04d3a0e824cf5a71403515730_cgraph.png" border="0" usemap="#agps__ubx_8h_a8384aab04d3a0e824cf5a71403515730_cgraph" alt=""/></div>
 <map name="agps__ubx_8h_a8384aab04d3a0e824cf5a71403515730_cgraph" id="agps__ubx_8h_a8384aab04d3a0e824cf5a71403515730_cgraph">
-<area shape="rect" title=" " alt="" coords="5,169,125,195"/>
-<area shape="rect" href="gps__ubx_8c.html#a9fdbf13172de7bc49955c91cee371310" title=" " alt="" coords="185,120,296,145"/>
-<area shape="poly" title=" " alt="" coords="110,167,181,147,182,152,112,172"/>
-<area shape="rect" href="gps__ubx_8c.html#ad40d88474e79784c90d8ba7ed2131fcf" title=" " alt="" coords="181,169,300,195"/>
-<area shape="poly" title=" " alt="" coords="126,179,168,179,168,185,126,185"/>
-<area shape="rect" href="gps__ubx_8c.html#a8eb75794716eab1279ef1c6e5763584b" title=" " alt="" coords="173,219,308,244"/>
-<area shape="poly" title=" " alt="" coords="112,192,182,212,181,217,110,197"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="852,84,999,109"/>
-<area shape="poly" title=" " alt="" coords="265,118,353,77,416,53,487,32,564,14,644,4,726,5,805,19,832,30,858,43,900,73,897,77,855,48,830,34,803,25,725,10,645,10,565,19,488,37,417,59,355,82,267,122"/>
-<area shape="rect" href="gps__ubx_8c.html#a2f45942fdc7a4158cac69997e3bade34" title=" " alt="" coords="356,256,535,281"/>
-<area shape="poly" title=" " alt="" coords="285,143,309,154,374,200,424,244,420,248,370,204,307,159,283,148"/>
-<area shape="rect" href="gps__ubx_8c.html#a3b17c1e295fdd28f4f1f22e164339375" title=" " alt="" coords="589,84,797,109"/>
-<area shape="poly" title=" " alt="" coords="452,254,501,189,538,150,581,118,594,112,597,117,584,123,541,154,505,192,457,257"/>
-<area shape="rect" href="gps__ubx_8c.html#ab1d71460da736e8ff43785d74b495725" title=" " alt="" coords="595,133,791,159"/>
-<area shape="poly" title=" " alt="" coords="458,254,510,211,544,188,582,168,601,160,603,165,584,172,547,192,513,215,462,258"/>
-<area shape="rect" href="gps__ubx_8c.html#a5a6a6cf44689ba2a0e7344eea86f122f" title=" " alt="" coords="590,183,797,208"/>
-<area shape="poly" title=" " alt="" coords="477,253,582,217,614,208,615,214,583,222,479,258"/>
-<area shape="rect" href="gps__ubx_8c.html#a49ce06f2a479d5058c544261cfc813d6" title=" " alt="" coords="604,281,783,307"/>
-<area shape="poly" title=" " alt="" coords="535,275,591,281,590,286,535,280"/>
-<area shape="rect" href="gps__ubx_8c.html#ae7ab601dbb1c0c4a382cb0aefb396307" title=" " alt="" coords="583,232,804,257"/>
-<area shape="poly" title=" " alt="" coords="535,257,569,254,569,259,535,263"/>
-<area shape="rect" href="gps__ubx_8c.html#a045196668d74186bd0af220300dc4d31" title=" " alt="" coords="605,331,782,356"/>
-<area shape="poly" title=" " alt="" coords="480,279,583,315,618,325,617,330,582,321,478,284"/>
-<area shape="rect" href="gps__ubx_8c.html#a973e752c5c6e75a85a998f9b8876f718" title=" " alt="" coords="605,380,781,405"/>
-<area shape="poly" title=" " alt="" coords="462,279,513,322,547,345,584,365,606,373,604,378,582,370,544,350,510,326,458,283"/>
-<area shape="rect" href="gps__ubx_8c.html#adfd1dca4749aeed3ce65bf5d39e41298" title=" " alt="" coords="595,429,792,455"/>
-<area shape="poly" title=" " alt="" coords="457,280,505,345,541,383,584,414,600,422,598,427,581,419,538,387,501,348,452,283"/>
-<area shape="rect" href="gps__ubx_8c.html#ac7e852282450920d646b03b36b29481a" title=" " alt="" coords="595,479,792,504"/>
-<area shape="poly" title=" " alt="" coords="454,281,471,318,498,368,536,420,559,444,584,464,596,471,594,475,581,468,555,447,532,423,493,370,466,320,449,283"/>
-<area shape="rect" href="gps__ubx_8c.html#ab4c6a9b326d66a0dbaec0124da87d68a" title=" " alt="" coords="593,528,794,553"/>
-<area shape="poly" title=" " alt="" coords="452,281,466,326,491,390,530,458,555,488,584,515,592,520,589,524,581,519,551,492,526,461,486,392,460,328,447,282"/>
-<area shape="rect" href="gps__ubx_8c.html#abaa3c1700e073a9aaabec44852efbecd" title=" " alt="" coords="606,35,781,60"/>
-<area shape="poly" title=" " alt="" coords="449,254,466,217,493,167,532,114,555,90,581,69,592,63,595,67,584,73,559,94,536,117,498,169,470,220,454,257"/>
-<area shape="rect" href="gps_8c.html#a5904be2de6c3e1e04d7789b135bc0f6b" title="Number of weeks since navigation epoch (6 January 1980)" alt="" coords="853,281,997,307"/>
-<area shape="poly" title=" " alt="" coords="783,291,840,291,840,297,783,297"/>
-<area shape="rect" href="gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7" title="Number of days since navigation epoch (6 January 1980)" alt="" coords="1047,281,1180,307"/>
-<area shape="poly" title=" " alt="" coords="998,291,1033,291,1033,297,998,297"/>
-<area shape="poly" title=" " alt="" coords="773,229,803,217,834,195,862,169,905,119,909,122,866,173,837,199,805,222,775,234"/>
-<area shape="rect" href="CRC24Q_8h.html#a0852ca13d7774030a7df798732e2dcb4" title=" " alt="" coords="873,232,977,257"/>
-<area shape="poly" title=" " alt="" coords="804,242,859,242,859,247,804,247"/>
+<area shape="rect" title=" " alt="" coords="5,177,125,202"/>
+<area shape="rect" href="gps__ubx_8c.html#a9fdbf13172de7bc49955c91cee371310" title=" " alt="" coords="185,128,296,153"/>
+<area shape="poly" title=" " alt="" coords="110,174,181,154,182,159,112,179"/>
+<area shape="rect" href="gps__ubx_8c.html#ad40d88474e79784c90d8ba7ed2131fcf" title=" " alt="" coords="181,177,300,202"/>
+<area shape="poly" title=" " alt="" coords="126,187,168,187,168,192,126,192"/>
+<area shape="rect" href="gps__ubx_8c.html#a8eb75794716eab1279ef1c6e5763584b" title=" " alt="" coords="173,226,308,252"/>
+<area shape="poly" title=" " alt="" coords="112,200,182,220,181,225,110,205"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="856,29,1003,54"/>
+<area shape="poly" title=" " alt="" coords="266,125,399,67,489,36,582,14,645,5,695,3,808,14,867,23,866,29,808,19,695,8,646,10,583,19,490,41,401,72,268,130"/>
+<area shape="rect" href="gps__ubx_8c.html#a2f45942fdc7a4158cac69997e3bade34" title=" " alt="" coords="356,276,535,301"/>
+<area shape="poly" title=" " alt="" coords="286,151,309,162,344,186,376,213,426,263,422,267,372,217,341,190,307,166,284,155"/>
+<area shape="rect" href="gps__ubx_8c.html#a565e8ad317e2e291e462c4f4c0cca055" title=" " alt="" coords="583,29,808,54"/>
+<area shape="poly" title=" " alt="" coords="448,274,463,233,490,175,529,115,553,87,581,63,589,58,592,63,584,68,557,91,533,118,494,178,468,235,453,276"/>
+<area shape="rect" href="gps__ubx_8c.html#a3b17c1e295fdd28f4f1f22e164339375" title=" " alt="" coords="591,78,799,104"/>
+<area shape="poly" title=" " alt="" coords="450,274,468,241,497,197,535,151,581,113,592,107,595,111,584,117,538,155,501,200,473,244,455,277"/>
+<area shape="rect" href="gps__ubx_8c.html#ab1d71460da736e8ff43785d74b495725" title=" " alt="" coords="597,128,793,153"/>
+<area shape="poly" title=" " alt="" coords="455,273,505,219,541,188,581,162,597,155,599,160,584,167,544,192,509,223,459,277"/>
+<area shape="rect" href="gps__ubx_8c.html#a5a6a6cf44689ba2a0e7344eea86f122f" title=" " alt="" coords="592,177,799,202"/>
+<area shape="poly" title=" " alt="" coords="464,273,516,242,582,211,606,203,608,208,584,216,518,247,467,278"/>
+<area shape="rect" href="gps__ubx_8c.html#a49ce06f2a479d5058c544261cfc813d6" title=" " alt="" coords="606,276,785,301"/>
+<area shape="poly" title=" " alt="" coords="535,286,592,286,592,291,535,291"/>
+<area shape="rect" href="gps__ubx_8c.html#ae7ab601dbb1c0c4a382cb0aefb396307" title=" " alt="" coords="585,226,806,252"/>
+<area shape="poly" title=" " alt="" coords="510,273,616,252,617,257,511,278"/>
+<area shape="rect" href="gps__ubx_8c.html#a045196668d74186bd0af220300dc4d31" title=" " alt="" coords="607,325,784,350"/>
+<area shape="poly" title=" " alt="" coords="511,298,617,320,616,325,510,304"/>
+<area shape="rect" href="gps__ubx_8c.html#a973e752c5c6e75a85a998f9b8876f718" title=" " alt="" coords="607,374,783,400"/>
+<area shape="poly" title=" " alt="" coords="467,299,518,330,584,360,608,368,606,373,582,365,516,334,464,303"/>
+<area shape="rect" href="gps__ubx_8c.html#adfd1dca4749aeed3ce65bf5d39e41298" title=" " alt="" coords="597,424,794,449"/>
+<area shape="poly" title=" " alt="" coords="459,299,509,354,544,384,584,410,599,417,597,421,581,415,541,389,505,357,455,303"/>
+<area shape="rect" href="gps__ubx_8c.html#ac7e852282450920d646b03b36b29481a" title=" " alt="" coords="597,473,794,498"/>
+<area shape="poly" title=" " alt="" coords="455,300,473,333,501,376,538,422,584,459,595,465,592,470,581,464,535,425,497,380,468,335,450,302"/>
+<area shape="rect" href="gps__ubx_8c.html#ab4c6a9b326d66a0dbaec0124da87d68a" title=" " alt="" coords="595,522,796,548"/>
+<area shape="poly" title=" " alt="" coords="453,300,468,342,494,399,533,459,557,486,584,509,592,514,589,518,581,513,553,489,529,462,490,401,463,344,448,302"/>
+<area shape="rect" href="gps__ubx_8c.html#abaa3c1700e073a9aaabec44852efbecd" title=" " alt="" coords="608,572,783,597"/>
+<area shape="poly" title=" " alt="" coords="452,300,463,349,488,420,505,458,527,495,553,529,584,558,597,566,594,571,581,562,549,533,523,498,501,460,483,422,458,351,446,302"/>
+<area shape="poly" title=" " alt="" coords="808,39,842,39,842,44,808,44"/>
+<area shape="rect" href="gps_8c.html#a5904be2de6c3e1e04d7789b135bc0f6b" title="Number of weeks since navigation epoch (6 January 1980)" alt="" coords="857,276,1001,301"/>
+<area shape="poly" title=" " alt="" coords="785,286,843,286,843,291,785,291"/>
+<area shape="rect" href="gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7" title="Number of days since navigation epoch (6 January 1980)" alt="" coords="1051,276,1184,301"/>
+<area shape="poly" title=" " alt="" coords="1002,286,1037,286,1037,291,1002,291"/>
+<area shape="poly" title=" " alt="" coords="781,224,807,211,844,178,875,139,899,99,915,66,920,68,903,102,879,142,848,182,809,216,784,229"/>
 </map>
 </div>
 
@@ -550,9 +554,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00117">117</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00119">119</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8h_source.html#l00092">GpsState::comp_id</a>, <a class="el" href="gps__ubx_8h_source.html#l00054">GpsUbx::dev</a>, <a class="el" href="gps__ubx_8h_source.html#l00065">GpsUbx::error_cnt</a>, <a class="el" href="gps__ubx_8h_source.html#l00066">GpsUbx::error_last</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00078">gps_ubx</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00320">GPS_UBX2_ID</a>, <a class="el" href="gps__ubx_8c_source.html#l00104">GPS_UBX_BOOTRESET</a>, <a class="el" href="gps__ubx_8c_source.html#l00068">GPS_UBX_ERR_NONE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00260">GPS_UBX_ID</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8c_source.html#l00079">gps_ubx_reset</a>, <a class="el" href="gps__ubx_8h_source.html#l00055">GpsUbx::msg_available</a>, <a class="el" href="gps__ubx_8h_source.html#l00070">GpsUbx::pacc_valid</a>, <a class="el" href="gps__ubx_8h_source.html#l00072">GpsUbx::state</a>, <a class="el" href="gps__ubx_8h_source.html#l00060">GpsUbx::status</a>, and <a class="el" href="gps__ubx_8c_source.html#l00055">UNINIT</a>.</p>
+<p class="reference">References <a class="el" href="gps_8h_source.html#l00092">GpsState::comp_id</a>, <a class="el" href="gps__ubx_8h_source.html#l00056">GpsUbx::dev</a>, <a class="el" href="gps__ubx_8h_source.html#l00067">GpsUbx::error_cnt</a>, <a class="el" href="gps__ubx_8h_source.html#l00068">GpsUbx::error_last</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00080">gps_ubx</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00320">GPS_UBX2_ID</a>, <a class="el" href="gps__ubx_8c_source.html#l00106">GPS_UBX_BOOTRESET</a>, <a class="el" href="gps__ubx_8c_source.html#l00070">GPS_UBX_ERR_NONE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00260">GPS_UBX_ID</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8c_source.html#l00081">gps_ubx_reset</a>, <a class="el" href="gps__ubx_8h_source.html#l00057">GpsUbx::msg_available</a>, <a class="el" href="gps__ubx_8h_source.html#l00072">GpsUbx::pacc_valid</a>, <a class="el" href="gps__ubx_8h_source.html#l00074">GpsUbx::state</a>, <a class="el" href="gps__ubx_8h_source.html#l00062">GpsUbx::status</a>, and <a class="el" href="gps__ubx_8c_source.html#l00055">UNINIT</a>.</p>
 
 </div>
 </div>
@@ -581,9 +585,9 @@ status_flags</td>
 </div><div class="memdoc">
 <p>This code simulates <a class="el" href="gps__ubx_8c.html">gps_ubx.c</a>:<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">parse_ubx()</a></p>
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00166">166</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00168">168</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps__ubx_8h_source.html#l00065">GpsUbx::error_cnt</a>, <a class="el" href="gps__ubx_8h_source.html#l00066">GpsUbx::error_last</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00078">gps_ubx</a>, <a class="el" href="gps__ubx_8c_source.html#l00069">GPS_UBX_ERR_OVERRUN</a>, <a class="el" href="gps__ubx_8h_source.html#l00055">GpsUbx::msg_available</a>, <a class="el" href="gps__ubx_8h_source.html#l00058">GpsUbx::msg_class</a>, and <a class="el" href="gps__ubx_8h_source.html#l00057">GpsUbx::msg_id</a>.</p>
+<p class="reference">References <a class="el" href="gps__ubx_8h_source.html#l00067">GpsUbx::error_cnt</a>, <a class="el" href="gps__ubx_8h_source.html#l00068">GpsUbx::error_last</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00080">gps_ubx</a>, <a class="el" href="gps__ubx_8c_source.html#l00071">GPS_UBX_ERR_OVERRUN</a>, <a class="el" href="gps__ubx_8h_source.html#l00057">GpsUbx::msg_available</a>, <a class="el" href="gps__ubx_8h_source.html#l00060">GpsUbx::msg_class</a>, and <a class="el" href="gps__ubx_8h_source.html#l00059">GpsUbx::msg_id</a>.</p>
 
 </div>
 </div>
@@ -611,9 +615,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00697">697</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00750">750</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00290">gps_periodic_check()</a>, <a class="el" href="gps__ubx_8c_source.html#l00078">gps_ubx</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00290">gps_periodic_check()</a>, <a class="el" href="gps__ubx_8c_source.html#l00080">gps_ubx</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -675,9 +679,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00617">617</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00670">670</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00078">gps_ubx</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8h_source.html#l00064">GpsUbx::send_ck_a</a>, <a class="el" href="gps__ubx_8h_source.html#l00064">GpsUbx::send_ck_b</a>, and <a class="el" href="gps__ubx_8c_source.html#l00605">ubx_send_1byte()</a>.</p>
+<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps__ubx_8c_source.html#l00080">gps_ubx</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8h_source.html#l00066">GpsUbx::send_ck_a</a>, <a class="el" href="gps__ubx_8h_source.html#l00066">GpsUbx::send_ck_b</a>, and <a class="el" href="gps__ubx_8c_source.html#l00658">ubx_send_1byte()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -733,9 +737,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00646">646</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00699">699</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, and <a class="el" href="gps__ubx_8c_source.html#l00605">ubx_send_1byte()</a>.</p>
+<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, and <a class="el" href="gps__ubx_8c_source.html#l00658">ubx_send_1byte()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -817,9 +821,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00634">634</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00687">687</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="gps__ubx_8c_source.html#l00078">gps_ubx</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8h_source.html#l00064">GpsUbx::send_ck_a</a>, and <a class="el" href="gps__ubx_8h_source.html#l00064">GpsUbx::send_ck_b</a>.</p>
+<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="gps__ubx_8c_source.html#l00080">gps_ubx</a>, <a class="el" href="gps__ubx_8h_source.html#l00039">GPS_UBX_NB</a>, <a class="el" href="gps__ubx_8h_source.html#l00066">GpsUbx::send_ck_a</a>, and <a class="el" href="gps__ubx_8h_source.html#l00066">GpsUbx::send_ck_b</a>.</p>
 
 </div>
 </div>
@@ -844,9 +848,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00078">78</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00080">80</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00069">ArduIMU_periodicGPS()</a>, <a class="el" href="gps__ubx_8c_source.html#l00139">gps_ubx_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00117">gps_ubx_init()</a>, <a class="el" href="gps__ubx_8c_source.html#l00166">gps_ubx_parse_HITL_UBX()</a>, <a class="el" href="gps__ubx_8c_source.html#l00697">gps_ubx_periodic_check()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00163">gps_ubx_ucenter_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00617">ubx_header()</a>, <a class="el" href="gps__ubx_8c_source.html#l00605">ubx_send_1byte()</a>, and <a class="el" href="gps__ubx_8c_source.html#l00634">ubx_trailer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00069">ArduIMU_periodicGPS()</a>, <a class="el" href="gps__ubx_8c_source.html#l00141">gps_ubx_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00119">gps_ubx_init()</a>, <a class="el" href="gps__ubx_8c_source.html#l00168">gps_ubx_parse_HITL_UBX()</a>, <a class="el" href="gps__ubx_8c_source.html#l00750">gps_ubx_periodic_check()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00163">gps_ubx_ucenter_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00670">ubx_header()</a>, <a class="el" href="gps__ubx_8c_source.html#l00658">ubx_send_1byte()</a>, and <a class="el" href="gps__ubx_8c_source.html#l00687">ubx_trailer()</a>.</p>
 
 </div>
 </div>
@@ -870,9 +874,9 @@ status_flags</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00079">79</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__ubx_8c_source.html#l00081">81</a> of file <a class="el" href="gps__ubx_8c_source.html">gps_ubx.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps__ubx_8c_source.html#l00139">gps_ubx_event()</a>, and <a class="el" href="gps__ubx_8c_source.html#l00117">gps_ubx_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gps__ubx_8c_source.html#l00141">gps_ubx_event()</a>, and <a class="el" href="gps__ubx_8c_source.html#l00119">gps_ubx_init()</a>.</p>
 
 </div>
 </div>
@@ -882,7 +886,7 @@ status_flags</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__ubx_8h.html">gps_ubx.h</a></li>
-    <li class="footer">Generated on Sat Oct 31 2026 22:20:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 1 2026 00:52:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

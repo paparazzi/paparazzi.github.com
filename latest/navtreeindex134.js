@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__digital_cam_video.html#module_xml__digital_cam_video":[1,148,1,0],
+"module__direct_memory_logger.html":[1,275],
+"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,275,1],
 "module__direct_memory_logger.html#functions__direct_memory_logger":[1,275,2],
 "module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,275,0],
 "module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,275,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "module__gps_nps.html#module_load_example__gps_nps":[1,170,0],
 "module__gps_nps.html#module_xml__gps_nps":[1,170,1,0],
 "module__gps_optitrack.html":[1,171],
-"module__gps_optitrack.html#module_load_example__gps_optitrack":[1,171,0],
-"module__gps_optitrack.html#module_xml__gps_optitrack":[1,171,0,0],
-"module__gps_piksi.html":[1,172],
-"module__gps_piksi.html#configuration__gps_piksi":[1,172,1]
+"module__gps_optitrack.html#module_load_example__gps_optitrack":[1,171,0]
 };

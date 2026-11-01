@@ -1,5 +1,8 @@
 var NAVTREEINDEX99 =
 {
+"iomcu_8c.html#a53b341135d05c3afa492c367b7988c04":[12,0,1,0,6,38,5,20],
+"iomcu_8c.html#a53bff87c90194226c9592ee0a3fb7d78":[12,0,1,0,6,38,5,27],
+"iomcu_8c.html#a56a0d12ab164b29b3779a60e1186c2f0":[12,0,1,0,6,38,5,1,0],
 "iomcu_8c.html#a5c12ceb4a8207e291c9260d86451390f":[12,0,1,0,6,38,5,2,1],
 "iomcu_8c.html#a63f683fc121347207f770316c85ac8ab":[12,0,1,0,6,38,5,44],
 "iomcu_8c.html#a670bbd288df05a881db98318d5821e8a":[12,0,1,0,6,38,5,4,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX99 =
 "itg3200_8h.html#af4ecc3fa080959344238782150fee737acb801d9423b1613cc11c27d45c1c5e38":[12,0,1,0,7,61,8,2],
 "itg3200_8h.html#af77c755f3f0273ae4eb4ea0e52944e9b":[12,0,1,0,7,61,1,3],
 "itg3200_8h.html#afa4cc1e1d75f91db123a836b1cd86534":[12,0,1,0,7,61,1,0],
-"itg3200_8h.html#afa9a5fae8d7275bf0e32953270721f89":[12,0,1,0,7,61,1,2],
-"itg3200_8h.html#afc931399829e2d90c671d326e016329a":[12,0,1,0,7,61,12],
-"itg3200_8h.html#structItg3200":[12,0,1,0,7,61,1],
-"itg3200_8h.html#structItg3200Config":[12,0,1,0,7,61,0]
+"itg3200_8h.html#afa9a5fae8d7275bf0e32953270721f89":[12,0,1,0,7,61,1,2]
 };

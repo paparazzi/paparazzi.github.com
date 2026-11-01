@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('module__gps_ublox.html',''); initResiz
 <li>Warmstart (GPS_UBX_BOOTRESET = 2)</li>
 <li>Coldstart (GPS_UBX_BOOTRESET = 3)</li>
 </ul>
+<p>Dual-antenna heading receivers (e.g. ZED-X20D) report the heading from antenna 1 to antenna 2 in UBX-NAV-DAHEADING (enable it on the receiver with CFG-MSGOUT-UBX_NAV_DAHEADING_xxx). It is published as RELPOS (reference id 0xFFFF), which ins_ekf2 uses as GPS yaw with INS_EKF2_GPS_YAW_OFFSET.</p>
 <h1><a class="anchor" id="module_load_example__gps_ublox"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_ublox&quot;</span>&gt;</div>
@@ -178,6 +179,10 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">        - <span class="keyword">Hotstart</span>  (<span class="keyword">GPS_UBX_BOOTRESET</span> = 1)</div>
 <div class="line">        - <span class="keyword">Warmstart</span> (<span class="keyword">GPS_UBX_BOOTRESET</span> = 2)</div>
 <div class="line">        - <span class="keyword">Coldstart</span> (<span class="keyword">GPS_UBX_BOOTRESET</span> = 3) </div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">Dual-antenna</span> <span class="keyword">heading</span> <span class="keyword">receivers</span> (<span class="keyword">e.g.</span> <span class="keyword">ZED-X20D</span>) <span class="keyword">report</span> <span class="keyword">the</span> <span class="keyword">heading</span> <span class="keyword">from</span> <span class="keyword">antenna</span> 1 <span class="keyword">to</span> <span class="keyword">antenna</span> 2 <span class="keyword">in</span></div>
+<div class="line">      <span class="keyword">UBX-NAV-DAHEADING</span> (<span class="keyword">enable</span> <span class="keyword">it</span> <span class="keyword">on</span> <span class="keyword">the</span> <span class="keyword">receiver</span> <span class="keyword">with</span> <span class="keyword">CFG-MSGOUT-UBX_NAV_DAHEADING_xxx</span>). <span class="keyword">It</span> <span class="keyword">is</span> <span class="keyword">published</span></div>
+<div class="line">      <span class="keyword">as</span> <span class="keyword">RELPOS</span> (<span class="keyword">reference</span> <span class="keyword">id</span> 0<span class="keyword">xFFFF</span>), <span class="keyword">which</span> <span class="keyword">ins_ekf2</span> <span class="keyword">uses</span> <span class="keyword">as</span> <span class="keyword">GPS</span> <span class="keyword">yaw</span> <span class="keyword">with</span> <span class="keyword">INS_EKF2_GPS_YAW_OFFSET.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART where the GPS is connected to (UART1, UART2, etc&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B38400&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART baud rate&quot;</span>/&gt;</div>
@@ -260,7 +265,7 @@ Raw gps_ublox.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 31 2026 22:20:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 1 2026 00:52:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

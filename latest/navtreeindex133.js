@@ -1,5 +1,8 @@
 var NAVTREEINDEX133 =
 {
+"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
+"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
+"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0],
 "module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,57,2,0],
 "module__bebop_cam.html":[1,493],
 "module__bebop_cam.html#configuration__bebop_cam":[1,493,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,147,1,0],
 "module__digital_cam_video.html":[1,148],
 "module__digital_cam_video.html#functions__digital_cam_video":[1,148,1],
-"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,148,0],
-"module__digital_cam_video.html#module_xml__digital_cam_video":[1,148,1,0],
-"module__direct_memory_logger.html":[1,275],
-"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,275,1]
+"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,148,0]
 };

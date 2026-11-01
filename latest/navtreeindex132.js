@@ -1,5 +1,8 @@
 var NAVTREEINDEX132 =
 {
+"module__ahrs_common.html#configure":[1,27,1,0],
+"module__ahrs_common.html#files":[1,27,3],
+"module__ahrs_common.html#functions__ahrs_common":[1,27,2],
 "module__ahrs_common.html#headers":[1,27,3,0],
 "module__ahrs_common.html#init_functions":[1,27,2,0],
 "module__ahrs_common.html#module_load_example__ahrs_common":[1,27,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__battery_monitor.html#functions__battery_monitor":[1,24,2],
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,24,0],
 "module__battery_monitor.html#module_xml__battery_monitor":[1,24,2,0],
-"module__bebop_ae_awb.html":[1,57],
-"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,57,1],
-"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,57,2],
-"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,57,0]
+"module__bebop_ae_awb.html":[1,57]
 };
