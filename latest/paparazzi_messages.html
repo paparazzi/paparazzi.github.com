@@ -448,6 +448,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#DL_EMERGENCY_CMD">DL_EMERGENCY_CMD (ID 39)</a></li>
 <li class="level2"><a href="#GROUND_REF">GROUND_REF (ID 40)</a></li>
 <li class="level2"><a href="#JOYSTICK">JOYSTICK (ID 41)</a></li>
+<li class="level2"><a href="#AIRCRAFT_REBOOT">AIRCRAFT_REBOOT (ID 42)</a></li>
 <li class="level2"><a href="#PLUMES">PLUMES (ID 100)</a></li>
 <li class="level2"><a href="#INFO_MSG_GROUND">INFO_MSG_GROUND (ID 101)</a></li>
 </ul>
@@ -6908,6 +6909,17 @@ JOYSTICK (ID 41)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">button4   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">button 4 status   </td></tr>
 </table>
+<h2><a class="anchor" id="AIRCRAFT_REBOOT"></a>
+AIRCRAFT_REBOOT (ID 42)</h2>
+<p>Sent by the server when an aircraft rebooted with the same build, or started a new log file. A GCS should reset the state it keeps for this aircraft, such as the pre-flight checklist.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">reason   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU_TIME, DATALINK_COUNTERS, NEW_LOG_FILE   </td><td class="markdownTableBodyNone">How it was detected   </td></tr>
+</table>
 <h2><a class="anchor" id="PLUMES"></a>
 PLUMES (ID 100)</h2>
 <table class="markdownTable">
@@ -7182,7 +7194,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 2 2026 09:03:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 2 2026 09:45:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

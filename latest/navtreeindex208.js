@@ -1,5 +1,6 @@
 var NAVTREEINDEX208 =
 {
+"stabilization__oneloop_8h.html":[12,0,1,0,3,2,2,45],
 "stabilization__oneloop_8h_source.html":[12,0,1,0,3,2,2,45],
 "stabilization__rate_8c.html":[12,0,1,0,3,2,2,46],
 "stabilization__rate_8c.html#a12f569e84b2838005e3c28f4476971e9":[12,0,1,0,3,2,2,46,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX208 =
 "sts3032__regs_8h.html#a814303a7581254a667e7d99d79d76535":[12,0,1,0,7,138,46],
 "sts3032__regs_8h.html#a862091c7a8dee0f1091b3c12bcedd675":[12,0,1,0,7,138,13],
 "sts3032__regs_8h.html#a8a3b1d3384ee1e1e4ddb37e74d013ed3":[12,0,1,0,7,138,14],
-"sts3032__regs_8h.html#a998c08fedcc08c7a60c01439bfd79ddf":[12,0,1,0,7,138,39],
-"sts3032__regs_8h.html#a9be103953e5d6ff126645ffa54b4e16c":[12,0,1,0,7,138,28]
+"sts3032__regs_8h.html#a998c08fedcc08c7a60c01439bfd79ddf":[12,0,1,0,7,138,39]
 };

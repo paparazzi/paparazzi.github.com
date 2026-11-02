@@ -1,5 +1,6 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#FLIGHT_BENCHMARK":[2,0,61],
 "paparazzi_messages.html#FLIGHT_PARAM":[2,2,10],
 "paparazzi_messages.html#FLY_BY_WIRE":[2,2,16],
 "paparazzi_messages.html#FMS_TIME":[2,0,174],
@@ -79,7 +80,7 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#IMU_TURNTABLE":[2,0,213],
 "paparazzi_messages.html#INFLIGH_CALIB":[2,2,17],
 "paparazzi_messages.html#INFO_MSG":[2,0,208],
-"paparazzi_messages.html#INFO_MSG_GROUND":[2,2,41],
+"paparazzi_messages.html#INFO_MSG_GROUND":[2,2,42],
 "paparazzi_messages.html#INFO_MSG_UP":[2,1,59],
 "paparazzi_messages.html#INS":[2,0,191],
 "paparazzi_messages.html#INS_EKF2":[2,0,161],
@@ -150,7 +151,7 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#PERIODIC_TELEMETRY_ERR":[2,0,219],
 "paparazzi_messages.html#PIKSI_HEARTBEAT":[2,0,102],
 "paparazzi_messages.html#PING":[2,1,5],
-"paparazzi_messages.html#PLUMES":[2,2,40],
+"paparazzi_messages.html#PLUMES":[2,2,41],
 "paparazzi_messages.html#PONG":[2,0,2],
 "paparazzi_messages.html#POTENTIAL":[2,0,118],
 "paparazzi_messages.html#POWER_DEVICE":[2,0,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#VISUALTARGET":[2,0,228],
 "paparazzi_messages.html#WAYPOINT_MOVED":[2,2,28],
 "paparazzi_messages.html#WEATHER":[2,0,212],
-"paparazzi_messages.html#WIND":[2,2,7],
-"paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,204]
+"paparazzi_messages.html#WIND":[2,2,7]
 };

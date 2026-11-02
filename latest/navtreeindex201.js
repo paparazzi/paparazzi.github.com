@@ -1,5 +1,6 @@
 var NAVTREEINDEX201 =
 {
+"simple__kinematic__kalman_8h.html#structSimpleKinematicKalman":[12,0,1,0,2,18,0],
 "simple__kinematic__kalman_8h_source.html":[12,0,1,0,2,18],
 "simple__quad__sim_8py.html":[12,0,1,1,2,0,0],
 "simple__quad__sim_8py.html#a3513a321b42c153fcea5d77f2187a101":[12,0,1,1,2,0,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX201 =
 "sonar__i2c_8h.html#a5883c674e401657a33d7b960685a0923":[12,0,1,0,6,67,7,2],
 "sonar__i2c_8h.html#a86d084684c0a61d8d7d38e6c17ebbb68":[12,0,1,0,6,67,7,0,3],
 "sonar__i2c_8h.html#a8aba3804bce58d1b40cb211711f5004d":[12,0,1,0,6,67,7,5],
-"sonar__i2c_8h.html#aafbb54f0c3a664c21f1d33bba29f7a7c":[12,0,1,0,6,67,7,0,5],
-"sonar__i2c_8h.html#acef6a387911dc98620af6de15905f5b8":[12,0,1,0,6,67,7,3]
+"sonar__i2c_8h.html#aafbb54f0c3a664c21f1d33bba29f7a7c":[12,0,1,0,6,67,7,0,5]
 };

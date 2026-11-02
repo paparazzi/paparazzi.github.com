@@ -159,6 +159,7 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#AIRCRAFTS":[2,2,2],
 "paparazzi_messages.html#AIRCRAFTS_REQ":[2,2,3],
 "paparazzi_messages.html#AIRCRAFT_DIE":[2,2,1],
+"paparazzi_messages.html#AIRCRAFT_REBOOT":[2,2,40],
 "paparazzi_messages.html#AIRSPEED":[2,0,49],
 "paparazzi_messages.html#AIRSPEED_RAW":[2,0,132],
 "paparazzi_messages.html#AIRSPEED_WIND_ESTIMATOR_EKF":[2,0,189],
@@ -248,6 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#EXTERNAL_POSE_SMALL":[2,1,35],
 "paparazzi_messages.html#FBW_STATUS":[2,0,97],
 "paparazzi_messages.html#FILTER":[2,0,128],
-"paparazzi_messages.html#FILTER_ALIGNER":[2,0,131],
-"paparazzi_messages.html#FLIGHT_BENCHMARK":[2,0,61]
+"paparazzi_messages.html#FILTER_ALIGNER":[2,0,131]
 };
