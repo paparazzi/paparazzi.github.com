@@ -1,112 +1,112 @@
 <map id="sw/airborne/math/pprz_orientation_conversion.h" name="sw/airborne/math/pprz_orientation_conversion.h">
-<area shape="rect" id="Node000001" title="Generic orientation representation and conversions." alt="" coords="2360,5,2551,45"/>
-<area shape="rect" id="Node000002" href="$pprz__orientation__conversion_8c.html" title="Generic orientation representation and conversion." alt="" coords="73,101,262,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2346,30,1917,33,1319,43,715,63,464,77,274,96,236,103,235,98,274,91,464,72,715,57,1318,37,1917,28,2346,24"/>
-<area shape="rect" id="Node000003" href="$ahrs__float__cmpl_8h.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias." alt="" coords="286,101,459,141"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2346,29,2040,32,1599,41,1085,61,821,76,562,96,460,108,459,103,562,91,821,71,1085,56,1599,36,2040,27,2346,24"/>
-<area shape="rect" id="Node000007" href="$ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM." alt="" coords="575,101,744,141"/>
-<area shape="poly" id="edge5_Node000001_Node000007" title=" " alt="" coords="2347,33,1758,55,1366,73,968,96,744,114,744,109,967,91,1366,68,1758,50,2346,27"/>
-<area shape="rect" id="Node000011" href="$ahrs__float__invariant_8h.html" title="AHRS using invariant filter." alt="" coords="980,101,1179,141"/>
-<area shape="poly" id="edge8_Node000001_Node000011" title=" " alt="" coords="2346,35,1920,59,1373,96,1179,113,1179,107,1372,91,1919,54,2346,30"/>
-<area shape="rect" id="Node000015" href="$ahrs__float__mlkf_8h.html" title="Multiplicative linearized Kalman Filter in quaternion formulation." alt="" coords="1385,101,1555,141"/>
-<area shape="poly" id="edge11_Node000001_Node000015" title=" " alt="" coords="2346,40,1556,114,1555,109,2346,34"/>
-<area shape="rect" id="Node000019" href="$ahrs__int__cmpl__quat_8h.html" title="Quaternion complementary filter (fixed&#45;point)." alt="" coords="1847,93,2005,148"/>
-<area shape="poly" id="edge14_Node000001_Node000019" title=" " alt="" coords="2347,48,2006,108,2005,103,2346,43"/>
-<area shape="rect" id="Node000025" href="$ahrs__madgwick_8h.html" title="AHRS using Madgwick implementation." alt="" coords="2272,101,2444,141"/>
-<area shape="poly" id="edge18_Node000001_Node000025" title=" " alt="" coords="2428,57,2380,103,2376,99,2424,53"/>
-<area shape="rect" id="Node000029" href="$ahrs__vectornav_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="2468,101,2637,141"/>
-<area shape="poly" id="edge21_Node000001_Node000029" title=" " alt="" coords="2487,53,2535,99,2531,103,2483,57"/>
-<area shape="rect" id="Node000033" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="4207,101,4365,141"/>
-<area shape="poly" id="edge25_Node000001_Node000033" title=" " alt="" coords="2565,30,4207,113,4206,118,2565,35"/>
-<area shape="rect" id="Node000101" href="$ins__float__invariant_8h.html" title="INS using invariant filter." alt="" coords="4390,101,4571,141"/>
-<area shape="poly" id="edge50_Node000001_Node000101" title=" " alt="" coords="2565,25,2947,29,3471,40,3994,60,4212,74,4377,91,4415,98,4414,103,4376,96,4212,79,3994,65,3470,46,2947,35,2565,30"/>
-<area shape="rect" id="Node000105" href="$ins__mekf__wind__wrapper_8h.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="4595,101,4814,141"/>
-<area shape="poly" id="edge51_Node000001_Node000105" title=" " alt="" coords="2565,25,2984,30,3567,41,4154,60,4398,74,4584,91,4628,98,4627,103,4583,96,4398,79,4154,66,3567,46,2984,35,2565,30"/>
-<area shape="rect" id="Node000107" href="$ins__skeleton_8h.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="4839,101,4997,141"/>
-<area shape="poly" id="edge52_Node000001_Node000107" title=" " alt="" coords="2564,23,3026,24,3680,31,4022,39,4342,51,4618,68,4826,91,4861,98,4860,103,4826,96,4617,74,4342,57,4021,45,3680,36,3026,29,2564,29"/>
-<area shape="rect" id="Node000109" href="$mag__pitot__uart_8h.html" title=" " alt="" coords="5021,101,5212,141"/>
-<area shape="poly" id="edge53_Node000001_Node000109" title=" " alt="" coords="2564,24,3057,25,3764,33,4135,41,4482,53,4782,69,5009,91,5049,98,5048,103,5008,96,4782,75,4482,59,4134,47,3764,39,3057,30,2564,29"/>
-<area shape="rect" id="Node000110" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="3006,108,3153,133"/>
-<area shape="poly" id="edge54_Node000001_Node000110" title=" " alt="" coords="2565,40,3006,106,3005,111,2564,45"/>
-<area shape="rect" id="Node000004" href="$ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias." alt="" coords="5,203,177,243"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="308,148,145,206,143,201,306,143"/>
-<area shape="rect" id="Node000005" href="$ahrs__float__cmpl__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point complementary filter." alt="" coords="201,196,363,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="348,153,308,198,304,194,344,149"/>
-<area shape="rect" id="Node000008" href="$ahrs__float__dcm_8c.html" title="Attitude estimation for fixedwings based on the DCM." alt="" coords="387,203,555,243"/>
-<area shape="poly" id="edge6_Node000007_Node000008" title=" " alt="" coords="613,150,508,206,505,201,611,145"/>
-<area shape="rect" id="Node000009" href="$ahrs__float__dcm__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point DCM filter." alt="" coords="580,196,739,251"/>
-<area shape="poly" id="edge7_Node000007_Node000009" title=" " alt="" coords="662,154,662,196,657,196,657,154"/>
-<area shape="rect" id="Node000012" href="$ahrs__float__invariant_8c.html" title=" " alt="" coords="763,203,961,243"/>
-<area shape="poly" id="edge9_Node000011_Node000012" title=" " alt="" coords="1027,149,904,206,902,201,1025,144"/>
-<area shape="rect" id="Node000013" href="$ahrs__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT ahrs filter." alt="" coords="986,196,1173,251"/>
-<area shape="poly" id="edge10_Node000011_Node000013" title=" " alt="" coords="1082,154,1082,196,1077,196,1077,154"/>
-<area shape="rect" id="Node000016" href="$ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation." alt="" coords="1197,203,1367,243"/>
-<area shape="poly" id="edge12_Node000015_Node000016" title=" " alt="" coords="1424,150,1318,206,1316,201,1421,145"/>
-<area shape="rect" id="Node000017" href="$ahrs__float__mlkf__wrapper_8h.html" title="Paparazzi specific wrapper to run MLKF filter." alt="" coords="1391,196,1549,251"/>
-<area shape="poly" id="edge13_Node000015_Node000017" title=" " alt="" coords="1473,154,1473,196,1467,196,1467,154"/>
-<area shape="rect" id="Node000020" href="$ahrs__int__cmpl__quat_8c.html" title="Quaternion complementary filter (fixed&#45;point)." alt="" coords="1573,196,1732,251"/>
-<area shape="poly" id="edge15_Node000019_Node000020" title=" " alt="" coords="1843,155,1725,198,1723,193,1841,150"/>
-<area shape="rect" id="Node000021" href="$ahrs__int__cmpl__quat__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point complementary filter." alt="" coords="1756,196,1915,251"/>
-<area shape="poly" id="edge16_Node000019_Node000021" title=" " alt="" coords="1895,160,1861,198,1857,194,1891,157"/>
-<area shape="rect" id="Node000023" href="$ins__flow_8h.html" title=" " alt="" coords="1939,203,2097,243"/>
-<area shape="poly" id="edge17_Node000019_Node000023" title=" " alt="" coords="1961,157,2002,201,1998,205,1957,160"/>
-<area shape="rect" id="Node000026" href="$ahrs__madgwick_8c.html" title=" " alt="" coords="2122,203,2293,243"/>
-<area shape="poly" id="edge19_Node000025_Node000026" title=" " alt="" coords="2320,151,2237,205,2234,201,2317,146"/>
-<area shape="rect" id="Node000027" href="$ahrs__madgwick__wrapper_8h.html" title="Paparazzi specific wrapper to run Madgwick ahrs filter." alt="" coords="2317,196,2477,251"/>
-<area shape="poly" id="edge20_Node000025_Node000027" title=" " alt="" coords="2373,153,2389,195,2384,197,2368,154"/>
-<area shape="rect" id="Node000030" href="$ahrs__vectornav_8c.html" title=" " alt="" coords="2547,299,2715,339"/>
-<area shape="poly" id="edge22_Node000029_Node000030" title=" " alt="" coords="2543,154,2533,201,2534,226,2542,249,2563,276,2591,296,2588,301,2560,280,2537,252,2529,227,2528,201,2537,153"/>
-<area shape="rect" id="Node000031" href="$ahrs__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="2552,196,2711,251"/>
-<area shape="poly" id="edge23_Node000029_Node000031" title=" " alt="" coords="2578,150,2613,194,2609,197,2574,153"/>
-<area shape="poly" id="edge24_Node000031_Node000030" title=" " alt="" coords="2634,264,2634,299,2629,299,2629,264"/>
-<area shape="rect" id="Node000034" href="$max1167__hw_8c.html" title=" " alt="" coords="5563,203,5721,243"/>
-<area shape="poly" id="edge26_Node000033_Node000034" title=" " alt="" coords="4358,141,4378,145,4555,168,4706,176,4839,175,4964,169,5089,164,5222,163,5373,171,5550,193,5584,201,5583,206,5550,199,5373,176,5222,168,5089,169,4964,175,4839,180,4706,181,4555,173,4378,151,4357,147"/>
-<area shape="rect" id="Node000035" href="$imu__apogee_8h.html" title="Driver for the IMU on the Apogee board." alt="" coords="5746,203,5917,243"/>
-<area shape="poly" id="edge27_Node000033_Node000035" title=" " alt="" coords="4358,141,4378,145,4583,171,4757,180,4912,178,5056,171,5200,164,5354,161,5529,170,5734,193,5770,201,5769,206,5734,199,5529,175,5354,167,5200,169,5056,176,4912,183,4757,185,4583,176,4378,151,4357,147"/>
-<area shape="rect" id="Node000038" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="2970,203,3189,243"/>
-<area shape="poly" id="edge28_Node000033_Node000038" title=" " alt="" coords="4193,127,4010,133,3763,145,3483,166,3201,199,3159,206,3158,201,3200,193,3483,161,3763,140,4010,127,4193,121"/>
-<area shape="rect" id="Node000039" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="3213,196,3383,251"/>
-<area shape="poly" id="edge29_Node000033_Node000039" title=" " alt="" coords="4192,127,4040,133,3841,146,3619,167,3396,199,3384,201,3383,196,3395,193,3618,162,3840,141,4039,128,4192,122"/>
-<area shape="rect" id="Node000040" href="$ahrs__aligner_8c.html" title="Low&#45;pass IMU measurements at startup to align the AHRS." alt="" coords="5941,203,6100,243"/>
-<area shape="poly" id="edge30_Node000033_Node000040" title=" " alt="" coords="4358,141,4378,145,4501,162,4613,173,4812,182,4988,179,5153,169,5318,160,5495,156,5695,165,5807,177,5929,193,5963,201,5962,206,5928,199,5806,182,5694,171,5495,162,5318,165,5153,175,4989,184,4812,188,4612,179,4500,167,4378,151,4357,147"/>
-<area shape="rect" id="Node000041" href="$imu__quality__assessment_8c.html" title=" " alt="" coords="3819,196,3999,251"/>
-<area shape="poly" id="edge31_Node000033_Node000041" title=" " alt="" coords="4203,147,4000,201,3998,196,4202,142"/>
-<area shape="rect" id="Node000042" href="$mag__calib__ukf_8c.html" title=" " alt="" coords="3408,203,3612,243"/>
-<area shape="poly" id="edge32_Node000033_Node000042" title=" " alt="" coords="4193,132,3936,156,3780,175,3624,199,3586,206,3585,201,3623,193,3779,170,3935,151,4193,126"/>
-<area shape="rect" id="Node000043" href="$gps__datalink_8c.html" title="GPS system based on datalink." alt="" coords="4023,203,4181,243"/>
-<area shape="poly" id="edge33_Node000033_Node000043" title=" " alt="" coords="4241,150,4138,206,4135,201,4238,145"/>
-<area shape="rect" id="Node000044" href="$qr__code__spi__link_8c.html" title=" " alt="" coords="4205,196,4367,251"/>
-<area shape="poly" id="edge34_Node000033_Node000044" title=" " alt="" coords="4289,154,4289,196,4283,196,4283,154"/>
-<area shape="rect" id="Node000045" href="$hott__eam_8h.html" title="Graupner HOTT electric air module description." alt="" coords="3636,203,3795,243"/>
-<area shape="poly" id="edge35_Node000033_Node000045" title=" " alt="" coords="4194,135,4014,161,3807,199,3777,206,3776,201,3805,193,4013,155,4193,130"/>
-<area shape="rect" id="Node000046" href="$imu_8c.html" title="Inertial Measurement Unit interface." alt="" coords="2787,203,2945,243"/>
-<area shape="poly" id="edge36_Node000033_Node000046" title=" " alt="" coords="4193,127,3567,151,3215,172,3069,184,2958,199,2926,206,2924,201,2958,193,3068,179,3214,166,3567,145,4193,122"/>
-<area shape="rect" id="Node000047" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="4345,299,4504,339"/>
-<area shape="poly" id="edge37_Node000033_Node000047" title=" " alt="" coords="4330,146,4356,168,4380,194,4396,221,4408,249,4423,298,4418,299,4403,251,4391,223,4376,198,4353,172,4326,151"/>
-<area shape="rect" id="Node000048" href="$imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="4443,203,4601,243"/>
-<area shape="poly" id="edge38_Node000033_Node000048" title=" " alt="" coords="4344,144,4479,201,4477,206,4342,149"/>
-<area shape="rect" id="Node000049" href="$imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="4577,299,4760,339"/>
-<area shape="poly" id="edge40_Node000033_Node000049" title=" " alt="" coords="4364,142,4379,145,4415,152,4447,154,4503,154,4529,156,4556,162,4584,174,4614,194,4636,218,4652,246,4668,298,4663,299,4647,248,4632,221,4611,198,4582,178,4555,167,4529,161,4503,159,4446,159,4414,157,4377,151,4363,147"/>
-<area shape="rect" id="Node000050" href="$imu__aspirin__2__spi_8h.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="4677,203,4861,243"/>
-<area shape="poly" id="edge41_Node000033_Node000050" title=" " alt="" coords="4363,142,4379,145,4457,161,4518,170,4658,193,4692,201,4691,206,4658,199,4517,176,4456,166,4377,151,4362,147"/>
-<area shape="rect" id="Node000051" href="$imu__aspirin__i2c_8c.html" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="4842,299,5010,339"/>
-<area shape="poly" id="edge43_Node000033_Node000051" title=" " alt="" coords="4360,141,4378,145,4427,151,4489,152,4633,153,4706,155,4773,161,4831,174,4874,194,4896,217,4912,245,4926,298,4921,299,4907,247,4892,220,4871,198,4829,179,4772,167,4705,160,4632,158,4488,158,4427,156,4378,151,4359,147"/>
-<area shape="rect" id="Node000052" href="$imu__aspirin__i2c_8h.html" title="Interface for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="4936,203,5105,243"/>
-<area shape="poly" id="edge44_Node000033_Node000052" title=" " alt="" coords="4360,141,4378,145,4460,158,4529,166,4647,171,4766,175,4835,182,4917,193,4953,201,4952,206,4916,199,4835,187,4766,180,4647,176,4528,171,4459,164,4378,151,4358,147"/>
-<area shape="rect" id="Node000053" href="$imu__bebop_8c.html" title="Driver for the Bebop (2) magnetometer, accelerometer and gyroscope." alt="" coords="5123,299,5281,339"/>
-<area shape="poly" id="edge46_Node000033_Node000053" title=" " alt="" coords="4359,141,4378,145,4451,152,4542,153,4754,150,4863,150,4964,156,5051,169,5087,180,5118,194,5137,211,5157,238,5194,297,5189,300,5153,241,5133,214,5115,198,5086,185,5050,175,4963,161,4863,155,4754,155,4542,159,4450,157,4378,151,4358,147"/>
-<area shape="rect" id="Node000054" href="$imu__bebop_8h.html" title="Interface for the Bebop magnetometer, accelerometer and gyroscope." alt="" coords="5181,203,5340,243"/>
-<area shape="poly" id="edge47_Node000033_Node000054" title=" " alt="" coords="4359,141,4378,145,4497,162,4597,170,4770,170,4943,171,5044,178,5162,193,5197,201,5196,206,5162,199,5043,183,4942,176,4770,176,4597,175,4496,167,4378,151,4358,147"/>
-<area shape="rect" id="Node000055" href="$imu__bmi088__i2c_8c.html" title="IMU driver for the BMI088 using I2C." alt="" coords="5365,203,5538,243"/>
-<area shape="poly" id="edge49_Node000033_Node000055" title=" " alt="" coords="4359,141,4378,145,4525,165,4651,173,4761,174,4865,171,4969,167,5080,168,5206,175,5353,193,5389,201,5388,206,5352,199,5205,180,5080,173,4969,173,4865,176,4761,179,4650,178,4525,170,4378,151,4358,147"/>
-<area shape="poly" id="edge39_Node000048_Node000047" title=" " alt="" coords="4494,255,4446,301,4442,297,4491,251"/>
-<area shape="poly" id="edge42_Node000050_Node000049" title=" " alt="" coords="4740,255,4691,301,4687,297,4737,251"/>
-<area shape="poly" id="edge45_Node000052_Node000051" title=" " alt="" coords="4993,255,4947,301,4943,297,4990,251"/>
-<area shape="poly" id="edge48_Node000054_Node000053" title=" " alt="" coords="5244,256,5216,300,5212,297,5239,253"/>
-<area shape="poly" id="edge57_Node000110_Node000030" title=" " alt="" coords="2993,132,2942,141,2885,154,2829,173,2775,198,2759,210,2749,223,2724,253,2661,301,2658,296,2720,249,2744,220,2755,207,2773,194,2827,168,2884,149,2940,136,2992,127"/>
-<area shape="poly" id="edge55_Node000110_Node000038" title=" " alt="" coords="3082,147,3082,203,3077,203,3077,147"/>
-<area shape="poly" id="edge56_Node000110_Node000039" title=" " alt="" coords="3118,137,3242,194,3240,198,3116,141"/>
-<area shape="poly" id="edge58_Node000110_Node000042" title=" " alt="" coords="3142,134,3430,201,3429,206,3141,139"/>
-<area shape="poly" id="edge59_Node000110_Node000045" title=" " alt="" coords="3167,127,3376,152,3500,171,3624,193,3654,201,3653,206,3623,199,3499,176,3375,157,3166,133"/>
-<area shape="poly" id="edge60_Node000110_Node000046" title=" " alt="" coords="3043,142,2907,206,2905,201,3041,137"/>
+<area shape="rect" id="Node000001" title="Generic orientation representation and conversions." alt="" coords="2545,5,2736,45"/>
+<area shape="rect" id="Node000002" href="$pprz__orientation__conversion_8c.html" title="Generic orientation representation and conversion." alt="" coords="67,101,257,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2532,29,2070,32,1416,40,1074,49,754,60,478,76,269,96,230,103,229,98,268,91,477,71,754,55,1074,43,1416,35,2070,26,2532,24"/>
+<area shape="rect" id="Node000003" href="$ahrs__float__cmpl_8h.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias." alt="" coords="281,101,454,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2531,29,2198,30,1710,38,1140,59,845,75,557,96,455,108,454,103,556,91,845,69,1139,53,1710,33,2198,25,2531,23"/>
+<area shape="rect" id="Node000007" href="$ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM." alt="" coords="569,101,739,141"/>
+<area shape="poly" id="edge5_Node000001_Node000007" title=" " alt="" coords="2531,32,1868,53,1418,71,961,96,739,114,739,108,960,91,1418,66,1867,47,2531,27"/>
+<area shape="rect" id="Node000011" href="$ahrs__float__invariant_8h.html" title="AHRS using invariant filter." alt="" coords="973,101,1172,141"/>
+<area shape="poly" id="edge8_Node000001_Node000011" title=" " alt="" coords="2532,34,2028,57,1366,96,1172,112,1172,107,1366,91,2028,52,2531,28"/>
+<area shape="rect" id="Node000015" href="$ahrs__float__mlkf_8h.html" title="Multiplicative linearized Kalman Filter in quaternion formulation." alt="" coords="1378,101,1549,141"/>
+<area shape="poly" id="edge11_Node000001_Node000015" title=" " alt="" coords="2532,38,1549,115,1549,110,2532,33"/>
+<area shape="rect" id="Node000019" href="$ahrs__int__cmpl__quat_8h.html" title="Quaternion complementary filter (fixed&#45;point)." alt="" coords="1845,93,2004,148"/>
+<area shape="poly" id="edge14_Node000001_Node000019" title=" " alt="" coords="2532,43,2004,112,2004,106,2532,38"/>
+<area shape="rect" id="Node000025" href="$ahrs__madgwick_8h.html" title="AHRS using Madgwick implementation." alt="" coords="2304,101,2476,141"/>
+<area shape="poly" id="edge18_Node000001_Node000025" title=" " alt="" coords="2578,53,2442,103,2440,98,2576,48"/>
+<area shape="rect" id="Node000029" href="$ahrs__vectornav_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="2556,101,2725,141"/>
+<area shape="poly" id="edge21_Node000001_Node000029" title=" " alt="" coords="2643,59,2643,101,2638,101,2638,59"/>
+<area shape="rect" id="Node000033" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="3945,101,4104,141"/>
+<area shape="poly" id="edge25_Node000001_Node000033" title=" " alt="" coords="2750,31,3945,111,3945,117,2750,37"/>
+<area shape="rect" id="Node000101" href="$ins__float__invariant_8h.html" title="INS using invariant filter." alt="" coords="4129,101,4310,141"/>
+<area shape="poly" id="edge49_Node000001_Node000101" title=" " alt="" coords="2750,26,3050,33,3444,46,3832,65,3993,77,4116,91,4153,98,4152,103,4115,96,3993,82,3832,71,3444,52,3050,39,2750,31"/>
+<area shape="rect" id="Node000105" href="$ins__mekf__wind__wrapper_8h.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="4334,101,4553,141"/>
+<area shape="poly" id="edge50_Node000001_Node000105" title=" " alt="" coords="2750,26,3542,46,3993,65,4180,77,4322,91,4366,98,4365,103,4322,96,4180,82,3992,70,3542,51,2749,31"/>
+<area shape="rect" id="Node000107" href="$ins__skeleton_8h.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="4577,101,4736,141"/>
+<area shape="poly" id="edge51_Node000001_Node000107" title=" " alt="" coords="2750,24,3133,28,3657,37,4182,57,4400,72,4565,91,4599,98,4598,103,4564,96,4399,77,4181,63,3657,43,3133,33,2750,30"/>
+<area shape="rect" id="Node000109" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS module." alt="" coords="4760,101,4919,141"/>
+<area shape="poly" id="edge52_Node000001_Node000109" title=" " alt="" coords="2750,24,3166,26,3743,34,4043,43,4324,54,4566,70,4749,91,4783,98,4782,103,4748,96,4566,76,4324,60,4043,48,3743,40,3165,31,2750,29"/>
+<area shape="rect" id="Node000113" href="$mag__pitot__uart_8h.html" title=" " alt="" coords="4943,101,5133,141"/>
+<area shape="poly" id="edge53_Node000001_Node000113" title=" " alt="" coords="2750,24,3197,27,3828,36,4157,44,4465,56,4731,71,4932,91,4971,98,4970,103,4931,96,4730,77,4465,61,4157,50,3828,41,3197,32,2750,29"/>
+<area shape="rect" id="Node000114" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="3009,108,3155,133"/>
+<area shape="poly" id="edge54_Node000001_Node000114" title=" " alt="" coords="2744,46,3028,105,3027,111,2743,51"/>
+<area shape="rect" id="Node000004" href="$ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias." alt="" coords="191,203,363,243"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,153,296,205,292,201,339,149"/>
+<area shape="rect" id="Node000005" href="$ahrs__float__cmpl__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point complementary filter." alt="" coords="5,196,167,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="303,148,160,198,158,193,301,143"/>
+<area shape="rect" id="Node000008" href="$ahrs__float__dcm_8c.html" title="Attitude estimation for fixedwings based on the DCM." alt="" coords="570,203,738,243"/>
+<area shape="poly" id="edge6_Node000007_Node000008" title=" " alt="" coords="657,155,657,203,651,203,651,155"/>
+<area shape="rect" id="Node000009" href="$ahrs__float__dcm__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point DCM filter." alt="" coords="387,196,545,251"/>
+<area shape="poly" id="edge7_Node000007_Node000009" title=" " alt="" coords="608,149,516,198,514,194,605,145"/>
+<area shape="rect" id="Node000012" href="$ahrs__float__invariant_8c.html" title=" " alt="" coords="973,203,1172,243"/>
+<area shape="poly" id="edge9_Node000011_Node000012" title=" " alt="" coords="1075,155,1075,203,1070,203,1070,155"/>
+<area shape="rect" id="Node000013" href="$ahrs__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT ahrs filter." alt="" coords="762,196,949,251"/>
+<area shape="poly" id="edge10_Node000011_Node000013" title=" " alt="" coords="1020,149,913,198,911,193,1018,144"/>
+<area shape="rect" id="Node000016" href="$ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation." alt="" coords="1379,203,1548,243"/>
+<area shape="poly" id="edge12_Node000015_Node000016" title=" " alt="" coords="1466,155,1466,203,1461,203,1461,155"/>
+<area shape="rect" id="Node000017" href="$ahrs__float__mlkf__wrapper_8h.html" title="Paparazzi specific wrapper to run MLKF filter." alt="" coords="1196,196,1355,251"/>
+<area shape="poly" id="edge13_Node000015_Node000017" title=" " alt="" coords="1417,149,1326,198,1323,194,1415,145"/>
+<area shape="rect" id="Node000020" href="$ahrs__int__cmpl__quat_8c.html" title="Quaternion complementary filter (fixed&#45;point)." alt="" coords="1572,196,1731,251"/>
+<area shape="poly" id="edge15_Node000019_Node000020" title=" " alt="" coords="1842,155,1723,198,1722,193,1840,150"/>
+<area shape="rect" id="Node000021" href="$ahrs__int__cmpl__quat__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point complementary filter." alt="" coords="1755,196,1913,251"/>
+<area shape="poly" id="edge16_Node000019_Node000021" title=" " alt="" coords="1894,160,1860,198,1856,194,1890,157"/>
+<area shape="rect" id="Node000023" href="$ins__flow_8h.html" title=" " alt="" coords="1937,203,2096,243"/>
+<area shape="poly" id="edge17_Node000019_Node000023" title=" " alt="" coords="1960,157,2001,201,1997,205,1956,160"/>
+<area shape="rect" id="Node000026" href="$ahrs__madgwick_8c.html" title=" " alt="" coords="2305,203,2475,243"/>
+<area shape="poly" id="edge19_Node000025_Node000026" title=" " alt="" coords="2393,155,2393,203,2387,203,2387,155"/>
+<area shape="rect" id="Node000027" href="$ahrs__madgwick__wrapper_8h.html" title="Paparazzi specific wrapper to run Madgwick ahrs filter." alt="" coords="2121,196,2281,251"/>
+<area shape="poly" id="edge20_Node000025_Node000027" title=" " alt="" coords="2344,149,2251,198,2249,194,2341,145"/>
+<area shape="rect" id="Node000030" href="$ahrs__vectornav_8c.html" title=" " alt="" coords="2613,299,2781,339"/>
+<area shape="poly" id="edge22_Node000029_Node000030" title=" " alt="" coords="2657,153,2673,195,2687,251,2696,298,2691,299,2682,252,2667,197,2652,155"/>
+<area shape="rect" id="Node000031" href="$ahrs__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="2500,196,2659,251"/>
+<area shape="poly" id="edge23_Node000029_Node000031" title=" " alt="" coords="2624,154,2598,197,2593,194,2620,151"/>
+<area shape="poly" id="edge24_Node000031_Node000030" title=" " alt="" coords="2625,257,2675,297,2671,301,2622,262"/>
+<area shape="rect" id="Node000034" href="$max1167__hw_8c.html" title=" " alt="" coords="4583,203,4741,243"/>
+<area shape="poly" id="edge26_Node000033_Node000034" title=" " alt="" coords="4099,141,4117,145,4242,164,4340,170,4439,176,4564,193,4597,201,4596,206,4563,199,4438,181,4340,175,4241,169,4116,151,4098,147"/>
+<area shape="rect" id="Node000035" href="$imu__apogee_8h.html" title="Driver for the IMU on the Apogee board." alt="" coords="4766,203,4937,243"/>
+<area shape="poly" id="edge27_Node000033_Node000035" title=" " alt="" coords="4098,141,4117,145,4213,160,4295,167,4435,170,4576,173,4658,180,4754,193,4788,201,4787,206,4754,199,4657,185,4575,178,4435,175,4295,172,4213,165,4116,151,4097,147"/>
+<area shape="rect" id="Node000038" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="3574,203,3793,243"/>
+<area shape="poly" id="edge28_Node000033_Node000038" title=" " alt="" coords="3949,147,3748,206,3747,201,3947,142"/>
+<area shape="rect" id="Node000039" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="2785,196,2955,251"/>
+<area shape="poly" id="edge29_Node000033_Node000039" title=" " alt="" coords="3932,125,3753,129,3513,141,3241,163,3103,179,2968,199,2956,201,2955,196,2967,193,3102,173,3241,157,3512,135,3753,124,3932,120"/>
+<area shape="rect" id="Node000040" href="$ahrs__aligner_8c.html" title="Low&#45;pass IMU measurements at startup to align the AHRS." alt="" coords="4961,203,5120,243"/>
+<area shape="poly" id="edge30_Node000033_Node000040" title=" " alt="" coords="4098,141,4117,145,4243,163,4350,170,4444,171,4533,169,4621,167,4716,169,4823,176,4949,193,4982,201,4981,206,4948,199,4823,181,4716,174,4621,173,4533,175,4444,177,4349,175,4242,168,4116,151,4097,147"/>
+<area shape="rect" id="Node000041" href="$imu__quality__assessment_8c.html" title=" " alt="" coords="5144,196,5324,251"/>
+<area shape="poly" id="edge31_Node000033_Node000041" title=" " alt="" coords="4097,141,4117,145,4270,165,4401,174,4516,175,4624,171,4732,168,4848,168,4979,175,5133,193,5144,195,5143,200,5132,199,4979,180,4848,173,4732,173,4624,177,4516,180,4401,179,4270,171,4116,151,4096,147"/>
+<area shape="rect" id="Node000042" href="$mag__calib__ukf_8c.html" title=" " alt="" coords="2980,203,3184,243"/>
+<area shape="poly" id="edge32_Node000033_Node000042" title=" " alt="" coords="3932,129,3606,151,3401,171,3196,199,3158,206,3157,201,3195,193,3400,166,3605,146,3932,123"/>
+<area shape="rect" id="Node000043" href="$gps__datalink_8c.html" title="GPS system based on datalink." alt="" coords="5348,203,5507,243"/>
+<area shape="poly" id="edge33_Node000033_Node000043" title=" " alt="" coords="4097,141,4117,145,4301,168,4458,177,4597,175,4727,169,4856,163,4995,161,5153,170,5337,193,5370,201,5369,206,5336,199,5152,175,4995,167,4857,168,4727,174,4597,181,4458,182,4301,174,4116,151,4096,147"/>
+<area shape="rect" id="Node000044" href="$qr__code__spi__link_8c.html" title=" " alt="" coords="5531,196,5692,251"/>
+<area shape="poly" id="edge34_Node000033_Node000044" title=" " alt="" coords="4097,141,4117,145,4329,171,4509,180,4669,177,4818,169,4967,161,5127,159,5308,168,5520,193,5531,195,5530,201,5519,199,5307,173,5127,164,4967,167,4818,175,4669,183,4509,185,4328,176,4116,151,4096,147"/>
+<area shape="rect" id="Node000045" href="$hott__eam_8h.html" title="Graupner HOTT electric air module description." alt="" coords="3208,203,3367,243"/>
+<area shape="poly" id="edge35_Node000033_Node000045" title=" " alt="" coords="3932,130,3681,153,3529,173,3379,199,3348,206,3347,201,3377,193,3529,168,3680,148,3931,125"/>
+<area shape="rect" id="Node000046" href="$imu_8c.html" title="Inertial Measurement Unit interface." alt="" coords="3391,203,3549,243"/>
+<area shape="poly" id="edge36_Node000033_Node000046" title=" " alt="" coords="3932,136,3760,162,3563,199,3533,206,3532,201,3561,193,3759,156,3931,131"/>
+<area shape="rect" id="Node000047" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="4117,299,4276,339"/>
+<area shape="poly" id="edge37_Node000033_Node000047" title=" " alt="" coords="4103,142,4186,170,4218,183,4235,194,4241,208,4244,222,4240,250,4228,277,4214,300,4209,297,4223,275,4235,249,4239,222,4236,209,4231,198,4215,188,4184,175,4101,147"/>
+<area shape="rect" id="Node000048" href="$imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="4063,203,4221,243"/>
+<area shape="poly" id="edge38_Node000033_Node000048" title=" " alt="" coords="4059,148,4122,201,4118,205,4056,152"/>
+<area shape="rect" id="Node000049" href="$imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="5157,299,5340,339"/>
+<area shape="poly" id="edge40_Node000033_Node000049" title=" " alt="" coords="4100,142,4117,145,4174,155,4223,159,4307,160,4390,165,4438,176,4492,194,4517,207,4533,222,4549,236,4572,248,4621,262,4685,273,4844,291,5013,304,5157,311,5157,317,5013,309,4844,297,4685,278,4620,267,4570,253,4546,240,4529,226,4514,211,4490,198,4436,181,4389,171,4307,165,4222,164,4173,160,4116,151,4099,147"/>
+<area shape="rect" id="Node000050" href="$imu__aspirin__2__spi_8h.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000." alt="" coords="5717,203,5901,243"/>
+<area shape="poly" id="edge41_Node000033_Node000050" title=" " alt="" coords="4096,141,4117,145,4242,163,4357,174,4561,185,4741,182,4910,173,5079,164,5260,160,5464,168,5580,178,5705,193,5743,201,5742,206,5704,199,5579,183,5464,173,5260,165,5079,169,4910,179,4741,188,4561,190,4356,180,4242,168,4116,151,4095,147"/>
+<area shape="rect" id="Node000051" href="$imu__aspirin__i2c_8c.html" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="3871,299,4039,339"/>
+<area shape="poly" id="edge43_Node000033_Node000051" title=" " alt="" coords="4024,155,4016,201,4000,252,3972,300,3968,297,3996,250,4010,200,4019,154"/>
+<area shape="rect" id="Node000052" href="$imu__aspirin__i2c_8h.html" title="Interface for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="3817,203,3987,243"/>
+<area shape="poly" id="edge44_Node000033_Node000052" title=" " alt="" coords="3993,151,3927,205,3923,201,3989,147"/>
+<area shape="rect" id="Node000053" href="$imu__bebop_8c.html" title="Driver for the Bebop (2) magnetometer, accelerometer and gyroscope." alt="" coords="4356,299,4515,339"/>
+<area shape="poly" id="edge46_Node000033_Node000053" title=" " alt="" coords="4100,142,4117,145,4197,151,4302,153,4355,156,4403,163,4443,175,4471,194,4478,207,4482,221,4478,249,4466,277,4452,300,4448,297,4462,274,4473,248,4476,221,4473,209,4467,198,4441,180,4402,168,4355,162,4302,158,4197,157,4116,151,4099,147"/>
+<area shape="rect" id="Node000054" href="$imu__bebop_8h.html" title="Interface for the Bebop magnetometer, accelerometer and gyroscope." alt="" coords="4297,203,4456,243"/>
+<area shape="poly" id="edge47_Node000033_Node000054" title=" " alt="" coords="4104,142,4311,201,4310,206,4103,147"/>
+<area shape="poly" id="edge39_Node000048_Node000047" title=" " alt="" coords="4162,254,4188,297,4183,300,4158,257"/>
+<area shape="poly" id="edge42_Node000050_Node000049" title=" " alt="" coords="5725,249,5705,253,5511,286,5341,309,5340,304,5510,281,5704,248,5724,244"/>
+<area shape="poly" id="edge45_Node000052_Node000051" title=" " alt="" coords="3922,254,3947,297,3942,300,3917,257"/>
+<area shape="poly" id="edge48_Node000054_Node000053" title=" " alt="" coords="4398,253,4426,297,4421,300,4394,256"/>
+<area shape="poly" id="edge57_Node000114_Node000030" title=" " alt="" coords="2996,128,2942,135,2884,148,2827,168,2774,198,2750,221,2730,248,2706,300,2701,297,2726,246,2746,217,2771,194,2825,164,2883,143,2941,130,2995,123"/>
+<area shape="poly" id="edge55_Node000114_Node000038" title=" " alt="" coords="3170,131,3350,158,3561,193,3598,201,3597,206,3560,199,3350,163,3169,137"/>
+<area shape="poly" id="edge56_Node000114_Node000039" title=" " alt="" coords="3047,142,2926,198,2924,194,3044,137"/>
+<area shape="poly" id="edge58_Node000114_Node000042" title=" " alt="" coords="3085,147,3085,203,3079,203,3079,147"/>
+<area shape="poly" id="edge59_Node000114_Node000045" title=" " alt="" coords="3119,137,3250,201,3248,206,3116,142"/>
+<area shape="poly" id="edge60_Node000114_Node000046" title=" " alt="" coords="3143,134,3379,193,3405,201,3404,206,3377,199,3142,139"/>
 </map>
