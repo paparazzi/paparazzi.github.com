@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('module__fdm_pybullet.html',''); initRe
 <h1><a class="anchor" id="module_load_example__fdm_pybullet"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fdm_pybullet&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;PYTHON_EXEC&quot; value=&quot;python3&quot; type=&quot;string&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;PYBULLET_GUI&quot; value=&quot;TRUE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NPS_ACTUATORS_ORDER&quot; value=&quot;{3, 2, 1, 0}&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NPS_PYTHON_EXEC&quot; value=&quot;python3&quot; type=&quot;string&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NPS_PYBULLET_GUI&quot; value=&quot;TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NPS_PYBULLET_ACTUATORS_ORDER&quot; value=&quot;{3, 2, 1, 0}&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NPS_PYBULLET_MODULE&quot; value=&quot;simple_quad_sim&quot; type=&quot;string&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NPS_PYBULLET_URDF&quot; value=&quot;robobee.urdf&quot; type=&quot;string&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -110,11 +110,11 @@ Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>PYTHON_EXEC</code> <b>value:</b> <em>python3</em> <br  />
+<li><b>name:</b> <code>NPS_PYTHON_EXEC</code> <b>value:</b> <em>python3</em> <br  />
  Description: python executable to use. Can be a /path/to/venv/python3</li>
-<li><b>name:</b> <code>PYBULLET_GUI</code> <b>value:</b> <em>TRUE</em> <br  />
+<li><b>name:</b> <code>NPS_PYBULLET_GUI</code> <b>value:</b> <em>TRUE</em> <br  />
  Description: start pybullet Gui</li>
-<li><b>name:</b> <code>NPS_ACTUATORS_ORDER</code> <b>value:</b> <em>{3, 2, 1, 0}</em> <br  />
+<li><b>name:</b> <code>NPS_PYBULLET_ACTUATORS_ORDER</code> <b>value:</b> <em>{3, 2, 1, 0}</em> <br  />
  Description: set actuators URDF indexes</li>
 <li><b>name:</b> <code>NPS_PYBULLET_MODULE</code> <b>value:</b> <em><a class="el" href="namespacesimple__quad__sim.html">simple_quad_sim</a></em> <br  />
  Description: python module for your pybullet model</li>
@@ -137,9 +137,9 @@ Raw fdm_pybullet.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">PyBullet</span> <span class="keyword">based</span> <span class="keyword">FDM</span> <span class="keyword">for</span> <span class="keyword">NPS</span> <span class="keyword">simulator</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PYTHON_EXEC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;python3&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;python executable to use. Can be a /path/to/venv/python3&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PYBULLET_GUI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;start pybullet Gui&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_ACTUATORS_ORDER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{3, 2, 1, 0}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set actuators URDF indexes&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_PYTHON_EXEC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;python3&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;python executable to use. Can be a /path/to/venv/python3&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_PYBULLET_GUI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;start pybullet Gui&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_PYBULLET_ACTUATORS_ORDER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{3, 2, 1, 0}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set actuators URDF indexes&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_PYBULLET_MODULE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;simple_quad_sim&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;python module for your pybullet model&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_PYBULLET_URDF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;robobee.urdf&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;URDF vehicle model&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
@@ -161,7 +161,7 @@ Raw fdm_pybullet.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Nov 2 2026 09:45:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 2 2026 10:42:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
