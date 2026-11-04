@@ -2,12 +2,17 @@
 <area shape="rect" id="Node000001" title="Configure stage 3 for both MiPi and HiSPi connection." alt="" coords="5,31,169,56"/>
 <area shape="rect" id="Node000002" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="217,31,300,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,41,204,41,204,46,170,46"/>
-<area shape="rect" id="Node000003" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="348,31,513,56"/>
+<area shape="rect" id="Node000003" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="348,31,449,56"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,41,334,41,334,46,300,46"/>
-<area shape="rect" id="Node000004" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="561,31,716,56"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="514,41,548,41,548,46,514,46"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="811,5,904,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="716,32,797,22,798,28,716,37"/>
-<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="764,55,951,80"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="716,49,751,53,750,58,716,54"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="497,5,676,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="449,34,483,29,484,35,450,39"/>
+<area shape="rect" id="Node000008" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="504,55,669,80"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="450,47,491,52,490,58,449,52"/>
+<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="724,31,879,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="676,26,710,30,710,35,676,31"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="973,5,1067,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="879,32,960,22,960,28,879,37"/>
+<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="927,55,1113,80"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="879,49,913,53,913,58,879,54"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="669,55,710,51,711,56,670,61"/>
 </map>

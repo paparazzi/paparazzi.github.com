@@ -1,5 +1,9 @@
 var NAVTREEINDEX165 =
 {
+"onboard_modules.html#modules_category_mission":[1,0,29],
+"onboard_modules.html#modules_category_multi":[1,0,30],
+"onboard_modules.html#modules_category_nav":[1,0,31],
+"onboard_modules.html#modules_category_oneloop":[1,0,32],
 "onboard_modules.html#modules_category_optical_flow":[1,0,33],
 "onboard_modules.html#modules_category_orange_avoider":[1,0,34],
 "onboard_modules.html#modules_category_radio_control":[1,0,35],
@@ -245,9 +249,5 @@ var NAVTREEINDEX165 =
 "oneloop__andi_8h.html#a4a1b35fd5f840f123d7fddc0920de4e9":[12,0,1,0,3,2,1,1,58],
 "oneloop__andi_8h.html#a51856ce2c16bf83a66868f87746201d3":[12,0,1,0,3,2,1,1,56],
 "oneloop__andi_8h.html#a534838907113fdde7c5524c0eee03930":[12,0,1,0,3,2,1,1,76],
-"oneloop__andi_8h.html#a59705312c9ea588b7bc8716841563831":[12,0,1,0,3,2,1,1,41],
-"oneloop__andi_8h.html#a5cec0ccee0a4f7c2536dbf56c7d53f70":[12,0,1,0,3,2,1,1,63],
-"oneloop__andi_8h.html#a5d455df14ff0d81bf7fc5f4110c3d653":[12,0,1,0,3,2,1,1,57],
-"oneloop__andi_8h.html#a5ec1df5803052366c74bf249a48130f1":[12,0,1,0,3,2,1,1,17],
-"oneloop__andi_8h.html#a5ec1df5803052366c74bf249a48130f1":[12,0,1,0,3,2,1,1,16]
+"oneloop__andi_8h.html#a59705312c9ea588b7bc8716841563831":[12,0,1,0,3,2,1,1,41]
 };
