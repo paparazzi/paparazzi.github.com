@@ -1,5 +1,17 @@
 var NAVTREEINDEX164 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#aea50a21db71009ebc7951180dc0d29ea":[12,0,1,0,1,15,0,1,189],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#aeadb80a063dd3d4975ca3947a18ff995":[12,0,1,0,1,15,0,1,144],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#aede2afbb11fd84b6db4e101664b4b722":[12,0,1,0,1,15,0,1,30],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af105fbdfb7b9076472b373ed0c7b3fef":[12,0,1,0,1,15,0,1,240],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af1635e93ba4b8de905dfc7558fc043a3":[12,0,1,0,1,15,0,1,137],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af1ebeaa7aa7da2abc838900d137f12f0":[12,0,1,0,1,15,0,1,122],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af3d2dbb7435d0de2baadcd664c05f831":[12,0,1,0,1,15,0,1,129],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af5b90aa25bf3e77b9d01407df04bbddc":[12,0,1,0,1,15,0,1,264],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af5e7dd5c5bd6b91423c84da0f38b7821":[12,0,1,0,1,15,0,1,27],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af80e6c340ebc738f24275329c32db853":[12,0,1,0,1,15,0,1,273],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af81da62faf264fb17ffee32d730d4b9d":[12,0,1,0,1,15,0,1,198],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#af9be48d9e825a860764b4a928124f046":[12,0,1,0,1,15,0,1,183],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afb98861d06d9f4145f01c9d4d0fa09dd":[12,0,1,0,1,15,0,1,258],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56":[12,0,1,0,1,15,0,1,93],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#afc0d8281959c0da081d7df2d9df16701":[12,0,1,0,1,15,0,1,301],
@@ -237,17 +249,5 @@ var NAVTREEINDEX164 =
 "onboard_modules.html#modules_category_digital_cam":[1,0,14],
 "onboard_modules.html#modules_category_energy":[1,0,15],
 "onboard_modules.html#modules_category_fdm":[1,0,16],
-"onboard_modules.html#modules_category_gpio_ext":[1,0,17],
-"onboard_modules.html#modules_category_gps":[1,0,18],
-"onboard_modules.html#modules_category_guidance":[1,0,19],
-"onboard_modules.html#modules_category_helicopter":[1,0,20],
-"onboard_modules.html#modules_category_imu":[1,0,21],
-"onboard_modules.html#modules_category_ins":[1,0,22],
-"onboard_modules.html#modules_category_intermcu":[1,0,23],
-"onboard_modules.html#modules_category_lidar":[1,0,24],
-"onboard_modules.html#modules_category_light":[1,0,25],
-"onboard_modules.html#modules_category_loggers":[1,0,26],
-"onboard_modules.html#modules_category_mcu_periph":[1,0,27],
-"onboard_modules.html#modules_category_meteo":[1,0,28],
-"onboard_modules.html#modules_category_misc":[1,0,44]
+"onboard_modules.html#modules_category_gpio_ext":[1,0,17]
 };

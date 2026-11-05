@@ -1,5 +1,17 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_spi_link.html#module_xml__logger_spi_link":[1,280,2,0],
+"module__logger_uart.html":[1,281],
+"module__logger_uart.html#configuration__logger_uart":[1,281,1],
+"module__logger_uart.html#functions__logger_uart":[1,281,2],
+"module__logger_uart.html#module_load_example__logger_uart":[1,281,0],
+"module__logger_uart.html#module_xml__logger_uart":[1,281,2,0],
+"module__logger_utils.html":[1,282],
+"module__logger_utils.html#module_load_example__logger_utils":[1,282,0],
+"module__logger_utils.html#module_xml__logger_utils":[1,282,0,0],
+"module__mag_calib_ukf.html":[1,516],
+"module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,516,1],
+"module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,516,2],
 "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,516,0],
 "module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,516,2,0],
 "module__mag_hmc5843.html":[1,432],
@@ -237,17 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,366,0],
 "module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,366,0,0],
 "module__nav_survey_rectangle_rotorcraft.html":[1,367],
-"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,367,1],
-"module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,367,2],
-"module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft":[1,367,0],
-"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,367,2,0],
-"module__nav_survey_zamboni.html":[1,368],
-"module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni":[1,368,0],
-"module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni":[1,368,0,0],
-"module__nav_takeoff_and_landing.html":[1,369],
-"module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing":[1,369,1],
-"module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing":[1,369,2],
-"module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,369,0],
-"module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,369,2,0],
-"module__nav_trinity.html":[1,370]
+"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,367,1]
 };

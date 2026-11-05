@@ -1,5 +1,17 @@
 var NAVTREEINDEX165 =
 {
+"onboard_modules.html#modules_category_gps":[1,0,18],
+"onboard_modules.html#modules_category_guidance":[1,0,19],
+"onboard_modules.html#modules_category_helicopter":[1,0,20],
+"onboard_modules.html#modules_category_imu":[1,0,21],
+"onboard_modules.html#modules_category_ins":[1,0,22],
+"onboard_modules.html#modules_category_intermcu":[1,0,23],
+"onboard_modules.html#modules_category_lidar":[1,0,24],
+"onboard_modules.html#modules_category_light":[1,0,25],
+"onboard_modules.html#modules_category_loggers":[1,0,26],
+"onboard_modules.html#modules_category_mcu_periph":[1,0,27],
+"onboard_modules.html#modules_category_meteo":[1,0,28],
+"onboard_modules.html#modules_category_misc":[1,0,44],
 "onboard_modules.html#modules_category_mission":[1,0,29],
 "onboard_modules.html#modules_category_multi":[1,0,30],
 "onboard_modules.html#modules_category_nav":[1,0,31],
@@ -237,17 +249,5 @@ var NAVTREEINDEX165 =
 "oneloop__andi_8h.html#a2179243fed077775d133c5fc8e130639":[12,0,1,0,3,2,1,1,53],
 "oneloop__andi_8h.html#a220bb859f2933240f886cccc7394368a":[12,0,1,0,3,2,1,1,48],
 "oneloop__andi_8h.html#a2a570f6e547821d329abdf88fa2f43f2":[12,0,1,0,3,2,1,1,42],
-"oneloop__andi_8h.html#a2f546110bdf79f4c9b22a67d17c9296d":[12,0,1,0,3,2,1,1,69],
-"oneloop__andi_8h.html#a352f06b221e04ab07375357a9eae29db":[12,0,1,0,3,2,1,1,46],
-"oneloop__andi_8h.html#a3d68f4cda03f5178fcf94c5e68e38167":[12,0,1,0,3,2,1,1,22],
-"oneloop__andi_8h.html#a3e00714dced57249b69845c43d853e71":[12,0,1,0,3,2,1,1,61],
-"oneloop__andi_8h.html#a3f474a7f94552dbca56145dfe5f2df5d":[12,0,1,0,3,2,1,1,52],
-"oneloop__andi_8h.html#a410282f6636e9807befe44fcf71fc0bd":[12,0,1,0,3,2,1,1,75],
-"oneloop__andi_8h.html#a4884f2dc59f0811158b84ca27f35af7f":[12,0,1,0,3,2,1,1,20],
-"oneloop__andi_8h.html#a49da723a2c45a72ee57117e3d51d1339":[12,0,1,0,3,2,1,1,23],
-"oneloop__andi_8h.html#a49f9b412e252c6010068271f84abc50a":[12,0,1,0,3,2,1,1,40],
-"oneloop__andi_8h.html#a4a1b35fd5f840f123d7fddc0920de4e9":[12,0,1,0,3,2,1,1,58],
-"oneloop__andi_8h.html#a51856ce2c16bf83a66868f87746201d3":[12,0,1,0,3,2,1,1,56],
-"oneloop__andi_8h.html#a534838907113fdde7c5524c0eee03930":[12,0,1,0,3,2,1,1,76],
-"oneloop__andi_8h.html#a59705312c9ea588b7bc8716841563831":[12,0,1,0,3,2,1,1,41]
+"oneloop__andi_8h.html#a2f546110bdf79f4c9b22a67d17c9296d":[12,0,1,0,3,2,1,1,69]
 };

@@ -1,5 +1,17 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_nps.html#module_xml__imu_nps":[1,231,1,0],
+"module__imu_pixhawk6x.html":[1,232],
+"module__imu_pixhawk6x.html#configuration__imu_pixhawk6x":[1,232,1],
+"module__imu_pixhawk6x.html#functions__imu_pixhawk6x":[1,232,2],
+"module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x":[1,232,0],
+"module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x":[1,232,2,0],
+"module__imu_px4fmu_v1_7.html":[1,233],
+"module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,233,1],
+"module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,233,2],
+"module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7":[1,233,0],
+"module__imu_px4fmu_v1_7.html#module_xml__imu_px4fmu_v1":[1,233,2,0],
+"module__imu_px4fmu_v2_4.html":[1,234],
 "module__imu_px4fmu_v2_4.html#configuration__imu_px4fmu_v2_4":[1,234,1],
 "module__imu_px4fmu_v2_4.html#functions__imu_px4fmu_v2_4":[1,234,2],
 "module__imu_px4fmu_v2_4.html#module_load_example__imu_px4fmu_v2_4":[1,234,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX136 =
 "module__logger_spi_link.html":[1,280],
 "module__logger_spi_link.html#configuration__logger_spi_link":[1,280,1],
 "module__logger_spi_link.html#functions__logger_spi_link":[1,280,2],
-"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,280,0],
-"module__logger_spi_link.html#module_xml__logger_spi_link":[1,280,2,0],
-"module__logger_uart.html":[1,281],
-"module__logger_uart.html#configuration__logger_uart":[1,281,1],
-"module__logger_uart.html#functions__logger_uart":[1,281,2],
-"module__logger_uart.html#module_load_example__logger_uart":[1,281,0],
-"module__logger_uart.html#module_xml__logger_uart":[1,281,2,0],
-"module__logger_utils.html":[1,282],
-"module__logger_utils.html#module_load_example__logger_utils":[1,282,0],
-"module__logger_utils.html#module_xml__logger_utils":[1,282,0,0],
-"module__mag_calib_ukf.html":[1,516],
-"module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,516,1],
-"module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,516,2]
+"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,280,0]
 };

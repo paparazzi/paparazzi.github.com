@@ -142,6 +142,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#RLFILTER">RLFILTER (ID 48)</a></li>
 <li class="level2"><a href="#WP_MOVED_ENU">WP_MOVED_ENU (ID 49)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS_">WINDTURBINE_STATUS_ (ID 50)</a></li>
+<li class="level2"><a href="#LINK_STATS">LINK_STATS (ID 51)</a></li>
 <li class="level2"><a href="#MPPT">MPPT (ID 52)</a></li>
 <li class="level2"><a href="#DEBUG_VECT">DEBUG_VECT (ID 53)</a></li>
 <li class="level2"><a href="#AIRSPEED">AIRSPEED (ID 54)</a></li>
@@ -903,6 +904,10 @@ DATALINK_REPORT (ID 30)</h2>
 <td class="markdownTableBodyNone">uplink_rate   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">msgs/s   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">downlink_ovrn   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">uplink_err   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uplink frames rejected by the parser (bad checksum or length, includes uplink_ovrn), wraps at 256    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uplink_ovrn   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uplink frames dropped because the previous one was not handled yet, wraps at 256   </td></tr>
 </table>
 <h2><a class="anchor" id="DL_VALUE"></a>
 DL_VALUE (ID 31)</h2>
@@ -1236,6 +1241,53 @@ WINDTURBINE_STATUS_ (ID 50)</h2>
 <td class="markdownTableBodyNone">sync_itow   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cycle_time   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="LINK_STATS"></a>
+LINK_STATS (ID 51)</h2>
+<p>Frame statistics of one node on the datalink path of an aircraft (autopilot, router, radio bridge), sent with the aircraft id as sender. Down is towards the ground: down_rx is received from the aircraft side, down_tx sent to the ground side, up the reverse. Counters are cumulative and wrap at 65536.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">hop   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Place of the node on the path, counted from the autopilot (0: autopilot, 1: next node, ...)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uptime   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone">Time since the node started (a restart resets the counters)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">down_rx   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Downlink frames received    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">down_rx_err   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Downlink frames rejected (bad checksum or length)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">down_tx   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Downlink frames sent    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">down_tx_err   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Downlink frames that could not be sent    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">up_rx   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uplink frames received    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">up_rx_err   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uplink frames rejected (bad checksum or length)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">up_tx   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uplink frames sent    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">up_tx_err   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Uplink frames that could not be sent    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">down_max_gap   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone">Longest time without a downlink frame since the previous report    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">up_max_gap   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone">Longest time without an uplink frame since the previous report    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nb_peers   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Peers known on the ground side (e.g. GCS computers found by a router)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dropped   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Frames not forwarded on purpose (e.g. uplink for another aircraft)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">rssi   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">dBm   </td><td class="markdownTableBodyNone">Signal of the node's link towards the ground, 127 if not available    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">down_rx_bytes   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Bytes of the downlink frames received (wraps)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">up_rx_bytes   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Bytes of the uplink frames received (wraps)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">rssi_ac   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">dBm   </td><td class="markdownTableBodyNone">Signal of the node's link towards the aircraft, 127 if not available    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">battery   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">%   </td><td class="markdownTableBodyNone">Battery charge of the node, 255 if it has no battery    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">temperature   </td><td class="markdownTableBodyNone">int8   </td><td class="markdownTableBodyNone">deg_celsius   </td><td class="markdownTableBodyNone">Temperature of the node, 127 if not available   </td></tr>
 </table>
 <h2><a class="anchor" id="MPPT"></a>
 MPPT (ID 52)</h2>
@@ -6793,6 +6845,14 @@ LINK_REPORT (ID 36)</h2>
 <td class="markdownTableBodyNone">tx_msgs   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ping_time   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">tx_err   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Messages to this aircraft that could not be sent    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">peer   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Address the uplink to this aircraft is sent to (ip:port), none if not UDP    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">rx_max_gap   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone">Longest time without a frame from this aircraft since the previous report    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tx_bytes   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Bytes of the frames sent to this aircraft   </td></tr>
 </table>
 <h2><a class="anchor" id="INTRUDER"></a>
 INTRUDER (ID 37)</h2>
@@ -7194,7 +7254,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 5 2026 16:31:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 17:33:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

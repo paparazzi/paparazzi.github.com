@@ -1,9 +1,12 @@
 var viewvideo_8c =
 [
+    [ "VIEWVIDEO_AUTO_HOST", "viewvideo_8c.html#a68982ac9808c90fcd31c2ea2939d6a88", null ],
     [ "VIEWVIDEO_DOWNSIZE_FACTOR", "viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e", null ],
     [ "VIEWVIDEO_FPS", "viewvideo_8c.html#af5bc53c462010c8d8a9198b0177a87f7", null ],
     [ "VIEWVIDEO_NICE_LEVEL", "viewvideo_8c.html#a5e885fbf76b284dd4286dfcd4512e422", null ],
     [ "VIEWVIDEO_QUALITY_FACTOR", "viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3", null ],
+    [ "VIEWVIDEO_SOCKET_BROADCAST", "viewvideo_8c.html#a23131182e86eb904bd89ab1a6ebd8001", null ],
+    [ "VIEWVIDEO_SOCKET_HOST", "viewvideo_8c.html#aed56c09ca26674e47663d5861f3ca0eb", null ],
     [ "VIEWVIDEO_USE_NETCAT", "viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27", null ],
     [ "VIEWVIDEO_USE_RTP", "viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0", null ],
     [ "viewvideo_function", "viewvideo_8c.html#a039dda8322a14ef1a03cba29f91a5ca0", null ],

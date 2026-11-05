@@ -131,12 +131,64 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2udp__arch_8h.html'
 Functions</h2></td></tr>
 <tr class="memitem:a665732768aad2a0f4b0a396d96485cc2" id="r_a665732768aad2a0f4b0a396d96485cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2udp__arch_8h.html#a665732768aad2a0f4b0a396d96485cc2">udp_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a665732768aad2a0f4b0a396d96485cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be35a8b5d4506ed8be6f018dcef46e4" id="r_a4be35a8b5d4506ed8be6f018dcef46e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2udp__arch_8h.html#a4be35a8b5d4506ed8be6f018dcef46e4">udp_arch_auto_gcs</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">in_addr</a> *addr, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> max)</td></tr>
+<tr class="memdesc:a4be35a8b5d4506ed8be6f018dcef46e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCS computers found by the UDP links with host "auto" (see udp_arch.c), e.g.  <br /></td></tr>
+<tr class="separator:a4be35a8b5d4506ed8be6f018dcef46e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>linux UDP handling </p>
 
 <p class="definition">Definition in file <a class="el" href="linux_2mcu__periph_2udp__arch_8h_source.html">udp_arch.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a4be35a8b5d4506ed8be6f018dcef46e4" name="a4be35a8b5d4506ed8be6f018dcef46e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be35a8b5d4506ed8be6f018dcef46e4">&#9670;&#160;</a></span>udp_arch_auto_gcs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> udp_arch_auto_gcs </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">in_addr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GCS computers found by the UDP links with host "auto" (see udp_arch.c), e.g. </p>
+<p>to send video to them too. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">addr</td><td>IP addresses of the GCS computers (each address once) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>size of addr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of addresses (0: no GCS found, or no link with host "auto")</dd></dl>
+<p>GCS computers found by the UDP links with host "auto" (see udp_arch.c), e.g. </p>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00174">174</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+
+</div>
+</div>
 <a id="a665732768aad2a0f4b0a396d96485cc2" name="a665732768aad2a0f4b0a396d96485cc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a665732768aad2a0f4b0a396d96485cc2">&#9670;&#160;</a></span>udp_arch_init()</h2>
 
@@ -161,7 +213,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00043">43</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00213">213</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
 </div>
 </div>
@@ -171,7 +223,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2udp__arch_8h.html">udp_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 16:31:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 17:33:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

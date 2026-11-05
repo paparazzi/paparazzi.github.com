@@ -120,7 +120,7 @@ Configure Options</h2>
 <li><b>name:</b> <code>VIEWVIDEO_USE_NETCAT</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: Use netcat for transferring images instead of RTP stream (default: FALSE)</li>
 <li><b>name:</b> <code>VIEWVIDEO_HOST</code> <b>value:</b> <em>192.168.1.255</em> <br  />
- Description: GCS IP (default: MODEM_HOST)</li>
+ Description: GCS IP (default: MODEM_HOST), or auto: to every GCS found by a telemetry link with MODEM_HOST=auto, broadcast when there is none</li>
 <li><b>name:</b> <code>VIEWVIDEO_PORT_OUT</code> <b>value:</b> <em>5000</em> <br  />
  Description: Port (default: 5000)</li>
 <li><b>name:</b> <code>VIEWVIDEO_PORT2_OUT</code> <b>value:</b> <em>6000</em> <br  />
@@ -178,7 +178,7 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line">      <span class="keyword">Sends</span> <span class="keyword">a</span> <span class="keyword">RTP</span>/<span class="keyword">UDP</span> <span class="keyword">stream</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">camera</span> <span class="keyword">image</span>, <span class="keyword">a.k.a.</span> <span class="keyword">live</span> <span class="keyword">video</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;VIEWVIDEO_USE_NETCAT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Use netcat for transferring images instead of RTP stream (default: FALSE)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;VIEWVIDEO_HOST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;192.168.1.255&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GCS IP (default: MODEM_HOST)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;VIEWVIDEO_HOST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;192.168.1.255&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GCS IP (default: MODEM_HOST), or auto: to every GCS found by a telemetry link with MODEM_HOST=auto, broadcast when there is none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;VIEWVIDEO_PORT_OUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5000&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Port (default: 5000)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;VIEWVIDEO_PORT2_OUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;6000&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Port (default: 6000)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;VIEWVIDEO_BROADCAST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable broadcast of image stream (default: TRUE)&quot;</span>/&gt;</div>
@@ -224,6 +224,9 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line">      <span class="keyword">VIEWVIDEO_USE_NETCAT</span>  ?= <span class="keyword">FALSE</span></div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">VIEWVID_CFLAGS</span>  = -<span class="keyword">DVIEWVIDEO_HOST</span>=$(<span class="keyword">VIEWVIDEO_HOST</span>) -<span class="keyword">DVIEWVIDEO_PORT_OUT</span>=$(<span class="keyword">VIEWVIDEO_PORT_OUT</span>) -<span class="keyword">DVIEWVIDEO_PORT2_OUT</span>=$(<span class="keyword">VIEWVIDEO_PORT2_OUT</span>)</div>
+<div class="line">      <span class="keyword">ifeq</span> ($(<span class="keyword">VIEWVIDEO_HOST</span>),<span class="keyword">auto</span>)</div>
+<div class="line">        <span class="keyword">VIEWVID_CFLAGS</span> += -<span class="keyword">DVIEWVIDEO_AUTO_HOST</span>=1</div>
+<div class="line">      <span class="keyword">endif</span></div>
 <div class="line">      <span class="keyword">ifneq</span> (,$(<span class="keyword">findstring</span> $(<span class="keyword">VIEWVIDEO_USE_NETCAT</span>),0 <span class="keyword">FALSE</span>))</div>
 <div class="line">        <span class="keyword">ap.CFLAGS</span> += $(<span class="keyword">VIEWVID_CFLAGS</span>) -<span class="keyword">DVIEWVIDEO_BROADCAST</span>=$(<span class="keyword">VIEWVIDEO_BROADCAST</span>)</div>
 <div class="line">        <span class="keyword">nps.CFLAGS</span> += $(<span class="keyword">VIEWVID_CFLAGS</span>) -<span class="keyword">DVIEWVIDEO_BROADCAST</span>=<span class="keyword">FALSE</span></div>
@@ -241,7 +244,7 @@ Raw video_rtp_stream.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 16:31:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 17:33:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

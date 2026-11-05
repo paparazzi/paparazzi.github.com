@@ -1162,6 +1162,8 @@ var annotated_dup =
     [ "uavcan_node_mapping_t", "uavcan__allocator_8h.html#structuavcan__node__mapping__t", "uavcan__allocator_8h_structuavcan__node__mapping__t" ],
     [ "uavcan_unique_id_t", "uavcan__allocator_8h.html#structuavcan__unique__id__t", "uavcan__allocator_8h_structuavcan__unique__id__t" ],
     [ "udp_periph", "udp_8h.html#structudp__periph", "udp_8h_structudp__periph" ],
+    [ "UdpArch", "sim_2mcu__periph_2udp__arch_8c.html#structUdpArch", "sim_2mcu__periph_2udp__arch_8c_structUdpArch" ],
+    [ "UdpAuto", "sim_2mcu__periph_2udp__arch_8c.html#structUdpAuto", "sim_2mcu__periph_2udp__arch_8c_structUdpAuto" ],
     [ "UdpSocket", "udp__socket_8h.html#structUdpSocket", "udp__socket_8h_structUdpSocket" ],
     [ "Uint16Vect3", "group__math__algebra__int.html#structUint16Vect3", "group__math__algebra__int_structUint16Vect3" ],
     [ "Uint8Vect3", "group__math__algebra__int.html#structUint8Vect3", "group__math__algebra__int_structUint8Vect3" ],

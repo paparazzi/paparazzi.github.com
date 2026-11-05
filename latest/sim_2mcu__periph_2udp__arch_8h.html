@@ -128,8 +128,88 @@ $(document).ready(function(){initNavTree('sim_2mcu__periph_2udp__arch_8h.html','
 Functions</h2></td></tr>
 <tr class="memitem:a665732768aad2a0f4b0a396d96485cc2" id="r_a665732768aad2a0f4b0a396d96485cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8h.html#a665732768aad2a0f4b0a396d96485cc2">udp_arch_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:a665732768aad2a0f4b0a396d96485cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be35a8b5d4506ed8be6f018dcef46e4" id="r_a4be35a8b5d4506ed8be6f018dcef46e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8h.html#a4be35a8b5d4506ed8be6f018dcef46e4">udp_arch_auto_gcs</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">in_addr</a> *addr, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> max)</td></tr>
+<tr class="memdesc:a4be35a8b5d4506ed8be6f018dcef46e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCS computers found by the UDP links with host "auto" (see udp_arch.c), e.g.  <br /></td></tr>
+<tr class="separator:a4be35a8b5d4506ed8be6f018dcef46e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4be35a8b5d4506ed8be6f018dcef46e4" name="a4be35a8b5d4506ed8be6f018dcef46e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be35a8b5d4506ed8be6f018dcef46e4">&#9670;&#160;</a></span>udp_arch_auto_gcs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> udp_arch_auto_gcs </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">in_addr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GCS computers found by the UDP links with host "auto" (see udp_arch.c), e.g. </p>
+<p>to send video to them too. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">addr</td><td>IP addresses of the GCS computers (each address once) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>size of addr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of addresses (0: no GCS found, or no link with host "auto")</dd></dl>
+<p>GCS computers found by the UDP links with host "auto" (see udp_arch.c), e.g. </p>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00174">174</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00076">UdpArch::au</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00065">UdpAuto::gcs</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00058">UDP_AUTO_GCS_TIMEOUT_MS</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00056">UDP_AUTO_MAX_GCS</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00046">udp_mutex</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00079">udp_time_ms()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="viewvideo_8c_source.html#l00130">viewvideo_function()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_cgraph.png" border="0" usemap="#asim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_cgraph" alt=""/></div>
+<map name="asim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_cgraph" id="asim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_cgraph">
+<area shape="rect" title="GCS computers found by the UDP links with host &quot;auto&quot; (see udp_arch.c), e.g." alt="" coords="5,5,152,31"/>
+<area shape="rect" href="linux_2mcu__periph_2udp__arch_8c.html#a764ba4e5e2459cf93252dcba1117e77d" title=" " alt="" coords="200,5,311,31"/>
+<area shape="poly" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_icgraph.png" border="0" usemap="#asim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_icgraph" alt=""/></div>
+<map name="asim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_icgraph" id="asim_2mcu__periph_2udp__arch_8h_a4be35a8b5d4506ed8be6f018dcef46e4_icgraph">
+<area shape="rect" title="GCS computers found by the UDP links with host &quot;auto&quot; (see udp_arch.c), e.g." alt="" coords="203,5,349,31"/>
+<area shape="rect" href="viewvideo_8c.html#a039dda8322a14ef1a03cba29f91a5ca0" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="5,5,155,31"/>
+<area shape="poly" title=" " alt="" coords="189,21,155,21,155,15,189,15"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a665732768aad2a0f4b0a396d96485cc2" name="a665732768aad2a0f4b0a396d96485cc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a665732768aad2a0f4b0a396d96485cc2">&#9670;&#160;</a></span>udp_arch_init()</h2>
 
@@ -154,16 +234,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00043">43</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00213">213</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00041">udp_mutex</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00182">udp_thread()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00046">udp_mutex</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00370">udp_thread()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00104">mcu_init()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_cgraph.png" border="0" usemap="#asim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_cgraph" alt=""/></div>
 <map name="asim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_cgraph" id="asim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,115,56"/>
@@ -173,15 +253,19 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="257,33,296,26,297,31,258,38"/>
 <area shape="rect" href="linux_2mcu__periph_2udp__arch_8c.html#a23264d73f7cf6197c139bf6841da1ee2" title="Read bytes from UDP." alt="" coords="305,55,407,80"/>
 <area shape="poly" title=" " alt="" coords="258,48,292,54,291,59,257,54"/>
-<area shape="rect" href="linux_2mcu__periph_2udp__arch_8c.html#abe7eab267c8597508d18b8449b3407a5" title="Get number of bytes available in receive buffer." alt="" coords="455,55,603,80"/>
-<area shape="poly" title=" " alt="" coords="407,65,441,65,441,70,407,70"/>
+<area shape="rect" href="linux_2mcu__periph_2udp__arch_8c.html#a2f5511b3e67c9a71c8d71b76471552f9" title="Remember the sender of a datagram as a GCS (called with the udp mutex)" alt="" coords="455,29,604,55"/>
+<area shape="poly" title=" " alt="" coords="406,57,441,52,442,58,407,63"/>
+<area shape="rect" href="linux_2mcu__periph_2udp__arch_8c.html#abe7eab267c8597508d18b8449b3407a5" title="Get number of bytes available in receive buffer." alt="" coords="455,79,603,104"/>
+<area shape="poly" title=" " alt="" coords="407,72,442,77,441,82,406,77"/>
+<area shape="rect" href="linux_2mcu__periph_2udp__arch_8c.html#a764ba4e5e2459cf93252dcba1117e77d" title=" " alt="" coords="652,29,763,55"/>
+<area shape="poly" title=" " alt="" coords="604,39,638,39,638,45,604,45"/>
 </map>
 </div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_icgraph.png" border="0" usemap="#asim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_icgraph" alt=""/></div>
 <map name="asim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_icgraph" id="asim_2mcu__periph_2udp__arch_8h_a665732768aad2a0f4b0a396d96485cc2_icgraph">
 <area shape="rect" title=" " alt="" coords="365,179,475,204"/>
@@ -228,7 +312,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_f11394bd39850f137cd76d3a3707cb70.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sim_2mcu__periph_2udp__arch_8h.html">udp_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 16:31:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 17:33:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

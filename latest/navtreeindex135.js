@@ -1,5 +1,17 @@
 var NAVTREEINDEX135 =
 {
+"module__guidance_indi_hybrid_quadplane.html#module_load_example__guidance_indi_hybrid_quadplane":[1,189,0],
+"module__guidance_indi_hybrid_quadplane.html#module_xml__guidance_indi_hybrid_quadplane":[1,189,1,0],
+"module__guidance_indi_hybrid_tailsitter.html":[1,190],
+"module__guidance_indi_hybrid_tailsitter.html#module_load_example__guidance_indi_hybrid_tailsitter":[1,190,0],
+"module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter":[1,190,0,0],
+"module__guidance_indi_quadrotor.html":[1,191],
+"module__guidance_indi_quadrotor.html#module_load_example__guidance_indi_quadrotor":[1,191,0],
+"module__guidance_indi_quadrotor.html#module_xml__guidance_indi_quadrotor":[1,191,0,0],
+"module__guidance_oneloop.html":[1,192],
+"module__guidance_oneloop.html#module_load_example__guidance_oneloop":[1,192,0],
+"module__guidance_oneloop.html#module_xml__guidance_oneloop":[1,192,0,0],
+"module__guidance_oneloop_nb.html":[1,193],
 "module__guidance_oneloop_nb.html#module_load_example__guidance_oneloop_nb":[1,193,0],
 "module__guidance_oneloop_nb.html#module_xml__guidance_oneloop_nb":[1,193,0,0],
 "module__guidance_pid_rotorcraft.html":[1,194],
@@ -237,17 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi":[1,230,2,0],
 "module__imu_nps.html":[1,231],
 "module__imu_nps.html#functions__imu_nps":[1,231,1],
-"module__imu_nps.html#module_load_example__imu_nps":[1,231,0],
-"module__imu_nps.html#module_xml__imu_nps":[1,231,1,0],
-"module__imu_pixhawk6x.html":[1,232],
-"module__imu_pixhawk6x.html#configuration__imu_pixhawk6x":[1,232,1],
-"module__imu_pixhawk6x.html#functions__imu_pixhawk6x":[1,232,2],
-"module__imu_pixhawk6x.html#module_load_example__imu_pixhawk6x":[1,232,0],
-"module__imu_pixhawk6x.html#module_xml__imu_pixhawk6x":[1,232,2,0],
-"module__imu_px4fmu_v1_7.html":[1,233],
-"module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,233,1],
-"module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,233,2],
-"module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7":[1,233,0],
-"module__imu_px4fmu_v1_7.html#module_xml__imu_px4fmu_v1":[1,233,2,0],
-"module__imu_px4fmu_v2_4.html":[1,234]
+"module__imu_nps.html#module_load_example__imu_nps":[1,231,0]
 };

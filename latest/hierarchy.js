@@ -1150,6 +1150,8 @@ var hierarchy =
     [ "uavcan_node_mapping_t", "uavcan__allocator_8h.html#structuavcan__node__mapping__t", null ],
     [ "uavcan_unique_id_t", "uavcan__allocator_8h.html#structuavcan__unique__id__t", null ],
     [ "udp_periph", "udp_8h.html#structudp__periph", null ],
+    [ "UdpArch", "sim_2mcu__periph_2udp__arch_8c.html#structUdpArch", null ],
+    [ "UdpAuto", "sim_2mcu__periph_2udp__arch_8c.html#structUdpAuto", null ],
     [ "UdpSocket", "udp__socket_8h.html#structUdpSocket", null ],
     [ "Uint16Vect3", "group__math__algebra__int.html#structUint16Vect3", null ],
     [ "Uint8Vect3", "group__math__algebra__int.html#structUint8Vect3", null ],

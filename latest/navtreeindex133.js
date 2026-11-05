@@ -1,5 +1,17 @@
 var NAVTREEINDEX133 =
 {
+"module__copilot.html#datalink_functions__copilot":[1,322,2],
+"module__copilot.html#functions__copilot":[1,322,1],
+"module__copilot.html#module_load_example__copilot":[1,322,0],
+"module__copilot.html#module_xml__copilot":[1,322,2,0],
+"module__ctrl_module_innerloop_demo.html":[1,92],
+"module__ctrl_module_innerloop_demo.html#functions__ctrl_module_innerloop_demo":[1,92,1],
+"module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,92,0],
+"module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo":[1,92,1,0],
+"module__ctrl_module_outerloop_demo.html":[1,93],
+"module__ctrl_module_outerloop_demo.html#functions__ctrl_module_outerloop_demo":[1,93,1],
+"module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,93,0],
+"module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,93,1,0],
 "module__ctrl_windtunnel.html":[1,94],
 "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,94,1],
 "module__ctrl_windtunnel.html#functions__ctrl_windtunnel":[1,94,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX133 =
 "module__extra_dl.html#functions__extra_dl":[1,113,2],
 "module__extra_dl.html#module_load_example__extra_dl":[1,113,0],
 "module__extra_dl.html#module_xml__extra_dl":[1,113,2,0],
-"module__ezcurrent.html":[1,429],
-"module__ezcurrent.html#configuration__ezcurrent":[1,429,1],
-"module__ezcurrent.html#functions__ezcurrent":[1,429,2],
-"module__ezcurrent.html#module_load_example__ezcurrent":[1,429,0],
-"module__ezcurrent.html#module_xml__ezcurrent":[1,429,2,0],
-"module__fbw_datalink.html":[1,114],
-"module__fbw_datalink.html#configuration__fbw_datalink":[1,114,1],
-"module__fbw_datalink.html#module_load_example__fbw_datalink":[1,114,0],
-"module__fbw_datalink.html#module_xml__fbw_datalink":[1,114,1,0],
-"module__fc_rotor.html":[1,502],
-"module__fc_rotor.html#datalink_functions__fc_rotor":[1,502,2],
-"module__fc_rotor.html#functions__fc_rotor":[1,502,1],
-"module__fc_rotor.html#module_load_example__fc_rotor":[1,502,0]
+"module__ezcurrent.html":[1,429]
 };

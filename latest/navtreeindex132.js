@@ -1,5 +1,17 @@
 var NAVTREEINDEX132 =
 {
+"module__airspeed_otf.html#module_xml__airspeed_otf":[1,406,2,0],
+"module__airspeed_sdp3x.html":[1,407],
+"module__airspeed_sdp3x.html#configuration__airspeed_sdp3x":[1,407,1],
+"module__airspeed_sdp3x.html#functions__airspeed_sdp3x":[1,407,2],
+"module__airspeed_sdp3x.html#module_load_example__airspeed_sdp3x":[1,407,0],
+"module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x":[1,407,2,0],
+"module__airspeed_uadc.html":[1,408],
+"module__airspeed_uadc.html#configuration__airspeed_uadc":[1,408,1],
+"module__airspeed_uadc.html#functions__airspeed_uadc":[1,408,2],
+"module__airspeed_uadc.html#module_load_example__airspeed_uadc":[1,408,0],
+"module__airspeed_uadc.html#module_xml__airspeed_uadc":[1,408,2,0],
+"module__airspeed_uavcan.html":[1,409],
 "module__airspeed_uavcan.html#configuration__airspeed_uavcan":[1,409,1],
 "module__airspeed_uavcan.html#functions__airspeed_uavcan":[1,409,2],
 "module__airspeed_uavcan.html#module_load_example__airspeed_uavcan":[1,409,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX132 =
 "module__control_new.html":[1,79],
 "module__control_new.html#module_load_example__control_new":[1,79,0],
 "module__control_new.html#module_xml__control_new":[1,79,0,0],
-"module__copilot.html":[1,322],
-"module__copilot.html#datalink_functions__copilot":[1,322,2],
-"module__copilot.html#functions__copilot":[1,322,1],
-"module__copilot.html#module_load_example__copilot":[1,322,0],
-"module__copilot.html#module_xml__copilot":[1,322,2,0],
-"module__ctrl_module_innerloop_demo.html":[1,92],
-"module__ctrl_module_innerloop_demo.html#functions__ctrl_module_innerloop_demo":[1,92,1],
-"module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,92,0],
-"module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo":[1,92,1,0],
-"module__ctrl_module_outerloop_demo.html":[1,93],
-"module__ctrl_module_outerloop_demo.html#functions__ctrl_module_outerloop_demo":[1,93,1],
-"module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,93,0],
-"module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,93,1,0]
+"module__copilot.html":[1,322]
 };
