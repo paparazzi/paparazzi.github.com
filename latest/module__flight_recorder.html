@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('module__flight_recorder.html',''); ini
 <div class="contents">
 <div class="textblock"><p><b>Record flight data according to your telemetry file.</b></p>
 <p><b></b></p>
-<p>Data are stored on a SD card with the pprzlog format. Currently only supported on Apogee/Fixedwing using chibios implementation. The selected telemetry file should include a FlightRecorder process.</p>
+<p>Data are stored on a SD card with the pprzlog format. Supported on ChibiOS boards, Linux based autopilots (Bebop, ...) and in NPS simulation. The selected telemetry file should include a FlightRecorder process.</p>
 <h1><a class="anchor" id="module_load_example__flight_recorder"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;flight_recorder&quot;</span>&gt;</div>
@@ -164,7 +164,7 @@ Raw flight_recorder.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Record</span> <span class="keyword">flight</span> <span class="keyword">data</span> <span class="keyword">according</span> <span class="keyword">to</span> <span class="keyword">your</span> <span class="keyword">telemetry</span> <span class="keyword">file.</span></div>
 <div class="line">      <span class="keyword">Data</span> <span class="keyword">are</span> <span class="keyword">stored</span> <span class="keyword">on</span> <span class="keyword">a</span> <span class="keyword">SD</span> <span class="keyword">card</span> <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">pprzlog</span> <span class="keyword">format.</span></div>
-<div class="line">      <span class="keyword">Currently</span> <span class="keyword">only</span> <span class="keyword">supported</span> <span class="keyword">on</span> <span class="keyword">Apogee</span>/<span class="keyword">Fixedwing</span> <span class="keyword">using</span> <span class="keyword">chibios</span> <span class="keyword">implementation.</span></div>
+<div class="line">      <span class="keyword">Supported</span> <span class="keyword">on</span> <span class="keyword">ChibiOS</span> <span class="keyword">boards</span>, <span class="keyword">Linux</span> <span class="keyword">based</span> <span class="keyword">autopilots</span> (<span class="keyword">Bebop</span>, ...) <span class="keyword">and</span> <span class="keyword">in</span> <span class="keyword">NPS</span> <span class="keyword">simulation.</span></div>
 <div class="line">      <span class="keyword">The</span> <span class="keyword">selected</span> <span class="keyword">telemetry</span> <span class="keyword">file</span> <span class="keyword">should</span> <span class="keyword">include</span> <span class="keyword">a</span> <span class="keyword">FlightRecorder</span> <span class="keyword">process.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FLIGHTRECORDER_SDLOG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable/disable logging on internal SD card (default=TRUE)&quot;</span>/&gt;</div>
@@ -180,7 +180,7 @@ Raw flight_recorder.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;flight_recorder_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;flight_recorder_periodic()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;INFO_MSG_UP&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;flight_recorder_log_msg_up(buf)&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;flight_recorder.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FLIGHTRECORDER_SDLOG&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq (FALSE,$(findstring $(FLIGHTRECORDER_SDLOG),FALSE))&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TELEMETRY_FREQUENCY&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(PERIODIC_FREQUENCY)&quot;</span>/&gt;</div>
@@ -195,7 +195,7 @@ Raw flight_recorder.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 13:19:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 16:31:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

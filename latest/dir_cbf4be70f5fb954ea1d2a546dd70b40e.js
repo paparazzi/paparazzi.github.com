@@ -24,6 +24,8 @@ var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
     [ "pprzlog_tp.h", "pprzlog__tp_8h.html", "pprzlog__tp_8h" ],
     [ "sdlog_chibios.c", "sdlog__chibios_8c.html", "sdlog__chibios_8c" ],
     [ "sdlog_chibios.h", "sdlog__chibios_8h.html", "sdlog__chibios_8h" ],
+    [ "sdlog_linux.c", "sdlog__linux_8c.html", "sdlog__linux_8c" ],
+    [ "sdlog_linux.h", "sdlog__linux_8h.html", "sdlog__linux_8h" ],
     [ "sdlogger_spi_direct.c", "sdlogger__spi__direct_8c.html", "sdlogger__spi__direct_8c" ],
     [ "sdlogger_spi_direct.h", "sdlogger__spi__direct_8h.html", "sdlogger__spi__direct_8h" ]
 ];

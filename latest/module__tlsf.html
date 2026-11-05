@@ -144,10 +144,10 @@ Raw tlsf.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TLSF_MAX_FLI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;16&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;limit buffer size to 2^TLSF_MAX_FLI (e.g. 64Ko for MAX_FLI of 16&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tlsf_malloc.h&quot;</span> /&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tlsf_malloc.h&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;USE_CHIBIOS_RTOS&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;tlsf_init_heaps()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;tlsf_init_heaps()&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;USE_CHIBIOS_RTOS&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), chibios)&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TLSF_MAX_FLI&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;16&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_FLI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TLSF_MAX_FLI)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tlsf_malloc_arch.c&quot;</span>/&gt;</div>
@@ -162,7 +162,7 @@ Raw tlsf.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 13:19:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 16:31:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

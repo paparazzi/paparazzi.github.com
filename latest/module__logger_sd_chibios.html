@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('module__logger_sd_chibios.html',''); i
 <div class="textblock"><p><b>Log on a SD card, either text or binary data.</b></p>
 <p><b></b></p>
 <p>Based on ChibiOS HAL and Threads. If board allows it (ex: Apogee), the log file is automatically closed on power down. Files are written on a FAT file system using the FatFS library and can be accessed by using the autopilot as a mass storage (plug USB while the board is running).</p>
+<p>On Linux based autopilots (Bebop, ...) and in NPS simulation the same logs are written as files in SDLOG_DIR, with the same layout as on the SD card (PPRZ/pprzlog_0001.LOG and FLIGHT_RECORDER/fr_0001.LOG), so they can be converted with sd2log. In simulation the default directory is $PAPARAZZI_HOME/var/logs/sdlog/AIRCRAFT_NAME.</p>
 <h1><a class="anchor" id="module_load_example__logger_sd_chibios"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;logger_sd_chibios&quot;</span>&gt;</div>
@@ -104,9 +105,10 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; value=&quot;10&quot; unit=&quot;s&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; value=&quot;50&quot; unit=&quot;Mo&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_PREFLIGHT_ERROR&quot; value=&quot;FALSE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_ENABLE_LOWBAT_FLUSH&quot; value=&quot;TRUE&quot; /&gt;\n  &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SDLOG_SDIO&quot; value=&quot;SDCDx&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SDLOG_ENABLE_LOWBAT_FLUSH&quot; value=&quot;TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span>&#39;&lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_DIR&quot;</span> <span class="keyword">value</span>=&quot;&amp;<span class="keyword">quot</span>;/<span class="keyword">path</span>&amp;<span class="keyword">quot</span>;<span class="stringliteral">&quot; /&gt;\n  &#39;</span></div>
+<div class="line"><span class="stringliteral">  b&#39;&lt;configure name=&quot;</span><span class="keyword">SDLOG_SDIO</span><span class="stringliteral">&quot; value=&quot;</span><span class="keyword">SDCDx</span><span class="stringliteral">&quot; /&gt;\n    &#39;</span></div>
+<div class="line"><span class="stringliteral">  b&#39;&lt;configure name=&quot;</span><span class="keyword">SDLOG_LED</span><span class="stringliteral">&quot; value=&quot;</span><span class="keyword">none</span>|<span class="keyword">num</span>&quot; /&gt;\<span class="keyword">n</span>    &#39;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__logger_sd_chibios"></a>
 Module configuration options</h1>
@@ -122,15 +124,17 @@ Configure Options</h2>
 Define Options</h2>
 <ul>
 <li><b>name:</b> <code>SDLOG_START_DELAY</code> <b>value:</b> <em>30</em> <br  />
- Description: Set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s</li>
+ Description: ChibiOS only: set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s</li>
 <li><b>name:</b> <code>SDLOG_AUTO_FLUSH_PERIOD</code> <b>value:</b> <em>10</em> <br  />
- Description: Data flush period. Shorter period may decrease performances. Default: 10s</li>
+ Description: Data flush period. Shorter period may decrease performances. Default: 10s (1s in simulation)</li>
 <li><b>name:</b> <code>SDLOG_CONTIGUOUS_STORAGE_MEM</code> <b>value:</b> <em>50</em> <br  />
  Description: Try to reserve a given contiguous mass storage memory. Default: 50Mo</li>
 <li><b>name:</b> <code>SDLOG_PREFLIGHT_ERROR</code> <b>value:</b> <em>FALSE</em> <br  />
  Description: If set to TRUE, the autopilot will not arm if the SDLogger is not running. Default: FALSE</li>
 <li><b>name:</b> <code>SDLOG_ENABLE_LOWBAT_FLUSH</code> <b>value:</b> <em>TRUE</em> <br  />
  Description: If set to TRUE or undefined, the autopilot will flush the buffer on detecting low voltage by ADC.</li>
+<li><b>name:</b> <code>SDLOG_DIR</code> <b>value:</b> <em>"/path"</em> <br  />
+ Description: Linux/NPS only: directory of the log files. Default: /data/ftp/internal_000/sdlog on Linux, $PAPARAZZI_HOME/var/logs/sdlog/AIRCRAFT_NAME in simulation</li>
 </ul>
 <h1><a class="anchor" id="functions__logger_sd_chibios"></a>
 Module functions</h1>
@@ -164,6 +168,8 @@ Source Files</h2>
 <li><a class="el" href="printf_8c.html">modules/loggers/sdlog_chibios/printf.c</a></li>
 <li><a class="el" href="usb__msd_8c.html">modules/loggers/sdlog_chibios/usb_msd.c</a></li>
 <li><a class="el" href="usbStorage_8c.html">modules/loggers/sdlog_chibios/usbStorage.c</a></li>
+<li><a class="el" href="sdlog__linux_8c.html">modules/loggers/sdlog_linux.c</a></li>
+<li><a class="el" href="sdlog__linux_8c.html">modules/loggers/sdlog_linux.c</a></li>
 <li><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">arch</a> dependent: <a class="el" href="sdio__arch_8c.html" title="SDIO interface using ChibiOS API for Paparazzi.">mcu_periph/sdio_arch.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__logger_sd_chibios"></a>
@@ -178,57 +184,69 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">      <span class="keyword">If</span> <span class="keyword">board</span> <span class="keyword">allows</span> <span class="keyword">it</span> (<span class="keyword">ex:</span> <span class="keyword">Apogee</span>), <span class="keyword">the</span> <span class="keyword">log</span> <span class="keyword">file</span> <span class="keyword">is</span> <span class="keyword">automatically</span> <span class="keyword">closed</span> <span class="keyword">on</span> <span class="keyword">power</span> <span class="keyword">down.</span></div>
 <div class="line">      <span class="keyword">Files</span> <span class="keyword">are</span> <span class="keyword">written</span> <span class="keyword">on</span> <span class="keyword">a</span> <span class="keyword">FAT</span> <span class="keyword">file</span> <span class="keyword">system</span> <span class="keyword">using</span> <span class="keyword">the</span> <span class="keyword">FatFS</span> <span class="keyword">library</span> <span class="keyword">and</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">accessed</span></div>
 <div class="line">      <span class="keyword">by</span> <span class="keyword">using</span> <span class="keyword">the</span> <span class="keyword">autopilot</span> <span class="keyword">as</span> <span class="keyword">a</span> <span class="keyword">mass</span> <span class="keyword">storage</span> (<span class="keyword">plug</span> <span class="keyword">USB</span> <span class="keyword">while</span> <span class="keyword">the</span> <span class="keyword">board</span> <span class="keyword">is</span> <span class="keyword">running</span>).</div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">On</span> <span class="keyword">Linux</span> <span class="keyword">based</span> <span class="keyword">autopilots</span> (<span class="keyword">Bebop</span>, ...) <span class="keyword">and</span> <span class="keyword">in</span> <span class="keyword">NPS</span> <span class="keyword">simulation</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">logs</span> <span class="keyword">are</span> <span class="keyword">written</span></div>
+<div class="line">      <span class="keyword">as</span> <span class="keyword">files</span> <span class="keyword">in</span> <span class="keyword">SDLOG_DIR</span>, <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">layout</span> <span class="keyword">as</span> <span class="keyword">on</span> <span class="keyword">the</span> <span class="keyword">SD</span> <span class="keyword">card</span> (<span class="keyword">PPRZ</span>/<span class="keyword">pprzlog_0001.LOG</span> <span class="keyword">and</span></div>
+<div class="line">      <span class="keyword">FLIGHT_RECORDER</span>/<span class="keyword">fr_0001.LOG</span>), <span class="keyword">so</span> <span class="keyword">they</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">converted</span> <span class="keyword">with</span> <span class="keyword">sd2log.</span></div>
+<div class="line">      <span class="keyword">In</span> <span class="keyword">simulation</span> <span class="keyword">the</span> <span class="keyword">default</span> <span class="keyword">directory</span> <span class="keyword">is</span> $<span class="keyword">PAPARAZZI_HOME</span>/<span class="keyword">var</span>/<span class="keyword">logs</span>/<span class="keyword">sdlog</span>/<span class="keyword">AIRCRAFT_NAME.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_SDIO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SDCDx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The SDC device which the SD card is connected to. Default: SDCD1&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none|num&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number or &#39;none&#39; to disable. Default: none&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_START_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;30&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_AUTO_FLUSH_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Data flush period. Shorter period may decrease performances. Default: 10s&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_START_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;30&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ChibiOS only: set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_AUTO_FLUSH_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Data flush period. Shorter period may decrease performances. Default: 10s (1s in simulation)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;Mo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Try to reserve a given contiguous mass storage memory. Default: 50Mo&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_PREFLIGHT_ERROR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If set to TRUE, the autopilot will not arm if the SDLogger is not running. Default: FALSE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_ENABLE_LOWBAT_FLUSH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If set to TRUE or undefined, the autopilot will flush the buffer on detecting low voltage by ADC.&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">   &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USB storage&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;usb_storage_status&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;USB Storage&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;enable_usb_storage&quot;</span> <span class="keyword">header</span>=<span class="stringliteral">&quot;loggers/sdlog_chibios/usbStorage&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;OFF|ON&quot;</span>/&gt;</div>
-<div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">tlsf</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios.h&quot;</span> /&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;sdlog_chibios_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;INFO_MSG_UP&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;logger_log_msg_up(buf)&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
-<div class="line">    <span class="comment">&lt;!-- LED --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SDLOG_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(SDLOG_LED),none)&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- SDMMC device --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_SDIO&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SDCD1&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_SDIO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SDLOG_SDIO_UPPER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FATFS_HAL_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SDLOG_SDIO_UPPER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SDLOG_SDIO_UPPER)&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- Files --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/sdLog.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/msg_queue.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/sdLog.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/printf.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/usb_msd.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdlog_chibios/usbStorage.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sdio_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- Configuration --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_USE_RTC&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_FATFS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;HAL_USE_RTC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq (,$(findstring $(SDLOG_USE_RTC),0 FALSE))&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;HAL_USE_SDC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;HAL_USE_USB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SDLOG_DIR&quot;</span> <span class="keyword">value</span>=&quot;&amp;<span class="keyword">quot</span>;/<span class="keyword">path</span>&amp;<span class="keyword">quot</span>;<span class="stringliteral">&quot; description=&quot;</span><span class="keyword">Linux</span>/<span class="keyword">NPS</span> <span class="keyword">only:</span> <span class="keyword">directory</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">log</span> <span class="keyword">files.</span> <span class="keyword">Default:</span> /<span class="keyword">data</span>/<span class="keyword">ftp</span>/<span class="keyword">internal_000</span>/<span class="keyword">sdlog</span> <span class="keyword">on</span> <span class="keyword">Linux</span>, $<span class="keyword">PAPARAZZI_HOME</span>/<span class="keyword">var</span>/<span class="keyword">logs</span>/<span class="keyword">sdlog</span>/<span class="keyword">AIRCRAFT_NAME</span> <span class="keyword">in</span> <span class="keyword">simulation</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;/doc&gt;</span></div>
+<div class="line"><span class="stringliteral">   &lt;settings&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;dl_settings&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;dl_settings name=&quot;</span><span class="keyword">USB</span> <span class="keyword">storage</span><span class="stringliteral">&quot;&gt;</span></div>
+<div class="line"><span class="stringliteral">        &lt;dl_setting max=&quot;</span>1<span class="stringliteral">&quot; min=&quot;</span>0<span class="stringliteral">&quot; step=&quot;</span>1<span class="stringliteral">&quot; var=&quot;</span><span class="keyword">usb_storage_status</span><span class="stringliteral">&quot; shortname=&quot;</span><span class="keyword">USB</span> <span class="keyword">Storage</span><span class="stringliteral">&quot; handler=&quot;</span><span class="keyword">enable_usb_storage</span><span class="stringliteral">&quot; header=&quot;</span><span class="keyword">loggers</span>/<span class="keyword">sdlog_chibios</span>/<span class="keyword">usbStorage</span><span class="stringliteral">&quot; values=&quot;</span><span class="keyword">OFF</span>|<span class="keyword">ON</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;/dl_settings&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;/dl_settings&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;/settings&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;dep&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;depends&gt;tlsf&lt;/depends&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;/dep&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;header&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios.h</span><span class="stringliteral">&quot; /&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;/header&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;init fun=&quot;</span><span class="keyword">sdlog_chibios_init</span>()<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;datalink message=&quot;</span><span class="keyword">INFO_MSG_UP</span><span class="stringliteral">&quot; fun=&quot;</span><span class="keyword">logger_log_msg_up</span>(<span class="keyword">buf</span>)<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;makefile target=&quot;</span><span class="keyword">ap</span><span class="stringliteral">&quot; cond=&quot;</span><span class="keyword">ifeq</span> ($(<span class="keyword">ARCH</span>), <span class="keyword">chibios</span>)<span class="stringliteral">&quot;&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;!-- LED --&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;configure name=&quot;</span><span class="keyword">SDLOG_LED</span><span class="stringliteral">&quot; default=&quot;</span><span class="keyword">none</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">SDLOG_LED</span><span class="stringliteral">&quot; value=&quot;</span>$(<span class="keyword">SDLOG_LED</span>)<span class="stringliteral">&quot; cond=&quot;</span><span class="keyword">ifneq</span> ($(<span class="keyword">SDLOG_LED</span>),<span class="keyword">none</span>)<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">    &lt;!-- SDMMC device --&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;configure name=&quot;</span><span class="keyword">SDLOG_SDIO</span><span class="stringliteral">&quot; default=&quot;</span><span class="keyword">SDCD1</span><span class="stringliteral">&quot; case=&quot;</span><span class="keyword">upper</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">SDLOG_SDIO</span><span class="stringliteral">&quot; value=&quot;</span>$(<span class="keyword">SDLOG_SDIO_UPPER</span>)<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">FATFS_HAL_DEVICE</span><span class="stringliteral">&quot; value=&quot;</span>$(<span class="keyword">SDLOG_SDIO_UPPER</span>)<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">USE_</span>$(<span class="keyword">SDLOG_SDIO_UPPER</span>)<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">    &lt;!-- Files --&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios</span>/<span class="keyword">sdLog.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios</span>/<span class="keyword">msg_queue.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios</span>/<span class="keyword">sdLog.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios</span>/<span class="keyword">printf.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios</span>/<span class="keyword">usb_msd.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_chibios</span>/<span class="keyword">usbStorage.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file_arch name=&quot;</span><span class="keyword">sdio_arch.c</span><span class="stringliteral">&quot; dir=&quot;</span><span class="keyword">mcu_periph</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">    &lt;!-- Configuration --&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;configure name=&quot;</span><span class="keyword">SDLOG_USE_RTC</span><span class="stringliteral">&quot; default=&quot;</span><span class="keyword">TRUE</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;configure name=&quot;</span><span class="keyword">USE_FATFS</span><span class="stringliteral">&quot; value=&quot;</span><span class="keyword">TRUE</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">HAL_USE_RTC</span><span class="stringliteral">&quot; value=&quot;</span><span class="keyword">TRUE</span><span class="stringliteral">&quot; cond=&quot;</span><span class="keyword">ifeq</span> (,$(<span class="keyword">findstring</span> $(<span class="keyword">SDLOG_USE_RTC</span>),0 <span class="keyword">FALSE</span>))<span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">HAL_USE_SDC</span><span class="stringliteral">&quot; value=&quot;</span><span class="keyword">TRUE</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;define name=&quot;</span><span class="keyword">HAL_USE_USB</span><span class="stringliteral">&quot; value=&quot;</span><span class="keyword">TRUE</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;/makefile&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;makefile target=&quot;</span><span class="keyword">ap</span><span class="stringliteral">&quot; cond=&quot;</span><span class="keyword">ifeq</span> ($(<span class="keyword">ARCH</span>), <span class="keyword">linux</span>)<span class="stringliteral">&quot;&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_linux.c</span><span class="stringliteral">&quot;/&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;/makefile&gt;</span></div>
+<div class="line"><span class="stringliteral">  &lt;makefile target=&quot;</span><span class="keyword">nps</span><span class="stringliteral">&quot;&gt;</span></div>
+<div class="line"><span class="stringliteral">    &lt;file name=&quot;</span><span class="keyword">sdlog_linux.c</span>&quot;/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -238,7 +256,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 13:19:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 16:31:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

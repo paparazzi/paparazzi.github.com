@@ -1,110 +1,106 @@
 <map id="sdlog_chibios_init" name="sdlog_chibios_init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,277,144,303"/>
-<area shape="rect" id="Node000002" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="204,179,383,204"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,275,134,244,191,213,211,205,213,210,193,218,137,248,93,279"/>
-<area shape="rect" id="Node000003" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,228,395,253"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,275,222,254,224,259,132,280"/>
-<area shape="rect" id="Node000004" href="$sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102" title=" " alt="" coords="222,277,365,303"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,287,208,287,208,293,144,293"/>
-<area shape="rect" id="Node000005" href="$sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title=" " alt="" coords="243,327,343,352"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="132,300,230,323,229,328,131,305"/>
-<area shape="rect" id="Node000023" href="$usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title=" " alt="" coords="208,449,379,475"/>
-<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="94,301,267,438,263,443,91,305"/>
-<area shape="rect" id="Node000006" href="$sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure" alt="" coords="457,179,596,204"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="343,329,369,322,393,312,427,290,458,263,505,213,509,217,461,267,430,294,396,316,371,327,345,335"/>
-<area shape="rect" id="Node000013" href="$group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="483,301,570,327"/>
-<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="343,331,469,317,470,323,344,337"/>
-<area shape="rect" id="Node000017" href="$sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd" alt="" coords="455,351,599,376"/>
-<area shape="poly" id="edge16_Node000005_Node000017" title=" " alt="" coords="344,342,442,352,441,357,343,347"/>
-<area shape="rect" id="Node000018" href="$sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog" alt="" coords="486,400,567,425"/>
-<area shape="poly" id="edge17_Node000005_Node000018" title=" " alt="" coords="334,350,443,385,474,394,472,399,442,390,333,355"/>
-<area shape="rect" id="Node000022" href="$usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title=" " alt="" coords="443,129,611,155"/>
-<area shape="poly" id="edge21_Node000005_Node000022" title=" " alt="" coords="343,334,370,327,393,312,407,295,414,277,416,240,419,202,426,183,441,164,446,160,449,164,445,168,431,186,424,203,422,240,419,278,411,297,396,316,372,331,344,339"/>
-<area shape="rect" id="Node000007" href="$sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690" title=" " alt="" coords="692,203,835,228"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="597,196,679,204,678,209,596,201"/>
-<area shape="rect" id="Node000008" href="$sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title=" " alt="" coords="710,252,817,277"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="561,202,659,237,697,247,696,252,658,242,559,207"/>
-<area shape="rect" id="Node000009" href="$sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title=" " alt="" coords="673,5,853,31"/>
-<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="590,176,609,164,621,149,628,134,632,103,636,71,643,55,657,40,663,36,666,40,660,44,648,58,641,73,637,104,633,136,626,152,612,168,593,181"/>
-<area shape="rect" id="Node000010" href="$sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title=" " alt="" coords="716,55,811,80"/>
-<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="587,176,609,164,625,146,632,127,640,108,657,89,679,78,702,71,703,76,681,83,660,93,644,111,637,129,629,149,612,168,589,181"/>
-<area shape="rect" id="Node000011" href="$sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title=" " alt="" coords="704,104,823,129"/>
-<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="574,176,610,164,633,151,658,138,690,128,691,133,660,143,636,155,612,168,576,181"/>
-<area shape="rect" id="Node000012" href="$sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title=" " alt="" coords="681,153,845,179"/>
-<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="596,181,667,174,668,179,597,187"/>
-<area shape="rect" id="Node000014" href="$group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="712,301,815,327"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="570,311,698,311,698,317,570,317"/>
-<area shape="rect" id="Node000015" href="$group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="958,301,1005,327"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="815,311,945,311,945,317,815,317"/>
-<area shape="rect" id="Node000016" href="$group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="1101,294,1251,334"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1005,311,1088,311,1088,317,1005,317"/>
-<area shape="rect" id="Node000019" href="$msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="704,351,823,376"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="567,402,690,376,691,381,568,407"/>
-<area shape="rect" id="Node000020" href="$sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="710,449,817,475"/>
-<area shape="poly" id="edge19_Node000018_Node000020" title=" " alt="" coords="568,418,697,446,696,451,567,424"/>
-<area shape="rect" id="Node000021" href="$sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="700,400,827,425"/>
-<area shape="poly" id="edge20_Node000018_Node000021" title=" " alt="" coords="568,410,686,410,686,415,568,415"/>
-<area shape="rect" id="Node000024" href="$usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title=" " alt="" coords="467,576,586,601"/>
-<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="319,473,492,567,489,572,317,477"/>
-<area shape="poly" id="edge56_Node000024_Node000020" title=" " alt="" coords="539,574,588,529,621,505,658,484,695,470,697,475,660,488,624,509,591,534,542,578"/>
-<area shape="rect" id="Node000025" href="$usb__msd_8c.html#af6995e11a18decb9478ad798000d60ca" title=" " alt="" coords="694,712,833,737"/>
-<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="541,600,589,648,623,675,660,698,682,707,680,712,657,703,620,680,586,652,537,604"/>
-<area shape="rect" id="Node000027" href="$usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title=" " alt="" coords="702,761,825,787"/>
-<area shape="poly" id="edge26_Node000024_Node000027" title=" " alt="" coords="537,600,554,631,582,671,617,713,660,748,690,761,688,766,657,752,614,717,577,674,550,634,532,603"/>
-<area shape="rect" id="Node000051" href="$group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa" title="Reboot the MCU." alt="" coords="714,499,813,524"/>
-<area shape="poly" id="edge52_Node000024_Node000051" title=" " alt="" coords="556,573,658,534,700,522,701,527,660,539,558,578"/>
-<area shape="rect" id="Node000053" href="$usb__msd_8c.html#a9ad360964cf29c17ffda4847ea88c2f3" title="register connected event source in local event mask" alt="" coords="659,548,868,573"/>
-<area shape="poly" id="edge54_Node000024_Node000053" title=" " alt="" coords="586,579,645,572,645,577,587,584"/>
-<area shape="rect" id="Node000054" href="$main__chibios_8c.html#ab187dc37cfd9ba19180b8d99905dd2e3" title="Terminate all autopilot threads Wait until proper stop." alt="" coords="670,598,857,638"/>
-<area shape="poly" id="edge55_Node000024_Node000054" title=" " alt="" coords="587,593,657,602,656,607,586,599"/>
-<area shape="rect" id="Node000055" href="$sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title=" " alt="" coords="687,663,839,688"/>
-<area shape="poly" id="edge57_Node000024_Node000055" title=" " alt="" coords="553,599,601,623,660,647,689,657,687,662,658,653,599,628,550,604"/>
-<area shape="rect" id="Node000026" href="$usb__msd_8c.html#aaa1c1d04bba912b3ae2b6806f8ed4fdc" title="Stops a USB mass storage driver." alt="" coords="942,712,1021,737"/>
-<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="833,722,928,722,928,727,833,727"/>
-<area shape="rect" id="Node000028" href="$usb__msd_8c.html#a9030d48fbe74f8689d41984bd08edf51" title="Initializse a USB mass storage driver." alt="" coords="946,761,1017,787"/>
-<area shape="poly" id="edge27_Node000027_Node000028" title=" " alt="" coords="825,771,932,771,932,777,825,777"/>
-<area shape="rect" id="Node000030" href="$usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver." alt="" coords="941,811,1022,836"/>
-<area shape="poly" id="edge29_Node000027_Node000030" title=" " alt="" coords="821,784,928,809,926,814,820,789"/>
-<area shape="rect" id="Node000029" href="$usb__msd_8c.html#a218498e8fe29b8470ad71b25f61ca783" title=" " alt="" coords="1111,761,1241,787"/>
-<area shape="poly" id="edge28_Node000028_Node000029" title=" " alt="" coords="1017,771,1097,771,1097,777,1017,777"/>
-<area shape="rect" id="Node000031" href="$usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="Mass storage thread that processes commands." alt="" coords="1095,811,1257,836"/>
-<area shape="poly" id="edge30_Node000030_Node000031" title=" " alt="" coords="1022,821,1081,821,1081,826,1022,826"/>
-<area shape="rect" id="Node000032" href="$usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block." alt="" coords="1305,635,1505,660"/>
-<area shape="poly" id="edge31_Node000031_Node000032" title=" " alt="" coords="1232,808,1256,797,1296,768,1332,733,1385,669,1389,673,1336,737,1300,772,1259,802,1234,813"/>
-<area shape="rect" id="Node000035" href="$usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information." alt="" coords="1796,539,1951,564"/>
-<area shape="poly" id="edge49_Node000031_Node000035" title=" " alt="" coords="1240,808,1255,797,1272,777,1281,757,1287,717,1288,673,1293,649,1303,622,1352,508,1394,417,1420,378,1453,341,1496,307,1552,274,1605,251,1652,242,1675,243,1699,249,1749,274,1780,299,1805,330,1825,364,1841,400,1862,470,1872,525,1867,526,1857,471,1836,402,1821,366,1801,333,1776,303,1747,279,1697,254,1674,248,1652,247,1607,256,1555,279,1499,312,1457,345,1424,381,1399,420,1357,510,1308,624,1298,650,1294,674,1292,717,1286,758,1276,780,1259,801,1243,813"/>
-<area shape="rect" id="Node000042" href="$usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called." alt="" coords="1807,873,1940,899"/>
-<area shape="poly" id="edge51_Node000031_Node000042" title=" " alt="" coords="1209,833,1300,866,1433,902,1509,917,1589,926,1669,929,1748,922,1788,913,1827,901,1828,906,1790,918,1748,927,1669,934,1588,931,1508,922,1432,907,1299,871,1207,839"/>
-<area shape="rect" id="Node000050" href="$usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block." alt="" coords="1314,1003,1497,1043"/>
-<area shape="poly" id="edge50_Node000031_Node000050" title=" " alt="" coords="1187,835,1231,904,1266,946,1307,983,1327,995,1325,1000,1304,987,1262,949,1227,907,1182,838"/>
-<area shape="rect" id="Node000033" href="$usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="1555,724,1746,749"/>
-<area shape="poly" id="edge32_Node000032_Node000033" title=" " alt="" coords="1434,658,1489,683,1554,709,1583,718,1581,723,1552,714,1487,688,1432,663"/>
-<area shape="poly" id="edge47_Node000032_Node000035" title=" " alt="" coords="1407,634,1420,585,1447,516,1466,480,1490,445,1518,414,1552,389,1604,365,1650,358,1696,367,1749,389,1789,417,1822,454,1847,492,1864,525,1859,528,1842,495,1818,457,1786,421,1747,394,1695,372,1650,363,1605,370,1555,394,1522,418,1494,448,1471,483,1451,519,1425,587,1412,635"/>
-<area shape="rect" id="Node000037" href="$usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command." alt="" coords="1559,467,1742,507"/>
-<area shape="poly" id="edge34_Node000032_Node000037" title=" " alt="" coords="1416,633,1471,578,1510,545,1552,517,1565,510,1567,515,1555,522,1513,550,1475,582,1420,636"/>
-<area shape="rect" id="Node000038" href="$usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command." alt="" coords="1563,531,1738,571"/>
-<area shape="poly" id="edge35_Node000032_Node000038" title=" " alt="" coords="1433,632,1552,581,1573,573,1575,578,1554,586,1435,637"/>
-<area shape="rect" id="Node000040" href="$usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command." alt="" coords="1563,595,1738,635"/>
-<area shape="poly" id="edge36_Node000032_Node000040" title=" " alt="" coords="1503,632,1549,626,1550,631,1503,637"/>
-<area shape="rect" id="Node000041" href="$usb__msd_8c.html#adcf34e8664fce2f0676aa631a73e53f3" title="Processes a REQUEST_SENSE SCSI command." alt="" coords="1553,838,1748,878"/>
-<area shape="poly" id="edge37_Node000032_Node000041" title=" " alt="" coords="1416,659,1436,692,1467,736,1507,783,1555,824,1564,830,1561,834,1552,828,1504,787,1463,739,1432,695,1411,662"/>
-<area shape="poly" id="edge48_Node000032_Node000042" title=" " alt="" coords="1412,659,1426,706,1453,770,1472,804,1496,836,1523,865,1555,888,1587,902,1621,911,1656,916,1692,917,1760,911,1817,900,1819,905,1760,917,1692,923,1656,921,1620,917,1585,907,1552,892,1519,869,1491,840,1468,807,1449,772,1421,707,1407,661"/>
-<area shape="rect" id="Node000044" href="$usb__msd_8c.html#adde97b16d8281aeca3a016ce27fd4c24" title="Processes a SEND_DIAGNOSTIC SCSI command." alt="" coords="1562,403,1739,443"/>
-<area shape="poly" id="edge39_Node000032_Node000044" title=" " alt="" coords="1411,633,1430,598,1461,549,1502,498,1552,453,1561,447,1564,452,1555,457,1506,502,1465,553,1435,600,1415,636"/>
-<area shape="rect" id="Node000045" href="$usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command." alt="" coords="1563,774,1739,814"/>
-<area shape="poly" id="edge41_Node000032_Node000045" title=" " alt="" coords="1421,658,1477,707,1514,735,1555,760,1568,766,1566,771,1552,764,1511,739,1474,711,1418,662"/>
-<area shape="rect" id="Node000048" href="$usb__msd_8c.html#a9af0f1fa6a97cdd8d2c117fc7671aea0" title="Processes a START_STOP_UNIT SCSI command." alt="" coords="1563,289,1739,329"/>
-<area shape="poly" id="edge44_Node000032_Node000048" title=" " alt="" coords="1407,634,1421,582,1448,505,1468,463,1491,421,1519,381,1552,345,1567,333,1571,338,1555,349,1523,384,1496,423,1472,465,1453,507,1426,583,1412,635"/>
-<area shape="rect" id="Node000049" href="$usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command." alt="" coords="1565,659,1736,699"/>
-<area shape="poly" id="edge45_Node000032_Node000049" title=" " alt="" coords="1503,657,1552,664,1551,669,1503,663"/>
-<area shape="poly" id="edge33_Node000033_Node000035" title=" " alt="" coords="1721,721,1747,709,1783,679,1814,642,1857,575,1862,577,1819,645,1787,682,1749,714,1724,726"/>
-<area shape="poly" id="edge38_Node000041_Node000042" title=" " alt="" coords="1749,868,1793,873,1793,879,1748,873"/>
-<area shape="poly" id="edge40_Node000044_Node000035" title=" " alt="" coords="1723,441,1749,453,1805,490,1850,527,1846,531,1802,494,1747,458,1721,446"/>
-<area shape="poly" id="edge42_Node000045_Node000035" title=" " alt="" coords="1728,772,1746,760,1788,717,1821,666,1845,617,1861,577,1866,579,1850,619,1825,669,1792,720,1750,764,1731,776"/>
-<area shape="poly" id="edge43_Node000045_Node000042" title=" " alt="" coords="1717,812,1749,824,1837,865,1835,869,1747,828,1715,817"/>
-<area shape="poly" id="edge46_Node000049_Node000035" title=" " alt="" coords="1721,657,1747,645,1802,609,1846,572,1850,576,1805,613,1749,650,1723,662"/>
-<area shape="rect" id="Node000052" href="$chibios_2mcu__arch_8c.html#a1296057f718ade4eeb9674b9c3550cb8" title="Put MCU into deep sleep mode." alt="" coords="916,499,1047,524"/>
-<area shape="poly" id="edge53_Node000051_Node000052" title=" " alt="" coords="813,509,902,509,902,514,813,514"/>
-<area shape="rect" id="Node000056" href="$sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem" alt="" coords="932,663,1031,688"/>
-<area shape="poly" id="edge58_Node000055_Node000056" title=" " alt="" coords="839,673,918,673,918,678,839,678"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,480,144,505"/>
+<area shape="rect" id="Node000002" href="$sdlog__linux_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure" alt="" coords="224,155,363,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,478,125,401,190,298,271,189,275,192,194,301,130,404,85,481"/>
+<area shape="rect" id="Node000011" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="948,305,1093,331"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="79,479,93,449,117,410,150,371,169,354,191,341,252,320,336,307,434,299,542,296,759,300,934,309,934,314,758,305,542,301,434,304,336,312,254,325,193,346,172,359,153,375,121,413,98,451,84,481"/>
+<area shape="rect" id="Node000013" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="204,356,383,381"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="85,478,128,435,158,411,191,390,207,383,209,388,193,395,161,415,132,439,89,482"/>
+<area shape="rect" id="Node000014" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,405,395,431"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="101,477,191,439,217,432,219,437,193,445,103,482"/>
+<area shape="rect" id="Node000015" href="$sdlog__linux_8c.html#ac8299efda124ae70cdad4ea8a17abb08" title=" " alt="" coords="242,455,345,480"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="144,482,228,472,229,477,145,487"/>
+<area shape="rect" id="Node000017" href="$sdlog__linux_8c.html#ad1a89a9a0aed7d0f8ade575295f762be" title="Open the next log file in base/dir, returns the descriptor or &#45;1." alt="" coords="245,504,341,529"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="145,498,232,507,232,513,144,503"/>
+<area shape="rect" id="Node000020" href="$sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102" title=" " alt="" coords="222,553,365,579"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="105,503,193,538,223,547,222,552,191,543,103,508"/>
+<area shape="rect" id="Node000023" href="$sdlog__linux_8c.html#a5718683acb8a55505ba1c50c48028102" title=" " alt="" coords="222,603,365,628"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="89,504,132,545,162,568,193,588,212,596,210,601,191,592,159,573,129,549,86,507"/>
+<area shape="rect" id="Node000024" href="$sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title=" " alt="" coords="243,709,343,735"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="87,504,131,564,194,637,230,671,265,699,262,703,227,675,190,641,126,567,83,507"/>
+<area shape="rect" id="Node000042" href="$usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title=" " alt="" coords="208,881,379,907"/>
+<area shape="poly" id="edge44_Node000001_Node000042" title=" " alt="" coords="84,505,126,606,158,675,194,745,237,813,276,869,272,872,233,816,190,747,153,678,121,608,79,507"/>
+<area shape="rect" id="Node000003" href="$sdlog__linux_8c.html#ae827fbce2eaf501bd7097593c7036690" title=" " alt="" coords="471,5,614,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,153,359,98,398,66,441,40,457,33,460,38,444,44,401,71,363,102,308,156"/>
+<area shape="rect" id="Node000004" href="$sdlog__linux_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title=" " alt="" coords="489,55,596,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="314,152,371,121,442,89,475,78,477,83,444,94,373,126,317,157"/>
+<area shape="rect" id="Node000005" href="$sdlog__linux_8c.html#a6e0212194e97b3ce260678d968a368e9" title=" " alt="" coords="453,104,633,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="356,152,466,129,467,135,357,157"/>
+<area shape="rect" id="Node000007" href="$sdlog__linux_8c.html#adfaa7e26bc87caa5431e40c75ba3a13a" title=" " alt="" coords="730,192,861,217"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="363,169,643,190,717,196,716,201,642,195,362,175"/>
+<area shape="rect" id="Node000008" href="$sdlog__linux_8c.html#a78c6e06dd880486b47ce6f0affae31af" title=" " alt="" coords="482,205,603,231"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="357,178,469,200,468,206,356,183"/>
+<area shape="rect" id="Node000009" href="$sdlog__linux_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title=" " alt="" coords="495,255,590,280"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="318,178,374,208,444,240,483,252,481,257,442,244,372,213,315,183"/>
+<area shape="rect" id="Node000006" href="$sdlog__linux_8c.html#a34c8df496ed3bfb2b84bddfb7331bad0" title=" " alt="" coords="979,155,1063,180"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="633,123,965,159,965,164,633,129"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="604,212,716,206,716,211,604,217"/>
+<area shape="rect" id="Node000010" href="$sdlog__linux_8c.html#a54463e3eaef7b3a74b09bf7c3e7493e9" title=" " alt="" coords="747,255,844,280"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="590,265,733,265,733,270,590,270"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="833,252,899,226,983,184,985,189,901,231,835,257"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="845,276,951,300,950,305,844,281"/>
+<area shape="rect" id="Node000012" href="$sdlog__linux_8c.html#a2228c14619046b4abaf1d9eeb0da6f9c" title=" " alt="" coords="949,255,1092,280"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="844,265,936,265,936,270,844,270"/>
+<area shape="rect" id="Node000016" href="$sdlog__linux_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title=" " alt="" coords="467,397,619,423"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="345,453,473,423,474,428,346,458"/>
+<area shape="rect" id="Node000018" href="$sdlog__linux_8c.html#ac0ee0ad51e0e9f6a0b8d57dd1d935a84" title="Create a directory and its parents." alt="" coords="491,447,594,472"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="341,503,477,472,478,477,342,508"/>
+<area shape="rect" id="Node000019" href="$sdlog__linux_8c.html#a9f56d63e10956262c0d6f9b2d92c5bfe" title="Remove the empty logs and get the next free log number." alt="" coords="467,496,618,521"/>
+<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="342,512,453,509,453,514,342,518"/>
+<area shape="rect" id="Node000021" href="$sdlog__linux_8c.html#ab662963b6e696a6ecd406802c176c947" title=" " alt="" coords="443,546,643,586"/>
+<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="365,563,429,563,429,569,365,569"/>
+<area shape="rect" id="Node000022" href="$sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="455,611,630,636"/>
+<area shape="poly" id="edge24_Node000020_Node000022" title=" " alt="" coords="350,576,474,605,473,610,349,581"/>
+<area shape="poly" id="edge38_Node000024_Node000022" title=" " alt="" coords="315,707,371,676,442,645,466,637,468,642,444,650,373,681,317,712"/>
+<area shape="rect" id="Node000025" href="$sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure" alt="" coords="473,660,612,685"/>
+<area shape="poly" id="edge27_Node000024_Node000025" title=" " alt="" coords="343,710,464,685,465,691,344,715"/>
+<area shape="rect" id="Node000032" href="$group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="499,709,586,735"/>
+<area shape="poly" id="edge34_Node000024_Node000032" title=" " alt="" coords="343,719,485,719,485,725,343,725"/>
+<area shape="rect" id="Node000036" href="$sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd" alt="" coords="471,759,615,784"/>
+<area shape="poly" id="edge37_Node000024_Node000036" title=" " alt="" coords="344,729,465,753,464,759,343,734"/>
+<area shape="rect" id="Node000037" href="$sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog" alt="" coords="502,808,583,833"/>
+<area shape="poly" id="edge39_Node000024_Node000037" title=" " alt="" coords="318,732,374,762,444,793,489,807,488,812,442,798,372,767,315,737"/>
+<area shape="rect" id="Node000041" href="$usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title=" " alt="" coords="459,857,627,883"/>
+<area shape="poly" id="edge43_Node000024_Node000041" title=" " alt="" coords="308,733,363,787,401,818,444,844,460,850,457,855,441,848,398,822,359,791,304,737"/>
+<area shape="rect" id="Node000026" href="$sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690" title=" " alt="" coords="724,463,867,488"/>
+<area shape="poly" id="edge28_Node000025_Node000026" title=" " alt="" coords="611,662,627,655,641,645,655,628,662,610,664,573,666,535,674,516,689,497,709,484,712,489,692,501,678,519,671,536,669,573,667,611,659,631,645,649,630,660,613,667"/>
+<area shape="rect" id="Node000027" href="$sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title=" " alt="" coords="742,512,849,537"/>
+<area shape="poly" id="edge29_Node000025_Node000027" title=" " alt="" coords="611,661,641,645,652,634,658,622,664,597,670,572,677,559,689,547,707,535,727,528,729,533,710,540,692,551,681,562,675,574,669,598,663,624,656,637,644,649,614,666"/>
+<area shape="rect" id="Node000028" href="$sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title=" " alt="" coords="705,561,885,587"/>
+<area shape="poly" id="edge30_Node000025_Node000028" title=" " alt="" coords="611,658,641,645,656,633,664,621,674,608,689,596,703,589,705,594,692,600,678,612,669,624,660,637,644,650,613,663"/>
+<area shape="rect" id="Node000029" href="$sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title=" " alt="" coords="748,611,843,636"/>
+<area shape="poly" id="edge31_Node000025_Node000029" title=" " alt="" coords="608,657,734,632,735,638,609,663"/>
+<area shape="rect" id="Node000030" href="$sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title=" " alt="" coords="736,660,855,685"/>
+<area shape="poly" id="edge32_Node000025_Node000030" title=" " alt="" coords="612,670,723,670,723,675,612,675"/>
+<area shape="rect" id="Node000031" href="$sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title=" " alt="" coords="713,709,877,735"/>
+<area shape="poly" id="edge33_Node000025_Node000031" title=" " alt="" coords="609,683,716,704,715,709,608,688"/>
+<area shape="rect" id="Node000033" href="$group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="744,759,847,784"/>
+<area shape="poly" id="edge35_Node000032_Node000033" title=" " alt="" coords="587,728,731,756,730,761,586,733"/>
+<area shape="rect" id="Node000034" href="$group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="997,759,1044,784"/>
+<area shape="poly" id="edge36_Node000033_Node000034" title=" " alt="" coords="847,769,983,769,983,774,847,774"/>
+<area shape="rect" id="Node000038" href="$msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="736,808,855,833"/>
+<area shape="poly" id="edge40_Node000037_Node000038" title=" " alt="" coords="584,818,722,818,722,823,584,823"/>
+<area shape="rect" id="Node000039" href="$sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="742,907,849,932"/>
+<area shape="poly" id="edge41_Node000037_Node000039" title=" " alt="" coords="584,823,614,831,644,844,660,856,669,869,678,882,692,893,730,908,728,913,689,898,674,885,664,872,656,860,641,848,612,836,583,828"/>
+<area shape="rect" id="Node000040" href="$sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="732,857,859,883"/>
+<area shape="poly" id="edge42_Node000037_Node000040" title=" " alt="" coords="584,826,719,852,718,858,583,831"/>
+<area shape="rect" id="Node000043" href="$usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title=" " alt="" coords="483,1029,602,1055"/>
+<area shape="poly" id="edge45_Node000042_Node000043" title=" " alt="" coords="317,905,509,1020,507,1024,315,909"/>
+<area shape="poly" id="edge53_Node000043_Node000039" title=" " alt="" coords="558,1027,613,986,650,962,690,942,728,929,730,934,692,947,653,967,617,990,561,1031"/>
+<area shape="rect" id="Node000044" href="$usb__msd_8c.html#af6995e11a18decb9478ad798000d60ca" title=" " alt="" coords="726,956,865,981"/>
+<area shape="poly" id="edge46_Node000043_Node000044" title=" " alt="" coords="580,1027,690,991,725,982,726,987,691,997,581,1032"/>
+<area shape="rect" id="Node000046" href="$usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title=" " alt="" coords="734,1005,857,1031"/>
+<area shape="poly" id="edge48_Node000043_Node000046" title=" " alt="" coords="602,1034,720,1022,720,1028,603,1039"/>
+<area shape="rect" id="Node000070" href="$group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa" title="Reboot the MCU." alt="" coords="746,1055,845,1080"/>
+<area shape="poly" id="edge50_Node000043_Node000070" title=" " alt="" coords="603,1045,733,1058,732,1064,602,1051"/>
+<area shape="rect" id="Node000072" href="$usb__msd_8c.html#a9ad360964cf29c17ffda4847ea88c2f3" title="register connected event source in local event mask" alt="" coords="691,1104,900,1129"/>
+<area shape="poly" id="edge51_Node000043_Node000072" title=" " alt="" coords="578,1052,691,1090,722,1098,720,1103,690,1095,577,1057"/>
+<area shape="rect" id="Node000073" href="$main__chibios_8c.html#ab187dc37cfd9ba19180b8d99905dd2e3" title="Terminate all autopilot threads Wait until proper stop." alt="" coords="702,1154,889,1194"/>
+<area shape="poly" id="edge52_Node000043_Node000073" title=" " alt="" coords="561,1053,617,1095,692,1140,708,1147,706,1151,689,1144,614,1099,558,1057"/>
+<area shape="rect" id="Node000074" href="$sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title=" " alt="" coords="719,1219,871,1244"/>
+<area shape="poly" id="edge54_Node000043_Node000074" title=" " alt="" coords="554,1054,574,1085,605,1126,645,1168,692,1204,707,1211,705,1216,689,1208,642,1172,601,1129,570,1088,549,1057"/>
+<area shape="rect" id="Node000045" href="$usb__msd_8c.html#aaa1c1d04bba912b3ae2b6806f8ed4fdc" title="Stops a USB mass storage driver." alt="" coords="981,956,1060,981"/>
+<area shape="poly" id="edge47_Node000044_Node000045" title=" " alt="" coords="865,966,967,966,967,971,865,971"/>
+<area shape="rect" id="Node000047" href="$usb__msd_8c.html#a9030d48fbe74f8689d41984bd08edf51" title="Initializse a USB mass storage driver." alt="" coords="985,1005,1056,1031"/>
+<area shape="poly" id="edge49_Node000046_Node000047" title=" " alt="" coords="857,1015,972,1015,972,1021,857,1021"/>
 </map>

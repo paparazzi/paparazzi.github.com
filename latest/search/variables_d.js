@@ -263,7 +263,7 @@ var searchData=
   ['mora_5fprotocol_260',['mora_protocol',['../digital__cam_2catia_2protocol_8h.html#acaa83ca3fc8a7ba7ce56d83ec5abea59',1,'mora_protocol:&#160;protocol.c'],['../protocol_8c.html#acaa83ca3fc8a7ba7ce56d83ec5abea59',1,'mora_protocol:&#160;protocol.c']]],
   ['mora_5fstatus_5fmsg_261',['mora_status_msg',['../uart__cam__ctrl_8c.html#afc483110f6d5502029ec7aeabfeb10ed',1,'uart_cam_ctrl.c']]],
   ['motion_262',['motion',['../vl53l5cx__api_8h.html#abce97afc43aeefa0b9c780b4ce4c41c7',1,'VL53L5CX_ResultsData.motion_indicator']]],
-  ['motion_5findicator_263',['motion_indicator',['../vl53l5cx__api_8h.html#a220589de33b8c366b0a7f8283117ac2d',1,'VL53L5CX_ResultsData']]],
+  ['motion_5findicator_263',['motion_indicator',['../vl53l5cx__api_8h.html#a39b1eb08b372352ff689863d916c5d08',1,'VL53L5CX_ResultsData']]],
   ['motion_5fquality_264',['motion_quality',['../mateksys__3901__l0x_8h.html#a05ab3a5c259340fa0995f1f7247190a4',1,'Mateksys3901l0X']]],
   ['motion_5ftype_265',['motion_type',['../tag__tracking_8h.html#aee5aa9fdf745390d124b3d4593c1e071',1,'tag_tracking_public']]],
   ['motionx_266',['motionX',['../mateksys__3901__l0x_8h.html#a8a32e6da280fbff714a5f037e1a01bf0',1,'Mateksys3901l0X']]],
