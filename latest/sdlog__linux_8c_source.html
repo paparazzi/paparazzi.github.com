@@ -416,8 +416,8 @@ $(document).ready(function(){initNavTree('sdlog__linux_8c_source.html',''); init
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  }</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="keywordtype">char</span> path[256];</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">snprintf</a>(path, <span class="keyword">sizeof</span>(path), <span class="stringliteral">&quot;%s/%s&quot;</span>, <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">base</a>, <a class="code hl_variable" href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a>);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="sdlog__linux_8c.html#ac0ee0ad51e0e9f6a0b8d57dd1d935a84">sdlog_mkdir</a>(path) != 0) {</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="comment">// a truncated path would silently log into another folder</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">snprintf</a>(path, <span class="keyword">sizeof</span>(path), <span class="stringliteral">&quot;%s/%s&quot;</span>, <a class="code hl_variable" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">base</a>, <a class="code hl_variable" href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a>) &gt;= (<span class="keywordtype">int</span>)<span class="keyword">sizeof</span>(path) || <a class="code hl_function" href="sdlog__linux_8c.html#ac0ee0ad51e0e9f6a0b8d57dd1d935a84">sdlog_mkdir</a>(path) != 0) {</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <a class="code hl_variable" href="sdlog__linux_8c.html#a8a142b187fa8b4f7a55da593f5417ed6">sdlog_error</a> = <a class="code hl_enumvalue" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a1170f7c80aeb4aa3e9e380c66dc99010">SDLOG_NOCARD</a>;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  }</div>
@@ -651,7 +651,7 @@ $(document).ready(function(){initNavTree('sdlog__linux_8c_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="sdlog__linux_8c.html">sdlog_linux.c</a></li>
-    <li class="footer">Generated on Thu Nov 5 2026 17:48:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Nov 5 2026 22:12:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
