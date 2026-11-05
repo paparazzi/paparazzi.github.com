@@ -49,7 +49,7 @@ var obm__cyclone_8c =
       [ "ce_44", "obm__cyclone_8c.html#a7f91f05ba74c4ab13aa3a6aee6b0e158", null ]
     ] ],
     [ "cyclone_f_stb_u", "obm__cyclone_8c.html#a8c53bdc1ffe0d082fcb1511ddf2ed2c6", null ],
-    [ "cyclone_f_stb_x", "obm__cyclone_8c.html#a5f1cf0c14319e5d162270007908b222a", null ],
+    [ "cyclone_f_stb_x", "obm__cyclone_8c.html#aa6d6e9b4840061466f89d1435502944d", null ],
     [ "cyclone_obm_forces", "obm__cyclone_8c.html#a228d41a12f7b6d4c9689d7c4c618b867", null ],
     [ "cyclone_obm_moments", "obm__cyclone_8c.html#afdf6514c7cd5bc1118cff76dcba4b846", null ],
     [ "evaluate_obm_f_stb_u", "obm__cyclone_8c.html#aa595db94a60bb9393a96507497eccc50", null ],

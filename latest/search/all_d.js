@@ -1456,7 +1456,7 @@ var searchData=
   ['cx_1453',['cx',['../nav__parametric__3d__lissajous_8h.html#ab3be88dc8352d3af344ef1f4ed689e4a',1,'gvf_par_3d_lis_par']]],
   ['cy_1454',['cy',['../nav__parametric__3d__lissajous_8h.html#a11e7515b73ccc95b76fc3351bb8f7199',1,'gvf_par_3d_lis_par']]],
   ['cyclone_5ff_5fstb_5fu_1455',['cyclone_f_stb_u',['../obm__cyclone_8c.html#a8c53bdc1ffe0d082fcb1511ddf2ed2c6',1,'obm_cyclone.c']]],
-  ['cyclone_5ff_5fstb_5fx_1456',['cyclone_f_stb_x',['../obm__cyclone_8c.html#a5f1cf0c14319e5d162270007908b222a',1,'obm_cyclone.c']]],
+  ['cyclone_5ff_5fstb_5fx_1456',['cyclone_f_stb_x',['../obm__cyclone_8c.html#aa6d6e9b4840061466f89d1435502944d',1,'obm_cyclone.c']]],
   ['cyclone_5fobm_5fforces_1457',['cyclone_obm_forces',['../obm__cyclone_8c.html#a228d41a12f7b6d4c9689d7c4c618b867',1,'obm_cyclone.c']]],
   ['cyclone_5fobm_5fmoments_1458',['cyclone_obm_moments',['../obm__cyclone_8c.html#afdf6514c7cd5bc1118cff76dcba4b846',1,'obm_cyclone.c']]],
   ['cyclonecoefficients_1459',['CycloneCoefficients',['../obm__cyclone_8c.html#unionCycloneCoefficients',1,'']]],
