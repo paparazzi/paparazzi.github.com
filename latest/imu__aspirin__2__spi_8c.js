@@ -1,6 +1,8 @@
 var imu__aspirin__2__spi_8c =
 [
+    [ "ASPIRIN_2_LOWPASS_FILTER", "imu__aspirin__2__spi_8c.html#a311d873b12127e6c97d4915fbb491c78", null ],
     [ "ASPIRIN_2_MAG_STARTUP_DELAY", "imu__aspirin__2__spi_8c.html#a2bd978d7cced1a6ac2c30b1cea574917", null ],
+    [ "ASPIRIN_2_SMPLRT_DIV", "imu__aspirin__2__spi_8c.html#a2b4218d897d9c8960b6a6f73afedbddb", null ],
     [ "ASPIRIN_2_SPI_DEV", "imu__aspirin__2__spi_8c.html#a06f00b43155f4f09c8dabf807b7a5641", null ],
     [ "ASPIRIN_2_SPI_SLAVE_IDX", "imu__aspirin__2__spi_8c.html#a7b969377ba70ed1e73b1454f028cb3ee", null ],
     [ "HMC58XX_CRA", "imu__aspirin__2__spi_8c.html#a39cf7c1941c077d34a6606ac27f8e804", null ],

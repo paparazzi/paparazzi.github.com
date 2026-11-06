@@ -1,5 +1,17 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c":[1,229,1],
+"module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c":[1,229,2],
+"module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,229,0],
+"module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,229,2,0],
+"module__imu_mpu9250_spi.html":[1,230],
+"module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi":[1,230,1],
+"module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi":[1,230,2],
+"module__imu_mpu9250_spi.html#module_load_example__imu_mpu9250_spi":[1,230,0],
+"module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi":[1,230,2,0],
+"module__imu_nps.html":[1,231],
+"module__imu_nps.html#functions__imu_nps":[1,231,1],
+"module__imu_nps.html#module_load_example__imu_nps":[1,231,0],
 "module__imu_nps.html#module_xml__imu_nps":[1,231,1,0],
 "module__imu_pixhawk6x.html":[1,232],
 "module__imu_pixhawk6x.html#configuration__imu_pixhawk6x":[1,232,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX136 =
 "module__logger_sd_chibios.html":[1,278],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,278,1],
 "module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,278,3],
-"module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,278,2],
-"module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,278,0],
-"module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,278,3,0],
-"module__logger_sd_spi_direct.html":[1,279],
-"module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct":[1,279,1],
-"module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,279,3],
-"module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,279,2],
-"module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,279,0],
-"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,279,3,0],
-"module__logger_spi_link.html":[1,280],
-"module__logger_spi_link.html#configuration__logger_spi_link":[1,280,1],
-"module__logger_spi_link.html#functions__logger_spi_link":[1,280,2],
-"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,280,0]
+"module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,278,2]
 };

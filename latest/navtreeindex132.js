@@ -1,5 +1,17 @@
 var NAVTREEINDEX132 =
 {
+"module__airspeed_ets.html#functions__airspeed_ets":[1,404,2],
+"module__airspeed_ets.html#module_load_example__airspeed_ets":[1,404,0],
+"module__airspeed_ets.html#module_xml__airspeed_ets":[1,404,2,0],
+"module__airspeed_ms45xx_i2c.html":[1,405],
+"module__airspeed_ms45xx_i2c.html#configuration__airspeed_ms45xx_i2c":[1,405,1],
+"module__airspeed_ms45xx_i2c.html#functions__airspeed_ms45xx_i2c":[1,405,2],
+"module__airspeed_ms45xx_i2c.html#module_load_example__airspeed_ms45xx_i2c":[1,405,0],
+"module__airspeed_ms45xx_i2c.html#module_xml__airspeed_ms45xx_i2c":[1,405,2,0],
+"module__airspeed_otf.html":[1,406],
+"module__airspeed_otf.html#configuration__airspeed_otf":[1,406,1],
+"module__airspeed_otf.html#functions__airspeed_otf":[1,406,2],
+"module__airspeed_otf.html#module_load_example__airspeed_otf":[1,406,0],
 "module__airspeed_otf.html#module_xml__airspeed_otf":[1,406,2,0],
 "module__airspeed_sdp3x.html":[1,407],
 "module__airspeed_sdp3x.html#configuration__airspeed_sdp3x":[1,407,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX132 =
 "module__control_adaptive.html#module_load_example__control_adaptive":[1,76,0],
 "module__control_adaptive.html#module_xml__control_adaptive":[1,76,0,0],
 "module__control_energy.html":[1,77],
-"module__control_energy.html#module_load_example__control_energy":[1,77,0],
-"module__control_energy.html#module_xml__control_energy":[1,77,0,0],
-"module__control_energyadaptive.html":[1,78],
-"module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,78,0],
-"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,78,0,0],
-"module__control_mixing_heewing.html":[1,91],
-"module__control_mixing_heewing.html#functions__control_mixing_heewing":[1,91,1],
-"module__control_mixing_heewing.html#module_load_example__control_mixing_heewing":[1,91,0],
-"module__control_mixing_heewing.html#module_xml__control_mixing_heewing":[1,91,1,0],
-"module__control_new.html":[1,79],
-"module__control_new.html#module_load_example__control_new":[1,79,0],
-"module__control_new.html#module_xml__control_new":[1,79,0,0],
-"module__copilot.html":[1,322]
+"module__control_energy.html#module_load_example__control_energy":[1,77,0]
 };

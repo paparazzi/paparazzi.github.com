@@ -1,5 +1,17 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,278,0],
+"module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,278,3,0],
+"module__logger_sd_spi_direct.html":[1,279],
+"module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct":[1,279,1],
+"module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,279,3],
+"module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,279,2],
+"module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,279,0],
+"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,279,3,0],
+"module__logger_spi_link.html":[1,280],
+"module__logger_spi_link.html#configuration__logger_spi_link":[1,280,1],
+"module__logger_spi_link.html#functions__logger_spi_link":[1,280,2],
+"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,280,0],
 "module__logger_spi_link.html#module_xml__logger_spi_link":[1,280,2,0],
 "module__logger_uart.html":[1,281],
 "module__logger_uart.html#configuration__logger_uart":[1,281,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,363,2],
 "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,363,0],
 "module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,363,2,0],
-"module__nav_survey_poly_osam.html":[1,364],
-"module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,364,1],
-"module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,364,0],
-"module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,364,1,0],
-"module__nav_survey_poly_rotorcraft.html":[1,365],
-"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,365,1],
-"module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,365,0],
-"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,365,1,0],
-"module__nav_survey_polygon.html":[1,366],
-"module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,366,0],
-"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,366,0,0],
-"module__nav_survey_rectangle_rotorcraft.html":[1,367],
-"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,367,1]
+"module__nav_survey_poly_osam.html":[1,364]
 };

@@ -1,5 +1,17 @@
 var NAVTREEINDEX133 =
 {
+"module__control_energy.html#module_xml__control_energy":[1,77,0,0],
+"module__control_energyadaptive.html":[1,78],
+"module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,78,0],
+"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,78,0,0],
+"module__control_mixing_heewing.html":[1,91],
+"module__control_mixing_heewing.html#functions__control_mixing_heewing":[1,91,1],
+"module__control_mixing_heewing.html#module_load_example__control_mixing_heewing":[1,91,0],
+"module__control_mixing_heewing.html#module_xml__control_mixing_heewing":[1,91,1,0],
+"module__control_new.html":[1,79],
+"module__control_new.html#module_load_example__control_new":[1,79,0],
+"module__control_new.html#module_xml__control_new":[1,79,0,0],
+"module__copilot.html":[1,322],
 "module__copilot.html#datalink_functions__copilot":[1,322,2],
 "module__copilot.html#functions__copilot":[1,322,1],
 "module__copilot.html#module_load_example__copilot":[1,322,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX133 =
 "module__electrical.html#module_xml__electrical":[1,153,1,0],
 "module__encoder_amt22.html":[1,428],
 "module__encoder_amt22.html#functions__encoder_amt22":[1,428,1],
-"module__encoder_amt22.html#module_load_example__encoder_amt22":[1,428,0],
-"module__encoder_amt22.html#module_xml__encoder_amt22":[1,428,1,0],
-"module__esc32.html":[1,501],
-"module__esc32.html#configuration__esc32":[1,501,1],
-"module__esc32.html#functions__esc32":[1,501,2],
-"module__esc32.html#module_load_example__esc32":[1,501,0],
-"module__esc32.html#module_xml__esc32":[1,501,2,0],
-"module__extra_dl.html":[1,113],
-"module__extra_dl.html#configuration__extra_dl":[1,113,1],
-"module__extra_dl.html#functions__extra_dl":[1,113,2],
-"module__extra_dl.html#module_load_example__extra_dl":[1,113,0],
-"module__extra_dl.html#module_xml__extra_dl":[1,113,2,0],
-"module__ezcurrent.html":[1,429]
+"module__encoder_amt22.html#module_load_example__encoder_amt22":[1,428,0]
 };

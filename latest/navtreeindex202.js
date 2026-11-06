@@ -1,5 +1,17 @@
 var NAVTREEINDEX202 =
 {
+"snake__gate__detection_8h_source.html":[12,0,1,0,6,12,35],
+"socket_8c.html":[12,0,1,0,6,19,0,7],
+"socket_8c.html#a0068a45ed495c84a28a2f653d86092e8":[12,0,1,0,6,19,0,7,1],
+"socket_8c.html#a1107d9688336d08754e74a2a32c17dfa":[12,0,1,0,6,19,0,7,2],
+"socket_8c.html#a120b3c12a694462fcedc15e429a53bd6":[12,0,1,0,6,19,0,7,0],
+"socket_8c.html#a513f946051c6c7d7f8b206ec3e692b82":[12,0,1,0,6,19,0,7,4],
+"socket_8c.html#a877ef856c3efae5324052f40089833a3":[12,0,1,0,6,19,0,7,3],
+"socket_8c.html#ad02424c03e4b1b3ddbdb78d829489ac3":[12,0,1,0,6,19,0,7,5],
+"socket_8c_source.html":[12,0,1,0,6,19,0,7],
+"socket_8h.html":[12,0,1,0,6,19,0,8],
+"socket_8h.html#a0068a45ed495c84a28a2f653d86092e8":[12,0,1,0,6,19,0,8,0],
+"socket_8h.html#a1107d9688336d08754e74a2a32c17dfa":[12,0,1,0,6,19,0,8,1],
 "socket_8h.html#a877ef856c3efae5324052f40089833a3":[12,0,1,0,6,19,0,8,2],
 "socket_8h_source.html":[12,0,1,0,6,19,0,8],
 "softi2c_8c.html":[12,0,1,0,5,12],
@@ -237,17 +249,5 @@ var NAVTREEINDEX202 =
 "spa06_8h.html#a80cabcce7169fe12a3b60ea743fff20f":[12,0,1,0,7,134,2,0],
 "spa06_8h.html#a89ed38e2a17e22ccf9dad24a01b552b5":[12,0,1,0,7,134,1,1],
 "spa06_8h.html#a9794f57f271480b515e314f46649cf61":[12,0,1,0,7,134,3,12],
-"spa06_8h.html#aa166e6c32c97027901da97795b543078":[12,0,1,0,7,134,2,2],
-"spa06_8h.html#aa51ce9a559ec4cbab1eb1a31d7c7f515":[12,0,1,0,7,134,2,4],
-"spa06_8h.html#aa6be9a4d00c4a3fec2e86bd1d7c0a4aa":[12,0,1,0,7,134,2,7],
-"spa06_8h.html#aab36abef0cdebd2f84424ad4d17e286b":[12,0,1,0,7,134,4,0],
-"spa06_8h.html#aab8ec60a4862f43fbb1917b4fbe0f5b9":[12,0,1,0,7,134,2,3],
-"spa06_8h.html#aaba0e480e8dbf08e873850f11b9404f0":[12,0,1,0,7,134,3,1],
-"spa06_8h.html#aac3f887da4de3534eed7bd9232fd5aad":[12,0,1,0,7,134,2,8],
-"spa06_8h.html#ab2d22b2918465eb62ea53e0e0c63523d":[12,0,1,0,7,134,3,0],
-"spa06_8h.html#ab9d1002e11f1835c15186422a61d135b":[12,0,1,0,7,134,10],
-"spa06_8h.html#abb2f18d76fdc6ab0cbab13b2eb4095e3":[12,0,1,0,7,134,3,7],
-"spa06_8h.html#abb920a5b7168d2c92141d01ccf27bb36":[12,0,1,0,7,134,3,8],
-"spa06_8h.html#ac5878e39a9f5a1e7baa58da202a7f119":[12,0,1,0,7,134,3,18],
-"spa06_8h.html#ac9e4212a49223aa3398fa7ebc6e28405":[12,0,1,0,7,134,3,16]
+"spa06_8h.html#aa166e6c32c97027901da97795b543078":[12,0,1,0,7,134,2,2]
 };
