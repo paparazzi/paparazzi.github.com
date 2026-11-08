@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,278,2],
 "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,278,0],
 "module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,278,3,0],
 "module__logger_sd_spi_direct.html":[1,279],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,363,1],
 "module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,363,2],
 "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,363,0],
-"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,363,2,0],
-"module__nav_survey_poly_osam.html":[1,364]
+"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,363,2,0]
 };

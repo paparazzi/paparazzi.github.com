@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_mpu9250_i2c.html":[1,229],
 "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c":[1,229,1],
 "module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c":[1,229,2],
 "module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,229,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__logger_file.html#module_xml__logger_file":[1,277,2,0],
 "module__logger_sd_chibios.html":[1,278],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,278,1],
-"module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,278,3],
-"module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,278,2]
+"module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,278,3]
 };

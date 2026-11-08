@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"module__encoder_amt22.html#module_load_example__encoder_amt22":[1,428,0],
 "module__encoder_amt22.html#module_xml__encoder_amt22":[1,428,1,0],
 "module__esc32.html":[1,501],
 "module__esc32.html#configuration__esc32":[1,501,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "module__guidance_indi_base.html#module_load_example__guidance_indi_base":[1,185,0],
 "module__guidance_indi_base.html#module_xml__guidance_indi_base":[1,185,1,0],
 "module__guidance_indi_fully_actuated.html":[1,186],
-"module__guidance_indi_fully_actuated.html#configuration__guidance_indi_fully_actuated":[1,186,1],
-"module__guidance_indi_fully_actuated.html#module_load_example__guidance_indi_fully_actuated":[1,186,0]
+"module__guidance_indi_fully_actuated.html#configuration__guidance_indi_fully_actuated":[1,186,1]
 };

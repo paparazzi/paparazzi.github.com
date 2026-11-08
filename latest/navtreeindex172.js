@@ -1,5 +1,6 @@
 var NAVTREEINDEX172 =
 {
+"paparazzi_messages.html#DESIRED":[2,0,12],
 "paparazzi_messages.html#DESIRED_SETPOINT":[2,1,12],
 "paparazzi_messages.html#DGPS_RAW":[2,1,10],
 "paparazzi_messages.html#DIVERGENCE":[2,0,218],
@@ -248,6 +249,5 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#TARGET_POS_INFO":[2,0,90],
 "paparazzi_messages.html#TCAS_DEBUG":[2,0,118],
 "paparazzi_messages.html#TCAS_RA":[2,0,116],
-"paparazzi_messages.html#TCAS_RESOLVE":[2,1,14],
-"paparazzi_messages.html#TCAS_RESOLVED":[2,0,117]
+"paparazzi_messages.html#TCAS_RESOLVE":[2,1,14]
 };

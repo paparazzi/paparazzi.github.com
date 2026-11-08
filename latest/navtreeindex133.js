@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__control_energy.html#module_load_example__control_energy":[1,77,0],
 "module__control_energy.html#module_xml__control_energy":[1,77,0,0],
 "module__control_energyadaptive.html":[1,78],
 "module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,78,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "module__electrical.html#module_load_example__electrical":[1,153,0],
 "module__electrical.html#module_xml__electrical":[1,153,1,0],
 "module__encoder_amt22.html":[1,428],
-"module__encoder_amt22.html#functions__encoder_amt22":[1,428,1],
-"module__encoder_amt22.html#module_load_example__encoder_amt22":[1,428,0]
+"module__encoder_amt22.html#functions__encoder_amt22":[1,428,1]
 };
