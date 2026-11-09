@@ -285,6 +285,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#EFF_MAT_STAB_THRUST">EFF_MAT_STAB_THRUST (ID 192)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#NB_CTRL">NB_CTRL (ID 194)</a></li>
+<li class="level2"><a href="#EKF2_INPUT">EKF2_INPUT (ID 195)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
 <li class="level2"><a href="#INS">INS (ID 198)</a></li>
@@ -4149,6 +4150,21 @@ NB_CTRL (ID 194)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mu_B   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Principal thrust axis in body frame   </td></tr>
 </table>
+<h2><a class="anchor" id="EKF2_INPUT"></a>
+EKF2_INPUT (ID 195)</h2>
+<p>A sample given to the EKF2 (ins_ekf2 with INS_EKF2_LOG_INPUTS), logged on the SD card to replay the EKF offline (sw/tools/ekf2_replay). The ints and values depend on the type: IMU: ints delta angle and delta velocity integration time (us), values delta angle xyz (rad) and delta velocity xyz (m/s); UPDATE: call of the EKF update; MAG: values field xyz (gauss); BARO: values height (m) and air density (kg/m3); GNSS: ints lat, lon (1e-7 deg), fix type, satellites, flags (1 usable, 2 speed accuracy passes strict, 4 spoofed, 8 jammed), values altitude (m), velocity NED (m/s), hacc, vacc (m), sacc (m/s), pdop, antenna position xyz (m); GNSS_YAW: ints usable, values yaw, yaw accuracy, yaw offset (rad); AIRSPEED: values true airspeed (m/s) and EAS to TAS factor; RANGE: ints quality, values distance (m); FLOW: ints quality, values flow rate xy and gyro rate xyz (rad/s); EV: ints position frame, velocity frame, quality, reset counter, values position xyz, velocity xyz, quaternion, position, velocity and orientation variances xyz; FLAGS: ints bits armed, at rest, in air, fixed wing, ground effect, constant position, in transition; ORIGIN: ints lat, lon (1e-7 deg), values altitude (m); PARAMS: ints index of the first parameter, values the parameters from that index (generated parameter table); CONFIG: values position and velocity correction time constants (s), GNSS yaw reset wait (s), range finder minimum and maximum distance (m), optical flow maximum rate (rad/s); OUTPUT: values position NED (m), velocity NED (m/s), quaternion, after an update.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">time   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">us   </td><td class="markdownTableBodyNone">EKF time of the sample (lower 32 bits)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">IMU, UPDATE, MAG, BARO, GNSS, GNSS_YAW, AIRSPEED, RANGE, FLOW, EV, FLAGS, ORIGIN, PARAMS, CONFIG, OUTPUT   </td><td class="markdownTableBodyNone">Kind of sample    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ints   </td><td class="markdownTableBodyNone">int32[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Integer values, depending on the type    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">values   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Float values, depending on the type   </td></tr>
+</table>
 <h2><a class="anchor" id="AIRSPEED_WIND_ESTIMATOR_EKF"></a>
 AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</h2>
 <table class="markdownTable">
@@ -7277,7 +7293,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 9 2026 12:09:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 14:01:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

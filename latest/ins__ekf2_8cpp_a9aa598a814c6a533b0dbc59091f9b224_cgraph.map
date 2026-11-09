@@ -1,13 +1,15 @@
 <map id="ins_ekf2_publish_attitude" name="ins_ekf2_publish_attitude">
-<area shape="rect" id="Node000001" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="5,95,195,121"/>
-<area shape="rect" id="Node000002" href="$stabilization__andi_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="259,5,419,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,93,242,55,263,47,265,52,244,60,137,98"/>
-<area shape="rect" id="Node000003" href="$group__state__acceleration.html#gae8620e2ebb326bbb443a54194a6bd45d" title="Set acceleration in Body coordinates (int)." alt="" coords="261,70,416,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,95,247,90,248,95,195,101"/>
-<area shape="rect" id="Node000004" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="259,119,418,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,115,246,120,245,125,195,120"/>
-<area shape="rect" id="Node000005" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="243,169,435,194"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="137,118,243,153,275,162,273,168,242,159,136,123"/>
-<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="483,169,640,194"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="435,179,469,179,469,184,435,184"/>
+<area shape="rect" id="Node000001" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="5,120,195,145"/>
+<area shape="rect" id="Node000002" href="$ins__ekf2_8cpp.html#a834c5fe05c5d92c5f0e9a5fdbd31b302" title=" " alt="" coords="263,5,414,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,118,170,80,242,41,265,32,267,37,244,46,173,85,119,122"/>
+<area shape="rect" id="Node000003" href="$stabilization__andi_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="259,55,419,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,117,245,95,246,100,154,123"/>
+<area shape="rect" id="Node000004" href="$group__state__acceleration.html#gae8620e2ebb326bbb443a54194a6bd45d" title="Set acceleration in Body coordinates (int)." alt="" coords="261,120,416,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,130,248,130,248,135,195,135"/>
+<area shape="rect" id="Node000005" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="259,169,418,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="163,143,264,164,263,169,162,148"/>
+<area shape="rect" id="Node000006" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="243,219,435,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="124,143,177,173,244,204,270,212,268,217,242,208,175,178,121,148"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="483,219,640,244"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="435,229,469,229,469,234,435,234"/>
 </map>
