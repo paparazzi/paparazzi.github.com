@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"common__flight__plan_8h.html#a9f3e30fbd9ad4c0bdc20d1dee3e43eb0":[13,0,1,0,6,47,3,3],
+"common__flight__plan_8h.html#aa3cbfa3c23e459645a8e67b1bb4a1bef":[13,0,1,0,6,47,3,21],
 "common__flight__plan_8h.html#aa64072da784959799353d18ae618cbc5":[13,0,1,0,6,47,3,9],
 "common__flight__plan_8h.html#ab0bce7139f2835a653f32e9be76462fc":[13,0,1,0,6,47,3,14],
 "common__flight__plan_8h.html#ab4ea00d9afaff6cc43b34f5c27eea85a":[13,0,1,0,6,47,3,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX40 =
 "crazyflie_2chibios_2v2_81_2board_8h.html":[13,0,1,0,1,4,0,0,0],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a022aaec61410f8263615ef72e2cf6360":[13,0,1,0,1,4,0,0,0,31],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a02581754b212d533d96cde56c8145c9b":[13,0,1,0,1,4,0,0,0,53],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a02a98a8fddb433405aaa5b52c80c8541":[13,0,1,0,1,4,0,0,0,356],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a04b935ba9fbd838ed1d715218138d709":[13,0,1,0,1,4,0,0,0,285],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a0504dab00dae4bba91e1160a03efbdc7":[13,0,1,0,1,4,0,0,0,198]
+"crazyflie_2chibios_2v2_81_2board_8h.html#a02a98a8fddb433405aaa5b52c80c8541":[13,0,1,0,1,4,0,0,0,356]
 };

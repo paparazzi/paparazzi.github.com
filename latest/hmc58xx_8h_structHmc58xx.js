@@ -2,7 +2,7 @@ var hmc58xx_8h_structHmc58xx =
 [
     [ "adc_overflow_cnt", "hmc58xx_8h.html#ac995915bad6ff478145eaef5526351df", null ],
     [ "config", "hmc58xx_8h.html#abfe2a2d471e118c32fc8d8e864b5d8df", null ],
-    [ "data", "hmc58xx_8h.html#aa53fa3e4ee2b5cc2a1a9948d9dffc35e", null ],
+    [ "data", "hmc58xx_8h.html#a7981f767314bbd289d3ec94e8240de78", null ],
     [ "data_available", "hmc58xx_8h.html#ac2695896770f623a699fbf5f9ddd9b0e", null ],
     [ "i2c_p", "hmc58xx_8h.html#a47da4ccd0683047bec2ee560a5101aef", null ],
     [ "i2c_trans", "hmc58xx_8h.html#a4f74b18f71f610915a041aaec85ca2bf", null ],

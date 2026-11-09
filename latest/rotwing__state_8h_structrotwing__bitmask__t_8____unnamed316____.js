@@ -1,4 +1,4 @@
-var rotwing__state_8h_structrotwing__bitmask__t_8____unnamed315____ =
+var rotwing__state_8h_structrotwing__bitmask__t_8____unnamed316____ =
 [
     [ "hover_motors_enabled", "rotwing__state_8h.html#a71feede8efe7593557bb49bf335c59a4", null ],
     [ "hover_motors_idle", "rotwing__state_8h.html#a798cceb97bce2315e37d89cebec28135", null ],

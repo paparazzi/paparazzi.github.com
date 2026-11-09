@@ -94,40 +94,41 @@ $(document).ready(function(){initNavTree('module__ins_ekf2.html',''); initResiza
   <div class="headertitle"><div class="title">ins_ekf2 module</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>simple INS and AHRS using EKF2 from PX4</b></p>
-<p>No detailed description...</p>
+<div class="textblock"><p><b>INS and AHRS using the EKF2 of PX4.</b></p>
+<p><b></b></p>
+<p>The EKF2 and the PX4 libraries it needs are copied in sw/ext/px4_ekf2, where sync_px4_ekf2.py updates them to another PX4 version (see PX4_VERSION there).</p>
+<p>All PX4 EKF2 parameters have their PX4 default and can be set in the airframe as INS_EKF2_name for the PX4 parameter EKF2_name (e.g. INS_EKF2_GPS_CTRL, INS_EKF2_HGT_REF, INS_EKF2_MAG_TYPE, INS_EKF2_EV_CTRL, INS_EKF2_OF_CTRL, INS_EKF2_EVP_NOISE, INS_EKF2_IMU_POS_X), and the GNSS checks as INS_EKF2_GNSS_name for GNSS_name (e.g. INS_EKF2_GNSS_REQ_EPH). The GNSS thresholds are the ones of the previous version for the horizontal and speed accuracy (EPH 5 m, speed accuracy 1.0 m/s, PX4 uses 3 m and 0.5 m/s) and of PX4 for the rest (EPV 5 m, 10 s healthy before use). See sw/ext/px4_ekf2/generated/ekf2_params.h and <a href="https://docs.px4.io/main/en/advanced_config/parameter_reference.html">https://docs.px4.io/main/en/advanced_config/parameter_reference.html</a> Sensors are only used when their data arrives, so a sensor enabled in a *_CTRL parameter without that sensor does nothing.</p>
+<p>Airspeed and sideslip are only fused in fixed wing flight: always for the fixedwing firmware, and for hybrids flown with the rotorcraft firmware when they set <a class="el" href="group__state__flight.html#gac4a41c24dca2712c6b5db68fc27f023d" title="Set if flying as a fixed wing (e.g. a hybrid in forward flight).">stateSetFixedWingFlight()</a> (rotwing_state does this for the forward flight).</p>
 <h1><a class="anchor" id="module_load_example__ins_ekf2"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ins_ekf2&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_OPTITRACK&quot; value=&quot;false&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FUSION_MODE&quot; value=&quot;(MASK_USE_GPS)&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_MAG_FUSION_MODE&quot; value=&quot;MAG_FUSE_TYPE_AUTO&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_VDIST_SENSOR_TYPE&quot; value=&quot;VDIST_SENSOR_BARO&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_CHECK_MASK&quot; value=&quot;(MASK_GPS_NSATS | MASK_GPS_HACC | MASK_GPS_SACC)&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EVP_NOISE&quot; value=&quot;0.1&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EVV_NOISE&quot; value=&quot;1.0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EVA_NOISE&quot; value=&quot;0.05&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_V_NOISE&quot; value=&quot;0.3&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_P_NOISE&quot; value=&quot;0.5&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_BARO_NOISE&quot; value=&quot;3.5&quot; /&gt;\n\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_IMU_POS_X&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_IMU_POS_Y&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_IMU_POS_Z&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_OPTITRACK&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_CTRL&quot; value=&quot;7&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_HGT_REF&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_MAG_TYPE&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EV_CTRL&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_OF_CTRL&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RNG_CTRL&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_DRAG_CTRL&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_IMU_CTRL&quot; value=&quot;7&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_ARSP_THR&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FUSE_BETA&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_AIRSPEED_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GNSS_CHECK&quot; value=&quot;(GNSS_CHECK_NSATS|GNSS_CHECK_EPH|GNSS_CHECK_SACC|GNSS_CHECK_FIX)&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GNSS_REQ_EPH&quot; value=&quot;5.0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GNSS_REQ_EPV&quot; value=&quot;5.0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GNSS_REQ_SACC&quot; value=&quot;1.0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GNSS_REQ_NSATS&quot; value=&quot;6&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GNSS_REQ_PDOP&quot; value=&quot;2.5&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_DELAY&quot; value=&quot;110&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_POS_X&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_POS_Y&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_POS_Z&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_X&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_Y&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_Z&quot; value=&quot;0&quot; /&gt;\n\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_SONAR_MIN_RANGE&quot; value=&quot;0.05&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_SONAR_MAX_RANGE&quot; value=&quot;3&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RANGE_MAIN_AGL&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_SENSOR_DELAY&quot; value=&quot;15&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_MIN_FLOW_QUALITY&quot; value=&quot;100&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_MAX_FLOW_RATE&quot; value=&quot;20&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_NOISE&quot; value=&quot;0.01&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_NOISE_QMIN&quot; value=&quot;0.03&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_INNOV_GATE&quot; value=&quot;3&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_YAW_OFFSET&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_ANTENNA_DISTANCE&quot; value=&quot;1.0&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_ANTENNA_DISTANCE_ERR&quot; value=&quot;0.2&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_YAW_NOISE&quot; value=&quot;0.1&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RNG_MIN_DIST&quot; value=&quot;0.001&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RNG_MAX_DIST&quot; value=&quot;4&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_OF_MAX_RATE&quot; value=&quot;200&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_AGL_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_BARO_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GYRO_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
@@ -135,6 +136,11 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_MAG_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RELPOS_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EVENT_MSGS&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EVENTS_ALL&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_EVENT_HOLDOFF&quot; value=&quot;5&quot; unit=&quot;s&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_PREFLIGHT_POS&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_PREFLIGHT_INNOV_TAU&quot; value=&quot;1.0&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FORCE_NAV_REF&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;USE_ALT_LLA_WAYPOINTS&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -149,64 +155,60 @@ Configure Options</h2>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>INS_EKF2_OPTITRACK</code> <b>value:</b> <em>false</em> <br  />
- Description: Easy configuration of full optitrack (position- and yaw fusion, height, init origin)</li>
-<li><b>name:</b> <code>INS_EKF2_FUSION_MODE</code> <b>value:</b> <em>(MASK_USE_GPS)</em> <br  />
- Description: The sensor that are used for position fusion</li>
-<li><b>name:</b> <code>INS_EKF2_MAG_FUSION_MODE</code> <b>value:</b> <em>MAG_FUSE_TYPE_AUTO</em> <br  />
- Description: Default magnetometer fusion type</li>
-<li><b>name:</b> <code>INS_EKF2_VDIST_SENSOR_TYPE</code> <b>value:</b> <em>VDIST_SENSOR_BARO</em> <br  />
- Description: Primary sensor used for vertical distance</li>
-<li><b>name:</b> <code>INS_EKF2_GPS_CHECK_MASK</code> <b>value:</b> <em>(MASK_GPS_NSATS | MASK_GPS_HACC | MASK_GPS_SACC)</em> <br  />
- Description: GPS checks enabled before initialization of the global positioning</li>
-<li><b>name:</b> <code>INS_EKF2_EVP_NOISE</code> <b>value:</b> <em>0.1</em> <br  />
- Description: External vision position noise [m]</li>
-<li><b>name:</b> <code>INS_EKF2_EVV_NOISE</code> <b>value:</b> <em>1.0</em> <br  />
- Description: External vision velocity noise [m/s]</li>
-<li><b>name:</b> <code>INS_EKF2_EVA_NOISE</code> <b>value:</b> <em>0.05</em> <br  />
- Description: External vision angle noise [rad]</li>
-<li><b>name:</b> <code>INS_EKF2_GPS_V_NOISE</code> <b>value:</b> <em>0.3</em> <br  />
- Description: GPS measurement noise for horizontal velocity [m/s]</li>
-<li><b>name:</b> <code>INS_EKF2_GPS_P_NOISE</code> <b>value:</b> <em>0.5</em> <br  />
- Description: GPS measurement position noise [m]</li>
-<li><b>name:</b> <code>INS_EKF2_BARO_NOISE</code> <b>value:</b> <em>3.5</em> <br  />
- Description: Barometric measurement noise for altitude [m]</li>
-<li><b>name:</b> <code>INS_EKF2_IMU_POS_X</code> <b>value:</b> <em>0</em> <br  />
- Description: IMU X offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_IMU_POS_Y</code> <b>value:</b> <em>0</em> <br  />
- Description: IMU Y offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_IMU_POS_Z</code> <b>value:</b> <em>0</em> <br  />
- Description: IMU Z offset from CoG position [m]</li>
+<li><b>name:</b> <code>INS_EKF2_OPTITRACK</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: Indoor configuration with only external vision (e.g. Optitrack): EV position, velocity, yaw and height, no GNSS, magnetometer and barometer, EV noise 0.02 m / 0.05 rad and delay 175 ms (each can be changed)</li>
+<li><b>name:</b> <code>INS_EKF2_GPS_CTRL</code> <b>value:</b> <em>7</em> <br  />
+ Description: GNSS fusion bitmask: 1 horizontal position, 2 vertical position, 4 velocity, 8 dual antenna heading (EKF2_GPS_CTRL_*)</li>
+<li><b>name:</b> <code>INS_EKF2_HGT_REF</code> <b>value:</b> <em>0</em> <br  />
+ Description: Height reference: 0 baro (default, PX4 uses 1), 1 GNSS, 2 range finder, 3 external vision (EKF2_HGT_REF_*)</li>
+<li><b>name:</b> <code>INS_EKF2_MAG_TYPE</code> <b>value:</b> <em>0</em> <br  />
+ Description: Magnetometer: 0 automatic (heading on the ground, 3D in the air), 1 heading, 5 none, 6 only to initialize the heading (EKF2_MAG_TYPE_*)</li>
+<li><b>name:</b> <code>INS_EKF2_EV_CTRL</code> <b>value:</b> <em>0</em> <br  />
+ Description: External vision fusion bitmask: 1 horizontal position, 2 vertical position, 4 velocity, 8 yaw (EKF2_EV_CTRL_*), 15 with INS_EKF2_OPTITRACK</li>
+<li><b>name:</b> <code>INS_EKF2_OF_CTRL</code> <b>value:</b> <em>1</em> <br  />
+ Description: Optical flow fusion</li>
+<li><b>name:</b> <code>INS_EKF2_RNG_CTRL</code> <b>value:</b> <em>1</em> <br  />
+ Description: Range finder height: 0 off, 1 conditional (low and slow), 2 always</li>
+<li><b>name:</b> <code>INS_EKF2_DRAG_CTRL</code> <b>value:</b> <em>0</em> <br  />
+ Description: Multirotor drag fusion (wind estimation without airspeed sensor)</li>
+<li><b>name:</b> <code>INS_EKF2_IMU_CTRL</code> <b>value:</b> <em>7</em> <br  />
+ Description: IMU bitmask: 1 gyro bias, 2 accel bias, 4 gravity vector fusion</li>
+<li><b>name:</b> <code>INS_EKF2_ARSP_THR</code> <b>value:</b> <em>0</em> <br  />
+ Description: Airspeed fusion above this true airspeed [m/s], 0 disables it (fixedwing default 8, 10 for hybrids as PX4 for VTOL)</li>
+<li><b>name:</b> <code>INS_EKF2_FUSE_BETA</code> <b>value:</b> <em>0</em> <br  />
+ Description: Synthetic sideslip fusion in fixed wing flight (fixedwing default 1, also 1 for hybrids)</li>
+<li><b>name:</b> <code>INS_EKF2_AIRSPEED_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
+ Description: ABI sender ID of the airspeed: any sensor, or AIRSPEED_AIR_DATA_ID computed by air_data from a differential pressure sensor (the airspeed estimated from the wind is never used). Choose one when a sensor gives both.</li>
+<li><b>name:</b> <code>INS_EKF2_GNSS_CHECK</code> <b>value:</b> <em>(GNSS_CHECK_NSATS|GNSS_CHECK_EPH|GNSS_CHECK_SACC|GNSS_CHECK_FIX)</em> <br  />
+ Description: GNSS checks before the GNSS data is used (GNSS_CHECK_*), PX4 uses all except jamming (2047)</li>
+<li><b>name:</b> <code>INS_EKF2_GNSS_REQ_EPH</code> <b>value:</b> <em>5.0</em> <br  />
+ Description: Maximum horizontal position accuracy [m] (PX4 3.0)</li>
+<li><b>name:</b> <code>INS_EKF2_GNSS_REQ_EPV</code> <b>value:</b> <em>5.0</em> <br  />
+ Description: Maximum vertical position accuracy [m]</li>
+<li><b>name:</b> <code>INS_EKF2_GNSS_REQ_SACC</code> <b>value:</b> <em>1.0</em> <br  />
+ Description: Maximum speed accuracy [m/s] (PX4 0.5)</li>
+<li><b>name:</b> <code>INS_EKF2_GNSS_REQ_NSATS</code> <b>value:</b> <em>6</em> <br  />
+ Description: Required number of satellites</li>
+<li><b>name:</b> <code>INS_EKF2_GNSS_REQ_PDOP</code> <b>value:</b> <em>2.5</em> <br  />
+ Description: Maximum PDOP</li>
+<li><b>name:</b> <code>INS_EKF2_GPS_DELAY</code> <b>value:</b> <em>110</em> <br  />
+ Description: GNSS measurement delay [ms] (PX4 SENS_GNSS0_DELAY)</li>
 <li><b>name:</b> <code>INS_EKF2_GPS_POS_X</code> <b>value:</b> <em>0</em> <br  />
- Description: GPS X offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_GPS_POS_Y</code> <b>value:</b> <em>0</em> <br  />
- Description: GPS Y offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_GPS_POS_Z</code> <b>value:</b> <em>0</em> <br  />
- Description: GPS Z offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_POS_X</code> <b>value:</b> <em>0</em> <br  />
- Description: Flow sensor X offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_POS_Y</code> <b>value:</b> <em>0</em> <br  />
- Description: Flow sensor Y offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_POS_Z</code> <b>value:</b> <em>0</em> <br  />
- Description: Flow sensor Z offset from CoG position [m]</li>
-<li><b>name:</b> <code>INS_EKF2_SONAR_MIN_RANGE</code> <b>value:</b> <em>0.05</em> <br  />
- Description: AGL sensor minimum range [m]</li>
-<li><b>name:</b> <code>INS_EKF2_SONAR_MAX_RANGE</code> <b>value:</b> <em>3</em> <br  />
- Description: AGL sensor maximum range [m]</li>
-<li><b>name:</b> <code>INS_EKF2_RANGE_MAIN_AGL</code> <b>value:</b> <em>1</em> <br  />
- Description: If enabled uses radar sensor as primary AGL source, if possible</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_SENSOR_DELAY</code> <b>value:</b> <em>15</em> <br  />
- Description: flow/radar message delay [ms]</li>
-<li><b>name:</b> <code>INS_EKF2_MIN_FLOW_QUALITY</code> <b>value:</b> <em>100</em> <br  />
- Description: Minimum quality of the optical flow message accepted [0-255]</li>
-<li><b>name:</b> <code>INS_EKF2_MAX_FLOW_RATE</code> <b>value:</b> <em>20</em> <br  />
- Description: Maximum flow rate the sensor can perceive [rad/sec]]</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_NOISE</code> <b>value:</b> <em>0.01</em> <br  />
- Description: Flow sensor noise [rad/sec]</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_NOISE_QMIN</code> <b>value:</b> <em>0.03</em> <br  />
- Description: Flow sensor noise when quality is minimum [rad/sec]</li>
-<li><b>name:</b> <code>INS_EKF2_FLOW_INNOV_GATE</code> <b>value:</b> <em>3</em> <br  />
- Description: Flow sensor innovation gate [STD]</li>
+ Description: GNSS antenna X offset from the CoG [m] (also _Y and _Z, PX4 SENS_GNSS0_OFF*)</li>
+<li><b>name:</b> <code>INS_EKF2_GPS_YAW_OFFSET</code> <b>value:</b> <em>0</em> <br  />
+ Description: Yaw of the dual antenna baseline in the body frame [deg], enables the GNSS heading from RELPOS</li>
+<li><b>name:</b> <code>INS_EKF2_GPS_ANTENNA_DISTANCE</code> <b>value:</b> <em>1.0</em> <br  />
+ Description: Distance between the two antennas of the dual antenna heading [m], the heading is only used when the measured distance is within INS_EKF2_GPS_ANTENNA_DISTANCE_ERR (not checked when not set)</li>
+<li><b>name:</b> <code>INS_EKF2_GPS_ANTENNA_DISTANCE_ERR</code> <b>value:</b> <em>0.2</em> <br  />
+ Description: Maximum difference between the measured and the configured antenna distance [m]</li>
+<li><b>name:</b> <code>INS_EKF2_GPS_YAW_NOISE</code> <b>value:</b> <em>0.1</em> <br  />
+ Description: GNSS heading noise when the receiver gives no accuracy [rad]</li>
+<li><b>name:</b> <code>INS_EKF2_RNG_MIN_DIST</code> <b>value:</b> <em>0.001</em> <br  />
+ Description: Minimum distance the range finder measures [m]</li>
+<li><b>name:</b> <code>INS_EKF2_RNG_MAX_DIST</code> <b>value:</b> <em>4</em> <br  />
+ Description: Maximum distance the range finder measures [m]</li>
+<li><b>name:</b> <code>INS_EKF2_OF_MAX_RATE</code> <b>value:</b> <em>200</em> <br  />
+ Description: Maximum flow rate the optical flow sensor measures [rad/s]</li>
 <li><b>name:</b> <code>INS_EKF2_AGL_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: ABI sensor ID used as input for AGL measurements</li>
 <li><b>name:</b> <code>INS_EKF2_BARO_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
@@ -221,6 +223,16 @@ Define Options</h2>
  Description: ABI sensor ID used ad input for GPS measurements</li>
 <li><b>name:</b> <code>INS_EKF2_RELPOS_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: ABI sensor ID used ad input for Relative Position heading measurements</li>
+<li><b>name:</b> <code>INS_EKF2_EVENT_MSGS</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
+ Description: Send the EKF events and status changes (alignment, fusion started/stopped, resets, faults) as INFO_MSG to the flight recorder, and the important ones to the GCS (default: TRUE)</li>
+<li><b>name:</b> <code>INS_EKF2_EVENTS_ALL</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: Send all the EKF events to the GCS, not only the important ones (alignment, dead reckoning, faults); all events always go to the flight recorder (default: FALSE, setting 'all events')</li>
+<li><b>name:</b> <code>INS_EKF2_EVENT_HOLDOFF</code> <b>value:</b> <em>5</em> <br  />
+ Description: Minimum time between two messages about the same status or event (default: 5 s)</li>
+<li><b>name:</b> <code>INS_EKF2_PREFLIGHT_POS</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
+ Description: Preflight check: require the configured position source (GNSS or external vision) to be used (default: TRUE)</li>
+<li><b>name:</b> <code>INS_EKF2_PREFLIGHT_INNOV_TAU</code> <b>value:</b> <em>1.0</em> <br  />
+ Description: Preflight check: time constant of the low-pass filter of the innovation test ratios [s], a filtered ratio above 1 blocks arming</li>
 <li><b>name:</b> <code>INS_EKF2_FORCE_NAV_REF</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: force to use the reference defined in the flight plan and not the one computed by the filter after first good GPS position</li>
 </ul>
@@ -263,27 +275,50 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="ins_8c.html">modules/ins/ins.c</a></li>
 <li><a class="el" href="ins__ekf2_8cpp.html">modules/ins/ins_ekf2.cpp</a></li>
-<li>ecl/geo/geo.cpp</li>
-<li>ecl/geo_lookup/geo_mag_declination.cpp</li>
-<li>ecl/EKF/airspeed_fusion.cpp</li>
-<li>ecl/EKF/control.cpp</li>
-<li>ecl/EKF/mag_control.cpp</li>
-<li>ecl/EKF/covariance.cpp</li>
-<li>ecl/EKF/drag_fusion.cpp</li>
-<li>ecl/EKF/ekf.cpp</li>
-<li>ecl/EKF/ekf_helper.cpp</li>
-<li>ecl/EKF/estimator_interface.cpp</li>
-<li>ecl/EKF/gps_checks.cpp</li>
-<li>ecl/EKF/mag_fusion.cpp</li>
-<li>ecl/EKF/optflow_fusion.cpp</li>
-<li>ecl/EKF/sideslip_fusion.cpp</li>
-<li>ecl/EKF/terrain_estimator.cpp</li>
-<li>ecl/EKF/vel_pos_fusion.cpp</li>
-<li>ecl/EKF/gps_yaw_fusion.cpp</li>
-<li>ecl/EKF/imu_down_sampler.cpp</li>
-<li>ecl/EKF/EKFGSF_yaw.cpp</li>
-<li>ecl/EKF/sensor_range_finder.cpp</li>
-<li>ecl/EKF/utils.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/ZeroGyroUpdate.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/ZeroVelocityUpdate.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/airspeed/airspeed_fusion.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/barometer/baro_height_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/drag/drag_fusion.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/external_vision/ev_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/external_vision/ev_height_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/external_vision/ev_pos_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/external_vision/ev_vel_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/external_vision/ev_yaw_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/fake_height_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/fake_pos_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/gnss/gnss_height_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/gnss/gnss_yaw_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/gnss/gps_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/magnetometer/mag_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/magnetometer/mag_fusion.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/optical_flow/optical_flow_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/optical_flow/optical_flow_fusion.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/range_finder/range_finder_consistency_check.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/range_finder/range_height_control.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/range_finder/range_height_fusion.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/range_finder/sensor_range_finder.cpp</li>
+<li>px4_ekf2/EKF/aid_sources/sideslip/sideslip_fusion.cpp</li>
+<li>px4_ekf2/EKF/bias_estimator/bias_estimator.cpp</li>
+<li>px4_ekf2/EKF/control.cpp</li>
+<li>px4_ekf2/EKF/covariance.cpp</li>
+<li>px4_ekf2/EKF/ekf.cpp</li>
+<li>px4_ekf2/EKF/ekf_helper.cpp</li>
+<li>px4_ekf2/EKF/estimator_interface.cpp</li>
+<li>px4_ekf2/EKF/height_control.cpp</li>
+<li>px4_ekf2/EKF/imu_down_sampler/imu_down_sampler.cpp</li>
+<li>px4_ekf2/EKF/output_predictor/output_predictor.cpp</li>
+<li>px4_ekf2/EKF/position_fusion.cpp</li>
+<li>px4_ekf2/EKF/terrain_control.cpp</li>
+<li>px4_ekf2/EKF/velocity_fusion.cpp</li>
+<li>px4_ekf2/EKF/wind.cpp</li>
+<li>px4_ekf2/EKF/yaw_estimator/EKFGSF_yaw.cpp</li>
+<li>px4_ekf2/EKF/yaw_fusion.cpp</li>
+<li>px4_ekf2/lib/atmosphere/atmosphere.cpp</li>
+<li>px4_ekf2/lib/geo/geo.cpp</li>
+<li>px4_ekf2/lib/gnss/gnss_checks.cpp</li>
+<li>px4_ekf2/lib/lat_lon_alt/lat_lon_alt.cpp</li>
+<li>px4_ekf2/lib/world_magnetic_model/geo_mag_declination.cpp</li>
 </ul>
 <h2><a class="anchor" id="module_xml__ins_ekf2"></a>
 Raw ins_ekf2.xml file:</h2>
@@ -292,39 +327,53 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ins_ekf2&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ins&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;estimation&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">simple</span> <span class="keyword">INS</span> <span class="keyword">and</span> <span class="keyword">AHRS</span> <span class="keyword">using</span> <span class="keyword">EKF2</span> <span class="keyword">from</span> <span class="keyword">PX4</span></div>
+<div class="line">      <span class="keyword">INS</span> <span class="keyword">and</span> <span class="keyword">AHRS</span> <span class="keyword">using</span> <span class="keyword">the</span> <span class="keyword">EKF2</span> <span class="keyword">of</span> <span class="keyword">PX4.</span></div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">The</span> <span class="keyword">EKF2</span> <span class="keyword">and</span> <span class="keyword">the</span> <span class="keyword">PX4</span> <span class="keyword">libraries</span> <span class="keyword">it</span> <span class="keyword">needs</span> <span class="keyword">are</span> <span class="keyword">copied</span> <span class="keyword">in</span> <span class="keyword">sw</span>/<span class="keyword">ext</span>/<span class="keyword">px4_ekf2</span>, <span class="keyword">where</span></div>
+<div class="line">      <span class="keyword">sync_px4_ekf2.py</span> <span class="keyword">updates</span> <span class="keyword">them</span> <span class="keyword">to</span> <span class="keyword">another</span> <span class="keyword">PX4</span> <span class="keyword">version</span> (<span class="keyword">see</span> <span class="keyword">PX4_VERSION</span> <span class="keyword">there</span>).</div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">All</span> <span class="keyword">PX4</span> <span class="keyword">EKF2</span> <span class="keyword">parameters</span> <span class="keyword">have</span> <span class="keyword">their</span> <span class="keyword">PX4</span> <span class="keyword">default</span> <span class="keyword">and</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">set</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">as</span></div>
+<div class="line">      <span class="keyword">INS_EKF2_name</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">PX4</span> <span class="keyword">parameter</span> <span class="keyword">EKF2_name</span> (<span class="keyword">e.g.</span> <span class="keyword">INS_EKF2_GPS_CTRL</span>, <span class="keyword">INS_EKF2_HGT_REF</span>,</div>
+<div class="line">      <span class="keyword">INS_EKF2_MAG_TYPE</span>, <span class="keyword">INS_EKF2_EV_CTRL</span>, <span class="keyword">INS_EKF2_OF_CTRL</span>, <span class="keyword">INS_EKF2_EVP_NOISE</span>, <span class="keyword">INS_EKF2_IMU_POS_X</span>),</div>
+<div class="line">      <span class="keyword">and</span> <span class="keyword">the</span> <span class="keyword">GNSS</span> <span class="keyword">checks</span> <span class="keyword">as</span> <span class="keyword">INS_EKF2_GNSS_name</span> <span class="keyword">for</span> <span class="keyword">GNSS_name</span> (<span class="keyword">e.g.</span> <span class="keyword">INS_EKF2_GNSS_REQ_EPH</span>).</div>
+<div class="line">      <span class="keyword">The</span> <span class="keyword">GNSS</span> <span class="keyword">thresholds</span> <span class="keyword">are</span> <span class="keyword">the</span> <span class="keyword">ones</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">previous</span> <span class="keyword">version</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">horizontal</span> <span class="keyword">and</span> <span class="keyword">speed</span> <span class="keyword">accuracy</span></div>
+<div class="line">      (<span class="keyword">EPH</span> 5 <span class="keyword">m</span>, <span class="keyword">speed</span> <span class="keyword">accuracy</span> 1.0 <span class="keyword">m</span>/<span class="keyword">s</span>, <span class="keyword">PX4</span> <span class="keyword">uses</span> 3 <span class="keyword">m</span> <span class="keyword">and</span> 0.5 <span class="keyword">m</span>/<span class="keyword">s</span>) <span class="keyword">and</span> <span class="keyword">of</span> <span class="keyword">PX4</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">rest</span> (<span class="keyword">EPV</span> 5 <span class="keyword">m</span>,</div>
+<div class="line">      10 <span class="keyword">s</span> <span class="keyword">healthy</span> <span class="keyword">before</span> <span class="keyword">use</span>).</div>
+<div class="line">      <span class="keyword">See</span> <span class="keyword">sw</span>/<span class="keyword">ext</span>/<span class="keyword">px4_ekf2</span>/<span class="keyword">generated</span>/<span class="keyword">ekf2_params.h</span> <span class="keyword">and</span> <span class="keyword">https:</span>//<span class="keyword">docs.px4.io</span>/<span class="keyword">main</span>/<span class="keyword">en</span>/<span class="keyword">advanced_config</span>/<span class="keyword">parameter_reference.html</span></div>
+<div class="line">      <span class="keyword">Sensors</span> <span class="keyword">are</span> <span class="keyword">only</span> <span class="keyword">used</span> <span class="keyword">when</span> <span class="keyword">their</span> <span class="keyword">data</span> <span class="keyword">arrives</span>, <span class="keyword">so</span> <span class="keyword">a</span> <span class="keyword">sensor</span> <span class="keyword">enabled</span> <span class="keyword">in</span> <span class="keyword">a</span> *<span class="keyword">_CTRL</span> <span class="keyword">parameter</span></div>
+<div class="line">      <span class="keyword">without</span> <span class="keyword">that</span> <span class="keyword">sensor</span> <span class="keyword">does</span> <span class="keyword">nothing.</span></div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">Airspeed</span> <span class="keyword">and</span> <span class="keyword">sideslip</span> <span class="keyword">are</span> <span class="keyword">only</span> <span class="keyword">fused</span> <span class="keyword">in</span> <span class="keyword">fixed</span> <span class="keyword">wing</span> <span class="keyword">flight:</span> <span class="keyword">always</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">fixedwing</span> <span class="keyword">firmware</span>,</div>
+<div class="line">      <span class="keyword">and</span> <span class="keyword">for</span> <span class="keyword">hybrids</span> <span class="keyword">flown</span> <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">rotorcraft</span> <span class="keyword">firmware</span> <span class="keyword">when</span> <span class="keyword">they</span> <span class="keyword">set</span> <span class="keyword">stateSetFixedWingFlight</span>()</div>
+<div class="line">      (<span class="keyword">rotwing_state</span> <span class="keyword">does</span> <span class="keyword">this</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">forward</span> <span class="keyword">flight</span>).</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_OPTITRACK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;false&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Easy configuration of full optitrack (position- and yaw fusion, height, init origin)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FUSION_MODE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;(MASK_USE_GPS)&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The sensor that are used for position fusion&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_MAG_FUSION_MODE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;MAG_FUSE_TYPE_AUTO&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Default magnetometer fusion type&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_VDIST_SENSOR_TYPE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;VDIST_SENSOR_BARO&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Primary sensor used for vertical distance&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_CHECK_MASK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;(MASK_GPS_NSATS | MASK_GPS_HACC | MASK_GPS_SACC)&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPS checks enabled before initialization of the global positioning&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EVP_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;External vision position noise [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EVV_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;External vision velocity noise [m/s]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EVA_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;External vision angle noise [rad]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_V_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPS measurement noise for horizontal velocity [m/s]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_P_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPS measurement position noise [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_BARO_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Barometric measurement noise for altitude [m]&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_IMU_POS_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;IMU X offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_IMU_POS_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;IMU Y offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_IMU_POS_Z&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;IMU Z offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_POS_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPS X offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_POS_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPS Y offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_POS_Z&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPS Z offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_POS_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor X offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_POS_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor Y offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_POS_Z&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor Z offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_SONAR_MIN_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AGL sensor minimum range [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_SONAR_MAX_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AGL sensor maximum range [m]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RANGE_MAIN_AGL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If enabled uses radar sensor as primary AGL source, if possible&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_SENSOR_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;15&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;flow/radar message delay [ms]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_MIN_FLOW_QUALITY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;100&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Minimum quality of the optical flow message accepted [0-255]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_MAX_FLOW_RATE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum flow rate the sensor can perceive [rad/sec]]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.01&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor noise [rad/sec]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_NOISE_QMIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.03&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor noise when quality is minimum [rad/sec]&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_INNOV_GATE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor innovation gate [STD]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_OPTITRACK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Indoor configuration with only external vision (e.g. Optitrack): EV position, velocity, yaw and height, no GNSS, magnetometer and barometer, EV noise 0.02 m / 0.05 rad and delay 175 ms (each can be changed)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;7&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GNSS fusion bitmask: 1 horizontal position, 2 vertical position, 4 velocity, 8 dual antenna heading (EKF2_GPS_CTRL_*)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_HGT_REF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Height reference: 0 baro (default, PX4 uses 1), 1 GNSS, 2 range finder, 3 external vision (EKF2_HGT_REF_*)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_MAG_TYPE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Magnetometer: 0 automatic (heading on the ground, 3D in the air), 1 heading, 5 none, 6 only to initialize the heading (EKF2_MAG_TYPE_*)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EV_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;External vision fusion bitmask: 1 horizontal position, 2 vertical position, 4 velocity, 8 yaw (EKF2_EV_CTRL_*), 15 with INS_EKF2_OPTITRACK&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_OF_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Optical flow fusion&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RNG_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Range finder height: 0 off, 1 conditional (low and slow), 2 always&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_DRAG_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Multirotor drag fusion (wind estimation without airspeed sensor)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_IMU_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;7&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;IMU bitmask: 1 gyro bias, 2 accel bias, 4 gravity vector fusion&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_ARSP_THR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Airspeed fusion above this true airspeed [m/s], 0 disables it (fixedwing default 8, 10 for hybrids as PX4 for VTOL)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FUSE_BETA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Synthetic sideslip fusion in fixed wing flight (fixedwing default 1, also 1 for hybrids)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_AIRSPEED_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sender ID of the airspeed: any sensor, or AIRSPEED_AIR_DATA_ID computed by air_data from a differential pressure sensor (the airspeed estimated from the wind is never used). Choose one when a sensor gives both.&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GNSS_CHECK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;(GNSS_CHECK_NSATS|GNSS_CHECK_EPH|GNSS_CHECK_SACC|GNSS_CHECK_FIX)&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GNSS checks before the GNSS data is used (GNSS_CHECK_*), PX4 uses all except jamming (2047)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GNSS_REQ_EPH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum horizontal position accuracy [m] (PX4 3.0)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GNSS_REQ_EPV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum vertical position accuracy [m]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GNSS_REQ_SACC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum speed accuracy [m/s] (PX4 0.5)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GNSS_REQ_NSATS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;6&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Required number of satellites&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GNSS_REQ_PDOP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum PDOP&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;110&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GNSS measurement delay [ms] (PX4 SENS_GNSS0_DELAY)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_POS_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GNSS antenna X offset from the CoG [m] (also _Y and _Z, PX4 SENS_GNSS0_OFF*)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_YAW_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Yaw of the dual antenna baseline in the body frame [deg], enables the GNSS heading from RELPOS&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_ANTENNA_DISTANCE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Distance between the two antennas of the dual antenna heading [m], the heading is only used when the measured distance is within INS_EKF2_GPS_ANTENNA_DISTANCE_ERR (not checked when not set)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_ANTENNA_DISTANCE_ERR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum difference between the measured and the configured antenna distance [m]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_YAW_NOISE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GNSS heading noise when the receiver gives no accuracy [rad]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RNG_MIN_DIST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.001&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Minimum distance the range finder measures [m]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RNG_MAX_DIST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum distance the range finder measures [m]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_OF_MAX_RATE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;200&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum flow rate the optical flow sensor measures [rad/s]&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_AGL_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used as input for AGL measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_BARO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for Barometric measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GYRO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used as input for gyro measurements&quot;</span>/&gt;</div>
@@ -332,17 +381,19 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_MAG_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used as input for magnetic measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_GPS_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;GPS_MULTI_ID&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for GPS measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RELPOS_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ABI sensor ID used ad input for Relative Position heading measurements&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EVENT_MSGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send the EKF events and status changes (alignment, fusion started/stopped, resets, faults) as INFO_MSG to the flight recorder, and the important ones to the GCS (default: TRUE)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EVENTS_ALL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send all the EKF events to the GCS, not only the important ones (alignment, dead reckoning, faults); all events always go to the flight recorder (default: FALSE, setting &#39;all events&#39;)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_EVENT_HOLDOFF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Minimum time between two messages about the same status or event (default: 5 s)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_PREFLIGHT_POS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Preflight check: require the configured position source (GNSS or external vision) to be used (default: TRUE)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_PREFLIGHT_INNOV_TAU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Preflight check: time constant of the low-pass filter of the innovation test ratios [s], a filtered ratio above 1 blocks arming&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FORCE_NAV_REF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;force to use the reference defined in the flight plan and not the one computed by the filter after first good GPS position&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ALT_LLA_WAYPOINTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Use LLA altitude instead of LTP z for long distance flight (default=TRUE)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;INS&quot;</span>&gt;</div>
-<div class="line">      <span class="comment">&lt;!-- EKF2 Configuration parameters --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ekf2&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;ekf2.qnh&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;500&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1500&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;QNH&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;ekf2.temp&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;-50&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;80&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;temperature&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;ekf2.fusion_mode&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;remove_gps_yaw&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;modules/ins/ins_ekf2&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;remove_gps&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;bool&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;ins_ekf2_events_all&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;all events&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;ins/ins_ekf2&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
@@ -359,47 +410,85 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;EXTERNAL_POSE_SMALL&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;ins_ekf2_parse_EXTERNAL_POSE_SMALL(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ALT_LLA_WAYPOINTS&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXSTANDARD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;-std=c++14&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXSTANDARD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;-std=c++17&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Wno-unused-but-set-variable&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Wno-unused-variable&quot;</span>/&gt;</div>
-<div class="line">    <span class="comment">&lt;!-- PX4 ecl (archived upstream): sensor_range_finder.hpp overloads Sensor::runChecks() --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Wno-overloaded-virtual&quot;</span>/&gt;</div>
-<div class="line"> </div>
+<div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Wno-unused-parameter&quot;</span>/&gt; <span class="comment">&lt;!-- in the PX4 EKF2 code --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;fno-associative-math&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CXXFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;fno-strict-aliasing&quot;</span>/&gt; <span class="comment">&lt;!-- as PX4, the generated EKF2 state is accessed through a vector cast --&gt;</span></div>
 <div class="line">    <span class="comment">&lt;!-- EKF2 files --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ins.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ins_ekf2.cpp&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- Include the ecl and matrix libraries from ext --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/ecl/&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/matrix/&quot;</span>/&gt;</div>
+<div class="line">    <span class="comment">&lt;!-- The EKF2 of PX4 and the PX4 libraries it needs, see sw/ext/px4_ekf2/sync_px4_ekf2.py --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2/lib&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2/lib/matrix&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2/EKF/python&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2/generated&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/px4_ekf2/stubs&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;__PAPARAZZI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ECL_STANDALONE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_INTEGRATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt; <span class="comment">&lt;!-- Needed to enable IMU integration --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODULE_NAME&quot;</span>/&gt; <span class="comment">&lt;!-- route the EKF2 messages through the PX4 log macros (stubs/px4_platform_common/log.h) --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ALT_LLA_WAYPOINTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(USE_ALT_LLA_WAYPOINTS)&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- Compile needed ecl files --&gt;</span></div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;geo.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/geo&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;geo_mag_declination.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/geo_lookup&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mag_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;covariance.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;drag_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ekf.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ekf_helper.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;estimator_interface.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_checks.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mag_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;optflow_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sideslip_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;terrain_estimator.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;vel_pos_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_yaw_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_down_sampler.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;EKFGSF_yaw.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sensor_range_finder.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;utils.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Enabled EKF2 features (only the sensors given to the EKF by ins_ekf2.cpp) --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_AIRSPEED&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_BAROMETER&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_DRAG_FUSION&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_EXTERNAL_VISION&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_GNSS&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_GNSS_YAW&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_MAGNETOMETER&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_OPTICAL_FLOW&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_RANGE_FINDER&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_SIDESLIP&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_TERRAIN&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CONFIG_EKF2_WIND&quot;</span>/&gt;</div>
+<div class="line">    <span class="comment">&lt;!-- Compile the EKF2 and the needed libraries --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ZeroGyroUpdate.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ZeroVelocityUpdate.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/airspeed&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;baro_height_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/barometer&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;drag_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/drag&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ev_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/external_vision&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ev_height_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/external_vision&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ev_pos_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/external_vision&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ev_vel_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/external_vision&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ev_yaw_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/external_vision&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fake_height_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fake_pos_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gnss_height_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/gnss&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gnss_yaw_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/gnss&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/gnss&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mag_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/magnetometer&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mag_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/magnetometer&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;optical_flow_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/optical_flow&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;optical_flow_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/optical_flow&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;range_finder_consistency_check.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/range_finder&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;range_height_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/range_finder&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;range_height_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/range_finder&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sensor_range_finder.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/range_finder&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sideslip_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/aid_sources/sideslip&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;bias_estimator.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/bias_estimator&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;covariance.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ekf.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ekf_helper.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;estimator_interface.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;height_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_down_sampler.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/imu_down_sampler&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;output_predictor.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/output_predictor&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;position_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;terrain_control.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;velocity_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;wind.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;EKFGSF_yaw.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF/yaw_estimator&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;yaw_fusion.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/EKF&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;atmosphere.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/lib/atmosphere&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;geo.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/lib/geo&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gnss_checks.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/lib/gnss&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;lat_lon_alt.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/lib/lat_lon_alt&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;geo_mag_declination.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;px4_ekf2/lib/world_magnetic_model&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -409,7 +498,7 @@ Raw ins_ekf2.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sun Nov 8 2026 19:26:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 09:42:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

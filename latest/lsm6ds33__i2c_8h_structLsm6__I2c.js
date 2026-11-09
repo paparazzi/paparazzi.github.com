@@ -2,8 +2,8 @@ var lsm6ds33__i2c_8h_structLsm6__I2c =
 [
     [ "config", "lsm6ds33__i2c_8h.html#a5ee1aaf09889205b87a09afc46e5c397", null ],
     [ "data_available", "lsm6ds33__i2c_8h.html#a6bcba24140eec6b09ecaf927b69a9448", null ],
-    [ "data_g", "lsm6ds33__i2c_8h.html#ab66cf54c59ebd520e39b7c969416f09a", null ],
-    [ "data_xl", "lsm6ds33__i2c_8h.html#aa4857d5cdc6ad5e542a4012632100fd7", null ],
+    [ "data_g", "lsm6ds33__i2c_8h.html#a00b4392489eccf41beafb24407c8b6af", null ],
+    [ "data_xl", "lsm6ds33__i2c_8h.html#a9005039a0be410d290b55f0c181177c6", null ],
     [ "i2c_p", "lsm6ds33__i2c_8h.html#aca01e794d44828f26da9a7fd01efc4fe", null ],
     [ "i2c_trans", "lsm6ds33__i2c_8h.html#a9106acb39d21133d8910d11995882632", null ],
     [ "init_status", "lsm6ds33__i2c_8h.html#a87207bcdb47c2d7be96a8005f81ffe9b", null ],

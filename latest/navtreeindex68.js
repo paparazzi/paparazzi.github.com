@@ -1,5 +1,12 @@
 var NAVTREEINDEX68 =
 {
+"gps__ubx__ucenter_8h.html#a6cb0d0e14aa4700bc5058890f146ca74":[13,0,1,0,6,29,31,2],
+"gps__ubx__ucenter_8h.html#a6db8ada1beaedc227466750037aa6cf7":[13,0,1,0,6,29,31,0,10],
+"gps__ubx__ucenter_8h.html#a75187cc42f708d4abd5048d1c3f606b2":[13,0,1,0,6,29,31,0,4],
+"gps__ubx__ucenter_8h.html#a874437be54c3f9c1625d1479133c9bc2":[13,0,1,0,6,29,31,0,6],
+"gps__ubx__ucenter_8h.html#a96a918070719f68d1651fa36b9abac71":[13,0,1,0,6,29,31,0,9],
+"gps__ubx__ucenter_8h.html#a9eb5300629b8f9068553070d0b93ecb6":[13,0,1,0,6,29,31,0,11],
+"gps__ubx__ucenter_8h.html#aa380f4474804d74f622d7554e4791dbd":[13,0,1,0,6,29,31,0,5],
 "gps__ubx__ucenter_8h.html#aac98c418a05bea072cea0d90b74c0e14":[13,0,1,0,6,29,31,0,12],
 "gps__ubx__ucenter_8h.html#ab3e87f1813c44b35cf8df6774715a4a9":[13,0,1,0,6,29,31,4],
 "gps__ubx__ucenter_8h.html#acae4010c5d7917de4771d4c369ae75a5":[13,0,1,0,6,29,31,0,1],
@@ -82,7 +89,7 @@ var NAVTREEINDEX68 =
 "ground__detect_8h.html#ae126960bb71d572903476eb005810563":[13,0,1,0,6,47,7,5],
 "ground__detect_8h.html#ae9f5fc867d5bf407ec572e60d89bd612":[13,0,1,0,6,47,7,2,1],
 "ground__detect_8h.html#af04e8401e115cb4aa544618c9cb9288e":[13,0,1,0,6,47,7,8],
-"ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed307____":[13,0,1,0,6,47,7,2],
+"ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed308____":[13,0,1,0,6,47,7,2],
 "ground__detect_8h.html#structground__detect__values__t":[13,0,1,0,6,47,7,1],
 "ground__detect_8h.html#unionground__detect__bitmask__t":[13,0,1,0,6,47,7,0],
 "ground__detect_8h_source.html":[13,0,1,0,6,47,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX68 =
 "group__ac__info.html#gab89f5850f23c57158ec4a2a3fbdda284":[10,2,32],
 "group__ac__info.html#gabea65a3c5d86403c9c6f01c29dfa3dfd":[10,2,28],
 "group__ac__info.html#gac871ebab1d96f5dcab9d03f29a92246e":[10,2,23],
-"group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e":[10,2,12],
-"group__ac__info.html#gade35a76a0329e540ef2ea613124705f0":[10,2,18],
-"group__ac__info.html#gadf71ce610870e0b3e05fe6d53b9429e5":[10,2,30],
-"group__ac__info.html#gae129297882c430ae5e3aa55075e44aef":[10,2,27],
-"group__ac__info.html#gae59a13c203efbbcc1f4ee344e68254e9":[10,2,43],
-"group__ac__info.html#structacInfo":[10,2,0],
-"group__chprintf.html":[10,9],
-"group__chprintf.html#a59fcb956ca6369b0e24a225d7e26c795":[10,9,1,0]
+"group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e":[10,2,12]
 };

@@ -6,7 +6,7 @@ var group__state__interface_structState =
     [ "airspeed_i", "group__state__wind__airspeed.html#ga162d7334f4d02234f786432d17099ca7", null ],
     [ "alt_agl_f", "group__state__position.html#gaa5ceb885c6d42090b684edb86ee19a2b", null ],
     [ "angle_of_attack_f", "group__state__wind__airspeed.html#gae0942f9776a840e9c063ea6fc88b9078", null ],
-    [ "attitude_input_filter", "group__state__interface.html#a3b2301e7b4c91b877dd2d0203faa710c", null ],
+    [ "attitude_input_filter", "group__state__interface.html#ga3b2301e7b4c91b877dd2d0203faa710c", null ],
     [ "body_accel_i", "group__state__acceleration.html#ga15cfb41478e4b2e0105ab085d0711b9f", null ],
     [ "body_rates_f", "group__state__rate.html#ga7f86e8d9743c1cc28439f1019d5b7e6a", null ],
     [ "body_rates_i", "group__state__rate.html#gac383a9698fc97dca5d56ef455babfa71", null ],
@@ -20,6 +20,7 @@ var group__state__interface_structState =
     [ "enu_pos_i", "group__state__position.html#ga98d584b61356cbb40db89793c95f2637", null ],
     [ "enu_speed_f", "group__state__velocity.html#gaffaf28d23b855f3a151d6b4945bf1787", null ],
     [ "enu_speed_i", "group__state__velocity.html#gadb565cbf71f8332da563874e5647a133", null ],
+    [ "fixed_wing_flight", "group__state__flight.html#gac6466d765a935752d551c16a5f080e1a", null ],
     [ "h_speed_dir_f", "group__state__velocity.html#ga97af69f9c2d848327057cc3217686459", null ],
     [ "h_speed_dir_i", "group__state__velocity.html#ga8fb41529b42f0ca81c0b87adba9b0658", null ],
     [ "h_speed_norm_f", "group__state__velocity.html#ga8828affd49f4aa91907296d4f2ddb94d", null ],
@@ -36,7 +37,7 @@ var group__state__interface_structState =
     [ "ned_pos_i", "group__state__position.html#ga075a2f37d850f94e481ecb1982e47e54", null ],
     [ "ned_speed_f", "group__state__velocity.html#ga31bee2c702671004d3dc9490dc2e2822", null ],
     [ "ned_speed_i", "group__state__velocity.html#ga86ec16926278b3e4c1a57e1ba9e5c2a7", null ],
-    [ "ned_to_body_orientation", "group__state__interface.html#ac816bc9e56dde04e26318cba12267f57", null ],
+    [ "ned_to_body_orientation", "group__state__interface.html#gac816bc9e56dde04e26318cba12267f57", null ],
     [ "origin_input_filter", "group__state__position.html#ga86eef4f9cf9f50d8b026e611f77bfe8d", null ],
     [ "pos_input_filter", "group__state__position.html#gaea55bd3521343e4795e5ea2ed7c6b66c", null ],
     [ "pos_status", "group__state__position.html#ga653583f32fe4e3e5e075f4b767859b7f", null ],
@@ -50,6 +51,6 @@ var group__state__interface_structState =
     [ "utm_pos_f", "group__state__position.html#ga339c3808ea93eb60bbe064d25098a825", null ],
     [ "wind_air_input_filter", "group__state__wind__airspeed.html#gac9681f92ab85054b4d08e9bc8ae11e01", null ],
     [ "wind_air_status", "group__state__wind__airspeed.html#ga4fc58d1ad5b89c1cacf4dd22d2f5864d", null ],
-    [ "windspeed_f", "group__state__wind__airspeed.html#gaee7baedbe7171e8d76b79c9578e49183", null ],
-    [ "windspeed_i", "group__state__wind__airspeed.html#gac30cbc9d0158b4aa5d147b57e74a91d1", null ]
+    [ "windspeed_f", "group__state__wind__airspeed.html#ga567738048984be1aba0c488215485151", null ],
+    [ "windspeed_i", "group__state__wind__airspeed.html#ga9d4f97f162207e9a250ba40d4769550a", null ]
 ];

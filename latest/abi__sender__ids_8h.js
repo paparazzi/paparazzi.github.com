@@ -24,6 +24,7 @@ var abi__sender__ids_8h =
     [ "AGL_VL53L1X_ID", "abi__sender__ids_8h.html#a445c9cfbde5ffec4273b9ebc324d2076", null ],
     [ "AHRS_ALIGNER_ID", "abi__sender__ids_8h.html#aa7f24bb6aed27fdb849c69165faaf250", null ],
     [ "AIRSPEED_ADC_ID", "abi__sender__ids_8h.html#a388cc697b19d54ef4bae9cf812d89072", null ],
+    [ "AIRSPEED_AIR_DATA_ID", "abi__sender__ids_8h.html#a91958292883515f97ccedcf8e75ec2de", null ],
     [ "AIRSPEED_ETS_ID", "abi__sender__ids_8h.html#a58aad6ced16b11a8ce7dd32a8f9363ab", null ],
     [ "AIRSPEED_NPS_ID", "abi__sender__ids_8h.html#aebc4ed5c0d0e03fe974d5b6228821fe6", null ],
     [ "AIRSPEED_SDP3X_ID", "abi__sender__ids_8h.html#aa7f21ab69c37030286ffcce5ca8f3de7", null ],

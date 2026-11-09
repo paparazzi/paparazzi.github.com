@@ -3570,6 +3570,7 @@ AHRS_REF_QUAT (ID 169)</h2>
 </table>
 <h2><a class="anchor" id="INS_EKF2_EXT"></a>
 INS_EKF2_EXT (ID 170)</h2>
+<p>Extended status of the EKF2: GNSS drift checks, estimated accuracies, height biases, emergency yaw estimate and magnetometer checks.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -3582,11 +3583,33 @@ INS_EKF2_EXT (ID 170)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">gps_drift_blocked   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">The GPS drift calculation is blocked    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">gyro_vibe_coning   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Gyro delta angle coning metric = filtered length of (delta_angle x prev_delta_angle)    </td></tr>
+<td class="markdownTableBodyNone">control_mode_upper   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Upper 32 bits of the control status (bitfields from <a class="el" href="common_8h.html">common.h</a>)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">gyro_vibe_hf   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Gyro high frequency vibe = filtered length of (delta_angle - prev_delta_angle)    </td></tr>
+<td class="markdownTableBodyNone">pos_acc_h   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">1-sigma horizontal position accuracy    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">accel_vibe_hf   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Accel high frequency vibe = filtered length of (delta_velocity - prev_delta_velocity)   </td></tr>
+<td class="markdownTableBodyNone">pos_acc_v   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">1-sigma vertical position accuracy    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vel_acc_h   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">1-sigma horizontal velocity accuracy    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vel_acc_v   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">1-sigma vertical velocity accuracy    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">hagl   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Height above ground from the terrain estimate (NaN when not valid)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">baro_bias   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Estimated barometer height bias    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">gnss_hgt_bias   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Estimated GNSS height bias    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">yaw_gsf   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone">Yaw of the EKF-GSF emergency yaw estimator (NaN when not available)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">yaw_gsf_std   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone">1-sigma accuracy of the EKF-GSF yaw    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mag_inclination   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone">Measured magnetic field inclination    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mag_inclination_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone">Magnetic field inclination of the world magnetic model    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mag_strength   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">gauss   </td><td class="markdownTableBodyNone">Measured magnetic field strength    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mag_strength_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">gauss   </td><td class="markdownTableBodyNone">Magnetic field strength of the world magnetic model   </td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_BIAS"></a>
 AHRS_BIAS (ID 171)</h2>
@@ -7254,7 +7277,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 8 2026 19:26:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 09:42:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

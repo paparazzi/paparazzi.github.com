@@ -9,5 +9,6 @@ var imu_8h_structimu__mag__t =
     [ "scale", "imu_8h.html#a5e0bd3e83e489c7cd9289c38b1dd58ae", null ],
     [ "scale_f", "imu_8h.html#a36537500deef1792a4c94ccac2641e70", null ],
     [ "scaled", "imu_8h.html#ae29b5a398e1bd42788385a602935d83d", null ],
+    [ "strength", "imu_8h.html#a11ccd6afaf90f3047f11de828838385a", null ],
     [ "unscaled", "imu_8h.html#ab6809ba54fdfac5e02ec9d2c0ac2337d", null ]
 ];

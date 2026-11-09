@@ -33,5 +33,6 @@ var air__data_8c =
     [ "incidence_ev", "air__data_8c.html#aa788a84ec6afad2bdada0f7986d7a1ac", null ],
     [ "pressure_abs_ev", "air__data_8c.html#ac1aedf2c9e41637e54a9151b3d9e0c08", null ],
     [ "pressure_diff_ev", "air__data_8c.html#a6042a25d47f60da070c43391990eb157", null ],
+    [ "sensor_airspeed_time", "air__data_8c.html#aae478788b2e956fec85f7b241ec48333", null ],
     [ "temperature_ev", "air__data_8c.html#a38cb06612986df226f29ce29c93450e8", null ]
 ];
