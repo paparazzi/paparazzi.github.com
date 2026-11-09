@@ -387,6 +387,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div class="line">      <span class="comment">&lt;!-- -isystem: no warnings from the gz headers --&gt;</span></div>
 <div class="line">      <span class="keyword">nps.CXXFLAGS</span> += $(<span class="keyword">patsubst</span> -<span class="keyword">I</span>%,-<span class="keyword">isystem</span> %,$(<span class="keyword">shell</span> <span class="keyword">pkg-config</span> --<span class="keyword">cflags</span> $(<span class="keyword">GZ_SIM_PKG</span>)))</div>
 <div class="line">      <span class="keyword">nps.LDFLAGS</span>  += $(<span class="keyword">shell</span> <span class="keyword">pkg-config</span> --<span class="keyword">libs</span> $(<span class="keyword">GZ_SIM_PKG</span>))</div>
+<div class="line">      <span class="keyword">nps.LDFLAGS</span>  += -<span class="keyword">lfmt</span></div>
 <div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps_fdm_gz.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;nps&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -399,7 +400,7 @@ Raw fdm_gazebo.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Nov 9 2026 14:41:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 15:39:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
