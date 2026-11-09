@@ -1160,6 +1160,7 @@ var annotated_dup =
     [ "uavcan_event_t", "uavcan_8h.html#structuavcan__event__t", "uavcan_8h_structuavcan__event__t" ],
     [ "uavcan_iface_t", "uavcan_8h.html#structuavcan__iface__t", "uavcan_8h_structuavcan__iface__t" ],
     [ "uavcan_node_mapping_t", "uavcan__allocator_8h.html#structuavcan__node__mapping__t", "uavcan__allocator_8h_structuavcan__node__mapping__t" ],
+    [ "uavcan_rx_frame", "uavcan_8h.html#structuavcan__rx__frame", "uavcan_8h_structuavcan__rx__frame" ],
     [ "uavcan_unique_id_t", "uavcan__allocator_8h.html#structuavcan__unique__id__t", "uavcan__allocator_8h_structuavcan__unique__id__t" ],
     [ "udp_periph", "udp_8h.html#structudp__periph", "udp_8h_structudp__periph" ],
     [ "UdpArch", "sim_2mcu__periph_2udp__arch_8c.html#structUdpArch", "sim_2mcu__periph_2udp__arch_8c_structUdpArch" ],

@@ -9,9 +9,14 @@ var linux_2modules_2core_2threads__arch_8c =
     [ "pprz_mtx_lock", "linux_2modules_2core_2threads__arch_8c.html#a95125cfa7b5fa884f4b72a1cee15fc34", null ],
     [ "pprz_mtx_trylock", "linux_2modules_2core_2threads__arch_8c.html#a20bfc2ac32043b58f03d6776c4a58f46", null ],
     [ "pprz_mtx_unlock", "linux_2modules_2core_2threads__arch_8c.html#a67e557cfc2429b15d3ef78bced1fc7bf", null ],
+    [ "pprz_thread_assert_main", "linux_2modules_2core_2threads__arch_8c.html#a7d27768d3a0e4c4ede337ac2d07b59ba", null ],
     [ "pprz_thread_create", "linux_2modules_2core_2threads__arch_8c.html#ae4895c0da5ba7f8440d54752dde4ff56", null ],
     [ "pprz_thread_exit", "linux_2modules_2core_2threads__arch_8c.html#adea608f141ee222f13bb3867854572d1", null ],
+    [ "pprz_thread_init_main", "linux_2modules_2core_2threads__arch_8c.html#a19f57a363b1619fd28f004861975cb59", null ],
+    [ "pprz_thread_is_main", "linux_2modules_2core_2threads__arch_8c.html#a394d788431ded1f0d37d595207f61c13", null ],
     [ "pprz_thread_join", "linux_2modules_2core_2threads__arch_8c.html#a3d0da95d5f58f817dc1b1f3b0c25df8e", null ],
     [ "pprz_thread_tryjoin", "linux_2modules_2core_2threads__arch_8c.html#addd38f598de51416b8fd53904920d8f9", null ],
-    [ "stub", "linux_2modules_2core_2threads__arch_8c.html#a38ccbb62a1a26098dec12b6c272b0fde", null ]
+    [ "stub", "linux_2modules_2core_2threads__arch_8c.html#a38ccbb62a1a26098dec12b6c272b0fde", null ],
+    [ "main_thread", "linux_2modules_2core_2threads__arch_8c.html#a5761c2f355ee358ef6f379d658ccb382", null ],
+    [ "main_thread_set", "linux_2modules_2core_2threads__arch_8c.html#aad258928b2bc2dcc369d6e879c03fe2d", null ]
 ];

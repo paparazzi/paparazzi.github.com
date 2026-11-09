@@ -202,6 +202,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a26cf25b74d3618ed83949d9ba0762f66" id="r_a26cf25b74d3618ed83949d9ba0762f66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8c.html#a26cf25b74d3618ed83949d9ba0762f66">colorfilter_func</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">img</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
 <tr class="separator:a26cf25b74d3618ed83949d9ba0762f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d2e6095f71adc88ce123d665909924" id="r_a48d2e6095f71adc88ce123d665909924"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8c.html#a48d2e6095f71adc88ce123d665909924">colorfilter_event</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="separator:a48d2e6095f71adc88ce123d665909924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b6b333c3f84d7497aef5629a2e4453" id="r_ab8b6b333c3f84d7497aef5629a2e4453"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8c.html#ab8b6b333c3f84d7497aef5629a2e4453">colorfilter_init</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="separator:ab8b6b333c3f84d7497aef5629a2e4453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -223,6 +225,9 @@ Variables</h2></td></tr>
 <tr class="separator:a178c4572aced8af31538a036d2d1c5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbfda1ed53911e6278333ccbd4b285eb" id="r_afbfda1ed53911e6278333ccbd4b285eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8c.html#afbfda1ed53911e6278333ccbd4b285eb">color_count</a> = 0</td></tr>
 <tr class="separator:afbfda1ed53911e6278333ccbd4b285eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23133642343c0e43ea102d315dd5799e" id="r_a23133642343c0e43ea102d315dd5799e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8c.html#a23133642343c0e43ea102d315dd5799e">colorfilter_new_count</a> = <a class="el" href="microrl_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="memdesc:a23133642343c0e43ea102d315dd5799e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new color count from the video thread, sent as ABI message by <a class="el" href="colorfilter_8c.html#a48d2e6095f71adc88ce123d665909924">colorfilter_event()</a> in the main thread.  <br /></td></tr>
+<tr class="separator:a23133642343c0e43ea102d315dd5799e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5a295f1f80434acb03d99955a6b7613c" name="a5a295f1f80434acb03d99955a6b7613c"></a>
@@ -262,6 +267,28 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a48d2e6095f71adc88ce123d665909924" name="a48d2e6095f71adc88ce123d665909924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d2e6095f71adc88ce123d665909924">&#9670;&#160;</a></span>colorfilter_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> colorfilter_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00076">76</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+
+<p class="reference">References <a class="el" href="colorfilter_8c_source.html#l00054">color_count</a>, <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_new_count</a>, <a class="el" href="colorfilter_8c_source.html#l00039">COLORFILTER_SEND_OBSTACLE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="abi__sender__ids_8h_source.html#l00554">OBS_DETECTION_COLOR_ID</a>.</p>
+
+</div>
+</div>
 <a id="a26cf25b74d3618ed83949d9ba0762f66" name="a26cf25b74d3618ed83949d9ba0762f66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26cf25b74d3618ed83949d9ba0762f66">&#9670;&#160;</a></span>colorfilter_func()</h2>
 
@@ -296,11 +323,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00059">59</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00062">62</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">References <a class="el" href="colorfilter_8c_source.html#l00049">color_cb_max</a>, <a class="el" href="colorfilter_8c_source.html#l00048">color_cb_min</a>, <a class="el" href="colorfilter_8c_source.html#l00054">color_count</a>, <a class="el" href="colorfilter_8c_source.html#l00051">color_cr_max</a>, <a class="el" href="colorfilter_8c_source.html#l00050">color_cr_min</a>, <a class="el" href="colorfilter_8c_source.html#l00047">color_lum_max</a>, <a class="el" href="colorfilter_8c_source.html#l00046">color_lum_min</a>, <a class="el" href="colorfilter_8c_source.html#l00039">COLORFILTER_SEND_OBSTACLE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="image_8c_source.html#l00173">image_yuv422_colorfilt()</a>, and <a class="el" href="abi__sender__ids_8h_source.html#l00554">OBS_DETECTION_COLOR_ID</a>.</p>
+<p class="reference">References <a class="el" href="colorfilter_8c_source.html#l00049">color_cb_max</a>, <a class="el" href="colorfilter_8c_source.html#l00048">color_cb_min</a>, <a class="el" href="colorfilter_8c_source.html#l00054">color_count</a>, <a class="el" href="colorfilter_8c_source.html#l00051">color_cr_max</a>, <a class="el" href="colorfilter_8c_source.html#l00050">color_cr_min</a>, <a class="el" href="colorfilter_8c_source.html#l00047">color_lum_max</a>, <a class="el" href="colorfilter_8c_source.html#l00046">color_lum_min</a>, <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_new_count</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="image_8c_source.html#l00173">image_yuv422_colorfilt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00082">colorfilter_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00095">colorfilter_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -344,9 +371,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00082">82</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00095">95</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">References <a class="el" href="colorfilter_8c_source.html#l00033">COLORFILTER_FPS</a>, <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>, <a class="el" href="cv_8c_source.html#l00046">cv_add_to_device()</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="colorfilter_8c_source.html#l00033">COLORFILTER_FPS</a>, <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>, <a class="el" href="cv_8c_source.html#l00046">cv_add_to_device()</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -395,7 +422,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00049">49</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -413,7 +440,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00048">48</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -431,7 +458,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00054">54</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cv__detect__color__object_8c_source.html#l00259">color_object_detector_periodic()</a>, and <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cv__detect__color__object_8c_source.html#l00259">color_object_detector_periodic()</a>, <a class="el" href="colorfilter_8c_source.html#l00076">colorfilter_event()</a>, and <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +476,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00051">51</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -467,7 +494,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00050">50</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -485,7 +512,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00047">47</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -503,7 +530,35 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00046">46</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
+
+</div>
+</div>
+<a id="a23133642343c0e43ea102d315dd5799e" name="a23133642343c0e43ea102d315dd5799e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23133642343c0e43ea102d315dd5799e">&#9670;&#160;</a></span>colorfilter_new_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> colorfilter_new_count = <a class="el" href="microrl_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A new color count from the video thread, sent as ABI message by <a class="el" href="colorfilter_8c.html#a48d2e6095f71adc88ce123d665909924">colorfilter_event()</a> in the main thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="colorfilter_8c_source.html#l00059">59</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00076">colorfilter_event()</a>, and <a class="el" href="colorfilter_8c_source.html#l00062">colorfilter_func()</a>.</p>
 
 </div>
 </div>
@@ -531,7 +586,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="colorfilter_8c.html">colorfilter.c</a></li>
-    <li class="footer">Generated on Mon Nov 9 2026 14:01:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 14:30:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var ring__buffer_8c =
 [
+    [ "RB_LOAD", "ring__buffer_8c.html#a54ae84c117d2abc32743e446ecd1c472", null ],
+    [ "RB_STORE", "ring__buffer_8c.html#a180ecadbf0e7189042f1358e26421c8c", null ],
     [ "ring_buffer_available", "ring__buffer_8c.html#abb36e9fea06943ba1fb9bef5fac4763d", null ],
     [ "ring_buffer_free_space", "ring__buffer_8c.html#a1a7e43f900ef14f1b440e47f60c4a415", null ],
     [ "ring_buffer_init", "ring__buffer_8c.html#afa91b7fb42b04ec1aa11c0eb608e7e01", null ],

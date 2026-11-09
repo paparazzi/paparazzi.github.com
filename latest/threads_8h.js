@@ -10,8 +10,12 @@ var threads_8h =
     [ "pprz_mtx_lock", "threads_8h.html#a95125cfa7b5fa884f4b72a1cee15fc34", null ],
     [ "pprz_mtx_trylock", "threads_8h.html#a20bfc2ac32043b58f03d6776c4a58f46", null ],
     [ "pprz_mtx_unlock", "threads_8h.html#a67e557cfc2429b15d3ef78bced1fc7bf", null ],
+    [ "pprz_thread_assert_main", "threads_8h.html#a7d27768d3a0e4c4ede337ac2d07b59ba", null ],
     [ "pprz_thread_create", "threads_8h.html#a16ed8a30eed97c60234a7886b0dbbd7a", null ],
     [ "pprz_thread_exit", "threads_8h.html#a8e1805d20d5eedadbc1fb8d756e3e4a1", null ],
+    [ "pprz_thread_init_main", "threads_8h.html#a19f57a363b1619fd28f004861975cb59", null ],
+    [ "pprz_thread_is_main", "threads_8h.html#a394d788431ded1f0d37d595207f61c13", null ],
     [ "pprz_thread_join", "threads_8h.html#ae92ae356963de73ba24d9fbfcce5e7c4", null ],
+    [ "pprz_thread_periodic", "threads_8h.html#a2f97456e8add05c0d424b9d64207a8f8", null ],
     [ "pprz_thread_tryjoin", "threads_8h.html#a5f18c9f5eefcf91d5556a78ad049f925", null ]
 ];

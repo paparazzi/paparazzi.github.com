@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('framed__ring__buffer_8c.html',''); ini
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">framed_ring_buffer.c File Reference</div></div>
 </div><!--header-->
@@ -119,6 +120,13 @@ $(document).ready(function(){initNavTree('framed__ring__buffer_8c.html',''); ini
 </div>
 <p><a href="framed__ring__buffer_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a31b766e2db72e3cb9505010cca026b82" id="r_a31b766e2db72e3cb9505010cca026b82"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="framed__ring__buffer_8c.html#a31b766e2db72e3cb9505010cca026b82">FRB_LOAD</a>(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>)&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_load_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_ACQUIRE</a>)</td></tr>
+<tr class="separator:a31b766e2db72e3cb9505010cca026b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb994b3917ea548c4bb5c25b45d8f274" id="r_acb994b3917ea548c4bb5c25b45d8f274"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="framed__ring__buffer_8c.html#acb994b3917ea548c4bb5c25b45d8f274">FRB_STORE</a>(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>,  <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>)&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_store_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_RELEASE</a>)</td></tr>
+<tr class="separator:acb994b3917ea548c4bb5c25b45d8f274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab670fda77782d03dc1b6591768b15eb5" id="r_ab670fda77782d03dc1b6591768b15eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="framed__ring__buffer_8c.html#ab670fda77782d03dc1b6591768b15eb5">framed_ring_buffer_init</a> (struct <a class="el" href="framed__ring__buffer_8h.html#structframed__ring__buffer">framed_ring_buffer</a> *cb, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> len)</td></tr>
@@ -140,6 +148,57 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7985a6bc5770f08dae552cf5a8079cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear buffer.  <br /></td></tr>
 <tr class="separator:a7985a6bc5770f08dae552cf5a8079cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a31b766e2db72e3cb9505010cca026b82" name="a31b766e2db72e3cb9505010cca026b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b766e2db72e3cb9505010cca026b82">&#9670;&#160;</a></span>FRB_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> FRB_LOAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_load_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_ACQUIRE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00016">16</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+
+</div>
+</div>
+<a id="acb994b3917ea548c4bb5c25b45d8f274" name="acb994b3917ea548c4bb5c25b45d8f274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb994b3917ea548c4bb5c25b45d8f274">&#9670;&#160;</a></span>FRB_STORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> FRB_STORE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_store_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_RELEASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00017">17</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7b6fb14ffd89e1e1ba447237e36e7a35" name="a7b6fb14ffd89e1e1ba447237e36e7a35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b6fb14ffd89e1e1ba447237e36e7a35">&#9670;&#160;</a></span>framed_ring_buffer_available()</h2>
@@ -159,11 +218,11 @@ Functions</h2></td></tr>
 
 <p>Get the available sapce for the next buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00110">110</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00117">117</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
+<p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00016">FRB_LOAD</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="framed__ring__buffer_8c_source.html#l00052">framed_ring_buffer_put()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="framed__ring__buffer_8c_source.html#l00059">framed_ring_buffer_put()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -171,37 +230,43 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="framed__ring__buffer_8c_a7b6fb14ffd89e1e1ba447237e36e7a35_icgraph.png" border="0" usemap="#aframed__ring__buffer_8c_a7b6fb14ffd89e1e1ba447237e36e7a35_icgraph" alt=""/></div>
 <map name="aframed__ring__buffer_8c_a7b6fb14ffd89e1e1ba447237e36e7a35_icgraph" id="aframed__ring__buffer_8c_a7b6fb14ffd89e1e1ba447237e36e7a35_icgraph">
-<area shape="rect" title="Get the available sapce for the next buffer." alt="" coords="1063,122,1209,162"/>
-<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="840,129,1015,155"/>
-<area shape="poly" title=" " alt="" coords="1049,145,1015,145,1015,139,1049,139"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="709,129,792,155"/>
-<area shape="poly" title=" " alt="" coords="826,145,792,145,792,139,826,139"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="488,5,661,31"/>
-<area shape="poly" title=" " alt="" coords="732,119,701,80,682,61,660,44,637,33,639,28,663,40,685,57,705,77,736,116"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="493,55,657,80"/>
-<area shape="poly" title=" " alt="" coords="718,124,660,94,628,83,630,78,662,89,720,120"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="499,104,650,129"/>
-<area shape="poly" title=" " alt="" coords="695,137,650,130,650,125,696,132"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="515,153,634,179"/>
-<area shape="poly" title=" " alt="" coords="696,152,635,161,634,155,695,147"/>
-<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="491,203,658,243"/>
-<area shape="poly" title=" " alt="" coords="718,164,662,194,634,206,632,201,660,189,716,159"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="503,268,646,293"/>
-<area shape="poly" title=" " alt="" coords="739,168,708,214,687,237,663,258,638,270,635,266,660,253,683,234,704,210,734,165"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,39,434,79"/>
-<area shape="poly" title=" " alt="" coords="479,67,434,65,434,60,479,61"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,104,416,129"/>
-<area shape="poly" title=" " alt="" coords="486,119,416,119,416,114,486,114"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,104,205,129"/>
-<area shape="poly" title=" " alt="" coords="263,119,206,119,206,114,263,114"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,153,440,179"/>
-<area shape="poly" title=" " alt="" coords="502,169,440,169,440,163,502,163"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,203,431,243"/>
-<area shape="poly" title=" " alt="" coords="477,226,431,226,431,221,477,221"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,268,439,293"/>
-<area shape="poly" title=" " alt="" coords="490,283,440,283,440,278,490,278"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0" title=" " alt="" coords="263,317,431,343"/>
-<area shape="poly" title=" " alt="" coords="503,299,407,320,406,315,501,294"/>
+<area shape="rect" title="Get the available sapce for the next buffer." alt="" coords="1093,122,1240,162"/>
+<area shape="rect" href="framed__ring__buffer_8c.html#a688acd2b432b5c7f5c679d5f9666c857" title="Copy buf in the circular buffer." alt="" coords="871,129,1045,155"/>
+<area shape="poly" title=" " alt="" coords="1080,145,1045,145,1045,139,1080,139"/>
+<area shape="rect" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title="Called in the CAN receive thread: only queue the frame." alt="" coords="709,55,823,80"/>
+<area shape="poly" title=" " alt="" coords="911,127,798,82,800,78,913,122"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="725,153,807,179"/>
+<area shape="poly" title=" " alt="" coords="857,157,808,164,807,158,857,152"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="513,5,636,31"/>
+<area shape="poly" title=" " alt="" coords="702,54,624,33,626,28,704,49"/>
+<area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="298,5,395,31"/>
+<area shape="poly" title=" " alt="" coords="499,21,395,21,395,15,499,15"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="488,55,661,80"/>
+<area shape="poly" title=" " alt="" coords="738,146,702,119,660,94,631,83,633,78,663,89,705,115,741,142"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="493,104,657,129"/>
+<area shape="poly" title=" " alt="" coords="711,155,624,132,625,127,712,149"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="499,153,650,179"/>
+<area shape="poly" title=" " alt="" coords="711,169,650,169,650,163,711,163"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="515,203,634,228"/>
+<area shape="poly" title=" " alt="" coords="712,183,625,205,624,200,711,177"/>
+<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="491,253,658,293"/>
+<area shape="poly" title=" " alt="" coords="741,190,705,217,663,243,637,255,635,250,660,238,702,212,737,185"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="503,317,646,343"/>
+<area shape="poly" title=" " alt="" coords="755,193,719,250,693,281,663,307,638,320,636,315,660,302,689,277,714,247,750,190"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,89,434,129"/>
+<area shape="poly" title=" " alt="" coords="479,116,434,114,434,109,479,111"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,153,416,179"/>
+<area shape="poly" title=" " alt="" coords="486,169,416,169,416,163,486,163"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,153,205,179"/>
+<area shape="poly" title=" " alt="" coords="263,169,206,169,206,163,263,163"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,203,440,228"/>
+<area shape="poly" title=" " alt="" coords="502,218,440,218,440,213,502,213"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,253,431,293"/>
+<area shape="poly" title=" " alt="" coords="477,275,431,275,431,270,477,270"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,317,439,343"/>
+<area shape="poly" title=" " alt="" coords="490,333,440,333,440,327,490,327"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0" title=" " alt="" coords="263,367,431,392"/>
+<area shape="poly" title=" " alt="" coords="503,348,407,369,406,364,501,343"/>
 </map>
 </div>
 
@@ -225,7 +290,7 @@ Functions</h2></td></tr>
 
 <p>Clear buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00122">122</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00131">131</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
 
 <p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
 
@@ -249,7 +314,7 @@ Functions</h2></td></tr>
 
 <p>Drop last inserted record. </p>
 
-<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00090">90</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00097">97</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
 
 <p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00027">framed_ring_buffer::_buf</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
 
@@ -298,11 +363,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of the data copied to <code>buf</code>, or an error code if negative. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00022">22</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00029">29</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00027">framed_ring_buffer::_buf</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00032">CIR_ERROR_BUFFER_TOO_SMALL</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
+<p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00027">framed_ring_buffer::_buf</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00032">CIR_ERROR_BUFFER_TOO_SMALL</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00031">CIR_ERROR_NO_MSG</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00016">FRB_LOAD</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00017">FRB_STORE</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00131">sts3032_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00131">sts3032_event()</a>, and <a class="el" href="uavcan_8c_source.html#l00104">uavcan_handle_rx()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -310,11 +375,15 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="framed__ring__buffer_8c_ae3a9d214c0c026721d34333c7f3e9f0e_icgraph.png" border="0" usemap="#aframed__ring__buffer_8c_ae3a9d214c0c026721d34333c7f3e9f0e_icgraph" alt=""/></div>
 <map name="aframed__ring__buffer_8c_ae3a9d214c0c026721d34333c7f3e9f0e_icgraph" id="aframed__ring__buffer_8c_ae3a9d214c0c026721d34333c7f3e9f0e_icgraph">
-<area shape="rect" title="copy the next buffer available in cb to buf." alt="" coords="404,5,579,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="239,5,356,31"/>
-<area shape="poly" title=" " alt="" coords="390,21,356,21,356,15,390,15"/>
+<area shape="rect" title="copy the next buffer available in cb to buf." alt="" coords="427,31,601,56"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ae76c97ee4a8919981943fcab14d4f0f9" title=" " alt="" coords="250,5,367,31"/>
+<area shape="poly" title=" " alt="" coords="412,33,367,28,368,23,413,28"/>
+<area shape="rect" href="uavcan_8c.html#a6eb5dc07325705968d547a5a12861f2f" title="Let canard handle the queued frames of an interface, in the main thread." alt="" coords="239,55,379,80"/>
+<area shape="poly" title=" " alt="" coords="413,58,379,62,379,57,412,53"/>
 <area shape="rect" href="actuators__sts3032_8c.html#a819bd8f3d887e8e65c49685266e42af4" title=" " alt="" coords="5,5,191,31"/>
-<area shape="poly" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" title=" " alt="" coords="236,21,191,21,191,15,236,15"/>
+<area shape="rect" href="uavcan_8c.html#aba317227c5e047f571aa634d66b80d20" title="Handle the received frames of all interfaces (main thread)" alt="" coords="31,55,165,80"/>
+<area shape="poly" title=" " alt="" coords="225,70,165,70,165,65,225,65"/>
 </map>
 </div>
 
@@ -362,11 +431,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00013">13</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00020">20</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
 
 <p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00027">framed_ring_buffer::_buf</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00024">framed_ring_buffer::read_offset</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00088">actuators_sts3032_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00088">actuators_sts3032_init()</a>, and <a class="el" href="uavcan_8c_source.html#l00210">uavcanInitIface()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -374,9 +443,13 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="framed__ring__buffer_8c_ab670fda77782d03dc1b6591768b15eb5_icgraph.png" border="0" usemap="#aframed__ring__buffer_8c_ab670fda77782d03dc1b6591768b15eb5_icgraph" alt=""/></div>
 <map name="aframed__ring__buffer_8c_ab670fda77782d03dc1b6591768b15eb5_icgraph" id="aframed__ring__buffer_8c_ab670fda77782d03dc1b6591768b15eb5_icgraph">
-<area shape="rect" title="initialize a circular buffer." alt="" coords="223,5,397,31"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a25fb0bac58c18fdeb203799b731abd10" title=" " alt="" coords="5,5,175,31"/>
-<area shape="poly" title=" " alt="" coords="208,21,175,21,175,15,208,15"/>
+<area shape="rect" title="initialize a circular buffer." alt="" coords="368,31,543,56"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a25fb0bac58c18fdeb203799b731abd10" title=" " alt="" coords="151,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="354,34,320,30,320,25,354,29"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="174,55,297,80"/>
+<area shape="poly" title=" " alt="" coords="354,57,297,63,297,58,354,52"/>
+<area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="5,55,103,80"/>
+<area shape="poly" title=" " alt="" coords="160,70,103,70,103,65,160,65"/>
 </map>
 </div>
 
@@ -425,11 +498,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, Error code if negative </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00052">52</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="framed__ring__buffer_8c_source.html#l00059">59</a> of file <a class="el" href="framed__ring__buffer_8c_source.html">framed_ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00027">framed_ring_buffer::_buf</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00033">CIR_ERROR_NO_SPACE_AVAILABLE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00110">framed_ring_buffer_available()</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
+<p class="reference">References <a class="el" href="framed__ring__buffer_8h_source.html#l00027">framed_ring_buffer::_buf</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00026">framed_ring_buffer::_buf_len</a>, <a class="el" href="framed__ring__buffer_8h_source.html#l00033">CIR_ERROR_NO_SPACE_AVAILABLE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00117">framed_ring_buffer_available()</a>, <a class="el" href="framed__ring__buffer_8c_source.html#l00017">FRB_STORE</a>, and <a class="el" href="framed__ring__buffer_8h_source.html#l00025">framed_ring_buffer::write_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__sts3032_8c_source.html#l00298">write_buf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="uavcan_8c_source.html#l00085">can_frame_cb()</a>, and <a class="el" href="actuators__sts3032_8c_source.html#l00298">write_buf()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -449,35 +522,41 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="framed__ring__buffer_8c_a688acd2b432b5c7f5c679d5f9666c857_icgraph.png" border="0" usemap="#aframed__ring__buffer_8c_a688acd2b432b5c7f5c679d5f9666c857_icgraph" alt=""/></div>
 <map name="aframed__ring__buffer_8c_a688acd2b432b5c7f5c679d5f9666c857_icgraph" id="aframed__ring__buffer_8c_a688acd2b432b5c7f5c679d5f9666c857_icgraph">
-<area shape="rect" title="Copy buf in the circular buffer." alt="" coords="840,129,1015,155"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="709,129,792,155"/>
-<area shape="poly" title=" " alt="" coords="826,145,792,145,792,139,826,139"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="488,5,661,31"/>
-<area shape="poly" title=" " alt="" coords="732,119,701,80,682,61,660,44,637,33,639,28,663,40,685,57,705,77,736,116"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="493,55,657,80"/>
-<area shape="poly" title=" " alt="" coords="718,124,660,94,628,83,630,78,662,89,720,120"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="499,104,650,129"/>
-<area shape="poly" title=" " alt="" coords="695,137,650,130,650,125,696,132"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="515,153,634,179"/>
-<area shape="poly" title=" " alt="" coords="696,152,635,161,634,155,695,147"/>
-<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="491,203,658,243"/>
-<area shape="poly" title=" " alt="" coords="718,164,662,194,634,206,632,201,660,189,716,159"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="503,268,646,293"/>
-<area shape="poly" title=" " alt="" coords="739,168,708,214,687,237,663,258,638,270,635,266,660,253,683,234,704,210,734,165"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,39,434,79"/>
-<area shape="poly" title=" " alt="" coords="479,67,434,65,434,60,479,61"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,104,416,129"/>
-<area shape="poly" title=" " alt="" coords="486,119,416,119,416,114,486,114"/>
-<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,104,205,129"/>
-<area shape="poly" title=" " alt="" coords="263,119,206,119,206,114,263,114"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,153,440,179"/>
-<area shape="poly" title=" " alt="" coords="502,169,440,169,440,163,502,163"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,203,431,243"/>
-<area shape="poly" title=" " alt="" coords="477,226,431,226,431,221,477,221"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,268,439,293"/>
-<area shape="poly" title=" " alt="" coords="490,283,440,283,440,278,490,278"/>
-<area shape="rect" href="actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0" title=" " alt="" coords="263,317,431,343"/>
-<area shape="poly" title=" " alt="" coords="503,299,407,320,406,315,501,294"/>
+<area shape="rect" title="Copy buf in the circular buffer." alt="" coords="871,129,1045,155"/>
+<area shape="rect" href="uavcan_8c.html#a416691bcd0b8fe29a584290275b85fc2" title="Called in the CAN receive thread: only queue the frame." alt="" coords="709,55,823,80"/>
+<area shape="poly" title=" " alt="" coords="911,127,798,82,800,78,913,122"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a36bb648cdf32143d1cfe36d5bbd5b79e" title=" " alt="" coords="725,153,807,179"/>
+<area shape="poly" title=" " alt="" coords="857,157,808,164,807,158,857,152"/>
+<area shape="rect" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e" title="Initialize uavcan interface." alt="" coords="513,5,636,31"/>
+<area shape="poly" title=" " alt="" coords="702,54,624,33,626,28,704,49"/>
+<area shape="rect" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7" title="Initialize all uavcan interfaces." alt="" coords="298,5,395,31"/>
+<area shape="poly" title=" " alt="" coords="499,21,395,21,395,15,499,15"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a30e5dd73447e7a64e640a9de78d4c871" title=" " alt="" coords="488,55,661,80"/>
+<area shape="poly" title=" " alt="" coords="738,146,702,119,660,94,631,83,633,78,663,89,705,115,741,142"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a684acad8ab5d63b04eeeee91899d4cf3" title=" " alt="" coords="493,104,657,129"/>
+<area shape="poly" title=" " alt="" coords="711,155,624,132,625,127,712,149"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a5cc37363f4c9e930641dabe818744eae" title=" " alt="" coords="499,153,650,179"/>
+<area shape="poly" title=" " alt="" coords="711,169,650,169,650,163,711,163"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ade4ac683a015a1b189a277a860bfb6d6" title=" " alt="" coords="515,203,634,228"/>
+<area shape="poly" title=" " alt="" coords="712,183,625,205,624,200,711,177"/>
+<area shape="rect" href="actuators__sts3032_8c.html#aed84cf1a6562277cb308985221c6ee2c" title=" " alt="" coords="491,253,658,293"/>
+<area shape="poly" title=" " alt="" coords="741,190,705,217,663,243,637,255,635,250,660,238,702,212,737,185"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a492fc3b48ddd510b37babe3957114a56" title=" " alt="" coords="503,317,646,343"/>
+<area shape="poly" title=" " alt="" coords="755,193,719,250,693,281,663,307,638,320,636,315,660,302,689,277,714,247,750,190"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ac3240544cfb9d563f2d39468b07b7c17" title=" " alt="" coords="259,89,434,129"/>
+<area shape="poly" title=" " alt="" coords="479,116,434,114,434,109,479,111"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a746afcabe425c5169115fc4174855398" title=" " alt="" coords="277,153,416,179"/>
+<area shape="poly" title=" " alt="" coords="486,169,416,169,416,163,486,163"/>
+<area shape="rect" href="actuators__sts3032_8c.html#ad8a7fc8eeb56e0bed35c9948b7b01570" title=" " alt="" coords="5,153,205,179"/>
+<area shape="poly" title=" " alt="" coords="263,169,206,169,206,163,263,163"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f" title=" " alt="" coords="253,203,440,228"/>
+<area shape="poly" title=" " alt="" coords="502,218,440,218,440,213,502,213"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a487e811350039ebd0a1e680f4b940515" title=" " alt="" coords="263,253,431,293"/>
+<area shape="poly" title=" " alt="" coords="477,275,431,275,431,270,477,270"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a9ef3c56797f1136790d59d25fdac2f9b" title=" " alt="" coords="254,317,439,343"/>
+<area shape="poly" title=" " alt="" coords="490,333,440,333,440,327,490,327"/>
+<area shape="rect" href="actuators__sts3032_8c.html#a20b8e4181245fc158f836d65ed3c89a0" title=" " alt="" coords="263,367,431,392"/>
+<area shape="poly" title=" " alt="" coords="503,348,407,369,406,364,501,343"/>
 </map>
 </div>
 
@@ -489,7 +568,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_644c3112dbb29d6147750c842d63ff9c.html">utils</a></li><li class="navelem"><a class="el" href="framed__ring__buffer_8c.html">framed_ring_buffer.c</a></li>
-    <li class="footer">Generated on Mon Nov 9 2026 14:01:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 14:30:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('chibios_2modules_2core_2threads__arch_
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">threads_arch.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -144,6 +145,15 @@ Functions</h2></td></tr>
 <tr class="separator:a444f179e6888d3c82906064808a96e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac5ca0ee18e60e92d4dfff06ed3fca2" id="r_adac5ca0ee18e60e92d4dfff06ed3fca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2">pprz_bsem_signal</a> (<a class="el" href="threads_8h.html#a594ed6f151a81f0fa50e620958af84e8">pprz_bsem_t</a> *<a class="el" href="thd__test_8c.html#a1bbd07b0d27149c8abfccb1456e5a52e">bsem</a>)</td></tr>
 <tr class="separator:adac5ca0ee18e60e92d4dfff06ed3fca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f57a363b1619fd28f004861975cb59" id="r_a19f57a363b1619fd28f004861975cb59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#a19f57a363b1619fd28f004861975cb59">pprz_thread_init_main</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="memdesc:a19f57a363b1619fd28f004861975cb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remember the calling thread as the main thread, the one running the periodic and event functions of the modules.  <br /></td></tr>
+<tr class="separator:a19f57a363b1619fd28f004861975cb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394d788431ded1f0d37d595207f61c13" id="r_a394d788431ded1f0d37d595207f61c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#a394d788431ded1f0d37d595207f61c13">pprz_thread_is_main</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
+<tr class="memdesc:a394d788431ded1f0d37d595207f61c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">The calling thread is the main thread (also true before <a class="el" href="threads_8h.html#a19f57a363b1619fd28f004861975cb59" title="Remember the calling thread as the main thread, the one running the periodic and event functions of t...">pprz_thread_init_main()</a> was called)  <br /></td></tr>
+<tr class="separator:a394d788431ded1f0d37d595207f61c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d27768d3a0e4c4ede337ac2d07b59ba" id="r_a7d27768d3a0e4c4ede337ac2d07b59ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#a7d27768d3a0e4c4ede337ac2d07b59ba">pprz_thread_assert_main</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">what</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">unsigned</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a> id)</td></tr>
+<tr class="memdesc:a7d27768d3a0e4c4ede337ac2d07b59ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the program (abort on Linux/NPS, halt on ChibiOS) when not called from the main thread, e.g.  <br /></td></tr>
+<tr class="separator:a7d27768d3a0e4c4ede337ac2d07b59ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7061055a8f65518b19b16225e7468e22" id="r_a7061055a8f65518b19b16225e7468e22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22">pprz_thread_create</a> (<a class="el" href="chibios_2modules_2core_2threads__arch_8h.html#a6346f48ec6528ca13c35a2cd5109d5db">pprz_thread_t</a> *thread, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> size, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *name, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">prio</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>(*<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">pf</a>)(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *arg)</td></tr>
 <tr class="memdesc:a7061055a8f65518b19b16225e7468e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new thread whose stack is dynamically allocated.  <br /></td></tr>
 <tr class="separator:a7061055a8f65518b19b16225e7468e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +166,11 @@ Functions</h2></td></tr>
 <tr class="memitem:addd38f598de51416b8fd53904920d8f9" id="r_addd38f598de51416b8fd53904920d8f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#addd38f598de51416b8fd53904920d8f9">pprz_thread_tryjoin</a> (<a class="el" href="chibios_2modules_2core_2threads__arch_8h.html#a6346f48ec6528ca13c35a2cd5109d5db">pprz_thread_t</a> *thread, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> **<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">retval</a>)</td></tr>
 <tr class="memdesc:addd38f598de51416b8fd53904920d8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a nonblocking join with the thread.  <br /></td></tr>
 <tr class="separator:addd38f598de51416b8fd53904920d8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab1a9d700750c90415f295b6c2b9bb1fc" id="r_ab1a9d700750c90415f295b6c2b9bb1fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">thread_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html#ab1a9d700750c90415f295b6c2b9bb1fc">main_thread</a> = <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NULL</a></td></tr>
+<tr class="separator:ab1a9d700750c90415f295b6c2b9bb1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a6aceb5010e37cdd610576491f6dc4937" name="a6aceb5010e37cdd610576491f6dc4937"></a>
@@ -188,7 +203,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00027">pprzBSem::bsem</a>, <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00012">amt22_init()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00057">humid_sht_init_i2c()</a>, <a class="el" href="chibios_2mcu__periph_2i2c__arch_8c_source.html#l00421">i2c_chibios_submit()</a>, <a class="el" href="linux_2mcu__periph_2i2c__arch_8c_source.html#l00084">i2c_linux_submit()</a>, <a class="el" href="pmw3901_8c_source.html#l00233">pmw3901_init()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_submit()</a>, <a class="el" href="thd__test_8c_source.html#l00069">thd_test_init()</a>, and <a class="el" href="uavcan_8c_source.html#l00192">uavcanInitIface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00012">amt22_init()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00057">humid_sht_init_i2c()</a>, <a class="el" href="chibios_2mcu__periph_2i2c__arch_8c_source.html#l00421">i2c_chibios_submit()</a>, <a class="el" href="linux_2mcu__periph_2i2c__arch_8c_source.html#l00084">i2c_linux_submit()</a>, <a class="el" href="pmw3901_8c_source.html#l00233">pmw3901_init()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_submit()</a>, <a class="el" href="thd__test_8c_source.html#l00069">thd_test_init()</a>, and <a class="el" href="uavcan_8c_source.html#l00210">uavcanInitIface()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -328,7 +343,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00027">pprzBSem::bsem</a>, <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00052">amt22_periodic()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00312">handle_spi_thd()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00077">humid_sht_thd()</a>, <a class="el" href="linux_2mcu__periph_2i2c__arch_8c_source.html#l00120">i2c_thread()</a>, <a class="el" href="opticflow__pmw3901_8c_source.html#l00180">opticflow_pmw3901_periodic()</a>, <a class="el" href="thd__test_8c_source.html#l00079">thd_test_periodic()</a>, <a class="el" href="uavcan_8c_source.html#l00289">uavcan_request()</a>, <a class="el" href="uavcan_8c_source.html#l00332">uavcan_response()</a>, and <a class="el" href="uavcan_8c_source.html#l00268">uavcan_transfer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00052">amt22_periodic()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00312">handle_spi_thd()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00077">humid_sht_thd()</a>, <a class="el" href="linux_2mcu__periph_2i2c__arch_8c_source.html#l00120">i2c_thread()</a>, <a class="el" href="opticflow__pmw3901_8c_source.html#l00180">opticflow_pmw3901_periodic()</a>, <a class="el" href="thd__test_8c_source.html#l00079">thd_test_periodic()</a>, <a class="el" href="uavcan_8c_source.html#l00321">uavcan_request()</a>, <a class="el" href="uavcan_8c_source.html#l00364">uavcan_response()</a>, and <a class="el" href="uavcan_8c_source.html#l00300">uavcan_transfer()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -466,7 +481,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00027">pprzBSem::bsem</a>, <a class="el" href="thd__test_8c_source.html#l00034">bsem</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00126">amt22_thd()</a>, <a class="el" href="pmw3901_8c_source.html#l00211">pmw3901_thd()</a>, <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>, and <a class="el" href="uavcan_8c_source.html#l00100">uavcan_tx()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00126">amt22_thd()</a>, <a class="el" href="pmw3901_8c_source.html#l00211">pmw3901_thd()</a>, <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>, and <a class="el" href="uavcan_8c_source.html#l00118">uavcan_tx()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -690,7 +705,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00012">amt22_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="gec__dl_8c_source.html#l00325">gec_transport_init()</a>, <a class="el" href="radio__control__uavcan_8c_source.html#l00037">rc_uavcan_init()</a>, <a class="el" href="slcan_8c_source.html#l00053">slcan_init()</a>, <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>, <a class="el" href="thd__test_8c_source.html#l00069">thd_test_init()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00047">tunnel_uavcan_init_periph()</a>, and <a class="el" href="uavcan_8c_source.html#l00192">uavcanInitIface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00012">amt22_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="gec__dl_8c_source.html#l00325">gec_transport_init()</a>, <a class="el" href="radio__control__uavcan_8c_source.html#l00037">rc_uavcan_init()</a>, <a class="el" href="slcan_8c_source.html#l00053">slcan_init()</a>, <a class="el" href="syslink__dl_8c_source.html#l00366">syslink_dl_init()</a>, <a class="el" href="thd__test_8c_source.html#l00069">thd_test_init()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00047">tunnel_uavcan_init_periph()</a>, and <a class="el" href="uavcan_8c_source.html#l00210">uavcanInitIface()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -750,7 +765,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00111">amt22_get_position()</a>, <a class="el" href="amt22_8c_source.html#l00118">amt22_get_turns()</a>, <a class="el" href="amt22_8c_source.html#l00058">amt22_read()</a>, <a class="el" href="copilot__common_8c_source.html#l00147">copilot_parse_cam_payload_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00127">copilot_parse_cam_snapshot_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00165">copilot_parse_copilot_status_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>, <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, <a class="el" href="slcan_8c_source.html#l00233">slcan_can_rx_cb()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00343">syslink_send_message()</a>, <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00153">tunnel_uavcan_char_available()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00092">tunnel_uavcan_check_free_space()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00162">tunnel_uavcan_get_byte()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00113">tunnel_uavcan_put_buffer()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>, <a class="el" href="uavcan_8c_source.html#l00289">uavcan_request()</a>, <a class="el" href="uavcan_8c_source.html#l00332">uavcan_response()</a>, <a class="el" href="uavcan_8c_source.html#l00268">uavcan_transfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00100">uavcan_tx()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00111">amt22_get_position()</a>, <a class="el" href="amt22_8c_source.html#l00118">amt22_get_turns()</a>, <a class="el" href="amt22_8c_source.html#l00058">amt22_read()</a>, <a class="el" href="copilot__common_8c_source.html#l00147">copilot_parse_cam_payload_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00127">copilot_parse_cam_snapshot_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00165">copilot_parse_copilot_status_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>, <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, <a class="el" href="slcan_8c_source.html#l00233">slcan_can_rx_cb()</a>, <a class="el" href="syslink__dl_8c_source.html#l00288">syslink_check_free_space()</a>, <a class="el" href="syslink__dl_8c_source.html#l00343">syslink_send_message()</a>, <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00153">tunnel_uavcan_char_available()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00092">tunnel_uavcan_check_free_space()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00162">tunnel_uavcan_get_byte()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00113">tunnel_uavcan_put_buffer()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>, <a class="el" href="uavcan_8c_source.html#l00321">uavcan_request()</a>, <a class="el" href="uavcan_8c_source.html#l00364">uavcan_response()</a>, <a class="el" href="uavcan_8c_source.html#l00300">uavcan_transfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00118">uavcan_tx()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -944,7 +959,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="chibios_2modules_2core_2threads__arch_8h_source.html#l00023">pprzMutex::mtx</a>, and <a class="el" href="thd__test_8c_source.html#l00036">mtx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00111">amt22_get_position()</a>, <a class="el" href="amt22_8c_source.html#l00118">amt22_get_turns()</a>, <a class="el" href="amt22_8c_source.html#l00058">amt22_read()</a>, <a class="el" href="copilot__common_8c_source.html#l00147">copilot_parse_cam_payload_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00127">copilot_parse_cam_snapshot_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00165">copilot_parse_copilot_status_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>, <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, <a class="el" href="radio__control__uavcan_8c_source.html#l00027">rc_uavcan_cb()</a>, <a class="el" href="radio__control__uavcan_8c_source.html#l00046">rc_uavcan_event()</a>, <a class="el" href="slcan_8c_source.html#l00233">slcan_can_rx_cb()</a>, <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>, <a class="el" href="thd__test_8c_source.html#l00079">thd_test_periodic()</a>, <a class="el" href="thd__test_8c_source.html#l00048">thd_test_syracuse_restart()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00068">tunnel_uavcan_cb()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00153">tunnel_uavcan_char_available()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00092">tunnel_uavcan_check_free_space()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00162">tunnel_uavcan_get_byte()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>, <a class="el" href="uavcan_8c_source.html#l00289">uavcan_request()</a>, <a class="el" href="uavcan_8c_source.html#l00332">uavcan_response()</a>, <a class="el" href="uavcan_8c_source.html#l00268">uavcan_transfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00100">uavcan_tx()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00111">amt22_get_position()</a>, <a class="el" href="amt22_8c_source.html#l00118">amt22_get_turns()</a>, <a class="el" href="amt22_8c_source.html#l00058">amt22_read()</a>, <a class="el" href="copilot__common_8c_source.html#l00147">copilot_parse_cam_payload_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00127">copilot_parse_cam_snapshot_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00165">copilot_parse_copilot_status_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>, <a class="el" href="syslink__dl_8c_source.html#l00186">handle_raw()</a>, <a class="el" href="radio__control__uavcan_8c_source.html#l00027">rc_uavcan_cb()</a>, <a class="el" href="radio__control__uavcan_8c_source.html#l00046">rc_uavcan_event()</a>, <a class="el" href="slcan_8c_source.html#l00233">slcan_can_rx_cb()</a>, <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>, <a class="el" href="thd__test_8c_source.html#l00079">thd_test_periodic()</a>, <a class="el" href="thd__test_8c_source.html#l00048">thd_test_syracuse_restart()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00068">tunnel_uavcan_cb()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00153">tunnel_uavcan_char_available()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00092">tunnel_uavcan_check_free_space()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00162">tunnel_uavcan_get_byte()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>, <a class="el" href="uavcan_8c_source.html#l00321">uavcan_request()</a>, <a class="el" href="uavcan_8c_source.html#l00364">uavcan_response()</a>, <a class="el" href="uavcan_8c_source.html#l00300">uavcan_transfer()</a>, and <a class="el" href="uavcan_8c_source.html#l00118">uavcan_tx()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1069,6 +1084,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7d27768d3a0e4c4ede337ac2d07b59ba" name="a7d27768d3a0e4c4ede337ac2d07b59ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d27768d3a0e4c4ede337ac2d07b59ba">&#9670;&#160;</a></span>pprz_thread_assert_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> pprz_thread_assert_main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *&#160;</td>
+          <td class="paramname"><em>what</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">unsigned</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop the program (abort on Linux/NPS, halt on ChibiOS) when not called from the main thread, e.g. </p>
+<p>for an ABI message sent from another thread (ABI_CHECK_MAIN_THREAD) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>what was done outside the main thread (printed on Linux/NPS) </td></tr>
+    <tr><td class="paramname">id</td><td>its identifier (e.g. the ABI message ID) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00072">72</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00068">pprz_thread_is_main()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_a7d27768d3a0e4c4ede337ac2d07b59ba_cgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_a7d27768d3a0e4c4ede337ac2d07b59ba_cgraph" alt=""/></div>
+<map name="achibios_2modules_2core_2threads__arch_8c_a7d27768d3a0e4c4ede337ac2d07b59ba_cgraph" id="achibios_2modules_2core_2threads__arch_8c_a7d27768d3a0e4c4ede337ac2d07b59ba_cgraph">
+<area shape="rect" title="Stop the program (abort on Linux/NPS, halt on ChibiOS) when not called from the main thread,..." alt="" coords="5,5,192,31"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a394d788431ded1f0d37d595207f61c13" title="The calling thread is the main thread (also true before pprz_thread_init_main() was called)" alt="" coords="240,5,397,31"/>
+<area shape="poly" title=" " alt="" coords="192,15,226,15,226,21,192,21"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a7061055a8f65518b19b16225e7468e22" name="a7061055a8f65518b19b16225e7468e22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7061055a8f65518b19b16225e7468e22">&#9670;&#160;</a></span>pprz_thread_create()</h2>
 
@@ -1133,16 +1201,16 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Return 0 on success, or a platform dependant error code.</dd></dl>
 <p>@api </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00062">62</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00080">80</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00012">amt22_init()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00057">humid_sht_init_i2c()</a>, <a class="el" href="pmw3901_8c_source.html#l00233">pmw3901_init()</a>, <a class="el" href="thd__test_8c_source.html#l00069">thd_test_init()</a>, <a class="el" href="thd__test_8c_source.html#l00048">thd_test_syracuse_restart()</a>, and <a class="el" href="uavcan_8c_source.html#l00192">uavcanInitIface()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="amt22_8c_source.html#l00012">amt22_init()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00057">humid_sht_init_i2c()</a>, <a class="el" href="pmw3901_8c_source.html#l00233">pmw3901_init()</a>, <a class="el" href="thd__test_8c_source.html#l00069">thd_test_init()</a>, <a class="el" href="thd__test_8c_source.html#l00048">thd_test_syracuse_restart()</a>, and <a class="el" href="uavcan_8c_source.html#l00210">uavcanInitIface()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_a7061055a8f65518b19b16225e7468e22_icgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_a7061055a8f65518b19b16225e7468e22_icgraph" alt=""/></div>
 <map name="achibios_2modules_2core_2threads__arch_8c_a7061055a8f65518b19b16225e7468e22_icgraph" id="achibios_2modules_2core_2threads__arch_8c_a7061055a8f65518b19b16225e7468e22_icgraph">
 <area shape="rect" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="472,129,619,155"/>
@@ -1193,16 +1261,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00070">70</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00088">88</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="thd__test_8c_source.html#l00109">test_thd()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_adea608f141ee222f13bb3867854572d1_icgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_adea608f141ee222f13bb3867854572d1_icgraph" alt=""/></div>
 <map name="achibios_2modules_2core_2threads__arch_8c_adea608f141ee222f13bb3867854572d1_icgraph" id="achibios_2modules_2core_2threads__arch_8c_adea608f141ee222f13bb3867854572d1_icgraph">
 <area shape="rect" title="Exit the current thread." alt="" coords="367,31,497,56"/>
@@ -1212,6 +1280,83 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="230,39,152,28,153,22,231,34"/>
 <area shape="rect" href="thd__test_8c.html#a597575d0fa27dd54ef0b7489404dde60" title=" " alt="" coords="5,55,196,80"/>
 <area shape="poly" title=" " alt="" coords="231,53,197,57,196,52,230,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a19f57a363b1619fd28f004861975cb59" name="a19f57a363b1619fd28f004861975cb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f57a363b1619fd28f004861975cb59">&#9670;&#160;</a></span>pprz_thread_init_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> pprz_thread_init_main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remember the calling thread as the main thread, the one running the periodic and event functions of the modules. </p>
+<p>Called by <a class="el" href="threads_8h.html#a2f97456e8add05c0d424b9d64207a8f8" title="Set the main thread on the first call (the thread running the periodic functions)">pprz_thread_periodic()</a> (the init can run in another thread, e.g. in NPS). </p>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00064">64</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00062">main_thread</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="threads_8c_source.html#l00028">pprz_thread_periodic()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_a19f57a363b1619fd28f004861975cb59_icgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_a19f57a363b1619fd28f004861975cb59_icgraph" alt=""/></div>
+<map name="achibios_2modules_2core_2threads__arch_8c_a19f57a363b1619fd28f004861975cb59_icgraph" id="achibios_2modules_2core_2threads__arch_8c_a19f57a363b1619fd28f004861975cb59_icgraph">
+<area shape="rect" title="Remember the calling thread as the main thread, the one running the periodic and event functions of t..." alt="" coords="212,5,379,31"/>
+<area shape="rect" href="threads_8c.html#a2f97456e8add05c0d424b9d64207a8f8" title="Set the main thread on the first call (the thread running the periodic functions)" alt="" coords="5,5,164,31"/>
+<area shape="poly" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a394d788431ded1f0d37d595207f61c13" name="a394d788431ded1f0d37d595207f61c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394d788431ded1f0d37d595207f61c13">&#9670;&#160;</a></span>pprz_thread_is_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> pprz_thread_is_main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The calling thread is the main thread (also true before <a class="el" href="threads_8h.html#a19f57a363b1619fd28f004861975cb59" title="Remember the calling thread as the main thread, the one running the periodic and event functions of t...">pprz_thread_init_main()</a> was called) </p>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00068">68</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00062">main_thread</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00072">pprz_thread_assert_main()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_a394d788431ded1f0d37d595207f61c13_icgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_a394d788431ded1f0d37d595207f61c13_icgraph" alt=""/></div>
+<map name="achibios_2modules_2core_2threads__arch_8c_a394d788431ded1f0d37d595207f61c13_icgraph" id="achibios_2modules_2core_2threads__arch_8c_a394d788431ded1f0d37d595207f61c13_icgraph">
+<area shape="rect" title="The calling thread is the main thread (also true before pprz_thread_init_main() was called)" alt="" coords="240,5,397,31"/>
+<area shape="rect" href="chibios_2modules_2core_2threads__arch_8c.html#a7d27768d3a0e4c4ede337ac2d07b59ba" title="Stop the program (abort on Linux/NPS, halt on ChibiOS) when not called from the main thread,..." alt="" coords="5,5,192,31"/>
+<area shape="poly" title=" " alt="" coords="226,21,192,21,192,15,226,15"/>
 </map>
 </div>
 
@@ -1253,16 +1398,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00075">75</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00093">93</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00081">pprz_thread_tryjoin()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00099">pprz_thread_tryjoin()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_a3d0da95d5f58f817dc1b1f3b0c25df8e_icgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_a3d0da95d5f58f817dc1b1f3b0c25df8e_icgraph" alt=""/></div>
 <map name="achibios_2modules_2core_2threads__arch_8c_a3d0da95d5f58f817dc1b1f3b0c25df8e_icgraph" id="achibios_2modules_2core_2threads__arch_8c_a3d0da95d5f58f817dc1b1f3b0c25df8e_icgraph">
 <area shape="rect" title="Wait for the thread to terminate." alt="" coords="384,5,515,31"/>
@@ -1311,16 +1456,16 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if the thread successfully joined. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00081">81</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00099">99</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00075">pprz_thread_join()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00093">pprz_thread_join()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="thd__test_8c_source.html#l00079">thd_test_periodic()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_cgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_cgraph" alt=""/></div>
 <map name="achibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_cgraph" id="achibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_cgraph">
 <area shape="rect" title="Performs a nonblocking join with the thread." alt="" coords="5,5,153,31"/>
@@ -1328,11 +1473,11 @@ Functions</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="154,15,188,15,188,21,154,21"/>
 </map>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_icgraph.png" border="0" usemap="#achibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_icgraph" alt=""/></div>
 <map name="achibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_icgraph" id="achibios_2modules_2core_2threads__arch_8c_addd38f598de51416b8fd53904920d8f9_icgraph">
 <area shape="rect" title="Performs a nonblocking join with the thread." alt="" coords="188,5,336,31"/>
@@ -1343,13 +1488,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab1a9d700750c90415f295b6c2b9bb1fc" name="ab1a9d700750c90415f295b6c2b9bb1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a9d700750c90415f295b6c2b9bb1fc">&#9670;&#160;</a></span>main_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">thread_t</a>* main_thread = <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">NULL</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00062">62</a> of file <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html">threads_arch.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00064">pprz_thread_init_main()</a>, and <a class="el" href="chibios_2modules_2core_2threads__arch_8c_source.html#l00068">pprz_thread_is_main()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_51637bc44748ed5b809b240786ff8f0c.html">core</a></li><li class="navelem"><a class="el" href="chibios_2modules_2core_2threads__arch_8c.html">threads_arch.c</a></li>
-    <li class="footer">Generated on Mon Nov 9 2026 14:01:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 14:30:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

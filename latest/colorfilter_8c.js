@@ -2,6 +2,7 @@ var colorfilter_8c =
 [
     [ "COLORFILTER_FPS", "colorfilter_8c.html#a5a295f1f80434acb03d99955a6b7613c", null ],
     [ "COLORFILTER_SEND_OBSTACLE", "colorfilter_8c.html#a39d36b2017d849527027efde107473cc", null ],
+    [ "colorfilter_event", "colorfilter_8c.html#a48d2e6095f71adc88ce123d665909924", null ],
     [ "colorfilter_func", "colorfilter_8c.html#a26cf25b74d3618ed83949d9ba0762f66", null ],
     [ "colorfilter_init", "colorfilter_8c.html#ab8b6b333c3f84d7497aef5629a2e4453", null ],
     [ "color_cb_max", "colorfilter_8c.html#a028a785eb4e92e36a242baac2c592b6b", null ],
@@ -11,5 +12,6 @@ var colorfilter_8c =
     [ "color_cr_min", "colorfilter_8c.html#a39149da1c7d12899680335e4cc339499", null ],
     [ "color_lum_max", "colorfilter_8c.html#a8546349fa41cd2a0fa906119990c65cf", null ],
     [ "color_lum_min", "colorfilter_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43", null ],
+    [ "colorfilter_new_count", "colorfilter_8c.html#a23133642343c0e43ea102d315dd5799e", null ],
     [ "listener", "colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b", null ]
 ];

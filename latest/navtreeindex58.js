@@ -1,5 +1,14 @@
 var NAVTREEINDEX58 =
 {
+"energy__ctrl_8c.html#a7c417874ed0ec332df4832ed1e1d957d":[13,0,1,0,3,1,0,0,64],
+"energy__ctrl_8c.html#a7e02802b46d1b266f7e4d89e414410b4":[13,0,1,0,3,1,0,0,23],
+"energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb":[13,0,1,0,3,1,0,0,15],
+"energy__ctrl_8c.html#a807e95ad6f276c9217aaa0a8b29e8a12":[13,0,1,0,3,1,0,0,58],
+"energy__ctrl_8c.html#a86e489231e48e9241b68229ba29007c9":[13,0,1,0,3,1,0,0,53],
+"energy__ctrl_8c.html#a8a1ef28c2298cf68c84058c6cbaba741":[13,0,1,0,3,1,0,0,61],
+"energy__ctrl_8c.html#a8ca3adfa488b360ca07396ef54c199f3":[13,0,1,0,3,1,0,0,34],
+"energy__ctrl_8c.html#a8fa25cd75ff8dfaf527c50d6aaa9cc83":[13,0,1,0,3,1,0,0,20],
+"energy__ctrl_8c.html#a91af08f8c8981542a5e44b874c7c39ad":[13,0,1,0,3,1,0,0,67],
 "energy__ctrl_8c.html#a92032860fee41019bb05444dec447451":[13,0,1,0,3,1,0,0,28],
 "energy__ctrl_8c.html#a92567b7b8fe7a0f723ddcee5d30c5d13":[13,0,1,0,3,1,0,0,27],
 "energy__ctrl_8c.html#a96616e7e0779aeeece51bd209f1f81e4":[13,0,1,0,3,1,0,0,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX58 =
 "esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4":[13,0,1,0,0,0,1,0,9,17],
 "esc__dshot_8c.html#a36bdba10cfe02df997b2122301364ccd":[13,0,1,0,0,0,1,0,9,7],
 "esc__dshot_8c.html#a3c52b51bce8669ab42437677f7f7bbfb":[13,0,1,0,0,0,1,0,9,8],
-"esc__dshot_8c.html#a43d1f779804f4148aebb87c14fb56f21":[13,0,1,0,0,0,1,0,9,19],
-"esc__dshot_8c.html#a57492e971c1b698158830009ca1d072a":[13,0,1,0,0,0,1,0,9,31],
-"esc__dshot_8c.html#a6c927d850e9e56e92af5028e516247fa":[13,0,1,0,0,0,1,0,9,23],
-"esc__dshot_8c.html#a76fe84d83b8d236bd4f0d20d7e2ed06f":[13,0,1,0,0,0,1,0,9,13],
-"esc__dshot_8c.html#a8211d081fff83f1ea24418e8f4f8b7c4":[13,0,1,0,0,0,1,0,9,30],
-"esc__dshot_8c.html#a85c3a3ac5a058d1c9651412742a8c6c3":[13,0,1,0,0,0,1,0,9,4],
-"esc__dshot_8c.html#a9f6d9cf7ce270c94cf33b412cad45adb":[13,0,1,0,0,0,1,0,9,18],
-"esc__dshot_8c.html#aa28bfa199426ee8ae1d0c46c32e5c1c4":[13,0,1,0,0,0,1,0,9,1],
-"esc__dshot_8c.html#aa2ccafb2d095c2922d26b9c3138ae3a6":[13,0,1,0,0,0,1,0,9,26],
-"esc__dshot_8c.html#aa9f084d1c2ec09c1ff9eea9a926f6364":[13,0,1,0,0,0,1,0,9,11]
+"esc__dshot_8c.html#a43d1f779804f4148aebb87c14fb56f21":[13,0,1,0,0,0,1,0,9,19]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX53 =
 {
+"dshot__rpmCapture_8h.html#structDshotRpmCaptureDmaBuffer":[13,0,1,0,0,0,1,0,8,2],
+"dshot__rpmCapture_8h.html#structDshotRpmCaptureOneChannelDmaBuffer":[13,0,1,0,0,0,1,0,8,1],
+"dshot__rpmCapture_8h_source.html":[13,0,1,0,0,0,1,0,8],
+"dust__gp2y_8c.html":[13,0,1,0,6,44,7],
+"dust__gp2y_8c.html#a1760922e794a13871c9bfd259c150fc7":[13,0,1,0,6,44,7,6],
+"dust__gp2y_8c.html#a44b4e1877b24df3a936c237f6149f36d":[13,0,1,0,6,44,7,8],
+"dust__gp2y_8c.html#a699fbbcaef8fc03bb1b2d7a0083261ab":[13,0,1,0,6,44,7,1],
+"dust__gp2y_8c.html#a75de50813622e1696c13f6fdb17bc37a":[13,0,1,0,6,44,7,0],
+"dust__gp2y_8c.html#a7ba1d364e765abcc7fe0ff35f4364f17":[13,0,1,0,6,44,7,4],
 "dust__gp2y_8c.html#a94acdbd9d62b8e8f237b253de78151dc":[13,0,1,0,6,44,7,7],
 "dust__gp2y_8c.html#aaa73fb1b430bfb2487a71083ea9aefa6":[13,0,1,0,6,44,7,2],
 "dust__gp2y_8c.html#ad49f51aecf22ec97306889dad6db13e7":[13,0,1,0,6,44,7,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX53 =
 "eff__scheduling__plusquad_8c.html#ab822f9ec332abeea999ca7a361eebdb0":[13,0,1,0,6,14,18,17],
 "eff__scheduling__plusquad_8c.html#ac46a2224ae7cd5dec61b68679d7aedbb":[13,0,1,0,6,14,18,8],
 "eff__scheduling__plusquad_8c.html#ac530121a21faae32f908016773b9cca1":[13,0,1,0,6,14,18,16],
-"eff__scheduling__plusquad_8c.html#accecc5f7823c51cec548dda182fabacf":[13,0,1,0,6,14,18,25],
-"eff__scheduling__plusquad_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8":[13,0,1,0,6,14,18,6],
-"eff__scheduling__plusquad_8c.html#adee8b12ac52adb1790260adf09a4b449":[13,0,1,0,6,14,18,32],
-"eff__scheduling__plusquad_8c.html#ae3cf0d73e8da629db08b8726be556398":[13,0,1,0,6,14,18,7],
-"eff__scheduling__plusquad_8c.html#afa8a28f67c442bdf1fa1e6c22a6b9870":[13,0,1,0,6,14,18,30],
-"eff__scheduling__plusquad_8c.html#afc114fc7e5b94e1dbd3bcd9927b1a107":[13,0,1,0,6,14,18,26],
-"eff__scheduling__plusquad_8c_source.html":[13,0,1,0,6,14,18],
-"eff__scheduling__plusquad_8h.html":[13,0,1,0,6,14,19],
-"eff__scheduling__plusquad_8h.html#a02c3c5fe5a1aad676ed9253aa1a755a9":[13,0,1,0,6,14,19,38],
-"eff__scheduling__plusquad_8h.html#a0345389c913639828e0e10aad0408c37":[13,0,1,0,6,14,19,26]
+"eff__scheduling__plusquad_8c.html#accecc5f7823c51cec548dda182fabacf":[13,0,1,0,6,14,18,25]
 };

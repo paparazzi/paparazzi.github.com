@@ -1,5 +1,6 @@
 var colorfilter_8h =
 [
+    [ "colorfilter_event", "colorfilter_8h.html#a48d2e6095f71adc88ce123d665909924", null ],
     [ "colorfilter_init", "colorfilter_8h.html#ab8b6b333c3f84d7497aef5629a2e4453", null ],
     [ "color_cb_max", "colorfilter_8h.html#a028a785eb4e92e36a242baac2c592b6b", null ],
     [ "color_cb_min", "colorfilter_8h.html#adbcec0bafce0688f1708beaf0b6e792a", null ],

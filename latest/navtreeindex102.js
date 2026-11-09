@@ -1,5 +1,16 @@
 var NAVTREEINDEX102 =
 {
+"l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8dae95bd5bb6b10220f8da2afcece98dac7":[13,0,1,0,7,66,2,4],
+"l3gd20_8h.html#ac5faaf4b33125fe3a6ed619f7d96c703":[13,0,1,0,7,66,0,2],
+"l3gd20_8h.html#ac7313d1c10e17e2f2bf6e6fc36bb562d":[13,0,1,0,7,66,0,1],
+"l3gd20_8h.html#ae6049da9c8ab800bdc1643f8c0d08cb3":[13,0,1,0,7,66,1],
+"l3gd20_8h.html#aed24773c49063d6fefaf957af7b99ee7":[13,0,1,0,7,66,3],
+"l3gd20_8h.html#structL3gd20Config":[13,0,1,0,7,66,0],
+"l3gd20_8h_source.html":[13,0,1,0,7,66],
+"l3gd20__regs_8h.html":[13,0,1,0,7,67],
+"l3gd20__regs_8h.html#a005975e2e9d98e1abd9021c08b8dcd6a":[13,0,1,0,7,67,2],
+"l3gd20__regs_8h.html#a053382966fe4c1b365d3ba8ff4e76176":[13,0,1,0,7,67,6],
+"l3gd20__regs_8h.html#a1033395cdc16d10563a32d2f324fe7da":[13,0,1,0,7,67,20],
 "l3gd20__regs_8h.html#a1649f8bfea4c643c0ec56ef79f1c32a6":[13,0,1,0,7,67,11],
 "l3gd20__regs_8h.html#a1e33544ec25e4074bd01a0344a234893":[13,0,1,0,7,67,16],
 "l3gd20__regs_8h.html#a39ee63b5793799c6d330bfbe80ef6848":[13,0,1,0,7,67,22],
@@ -238,16 +249,5 @@ var NAVTREEINDEX102 =
 "lia_2chibios_2v1_81_2mcuconf__board_8h.html#a311306228435a4ddb879e8f0d80e3c10":[13,0,1,0,1,8,0,0,1,99],
 "lia_2chibios_2v1_81_2mcuconf__board_8h.html#a314cec15b23670096752964ec5caf3ce":[13,0,1,0,1,8,0,0,1,18],
 "lia_2chibios_2v1_81_2mcuconf__board_8h.html#a32a5323ec55bfb3e6590c8346ee76dc4":[13,0,1,0,1,8,0,0,1,13],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a360ce89f2744ed7e4ec5789201f557c3":[13,0,1,0,1,8,0,0,1,14],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a3670f3886d02bb3010016bbf0db0db83":[13,0,1,0,1,8,0,0,1,64],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a3c45031ace768dff11d3791a466a7ad1":[13,0,1,0,1,8,0,0,1,7],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a3d89a31bf8ff315d8c13102cea1284ac":[13,0,1,0,1,8,0,0,1,122],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a3f108deab28dba83858c5a6d5089a322":[13,0,1,0,1,8,0,0,1,77],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a3f29be9a3823107fef0db45e685c21c8":[13,0,1,0,1,8,0,0,1,20],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c":[13,0,1,0,1,8,0,0,1,115],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a44c0e5a4a20e05dbb598a408cf1ebee7":[13,0,1,0,1,8,0,0,1,23],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a46e4ff65179ddd52641c366865b6cfa6":[13,0,1,0,1,8,0,0,1,58],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a47d90eaca23f3eea99d74d1bb3539541":[13,0,1,0,1,8,0,0,1,97],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a4d41fed5b7b1c735e1ea5a26970dd564":[13,0,1,0,1,8,0,0,1,45],
-"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a4f49346cf0c36ac85466517ceff6299b":[13,0,1,0,1,8,0,0,1,111]
+"lia_2chibios_2v1_81_2mcuconf__board_8h.html#a360ce89f2744ed7e4ec5789201f557c3":[13,0,1,0,1,8,0,0,1,14]
 };

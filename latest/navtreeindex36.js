@@ -1,5 +1,11 @@
 var NAVTREEINDEX36 =
 {
+"chimera_2chibios_2v1_80_2board_8h.html#aaddc843efed03effa9394c3892a74eec":[13,0,1,0,1,3,0,0,0,85],
+"chimera_2chibios_2v1_80_2board_8h.html#aae14f658ae78595a876e51063ed055ab":[13,0,1,0,1,3,0,0,0,176],
+"chimera_2chibios_2v1_80_2board_8h.html#aae5f458b9f230693fafe40f0b3c916ea":[13,0,1,0,1,3,0,0,0,271],
+"chimera_2chibios_2v1_80_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d":[13,0,1,0,1,3,0,0,0,101],
+"chimera_2chibios_2v1_80_2board_8h.html#ab11a0f6a29beeede9d74045d2b5ebe96":[13,0,1,0,1,3,0,0,0,187],
+"chimera_2chibios_2v1_80_2board_8h.html#ab188d7f0ab42937b92e7101d43fd4b4d":[13,0,1,0,1,3,0,0,0,336],
 "chimera_2chibios_2v1_80_2board_8h.html#ab20deee1d3cabbf6ea36bd61fefc548f":[13,0,1,0,1,3,0,0,0,325],
 "chimera_2chibios_2v1_80_2board_8h.html#ab2307fe823ceed3fad173c92cf48d2e4":[13,0,1,0,1,3,0,0,0,288],
 "chimera_2chibios_2v1_80_2board_8h.html#ab2868c2e00e021550259ea4c6524e195":[13,0,1,0,1,3,0,0,0,424],
@@ -243,11 +249,5 @@ var NAVTREEINDEX36 =
 "chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a624c2f45087a89671d281a4a6a97f0b5":[13,0,1,0,1,3,0,0,2,263],
 "chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a626416dc22cf5f3deff2a8c7d8efa5b2":[13,0,1,0,1,3,0,0,2,249],
 "chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a6366c26f605ce31e89deee1af686f5e6":[13,0,1,0,1,3,0,0,2,216],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a65cadd46c1d4b5739f1ef3a623faf196":[13,0,1,0,1,3,0,0,2,8],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a66f4dea2ca69a6afdc2a05593ddb4999":[13,0,1,0,1,3,0,0,2,149],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a679be1e536703334fe15be63f0a32ef8":[13,0,1,0,1,3,0,0,2,202],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a68bba40e4d2d88af2929428017408e17":[13,0,1,0,1,3,0,0,2,182],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a6902ae8523df1a36743376d07382b2d4":[13,0,1,0,1,3,0,0,2,44],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a690972d52bfd04ed8051b61a661f2f53":[13,0,1,0,1,3,0,0,2,42],
-"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a6a4eaf179989a2ade320514ca2bf48e3":[13,0,1,0,1,3,0,0,2,313]
+"chimera_2chibios_2v1_80_2mcuconf__board_8h.html#a65cadd46c1d4b5739f1ef3a623faf196":[13,0,1,0,1,3,0,0,2,8]
 };

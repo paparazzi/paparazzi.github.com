@@ -224,6 +224,11 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a432938e91d249b13ae6e0d15f51b9fb3" id="r_a432938e91d249b13ae6e0d15f51b9fb3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__common_8h.html#a432938e91d249b13ae6e0d15f51b9fb3">ABI_EXTERN</a>&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">extern</a></td></tr>
 <tr class="separator:a432938e91d249b13ae6e0d15f51b9fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec9b19dfc6efb3df6a74ca0a1596802" id="r_afec9b19dfc6efb3df6a74ca0a1596802"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__common_8h.html#afec9b19dfc6efb3df6a74ca0a1596802">ABI_CHECK_MAIN_THREAD</a>&#160;&#160;&#160;<a class="el" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
+<tr class="memdesc:afec9b19dfc6efb3df6a74ca0a1596802"><td class="mdescLeft">&#160;</td><td class="mdescRight">ABI messages must be sent from the main thread (the one running the periodic and event functions): their receivers are not thread-safe.  <br /></td></tr>
+<tr class="separator:afec9b19dfc6efb3df6a74ca0a1596802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbee15708b08778346e38a93b924c25" id="r_a9dbee15708b08778346e38a93b924c25"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__common_8h.html#a9dbee15708b08778346e38a93b924c25">abi_check_thread</a>(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_msg_id</a>)&#160;&#160;&#160;{}</td></tr>
+<tr class="separator:a9dbee15708b08778346e38a93b924c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a673124c7bb521be4e42d4bc0d29cb" id="r_a89a673124c7bb521be4e42d4bc0d29cb"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a>&#160;&#160;&#160;255</td></tr>
 <tr class="memdesc:a89a673124c7bb521be4e42d4bc0d29cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast address.  <br /></td></tr>
 <tr class="separator:a89a673124c7bb521be4e42d4bc0d29cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +267,7 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>Event structure to store callbacks in a linked list. </p>
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00068">68</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00089">89</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for abi_struct:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -315,7 +320,46 @@ next</td>
 <p>Broadcast address. </p>
 <p>When binding to an ABI message with broadcast address as a sender id, messages from all senders are received. </p>
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00059">59</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00080">80</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+
+</div>
+</div>
+<a id="afec9b19dfc6efb3df6a74ca0a1596802" name="afec9b19dfc6efb3df6a74ca0a1596802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec9b19dfc6efb3df6a74ca0a1596802">&#9670;&#160;</a></span>ABI_CHECK_MAIN_THREAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> ABI_CHECK_MAIN_THREAD&#160;&#160;&#160;<a class="el" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ABI messages must be sent from the main thread (the one running the periodic and event functions): their receivers are not thread-safe. </p>
+<p>With ABI_CHECK_MAIN_THREAD every message checks it, and one sent from another thread stops the program at that call (abort in NPS/SITL, halt on ChibiOS), to find it with the debugger. Default TRUE in NPS/SITL, FALSE otherwise. Needs the threads module. </p>
+
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00062">62</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+
+</div>
+</div>
+<a id="a9dbee15708b08778346e38a93b924c25" name="a9dbee15708b08778346e38a93b924c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dbee15708b08778346e38a93b924c25">&#9670;&#160;</a></span>abi_check_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> abi_check_thread</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_msg_id</a></td><td>)</td>
+          <td>&#160;&#160;&#160;{}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00070">70</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +378,7 @@ next</td>
 <p>Reserved ABI ID to disable callback. </p>
 <p>When binding to an ABI message with 0 as sender id, the callback is disabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00065">65</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00086">86</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +426,7 @@ next</td>
 
 <p>Macros for linked list. </p>
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00076">76</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00097">97</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +456,7 @@ next</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00077">77</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00098">98</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +475,7 @@ next</td>
 
 <p>Generic callback definition. </p>
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00053">53</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00074">74</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +491,7 @@ next</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00073">73</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abi__common_8h_source.html#l00094">94</a> of file <a class="el" href="abi__common_8h_source.html">abi_common.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +501,7 @@ next</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="abi__common_8h.html">abi_common.h</a></li>
-    <li class="footer">Generated on Mon Nov 9 2026 14:01:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 14:30:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

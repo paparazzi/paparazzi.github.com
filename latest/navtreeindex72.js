@@ -1,5 +1,16 @@
 var NAVTREEINDEX72 =
 {
+"group__math__algebra__int.html#structInt64Vect3":[10,8,1,3,16],
+"group__math__algebra__int.html#structInt8Vect3":[10,8,1,3,1],
+"group__math__algebra__int.html#structUint16Vect3":[10,8,1,3,2],
+"group__math__algebra__int.html#structUint8Vect3":[10,8,1,3,0],
+"group__math__geodetic.html":[10,8,2],
+"group__math__geodetic__double.html":[10,8,2,1],
+"group__math__geodetic__double.html#a0d447af9ac85591862c4d07867968b69":[10,8,2,1,0,0],
+"group__math__geodetic__double.html#a0e57b6568d2f5adcf93453e9afaa4022":[10,8,2,1,5,0],
+"group__math__geodetic__double.html#a12cdbac673550a28982e7f048916ef6e":[10,8,2,1,4,3],
+"group__math__geodetic__double.html#a522277f8e7b5e64286a694dba0844980":[10,8,2,1,2,1],
+"group__math__geodetic__double.html#a5a686dd185c2a8d380d6f35d6750e164":[10,8,2,1,0,1],
 "group__math__geodetic__double.html#a6095058553c80e425d1ae07502107336":[10,8,2,1,3,2],
 "group__math__geodetic__double.html#a733628b2f9d3a5a33e01bd2842990e44":[10,8,2,1,5,2],
 "group__math__geodetic__double.html#a82e9f7f581666013bcd2014ef2d34ae3":[10,8,2,1,2,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX72 =
 "group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732":[10,8,0,22],
 "group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c":[10,8,0,16],
 "group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[10,8,0,6],
-"group__math__orientation__representation.html#structOrientationReps":[10,8,0,0],
-"group__mcu__periph.html":[10,0],
-"group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa":[10,0,9],
-"group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0":[10,0,2],
-"group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc":[10,0,3],
-"group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b":[10,0,8],
-"group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[10,0,5],
-"group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad":[10,0,7],
-"group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[10,0,6],
-"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[10,0,4],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[10,0,2,3],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1812ea427005091a47af570a2b1abf01":[10,0,2,1]
+"group__math__orientation__representation.html#structOrientationReps":[10,8,0,0]
 };

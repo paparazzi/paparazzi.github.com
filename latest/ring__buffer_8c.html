@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('ring__buffer_8c.html',''); initResizab
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ring_buffer.c File Reference</div></div>
 </div><!--header-->
@@ -119,6 +120,13 @@ $(document).ready(function(){initNavTree('ring__buffer_8c.html',''); initResizab
 </div>
 <p><a href="ring__buffer_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a54ae84c117d2abc32743e446ecd1c472" id="r_a54ae84c117d2abc32743e446ecd1c472"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ring__buffer_8c.html#a54ae84c117d2abc32743e446ecd1c472">RB_LOAD</a>(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>)&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_load_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_ACQUIRE</a>)</td></tr>
+<tr class="separator:a54ae84c117d2abc32743e446ecd1c472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180ecadbf0e7189042f1358e26421c8c" id="r_a180ecadbf0e7189042f1358e26421c8c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ring__buffer_8c.html#a180ecadbf0e7189042f1358e26421c8c">RB_STORE</a>(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>,  <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>)&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_store_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_RELEASE</a>)</td></tr>
+<tr class="separator:a180ecadbf0e7189042f1358e26421c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afa91b7fb42b04ec1aa11c0eb608e7e01" id="r_afa91b7fb42b04ec1aa11c0eb608e7e01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ring__buffer_8c.html#afa91b7fb42b04ec1aa11c0eb608e7e01">ring_buffer_init</a> (<a class="el" href="ring__buffer_8h.html#structring__buffer__t">ring_buffer_t</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">rb</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> size)</td></tr>
@@ -135,6 +143,57 @@ Functions</h2></td></tr>
 <tr class="memdesc:aac797b08f37508370b77a5c5aa3ea907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read.  <br /></td></tr>
 <tr class="separator:aac797b08f37508370b77a5c5aa3ea907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a54ae84c117d2abc32743e446ecd1c472" name="a54ae84c117d2abc32743e446ecd1c472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ae84c117d2abc32743e446ecd1c472">&#9670;&#160;</a></span>RB_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> RB_LOAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_load_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_ACQUIRE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00016">16</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+
+</div>
+</div>
+<a id="a180ecadbf0e7189042f1358e26421c8c" name="a180ecadbf0e7189042f1358e26421c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a180ecadbf0e7189042f1358e26421c8c">&#9670;&#160;</a></span>RB_STORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> RB_STORE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__atomic_store_n</a>(&amp;(<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_x</a>), (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">_v</a>), <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">__ATOMIC_RELEASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00017">17</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abb36e9fea06943ba1fb9bef5fac4763d" name="abb36e9fea06943ba1fb9bef5fac4763d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb36e9fea06943ba1fb9bef5fac4763d">&#9670;&#160;</a></span>ring_buffer_available()</h2>
@@ -159,11 +218,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00020">20</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00027">27</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ring__buffer_8c_source.html#l00016">RB_LOAD</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ring__buffer_8c_source.html#l00029">ring_buffer_free_space()</a>, <a class="el" href="ring__buffer_8c_source.html#l00058">ring_buffer_read()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00153">tunnel_uavcan_char_available()</a>, and <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ring__buffer_8c_source.html#l00038">ring_buffer_free_space()</a>, <a class="el" href="ring__buffer_8c_source.html#l00068">ring_buffer_read()</a>, <a class="el" href="tunnel__uavcan_8c_source.html#l00153">tunnel_uavcan_char_available()</a>, and <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -232,11 +291,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00029">29</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00038">38</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ring__buffer_8c_source.html#l00020">ring_buffer_available()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ring__buffer_8c_source.html#l00027">ring_buffer_available()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ring__buffer_8c_source.html#l00033">ring_buffer_write()</a>, and <a class="el" href="tunnel__uavcan_8c_source.html#l00092">tunnel_uavcan_check_free_space()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ring__buffer_8c_source.html#l00043">ring_buffer_write()</a>, and <a class="el" href="tunnel__uavcan_8c_source.html#l00092">tunnel_uavcan_check_free_space()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -321,7 +380,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00013">13</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00020">20</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
@@ -386,9 +445,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of byte effectively read from the ring_buffer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00058">58</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00068">68</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ring__buffer_8c_source.html#l00020">ring_buffer_available()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ring__buffer_8c_source.html#l00017">RB_STORE</a>, and <a class="el" href="ring__buffer_8c_source.html#l00027">ring_buffer_available()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="tunnel__uavcan_8c_source.html#l00162">tunnel_uavcan_get_byte()</a>, and <a class="el" href="tunnel__uavcan_8c_source.html#l00127">tunnel_uavcan_send_message()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -474,9 +533,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of byte effectively written in the ring_buffer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00033">33</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00043">43</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ring__buffer_8c_source.html#l00029">ring_buffer_free_space()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="ring__buffer_8c_source.html#l00017">RB_STORE</a>, and <a class="el" href="ring__buffer_8c_source.html#l00038">ring_buffer_free_space()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="tunnel__uavcan_8c_source.html#l00068">tunnel_uavcan_cb()</a>, and <a class="el" href="tunnel__uavcan_8c_source.html#l00113">tunnel_uavcan_put_buffer()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -524,7 +583,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_644c3112dbb29d6147750c842d63ff9c.html">utils</a></li><li class="navelem"><a class="el" href="ring__buffer_8c.html">ring_buffer.c</a></li>
-    <li class="footer">Generated on Mon Nov 9 2026 14:01:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 14:30:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

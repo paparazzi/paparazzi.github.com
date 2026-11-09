@@ -1,5 +1,16 @@
 var NAVTREEINDEX76 =
 {
+"guidance__hybrid_8c.html#af4b34067cdc892b07420d96e5aee6613":[13,0,1,0,3,2,0,6,1],
+"guidance__hybrid_8c.html#af8a5dd071abc8df6c3c96887b68dd595":[13,0,1,0,3,2,0,6,28],
+"guidance__hybrid_8c.html#af9a199da433d14edc939c0490902c49a":[13,0,1,0,3,2,0,6,49],
+"guidance__hybrid_8c.html#afcbeea1c55f94314b06f65e7de969cbf":[13,0,1,0,3,2,0,6,22],
+"guidance__hybrid_8c_source.html":[13,0,1,0,3,2,0,6],
+"guidance__hybrid_8h.html":[13,0,1,0,3,2,0,7],
+"guidance__hybrid_8h.html#a08d5adc091b6ecdb9d5158a4f0fb4ac3":[13,0,1,0,3,2,0,7,18],
+"guidance__hybrid_8h.html#a08e0a91b27051019fbe697786066f6a6":[13,0,1,0,3,2,0,7,20],
+"guidance__hybrid_8h.html#a0a5cc4557edc7b92dc32474c1410ed13":[13,0,1,0,3,2,0,7,4],
+"guidance__hybrid_8h.html#a1120642cae2b67bc549bd6c8138c2fc5":[13,0,1,0,3,2,0,7,15],
+"guidance__hybrid_8h.html#a1fb1499545a12a2e6762cf5593a433df":[13,0,1,0,3,2,0,7,3],
 "guidance__hybrid_8h.html#a424c243ed838faa3734f2e3817c289f9":[13,0,1,0,3,2,0,7,17],
 "guidance__hybrid_8h.html#a480ec62202e63e39b45c8435b7ea7e77":[13,0,1,0,3,2,0,7,25],
 "guidance__hybrid_8h.html#a4bde21f915fb8621dd07031537611387":[13,0,1,0,3,2,0,7,7],
@@ -238,16 +249,5 @@ var NAVTREEINDEX76 =
 "guidance__indi__hybrid__quadplane_8c.html#af61e7f08e6f8a85cf1f0c1786cfd22e4":[13,0,1,0,3,2,0,15,7],
 "guidance__indi__hybrid__quadplane_8c_source.html":[13,0,1,0,3,2,0,15],
 "guidance__indi__hybrid__quadplane_8h.html":[13,0,1,0,3,2,0,16],
-"guidance__indi__hybrid__quadplane_8h.html#a1736298c0e0c9e6c9db4ee211cd11b9a":[13,0,1,0,3,2,0,16,3],
-"guidance__indi__hybrid__quadplane_8h.html#a59489af898bc65644abb6ed6dd33a757":[13,0,1,0,3,2,0,16,0],
-"guidance__indi__hybrid__quadplane_8h.html#a64e3decdab99fca06278c4d76ac8111b":[13,0,1,0,3,2,0,16,1],
-"guidance__indi__hybrid__quadplane_8h.html#ab191b9d0a4e05a5a449f14ceb2c984cd":[13,0,1,0,3,2,0,16,2],
-"guidance__indi__hybrid__quadplane_8h_source.html":[13,0,1,0,3,2,0,16],
-"guidance__indi__hybrid__tailsitter_8c.html":[13,0,1,0,3,2,0,17],
-"guidance__indi__hybrid__tailsitter_8c.html#ac24605ed3b2910b6b5767a691516e073":[13,0,1,0,3,2,0,17,1],
-"guidance__indi__hybrid__tailsitter_8c.html#acedb2156e6867b5b21a2b938b5e09728":[13,0,1,0,3,2,0,17,0],
-"guidance__indi__hybrid__tailsitter_8c_source.html":[13,0,1,0,3,2,0,17],
-"guidance__indi__hybrid__tailsitter_8h.html":[13,0,1,0,3,2,0,18],
-"guidance__indi__hybrid__tailsitter_8h.html#a59489af898bc65644abb6ed6dd33a757":[13,0,1,0,3,2,0,18,0],
-"guidance__indi__hybrid__tailsitter_8h.html#a64e3decdab99fca06278c4d76ac8111b":[13,0,1,0,3,2,0,18,1]
+"guidance__indi__hybrid__quadplane_8h.html#a1736298c0e0c9e6c9db4ee211cd11b9a":[13,0,1,0,3,2,0,16,3]
 };

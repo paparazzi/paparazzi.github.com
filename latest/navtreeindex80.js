@@ -1,5 +1,16 @@
 var NAVTREEINDEX80 =
 {
+"hf__float_8c.html#a70ccbd56ba5cebf0f68f8c8249f6ab0e":[13,0,1,0,6,37,2,36],
+"hf__float_8c.html#a7133525e36c6f74bc65258d037f45c76":[13,0,1,0,6,37,2,6],
+"hf__float_8c.html#a71b7f7c69e39524d4119c921acfacba9":[13,0,1,0,6,37,2,31],
+"hf__float_8c.html#a72f310874029d3bec298c7161601a57e":[13,0,1,0,6,37,2,26],
+"hf__float_8c.html#a864cdfaee047ac005988be39e270b2d5":[13,0,1,0,6,37,2,24],
+"hf__float_8c.html#a896f5d91e6dfb6576822aa447ee9912a":[13,0,1,0,6,37,2,20],
+"hf__float_8c.html#a8b1ace7fb278ed8284cb2e3579f14798":[13,0,1,0,6,37,2,0],
+"hf__float_8c.html#a8f336ca4734ceaf4a24252f60b0ac642":[13,0,1,0,6,37,2,18],
+"hf__float_8c.html#a92d9decc27f0ac007c7d333b0d5ee31b":[13,0,1,0,6,37,2,55],
+"hf__float_8c.html#a9bdbdd8c70af4499734f76ebffbebd69":[13,0,1,0,6,37,2,22],
+"hf__float_8c.html#a9f1e41b0ad53fefa2a181e842904d37b":[13,0,1,0,6,37,2,11],
 "hf__float_8c.html#a9f81e2e80dcce14b4f1df428c5c8745d":[13,0,1,0,6,37,2,30],
 "hf__float_8c.html#a9ff927aa8ccc5c01b188bf11e728ae33":[13,0,1,0,6,37,2,28],
 "hf__float_8c.html#ab1be8c473b84d14fbf9fccfd5767efab":[13,0,1,0,6,37,2,7],
@@ -238,16 +249,5 @@ var NAVTREEINDEX80 =
 "hmc5843_8h.html#af07ba9764727d8692eb33cd271080cdc":[13,0,1,0,7,44,19],
 "hmc5843_8h.html#af5698fe0de8ea262fc27e0680c3270e2":[13,0,1,0,7,44,2],
 "hmc5843_8h.html#structHmc5843":[13,0,1,0,7,44,0],
-"hmc5843_8h.html#unionHmc5843_8data":[13,0,1,0,7,44,1],
-"hmc5843_8h_source.html":[13,0,1,0,7,44],
-"hmc5843__arch_8c.html":[13,0,1,0,0,2,2,0],
-"hmc5843__arch_8c.html#a9343a138dd5cd683a2771415f2140d9c":[13,0,1,0,0,2,2,0,1],
-"hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7":[13,0,1,0,0,2,2,0,0],
-"hmc5843__arch_8c_source.html":[13,0,1,0,0,2,2,0],
-"hmc5843__arch_8h.html":[13,0,1,0,0,2,2,1],
-"hmc5843__arch_8h_source.html":[13,0,1,0,0,2,2,1],
-"hmc58xx_8c.html":[13,0,1,0,7,45],
-"hmc58xx_8c.html#a035c2f50aad18e10db025c532b0d65ce":[13,0,1,0,7,45,1],
-"hmc58xx_8c.html#a07ff7e658a24d00505e96895d72a4372":[13,0,1,0,7,45,4],
-"hmc58xx_8c.html#a0d59dc885e8bb3f9cef2eae6c7b2205c":[13,0,1,0,7,45,5]
+"hmc5843_8h.html#unionHmc5843_8data":[13,0,1,0,7,44,1]
 };

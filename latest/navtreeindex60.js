@@ -1,5 +1,14 @@
 var NAVTREEINDEX60 =
 {
+"filter__1euro__imu_8c.html#a22165a69af15435f04d8098acf58f0fc":[13,0,1,0,6,36,0,4],
+"filter__1euro__imu_8c.html#a2a5ce7c75e2c950f8f1f2e87c415a6db":[13,0,1,0,6,36,0,13],
+"filter__1euro__imu_8c.html#a2c4d364276eac43ce3917129d941f2e8":[13,0,1,0,6,36,0,3],
+"filter__1euro__imu_8c.html#a316a606bce31979bcc4c5bbd79b4afe2":[13,0,1,0,6,36,0,16],
+"filter__1euro__imu_8c.html#a32794a4b9b572535ab81c25e77fe0812":[13,0,1,0,6,36,0,6],
+"filter__1euro__imu_8c.html#a44d506760598e8c18e5da6e52dfc6b0d":[13,0,1,0,6,36,0,25],
+"filter__1euro__imu_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826":[13,0,1,0,6,36,0,21],
+"filter__1euro__imu_8c.html#a47e1ea35fdb43af72537c6c9f38b889d":[13,0,1,0,6,36,0,18],
+"filter__1euro__imu_8c.html#a49cc1e545848b85016af530049991c02":[13,0,1,0,6,36,0,19],
 "filter__1euro__imu_8c.html#a4ff05d39f8621fe30fa320ebfbd54491":[13,0,1,0,6,36,0,7],
 "filter__1euro__imu_8c.html#a51f5f59b347ecf8d7c8fbbac098b85d1":[13,0,1,0,6,36,0,23],
 "filter__1euro__imu_8c.html#a6a5e79c071bf1e99e7112c34e3828057":[13,0,1,0,6,36,0,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX60 =
 "flight__benchmark_8c_source.html":[13,0,1,0,6,5,0],
 "flight__benchmark_8h.html":[13,0,1,0,6,5,1],
 "flight__benchmark_8h.html#a32990d5437f07167a684a9dc97602022":[13,0,1,0,6,5,1,7],
-"flight__benchmark_8h.html#a42ae975c1caf0cfcf6d713897773a16a":[13,0,1,0,6,5,1,1],
-"flight__benchmark_8h.html#a4dcacc8a9bc906ab084299c2614669ec":[13,0,1,0,6,5,1,0],
-"flight__benchmark_8h.html#a6076ee1cc054c9364df8c7539742c35c":[13,0,1,0,6,5,1,3],
-"flight__benchmark_8h.html#a8d6b7ceef28725b3dea8c46b2433dc16":[13,0,1,0,6,5,1,5],
-"flight__benchmark_8h.html#a9c89ccb67edcffa690db968ae55d0e38":[13,0,1,0,6,5,1,6],
-"flight__benchmark_8h.html#acf35bacfcd9dae8ab6b2aa057cf8aa77":[13,0,1,0,6,5,1,2],
-"flight__benchmark_8h.html#af467d23a41b80cc6ef395e9478510d1a":[13,0,1,0,6,5,1,4],
-"flight__benchmark_8h_source.html":[13,0,1,0,6,5,1],
-"flight__gear_8h.html":[13,0,1,1,2,1],
-"flight__gear_8h.html#a00678f0f6eabb9cc1eb6b2e3a6be6a39":[13,0,1,1,2,1,0,8]
+"flight__benchmark_8h.html#a42ae975c1caf0cfcf6d713897773a16a":[13,0,1,0,6,5,1,1]
 };

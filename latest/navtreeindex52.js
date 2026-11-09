@@ -1,5 +1,14 @@
 var NAVTREEINDEX52 =
 {
+"dps310__i2c_8h.html#a5773941247c1bc2df0fae048815c8426":[13,0,1,0,7,39,0,14],
+"dps310__i2c_8h.html#a7260541fe494d44a44188e4edfa72f86":[13,0,1,0,7,39,0,9],
+"dps310__i2c_8h.html#a78b5780804be919ce7547a48e47bb96a":[13,0,1,0,7,39,0,10],
+"dps310__i2c_8h.html#a7970cdfa89969ad79a4b9eab0cc1f421":[13,0,1,0,7,39,0,1],
+"dps310__i2c_8h.html#ab0f3f09203110bb808a3c27bac6ad1e0":[13,0,1,0,7,39,0,6],
+"dps310__i2c_8h.html#ab674b5ed9f83c06252c05d2b70330294":[13,0,1,0,7,39,2],
+"dps310__i2c_8h.html#acb06d68191672dfcec3ddb8f43ec5f8d":[13,0,1,0,7,39,0,5],
+"dps310__i2c_8h.html#acc986a30941d6d04c5982a2d22746226":[13,0,1,0,7,39,0,8],
+"dps310__i2c_8h.html#ad09bf25b2f288024621959ebd2bb3aa5":[13,0,1,0,7,39,0,4],
 "dps310__i2c_8h.html#ad34beb4676e9f6d2c2290f259b0bf423":[13,0,1,0,7,39,0,11],
 "dps310__i2c_8h.html#ad47112a890a90fbf06475cfdb2db6fc9":[13,0,1,0,7,39,4],
 "dps310__i2c_8h.html#ad76be39fe212e28c3a18a20e5e8a5658":[13,0,1,0,7,39,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX52 =
 "dshot__rpmCapture_8h.html#ae870cbb20c4aff555035114cd13dbe91":[13,0,1,0,0,0,1,0,8,10],
 "dshot__rpmCapture_8h.html#structDshotDmaStreamChan":[13,0,1,0,0,0,1,0,8,0],
 "dshot__rpmCapture_8h.html#structDshotRpmCapture":[13,0,1,0,0,0,1,0,8,4],
-"dshot__rpmCapture_8h.html#structDshotRpmCaptureConfig":[13,0,1,0,0,0,1,0,8,3],
-"dshot__rpmCapture_8h.html#structDshotRpmCaptureDmaBuffer":[13,0,1,0,0,0,1,0,8,2],
-"dshot__rpmCapture_8h.html#structDshotRpmCaptureOneChannelDmaBuffer":[13,0,1,0,0,0,1,0,8,1],
-"dshot__rpmCapture_8h_source.html":[13,0,1,0,0,0,1,0,8],
-"dust__gp2y_8c.html":[13,0,1,0,6,44,7],
-"dust__gp2y_8c.html#a1760922e794a13871c9bfd259c150fc7":[13,0,1,0,6,44,7,6],
-"dust__gp2y_8c.html#a44b4e1877b24df3a936c237f6149f36d":[13,0,1,0,6,44,7,8],
-"dust__gp2y_8c.html#a699fbbcaef8fc03bb1b2d7a0083261ab":[13,0,1,0,6,44,7,1],
-"dust__gp2y_8c.html#a75de50813622e1696c13f6fdb17bc37a":[13,0,1,0,6,44,7,0],
-"dust__gp2y_8c.html#a7ba1d364e765abcc7fe0ff35f4364f17":[13,0,1,0,6,44,7,4]
+"dshot__rpmCapture_8h.html#structDshotRpmCaptureConfig":[13,0,1,0,0,0,1,0,8,3]
 };

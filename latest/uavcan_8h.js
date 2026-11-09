@@ -1,5 +1,9 @@
 var uavcan_8h =
 [
+    [ "uavcan_rx_frame", "uavcan_8h.html#structuavcan__rx__frame", [
+      [ "frame", "uavcan_8h.html#a7d85cf981664a948322e87dcfd96dce9", null ],
+      [ "timestamp", "uavcan_8h.html#a11695349a261ef2c4031ba5f0514b633", null ]
+    ] ],
     [ "uavcan_iface_t", "uavcan_8h.html#structuavcan__iface__t", [
       [ "bsem", "uavcan_8h.html#a6fd4bf434b76d2d3665b3727f7c0ec22", null ],
       [ "can_baudrate", "uavcan_8h.html#a4ac83347bccea5b6e4fc5053b7535e2a", null ],
@@ -10,6 +14,9 @@ var uavcan_8h =
       [ "nb_errors", "uavcan_8h.html#acbf05983c707260698c4363de4b68349", null ],
       [ "node_id", "uavcan_8h.html#ad367b9e42ad9a189da746a6f9aeab587", null ],
       [ "rx_mutex", "uavcan_8h.html#a30a510b562cf6fa4d7f9c1f7213081bf", null ],
+      [ "rx_overflows", "uavcan_8h.html#a5fb89ab4ab1d224f40d8ca28cb0afa35", null ],
+      [ "rx_queue", "uavcan_8h.html#a614e52165f57ca570a2fd3fc391e5b32", null ],
+      [ "rx_queue_buf", "uavcan_8h.html#a5b365e9f98510efa7193132b75145365", null ],
       [ "thread_tx", "uavcan_8h.html#ac914817424837b52bcef064d22a98ed1", null ],
       [ "transfer_ids_keys", "uavcan_8h.html#a5d4a139d9c734f9fb5e3c86b443427bf", null ],
       [ "transfer_ids_store", "uavcan_8h.html#a7f0881b91efdcaf2414ba2a0d48faaba", null ],
@@ -23,6 +30,8 @@ var uavcan_8h =
       [ "data_type_signature", "uavcan_8h.html#adcf2b7989e1c298f3a20a2e944d8f7ce", null ],
       [ "next", "uavcan_8h.html#aabb90df0b28c6c17daf1f6ed2d8ea3a2", null ]
     ] ],
+    [ "UAVCAN_RX_BUFFER_SIZE", "uavcan_8h.html#a499ac06af3ce28074285d2979b305e5b", null ],
+    [ "UAVCAN_RX_QUEUE_SIZE", "uavcan_8h.html#ac3e5090cf195085934163164be81cd5d", null ],
     [ "UAVCAN_TID_STORE_CAPACITY", "uavcan_8h.html#a890eb031ad2bbd9cbffc224464e8e022", null ],
     [ "UAVCAN_TX_FIFO_SIZE", "uavcan_8h.html#a7882c6e9adeddfb54acd64ee3fe588f3", null ],
     [ "uavcan_callback", "uavcan_8h.html#a4200d5e9586aba3903116266cde0e6d5", null ],
@@ -33,5 +42,6 @@ var uavcan_8h =
     [ "uavcan_reporting", "uavcan_8h.html#aa96c5799b3b297a451b146748eb1bfff", null ],
     [ "uavcan_request", "uavcan_8h.html#a712699772438b4905dca3e9cafbaf099", null ],
     [ "uavcan_response", "uavcan_8h.html#acc1e47eb76715ea862618c75b03d2e9d", null ],
+    [ "uavcan_rx_event", "uavcan_8h.html#aba317227c5e047f571aa634d66b80d20", null ],
     [ "uavcan_transfer", "uavcan_8h.html#a5cd5803a4fbd48694d58918bdec701cc", null ]
 ];

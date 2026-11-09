@@ -1,5 +1,7 @@
 var framed__ring__buffer_8c =
 [
+    [ "FRB_LOAD", "framed__ring__buffer_8c.html#a31b766e2db72e3cb9505010cca026b82", null ],
+    [ "FRB_STORE", "framed__ring__buffer_8c.html#acb994b3917ea548c4bb5c25b45d8f274", null ],
     [ "framed_ring_buffer_available", "framed__ring__buffer_8c.html#a7b6fb14ffd89e1e1ba447237e36e7a35", null ],
     [ "framed_ring_buffer_clear", "framed__ring__buffer_8c.html#a7985a6bc5770f08dae552cf5a8079cec", null ],
     [ "framed_ring_buffer_drop_last", "framed__ring__buffer_8c.html#a27872ed37b6ae30200e0b41f381a99ec", null ],

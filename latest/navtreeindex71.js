@@ -1,5 +1,16 @@
 var NAVTREEINDEX71 =
 {
+"group__math__algebra__generic.html#gaa05e2d86379889bd3ca31eb1f50b12e9":[10,8,1,1,7],
+"group__math__algebra__generic.html#gaa7a609f5773ee008953038092165f2ba":[10,8,1,1,12],
+"group__math__algebra__generic.html#gaaae673d8256df41e2e2db87b03f60a6b":[10,8,1,1,55],
+"group__math__algebra__generic.html#gaabe6b68b36e19217c178ddc14515c9af":[10,8,1,1,79],
+"group__math__algebra__generic.html#gaac90b1ef45f1b296e418ee1b5cded854":[10,8,1,1,29],
+"group__math__algebra__generic.html#gaace0fc4ea4d4f17ac7d09545b2871080":[10,8,1,1,2],
+"group__math__algebra__generic.html#gaadc58f6e9e2f3514fe3212f4cab624ed":[10,8,1,1,52],
+"group__math__algebra__generic.html#gaae2e66fa0d27cf6f7d80ab5d4f1c24b9":[10,8,1,1,41],
+"group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8":[10,8,1,1,57],
+"group__math__algebra__generic.html#gab25a21d173c4626c08a8de50024d6aff":[10,8,1,1,38],
+"group__math__algebra__generic.html#gab2e4a9721f74470ea3cbd5078067dc2b":[10,8,1,1,62],
 "group__math__algebra__generic.html#gab35c5050dc3533764d0712e04a8407b3":[10,8,1,1,32],
 "group__math__algebra__generic.html#gab4c4bd66115b12f6db391099fb8c05f8":[10,8,1,1,80],
 "group__math__algebra__generic.html#gabb19966b2d7b370023a4a16bd7bbb228":[10,8,1,1,83],
@@ -238,16 +249,5 @@ var NAVTREEINDEX71 =
 "group__math__algebra__int.html#structInt32Vect3":[10,8,1,3,5],
 "group__math__algebra__int.html#structInt64Quat":[10,8,1,3,7],
 "group__math__algebra__int.html#structInt64Rates":[10,8,1,3,14],
-"group__math__algebra__int.html#structInt64Vect2":[10,8,1,3,15],
-"group__math__algebra__int.html#structInt64Vect3":[10,8,1,3,16],
-"group__math__algebra__int.html#structInt8Vect3":[10,8,1,3,1],
-"group__math__algebra__int.html#structUint16Vect3":[10,8,1,3,2],
-"group__math__algebra__int.html#structUint8Vect3":[10,8,1,3,0],
-"group__math__geodetic.html":[10,8,2],
-"group__math__geodetic__double.html":[10,8,2,1],
-"group__math__geodetic__double.html#a0d447af9ac85591862c4d07867968b69":[10,8,2,1,0,0],
-"group__math__geodetic__double.html#a0e57b6568d2f5adcf93453e9afaa4022":[10,8,2,1,5,0],
-"group__math__geodetic__double.html#a12cdbac673550a28982e7f048916ef6e":[10,8,2,1,4,3],
-"group__math__geodetic__double.html#a522277f8e7b5e64286a694dba0844980":[10,8,2,1,2,1],
-"group__math__geodetic__double.html#a5a686dd185c2a8d380d6f35d6750e164":[10,8,2,1,0,1]
+"group__math__algebra__int.html#structInt64Vect2":[10,8,1,3,15]
 };

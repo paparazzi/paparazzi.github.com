@@ -6,6 +6,8 @@ var abi__common_8h =
       [ "next", "abi__common_8h.html#a0f12b8ecbd52b669ab15322de34a94be", null ]
     ] ],
     [ "ABI_BROADCAST", "abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb", null ],
+    [ "ABI_CHECK_MAIN_THREAD", "abi__common_8h.html#afec9b19dfc6efb3df6a74ca0a1596802", null ],
+    [ "abi_check_thread", "abi__common_8h.html#a9dbee15708b08778346e38a93b924c25", null ],
     [ "ABI_DISABLE", "abi__common_8h.html#a33ca5208b218192431b8ff3d3545ed0c", null ],
     [ "ABI_EXTERN", "abi__common_8h.html#a432938e91d249b13ae6e0d15f51b9fb3", null ],
     [ "ABI_FOREACH", "abi__common_8h.html#ac90a3c737b2277bc87d97c927db20f2f", null ],

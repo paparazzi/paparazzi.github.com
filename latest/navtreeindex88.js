@@ -1,5 +1,16 @@
 var NAVTREEINDEX88 =
 {
+"imu_8h.html#a86a06fe7a9831292bd92867da2d12f80":[13,0,1,0,6,36,3,9],
+"imu_8h.html#a86c26b2e762731fa6c0a5dccb2773710":[13,0,1,0,6,36,3,1,1],
+"imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e":[13,0,1,0,6,36,3,16],
+"imu_8h.html#a8d5aee0e93b6d1d9b78b1d73722e998a":[13,0,1,0,6,36,3,1,13],
+"imu_8h.html#a8e3750c802931e5b2ce7b088acfb7f0c":[13,0,1,0,6,36,3,3,0],
+"imu_8h.html#a931916ce562dfa28e02e0a6001dddc43":[13,0,1,0,6,36,3,14],
+"imu_8h.html#a9d352d575dc0e30a32e31b1b6fcd6211":[13,0,1,0,6,36,3,8],
+"imu_8h.html#aa6f435142522bcca80d62d93547f1e49":[13,0,1,0,6,36,3,4,8],
+"imu_8h.html#aa87b0288f7f2adbad06b207bcf3b1a07":[13,0,1,0,6,36,3,2,9],
+"imu_8h.html#aa89853a532ad4adf771289eea8832bd6":[13,0,1,0,6,36,3,0,2],
+"imu_8h.html#aaf2a612473668b4e83f84504f6fcedea":[13,0,1,0,6,36,3,4,2],
 "imu_8h.html#ab164e32742967156d02d177f0280cdb8":[13,0,1,0,6,36,3,1,2],
 "imu_8h.html#ab4ee3eecaa0a9ae198eeb78900668bd4":[13,0,1,0,6,36,3,2,8],
 "imu_8h.html#ab6809ba54fdfac5e02ec9d2c0ac2337d":[13,0,1,0,6,36,3,3,10],
@@ -238,16 +249,5 @@ var NAVTREEINDEX88 =
 "imu__icm42688_8c.html":[13,0,1,0,6,36,20],
 "imu__icm42688_8c.html#a00b084d952654080f2befd301104b13a":[13,0,1,0,6,36,20,2],
 "imu__icm42688_8c.html#a42aa931e6dc86ae046743aa52f706ae4":[13,0,1,0,6,36,20,5],
-"imu__icm42688_8c.html#a490a83476688402dd0ad1e4401ba97bf":[13,0,1,0,6,36,20,4],
-"imu__icm42688_8c.html#a8a1f8135cb291a0070ecbe78ccddfdf1":[13,0,1,0,6,36,20,3],
-"imu__icm42688_8c.html#aa50f822258ea7d7b0b8f035711f54594":[13,0,1,0,6,36,20,1],
-"imu__icm42688_8c.html#aaeafdf5897daeffb6128eddd6af6a4af":[13,0,1,0,6,36,20,0],
-"imu__icm42688_8c_source.html":[13,0,1,0,6,36,20],
-"imu__icm42688_8h.html":[13,0,1,0,6,36,21],
-"imu__icm42688_8h.html#a00b084d952654080f2befd301104b13a":[13,0,1,0,6,36,21,0],
-"imu__icm42688_8h.html#a490a83476688402dd0ad1e4401ba97bf":[13,0,1,0,6,36,21,2],
-"imu__icm42688_8h.html#a8a1f8135cb291a0070ecbe78ccddfdf1":[13,0,1,0,6,36,21,1],
-"imu__icm42688_8h_source.html":[13,0,1,0,6,36,21],
-"imu__mpu6000_8c.html":[13,0,1,0,6,36,22],
-"imu__mpu6000_8c.html#a14f4824721832ff67a688b6a92e78ff4":[13,0,1,0,6,36,22,12]
+"imu__icm42688_8c.html#a490a83476688402dd0ad1e4401ba97bf":[13,0,1,0,6,36,20,4]
 };

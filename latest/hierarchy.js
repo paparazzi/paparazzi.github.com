@@ -1148,6 +1148,7 @@ var hierarchy =
     [ "uavcan_event_t", "uavcan_8h.html#structuavcan__event__t", null ],
     [ "uavcan_iface_t", "uavcan_8h.html#structuavcan__iface__t", null ],
     [ "uavcan_node_mapping_t", "uavcan__allocator_8h.html#structuavcan__node__mapping__t", null ],
+    [ "uavcan_rx_frame", "uavcan_8h.html#structuavcan__rx__frame", null ],
     [ "uavcan_unique_id_t", "uavcan__allocator_8h.html#structuavcan__unique__id__t", null ],
     [ "udp_periph", "udp_8h.html#structudp__periph", null ],
     [ "UdpArch", "sim_2mcu__periph_2udp__arch_8c.html#structUdpArch", null ],
