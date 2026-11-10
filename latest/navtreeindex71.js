@@ -1,5 +1,10 @@
 var NAVTREEINDEX71 =
 {
+"group__math__algebra__generic.html#ga978057ca926406c880508021a4148731":[10,8,1,1,60],
+"group__math__algebra__generic.html#ga9bdd3521897d86617f0a69b8980d2b67":[10,8,1,1,58],
+"group__math__algebra__generic.html#ga9cc8d10bf25cef4ef2ba79cc6664d9ee":[10,8,1,1,6],
+"group__math__algebra__generic.html#ga9cd20d2a6658f4a930cdd9836a18cbe2":[10,8,1,1,74],
+"group__math__algebra__generic.html#ga9e8795e09776456dcb35b07cd5527d25":[10,8,1,1,92],
 "group__math__algebra__generic.html#gaa05e2d86379889bd3ca31eb1f50b12e9":[10,8,1,1,7],
 "group__math__algebra__generic.html#gaa7a609f5773ee008953038092165f2ba":[10,8,1,1,12],
 "group__math__algebra__generic.html#gaaae673d8256df41e2e2db87b03f60a6b":[10,8,1,1,55],
@@ -244,10 +249,5 @@ var NAVTREEINDEX71 =
 "group__math__algebra__int.html#structInt32Mat33":[10,8,1,3,11],
 "group__math__algebra__int.html#structInt32Quat":[10,8,1,3,6],
 "group__math__algebra__int.html#structInt32RMat":[10,8,1,3,10],
-"group__math__algebra__int.html#structInt32Rates":[10,8,1,3,13],
-"group__math__algebra__int.html#structInt32Vect2":[10,8,1,3,4],
-"group__math__algebra__int.html#structInt32Vect3":[10,8,1,3,5],
-"group__math__algebra__int.html#structInt64Quat":[10,8,1,3,7],
-"group__math__algebra__int.html#structInt64Rates":[10,8,1,3,14],
-"group__math__algebra__int.html#structInt64Vect2":[10,8,1,3,15]
+"group__math__algebra__int.html#structInt32Rates":[10,8,1,3,13]
 };

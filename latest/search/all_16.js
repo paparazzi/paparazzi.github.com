@@ -451,7 +451,7 @@ var searchData=
   ['lidar_5fcorrection_2eh_448',['lidar_correction.h',['../lidar__correction_8h.html',1,'']]],
   ['lidar_5fdata_5fvl53l5cx_5fid_449',['LIDAR_DATA_VL53L5CX_ID',['../abi__sender__ids_8h.html#a88f6a29d4a58cbdf58f3f0c8211ffacd',1,'abi_sender_ids.h']]],
   ['lidar_5fev_450',['lidar_ev',['../rover__obstacles_8c.html#ada2b2a9a81057f524dd2fc981c30ceaf',1,'rover_obstacles.c']]],
-  ['lidar_5fheight_451',['lidar_height',['../tfmini_8c.html#a4a1ece89cf36140e30899e486d7e3f61',1,'lidar_height:&#160;tfmini.c'],['../tfmini_8c.html#a4f867fdb6df27cd1685b8a5dc31c1a60',1,'LIDAR_HEIGHT:&#160;tfmini.c']]],
+  ['lidar_5fheight_451',['lidar_height',['../tfmini_8c.html#a4f867fdb6df27cd1685b8a5dc31c1a60',1,'LIDAR_HEIGHT:&#160;tfmini.c'],['../tfmini_8c.html#a4a1ece89cf36140e30899e486d7e3f61',1,'lidar_height:&#160;tfmini.c']]],
   ['lidar_5flite_452',['lidar_lite',['../lidar__lite_8c.html#af963b51aa16d3dd51fb442fe423bc3c6',1,'lidar_lite:&#160;lidar_lite.c'],['../lidar__lite_8h.html#af963b51aa16d3dd51fb442fe423bc3c6',1,'lidar_lite:&#160;lidar_lite.c']]],
   ['lidar_5flite_20module_453',['lidar_lite module',['../module__lidar_lite.html',1,'onboard_modules']]],
   ['lidar_5flite_20xml_20file_3a_454',['Raw lidar_lite.xml file:',['../module__lidar_lite.html#module_xml__lidar_lite',1,'']]],

@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('module__actuators_uavcan.html',''); in
 <h1><a class="anchor" id="module_load_example__actuators_uavcan"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_uavcan&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot; value=&quot;TRUE&quot; /&gt;\n   &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot; value=&quot;{4}&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot; value=&quot;TRUE&quot; /&gt;\n      &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot; value=&quot;{4}&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__actuators_uavcan"></a>
 Module configuration options</h1>
@@ -111,6 +111,21 @@ Define Options</h2>
  Description: Enable the usage of the current sensing in the ESC telemetry</li>
 <li><b>name:</b> <code>UAVCAN_ACTUATORS_TELEM_IDX</code> <b>value:</b> <em>{4}</em> <br  />
  Description: Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs</li>
+</ul>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>ACTUATORS_UAVCAN</code> <ul>
+<li><b>name</b> <code>ACTUATOR_UAVCAN1_CMD_TYPES</code> <b>value:</b> <em>{UNITLESS, PWM}</em> <br  />
+ Description: Command types: UNITLESS, POSITION, FORCE, SPEED or PWM. Default: UNITLESS</li>
+<li><b>name</b> <code>ACTUATOR_UAVCAN1_CMD_FACTORS</code> <b>value:</b> <em>{9600.f, 1.f}</em> <br  />
+ Description: Nonzero divisors for actuator command values. Default: 9600</li>
+<li><b>name</b> <code>ACTUATOR_UAVCAN2_CMD_TYPES</code> <b>value:</b> <em>{UNITLESS, PWM}</em> <br  />
+ Description: Command types: UNITLESS, POSITION, FORCE, SPEED or PWM. Default: UNITLESS</li>
+<li><b>name</b> <code>ACTUATOR_UAVCAN2_CMD_FACTORS</code> <b>value:</b> <em>{9600.f, 1.f}</em> <br  />
+ Description: Nonzero divisors for actuator command values. Default: 9600</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -141,8 +156,14 @@ Raw actuators_uavcan.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">UAVCan</span> <span class="keyword">actuators</span></div>
 <div class="line">   &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable the usage of the current sensing in the ESC telemetry&quot;</span>/&gt;</div>
-<div class="line">   &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{4}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable the usage of the current sensing in the ESC telemetry&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{4}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_UAVCAN&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_UAVCAN1_CMD_TYPES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{UNITLESS, PWM}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Command types: UNITLESS, POSITION, FORCE, SPEED or PWM. Default: UNITLESS&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_UAVCAN1_CMD_FACTORS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{9600.f, 1.f}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Nonzero divisors for actuator command values. Default: 9600&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_UAVCAN2_CMD_TYPES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{UNITLESS, PWM}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Command types: UNITLESS, POSITION, FORCE, SPEED or PWM. Default: UNITLESS&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_UAVCAN2_CMD_FACTORS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{9600.f, 1.f}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Nonzero divisors for actuator command values. Default: 9600&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uavcan</span>,<span class="keyword">actuators</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -174,7 +195,7 @@ Raw actuators_uavcan.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Nov 10 2026 17:33:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 10 2026 23:46:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

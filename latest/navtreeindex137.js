@@ -1,5 +1,10 @@
 var NAVTREEINDEX137 =
 {
+"module__ir_mlx.html#module_load_example__ir_mlx":[1,308,0],
+"module__ir_mlx.html#module_xml__ir_mlx":[1,308,1,0],
+"module__jevois.html":[1,449],
+"module__jevois.html#configuration__jevois":[1,449,1],
+"module__jevois.html#functions__jevois":[1,449,2],
 "module__jevois.html#module_load_example__jevois":[1,449,0],
 "module__jevois.html#module_xml__jevois":[1,449,2,0],
 "module__jevois_mavlink.html":[1,450],
@@ -244,10 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_catapult.html#functions__nav_catapult":[1,339,2],
 "module__nav_catapult.html#module_load_example__nav_catapult":[1,339,0],
 "module__nav_catapult.html#module_xml__nav_catapult":[1,339,2,0],
-"module__nav_cube.html":[1,340],
-"module__nav_cube.html#module_load_example__nav_cube":[1,340,0],
-"module__nav_cube.html#module_xml__nav_cube":[1,340,0,0],
-"module__nav_drop.html":[1,341],
-"module__nav_drop.html#module_load_example__nav_drop":[1,341,0],
-"module__nav_drop.html#module_xml__nav_drop":[1,341,0,0]
+"module__nav_cube.html":[1,340]
 };

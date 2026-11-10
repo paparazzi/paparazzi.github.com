@@ -1,5 +1,10 @@
 var NAVTREEINDEX41 =
 {
+"copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1":[13,0,1,0,6,45,1,3],
+"copilot__common_8c.html#ad7a809895db2def81ce0b0256553e0c0":[13,0,1,0,6,45,1,14],
+"copilot__common_8c.html#aff1f561b25724533f46290e86658c698":[13,0,1,0,6,45,1,5],
+"copilot__common_8c_source.html":[13,0,1,0,6,45,1],
+"copilot__fixedwing_8c.html":[13,0,1,0,6,45,2],
 "copilot__fixedwing_8c.html#ab279d8cb60dd6477e1de73905a720520":[13,0,1,0,6,45,2,0],
 "copilot__fixedwing_8c_source.html":[13,0,1,0,6,45,2],
 "copilot__rotorcraft_8c.html":[13,0,1,0,6,45,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX41 =
 "crazyflie_2chibios_2v2_81_2board_8h.html#a937e4961f4db7339a18e7835568e7050":[13,0,1,0,1,4,0,0,0,348],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a940f93211458a4ef1367b5af637a5e15":[13,0,1,0,1,4,0,0,0,357],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a9498f8f4ae2badbe39c078555ca9c793":[13,0,1,0,1,4,0,0,0,280],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a94c9d6cd1401f22f5bfd05fdb98d47cd":[13,0,1,0,1,4,0,0,0,149],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a95284adc8afa89c0c784256d159d3e9f":[13,0,1,0,1,4,0,0,0,184],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a9540ae1c7050844cbfff87beeb76e614":[13,0,1,0,1,4,0,0,0,85],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a96759c426e78c4036416b1e6703820b6":[13,0,1,0,1,4,0,0,0,259],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a967db78347ab3297db31ade75d443070":[13,0,1,0,1,4,0,0,0,269],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a96cbd94079f83d5a819b50a111f07d51":[13,0,1,0,1,4,0,0,0,253]
+"crazyflie_2chibios_2v2_81_2board_8h.html#a94c9d6cd1401f22f5bfd05fdb98d47cd":[13,0,1,0,1,4,0,0,0,149]
 };

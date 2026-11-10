@@ -1,5 +1,10 @@
 var NAVTREEINDEX113 =
 {
+"lsm303dlhc__regs_8h.html#a9fbcd4cb3ab8e429f39e17cffacfb4b1":[13,0,1,0,7,87,74],
+"lsm303dlhc__regs_8h.html#aa18d26331fd317dbb98e8787af992a67":[13,0,1,0,7,87,70],
+"lsm303dlhc__regs_8h.html#aa67c03d31dcee8e8adf399556fb6a662":[13,0,1,0,7,87,68],
+"lsm303dlhc__regs_8h.html#aac684067560432e54fdf0fad55eeee2b":[13,0,1,0,7,87,33],
+"lsm303dlhc__regs_8h.html#ab55c0e5600a6d0d5695e859ad1ceace8":[13,0,1,0,7,87,29],
 "lsm303dlhc__regs_8h.html#ab6702ffe0a54bcc175678335f062d6d1":[13,0,1,0,7,87,5],
 "lsm303dlhc__regs_8h.html#abb7e3183a9fa035bf8fe95330157f50c":[13,0,1,0,7,87,37],
 "lsm303dlhc__regs_8h.html#abc286861163e0312eadae77f3c3cf571":[13,0,1,0,7,87,77],
@@ -93,8 +98,8 @@ var NAVTREEINDEX113 =
 "lsm6ds33__i2c_8h.html#a87207bcdb47c2d7be96a8005f81ffe9b":[13,0,1,0,7,90,0,6],
 "lsm6ds33__i2c_8h.html#a9005039a0be410d290b55f0c181177c6":[13,0,1,0,7,90,0,3],
 "lsm6ds33__i2c_8h.html#a9106acb39d21133d8910d11995882632":[13,0,1,0,7,90,0,5],
-"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[13,0,1,0,7,90,1,0],
 "lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[13,0,1,0,7,90,2,1],
+"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[13,0,1,0,7,90,1,0],
 "lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130":[13,0,1,0,7,90,5],
 "lsm6ds33__i2c_8h.html#abdb25f3a5c149b15a0ed792d496a6999":[13,0,1,0,7,90,3],
 "lsm6ds33__i2c_8h.html#aca01e794d44828f26da9a7fd01efc4fe":[13,0,1,0,7,90,0,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX113 =
 "mag__calib__ukf_8h.html#a758369f2c49aebbf606a85ef5d4e78ff":[13,0,1,0,6,7,1,4],
 "mag__calib__ukf_8h.html#af831c65cede764ed6962979a23577585":[13,0,1,0,6,7,1,1],
 "mag__calib__ukf_8h_source.html":[13,0,1,0,6,7,1],
-"mag__hmc5843_8c.html":[13,0,1,0,6,65,64],
-"mag__hmc5843_8c.html#a19a0a8f40c3c8c67d9e3b5d7ac2690fa":[13,0,1,0,6,65,64,3],
-"mag__hmc5843_8c.html#a41b8debdd1aa236fdfa517d1860e26f8":[13,0,1,0,6,65,64,6],
-"mag__hmc5843_8c.html#a73430e5bacbce50ebd8b9acf682c82aa":[13,0,1,0,6,65,64,2],
-"mag__hmc5843_8c.html#a880fdee482292937a14f6aee33208f22":[13,0,1,0,6,65,64,0],
-"mag__hmc5843_8c.html#a8c9c4ce6f472a571bf1c748f07b77d28":[13,0,1,0,6,65,64,5]
+"mag__hmc5843_8c.html":[13,0,1,0,6,65,64]
 };

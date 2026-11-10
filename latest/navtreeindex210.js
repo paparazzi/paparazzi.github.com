@@ -1,5 +1,10 @@
 var NAVTREEINDEX210 =
 {
+"styledoxygen.html#styledoxyall":[0,1,1,1],
+"styledoxygen.html#styledoxyblocks":[0,1,1,0],
+"styledoxygen.html#styledoxytext":[0,1,1,2],
+"styleguide.html":[0,1],
+"stylepython.html":[0,1,2],
 "stylepython.html#stylecompat":[0,1,2,0],
 "superbitrf__rc_8c.html":[13,0,1,0,6,57,24],
 "superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a":[13,0,1,0,6,57,24,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX210 =
 "sys__id__wave_8h.html#a96e61eeb83b9d42787125d5d59dd5a63":[13,0,1,0,6,72,13,4],
 "sys__id__wave_8h.html#a98d50fd729700690aaceba76cf5e8990":[13,0,1,0,6,72,13,6],
 "sys__id__wave_8h.html#a9f776791ac405f13db5799e8177a9e88":[13,0,1,0,6,72,13,1],
-"sys__id__wave_8h.html#aa3814c04dbc95a60e9e95f0efca296d6":[13,0,1,0,6,72,13,5],
-"sys__id__wave_8h.html#ab0dd9ce602b4436219c73a074beee0f9":[13,0,1,0,6,72,13,10],
-"sys__id__wave_8h.html#abc439ba08f5598552ccb4a0ba213a64c":[13,0,1,0,6,72,13,12],
-"sys__id__wave_8h.html#ad05ce90ea367a95bac0daa71612c5796":[13,0,1,0,6,72,13,11],
-"sys__id__wave_8h.html#ad4091e33fe060304ec84e86d3ffbe991":[13,0,1,0,6,72,13,3],
-"sys__id__wave_8h.html#aec23f6219a4fc28ade88003db5b32da9":[13,0,1,0,6,72,13,9]
+"sys__id__wave_8h.html#aa3814c04dbc95a60e9e95f0efca296d6":[13,0,1,0,6,72,13,5]
 };

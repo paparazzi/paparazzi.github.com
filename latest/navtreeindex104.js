@@ -1,5 +1,10 @@
 var NAVTREEINDEX104 =
 {
+"lidar__lite_8h.html#ad9de6c26f7a464d53a4aa70c65c944e6":[13,0,1,0,6,40,2,5],
+"lidar__lite_8h.html#add3ed99cbeac571344a0501b2fec24e6":[13,0,1,0,6,40,2,0,5],
+"lidar__lite_8h.html#ae6e777bd68d24a5c7effc1c21dbd2622":[13,0,1,0,6,40,2,0,4],
+"lidar__lite_8h.html#af963b51aa16d3dd51fb442fe423bc3c6":[13,0,1,0,6,40,2,6],
+"lidar__lite_8h.html#structLidarLite":[13,0,1,0,6,40,2,0],
 "lidar__lite_8h_source.html":[13,0,1,0,6,40,2],
 "lidar__sf11_8c.html":[13,0,1,0,6,40,3],
 "lidar__sf11_8c.html#a33e7a34971e620ee9d1acab000cef8dd":[13,0,1,0,6,40,3,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX104 =
 "linear__kalman__filter_8h_source.html":[13,0,1,0,2,7],
 "linux_2led__hw_8h.html":[13,0,1,0,0,1,2],
 "linux_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a":[13,0,1,0,0,1,2,3],
-"linux_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b":[13,0,1,0,0,1,2,1],
-"linux_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f":[13,0,1,0,0,1,2,2],
-"linux_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9":[13,0,1,0,0,1,2,0],
-"linux_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b":[13,0,1,0,0,1,2,4],
-"linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[13,0,1,0,0,1,2,5],
-"linux_2led__hw_8h_source.html":[13,0,1,0,0,1,2]
+"linux_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b":[13,0,1,0,0,1,2,1]
 };

@@ -12,8 +12,13 @@ var actuators__uavcan_8c =
       [ "timestamp", "actuators__uavcan_8c.html#a5258ced5a9a3c26bf7abc6c06c144fff", null ],
       [ "voltage", "actuators__uavcan_8c.html#a93e39cb253b2c7f71bdd8f1ff5e63d29", null ]
     ] ],
+    [ "FORCE", "actuators__uavcan_8c.html#a88e090a808630e22e34d9f69c0be9c66", null ],
+    [ "POSITION", "actuators__uavcan_8c.html#a440f0e10bb28b153f5661c934bc6b89f", null ],
+    [ "PWM", "actuators__uavcan_8c.html#a538e3ec60828cfabae7e3011d73d2093", null ],
+    [ "SPEED", "actuators__uavcan_8c.html#aac3553b3932cbfeeac4526ce7ca0336b", null ],
     [ "UAVCAN_ACTUATORS_USE_CURRENT", "actuators__uavcan_8c.html#a95d5d112abcc0f1031cc08731e37bda7", null ],
     [ "UAVCAN_CMD_UNUSED", "actuators__uavcan_8c.html#ad372e9594fdbdb703a9850f529d47049", null ],
+    [ "UNITLESS", "actuators__uavcan_8c.html#a450a5226b7b638fdcebb7ca9c4c228be", null ],
     [ "actuators_uavcan_actuator_status_cb", "actuators__uavcan_8c.html#a9a38000601eb4ba446804fbf9082c784", null ],
     [ "actuators_uavcan_cmd_commit", "actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a", null ],
     [ "actuators_uavcan_commit", "actuators__uavcan_8c.html#a4f2b07629c6392c8019dfc9123fb4684", null ],

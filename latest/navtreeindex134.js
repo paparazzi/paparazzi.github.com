@@ -1,5 +1,10 @@
 var NAVTREEINDEX134 =
 {
+"module__digital_cam_uart.html":[1,146],
+"module__digital_cam_uart.html#functions__digital_cam_uart":[1,146,1],
+"module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,146,0],
+"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,146,1,0],
+"module__digital_cam_video.html":[1,147],
 "module__digital_cam_video.html#functions__digital_cam_video":[1,147,1],
 "module__digital_cam_video.html#module_load_example__digital_cam_video":[1,147,0],
 "module__digital_cam_video.html#module_xml__digital_cam_video":[1,147,1,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX134 =
 "module__gps_nmea_send.html":[1,168],
 "module__gps_nmea_send.html#configuration__gps_nmea_send":[1,168,1],
 "module__gps_nmea_send.html#functions__gps_nmea_send":[1,168,2],
-"module__gps_nmea_send.html#module_load_example__gps_nmea_send":[1,168,0],
-"module__gps_nmea_send.html#module_xml__gps_nmea_send":[1,168,2,0],
-"module__gps_nps.html":[1,169],
-"module__gps_nps.html#functions__gps_nps":[1,169,1],
-"module__gps_nps.html#module_load_example__gps_nps":[1,169,0],
-"module__gps_nps.html#module_xml__gps_nps":[1,169,1,0]
+"module__gps_nmea_send.html#module_load_example__gps_nmea_send":[1,168,0]
 };

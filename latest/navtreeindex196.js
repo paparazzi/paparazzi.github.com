@@ -1,5 +1,10 @@
 var NAVTREEINDEX196 =
 {
+"rover__guidance_8h.html#af837284ced4b85b1d4e253a5c9952262":[13,0,1,0,3,3,0,1,3,0],
+"rover__guidance_8h.html#structRoverGuidance":[13,0,1,0,3,3,0,1,3],
+"rover__guidance_8h.html#structRoverGuidanceControl":[13,0,1,0,3,3,0,1,2],
+"rover__guidance_8h.html#structRoverGuidancePID":[13,0,1,0,3,3,0,1,1],
+"rover__guidance_8h.html#structRoverGuidanceSetpoint":[13,0,1,0,3,3,0,1,0],
 "rover__guidance_8h_source.html":[13,0,1,0,3,3,0,1],
 "rover__guidance__holonomic_8c.html":[13,0,1,0,3,3,0,2],
 "rover__guidance__holonomic_8c.html#a0adecdbc2340c783867780734139efdf":[13,0,1,0,3,3,0,2,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX196 =
 "rtcm3_8h.html#a2d50b3d15d5cd619f4972923cd8c1a9e":[13,0,1,0,6,29,0,2,50],
 "rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3":[13,0,1,0,6,29,0,2,14],
 "rtcm3_8h.html#a33e9fe8b2c2c19d163640a51159dd574":[13,0,1,0,6,29,0,2,60],
-"rtcm3_8h.html#a37ad8a2d4355a724d240ba5ee1622889":[13,0,1,0,6,29,0,2,71],
-"rtcm3_8h.html#a3db9eef47020a12579d8da3307622989":[13,0,1,0,6,29,0,2,59],
-"rtcm3_8h.html#a406f1752f7d74f5dce0943cedf5a57ad":[13,0,1,0,6,29,0,2,39],
-"rtcm3_8h.html#a425e3968629559be5c47815b273308a6":[13,0,1,0,6,29,0,2,20],
-"rtcm3_8h.html#a43c36b18edb9111a465a8a9eceb01147":[13,0,1,0,6,29,0,2,9],
-"rtcm3_8h.html#a4668200472e9186500026379fbd35767":[13,0,1,0,6,29,0,2,56]
+"rtcm3_8h.html#a37ad8a2d4355a724d240ba5ee1622889":[13,0,1,0,6,29,0,2,71]
 };

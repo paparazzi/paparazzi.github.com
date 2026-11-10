@@ -1,5 +1,10 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_aspirin_i2c_common.html#functions__imu_aspirin_i2c_common":[1,206,2],
+"module__imu_aspirin_i2c_common.html#module_load_example__imu_aspirin_i2c_common":[1,206,0],
+"module__imu_aspirin_i2c_common.html#module_xml__imu_aspirin_i2c_common":[1,206,2,0],
+"module__imu_aspirin_i2c_v1_0.html":[1,207],
+"module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,207,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,207,0],
 "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,207,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,208],
@@ -244,10 +249,5 @@ var NAVTREEINDEX136 =
 "module__intermcu_uart.html#module_load_example__intermcu_uart":[1,262,0],
 "module__intermcu_uart.html#module_xml__intermcu_uart":[1,262,3,0],
 "module__ir_mlx.html":[1,308],
-"module__ir_mlx.html#functions__ir_mlx":[1,308,1],
-"module__ir_mlx.html#module_load_example__ir_mlx":[1,308,0],
-"module__ir_mlx.html#module_xml__ir_mlx":[1,308,1,0],
-"module__jevois.html":[1,449],
-"module__jevois.html#configuration__jevois":[1,449,1],
-"module__jevois.html#functions__jevois":[1,449,2]
+"module__ir_mlx.html#functions__ir_mlx":[1,308,1]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX109 =
 {
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a082f6a92009c531f29c919d1a9c4342b":[13,0,1,0,1,12,0,0,0,28],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a0bb8407cbad582149d6c82588b77f100":[13,0,1,0,1,12,0,0,0,73],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[13,0,1,0,1,12,0,0,0,1],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a0dc451bda5062cde685b36075f3954d6":[13,0,1,0,1,12,0,0,0,34],
+"lisa__mxs_2chibios_2v1_80_2board_8h.html#a1304c508f7d7872fcb0f5d12fdd85868":[13,0,1,0,1,12,0,0,0,40],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a133a8bd30af31224040168c0edacb37d":[13,0,1,0,1,12,0,0,0,95],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a1365ea029b2ef8463ee8c0865b81749b":[13,0,1,0,1,12,0,0,0,55],
 "lisa__mxs_2chibios_2v1_80_2board_8h.html#a145ce7967376b20807d2bc459225f19d":[13,0,1,0,1,12,0,0,0,29],
@@ -244,10 +249,5 @@ var NAVTREEINDEX109 =
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a52f31c7a5818aefe570bdc913d6d034b":[13,0,1,0,1,12,0,0,1,124],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a5339fe32096faad20bbcf31d2d5b45d1":[13,0,1,0,1,12,0,0,1,238],
 "lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a54203015c2973969adee1dd719010d3a":[13,0,1,0,1,12,0,0,1,85],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a5498cae29922990f276ed50f25b90884":[13,0,1,0,1,12,0,0,1,181],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a554728f749ad9aca0102d189cc6bb9e7":[13,0,1,0,1,12,0,0,1,166],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0":[13,0,1,0,1,12,0,0,1,190],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a56a0c40fe1260ca2265cc01d42668ca7":[13,0,1,0,1,12,0,0,1,255],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a58845293676556a52d2046a00bcfbf9c":[13,0,1,0,1,12,0,0,1,72],
-"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a58e21948e78c6cf50c04e64363637dd4":[13,0,1,0,1,12,0,0,1,10]
+"lisa__mxs_2chibios_2v1_80_2mcuconf__board_8h.html#a5498cae29922990f276ed50f25b90884":[13,0,1,0,1,12,0,0,1,181]
 };

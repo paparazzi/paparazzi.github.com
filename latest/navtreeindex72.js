@@ -1,5 +1,10 @@
 var NAVTREEINDEX72 =
 {
+"group__math__algebra__int.html#structInt32Vect2":[10,8,1,3,4],
+"group__math__algebra__int.html#structInt32Vect3":[10,8,1,3,5],
+"group__math__algebra__int.html#structInt64Quat":[10,8,1,3,7],
+"group__math__algebra__int.html#structInt64Rates":[10,8,1,3,14],
+"group__math__algebra__int.html#structInt64Vect2":[10,8,1,3,15],
 "group__math__algebra__int.html#structInt64Vect3":[10,8,1,3,16],
 "group__math__algebra__int.html#structInt8Vect3":[10,8,1,3,1],
 "group__math__algebra__int.html#structUint16Vect3":[10,8,1,3,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX72 =
 "group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38":[10,8,0,13],
 "group__math__orientation__representation.html#gaa4f947a03eec17840ac5e6157b12a01f":[10,8,0,24],
 "group__math__orientation__representation.html#gaaa0eaf3eb87be02a80d6d1d47349f8dd":[10,8,0,7],
-"group__math__orientation__representation.html#gac5f067ca464136aaea9488b1f46b352e":[10,8,0,20],
-"group__math__orientation__representation.html#gad65752ee2fd524adefea88180fac375d":[10,8,0,29],
-"group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732":[10,8,0,22],
-"group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c":[10,8,0,16],
-"group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[10,8,0,6],
-"group__math__orientation__representation.html#structOrientationReps":[10,8,0,0]
+"group__math__orientation__representation.html#gac5f067ca464136aaea9488b1f46b352e":[10,8,0,20]
 };

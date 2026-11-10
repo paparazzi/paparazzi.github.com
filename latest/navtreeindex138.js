@@ -1,5 +1,10 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_cube.html#module_load_example__nav_cube":[1,340,0],
+"module__nav_cube.html#module_xml__nav_cube":[1,340,0,0],
+"module__nav_drop.html":[1,341],
+"module__nav_drop.html#module_load_example__nav_drop":[1,341,0],
+"module__nav_drop.html#module_xml__nav_drop":[1,341,0,0],
 "module__nav_fish.html":[1,342],
 "module__nav_fish.html#configuration__nav_fish":[1,342,1],
 "module__nav_fish.html#functions__nav_fish":[1,342,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX138 =
 "module__pprzlog.html":[1,284],
 "module__pprzlog.html#functions__pprzlog":[1,284,1],
 "module__pprzlog.html#module_load_example__pprzlog":[1,284,0],
-"module__pprzlog.html#module_xml__pprzlog":[1,284,1,0],
-"module__preflight_checks.html":[1,52],
-"module__preflight_checks.html#configuration__preflight_checks":[1,52,1],
-"module__preflight_checks.html#module_load_example__preflight_checks":[1,52,0],
-"module__preflight_checks.html#module_xml__preflight_checks":[1,52,1,0],
-"module__pump_control.html":[1,528]
+"module__pprzlog.html#module_xml__pprzlog":[1,284,1,0]
 };
