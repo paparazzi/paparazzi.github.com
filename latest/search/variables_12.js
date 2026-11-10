@@ -135,7 +135,7 @@ var searchData=
   ['rcsampleindex_132',['rcSampleIndex',['../cc2500__rx_8c.html#a88db92816c701d877c5637ce8f84a8b4',1,'cc2500_rx.c']]],
   ['rd_5fmsg_5flen_133',['rd_msg_len',['../rtcm3_8h.html#a521b552b352123fdf083508bfcdceeed',1,'rtcm3.h']]],
   ['rd_5fmsg_5flen1_134',['rd_msg_len1',['../rtcm3_8h.html#aca0fba33788a24f907c58aed0e28dc4b',1,'rtcm3.h']]],
-  ['re_135',['re',['../pprz__geodetic__float_8c.html#a77a6e028ddaf37c540fe22dad47f61c1',1,'complex::re'],['../ins__float__invariant_8h.html#ad283889a754dedf779e6ce6159fdc270',1,'inv_correction_gains::RE']]],
+  ['re_135',['re',['../ins__float__invariant_8h.html#ad283889a754dedf779e6ce6159fdc270',1,'inv_correction_gains::RE'],['../pprz__geodetic__float_8c.html#a77a6e028ddaf37c540fe22dad47f61c1',1,'complex::re']]],
   ['read_5faddr_136',['read_addr',['../actuators__sts3032_8h.html#af45fe66afd9f0f4e1f5c7a6d12efd378',1,'sts3032']]],
   ['read_5fbit_5fidx_137',['read_bit_idx',['../hx711_8c.html#aa8fa599c41b5f11d34b65056109459f2',1,'hx711_t']]],
   ['read_5fbuf_138',['read_buf',['../ms2100_8h.html#a7ca306c6e7eb338624be4edd50efa062',1,'Ms2100']]],

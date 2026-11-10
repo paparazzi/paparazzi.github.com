@@ -1,5 +1,7 @@
 var NAVTREEINDEX139 =
 {
+"module__pump_control.html#configuration__pump_control":[1,528,1],
+"module__pump_control.html#functions__pump_control":[1,528,2],
 "module__pump_control.html#module_load_example__pump_control":[1,528,0],
 "module__pump_control.html#module_xml__pump_control":[1,528,2,0],
 "module__pwm_meas.html":[1,80],
@@ -247,7 +249,5 @@ var NAVTREEINDEX139 =
 "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple":[1,465,0],
 "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple":[1,465,2,0],
 "module__stabilization_int_euler.html":[1,466],
-"module__stabilization_int_euler.html#configuration__stabilization_int_euler":[1,466,1],
-"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,466,2],
-"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,466,0]
+"module__stabilization_int_euler.html#configuration__stabilization_int_euler":[1,466,1]
 };

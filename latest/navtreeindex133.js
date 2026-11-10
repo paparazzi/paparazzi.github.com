@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__battery_monitor.html#module_xml__battery_monitor":[1,23,2,0],
+"module__bebop_ae_awb.html":[1,56],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,56,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,56,2],
 "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,56,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,146,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,146,0],
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,146,1,0],
-"module__digital_cam_video.html":[1,147],
-"module__digital_cam_video.html#functions__digital_cam_video":[1,147,1],
-"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,147,0]
+"module__digital_cam_video.html":[1,147]
 };

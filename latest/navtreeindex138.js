@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_fish.html":[1,342],
+"module__nav_fish.html#configuration__nav_fish":[1,342,1],
 "module__nav_fish.html#functions__nav_fish":[1,342,2],
 "module__nav_fish.html#module_load_example__nav_fish":[1,342,0],
 "module__nav_fish.html#module_xml__nav_fish":[1,342,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "module__preflight_checks.html#configuration__preflight_checks":[1,52,1],
 "module__preflight_checks.html#module_load_example__preflight_checks":[1,52,0],
 "module__preflight_checks.html#module_xml__preflight_checks":[1,52,1,0],
-"module__pump_control.html":[1,528],
-"module__pump_control.html#configuration__pump_control":[1,528,1],
-"module__pump_control.html#functions__pump_control":[1,528,2]
+"module__pump_control.html":[1,528]
 };

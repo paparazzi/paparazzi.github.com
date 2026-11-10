@@ -1,5 +1,7 @@
 var NAVTREEINDEX111 =
 {
+"logger__utils_8h.html#aa61bd0100b29a1d1b88fb80efa47f771":[13,0,1,0,6,42,17,5],
+"logger__utils_8h.html#af5effa397b3e1e271da8d4a8b09496c4":[13,0,1,0,6,42,17,4],
 "logger__utils_8h_source.html":[13,0,1,0,6,42,17],
 "low__pass__filter_8h.html":[13,0,1,0,2,8],
 "low__pass__filter_8h.html#a02d36b80f8fe1f244e6ef09b353f2de7":[13,0,1,0,2,8,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX111 =
 "lsm303d__regs_8h.html#a47b61a4180ea58d69c30876ab44570e8":[13,0,1,0,7,81,62],
 "lsm303d__regs_8h.html#a4a8ab784d392dd835ba05ef450fd4b99":[13,0,1,0,7,81,61],
 "lsm303d__regs_8h.html#a4ab51f1cb3718310b33e0126d9d6939a":[13,0,1,0,7,81,108],
-"lsm303d__regs_8h.html#a4e0e8d668dc8767c0127b41142472533":[13,0,1,0,7,81,20],
-"lsm303d__regs_8h.html#a4f77e177ec78cc4af221960b41c79bb5":[13,0,1,0,7,81,17],
-"lsm303d__regs_8h.html#a530e3838f85c144e4ba71528d2a020bb":[13,0,1,0,7,81,31]
+"lsm303d__regs_8h.html#a4e0e8d668dc8767c0127b41142472533":[13,0,1,0,7,81,20]
 };

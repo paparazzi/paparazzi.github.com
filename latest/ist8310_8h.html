@@ -450,9 +450,9 @@ data vector in mag coordinate system </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ist8310_8c_source.html#l00111">111</a> of file <a class="el" href="ist8310_8c_source.html">ist8310.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ist8310_8c_source.html#l00120">120</a> of file <a class="el" href="ist8310_8c_source.html">ist8310.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00060">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransSuccess</a>, <a class="el" href="ist8310_8c_source.html#l00110">Int16FromBuf</a>, <a class="el" href="ist8310__regs_8h_source.html#l00036">IST8310_REG_DATA_XL</a>, <a class="el" href="ist8310_8h_source.html#l00049">IST_STATUS_IDLE</a>, and <a class="el" href="ist8310_8h_source.html#l00050">IST_STATUS_READ</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8h_source.html#l00060">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransSuccess</a>, <a class="el" href="ist8310_8c_source.html#l00119">Int16FromBuf</a>, <a class="el" href="ist8310__regs_8h_source.html#l00070">IST8310_STAT1_DRDY</a>, <a class="el" href="ist8310_8c_source.html#l00111">ist8310_trigger()</a>, <a class="el" href="ist8310_8h_source.html#l00049">IST_STATUS_IDLE</a>, and <a class="el" href="ist8310_8h_source.html#l00050">IST_STATUS_READ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mag__ist8310_8c_source.html#l00077">mag_ist8310_module_event()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -463,10 +463,12 @@ data vector in mag coordinate system </td></tr>
 <div class="center"><img src="ist8310_8h_a2aed8b7258efe7bf5f10f185ab25e626_cgraph.png" border="0" usemap="#aist8310_8h_a2aed8b7258efe7bf5f10f185ab25e626_cgraph" alt=""/></div>
 <map name="aist8310_8h_a2aed8b7258efe7bf5f10f185ab25e626_cgraph" id="aist8310_8h_a2aed8b7258efe7bf5f10f185ab25e626_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,120,31"/>
-<area shape="rect" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="168,5,284,31"/>
+<area shape="rect" href="ist8310_8c.html#a0cfd5060b1e3e05bee2396ed54709714" title="Trigger a single measurement, read at the next ist8310_read." alt="" coords="168,5,288,31"/>
 <area shape="poly" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="332,5,425,31"/>
-<area shape="poly" title=" " alt="" coords="284,15,318,15,318,21,284,21"/>
+<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="336,5,439,31"/>
+<area shape="poly" title=" " alt="" coords="288,15,322,15,322,21,288,21"/>
+<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="487,5,580,31"/>
+<area shape="poly" title=" " alt="" coords="439,15,473,15,473,21,439,21"/>
 </map>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -639,7 +641,7 @@ data vector in mag coordinate system </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ist8310_8c_source.html#l00098">98</a> of file <a class="el" href="ist8310_8c_source.html">ist8310.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="ist8310__regs_8h_source.html#l00077">IST8310_CNTL1_ODR_SINGLE</a>, <a class="el" href="ist8310__regs_8h_source.html#l00043">IST8310_REG_CNTL1</a>, and <a class="el" href="ist8310_8h_source.html#l00049">IST_STATUS_IDLE</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="i2c_8c_source.html#l00222">i2c_transceive()</a>, <a class="el" href="ist8310__regs_8h_source.html#l00035">IST8310_REG_STAT1</a>, <a class="el" href="ist8310_8h_source.html#l00049">IST_STATUS_IDLE</a>, and <a class="el" href="ist8310_8h_source.html#l00050">IST_STATUS_READ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ist8310_8h_source.html#l00077">ist8310_periodic()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -679,7 +681,7 @@ data vector in mag coordinate system </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ist8310_8h.html">ist8310.h</a></li>
-    <li class="footer">Generated on Tue Nov 10 2026 13:43:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Nov 10 2026 17:33:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

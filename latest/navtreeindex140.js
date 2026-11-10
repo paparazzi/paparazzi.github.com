@@ -1,5 +1,7 @@
 var NAVTREEINDEX140 =
 {
+"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,466,2],
+"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,466,0],
 "module__stabilization_int_euler.html#module_xml__stabilization_int_euler":[1,466,2,0],
 "module__stabilization_int_quat.html":[1,467],
 "module__stabilization_int_quat.html#configuration__stabilization_int_quat":[1,467,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX140 =
 "module__tune_airspeed.html#module_load_example__tune_airspeed":[1,374,0],
 "module__tune_airspeed.html#module_xml__tune_airspeed":[1,374,1,0],
 "module__tunnel_uavcan.html":[1,131],
-"module__tunnel_uavcan.html#configuration__tunnel_uavcan":[1,131,1],
-"module__tunnel_uavcan.html#functions__tunnel_uavcan":[1,131,2],
-"module__tunnel_uavcan.html#module_load_example__tunnel_uavcan":[1,131,0]
+"module__tunnel_uavcan.html#configuration__tunnel_uavcan":[1,131,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX105 =
 {
+"linux_2mcu__arch_8c.html":[13,0,1,0,0,1,3],
+"linux_2mcu__arch_8c.html#a13ec37bda4f4dabe6d497020ce185a0c":[13,0,1,0,0,1,3,0],
 "linux_2mcu__arch_8c.html#a2cdf10c3b8f8591ac2582a7236cea303":[13,0,1,0,0,1,3,3],
 "linux_2mcu__arch_8c.html#a3e592bc76a9b3bb764805026a6105414":[13,0,1,0,0,1,3,4],
 "linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[13,0,1,0,0,1,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX105 =
 "lis302dl__spi_8h.html#abe7efdb0e42adcc963cb23ccfa2936e2":[13,0,1,0,7,73,0,6],
 "lis302dl__spi_8h.html#af10186c998376374915e06131a4b18b5":[13,0,1,0,7,73,4],
 "lis302dl__spi_8h.html#structLis302dl__Spi":[13,0,1,0,7,73,0],
-"lis302dl__spi_8h.html#unionLis302dl__Spi_8data":[13,0,1,0,7,73,1],
-"lis302dl__spi_8h_source.html":[13,0,1,0,7,73],
-"lis3mdl_8c.html":[13,0,1,0,7,74]
+"lis302dl__spi_8h.html#unionLis302dl__Spi_8data":[13,0,1,0,7,73,1]
 };

@@ -9,6 +9,7 @@ var invensense3_8h_structinvensense3__t =
     [ "bus", "invensense3_8h.html#a9506f2ea8112559521fbea202a28fd34", null ],
     [ "config_idx", "invensense3_8h.html#a96743718572dc5257a5c1516dbf98073", null ],
     [ "device", "invensense3_8h.html#abb1a234e7655d3dc3dc2605c0b8938a8", null ],
+    [ "fifo_cnt", "invensense3_8h.html#a7cb3b635da81c516d16e4bb3af65f89a", null ],
     [ "gyro_aaf", "invensense3_8h.html#af275109cdeb83d48d6d4d1b603115796", null ],
     [ "gyro_aaf_regs", "invensense3_8h.html#aea52cf66e32274d937594510b2dde856", null ],
     [ "gyro_odr", "invensense3_8h.html#af2bc173f9c3073039161c3bbf7c7f799", null ],

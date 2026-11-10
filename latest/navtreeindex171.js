@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"opticflow__calculator_8c.html#aab1106743d6997f950b2a968cd60af0d":[13,0,1,0,6,12,2,3,53],
+"opticflow__calculator_8c.html#aad8ed3124096947decafa9bbf6b8d4ab":[13,0,1,0,6,12,2,3,34],
 "opticflow__calculator_8c.html#aafb53e32cc0a9d9368c924773c9325d6":[13,0,1,0,6,12,2,3,17],
 "opticflow__calculator_8c.html#ab4401e5f164150ee3edd9e3c570abd29":[13,0,1,0,6,12,2,3,35],
 "opticflow__calculator_8c.html#ab57bd1ab7d50982c7f9494e40e6da3ca":[13,0,1,0,6,12,2,3,67],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "pano__unwrap_8h.html#structpano__unwrap__t":[13,0,1,0,6,51,1,0],
 "pano__unwrap_8h_source.html":[13,0,1,0,6,51,1],
 "paparazzi_8h.html":[13,0,1,0,23],
-"paparazzi_8h.html#a3e070a9f163110692ed4b0f6a95b41c6":[13,0,1,0,23,3],
-"paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c":[13,0,1,0,23,4],
-"paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9":[13,0,1,0,23,0]
+"paparazzi_8h.html#a3e070a9f163110692ed4b0f6a95b41c6":[13,0,1,0,23,3]
 };

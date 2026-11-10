@@ -199,8 +199,8 @@ var NAVTREEINDEX63 =
 "globals_defs_y.html":[13,1,6,25],
 "globals_defs_z.html":[13,1,6,26],
 "globals_e.html":[13,1,0,5],
-"globals_enum.html":[13,1,4],
 "globals_enum.html":[13,1,4,0],
+"globals_enum.html":[13,1,4],
 "globals_enum_b.html":[13,1,4,1],
 "globals_enum_c.html":[13,1,4,2],
 "globals_enum_d.html":[13,1,4,3],
@@ -249,5 +249,5 @@ var NAVTREEINDEX63 =
 "globals_eval_y.html":[13,1,5,23],
 "globals_eval_z.html":[13,1,5,24],
 "globals_f.html":[13,1,0,6],
-"globals_func.html":[13,1,1,0]
+"globals_func.html":[13,1,1]
 };

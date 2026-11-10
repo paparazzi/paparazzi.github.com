@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__agl_dist.html#configuration__agl_dist":[1,451,1],
+"module__agl_dist.html#functions__agl_dist":[1,451,2],
 "module__agl_dist.html#module_load_example__agl_dist":[1,451,0],
 "module__agl_dist.html#module_xml__agl_dist":[1,451,2,0],
 "module__ahrs_common.html":[1,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__battery_monitor.html":[1,23],
 "module__battery_monitor.html#configuration__battery_monitor":[1,23,1],
 "module__battery_monitor.html#functions__battery_monitor":[1,23,2],
-"module__battery_monitor.html#module_load_example__battery_monitor":[1,23,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,23,2,0],
-"module__bebop_ae_awb.html":[1,56]
+"module__battery_monitor.html#module_load_example__battery_monitor":[1,23,0]
 };

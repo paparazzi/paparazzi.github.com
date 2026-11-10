@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,207,0],
+"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,207,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,208],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,208,0],
 "module__imu_aspirin_v1_0.html":[1,209],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__ir_mlx.html#module_xml__ir_mlx":[1,308,1,0],
 "module__jevois.html":[1,449],
 "module__jevois.html#configuration__jevois":[1,449,1],
-"module__jevois.html#functions__jevois":[1,449,2],
-"module__jevois.html#module_load_example__jevois":[1,449,0],
-"module__jevois.html#module_xml__jevois":[1,449,2,0]
+"module__jevois.html#functions__jevois":[1,449,2]
 };
