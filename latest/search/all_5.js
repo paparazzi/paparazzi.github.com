@@ -10,6 +10,5 @@ var searchData=
   ['55_7',['55',['../paparazzi_messages.html#EXTERNAL_POSE_SMALL',1,'EXTERNAL_POSE_SMALL (ID 55)'],['../paparazzi_messages.html#METEO_STICK',1,'METEO_STICK (ID 55)']]],
   ['56_8',['56',['../paparazzi_messages.html#BARO_ETS',1,'BARO_ETS (ID 56)'],['../paparazzi_messages.html#REMOTE_GPS_LOCAL',1,'REMOTE_GPS_LOCAL (ID 56)']]],
   ['57_9',['TARGET_POS (ID 57)',['../paparazzi_messages.html#TARGET_POS',1,'']]],
-  ['58_10',['VISION_OUTBACK (ID 58)',['../paparazzi_messages.html#VISION_OUTBACK',1,'']]],
-  ['59_11',['GPS_LLA (ID 59)',['../paparazzi_messages.html#GPS_LLA',1,'']]]
+  ['59_10',['GPS_LLA (ID 59)',['../paparazzi_messages.html#GPS_LLA',1,'']]]
 ];

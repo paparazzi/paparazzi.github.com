@@ -6,7 +6,7 @@ var searchData=
   ['70_3',['70',['../paparazzi_messages.html#HITL_IMU',1,'HITL_IMU (ID 70)'],['../paparazzi_messages.html#XTEND_RSSI',1,'XTEND_RSSI (ID 70)']]],
   ['71_4',['71',['../paparazzi_messages.html#GVF',1,'GVF (ID 71)'],['../paparazzi_messages.html#HITL_GPS',1,'HITL_GPS (ID 71)']]],
   ['72_5',['72',['../paparazzi_messages.html#HITL_UBX',1,'HITL_UBX (ID 72)'],['../paparazzi_messages.html#SUPERBITRF',1,'SUPERBITRF (ID 72)']]],
-  ['73_6',['73',['../paparazzi_messages.html#GX3_INFO',1,'GX3_INFO (ID 73)'],['../paparazzi_messages.html#HITL_AIR_DATA',1,'HITL_AIR_DATA (ID 73)']]],
+  ['73_6',['HITL_AIR_DATA (ID 73)',['../paparazzi_messages.html#HITL_AIR_DATA',1,'']]],
   ['74_7',['74',['../paparazzi_messages.html#RC_UP',1,'RC_UP (ID 74)'],['../paparazzi_messages.html#UBLOX_INFO',1,'UBLOX_INFO (ID 74)']]],
   ['75_8',['GVF_PARAMETRIC (ID 75)',['../paparazzi_messages.html#GVF_PARAMETRIC',1,'']]],
   ['76_9',['BODY_RATES_ACCEL (ID 76)',['../paparazzi_messages.html#BODY_RATES_ACCEL',1,'']]],
