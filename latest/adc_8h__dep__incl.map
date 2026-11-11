@@ -1,45 +1,45 @@
 <map id="sw/airborne/mcu_periph/adc.h" name="sw/airborne/mcu_periph/adc.h">
-<area shape="rect" id="Node000001" title="arch independent ADC (Analog to Digital Converter) API" alt="" coords="1810,5,1989,45"/>
-<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2adc__arch_8c.html" title="ADC driver." alt="" coords="5,101,185,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1796,31,1455,36,994,48,534,67,343,80,198,96,161,103,160,98,198,91,343,75,534,62,994,43,1455,31,1796,25"/>
-<area shape="rect" id="Node000003" href="$linux_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters in Linux based systems." alt="" coords="209,101,384,141"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1796,31,1492,38,1088,50,688,69,523,82,397,96,361,103,360,98,396,91,522,76,688,64,1088,45,1492,32,1796,26"/>
-<area shape="rect" id="Node000004" href="$sim_2mcu__periph_2adc__arch_8c.html" title="Dummy functions for handling of ADC hardware in sim." alt="" coords="408,101,583,141"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1796,32,1183,53,843,72,703,83,596,96,560,103,559,98,595,91,702,78,843,67,1182,48,1796,27"/>
-<area shape="rect" id="Node000005" href="$adc__generic_8c.html" title="This module can be used to read one or two values from the ADC channels in a generic way." alt="" coords="607,101,765,141"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1797,33,1271,55,986,73,868,84,778,96,746,103,744,98,778,91,867,79,985,68,1270,50,1796,27"/>
-<area shape="rect" id="Node000006" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc." alt="" coords="789,101,948,141"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1796,30,1635,34,1426,44,1194,64,1076,78,961,96,929,103,928,98,960,91,1075,73,1193,58,1426,39,1635,28,1796,24"/>
-<area shape="rect" id="Node000007" href="$glide__wing__lock_8c.html" title=" " alt="" coords="972,93,1139,148"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1796,33,1505,51,1328,70,1152,96,1139,98,1138,93,1151,91,1327,65,1504,46,1796,27"/>
-<area shape="rect" id="Node000008" href="$sdlog__chibios_8c.html" title=" " alt="" coords="1163,101,1340,141"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1797,38,1591,60,1472,76,1353,96,1320,103,1319,98,1352,91,1471,71,1590,55,1796,33"/>
-<area shape="rect" id="Node000009" href="$humid__hih_8c.html" title="Honeywell HIH&#45;4030 sensor interface." alt="" coords="1364,101,1523,141"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1797,45,1672,68,1536,96,1507,103,1506,98,1535,91,1671,62,1796,40"/>
-<area shape="rect" id="Node000010" href="$light__solar_8c.html" title="University of Reading solar radiation sensor interface." alt="" coords="1547,101,1705,141"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1832,52,1682,103,1680,98,1831,47"/>
-<area shape="rect" id="Node000011" href="$light__temt_8c.html" title="Vishay TEMT6000 ambient light sensor interface." alt="" coords="1729,101,1888,141"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1873,57,1829,102,1825,99,1870,53"/>
-<area shape="rect" id="Node000012" href="$mf__ptu_8c.html" title=" " alt="" coords="1912,101,2071,141"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1929,53,1975,99,1971,102,1926,57"/>
-<area shape="rect" id="Node000013" href="$temp__tcouple__adc_8c.html" title="Universitaet Tuebingen thermocouple interface." alt="" coords="2095,101,2298,141"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1973,47,2137,98,2136,103,1972,52"/>
-<area shape="rect" id="Node000014" href="$pump__control_8c.html" title=" " alt="" coords="2322,101,2541,141"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2003,39,2310,91,2347,98,2346,103,2310,96,2002,45"/>
-<area shape="rect" id="Node000015" href="$cc2500__compat_8c.html" title=" " alt="" coords="2565,93,2743,148"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2002,30,2254,50,2404,68,2553,91,2565,93,2564,98,2552,96,2403,73,2253,56,2002,35"/>
-<area shape="rect" id="Node000016" href="$wing__rotation__adc__sensor_8c.html" title=" " alt="" coords="2767,93,2938,148"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2003,26,2151,31,2339,43,2547,62,2756,91,2767,93,2766,98,2755,96,2547,67,2338,48,2150,37,2002,31"/>
-<area shape="rect" id="Node000017" href="$airspeed__adc_8c.html" title="Read an airspeed or differential pressure sensor via onboard ADC." alt="" coords="2963,101,3140,141"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2003,24,2182,28,2418,38,2684,58,2819,72,2950,91,2986,98,2985,103,2950,96,2818,78,2683,63,2418,43,2182,33,2003,29"/>
-<area shape="rect" id="Node000018" href="$aoa__adc_8h.html" title=" " alt="" coords="3164,101,3323,141"/>
-<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2002,26,2592,47,2916,66,3051,78,3153,91,3186,98,3185,103,3152,96,3050,83,2916,71,2592,53,2002,32"/>
-<area shape="rect" id="Node000020" href="$temp__adc_8c.html" title="Temperature sensor module for LM35 or NTC (10k / 100k) sensor via analog input." alt="" coords="3347,101,3505,141"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="2002,26,2295,32,2679,44,3059,63,3216,76,3336,91,3369,98,3368,103,3335,96,3216,81,3059,69,2679,50,2295,37,2002,31"/>
-<area shape="rect" id="Node000021" href="$sonar__adc_8c.html" title=" " alt="" coords="3529,101,3688,141"/>
-<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="2003,25,2328,30,2766,41,3201,61,3382,74,3518,91,3552,98,3551,103,3518,96,3381,80,3201,66,2766,47,2328,35,2002,30"/>
-<area shape="rect" id="Node000022" href="$sonar__bebop_8c.html" title="Parrot Bebop Sonar driver." alt="" coords="3713,101,3873,141"/>
-<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="2003,25,2361,29,2852,39,3343,59,3547,73,3701,91,3735,98,3734,103,3700,96,3546,78,3342,64,2852,44,2361,34,2003,30"/>
-<area shape="rect" id="Node000019" href="$aoa__adc_8c.html" title="Angle of Attack sensor on ADC Autor: Bruzzlee." alt="" coords="3164,196,3323,236"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="3246,154,3246,196,3241,196,3241,154"/>
+<area shape="rect" id="Node000001" title="arch independent ADC (Analog to Digital Converter) API" alt="" coords="1801,5,1978,50"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2adc__arch_8c.html" title="ADC driver." alt="" coords="5,106,185,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1783,30,1446,38,987,49,531,70,341,84,198,101,162,108,160,104,197,95,341,78,531,64,987,44,1446,32,1788,30"/>
+<area shape="rect" id="Node000003" href="$linux_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters in Linux based systems." alt="" coords="209,106,384,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1783,31,1482,40,1081,52,685,72,521,85,397,101,362,108,361,103,396,95,521,80,685,67,1081,47,1482,34,1788,30"/>
+<area shape="rect" id="Node000004" href="$sim_2mcu__periph_2adc__arch_8c.html" title="Dummy functions for handling of ADC hardware in sim." alt="" coords="408,106,582,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1783,32,1519,42,1176,55,839,74,700,87,594,101,560,109,559,103,593,95,699,81,839,69,1175,50,1519,36,1788,31"/>
+<area shape="rect" id="Node000005" href="$adc__generic_8c.html" title="This module can be used to read one or two values from the ADC channels in a generic way." alt="" coords="606,106,763,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1783,32,1263,57,981,76,864,88,776,101,744,109,743,103,774,95,863,82,980,71,1263,52,1788,32"/>
+<area shape="rect" id="Node000006" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc." alt="" coords="787,106,944,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1783,29,1624,34,1417,44,1187,65,1070,81,957,101,926,109,925,103,956,95,1070,76,1186,60,1417,39,1624,29,1788,28"/>
+<area shape="rect" id="Node000007" href="$glide__wing__lock_8c.html" title=" " alt="" coords="968,98,1134,160"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1783,32,1656,41,1496,53,1321,72,1146,101,1134,103,1133,98,1145,95,1320,67,1495,47,1656,35,1788,32"/>
+<area shape="rect" id="Node000008" href="$sdlog__chibios_8c.html" title=" " alt="" coords="1158,106,1334,151"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1783,38,1581,62,1463,79,1346,101,1314,108,1313,103,1345,95,1462,74,1581,57,1788,37"/>
+<area shape="rect" id="Node000009" href="$humid__hih_8c.html" title="Honeywell HIH&#45;4030 sensor interface." alt="" coords="1358,106,1515,151"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1788,45,1662,71,1528,101,1500,108,1499,103,1526,95,1661,65,1783,46"/>
+<area shape="rect" id="Node000010" href="$light__solar_8c.html" title="University of Reading solar radiation sensor interface." alt="" coords="1539,106,1696,151"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1818,55,1678,109,1677,103,1813,56"/>
+<area shape="rect" id="Node000011" href="$light__temt_8c.html" title="Vishay TEMT6000 ambient light sensor interface." alt="" coords="1720,106,1878,151"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1862,60,1820,109,1817,104,1857,63"/>
+<area shape="rect" id="Node000012" href="$mf__ptu_8c.html" title=" " alt="" coords="1902,106,2059,151"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1921,59,1963,107,1958,105,1919,64"/>
+<area shape="rect" id="Node000013" href="$temp__tcouple__adc_8c.html" title="Universitaet Tuebingen thermocouple interface." alt="" coords="2084,106,2285,151"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1969,53,2122,106,2117,106,1968,58"/>
+<area shape="rect" id="Node000014" href="$pump__control_8c.html" title=" " alt="" coords="2308,106,2527,151"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1994,42,2139,65,2298,95,2336,106,2331,106,2297,101,2138,71,1994,47"/>
+<area shape="rect" id="Node000015" href="$cc2500__compat_8c.html" title=" " alt="" coords="2550,98,2728,160"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1994,32,2244,52,2392,71,2540,95,2552,101,2547,100,2538,101,2391,76,2243,58,1994,37"/>
+<area shape="rect" id="Node000016" href="$wing__rotation__adc__sensor_8c.html" title=" " alt="" coords="2752,98,2921,160"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="1994,28,2141,32,2328,44,2535,64,2741,95,2754,101,2749,100,2740,101,2534,69,2328,49,2141,38,1994,33"/>
+<area shape="rect" id="Node000017" href="$airspeed__adc_8c.html" title="Read an airspeed or differential pressure sensor via onboard ADC." alt="" coords="2946,106,3122,151"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="1994,26,2172,28,2407,38,2670,59,2804,75,2934,95,2971,106,2965,106,2933,101,2803,80,2670,64,2407,43,2172,34,1994,31"/>
+<area shape="rect" id="Node000018" href="$aoa__adc_8h.html" title=" " alt="" coords="3146,106,3303,151"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="1994,29,2251,36,2580,49,2900,69,3033,81,3134,95,3168,106,3163,106,3133,101,3033,86,2900,74,2579,54,2251,41,1994,34"/>
+<area shape="rect" id="Node000020" href="$temp__adc_8c.html" title="Temperature sensor module for LM35 or NTC (10k / 100k) sensor via analog input." alt="" coords="3327,106,3484,151"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="1994,28,2284,34,2666,46,3042,66,3197,79,3316,95,3349,106,3344,106,3314,101,3197,85,3041,71,2666,51,2284,39,1994,33"/>
+<area shape="rect" id="Node000021" href="$sonar__adc_8c.html" title=" " alt="" coords="3508,106,3666,151"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="1994,27,2318,32,2752,43,3183,63,3361,77,3497,95,3531,106,3526,106,3496,101,3361,83,3182,68,2752,48,2318,37,1994,32"/>
+<area shape="rect" id="Node000022" href="$sonar__bebop_8c.html" title="Parrot Bebop Sonar driver." alt="" coords="3690,106,3849,151"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="1994,27,2351,30,2838,40,3089,49,3324,61,3525,76,3678,95,3713,106,3708,106,3677,101,3525,81,3323,66,3089,54,2838,45,2351,35,1994,32"/>
+<area shape="rect" id="Node000019" href="$aoa__adc_8c.html" title="Angle of Attack sensor on ADC Autor: Bruzzlee." alt="" coords="3146,208,3303,252"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="3226,165,3226,209,3222,205,3222,169"/>
 </map>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['qmc5883l_5fconfigure_0',['qmc5883l_configure',['../qmc5883l_8h.html#ac6bac64fe389458893f11c1c1d34fbc9',1,'qmc5883l_configure(struct Qmc5883l *mag):&#160;qmc5883l.c'],['../qmc5883l_8c.html#ac6bac64fe389458893f11c1c1d34fbc9',1,'qmc5883l_configure(struct Qmc5883l *mag):&#160;qmc5883l.c']]],
+  ['qmc5883l_5fconfigure_0',['qmc5883l_configure',['../qmc5883l_8c.html#ac6bac64fe389458893f11c1c1d34fbc9',1,'qmc5883l_configure(struct Qmc5883l *mag):&#160;qmc5883l.c'],['../qmc5883l_8h.html#ac6bac64fe389458893f11c1c1d34fbc9',1,'qmc5883l_configure(struct Qmc5883l *mag):&#160;qmc5883l.c']]],
   ['qmc5883l_5fevent_1',['qmc5883l_event',['../qmc5883l_8c.html#a025a32bf2dc855ae22e78cb340b32261',1,'qmc5883l_event(struct Qmc5883l *mag):&#160;qmc5883l.c'],['../qmc5883l_8h.html#a025a32bf2dc855ae22e78cb340b32261',1,'qmc5883l_event(struct Qmc5883l *mag):&#160;qmc5883l.c']]],
   ['qmc5883l_5finit_2',['qmc5883l_init',['../qmc5883l_8c.html#ae7526b80461324857546b188a73d45b3',1,'qmc5883l_init(struct Qmc5883l *mag, struct i2c_periph *i2c_p, uint8_t addr, uint8_t data_rate):&#160;qmc5883l.c'],['../qmc5883l_8h.html#ae7526b80461324857546b188a73d45b3',1,'qmc5883l_init(struct Qmc5883l *mag, struct i2c_periph *i2c_p, uint8_t addr, uint8_t data_rate):&#160;qmc5883l.c']]],
   ['qmc5883l_5fperiodic_3',['qmc5883l_periodic',['../qmc5883l_8h.html#aff191c5ecf337b5ba54bc4a295760776',1,'qmc5883l.h']]],

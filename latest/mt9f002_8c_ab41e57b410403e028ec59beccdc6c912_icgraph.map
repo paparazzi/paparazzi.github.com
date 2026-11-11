@@ -1,60 +1,58 @@
 <map id="i2c_checked" name="i2c_checked">
-<area shape="rect" id="Node000001" title="Blocking I2C transaction with result check and retry." alt="" coords="967,197,1068,222"/>
-<area shape="rect" id="Node000002" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="838,99,917,125"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="985,191,895,127,898,123,988,187"/>
-<area shape="rect" id="Node000012" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="836,246,919,271"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="969,229,915,248,913,243,967,224"/>
-<area shape="rect" id="Node000003" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title=" " alt="" coords="613,74,779,99"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="824,107,779,101,780,96,825,102"/>
-<area shape="rect" id="Node000006" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)" alt="" coords="611,25,781,50"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="844,94,787,64,754,53,756,48,789,59,847,89"/>
-<area shape="rect" id="Node000011" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config." alt="" coords="633,123,759,149"/>
-<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="825,122,760,130,759,125,824,116"/>
-<area shape="rect" id="Node000004" href="$mt9f002_8c.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera)" alt="" coords="411,271,517,297"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="611,108,606,113,587,137,580,162,574,189,558,219,525,251,491,273,488,269,521,246,554,216,569,187,575,161,582,135,602,109,608,104"/>
-<area shape="rect" id="Node000005" href="$mt9f002_8c.html#aaa9303e4b90f1f8e884137b95eb1bf09" title=" " alt="" coords="373,165,555,205"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="620,106,605,113,591,123,582,133,572,143,557,154,530,168,528,163,555,150,568,139,578,129,588,119,603,108,618,102"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="610,59,606,63,591,81,583,99,579,136,576,176,570,197,558,219,526,251,492,273,489,269,523,247,554,216,566,195,571,175,573,136,578,98,586,79,602,59,607,55"/>
-<area shape="rect" id="Node000007" href="$mt9f002_8c.html#a107e8b9a036f53944cf021efd09ca617" title=" " alt="" coords="372,115,556,141"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="620,57,605,64,591,73,582,84,572,94,557,105,526,118,524,113,555,100,569,90,578,80,588,69,603,59,618,52"/>
-<area shape="rect" id="Node000008" href="$bebop__ae__awb_8c.html#a29ada1a1865ced6069ee14d8160b9c68" title=" " alt="" coords="200,230,324,255"/>
-<area shape="poly" id="edge11_Node000006_Node000008" title=" " alt="" coords="638,24,580,13,511,8,475,10,439,15,405,26,373,41,349,60,328,83,297,137,278,191,268,230,263,229,273,189,292,135,324,80,345,56,371,36,403,21,438,10,474,5,511,3,580,8,639,19"/>
-<area shape="rect" id="Node000010" href="$mt9f002_8c.html#abc3d74d7c703622d5394ca9853bcda5f" title=" " alt="" coords="373,51,555,91"/>
-<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="598,54,555,60,554,55,597,49"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="391,148,373,156,344,173,318,194,277,232,274,228,314,190,341,169,371,151,389,143"/>
-<area shape="rect" id="Node000009" href="$bebop__ae__awb_8c.html#a488d91f59b9036f352ebc7fcafdedf7b" title=" " alt="" coords="5,230,152,255"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="186,245,152,245,152,240,186,240"/>
-<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="621,154,605,162,590,175,581,188,572,203,558,219,521,250,487,273,484,269,518,245,554,215,568,200,576,185,586,171,603,158,619,149"/>
-<area shape="poly" id="edge26_Node000012_Node000003" title=" " alt="" coords="865,234,837,173,814,140,786,113,767,102,770,97,790,109,818,137,841,170,870,232"/>
-<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="850,282,822,299,789,312,751,320,713,323,636,321,565,312,509,299,510,294,566,306,636,316,712,318,750,314,787,307,819,294,847,277"/>
-<area shape="poly" id="edge27_Node000012_Node000006" title=" " alt="" coords="865,233,829,139,807,93,786,63,769,52,772,48,790,59,812,90,834,136,870,231"/>
-<area shape="poly" id="edge34_Node000012_Node000011" title=" " alt="" coords="859,236,828,198,808,179,787,162,759,150,761,145,789,158,812,174,832,194,863,233"/>
-<area shape="rect" id="Node000013" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection." alt="" coords="614,373,778,398"/>
-<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="861,285,830,321,789,356,748,375,746,370,787,351,826,317,857,281"/>
-<area shape="rect" id="Node000014" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection." alt="" coords="614,422,778,447"/>
-<area shape="poly" id="edge18_Node000012_Node000014" title=" " alt="" coords="870,286,842,349,819,384,790,413,770,424,767,420,786,409,815,380,837,347,866,283"/>
-<area shape="rect" id="Node000015" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection." alt="" coords="614,471,778,497"/>
-<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="875,286,866,325,850,373,825,421,809,443,790,462,772,474,769,469,786,458,805,439,820,418,845,370,860,324,869,285"/>
-<area shape="rect" id="Node000016" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection." alt="" coords="604,222,788,247"/>
-<area shape="poly" id="edge22_Node000012_Node000016" title=" " alt="" coords="822,254,788,250,788,244,823,249"/>
-<area shape="rect" id="Node000017" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection." alt="" coords="604,271,788,297"/>
-<area shape="poly" id="edge24_Node000012_Node000017" title=" " alt="" coords="823,269,787,274,787,269,822,264"/>
-<area shape="rect" id="Node000018" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="623,521,769,546"/>
-<area shape="poly" id="edge28_Node000012_Node000018" title=" " alt="" coords="877,286,871,334,857,395,831,457,812,486,790,511,771,524,768,519,786,507,808,483,826,455,852,393,866,333,872,285"/>
-<area shape="rect" id="Node000021" href="$mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title=" " alt="" coords="608,173,784,198"/>
-<area shape="poly" id="edge35_Node000012_Node000021" title=" " alt="" coords="844,241,787,212,753,201,755,196,789,207,846,236"/>
-<area shape="poly" id="edge17_Node000013_Node000004" title=" " alt="" coords="641,371,603,356,487,299,490,294,605,351,643,366"/>
-<area shape="poly" id="edge19_Node000014_Node000004" title=" " alt="" coords="611,418,602,413,585,395,576,377,569,359,554,341,523,317,492,299,495,294,526,313,558,337,573,357,581,375,589,392,606,409,614,414"/>
-<area shape="poly" id="edge21_Node000015_Node000004" title=" " alt="" coords="608,466,602,462,589,447,581,432,575,402,571,372,565,356,554,340,526,316,496,299,498,294,529,312,558,337,569,354,576,370,580,401,586,430,593,444,606,458,611,462"/>
-<area shape="poly" id="edge23_Node000016_Node000004" title=" " alt="" coords="623,253,517,276,516,270,622,248"/>
-<area shape="poly" id="edge25_Node000017_Node000004" title=" " alt="" coords="590,287,517,287,517,281,590,281"/>
-<area shape="poly" id="edge29_Node000018_Node000004" title=" " alt="" coords="609,517,602,511,585,490,577,469,574,427,573,384,567,363,554,340,528,316,497,299,500,294,531,312,558,337,572,361,578,384,580,427,582,468,590,487,606,507,613,513"/>
-<area shape="poly" id="edge33_Node000018_Node000008" title=" " alt="" coords="610,517,602,511,584,492,576,472,569,452,554,431,439,355,283,258,285,253,441,351,558,427,573,450,581,470,589,489,606,507,613,512"/>
-<area shape="rect" id="Node000019" href="$mt9f002_8c.html#ad35111d4dbfb1bb69e2dcce789ba5e0b" title=" " alt="" coords="386,441,542,466"/>
-<area shape="poly" id="edge30_Node000018_Node000019" title=" " alt="" coords="628,520,603,512,493,469,495,464,605,507,630,514"/>
-<area shape="rect" id="Node000020" href="$mt9f002_8c.html#af0793ba8a06a5333d7d1c4a0d2e976a2" title=" " alt="" coords="373,513,555,553"/>
-<area shape="poly" id="edge32_Node000018_Node000020" title=" " alt="" coords="608,536,555,536,555,531,608,531"/>
-<area shape="poly" id="edge31_Node000019_Node000008" title=" " alt="" coords="433,434,370,378,312,311,270,257,275,254,316,308,374,374,437,430"/>
-<area shape="poly" id="edge36_Node000021_Node000004" title=" " alt="" coords="626,204,605,212,539,243,487,274,484,269,537,238,603,207,624,199"/>
-<area shape="poly" id="edge37_Node000021_Node000005" title=" " alt="" coords="594,188,555,188,555,183,594,183"/>
+<area shape="rect" id="Node000001" title="Blocking I2C transaction with result check and retry." alt="" coords="793,263,893,290"/>
+<area shape="rect" id="Node000002" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="664,160,743,188"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="808,253,724,191,724,186,813,253"/>
+<area shape="rect" id="Node000012" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="662,315,745,342"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="787,297,744,317,742,312,792,295"/>
+<area shape="rect" id="Node000003" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title=" " alt="" coords="440,133,606,161"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="646,167,607,162,606,157,651,165"/>
+<area shape="rect" id="Node000006" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)." alt="" coords="438,81,608,109"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="666,152,613,124,581,112,580,107,615,119,671,151"/>
+<area shape="rect" id="Node000011" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config." alt="" coords="460,185,586,213"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="646,183,587,193,585,188,651,180"/>
+<area shape="rect" id="Node000004" href="$mt9f002_8c.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera)." alt="" coords="239,341,344,369"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="436,170,433,176,414,198,407,221,400,246,385,274,349,313,314,343,310,339,346,309,381,271,395,244,401,220,410,196,429,172,440,167"/>
+<area shape="rect" id="Node000005" href="$mt9f002_8c.html#aaa9303e4b90f1f8e884137b95eb1bf09" title=" " alt="" coords="201,216,382,260"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="451,168,432,176,339,217,336,213,430,171,456,165"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="434,120,433,124,418,141,410,159,405,194,402,231,396,252,385,274,351,314,316,343,312,339,347,310,381,271,391,250,397,230,400,193,405,157,414,139,429,120,437,116"/>
+<area shape="rect" id="Node000007" href="$mt9f002_8c.html#a107e8b9a036f53944cf021efd09ca617" title=" " alt="" coords="200,81,383,109"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="419,96,384,98,382,93,424,94"/>
+<area shape="rect" id="Node000008" href="$mt9f002_8c.html#abc3d74d7c703622d5394ca9853bcda5f" title=" " alt="" coords="201,133,382,178"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="450,115,381,135,379,130,454,112"/>
+<area shape="rect" id="Node000009" href="$bebop__ae__awb_8c.html#a29ada1a1865ced6069ee14d8160b9c68" title=" " alt="" coords="230,29,353,57"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="440,79,354,60,353,54,445,76"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="326,15,315,10,291,8,269,10,257,15,254,20,260,29,254,29,249,20,254,11,268,5,291,3,316,5,331,13"/>
+<area shape="rect" id="Node000010" href="$bebop__ae__awb_8c.html#a488d91f59b9036f352ebc7fcafdedf7b" title=" " alt="" coords="5,29,152,57"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="212,45,153,45,151,41,216,41"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="443,220,432,228,407,249,385,274,311,343,307,339,381,271,404,245,430,224,447,217"/>
+<area shape="poly" id="edge26_Node000012_Node000003" title=" " alt="" coords="691,299,663,237,640,204,613,176,594,164,593,159,616,172,645,201,667,235,696,301"/>
+<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="675,350,646,370,615,383,579,391,542,394,468,393,399,384,344,372,343,367,400,379,468,388,542,389,578,385,614,378,644,366,670,353"/>
+<area shape="poly" id="edge27_Node000012_Node000006" title=" " alt="" coords="691,299,656,202,634,154,612,124,595,112,595,107,616,120,638,152,661,200,696,300"/>
+<area shape="poly" id="edge32_Node000012_Node000011" title=" " alt="" coords="683,301,654,264,634,245,613,228,587,215,586,210,616,224,638,241,658,261,688,302"/>
+<area shape="rect" id="Node000013" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection." alt="" coords="441,443,604,470"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="686,353,655,393,616,427,579,445,577,440,613,422,652,389,682,357"/>
+<area shape="rect" id="Node000014" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection." alt="" coords="441,495,604,522"/>
+<area shape="poly" id="edge18_Node000012_Node000014" title=" " alt="" coords="695,356,667,422,644,455,616,484,594,497,592,492,613,480,640,452,662,419,691,359"/>
+<area shape="rect" id="Node000015" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection." alt="" coords="441,547,604,574"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="699,356,691,398,675,446,651,494,616,536,596,549,594,544,613,532,646,491,670,444,686,397,696,360"/>
+<area shape="rect" id="Node000016" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection." alt="" coords="431,289,614,317"/>
+<area shape="poly" id="edge22_Node000012_Node000016" title=" " alt="" coords="644,321,615,319,614,313,649,320"/>
+<area shape="rect" id="Node000017" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection." alt="" coords="431,341,614,369"/>
+<area shape="poly" id="edge24_Node000012_Node000017" title=" " alt="" coords="644,338,616,344,614,339,649,336"/>
+<area shape="rect" id="Node000018" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="450,599,595,626"/>
+<area shape="poly" id="edge28_Node000012_Node000018" title=" " alt="" coords="702,355,697,407,683,469,657,532,639,562,616,588,597,601,595,596,613,584,634,559,652,530,678,467,692,406,699,360"/>
+<area shape="rect" id="Node000021" href="$mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title=" " alt="" coords="435,237,610,265"/>
+<area shape="poly" id="edge33_Node000012_Node000021" title=" " alt="" coords="665,306,613,280,581,268,580,263,615,275,670,306"/>
+<area shape="poly" id="edge17_Node000013_Node000004" title=" " alt="" coords="460,437,430,427,319,372,319,367,432,422,466,437"/>
+<area shape="poly" id="edge19_Node000014_Node000004" title=" " alt="" coords="442,488,430,484,390,457,354,426,304,372,305,367,358,422,393,453,432,480,447,489"/>
+<area shape="poly" id="edge21_Node000015_Node000004" title=" " alt="" coords="438,539,429,536,383,496,345,449,316,404,299,372,300,367,320,401,349,446,387,492,433,532,444,540"/>
+<area shape="poly" id="edge23_Node000016_Node000004" title=" " alt="" coords="441,322,345,346,343,341,445,320"/>
+<area shape="poly" id="edge25_Node000017_Node000004" title=" " alt="" coords="413,356,344,358,343,353,418,354"/>
+<area shape="poly" id="edge29_Node000018_Node000004" title=" " alt="" coords="436,590,429,588,402,563,377,534,338,472,310,413,296,372,298,367,315,411,342,469,382,531,406,559,433,584,441,592"/>
+<area shape="rect" id="Node000019" href="$mt9f002_8c.html#ad35111d4dbfb1bb69e2dcce789ba5e0b" title=" " alt="" coords="214,568,369,596"/>
+<area shape="poly" id="edge30_Node000018_Node000019" title=" " alt="" coords="432,601,369,595,369,589,438,601"/>
+<area shape="rect" id="Node000020" href="$mt9f002_8c.html#af0793ba8a06a5333d7d1c4a0d2e976a2" title=" " alt="" coords="201,620,382,664"/>
+<area shape="poly" id="edge31_Node000018_Node000020" title=" " alt="" coords="437,623,382,633,382,628,432,624"/>
+<area shape="poly" id="edge34_Node000021_Node000004" title=" " alt="" coords="449,272,432,280,368,312,316,343,313,339,366,307,430,275,453,269"/>
+<area shape="poly" id="edge35_Node000021_Node000005" title=" " alt="" coords="417,246,383,246,381,241,422,244"/>
 </map>

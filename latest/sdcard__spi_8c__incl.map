@@ -1,31 +1,31 @@
 <map id="sw/airborne/peripherals/sdcard_spi.c" name="sw/airborne/peripherals/sdcard_spi.c">
-<area shape="rect" id="Node000001" title="This is an interface for reading and writing blocks of data to and from an SD card directly over SPI." alt="" coords="5,5,180,45"/>
-<area shape="rect" id="Node000002" href="$sdcard__spi_8h.html" title="Interface for reading and writing blocks of data to and from an SD card directly over SPI." alt="" coords="41,93,144,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,46,95,79,90,79,90,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="31,321,85,346"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,120,80,172,67,240,62,307,56,307,62,240,75,171,87,118"/>
-<area shape="rect" id="Node000004" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="113,167,246,192"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="108,117,156,156,153,160,105,121"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="151,194,116,213,85,242,70,274,62,308,57,307,65,273,81,238,113,209,148,190"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="95,240,263,265"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="182,192,182,226,177,226,177,192"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="287,240,461,265"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="212,190,330,233,329,238,210,195"/>
-<area shape="rect" id="Node000010" href="$threads_8h.html" title=" " alt="" coords="625,240,800,265"/>
-<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="247,187,614,236,613,241,246,192"/>
-<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="329,268,100,324,98,319,327,263"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="168,321,255,346"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="351,268,248,317,246,312,349,263"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="279,321,349,346"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="367,267,333,311,329,308,363,264"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="373,321,500,346"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="385,264,421,308,417,312,381,267"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="525,321,607,346"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="692,268,601,316,599,312,690,263"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="631,313,794,353"/>
-<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="715,266,715,300,710,300,710,266"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="819,321,889,346"/>
-<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="735,263,822,312,820,316,732,268"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="914,321,989,346"/>
-<area shape="poly" id="edge15_Node000010_Node000014" title=" " alt="" coords="752,263,903,311,910,313,909,319,901,316,751,268"/>
+<area shape="rect" id="Node000001" title="This is an interface for reading and writing blocks of data to and from an SD card directly over SPI." alt="" coords="5,5,180,50"/>
+<area shape="rect" id="Node000002" href="$sdcard__spi_8h.html" title="Interface for reading and writing blocks of data to and from an SD card directly over SPI." alt="" coords="41,98,144,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,48,95,83,90,82,92,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="31,334,84,361"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,124,80,180,67,250,61,319,56,318,62,249,74,179,88,129"/>
+<area shape="rect" id="Node000004" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="113,174,245,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="108,124,155,163,150,165,108,129"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="145,204,115,223,85,251,69,285,62,320,57,318,64,283,81,248,111,219,148,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="96,249,263,277"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="180,200,182,235,177,233,178,204"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="286,249,459,277"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="214,199,327,243,322,245,214,205"/>
+<area shape="rect" id="Node000010" href="$threads_8h.html" title=" " alt="" coords="620,249,794,277"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="246,195,607,246,604,250,245,201"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="323,280,100,338,99,333,321,275"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="168,334,254,361"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="349,277,251,329,249,324,344,278"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="278,334,347,361"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="365,276,332,323,329,319,360,279"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="371,334,497,361"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="384,275,418,322,413,320,381,280"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="521,334,602,361"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="686,277,599,328,597,323,681,278"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="626,325,788,370"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="709,276,709,311,705,307,705,280"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="812,334,882,361"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="730,275,814,326,809,325,729,280"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="906,334,980,361"/>
+<area shape="poly" id="edge15_Node000010_Node000014" title=" " alt="" coords="752,275,895,322,903,328,897,327,893,328,751,280"/>
 </map>

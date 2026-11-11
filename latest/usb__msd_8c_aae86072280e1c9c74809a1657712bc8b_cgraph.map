@@ -1,56 +1,56 @@
 <map id="msd_read_command_block" name="msd_read_command_block">
-<area shape="rect" id="Node000001" title="Reads a newly received command block." alt="" coords="5,318,205,344"/>
-<area shape="rect" id="Node000002" href="$usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="255,174,446,200"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,316,172,265,210,235,252,210,272,201,274,206,255,215,213,240,175,269,121,320"/>
-<area shape="rect" id="Node000004" href="$usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information." alt="" coords="496,117,651,142"/>
-<area shape="poly" id="edge34_Node000001_Node000004" title=" " alt="" coords="106,318,116,262,141,182,160,139,184,98,215,61,252,31,302,8,325,3,348,3,394,13,449,31,480,45,509,65,554,105,550,109,506,69,478,50,447,36,393,18,347,9,326,9,304,13,255,36,219,65,189,101,165,141,146,184,121,264,111,319"/>
-<area shape="rect" id="Node000005" href="$usb__msd_8c.html#a0074e59868c631d2f665ee9d32e316cd" title="Starts sending data." alt="" coords="499,346,648,372"/>
-<area shape="poly" id="edge35_Node000001_Node000005" title=" " alt="" coords="206,320,322,317,386,319,448,324,520,340,519,345,448,329,385,324,322,322,206,325"/>
-<area shape="rect" id="Node000006" href="$usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command." alt="" coords="259,224,442,264"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="142,316,279,266,281,271,143,321"/>
-<area shape="rect" id="Node000007" href="$usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command." alt="" coords="263,403,438,443"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="137,341,254,388,275,396,273,401,252,393,135,346"/>
-<area shape="rect" id="Node000009" href="$usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command." alt="" coords="263,339,438,379"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="206,340,250,345,250,350,205,345"/>
-<area shape="rect" id="Node000010" href="$usb__msd_8c.html#adcf34e8664fce2f0676aa631a73e53f3" title="Processes a REQUEST_SENSE SCSI command." alt="" coords="253,531,448,571"/>
-<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="116,343,135,377,166,424,207,474,255,517,264,522,261,527,252,521,203,477,162,427,131,380,111,345"/>
-<area shape="rect" id="Node000011" href="$usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called." alt="" coords="507,552,640,577"/>
-<area shape="poly" id="edge36_Node000001_Node000011" title=" " alt="" coords="111,343,120,401,143,486,162,531,186,575,217,613,255,645,280,659,304,667,325,671,347,671,392,661,447,644,476,633,502,618,547,584,550,588,505,622,478,638,449,649,394,667,347,676,325,677,302,673,278,664,252,649,213,617,182,578,157,534,138,488,115,402,105,344"/>
-<area shape="rect" id="Node000013" href="$usb__msd_8c.html#adde97b16d8281aeca3a016ce27fd4c24" title="Processes a SEND_DIAGNOSTIC SCSI command." alt="" coords="262,46,439,86"/>
-<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="109,317,126,275,155,215,197,151,223,122,252,95,259,90,262,94,255,100,227,125,202,155,160,218,131,277,114,319"/>
-<area shape="rect" id="Node000014" href="$usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command." alt="" coords="263,467,439,507"/>
-<area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="120,342,175,395,213,425,255,453,267,459,265,464,252,457,210,430,172,399,117,345"/>
-<area shape="rect" id="Node000017" href="$usb__msd_8c.html#a9af0f1fa6a97cdd8d2c117fc7671aea0" title="Processes a START_STOP_UNIT SCSI command." alt="" coords="263,595,439,635"/>
-<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="113,343,129,388,158,452,200,521,226,553,255,581,261,586,258,590,252,585,222,557,195,524,153,455,124,390,108,345"/>
-<area shape="rect" id="Node000018" href="$usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command." alt="" coords="265,110,436,150"/>
-<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="112,316,165,243,205,198,252,159,261,153,264,158,255,164,209,202,169,246,117,319"/>
-<area shape="rect" id="Node000003" href="$usb__msd_8c.html#ad07c9360f29e619d5e4d4e9e4b28cb3d" title=" " alt="" coords="504,264,643,289"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,197,449,210,497,231,540,254,538,259,495,236,447,215,408,202"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="400,172,509,143,511,148,401,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="427,197,450,210,469,231,477,253,484,275,498,299,519,319,542,336,538,341,515,323,494,302,479,277,472,255,464,234,446,214,424,202"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="443,255,491,262,490,267,442,260"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="408,262,449,280,543,336,540,341,447,285,405,267"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="425,400,446,389,462,375,471,362,480,348,494,332,539,295,543,299,498,335,484,351,475,365,466,379,450,393,428,405"/>
-<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="420,400,514,373,516,378,422,405"/>
-<area shape="rect" id="Node000008" href="$usb__msd_8c.html#a2c58af6d9b07129480e5c5c8f47a588a" title="Byte&#45;swap a 32 bits unsigned integer." alt="" coords="521,404,625,429"/>
-<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="438,418,507,415,507,421,438,423"/>
-<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="404,336,524,291,526,296,406,341"/>
-<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="438,356,485,356,485,362,438,362"/>
-<area shape="poly" id="edge15_Node000009_Node000008" title=" " alt="" coords="430,376,511,397,509,403,428,381"/>
-<area shape="poly" id="edge17_Node000010_Node000005" title=" " alt="" coords="430,529,446,517,459,502,465,486,470,455,474,423,481,406,494,389,511,376,515,380,498,393,486,409,479,424,475,456,471,488,463,504,450,521,433,533"/>
-<area shape="poly" id="edge18_Node000010_Node000011" title=" " alt="" coords="449,554,493,557,493,562,448,559"/>
-<area shape="rect" id="Node000012" href="$usb__msd_8c.html#a24a678ea6bcd105c46f97ccc813d146b" title=" " alt="" coords="699,552,841,577"/>
-<area shape="poly" id="edge19_Node000011_Node000012" title=" " alt="" coords="640,562,685,562,685,567,640,567"/>
-<area shape="poly" id="edge21_Node000013_Node000004" title=" " alt="" coords="422,83,516,110,514,116,420,88"/>
-<area shape="poly" id="edge23_Node000014_Node000003" title=" " alt="" coords="430,465,446,453,459,439,466,425,472,396,477,366,483,349,494,332,514,311,536,294,539,299,517,315,498,335,488,352,482,367,477,397,471,426,463,442,450,457,433,469"/>
-<area shape="poly" id="edge24_Node000014_Node000004" title=" " alt="" coords="432,465,446,453,464,429,474,405,479,382,479,359,480,309,484,281,494,250,522,196,552,152,556,155,526,199,498,252,489,282,485,310,485,359,484,383,480,407,469,431,450,457,436,469"/>
-<area shape="poly" id="edge26_Node000014_Node000005" title=" " alt="" coords="426,464,446,453,462,438,470,422,479,406,494,389,517,375,520,379,498,393,483,409,475,425,466,441,450,457,429,469"/>
-<area shape="poly" id="edge29_Node000014_Node000008" title=" " alt="" coords="413,464,495,438,517,431,519,436,497,443,414,469"/>
-<area shape="poly" id="edge27_Node000014_Node000011" title=" " alt="" coords="416,504,449,516,497,538,517,545,515,550,495,543,447,521,414,509"/>
-<area shape="rect" id="Node000015" href="$usb__msd_8c.html#a9f5b2ca0047c96b2b13cb1d89ba3fc73" title="Starts receiving data." alt="" coords="502,502,645,528"/>
-<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="439,495,489,502,488,507,439,501"/>
-<area shape="rect" id="Node000016" href="$usb__msd_8c.html#a4676adea8c569b096bc971c208256e61" title="Byte&#45;swap a 16 bits unsigned integer." alt="" coords="521,453,625,478"/>
-<area shape="poly" id="edge28_Node000014_Node000016" title=" " alt="" coords="439,476,507,469,508,474,439,481"/>
-<area shape="poly" id="edge32_Node000018_Node000003" title=" " alt="" coords="425,147,449,159,480,181,509,205,554,251,551,255,506,209,477,185,447,164,423,152"/>
-<area shape="poly" id="edge33_Node000018_Node000004" title=" " alt="" coords="436,127,482,127,482,132,436,132"/>
+<area shape="rect" id="Node000001" title="Reads a newly received command block." alt="" coords="5,335,205,363"/>
+<area shape="rect" id="Node000002" href="$usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="255,185,445,212"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,333,172,279,210,248,251,221,267,216,263,220,254,226,213,252,175,283,121,336"/>
+<area shape="rect" id="Node000004" href="$usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information." alt="" coords="495,125,648,152"/>
+<area shape="poly" id="edge34_Node000001_Node000004" title=" " alt="" coords="105,334,115,275,139,191,157,145,182,102,213,64,251,32,302,8,324,4,347,3,393,13,448,32,479,47,508,68,552,112,547,113,504,72,476,52,446,37,392,18,346,9,325,9,303,13,254,37,217,67,186,105,162,148,144,192,120,276,110,335"/>
+<area shape="rect" id="Node000005" href="$usb__msd_8c.html#a0074e59868c631d2f665ee9d32e316cd" title="Starts sending data." alt="" coords="498,365,646,392"/>
+<area shape="poly" id="edge35_Node000001_Node000005" title=" " alt="" coords="204,337,321,333,385,335,447,341,518,359,513,360,447,346,385,340,321,338,206,342"/>
+<area shape="rect" id="Node000006" href="$usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command." alt="" coords="259,236,441,281"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="143,333,275,284,272,289,146,337"/>
+<area shape="rect" id="Node000007" href="$usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command." alt="" coords="263,425,437,470"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="137,361,254,411,272,419,267,420,252,416,138,366"/>
+<area shape="rect" id="Node000009" href="$usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command." alt="" coords="263,356,437,401"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="204,359,249,365,245,367,206,364"/>
+<area shape="rect" id="Node000010" href="$usb__msd_8c.html#adcf34e8664fce2f0676aa631a73e53f3" title="Processes a REQUEST_SENSE SCSI command." alt="" coords="253,564,447,609"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="113,360,134,399,165,449,205,503,254,550,262,556,256,556,251,554,201,506,160,452,130,402,113,366"/>
+<area shape="rect" id="Node000011" href="$usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called." alt="" coords="506,582,638,610"/>
+<area shape="poly" id="edge36_Node000001_Node000011" title=" " alt="" coords="108,361,118,426,140,517,158,566,183,613,215,654,254,688,280,703,303,712,325,716,346,716,392,706,446,688,475,675,502,657,545,622,550,620,505,662,478,679,448,693,393,711,346,721,324,721,301,717,277,708,251,693,211,658,179,616,154,568,135,519,113,427,107,366"/>
+<area shape="rect" id="Node000013" href="$usb__msd_8c.html#adde97b16d8281aeca3a016ce27fd4c24" title="Processes a SEND_DIAGNOSTIC SCSI command." alt="" coords="262,47,438,91"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="109,334,125,289,155,227,196,160,222,129,251,102,260,98,256,102,254,106,226,133,201,163,159,230,130,291,114,335"/>
+<area shape="rect" id="Node000014" href="$usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command." alt="" coords="262,495,438,539"/>
+<area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="119,361,175,418,213,451,254,480,264,487,259,488,251,485,210,455,171,422,119,366"/>
+<area shape="rect" id="Node000017" href="$usb__msd_8c.html#a9af0f1fa6a97cdd8d2c117fc7671aea0" title="Processes a START_STOP_UNIT SCSI command." alt="" coords="262,633,438,678"/>
+<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="110,361,128,411,156,480,198,554,224,589,254,619,260,625,255,624,251,623,220,592,193,557,151,482,123,413,110,366"/>
+<area shape="rect" id="Node000018" href="$usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command." alt="" coords="265,116,435,161"/>
+<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="112,334,164,257,204,211,251,171,262,166,258,170,254,175,208,215,168,261,117,336"/>
+<area shape="rect" id="Node000003" href="$usb__msd_8c.html#ad07c9360f29e619d5e4d4e9e4b28cb3d" title=" " alt="" coords="502,278,641,306"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,210,448,221,495,243,538,269,533,270,493,248,446,226,415,215"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="405,182,446,170,508,155,503,158,448,176,408,186"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="429,210,449,222,468,244,476,267,483,290,497,315,539,355,533,355,493,319,478,292,471,269,463,247,445,226,430,215"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="441,270,489,278,484,280,442,275"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="408,279,448,297,540,355,535,356,446,302,408,284"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="426,423,445,411,461,397,470,383,479,368,493,351,537,317,541,313,497,355,483,371,475,386,465,400,449,415,428,427"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="422,422,513,396,508,399,425,427"/>
+<area shape="rect" id="Node000008" href="$usb__msd_8c.html#a2c58af6d9b07129480e5c5c8f47a588a" title="Byte&#45;swap a 32 bits unsigned integer." alt="" coords="520,426,623,454"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="437,442,507,441,502,443,438,447"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="408,353,522,310,518,313,411,358"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="436,376,484,377,479,379,438,381"/>
+<area shape="poly" id="edge15_Node000009_Node000008" title=" " alt="" coords="433,399,508,421,503,422,433,404"/>
+<area shape="poly" id="edge17_Node000010_Node000005" title=" " alt="" coords="431,561,445,550,458,533,465,517,469,484,473,449,480,431,493,413,510,402,514,399,497,416,485,433,478,450,475,484,470,518,463,536,449,554,433,566"/>
+<area shape="poly" id="edge18_Node000010_Node000011" title=" " alt="" coords="447,588,493,592,487,593,448,593"/>
+<area shape="rect" id="Node000012" href="$usb__msd_8c.html#a24a678ea6bcd105c46f97ccc813d146b" title=" " alt="" coords="696,582,839,610"/>
+<area shape="poly" id="edge19_Node000011_Node000012" title=" " alt="" coords="638,593,684,595,678,596,639,598"/>
+<area shape="poly" id="edge21_Node000013_Node000004" title=" " alt="" coords="423,89,513,118,508,120,424,95"/>
+<area shape="poly" id="edge23_Node000014_Node000003" title=" " alt="" coords="430,492,445,480,458,465,465,450,471,420,476,388,482,370,493,351,512,330,532,316,537,313,515,334,497,355,487,372,481,389,477,421,470,452,462,468,449,484,433,496"/>
+<area shape="poly" id="edge24_Node000014_Node000004" title=" " alt="" coords="432,492,445,481,464,454,474,430,479,405,479,381,479,328,483,298,493,265,520,210,550,167,553,163,525,212,497,267,488,299,484,329,484,381,484,406,479,431,469,457,449,484,435,496"/>
+<area shape="poly" id="edge26_Node000014_Node000005" title=" " alt="" coords="427,492,445,480,461,464,469,448,477,430,493,412,515,401,519,398,497,416,482,433,474,450,465,467,449,484,430,496"/>
+<area shape="poly" id="edge29_Node000014_Node000008" title=" " alt="" coords="415,492,518,458,513,460,417,497"/>
+<area shape="poly" id="edge27_Node000014_Node000011" title=" " alt="" coords="415,537,496,567,518,576,512,576,494,572,415,543"/>
+<area shape="rect" id="Node000015" href="$usb__msd_8c.html#a9f5b2ca0047c96b2b13cb1d89ba3fc73" title="Starts receiving data." alt="" coords="501,530,642,558"/>
+<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="438,525,488,533,483,534,438,530"/>
+<area shape="rect" id="Node000016" href="$usb__msd_8c.html#a4676adea8c569b096bc971c208256e61" title="Byte&#45;swap a 16 bits unsigned integer." alt="" coords="520,478,623,506"/>
+<area shape="poly" id="edge28_Node000014_Node000016" title=" " alt="" coords="437,504,507,498,502,500,438,510"/>
+<area shape="poly" id="edge32_Node000018_Node000003" title=" " alt="" coords="424,159,448,171,479,192,507,217,552,266,547,266,503,221,475,197,446,175,425,164"/>
+<area shape="poly" id="edge33_Node000018_Node000004" title=" " alt="" coords="434,136,482,137,477,140,436,141"/>
 </map>

@@ -1,37 +1,37 @@
 <map id="mt9v117_init" name="mt9v117_init">
-<area shape="rect" id="Node000001" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera)" alt="" coords="5,120,113,145"/>
-<area shape="rect" id="Node000002" href="$mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title=" " alt="" coords="179,44,306,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,117,160,86,195,72,197,77,162,91,90,122"/>
-<area shape="rect" id="Node000003" href="$mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register." alt="" coords="503,95,585,120"/>
-<area shape="poly" id="edge21_Node000001_Node000003" title=" " alt="" coords="66,118,102,72,129,47,160,29,203,13,241,5,275,3,308,6,375,25,456,55,514,85,511,89,454,60,373,30,307,11,275,8,241,10,204,19,162,34,132,52,106,76,70,121"/>
-<area shape="rect" id="Node000010" href="$mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title=" " alt="" coords="372,95,455,120"/>
-<area shape="poly" id="edge22_Node000001_Node000010" title=" " alt="" coords="113,126,358,108,358,114,114,131"/>
-<area shape="rect" id="Node000011" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title=" " alt="" coords="161,145,324,171"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="114,137,148,142,148,147,113,143"/>
-<area shape="rect" id="Node000012" href="$mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register." alt="" coords="374,247,453,272"/>
-<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="85,143,162,181,252,210,362,242,360,247,251,215,160,186,82,148"/>
-<area shape="rect" id="Node000013" href="$mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title=" " alt="" coords="203,247,282,272"/>
-<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="74,144,111,183,163,225,192,240,189,245,160,229,107,187,70,148"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,59,378,67,455,79,491,88,490,93,454,84,377,72,306,64"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="287,67,359,89,358,94,286,72"/>
-<area shape="rect" id="Node000004" href="$mt9v117_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="633,196,735,221"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="564,118,656,186,653,190,561,122"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="783,171,961,196"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="735,199,769,194,770,200,735,204"/>
-<area shape="rect" id="Node000009" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="789,220,955,245"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="735,212,776,218,775,223,735,218"/>
-<area shape="rect" id="Node000006" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="1009,196,1164,221"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="962,191,996,195,995,200,961,196"/>
-<area shape="rect" id="Node000007" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1259,171,1352,196"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1164,197,1245,187,1246,193,1164,202"/>
-<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1212,220,1399,245"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1164,214,1199,218,1198,223,1164,220"/>
-<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="954,221,995,216,996,221,955,226"/>
-<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="455,105,489,105,489,110,455,110"/>
-<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="324,148,454,129,489,120,490,126,455,134,325,153"/>
-<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="325,165,620,199,619,204,324,170"/>
-<area shape="poly" id="edge17_Node000011_Node000010" title=" " alt="" coords="286,143,358,121,359,126,287,148"/>
-<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="283,168,325,188,387,236,384,240,323,192,281,173"/>
-<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="452,249,585,225,619,218,620,223,586,230,453,255"/>
-<area shape="poly" id="edge20_Node000013_Node000012" title=" " alt="" coords="282,257,360,257,360,262,282,262"/>
+<area shape="rect" id="Node000001" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera)." alt="" coords="5,119,113,147"/>
+<area shape="rect" id="Node000002" href="$mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title=" " alt="" coords="179,43,304,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,116,160,86,192,75,188,79,162,91,94,121"/>
+<area shape="rect" id="Node000003" href="$mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register." alt="" coords="501,94,584,121"/>
+<area shape="poly" id="edge21_Node000001_Node000003" title=" " alt="" coords="67,117,103,71,129,47,160,29,202,14,240,5,274,3,307,6,374,24,454,54,511,85,505,85,452,59,372,29,306,11,274,8,240,11,204,19,162,34,132,52,106,75,71,120"/>
+<area shape="rect" id="Node000010" href="$mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title=" " alt="" coords="371,94,453,121"/>
+<area shape="poly" id="edge22_Node000001_Node000010" title=" " alt="" coords="113,126,356,109,355,114,114,132"/>
+<area shape="rect" id="Node000011" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title=" " alt="" coords="161,144,323,172"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="112,138,147,144,143,146,114,143"/>
+<area shape="rect" id="Node000012" href="$mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register." alt="" coords="373,246,451,273"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="86,145,162,181,360,242,356,246,160,186,85,150"/>
+<area shape="rect" id="Node000013" href="$mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title=" " alt="" coords="203,246,281,273"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="73,145,111,184,162,225,191,242,186,242,159,230,108,188,72,150"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,59,377,67,454,80,489,90,484,91,453,85,376,72,305,64"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="291,69,359,90,354,92,291,74"/>
+<area shape="rect" id="Node000004" href="$mt9v117_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="632,195,732,223"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="564,119,652,186,646,185,562,124"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="780,168,957,196"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="732,199,762,197,767,197,733,204"/>
+<area shape="rect" id="Node000009" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="786,220,951,248"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="733,213,774,221,768,221,732,218"/>
+<area shape="rect" id="Node000006" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="1005,195,1160,223"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="958,191,993,197,987,197,958,196"/>
+<area shape="rect" id="Node000007" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1254,168,1346,196"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1160,197,1236,190,1242,189,1161,202"/>
+<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1208,220,1393,248"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1160,215,1195,222,1189,222,1160,221"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="951,222,987,220,993,220,951,227"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="453,105,488,107,483,108,454,110"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="323,149,453,130,489,124,484,126,454,136,324,154"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="323,165,619,200,614,203,323,170"/>
+<area shape="poly" id="edge17_Node000011_Node000010" title=" " alt="" coords="290,141,359,123,354,125,292,146"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="286,170,324,188,384,236,378,235,322,192,285,175"/>
+<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="451,250,583,225,614,222,619,221,584,230,452,255"/>
+<area shape="poly" id="edge20_Node000013_Node000012" title=" " alt="" coords="282,257,360,259,355,260,282,262"/>
 </map>

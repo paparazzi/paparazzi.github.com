@@ -1,5 +1,12 @@
 var NAVTREEINDEX138 =
 {
+"module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,338,1,0],
+"module__nav_catapult.html":[1,339],
+"module__nav_catapult.html#configuration__nav_catapult":[1,339,1],
+"module__nav_catapult.html#functions__nav_catapult":[1,339,2],
+"module__nav_catapult.html#module_load_example__nav_catapult":[1,339,0],
+"module__nav_catapult.html#module_xml__nav_catapult":[1,339,2,0],
+"module__nav_cube.html":[1,340],
 "module__nav_cube.html#module_load_example__nav_cube":[1,340,0],
 "module__nav_cube.html#module_xml__nav_cube":[1,340,0,0],
 "module__nav_drop.html":[1,341],
@@ -242,12 +249,5 @@ var NAVTREEINDEX138 =
 "module__power_switch.html#module_load_example__power_switch":[1,46,0],
 "module__power_switch.html#module_xml__power_switch":[1,46,1,0],
 "module__power_uavcan.html":[1,443],
-"module__power_uavcan.html#configuration__power_uavcan":[1,443,1],
-"module__power_uavcan.html#functions__power_uavcan":[1,443,2],
-"module__power_uavcan.html#module_load_example__power_uavcan":[1,443,0],
-"module__power_uavcan.html#module_xml__power_uavcan":[1,443,2,0],
-"module__pprzlog.html":[1,284],
-"module__pprzlog.html#functions__pprzlog":[1,284,1],
-"module__pprzlog.html#module_load_example__pprzlog":[1,284,0],
-"module__pprzlog.html#module_xml__pprzlog":[1,284,1,0]
+"module__power_uavcan.html#configuration__power_uavcan":[1,443,1]
 };

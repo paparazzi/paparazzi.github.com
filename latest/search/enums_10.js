@@ -5,7 +5,7 @@ var searchData=
   ['resourceowner_5fe_2',['resourceOwner_e',['../cc2500__compat_8h.html#a47b810272e63cca7d5d1c7af7034cd74',1,'cc2500_compat.h']]],
   ['rm3100status_3',['Rm3100Status',['../rm3100_8h.html#a2eeb551c5dd2961e7c733e161ee07cd5',1,'rm3100.h']]],
   ['rosettestatus_4',['RosetteStatus',['../nav__rosette_8c.html#a45752a469bceb93059d3457e5011f491',1,'nav_rosette.c']]],
-  ['rotationdir_5',['rotationdir',['../nav__lace_8c.html#ac3397850d31ee59c768442cee8d3ad0d',1,'RotationDir:&#160;nav_lace.c'],['../nav__rosette_8c.html#ac3397850d31ee59c768442cee8d3ad0d',1,'RotationDir:&#160;nav_rosette.c'],['../nav__trinity_8c.html#ac3397850d31ee59c768442cee8d3ad0d',1,'RotationDir:&#160;nav_trinity.c']]],
+  ['rotationdir_5',['RotationDir',['../nav__lace_8c.html#ac3397850d31ee59c768442cee8d3ad0d',1,'RotationDir:&#160;nav_lace.c'],['../nav__rosette_8c.html#ac3397850d31ee59c768442cee8d3ad0d',1,'RotationDir:&#160;nav_rosette.c'],['../nav__trinity_8c.html#ac3397850d31ee59c768442cee8d3ad0d',1,'RotationDir:&#160;nav_trinity.c']]],
   ['rotwing_5fstates_5ft_6',['rotwing_states_t',['../rotwing__state_8h.html#ae1f91e813cdc0fd4e4c491e3d166b687',1,'rotwing_state.h']]],
   ['rssisource_5fe_7',['rssiSource_e',['../cc2500__rx_8h.html#a47f6ed557b0de23d57c79416b9451b69',1,'cc2500_rx.h']]],
   ['rtc_5fboot_5fmagic_8',['rtc_boot_magic',['../chibios_2mcu__arch_8c.html#a0e8e546b23061d763841bfe2f6d3a8b4',1,'mcu_arch.c']]],

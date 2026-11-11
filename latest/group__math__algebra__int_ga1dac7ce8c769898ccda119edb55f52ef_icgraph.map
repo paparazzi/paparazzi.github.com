@@ -1,40 +1,34 @@
 <map id="int32_quat_norm" name="int32_quat_norm">
-<area shape="rect" id="Node000001" title="Norm of a quaternion." alt="" coords="1228,227,1360,252"/>
-<area shape="rect" id="Node000002" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="1017,227,1180,252"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1214,242,1180,242,1180,237,1214,237"/>
-<area shape="rect" id="Node000003" href="$ahrs__int__cmpl__quat_8c.html#af157b638d627a07ce3b8c86436c0ce4c" title=" " alt="" coords="343,25,493,51"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1082,216,1064,185,1038,150,1006,116,968,90,908,64,845,45,779,33,714,26,592,23,493,30,493,25,592,18,715,20,780,27,846,40,910,59,971,85,1010,112,1042,147,1068,183,1087,213"/>
-<area shape="rect" id="Node000008" href="$ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading." alt="" coords="546,133,733,159"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1080,217,1035,163,1004,136,968,116,929,105,888,99,847,99,806,102,731,118,674,136,672,131,730,112,805,97,847,93,889,94,930,99,970,112,1007,132,1038,159,1084,214"/>
-<area shape="rect" id="Node000012" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="796,305,955,345"/>
-<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="1053,259,929,307,927,302,1051,254"/>
-<area shape="rect" id="Node000013" href="$stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="545,283,733,308"/>
-<area shape="poly" id="edge20_Node000002_Node000013" title=" " alt="" coords="1004,253,734,287,733,281,1004,248"/>
-<area shape="rect" id="Node000014" href="$group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="795,369,956,409"/>
-<area shape="poly" id="edge15_Node000002_Node000014" title=" " alt="" coords="1080,264,1033,311,1003,337,971,359,947,371,944,366,968,354,1000,333,1029,308,1076,260"/>
-<area shape="rect" id="Node000015" href="$group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="788,126,963,166"/>
-<area shape="poly" id="edge16_Node000002_Node000015" title=" " alt="" coords="1060,223,968,180,937,169,939,164,970,176,1062,218"/>
-<area shape="rect" id="Node000016" href="$group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="795,190,956,230"/>
-<area shape="poly" id="edge18_Node000002_Node000016" title=" " alt="" coords="1003,229,956,223,957,218,1004,224"/>
-<area shape="rect" id="Node000017" href="$stabilization__attitude__heli__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="781,433,969,459"/>
-<area shape="poly" id="edge21_Node000002_Node000017" title=" " alt="" coords="1089,266,1071,301,1045,344,1012,386,971,423,946,436,944,431,968,418,1008,383,1041,341,1066,298,1084,263"/>
-<area shape="rect" id="Node000004" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="217,5,291,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="329,30,291,25,291,20,330,25"/>
-<area shape="rect" id="Node000006" href="$ins__flow_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="217,55,291,80"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="334,56,292,63,291,58,333,50"/>
-<area shape="rect" id="Node000005" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a2baba6aa57750d3a2c5a232697a7e1fe" title=" " alt="" coords="5,31,169,56"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="204,28,170,33,169,28,203,23"/>
-<area shape="rect" id="Node000007" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="36,104,139,129"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="205,85,132,106,130,101,203,79"/>
-<area shape="rect" id="Node000009" href="$ahrs__int__cmpl__quat_8c.html#a75015adf5b7c98bd9eb6b588850d8449" title=" " alt="" coords="339,133,497,159"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="532,149,497,149,497,143,532,143"/>
-<area shape="rect" id="Node000010" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="221,104,287,129"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="333,133,287,125,288,120,334,128"/>
-<area shape="rect" id="Node000011" href="$ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="221,153,287,179"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="325,160,288,165,287,159,325,155"/>
-<area shape="poly" id="edge10_Node000010_Node000005" title=" " alt="" coords="211,101,116,59,119,54,213,96"/>
-<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="207,155,130,132,132,127,208,150"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="782,316,733,310,734,304,783,310"/>
-<area shape="poly" id="edge17_Node000015_Node000008" title=" " alt="" coords="774,149,733,149,733,143,774,143"/>
-<area shape="poly" id="edge19_Node000016_Node000008" title=" " alt="" coords="787,189,686,161,688,156,789,184"/>
+<area shape="rect" id="Node000001" title="Norm of a quaternion." alt="" coords="1006,232,1137,260"/>
+<area shape="rect" id="Node000002" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="796,232,958,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="988,246,959,248,958,243,993,245"/>
+<area shape="rect" id="Node000003" href="$ahrs__int__cmpl__quat_8c.html#af157b638d627a07ce3b8c86436c0ce4c" title=" " alt="" coords="580,31,728,58"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="860,217,842,185,817,145,784,105,746,72,727,62,727,56,749,68,788,102,821,142,847,182,865,219"/>
+<area shape="rect" id="Node000006" href="$ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading." alt="" coords="326,331,512,358"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="786,230,736,227,678,225,619,230,561,243,522,261,487,285,434,332,432,328,483,281,520,256,559,238,618,225,678,220,736,221,791,229"/>
+<area shape="rect" id="Node000010" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="575,82,733,127"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="846,221,801,186,746,148,712,130,712,125,749,144,804,182,851,222"/>
+<area shape="rect" id="Node000011" href="$stabilization__attitude__quat__int_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="325,143,512,170"/>
+<area shape="poly" id="edge16_Node000002_Node000011" title=" " alt="" coords="828,226,747,199,626,176,513,164,513,159,626,171,748,194,834,225"/>
+<area shape="rect" id="Node000012" href="$group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="574,253,734,298"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="778,259,735,267,734,262,783,258"/>
+<area shape="rect" id="Node000013" href="$group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="567,322,741,367"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="838,266,749,312,720,324,718,319,747,307,833,268"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="574,392,734,436"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="859,271,812,328,782,356,749,381,727,393,726,388,746,377,779,352,808,324,854,273"/>
+<area shape="rect" id="Node000015" href="$stabilization__attitude__heli__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="560,460,748,488"/>
+<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="867,273,851,315,825,362,792,410,749,451,729,462,728,457,746,446,787,407,821,360,846,313,863,276"/>
+<area shape="rect" id="Node000004" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="382,5,455,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="562,36,456,26,454,20,567,34"/>
+<area shape="rect" id="Node000005" href="$ins__flow_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="382,57,455,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="562,56,456,70,454,65,567,53"/>
+<area shape="rect" id="Node000007" href="$ahrs__int__cmpl__quat_8c.html#a75015adf5b7c98bd9eb6b588850d8449" title=" " alt="" coords="120,331,277,358"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="307,345,278,347,277,342,313,344"/>
+<area shape="rect" id="Node000008" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="5,304,72,332"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="102,330,73,326,71,321,107,327"/>
+<area shape="rect" id="Node000009" href="$ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="5,356,72,384"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="103,361,73,367,71,362,107,358"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="558,126,486,145,484,140,563,124"/>
+<area shape="poly" id="edge13_Node000013_Node000006" title=" " alt="" coords="549,345,513,347,512,342,554,344"/>
+<area shape="poly" id="edge15_Node000014_Node000006" title=" " alt="" coords="559,387,468,362,469,356,564,387"/>
 </map>

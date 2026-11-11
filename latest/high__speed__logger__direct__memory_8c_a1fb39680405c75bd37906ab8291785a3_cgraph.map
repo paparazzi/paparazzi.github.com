@@ -1,20 +1,20 @@
 <map id="memory_read_values" name="memory_read_values">
-<area shape="rect" id="Node000001" title="Function sending a request to read some values in memory." alt="" coords="5,104,168,129"/>
-<area shape="rect" id="Node000002" href="$high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="216,55,401,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,101,237,80,238,86,145,107"/>
-<area shape="rect" id="Node000008" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="262,104,355,129"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="168,114,248,114,248,119,168,119"/>
-<area shape="rect" id="Node000003" href="$high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6" title="Function testing if a sequence is in a buffer of values." alt="" coords="449,5,612,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,52,459,31,460,36,367,57"/>
-<area shape="rect" id="Node000004" href="$high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART." alt="" coords="455,55,606,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,65,442,65,442,70,402,70"/>
-<area shape="rect" id="Node000005" href="$high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="660,129,843,155"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="581,78,613,89,661,114,685,123,684,128,659,119,611,94,579,83"/>
-<area shape="rect" id="Node000006" href="$uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de" title=" " alt="" coords="666,31,837,56"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="606,56,652,51,653,57,607,62"/>
-<area shape="rect" id="Node000007" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="695,80,807,105"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="607,73,682,82,682,87,606,79"/>
-<area shape="poly" id="edge5_Node000005_Node000001" title=" " alt="" coords="660,149,456,154,336,151,216,143,157,135,158,129,216,138,336,146,456,148,660,144"/>
-<area shape="rect" id="Node000009" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="470,104,591,129"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="355,114,456,114,456,119,355,119"/>
+<area shape="rect" id="Node000001" title="Function sending a request to read some values in memory." alt="" coords="5,109,168,137"/>
+<area shape="rect" id="Node000002" href="$high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory." alt="" coords="216,57,400,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,106,233,88,228,90,149,111"/>
+<area shape="rect" id="Node000008" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="262,109,354,137"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="168,121,249,123,243,124,168,126"/>
+<area shape="rect" id="Node000003" href="$high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6" title="Function testing if a sequence is in a buffer of values." alt="" coords="448,5,609,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,54,454,37,449,38,371,59"/>
+<area shape="rect" id="Node000004" href="$high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART." alt="" coords="454,57,604,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="400,69,440,71,435,71,401,74"/>
+<area shape="rect" id="Node000005" href="$high__speed__logger__direct__memory_8c.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory." alt="" coords="657,135,840,162"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="574,83,610,95,697,129,692,128,608,100,573,88"/>
+<area shape="rect" id="Node000006" href="$uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de" title=" " alt="" coords="663,19,834,46"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="604,55,648,50,654,49,605,61"/>
+<area shape="rect" id="Node000007" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="693,71,804,98"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="604,73,680,80,674,80,604,78"/>
+<area shape="poly" id="edge5_Node000005_Node000001" title=" " alt="" coords="660,154,455,161,335,159,215,151,163,143,163,138,216,146,335,154,455,156,654,154"/>
+<area shape="rect" id="Node000009" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="468,109,589,137"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="354,121,456,123,450,123,354,126"/>
 </map>

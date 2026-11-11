@@ -1,70 +1,70 @@
 <map id="sw/airborne/modules/ins/ins.h" name="sw/airborne/modules/ins/ins.h">
-<area shape="rect" id="Node000001" title="Integrated Navigation System interface." alt="" coords="1818,5,1977,45"/>
-<area shape="rect" id="Node000002" href="$rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="5,93,176,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1804,31,999,52,531,71,336,83,188,96,176,98,176,92,188,91,336,78,531,66,999,47,1804,26"/>
-<area shape="rect" id="Node000003" href="$rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="201,93,367,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1805,29,1557,30,1204,38,795,58,585,75,379,96,368,97,367,92,378,91,584,69,794,53,1204,32,1557,24,1805,23"/>
-<area shape="rect" id="Node000004" href="$ins_8c.html" title="Integrated Navigation System interface." alt="" coords="391,93,550,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1804,29,1583,31,1275,41,921,61,739,76,562,96,551,98,550,92,561,91,739,71,920,55,1275,35,1583,26,1804,24"/>
-<area shape="rect" id="Node000005" href="$ins__alt__float_8h.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="574,93,733,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1804,30,1611,34,1347,45,1048,64,744,96,733,98,732,92,744,91,1047,59,1347,39,1611,29,1804,25"/>
-<area shape="rect" id="Node000007" href="$ins__ekf2_8h.html" title="INS based in the EKF2 of PX4." alt="" coords="757,93,915,133"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1804,32,1639,38,1421,49,1175,68,927,96,916,98,915,92,926,91,1174,63,1420,44,1639,32,1804,26"/>
-<area shape="rect" id="Node000009" href="$ins__ext__pose_8c.html" title="Integrated Navigation System interface." alt="" coords="939,93,1098,133"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1804,34,1499,56,1308,73,1118,96,1099,99,1098,94,1117,91,1308,68,1498,50,1804,29"/>
-<area shape="rect" id="Node000010" href="$ins__float__invariant_8c.html" title=" " alt="" coords="1014,189,1194,229"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1804,33,1632,41,1432,54,1258,72,1197,83,1163,96,1142,116,1127,141,1110,190,1105,188,1122,138,1138,112,1160,91,1196,78,1257,67,1432,49,1632,36,1804,27"/>
-<area shape="rect" id="Node000011" href="$ins__float__invariant_8h.html" title="INS using invariant filter." alt="" coords="1173,93,1355,133"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1804,40,1603,63,1367,96,1356,98,1355,93,1366,91,1602,58,1803,34"/>
-<area shape="rect" id="Node000014" href="$ins__flow_8h.html" title=" " alt="" coords="1379,93,1538,133"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="1805,47,1550,96,1539,98,1538,93,1549,91,1804,41"/>
-<area shape="rect" id="Node000016" href="$ins__gps__passthrough_8c.html" title="Simply converts GPS ECEF position and velocity to NED and passes it through to the state interface." alt="" coords="1562,93,1758,133"/>
-<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="1833,53,1713,96,1711,91,1831,48"/>
-<area shape="rect" id="Node000017" href="$ins__gps__passthrough__utm_8c.html" title="Simply passes GPS UTM position and velocity through to the state interface." alt="" coords="1783,93,2012,133"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1900,59,1900,93,1895,93,1895,59"/>
-<area shape="rect" id="Node000018" href="$ins__int_8h.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="2037,93,2195,133"/>
-<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="1959,48,2069,91,2067,96,1957,53"/>
-<area shape="rect" id="Node000021" href="$ins__mekf__wind__wrapper_8c.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="2219,93,2437,133"/>
-<area shape="poly" id="edge21_Node000001_Node000021" title=" " alt="" coords="1990,42,2234,91,2233,96,1989,48"/>
-<area shape="rect" id="Node000022" href="$ins__module_8h.html" title="Device independent INS code." alt="" coords="2461,93,2619,133"/>
-<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="1990,33,2201,56,2450,91,2461,93,2460,98,2449,96,2200,61,1990,38"/>
-<area shape="rect" id="Node000023" href="$ins__skeleton_8h.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="2643,93,2802,133"/>
-<area shape="poly" id="edge23_Node000001_Node000023" title=" " alt="" coords="1991,29,2278,50,2455,68,2632,91,2644,92,2643,98,2632,96,2454,73,2278,56,1990,34"/>
-<area shape="rect" id="Node000025" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS module." alt="" coords="2826,93,2985,133"/>
-<area shape="poly" id="edge25_Node000001_Node000025" title=" " alt="" coords="1991,27,2353,45,2583,64,2815,91,2826,92,2825,98,2814,96,2583,69,2352,51,1990,32"/>
-<area shape="rect" id="Node000029" href="$ins__xsens_8c.html" title="Xsens as a full INS solution." alt="" coords="3009,93,3167,133"/>
-<area shape="poly" id="edge29_Node000001_Node000029" title=" " alt="" coords="1991,25,2176,30,2426,41,2711,60,2998,91,3009,92,3008,98,2997,96,2710,65,2426,46,2176,35,1990,31"/>
-<area shape="rect" id="Node000030" href="$ins__xsens700_8c.html" title="Xsens700 as a full INS solution." alt="" coords="3191,93,3350,133"/>
-<area shape="poly" id="edge30_Node000001_Node000030" title=" " alt="" coords="1990,24,2203,27,2499,36,2837,56,3011,72,3180,91,3192,92,3191,98,3180,96,3010,77,2837,62,2498,42,2203,32,1990,29"/>
-<area shape="rect" id="Node000031" href="$common__nav_8c.html" title=" " alt="" coords="3374,93,3533,133"/>
-<area shape="poly" id="edge31_Node000001_Node000031" title=" " alt="" coords="1990,23,2230,24,2570,32,2964,53,3165,69,3363,91,3374,92,3373,98,3362,96,3165,75,2963,58,2570,38,2230,30,1990,28"/>
-<area shape="rect" id="Node000033" href="$nps__autopilot__rotorcraft_8c.html" title=" " alt="" coords="3557,93,3723,133"/>
-<area shape="poly" id="edge33_Node000001_Node000033" title=" " alt="" coords="1990,26,2767,47,3216,66,3404,78,3546,91,3557,92,3557,98,3545,96,3403,83,3216,72,2767,53,1990,31"/>
-<area shape="rect" id="Node000034" href="$nps__autopilot__rover_8c.html" title=" " alt="" coords="3747,93,3907,133"/>
-<area shape="poly" id="edge34_Node000001_Node000034" title=" " alt="" coords="1991,25,2352,32,2856,45,3363,64,3575,76,3735,91,3747,92,3746,98,3734,96,3574,82,3363,69,2855,50,2351,37,1990,31"/>
-<area shape="rect" id="Node000006" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="574,189,733,229"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="656,147,656,189,651,189,651,147"/>
-<area shape="rect" id="Node000008" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="757,189,915,229"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="839,147,839,189,833,189,833,147"/>
-<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="1221,142,1138,191,1135,186,1219,138"/>
-<area shape="rect" id="Node000012" href="$ins__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="1218,181,1387,236"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1280,145,1294,180,1289,182,1275,147"/>
-<area shape="rect" id="Node000013" href="$ins__float__invariant__wrapper_8c.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="1218,284,1387,339"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1305,250,1305,284,1300,284,1300,250"/>
-<area shape="rect" id="Node000015" href="$ins__flow_8c.html" title=" " alt="" coords="1411,189,1570,229"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1472,145,1487,188,1482,189,1467,147"/>
-<area shape="rect" id="Node000019" href="$ins__int_8c.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="1933,189,2091,229"/>
-<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="2086,145,2035,191,2031,187,2083,141"/>
-<area shape="rect" id="Node000020" href="$lidar__correction_8c.html" title=" " alt="" coords="2115,189,2322,229"/>
-<area shape="poly" id="edge20_Node000018_Node000020" title=" " alt="" coords="2149,141,2200,187,2196,191,2145,145"/>
-<area shape="rect" id="Node000024" href="$ins__skeleton_8c.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="2643,189,2802,229"/>
-<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="2725,147,2725,189,2720,189,2720,147"/>
-<area shape="rect" id="Node000026" href="$ins__vectornav_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2826,189,2985,229"/>
-<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="2908,147,2908,189,2903,189,2903,147"/>
-<area shape="rect" id="Node000027" href="$ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3009,189,3220,229"/>
-<area shape="poly" id="edge27_Node000025_Node000027" title=" " alt="" coords="2961,136,3073,186,3071,191,2959,141"/>
-<area shape="rect" id="Node000028" href="$ins__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3009,291,3220,331"/>
-<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="3117,243,3117,291,3112,291,3112,243"/>
-<area shape="rect" id="Node000032" href="$nav_8c.html" title="Fixedwing functions to compute navigation." alt="" coords="3370,189,3537,229"/>
-<area shape="poly" id="edge32_Node000031_Node000032" title=" " alt="" coords="3456,147,3456,189,3451,189,3451,147"/>
+<area shape="rect" id="Node000001" title="Integrated Navigation System interface." alt="" coords="1806,5,1963,50"/>
+<area shape="rect" id="Node000002" href="$rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="5,98,175,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1788,32,991,54,527,74,334,87,188,101,177,102,174,97,187,95,333,81,527,69,991,49,1793,29"/>
+<area shape="rect" id="Node000003" href="$rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="199,98,365,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1788,32,1080,56,674,76,505,88,377,101,366,102,365,97,376,95,504,82,673,70,1079,51,1793,30"/>
+<area shape="rect" id="Node000004" href="$ins_8c.html" title="Integrated Navigation System interface." alt="" coords="389,98,546,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1788,29,1571,33,1265,41,914,62,734,79,558,101,547,102,546,97,558,95,733,74,913,57,1265,36,1571,27,1793,28"/>
+<area shape="rect" id="Node000005" href="$ins__alt__float_8h.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="570,98,727,143"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1788,30,1598,36,1337,46,1040,67,888,82,740,101,728,102,727,97,739,95,887,76,1039,61,1336,41,1598,30,1793,29"/>
+<area shape="rect" id="Node000007" href="$ins__ekf2_8h.html" title="INS based in the EKF2 of PX4." alt="" coords="751,98,909,143"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1788,31,1626,39,1409,51,1166,71,921,101,910,103,908,97,920,95,1165,65,1409,46,1626,34,1793,31"/>
+<area shape="rect" id="Node000009" href="$ins__ext__pose_8c.html" title="Integrated Navigation System interface." alt="" coords="933,98,1090,143"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1788,34,1487,58,1298,76,1109,101,1091,104,1090,98,1108,95,1297,71,1486,52,1793,33"/>
+<area shape="rect" id="Node000010" href="$ins__float__invariant_8c.html" title=" " alt="" coords="1007,199,1186,244"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1788,33,1620,44,1421,57,1248,76,1188,88,1154,100,1133,121,1118,148,1102,201,1098,197,1113,146,1129,118,1151,96,1186,83,1247,71,1421,52,1619,38,1793,32"/>
+<area shape="rect" id="Node000011" href="$ins__float__invariant_8h.html" title="INS using invariant filter." alt="" coords="1165,98,1346,143"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1788,40,1591,66,1358,101,1346,103,1345,97,1358,95,1591,61,1793,39"/>
+<area shape="rect" id="Node000014" href="$ins__flow_8h.html" title=" " alt="" coords="1370,98,1527,143"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="1793,46,1540,101,1528,103,1527,98,1539,95,1788,47"/>
+<area shape="rect" id="Node000016" href="$ins__gps__passthrough_8c.html" title="Simply converts GPS ECEF position and velocity to NED and passes it through to the state interface." alt="" coords="1551,98,1746,143"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="1817,55,1706,100,1704,95,1812,57"/>
+<area shape="rect" id="Node000017" href="$ins__gps__passthrough__utm_8c.html" title="Simply passes GPS UTM position and velocity through to the state interface." alt="" coords="1770,98,1999,143"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1886,64,1887,100,1883,96,1883,68"/>
+<area shape="rect" id="Node000018" href="$ins__int_8h.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="2023,98,2181,143"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="1951,54,2053,98,2047,97,1951,59"/>
+<area shape="rect" id="Node000021" href="$ins__mekf__wind__wrapper_8c.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="2204,98,2421,143"/>
+<area shape="poly" id="edge21_Node000001_Node000021" title=" " alt="" coords="1978,46,2213,97,2207,97,1978,51"/>
+<area shape="rect" id="Node000022" href="$ins__module_8h.html" title="Device independent INS code." alt="" coords="2445,98,2602,143"/>
+<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="1979,35,2188,59,2433,95,2447,100,2442,100,2432,101,2187,64,1979,41"/>
+<area shape="rect" id="Node000023" href="$ins__skeleton_8h.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="2626,98,2783,143"/>
+<area shape="poly" id="edge23_Node000001_Node000023" title=" " alt="" coords="1979,31,2264,53,2439,71,2614,95,2628,100,2623,100,2614,101,2439,76,2264,58,1979,37"/>
+<area shape="rect" id="Node000025" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS module." alt="" coords="2807,98,2965,143"/>
+<area shape="poly" id="edge25_Node000001_Node000025" title=" " alt="" coords="1979,29,2135,35,2338,47,2566,67,2796,95,2810,100,2804,100,2795,101,2566,72,2338,52,2134,40,1979,34"/>
+<area shape="rect" id="Node000029" href="$ins__xsens_8c.html" title="Xsens as a full INS solution." alt="" coords="2989,98,3146,143"/>
+<area shape="poly" id="edge29_Node000001_Node000029" title=" " alt="" coords="1979,27,2163,31,2412,42,2693,62,2837,77,2977,95,2991,100,2986,100,2976,101,2836,82,2693,68,2411,47,2163,37,1979,32"/>
+<area shape="rect" id="Node000030" href="$ins__xsens700_8c.html" title="Xsens700 as a full INS solution." alt="" coords="3170,98,3327,143"/>
+<area shape="poly" id="edge30_Node000001_Node000030" title=" " alt="" coords="1979,26,2191,28,2484,37,2819,58,2991,75,3158,95,3172,100,3167,100,3158,101,2990,80,2819,64,2484,43,2191,33,1979,31"/>
+<area shape="rect" id="Node000031" href="$common__nav_8c.html" title=" " alt="" coords="3351,98,3509,143"/>
+<area shape="poly" id="edge31_Node000001_Node000031" title=" " alt="" coords="1979,29,2665,51,3055,70,3217,82,3340,95,3354,100,3348,100,3339,101,3216,88,3054,76,2665,56,1979,34"/>
+<area shape="rect" id="Node000033" href="$nps__autopilot__rotorcraft_8c.html" title=" " alt="" coords="3533,98,3698,143"/>
+<area shape="poly" id="edge33_Node000001_Node000033" title=" " alt="" coords="1979,28,2750,49,3195,69,3380,81,3521,95,3536,100,3530,100,3520,101,3380,87,3195,74,2750,55,1979,33"/>
+<area shape="rect" id="Node000034" href="$nps__autopilot__rover_8c.html" title=" " alt="" coords="3721,98,3880,143"/>
+<area shape="poly" id="edge34_Node000001_Node000034" title=" " alt="" coords="1979,28,2339,34,2839,46,3342,66,3552,80,3710,95,3723,100,3718,100,3710,101,3551,85,3342,72,2839,51,2339,39,1979,33"/>
+<area shape="rect" id="Node000006" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="570,199,727,244"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="650,156,651,200,646,197,647,160"/>
+<area shape="rect" id="Node000008" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="751,199,909,244"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="832,156,832,200,828,197,828,160"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="1210,151,1132,201,1130,196,1205,152"/>
+<area shape="rect" id="Node000012" href="$ins__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="1210,191,1378,252"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1271,155,1285,192,1280,189,1268,159"/>
+<area shape="rect" id="Node000013" href="$ins__float__invariant__wrapper_8c.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="1210,300,1378,362"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1296,266,1296,302,1292,298,1292,270"/>
+<area shape="rect" id="Node000015" href="$ins__flow_8c.html" title=" " alt="" coords="1402,199,1559,244"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1462,155,1476,200,1471,197,1459,160"/>
+<area shape="rect" id="Node000019" href="$ins__int_8c.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="1921,199,2078,244"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="2071,152,2023,201,2020,196,2067,154"/>
+<area shape="rect" id="Node000020" href="$lidar__correction_8c.html" title=" " alt="" coords="2102,199,2308,244"/>
+<area shape="poly" id="edge20_Node000018_Node000020" title=" " alt="" coords="2136,151,2185,200,2180,198,2134,156"/>
+<area shape="rect" id="Node000024" href="$ins__skeleton_8c.html" title="Paparazzi specific wrapper to run simple module based INS." alt="" coords="2626,199,2783,244"/>
+<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="2707,156,2707,201,2703,197,2703,160"/>
+<area shape="rect" id="Node000026" href="$ins__vectornav_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2807,199,2965,244"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="2888,156,2888,201,2884,197,2884,160"/>
+<area shape="rect" id="Node000027" href="$ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2989,199,3199,244"/>
+<area shape="poly" id="edge27_Node000025_Node000027" title=" " alt="" coords="2946,147,3051,199,3046,198,2945,152"/>
+<area shape="rect" id="Node000028" href="$ins__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2989,309,3199,354"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="3096,258,3096,310,3092,306,3092,262"/>
+<area shape="rect" id="Node000032" href="$nav_8c.html" title="Fixedwing functions to compute navigation." alt="" coords="3347,199,3513,244"/>
+<area shape="poly" id="edge32_Node000031_Node000032" title=" " alt="" coords="3432,156,3432,201,3428,197,3428,160"/>
 </map>

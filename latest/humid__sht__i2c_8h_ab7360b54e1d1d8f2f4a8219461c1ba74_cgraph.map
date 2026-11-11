@@ -1,42 +1,42 @@
 <map id="humid_sht_init_i2c" name="humid_sht_init_i2c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,181,149,207"/>
-<area shape="rect" id="Node000002" href="$humid__sht__i2c_8c.html#a35e9e96826e902327bb4f27d82ae2f91" title=" " alt="" coords="211,132,330,157"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,179,206,158,207,163,128,184"/>
-<area shape="rect" id="Node000015" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="210,181,331,207"/>
-<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="150,191,196,191,196,197,150,197"/>
-<area shape="rect" id="Node000016" href="$chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="197,231,344,256"/>
-<area shape="poly" id="edge24_Node000001_Node000016" title=" " alt="" coords="128,204,207,225,206,230,127,209"/>
-<area shape="rect" id="Node000003" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="585,205,751,231"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,155,345,168,369,181,393,191,484,209,572,216,572,221,483,214,391,197,366,185,343,172,310,160"/>
-<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="392,257,531,283"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="323,155,346,168,362,185,371,202,379,219,394,236,414,249,411,254,390,240,374,222,366,205,358,188,342,172,320,160"/>
-<area shape="rect" id="Node000008" href="$humid__sht__i2c_8c.html#a68f6665e04c9cf0bdcb21da4001ec1dd" title=" " alt="" coords="398,156,525,181"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="331,149,385,156,384,162,330,155"/>
-<area shape="rect" id="Node000011" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="603,57,733,83"/>
-<area shape="poly" id="edge22_Node000002_Node000011" title=" " alt="" coords="296,129,340,110,391,93,494,75,589,68,589,74,494,81,393,98,342,115,298,134"/>
-<area shape="rect" id="Node000012" href="$humid__sht__i2c_8c.html#a19d9444b357785b5d15136174dcc1834" title=" " alt="" coords="401,5,522,31"/>
-<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="284,130,330,91,391,48,416,34,418,39,393,52,333,95,288,134"/>
-<area shape="rect" id="Node000014" href="$humid__sht__i2c_8c.html#a2099eacb29026c26076f28546b2845b0" title=" " alt="" coords="402,107,521,132"/>
-<area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="330,134,388,126,388,132,331,139"/>
-<area shape="rect" id="Node000004" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="805,107,960,132"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="724,203,756,192,807,165,851,138,854,142,810,170,758,196,726,208"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1055,81,1148,107"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="960,108,1041,98,1042,104,960,113"/>
-<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1008,131,1195,156"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="960,125,995,129,994,134,960,130"/>
-<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="516,179,601,199,600,205,515,184"/>
-<area shape="rect" id="Node000009" href="$humid__sht__i2c_8c.html#a9b087a915e3535ba2024ccc156a12ef2" title=" " alt="" coords="610,156,726,181"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="525,166,597,166,597,171,525,171"/>
-<area shape="rect" id="Node000010" href="$group__i2c.html#ga80191e190393b7291e672360556d7f13" title="Submit a read only transaction and wait for it to complete." alt="" coords="589,107,747,132"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="515,153,600,133,601,138,516,159"/>
-<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="507,154,529,142,543,130,552,118,562,106,577,93,593,85,595,90,580,98,566,109,557,121,547,134,532,147,509,158"/>
-<area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="748,117,791,117,791,122,748,122"/>
-<area shape="poly" id="edge16_Node000012_Node000011" title=" " alt="" coords="513,28,605,51,603,57,512,33"/>
-<area shape="rect" id="Node000013" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="579,7,757,32"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="522,16,565,16,565,21,522,21"/>
-<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="720,30,758,44,809,70,853,97,850,101,807,74,756,48,718,35"/>
-<area shape="poly" id="edge20_Node000014_Node000003" title=" " alt="" coords="507,130,532,142,547,155,557,168,566,180,580,192,592,198,589,203,577,196,562,184,552,171,543,159,529,147,505,134"/>
-<area shape="poly" id="edge18_Node000014_Node000009" title=" " alt="" coords="516,129,601,150,600,155,515,135"/>
-<area shape="poly" id="edge19_Node000014_Node000010" title=" " alt="" coords="521,117,575,117,575,122,521,122"/>
-<area shape="poly" id="edge21_Node000014_Node000011" title=" " alt="" coords="515,104,600,83,601,89,516,109"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,188,149,216"/>
+<area shape="rect" id="Node000002" href="$humid__sht__i2c_8c.html#a35e9e96826e902327bb4f27d82ae2f91" title=" " alt="" coords="211,136,328,164"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,185,203,167,199,170,132,190"/>
+<area shape="rect" id="Node000015" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="210,188,330,216"/>
+<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="149,199,197,201,192,203,150,204"/>
+<area shape="rect" id="Node000016" href="$chibios_2modules_2core_2threads__arch_8c.html#a7061055a8f65518b19b16225e7468e22" title="Creates a new thread whose stack is dynamically allocated." alt="" coords="197,240,343,268"/>
+<area shape="poly" id="edge24_Node000001_Node000016" title=" " alt="" coords="131,214,204,234,199,236,131,219"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="584,213,748,241"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,162,344,174,368,187,392,198,482,216,571,226,566,226,481,221,390,203,365,192,342,179,312,167"/>
+<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2" title=" " alt="" coords="391,263,529,290"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="322,162,345,174,361,192,370,209,378,226,393,243,409,256,403,254,389,246,373,228,365,211,357,195,341,179,322,167"/>
+<area shape="rect" id="Node000008" href="$humid__sht__i2c_8c.html#a68f6665e04c9cf0bdcb21da4001ec1dd" title=" " alt="" coords="398,161,523,189"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="329,155,385,164,380,165,329,160"/>
+<area shape="rect" id="Node000011" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="601,57,731,85"/>
+<area shape="poly" id="edge22_Node000002_Node000011" title=" " alt="" coords="297,133,340,113,390,95,491,77,588,72,583,73,492,82,392,100,342,118,299,138"/>
+<area shape="rect" id="Node000012" href="$humid__sht__i2c_8c.html#a19d9444b357785b5d15136174dcc1834" title=" " alt="" coords="400,8,520,36"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="285,133,330,95,390,52,413,42,408,44,392,56,334,99,288,138"/>
+<area shape="rect" id="Node000014" href="$humid__sht__i2c_8c.html#a2099eacb29026c26076f28546b2845b0" title=" " alt="" coords="401,109,519,137"/>
+<area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="328,139,389,133,383,134,330,144"/>
+<area shape="rect" id="Node000004" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="803,109,957,137"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="722,210,754,198,803,172,844,147,849,145,805,176,756,203,723,215"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1052,83,1144,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="957,111,1039,104,1034,104,958,116"/>
+<area shape="rect" id="Node000006" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1005,135,1190,162"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="958,130,992,136,987,136,958,135"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="518,187,596,209,591,209,518,192"/>
+<area shape="rect" id="Node000009" href="$humid__sht__i2c_8c.html#a9b087a915e3535ba2024ccc156a12ef2" title=" " alt="" coords="608,161,724,189"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="523,173,595,175,590,176,523,178"/>
+<area shape="rect" id="Node000010" href="$group__i2c.html#ga80191e190393b7291e672360556d7f13" title="Submit a read only transaction and wait for it to complete." alt="" coords="587,109,745,137"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="517,158,591,142,596,141,519,163"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="505,158,528,146,542,134,551,121,560,108,576,96,586,93,591,90,579,100,564,112,555,124,546,137,531,151,507,163"/>
+<area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="744,121,790,123,784,123,745,126"/>
+<area shape="poly" id="edge16_Node000012_Node000011" title=" " alt="" coords="521,34,593,53,588,54,521,39"/>
+<area shape="rect" id="Node000013" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="577,5,755,33"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="520,18,564,20,559,21,521,24"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="723,31,756,43,805,70,850,101,844,100,803,75,754,48,723,36"/>
+<area shape="poly" id="edge20_Node000014_Node000003" title=" " alt="" coords="507,135,531,148,546,161,555,174,564,186,579,198,591,207,586,206,576,203,560,190,551,177,542,165,528,152,506,140"/>
+<area shape="poly" id="edge18_Node000014_Node000009" title=" " alt="" coords="518,135,596,157,591,157,518,140"/>
+<area shape="poly" id="edge19_Node000014_Node000010" title=" " alt="" coords="519,121,574,123,569,124,520,126"/>
+<area shape="poly" id="edge21_Node000014_Node000011" title=" " alt="" coords="517,106,596,89,591,90,519,111"/>
 </map>

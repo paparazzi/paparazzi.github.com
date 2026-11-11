@@ -1,40 +1,40 @@
 <map id="pressure_diff_cb" name="pressure_diff_cb">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,133,105"/>
-<area shape="rect" id="Node000002" href="$air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure." alt="" coords="181,5,391,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,78,134,58,180,39,207,32,208,37,182,45,136,63,96,82"/>
-<area shape="rect" id="Node000004" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="213,55,359,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,83,199,75,200,80,134,88"/>
-<area shape="rect" id="Node000005" href="$group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d" title="Set airspeed (float)." alt="" coords="213,104,359,129"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="134,97,200,104,199,110,133,102"/>
-<area shape="rect" id="Node000006" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed." alt="" coords="231,153,341,179"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="97,103,182,139,218,150,217,155,180,145,95,108"/>
-<area shape="rect" id="Node000003" href="$nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="489,5,539,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,15,476,15,476,21,391,21"/>
-<area shape="rect" id="Node000007" href="$air__data_8c.html#a4035dda781bc016f24033b67116330b5" title="Internal utility function to compute current tas factor if needed." alt="" coords="439,153,589,179"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="342,163,425,163,425,169,342,169"/>
-<area shape="rect" id="Node000008" href="$air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel)." alt="" coords="648,75,791,100"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="541,151,636,110,661,102,663,107,638,115,543,156"/>
-<area shape="rect" id="Node000017" href="$air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor." alt="" coords="662,124,777,149"/>
-<area shape="poly" id="edge17_Node000007_Node000017" title=" " alt="" coords="589,153,648,144,648,149,590,158"/>
-<area shape="rect" id="Node000018" href="$group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation)." alt="" coords="640,174,799,214"/>
-<area shape="poly" id="edge18_Node000007_Node000018" title=" " alt="" coords="590,174,627,179,626,184,589,179"/>
-<area shape="rect" id="Node000019" href="$group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude." alt="" coords="637,238,801,278"/>
-<area shape="poly" id="edge19_Node000007_Node000019" title=" " alt="" coords="541,176,638,224,654,230,652,235,636,228,539,181"/>
-<area shape="rect" id="Node000009" href="$group__state__position.html#ga1079cbda74a805c577953981e58943fa" title="Get position in LLA coordinates (float)." alt="" coords="849,75,1011,100"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="791,85,835,85,835,90,791,90"/>
-<area shape="rect" id="Node000010" href="$group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title=" " alt="" coords="1059,75,1225,100"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1011,85,1045,85,1045,90,1011,90"/>
-<area shape="rect" id="Node000011" href="$pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title=" " alt="" coords="1501,23,1655,48"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1167,72,1215,51,1273,34,1328,26,1384,23,1488,25,1488,30,1384,28,1329,32,1274,39,1217,56,1169,77"/>
-<area shape="rect" id="Node000012" href="$pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title=" " alt="" coords="1273,49,1427,75"/>
-<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1225,75,1259,70,1260,76,1226,80"/>
-<area shape="rect" id="Node000013" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1297,99,1403,124"/>
-<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="1226,94,1284,101,1283,106,1225,100"/>
-<area shape="rect" id="Node000014" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1299,148,1401,173"/>
-<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="1177,98,1274,134,1296,141,1294,146,1272,139,1175,103"/>
-<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="1427,50,1487,43,1488,49,1427,56"/>
-<area shape="rect" id="Node000015" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1475,95,1681,120"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1401,146,1509,121,1510,126,1402,151"/>
-<area shape="rect" id="Node000016" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1508,145,1648,185"/>
-<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="1401,159,1494,161,1494,166,1401,164"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,133,112"/>
+<area shape="rect" id="Node000002" href="$air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure." alt="" coords="181,5,389,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,81,180,43,208,36,204,39,182,48,99,85"/>
+<area shape="rect" id="Node000004" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="213,57,357,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,88,200,80,195,84,134,92"/>
+<area shape="rect" id="Node000005" href="$group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d" title="Set airspeed (float)." alt="" coords="213,109,357,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="133,103,200,112,195,114,134,108"/>
+<area shape="rect" id="Node000006" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed." alt="" coords="230,161,340,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="98,109,182,146,218,159,213,160,180,151,98,115"/>
+<area shape="rect" id="Node000003" href="$nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="488,5,536,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,17,475,18,470,20,390,22"/>
+<area shape="rect" id="Node000007" href="$air__data_8c.html#a4035dda781bc016f24033b67116330b5" title="Internal utility function to compute current tas factor if needed." alt="" coords="437,161,587,189"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="340,173,424,175,419,176,340,178"/>
+<area shape="rect" id="Node000008" href="$air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel)." alt="" coords="646,79,788,106"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="541,158,634,117,652,113,658,111,636,122,543,163"/>
+<area shape="rect" id="Node000017" href="$air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor." alt="" coords="660,131,774,158"/>
+<area shape="poly" id="edge17_Node000007_Node000017" title=" " alt="" coords="587,161,647,155,642,156,588,167"/>
+<area shape="rect" id="Node000018" href="$group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation)." alt="" coords="638,182,796,227"/>
+<area shape="poly" id="edge18_Node000007_Node000018" title=" " alt="" coords="588,183,625,191,620,191,588,189"/>
+<area shape="rect" id="Node000019" href="$group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude." alt="" coords="635,252,799,296"/>
+<area shape="poly" id="edge19_Node000007_Node000019" title=" " alt="" coords="540,187,637,237,650,245,645,244,634,242,539,192"/>
+<area shape="rect" id="Node000009" href="$group__state__position.html#ga1079cbda74a805c577953981e58943fa" title="Get position in LLA coordinates (float)." alt="" coords="847,79,1007,106"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="788,90,834,92,828,93,788,95"/>
+<area shape="rect" id="Node000010" href="$group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title=" " alt="" coords="1055,79,1220,106"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1007,90,1042,92,1037,93,1008,95"/>
+<area shape="rect" id="Node000011" href="$pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title=" " alt="" coords="1496,25,1648,53"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1165,76,1212,55,1268,38,1322,30,1378,27,1483,30,1477,31,1378,32,1323,35,1269,43,1214,60,1167,81"/>
+<area shape="rect" id="Node000012" href="$pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title=" " alt="" coords="1268,52,1421,80"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1220,79,1256,77,1250,78,1221,84"/>
+<area shape="rect" id="Node000013" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1292,104,1397,132"/>
+<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="1221,100,1279,110,1274,110,1221,105"/>
+<area shape="rect" id="Node000014" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1293,156,1396,184"/>
+<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="1175,104,1269,141,1290,151,1285,150,1267,146,1175,110"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="1421,54,1483,49,1478,50,1422,60"/>
+<area shape="rect" id="Node000015" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1469,100,1675,128"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1396,155,1468,137,1495,132,1500,131,1469,142,1397,160"/>
+<area shape="rect" id="Node000016" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1502,152,1642,196"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="1396,168,1489,172,1484,172,1396,173"/>
 </map>

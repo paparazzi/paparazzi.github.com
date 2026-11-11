@@ -1,7 +1,7 @@
 var searchData=
 [
   ['q311_0',['Q311',['../libisp__config_8h.html#ac6bef058edef9d016b5226c7a855f833',1,'libisp_config.h']]],
-  ['qbiasbias_1',['qbiasbias',['../vf__extended__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141',1,'Qbiasbias:&#160;vf_extended_float.c'],['../vf__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141',1,'Qbiasbias:&#160;vf_float.c']]],
+  ['qbiasbias_1',['Qbiasbias',['../vf__extended__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141',1,'Qbiasbias:&#160;vf_extended_float.c'],['../vf__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141',1,'Qbiasbias:&#160;vf_float.c']]],
   ['qmc5883l_5faddr_2',['QMC5883L_ADDR',['../mag__qmc5883l_8c.html#aaabcbdf1659e744611f2b0b476c91bf4',1,'mag_qmc5883l.c']]],
   ['qmc5883l_5faddr0_3',['QMC5883L_ADDR0',['../qmc5883l_8h.html#a51bce1592dcbed3b4a72b7eee4aace19',1,'qmc5883l.h']]],
   ['qmc5883l_5fchan_5fx_4',['QMC5883L_CHAN_X',['../mag__qmc5883l_8c.html#ac07d3d1f72e0fe34914f191eee4761b4',1,'mag_qmc5883l.c']]],

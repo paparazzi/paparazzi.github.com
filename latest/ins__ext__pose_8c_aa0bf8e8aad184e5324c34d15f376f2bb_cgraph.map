@@ -1,75 +1,75 @@
 <map id="ins_ext_pose_run" name="ins_ext_pose_run">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,988,140,1013"/>
-<area shape="rect" id="Node000002" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="188,988,259,1013"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,998,174,998,174,1003,140,1003"/>
-<area shape="rect" id="Node000003" href="$ins__ext__pose_8c.html#a67c7b7ab275874ec93c9d1b534480149" title=" " alt="" coords="319,280,495,305"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,988,230,916,244,798,269,657,304,513,324,457,347,402,390,316,395,319,352,404,329,459,309,515,274,658,250,799,235,916,228,988"/>
-<area shape="rect" id="Node000015" href="$ins__ext__pose_8c.html#ae08d274a06cbe2aa13f6f423e4b94fc0" title=" " alt="" coords="332,527,483,552"/>
-<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="227,987,394,564,398,566,232,989"/>
-<area shape="rect" id="Node000021" href="$ins__ext__pose_8c.html#ac22f70216ab00a1bc2023a9222d72c9a" title="Heading measurement close to the (unwrapped) heading state." alt="" coords="590,864,702,889"/>
-<area shape="poly" id="edge29_Node000002_Node000021" title=" " alt="" coords="225,987,233,957,248,918,271,880,287,863,305,849,327,841,355,837,426,838,505,848,577,860,576,865,504,853,426,844,356,842,328,846,308,854,291,867,276,883,253,921,238,959,230,988"/>
-<area shape="rect" id="Node000022" href="$ins__ext__pose_8c.html#a1380ec367a1e66fb74bbe1bcc38959cc" title="Set position and attitude to the external pose and restore the initial covariance." alt="" coords="335,864,479,889"/>
-<area shape="poly" id="edge30_Node000002_Node000022" title=" " alt="" coords="229,987,258,943,280,919,305,898,322,890,324,895,308,903,283,923,262,946,234,989"/>
-<area shape="rect" id="Node000024" href="$group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2" title="rotate 3D vector by transposed rotation matrix." alt="" coords="316,913,499,939"/>
-<area shape="poly" id="edge33_Node000002_Node000024" title=" " alt="" coords="241,985,270,966,306,948,327,940,328,945,308,952,273,971,243,990"/>
-<area shape="rect" id="Node000025" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="335,963,480,988"/>
-<area shape="poly" id="edge34_Node000002_Node000025" title=" " alt="" coords="258,993,321,985,321,990,259,999"/>
-<area shape="rect" id="Node000026" href="$group__state__acceleration.html#gae8620e2ebb326bbb443a54194a6bd45d" title="Set acceleration in Body coordinates (int)." alt="" coords="330,1012,485,1037"/>
-<area shape="poly" id="edge35_Node000002_Node000026" title=" " alt="" coords="259,1003,317,1010,316,1015,258,1008"/>
-<area shape="rect" id="Node000027" href="$group__state__acceleration.html#gaa16383e46412fa8762e7434676390c99" title="Set acceleration in NED coordinates (float)." alt="" coords="333,1061,482,1087"/>
-<area shape="poly" id="edge36_Node000002_Node000027" title=" " alt="" coords="245,1011,274,1029,308,1046,332,1055,331,1060,306,1051,271,1034,242,1016"/>
-<area shape="rect" id="Node000028" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="328,1111,487,1136"/>
-<area shape="poly" id="edge37_Node000002_Node000028" title=" " alt="" coords="234,1012,263,1054,284,1077,308,1096,322,1103,320,1108,305,1100,280,1081,259,1057,230,1015"/>
-<area shape="rect" id="Node000029" href="$group__state__attitude.html#ga5fa6ea4465237100512211a7bc8be549" title="Set vehicle body attitude from euler angles (float)." alt="" coords="307,1160,508,1185"/>
-<area shape="poly" id="edge38_Node000002_Node000029" title=" " alt="" coords="231,1013,240,1041,255,1078,278,1115,308,1147,316,1152,313,1156,305,1151,274,1118,251,1080,235,1043,225,1015"/>
-<area shape="rect" id="Node000031" href="$group__state__position.html#ga1ef838820e72ae2d57728b566d420902" title="Set position from local NED coordinates (float)." alt="" coords="324,1209,491,1235"/>
-<area shape="poly" id="edge40_Node000002_Node000031" title=" " alt="" coords="229,1013,235,1050,249,1099,272,1152,289,1175,308,1196,314,1200,311,1204,305,1200,284,1179,268,1154,244,1101,230,1051,223,1014"/>
-<area shape="rect" id="Node000032" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="330,1259,485,1284"/>
-<area shape="poly" id="edge41_Node000002_Node000032" title=" " alt="" coords="227,1013,231,1058,242,1121,253,1155,267,1188,285,1219,308,1245,319,1253,316,1258,305,1249,281,1222,262,1190,248,1157,237,1122,226,1059,222,1014"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga767628cc0a39578f7a26712e0e2e7e72" title="a = b" alt="" coords="784,155,907,180"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="421,278,476,233,514,209,555,190,610,175,667,166,770,161,770,166,667,171,611,180,557,195,517,214,479,237,424,282"/>
-<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#ga358c857f5139895d516cc38d6024657e" title="Calculate inverse of any n x n matrix (passed as C array) o = mat^&#45;1 Algorithm verified with Matlab." alt="" coords="581,55,711,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="412,279,430,241,461,190,503,136,527,111,555,89,568,82,570,86,557,94,531,115,507,139,465,193,435,244,417,281"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga6adae9dfe30822147bd3fdad5c4ed036" title="o = a * b" alt="" coords="588,353,704,379"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="448,303,557,338,587,347,585,352,555,343,446,308"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#gaeb863cba67dfa53a5af9972255074397" title="o = a * b" alt="" coords="569,5,723,31"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="410,279,426,234,454,169,497,99,524,67,554,40,562,35,565,39,558,44,528,71,501,103,459,171,430,236,415,281"/>
-<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#ga4dafd125e8112eeb077c49c5307cfa83" title="a *= k, where k is a scalar value" alt="" coords="583,403,709,428"/>
-<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="426,303,482,344,557,388,578,396,576,401,555,392,479,349,423,308"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#gab6e7636bd4356f40f835c97b0aa7330b" title="a += k*b, where k is a scalar value" alt="" coords="562,452,730,477"/>
-<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="420,304,473,368,513,405,557,437,573,445,570,449,555,442,509,409,470,371,416,307"/>
-<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga3fc3eca3940ba6bd993fe23d5721be08" title="transpose non&#45;square matrix" alt="" coords="569,501,723,527"/>
-<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="417,304,436,340,466,390,507,442,531,466,558,486,570,494,567,498,554,491,528,470,503,446,462,393,431,343,412,307"/>
-<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#ga7acf82c01f2b7910784053bd899b6b03" title="o = a * b" alt="" coords="571,104,721,129"/>
-<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="417,278,471,216,511,179,555,146,584,132,586,137,557,151,514,183,475,220,421,281"/>
-<area shape="rect" id="Node000012" href="$group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="587,205,705,231"/>
-<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="443,277,555,239,582,232,583,237,557,245,444,282"/>
-<area shape="rect" id="Node000013" href="$group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="584,255,708,280"/>
-<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="495,281,570,273,570,278,496,286"/>
-<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4" title="a *= s" alt="" coords="583,304,709,329"/>
-<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="496,299,569,306,569,312,495,304"/>
-<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="713,28,737,40,767,63,793,90,831,141,827,144,789,93,764,67,735,44,711,33"/>
-<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="446,549,507,565,583,574,623,574,663,568,700,556,734,536,754,513,772,476,803,378,825,274,838,193,843,194,830,275,808,380,777,478,758,516,738,540,703,561,664,573,624,579,583,580,506,570,445,555"/>
-<area shape="poly" id="edge21_Node000015_Node000006" title=" " alt="" coords="416,525,469,459,509,421,555,388,574,379,576,383,557,392,512,425,473,463,420,528"/>
-<area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="422,524,478,482,516,458,555,437,572,430,574,435,557,442,518,462,482,486,426,528"/>
-<area shape="poly" id="edge23_Node000015_Node000009" title=" " alt="" coords="443,524,555,486,582,478,583,484,557,491,444,529"/>
-<area shape="poly" id="edge24_Node000015_Node000010" title=" " alt="" coords="482,529,555,521,555,526,483,534"/>
-<area shape="poly" id="edge26_Node000015_Node000012" title=" " alt="" coords="412,525,482,370,524,286,554,240,573,229,576,233,558,244,529,289,487,373,417,528"/>
-<area shape="poly" id="edge27_Node000015_Node000013" title=" " alt="" coords="410,525,426,480,455,416,497,348,524,316,554,289,570,280,572,285,558,293,528,320,502,351,460,419,431,482,415,527"/>
-<area shape="poly" id="edge28_Node000015_Node000014" title=" " alt="" coords="412,525,431,488,462,437,503,384,528,360,555,338,569,331,571,335,557,343,531,364,507,388,466,441,436,491,417,528"/>
-<area shape="rect" id="Node000016" href="$ins__ext__pose_8c.html#ae5d832b2057d0255e2935d3c7d3d1744" title=" " alt="" coords="619,667,673,692"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="423,550,479,599,517,627,557,652,606,669,604,674,555,656,514,632,476,604,420,554"/>
-<area shape="rect" id="Node000017" href="$ins__ext__pose_8c.html#a2e3b198e2d2d12c7885395abcab1b572" title=" " alt="" coords="617,716,675,741"/>
-<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="419,551,471,622,511,665,557,701,580,712,604,719,603,724,578,717,555,706,507,669,467,626,414,554"/>
-<area shape="rect" id="Node000018" href="$ins__ext__pose_8c.html#a0c96d64dc0078d90f77733860ac3c05c" title=" " alt="" coords="617,765,675,791"/>
-<area shape="poly" id="edge18_Node000015_Node000018" title=" " alt="" coords="416,551,434,590,464,644,506,702,530,728,557,750,580,762,604,770,603,775,578,767,555,755,527,732,501,705,460,647,429,593,411,553"/>
-<area shape="rect" id="Node000019" href="$group__math__algebra__float.html#ga77ad0dd2f3feb7ea19c65097eb3d7d11" title="Make an n x n identity matrix (for matrix passed as array)" alt="" coords="556,815,736,840"/>
-<area shape="poly" id="edge20_Node000015_Node000019" title=" " alt="" coords="415,551,430,598,458,666,500,738,527,771,558,800,567,806,564,811,554,804,523,775,496,741,453,668,425,600,409,553"/>
-<area shape="rect" id="Node000020" href="$group__math__algebra__float.html#ga729f01040a38961803f6f8aa8603ed8f" title="transpose square matrix" alt="" coords="569,602,723,642"/>
-<area shape="poly" id="edge25_Node000015_Node000020" title=" " alt="" coords="446,550,575,595,573,600,444,555"/>
-<area shape="poly" id="edge31_Node000022_Node000021" title=" " alt="" coords="479,874,576,874,576,879,479,879"/>
-<area shape="rect" id="Node000023" href="$ins__ext__pose_8c.html#ad2caa4f930b402021bfbd39dfc3bca4b" title=" " alt="" coords="593,913,699,939"/>
-<area shape="poly" id="edge32_Node000022_Node000023" title=" " alt="" coords="470,887,581,910,579,915,469,892"/>
-<area shape="rect" id="Node000030" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="563,1160,729,1185"/>
-<area shape="poly" id="edge39_Node000029_Node000030" title=" " alt="" coords="508,1170,549,1170,549,1175,508,1175"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1032,140,1060"/>
+<area shape="rect" id="Node000002" href="$ins__ext__pose_8c.html#af039bc4bce5b4c6f274a66d19fdd50b4" title=" " alt="" coords="188,1032,258,1060"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,1043,174,1044,170,1047,142,1048"/>
+<area shape="rect" id="Node000003" href="$ins__ext__pose_8c.html#a67c7b7ab275874ec93c9d1b534480149" title=" " alt="" coords="318,289,494,317"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,1031,229,955,244,832,268,685,303,536,323,477,346,420,392,328,390,333,351,422,328,479,309,537,273,686,249,833,235,955,228,1032"/>
+<area shape="rect" id="Node000015" href="$ins__ext__pose_8c.html#ae08d274a06cbe2aa13f6f423e4b94fc0" title=" " alt="" coords="332,548,481,576"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="227,1030,391,591,397,590,232,1032"/>
+<area shape="rect" id="Node000021" href="$ins__ext__pose_8c.html#ac22f70216ab00a1bc2023a9222d72c9a" title="Heading measurement close to the (unwrapped) heading state." alt="" coords="588,901,700,929"/>
+<area shape="poly" id="edge29_Node000002_Node000021" title=" " alt="" coords="224,1031,232,1000,247,960,270,919,286,902,305,888,326,880,354,876,424,877,502,886,575,900,570,901,501,891,424,882,354,881,327,885,307,892,290,906,274,922,251,962,237,1001,229,1033"/>
+<area shape="rect" id="Node000022" href="$ins__ext__pose_8c.html#a1380ec367a1e66fb74bbe1bcc38959cc" title="Set position and attitude to the external pose and restore the initial covariance." alt="" coords="334,901,478,929"/>
+<area shape="poly" id="edge30_Node000002_Node000022" title=" " alt="" coords="229,1030,258,985,279,961,304,940,322,932,318,936,308,944,283,964,262,989,234,1033"/>
+<area shape="rect" id="Node000024" href="$group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2" title="rotate 3D vector by transposed rotation matrix." alt="" coords="316,953,497,981"/>
+<area shape="poly" id="edge33_Node000002_Node000024" title=" " alt="" coords="241,1030,270,1010,305,991,328,985,324,988,307,996,273,1015,245,1034"/>
+<area shape="rect" id="Node000025" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="334,1005,478,1033"/>
+<area shape="poly" id="edge34_Node000002_Node000025" title=" " alt="" coords="257,1038,321,1030,317,1033,260,1043"/>
+<area shape="rect" id="Node000026" href="$group__state__acceleration.html#gae8620e2ebb326bbb443a54194a6bd45d" title="Set acceleration in Body coordinates (int)." alt="" coords="329,1057,483,1085"/>
+<area shape="poly" id="edge35_Node000002_Node000026" title=" " alt="" coords="258,1048,316,1057,311,1059,259,1053"/>
+<area shape="rect" id="Node000027" href="$group__state__acceleration.html#gaa16383e46412fa8762e7434676390c99" title="Set acceleration in NED coordinates (float)." alt="" coords="332,1109,480,1137"/>
+<area shape="poly" id="edge36_Node000002_Node000027" title=" " alt="" coords="243,1057,274,1076,307,1094,329,1104,324,1105,305,1099,271,1081,244,1063"/>
+<area shape="rect" id="Node000028" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="328,1161,485,1189"/>
+<area shape="poly" id="edge37_Node000002_Node000028" title=" " alt="" coords="232,1058,262,1102,283,1126,308,1146,319,1155,314,1155,304,1151,279,1130,258,1106,231,1063"/>
+<area shape="rect" id="Node000029" href="$group__state__attitude.html#ga5fa6ea4465237100512211a7bc8be549" title="Set vehicle body attitude from euler angles (float)." alt="" coords="306,1213,506,1241"/>
+<area shape="poly" id="edge38_Node000002_Node000029" title=" " alt="" coords="228,1058,239,1089,255,1127,277,1165,308,1198,316,1206,311,1206,304,1203,273,1169,250,1129,234,1091,227,1063"/>
+<area shape="rect" id="Node000031" href="$group__state__position.html#ga1ef838820e72ae2d57728b566d420902" title="Set position from local NED coordinates (float)." alt="" coords="324,1265,489,1293"/>
+<area shape="poly" id="edge40_Node000002_Node000031" title=" " alt="" coords="226,1057,234,1098,247,1149,271,1204,288,1229,308,1251,315,1258,309,1257,304,1254,284,1232,267,1206,242,1151,229,1099,225,1062"/>
+<area shape="rect" id="Node000032" href="$group__state__velocity.html#ga2aac03ae55ae746fbdbb4e4ad1f106a7" title="Set ground speed in local NED coordinates (float)." alt="" coords="330,1317,483,1345"/>
+<area shape="poly" id="edge41_Node000002_Node000032" title=" " alt="" coords="225,1058,230,1106,241,1172,251,1207,265,1242,284,1274,308,1303,318,1313,313,1312,304,1306,280,1277,261,1244,246,1209,236,1173,225,1107,223,1062"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga767628cc0a39578f7a26712e0e2e7e72" title="a = b" alt="" coords="782,160,903,188"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="420,287,475,241,513,216,553,197,607,181,663,172,768,168,764,171,664,177,609,186,555,202,515,221,478,245,424,291"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#ga358c857f5139895d516cc38d6024657e" title="Calculate inverse of any n x n matrix (passed as C array) o = mat^&#45;1 Algorithm verified with Matlab." alt="" coords="580,57,708,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="411,288,430,249,461,197,502,143,526,118,553,96,567,89,564,93,556,100,530,122,506,146,465,200,435,252,416,290"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga6adae9dfe30822147bd3fdad5c4ed036" title="o = a * b" alt="" coords="586,367,702,394"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="447,315,555,351,581,361,576,363,554,356,449,320"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#gaeb863cba67dfa53a5af9972255074397" title="o = a * b" alt="" coords="567,5,721,33"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="409,288,425,241,453,175,496,105,522,72,553,44,563,39,560,43,556,48,526,76,500,108,458,178,430,243,414,290"/>
+<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#ga4dafd125e8112eeb077c49c5307cfa83" title="a *= k, where k is a scalar value" alt="" coords="582,419,706,446"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="423,315,481,358,517,382,556,403,573,412,568,414,553,408,515,387,478,363,425,320"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#gab6e7636bd4356f40f835c97b0aa7330b" title="a += k*b, where k is a scalar value" alt="" coords="560,471,728,498"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="417,315,472,383,511,422,556,456,569,463,563,465,553,460,508,426,468,386,417,320"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga3fc3eca3940ba6bd993fe23d5721be08" title="transpose non&#45;square matrix" alt="" coords="567,523,721,550"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="413,314,434,354,465,406,505,461,530,486,556,508,566,515,561,516,553,512,526,490,501,464,460,409,430,357,413,320"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#ga7acf82c01f2b7910784053bd899b6b03" title="o = a * b" alt="" coords="569,109,719,137"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="416,287,470,224,509,186,553,153,579,141,575,145,556,157,513,190,474,227,420,290"/>
+<area shape="rect" id="Node000012" href="$group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b" alt="" coords="586,211,702,238"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="445,287,553,249,581,242,577,245,555,254,448,291"/>
+<area shape="rect" id="Node000013" href="$group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="582,263,706,290"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="493,291,569,283,565,287,496,296"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4" title="a *= s" alt="" coords="581,315,707,342"/>
+<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="493,310,568,319,563,322,496,315"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="708,31,735,44,764,67,789,94,828,147,822,147,785,97,760,71,732,48,710,36"/>
+<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="448,574,511,589,585,598,624,597,663,591,699,579,732,560,752,536,770,498,787,450,801,396,822,287,836,206,839,201,828,288,806,397,792,451,775,500,757,539,735,564,701,584,664,596,625,602,585,603,510,594,450,579"/>
+<area shape="poly" id="edge21_Node000015_Node000006" title=" " alt="" coords="415,546,468,479,508,439,553,405,574,396,570,400,556,409,511,443,472,482,419,549"/>
+<area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="422,546,478,502,515,478,553,457,573,450,569,454,556,462,517,483,481,507,426,549"/>
+<area shape="poly" id="edge23_Node000015_Node000009" title=" " alt="" coords="446,545,554,509,581,502,577,505,555,514,449,550"/>
+<area shape="poly" id="edge24_Node000015_Node000010" title=" " alt="" coords="480,552,554,545,549,548,483,556"/>
+<area shape="poly" id="edge26_Node000015_Node000012" title=" " alt="" coords="411,546,481,385,523,297,552,249,573,238,570,242,556,253,528,300,486,387,416,549"/>
+<area shape="poly" id="edge27_Node000015_Node000013" title=" " alt="" coords="409,547,425,500,453,433,496,363,522,330,553,301,570,292,567,296,556,305,526,333,500,366,458,436,430,502,414,549"/>
+<area shape="poly" id="edge28_Node000015_Node000014" title=" " alt="" coords="411,547,430,508,460,456,501,401,526,375,553,353,568,346,565,350,556,357,530,379,505,404,465,459,434,511,416,549"/>
+<area shape="rect" id="Node000016" href="$ins__ext__pose_8c.html#a2e3b198e2d2d12c7885395abcab1b572" title=" " alt="" coords="615,693,673,721"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="421,574,478,626,515,654,556,679,603,698,598,699,553,684,512,659,474,630,421,579"/>
+<area shape="rect" id="Node000017" href="$ins__ext__pose_8c.html#ae5d832b2057d0255e2935d3c7d3d1744" title=" " alt="" coords="617,745,671,773"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="416,573,470,649,510,693,556,730,578,742,604,751,599,753,576,747,553,735,506,697,466,652,416,579"/>
+<area shape="rect" id="Node000018" href="$ins__ext__pose_8c.html#a0c96d64dc0078d90f77733860ac3c05c" title=" " alt="" coords="616,797,672,825"/>
+<area shape="poly" id="edge18_Node000015_Node000018" title=" " alt="" coords="413,574,433,616,463,672,504,732,529,759,556,782,578,794,603,804,598,805,575,799,553,787,525,763,500,735,458,675,428,619,413,579"/>
+<area shape="rect" id="Node000019" href="$group__math__algebra__float.html#ga77ad0dd2f3feb7ea19c65097eb3d7d11" title="Make an n x n identity matrix (for matrix passed as array)." alt="" coords="554,849,734,877"/>
+<area shape="poly" id="edge20_Node000015_Node000019" title=" " alt="" coords="411,574,428,625,456,695,475,733,498,770,525,804,556,834,564,842,559,842,553,839,521,808,494,773,471,735,451,697,423,627,411,579"/>
+<area shape="rect" id="Node000020" href="$group__math__algebra__float.html#ga729f01040a38961803f6f8aa8603ed8f" title="transpose square matrix" alt="" coords="567,625,721,670"/>
+<area shape="poly" id="edge25_Node000015_Node000020" title=" " alt="" coords="447,574,568,618,563,620,448,579"/>
+<area shape="poly" id="edge31_Node000022_Node000021" title=" " alt="" coords="477,913,575,914,570,916,479,918"/>
+<area shape="rect" id="Node000023" href="$ins__ext__pose_8c.html#ad2caa4f930b402021bfbd39dfc3bca4b" title=" " alt="" coords="592,953,696,981"/>
+<area shape="poly" id="edge32_Node000022_Node000023" title=" " alt="" coords="473,927,579,952,574,953,473,932"/>
+<area shape="rect" id="Node000030" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="561,1213,727,1241"/>
+<area shape="poly" id="edge39_Node000029_Node000030" title=" " alt="" coords="507,1225,548,1227,543,1227,507,1230"/>
 </map>

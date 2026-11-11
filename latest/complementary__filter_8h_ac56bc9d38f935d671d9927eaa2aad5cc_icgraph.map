@@ -1,18 +1,22 @@
 <map id="get_first_order_complementary" name="get_first_order_complementary">
-<area shape="rect" id="Node000001" title="Get current value of the first order complementary filter." alt="" coords="716,77,943,102"/>
-<area shape="rect" id="Node000002" href="$complementary__filter__types_8h.html#a4a0df9fec0cc81b4bdf46f6f2b31ba2c" title="Get current outputs from an array of 1st order complementary filters." alt="" coords="441,5,668,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="760,76,641,48,642,43,761,71"/>
-<area shape="rect" id="Node000003" href="$complementary__filter__types_8h.html#ac5d20bb73463d42d98cbd39094a3c450" title="Get current output rates from 1st order complementary filters." alt="" coords="441,69,668,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="702,92,668,92,668,87,702,87"/>
-<area shape="rect" id="Node000006" href="$complementary__filter__types_8h.html#afd647e9f234a14c189ead5293054074d" title="Get current output 3D vector from 1st order complementary filters." alt="" coords="441,133,668,173"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="761,108,642,136,641,131,760,103"/>
-<area shape="rect" id="Node000004" href="$stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="5,109,171,134"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="463,69,407,60,346,54,282,54,219,63,188,72,159,85,110,111,108,106,156,80,187,67,218,57,282,49,346,49,408,55,464,64"/>
-<area shape="rect" id="Node000005" href="$complementary__filter__types_8h.html#a47a7adf843e64abe98dd83f41d8a1a7b" title="Update 3D vector of 1st order complementary filters for rates." alt="" coords="220,72,392,112"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="428,93,392,94,392,88,428,88"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="207,108,171,113,171,108,206,103"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="427,147,171,130,171,124,428,142"/>
-<area shape="rect" id="Node000007" href="$complementary__filter__types_8h.html#a801cc5a28c7087e0ed340814f9ee0b89" title="Update 3D vector of 1st order complementary filters." alt="" coords="219,187,393,227"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="449,179,394,191,393,185,447,174"/>
-<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="241,184,120,137,122,132,243,179"/>
+<area shape="rect" id="Node000001" title="Get current value of the first order complementary filter." alt="" coords="713,107,939,135"/>
+<area shape="rect" id="Node000002" href="$complementary__filter__types_8h.html#a4a0df9fec0cc81b4bdf46f6f2b31ba2c" title="Get current outputs from an array of 1st order complementary filters." alt="" coords="440,5,665,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="771,102,664,65,630,53,630,48,666,60,776,101"/>
+<area shape="rect" id="Node000003" href="$complementary__filter__types_8h.html#ac5d20bb73463d42d98cbd39094a3c450" title="Get current output rates from 1st order complementary filters." alt="" coords="440,99,665,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="695,121,666,124,666,118,701,121"/>
+<area shape="rect" id="Node000006" href="$complementary__filter__types_8h.html#afd647e9f234a14c189ead5293054074d" title="Get current output 3D vector from 1st order complementary filters." alt="" coords="440,192,665,237"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="771,140,621,194,620,189,766,141"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="592,83,578,80,553,77,529,79,515,84,509,90,510,99,506,97,504,89,512,80,528,74,553,72,579,75,597,83"/>
+<area shape="rect" id="Node000004" href="$stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="5,154,170,182"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="474,94,419,81,353,71,285,69,251,73,219,81,184,96,153,116,105,155,101,151,149,111,182,91,217,76,250,68,285,64,354,65,420,76,479,93"/>
+<area shape="rect" id="Node000005" href="$complementary__filter__types_8h.html#a47a7adf843e64abe98dd83f41d8a1a7b" title="Update 3D vector of 1st order complementary filters for rates." alt="" coords="219,115,390,159"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="422,130,392,134,390,129,427,129"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="201,153,171,159,169,154,206,150"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="339,100,327,96,305,93,285,95,272,100,267,106,268,115,263,113,262,105,269,96,283,90,305,88,328,91,344,99"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="423,204,170,179,170,173,426,199"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="592,177,578,173,553,171,529,173,515,177,509,183,510,193,506,190,504,182,512,173,528,167,553,165,579,168,597,177"/>
+<area shape="rect" id="Node000007" href="$complementary__filter__types_8h.html#a801cc5a28c7087e0ed340814f9ee0b89" title="Update 3D vector of 1st order complementary filters." alt="" coords="218,259,392,303"/>
+<area shape="poly" id="edge11_Node000006_Node000007" title=" " alt="" coords="455,241,391,261,390,255,450,242"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="245,253,115,185,117,179,249,250"/>
+<area shape="poly" id="edge13_Node000007_Node000007" title=" " alt="" coords="339,243,327,240,305,237,285,239,272,244,267,250,268,260,264,257,262,249,269,240,283,234,305,232,328,235,344,244"/>
 </map>

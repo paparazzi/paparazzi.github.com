@@ -1,77 +1,77 @@
 <map id="thd_lidar_vl53l5cx" name="thd_lidar_vl53l5cx">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,514,147,539"/>
-<area shape="rect" id="Node000002" href="$vl53l5cx__api_8c.html#aac88dab9053384ae408440fd4d136169" title="This function checks if a new data is ready by polling I2C." alt="" coords="907,5,1065,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,513,86,461,107,382,142,293,165,250,193,210,242,156,289,121,342,95,413,71,475,53,540,39,671,22,792,16,893,17,893,22,792,21,671,27,541,44,476,58,414,76,344,100,292,125,246,160,197,214,169,253,146,295,112,383,92,462,82,514"/>
-<area shape="rect" id="Node000004" href="$vl53l5cx__api_8c.html#a826bd6877f82affd5c6267fe2b8523c7" title="This function gets the ranging data, using the selected output and the resolution." alt="" coords="659,70,856,95"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="81,513,118,439,149,386,188,327,234,267,286,208,346,155,412,112,469,89,529,76,589,70,645,69,645,75,589,75,530,81,470,94,415,117,349,160,290,212,238,270,192,330,153,389,123,442,85,515"/>
-<area shape="rect" id="Node000006" href="$vl53l5cx__api_8c.html#a8f9ecaea1b6d057725db081e2b79779d" title="Mandatory function used to initialize the sensor." alt="" coords="227,413,333,438"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="102,511,240,442,242,447,104,516"/>
-<area shape="rect" id="Node000018" href="$vl53l5cx__api_8c.html#a4a4c326deb4c14e7d21dfa25b522c0b9" title=" " alt="" coords="213,590,347,615"/>
-<area shape="poly" id="edge39_Node000001_Node000018" title=" " alt="" coords="112,537,233,583,231,588,110,542"/>
-<area shape="rect" id="Node000019" href="$vl53l5cx__api_8c.html#ada57bf6c8d530c6f5e5df9c1a9cec5f8" title="This function sets a new resolution (4x4 or 8x8)." alt="" coords="423,641,599,666"/>
-<area shape="poly" id="edge42_Node000001_Node000019" title=" " alt="" coords="89,538,132,583,162,607,196,626,248,643,304,653,358,658,409,658,409,664,358,663,303,658,247,648,194,630,159,611,128,587,85,541"/>
-<area shape="rect" id="Node000020" href="$vl53l5cx__api_8c.html#aa1adc6d75fd4613bf74596f1b5440c23" title="This function starts a ranging session." alt="" coords="195,841,365,866"/>
-<area shape="poly" id="edge47_Node000001_Node000020" title=" " alt="" coords="87,538,266,828,262,831,83,541"/>
-<area shape="rect" id="Node000003" href="$vl53l5cx__platform_8c.html#ad3c2662d6d7b097a567ef29e1f3d5a47" title="Mandatory function used to read multiples bytes." alt="" coords="1113,175,1185,201"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1039,43,1067,62,1090,86,1110,112,1139,162,1134,164,1105,115,1086,89,1064,66,1036,48"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="856,75,906,77,960,83,1014,94,1066,112,1103,135,1131,163,1127,167,1099,140,1064,117,1013,99,959,88,906,82,856,81"/>
-<area shape="rect" id="Node000005" href="$vl53l5cx__platform_8c.html#ac82d5f4ed9bb61a17cdca59b80393326" title="Optional function, only used to perform an hardware reset of the sensor." alt="" coords="938,463,1034,489"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="781,93,821,123,861,164,907,240,942,320,966,394,981,449,976,451,961,396,937,322,902,242,857,167,818,127,778,98"/>
-<area shape="poly" id="edge23_Node000006_Node000003" title=" " alt="" coords="291,411,325,370,363,319,375,293,382,269,391,248,412,229,455,204,500,184,548,168,596,156,695,141,793,137,886,141,971,150,1100,173,1099,179,971,155,886,146,793,142,695,146,597,161,549,173,502,189,457,209,415,233,395,251,387,271,380,295,368,321,329,374,295,414"/>
-<area shape="rect" id="Node000007" href="$vl53l5cx__api_8c.html#a8f29abecfd7c5a543ea99507182b59a9" title="Copyright (c) 2021 STMicroelectronics." alt="" coords="916,513,1056,553"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="284,411,301,378,328,335,365,291,387,272,412,258,464,240,508,239,608,257,684,262,746,264,774,269,802,280,831,296,861,322,878,344,886,367,887,411,887,455,894,477,909,500,912,503,908,507,905,503,889,480,882,456,882,411,880,368,873,347,857,326,828,301,800,284,773,275,745,270,684,267,608,263,507,245,465,245,414,262,390,277,369,295,332,338,305,381,289,414"/>
-<area shape="rect" id="Node000008" href="$vl53l5cx__platform_8c.html#a83eb55875e816a5f50f7d9accb4ddf67" title="Mandatory function, used to wait during an amount of time." alt="" coords="1114,279,1185,305"/>
-<area shape="poly" id="edge35_Node000006_Node000008" title=" " alt="" coords="290,411,412,258,458,238,505,224,603,206,703,202,801,208,893,221,977,238,1102,273,1100,278,975,243,892,226,800,213,703,207,604,211,506,229,460,243,415,262,294,414"/>
-<area shape="rect" id="Node000009" href="$vl53l5cx__api_8c.html#a9b6bbd390eb622e54db8feeb1239e147" title=" " alt="" coords="441,272,581,312"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="295,410,346,371,412,328,439,315,442,320,415,333,349,376,298,414"/>
-<area shape="rect" id="Node000010" href="$vl53l5cx__platform_8c.html#a03ca2bd89dc070bb9366e847cbcbf42b" title=" " alt="" coords="723,335,792,361"/>
-<area shape="poly" id="edge22_Node000006_Node000010" title=" " alt="" coords="333,414,708,353,709,358,333,420"/>
-<area shape="rect" id="Node000011" href="$vl53l5cx__api_8c.html#a54f1246226bfaa643c78e87aaab3aa0d" title="Inner function, not available outside this file." alt="" coords="656,409,859,434"/>
-<area shape="poly" id="edge14_Node000006_Node000011" title=" " alt="" coords="333,422,642,420,642,425,333,428"/>
-<area shape="rect" id="Node000012" href="$vl53l5cx__platform_8c.html#ab6e53d9399892b9aeda7d6eef69c0121" title="Mandatory function used to write multiples bytes." alt="" coords="949,581,1023,606"/>
-<area shape="poly" id="edge38_Node000006_Node000012" title=" " alt="" coords="333,426,455,434,609,450,757,474,816,489,860,507,876,520,886,535,894,549,908,563,937,578,935,583,905,568,890,553,881,538,872,524,857,512,814,494,755,479,608,455,454,440,333,431"/>
-<area shape="rect" id="Node000013" href="$vl53l5cx__api_8c.html#a8d1519ffc350ce504d48fa618ee0c954" title="Inner function, not available outside this file." alt="" coords="658,521,857,546"/>
-<area shape="poly" id="edge18_Node000006_Node000013" title=" " alt="" coords="316,435,414,467,540,495,657,516,656,521,539,500,413,472,314,441"/>
-<area shape="rect" id="Node000014" href="$vl53l5cx__api_8c.html#a67bf61eebc7a265834d3af512b7c8f59" title="This function can be used to replace &#39;extra data&#39; in DCI." alt="" coords="413,690,608,715"/>
-<area shape="poly" id="edge24_Node000006_Node000014" title=" " alt="" coords="291,437,368,578,379,608,386,633,395,655,415,677,421,681,418,686,412,681,391,657,381,634,374,609,363,580,286,440"/>
-<area shape="rect" id="Node000016" href="$vl53l5cx__api_8c.html#ad1413cd54d0dfacea7f9dbccc5db36df" title="This function can be used to write &#39;extra data&#39; to DCI." alt="" coords="668,581,847,606"/>
-<area shape="poly" id="edge34_Node000006_Node000016" title=" " alt="" coords="298,436,348,474,380,495,414,512,475,535,537,553,655,577,654,583,536,558,473,540,412,517,377,499,345,478,294,440"/>
-<area shape="rect" id="Node000017" href="$vl53l5cx__platform_8c.html#ae303ae854ba523e02807507b601cc5d8" title="Mandatory function used to write one single byte." alt="" coords="475,739,546,765"/>
-<area shape="poly" id="edge36_Node000006_Node000017" title=" " alt="" coords="292,437,327,496,368,578,380,622,383,659,391,693,400,709,415,726,437,740,463,747,461,752,435,745,412,730,396,712,386,695,378,660,375,623,363,580,322,499,287,439"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="1050,511,1063,500,1083,471,1094,444,1099,418,1100,392,1099,335,1102,303,1111,267,1133,212,1138,214,1116,269,1108,304,1105,336,1105,392,1104,419,1099,445,1088,473,1067,503,1054,515"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="1048,511,1063,499,1096,456,1119,406,1134,357,1142,318,1147,319,1139,358,1124,407,1101,458,1067,503,1052,515"/>
-<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="581,289,1100,289,1100,295,581,295"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="582,305,710,335,709,340,581,310"/>
-<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="789,333,1103,204,1105,208,791,338"/>
-<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="812,431,925,459,924,464,810,437"/>
-<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="816,432,860,451,875,463,885,475,894,487,908,499,917,505,914,509,905,503,890,491,881,479,872,467,857,456,814,437"/>
-<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="827,432,860,451,873,466,880,480,886,509,891,536,897,550,908,563,938,581,935,585,905,567,893,553,886,538,880,510,875,482,868,469,857,455,825,436"/>
-<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="808,518,924,489,925,494,809,523"/>
-<area shape="poly" id="edge19_Node000013_Node000007" title=" " alt="" coords="857,531,902,531,902,536,857,536"/>
-<area shape="poly" id="edge21_Node000013_Node000012" title=" " alt="" coords="807,543,936,578,935,583,806,549"/>
-<area shape="rect" id="Node000015" href="$vl53l5cx__api_8c.html#a1988c495f38198f8e1c8f48d5a60acad" title="This function can be used to read &#39;extra data&#39; from DCI." alt="" coords="670,639,845,665"/>
-<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="573,687,681,665,682,670,574,692"/>
-<area shape="poly" id="edge30_Node000014_Node000016" title=" " alt="" coords="581,688,607,676,621,665,630,652,639,639,655,626,690,608,693,613,657,630,643,643,634,655,625,668,609,681,584,692"/>
-<area shape="poly" id="edge27_Node000015_Node000003" title=" " alt="" coords="817,662,876,669,942,667,976,662,1008,652,1037,637,1063,617,1080,590,1091,551,1097,503,1100,451,1102,347,1105,302,1111,267,1132,212,1137,214,1116,269,1110,303,1107,347,1105,451,1102,504,1096,552,1085,592,1067,620,1040,642,1010,657,977,667,943,672,876,674,817,667"/>
-<area shape="poly" id="edge28_Node000015_Node000005" title=" " alt="" coords="823,637,841,628,857,617,869,603,875,589,880,560,885,530,892,514,905,499,924,487,927,491,908,503,897,517,890,531,885,560,880,590,873,606,860,621,844,633,825,642"/>
-<area shape="poly" id="edge26_Node000015_Node000007" title=" " alt="" coords="812,637,857,616,872,605,881,593,890,580,905,567,921,557,924,562,908,571,894,584,885,596,875,608,860,621,814,642"/>
-<area shape="poly" id="edge29_Node000015_Node000012" title=" " alt="" coords="807,637,935,603,936,609,808,642"/>
-<area shape="poly" id="edge32_Node000016_Node000005" title=" " alt="" coords="812,578,835,569,857,557,872,543,880,529,889,514,905,499,924,489,926,494,908,504,893,517,885,531,876,546,860,561,837,574,814,583"/>
-<area shape="poly" id="edge31_Node000016_Node000007" title=" " alt="" coords="806,578,902,553,903,558,807,583"/>
-<area shape="poly" id="edge33_Node000016_Node000012" title=" " alt="" coords="847,591,935,591,935,596,847,596"/>
-<area shape="poly" id="edge37_Node000017_Node000012" title=" " alt="" coords="546,746,606,739,685,725,772,704,858,675,912,645,957,613,960,617,915,650,860,680,774,710,686,730,607,744,547,752"/>
-<area shape="poly" id="edge40_Node000018_Node000010" title=" " alt="" coords="303,587,450,505,655,395,716,364,719,369,657,400,452,510,305,592"/>
-<area shape="poly" id="edge41_Node000018_Node000017" title=" " alt="" coords="293,614,341,668,376,699,415,726,438,736,462,742,461,748,436,741,412,730,373,704,338,672,289,617"/>
-<area shape="poly" id="edge43_Node000019_Node000011" title=" " alt="" coords="574,638,606,619,625,593,632,567,638,539,654,508,688,470,724,440,727,444,692,474,658,511,643,541,638,569,630,596,610,623,577,643"/>
-<area shape="poly" id="edge44_Node000019_Node000013" title=" " alt="" coords="565,638,607,619,621,607,630,594,639,581,655,567,692,548,694,553,657,572,643,584,634,597,625,610,609,624,567,643"/>
-<area shape="poly" id="edge45_Node000019_Node000015" title=" " alt="" coords="599,650,656,650,656,655,599,656"/>
-<area shape="poly" id="edge46_Node000019_Node000016" title=" " alt="" coords="563,638,691,607,692,612,564,643"/>
-<area shape="poly" id="edge48_Node000020_Node000007" title=" " alt="" coords="299,864,348,898,380,914,414,927,468,941,512,948,555,944,607,927,656,904,695,881,726,855,753,828,800,762,856,676,871,647,877,620,885,595,905,568,915,559,919,563,909,571,890,597,883,622,876,648,861,679,805,765,757,831,730,859,698,885,658,909,609,932,556,949,512,953,467,946,413,932,378,919,345,902,296,868"/>
-<area shape="poly" id="edge54_Node000020_Node000012" title=" " alt="" coords="292,864,339,919,374,949,414,971,539,1017,594,1033,645,1041,696,1040,747,1030,800,1007,857,971,896,935,926,891,948,842,963,791,974,740,980,693,983,620,988,620,985,693,979,741,969,792,953,844,930,894,900,939,860,975,802,1012,748,1035,696,1046,645,1046,592,1038,537,1022,412,976,371,953,336,923,288,868"/>
-<area shape="poly" id="edge49_Node000020_Node000015" title=" " alt="" coords="366,859,422,859,484,854,547,842,607,819,651,788,689,750,719,710,740,676,745,679,723,713,693,753,654,792,609,824,549,847,485,860,422,865,366,864"/>
-<area shape="poly" id="edge50_Node000020_Node000016" title=" " alt="" coords="335,838,607,775,620,758,628,740,630,703,633,665,640,646,654,626,677,610,680,614,658,630,644,648,638,666,636,704,633,742,625,761,609,780,337,843"/>
-<area shape="poly" id="edge53_Node000020_Node000017" title=" " alt="" coords="302,838,352,811,412,782,461,763,463,768,414,786,354,815,305,843"/>
-<area shape="rect" id="Node000021" href="$vl53l5cx__api_8c.html#ac8a5a4b98498ff6cff9b027292d5564b" title="This function gets the current resolution (4x4 or 8x8)." alt="" coords="422,891,599,917"/>
-<area shape="poly" id="edge51_Node000020_Node000021" title=" " alt="" coords="339,864,439,886,438,891,338,869"/>
-<area shape="poly" id="edge52_Node000021_Node000015" title=" " alt="" coords="569,889,606,870,654,824,693,771,723,718,743,676,748,679,728,721,698,773,658,827,610,874,572,894"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,523,146,551"/>
+<area shape="rect" id="Node000002" href="$vl53l5cx__api_8c.html#aac88dab9053384ae408440fd4d136169" title="This function checks if a new data is ready by polling I2C." alt="" coords="902,5,1059,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,522,86,469,107,389,141,301,164,258,192,218,241,163,287,128,340,102,410,77,472,59,536,44,665,27,786,20,888,22,884,24,786,25,666,32,537,50,473,64,412,82,342,107,290,132,244,167,196,221,169,260,146,303,112,391,91,470,81,523"/>
+<area shape="rect" id="Node000004" href="$vl53l5cx__api_8c.html#a826bd6877f82affd5c6267fe2b8523c7" title="This function gets the ranging data, using the selected output and the resolution." alt="" coords="655,74,851,102"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="80,522,118,447,149,393,187,334,232,273,285,214,344,161,410,117,465,94,525,81,584,75,642,75,637,78,584,80,526,86,467,99,412,122,347,165,289,217,236,276,191,337,153,396,123,449,85,524"/>
+<area shape="rect" id="Node000006" href="$vl53l5cx__api_8c.html#a8f9ecaea1b6d057725db081e2b79779d" title="Mandatory function used to initialize the sensor." alt="" coords="226,422,330,450"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="103,521,237,454,234,459,107,525"/>
+<area shape="rect" id="Node000018" href="$vl53l5cx__api_8c.html#a4a4c326deb4c14e7d21dfa25b522c0b9" title=" " alt="" coords="212,599,345,627"/>
+<area shape="poly" id="edge39_Node000001_Node000018" title=" " alt="" coords="114,549,227,592,223,595,116,554"/>
+<area shape="rect" id="Node000019" href="$vl53l5cx__api_8c.html#ada57bf6c8d530c6f5e5df9c1a9cec5f8" title="This function sets a new resolution (4x4 or 8x8)." alt="" coords="420,650,595,678"/>
+<area shape="poly" id="edge42_Node000001_Node000019" title=" " alt="" coords="87,549,132,594,162,618,195,636,246,653,301,663,354,668,407,670,402,672,354,673,300,668,245,658,193,641,159,622,129,598,88,554"/>
+<area shape="rect" id="Node000020" href="$vl53l5cx__api_8c.html#aa1adc6d75fd4613bf74596f1b5440c23" title="This function starts a ranging session." alt="" coords="194,855,363,883"/>
+<area shape="poly" id="edge47_Node000001_Node000020" title=" " alt="" coords="87,549,263,841,258,843,84,553"/>
+<area shape="rect" id="Node000003" href="$vl53l5cx__platform_8c.html#ad3c2662d6d7b097a567ef29e1f3d5a47" title="Mandatory function used to read multiples bytes." alt="" coords="1107,179,1178,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1033,48,1061,67,1083,90,1102,116,1131,166,1125,165,1097,119,1079,94,1057,71,1033,53"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="851,80,901,82,954,88,1008,99,1060,117,1095,139,1123,168,1118,168,1092,143,1058,122,1007,104,954,93,901,87,853,85"/>
+<area shape="rect" id="Node000005" href="$vl53l5cx__platform_8c.html#ac82d5f4ed9bb61a17cdca59b80393326" title="Optional function, only used to perform an hardware reset of the sensor." alt="" coords="933,460,1028,488"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="777,99,818,129,856,169,900,242,935,319,959,391,975,447,970,445,954,392,930,321,896,244,852,172,814,133,777,105"/>
+<area shape="poly" id="edge23_Node000006_Node000003" title=" " alt="" coords="290,420,323,380,361,328,373,301,379,277,388,255,409,235,452,210,497,190,543,174,591,162,689,147,786,142,879,146,964,155,1094,180,1089,182,963,160,879,151,786,148,690,152,592,167,545,179,499,195,454,215,413,239,393,258,384,279,378,303,365,330,327,383,294,423"/>
+<area shape="rect" id="Node000007" href="$vl53l5cx__api_8c.html#a8f29abecfd7c5a543ea99507182b59a9" title="Copyright (c) 2021 STMicroelectronics." alt="" coords="911,512,1050,557"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="283,420,299,386,326,341,363,297,385,278,410,263,437,251,461,245,505,244,605,262,680,267,741,270,769,275,797,285,826,302,856,327,872,348,880,370,882,413,883,455,890,476,904,498,906,502,901,501,900,501,885,479,878,456,877,413,875,371,867,351,852,331,823,306,795,290,768,280,741,275,680,272,604,268,504,249,462,250,439,256,412,267,388,282,366,301,330,345,304,389,288,423"/>
+<area shape="rect" id="Node000008" href="$vl53l5cx__platform_8c.html#a83eb55875e816a5f50f7d9accb4ddf67" title="Mandatory function, used to wait during an amount of time." alt="" coords="1108,286,1177,314"/>
+<area shape="poly" id="edge35_Node000006_Node000008" title=" " alt="" coords="289,420,361,328,381,291,391,276,410,263,455,243,501,228,598,210,697,206,794,212,886,225,968,243,1096,281,1091,283,967,248,885,230,793,217,697,211,599,215,503,233,457,248,412,267,395,280,385,294,365,330,293,423"/>
+<area shape="rect" id="Node000009" href="$vl53l5cx__api_8c.html#a9b6bbd390eb622e54db8feeb1239e147" title=" " alt="" coords="438,277,577,322"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="295,419,345,381,410,339,436,327,433,331,412,343,349,385,299,423"/>
+<area shape="rect" id="Node000010" href="$vl53l5cx__platform_8c.html#a03ca2bd89dc070bb9366e847cbcbf42b" title=" " alt="" coords="719,340,787,368"/>
+<area shape="poly" id="edge22_Node000006_Node000010" title=" " alt="" coords="329,421,411,404,571,377,705,359,701,362,571,382,411,409,332,426"/>
+<area shape="rect" id="Node000011" href="$vl53l5cx__api_8c.html#a54f1246226bfaa643c78e87aaab3aa0d" title="Inner function, not available outside this file." alt="" coords="652,399,854,427"/>
+<area shape="poly" id="edge14_Node000006_Node000011" title=" " alt="" coords="330,431,638,417,635,420,332,436"/>
+<area shape="rect" id="Node000012" href="$vl53l5cx__platform_8c.html#ab6e53d9399892b9aeda7d6eef69c0121" title="Mandatory function used to write multiples bytes." alt="" coords="944,586,1016,614"/>
+<area shape="poly" id="edge38_Node000006_Node000012" title=" " alt="" coords="330,435,452,441,605,454,752,475,811,489,855,507,872,521,881,536,889,552,903,567,932,584,927,585,900,571,885,555,876,539,868,524,852,511,810,494,751,480,605,459,452,446,332,440"/>
+<area shape="rect" id="Node000013" href="$vl53l5cx__api_8c.html#a8d1519ffc350ce504d48fa618ee0c954" title="Inner function, not available outside this file." alt="" coords="654,520,852,548"/>
+<area shape="poly" id="edge18_Node000006_Node000013" title=" " alt="" coords="316,447,412,477,529,501,642,520,637,522,528,506,410,482,318,453"/>
+<area shape="rect" id="Node000014" href="$vl53l5cx__api_8c.html#a67bf61eebc7a265834d3af512b7c8f59" title="This function can be used to replace &#39;extra data&#39; in DCI." alt="" coords="411,702,604,730"/>
+<area shape="poly" id="edge24_Node000006_Node000014" title=" " alt="" coords="288,447,365,587,377,617,384,642,393,664,413,687,421,694,415,694,409,691,388,667,379,644,372,619,361,589,287,452"/>
+<area shape="rect" id="Node000016" href="$vl53l5cx__api_8c.html#ad1413cd54d0dfacea7f9dbccc5db36df" title="This function can be used to write &#39;extra data&#39; to DCI." alt="" coords="664,586,842,614"/>
+<area shape="poly" id="edge34_Node000006_Node000016" title=" " alt="" coords="297,447,348,483,412,519,471,541,533,558,651,585,646,586,532,564,470,546,410,523,345,488,298,453"/>
+<area shape="rect" id="Node000017" href="$vl53l5cx__platform_8c.html#ae303ae854ba523e02807507b601cc5d8" title="Mandatory function used to write one single byte." alt="" coords="473,754,542,782"/>
+<area shape="poly" id="edge36_Node000006_Node000017" title=" " alt="" coords="289,447,326,508,365,587,378,632,381,670,388,704,398,721,413,739,434,753,460,763,455,764,432,758,409,743,393,724,383,706,376,671,372,633,361,589,321,510,289,453"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="1045,509,1057,498,1076,470,1087,444,1092,419,1093,394,1093,339,1096,308,1104,274,1126,223,1130,219,1110,275,1101,309,1098,340,1098,394,1097,419,1092,445,1081,472,1061,501,1048,514"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="1043,509,1057,498,1088,457,1110,411,1125,366,1135,331,1138,326,1130,367,1115,413,1092,460,1061,502,1046,514"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="577,297,1094,298,1090,301,578,302"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="577,313,706,342,701,345,579,318"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="786,338,1095,212,1091,215,789,343"/>
+<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="807,425,920,457,915,458,807,430"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="816,425,855,443,871,457,880,470,889,484,903,498,910,504,905,504,900,502,885,487,876,473,867,460,852,447,817,430"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="826,425,855,443,869,459,876,475,881,506,885,537,892,552,903,567,932,587,927,587,900,571,887,555,880,538,876,507,871,476,864,462,852,447,826,430"/>
+<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="807,518,920,490,915,492,809,522"/>
+<area shape="poly" id="edge19_Node000013_Node000007" title=" " alt="" coords="852,532,898,534,893,535,853,537"/>
+<area shape="poly" id="edge21_Node000013_Node000012" title=" " alt="" coords="804,546,932,585,926,586,804,551"/>
+<area shape="rect" id="Node000015" href="$vl53l5cx__api_8c.html#a1988c495f38198f8e1c8f48d5a60acad" title="This function can be used to read &#39;extra data&#39; from DCI." alt="" coords="666,648,840,676"/>
+<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="574,699,673,679,669,681,576,704"/>
+<area shape="poly" id="edge30_Node000014_Node000016" title=" " alt="" coords="577,699,603,687,618,675,626,662,636,648,651,635,688,618,683,621,654,639,640,652,631,665,621,678,606,691,579,704"/>
+<area shape="poly" id="edge27_Node000015_Node000003" title=" " alt="" coords="834,674,890,677,950,673,980,666,1008,656,1034,642,1057,623,1074,596,1085,557,1091,510,1094,457,1096,353,1099,309,1104,274,1126,223,1129,219,1110,275,1104,309,1101,353,1099,458,1096,510,1090,558,1079,598,1061,627,1037,646,1010,661,981,671,951,678,890,683,835,679"/>
+<area shape="poly" id="edge28_Node000015_Node000005" title=" " alt="" coords="816,646,835,636,852,623,864,608,870,593,875,562,879,530,887,514,900,498,916,490,921,487,903,502,891,517,884,531,880,562,876,594,868,611,856,627,838,641,818,650"/>
+<area shape="poly" id="edge26_Node000015_Node000007" title=" " alt="" coords="805,646,852,623,867,611,876,599,885,586,900,572,913,566,918,563,903,576,889,589,880,602,871,614,855,627,807,650"/>
+<area shape="poly" id="edge29_Node000015_Node000012" title=" " alt="" coords="805,645,932,612,927,615,807,650"/>
+<area shape="poly" id="edge32_Node000016_Node000005" title=" " alt="" coords="803,583,829,572,852,558,867,543,875,528,884,513,900,498,921,489,916,492,903,502,888,516,880,531,871,546,855,562,831,577,806,588"/>
+<area shape="poly" id="edge31_Node000016_Node000007" title=" " alt="" coords="803,583,898,557,893,560,805,588"/>
+<area shape="poly" id="edge33_Node000016_Node000012" title=" " alt="" coords="842,597,931,599,926,600,843,602"/>
+<area shape="poly" id="edge37_Node000017_Node000012" title=" " alt="" coords="542,762,602,753,681,739,768,716,853,685,906,655,949,625,954,622,909,659,855,690,769,721,682,744,603,758,543,767"/>
+<area shape="poly" id="edge40_Node000018_Node000010" title=" " alt="" coords="300,597,474,487,575,426,651,385,706,367,702,370,653,390,578,431,477,491,304,601"/>
+<area shape="poly" id="edge41_Node000018_Node000017" title=" " alt="" coords="290,625,340,681,374,712,412,739,461,759,455,760,410,743,371,716,336,684,290,630"/>
+<area shape="poly" id="edge43_Node000019_Node000011" title=" " alt="" coords="575,647,603,630,615,615,623,601,629,573,635,542,650,508,683,467,719,439,723,435,687,471,655,510,640,544,635,574,628,603,619,618,606,634,578,651"/>
+<area shape="poly" id="edge44_Node000019_Node000013" title=" " alt="" coords="567,647,603,629,618,616,626,602,635,587,651,572,690,553,686,556,654,576,639,591,631,605,622,619,606,634,570,651"/>
+<area shape="poly" id="edge45_Node000019_Node000015" title=" " alt="" coords="595,661,653,662,648,664,597,666"/>
+<area shape="poly" id="edge46_Node000019_Node000016" title=" " alt="" coords="562,647,685,617,680,619,564,652"/>
+<area shape="poly" id="edge48_Node000020_Node000007" title=" " alt="" coords="298,881,348,914,379,930,412,942,466,957,509,963,552,960,603,943,652,919,691,895,723,869,749,841,796,774,851,686,866,655,872,628,880,601,900,573,909,567,913,564,904,576,885,604,878,630,871,657,856,689,800,777,753,845,726,873,694,899,655,924,605,947,553,965,509,969,465,962,410,948,377,935,345,919,297,886"/>
+<area shape="poly" id="edge54_Node000020_Node000012" title=" " alt="" coords="290,881,339,936,373,965,412,987,536,1033,590,1048,642,1056,692,1056,742,1045,795,1023,852,987,891,950,921,906,943,856,959,804,969,753,975,705,978,631,982,627,980,705,974,754,964,806,948,858,926,908,895,954,855,991,798,1028,744,1050,692,1061,641,1062,589,1053,534,1038,410,991,370,969,335,940,289,886"/>
+<area shape="poly" id="edge49_Node000020_Node000015" title=" " alt="" coords="363,875,420,875,481,871,544,858,603,835,647,803,685,764,714,723,736,691,740,688,719,726,689,767,651,807,606,839,546,863,482,876,420,881,364,880"/>
+<area shape="poly" id="edge50_Node000020_Node000016" title=" " alt="" coords="341,852,603,791,617,773,625,755,627,716,629,676,636,656,650,635,672,622,676,619,654,639,641,658,634,677,632,716,630,756,622,776,606,795,342,857"/>
+<area shape="poly" id="edge53_Node000020_Node000017" title=" " alt="" coords="302,852,351,825,410,797,461,781,456,783,412,802,354,830,305,857"/>
+<area shape="rect" id="Node000021" href="$vl53l5cx__api_8c.html#ac8a5a4b98498ff6cff9b027292d5564b" title="This function gets the current resolution (4x4 or 8x8)." alt="" coords="420,906,596,934"/>
+<area shape="poly" id="edge51_Node000020_Node000021" title=" " alt="" coords="344,881,430,901,424,903,344,886"/>
+<area shape="poly" id="edge52_Node000021_Node000015" title=" " alt="" coords="571,903,603,886,650,839,689,785,718,732,739,692,743,689,723,735,693,788,654,843,606,890,573,908"/>
 </map>

@@ -1,64 +1,60 @@
 <map id="stateGetNedOrigin_f" name="stateGetNedOrigin_f">
-<area shape="rect" id="Node000001" title="Get the coordinate NED frame origin (float)" alt="" coords="1143,551,1297,576"/>
-<area shape="rect" id="Node000002" href="$group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="916,277,1095,303"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1200,541,1153,473,1093,392,1017,305,1021,301,1097,388,1158,470,1205,538"/>
-<area shape="rect" id="Node000015" href="$group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="917,403,1094,428"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="1199,542,1155,491,1126,464,1093,442,1068,431,1070,426,1096,437,1129,460,1159,487,1203,538"/>
-<area shape="rect" id="Node000018" href="$lidar__correction_8c.html#a88fd3a9e1441ecc31a9d48690c413f76" title=" " alt="" coords="927,452,1083,477"/>
-<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="1188,545,1145,517,1094,491,1062,480,1063,475,1096,486,1147,513,1191,541"/>
-<area shape="rect" id="Node000022" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="953,501,1058,527"/>
-<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="1150,550,1058,529,1059,523,1152,545"/>
-<area shape="rect" id="Node000024" href="$ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="972,551,1039,576"/>
-<area shape="poly" id="edge24_Node000001_Node000024" title=" " alt="" coords="1129,566,1039,566,1039,561,1129,561"/>
-<area shape="rect" id="Node000026" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="934,601,1077,641"/>
-<area shape="poly" id="edge26_Node000001_Node000026" title=" " alt="" coords="1159,582,1078,604,1076,599,1158,577"/>
-<area shape="rect" id="Node000029" href="$nav__takeoff__and__landing__rotorcraft_8c.html#a36a0be2a5e1f4341b20064b74fe702cb" title=" " alt="" coords="942,665,1069,691"/>
-<area shape="poly" id="edge29_Node000001_Node000029" title=" " alt="" coords="1196,587,1151,622,1096,655,1063,668,1061,663,1093,650,1148,617,1192,583"/>
-<area shape="rect" id="Node000030" href="$nav__poles__rotorcraft_8c.html#a4ad4434cf0a3d87bda03377092383d4b" title="Init poles from waypoints coordinates in LLA format." alt="" coords="928,715,1083,740"/>
-<area shape="poly" id="edge30_Node000001_Node000030" title=" " alt="" coords="1206,590,1161,648,1131,679,1096,706,1072,717,1070,712,1093,701,1127,675,1157,645,1201,586"/>
-<area shape="rect" id="Node000031" href="$tag__tracking_8c.html#a83bc355253cdc366490766133f756279" title=" " alt="" coords="931,764,1080,789"/>
-<area shape="poly" id="edge31_Node000001_Node000031" title=" " alt="" coords="1211,590,1195,627,1170,672,1137,717,1096,755,1075,766,1073,762,1093,751,1133,713,1165,669,1190,625,1207,588"/>
-<area shape="rect" id="Node000003" href="$group__ac__info.html#gac871ebab1d96f5dcab9d03f29a92246e" title="Get position in local ENU coordinates (float)." alt="" coords="677,203,851,228"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="949,276,805,231,807,225,951,271"/>
-<area shape="rect" id="Node000004" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="437,5,612,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="746,192,692,119,654,78,611,44,587,33,590,28,613,40,658,74,696,115,750,189"/>
-<area shape="rect" id="Node000006" href="$cam__gimbal_8c.html#afc0eb5144ca9e53f88eb85861e8d03b1" title=" " alt="" coords="439,55,610,80"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="740,195,684,144,649,117,611,94,584,83,586,78,613,89,652,112,687,140,743,191"/>
-<area shape="rect" id="Node000009" href="$formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd" title=" " alt="" coords="461,104,588,129"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="727,198,673,171,611,143,577,132,579,127,613,138,676,166,730,194"/>
-<area shape="rect" id="Node000010" href="$group__ac__info.html#ga17b120995d97d500b7eb5aea22214041" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="463,153,587,179"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="688,202,586,181,587,176,689,197"/>
-<area shape="rect" id="Node000011" href="$potential_8c.html#a2ecae8ed4b80ccfece655453a56db7cd" title=" " alt="" coords="467,203,582,228"/>
-<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="664,218,582,218,582,213,664,213"/>
-<area shape="rect" id="Node000012" href="$tcas_8c.html#adb2f00821358ed6ad0f366e6a2422558" title=" " alt="" coords="215,304,389,329"/>
-<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="692,234,361,307,360,301,691,228"/>
-<area shape="rect" id="Node000013" href="$tcas_8c.html#aa520d855e76e58f77855603fde040497" title=" " alt="" coords="437,304,612,329"/>
-<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="725,236,613,287,563,306,561,301,611,282,723,232"/>
-<area shape="rect" id="Node000014" href="$tcas_8c.html#a5baa7069079b8f1211e22af90cf7593b" title=" " alt="" coords="452,353,597,379"/>
-<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="743,240,687,292,652,319,613,343,582,356,580,351,611,338,649,315,684,287,740,236"/>
-<area shape="rect" id="Node000005" href="$nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="221,5,383,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="423,21,384,21,384,15,423,15"/>
-<area shape="rect" id="Node000007" href="$cam__gimbal_8c.html#a15f78f599edcdb63924888513708d37a" title="Run camera control." alt="" coords="237,55,367,80"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="425,70,367,70,367,65,425,65"/>
-<area shape="rect" id="Node000008" href="$cam__gimbal_8c.html#a99baed535216e91b0bf4aef19d917df4" title="Periodic call (run control)" alt="" coords="5,55,167,80"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="223,70,167,70,167,65,223,65"/>
-<area shape="poly" id="edge14_Node000014_Node000012" title=" " alt="" coords="453,353,360,332,361,327,454,348"/>
-<area shape="rect" id="Node000016" href="$group__ac__info.html#ga820170c65c7af86fbb8408811a193641" title="Get position in local ENU coordinates (int)." alt="" coords="678,403,850,428"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="903,418,850,418,850,413,903,413"/>
-<area shape="rect" id="Node000017" href="$follow_8c.html#a193d671739e35bbb235456cb3b65e9ff" title=" " alt="" coords="481,403,569,428"/>
-<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="664,418,569,418,569,413,664,413"/>
-<area shape="rect" id="Node000019" href="$rover__obstacles_8c.html#a8b06d82f74af6c85cb6e41819f187552" title=" " alt="" coords="699,452,829,477"/>
-<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="914,467,829,467,829,462,914,462"/>
-<area shape="rect" id="Node000020" href="$rover__obstacles_8c.html#a3879cba8c4bb3b122c812d6c0089f586" title=" " alt="" coords="488,452,561,477"/>
-<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="685,467,562,467,562,462,685,462"/>
-<area shape="rect" id="Node000021" href="$rover__obstacles_8c.html#a8591617e05d46cb02c404076fd107e94" title=" " alt="" coords="257,452,347,477"/>
-<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="474,467,348,467,348,462,474,462"/>
-<area shape="rect" id="Node000023" href="$cv__target__localization_8c.html#a985eb3daada07ed9f76cf8dceb5300b4" title=" " alt="" coords="679,501,849,527"/>
-<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="939,517,849,517,849,511,939,511"/>
-<area shape="rect" id="Node000025" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="660,551,868,576"/>
-<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="958,566,868,566,868,561,958,561"/>
-<area shape="rect" id="Node000027" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="731,608,797,633"/>
-<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="920,623,797,623,797,618,920,618"/>
-<area shape="rect" id="Node000028" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="453,601,596,641"/>
-<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="716,623,596,623,596,618,716,618"/>
+<area shape="rect" id="Node000001" title="Get the coordinate NED frame origin (float)." alt="" coords="1104,575,1258,602"/>
+<area shape="rect" id="Node000002" href="$group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="879,289,1056,317"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1160,561,1113,492,1054,409,981,320,982,315,1058,406,1118,489,1165,562"/>
+<area shape="rect" id="Node000015" href="$group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="879,419,1056,446"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="1159,561,1115,512,1086,485,1055,461,1030,450,1030,444,1057,457,1090,481,1119,508,1164,563"/>
+<area shape="rect" id="Node000018" href="$lidar__correction_8c.html#a88fd3a9e1441ecc31a9d48690c413f76" title=" " alt="" coords="890,471,1045,498"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="1146,565,1104,540,1055,514,1024,502,1024,496,1057,509,1107,535,1151,566"/>
+<area shape="rect" id="Node000022" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="915,523,1020,550"/>
+<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="1104,571,1020,552,1020,546,1109,570"/>
+<area shape="rect" id="Node000024" href="$ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="934,575,1000,602"/>
+<area shape="poly" id="edge24_Node000001_Node000024" title=" " alt="" coords="1086,589,1001,591,1000,586,1091,588"/>
+<area shape="rect" id="Node000025" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="897,626,1038,671"/>
+<area shape="poly" id="edge25_Node000001_Node000025" title=" " alt="" coords="1117,606,1039,631,1038,626,1112,608"/>
+<area shape="rect" id="Node000027" href="$nav__takeoff__and__landing__rotorcraft_8c.html#a36a0be2a5e1f4341b20064b74fe702cb" title=" " alt="" coords="904,695,1030,722"/>
+<area shape="poly" id="edge27_Node000001_Node000027" title=" " alt="" coords="1156,612,1111,651,1057,686,1030,697,1029,691,1055,681,1108,647,1151,614"/>
+<area shape="rect" id="Node000028" href="$nav__poles__rotorcraft_8c.html#a4ad4434cf0a3d87bda03377092383d4b" title="Init poles from waypoints coordinates in LLA format." alt="" coords="891,747,1044,774"/>
+<area shape="poly" id="edge28_Node000001_Node000028" title=" " alt="" coords="1166,614,1122,677,1092,709,1057,736,1032,749,1031,743,1055,732,1088,705,1118,674,1161,617"/>
+<area shape="rect" id="Node000029" href="$tag__tracking_8c.html#a83bc355253cdc366490766133f756279" title=" " alt="" coords="893,799,1042,826"/>
+<area shape="poly" id="edge29_Node000001_Node000029" title=" " alt="" coords="1172,615,1155,656,1131,702,1098,748,1058,788,1035,801,1034,795,1054,784,1094,745,1126,699,1151,654,1167,618"/>
+<area shape="rect" id="Node000003" href="$group__ac__info.html#gac871ebab1d96f5dcab9d03f29a92246e" title="Get position in local ENU coordinates (float)." alt="" coords="658,213,831,241"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="907,284,788,244,787,239,912,283"/>
+<area shape="rect" id="Node000004" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="436,5,610,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="727,199,709,166,682,125,648,83,609,48,588,36,587,31,612,44,652,80,686,121,713,163,733,200"/>
+<area shape="rect" id="Node000006" href="$cam__gimbal_8c.html#afc0eb5144ca9e53f88eb85861e8d03b1" title=" " alt="" coords="438,57,608,85"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="720,201,673,151,642,124,609,100,584,88,583,83,612,96,646,119,677,147,726,201"/>
+<area shape="rect" id="Node000009" href="$formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd" title=" " alt="" coords="460,109,586,137"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="707,205,662,179,609,152,578,140,577,135,611,147,664,174,712,204"/>
+<area shape="rect" id="Node000010" href="$group__ac__info.html#ga17b120995d97d500b7eb5aea22214041" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="462,161,585,189"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="665,210,586,192,585,187,670,208"/>
+<area shape="rect" id="Node000011" href="$potential_8c.html#a2ecae8ed4b80ccfece655453a56db7cd" title=" " alt="" coords="466,213,580,241"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="640,228,582,230,580,225,645,226"/>
+<area shape="rect" id="Node000012" href="$tcas_8c.html#adb2f00821358ed6ad0f366e6a2422558" title=" " alt="" coords="214,316,388,344"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="664,247,365,318,363,313,668,243"/>
+<area shape="rect" id="Node000013" href="$tcas_8c.html#aa520d855e76e58f77855603fde040497" title=" " alt="" coords="436,315,610,342"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="703,250,611,299,568,316,565,312,609,294,707,247"/>
+<area shape="rect" id="Node000014" href="$tcas_8c.html#a5baa7069079b8f1211e22af90cf7593b" title=" " alt="" coords="451,367,595,394"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="724,252,676,306,645,333,612,356,585,368,582,364,609,352,642,329,672,302,720,255"/>
+<area shape="rect" id="Node000005" href="$nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="220,5,382,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="419,21,384,21,381,17,423,18"/>
+<area shape="rect" id="Node000007" href="$cam__gimbal_8c.html#a15f78f599edcdb63924888513708d37a" title="Run camera control." alt="" coords="236,57,366,85"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="421,73,367,74,365,69,425,70"/>
+<area shape="rect" id="Node000008" href="$cam__gimbal_8c.html#a99baed535216e91b0bf4aef19d917df4" title="Periodic call (run control)." alt="" coords="5,57,166,85"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="218,73,168,73,165,69,222,69"/>
+<area shape="poly" id="edge14_Node000014_Node000012" title=" " alt="" coords="442,364,365,347,364,342,447,362"/>
+<area shape="rect" id="Node000016" href="$group__ac__info.html#ga820170c65c7af86fbb8408811a193641" title="Get position in local ENU coordinates (int)." alt="" coords="659,419,830,446"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="861,433,831,435,830,430,867,432"/>
+<area shape="rect" id="Node000017" href="$follow_8c.html#a193d671739e35bbb235456cb3b65e9ff" title=" " alt="" coords="480,419,567,446"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="641,433,568,435,567,430,646,432"/>
+<area shape="rect" id="Node000019" href="$rover__obstacles_8c.html#a8b06d82f74af6c85cb6e41819f187552" title=" " alt="" coords="680,471,809,498"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="872,485,810,487,809,482,877,484"/>
+<area shape="rect" id="Node000020" href="$rover__obstacles_8c.html#a3879cba8c4bb3b122c812d6c0089f586" title=" " alt="" coords="487,471,559,498"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="662,485,560,487,559,482,667,484"/>
+<area shape="rect" id="Node000021" href="$rover__obstacles_8c.html#a8591617e05d46cb02c404076fd107e94" title=" " alt="" coords="256,471,346,498"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="469,486,347,487,345,482,474,483"/>
+<area shape="rect" id="Node000023" href="$cv__target__localization_8c.html#a985eb3daada07ed9f76cf8dceb5300b4" title=" " alt="" coords="659,523,830,550"/>
+<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="897,537,831,539,830,534,902,536"/>
+<area shape="rect" id="Node000026" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="711,635,778,662"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="879,649,778,651,778,646,884,648"/>
 </map>

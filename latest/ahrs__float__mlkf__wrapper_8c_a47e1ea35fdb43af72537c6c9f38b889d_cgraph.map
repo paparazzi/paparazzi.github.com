@@ -1,23 +1,36 @@
 <map id="gyro_cb" name="gyro_cb">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,79,129"/>
-<area shape="rect" id="Node000002" href="$ahrs__float__mlkf_8c.html#aad9bedf36772800071affa5049921882" title=" " alt="" coords="144,29,304,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,101,90,82,126,64,147,56,148,61,128,68,92,87,62,106"/>
-<area shape="rect" id="Node000006" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="146,79,302,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="78,109,132,101,132,107,79,114"/>
-<area shape="rect" id="Node000007" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="148,128,300,153"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="79,119,134,126,134,131,78,124"/>
-<area shape="rect" id="Node000008" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="127,177,321,203"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="64,127,93,145,128,162,152,171,150,176,126,167,91,150,61,132"/>
-<area shape="rect" id="Node000003" href="$ahrs__float__mlkf_8c.html#a7da516492565fea9fe725c92d3c7e447" title=" " alt="" coords="409,5,522,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,31,395,22,395,28,304,37"/>
-<area shape="rect" id="Node000005" href="$ahrs__float__mlkf_8c.html#a08b5ba2b24ee28f080b00eb5cb08384a" title="Progagate filter&#39;s covariance We don&#39;t propagate state as we assume to have reseted." alt="" coords="401,55,529,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="304,48,388,57,387,62,304,53"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga88aaf9ab7291ca59ad5d2b9673f24749" title="in place quaternion integration with constant rotational velocity" alt="" coords="611,5,765,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="522,15,598,15,598,21,522,21"/>
-<area shape="rect" id="Node000009" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="386,152,545,177"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="321,177,372,172,372,177,322,182"/>
-<area shape="rect" id="Node000010" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="369,201,561,227"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="322,197,356,200,356,206,321,202"/>
-<area shape="rect" id="Node000011" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="609,201,767,227"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="562,211,596,211,596,217,562,217"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,161,78,189"/>
+<area shape="rect" id="Node000002" href="$ahrs__float__mlkf_8c.html#aad9bedf36772800071affa5049921882" title=" " alt="" coords="143,57,302,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,160,83,127,124,96,142,89,138,93,127,100,86,131,56,162"/>
+<area shape="rect" id="Node000006" href="$ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="187,109,259,137"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="77,162,125,147,174,135,170,139,126,152,80,166"/>
+<area shape="rect" id="Node000012" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="145,161,300,189"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="77,173,131,173,127,177,79,178"/>
+<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="147,237,298,265"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="77,187,176,229,172,232,77,192"/>
+<area shape="rect" id="Node000014" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="126,289,320,317"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="51,187,82,231,103,255,127,274,139,283,134,283,124,279,99,258,78,234,50,192"/>
+<area shape="rect" id="Node000003" href="$ahrs__float__mlkf_8c.html#a7da516492565fea9fe725c92d3c7e447" title=" " alt="" coords="408,5,520,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,54,395,33,390,36,292,59"/>
+<area shape="rect" id="Node000005" href="$ahrs__float__mlkf_8c.html#a08b5ba2b24ee28f080b00eb5cb08384a" title="Progagate filter&#39;s covariance We don&#39;t propagate state as we assume to have reseted." alt="" coords="400,57,527,85"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,69,387,70,382,72,304,74"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga88aaf9ab7291ca59ad5d2b9673f24749" title="in place quaternion integration with constant rotational velocity" alt="" coords="609,5,762,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="520,17,596,18,591,20,521,22"/>
+<area shape="rect" id="Node000007" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="399,109,528,137"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="259,121,386,122,381,124,260,126"/>
+<area shape="rect" id="Node000008" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="613,57,758,85"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="525,106,611,88,606,90,527,111"/>
+<area shape="rect" id="Node000009" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="628,109,743,137"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="529,121,614,123,609,124,529,126"/>
+<area shape="rect" id="Node000010" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="630,161,741,189"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="526,135,618,158,612,159,526,140"/>
+<area shape="rect" id="Node000011" href="$imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="630,213,741,241"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="489,135,543,166,608,198,627,208,622,207,606,203,541,170,488,140"/>
+<area shape="poly" id="edge13_Node000013_Node000013" title=" " alt="" coords="191,236,186,228,190,219,203,213,223,211,244,213,257,222,252,222,243,218,223,216,204,218,194,223,192,228,196,237"/>
+<area shape="rect" id="Node000015" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="385,263,542,290"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="320,290,372,287,367,287,321,295"/>
+<area shape="rect" id="Node000016" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="368,315,559,342"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="320,311,355,317,350,317,320,316"/>
+<area shape="rect" id="Node000017" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="607,315,764,342"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="560,326,594,328,589,329,560,331"/>
 </map>

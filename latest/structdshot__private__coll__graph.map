@@ -1,25 +1,23 @@
 <map id="dshot_private" name="dshot_private">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,372,251,397"/>
-<area shape="rect" id="Node000002" href="$structDSHOTDriver.html" title="DSHOT driver structure." alt="" coords="142,284,250,309"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,323,199,371,193,371,193,323"/>
-<area shape="rect" id="Node000003" href="$esc__dshot_8h.html#structDSHOTConfig" title="DSHOT Driver configuration structure." alt="" coords="22,181,130,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,218,97,239,112,258,132,272,154,282,152,286,129,276,109,262,93,242,82,221"/>
-<area shape="rect" id="Node000004" href="$esc__dshot_8h.html#unionDshotDmaBuffer" title=" " alt="" coords="5,93,136,119"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,132,78,181,73,181,70,133"/>
-<area shape="rect" id="Node000005" href="$hal__stm32__dma_8h.html#structDMAConfig" title="DMA stream configuration structure." alt="" coords="386,181,481,207"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="391,214,351,233,328,248,305,262,240,286,239,281,303,258,325,243,348,228,389,209"/>
-<area shape="rect" id="Node000006" href="$hal__stm32__dma_8h.html#structDMADriver" title="Structure representing a DMA driver." alt="" coords="424,284,517,309"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="429,220,428,240,432,259,441,272,453,282,449,286,437,275,427,261,422,240,424,220"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="477,271,480,251,476,232,467,219,454,209,457,205,471,215,481,230,485,251,483,271"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="177,5,236,31"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="206,45,201,94,198,204,198,284,193,284,193,204,196,93,201,44"/>
-<area shape="rect" id="Node000009" href="$esc__dshot_8h.html#unionDshotPacket" title=" " alt="" coords="211,93,314,119"/>
-<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="224,41,257,91,253,94,219,44"/>
-<area shape="rect" id="Node000008" href="$esc__dshot_8h.html#structDshotPackets" title=" " alt="" coords="211,181,320,207"/>
-<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="236,217,221,232,207,259,200,285,195,283,202,257,216,229,232,213"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="266,132,268,181,262,181,261,133"/>
-<area shape="rect" id="Node000010" href="$esc__dshot_8h.html#structDshotTelemetry" title="telemetry with timestamp" alt="" coords="339,93,464,119"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="373,128,285,183,282,179,370,124"/>
-<area shape="rect" id="Node000011" href="$esc__dshot_8h.html#structDshotTelemetryFrame" title="telemetry packed as sent by some KISS ESC" alt="" coords="318,5,485,31"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="404,45,404,93,399,93,399,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="163,430,273,458"/>
+<area shape="rect" id="Node000002" href="$structDSHOTDriver.html" title="DSHOT driver structure." alt="" coords="164,330,272,357"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,371,220,431,216,428,216,375"/>
+<area shape="rect" id="Node000003" href="$esc__dshot_8h.html#structDSHOTConfig" title="DSHOT Driver configuration structure." alt="" coords="16,229,124,257"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,268,93,288,107,304,135,320,166,332,161,334,132,325,104,308,89,291,80,274"/>
+<area shape="rect" id="Node000004" href="$esc__dshot_8h.html#unionDshotDmaBuffer" title=" " alt="" coords="5,106,135,134"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,147,73,229,67,228,69,152"/>
+<area shape="rect" id="Node000005" href="$hal__stm32__dma_8h.html#structDMAConfig" title="DMA stream configuration structure." alt="" coords="190,106,283,134"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="221,144,202,185,186,230,185,257,191,284,212,329,207,329,186,286,179,257,181,228,197,183,218,149"/>
+<area shape="rect" id="Node000006" href="$hal__stm32__dma_8h.html#structDMADriver" title="Structure representing a DMA driver." alt="" coords="268,229,360,257"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="229,146,227,177,229,191,235,204,249,218,270,231,265,231,246,223,230,206,224,192,222,177,226,151"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="293,266,233,331,229,327,289,269"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="306,213,297,186,283,159,259,137,259,131,287,156,302,184,311,214"/>
+<area shape="rect" id="Node000007" href="$esc__dshot_8h.html#structDshotPackets" title=" " alt="" coords="384,229,492,257"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="407,264,328,308,264,332,262,327,326,303,402,266"/>
+<area shape="rect" id="Node000008" href="$esc__dshot_8h.html#unionDshotPacket" title=" " alt="" coords="371,106,473,134"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="427,147,439,229,434,227,424,151"/>
+<area shape="rect" id="Node000009" href="$esc__dshot_8h.html#structDshotTelemetry" title="telemetry with timestamp" alt="" coords="497,106,622,134"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="538,143,453,230,450,226,533,146"/>
+<area shape="rect" id="Node000010" href="$esc__dshot_8h.html#structDshotTelemetryFrame" title="telemetry packed as sent by some KISS ESC" alt="" coords="477,5,642,33"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="561,46,562,106,557,104,558,51"/>
 </map>

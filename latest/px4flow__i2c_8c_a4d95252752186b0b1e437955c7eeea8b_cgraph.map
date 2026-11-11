@@ -1,32 +1,32 @@
 <map id="px4flow_i2c_periodic" name="px4flow_i2c_periodic">
-<area shape="rect" id="Node000001" title="Poll px4flow for data 152 i2c frames are created per second, so the PX4FLOW can be polled at up to 15..." alt="" coords="5,80,164,105"/>
-<area shape="rect" id="Node000002" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="249,5,365,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,77,211,39,237,32,238,37,213,45,116,82"/>
-<area shape="rect" id="Node000004" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="256,55,359,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,81,242,72,242,77,164,86"/>
-<area shape="rect" id="Node000005" href="$px4flow__i2c_8c.html#ad7e1980e7d9d597a3902d1fb1bcb19b9" title="Propagate optical flow information." alt="" coords="224,104,391,129"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="164,99,211,104,210,109,164,104"/>
-<area shape="rect" id="Node000015" href="$px4flow__i2c_8c.html#ac4badf92d1884f734df5f87a6300ea51" title="Propagate itegral frame." alt="" coords="212,153,403,179"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="118,103,213,138,243,147,241,152,211,143,116,108"/>
-<area shape="rect" id="Node000003" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="505,5,599,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,15,492,15,492,21,365,21"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="358,54,491,27,492,33,359,60"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="479,55,625,80"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="370,101,474,80,475,85,372,107"/>
-<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="479,104,625,129"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="391,114,465,114,465,119,391,119"/>
-<area shape="rect" id="Node000008" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="451,153,653,179"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="372,127,475,148,474,153,370,132"/>
-<area shape="rect" id="Node000013" href="$median__filter_8h.html#a87c4aea132190eff249c7eebe4c9e730" title=" " alt="" coords="467,203,637,228"/>
-<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="379,127,404,138,420,151,429,165,438,177,452,189,465,195,462,200,449,194,434,181,424,168,416,155,401,143,377,132"/>
-<area shape="rect" id="Node000009" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="701,153,869,179"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="654,163,688,163,688,169,654,169"/>
-<area shape="rect" id="Node000010" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="917,153,1091,179"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="870,163,904,163,904,169,870,169"/>
-<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1139,128,1294,153"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1090,153,1125,149,1126,154,1091,158"/>
-<area shape="rect" id="Node000012" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1139,177,1295,203"/>
-<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="1091,173,1125,177,1125,182,1090,178"/>
-<area shape="rect" id="Node000014" href="$median__filter_8h.html#ac2d1df417cffe3a92ae5ab588c09e9cf" title=" " alt="" coords="712,203,859,228"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="638,213,698,213,698,218,638,218"/>
+<area shape="rect" id="Node000001" title="Poll px4flow for data 152 i2c frames are created per second, so the PX4FLOW can be polled at up to 15..." alt="" coords="5,84,163,112"/>
+<area shape="rect" id="Node000002" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="248,5,364,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,81,210,43,237,37,233,39,212,48,118,86"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="255,57,357,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,86,241,78,237,81,164,91"/>
+<area shape="rect" id="Node000005" href="$px4flow__i2c_8c.html#ad7e1980e7d9d597a3902d1fb1bcb19b9" title="Propagate optical flow information." alt="" coords="223,109,389,137"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="163,104,209,111,204,113,164,109"/>
+<area shape="rect" id="Node000015" href="$px4flow__i2c_8c.html#ac4badf92d1884f734df5f87a6300ea51" title="Propagate itegral frame." alt="" coords="211,161,401,189"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="118,109,212,146,239,156,233,157,210,151,118,115"/>
+<area shape="rect" id="Node000003" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="504,5,596,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,17,491,18,486,20,364,22"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="356,58,491,31,486,33,358,63"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="478,57,622,85"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="374,106,469,88,464,90,375,111"/>
+<area shape="rect" id="Node000007" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="478,109,623,137"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="389,121,465,123,459,124,390,126"/>
+<area shape="rect" id="Node000008" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="449,161,651,189"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="375,135,469,157,464,158,374,140"/>
+<area shape="rect" id="Node000013" href="$median__filter_8h.html#a87c4aea132190eff249c7eebe4c9e730" title=" " alt="" coords="465,213,635,241"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="375,135,402,148,418,160,427,174,436,186,450,198,465,208,459,207,448,203,432,190,423,177,414,164,400,152,374,140"/>
+<area shape="rect" id="Node000009" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="699,161,867,189"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="652,173,686,175,681,175,652,178"/>
+<area shape="rect" id="Node000010" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="915,161,1087,189"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="867,173,902,175,896,175,867,178"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1136,135,1289,162"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1087,162,1118,160,1123,160,1088,167"/>
+<area shape="rect" id="Node000012" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1135,187,1290,214"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="1087,183,1122,189,1117,189,1087,188"/>
+<area shape="rect" id="Node000014" href="$median__filter_8h.html#ac2d1df417cffe3a92ae5ab588c09e9cf" title=" " alt="" coords="710,213,856,241"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="636,225,697,227,692,227,636,230"/>
 </map>

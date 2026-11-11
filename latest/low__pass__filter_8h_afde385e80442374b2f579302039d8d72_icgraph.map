@@ -1,86 +1,87 @@
 <map id="init_butterworth_4_low_pass" name="init_butterworth_4_low_pass">
-<area shape="rect" id="Node000001" title="Init a fourth order Butterworth filter." alt="" coords="2300,183,2441,223"/>
-<area shape="rect" id="Node000002" href="$complementary__filter_8h.html#af6792ebce4493c98e26b91b357dff8d8" title="Initialize the Butterworth 4th order low&#45;pass complementary filter." alt="" coords="2111,55,2252,95"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2336,175,2296,142,2251,109,2229,97,2232,92,2253,104,2300,137,2339,171"/>
-<area shape="rect" id="Node000005" href="$low__pass__filter__types_8h.html#a3bddc15294a93569f177e8f5b3642a9e" title="Initialize an array of Butterworth low&#45;pass filters to zero." alt="" coords="2111,119,2252,159"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2297,181,2240,161,2242,156,2299,176"/>
-<area shape="rect" id="Node000006" href="$low__pass__filter__types_8h.html#ac87993e5018de8b98a1a80056a5408de" title="Initialize a set of Butterworth low&#45;pass filters to zero for 3D vector data." alt="" coords="2111,183,2252,223"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2286,205,2252,205,2252,200,2286,200"/>
-<area shape="rect" id="Node000007" href="$oneloop__andi_8c.html#ab48a2fb4864eadf8e6f8f265398588af" title="Initialize a filter based on its type." alt="" coords="2112,247,2251,273"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2292,229,2225,250,2223,245,2290,224"/>
-<area shape="rect" id="Node000028" href="$oneloop__nB_8c.html#ab48a2fb4864eadf8e6f8f265398588af" title="Initialize a filter based on its type." alt="" coords="2112,349,2251,374"/>
-<area shape="poly" id="edge33_Node000001_Node000028" title=" " alt="" coords="2337,234,2200,350,2196,346,2334,229"/>
-<area shape="rect" id="Node000003" href="$complementary__filter__types_8h.html#a5ea2fc8231e410eddd26972c64dd8bc2" title="Initialize an array of 4th order Butterworth complementary filters." alt="" coords="1889,5,2062,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2097,57,2059,48,2060,43,2098,52"/>
-<area shape="rect" id="Node000004" href="$complementary__filter__types_8h.html#a330d8798f51789a376313384c8b64f84" title="Initialize 3D vector of 4th order Butterworth complementary filters." alt="" coords="1888,69,2063,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="2097,83,2063,86,2063,80,2097,78"/>
-<area shape="rect" id="Node000008" href="$oneloop__andi_8c.html#a9c209edfd25168b5f05d44a164830259" title="Initialize the Low Pass Filter Struct." alt="" coords="1943,271,2008,297"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="2099,272,2008,283,2008,278,2098,267"/>
-<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html#a0dfccb08e52039fd93fe7c6e903df8b1" title=" " alt="" coords="1936,173,2015,198"/>
-<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="2128,245,2110,237,2062,212,2014,197,2016,192,2064,207,2112,232,2130,240"/>
-<area shape="rect" id="Node000027" href="$oneloop__andi_8c.html#ab799fba4cc0efb137bb004ec0002b340" title="Reinitialize Low Pass filter if new frequency setting or if forced." alt="" coords="1892,222,2059,247"/>
-<area shape="poly" id="edge31_Node000007_Node000027" title=" " alt="" coords="2098,252,2059,248,2059,242,2099,247"/>
-<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html#a208f7e377df6174e5050c007c980d9ba" title="Initialize all Low Pass Filters." alt="" coords="1745,270,1833,295"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1929,286,1833,286,1833,280,1929,281"/>
-<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html#accb008a2b3851434c56824df7b7b8c15" title="Init function of Oneloop ANDI controller" alt="" coords="1531,267,1668,293"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1732,285,1668,284,1668,278,1732,279"/>
-<area shape="rect" id="Node000012" href="$oneloop__andi_8c.html#a72cf7ca1cd037d486980bdcdac83f988" title="Reinitialize all the Low Pass Filters." alt="" coords="1739,194,1840,219"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1923,194,1841,204,1840,198,1922,189"/>
-<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="1508,187,1691,227"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1725,209,1691,209,1691,204,1725,204"/>
-<area shape="rect" id="Node000014" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1323,194,1460,219"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1494,209,1460,209,1460,204,1494,204"/>
-<area shape="rect" id="Node000015" href="$guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="1063,243,1275,269"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1321,225,1227,246,1226,241,1320,220"/>
-<area shape="rect" id="Node000025" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1097,145,1240,170"/>
-<area shape="poly" id="edge29_Node000014_Node000025" title=" " alt="" coords="1320,194,1226,173,1227,167,1321,188"/>
-<area shape="rect" id="Node000026" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="1075,194,1263,219"/>
-<area shape="poly" id="edge30_Node000014_Node000026" title=" " alt="" coords="1309,209,1263,209,1263,204,1309,204"/>
-<area shape="rect" id="Node000016" href="$guidance__oneloop__nB_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="847,223,1012,249"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1049,249,1012,246,1013,240,1049,243"/>
-<area shape="rect" id="Node000022" href="$guidance__oneloop__nB_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="852,322,1007,347"/>
-<area shape="poly" id="edge21_Node000015_Node000022" title=" " alt="" coords="1090,275,1064,284,1040,297,1016,312,981,324,979,319,1014,307,1037,293,1062,279,1088,270"/>
-<area shape="rect" id="Node000024" href="$guidance__oneloop__nB_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="844,273,1015,298"/>
-<area shape="poly" id="edge26_Node000015_Node000024" title=" " alt="" coords="1052,273,1015,278,1014,272,1051,268"/>
-<area shape="rect" id="Node000017" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,271,573,297"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="833,247,622,269,574,275,573,270,621,264,833,242"/>
-<area shape="rect" id="Node000018" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,297,360,322"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="395,299,361,304,360,299,394,294"/>
-<area shape="rect" id="Node000019" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,239,188,265"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="240,295,187,280,143,267,145,262,189,275,241,290"/>
-<area shape="rect" id="Node000020" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,289,187,329"/>
-<area shape="poly" id="edge19_Node000018_Node000020" title=" " alt="" coords="222,312,188,312,188,307,222,307"/>
-<area shape="rect" id="Node000021" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,354,179,379"/>
-<area shape="poly" id="edge20_Node000018_Node000021" title=" " alt="" coords="241,329,189,344,145,356,143,351,187,339,240,323"/>
-<area shape="poly" id="edge22_Node000022_Node000017" title=" " alt="" coords="871,353,817,364,754,371,687,372,621,361,587,349,555,332,506,299,509,295,558,328,589,344,622,356,687,366,754,366,817,359,870,348"/>
-<area shape="rect" id="Node000023" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="621,322,796,347"/>
-<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="838,337,796,337,796,332,838,332"/>
-<area shape="poly" id="edge24_Node000023_Node000017" title=" " alt="" coords="639,321,545,299,547,294,641,316"/>
-<area shape="poly" id="edge25_Node000023_Node000018" title=" " alt="" coords="608,331,360,316,360,310,608,326"/>
-<area shape="poly" id="edge27_Node000024_Node000017" title=" " alt="" coords="830,288,574,287,574,282,830,282"/>
-<area shape="poly" id="edge28_Node000024_Node000023" title=" " alt="" coords="859,304,767,325,766,319,858,298"/>
-<area shape="poly" id="edge32_Node000027_Node000012" title=" " alt="" coords="1878,223,1840,217,1840,212,1879,217"/>
-<area shape="rect" id="Node000029" href="$oneloop__nB_8c.html#a9c209edfd25168b5f05d44a164830259" title="Initialize the Low Pass Filter Struct." alt="" coords="1943,374,2008,399"/>
-<area shape="poly" id="edge34_Node000028_Node000029" title=" " alt="" coords="2099,374,2008,385,2008,380,2098,369"/>
-<area shape="rect" id="Node000032" href="$oneloop__nB_8c.html#a0dfccb08e52039fd93fe7c6e903df8b1" title=" " alt="" coords="1936,325,2015,350"/>
-<area shape="poly" id="edge37_Node000028_Node000032" title=" " alt="" coords="2098,354,2015,344,2015,339,2099,349"/>
-<area shape="rect" id="Node000038" href="$oneloop__nB_8c.html#ab799fba4cc0efb137bb004ec0002b340" title="Reinitialize Low Pass filter if new frequency setting or if forced." alt="" coords="1892,423,2059,449"/>
-<area shape="poly" id="edge46_Node000028_Node000038" title=" " alt="" coords="2142,382,2064,415,2027,426,2026,421,2062,409,2140,377"/>
-<area shape="rect" id="Node000030" href="$oneloop__nB_8c.html#a208f7e377df6174e5050c007c980d9ba" title="Initialize all Low Pass Filters." alt="" coords="1745,378,1833,403"/>
-<area shape="poly" id="edge35_Node000029_Node000030" title=" " alt="" coords="1929,390,1833,392,1833,387,1929,385"/>
-<area shape="rect" id="Node000031" href="$oneloop__nB_8c.html#afc5953ac56c51be667e004a8b97e3595" title="Init function of Oneloop ANDI controller" alt="" coords="1536,382,1663,407"/>
-<area shape="poly" id="edge36_Node000030_Node000031" title=" " alt="" coords="1731,395,1663,396,1663,391,1731,389"/>
-<area shape="rect" id="Node000033" href="$oneloop__nB_8c.html#a72cf7ca1cd037d486980bdcdac83f988" title="Reinitialize all the Low Pass Filters." alt="" coords="1739,325,1840,350"/>
-<area shape="poly" id="edge38_Node000032_Node000033" title=" " alt="" coords="1922,340,1840,340,1840,335,1922,335"/>
-<area shape="rect" id="Node000034" href="$oneloop__nB_8c.html#a2715c0f63ac8b203a76e7e3347fe87e8" title="Propagate the filters." alt="" coords="1514,317,1685,357"/>
-<area shape="poly" id="edge39_Node000033_Node000034" title=" " alt="" coords="1725,340,1685,340,1685,335,1725,335"/>
-<area shape="rect" id="Node000035" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="1328,325,1455,350"/>
-<area shape="poly" id="edge40_Node000034_Node000035" title=" " alt="" coords="1500,340,1455,340,1455,335,1500,335"/>
-<area shape="rect" id="Node000036" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="1087,293,1251,333"/>
-<area shape="poly" id="edge41_Node000035_Node000036" title=" " alt="" coords="1313,332,1250,325,1251,319,1314,326"/>
-<area shape="rect" id="Node000037" href="$oneloop__nB_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1097,358,1240,383"/>
-<area shape="poly" id="edge45_Node000035_Node000037" title=" " alt="" coords="1315,351,1241,363,1240,357,1314,346"/>
-<area shape="poly" id="edge42_Node000036_Node000016" title=" " alt="" coords="1088,292,1062,282,1014,263,978,251,980,246,1016,257,1064,278,1089,286"/>
-<area shape="poly" id="edge43_Node000036_Node000022" title=" " alt="" coords="1073,324,1007,330,1006,325,1073,319"/>
-<area shape="poly" id="edge44_Node000036_Node000024" title=" " alt="" coords="1072,305,1014,298,1015,293,1073,299"/>
+<area shape="rect" id="Node000001" title="Init a fourth order Butterworth filter." alt="" coords="2078,196,2218,241"/>
+<area shape="rect" id="Node000002" href="$complementary__filter_8h.html#af6792ebce4493c98e26b91b357dff8d8" title="Initialize the Butterworth 4th order low&#45;pass complementary filter." alt="" coords="1889,57,2030,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2111,184,2073,151,2028,117,2010,105,2011,100,2031,112,2077,147,2116,186"/>
+<area shape="rect" id="Node000005" href="$low__pass__filter__types_8h.html#a3bddc15294a93569f177e8f5b3642a9e" title="Initialize an array of Butterworth low&#45;pass filters to zero." alt="" coords="1889,127,2030,171"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2068,190,2022,175,2022,169,2074,190"/>
+<area shape="rect" id="Node000006" href="$low__pass__filter__types_8h.html#ac87993e5018de8b98a1a80056a5408de" title="Initialize a set of Butterworth low&#45;pass filters to zero for 3D vector data." alt="" coords="1889,196,2030,241"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2060,219,2030,221,2030,216,2065,218"/>
+<area shape="rect" id="Node000007" href="$oneloop__andi_8c.html#ab48a2fb4864eadf8e6f8f265398588af" title="Initialize a filter based on its type." alt="" coords="1890,264,2029,292"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2066,245,2006,267,2005,261,2060,246"/>
+<area shape="rect" id="Node000027" href="$oneloop__nB_8c.html#ab48a2fb4864eadf8e6f8f265398588af" title="Initialize a filter based on its type." alt="" coords="1890,372,2029,400"/>
+<area shape="poly" id="edge34_Node000001_Node000027" title=" " alt="" coords="2113,250,1978,374,1976,370,2108,252"/>
+<area shape="rect" id="Node000003" href="$complementary__filter__types_8h.html#a5ea2fc8231e410eddd26972c64dd8bc2" title="Initialize an array of 4th order Butterworth complementary filters." alt="" coords="1668,5,1840,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1872,58,1841,52,1841,47,1877,58"/>
+<area shape="rect" id="Node000004" href="$complementary__filter__types_8h.html#a330d8798f51789a376313384c8b64f84" title="Initialize 3D vector of 4th order Butterworth complementary filters." alt="" coords="1667,75,1841,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1871,87,1842,92,1842,87,1876,86"/>
+<area shape="rect" id="Node000008" href="$oneloop__andi_8c.html#a9c209edfd25168b5f05d44a164830259" title="Initialize the Low Pass Filter Struct." alt="" coords="1722,290,1786,318"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1878,288,1787,302,1786,297,1872,289"/>
+<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html#a0dfccb08e52039fd93fe7c6e903df8b1" title=" " alt="" coords="1716,186,1793,214"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="1899,258,1888,255,1840,229,1793,212,1794,207,1842,224,1891,251,1904,259"/>
+<area shape="rect" id="Node000026" href="$oneloop__andi_8c.html#ab799fba4cc0efb137bb004ec0002b340" title="Reinitialize Low Pass filter if new frequency setting or if forced." alt="" coords="1671,238,1837,266"/>
+<area shape="poly" id="edge32_Node000007_Node000026" title=" " alt="" coords="1873,267,1838,265,1838,260,1878,267"/>
+<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html#a208f7e377df6174e5050c007c980d9ba" title="Initialize all Low Pass Filters." alt="" coords="1525,288,1612,316"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1704,303,1613,305,1613,300,1709,303"/>
+<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html#accb008a2b3851434c56824df7b7b8c15" title="Init function of Oneloop ANDI controller." alt="" coords="1312,287,1448,315"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1507,302,1449,304,1449,299,1513,302"/>
+<area shape="rect" id="Node000012" href="$oneloop__andi_8c.html#a72cf7ca1cd037d486980bdcdac83f988" title="Reinitialize all the Low Pass Filters." alt="" coords="1519,187,1619,215"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1697,200,1620,203,1619,198,1703,200"/>
+<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="1289,179,1471,223"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1500,201,1472,204,1471,198,1506,201"/>
+<area shape="rect" id="Node000014" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1105,187,1241,215"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1271,201,1242,204,1242,198,1276,201"/>
+<area shape="rect" id="Node000015" href="$guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="846,263,1057,291"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1118,220,995,265,993,260,1113,221"/>
+<area shape="rect" id="Node000024" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="880,135,1022,163"/>
+<area shape="poly" id="edge30_Node000014_Node000024" title=" " alt="" coords="1094,183,1014,166,1014,161,1099,183"/>
+<area shape="rect" id="Node000025" href="$stabilization__oneloop_8c.html#a48cff283114303642bc53edbb6c836a9" title=" " alt="" coords="858,187,1045,215"/>
+<area shape="poly" id="edge31_Node000014_Node000025" title=" " alt="" coords="1087,201,1046,204,1045,198,1092,201"/>
+<area shape="poly" id="edge29_Node000015_Node000015" title=" " alt="" coords="988,248,976,244,951,242,928,244,916,249,912,254,918,264,913,262,907,254,912,245,927,239,951,237,977,239,993,248"/>
+<area shape="rect" id="Node000016" href="$guidance__oneloop__nB_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="631,230,795,258"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="830,261,796,258,796,253,835,260"/>
+<area shape="rect" id="Node000017" href="$guidance__oneloop__nB_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="636,382,790,410"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="860,296,847,305,832,314,823,324,799,347,742,384,740,379,796,343,819,320,829,310,844,300,855,298"/>
+<area shape="rect" id="Node000023" href="$guidance__oneloop__nB_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="628,306,798,334"/>
+<area shape="poly" id="edge26_Node000015_Node000023" title=" " alt="" coords="853,295,795,308,794,303,858,294"/>
+<area shape="poly" id="edge16_Node000016_Node000016" title=" " alt="" coords="749,214,737,211,713,208,690,210,678,215,674,221,680,230,675,229,669,221,674,211,689,205,713,203,739,206,754,215"/>
+<area shape="poly" id="edge25_Node000017_Node000017" title=" " alt="" coords="749,366,737,363,713,360,690,362,678,367,674,373,680,382,675,380,669,373,674,363,689,357,713,355,739,358,754,367"/>
+<area shape="rect" id="Node000018" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="406,344,580,372"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="618,380,579,375,579,370,623,380"/>
+<area shape="poly" id="edge19_Node000018_Node000018" title=" " alt="" coords="525,329,515,325,493,323,473,325,462,330,459,335,464,345,459,343,454,336,458,326,471,320,493,318,516,320,530,329"/>
+<area shape="rect" id="Node000019" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="235,344,358,372"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="388,359,358,361,358,356,393,358"/>
+<area shape="poly" id="edge23_Node000019_Node000019" title=" " alt="" coords="328,329,318,325,296,323,276,325,265,330,262,335,267,345,262,343,257,336,261,326,275,320,296,318,320,320,334,329"/>
+<area shape="rect" id="Node000020" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,284,187,312"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="234,340,186,326,150,315,149,310,187,321,239,339"/>
+<area shape="rect" id="Node000021" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,336,186,381"/>
+<area shape="poly" id="edge22_Node000019_Node000021" title=" " alt="" coords="216,359,187,361,186,356,221,357"/>
+<area shape="rect" id="Node000022" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,404,178,432"/>
+<area shape="poly" id="edge24_Node000019_Node000022" title=" " alt="" coords="234,378,187,396,150,406,148,401,186,390,239,376"/>
+<area shape="poly" id="edge27_Node000023_Node000018" title=" " alt="" coords="613,337,576,346,575,341,618,336"/>
+<area shape="poly" id="edge28_Node000023_Node000023" title=" " alt="" coords="749,290,737,287,713,284,690,286,678,291,674,297,680,306,675,304,669,297,674,287,689,281,713,279,739,282,754,291"/>
+<area shape="poly" id="edge33_Node000026_Node000012" title=" " alt="" coords="1684,233,1619,217,1620,212,1689,233"/>
+<area shape="rect" id="Node000028" href="$oneloop__nB_8c.html#a9c209edfd25168b5f05d44a164830259" title="Initialize the Low Pass Filter Struct." alt="" coords="1722,399,1786,427"/>
+<area shape="poly" id="edge35_Node000027_Node000028" title=" " alt="" coords="1878,397,1787,412,1787,406,1872,397"/>
+<area shape="rect" id="Node000031" href="$oneloop__nB_8c.html#a0dfccb08e52039fd93fe7c6e903df8b1" title=" " alt="" coords="1716,347,1793,375"/>
+<area shape="poly" id="edge38_Node000027_Node000031" title=" " alt="" coords="1872,376,1793,368,1793,363,1878,376"/>
+<area shape="rect" id="Node000037" href="$oneloop__nB_8c.html#ab799fba4cc0efb137bb004ec0002b340" title="Reinitialize Low Pass filter if new frequency setting or if forced." alt="" coords="1671,451,1837,479"/>
+<area shape="poly" id="edge48_Node000027_Node000037" title=" " alt="" coords="1917,407,1842,441,1806,453,1805,448,1840,436,1912,408"/>
+<area shape="rect" id="Node000029" href="$oneloop__nB_8c.html#a208f7e377df6174e5050c007c980d9ba" title="Initialize all Low Pass Filters." alt="" coords="1525,403,1612,431"/>
+<area shape="poly" id="edge36_Node000028_Node000029" title=" " alt="" coords="1704,414,1613,419,1613,413,1709,414"/>
+<area shape="rect" id="Node000030" href="$oneloop__nB_8c.html#afc5953ac56c51be667e004a8b97e3595" title="Init function of Oneloop ANDI controller." alt="" coords="1317,407,1443,435"/>
+<area shape="poly" id="edge37_Node000029_Node000030" title=" " alt="" coords="1507,418,1443,422,1443,417,1513,418"/>
+<area shape="rect" id="Node000032" href="$oneloop__nB_8c.html#a72cf7ca1cd037d486980bdcdac83f988" title="Reinitialize all the Low Pass Filters." alt="" coords="1519,347,1619,375"/>
+<area shape="poly" id="edge39_Node000031_Node000032" title=" " alt="" coords="1697,361,1620,364,1619,358,1703,361"/>
+<area shape="rect" id="Node000033" href="$oneloop__nB_8c.html#a2715c0f63ac8b203a76e7e3347fe87e8" title="Propagate the filters." alt="" coords="1295,339,1465,383"/>
+<area shape="poly" id="edge40_Node000032_Node000033" title=" " alt="" coords="1500,361,1466,364,1465,358,1505,361"/>
+<area shape="rect" id="Node000034" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="1110,347,1236,375"/>
+<area shape="poly" id="edge41_Node000033_Node000034" title=" " alt="" coords="1277,361,1236,364,1236,358,1282,361"/>
+<area shape="rect" id="Node000035" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="870,339,1033,383"/>
+<area shape="poly" id="edge42_Node000034_Node000035" title=" " alt="" coords="1093,361,1034,364,1033,358,1098,361"/>
+<area shape="rect" id="Node000036" href="$oneloop__nB_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="880,407,1022,435"/>
+<area shape="poly" id="edge47_Node000034_Node000036" title=" " alt="" coords="1114,379,1058,398,1015,409,1014,404,1056,393,1109,380"/>
+<area shape="poly" id="edge43_Node000035_Node000016" title=" " alt="" coords="892,330,844,305,821,288,796,273,767,261,767,255,799,268,824,283,847,300,897,331"/>
+<area shape="poly" id="edge44_Node000035_Node000017" title=" " alt="" coords="857,375,790,387,790,382,852,375"/>
+<area shape="poly" id="edge45_Node000035_Node000023" title=" " alt="" coords="852,344,797,337,797,331,857,344"/>
+<area shape="poly" id="edge46_Node000035_Node000035" title=" " alt="" coords="986,323,974,320,951,317,931,319,918,324,913,330,914,340,909,337,908,329,915,320,929,314,951,312,975,315,991,324"/>
 </map>

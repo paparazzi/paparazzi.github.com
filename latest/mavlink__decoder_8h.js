@@ -7,7 +7,12 @@ var mavlink__decoder_8h =
       [ "seq", "mavlink__decoder_8h.html#adecf09c443f75267a30d7d876a993687", null ],
       [ "sys_id", "mavlink__decoder_8h.html#a9e06cb3a484ac3458d693f32ba410d40", null ]
     ] ],
-    [ "mavlink_msg_req", "structmavlink__msg__req.html", "structmavlink__msg__req" ],
+    [ "mavlink_msg_req", "mavlink__decoder_8h.html#structmavlink__msg__req", [
+      [ "callback", "mavlink__decoder_8h.html#a3c6c47d6984e480bcc081421aafcadbf", null ],
+      [ "msg", "mavlink__decoder_8h.html#a7d455d095228e29a9ef984493d0e2e58", null ],
+      [ "msg_id", "mavlink__decoder_8h.html#ab0e1592470bf3835f03a0601d5dbd92d", null ],
+      [ "next", "mavlink__decoder_8h.html#a3c862e7aa51b613dd4c3c5b0c248d575", null ]
+    ] ],
     [ "mavlink_transport", "mavlink__decoder_8h.html#structmavlink__transport", [
       [ "checksum", "mavlink__decoder_8h.html#aa11aaa8f41e1d5f7882d2e992ddd4e9a", null ],
       [ "payload_idx", "mavlink__decoder_8h.html#afbdbf62886c2364326115aad3a0bd062", null ],

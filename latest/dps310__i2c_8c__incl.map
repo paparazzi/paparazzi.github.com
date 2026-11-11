@@ -1,33 +1,33 @@
 <map id="sw/airborne/peripherals/dps310_i2c.c" name="sw/airborne/peripherals/dps310_i2c.c">
-<area shape="rect" id="Node000001" title="Driver for the Infineon DPS310 barometer (I2C)" alt="" coords="477,5,651,45"/>
-<area shape="rect" id="Node000002" href="$dps310__i2c_8h.html" title="Driver for the Infineon DPS310 barometer (I2C)" alt="" coords="363,93,509,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="537,48,477,88,474,83,534,43"/>
-<area shape="rect" id="Node000012" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="605,101,779,126"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="594,43,665,91,662,95,591,48"/>
-<area shape="rect" id="Node000003" href="$dps310__regs_8h.html" title="Register definitions for Infineon DPS310 pressure sensor." alt="" coords="363,181,509,221"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,134,439,167,433,167,433,134"/>
-<area shape="rect" id="Node000005" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="205,189,339,214"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="401,136,307,185,305,180,399,131"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="409,269,463,295"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,222,439,255,433,255,433,222"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="297,212,401,261,399,266,295,216"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="5,269,173,295"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="246,216,130,266,128,261,244,212"/>
-<area shape="rect" id="Node000007" href="$threads_8h.html" title=" " alt="" coords="198,269,373,295"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="277,214,284,255,278,256,271,215"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="27,350,109,375"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="255,297,113,348,112,343,253,292"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="133,343,296,383"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="277,297,243,334,239,331,273,293"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="321,350,391,375"/>
-<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="298,293,338,338,334,341,294,297"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="416,350,491,375"/>
-<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="311,292,418,342,416,347,309,297"/>
-<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="713,124,738,143,763,167,778,195,777,209,770,223,750,239,719,251,639,268,551,278,477,282,477,277,551,273,638,263,718,246,747,234,766,220,772,208,772,196,759,171,735,147,709,128"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="831,189,918,214"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="718,124,839,180,836,185,716,129"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="534,189,605,214"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="677,128,599,183,596,178,674,124"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="629,189,755,214"/>
-<area shape="poly" id="edge16_Node000012_Node000015" title=" " alt="" coords="695,126,695,174,689,174,689,126"/>
+<area shape="rect" id="Node000001" title="Driver for the Infineon DPS310 barometer (I2C)." alt="" coords="472,5,647,50"/>
+<area shape="rect" id="Node000002" href="$dps310__i2c_8h.html" title="Driver for the Infineon DPS310 barometer (I2C)." alt="" coords="360,98,506,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,49,477,91,474,87,527,52"/>
+<area shape="rect" id="Node000012" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="600,106,772,134"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="590,48,658,97,653,97,589,53"/>
+<area shape="rect" id="Node000003" href="$dps310__regs_8h.html" title="Register definitions for Infineon DPS310 pressure sensor." alt="" coords="360,191,506,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,141,435,177,431,174,432,145"/>
+<area shape="rect" id="Node000005" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="204,199,336,227"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="392,145,309,194,306,189,396,142"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="406,283,460,311"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="435,234,435,269,431,266,431,238"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="297,225,396,276,391,277,296,230"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,283,173,311"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="240,230,133,279,130,274,243,225"/>
+<area shape="rect" id="Node000007" href="$threads_8h.html" title=" " alt="" coords="196,283,371,311"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="274,225,282,269,277,267,271,230"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="28,368,110,395"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="249,314,122,361,116,364,114,359,120,357,247,309"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="133,359,296,404"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="275,310,244,349,241,345,270,313"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="319,368,390,395"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="296,309,336,357,331,356,294,314"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="414,368,487,395"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="311,309,413,360,407,360,310,314"/>
+<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="706,132,733,153,758,179,771,208,771,223,763,237,743,252,713,265,635,282,549,292,476,297,475,292,549,287,634,277,712,260,740,248,759,234,765,221,766,209,753,182,730,157,705,137"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="823,199,910,227"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="713,132,829,192,824,192,712,137"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="530,199,600,227"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="671,133,596,192,593,187,667,136"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="623,199,750,227"/>
+<area shape="poly" id="edge16_Node000012_Node000015" title=" " alt="" coords="688,132,689,185,684,183,685,137"/>
 </map>

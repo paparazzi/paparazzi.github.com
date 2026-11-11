@@ -1,35 +1,31 @@
 <map id="stab_sp_from_quat_f" name="stab_sp_from_quat_f">
-<area shape="rect" id="Node000001" title=" " alt="" coords="693,141,852,167"/>
-<area shape="rect" id="Node000002" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="480,63,645,88"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,138,644,102,610,91,612,86,646,97,733,133"/>
-<area shape="rect" id="Node000007" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="493,112,633,137"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="679,144,633,137,633,132,680,138"/>
-<area shape="rect" id="Node000009" href="$stabilization_8c.html#ac7a492a4d563a518c14c8621d828d34f" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="483,162,643,202"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="680,169,643,174,642,169,679,164"/>
-<area shape="rect" id="Node000012" href="$stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="483,247,643,287"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="737,176,602,250,600,245,735,171"/>
-<area shape="rect" id="Node000003" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="278,63,402,88"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,78,402,78,402,73,466,73"/>
-<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="11,5,194,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="273,62,155,33,157,28,274,57"/>
-<area shape="rect" id="Node000005" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="12,55,193,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="264,78,193,78,193,73,264,73"/>
-<area shape="rect" id="Node000006" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="20,120,185,145"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="274,94,157,123,155,117,273,89"/>
-<area shape="rect" id="Node000008" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="248,112,432,137"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="479,127,432,127,432,122,479,122"/>
-<area shape="rect" id="Node000010" href="$stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="312,169,368,195"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="469,185,368,185,368,179,469,179"/>
-<area shape="rect" id="Node000011" href="$stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="37,169,168,195"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="298,185,168,185,168,179,298,179"/>
-<area shape="rect" id="Node000013" href="$stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="267,269,413,309"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="469,279,414,284,413,279,469,274"/>
-<area shape="rect" id="Node000014" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,219,200,244"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="252,270,155,247,157,241,254,265"/>
-<area shape="rect" id="Node000015" href="$control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="12,269,193,309"/>
-<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="253,291,193,291,193,286,253,286"/>
-<area shape="rect" id="Node000016" href="$control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="12,333,193,373"/>
-<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="254,315,178,335,177,330,253,309"/>
-<area shape="rect" id="Node000017" href="$control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="12,397,193,437"/>
-<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="305,320,257,354,201,387,173,399,171,394,199,382,254,350,302,315"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="689,116,847,144"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="802,100,791,97,768,95,747,97,735,101,732,107,737,116,732,115,727,107,731,97,745,91,768,89,792,92,807,101"/>
+<area shape="rect" id="Node000002" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="492,31,631,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="722,109,640,74,608,62,608,56,642,69,727,109"/>
+<area shape="rect" id="Node000005" href="$stabilization_8c.html#ac7a492a4d563a518c14c8621d828d34f" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="482,108,641,152"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="671,130,642,132,641,127,677,129"/>
+<area shape="rect" id="Node000008" href="$stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="482,180,641,224"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="714,148,629,181,627,176,709,150"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="595,15,585,12,562,9,540,11,529,16,526,21,531,31,526,30,520,22,525,12,539,6,562,4,586,7,601,15"/>
+<area shape="rect" id="Node000003" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="249,29,432,57"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="474,45,433,46,432,41,479,43"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="377,14,365,10,340,8,317,10,305,15,302,20,307,29,302,29,296,20,301,11,316,5,340,3,366,5,382,14"/>
+<area shape="rect" id="Node000004" href="$guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="10,29,194,57"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="231,45,195,46,193,41,235,42"/>
+<area shape="poly" id="edge10_Node000005_Node000005" title=" " alt="" coords="593,92,582,88,562,86,543,88,531,93,526,99,527,108,522,106,521,97,528,88,541,83,562,81,584,83,598,92"/>
+<area shape="rect" id="Node000006" href="$stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="313,81,368,109"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="464,116,369,102,368,97,469,114"/>
+<area shape="rect" id="Node000007" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a03d27593d891182c04fc5337766733d1" title="Stabilization init function." alt="" coords="247,133,434,161"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="464,138,435,142,434,137,469,137"/>
+<area shape="rect" id="Node000009" href="$stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="268,185,413,230"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="463,205,414,208,413,203,469,204"/>
+<area shape="rect" id="Node000010" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,107,199,134"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="258,179,245,175,222,161,198,148,167,138,166,132,200,143,224,156,248,170,263,178"/>
+<area shape="rect" id="Node000011" href="$control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="12,158,192,203"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="249,198,193,193,192,188,254,196"/>
+<area shape="rect" id="Node000012" href="$control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="12,228,192,272"/>
+<area shape="poly" id="edge15_Node000009_Node000012" title=" " alt="" coords="250,224,194,236,192,231,255,222"/>
+<area shape="rect" id="Node000013" href="$control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="12,297,192,342"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="291,237,200,287,171,299,170,294,198,282,285,239"/>
 </map>

@@ -1,25 +1,25 @@
 <map id="guidance_v_thrust_adapt" name="guidance_v_thrust_adapt">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,95,191,121"/>
-<area shape="rect" id="Node000002" href="$rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector" alt="" coords="242,5,386,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,93,247,48,249,53,133,98"/>
-<area shape="rect" id="Node000007" href="$guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title=" " alt="" coords="259,70,369,95"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="191,94,245,88,245,93,191,100"/>
-<area shape="rect" id="Node000008" href="$guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function." alt="" coords="259,119,369,145"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="191,116,245,122,245,127,191,121"/>
-<area shape="rect" id="Node000009" href="$group__state__acceleration.html#gafd59b768a512d6ef454bf882fb5f9101" title="Get acceleration in NED coordinates (int)." alt="" coords="239,169,389,194"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="136,118,240,155,261,162,259,167,238,160,134,123"/>
-<area shape="rect" id="Node000003" href="$group__state__attitude.html#ga573863695fd1d07537756dbea2a0aa2e" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="437,13,633,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,23,423,23,423,28,386,28"/>
-<area shape="rect" id="Node000004" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="681,13,843,38"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="634,23,668,23,668,28,634,28"/>
-<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="891,13,1057,38"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="843,23,877,23,877,28,843,28"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="1105,13,1255,38"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1057,23,1091,23,1091,28,1057,28"/>
-<area shape="rect" id="Node000010" href="$group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title=" " alt="" coords="458,169,613,194"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="389,179,444,179,444,184,389,184"/>
-<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="689,169,835,194"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="613,179,675,179,675,184,613,184"/>
-<area shape="rect" id="Node000012" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="901,169,1047,194"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="835,179,887,179,887,184,835,184"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,100,190,128"/>
+<area shape="rect" id="Node000002" href="$rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector" alt="" coords="241,5,384,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,98,243,54,239,58,135,102"/>
+<area shape="rect" id="Node000007" href="$guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title=" " alt="" coords="258,74,367,102"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="189,100,245,95,240,97,191,105"/>
+<area shape="rect" id="Node000008" href="$guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function." alt="" coords="258,126,367,154"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="190,123,245,131,240,132,190,128"/>
+<area shape="rect" id="Node000009" href="$group__state__acceleration.html#gafd59b768a512d6ef454bf882fb5f9101" title="Get acceleration in NED coordinates (int)." alt="" coords="238,178,387,206"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="139,126,239,162,260,172,255,172,237,168,138,131"/>
+<area shape="rect" id="Node000003" href="$group__state__attitude.html#ga573863695fd1d07537756dbea2a0aa2e" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="435,14,630,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,25,422,27,417,28,385,30"/>
+<area shape="rect" id="Node000004" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="678,14,839,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="630,25,665,27,660,28,631,30"/>
+<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="887,14,1052,42"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="839,25,874,27,868,28,839,30"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="1100,14,1248,42"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1052,25,1087,27,1081,28,1053,30"/>
+<area shape="rect" id="Node000010" href="$group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title=" " alt="" coords="456,178,610,206"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="387,189,443,192,437,192,387,194"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="685,178,832,206"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="610,189,673,192,667,192,610,194"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="896,178,1042,206"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="832,189,883,192,878,192,832,194"/>
 </map>

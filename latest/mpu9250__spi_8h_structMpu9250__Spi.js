@@ -1,10 +1,10 @@
 var mpu9250__spi_8h_structMpu9250__Spi =
 [
     [ "config", "mpu9250__spi_8h.html#a5dab7d8e6829b61e1b95c86b7085c9a3", null ],
-    [ "data_accel", "mpu9250__spi_8h.html#ad5c2a3af391e40e10342706aafb12638", null ],
+    [ "data_accel", "mpu9250__spi_8h.html#a35a43496478ce620167b42c8878890ad", null ],
     [ "data_available", "mpu9250__spi_8h.html#a3ab386b9bea013e562106b936414f895", null ],
     [ "data_ext", "mpu9250__spi_8h.html#a4e1e74d5dd3d7d6166a9e341720d0620", null ],
-    [ "data_rates", "mpu9250__spi_8h.html#a55605c3e174531823ef389dd477e217c", null ],
+    [ "data_rates", "mpu9250__spi_8h.html#a60791b676b47a47ad2359cca435059b9", null ],
     [ "rx_buf", "mpu9250__spi_8h.html#a57ba0ec6721b8de24d5781dbc4b4ba13", null ],
     [ "slave_init_status", "mpu9250__spi_8h.html#a56e8982fbaed2ae5de3828ed1f17320f", null ],
     [ "spi_p", "mpu9250__spi_8h.html#aacd69bb71fd7707e60ffb0d4494cdd14", null ],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX135 =
 {
+"module__gps_nmea_send.html#configuration__gps_nmea_send":[1,168,1],
+"module__gps_nmea_send.html#functions__gps_nmea_send":[1,168,2],
+"module__gps_nmea_send.html#module_load_example__gps_nmea_send":[1,168,0],
 "module__gps_nmea_send.html#module_xml__gps_nmea_send":[1,168,2,0],
 "module__gps_nps.html":[1,169],
 "module__gps_nps.html#functions__gps_nps":[1,169,1],
@@ -55,9 +58,12 @@ var NAVTREEINDEX135 =
 "module__gps_udp.html#module_xml__gps_udp":[1,179,2,0],
 "module__ground_detect.html":[1,335],
 "module__ground_detect.html#configuration__ground_detect":[1,335,1],
+"module__ground_detect.html#define":[1,335,1,0],
 "module__ground_detect.html#functions__ground_detect":[1,335,2],
+"module__ground_detect.html#init_functions":[1,335,2,0],
 "module__ground_detect.html#module_load_example__ground_detect":[1,335,0],
-"module__ground_detect.html#module_xml__ground_detect":[1,335,2,0],
+"module__ground_detect.html#module_xml__ground_detect":[1,335,2,2],
+"module__ground_detect.html#periodic_functions":[1,335,2,1],
 "module__gsm.html":[1,506],
 "module__gsm.html#functions__gsm":[1,506,1],
 "module__gsm.html#module_load_example__gsm":[1,506,0],
@@ -68,7 +74,6 @@ var NAVTREEINDEX135 =
 "module__guidance_basic_fw.html#module_load_example__guidance_basic_fw":[1,180,0],
 "module__guidance_basic_fw.html#module_xml__guidance_basic_fw":[1,180,2,0],
 "module__guidance_energy.html":[1,181],
-"module__guidance_energy.html#af_section":[1,181,1,0],
 "module__guidance_energy.html#configuration__guidance_energy":[1,181,1],
 "module__guidance_energy.html#functions__guidance_energy":[1,181,2],
 "module__guidance_energy.html#module_load_example__guidance_energy":[1,181,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX135 =
 "module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150":[1,204,0],
 "module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150":[1,204,1,0],
 "module__imu_aspirin_common.html":[1,205],
-"module__imu_aspirin_common.html#configuration__imu_aspirin_common":[1,205,1],
-"module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,205,2],
-"module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,205,0],
-"module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,205,2,0],
-"module__imu_aspirin_i2c_common.html":[1,206],
-"module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common":[1,206,1]
+"module__imu_aspirin_common.html#configuration__imu_aspirin_common":[1,205,1]
 };

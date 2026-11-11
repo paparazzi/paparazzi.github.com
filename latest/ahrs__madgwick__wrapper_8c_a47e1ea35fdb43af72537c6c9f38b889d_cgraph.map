@@ -1,31 +1,44 @@
 <map id="gyro_cb" name="gyro_cb">
-<area shape="rect" id="Node000001" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="5,232,79,257"/>
-<area shape="rect" id="Node000002" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="127,104,324,129"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,230,125,181,192,135,195,139,128,186,62,234"/>
-<area shape="rect" id="Node000010" href="$ahrs__madgwick__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="127,195,323,235"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="79,236,114,231,114,236,79,242"/>
-<area shape="rect" id="Node000014" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="147,260,303,285"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="79,248,134,256,133,261,79,253"/>
-<area shape="rect" id="Node000015" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="149,309,301,335"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="61,255,91,276,128,296,147,303,146,308,126,300,88,280,58,260"/>
-<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#gaf5b1b0d8dc344dd30ed573818c7b54dc" title="Quaternion derivative from rotational velocity." alt="" coords="388,5,548,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="246,102,302,71,371,40,394,32,396,37,373,44,304,76,249,106"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="389,55,547,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="288,101,391,80,392,85,289,107"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga0d98d605ec766ab0c380985e19905025" title=" " alt="" coords="401,104,535,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="324,114,387,114,387,119,324,119"/>
-<area shape="rect" id="Node000008" href="$ahrs__madgwick_8c.html#ad83a81c0586755098baa52a61599a2b8" title=" " alt="" coords="427,153,509,179"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="289,127,414,152,413,158,288,132"/>
-<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="627,55,755,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="548,65,613,65,613,70,548,70"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#gae9902ce0efd06f922b7d23d4aebac5f2" title=" " alt="" coords="619,104,762,129"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="535,114,606,114,606,119,535,119"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="619,153,763,179"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="510,163,605,163,605,169,510,169"/>
-<area shape="rect" id="Node000011" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="389,203,547,228"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="324,213,375,213,375,218,324,218"/>
-<area shape="rect" id="Node000012" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="372,252,564,277"/>
-<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="324,233,392,247,391,252,323,238"/>
-<area shape="rect" id="Node000013" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="612,252,769,277"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="565,262,598,262,598,267,565,267"/>
+<area shape="rect" id="Node000001" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="5,299,78,326"/>
+<area shape="rect" id="Node000002" href="$ahrs__madgwick_8c.html#a1983ce3f538a01c2cb88609d5bcc33e2" title=" " alt="" coords="126,109,322,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,297,124,216,198,145,195,150,128,220,57,300"/>
+<area shape="rect" id="Node000010" href="$ahrs__madgwick__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="126,230,322,275"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="77,298,142,278,138,282,80,303"/>
+<area shape="rect" id="Node000014" href="$ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="188,299,260,326"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="78,310,174,310,170,315,79,315"/>
+<area shape="rect" id="Node000020" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="146,351,302,378"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="78,321,126,335,157,345,152,347,125,340,79,326"/>
+<area shape="rect" id="Node000021" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="148,427,300,454"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="56,324,88,355,127,388,179,419,174,420,124,392,85,359,56,330"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#gaf5b1b0d8dc344dd30ed573818c7b54dc" title="Quaternion derivative from rotational velocity." alt="" coords="386,5,545,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,107,302,75,369,43,394,36,389,40,371,48,304,80,250,111"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="386,57,545,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="291,106,385,87,381,90,293,111"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#ga0d98d605ec766ab0c380985e19905025" title=" " alt="" coords="398,109,533,137"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="322,121,385,122,380,124,323,126"/>
+<area shape="rect" id="Node000008" href="$ahrs__madgwick_8c.html#ad83a81c0586755098baa52a61599a2b8" title=" " alt="" coords="424,161,507,189"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="291,135,412,162,407,164,292,140"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="624,57,751,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="544,69,610,70,605,72,546,74"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#gae9902ce0efd06f922b7d23d4aebac5f2" title=" " alt="" coords="616,109,759,137"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="533,121,603,122,598,124,534,126"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="616,161,759,189"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="507,173,603,174,598,176,508,178"/>
+<area shape="rect" id="Node000011" href="$group__state__rate.html#gab5b3b8deaa94f87850e578d093bd9492" title="Set vehicle body angular rate (float)." alt="" coords="387,213,544,241"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="321,240,374,236,369,238,323,245"/>
+<area shape="rect" id="Node000012" href="$group__state__attitude.html#ga5561af3c051668b386be8aca24a7b121" title="Set vehicle body attitude from quaternion (float)." alt="" coords="370,265,561,293"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="322,261,357,266,352,268,323,266"/>
+<area shape="rect" id="Node000013" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="609,239,766,266"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="561,265,597,263,592,264,562,270"/>
+<area shape="rect" id="Node000015" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="401,343,530,370"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="260,316,388,341,383,343,260,322"/>
+<area shape="rect" id="Node000016" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="615,291,760,318"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="527,339,613,322,608,323,529,345"/>
+<area shape="rect" id="Node000017" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="630,343,745,370"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="531,354,617,356,611,357,531,359"/>
+<area shape="rect" id="Node000018" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="632,395,743,422"/>
+<area shape="poly" id="edge17_Node000015_Node000018" title=" " alt="" coords="528,368,620,392,614,392,528,374"/>
+<area shape="rect" id="Node000019" href="$imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="632,447,743,474"/>
+<area shape="poly" id="edge18_Node000015_Node000019" title=" " alt="" coords="491,368,545,399,610,431,629,441,624,440,608,436,543,404,490,373"/>
+<area shape="poly" id="edge21_Node000021_Node000021" title=" " alt="" coords="192,425,187,418,191,408,204,402,224,400,246,403,259,412,253,411,244,408,224,405,205,407,195,412,192,417,197,427"/>
 </map>

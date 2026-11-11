@@ -1,32 +1,25 @@
 <map id="dragspeed_init" name="dragspeed_init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,124,129"/>
-<area shape="rect" id="Node000002" href="$dragspeed_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="234,53,313,79"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,101,220,76,221,81,119,106"/>
-<area shape="rect" id="Node000013" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="172,155,375,180"/>
-<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="119,127,208,149,206,154,117,132"/>
-<area shape="rect" id="Node000014" href="$dragspeed_8c.html#a633022ff064733c702ae49155480d81e" title=" " alt="" coords="423,104,551,129"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="124,114,409,114,409,119,124,119"/>
-<area shape="rect" id="Node000003" href="$dragspeed_8c.html#abeaf6ff173980a45c9b5e36a1834b8dc" title="Calibrate drag coefficient by comparing accelerometer measurements to INS velocities." alt="" coords="427,55,546,80"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,64,414,64,414,70,313,69"/>
-<area shape="rect" id="Node000012" href="$dragspeed_8c.html#a42b1bf05665b86938bd682bb1cb84ac7" title="Calibrate zero velocity by measuring the accelerations while the drone hovers in&#45;place." alt="" coords="429,5,544,31"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="312,55,416,31,417,36,313,60"/>
-<area shape="rect" id="Node000004" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="599,104,801,129"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="543,77,632,98,630,103,542,83"/>
-<area shape="rect" id="Node000009" href="$group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="623,55,777,80"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="546,65,609,65,609,70,546,70"/>
-<area shape="rect" id="Node000005" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="849,104,1017,129"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="802,114,836,114,836,119,802,119"/>
-<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1065,104,1239,129"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1018,114,1052,114,1052,119,1018,119"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1287,79,1442,104"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1238,104,1273,100,1274,105,1239,109"/>
-<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1287,128,1443,153"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1239,124,1273,128,1273,133,1238,129"/>
-<area shape="rect" id="Node000010" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="854,55,1013,80"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="778,65,840,65,840,70,778,70"/>
-<area shape="rect" id="Node000011" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="1078,55,1226,80"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1013,65,1065,65,1065,70,1013,70"/>
-<area shape="poly" id="edge12_Node000012_Node000009" title=" " alt="" coords="543,28,632,49,630,54,542,33"/>
-<area shape="poly" id="edge15_Node000014_Node000004" title=" " alt="" coords="551,114,585,114,585,119,551,119"/>
-<area shape="poly" id="edge16_Node000014_Node000009" title=" " alt="" coords="542,101,630,81,632,86,543,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,123,85"/>
+<area shape="rect" id="Node000002" href="$energy__ctrl_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="233,5,310,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,54,219,31,216,34,123,59"/>
+<area shape="rect" id="Node000003" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="171,57,372,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,69,157,70,153,72,124,74"/>
+<area shape="rect" id="Node000004" href="$dragspeed_8c.html#a633022ff064733c702ae49155480d81e" title=" " alt="" coords="208,109,335,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,83,201,104,196,106,122,88"/>
+<area shape="rect" id="Node000005" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="420,83,622,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="335,114,407,109,402,109,335,119"/>
+<area shape="rect" id="Node000010" href="$group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="444,135,598,162"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="335,127,432,139,427,139,335,132"/>
+<area shape="rect" id="Node000006" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="670,83,838,110"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="623,94,657,96,652,97,623,99"/>
+<area shape="rect" id="Node000007" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="886,83,1058,110"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="838,94,873,96,867,97,838,99"/>
+<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="1107,57,1260,85"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1058,84,1089,82,1094,82,1059,89"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="1106,109,1261,137"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1058,105,1093,112,1088,111,1058,110"/>
+<area shape="rect" id="Node000011" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="675,135,833,162"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="598,146,662,148,656,149,598,151"/>
+<area shape="rect" id="Node000012" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="898,135,1046,162"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="834,146,885,148,880,149,834,151"/>
 </map>

@@ -1,37 +1,40 @@
 <map id="ekf2_input_enabled" name="ekf2_input_enabled">
-<area shape="rect" id="Node000001" title=" " alt="" coords="620,228,771,253"/>
-<area shape="rect" id="Node000002" href="$ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac" title=" " alt="" coords="191,5,255,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="682,216,665,182,641,141,610,102,571,70,531,49,488,35,444,24,399,18,318,14,256,17,256,12,318,9,400,13,444,19,489,29,533,44,573,65,613,98,646,138,670,179,686,214"/>
-<area shape="rect" id="Node000004" href="$ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="187,59,260,84"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="678,218,635,161,605,132,571,110,531,93,488,81,402,68,322,66,261,70,260,64,322,61,402,63,489,76,532,88,573,105,608,128,639,158,682,215"/>
-<area shape="rect" id="Node000005" href="$ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="190,115,257,140"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="673,219,629,177,601,157,571,142,529,129,485,120,397,114,317,117,257,124,256,119,317,112,397,109,486,115,530,124,573,137,604,153,633,173,677,215"/>
-<area shape="rect" id="Node000006" href="$ins__ekf2_8cpp.html#a2b3b42f0b4951e04557d5ceb26432c6b" title="Give the last airspeed to the EKF, in the thread of the EKF." alt="" coords="358,152,550,177"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="647,226,571,199,504,180,506,175,573,194,649,221"/>
-<area shape="rect" id="Node000007" href="$ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="159,176,288,201"/>
-<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="606,234,288,198,288,193,607,228"/>
-<area shape="rect" id="Node000008" href="$ins__ekf2_8cpp.html#ab6f0b94516904e1cd8457f4e8a6b2a5e" title=" " alt="" coords="336,253,572,279"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="607,253,572,256,572,251,606,247"/>
-<area shape="rect" id="Node000009" href="$ins__ekf2_8cpp.html#a9aa598a814c6a533b0dbc59091f9b224" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="359,303,549,328"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="656,262,573,294,529,305,527,300,571,289,654,257"/>
-<area shape="rect" id="Node000012" href="$ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="417,352,491,377"/>
-<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="675,265,631,305,603,326,573,343,531,357,491,364,490,359,530,352,571,338,600,321,628,301,672,261"/>
-<area shape="rect" id="Node000013" href="$ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f" title=" " alt="" coords="393,401,515,427"/>
-<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="683,267,640,331,610,364,573,392,546,405,516,412,515,407,544,400,571,388,606,360,636,327,679,264"/>
-<area shape="rect" id="Node000014" href="$ins__ekf2_8cpp.html#a13e5f600a620715164be290ec12bca63" title=" " alt="" coords="412,451,496,476"/>
-<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="688,267,673,306,649,354,616,402,596,423,573,442,536,459,497,465,496,460,534,454,571,437,592,419,612,398,644,351,668,304,683,265"/>
-<area shape="rect" id="Node000003" href="$ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,275,111,300"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,34,160,48,138,76,118,106,90,172,72,232,64,275,59,274,67,231,85,170,114,104,133,72,157,44,177,30"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="176,92,161,104,125,148,97,196,77,242,66,275,61,273,72,240,92,194,120,145,157,100,173,88"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="184,149,160,165,132,194,106,224,69,276,65,273,102,221,128,190,157,161,181,145"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="345,179,289,185,288,179,344,173"/>
-<area shape="rect" id="Node000010" href="$ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="172,249,275,275"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="374,302,335,294,270,277,271,272,337,289,375,297"/>
-<area shape="rect" id="Node000011" href="$ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="175,299,272,324"/>
-<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="346,316,272,315,272,309,346,311"/>
-<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="159,275,111,282,110,277,158,269"/>
-<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="161,305,111,298,112,292,161,300"/>
-<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="404,368,290,363,223,354,158,339,114,322,78,302,81,298,117,317,159,334,224,349,291,357,404,363"/>
-<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="378,414,272,401,214,387,158,367,131,353,107,335,70,302,73,298,110,331,134,348,160,362,215,382,273,396,379,409"/>
-<area shape="poly" id="edge21_Node000014_Node000003" title=" " alt="" coords="398,466,345,462,283,452,218,435,157,407,126,383,99,353,64,302,68,299,103,350,129,379,160,402,220,430,284,447,346,456,399,460"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="668,288,818,316"/>
+<area shape="rect" id="Node000002" href="$ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac" title=" " alt="" coords="471,56,534,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="730,272,715,234,692,186,660,138,619,99,599,87,577,80,536,73,534,68,578,75,601,83,622,94,664,135,696,184,720,232,735,274"/>
+<area shape="rect" id="Node000007" href="$ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="466,108,539,136"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="725,274,683,212,654,179,619,151,579,134,540,126,539,121,581,129,622,146,657,175,688,209,730,275"/>
+<area shape="rect" id="Node000008" href="$ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="470,160,536,188"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="716,276,674,239,647,219,619,203,577,188,537,180,536,175,578,183,621,198,650,215,677,235,721,277"/>
+<area shape="rect" id="Node000009" href="$ins__ekf2_8cpp.html#a2b3b42f0b4951e04557d5ceb26432c6b" title="Give the last airspeed to the EKF, in the thread of the EKF." alt="" coords="407,212,598,240"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="687,282,620,260,560,243,560,238,621,255,693,282"/>
+<area shape="rect" id="Node000010" href="$ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="183,237,312,265"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="651,295,312,260,312,255,654,291"/>
+<area shape="rect" id="Node000011" href="$ins__ekf2_8cpp.html#ab6f0b94516904e1cd8457f4e8a6b2a5e" title=" " alt="" coords="385,313,620,341"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="650,312,621,317,620,312,655,311"/>
+<area shape="rect" id="Node000012" href="$ins__ekf2_8cpp.html#a9aa598a814c6a533b0dbc59091f9b224" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="408,365,597,393"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="700,321,621,355,577,367,575,362,619,350,695,323"/>
+<area shape="rect" id="Node000015" href="$ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="466,417,539,445"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="721,326,678,369,651,390,621,407,580,422,540,430,539,425,578,417,619,402,648,385,674,365,717,328"/>
+<area shape="rect" id="Node000016" href="$ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f" title=" " alt="" coords="187,467,308,494"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="731,328,714,362,690,398,659,432,622,459,583,476,541,488,456,500,376,500,309,494,309,488,376,495,456,495,540,483,581,471,619,454,655,428,686,395,710,359,727,331"/>
+<area shape="rect" id="Node000017" href="$ins__ekf2_8cpp.html#a13e5f600a620715164be290ec12bca63" title=" " alt="" coords="206,519,289,546"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="736,329,721,372,698,420,665,468,645,488,622,505,580,526,535,541,489,549,443,553,357,552,289,543,289,538,357,546,443,548,488,544,534,535,578,521,619,501,641,484,661,464,693,418,717,370,732,332"/>
+<area shape="rect" id="Node000003" href="$agl__dist_8c.html#a7ef09c878f298c381d633c08533782c6" title=" " alt="" coords="197,5,298,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,62,298,32,297,26,458,59"/>
+<area shape="rect" id="Node000004" href="$ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,415,110,442"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="454,60,391,51,312,48,271,52,231,61,193,75,159,97,141,120,124,155,96,249,75,346,63,415,58,414,70,345,90,248,119,154,137,117,156,93,191,71,230,56,270,47,312,43,391,45,458,57"/>
+<area shape="rect" id="Node000005" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="201,107,294,134"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="454,81,295,114,293,109,458,77"/>
+<area shape="rect" id="Node000006" href="$opticflow__pmw3901_8c.html#a2322e65a95d068baae9381aace2519ee" title=" " alt="" coords="158,159,337,186"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="453,76,421,85,386,99,372,110,363,122,354,135,338,148,312,160,309,156,336,144,350,132,359,119,368,106,384,94,419,80,458,73"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="389,238,313,247,311,242,394,236"/>
+<area shape="rect" id="Node000013" href="$ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="197,363,298,390"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="390,379,299,380,298,374,395,377"/>
+<area shape="rect" id="Node000014" href="$ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="199,415,296,442"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="410,397,297,422,295,417,415,396"/>
+<area shape="poly" id="edge13_Node000013_Node000004" title=" " alt="" coords="180,396,111,417,109,412,184,392"/>
+<area shape="poly" id="edge15_Node000014_Node000004" title=" " alt="" coords="181,430,111,431,109,426,186,427"/>
+<area shape="poly" id="edge19_Node000016_Node000004" title=" " alt="" coords="177,463,110,445,110,440,182,461"/>
+<area shape="poly" id="edge21_Node000017_Node000004" title=" " alt="" coords="188,519,156,508,108,476,73,445,74,440,111,472,159,503,193,519"/>
 </map>

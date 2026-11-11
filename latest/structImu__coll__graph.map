@@ -1,5 +1,46 @@
 <map id="Imu" name="Imu">
-<area shape="rect" id="Node000001" title="abstract IMU interface providing fixed point interface" alt="" coords="11,137,58,163"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,44,37,137,32,137,32,44"/>
+<area shape="rect" id="Node000001" title="abstract IMU interface providing fixed point interface" alt="" coords="601,735,647,763"/>
+<area shape="rect" id="Node000002" href="$imu_8h.html#structimu__gyro__t" title=" " alt="" coords="351,316,445,344"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,355,618,734,613,735,413,360"/>
+<area shape="rect" id="Node000003" href="$imu_8h.html#structimu__calib__t" title=" " alt="" coords="37,372,133,400"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,367,188,357,274,342,352,333,348,337,275,348,189,362,150,371"/>
+<area shape="rect" id="Node000009" href="$imu_8h.html#structimu__accel__t" title=" " alt="" coords="348,708,448,736"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="147,388,249,398,290,405,312,413,329,436,345,469,370,555,387,644,397,708,392,708,382,645,364,557,340,471,325,438,309,418,288,410,248,404,150,393"/>
+<area shape="rect" id="Node000012" href="$imu_8h.html#structimu__mag__t" title=" " alt="" coords="351,784,445,812"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="118,406,153,426,189,443,225,450,255,448,284,450,298,457,313,470,325,493,330,526,330,606,327,688,330,721,337,746,353,766,373,783,368,784,349,770,332,749,324,722,322,688,325,606,325,526,320,495,309,473,296,461,283,455,255,453,224,455,188,448,151,431,120,411"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#structInt32Rates" title="angular rates" alt="" coords="39,148,131,176"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="144,157,185,159,228,165,272,177,312,197,342,224,366,257,394,316,389,316,362,259,339,228,309,202,270,182,227,170,185,164,148,161"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#structFloatRates" title="angular rates" alt="" coords="39,26,131,53"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="144,29,186,27,230,32,274,44,312,67,339,94,359,127,375,163,386,199,397,267,399,316,394,316,391,268,380,201,370,165,355,130,335,98,309,71,272,49,229,37,186,33,147,33"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="41,568,129,596"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="124,559,188,529,223,520,253,517,280,512,309,494,341,458,365,416,381,375,392,347,394,342,386,377,370,418,346,461,312,498,282,517,253,522,224,525,190,534,128,562"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="142,566,183,560,227,559,271,565,312,581,345,608,369,643,385,679,395,708,390,708,381,681,364,646,341,612,309,586,269,570,226,564,184,565,146,570"/>
+<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="143,599,189,611,225,615,255,614,283,618,298,625,313,637,323,651,328,664,329,691,328,717,330,731,337,746,354,766,375,783,369,784,350,770,332,749,325,733,322,718,323,691,323,665,318,654,309,641,295,630,282,623,255,620,225,621,188,616,145,603"/>
+<area shape="rect" id="Node000013" href="$group__math__orientation__representation.html#structOrientationReps" title=" " alt="" coords="335,1335,461,1363"/>
+<area shape="poly" id="edge24_Node000013_Node000006" title=" " alt="" coords="108,604,146,637,190,667,207,674,224,677,255,678,284,681,298,689,313,702,329,794,355,988,397,1335,392,1334,350,989,324,794,308,705,295,693,282,686,254,683,223,683,206,680,187,672,143,642,110,609"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="38,1172,132,1200"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="121,1162,188,1129,225,1120,256,1118,283,1112,296,1104,308,1091,317,1067,322,1022,328,898,332,696,364,487,393,347,394,342,369,487,337,697,334,898,328,1022,322,1068,313,1094,299,1108,285,1117,257,1123,225,1125,190,1134,125,1166"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="146,1184,243,1177,283,1168,309,1154,318,1141,324,1124,331,1081,331,1028,327,970,320,856,322,808,332,772,349,750,372,734,369,738,352,754,337,774,327,809,325,856,333,969,336,1027,336,1081,329,1126,322,1144,312,1158,285,1173,243,1182,149,1189"/>
+<area shape="poly" id="edge20_Node000012_Node000007" title=" " alt="" coords="126,1204,170,1220,218,1231,243,1232,266,1230,289,1223,309,1210,330,1182,348,1137,362,1080,373,1018,387,896,395,815,397,810,393,896,379,1018,368,1081,353,1138,335,1184,312,1214,291,1228,267,1235,243,1238,217,1236,168,1225,128,1209"/>
+<area shape="poly" id="edge26_Node000013_Node000007" title=" " alt="" coords="105,1210,143,1251,165,1271,190,1288,221,1303,248,1309,276,1312,311,1319,354,1334,349,1335,310,1325,275,1317,247,1314,220,1308,187,1293,162,1276,139,1255,105,1215"/>
+<area shape="rect" id="Node000008" href="$low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="5,232,165,260"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="178,229,246,229,279,235,312,245,337,259,358,277,390,315,384,316,354,281,333,263,310,250,278,240,245,235,181,233"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="144,263,189,275,225,281,256,282,284,288,313,308,324,332,337,374,362,494,397,708,392,708,357,494,332,376,320,334,309,312,282,292,255,287,225,286,188,280,147,267"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="462,727,603,745,599,747,464,732"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__int.html#structInt32Vect3" title=" " alt="" coords="40,971,130,999"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="142,963,249,926,309,901,319,886,324,871,323,840,321,808,324,790,332,771,350,750,373,734,370,738,353,754,337,774,329,792,326,808,328,840,329,871,324,888,312,905,250,931,146,967"/>
+<area shape="poly" id="edge17_Node000012_Node000010" title=" " alt="" coords="116,1005,159,1030,209,1051,235,1057,261,1059,286,1054,309,1043,335,1019,355,990,370,957,380,924,392,859,396,815,398,810,397,860,386,925,375,959,359,992,339,1022,312,1047,288,1059,262,1064,235,1063,208,1056,157,1035,118,1010"/>
+<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#structFloatVect3" title=" " alt="" coords="40,748,130,776"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="144,752,349,726,346,730,147,757"/>
+<area shape="poly" id="edge18_Node000012_Node000011" title=" " alt="" coords="130,780,189,796,274,803,352,801,348,804,274,808,188,801,133,784"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="459,793,517,785,576,771,603,761,599,765,578,776,518,791,462,797"/>
+<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="407,1319,615,763,620,763,412,1321"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__int.html#structInt32Quat" title="Rotation quaternion." alt="" coords="42,1447,128,1475"/>
+<area shape="poly" id="edge22_Node000013_Node000014" title=" " alt="" coords="143,1459,224,1451,268,1442,310,1426,332,1412,353,1395,384,1364,388,1361,357,1399,336,1416,312,1431,270,1447,225,1457,144,1464"/>
+<area shape="rect" id="Node000015" href="$group__math__algebra__int.html#structInt32Eulers" title="euler angles" alt="" coords="38,1503,132,1531"/>
+<area shape="poly" id="edge23_Node000013_Node000015" title=" " alt="" coords="148,1520,186,1520,229,1515,271,1505,309,1486,340,1458,363,1424,380,1390,390,1365,394,1361,385,1392,368,1427,344,1462,312,1491,272,1510,230,1520,187,1525,148,1525"/>
+<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#structFloatQuat" title="Roation quaternion." alt="" coords="42,1335,128,1363"/>
+<area shape="poly" id="edge25_Node000013_Node000016" title=" " alt="" coords="143,1346,336,1347,333,1351,144,1351"/>
+<area shape="rect" id="Node000017" href="$group__math__algebra__float.html#structFloatRMat" title="rotation matrix" alt="" coords="41,1391,129,1419"/>
+<area shape="poly" id="edge27_Node000013_Node000017" title=" " alt="" coords="144,1399,224,1391,310,1376,364,1362,359,1364,311,1382,225,1397,146,1404"/>
 </map>

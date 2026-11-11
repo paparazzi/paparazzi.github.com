@@ -47,6 +47,6 @@ var sdlog__linux_8c =
     [ "sdlog_files", "sdlog__linux_8c.html#a02ca74f22cae99ace804a5d9c0f33628", null ],
     [ "sdlog_last_flush", "sdlog__linux_8c.html#a87a2ac24cd76286a730bc101ed907dc0", null ],
     [ "sdlog_msg", "sdlog__linux_8c.html#a114bcc2cec4be1c1939289d007d184d5", null ],
-    [ "sdlog_status", "sdlog__linux_8c.html#a06e984e17534f2b40f37cbd0e97e2885", null ],
+    [ "sdlog_status", "sdlog__linux_8c.html#a18c75cbf39610ec189dd92e2c3ff016a", null ],
     [ "usb_storage_status", "sdlog__linux_8c.html#a2497ff6712447ba1e54620f41d27e856", null ]
 ];

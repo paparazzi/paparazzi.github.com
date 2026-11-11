@@ -1,112 +1,115 @@
 <map id="guidance_h_run_accel" name="guidance_h_run_accel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1393,171,1419"/>
-<area shape="rect" id="Node000002" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="243,886,407,926"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,1392,305,938,310,940,98,1394"/>
-<area shape="rect" id="Node000131" href="$guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="219,1421,431,1447"/>
-<area shape="poly" id="edge35_Node000001_Node000131" title=" " alt="" coords="171,1413,205,1417,205,1422,171,1418"/>
-<area shape="rect" id="Node000003" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="484,659,611,684"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,884,523,692,527,696,347,888"/>
-<area shape="rect" id="Node000004" href="$oneloop__nB_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="710,104,855,129"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="547,658,556,557,578,401,593,319,612,244,635,182,648,158,662,140,678,128,696,120,698,125,681,133,666,144,652,161,640,184,617,245,598,320,583,402,562,558,552,659"/>
-<area shape="rect" id="Node000006" href="$oneloop__nB_8c.html#a81fc30f45e92c49d436c9e990a2df8a5" title="Function that drops control along selected axes." alt="" coords="740,268,825,293"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="546,659,548,595,563,499,577,447,598,394,626,346,662,304,692,286,725,278,727,284,694,291,666,308,630,349,602,397,582,448,568,500,554,596,551,659"/>
-<area shape="rect" id="Node000007" href="$oneloop__nB_8c.html#af8b5eb29f4ee15376b0b834dc92134b3" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="737,55,828,80"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="547,658,555,549,575,377,590,288,609,205,633,137,647,111,662,91,691,73,723,64,724,70,693,77,666,95,651,113,638,139,614,206,595,289,580,378,560,549,552,658"/>
-<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="691,383,875,408"/>
-<area shape="poly" id="edge10_Node000003_Node000014" title=" " alt="" coords="548,658,557,612,577,547,592,512,611,478,634,446,662,419,676,409,679,414,666,423,638,449,616,480,597,514,582,549,562,613,553,659"/>
-<area shape="rect" id="Node000015" href="$oneloop__nB_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="724,432,841,457"/>
-<area shape="poly" id="edge11_Node000003_Node000015" title=" " alt="" coords="549,658,562,620,584,568,617,514,638,489,662,468,685,455,709,448,711,453,687,460,666,472,642,493,621,517,589,571,567,622,555,659"/>
-<area shape="rect" id="Node000016" href="$oneloop__nB_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="698,481,867,507"/>
-<area shape="poly" id="edge12_Node000003_Node000016" title=" " alt="" coords="552,657,567,628,591,589,623,550,663,517,684,506,686,511,665,522,627,554,596,593,572,630,557,659"/>
-<area shape="rect" id="Node000018" href="$oneloop__nB_8c.html#a70e849998890733c853538f89ae95e83" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="705,531,860,556"/>
-<area shape="poly" id="edge13_Node000003_Node000018" title=" " alt="" coords="557,657,600,612,630,587,663,566,691,555,693,560,665,571,633,591,603,616,561,660"/>
-<area shape="rect" id="Node000022" href="$oneloop__nB_8c.html#a6650a3550fe51ad2bef07a3a15090564" title=" " alt="" coords="751,580,814,605"/>
-<area shape="poly" id="edge14_Node000003_Node000022" title=" " alt="" coords="571,656,613,635,663,615,737,597,738,602,665,621,616,640,574,661"/>
-<area shape="rect" id="Node000023" href="$oneloop__nB_8c.html#ac90a1e45f9780aa31045749e77a4479e" title="Function to normalize the pseudo control vector." alt="" coords="727,629,838,655"/>
-<area shape="poly" id="edge15_Node000003_Node000023" title=" " alt="" coords="611,661,713,648,714,653,611,666"/>
-<area shape="rect" id="Node000024" href="$oneloop__nB_8c.html#a1955c0a14f13bdac49ff5f52c2352de4" title="Function that calculates the model disturbance (Control Effort) The control effort is equalt to : EFF..." alt="" coords="705,203,860,243"/>
-<area shape="poly" id="edge16_Node000003_Node000024" title=" " alt="" coords="545,658,546,588,550,537,559,480,573,420,594,360,623,304,662,255,691,236,694,240,666,259,627,307,598,362,578,422,564,481,556,538,552,588,551,658"/>
-<area shape="rect" id="Node000028" href="$oneloop__nB_8c.html#ad4f526e29e4eaa9c6d28e614c1031f7f" title="Function which estimates the nB states." alt="" coords="705,679,860,719"/>
-<area shape="poly" id="edge18_Node000003_Node000028" title=" " alt="" coords="611,676,692,686,691,691,611,681"/>
-<area shape="rect" id="Node000035" href="$oneloop__nB_8c.html#a2715c0f63ac8b203a76e7e3347fe87e8" title="Propagate the filters." alt="" coords="697,318,868,358"/>
-<area shape="poly" id="edge19_Node000003_Node000035" title=" " alt="" coords="547,658,554,605,572,527,587,485,607,443,631,404,662,369,683,355,686,360,666,373,636,407,611,445,592,487,577,529,559,606,552,659"/>
-<area shape="rect" id="Node000056" href="$group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="949,1041,1105,1067"/>
-<area shape="poly" id="edge33_Node000003_Node000056" title=" " alt="" coords="551,684,552,748,566,842,580,894,600,944,628,989,666,1027,699,1048,736,1063,775,1072,815,1077,894,1076,961,1067,962,1072,894,1081,815,1082,774,1077,735,1068,697,1053,662,1031,624,992,595,946,575,895,560,843,547,748,546,684"/>
-<area shape="rect" id="Node000062" href="$oneloop__nB_8c.html#aebebb94d4c9106b47bc736e142cbce66" title="Function to generate the reference signals for the oneloop controller." alt="" coords="719,991,846,1016"/>
-<area shape="poly" id="edge21_Node000003_Node000062" title=" " alt="" coords="552,684,558,739,575,819,589,862,609,905,634,944,666,977,685,989,707,997,705,1002,682,994,662,981,630,947,604,907,584,864,570,820,553,740,547,685"/>
-<area shape="rect" id="Node000074" href="$radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="960,1388,1095,1413"/>
-<area shape="poly" id="edge26_Node000003_Node000074" title=" " alt="" coords="553,684,566,765,590,886,606,949,624,1006,644,1052,666,1083,695,1102,723,1111,751,1111,780,1108,810,1104,840,1104,871,1111,903,1129,931,1156,955,1186,974,1220,990,1255,1013,1321,1024,1373,1019,1375,1007,1322,985,1257,969,1222,950,1189,927,1159,900,1133,869,1116,839,1109,810,1109,781,1113,752,1117,722,1116,692,1107,662,1087,639,1055,619,1008,601,950,585,887,561,766,548,685"/>
-<area shape="rect" id="Node000083" href="$oneloop__nB_8c.html#aaed2060eaaa7c57b735ca248ece79cee" title="Function that performs state compensation for gyroscopic effects." alt="" coords="664,744,901,769"/>
-<area shape="poly" id="edge25_Node000003_Node000083" title=" " alt="" coords="570,682,613,706,665,729,695,738,694,743,663,734,611,710,568,686"/>
-<area shape="rect" id="Node000084" href="$oneloop__nB_8c.html#ac8e0667f38cda6004b4909b8a857cdce" title="Function that sets the WLS settings for oneloop controller." alt="" coords="715,793,851,819"/>
-<area shape="poly" id="edge27_Node000003_Node000084" title=" " alt="" coords="560,683,602,731,632,758,665,780,702,793,700,798,663,784,629,762,598,735,556,686"/>
-<area shape="rect" id="Node000085" href="$oneloop__nB_8c.html#a816b1c8bc0c257ae8495bf46f9b08ffd" title="Spin transition manoeuvre state machine." alt="" coords="714,843,851,868"/>
-<area shape="poly" id="edge28_Node000003_Node000085" title=" " alt="" coords="556,683,571,714,594,754,626,795,665,829,701,845,699,849,663,834,622,799,590,757,566,716,552,685"/>
-<area shape="rect" id="Node000090" href="$oneloop__nB_8c.html#a9713be44d5c7b15bba3a9669a0eed29b" title="Enforce valid spin protection / spin trim parameters (they can be changed in flight from the settings..." alt="" coords="690,892,875,917"/>
-<area shape="poly" id="edge29_Node000003_Node000090" title=" " alt="" coords="554,683,566,722,587,776,620,832,641,857,666,879,678,886,676,891,662,883,638,861,616,835,583,778,561,724,549,685"/>
-<area shape="rect" id="Node000091" href="$oneloop__nB_8c.html#ace0fbc8ac0b62b29b40394c1e0f5aacc" title=" " alt="" coords="706,941,859,967"/>
-<area shape="poly" id="edge30_Node000003_Node000091" title=" " alt="" coords="553,684,562,730,581,797,596,833,615,868,638,900,666,928,694,943,692,948,662,932,634,904,610,871,591,835,576,799,556,732,548,685"/>
-<area shape="rect" id="Node000093" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="685,153,880,179"/>
-<area shape="poly" id="edge31_Node000003_Node000093" title=" " alt="" coords="547,658,558,565,581,424,596,350,615,283,637,227,662,190,672,182,675,186,666,193,642,229,620,284,602,351,586,425,564,566,553,659"/>
-<area shape="rect" id="Node000098" href="$group__state__position.html#gaf0ea970c91b1d3ebc462f987f28bd3f0" title="Get position in local NED coordinates (float)." alt="" coords="699,1192,867,1217"/>
-<area shape="poly" id="edge32_Node000003_Node000098" title=" " alt="" coords="552,684,562,782,584,932,599,1010,618,1082,640,1140,653,1162,666,1179,687,1193,684,1197,662,1183,648,1165,636,1143,613,1083,594,1011,579,933,557,782,547,685"/>
-<area shape="rect" id="Node000112" href="$wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="741,1143,824,1168"/>
-<area shape="poly" id="edge34_Node000003_Node000112" title=" " alt="" coords="553,684,565,771,588,903,604,972,623,1035,643,1087,666,1121,695,1140,728,1150,727,1155,692,1145,662,1125,638,1090,618,1037,599,974,583,904,560,772,548,684"/>
-<area shape="rect" id="Node000005" href="$oneloop__nB_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="957,211,1097,236"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="856,125,902,140,957,169,1001,200,998,204,954,173,900,144,855,130"/>
-<area shape="rect" id="Node000008" href="$oneloop__nB_8c.html#a6a52b62ef9507057b8d71370d0607547" title="Calculate velocity limit based on acceleration limit for a float From SUVAT we have that v^2 = u^2 + ..." alt="" coords="962,5,1093,31"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="828,56,950,31,951,36,829,61"/>
-<area shape="rect" id="Node000009" href="$oneloop__nB_8c.html#adcc571a2361f13620686c4043412da97" title="Calculate Scaled Error between two 3D arrays." alt="" coords="978,55,1077,80"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="828,65,964,65,964,70,828,70"/>
-<area shape="rect" id="Node000010" href="$oneloop__nB_8c.html#acd17c1487b17b6c4a8a37fea7ade6bff" title="Attitude Rates to Euler Conversion Function ZYX." alt="" coords="952,105,1103,145"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="829,74,902,90,939,99,938,104,901,95,828,79"/>
-<area shape="poly" id="edge17_Node000024_Node000005" title=" " alt="" coords="861,221,944,221,944,226,861,226"/>
-<area shape="poly" id="edge20_Node000035_Node000056" title=" " alt="" coords="869,347,888,356,903,370,920,392,935,422,960,499,981,592,997,694,1018,891,1027,1027,1022,1028,1013,891,992,694,976,593,955,501,930,424,915,395,899,373,885,361,867,352"/>
-<area shape="poly" id="edge22_Node000062_Node000005" title=" " alt="" coords="845,1001,875,994,900,977,918,953,934,921,961,836,983,733,999,619,1017,399,1023,250,1028,250,1022,400,1004,620,988,734,967,838,939,923,922,956,903,981,877,999,847,1007"/>
-<area shape="poly" id="edge24_Node000062_Node000056" title=" " alt="" coords="846,1014,953,1036,952,1041,845,1019"/>
-<area shape="poly" id="edge23_Node000062_Node000074" title=" " alt="" coords="812,1014,858,1042,882,1062,903,1084,929,1121,951,1161,986,1242,1010,1318,1024,1374,1018,1375,1005,1319,981,1244,946,1163,925,1124,899,1088,879,1066,855,1047,809,1018"/>
-<area shape="rect" id="Node000132" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="479,1685,616,1711"/>
-<area shape="poly" id="edge36_Node000131_Node000132" title=" " alt="" coords="339,1445,528,1673,524,1676,335,1448"/>
-<area shape="poly" id="edge58_Node000132_Node000056" title=" " alt="" coords="548,1685,561,1602,585,1480,601,1417,619,1359,639,1311,662,1279,692,1257,721,1247,750,1245,779,1247,807,1250,837,1250,868,1244,900,1228,939,1194,971,1154,996,1113,1013,1079,1018,1081,1000,1116,975,1157,943,1198,903,1232,869,1249,838,1255,807,1255,778,1252,750,1250,722,1252,694,1262,666,1283,644,1313,624,1360,606,1418,590,1481,566,1603,553,1685"/>
-<area shape="poly" id="edge53_Node000132_Node000074" title=" " alt="" coords="608,1708,673,1716,750,1717,789,1712,828,1703,866,1690,900,1670,929,1646,953,1616,972,1583,988,1548,1009,1480,1020,1427,1025,1428,1015,1482,993,1550,977,1585,957,1619,932,1649,903,1675,868,1695,830,1709,790,1717,750,1722,673,1721,607,1713"/>
-<area shape="poly" id="edge57_Node000132_Node000098" title=" " alt="" coords="547,1685,559,1595,583,1460,599,1390,617,1325,638,1271,662,1235,684,1219,688,1223,666,1239,643,1274,622,1326,604,1391,588,1461,565,1596,553,1685"/>
-<area shape="poly" id="edge60_Node000132_Node000112" title=" " alt="" coords="547,1685,557,1585,578,1433,594,1353,613,1280,635,1220,648,1196,662,1179,692,1160,727,1152,728,1157,694,1165,666,1183,653,1199,640,1222,618,1281,599,1354,584,1434,562,1586,552,1685"/>
-<area shape="rect" id="Node000133" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="710,1933,855,1959"/>
-<area shape="poly" id="edge37_Node000132_Node000133" title=" " alt="" coords="554,1710,565,1752,586,1809,619,1870,640,1897,666,1920,697,1936,695,1940,662,1924,636,1900,614,1873,581,1811,560,1754,549,1712"/>
-<area shape="rect" id="Node000135" href="$oneloop__andi_8c.html#ab17546dbd07775cc749a574ce5e943b4" title=" " alt="" coords="729,1983,836,2008"/>
-<area shape="poly" id="edge38_Node000132_Node000135" title=" " alt="" coords="553,1710,560,1760,579,1830,594,1868,613,1906,637,1940,666,1969,689,1983,716,1990,714,1996,687,1988,662,1973,633,1943,608,1908,589,1871,574,1832,555,1761,547,1711"/>
-<area shape="rect" id="Node000136" href="$oneloop__andi_8c.html#af8b5eb29f4ee15376b0b834dc92134b3" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="737,2032,828,2057"/>
-<area shape="poly" id="edge39_Node000132_Node000136" title=" " alt="" coords="552,1711,557,1768,573,1851,587,1897,607,1942,633,1983,666,2019,693,2034,724,2042,723,2047,691,2039,662,2023,629,1986,602,1944,582,1899,568,1853,551,1768,546,1711"/>
-<area shape="rect" id="Node000141" href="$oneloop__andi_8c.html#a924e67cc95821e9c3a0b884ab2e8cd74" title="Error Controller Definition for 3rd order system." alt="" coords="735,2081,830,2107"/>
-<area shape="poly" id="edge40_Node000132_Node000141" title=" " alt="" coords="551,1711,553,1775,567,1872,581,1925,601,1978,629,2026,666,2068,692,2084,722,2091,721,2096,690,2088,662,2072,625,2029,597,1980,576,1927,562,1873,548,1776,546,1711"/>
-<area shape="rect" id="Node000144" href="$oneloop__andi_8c.html#a1c58681559290b4fd395e186fc90e53c" title=" " alt="" coords="737,2131,828,2156"/>
-<area shape="poly" id="edge41_Node000132_Node000144" title=" " alt="" coords="553,1710,566,1793,589,1916,605,1980,623,2039,644,2086,666,2117,693,2134,724,2141,723,2146,691,2139,662,2121,639,2089,618,2041,600,1982,584,1918,560,1794,548,1711"/>
-<area shape="rect" id="Node000145" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="724,2180,841,2205"/>
-<area shape="poly" id="edge42_Node000132_Node000145" title=" " alt="" coords="553,1710,564,1802,586,1940,602,2012,621,2078,642,2131,666,2167,686,2181,711,2188,709,2194,684,2185,662,2171,637,2134,615,2080,597,2013,581,1941,558,1802,547,1711"/>
-<area shape="rect" id="Node000149" href="$oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="698,2229,867,2255"/>
-<area shape="poly" id="edge43_Node000132_Node000149" title=" " alt="" coords="552,1710,562,1810,583,1963,599,2043,618,2117,640,2177,653,2199,666,2216,687,2230,684,2235,662,2220,648,2202,635,2179,612,2118,593,2044,578,1964,557,1810,547,1711"/>
-<area shape="rect" id="Node000150" href="$oneloop__andi_8c.html#a70e849998890733c853538f89ae95e83" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="705,1357,860,1383"/>
-<area shape="poly" id="edge44_Node000132_Node000150" title=" " alt="" coords="547,1685,553,1631,571,1552,585,1509,605,1466,630,1427,662,1393,691,1377,693,1382,666,1397,635,1430,610,1469,590,1511,576,1553,558,1632,552,1686"/>
-<area shape="rect" id="Node000155" href="$oneloop__andi_8c.html#ac90a1e45f9780aa31045749e77a4479e" title="Function to normalize the pseudo control vector." alt="" coords="727,1407,838,1432"/>
-<area shape="poly" id="edge45_Node000132_Node000155" title=" " alt="" coords="548,1685,557,1638,577,1572,592,1537,611,1502,634,1470,662,1443,687,1429,713,1420,715,1426,689,1433,666,1447,638,1474,615,1505,597,1539,582,1574,562,1639,553,1686"/>
-<area shape="rect" id="Node000156" href="$oneloop__andi_8c.html#a25b0ee9d9a4d491a0e10afc7877ef6ea" title=" " alt="" coords="705,1457,861,1497"/>
-<area shape="poly" id="edge46_Node000132_Node000156" title=" " alt="" coords="550,1684,564,1649,586,1601,619,1550,640,1527,662,1506,690,1491,693,1496,666,1511,643,1530,624,1553,591,1603,568,1651,555,1686"/>
-<area shape="rect" id="Node000157" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="691,1293,874,1333"/>
-<area shape="poly" id="edge47_Node000132_Node000157" title=" " alt="" coords="546,1685,550,1624,566,1533,580,1482,601,1432,628,1385,662,1344,677,1332,681,1337,666,1348,632,1388,605,1434,585,1484,571,1534,556,1625,551,1685"/>
-<area shape="rect" id="Node000163" href="$oneloop__andi_8c.html#a1928abb30177b1b340e61d0d324716df" title="Function to generate the reference signals for the oneloop controller." alt="" coords="714,1884,851,1909"/>
-<area shape="poly" id="edge49_Node000132_Node000163" title=" " alt="" coords="556,1710,569,1743,592,1787,624,1833,644,1853,665,1870,702,1887,700,1891,663,1875,640,1857,620,1836,588,1790,565,1745,551,1712"/>
-<area shape="rect" id="Node000180" href="$oneloop__andi_8c.html#a1955c0a14f13bdac49ff5f52c2352de4" title="Function that calculates the model disturbance (Control Effort) The control effort is equalt to : EFF..." alt="" coords="705,1521,860,1561"/>
-<area shape="poly" id="edge51_Node000132_Node000180" title=" " alt="" coords="555,1684,596,1630,627,1598,663,1572,691,1558,693,1563,665,1576,631,1602,600,1633,559,1687"/>
-<area shape="rect" id="Node000181" href="$oneloop__andi_8c.html#aaedb550dffdccfbc773e1c39eda949d4" title=" " alt="" coords="745,1585,820,1611"/>
-<area shape="poly" id="edge52_Node000132_Node000181" title=" " alt="" coords="563,1683,606,1652,663,1621,697,1610,731,1602,732,1607,698,1615,665,1626,609,1656,566,1687"/>
-<area shape="rect" id="Node000182" href="$oneloop__andi_8c.html#a1756435ff466ef57233fd3f31cd965cc" title="Re&#45;Init function of controller variables." alt="" coords="720,1635,845,1660"/>
-<area shape="poly" id="edge54_Node000132_Node000182" title=" " alt="" coords="607,1683,709,1660,710,1666,608,1688"/>
-<area shape="rect" id="Node000183" href="$oneloop__andi_8c.html#afd63a37f159d1892b6cab4c9bd9d15d9" title=" " alt="" coords="728,1736,837,1761"/>
-<area shape="poly" id="edge55_Node000132_Node000183" title=" " alt="" coords="608,1708,715,1732,714,1737,607,1713"/>
-<area shape="rect" id="Node000184" href="$group__state__attitude.html#ga93856aed4a6c0402863fefee957a6296" title="Get vehicle body attitude ZXY euler angles (float)." alt="" coords="669,1785,897,1811"/>
-<area shape="poly" id="edge56_Node000132_Node000184" title=" " alt="" coords="566,1709,609,1741,665,1772,686,1779,685,1784,663,1776,606,1745,562,1713"/>
-<area shape="rect" id="Node000187" href="$sys__id__doublet_8c.html#ac39d9ce7fd360d3159e4d63d1e35445f" title=" " alt="" coords="695,1835,870,1860"/>
-<area shape="poly" id="edge59_Node000132_Node000187" title=" " alt="" coords="559,1709,599,1764,630,1795,665,1821,683,1829,681,1834,663,1826,626,1799,595,1768,554,1712"/>
-<area shape="poly" id="edge48_Node000157_Node000056" title=" " alt="" coords="869,1290,900,1272,922,1251,942,1226,976,1173,1000,1121,1016,1079,1021,1081,1005,1123,981,1176,947,1229,926,1254,903,1276,872,1295"/>
-<area shape="poly" id="edge50_Node000163_Node000074" title=" " alt="" coords="851,1893,877,1885,899,1871,923,1838,944,1788,963,1727,980,1659,1005,1525,1020,1427,1025,1427,1011,1526,985,1661,968,1728,949,1790,927,1840,903,1875,879,1890,852,1898"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1451,170,1478"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,1451,41,1442,46,1432,62,1426,88,1424,115,1427,131,1434,127,1437,114,1432,87,1429,63,1431,49,1436,46,1441,52,1449"/>
+<area shape="rect" id="Node000002" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="242,922,405,967"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="93,1449,306,979,305,984,98,1451"/>
+<area shape="rect" id="Node000131" href="$guidance__oneloop_8c.html#a4cb431031f941038932ab30077d2dca9" title=" " alt="" coords="218,1492,429,1520"/>
+<area shape="poly" id="edge37_Node000001_Node000131" title=" " alt="" coords="168,1477,228,1487,224,1490,171,1481"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="281,922,280,912,287,903,301,898,323,896,347,898,363,906,358,908,346,903,323,901,303,903,290,907,285,913,286,922"/>
+<area shape="rect" id="Node000003" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="482,692,608,720"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="343,920,522,729,519,734,348,923"/>
+<area shape="rect" id="Node000004" href="$oneloop__nB_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics." alt="" coords="707,109,852,137"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="545,691,554,585,574,421,589,336,608,257,631,192,645,167,659,148,674,136,694,129,691,133,677,141,663,152,649,170,636,194,613,258,595,337,579,422,559,586,550,692"/>
+<area shape="rect" id="Node000006" href="$oneloop__nB_8c.html#a81fc30f45e92c49d436c9e990a2df8a5" title="Function that drops control along selected axes." alt="" coords="737,281,822,309"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="543,691,545,624,558,524,572,468,593,414,622,363,660,318,689,301,724,294,720,297,691,306,663,323,626,366,598,416,577,470,564,525,550,625,549,692"/>
+<area shape="rect" id="Node000007" href="$oneloop__nB_8c.html#af8b5eb29f4ee15376b0b834dc92134b3" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="735,57,824,85"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="545,691,552,576,571,397,586,302,605,216,629,145,644,117,660,96,687,78,721,70,717,74,689,83,663,100,648,120,634,147,610,217,591,303,576,397,557,577,550,692"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="688,401,871,429"/>
+<area shape="poly" id="edge12_Node000003_Node000014" title=" " alt="" coords="546,691,554,643,574,575,589,538,608,502,631,469,660,440,675,431,672,435,663,444,635,472,612,505,594,540,579,577,560,644,551,692"/>
+<area shape="rect" id="Node000015" href="$oneloop__nB_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="721,453,838,481"/>
+<area shape="poly" id="edge13_Node000003_Node000015" title=" " alt="" coords="547,691,559,651,581,597,614,540,635,514,660,492,682,479,708,472,705,475,684,484,663,496,639,518,618,543,586,599,564,653,552,693"/>
+<area shape="rect" id="Node000016" href="$oneloop__nB_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="695,505,864,533"/>
+<area shape="poly" id="edge14_Node000003_Node000016" title=" " alt="" coords="550,691,565,660,589,620,620,578,660,544,683,533,679,537,663,548,624,582,593,623,570,662,555,693"/>
+<area shape="rect" id="Node000018" href="$oneloop__nB_8c.html#a70e849998890733c853538f89ae95e83" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="703,557,856,585"/>
+<area shape="poly" id="edge15_Node000003_Node000018" title=" " alt="" coords="555,690,598,643,627,617,660,595,690,585,686,589,663,600,630,621,601,647,560,693"/>
+<area shape="rect" id="Node000022" href="$oneloop__nB_8c.html#a6650a3550fe51ad2bef07a3a15090564" title=" " alt="" coords="748,609,811,637"/>
+<area shape="poly" id="edge16_Node000003_Node000022" title=" " alt="" coords="570,690,612,668,660,647,735,629,731,633,662,652,614,673,574,693"/>
+<area shape="rect" id="Node000023" href="$oneloop__nB_8c.html#ac90a1e45f9780aa31045749e77a4479e" title="Function to normalize the pseudo control vector." alt="" coords="725,661,834,689"/>
+<area shape="poly" id="edge17_Node000003_Node000023" title=" " alt="" coords="606,696,712,683,707,686,610,700"/>
+<area shape="rect" id="Node000024" href="$oneloop__nB_8c.html#a1955c0a14f13bdac49ff5f52c2352de4" title="Function that calculates the model disturbance (Control Effort) The control effort is equalt to : EFF..." alt="" coords="702,213,857,258"/>
+<area shape="poly" id="edge18_Node000003_Node000024" title=" " alt="" coords="546,691,559,605,583,478,598,412,617,352,637,302,659,268,690,249,687,253,663,272,642,305,622,354,604,414,588,479,564,606,551,692"/>
+<area shape="rect" id="Node000028" href="$oneloop__nB_8c.html#ad4f526e29e4eaa9c6d28e614c1031f7f" title="Function which estimates the nB states." alt="" coords="702,713,857,758"/>
+<area shape="poly" id="edge20_Node000003_Node000028" title=" " alt="" coords="607,711,689,722,685,725,609,716"/>
+<area shape="rect" id="Node000035" href="$oneloop__nB_8c.html#a2715c0f63ac8b203a76e7e3347fe87e8" title="Propagate the filters." alt="" coords="694,333,865,378"/>
+<area shape="poly" id="edge21_Node000003_Node000035" title=" " alt="" coords="545,691,551,635,569,554,583,509,603,465,628,424,660,388,682,374,679,378,663,392,632,427,608,468,588,511,574,555,556,636,550,692"/>
+<area shape="rect" id="Node000056" href="$group__state__velocity.html#ga2f160b046f8165f52bb439f0bd5bc1dd" title="Get ground speed in local NED coordinates (float)." alt="" coords="946,1092,1101,1120"/>
+<area shape="poly" id="edge35_Node000003_Node000056" title=" " alt="" coords="546,717,549,787,553,834,561,886,575,940,596,992,625,1039,663,1078,695,1099,730,1114,767,1123,805,1128,881,1129,950,1122,946,1124,881,1134,805,1134,766,1128,728,1119,692,1104,660,1083,620,1042,591,994,570,941,556,887,548,835,544,787,545,723"/>
+<area shape="rect" id="Node000062" href="$oneloop__nB_8c.html#aebebb94d4c9106b47bc736e142cbce66" title="Function to generate the reference signals for the oneloop controller." alt="" coords="717,1041,842,1069"/>
+<area shape="poly" id="edge23_Node000003_Node000062" title=" " alt="" coords="547,717,555,777,571,860,586,906,605,950,631,991,663,1026,681,1039,704,1048,699,1050,679,1043,660,1031,627,994,601,952,581,907,566,862,550,778,547,723"/>
+<area shape="rect" id="Node000074" href="$radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="956,1452,1090,1480"/>
+<area shape="poly" id="edge28_Node000003_Node000074" title=" " alt="" coords="549,718,563,805,587,932,602,997,620,1056,641,1104,663,1136,692,1155,720,1163,748,1163,777,1160,807,1155,837,1154,868,1161,899,1180,928,1207,952,1240,972,1275,988,1311,1010,1381,1021,1438,1016,1436,1005,1382,983,1313,967,1277,948,1243,924,1211,896,1184,866,1166,836,1160,807,1161,778,1165,749,1169,719,1169,689,1160,659,1140,636,1107,615,1058,597,998,581,933,558,806,548,723"/>
+<area shape="rect" id="Node000083" href="$oneloop__nB_8c.html#aaed2060eaaa7c57b735ca248ece79cee" title="Function that performs state compensation for gyroscopic effects." alt="" coords="661,781,898,809"/>
+<area shape="poly" id="edge27_Node000003_Node000083" title=" " alt="" coords="567,718,611,743,662,767,685,776,680,778,660,772,609,748,568,723"/>
+<area shape="rect" id="Node000084" href="$oneloop__nB_8c.html#ac8e0667f38cda6004b4909b8a857cdce" title="Function that sets the WLS settings for oneloop controller." alt="" coords="712,833,847,861"/>
+<area shape="poly" id="edge29_Node000003_Node000084" title=" " alt="" coords="556,717,600,768,629,795,663,818,699,834,695,836,660,823,626,799,596,772,557,723"/>
+<area shape="rect" id="Node000085" href="$oneloop__nB_8c.html#a816b1c8bc0c257ae8495bf46f9b08ffd" title="Spin transition manoeuvre state machine." alt="" coords="711,885,848,913"/>
+<area shape="poly" id="edge30_Node000003_Node000085" title=" " alt="" coords="552,717,569,751,592,792,623,835,663,870,699,888,694,890,660,875,620,838,588,795,564,753,552,723"/>
+<area shape="rect" id="Node000090" href="$oneloop__nB_8c.html#a9713be44d5c7b15bba3a9669a0eed29b" title="Enforce valid spin protection / spin trim parameters (they can be changed in flight from the settings..." alt="" coords="687,937,872,965"/>
+<area shape="poly" id="edge31_Node000003_Node000090" title=" " alt="" coords="550,718,564,760,585,816,618,874,639,900,663,922,676,932,671,933,660,927,635,904,613,877,580,818,559,762,550,723"/>
+<area shape="rect" id="Node000091" href="$oneloop__nB_8c.html#ace0fbc8ac0b62b29b40394c1e0f5aacc" title=" " alt="" coords="703,989,856,1017"/>
+<area shape="poly" id="edge32_Node000003_Node000091" title=" " alt="" coords="548,718,559,769,578,838,593,876,612,912,635,946,663,974,691,991,686,993,660,979,631,949,607,915,588,878,573,840,554,770,548,723"/>
+<area shape="rect" id="Node000093" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="683,161,876,189"/>
+<area shape="poly" id="edge33_Node000003_Node000093" title=" " alt="" coords="545,691,555,593,577,445,592,367,611,296,633,238,659,199,672,191,669,195,663,202,638,240,616,298,598,369,582,446,561,594,550,692"/>
+<area shape="rect" id="Node000098" href="$group__state__position.html#gaf0ea970c91b1d3ebc462f987f28bd3f0" title="Get position in local NED coordinates (float)." alt="" coords="696,1245,863,1273"/>
+<area shape="poly" id="edge34_Node000003_Node000098" title=" " alt="" coords="548,717,560,821,581,976,596,1057,615,1130,638,1191,650,1214,663,1231,684,1246,679,1247,659,1234,645,1217,633,1193,610,1132,591,1058,576,977,555,822,547,723"/>
+<area shape="rect" id="Node000112" href="$wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d" title="active set algorithm for control allocation" alt="" coords="739,1193,820,1221"/>
+<area shape="poly" id="edge36_Node000003_Node000112" title=" " alt="" coords="548,717,562,811,585,948,601,1019,619,1084,640,1138,663,1173,691,1192,726,1203,721,1205,689,1197,659,1177,635,1140,614,1086,596,1020,580,949,557,812,548,723"/>
+<area shape="rect" id="Node000005" href="$oneloop__nB_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="954,221,1093,249"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="851,132,899,147,952,177,997,211,992,212,949,182,897,152,853,137"/>
+<area shape="rect" id="Node000008" href="$oneloop__nB_8c.html#a6a52b62ef9507057b8d71370d0607547" title="Calculate velocity limit based on acceleration limit for a float From SUVAT we have that v^2 = u^2 + ..." alt="" coords="959,5,1088,33"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="823,60,945,34,941,38,826,64"/>
+<area shape="rect" id="Node000009" href="$oneloop__nB_8c.html#adcc571a2361f13620686c4043412da97" title="Calculate Scaled Error between two 3D arrays." alt="" coords="975,57,1072,85"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="823,69,961,70,957,73,826,73"/>
+<area shape="rect" id="Node000010" href="$oneloop__nB_8c.html#acd17c1487b17b6c4a8a37fea7ade6bff" title="Attitude Rates to Euler Conversion Function ZYX." alt="" coords="948,109,1098,154"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="824,78,898,95,936,106,931,108,897,100,826,83"/>
+<area shape="poly" id="edge19_Node000024_Node000005" title=" " alt="" coords="856,233,940,234,936,237,859,237"/>
+<area shape="poly" id="edge22_Node000035_Node000056" title=" " alt="" coords="864,365,884,375,900,388,917,412,932,443,958,524,979,621,995,727,1015,933,1023,1077,1018,1076,1010,933,990,727,974,622,953,525,927,445,912,415,896,392,881,379,866,370"/>
+<area shape="poly" id="edge24_Node000062_Node000005" title=" " alt="" coords="841,1052,871,1044,896,1027,914,1001,931,967,959,879,980,770,996,652,1014,422,1021,267,1022,262,1019,423,1001,653,986,771,964,880,936,969,919,1004,900,1030,873,1048,844,1057"/>
+<area shape="poly" id="edge26_Node000062_Node000056" title=" " alt="" coords="841,1066,941,1087,936,1089,843,1071"/>
+<area shape="poly" id="edge25_Node000062_Node000074" title=" " alt="" coords="810,1067,856,1095,880,1114,900,1136,926,1174,948,1215,983,1299,1006,1377,1020,1437,1014,1436,1001,1378,978,1301,943,1217,921,1177,896,1139,876,1118,853,1100,811,1072"/>
+<area shape="poly" id="edge38_Node000131_Node000131" title=" " alt="" coords="285,1492,279,1483,284,1473,299,1467,323,1465,349,1468,365,1476,360,1478,348,1473,323,1471,300,1473,288,1477,284,1483,290,1491"/>
+<area shape="rect" id="Node000132" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="477,1760,613,1788"/>
+<area shape="poly" id="edge39_Node000131_Node000132" title=" " alt="" coords="337,1518,525,1747,520,1748,336,1523"/>
+<area shape="poly" id="edge61_Node000132_Node000056" title=" " alt="" coords="546,1759,558,1673,581,1544,597,1478,615,1417,636,1367,659,1333,689,1312,718,1302,747,1300,775,1302,804,1304,834,1304,864,1298,896,1282,935,1249,966,1209,991,1168,1009,1136,1012,1132,996,1170,971,1212,939,1253,899,1287,866,1303,834,1310,804,1310,775,1307,747,1305,719,1307,691,1316,663,1337,641,1370,620,1419,602,1479,586,1545,563,1674,551,1761"/>
+<area shape="poly" id="edge56_Node000132_Node000074" title=" " alt="" coords="613,1785,679,1793,753,1792,791,1787,828,1779,863,1765,896,1746,925,1721,950,1690,969,1656,985,1620,1006,1550,1017,1497,1020,1493,1011,1552,990,1622,974,1659,954,1693,929,1724,899,1751,866,1770,830,1784,792,1793,753,1798,678,1798,614,1791"/>
+<area shape="poly" id="edge60_Node000132_Node000098" title=" " alt="" coords="545,1758,557,1665,579,1524,595,1450,613,1383,635,1327,659,1289,683,1274,680,1278,663,1293,640,1330,619,1385,600,1452,585,1525,562,1666,550,1760"/>
+<area shape="poly" id="edge63_Node000132_Node000112" title=" " alt="" coords="545,1759,554,1656,575,1497,590,1414,609,1337,632,1275,645,1250,660,1232,689,1213,726,1206,721,1209,691,1218,663,1236,650,1253,637,1277,614,1339,596,1415,580,1498,560,1656,550,1761"/>
+<area shape="rect" id="Node000133" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics." alt="" coords="707,2019,852,2046"/>
+<area shape="poly" id="edge40_Node000132_Node000133" title=" " alt="" coords="550,1785,562,1830,583,1889,616,1951,638,1980,663,2004,695,2022,690,2022,660,2008,634,1983,611,1954,578,1891,557,1832,548,1790"/>
+<area shape="rect" id="Node000135" href="$oneloop__andi_8c.html#ab17546dbd07775cc749a574ce5e943b4" title=" " alt="" coords="726,2071,833,2098"/>
+<area shape="poly" id="edge41_Node000132_Node000135" title=" " alt="" coords="549,1786,558,1839,576,1912,591,1951,610,1990,634,2025,663,2056,686,2070,714,2080,708,2081,684,2075,660,2060,630,2029,605,1993,586,1954,571,1914,553,1840,547,1791"/>
+<area shape="rect" id="Node000136" href="$oneloop__andi_8c.html#af8b5eb29f4ee15376b0b834dc92134b3" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="735,2123,824,2150"/>
+<area shape="poly" id="edge42_Node000132_Node000136" title=" " alt="" coords="548,1786,554,1848,570,1934,584,1981,604,2028,630,2071,663,2108,690,2124,723,2135,717,2135,688,2129,660,2112,626,2074,599,2030,579,1983,565,1936,549,1848,546,1791"/>
+<area shape="rect" id="Node000141" href="$oneloop__andi_8c.html#a924e67cc95821e9c3a0b884ab2e8cd74" title="Error Controller Definition for 3rd order system." alt="" coords="732,2175,827,2202"/>
+<area shape="poly" id="edge43_Node000132_Node000141" title=" " alt="" coords="547,1786,550,1855,563,1956,577,2011,598,2066,626,2116,663,2160,688,2176,720,2187,714,2187,686,2181,660,2164,622,2119,593,2068,572,2013,558,1957,545,1856,545,1790"/>
+<area shape="rect" id="Node000144" href="$oneloop__andi_8c.html#a1c58681559290b4fd395e186fc90e53c" title=" " alt="" coords="734,2227,825,2254"/>
+<area shape="poly" id="edge44_Node000132_Node000144" title=" " alt="" coords="549,1786,563,1874,587,2003,602,2069,620,2130,641,2179,663,2212,689,2228,722,2239,717,2239,687,2233,659,2216,636,2182,615,2132,597,2071,581,2004,558,1875,547,1790"/>
+<area shape="rect" id="Node000145" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="721,2279,838,2306"/>
+<area shape="poly" id="edge45_Node000132_Node000145" title=" " alt="" coords="549,1786,561,1884,583,2028,599,2103,617,2171,639,2227,663,2264,683,2278,709,2289,704,2289,681,2283,659,2268,634,2229,612,2173,594,2104,578,2029,556,1884,547,1791"/>
+<area shape="rect" id="Node000149" href="$oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="695,2331,864,2358"/>
+<area shape="poly" id="edge46_Node000132_Node000149" title=" " alt="" coords="549,1786,559,1892,580,2052,595,2136,614,2212,637,2275,650,2298,663,2316,684,2333,679,2331,659,2320,645,2301,632,2277,609,2214,590,2137,575,2053,554,1893,546,1790"/>
+<area shape="rect" id="Node000150" href="$oneloop__andi_8c.html#a70e849998890733c853538f89ae95e83" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="703,1416,856,1444"/>
+<area shape="poly" id="edge47_Node000132_Node000150" title=" " alt="" coords="545,1759,550,1702,567,1620,582,1575,601,1531,627,1490,660,1454,690,1439,686,1442,663,1459,631,1493,606,1533,587,1577,572,1621,555,1703,550,1760"/>
+<area shape="rect" id="Node000155" href="$oneloop__andi_8c.html#ac90a1e45f9780aa31045749e77a4479e" title="Function to normalize the pseudo control vector." alt="" coords="725,1468,834,1496"/>
+<area shape="poly" id="edge48_Node000132_Node000155" title=" " alt="" coords="546,1758,554,1710,573,1641,588,1604,607,1568,631,1534,660,1505,683,1491,712,1484,708,1487,685,1496,663,1509,635,1537,612,1570,593,1606,578,1643,559,1711,551,1761"/>
+<area shape="rect" id="Node000156" href="$oneloop__andi_8c.html#a25b0ee9d9a4d491a0e10afc7877ef6ea" title=" " alt="" coords="702,1520,857,1564"/>
+<area shape="poly" id="edge49_Node000132_Node000156" title=" " alt="" coords="548,1758,561,1722,584,1672,617,1620,637,1595,660,1574,689,1559,685,1563,663,1579,641,1599,621,1623,589,1674,566,1724,553,1761"/>
+<area shape="rect" id="Node000157" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="689,1348,870,1392"/>
+<area shape="poly" id="edge50_Node000132_Node000157" title=" " alt="" coords="544,1758,547,1695,562,1600,577,1547,597,1495,624,1446,659,1403,677,1392,673,1396,663,1406,629,1449,602,1497,582,1549,567,1601,553,1696,549,1760"/>
+<area shape="rect" id="Node000163" href="$oneloop__andi_8c.html#a1928abb30177b1b340e61d0d324716df" title="Function to generate the reference signals for the oneloop controller." alt="" coords="711,1967,848,1994"/>
+<area shape="poly" id="edge52_Node000132_Node000163" title=" " alt="" coords="552,1786,567,1821,590,1866,622,1913,641,1934,663,1952,699,1970,694,1971,660,1956,638,1938,618,1916,586,1869,563,1824,551,1791"/>
+<area shape="rect" id="Node000180" href="$oneloop__andi_8c.html#a1955c0a14f13bdac49ff5f52c2352de4" title="Function that calculates the model disturbance (Control Effort) The control effort is equalt to : EFF..." alt="" coords="702,1589,857,1634"/>
+<area shape="poly" id="edge54_Node000132_Node000180" title=" " alt="" coords="553,1758,595,1703,625,1671,660,1644,690,1631,686,1634,663,1648,629,1675,599,1706,557,1761"/>
+<area shape="rect" id="Node000181" href="$oneloop__andi_8c.html#aaedb550dffdccfbc773e1c39eda949d4" title=" " alt="" coords="743,1657,816,1685"/>
+<area shape="poly" id="edge55_Node000132_Node000181" title=" " alt="" coords="562,1758,605,1726,660,1695,694,1684,730,1677,725,1680,695,1689,662,1700,608,1731,565,1762"/>
+<area shape="rect" id="Node000182" href="$oneloop__andi_8c.html#a1756435ff466ef57233fd3f31cd965cc" title="Re&#45;Init function of controller variables." alt="" coords="717,1709,842,1737"/>
+<area shape="poly" id="edge57_Node000132_Node000182" title=" " alt="" coords="611,1757,705,1738,700,1741,613,1762"/>
+<area shape="rect" id="Node000183" href="$oneloop__andi_8c.html#afd63a37f159d1892b6cab4c9bd9d15d9" title=" " alt="" coords="725,1811,834,1838"/>
+<area shape="poly" id="edge58_Node000132_Node000183" title=" " alt="" coords="612,1786,713,1809,708,1810,613,1791"/>
+<area shape="rect" id="Node000184" href="$group__state__attitude.html#ga93856aed4a6c0402863fefee957a6296" title="Get vehicle body attitude ZXY euler angles (float)." alt="" coords="666,1863,893,1890"/>
+<area shape="poly" id="edge59_Node000132_Node000184" title=" " alt="" coords="564,1785,608,1817,662,1847,685,1857,680,1858,660,1852,605,1822,564,1791"/>
+<area shape="rect" id="Node000187" href="$sys__id__doublet_8c.html#ac39d9ce7fd360d3159e4d63d1e35445f" title=" " alt="" coords="692,1915,867,1942"/>
+<area shape="poly" id="edge62_Node000132_Node000187" title=" " alt="" coords="555,1785,598,1842,628,1873,663,1900,681,1910,676,1910,660,1904,624,1877,594,1846,555,1791"/>
+<area shape="poly" id="edge51_Node000157_Node000056" title=" " alt="" coords="867,1345,896,1326,938,1281,971,1228,995,1176,1012,1137,1015,1132,1000,1178,976,1231,942,1284,899,1331,870,1349"/>
+<area shape="poly" id="edge53_Node000163_Node000074" title=" " alt="" coords="847,1975,874,1967,896,1952,919,1918,941,1867,960,1804,976,1735,1002,1597,1017,1497,1020,1493,1007,1598,981,1736,965,1806,946,1869,924,1920,900,1956,876,1972,849,1980"/>
 </map>

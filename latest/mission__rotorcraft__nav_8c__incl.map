@@ -1,88 +1,88 @@
 <map id="sw/airborne/modules/mission/mission_rotorcraft_nav.c" name="sw/airborne/modules/mission/mission_rotorcraft_nav.c">
-<area shape="rect" id="Node000001" title="mission navigation for rotorcrafts" alt="" coords="332,5,572,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="15,101,81,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,47,219,68,101,96,91,99,89,94,99,91,218,63,332,42"/>
-<area shape="rect" id="Node000003" href="$mission__common_8h.html" title="mission planner library" alt="" coords="94,269,282,309"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="361,48,303,67,244,95,189,133,166,156,146,183,141,201,143,220,152,239,163,257,159,260,147,242,138,221,135,200,142,180,162,153,186,129,241,90,301,62,359,43"/>
-<area shape="rect" id="Node000017" href="$autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="895,189,987,214"/>
-<area shape="poly" id="edge25_Node000001_Node000017" title=" " alt="" coords="478,44,592,131,667,158,746,177,819,188,882,194,881,200,819,194,745,182,666,163,589,136,475,48"/>
-<area shape="rect" id="Node000026" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="377,93,527,133"/>
-<area shape="poly" id="edge44_Node000001_Node000026" title=" " alt="" coords="455,46,455,79,449,79,449,46"/>
-<area shape="rect" id="Node000029" title=" " alt="" coords="603,101,775,126"/>
-<area shape="poly" id="edge57_Node000001_Node000029" title=" " alt="" coords="505,43,646,94,644,99,503,48"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="303,592,358,617"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="181,310,164,358,159,390,160,415,165,439,177,470,198,510,230,542,261,565,293,584,291,588,258,570,226,546,194,513,172,472,160,441,154,416,154,389,159,357,176,308"/>
-<area shape="rect" id="Node000005" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="370,357,521,397"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="245,307,377,350,375,356,244,312"/>
-<area shape="rect" id="Node000013" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="195,357,346,397"/>
-<area shape="poly" id="edge16_Node000003_Node000013" title=" " alt="" coords="208,308,245,345,241,349,204,311"/>
-<area shape="poly" id="edge15_Node000005_Node000004" title=" " alt="" coords="436,399,385,472,359,495,349,505,340,520,332,549,331,578,326,578,327,549,335,518,345,501,356,491,381,469,431,396"/>
-<area shape="rect" id="Node000006" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="245,445,371,471"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="414,400,342,441,339,436,411,395"/>
-<area shape="rect" id="Node000007" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="819,445,973,471"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="521,389,817,440,816,446,520,394"/>
-<area shape="rect" id="Node000008" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="819,519,938,544"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="896,472,887,506,882,505,891,470"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="871,592,934,617"/>
-<area shape="poly" id="edge14_Node000007_Node000009" title=" " alt="" coords="974,466,1069,485,1109,499,1134,517,1140,531,1134,546,1122,557,1103,566,1055,582,948,601,947,596,1053,576,1101,561,1119,552,1130,542,1135,531,1130,520,1106,504,1068,490,973,471"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="1057,592,1125,617"/>
-<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="974,464,1080,483,1125,498,1142,507,1154,517,1160,536,1154,554,1140,571,1122,586,1119,582,1136,568,1149,552,1155,536,1150,520,1139,511,1123,503,1079,488,973,469"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="963,519,1120,544"/>
-<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="921,468,1007,510,1004,515,918,473"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="819,544,800,547,372,601,371,596,800,541,819,539"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="885,543,897,578,892,580,880,545"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="1198,592,1269,617"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="936,541,1185,591,1184,596,935,547"/>
-<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="914,541,1044,585,1043,590,912,547"/>
-<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="257,399,238,432,234,451,236,470,250,502,269,532,310,580,306,584,265,536,245,505,231,471,229,451,233,430,252,396"/>
-<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="282,396,299,432,294,434,277,399"/>
-<area shape="rect" id="Node000014" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="538,445,681,471"/>
-<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="347,393,547,440,546,445,346,399"/>
-<area shape="poly" id="edge20_Node000014_Node000004" title=" " alt="" coords="626,469,642,485,656,504,663,525,662,536,657,546,637,561,607,573,530,590,444,600,372,605,372,599,444,595,529,585,606,568,634,556,653,542,657,534,658,526,652,507,638,488,622,473"/>
-<area shape="poly" id="edge21_Node000014_Node000008" title=" " alt="" coords="653,468,823,513,821,518,652,473"/>
-<area shape="rect" id="Node000015" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="394,519,547,544"/>
-<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="588,473,507,515,504,510,586,468"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="571,519,642,544"/>
-<area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="612,471,610,505,605,505,606,471"/>
-<area shape="poly" id="edge23_Node000015_Node000004" title=" " alt="" coords="449,546,367,588,364,583,447,542"/>
-<area shape="poly" id="edge26_Node000017_Node000004" title=" " alt="" coords="941,215,930,258,908,311,812,433,749,506,707,546,679,558,642,568,550,584,372,603,372,598,549,579,641,563,677,553,704,542,745,503,808,430,903,308,925,257,936,214"/>
-<area shape="rect" id="Node000018" href="$paparazzi_8h.html" title=" " alt="" coords="1319,277,1417,302"/>
-<area shape="poly" id="edge27_Node000017_Node000018" title=" " alt="" coords="988,207,1132,230,1309,267,1322,270,1320,275,1307,272,1131,235,987,212"/>
-<area shape="rect" id="Node000020" title=" " alt="" coords="733,277,893,302"/>
-<area shape="poly" id="edge29_Node000017_Node000020" title=" " alt="" coords="926,216,844,271,841,267,923,212"/>
-<area shape="rect" id="Node000021" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="621,277,688,302"/>
-<area shape="poly" id="edge30_Node000017_Node000021" title=" " alt="" coords="903,217,702,277,701,272,902,212"/>
-<area shape="rect" id="Node000023" title=" " alt="" coords="1441,277,1567,302"/>
-<area shape="poly" id="edge41_Node000017_Node000023" title=" " alt="" coords="988,205,1181,227,1305,245,1430,267,1449,271,1448,276,1429,272,1304,250,1180,233,987,210"/>
-<area shape="rect" id="Node000024" title=" " alt="" coords="979,277,1136,302"/>
-<area shape="poly" id="edge42_Node000017_Node000024" title=" " alt="" coords="959,212,1032,266,1029,270,955,216"/>
-<area shape="rect" id="Node000025" title=" " alt="" coords="1161,277,1295,302"/>
-<area shape="poly" id="edge43_Node000017_Node000025" title=" " alt="" coords="981,212,1177,270,1176,275,979,217"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="1325,365,1411,390"/>
-<area shape="poly" id="edge28_Node000018_Node000019" title=" " alt="" coords="1371,302,1371,350,1365,350,1365,302"/>
-<area shape="poly" id="edge39_Node000021_Node000004" title=" " alt="" coords="644,304,534,399,490,433,455,457,421,482,383,520,361,551,344,581,340,578,357,548,379,517,418,478,452,452,487,428,530,395,640,300"/>
-<area shape="poly" id="edge34_Node000021_Node000005" title=" " alt="" coords="627,305,505,355,503,350,625,300"/>
-<area shape="poly" id="edge32_Node000021_Node000007" title=" " alt="" coords="689,299,766,325,803,341,828,355,863,393,887,431,882,434,859,396,825,359,801,346,764,330,687,304"/>
-<area shape="poly" id="edge40_Node000021_Node000010" title=" " alt="" coords="689,298,783,327,864,355,1029,420,1097,457,1175,517,1203,547,1223,578,1218,581,1198,550,1172,521,1094,461,1027,425,862,360,782,332,688,303"/>
-<area shape="poly" id="edge33_Node000021_Node000013" title=" " alt="" coords="622,301,360,359,359,354,621,295"/>
-<area shape="poly" id="edge31_Node000021_Node000014" title=" " alt="" coords="654,303,639,358,619,432,613,431,633,357,649,302"/>
-<area shape="rect" id="Node000022" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="647,357,814,397"/>
-<area shape="poly" id="edge35_Node000021_Node000022" title=" " alt="" coords="667,300,707,345,703,349,663,304"/>
-<area shape="poly" id="edge38_Node000022_Node000004" title=" " alt="" coords="733,398,730,430,722,470,705,511,693,530,678,546,654,560,622,571,538,588,447,599,372,604,371,599,447,593,537,583,620,566,652,555,674,542,689,527,700,509,717,469,725,429,728,397"/>
-<area shape="poly" id="edge37_Node000022_Node000007" title=" " alt="" coords="771,395,861,437,858,442,769,400"/>
-<area shape="poly" id="edge36_Node000022_Node000014" title=" " alt="" coords="703,400,640,440,637,436,700,395"/>
-<area shape="poly" id="edge45_Node000026_Node000004" title=" " alt="" coords="377,124,265,144,204,161,145,184,94,203,49,220,32,231,19,245,11,263,8,288,8,459,10,481,16,499,39,531,73,556,115,574,162,587,208,595,290,601,289,606,208,600,160,592,114,579,71,561,36,535,12,502,5,482,3,459,3,288,6,262,15,242,29,227,47,215,92,198,143,179,202,156,263,139,376,119"/>
-<area shape="poly" id="edge47_Node000026_Node000005" title=" " alt="" coords="478,132,514,165,549,209,562,234,570,259,570,285,561,311,541,335,515,353,511,349,537,331,556,308,565,284,564,260,557,236,545,212,510,169,474,136"/>
-<area shape="poly" id="edge46_Node000026_Node000013" title=" " alt="" coords="441,135,294,348,289,345,437,132"/>
-<area shape="poly" id="edge55_Node000026_Node000017" title=" " alt="" coords="528,127,547,131,882,188,881,193,546,136,527,132"/>
-<area shape="poly" id="edge56_Node000026_Node000020" title=" " alt="" coords="513,131,573,152,636,179,719,224,787,267,784,271,716,229,634,184,571,157,511,136"/>
-<area shape="poly" id="edge48_Node000026_Node000021" title=" " alt="" coords="521,131,565,151,604,179,621,199,634,221,651,262,646,264,629,223,616,202,601,183,562,155,519,136"/>
-<area shape="rect" id="Node000027" href="$nav_2waypoints_8h.html" title=" " alt="" coords="357,277,547,302"/>
-<area shape="poly" id="edge49_Node000026_Node000027" title=" " alt="" coords="455,134,455,263,449,263,449,134"/>
-<area shape="rect" id="Node000028" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="157,181,323,221"/>
-<area shape="poly" id="edge53_Node000026_Node000028" title=" " alt="" coords="406,136,300,179,298,174,404,131"/>
-<area shape="poly" id="edge50_Node000027_Node000004" title=" " alt="" coords="358,304,253,326,211,341,185,359,173,378,169,397,171,417,179,438,209,486,254,542,276,564,301,583,297,587,273,568,250,546,205,489,174,441,166,418,164,397,169,376,181,356,208,336,252,320,357,299"/>
-<area shape="poly" id="edge52_Node000027_Node000005" title=" " alt="" coords="454,302,451,343,445,343,448,302"/>
-<area shape="poly" id="edge51_Node000027_Node000013" title=" " alt="" coords="429,305,324,354,322,349,426,300"/>
-<area shape="poly" id="edge54_Node000028_Node000004" title=" " alt="" coords="158,224,117,243,83,271,66,296,59,319,59,376,59,459,65,494,84,522,111,545,145,564,183,577,221,587,290,598,289,603,220,592,181,582,143,568,108,550,80,526,60,496,53,460,53,376,54,318,62,294,79,268,114,238,155,219"/>
+<area shape="rect" id="Node000001" title="mission navigation for rotorcrafts" alt="" coords="330,5,569,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="15,106,81,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,49,218,71,101,101,93,103,89,99,99,95,217,66,331,45"/>
+<area shape="rect" id="Node000003" href="$mission__common_8h.html" title="mission planner library" alt="" coords="93,283,280,328"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="354,52,300,74,242,103,188,142,165,166,146,192,140,211,142,231,150,251,161,270,156,271,145,253,137,232,135,210,142,189,161,162,185,138,239,98,298,69,358,49"/>
+<area shape="rect" id="Node000017" href="$autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="892,199,983,227"/>
+<area shape="poly" id="edge25_Node000001_Node000017" title=" " alt="" coords="477,48,538,96,562,121,572,131,588,140,662,169,740,189,814,201,879,209,873,210,813,206,739,194,661,175,585,145,569,135,558,124,534,100,477,53"/>
+<area shape="rect" id="Node000026" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="374,98,524,143"/>
+<area shape="poly" id="edge44_Node000001_Node000026" title=" " alt="" coords="450,48,452,83,447,82,448,53"/>
+<area shape="rect" id="Node000029" title=" " alt="" coords="598,106,770,134"/>
+<area shape="poly" id="edge57_Node000001_Node000029" title=" " alt="" coords="505,48,638,99,633,101,506,53"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="304,620,357,648"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="178,326,165,377,161,410,161,437,166,463,177,495,197,536,227,570,258,594,292,615,287,614,255,598,224,574,192,539,172,497,161,465,155,438,155,410,160,375,176,331"/>
+<area shape="rect" id="Node000005" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="369,376,519,421"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="248,326,371,369,366,372,248,331"/>
+<area shape="rect" id="Node000013" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="194,376,344,421"/>
+<area shape="poly" id="edge16_Node000003_Node000013" title=" " alt="" coords="206,326,242,364,237,365,206,331"/>
+<area shape="poly" id="edge15_Node000005_Node000004" title=" " alt="" coords="434,420,385,498,359,521,349,530,340,545,332,575,330,606,326,603,327,574,335,543,345,527,356,517,381,495,430,423"/>
+<area shape="rect" id="Node000006" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="246,469,370,496"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="410,420,344,463,341,458,406,423"/>
+<area shape="rect" id="Node000007" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="815,469,969,496"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="520,411,807,464,802,466,519,416"/>
+<area shape="rect" id="Node000008" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="815,544,932,572"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="891,495,882,531,879,527,887,499"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="866,620,928,648"/>
+<area shape="poly" id="edge14_Node000007_Node000009" title=" " alt="" coords="969,491,1063,511,1103,525,1127,543,1134,558,1128,574,1115,584,1097,594,1050,610,944,629,944,624,1048,604,1095,589,1112,580,1123,570,1128,558,1123,546,1100,530,1062,516,969,496"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1050,620,1118,648"/>
+<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="969,489,1075,508,1120,523,1137,532,1149,543,1155,561,1149,580,1136,598,1118,613,1116,608,1132,594,1145,578,1150,561,1144,546,1134,537,1118,528,1074,513,969,494"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="956,544,1113,572"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="918,494,999,537,993,537,917,499"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="817,569,796,575,373,630,373,625,796,569,812,570"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="879,570,891,607,886,604,876,575"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1192,620,1262,648"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="933,569,1179,622,1173,622,932,574"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="911,570,1038,616,1033,615,911,575"/>
+<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="254,419,238,457,234,476,236,496,250,528,268,558,309,609,304,608,264,561,245,530,231,497,228,476,233,455,251,423"/>
+<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="280,419,298,455,293,454,279,424"/>
+<area shape="rect" id="Node000014" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="536,469,677,496"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="345,415,540,463,535,466,345,421"/>
+<area shape="poly" id="edge20_Node000014_Node000004" title=" " alt="" coords="623,494,639,511,653,531,660,553,658,564,653,574,633,589,604,601,529,618,445,629,373,634,373,628,444,623,528,613,603,596,631,584,649,570,653,562,654,553,648,534,635,515,621,499"/>
+<area shape="poly" id="edge21_Node000014_Node000008" title=" " alt="" coords="655,494,814,540,809,540,654,500"/>
+<area shape="rect" id="Node000015" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="393,544,546,572"/>
+<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="585,496,508,539,506,534,580,498"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="569,544,639,572"/>
+<area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="608,495,607,530,603,527,604,499"/>
+<area shape="poly" id="edge23_Node000015_Node000004" title=" " alt="" coords="447,572,370,615,368,610,442,573"/>
+<area shape="poly" id="edge26_Node000017_Node000004" title=" " alt="" coords="937,225,926,274,904,329,809,457,745,533,703,574,676,586,639,596,548,613,373,632,372,627,548,607,638,591,674,581,700,570,741,529,804,453,899,327,921,272,933,229"/>
+<area shape="rect" id="Node000018" href="$paparazzi_8h.html" title=" " alt="" coords="1314,292,1411,320"/>
+<area shape="poly" id="edge27_Node000017_Node000018" title=" " alt="" coords="983,218,1127,242,1302,281,1315,287,1310,287,1301,286,1125,247,983,224"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="730,292,889,320"/>
+<area shape="poly" id="edge29_Node000017_Node000020" title=" " alt="" coords="921,226,842,285,839,280,917,229"/>
+<area shape="rect" id="Node000021" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="619,292,685,320"/>
+<area shape="poly" id="edge30_Node000017_Node000021" title=" " alt="" coords="893,229,718,286,701,291,699,286,717,281,898,226"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="1436,292,1562,320"/>
+<area shape="poly" id="edge41_Node000017_Node000023" title=" " alt="" coords="983,216,1176,239,1299,258,1423,281,1443,287,1438,287,1422,286,1298,263,1175,245,984,222"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="975,292,1132,320"/>
+<area shape="poly" id="edge42_Node000017_Node000024" title=" " alt="" coords="954,225,1027,282,1022,282,953,230"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1156,292,1290,320"/>
+<area shape="poly" id="edge43_Node000017_Node000025" title=" " alt="" coords="979,225,1169,286,1164,287,979,230"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1320,384,1406,412"/>
+<area shape="poly" id="edge28_Node000018_Node000019" title=" " alt="" coords="1364,318,1365,371,1361,368,1361,322"/>
+<area shape="poly" id="edge39_Node000021_Node000004" title=" " alt="" coords="641,319,532,423,489,457,454,481,421,507,383,546,362,577,344,608,341,604,357,574,379,543,417,503,451,477,486,453,529,419,636,321"/>
+<area shape="poly" id="edge34_Node000021_Node000005" title=" " alt="" coords="619,321,509,372,507,367,624,319"/>
+<area shape="poly" id="edge32_Node000021_Node000007" title=" " alt="" coords="686,315,763,343,798,359,823,374,858,413,882,455,877,453,854,416,820,378,796,364,761,348,686,321"/>
+<area shape="poly" id="edge40_Node000021_Node000010" title=" " alt="" coords="686,315,860,374,1025,442,1093,480,1170,542,1196,573,1216,607,1211,605,1192,576,1166,546,1090,484,1023,446,858,378,685,320"/>
+<area shape="poly" id="edge33_Node000021_Node000013" title=" " alt="" coords="616,317,360,378,358,373,620,313"/>
+<area shape="poly" id="edge31_Node000021_Node000014" title=" " alt="" coords="650,318,635,377,615,455,611,452,629,375,646,322"/>
+<area shape="rect" id="Node000022" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="644,376,809,421"/>
+<area shape="poly" id="edge35_Node000021_Node000022" title=" " alt="" coords="663,317,702,364,696,363,662,322"/>
+<area shape="poly" id="edge38_Node000022_Node000004" title=" " alt="" coords="728,419,726,455,718,496,702,538,689,557,674,574,651,588,619,599,537,616,448,627,373,633,372,628,447,622,536,611,617,594,649,583,670,570,685,554,697,536,713,495,721,454,725,423"/>
+<area shape="poly" id="edge37_Node000022_Node000007" title=" " alt="" coords="771,419,855,462,849,461,770,424"/>
+<area shape="poly" id="edge36_Node000022_Node000014" title=" " alt="" coords="698,420,640,462,637,457,693,422"/>
+<area shape="poly" id="edge45_Node000026_Node000004" title=" " alt="" coords="372,131,263,152,203,170,145,193,93,214,49,233,32,245,19,259,11,279,8,304,8,484,10,505,16,524,39,557,73,582,115,600,161,613,207,622,291,632,286,632,207,627,159,619,113,605,70,586,35,560,11,527,5,506,3,484,3,304,6,277,15,256,29,241,47,228,91,210,143,188,201,165,262,147,376,127"/>
+<area shape="poly" id="edge47_Node000026_Node000005" title=" " alt="" coords="476,141,513,177,548,224,560,249,568,276,568,303,558,329,540,352,517,370,514,366,536,349,554,327,562,302,562,277,555,251,543,226,509,181,475,146"/>
+<area shape="poly" id="edge46_Node000026_Node000013" title=" " alt="" coords="437,141,345,285,293,365,289,362,340,282,433,145"/>
+<area shape="poly" id="edge55_Node000026_Node000017" title=" " alt="" coords="524,136,543,140,879,201,874,203,542,145,526,142"/>
+<area shape="poly" id="edge56_Node000026_Node000020" title=" " alt="" coords="517,141,576,162,635,188,716,235,783,282,777,283,713,240,632,193,574,167,518,146"/>
+<area shape="poly" id="edge48_Node000026_Node000021" title=" " alt="" coords="523,141,565,161,602,189,618,209,631,232,648,277,643,276,626,234,614,212,598,193,562,165,523,146"/>
+<area shape="rect" id="Node000027" href="$nav_2waypoints_8h.html" title=" " alt="" coords="355,292,544,320"/>
+<area shape="poly" id="edge49_Node000026_Node000027" title=" " alt="" coords="451,141,452,277,447,275,448,145"/>
+<area shape="rect" id="Node000028" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft." alt="" coords="156,191,322,235"/>
+<area shape="poly" id="edge53_Node000026_Node000028" title=" " alt="" coords="397,145,304,186,301,182,401,141"/>
+<area shape="poly" id="edge50_Node000027_Node000004" title=" " alt="" coords="353,321,252,344,210,359,185,378,174,398,170,420,173,442,182,466,213,517,254,570,275,591,298,612,293,611,271,595,250,574,209,520,177,468,168,444,165,420,169,396,181,374,208,355,250,339,357,318"/>
+<area shape="poly" id="edge52_Node000027_Node000005" title=" " alt="" coords="450,318,449,362,444,359,447,322"/>
+<area shape="poly" id="edge51_Node000027_Node000013" title=" " alt="" coords="421,322,327,371,325,366,425,319"/>
+<area shape="poly" id="edge54_Node000028_Node000004" title=" " alt="" coords="153,237,116,257,83,285,66,312,59,336,59,397,59,484,65,519,84,548,111,571,145,590,182,604,220,614,291,629,286,629,219,620,180,609,142,595,108,575,80,551,60,521,53,484,53,397,54,335,61,310,79,282,114,252,156,233"/>
 </map>

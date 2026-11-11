@@ -1,17 +1,21 @@
 <map id="imu_mpu9250_init" name="imu_mpu9250_init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,148,88"/>
-<area shape="rect" id="Node000002" href="$mpu9250__i2c_8c.html#a967fa8a6c8aa8f969b3e7fb17221658c" title=" " alt="" coords="196,63,333,88"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,73,182,73,182,78,148,78"/>
-<area shape="rect" id="Node000003" href="$ak8963_8c.html#adb7f10e2449b9ef0f5c1ffc25cbd43a3" title="Initialize AK8963 struct." alt="" coords="423,5,522,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,60,412,32,414,37,312,65"/>
-<area shape="rect" id="Node000004" href="$mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="callback function to configure ak8963 mag" alt="" coords="381,55,564,95"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="334,73,368,73,368,78,334,78"/>
-<area shape="rect" id="Node000008" href="$mpu9250_8c.html#aae5fa60698653c8ac15e41796c53c66e" title=" " alt="" coords="391,119,554,159"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="308,86,395,113,393,118,306,91"/>
-<area shape="rect" id="Node000005" href="$ak8963_8c.html#a107fc3165a9b7b31132e929df9098dd7" title=" " alt="" coords="612,63,749,88"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="564,73,598,73,598,78,564,78"/>
-<area shape="rect" id="Node000006" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="797,63,900,88"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="750,73,783,73,783,78,750,78"/>
-<area shape="rect" id="Node000007" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="948,63,1041,88"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="900,73,934,73,934,78,900,78"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,65,148,93"/>
+<area shape="rect" id="Node000002" href="$mpu9250__i2c_8c.html#a967fa8a6c8aa8f969b3e7fb17221658c" title=" " alt="" coords="196,65,332,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,77,183,78,178,80,149,82"/>
+<area shape="rect" id="Node000003" href="$ak8963_8c.html#adb7f10e2449b9ef0f5c1ffc25cbd43a3" title="Initialize AK8963 struct." alt="" coords="422,5,519,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,62,379,42,410,36,405,37,381,47,313,67"/>
+<area shape="rect" id="Node000004" href="$imu__mpu9250__spi_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="function to configure akm8963 mag" alt="" coords="380,57,561,102"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="332,77,367,79,362,80,333,82"/>
+<area shape="rect" id="Node000010" href="$mpu9250_8c.html#aae5fa60698653c8ac15e41796c53c66e" title=" " alt="" coords="390,126,552,171"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="308,91,390,120,385,121,307,96"/>
+<area shape="rect" id="Node000005" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="627,13,771,41"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="561,56,618,46,623,44,562,61"/>
+<area shape="rect" id="Node000006" href="$imu__mpu9250__spi_8c.html#ad1a6777c4c01ff1231ea7a95fe476304" title=" " alt="" coords="627,65,771,93"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="562,77,614,79,609,79,562,82"/>
+<area shape="rect" id="Node000007" href="$imu__mpu9250__spi_8c.html#aa5e5c5229245a1ef2e8f7dd58bfe8feb" title=" " alt="" coords="609,117,789,145"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="562,97,623,113,617,113,562,103"/>
+<area shape="rect" id="Node000008" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="837,117,929,145"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="789,129,824,131,819,131,789,134"/>
+<area shape="rect" id="Node000009" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="977,117,1097,145"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="929,129,964,131,959,131,929,134"/>
 </map>

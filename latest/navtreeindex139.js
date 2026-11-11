@@ -1,5 +1,12 @@
 var NAVTREEINDEX139 =
 {
+"module__power_uavcan.html#functions__power_uavcan":[1,443,2],
+"module__power_uavcan.html#module_load_example__power_uavcan":[1,443,0],
+"module__power_uavcan.html#module_xml__power_uavcan":[1,443,2,0],
+"module__pprzlog.html":[1,284],
+"module__pprzlog.html#functions__pprzlog":[1,284,1],
+"module__pprzlog.html#module_load_example__pprzlog":[1,284,0],
+"module__pprzlog.html#module_xml__pprzlog":[1,284,1,0],
 "module__preflight_checks.html":[1,52],
 "module__preflight_checks.html#configuration__preflight_checks":[1,52,1],
 "module__preflight_checks.html#module_load_example__preflight_checks":[1,52,0],
@@ -184,9 +191,10 @@ var NAVTREEINDEX139 =
 "module__sonar_adc.html#module_xml__sonar_adc":[1,452,2,0],
 "module__sonar_bebop.html":[1,453],
 "module__sonar_bebop.html#configuration__sonar_bebop":[1,453,1],
+"module__sonar_bebop.html#event_functions":[1,453,2,0],
 "module__sonar_bebop.html#functions__sonar_bebop":[1,453,2],
 "module__sonar_bebop.html#module_load_example__sonar_bebop":[1,453,0],
-"module__sonar_bebop.html#module_xml__sonar_bebop":[1,453,2,0],
+"module__sonar_bebop.html#module_xml__sonar_bebop":[1,453,2,1],
 "module__sonar_i2c.html":[1,454],
 "module__sonar_i2c.html#configuration__sonar_i2c":[1,454,1],
 "module__sonar_i2c.html#functions__sonar_i2c":[1,454,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX139 =
 "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,462,2,0],
 "module__stabilization_indi.html":[1,463],
 "module__stabilization_indi.html#configuration__stabilization_indi":[1,463,1],
-"module__stabilization_indi.html#functions__stabilization_indi":[1,463,2],
-"module__stabilization_indi.html#module_load_example__stabilization_indi":[1,463,0],
-"module__stabilization_indi.html#module_xml__stabilization_indi":[1,463,2,0],
-"module__stabilization_indi_hinf.html":[1,464],
-"module__stabilization_indi_hinf.html#configuration__stabilization_indi_hinf":[1,464,1],
-"module__stabilization_indi_hinf.html#module_load_example__stabilization_indi_hinf":[1,464,0],
-"module__stabilization_indi_hinf.html#module_xml__stabilization_indi_hinf":[1,464,1,0],
-"module__stabilization_indi_simple.html":[1,465],
-"module__stabilization_indi_simple.html#configuration__stabilization_indi_simple":[1,465,1]
+"module__stabilization_indi.html#functions__stabilization_indi":[1,463,2]
 };

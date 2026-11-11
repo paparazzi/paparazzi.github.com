@@ -1,38 +1,89 @@
 <map id="update_ae_awb" name="update_ae_awb">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,113,129,138"/>
-<area shape="rect" id="Node000002" href="$libisp_8c.html#a5421e059846fd80e5f6bf1bd3ae1bb45" title=" " alt="" coords="186,13,353,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,110,123,79,176,47,194,40,196,45,179,52,126,83,85,115"/>
-<area shape="rect" id="Node000004" href="$mt9f002_8c.html#ad35111d4dbfb1bb69e2dcce789ba5e0b" title=" " alt="" coords="191,62,347,87"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,110,204,88,206,93,120,115"/>
-<area shape="rect" id="Node000005" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="421,107,568,133"/>
-<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="129,122,408,118,408,124,130,127"/>
-<area shape="rect" id="Node000014" href="$mt9f002_8c.html#a107e8b9a036f53944cf021efd09ca617" title=" " alt="" coords="177,163,361,189"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="120,136,206,157,204,163,118,141"/>
-<area shape="rect" id="Node000015" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)" alt="" coords="409,175,580,201"/>
-<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="83,136,123,170,150,186,178,199,243,212,310,214,373,209,428,201,429,206,374,215,310,220,242,217,177,204,147,191,120,174,80,140"/>
-<area shape="rect" id="Node000003" href="$libisp_8c.html#a6a238c4b9844e41ce7a5f26f7725d5ee" title=" " alt="" coords="427,5,562,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,23,414,23,414,28,353,28"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,85,418,102,417,107,333,90"/>
-<area shape="rect" id="Node000006" href="$mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50." alt="" coords="628,101,773,126"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="568,115,615,113,615,119,568,120"/>
-<area shape="rect" id="Node000007" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="659,150,742,175"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="557,130,646,149,645,154,556,135"/>
-<area shape="rect" id="Node000008" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="821,175,923,201"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="743,166,808,176,807,181,742,171"/>
-<area shape="rect" id="Node000009" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="971,150,1149,175"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="923,179,957,174,958,179,923,184"/>
-<area shape="rect" id="Node000013" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="977,199,1143,225"/>
-<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="923,192,964,197,963,202,923,197"/>
-<area shape="rect" id="Node000010" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="1197,175,1352,201"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1150,171,1184,175,1183,180,1149,176"/>
-<area shape="rect" id="Node000011" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1447,150,1540,175"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1352,176,1433,167,1434,172,1352,182"/>
-<area shape="rect" id="Node000012" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1400,199,1587,225"/>
-<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1352,194,1387,198,1386,203,1352,199"/>
-<area shape="poly" id="edge13_Node000013_Node000010" title=" " alt="" coords="1142,200,1183,196,1184,201,1143,205"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="362,178,396,180,395,185,362,184"/>
-<area shape="poly" id="edge18_Node000015_Node000007" title=" " alt="" coords="580,175,646,167,646,172,581,180"/>
-<area shape="rect" id="Node000016" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="661,199,740,225"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="581,195,648,203,647,209,580,201"/>
-<area shape="poly" id="edge17_Node000016_Node000008" title=" " alt="" coords="740,204,807,194,808,200,741,209"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,386,129,414"/>
+<area shape="poly" id="edge47_Node000001_Node000001" title=" " alt="" coords="33,386,28,377,32,367,46,361,67,359,90,362,104,370,99,372,89,367,67,364,47,366,36,371,33,377,38,385"/>
+<area shape="rect" id="Node000002" href="$e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="243,196,281,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,384,235,233,235,238,85,387"/>
+<area shape="rect" id="Node000030" href="$libisp_8c.html#a5421e059846fd80e5f6bf1bd3ae1bb45" title=" " alt="" coords="179,386,344,414"/>
+<area shape="poly" id="edge34_Node000001_Node000030" title=" " alt="" coords="128,397,166,398,161,401,130,402"/>
+<area shape="rect" id="Node000032" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)." alt="" coords="177,446,347,474"/>
+<area shape="poly" id="edge36_Node000001_Node000032" title=" " alt="" coords="114,411,202,439,198,442,114,417"/>
+<area shape="rect" id="Node000003" href="$e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="442,118,508,146"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="280,201,394,156,429,146,425,149,396,161,283,205"/>
+<area shape="rect" id="Node000004" href="$e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="395,170,555,198"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="280,206,381,194,377,197,283,210"/>
+<area shape="rect" id="Node000007" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="442,222,508,250"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="281,210,428,229,424,231,282,215"/>
+<area shape="rect" id="Node000019" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="406,326,544,354"/>
+<area shape="poly" id="edge19_Node000002_Node000019" title=" " alt="" coords="278,222,329,265,396,311,411,319,406,320,394,315,326,270,278,227"/>
+<area shape="rect" id="Node000024" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="440,274,510,302"/>
+<area shape="poly" id="edge27_Node000002_Node000024" title=" " alt="" coords="281,215,396,258,428,271,423,272,394,264,282,220"/>
+<area shape="rect" id="Node000025" href="$e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="434,14,517,42"/>
+<area shape="poly" id="edge29_Node000002_Node000025" title=" " alt="" coords="269,195,316,127,352,87,394,52,421,40,417,44,396,57,356,91,320,130,274,198"/>
+<area shape="rect" id="Node000028" href="$uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="415,66,535,94"/>
+<area shape="poly" id="edge32_Node000002_Node000028" title=" " alt="" coords="276,194,326,150,359,126,394,104,411,98,406,101,396,109,362,130,329,155,280,198"/>
+<area shape="rect" id="Node000005" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="603,170,836,198"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="555,181,590,183,585,185,557,186"/>
+<area shape="rect" id="Node000006" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="884,161,1073,206"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="836,181,870,183,865,184,837,186"/>
+<area shape="rect" id="Node000008" href="$group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="640,244,799,272"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="508,236,627,249,622,250,509,241"/>
+<area shape="rect" id="Node000009" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="896,244,1060,272"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="799,256,883,258,878,259,800,261"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1356,226,1497,254"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1046,241,1121,230,1236,226,1343,232,1338,233,1236,232,1121,236,1047,246"/>
+<area shape="rect" id="Node000012" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="1128,244,1269,272"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="1061,256,1115,258,1109,259,1062,261"/>
+<area shape="rect" id="Node000013" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1146,398,1250,426"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="1001,270,1167,389,1161,388,999,275"/>
+<area shape="rect" id="Node000016" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1147,296,1249,324"/>
+<area shape="poly" id="edge16_Node000009_Node000016" title=" " alt="" coords="1040,270,1135,295,1129,295,1040,275"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1578,226,1724,254"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1497,237,1564,239,1559,240,1498,242"/>
+<area shape="poly" id="edge12_Node000012_Node000010" title=" " alt="" coords="1269,250,1343,246,1338,247,1269,255"/>
+<area shape="rect" id="Node000014" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1373,398,1480,426"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1250,409,1360,411,1354,412,1250,414"/>
+<area shape="rect" id="Node000015" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1374,450,1479,478"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="1250,421,1362,449,1356,448,1250,426"/>
+<area shape="rect" id="Node000017" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1323,278,1530,306"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1249,304,1311,301,1305,302,1250,309"/>
+<area shape="rect" id="Node000018" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1357,329,1496,374"/>
+<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="1250,317,1344,336,1339,336,1250,322"/>
+<area shape="poly" id="edge20_Node000019_Node000016" title=" " alt="" coords="544,334,603,332,1133,311,1129,315,603,337,545,339"/>
+<area shape="rect" id="Node000020" href="$nav_2waypoints_8c.html#a3c92e53204c086a9e9104c84fe8b09ac" title="Get LLA coordinates of waypoint." alt="" coords="653,346,786,374"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="544,343,640,352,635,354,545,348"/>
+<area shape="rect" id="Node000021" href="$nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="905,398,1052,426"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="786,370,894,394,888,394,786,376"/>
+<area shape="rect" id="Node000023" href="$nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="905,346,1052,374"/>
+<area shape="poly" id="edge26_Node000020_Node000023" title=" " alt="" coords="786,357,892,359,887,360,786,362"/>
+<area shape="poly" id="edge23_Node000021_Node000010" title=" " alt="" coords="1052,396,1178,369,1235,352,1274,333,1289,317,1297,300,1305,282,1322,264,1339,257,1344,255,1325,268,1309,285,1302,302,1294,320,1277,338,1237,357,1180,374,1053,402"/>
+<area shape="poly" id="edge24_Node000021_Node000013" title=" " alt="" coords="1052,409,1133,411,1128,412,1053,414"/>
+<area shape="rect" id="Node000022" href="$group__state__position.html#gae010636a0c8b446e239ca8c2d3318d0e" title="Get the coordinate NED frame origin (int)." alt="" coords="1122,450,1275,478"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="1040,423,1124,446,1119,446,1040,429"/>
+<area shape="poly" id="edge28_Node000024_Node000008" title=" " alt="" coords="509,281,627,269,622,271,511,286"/>
+<area shape="rect" id="Node000026" href="$group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="612,14,827,42"/>
+<area shape="poly" id="edge30_Node000025_Node000026" title=" " alt="" coords="517,25,598,26,594,29,518,30"/>
+<area shape="rect" id="Node000027" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="884,5,1073,50"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="827,25,871,27,866,28,828,30"/>
+<area shape="rect" id="Node000029" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="664,66,775,94"/>
+<area shape="poly" id="edge33_Node000028_Node000029" title=" " alt="" coords="535,77,650,79,646,81,536,82"/>
+<area shape="rect" id="Node000031" href="$libisp_8c.html#a6a238c4b9844e41ce7a5f26f7725d5ee" title=" " alt="" coords="408,377,542,422"/>
+<area shape="poly" id="edge35_Node000030_Node000031" title=" " alt="" coords="344,397,396,399,391,400,345,402"/>
+<area shape="rect" id="Node000033" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="436,446,514,474"/>
+<area shape="poly" id="edge37_Node000032_Node000033" title=" " alt="" coords="347,457,423,459,418,460,348,462"/>
+<area shape="rect" id="Node000040" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="434,498,516,526"/>
+<area shape="poly" id="edge45_Node000032_Node000040" title=" " alt="" coords="322,471,421,498,416,498,322,477"/>
+<area shape="rect" id="Node000034" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="669,482,770,510"/>
+<area shape="poly" id="edge38_Node000033_Node000034" title=" " alt="" coords="515,463,656,486,651,486,515,468"/>
+<area shape="rect" id="Node000035" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="890,450,1067,478"/>
+<area shape="poly" id="edge39_Node000034_Node000035" title=" " alt="" coords="770,487,872,477,877,476,771,492"/>
+<area shape="rect" id="Node000039" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="896,502,1060,530"/>
+<area shape="poly" id="edge43_Node000034_Node000039" title=" " alt="" coords="770,497,883,508,878,508,770,502"/>
+<area shape="rect" id="Node000036" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="1121,502,1275,530"/>
+<area shape="poly" id="edge40_Node000035_Node000036" title=" " alt="" coords="1040,475,1124,498,1119,497,1040,481"/>
+<area shape="rect" id="Node000037" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1380,554,1473,582"/>
+<area shape="poly" id="edge41_Node000036_Node000037" title=" " alt="" coords="1263,528,1368,554,1362,554,1262,533"/>
+<area shape="rect" id="Node000038" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1334,502,1519,530"/>
+<area shape="poly" id="edge42_Node000036_Node000038" title=" " alt="" coords="1276,513,1321,516,1315,516,1276,518"/>
+<area shape="poly" id="edge44_Node000039_Node000036" title=" " alt="" coords="1061,513,1108,516,1103,516,1061,518"/>
+<area shape="poly" id="edge46_Node000040_Node000034" title=" " alt="" coords="517,506,657,500,651,500,517,512"/>
 </map>

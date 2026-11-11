@@ -1,45 +1,45 @@
 <map id="VL53L1_RdByte" name="VL53L1_RdByte">
-<area shape="rect" id="Node000001" title="VL53L1_RdByte() definition." alt="" coords="1464,285,1587,310"/>
-<area shape="rect" id="Node000002" href="$vl53l1x__api_8c.html#a2c2712e30ef7022410a78af61ee64770" title="This function returns the boot state of the device (1:booted, 0:not booted)" alt="" coords="950,20,1099,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1518,272,1509,224,1490,165,1477,135,1460,107,1439,81,1414,60,1375,38,1332,23,1286,14,1241,9,1153,12,1081,22,1080,17,1153,7,1241,4,1287,8,1333,18,1377,33,1418,56,1443,78,1464,104,1482,133,1495,163,1514,223,1523,271"/>
-<area shape="rect" id="Node000007" href="$vl53l1x__api_8c.html#a4d37ff28a4c3996805e1fe3fd4fe0206" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="916,208,1133,233"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1511,274,1496,246,1475,214,1448,184,1415,162,1366,145,1314,139,1261,141,1209,151,1160,164,1116,180,1050,210,1048,205,1114,175,1159,159,1208,145,1260,136,1314,133,1367,139,1417,157,1451,180,1479,211,1500,243,1516,272"/>
-<area shape="rect" id="Node000010" href="$vl53l1x__api_8c.html#ae4b6e97e9d453074d77a32a718c5ddbf" title="This function returns the current distance mode (1=short, 2=long)." alt="" coords="1201,70,1402,96"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1513,273,1499,238,1478,196,1450,153,1414,117,1377,98,1380,93,1418,113,1454,150,1483,193,1504,236,1518,271"/>
-<area shape="rect" id="Node000013" href="$vl53l1x__api_8c.html#a3193a952dc2159c8ae3e4092ea6d5eeb" title="This function returns the window detection mode (0=below; 1=above; 2=out; 3=in)" alt="" coords="1187,171,1416,211"/>
-<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1496,279,1459,252,1415,227,1382,214,1383,209,1417,222,1462,248,1499,274"/>
-<area shape="rect" id="Node000014" href="$vl53l1x__api_8c.html#a573b4132a58022c2af2c341180457a09" title="This function returns the current interrupt polarity 1=active high (default), 0=active low." alt="" coords="1194,236,1409,261"/>
-<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="1453,285,1359,264,1360,259,1454,280"/>
-<area shape="rect" id="Node000015" href="$vl53l1x__api_8c.html#a5b399afb0ef8423ddd5a83897a9974da" title="This function returns the ranging status error &#160;(0:no error, 1:sigma failed, 2:signal failed,..." alt="" coords="1206,285,1397,310"/>
-<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1450,300,1397,300,1397,295,1450,295"/>
-<area shape="rect" id="Node000016" href="$vl53l1x__api_8c.html#a00b10506941ef2584ee7fad0937a0c36" title="This function returns width X and height Y." alt="" coords="1224,334,1379,360"/>
-<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1458,316,1417,326,1364,337,1363,332,1415,321,1457,311"/>
-<area shape="rect" id="Node000017" href="$vl53l1x__api_8c.html#ad216c17a2c6291f9bb0cd8f903db543d" title="This function returns the current user ROI center." alt="" coords="1214,384,1389,409"/>
-<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="1501,321,1463,349,1417,375,1383,386,1382,381,1415,370,1460,345,1498,317"/>
-<area shape="rect" id="Node000018" href="$vl53l1x__api_8c.html#aab8c6715dd0a1e694e1e92cbf3dd8d2a" title="This function programs the threshold detection mode Example: VL53L1X_SetDistanceThreshold(dev,..." alt="" coords="1188,433,1415,458"/>
-<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1512,324,1474,375,1447,402,1417,424,1392,436,1390,431,1415,420,1444,398,1470,372,1507,321"/>
-<area shape="rect" id="Node000019" href="$vl53l1x__api_8c.html#a45fe6055b190c03d03ef690852eae6d9" title="This function programs the interrupt polarity 1=active high (default), 0=active low." alt="" coords="1195,482,1407,508"/>
-<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1518,325,1504,359,1482,399,1454,440,1418,473,1396,485,1394,480,1414,469,1450,436,1478,397,1499,357,1513,323"/>
-<area shape="rect" id="Node000020" href="$vl53l1x__api_8c.html#ae65432b46f39bf17ccbf560b19632a45" title="This function programs the ROI (Region of Interest) The ROI position is centered, only the ROI size c..." alt="" coords="1237,532,1366,557"/>
-<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="1522,325,1510,369,1490,422,1460,477,1440,501,1418,523,1394,536,1367,544,1366,539,1391,531,1414,518,1437,498,1456,474,1485,420,1505,367,1516,324"/>
-<area shape="rect" id="Node000003" href="$vl53l1x__api_8c.html#a4f5f0ac3cdbbcbc565f0babde7db4588" title="Implement boot sequence of VL53L1 device as described in documentation See VL53L1X_SetTimingBudgetInM..." alt="" coords="456,96,616,121"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="936,34,807,40,735,48,665,60,610,78,563,98,561,93,608,73,663,55,734,42,806,34,936,28"/>
-<area shape="rect" id="Node000004" href="$cf__deck__multi__ranger_8c.html#a63ef1a1fb2184ea792b37e6982099348" title="Boot a device." alt="" coords="217,70,408,96"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="442,101,408,97,409,91,442,95"/>
-<area shape="rect" id="Node000006" href="$sonar__vl53l1x_8c.html#af22954043e5570ba94680eec7b483fa0" title=" " alt="" coords="242,120,383,145"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="442,121,384,128,383,122,442,116"/>
-<area shape="rect" id="Node000005" href="$cf__deck__multi__ranger_8c.html#ab23c504c8c7175c03a791e85d8c721a6" title="Module periodic function." alt="" coords="5,70,169,96"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="204,86,170,86,170,80,204,80"/>
-<area shape="rect" id="Node000008" href="$vl53l1x__api_8c.html#a09f0e0407aa544559216b42f6745d5fa" title="This function loads the 135 bytes default values to initialize the sensor." alt="" coords="688,236,839,261"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="903,236,839,243,838,238,902,231"/>
-<area shape="rect" id="Node000009" href="$vl53l1x__api_8c.html#afa096166165ff67887c9fd9f9dbdd691" title="This function performs the temperature calibration." alt="" coords="664,171,863,211"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="902,209,862,205,863,200,903,204"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="681,234,663,226,626,201,593,173,546,123,550,120,596,169,629,197,665,221,683,229"/>
-<area shape="rect" id="Node000011" href="$vl53l1x__api_8c.html#a96416653f93aa7e5b8ed954c8b9cdd9f" title="This function programs the timing budget in ms." alt="" coords="911,70,1139,96"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1187,86,1139,86,1139,80,1187,80"/>
-<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="940,101,863,110,733,115,616,114,616,109,733,110,862,105,939,95"/>
-<area shape="rect" id="Node000012" href="$vl53l1x__api_8c.html#a3c707945ff8df23c2d0cc96f556abced" title="This function programs the distance mode (1=short, 2=long(default))." alt="" coords="664,70,863,96"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="897,86,863,86,863,80,897,80"/>
-<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="650,98,617,102,616,97,650,93"/>
-<area shape="poly" id="edge17_Node000014_Node000007" title=" " alt="" coords="1180,239,1133,234,1134,229,1180,234"/>
+<area shape="rect" id="Node000001" title="VL53L1_RdByte() definition." alt="" coords="1460,292,1583,320"/>
+<area shape="rect" id="Node000002" href="$vl53l1x__api_8c.html#a2c2712e30ef7022410a78af61ee64770" title="This function returns the boot state of the device (1:booted, 0:not booted)." alt="" coords="948,19,1096,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1515,275,1505,228,1487,167,1473,137,1456,108,1436,82,1411,60,1373,39,1332,24,1288,14,1244,10,1159,11,1087,21,1086,16,1159,6,1244,4,1289,9,1333,18,1375,34,1414,56,1440,78,1461,105,1478,134,1492,166,1511,226,1519,278"/>
+<area shape="rect" id="Node000007" href="$vl53l1x__api_8c.html#a4d37ff28a4c3996805e1fe3fd4fe0206" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="914,211,1130,239"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1507,277,1492,249,1471,216,1444,185,1411,162,1363,145,1312,139,1260,141,1208,151,1160,165,1116,182,1050,213,1048,208,1114,177,1158,160,1207,146,1259,136,1312,133,1364,139,1414,157,1448,181,1475,213,1496,247,1511,279"/>
+<area shape="rect" id="Node000010" href="$vl53l1x__api_8c.html#ae4b6e97e9d453074d77a32a718c5ddbf" title="This function returns the current distance mode (1=short, 2=long)." alt="" coords="1198,70,1398,97"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1509,276,1496,241,1475,198,1447,154,1411,118,1380,101,1381,95,1414,113,1451,151,1479,195,1500,239,1514,279"/>
+<area shape="rect" id="Node000013" href="$vl53l1x__api_8c.html#a3193a952dc2159c8ae3e4092ea6d5eeb" title="This function returns the window detection mode (0=below; 1=above; 2=out; 3=in)." alt="" coords="1184,172,1412,216"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1489,281,1454,257,1411,231,1384,220,1385,214,1414,226,1457,252,1495,282"/>
+<area shape="rect" id="Node000014" href="$vl53l1x__api_8c.html#a573b4132a58022c2af2c341180457a09" title="This function returns the current interrupt polarity 1=active high (default), 0=active low." alt="" coords="1192,240,1405,268"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="1442,288,1361,271,1361,266,1448,288"/>
+<area shape="rect" id="Node000015" href="$vl53l1x__api_8c.html#a5b399afb0ef8423ddd5a83897a9974da" title="This function returns the ranging status error &#160;(0:no error, 1:sigma failed, 2:signal failed,..." alt="" coords="1204,292,1393,320"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1442,306,1394,309,1393,303,1448,306"/>
+<area shape="rect" id="Node000016" href="$vl53l1x__api_8c.html#a00b10506941ef2584ee7fad0937a0c36" title="This function returns width X and height Y." alt="" coords="1221,344,1375,372"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1448,323,1361,346,1360,341,1442,324"/>
+<area shape="rect" id="Node000017" href="$vl53l1x__api_8c.html#ad216c17a2c6291f9bb0cd8f903db543d" title="This function returns the current user ROI center." alt="" coords="1212,396,1385,424"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="1495,329,1458,360,1413,386,1379,398,1377,393,1411,381,1455,356,1491,331"/>
+<area shape="rect" id="Node000018" href="$vl53l1x__api_8c.html#aab8c6715dd0a1e694e1e92cbf3dd8d2a" title="This function programs the threshold detection mode Example: VL53L1X_SetDistanceThreshold(dev,..." alt="" coords="1185,448,1411,476"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1507,332,1469,388,1443,415,1414,438,1387,450,1386,445,1411,433,1440,411,1465,384,1503,335"/>
+<area shape="rect" id="Node000019" href="$vl53l1x__api_8c.html#a45fe6055b190c03d03ef690852eae6d9" title="This function programs the interrupt polarity 1=active high (default), 0=active low." alt="" coords="1192,500,1404,528"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1513,333,1500,371,1479,413,1450,455,1414,490,1391,502,1389,497,1411,485,1446,451,1474,410,1495,369,1509,336"/>
+<area shape="rect" id="Node000020" href="$vl53l1x__api_8c.html#ae65432b46f39bf17ccbf560b19632a45" title="This function programs the ROI (Region of Interest) The ROI position is centered, only the ROI size c..." alt="" coords="1234,552,1362,580"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="1517,333,1507,381,1487,437,1457,493,1437,519,1414,542,1390,556,1363,564,1362,559,1388,551,1411,537,1433,516,1452,491,1482,435,1502,380,1513,337"/>
+<area shape="rect" id="Node000003" href="$vl53l1x__api_8c.html#a4f5f0ac3cdbbcbc565f0babde7db4588" title="Implement boot sequence of VL53L1 device as described in documentation See VL53L1X_SetTimingBudgetInM..." alt="" coords="455,95,614,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="930,32,804,40,733,48,663,61,611,77,566,97,563,92,609,72,662,55,732,43,804,35,935,30"/>
+<area shape="rect" id="Node000004" href="$cf__deck__multi__ranger_8c.html#a63ef1a1fb2184ea792b37e6982099348" title="Boot a device." alt="" coords="217,68,407,96"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="437,98,409,96,407,91,442,96"/>
+<area shape="rect" id="Node000006" href="$sonar__vl53l1x_8c.html#af22954043e5570ba94680eec7b483fa0" title=" " alt="" coords="242,120,382,148"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="437,121,383,129,381,124,442,118"/>
+<area shape="rect" id="Node000005" href="$cf__deck__multi__ranger_8c.html#ab23c504c8c7175c03a791e85d8c721a6" title="Module periodic function." alt="" coords="5,68,169,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="199,84,170,84,168,80,203,80"/>
+<area shape="rect" id="Node000008" href="$vl53l1x__api_8c.html#a09f0e0407aa544559216b42f6745d5fa" title="This function loads the 135 bytes default values to initialize the sensor." alt="" coords="687,240,836,268"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="897,239,837,248,836,243,902,238"/>
+<area shape="rect" id="Node000009" href="$vl53l1x__api_8c.html#afa096166165ff67887c9fd9f9dbdd691" title="This function performs the temperature calibration." alt="" coords="663,172,860,216"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="896,211,861,208,860,203,901,210"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="671,234,661,231,624,206,591,177,546,126,547,120,595,173,628,202,664,226,676,234"/>
+<area shape="rect" id="Node000011" href="$vl53l1x__api_8c.html#a96416653f93aa7e5b8ed954c8b9cdd9f" title="This function programs the timing budget in ms." alt="" coords="909,71,1136,99"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1180,85,1137,87,1136,82,1185,83"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="922,102,861,111,731,116,615,115,614,109,731,111,860,106,928,101"/>
+<area shape="rect" id="Node000012" href="$vl53l1x__api_8c.html#a3c707945ff8df23c2d0cc96f556abced" title="This function programs the distance mode (1=short, 2=long(default))." alt="" coords="662,70,861,97"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="891,85,862,87,861,81,896,83"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="644,97,616,102,614,97,649,95"/>
+<area shape="poly" id="edge17_Node000014_Node000007" title=" " alt="" coords="1174,241,1131,239,1131,234,1179,241"/>
 </map>

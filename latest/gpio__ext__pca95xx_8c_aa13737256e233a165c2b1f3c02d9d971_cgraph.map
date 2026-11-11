@@ -1,21 +1,21 @@
 <map id="gpio_ext_pca95xx_setup_input" name="gpio_ext_pca95xx_setup_input">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,188,87"/>
-<area shape="rect" id="Node000002" href="$gpio__ext__pca95xx_8c.html#af5880a77c4c855512ed4ec4f6a9c67fc" title=" " alt="" coords="236,80,439,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,74,223,78,222,83,188,80"/>
-<area shape="rect" id="Node000003" href="$pca95xx_8c.html#ae693ccc9f8550f3b32f30918d3f0ab85" title="Configure PCA95XX." alt="" coords="487,31,631,56"/>
-<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="188,60,473,45,473,50,188,65"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,77,487,56,488,62,396,83"/>
-<area shape="rect" id="Node000009" href="$pca95xx_8c.html#a3720060e8e2b3aef1439b5dcd5363925" title="Init PCA95XX." alt="" coords="506,80,611,105"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="439,90,492,90,492,95,439,95"/>
-<area shape="rect" id="Node000004" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="679,5,844,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="631,32,665,27,666,33,631,37"/>
-<area shape="rect" id="Node000008" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="918,56,1021,81"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="631,45,904,62,904,67,631,50"/>
-<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="892,7,1047,32"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="844,16,878,16,878,21,844,21"/>
-<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1141,56,1235,81"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1027,29,1129,53,1127,58,1026,35"/>
-<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1095,7,1281,32"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1047,17,1081,17,1081,22,1047,22"/>
-<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="1021,66,1128,66,1128,71,1021,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,49,188,94"/>
+<area shape="rect" id="Node000002" href="$gpio__ext__pca95xx_8c.html#af5880a77c4c855512ed4ec4f6a9c67fc" title=" " alt="" coords="236,83,437,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,78,223,84,217,84,188,83"/>
+<area shape="rect" id="Node000003" href="$pca95xx_8c.html#ae693ccc9f8550f3b32f30918d3f0ab85" title="Configure PCA95XX." alt="" coords="485,32,628,60"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="188,64,470,48,469,53,188,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,79,476,64,481,63,400,85"/>
+<area shape="rect" id="Node000009" href="$pca95xx_8c.html#a3720060e8e2b3aef1439b5dcd5363925" title="Init PCA95XX." alt="" coords="504,84,609,112"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="438,94,492,97,486,97,438,100"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="676,7,841,34"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="628,34,658,33,663,32,629,39"/>
+<area shape="rect" id="Node000008" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="915,57,1017,85"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="629,48,902,67,897,67,629,53"/>
+<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="889,5,1043,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="841,17,876,20,871,20,841,23"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1138,57,1230,85"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1027,31,1125,57,1119,56,1027,36"/>
+<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1091,5,1276,33"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1044,17,1078,19,1073,19,1044,22"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="1018,69,1125,71,1119,71,1018,74"/>
 </map>

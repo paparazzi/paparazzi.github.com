@@ -10,12 +10,12 @@ var dshot__erps_8h =
       [ "ef", "dshot__erps_8h.html#ae5d3c66bf1b7cbf1dacbc6b90f29680c", null ],
       [ "ep", "dshot__erps_8h.html#a9e6fc5fc40f97b48e86b4f9dcb96f704", null ]
     ] ],
-    [ "DshotEPeriodPacket.__unnamed2__", "dshot__erps_8h.html#structDshotEPeriodPacket_8____unnamed2____", [
+    [ "DshotEPeriodPacket.__unnamed0__", "dshot__erps_8h.html#structDshotEPeriodPacket_8____unnamed0____", [
       [ "crc", "dshot__erps_8h.html#af5ad59c5401fea3f2df0703d958fdc97", null ],
       [ "exponent", "dshot__erps_8h.html#afacd4bc86b7f12740c83bcaa4e75ae0a", null ],
       [ "mantisse", "dshot__erps_8h.html#a108d9e56d51879344e9c5d7eb00af051", null ]
     ] ],
-    [ "DshotEPeriodTelemetry.__unnamed4__", "dshot__erps_8h.html#structDshotEPeriodTelemetry_8____unnamed4____", [
+    [ "DshotEPeriodTelemetry.__unnamed0__", "dshot__erps_8h.html#structDshotEPeriodTelemetry_8____unnamed0____", [
       [ "crc", "dshot__erps_8h.html#af5ad59c5401fea3f2df0703d958fdc97", null ],
       [ "edt_type", "dshot__erps_8h.html#a4fff050f9e06028408825370d5b49b3b", null ],
       [ "edt_value", "dshot__erps_8h.html#a4601bc4266d42a5240cb9061e39c0b25", null ]

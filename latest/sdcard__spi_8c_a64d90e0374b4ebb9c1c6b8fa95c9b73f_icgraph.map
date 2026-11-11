@@ -1,46 +1,46 @@
 <map id="sdcard_spi_spicallback" name="sdcard_spi_spicallback">
-<area shape="rect" id="Node000001" title="Callback function for SPI transactions." alt="" coords="948,228,1119,253"/>
-<area shape="poly" id="edge28_Node000001_Node000001" title=" " alt="" coords="1075,219,1064,210,1033,207,1008,209,995,214,993,219,1000,226,996,230,987,220,992,210,1007,204,1033,201,1066,205,1078,215"/>
-<area shape="rect" id="Node000002" href="$sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard." alt="" coords="699,91,900,116"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1008,220,960,179,899,138,851,119,853,114,901,133,963,174,1011,216"/>
-<area shape="rect" id="Node000007" href="$sdcard__spi_8c.html#af40ce9cdaf7435d94db52d8ec687c26e" title="Stop with multiwrite procedure." alt="" coords="229,147,429,172"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="999,224,953,201,899,182,774,160,647,151,529,150,430,154,429,148,529,144,647,145,775,155,901,177,955,196,1001,219"/>
-<area shape="rect" id="Node000008" href="$sdcard__spi_8c.html#ac8de8d3bf63d614011c58978acdb2f27" title="Periodic function of the SDCard." alt="" coords="489,224,639,249"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="997,262,952,281,901,297,844,307,799,311,754,308,698,297,673,285,649,271,601,252,603,247,652,266,675,281,699,291,755,303,799,306,843,302,899,291,950,276,995,257"/>
-<area shape="rect" id="Node000009" href="$sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard." alt="" coords="726,191,873,231"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="934,240,873,232,873,226,935,235"/>
-<area shape="rect" id="Node000010" href="$sdcard__spi_8c.html#a10438987e3a4d4847b39c37caafc5564" title="Send a app&#45;command to the SDCard." alt="" coords="702,256,897,281"/>
-<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="935,255,897,260,897,254,934,250"/>
-<area shape="rect" id="Node000011" href="$sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard." alt="" coords="717,357,881,383"/>
-<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="1017,266,967,310,901,352,883,361,881,356,899,348,964,305,1014,262"/>
-<area shape="rect" id="Node000003" href="$sdlogger__spi__direct_8c.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency" alt="" coords="19,230,167,270"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="688,92,588,86,471,88,410,94,349,104,288,118,230,138,194,157,162,182,113,232,109,228,158,178,191,153,228,133,287,113,347,99,409,89,471,83,588,81,689,87"/>
-<area shape="rect" id="Node000004" href="$sdlogger__spi__direct_8c.html#a76e9185c1183478c02cf5be47cf0da93" title=" " alt="" coords="490,26,638,66"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="733,90,637,66,639,61,734,85"/>
-<area shape="rect" id="Node000005" href="$sdlogger__spi__direct_8c.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card." alt="" coords="5,5,181,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,26,429,17,365,11,300,10,182,13,182,8,300,4,365,6,430,11,480,20"/>
-<area shape="rect" id="Node000006" href="$sdlogger__spi__direct_8c.html#a2e870bbf55447f42c241d8f66c4a3397" title=" " alt="" coords="255,26,403,66"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="476,49,404,49,404,43,476,43"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="241,38,181,31,182,26,242,33"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="283,179,147,232,145,227,282,175"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="475,242,229,249,167,250,167,245,229,243,475,236"/>
-<area shape="poly" id="edge13_Node000009_Node000001" title=" " alt="" coords="887,211,989,225,988,231,886,216"/>
-<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="712,223,640,231,639,226,712,218"/>
-<area shape="poly" id="edge15_Node000010_Node000008" title=" " alt="" coords="692,257,639,250,640,244,693,251"/>
-<area shape="poly" id="edge25_Node000011_Node000001" title=" " alt="" coords="831,350,899,324,958,287,1006,251,1009,256,961,291,901,328,833,355"/>
-<area shape="rect" id="Node000012" href="$sdcard__spi_8c.html#a665b869e2b80339fa01af811af47247e" title="Start writing multiple blocks of 512 bytes to the SDCard." alt="" coords="247,258,412,298"/>
-<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="749,355,650,327,525,304,412,289,413,284,526,299,651,322,750,350"/>
-<area shape="rect" id="Node000013" href="$sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address." alt="" coords="479,385,649,411"/>
-<area shape="poly" id="edge19_Node000011_Node000013" title=" " alt="" coords="704,384,649,391,648,385,703,379"/>
-<area shape="rect" id="Node000016" href="$sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address." alt="" coords="477,336,651,361"/>
-<area shape="poly" id="edge26_Node000011_Node000016" title=" " alt="" coords="703,364,651,359,651,354,704,359"/>
-<area shape="poly" id="edge18_Node000012_Node000003" title=" " alt="" coords="233,269,167,261,168,256,233,264"/>
-<area shape="poly" id="edge24_Node000013_Node000003" title=" " alt="" coords="504,384,429,363,328,340,284,330,228,313,134,273,136,268,230,307,285,325,329,335,430,358,505,379"/>
-<area shape="rect" id="Node000014" href="$sdlogger__spi__direct_8c.html#a2e3b354ac6d0e173e051be713c63c161" title=" " alt="" coords="19,401,167,441"/>
-<area shape="poly" id="edge20_Node000013_Node000014" title=" " alt="" coords="498,416,430,427,291,433,168,429,168,424,291,428,429,422,498,411"/>
-<area shape="rect" id="Node000015" href="$sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received." alt="" coords="255,373,403,413"/>
-<area shape="poly" id="edge21_Node000013_Node000015" title=" " alt="" coords="465,398,403,397,404,392,466,393"/>
-<area shape="poly" id="edge23_Node000015_Node000003" title=" " alt="" coords="255,370,228,356,165,314,115,272,118,268,168,309,231,352,257,365"/>
-<area shape="poly" id="edge22_Node000015_Node000014" title=" " alt="" coords="242,406,168,415,167,409,241,400"/>
-<area shape="poly" id="edge27_Node000016_Node000015" title=" " alt="" coords="483,366,404,381,403,376,482,361"/>
+<area shape="rect" id="Node000001" title="Callback function for SPI transactions." alt="" coords="945,236,1115,264"/>
+<area shape="poly" id="edge28_Node000001_Node000001" title=" " alt="" coords="1068,220,1056,217,1030,215,1005,217,992,221,989,227,995,236,990,235,983,227,989,217,1004,211,1030,209,1057,212,1074,221"/>
+<area shape="rect" id="Node000002" href="$sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard." alt="" coords="696,95,897,122"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1002,224,955,184,895,143,855,126,855,120,898,138,958,180,1007,225"/>
+<area shape="rect" id="Node000007" href="$sdcard__spi_8c.html#af40ce9cdaf7435d94db52d8ec687c26e" title="Stop with multiwrite procedure." alt="" coords="229,151,428,178"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="991,227,948,206,896,187,835,174,772,164,645,155,527,154,429,158,428,153,527,149,645,149,772,159,836,169,897,182,950,201,996,228"/>
+<area shape="rect" id="Node000008" href="$sdcard__spi_8c.html#ac8de8d3bf63d614011c58978acdb2f27" title="Periodic function of the SDCard." alt="" coords="488,232,637,260"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="992,270,946,292,897,307,841,318,796,322,751,319,695,307,670,295,647,280,605,263,606,258,650,275,673,290,697,302,752,314,796,317,840,312,896,302,945,287,987,272"/>
+<area shape="rect" id="Node000009" href="$sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard." alt="" coords="723,197,870,242"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="927,246,870,240,870,235,932,245"/>
+<area shape="rect" id="Node000010" href="$sdcard__spi_8c.html#a10438987e3a4d4847b39c37caafc5564" title="Send a app&#45;command to the SDCard." alt="" coords="699,265,894,293"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="927,263,895,270,894,264,932,262"/>
+<area shape="rect" id="Node000011" href="$sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard." alt="" coords="715,367,878,394"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="1012,274,962,321,898,363,879,371,878,366,895,358,959,317,1007,277"/>
+<area shape="rect" id="Node000003" href="$sdlogger__spi__direct_8c.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency" alt="" coords="19,234,167,279"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="678,94,581,90,466,93,406,98,345,108,286,122,230,142,194,161,162,186,114,235,110,232,159,182,191,156,228,137,285,117,344,103,405,93,466,87,581,85,683,93"/>
+<area shape="rect" id="Node000004" href="$sdlogger__spi__direct_8c.html#a76e9185c1183478c02cf5be47cf0da93" title=" " alt="" coords="488,26,636,71"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="722,91,636,70,636,65,728,90"/>
+<area shape="rect" id="Node000005" href="$sdlogger__spi__direct_8c.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card." alt="" coords="5,5,181,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="471,23,428,16,364,11,299,9,182,13,180,9,299,4,364,6,428,11,476,21"/>
+<area shape="rect" id="Node000006" href="$sdlogger__spi__direct_8c.html#a2e870bbf55447f42c241d8f66c4a3397" title=" " alt="" coords="255,26,402,71"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="471,50,403,51,401,46,476,47"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="237,39,182,33,180,28,241,36"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="275,186,153,236,151,231,278,182"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="470,249,229,254,168,256,166,251,229,249,474,245"/>
+<area shape="poly" id="edge13_Node000009_Node000001" title=" " alt="" coords="885,219,980,235,975,236,885,225"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="706,230,638,240,637,235,711,229"/>
+<area shape="poly" id="edge15_Node000010_Node000008" title=" " alt="" coords="681,263,637,259,637,254,686,263"/>
+<area shape="poly" id="edge25_Node000011_Node000001" title=" " alt="" coords="834,358,895,334,953,298,1000,265,1005,263,957,302,898,339,836,363"/>
+<area shape="rect" id="Node000012" href="$sdcard__spi_8c.html#a665b869e2b80339fa01af811af47247e" title="Start writing multiple blocks of 512 bytes to the SDCard." alt="" coords="246,264,410,308"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="739,361,648,336,524,313,411,297,411,292,524,307,649,331,744,361"/>
+<area shape="rect" id="Node000013" href="$sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address." alt="" coords="478,397,646,425"/>
+<area shape="poly" id="edge19_Node000011_Node000013" title=" " alt="" coords="702,393,647,403,647,397,697,393"/>
+<area shape="rect" id="Node000016" href="$sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address." alt="" coords="476,345,648,373"/>
+<area shape="poly" id="edge26_Node000011_Node000016" title=" " alt="" coords="697,372,649,370,649,364,702,372"/>
+<area shape="poly" id="edge18_Node000012_Node000003" title=" " alt="" coords="228,275,168,268,167,263,233,272"/>
+<area shape="poly" id="edge24_Node000013_Node000003" title=" " alt="" coords="498,392,427,374,327,351,283,341,228,323,137,282,137,277,230,318,284,336,328,346,429,369,503,392"/>
+<area shape="rect" id="Node000014" href="$sdlogger__spi__direct_8c.html#a2e3b354ac6d0e173e051be713c63c161" title=" " alt="" coords="19,413,167,458"/>
+<area shape="poly" id="edge20_Node000013_Node000014" title=" " alt="" coords="496,429,428,443,359,448,289,449,167,444,167,439,289,444,359,443,428,438,491,429"/>
+<area shape="rect" id="Node000015" href="$sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received." alt="" coords="255,384,402,428"/>
+<area shape="poly" id="edge21_Node000013_Node000015" title=" " alt="" coords="460,409,402,410,402,405,465,409"/>
+<area shape="poly" id="edge23_Node000015_Node000003" title=" " alt="" coords="249,377,227,367,166,324,118,282,119,277,169,319,230,362,255,377"/>
+<area shape="poly" id="edge22_Node000015_Node000014" title=" " alt="" coords="236,417,167,429,167,423,242,416"/>
+<area shape="poly" id="edge27_Node000016_Node000015" title=" " alt="" coords="477,376,403,394,402,389,472,377"/>
 </map>

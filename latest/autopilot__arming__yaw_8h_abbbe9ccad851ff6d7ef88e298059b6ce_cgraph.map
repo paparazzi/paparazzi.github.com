@@ -1,27 +1,27 @@
 <map id="autopilot_arming_check_motors_on" name="autopilot_arming_check_motors_on">
-<area shape="rect" id="Node000001" title="State machine to check if motors should be turned ON or OFF." alt="" coords="5,164,184,204"/>
-<area shape="rect" id="Node000002" href="$autopilot__arming__throttle_8h.html#afb9cc707f6ac906cfe4f07d2706c197f" title="Checks all arm requirements and returns true if OK and false otherwise." alt="" coords="247,5,426,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,162,163,113,196,86,231,62,256,49,259,53,233,66,199,90,167,117,116,166"/>
-<area shape="rect" id="Node000003" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="489,42,641,67"/>
-<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="128,161,176,136,231,112,294,94,358,80,475,61,476,66,359,85,295,99,233,117,178,140,130,166"/>
-<area shape="rect" id="Node000004" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="232,171,441,197"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,181,218,181,218,187,184,187"/>
-<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="689,121,835,146"/>
-<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="184,163,232,156,352,145,473,137,675,131,675,137,473,143,352,150,232,161,185,168"/>
-<area shape="rect" id="Node000009" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="245,221,429,246"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="185,200,261,215,260,221,184,205"/>
-<area shape="rect" id="Node000010" href="$autopilot_8c.html#a26de92899cae6ff28c3420315f10802d" title="set in_flight flag" alt="" coords="253,270,420,295"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="128,202,176,230,233,256,256,264,254,269,231,261,174,235,125,206"/>
-<area shape="rect" id="Node000012" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="271,319,403,345"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="114,202,164,255,197,282,233,306,259,316,257,321,231,310,194,287,160,259,110,206"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,34,476,41,475,46,426,39"/>
-<area shape="rect" id="Node000005" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="505,171,626,197"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="442,181,491,181,491,187,442,187"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="615,169,698,147,700,152,616,174"/>
-<area shape="rect" id="Node000007" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="705,170,819,195"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="626,181,691,180,691,186,626,186"/>
-<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="695,219,829,245"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="619,194,697,213,695,219,618,199"/>
-<area shape="rect" id="Node000011" href="$autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent" alt="" coords="496,263,635,303"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="420,280,482,280,482,285,420,285"/>
+<area shape="rect" id="Node000001" title="State machine to check if motors should be turned ON or OFF." alt="" coords="5,167,183,211"/>
+<area shape="rect" id="Node000002" href="$autopilot__arming__throttle_8h.html#afb9cc707f6ac906cfe4f07d2706c197f" title="Checks all arm requirements and returns true if OK and false otherwise." alt="" coords="246,5,424,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,164,164,116,229,67,256,55,252,58,232,71,168,120,118,168"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="487,44,638,72"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="131,164,177,139,230,117,292,99,355,84,474,67,470,69,356,90,293,104,232,122,180,144,134,168"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="231,175,439,203"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,186,217,188,213,190,184,192"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="686,124,831,152"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="182,168,230,161,350,150,469,142,673,138,668,140,470,148,350,155,231,166,184,173"/>
+<area shape="rect" id="Node000009" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="243,227,426,255"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="183,205,255,222,250,224,183,211"/>
+<area shape="rect" id="Node000010" href="$autopilot_8c.html#a26de92899cae6ff28c3420315f10802d" title="set in_flight flag" alt="" coords="252,279,418,307"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="129,209,178,237,232,264,255,274,250,274,230,269,175,242,129,214"/>
+<area shape="rect" id="Node000012" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="269,331,400,359"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="114,209,164,264,196,292,232,316,257,329,252,329,229,321,193,296,160,268,112,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="423,37,474,45,469,47,424,42"/>
+<area shape="rect" id="Node000005" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="502,175,623,203"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="439,186,490,188,485,190,440,192"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="618,172,690,156,685,157,620,177"/>
+<area shape="rect" id="Node000007" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="702,176,815,204"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="623,187,690,189,684,190,623,192"/>
+<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="692,228,825,256"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="616,201,693,224,688,224,616,206"/>
+<area shape="rect" id="Node000011" href="$autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent" alt="" coords="494,271,632,315"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="418,290,480,293,475,293,418,296"/>
 </map>

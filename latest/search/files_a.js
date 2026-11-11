@@ -69,7 +69,7 @@ var searchData=
   ['ins_5falt_5ffloat_2eh_66',['ins_alt_float.h',['../ins__alt__float_8h.html',1,'']]],
   ['ins_5farduimu_2ec_67',['ins_arduimu.c',['../arch_2sim_2modules_2ins_2ins__arduimu_8c.html',1,'(Global Namespace)'],['../modules_2ins_2ins__arduimu_8c.html',1,'(Global Namespace)']]],
   ['ins_5farduimu_2eh_68',['ins_arduimu.h',['../ins__arduimu_8h.html',1,'']]],
-  ['ins_5farduimu_5fbasic_2ec_69',['ins_arduimu_basic.c',['../modules_2ins_2ins__arduimu__basic_8c.html',1,'(Global Namespace)'],['../arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html',1,'(Global Namespace)']]],
+  ['ins_5farduimu_5fbasic_2ec_69',['ins_arduimu_basic.c',['../arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html',1,'(Global Namespace)'],['../modules_2ins_2ins__arduimu__basic_8c.html',1,'(Global Namespace)']]],
   ['ins_5farduimu_5fbasic_2eh_70',['ins_arduimu_basic.h',['../ins__arduimu__basic_8h.html',1,'']]],
   ['ins_5fekf2_2ecpp_71',['ins_ekf2.cpp',['../ins__ekf2_8cpp.html',1,'']]],
   ['ins_5fekf2_2eh_72',['ins_ekf2.h',['../ins__ekf2_8h.html',1,'']]],

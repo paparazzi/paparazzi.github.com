@@ -1,23 +1,28 @@
 <map id="stabilization_indi_attitude_controller" name="stabilization_indi_attitude_controller">
-<area shape="rect" id="Node000001" title="Default PD angular rate controller." alt="" coords="5,49,155,89"/>
-<area shape="rect" id="Node000002" href="$autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="209,5,347,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,47,214,32,215,37,156,52"/>
-<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#gae5f7587f4aa9b3c709335cd09a605581" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="401,45,559,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,65,387,63,387,68,155,71"/>
-<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#gac7be906cae5e3111c0d99b9447c88e9d" title="Tilt twist decomposition of quaternion." alt="" coords="203,109,353,135"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="155,86,218,103,216,108,154,91"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga4dad39bc71fee81ee8ca15406c70abb5" title="Composition (multiplication) of two quaternions." alt="" coords="621,5,779,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="559,45,626,31,627,36,560,51"/>
-<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="621,105,779,131"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="560,81,634,99,633,105,559,86"/>
-<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="607,55,793,80"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="559,63,593,63,593,69,559,68"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="841,105,969,131"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="780,115,827,115,827,121,780,121"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="323,107,396,86,397,91,324,112"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="353,119,607,116,607,122,353,124"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga7b045b015ebe3d4432452fd5383544f7" title=" " alt="" coords="414,160,546,185"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="330,132,416,154,415,159,329,137"/>
-<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#gaf742410e79fbcadbba359e52bdbe48cd" title="rotate 3D vector by quaternion." alt="" coords="414,209,546,235"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="298,133,344,164,402,196,419,202,417,207,400,200,341,168,295,137"/>
+<area shape="rect" id="Node000001" title="Default PD angular rate controller." alt="" coords="5,90,154,135"/>
+<area shape="rect" id="Node000002" href="$autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="207,5,345,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,88,201,49,229,38,225,41,203,54,126,92"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#gae5f7587f4aa9b3c709335cd09a605581" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="596,85,753,130"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,98,201,93,303,88,405,89,584,99,579,100,405,94,303,94,202,98,155,103"/>
+<area shape="rect" id="Node000008" href="$group__math__algebra__float.html#gac7be906cae5e3111c0d99b9447c88e9d" title="Tilt twist decomposition of quaternion." alt="" coords="398,179,548,206"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="108,133,151,163,203,186,247,196,294,201,385,203,380,204,294,206,247,201,201,191,149,167,107,138"/>
+<area shape="rect" id="Node000011" href="$stabilization__indi_8c.html#a15c5666501490db38bac78bfc77394d3" title="Default PD angular rate controller." alt="" coords="202,132,350,176"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="154,126,189,134,184,136,155,131"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga4dad39bc71fee81ee8ca15406c70abb5" title="Composition (multiplication) of two quaternions." alt="" coords="815,44,972,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="753,87,816,75,811,76,754,92"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="814,149,972,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="753,125,824,145,819,145,753,130"/>
+<area shape="rect" id="Node000007" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="801,96,986,124"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="753,105,788,108,783,109,754,111"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__float.html#gac38023e3c29c1755df4291f60eb34002" title=" " alt="" coords="1034,149,1161,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="972,161,1021,163,1016,163,973,166"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="507,176,604,137,609,135,509,181"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="548,185,801,169,796,170,549,190"/>
+<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga7b045b015ebe3d4432452fd5383544f7" title=" " alt="" coords="609,204,740,232"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="548,199,596,208,591,208,548,205"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#gaf742410e79fbcadbba359e52bdbe48cd" title="rotate 3D vector by quaternion." alt="" coords="609,256,740,284"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="508,204,597,241,618,251,613,250,595,246,507,209"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="350,143,583,117,578,119,351,148"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="350,166,387,175,382,175,350,171"/>
+<area shape="poly" id="edge15_Node000011_Node000011" title=" " alt="" coords="238,130,237,121,243,113,256,107,276,105,297,107,311,116,306,116,295,112,276,110,258,112,247,117,242,123,243,132"/>
 </map>

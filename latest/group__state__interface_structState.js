@@ -51,6 +51,6 @@ var group__state__interface_structState =
     [ "utm_pos_f", "group__state__position.html#ga339c3808ea93eb60bbe064d25098a825", null ],
     [ "wind_air_input_filter", "group__state__wind__airspeed.html#gac9681f92ab85054b4d08e9bc8ae11e01", null ],
     [ "wind_air_status", "group__state__wind__airspeed.html#ga4fc58d1ad5b89c1cacf4dd22d2f5864d", null ],
-    [ "windspeed_f", "group__state__wind__airspeed.html#ga567738048984be1aba0c488215485151", null ],
-    [ "windspeed_i", "group__state__wind__airspeed.html#ga9d4f97f162207e9a250ba40d4769550a", null ]
+    [ "windspeed_f", "group__state__wind__airspeed.html#ga2c95edf341f15cc472e3494d35425fa3", null ],
+    [ "windspeed_i", "group__state__wind__airspeed.html#ga39b7232fadae5a5fc33e0ca81131df3f", null ]
 ];

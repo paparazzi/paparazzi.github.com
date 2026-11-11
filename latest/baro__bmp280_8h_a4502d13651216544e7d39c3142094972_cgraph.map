@@ -1,23 +1,23 @@
 <map id="baro_bmp280_periodic" name="baro_bmp280_periodic">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,176,80"/>
-<area shape="rect" id="Node000002" href="$bmp280_8c.html#a0459b6fef7f674495485cdc10ae45dbf" title="Should be called periodically to request sensor readings." alt="" coords="224,55,359,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,65,210,65,210,70,177,70"/>
-<area shape="rect" id="Node000003" href="$bmp280_8c.html#a037f1f82100082904d46f86a8e81b621" title="Configure the BMP280 device register by register." alt="" coords="407,29,528,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,55,393,50,394,55,359,60"/>
-<area shape="rect" id="Node000009" href="$bmp280_8c.html#a13da609609902e73c1cf44c7b18e7ff9" title="Read a register." alt="" coords="578,80,746,105"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="359,69,565,83,564,89,359,75"/>
-<area shape="rect" id="Node000004" href="$bmp280_8c.html#adb1b408bea3a264c6616ba2fd17935a9" title="Write a register with a value." alt="" coords="576,29,748,55"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="528,39,562,39,562,45,528,45"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="803,5,905,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="748,29,789,23,789,29,748,34"/>
-<area shape="rect" id="Node000007" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="807,55,901,80"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="748,51,794,57,793,62,748,56"/>
-<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="974,104,1067,129"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="893,29,914,40,929,53,938,66,947,78,962,91,969,95,967,100,958,95,943,82,934,69,925,57,910,44,891,33"/>
-<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="960,55,1081,80"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="901,65,946,65,946,70,901,70"/>
-<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="746,79,793,73,794,78,747,84"/>
-<area shape="rect" id="Node000010" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="796,104,912,129"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="747,101,783,105,782,110,746,106"/>
-<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="912,114,960,114,960,119,912,119"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,175,86"/>
+<area shape="rect" id="Node000002" href="$bmp280_8c.html#a0459b6fef7f674495485cdc10ae45dbf" title="Should be called periodically to request sensor readings." alt="" coords="223,59,356,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,70,210,72,204,73,176,75"/>
+<area shape="rect" id="Node000003" href="$bmp280_8c.html#a037f1f82100082904d46f86a8e81b621" title="Configure the BMP280 device register by register." alt="" coords="404,33,524,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,60,391,58,386,59,357,65"/>
+<area shape="rect" id="Node000009" href="$bmp280_8c.html#a13da609609902e73c1cf44c7b18e7ff9" title="Read a register." alt="" coords="574,84,742,112"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="357,74,561,91,556,92,356,80"/>
+<area shape="rect" id="Node000004" href="$bmp280_8c.html#adb1b408bea3a264c6616ba2fd17935a9" title="Write a register with a value." alt="" coords="572,32,744,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="525,44,559,46,554,47,525,49"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="798,5,900,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="744,31,780,29,785,28,745,36"/>
+<area shape="rect" id="Node000007" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="803,57,896,85"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="744,55,790,63,785,63,744,60"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="969,109,1061,137"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="887,31,909,44,924,57,933,70,942,82,957,94,966,102,961,101,953,99,938,85,929,73,920,61,905,48,886,36"/>
+<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937" title=" " alt="" coords="955,57,1075,85"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="896,69,942,71,937,71,896,74"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="742,83,785,80,790,79,742,89"/>
+<area shape="rect" id="Node000010" href="$group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="792,109,907,137"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="742,106,779,114,774,113,742,112"/>
+<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="907,121,956,123,951,123,907,126"/>
 </map>

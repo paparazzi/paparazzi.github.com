@@ -1,5 +1,101 @@
 <map id="libisp_config" name="libisp_config">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,240,108,265"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="27,5,86,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,45,59,240,54,240,54,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="838,1602,940,1630"/>
+<area shape="rect" id="Node000002" href="$avi__isp__vlformat__32to40_8h.html#structavi__isp__vlformat__32to40__regs" title=" " alt="" coords="404,38,622,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="584,68,645,90,709,122,769,165,795,191,816,221,830,256,842,311,860,470,874,676,882,906,890,1345,890,1602,885,1601,885,1345,877,906,868,677,855,471,836,312,825,257,812,224,790,195,765,169,706,126,643,95,587,73"/>
+<area shape="rect" id="Node000003" href="$avi__isp__vlformat__32to40_8h.html#unionavi__isp__vlformat__32to40__format" title=" " alt="" coords="25,5,208,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,32,406,43,402,47,225,36"/>
+<area shape="rect" id="Node000004" href="$avi__isp__chain__bayer__inter_8h.html#structavi__isp__chain__bayer__inter__regs" title=" " alt="" coords="436,135,590,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="563,185,627,230,697,290,764,363,793,404,816,448,826,478,834,524,849,657,861,828,871,1019,885,1383,890,1602,885,1600,879,1383,866,1019,856,829,844,658,829,525,821,479,812,450,788,407,760,367,693,294,623,234,565,191"/>
+<area shape="rect" id="Node000005" href="$avi__isp__chain__bayer__inter_8h.html#unionavi__isp__chain__bayer__inter__module__bypass" title=" " alt="" coords="33,75,200,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="214,103,377,124,438,137,434,140,376,129,217,108"/>
+<area shape="rect" id="Node000006" href="$avi__isp__pedestal_8h.html#structavi__isp__pedestal__regs" title=" " alt="" coords="430,284,596,312"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="535,322,596,399,674,512,715,579,754,650,788,724,817,799,834,875,849,978,872,1224,885,1458,890,1602,885,1601,879,1458,866,1224,844,978,829,876,811,800,783,726,749,652,710,582,670,515,592,402,536,327"/>
+<area shape="rect" id="Node000007" href="$avi__isp__pedestal_8h.html#unionavi__isp__pedestal__cfa" title=" " alt="" coords="38,143,195,171"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="208,157,293,167,336,177,378,192,415,212,450,236,501,283,496,285,446,241,412,216,376,197,335,183,292,172,212,161"/>
+<area shape="rect" id="Node000008" href="$avi__isp__pedestal_8h.html#unionavi__isp__pedestal__sub__r" title=" " alt="" coords="30,196,203,224"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="216,218,297,228,377,245,432,263,482,283,477,285,431,268,376,250,296,233,220,222"/>
+<area shape="rect" id="Node000009" href="$avi__isp__pedestal_8h.html#unionavi__isp__pedestal__sub__gb" title=" " alt="" coords="25,252,208,280"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="222,273,432,290,428,293,225,277"/>
+<area shape="rect" id="Node000010" href="$avi__isp__pedestal_8h.html#unionavi__isp__pedestal__sub__gr" title=" " alt="" coords="26,308,207,336"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="221,323,298,322,376,318,439,311,435,315,377,323,298,327,224,327"/>
+<area shape="rect" id="Node000011" href="$avi__isp__pedestal_8h.html#unionavi__isp__pedestal__sub__b" title=" " alt="" coords="29,360,204,388"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="218,373,297,366,376,353,435,333,487,310,483,315,437,338,377,358,298,371,222,376"/>
+<area shape="rect" id="Node000012" href="$avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__regs" title=" " alt="" coords="402,732,624,760"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="556,765,619,801,690,851,760,916,791,953,816,993,837,1048,853,1124,866,1213,875,1308,886,1488,890,1603,885,1601,881,1488,870,1309,860,1214,848,1125,832,1049,812,996,786,956,756,920,687,856,616,805,558,770"/>
+<area shape="rect" id="Node000013" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__bayer__cfa" title=" " alt="" coords="23,412,210,457"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="223,433,264,438,304,448,343,463,378,484,409,512,435,545,456,580,474,616,499,684,511,732,506,732,494,685,469,618,452,582,430,548,405,516,375,488,341,468,303,453,263,443,226,437"/>
+<area shape="rect" id="Node000014" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__offset__x__y" title=" " alt="" coords="23,481,210,526"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="224,509,304,526,342,541,378,560,403,579,425,601,463,649,491,696,508,732,503,732,486,698,458,652,421,604,399,583,375,565,340,545,302,531,227,513"/>
+<area shape="rect" id="Node000015" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__id__x__y" title=" " alt="" coords="23,551,210,595"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="223,585,302,603,378,632,416,655,450,682,501,731,496,733,447,686,413,659,375,637,300,608,226,589"/>
+<area shape="rect" id="Node000016" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__w" title=" " alt="" coords="23,620,210,665"/>
+<area shape="poly" id="edge15_Node000012_Node000016" title=" " alt="" coords="223,657,301,671,377,690,433,710,482,731,478,733,431,715,376,696,299,676,226,661"/>
+<area shape="rect" id="Node000017" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__h" title=" " alt="" coords="23,689,210,734"/>
+<area shape="poly" id="edge16_Node000012_Node000017" title=" " alt="" coords="224,719,404,735,400,738,227,723"/>
+<area shape="rect" id="Node000018" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__w__inv" title=" " alt="" coords="23,759,210,803"/>
+<area shape="poly" id="edge17_Node000012_Node000018" title=" " alt="" coords="223,774,376,762,413,759,409,763,377,767,227,778"/>
+<area shape="rect" id="Node000019" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__cell__h__inv" title=" " alt="" coords="23,828,210,873"/>
+<area shape="poly" id="edge18_Node000012_Node000019" title=" " alt="" coords="223,835,300,821,376,802,434,781,485,759,482,763,436,786,377,807,301,826,227,839"/>
+<area shape="rect" id="Node000020" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__alpha" title=" " alt="" coords="23,897,210,942"/>
+<area shape="poly" id="edge19_Node000012_Node000020" title=" " alt="" coords="223,906,300,888,375,860,413,836,448,809,501,758,498,763,451,813,416,841,378,864,302,893,227,910"/>
+<area shape="rect" id="Node000021" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__beta" title=" " alt="" coords="5,966,228,994"/>
+<area shape="poly" id="edge20_Node000012_Node000021" title=" " alt="" coords="241,974,311,959,344,947,375,930,400,912,422,891,459,842,487,795,507,758,505,763,491,797,464,845,426,894,403,916,378,935,346,952,312,964,245,978"/>
+<area shape="rect" id="Node000022" href="$avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__red__coeff__mem__regs" title=" " alt="" coords="409,1017,617,1062"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="631,1022,681,1024,730,1032,776,1050,816,1079,830,1097,841,1121,860,1183,874,1258,883,1341,890,1498,891,1603,886,1601,885,1499,877,1341,868,1259,855,1184,837,1123,825,1100,812,1083,774,1055,728,1038,680,1029,634,1027"/>
+<area shape="rect" id="Node000023" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__green__red__coeff__mem" title=" " alt="" coords="23,1017,210,1062"/>
+<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="224,1037,410,1038,406,1042,227,1042"/>
+<area shape="rect" id="Node000024" href="$avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__green__blue__coeff__mem__regs" title=" " alt="" coords="405,1087,620,1131"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="635,1108,743,1118,787,1129,816,1146,828,1161,839,1182,856,1235,869,1301,878,1372,888,1510,890,1602,885,1601,883,1510,873,1373,864,1302,851,1237,834,1184,824,1164,812,1150,785,1134,742,1124,637,1113"/>
+<area shape="rect" id="Node000025" href="$avi__isp__green__imbalance_8h.html#unionavi__isp__green__imbalance__green__blue__coeff__mem" title=" " alt="" coords="23,1087,210,1131"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="224,1107,407,1107,403,1111,227,1111"/>
+<area shape="rect" id="Node000026" href="$avi__isp__dead__pixel__correction_8h.html#structavi__isp__dead__pixel__correction__regs" title=" " alt="" coords="441,1156,585,1201"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="599,1175,662,1176,725,1181,780,1192,801,1200,816,1210,836,1240,852,1286,865,1341,874,1402,886,1520,890,1602,885,1600,881,1521,869,1403,860,1342,847,1287,831,1243,812,1214,798,1205,778,1197,725,1187,662,1181,602,1179"/>
+<area shape="rect" id="Node000027" href="$avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__cfa" title=" " alt="" coords="44,1156,189,1201"/>
+<area shape="poly" id="edge26_Node000026_Node000027" title=" " alt="" coords="203,1176,442,1176,438,1180,206,1181"/>
+<area shape="rect" id="Node000028" href="$avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__bypass" title=" " alt="" coords="43,1225,190,1270"/>
+<area shape="poly" id="edge27_Node000026_Node000028" title=" " alt="" coords="204,1234,376,1206,442,1194,438,1197,377,1211,207,1238"/>
+<area shape="rect" id="Node000029" href="$avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__threshold" title=" " alt="" coords="36,1295,197,1339"/>
+<area shape="poly" id="edge28_Node000026_Node000029" title=" " alt="" coords="211,1313,254,1306,296,1296,338,1280,375,1257,383,1247,386,1236,390,1223,399,1211,418,1198,442,1189,439,1193,421,1203,402,1215,394,1226,391,1237,388,1249,378,1261,340,1285,298,1301,255,1312,214,1317"/>
+<area shape="rect" id="Node000030" href="$avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__rgrim__conf" title=" " alt="" coords="31,1364,202,1409"/>
+<area shape="poly" id="edge29_Node000026_Node000030" title=" " alt="" coords="215,1392,259,1388,301,1379,341,1363,375,1337,385,1323,390,1308,387,1277,384,1245,388,1228,399,1211,417,1196,442,1186,439,1190,420,1200,403,1215,393,1230,389,1245,392,1277,395,1309,390,1325,379,1341,343,1367,302,1384,259,1393,219,1396"/>
+<area shape="rect" id="Node000031" href="$avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__rgrim__gain" title=" " alt="" coords="31,1433,202,1478"/>
+<area shape="poly" id="edge30_Node000026_Node000031" title=" " alt="" coords="215,1467,259,1466,301,1459,341,1444,375,1419,392,1395,397,1370,395,1345,388,1319,382,1293,378,1266,383,1239,399,1211,417,1195,442,1186,439,1190,420,1200,403,1215,388,1241,384,1266,387,1292,393,1318,400,1344,402,1370,396,1397,379,1423,343,1448,303,1464,259,1471,218,1471"/>
+<area shape="rect" id="Node000032" href="$avi__isp__denoising_8h.html#structavi__isp__denoising__regs" title=" " alt="" coords="427,1224,599,1252"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="614,1235,674,1237,732,1243,782,1253,816,1270,834,1295,849,1333,870,1431,884,1531,889,1602,884,1601,878,1532,865,1432,843,1335,829,1298,812,1274,781,1258,732,1248,674,1242,616,1240"/>
+<area shape="rect" id="Node000033" href="$avi__isp__denoising_8h.html#unionavi__isp__denoising__cfa" title=" " alt="" coords="34,1502,199,1530"/>
+<area shape="poly" id="edge32_Node000032_Node000033" title=" " alt="" coords="186,1531,235,1536,285,1534,334,1522,355,1511,375,1496,385,1478,389,1451,387,1382,385,1312,389,1283,399,1262,428,1244,424,1248,403,1265,394,1284,390,1312,392,1382,394,1452,390,1480,379,1500,358,1516,336,1527,286,1540,235,1541,189,1535"/>
+<area shape="rect" id="Node000046" href="$avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__regs" title=" " alt="" coords="446,1276,580,1321"/>
+<area shape="poly" id="edge33_Node000001_Node000046" title=" " alt="" coords="594,1296,658,1299,722,1306,778,1317,800,1325,816,1335,831,1355,844,1385,866,1463,881,1543,889,1602,884,1601,875,1544,860,1464,839,1387,826,1358,812,1339,798,1330,777,1322,721,1311,657,1305,596,1301"/>
+<area shape="rect" id="Node000059" href="$avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__regs" title=" " alt="" coords="433,1345,592,1390"/>
+<area shape="poly" id="edge34_Node000001_Node000059" title=" " alt="" coords="607,1362,660,1366,715,1376,768,1396,816,1426,835,1445,850,1468,872,1517,884,1565,889,1602,884,1600,879,1566,867,1519,846,1470,831,1449,812,1430,766,1400,713,1381,659,1371,609,1366"/>
+<area shape="rect" id="Node000071" href="$avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__red__coeff__mem__regs" title=" " alt="" coords="433,1414,593,1476"/>
+<area shape="poly" id="edge35_Node000001_Node000071" title=" " alt="" coords="607,1449,659,1457,712,1470,766,1490,815,1516,838,1535,858,1558,884,1602,878,1601,853,1561,835,1539,813,1521,764,1494,711,1475,658,1462,609,1454"/>
+<area shape="rect" id="Node000073" href="$avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__green__coeff__mem__regs" title=" " alt="" coords="425,1500,601,1561"/>
+<area shape="poly" id="edge36_Node000001_Node000073" title=" " alt="" coords="615,1541,713,1558,815,1582,860,1601,855,1602,813,1588,712,1563,617,1546"/>
+<area shape="rect" id="Node000075" href="$avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem__regs" title=" " alt="" coords="429,1585,596,1646"/>
+<area shape="poly" id="edge37_Node000001_Node000075" title=" " alt="" coords="611,1613,840,1614,836,1617,613,1618"/>
+<area shape="rect" id="Node000077" href="$avi__isp__bayer_8h.html#structavi__isp__bayer__regs" title=" " alt="" coords="440,1671,586,1699"/>
+<area shape="poly" id="edge38_Node000001_Node000077" title=" " alt="" coords="600,1677,704,1665,813,1643,860,1629,856,1631,815,1649,704,1671,602,1682"/>
+<area shape="rect" id="Node000081" href="$avi__isp__color__correction_8h.html#structavi__isp__color__correction__regs" title=" " alt="" coords="406,1723,620,1751"/>
+<area shape="poly" id="edge39_Node000001_Node000081" title=" " alt="" coords="634,1742,679,1739,725,1732,770,1720,813,1702,835,1687,853,1667,879,1632,882,1628,857,1670,838,1691,815,1707,772,1725,726,1737,680,1744,636,1747"/>
+<area shape="rect" id="Node000093" href="$avi__isp__vlformat__40to32_8h.html#structavi__isp__vlformat__40to32__regs" title=" " alt="" coords="404,1775,622,1803"/>
+<area shape="poly" id="edge40_Node000001_Node000093" title=" " alt="" coords="592,1803,645,1808,703,1807,760,1796,787,1786,812,1772,830,1757,844,1740,865,1700,877,1660,885,1632,887,1627,882,1662,870,1702,848,1743,833,1761,816,1776,790,1791,762,1801,704,1812,645,1814,593,1808"/>
+<area shape="rect" id="Node000095" href="$avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__regs" title=" " alt="" coords="401,1827,625,1855"/>
+<area shape="poly" id="edge41_Node000001_Node000095" title=" " alt="" coords="640,1853,743,1856,784,1851,813,1840,835,1818,853,1792,866,1763,875,1732,884,1673,887,1632,890,1628,890,1674,880,1733,871,1764,858,1794,839,1822,815,1844,786,1856,743,1861,641,1858"/>
+<area shape="rect" id="Node000097" href="$avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__ry__lut__regs" title=" " alt="" coords="418,1879,608,1923"/>
+<area shape="poly" id="edge42_Node000001_Node000097" title=" " alt="" coords="621,1924,670,1927,721,1924,769,1912,792,1902,812,1888,827,1870,840,1842,861,1766,876,1687,885,1632,888,1628,881,1688,866,1768,845,1844,831,1873,816,1892,794,1906,771,1917,722,1930,670,1933,622,1929"/>
+<area shape="rect" id="Node000099" href="$avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__gu__lut__regs" title=" " alt="" coords="418,1948,608,1993"/>
+<area shape="poly" id="edge43_Node000001_Node000099" title=" " alt="" coords="614,1993,665,1998,718,1996,768,1984,791,1973,812,1959,830,1935,844,1898,866,1801,879,1700,886,1632,888,1628,884,1701,871,1802,849,1900,834,1938,816,1963,794,1978,770,1989,718,2002,665,2004,615,1999"/>
+<area shape="rect" id="Node000101" href="$avi__isp__gamma__corrector_8h.html#structavi__isp__gamma__corrector__bv__lut__regs" title=" " alt="" coords="418,2017,608,2062"/>
+<area shape="poly" id="edge44_Node000001_Node000101" title=" " alt="" coords="622,2048,680,2050,735,2049,782,2043,800,2037,812,2029,833,2000,849,1955,862,1898,871,1835,882,1713,886,1632,889,1628,887,1714,876,1836,867,1899,854,1956,837,2003,816,2033,802,2042,783,2048,736,2054,680,2056,624,2053"/>
+<area shape="rect" id="Node000103" href="$avi__isp__chroma_8h.html#structavi__isp__chroma__regs" title=" " alt="" coords="434,2086,592,2114"/>
+<area shape="poly" id="edge45_Node000001_Node000103" title=" " alt="" coords="579,2115,636,2123,698,2124,729,2120,759,2112,787,2099,812,2081,824,2067,835,2048,852,1995,865,1931,874,1860,883,1722,887,1632,889,1628,889,1722,880,1860,870,1932,857,1997,839,2050,828,2070,816,2085,790,2104,761,2117,730,2125,699,2130,636,2129,580,2120"/>
+<area shape="rect" id="Node000115" href="$avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__regs" title=" " alt="" coords="446,2137,580,2182"/>
+<area shape="poly" id="edge46_Node000001_Node000115" title=" " alt="" coords="595,2183,649,2192,707,2194,736,2191,763,2184,789,2172,812,2156,826,2127,839,2071,861,1911,877,1741,886,1632,888,1627,882,1742,867,1911,845,2072,831,2129,816,2160,792,2177,765,2189,737,2196,708,2200,649,2198,595,2188"/>
+<area shape="rect" id="Node000132" href="$avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__regs" title=" " alt="" coords="412,2207,614,2251"/>
+<area shape="poly" id="edge47_Node000001_Node000132" title=" " alt="" coords="597,2253,652,2262,709,2264,737,2260,764,2253,790,2242,812,2225,820,2214,828,2193,842,2128,864,1946,878,1754,886,1632,889,1627,883,1754,869,1946,847,2129,833,2194,825,2216,816,2229,792,2246,766,2258,738,2266,709,2269,651,2268,598,2258"/>
+<area shape="rect" id="Node000137" href="$avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut__regs" title=" " alt="" coords="412,2276,614,2337"/>
+<area shape="poly" id="edge48_Node000001_Node000137" title=" " alt="" coords="629,2334,678,2338,726,2335,772,2322,793,2311,812,2296,821,2283,829,2259,844,2187,856,2091,866,1982,879,1767,886,1632,889,1628,884,1768,871,1982,861,2091,849,2187,834,2260,826,2285,816,2300,796,2315,774,2327,727,2340,678,2343,629,2339"/>
+<area shape="rect" id="Node000139" href="$avi__isp__chain__yuv__inter_8h.html#structavi__isp__chain__yuv__inter__regs" title=" " alt="" coords="407,2362,619,2390"/>
+<area shape="poly" id="edge49_Node000001_Node000139" title=" " alt="" coords="569,2392,627,2405,692,2410,725,2408,757,2401,786,2388,812,2369,822,2354,831,2328,847,2247,859,2139,869,2018,881,1780,886,1632,889,1627,886,1780,874,2018,864,2140,852,2248,836,2329,827,2357,816,2373,789,2393,758,2406,726,2413,692,2415,626,2410,569,2397"/>
 </map>

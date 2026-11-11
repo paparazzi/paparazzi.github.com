@@ -1,34 +1,34 @@
 <map id="actuators_bebop_commit" name="actuators_bebop_commit">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,192,209"/>
-<area shape="rect" id="Node000002" href="$boards_2bebop_2actuators_8c.html#a9e7d18b02ea0d8803a375c6abd8bdb3c" title=" " alt="" coords="240,85,443,110"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,181,172,150,239,119,262,111,264,116,241,124,174,155,121,185"/>
-<area shape="rect" id="Node000003" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="249,134,433,159"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,181,264,160,265,165,162,186"/>
-<area shape="rect" id="Node000004" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="250,183,433,209"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,193,236,193,236,199,192,199"/>
-<area shape="rect" id="Node000012" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="252,233,431,258"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="162,206,265,227,264,232,161,211"/>
-<area shape="rect" id="Node000016" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="259,282,424,307"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="121,207,174,237,241,268,264,276,262,281,239,273,172,242,119,211"/>
-<area shape="rect" id="Node000005" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="491,77,687,102"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="403,181,442,168,503,138,556,107,558,112,506,143,444,173,405,186"/>
-<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="528,183,649,209"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="433,193,514,193,514,199,433,199"/>
-<area shape="rect" id="Node000006" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="751,5,905,45"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="637,74,739,46,740,52,638,79"/>
-<area shape="rect" id="Node000007" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="753,69,903,109"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="687,87,739,87,739,92,687,92"/>
-<area shape="rect" id="Node000009" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="755,134,901,159"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="649,181,752,160,753,165,650,186"/>
-<area shape="rect" id="Node000010" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="771,183,885,209"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="650,193,757,193,757,199,650,199"/>
-<area shape="rect" id="Node000011" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="761,233,895,258"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="650,206,753,227,752,232,649,211"/>
-<area shape="rect" id="Node000013" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="511,282,666,307"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="406,255,511,277,510,282,405,261"/>
-<area shape="rect" id="Node000014" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="781,282,875,307"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="666,292,768,292,768,297,666,297"/>
-<area shape="rect" id="Node000015" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="735,331,921,357"/>
-<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="651,305,753,326,752,331,650,310"/>
-<area shape="poly" id="edge16_Node000016_Node000013" title=" " alt="" coords="424,292,498,292,498,297,424,297"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,195,192,223"/>
+<area shape="rect" id="Node000002" href="$boards_2bebop_2actuators_8c.html#a9e7d18b02ea0d8803a375c6abd8bdb3c" title=" " alt="" coords="240,91,442,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,193,173,161,239,129,264,122,259,125,241,134,176,166,123,197"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="249,143,432,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,192,260,173,256,176,168,197"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="250,195,432,223"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,206,237,208,232,210,193,212"/>
+<area shape="rect" id="Node000012" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="252,247,430,275"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="166,221,260,242,256,245,167,226"/>
+<area shape="rect" id="Node000016" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="259,299,423,327"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="122,221,176,252,241,284,264,294,259,294,239,289,173,257,122,226"/>
+<area shape="rect" id="Node000005" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="490,83,685,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="405,192,441,180,501,149,552,121,556,118,504,154,443,185,407,197"/>
+<area shape="rect" id="Node000008" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="528,195,648,223"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="432,206,514,208,509,210,433,212"/>
+<area shape="rect" id="Node000006" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="750,5,902,50"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="637,80,738,53,733,55,639,85"/>
+<area shape="rect" id="Node000007" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="751,75,901,119"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="685,94,738,96,733,98,686,100"/>
+<area shape="rect" id="Node000009" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="754,143,898,171"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="648,193,747,174,742,175,649,198"/>
+<area shape="rect" id="Node000010" href="$preflight__checks_8c.html#a44147825b488fa3cf8ebb75192f9415c" title="Register a preflight error used inside the preflight checking functions." alt="" coords="769,195,883,223"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="648,206,757,209,751,209,649,212"/>
+<area shape="rect" id="Node000011" href="$preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="759,247,893,275"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="649,219,747,243,742,243,648,225"/>
+<area shape="rect" id="Node000013" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="510,299,665,327"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="410,273,506,295,501,296,410,278"/>
+<area shape="rect" id="Node000014" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="780,299,872,327"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="665,310,767,313,761,313,665,316"/>
+<area shape="rect" id="Node000015" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="733,351,919,379"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="655,325,747,347,741,347,654,330"/>
+<area shape="poly" id="edge16_Node000016_Node000013" title=" " alt="" coords="423,310,497,313,492,313,424,316"/>
 </map>

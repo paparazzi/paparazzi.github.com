@@ -1,21 +1,21 @@
 <map id="mt9f002_set_pll" name="mt9f002_set_pll">
-<area shape="rect" id="Node000001" title="Set the PLL registers based on config." alt="" coords="5,31,132,56"/>
-<area shape="rect" id="Node000002" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="182,5,261,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,30,168,24,169,29,133,35"/>
-<area shape="rect" id="Node000009" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="180,55,263,80"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="133,51,167,56,166,61,132,56"/>
-<area shape="rect" id="Node000003" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="311,31,412,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,22,298,29,297,34,260,28"/>
-<area shape="rect" id="Node000004" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="460,5,639,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="412,34,446,29,447,35,413,39"/>
-<area shape="rect" id="Node000008" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="467,55,632,80"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="413,47,453,52,453,58,412,52"/>
-<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="687,31,841,56"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="639,26,673,30,672,35,638,31"/>
-<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="936,5,1029,31"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="841,32,922,22,923,28,842,37"/>
-<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="889,55,1076,80"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="842,49,876,53,875,58,841,54"/>
-<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="632,55,673,51,673,56,632,61"/>
-<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="262,58,296,52,297,57,263,63"/>
+<area shape="rect" id="Node000001" title="Set the PLL registers based on config." alt="" coords="5,32,132,60"/>
+<area shape="rect" id="Node000002" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="182,5,260,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,32,169,28,164,29,133,37"/>
+<area shape="rect" id="Node000009" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="180,57,262,85"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="132,54,167,62,162,62,132,59"/>
+<area shape="rect" id="Node000003" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="310,32,410,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,24,297,33,292,33,261,29"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="458,5,636,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="411,36,440,34,445,34,411,41"/>
+<area shape="rect" id="Node000008" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="465,57,629,85"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="411,50,452,58,447,58,411,55"/>
+<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="684,32,838,60"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="636,28,671,34,666,34,636,33"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="932,5,1025,33"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="838,34,915,27,920,26,839,39"/>
+<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="886,57,1071,85"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="839,52,873,59,868,58,839,58"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="629,59,666,57,671,57,630,64"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="262,61,292,58,297,57,263,66"/>
 </map>

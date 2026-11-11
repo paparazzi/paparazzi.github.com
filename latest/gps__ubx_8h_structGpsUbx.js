@@ -5,6 +5,7 @@ var gps__ubx_8h_structGpsUbx =
     [ "dev", "gps__ubx_8h.html#aa0f8f1e2011481276e3e0f2131701c4a", null ],
     [ "error_cnt", "gps__ubx_8h.html#ac25b1e02b2516fc07cdf47a8acab7d89", null ],
     [ "error_last", "gps__ubx_8h.html#ae2861c04c3c0c9810eb094f56d562685", null ],
+    [ "gnss_in_use", "gps__ubx_8h.html#aaecf740bb1b226de8bb6218816355306", null ],
     [ "len", "gps__ubx_8h.html#a06e462850fe08f5c24755cc9ca51c374", null ],
     [ "msg_available", "gps__ubx_8h.html#ae70b254243a714bbc1ba4bbe15a4352e", null ],
     [ "msg_buf", "gps__ubx_8h.html#abcf68cd0264e306ef6fa16123286bb8f", null ],

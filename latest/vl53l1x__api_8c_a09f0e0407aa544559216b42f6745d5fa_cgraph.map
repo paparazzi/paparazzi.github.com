@@ -1,39 +1,39 @@
 <map id="VL53L1X_SensorInit" name="VL53L1X_SensorInit">
-<area shape="rect" id="Node000001" title="This function loads the 135 bytes default values to initialize the sensor." alt="" coords="5,114,156,139"/>
-<area shape="rect" id="Node000002" href="$vl53l1__platform_8c.html#a6294ff6202e132dbf802617ba71ec5f8" title="VL53L1_WrByte() definition." alt="" coords="515,93,639,118"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,112,135,66,167,42,203,24,263,7,312,3,361,10,422,24,457,35,491,50,548,83,545,87,489,55,455,40,421,29,360,15,311,9,264,12,205,29,170,47,139,70,94,115"/>
-<area shape="rect" id="Node000008" href="$vl53l1x__api_8c.html#a4d37ff28a4c3996805e1fe3fd4fe0206" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="204,237,421,262"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="96,137,141,180,172,203,205,223,222,230,220,235,203,228,169,208,138,184,92,141"/>
-<area shape="rect" id="Node000013" href="$vl53l1x__api_8c.html#aea03678f2d93224975c90e79ab210bb2" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="225,39,400,65"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="108,111,203,73,232,65,234,70,205,78,110,116"/>
-<area shape="rect" id="Node000014" href="$vl53l1x__api_8c.html#a50ba47246df0f85b46ec6d79f2f266d7" title="This function sets the sensor I2C address used in case multiple devices application,..." alt="" coords="223,89,402,114"/>
-<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="156,116,209,110,210,115,157,121"/>
-<area shape="rect" id="Node000015" href="$vl53l1x__api_8c.html#a5e8ca5c9b01cf3166f58495a93cd8358" title="This function starts the ranging distance operation The ranging operation is continuous." alt="" coords="228,138,397,163"/>
-<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="157,132,215,138,214,143,156,137"/>
-<area shape="rect" id="Node000016" href="$vl53l1x__api_8c.html#ac8080784997cc9a1c754998d1106715e" title="This function stops the ranging." alt="" coords="229,187,396,213"/>
-<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="111,137,205,173,234,181,232,187,203,178,109,142"/>
-<area shape="rect" id="Node000003" href="$vl53l1__platform_8c.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e" title="VL53L1_WriteMulti() definition." alt="" coords="732,115,876,141"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="639,109,719,117,718,122,639,114"/>
-<area shape="rect" id="Node000004" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="1121,125,1287,150"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="876,127,1108,132,1108,138,876,132"/>
-<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="1341,150,1496,175"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1287,144,1328,149,1327,155,1286,150"/>
-<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1591,125,1684,150"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1496,151,1577,142,1578,147,1496,156"/>
-<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1544,174,1731,199"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1496,168,1531,172,1530,178,1496,174"/>
-<area shape="rect" id="Node000009" href="$vl53l1__platform_8c.html#af25857bed3c014217254b84ff781e2aa" title="VL53L1_RdByte() definition." alt="" coords="743,186,865,211"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="389,234,469,223,607,209,729,200,729,206,607,215,470,228,389,239"/>
-<area shape="rect" id="Node000012" href="$vl53l1x__api_8c.html#a573b4132a58022c2af2c341180457a09" title="This function returns the current interrupt polarity 1=active high (default), 0=active low." alt="" coords="469,237,684,262"/>
-<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="421,247,456,247,456,252,421,252"/>
-<area shape="rect" id="Node000010" href="$vl53l1__platform_8c.html#ab999b09c3be53bbc7715d25007750916" title="VL53L1_ReadMulti() definition." alt="" coords="924,174,1067,199"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="865,192,910,189,910,195,866,197"/>
-<area shape="rect" id="Node000011" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="1115,174,1293,199"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1067,184,1101,184,1101,189,1067,189"/>
-<area shape="poly" id="edge11_Node000011_Node000005" title=" " alt="" coords="1293,174,1327,170,1328,175,1294,179"/>
-<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="634,234,733,212,734,217,635,239"/>
-<area shape="poly" id="edge15_Node000013_Node000002" title=" " alt="" coords="377,62,502,88,501,93,376,67"/>
-<area shape="poly" id="edge17_Node000014_Node000002" title=" " alt="" coords="402,100,501,101,501,107,402,105"/>
-<area shape="poly" id="edge19_Node000015_Node000002" title=" " alt="" coords="387,135,501,116,502,121,388,141"/>
-<area shape="poly" id="edge21_Node000016_Node000002" title=" " alt="" coords="380,185,420,173,483,148,538,122,540,127,486,153,422,178,382,190"/>
+<area shape="rect" id="Node000001" title="This function loads the 135 bytes default values to initialize the sensor." alt="" coords="5,119,155,147"/>
+<area shape="rect" id="Node000002" href="$vl53l1__platform_8c.html#a6294ff6202e132dbf802617ba71ec5f8" title="VL53L1_WrByte() definition." alt="" coords="512,119,635,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,117,134,69,166,45,202,26,261,8,310,3,360,10,420,26,457,42,492,62,549,108,544,108,489,67,455,46,418,31,359,15,310,8,262,13,204,31,169,49,138,73,94,120"/>
+<area shape="rect" id="Node000008" href="$vl53l1x__api_8c.html#a4d37ff28a4c3996805e1fe3fd4fe0206" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="203,248,419,276"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="95,144,141,189,171,213,204,233,222,243,216,242,201,238,168,217,137,193,93,150"/>
+<area shape="rect" id="Node000013" href="$vl53l1x__api_8c.html#aea03678f2d93224975c90e79ab210bb2" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="224,40,398,68"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="110,116,202,78,232,71,228,74,204,83,113,121"/>
+<area shape="rect" id="Node000014" href="$vl53l1x__api_8c.html#a50ba47246df0f85b46ec6d79f2f266d7" title="This function sets the sensor I2C address used in case multiple devices application,..." alt="" coords="222,92,400,120"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="154,122,208,117,204,120,156,127"/>
+<area shape="rect" id="Node000015" href="$vl53l1x__api_8c.html#a5e8ca5c9b01cf3166f58495a93cd8358" title="This function starts the ranging distance operation The ranging operation is continuous." alt="" coords="227,144,395,172"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="154,138,214,146,209,148,155,144"/>
+<area shape="rect" id="Node000016" href="$vl53l1x__api_8c.html#ac8080784997cc9a1c754998d1106715e" title="This function stops the ranging." alt="" coords="228,196,394,224"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="113,145,204,181,233,191,228,192,202,186,112,150"/>
+<area shape="rect" id="Node000003" href="$vl53l1__platform_8c.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e" title="VL53L1_WriteMulti() definition." alt="" coords="728,146,872,173"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="635,137,716,149,710,149,636,143"/>
+<area shape="rect" id="Node000004" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="1116,146,1280,173"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="872,157,1103,159,1097,160,872,162"/>
+<area shape="rect" id="Node000005" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="1334,172,1489,200"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1280,167,1322,175,1316,175,1280,172"/>
+<area shape="rect" id="Node000006" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1583,146,1676,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1489,174,1565,167,1571,167,1490,179"/>
+<area shape="rect" id="Node000007" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1537,198,1722,225"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1489,192,1524,199,1518,199,1489,198"/>
+<area shape="rect" id="Node000009" href="$vl53l1__platform_8c.html#af25857bed3c014217254b84ff781e2aa" title="VL53L1_RdByte() definition." alt="" coords="739,198,861,225"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="392,245,467,234,603,221,726,215,721,216,603,226,467,239,393,250"/>
+<area shape="rect" id="Node000012" href="$vl53l1x__api_8c.html#a573b4132a58022c2af2c341180457a09" title="This function returns the current interrupt polarity 1=active high (default), 0=active low." alt="" coords="467,248,680,276"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="419,259,454,262,449,262,420,265"/>
+<area shape="rect" id="Node000010" href="$vl53l1__platform_8c.html#ab999b09c3be53bbc7715d25007750916" title="VL53L1_ReadMulti() definition." alt="" coords="920,198,1061,225"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="862,209,907,211,902,212,862,214"/>
+<area shape="rect" id="Node000011" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="1109,198,1286,225"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1061,209,1096,211,1091,211,1062,214"/>
+<area shape="poly" id="edge11_Node000011_Node000005" title=" " alt="" coords="1286,198,1316,197,1322,197,1287,204"/>
+<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="638,245,721,229,726,228,639,250"/>
+<area shape="poly" id="edge15_Node000013_Node000002" title=" " alt="" coords="373,66,420,78,521,113,516,114,418,83,374,71"/>
+<area shape="poly" id="edge17_Node000014_Node000002" title=" " alt="" coords="400,112,499,124,494,126,401,118"/>
+<area shape="poly" id="edge19_Node000015_Node000002" title=" " alt="" coords="395,147,499,139,494,141,396,153"/>
+<area shape="poly" id="edge21_Node000016_Node000002" title=" " alt="" coords="373,193,418,181,515,153,520,151,420,186,374,198"/>
 </map>

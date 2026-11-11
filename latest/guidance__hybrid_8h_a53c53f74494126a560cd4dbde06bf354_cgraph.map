@@ -1,36 +1,40 @@
 <map id="guidance_hybrid_h_run_speed" name="guidance_hybrid_h_run_speed">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,101,177,141"/>
-<area shape="rect" id="Node000002" href="$guidance__hybrid_8c.html#a4bde21f915fb8621dd07031537611387" title="Runs the Hybrid Guidance main functions." alt="" coords="225,109,383,134"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,119,211,119,211,124,177,124"/>
-<area shape="rect" id="Node000003" href="$guidance__hybrid_8c.html#abc880768e854c8f3980d27e04fbcc8bf" title="Convert a required airspeed to a certain attitude for the Quadshot." alt="" coords="445,5,637,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,106,373,81,430,55,451,47,453,52,432,60,375,86,329,111"/>
-<area shape="rect" id="Node000007" href="$guidance__hybrid_8c.html#a7c2b462cc2bcef67834d8730c955e339" title="Description." alt="" coords="439,133,642,173"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="384,129,426,135,426,140,383,135"/>
-<area shape="rect" id="Node000012" href="$guidance__hybrid_8c.html#aab51fe722c3391b661f37d8c88ff4a5c" title="Description." alt="" coords="431,69,651,109"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="383,108,417,103,417,109,384,113"/>
-<area shape="rect" id="Node000013" href="$guidance__hybrid_8c.html#acedc35c0c91c020ef2b90411da28b973" title="Creates the attitude set&#45;points from an orientation vector." alt="" coords="463,211,619,251"/>
-<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="330,132,432,183,477,203,475,208,430,188,328,137"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#ga7e0cea5a49210d843282259d0a40d8e0" title="return norm of 2D vector" alt="" coords="739,19,878,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="637,25,726,27,725,33,637,30"/>
-<area shape="rect" id="Node000005" href="$group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="1003,6,1090,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="878,25,989,19,990,24,878,31"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#ga8c365d83c52740090161df2f73cee472" title="return squared norm of 2D vector" alt="" coords="973,55,1120,81"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="878,40,960,52,960,58,878,45"/>
-<area shape="rect" id="Node000008" href="$group__state__velocity.html#ga3ffc29c48ac8ca0b9baf412012e45d21" title="Get ground speed in local NED coordinates (int)." alt="" coords="731,119,886,145"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="642,143,717,137,718,142,643,148"/>
-<area shape="rect" id="Node000009" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="967,119,1127,145"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="886,129,953,129,953,135,886,135"/>
-<area shape="rect" id="Node000010" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1175,119,1321,145"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1127,129,1161,129,1161,135,1127,135"/>
-<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1369,119,1516,145"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1321,129,1355,129,1355,135,1321,135"/>
-<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="634,67,735,45,736,50,635,72"/>
-<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a" title="Quaternion from orientation vector." alt="" coords="699,169,919,194"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="618,214,725,194,726,199,619,219"/>
-<area shape="rect" id="Node000015" href="$group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739" title="Composition (multiplication) of two quaternions." alt="" coords="741,218,876,243"/>
-<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="619,228,728,228,728,233,619,233"/>
-<area shape="rect" id="Node000016" href="$group__math__algebra__int.html#ga06f4bef8def41e152f6f7bacaf3b99c7" title="Quaternion from unit vector and angle." alt="" coords="736,268,881,308"/>
-<area shape="poly" id="edge16_Node000013_Node000016" title=" " alt="" coords="619,245,723,267,722,272,618,250"/>
-<area shape="rect" id="Node000017" href="$stabilization_8c.html#a6cca581158ca616cb1ffda9a5da0c77a" title=" " alt="" coords="730,333,887,358"/>
-<area shape="poly" id="edge17_Node000013_Node000017" title=" " alt="" coords="573,249,630,284,700,318,727,326,725,332,698,322,628,288,570,253"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,177,156"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="50,111,49,101,56,92,70,87,91,85,114,87,129,95,124,97,113,92,91,90,71,92,59,97,54,103,56,111"/>
+<area shape="rect" id="Node000002" href="$guidance__hybrid_8c.html#a4bde21f915fb8621dd07031537611387" title="Runs the Hybrid Guidance main functions." alt="" coords="225,120,381,148"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="176,131,211,132,207,135,178,136"/>
+<area shape="poly" id="edge14_Node000002_Node000002" title=" " alt="" coords="266,119,260,111,265,101,280,95,303,93,328,96,343,104,337,105,326,101,303,99,281,101,269,105,266,111,271,120"/>
+<area shape="rect" id="Node000003" href="$guidance__hybrid_8c.html#abc880768e854c8f3980d27e04fbcc8bf" title="Convert a required airspeed to a certain attitude for the Quadshot." alt="" coords="443,8,634,52"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="325,117,372,90,428,62,447,57,442,59,430,67,375,95,328,122"/>
+<area shape="rect" id="Node000007" href="$guidance__hybrid_8c.html#a7c2b462cc2bcef67834d8730c955e339" title="Description." alt="" coords="438,146,640,191"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="381,143,425,151,420,152,382,148"/>
+<area shape="rect" id="Node000012" href="$guidance__hybrid_8c.html#aab51fe722c3391b661f37d8c88ff4a5c" title="Description." alt="" coords="429,77,648,122"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="380,120,416,116,411,119,382,125"/>
+<area shape="rect" id="Node000013" href="$guidance__hybrid_8c.html#acedc35c0c91c020ef2b90411da28b973" title="Creates the attitude set&#45;points from an orientation vector." alt="" coords="461,245,616,290"/>
+<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="330,145,487,236,482,238,329,151"/>
+<area shape="rect" id="Node000004" href="$group__math__algebra__int.html#ga7e0cea5a49210d843282259d0a40d8e0" title="return norm of 2D vector" alt="" coords="737,31,875,58"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="634,32,724,39,718,41,635,38"/>
+<area shape="rect" id="Node000005" href="$group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="1000,5,1086,33"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="875,35,987,25,982,26,876,40"/>
+<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#ga8c365d83c52740090161df2f73cee472" title="return squared norm of 2D vector" alt="" coords="970,57,1116,85"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="875,50,957,61,952,62,875,55"/>
+<area shape="rect" id="Node000008" href="$group__state__velocity.html#ga3ffc29c48ac8ca0b9baf412012e45d21" title="Get ground speed in local NED coordinates (int)." alt="" coords="729,149,883,177"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="640,164,716,164,711,166,641,169"/>
+<area shape="rect" id="Node000009" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="964,149,1123,177"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="883,161,951,163,946,164,884,166"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1171,149,1317,177"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1123,161,1158,163,1153,163,1124,166"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1365,149,1512,177"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1318,161,1353,163,1348,163,1318,166"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="648,74,724,61,719,63,650,79"/>
+<area shape="poly" id="edge17_Node000013_Node000013" title=" " alt="" coords="494,243,492,235,500,226,516,220,539,218,564,221,581,230,576,230,563,226,539,223,517,225,503,230,497,236,499,246"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a" title="Quaternion from orientation vector." alt="" coords="696,201,916,229"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="616,249,719,232,714,233,618,255"/>
+<area shape="rect" id="Node000015" href="$group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739" title="Composition (multiplication) of two quaternions." alt="" coords="739,253,873,281"/>
+<area shape="poly" id="edge18_Node000013_Node000015" title=" " alt="" coords="617,265,726,267,721,268,617,270"/>
+<area shape="rect" id="Node000016" href="$group__math__algebra__int.html#ga06f4bef8def41e152f6f7bacaf3b99c7" title="Quaternion from unit vector and angle." alt="" coords="734,305,878,350"/>
+<area shape="poly" id="edge19_Node000013_Node000016" title=" " alt="" coords="617,282,721,308,716,308,617,287"/>
+<area shape="rect" id="Node000017" href="$stabilization_8c.html#a6cca581158ca616cb1ffda9a5da0c77a" title=" " alt="" coords="728,397,884,425"/>
+<area shape="poly" id="edge20_Node000013_Node000017" title=" " alt="" coords="575,287,698,359,759,391,754,390,695,364,574,292"/>
+<area shape="poly" id="edge21_Node000017_Node000017" title=" " alt="" coords="765,396,759,388,764,379,780,373,806,371,834,373,850,382,845,382,833,378,806,376,781,378,768,383,764,388,770,398"/>
 </map>

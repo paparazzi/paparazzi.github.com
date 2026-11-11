@@ -1,65 +1,65 @@
 <map id="sw/airborne/firmwares/rotorcraft/guidance/guidance_v.h" name="sw/airborne/firmwares/rotorcraft/guidance/guidance_v.h">
-<area shape="rect" id="Node000001" title="Vertical guidance for rotorcrafts." alt="" coords="1652,5,1819,60"/>
-<area shape="rect" id="Node000002" href="$guidance_8h.html" title=" " alt="" coords="1028,115,1195,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1639,52,1195,123,1194,118,1638,47"/>
-<area shape="rect" id="Node000006" href="$guidance__hybrid_8c.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="5,321,172,375"/>
-<area shape="poly" id="edge21_Node000001_Node000006" title=" " alt="" coords="1638,38,1264,44,770,58,532,67,329,79,183,94,138,102,116,110,96,131,83,157,76,185,73,215,75,273,84,320,79,321,70,274,67,215,71,184,78,155,92,128,112,106,136,97,182,88,329,74,532,62,770,52,1264,39,1638,33"/>
-<area shape="rect" id="Node000007" href="$rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts." alt="" coords="308,321,475,375"/>
-<area shape="poly" id="edge28_Node000001_Node000007" title=" " alt="" coords="1638,42,1323,62,916,97,720,121,550,148,481,163,424,178,383,195,359,212,351,224,348,237,350,265,361,294,375,319,370,322,356,296,345,267,343,236,346,222,355,209,380,191,423,173,480,157,549,142,719,115,916,92,1323,56,1638,36"/>
-<area shape="rect" id="Node000009" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="1471,321,1637,375"/>
-<area shape="poly" id="edge22_Node000001_Node000009" title=" " alt="" coords="1639,49,1581,59,1525,73,1479,90,1462,99,1451,110,1444,122,1442,134,1451,162,1460,176,1470,186,1482,195,1495,209,1526,267,1547,319,1543,321,1521,269,1490,212,1479,199,1467,190,1456,180,1446,164,1437,134,1439,121,1447,106,1459,95,1477,85,1524,68,1580,54,1638,44"/>
-<area shape="rect" id="Node000021" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="1461,108,1628,163"/>
-<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="1675,69,1596,110,1593,105,1673,64"/>
-<area shape="rect" id="Node000022" href="$guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="1652,108,1819,163"/>
-<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="1738,74,1738,108,1733,108,1733,74"/>
-<area shape="rect" id="Node000023" href="$guidance__oneloop__nB_8c.html" title="A dummy guidance module to run the oneloop_nB controller." alt="" coords="1843,108,2022,163"/>
-<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="1800,64,1882,106,1880,110,1797,68"/>
-<area shape="rect" id="Node000024" href="$guidance__pid_8h.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="127,108,293,163"/>
-<area shape="poly" id="edge25_Node000001_Node000024" title=" " alt="" coords="1638,39,968,63,589,84,432,97,313,111,294,114,293,109,312,105,432,91,589,79,968,58,1638,34"/>
-<area shape="rect" id="Node000026" href="$ctrl__module__outerloop__demo_8c.html" title="example empty controller" alt="" coords="2046,108,2243,163"/>
-<area shape="poly" id="edge29_Node000001_Node000026" title=" " alt="" coords="1833,55,2046,107,2045,112,1832,60"/>
-<area shape="rect" id="Node000027" href="$optical__flow__hover_8c.html" title=" " alt="" coords="2268,115,2451,155"/>
-<area shape="poly" id="edge30_Node000001_Node000027" title=" " alt="" coords="1833,42,2029,68,2256,105,2289,113,2288,118,2255,111,2028,73,1832,47"/>
-<area shape="rect" id="Node000028" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="2475,115,2670,155"/>
-<area shape="poly" id="edge31_Node000001_Node000028" title=" " alt="" coords="1833,37,2117,60,2290,80,2464,105,2501,113,2499,118,2463,111,2289,85,2116,66,1832,42"/>
-<area shape="rect" id="Node000029" href="$guidance__opticflow__hover_8c.html" title="Optical&#45;flow based control for Linux based systems." alt="" coords="2694,108,2899,163"/>
-<area shape="poly" id="edge32_Node000001_Node000029" title=" " alt="" coords="1832,34,1994,41,2206,55,2444,75,2682,105,2694,107,2693,113,2682,111,2443,81,2206,60,1994,47,1832,40"/>
-<area shape="rect" id="Node000030" href="$guidance__OA_8c.html" title="Guidance for the obstacle avoidance methods." alt="" coords="2924,108,3083,163"/>
-<area shape="poly" id="edge33_Node000001_Node000030" title=" " alt="" coords="1832,31,2030,33,2299,42,2604,65,2760,83,2912,105,2924,108,2923,113,2911,111,2759,88,2604,70,2299,48,2030,38,1832,36"/>
-<area shape="rect" id="Node000003" href="$autopilot__guided_8c.html" title="Autopilot guided mode interface." alt="" coords="933,211,1100,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1086,167,1043,212,1040,209,1082,163"/>
-<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="1124,211,1291,265"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1141,163,1184,209,1180,212,1137,167"/>
-<area shape="rect" id="Node000005" href="$guidance__hybrid_8h.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="369,211,536,265"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1015,148,800,172,673,191,548,213,537,216,536,210,547,208,672,186,799,167,1014,143"/>
-<area shape="rect" id="Node000008" href="$guidance__indi_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="1315,211,1481,265"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1179,157,1324,208,1322,213,1177,162"/>
-<area shape="rect" id="Node000013" href="$guidance__indi__hybrid_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more!" alt="" coords="1941,211,2117,265"/>
-<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="1209,145,1941,224,1940,230,1208,150"/>
-<area shape="rect" id="Node000019" href="$guidance__plane_8c.html" title="Guidance controller for planes with PID compatible with the rotorcraft firmware no airspeed control." alt="" coords="560,211,727,265"/>
-<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="1015,156,884,182,739,213,728,216,726,211,737,208,882,177,1014,151"/>
-<area shape="rect" id="Node000020" href="$control__mixing__heewing_8c.html" title=" " alt="" coords="751,211,909,265"/>
-<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="1047,163,904,213,902,208,1045,158"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="357,270,173,325,172,319,355,265"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="433,279,409,322,404,319,428,276"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1449,271,1517,318,1514,323,1446,275"/>
-<area shape="rect" id="Node000010" href="$guidance__indi__fully__actuated_8c.html" title="Fully actuated plateform can be achieve with hexa&#45;copter with tilted propellers for example." alt="" coords="1029,321,1255,375"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1324,273,1205,323,1203,318,1322,268"/>
-<area shape="rect" id="Node000011" href="$guidance__indi__hinf_8c.html" title=" " alt="" coords="1280,321,1447,375"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1388,279,1374,321,1369,320,1383,278"/>
-<area shape="rect" id="Node000012" href="$guidance__indi__quadrotor_8c.html" title=" " alt="" coords="808,321,1004,375"/>
-<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="1301,268,1220,283,1157,291,1095,300,1017,316,989,323,988,318,1016,311,1094,295,1156,286,1220,278,1300,263"/>
-<area shape="rect" id="Node000014" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="2408,321,2583,375"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2131,254,2259,278,2397,311,2422,318,2421,323,2396,316,2257,283,2130,259"/>
-<area shape="rect" id="Node000015" href="$guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="1661,313,1828,383"/>
-<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="1948,273,1829,318,1827,313,1946,268"/>
-<area shape="rect" id="Node000016" href="$guidance__indi__hybrid__tailsitter_8c.html" title=" " alt="" coords="1852,313,2019,383"/>
-<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="1999,278,1967,315,1962,311,1995,274"/>
-<area shape="rect" id="Node000017" href="$eff__scheduling__rotwing_8c.html" title=" " alt="" coords="2043,321,2201,375"/>
-<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="2063,274,2101,319,2097,322,2059,278"/>
-<area shape="rect" id="Node000018" href="$scheduling__indi__simple_8c.html" title=" " alt="" coords="2225,321,2384,375"/>
-<area shape="poly" id="edge17_Node000013_Node000018" title=" " alt="" coords="2109,268,2239,318,2237,323,2107,273"/>
-<area shape="poly" id="edge26_Node000024_Node000006" title=" " alt="" coords="154,173,133,191,116,212,104,239,96,268,91,320,86,320,91,267,99,237,112,209,129,187,150,169"/>
-<area shape="rect" id="Node000025" href="$guidance__pid_8c.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="127,211,293,265"/>
-<area shape="poly" id="edge27_Node000024_Node000025" title=" " alt="" coords="213,176,213,211,207,211,207,176"/>
+<area shape="rect" id="Node000001" title="Vertical guidance for rotorcrafts." alt="" coords="1643,5,1809,67"/>
+<area shape="rect" id="Node000002" href="$guidance_8h.html" title=" " alt="" coords="1021,124,1188,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1624,55,1188,133,1187,128,1630,54"/>
+<area shape="rect" id="Node000006" href="$guidance__hybrid_8c.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="5,343,172,404"/>
+<area shape="poly" id="edge21_Node000001_Node000006" title=" " alt="" coords="1624,40,1255,49,764,64,528,74,327,86,182,101,137,109,115,117,95,140,81,167,73,197,70,229,73,291,83,343,77,342,68,292,64,229,68,196,76,165,91,137,112,113,136,104,181,95,327,81,528,69,764,58,1255,44,1630,38"/>
+<area shape="rect" id="Node000007" href="$rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts." alt="" coords="305,343,472,404"/>
+<area shape="poly" id="edge28_Node000001_Node000007" title=" " alt="" coords="1625,44,1313,69,909,107,714,132,546,161,477,176,421,192,380,209,356,226,348,239,344,253,346,283,356,314,370,343,365,341,351,316,340,284,339,252,343,237,352,223,377,204,419,187,476,171,545,155,713,127,908,102,1313,63,1630,43"/>
+<area shape="rect" id="Node000009" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="1463,343,1629,404"/>
+<area shape="poly" id="edge22_Node000001_Node000009" title=" " alt="" coords="1625,52,1571,65,1516,79,1470,97,1454,106,1443,117,1435,131,1433,144,1443,176,1452,190,1463,200,1475,209,1488,223,1519,285,1540,344,1535,341,1515,287,1484,226,1472,213,1460,204,1448,194,1438,178,1428,145,1430,129,1438,113,1451,102,1468,92,1514,74,1570,60,1630,51"/>
+<area shape="rect" id="Node000021" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="1452,115,1618,177"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="1661,74,1589,117,1587,112,1656,76"/>
+<area shape="rect" id="Node000022" href="$guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="1643,115,1809,177"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="1728,81,1728,116,1724,113,1724,85"/>
+<area shape="rect" id="Node000023" href="$guidance__oneloop__nB_8c.html" title="A dummy guidance module to run the oneloop_nB controller." alt="" coords="1833,115,2011,177"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="1794,72,1869,115,1864,114,1793,77"/>
+<area shape="rect" id="Node000024" href="$guidance__pid_8h.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="125,115,292,177"/>
+<area shape="poly" id="edge25_Node000001_Node000024" title=" " alt="" coords="1624,40,1340,51,960,67,584,89,428,102,310,118,293,121,291,116,309,112,428,97,583,83,959,61,1340,46,1630,39"/>
+<area shape="rect" id="Node000026" href="$ctrl__module__outerloop__demo_8c.html" title="example empty controller" alt="" coords="2036,115,2232,177"/>
+<area shape="poly" id="edge29_Node000001_Node000026" title=" " alt="" coords="1824,60,2024,112,2038,118,2033,118,2022,118,1824,66"/>
+<area shape="rect" id="Node000027" href="$optical__flow__hover_8c.html" title=" " alt="" coords="2256,124,2438,168"/>
+<area shape="poly" id="edge30_Node000001_Node000027" title=" " alt="" coords="1825,46,2020,72,2133,90,2245,112,2279,123,2274,123,2244,118,2132,96,2019,77,1825,51"/>
+<area shape="rect" id="Node000028" href="$optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="2462,124,2656,168"/>
+<area shape="poly" id="edge31_Node000001_Node000028" title=" " alt="" coords="1825,40,2107,64,2279,85,2450,112,2488,123,2483,123,2449,118,2278,90,2107,70,1825,46"/>
+<area shape="rect" id="Node000029" href="$guidance__opticflow__hover_8c.html" title="Optical&#45;flow based control for Linux based systems." alt="" coords="2681,115,2885,177"/>
+<area shape="poly" id="edge32_Node000001_Node000029" title=" " alt="" coords="1825,37,1987,44,2197,58,2433,80,2669,112,2683,117,2678,117,2668,118,2432,85,2197,63,1986,50,1825,43"/>
+<area shape="rect" id="Node000030" href="$guidance__OA_8c.html" title="Guidance for the obstacle avoidance methods." alt="" coords="2910,115,3067,177"/>
+<area shape="poly" id="edge33_Node000001_Node000030" title=" " alt="" coords="1825,38,2376,64,2678,85,2803,98,2898,112,2912,118,2907,117,2897,118,2803,104,2678,91,2376,69,1825,44"/>
+<area shape="rect" id="Node000003" href="$autopilot__guided_8c.html" title="Autopilot guided mode interface." alt="" coords="927,225,1093,286"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1078,179,1038,226,1035,222,1073,181"/>
+<area shape="rect" id="Node000004" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="1117,225,1284,286"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1135,177,1176,225,1171,223,1133,182"/>
+<area shape="rect" id="Node000005" href="$guidance__hybrid_8h.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="365,225,532,286"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1003,157,793,184,669,203,545,227,533,230,531,225,544,222,668,198,792,179,1008,155"/>
+<area shape="rect" id="Node000008" href="$guidance__indi_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="1308,225,1474,286"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1177,171,1313,224,1308,224,1176,177"/>
+<area shape="rect" id="Node000013" href="$guidance__indi__hybrid_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more!" alt="" coords="1932,225,2107,286"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="1203,156,1934,243,1929,245,1203,161"/>
+<area shape="rect" id="Node000019" href="$guidance__plane_8c.html" title="Guidance controller for planes with PID compatible with the rotorcraft firmware no airspeed control." alt="" coords="556,225,722,286"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="1003,166,876,194,734,227,723,230,722,225,733,222,875,189,1008,165"/>
+<area shape="rect" id="Node000020" href="$control__mixing__heewing_8c.html" title=" " alt="" coords="746,225,903,286"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="1036,174,904,227,903,221,1031,175"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="350,291,173,348,171,343,351,286"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="428,299,406,344,402,340,424,302"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1444,293,1508,343,1503,342,1443,299"/>
+<area shape="rect" id="Node000010" href="$guidance__indi__fully__actuated_8c.html" title="Fully actuated plateform can be achieve with hexa&#45;copter with tilted propellers for example." alt="" coords="1022,343,1248,404"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1314,292,1203,345,1201,340,1308,294"/>
+<area shape="rect" id="Node000011" href="$guidance__indi__hinf_8c.html" title=" " alt="" coords="1272,343,1438,404"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1380,299,1366,344,1363,340,1375,303"/>
+<area shape="rect" id="Node000012" href="$guidance__indi__quadrotor_8c.html" title=" " alt="" coords="803,343,998,404"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="1295,286,1213,304,1150,312,1087,321,1010,337,983,345,982,340,1009,332,1087,315,1149,307,1212,299,1290,287"/>
+<area shape="rect" id="Node000014" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="2396,343,2570,404"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2122,271,2249,297,2385,332,2411,343,2406,342,2384,337,2248,302,2122,277"/>
+<area shape="rect" id="Node000015" href="$guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="1653,334,1820,413"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="1934,292,1821,341,1820,336,1929,293"/>
+<area shape="rect" id="Node000016" href="$guidance__indi__hybrid__tailsitter_8c.html" title=" " alt="" coords="1844,334,2010,413"/>
+<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="1989,297,1959,336,1956,332,1984,299"/>
+<area shape="rect" id="Node000017" href="$eff__scheduling__rotwing_8c.html" title=" " alt="" coords="2034,343,2191,404"/>
+<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="2054,296,2091,343,2086,341,2052,301"/>
+<area shape="rect" id="Node000018" href="$scheduling__indi__simple_8c.html" title=" " alt="" coords="2215,343,2372,404"/>
+<area shape="poly" id="edge17_Node000013_Node000018" title=" " alt="" coords="2105,290,2225,343,2220,342,2104,295"/>
+<area shape="poly" id="edge26_Node000024_Node000006" title=" " alt="" coords="145,189,131,206,116,226,103,255,96,286,90,343,85,342,90,285,98,253,112,223,127,203,149,185"/>
+<area shape="rect" id="Node000025" href="$guidance__pid_8c.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="125,225,292,286"/>
+<area shape="poly" id="edge27_Node000024_Node000025" title=" " alt="" coords="210,190,211,225,206,223,207,195"/>
 </map>

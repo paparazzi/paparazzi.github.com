@@ -1,39 +1,39 @@
 <map id="image_draw_crosshair" name="image_draw_crosshair">
-<area shape="rect" id="Node000001" title="Draw a cross&#45;hair on the image." alt="" coords="1320,208,1488,233"/>
-<area shape="rect" id="Node000002" href="$snake__gate__detection_8c.html#a187099f3c8b15ddf2fc47461c89e13fe" title="Draw the gate on an image, using the corner points, possibly resulting in a polygon." alt="" coords="1083,81,1271,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1366,203,1200,109,1202,105,1369,199"/>
-<area shape="rect" id="Node000004" href="$snake__gate__detection_8c.html#a6f4b4ad6fe02036ec21c3ad960c041bd" title="Run snake gate detection on an image." alt="" coords="437,81,601,107"/>
-<area shape="poly" id="edge20_Node000001_Node000004" title=" " alt="" coords="1330,208,1272,198,1177,187,1097,183,959,181,822,175,742,164,649,146,593,129,546,109,548,104,595,124,650,141,743,159,822,170,959,176,1097,177,1178,182,1272,193,1331,203"/>
-<area shape="rect" id="Node000009" href="$snake__gate__detection_8c.html#ab8c72cf9993935e358c258374c2a1857" title="Draw the gate on an image, using only the center coordinate and sizes &#45; resulting in a square gate." alt="" coords="1087,208,1267,233"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="1306,223,1267,223,1267,218,1306,218"/>
-<area shape="rect" id="Node000010" href="$image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="1088,257,1265,283"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1332,239,1237,260,1235,255,1331,234"/>
-<area shape="rect" id="Node000016" href="$image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="1081,307,1272,332"/>
-<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1374,243,1328,271,1273,298,1239,309,1237,304,1271,293,1325,266,1371,239"/>
-<area shape="rect" id="Node000003" href="$snake__gate__detection_8c.html#afa74197068ad47804df4125b8601b31c" title="Draw the gate on an image." alt="" coords="695,5,786,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1127,79,1033,53,899,32,786,23,787,18,899,27,1034,47,1129,74"/>
-<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="1069,97,602,97,602,91,1069,91"/>
-<area shape="rect" id="Node000007" href="$snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c" title="Refine a single corner, based on the color around the coordinate." alt="" coords="880,107,1033,132"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1069,109,1034,113,1033,108,1069,104"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="691,38,558,84,557,79,689,33"/>
-<area shape="rect" id="Node000005" href="$detect__gate_8c.html#ae9611ccbfac4ffcf24fa13766ed1b870" title=" " alt="" coords="237,81,371,107"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="423,97,372,97,372,91,423,91"/>
-<area shape="rect" id="Node000006" href="$detect__gate_8c.html#afad85937ed43b1d2963bec59f0031ec1" title=" " alt="" coords="25,81,151,107"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="223,97,152,97,152,91,223,91"/>
-<area shape="rect" id="Node000008" href="$snake__gate__detection_8c.html#a2a3da4e9600e16e13b490769b3374ffa" title="Refine the four corners of the gate, based on the color around the supposed corner locations." alt="" coords="665,107,816,132"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="866,122,816,122,816,117,866,117"/>
-<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="651,112,601,106,602,101,652,107"/>
-<area shape="rect" id="Node000011" href="$opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="649,257,832,283"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1100,258,1033,249,957,244,880,249,802,260,801,255,880,243,957,239,1034,243,1101,252"/>
-<area shape="rect" id="Node000015" href="$image_8c.html#a94dcb784f31e65bdc562452321371a5f" title=" " alt="" coords="887,259,1026,284"/>
-<area shape="poly" id="edge16_Node000010_Node000015" title=" " alt="" coords="1074,273,1026,274,1026,268,1074,268"/>
-<area shape="rect" id="Node000012" href="$opticflow__calculator_8c.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame." alt="" coords="439,257,599,283"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="636,273,599,273,599,267,636,267"/>
-<area shape="rect" id="Node000013" href="$opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread." alt="" coords="219,257,389,283"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="425,273,390,273,390,267,425,267"/>
-<area shape="rect" id="Node000014" href="$opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera." alt="" coords="5,257,171,283"/>
-<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="205,273,171,273,171,267,205,267"/>
-<area shape="rect" id="Node000017" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="881,308,1032,333"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1068,323,1033,323,1033,318,1068,317"/>
-<area shape="poly" id="edge19_Node000017_Node000011" title=" " alt="" coords="888,307,795,285,796,280,889,302"/>
+<area shape="rect" id="Node000001" title="Draw a cross&#45;hair on the image." alt="" coords="1314,208,1482,236"/>
+<area shape="rect" id="Node000002" href="$snake__gate__detection_8c.html#a187099f3c8b15ddf2fc47461c89e13fe" title="Draw the gate on an image, using the corner points, possibly resulting in a polygon." alt="" coords="1078,81,1265,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1356,200,1198,112,1199,107,1361,200"/>
+<area shape="rect" id="Node000004" href="$snake__gate__detection_8c.html#a6f4b4ad6fe02036ec21c3ad960c041bd" title="Run snake gate detection on an image." alt="" coords="435,81,598,109"/>
+<area shape="poly" id="edge20_Node000001_Node000004" title=" " alt="" coords="1313,205,1266,199,1172,189,1092,184,955,183,889,182,818,178,739,167,646,148,592,132,547,112,547,107,594,127,647,143,739,162,819,172,889,177,955,178,1092,179,1172,183,1267,194,1318,205"/>
+<area shape="rect" id="Node000009" href="$snake__gate__detection_8c.html#ab8c72cf9993935e358c258374c2a1857" title="Draw the gate on an image, using only the center coordinate and sizes &#45; resulting in a square gate." alt="" coords="1082,208,1261,236"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="1296,222,1262,224,1262,219,1302,222"/>
+<area shape="rect" id="Node000010" href="$image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="1084,260,1260,288"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1322,239,1236,262,1235,257,1317,240"/>
+<area shape="rect" id="Node000016" href="$image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="1077,312,1266,340"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1366,244,1320,275,1267,302,1233,314,1232,309,1265,297,1317,270,1361,245"/>
+<area shape="rect" id="Node000003" href="$snake__gate__detection_8c.html#afa74197068ad47804df4125b8601b31c" title="Draw the gate on an image." alt="" coords="693,5,782,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1114,76,1028,54,894,33,783,24,782,19,895,28,1030,49,1120,76"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="1060,97,599,98,598,93,1065,94"/>
+<area shape="rect" id="Node000007" href="$snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c" title="Refine a single corner, based on the color around the coordinate." alt="" coords="877,107,1029,134"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1060,108,1030,114,1029,109,1065,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="678,40,560,83,558,78,683,38"/>
+<area shape="rect" id="Node000005" href="$detect__gate_8c.html#ae9611ccbfac4ffcf24fa13766ed1b870" title=" " alt="" coords="236,81,369,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="417,96,370,98,369,93,422,94"/>
+<area shape="rect" id="Node000006" href="$detect__gate_8c.html#afad85937ed43b1d2963bec59f0031ec1" title=" " alt="" coords="24,81,151,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="218,97,152,98,150,93,222,94"/>
+<area shape="rect" id="Node000008" href="$snake__gate__detection_8c.html#a2a3da4e9600e16e13b490769b3374ffa" title="Refine the four corners of the gate, based on the color around the supposed corner locations." alt="" coords="663,107,812,134"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="859,121,813,123,812,118,864,120"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="645,111,599,107,599,102,650,110"/>
+<area shape="rect" id="Node000011" href="$opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="646,260,829,288"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1086,257,1029,251,953,247,877,251,804,262,804,257,876,246,953,241,1029,246,1091,257"/>
+<area shape="rect" id="Node000015" href="$image_8c.html#a94dcb784f31e65bdc562452321371a5f" title=" " alt="" coords="884,260,1022,288"/>
+<area shape="poly" id="edge16_Node000010_Node000015" title=" " alt="" coords="1065,274,1022,276,1022,271,1071,274"/>
+<area shape="rect" id="Node000012" href="$opticflow__calculator_8c.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame." alt="" coords="437,260,596,288"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="628,274,597,276,597,271,634,274"/>
+<area shape="rect" id="Node000013" href="$opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread." alt="" coords="218,260,387,288"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="419,274,388,276,387,271,424,274"/>
+<area shape="rect" id="Node000014" href="$opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera." alt="" coords="5,260,170,288"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="199,274,170,276,170,271,205,273"/>
+<area shape="rect" id="Node000017" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="878,312,1028,340"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1059,326,1028,328,1028,323,1064,326"/>
+<area shape="poly" id="edge19_Node000017_Node000011" title=" " alt="" coords="875,308,798,291,798,286,880,308"/>
 </map>

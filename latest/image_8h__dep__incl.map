@@ -1,128 +1,129 @@
 <map id="sw/airborne/modules/computer_vision/lib/vision/image.h" name="sw/airborne/modules/computer_vision/lib/vision/image.h">
-<area shape="rect" id="Node000001" title="Image helper functions like resizing, color filter, converters..." alt="" coords="3016,5,3175,60"/>
-<area shape="rect" id="Node000002" href="$blob__finder_8h.html" title="Parse UYVY images and make a list of blobs of connected pixels." alt="" coords="191,108,357,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3002,36,2488,36,1726,44,1322,52,943,66,615,85,480,97,369,111,358,113,357,107,368,105,480,92,615,80,942,61,1322,47,1725,38,2488,31,3002,31"/>
-<area shape="rect" id="Node000005" href="$imavmarker_8h.html" title="Find a IMAV pattern." alt="" coords="381,108,548,163"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="3002,36,2630,38,2057,47,1375,70,1022,88,676,111,548,125,548,119,675,105,1022,82,1375,64,2057,42,2630,33,3002,31"/>
-<area shape="rect" id="Node000007" href="$colorfilter_8c.html" title=" " alt="" coords="687,115,898,155"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="3002,38,2580,43,1975,56,1361,78,1104,93,910,111,868,118,867,113,910,105,1104,87,1360,72,1975,51,2580,38,3002,32"/>
-<area shape="rect" id="Node000008" href="$detect__gate_8c.html" title=" " alt="" coords="922,108,1101,163"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="3002,38,2616,43,2069,55,1517,77,1287,92,1113,111,1102,113,1101,107,1112,105,1286,87,1517,72,2069,50,2616,37,3002,32"/>
-<area shape="rect" id="Node000009" href="$jpeg_8h.html" title="Encode images with the use of the JPEG encoding." alt="" coords="1125,108,1284,163"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="3002,38,2729,43,2333,55,1870,77,1398,111,1285,124,1284,119,1398,105,1870,72,2332,50,2729,38,3002,32"/>
-<area shape="rect" id="Node000014" href="$viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory." alt="" coords="1202,218,1418,258"/>
-<area shape="poly" id="edge65_Node000001_Node000014" title=" " alt="" coords="3002,38,2650,44,2178,57,1946,67,1740,79,1582,93,1526,102,1490,111,1441,133,1396,163,1330,220,1326,216,1393,158,1438,128,1488,105,1525,96,1581,88,1740,74,1945,62,2178,52,2650,39,3002,33"/>
-<area shape="rect" id="Node000015" href="$rtp_8h.html" title="Encodes a video stream with RTP Format 26 (Motion JPEG)" alt="" coords="1501,108,1660,163"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="3002,43,1660,131,1660,126,3002,38"/>
-<area shape="rect" id="Node000017" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2)" alt="" coords="2133,108,2292,163"/>
-<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="3003,41,2695,62,2503,82,2312,111,2293,114,2292,109,2311,105,2503,77,2694,56,3002,35"/>
-<area shape="rect" id="Node000024" href="$edge__flow_8h.html" title="calculate optical flow with EdgeFlow" alt="" coords="2217,313,2376,368"/>
-<area shape="poly" id="edge41_Node000001_Node000024" title=" " alt="" coords="3002,36,2900,40,2776,51,2644,74,2578,90,2515,111,2465,130,2427,149,2394,174,2357,212,2340,237,2325,264,2306,314,2301,312,2320,262,2335,234,2353,209,2390,170,2424,144,2463,125,2513,105,2577,85,2643,69,2775,46,2899,35,3002,31"/>
-<area shape="rect" id="Node000026" href="$opticflow__calculator_8c.html" title="Estimate velocity from optic flow." alt="" coords="3562,416,3759,471"/>
-<area shape="poly" id="edge54_Node000001_Node000026" title=" " alt="" coords="3188,31,3379,33,3615,42,3731,52,3839,65,3929,83,3997,106,4014,119,4023,134,4032,148,4047,160,4092,177,4135,180,4176,176,4216,169,4254,163,4292,164,4328,178,4364,209,4388,245,4397,277,4392,306,4374,331,4345,353,4308,372,4263,388,4211,401,4097,422,3975,434,3859,441,3759,444,3759,439,3858,436,3974,429,4096,416,4210,396,4261,383,4306,367,4343,349,4370,328,4387,304,4392,277,4383,247,4360,212,4326,183,4291,170,4255,168,4217,174,4177,181,4135,186,4091,182,4045,165,4028,151,4019,136,4010,122,3994,110,3928,88,3838,70,3731,57,3614,48,3379,38,3188,36"/>
-<area shape="rect" id="Node000027" href="$opticflow__calculator_8h.html" title="Calculate velocity from optic flow." alt="" coords="2367,211,2565,265"/>
-<area shape="poly" id="edge55_Node000001_Node000027" title=" " alt="" coords="3002,43,2894,52,2773,66,2662,86,2619,97,2586,110,2554,132,2526,159,2484,212,2480,209,2522,155,2551,128,2583,106,2617,92,2661,80,2772,61,2893,47,3002,37"/>
-<area shape="rect" id="Node000028" href="$act__fast_8c.html" title="Finds corners in an image by actively scanning the image." alt="" coords="3347,313,3505,368"/>
-<area shape="poly" id="edge35_Node000001_Node000028" title=" " alt="" coords="3189,51,3254,73,3317,106,3347,129,3369,150,3386,175,3403,210,3420,264,3427,313,3422,313,3415,265,3398,212,3381,178,3365,154,3344,133,3314,110,3252,77,3187,56"/>
-<area shape="rect" id="Node000030" href="$video__thread_8c.html" title=" " alt="" coords="2589,211,2764,265"/>
-<area shape="poly" id="edge63_Node000001_Node000030" title=" " alt="" coords="3004,57,2928,79,2853,110,2786,155,2711,213,2708,208,2783,150,2850,106,2927,74,3002,52"/>
-<area shape="rect" id="Node000031" href="$video__thread__nps_8c.html" title=" " alt="" coords="2788,211,2963,265"/>
-<area shape="poly" id="edge64_Node000001_Node000031" title=" " alt="" coords="3003,42,2967,50,2931,64,2898,83,2872,110,2862,133,2859,160,2862,186,2868,210,2863,211,2857,187,2854,160,2856,132,2868,106,2895,79,2929,59,2965,45,3002,37"/>
-<area shape="rect" id="Node000035" href="$act__fast_8h.html" title="Finds corners in an image by actively scanning the image." alt="" coords="3464,211,3623,265"/>
-<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="3189,34,3249,40,3316,53,3383,75,3446,106,3475,129,3499,156,3533,209,3528,212,3495,159,3471,132,3443,110,3381,79,3315,59,3248,46,3188,39"/>
-<area shape="rect" id="Node000036" href="$bayer_8h.html" title=" " alt="" coords="2597,108,2756,163"/>
-<area shape="poly" id="edge39_Node000001_Node000036" title=" " alt="" coords="3003,57,2776,111,2757,115,2756,110,2775,105,3002,52"/>
-<area shape="rect" id="Node000037" href="$fast__rosten_8h.html" title=" " alt="" coords="3647,211,3805,265"/>
-<area shape="poly" id="edge42_Node000001_Node000037" title=" " alt="" coords="3189,35,3257,42,3335,55,3415,76,3491,106,3511,119,3524,132,3536,146,3554,160,3603,187,3652,208,3650,213,3600,192,3551,165,3533,150,3520,136,3508,123,3489,110,3413,81,3334,60,3256,47,3188,40"/>
-<area shape="rect" id="Node000039" href="$image_8c.html" title="Image helper functions, like resizing, color filter, converters..." alt="" coords="2987,211,3145,265"/>
-<area shape="poly" id="edge46_Node000001_Node000039" title=" " alt="" coords="3092,74,3072,210,3067,210,3087,73"/>
-<area shape="rect" id="Node000040" href="$lucas__kanade_8h.html" title="efficient fixed&#45;point optical&#45;flow calculation" alt="" coords="3133,108,3303,163"/>
-<area shape="poly" id="edge47_Node000001_Node000040" title=" " alt="" coords="3140,67,3188,106,3184,110,3136,71"/>
-<area shape="rect" id="Node000042" href="$linear__flow__fit_8h.html" title=" " alt="" coords="3565,108,3762,163"/>
-<area shape="poly" id="edge51_Node000001_Node000042" title=" " alt="" coords="3189,45,3356,72,3546,105,3565,109,3564,114,3546,111,3355,77,3188,50"/>
-<area shape="rect" id="Node000044" href="$size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points." alt="" coords="3786,108,3983,163"/>
-<area shape="poly" id="edge56_Node000001_Node000044" title=" " alt="" coords="3189,38,3453,62,3614,81,3774,105,3786,108,3785,113,3774,111,3613,87,3452,67,3188,43"/>
-<area shape="rect" id="Node000046" href="$qr__code_8h.html" title="Parse video stream to detect and decode QR&#45;codes using the ZBAR library." alt="" coords="4479,108,4661,163"/>
-<area shape="poly" id="edge59_Node000001_Node000046" title=" " alt="" coords="3189,34,3835,59,4201,79,4353,92,4468,105,4479,107,4478,112,4467,111,4352,97,4200,85,3835,64,3188,39"/>
-<area shape="rect" id="Node000048" href="$snake__gate__detection_8c.html" title="Detects gates as used in the IROS drone races, i.e., square colored gates." alt="" coords="4058,108,4234,163"/>
-<area shape="poly" id="edge61_Node000001_Node000048" title=" " alt="" coords="3188,34,3349,40,3562,53,3800,74,4040,105,4058,109,4057,114,4039,111,3799,79,3561,58,3349,45,3188,39"/>
-<area shape="rect" id="Node000049" href="$undistort__image_8c.html" title=" " alt="" coords="4259,108,4455,163"/>
-<area shape="poly" id="edge62_Node000001_Node000049" title=" " alt="" coords="3189,32,3382,37,3645,48,3944,70,4097,86,4246,105,4259,107,4258,113,4246,111,4096,91,3944,75,3645,53,3382,42,3189,37"/>
-<area shape="rect" id="Node000050" href="$pano__unwrap_8h.html" title=" " alt="" coords="4686,115,4902,155"/>
-<area shape="poly" id="edge66_Node000001_Node000050" title=" " alt="" coords="3188,30,3445,31,3813,40,4022,49,4240,62,4460,81,4674,105,4717,113,4716,118,4674,111,4459,86,4240,68,4022,54,3813,45,3445,36,3188,36"/>
-<area shape="rect" id="Node000052" href="$wedgebug_8c.html" title=" " alt="" coords="4860,321,5035,361"/>
-<area shape="poly" id="edge68_Node000001_Node000052" title=" " alt="" coords="3188,32,3602,36,4163,48,4435,57,4668,70,4837,86,4889,95,4916,106,4936,130,4949,157,4958,187,4962,218,4961,276,4954,321,4949,320,4955,276,4956,218,4952,188,4944,159,4931,133,4912,110,4887,100,4836,91,4668,75,4435,62,4163,53,3602,42,3188,37"/>
-<area shape="rect" id="Node000053" href="$wedgebug_8h.html" title=" " alt="" coords="4977,115,5153,155"/>
-<area shape="poly" id="edge69_Node000001_Node000053" title=" " alt="" coords="3189,33,3554,39,4066,52,4581,74,4796,88,4958,105,4997,113,4996,118,4958,111,4795,94,4581,79,4066,58,3554,44,3189,38"/>
-<area shape="rect" id="Node000054" href="$wedgebug__opencv_8h.html" title=" " alt="" coords="5054,218,5283,258"/>
-<area shape="poly" id="edge74_Node000001_Node000054" title=" " alt="" coords="3189,31,3654,33,4298,42,4613,51,4882,64,5076,82,5136,93,5166,106,5182,132,5186,163,5184,193,5178,218,5172,217,5178,192,5181,163,5177,134,5163,110,5134,98,5075,87,4881,69,4612,56,4298,47,3654,38,3189,36"/>
-<area shape="rect" id="Node000056" href="$video__device_8h.html" title=" " alt="" coords="2883,115,3057,155"/>
-<area shape="poly" id="edge75_Node000001_Node000056" title=" " alt="" coords="3054,71,2995,117,2992,113,3050,67"/>
-<area shape="rect" id="Node000003" href="$blob__finder_8c.html" title="Parse UYVY images and make a list of blobs of connected pixels." alt="" coords="5,211,172,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,171,139,213,136,208,213,167"/>
-<area shape="rect" id="Node000004" href="$cv__blob__locator_8c.html" title=" " alt="" coords="196,211,355,265"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,176,278,211,272,211,272,176"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="405,171,326,213,324,208,402,167"/>
-<area shape="rect" id="Node000006" href="$imavmarker_8c.html" title="Find a IMAV pattern." alt="" coords="379,211,545,265"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="466,176,465,211,460,210,461,176"/>
-<area shape="rect" id="Node000010" href="$jpeg_8c.html" title="Encode images with the use of the JPEG encoding." alt="" coords="1019,211,1177,265"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1169,174,1128,213,1124,209,1165,170"/>
-<area shape="rect" id="Node000011" href="$opticflow__module_8c.html" title="Optical&#45;flow estimation module." alt="" coords="1566,416,1763,471"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1112,165,1016,173,912,173,716,167,641,170,614,176,594,185,583,197,581,213,590,235,611,264,639,289,676,312,723,332,777,351,903,381,1044,403,1191,419,1333,429,1566,438,1566,444,1333,435,1190,424,1043,408,902,386,776,356,721,337,674,317,635,293,607,267,585,238,576,214,578,194,591,180,612,171,641,165,716,161,912,168,1015,168,1111,160"/>
-<area shape="rect" id="Node000012" href="$video__capture_8c.html" title=" " alt="" coords="621,211,796,265"/>
-<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="1112,165,1026,181,958,190,891,198,808,213,797,216,796,210,807,208,890,193,957,185,1025,176,1111,160"/>
-<area shape="rect" id="Node000013" href="$video__usb__logger_8c.html" title=" " alt="" coords="820,211,995,265"/>
-<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="1115,170,986,213,984,208,1113,165"/>
-<area shape="poly" id="edge14_Node000009_Node000014" title=" " alt="" coords="1244,170,1292,216,1288,219,1240,174"/>
-<area shape="poly" id="edge17_Node000015_Node000011" title=" " alt="" coords="1602,174,1615,210,1645,324,1663,415,1658,416,1640,325,1610,211,1597,176"/>
-<area shape="poly" id="edge18_Node000015_Node000014" title=" " alt="" coords="1498,170,1362,220,1360,215,1496,165"/>
-<area shape="rect" id="Node000016" href="$rtp_8c.html" title="Encodes a vide stream with RTP (JPEG)" alt="" coords="1443,211,1601,265"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1561,176,1540,212,1535,209,1556,173"/>
-<area shape="poly" id="edge31_Node000017_Node000011" title=" " alt="" coords="2120,141,2011,147,1891,159,1835,168,1785,180,1745,195,1717,213,1707,226,1698,248,1684,304,1669,416,1664,415,1679,303,1693,246,1703,224,1713,209,1743,190,1784,175,1834,163,1891,153,2011,141,2120,136"/>
-<area shape="rect" id="Node000018" href="$libisp_8h.html" title=" " alt="" coords="1727,218,1874,258"/>
-<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="2120,158,1887,213,1861,220,1859,215,1885,208,2119,153"/>
-<area shape="rect" id="Node000023" href="$v4l2_8c.html" title="Capture images from a V4L2 device (Video for Linux 2)" alt="" coords="1899,211,2057,265"/>
-<area shape="poly" id="edge21_Node000017_Node000023" title=" " alt="" coords="2140,170,2040,213,2038,208,2138,166"/>
-<area shape="poly" id="edge22_Node000017_Node000024" title=" " alt="" coords="2156,173,2137,191,2123,212,2114,239,2116,251,2123,264,2142,285,2165,302,2191,315,2218,324,2216,329,2189,320,2162,307,2138,289,2118,267,2111,252,2109,238,2118,210,2133,187,2152,169"/>
-<area shape="poly" id="edge25_Node000017_Node000027" title=" " alt="" coords="2292,165,2401,208,2399,213,2290,170"/>
-<area shape="poly" id="edge32_Node000017_Node000030" title=" " alt="" coords="2306,151,2577,208,2590,211,2588,216,2576,213,2305,157"/>
-<area shape="poly" id="edge33_Node000017_Node000031" title=" " alt="" coords="2306,143,2522,168,2649,186,2776,208,2788,211,2787,216,2775,213,2648,191,2521,173,2306,148"/>
-<area shape="rect" id="Node000032" href="$guidance__OA_8h.html" title="Guidance for the obstacle avoidance methods." alt="" coords="2133,211,2292,265"/>
-<area shape="poly" id="edge34_Node000017_Node000032" title=" " alt="" coords="2215,176,2215,211,2210,211,2210,176"/>
-<area shape="rect" id="Node000025" href="$edge__flow_8c.html" title="calculate optical flow with EdgeFlow" alt="" coords="2217,416,2376,471"/>
-<area shape="poly" id="edge23_Node000024_Node000025" title=" " alt="" coords="2299,382,2299,416,2294,416,2294,382"/>
-<area shape="poly" id="edge24_Node000024_Node000026" title=" " alt="" coords="2390,365,2501,379,2642,392,2974,412,3562,436,3562,442,2974,418,2642,397,2501,384,2389,370"/>
-<area shape="poly" id="edge27_Node000027_Node000024" title=" " alt="" coords="2411,275,2342,315,2340,311,2409,270"/>
-<area shape="poly" id="edge28_Node000027_Node000026" title=" " alt="" coords="2579,263,2862,316,3138,363,3562,426,3562,431,3137,368,2861,322,2578,268"/>
-<area shape="poly" id="edge26_Node000027_Node000028" title=" " alt="" coords="2578,263,2800,292,3015,313,3347,334,3346,339,3015,318,2799,297,2578,268"/>
-<area shape="rect" id="Node000029" href="$opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones" alt="" coords="2401,313,2598,368"/>
-<area shape="poly" id="edge29_Node000027_Node000029" title=" " alt="" coords="2482,277,2493,312,2488,314,2476,279"/>
-<area shape="poly" id="edge30_Node000029_Node000011" title=" " alt="" coords="2388,371,2388,371,2216,395,2045,415,1764,439,1763,433,2044,410,2216,390,2387,365,2387,365"/>
-<area shape="poly" id="edge38_Node000035_Node000026" title=" " alt="" coords="3547,278,3555,323,3572,367,3593,393,3619,414,3615,418,3590,396,3568,369,3550,324,3542,279"/>
-<area shape="poly" id="edge37_Node000035_Node000028" title=" " alt="" coords="3504,277,3458,315,3455,311,3500,273"/>
-<area shape="poly" id="edge40_Node000036_Node000030" title=" " alt="" coords="2679,176,2679,211,2674,211,2674,176"/>
-<area shape="poly" id="edge45_Node000037_Node000026" title=" " alt="" coords="3749,277,3761,322,3762,346,3755,369,3736,396,3710,418,3707,414,3732,393,3750,367,3756,345,3756,323,3744,279"/>
-<area shape="poly" id="edge43_Node000037_Node000028" title=" " alt="" coords="3636,272,3505,316,3503,311,3634,267"/>
-<area shape="rect" id="Node000038" href="$fast__rosten_8c.html" title=" " alt="" coords="3581,313,3740,368"/>
-<area shape="poly" id="edge44_Node000037_Node000038" title=" " alt="" coords="3704,278,3680,315,3675,312,3699,275"/>
-<area shape="poly" id="edge50_Node000040_Node000026" title=" " alt="" coords="3208,176,3202,220,3204,243,3211,264,3235,303,3261,327,3294,345,3336,366,3392,389,3451,406,3562,429,3561,434,3450,412,3391,394,3334,370,3291,350,3258,331,3230,306,3206,266,3199,244,3197,220,3203,175"/>
-<area shape="poly" id="edge48_Node000040_Node000039" title=" " alt="" coords="3169,172,3107,213,3104,208,3166,168"/>
-<area shape="rect" id="Node000041" href="$lucas__kanade_8c.html" title="efficient fixed&#45;point optical&#45;flow calculation" alt="" coords="3221,211,3389,265"/>
-<area shape="poly" id="edge49_Node000040_Node000041" title=" " alt="" coords="3252,171,3284,209,3280,212,3247,175"/>
-<area shape="poly" id="edge53_Node000042_Node000026" title=" " alt="" coords="3773,167,3799,185,3820,209,3827,224,3827,237,3821,266,3807,322,3795,344,3776,370,3747,397,3716,418,3713,414,3744,393,3772,366,3791,341,3802,320,3815,265,3822,237,3822,225,3816,212,3796,189,3770,171"/>
-<area shape="rect" id="Node000043" href="$linear__flow__fit_8c.html" title=" " alt="" coords="3881,211,4078,265"/>
-<area shape="poly" id="edge52_Node000042_Node000043" title=" " alt="" coords="3759,164,3898,208,3896,213,3758,169"/>
-<area shape="poly" id="edge57_Node000044_Node000026" title=" " alt="" coords="3997,162,4055,184,4078,196,4092,209,4100,224,4103,238,4100,252,4092,267,4061,305,4023,338,3982,364,3937,386,3845,418,3760,435,3759,430,3843,412,3935,381,3979,360,4020,333,4057,301,4088,264,4095,250,4098,238,4095,226,4088,212,4075,200,4053,188,3996,167"/>
-<area shape="rect" id="Node000045" href="$size__divergence_8c.html" title="Calculate divergence from flow vectors by looking at line sizes between the points." alt="" coords="4153,211,4350,265"/>
-<area shape="poly" id="edge58_Node000044_Node000045" title=" " alt="" coords="3994,164,4156,208,4155,213,3992,169"/>
-<area shape="rect" id="Node000047" href="$qr__code_8c.html" title=" " alt="" coords="4479,211,4661,265"/>
-<area shape="poly" id="edge60_Node000046_Node000047" title=" " alt="" coords="4573,176,4573,211,4567,211,4567,176"/>
-<area shape="rect" id="Node000051" href="$pano__unwrap_8c.html" title=" " alt="" coords="4687,218,4901,258"/>
-<area shape="poly" id="edge67_Node000050_Node000051" title=" " alt="" coords="4797,169,4797,218,4791,218,4791,169"/>
-<area shape="poly" id="edge70_Node000053_Node000052" title=" " alt="" coords="5049,169,4961,321,4956,319,5045,166"/>
-<area shape="poly" id="edge71_Node000053_Node000054" title=" " alt="" coords="5096,163,5151,216,5147,220,5092,167"/>
-<area shape="poly" id="edge72_Node000054_Node000052" title=" " alt="" coords="5116,266,4990,323,4988,318,5113,261"/>
-<area shape="rect" id="Node000055" href="$wedgebug__opencv_8cpp.html" title=" " alt="" coords="5059,321,5303,361"/>
-<area shape="poly" id="edge73_Node000054_Node000055" title=" " alt="" coords="5175,271,5181,320,5176,321,5170,272"/>
-<area shape="poly" id="edge76_Node000056_Node000031" title=" " alt="" coords="2945,167,2902,212,2898,209,2941,163"/>
+<area shape="rect" id="Node000001" title="Image helper functions like resizing, color filter, converters..." alt="" coords="2920,5,3077,67"/>
+<area shape="rect" id="Node000002" href="$blob__finder_8h.html" title="Parse UYVY images and make a list of blobs of connected pixels." alt="" coords="189,115,355,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2902,39,2358,50,1566,66,809,89,531,102,367,118,357,120,354,115,366,112,530,97,808,83,1566,61,2358,45,2907,38"/>
+<area shape="rect" id="Node000005" href="$imavmarker_8h.html" title="Find a IMAV pattern." alt="" coords="379,115,544,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2902,39,2448,47,1783,61,1106,84,822,99,608,118,545,128,543,123,608,112,822,94,1105,79,1783,56,2448,42,2907,38"/>
+<area shape="rect" id="Node000007" href="$colorfilter_8c.html" title=" " alt="" coords="621,124,830,168"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="2902,39,2488,46,1891,59,1578,69,1285,81,1032,98,842,118,801,125,800,120,841,112,1032,92,1285,76,1578,63,1891,53,2488,41,2908,38"/>
+<area shape="rect" id="Node000008" href="$detect__gate_8c.html" title=" " alt="" coords="854,115,1032,177"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="2902,38,2523,46,1984,58,1704,68,1441,81,1215,97,1044,118,1033,120,1032,115,1044,112,1215,92,1441,76,1704,63,1984,53,2522,40,2907,38"/>
+<area shape="rect" id="Node000009" href="$jpeg_8h.html" title="Encode images with the use of the JPEG encoding." alt="" coords="1056,115,1213,177"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="2902,38,2634,45,2242,57,1786,80,1552,97,1322,118,1214,133,1213,127,1321,112,1551,92,1786,75,2242,52,2634,40,2907,38"/>
+<area shape="rect" id="Node000014" href="$viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory." alt="" coords="1192,233,1408,278"/>
+<area shape="poly" id="edge66_Node000001_Node000014" title=" " alt="" coords="2902,38,2553,43,2084,53,1853,63,1650,76,1495,94,1441,105,1407,117,1373,142,1346,173,1326,206,1311,235,1307,231,1321,203,1342,170,1370,138,1404,113,1440,100,1494,89,1650,71,1853,57,2083,48,2553,37,2907,37"/>
+<area shape="rect" id="Node000015" href="$rtp_8h.html" title="Encodes a video stream with RTP Format 26 (Motion JPEG)." alt="" coords="1417,115,1575,177"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="2902,40,2619,50,2238,64,1861,87,1705,101,1587,118,1576,120,1575,115,1586,112,1705,96,1861,81,2238,59,2619,45,2907,39"/>
+<area shape="rect" id="Node000017" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2)." alt="" coords="2269,115,2427,177"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="2902,47,2694,74,2569,94,2446,118,2427,122,2426,117,2445,112,2568,88,2693,69,2907,46"/>
+<area shape="rect" id="Node000023" href="$video__thread_8c.html" title=" " alt="" coords="1708,334,1881,396"/>
+<area shape="poly" id="edge64_Node000001_Node000023" title=" " alt="" coords="2902,45,2618,72,2253,112,2078,136,1926,164,1814,195,1778,210,1757,226,1750,238,1746,251,1749,279,1760,308,1775,335,1770,333,1755,310,1744,280,1741,251,1745,236,1753,223,1775,206,1813,189,1925,159,2077,131,2252,106,2618,66,2907,44"/>
+<area shape="rect" id="Node000025" href="$edge__flow_8h.html" title="calculate optical flow with EdgeFlow" alt="" coords="2400,334,2557,396"/>
+<area shape="poly" id="edge42_Node000001_Node000025" title=" " alt="" coords="2907,47,2779,74,2712,93,2646,117,2595,139,2555,157,2522,183,2492,226,2481,253,2476,281,2476,336,2472,332,2471,281,2476,251,2487,223,2519,179,2553,153,2593,134,2644,113,2710,88,2778,69,2902,48"/>
+<area shape="rect" id="Node000027" href="$opticflow__calculator_8c.html" title="Estimate velocity from optic flow." alt="" coords="3404,444,3601,506"/>
+<area shape="poly" id="edge55_Node000001_Node000027" title=" " alt="" coords="3093,34,3280,36,3509,47,3622,57,3725,70,3813,89,3877,113,3895,128,3904,144,3912,160,3928,174,3952,186,3976,193,4021,197,4065,192,4108,183,4149,176,4189,177,4209,181,4229,190,4248,204,4267,223,4294,262,4303,297,4297,329,4277,356,4245,380,4204,400,4153,417,4096,432,3969,453,3835,466,3708,473,3601,476,3601,471,3708,468,3835,461,3969,448,4095,426,4152,412,4202,395,4243,375,4273,352,4292,327,4298,297,4289,264,4263,226,4245,208,4226,195,4208,187,4189,182,4150,181,4109,188,4066,197,4022,202,3975,198,3950,191,3925,179,3908,164,3899,147,3891,131,3875,117,3811,94,3725,76,3621,62,3508,52,3280,42,3093,39"/>
+<area shape="rect" id="Node000028" href="$opticflow__calculator_8h.html" title="Calculate velocity from optic flow." alt="" coords="2502,225,2698,286"/>
+<area shape="poly" id="edge56_Node000001_Node000028" title=" " alt="" coords="2908,48,2810,74,2761,93,2716,117,2686,141,2659,170,2618,227,2615,222,2655,167,2682,138,2713,113,2759,88,2809,69,2902,49"/>
+<area shape="rect" id="Node000029" href="$act__fast_8c.html" title="Finds corners in an image by actively scanning the image." alt="" coords="3036,334,3193,396"/>
+<area shape="poly" id="edge36_Node000001_Node000029" title=" " alt="" coords="3025,78,3060,146,3092,224,3106,282,3114,336,3110,332,3101,283,3087,225,3056,148,3023,83"/>
+<area shape="rect" id="Node000031" href="$video__thread__nps_8c.html" title=" " alt="" coords="2723,225,2896,286"/>
+<area shape="poly" id="edge65_Node000001_Node000031" title=" " alt="" coords="2979,79,2951,130,2914,178,2887,204,2857,227,2855,222,2883,200,2910,175,2946,127,2975,82"/>
+<area shape="rect" id="Node000035" href="$act__fast_8h.html" title="Finds corners in an image by actively scanning the image." alt="" coords="2920,225,3077,286"/>
+<area shape="poly" id="edge37_Node000001_Node000035" title=" " alt="" coords="3001,81,3001,226,2997,223,2997,85"/>
+<area shape="rect" id="Node000036" href="$bayer_8h.html" title=" " alt="" coords="1599,115,1756,177"/>
+<area shape="poly" id="edge40_Node000001_Node000036" title=" " alt="" coords="2902,41,2328,69,2008,91,1876,104,1775,118,1757,121,1756,116,1774,112,1875,98,2008,85,2328,64,2907,40"/>
+<area shape="rect" id="Node000037" href="$fast__rosten_8h.html" title=" " alt="" coords="3848,225,4005,286"/>
+<area shape="poly" id="edge43_Node000001_Node000037" title=" " alt="" coords="3093,38,3223,46,3372,60,3509,82,3564,96,3605,113,3623,127,3632,144,3641,160,3656,174,3702,197,3742,206,3784,211,3837,222,3850,228,3845,228,3835,227,3783,216,3741,211,3700,202,3653,179,3636,163,3627,146,3619,131,3603,117,3563,101,3508,87,3371,66,3223,52,3093,44"/>
+<area shape="rect" id="Node000039" href="$image_8c.html" title="Image helper functions, like resizing, color filter, converters..." alt="" coords="3424,225,3581,286"/>
+<area shape="poly" id="edge47_Node000001_Node000039" title=" " alt="" coords="3093,38,3156,45,3226,59,3297,81,3363,113,3380,127,3391,142,3400,157,3414,175,3467,225,3462,223,3410,178,3396,160,3386,145,3377,131,3360,117,3295,86,3225,64,3155,51,3093,43"/>
+<area shape="rect" id="Node000040" href="$lucas__kanade_8h.html" title="efficient fixed&#45;point optical&#45;flow calculation" alt="" coords="3424,115,3592,177"/>
+<area shape="poly" id="edge48_Node000001_Node000040" title=" " alt="" coords="3093,50,3241,77,3406,112,3426,120,3421,119,3405,118,3240,82,3093,56"/>
+<area shape="rect" id="Node000042" href="$linear__flow__fit_8h.html" title=" " alt="" coords="3152,115,3349,177"/>
+<area shape="poly" id="edge52_Node000001_Node000042" title=" " alt="" coords="3084,71,3183,115,3177,114,3083,76"/>
+<area shape="rect" id="Node000044" href="$size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points." alt="" coords="3667,115,3864,177"/>
+<area shape="poly" id="edge57_Node000001_Node000044" title=" " alt="" coords="3093,42,3345,68,3497,88,3648,112,3670,119,3664,119,3648,118,3496,93,3344,73,3093,48"/>
+<area shape="rect" id="Node000046" href="$qr__code_8h.html" title="Parse video stream to detect and decode QR&#45;codes using the ZBAR library." alt="" coords="4357,115,4539,177"/>
+<area shape="poly" id="edge60_Node000001_Node000046" title=" " alt="" coords="3093,38,3366,47,3728,63,4085,84,4233,98,4346,112,4360,117,4354,117,4345,118,4233,103,4085,90,3728,68,3366,52,3093,43"/>
+<area shape="rect" id="Node000048" href="$snake__gate__detection_8c.html" title="Detects gates as used in the IROS drone races, i.e., square colored gates." alt="" coords="3939,115,4114,177"/>
+<area shape="poly" id="edge62_Node000001_Node000048" title=" " alt="" coords="3093,37,3251,43,3457,57,3688,79,3920,112,3941,119,3936,119,3920,118,3688,84,3457,62,3250,49,3093,42"/>
+<area shape="rect" id="Node000049" href="$undistort__image_8c.html" title=" " alt="" coords="4138,115,4334,177"/>
+<area shape="poly" id="edge63_Node000001_Node000049" title=" " alt="" coords="3093,35,3284,39,3541,51,3833,74,3982,91,4127,112,4141,117,4135,117,4126,118,3981,96,3832,79,3541,56,3283,44,3093,40"/>
+<area shape="rect" id="Node000050" href="$pano__unwrap_8h.html" title=" " alt="" coords="4563,124,4778,168"/>
+<area shape="poly" id="edge67_Node000001_Node000050" title=" " alt="" coords="3093,37,3404,46,3825,62,4244,84,4419,97,4551,112,4595,123,4590,123,4550,118,4418,103,4244,89,3825,67,3404,52,3093,43"/>
+<area shape="rect" id="Node000052" href="$wedgebug_8c.html" title=" " alt="" coords="4741,343,4915,388"/>
+<area shape="poly" id="edge69_Node000001_Node000052" title=" " alt="" coords="3092,36,3501,41,4053,54,4320,64,4549,77,4715,93,4766,102,4792,113,4814,138,4829,167,4838,199,4842,232,4842,295,4834,344,4831,340,4836,294,4837,233,4832,200,4824,169,4809,141,4789,117,4764,107,4714,98,4549,82,4320,69,4053,59,3501,46,3093,41"/>
+<area shape="rect" id="Node000053" href="$wedgebug_8h.html" title=" " alt="" coords="4854,124,5029,168"/>
+<area shape="poly" id="edge70_Node000001_Node000053" title=" " alt="" coords="3093,36,3454,42,3958,56,4465,78,4676,94,4835,112,4874,123,4869,123,4834,118,4675,99,4464,84,3958,61,3454,48,3093,41"/>
+<area shape="rect" id="Node000054" href="$wedgebug__opencv_8h.html" title=" " alt="" coords="4939,233,5168,278"/>
+<area shape="poly" id="edge75_Node000001_Node000054" title=" " alt="" coords="3092,35,3552,38,4187,49,4497,58,4762,72,4954,90,5013,100,5043,113,5061,141,5067,173,5066,206,5061,235,5057,231,5061,205,5062,174,5056,143,5040,117,5011,105,4953,95,4762,77,4497,64,4187,54,3552,43,3093,40"/>
+<area shape="rect" id="Node000056" href="$video__device_8h.html" title=" " alt="" coords="2726,124,2900,168"/>
+<area shape="poly" id="edge76_Node000001_Node000056" title=" " alt="" coords="2936,74,2851,126,2849,121,2931,76"/>
+<area shape="rect" id="Node000003" href="$blob__finder_8c.html" title="Parse UYVY images and make a list of blobs of connected pixels." alt="" coords="5,225,171,286"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,187,141,226,138,222,209,183"/>
+<area shape="rect" id="Node000004" href="$cv__blob__locator_8c.html" title=" " alt="" coords="195,225,352,286"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="274,190,275,225,270,223,272,195"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="393,186,327,227,324,222,398,183"/>
+<area shape="rect" id="Node000006" href="$imavmarker_8c.html" title="Find a IMAV pattern." alt="" coords="376,225,541,286"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="462,190,462,225,457,223,459,194"/>
+<area shape="rect" id="Node000010" href="$jpeg_8c.html" title="Encode images with the use of the JPEG encoding." alt="" coords="565,225,723,286"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1038,178,955,196,886,203,819,211,735,227,724,230,722,225,734,222,818,206,886,198,954,190,1044,176"/>
+<area shape="rect" id="Node000011" href="$opticflow__module_8c.html" title="Optical&#45;flow estimation module." alt="" coords="1854,444,2050,506"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1047,183,1007,206,985,226,977,242,973,256,976,270,985,285,1010,308,1044,330,1086,349,1134,367,1248,397,1376,421,1509,439,1639,453,1856,470,1851,470,1638,458,1508,445,1375,427,1247,403,1133,372,1084,354,1041,334,1006,312,981,288,971,272,968,256,972,240,981,223,1004,202,1042,185"/>
+<area shape="rect" id="Node000012" href="$video__capture_8c.html" title=" " alt="" coords="747,225,920,286"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="1044,180,919,227,917,222,1039,181"/>
+<area shape="rect" id="Node000013" href="$video__usb__logger_8c.html" title=" " alt="" coords="995,225,1168,286"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="1115,189,1098,226,1095,222,1111,192"/>
+<area shape="poly" id="edge14_Node000009_Node000014" title=" " alt="" coords="1195,183,1270,233,1264,232,1194,188"/>
+<area shape="poly" id="edge17_Node000015_Node000011" title=" " alt="" coords="1559,183,1603,223,1621,247,1633,270,1647,313,1663,354,1677,374,1698,394,1734,418,1773,436,1814,450,1856,462,1851,462,1813,455,1771,441,1731,422,1694,398,1673,377,1658,357,1642,315,1628,272,1617,250,1599,226,1557,188"/>
+<area shape="poly" id="edge18_Node000015_Node000014" title=" " alt="" coords="1430,184,1340,235,1338,230,1425,185"/>
+<area shape="rect" id="Node000016" href="$rtp_8c.html" title="Encodes a vide stream with RTP (JPEG)." alt="" coords="1432,225,1589,286"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1504,190,1509,226,1504,223,1501,194"/>
+<area shape="poly" id="edge32_Node000017_Node000011" title=" " alt="" coords="2353,191,2349,241,2341,266,2329,288,2301,320,2270,349,2235,374,2198,396,2122,430,2051,454,2050,449,2120,425,2195,391,2232,370,2266,345,2297,317,2324,285,2336,263,2344,240,2349,195"/>
+<area shape="rect" id="Node000018" href="$libisp_8h.html" title=" " alt="" coords="1766,233,1911,278"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="2256,160,2099,189,1925,227,1898,235,1897,230,1923,222,2098,184,2251,161"/>
+<area shape="poly" id="edge33_Node000017_Node000023" title=" " alt="" coords="2342,190,2324,243,2309,268,2288,288,2258,305,2215,320,2108,341,1989,355,1882,363,1881,357,1988,350,2107,336,2214,314,2256,300,2285,284,2304,265,2319,241,2338,193"/>
+<area shape="rect" id="Node000024" href="$v4l2_8c.html" title="Capture images from a V4L2 device (Video for Linux 2)." alt="" coords="1936,225,2093,286"/>
+<area shape="poly" id="edge22_Node000017_Node000024" title=" " alt="" coords="2257,176,2106,227,2094,231,2093,226,2105,222,2252,177"/>
+<area shape="poly" id="edge23_Node000017_Node000025" title=" " alt="" coords="2375,188,2463,335,2458,333,2373,193"/>
+<area shape="poly" id="edge26_Node000017_Node000028" title=" " alt="" coords="2433,181,2532,224,2527,224,2433,186"/>
+<area shape="poly" id="edge34_Node000017_Node000031" title=" " alt="" coords="2442,162,2571,189,2711,222,2725,228,2720,228,2710,227,2569,194,2442,168"/>
+<area shape="rect" id="Node000032" href="$guidance__OA_8h.html" title="Guidance for the obstacle avoidance methods." alt="" coords="2117,225,2275,286"/>
+<area shape="poly" id="edge35_Node000017_Node000032" title=" " alt="" coords="2296,185,2239,227,2237,222,2291,187"/>
+<area shape="poly" id="edge21_Node000018_Node000023" title=" " alt="" coords="1826,291,1809,336,1805,332,1822,294"/>
+<area shape="rect" id="Node000026" href="$edge__flow_8c.html" title="calculate optical flow with EdgeFlow" alt="" coords="2400,444,2557,506"/>
+<area shape="poly" id="edge24_Node000025_Node000026" title=" " alt="" coords="2481,410,2481,445,2477,442,2477,413"/>
+<area shape="poly" id="edge25_Node000025_Node000027" title=" " alt="" coords="2573,394,2690,414,2809,431,3041,454,3246,465,3407,473,3401,473,3246,471,3040,459,2808,436,2689,420,2572,399"/>
+<area shape="poly" id="edge28_Node000028_Node000025" title=" " alt="" coords="2557,296,2514,336,2512,331,2552,298"/>
+<area shape="poly" id="edge29_Node000028_Node000027" title=" " alt="" coords="2686,290,2828,343,2909,370,2991,393,3101,417,3212,437,3407,464,3401,464,3211,442,3100,423,2990,399,2908,375,2826,349,2685,295"/>
+<area shape="poly" id="edge27_Node000028_Node000029" title=" " alt="" coords="2713,284,2890,321,3038,350,3033,350,2889,326,2713,289"/>
+<area shape="rect" id="Node000030" href="$opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones" alt="" coords="2582,334,2778,396"/>
+<area shape="poly" id="edge30_Node000028_Node000030" title=" " alt="" coords="2633,296,2660,335,2655,333,2630,301"/>
+<area shape="poly" id="edge31_Node000030_Node000011" title=" " alt="" coords="2569,396,2423,424,2282,443,2051,468,2050,463,2282,438,2422,418,2564,397"/>
+<area shape="poly" id="edge39_Node000035_Node000027" title=" " alt="" coords="2996,300,3003,351,3011,374,3026,394,3052,411,3089,426,3188,448,3300,461,3407,471,3401,471,3299,466,3187,453,3087,431,3049,416,3022,398,3007,377,2997,352,2993,304"/>
+<area shape="poly" id="edge38_Node000035_Node000029" title=" " alt="" coords="3043,295,3085,335,3080,333,3041,300"/>
+<area shape="poly" id="edge41_Node000036_Node000023" title=" " alt="" coords="1682,190,1693,238,1712,285,1731,310,1754,335,1749,333,1727,314,1707,288,1688,240,1679,194"/>
+<area shape="poly" id="edge46_Node000037_Node000027" title=" " alt="" coords="3857,293,3562,446,3561,441,3852,294"/>
+<area shape="poly" id="edge44_Node000037_Node000029" title=" " alt="" coords="3836,286,3651,321,3473,343,3316,356,3194,363,3194,358,3315,351,3473,337,3651,316,3830,287"/>
+<area shape="rect" id="Node000038" href="$fast__rosten_8c.html" title=" " alt="" coords="3848,334,4005,396"/>
+<area shape="poly" id="edge45_Node000037_Node000038" title=" " alt="" coords="3929,300,3929,336,3925,332,3925,304"/>
+<area shape="poly" id="edge51_Node000040_Node000027" title=" " alt="" coords="3567,185,3584,203,3596,224,3601,241,3602,255,3596,287,3582,332,3563,375,3524,446,3521,442,3559,373,3577,330,3591,286,3597,255,3596,242,3591,226,3579,206,3565,190"/>
+<area shape="poly" id="edge49_Node000040_Node000039" title=" " alt="" coords="3508,190,3506,226,3502,222,3504,194"/>
+<area shape="rect" id="Node000041" href="$lucas__kanade_8c.html" title="efficient fixed&#45;point optical&#45;flow calculation" alt="" coords="3656,225,3824,286"/>
+<area shape="poly" id="edge50_Node000040_Node000041" title=" " alt="" coords="3587,181,3677,225,3672,224,3586,186"/>
+<area shape="poly" id="edge54_Node000042_Node000027" title=" " alt="" coords="3317,183,3363,223,3407,279,3444,340,3493,445,3489,442,3439,342,3403,282,3359,227,3315,188"/>
+<area shape="rect" id="Node000043" href="$linear__flow__fit_8c.html" title=" " alt="" coords="3152,225,3349,286"/>
+<area shape="poly" id="edge53_Node000042_Node000043" title=" " alt="" coords="3252,190,3253,226,3249,222,3249,194"/>
+<area shape="poly" id="edge58_Node000044_Node000027" title=" " alt="" coords="3879,173,3883,174,3948,182,4019,185,4155,188,4208,195,4229,202,4245,212,4255,226,4258,243,4253,263,4241,288,4224,308,4201,327,4138,360,4057,388,3965,412,3867,431,3770,447,3601,467,3601,462,3769,442,3866,426,3963,407,4055,383,4136,355,4198,322,4221,304,4236,285,4248,261,4252,242,4250,228,4241,216,4226,207,4207,201,4154,193,4019,190,3948,187,3882,179,3878,179"/>
+<area shape="rect" id="Node000045" href="$size__divergence_8c.html" title="Calculate divergence from flow vectors by looking at line sizes between the points." alt="" coords="4030,225,4226,286"/>
+<area shape="poly" id="edge59_Node000044_Node000045" title=" " alt="" coords="3878,178,4032,225,4027,225,3878,183"/>
+<area shape="rect" id="Node000047" href="$qr__code_8c.html" title=" " alt="" coords="4357,225,4539,286"/>
+<area shape="poly" id="edge61_Node000046_Node000047" title=" " alt="" coords="4450,190,4450,226,4446,222,4446,194"/>
+<area shape="rect" id="Node000051" href="$pano__unwrap_8c.html" title=" " alt="" coords="4564,233,4778,278"/>
+<area shape="poly" id="edge68_Node000050_Node000051" title=" " alt="" coords="4673,182,4673,234,4669,231,4669,186"/>
+<area shape="poly" id="edge71_Node000053_Node000052" title=" " alt="" coords="4925,181,4841,345,4838,340,4921,184"/>
+<area shape="poly" id="edge72_Node000053_Node000054" title=" " alt="" coords="4976,177,5033,233,5028,232,4974,182"/>
+<area shape="poly" id="edge73_Node000054_Node000052" title=" " alt="" coords="4997,284,4874,345,4873,340,4992,285"/>
+<area shape="rect" id="Node000055" href="$wedgebug__opencv_8cpp.html" title=" " alt="" coords="4940,343,5183,388"/>
+<area shape="poly" id="edge74_Node000054_Node000055" title=" " alt="" coords="5058,292,5062,344,5058,340,5054,296"/>
+<area shape="poly" id="edge77_Node000056_Node000031" title=" " alt="" coords="2814,182,2812,226,2808,222,2810,186"/>
 </map>

@@ -40,7 +40,6 @@ var sim_2mcu__periph_2gpio__arch_8h =
     [ "GPIOF", "sim_2mcu__periph_2gpio__arch_8h.html#a43c3022dede7c9db7a58d3c3409dbc8d", null ],
     [ "GPIOG", "sim_2mcu__periph_2gpio__arch_8h.html#a02a2a23a32f9b02166a8c64012842414", null ],
     [ "GPIOH", "sim_2mcu__periph_2gpio__arch_8h.html#adeacbb43ae86c879945afe98c679b285", null ],
-    [ "gpio_port_t", "sim_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de", null ],
     [ "gpio_clear", "sim_2mcu__periph_2gpio__arch_8h.html#ae7545def101df0b5b32032cde88e58b2", null ],
     [ "gpio_get", "sim_2mcu__periph_2gpio__arch_8h.html#ae31d746dfba17d533edd25e98e3d897e", null ],
     [ "gpio_set", "sim_2mcu__periph_2gpio__arch_8h.html#ad50e4c3e6403a39a224918153f8c2c86", null ],

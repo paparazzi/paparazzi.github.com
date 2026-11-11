@@ -5,7 +5,7 @@ var searchData=
   ['sdcarderrorstatus_2',['SDCardErrorStatus',['../sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb',1,'sdcard_spi.h']]],
   ['sdcardstatus_3',['SDCardStatus',['../sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7',1,'sdcard_spi.h']]],
   ['sdcardtype_4',['SDCardType',['../sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341',1,'sdcard_spi.h']]],
-  ['sdioerror_5',['sdioerror',['../sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3',1,'SdioError:&#160;sdLog.h'],['../sdlog__linux_8h.html#ae9361ce95c5a174983481365e90d87b3',1,'SdioError:&#160;sdlog_linux.h']]],
+  ['sdioerror_5',['SdioError',['../sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3',1,'SdioError:&#160;sdLog.h'],['../sdlog__linux_8h.html#ae9361ce95c5a174983481365e90d87b3',1,'SdioError:&#160;sdlog_linux.h']]],
   ['sdloggerstatus_6',['SDLoggerStatus',['../sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206e',1,'sdlogger_spi_direct.h']]],
   ['sdresponsetype_7',['SdResponseType',['../sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086e',1,'sdcard_spi.h']]],
   ['sensor_5fe_8',['sensor_e',['../cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288c',1,'cc2500_settings.h']]],
@@ -35,6 +35,6 @@ var searchData=
   ['superbitrfstatus_32',['SuperbitRFStatus',['../modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3',1,'superbitrf.h']]],
   ['survey_5forientation_5ft_33',['survey_orientation_t',['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t:&#160;nav_survey_rectangle.h'],['../nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t:&#160;nav_survey_rectangle_rotorcraft.h']]],
   ['surveystage_34',['SurveyStage',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6',1,'nav_survey_polygon.h']]],
-  ['surveystatus_35',['surveystatus',['../nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_hybrid.c'],['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_osam.c'],['../nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_rotorcraft.c']]],
+  ['surveystatus_35',['SurveyStatus',['../nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_hybrid.c'],['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_osam.c'],['../nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus:&#160;nav_survey_poly_rotorcraft.c']]],
   ['syslink_5fstate_5ft_36',['syslink_state_t',['../syslink_8h.html#ab5ee859a8212974e338863022272b30c',1,'syslink.h']]]
 ];

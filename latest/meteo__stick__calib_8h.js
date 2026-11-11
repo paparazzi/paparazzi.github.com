@@ -15,7 +15,7 @@ var meteo__stick__calib_8h =
     [ "MTOSTK_MAX_SEEK_ARRAY_SIZE", "meteo__stick__calib_8h.html#ab9aa1c168ca26162458ffa2a85ee9878", null ],
     [ "MTOSTK_MAX_TEMP_ARRAY_SIZE", "meteo__stick__calib_8h.html#a5a5b4608f0c18d4779b2dd69376dd41d", null ],
     [ "UUID_LEN", "meteo__stick__calib_8h.html#a9692a0205a857ed2cc29558470c2ed77", null ],
-    [ "mtostk_time_t", "meteo__stick__calib_8h.html#a690ff8701b3246c2f86ad9eda4a11b7e", null ],
+    [ "mtostk_time_t", "meteo__stick__calib_8h.html#a611fcafec2cba779584f974903d6a320", null ],
     [ "Mtostk_sensors", "meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2", [
       [ "MTOSTK_TEMP", "meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2a63eedfe1d471708f0873f15f357c1f2f", null ],
       [ "MTOSTK_ABS_PRESS", "meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2ad4f370fddef9a06ddc204208c8b3a9cd", null ],

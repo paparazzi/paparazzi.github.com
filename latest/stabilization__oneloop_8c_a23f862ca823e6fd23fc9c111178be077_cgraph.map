@@ -1,38 +1,38 @@
 <map id="stabilization_attitude_enter" name="stabilization_attitude_enter">
-<area shape="rect" id="Node000001" title="Attitude control enter function." alt="" coords="5,236,165,276"/>
-<area shape="rect" id="Node000002" href="$oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="213,243,364,269"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,253,199,253,199,259,165,259"/>
-<area shape="rect" id="Node000003" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="417,293,562,318"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,266,424,287,423,292,340,271"/>
-<area shape="rect" id="Node000005" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="431,70,548,95"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="303,241,462,102,465,106,307,245"/>
-<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html#a70e849998890733c853538f89ae95e83" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="412,218,567,243"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="364,244,398,239,399,245,365,249"/>
-<area shape="rect" id="Node000014" href="$oneloop__andi_8c.html#a1756435ff466ef57233fd3f31cd965cc" title="Re&#45;Init function of controller variables." alt="" coords="427,369,552,394"/>
-<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="312,266,458,359,455,363,309,271"/>
-<area shape="rect" id="Node000004" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="900,193,1040,218"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="554,315,617,323,692,327,772,321,811,314,848,303,878,288,906,268,948,227,952,230,909,272,881,293,850,308,812,319,772,327,692,332,617,329,553,321"/>
-<area shape="rect" id="Node000006" href="$oneloop__andi_8c.html#a5d45cafd5ad69a61220650cd5fc224f5" title=" " alt="" coords="615,70,849,95"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="548,80,601,80,601,85,548,85"/>
-<area shape="rect" id="Node000007" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="655,5,809,45"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="543,67,640,44,642,49,545,73"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="820,93,850,104,879,121,906,141,949,180,946,184,903,145,877,125,848,109,818,98"/>
-<area shape="rect" id="Node000008" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="897,13,1043,38"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="810,23,883,23,883,28,810,28"/>
-<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="683,119,781,145"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="506,216,553,184,614,154,669,138,670,143,616,158,556,189,509,220"/>
-<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="683,169,781,194"/>
-<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="552,215,669,191,670,196,553,221"/>
-<area shape="rect" id="Node000012" href="$oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="683,218,781,243"/>
-<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="567,228,669,228,669,233,567,233"/>
-<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="689,267,775,293"/>
-<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="553,241,676,266,675,271,552,246"/>
-<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="781,137,850,153,930,184,928,189,849,159,780,142"/>
-<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="781,184,886,194,886,200,781,189"/>
-<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="781,223,886,212,887,217,781,228"/>
-<area shape="poly" id="edge17_Node000013_Node000004" title=" " alt="" coords="775,270,849,252,928,221,930,226,850,257,776,275"/>
-<area shape="rect" id="Node000015" href="$group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="670,418,794,443"/>
-<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="553,391,657,413,656,418,552,397"/>
-<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="671,369,793,394"/>
-<area shape="poly" id="edge20_Node000014_Node000016" title=" " alt="" coords="552,379,658,379,658,384,552,384"/>
+<area shape="rect" id="Node000001" title="Attitude control enter function." alt="" coords="5,272,165,317"/>
+<area shape="rect" id="Node000002" href="$oneloop__andi_8c.html#a1a8efaa4745d7aef6b89e29643f43718" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="213,280,362,308"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,292,199,293,195,296,166,297"/>
+<area shape="rect" id="Node000003" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics." alt="" coords="414,306,559,334"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,301,402,308,397,309,363,306"/>
+<area shape="rect" id="Node000005" href="$oneloop__andi_8c.html#ac3969dbcdeb9fe76df9c31862734779e" title="Function that samples and scales the effectiveness matrix FIXME: make this function into a for loop t..." alt="" coords="428,74,545,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="300,278,459,114,464,112,304,282"/>
+<area shape="rect" id="Node000009" href="$oneloop__andi_8c.html#a70e849998890733c853538f89ae95e83" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="410,230,563,258"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="344,277,417,261,412,263,345,282"/>
+<area shape="rect" id="Node000014" href="$oneloop__andi_8c.html#a1756435ff466ef57233fd3f31cd965cc" title="Re&#45;Init function of controller variables." alt="" coords="424,383,549,411"/>
+<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="317,306,447,375,442,376,316,311"/>
+<area shape="rect" id="Node000004" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="896,203,1036,231"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="558,331,621,340,694,343,771,337,808,330,845,319,874,304,901,284,942,244,947,242,904,288,877,308,847,323,810,335,771,342,694,348,620,345,558,337"/>
+<area shape="rect" id="Node000006" href="$oneloop__andi_8c.html#a5d45cafd5ad69a61220650cd5fc224f5" title=" " alt="" coords="611,74,846,102"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="545,85,598,87,593,89,546,90"/>
+<area shape="rect" id="Node000007" href="$rotwing__state_8c.html#a193394bc5b357951cc100d7c10f252be" title=" " alt="" coords="651,5,806,50"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="544,71,639,49,634,52,546,76"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="814,99,847,112,875,129,901,149,945,192,939,191,898,153,872,133,844,117,814,105"/>
+<area shape="rect" id="Node000008" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="894,14,1038,42"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="805,25,880,27,875,28,807,30"/>
+<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="680,126,777,154"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="505,227,551,195,610,164,668,149,663,151,612,169,554,200,508,232"/>
+<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="680,178,777,206"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="554,227,667,204,662,206,555,232"/>
+<area shape="rect" id="Node000012" href="$oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="680,230,777,258"/>
+<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="563,241,667,243,662,244,564,246"/>
+<area shape="rect" id="Node000013" href="$oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="686,282,771,310"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="555,255,674,283,668,284,555,261"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="777,146,846,164,924,196,918,196,845,169,777,151"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="777,194,883,208,878,208,778,199"/>
+<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="777,236,883,226,878,227,778,241"/>
+<area shape="poly" id="edge17_Node000013_Node000004" title=" " alt="" coords="770,286,845,266,919,239,925,237,847,272,772,291"/>
+<area shape="rect" id="Node000015" href="$group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="667,435,790,463"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="549,408,654,433,649,432,549,413"/>
+<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="668,383,789,411"/>
+<area shape="poly" id="edge20_Node000014_Node000016" title=" " alt="" coords="549,394,656,397,650,397,549,400"/>
 </map>

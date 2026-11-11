@@ -1,43 +1,48 @@
 <map id="nps_fdm_run_step" name="nps_fdm_run_step">
-<area shape="rect" id="Node000001" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="5,653,147,679"/>
-<area shape="rect" id="Node000002" href="$nps__fdm__gz_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Fill the fdm struct from the gz state." alt="" coords="197,301,302,327"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,652,234,338,238,340,86,654"/>
-<area shape="rect" id="Node000017" href="$nps__fdm__gz_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe" title="Compute the motor thrusts and torques from the normalized commands [0, 1], with NPS_ACTUATOR_THRUSTS ..." alt="" coords="195,653,304,679"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="147,663,181,663,181,669,147,669"/>
-<area shape="rect" id="Node000020" href="$nps__fdm__gz_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Start an embedded gz&#45;sim server." alt="" coords="201,707,298,732"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="119,676,195,700,194,705,117,681"/>
-<area shape="rect" id="Node000003" href="$group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47" title=" " alt="" coords="352,5,521,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,301,255,252,271,182,284,144,301,106,323,71,350,40,355,36,358,40,354,44,327,74,306,109,289,146,276,183,260,253,254,301"/>
-<area shape="rect" id="Node000004" href="$group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08" title=" " alt="" coords="359,55,515,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="250,301,259,260,277,203,306,142,326,114,350,89,356,85,359,89,354,93,331,117,311,145,282,205,264,261,255,302"/>
-<area shape="rect" id="Node000006" href="$group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title=" " alt="" coords="361,104,512,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,300,264,268,284,224,312,178,350,139,358,133,361,138,354,143,316,181,288,227,268,270,257,302"/>
-<area shape="rect" id="Node000008" href="$nps__fdm__gz_8cpp.html#ad2daf16e1fec3dc3a8c1e9199dad25ce" title="NED to FRD euler angles from the ENU to FLU attitude." alt="" coords="365,153,509,179"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="255,300,291,246,318,215,350,188,361,182,364,186,354,192,322,218,295,249,260,303"/>
-<area shape="rect" id="Node000009" href="$nps__fdm__gz_8cpp.html#aec2b8be7c3b2252e80da19aaf13a4cd7" title=" " alt="" coords="395,203,478,228"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="263,299,301,268,351,237,381,225,383,230,353,242,304,272,266,303"/>
-<area shape="rect" id="Node000010" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="377,252,496,277"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="298,299,374,278,375,284,299,304"/>
-<area shape="rect" id="Node000011" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="383,301,491,327"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="302,311,369,311,369,317,302,317"/>
-<area shape="rect" id="Node000012" href="$nps__fdm__gz_8cpp.html#ab63fa2f9b8fff030e761e5e7a655f98d" title=" " alt="" coords="385,351,489,376"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="299,324,375,344,374,350,298,329"/>
-<area shape="rect" id="Node000013" href="$nps__fdm__gz_8cpp.html#adc5006d368e53a7b8b5cc143ea55b544" title=" " alt="" coords="388,400,485,425"/>
-<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="267,325,305,355,353,385,376,394,374,399,351,390,302,359,264,329"/>
-<area shape="rect" id="Node000014" href="$group__math__isa.html#ga2637c638b53cdee6290f333ad8782fa5" title="Get pressure in Pa from height (using simplified equation)." alt="" coords="357,450,516,490"/>
-<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="260,325,297,378,323,408,354,435,364,441,361,446,350,439,319,412,292,381,256,328"/>
-<area shape="rect" id="Node000015" href="$nps__fdm__gz_8cpp.html#a9f19c6cb3b1a7dc1b7e04347ca646c48" title=" " alt="" coords="375,515,498,540"/>
-<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="256,326,267,361,286,408,315,457,333,480,354,500,364,507,361,512,350,504,329,484,311,460,282,410,262,362,251,327"/>
-<area shape="rect" id="Node000016" href="$nps__fdm__gz_8cpp.html#a1b24c6de9f21ba3c101ad3a190adf494" title=" " alt="" coords="371,564,503,589"/>
-<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="255,327,263,369,280,429,310,494,330,523,354,549,361,555,358,559,350,553,326,527,305,496,275,431,258,371,250,327"/>
-<area shape="rect" id="Node000005" href="$group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="569,55,725,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="515,65,556,65,556,70,515,70"/>
-<area shape="rect" id="Node000007" href="$group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="572,104,723,129"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="513,114,558,114,558,119,513,119"/>
-<area shape="rect" id="Node000018" href="$high__pass__filter_8h.html#acad4e38ef946a0babc9d3abc91a79086" title="Update first order high pass filter state with a new value." alt="" coords="367,614,507,654"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="304,654,353,646,354,651,305,659"/>
-<area shape="rect" id="Node000019" href="$low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="367,678,507,718"/>
-<area shape="poly" id="edge18_Node000017_Node000019" title=" " alt="" coords="305,673,354,681,353,686,304,678"/>
-<area shape="rect" id="Node000021" href="$nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="412,743,461,768"/>
-<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="299,726,399,746,398,751,298,731"/>
+<area shape="rect" id="Node000001" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="5,808,146,836"/>
+<area shape="rect" id="Node000002" href="$nps__fdm__gz_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Fill the fdm struct from the gz state." alt="" coords="196,365,300,393"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,807,233,407,238,408,85,809"/>
+<area shape="rect" id="Node000017" href="$nps__fdm__gz_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe" title="Compute the motor thrusts and torques from the normalized commands [0, 1], with NPS_ACTUATOR_THRUSTS ..." alt="" coords="194,808,302,836"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="146,819,181,821,176,823,147,824"/>
+<area shape="rect" id="Node000020" href="$nps__fdm__gz_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Start an embedded gz&#45;sim server." alt="" coords="200,864,296,892"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="121,834,191,858,186,860,120,839"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47" title=" " alt="" coords="350,5,518,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="246,364,249,306,263,221,275,174,293,127,317,83,348,44,356,40,353,44,352,48,322,86,298,129,280,175,268,222,255,307,252,365"/>
+<area shape="rect" id="Node000004" href="$group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08" title=" " alt="" coords="356,57,512,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="247,365,253,315,269,243,282,203,299,165,321,128,348,96,357,91,353,96,352,100,325,131,304,167,287,205,274,244,258,316,253,366"/>
+<area shape="rect" id="Node000006" href="$group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title=" " alt="" coords="359,109,509,137"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="249,364,257,322,275,264,305,202,325,173,348,148,358,143,354,147,352,152,329,177,309,205,280,266,263,324,254,366"/>
+<area shape="rect" id="Node000008" href="$nps__fdm__gz_8cpp.html#ad2daf16e1fec3dc3a8c1e9199dad25ce" title="NED to FRD euler angles from the ENU to FLU attitude." alt="" coords="362,185,506,213"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="252,364,286,297,314,258,348,224,360,218,356,222,352,228,318,261,290,300,257,366"/>
+<area shape="rect" id="Node000009" href="$nps__fdm__gz_8cpp.html#aec2b8be7c3b2252e80da19aaf13a4cd7" title=" " alt="" coords="393,261,475,289"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="262,363,300,331,349,299,380,288,376,292,351,304,303,336,266,366"/>
+<area shape="rect" id="Node000010" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title=" " alt="" coords="375,313,493,341"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="299,363,370,344,366,347,302,367"/>
+<area shape="rect" id="Node000011" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="380,365,488,393"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="299,377,367,378,363,381,302,382"/>
+<area shape="rect" id="Node000012" href="$nps__fdm__gz_8cpp.html#ab63fa2f9b8fff030e761e5e7a655f98d" title=" " alt="" coords="382,417,486,445"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="300,391,370,412,365,414,301,396"/>
+<area shape="rect" id="Node000013" href="$nps__fdm__gz_8cpp.html#adc5006d368e53a7b8b5cc143ea55b544" title=" " alt="" coords="386,493,482,521"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="266,391,352,454,397,484,392,486,348,459,267,396"/>
+<area shape="rect" id="Node000014" href="$group__math__isa.html#ga2637c638b53cdee6290f333ad8782fa5" title="Get pressure in Pa from height (using simplified equation)." alt="" coords="355,545,513,590"/>
+<area shape="poly" id="edge16_Node000002_Node000014" title=" " alt="" coords="255,391,292,458,319,496,352,531,357,536,352,536,348,534,315,500,287,460,255,396"/>
+<area shape="rect" id="Node000015" href="$nps__fdm__gz_8cpp.html#a9f19c6cb3b1a7dc1b7e04347ca646c48" title=" " alt="" coords="373,637,495,665"/>
+<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="253,391,266,432,285,486,314,546,352,600,388,630,383,630,348,604,309,548,280,488,261,433,252,396"/>
+<area shape="rect" id="Node000016" href="$nps__fdm__gz_8cpp.html#a1b24c6de9f21ba3c101ad3a190adf494" title=" " alt="" coords="368,713,500,741"/>
+<area shape="poly" id="edge19_Node000002_Node000016" title=" " alt="" coords="251,391,261,443,277,517,307,599,327,639,352,675,368,691,388,706,382,706,365,695,348,678,323,641,302,601,272,519,255,444,250,396"/>
+<area shape="rect" id="Node000005" href="$group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="566,57,722,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="511,69,553,70,548,73,513,74"/>
+<area shape="rect" id="Node000007" href="$group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="569,109,719,137"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="509,121,556,122,551,125,511,126"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="401,185,397,176,401,167,414,161,434,159,456,161,470,169,464,171,455,166,434,164,415,166,405,171,402,176,407,185"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="401,261,397,252,401,243,414,237,434,235,456,237,470,245,464,247,455,242,434,240,415,242,405,247,402,252,407,261"/>
+<area shape="poly" id="edge15_Node000013_Node000013" title=" " alt="" coords="401,493,397,484,401,475,414,469,434,467,456,469,470,478,464,478,455,474,434,472,415,474,405,479,402,484,407,493"/>
+<area shape="poly" id="edge18_Node000015_Node000015" title=" " alt="" coords="402,636,397,628,401,619,414,613,434,611,456,613,470,622,464,622,455,618,434,616,415,618,405,623,402,628,407,637"/>
+<area shape="poly" id="edge20_Node000016_Node000016" title=" " alt="" coords="402,712,397,704,401,695,414,689,434,687,456,689,470,698,464,698,455,694,434,692,415,694,405,699,402,704,407,713"/>
+<area shape="rect" id="Node000018" href="$high__pass__filter_8h.html#acad4e38ef946a0babc9d3abc91a79086" title="Update first order high pass filter state with a new value." alt="" coords="364,765,504,810"/>
+<area shape="poly" id="edge22_Node000017_Node000018" title=" " alt="" coords="302,809,352,802,346,804,303,814"/>
+<area shape="rect" id="Node000019" href="$low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="364,834,504,879"/>
+<area shape="poly" id="edge23_Node000017_Node000019" title=" " alt="" coords="302,829,352,840,346,841,302,835"/>
+<area shape="rect" id="Node000021" href="$nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="410,903,458,930"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="297,885,398,908,392,909,296,890"/>
 </map>

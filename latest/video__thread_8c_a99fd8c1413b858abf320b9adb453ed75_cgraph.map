@@ -1,40 +1,42 @@
 <map id="video_thread_function" name="video_thread_function">
-<area shape="rect" id="Node000001" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="5,307,172,332"/>
-<area shape="rect" id="Node000002" href="$bayer_8h.html#aa185d6df7ebc24958d83dc19ed8c13e2" title="Decode Bayer Pattern." alt="" coords="241,5,342,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,306,101,256,125,185,142,146,163,108,188,72,218,40,227,34,230,38,222,44,193,75,168,111,147,149,130,187,107,258,95,307"/>
-<area shape="rect" id="Node000003" href="$libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title=" " alt="" coords="237,55,345,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="92,306,107,266,134,211,171,151,193,123,218,97,237,84,240,88,222,101,197,126,175,154,139,214,112,269,97,308"/>
-<area shape="rect" id="Node000006" href="$cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title=" " alt="" coords="234,205,349,231"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="112,304,219,248,248,234,250,239,221,252,114,309"/>
-<area shape="rect" id="Node000009" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="641,131,752,156"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="97,305,145,249,180,217,219,190,270,166,324,149,380,137,436,130,541,126,628,132,627,137,541,132,436,135,381,142,325,154,272,171,221,195,183,222,149,253,102,308"/>
-<area shape="rect" id="Node000010" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image." alt="" coords="649,256,745,281"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="146,304,220,291,334,280,449,273,635,267,635,272,449,278,335,285,220,297,146,309"/>
-<area shape="rect" id="Node000012" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="623,480,770,505"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="95,331,108,374,131,433,148,464,169,493,193,519,221,540,277,563,337,574,398,576,459,569,518,557,571,541,655,509,657,514,573,546,519,562,460,574,398,581,336,580,276,568,219,544,189,523,164,496,144,467,127,435,102,376,90,333"/>
-<area shape="rect" id="Node000013" href="$rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title=" " alt="" coords="234,356,349,381"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="142,329,226,350,225,355,141,335"/>
-<area shape="rect" id="Node000014" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="226,405,357,431"/>
-<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="112,330,161,359,221,390,240,398,238,403,219,395,158,364,109,334"/>
-<area shape="rect" id="Node000015" href="$v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image,..." alt="" coords="226,455,357,480"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="102,330,151,383,184,413,221,440,235,447,232,452,219,444,181,417,147,386,99,334"/>
-<area shape="rect" id="Node000016" href="$v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="228,504,355,529"/>
-<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="99,331,116,363,143,406,179,451,222,491,230,496,227,500,218,495,175,455,139,409,111,366,94,334"/>
-<area shape="rect" id="Node000017" href="$v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe)" alt="" coords="220,307,363,332"/>
-<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="173,317,206,317,206,322,173,322"/>
-<area shape="rect" id="Node000004" href="$libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp." alt="" coords="438,55,538,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="346,65,424,65,424,70,346,70"/>
-<area shape="rect" id="Node000005" href="$libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp." alt="" coords="613,55,780,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="538,65,599,65,599,70,538,70"/>
-<area shape="rect" id="Node000007" href="$cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title=" " alt="" coords="417,205,559,231"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="349,215,403,215,403,221,349,221"/>
-<area shape="rect" id="Node000011" href="$cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title=" " alt="" coords="438,156,538,181"/>
-<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="342,203,424,182,425,187,343,208"/>
-<area shape="rect" id="Node000008" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same." alt="" coords="646,205,747,231"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="560,215,632,215,632,221,560,221"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="528,203,564,190,649,159,651,164,566,195,529,208"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="542,228,636,251,635,257,541,233"/>
-<area shape="rect" id="Node000018" href="$v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="411,405,565,431"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="336,330,364,341,414,368,458,395,455,400,412,372,362,346,334,335"/>
-<area shape="poly" id="edge20_Node000018_Node000012" title=" " alt="" coords="526,428,649,473,647,478,524,433"/>
+<area shape="rect" id="Node000001" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="5,313,172,341"/>
+<area shape="rect" id="Node000002" href="$bayer_8h.html#aa185d6df7ebc24958d83dc19ed8c13e2" title="Decode Bayer Pattern." alt="" coords="241,5,341,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,312,108,268,134,206,171,136,218,69,254,40,251,44,222,73,176,138,139,208,113,270,97,314"/>
+<area shape="rect" id="Node000004" href="$libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title=" " alt="" coords="237,83,344,110"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="96,312,144,238,179,192,218,148,257,118,254,122,222,152,183,195,148,241,101,314"/>
+<area shape="rect" id="Node000007" href="$cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title=" " alt="" coords="234,161,348,189"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="100,311,149,261,182,232,218,205,241,194,237,198,221,209,186,236,153,265,104,315"/>
+<area shape="rect" id="Node000010" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="640,185,751,213"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="131,311,219,285,441,238,628,208,623,211,442,243,220,290,134,315"/>
+<area shape="rect" id="Node000011" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image." alt="" coords="648,251,743,278"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="171,315,219,310,634,268,631,273,220,315,173,320"/>
+<area shape="rect" id="Node000013" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="623,327,768,354"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="172,326,609,336,606,341,172,332"/>
+<area shape="rect" id="Node000014" href="$rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title=" " alt="" coords="234,416,348,444"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="111,339,162,369,221,401,237,409,232,410,218,406,159,374,112,344"/>
+<area shape="rect" id="Node000015" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="226,468,356,496"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="101,339,151,394,184,425,221,453,232,461,227,461,218,457,181,429,147,398,101,344"/>
+<area shape="rect" id="Node000016" href="$v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image,..." alt="" coords="226,520,356,548"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="97,339,116,374,143,418,179,464,221,505,230,512,224,512,218,509,175,468,139,421,112,376,96,344"/>
+<area shape="rect" id="Node000017" href="$v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="228,572,354,600"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="94,339,111,382,136,440,173,503,196,532,221,557,228,565,223,563,218,561,192,535,169,506,132,443,106,384,94,344"/>
+<area shape="rect" id="Node000018" href="$v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe)." alt="" coords="220,364,362,392"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="146,339,220,358,216,361,147,344"/>
+<area shape="rect" id="Node000003" href="$UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="468,5,506,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,17,454,18,450,21,343,22"/>
+<area shape="rect" id="Node000005" href="$libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp." alt="" coords="438,57,537,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="344,87,424,78,420,81,346,92"/>
+<area shape="rect" id="Node000006" href="$libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp." alt="" coords="612,57,779,85"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="536,69,599,70,595,72,538,74"/>
+<area shape="rect" id="Node000008" href="$cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title=" " alt="" coords="416,109,558,137"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="345,158,420,140,415,143,347,163"/>
+<area shape="rect" id="Node000012" href="$cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title=" " alt="" coords="438,161,537,189"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="347,173,424,174,420,176,349,178"/>
+<area shape="rect" id="Node000009" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same." alt="" coords="645,109,746,137"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="557,121,632,122,627,124,559,126"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="530,135,565,147,645,179,640,180,563,152,531,140"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="543,135,566,148,583,167,591,185,599,204,614,223,643,244,638,244,611,226,594,207,586,188,579,170,563,152,544,140"/>
+<area shape="rect" id="Node000019" href="$v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="410,364,564,392"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="362,375,397,377,392,379,363,380"/>
+<area shape="poly" id="edge21_Node000019_Node000013" title=" " alt="" coords="564,361,610,355,605,357,565,367"/>
 </map>

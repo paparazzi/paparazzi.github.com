@@ -1,6 +1,9 @@
 var sim_2modules_2core_2threads__arch_8c =
 [
-    [ "stub_arg", "structstub__arg.html", "structstub__arg" ],
+    [ "stub_arg", "sim_2modules_2core_2threads__arch_8c.html#structstub__arg", [
+      [ "arg", "sim_2modules_2core_2threads__arch_8c.html#ae0d3a7352bf2da42a851d82dc4f34dcd", null ],
+      [ "func", "sim_2modules_2core_2threads__arch_8c.html#a01009d9813dcff5156d19b4a078038a1", null ]
+    ] ],
     [ "pprz_bsem_init", "sim_2modules_2core_2threads__arch_8c.html#a6aceb5010e37cdd610576491f6dc4937", null ],
     [ "pprz_bsem_signal", "sim_2modules_2core_2threads__arch_8c.html#adac5ca0ee18e60e92d4dfff06ed3fca2", null ],
     [ "pprz_bsem_wait", "sim_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567", null ],

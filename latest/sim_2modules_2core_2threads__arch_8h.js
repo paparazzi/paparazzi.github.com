@@ -10,6 +10,5 @@ var sim_2modules_2core_2threads__arch_8h =
       [ "sem", "sim_2modules_2core_2threads__arch_8h.html#a58355c5866ef6538c5c086fd650f9802", null ]
     ] ],
     [ "PPRZ_NORMAL_PRIO", "sim_2modules_2core_2threads__arch_8h.html#a5f1464e2a0b7ea07882573ddbc9b3418", null ],
-    [ "THREADS_ATTRIBUTES", "sim_2modules_2core_2threads__arch_8h.html#ad01596ab85fed26b3a00ae8882a7e21b", null ],
-    [ "pprz_thread_t", "sim_2modules_2core_2threads__arch_8h.html#af924da8457e8503f00a27cb7102624e1", null ]
+    [ "THREADS_ATTRIBUTES", "sim_2modules_2core_2threads__arch_8h.html#ad01596ab85fed26b3a00ae8882a7e21b", null ]
 ];

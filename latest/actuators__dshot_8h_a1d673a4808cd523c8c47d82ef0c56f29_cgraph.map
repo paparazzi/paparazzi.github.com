@@ -1,78 +1,80 @@
 <map id="actuators_dshot_arch_init" name="actuators_dshot_arch_init">
-<area shape="rect" id="Node000001" title="Arch dependent init." alt="" coords="5,257,195,283"/>
-<area shape="rect" id="Node000002" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa" title=" " alt="" coords="279,84,409,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,256,158,190,197,151,241,118,264,108,266,113,244,123,200,155,162,193,112,259"/>
-<area shape="rect" id="Node000003" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aad0c5b9f4cd9c07eef68c312b0d28c86" title=" " alt="" coords="279,133,409,159"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,255,167,212,203,188,242,168,265,159,267,164,244,172,206,193,171,216,117,259"/>
-<area shape="rect" id="Node000004" href="$esc__dshot_8c.html#a016263bbfd016452191cd9e4e345b1dc" title="Configures and activates the DSHOT peripheral." alt="" coords="299,183,389,208"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,255,242,217,285,205,287,210,243,222,134,260"/>
-<area shape="rect" id="Node000033" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#acfc5421a5091a1933410c3e63bc765a5" title=" " alt="" coords="285,232,403,257"/>
-<area shape="poly" id="edge35_Node000001_Node000033" title=" " alt="" coords="195,258,271,249,272,255,195,263"/>
-<area shape="rect" id="Node000034" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1" title="Setup a gpio for input or output with alternate function." alt="" coords="274,281,414,307"/>
-<area shape="poly" id="edge36_Node000001_Node000034" title=" " alt="" coords="195,277,261,283,260,288,195,282"/>
-<area shape="rect" id="Node000035" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9" title="Setup a gpio for input pullup with alternate function." alt="" coords="251,331,437,356"/>
-<area shape="poly" id="edge37_Node000001_Node000035" title=" " alt="" coords="137,280,243,315,277,325,275,330,242,321,136,285"/>
-<area shape="rect" id="Node000036" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="268,380,420,405"/>
-<area shape="poly" id="edge38_Node000001_Node000036" title=" " alt="" coords="118,281,171,323,206,346,244,366,262,373,260,378,242,371,204,351,168,327,114,285"/>
-<area shape="rect" id="Node000037" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="243,429,445,455"/>
-<area shape="poly" id="edge39_Node000001_Node000037" title=" " alt="" coords="112,281,163,346,200,384,244,416,257,422,254,427,241,420,197,388,159,350,108,285"/>
-<area shape="rect" id="Node000005" href="$hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c" title=" " alt="" coords="900,29,1015,55"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="388,188,417,181,444,168,459,153,467,138,475,121,492,106,541,82,593,64,647,51,700,41,802,33,886,34,886,39,802,39,701,47,648,56,594,69,543,87,495,111,479,125,471,140,463,156,447,172,419,186,389,193"/>
-<area shape="rect" id="Node000006" href="$hal__stm32__dma_8c.html#ad255236c42982a3368342bbfeee0c783" title="Configures and activates the DMA peripheral." alt="" coords="916,79,999,104"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="388,184,444,168,468,154,492,142,605,115,718,99,821,91,902,88,902,94,822,96,719,104,606,120,494,147,470,159,446,172,390,189"/>
-<area shape="rect" id="Node000015" href="$dshot__rpmCapture_8c.html#a443d38d898c711c618e5181b92e4d3b7" title="Configures and activates the DSHOT ERPS CAPTURE driver." alt="" coords="493,157,664,183"/>
-<area shape="poly" id="edge15_Node000004_Node000015" title=" " alt="" coords="389,188,479,178,480,183,389,193"/>
-<area shape="rect" id="Node000027" href="$esc__dshot_8c.html#ab33d9ca67899cf25bb7306d076b6e0fa" title=" " alt="" coords="525,207,632,232"/>
-<area shape="poly" id="edge29_Node000004_Node000027" title=" " alt="" coords="389,197,512,210,511,215,389,203"/>
-<area shape="rect" id="Node000030" href="$esc__dshot_8c.html#a07f476e006400858ea955505b6db7557" title=" " alt="" coords="519,256,638,281"/>
-<area shape="poly" id="edge32_Node000004_Node000030" title=" " alt="" coords="390,201,446,217,471,229,494,241,518,249,517,254,492,246,468,233,444,222,388,206"/>
-<area shape="rect" id="Node000031" href="$esc__dshot_8c.html#ad6b10d799e249f91b8d9bec6bd4cf0ec" title=" " alt="" coords="509,305,648,331"/>
-<area shape="poly" id="edge33_Node000004_Node000031" title=" " alt="" coords="390,196,419,203,447,217,464,236,472,255,479,273,495,291,506,297,503,302,492,295,475,276,467,257,460,238,444,221,417,208,388,201"/>
-<area shape="rect" id="Node000007" href="$hal__stm32__dma_8c.html#a314dc8ae166424fb13a9961a6c88263e" title="Configures and activates the DMA peripheral." alt="" coords="1098,79,1209,104"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="999,89,1084,89,1084,94,999,94"/>
-<area shape="rect" id="Node000008" href="$hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine." alt="" coords="1263,79,1443,104"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1209,89,1249,89,1249,94,1209,94"/>
-<area shape="rect" id="Node000009" href="$hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event." alt="" coords="1537,5,1694,31"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1384,76,1490,39,1525,31,1526,36,1491,45,1386,81"/>
-<area shape="rect" id="Node000011" href="$hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event." alt="" coords="1542,55,1689,80"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1443,80,1528,73,1528,78,1443,86"/>
-<area shape="rect" id="Node000013" href="$hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event." alt="" coords="1540,104,1691,129"/>
-<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="1443,97,1527,105,1526,111,1442,103"/>
-<area shape="rect" id="Node000014" href="$hal__stm32__dma_8c.html#a8b001b838d393609f358cdaeff7c6bb2" title=" " alt="" coords="1491,153,1740,179"/>
-<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="1409,102,1444,113,1468,126,1492,138,1522,147,1521,153,1490,143,1465,131,1442,118,1408,107"/>
-<area shape="rect" id="Node000010" href="$hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction." alt="" coords="1796,5,1968,31"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1694,15,1782,15,1782,21,1694,21"/>
-<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="1684,52,1799,31,1800,36,1685,57"/>
-<area shape="rect" id="Node000012" href="$hal__stm32__dma_8h.html#a220f761839ecd74b6f8257a04bda34b1" title=" " alt="" coords="1788,55,1976,95"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1689,67,1774,69,1774,75,1689,72"/>
-<area shape="rect" id="Node000016" href="$dshot__rpmCapture_8c.html#ae279484642a238915d35c1370bbfe47d" title="build dma and timer registers cache" alt="" coords="726,169,809,195"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="664,173,712,176,712,181,664,178"/>
-<area shape="poly" id="edge19_Node000016_Node000005" title=" " alt="" coords="774,167,811,117,838,88,869,64,886,55,888,60,872,68,841,92,815,120,779,171"/>
-<area shape="poly" id="edge20_Node000016_Node000006" title=" " alt="" coords="783,167,821,140,870,113,902,101,904,106,872,118,824,145,786,171"/>
-<area shape="rect" id="Node000017" href="$dshot__rpmCapture_8c.html#a3e3f18c4bd1e9762049acb037c321d24" title="build dma configuration structure" alt="" coords="894,325,1021,351"/>
-<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="795,193,825,216,841,242,847,266,855,289,872,311,883,318,880,322,869,315,850,291,842,268,836,244,821,220,792,197"/>
-<area shape="rect" id="Node000019" href="$dshot__rpmCapture_8c.html#ac178c957f873e5d949cce08921ce8490" title="stop the the DSHOT ERPS CAPTURE driver." alt="" coords="873,128,1041,153"/>
-<area shape="poly" id="edge21_Node000016_Node000019" title=" " alt="" coords="808,171,885,154,886,159,809,176"/>
-<area shape="rect" id="Node000023" href="$timerDmaCache_8c.html#a890ed458e01c434cb7944ba2e12d16cc" title=" " alt="" coords="871,177,1044,203"/>
-<area shape="poly" id="edge25_Node000016_Node000023" title=" " alt="" coords="809,181,857,183,857,188,809,186"/>
-<area shape="rect" id="Node000024" href="$input__capture__arch_8c.html#a16eefa9a6dbd30560e5f63a1ffb39a2a" title="Initializes an input capture driver." alt="" coords="898,227,1017,252"/>
-<area shape="poly" id="edge26_Node000016_Node000024" title=" " alt="" coords="810,192,871,211,900,220,899,225,870,217,808,197"/>
-<area shape="rect" id="Node000025" href="$input__capture__arch_8c.html#a453d5d32bb5964f53b55c03fd461ec67" title="start an input capture driver" alt="" coords="914,276,1001,301"/>
-<area shape="poly" id="edge27_Node000016_Node000025" title=" " alt="" coords="791,193,824,216,848,240,857,251,872,261,902,274,900,279,869,266,854,255,844,244,821,220,788,197"/>
-<area shape="rect" id="Node000018" href="$dshot__rpmCapture_8c.html#a4d3792f496bfa66a873a965b9bdf030d" title="dma error ISR :" alt="" coords="1110,325,1197,351"/>
-<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="1021,335,1096,335,1096,341,1021,341"/>
-<area shape="rect" id="Node000020" href="$dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022" title="stop the DMA capture" alt="" coords="1103,128,1204,153"/>
-<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1042,138,1089,138,1089,143,1042,143"/>
-<area shape="rect" id="Node000021" href="$input__capture__arch_8c.html#a9d2e93c6aede9747fa79ef150d1e314c" title=" " alt="" coords="1289,177,1416,203"/>
-<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="1205,151,1288,171,1287,177,1204,156"/>
-<area shape="rect" id="Node000022" href="$input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190" title="stop to capture" alt="" coords="1285,128,1420,153"/>
-<area shape="poly" id="edge24_Node000020_Node000022" title=" " alt="" coords="1204,138,1271,138,1271,143,1204,143"/>
-<area shape="rect" id="Node000026" href="$input__capture__arch_8c.html#a3aefdcefd7899f9ed06d0a9941bd9a6e" title=" " alt="" coords="1092,276,1215,301"/>
-<area shape="poly" id="edge28_Node000025_Node000026" title=" " alt="" coords="1001,286,1078,286,1078,291,1001,291"/>
-<area shape="rect" id="Node000028" href="$esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4" title=" " alt="" coords="712,231,823,256"/>
-<area shape="poly" id="edge30_Node000027_Node000028" title=" " alt="" coords="633,223,699,232,698,237,632,229"/>
-<area shape="rect" id="Node000029" href="$esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856" title=" " alt="" coords="909,375,1005,400"/>
-<area shape="poly" id="edge31_Node000028_Node000029" title=" " alt="" coords="787,254,825,291,839,311,847,329,856,345,872,361,897,374,895,379,869,366,852,349,842,332,834,314,821,294,783,258"/>
-<area shape="rect" id="Node000032" href="$esc__dshot_8c.html#a8211d081fff83f1ea24418e8f4f8b7c4" title=" " alt="" coords="732,305,803,331"/>
-<area shape="poly" id="edge34_Node000031_Node000032" title=" " alt="" coords="648,315,718,315,718,321,648,321"/>
+<area shape="rect" id="Node000001" title="Arch dependent init." alt="" coords="5,280,194,308"/>
+<area shape="rect" id="Node000002" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa" title=" " alt="" coords="278,97,407,125"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,278,158,210,196,170,240,136,265,126,261,129,243,140,199,174,162,213,112,281"/>
+<area shape="rect" id="Node000003" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aad0c5b9f4cd9c07eef68c312b0d28c86" title=" " alt="" coords="278,149,406,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,278,168,233,203,209,241,187,265,179,261,183,243,192,206,213,171,238,118,281"/>
+<area shape="rect" id="Node000004" href="$esc__dshot_8c.html#a016263bbfd016452191cd9e4e345b1dc" title="Configures and activates the DSHOT peripheral." alt="" coords="298,201,386,229"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,277,241,239,285,228,281,231,242,244,138,282"/>
+<area shape="rect" id="Node000033" href="$chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#acfc5421a5091a1933410c3e63bc765a5" title=" " alt="" coords="284,253,400,281"/>
+<area shape="poly" id="edge36_Node000001_Node000033" title=" " alt="" coords="193,281,271,274,266,277,195,286"/>
+<area shape="rect" id="Node000034" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1" title="Setup a gpio for input or output with alternate function." alt="" coords="273,305,412,333"/>
+<area shape="poly" id="edge37_Node000001_Node000034" title=" " alt="" coords="193,301,259,309,254,311,195,306"/>
+<area shape="rect" id="Node000035" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9" title="Setup a gpio for input pullup with alternate function." alt="" coords="249,357,436,385"/>
+<area shape="poly" id="edge38_Node000001_Node000035" title=" " alt="" coords="138,306,242,342,272,352,267,353,241,347,138,311"/>
+<area shape="rect" id="Node000036" href="$oneloop__andi_8c.html#ade3b7b0e14ee1f1bbe3cb8c2703cdbaa" title=" " alt="" coords="267,433,418,461"/>
+<area shape="poly" id="edge39_Node000001_Node000036" title=" " alt="" coords="119,305,174,347,243,394,299,426,294,427,240,399,171,352,118,311"/>
+<area shape="rect" id="Node000037" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="242,485,443,513"/>
+<area shape="poly" id="edge41_Node000001_Node000037" title=" " alt="" coords="108,305,129,340,158,385,197,431,243,470,255,479,250,478,240,475,193,435,154,388,124,343,107,311"/>
+<area shape="rect" id="Node000005" href="$hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c" title=" " alt="" coords="895,31,1008,58"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="386,208,415,199,441,186,456,171,464,155,473,139,489,124,538,99,589,79,642,64,695,53,796,42,882,41,877,42,796,47,696,58,643,69,591,84,540,103,493,128,477,142,469,158,461,175,445,191,417,204,388,212"/>
+<area shape="rect" id="Node000006" href="$hal__stm32__dma_8c.html#ad255236c42982a3368342bbfeee0c783" title="Configures and activates the DMA peripheral." alt="" coords="911,83,992,110"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="386,203,442,186,466,174,490,162,601,134,713,114,815,103,898,98,893,100,816,108,714,120,602,139,492,167,468,178,444,191,388,208"/>
+<area shape="rect" id="Node000015" href="$dshot__rpmCapture_8c.html#a443d38d898c711c618e5181b92e4d3b7" title="Configures and activates the DSHOT ERPS CAPTURE driver." alt="" coords="491,176,660,204"/>
+<area shape="poly" id="edge15_Node000004_Node000015" title=" " alt="" coords="386,208,478,200,473,202,388,213"/>
+<area shape="rect" id="Node000027" href="$esc__dshot_8c.html#ab33d9ca67899cf25bb7306d076b6e0fa" title=" " alt="" coords="522,228,629,256"/>
+<area shape="poly" id="edge29_Node000004_Node000027" title=" " alt="" coords="387,218,509,233,504,235,387,223"/>
+<area shape="rect" id="Node000030" href="$esc__dshot_8c.html#a07f476e006400858ea955505b6db7557" title=" " alt="" coords="516,304,635,332"/>
+<area shape="poly" id="edge32_Node000004_Node000030" title=" " alt="" coords="387,222,444,239,541,295,536,296,442,244,387,227"/>
+<area shape="rect" id="Node000031" href="$esc__dshot_8c.html#ad6b10d799e249f91b8d9bec6bd4cf0ec" title=" " alt="" coords="507,356,644,384"/>
+<area shape="poly" id="edge34_Node000004_Node000031" title=" " alt="" coords="387,216,417,224,445,240,457,252,464,266,470,292,476,317,482,329,493,341,500,348,494,347,489,345,478,332,471,319,465,293,459,267,452,256,441,244,415,229,387,221"/>
+<area shape="rect" id="Node000007" href="$hal__stm32__dma_8c.html#a314dc8ae166424fb13a9961a6c88263e" title="Configures and activates the DMA peripheral." alt="" coords="1092,83,1202,110"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="993,94,1079,96,1073,97,993,99"/>
+<area shape="rect" id="Node000008" href="$hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine." alt="" coords="1255,83,1435,110"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1202,94,1242,96,1237,97,1202,99"/>
+<area shape="rect" id="Node000009" href="$hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event." alt="" coords="1529,5,1685,33"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1380,80,1482,43,1519,36,1514,38,1483,48,1381,85"/>
+<area shape="rect" id="Node000011" href="$hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event." alt="" coords="1534,57,1680,85"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1435,85,1521,79,1516,80,1436,90"/>
+<area shape="rect" id="Node000013" href="$hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event." alt="" coords="1532,109,1682,137"/>
+<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="1435,103,1519,114,1513,114,1435,108"/>
+<area shape="rect" id="Node000014" href="$hal__stm32__dma_8c.html#a8b001b838d393609f358cdaeff7c6bb2" title=" " alt="" coords="1483,161,1731,189"/>
+<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="1400,108,1436,121,1460,134,1484,146,1512,157,1507,157,1482,151,1457,139,1434,126,1400,114"/>
+<area shape="rect" id="Node000010" href="$hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction." alt="" coords="1787,5,1958,33"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1685,17,1774,19,1769,20,1686,22"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="1680,54,1786,36,1781,37,1681,59"/>
+<area shape="rect" id="Node000012" href="$hal__stm32__dma_8h.html#a220f761839ecd74b6f8257a04bda34b1" title=" " alt="" coords="1779,57,1966,102"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1680,71,1766,76,1761,76,1681,76"/>
+<area shape="rect" id="Node000016" href="$dshot__rpmCapture_8c.html#ae279484642a238915d35c1370bbfe47d" title="build dma and timer registers cache" alt="" coords="722,183,804,210"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="660,190,709,194,704,195,661,195"/>
+<area shape="poly" id="edge19_Node000016_Node000005" title=" " alt="" coords="770,180,806,127,833,96,864,69,879,64,884,61,867,73,836,99,810,130,774,184"/>
+<area shape="poly" id="edge20_Node000016_Node000006" title=" " alt="" coords="779,180,816,151,864,121,899,110,894,112,867,126,820,155,782,185"/>
+<area shape="rect" id="Node000017" href="$dshot__rpmCapture_8c.html#a3e3f18c4bd1e9762049acb037c321d24" title="build dma configuration structure" alt="" coords="889,343,1014,370"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="780,208,820,252,833,274,841,293,850,311,867,328,877,336,872,335,864,332,846,314,837,296,829,277,816,255,778,213"/>
+<area shape="rect" id="Node000019" href="$dshot__rpmCapture_8c.html#ac178c957f873e5d949cce08921ce8490" title="stop the the DSHOT ERPS CAPTURE driver." alt="" coords="868,135,1036,162"/>
+<area shape="poly" id="edge21_Node000016_Node000019" title=" " alt="" coords="804,184,882,166,877,168,806,189"/>
+<area shape="rect" id="Node000023" href="$timerDmaCache_8c.html#a890ed458e01c434cb7944ba2e12d16cc" title=" " alt="" coords="866,187,1038,214"/>
+<area shape="poly" id="edge25_Node000016_Node000023" title=" " alt="" coords="804,195,852,198,847,199,805,200"/>
+<area shape="rect" id="Node000024" href="$input__capture__arch_8c.html#a16eefa9a6dbd30560e5f63a1ffb39a2a" title="Initializes an input capture driver." alt="" coords="893,239,1010,266"/>
+<area shape="poly" id="edge26_Node000016_Node000024" title=" " alt="" coords="805,206,891,234,886,234,805,211"/>
+<area shape="rect" id="Node000025" href="$input__capture__arch_8c.html#a453d5d32bb5964f53b55c03fd461ec67" title="start an input capture driver" alt="" coords="909,291,994,318"/>
+<area shape="poly" id="edge27_Node000016_Node000025" title=" " alt="" coords="779,208,818,242,867,275,897,290,891,290,864,280,814,246,778,213"/>
+<area shape="rect" id="Node000018" href="$dshot__rpmCapture_8c.html#a4d3792f496bfa66a873a965b9bdf030d" title="dma error ISR :" alt="" coords="1104,343,1189,370"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="1015,354,1091,356,1086,357,1015,359"/>
+<area shape="rect" id="Node000020" href="$dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022" title="stop the DMA capture" alt="" coords="1096,135,1197,162"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1035,146,1084,148,1078,149,1036,151"/>
+<area shape="rect" id="Node000021" href="$input__capture__arch_8c.html#a9d2e93c6aede9747fa79ef150d1e314c" title=" " alt="" coords="1282,187,1408,214"/>
+<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="1197,159,1277,182,1272,182,1197,164"/>
+<area shape="rect" id="Node000022" href="$input__capture__arch_8c.html#a299a2269e958f3c5b22e465ce0ae9190" title="stop to capture" alt="" coords="1278,135,1412,162"/>
+<area shape="poly" id="edge24_Node000020_Node000022" title=" " alt="" coords="1197,146,1265,148,1260,149,1198,151"/>
+<area shape="rect" id="Node000026" href="$input__capture__arch_8c.html#a3aefdcefd7899f9ed06d0a9941bd9a6e" title=" " alt="" coords="1086,291,1207,318"/>
+<area shape="poly" id="edge28_Node000025_Node000026" title=" " alt="" coords="995,302,1073,304,1068,305,995,307"/>
+<area shape="rect" id="Node000028" href="$esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4" title=" " alt="" coords="708,265,818,293"/>
+<area shape="poly" id="edge30_Node000027_Node000028" title=" " alt="" coords="629,250,696,265,690,266,630,255"/>
+<area shape="rect" id="Node000029" href="$esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856" title=" " alt="" coords="904,395,1000,422"/>
+<area shape="poly" id="edge31_Node000028_Node000029" title=" " alt="" coords="776,291,814,335,839,359,867,380,892,394,887,393,864,384,836,363,810,339,774,296"/>
+<area shape="poly" id="edge33_Node000030_Node000030" title=" " alt="" coords="543,303,538,295,542,286,555,279,576,277,598,280,611,289,606,289,596,285,576,283,556,285,546,289,543,295,548,304"/>
+<area shape="rect" id="Node000032" href="$esc__dshot_8c.html#a8211d081fff83f1ea24418e8f4f8b7c4" title=" " alt="" coords="728,356,798,384"/>
+<area shape="poly" id="edge35_Node000031_Node000032" title=" " alt="" coords="644,367,715,370,710,370,645,372"/>
+<area shape="poly" id="edge40_Node000036_Node000036" title=" " alt="" coords="302,432,296,424,301,415,317,409,342,407,370,409,386,418,381,418,368,414,342,412,318,414,305,419,301,424,307,434"/>
 </map>

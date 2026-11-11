@@ -15,7 +15,7 @@ var group__SHELL =
     [ "printScreen", "group__SHELL.html#ga03c0f12705b8e7690a0cffae957848f9", null ],
     [ "SHELL_DYNAMIC_ENTRIES_NUMBER", "group__SHELL.html#gaa1c6cae734c01c8ce97e7f195fce1f38", null ],
     [ "shellCreate", "group__SHELL.html#ga8d74b6341d695eb5f3fa9ab5fd87c1c6", null ],
-    [ "shellcmd_f", "group__SHELL.html#ga3024ef3f263e5db438b7edaae6fadf3a", null ],
+    [ "shellcmd_f", "group__SHELL.html#ga4739f2335a48e71439e589a205bcdf2a", null ],
     [ "cmd_info", "group__SHELL.html#ga8aec65e6e5613559d1ed9f4ea07538a4", null ],
     [ "microrlComplet", "group__SHELL.html#ga40cc2722272937a4dbf7945120153c71", null ],
     [ "microrlExecute", "group__SHELL.html#ga34639e5facd53515fed51d79ba9cff07", null ],

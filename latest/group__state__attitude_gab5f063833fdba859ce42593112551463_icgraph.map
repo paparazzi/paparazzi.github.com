@@ -1,107 +1,113 @@
 <map id="stateGetNedToBodyQuat_f" name="stateGetNedToBodyQuat_f">
-<area shape="rect" id="Node000001" title="Get vehicle body attitude quaternion (float)." alt="" coords="1580,512,1775,537"/>
-<area shape="rect" id="Node000002" href="$guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="1361,5,1515,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1674,498,1670,411,1663,353,1651,289,1633,224,1608,159,1574,98,1530,45,1512,33,1515,29,1534,41,1578,95,1613,156,1638,222,1656,288,1668,352,1675,411,1679,498"/>
-<area shape="rect" id="Node000003" href="$guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="1345,55,1531,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1672,499,1663,423,1641,319,1623,262,1599,207,1568,155,1530,109,1515,98,1518,93,1534,105,1572,152,1604,205,1628,260,1646,317,1669,422,1677,498"/>
-<area shape="rect" id="Node000006" href="$guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="1345,119,1531,159"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1670,499,1658,434,1633,346,1615,300,1592,254,1564,211,1530,173,1514,162,1517,157,1534,169,1568,208,1596,251,1620,298,1638,345,1663,432,1675,498"/>
-<area shape="rect" id="Node000009" href="$jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="1369,184,1507,209"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1669,499,1655,441,1629,366,1610,327,1588,289,1561,253,1530,223,1506,209,1509,205,1534,219,1565,250,1592,286,1615,325,1634,364,1660,440,1674,498"/>
-<area shape="rect" id="Node000010" href="$mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="1365,233,1511,259"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1666,499,1649,451,1621,389,1582,327,1558,298,1530,273,1508,261,1511,256,1534,269,1561,294,1586,323,1626,387,1654,449,1671,498"/>
-<area shape="rect" id="Node000012" href="$mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="1353,283,1523,323"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1661,501,1640,465,1611,421,1574,376,1530,337,1510,326,1513,321,1534,333,1577,372,1615,417,1645,462,1666,498"/>
-<area shape="rect" id="Node000015" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="1375,348,1501,373"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1656,503,1604,444,1569,413,1531,387,1500,374,1502,370,1533,382,1573,409,1608,441,1660,499"/>
-<area shape="rect" id="Node000027" href="$ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="1351,397,1525,423"/>
-<area shape="poly" id="edge30_Node000001_Node000027" title=" " alt="" coords="1647,506,1594,472,1531,438,1495,425,1497,420,1533,433,1597,467,1650,502"/>
-<area shape="rect" id="Node000029" href="$stabilization__andi_8c.html#a19ec80fc012920b283f6878e4911c89c" title="Initializes the ANDI stabilization controller state upon entering stabilization mode." alt="" coords="1369,447,1507,487"/>
-<area shape="poly" id="edge32_Node000001_Node000029" title=" " alt="" coords="1610,511,1506,486,1508,481,1611,506"/>
-<area shape="rect" id="Node000030" href="$stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="1355,512,1521,537"/>
-<area shape="poly" id="edge33_Node000001_Node000030" title=" " alt="" coords="1566,527,1521,527,1521,522,1566,522"/>
-<area shape="rect" id="Node000031" href="$stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="1358,562,1518,602"/>
-<area shape="poly" id="edge34_Node000001_Node000031" title=" " alt="" coords="1611,543,1519,565,1518,560,1610,538"/>
-<area shape="rect" id="Node000032" href="$stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="1116,646,1276,686"/>
-<area shape="poly" id="edge35_Node000001_Node000032" title=" " alt="" coords="1664,551,1643,583,1614,619,1577,654,1533,680,1500,692,1466,699,1396,704,1329,699,1270,689,1271,683,1329,694,1396,699,1465,694,1499,687,1531,676,1573,650,1610,616,1639,579,1660,548"/>
-<area shape="rect" id="Node000038" href="$stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="1358,626,1518,666"/>
-<area shape="poly" id="edge41_Node000001_Node000038" title=" " alt="" coords="1648,548,1596,582,1533,616,1504,628,1502,624,1531,612,1593,577,1646,543"/>
-<area shape="rect" id="Node000039" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="1344,741,1532,767"/>
-<area shape="poly" id="edge43_Node000001_Node000039" title=" " alt="" coords="1666,551,1646,589,1616,635,1579,683,1534,724,1495,744,1493,739,1530,720,1575,679,1612,632,1641,586,1662,548"/>
-<area shape="rect" id="Node000040" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="1371,791,1505,831"/>
-<area shape="poly" id="edge44_Node000001_Node000040" title=" " alt="" coords="1670,552,1653,600,1624,661,1585,725,1561,754,1534,780,1506,797,1503,792,1530,776,1557,750,1580,722,1619,659,1648,598,1665,550"/>
-<area shape="rect" id="Node000042" href="$eff__scheduling__plusquad_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="1375,856,1501,881"/>
-<area shape="poly" id="edge46_Node000001_Node000042" title=" " alt="" coords="1674,552,1661,612,1635,691,1617,733,1594,774,1566,812,1534,845,1502,862,1500,858,1530,841,1562,809,1589,771,1612,731,1630,689,1656,611,1669,551"/>
-<area shape="rect" id="Node000045" href="$tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="1361,909,1515,935"/>
-<area shape="poly" id="edge49_Node000001_Node000045" title=" " alt="" coords="1676,552,1665,620,1641,712,1622,761,1599,810,1569,855,1534,895,1507,912,1504,907,1530,891,1565,852,1594,807,1617,759,1636,710,1660,619,1671,551"/>
-<area shape="rect" id="Node000049" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="1393,959,1483,984"/>
-<area shape="poly" id="edge53_Node000001_Node000049" title=" " alt="" coords="1678,551,1670,629,1649,736,1630,793,1606,849,1574,902,1534,948,1510,963,1485,971,1483,965,1508,958,1530,944,1570,899,1601,847,1625,791,1644,734,1665,628,1672,551"/>
-<area shape="rect" id="Node000051" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="1347,1008,1529,1033"/>
-<area shape="poly" id="edge55_Node000001_Node000051" title=" " alt="" coords="1679,551,1675,637,1668,695,1656,758,1638,823,1612,887,1578,946,1534,999,1518,1010,1515,1006,1530,995,1574,943,1607,884,1632,821,1650,756,1662,694,1669,637,1674,551"/>
-<area shape="rect" id="Node000004" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="1126,63,1266,88"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1331,78,1266,78,1266,73,1331,73"/>
-<area shape="rect" id="Node000005" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="864,63,1048,88"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1112,78,1048,78,1048,73,1112,73"/>
-<area shape="rect" id="Node000007" href="$guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="1126,127,1266,152"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1331,142,1266,142,1266,137,1331,137"/>
-<area shape="rect" id="Node000008" href="$guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="864,127,1048,152"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1112,142,1048,142,1048,137,1112,137"/>
-<area shape="rect" id="Node000011" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="1123,195,1269,220"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1351,235,1268,221,1269,216,1352,230"/>
-<area shape="rect" id="Node000013" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="1145,293,1247,319"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1339,307,1247,308,1247,303,1339,302"/>
-<area shape="rect" id="Node000014" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="1129,244,1263,269"/>
-<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="1339,287,1262,272,1263,267,1340,282"/>
-<area shape="rect" id="Node000016" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="1114,393,1278,433"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1366,379,1279,398,1278,392,1364,374"/>
-<area shape="rect" id="Node000026" href="$oneloop__nB_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="1125,343,1267,368"/>
-<area shape="poly" id="edge29_Node000015_Node000026" title=" " alt="" coords="1361,362,1268,360,1268,354,1361,356"/>
-<area shape="rect" id="Node000017" href="$guidance__oneloop__nB_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="636,348,801,373"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1100,398,1048,390,918,377,801,368,802,363,918,371,1048,385,1101,392"/>
-<area shape="rect" id="Node000023" href="$guidance__oneloop__nB_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="879,449,1033,475"/>
-<area shape="poly" id="edge21_Node000016_Node000023" title=" " alt="" coords="1101,435,1019,452,1018,447,1100,430"/>
-<area shape="rect" id="Node000025" href="$guidance__oneloop__nB_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="871,400,1041,425"/>
-<area shape="poly" id="edge26_Node000016_Node000025" title=" " alt="" coords="1100,415,1042,415,1042,410,1100,410"/>
-<area shape="rect" id="Node000018" href="$rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,399,573,424"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="648,379,549,401,548,396,647,374"/>
-<area shape="rect" id="Node000019" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="236,424,360,449"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="395,427,361,431,360,426,394,421"/>
-<area shape="rect" id="Node000020" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,395,188,420"/>
-<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="222,428,184,423,184,417,223,423"/>
-<area shape="rect" id="Node000021" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,445,187,485"/>
-<area shape="poly" id="edge20_Node000019_Node000021" title=" " alt="" coords="223,450,188,455,187,449,222,444"/>
-<area shape="poly" id="edge22_Node000023_Node000018" title=" " alt="" coords="896,481,837,492,768,500,694,500,621,489,587,476,555,460,506,426,509,422,558,455,589,471,622,483,694,495,768,494,837,487,895,475"/>
-<area shape="rect" id="Node000024" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="631,449,806,475"/>
-<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="865,465,806,465,806,459,865,459"/>
-<area shape="poly" id="edge24_Node000024_Node000018" title=" " alt="" coords="647,449,548,427,549,421,648,444"/>
-<area shape="poly" id="edge25_Node000024_Node000019" title=" " alt="" coords="617,459,360,443,360,438,618,453"/>
-<area shape="poly" id="edge27_Node000025_Node000018" title=" " alt="" coords="857,415,573,414,573,409,857,410"/>
-<area shape="poly" id="edge28_Node000025_Node000024" title=" " alt="" coords="881,431,781,452,780,447,880,426"/>
-<area shape="rect" id="Node000028" href="$ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="1121,457,1271,483"/>
-<area shape="poly" id="edge31_Node000027_Node000028" title=" " alt="" coords="1373,429,1249,460,1247,455,1372,423"/>
-<area shape="rect" id="Node000033" href="$stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="883,646,1029,686"/>
-<area shape="poly" id="edge36_Node000032_Node000033" title=" " alt="" coords="1102,669,1030,669,1030,663,1102,663"/>
-<area shape="rect" id="Node000034" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="621,552,816,577"/>
-<area shape="poly" id="edge37_Node000033_Node000034" title=" " alt="" coords="910,641,865,616,815,592,777,580,778,575,817,588,868,611,913,637"/>
-<area shape="rect" id="Node000035" href="$control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="628,602,809,642"/>
-<area shape="poly" id="edge38_Node000033_Node000035" title=" " alt="" coords="869,653,809,641,810,636,870,647"/>
-<area shape="rect" id="Node000036" href="$control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="628,666,809,706"/>
-<area shape="poly" id="edge39_Node000033_Node000036" title=" " alt="" coords="869,676,810,681,809,676,868,671"/>
-<area shape="rect" id="Node000037" href="$control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="628,730,809,770"/>
-<area shape="poly" id="edge40_Node000033_Node000037" title=" " alt="" coords="891,693,817,721,782,732,781,727,815,715,889,688"/>
-<area shape="poly" id="edge42_Node000038_Node000032" title=" " alt="" coords="1344,656,1277,662,1276,657,1344,651"/>
-<area shape="rect" id="Node000041" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="1102,739,1290,764"/>
-<area shape="poly" id="edge45_Node000040_Node000041" title=" " alt="" coords="1358,794,1248,767,1249,762,1359,789"/>
-<area shape="rect" id="Node000043" href="$eff__scheduling__plusquad_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="1096,853,1296,879"/>
-<area shape="poly" id="edge47_Node000042_Node000043" title=" " alt="" coords="1361,870,1296,870,1296,864,1361,865"/>
-<area shape="rect" id="Node000044" href="$eff__scheduling__plusquad_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="1110,789,1282,829"/>
-<area shape="poly" id="edge48_Node000042_Node000044" title=" " alt="" coords="1372,855,1277,831,1278,826,1374,850"/>
-<area shape="rect" id="Node000046" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="1143,968,1249,993"/>
-<area shape="poly" id="edge50_Node000045_Node000046" title=" " alt="" coords="1372,941,1249,971,1248,965,1371,935"/>
-<area shape="rect" id="Node000048" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="1123,903,1269,943"/>
-<area shape="poly" id="edge52_Node000045_Node000048" title=" " alt="" coords="1347,925,1270,926,1270,920,1347,920"/>
-<area shape="rect" id="Node000047" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="891,968,1021,993"/>
-<area shape="poly" id="edge51_Node000046_Node000047" title=" " alt="" coords="1130,983,1021,983,1021,978,1130,978"/>
-<area shape="rect" id="Node000050" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="1149,1017,1243,1043"/>
-<area shape="poly" id="edge54_Node000049_Node000050" title=" " alt="" coords="1380,988,1297,1009,1244,1022,1242,1016,1295,1003,1378,983"/>
+<area shape="rect" id="Node000001" title="Get vehicle body attitude quaternion (float)." alt="" coords="1361,539,1555,566"/>
+<area shape="rect" id="Node000002" href="$guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance." alt="" coords="1144,5,1296,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1455,522,1452,432,1446,370,1435,303,1417,234,1392,166,1357,102,1312,46,1296,35,1296,30,1315,43,1361,99,1396,164,1422,232,1440,302,1451,370,1458,431,1460,525"/>
+<area shape="rect" id="Node000003" href="$guidance__indi_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="1128,57,1312,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1453,522,1445,443,1423,335,1405,276,1381,218,1350,164,1311,116,1299,105,1299,99,1315,112,1354,161,1386,216,1410,274,1428,333,1450,443,1458,524"/>
+<area shape="rect" id="Node000007" href="$guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="1128,126,1312,171"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1451,522,1439,455,1414,365,1396,317,1373,269,1345,225,1311,185,1298,174,1298,169,1315,181,1349,221,1378,266,1401,314,1419,363,1444,454,1456,524"/>
+<area shape="rect" id="Node000009" href="$jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera." alt="" coords="1150,195,1289,222"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="1450,522,1435,464,1410,386,1392,346,1369,306,1343,269,1312,237,1289,223,1289,218,1315,233,1347,266,1374,303,1396,343,1415,384,1441,462,1454,525"/>
+<area shape="rect" id="Node000010" href="$mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="1148,247,1292,274"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1447,523,1430,473,1403,409,1364,344,1339,314,1312,288,1292,276,1292,271,1315,284,1343,310,1368,341,1408,407,1435,472,1452,525"/>
+<area shape="rect" id="Node000012" href="$mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title=" " alt="" coords="1134,298,1305,343"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="1441,524,1420,488,1391,443,1355,397,1312,357,1294,346,1294,341,1315,353,1358,394,1395,440,1425,486,1446,525"/>
+<area shape="rect" id="Node000015" href="$oneloop__nB_8c.html#ad80364a9ef0d5d7882bdcda72bb1c807" title="Main function that runs the controller and performs control allocation." alt="" coords="1157,367,1282,394"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="1435,526,1384,468,1350,436,1312,409,1283,396,1283,391,1315,405,1353,432,1388,464,1440,527"/>
+<area shape="rect" id="Node000026" href="$ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a" title=" " alt="" coords="1132,419,1307,446"/>
+<area shape="poly" id="edge35_Node000001_Node000026" title=" " alt="" coords="1425,529,1374,495,1312,460,1284,450,1284,444,1314,455,1377,490,1430,529"/>
+<area shape="rect" id="Node000028" href="$stabilization__andi_8c.html#a19ec80fc012920b283f6878e4911c89c" title="Initializes the ANDI stabilization controller state upon entering stabilization mode." alt="" coords="1152,470,1288,515"/>
+<area shape="poly" id="edge37_Node000001_Node000028" title=" " alt="" coords="1383,535,1288,512,1288,507,1388,534"/>
+<area shape="rect" id="Node000029" href="$stabilization__andi_8c.html#a37b9e0640d683b7200d32b69f283b4e7" title="Main ANDI stabilization control loop." alt="" coords="1138,539,1302,566"/>
+<area shape="poly" id="edge38_Node000001_Node000029" title=" " alt="" coords="1343,553,1303,555,1302,550,1348,552"/>
+<area shape="rect" id="Node000030" href="$stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="1140,590,1299,635"/>
+<area shape="poly" id="edge39_Node000001_Node000030" title=" " alt="" coords="1383,571,1301,595,1299,590,1388,570"/>
+<area shape="rect" id="Node000031" href="$stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="899,668,1058,712"/>
+<area shape="poly" id="edge40_Node000001_Node000031" title=" " alt="" coords="1431,575,1379,616,1347,635,1314,650,1249,669,1181,682,1059,692,1058,687,1180,677,1247,664,1312,645,1345,630,1376,612,1426,578"/>
+<area shape="rect" id="Node000037" href="$stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="1140,710,1299,755"/>
+<area shape="poly" id="edge46_Node000001_Node000037" title=" " alt="" coords="1437,577,1384,636,1351,666,1315,693,1281,712,1279,707,1312,689,1347,662,1381,632,1433,580"/>
+<area shape="rect" id="Node000038" href="$stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="1126,779,1313,806"/>
+<area shape="poly" id="edge48_Node000001_Node000038" title=" " alt="" coords="1448,579,1429,623,1400,674,1362,726,1315,769,1294,781,1292,776,1312,765,1358,722,1396,671,1424,621,1444,582"/>
+<area shape="rect" id="Node000039" href="$stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="1154,830,1286,875"/>
+<area shape="poly" id="edge49_Node000001_Node000039" title=" " alt="" coords="1450,580,1434,633,1405,696,1366,762,1342,793,1315,820,1287,837,1285,832,1312,816,1338,789,1362,759,1401,694,1429,631,1447,583"/>
+<area shape="rect" id="Node000041" href="$eff__scheduling__plusquad_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="1158,899,1282,926"/>
+<area shape="poly" id="edge51_Node000001_Node000041" title=" " alt="" coords="1455,580,1443,646,1417,729,1399,772,1376,815,1348,855,1315,889,1283,907,1281,902,1312,885,1344,851,1372,812,1394,770,1412,727,1437,645,1451,584"/>
+<area shape="rect" id="Node000044" href="$tag__tracking_8c.html#a0ba4879febb20f07e2dacd6c4fb8a2a0" title=" " alt="" coords="1143,955,1296,982"/>
+<area shape="poly" id="edge55_Node000001_Node000044" title=" " alt="" coords="1456,580,1446,654,1423,750,1404,801,1381,851,1351,898,1315,940,1290,957,1288,952,1312,936,1347,895,1376,849,1399,799,1418,748,1441,653,1452,584"/>
+<area shape="rect" id="Node000048" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="1174,1007,1265,1034"/>
+<area shape="poly" id="edge59_Node000001_Node000048" title=" " alt="" coords="1458,580,1452,663,1444,717,1431,774,1413,834,1388,893,1356,948,1315,996,1292,1011,1266,1019,1265,1014,1290,1006,1312,992,1352,944,1383,890,1408,832,1426,773,1439,716,1447,663,1454,584"/>
+<area shape="rect" id="Node000050" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="1129,1059,1310,1086"/>
+<area shape="poly" id="edge61_Node000001_Node000050" title=" " alt="" coords="1459,580,1456,671,1449,731,1438,796,1420,864,1394,930,1360,993,1315,1048,1297,1061,1295,1056,1312,1044,1355,990,1389,928,1415,862,1432,795,1444,730,1451,671,1456,584"/>
+<area shape="rect" id="Node000004" href="$guidance__indi_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="909,67,1048,94"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1110,81,1050,83,1048,78,1115,79"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="1018,52,1005,48,978,45,953,47,940,52,936,57,942,66,937,66,931,58,936,48,952,42,978,40,1006,43,1023,51"/>
+<area shape="rect" id="Node000005" href="$guidance__indi_8c.html#a23ee73ec94c7ec2a40501cdab58777cd" title=" " alt="" coords="647,75,831,102"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="891,85,832,88,830,83,896,82"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="778,60,765,56,739,53,714,55,701,60,697,65,704,74,698,74,692,66,697,56,713,50,739,48,767,51,783,59"/>
+<area shape="rect" id="Node000006" href="$guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52" title=" " alt="" coords="411,103,594,130"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="630,103,596,108,593,103,634,100"/>
+<area shape="rect" id="Node000008" href="$guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e" title=" " alt="" coords="669,131,809,158"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="1110,149,810,148,808,143,1115,146"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="651,136,596,130,594,125,656,133"/>
+<area shape="rect" id="Node000011" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="906,193,1050,221"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="1136,243,1045,224,1044,219,1142,242"/>
+<area shape="rect" id="Node000013" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="927,245,1030,273"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="1117,296,1030,275,1030,269,1122,294"/>
+<area shape="rect" id="Node000014" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="912,297,1045,325"/>
+<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="1116,317,1046,316,1045,311,1121,316"/>
+<area shape="rect" id="Node000016" href="$guidance__oneloop__nB_8c.html#abaab336d740d388afb14e79fff80807c" title=" " alt="" coords="897,373,1060,418"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="1139,386,1061,393,1059,388,1144,384"/>
+<area shape="rect" id="Node000025" href="$oneloop__nB_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="907,441,1050,469"/>
+<area shape="poly" id="edge34_Node000015_Node000025" title=" " alt="" coords="1146,401,1127,410,1079,432,1044,443,1042,438,1077,427,1125,405,1151,398"/>
+<area shape="poly" id="edge33_Node000016_Node000016" title=" " alt="" coords="1016,358,1003,354,978,351,956,353,942,358,936,364,938,373,933,371,931,363,939,354,955,348,978,346,1004,349,1021,357"/>
+<area shape="rect" id="Node000017" href="$guidance__oneloop__nB_8c.html#ab7bd3b46227bbe4f2e95a8398ca9f2ca" title=" " alt="" coords="657,305,821,333"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="894,368,830,348,791,336,790,331,831,343,899,367"/>
+<area shape="rect" id="Node000018" href="$guidance__oneloop__nB_8c.html#a3dffbef3ddf74f16b735fb4b145c8fc7" title=" " alt="" coords="662,381,816,409"/>
+<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="879,396,817,398,815,393,884,394"/>
+<area shape="rect" id="Node000024" href="$guidance__oneloop__nB_8c.html#a7754f053ce1b1c42b964128edbc686af" title=" " alt="" coords="654,457,824,485"/>
+<area shape="poly" id="edge30_Node000016_Node000024" title=" " alt="" coords="889,424,786,459,784,454,894,421"/>
+<area shape="poly" id="edge20_Node000017_Node000017" title=" " alt="" coords="778,291,765,286,739,284,714,286,701,291,697,296,704,305,698,305,692,296,697,287,713,281,739,279,767,281,783,289"/>
+<area shape="poly" id="edge29_Node000018_Node000018" title=" " alt="" coords="778,367,765,362,739,360,714,362,701,367,697,372,704,381,698,381,692,372,697,363,713,357,739,355,767,357,783,366"/>
+<area shape="rect" id="Node000019" href="$rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5" title="Run GUIDED mode control." alt="" coords="416,419,590,446"/>
+<area shape="poly" id="edge22_Node000018_Node000019" title=" " alt="" coords="645,411,592,421,589,416,649,408"/>
+<area shape="poly" id="edge23_Node000019_Node000019" title=" " alt="" coords="536,404,526,400,503,397,481,399,470,404,467,409,472,418,467,418,461,410,466,400,480,394,503,392,527,395,542,403"/>
+<area shape="rect" id="Node000020" href="$rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="235,419,358,446"/>
+<area shape="poly" id="edge24_Node000019_Node000020" title=" " alt="" coords="397,434,360,435,357,430,402,431"/>
+<area shape="poly" id="edge27_Node000020_Node000020" title=" " alt="" coords="329,404,319,400,296,397,276,399,264,404,261,409,267,418,261,418,256,410,261,400,274,394,296,392,320,395,334,402"/>
+<area shape="rect" id="Node000021" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,359,187,386"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="235,415,186,400,151,389,148,385,187,395,239,412"/>
+<area shape="rect" id="Node000022" href="$control__mixing__heewing_8c.html#a14d760978bd1498edd52144771de4b86" title=" " alt="" coords="6,410,186,455"/>
+<area shape="poly" id="edge26_Node000020_Node000022" title=" " alt="" coords="217,434,188,435,185,430,221,431"/>
+<area shape="rect" id="Node000023" href="$vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,479,178,506"/>
+<area shape="poly" id="edge28_Node000020_Node000023" title=" " alt="" coords="235,453,187,470,151,480,148,476,186,465,239,450"/>
+<area shape="poly" id="edge31_Node000024_Node000019" title=" " alt="" coords="637,456,591,449,589,444,642,454"/>
+<area shape="poly" id="edge32_Node000024_Node000024" title=" " alt="" coords="778,442,765,438,739,436,714,438,701,443,697,448,704,457,698,457,692,448,697,439,713,433,739,431,767,433,783,442"/>
+<area shape="rect" id="Node000027" href="$ctrl__windtunnel_8c.html#a033a997e28d471e86efd95431bf13bea" title=" " alt="" coords="904,493,1053,521"/>
+<area shape="poly" id="edge36_Node000026_Node000027" title=" " alt="" coords="1143,452,1127,460,1079,483,1041,495,1038,490,1077,478,1125,455,1148,450"/>
+<area shape="rect" id="Node000032" href="$stabilization_8c.html#a163ba30896a625790e1b83f72f02d2a1" title="Check mode change." alt="" coords="666,668,812,712"/>
+<area shape="poly" id="edge41_Node000031_Node000032" title=" " alt="" coords="880,691,813,692,811,687,885,689"/>
+<area shape="rect" id="Node000033" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="406,581,599,609"/>
+<area shape="poly" id="edge42_Node000032_Node000033" title=" " alt="" coords="682,660,598,623,566,612,565,607,600,618,687,659"/>
+<area shape="rect" id="Node000034" href="$control__mixing__heewing_8c.html#afc9a60fa8e73df538f9d69e9484ef875" title=" " alt="" coords="412,633,593,678"/>
+<area shape="poly" id="edge43_Node000032_Node000034" title=" " alt="" coords="649,678,594,671,593,666,654,676"/>
+<area shape="rect" id="Node000035" href="$control__mixing__heewing_8c.html#a8922f8d2f4272dea724681a57f14428e" title=" " alt="" coords="412,702,593,747"/>
+<area shape="poly" id="edge44_Node000032_Node000035" title=" " alt="" coords="649,704,594,714,592,709,654,702"/>
+<area shape="rect" id="Node000036" href="$control__mixing__heewing_8c.html#a008af66cb64bbb775fccdeff1009b153" title=" " alt="" coords="412,772,593,816"/>
+<area shape="poly" id="edge45_Node000032_Node000036" title=" " alt="" coords="680,721,600,762,571,773,569,769,598,757,684,718"/>
+<area shape="poly" id="edge47_Node000037_Node000031" title=" " alt="" coords="1122,716,1059,707,1058,701,1127,715"/>
+<area shape="rect" id="Node000040" href="$stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="885,760,1072,788"/>
+<area shape="poly" id="edge50_Node000039_Node000040" title=" " alt="" coords="1141,824,1077,803,1036,791,1036,786,1079,798,1146,824"/>
+<area shape="rect" id="Node000042" href="$eff__scheduling__plusquad_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="879,836,1078,864"/>
+<area shape="poly" id="edge52_Node000041_Node000042" title=" " alt="" coords="1147,894,1077,878,1036,867,1036,862,1079,873,1152,894"/>
+<area shape="rect" id="Node000043" href="$eff__scheduling__plusquad_8c.html#ad07d6465b5984ad54d8f45c4729ec5b8" title=" " alt="" coords="893,888,1064,932"/>
+<area shape="poly" id="edge54_Node000041_Node000043" title=" " alt="" coords="1139,912,1064,913,1064,908,1144,911"/>
+<area shape="poly" id="edge53_Node000042_Node000042" title=" " alt="" coords="1018,821,1005,817,978,815,953,817,940,821,936,827,942,836,937,835,931,827,936,817,952,811,978,809,1006,812,1023,821"/>
+<area shape="rect" id="Node000045" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="926,956,1030,984"/>
+<area shape="poly" id="edge56_Node000044_Node000045" title=" " alt="" coords="1125,969,1031,972,1031,967,1130,969"/>
+<area shape="rect" id="Node000047" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="906,1008,1051,1052"/>
+<area shape="poly" id="edge58_Node000044_Node000047" title=" " alt="" coords="1150,986,1052,1014,1051,1009,1145,987"/>
+<area shape="rect" id="Node000046" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="674,956,804,984"/>
+<area shape="poly" id="edge57_Node000045_Node000046" title=" " alt="" coords="908,970,805,972,805,967,913,970"/>
+<area shape="rect" id="Node000049" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="932,1076,1024,1104"/>
+<area shape="poly" id="edge60_Node000048_Node000049" title=" " alt="" coords="1162,1036,1127,1050,1079,1067,1025,1082,1025,1076,1077,1062,1125,1045,1157,1037"/>
 </map>

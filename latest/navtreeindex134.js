@@ -1,5 +1,11 @@
 var NAVTREEINDEX134 =
 {
+"module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,144,2,0],
+"module__digital_cam_shoot_rc.html":[1,145],
+"module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,145,1],
+"module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc":[1,145,2],
+"module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,145,0],
+"module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc":[1,145,2,0],
 "module__digital_cam_uart.html":[1,146],
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,146,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,146,0],
@@ -184,12 +190,9 @@ var NAVTREEINDEX134 =
 "module__geiger_counter.html#module_xml__geiger_counter":[1,300,1,0],
 "module__generic_com.html":[1,53],
 "module__generic_com.html#configuration__generic_com":[1,53,1],
-"module__generic_com.html#define":[1,53,1,0],
-"module__generic_com.html#event_functions":[1,53,2,0],
 "module__generic_com.html#functions__generic_com":[1,53,2],
 "module__generic_com.html#module_load_example__generic_com":[1,53,0],
-"module__generic_com.html#module_xml__generic_com":[1,53,2,2],
-"module__generic_com.html#periodic_functions":[1,53,2,1],
+"module__generic_com.html#module_xml__generic_com":[1,53,2,0],
 "module__generic_uart_sensor.html":[1,430],
 "module__generic_uart_sensor.html#configuration__generic_uart_sensor":[1,430,1],
 "module__generic_uart_sensor.html#functions__generic_uart_sensor":[1,430,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "module__gps_nmea.html#functions__gps_nmea":[1,167,2],
 "module__gps_nmea.html#module_load_example__gps_nmea":[1,167,0],
 "module__gps_nmea.html#module_xml__gps_nmea":[1,167,2,0],
-"module__gps_nmea_send.html":[1,168],
-"module__gps_nmea_send.html#configuration__gps_nmea_send":[1,168,1],
-"module__gps_nmea_send.html#functions__gps_nmea_send":[1,168,2],
-"module__gps_nmea_send.html#module_load_example__gps_nmea_send":[1,168,0]
+"module__gps_nmea_send.html":[1,168]
 };

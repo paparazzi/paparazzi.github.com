@@ -20,11 +20,11 @@ var rotwing__state_8h =
       [ "nav_state", "rotwing__state_8h.html#aeceb95da9b667b6a1f0707071129fc1e", null ],
       [ "ref_model_skew_angle_deg", "rotwing__state_8h.html#a9feb5f16afbb356cfd8c297b089824f6", null ],
       [ "skew_cmd", "rotwing__state_8h.html#a93f10ae2b91085aeec97905137534cb6", null ],
-      [ "skew_sweep", "rotwing__state_8h.html#a343fa28bbe587ebcdaa4e603133743e0", null ],
+      [ "skew_sweep", "rotwing__state_8h.html#ab58a3e1a5268b80201ca0ef26db9dd33", null ],
       [ "sp_skew_angle_deg", "rotwing__state_8h.html#abad06626db5e5547a6760495a93d65a6", null ],
       [ "state", "rotwing__state_8h.html#a30542483ba57bd35dcf9ae681646c15a", null ]
     ] ],
-    [ "rotwing_bitmask_t.__unnamed316__", "rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed316____", [
+    [ "rotwing_bitmask_t.__unnamed0__", "rotwing__state_8h.html#structrotwing__bitmask__t_8____unnamed0____", [
       [ "hover_motors_enabled", "rotwing__state_8h.html#a71feede8efe7593557bb49bf335c59a4", null ],
       [ "hover_motors_idle", "rotwing__state_8h.html#a798cceb97bce2315e37d89cebec28135", null ],
       [ "hover_motors_running", "rotwing__state_8h.html#ae0013c9265cf693508ac5da575c3768d", null ],

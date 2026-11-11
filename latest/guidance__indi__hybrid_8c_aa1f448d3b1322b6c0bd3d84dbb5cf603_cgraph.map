@@ -1,34 +1,35 @@
 <map id="guidance_indi_init" name="guidance_indi_init">
-<area shape="rect" id="Node000001" title="Init function." alt="" coords="5,203,145,228"/>
-<area shape="rect" id="Node000002" href="$guidance__indi__hybrid_8c.html#a42fccafb270d39ace52bdba85c287a5a" title="Initialized low pass filters." alt="" coords="225,81,365,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,200,134,166,192,130,210,122,213,127,195,135,137,170,93,205"/>
-<area shape="rect" id="Node000009" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="193,145,396,171"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="121,200,193,181,229,171,230,177,194,186,123,205"/>
-<area shape="rect" id="Node000010" href="$guidance__indi__hybrid_8c.html#ae3bf6677065e6f1b410b585994fcf3e0" title=" " alt="" coords="207,195,383,235"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="146,213,193,213,193,218,146,218"/>
-<area shape="rect" id="Node000011" href="$guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70" title=" " alt="" coords="219,259,370,299"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="121,226,213,253,211,258,119,231"/>
-<area shape="rect" id="Node000015" href="$guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8" title="ABI callback that obtains the velocity setpoint from a module." alt="" coords="251,324,338,349"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="90,226,134,267,163,290,194,309,239,325,237,330,192,314,160,294,130,271,86,230"/>
-<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#ga74fd99d5a32d19e217dd21fa1ce3fd53" title="quat from euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="444,5,628,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,78,484,33,486,38,355,83"/>
-<area shape="rect" id="Node000004" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="709,78,851,118"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="365,94,444,91,695,93,695,98,444,97,365,100"/>
-<area shape="rect" id="Node000006" href="$low__pass__filter__types_8h.html#a64769d20d030693d7bf1e491c4099e6b" title="Initialize a set of Butterworth low&#45;pass filters to zero for 3D vector data." alt="" coords="465,106,607,146"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="365,105,452,115,451,120,365,111"/>
-<area shape="rect" id="Node000007" href="$quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851" title="Init a second order quaternion Butterworth filter." alt="" coords="455,170,617,210"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="365,118,397,130,445,156,462,163,460,167,443,160,395,135,363,123"/>
-<area shape="rect" id="Node000005" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="932,85,1136,111"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="851,95,918,95,918,101,851,101"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="607,115,695,105,696,110,607,121"/>
-<area shape="rect" id="Node000008" href="$quaternion__filter_8h.html#af07543e57f2906b5e6fb75b5aa0d0cf2" title="Init second order quaternion low pass filter." alt="" coords="693,170,867,210"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="617,187,680,187,680,193,617,193"/>
-<area shape="rect" id="Node000012" href="$low__pass__filter__types_8h.html#a3ec90f09969a2077ecf4d0c78d3c48b7" title="Retrieve the filtered output from 3D vector Butterworth filters." alt="" coords="451,259,621,299"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="370,277,437,277,437,282,370,282"/>
-<area shape="rect" id="Node000013" href="$low__pass__filter_8h.html#af3df46249510118fe83e6a70f14e15db" title="Get current value of the second order Butterworth low pass filter." alt="" coords="676,267,884,292"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="621,277,662,277,662,282,621,282"/>
-<area shape="rect" id="Node000014" href="$low__pass__filter_8h.html#a0a29a51d6b661a2a4d74017c612a04b9" title="Get current value of the second order low pass filter." alt="" coords="932,267,1136,292"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="884,277,918,277,918,282,884,282"/>
-<area shape="rect" id="Node000016" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="463,324,609,349"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="338,334,449,334,449,339,338,339"/>
+<area shape="rect" id="Node000001" title="Init function." alt="" coords="5,223,145,250"/>
+<area shape="rect" id="Node000002" href="$guidance__indi__hybrid_8c.html#a42fccafb270d39ace52bdba85c287a5a" title="Initialized low pass filters." alt="" coords="224,94,363,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,220,135,185,191,149,211,142,207,145,194,153,138,189,95,224"/>
+<area shape="rect" id="Node000009" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="193,163,394,190"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="122,220,192,199,221,193,217,196,193,204,124,224"/>
+<area shape="rect" id="Node000010" href="$guidance__indi__hybrid_8c.html#ae3bf6677065e6f1b410b585994fcf3e0" title=" " alt="" coords="206,214,381,259"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="144,234,192,235,188,238,146,239"/>
+<area shape="rect" id="Node000011" href="$guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70" title=" " alt="" coords="219,284,368,328"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="121,248,208,277,204,280,121,254"/>
+<area shape="rect" id="Node000015" href="$guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8" title="ABI callback that obtains the velocity setpoint from a module." alt="" coords="251,352,336,380"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="89,248,133,293,162,318,194,338,238,356,233,356,191,343,159,322,129,297,88,254"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#ga74fd99d5a32d19e217dd21fa1ce3fd53" title="quat from euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="442,5,625,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,91,441,49,477,37,473,40,443,54,345,96"/>
+<area shape="rect" id="Node000004" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="707,78,847,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="363,102,442,93,573,89,694,94,689,96,573,94,442,98,364,107"/>
+<area shape="rect" id="Node000006" href="$low__pass__filter__types_8h.html#a64769d20d030693d7bf1e491c4099e6b" title="Initialize a set of Butterworth low&#45;pass filters to zero for 3D vector data." alt="" coords="464,108,604,152"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="363,118,450,124,445,126,364,123"/>
+<area shape="rect" id="Node000007" href="$quaternion__filter_8h.html#a4fce9f6cab48db971b27b5182ca40851" title="Init a second order quaternion Butterworth filter." alt="" coords="453,177,614,222"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="360,137,455,171,450,172,360,142"/>
+<area shape="rect" id="Node000005" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="929,87,1132,114"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="847,98,916,100,911,101,848,103"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="603,119,694,110,689,112,605,124"/>
+<area shape="rect" id="Node000008" href="$quaternion__filter_8h.html#af07543e57f2906b5e6fb75b5aa0d0cf2" title="Init second order quaternion low pass filter." alt="" coords="691,177,863,222"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="614,197,678,199,672,200,615,202"/>
+<area shape="rect" id="Node000012" href="$low__pass__filter__types_8h.html#a3ec90f09969a2077ecf4d0c78d3c48b7" title="Retrieve the filtered output from 3D vector Butterworth filters." alt="" coords="448,284,619,328"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="368,303,436,306,431,306,369,308"/>
+<area shape="poly" id="edge15_Node000012_Node000012" title=" " alt="" coords="488,281,486,273,494,264,510,259,534,257,560,259,577,269,571,268,558,265,534,262,511,264,497,269,492,275,493,284"/>
+<area shape="rect" id="Node000013" href="$low__pass__filter_8h.html#af3df46249510118fe83e6a70f14e15db" title="Get current value of the second order Butterworth low pass filter." alt="" coords="673,292,881,320"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="619,303,660,306,655,306,619,308"/>
+<area shape="rect" id="Node000014" href="$low__pass__filter_8h.html#a0a29a51d6b661a2a4d74017c612a04b9" title="Get current value of the second order low pass filter." alt="" coords="929,292,1132,320"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="881,303,916,306,910,306,881,308"/>
+<area shape="rect" id="Node000016" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="462,352,606,380"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="337,363,449,366,443,366,337,368"/>
 </map>

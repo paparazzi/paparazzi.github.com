@@ -1,6 +1,5 @@
 var sdlog__linux_8h =
 [
-    [ "FileDes", "sdlog__linux_8h.html#a5af0a3873249752407b6c26c77c9a46d", null ],
     [ "SdioError", "sdlog__linux_8h.html#ae9361ce95c5a174983481365e90d87b3", [
       [ "SDLOG_OK", "sdlog__linux_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464", null ],
       [ "SDLOG_NOCARD", "sdlog__linux_8h.html#ae9361ce95c5a174983481365e90d87b3a1170f7c80aeb4aa3e9e380c66dc99010", null ],

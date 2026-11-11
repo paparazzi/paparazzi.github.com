@@ -1,40 +1,43 @@
 <map id="eff_scheduling_rotwing_init" name="eff_scheduling_rotwing_init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,189,205,215"/>
-<area shape="rect" id="Node000002" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="463,101,604,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,187,191,168,253,150,354,133,449,123,449,128,355,138,254,155,192,173,139,192"/>
-<area shape="rect" id="Node000004" href="$eff__scheduling__plusquad_8c.html#ac46a2224ae7cd5dec61b68679d7aedbb" title=" " alt="" coords="261,55,380,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="123,187,252,102,282,84,285,89,255,107,126,192"/>
-<area shape="rect" id="Node000008" href="$eff__scheduling__plusquad_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="258,164,383,189"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="205,188,244,183,245,188,206,193"/>
-<area shape="rect" id="Node000017" href="$eff__scheduling__rotwing_8c.html#ad616616784d17dad05980d1f9ef4303e" title=" " alt="" coords="253,213,388,239"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="206,211,240,214,239,220,205,216"/>
-<area shape="rect" id="Node000018" href="$eff__scheduling__rotwing__nB_8c.html#ad616616784d17dad05980d1f9ef4303e" title=" " alt="" coords="253,263,388,288"/>
-<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="145,212,270,256,269,261,143,217"/>
-<area shape="rect" id="Node000019" href="$eff__scheduling__rotwing__V2_8c.html#ad616616784d17dad05980d1f9ef4303e" title=" " alt="" coords="253,312,388,337"/>
-<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="125,213,181,254,255,298,268,305,266,309,252,303,178,258,121,217"/>
-<area shape="rect" id="Node000003" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="679,108,883,133"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="604,118,665,118,665,123,604,123"/>
-<area shape="rect" id="Node000005" href="$eff__scheduling__plusquad_8c.html#ae3cf0d73e8da629db08b8726be556398" title=" " alt="" coords="456,51,611,76"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="380,64,442,62,442,68,381,69"/>
-<area shape="rect" id="Node000006" href="$eff__scheduling__plusquad_8c.html#a9dd2a03c10501ace637bd96ab92626c2" title=" " alt="" coords="713,55,849,80"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="611,62,699,63,699,69,611,67"/>
-<area shape="rect" id="Node000007" href="$eff__scheduling__plusquad_8c.html#a510e4f9225fd600d788467a8760664b5" title=" " alt="" coords="705,5,856,31"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="603,48,697,31,698,36,604,53"/>
-<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="369,161,449,140,450,145,370,167"/>
-<area shape="rect" id="Node000009" href="$group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="441,280,625,305"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="367,187,390,200,406,217,414,234,422,250,438,265,450,272,447,277,434,269,418,253,409,236,401,220,386,204,364,192"/>
-<area shape="rect" id="Node000010" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="436,165,631,191"/>
-<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="384,174,422,175,422,180,384,180"/>
-<area shape="rect" id="Node000015" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="458,215,609,255"/>
-<area shape="poly" id="edge15_Node000008_Node000015" title=" " alt="" coords="368,187,448,209,446,214,367,192"/>
-<area shape="rect" id="Node000011" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="701,165,860,191"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="631,175,687,175,687,181,631,181"/>
-<area shape="rect" id="Node000012" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="931,165,1095,191"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="860,175,917,175,917,181,860,181"/>
-<area shape="rect" id="Node000013" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="1143,140,1297,165"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1095,165,1129,161,1129,166,1095,171"/>
-<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="1147,189,1293,215"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="1095,185,1134,189,1133,195,1095,190"/>
-<area shape="rect" id="Node000016" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="700,215,861,255"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="609,233,686,233,686,238,609,238"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,205,167"/>
+<area shape="rect" id="Node000002" href="$eff__scheduling__plusquad_8c.html#ab2dcedfcf1d84e9abe6f3e140d047ea9" title=" " alt="" coords="253,139,452,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,150,240,152,235,154,206,156"/>
+<area shape="rect" id="Node000003" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="699,5,839,50"/>
+<area shape="poly" id="edge19_Node000001_Node000003" title=" " alt="" coords="127,136,182,105,252,77,367,51,484,35,593,27,686,26,680,28,593,32,484,40,368,56,253,82,185,110,130,141"/>
+<area shape="rect" id="Node000005" href="$eff__scheduling__plusquad_8c.html#ac46a2224ae7cd5dec61b68679d7aedbb" title=" " alt="" coords="503,190,621,218"/>
+<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="182,165,253,176,377,189,490,199,485,200,376,194,252,181,182,170"/>
+<area shape="rect" id="Node000009" href="$eff__scheduling__plusquad_8c.html#a02322bc87d5d0231d339b5173365b86f" title=" " alt="" coords="500,130,624,158"/>
+<area shape="poly" id="edge21_Node000001_Node000009" title=" " alt="" coords="137,136,191,117,252,101,308,93,352,90,397,92,453,101,486,110,519,123,514,124,485,115,451,106,396,98,352,95,309,98,253,106,192,122,140,141"/>
+<area shape="rect" id="Node000018" href="$eff__scheduling__rotwing_8c.html#ad616616784d17dad05980d1f9ef4303e" title=" " alt="" coords="286,264,419,292"/>
+<area shape="poly" id="edge22_Node000001_Node000018" title=" " alt="" coords="135,165,312,256,308,259,134,170"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="316,138,310,130,315,121,329,115,352,113,377,115,392,124,387,124,376,120,352,118,331,120,319,125,316,130,321,139"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="401,136,686,52,682,54,402,141"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="413,165,491,186,485,186,412,170"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="452,146,487,147,482,148,453,151"/>
+<area shape="rect" id="Node000004" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="914,14,1117,42"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="839,25,901,27,895,28,840,30"/>
+<area shape="rect" id="Node000006" href="$eff__scheduling__plusquad_8c.html#ae3cf0d73e8da629db08b8726be556398" title=" " alt="" coords="692,246,846,274"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="616,215,703,241,697,241,616,221"/>
+<area shape="rect" id="Node000007" href="$eff__scheduling__plusquad_8c.html#a9dd2a03c10501ace637bd96ab92626c2" title=" " alt="" coords="948,271,1083,299"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="846,265,935,277,930,276,846,270"/>
+<area shape="rect" id="Node000008" href="$eff__scheduling__plusquad_8c.html#a510e4f9225fd600d788467a8760664b5" title=" " alt="" coords="940,219,1090,247"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="846,249,922,243,927,243,846,254"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="588,127,623,104,646,81,671,60,682,57,687,54,674,65,650,85,626,108,590,132"/>
+<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga19b17e4a40e2bc1f4bf3fbc2447e3dbf" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="677,194,861,222"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="602,155,673,180,699,189,693,189,672,185,601,161"/>
+<area shape="rect" id="Node000011" href="$group__state__attitude.html#gab5f063833fdba859ce42593112551463" title="Get vehicle body attitude quaternion (float)." alt="" coords="672,74,866,102"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="613,127,672,110,701,105,696,107,673,116,615,132"/>
+<area shape="rect" id="Node000016" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="694,125,844,170"/>
+<area shape="poly" id="edge17_Node000009_Node000016" title=" " alt="" coords="625,142,681,146,676,146,625,148"/>
+<area shape="rect" id="Node000012" href="$group__math__orientation__representation.html#ga987757fa07a7edea1006395e35e49473" title="Get vehicle body attitude quaternion (float)." alt="" coords="936,74,1094,102"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="866,85,923,87,918,88,867,90"/>
+<area shape="rect" id="Node000013" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="1165,74,1328,102"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1094,85,1152,87,1147,88,1095,90"/>
+<area shape="rect" id="Node000014" href="$group__math__algebra__float.html#gabe5b720c708a0d25dfa835afbf7177f6" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="1376,47,1530,75"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="1328,74,1363,73,1358,73,1329,80"/>
+<area shape="rect" id="Node000015" href="$group__math__algebra__float.html#ga50bd12ff07d4554e02b9aedc95844f57" title="Quaternion from rotation matrix." alt="" coords="1381,99,1525,127"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="1328,95,1368,102,1362,102,1329,100"/>
+<area shape="rect" id="Node000017" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="935,125,1096,170"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="844,145,922,147,917,148,844,150"/>
+<area shape="poly" id="edge23_Node000018_Node000018" title=" " alt="" coords="316,263,310,256,315,246,329,240,352,238,377,240,392,250,387,249,376,245,352,243,331,245,319,250,316,255,321,265"/>
 </map>

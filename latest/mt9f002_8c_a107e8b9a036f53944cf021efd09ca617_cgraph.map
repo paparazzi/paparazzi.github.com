@@ -1,23 +1,23 @@
 <map id="mt9f002_reset_exposure" name="mt9f002_reset_exposure">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,189,56"/>
-<area shape="rect" id="Node000002" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)" alt="" coords="237,31,408,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,41,224,41,224,46,190,46"/>
-<area shape="rect" id="Node000003" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="458,5,537,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,28,444,23,445,28,409,34"/>
-<area shape="rect" id="Node000010" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="456,55,539,80"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="409,52,443,57,442,63,408,58"/>
-<area shape="rect" id="Node000004" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="587,31,688,56"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="537,22,574,29,573,34,536,28"/>
-<area shape="rect" id="Node000005" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="736,5,915,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="688,34,722,29,723,35,689,39"/>
-<area shape="rect" id="Node000009" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="743,55,908,80"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="689,47,729,52,729,58,688,52"/>
-<area shape="rect" id="Node000006" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="963,31,1117,56"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="915,26,949,30,948,35,914,31"/>
-<area shape="rect" id="Node000007" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1212,5,1305,31"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1117,32,1198,22,1199,28,1118,37"/>
-<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1165,55,1352,80"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1118,49,1152,53,1151,58,1117,54"/>
-<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="908,55,949,51,949,56,908,61"/>
-<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="538,58,572,52,573,57,539,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,189,60"/>
+<area shape="rect" id="Node000002" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)." alt="" coords="237,32,407,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,43,224,45,219,46,189,48"/>
+<area shape="rect" id="Node000003" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="457,5,535,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,30,439,28,444,27,408,35"/>
+<area shape="rect" id="Node000010" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="455,57,537,85"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="408,56,442,63,437,63,407,61"/>
+<area shape="rect" id="Node000004" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="585,32,686,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="536,24,572,33,567,33,536,29"/>
+<area shape="rect" id="Node000005" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="734,5,911,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="686,36,715,34,721,34,686,41"/>
+<area shape="rect" id="Node000009" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="740,57,904,85"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="686,50,727,58,722,58,686,55"/>
+<area shape="rect" id="Node000006" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="959,32,1113,60"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="911,28,946,34,941,34,911,33"/>
+<area shape="rect" id="Node000007" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1208,5,1300,33"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1114,34,1190,27,1195,26,1114,39"/>
+<area shape="rect" id="Node000008" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1161,57,1347,85"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1114,52,1148,59,1143,58,1114,57"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="905,59,941,57,946,57,905,64"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="537,61,568,58,573,57,538,66"/>
 </map>

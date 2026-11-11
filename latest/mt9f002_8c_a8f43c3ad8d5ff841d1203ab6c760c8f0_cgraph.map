@@ -1,61 +1,61 @@
 <map id="mt9f002_init" name="mt9f002_init">
-<area shape="rect" id="Node000001" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera)" alt="" coords="5,318,111,343"/>
-<area shape="rect" id="Node000002" href="$libisp_8c.html#aac3aeb2b663a02fd97e27007bbfbb95e" title=" " alt="" coords="169,5,332,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,317,64,269,79,199,92,161,109,123,130,87,157,55,161,51,165,55,161,59,135,90,114,125,97,163,84,201,69,270,63,318"/>
-<area shape="rect" id="Node000003" href="$mt9f002_8c.html#a9506d5f32398c5646dcba11167b56e3b" title=" " alt="" coords="159,70,342,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="59,317,67,276,84,219,113,157,133,129,157,105,163,100,166,104,160,109,137,133,118,160,89,221,72,277,64,318"/>
-<area shape="rect" id="Node000004" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection." alt="" coords="169,369,333,394"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,341,189,363,188,368,107,346"/>
-<area shape="rect" id="Node000005" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="422,394,505,419"/>
-<area shape="poly" id="edge36_Node000001_Node000005" title=" " alt="" coords="111,328,219,333,281,341,343,353,388,368,427,385,425,390,386,373,342,359,281,346,218,339,111,333"/>
-<area shape="rect" id="Node000012" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection." alt="" coords="169,418,333,443"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="75,342,112,372,160,403,179,411,177,416,157,408,108,377,71,346"/>
-<area shape="rect" id="Node000013" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection." alt="" coords="169,119,333,145"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="60,317,71,284,91,240,119,194,137,172,157,154,165,149,168,153,160,158,141,176,123,197,95,242,76,286,65,319"/>
-<area shape="rect" id="Node000014" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection." alt="" coords="159,169,343,194"/>
-<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="64,316,98,261,125,230,157,203,168,197,170,202,160,208,129,234,103,265,68,319"/>
-<area shape="rect" id="Node000015" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection." alt="" coords="159,218,343,243"/>
-<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="71,316,108,284,157,252,174,245,176,250,160,257,111,288,74,320"/>
-<area shape="rect" id="Node000016" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title=" " alt="" coords="167,566,334,591"/>
-<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="64,343,72,383,89,440,118,500,137,527,160,551,169,557,165,562,157,555,133,531,113,503,84,442,67,385,59,344"/>
-<area shape="rect" id="Node000019" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)" alt="" coords="165,467,336,493"/>
-<area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="68,342,103,396,129,426,160,452,173,460,171,464,157,457,125,430,98,399,64,345"/>
-<area shape="rect" id="Node000020" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="177,615,324,641"/>
-<area shape="poly" id="edge28_Node000001_Node000020" title=" " alt="" coords="63,344,68,392,83,462,95,500,112,537,134,572,161,602,167,607,163,611,157,606,129,575,108,540,91,502,78,464,63,393,57,344"/>
-<area shape="rect" id="Node000022" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config." alt="" coords="187,517,314,542"/>
-<area shape="poly" id="edge31_Node000001_Node000022" title=" " alt="" coords="65,342,77,375,96,418,124,463,160,502,176,511,173,516,157,506,119,467,91,421,72,377,60,344"/>
-<area shape="rect" id="Node000023" href="$mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title=" " alt="" coords="163,267,339,293"/>
-<area shape="poly" id="edge34_Node000001_Node000023" title=" " alt="" coords="107,315,188,294,189,299,108,320"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,388,408,397,408,403,333,394"/>
-<area shape="rect" id="Node000006" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="584,455,685,481"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="501,417,586,448,585,453,499,422"/>
-<area shape="rect" id="Node000007" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="733,430,912,455"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="685,459,719,454,720,459,686,464"/>
-<area shape="rect" id="Node000011" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="740,479,905,505"/>
-<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="686,472,727,477,726,482,685,477"/>
-<area shape="rect" id="Node000008" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="960,455,1115,481"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="912,451,946,455,946,460,912,456"/>
-<area shape="rect" id="Node000009" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1209,430,1303,455"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1115,456,1196,447,1196,452,1115,462"/>
-<area shape="rect" id="Node000010" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1163,479,1349,505"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1115,474,1149,478,1149,483,1115,479"/>
-<area shape="poly" id="edge11_Node000011_Node000008" title=" " alt="" coords="905,480,946,476,947,481,906,485"/>
-<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="333,419,408,410,408,415,333,424"/>
-<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="326,142,344,154,370,179,392,208,425,271,447,332,460,380,455,381,442,333,421,273,387,211,366,183,341,158,323,147"/>
-<area shape="poly" id="edge17_Node000014_Node000005" title=" " alt="" coords="324,192,344,203,386,244,418,293,441,341,457,380,452,382,437,343,413,296,382,248,341,207,322,196"/>
-<area shape="poly" id="edge19_Node000015_Node000005" title=" " alt="" coords="321,241,344,252,380,282,410,316,451,380,447,383,405,319,376,285,341,257,319,246"/>
-<area shape="poly" id="edge24_Node000016_Node000005" title=" " alt="" coords="318,563,341,551,358,535,367,518,375,499,389,477,435,427,439,431,393,480,380,501,372,520,362,538,344,555,321,568"/>
-<area shape="rect" id="Node000017" href="$group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468" title=" " alt="" coords="421,566,506,591"/>
-<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="334,576,406,576,406,581,334,581"/>
-<area shape="rect" id="Node000018" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="424,491,503,517"/>
-<area shape="poly" id="edge22_Node000016_Node000018" title=" " alt="" coords="301,563,342,551,420,520,422,525,344,556,303,568"/>
-<area shape="poly" id="edge23_Node000018_Node000006" title=" " alt="" coords="502,493,570,479,571,484,503,498"/>
-<area shape="poly" id="edge27_Node000019_Node000005" title=" " alt="" coords="300,465,342,452,419,422,421,427,344,457,302,470"/>
-<area shape="poly" id="edge26_Node000019_Node000018" title=" " alt="" coords="337,487,411,495,410,501,336,492"/>
-<area shape="poly" id="edge30_Node000020_Node000005" title=" " alt="" coords="323,614,341,602,354,588,362,574,369,545,373,513,388,477,410,450,434,426,438,430,414,453,393,480,378,515,374,546,367,576,358,591,344,606,326,618"/>
-<area shape="rect" id="Node000021" href="$mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50." alt="" coords="391,615,536,641"/>
-<area shape="poly" id="edge29_Node000020_Node000021" title=" " alt="" coords="324,625,377,625,377,631,324,631"/>
-<area shape="poly" id="edge33_Node000022_Node000005" title=" " alt="" coords="310,514,341,502,396,465,438,427,442,431,399,470,344,506,312,519"/>
-<area shape="poly" id="edge32_Node000022_Node000018" title=" " alt="" coords="314,519,410,508,411,513,315,524"/>
-<area shape="poly" id="edge35_Node000023_Node000005" title=" " alt="" coords="299,290,344,310,397,346,440,382,437,386,394,350,341,314,296,295"/>
+<area shape="rect" id="Node000001" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera)." alt="" coords="5,332,110,360"/>
+<area shape="rect" id="Node000002" href="$libisp_8c.html#aac3aeb2b663a02fd97e27007bbfbb95e" title=" " alt="" coords="168,5,330,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,332,63,282,78,210,91,170,108,131,129,94,156,61,161,58,159,62,160,64,133,97,112,133,96,172,83,211,68,283,62,333"/>
+<area shape="rect" id="Node000003" href="$mt9f002_8c.html#a9506d5f32398c5646dcba11167b56e3b" title=" " alt="" coords="159,74,340,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="58,331,66,289,83,230,112,167,132,138,156,112,165,107,162,112,159,116,136,141,117,170,88,232,71,290,63,332"/>
+<area shape="rect" id="Node000004" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection." alt="" coords="168,383,331,411"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,357,182,377,177,380,111,363"/>
+<area shape="rect" id="Node000005" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register." alt="" coords="420,410,502,438"/>
+<area shape="poly" id="edge36_Node000001_Node000005" title=" " alt="" coords="109,344,218,349,280,357,342,369,384,383,423,402,418,403,382,388,340,374,279,362,217,354,111,349"/>
+<area shape="rect" id="Node000012" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection." alt="" coords="168,435,331,463"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="73,358,112,389,159,420,176,428,171,430,156,425,109,394,74,363"/>
+<area shape="rect" id="Node000013" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection." alt="" coords="168,126,331,154"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="60,332,71,297,90,252,118,205,156,164,166,159,163,163,159,168,123,208,95,255,76,299,65,333"/>
+<area shape="rect" id="Node000014" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection." alt="" coords="158,178,341,206"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="63,331,98,275,125,243,156,216,169,210,166,214,159,220,128,247,102,278,68,333"/>
+<area shape="rect" id="Node000015" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection." alt="" coords="158,230,341,258"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="72,331,109,299,156,268,175,261,171,265,159,273,112,303,76,334"/>
+<area shape="rect" id="Node000016" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title=" " alt="" coords="166,591,332,619"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="61,358,71,403,88,461,117,523,136,552,159,576,166,583,161,583,156,580,132,555,112,526,83,463,66,404,61,363"/>
+<area shape="rect" id="Node000019" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS)." alt="" coords="164,487,334,515"/>
+<area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="66,358,102,414,128,446,159,472,170,480,165,481,156,476,125,449,98,418,66,363"/>
+<area shape="rect" id="Node000020" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains." alt="" coords="177,643,322,671"/>
+<area shape="poly" id="edge28_Node000001_Node000020" title=" " alt="" coords="60,358,67,411,82,483,94,522,111,561,133,597,160,628,166,636,161,635,156,632,128,600,106,563,89,524,77,484,62,412,59,363"/>
+<area shape="rect" id="Node000022" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config." alt="" coords="186,539,312,567"/>
+<area shape="poly" id="edge31_Node000001_Node000022" title=" " alt="" coords="63,358,76,393,95,438,123,484,159,524,174,535,169,536,156,528,118,488,90,440,71,395,63,363"/>
+<area shape="rect" id="Node000023" href="$mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title=" " alt="" coords="162,282,337,310"/>
+<area shape="poly" id="edge34_Node000001_Node000023" title=" " alt="" coords="108,330,181,312,178,316,112,335"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="331,405,407,416,402,418,332,410"/>
+<area shape="rect" id="Node000006" href="$mt9f002_8c.html#ab41e57b410403e028ec59beccdc6c912" title="Blocking I2C transaction with result check and retry." alt="" coords="581,474,682,502"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="500,435,581,468,576,468,500,441"/>
+<area shape="rect" id="Node000007" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="730,447,907,475"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="682,478,717,475,711,476,683,483"/>
+<area shape="rect" id="Node000011" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="736,499,900,527"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="682,492,723,500,718,500,682,497"/>
+<area shape="rect" id="Node000008" href="$i2c_8c.html#af66a9fa6eead1af9c6ceb1add1ece0af" title=" " alt="" coords="955,474,1109,502"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="907,469,942,476,937,476,907,475"/>
+<area shape="rect" id="Node000009" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1204,447,1296,475"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1110,476,1191,468,1186,469,1110,481"/>
+<area shape="rect" id="Node000010" href="$chibios_2modules_2core_2threads__arch_8c.html#a444f179e6888d3c82906064808a96e90" title="Wait on semaphore no more than timeout." alt="" coords="1157,499,1343,527"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1110,494,1144,500,1139,500,1110,499"/>
+<area shape="poly" id="edge11_Node000011_Node000008" title=" " alt="" coords="900,501,942,498,937,499,901,506"/>
+<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="331,437,407,429,402,431,332,442"/>
+<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="321,152,343,164,368,190,389,219,423,282,445,344,457,395,452,394,440,346,418,285,385,222,364,193,339,168,322,157"/>
+<area shape="poly" id="edge17_Node000014_Node000005" title=" " alt="" coords="320,203,343,216,383,258,415,306,438,354,454,395,448,394,433,356,410,309,379,261,339,220,320,209"/>
+<area shape="poly" id="edge19_Node000015_Node000005" title=" " alt="" coords="317,256,342,268,377,297,406,331,448,396,443,396,402,334,373,301,340,273,318,261"/>
+<area shape="poly" id="edge24_Node000016_Node000005" title=" " alt="" coords="318,588,339,576,356,559,365,541,373,522,387,499,433,450,437,447,391,503,378,524,370,544,361,562,343,580,320,593"/>
+<area shape="rect" id="Node000017" href="$group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468" title=" " alt="" coords="419,591,503,619"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="333,602,406,605,401,605,333,608"/>
+<area shape="rect" id="Node000018" href="$mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register." alt="" coords="422,512,500,540"/>
+<area shape="poly" id="edge22_Node000016_Node000018" title=" " alt="" coords="303,588,340,576,414,548,419,546,342,581,304,593"/>
+<area shape="poly" id="edge23_Node000018_Node000006" title=" " alt="" coords="500,515,569,502,564,503,502,520"/>
+<area shape="poly" id="edge27_Node000019_Node000005" title=" " alt="" coords="302,484,340,472,418,443,413,445,342,477,305,489"/>
+<area shape="poly" id="edge26_Node000019_Node000018" title=" " alt="" coords="335,509,409,519,404,520,335,514"/>
+<area shape="poly" id="edge30_Node000020_Node000005" title=" " alt="" coords="322,640,339,628,352,613,360,599,367,569,372,537,387,500,408,471,431,450,435,446,412,474,391,502,377,538,372,570,365,601,357,616,343,632,324,645"/>
+<area shape="rect" id="Node000021" href="$mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50." alt="" coords="389,643,533,671"/>
+<area shape="poly" id="edge29_Node000020_Node000021" title=" " alt="" coords="323,654,376,657,371,657,323,660"/>
+<area shape="poly" id="edge33_Node000022_Node000005" title=" " alt="" coords="311,536,340,524,393,487,434,451,439,448,396,491,342,529,313,541"/>
+<area shape="poly" id="edge32_Node000022_Node000018" title=" " alt="" coords="312,542,409,532,404,534,313,548"/>
+<area shape="poly" id="edge35_Node000023_Node000005" title=" " alt="" coords="300,307,342,325,394,361,438,399,432,399,391,365,340,330,301,313"/>
 </map>

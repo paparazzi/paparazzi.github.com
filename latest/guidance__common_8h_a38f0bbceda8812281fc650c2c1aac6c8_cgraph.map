@@ -1,48 +1,48 @@
 <map id="v_ctl_climb_loop" name="v_ctl_climb_loop">
-<area shape="rect" id="Node000001" title="Auto&#45;throttle inner loop." alt="" coords="5,235,136,260"/>
-<area shape="rect" id="Node000002" href="$energy__ctrl_8c.html#a1fca0891379c02432d10e73daef730d3" title=" " alt="" coords="239,5,363,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,234,85,197,107,147,139,94,159,69,182,48,202,35,224,27,226,32,205,40,186,52,163,73,143,97,112,149,90,199,78,235"/>
-<area shape="rect" id="Node000004" href="$group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="483,107,638,132"/>
-<area shape="poly" id="edge17_Node000001_Node000004" title=" " alt="" coords="74,233,88,202,110,162,142,122,161,105,183,92,225,75,270,66,316,63,362,65,447,80,515,100,513,105,446,85,362,71,317,69,271,71,227,80,185,96,164,110,146,126,115,165,93,205,79,235"/>
-<area shape="rect" id="Node000007" href="$autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status" alt="" coords="233,255,368,295"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="137,253,220,263,219,268,136,258"/>
-<area shape="rect" id="Node000008" href="$energy__ctrl_8c.html#ad583c655b2e3c499eb34f7e93e4cb1b1" title=" " alt="" coords="241,320,360,345"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="93,258,135,282,185,305,228,318,227,323,183,310,132,286,91,262"/>
-<area shape="rect" id="Node000009" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="227,369,374,395"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="83,258,124,306,153,332,185,354,215,366,213,371,183,359,149,337,120,310,79,262"/>
-<area shape="rect" id="Node000011" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="184,419,417,444"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="79,259,94,289,116,329,147,370,186,404,198,411,195,415,182,408,143,373,112,332,89,292,75,261"/>
-<area shape="rect" id="Node000013" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="199,472,402,497"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="77,259,89,298,110,351,142,407,162,433,186,455,201,464,198,469,182,459,158,436,137,410,105,353,84,300,72,261"/>
-<area shape="rect" id="Node000018" href="$fixedwing_2guidance_2guidance__v_8c.html#ae1b6858ee2485b993f9f294027dbd032" title="auto throttle inner loop" alt="" coords="189,107,412,132"/>
-<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="80,233,121,187,150,162,183,141,199,134,201,139,185,146,153,166,125,191,84,236"/>
-<area shape="rect" id="Node000019" href="$guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a" title=" " alt="" coords="241,156,360,181"/>
-<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="93,232,134,211,183,190,227,178,229,183,185,195,136,216,95,237"/>
-<area shape="rect" id="Node000021" href="$guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285" title=" " alt="" coords="233,205,368,231"/>
-<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="136,236,219,226,220,231,137,242"/>
-<area shape="rect" id="Node000003" href="$energy__ctrl_8c.html#a9972e848457f4634dbdd1e363fef9315" title=" " alt="" coords="495,5,627,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,15,481,15,481,21,363,21"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="357,28,418,48,475,72,525,98,523,102,473,77,416,52,355,33"/>
-<area shape="rect" id="Node000005" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="711,107,870,132"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="638,117,698,117,698,122,638,122"/>
-<area shape="rect" id="Node000006" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="929,107,1077,132"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="870,117,916,117,916,122,870,122"/>
-<area shape="rect" id="Node000010" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="485,361,637,387"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="374,377,471,374,471,379,374,382"/>
-<area shape="rect" id="Node000012" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="465,411,656,451"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="417,429,451,429,451,434,417,434"/>
-<area shape="rect" id="Node000014" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="477,476,645,501"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="402,484,463,485,463,490,402,489"/>
-<area shape="rect" id="Node000015" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="704,476,877,501"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="645,486,690,486,690,491,645,491"/>
-<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="926,500,1081,525"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="878,496,913,500,912,505,877,501"/>
-<area shape="rect" id="Node000017" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="925,451,1081,476"/>
-<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="877,476,912,472,912,477,878,481"/>
-<area shape="poly" id="edge19_Node000018_Node000004" title=" " alt="" coords="412,117,469,117,469,122,412,122"/>
-<area shape="poly" id="edge22_Node000019_Node000004" title=" " alt="" coords="360,155,479,132,480,137,361,160"/>
-<area shape="rect" id="Node000020" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="485,181,637,207"/>
-<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="361,172,471,183,471,188,360,177"/>
-<area shape="poly" id="edge25_Node000021_Node000004" title=" " alt="" coords="367,204,416,190,521,136,524,141,418,195,369,209"/>
-<area shape="poly" id="edge24_Node000021_Node000020" title=" " alt="" coords="368,209,471,200,471,205,369,214"/>
+<area shape="rect" id="Node000001" title="Auto&#45;throttle inner loop." alt="" coords="5,241,136,269"/>
+<area shape="rect" id="Node000002" href="$energy__ctrl_8c.html#a1fca0891379c02432d10e73daef730d3" title=" " alt="" coords="238,5,362,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,240,85,202,107,150,139,96,159,71,182,49,201,37,225,29,221,33,204,42,185,53,163,74,143,99,111,153,90,204,78,241"/>
+<area shape="rect" id="Node000004" href="$group__state__velocity.html#gad122b245716b0d4800ca89af60c905dd" title="Get ground speed in local ENU coordinates (float)." alt="" coords="482,107,635,134"/>
+<area shape="poly" id="edge17_Node000001_Node000004" title=" " alt="" coords="74,240,87,208,110,166,141,125,160,107,182,93,224,76,267,67,312,64,356,66,440,79,509,100,504,102,439,85,356,71,312,69,268,72,225,81,185,98,164,111,145,128,114,169,92,210,79,242"/>
+<area shape="rect" id="Node000007" href="$autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status" alt="" coords="233,262,367,307"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="135,261,219,272,215,276,137,266"/>
+<area shape="rect" id="Node000008" href="$energy__ctrl_8c.html#ad583c655b2e3c499eb34f7e93e4cb1b1" title=" " alt="" coords="241,331,358,358"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="92,267,135,293,185,317,229,331,224,333,183,322,132,297,93,272"/>
+<area shape="rect" id="Node000009" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="227,383,373,410"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="81,267,124,317,153,345,185,368,214,381,209,383,182,372,149,349,120,321,81,272"/>
+<area shape="rect" id="Node000011" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="184,435,416,462"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="77,267,93,300,116,342,146,384,185,420,196,428,191,428,182,424,143,388,111,344,89,303,77,272"/>
+<area shape="rect" id="Node000013" href="$group__state__attitude.html#gaa4fb84e753baa3a8812b2bec33df4682" title="Get vehicle body attitude euler angles (float)." alt="" coords="199,491,401,518"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="75,267,89,309,109,364,141,422,162,449,185,472,201,484,196,484,182,476,158,452,137,425,104,367,83,311,75,272"/>
+<area shape="rect" id="Node000018" href="$fixedwing_2guidance_2guidance__v_8c.html#ae1b6858ee2485b993f9f294027dbd032" title="auto throttle inner loop" alt="" coords="189,107,410,134"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="80,239,121,192,150,167,182,145,201,138,197,142,185,149,153,171,125,196,85,242"/>
+<area shape="rect" id="Node000019" href="$guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a" title=" " alt="" coords="241,159,359,186"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="94,239,135,217,183,197,228,185,224,188,185,202,138,222,98,243"/>
+<area shape="rect" id="Node000021" href="$guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285" title=" " alt="" coords="233,211,367,238"/>
+<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="135,244,219,234,215,237,137,249"/>
+<area shape="rect" id="Node000003" href="$energy__ctrl_8c.html#a9972e848457f4634dbdd1e363fef9315" title=" " alt="" coords="493,5,624,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,17,480,18,475,21,363,22"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,31,417,49,471,72,521,99,516,100,469,77,415,54,361,36"/>
+<area shape="rect" id="Node000005" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="708,107,867,134"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="635,118,695,120,690,121,637,123"/>
+<area shape="rect" id="Node000006" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="926,107,1073,134"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="867,118,913,120,908,121,868,123"/>
+<area shape="rect" id="Node000010" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="483,375,634,402"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="373,392,470,391,465,392,374,397"/>
+<area shape="rect" id="Node000012" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="464,426,653,471"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="416,446,451,448,446,449,417,451"/>
+<area shape="rect" id="Node000014" href="$group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c" title="Get vehicle body attitude euler angles (float)." alt="" coords="475,495,642,522"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="401,503,462,507,457,507,401,509"/>
+<area shape="rect" id="Node000015" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="701,495,874,522"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="643,506,688,508,683,509,643,511"/>
+<area shape="rect" id="Node000016" href="$group__math__algebra__float.html#gac08624b7b2fa5bd211e23494fe604a20" title="euler rotation &#39;ZYX&#39;" alt="" coords="923,520,1076,548"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="874,516,910,523,905,523,874,521"/>
+<area shape="rect" id="Node000017" href="$group__math__algebra__float.html#ga685cf76289ef3d550593aaeb853bc248" title=" " alt="" coords="922,468,1077,496"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="874,495,903,494,909,493,874,500"/>
+<area shape="poly" id="edge19_Node000018_Node000004" title=" " alt="" coords="410,118,469,119,464,122,412,123"/>
+<area shape="poly" id="edge22_Node000019_Node000004" title=" " alt="" coords="358,158,474,136,469,139,360,163"/>
+<area shape="rect" id="Node000020" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="483,185,634,213"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="359,176,470,189,465,191,360,181"/>
+<area shape="poly" id="edge25_Node000021_Node000004" title=" " alt="" coords="366,210,415,195,521,141,517,144,417,200,368,215"/>
+<area shape="poly" id="edge24_Node000021_Node000020" title=" " alt="" coords="367,215,470,207,466,209,368,220"/>
 </map>

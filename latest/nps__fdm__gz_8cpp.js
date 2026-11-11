@@ -30,8 +30,8 @@ var nps__fdm__gz_8cpp =
     [ "vect_ned_of_enu", "nps__fdm__gz_8cpp.html#a1b24c6de9f21ba3c101ad3a190adf494", null ],
     [ "fdm", "nps__fdm__gz_8cpp.html#ae64a4e3a8d8202a279b0d36c7a415c84", null ],
     [ "gazebo_actuators", "nps__fdm__gz_8cpp.html#a224224fac62049cbbee496dc127cd616", null ],
-    [ "gz_cmd", "nps__fdm__gz_8cpp.html#a82950310e0a6d221d0bfc438ffe8f872", null ],
-    [ "gz_state", "nps__fdm__gz_8cpp.html#a694188ef071e0701953cb0fa33ad8758", null ],
+    [ "gz_cmd", "nps__fdm__gz_8cpp.html#afce0bb263e9ba390e0a23be34b72ad9c", null ],
+    [ "gz_state", "nps__fdm__gz_8cpp.html#a5ec2c3cb630e8dc5b0afa5ce0b0fa757", null ],
     [ "pprz_system", "nps__fdm__gz_8cpp.html#ae69d17874bc6af6c3a2beb868e8d5cce", null ],
     [ "server", "nps__fdm__gz_8cpp.html#a21dd2df0399e57ef7398e1627f557f7b", null ]
 ];

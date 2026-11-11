@@ -1,27 +1,6 @@
 var searchData=
 [
-  ['pano_5funwrap_20module_0',['pano_unwrap module',['../module__pano_unwrap.html',1,'onboard_modules']]],
-  ['paparazzi_20messages_1',['Paparazzi Messages',['../paparazzi_messages.html',1,'']]],
-  ['paparazzi_20technical_20primers_2',['Paparazzi Technical Primers',['../primer.html',1,'']]],
-  ['parachute_20module_3',['parachute module',['../module__parachute.html',1,'onboard_modules']]],
-  ['parrot_20bebop_3a_20cross_20compilers_4',['Parrot Bebop: cross-compilers',['../md_sw_2airborne_2boards_2bebop_2README.html',1,'']]],
-  ['pca9685_20module_5',['pca9685 module',['../module__pca9685.html',1,'onboard_modules']]],
-  ['pdec_20module_6',['pdec module',['../module__pdec.html',1,'onboard_modules']]],
-  ['pfc_5factuators_20module_7',['pfc_actuators module',['../module__pfc_actuators.html',1,'onboard_modules']]],
-  ['photogrammetry_5fcalculator_20module_8',['photogrammetry_calculator module',['../module__photogrammetry_calculator.html',1,'onboard_modules']]],
-  ['pipe_20module_9',['pipe module',['../module__pipe.html',1,'onboard_modules']]],
-  ['pose_5fhistory_20module_10',['pose_history module',['../module__pose_history.html',1,'onboard_modules']]],
-  ['potential_20module_11',['potential module',['../module__potential.html',1,'onboard_modules']]],
-  ['power_5fswitch_20module_12',['power_switch module',['../module__power_switch.html',1,'onboard_modules']]],
-  ['power_5fuavcan_20module_13',['power_uavcan module',['../module__power_uavcan.html',1,'onboard_modules']]],
-  ['pprzlog_20module_14',['pprzlog module',['../module__pprzlog.html',1,'onboard_modules']]],
-  ['preflight_5fchecks_20module_15',['preflight_checks module',['../module__preflight_checks.html',1,'onboard_modules']]],
-  ['primers_16',['Paparazzi Technical Primers',['../primer.html',1,'']]],
-  ['pump_5fcontrol_20module_17',['pump_control module',['../module__pump_control.html',1,'onboard_modules']]],
-  ['pwm_5fmeas_20module_18',['pwm_meas module',['../module__pwm_meas.html',1,'onboard_modules']]],
-  ['px4_5fflash_20module_19',['px4_flash module',['../module__px4_flash.html',1,'onboard_modules']]],
-  ['px4_5fgimbal_20module_20',['px4_gimbal module',['../module__px4_gimbal.html',1,'onboard_modules']]],
-  ['px4flow_20module_21',['px4flow module',['../module__px4flow.html',1,'onboard_modules']]],
-  ['px4flow_5fi2c_20module_22',['px4flow_i2c module',['../module__px4flow_i2c.html',1,'onboard_modules']]],
-  ['python_20style_20guide_23',['Python Style Guide',['../stylepython.html',1,'styleguide']]]
+  ['key_5fexchange_5fgcs_20id_20159_0',['KEY_EXCHANGE_GCS (ID 159)',['../paparazzi_messages.html#KEY_EXCHANGE_GCS',1,'']]],
+  ['key_5fexchange_5fuav_20id_20239_1',['KEY_EXCHANGE_UAV (ID 239)',['../paparazzi_messages.html#KEY_EXCHANGE_UAV',1,'']]],
+  ['kite_5fcommand_20id_2096_2',['KITE_COMMAND (ID 96)',['../paparazzi_messages.html#KITE_COMMAND',1,'']]]
 ];

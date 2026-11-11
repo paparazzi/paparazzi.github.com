@@ -1,0 +1,41 @@
+<map id="gps_ubx_ucenter_configure_step" name="gps_ubx_ucenter_configure_step">
+<area shape="rect" id="Node000001" title="One configuration step with the interface the receiver supports, false when done." alt="" coords="5,213,239,241"/>
+<area shape="rect" id="Node000002" href="$gps__ubx__ucenter_8c.html#af6f0304a1c44f869e7b3d1bf76e756ae" title="Configure the receiver with the legacy UBX&#45;CFG messages, one step per call (4 Hz)." alt="" coords="287,161,485,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,210,299,191,295,194,197,215"/>
+<area shape="rect" id="Node000017" href="$gps__ubx__ucenter_8c.html#a210f7aa76e04dde48538e54e8dea2674" title="Configure the receiver with UBX&#45;CFG&#45;VALSET, one step per call (4 Hz)." alt="" coords="287,257,485,302"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="196,239,274,256,269,258,196,244"/>
+<area shape="rect" id="Node000003" href="$gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8" title=" " alt="" coords="538,5,746,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,159,451,103,489,71,532,43,551,37,546,40,534,48,492,75,455,107,401,163"/>
+<area shape="rect" id="Node000004" href="$gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664" title=" " alt="" coords="536,57,747,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="409,158,464,127,532,95,559,89,554,91,534,100,466,132,411,163"/>
+<area shape="rect" id="Node000005" href="$gps__ubx__ucenter_8c.html#affc7f9ed07352c71469f8c6d06703691" title=" " alt="" coords="534,109,749,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="457,158,558,140,553,142,458,163"/>
+<area shape="rect" id="Node000006" href="$gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb" title="Enable u&#45;blox message at desired period." alt="" coords="533,161,750,189"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="485,173,520,175,515,176,486,178"/>
+<area shape="rect" id="Node000007" href="$gps__ubx__ucenter_8c.html#a60db8923014e5352e3eac6d075c368d0" title="Send the configuration replies (DEBUG message) and the receiver information to the ground." alt="" coords="541,213,742,241"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="458,187,558,209,552,210,458,192"/>
+<area shape="rect" id="Node000009" href="$linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title=" " alt="" coords="548,265,735,293"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="410,187,466,219,534,250,559,261,554,261,532,255,464,223,410,192"/>
+<area shape="rect" id="Node000008" href="$gps__ubx__ucenter_8c.html#a7354d56f9c46970c828fa1f387bf2e1f" title="Satellite systems in use: from the satellites in the solution (UBX&#45;NAV&#45;SAT), else as reported by UBX&#45;..." alt="" coords="805,213,974,241"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="742,225,792,227,787,227,743,230"/>
+<area shape="rect" id="Node000010" href="$serial__port_8c.html#af25145952d87a0f805da05e7ceb3e5a8" title=" " alt="" coords="798,317,981,345"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="711,291,808,314,802,314,711,296"/>
+<area shape="rect" id="Node000011" href="$linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title=" " alt="" coords="822,265,957,293"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="736,277,809,279,804,279,736,282"/>
+<area shape="rect" id="Node000012" href="$serial__port_8c.html#a436c287d25989f374ec728048a371b93" title=" " alt="" coords="1043,187,1174,214"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="945,262,980,250,1028,225,1044,221,1049,219,1030,230,982,255,946,267"/>
+<area shape="rect" id="Node000013" href="$serial__port_8c.html#a2c010011ea7396568f40b0137dcbf646" title=" " alt="" coords="1047,239,1170,266"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="957,268,1034,262,1029,262,957,274"/>
+<area shape="rect" id="Node000014" href="$serial__port_8c.html#ab39738124bd5f6fa6862d853e3c2926e" title=" " alt="" coords="1047,291,1171,318"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="957,284,1034,296,1028,296,957,290"/>
+<area shape="rect" id="Node000015" href="$serial__port_8c.html#a69092c80559cd279bfd046d53b25fefd" title=" " alt="" coords="1029,343,1189,370"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="945,291,982,303,1030,327,1050,337,1044,337,1028,332,980,308,945,296"/>
+<area shape="rect" id="Node000016" href="$serial__port_8c.html#afafe7988057b4462cafea02de41b6488" title=" " alt="" coords="1237,343,1365,370"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1189,354,1224,356,1219,357,1190,359"/>
+<area shape="poly" id="edge17_Node000017_Node000007" title=" " alt="" coords="485,256,558,244,553,245,486,262"/>
+<area shape="poly" id="edge20_Node000017_Node000009" title=" " alt="" coords="485,277,535,279,530,280,486,282"/>
+<area shape="rect" id="Node000018" href="$gps__ubx__ucenter_8c.html#a3f4b2751d51fb9c3cf524fe6f53a8348" title="Set one configuration item in RAM." alt="" coords="552,317,731,345"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="486,297,558,314,553,314,485,302"/>
+<area shape="rect" id="Node000019" href="$gps__ubx__ucenter_8c.html#ae07e6dd46cca2a11910bc730c76353b2" title="Key of a configuration item for the port the autopilot is connected to, 0 when it doesn&#39;t apply." alt="" coords="538,369,746,397"/>
+<area shape="poly" id="edge19_Node000017_Node000019" title=" " alt="" coords="425,300,476,328,534,354,559,365,554,364,532,359,474,333,424,305"/>
+</map>

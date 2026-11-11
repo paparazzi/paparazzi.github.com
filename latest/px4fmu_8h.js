@@ -121,6 +121,12 @@ var px4fmu_8h =
     [ "USE_LED_1", "px4fmu_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "px4fmu_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
     [ "USE_LED_3", "px4fmu_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],
+    [ "USE_PWM1", "px4fmu_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65", null ],
+    [ "USE_PWM2", "px4fmu_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737", null ],
+    [ "USE_PWM3", "px4fmu_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a", null ],
+    [ "USE_PWM4", "px4fmu_8h.html#a8899afdbd830cb0b81968fc660291934", null ],
+    [ "USE_PWM5", "px4fmu_8h.html#a402c216e512bc4a39616400af32b7c7f", null ],
+    [ "USE_PWM6", "px4fmu_8h.html#a460087c9ad1cc47d89c51536be5d9a72", null ],
     [ "USE_PWM_TIM1", "px4fmu_8h.html#a77be6fa093ec574ca4b520e7cf5f712c", null ],
     [ "USE_PWM_TIM4", "px4fmu_8h.html#afeadf07b12eaf0734ffdb1d057a59159", null ]
 ];

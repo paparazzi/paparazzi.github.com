@@ -12,7 +12,7 @@ var dshot__rpmCapture_8c =
     [ "processErpsDmaBuffer", "dshot__rpmCapture_8c.html#a1373cdf0419ab22527dc4e5709135c49", null ],
     [ "startCapture", "dshot__rpmCapture_8c.html#a5d315c80fe968d1b01583ca9bbe369ef", null ],
     [ "stopCapture", "dshot__rpmCapture_8c.html#aeba6301c30798a9d773d277849db3022", null ],
-    [ "activeDier", "dshot__rpmCapture_8c.html#a71c99ddee590cb16a5d155d0436b138f", null ],
+    [ "activeDier", "dshot__rpmCapture_8c.html#afff85f75e391561bfb43b5c64338c70f", null ],
     [ "bit1t_us", "dshot__rpmCapture_8c.html#a7c188e0c6b88af64c79372ea17d152d2", null ],
     [ "ERPS_BIT1_DUTY", "dshot__rpmCapture_8c.html#a02d77eae1aec5c5afda86b517195d847", null ],
     [ "gptCfg", "dshot__rpmCapture_8c.html#a4df387d9195f8be14edebe1ab1a5d7e0", null ],
