@@ -222,6 +222,9 @@ Macros</h2></td></tr>
 <tr class="separator:ad046b524185790197e59a701e851d8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1d54587c14aa30efccbbb680793bf1" id="r_a3b1d54587c14aa30efccbbb680793bf1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a3b1d54587c14aa30efccbbb680793bf1">SDLOG_ENABLE_LOWBAT_FLUSH</a>&#160;&#160;&#160;<a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="separator:a3b1d54587c14aa30efccbbb680793bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49fd1aa4c54ff8fa78acee506265c91" id="r_aa49fd1aa4c54ff8fa78acee506265c91"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aa49fd1aa4c54ff8fa78acee506265c91">SDLOG_CONF</a>&#160;&#160;&#160;<a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:aa49fd1aa4c54ff8fa78acee506265c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the configuration of the firmware next to the logs (PPRZ/&lt;md5&gt;_&lt;aircraft&gt;.conf.gz), so sd2log can decode them without the var/conf of the computer that built the firmware.  <br /></td></tr>
+<tr class="separator:aa49fd1aa4c54ff8fa78acee506265c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -238,6 +241,9 @@ Functions</h2></td></tr>
 <tr class="separator:a7443f49b66b998087c9e0446778e0ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf4c749454b496e749b47e614750109" id="r_a7cf4c749454b496e749b47e614750109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109">thd_startlog</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> *arg)</td></tr>
 <tr class="separator:a7cf4c749454b496e749b47e614750109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e1dc6c6552909bca46901dd5c89c0d" id="r_a96e1dc6c6552909bca46901dd5c89c0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a96e1dc6c6552909bca46901dd5c89c0d">sdlog_report_status</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *trans, struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
+<tr class="memdesc:a96e1dc6c6552909bca46901dd5c89c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and every time it goes into error later, and when the configuration could not be written.  <br /></td></tr>
+<tr class="separator:a96e1dc6c6552909bca46901dd5c89c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5718683acb8a55505ba1c50c48028102" id="r_a5718683acb8a55505ba1c50c48028102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102">send_sdlog_status</a> (struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *trans, struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="separator:a5718683acb8a55505ba1c50c48028102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e0212194e97b3ce260678d968a368e9" id="r_a6e0212194e97b3ce260678d968a368e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9">sdlog_check_free_space</a> (struct <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog">chibios_sdlog</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">long</a> *<a class="el" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
@@ -259,6 +265,9 @@ Functions</h2></td></tr>
 <tr class="separator:aeeba7682db35a9becddc07935f5d256a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9b049b6368d8306e16bad97dd30b91" id="r_a9f9b049b6368d8306e16bad97dd30b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91">sdlog_chibios_finish</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">flush</a>)</td></tr>
 <tr class="separator:a9f9b049b6368d8306e16bad97dd30b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa929387b2d3e59e18ba23d797d5a789f" id="r_aa929387b2d3e59e18ba23d797d5a789f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aa929387b2d3e59e18ba23d797d5a789f">sdlog_start_failed</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *<a class="el" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>, <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> err)</td></tr>
+<tr class="memdesc:aa929387b2d3e59e18ba23d797d5a789f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep why the start failed (the first failing step only)  <br /></td></tr>
+<tr class="separator:aa929387b2d3e59e18ba23d797d5a789f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2735648e3811dabee7dc1e995fb175" id="r_a6f2735648e3811dabee7dc1e995fb175"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a6f2735648e3811dabee7dc1e995fb175">logger_log_msg_up</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a6f2735648e3811dabee7dc1e995fb175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -268,6 +277,19 @@ Variables</h2></td></tr>
 <tr class="separator:ace5244a4001a7470da6fafbb2b4be96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9988fa9164781fcdba3d62a105567140" id="r_a9988fa9164781fcdba3d62a105567140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a9988fa9164781fcdba3d62a105567140">PPRZ_LOG_DIR</a> [] = &quot;PPRZ&quot;</td></tr>
 <tr class="separator:a9988fa9164781fcdba3d62a105567140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f308680e33b05a9490e2eb7d271c221" id="r_a3f308680e33b05a9490e2eb7d271c221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a3f308680e33b05a9490e2eb7d271c221">sdlog_conf_error</a> = <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a></td></tr>
+<tr class="memdesc:a3f308680e33b05a9490e2eb7d271c221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of writing the configuration, reported to the GCS.  <br /></td></tr>
+<tr class="separator:a3f308680e33b05a9490e2eb7d271c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ea5e42178036225475ee977ecb9f0d" id="r_a60ea5e42178036225475ee977ecb9f0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a60ea5e42178036225475ee977ecb9f0d">sdlog_start_error</a> = <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a></td></tr>
+<tr class="separator:a60ea5e42178036225475ee977ecb9f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24e5f5c972a61aeffacf622d40d0afd" id="r_af24e5f5c972a61aeffacf622d40d0afd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#af24e5f5c972a61aeffacf622d40d0afd">sdlog_start_step</a> = &quot;&quot;</td></tr>
+<tr class="separator:af24e5f5c972a61aeffacf622d40d0afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c29aa509b6c26a4ed7d3f0a1749595c" id="r_a3c29aa509b6c26a4ed7d3f0a1749595c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a3c29aa509b6c26a4ed7d3f0a1749595c">sdlog_start_fatfs</a> = 0</td></tr>
+<tr class="separator:a3c29aa509b6c26a4ed7d3f0a1749595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71904ac5af4719f1322da211615df611" id="r_a71904ac5af4719f1322da211615df611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a71904ac5af4719f1322da211615df611">sdlog_error_events</a> = 0</td></tr>
+<tr class="separator:a71904ac5af4719f1322da211615df611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bde64412896601340ccef51b701a23c" id="r_a9bde64412896601340ccef51b701a23c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a9bde64412896601340ccef51b701a23c">sdlog_error_cause</a> = <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a></td></tr>
+<tr class="separator:a9bde64412896601340ccef51b701a23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad116324820ef24ee1595a44cacb96b71" id="r_ad116324820ef24ee1595a44cacb96b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71">sdOk</a> = <a class="el" href="microrl_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="separator:ad116324820ef24ee1595a44cacb96b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa98230ec7c62b75b008363356fdefb4d" id="r_aa98230ec7c62b75b008363356fdefb4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d">pprzLogFile</a> = -1</td></tr>
@@ -313,6 +335,24 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00062">62</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+</div>
+</div>
+<a id="aa49fd1aa4c54ff8fa78acee506265c91" name="aa49fd1aa4c54ff8fa78acee506265c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49fd1aa4c54ff8fa78acee506265c91">&#9670;&#160;</a></span>SDLOG_CONF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">define</a> SDLOG_CONF&#160;&#160;&#160;<a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the configuration of the firmware next to the logs (PPRZ/&lt;md5&gt;_&lt;aircraft&gt;.conf.gz), so sd2log can decode them without the var/conf of the computer that built the firmware. </p>
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00086">86</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -384,7 +424,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a3ee4e9f70475f3c684c23241163781aba08a31ba2db7b38b09104ea752c3dbdf6" name="a3ee4e9f70475f3c684c23241163781aba08a31ba2db7b38b09104ea752c3dbdf6"></a>SDLOG_ERROR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00103">103</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00122">122</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -417,11 +457,11 @@ Variables</h2></td></tr>
 
 <p>init <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog" title="chibios_sdlog structure">chibios_sdlog</a> structure </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00188">188</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00247">247</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00186">null_byte_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00185">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00179">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00164">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00172">sdlog_transmit_buffer()</a>.</p>
+<p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00245">null_byte_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00244">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00211">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00238">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00223">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00231">sdlog_transmit_buffer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -505,9 +545,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00392">392</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00482">482</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00048">DEST_INFO_MSG_ALL</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00050">DEST_INFO_MSG_PPRZLOG</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00091">pprzLogFile</a>, <a class="el" href="sdlog__linux_8c_source.html#l00154">sdLogWriteByte()</a>, and <a class="el" href="sdlog__linux_8c_source.html#l00148">sdLogWriteRaw()</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00048">DEST_INFO_MSG_ALL</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00050">DEST_INFO_MSG_PPRZLOG</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00110">pprzLogFile</a>, <a class="el" href="sdlog__linux_8c_source.html#l00176">sdLogWriteByte()</a>, and <a class="el" href="sdlog__linux_8c_source.html#l00170">sdLogWriteRaw()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -515,20 +555,22 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a6f2735648e3811dabee7dc1e995fb175_cgraph.png" border="0" usemap="#asdlog__chibios_8c_a6f2735648e3811dabee7dc1e995fb175_cgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_a6f2735648e3811dabee7dc1e995fb175_cgraph" id="asdlog__chibios_8c_a6f2735648e3811dabee7dc1e995fb175_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,153,80"/>
-<area shape="rect" href="sdlog__linux_8c.html#a83cecacc1fb35d1270e03c3f7b9a990c" title=" " alt="" coords="201,29,327,55"/>
-<area shape="poly" title=" " alt="" coords="153,55,187,50,188,55,154,60"/>
-<area shape="rect" href="sdlog__linux_8c.html#ab18ae5a308d3485f3a6c40ec2ab3a5f0" title=" " alt="" coords="203,79,325,104"/>
-<area shape="poly" title=" " alt="" coords="154,74,189,79,189,84,153,80"/>
-<area shape="rect" href="sdlog__linux_8c.html#a54463e3eaef7b3a74b09bf7c3e7493e9" title=" " alt="" coords="375,55,472,80"/>
-<area shape="poly" title=" " alt="" coords="327,49,361,55,360,60,326,55"/>
+<area shape="rect" title=" " alt="" coords="5,80,153,105"/>
+<area shape="rect" href="sdlog__linux_8c.html#a83cecacc1fb35d1270e03c3f7b9a990c" title=" " alt="" coords="201,55,327,80"/>
+<area shape="poly" title=" " alt="" coords="153,80,187,75,188,80,154,85"/>
+<area shape="rect" href="sdlog__linux_8c.html#ab18ae5a308d3485f3a6c40ec2ab3a5f0" title=" " alt="" coords="203,104,325,129"/>
+<area shape="poly" title=" " alt="" coords="154,100,189,104,189,110,153,105"/>
+<area shape="rect" href="sdlog__linux_8c.html#a54463e3eaef7b3a74b09bf7c3e7493e9" title=" " alt="" coords="375,80,472,105"/>
+<area shape="poly" title=" " alt="" coords="327,75,361,80,360,85,326,80"/>
 <area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="520,5,665,31"/>
-<area shape="poly" title=" " alt="" coords="467,52,534,32,535,37,468,57"/>
-<area shape="rect" href="sdlog__linux_8c.html#a34c8df496ed3bfb2b84bddfb7331bad0" title=" " alt="" coords="551,55,635,80"/>
-<area shape="poly" title=" " alt="" coords="472,65,537,65,537,70,472,70"/>
-<area shape="rect" href="sdlog__linux_8c.html#a2228c14619046b4abaf1d9eeb0da6f9c" title=" " alt="" coords="521,104,664,129"/>
-<area shape="poly" title=" " alt="" coords="468,77,535,97,534,102,467,83"/>
-<area shape="poly" title=" " alt="" coords="325,79,361,74,361,79,326,85"/>
+<area shape="poly" title=" " alt="" coords="445,78,519,40,536,33,538,38,521,44,447,82"/>
+<area shape="rect" href="sdlog__linux_8c.html#a1c7978b19b9c48780aa2c0f4b1f5ea0c" title="Error of a failed write or close: only a full disk is &quot;SD card full&quot;." alt="" coords="525,55,661,80"/>
+<area shape="poly" title=" " alt="" coords="472,83,510,77,511,82,473,88"/>
+<area shape="rect" href="sdlog__linux_8c.html#a34c8df496ed3bfb2b84bddfb7331bad0" title=" " alt="" coords="551,104,635,129"/>
+<area shape="poly" title=" " alt="" coords="473,97,537,106,537,111,472,102"/>
+<area shape="rect" href="sdlog__linux_8c.html#a2228c14619046b4abaf1d9eeb0da6f9c" title=" " alt="" coords="521,153,664,179"/>
+<area shape="poly" title=" " alt="" coords="448,103,521,140,538,146,536,151,519,144,446,108"/>
+<area shape="poly" title=" " alt="" coords="325,105,361,99,361,105,326,110"/>
 </map>
 </div>
 
@@ -558,9 +600,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00186">186</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00245">245</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -606,9 +648,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00185">185</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00244">244</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -670,11 +712,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00152">152</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00211">211</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -712,9 +754,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00223">223</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00282">282</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00091">pprzLogFile</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00104">SDLOG_STOPPED</a>, and <a class="el" href="sdLog_8c_source.html#l00285">sdLogFinish()</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00110">pprzLogFile</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00123">SDLOG_STOPPED</a>, and <a class="el" href="sdLog_8c_source.html#l00307">sdLogFinish()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="usbStorage_8c_source.html#l00100">thdUsbStorage()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -764,9 +806,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00203">203</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00262">262</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00104">SDLOG_STOPPED</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00134">send_sdlog_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>, and <a class="el" href="usbStorage_8c_source.html#l00076">usbStorageStartPolling()</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00123">SDLOG_STOPPED</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>, and <a class="el" href="usbStorage_8c_source.html#l00076">usbStorageStartPolling()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -774,114 +816,191 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph.png" border="0" usemap="#asdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph" id="asdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,129,144,155"/>
-<area shape="rect" href="preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="204,31,383,56"/>
-<area shape="poly" title=" " alt="" coords="90,127,134,96,191,65,211,57,213,62,193,70,137,100,93,131"/>
-<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,80,395,105"/>
-<area shape="poly" title=" " alt="" coords="131,127,222,106,224,111,132,132"/>
-<area shape="rect" href="sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102" title=" " alt="" coords="222,129,365,155"/>
-<area shape="poly" title=" " alt="" coords="144,139,208,139,208,145,144,145"/>
-<area shape="rect" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title=" " alt="" coords="243,203,343,228"/>
-<area shape="poly" title=" " alt="" coords="114,152,243,196,241,201,113,157"/>
-<area shape="rect" href="usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title=" " alt="" coords="208,408,379,433"/>
-<area shape="poly" title=" " alt="" coords="88,153,276,396,272,399,84,156"/>
-<area shape="rect" href="sdlog__linux_8c.html#ab662963b6e696a6ecd406802c176c947" title=" " alt="" coords="443,39,643,79"/>
-<area shape="poly" title=" " alt="" coords="354,127,394,114,418,102,442,89,460,82,462,87,444,94,420,107,396,119,355,132"/>
-<area shape="rect" href="sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="455,104,630,129"/>
-<area shape="poly" title=" " alt="" coords="364,132,442,124,442,130,365,137"/>
-<area shape="poly" title=" " alt="" coords="320,200,393,164,417,150,442,138,465,130,467,136,444,143,420,155,396,168,322,205"/>
-<area shape="rect" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure" alt="" coords="473,203,612,228"/>
-<area shape="poly" title=" " alt="" coords="343,213,460,213,460,218,343,218"/>
-<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="499,252,586,277"/>
-<area shape="poly" title=" " alt="" coords="344,222,486,251,485,256,343,228"/>
-<area shape="rect" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd" alt="" coords="471,301,615,327"/>
-<area shape="poly" title=" " alt="" coords="318,226,374,255,444,286,471,295,469,300,442,291,372,260,315,230"/>
-<area shape="rect" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog" alt="" coords="502,376,583,401"/>
-<area shape="poly" title=" " alt="" coords="310,226,367,277,444,336,501,368,499,372,441,340,363,281,306,230"/>
-<area shape="rect" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title=" " alt="" coords="459,153,627,179"/>
-<area shape="poly" title=" " alt="" coords="343,203,464,179,465,184,344,208"/>
-<area shape="rect" href="sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690" title=" " alt="" coords="724,203,867,228"/>
-<area shape="poly" title=" " alt="" coords="612,213,710,213,710,218,612,218"/>
-<area shape="rect" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title=" " alt="" coords="742,252,849,277"/>
-<area shape="poly" title=" " alt="" coords="609,225,729,249,728,254,608,231"/>
-<area shape="rect" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title=" " alt="" coords="705,5,885,31"/>
-<area shape="poly" title=" " alt="" coords="611,205,627,198,641,188,655,171,662,153,664,116,666,78,674,58,689,40,694,36,697,40,693,44,678,61,671,79,669,116,667,154,659,173,645,192,630,203,613,210"/>
-<area shape="rect" href="sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title=" " alt="" coords="748,55,843,80"/>
-<area shape="poly" title=" " alt="" coords="611,204,641,188,652,177,658,165,664,140,670,114,677,101,689,89,710,77,733,69,735,75,712,82,692,93,681,105,675,116,669,141,663,167,656,180,644,192,614,208"/>
-<area shape="rect" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title=" " alt="" coords="736,104,855,129"/>
-<area shape="poly" title=" " alt="" coords="611,201,641,188,656,176,664,164,674,151,689,138,722,125,724,130,692,143,678,154,669,167,660,180,644,192,613,205"/>
-<area shape="rect" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title=" " alt="" coords="713,153,877,179"/>
-<area shape="poly" title=" " alt="" coords="608,200,715,179,716,184,609,205"/>
-<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="744,301,847,327"/>
-<area shape="poly" title=" " alt="" coords="587,270,731,299,730,304,586,276"/>
-<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="990,301,1037,327"/>
-<area shape="poly" title=" " alt="" coords="847,311,977,311,977,317,847,317"/>
-<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="1133,294,1283,334"/>
-<area shape="poly" title=" " alt="" coords="1037,311,1120,311,1120,317,1037,317"/>
-<area shape="rect" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="736,400,855,425"/>
-<area shape="poly" title=" " alt="" coords="584,390,723,403,722,408,583,395"/>
-<area shape="rect" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="742,449,849,475"/>
-<area shape="poly" title=" " alt="" coords="580,399,691,435,729,445,728,450,690,441,578,404"/>
-<area shape="rect" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="732,351,859,376"/>
-<area shape="poly" title=" " alt="" coords="583,382,718,368,719,374,584,387"/>
-<area shape="rect" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title=" " alt="" coords="483,588,602,613"/>
-<area shape="poly" title=" " alt="" coords="314,431,514,577,511,582,311,436"/>
-<area shape="poly" title=" " alt="" coords="555,586,610,537,648,509,690,485,727,471,729,476,692,490,651,513,613,541,558,590"/>
-<area shape="rect" href="usb__msd_8c.html#af6995e11a18decb9478ad798000d60ca" title=" " alt="" coords="726,613,865,639"/>
-<area shape="poly" title=" " alt="" coords="603,604,712,615,712,620,602,609"/>
-<area shape="rect" href="usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title=" " alt="" coords="734,663,857,688"/>
-<area shape="poly" title=" " alt="" coords="578,611,691,649,722,657,720,662,690,654,577,616"/>
-<area shape="rect" href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa" title="Reboot the MCU." alt="" coords="746,712,845,737"/>
-<area shape="poly" title=" " alt="" coords="560,611,616,654,653,678,692,698,733,712,731,717,690,703,650,683,613,659,557,616"/>
-<area shape="rect" href="usb__msd_8c.html#a9ad360964cf29c17ffda4847ea88c2f3" title="register connected event source in local event mask" alt="" coords="691,761,900,787"/>
-<area shape="poly" title=" " alt="" coords="555,612,607,677,647,716,692,748,705,754,703,759,689,752,643,720,603,681,550,615"/>
-<area shape="rect" href="main__chibios_8c.html#ab187dc37cfd9ba19180b8d99905dd2e3" title="Terminate all autopilot threads Wait until proper stop." alt="" coords="702,499,889,539"/>
-<area shape="poly" title=" " alt="" coords="582,585,690,550,718,541,720,546,691,555,583,591"/>
-<area shape="rect" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title=" " alt="" coords="719,564,871,589"/>
-<area shape="poly" title=" " alt="" coords="602,592,706,582,706,588,603,598"/>
-<area shape="rect" href="usb__msd_8c.html#aaa1c1d04bba912b3ae2b6806f8ed4fdc" title="Stops a USB mass storage driver." alt="" coords="974,613,1053,639"/>
-<area shape="poly" title=" " alt="" coords="865,623,960,623,960,629,865,629"/>
-<area shape="rect" href="usb__msd_8c.html#a9030d48fbe74f8689d41984bd08edf51" title="Initializse a USB mass storage driver." alt="" coords="978,663,1049,688"/>
-<area shape="poly" title=" " alt="" coords="857,673,964,673,964,678,857,678"/>
-<area shape="rect" href="usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver." alt="" coords="973,712,1054,737"/>
-<area shape="poly" title=" " alt="" coords="853,685,960,710,958,715,852,691"/>
-<area shape="rect" href="usb__msd_8c.html#a218498e8fe29b8470ad71b25f61ca783" title=" " alt="" coords="1143,663,1273,688"/>
-<area shape="poly" title=" " alt="" coords="1049,673,1129,673,1129,678,1049,678"/>
-<area shape="rect" href="usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="Mass storage thread that processes commands." alt="" coords="1127,712,1289,737"/>
-<area shape="poly" title=" " alt="" coords="1054,722,1113,722,1113,727,1054,727"/>
-<area shape="rect" href="usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block." alt="" coords="1337,559,1537,584"/>
-<area shape="poly" title=" " alt="" coords="1263,709,1288,698,1325,674,1360,646,1414,592,1418,596,1364,650,1329,678,1291,703,1265,714"/>
-<area shape="rect" href="usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information." alt="" coords="1828,529,1983,555"/>
-<area shape="poly" title=" " alt="" coords="1231,735,1324,786,1390,815,1466,841,1546,859,1627,865,1667,862,1706,854,1743,840,1779,821,1809,796,1833,766,1854,731,1869,695,1890,624,1899,568,1904,569,1895,625,1874,697,1858,734,1838,769,1812,800,1781,826,1745,845,1707,859,1668,867,1627,870,1545,864,1464,846,1388,820,1321,790,1228,740"/>
-<area shape="rect" href="usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called." alt="" coords="1839,329,1972,355"/>
-<area shape="poly" title=" " alt="" coords="1272,710,1288,699,1302,681,1310,663,1316,628,1319,589,1324,568,1335,546,1388,461,1436,397,1464,370,1496,346,1536,324,1584,302,1621,291,1659,286,1698,285,1736,289,1806,304,1863,322,1861,327,1805,309,1735,294,1697,291,1659,291,1622,296,1586,307,1538,329,1499,351,1467,374,1440,400,1392,464,1340,549,1329,570,1324,590,1321,628,1316,665,1307,684,1291,703,1275,714"/>
-<area shape="rect" href="usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block." alt="" coords="1346,886,1529,926"/>
-<area shape="poly" title=" " alt="" coords="1220,736,1266,797,1300,833,1339,865,1361,878,1358,882,1336,870,1297,837,1262,800,1216,739"/>
-<area shape="rect" href="usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="1587,479,1778,504"/>
-<area shape="poly" title=" " alt="" coords="1476,556,1629,506,1631,511,1478,561"/>
-<area shape="poly" title=" " alt="" coords="1537,562,1814,545,1814,550,1538,568"/>
-<area shape="rect" href="usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command." alt="" coords="1591,579,1774,619"/>
-<area shape="poly" title=" " alt="" coords="1538,580,1578,585,1578,590,1537,585"/>
-<area shape="rect" href="usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command." alt="" coords="1595,643,1770,683"/>
-<area shape="poly" title=" " alt="" coords="1469,582,1586,629,1607,636,1605,641,1584,634,1467,587"/>
-<area shape="rect" href="usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command." alt="" coords="1595,707,1770,747"/>
-<area shape="poly" title=" " alt="" coords="1452,582,1507,635,1545,666,1587,693,1599,699,1597,704,1584,698,1542,670,1504,639,1449,586"/>
-<area shape="rect" href="usb__msd_8c.html#adcf34e8664fce2f0676aa631a73e53f3" title="Processes a REQUEST_SENSE SCSI command." alt="" coords="1585,350,1780,390"/>
-<area shape="poly" title=" " alt="" coords="1444,557,1497,483,1537,439,1584,400,1593,394,1596,399,1587,404,1541,442,1501,486,1449,560"/>
-<area shape="poly" title=" " alt="" coords="1439,558,1454,513,1482,450,1501,417,1525,386,1552,358,1584,336,1617,321,1652,312,1724,306,1792,312,1850,323,1849,329,1791,317,1723,311,1653,317,1619,326,1587,340,1556,362,1529,389,1506,420,1487,453,1459,515,1445,559"/>
-<area shape="rect" href="usb__msd_8c.html#adde97b16d8281aeca3a016ce27fd4c24" title="Processes a SEND_DIAGNOSTIC SCSI command." alt="" coords="1594,771,1771,811"/>
-<area shape="poly" title=" " alt="" coords="1448,583,1467,618,1498,665,1539,714,1587,757,1596,763,1593,767,1584,761,1535,718,1494,668,1463,621,1443,586"/>
-<area shape="rect" href="usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command." alt="" coords="1595,414,1771,454"/>
-<area shape="poly" title=" " alt="" coords="1452,556,1508,513,1584,465,1602,457,1604,462,1587,470,1511,517,1455,561"/>
-<area shape="poly" title=" " alt="" coords="1740,502,1836,524,1835,529,1739,507"/>
-<area shape="poly" title=" " alt="" coords="1780,355,1825,349,1825,355,1781,360"/>
-<area shape="poly" title=" " alt="" coords="1760,769,1778,757,1821,712,1854,660,1878,608,1894,567,1899,569,1883,611,1859,662,1825,715,1782,761,1763,773"/>
-<area shape="poly" title=" " alt="" coords="1749,452,1781,465,1832,492,1875,519,1873,524,1829,497,1779,470,1747,457"/>
-<area shape="poly" title=" " alt="" coords="1747,411,1779,400,1867,359,1869,363,1781,404,1749,416"/>
-<area shape="rect" href="chibios_2mcu__arch_8c.html#a1296057f718ade4eeb9674b9c3550cb8" title="Put MCU into deep sleep mode." alt="" coords="948,761,1079,787"/>
-<area shape="poly" title=" " alt="" coords="846,733,944,756,943,761,844,738"/>
-<area shape="rect" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem" alt="" coords="964,564,1063,589"/>
-<area shape="poly" title=" " alt="" coords="871,574,950,574,950,579,871,579"/>
+<area shape="rect" title=" " alt="" coords="5,136,144,161"/>
+<area shape="rect" href="preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="204,37,383,63"/>
+<area shape="poly" title=" " alt="" coords="90,134,134,103,191,72,211,64,213,69,193,76,137,107,93,138"/>
+<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,87,395,112"/>
+<area shape="poly" title=" " alt="" coords="131,133,222,112,224,118,132,139"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102" title=" " alt="" coords="222,136,365,161"/>
+<area shape="poly" title=" " alt="" coords="144,146,208,146,208,151,144,151"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title=" " alt="" coords="243,287,343,312"/>
+<area shape="poly" title=" " alt="" coords="96,159,264,277,261,281,93,164"/>
+<area shape="rect" href="usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title=" " alt="" coords="208,508,379,533"/>
+<area shape="poly" title=" " alt="" coords="86,160,280,495,275,497,81,163"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a96e1dc6c6552909bca46901dd5c89c0d" title="Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and ever..." alt="" coords="467,21,618,47"/>
+<area shape="poly" title=" " alt="" coords="364,135,393,121,408,106,416,90,425,73,441,57,455,50,457,54,444,61,429,76,421,93,413,109,396,126,366,140"/>
+<area shape="rect" href="sdlog__linux_8c.html#ab662963b6e696a6ecd406802c176c947" title=" " alt="" coords="443,71,643,111"/>
+<area shape="poly" title=" " alt="" coords="349,133,441,112,442,117,350,139"/>
+<area shape="rect" href="sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="455,136,630,161"/>
+<area shape="poly" title=" " alt="" coords="365,146,442,146,442,151,365,151"/>
+<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="752,55,839,80"/>
+<area shape="poly" title=" " alt="" coords="619,41,739,57,738,63,618,47"/>
+<area shape="rect" href="sdlog__chibios_8h.html#ac634046a6f16111adb0c93b5b05471b0" title="Human readable cause of a logger error, for the messages to the GCS." alt="" coords="726,5,865,31"/>
+<area shape="poly" title=" " alt="" coords="618,27,712,21,712,26,619,32"/>
+<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="962,55,1065,80"/>
+<area shape="poly" title=" " alt="" coords="839,65,948,65,948,70,839,70"/>
+<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="1185,55,1231,80"/>
+<area shape="poly" title=" " alt="" coords="1065,65,1171,65,1171,70,1065,70"/>
+<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="1363,47,1512,87"/>
+<area shape="poly" title=" " alt="" coords="1231,65,1349,65,1349,70,1231,70"/>
+<area shape="poly" title=" " alt="" coords="315,284,372,254,442,222,472,213,500,208,547,205,592,197,615,187,641,171,657,151,664,131,671,110,689,89,712,77,737,69,739,74,714,82,692,93,676,112,669,133,662,154,644,175,618,192,593,202,548,210,500,213,474,218,444,227,374,258,318,289"/>
+<area shape="poly" title=" " alt="" coords="306,284,362,234,400,204,441,178,476,163,479,168,444,183,403,209,365,238,309,288"/>
+<area shape="rect" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure" alt="" coords="473,287,612,312"/>
+<area shape="poly" title=" " alt="" coords="343,297,460,297,460,302,343,302"/>
+<area shape="rect" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd" alt="" coords="471,336,615,361"/>
+<area shape="poly" title=" " alt="" coords="344,306,465,331,464,336,343,312"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aa929387b2d3e59e18ba23d797d5a789f" title="Keep why the start failed (the first failing step only)" alt="" coords="473,393,612,419"/>
+<area shape="poly" title=" " alt="" coords="319,310,375,339,444,370,488,386,486,391,442,375,373,343,317,314"/>
+<area shape="rect" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog" alt="" coords="502,473,583,499"/>
+<area shape="poly" title=" " alt="" coords="309,310,365,364,444,429,504,465,501,469,441,434,362,368,305,314"/>
+<area shape="rect" href="sdLog_8c.html#ac3bf8dcae7c305f07f6b957814932726" title="write a whole file, if it does not exist yet" alt="" coords="483,237,602,263"/>
+<area shape="poly" title=" " alt="" coords="343,287,469,262,470,267,344,292"/>
+<area shape="rect" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title=" " alt="" coords="459,523,627,548"/>
+<area shape="poly" title=" " alt="" coords="302,311,320,350,350,404,392,461,417,487,444,509,454,515,451,519,441,514,413,491,388,465,346,407,315,353,297,313"/>
+<area shape="rect" href="sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690" title=" " alt="" coords="724,104,867,129"/>
+<area shape="poly" title=" " alt="" coords="611,289,641,272,654,256,661,241,664,207,667,173,675,155,689,139,710,126,712,130,692,143,679,158,672,174,669,207,666,242,658,259,644,276,613,293"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title=" " alt="" coords="742,153,849,179"/>
+<area shape="poly" title=" " alt="" coords="611,287,641,272,657,252,664,231,671,209,689,188,707,177,727,170,729,175,710,182,692,192,676,212,669,233,662,255,644,276,613,292"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title=" " alt="" coords="705,203,885,228"/>
+<area shape="poly" title=" " alt="" coords="607,284,641,272,665,254,689,237,708,230,710,235,692,242,668,259,644,276,609,289"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title=" " alt="" coords="748,252,843,277"/>
+<area shape="poly" title=" " alt="" coords="612,287,734,270,735,276,613,293"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title=" " alt="" coords="736,301,855,327"/>
+<area shape="poly" title=" " alt="" coords="612,301,723,307,722,312,612,306"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title=" " alt="" coords="713,351,877,376"/>
+<area shape="poly" title=" " alt="" coords="600,310,643,321,691,335,727,345,726,350,690,341,642,326,598,315"/>
+<area shape="rect" href="sdLog_8c.html#a6c0c9f98d0a6d19c5d06e01c224efd5d" title=" " alt="" coords="718,400,873,425"/>
+<area shape="poly" title=" " alt="" coords="612,405,704,408,704,413,612,410"/>
+<area shape="rect" href="sdLog_8c.html#a5d5a7a3600abbe05c7d46369eaf8846c" title="Keep the FatFS result of a failed start step." alt="" coords="754,449,837,475"/>
+<area shape="poly" title=" " alt="" coords="583,480,740,464,741,470,584,485"/>
+<area shape="rect" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="736,499,855,524"/>
+<area shape="poly" title=" " alt="" coords="584,487,723,501,722,507,583,493"/>
+<area shape="rect" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="742,597,849,623"/>
+<area shape="poly" title=" " alt="" coords="584,487,615,494,644,509,661,528,669,548,676,567,692,584,710,594,729,600,728,605,708,598,689,588,672,569,664,550,657,531,641,513,613,499,583,492"/>
+<area shape="rect" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="732,548,859,573"/>
+<area shape="poly" title=" " alt="" coords="584,491,644,509,668,522,692,534,719,543,717,548,690,539,665,526,642,514,583,496"/>
+<area shape="poly" title=" " alt="" coords="601,238,623,229,641,216,653,201,660,186,663,154,668,121,675,105,689,89,712,75,737,68,739,73,714,80,692,93,680,108,673,123,669,154,665,187,658,204,644,220,625,234,603,243"/>
+<area shape="rect" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title=" " alt="" coords="483,720,602,745"/>
+<area shape="poly" title=" " alt="" coords="311,532,518,709,514,713,308,536"/>
+<area shape="poly" title=" " alt="" coords="558,718,613,676,650,653,690,633,728,620,730,625,692,638,653,658,617,681,561,722"/>
+<area shape="rect" href="usb__msd_8c.html#af6995e11a18decb9478ad798000d60ca" title=" " alt="" coords="726,647,865,672"/>
+<area shape="poly" title=" " alt="" coords="580,717,690,682,725,673,726,678,691,687,581,722"/>
+<area shape="rect" href="usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title=" " alt="" coords="734,696,857,721"/>
+<area shape="poly" title=" " alt="" coords="602,724,720,713,720,718,603,730"/>
+<area shape="rect" href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa" title="Reboot the MCU." alt="" coords="746,745,845,771"/>
+<area shape="poly" title=" " alt="" coords="603,736,733,749,732,754,602,741"/>
+<area shape="rect" href="usb__msd_8c.html#a9ad360964cf29c17ffda4847ea88c2f3" title="register connected event source in local event mask" alt="" coords="691,795,900,820"/>
+<area shape="poly" title=" " alt="" coords="578,743,691,781,722,789,720,794,690,786,577,748"/>
+<area shape="rect" href="main__chibios_8c.html#ab187dc37cfd9ba19180b8d99905dd2e3" title="Terminate all autopilot threads Wait until proper stop." alt="" coords="702,845,889,885"/>
+<area shape="poly" title=" " alt="" coords="561,743,617,785,692,830,708,837,706,842,689,835,614,790,558,748"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title=" " alt="" coords="719,909,871,935"/>
+<area shape="poly" title=" " alt="" coords="554,744,574,775,605,816,645,859,692,894,707,902,705,907,689,899,642,863,601,820,570,778,549,747"/>
+<area shape="rect" href="usb__msd_8c.html#aaa1c1d04bba912b3ae2b6806f8ed4fdc" title="Stops a USB mass storage driver." alt="" coords="974,623,1053,648"/>
+<area shape="poly" title=" " alt="" coords="865,649,960,638,961,644,865,654"/>
+<area shape="rect" href="usb__msd_8c.html#a9030d48fbe74f8689d41984bd08edf51" title="Initializse a USB mass storage driver." alt="" coords="978,672,1049,697"/>
+<area shape="poly" title=" " alt="" coords="857,699,964,687,965,693,858,705"/>
+<area shape="rect" href="usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver." alt="" coords="973,721,1054,747"/>
+<area shape="poly" title=" " alt="" coords="858,713,959,725,958,730,857,718"/>
+<area shape="rect" href="usb__msd_8c.html#a218498e8fe29b8470ad71b25f61ca783" title=" " alt="" coords="1143,672,1273,697"/>
+<area shape="poly" title=" " alt="" coords="1049,682,1129,682,1129,687,1049,687"/>
+<area shape="rect" href="usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="Mass storage thread that processes commands." alt="" coords="1127,721,1289,747"/>
+<area shape="poly" title=" " alt="" coords="1054,731,1113,731,1113,737,1054,737"/>
+<area shape="rect" href="usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block." alt="" coords="1337,696,1537,721"/>
+<area shape="poly" title=" " alt="" coords="1290,722,1323,719,1324,724,1290,728"/>
+<area shape="rect" href="usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information." alt="" coords="1824,647,1979,672"/>
+<area shape="poly" title=" " alt="" coords="1256,719,1288,708,1312,694,1336,682,1399,666,1463,655,1592,643,1712,642,1811,647,1810,653,1711,647,1592,648,1464,660,1400,671,1338,687,1314,699,1290,712,1258,724"/>
+<area shape="rect" href="usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called." alt="" coords="1614,747,1747,772"/>
+<area shape="poly" title=" " alt="" coords="1290,736,1601,752,1600,758,1289,741"/>
+<area shape="rect" href="usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block." alt="" coords="1346,797,1529,837"/>
+<area shape="poly" title=" " alt="" coords="1245,744,1369,789,1367,794,1243,749"/>
+<area shape="rect" href="usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command." alt="" coords="1585,697,1776,723"/>
+<area shape="poly" title=" " alt="" coords="1538,707,1571,707,1571,712,1538,712"/>
+<area shape="poly" title=" " alt="" coords="1514,693,1585,683,1810,663,1810,668,1586,689,1515,699"/>
+<area shape="poly" title=" " alt="" coords="1500,719,1606,741,1605,746,1499,724"/>
+<area shape="poly" title=" " alt="" coords="1736,695,1832,672,1833,678,1738,700"/>
+<area shape="rect" href="chibios_2mcu__arch_8c.html#a1296057f718ade4eeb9674b9c3550cb8" title="Put MCU into deep sleep mode." alt="" coords="948,771,1079,796"/>
+<area shape="poly" title=" " alt="" coords="845,761,935,772,934,777,845,766"/>
+<area shape="rect" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem" alt="" coords="964,909,1063,935"/>
+<area shape="poly" title=" " alt="" coords="871,919,950,919,950,925,871,925"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a96e1dc6c6552909bca46901dd5c89c0d" name="a96e1dc6c6552909bca46901dd5c89c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e1dc6c6552909bca46901dd5c89c0d">&#9670;&#160;</a></span>sdlog_report_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sdlog_report_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">transport_tx</a> *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and every time it goes into error later, and when the configuration could not be written. </p>
+<p>A normal start is not reported. Sent with the LOGGER_STATUS message, from the main thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00160">160</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">References <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_conf_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00099">sdlog_error_events</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00063">sdlog_error_string()</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00094">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00096">sdlog_start_fatfs</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00095">sdlog_start_step</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00123">SDLOG_STOPPED</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_cgraph.png" border="0" usemap="#asdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_cgraph" alt=""/></div>
+<map name="asdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_cgraph" id="asdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_cgraph">
+<area shape="rect" title="Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and ever..." alt="" coords="5,38,156,63"/>
+<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="230,13,317,38"/>
+<area shape="poly" title=" " alt="" coords="156,38,216,30,217,35,156,43"/>
+<area shape="rect" href="sdlog__chibios_8h.html#ac634046a6f16111adb0c93b5b05471b0" title="Human readable cause of a logger error, for the messages to the GCS." alt="" coords="204,62,343,87"/>
+<area shape="poly" title=" " alt="" coords="156,57,190,62,190,67,156,63"/>
+<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="391,13,493,38"/>
+<area shape="poly" title=" " alt="" coords="317,23,377,23,377,28,317,28"/>
+<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="541,13,588,38"/>
+<area shape="poly" title=" " alt="" coords="494,23,527,23,527,28,494,28"/>
+<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="636,5,785,45"/>
+<area shape="poly" title=" " alt="" coords="588,23,622,23,622,28,588,28"/>
+</map>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_icgraph.png" border="0" usemap="#asdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_icgraph" alt=""/></div>
+<map name="asdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_icgraph" id="asdlog__chibios_8c_a96e1dc6c6552909bca46901dd5c89c0d_icgraph">
+<area shape="rect" title="Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and ever..." alt="" coords="383,5,533,31"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102" title=" " alt="" coords="192,5,335,31"/>
+<area shape="poly" title=" " alt="" coords="369,21,335,21,335,15,369,15"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a" title=" " alt="" coords="5,5,144,31"/>
+<area shape="poly" title=" " alt="" coords="178,21,145,21,145,15,178,15"/>
 </map>
 </div>
 
@@ -921,16 +1040,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00179">179</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00238">238</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a0cbad7189fd56c4cf283bd9609efa119_icgraph.png" border="0" usemap="#asdlog__chibios_8c_a0cbad7189fd56c4cf283bd9609efa119_icgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_a0cbad7189fd56c4cf283bd9609efa119_icgraph" id="asdlog__chibios_8c_a0cbad7189fd56c4cf283bd9609efa119_icgraph">
 <area shape="rect" title=" " alt="" coords="571,31,665,56"/>
@@ -942,6 +1061,76 @@ Variables</h2></td></tr>
 <area shape="poly" title=" " alt="" coords="370,57,315,64,314,58,370,51"/>
 <area shape="rect" href="sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a" title=" " alt="" coords="5,55,144,80"/>
 <area shape="poly" title=" " alt="" coords="200,70,144,70,144,65,200,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa929387b2d3e59e18ba23d797d5a789f" name="aa929387b2d3e59e18ba23d797d5a789f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa929387b2d3e59e18ba23d797d5a789f">&#9670;&#160;</a></span>sdlog_start_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">static</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a> sdlog_start_failed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Keep why the start failed (the first failing step only) </p>
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00361">361</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00094">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00096">sdlog_start_fatfs</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00095">sdlog_start_step</a>, <a class="el" href="sdLog_8c_source.html#l00227">sdLogGetFatfsResult()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00108">sdOk</a>, and <a class="el" href="max7456_8c_source.html#l00140">step</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_cgraph.png" border="0" usemap="#asdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_cgraph" alt=""/></div>
+<map name="asdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_cgraph" id="asdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_cgraph">
+<area shape="rect" title="Keep why the start failed (the first failing step only)" alt="" coords="5,5,144,31"/>
+<area shape="rect" href="sdLog_8c.html#a6c0c9f98d0a6d19c5d06e01c224efd5d" title=" " alt="" coords="192,5,347,31"/>
+<area shape="poly" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
+</map>
+</div>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_icgraph.png" border="0" usemap="#asdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_icgraph" alt=""/></div>
+<map name="asdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_icgraph" id="asdlog__chibios_8c_aa929387b2d3e59e18ba23d797d5a789f_icgraph">
+<area shape="rect" title="Keep why the start failed (the first failing step only)" alt="" coords="340,5,479,31"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title=" " alt="" coords="192,5,292,31"/>
+<area shape="poly" title=" " alt="" coords="326,21,292,21,292,15,326,15"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a" title=" " alt="" coords="5,5,144,31"/>
+<area shape="poly" title=" " alt="" coords="178,21,145,21,145,15,178,15"/>
 </map>
 </div>
 
@@ -987,16 +1176,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00164">164</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00223">223</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00074">byte</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_aa260ab24a61a46e8e9b30e3203f7e9e9_icgraph.png" border="0" usemap="#asdlog__chibios_8c_aa260ab24a61a46e8e9b30e3203f7e9e9_icgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_aa260ab24a61a46e8e9b30e3203f7e9e9_icgraph" id="asdlog__chibios_8c_aa260ab24a61a46e8e9b30e3203f7e9e9_icgraph">
 <area shape="rect" title=" " alt="" coords="571,31,689,56"/>
@@ -1059,16 +1248,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00172">172</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00231">231</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, and <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_aebcb13d7628135e3381399568c2cf421_icgraph.png" border="0" usemap="#asdlog__chibios_8c_aebcb13d7628135e3381399568c2cf421_icgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_aebcb13d7628135e3381399568c2cf421_icgraph" id="asdlog__chibios_8c_aebcb13d7628135e3381399568c2cf421_icgraph">
 <area shape="rect" title=" " alt="" coords="571,31,735,56"/>
@@ -1119,30 +1308,42 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00134">134</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00192">192</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00111">chibios_sdlog_filenames</a>, <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00112">NO_FILE_NAME</a>, <a class="el" href="sdlog__linux_8c_source.html#l00179">sdLogGetNbBytesWrittenToStorage()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00184">sdLogGetStorageStatus()</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00130">chibios_sdlog_filenames</a>, <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00131">NO_FILE_NAME</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00201">sdLogGetNbBytesWrittenToStorage()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00206">sdLogGetStorageStatus()</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00203">sdlog_chibios_init()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00262">sdlog_chibios_init()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_cgraph.png" border="0" usemap="#asdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_cgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_cgraph" id="asdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_cgraph">
-<area shape="rect" title=" " alt="" coords="5,42,148,67"/>
-<area shape="rect" href="sdlog__linux_8c.html#ab662963b6e696a6ecd406802c176c947" title=" " alt="" coords="196,5,396,45"/>
-<area shape="poly" title=" " alt="" coords="148,43,182,38,183,43,149,48"/>
-<area shape="rect" href="sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="209,70,383,95"/>
-<area shape="poly" title=" " alt="" coords="149,61,195,67,194,72,148,66"/>
+<area shape="rect" title=" " alt="" coords="5,94,148,119"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a96e1dc6c6552909bca46901dd5c89c0d" title="Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and ever..." alt="" coords="221,37,371,62"/>
+<area shape="poly" title=" " alt="" coords="124,91,195,72,231,63,232,68,197,77,125,96"/>
+<area shape="rect" href="sdlog__linux_8c.html#ab662963b6e696a6ecd406802c176c947" title=" " alt="" coords="196,87,396,127"/>
+<area shape="poly" title=" " alt="" coords="148,104,182,104,182,109,148,109"/>
+<area shape="rect" href="sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="209,151,383,177"/>
+<area shape="poly" title=" " alt="" coords="125,117,197,136,232,145,231,150,195,141,124,122"/>
+<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="470,13,557,38"/>
+<area shape="poly" title=" " alt="" coords="372,38,456,29,457,34,372,44"/>
+<area shape="rect" href="sdlog__chibios_8h.html#ac634046a6f16111adb0c93b5b05471b0" title="Human readable cause of a logger error, for the messages to the GCS." alt="" coords="444,62,583,87"/>
+<area shape="poly" title=" " alt="" coords="372,55,430,62,430,68,371,61"/>
+<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="631,13,733,38"/>
+<area shape="poly" title=" " alt="" coords="557,23,617,23,617,28,557,28"/>
+<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="781,13,828,38"/>
+<area shape="poly" title=" " alt="" coords="734,23,767,23,767,28,734,28"/>
+<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="876,5,1025,45"/>
+<area shape="poly" title=" " alt="" coords="828,23,862,23,862,28,828,28"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph.png" border="0" usemap="#asdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph" id="asdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph">
 <area shape="rect" title=" " alt="" coords="192,5,335,31"/>
@@ -1177,31 +1378,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00301">301</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00372">372</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00111">chibios_sdlog_filenames</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00188">chibios_sdlog_init()</a>, <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00045">GPS_LEAP_SECONDS</a>, <a class="el" href="gps_8h_source.html#l00120">GpsState::last_msg_time</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sdLog_8h_source.html#l00105">LOG_APPEND_TAG_AT_CLOSE_DISABLED</a>, <a class="el" href="sdLog_8h_source.html#l00103">LOG_PREALLOCATION_DISABLED</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00081">PPRZ_LOG_DIR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00080">PPRZ_LOG_NAME</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00091">pprzLogFile</a>, <a class="el" href="sdLog_8c_source.html#l00815">removeEmptyLogs()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00062">SDLOG_AUTO_FLUSH_PERIOD</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00067">SDLOG_CONTIGUOUS_STORAGE_MEM</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00106">SDLOG_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00105">SDLOG_RUNNING</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00053">SDLOG_START_DELAY</a>, <a class="el" href="sdlog__linux_8c_source.html#l00184">sdLogGetStorageStatus()</a>, <a class="el" href="sdLog_8c_source.html#l00225">sdLogInit()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00089">sdOk</a>, <a class="el" href="gps_8h_source.html#l00112">GpsState::tow</a>, <a class="el" href="usbStorage_8c_source.html#l00163">usbStorageIsItRunning()</a>, and <a class="el" href="gps_8h_source.html#l00111">GpsState::week</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00130">chibios_sdlog_filenames</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>, <a class="el" href="sdlog__chibios_8c.html#abf4d8be026c1f59afa183986b146c83e">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00045">GPS_LEAP_SECONDS</a>, <a class="el" href="gps_8h_source.html#l00120">GpsState::last_msg_time</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sdLog_8h_source.html#l00105">LOG_APPEND_TAG_AT_CLOSE_DISABLED</a>, <a class="el" href="sdLog_8h_source.html#l00103">LOG_PREALLOCATION_DISABLED</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00081">PPRZ_LOG_DIR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00080">PPRZ_LOG_NAME</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00110">pprzLogFile</a>, <a class="el" href="sdLog_8c_source.html#l00837">removeEmptyLogs()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00062">SDLOG_AUTO_FLUSH_PERIOD</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_conf_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00067">SDLOG_CONTIGUOUS_STORAGE_MEM</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00125">SDLOG_ERROR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00099">sdlog_error_events</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00124">SDLOG_RUNNING</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00053">SDLOG_START_DELAY</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00094">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00206">sdLogGetStorageStatus()</a>, <a class="el" href="sdLog_8c_source.html#l00245">sdLogInit()</a>, <a class="el" href="sdLog_8c_source.html#l00882">sdLogWriteFile()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00108">sdOk</a>, <a class="el" href="gps_8h_source.html#l00112">GpsState::tow</a>, <a class="el" href="usbStorage_8c_source.html#l00163">usbStorageIsItRunning()</a>, and <a class="el" href="gps_8h_source.html#l00111">GpsState::week</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00203">sdlog_chibios_init()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00262">sdlog_chibios_init()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph.png" border="0" usemap="#asdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph" id="asdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph">
-<area shape="rect" title=" " alt="" coords="5,351,105,376"/>
+<area shape="rect" title=" " alt="" coords="5,329,105,355"/>
 <area shape="rect" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure" alt="" coords="171,153,310,179"/>
-<area shape="poly" title=" " alt="" coords="67,349,216,187,220,191,71,352"/>
-<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="197,276,284,301"/>
-<area shape="poly" title=" " alt="" coords="77,348,152,310,183,300,185,305,154,315,79,353"/>
-<area shape="rect" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd" alt="" coords="169,325,313,351"/>
-<area shape="poly" title=" " alt="" coords="105,354,155,347,155,352,106,359"/>
-<area shape="rect" href="sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="153,375,328,400"/>
-<area shape="poly" title=" " alt="" coords="106,367,140,372,139,377,105,372"/>
-<area shape="rect" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog" alt="" coords="200,424,281,449"/>
-<area shape="poly" title=" " alt="" coords="80,374,154,410,188,421,186,426,152,415,78,379"/>
-<area shape="rect" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title=" " alt="" coords="157,473,325,499"/>
-<area shape="poly" title=" " alt="" coords="68,375,103,417,127,440,155,460,167,466,164,471,152,464,124,444,99,420,64,378"/>
+<area shape="poly" title=" " alt="" coords="60,328,92,266,119,229,152,196,176,182,178,186,155,200,123,232,97,269,64,331"/>
+<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="423,303,509,328"/>
+<area shape="poly" title=" " alt="" coords="62,327,96,282,122,258,152,240,200,223,241,217,281,223,329,240,345,250,355,262,364,275,377,286,411,301,408,306,375,291,360,278,351,265,342,254,327,244,280,228,240,222,201,228,154,244,125,262,100,286,66,331"/>
+<area shape="rect" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd" alt="" coords="169,255,313,280"/>
+<area shape="poly" title=" " alt="" coords="77,327,152,289,173,282,175,287,154,294,79,332"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aa929387b2d3e59e18ba23d797d5a789f" title="Keep why the start failed (the first failing step only)" alt="" coords="171,403,310,428"/>
+<area shape="poly" title=" " alt="" coords="81,352,154,388,179,396,177,401,152,392,78,357"/>
+<area shape="rect" href="sdlog__linux_8c.html#aa84bc34dacbe788fcfe0b9e017d1f755" title=" " alt="" coords="153,353,328,379"/>
+<area shape="poly" title=" " alt="" coords="106,346,140,350,139,356,105,351"/>
+<area shape="rect" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog" alt="" coords="200,452,281,477"/>
+<area shape="poly" title=" " alt="" coords="68,353,103,394,128,417,155,437,188,451,186,456,152,442,124,422,99,398,64,356"/>
+<area shape="rect" href="sdLog_8c.html#ac3bf8dcae7c305f07f6b957814932726" title="write a whole file, if it does not exist yet" alt="" coords="181,304,300,329"/>
+<area shape="poly" title=" " alt="" coords="105,333,167,324,168,329,106,338"/>
+<area shape="rect" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title=" " alt="" coords="157,501,325,527"/>
+<area shape="poly" title=" " alt="" coords="64,354,96,417,122,455,155,487,166,493,163,498,152,491,118,458,91,420,59,356"/>
 <area shape="rect" href="sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690" title=" " alt="" coords="395,5,537,31"/>
 <area shape="poly" title=" " alt="" coords="250,152,300,98,335,66,375,40,389,33,391,38,377,44,338,71,303,101,254,155"/>
 <area shape="rect" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title=" " alt="" coords="413,55,519,80"/>
@@ -1213,26 +1418,31 @@ Variables</h2></td></tr>
 <area shape="rect" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title=" " alt="" coords="407,203,525,228"/>
 <area shape="poly" title=" " alt="" coords="300,176,395,197,393,202,299,181"/>
 <area shape="rect" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title=" " alt="" coords="384,252,548,277"/>
-<area shape="poly" title=" " alt="" coords="264,177,314,206,377,237,401,246,399,251,375,242,312,211,261,181"/>
-<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="415,301,517,327"/>
-<area shape="poly" title=" " alt="" coords="285,291,402,304,401,309,284,296"/>
-<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="604,301,651,327"/>
-<area shape="poly" title=" " alt="" coords="518,311,590,311,590,317,518,317"/>
-<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="699,294,848,334"/>
-<area shape="poly" title=" " alt="" coords="651,311,685,311,685,317,651,317"/>
-<area shape="rect" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="407,375,525,400"/>
-<area shape="poly" title=" " alt="" coords="281,425,393,400,394,406,282,430"/>
-<area shape="rect" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="413,424,519,449"/>
-<area shape="poly" title=" " alt="" coords="282,434,399,434,399,439,282,439"/>
-<area shape="rect" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="403,473,529,499"/>
-<area shape="poly" title=" " alt="" coords="282,443,394,468,393,473,281,448"/>
+<area shape="poly" title=" " alt="" coords="286,176,329,196,354,217,363,227,377,237,395,245,393,250,375,242,360,231,350,221,327,200,284,181"/>
+<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="604,303,707,328"/>
+<area shape="poly" title=" " alt="" coords="510,313,590,313,590,318,510,318"/>
+<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="755,303,801,328"/>
+<area shape="poly" title=" " alt="" coords="707,313,741,313,741,318,707,318"/>
+<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="849,295,999,335"/>
+<area shape="poly" title=" " alt="" coords="802,313,835,313,835,318,802,318"/>
+<area shape="rect" href="sdLog_8c.html#a6c0c9f98d0a6d19c5d06e01c224efd5d" title=" " alt="" coords="389,353,543,379"/>
+<area shape="poly" title=" " alt="" coords="299,400,393,379,395,384,300,405"/>
+<area shape="rect" href="sdLog_8c.html#a5d5a7a3600abbe05c7d46369eaf8846c" title="Keep the FatFS result of a failed start step." alt="" coords="425,403,507,428"/>
+<area shape="poly" title=" " alt="" coords="281,453,410,425,412,430,282,458"/>
+<area shape="rect" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="407,452,525,477"/>
+<area shape="poly" title=" " alt="" coords="282,462,393,462,393,467,282,467"/>
+<area shape="rect" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="413,501,519,527"/>
+<area shape="poly" title=" " alt="" coords="282,471,400,497,399,502,281,476"/>
+<area shape="rect" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="403,551,529,576"/>
+<area shape="poly" title=" " alt="" coords="282,469,306,476,329,486,345,499,354,512,363,524,377,536,392,543,390,548,375,540,359,528,350,515,341,503,327,491,304,481,281,474"/>
+<area shape="poly" title=" " alt="" coords="300,314,409,313,409,318,301,319"/>
 </map>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_icgraph.png" border="0" usemap="#asdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_icgraph" alt=""/></div>
 <map name="asdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_icgraph" id="asdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_icgraph">
 <area shape="rect" title=" " alt="" coords="192,5,292,31"/>
@@ -1256,7 +1466,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00093">93</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00112">112</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -1282,9 +1492,9 @@ Variables</h2></td></tr>
 
 <p>sdlog filenames </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00111">111</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00130">130</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00134">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1302,7 +1512,7 @@ Variables</h2></td></tr>
 
 <p>sdlog status </p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00223">sdlog_chibios_finish()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00203">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00134">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00282">sdlog_chibios_finish()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00262">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1326,9 +1536,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00112">112</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00131">131</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00134">send_sdlog_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1564,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00081">81</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1590,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00080">80</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1396,9 +1606,167 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00091">91</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00110">110</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00392">logger_log_msg_up()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00223">sdlog_chibios_finish()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00482">logger_log_msg_up()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00282">sdlog_chibios_finish()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<a id="a3f308680e33b05a9490e2eb7d271c221" name="a3f308680e33b05a9490e2eb7d271c221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f308680e33b05a9490e2eb7d271c221">&#9670;&#160;</a></span>sdlog_conf_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdlog_conf_error = <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Result of writing the configuration, reported to the GCS. </p>
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00092">92</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<a id="a9bde64412896601340ccef51b701a23c" name="a9bde64412896601340ccef51b701a23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bde64412896601340ccef51b701a23c">&#9670;&#160;</a></span>sdlog_error_cause</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdlog_error_cause = <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00100">100</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<a id="a71904ac5af4719f1322da211615df611" name="a71904ac5af4719f1322da211615df611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71904ac5af4719f1322da211615df611">&#9670;&#160;</a></span>sdlog_error_events</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> sdlog_error_events = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00099">99</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<a id="a60ea5e42178036225475ee977ecb9f0d" name="a60ea5e42178036225475ee977ecb9f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ea5e42178036225475ee977ecb9f0d">&#9670;&#160;</a></span>sdlog_start_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdlog_start_error = <a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00094">94</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<a id="a3c29aa509b6c26a4ed7d3f0a1749595c" name="a3c29aa509b6c26a4ed7d3f0a1749595c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c29aa509b6c26a4ed7d3f0a1749595c">&#9670;&#160;</a></span>sdlog_start_fatfs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">volatile</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sdlog_start_fatfs = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00096">96</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>.</p>
+
+</div>
+</div>
+<a id="af24e5f5c972a61aeffacf622d40d0afd" name="af24e5f5c972a61aeffacf622d40d0afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24e5f5c972a61aeffacf622d40d0afd">&#9670;&#160;</a></span>sdlog_start_step</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a>* sdlog_start_step = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00095">95</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>.</p>
 
 </div>
 </div>
@@ -1414,9 +1782,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00089">89</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00108">108</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1426,7 +1794,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="sdlog__chibios_8c.html">sdlog_chibios.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2026 12:35:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Nov 11 2026 12:47:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

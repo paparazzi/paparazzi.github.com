@@ -2,6 +2,7 @@ var sdlog__chibios_8c =
 [
     [ "GPS_LEAP_SECONDS", "sdlog__chibios_8c.html#a669b871bb9f27ed42467ccaa76cec412", null ],
     [ "SDLOG_AUTO_FLUSH_PERIOD", "sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4", null ],
+    [ "SDLOG_CONF", "sdlog__chibios_8c.html#aa49fd1aa4c54ff8fa78acee506265c91", null ],
     [ "SDLOG_CONTIGUOUS_STORAGE_MEM", "sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6", null ],
     [ "SDLOG_ENABLE_LOWBAT_FLUSH", "sdlog__chibios_8c.html#a3b1d54587c14aa30efccbbb680793bf1", null ],
     [ "SDLOG_START_DELAY", "sdlog__chibios_8c.html#abb202e6b58d213508879a54bf05251bb", null ],
@@ -13,7 +14,9 @@ var sdlog__chibios_8c =
     [ "sdlog_check_free_space", "sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9", null ],
     [ "sdlog_chibios_finish", "sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91", null ],
     [ "sdlog_chibios_init", "sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a", null ],
+    [ "sdlog_report_status", "sdlog__chibios_8c.html#a96e1dc6c6552909bca46901dd5c89c0d", null ],
     [ "sdlog_send", "sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119", null ],
+    [ "sdlog_start_failed", "sdlog__chibios_8c.html#aa929387b2d3e59e18ba23d797d5a789f", null ],
     [ "sdlog_transmit", "sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9", null ],
     [ "sdlog_transmit_buffer", "sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421", null ],
     [ "send_sdlog_status", "sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102", null ],
@@ -25,5 +28,11 @@ var sdlog__chibios_8c =
     [ "PPRZ_LOG_DIR", "sdlog__chibios_8c.html#a9988fa9164781fcdba3d62a105567140", null ],
     [ "PPRZ_LOG_NAME", "sdlog__chibios_8c.html#ace5244a4001a7470da6fafbb2b4be96e", null ],
     [ "pprzLogFile", "sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d", null ],
+    [ "sdlog_conf_error", "sdlog__chibios_8c.html#a3f308680e33b05a9490e2eb7d271c221", null ],
+    [ "sdlog_error_cause", "sdlog__chibios_8c.html#a9bde64412896601340ccef51b701a23c", null ],
+    [ "sdlog_error_events", "sdlog__chibios_8c.html#a71904ac5af4719f1322da211615df611", null ],
+    [ "sdlog_start_error", "sdlog__chibios_8c.html#a60ea5e42178036225475ee977ecb9f0d", null ],
+    [ "sdlog_start_fatfs", "sdlog__chibios_8c.html#a3c29aa509b6c26a4ed7d3f0a1749595c", null ],
+    [ "sdlog_start_step", "sdlog__chibios_8c.html#af24e5f5c972a61aeffacf622d40d0afd", null ],
     [ "sdOk", "sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71", null ]
 ];

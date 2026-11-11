@@ -27,5 +27,6 @@ var sdLog_8h =
     [ "getFileName", "sdLog_8h.html#a510de29d16898e7e402fe7ea2dc7b992", null ],
     [ "removeEmptyLogs", "sdLog_8h.html#a0feebb43817c3a4d97e34f991012932c", null ],
     [ "sdLogFinish", "sdLog_8h.html#a03326adcb90b1cc07d684a6abaff2051", null ],
-    [ "sdLogInit", "sdLog_8h.html#a598888320386c21f975d32d68f29bcf3", null ]
+    [ "sdLogInit", "sdLog_8h.html#a598888320386c21f975d32d68f29bcf3", null ],
+    [ "sdLogWriteFile", "sdLog_8h.html#ac3bf8dcae7c305f07f6b957814932726", null ]
 ];

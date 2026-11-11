@@ -197,6 +197,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0feebb43817c3a4d97e34f991012932c" id="r_a0feebb43817c3a4d97e34f991012932c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdLog_8h.html#a0feebb43817c3a4d97e34f991012932c">removeEmptyLogs</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">directoryName</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">prefix</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">sizeConsideredEmpty</a>)</td></tr>
 <tr class="memdesc:a0feebb43817c3a4d97e34f991012932c"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove spurious log file left on sd  <br /></td></tr>
 <tr class="separator:a0feebb43817c3a4d97e34f991012932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bf8dcae7c305f07f6b957814932726" id="r_ac3bf8dcae7c305f07f6b957814932726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdLog_8h.html#ac3bf8dcae7c305f07f6b957814932726">sdLogWriteFile</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">directoryName</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">fileName</a>, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a> len)</td></tr>
+<tr class="memdesc:ac3bf8dcae7c305f07f6b957814932726"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a whole file, if it does not exist yet  <br /></td></tr>
+<tr class="separator:ac3bf8dcae7c305f07f6b957814932726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03326adcb90b1cc07d684a6abaff2051" id="r_a03326adcb90b1cc07d684a6abaff2051"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdLog_8h.html#a03326adcb90b1cc07d684a6abaff2051">sdLogFinish</a> (<a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">void</a>)</td></tr>
 <tr class="memdesc:a03326adcb90b1cc07d684a6abaff2051"><td class="mdescLeft">&#160;</td><td class="mdescRight">unmount filesystem  <br /></td></tr>
 <tr class="separator:a03326adcb90b1cc07d684a6abaff2051"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,9 +440,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00754">754</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00776">776</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
-<p class="reference">References <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdLog_8c_source.html#l00042">MAX</a>, <a class="el" href="sdLog_8c_source.html#l00039">MIN</a>, <a class="el" href="sdLog_8h_source.html#l00036">NUMBERFMF</a>, <a class="el" href="sdLog_8h_source.html#l00035">NUMBERMAX</a>, <a class="el" href="sdLog_8h_source.html#l00114">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00123">SDLOG_LOGNUM_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, and <a class="el" href="sdLog_8c_source.html#l00875">uiGetIndexOfLogFile()</a>.</p>
+<p class="reference">References <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="sdLog_8c_source.html#l00236">fatfsError()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdLog_8c_source.html#l00042">MAX</a>, <a class="el" href="sdLog_8c_source.html#l00039">MIN</a>, <a class="el" href="sdLog_8h_source.html#l00036">NUMBERFMF</a>, <a class="el" href="sdLog_8h_source.html#l00035">NUMBERMAX</a>, <a class="el" href="sdLog_8h_source.html#l00123">SDLOG_LOGNUM_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, and <a class="el" href="sdLog_8c_source.html#l00948">uiGetIndexOfLogFile()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -447,11 +450,13 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdLog_8h_a510de29d16898e7e402fe7ea2dc7b992_cgraph.png" border="0" usemap="#asdLog_8h_a510de29d16898e7e402fe7ea2dc7b992_cgraph" alt=""/></div>
 <map name="asdLog_8h_a510de29d16898e7e402fe7ea2dc7b992_cgraph" id="asdLog_8h_a510de29d16898e7e402fe7ea2dc7b992_cgraph">
-<area shape="rect" title="get last used name for a pattern, then add offset and return valid filename" alt="" coords="5,38,111,63"/>
+<area shape="rect" title="get last used name for a pattern, then add offset and return valid filename" alt="" coords="5,62,111,87"/>
 <area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="193,13,279,38"/>
-<area shape="poly" title=" " alt="" coords="111,41,178,31,179,36,111,46"/>
-<area shape="rect" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81" title=" " alt="" coords="159,62,313,87"/>
-<area shape="poly" title=" " alt="" coords="111,55,145,60,144,65,111,60"/>
+<area shape="poly" title=" " alt="" coords="104,59,178,38,180,44,105,65"/>
+<area shape="rect" href="sdLog_8c.html#a5d5a7a3600abbe05c7d46369eaf8846c" title="Keep the FatFS result of a failed start step." alt="" coords="195,62,277,87"/>
+<area shape="poly" title=" " alt="" coords="111,72,181,72,181,77,111,77"/>
+<area shape="rect" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81" title=" " alt="" coords="159,111,313,137"/>
+<area shape="poly" title=" " alt="" coords="105,85,176,105,175,110,104,90"/>
 <area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="361,13,464,38"/>
 <area shape="poly" title=" " alt="" coords="279,23,347,23,347,28,279,28"/>
 <area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="512,13,559,38"/>
@@ -507,11 +512,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00815">815</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00837">837</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdLog_8h_source.html#l00114">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00115">SDLOG_FATFS_NOENT</a>, and <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -548,11 +553,11 @@ Functions</h2></td></tr>
 <p>unmount filesystem </p>
 <p>unmount filesystem, free sdio peripheral This function is available even without thread login facility : even if SDLOG_XXX macro are zeroed </p><dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00285">285</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00307">307</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdLog_8h_source.html#l00114">SDLOG_FATFS_ERROR</a>, and <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00223">sdlog_chibios_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00282">sdlog_chibios_finish()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -599,11 +604,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00225">225</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00245">245</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
-<p class="reference">References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="tlsf__malloc__arch_8h_source.html#l00044">HEAP_DEFAULT</a>, <a class="el" href="msg__queue_8c_source.html#l00042">msgqueue_init()</a>, <a class="el" href="sdio__arch_8c_source.html#l00048">sdio_connect()</a>, <a class="el" href="sdio__arch_8c_source.html#l00073">sdio_disconnect()</a>, <a class="el" href="sdLog_8h_source.html#l00114">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00113">SDLOG_NOCARD</a>, <a class="el" href="mcuconf__h7_8h_source.html#l00692">SDLOG_NUM_FILES</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="mcuconf__h7_8h_source.html#l00690">SDLOG_QUEUE_BUCKETS</a>, and <a class="el" href="sdLog_8h_source.html#l00124">SDLOG_WAS_LAUNCHED</a>.</p>
+<p class="reference">References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="sdLog_8c_source.html#l00236">fatfsError()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="tlsf__malloc__arch_8h_source.html#l00044">HEAP_DEFAULT</a>, <a class="el" href="sdLog_8c_source.html#l00225">lastFatfsResult</a>, <a class="el" href="msg__queue_8c_source.html#l00042">msgqueue_init()</a>, <a class="el" href="sdio__arch_8c_source.html#l00048">sdio_connect()</a>, <a class="el" href="sdio__arch_8c_source.html#l00073">sdio_disconnect()</a>, <a class="el" href="sdLog_8h_source.html#l00113">SDLOG_NOCARD</a>, <a class="el" href="mcuconf__h7_8h_source.html#l00692">SDLOG_NUM_FILES</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="mcuconf__h7_8h_source.html#l00690">SDLOG_QUEUE_BUCKETS</a>, and <a class="el" href="sdLog_8h_source.html#l00124">SDLOG_WAS_LAUNCHED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00301">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -611,13 +616,15 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdLog_8h_a598888320386c21f975d32d68f29bcf3_cgraph.png" border="0" usemap="#asdLog_8h_a598888320386c21f975d32d68f29bcf3_cgraph" alt=""/></div>
 <map name="asdLog_8h_a598888320386c21f975d32d68f29bcf3_cgraph" id="asdLog_8h_a598888320386c21f975d32d68f29bcf3_cgraph">
-<area shape="rect" title="initialise sdLog" alt="" coords="5,55,87,80"/>
-<area shape="rect" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="139,5,257,31"/>
-<area shape="poly" title=" " alt="" coords="85,52,144,33,146,38,87,57"/>
-<area shape="rect" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="145,55,251,80"/>
-<area shape="poly" title=" " alt="" coords="87,65,131,65,131,70,87,70"/>
-<area shape="rect" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="135,104,261,129"/>
-<area shape="poly" title=" " alt="" coords="87,78,146,97,144,102,85,83"/>
+<area shape="rect" title="initialise sdLog" alt="" coords="5,80,87,105"/>
+<area shape="rect" href="sdLog_8c.html#a5d5a7a3600abbe05c7d46369eaf8846c" title="Keep the FatFS result of a failed start step." alt="" coords="157,5,239,31"/>
+<area shape="poly" title=" " alt="" coords="66,78,133,40,147,33,150,38,136,44,69,82"/>
+<area shape="rect" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue" alt="" coords="139,55,257,80"/>
+<area shape="poly" title=" " alt="" coords="87,83,124,77,125,82,87,89"/>
+<area shape="rect" href="sdio__arch_8c.html#a2c7a19d188134c5cc92b8384d9c5328e" title="Connect a SD card on SDIO peripheral." alt="" coords="145,104,251,129"/>
+<area shape="poly" title=" " alt="" coords="87,96,131,103,130,109,87,102"/>
+<area shape="rect" href="sdio__arch_8c.html#af6dbef3fa5acad94ac78155c3dea1782" title="Disconnect a SD card on SDIO peripheral." alt="" coords="135,153,261,179"/>
+<area shape="poly" title=" " alt="" coords="70,103,136,138,152,146,150,150,133,143,68,108"/>
 </map>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -637,13 +644,104 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac3bf8dcae7c305f07f6b957814932726" name="ac3bf8dcae7c305f07f6b957814932726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bf8dcae7c305f07f6b957814932726">&#9670;&#160;</a></span>sdLogWriteFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdLogWriteFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *&#160;</td>
+          <td class="paramname"><em>directoryName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">char</a> *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">const</a> <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write a whole file, if it does not exist yet </p>
+<p>the file is written under a temporary name and renamed when complete, so it is never left partially written. The status of the logs is not changed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">directoryName</td><td>: directory of the file, created if needed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>: name of the file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>: content of the file (may be in flash) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: length of the content </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sdLog_8c_source.html#l00882">882</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+
+<p class="reference">References <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="sdLog_8c_source.html#l00039">MIN</a>, <a class="el" href="sdLog_8h_source.html#l00114">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00116">SDLOG_FSFULL</a>, <a class="el" href="sdLog_8h_source.html#l00121">SDLOG_INTERNAL_ERROR</a>, and <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdLog_8h_ac3bf8dcae7c305f07f6b957814932726_cgraph.png" border="0" usemap="#asdLog_8h_ac3bf8dcae7c305f07f6b957814932726_cgraph" alt=""/></div>
+<map name="asdLog_8h_ac3bf8dcae7c305f07f6b957814932726_cgraph" id="asdLog_8h_ac3bf8dcae7c305f07f6b957814932726_cgraph">
+<area shape="rect" title="write a whole file, if it does not exist yet" alt="" coords="5,13,124,38"/>
+<area shape="rect" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a" title=" " alt="" coords="172,13,259,38"/>
+<area shape="poly" title=" " alt="" coords="124,23,158,23,158,28,124,28"/>
+<area shape="rect" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26" title="System formatted output function." alt="" coords="307,13,409,38"/>
+<area shape="poly" title=" " alt="" coords="259,23,293,23,293,28,259,28"/>
+<area shape="rect" href="group__chprintf.html#ga6407be3b04a9b66588944c87c5a790e9" title=" " alt="" coords="457,13,504,38"/>
+<area shape="poly" title=" " alt="" coords="410,23,443,23,443,28,410,28"/>
+<area shape="rect" href="group__chprintf.html#ga4fd905ab4449a9e1aa9cbb72fcf68450" title=" " alt="" coords="552,5,701,45"/>
+<area shape="poly" title=" " alt="" coords="504,23,538,23,538,28,504,28"/>
+</map>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdLog_8h_ac3bf8dcae7c305f07f6b957814932726_icgraph.png" border="0" usemap="#asdLog_8h_ac3bf8dcae7c305f07f6b957814932726_icgraph" alt=""/></div>
+<map name="asdLog_8h_ac3bf8dcae7c305f07f6b957814932726_icgraph" id="asdLog_8h_ac3bf8dcae7c305f07f6b957814932726_icgraph">
+<area shape="rect" title="write a whole file, if it does not exist yet" alt="" coords="340,5,459,31"/>
+<area shape="rect" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title=" " alt="" coords="192,5,292,31"/>
+<area shape="poly" title=" " alt="" coords="326,21,292,21,292,15,326,15"/>
+<area shape="rect" href="sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a" title=" " alt="" coords="5,5,144,31"/>
+<area shape="poly" title=" " alt="" coords="178,21,145,21,145,15,178,15"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="sdLog_8h.html">sdLog.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2026 12:35:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Nov 11 2026 12:47:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

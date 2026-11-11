@@ -11,6 +11,7 @@ var sdlog__chibios_8h =
     [ "logger_log_msg_up", "sdlog__chibios_8h.html#a6f2735648e3811dabee7dc1e995fb175", null ],
     [ "sdlog_chibios_finish", "sdlog__chibios_8h.html#a468073a8575335ab6b2d8291548e78ff", null ],
     [ "sdlog_chibios_init", "sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a", null ],
+    [ "sdlog_error_string", "sdlog__chibios_8h.html#ac634046a6f16111adb0c93b5b05471b0", null ],
     [ "chibios_sdlog", "sdlog__chibios_8h.html#a6d6d6039a7d735ec71df91793397de63", null ],
     [ "pprzLogFile", "sdlog__chibios_8h.html#aa98230ec7c62b75b008363356fdefb4d", null ]
 ];

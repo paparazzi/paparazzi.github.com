@@ -5,11 +5,15 @@ var sdLog_8c =
     [ "MAX", "sdLog_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95", null ],
     [ "MIN", "sdLog_8c.html#a74e75242132eaabbc1c512488a135926", null ],
     [ "SDLOG_WRITE_BUFFER_SIZE", "sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77", null ],
+    [ "fatfsError", "sdLog_8c.html#a5d5a7a3600abbe05c7d46369eaf8846c", null ],
     [ "flushWriteByteBuffer", "sdLog_8c.html#a870830d3ea4fe67badf79e52582f4fae", null ],
     [ "getFileName", "sdLog_8c.html#a510de29d16898e7e402fe7ea2dc7b992", null ],
     [ "IN_SDMMC_DMA_SECTION", "sdLog_8c.html#acc19261a02633b7b8cd1f9168794083d", null ],
     [ "removeEmptyLogs", "sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c", null ],
     [ "sdLogFinish", "sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051", null ],
+    [ "sdLogGetFatfsResult", "sdLog_8c.html#a6c0c9f98d0a6d19c5d06e01c224efd5d", null ],
     [ "sdLogInit", "sdLog_8c.html#a598888320386c21f975d32d68f29bcf3", null ],
-    [ "uiGetIndexOfLogFile", "sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81", null ]
+    [ "sdLogWriteFile", "sdLog_8c.html#ac3bf8dcae7c305f07f6b957814932726", null ],
+    [ "uiGetIndexOfLogFile", "sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81", null ],
+    [ "lastFatfsResult", "sdLog_8c.html#ad96b9defea8affebcc31add9349b5e20", null ]
 ];
