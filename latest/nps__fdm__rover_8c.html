@@ -249,7 +249,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__rover_8c_source.html#l00230">230</a> of file <a class="el" href="nps__fdm__rover_8c_source.html">nps_fdm_rover.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00105">ltpdef</a>, and <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00085">fdm</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00088">ltpdef</a>, and <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__fdm__rover_8c_source.html#l00110">nps_fdm_init()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -313,7 +313,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__rover_8c_source.html#l00110">110</a> of file <a class="el" href="nps__fdm__rover_8c_source.html">nps_fdm_rover.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00102">crrcsim</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="low__pass__filter_8h_source.html#l00060">init_first_order_low_pass()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00270">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00230">init_ltp()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00250">inputbuf_init()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00053">NPS_CRRCSIM_HOST_IP</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00057">NPS_CRRCSIM_HOST_PORT</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00225">open_udp()</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00515">send_servo_cmd()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00070">UDP_NONBLOCKING</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00274">EULERS_ASSIGN</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00085">fdm</a>, <a class="el" href="low__pass__filter_8h_source.html#l00060">init_first_order_low_pass()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00264">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00230">init_ltp()</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__main__common_8c_source.html#l00086">nps_main_init()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -322,29 +322,23 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm__rover_8c_a17ec5b69b110d046f9db5b67d2b08779_cgraph.png" border="0" usemap="#anps__fdm__rover_8c_a17ec5b69b110d046f9db5b67d2b08779_cgraph" loading="lazy" alt=""/></div>
 <map name="anps__fdm__rover_8c_a17ec5b69b110d046f9db5b67d2b08779_cgraph" id="anps__fdm__rover_8c_a17ec5b69b110d046f9db5b67d2b08779_cgraph">
-<area shape="rect" title="NPS FDM rover init." alt="" coords="5,136,111,164"/>
+<area shape="rect" title="NPS FDM rover init." alt="" coords="5,57,111,85"/>
 <area shape="rect" href="low__pass__filter_8h.html#a2ef099f9631ccda888715f731518423e" title="Init first order low pass filter." alt="" coords="159,5,341,33"/>
-<area shape="poly" title=" " alt="" coords="67,134,103,89,129,65,157,44,173,37,169,41,160,48,132,69,107,93,71,137"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="217,57,283,85"/>
-<area shape="poly" title=" " alt="" coords="82,133,158,95,204,82,200,85,160,100,85,138"/>
+<area shape="poly" title=" " alt="" coords="110,55,183,36,180,39,112,59"/>
+<area shape="rect" href="nps__fdm__fixedwing__sim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="217,57,283,85"/>
+<area shape="poly" title=" " alt="" coords="111,69,203,69,199,73,112,74"/>
 <area shape="rect" href="nps__fdm__rover_8c.html#a3836be75ba868b34cd08503e2f242ab5" title=" " alt="" coords="217,109,283,137"/>
-<area shape="poly" title=" " alt="" coords="110,140,203,128,200,132,112,145"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title=" " alt="" coords="198,161,302,189"/>
-<area shape="poly" title=" " alt="" coords="111,154,185,165,180,168,111,159"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title=" " alt="" coords="208,213,292,241"/>
-<area shape="poly" title=" " alt="" coords="85,162,160,198,195,212,190,213,158,203,84,167"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="185,265,315,293"/>
-<area shape="poly" title=" " alt="" coords="70,161,107,206,132,230,160,250,174,259,168,259,157,255,129,234,103,209,68,167"/>
+<area shape="poly" title=" " alt="" coords="111,83,204,109,200,112,111,88"/>
 <area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="413,109,520,137"/>
-<area shape="poly" title=" " alt="" coords="283,76,400,106,395,108,283,82"/>
+<area shape="poly" title=" " alt="" coords="283,76,400,106,395,107,283,82"/>
 <area shape="rect" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="390,57,544,85"/>
 <area shape="poly" title=" " alt="" coords="283,69,376,70,371,72,284,74"/>
 <area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="592,57,700,85"/>
-<area shape="poly" title=" " alt="" coords="544,69,579,71,574,72,545,74"/>
-<area shape="poly" title=" " alt="" coords="283,121,400,122,395,124,284,126"/>
-<area shape="poly" title=" " alt="" coords="282,113,393,88,389,90,284,118"/>
+<area shape="poly" title=" " alt="" coords="544,69,580,71,574,71,545,74"/>
+<area shape="poly" title=" " alt="" coords="283,121,400,123,395,124,283,126"/>
+<area shape="poly" title=" " alt="" coords="283,113,394,89,388,90,284,118"/>
 <area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="389,161,544,189"/>
-<area shape="poly" title=" " alt="" coords="283,128,394,156,388,158,283,134"/>
+<area shape="poly" title=" " alt="" coords="284,128,394,157,388,157,283,134"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
@@ -436,7 +430,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__rover_8c_source.html#l00137">137</a> of file <a class="el" href="nps__fdm__rover_8c_source.html">nps_fdm_rover.c</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00102">crrcsim</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00445">decode_ahrspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00389">decode_gpspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00464">decode_imupacket()</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00049">double_quat_of_eulers()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00089">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00174">ecef_of_ned_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">ecef_of_ned_vect_d()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00301">get_msg()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00105">ltpdef</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00062">MAX_DELTA</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00106">rover_acc</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00104">rover_pos</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00105">rover_vel</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00515">send_servo_cmd()</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, and <a class="el" href="low__pass__filter_8h_source.html#l00074">update_first_order_low_pass()</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00133">alpha</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00081">AUTO_THROTTLE_NOMINAL_CRUISE_THROTTLE</a>, <a class="el" href="eff__scheduling__plusquad_8h_source.html#l00055">COMMAND_PITCH</a>, <a class="el" href="eff__scheduling__plusquad_8h_source.html#l00051">COMMAND_ROLL</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00049">double_quat_of_eulers()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00089">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00181">ecef_of_enu_vect_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00174">ecef_of_ned_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">ecef_of_ned_vect_d()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00085">fdm</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00088">ltpdef</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00062">MAX_DELTA</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00073">MAXIMUM_AIRSPEED</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00077">MAXIMUM_POWER</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00049">PITCH_RESPONSE_FACTOR</a>, <a class="el" href="pprz__isa_8h_source.html#l00056">PPRZ_ISA_GRAVITY</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00061">ROLL_MAX_SETPOINT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00065">ROLL_RATE_MAX_SETPOINT</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00045">ROLL_RESPONSE_FACTOR</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00106">rover_acc</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00104">rover_pos</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00105">rover_vel</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">speed_sp</a>, <a class="el" href="low__pass__filter_8h_source.html#l00074">update_first_order_low_pass()</a>, <a class="el" href="discrete__ekf__no__north_8c_source.html#l00034">v2</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00057">WEIGHT</a>, and <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00053">YAW_RESPONSE_FACTOR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__main__hitl_8c_source.html#l00068">nps_main_run_sim_step()</a>.</p>
 <div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -445,49 +439,31 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm__rover_8c_a4f72ff1c76415e3e41897d762122c5f8_cgraph.png" border="0" usemap="#anps__fdm__rover_8c_a4f72ff1c76415e3e41897d762122c5f8_cgraph" loading="lazy" alt=""/></div>
 <map name="anps__fdm__rover_8c_a4f72ff1c76415e3e41897d762122c5f8_cgraph" id="anps__fdm__rover_8c_a4f72ff1c76415e3e41897d762122c5f8_cgraph">
-<area shape="rect" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="5,283,146,310"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a8321162c08bf2560073a99ea18d5a045" title=" " alt="" coords="198,8,344,36"/>
-<area shape="poly" title=" " alt="" coords="78,282,90,239,113,180,146,116,168,85,192,57,217,41,214,45,195,61,172,88,151,118,118,182,95,241,83,283"/>
-<area shape="rect" href="group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47" title=" " alt="" coords="397,5,565,33"/>
-<area shape="poly" title=" " alt="" coords="80,281,95,248,119,203,151,157,192,116,230,94,286,73,412,36,408,39,288,78,233,99,195,120,155,160,123,206,100,250,85,283"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title=" " alt="" coords="201,181,342,209"/>
-<area shape="poly" title=" " alt="" coords="97,280,192,225,221,214,217,217,195,230,101,284"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title=" " alt="" coords="406,57,556,85"/>
-<area shape="poly" title=" " alt="" coords="84,281,127,226,158,195,192,168,241,140,293,118,394,87,390,91,294,123,243,145,195,172,161,199,131,230,89,284"/>
-<area shape="rect" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="404,281,559,309"/>
-<area shape="poly" title=" " alt="" coords="144,281,193,275,271,271,349,275,390,281,385,282,349,280,271,277,194,280,147,286"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="406,333,556,361"/>
-<area shape="poly" title=" " alt="" coords="145,298,243,307,349,319,399,329,394,331,349,324,242,312,147,304"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#ac37d179a4a680d5869427c60c0ef8c25" title=" " alt="" coords="200,333,343,361"/>
-<area shape="poly" title=" " alt="" coords="131,308,203,328,198,330,132,313"/>
-<area shape="rect" href="group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08" title=" " alt="" coords="194,385,349,413"/>
-<area shape="poly" title=" " alt="" coords="95,308,141,339,195,370,212,379,206,380,192,375,138,343,96,314"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a67337675973f93b9ab3cd01a3e5d2435" title=" " alt="" coords="233,437,310,465"/>
-<area shape="poly" title=" " alt="" coords="87,308,131,364,161,395,195,422,221,436,215,437,192,427,157,399,127,367,86,314"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title=" " alt="" coords="206,489,336,517"/>
-<area shape="poly" title=" " alt="" coords="82,308,100,343,123,388,155,434,195,474,204,482,199,482,192,479,151,437,119,390,95,346,82,314"/>
-<area shape="rect" href="low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="202,541,341,586"/>
-<area shape="poly" title=" " alt="" coords="81,308,95,351,118,409,151,471,172,500,196,527,199,532,194,531,192,530,168,504,146,474,113,411,90,353,80,313"/>
-<area shape="poly" title=" " alt="" coords="344,19,383,19,379,22,346,23"/>
-<area shape="rect" href="group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6" title=" " alt="" coords="406,109,556,137"/>
-<area shape="poly" title=" " alt="" coords="310,178,396,147,422,141,417,144,398,152,313,183"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="428,161,535,189"/>
-<area shape="poly" title=" " alt="" coords="341,186,414,180,410,183,343,191"/>
-<area shape="poly" title=" " alt="" coords="310,179,347,157,362,142,370,127,379,111,395,96,409,90,405,94,399,100,383,114,375,129,366,145,351,161,314,183"/>
-<area shape="poly" title=" " alt="" coords="314,207,351,225,375,247,384,257,398,268,410,275,405,275,396,272,381,261,371,251,347,229,314,212"/>
-<area shape="poly" title=" " alt="" coords="286,207,350,272,399,318,411,327,406,327,395,323,346,275,286,212"/>
-<area shape="rect" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation)." alt="" coords="402,213,560,258"/>
-<area shape="poly" title=" " alt="" coords="342,206,389,216,384,218,343,211"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="616,57,766,85"/>
-<area shape="poly" title=" " alt="" coords="556,69,603,70,598,72,558,74"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="613,281,769,309"/>
-<area shape="poly" title=" " alt="" coords="558,293,600,294,595,296,560,298"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="616,333,766,361"/>
-<area shape="poly" title=" " alt="" coords="556,345,603,347,598,348,557,350"/>
-<area shape="rect" href="group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="404,385,559,413"/>
-<area shape="poly" title=" " alt="" coords="349,397,390,398,385,400,350,402"/>
-<area shape="rect" href="nps__fdm__crrcsim_8c.html#a468b9af311c0091cb611d96df40e75b7" title=" " alt="" coords="418,437,545,465"/>
-<area shape="poly" title=" " alt="" coords="310,449,404,450,399,452,311,454"/>
+<area shape="rect" title="Minimum complexity flight dynamic model In legacy Paparazzi simulator, was implemented in OCaml and c..." alt="" coords="5,208,146,236"/>
+<area shape="rect" href="group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47" title=" " alt="" coords="194,5,362,33"/>
+<area shape="poly" title=" " alt="" coords="80,207,120,133,152,88,192,49,213,38,209,42,195,53,157,92,125,136,85,209"/>
+<area shape="rect" href="group__math__geodetic__double.html#gaf16c7439ff8177e85de2fb720d0579aa" title=" " alt="" coords="410,81,565,109"/>
+<area shape="poly" title=" " alt="" coords="82,207,99,180,123,148,155,117,193,93,246,76,302,70,357,70,409,77,404,79,357,76,302,75,247,81,195,98,158,121,127,152,103,183,87,209"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title=" " alt="" coords="412,183,563,210"/>
+<area shape="poly" title=" " alt="" coords="130,205,193,194,299,188,399,190,395,193,299,193,194,199,133,210"/>
+<area shape="rect" href="group__math__geodetic__double.html#gac812c6073c1f1e030b162e0c60b21e08" title=" " alt="" coords="200,107,356,134"/>
+<area shape="poly" title=" " alt="" coords="97,206,141,178,192,150,223,139,219,142,195,155,143,183,101,209"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title=" " alt="" coords="203,208,353,236"/>
+<area shape="poly" title=" " alt="" coords="145,219,189,220,185,223,147,224"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="224,260,332,288"/>
+<area shape="poly" title=" " alt="" coords="132,234,211,255,207,258,133,239"/>
+<area shape="rect" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title=" " alt="" coords="200,312,356,340"/>
+<area shape="poly" title=" " alt="" coords="95,233,140,265,195,297,213,306,208,307,192,302,137,270,95,239"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="203,364,353,392"/>
+<area shape="poly" title=" " alt="" coords="86,233,130,290,161,322,195,349,207,357,202,357,192,353,157,326,126,293,86,239"/>
+<area shape="rect" href="low__pass__filter_8h.html#a342400255cec0a3d66e6466fbed03896" title="Update first order low pass filter state with a new value." alt="" coords="208,416,348,460"/>
+<area shape="poly" title=" " alt="" coords="83,233,100,268,124,313,156,360,195,401,201,407,196,406,192,405,152,363,119,315,95,271,82,239"/>
+<area shape="poly" title=" " alt="" coords="355,109,397,105,392,108,357,114"/>
+<area shape="poly" title=" " alt="" coords="353,210,399,206,395,208,354,215"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title=" " alt="" coords="410,312,565,340"/>
+<area shape="poly" title=" " alt="" coords="355,323,397,325,392,326,356,328"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="412,364,563,392"/>
+<area shape="poly" title=" " alt="" coords="353,375,400,377,394,378,354,380"/>
 </map>
 </div>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
@@ -609,7 +585,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__rover_8c_source.html#l00266">266</a> of file <a class="el" href="nps__fdm__rover_8c_source.html">nps_fdm_rover.c</a>.</p>
 
-<p class="reference">References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>.</p>
+<p class="reference">References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, and <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>.</p>
 
 </div>
 </div>
@@ -638,6 +614,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__rover_8c_source.html#l00271">271</a> of file <a class="el" href="nps__fdm__rover_8c_source.html">nps_fdm_rover.c</a>.</p>
+
+<p class="reference">References <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00105">sim_state</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nps__atmosphere_8c_source.html#l00098">nps_atmosphere_update()</a>.</p>
 <div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
@@ -677,7 +655,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nps__fdm__rover_8c_source.html#l00095">95</a> of file <a class="el" href="nps__fdm__rover_8c_source.html">nps_fdm_rover.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00867">check_for_nan()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00445">decode_ahrspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00389">decode_gpspacket()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00464">decode_imupacket()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00384">fetch_state()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00514">gazebo_read()</a>, <a class="el" href="nps__fdm__gz_8cpp_source.html#l00496">gazebo_read()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00193">get_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00256">get_ang_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00241">get_ang_vel()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00224">get_orient()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00158">get_pos()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00174">get_vel()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00057">gps_feed_value()</a>, <a class="el" href="nps__fdm__gz_8cpp_source.html#l00371">init_gazebo()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00270">init_ltp()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00264">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00684">init_ltp()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00277">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00230">init_ltp()</a>, <a class="el" href="flight__gear_8h.html#a999359b2a41b4af7fea8a0404956350d">net_fdm_dump()</a>, <a class="el" href="flight__gear_8h.html#ad021e8e70cbdd905d819185ea89f2c8d">net_fdm_init()</a>, <a class="el" href="flight__gear_8h.html#a4f119868e8400976a97ae07a883e1c4b">net_fdm_ntoh()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00110">nps_fdm_run_init_step()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00155">nps_fdm_run_step()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00179">nps_flightgear_send()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00115">nps_flightgear_send_fdm()</a>, <a class="el" href="nps__ivy_8c_source.html#l00237">nps_ivy_display()</a>, <a class="el" href="nps__ivy_8c_source.html#l00060">nps_ivy_display_cb()</a>, <a class="el" href="nps__ivy_8c_source.html#l00147">nps_ivy_send_WORLD_ENV_REQ()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00078">nps_main_loop()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__airspeed_8c_source.html#l00063">nps_sensor_airspeed_run_step()</a>, <a class="el" href="nps__sensor__aoa_8c_source.html#l00062">nps_sensor_aoa_run_step()</a>, <a class="el" href="nps__sensor__baro_8c_source.html#l00023">nps_sensor_baro_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00033">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00028">nps_sensor_mag_run_step()</a>, <a class="el" href="nps__sensor__sideslip_8c_source.html#l00063">nps_sensor_sideslip_run_step()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00070">nps_sensor_sonar_run_step()</a>, <a class="el" href="nps__sensor__temperature_8c_source.html#l00028">nps_sensor_temperature_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00235">sim_overwrite_ahrs()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00248">sim_overwrite_ins()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00867">check_for_nan()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00384">fetch_state()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00514">gazebo_read()</a>, <a class="el" href="nps__fdm__gz_8cpp_source.html#l00496">gazebo_read()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00193">get_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00256">get_ang_acc()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00241">get_ang_vel()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00224">get_orient()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00158">get_pos()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00174">get_vel()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00057">gps_feed_value()</a>, <a class="el" href="nps__fdm__gz_8cpp_source.html#l00371">init_gazebo()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00264">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00684">init_ltp()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00277">init_ltp()</a>, <a class="el" href="nps__fdm__rover_8c_source.html#l00230">init_ltp()</a>, <a class="el" href="flight__gear_8h.html#a999359b2a41b4af7fea8a0404956350d">net_fdm_dump()</a>, <a class="el" href="flight__gear_8h.html#ad021e8e70cbdd905d819185ea89f2c8d">net_fdm_init()</a>, <a class="el" href="flight__gear_8h.html#a4f119868e8400976a97ae07a883e1c4b">net_fdm_ntoh()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00109">nps_fdm_init()</a>, <a class="el" href="nps__fdm__pybullet_8c_source.html#l00110">nps_fdm_run_init_step()</a>, <a class="el" href="nps__fdm__fixedwing__sim_8c_source.html#l00161">nps_fdm_run_step()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00179">nps_flightgear_send()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00115">nps_flightgear_send_fdm()</a>, <a class="el" href="nps__ivy_8c_source.html#l00237">nps_ivy_display()</a>, <a class="el" href="nps__ivy_8c_source.html#l00060">nps_ivy_display_cb()</a>, <a class="el" href="nps__ivy_8c_source.html#l00147">nps_ivy_send_WORLD_ENV_REQ()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00078">nps_main_loop()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__airspeed_8c_source.html#l00063">nps_sensor_airspeed_run_step()</a>, <a class="el" href="nps__sensor__aoa_8c_source.html#l00062">nps_sensor_aoa_run_step()</a>, <a class="el" href="nps__sensor__baro_8c_source.html#l00023">nps_sensor_baro_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00033">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00028">nps_sensor_mag_run_step()</a>, <a class="el" href="nps__sensor__sideslip_8c_source.html#l00063">nps_sensor_sideslip_run_step()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00070">nps_sensor_sonar_run_step()</a>, <a class="el" href="nps__sensor__temperature_8c_source.html#l00028">nps_sensor_temperature_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00235">sim_overwrite_ahrs()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00248">sim_overwrite_ins()</a>.</p>
 
 </div>
 </div>

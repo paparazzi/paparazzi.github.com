@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "_crrcsim", "nps__fdm__crrcsim_8c.html#struct__crrcsim", null ],
     [ "_mission", "mission__common_8h.html#struct__mission", null ],
     [ "_mission_circle", "mission__common_8h.html#struct__mission__circle", null ],
     [ "_mission_custom", "mission__common_8h.html#struct__mission__custom", null ],
@@ -688,7 +687,6 @@ var hierarchy =
     [ "IndiController_int", "stabilization__attitude__heli__indi_8h.html#structIndiController__int", null ],
     [ "IndiEstimation", "stabilization__indi__simple_8h.html#structIndiEstimation", null ],
     [ "IndiVariables", "stabilization__indi__simple_8h.html#structIndiVariables", null ],
-    [ "inputbuf", "nps__fdm__crrcsim_8c.html#structinputbuf", null ],
     [ "ins_mekf_wind_parameters", "ins__mekf__wind_8h.html#structins__mekf__wind__parameters", null ],
     [ "InsAltFloat", "ins__alt__float_8h.html#structInsAltFloat", null ],
     [ "InsExtPose", "ins__ext__pose_8c.html#structInsExtPose", null ],

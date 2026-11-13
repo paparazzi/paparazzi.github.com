@@ -157,7 +157,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a453201cffe6ef4d2fd313954f666460d" id="r_a453201cffe6ef4d2fd313954f666460d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a453201cffe6ef4d2fd313954f666460d">WS2812_AF</a>&#160;&#160;&#160;<a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#afd8cee2fb7cfce1b91317be24260b39c">WS2812D1_AF</a></td></tr>
 <tr class="memitem:ac107d92592f310c314784268b30ad59b" id="r_ac107d92592f310c314784268b30ad59b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac107d92592f310c314784268b30ad59b">WS2812_CFG_DEF</a>&#160;&#160;&#160;<a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">WS2812D1_CFG_DEF</a></td></tr>
 <tr class="memitem:a080cff9ec3c8306e7c5e09fe4079b4df" id="r_a080cff9ec3c8306e7c5e09fe4079b4df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a080cff9ec3c8306e7c5e09fe4079b4df">WS2812_DMA_IRQ_PRIORITY</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memitem:ae2f87bb1ab1267a1bced492acb1fc5a9" id="r_ae2f87bb1ab1267a1bced492acb1fc5a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f87bb1ab1267a1bced492acb1fc5a9">WS2812_BIT</a>(led,  <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>,  bit)</td></tr>
+<tr class="memitem:ae2f87bb1ab1267a1bced492acb1fc5a9" id="r_ae2f87bb1ab1267a1bced492acb1fc5a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f87bb1ab1267a1bced492acb1fc5a9">WS2812_BIT</a>(led,  byte,  bit)</td></tr>
 <tr class="memitem:afbfd19ffd3de95e52e9485ae478f24c7" id="r_afbfd19ffd3de95e52e9485ae478f24c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbfd19ffd3de95e52e9485ae478f24c7">WS2812_RED_BIT</a>(led,  bit)</td></tr>
 <tr class="memitem:a0196d9b5b8adb9854da6c3212c84763c" id="r_a0196d9b5b8adb9854da6c3212c84763c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0196d9b5b8adb9854da6c3212c84763c">WS2812_GREEN_BIT</a>(led,  bit)</td></tr>
 <tr class="memitem:a190b6be6a702540df9606c31b01b7b13" id="r_a190b6be6a702540df9606c31b01b7b13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a190b6be6a702540df9606c31b01b7b13">WS2812_BLUE_BIT</a>(led,  bit)</td></tr>
@@ -319,7 +319,7 @@ pwm_conf</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a></em></span>, </td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>byte</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,8 +328,7 @@ pwm_conf</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(24*(led) + 8*(<a class="code hl_define" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>) + (7 - (bit)))</div>
-<div class="ttc" id="anps__fdm__crrcsim_8c_html_a71809484a26cd96c6abe839a0a8a289d"><div class="ttname"><a href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a></div><div class="ttdeci">#define byte</div><div class="ttdef"><b>Definition</b> <a href="nps__fdm__crrcsim_8c_source.html#l00074">nps_fdm_crrcsim.c:74</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">(24*(led) + 8*(byte) + (7 - (bit)))</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="light__ws2812__arch_8c_source.html#l00173">173</a> of file <a class="el" href="light__ws2812__arch_8c_source.html">light_ws2812_arch.c</a>.</p>
 

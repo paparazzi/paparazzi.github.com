@@ -7,7 +7,7 @@ var searchData=
   ['haclc_20xml_20file_3a_4',['Raw haclc.xml file:',['../module__haclc.html#module_xml__haclc',1,'']]],
   ['hard_5ffault_5frecovery_20module_5',['hard_fault_recovery module',['../module__hard_fault_recovery.html',1,'onboard_modules']]],
   ['hard_5ffault_5frecovery_20xml_20file_3a_6',['Raw hard_fault_recovery.xml file:',['../module__hard_fault_recovery.html#module_xml__hard_fault_recovery',1,'']]],
-  ['header_20files_7',['Header Files',['../module__airspeed_ads1114.html#headers',1,'']]],
+  ['header_20files_7',['Header Files',['../module__servo_lidar.html#headers',1,'']]],
   ['heli_5fswashplate_5fmixing_20module_8',['heli_swashplate_mixing module',['../module__heli_swashplate_mixing.html',1,'onboard_modules']]],
   ['heli_5fswashplate_5fmixing_20xml_20file_3a_9',['Raw heli_swashplate_mixing.xml file:',['../module__heli_swashplate_mixing.html#module_xml__heli_swashplate_mixing',1,'']]],
   ['heli_5fthrottle_5fcurve_20module_10',['heli_throttle_curve module',['../module__heli_throttle_curve.html',1,'onboard_modules']]],

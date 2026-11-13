@@ -38,7 +38,6 @@ var annotated_dup =
     [ "simple_quad_sim", "namespacesimple__quad__sim.html", [
       [ "BulletFDM", "classsimple__quad__sim_1_1BulletFDM.html", "classsimple__quad__sim_1_1BulletFDM" ]
     ] ],
-    [ "_crrcsim", "nps__fdm__crrcsim_8c.html#struct__crrcsim", "nps__fdm__crrcsim_8c_struct__crrcsim" ],
     [ "_mission", "mission__common_8h.html#struct__mission", "mission__common_8h_struct__mission" ],
     [ "_mission_circle", "mission__common_8h.html#struct__mission__circle", "mission__common_8h_struct__mission__circle" ],
     [ "_mission_custom", "mission__common_8h.html#struct__mission__custom", "mission__common_8h_struct__mission__custom" ],
@@ -719,7 +718,6 @@ var annotated_dup =
     [ "IndiController_int", "stabilization__attitude__heli__indi_8h.html#structIndiController__int", "stabilization__attitude__heli__indi_8h_structIndiController__int" ],
     [ "IndiEstimation", "stabilization__indi__simple_8h.html#structIndiEstimation", "stabilization__indi__simple_8h_structIndiEstimation" ],
     [ "IndiVariables", "stabilization__indi__simple_8h.html#structIndiVariables", "stabilization__indi__simple_8h_structIndiVariables" ],
-    [ "inputbuf", "nps__fdm__crrcsim_8c.html#structinputbuf", "nps__fdm__crrcsim_8c_structinputbuf" ],
     [ "ins_mekf_wind_parameters", "ins__mekf__wind_8h.html#structins__mekf__wind__parameters", "ins__mekf__wind_8h_structins__mekf__wind__parameters" ],
     [ "InsAltFloat", "ins__alt__float_8h.html#structInsAltFloat", "ins__alt__float_8h_structInsAltFloat" ],
     [ "InsExtPose", "ins__ext__pose_8c.html#structInsExtPose", "ins__ext__pose_8c_structInsExtPose" ],

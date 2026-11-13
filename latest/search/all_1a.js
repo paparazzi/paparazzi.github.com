@@ -886,7 +886,7 @@ var searchData=
   ['performance_5freporting_883',['PERFORMANCE_REPORTING',['../ahrs__float__dcm_8h.html#a36080880bb75413765c103f942b7db3a',1,'ahrs_float_dcm.h']]],
   ['period_5fnsec_884',['period_nsec',['../pwm__sysfs_8h.html#aa2f4d712af0ab00617225b247ced9248',1,'PWM_Sysfs']]],
   ['period_5fpath_885',['period_path',['../pwm__sysfs_8h.html#adb901430787f90762c5060238a01e35c',1,'PWM_Sysfs']]],
-  ['periodic_20functions_886',['Periodic Functions',['../module__airspeed_ads1114.html#periodic_functions',1,'']]],
+  ['periodic_20functions_886',['Periodic Functions',['../module__servo_lidar.html#periodic_functions',1,'']]],
   ['periodic_5f10hz_5fdemo_887',['periodic_10Hz_demo',['../demo__module_8c.html#a225849cdcf82c061fad8b334b93bdbe1',1,'periodic_10Hz_demo(void):&#160;demo_module.c'],['../demo__module_8h.html#a225849cdcf82c061fad8b334b93bdbe1',1,'periodic_10Hz_demo(void):&#160;demo_module.c']]],
   ['periodic_5f1hz_5fdemo_888',['periodic_1Hz_demo',['../demo__module_8c.html#a2bac67deb690d7000f9ea95d4724f996',1,'periodic_1Hz_demo(void):&#160;demo_module.c'],['../demo__module_8h.html#a2bac67deb690d7000f9ea95d4724f996',1,'periodic_1Hz_demo(void):&#160;demo_module.c']]],
   ['periodic_5f2hz_5fopenlog_889',['periodic_2Hz_openlog',['../openlog_8c.html#ab34b243a201c81bc8858b79c2c37bb58',1,'periodic_2Hz_openlog(void):&#160;openlog.c'],['../openlog_8h.html#ab34b243a201c81bc8858b79c2c37bb58',1,'periodic_2Hz_openlog(void):&#160;openlog.c']]],
