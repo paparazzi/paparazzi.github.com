@@ -1,8 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__gps_nmea_send.html#configuration__gps_nmea_send":[1,167,1],
-"module__gps_nmea_send.html#functions__gps_nmea_send":[1,167,2],
-"module__gps_nmea_send.html#module_load_example__gps_nmea_send":[1,167,0],
 "module__gps_nmea_send.html#module_xml__gps_nmea_send":[1,167,2,0],
 "module__gps_nps.html":[1,168],
 "module__gps_nps.html#functions__gps_nps":[1,168,1],
@@ -58,9 +55,12 @@ var NAVTREEINDEX135 =
 "module__gps_udp.html#module_xml__gps_udp":[1,178,2,0],
 "module__ground_detect.html":[1,334],
 "module__ground_detect.html#configuration__ground_detect":[1,334,1],
+"module__ground_detect.html#define":[1,334,1,0],
 "module__ground_detect.html#functions__ground_detect":[1,334,2],
+"module__ground_detect.html#init_functions":[1,334,2,0],
 "module__ground_detect.html#module_load_example__ground_detect":[1,334,0],
-"module__ground_detect.html#module_xml__ground_detect":[1,334,2,0],
+"module__ground_detect.html#module_xml__ground_detect":[1,334,2,2],
+"module__ground_detect.html#periodic_functions":[1,334,2,1],
 "module__gsm.html":[1,505],
 "module__gsm.html#functions__gsm":[1,505,1],
 "module__gsm.html#module_load_example__gsm":[1,505,0],

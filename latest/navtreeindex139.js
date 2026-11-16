@@ -1,9 +1,5 @@
 var NAVTREEINDEX139 =
 {
-"module__power_uavcan.html#configuration__power_uavcan":[1,442,1],
-"module__power_uavcan.html#functions__power_uavcan":[1,442,2],
-"module__power_uavcan.html#module_load_example__power_uavcan":[1,442,0],
-"module__power_uavcan.html#module_xml__power_uavcan":[1,442,2,0],
 "module__pprzlog.html":[1,283],
 "module__pprzlog.html#functions__pprzlog":[1,283,1],
 "module__pprzlog.html#module_load_example__pprzlog":[1,283,0],
@@ -192,9 +188,10 @@ var NAVTREEINDEX139 =
 "module__sonar_adc.html#module_xml__sonar_adc":[1,451,2,0],
 "module__sonar_bebop.html":[1,452],
 "module__sonar_bebop.html#configuration__sonar_bebop":[1,452,1],
+"module__sonar_bebop.html#event_functions":[1,452,2,0],
 "module__sonar_bebop.html#functions__sonar_bebop":[1,452,2],
 "module__sonar_bebop.html#module_load_example__sonar_bebop":[1,452,0],
-"module__sonar_bebop.html#module_xml__sonar_bebop":[1,452,2,0],
+"module__sonar_bebop.html#module_xml__sonar_bebop":[1,452,2,1],
 "module__sonar_i2c.html":[1,453],
 "module__sonar_i2c.html#configuration__sonar_i2c":[1,453,1],
 "module__sonar_i2c.html#functions__sonar_i2c":[1,453,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX139 =
 "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,461,2,0],
 "module__stabilization_indi.html":[1,462],
 "module__stabilization_indi.html#configuration__stabilization_indi":[1,462,1],
-"module__stabilization_indi.html#functions__stabilization_indi":[1,462,2]
+"module__stabilization_indi.html#functions__stabilization_indi":[1,462,2],
+"module__stabilization_indi.html#module_load_example__stabilization_indi":[1,462,0],
+"module__stabilization_indi.html#module_xml__stabilization_indi":[1,462,2,0],
+"module__stabilization_indi_hinf.html":[1,463]
 };

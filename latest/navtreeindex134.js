@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__digital_cam_servo.html#module_load_example__digital_cam_servo":[1,144,0],
 "module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,144,2,0],
 "module__digital_cam_shoot_rc.html":[1,145],
 "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,145,1],
@@ -214,10 +213,8 @@ var NAVTREEINDEX134 =
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,159,0,0],
 "module__gpio_ext_pca95xx.html":[1,160],
 "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx":[1,160,1],
-"module__gpio_ext_pca95xx.html#configure":[1,160,1,0],
-"module__gpio_ext_pca95xx.html#define":[1,160,1,1],
 "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx":[1,160,0],
-"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,160,1,2],
+"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,160,1,0],
 "module__gps.html":[1,161],
 "module__gps.html#configuration__gps":[1,161,1],
 "module__gps.html#datalink_functions__gps":[1,161,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX134 =
 "module__gps_nmea.html#functions__gps_nmea":[1,166,2],
 "module__gps_nmea.html#module_load_example__gps_nmea":[1,166,0],
 "module__gps_nmea.html#module_xml__gps_nmea":[1,166,2,0],
-"module__gps_nmea_send.html":[1,167]
+"module__gps_nmea_send.html":[1,167],
+"module__gps_nmea_send.html#configuration__gps_nmea_send":[1,167,1],
+"module__gps_nmea_send.html#functions__gps_nmea_send":[1,167,2],
+"module__gps_nmea_send.html#module_load_example__gps_nmea_send":[1,167,0]
 };

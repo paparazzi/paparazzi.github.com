@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__intermcu_uart.html#module_load_example__intermcu_uart":[1,261,0],
+"module__intermcu_uart.html#module_xml__intermcu_uart":[1,261,3,0],
 "module__ir_mlx.html":[1,307],
 "module__ir_mlx.html#functions__ir_mlx":[1,307,1],
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,307,0],
@@ -190,10 +192,9 @@ var NAVTREEINDEX137 =
 "module__mcp355x.html#module_load_example__mcp355x":[1,25,0],
 "module__mcp355x.html#module_xml__mcp355x":[1,25,1,0],
 "module__mcu.html":[1,287],
-"module__mcu.html#event_functions":[1,287,1,0],
 "module__mcu.html#functions__mcu":[1,287,1],
 "module__mcu.html#module_load_example__mcu":[1,287,0],
-"module__mcu.html#module_xml__mcu":[1,287,1,1],
+"module__mcu.html#module_xml__mcu":[1,287,1,0],
 "module__meteo_france_daq.html":[1,310],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,310,2],
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,310,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,337,0],
 "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,337,1,0],
 "module__nav_catapult.html":[1,338],
-"module__nav_catapult.html#configuration__nav_catapult":[1,338,1],
-"module__nav_catapult.html#functions__nav_catapult":[1,338,2]
+"module__nav_catapult.html#configuration__nav_catapult":[1,338,1]
 };
