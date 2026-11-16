@@ -1,7 +1,5 @@
 var NAVTREEINDEX105 =
 {
-"linear__flow__fit_8c.html":[9,0,1,0,6,12,2,1],
-"linear__flow__fit_8c.html#a18ccb6b7c82f2e479f4bc58eee9298cc":[9,0,1,0,6,12,2,1,2],
 "linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced":[9,0,1,0,6,12,2,1,6],
 "linear__flow__fit_8c.html#a6e7943196456df15d5f62bee064b38a8":[9,0,1,0,6,12,2,1,3],
 "linear__flow__fit_8c.html#a771fae639233fefeb98727f47e6a0b53":[9,0,1,0,6,12,2,1,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX105 =
 "linux_2modules_2core_2threads__arch_8c.html#aed61e9d6d23b6548fc876d0ed7d5d567":[9,0,1,0,0,1,1,1,1,3],
 "linux_2modules_2core_2threads__arch_8c_source.html":[9,0,1,0,0,1,1,1,1],
 "linux_2modules_2core_2threads__arch_8h.html":[9,0,1,0,0,1,1,1,2],
-"linux_2modules_2core_2threads__arch_8h.html#a5f1464e2a0b7ea07882573ddbc9b3418":[9,0,1,0,0,1,1,1,2,2]
+"linux_2modules_2core_2threads__arch_8h.html#a5f1464e2a0b7ea07882573ddbc9b3418":[9,0,1,0,0,1,1,1,2,2],
+"linux_2modules_2core_2threads__arch_8h.html#ad01596ab85fed26b3a00ae8882a7e21b":[9,0,1,0,0,1,1,1,2,3],
+"linux_2modules_2core_2threads__arch_8h.html#af924da8457e8503f00a27cb7102624e1":[9,0,1,0,0,1,1,1,2,4]
 };

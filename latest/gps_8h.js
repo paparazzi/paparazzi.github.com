@@ -100,6 +100,5 @@ var gps_8h =
     [ "utm_int_from_gps", "gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed", null ],
     [ "gps", "gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d", null ],
     [ "gps_disable_fix", "gps_8h.html#a17f79cb8fb1e6f40ad864e156786e728", null ],
-    [ "gps_time_sync", "gps_8h.html#a4cd3856a89c7a6a56135788fa9f33922", null ],
     [ "multi_gps_mode", "gps_8h.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd", null ]
 ];

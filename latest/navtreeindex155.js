@@ -1,7 +1,5 @@
 var NAVTREEINDEX155 =
 {
-"nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4":[9,0,1,0,6,47,66,0,0],
-"nav__survey__poly__rotorcraft_8c.html#a2aa3a04fcd083895a5c567f4b34260bb":[9,0,1,0,6,47,66,11],
 "nav__survey__poly__rotorcraft_8c.html#a2b14c7dc8e2615aec3718af05f9fe88f":[9,0,1,0,6,47,66,38],
 "nav__survey__poly__rotorcraft_8c.html#a369fb753abd22e08ec5990479b0dcbcf":[9,0,1,0,6,47,66,13],
 "nav__survey__poly__rotorcraft_8c.html#a3b4e0c5016f80b77ad4f362058ae3959":[9,0,1,0,6,47,66,37],
@@ -249,5 +247,7 @@ var NAVTREEINDEX155 =
 "nav__survey__zamboni_8h.html#ad76f36783f4d511a4683cc515585bbe9a8ce8618f548a2bf8c7b2c66c8e0f64e9":[9,0,1,0,6,47,75,1,2],
 "nav__survey__zamboni_8h.html#ad76f36783f4d511a4683cc515585bbe9adb2b879f2932e84b2a0deee20eb2e323":[9,0,1,0,6,47,75,1,0],
 "nav__survey__zamboni_8h.html#ad7f52de96ddab0fa4036c442c692879d":[9,0,1,0,6,47,75,0,3],
-"nav__survey__zamboni_8h.html#ade0635a8c66caee3e36be983ceca7245":[9,0,1,0,6,47,75,0,7]
+"nav__survey__zamboni_8h.html#ade0635a8c66caee3e36be983ceca7245":[9,0,1,0,6,47,75,0,7],
+"nav__survey__zamboni_8h.html#structZamboniSurvey":[9,0,1,0,6,47,75,0],
+"nav__survey__zamboni_8h_source.html":[9,0,1,0,6,47,75]
 };

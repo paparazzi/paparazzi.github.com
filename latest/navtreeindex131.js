@@ -1,7 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"microrl_8h.html#ae124f974b4c751c5385e82de23215ceb":[9,0,1,0,0,0,1,1,0,1,5],
-"microrl_8h.html#ae51192167afa00833ab3af2286b8f946":[9,0,1,0,0,0,1,1,0,1,33],
 "microrl_8h.html#ae771837f1fd5e596559f1f0113425fa4":[9,0,1,0,0,0,1,1,0,1,23],
 "microrl_8h.html#ae876b667ebc64a55993328145a3c2763":[9,0,1,0,0,0,1,1,0,1,47],
 "microrl_8h.html#ae8b9237ed0c8facc6902bd8e875aa2f8":[9,0,1,0,0,0,1,1,0,1,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX131 =
 "module__actuators_pwm.html":[1,14],
 "module__actuators_pwm.html#module_load_example__actuators_pwm":[1,14,0],
 "module__actuators_pwm.html#module_xml__actuators_pwm":[1,14,0,0],
-"module__actuators_sbus.html":[1,15]
+"module__actuators_sbus.html":[1,15],
+"module__actuators_sbus.html#configuration__actuators_sbus":[1,15,1],
+"module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0]
 };

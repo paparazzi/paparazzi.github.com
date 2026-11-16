@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__ins_xsens.html#module_load_example__ins_xsens":[1,258,0],
-"module__ins_xsens.html#module_xml__ins_xsens":[1,258,2,0],
 "module__ins_xsens700.html":[1,259],
 "module__ins_xsens700.html#configuration__ins_xsens700":[1,259,1],
 "module__ins_xsens700.html#functions__ins_xsens700":[1,259,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX137 =
 "module__mppt.html":[1,150],
 "module__mppt.html#functions__mppt":[1,150,1],
 "module__mppt.html#module_load_example__mppt":[1,150,0],
-"module__mppt.html#module_xml__mppt":[1,150,1,0]
+"module__mppt.html#module_xml__mppt":[1,150,1,0],
+"module__nav_basic_fw.html":[1,335],
+"module__nav_basic_fw.html#configuration__nav_basic_fw":[1,335,1]
 };

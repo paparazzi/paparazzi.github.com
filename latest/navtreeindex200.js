@@ -1,7 +1,5 @@
 var NAVTREEINDEX200 =
 {
-"servo__lidar_8h.html#af0b8fdd475c8b2e58ee80e9df6b91610":[9,0,1,0,6,40,0,3,0,5],
-"servo__lidar_8h.html#af13e22c2849e96b8da245887e1128b47":[9,0,1,0,6,40,0,3,0,4],
 "servo__lidar_8h.html#af770419e5ab71f5b124bafcd834fc36c":[9,0,1,0,6,40,0,3,2],
 "servo__lidar_8h.html#structServoLidar":[9,0,1,0,6,40,0,3,0],
 "servo__lidar_8h_source.html":[9,0,1,0,6,40,0,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX200 =
 "sim_2mcu__periph_2spi__arch_8c_source.html":[9,0,1,0,0,2,0,11],
 "sim_2mcu__periph_2spi__arch_8h.html":[9,0,1,0,0,2,0,12],
 "sim_2mcu__periph_2spi__arch_8h_source.html":[9,0,1,0,0,2,0,12],
-"sim_2mcu__periph_2sys__time__arch_8c.html":[9,0,1,0,0,2,0,13]
+"sim_2mcu__periph_2sys__time__arch_8c.html":[9,0,1,0,0,2,0,13],
+"sim_2mcu__periph_2sys__time__arch_8c.html#a184792a6c12efcdd00999adbde66de35":[9,0,1,0,0,2,0,13,5],
+"sim_2mcu__periph_2sys__time__arch_8c.html#a5cba5945821899af44982ef06661da31":[9,0,1,0,0,2,0,13,8]
 };

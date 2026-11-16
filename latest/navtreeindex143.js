@@ -1,7 +1,5 @@
 var NAVTREEINDEX143 =
 {
-"mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081":[9,0,1,0,7,99,1,15],
-"mpu60x0_8h.html#a5faf20d4d4647a961a86c83736c6ea87":[9,0,1,0,7,99,25],
 "mpu60x0_8h.html#a686f9c24017b15cc1cf15866def7fbc7":[9,0,1,0,7,99,1,13],
 "mpu60x0_8h.html#a6ec9f5324d5501ed8bdc1a1bcf0a5584":[9,0,1,0,7,99,1,12],
 "mpu60x0_8h.html#a6facb3d9a26e53f21cf67cc5611792e7":[9,0,1,0,7,99,1,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX143 =
 "mpu60x0__spi_8h.html#af623497a1d675fc255539378e43222d8":[9,0,1,0,7,104,0,4],
 "mpu60x0__spi_8h.html#structMpu60x0__Spi":[9,0,1,0,7,104,0],
 "mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__accel":[9,0,1,0,7,104,1],
-"mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__rates":[9,0,1,0,7,104,2]
+"mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__rates":[9,0,1,0,7,104,2],
+"mpu60x0__spi_8h_source.html":[9,0,1,0,7,104],
+"mpu9250_8c.html":[9,0,1,0,7,105]
 };

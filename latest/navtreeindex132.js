@@ -1,7 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__actuators_sbus.html#configuration__actuators_sbus":[1,15,1],
-"module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0],
 "module__actuators_sbus.html#module_xml__actuators_sbus":[1,15,1,0],
 "module__actuators_spektrum.html":[1,16],
 "module__actuators_spektrum.html#configuration__actuators_spektrum":[1,16,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX132 =
 "module__baro_ms5611_i2c.html":[1,422],
 "module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,422,1],
 "module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c":[1,422,2],
-"module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,422,0]
+"module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,422,0],
+"module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c":[1,422,2,0],
+"module__baro_ms5611_spi.html":[1,423]
 };

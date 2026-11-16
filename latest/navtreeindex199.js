@@ -1,7 +1,5 @@
 var NAVTREEINDEX199 =
 {
-"sdlog__linux_8c.html#a78c6e06dd880486b47ce6f0affae31af":[9,0,1,0,6,42,24,20],
-"sdlog__linux_8c.html#a7a0d7e1310115cab1457b36b0663b9df":[9,0,1,0,6,42,24,4],
 "sdlog__linux_8c.html#a83cecacc1fb35d1270e03c3f7b9a990c":[9,0,1,0,6,42,24,28],
 "sdlog__linux_8c.html#a87a2ac24cd76286a730bc101ed907dc0":[9,0,1,0,6,42,24,42],
 "sdlog__linux_8c.html#a8a142b187fa8b4f7a55da593f5417ed6":[9,0,1,0,6,42,24,39],
@@ -249,5 +247,7 @@ var NAVTREEINDEX199 =
 "servo__lidar_8h.html#a46e268d2d91f83607759b0ec8c681206":[9,0,1,0,6,40,0,3,4],
 "servo__lidar_8h.html#a856b2db50ab8ac0fcbee2bfda3961320":[9,0,1,0,6,40,0,3,3],
 "servo__lidar_8h.html#ab641592378632f187cd72638d3c9267a":[9,0,1,0,6,40,0,3,0,0],
-"servo__lidar_8h.html#ad122dbe15adb84ece4fab67cd49da634":[9,0,1,0,6,40,0,3,0,2]
+"servo__lidar_8h.html#ad122dbe15adb84ece4fab67cd49da634":[9,0,1,0,6,40,0,3,0,2],
+"servo__lidar_8h.html#af0b8fdd475c8b2e58ee80e9df6b91610":[9,0,1,0,6,40,0,3,0,5],
+"servo__lidar_8h.html#af13e22c2849e96b8da245887e1128b47":[9,0,1,0,6,40,0,3,0,4]
 };

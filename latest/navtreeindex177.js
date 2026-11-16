@@ -1,7 +1,5 @@
 var NAVTREEINDEX177 =
 {
-"pprz__orientation__conversion_8h_source.html":[9,0,1,0,4,26],
-"pprz__polyfit__float_8c.html":[9,0,1,0,4,27],
 "pprz__polyfit__float_8c.html#abfdb5a4da651dc25d7361010d48ea2fa":[9,0,1,0,4,27,0],
 "pprz__polyfit__float_8c_source.html":[9,0,1,0,4,27],
 "pprz__polyfit__float_8h.html":[9,0,1,0,4,28],
@@ -249,5 +247,7 @@ var NAVTREEINDEX177 =
 "pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[9,0,1,0,0,0,0,14,2,0],
 "pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[9,0,1,0,0,0,0,14,2,2],
 "pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[9,0,1,0,0,0,0,14,2,1],
-"pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[9,0,1,0,0,0,0,14,1]
+"pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[9,0,1,0,0,0,0,14,1],
+"pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f":[9,0,1,0,0,0,0,14,0],
+"pwm__input__arch_8h_source.html":[9,0,1,0,0,0,0,14]
 };

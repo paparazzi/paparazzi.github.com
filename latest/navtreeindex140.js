@@ -1,7 +1,5 @@
 var NAVTREEINDEX140 =
 {
-"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,459,1],
-"module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,459,2],
 "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,459,0],
 "module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,459,2,0],
 "module__stabilization_float_quat.html":[1,460],
@@ -249,5 +247,7 @@ var NAVTREEINDEX140 =
 "module__thermal_ctl.html#functions__thermal_ctl":[1,149,1],
 "module__thermal_ctl.html#module_load_example__thermal_ctl":[1,149,0],
 "module__thermal_ctl.html#module_xml__thermal_ctl":[1,149,2,0],
-"module__threads.html":[1,88]
+"module__threads.html":[1,88],
+"module__threads.html#configuration__threads":[1,88,1],
+"module__threads.html#functions__threads":[1,88,2]
 };

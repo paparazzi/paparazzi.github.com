@@ -1,7 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__i2c_abuse_test.html":[1,37],
-"module__i2c_abuse_test.html#functions__i2c_abuse_test":[1,37,1],
 "module__i2c_abuse_test.html#module_load_example__i2c_abuse_test":[1,37,0],
 "module__i2c_abuse_test.html#module_xml__i2c_abuse_test":[1,37,1,0],
 "module__imu_apogee.html":[1,202],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "module__ins_vn100.html#module_xml__ins_vn100":[1,257,2,0],
 "module__ins_xsens.html":[1,258],
 "module__ins_xsens.html#configuration__ins_xsens":[1,258,1],
-"module__ins_xsens.html#functions__ins_xsens":[1,258,2]
+"module__ins_xsens.html#functions__ins_xsens":[1,258,2],
+"module__ins_xsens.html#module_load_example__ins_xsens":[1,258,0],
+"module__ins_xsens.html#module_xml__ins_xsens":[1,258,2,0]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX141 =
 {
-"module__threads.html#configuration__threads":[1,88,1],
-"module__threads.html#functions__threads":[1,88,2],
 "module__threads.html#module_load_example__threads":[1,88,0],
 "module__threads.html#module_xml__threads":[1,88,2,0],
 "module__time_countdown.html":[1,537],
@@ -249,5 +247,7 @@ var NAVTREEINDEX141 =
 "modules_2datalink_2superbitrf_8h.html#a6c88b17874a1317b5e85eda96587cbaa":[9,0,1,0,6,15,24,0,18],
 "modules_2datalink_2superbitrf_8h.html#a6dbe38536b336883c08758542ec47552":[9,0,1,0,6,15,24,1],
 "modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[9,0,1,0,0,2,1,2,1,0,25],
-"modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[9,0,1,0,6,15,24,0,25]
+"modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[9,0,1,0,6,15,24,0,25],
+"modules_2datalink_2superbitrf_8h.html#a71362563ffb67c1942ab5f4e5530ae4e":[9,0,1,0,0,2,1,2,1,0,7],
+"modules_2datalink_2superbitrf_8h.html#a71362563ffb67c1942ab5f4e5530ae4e":[9,0,1,0,6,15,24,0,7]
 };

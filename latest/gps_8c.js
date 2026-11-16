@@ -38,7 +38,6 @@ var gps_8c =
     [ "gps_ev", "gps_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
     [ "gps_relpos_ev", "gps_8c.html#a5e28cb3f6e873ec3f09f84ca6c1c88b2", null ],
     [ "gps_relposned", "gps_8c.html#af3aea2a19f441ef4039fe3dab25ee39e", null ],
-    [ "gps_time_sync", "gps_8c.html#a4cd3856a89c7a6a56135788fa9f33922", null ],
     [ "month_days", "gps_8c.html#a53b5fc3ccb3b489527e585cc6d8a1878", null ],
     [ "multi_gps_mode", "gps_8c.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd", null ]
 ];

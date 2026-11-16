@@ -1,7 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"module__nav_basic_fw.html":[1,335],
-"module__nav_basic_fw.html#configuration__nav_basic_fw":[1,335,1],
 "module__nav_basic_fw.html#datalink_functions__nav_basic_fw":[1,335,3],
 "module__nav_basic_fw.html#functions__nav_basic_fw":[1,335,2],
 "module__nav_basic_fw.html#module_load_example__nav_basic_fw":[1,335,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX138 =
 "module__photogrammetry_calculator.html#functions__photogrammetry_calculator":[1,525,1],
 "module__photogrammetry_calculator.html#module_load_example__photogrammetry_calculator":[1,525,0],
 "module__photogrammetry_calculator.html#module_xml__photogrammetry_calculator":[1,525,1,0],
-"module__pipe.html":[1,288]
+"module__pipe.html":[1,288],
+"module__pipe.html#configuration__pipe":[1,288,1],
+"module__pipe.html#module_load_example__pipe":[1,288,0]
 };

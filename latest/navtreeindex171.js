@@ -1,7 +1,5 @@
 var NAVTREEINDEX171 =
 {
-"opticflow__calculator_8c.html#ae90d3b64075035d0917969b701c9e5c0":[9,0,1,0,6,12,2,3,37],
-"opticflow__calculator_8c.html#af42782bb0f43bcd9cd001bbdb8aec7d8":[9,0,1,0,6,12,2,3,22],
 "opticflow__calculator_8c.html#af5e0eefe1a20d305280ae0e02cc65e47":[9,0,1,0,6,12,2,3,65],
 "opticflow__calculator_8c.html#af943ccbdcf1eb91b7f42157fe20e52c9":[9,0,1,0,6,12,2,3,27],
 "opticflow__calculator_8c.html#affe1814e82fd0187807671d62a236706":[9,0,1,0,6,12,2,3,20],
@@ -249,5 +247,7 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#ACTUATORS_T4_OUT":[2,0,174],
 "paparazzi_messages.html#ADC":[2,0,95],
 "paparazzi_messages.html#ADC_GENERIC":[2,0,14],
-"paparazzi_messages.html#AEROPROBE":[2,0,164]
+"paparazzi_messages.html#AEROPROBE":[2,0,164],
+"paparazzi_messages.html#AHRS_BIAS":[2,0,160],
+"paparazzi_messages.html#AHRS_EULER":[2,0,162]
 };

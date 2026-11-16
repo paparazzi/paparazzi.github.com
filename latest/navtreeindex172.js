@@ -1,7 +1,5 @@
 var NAVTREEINDEX172 =
 {
-"paparazzi_messages.html#AHRS_BIAS":[2,0,160],
-"paparazzi_messages.html#AHRS_EULER":[2,0,162],
 "paparazzi_messages.html#AHRS_EULER_INT":[2,0,145],
 "paparazzi_messages.html#AHRS_GYRO_BIAS_INT":[2,0,163],
 "paparazzi_messages.html#AHRS_LKF":[2,0,176],
@@ -249,5 +247,7 @@ var NAVTREEINDEX172 =
 "paparazzi_messages.html#PPM":[2,0,91],
 "paparazzi_messages.html#PPRZ_DEBUG":[2,0,226],
 "paparazzi_messages.html#PPRZ_MODE":[2,0,8],
-"paparazzi_messages.html#RANGEFINDER":[2,0,25]
+"paparazzi_messages.html#RANGEFINDER":[2,0,25],
+"paparazzi_messages.html#RATE_LOOP":[2,0,125],
+"paparazzi_messages.html#RAW_DATALINK":[2,2,27]
 };

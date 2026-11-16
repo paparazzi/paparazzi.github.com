@@ -7,5 +7,6 @@ var sys__time_8h_structsys__time =
     [ "resolution", "sys__time_8h.html#a8a4f7ef3bbea802072d4f4b618aae996", null ],
     [ "resolution_cpu_ticks", "sys__time_8h.html#a6afb6a9b84be1fe714c946b509585de9", null ],
     [ "ticks_per_sec", "sys__time_8h.html#a10cff0d019d62eafe6033e71f8bbf62f", null ],
-    [ "timer", "sys__time_8h.html#ac9099131f9a2e477427758d79e220544", null ]
+    [ "timer", "sys__time_8h.html#ac9099131f9a2e477427758d79e220544", null ],
+    [ "tow_offset", "sys__time_8h.html#a4962b9aeb3ddd957019256b92a28a688", null ]
 ];

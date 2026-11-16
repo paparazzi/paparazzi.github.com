@@ -1,7 +1,5 @@
 var NAVTREEINDEX104 =
 {
-"lidar__correction_8c.html":[9,0,1,0,6,40,0,0],
-"lidar__correction_8c.html#a4c4439b08980a12ed57eaa09c15ec568":[9,0,1,0,6,40,0,0,5],
 "lidar__correction_8c.html#a57dd0c5d77ce9d33430e334c31e523bc":[9,0,1,0,6,40,0,0,1],
 "lidar__correction_8c.html#a664b01b675915885cd8215cfaf483f97":[9,0,1,0,6,40,0,0,3],
 "lidar__correction_8c.html#a73aaf4d0092ec994b9c785e6cc3a7bbc":[9,0,1,0,6,40,0,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX104 =
 "light__ws2812__arch_8h.html#a5efcab2e04c8eacd7a9ddf973752a788":[9,0,1,0,0,0,1,3,1,2],
 "light__ws2812__arch_8h.html#a77c4ae9d967234a1c215b097f18241c8":[9,0,1,0,0,0,1,3,1,1],
 "light__ws2812__arch_8h.html#adb6545d263086cb25b1d522baf14f4ea":[9,0,1,0,0,0,1,3,1,0],
-"light__ws2812__arch_8h_source.html":[9,0,1,0,0,0,1,3,1]
+"light__ws2812__arch_8h_source.html":[9,0,1,0,0,0,1,3,1],
+"linear__flow__fit_8c.html":[9,0,1,0,6,12,2,1],
+"linear__flow__fit_8c.html#a18ccb6b7c82f2e479f4bc58eee9298cc":[9,0,1,0,6,12,2,1,2]
 };

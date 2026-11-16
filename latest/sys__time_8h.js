@@ -15,7 +15,8 @@ var sys__time_8h =
       [ "resolution", "sys__time_8h.html#a8a4f7ef3bbea802072d4f4b618aae996", null ],
       [ "resolution_cpu_ticks", "sys__time_8h.html#a6afb6a9b84be1fe714c946b509585de9", null ],
       [ "ticks_per_sec", "sys__time_8h.html#a10cff0d019d62eafe6033e71f8bbf62f", null ],
-      [ "timer", "sys__time_8h.html#ac9099131f9a2e477427758d79e220544", null ]
+      [ "timer", "sys__time_8h.html#ac9099131f9a2e477427758d79e220544", null ],
+      [ "tow_offset", "sys__time_8h.html#a4962b9aeb3ddd957019256b92a28a688", null ]
     ] ],
     [ "SYS_TIME_FREQUENCY", "sys__time_8h.html#a1af9cc60972c40f4b83306d8ee75560e", null ],
     [ "SYS_TIME_NB_TIMER", "sys__time_8h.html#ab5a17fcb1104999c805fb6f555b15b19", null ],
@@ -30,6 +31,7 @@ var sys__time_8h =
     [ "cpu_ticks_of_usec", "sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7", null ],
     [ "get_sys_time_float", "sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e", null ],
     [ "get_sys_time_msec", "sys__time_8h.html#ad3cb294b0d1d74dfb511534b36a17960", null ],
+    [ "get_sys_time_tow", "sys__time_8h.html#ac44622f951ed8e7360ab8b266978e37d", null ],
     [ "get_sys_time_usec", "sys__time_8h.html#a7ddfef1f78a56c6b4c4c536b5d670bfb", null ],
     [ "get_sys_time_usec100", "sys__time_8h.html#a7a57414cd6105553b6e385798824ac39", null ],
     [ "msec_of_cpu_ticks", "sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802", null ],
@@ -45,6 +47,7 @@ var sys__time_8h =
     [ "sys_time_register_timer", "sys__time_8h.html#a3ababed8b6819006aaf919a663efe8cd", null ],
     [ "sys_time_register_timer_offset", "sys__time_8h.html#a47c219332312321b7b2bc31ed6a23ba9", null ],
     [ "sys_time_rtc_millisecond", "sys__time_8h.html#afa40ca65130d3671ad968be749fbcd7c", null ],
+    [ "sys_time_sync_tow", "sys__time_8h.html#a320ed821bd0a51c0649dd5acc7fe6f44", null ],
     [ "sys_time_ticks_of_msec", "sys__time_8h.html#abbcaf989fa430c72909add47bb557d8e", null ],
     [ "sys_time_ticks_of_sec", "sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406", null ],
     [ "sys_time_ticks_of_usec", "sys__time_8h.html#a46ccccbd8fdf3b1c359475fd05bebd0b", null ],

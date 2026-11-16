@@ -1,7 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"median__filter_8h.html#ad61bfbd8d8c78596232bc97571732570":[9,0,1,0,2,12,20],
-"median__filter_8h.html#structMedianFilter3Float":[9,0,1,0,2,12,3],
 "median__filter_8h.html#structMedianFilter3Int":[9,0,1,0,2,12,1],
 "median__filter_8h.html#structMedianFilterFloat":[9,0,1,0,2,12,2],
 "median__filter_8h.html#structMedianFilterInt":[9,0,1,0,2,12,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX130 =
 "microrl_8h.html#ac0135099e93540cd99172e2c2293ba7f":[9,0,1,0,0,0,1,1,0,1,0,3],
 "microrl_8h.html#ad06e66a899b065c65c2363233d8ebce2":[9,0,1,0,0,0,1,1,0,1,17],
 "microrl_8h.html#ad3db2d5e28f2bd20c428230cb3f268d8":[9,0,1,0,0,0,1,1,0,1,28],
-"microrl_8h.html#ad5ef4d8ccfc4aa6cc40edaa3fc9de1ff":[9,0,1,0,0,0,1,1,0,1,45]
+"microrl_8h.html#ad5ef4d8ccfc4aa6cc40edaa3fc9de1ff":[9,0,1,0,0,0,1,1,0,1,45],
+"microrl_8h.html#ae124f974b4c751c5385e82de23215ceb":[9,0,1,0,0,0,1,1,0,1,5],
+"microrl_8h.html#ae51192167afa00833ab3af2286b8f946":[9,0,1,0,0,0,1,1,0,1,33]
 };
